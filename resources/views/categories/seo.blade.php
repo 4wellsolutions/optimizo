@@ -47,10 +47,7 @@
                     <div class="flex items-center gap-4 mb-4">
                         <div
                             class="w-14 h-14 bg-gradient-to-br from-green-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
+                            @include('components.tool-icon', ['slug' => $tool->slug])
                         </div>
                         <div class="flex-1">
                             <h3 class="font-bold text-lg text-gray-900 group-hover:text-green-600 transition-colors">

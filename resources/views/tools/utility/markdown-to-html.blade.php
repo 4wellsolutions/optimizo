@@ -448,27 +448,27 @@
         function loadExample() {
             const example = `# Welcome to Markdown
 
-    ## This is a subheading
+## This is a subheading
 
-    This is a paragraph with **bold text** and *italic text*.
+This is a paragraph with **bold text** and *italic text*.
 
-    ### Features
+### Features
 
-    - Easy to write
-    - Easy to read
-    - Converts to HTML
+- Easy to write
+- Easy to read
+- Converts to HTML
 
-    ### Code Example
+### Code Example
 
-    \`\`\`javascript
-    function hello() {
-        console.log("Hello, World!");
-    }
-    \`\`\`
+\`\`\`javascript
+function hello() {
+    console.log("Hello, World!");
+}
+\`\`\`
 
-    > This is a blockquote
+> This is a blockquote
 
-    [Visit our website](https://example.com)`;
+[Visit our website](https://example.com)`;
 
             document.getElementById('markdownInput').value = example;
             convertMarkdown();
