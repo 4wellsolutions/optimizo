@@ -96,9 +96,9 @@
                             d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">YouTube Video Tags Extractor</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Extract and analyze tags from any YouTube video for SEO
-                    optimization</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">Extract Video Tags for SEO</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Analyze tags from any YouTube video for optimization
+                    insights</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
@@ -345,10 +345,10 @@
 
                 tags.forEach(tag => {
                     const tagElement = $(`
-                            <span class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
-                                ${tag}
-                            </span>
-                        `);
+                                <span class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                                    ${tag}
+                                </span>
+                            `);
                     container.append(tagElement);
                 });
             }

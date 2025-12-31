@@ -159,10 +159,10 @@
                         // Available
                         resultCard.removeClass('bg-red-50 border-red-200').addClass('bg-green-50 border-2 border-green-200');
                         resultIcon.removeClass('bg-red-500').addClass('bg-green-500').html(`
-                                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                            `);
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                `);
                         resultTitle.removeClass('text-red-900').addClass('text-green-900').text('Available! 🎉');
                         resultMessage.removeClass('text-red-700').addClass('text-green-700').text('This handle is available for your YouTube channel');
                         handleDisplay.removeClass('text-red-600').addClass('text-green-600').text('@' + handle);
@@ -171,10 +171,10 @@
                         // Not available
                         resultCard.removeClass('bg-green-50 border-green-200').addClass('bg-red-50 border-2 border-red-200');
                         resultIcon.removeClass('bg-green-500').addClass('bg-red-500').html(`
-                                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            `);
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                `);
                         resultTitle.removeClass('text-green-900').addClass('text-red-900').text('Not Available');
                         resultMessage.removeClass('text-green-700').addClass('text-red-700').text('This handle is already taken');
                         handleDisplay.removeClass('text-green-600').addClass('text-red-600').text('@' + handle);
@@ -185,10 +185,10 @@
                             suggestionsList.empty();
                             suggestions.forEach(suggestion => {
                                 const badge = $(`
-                                        <button onclick="checkHandle('${suggestion}')" class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold hover:bg-indigo-200 transition-colors">
-                                            @${suggestion}
-                                        </button>
-                                    `);
+                                            <button onclick="checkHandle('${suggestion}')" class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold hover:bg-indigo-200 transition-colors">
+                                                @${suggestion}
+                                            </button>
+                                        `);
                                 suggestionsList.append(badge);
                             });
                         } else {
@@ -223,7 +223,7 @@
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">YouTube Handle Checker</h2>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">Check Handle Availability</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">Find the perfect @handle for your YouTube channel</p>
             </div>
 

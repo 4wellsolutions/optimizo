@@ -97,9 +97,9 @@
                             d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.11-.9-2-2-2zm0 14H3V5h18v12zm-5-6l-7 4V7z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">YouTube Thumbnail Downloader</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Download high-quality YouTube thumbnails in all available
-                    resolutions instantly</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">How It Works</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Download HD thumbnails from any YouTube video instantly -
+                    all resolutions available!</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
@@ -297,63 +297,65 @@
                 </li>
                 <li class="flex items-start">
                     <span class="font-bold text-red-600 mr-3">3.</span>
-                    <span><strong>Get Thumbnails:</strong> Click the button to load all available thumbnail resolutions.</span>
+                    <span><strong>Get Thumbnails:</strong> Click the button to load all available thumbnail
+                        resolutions.</span>
                 </li>
                 <li class="flex items-start">
                     <span class="font-bold text-red-600 mr-3">4.</span>
-                    <span><strong>Download:</strong> Choose your preferred resolution and click download to save the thumbnail.</span>
+                    <span><strong>Download:</strong> Choose your preferred resolution and click download to save the
+                        thumbnail.</span>
                 </li>
             </ol>
         </div>
 
         <!-- SEO Content: Use Cases -->
-    <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 md:p-8 mt-8 border border-purple-100">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4">Popular Use Cases for YouTube Thumbnails</h2>
-        <ul class="space-y-2 text-gray-700">
-            <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd" />
-                </svg>
-                <span><strong>Content Creation:</strong> Analyze competitor thumbnails for inspiration and
-                    trends</span>
-            </li>
-            <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd" />
-                </svg>
-                <span><strong>Presentations:</strong> Use video thumbnails in PowerPoint or Google Slides</span>
-            </li>
-            <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd" />
-                </svg>
-                <span><strong>Social Media:</strong> Share video previews on Twitter, Facebook, or Instagram</span>
-            </li>
-            <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd" />
-                </svg>
-                <span><strong>Design Reference:</strong> Use thumbnails as design inspiration for your own
-                    content</span>
-            </li>
-            <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd" />
-                </svg>
-                <span><strong>Archiving:</strong> Save memorable video thumbnails for personal collections</span>
-            </li>
-        </ul>
-    </div>
+        <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 md:p-8 mt-8 border border-purple-100">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Popular Use Cases for YouTube Thumbnails</h2>
+            <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span><strong>Content Creation:</strong> Analyze competitor thumbnails for inspiration and
+                        trends</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span><strong>Presentations:</strong> Use video thumbnails in PowerPoint or Google Slides</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span><strong>Social Media:</strong> Share video previews on Twitter, Facebook, or Instagram</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span><strong>Design Reference:</strong> Use thumbnails as design inspiration for your own
+                        content</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span><strong>Archiving:</strong> Save memorable video thumbnails for personal collections</span>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -432,39 +434,39 @@
                     if (thumbnails[key]) {
                         const thumb = thumbnails[key];
                         const item = `
-                                                                <div class="flex items-center justify-between p-4 rounded-xl border-2 border-gray-200 hover:border-indigo-400 hover:bg-indigo-50 transition-all duration-200 group">
-                                                                    <div class="flex items-center space-x-4 flex-1">
-                                                                        <div class="flex-shrink-0">
-                                                                            <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg">
-                                                                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                                                                </svg>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="flex-1">
-                                                                            <h4 class="font-bold text-gray-900 text-base mb-1">${thumb.quality}</h4>
-                                                                            <div class="flex items-center space-x-3 text-sm text-gray-600">
-                                                                                <span class="flex items-center">
-                                                                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                                                    <div class="flex items-center justify-between p-4 rounded-xl border-2 border-gray-200 hover:border-indigo-400 hover:bg-indigo-50 transition-all duration-200 group">
+                                                                        <div class="flex items-center space-x-4 flex-1">
+                                                                            <div class="flex-shrink-0">
+                                                                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg">
+                                                                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                                                                                     </svg>
-                                                                                    ${thumb.resolution}
-                                                                                </span>
-                                                                                <span class="px-2 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold">${thumb.size}</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="flex-1">
+                                                                                <h4 class="font-bold text-gray-900 text-base mb-1">${thumb.quality}</h4>
+                                                                                <div class="flex items-center space-x-3 text-sm text-gray-600">
+                                                                                    <span class="flex items-center">
+                                                                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                                                                        </svg>
+                                                                                        ${thumb.resolution}
+                                                                                    </span>
+                                                                                    <span class="px-2 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold">${thumb.size}</span>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="flex-shrink-0 ml-4">
+                                                                            <button onclick="downloadThumbnail('${thumb.url}', 'youtube-thumbnail-${videoId}-${key}.jpg')" 
+                                                                                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl hover:from-indigo-700 hover:to-purple-700 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 font-semibold text-sm">
+                                                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                                                                </svg>
+                                                                                Download
+                                                                            </button>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="flex-shrink-0 ml-4">
-                                                                        <button onclick="downloadThumbnail('${thumb.url}', 'youtube-thumbnail-${videoId}-${key}.jpg')" 
-                                                                            class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl hover:from-indigo-700 hover:to-purple-700 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 font-semibold text-sm">
-                                                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-                                                                            </svg>
-                                                                            Download
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            `;
+                                                                `;
                         resolutionList.append(item);
                     }
                 });

@@ -156,21 +156,21 @@
 
                     if (data.channelName) {
                         const nameCard = $(`
-                                <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
-                                    <h4 class="font-bold text-gray-900 mb-2">Channel Name</h4>
-                                    <p class="text-gray-700">${data.channelName}</p>
-                                </div>
-                            `);
+                                    <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
+                                        <h4 class="font-bold text-gray-900 mb-2">Channel Name</h4>
+                                        <p class="text-gray-700">${data.channelName}</p>
+                                    </div>
+                                `);
                         infoContainer.append(nameCard);
                     }
 
                     if (data.channelUrl) {
                         const urlCard = $(`
-                                <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
-                                    <h4 class="font-bold text-gray-900 mb-2">Channel URL</h4>
-                                    <a href="${data.channelUrl}" target="_blank" class="text-indigo-600 hover:text-indigo-800 break-all">${data.channelUrl}</a>
-                                </div>
-                            `);
+                                    <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
+                                        <h4 class="font-bold text-gray-900 mb-2">Channel URL</h4>
+                                        <a href="${data.channelUrl}" target="_blank" class="text-indigo-600 hover:text-indigo-800 break-all">${data.channelUrl}</a>
+                                    </div>
+                                `);
                         infoContainer.append(urlCard);
                     }
                 }
@@ -211,9 +211,8 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">YouTube Channel ID Finder</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Find any YouTube channel's unique identifier instantly
-                </p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">Find Channel IDs Instantly</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover any YouTube channel's unique identifier</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
@@ -371,7 +370,8 @@
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">What URL formats does this tool support?</h4>
                     <p class="text-gray-700 leading-relaxed">Our tool supports all YouTube channel URL formats: @handle
-                        (youtube . com / @username), /c/ (youtube.com/c/channelname), /channel/ (youtube.com/channel/ID), and
+                        (youtube . com / @username), /c/ (youtube.com/c/channelname), /channel/ (youtube.com/channel/ID),
+                        and
                         /user/ (youtube.com/user/username).</p>
                 </div>
             </div>
