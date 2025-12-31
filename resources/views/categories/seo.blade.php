@@ -7,35 +7,33 @@
     <div class="max-w-7xl mx-auto">
         <!-- Hero Section -->
         <div
-            class="relative overflow-hidden bg-gradient-to-br from-green-500 via-emerald-500 to-teal-600 rounded-3xl p-8 md:p-12 mb-12 shadow-2xl">
-            <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full -mr-48 -mt-48"></div>
-            <div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-10 rounded-full -ml-32 -mb-32"></div>
+            class="relative overflow-hidden bg-gradient-to-br from-green-500 via-emerald-500 to-teal-600 rounded-2xl p-6 mb-8 shadow-xl">
 
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-20 h-20 bg-white rounded-2xl shadow-2xl mb-6">
-                    <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-xl shadow-lg mb-3">
+                    <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
+                <h1 class="text-2xl md:text-3xl font-black text-white mb-2 leading-tight">
                     SEO Tools
                 </h1>
-                <p class="text-xl md:text-2xl text-white/90 font-medium max-w-3xl mx-auto mb-6">
+                <p class="text-sm md:text-base text-white/90 font-medium max-w-2xl mx-auto mb-3">
                     Professional SEO tools to optimize your content - 100% free
                 </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <div class="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3">
-                        <div class="text-3xl font-black text-white">{{ $tools->count() }}</div>
-                        <div class="text-sm text-white/80">Free Tools</div>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <div class="text-2xl font-black text-white">{{ $tools->count() }}</div>
+                        <div class="text-xs text-white/80">Free Tools</div>
                     </div>
-                    <div class="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3">
-                        <div class="text-3xl font-black text-white">100%</div>
-                        <div class="text-sm text-white/80">Free Forever</div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <div class="text-2xl font-black text-white">100%</div>
+                        <div class="text-xs text-white/80">Free Forever</div>
                     </div>
-                    <div class="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3">
-                        <div class="text-3xl font-black text-white">⚡</div>
-                        <div class="text-sm text-white/80">Instant Access</div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <div class="text-2xl font-black text-white">⚡</div>
+                        <div class="text-xs text-white/80">Instant Access</div>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ class KeywordDensityController extends Controller
 {
     public function index()
     {
-        $tool = Tool::where('slug', 'keyword-density')->firstOrFail();
+        $tool = Tool::where('slug', 'keyword-density-checker')->firstOrFail();
         return view('tools.seo.keyword-density', compact('tool'));
     }
 }

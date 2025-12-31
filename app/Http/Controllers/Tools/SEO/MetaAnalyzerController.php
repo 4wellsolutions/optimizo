@@ -9,7 +9,7 @@ class MetaAnalyzerController extends Controller
 {
     public function index()
     {
-        $tool = Tool::where('slug', 'meta-analyzer')->firstOrFail();
+        $tool = Tool::where('slug', 'meta-tag-analyzer')->firstOrFail();
         return view('tools.seo.meta-analyzer', compact('tool'));
     }
 }

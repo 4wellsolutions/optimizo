@@ -11,7 +11,7 @@ class ChannelDataExtractorController extends Controller
 {
     public function index()
     {
-        $tool = Tool::where('slug', 'youtube-channel')->firstOrFail();
+        $tool = Tool::where('slug', 'youtube-channel-data-extractor')->firstOrFail();
         return view('tools.youtube.channel', compact('tool'));
     }
 

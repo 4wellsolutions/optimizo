@@ -7,35 +7,33 @@
     <div class="max-w-7xl mx-auto">
         <!-- Hero Section -->
         <div
-            class="relative overflow-hidden bg-gradient-to-br from-red-500 via-pink-500 to-rose-600 rounded-3xl p-8 md:p-12 mb-12 shadow-2xl">
-            <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full -mr-48 -mt-48"></div>
-            <div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-10 rounded-full -ml-32 -mb-32"></div>
+            class="relative overflow-hidden bg-gradient-to-br from-red-500 via-pink-500 to-rose-600 rounded-2xl p-6 mb-8 shadow-xl">
 
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-20 h-20 bg-white rounded-2xl shadow-2xl mb-6">
-                    <svg class="w-12 h-12 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+            <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-xl shadow-lg mb-3">
+                    <svg class="w-10 h-10 text-red-600" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                     </svg>
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
+                <h1 class="text-2xl md:text-3xl font-black text-white mb-2 leading-tight">
                     YouTube Tools
                 </h1>
-                <p class="text-xl md:text-2xl text-white/90 font-medium max-w-3xl mx-auto mb-6">
+                <p class="text-sm md:text-base text-white/90 font-medium max-w-2xl mx-auto mb-3">
                     Professional tools for YouTube creators - 100% free, no registration required
                 </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <div class="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3">
-                        <div class="text-3xl font-black text-white">{{ $tools->count() }}</div>
-                        <div class="text-sm text-white/80">Free Tools</div>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <div class="text-2xl font-black text-white">{{ $tools->count() }}</div>
+                        <div class="text-xs text-white/80">Free Tools</div>
                     </div>
-                    <div class="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3">
-                        <div class="text-3xl font-black text-white">100%</div>
-                        <div class="text-sm text-white/80">Free Forever</div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <div class="text-2xl font-black text-white">100%</div>
+                        <div class="text-xs text-white/80">Free Forever</div>
                     </div>
-                    <div class="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3">
-                        <div class="text-3xl font-black text-white">⚡</div>
-                        <div class="text-sm text-white/80">Instant Access</div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <div class="text-2xl font-black text-white">⚡</div>
+                        <div class="text-xs text-white/80">Instant Access</div>
                     </div>
                 </div>
             </div>
