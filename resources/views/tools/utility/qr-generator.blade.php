@@ -38,10 +38,11 @@
                 <!-- Input Section -->
                 <div>
                     <h2 class="text-2xl font-bold text-gray-900 mb-6">Generate QR Code</h2>
-                    
+
                     <div class="mb-6">
                         <label for="qrText" class="form-label text-base">Enter Text or URL</label>
-                        <textarea id="qrText" class="form-input min-h-[120px]" placeholder="Enter text, URL, or any data you want to encode..."></textarea>
+                        <textarea id="qrText" class="form-input min-h-[200px]"
+                            placeholder="Enter text, URL, or any data you want to encode..."></textarea>
                     </div>
 
                     <div class="mb-6">
@@ -56,14 +57,17 @@
 
                     <button onclick="generateQR()" class="btn-primary w-full justify-center text-lg py-4 mb-4">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
                         </svg>
                         <span>Generate QR Code</span>
                     </button>
 
-                    <button onclick="downloadQR()" id="downloadBtn" class="btn-secondary w-full justify-center text-lg py-4 hidden">
+                    <button onclick="downloadQR()" id="downloadBtn"
+                        class="btn-secondary w-full justify-center text-lg py-4 hidden">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
                         <span>Download QR Code</span>
                     </button>
@@ -72,10 +76,13 @@
                 <!-- Preview Section -->
                 <div>
                     <h2 class="text-2xl font-bold text-gray-900 mb-6">Preview</h2>
-                    <div id="qrPreview" class="bg-gray-50 rounded-xl p-8 border-2 border-gray-200 flex items-center justify-center min-h-[300px]">
+                    <div id="qrPreview"
+                        class="bg-gray-50 rounded-xl p-8 border-2 border-gray-200 flex items-center justify-center min-h-[300px]">
                         <div class="text-center text-gray-400">
-                            <svg class="w-24 h-24 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                            <svg class="w-24 h-24 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
                             </svg>
                             <p class="text-lg font-medium">Your QR code will appear here</p>
                         </div>
@@ -85,11 +92,14 @@
         </div>
 
         <!-- SEO Content -->
-        <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 md:p-12 border-2 border-purple-100 shadow-2xl">
+        <div
+            class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 md:p-12 border-2 border-purple-100 shadow-2xl">
             <div class="text-center mb-8">
-                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl shadow-xl mb-4">
+                <div
+                    class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl shadow-xl mb-4">
                     <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
                     </svg>
                 </div>
                 <h2 class="text-4xl font-black text-gray-900 mb-3">Free QR Code Generator</h2>
@@ -97,42 +107,54 @@
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free QR Code Generator creates high-quality QR codes instantly. Perfect for businesses, marketers, event organizers, and anyone who needs to share information quickly. Generate QR codes for URLs, text, contact information, WiFi credentials, and more. Download in multiple sizes and use anywhere - completely free, no registration required.
+                Our free QR Code Generator creates high-quality QR codes instantly. Perfect for businesses, marketers, event
+                organizers, and anyone who needs to share information quickly. Generate QR codes for URLs, text, contact
+                information, WiFi credentials, and more. Download in multiple sizes and use anywhere - completely free, no
+                registration required.
             </p>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">📱 What is a QR Code?</h3>
             <p class="text-gray-700 leading-relaxed mb-6">
-                QR (Quick Response) codes are two-dimensional barcodes that can store various types of information. They can be scanned using smartphone cameras or dedicated QR code readers, instantly accessing the encoded data. QR codes are widely used for marketing, payments, authentication, product tracking, and contactless information sharing.
+                QR (Quick Response) codes are two-dimensional barcodes that can store various types of information. They can
+                be scanned using smartphone cameras or dedicated QR code readers, instantly accessing the encoded data. QR
+                codes are widely used for marketing, payments, authentication, product tracking, and contactless information
+                sharing.
             </p>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚡</div>
                     <h4 class="font-bold text-gray-900 mb-2">Instant Generation</h4>
                     <p class="text-gray-600 text-sm">Create QR codes in seconds with real-time preview</p>
                 </div>
-                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📏</div>
                     <h4 class="font-bold text-gray-900 mb-2">Multiple Sizes</h4>
                     <p class="text-gray-600 text-sm">Choose from 128px to 1024px for any use case</p>
                 </div>
-                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">💾</div>
                     <h4 class="font-bold text-gray-900 mb-2">Easy Download</h4>
                     <p class="text-gray-600 text-sm">Download as PNG image with one click</p>
                 </div>
-                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-orange-300 transition-all shadow-lg hover:shadow-xl">
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-orange-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔒</div>
                     <h4 class="font-bold text-gray-900 mb-2">Privacy First</h4>
                     <p class="text-gray-600 text-sm">All processing happens in your browser</p>
                 </div>
-                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🆓</div>
                     <h4 class="font-bold text-gray-900 mb-2">100% Free</h4>
                     <p class="text-gray-600 text-sm">No limits, no watermarks, no registration</p>
                 </div>
-                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📱</div>
                     <h4 class="font-bold text-gray-900 mb-2">Universal Compatibility</h4>
                     <p class="text-gray-600 text-sm">Works with all QR code scanners</p>
@@ -143,7 +165,8 @@
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">🌐 Website URLs</h4>
-                    <p class="text-gray-700 leading-relaxed">Direct users to your website, landing page, or online store instantly</p>
+                    <p class="text-gray-700 leading-relaxed">Direct users to your website, landing page, or online store
+                        instantly</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">📧 Contact Information</h4>
@@ -159,7 +182,8 @@
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">📦 Product Information</h4>
-                    <p class="text-gray-700 leading-relaxed">Add QR codes to products for manuals, specs, or authenticity</p>
+                    <p class="text-gray-700 leading-relaxed">Add QR codes to products for manuals, specs, or authenticity
+                    </p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">💳 Payment Links</h4>
@@ -172,7 +196,8 @@
                 <ol class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-purple-600 text-lg">1.</span>
-                        <span><strong>Enter your data:</strong> Type or paste the text, URL, or information you want to encode</span>
+                        <span><strong>Enter your data:</strong> Type or paste the text, URL, or information you want to
+                            encode</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-purple-600 text-lg">2.</span>
@@ -198,11 +223,13 @@
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 font-bold text-xl">✓</span>
-                        <span><strong>Test before printing:</strong> Always scan your QR code to verify it works correctly</span>
+                        <span><strong>Test before printing:</strong> Always scan your QR code to verify it works
+                            correctly</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 font-bold text-xl">✓</span>
-                        <span><strong>Use appropriate size:</strong> Larger QR codes are easier to scan from a distance</span>
+                        <span><strong>Use appropriate size:</strong> Larger QR codes are easier to scan from a
+                            distance</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 font-bold text-xl">✓</span>
@@ -223,23 +250,30 @@
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">Are the QR codes permanent?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! QR codes are static and permanent. Once generated, they will always work as long as the encoded data (like a URL) remains valid.</p>
+                    <p class="text-gray-700 leading-relaxed">Yes! QR codes are static and permanent. Once generated, they
+                        will always work as long as the encoded data (like a URL) remains valid.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">What size should I use for printing?</h4>
-                    <p class="text-gray-700 leading-relaxed">For business cards, use at least 256px. For posters and banners, use 512px or 1024px. The larger the print size, the bigger the QR code should be for easy scanning.</p>
+                    <p class="text-gray-700 leading-relaxed">For business cards, use at least 256px. For posters and
+                        banners, use 512px or 1024px. The larger the print size, the bigger the QR code should be for easy
+                        scanning.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I track QR code scans?</h4>
-                    <p class="text-gray-700 leading-relaxed">Our tool generates static QR codes without tracking. To track scans, use a URL shortener with analytics before generating the QR code, or use a dynamic QR code service.</p>
+                    <p class="text-gray-700 leading-relaxed">Our tool generates static QR codes without tracking. To track
+                        scans, use a URL shortener with analytics before generating the QR code, or use a dynamic QR code
+                        service.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">Is there a limit to how much data I can encode?</h4>
-                    <p class="text-gray-700 leading-relaxed">QR codes can store up to 4,296 alphanumeric characters, but for best scanning results, keep data concise. URLs under 100 characters work best.</p>
+                    <p class="text-gray-700 leading-relaxed">QR codes can store up to 4,296 alphanumeric characters, but for
+                        best scanning results, keep data concise. URLs under 100 characters work best.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">Do QR codes expire?</h4>
-                    <p class="text-gray-700 leading-relaxed">No, QR codes themselves never expire. However, if the QR code links to a URL that gets deleted or changed, the QR code won't work anymore.</p>
+                    <p class="text-gray-700 leading-relaxed">No, QR codes themselves never expire. However, if the QR code
+                        links to a URL that gets deleted or changed, the QR code won't work anymore.</p>
                 </div>
             </div>
         </div>
@@ -312,7 +346,7 @@
             link.click();
         }
 
-        document.getElementById('qrText').addEventListener('keypress', function(e) {
+        document.getElementById('qrText').addEventListener('keypress', function (e) {
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
                 generateQR();

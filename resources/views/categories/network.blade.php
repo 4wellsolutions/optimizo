@@ -39,28 +39,47 @@
             </div>
         </div>
 
-        <!-- Tools Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            @foreach($tools as $tool)
-                <a href="{{ route($tool->route_name) }}"
-                    class="group bg-white rounded-2xl p-6 shadow-lg border-2 border-purple-200 hover:border-purple-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div
-                            class="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                            @include('components.tool-icon', ['slug' => $tool->slug])
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="font-bold text-lg text-gray-900 group-hover:text-purple-600 transition-colors">
-                                {{ $tool->name }}
-                            </h3>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        {{ $tool->meta_description }}
-                    </p>
-                </a>
-            @endforeach
-        </div>
+        <!-- Tools by Subcategory -->
+        @php
+            $toolsBySubcategory = $tools->groupBy('subcategory');
+        @endphp
+
+        @foreach($toolsBySubcategory as $subcategory => $subcategoryTools)
+            <div class="mb-10">
+                <!-- Subcategory Header -->
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="flex-1 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
+                    <h2 class="text-2xl font-black text-gray-900 px-4">
+                        {{ $subcategory }}
+                        <span class="text-sm font-normal text-gray-500 ml-2">({{ $subcategoryTools->count() }} tools)</span>
+                    </h2>
+                    <div class="flex-1 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
+                </div>
+
+                <!-- Tools Grid for this Subcategory -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    @foreach($subcategoryTools as $tool)
+                        <a href="{{ route($tool->route_name) }}"
+                            class="group bg-white rounded-2xl p-6 shadow-lg border-2 border-purple-200 hover:border-purple-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    @include('components.tool-icon', ['slug' => $tool->slug])
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-lg text-gray-900 group-hover:text-purple-600 transition-colors">
+                                        {{ $tool->name }}
+                                    </h3>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                {{ $tool->meta_description }}
+                            </p>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+        @endforeach
 
         <!-- Back to Home -->
         <div class="text-center mb-12">

@@ -25,15 +25,15 @@
                     Generate MD5 hashes from any text instantly!
                 </p>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-green-200 mb-8">
             <div class="mb-6">
                 <label for="inputText" class="form-label text-base">Enter Text</label>
-                <textarea id="inputText" rows="4" class="form-input" placeholder="Enter text to hash..."></textarea>
+                <textarea id="inputText" class="form-input min-h-[200px]" placeholder="Enter text to hash..."></textarea>
             </div>
 
             <button onclick="generateMD5()" class="btn-primary w-full justify-center text-lg py-4 mb-6">
@@ -54,8 +54,8 @@
                     </button>
                 </div>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- SEO Content - Stunning Design -->

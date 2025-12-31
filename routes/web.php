@@ -44,8 +44,11 @@ use App\Http\Controllers\Tools\Utility\{
     JsMinifierController,
     HtmlMinifierController,
     UrlEncoderController,
+    HtmlEncoderController,
+    UnicodeEncoderController,
     MarkdownToHtmlController,
-    ConverterController
+    ConverterController,
+    EncodingController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -159,6 +162,8 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/js-minifier', [JsMinifierController::class, 'index'])->name('js-minifier');
     Route::get('/html-minifier', [HtmlMinifierController::class, 'index'])->name('html-minifier');
     Route::get('/url-encoder-decoder', [UrlEncoderController::class, 'index'])->name('url-encoder');
+    Route::get('/html-encoder-decoder', [HtmlEncoderController::class, 'index'])->name('html-encoder');
+    Route::get('/unicode-encoder-decoder', [UnicodeEncoderController::class, 'index'])->name('unicode-encoder');
     Route::get('/markdown-to-html-converter', [MarkdownToHtmlController::class, 'index'])->name('markdown-to-html');
     Route::get('/html-to-markdown-converter', [ConverterController::class, 'htmlToMarkdown'])->name('html-to-markdown');
     Route::get('/csv-to-json-converter', [ConverterController::class, 'csvToJson'])->name('csv-to-json');
@@ -167,6 +172,20 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/yaml-to-json-converter', [ConverterController::class, 'yamlToJson'])->name('yaml-to-json');
     Route::get('/text-to-binary-converter', [ConverterController::class, 'textToBinary'])->name('text-to-binary');
     Route::get('/binary-to-text-converter', [ConverterController::class, 'binaryToText'])->name('binary-to-text');
+
+    // Encoding/Decoding Tools (JWT and ASCII only - others are combined above)
+    Route::get('/jwt-decoder', [EncodingController::class, 'jwtDecode'])->name('jwt-decode');
+    Route::get('/ascii-converter', [EncodingController::class, 'asciiConvert'])->name('ascii-convert');
+
+    // Data Format Converters
+    Route::get('/json-to-xml-converter', [ConverterController::class, 'jsonToXml'])->name('json-to-xml');
+    Route::get('/json-to-yaml-converter', [ConverterController::class, 'jsonToYaml'])->name('json-to-yaml');
+    Route::get('/csv-to-xml-converter', [ConverterController::class, 'csvToXml'])->name('csv-to-xml');
+    Route::get('/xml-to-csv-converter', [ConverterController::class, 'xmlToCsv'])->name('xml-to-csv');
+    Route::get('/sql-to-json-converter', [ConverterController::class, 'sqlToJson'])->name('sql-to-json');
+    Route::get('/json-to-sql-converter', [ConverterController::class, 'jsonToSql'])->name('json-to-sql');
+    Route::get('/tsv-to-csv-converter', [ConverterController::class, 'tsvToCsv'])->name('tsv-to-csv');
+    Route::get('/csv-to-tsv-converter', [ConverterController::class, 'csvToTsv'])->name('csv-to-tsv');
 
 
     // POST Routes

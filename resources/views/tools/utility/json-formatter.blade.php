@@ -55,8 +55,8 @@
                     </div>
                 </div>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- JSON Formatter Tool -->
@@ -66,7 +66,7 @@
                 @csrf
                 <div class="mb-6">
                     <label for="json" class="form-label text-base">Enter JSON Data</label>
-                    <textarea id="json" name="json" rows="12" class="form-input font-mono text-sm"
+                    <textarea id="json" name="json" class="form-input font-mono text-sm min-h-[400px]"
                         placeholder='{"name": "John Doe", "age": 30, "city": "New York"}'></textarea>
                     <p class="text-sm text-gray-500 mt-2">Paste your JSON data to format, beautify, or minify it</p>
                 </div>
@@ -118,8 +118,8 @@
                     <pre id="formattedJSON" class="text-sm text-green-400 font-mono"></pre>
                 </div>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- SEO Content Section -->
@@ -157,8 +157,8 @@
                         your computer</p>
                 </div>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- How to Use Section -->
@@ -188,8 +188,8 @@
                     <p class="text-gray-700 text-sm">Click the copy button to copy the formatted JSON to your clipboard</p>
                 </div>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- Use Cases Section -->
@@ -229,8 +229,8 @@
                     </div>
                 </div>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- Best Practices Section -->

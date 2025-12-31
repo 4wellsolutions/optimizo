@@ -25,15 +25,15 @@
                     Convert text between different cases instantly!
                 </p>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-orange-200 mb-8">
             <div class="mb-6">
                 <label for="inputText" class="form-label text-base">Enter Text</label>
-                <textarea id="inputText" rows="6" class="form-input" placeholder="Enter text to convert..."></textarea>
+                <textarea id="inputText" class="form-input min-h-[300px]" placeholder="Enter text to convert..."></textarea>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
@@ -53,13 +53,13 @@
 
             <div>
                 <label class="form-label text-base">Result</label>
-                <textarea id="outputText" rows="6" readonly class="form-input bg-gray-50"></textarea>
+                <textarea id="outputText" readonly class="form-input bg-gray-50 min-h-[300px]"></textarea>
                 <button onclick="copyResult()" class="mt-3 btn-primary justify-center w-full py-3">
                     Copy Result
                 </button>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- SEO Content - Stunning Design -->

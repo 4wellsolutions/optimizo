@@ -25,15 +25,15 @@
                     Create SEO-friendly URL slugs instantly!
                 </p>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-violet-200 mb-8">
             <div class="mb-6">
                 <label for="inputText" class="form-label text-base">Enter Text or Title</label>
-                <textarea id="inputText" rows="3" class="form-input" placeholder="Enter your title or text..."
+                <textarea id="inputText" class="form-input min-h-[150px]" placeholder="Enter your title or text..."
                     oninput="generateSlug()"></textarea>
             </div>
 
@@ -46,8 +46,8 @@
                         Copy
                     </button>
 
-            @include('components.hero-actions')
-        </div>
+                    @include('components.hero-actions')
+                </div>
             </div>
 
             <!-- Options -->
@@ -62,8 +62,8 @@
                         class="w-4 h-4 text-violet-600 rounded">
                     <label for="removeSpecial" class="text-sm text-gray-700">Remove special characters</label>
 
-            @include('components.hero-actions')
-        </div>
+                    @include('components.hero-actions')
+                </div>
             </div>
 
             <!-- Examples -->
@@ -81,8 +81,8 @@
                     </div>
                 </div>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- SEO Content -->

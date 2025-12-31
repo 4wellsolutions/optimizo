@@ -22,10 +22,10 @@
                     </svg>
                 </div>
                 <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    URL Encoder & Decoder
+                    Unicode Encoder & Decoder
                 </h1>
                 <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Encode and decode URLs instantly - 100% free, secure, and fast!
+                    Encode and decode Unicode escape sequences instantly - 100% free, secure, and fast!
                 </p>
 
                 @include('components.hero-actions')
@@ -42,22 +42,22 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                     </svg>
-                    Encode URL
+                    Encode Unicode
                 </button>
                 <button onclick="setMode('decode')" id="decodeBtn"
                     class="flex-1 px-6 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all">
                     <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
                     </svg>
-                    Decode URL
+                    Decode Unicode
                 </button>
             </div>
 
             <!-- Input -->
             <div class="mb-6">
-                <label for="urlInput" class="form-label text-base" id="inputLabel">Enter URL to Encode</label>
-                <textarea id="urlInput" class="form-input font-mono text-sm min-h-[300px]"
-                    placeholder="https://example.com/search?name=John Doe&age=30"></textarea>
+                <label for="unicodeInput" class="form-label text-base" id="inputLabel">Enter Text to Encode</label>
+                <textarea id="unicodeInput" class="form-input font-mono text-sm min-h-[300px]"
+                    placeholder="Hello 世界"></textarea>
             </div>
 
             <!-- Action Buttons -->
@@ -67,7 +67,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    <span id="processBtn">Encode URL</span>
+                    <span id="processBtn">Encode Unicode</span>
                 </button>
                 <button onclick="clearAll()"
                     class="px-6 py-3 bg-gray-500 text-white rounded-xl hover:bg-gray-600 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -91,9 +91,9 @@
 
             <!-- Output -->
             <div class="mb-6">
-                <label for="urlOutput" class="form-label text-base" id="outputLabel">Encoded URL</label>
-                <textarea id="urlOutput" class="form-input font-mono text-sm min-h-[300px]" readonly
-                    placeholder="Processed URL will appear here..."></textarea>
+                <label for="unicodeOutput" class="form-label text-base" id="outputLabel">Encoded Unicode</label>
+                <textarea id="unicodeOutput" class="form-input font-mono text-sm min-h-[300px]" readonly
+                    placeholder="Processed Unicode will appear here..."></textarea>
             </div>
         </div>
 
@@ -108,8 +108,9 @@
                             d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Free URL Encoder & Decoder</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Encode and decode URLs for safe web transmission</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">Free Unicode Encoder & Decoder</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Encode and decode Unicode escape sequences for JavaScript
+                    and JSON</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
@@ -295,51 +296,62 @@
                 encodeBtn.classList.add('bg-blue-600', 'text-white');
                 decodeBtn.classList.remove('bg-blue-600', 'text-white');
                 decodeBtn.classList.add('bg-gray-200', 'text-gray-700');
-                inputLabel.textContent = 'Enter URL to Encode';
-                outputLabel.textContent = 'Encoded URL';
-                processBtn.textContent = 'Encode URL';
+                inputLabel.textContent = 'Enter Text to Encode';
+                outputLabel.textContent = 'Encoded Unicode';
+                processBtn.textContent = 'Encode Unicode';
             } else {
                 decodeBtn.classList.remove('bg-gray-200', 'text-gray-700');
                 decodeBtn.classList.add('bg-blue-600', 'text-white');
                 encodeBtn.classList.remove('bg-blue-600', 'text-white');
                 encodeBtn.classList.add('bg-gray-200', 'text-gray-700');
-                inputLabel.textContent = 'Enter URL to Decode';
-                outputLabel.textContent = 'Decoded URL';
-                processBtn.textContent = 'Decode URL';
+                inputLabel.textContent = 'Enter Unicode to Decode';
+                outputLabel.textContent = 'Decoded Text';
+                processBtn.textContent = 'Decode Unicode';
             }
             clearAll();
         }
 
         function processURL() {
-            const input = document.getElementById('urlInput').value.trim();
-            const output = document.getElementById('urlOutput');
+            const input = document.getElementById('unicodeInput').value.trim();
+            const output = document.getElementById('unicodeOutput');
 
             if (!input) {
-                showStatus('Please enter a URL to process', 'error');
+                showStatus('Please enter text to process', 'error');
                 return;
             }
 
             try {
                 if (currentMode === 'encode') {
-                    output.value = encodeURIComponent(input);
-                    showStatus('✓ URL encoded successfully', 'success');
+                    let encoded = '';
+                    for (let i = 0; i < input.length; i++) {
+                        const code = input.charCodeAt(i);
+                        if (code > 127) {
+                            encoded += '\\u' + ('0000' + code.toString(16)).slice(-4);
+                        } else {
+                            encoded += input.charAt(i);
+                        }
+                    }
+                    output.value = encoded;
+                    showStatus('✓ Unicode encoded successfully', 'success');
                 } else {
-                    output.value = decodeURIComponent(input);
-                    showStatus('✓ URL decoded successfully', 'success');
+                    output.value = input.replace(/\\u([0-9a-fA-F]{4})/g, (match, grp) => {
+                        return String.fromCharCode(parseInt(grp, 16));
+                    });
+                    showStatus('✓ Unicode decoded successfully', 'success');
                 }
             } catch (error) {
-                showStatus('✗ Error processing URL: ' + error.message, 'error');
+                showStatus('✗ Error processing Unicode: ' + error.message, 'error');
             }
         }
 
         function clearAll() {
-            document.getElementById('urlInput').value = '';
-            document.getElementById('urlOutput').value = '';
+            document.getElementById('unicodeInput').value = '';
+            document.getElementById('unicodeOutput').value = '';
             document.getElementById('statusMessage').classList.add('hidden');
         }
 
         function copyOutput() {
-            const output = document.getElementById('urlOutput');
+            const output = document.getElementById('unicodeOutput');
             if (!output.value) {
                 showStatus('No output to copy', 'error');
                 return;
@@ -362,7 +374,7 @@
         }
 
         // Allow Enter key to process
-        document.getElementById('urlInput').addEventListener('keypress', function (e) {
+        document.getElementById('unicodeInput').addEventListener('keypress', function (e) {
             if (e.key === 'Enter' && e.ctrlKey) {
                 processURL();
             }
