@@ -175,4 +175,14 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::post('settings', [App\Http\Controllers\Admin\SettingController::class, 'update'])->name('settings.update');
 });
 
+// Static Pages
+use App\Http\Controllers\PageController;
+Route::get('/terms', [PageController::class, 'terms'])->name('terms');
+Route::get('/privacy', [PageController::class, 'privacy'])->name('privacy');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::post('/contact', [PageController::class, 'contactSubmit'])->name('contact.submit');
+Route::get('/sponsors', [PageController::class, 'sponsors'])->name('sponsors');
+
 require __DIR__ . '/auth.php';
+

@@ -39,9 +39,11 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="#youtube-tools" class="nav-link">YouTube Tools</a>
-                    <a href="#seo-tools" class="nav-link">SEO Tools</a>
-                    <a href="#utility-tools" class="nav-link">Utilities</a>
+                    <a href="{{ route('home') }}" class="nav-link">Home</a>
+                    <a href="{{ route('home') }}#youtube-tools" class="nav-link">YouTube Tools</a>
+                    <a href="{{ route('home') }}#network-tools" class="nav-link">Network Tools</a>
+                    <a href="{{ route('home') }}#seo-tools" class="nav-link">SEO Tools</a>
+                    <a href="{{ route('home') }}#utility-tools" class="nav-link">Utilities</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -58,9 +60,11 @@
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
             <div class="px-4 py-3 space-y-1">
-                <a href="#youtube-tools" class="block nav-link">YouTube Tools</a>
-                <a href="#seo-tools" class="block nav-link">SEO Tools</a>
-                <a href="#utility-tools" class="block nav-link">Utilities</a>
+                <a href="{{ route('home') }}" class="block nav-link">Home</a>
+                <a href="{{ route('home') }}#youtube-tools" class="block nav-link">YouTube Tools</a>
+                <a href="{{ route('home') }}#network-tools" class="block nav-link">Network Tools</a>
+                <a href="{{ route('home') }}#seo-tools" class="block nav-link">SEO Tools</a>
+                <a href="{{ route('home') }}#utility-tools" class="block nav-link">Utilities</a>
             </div>
         </div>
     </nav>
@@ -75,7 +79,7 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white mt-16 md:mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <div
@@ -90,17 +94,35 @@
                     <p class="text-gray-400 text-sm">Professional tools for creators and developers.</p>
                 </div>
                 <div>
-                    <h3 class="font-bold text-base mb-4">Quick Links</h3>
+                    <h3 class="font-bold text-base mb-4">Tools</h3>
                     <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#youtube-tools" class="hover:text-white transition-colors">YouTube Tools</a></li>
-                        <li><a href="#seo-tools" class="hover:text-white transition-colors">SEO Tools</a></li>
-                        <li><a href="#utility-tools" class="hover:text-white transition-colors">Utilities</a></li>
+                        <li><a href="{{ route('home') }}#youtube-tools"
+                                class="hover:text-white transition-colors">YouTube Tools</a></li>
+                        <li><a href="{{ route('home') }}#network-tools"
+                                class="hover:text-white transition-colors">Network Tools</a></li>
+                        <li><a href="{{ route('home') }}#seo-tools" class="hover:text-white transition-colors">SEO
+                                Tools</a></li>
+                        <li><a href="{{ route('home') }}#utility-tools"
+                                class="hover:text-white transition-colors">Utilities</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-bold text-base mb-4">About</h3>
-                    <p class="text-sm text-gray-400">Free, fast, and privacy-focused online tools. No registration
-                        required.</p>
+                    <h3 class="font-bold text-base mb-4">Company</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="{{ route('about') }}" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="{{ route('contact') }}" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="{{ route('sponsors') }}" class="hover:text-white transition-colors">Sponsors</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-base mb-4">Legal</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="{{ route('terms') }}" class="hover:text-white transition-colors">Terms &
+                                Conditions</a></li>
+                        <li><a href="{{ route('privacy') }}" class="hover:text-white transition-colors">Privacy
+                                Policy</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
