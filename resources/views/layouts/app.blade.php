@@ -40,10 +40,10 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="{{ route('home') }}" class="nav-link">Home</a>
-                    <a href="{{ route('home') }}#youtube-tools" class="nav-link">YouTube Tools</a>
-                    <a href="{{ route('home') }}#network-tools" class="nav-link">Network Tools</a>
-                    <a href="{{ route('home') }}#seo-tools" class="nav-link">SEO Tools</a>
-                    <a href="{{ route('home') }}#utility-tools" class="nav-link">Utilities</a>
+                    <a href="{{ route('category.youtube') }}" class="nav-link">YouTube Tools</a>
+                    <a href="{{ route('category.seo') }}" class="nav-link">SEO Tools</a>
+                    <a href="{{ route('category.utility') }}" class="nav-link">Utility Tools</a>
+                    <a href="{{ route('category.network') }}" class="nav-link">Network Tools</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -61,10 +61,10 @@
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
             <div class="px-4 py-3 space-y-1">
                 <a href="{{ route('home') }}" class="block nav-link">Home</a>
-                <a href="{{ route('home') }}#youtube-tools" class="block nav-link">YouTube Tools</a>
-                <a href="{{ route('home') }}#network-tools" class="block nav-link">Network Tools</a>
-                <a href="{{ route('home') }}#seo-tools" class="block nav-link">SEO Tools</a>
-                <a href="{{ route('home') }}#utility-tools" class="block nav-link">Utilities</a>
+                <a href="{{ route('category.youtube') }}" class="block nav-link">YouTube Tools</a>
+                <a href="{{ route('category.seo') }}" class="block nav-link">SEO Tools</a>
+                <a href="{{ route('category.utility') }}" class="block nav-link">Utility Tools</a>
+                <a href="{{ route('category.network') }}" class="block nav-link">Network Tools</a>
             </div>
         </div>
     </nav>
@@ -96,14 +96,14 @@
                 <div>
                     <h3 class="font-bold text-base mb-4">Tools</h3>
                     <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="{{ route('home') }}#youtube-tools"
-                                class="hover:text-white transition-colors">YouTube Tools</a></li>
-                        <li><a href="{{ route('home') }}#network-tools"
-                                class="hover:text-white transition-colors">Network Tools</a></li>
-                        <li><a href="{{ route('home') }}#seo-tools" class="hover:text-white transition-colors">SEO
+                        <li><a href="{{ route('category.youtube') }}" class="hover:text-white transition-colors">YouTube
                                 Tools</a></li>
-                        <li><a href="{{ route('home') }}#utility-tools"
-                                class="hover:text-white transition-colors">Utilities</a></li>
+                        <li><a href="{{ route('category.seo') }}" class="hover:text-white transition-colors">SEO
+                                Tools</a></li>
+                        <li><a href="{{ route('category.utility') }}" class="hover:text-white transition-colors">Utility
+                                Tools</a></li>
+                        <li><a href="{{ route('category.network') }}" class="hover:text-white transition-colors">Network
+                                Tools</a></li>
                     </ul>
                 </div>
                 <div>

@@ -34,8 +34,8 @@
                         <div class="text-sm text-white/80">Free Forever</div>
                     </div>
                     <div class="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3">
-                        <div class="text-3xl font-black text-white">0</div>
-                        <div class="text-sm text-white/80">Registration</div>
+                        <div class="text-3xl font-black text-white">⚡</div>
+                        <div class="text-sm text-white/80">Instant Access</div>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         <!-- Tools Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             @foreach($tools as $tool)
-                <a href="{{ route('seo.' . str_replace('seo-', '', $tool->slug)) }}"
+                <a href="{{ route($tool->route_name) }}"
                     class="group bg-white rounded-2xl p-6 shadow-lg border-2 border-green-200 hover:border-green-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                     <div class="flex items-center gap-4 mb-4">
                         <div
