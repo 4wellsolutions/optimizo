@@ -677,25 +677,6 @@
                     </div>
                     <p class="text-gray-600 text-sm leading-relaxed">Minify and beautify HTML code online</p>
                 </a>
-
-                <!-- Word Counter -->
-                <a href="{{ route('seo.word-counter') }}"
-                    class="group bg-white rounded-2xl p-6 shadow-lg border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div
-                            class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="font-bold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">Word
-                                Counter</h4>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">Count words, characters, and analyze text</p>
-                </a>
             </div>
         </div>
     </div>

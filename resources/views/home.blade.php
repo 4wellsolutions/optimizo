@@ -5,7 +5,7 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="text-center py-20 md:py-32 animate-fade-in">
+    <div class="text-center py-12 md:py-16 animate-fade-in">
         <div class="mb-6 inline-block">
             <span
                 class="px-6 py-3 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 rounded-full text-sm font-bold uppercase tracking-wide">

@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('title', $tool->meta_title)
-@extends('layouts.app')
-
-@section('title', $tool->meta_title)
 @section('meta_description', $tool->meta_description)
 @if($tool->meta_keywords)
 @section('meta_keywords', $tool->meta_keywords)
@@ -30,346 +27,375 @@
                 <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
                     Parse, validate, and visualize JSON data instantly - 100% free and secure!
                 </p>
-                <label for="jsonInput" class="block text-sm font-semibold text-gray-700 mb-2">
-                    JSON Input
-                </label>
-                <textarea id="jsonInput"
-                    class="w-full h-64 p-4 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent font-mono text-sm"
-                    placeholder='{"name": "John", "age": 30, "city": "New York"}'></textarea>
-            </div>
-
-            <div class="flex flex-wrap gap-3 mb-6">
-                <button onclick="parseJSON()"
-                    class="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors duration-200 font-semibold">
-                    Parse JSON
-                </button>
-                <button onclick="beautifyJSON()"
-                    class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200">
-                    Beautify
-                </button>
-                <button onclick="minifyJSON()"
-                    class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-200">
-                    Minify
-                </button>
-                <button onclick="clearJSON()"
-                    class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors duration-200">
-                    Clear
-                </button>
-                <button onclick="loadSample()"
-                    class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200">
-                    Load Sample
-                </button>
-            </div>
-
-            <!-- Status Message -->
-            <div id="statusMessage" class="hidden mb-6 p-4 rounded-xl"></div>
-
-            <!-- Tree View -->
-            <div id="treeView" class="hidden">
-                <h3 class="text-lg font-semibold text-gray-900 mb-3">JSON Tree View</h3>
-                <div id="treeContent"
-                    class="bg-gray-50 rounded-xl p-4 border-2 border-gray-200 font-mono text-sm overflow-auto max-h-96">
-                </div>
 
                 @include('components.hero-actions')
             </div>
         </div>
 
-        <!-- SEO Content Section -->
-        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">What is a JSON Parser?</h2>
-            <p class="text-gray-700 mb-4">
-                A JSON Parser is an essential tool for developers that validates, formats, and analyzes JSON (JavaScript
-                Object Notation) data. JSON is the most widely used data format for APIs, configuration files, and data
-                exchange between applications. Our JSON parser helps you quickly validate JSON syntax, identify errors,
-                beautify messy JSON, minify for production, and visualize complex JSON structures with an interactive tree
-                view. Whether you're debugging API responses, working with configuration files, or learning JSON, our parser
-                makes it easy.
-            </p>
+        <!-- Tool Section -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-purple-200 mb-8">
+            <!-- JSON Input -->
+            <div class="mb-6">
+                <label for="jsonInput" class="form-label text-base">JSON Input</label>
+                <textarea id="jsonInput" class="form-input font-mono text-sm min-h-[300px]"
+                    placeholder='{"name": "John Doe", "age": 30, "email": "john@example.com", "isActive": true}'></textarea>
+            </div>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">Why Use Our JSON Parser?</h2>
-            <p class="text-gray-700 mb-4">
-                Our free JSON parser offers comprehensive features for working with JSON data. It instantly validates your
-                JSON and highlights syntax errors with clear error messages, making debugging fast and efficient. The
-                beautify feature formats messy or minified JSON into a readable, properly indented structure. The minify
-                feature removes all whitespace to reduce file size for production use. The tree view visualizes complex
-                nested JSON structures, making it easy to understand data hierarchy. All processing happens in your browser,
-                ensuring your data remains private and secure.
-            </p>
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3 mb-6">
+                <button onclick="parseJSON()" class="btn-primary">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    <span>Parse JSON</span>
+                </button>
+                <button onclick="beautifyJSON()" class="btn-secondary">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                    </svg>
+                    <span>Beautify</span>
+                </button>
+                <button onclick="minifyJSON()"
+                    class="px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <span>Minify</span>
+                </button>
+                <button onclick="clearJSON()"
+                    class="px-6 py-3 bg-gray-500 text-white rounded-xl hover:bg-gray-600 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    <span>Clear</span>
+                </button>
+                <button onclick="loadSample()"
+                    class="px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                    </svg>
+                    <span>Load Sample</span>
+                </button>
+            </div>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">Key Features</h2>
-            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                <li><strong>JSON Validation:</strong> Instantly detect syntax errors with detailed error messages</li>
-                <li><strong>Beautify JSON:</strong> Format messy JSON with proper indentation and spacing</li>
-                <li><strong>Minify JSON:</strong> Remove whitespace to reduce file size</li>
-                <li><strong>Tree View:</strong> Visualize JSON structure with expandable/collapsible nodes</li>
-                <li><strong>Error Detection:</strong> Identify and locate JSON syntax errors quickly</li>
-                <li><strong>Sample Data:</strong> Load example JSON to test the parser</li>
-                <li><strong>Secure & Private:</strong> All processing happens in your browser</li>
-                <li><strong>Free to Use:</strong> No registration or payment required</li>
-            </ul>
+            <!-- Status Message -->
+            <div id="statusMessage" class="hidden mb-6 p-4 rounded-xl font-semibold"></div>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">How to Use the JSON Parser</h2>
-            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
-                <li>Paste or type your JSON data into the input field</li>
-                <li>Click "Parse JSON" to validate and analyze the data</li>
-                <li>View validation results and any error messages</li>
-                <li>Use "Beautify" to format JSON with proper indentation</li>
-                <li>Use "Minify" to compress JSON by removing whitespace</li>
-                <li>Explore the tree view to understand JSON structure</li>
-                <li>Click "Load Sample" to see example JSON data</li>
-            </ol>
-
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">Common Use Cases</h2>
-            <p class="text-gray-700 mb-4">
-                JSON parsers are indispensable tools for modern web development. Developers use them to validate API
-                responses and ensure data integrity. When debugging, parsers help identify syntax errors in JSON
-                configuration files. Data analysts use JSON parsers to explore and understand complex data structures from
-                APIs. DevOps engineers validate JSON configuration files before deployment. Students learning JSON can
-                experiment with different structures and see immediate validation feedback. Content creators working with
-                JSON-based content management systems use parsers to verify data format.
-            </p>
-
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">Understanding JSON Format</h2>
-            <p class="text-gray-700 mb-4">
-                JSON (JavaScript Object Notation) is a lightweight data interchange format that's easy for humans to read
-                and write, and easy for machines to parse and generate. JSON is built on two structures: objects
-                (collections of name/value pairs enclosed in curly braces) and arrays (ordered lists of values enclosed in
-                square brackets). Values can be strings, numbers, booleans, null, objects, or arrays. Proper JSON syntax
-                requires double quotes for strings and keys, commas between elements, and no trailing commas. Understanding
-                these rules is essential for working with APIs and modern web applications.
-            </p>
-
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">JSON Best Practices</h2>
-            <p class="text-gray-700 mb-4">
-                When working with JSON, follow best practices to ensure clean, maintainable data structures. Use descriptive
-                key names that clearly indicate the data they contain. Keep JSON structures as flat as possible to improve
-                readability and performance. Validate JSON before using it in production to catch errors early. Use
-                consistent naming conventions (camelCase or snake_case) throughout your JSON. Avoid deeply nested structures
-                when possible. For large datasets, consider pagination or chunking. Always escape special characters in
-                strings. These practices lead to more reliable and maintainable applications.
-            </p>
-
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">Common JSON Errors</h2>
-            <p class="text-gray-700 mb-4">
-                Understanding common JSON errors helps you debug faster. Missing or extra commas are frequent issues - JSON
-                requires commas between elements but not after the last element. Using single quotes instead of double
-                quotes for strings or keys causes parsing errors. Trailing commas at the end of objects or arrays are not
-                allowed in standard JSON. Unescaped special characters in strings can break parsing. Missing closing
-                brackets or braces create syntax errors. Our JSON parser detects these errors and provides clear messages to
-                help you fix them quickly.
-            </p>
+            <!-- Tree View -->
+            <div id="treeView" class="hidden">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">JSON Tree View</h3>
+                <div id="treeContent"
+                    class="bg-gray-50 rounded-xl p-6 border-2 border-gray-200 font-mono text-sm overflow-auto max-h-96">
+                </div>
+            </div>
         </div>
 
-        <!-- FAQ Section -->
-        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-xl p-6 md:p-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <!-- SEO Content -->
+        <div
+            class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-8 md:p-12 border-2 border-purple-100 shadow-2xl">
+            <div class="text-center mb-8">
+                <div
+                    class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl shadow-xl mb-4">
+                    <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">Free JSON Parser & Validator</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Parse, validate, beautify, and minify JSON data instantly
+                </p>
+            </div>
 
+            <p class="text-gray-700 leading-relaxed text-lg mb-8">
+                Our free JSON Parser is a powerful online tool for developers, data analysts, and anyone working with JSON
+                data. Instantly parse, validate, beautify, and minify JSON with a clean, intuitive interface. Perfect for
+                debugging APIs, formatting configuration files, or validating JSON structure. 100% free, client-side
+                processing ensures your data stays private and secure.
+            </p>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">📋 What is JSON?</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                JSON (JavaScript Object Notation) is a lightweight data-interchange format that's easy for humans to read
+                and write, and easy for machines to parse and generate. It's the most popular format for APIs, configuration
+                files, and data storage. JSON uses key-value pairs and supports strings, numbers, booleans, arrays, and
+                nested objects.
+            </p>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">✅</div>
+                    <h4 class="font-bold text-gray-900 mb-2">JSON Validation</h4>
+                    <p class="text-gray-600 text-sm">Instantly validate JSON syntax and structure</p>
+                </div>
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🎨</div>
+                    <h4 class="font-bold text-gray-900 mb-2">Beautify JSON</h4>
+                    <p class="text-gray-600 text-sm">Format JSON with proper indentation and spacing</p>
+                </div>
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">📦</div>
+                    <h4 class="font-bold text-gray-900 mb-2">Minify JSON</h4>
+                    <p class="text-gray-600 text-sm">Compress JSON by removing whitespace</p>
+                </div>
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🌳</div>
+                    <h4 class="font-bold text-gray-900 mb-2">Tree View</h4>
+                    <p class="text-gray-600 text-sm">Visualize JSON structure in tree format</p>
+                </div>
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h4 class="font-bold text-gray-900 mb-2">Privacy First</h4>
+                    <p class="text-gray-600 text-sm">All processing happens in your browser</p>
+                </div>
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">⚡</div>
+                    <h4 class="font-bold text-gray-900 mb-2">Instant Results</h4>
+                    <p class="text-gray-600 text-sm">Parse and format JSON in milliseconds</p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Common Use Cases</h3>
+            <div class="grid md:grid-cols-2 gap-6 mb-10">
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔌 API Development</h4>
+                    <p class="text-gray-700 leading-relaxed">Test and debug API responses, validate request payloads, and
+                        format JSON data</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">⚙️ Configuration Files</h4>
+                    <p class="text-gray-700 leading-relaxed">Format and validate config files for applications, databases,
+                        and services</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">📊 Data Analysis</h4>
+                    <p class="text-gray-700 leading-relaxed">Parse and visualize JSON data from databases, logs, and
+                        analytics tools</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">🐛 Debugging</h4>
+                    <p class="text-gray-700 leading-relaxed">Identify syntax errors, validate structure, and troubleshoot
+                        JSON issues</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">📝 Documentation</h4>
+                    <p class="text-gray-700 leading-relaxed">Create readable JSON examples for API docs and technical guides
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔄 Data Migration</h4>
+                    <p class="text-gray-700 leading-relaxed">Transform and validate JSON during data imports and exports</p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">📚 How to Use</h3>
+            <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
+                <ol class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-purple-600 text-lg">1.</span>
+                        <span><strong>Paste JSON:</strong> Copy and paste your JSON data into the input field</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-purple-600 text-lg">2.</span>
+                        <span><strong>Parse:</strong> Click "Parse JSON" to validate and visualize the structure</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-purple-600 text-lg">3.</span>
+                        <span><strong>Beautify:</strong> Click "Beautify" to format with proper indentation</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-purple-600 text-lg">4.</span>
+                        <span><strong>Minify:</strong> Click "Minify" to compress and remove whitespace</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-purple-600 text-lg">5.</span>
+                        <span><strong>View Tree:</strong> See the hierarchical structure in tree view format</span>
+                    </li>
+                </ol>
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">💡 JSON Best Practices</h3>
+            <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-600 font-bold text-xl">✓</span>
+                        <span><strong>Use double quotes:</strong> JSON requires double quotes for strings, not single
+                            quotes</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-600 font-bold text-xl">✓</span>
+                        <span><strong>No trailing commas:</strong> Remove commas after the last item in objects and
+                            arrays</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-600 font-bold text-xl">✓</span>
+                        <span><strong>Proper data types:</strong> Use numbers without quotes, booleans as true/false, null
+                            for empty values</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-600 font-bold text-xl">✓</span>
+                        <span><strong>Validate regularly:</strong> Always validate JSON before deployment or production
+                            use</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-600 font-bold text-xl">✓</span>
+                        <span><strong>Beautify for readability:</strong> Format JSON for easier debugging and
+                            maintenance</span>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
             <div class="space-y-4">
-                <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Is this JSON parser free to use?</h3>
-                    <p class="text-gray-700">
-                        Yes, our JSON parser is completely free with no limitations. You can parse, validate, beautify, and
-                        minify as much JSON data as you need. There are no registration requirements, usage limits, or
-                        hidden fees.
-                    </p>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What's the difference between beautify and minify?</h4>
+                    <p class="text-gray-700 leading-relaxed">Beautify adds indentation and line breaks to make JSON
+                        human-readable. Minify removes all whitespace to reduce file size, making it ideal for production
+                        environments.</p>
                 </div>
-
-                <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Is my JSON data stored or shared?</h3>
-                    <p class="text-gray-700">
-                        No, all JSON parsing and validation happens entirely in your browser. Your data is never sent to our
-                        servers, stored, or shared with anyone. When you close the page, your data is gone. This ensures
-                        complete privacy and security for sensitive JSON data.
-                    </p>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my JSON data secure?</h4>
+                    <p class="text-gray-700 leading-relaxed">Yes! All JSON parsing and formatting happens entirely in your
+                        browser. Your data never leaves your device and is not sent to any server.</p>
                 </div>
-
-                <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">What's the difference between beautify and minify?</h3>
-                    <p class="text-gray-700">
-                        Beautify formats JSON with proper indentation and line breaks, making it easy to read and
-                        understand. Minify removes all unnecessary whitespace and line breaks, creating compact JSON that's
-                        smaller in file size. Use beautify for development and debugging, and minify for production to
-                        reduce bandwidth and improve load times.
-                    </p>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I parse large JSON files?</h4>
+                    <p class="text-gray-700 leading-relaxed">Yes, our parser can handle large JSON files. However, very
+                        large files (>10MB) may take longer to process depending on your device's performance.</p>
                 </div>
-
-                <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Can this parser handle large JSON files?</h3>
-                    <p class="text-gray-700">
-                        Yes, our JSON parser can handle large JSON files efficiently since all processing happens in your
-                        browser using JavaScript. However, extremely large files (several megabytes) may take longer to
-                        process depending on your device's performance. For best results, we recommend files under 10MB.
-                    </p>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What errors does the parser detect?</h4>
+                    <p class="text-gray-700 leading-relaxed">The parser detects syntax errors like missing quotes, trailing
+                        commas, invalid characters, unclosed brackets, and incorrect data types. Error messages show the
+                        exact location of the issue.</p>
                 </div>
-
-                <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">What types of JSON errors can this parser detect?</h3>
-                    <p class="text-gray-700">
-                        Our parser detects all common JSON syntax errors including missing or extra commas, incorrect quote
-                        usage, unescaped characters, missing brackets or braces, invalid data types, and trailing commas.
-                        The parser provides clear error messages indicating the line and position of the error, making it
-                        easy to fix issues quickly.
-                    </p>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I use this for API testing?</h4>
+                    <p class="text-gray-700 leading-relaxed">Absolutely! This tool is perfect for testing API responses,
+                        validating request payloads, and formatting JSON data from API calls.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        const jsonInput = document.getElementById('jsonInput');
-        const statusMessage = document.getElementById('statusMessage');
-        const treeView = document.getElementById('treeView');
-        const treeContent = document.getElementById('treeContent');
-
-        function showMessage(message, type) {
-            statusMessage.className = `mb-6 p-4 rounded-xl ${type === 'success' ? 'bg-green-100 text-green-800 border-2 border-green-300' : 'bg-red-100 text-red-800 border-2 border-red-300'}`;
-            statusMessage.textContent = message;
-            statusMessage.classList.remove('hidden');
-        }
-
-        function hideMessage() {
-            statusMessage.classList.add('hidden');
-        }
-
         function parseJSON() {
-            hideMessage();
-            treeView.classList.add('hidden');
+            const input = document.getElementById('jsonInput').value.trim();
+            const statusMessage = document.getElementById('statusMessage');
+            const treeView = document.getElementById('treeView');
+            const treeContent = document.getElementById('treeContent');
 
-            const input = jsonInput.value.trim();
             if (!input) {
-                showMessage('Please enter JSON data to parse', 'error');
+                showStatus('Please enter JSON data to parse', 'error');
                 return;
             }
 
             try {
                 const parsed = JSON.parse(input);
-                showMessage('✓ Valid JSON! Parsed successfully.', 'success');
-                displayTree(parsed);
+                showStatus('✓ Valid JSON! Parsed successfully', 'success');
                 treeView.classList.remove('hidden');
+                treeContent.innerHTML = syntaxHighlight(JSON.stringify(parsed, null, 2));
             } catch (error) {
-                showMessage(`✗ Invalid JSON: ${error.message}`, 'error');
+                showStatus('✗ Invalid JSON: ' + error.message, 'error');
+                treeView.classList.add('hidden');
             }
         }
 
         function beautifyJSON() {
-            const input = jsonInput.value.trim();
+            const input = document.getElementById('jsonInput').value.trim();
             if (!input) {
-                showMessage('Please enter JSON data to beautify', 'error');
+                showStatus('Please enter JSON data to beautify', 'error');
                 return;
             }
 
             try {
                 const parsed = JSON.parse(input);
-                jsonInput.value = JSON.stringify(parsed, null, 2);
-                showMessage('✓ JSON beautified successfully!', 'success');
+                document.getElementById('jsonInput').value = JSON.stringify(parsed, null, 2);
+                showStatus('✓ JSON beautified successfully', 'success');
             } catch (error) {
-                showMessage(`✗ Cannot beautify invalid JSON: ${error.message}`, 'error');
+                showStatus('✗ Cannot beautify invalid JSON: ' + error.message, 'error');
             }
         }
 
         function minifyJSON() {
-            const input = jsonInput.value.trim();
+            const input = document.getElementById('jsonInput').value.trim();
             if (!input) {
-                showMessage('Please enter JSON data to minify', 'error');
+                showStatus('Please enter JSON data to minify', 'error');
                 return;
             }
 
             try {
                 const parsed = JSON.parse(input);
-                jsonInput.value = JSON.stringify(parsed);
-                showMessage('✓ JSON minified successfully!', 'success');
+                document.getElementById('jsonInput').value = JSON.stringify(parsed);
+                showStatus('✓ JSON minified successfully', 'success');
             } catch (error) {
-                showMessage(`✗ Cannot minify invalid JSON: ${error.message}`, 'error');
+                showStatus('✗ Cannot minify invalid JSON: ' + error.message, 'error');
             }
         }
 
         function clearJSON() {
-            jsonInput.value = '';
-            hideMessage();
-            treeView.classList.add('hidden');
+            document.getElementById('jsonInput').value = '';
+            document.getElementById('treeView').classList.add('hidden');
+            document.getElementById('statusMessage').classList.add('hidden');
         }
 
         function loadSample() {
-            jsonInput.value = `{
-              "user": {
-                "id": 12345,
-                "name": "John Doe",
-                "email": "john.doe@example.com",
-                "isActive": true,
-                "roles": ["admin", "user"],
-                "profile": {
-                  "age": 30,
-                  "city": "New York",
-                  "country": "USA"
-                },
-                "preferences": {
-                  "theme": "dark",
-                  "notifications": true,
-                  "language": "en"
-                }
-              },
-              "metadata": {
-                "createdAt": "2024-01-15T10:30:00Z",
-                "updatedAt": "2024-12-30T15:45:00Z",
-                "version": "2.1.0"
-              }
-            }`;
-            hideMessage();
-            treeView.classList.add('hidden');
-        }
-
-        function displayTree(obj, indent = 0) {
-            let html = '';
-            const indentStr = '  '.repeat(indent);
-
-            if (Array.isArray(obj)) {
-                html += `${indentStr}<span class="text-gray-600">[</span>\n`;
-                obj.forEach((item, index) => {
-                    html += displayTree(item, indent + 1);
-                    if (index < obj.length - 1) html += '<span class="text-gray-600">,</span>';
-                    html += '\n';
-                });
-                html += `${indentStr}<span class="text-gray-600">]</span>`;
-            } else if (typeof obj === 'object' && obj !== null) {
-                html += `${indentStr}<span class="text-gray-600">{</span>\n`;
-                const keys = Object.keys(obj);
-                keys.forEach((key, index) => {
-                    html += `${indentStr}  <span class="text-blue-600">"${key}"</span><span class="text-gray-600">:</span> `;
-                    const value = obj[key];
-                    if (typeof value === 'object' && value !== null) {
-                        html += '\n' + displayTree(value, indent + 1);
-                    } else {
-                        html += formatValue(value);
+            const sample = {
+                "user": {
+                    "id": 12345,
+                    "name": "John Doe",
+                    "email": "john.doe@example.com",
+                    "isActive": true,
+                    "roles": ["admin", "user"],
+                    "profile": {
+                        "age": 30,
+                        "city": "New York",
+                        "country": "USA"
                     }
-                    if (index < keys.length - 1) html += '<span class="text-gray-600">,</span>';
-                    html += '\n';
-                });
-                html += `${indentStr}<span class="text-gray-600">}</span>`;
+                }
+            };
+            document.getElementById('jsonInput').value = JSON.stringify(sample, null, 2);
+            showStatus('Sample JSON loaded', 'success');
+        }
+
+        function showStatus(message, type) {
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.textContent = message;
+            statusMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'border-green-300', 'border-red-300');
+
+            if (type === 'success') {
+                statusMessage.classList.add('bg-green-100', 'text-green-800', 'border-2', 'border-green-300');
             } else {
-                html += `${indentStr}${formatValue(obj)}`;
+                statusMessage.classList.add('bg-red-100', 'text-red-800', 'border-2', 'border-red-300');
             }
-
-            if (indent === 0) {
-                treeContent.innerHTML = html;
-            }
-            return html;
         }
 
-        function formatValue(value) {
-            if (typeof value === 'string') {
-                return `<span class="text-green-600">"${value}"</span>`;
-            } else if (typeof value === 'number') {
-                return `<span class="text-purple-600">${value}</span>`;
-            } else if (typeof value === 'boolean') {
-                return `<span class="text-orange-600">${value}</span>`;
-            } else if (value === null) {
-                return `<span class="text-red-600">null</span>`;
-            }
-            return value;
+        function syntaxHighlight(json) {
+            json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+                let cls = 'text-orange-600';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) {
+                        cls = 'text-blue-600 font-semibold';
+                    } else {
+                        cls = 'text-green-600';
+                    }
+                } else if (/true|false/.test(match)) {
+                    cls = 'text-purple-600 font-semibold';
+                } else if (/null/.test(match)) {
+                    cls = 'text-gray-500 font-semibold';
+                }
+                return '<span class="' + cls + '">' + match + '</span>';
+            });
         }
-
-        // Load sample on page load
-        window.addEventListener('load', loadSample);
     </script>
 @endsection
