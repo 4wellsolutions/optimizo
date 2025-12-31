@@ -2,9 +2,17 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+// Category Pages
+Route::get('/youtube-tools', [CategoryController::class, 'youtube'])->name('category.youtube');
+Route::get('/seo-tools', [CategoryController::class, 'seo'])->name('category.seo');
+Route::get('/utility-tools', [CategoryController::class, 'utility'])->name('category.utility');
+Route::get('/network-tools', [CategoryController::class, 'network'])->name('category.network');
+
 
 Route::get('/dashboard', function () {
     // Redirect admins to admin dashboard
@@ -38,7 +46,8 @@ use App\Http\Controllers\Tools\Utility\{
     CodeFormatterController,
     CssMinifierController,
     JsMinifierController,
-    HtmlMinifierController
+    HtmlMinifierController,
+    UrlEncoderController
 };
 use App\Http\Controllers\Tools\Network\{
     WhatIsMyIpController,
@@ -87,6 +96,8 @@ Route::get('/tools/code-formatter', [CodeFormatterController::class, 'index'])->
 Route::get('/tools/css-minifier', [CssMinifierController::class, 'index'])->name('utility.css-minifier');
 Route::get('/tools/js-minifier', [JsMinifierController::class, 'index'])->name('utility.js-minifier');
 Route::get('/tools/html-minifier', [HtmlMinifierController::class, 'index'])->name('utility.html-minifier');
+Route::get('/tools/url-encoder-decoder', [UrlEncoderController::class, 'index'])->name('utility.url-encoder');
+
 
 // Network Tools
 Route::get('/tools/what-is-my-ip', [WhatIsMyIpController::class, 'index'])->name('network.what-is-my-ip');
