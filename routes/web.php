@@ -44,7 +44,8 @@ use App\Http\Controllers\Tools\Utility\{
     JsMinifierController,
     HtmlMinifierController,
     UrlEncoderController,
-    MarkdownToHtmlController
+    MarkdownToHtmlController,
+    ConverterController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -159,6 +160,14 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/html-minifier', [HtmlMinifierController::class, 'index'])->name('html-minifier');
     Route::get('/url-encoder-decoder', [UrlEncoderController::class, 'index'])->name('url-encoder');
     Route::get('/markdown-to-html-converter', [MarkdownToHtmlController::class, 'index'])->name('markdown-to-html');
+    Route::get('/html-to-markdown-converter', [ConverterController::class, 'htmlToMarkdown'])->name('html-to-markdown');
+    Route::get('/csv-to-json-converter', [ConverterController::class, 'csvToJson'])->name('csv-to-json');
+    Route::get('/json-to-csv-converter', [ConverterController::class, 'jsonToCsv'])->name('json-to-csv');
+    Route::get('/xml-to-json-converter', [ConverterController::class, 'xmlToJson'])->name('xml-to-json');
+    Route::get('/yaml-to-json-converter', [ConverterController::class, 'yamlToJson'])->name('yaml-to-json');
+    Route::get('/text-to-binary-converter', [ConverterController::class, 'textToBinary'])->name('text-to-binary');
+    Route::get('/binary-to-text-converter', [ConverterController::class, 'binaryToText'])->name('binary-to-text');
+
 
     // POST Routes
     Route::post('/password-generator/generate', [PasswordGeneratorController::class, 'generate'])->name('password-generator.generate');
