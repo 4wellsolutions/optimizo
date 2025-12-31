@@ -17,27 +17,75 @@ class ChannelIdFinderController extends Controller
     public function find(Request $request)
     {
         $request->validate([
-            'channel_input' => 'required|string'
+            'url' => 'required|string'
         ]);
 
-        $channelInput = $request->channel_input;
+        $channelUrl = $request->url;
 
         try {
-            // Try to extract channel ID from URL
-            $channelId = $this->extractChannelId($channelInput);
+            // Fetch channel page HTML
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $channelUrl);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+
+            $html = curl_exec($ch);
+            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+
+            if ($httpCode !== 200 || !$html) {
+                return response()->json([
+                    'success' => false,
+                    'error' => 'Failed to fetch channel data. Please check the URL.'
+                ], 400);
+            }
+
+            // Extract channel ID from various sources
+            $channelId = null;
+            $channelName = null;
+
+            // Method 1: Look for channel ID in meta tags
+            if (preg_match('/<meta itemprop="channelId" content="([^"]+)"/', $html, $matches)) {
+                $channelId = $matches[1];
+            }
+
+            // Method 2: Extract from link tags
+            if (!$channelId && preg_match('/<link rel="canonical" href="https:\/\/www\.youtube\.com\/channel\/([^"]+)"/', $html, $matches)) {
+                $channelId = $matches[1];
+            }
+
+            // Method 3: Look in ytInitialData
+            if (!$channelId && preg_match('/"channelId":"(UC[^"]+)"/', $html, $matches)) {
+                $channelId = $matches[1];
+            }
+
+            // Method 4: Look in externalId
+            if (!$channelId && preg_match('/"externalId":"(UC[^"]+)"/', $html, $matches)) {
+                $channelId = $matches[1];
+            }
+
+            // Extract channel name
+            if (preg_match('/<meta property="og:title" content="([^"]+)"/', $html, $matches)) {
+                $channelName = $matches[1];
+            } else if (preg_match('/<title>([^<]+)<\/title>/', $html, $matches)) {
+                $channelName = str_replace(' - YouTube', '', $matches[1]);
+            }
 
             if (!$channelId) {
                 return response()->json([
                     'success' => false,
-                    'error' => 'Could not find channel ID. Please enter a valid YouTube channel URL or username.'
-                ], 400);
+                    'error' => 'Could not find channel ID. Please make sure you entered a valid YouTube channel URL.'
+                ], 404);
             }
 
             return response()->json([
                 'success' => true,
                 'data' => [
-                    'channel_id' => $channelId,
-                    'channel_url' => 'https://www.youtube.com/channel/' . $channelId
+                    'channelId' => $channelId,
+                    'channelName' => $channelName,
+                    'channelUrl' => 'https://www.youtube.com/channel/' . $channelId
                 ]
             ]);
         } catch (\Exception $e) {
@@ -46,31 +94,5 @@ class ChannelIdFinderController extends Controller
                 'error' => 'Failed to find channel ID: ' . $e->getMessage()
             ], 500);
         }
-    }
-
-    private function extractChannelId($input)
-    {
-        // Pattern for channel URLs
-        $patterns = [
-            '/youtube\.com\/channel\/([^\/\?]+)/',
-            '/youtube\.com\/c\/([^\/\?]+)/',
-            '/youtube\.com\/user\/([^\/\?]+)/',
-            '/youtube\.com\/@([^\/\?]+)/',
-        ];
-
-        foreach ($patterns as $pattern) {
-            if (preg_match($pattern, $input, $matches)) {
-                // In real implementation, convert username/custom URL to channel ID via API
-                // For now, return simulated channel ID
-                return 'UC' . strtoupper(substr(md5($matches[1]), 0, 22));
-            }
-        }
-
-        // If input looks like a channel ID already
-        if (preg_match('/^UC[a-zA-Z0-9_-]{22}$/', $input)) {
-            return $input;
-        }
-
-        return null;
     }
 }
