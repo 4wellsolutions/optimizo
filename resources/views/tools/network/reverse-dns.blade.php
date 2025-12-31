@@ -27,14 +27,16 @@
             <form id="rdnsForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="ipAddress" class="block text-sm font-semibold text-gray-700 mb-2">IP Address</label>
-                    <input type="text" id="ipAddress" name="ip_address"
-                        class="w-full p-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500"
-                        placeholder="8.8.8.8" required>
+                    <label for="ipAddress" class="form-label text-base">IP Address</label>
+                    <input type="text" id="ipAddress" name="ip_address" class="form-input" placeholder="8.8.8.8" required>
                 </div>
-                <button type="submit"
-                    class="px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-700 font-semibold">Reverse
-                    Lookup</button>
+                <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    </svg>
+                    <span>Reverse Lookup</span>
+                </button>
             </form>
             <div id="statusMessage" class="hidden mt-6 p-4 rounded-xl"></div>
             <div id="resultSection" class="hidden mt-6">
@@ -113,12 +115,22 @@
     </div>
 
     <script>
+        const form = document.getElementById('rdnsForm');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const btnText = submitBtn.querySelector('span');
+        const btnIcon = submitBtn.querySelector('svg');
+
         document.getElementById('rdnsForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const formData = new FormData(e.target);
             const statusMessage = document.getElementById('statusMessage');
             const resultSection = document.getElementById('resultSection');
             const rdnsResults = document.getElementById('rdnsResults');
+
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            btnText.textContent = 'Looking up...';
+            btnIcon.classList.add('animate-spin');
 
             statusMessage.classList.add('hidden');
             resultSection.classList.add('hidden');
@@ -144,6 +156,11 @@
                 statusMessage.className = 'mt-6 p-4 rounded-xl bg-red-100 text-red-800 border-2 border-red-300';
                 statusMessage.textContent = '✗ An error occurred';
                 statusMessage.classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                btnText.textContent = 'Reverse Lookup';
+                btnIcon.classList.remove('animate-spin');
             }
         });
     </script>

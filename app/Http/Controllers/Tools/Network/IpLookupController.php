@@ -23,18 +23,51 @@ class IpLookupController extends Controller
         $ip = $request->ip_address;
 
         try {
-            // Get IP details (in production, use a geolocation API)
+            // Use ipapi.co free API for IP geolocation
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "https://ipapi.co/{$ip}/json/");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
+            curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+
+            $response = curl_exec($ch);
+            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+
+            if ($httpCode !== 200 || !$response) {
+                return response()->json([
+                    'success' => false,
+                    'error' => 'Failed to fetch IP information. Please try again.'
+                ], 400);
+            }
+
+            $data = json_decode($response, true);
+
+            if (isset($data['error']) && $data['error']) {
+                return response()->json([
+                    'success' => false,
+                    'error' => 'Invalid IP address or API error.'
+                ], 400);
+            }
+
+            // Format the response
             $details = [
-                'ip' => $ip,
-                'type' => filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ? 'IPv4' : 'IPv6',
+                'ip' => $data['ip'] ?? $ip,
+                'type' => $data['version'] ?? (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ? 'IPv4' : 'IPv6'),
                 'hostname' => gethostbyaddr($ip),
-                'isp' => 'Example ISP',
-                'country' => 'United States',
-                'region' => 'California',
-                'city' => 'San Francisco',
-                'latitude' => '37.7749',
-                'longitude' => '-122.4194',
-                'timezone' => 'America/Los_Angeles'
+                'isp' => $data['org'] ?? 'Unknown',
+                'country' => $data['country_name'] ?? 'Unknown',
+                'country_code' => $data['country'] ?? '',
+                'region' => $data['region'] ?? 'Unknown',
+                'city' => $data['city'] ?? 'Unknown',
+                'postal' => $data['postal'] ?? '',
+                'latitude' => $data['latitude'] ?? '',
+                'longitude' => $data['longitude'] ?? '',
+                'timezone' => $data['timezone'] ?? 'Unknown',
+                'asn' => $data['asn'] ?? '',
+                'network' => $data['network'] ?? ''
             ];
 
             return response()->json([

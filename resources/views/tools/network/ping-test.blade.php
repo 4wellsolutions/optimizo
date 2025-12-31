@@ -26,13 +26,17 @@
             <form id="pingForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="host" class="block text-sm font-semibold text-gray-700 mb-2">Host or IP Address</label>
-                    <input type="text" id="host" name="host"
-                        class="w-full p-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500"
-                        placeholder="google.com or 8.8.8.8" required>
+                    <label for="host" class="form-label text-base">Host or IP Address</label>
+                    <input type="text" id="host" name="host" class="form-input" placeholder="google.com or 8.8.8.8"
+                        required>
                 </div>
-                <button type="submit"
-                    class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold">Ping Host</button>
+                <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span>Ping Host</span>
+                </button>
             </form>
             <div id="statusMessage" class="hidden mt-6 p-4 rounded-xl"></div>
             <div id="resultSection" class="hidden mt-6">
@@ -109,12 +113,22 @@
     </div>
 
     <script>
+        const form = document.getElementById('pingForm');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const btnText = submitBtn.querySelector('span');
+        const btnIcon = submitBtn.querySelector('svg');
+
         document.getElementById('pingForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const formData = new FormData(e.target);
             const statusMessage = document.getElementById('statusMessage');
             const resultSection = document.getElementById('resultSection');
             const pingResults = document.getElementById('pingResults');
+
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            btnText.textContent = 'Pinging...';
+            btnIcon.classList.add('animate-spin');
 
             statusMessage.classList.add('hidden');
             resultSection.classList.add('hidden');
@@ -140,6 +154,11 @@
                 statusMessage.className = 'mt-6 p-4 rounded-xl bg-red-100 text-red-800 border-2 border-red-300';
                 statusMessage.textContent = '✗ An error occurred';
                 statusMessage.classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                btnText.textContent = 'Ping Host';
+                btnIcon.classList.remove('animate-spin');
             }
         });
     </script>

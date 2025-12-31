@@ -7,6 +7,9 @@
     <div class="max-w-6xl mx-auto">
         <div
             class="relative overflow-hidden bg-gradient-to-br from-purple-500 via-purple-600 to-purple-700 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
+
             <div class="relative z-10 text-center">
                 <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
                     <svg class="w-9 h-9 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -26,14 +29,16 @@
             <form id="dnsForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="domain" class="block text-sm font-semibold text-gray-700 mb-2">Domain Name</label>
-                    <input type="text" id="domain" name="domain"
-                        class="w-full p-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500"
-                        placeholder="example.com" required>
+                    <label for="domain" class="form-label text-base">Domain Name</label>
+                    <input type="text" id="domain" name="domain" class="form-input" placeholder="example.com" required>
                 </div>
-                <button type="submit"
-                    class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 font-semibold">Lookup
-                    DNS</button>
+                <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <span>Lookup DNS</span>
+                </button>
             </form>
             <div id="statusMessage" class="hidden mt-6 p-4 rounded-xl"></div>
             <div id="resultSection" class="hidden mt-6">
@@ -95,9 +100,21 @@
     </div>
 
     <script>
+        const form = document.getElementById('dnsForm');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const btnText = submitBtn.querySelector('span');
+        const btnIcon = submitBtn.querySelector('svg');
+
         document.getElementById('dnsForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const formData = new FormData(e.target);
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            btnText.textContent = 'Looking up...';
+            btnIcon.classList.add('animate-spin');
+
             document.getElementById('statusMessage').classList.add('hidden');
             document.getElementById('resultSection').classList.add('hidden');
 
@@ -133,6 +150,12 @@
                 document.getElementById('statusMessage').className = 'mt-6 p-4 rounded-xl bg-red-100 text-red-800';
                 document.getElementById('statusMessage').textContent = '✗ An error occurred';
                 document.getElementById('statusMessage').classList.remove('hidden');
+            } finally {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                btnText.textContent = 'Lookup DNS';
+                btnIcon.classList.remove('animate-spin');
             }
         });
     </script>

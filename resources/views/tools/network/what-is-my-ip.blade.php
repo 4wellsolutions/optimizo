@@ -11,6 +11,9 @@
         <!-- Header -->
         <div
             class="relative overflow-hidden bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
+
             <div class="relative z-10 text-center">
                 <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
                     <svg class="w-9 h-9 text-blue-600" fill="currentColor" viewBox="0 0 24 24">

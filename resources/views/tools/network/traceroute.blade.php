@@ -27,14 +27,16 @@
             <form id="traceForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="host" class="block text-sm font-semibold text-gray-700 mb-2">Host or Domain</label>
-                    <input type="text" id="host" name="host"
-                        class="w-full p-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500"
-                        placeholder="google.com" required>
+                    <label for="host" class="form-label text-base">Host or Domain</label>
+                    <input type="text" id="host" name="host" class="form-input" placeholder="google.com" required>
                 </div>
-                <button type="submit"
-                    class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-semibold">Trace
-                    Route</button>
+                <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 013.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                    </svg>
+                    <span>Trace Route</span>
+                </button>
             </form>
             <div id="statusMessage" class="hidden mt-6 p-4 rounded-xl"></div>
             <div id="resultSection" class="hidden mt-6">
@@ -110,12 +112,22 @@
     </div>
 
     <script>
+        const form = document.getElementById('traceForm');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const btnText = submitBtn.querySelector('span');
+        const btnIcon = submitBtn.querySelector('svg');
+
         document.getElementById('traceForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const formData = new FormData(e.target);
             const statusMessage = document.getElementById('statusMessage');
             const resultSection = document.getElementById('resultSection');
             const traceResults = document.getElementById('traceResults');
+
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            btnText.textContent = 'Tracing...';
+            btnIcon.classList.add('animate-spin');
 
             statusMessage.classList.add('hidden');
             resultSection.classList.add('hidden');
@@ -141,6 +153,11 @@
                 statusMessage.className = 'mt-6 p-4 rounded-xl bg-red-100 text-red-800 border-2 border-red-300';
                 statusMessage.textContent = '✗ An error occurred';
                 statusMessage.classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                btnText.textContent = 'Trace Route';
+                btnIcon.classList.remove('animate-spin');
             }
         });
     </script>

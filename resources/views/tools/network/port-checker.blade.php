@@ -27,17 +27,22 @@
             <form id="portForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="host" class="block text-sm font-semibold text-gray-700 mb-2">Host or IP Address</label>
-                    <input type="text" id="host" name="host"
-                        class="w-full p-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-rose-500 mb-4"
-                        placeholder="example.com" required>
-                    <label for="port" class="block text-sm font-semibold text-gray-700 mb-2">Port Number</label>
-                    <input type="number" id="port" name="port"
-                        class="w-full p-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-rose-500"
-                        placeholder="80" min="1" max="65535" required>
+                    <label for="host" class="form-label text-base">Host or IP Address</label>
+                    <input type="text" id="host" name="host" class="form-input" placeholder="example.com or 8.8.8.8"
+                        required>
                 </div>
-                <button type="submit"
-                    class="px-6 py-3 bg-rose-600 text-white rounded-lg hover:bg-rose-700 font-semibold">Check Port</button>
+                <div class="mb-6">
+                    <label for="port" class="form-label text-base">Port Number</label>
+                    <input type="number" id="port" name="port" class="form-input" placeholder="80" min="1" max="65535"
+                        required>
+                </div>
+                <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span>Check Port</span>
+                </button>
             </form>
             <div id="statusMessage" class="hidden mt-6 p-4 rounded-xl"></div>
             <div id="resultSection" class="hidden mt-6">
@@ -115,12 +120,22 @@
     </div>
 
     <script>
+        const form = document.getElementById('portForm');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const btnText = submitBtn.querySelector('span');
+        const btnIcon = submitBtn.querySelector('svg');
+
         document.getElementById('portForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const formData = new FormData(e.target);
             const statusMessage = document.getElementById('statusMessage');
             const resultSection = document.getElementById('resultSection');
             const portResults = document.getElementById('portResults');
+
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            btnText.textContent = 'Checking...';
+            btnIcon.classList.add('animate-spin');
 
             statusMessage.classList.add('hidden');
             resultSection.classList.add('hidden');
@@ -146,6 +161,11 @@
                 statusMessage.className = 'mt-6 p-4 rounded-xl bg-red-100 text-red-800 border-2 border-red-300';
                 statusMessage.textContent = '✗ An error occurred';
                 statusMessage.classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                btnText.textContent = 'Check Port';
+                btnIcon.classList.remove('animate-spin');
             }
         });
     </script>

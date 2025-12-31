@@ -35,16 +35,21 @@
             <form id="ipForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="ipAddress" class="block text-sm font-semibold text-gray-700 mb-2">IP Address</label>
-                    <input type="text" id="ipAddress" name="ip_address"
-                        class="w-full p-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        placeholder="8.8.8.8" required>
+                    <label for="ipAddress" class="form-label text-base">IP Address</label>
+                    <input type="text" id="ipAddress" name="ip_address" class="form-input" placeholder="8.8.8.8" required>
                 </div>
 
-                <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold">
-                    Lookup IP Address
+                <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <span>Lookup IP Address</span>
                 </button>
             </form>
+
+            <!-- Status Message -->
+            <div id="statusMessage" class="hidden mt-6 p-4 rounded-xl"></div>
 
             <div id="resultSection" class="hidden mt-6">
                 <h3 class="text-xl font-bold text-gray-900 mb-4">IP Details</h3>
@@ -161,11 +166,21 @@
         const statusMessage = document.getElementById('statusMessage');
         const resultSection = document.getElementById('resultSection');
         const ipDetails = document.getElementById('ipDetails');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const btnText = submitBtn.querySelector('span');
+        const btnIcon = submitBtn.querySelector('svg');
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             const formData = new FormData(form);
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            btnText.textContent = 'Looking up...';
+            btnIcon.classList.add('animate-spin');
+            
             statusMessage.classList.add('hidden');
             resultSection.classList.add('hidden');
 
@@ -187,6 +202,12 @@
                 }
             } catch (error) {
                 showMessage('✗ An error occurred. Please try again.', 'error');
+            } finally {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                btnText.textContent = 'Lookup IP Address';
+                btnIcon.classList.remove('animate-spin');
             }
         });
 
@@ -203,14 +224,14 @@
             ];
 
             ipDetails.innerHTML = fields.map(field => `
-                                        <div class="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all transform hover:-translate-y-1">
-                                            <p class="text-sm font-semibold text-gray-600 mb-2 flex items-center gap-2">
-                                                <span class="text-2xl">${field.icon}</span>
-                                                ${field.label}
-                                            </p>
-                                            <p class="text-xl font-black text-gray-900">${field.value}</p>
-                                        </div>
-                                    `).join('');
+                                                <div class="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all transform hover:-translate-y-1">
+                                                    <p class="text-sm font-semibold text-gray-600 mb-2 flex items-center gap-2">
+                                                        <span class="text-2xl">${field.icon}</span>
+                                                        ${field.label}
+                                                    </p>
+                                                    <p class="text-xl font-black text-gray-900">${field.value}</p>
+                                                </div>
+                                            `).join('');
         }
 
         function showMessage(message, type) {
