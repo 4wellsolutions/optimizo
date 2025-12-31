@@ -43,7 +43,8 @@ use App\Http\Controllers\Tools\Utility\{
     CssMinifierController,
     JsMinifierController,
     HtmlMinifierController,
-    UrlEncoderController
+    UrlEncoderController,
+    MarkdownToHtmlController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -157,6 +158,7 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/js-minifier', [JsMinifierController::class, 'index'])->name('js-minifier');
     Route::get('/html-minifier', [HtmlMinifierController::class, 'index'])->name('html-minifier');
     Route::get('/url-encoder-decoder', [UrlEncoderController::class, 'index'])->name('url-encoder');
+    Route::get('/markdown-to-html-converter', [MarkdownToHtmlController::class, 'index'])->name('markdown-to-html');
 
     // POST Routes
     Route::post('/password-generator/generate', [PasswordGeneratorController::class, 'generate'])->name('password-generator.generate');
@@ -164,6 +166,7 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::post('/css-minifier/process', [CssMinifierController::class, 'process'])->name('css-minifier.process');
     Route::post('/js-minifier/process', [JsMinifierController::class, 'process'])->name('js-minifier.process');
     Route::post('/html-minifier/process', [HtmlMinifierController::class, 'process'])->name('html-minifier.process');
+    Route::post('/markdown-to-html/convert', [MarkdownToHtmlController::class, 'convert'])->name('markdown-to-html.convert');
 });
 
 /*

@@ -66,6 +66,7 @@ class ToolsSeeder extends Seeder
             ['name' => 'JS Minifier', 'slug' => 'js-minifier', 'route_name' => 'utility.js-minifier', 'controller' => 'JsMinifierController', 'meta_description' => 'Minify JavaScript code for better performance.'],
             ['name' => 'HTML Minifier', 'slug' => 'html-minifier', 'route_name' => 'utility.html-minifier', 'controller' => 'HtmlMinifierController', 'meta_description' => 'Minify HTML code for better performance.'],
             ['name' => 'URL Encoder/Decoder', 'slug' => 'url-encoder-decoder', 'route_name' => 'utility.url-encoder', 'controller' => 'UrlEncoderController', 'meta_description' => 'Encode and decode URLs.'],
+            ['name' => 'Markdown to HTML Converter', 'slug' => 'markdown-to-html-converter', 'route_name' => 'utility.markdown-to-html', 'controller' => 'MarkdownToHtmlController', 'meta_description' => 'Convert Markdown to HTML instantly with live preview.'],
         ];
 
         $order = 1;
