@@ -53,7 +53,12 @@ use App\Http\Controllers\Tools\Utility\{
     DecimalHexController,
     BinaryHexController,
     DecimalOctalController,
-    NumberBaseController
+    NumberBaseController,
+    JsonXmlController,
+    JsonYamlController,
+    CsvXmlController,
+    JsonSqlController,
+    TsvCsvController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -189,15 +194,12 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/decimal-octal-converter', [DecimalOctalController::class, 'index'])->name('decimal-octal');
     Route::get('/number-base-converter', [NumberBaseController::class, 'index'])->name('number-base');
 
-    // Data Format Converters
-    Route::get('/json-to-xml-converter', [ConverterController::class, 'jsonToXml'])->name('json-to-xml');
-    Route::get('/json-to-yaml-converter', [ConverterController::class, 'jsonToYaml'])->name('json-to-yaml');
-    Route::get('/csv-to-xml-converter', [ConverterController::class, 'csvToXml'])->name('csv-to-xml');
-    Route::get('/xml-to-csv-converter', [ConverterController::class, 'xmlToCsv'])->name('xml-to-csv');
-    Route::get('/sql-to-json-converter', [ConverterController::class, 'sqlToJson'])->name('sql-to-json');
-    Route::get('/json-to-sql-converter', [ConverterController::class, 'jsonToSql'])->name('json-to-sql');
-    Route::get('/tsv-to-csv-converter', [ConverterController::class, 'tsvToCsv'])->name('tsv-to-csv');
-    Route::get('/csv-to-tsv-converter', [ConverterController::class, 'csvToTsv'])->name('csv-to-tsv');
+    // Data Format Converters (Bidirectional)
+    Route::get('/json-to-xml-converter', [JsonXmlController::class, 'index'])->name('json-xml');
+    Route::get('/json-to-yaml-converter', [JsonYamlController::class, 'index'])->name('json-yaml');
+    Route::get('/csv-to-xml-converter', [CsvXmlController::class, 'index'])->name('csv-xml');
+    Route::get('/json-to-sql-converter', [JsonSqlController::class, 'index'])->name('json-sql');
+    Route::get('/tsv-to-csv-converter', [TsvCsvController::class, 'index'])->name('tsv-csv');
 
 
     // POST Routes

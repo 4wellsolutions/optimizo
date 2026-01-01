@@ -194,6 +194,28 @@
     - URL: `http://localhost:8000/ascii-converter`
     - Description: Convert between ASCII codes and text
 
+### Number System Converters
+
+47. **Decimal to Binary Converter**
+    - URL: `http://localhost:8000/decimal-binary-converter`
+    - Description: Convert decimal numbers to binary and vice versa
+
+48. **Decimal to Hexadecimal Converter**
+    - URL: `http://localhost:8000/decimal-hex-converter`
+    - Description: Convert decimal to hexadecimal and vice versa
+
+49. **Binary to Hexadecimal Converter**
+    - URL: `http://localhost:8000/binary-hex-converter`
+    - Description: Convert binary to hexadecimal and vice versa
+
+50. **Decimal to Octal Converter**
+    - URL: `http://localhost:8000/decimal-octal-converter`
+    - Description: Convert decimal to octal and vice versa
+
+51. **Number Base Converter**
+    - URL: `http://localhost:8000/number-base-converter`
+    - Description: Universal converter for any number base (2-36)
+
 ---
 
 ## Network Tools (2 Tools)
@@ -210,10 +232,10 @@
 
 ## Summary
 
-- **Total Tools**: 48
+- **Total Tools**: 49
 - **YouTube Tools**: 9
 - **SEO Tools**: 3
-- **Utility Tools**: 34
+- **Utility Tools**: 35
 - **Network Tools**: 2
 
 ---
@@ -234,30 +256,18 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 
 ---
 
-## 🚀 Upcoming Tools (67 Tools)
+## 🚀 Upcoming Tools (62 Tools)
 
 ### 🔄 Data Format Converters (8 Tools)
 
-49. **JSON to XML** - Convert JSON to XML format
-50. **JSON to YAML** - Convert JSON to YAML format
-51. **CSV to XML** - Convert CSV files to XML
-52. **XML to CSV** - Convert XML to CSV format
-53. **SQL to JSON** - Convert SQL queries to JSON
-54. **JSON to SQL** - Convert JSON to SQL format
-55. **TSV to CSV** - Convert Tab-Separated Values to CSV
-56. **CSV to TSV** - Convert CSV to Tab-Separated Values
-
-### 🔢 Binary & Number System Converters (9 Tools)
-
-57. **Decimal to Binary** - Convert decimal numbers to binary
-58. **Binary to Decimal** - Convert binary to decimal
-59. **Decimal to Hex** - Convert decimal to hexadecimal
-60. **Hex to Decimal** - Convert hexadecimal to decimal
-61. **Binary to Hex** - Convert binary to hexadecimal
-62. **Hex to Binary** - Convert hexadecimal to binary
-63. **Octal to Decimal** - Convert octal to decimal
-64. **Decimal to Octal** - Convert decimal to octal
-65. **Number Base Converter** - Convert between any number bases
+52. **JSON to XML** - Convert JSON to XML format
+53. **JSON to YAML** - Convert JSON to YAML format
+54. **CSV to XML** - Convert CSV files to XML
+55. **XML to CSV** - Convert XML to CSV format
+56. **SQL to JSON** - Convert SQL queries to JSON
+57. **JSON to SQL** - Convert JSON to SQL format
+58. **TSV to CSV** - Convert Tab-Separated Values to CSV
+59. **CSV to TSV** - Convert CSV to Tab-Separated Values
 
 ### 🔠 Text Case & String Converters (9 Tools)
 
@@ -333,17 +343,17 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 ## 📈 Tools Summary
 
 ### Current Tools (Live)
-- **Total**: 48 tools
+- **Total**: 49 tools
 - **YouTube Tools**: 9
 - **SEO Tools**: 3
-- **Utility Tools**: 34
+- **Utility Tools**: 35 (includes 5 Number System Converters)
 - **Network Tools**: 2
 
 ### Upcoming Tools (Planned)
-- **Total**: 67 new tools
+- **Total**: 62 new tools
 - **Encoding/Decoding**: 0 tools ✅ (All 8 completed and moved to live)
+- **Number System Converters**: 0 tools ✅ (All 5 completed and moved to live)
 - **Data Format Converters**: 8 tools
-- **Binary & Number Systems**: 9 tools
 - **Text & String Converters**: 9 tools
 - **Image Converters**: 11 tools
 - **Document Converters**: 11 tools
@@ -352,8 +362,8 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 - **Color & Design**: 7 tools
 
 ### Grand Total
-- **115 Tools** (48 live + 67 upcoming)
+- **111 Tools** (49 live + 62 upcoming)
 
 ---
 
-*Last Updated: 2025-12-31*
+*Last Updated: 2026-01-01*
