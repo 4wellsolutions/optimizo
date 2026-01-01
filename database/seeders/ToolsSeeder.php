@@ -114,6 +114,13 @@ class ToolsSeeder extends Seeder
             ['name' => 'Username Checker', 'slug' => 'username-checker', 'route_name' => 'utility.username-checker', 'controller' => 'UsernameCheckerController', 'meta_description' => 'Check username availability across platforms.', 'subcategory' => 'Utilities'],
             ['name' => 'Password Generator', 'slug' => 'password-generator', 'route_name' => 'utility.password-generator', 'controller' => 'PasswordGeneratorController', 'meta_description' => 'Generate secure random passwords.', 'subcategory' => 'Utilities'],
             ['name' => 'Internet Speed Test', 'slug' => 'internet-speed-test', 'route_name' => 'utility.speed-test', 'controller' => 'InternetSpeedTestController', 'meta_description' => 'Test your internet connection speed.', 'subcategory' => 'Utilities'],
+
+            // Number System Converters
+            ['name' => 'Decimal to Binary Converter', 'slug' => 'decimal-binary-converter', 'route_name' => 'utility.decimal-binary', 'controller' => 'DecimalBinaryController', 'meta_description' => 'Convert decimal numbers to binary and vice versa. Free bidirectional decimal-binary converter.', 'subcategory' => 'Number System Converters'],
+            ['name' => 'Decimal to Hexadecimal Converter', 'slug' => 'decimal-hex-converter', 'route_name' => 'utility.decimal-hex', 'controller' => 'DecimalHexController', 'meta_description' => 'Convert decimal numbers to hexadecimal and vice versa. Free bidirectional decimal-hex converter.', 'subcategory' => 'Number System Converters'],
+            ['name' => 'Binary to Hexadecimal Converter', 'slug' => 'binary-hex-converter', 'route_name' => 'utility.binary-hex', 'controller' => 'BinaryHexController', 'meta_description' => 'Convert binary numbers to hexadecimal and vice versa. Free bidirectional binary-hex converter.', 'subcategory' => 'Number System Converters'],
+            ['name' => 'Decimal to Octal Converter', 'slug' => 'decimal-octal-converter', 'route_name' => 'utility.decimal-octal', 'controller' => 'DecimalOctalController', 'meta_description' => 'Convert decimal numbers to octal and vice versa. Free bidirectional decimal-octal converter.', 'subcategory' => 'Number System Converters'],
+            ['name' => 'Number Base Converter', 'slug' => 'number-base-converter', 'route_name' => 'utility.number-base', 'controller' => 'NumberBaseController', 'meta_description' => 'Convert numbers between any bases (2-36). Universal number base converter supporting binary, octal, decimal, hexadecimal, and more.', 'subcategory' => 'Number System Converters'],
         ];
 
         $order = 1;

@@ -48,7 +48,12 @@ use App\Http\Controllers\Tools\Utility\{
     UnicodeEncoderController,
     MarkdownToHtmlController,
     ConverterController,
-    EncodingController
+    EncodingController,
+    DecimalBinaryController,
+    DecimalHexController,
+    BinaryHexController,
+    DecimalOctalController,
+    NumberBaseController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -176,6 +181,13 @@ Route::prefix('tools')->name('utility.')->group(function () {
     // Encoding/Decoding Tools (JWT and ASCII only - others are combined above)
     Route::get('/jwt-decoder', [EncodingController::class, 'jwtDecode'])->name('jwt-decode');
     Route::get('/ascii-converter', [EncodingController::class, 'asciiConvert'])->name('ascii-convert');
+
+    // Number System Converters
+    Route::get('/decimal-binary-converter', [DecimalBinaryController::class, 'index'])->name('decimal-binary');
+    Route::get('/decimal-hex-converter', [DecimalHexController::class, 'index'])->name('decimal-hex');
+    Route::get('/binary-hex-converter', [BinaryHexController::class, 'index'])->name('binary-hex');
+    Route::get('/decimal-octal-converter', [DecimalOctalController::class, 'index'])->name('decimal-octal');
+    Route::get('/number-base-converter', [NumberBaseController::class, 'index'])->name('number-base');
 
     // Data Format Converters
     Route::get('/json-to-xml-converter', [ConverterController::class, 'jsonToXml'])->name('json-to-xml');
