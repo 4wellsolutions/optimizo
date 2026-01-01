@@ -194,25 +194,52 @@
     - URL: `http://localhost:8000/ascii-converter`
     - Description: Convert between ASCII codes and text
 
+### Data Format Converters (Bidirectional)
+
+47. **JSON ↔ XML Converter**
+    - URL: `http://localhost:8000/tools/json-to-xml-converter`
+    - Description: Convert between JSON and XML formats bidirectionally
+    - Status: ✅ Unique SEO Content
+
+48. **JSON ↔ YAML Converter**
+    - URL: `http://localhost:8000/tools/json-to-yaml-converter`
+    - Description: Convert between JSON and YAML formats bidirectionally
+    - Status: ✅ Unique SEO Content
+
+49. **CSV ↔ XML Converter**
+    - URL: `http://localhost:8000/tools/csv-to-xml-converter`
+    - Description: Convert between CSV and XML formats bidirectionally
+    - Status: ✅ Unique SEO Content
+
+50. **JSON ↔ SQL Converter**
+    - URL: `http://localhost:8000/tools/json-to-sql-converter`
+    - Description: Generate SQL INSERT statements from JSON and vice versa
+    - Status: ✅ Unique SEO Content
+
+51. **TSV ↔ CSV Converter**
+    - URL: `http://localhost:8000/tools/tsv-to-csv-converter`
+    - Description: Convert between Tab-Separated and Comma-Separated Values
+    - Status: ✅ Unique SEO Content
+
 ### Number System Converters
 
-47. **Decimal to Binary Converter**
+52. **Decimal to Binary Converter**
     - URL: `http://localhost:8000/decimal-binary-converter`
     - Description: Convert decimal numbers to binary and vice versa
 
-48. **Decimal to Hexadecimal Converter**
+53. **Decimal to Hexadecimal Converter**
     - URL: `http://localhost:8000/decimal-hex-converter`
     - Description: Convert decimal to hexadecimal and vice versa
 
-49. **Binary to Hexadecimal Converter**
+54. **Binary to Hexadecimal Converter**
     - URL: `http://localhost:8000/binary-hex-converter`
     - Description: Convert binary to hexadecimal and vice versa
 
-50. **Decimal to Octal Converter**
+55. **Decimal to Octal Converter**
     - URL: `http://localhost:8000/decimal-octal-converter`
     - Description: Convert decimal to octal and vice versa
 
-51. **Number Base Converter**
+56. **Number Base Converter**
     - URL: `http://localhost:8000/number-base-converter`
     - Description: Universal converter for any number base (2-36)
 
@@ -220,11 +247,11 @@
 
 ## Network Tools (2 Tools)
 
-47. **What is My IP**
+57. **What is My IP**
     - URL: `http://localhost:8000/what-is-my-ip`
     - Description: Find your public IP address and location
 
-48. **What is My ISP**
+58. **What is My ISP**
     - URL: `http://localhost:8000/what-is-my-isp`
     - Description: Identify your Internet Service Provider
 
@@ -232,10 +259,10 @@
 
 ## Summary
 
-- **Total Tools**: 49
+- **Total Tools**: 54
 - **YouTube Tools**: 9
 - **SEO Tools**: 3
-- **Utility Tools**: 35
+- **Utility Tools**: 40 (includes 5 Data Format Converters + 5 Number System Converters)
 - **Network Tools**: 2
 
 ---
@@ -256,18 +283,9 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 
 ---
 
-## 🚀 Upcoming Tools (62 Tools)
+## 🚀 Upcoming Tools (57 Tools)
 
-### 🔄 Data Format Converters (8 Tools)
-
-52. **JSON to XML** - Convert JSON to XML format
-53. **JSON to YAML** - Convert JSON to YAML format
-54. **CSV to XML** - Convert CSV files to XML
-55. **XML to CSV** - Convert XML to CSV format
-56. **SQL to JSON** - Convert SQL queries to JSON
-57. **JSON to SQL** - Convert JSON to SQL format
-58. **TSV to CSV** - Convert Tab-Separated Values to CSV
-59. **CSV to TSV** - Convert CSV to Tab-Separated Values
+**Note:** All Data Format Converters are now live as bidirectional tools! ✅
 
 ### 🔠 Text Case & String Converters (9 Tools)
 
@@ -343,17 +361,17 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 ## 📈 Tools Summary
 
 ### Current Tools (Live)
-- **Total**: 49 tools
+- **Total**: 54 tools
 - **YouTube Tools**: 9
 - **SEO Tools**: 3
-- **Utility Tools**: 35 (includes 5 Number System Converters)
+- **Utility Tools**: 40 (includes 5 Data Format Converters + 5 Number System Converters)
 - **Network Tools**: 2
 
 ### Upcoming Tools (Planned)
-- **Total**: 62 new tools
+- **Total**: 57 new tools
 - **Encoding/Decoding**: 0 tools ✅ (All 8 completed and moved to live)
 - **Number System Converters**: 0 tools ✅ (All 5 completed and moved to live)
-- **Data Format Converters**: 8 tools
+- **Data Format Converters**: 3 tools (5 bidirectional converters completed ✅)
 - **Text & String Converters**: 9 tools
 - **Image Converters**: 11 tools
 - **Document Converters**: 11 tools
@@ -362,7 +380,7 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 - **Color & Design**: 7 tools
 
 ### Grand Total
-- **111 Tools** (49 live + 62 upcoming)
+- **111 Tools** (54 live + 57 upcoming)
 
 ---
 
