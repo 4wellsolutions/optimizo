@@ -58,7 +58,16 @@ use App\Http\Controllers\Tools\Utility\{
     JsonYamlController,
     CsvXmlController,
     JsonSqlController,
-    TsvCsvController
+    TsvCsvController,
+    SentenceCaseController,
+    CamelCaseController,
+    PascalCaseController,
+    SnakeCaseController,
+    KebabCaseController,
+    StudlyCaseController,
+    TextReverserController,
+    TextToMorseController,
+    MorseToTextController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -200,6 +209,17 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/csv-to-xml-converter', [CsvXmlController::class, 'index'])->name('csv-xml');
     Route::get('/json-to-sql-converter', [JsonSqlController::class, 'index'])->name('json-sql');
     Route::get('/tsv-to-csv-converter', [TsvCsvController::class, 'index'])->name('tsv-csv');
+
+    // Text & String Converters
+    Route::get('/sentence-case-converter', [SentenceCaseController::class, 'index'])->name('sentence-case');
+    Route::get('/camel-case-converter', [CamelCaseController::class, 'index'])->name('camel-case');
+    Route::get('/pascal-case-converter', [PascalCaseController::class, 'index'])->name('pascal-case');
+    Route::get('/snake-case-converter', [SnakeCaseController::class, 'index'])->name('snake-case');
+    Route::get('/kebab-case-converter', [KebabCaseController::class, 'index'])->name('kebab-case');
+    Route::get('/studly-case-converter', [StudlyCaseController::class, 'index'])->name('studly-case');
+    Route::get('/text-reverser', [TextReverserController::class, 'index'])->name('text-reverser');
+    Route::get('/text-to-morse-converter', [TextToMorseController::class, 'index'])->name('text-to-morse');
+    Route::get('/morse-to-text-converter', [MorseToTextController::class, 'index'])->name('morse-to-text');
 
 
     // POST Routes
