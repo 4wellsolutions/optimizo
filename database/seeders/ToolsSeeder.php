@@ -43,6 +43,7 @@ class ToolsSeeder extends Seeder
 
             // Technical SEO
             ['name' => 'Redirect & HTTP Status Checker', 'slug' => 'redirect-checker', 'route_name' => 'network.redirect-checker', 'controller' => 'RedirectCheckerController', 'meta_description' => 'Check redirects and HTTP status codes. Analyze redirect chains and detect loops.', 'subcategory' => 'Technical SEO'],
+            ['name' => 'Google SERP Checker', 'slug' => 'google-serp-checker', 'route_name' => 'seo.google-serp-checker', 'controller' => 'GoogleSerpCheckerController', 'meta_description' => 'Simulate Google search results for any location and device to check your rankings.', 'subcategory' => 'Technical SEO'],
         ];
 
         // Network Tools with Subcategories

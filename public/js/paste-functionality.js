@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const inputs = document.querySelectorAll('input[type="text"], input[type="url"], textarea');
 
     inputs.forEach(input => {
-        // Skip if already has paste button or is readonly
-        if (input.readOnly || input.closest('.relative')?.querySelector('[onclick*="paste"]')) {
+        // Skip if already has paste button, is readonly, or has no-paste class
+        if (input.readOnly || input.classList.contains('no-paste') || input.closest('.relative')?.querySelector('[onclick*="paste"]')) {
             return;
         }
 

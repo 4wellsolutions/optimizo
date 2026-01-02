@@ -22,7 +22,8 @@ use App\Http\Controllers\Tools\YouTube\{
 use App\Http\Controllers\Tools\SEO\{
     MetaAnalyzerController,
     KeywordDensityController,
-    WordCounterController
+    WordCounterController,
+    GoogleSerpCheckerController
 };
 
 use App\Http\Controllers\Tools\Utility\{
@@ -154,6 +155,10 @@ Route::prefix('tools')->name('seo.')->group(function () {
 
     // POST Routes
     Route::post('/meta-analyzer/analyze', [MetaAnalyzerController::class, 'analyze'])->name('meta-analyzer.analyze');
+
+    // Google SERP Checker
+    Route::get('/google-serp-checker', [GoogleSerpCheckerController::class, 'index'])->name('google-serp-checker');
+    Route::get('/google-serp-checker/locations', [GoogleSerpCheckerController::class, 'searchLocations'])->name('google-serp-checker.locations');
 });
 
 /*
@@ -251,6 +256,7 @@ Route::prefix('tools')->name('network.')->group(function () {
     Route::get('/port-checker', [PortCheckerController::class, 'index'])->name('port-checker');
     Route::get('/reverse-dns', [ReverseDnsController::class, 'index'])->name('reverse-dns');
     Route::get('/redirect-checker', [RedirectCheckerController::class, 'index'])->name('redirect-checker');
+
 
     // POST Routes
     Route::post('/ip-lookup/lookup', [IpLookupController::class, 'lookup'])->name('ip-lookup.lookup');
