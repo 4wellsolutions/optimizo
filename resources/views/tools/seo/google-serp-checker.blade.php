@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Free Google SERP Checker - SERP Rank & Position Tracker Tool')
-@section('meta_description', 'Use our free Google SERP checker to track your SERP ranking and position. Detailed SERP analysis for desktop and mobile from any location. The ultimate online SERP tracker.')
-@section('meta_keywords', 'serp checker, free serp checker, serp rank checker, google serp checker, serp position checker, google serp tracker, website serp checker, online serp checker, serp analyzer, check google serp')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
+@section('meta_keywords', $tool->meta_keywords)
 
 @section('content')
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

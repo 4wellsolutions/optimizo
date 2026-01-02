@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Unicode Encoder & Decoder - ' . config('app.name'))
-@section('meta_description', 'Encode and decode Unicode escape sequences instantly. Free online Unicode encoder and decoder tool.')
+@section('title', $tool->meta_title))
+@section('meta_description', $tool->meta_description)
 
 @section('content')
     <div class="max-w-6xl mx-auto">

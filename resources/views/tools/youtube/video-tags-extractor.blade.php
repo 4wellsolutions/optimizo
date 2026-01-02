@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'YouTube Video Tags Extractor - Extract Tags from Any Video | Optimizo')
-@section('meta_description', 'Extract all tags from any YouTube video instantly. Free YouTube tags extractor tool for SEO analysis and content research.')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
 
 @section('content')
     <div class="max-w-6xl mx-auto">

@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'YouTube Earnings Calculator - Calculate YouTube Revenue | Optimizo')
-@section('meta_description', 'Calculate potential YouTube earnings based on views and engagement. Free YouTube money calculator with daily, monthly, and yearly estimates.')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
 
 @section('content')
     <div class="max-w-6xl mx-auto">

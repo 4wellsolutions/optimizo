@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'YouTube Channel ID Finder - Find Any Channel ID | Optimizo')
-@section('meta_description', 'Find YouTube channel ID from channel URL or name instantly. Free YouTube channel ID finder tool for developers and marketers.')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
 
 @section('content')
     <div class="max-w-6xl mx-auto">

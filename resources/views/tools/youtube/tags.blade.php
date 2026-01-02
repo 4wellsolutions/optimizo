@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'YouTube Tag Generator - Free SEO-Optimized Tags | Optimizo')
-@section('meta_description', 'Generate SEO-optimized YouTube tags instantly. Free tag generator tool to boost your video visibility and rankings.')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
 
 @section('content')
     <div class="max-w-6xl mx-auto">

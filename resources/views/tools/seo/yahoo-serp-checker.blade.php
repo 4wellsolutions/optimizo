@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Free Yahoo SERP Checker - Yahoo Rank & Position Tracker Tool')
-@section('meta_description', 'Use our free Yahoo SERP checker to track your Yahoo ranking and position. Detailed Yahoo SERP analysis for desktop and mobile.')
-@section('meta_keywords', 'yahoo serp checker, free yahoo rank tracker, yahoo position checker, yahoo seo tool, check yahoo rankings, yahoo rank checker')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
+@section('meta_keywords', $tool->meta_keywords)
 
 @section('content')
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

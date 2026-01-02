@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Free Bing SERP Checker - Bing Rank & Position Tracker Tool')
-@section('meta_description', 'Use our free Bing SERP checker to track your Bing ranking and position. Detailed Bing SERP analysis for desktop and mobile from any location.')
-@section('meta_keywords', 'bing serp checker, free bing rank tracker, bing position checker, bing seo tool, check bing rankings, bing rank checker, online bing serp checker')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
+@section('meta_keywords', $tool->meta_keywords)
 
 @section('content')
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

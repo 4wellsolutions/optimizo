@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'YouTube Channel Data Extractor - Get Channel Info | Optimizo')
-@section('meta_description', 'Extract YouTube channel data including subscribers, videos, views, description, and more instantly.')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
 
 @section('content')
     <div class="max-w-6xl mx-auto">

@@ -1,6 +1,6 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'Free YouTube Video Downloader - Download Videos in HD | Optimizo')
+@section('title', $tool->meta_title)
 @section('meta_description', 
 @section('content')
     <div class="max-w-6xl mx-auto">

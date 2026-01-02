@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'HTML Encoder & Decoder - ' . config('app.name'))
-@section('meta_description', 'Encode and decode HTML entities instantly. Free online HTML encoder and decoder tool for web developers.')
+@section('title', $tool->meta_title))
+@section('meta_description', $tool->meta_description)
 
 @section('content')
     <div class="max-w-6xl mx-auto">

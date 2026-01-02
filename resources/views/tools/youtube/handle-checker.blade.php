@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'YouTube Handle Checker - Check Handle Availability | Optimizo')
-@section('meta_description', 'Check if a YouTube handle is available. Find the perfect @handle for your YouTube channel instantly.')
+@section('title', $tool->meta_title)
+@section('meta_description', $tool->meta_description)
 
 @section('content')
     <div class="max-w-6xl mx-auto">
