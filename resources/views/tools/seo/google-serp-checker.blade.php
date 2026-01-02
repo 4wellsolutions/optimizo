@@ -376,7 +376,7 @@
             }
 
             searchTimeout = setTimeout(() => {
-                fetch(`{{ route('seo.google-serp-checker.locations') }}?q=${encodeURIComponent(query)}`)
+                fetch(`{{ route('seo.locations.search') }}?q=${encodeURIComponent(query)}`)
                     .then(response => response.json())
                     .then(locations => {
                         locationDropdown.innerHTML = '';

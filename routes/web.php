@@ -19,11 +19,14 @@ use App\Http\Controllers\Tools\YouTube\{
     EarningsCalculatorController
 };
 
-use App\Http\Controllers\Tools\SEO\{
+use App\Http\Controllers\Tools\Seo\{
     MetaAnalyzerController,
     KeywordDensityController,
     WordCounterController,
-    GoogleSerpCheckerController
+    GoogleSerpCheckerController,
+    BingSerpCheckerController,
+    YahooSerpCheckerController,
+    LocationController
 };
 
 use App\Http\Controllers\Tools\Utility\{
@@ -158,7 +161,9 @@ Route::prefix('tools')->name('seo.')->group(function () {
 
     // Google SERP Checker
     Route::get('/google-serp-checker', [GoogleSerpCheckerController::class, 'index'])->name('google-serp-checker');
-    Route::get('/google-serp-checker/locations', [GoogleSerpCheckerController::class, 'searchLocations'])->name('google-serp-checker.locations');
+    Route::get('/locations', [LocationController::class, 'search'])->name('locations.search');
+    Route::get('/bing-serp-checker', [BingSerpCheckerController::class, 'index'])->name('bing-serp-checker');
+    Route::get('/yahoo-serp-checker', [YahooSerpCheckerController::class, 'index'])->name('yahoo-serp-checker');
 });
 
 /*

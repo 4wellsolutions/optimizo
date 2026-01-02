@@ -44,6 +44,8 @@ class ToolsSeeder extends Seeder
             // Technical SEO
             ['name' => 'Redirect & HTTP Status Checker', 'slug' => 'redirect-checker', 'route_name' => 'network.redirect-checker', 'controller' => 'RedirectCheckerController', 'meta_description' => 'Check redirects and HTTP status codes. Analyze redirect chains and detect loops.', 'subcategory' => 'Technical SEO'],
             ['name' => 'Google SERP Checker', 'slug' => 'google-serp-checker', 'route_name' => 'seo.google-serp-checker', 'controller' => 'GoogleSerpCheckerController', 'meta_description' => 'Simulate Google search results for any location and device to check your rankings.', 'subcategory' => 'Technical SEO'],
+            ['name' => 'Bing SERP Checker', 'slug' => 'bing-serp-checker', 'route_name' => 'seo.bing-serp-checker', 'controller' => 'BingSerpCheckerController', 'meta_description' => 'Use our free Bing SERP checker to track your Bing ranking and position. Detailed Bing SERP analysis for desktop and mobile from any location.', 'subcategory' => 'Technical SEO'],
+            ['name' => 'Yahoo SERP Checker', 'slug' => 'yahoo-serp-checker', 'route_name' => 'seo.yahoo-serp-checker', 'controller' => 'YahooSerpCheckerController', 'meta_description' => 'Use our free Yahoo SERP checker to track your Yahoo ranking and position. Detailed Yahoo SERP analysis for desktop and mobile.', 'subcategory' => 'Technical SEO'],
         ];
 
         // Network Tools with Subcategories
