@@ -27,12 +27,13 @@ class VideoDataExtractorController extends Controller
             return response()->json(['success' => false, 'error' => 'Invalid YouTube URL.'], 400);
         }
 
-        // Initialize Data with N/A
+        // Initialize Data
         $data = [
             'videoId' => $videoId,
             'title' => 'N/A',
             'channel' => 'N/A',
             'thumbnail' => "https://img.youtube.com/vi/{$videoId}/maxresdefault.jpg",
+            // Note: maxresdefault is 404 for some videos, but client side handles it or we can check hqdefault
             'description' => 'N/A',
             'tags' => 'N/A',
             'views' => 'N/A',
@@ -44,92 +45,128 @@ class VideoDataExtractorController extends Controller
         ];
 
         try {
-            // STRATEGY 1: Official oEmbed API (Public, Unblocked, No Key)
-            // This guarantees Title, Author, Thumbnail at minimum.
-            try {
-                $oembedUrl = "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={$videoId}&format=json";
-                $oembedResponse = Http::timeout(5)->get($oembedUrl);
+            // STRATEGY V11: Hybrid "Mobile First" + "Social Fallback"
+            // 1. Try Mobile Site (Best for Full Description & Duration)
+            // 2. If blocked/redirected (N/A), try Social Crawler (Best for Title/Tags/Views)
 
-                if ($oembedResponse->successful()) {
-                    $oembed = $oembedResponse->json();
-                    $data['title'] = $oembed['title'] ?? $data['title'];
-                    $data['channel'] = $oembed['author_name'] ?? $data['channel'];
-                    $data['thumbnail'] = $oembed['thumbnail_url'] ?? $data['thumbnail'];
+            // --- TIER 1: MOBILE SITE ---
+            $response = Http::withHeaders([
+                'User-Agent' => 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',
+                'Accept-Language' => 'en-US,en;q=0.9',
+            ])->get("https://m.youtube.com/watch?v={$videoId}");
+
+            if ($response->successful()) {
+                $html = $response->body();
+
+                // Description: Check for "attributedDescriptionBodyText" (Mobile specific)
+                if (preg_match('/"attributedDescriptionBodyText"\s*:\s*\{\s*"content"\s*:\s*"([^"]+)"/', $html, $m)) {
+                    $data['description'] = trim(json_decode('"' . $m[1] . '"'));
+                } elseif (preg_match('/"description"\s*:\s*\{\s*"runs"\s*:\s*\[\s*\{\s*"text"\s*:\s*"([^"]+)"/', $html, $m)) {
+                    // Standard Mobile runs
+                    $data['description'] = trim(json_decode('"' . $m[1] . '"'));
                 }
-            } catch (\Exception $e) {
-                // Ignore oEmbed failure, proceed to scraping
+
+                // Title
+                if (preg_match('/"title"\s*:\s*\{\s*"runs"\s*:\s*\[\s*\{\s*"text"\s*:\s*"([^"]+)"/', $html, $m)) {
+                    $data['title'] = $m[1];
+                }
+
+                // Views
+                if (preg_match('/"viewCount"\s*:\s*\{\s*"videoViewCountRenderer"\s*:\s*\{\s*"viewCount"\s*:\s*\{\s*"simpleText"\s*:\s*"([\d,]+) views"/', $html, $m)) {
+                    $data['views'] = $m[1];
+                }
+
+                // Duration (Global Search)
+                if (preg_match('/"lengthSeconds"\s*:\s*"(\d+)"/', $html, $m)) {
+                    $seconds = $m[1];
+                    $data['duration'] = $this->formatDuration($seconds);
+                }
+
+                // Channel
+                if (preg_match('/"owner"\s*:\s*\{\s*"videoOwnerRenderer"\s*:\s*\{\s*.*?"title"\s*:\s*\{\s*"runs"\s*:\s*\[\s*\{\s*"text"\s*:\s*"([^"]+)"/', $html, $m)) {
+                    $data['channel'] = $m[1];
+                }
             }
 
-            // STRATEGY 2: HTML Scraping for Extra Data (Views, Desc, Etc)
-            $response = Http::withHeaders([
-                'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                'Accept-Language' => 'en-US,en;q=0.9',
-            ])->get("https://www.youtube.com/watch?v={$videoId}");
+            // --- TIER 2: SOCIAL CRAWLER (The "Bypass" Layer) ---
+            // If main fields are still N/A (soft block), use Facebook UA
+            if ($data['description'] === 'N/A' || $data['views'] === 'N/A') {
+                try {
+                    $socialResponse = Http::withHeaders([
+                        'User-Agent' => 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)',
+                        'Accept-Language' => 'en-US,en;q=0.9',
+                    ])->get("https://www.youtube.com/watch?v={$videoId}");
 
-            $html = $response->body();
+                    if ($socialResponse->successful()) {
+                        $socialHtml = $socialResponse->body();
 
-            // Try to find ytInitialPlayerResponse (Best source)
-            if (preg_match('/var ytInitialPlayerResponse\s*=\s*(\{(?:[^{}]+|(?1))*\})/', $html, $matches)) {
-                $json = json_decode($matches[1], true);
+                        // Title
+                        if ($data['title'] === 'N/A' && preg_match('/<meta property="og:title"\s+content="([^"]+)"/', $socialHtml, $m)) {
+                            $data['title'] = html_entity_decode($m[1]);
+                        }
 
-                $videoDetails = $json['videoDetails'] ?? [];
-                $microformat = $json['microformat']['playerMicroformatRenderer'] ?? [];
+                        // Description (Even if truncated, better than N/A)
+                        if ($data['description'] === 'N/A' && preg_match('/<meta property="og:description"\s+content="([^"]+)"/', $socialHtml, $m)) {
+                            $data['description'] = html_entity_decode($m[1]);
+                        }
 
-                $data['title'] = $videoDetails['title'] ?? $data['title']; // Overwrite if available
-                $data['description'] = $videoDetails['shortDescription'] ?? $data['description'];
-                $data['tags'] = isset($videoDetails['keywords']) ? implode(', ', $videoDetails['keywords']) : $data['tags'];
-                $data['channel'] = $videoDetails['author'] ?? $data['channel'];
-                $data['views'] = isset($videoDetails['viewCount']) ? number_format($videoDetails['viewCount']) : $data['views'];
-                $data['category'] = $microformat['category'] ?? $data['category'];
+                        // Views (InteractionCount)
+                        if ($data['views'] === 'N/A' && preg_match('/<meta itemprop="interactionCount"\s+content="(\d+)"/', $socialHtml, $m)) {
+                            $data['views'] = number_format((int) $m[1]);
+                        }
 
-                // Publish Date
-                if (isset($microformat['publishDate'])) {
-                    $data['publishDate'] = date('F j, Y', strtotime($microformat['publishDate']));
-                }
-
-                // Duration
-                $lengthSeconds = $videoDetails['lengthSeconds'] ?? ($microformat['lengthSeconds'] ?? null);
-                if ($lengthSeconds) {
-                    $hours = floor($lengthSeconds / 3600);
-                    $minutes = floor(($lengthSeconds / 60) % 60);
-                    $seconds = $lengthSeconds % 60;
-                    if ($hours > 0) {
-                        $data['duration'] = sprintf("%d:%02d:%02d", $hours, $minutes, $seconds);
-                    } else {
-                        $data['duration'] = sprintf("%d:%02d", $minutes, $seconds);
+                        // Tags (Social sets specific tags)
+                        if (preg_match_all('/<meta property="og:video:tag"\s+content="([^"]+)"/', $socialHtml, $m)) {
+                            if (!empty($m[1]))
+                                $data['tags'] = implode(', ', $m[1]);
+                        }
                     }
+                } catch (\Exception $e) {
                 }
-            } else {
-                // Fallback: Meta Tags Scraping (If JS object is missing from bot detection)
-                if (preg_match('/<meta name="description" content="([^"]+)">/', $html, $m)) {
-                    $data['description'] = htmlspecialchars_decode($m[1]);
-                }
-                if (preg_match('/<meta name="keywords" content="([^"]+)">/', $html, $m)) {
-                    $data['tags'] = htmlspecialchars_decode($m[1]);
-                }
+            }
 
-                // Try JSON-LD (Schema.org)
-                if (preg_match('/<script type="application\/ld\+json">({.*?})<\/script>/s', $html, $m)) {
-                    $ldJson = json_decode($m[1], true);
-                    $data['description'] = $ldJson['description'] ?? $data['description'];
-                    $data['publishDate'] = isset($ldJson['uploadDate']) ? date('F j, Y', strtotime($ldJson['uploadDate'])) : $data['publishDate'];
-                    $data['views'] = isset($ldJson['interactionCount']) ? number_format($ldJson['interactionCount']) : $data['views'];
+            // --- TIER 3: oEMBED (Final Fallback) ---
+            if ($data['title'] === 'N/A' || $data['channel'] === 'N/A') {
+                try {
+                    $oembed = Http::get("https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={$videoId}&format=json")->json();
+                    $data['title'] = $oembed['title'] ?? $data['title'];
+                    $data['channel'] = $oembed['author_name'] ?? $data['channel'];
+                } catch (\Exception $e) {
                 }
+            }
+
+            // Metadata Cleanups
+            if ($data['description'] !== 'N/A')
+                $data['description'] = strip_tags($data['description']);
+            if ($data['tags'] === 'N/A' && isset($data['title'])) {
+                // Last resort tags from title
+                $data['tags'] = implode(', ', array_filter(explode(' ', preg_replace('/[^a-zA-Z0-9 ]/', '', $data['title'])), function ($w) {
+                    return strlen($w) > 3; }));
             }
 
             return response()->json(['success' => true, 'data' => $data]);
 
         } catch (\Exception $e) {
-            // Even if everything crashes, return what we have from oEmbed or basic info
             return response()->json(['success' => true, 'data' => $data]);
         }
     }
 
     private function extractVideoId($url)
     {
-        // Extract video ID from various YouTube URL formats
         $pattern = '/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ \s]{11})/';
         preg_match($pattern, $url, $matches);
         return $matches[1] ?? null;
+    }
+
+    private function formatDuration($seconds)
+    {
+        if ($seconds <= 0)
+            return 'N/A';
+        $hours = floor($seconds / 3600);
+        $minutes = floor(($seconds / 60) % 60);
+        $secs = $seconds % 60;
+        return ($hours > 0)
+            ? sprintf("%d:%02d:%02d", $hours, $minutes, $secs)
+            : sprintf("%d:%02d", $minutes, $secs);
     }
 }

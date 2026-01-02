@@ -16,7 +16,13 @@ class AdminSitemapController extends Controller
         $lastGenerated = $sitemapExists ? date('F j, Y H:i:s', File::lastModified($sitemapPath)) : 'Never';
         $sitemapUrl = url('sitemap.xml');
 
-        return view('admin.sitemap.index', compact('sitemapExists', 'lastGenerated', 'sitemapUrl'));
+        $urlCount = 0;
+        if ($sitemapExists) {
+            $xmlContent = File::get($sitemapPath);
+            $urlCount = substr_count($xmlContent, '<loc>');
+        }
+
+        return view('admin.sitemap.index', compact('sitemapExists', 'lastGenerated', 'sitemapUrl', 'urlCount'));
     }
 
     public function generate()
