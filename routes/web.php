@@ -346,6 +346,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::prefix('settings')->name('settings.')->group(function () {
         Route::get('/', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('index');
         Route::post('/', [App\Http\Controllers\Admin\SettingController::class, 'update'])->name('update');
+        Route::post('/generate-sitemap', [App\Http\Controllers\Admin\SettingController::class, 'generateSitemap'])->name('generate-sitemap');
     });
 });
 
