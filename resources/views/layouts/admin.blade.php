@@ -82,6 +82,20 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('admin.categories.index') }}"
+                                class="nav-link {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-tags"></i>
+                                <p>Categories</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.import.index') }}"
+                                class="nav-link {{ request()->routeIs('admin.import.*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-file-import"></i>
+                                <p>Import Blog</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('admin.tools.index') }}"
                                 class="nav-link {{ request()->routeIs('admin.tools.*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-tools"></i>
@@ -176,7 +190,11 @@
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- TinyMCE -->
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.9/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script>
         // CSRF Token for AJAX
@@ -216,7 +234,7 @@
                     if (callback) callback();
                 }
             });
-    };
+        };
     </script>
 
     @stack('scripts')

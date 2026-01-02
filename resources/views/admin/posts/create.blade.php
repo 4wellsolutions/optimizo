@@ -3,194 +3,278 @@
 @section('page-title', 'Create Post')
 
 @section('content')
-    <div class="max-w-5xl mx-auto">
-        <div class="flex justify-between items-center mb-6">
-            <h1 class="text-2xl font-bold text-gray-800">Create New Post</h1>
-            <a href="{{ route('admin.posts.index') }}" class="text-gray-600 hover:text-gray-900">
-                <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                </svg>
-                Back to Posts
+    <div x-data="postEditor()" class="pb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h5 class="mb-1 text-dark font-weight-bold">Create New Post</h5>
+                <small class="text-muted">Write something amazing today.</small>
+            </div>
+            <a href="{{ route('admin.posts.index') }}" class="btn btn-outline-secondary btn-sm">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Posts
             </a>
         </div>
 
-        <form id="postForm" class="space-y-6">
+        <form id="postForm">
             @csrf
+            <div class="row">
+                <!-- LEFT COLUMN (Main Content) -->
+                <div class="col-lg-8">
 
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold mb-4">Post Content</h3>
-
-                <!-- Title -->
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Title *</label>
-                    <input type="text" name="title" id="title" required class="input-modern w-full">
-                </div>
-
-                <!-- Slug -->
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Slug (URL)</label>
-                    <input type="text" name="slug" id="slug" class="input-modern w-full"
-                        placeholder="auto-generated-from-title">
-                </div>
-
-                <!-- Content -->
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Content *</label>
-                    <textarea name="content" id="content" rows="20"></textarea>
-                </div>
-
-                <!-- Excerpt -->
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Excerpt</label>
-                    <textarea name="excerpt" id="excerpt" rows="3" class="input-modern w-full"
-                        placeholder="Brief summary (optional)"></textarea>
-                </div>
-
-                <!-- Featured Image -->
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Featured Image URL</label>
-                    <input type="url" name="featured_image" id="featured_image" class="input-modern w-full"
-                        placeholder="https://example.com/image.jpg">
-                </div>
-            </div>
-
-            <!-- Categories & Tags -->
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold mb-4">Categories & Tags</h3>
-
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Categories</label>
-                        <select name="categories[]" id="categories" multiple class="input-modern w-full h-32">
-                            @foreach($categories as $category)
-                                <option value="{{ $category->id }}">{{ $category->name }}</option>
-                            @endforeach
-                        </select>
-                        <button type="button" onclick="addCategory()"
-                            class="mt-2 text-sm text-blue-600 hover:text-blue-800">+ Add New Category</button>
+                    <!-- Title & Slug -->
+                    <div class="card card-outline card-primary shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="font-weight-bold text-uppercase text-xs text-muted">Post Title</label>
+                                <input type="text" name="title" id="title" required class="form-control form-control-lg"
+                                    placeholder="Enter an engaging title...">
+                            </div>
+                            <div class="form-group mb-0">
+                                <label class="font-weight-bold text-uppercase text-xs text-muted">Permalink</label>
+                                <div class="input-group input-group-sm">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-light text-muted">{{ url('/blog') }}/</span>
+                                    </div>
+                                    <input type="text" name="slug" id="slug" class="form-control"
+                                        placeholder="auto-generated-slug">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Tags</label>
-                        <select name="tags[]" id="tags" multiple class="input-modern w-full h-32">
-                            @foreach($tags as $tag)
-                                <option value="{{ $tag->id }}">{{ $tag->name }}</option>
-                            @endforeach
-                        </select>
-                        <button type="button" onclick="addTag()" class="mt-2 text-sm text-blue-600 hover:text-blue-800">+
-                            Add New Tag</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SEO Settings -->
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold mb-4">SEO Settings</h3>
-
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Meta Title</label>
-                    <input type="text" name="meta_title" id="meta_title" class="input-modern w-full"
-                        placeholder="Leave empty to use post title">
-                </div>
-
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Meta Description</label>
-                    <textarea name="meta_description" id="meta_description" rows="2" class="input-modern w-full"
-                        placeholder="SEO description"></textarea>
-                </div>
-
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Meta Keywords</label>
-                    <input type="text" name="meta_keywords" id="meta_keywords" class="input-modern w-full"
-                        placeholder="keyword1, keyword2, keyword3">
-                </div>
-            </div>
-
-            <!-- Publishing Options -->
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold mb-4">Publishing Options</h3>
-
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Status *</label>
-                        <select name="status" id="status" required class="input-modern w-full">
-                            <option value="draft">Draft</option>
-                            <option value="published">Published</option>
-                            <option value="scheduled">Scheduled</option>
-                        </select>
+                    <!-- Editor -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body p-0">
+                            <textarea name="content" id="content" style="height: 600px; opacity: 0;"></textarea>
+                        </div>
                     </div>
 
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Publish Date</label>
-                        <input type="datetime-local" name="published_at" id="published_at" class="input-modern w-full">
+                    <!-- Excerpt -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <label class="font-weight-bold text-uppercase text-xs text-muted">Excerpt</label>
+                            <textarea name="excerpt" rows="3" class="form-control"></textarea>
+                            <small class="text-muted">A short summary displayed on the blog listing page.</small>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Submit Buttons -->
-            <div class="flex justify-end space-x-4">
-                <button type="button" onclick="saveDraft()"
-                    class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
-                    Save as Draft
-                </button>
-                <button type="submit" class="btn-gradient px-6 py-2 rounded-lg text-white">
-                    Create Post
-                </button>
+                    <!-- SEO Section -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-light">
+                            <h3 class="card-title font-weight-bold text-dark" style="font-size: 1rem;">
+                                <i class="fas fa-search mr-1 text-primary"></i> SEO Configuration
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Meta Title</label>
+                                <input type="text" name="meta_title" class="form-control"
+                                    placeholder="Defaults to post title">
+                            </div>
+                            <div class="form-group">
+                                <label>Meta Description</label>
+                                <textarea name="meta_description" rows="2" class="form-control"
+                                    placeholder="Optimal length: 150-160 characters"></textarea>
+                            </div>
+                            <div class="form-group mb-0">
+                                <label>Keywords</label>
+                                <input type="text" name="meta_keywords" class="form-control"
+                                    placeholder="Separate with commas">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN (Sidebar) -->
+                <div class="col-lg-4">
+
+                    <!-- Publish Card -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted">
+                            Publishing
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select name="status" class="form-control custom-select">
+                                    <option value="published">Published</option>
+                                    <option value="draft">Draft</option>
+                                    <option value="scheduled">Scheduled</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Publish Date</label>
+                                <input type="datetime-local" name="published_at" class="form-control">
+                            </div>
+
+                            <div class="mt-4">
+                                <button type="submit" class="btn btn-primary btn-block font-weight-bold py-2 shadow-sm">
+                                    Publish Post
+                                </button>
+                                <button type="button" @click="saveDraft()" class="btn btn-default btn-block mt-2">
+                                    Save Draft
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Image -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted">
+                            Featured Image
+                        </div>
+                        <div class="card-body text-center">
+                            <input type="hidden" name="featured_image" x-model="featuredImage">
+
+                            <!-- Placeholder -->
+                            <div x-show="!featuredImage"
+                                @click="$dispatch('open-media-modal', { onSelect: handleFeaturedImage })"
+                                class="rounded border-dashed border-2 border-secondary d-flex flex-column align-items-center justify-content-center p-4 cursor-pointer hover-bg-light"
+                                style="height: 200px; border-style: dashed; cursor: pointer; transition: all 0.2s;">
+                                <i class="fas fa-image fa-3x text-muted mb-2"></i>
+                                <span class="text-muted font-weight-medium">Set Featured Image</span>
+                            </div>
+
+                            <!-- Preview -->
+                            <div x-show="featuredImage" class="position-relative md-preview"
+                                style="height: 200px; display: none;">
+                                <img :src="featuredImage" class="img-fluid rounded w-100 h-100" style="object-fit: cover;">
+                                <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center bg-dark-overlay hover-actions"
+                                    style="top:0; left:0; background: rgba(0,0,0,0.5); opacity: 0; transition: opacity 0.2s;">
+                                    <button type="button"
+                                        @click="$dispatch('open-media-modal', { onSelect: handleFeaturedImage })"
+                                        class="btn btn-sm btn-light mr-2">Replace</button>
+                                    <button type="button" @click="featuredImage = ''"
+                                        class="btn btn-sm btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted">
+                            Categories
+                        </div>
+                        <div class="card-body">
+                            <div class="overflow-auto mb-3" style="max-height: 200px;">
+                                @foreach($categories as $category)
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="categories[]" value="{{ $category->id }}"
+                                            class="custom-control-input" id="cat_{{ $category->id }}">
+                                        <label class="custom-control-label"
+                                            for="cat_{{ $category->id }}">{{ $category->name }}</label>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted">
+                            Tags
+                        </div>
+                        <div class="card-body">
+                            <select id="tags" name="tags[]" multiple class="form-control"></select>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </form>
     </div>
+
+    <!-- Media Library Modal -->
+    @include('admin.partials.media-library-modal')
+
+    <style>
+        .hover-bg-light:hover {
+            background-color: #f8f9fa;
+            border-color: #007bff !important;
+            color: #007bff;
+        }
+
+        .md-preview:hover .hover-actions {
+            opacity: 1 !important;
+        }
+    </style>
 @endsection
 
 @push('scripts')
+    <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.bootstrap4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+
     <script>
+        function postEditor() {
+            return {
+                featuredImage: '',
+                handleFeaturedImage(media) {
+                    this.featuredImage = media.url;
+                },
+                saveDraft() {
+                    // Quick Draft Logic
+                    alert('Draft logic placeholder');
+                }
+            }
+        }
+
         // Initialize TinyMCE
         tinymce.init({
             selector: '#content',
-            height: 500,
-            menubar: false,
+            height: 600,
+            menubar: true,
             plugins: [
-                'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-                'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-                'insertdatetime', 'media', 'table', 'help', 'wordcount'
+                'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview', 'anchor',
+                'searchreplace', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media',
+                'table', 'help', 'wordcount', 'directionality'
             ],
-            toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | bullist numlist | link image | code',
-            content_style: 'body { font-family: Inter, sans-serif; font-size: 14px }',
-            images_upload_url: '{{ route("admin.media.upload") }}',
-            automatic_uploads: true,
-            file_picker_types: 'image',
-            file_picker_callback: function (cb, value, meta) {
-                var input = document.createElement('input');
-                input.setAttribute('type', 'file');
-                input.setAttribute('accept', 'image/*');
-                input.onchange = function () {
-                    var file = this.files[0];
-                    var reader = new FileReader();
-                    reader.onload = function () {
-                        cb(reader.result, { title: file.name });
-                    };
-                    reader.readAsDataURL(file);
-                };
-                input.click();
+            toolbar: 'undo redo | blocks | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | forecolor backcolor | link image media | removeformat | code',
+
+            // Custom Callback
+            file_picker_callback: function (callback, value, meta) {
+                if (meta.filetype === 'image') {
+                    window.dispatchEvent(new CustomEvent('open-media-modal', {
+                        detail: {
+                            onSelect: function (media) {
+                                callback(media.url, { alt: media.alt_text || media.original_name });
+                            }
+                        }
+                    }));
+                }
+            },
+            convert_urls: false,
+        });
+
+        // Initialize TomSelect
+        new TomSelect('#tags', {
+            maxItems: 20,
+            valueField: 'id',
+            labelField: 'name',
+            searchField: 'name',
+            create: function (input) {
+                return new Promise(function (resolve, reject) {
+                    $.post('{{ route("admin.tags.store") }}', { name: input, _token: '{{ csrf_token() }}' })
+                        .done(function (res) { resolve({ id: res.tag.id, name: res.tag.name }); })
+                        .fail(function () { resolve(false); });
+                });
+            },
+            load: function (query, callback) {
+                var url = '{{ route("admin.tags.list") }}';
+                fetch(url).then(response => response.json()).then(json => {
+                    callback(json);
+                }).catch(() => { callback(); });
             }
         });
 
-        // Auto-generate slug from title
-        $('#title').on('blur', function () {
-            if (!$('#slug').val()) {
-                let slug = $(this).val().toLowerCase()
-                    .replace(/[^a-z0-9]+/g, '-')
-                    .replace(/^-+|-+$/g, '');
-                $('#slug').val(slug);
-            }
+        $('#title').on('input', function () {
+            let slug = $(this).val().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+            $('#slug').val(slug);
         });
 
-        // Submit form via AJAX
         $('#postForm').on('submit', function (e) {
             e.preventDefault();
-
-            // Get TinyMCE content
             let content = tinymce.get('content').getContent();
-
             let formData = new FormData(this);
             formData.set('content', content);
 
@@ -200,72 +284,16 @@
                 data: formData,
                 processData: false,
                 contentType: false,
-                success: function (response) {
-                    toast(response.message, 'success');
-                    setTimeout(() => window.location.href = response.redirect, 1000);
-                },
-                error: function (xhr) {
-                    let errors = xhr.responseJSON.errors;
-                    if (errors) {
-                        Object.keys(errors).forEach(key => {
-                            toast(errors[key][0], 'error');
-                        });
-                    } else {
-                        toast('Error creating post', 'error');
+                success: function (res) {
+                    if (res.success) {
+                        window.toast('Post created successfully!');
+                        setTimeout(() => window.location.href = res.redirect, 1000);
                     }
+                },
+                error: function (err) {
+                    alert('Error: ' + JSON.stringify(err.responseJSON?.errors));
                 }
             });
         });
-
-        function saveDraft() {
-            $('#status').val('draft');
-            $('#postForm').submit();
-        }
-
-        function addCategory() {
-            Swal.fire({
-                title: 'Add New Category',
-                input: 'text',
-                inputLabel: 'Category Name',
-                showCancelButton: true,
-                inputValidator: (value) => {
-                    if (!value) {
-                        return 'Please enter a category name'
-                    }
-                }
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    $.post('{{ route("admin.categories.store") }}', {
-                        name: result.value
-                    }, function (response) {
-                        toast(response.message, 'success');
-                        $('#categories').append(`<option value="${response.category.id}" selected>${response.category.name}</option>`);
-                    });
-                }
-            });
-        }
-
-        function addTag() {
-            Swal.fire({
-                title: 'Add New Tag',
-                input: 'text',
-                inputLabel: 'Tag Name',
-                showCancelButton: true,
-                inputValidator: (value) => {
-                    if (!value) {
-                        return 'Please enter a tag name'
-                    }
-                }
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    $.post('{{ route("admin.tags.store") }}', {
-                        name: result.value
-                    }, function (response) {
-                        toast(response.message, 'success');
-                        $('#tags').append(`<option value="${response.tag.id}" selected>${response.tag.name}</option>`);
-                    });
-                }
-            });
-        }
     </script>
 @endpush

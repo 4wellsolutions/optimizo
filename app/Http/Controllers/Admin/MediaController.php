@@ -15,6 +15,12 @@ class MediaController extends Controller
         return view('admin.media.index', compact('media'));
     }
 
+    public function list()
+    {
+        $media = Media::latest()->paginate(24);
+        return response()->json($media);
+    }
+
     public function upload(Request $request)
     {
         $request->validate([

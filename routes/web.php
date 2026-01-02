@@ -332,10 +332,9 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::post('posts/{post}/publish', [App\Http\Controllers\Admin\PostController::class, 'publish'])->name('posts.publish');
 
     // Categories & Tags (AJAX Endpoints)
-    Route::prefix('categories')->name('categories.')->group(function () {
-        Route::get('/list', [App\Http\Controllers\Admin\PostController::class, 'categoriesList'])->name('list');
-        Route::post('/', [App\Http\Controllers\Admin\PostController::class, 'storeCategory'])->name('store');
-    });
+    // Categories Management
+    Route::get('categories/list', [App\Http\Controllers\Admin\CategoryController::class, 'list'])->name('categories.list');
+    Route::resource('categories', App\Http\Controllers\Admin\CategoryController::class);
 
     Route::prefix('tags')->name('tags.')->group(function () {
         Route::get('/list', [App\Http\Controllers\Admin\PostController::class, 'tagsList'])->name('list');
@@ -343,8 +342,13 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     });
 
     // Media Management
+    Route::get('media/list', [App\Http\Controllers\Admin\MediaController::class, 'list'])->name('media.list');
     Route::resource('media', App\Http\Controllers\Admin\MediaController::class);
     Route::post('media/upload', [App\Http\Controllers\Admin\MediaController::class, 'upload'])->name('media.upload');
+
+    // Blog Import
+    Route::get('import', [App\Http\Controllers\Admin\BlogImportController::class, 'index'])->name('import.index');
+    Route::post('import', [App\Http\Controllers\Admin\BlogImportController::class, 'process'])->name('import.process');
 
     // Redirects Management
     Route::resource('redirects', App\Http\Controllers\Admin\RedirectController::class);
