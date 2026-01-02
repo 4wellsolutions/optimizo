@@ -26,7 +26,8 @@ use App\Http\Controllers\Tools\Seo\{
     GoogleSerpCheckerController,
     BingSerpCheckerController,
     YahooSerpCheckerController,
-    LocationController
+    LocationController,
+    OnPageSeoCheckerController
 };
 
 use App\Http\Controllers\Tools\Utility\{
@@ -164,6 +165,12 @@ Route::prefix('tools')->name('seo.')->group(function () {
     Route::get('/locations', [LocationController::class, 'search'])->name('locations.search');
     Route::get('/bing-serp-checker', [BingSerpCheckerController::class, 'index'])->name('bing-serp-checker');
     Route::get('/yahoo-serp-checker', [YahooSerpCheckerController::class, 'index'])->name('yahoo-serp-checker');
+
+    // On-Page SEO Checker
+    Route::get('/on-page-seo-checker', [OnPageSeoCheckerController::class, 'index'])->name('on-page-seo-checker');
+    Route::post('/on-page-seo-checker/init', [OnPageSeoCheckerController::class, 'init'])->name('on-page.init');
+    Route::post('/on-page-seo-checker/analyze-step', [OnPageSeoCheckerController::class, 'analyzeStep'])->name('on-page.analyze-step');
+    Route::get('/on-page-seo-checker/export', [OnPageSeoCheckerController::class, 'exportPdf'])->name('on-page.export');
 });
 
 /*
