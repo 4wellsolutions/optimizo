@@ -300,7 +300,7 @@ class ToolSeeder extends Seeder
                 'slug' => 'youtube-channel',
                 'category' => 'youtube',
                 'controller' => 'Tools\YouTube\ChannelDataExtractorController',
-                'route_name' => 'tools.youtube-channel',
+                'route_name' => 'youtube.channel',
                 'url' => '/tools/youtube-channel',
                 'meta_title' => 'YouTube Channel Data Extractor - Extract Channel Information | Optimizo',
                 'meta_description' => 'Extract YouTube channel data including subscribers, views, videos, and more. Free channel data extractor.',
@@ -344,7 +344,7 @@ class ToolSeeder extends Seeder
                 'slug' => 'keyword-density',
                 'category' => 'seo',
                 'controller' => 'Tools\SEO\KeywordDensityController',
-                'route_name' => 'tools.keyword-density',
+                'route_name' => 'seo.keyword-density',
                 'url' => '/tools/keyword-density',
                 'meta_title' => 'Free Keyword Density Checker - Analyze Keyword Frequency for SEO | Optimizo',
                 'meta_description' => 'Free keyword density checker. Analyze keyword frequency and density in your content for better SEO optimization.',
@@ -367,6 +367,20 @@ class ToolSeeder extends Seeder
                 'change_frequency' => 'weekly',
                 'order' => 25,
             ],
+            [
+                'name' => 'Redirect & HTTP Status Checker',
+                'slug' => 'redirect-checker',
+                'category' => 'seo',
+                'controller' => 'Tools\Network\RedirectCheckerController',
+                'route_name' => 'network.redirect-checker',
+                'url' => '/tools/redirect-checker',
+                'meta_title' => 'Redirect Checker & HTTP Status Code Tool - Free Online',
+                'meta_description' => 'Free redirect checker tool to analyze HTTP status codes, trace redirect chains, detect 301/302 redirects, find broken redirects and redirect loops. Essential for SEO and website debugging.',
+                'meta_keywords' => 'redirect checker, http status code, 301 redirect, 302 redirect, redirect loop, broken links, seo tool',
+                'priority' => 0.9,
+                'change_frequency' => 'weekly',
+                'order' => 26,
+            ],
 
             // New Utility Tools
             [
@@ -381,7 +395,7 @@ class ToolSeeder extends Seeder
                 'meta_keywords' => 'code formatter, beautify code, format code, code beautifier, minify code',
                 'priority' => 0.9,
                 'change_frequency' => 'weekly',
-                'order' => 26,
+                'order' => 27,
             ],
             [
                 'name' => 'CSS Minifier',

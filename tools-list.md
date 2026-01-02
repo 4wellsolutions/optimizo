@@ -245,7 +245,7 @@
 
 ---
 
-## Network Tools (2 Tools)
+## Network Tools (3 Tools)
 
 57. **What is My IP**
     - URL: `http://localhost:8000/what-is-my-ip`
@@ -255,15 +255,19 @@
     - URL: `http://localhost:8000/what-is-my-isp`
     - Description: Identify your Internet Service Provider
 
+59. **Redirect & HTTP Status Checker**
+    - URL: `http://localhost:8000/tools/redirect-checker`
+    - Description: Check HTTP status codes, analyze redirect chains, detect 301/302 redirects, find broken redirects and redirect loops
+
 ---
 
 ## Summary
 
-- **Total Tools**: 54
+- **Total Tools**: 55
 - **YouTube Tools**: 9
 - **SEO Tools**: 3
 - **Utility Tools**: 40 (includes 5 Data Format Converters + 5 Number System Converters)
-- **Network Tools**: 2
+- **Network Tools**: 3
 
 ---
 
@@ -361,11 +365,11 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 ## 📈 Tools Summary
 
 ### Current Tools (Live)
-- **Total**: 54 tools ✅ **Audit Complete - No Duplicates**
+- **Total**: 55 tools ✅ **Audit Complete - No Duplicates**
 - **YouTube Tools**: 9
 - **SEO Tools**: 3
 - **Utility Tools**: 40 (includes 5 Data Format Converters + 5 Number System Converters)
-- **Network Tools**: 2
+- **Network Tools**: 3
 
 **Utility Tools Breakdown:**
 - Encoding & Decoding: 6 tools
@@ -390,7 +394,7 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 - **Color & Design**: 7 tools
 
 ### Grand Total
-- **111 Tools** (54 live + 57 upcoming)
+- **112 Tools** (55 live + 57 upcoming)
 
 ---
 

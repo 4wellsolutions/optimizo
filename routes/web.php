@@ -80,7 +80,8 @@ use App\Http\Controllers\Tools\Network\{
     PingTestController,
     TracerouteController,
     PortCheckerController,
-    ReverseDnsController
+    ReverseDnsController,
+    RedirectCheckerController
 };
 
 /*
@@ -249,6 +250,7 @@ Route::prefix('tools')->name('network.')->group(function () {
     Route::get('/traceroute', [TracerouteController::class, 'index'])->name('traceroute');
     Route::get('/port-checker', [PortCheckerController::class, 'index'])->name('port-checker');
     Route::get('/reverse-dns', [ReverseDnsController::class, 'index'])->name('reverse-dns');
+    Route::get('/redirect-checker', [RedirectCheckerController::class, 'index'])->name('redirect-checker');
 
     // POST Routes
     Route::post('/ip-lookup/lookup', [IpLookupController::class, 'lookup'])->name('ip-lookup.lookup');
@@ -259,6 +261,8 @@ Route::prefix('tools')->name('network.')->group(function () {
     Route::post('/port-checker/check', [PortCheckerController::class, 'check'])->name('port-checker.check');
     Route::post('/reverse-dns/lookup', [ReverseDnsController::class, 'lookup'])->name('reverse-dns.lookup');
     Route::post('/domain-to-ip/lookup', [DomainToIpController::class, 'lookup'])->name('domain-to-ip.lookup');
+    Route::post('/redirect-checker/check', [RedirectCheckerController::class, 'check'])->name('redirect-checker.check');
+    Route::post('/redirect-checker/canonical', [RedirectCheckerController::class, 'checkCanonical'])->name('redirect-checker.canonical');
 });
 
 /*

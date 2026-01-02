@@ -40,6 +40,9 @@ class ToolsSeeder extends Seeder
 
             // Content Tools
             ['name' => 'Word Counter', 'slug' => 'word-counter', 'route_name' => 'seo.word-counter', 'controller' => 'WordCounterController', 'meta_description' => 'Count words, characters, and analyze text for SEO optimization.', 'subcategory' => 'Content Tools'],
+
+            // Technical SEO
+            ['name' => 'Redirect & HTTP Status Checker', 'slug' => 'redirect-checker', 'route_name' => 'network.redirect-checker', 'controller' => 'RedirectCheckerController', 'meta_description' => 'Check redirects and HTTP status codes. Analyze redirect chains and detect loops.', 'subcategory' => 'Technical SEO'],
         ];
 
         // Network Tools with Subcategories

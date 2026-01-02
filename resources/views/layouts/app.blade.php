@@ -37,6 +37,23 @@
                         class="text-xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Optimizo</span>
                 </a>
 
+                <!-- Search Bar (Desktop/Tablet) -->
+                <div class="hidden md:block relative w-full max-w-md mx-4 search-container">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <input type="text"
+                        class="tool-search-input block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-xl leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 sm:text-sm transition-all duration-200"
+                        placeholder="Search for tools..." autocomplete="off">
+
+                    <div class="search-results absolute z-50 mt-2 w-full bg-white shadow-xl rounded-xl border border-gray-100 py-1 text-base overflow-auto max-h-96 sm:text-sm hidden">
+                        <!-- Results injected via JS -->
+                    </div>
+                </div>
+
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="{{ route('home') }}" class="nav-link">Home</a>
@@ -59,6 +76,22 @@
 
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <!-- Mobile Search -->
+            <div class="px-4 pt-4 pb-2 search-container relative">
+                <div class="absolute inset-y-0 left-0 pl-7 flex items-center pointer-events-none top-2">
+                    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <input type="text"
+                    class="tool-search-input block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-xl leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-base transition-all duration-200"
+                    placeholder="Search for tools..." autocomplete="off">
+                <div class="search-results absolute z-50 mt-2 w-[calc(100%-2rem)] bg-white shadow-xl rounded-xl border border-gray-100 py-1 text-base overflow-auto max-h-60 hidden">
+                    <!-- Results injected via JS -->
+                </div>
+            </div>
+
             <div class="px-4 py-3 space-y-1">
                 <a href="{{ route('home') }}" class="block nav-link">Home</a>
                 <a href="{{ route('category.youtube') }}" class="block nav-link">YouTube Tools</a>
@@ -132,6 +165,106 @@
     </footer>
 
     <script>
+        // Make searchable tools available to JS
+        window.searchableTools = @json($searchableTools ?? []);
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initializing search for all search containers (desktop + mobile)
+            const searchContainers = document.querySelectorAll('.search-container');
+
+            searchContainers.forEach(container => {
+                const searchInput = container.querySelector('.tool-search-input');
+                const searchResults = container.querySelector('.search-results');
+                let selectedIndex = -1;
+
+                if (searchInput && searchResults) {
+                    searchInput.addEventListener('input', function(e) {
+                        const query = e.target.value.toLowerCase();
+                        selectedIndex = -1;
+
+                        if (query.length < 2) {
+                            searchResults.classList.add('hidden');
+                            return;
+                        }
+
+                        const filteredTools = window.searchableTools.filter(tool => 
+                            tool.name.toLowerCase().includes(query) || 
+                            tool.category.toLowerCase().includes(query)
+                        ).slice(0, 8); // Limit to 8 results
+
+                        if (filteredTools.length > 0) {
+                            searchResults.innerHTML = filteredTools.map((tool, index) => `
+                                <a href="${tool.url}" class="block px-4 py-3 hover:bg-indigo-50 transition-colors flex items-center group ${index === 0 ? 'bg-indigo-50/50' : ''}" data-index="${index}">
+                                    <div class="bg-gray-100 text-gray-500 rounded-lg p-2 mr-3 group-hover:bg-indigo-100 group-hover:text-indigo-600 transition-colors">
+                                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-900 font-medium">${tool.name}</div>
+                                        <div class="text-xs text-gray-500 uppercase tracking-wider font-semibold">${tool.category} Tool</div>
+                                    </div>
+                                </a>
+                            `).join('');
+                            searchResults.classList.remove('hidden');
+                        } else {
+                            searchResults.innerHTML = `
+                                <div class="px-4 py-3 text-sm text-gray-500 text-center">
+                                    No tools found matching "${e.target.value}"
+                                </div>
+                            `;
+                            searchResults.classList.remove('hidden');
+                        }
+                    });
+
+                    // Handle clicking outside to close
+                    document.addEventListener('click', function(e) {
+                        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                            searchResults.classList.add('hidden');
+                        }
+                    });
+
+                    // Handle keyboard navigation
+                    searchInput.addEventListener('keydown', function(e) {
+                        if (searchResults.classList.contains('hidden')) return;
+
+                        const results = searchResults.querySelectorAll('a');
+                        
+                        if (e.key === 'ArrowDown') {
+                            e.preventDefault();
+                            selectedIndex = Math.min(selectedIndex + 1, results.length - 1);
+                            updateSelection(results);
+                        } else if (e.key === 'ArrowUp') {
+                            e.preventDefault();
+                            selectedIndex = Math.max(selectedIndex - 1, -1);
+                            updateSelection(results);
+                        } else if (e.key === 'Enter') {
+                            e.preventDefault();
+                            if (selectedIndex >= 0 && results[selectedIndex]) {
+                                results[selectedIndex].click();
+                            } else if (results.length > 0) {
+                                // Default to first result if none selected
+                                results[0].click();
+                            }
+                        } else if (e.key === 'Escape') {
+                            searchResults.classList.add('hidden');
+                            searchInput.blur();
+                        }
+                    });
+
+                    function updateSelection(results) {
+                        results.forEach((el, idx) => {
+                            if (idx === selectedIndex) {
+                                el.classList.add('bg-indigo-50');
+                            } else {
+                                el.classList.remove('bg-indigo-50');
+                            }
+                        });
+                    }
+                }
+            });
+        });
+
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
