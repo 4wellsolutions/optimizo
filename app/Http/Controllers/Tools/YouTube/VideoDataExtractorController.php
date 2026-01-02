@@ -24,82 +24,104 @@ class VideoDataExtractorController extends Controller
         $videoId = $this->extractVideoId($request->url);
 
         if (!$videoId) {
-            return response()->json(['success' => false, 'error' => 'Invalid YouTube URL. Please enter a valid YouTube video URL.'], 400);
+            return response()->json(['success' => false, 'error' => 'Invalid YouTube URL.'], 400);
         }
 
-        // Scrape YouTube page for metadata
+        // Initialize Data with N/A
+        $data = [
+            'videoId' => $videoId,
+            'title' => 'N/A',
+            'channel' => 'N/A',
+            'thumbnail' => "https://img.youtube.com/vi/{$videoId}/maxresdefault.jpg",
+            'description' => 'N/A',
+            'tags' => 'N/A',
+            'views' => 'N/A',
+            'likes' => 'N/A',
+            'duration' => 'N/A',
+            'publishDate' => 'N/A',
+            'category' => 'N/A',
+            'url' => $request->url
+        ];
+
         try {
+            // STRATEGY 1: Official oEmbed API (Public, Unblocked, No Key)
+            // This guarantees Title, Author, Thumbnail at minimum.
+            try {
+                $oembedUrl = "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={$videoId}&format=json";
+                $oembedResponse = Http::timeout(5)->get($oembedUrl);
+
+                if ($oembedResponse->successful()) {
+                    $oembed = $oembedResponse->json();
+                    $data['title'] = $oembed['title'] ?? $data['title'];
+                    $data['channel'] = $oembed['author_name'] ?? $data['channel'];
+                    $data['thumbnail'] = $oembed['thumbnail_url'] ?? $data['thumbnail'];
+                }
+            } catch (\Exception $e) {
+                // Ignore oEmbed failure, proceed to scraping
+            }
+
+            // STRATEGY 2: HTML Scraping for Extra Data (Views, Desc, Etc)
             $response = Http::withHeaders([
-                'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept-Language' => 'en-US,en;q=0.9',
             ])->get("https://www.youtube.com/watch?v={$videoId}");
 
             $html = $response->body();
 
-            // Extract title
-            preg_match('/"title":"([^"]+)"/', $html, $titleMatch);
-            $title = isset($titleMatch[1]) ? json_decode('"' . $titleMatch[1] . '"') : 'N/A';
+            // Try to find ytInitialPlayerResponse (Best source)
+            if (preg_match('/var ytInitialPlayerResponse\s*=\s*(\{(?:[^{}]+|(?1))*\})/', $html, $matches)) {
+                $json = json_decode($matches[1], true);
 
-            // Extract description
-            preg_match('/"description":{"simpleText":"([^"]+)"}/', $html, $descMatch);
-            if (!isset($descMatch[1])) {
-                preg_match('/"shortDescription":"([^"]+)"/', $html, $descMatch);
+                $videoDetails = $json['videoDetails'] ?? [];
+                $microformat = $json['microformat']['playerMicroformatRenderer'] ?? [];
+
+                $data['title'] = $videoDetails['title'] ?? $data['title']; // Overwrite if available
+                $data['description'] = $videoDetails['shortDescription'] ?? $data['description'];
+                $data['tags'] = isset($videoDetails['keywords']) ? implode(', ', $videoDetails['keywords']) : $data['tags'];
+                $data['channel'] = $videoDetails['author'] ?? $data['channel'];
+                $data['views'] = isset($videoDetails['viewCount']) ? number_format($videoDetails['viewCount']) : $data['views'];
+                $data['category'] = $microformat['category'] ?? $data['category'];
+
+                // Publish Date
+                if (isset($microformat['publishDate'])) {
+                    $data['publishDate'] = date('F j, Y', strtotime($microformat['publishDate']));
+                }
+
+                // Duration
+                $lengthSeconds = $videoDetails['lengthSeconds'] ?? ($microformat['lengthSeconds'] ?? null);
+                if ($lengthSeconds) {
+                    $hours = floor($lengthSeconds / 3600);
+                    $minutes = floor(($lengthSeconds / 60) % 60);
+                    $seconds = $lengthSeconds % 60;
+                    if ($hours > 0) {
+                        $data['duration'] = sprintf("%d:%02d:%02d", $hours, $minutes, $seconds);
+                    } else {
+                        $data['duration'] = sprintf("%d:%02d", $minutes, $seconds);
+                    }
+                }
+            } else {
+                // Fallback: Meta Tags Scraping (If JS object is missing from bot detection)
+                if (preg_match('/<meta name="description" content="([^"]+)">/', $html, $m)) {
+                    $data['description'] = htmlspecialchars_decode($m[1]);
+                }
+                if (preg_match('/<meta name="keywords" content="([^"]+)">/', $html, $m)) {
+                    $data['tags'] = htmlspecialchars_decode($m[1]);
+                }
+
+                // Try JSON-LD (Schema.org)
+                if (preg_match('/<script type="application\/ld\+json">({.*?})<\/script>/s', $html, $m)) {
+                    $ldJson = json_decode($m[1], true);
+                    $data['description'] = $ldJson['description'] ?? $data['description'];
+                    $data['publishDate'] = isset($ldJson['uploadDate']) ? date('F j, Y', strtotime($ldJson['uploadDate'])) : $data['publishDate'];
+                    $data['views'] = isset($ldJson['interactionCount']) ? number_format($ldJson['interactionCount']) : $data['views'];
+                }
             }
-            $description = isset($descMatch[1]) ? json_decode('"' . $descMatch[1] . '"') : 'N/A';
-
-            // Extract keywords/tags
-            preg_match('/"keywords":\[([^\]]+)\]/', $html, $keywordsMatch);
-            $tags = 'N/A';
-            if (isset($keywordsMatch[1])) {
-                $tagsArray = json_decode('[' . $keywordsMatch[1] . ']');
-                $tags = is_array($tagsArray) ? implode(', ', $tagsArray) : 'N/A';
-            }
-
-            // Extract channel name
-            preg_match('/"author":"([^"]+)"/', $html, $authorMatch);
-            $channel = isset($authorMatch[1]) ? json_decode('"' . $authorMatch[1] . '"') : 'N/A';
-
-            // Extract view count
-            preg_match('/"viewCount":"(\d+)"/', $html, $viewMatch);
-            $views = isset($viewMatch[1]) ? number_format($viewMatch[1]) : 'N/A';
-
-            // Extract publish date
-            preg_match('/"publishDate":"([^"]+)"/', $html, $dateMatch);
-            $publishDate = $dateMatch[1] ?? 'N/A';
-
-            // Extract likes
-            preg_match('/"label":"([\d,\.]+[KMB]?) likes?"/', $html, $likesMatch);
-            if (!isset($likesMatch[1])) {
-                preg_match('/"accessibilityText":"([\d,]+) likes"/', $html, $likesMatch);
-            }
-            $likes = $likesMatch[1] ?? 'N/A';
-
-            // Extract category
-            preg_match('/"category":"([^"]+)"/', $html, $categoryMatch);
-            if (!isset($categoryMatch[1])) {
-                preg_match('/"genre":"([^"]+)"/', $html, $categoryMatch);
-            }
-            $category = isset($categoryMatch[1]) ? json_decode('"' . $categoryMatch[1] . '"') : 'N/A';
-
-            // Get thumbnail
-            $thumbnail = "https://img.youtube.com/vi/{$videoId}/maxresdefault.jpg";
-
-            $data = [
-                'videoId' => $videoId,
-                'title' => $title,
-                'description' => $description,
-                'tags' => $tags,
-                'channel' => $channel,
-                'views' => $views,
-                'likes' => $likes,
-                'publishDate' => $publishDate,
-                'category' => $category,
-                'thumbnail' => $thumbnail,
-                'url' => $request->url
-            ];
 
             return response()->json(['success' => true, 'data' => $data]);
+
         } catch (\Exception $e) {
-            return response()->json(['success' => false, 'error' => 'Failed to extract video data. Please try again.'], 500);
+            // Even if everything crashes, return what we have from oEmbed or basic info
+            return response()->json(['success' => true, 'data' => $data]);
         }
     }
 

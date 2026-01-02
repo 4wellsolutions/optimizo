@@ -82,6 +82,20 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('admin.tools.index') }}"
+                                class="nav-link {{ request()->routeIs('admin.tools.*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-tools"></i>
+                                <p>Tools Management</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.sitemap.index') }}"
+                                class="nav-link {{ request()->routeIs('admin.sitemap.*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-sitemap"></i>
+                                <p>Sitemap</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('admin.media.index') }}"
                                 class="nav-link {{ request()->routeIs('admin.media.*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-images"></i>
@@ -202,7 +216,7 @@
                     if (callback) callback();
                 }
             });
-        };
+    };
     </script>
 
     @stack('scripts')

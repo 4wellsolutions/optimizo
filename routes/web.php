@@ -323,8 +323,9 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
         Route::put('/{tool}', [App\Http\Controllers\Admin\AdminToolController::class, 'update'])->name('update');
     });
 
-    // Sitemap Generation
-    Route::post('/sitemap/generate', [App\Http\Controllers\Admin\AdminToolController::class, 'generateSitemap'])->name('sitemap.generate');
+    // Sitemap Management
+    Route::get('/sitemap', [App\Http\Controllers\Admin\AdminSitemapController::class, 'index'])->name('sitemap.index');
+    Route::post('/sitemap/generate', [App\Http\Controllers\Admin\AdminSitemapController::class, 'generate'])->name('sitemap.generate');
 
     // Posts Management
     Route::resource('posts', App\Http\Controllers\Admin\PostController::class);
