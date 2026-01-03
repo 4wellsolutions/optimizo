@@ -138,6 +138,38 @@
                 </p>
             </div>
         </div>
+
+        <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">📚 How to Use Text to Binary Converter</h3>
+        <ol class="space-y-3 text-gray-700 list-decimal list-inside pl-4 bg-gray-50 p-6 rounded-xl border border-gray-200">
+            <li class="pl-2"><span class="font-semibold">Input Text:</span> Type or paste your text into the left input
+                area.</li>
+            <li class="pl-2"><span class="font-semibold">Convert:</span> The tool instantly translates each character into
+                its 8-bit binary sequence.</li>
+            <li class="pl-2"><span class="font-semibold">Result:</span> View the binary string in the output box, separated
+                by spaces for readability.</li>
+            <li class="pl-2"><span class="font-semibold">Export:</span> Copy the binary code to your clipboard or download
+                it as a text file.</li>
+        </ol>
+
+        <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">❓ Frequently Asked Questions</h3>
+        <div class="space-y-4">
+            <div class="border-l-4 border-cyan-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
+                <h4 class="font-bold text-gray-900">What encoding is used?</h4>
+                <p class="text-gray-700 text-sm mt-1">This tool uses standard UTF-8 encoding, converting each character to
+                    its corresponding 8-bit binary representation.</p>
+            </div>
+            <div class="border-l-4 border-cyan-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
+                <h4 class="font-bold text-gray-900">Can I convert back to text?</h4>
+                <p class="text-gray-700 text-sm mt-1">Yes! You can use our Binary to Text converter to reverse the process.
+                </p>
+            </div>
+            <div class="border-l-4 border-cyan-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
+                <h4 class="font-bold text-gray-900">Is the conversion accurate?</h4>
+                <p class="text-gray-700 text-sm mt-1">Yes, the conversion is mathematically precise based on ASCII and
+                    Unicode standards.</p>
+            </div>
+        </div>
+    </div>
     </div>
 
     <script>

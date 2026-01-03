@@ -1,0 +1,219 @@
+@extends('layouts.app')
+
+@section('title', 'PNG to JPG Converter - Convert PNG to JPG Online | Optimizo')
+@section('meta_description', 'Convert PNG images to JPG format for smaller file sizes. Free online converter.')
+@section('meta_keywords', 'png to jpg, png converter, convert image to jpg, free jpg converter')
+
+@section('content')
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Hero Section -->
+        <div
+            class="relative overflow-hidden bg-gradient-to-br from-green-500 via-teal-500 to-emerald-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
+
+            <div class="relative z-10">
+                <div class="text-center mb-6">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
+                        <svg class="w-9 h-9 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
+                        PNG to JPG Converter
+                    </h1>
+                    <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
+                        Convert PNG images to minimized JPG format. Perfect for web optimization.
+                    </p>
+                </div>
+                <!-- Social Share & Report Buttons -->
+                @include('components.hero-actions')
+            </div>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-green-50 mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload PNG Image</h2>
+                <p class="text-gray-600">Drag & drop your PNG file here</p>
+            </div>
+
+            <div id="dropZone"
+                class="border-3 border-dashed border-green-200 rounded-2xl p-8 hover:border-green-400 hover:bg-green-50 transition-all cursor-pointer text-center relative group">
+                <input type="file" id="imageInput" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                    accept="image/png">
+                <div class="space-y-4 pointer-events-none">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-green-100 text-green-600 rounded-full group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold text-gray-700">Drop PNG file here</p>
+                        <p class="text-sm text-gray-500">Supports PNG (Max 10MB)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="editorArea" class="hidden mt-8 grid md:grid-cols-2 gap-8">
+                <!-- Left Column: Image Preview -->
+                <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center border border-gray-200 h-[400px]">
+                    <img id="imagePreview" class="max-h-full max-w-full object-contain rounded-lg shadow-sm" src=""
+                        alt="Preview">
+                </div>
+
+                <!-- Right Column: Actions -->
+                <div class="flex flex-col justify-center space-y-6">
+                    <!-- White BG Note -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-700">
+                        <span class="font-bold">Note:</span> Transparent backgrounds will be converted to white.
+                    </div>
+
+                    <div class="text-center text-gray-600 font-medium">
+                        Output Format: <span class="font-bold text-green-600">JPG</span>
+                    </div>
+
+                    <button id="convertBtn"
+                        class="w-full bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-bold py-4 rounded-xl shadow-lg transform hover:scale-[1.01] transition-all flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Convert to JPG & Download
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Content -->
+        <div class="mt-12 mb-20 max-w-7xl mx-auto">
+            <article
+                class="prose prose-lg prose-green max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">Compress PNG to JPG Instantly</h2>
+                <div class="text-gray-600 text-center mb-12">
+                    <p class="mb-4">
+                        PNG files are great for quality, but they can be massive. If you're uploading photos to a website or
+                        sending them via email, JPG is often the better choice.
+                    </p>
+                    <p>
+                        Our <strong>PNG to JPG Converter</strong> drastically reduces file size by using JPEG compression.
+                        We automatically handle transparent backgrounds by filling them with white, ensuring your images
+                        look perfect.
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16 not-prose">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
+                        <div
+                            class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">Drastic Size Reduction</h3>
+                        <p class="text-sm text-gray-600">Reduce file sizes by up to 80% with minimal loss in visual quality.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
+                        <div
+                            class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">Secure & Private</h3>
+                        <p class="text-sm text-gray-600">Local browser processing means your photos are never uploaded to
+                            the cloud.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
+                        <div
+                            class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">Smart Conversion</h3>
+                        <p class="text-sm text-gray-600">Intelligent background handling converts transparency to a clean
+                            white matte.</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Steps to Convert</h3>
+                        <ol class="list-decimal pl-5 space-y-2 text-gray-600">
+                            <li><strong>Upload:</strong> Select a PNG image from your device.</li>
+                            <li><strong>Process:</strong> The tool instantly processes the image.</li>
+                            <li><strong>Review:</strong> Check the preview (transparent areas will now be white).</li>
+                            <li><strong>Save:</strong> Download your optimized JPG file.</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">When to use JPG?</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li><strong>Photographs:</strong> JPG is designed for complex, real-world images.</li>
+                            <li><strong>Web Uploads:</strong> Many forms only accept .jpg or .jpeg.</li>
+                            <li><strong>Saving Space:</strong> If you have thousands of images, JPG saves GBs of storage.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script>
+        const imageInput = document.getElementById('imageInput');
+        const dropZone = document.getElementById('dropZone');
+        const editorArea = document.getElementById('editorArea');
+        const imagePreview = document.getElementById('imagePreview');
+        const convertBtn = document.getElementById('convertBtn');
+
+        // Drag & Drop
+        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-green-500', 'bg-green-50'); });
+        dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-green-500', 'bg-green-50'); });
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('border-green-500', 'bg-green-50');
+            if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+        });
+
+        imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
+
+        function handleFile(file) {
+            if (!file.type.match('image.*')) { alert('Please upload a valid PNG image'); return; }
+            const reader = new FileReader();
+            reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
+            reader.readAsDataURL(file);
+        }
+
+        convertBtn.addEventListener('click', () => {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            img.src = imagePreview.src;
+            img.onload = () => {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                // Fill white background for transparency
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(img, 0, 0);
+                const dataUrl = canvas.toDataURL('image/jpeg', 0.9);
+                const link = document.createElement('a');
+                link.download = 'converted-image.jpg';
+                link.href = dataUrl;
+                link.click();
+            };
+        });
+    </script>
+@endsection

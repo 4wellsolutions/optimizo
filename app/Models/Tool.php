@@ -10,6 +10,7 @@ class Tool extends Model
         'name',
         'slug',
         'category',
+        'subcategory',
         'controller',
         'route_name',
         'url',

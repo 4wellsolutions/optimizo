@@ -42,17 +42,6 @@
 - [x] Text to Morse Code - Convert text to Morse code
 - [x] Morse Code to Text - Convert Morse code to text
 
-## 🖼️ Image Converters (11 Tools)
-
-- [ ] Image Converter - Multi-format image conversion (PNG/JPG/WEBP/GIF)
-- [ ] JPG to PNG - Convert JPG images to PNG
-- [ ] PNG to JPG - Convert PNG images to JPG
-- [ ] JPG to WEBP - Convert JPG to WEBP format
-- [ ] WEBP to JPG - Convert WEBP to JPG format
-- [ ] PNG to WEBP - Convert PNG to WEBP format
-- [ ] Image to Base64 - Convert images to Base64 strings
-- [ ] Base64 to Image - Convert Base64 to images
-- [ ] SVG to PNG - Convert SVG to PNG format
 - [ ] SVG to JPG - Convert SVG to JPG format
 - [ ] HEIC to JPG - Convert HEIC (iOS) to JPG
 - [ ] ICO Converter - Create favicon ICO files

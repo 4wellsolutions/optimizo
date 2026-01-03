@@ -254,6 +254,20 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::post('/js-minifier/process', [JsMinifierController::class, 'process'])->name('js-minifier.process');
     Route::post('/html-minifier/process', [HtmlMinifierController::class, 'process'])->name('html-minifier.process');
     Route::post('/markdown-to-html/convert', [MarkdownToHtmlController::class, 'convert'])->name('markdown-to-html.convert');
+
+    // Image Converters (New)
+    Route::get('/image-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'imageConverter'])->name('image-converter');
+    Route::get('/jpg-to-png-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'jpgToPng'])->name('jpg-to-png');
+    Route::get('/png-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'pngToJpg'])->name('png-to-jpg');
+    Route::get('/jpg-to-webp-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'jpgToWebp'])->name('jpg-to-webp');
+    Route::get('/webp-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'webpToJpg'])->name('webp-to-jpg');
+    Route::get('/png-to-webp-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'pngToWebp'])->name('png-to-webp');
+    Route::get('/image-to-base64-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'imageToBase64'])->name('image-to-base64');
+    Route::get('/base64-to-image-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'base64ToImage'])->name('base64-to-image');
+    Route::get('/svg-to-png-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'svgToPng'])->name('svg-to-png');
+    Route::get('/svg-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'svgToJpg'])->name('svg-to-jpg');
+    Route::get('/heic-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'heicToJpg'])->name('heic-to-jpg');
+    Route::get('/ico-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'icoConverter'])->name('ico-converter');
 });
 
 /*
@@ -326,6 +340,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     // Tools Management
     Route::prefix('tools')->name('tools.')->group(function () {
         Route::get('/', [App\Http\Controllers\Admin\AdminToolController::class, 'index'])->name('index');
+        Route::post('/sync', [App\Http\Controllers\Admin\AdminToolController::class, 'sync'])->name('sync');
         Route::get('/{tool}/edit', [App\Http\Controllers\Admin\AdminToolController::class, 'edit'])->name('edit');
         Route::put('/{tool}', [App\Http\Controllers\Admin\AdminToolController::class, 'update'])->name('update');
     });

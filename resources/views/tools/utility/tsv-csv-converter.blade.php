@@ -257,7 +257,7 @@
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Common Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">When should I use TSV instead of CSV?</h4>

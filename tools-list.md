@@ -285,42 +285,94 @@
     - Category: Utility Tools
     - Sub-category: Converter Tools
     - Description: Convert between ASCII codes and text
+    
+### Image Tools
 
-### Data Format Converters (Bidirectional)
-
-47. **JSON ↔ XML Converter**
-    - URL: `http://localhost:8000/tools/json-to-xml-converter`
+47. **Image Converter**
+    - URL: `http://localhost:8000/tools/image-converter`
     - Category: Utility Tools
-    - Sub-category: Data Converters
-    - Description: Convert between JSON and XML formats bidirectionally
-    - Status: ✅ Unique SEO Content
+    - Sub-category: Image Tools
+    - Description: Multi-format image conversion (PNG/JPG/WEBP/GIF)
+    - Status: ✅ Implemented
 
-48. **JSON ↔ YAML Converter**
-    - URL: `http://localhost:8000/tools/json-to-yaml-converter`
+48. **JPG to PNG Converter**
+    - URL: `http://localhost:8000/tools/jpg-to-png-converter`
     - Category: Utility Tools
-    - Sub-category: Data Converters
-    - Description: Convert between JSON and YAML formats bidirectionally
-    - Status: ✅ Unique SEO Content
+    - Sub-category: Image Tools
+    - Description: Convert JPG images to PNG
+    - Status: ✅ Implemented
 
-49. **CSV ↔ XML Converter**
-    - URL: `http://localhost:8000/tools/csv-to-xml-converter`
+49. **PNG to JPG Converter**
+    - URL: `http://localhost:8000/tools/png-to-jpg-converter`
     - Category: Utility Tools
-    - Sub-category: Data Converters
-    - Description: Convert between CSV and XML formats bidirectionally
-    - Status: ✅ Unique SEO Content
+    - Sub-category: Image Tools
+    - Description: Convert PNG images to JPG
+    - Status: ✅ Implemented
 
-50. **JSON ↔ SQL Converter**
-    - URL: `http://localhost:8000/tools/json-to-sql-converter`
+50. **JPG to WEBP Converter**
+    - URL: `http://localhost:8000/tools/jpg-to-webp-converter`
     - Category: Utility Tools
-    - Sub-category: Data Converters
-    - Description: Generate SQL INSERT statements from JSON and vice versa
-    - Status: ✅ Unique SEO Content
+    - Sub-category: Image Tools
+    - Description: Convert JPG to WEBP format
+    - Status: ✅ Implemented
 
-51. **TSV ↔ CSV Converter**
-    - URL: `http://localhost:8000/tools/tsv-to-csv-converter`
+51. **WEBP to JPG Converter**
+    - URL: `http://localhost:8000/tools/webp-to-jpg-converter`
     - Category: Utility Tools
-    - Sub-category: Data Converters
-    - Description: Convert between Tab-Separated and Comma-Separated Values
+    - Sub-category: Image Tools
+    - Description: Convert WEBP to JPG format
+    - Status: ✅ Implemented
+
+52. **PNG to WEBP Converter**
+    - URL: `http://localhost:8000/tools/png-to-webp-converter`
+    - Category: Utility Tools
+    - Sub-category: Image Tools
+    - Description: Convert PNG to WEBP format
+    - Status: ✅ Implemented
+
+53. **Image to Base64 Converter**
+    - URL: `http://localhost:8000/tools/image-to-base64`
+    - Category: Utility Tools
+    - Sub-category: Image Tools
+    - Description: Convert images to Base64 strings
+    - Status: ✅ Implemented
+
+54. **Base64 to Image Converter**
+    - URL: `http://localhost:8000/tools/base64-to-image`
+    - Category: Utility Tools
+    - Sub-category: Image Tools
+    - Description: Convert Base64 to images
+    - Status: ✅ Implemented
+
+55. **SVG to PNG Converter**
+    - URL: `http://localhost:8000/tools/svg-to-png`
+    - Category: Utility Tools
+    - Sub-category: Image Tools
+    - Description: Convert SVG to PNG format
+    - Status: ✅ Implemented
+
+56. **SVG to JPG Converter**
+    - URL: `http://localhost:8000/tools/svg-to-jpg`
+    - Category: Utility Tools
+    - Sub-category: Image Tools
+    - Description: Convert SVG to JPG format
+    - Status: ✅ Implemented
+
+57. **HEIC to JPG Converter**
+    - URL: `http://localhost:8000/tools/heic-to-jpg`
+    - Category: Utility Tools
+    - Sub-category: Image Tools
+    - Description: Convert HEIC (iOS) to JPG
+    - Status: ✅ Implemented
+
+58. **ICO Converter**
+    - URL: `http://localhost:8000/tools/ico-converter`
+    - Category: Utility Tools
+    - Sub-category: Image Tools
+    - Description: Create favicon ICO files
+    - Status: ✅ Implemented
+
+
     - Status: ✅ Unique SEO Content
 
 ### Number System Converters
@@ -463,20 +515,8 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 73. **Text to Morse Code** - Convert text to Morse code
 74. **Morse Code to Text** - Convert Morse code to text
 
-### 🖼️ Image Converters (11 Tools)
-
-75. **Image Converter** - Multi-format image conversion (PNG/JPG/WEBP/GIF)
-76. **JPG to PNG** - Convert JPG images to PNG
-77. **PNG to JPG** - Convert PNG images to JPG
-78. **JPG to WEBP** - Convert JPG to WEBP format
-79. **WEBP to JPG** - Convert WEBP to JPG format
-80. **PNG to WEBP** - Convert PNG to WEBP format
-81. **Image to Base64** - Convert images to Base64 strings
-82. **Base64 to Image** - Convert Base64 to images
-83. **SVG to PNG** - Convert SVG to PNG format
-84. **SVG to JPG** - Convert SVG to JPG format
-85. **HEIC to JPG** - Convert HEIC (iOS) to JPG
-86. **ICO Converter** - Create favicon ICO files
+### 🖼️ Image Converters (0 Tools)
+*(Moved to Live)*
 
 ### 📄 Document Converters (11 Tools)
 
@@ -539,6 +579,7 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 - Design & Media: 3 tools
 - Development Tools: 4 tools
 - Utilities: 3 tools
+- Abstract: 12 tools
 - Other Converters: 6 tools
 
 ### Upcoming Tools (Planned)

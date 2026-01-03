@@ -17,18 +17,18 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        User::firstOrCreate(
+            ['email' => 'test@example.com'],
+            [
+                'name' => 'Test User',
+                'password' => bcrypt('password'), // Ensure a password is set if creating
+                'email_verified_at' => now(),
+            ]
+        );
 
         $this->call([
             AdminUserSeeder::class,
-                // ToolsSeeder::class, // Commented out - contains all old tools, use individual seeders instead
-
-                // New Tool Seeders - Add new tools here
-            BrokenLinksCheckerSeeder::class,
-            GoogleSerpCheckerSeeder::class,
+            ToolSeeder::class,
         ]);
     }
 }

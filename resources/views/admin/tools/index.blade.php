@@ -12,6 +12,12 @@
                     <i class="fas fa-sitemap"></i> Generate Sitemap
                 </button>
             </form>
+            <form action="{{ route('admin.tools.sync') }}" method="POST" class="d-inline ms-2">
+                @csrf
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-sync"></i> Refresh Tools
+                </button>
+            </form>
         </div>
 
         @if(session('success'))

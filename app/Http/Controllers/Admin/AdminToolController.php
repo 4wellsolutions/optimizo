@@ -6,8 +6,26 @@ use App\Http\Controllers\Controller;
 use App\Models\Tool;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Artisan;
+
 class AdminToolController extends Controller
 {
+    public function sync()
+    {
+        try {
+            Artisan::call('db:seed', [
+                '--class' => 'ToolsOnlySeeder',
+                '--force' => true,
+            ]);
+
+            return redirect()->route('admin.tools.index')
+                ->with('success', 'Tools synchronized successfully!');
+        } catch (\Exception $e) {
+            return redirect()->route('admin.tools.index')
+                ->with('error', 'Error syncing tools: ' . $e->getMessage());
+        }
+    }
+
     public function index()
     {
         $tools = Tool::ordered()->get();

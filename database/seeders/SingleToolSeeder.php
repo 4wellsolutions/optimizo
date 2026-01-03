@@ -20,6 +20,7 @@ class SingleToolSeeder extends Seeder
             'name' => 'Broken Links Checker',
             'slug' => 'broken-links-checker',
             'category' => 'seo',
+            'subcategory' => 'Broken Links Checker',
             'controller' => 'Tools\\SEO\\BrokenLinksCheckerController',
             'route_name' => 'seo.broken-links-checker',
             'url' => '/tools/broken-links-checker',

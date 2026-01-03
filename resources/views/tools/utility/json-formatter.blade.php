@@ -260,6 +260,34 @@
                 </div>
             </div>
         </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl border-2 border-gray-200 mt-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">❓ Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Is my JSON data safe?</h3>
+                    <p class="text-gray-700">Yes, absolutely. Our JSON formatter runs entirely in your web browser using
+                        JavaScript. Your data is never sent to our servers or stored anywhere.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Why is Minifying JSON important?</h3>
+                    <p class="text-gray-700">Minifying removes unnecessary whitespace and line breaks, significantly
+                        reducing the file size. This is crucial for improving API performance and reducing bandwidth usage
+                        in production environments.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Can I validate incomplete JSON?</h3>
+                    <p class="text-gray-700">The tool requires valid JSON structure to format or minify. However, it
+                        provides detailed error messages to help you locate and fix issues in your JSON data.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Does it support large JSON files?</h3>
+                    <p class="text-gray-700">Yes, the tool is optimized to handle large JSON datasets efficiently, though
+                        extremely large files might depend on your browser's memory limits.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -130,6 +130,38 @@
                         <p class="text-gray-700 text-sm">Transform Docker Compose YAML to JSON.</p>
                     </div>
                 </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">📚 How to Use YAML to JSON Converter</h3>
+                <ol
+                    class="space-y-3 text-gray-700 list-decimal list-inside pl-4 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <li class="pl-2"><span class="font-semibold">Enter YAML:</span> Paste your YAML code into the input box
+                        on the left.</li>
+                    <li class="pl-2"><span class="font-semibold">Convert:</span> The tool automatically converts your code
+                        as you type (or click "Convert").</li>
+                    <li class="pl-2"><span class="font-semibold">Review:</span> Check the generated JSON output in the right
+                        panel.</li>
+                    <li class="pl-2"><span class="font-semibold">Copy/Download:</span> Use the buttons to copy the result or
+                        download it as a .json file.</li>
+                </ol>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">❓ Frequently Asked Questions</h3>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-purple-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
+                        <h4 class="font-bold text-gray-900">Is this tool free?</h4>
+                        <p class="text-gray-700 text-sm mt-1">Yes, this YAML to JSON converter is 100% free to use with no
+                            limits.</p>
+                    </div>
+                    <div class="border-l-4 border-purple-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
+                        <h4 class="font-bold text-gray-900">Does it support YAML comments?</h4>
+                        <p class="text-gray-700 text-sm mt-1">The converter processes the data structure, but comments are
+                            not preserved in JSON as JSON does not support comments.</p>
+                    </div>
+                    <div class="border-l-4 border-purple-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
+                        <h4 class="font-bold text-gray-900">Is my data secure?</h4>
+                        <p class="text-gray-700 text-sm mt-1">Absolutely. The conversion happens entirely in your browser.
+                            No data is sent to any server.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -191,21 +223,21 @@
 
         function loadExample() {
             const example = `# Configuration Example
-    name: My Application
-    version: 1.0.0
-    database:
-      host: localhost
-      port: 5432
-      credentials:
-        username: admin
-        password: secret
-    features:
-      - authentication
-      - logging
-      - caching
-    settings:
-      debug: true
-      timeout: 30`;
+        name: My Application
+        version: 1.0.0
+        database:
+          host: localhost
+          port: 5432
+          credentials:
+            username: admin
+            password: secret
+        features:
+          - authentication
+          - logging
+          - caching
+        settings:
+          debug: true
+          timeout: 30`;
 
             document.getElementById('yamlInput').value = example;
             convertYamlToJson();
