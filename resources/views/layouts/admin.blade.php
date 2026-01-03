@@ -74,27 +74,49 @@
                                 <p>Dashboard</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.posts.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.posts.*') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-file-alt"></i>
-                                <p>Posts</p>
+                        <!-- Blog Submenu -->
+                        <li
+                            class="nav-item {{ request()->routeIs('admin.posts.*') || request()->routeIs('admin.categories.*') || request()->routeIs('admin.import.*') || request()->routeIs('admin.media.*') ? 'menu-open' : '' }}">
+                            <a href="#"
+                                class="nav-link {{ request()->routeIs('admin.posts.*') || request()->routeIs('admin.categories.*') || request()->routeIs('admin.import.*') || request()->routeIs('admin.media.*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-blog"></i>
+                                <p>
+                                    Blog
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.posts.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.posts.*') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Posts</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.categories.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Categories</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.import.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.import.*') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Import Blog</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.media.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.media.*') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Media Library</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.categories.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-tags"></i>
-                                <p>Categories</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.import.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.import.*') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-file-import"></i>
-                                <p>Import Blog</p>
-                            </a>
-                        </li>
+
                         <li class="nav-item">
                             <a href="{{ route('admin.tools.index') }}"
                                 class="nav-link {{ request()->routeIs('admin.tools.*') ? 'active' : '' }}">
@@ -102,40 +124,48 @@
                                 <p>Tools Management</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.sitemap.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.sitemap.*') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-sitemap"></i>
-                                <p>Sitemap</p>
+
+                        <!-- Settings Submenu -->
+                        <li
+                            class="nav-item {{ request()->routeIs('admin.settings.*') || request()->routeIs('admin.redirects.*') || request()->routeIs('admin.sitemap.*') ? 'menu-open' : '' }}">
+                            <a href="#"
+                                class="nav-link {{ request()->routeIs('admin.settings.*') || request()->routeIs('admin.redirects.*') || request()->routeIs('admin.sitemap.*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-cogs"></i>
+                                <p>
+                                    Settings
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.media.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.media.*') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-images"></i>
-                                <p>Media Library</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.redirects.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.redirects.*') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-exchange-alt"></i>
-                                <p>URL Redirects</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.settings.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.settings.index') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-cog"></i>
-                                <p>Settings</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.settings.cache') }}"
-                                class="nav-link {{ request()->routeIs('admin.settings.cache') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-database"></i>
-                                <p>Cache System</p>
-                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.settings.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.settings.index') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>General Settings</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.sitemap.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.sitemap.*') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Sitemap</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.redirects.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.redirects.*') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>URL Redirects</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.settings.cache') }}"
+                                        class="nav-link {{ request()->routeIs('admin.settings.cache') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cache System</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>

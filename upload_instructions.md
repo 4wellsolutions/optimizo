@@ -1,34 +1,21 @@
-# 🚀 Deployment Manifest (Seeder Overhaul & Admin Build Fix)
+# 🚀 Deployment Manifest
 
 Follow this guide to update your production server.
 
-## 1. 📂 File System Actions
-**Correct Folder Name:**
-- Rename `app/Http/Controllers/Tools/SEO` ➡️ `app/Http/Controllers/Tools/Seo`
-
-## 2. � Files to Upload
+## 1. 📂 Files to Upload
 Upload and overwrite these files to apply fixes and features.
 
-### 🛠️ Admin Build Fix (Logging & Pathing)
-*   `app/Http/Controllers/Admin/AdminToolController.php`
-    *   *Improved to log build output to `storage/logs/build.log` and handle working directories correctly.*
+### 🚨 Critical Fixes
+*   `app/Http/Controllers/Tools/Seo/BrokenLinksCheckerController.php` (Fixes 500 Error - now handles missing classes politely)
+*   `vendor/` (FOLDER) - **Required** to fix "Class HtmlDomParser not found". Run `composer install` on server if possible, or upload your local `vendor` folder.
 
-### 🚨 Critical Fixes (Broken Links 500 Error)
-*   `app/Http/Controllers/Tools/Seo/BrokenLinksCheckerController.php`
-*   `resources/views/tools/seo/broken-links-checker.blade.php`
+### 🛠️ Admin Sidebar & Cache System
+*   `resources/views/layouts/admin.blade.php` (Refactored Sidebar: "Blog" & "Settings" submenus)
+*   `resources/views/admin/settings/cache.blade.php` (New file for Cache UI)
+*   `app/Http/Controllers/Admin/SettingController.php` (Backend logic for Cache)
+*   `routes/web.php` (New routes)
 
-### ✨ new Features & Database Updates
-*   `app/Models/Tool.php`
-*   `routes/web.php`
-*   `resources/views/admin/tools/index.blade.php`
-*   **UPLOAD ENTIRE FOLDER:** `database/seeders/`
-
-### 🛠️ Cache Management System
-*   `app/Http/Controllers/Admin/SettingController.php` (Added cache methods)
-*   `resources/views/layouts/admin.blade.php` (Added sidebar link)
-*   `resources/views/admin/settings/cache.blade.php` (New view)
-
-## 3. 🖥️ Terminal Commands
+## 2. 🖥️ Terminal Commands
 ```bash
 # 1. Update Class Map
 composer dump-autoload -o
@@ -41,8 +28,3 @@ php artisan route:clear
 php artisan view:clear
 php artisan config:clear
 ```
-
-## 4. ⚡ Troubleshooting the Build Button
-If the "Build Assets" button still fails:
-1.  Check the log file: `storage/logs/build.log`
-2.  If it says `npm: command not found`, you may need to add the full path to npm in `AdminToolController.php` (e.g., `/usr/bin/npm` or `/home/user/.nvm/versions/node/v18.../bin/npm`).

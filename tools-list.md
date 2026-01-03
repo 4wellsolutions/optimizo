@@ -202,29 +202,40 @@
     - Sub-category: Converter Tools
     - Description: Convert HTML to Markdown
 
-33. **CSV to JSON Converter**
-    - URL: `http://localhost:8000/tools/csv-to-json-converter`
+33. **JSON <> XML Converter**
+    - URL: `http://localhost:8000/tools/json-xml-converter`
     - Category: Utility Tools
     - Sub-category: Converter Tools
-    - Description: Convert CSV files to JSON format
+    - Description: Convert between JSON and XML formats
+    - Status: ✅ Implemented
 
-34. **JSON to CSV Converter**
-    - URL: `http://localhost:8000/tools/json-to-csv-converter`
+34. **JSON <> YAML Converter**
+    - URL: `http://localhost:8000/tools/json-yaml-converter`
     - Category: Utility Tools
     - Sub-category: Converter Tools
-    - Description: Convert JSON data to CSV format
+    - Description: Convert between JSON and YAML formats
+    - Status: ✅ Implemented
 
-35. **XML to JSON Converter**
-    - URL: `http://localhost:8000/tools/xml-to-json-converter`
+35. **CSV <> XML Converter**
+    - URL: `http://localhost:8000/tools/csv-xml-converter`
     - Category: Utility Tools
     - Sub-category: Converter Tools
-    - Description: Convert XML to JSON format
+    - Description: Convert between CSV and XML formats
+    - Status: ✅ Implemented
 
-36. **YAML to JSON Converter**
-    - URL: `http://localhost:8000/tools/yaml-to-json-converter`
+36. **JSON <> SQL Converter**
+    - URL: `http://localhost:8000/tools/json-sql-converter`
     - Category: Utility Tools
     - Sub-category: Converter Tools
-    - Description: Convert YAML to JSON format
+    - Description: Convert between JSON and SQL formats
+    - Status: ✅ Implemented
+
+37. **TSV <> CSV Converter**
+    - URL: `http://localhost:8000/tools/tsv-csv-converter`
+    - Category: Utility Tools
+    - Sub-category: Converter Tools
+    - Description: Convert between TSV and CSV formats
+    - Status: ✅ Implemented
 
 37. **Text to Binary Converter**
     - URL: `http://localhost:8000/tools/text-to-binary-converter`
@@ -286,86 +297,151 @@
     - Sub-category: Converter Tools
     - Description: Convert between ASCII codes and text
     
+### Text Case & String Tools
+
+47. **Sentence Case Converter**
+    - URL: `http://localhost:8000/tools/sentence-case-converter`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Convert text to sentence case
+    - Status: ✅ Implemented
+
+48. **Camel Case Converter**
+    - URL: `http://localhost:8000/tools/camel-case-converter`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Convert text to camelCase
+    - Status: ✅ Implemented
+
+49. **Pascal Case Converter**
+    - URL: `http://localhost:8000/tools/pascal-case-converter`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Convert text to PascalCase
+    - Status: ✅ Implemented
+
+50. **Snake Case Converter**
+    - URL: `http://localhost:8000/tools/snake-case-converter`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Convert text to snake_case
+    - Status: ✅ Implemented
+
+51. **Kebab Case Converter**
+    - URL: `http://localhost:8000/tools/kebab-case-converter`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Convert text to kebab-case
+    - Status: ✅ Implemented
+
+52. **Studly Case Converter**
+    - URL: `http://localhost:8000/tools/studly-case-converter`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Convert text to StUdLy CaSe
+    - Status: ✅ Implemented
+
+53. **Text Reverser**
+    - URL: `http://localhost:8000/tools/text-reverser`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Reverse text strings
+    - Status: ✅ Implemented
+
+54. **Text to Morse Code**
+    - URL: `http://localhost:8000/tools/text-to-morse-code`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Convert text to Morse code
+    - Status: ✅ Implemented
+
+55. **Morse Code to Text**
+    - URL: `http://localhost:8000/tools/morse-code-to-text`
+    - Category: Utility Tools
+    - Sub-category: Text Tools
+    - Description: Convert Morse code to text
+    - Status: ✅ Implemented
+
 ### Image Tools
 
-47. **Image Converter**
+56. **Image Converter**
     - URL: `http://localhost:8000/tools/image-converter`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Multi-format image conversion (PNG/JPG/WEBP/GIF)
     - Status: ✅ Implemented
 
-48. **JPG to PNG Converter**
+57. **JPG to PNG Converter**
     - URL: `http://localhost:8000/tools/jpg-to-png-converter`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert JPG images to PNG
     - Status: ✅ Implemented
 
-49. **PNG to JPG Converter**
+58. **PNG to JPG Converter**
     - URL: `http://localhost:8000/tools/png-to-jpg-converter`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert PNG images to JPG
     - Status: ✅ Implemented
 
-50. **JPG to WEBP Converter**
+59. **JPG to WEBP Converter**
     - URL: `http://localhost:8000/tools/jpg-to-webp-converter`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert JPG to WEBP format
     - Status: ✅ Implemented
 
-51. **WEBP to JPG Converter**
+60. **WEBP to JPG Converter**
     - URL: `http://localhost:8000/tools/webp-to-jpg-converter`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert WEBP to JPG format
     - Status: ✅ Implemented
 
-52. **PNG to WEBP Converter**
+61. **PNG to WEBP Converter**
     - URL: `http://localhost:8000/tools/png-to-webp-converter`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert PNG to WEBP format
     - Status: ✅ Implemented
 
-53. **Image to Base64 Converter**
+62. **Image to Base64 Converter**
     - URL: `http://localhost:8000/tools/image-to-base64`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert images to Base64 strings
     - Status: ✅ Implemented
 
-54. **Base64 to Image Converter**
+63. **Base64 to Image Converter**
     - URL: `http://localhost:8000/tools/base64-to-image`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert Base64 to images
     - Status: ✅ Implemented
 
-55. **SVG to PNG Converter**
+64. **SVG to PNG Converter**
     - URL: `http://localhost:8000/tools/svg-to-png`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert SVG to PNG format
     - Status: ✅ Implemented
 
-56. **SVG to JPG Converter**
+65. **SVG to JPG Converter**
     - URL: `http://localhost:8000/tools/svg-to-jpg`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert SVG to JPG format
     - Status: ✅ Implemented
 
-57. **HEIC to JPG Converter**
+66. **HEIC to JPG Converter**
     - URL: `http://localhost:8000/tools/heic-to-jpg`
     - Category: Utility Tools
     - Sub-category: Image Tools
     - Description: Convert HEIC (iOS) to JPG
     - Status: ✅ Implemented
 
-58. **ICO Converter**
+67. **ICO Converter**
     - URL: `http://localhost:8000/tools/ico-converter`
     - Category: Utility Tools
     - Sub-category: Image Tools
@@ -377,31 +453,31 @@
 
 ### Number System Converters
 
-52. **Decimal to Binary Converter**
+68. **Decimal to Binary Converter**
     - URL: `http://localhost:8000/tools/decimal-binary-converter`
     - Category: Utility Tools
     - Sub-category: Number Converters
     - Description: Convert decimal numbers to binary and vice versa
 
-53. **Decimal to Hexadecimal Converter**
+69. **Decimal to Hexadecimal Converter**
     - URL: `http://localhost:8000/tools/decimal-hex-converter`
     - Category: Utility Tools
     - Sub-category: Number Converters
     - Description: Convert decimal to hexadecimal and vice versa
 
-54. **Binary to Hexadecimal Converter**
+70. **Binary to Hexadecimal Converter**
     - URL: `http://localhost:8000/tools/binary-hex-converter`
     - Category: Utility Tools
     - Sub-category: Number Converters
     - Description: Convert binary to hexadecimal and vice versa
 
-55. **Decimal to Octal Converter**
+71. **Decimal to Octal Converter**
     - URL: `http://localhost:8000/tools/decimal-octal-converter`
     - Category: Utility Tools
     - Sub-category: Number Converters
     - Description: Convert decimal to octal and vice versa
 
-56. **Number Base Converter**
+72. **Number Base Converter**
     - URL: `http://localhost:8000/tools/number-base-converter`
     - Category: Utility Tools
     - Sub-category: Number Converters
@@ -411,19 +487,19 @@
 
 ## Network Tools (3 Tools)
 
-57. **What is My IP**
+73. **What is My IP**
     - URL: `http://localhost:8000/tools/what-is-my-ip`
     - Category: Network Tools
     - Sub-category: IP Tools
     - Description: Find your public IP address and location
 
-58. **What is My ISP**
+74. **What is My ISP**
     - URL: `http://localhost:8000/tools/what-is-my-isp`
     - Category: Network Tools
     - Sub-category: IP Tools
     - Description: Identify your Internet Service Provider
 
-59. **Redirect & HTTP Status Checker**
+75. **Redirect & HTTP Status Checker**
     - URL: `http://localhost:8000/tools/redirect-checker`
     - Category: Network Tools
     - Sub-category: Diagnostics
@@ -431,40 +507,37 @@
 
 ---
 
-## Advanced SEO Tools (3 Tools)
+## Advanced SEO Tools (5 Tools)
 
-60. **On-Page SEO Checker**
+76. **On-Page SEO Checker**
     - URL: `http://localhost:8000/tools/on-page-seo-checker`
     - Category: Advanced SEO Tools
     - Sub-category: On-Page SEO
     - Description: Analyze on-page SEO factors and get actionable insights
     - Status: ✅ Implemented
 
-61. **Bing SERP Checker**
+77. **Bing SERP Checker**
     - URL: `http://localhost:8000/tools/bing-serp-checker`
     - Category: Advanced SEO Tools
     - Sub-category: Rank Tracking
     - Description: Check search engine rankings on Bing
     - Status: ✅ Implemented
 
-62. **Yahoo SERP Checker**
+78. **Yahoo SERP Checker**
     - URL: `http://localhost:8000/tools/yahoo-serp-checker`
     - Category: Advanced SEO Tools
     - Sub-category: Rank Tracking
     - Description: Check search engine rankings on Yahoo
     - Status: ✅ Implemented
 
-63. **Google SERP Checker**
+79. **Google SERP Checker**
     - URL: `http://localhost:8000/tools/google-serp-checker`
     - Category: Advanced SEO Tools
     - Sub-category: Rank Tracking
     - Description: Check search engine rankings on Google
     - Status: ✅ Implemented
 
-    - Description: Check search engine rankings on Google
-    - Status: ✅ Implemented
-
-64. **Broken Links Checker**
+80. **Broken Links Checker**
     - URL: `http://localhost:8000/broken-links-checker`
     - Category: Advanced SEO Tools
     - Sub-category: Maintenance
@@ -503,17 +576,8 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 
 **Note:** All Data Format Converters are now live as bidirectional tools! ✅
 
-### 🔠 Text Case & String Converters (9 Tools)
-
-66. **Sentence Case Converter** - Convert to sentence case
-67. **Camel Case Converter** - Convert to camelCase
-68. **Pascal Case Converter** - Convert to PascalCase
-69. **Snake Case Converter** - Convert to snake_case
-70. **Kebab Case Converter** - Convert to kebab-case
-71. **Studly Case Converter** - Convert to StUdLy CaSe
-72. **Text Reverser** - Reverse text strings
-73. **Text to Morse Code** - Convert text to Morse code
-74. **Morse Code to Text** - Convert Morse code to text
+### 🔠 Text Case & String Converters (0 Tools)
+*(Moved to Live)*
 
 ### 🖼️ Image Converters (0 Tools)
 *(Moved to Live)*
