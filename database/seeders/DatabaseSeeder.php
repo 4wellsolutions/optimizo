@@ -24,7 +24,11 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             AdminUserSeeder::class,
-            ToolsSeeder::class,
+                // ToolsSeeder::class, // Commented out - contains all old tools, use individual seeders instead
+
+                // New Tool Seeders - Add new tools here
+            BrokenLinksCheckerSeeder::class,
+            GoogleSerpCheckerSeeder::class,
         ]);
     }
 }
