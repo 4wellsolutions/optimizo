@@ -546,6 +546,20 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 - **Encoding/Decoding**: 0 tools ✅ (All 8 completed and moved to live)
 - **Number System Converters**: 0 tools ✅ (All 5 completed and moved to live)
 - **Data Format Converters**: 0 tools ✅ (All 5 bidirectional converters completed)
+### SEO Tools
+- [x] **Broken Links Checker**
+  - **Status**: ✅ Completed
+  - **Controller**: `App\Http\Controllers\Tools\SEO\BrokenLinksCheckerController`
+  - **Route**: `seo.broken-links-checker`
+  - **View**: `resources/views/tools/seo/broken-links-checker.blade.php`
+  - **Seeder**: `Database/Seeders/BrokenLinksCheckerSeeder.php`
+  - **Features**:
+    - Full-page extraction of internal/external links
+    - Sequential status checking with progress bar
+    - Stop functionality
+    - CSV Export
+    - Comprehensive SEO content
+    - Consistent Hero Design
 - **Text & String Converters**: 9 tools
 - **Image Converters**: 11 tools
 - **Document Converters**: 11 tools

@@ -18,7 +18,7 @@ class GoogleSerpCheckerSeeder extends Seeder
                 'name' => 'Google SERP Checker',
                 'category' => 'seo',
                 'controller' => 'Tools\\SEO\\GoogleSerpCheckerController',
-                'route_name' => 'tools.google-serp-checker',
+                'route_name' => 'seo.google-serp-checker',
                 'url' => '/tools/google-serp-checker',
                 'meta_title' => 'Free Google SERP Checker & Rank Tracker',
                 'meta_description' => 'Check live rankings with our advanced SERP Results Checker. Accurate Google SERP position from any location.',

@@ -50,6 +50,7 @@ class VideoDataExtractorController extends Controller
             // 2. If blocked/redirected (N/A), try Social Crawler (Best for Title/Tags/Views)
 
             // --- TIER 1: MOBILE SITE ---
+            /** @var \Illuminate\Http\Client\Response $response */
             $response = Http::withHeaders([
                 'User-Agent' => 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',
                 'Accept-Language' => 'en-US,en;q=0.9',
@@ -97,6 +98,7 @@ class VideoDataExtractorController extends Controller
                         'Accept-Language' => 'en-US,en;q=0.9',
                     ])->get("https://www.youtube.com/watch?v={$videoId}");
 
+                    /** @var \Illuminate\Http\Client\Response $socialResponse */
                     if ($socialResponse->successful()) {
                         $socialHtml = $socialResponse->body();
 
@@ -141,7 +143,8 @@ class VideoDataExtractorController extends Controller
             if ($data['tags'] === 'N/A' && isset($data['title'])) {
                 // Last resort tags from title
                 $data['tags'] = implode(', ', array_filter(explode(' ', preg_replace('/[^a-zA-Z0-9 ]/', '', $data['title'])), function ($w) {
-                    return strlen($w) > 3; }));
+                    return strlen($w) > 3;
+                }));
             }
 
             return response()->json(['success' => true, 'data' => $data]);

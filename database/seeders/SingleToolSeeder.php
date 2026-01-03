@@ -21,7 +21,7 @@ class SingleToolSeeder extends Seeder
             'slug' => 'broken-links-checker',
             'category' => 'seo',
             'controller' => 'Tools\\SEO\\BrokenLinksCheckerController',
-            'route_name' => 'tools.broken-links-checker',
+            'route_name' => 'seo.broken-links-checker',
             'url' => '/tools/broken-links-checker',
             'meta_title' => 'Broken Links Checker - Check for Dead Links Instantly',
             'meta_description' => 'Find and fix broken links on your website. Free broken link checker tool to scan pages for 404 errors and dead links. Improve SEO and user experience.',
