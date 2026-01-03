@@ -25,58 +25,74 @@ class BrokenLinksCheckerController extends Controller
         $targetUrl = $request->input('url');
 
         try {
-            $response = Http::timeout(15)->get($targetUrl);
+            // 1. Fetch URL
+            try {
+                $response = Http::timeout(15)->get($targetUrl);
 
-            if ($response->failed()) {
+                if ($response->failed()) {
+                    return response()->json([
+                        'error' => 'Could not fetch the URL. Status: ' . $response->status()
+                    ], 422);
+                }
+
+                $html = $response->body();
+            } catch (\Exception $e) {
                 return response()->json([
-                    'error' => 'Could not fetch the URL. Status: ' . $response->status()
+                    'error' => 'Connection failed: ' . $e->getMessage()
                 ], 422);
             }
 
-            $html = $response->body();
-        } catch (\Exception $e) {
+            // 2. Parse DOM
+            $dom = HtmlDomParser::str_get_html($html);
+            if (!$dom) {
+                return response()->json([
+                    'error' => 'Failed to parse HTML from the URL.'
+                ], 422);
+            }
+
+            $links = [];
+            $seen = [];
+            $rawLinks = $dom->find('a');
+
+            foreach ($rawLinks as $element) {
+                $href = $element->getAttribute('href');
+                $text = trim($element->plaintext);
+
+                if (empty($href))
+                    continue;
+
+                $fullUrl = $this->resolveUrl($targetUrl, $href);
+
+                // Filter invalid schemes
+                $scheme = parse_url($fullUrl, PHP_URL_SCHEME);
+                if (!in_array($scheme, ['http', 'https']))
+                    continue;
+
+                // Deduplicate
+                if (in_array($fullUrl, $seen))
+                    continue;
+                $seen[] = $fullUrl;
+
+                $links[] = [
+                    'url' => $fullUrl,
+                    'text' => mb_strlen($text) > 50 ? mb_substr($text, 0, 50) . '...' : ($text ?: '[Image/Icon]'),
+                    'is_internal' => parse_url($fullUrl, PHP_URL_HOST) === parse_url($targetUrl, PHP_URL_HOST),
+                    'status' => 'pending', // Pending check
+                    'health' => 'pending'
+                ];
+            }
+
             return response()->json([
-                'error' => 'Connection failed: ' . $e->getMessage()
-            ], 422);
+                'links' => $links,
+                'total' => count($links)
+            ]);
+
+        } catch (\Exception $e) {
+            Log::error('Broken Links Extraction Failed: ' . $e->getMessage());
+            return response()->json([
+                'error' => 'Extraction Failed: ' . $e->getMessage()
+            ], 500);
         }
-
-        $dom = HtmlDomParser::str_get_html($html);
-        $links = [];
-        $seen = [];
-        $rawLinks = $dom->find('a');
-
-        foreach ($rawLinks as $element) {
-            $href = $element->getAttribute('href');
-            $text = trim($element->plaintext);
-
-            if (empty($href))
-                continue;
-
-            $fullUrl = $this->resolveUrl($targetUrl, $href);
-
-            // Filter invalid schemes
-            $scheme = parse_url($fullUrl, PHP_URL_SCHEME);
-            if (!in_array($scheme, ['http', 'https']))
-                continue;
-
-            // Deduplicate
-            if (in_array($fullUrl, $seen))
-                continue;
-            $seen[] = $fullUrl;
-
-            $links[] = [
-                'url' => $fullUrl,
-                'text' => iconv_strlen($text) > 50 ? substr($text, 0, 50) . '...' : ($text ?: '[Image/Icon]'),
-                'is_internal' => parse_url($fullUrl, PHP_URL_HOST) === parse_url($targetUrl, PHP_URL_HOST),
-                'status' => 'pending', // Pending check
-                'health' => 'pending'
-            ];
-        }
-
-        return response()->json([
-            'links' => $links,
-            'total' => count($links)
-        ]);
     }
 
     // Phase 2: Check status of a single URL (or small batch)

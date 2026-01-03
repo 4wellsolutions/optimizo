@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Artisan;
 
 class SettingController extends Controller
 {
@@ -90,6 +91,46 @@ class SettingController extends Controller
                 'success' => false,
                 'message' => 'Error generating sitemap: ' . $e->getMessage()
             ], 500);
+        }
+    }
+    public function cache()
+    {
+        return view('admin.settings.cache');
+    }
+
+    public function clearCache(Request $request)
+    {
+        $type = $request->input('type');
+
+        try {
+            switch ($type) {
+                case 'optimize':
+                    Artisan::call('optimize:clear');
+                    $message = 'All caches cleared and optimized!';
+                    break;
+                case 'application':
+                    Artisan::call('cache:clear');
+                    $message = 'Application cache cleared!';
+                    break;
+                case 'route':
+                    Artisan::call('route:clear');
+                    $message = 'Route cache cleared!';
+                    break;
+                case 'config':
+                    Artisan::call('config:clear');
+                    $message = 'Configuration cache cleared!';
+                    break;
+                case 'view':
+                    Artisan::call('view:clear');
+                    $message = 'View cache cleared!';
+                    break;
+                default:
+                    return response()->json(['success' => false, 'message' => 'Invalid cache type'], 400);
+            }
+
+            return response()->json(['success' => true, 'message' => $message]);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Error: ' . $e->getMessage()], 500);
         }
     }
 }

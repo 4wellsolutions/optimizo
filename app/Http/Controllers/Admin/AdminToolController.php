@@ -26,6 +26,38 @@ class AdminToolController extends Controller
         }
     }
 
+    public function build()
+    {
+        try {
+            $basePath = base_path();
+            $logPath = storage_path('logs/build.log');
+
+            // Clear previous log
+            file_put_contents($logPath, "Build started at " . now() . PHP_EOL);
+
+            if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+                // Windows: Use start /B to run in background
+                $command = "cd /d \"{$basePath}\" && start /B npm run build > \"{$logPath}\" 2>&1";
+                pclose(popen($command, 'r'));
+            } else {
+                // Linux/Mac: Use nohup or & with explicit path
+                // We try to find npm location if possible, otherwise rely on PATH
+                $npm = 'npm';
+                // Common paths for npm if not in PATH (optional/fallback)
+                // $npm = '/usr/bin/npm'; 
+
+                $command = "cd \"{$basePath}\" && {$npm} run build > \"{$logPath}\" 2>&1 &";
+                exec($command);
+            }
+
+            return redirect()->route('admin.tools.index')
+                ->with('success', "Build process started! Check storage/logs/build.log for details.");
+        } catch (\Exception $e) {
+            return redirect()->route('admin.tools.index')
+                ->with('error', 'Error starting build: ' . $e->getMessage());
+        }
+    }
+
     public function index()
     {
         $tools = Tool::ordered()->get();

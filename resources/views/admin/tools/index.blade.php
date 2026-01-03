@@ -18,6 +18,12 @@
                     <i class="fas fa-sync"></i> Refresh Tools
                 </button>
             </form>
+            <form action="{{ route('admin.tools.build') }}" method="POST" class="d-inline ms-2">
+                @csrf
+                <button type="submit" class="btn btn-warning">
+                    <i class="fas fa-hammer"></i> Build Assets
+                </button>
+            </form>
         </div>
 
         @if(session('success'))

@@ -341,6 +341,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::prefix('tools')->name('tools.')->group(function () {
         Route::get('/', [App\Http\Controllers\Admin\AdminToolController::class, 'index'])->name('index');
         Route::post('/sync', [App\Http\Controllers\Admin\AdminToolController::class, 'sync'])->name('sync');
+        Route::post('/build', [App\Http\Controllers\Admin\AdminToolController::class, 'build'])->name('build');
         Route::get('/{tool}/edit', [App\Http\Controllers\Admin\AdminToolController::class, 'edit'])->name('edit');
         Route::put('/{tool}', [App\Http\Controllers\Admin\AdminToolController::class, 'update'])->name('update');
     });
@@ -390,6 +391,10 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
         Route::get('/', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('index');
         Route::post('/', [App\Http\Controllers\Admin\SettingController::class, 'update'])->name('update');
         Route::post('/generate-sitemap', [App\Http\Controllers\Admin\SettingController::class, 'generateSitemap'])->name('generate-sitemap');
+
+        // Cache System
+        Route::get('/cache', [App\Http\Controllers\Admin\SettingController::class, 'cache'])->name('cache');
+        Route::post('/cache/clear', [App\Http\Controllers\Admin\SettingController::class, 'clearCache'])->name('cache.clear');
     });
 });
 

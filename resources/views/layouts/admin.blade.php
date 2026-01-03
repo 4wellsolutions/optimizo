@@ -125,9 +125,16 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('admin.settings.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.settings.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.settings.index') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-cog"></i>
                                 <p>Settings</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.settings.cache') }}"
+                                class="nav-link {{ request()->routeIs('admin.settings.cache') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-database"></i>
+                                <p>Cache System</p>
                             </a>
                         </li>
                     </ul>
