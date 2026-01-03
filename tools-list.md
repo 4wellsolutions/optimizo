@@ -409,6 +409,16 @@
     - Description: Check search engine rankings on Google
     - Status: ✅ Implemented
 
+    - Description: Check search engine rankings on Google
+    - Status: ✅ Implemented
+
+64. **Broken Links Checker**
+    - URL: `http://localhost:8000/broken-links-checker`
+    - Category: Advanced SEO Tools
+    - Sub-category: Maintenance
+    - Description: Scan webpage for dead links (404s) and status codes.
+    - Status: ✅ Implemented
+
 ---
 
 ## Summary

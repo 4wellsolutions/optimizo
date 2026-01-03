@@ -27,7 +27,8 @@ use App\Http\Controllers\Tools\Seo\{
     BingSerpCheckerController,
     YahooSerpCheckerController,
     LocationController,
-    OnPageSeoCheckerController
+    OnPageSeoCheckerController,
+    BrokenLinksCheckerController
 };
 
 use App\Http\Controllers\Tools\Utility\{
@@ -171,6 +172,12 @@ Route::prefix('tools')->name('seo.')->group(function () {
     Route::post('/on-page-seo-checker/init', [OnPageSeoCheckerController::class, 'init'])->name('on-page.init');
     Route::post('/on-page-seo-checker/analyze-step', [OnPageSeoCheckerController::class, 'analyzeStep'])->name('on-page.analyze-step');
     Route::get('/on-page-seo-checker/export', [OnPageSeoCheckerController::class, 'exportPdf'])->name('on-page.export');
+
+    // Broken Links Checker
+    Route::get('/broken-links-checker', [BrokenLinksCheckerController::class, 'index'])->name('broken-links-checker');
+    Route::post('/broken-links-checker/extract', [BrokenLinksCheckerController::class, 'extract'])->name('broken-links.extract');
+    Route::post('/broken-links-checker/status', [BrokenLinksCheckerController::class, 'checkStatus'])->name('broken-links.status');
+    Route::get('/broken-links-checker/export', [BrokenLinksCheckerController::class, 'export'])->name('broken-links.export');
 });
 
 /*
@@ -349,6 +356,15 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     // Blog Import
     Route::get('import', [App\Http\Controllers\Admin\BlogImportController::class, 'index'])->name('import.index');
     Route::post('import', [App\Http\Controllers\Admin\BlogImportController::class, 'process'])->name('import.process');
+
+
+
+    // YouTube Tools
+    Route::prefix('youtube')->name('youtube.')->group(function () {
+        Route::get('/', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('index');
+        Route::post('/', [App\Http\Controllers\Admin\SettingController::class, 'update'])->name('update');
+        Route::post('/generate-sitemap', [App\Http\Controllers\Admin\SettingController::class, 'generateSitemap'])->name('generate-sitemap');
+    });
 
     // Redirects Management
     Route::resource('redirects', App\Http\Controllers\Admin\RedirectController::class);

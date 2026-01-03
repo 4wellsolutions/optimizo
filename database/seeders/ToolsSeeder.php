@@ -47,6 +47,7 @@ class ToolsSeeder extends Seeder
             ['name' => 'Bing SERP Checker', 'slug' => 'bing-serp-checker', 'route_name' => 'seo.bing-serp-checker', 'controller' => 'BingSerpCheckerController', 'meta_description' => 'Use our free Bing SERP checker to track your Bing ranking and position. Detailed Bing SERP analysis for desktop and mobile from any location.', 'subcategory' => 'Technical SEO'],
             ['name' => 'Yahoo SERP Checker', 'slug' => 'yahoo-serp-checker', 'route_name' => 'seo.yahoo-serp-checker', 'controller' => 'YahooSerpCheckerController', 'meta_description' => 'Use our free Yahoo SERP checker to track your Yahoo ranking and position. Detailed Yahoo SERP analysis for desktop and mobile.', 'subcategory' => 'Technical SEO'],
             ['name' => 'On-Page SEO Checker', 'slug' => 'on-page-seo-checker', 'route_name' => 'seo.on-page-seo-checker', 'controller' => 'OnPageSeoCheckerController', 'meta_description' => 'Comprehensive On-Page SEO audit tool. Analyze topic intent, content quality, and technical SEO factors.', 'subcategory' => 'Analysis Tools'],
+            ['name' => 'Broken Links Checker', 'slug' => 'broken-links-checker', 'route_name' => 'seo.broken-links-checker', 'controller' => 'BrokenLinksCheckerController', 'meta_description' => 'Scan your webpage for dead links (404 errors) to improve user experience and SEO rankings. Free online broken link checker tool.', 'subcategory' => 'Technical SEO'],
         ];
 
         // Network Tools with Subcategories
