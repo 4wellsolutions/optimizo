@@ -49,7 +49,8 @@
                         class="tool-search-input block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-xl leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 sm:text-sm transition-all duration-200"
                         placeholder="Search for tools..." autocomplete="off">
 
-                    <div class="search-results absolute z-50 mt-2 w-full bg-white shadow-xl rounded-xl border border-gray-100 py-1 text-base overflow-auto max-h-96 sm:text-sm hidden">
+                    <div
+                        class="search-results absolute z-50 mt-2 w-full bg-white shadow-xl rounded-xl border border-gray-100 py-1 text-base overflow-auto max-h-96 sm:text-sm hidden">
                         <!-- Results injected via JS -->
                     </div>
                 </div>
@@ -87,7 +88,8 @@
                 <input type="text"
                     class="tool-search-input block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-xl leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-base transition-all duration-200"
                     placeholder="Search for tools..." autocomplete="off">
-                <div class="search-results absolute z-50 mt-2 w-[calc(100%-2rem)] bg-white shadow-xl rounded-xl border border-gray-100 py-1 text-base overflow-auto max-h-60 hidden">
+                <div
+                    class="search-results absolute z-50 mt-2 w-[calc(100%-2rem)] bg-white shadow-xl rounded-xl border border-gray-100 py-1 text-base overflow-auto max-h-60 hidden">
                     <!-- Results injected via JS -->
                 </div>
             </div>
@@ -168,7 +170,7 @@
         // Make searchable tools available to JS
         window.searchableTools = @json($searchableTools ?? []);
 
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Initializing search for all search containers (desktop + mobile)
             const searchContainers = document.querySelectorAll('.search-container');
 
@@ -178,7 +180,7 @@
                 let selectedIndex = -1;
 
                 if (searchInput && searchResults) {
-                    searchInput.addEventListener('input', function(e) {
+                    searchInput.addEventListener('input', function (e) {
                         const query = e.target.value.toLowerCase();
                         selectedIndex = -1;
 
@@ -187,8 +189,8 @@
                             return;
                         }
 
-                        const filteredTools = window.searchableTools.filter(tool => 
-                            tool.name.toLowerCase().includes(query) || 
+                        const filteredTools = window.searchableTools.filter(tool =>
+                            tool.name.toLowerCase().includes(query) ||
                             tool.category.toLowerCase().includes(query)
                         ).slice(0, 8); // Limit to 8 results
 
@@ -218,18 +220,18 @@
                     });
 
                     // Handle clicking outside to close
-                    document.addEventListener('click', function(e) {
+                    document.addEventListener('click', function (e) {
                         if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
                             searchResults.classList.add('hidden');
                         }
                     });
 
                     // Handle keyboard navigation
-                    searchInput.addEventListener('keydown', function(e) {
+                    searchInput.addEventListener('keydown', function (e) {
                         if (searchResults.classList.contains('hidden')) return;
 
                         const results = searchResults.querySelectorAll('a');
-                        
+
                         if (e.key === 'ArrowDown') {
                             e.preventDefault();
                             selectedIndex = Math.min(selectedIndex + 1, results.length - 1);

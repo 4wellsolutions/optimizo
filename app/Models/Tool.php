@@ -9,6 +9,8 @@ class Tool extends Model
     protected $fillable = [
         'name',
         'slug',
+        'description', // Tool short description
+        'content', // Full SEO content
         'category',
         'subcategory',
         'controller',

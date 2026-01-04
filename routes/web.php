@@ -73,7 +73,8 @@ use App\Http\Controllers\Tools\Utility\{
     StudlyCaseController,
     TextReverserController,
     TextToMorseController,
-    MorseToTextController
+    MorseToTextController,
+    DocumentConverterController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -245,6 +246,36 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/text-reverser', [TextReverserController::class, 'index'])->name('text-reverser');
     Route::get('/text-to-morse-converter', [TextToMorseController::class, 'index'])->name('text-to-morse');
     Route::get('/morse-to-text-converter', [MorseToTextController::class, 'index'])->name('morse-to-text');
+    Route::get('/morse-to-text-converter', [MorseToTextController::class, 'index'])->name('morse-to-text');
+
+    // Document Converters (11 Tools)
+    Route::get('/pdf-to-word', [DocumentConverterController::class, 'indexPdfToWord'])->name('pdf-to-word');
+    Route::post('/pdf-to-word', [DocumentConverterController::class, 'processPdfToWord'])->name('pdf-to-word.process');
+
+    Route::get('/word-to-pdf', [DocumentConverterController::class, 'indexWordToPdf'])->name('word-to-pdf');
+    Route::post('/word-to-pdf', [DocumentConverterController::class, 'processWordToPdf'])->name('word-to-pdf.process');
+
+    Route::get('/pdf-to-excel', [DocumentConverterController::class, 'indexPdfToExcel'])->name('pdf-to-excel');
+    // Route::post('/pdf-to-excel', [DocumentConverterController::class, 'processPdfToExcel'])->name('pdf-to-excel.process');
+
+    Route::get('/excel-to-pdf', [DocumentConverterController::class, 'indexExcelToPdf'])->name('excel-to-pdf');
+    // Route::post('/excel-to-pdf', [DocumentConverterController::class, 'processExcelToPdf'])->name('excel-to-pdf.process');
+
+    Route::get('/pdf-to-jpg', [DocumentConverterController::class, 'indexPdfToJpg'])->name('pdf-to-jpg');
+    // Route::post('/pdf-to-jpg', [DocumentConverterController::class, 'processPdfToJpg'])->name('pdf-to-jpg.process');
+
+    Route::get('/jpg-to-pdf', [DocumentConverterController::class, 'indexJpgToPdf'])->name('jpg-to-pdf');
+    // Route::post('/jpg-to-pdf', [DocumentConverterController::class, 'processJpgToPdf'])->name('jpg-to-pdf.process');
+
+    Route::get('/powerpoint-to-pdf', [DocumentConverterController::class, 'indexPptToPdf'])->name('ppt-to-pdf');
+    // Route::post('/powerpoint-to-pdf', [DocumentConverterController::class, 'processPptToPdf'])->name('ppt-to-pdf.process');
+
+    Route::get('/pdf-to-powerpoint', [DocumentConverterController::class, 'indexPdfToPpt'])->name('pdf-to-ppt');
+    // Route::post('/pdf-to-powerpoint', [DocumentConverterController::class, 'processPdfToPpt'])->name('pdf-to-ppt.process');
+
+    Route::get('/pdf-compressor', [DocumentConverterController::class, 'indexPdfCompressor'])->name('pdf-compressor');
+    Route::get('/pdf-merger', [DocumentConverterController::class, 'indexPdfMerger'])->name('pdf-merger');
+    Route::get('/pdf-splitter', [DocumentConverterController::class, 'indexPdfSplitter'])->name('pdf-splitter');
 
 
     // POST Routes

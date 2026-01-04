@@ -60,7 +60,7 @@ class AdminToolController extends Controller
 
     public function index()
     {
-        $tools = Tool::ordered()->get();
+        $tools = Tool::orderBy('id', 'desc')->get();
         return view('admin.tools.index', compact('tools'));
     }
 

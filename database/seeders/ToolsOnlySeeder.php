@@ -104,6 +104,19 @@ class ToolsOnlySeeder extends Seeder
             SvgToJpgSeeder::class,
             HeicToJpgSeeder::class,
             IcoConverterSeeder::class,
+
+                // Document Converter Tools
+            PdfToWordSeeder::class,
+            WordToPdfSeeder::class,
+            PdfToExcelSeeder::class,
+            ExcelToPdfSeeder::class,
+            PowerPointToPdfSeeder::class,
+            PdfToPowerPointSeeder::class,
+            PdfToJpgSeeder::class,
+            JpgToPdfSeeder::class,
+            PdfCompressorSeeder::class,
+            PdfMergerSeeder::class,
+            PdfSplitterSeeder::class,
         ]);
     }
 }

@@ -33,6 +33,44 @@
             </div>
         @endif
 
+        {{-- Statistics Cards --}}
+        <div class="mb-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Tools</h5>
+                            <h2 class="text-primary">{{ $tools->count() }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Active Tools</h5>
+                            <h2 class="text-success">{{ $tools->where('is_active', true)->count() }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Utility Tools</h5>
+                            <h2 class="text-info">{{ $tools->where('category', 'utility')->count() }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">YouTube Tools</h5>
+                            <h2 class="text-danger">{{ $tools->where('category', 'youtube')->count() }}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -84,43 +122,6 @@
                             @endforeach
                         </tbody>
                     </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-4">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">Total Tools</h5>
-                            <h2 class="text-primary">{{ $tools->count() }}</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">Active Tools</h5>
-                            <h2 class="text-success">{{ $tools->where('is_active', true)->count() }}</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">Utility Tools</h5>
-                            <h2 class="text-info">{{ $tools->where('category', 'utility')->count() }}</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">YouTube Tools</h5>
-                            <h2 class="text-danger">{{ $tools->where('category', 'youtube')->count() }}</h2>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
