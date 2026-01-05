@@ -257,22 +257,22 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::post('/word-to-pdf', [DocumentConverterController::class, 'processWordToPdf'])->name('word-to-pdf.process');
 
     Route::get('/pdf-to-excel', [DocumentConverterController::class, 'indexPdfToExcel'])->name('pdf-to-excel');
-    // Route::post('/pdf-to-excel', [DocumentConverterController::class, 'processPdfToExcel'])->name('pdf-to-excel.process');
+    Route::post('/pdf-to-excel', [DocumentConverterController::class, 'processPdfToExcel'])->name('pdf-to-excel.process');
 
     Route::get('/excel-to-pdf', [DocumentConverterController::class, 'indexExcelToPdf'])->name('excel-to-pdf');
-    // Route::post('/excel-to-pdf', [DocumentConverterController::class, 'processExcelToPdf'])->name('excel-to-pdf.process');
+    Route::post('/excel-to-pdf', [DocumentConverterController::class, 'processExcelToPdf'])->name('excel-to-pdf.process');
 
     Route::get('/pdf-to-jpg', [DocumentConverterController::class, 'indexPdfToJpg'])->name('pdf-to-jpg');
-    // Route::post('/pdf-to-jpg', [DocumentConverterController::class, 'processPdfToJpg'])->name('pdf-to-jpg.process');
+    Route::post('/pdf-to-jpg', [DocumentConverterController::class, 'processPdfToJpg'])->name('pdf-to-jpg.process');
 
     Route::get('/jpg-to-pdf', [DocumentConverterController::class, 'indexJpgToPdf'])->name('jpg-to-pdf');
-    // Route::post('/jpg-to-pdf', [DocumentConverterController::class, 'processJpgToPdf'])->name('jpg-to-pdf.process');
+    Route::post('/jpg-to-pdf', [DocumentConverterController::class, 'processJpgToPdf'])->name('jpg-to-pdf.process');
 
-    Route::get('/powerpoint-to-pdf', [DocumentConverterController::class, 'indexPptToPdf'])->name('ppt-to-pdf');
-    // Route::post('/powerpoint-to-pdf', [DocumentConverterController::class, 'processPptToPdf'])->name('ppt-to-pdf.process');
+    Route::get('/powerpoint-to-pdf', [DocumentConverterController::class, 'indexPptToPdf'])->name('powerpoint-to-pdf');
+    Route::post('/powerpoint-to-pdf', [DocumentConverterController::class, 'processPptToPdf'])->name('powerpoint-to-pdf.process');
 
     Route::get('/pdf-to-powerpoint', [DocumentConverterController::class, 'indexPdfToPpt'])->name('pdf-to-ppt');
-    // Route::post('/pdf-to-powerpoint', [DocumentConverterController::class, 'processPdfToPpt'])->name('pdf-to-ppt.process');
+    Route::post('/pdf-to-powerpoint', [DocumentConverterController::class, 'processPdfToPpt'])->name('pdf-to-ppt.process');
 
     Route::get('/pdf-compressor', [DocumentConverterController::class, 'indexPdfCompressor'])->name('pdf-compressor');
     Route::get('/pdf-merger', [DocumentConverterController::class, 'indexPdfMerger'])->name('pdf-merger');
@@ -353,15 +353,6 @@ Route::prefix('tools')->name('network.')->group(function () {
     Route::post('/domain-to-ip/lookup', [DomainToIpController::class, 'lookup'])->name('domain-to-ip.lookup');
     Route::post('/redirect-checker/check', [RedirectCheckerController::class, 'check'])->name('redirect-checker.check');
     Route::post('/redirect-checker/canonical', [RedirectCheckerController::class, 'checkCanonical'])->name('redirect-checker.canonical');
-    // Time & Date Tools
-    Route::controller(\App\Http\Controllers\Tools\Utility\TimeConverterController::class)->group(function () {
-        Route::get('/time-zone-converter', 'timeZoneConverter')->name('time-zone-converter');
-        Route::get('/epoch-time-converter', 'epochTimeConverter')->name('epoch-time-converter');
-        Route::get('/unix-timestamp-to-date', 'unixToDate')->name('unix-to-date');
-        Route::get('/date-to-unix-timestamp', 'dateToUnix')->name('date-to-unix');
-        Route::get('/utc-to-local-time', 'utcToLocal')->name('utc-to-local');
-        Route::get('/local-time-to-utc', 'localToUtc')->name('local-to-utc');
-    });
 });
 
 /*

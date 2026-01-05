@@ -63,11 +63,23 @@ class DocumentConverterController extends Controller
         return view('tools.document.pdf-to-excel', compact('tool'));
     }
 
+    public function processPdfToExcel(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:pdf|max:10240']);
+        return back()->with('error', 'PDF to Excel conversion requires advanced libraries not fully configured.');
+    }
+
     // --- Excel to PDF ---
     public function indexExcelToPdf()
     {
         $tool = \App\Models\Tool::where('slug', 'excel-to-pdf')->first();
         return view('tools.document.excel-to-pdf', compact('tool'));
+    }
+
+    public function processExcelToPdf(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:xls,xlsx|max:10240']);
+        return back()->with('error', 'Excel to PDF conversion requires advanced libraries not fully configured.');
     }
 
     // --- PowerPoint to PDF ---
@@ -77,11 +89,23 @@ class DocumentConverterController extends Controller
         return view('tools.document.ppt-to-pdf', compact('tool'));
     }
 
+    public function processPptToPdf(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:ppt,pptx|max:10240']);
+        return back()->with('error', 'PowerPoint to PDF conversion requires advanced libraries not fully configured.');
+    }
+
     // --- PDF to PowerPoint ---
     public function indexPdfToPpt()
     {
         $tool = \App\Models\Tool::where('slug', 'pdf-to-powerpoint')->first();
         return view('tools.document.pdf-to-ppt', compact('tool'));
+    }
+
+    public function processPdfToPpt(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:pdf|max:10240']);
+        return back()->with('error', 'PDF to PowerPoint conversion requires advanced libraries not fully configured.');
     }
 
     // --- PDF to JPG ---
@@ -91,11 +115,23 @@ class DocumentConverterController extends Controller
         return view('tools.document.pdf-to-jpg', compact('tool'));
     }
 
+    public function processPdfToJpg(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:pdf|max:10240']);
+        return back()->with('error', 'PDF to JPG conversion requires advanced libraries not fully configured.');
+    }
+
     // --- JPG to PDF ---
     public function indexJpgToPdf()
     {
         $tool = \App\Models\Tool::where('slug', 'jpg-to-pdf')->first();
         return view('tools.document.jpg-to-pdf', compact('tool'));
+    }
+
+    public function processJpgToPdf(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:jpg,jpeg,png|max:10240']);
+        return back()->with('error', 'JPG to PDF conversion requires advanced libraries not fully configured.');
     }
 
     // --- PDF Compressor ---

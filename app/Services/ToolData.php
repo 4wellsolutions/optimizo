@@ -14,7 +14,7 @@ class ToolData
             self::getSeoTools(),
             self::getSpreadsheetTools(),
             self::getDocumentTools(),
-            self::getTimeTools(),
+
         );
     }
 
@@ -1571,7 +1571,7 @@ class ToolData
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
                 'controller' => 'App\Http\Controllers\Tools\Utility\DocumentConverterController',
-                'route_name' => 'utility.pdf-to-powerpoint',
+                'route_name' => 'utility.pdf-to-ppt',
                 'url' => '/tools/pdf-to-powerpoint',
                 'meta_title' => 'PDF to PowerPoint Converter - Free Online Tool',
                 'meta_description' => 'Convert PDF to PowerPoint online for free. Turn PDF documents into editable PPTX presentation slides.',
