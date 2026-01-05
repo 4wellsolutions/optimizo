@@ -74,7 +74,8 @@ use App\Http\Controllers\Tools\Utility\{
     TextReverserController,
     TextToMorseController,
     MorseToTextController,
-    DocumentConverterController
+    DocumentConverterController,
+    SpreadsheetConverterController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -276,6 +277,25 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/pdf-compressor', [DocumentConverterController::class, 'indexPdfCompressor'])->name('pdf-compressor');
     Route::get('/pdf-merger', [DocumentConverterController::class, 'indexPdfMerger'])->name('pdf-merger');
     Route::get('/pdf-splitter', [DocumentConverterController::class, 'indexPdfSplitter'])->name('pdf-splitter');
+
+    // Spreadsheet & Data Converters
+    Route::get('/excel-to-csv', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'excel-to-csv')->name('excel-to-csv');
+    Route::post('/excel-to-csv', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'excel-to-csv')->name('excel-to-csv.convert');
+
+    Route::get('/csv-to-excel', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'csv-to-excel')->name('csv-to-excel');
+    Route::post('/csv-to-excel', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'csv-to-excel')->name('csv-to-excel.convert');
+
+    Route::get('/xls-to-xlsx', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'xls-to-xlsx')->name('xls-to-xlsx');
+    Route::post('/xls-to-xlsx', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'xls-to-xlsx')->name('xls-to-xlsx.convert');
+
+    Route::get('/xlsx-to-xls', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'xlsx-to-xls')->name('xlsx-to-xls');
+    Route::post('/xlsx-to-xls', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'xlsx-to-xls')->name('xlsx-to-xls.convert');
+
+    Route::get('/google-sheets-to-excel', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'google-sheets-to-excel')->name('google-sheets-to-excel');
+    Route::post('/google-sheets-to-excel', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'google-sheets-to-excel')->name('google-sheets-to-excel.convert');
+
+    Route::get('/csv-to-sql', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'csv-to-sql')->name('csv-to-sql');
+    Route::post('/csv-to-sql', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'csv-to-sql')->name('csv-to-sql.convert');
 
 
     // POST Routes

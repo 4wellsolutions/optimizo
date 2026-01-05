@@ -13,13 +13,22 @@ class AdminToolController extends Controller
     public function sync()
     {
         try {
-            Artisan::call('db:seed', [
-                '--class' => 'ToolsOnlySeeder',
-                '--force' => true,
-            ]);
+            $tools = \App\Services\ToolData::getTools();
+            $count = 0;
+
+            foreach ($tools as $tool) {
+                // Ensure slug is present as the unique key
+                if (isset($tool['slug'])) {
+                    Tool::updateOrCreate(
+                        ['slug' => $tool['slug']],
+                        $tool
+                    );
+                    $count++;
+                }
+            }
 
             return redirect()->route('admin.tools.index')
-                ->with('success', 'Tools synchronized successfully!');
+                ->with('success', "Synced {$count} tools successfully!");
         } catch (\Exception $e) {
             return redirect()->route('admin.tools.index')
                 ->with('error', 'Error syncing tools: ' . $e->getMessage());
