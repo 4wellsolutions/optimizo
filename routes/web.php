@@ -353,6 +353,15 @@ Route::prefix('tools')->name('network.')->group(function () {
     Route::post('/domain-to-ip/lookup', [DomainToIpController::class, 'lookup'])->name('domain-to-ip.lookup');
     Route::post('/redirect-checker/check', [RedirectCheckerController::class, 'check'])->name('redirect-checker.check');
     Route::post('/redirect-checker/canonical', [RedirectCheckerController::class, 'checkCanonical'])->name('redirect-checker.canonical');
+    // Time & Date Tools
+    Route::controller(\App\Http\Controllers\Tools\Utility\TimeConverterController::class)->group(function () {
+        Route::get('/time-zone-converter', 'timeZoneConverter')->name('time-zone-converter');
+        Route::get('/epoch-time-converter', 'epochTimeConverter')->name('epoch-time-converter');
+        Route::get('/unix-timestamp-to-date', 'unixToDate')->name('unix-to-date');
+        Route::get('/date-to-unix-timestamp', 'dateToUnix')->name('date-to-unix');
+        Route::get('/utc-to-local-time', 'utcToLocal')->name('utc-to-local');
+        Route::get('/local-time-to-utc', 'localToUtc')->name('local-to-utc');
+    });
 });
 
 /*

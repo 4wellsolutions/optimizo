@@ -299,6 +299,8 @@
 
     <!-- Global Paste Functionality -->
     <script src="{{ asset('js/paste-functionality.js') }}"></script>
+
+    @stack('scripts')
 </body>
 
 </html>

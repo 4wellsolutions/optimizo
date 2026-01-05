@@ -62,21 +62,21 @@
 
 ## 📊 Spreadsheet & Data Converters (6 Tools)
 
-- [ ] Excel to CSV - Convert Excel files to CSV
-- [ ] CSV to Excel - Convert CSV to Excel format
-- [ ] XLS to XLSX - Convert old Excel to new format
-- [ ] XLSX to XLS - Convert new Excel to old format
-- [ ] Google Sheets to Excel - Export Google Sheets to Excel
-- [ ] CSV to SQL - Convert CSV data to SQL
+- [x] Excel to CSV - Convert Excel files to CSV
+- [x] CSV to Excel - Convert CSV to Excel format
+- [x] XLS to XLSX - Convert old Excel to new format
+- [x] XLSX to XLS - Convert new Excel to old format
+- [x] Google Sheets to Excel - Export Google Sheets to Excel
+- [x] CSV to SQL - Convert CSV data to SQL
 
 ## 🌍 Time, Date & Location Converters (6 Tools)
 
-- [ ] Time Zone Converter - Convert between time zones
-- [ ] Epoch Time Converter - Convert Unix timestamps
-- [ ] Unix Timestamp to Date - Convert timestamp to readable date
-- [ ] Date to Unix Timestamp - Convert date to timestamp
-- [ ] UTC to Local Time - Convert UTC to local time
-- [ ] Local Time to UTC - Convert local time to UTC
+- [x] Time Zone Converter - Convert between time zones
+- [x] Epoch Time Converter - Convert Unix timestamps
+- [x] Unix Timestamp to Date - Convert timestamp to readable date
+- [x] Date to Unix Timestamp - Convert date to timestamp
+- [x] UTC to Local Time - Convert UTC to local time
+- [x] Local Time to UTC - Convert local time to UTC
 
 ## 🎨 Color & Design Converters (7 Tools)
 

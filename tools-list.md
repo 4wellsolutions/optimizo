@@ -483,23 +483,129 @@
     - Sub-category: Number Converters
     - Description: Universal converter for any number base (2-36)
 
+### Document Converter Tools
+
+73. **PDF to Word Converter**
+    - URL: `http://localhost:8000/tools/pdf-to-word`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Convert PDF documents to editable Microsoft Word (DOC/DOCX) files.
+
+74. **Word to PDF Converter**
+    - URL: `http://localhost:8000/tools/word-to-pdf`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Convert Microsoft Word (DOC/DOCX) documents to PDF format.
+
+75. **PDF to Excel Converter**
+    - URL: `http://localhost:8000/tools/pdf-to-excel`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Convert PDF tables to editable Microsoft Excel (XLS/XLSX) spreadsheets.
+
+76. **Excel to PDF Converter**
+    - URL: `http://localhost:8000/tools/excel-to-pdf`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Convert Microsoft Excel (XLS/XLSX) spreadsheets to PDF format.
+
+77. **PowerPoint to PDF Converter**
+    - URL: `http://localhost:8000/tools/powerpoint-to-pdf`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Convert Microsoft PowerPoint (PPT/PPTX) presentations to PDF format.
+
+78. **PDF to PowerPoint Converter**
+    - URL: `http://localhost:8000/tools/pdf-to-powerpoint`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Convert PDF documents to editable Microsoft PowerPoint (PPT/PPTX) slides.
+
+79. **PDF to JPG Converter**
+    - URL: `http://localhost:8000/tools/pdf-to-jpg`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Convert PDF pages to high-quality JPG images.
+
+80. **JPG to PDF Converter**
+    - URL: `http://localhost:8000/tools/jpg-to-pdf`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Convert JPG images to PDF format.
+
+81. **PDF Compressor**
+    - URL: `http://localhost:8000/tools/pdf-compressor`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Compress PDF files to reduce file size without losing quality.
+
+82. **PDF Merger**
+    - URL: `http://localhost:8000/tools/pdf-merger`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Combine multiple PDF files into one single document.
+
+83. **PDF Splitter**
+    - URL: `http://localhost:8000/tools/pdf-splitter`
+    - Category: Utility Tools
+    - Sub-category: Document Tools
+    - Description: Split a PDF file into multiple separate documents.
+
+### Spreadsheet Tools
+
+84. **Excel to CSV Converter**
+    - URL: `http://localhost:8000/tools/excel-to-csv`
+    - Category: Utility Tools
+    - Sub-category: Spreadsheet Tools
+    - Description: Convert Excel files (XLS, XLSX) to CSV format.
+
+85. **CSV to Excel Converter**
+    - URL: `http://localhost:8000/tools/csv-to-excel`
+    - Category: Utility Tools
+    - Sub-category: Spreadsheet Tools
+    - Description: Convert CSV files to Excel (XLSX) format.
+
+86. **XLS to XLSX Converter**
+    - URL: `http://localhost:8000/tools/xls-to-xlsx`
+    - Category: Utility Tools
+    - Sub-category: Spreadsheet Tools
+    - Description: Convert legacy Excel (XLS) files to modern XLSX format.
+
+87. **XLSX to XLS Converter**
+    - URL: `http://localhost:8000/tools/xlsx-to-xls`
+    - Category: Utility Tools
+    - Sub-category: Spreadsheet Tools
+    - Description: Convert modern Excel (XLSX) files to legacy XLS format.
+
+88. **Google Sheets to Excel**
+    - URL: `http://localhost:8000/tools/google-sheets-to-excel`
+    - Category: Utility Tools
+    - Sub-category: Spreadsheet Tools
+    - Description: Convert Google Sheets exports (CSV, ODS) to Microsoft Excel format.
+
+89. **CSV to SQL Converter**
+    - URL: `http://localhost:8000/tools/csv-to-sql`
+    - Category: Utility Tools
+    - Sub-category: Spreadsheet Tools
+    - Description: Convert CSV data files into SQL INSERT statements.
+
 ---
 
 ## Network Tools (3 Tools)
 
-73. **What is My IP**
+90. **What is My IP**
     - URL: `http://localhost:8000/tools/what-is-my-ip`
     - Category: Network Tools
     - Sub-category: IP Tools
     - Description: Find your public IP address and location
 
-74. **What is My ISP**
+91. **What is My ISP**
     - URL: `http://localhost:8000/tools/what-is-my-isp`
     - Category: Network Tools
     - Sub-category: IP Tools
     - Description: Identify your Internet Service Provider
 
-75. **Redirect & HTTP Status Checker**
+92. **Redirect & HTTP Status Checker**
     - URL: `http://localhost:8000/tools/redirect-checker`
     - Category: Network Tools
     - Sub-category: Diagnostics
@@ -509,35 +615,35 @@
 
 ## Advanced SEO Tools (5 Tools)
 
-76. **On-Page SEO Checker**
+93. **On-Page SEO Checker**
     - URL: `http://localhost:8000/tools/on-page-seo-checker`
     - Category: Advanced SEO Tools
     - Sub-category: On-Page SEO
     - Description: Analyze on-page SEO factors and get actionable insights
     - Status: ✅ Implemented
 
-77. **Bing SERP Checker**
+94. **Bing SERP Checker**
     - URL: `http://localhost:8000/tools/bing-serp-checker`
     - Category: Advanced SEO Tools
     - Sub-category: Rank Tracking
     - Description: Check search engine rankings on Bing
     - Status: ✅ Implemented
 
-78. **Yahoo SERP Checker**
+95. **Yahoo SERP Checker**
     - URL: `http://localhost:8000/tools/yahoo-serp-checker`
     - Category: Advanced SEO Tools
     - Sub-category: Rank Tracking
     - Description: Check search engine rankings on Yahoo
     - Status: ✅ Implemented
 
-79. **Google SERP Checker**
+96. **Google SERP Checker**
     - URL: `http://localhost:8000/tools/google-serp-checker`
     - Category: Advanced SEO Tools
     - Sub-category: Rank Tracking
     - Description: Check search engine rankings on Google
     - Status: ✅ Implemented
 
-80. **Broken Links Checker**
+97. **Broken Links Checker**
     - URL: `http://localhost:8000/broken-links-checker`
     - Category: Advanced SEO Tools
     - Sub-category: Maintenance
@@ -583,29 +689,11 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 *(Moved to Live)*
 
 
-### 📄 Document Converters (11 Tools)
+### 📄 Document Converters (0 Tools)
+*(Moved to Live)*
 
-87. **PDF to Word** - Convert PDF to Word documents
-88. **Word to PDF** - Convert Word to PDF format
-89. **PDF to Excel** - Convert PDF to Excel spreadsheets
-90. **Excel to PDF** - Convert Excel to PDF format
-91. **PDF to JPG** - Convert PDF pages to JPG images
-92. **JPG to PDF** - Convert JPG images to PDF
-93. **PowerPoint to PDF** - Convert presentations to PDF
-94. **PDF to PowerPoint** - Convert PDF to PowerPoint
-95. **PDF Compressor** - Compress PDF file size
-96. **PDF Merger** - Merge multiple PDFs into one
-97. **PDF Splitter** - Split PDF into multiple files
-
-
-### 📊 Spreadsheet & Data Converters (6 Tools)
-
-98. **Excel to CSV** - Convert Excel files to CSV
-99. **CSV to Excel** - Convert CSV to Excel format
-100. **XLS to XLSX** - Convert old Excel to new format
-101. **XLSX to XLS** - Convert new Excel to old format
-102. **Google Sheets to Excel** - Export Google Sheets to Excel
-103. **CSV to SQL** - Convert CSV data to SQL
+### 📊 Spreadsheet & Data Converters (0 Tools)
+*(Moved to Live)*
 
 ### 🌍 Time, Date & Location Converters (6 Tools)
 
@@ -631,46 +719,14 @@ Replace `http://localhost:8000` with your production domain (e.g., `https://opti
 ## 📈 Tools Summary
 
 ### Current Tools (Live)
-- **Total**: 55 tools ✅ **Audit Complete - No Duplicates**
+- **Total**: 97 tools ✅
 - **YouTube Tools**: 9
-- **SEO Tools**: 3
-- **Utility Tools**: 40 (includes 5 Data Format Converters + 5 Number System Converters)
+- **Utility Tools**: 80 (includes 11 Document + 6 Spreadsheet)
 - **Network Tools**: 3
-
-**Utility Tools Breakdown:**
-- Encoding & Decoding: 6 tools
-- Data Format Converters: 5 tools (all bidirectional with unique SEO content)
-- Number System Converters: 5 tools
-- Text & Code Tools: 8 tools
-- Design & Media: 3 tools
-- Development Tools: 4 tools
-- Utilities: 3 tools
-- Abstract: 12 tools
-- Other Converters: 6 tools
+- **Advanced SEO Tools**: 5
 
 ### Upcoming Tools (Planned)
-- **Total**: 57 new tools
-- **Encoding/Decoding**: 0 tools ✅ (All 8 completed and moved to live)
-- **Number System Converters**: 0 tools ✅ (All 5 completed and moved to live)
-- **Data Format Converters**: 0 tools ✅ (All 5 bidirectional converters completed)
-### SEO Tools
-- [x] **Broken Links Checker**
-  - **Status**: ✅ Completed
-  - **Controller**: `App\Http\Controllers\Tools\SEO\BrokenLinksCheckerController`
-  - **Route**: `seo.broken-links-checker`
-  - **View**: `resources/views/tools/seo/broken-links-checker.blade.php`
-  - **Seeder**: `Database/Seeders/BrokenLinksCheckerSeeder.php`
-  - **Features**:
-    - Full-page extraction of internal/external links
-    - Sequential status checking with progress bar
-    - Stop functionality
-    - CSV Export
-    - Comprehensive SEO content
-    - Consistent Hero Design
-- **Text & String Converters**: 9 tools
-- **Image Converters**: 11 tools
-- **Document Converters**: 11 tools
-- **Spreadsheet & Data**: 6 tools
+- **Total**: 13 new tools
 - **Time & Date**: 6 tools
 - **Color & Design**: 7 tools
 
