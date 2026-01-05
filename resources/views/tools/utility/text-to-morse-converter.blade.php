@@ -8,24 +8,7 @@
 
 @section('content')
     <div class="max-w-6xl mx-auto">
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-cyan-500 via-sky-500 to-blue-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">Text to Morse Code
-                    Converter</h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">Convert text to
-                    Morse code instantly - 100% free!</p>
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <x-tool-hero :tool="$tool" icon="text-to-morse-converter" />
 
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-cyan-200 mb-8">
             <div class="mb-6">

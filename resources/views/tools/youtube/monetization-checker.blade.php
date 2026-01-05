@@ -9,25 +9,8 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-red-500 via-pink-500 to-rose-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V16h-2.67v2.09c-2.45-.4-4.32-2.24-4.32-4.59h2.67c0 1.71 1.39 3.1 3.1 3.1s3.1-1.39 3.1-3.1c0-1.71-1.39-3.1-3.1-3.1-2.76 0-5-2.24-5-5h2.67c0 1.71 1.39 3.1 3.1 3.1s3.1-1.39 3.1-3.1h2.67c0 2.35-1.87 4.19-4.32 4.59z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
-                    YouTube Monetization Checker
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium">
-                    Check if a YouTube channel is monetized!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Header -->
+        <x-tool-hero :tool="$tool" />
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">

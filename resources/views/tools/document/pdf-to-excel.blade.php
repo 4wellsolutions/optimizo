@@ -4,21 +4,7 @@
 @section('meta_description', $tool->meta_description ?? $tool->description)
 
 @section('content')
-    <!-- Hero Section -->
-    <div
-        class="relative overflow-hidden bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 rounded-3xl p-8 md:p-12 mb-12 shadow-2xl">
-        <div class="absolute top-0 right-0 w-80 h-80 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-        <div class="relative z-10 text-center">
-            <div
-                class="inline-flex items-center justify-center w-20 h-20 bg-white rounded-2xl shadow-2xl mb-8 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-                <!-- Icon: Table (Green) -->
-                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 10h18M3 14h18m-9-4v8m-7-4h14M4 6h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z" />
-                </svg>
-            </div>
+    <x-tool-hero :tool="$tool" />
             <h1 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight tracking-tight">
                 {{ $tool->name }}
             </h1>

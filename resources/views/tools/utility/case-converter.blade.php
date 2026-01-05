@@ -9,25 +9,7 @@
 @section('content')
     <div class="max-w-4xl mx-auto">
         <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
-                    Case Converter
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium">
-                    Convert text between different cases instantly!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <x-tool-hero :tool="$tool" icon="case-converter" />
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-orange-200 mb-8">

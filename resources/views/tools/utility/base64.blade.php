@@ -10,28 +10,8 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- SEO-Optimized Header with Gradient Background -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-green-500 via-teal-500 to-blue-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    Base64 Encoder & Decoder
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Encode text to Base64 or decode Base64 to text instantly - 100% free and secure!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- SEO-Optimized Header with Gradient Background -->
+        <x-tool-hero :tool="$tool" />
 
         <!-- Base64 Tool with Tabs -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-green-200 mb-8">

@@ -9,28 +9,7 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Hero Section -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    Decimal ↔ Binary Converter
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Convert decimal numbers to binary and vice versa - 100% free, instant, and accurate!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <x-tool-hero :tool="$tool" icon="decimal-binary-converter" />
 
         <!-- Tool Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-blue-200 mb-8">
@@ -116,12 +95,16 @@
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free Decimal ↔ Binary Converter helps you convert decimal numbers to binary and binary numbers back to decimal instantly. Perfect for programmers, students, and anyone working with number systems. 100% free, client-side processing ensures your data stays private.
+                Our free Decimal ↔ Binary Converter helps you convert decimal numbers to binary and binary numbers back to
+                decimal instantly. Perfect for programmers, students, and anyone working with number systems. 100% free,
+                client-side processing ensures your data stays private.
             </p>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">🔢 What is Binary?</h3>
             <p class="text-gray-700 leading-relaxed mb-6">
-                Binary is a base-2 number system that uses only two digits: 0 and 1. It's the fundamental language of computers, where all data is ultimately represented as sequences of binary digits (bits). Decimal is the base-10 system we use daily with digits 0-9.
+                Binary is a base-2 number system that uses only two digits: 0 and 1. It's the fundamental language of
+                computers, where all data is ultimately represented as sequences of binary digits (bits). Decimal is the
+                base-10 system we use daily with digits 0-9.
             </p>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
@@ -168,11 +151,13 @@
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">💻 Programming</h4>
-                    <p class="text-gray-700 leading-relaxed">Understand binary representation of numbers in computer science and low-level programming</p>
+                    <p class="text-gray-700 leading-relaxed">Understand binary representation of numbers in computer science
+                        and low-level programming</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">📚 Education</h4>
-                    <p class="text-gray-700 leading-relaxed">Learn number systems, binary arithmetic, and computer fundamentals
+                    <p class="text-gray-700 leading-relaxed">Learn number systems, binary arithmetic, and computer
+                        fundamentals
                     </p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
@@ -187,11 +172,13 @@
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">🔐 Cryptography</h4>
-                    <p class="text-gray-700 leading-relaxed">Understand binary operations in encryption and hashing algorithms</p>
+                    <p class="text-gray-700 leading-relaxed">Understand binary operations in encryption and hashing
+                        algorithms</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">📡 Networking</h4>
-                    <p class="text-gray-700 leading-relaxed">Convert IP addresses and subnet masks between decimal and binary</p>
+                    <p class="text-gray-700 leading-relaxed">Convert IP addresses and subnet masks between decimal and
+                        binary</p>
                 </div>
             </div>
 
@@ -230,11 +217,13 @@
                     </div>
                     <div>
                         <p class="font-semibold text-gray-900 mb-2">Common Values:</p>
-                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Decimal: 255 → Binary: 11111111 (8 bits)</p>
+                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Decimal: 255 → Binary: 11111111 (8
+                            bits)</p>
                     </div>
                     <div>
                         <p class="font-semibold text-gray-900 mb-2">Powers of Two:</p>
-                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Decimal: 1024 → Binary: 10000000000</p>
+                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Decimal: 1024 → Binary:
+                            10000000000</p>
                     </div>
                     <div>
                         <p class="font-semibold text-gray-900 mb-2">Reverse Conversion:</p>
@@ -247,24 +236,32 @@
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">Why do computers use binary?</h4>
-                    <p class="text-gray-700 leading-relaxed">Computers use binary because digital circuits have two stable states: on (1) and off (0). This makes binary the most efficient and reliable way to represent data in electronic systems.
+                    <p class="text-gray-700 leading-relaxed">Computers use binary because digital circuits have two stable
+                        states: on (1) and off (0). This makes binary the most efficient and reliable way to represent data
+                        in electronic systems.
                     </p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">How do I convert decimal to binary manually?</h4>
-                    <p class="text-gray-700 leading-relaxed">Divide the decimal number by 2 repeatedly, noting the remainder each time. Read the remainders from bottom to top to get the binary equivalent. For example: 13 ÷ 2 = 6 R1, 6 ÷ 2 = 3 R0, 3 ÷ 2 = 1 R1, 1 ÷ 2 = 0 R1 → Binary: 1101</p>
+                    <p class="text-gray-700 leading-relaxed">Divide the decimal number by 2 repeatedly, noting the remainder
+                        each time. Read the remainders from bottom to top to get the binary equivalent. For example: 13 ÷ 2
+                        = 6 R1, 6 ÷ 2 = 3 R0, 3 ÷ 2 = 1 R1, 1 ÷ 2 = 0 R1 → Binary: 1101</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I convert negative numbers?</h4>
-                    <p class="text-gray-700 leading-relaxed">This tool converts positive integers. For negative numbers, computers use two's complement representation, which requires specifying a bit width (8-bit, 16-bit, etc.).</p>
+                    <p class="text-gray-700 leading-relaxed">This tool converts positive integers. For negative numbers,
+                        computers use two's complement representation, which requires specifying a bit width (8-bit, 16-bit,
+                        etc.).</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">What's the largest number I can convert?</h4>
-                    <p class="text-gray-700 leading-relaxed">JavaScript can safely handle integers up to 2^53 - 1 (9,007,199,254,740,991). Beyond this, precision may be lost.</p>
+                    <p class="text-gray-700 leading-relaxed">JavaScript can safely handle integers up to 2^53 - 1
+                        (9,007,199,254,740,991). Beyond this, precision may be lost.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my data secure?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! All conversions happen entirely in your browser using JavaScript. Your numbers never leave your device or get sent to any server.</p>
+                    <p class="text-gray-700 leading-relaxed">Yes! All conversions happen entirely in your browser using
+                        JavaScript. Your numbers never leave your device or get sent to any server.</p>
                 </div>
             </div>
         </div>

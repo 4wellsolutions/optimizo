@@ -1,31 +1,12 @@
 ﻿@extends('layouts.app')
 
 @section('title', $tool->meta_title)
-@section('meta_description', 
+@section('meta_description', $tool->meta_description)
+
 @section('content')
     <div class="max-w-6xl mx-auto">
-        <!-- SEO-Optimized Header with Gradient Background -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-red-500 via-pink-500 to-purple-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    YouTube Video Downloader
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Download YouTube videos in multiple quality options - HD, SD, and MP3 audio!
-                </p>@include('components.hero-actions')
-        
-            </div>
-        </div>
+        <!-- Header -->
+        <x-tool-hero :tool="$tool" />
 
         <!-- SEO Content -->
         <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 md:p-8 mt-8 border-2 border-red-100 shadow-xl">
@@ -110,31 +91,31 @@
         function displayDownloadOptions(data) {
             $('#videoThumbnail').attr('src', data.thumbnail);
             $('#videoTitle').text(data.title);
-            
+
             const formatsList = $('#formatsList');
             formatsList.empty();
-            
+
             data.formats.forEach(format => {
                 const icon = format.type === 'audio' ? '🎵' : '🎬';
                 const colorClass = format.type === 'audio' ? 'border-purple-200 hover:border-purple-500' : 'border-blue-200 hover:border-blue-500';
-                
+
                 const formatHtml = `
-                    <div class="flex items-center justify-between p-4 border-2 ${colorClass} rounded-xl hover:shadow-lg transition-all duration-300">
-                        <div class="flex items-center gap-4">
-                            <div class="text-3xl">${icon}</div>
-                            <div>
-                                <div class="font-bold text-gray-900">${format.quality}</div>
-                                <div class="text-sm text-gray-600">Format: ${format.format.toUpperCase()} • Size: ${format.size}</div>
+                            <div class="flex items-center justify-between p-4 border-2 ${colorClass} rounded-xl hover:shadow-lg transition-all duration-300">
+                                <div class="flex items-center gap-4">
+                                    <div class="text-3xl">${icon}</div>
+                                    <div>
+                                        <div class="font-bold text-gray-900">${format.quality}</div>
+                                        <div class="text-sm text-gray-600">Format: ${format.format.toUpperCase()} • Size: ${format.size}</div>
+                                    </div>
+                                </div>
+                                <a href="${format.url}" download="${data.title}.${format.format}" class="btn-primary px-6 py-3">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                    <span>Download</span>
+                                </a>
                             </div>
-                        </div>
-                        <a href="${format.url}" download="${data.title}.${format.format}" class="btn-primary px-6 py-3">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-                            </svg>
-                            <span>Download</span>
-                        </a>
-                    </div>
-                `;
+                        `;
                 formatsList.append(formatHtml);
             });
         }

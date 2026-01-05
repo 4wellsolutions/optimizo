@@ -4,8 +4,7 @@
 @section('meta_description', 'Convert UTC/GMT time to your local timezone instantly. Simple, accurate, and free online UTC converter.')
 
 @section('content')
-    <x-tool-hero :tool="$tool" title="UTC to Local Time"
-        description="Convert Universal Time Coordinated (UTC) to your local time." icon="globe" />
+    <x-tool-hero :tool="$tool" />
 
     <div class="max-w-4xl mx-auto mb-16">
         <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
@@ -47,15 +46,7 @@
     <!-- SEO Content -->
     <article class="prose prose-lg prose-indigo max-w-none">
 
-        <!-- Hero Section -->
-        <div class="relative bg-gray-900 rounded-3xl p-8 mb-12 text-white overflow-hidden shadow-2xl">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-indigo-900 opacity-90"></div>
-            <div class="relative z-10">
-                <div class="flex items-center gap-3 text-blue-200 font-mono text-sm tracking-widest mb-4 uppercase">
-                    <span>Universal Time</span>
-                    <span class="w-1 h-1 bg-blue-500 rounded-full"></span>
-                    <span>Local Context</span>
-                </div>
+        <x-tool-hero :tool="$tool" />
                 <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">From Zero to Everywhere</h2>
                 <p class="text-lg text-blue-100 leading-relaxed max-w-2xl">
                     Coordinated Universal Time (UTC) is the world's heartbeat—a single, atomic reference point. This tool

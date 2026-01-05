@@ -9,28 +9,8 @@
 @section('content')
     <div class="max-w-4xl mx-auto">
         <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-emerald-500 via-green-500 to-teal-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
-                    Domain to IP
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium">
-                    Convert domain names to IP addresses!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Header -->
+        <x-tool-hero :tool="$tool" icon="domain-to-ip" />
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-emerald-200 mb-8">

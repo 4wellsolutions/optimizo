@@ -6,59 +6,8 @@
 @section('content')
     <div class="max-w-7xl mx-auto">
         <!-- Enhanced Hero Section -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600 rounded-3xl p-6 md:p-8 mb-8 shadow-2xl">
-            <!-- Animated Background Pattern -->
-            <div class="absolute inset-0 opacity-10">
-                <div class="absolute transform rotate-45 -left-1/4 -top-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-                <div class="absolute transform -rotate-45 -right-1/4 -bottom-1/4 w-96 h-96 bg-white rounded-full blur-3xl">
-                </div>
-            </div>
-
-            <div class="relative z-10 text-center">
-                <div
-                    class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-2xl mb-4 transform hover:scale-110 transition-transform">
-                    <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                    </svg>
-                </div>
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-3 leading-tight">
-                    {{ $tool->name }}
-                </h1>
-                <p class="text-lg md:text-xl text-white/95 font-medium max-w-3xl mx-auto mb-4">
-                    {{ $tool->meta_description }}
-                </p>
-                <div class="flex flex-wrap justify-center gap-3 text-sm text-white/90">
-                    <span class="flex items-center gap-1">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        100% Free
-                    </span>
-                    <span class="flex items-center gap-1">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        No Registration
-                    </span>
-                    <span class="flex items-center gap-1">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Instant Results
-                    </span>
-                </div>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Enhanced Hero Section -->
+        <x-tool-hero :tool="$tool" icon="xml-to-json-converter" />
 
         <!-- Converter Tool with Enhanced Design -->
         <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 mb-8 border border-gray-100">

@@ -6,29 +6,9 @@
 @section('meta_keywords', $tool->meta_keywords)
 @endif
 
-
 @section('content')
     <div class="max-w-4xl mx-auto">
-        <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-cyan-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
-                    Image Compressor
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium">
-                    Compress images while maintaining quality!
-                </p>
-
-            @include('components.hero-actions')
-        </div>
-        </div>
+        <x-tool-hero :tool="$tool" icon="image-compressor" />
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-cyan-200 mb-8">
@@ -127,8 +107,8 @@
                     <span>Download Compressed Image</span>
                 </button>
 
-            @include('components.hero-actions')
-        </div>
+                @include('components.hero-actions')
+            </div>
         </div>
 
         <!-- SEO Content -->

@@ -4,8 +4,7 @@
 @section('meta_description', 'Convert your local time to UTC/GMT instantly. Useful for scheduling international meetings and coordinating global events.')
 
 @section('content')
-    <x-tool-hero :tool="$tool" title="Local to UTC Converter"
-        description="Convert your local time to Coordinated Universal Time (UTC)." icon="globe" />
+    <x-tool-hero :tool="$tool" />
 
     <div class="max-w-4xl mx-auto mb-16">
         <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">

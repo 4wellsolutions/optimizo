@@ -6,28 +6,8 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-red-500 via-pink-500 to-purple-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    YouTube Handle Checker
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Check if your desired @handle is available on YouTube instantly!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Header -->
+        <x-tool-hero :tool="$tool" />
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
@@ -159,10 +139,10 @@
                         // Available
                         resultCard.removeClass('bg-red-50 border-red-200').addClass('bg-green-50 border-2 border-green-200');
                         resultIcon.removeClass('bg-red-500').addClass('bg-green-500').html(`
-                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                `);
+                                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        `);
                         resultTitle.removeClass('text-red-900').addClass('text-green-900').text('Available! 🎉');
                         resultMessage.removeClass('text-red-700').addClass('text-green-700').text('This handle is available for your YouTube channel');
                         handleDisplay.removeClass('text-red-600').addClass('text-green-600').text('@' + handle);
@@ -171,10 +151,10 @@
                         // Not available
                         resultCard.removeClass('bg-green-50 border-green-200').addClass('bg-red-50 border-2 border-red-200');
                         resultIcon.removeClass('bg-green-500').addClass('bg-red-500').html(`
-                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                `);
+                                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        `);
                         resultTitle.removeClass('text-green-900').addClass('text-red-900').text('Not Available');
                         resultMessage.removeClass('text-green-700').addClass('text-red-700').text('This handle is already taken');
                         handleDisplay.removeClass('text-green-600').addClass('text-red-600').text('@' + handle);
@@ -185,10 +165,10 @@
                             suggestionsList.empty();
                             suggestions.forEach(suggestion => {
                                 const badge = $(`
-                                            <button onclick="checkHandle('${suggestion}')" class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold hover:bg-indigo-200 transition-colors">
-                                                @${suggestion}
-                                            </button>
-                                        `);
+                                                    <button onclick="checkHandle('${suggestion}')" class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold hover:bg-indigo-200 transition-colors">
+                                                        @${suggestion}
+                                                    </button>
+                                                `);
                                 suggestionsList.append(badge);
                             });
                         } else {

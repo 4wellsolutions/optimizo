@@ -5,17 +5,7 @@
 
 @section('content')
     <div class="max-w-6xl mx-auto">
-        <div class="relative overflow-hidden bg-gradient-to-br from-green-500 via-emerald-500 to-teal-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" /></svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">CSV to XML Converter</h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto">Convert CSV files to XML format instantly!</p>
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <x-tool-hero :tool="$tool" icon="csv-to-xml" />
 
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-green-200 mb-8">
             <div class="flex flex-wrap gap-3 mb-6">
@@ -234,7 +224,7 @@ Jane,25,London</code></pre>
             try {
                 const lines = input.split('\n').filter(line => line.trim());
                 const headers = lines[0].split(',').map(h => h.trim());
-                let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<data>\n';
+                let xml = '<' + '?xml version="1.0" encoding="UTF-8"?' + '>\n<data>\n';
                 for (let i = 1; i < lines.length; i++) {
                     const values = lines[i].split(',').map(v => v.trim());
                     xml += '  <row>\n';

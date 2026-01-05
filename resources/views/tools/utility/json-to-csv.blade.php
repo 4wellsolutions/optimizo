@@ -6,25 +6,8 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
-                    {{ $tool->name }}
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium">
-                    {{ $tool->meta_description }}
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Header -->
+        <x-tool-hero :tool="$tool" icon="json-to-csv" />
 
         <!-- Converter Tool -->
         <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-8">
@@ -267,25 +250,25 @@
 
         function loadExample() {
             const example = `[
-      {
-        "name": "John Doe",
-        "email": "john@example.com",
-        "age": 30,
-        "address": {
-          "city": "New York",
-          "country": "USA"
-        }
-      },
-      {
-        "name": "Jane Smith",
-        "email": "jane@example.com",
-        "age": 25,
-        "address": {
-          "city": "Los Angeles",
-          "country": "USA"
-        }
-      }
-    ]`;
+          {
+            "name": "John Doe",
+            "email": "john@example.com",
+            "age": 30,
+            "address": {
+              "city": "New York",
+              "country": "USA"
+            }
+          },
+          {
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "age": 25,
+            "address": {
+              "city": "Los Angeles",
+              "country": "USA"
+            }
+          }
+        ]`;
 
             document.getElementById('jsonInput').value = example;
             convertJsonToCsv();

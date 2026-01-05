@@ -6,28 +6,8 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Hero Section -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    IP Lookup Tool
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Get detailed information about any IP address - location, ISP, and more!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Hero Section -->
+        <x-tool-hero :tool="$tool" icon="ip-lookup" />
 
         <!-- Tool Section -->
         <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-8">
@@ -174,13 +154,13 @@
             e.preventDefault();
 
             const formData = new FormData(form);
-            
+
             // Show loading state
             submitBtn.disabled = true;
             submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
             btnText.textContent = 'Looking up...';
             btnIcon.classList.add('animate-spin');
-            
+
             statusMessage.classList.add('hidden');
             resultSection.classList.add('hidden');
 
@@ -224,14 +204,14 @@
             ];
 
             ipDetails.innerHTML = fields.map(field => `
-                                                <div class="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all transform hover:-translate-y-1">
-                                                    <p class="text-sm font-semibold text-gray-600 mb-2 flex items-center gap-2">
-                                                        <span class="text-2xl">${field.icon}</span>
-                                                        ${field.label}
-                                                    </p>
-                                                    <p class="text-xl font-black text-gray-900">${field.value}</p>
-                                                </div>
-                                            `).join('');
+                                                        <div class="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all transform hover:-translate-y-1">
+                                                            <p class="text-sm font-semibold text-gray-600 mb-2 flex items-center gap-2">
+                                                                <span class="text-2xl">${field.icon}</span>
+                                                                ${field.label}
+                                                            </p>
+                                                            <p class="text-xl font-black text-gray-900">${field.value}</p>
+                                                        </div>
+                                                    `).join('');
         }
 
         function showMessage(message, type) {

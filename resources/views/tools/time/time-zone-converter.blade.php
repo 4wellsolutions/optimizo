@@ -106,18 +106,7 @@
     <!-- SEO Content -->
     <article class="prose prose-lg prose-indigo max-w-none">
 
-            <!-- Hero Section -->
-            <div class="relative bg-gray-900 rounded-3xl p-8 mb-12 text-white overflow-hidden shadow-2xl">
-                <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-indigo-900 opacity-90"></div>
-                <!-- World Map Dots Pattern -->
-                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
-
-                <div class="relative z-10">
-                    <div class="flex items-center gap-3 text-blue-200 font-mono text-sm tracking-widest mb-4 uppercase">
-                        <span>Global Synchronization</span>
-                        <span class="w-1 h-1 bg-blue-500 rounded-full"></span>
-                        <span>World Clock</span>
-                    </div>
+            <x-tool-hero :tool="$tool" />
                     <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">Mastering Global Time</h2>
                     <p class="text-lg text-blue-100 leading-relaxed max-w-2xl">
                         In a connected world, time is relative. Whether you're scheduling a cross-border meeting, catching a flight, or launching a global product, precision is non-negotiable.

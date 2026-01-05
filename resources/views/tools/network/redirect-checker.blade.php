@@ -9,28 +9,8 @@
 @section('content')
     <div class="max-w-5xl mx-auto">
         <!-- Hero Section -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-purple-500 via-pink-500 to-red-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    Redirect & HTTP Status Checker
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Analyze redirects, check HTTP status codes, detect loops, and verify canonical domains!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Hero Section -->
+        <x-tool-hero :tool="$tool" icon="redirect-checker" />
 
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-purple-200 mb-8">
@@ -474,7 +454,7 @@
 
                 // data.versions is array of check results (now with full chains)
                 // Append to resultsStore instead of replacing
-                
+
                 // Extract base domain for grouping
                 const parsedUrl = new URL(url.startsWith('http') ? url : 'https://' + url);
                 const baseDomain = parsedUrl.hostname.replace(/^www\./, '');
@@ -559,12 +539,12 @@
                     const headerEl = document.createElement('div');
                     headerEl.className = 'mt-6 mb-3 flex items-center gap-2 px-1';
                     headerEl.innerHTML = `
-                        <div class="h-px bg-gray-200 flex-grow"></div>
-                        <span class="text-sm font-bold text-gray-500 uppercase tracking-wider bg-gray-50 px-3 rounded-full border border-gray-200">
-                            ${result.baseDomain}
-                        </span>
-                        <div class="h-px bg-gray-200 flex-grow"></div>
-                    `;
+                                <div class="h-px bg-gray-200 flex-grow"></div>
+                                <span class="text-sm font-bold text-gray-500 uppercase tracking-wider bg-gray-50 px-3 rounded-full border border-gray-200">
+                                    ${result.baseDomain}
+                                </span>
+                                <div class="h-px bg-gray-200 flex-grow"></div>
+                            `;
                     container.appendChild(headerEl);
                     lastBaseDomain = result.baseDomain;
                 }
@@ -592,30 +572,30 @@
                 const hasChain = chain.length > 1;
 
                 resultEl.innerHTML = `
-                                        <div class="p-4 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors" onclick="toggleChain(${index})">
-                                            <div class="flex items-center gap-3 overflow-hidden">
-                                                <div class="text-gray-400">
-                                                    ${hasChain ? '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>' : ''}
+                                                <div class="p-4 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors" onclick="toggleChain(${index})">
+                                                    <div class="flex items-center gap-3 overflow-hidden">
+                                                        <div class="text-gray-400">
+                                                            ${hasChain ? '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>' : ''}
+                                                        </div>
+                                                        <div class="font-mono text-sm text-gray-700 truncate pr-4">${displayUrl}</div>
+                                                    </div>
+                                                    <div class="flex items-center gap-3 shrink-0">
+                                                        ${hasChain ? `<button class="text-gray-400 hover:text-purple-600 transition-transform duration-200" id="chevron-${index}">
+                                                            <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                                        </button>` : ''}
+                                                        <span class="px-2.5 py-1 rounded text-xs font-bold ${finalStatusClass}">${finalStatus}</span>
+                                                        <button onclick="copyToClipboard('${displayUrl}', event)" class="text-gray-400 hover:text-gray-600" title="Copy URL">
+                                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                                <div class="font-mono text-sm text-gray-700 truncate pr-4">${displayUrl}</div>
-                                            </div>
-                                            <div class="flex items-center gap-3 shrink-0">
-                                                ${hasChain ? `<button class="text-gray-400 hover:text-purple-600 transition-transform duration-200" id="chevron-${index}">
-                                                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                                                </button>` : ''}
-                                                <span class="px-2.5 py-1 rounded text-xs font-bold ${finalStatusClass}">${finalStatus}</span>
-                                                <button onclick="copyToClipboard('${displayUrl}', event)" class="text-gray-400 hover:text-gray-600" title="Copy URL">
-                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
-                                                </button>
-                                            </div>
-                                        </div>
 
-                                        ${hasChain ? `
-                                        <div id="chain-${index}" class="hidden bg-gray-50 border-t border-gray-100">
-                                            ${renderChainSteps(chain)}
-                                        </div>
-                                        ` : ''}
-                                    `;
+                                                ${hasChain ? `
+                                                <div id="chain-${index}" class="hidden bg-gray-50 border-t border-gray-100">
+                                                    ${renderChainSteps(chain)}
+                                                </div>
+                                                ` : ''}
+                                            `;
 
                 container.appendChild(resultEl);
             });
@@ -623,16 +603,16 @@
 
         function renderChainSteps(chain) {
             return chain.map((hop, i) => `
-                                    <div class="p-3 pl-8 border-b border-gray-100 last:border-0 flex items-center justify-between hover:bg-gray-100 transition-colors">
-                                        <div class="flex items-center gap-3 overflow-hidden">
-                                            <div class="${hop.isRedirect ? 'text-blue-500' : (hop.isSuccess ? 'text-green-500' : 'text-gray-400')}">
-                                                 ${getStatusIconSVG(hop)}
+                                            <div class="p-3 pl-8 border-b border-gray-100 last:border-0 flex items-center justify-between hover:bg-gray-100 transition-colors">
+                                                <div class="flex items-center gap-3 overflow-hidden">
+                                                    <div class="${hop.isRedirect ? 'text-blue-500' : (hop.isSuccess ? 'text-green-500' : 'text-gray-400')}">
+                                                         ${getStatusIconSVG(hop)}
+                                                    </div>
+                                                    <div class="font-mono text-xs text-gray-600 truncate">${hop.url}</div>
+                                                </div>
+                                                ${hop.status !== '???' ? `<span class="px-2 py-0.5 rounded text-[10px] font-bold ${getStatusBadgeClass(hop)}">${hop.status}</span>` : ''}
                                             </div>
-                                            <div class="font-mono text-xs text-gray-600 truncate">${hop.url}</div>
-                                        </div>
-                                        ${hop.status !== '???' ? `<span class="px-2 py-0.5 rounded text-[10px] font-bold ${getStatusBadgeClass(hop)}">${hop.status}</span>` : ''}
-                                    </div>
-                                `).join('');
+                                        `).join('');
         }
 
         function toggleChain(index) {

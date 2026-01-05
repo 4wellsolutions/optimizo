@@ -24,6 +24,8 @@ class ToolData
             [
                 'name' => 'Image Converter',
                 'slug' => 'image-converter',
+                'icon_name' => 'image-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h4v4H4V4m6 0h4v4h-4V4m6 0h4v4h-4V4M4 10h4v4H4v-4m6 0h4v4h-4v-4m6 0h4v4h-4v-4M4 16h4v4H4v-4m6 0h4v4h-4v-4m6 0h4v4h-4v-4z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -39,6 +41,8 @@ class ToolData
             [
                 'name' => 'JPG to PNG Converter',
                 'slug' => 'jpg-to-png-converter',
+                'icon_name' => 'jpg-to-png-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -54,6 +58,8 @@ class ToolData
             [
                 'name' => 'PNG to JPG Converter',
                 'slug' => 'png-to-jpg-converter',
+                'icon_name' => 'png-to-jpg-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -69,6 +75,8 @@ class ToolData
             [
                 'name' => 'JPG to WebP Converter',
                 'slug' => 'jpg-to-webp-converter',
+                'icon_name' => 'jpg-to-webp-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -84,6 +92,8 @@ class ToolData
             [
                 'name' => 'WebP to JPG Converter',
                 'slug' => 'webp-to-jpg-converter',
+                'icon_name' => 'webp-to-jpg-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -99,6 +109,8 @@ class ToolData
             [
                 'name' => 'PNG to WebP Converter',
                 'slug' => 'png-to-webp-converter',
+                'icon_name' => 'png-to-webp-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -114,6 +126,8 @@ class ToolData
             [
                 'name' => 'Image to Base64',
                 'slug' => 'image-to-base64-converter',
+                'icon_name' => 'image-to-base64-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -129,6 +143,8 @@ class ToolData
             [
                 'name' => 'Base64 to Image',
                 'slug' => 'base64-to-image-converter',
+                'icon_name' => 'base64-to-image-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -144,6 +160,8 @@ class ToolData
             [
                 'name' => 'SVG to PNG Converter',
                 'slug' => 'svg-to-png-converter',
+                'icon_name' => 'svg-to-png-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -159,6 +177,8 @@ class ToolData
             [
                 'name' => 'SVG to JPG Converter',
                 'slug' => 'svg-to-jpg-converter',
+                'icon_name' => 'svg-to-jpg-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -174,6 +194,8 @@ class ToolData
             [
                 'name' => 'HEIC to JPG Converter',
                 'slug' => 'heic-to-jpg-converter',
+                'icon_name' => 'heic-to-jpg-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -189,6 +211,8 @@ class ToolData
             [
                 'name' => 'ICO Converter',
                 'slug' => 'ico-converter',
+                'icon_name' => 'ico-converter',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageToolsController',
@@ -204,6 +228,8 @@ class ToolData
             [
                 'name' => 'Image Compressor',
                 'slug' => 'image-compressor',
+                'icon_name' => 'image-compressor',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16M12 4v16m-4-4l4 4 4-4M8 8l4-4 4 4"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\ImageCompressorController',
@@ -219,6 +245,8 @@ class ToolData
             [
                 'name' => 'QR Code Generator',
                 'slug' => 'qr-code-generator',
+                'icon_name' => 'qr-code-generator',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h2M4 8h4m12 0h2M4 16h4m12 0h2\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\QrGeneratorController',
@@ -240,6 +268,8 @@ class ToolData
             [
                 'name' => 'What Is My IP',
                 'slug' => 'what-is-my-ip',
+                'icon_name' => 'what-is-my-ip',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'IP Tools',
                 'controller' => 'Tools\Network\WhatIsMyIpController',
@@ -255,6 +285,8 @@ class ToolData
             [
                 'name' => 'What Is My ISP',
                 'slug' => 'what-is-my-isp',
+                'icon_name' => 'what-is-my-isp',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-6-8h.01M9 16h.01"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'IP Tools',
                 'controller' => 'Tools\Network\WhatIsMyIspController',
@@ -270,6 +302,8 @@ class ToolData
             [
                 'name' => 'Domain to IP',
                 'slug' => 'domain-to-ip',
+                'icon_name' => 'domain-to-ip',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'Domain Tools',
                 'controller' => 'Tools\Network\DomainToIpController',
@@ -285,6 +319,8 @@ class ToolData
             [
                 'name' => 'IP Lookup',
                 'slug' => 'ip-lookup',
+                'icon_name' => 'ip-lookup',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'IP Tools',
                 'controller' => 'Tools\Network\IpLookupController',
@@ -300,6 +336,8 @@ class ToolData
             [
                 'name' => 'DNS Lookup',
                 'slug' => 'dns-lookup',
+                'icon_name' => 'dns-lookup',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'Domain Tools',
                 'controller' => 'Tools\Network\DnsLookupController',
@@ -315,6 +353,8 @@ class ToolData
             [
                 'name' => 'WHOIS Lookup',
                 'slug' => 'whois-lookup',
+                'icon_name' => 'whois-lookup',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'Domain Tools',
                 'controller' => 'Tools\Network\WhoisLookupController',
@@ -330,6 +370,8 @@ class ToolData
             [
                 'name' => 'Ping Test',
                 'slug' => 'ping-test',
+                'icon_name' => 'ping-test',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-6-8h.01M9 16h.01"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'Network Diagnostics',
                 'controller' => 'Tools\Network\PingTestController',
@@ -345,6 +387,8 @@ class ToolData
             [
                 'name' => 'Traceroute',
                 'slug' => 'traceroute',
+                'icon_name' => 'traceroute',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'Network Diagnostics',
                 'controller' => 'Tools\Network\TracerouteController',
@@ -360,6 +404,8 @@ class ToolData
             [
                 'name' => 'Port Checker',
                 'slug' => 'port-checker',
+                'icon_name' => 'port-checker',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-6-8h.01M9 16h.01"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'Network Diagnostics',
                 'controller' => 'Tools\Network\PortCheckerController',
@@ -375,6 +421,8 @@ class ToolData
             [
                 'name' => 'Reverse DNS Lookup',
                 'slug' => 'reverse-dns',
+                'icon_name' => 'reverse-dns',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
                 'category' => 'network',
                 'subcategory' => 'Domain Tools',
                 'controller' => 'Tools\Network\ReverseDnsController',
@@ -411,6 +459,8 @@ class ToolData
             [
                 'name' => 'RGB to HEX Converter',
                 'slug' => 'rgb-hex-converter',
+                'icon_name' => 'rgb-hex-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Dev Tools',
                 'controller' => 'Tools\Utility\RgbHexConverterController',
@@ -426,6 +476,8 @@ class ToolData
             [
                 'name' => 'Slug Generator',
                 'slug' => 'slug-generator',
+                'icon_name' => 'slug-generator',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Text Tools',
                 'controller' => 'Tools\Utility\SlugGeneratorController',
@@ -441,6 +493,8 @@ class ToolData
             [
                 'name' => 'MD5 Generator',
                 'slug' => 'md5-generator',
+                'icon_name' => 'md5-generator',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Security Tools',
                 'controller' => 'Tools\Utility\Md5GeneratorController',
@@ -471,6 +525,8 @@ class ToolData
             [
                 'name' => 'Username Checker',
                 'slug' => 'username-checker',
+                'icon_name' => 'username-checker',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Social Tools',
                 'controller' => 'Tools\Utility\UsernameCheckerController',
@@ -486,6 +542,8 @@ class ToolData
             [
                 'name' => 'Password Generator',
                 'slug' => 'password-generator',
+                'icon_name' => 'password-generator',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Security Tools',
                 'controller' => 'Tools\Utility\PasswordGeneratorController',
@@ -501,6 +559,8 @@ class ToolData
             [
                 'name' => 'JSON Formatter',
                 'slug' => 'json-formatter',
+                'icon_name' => 'json-formatter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Dev Tools',
                 'controller' => 'Tools\Utility\JsonFormatterController',
@@ -531,6 +591,8 @@ class ToolData
             [
                 'name' => 'HTML Viewer',
                 'slug' => 'html-viewer',
+                'icon_name' => 'html-viewer',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Dev Tools',
                 'controller' => 'Tools\Utility\HtmlViewerController',
@@ -546,6 +608,8 @@ class ToolData
             [
                 'name' => 'JSON Parser',
                 'slug' => 'json-parser',
+                'icon_name' => 'json-parser',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Dev Tools',
                 'controller' => 'Tools\Utility\JsonParserController',
@@ -561,6 +625,8 @@ class ToolData
             [
                 'name' => 'Code Formatter',
                 'slug' => 'code-formatter',
+                'icon_name' => 'code-formatter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Dev Tools',
                 'controller' => 'Tools\Utility\CodeFormatterController',
@@ -576,6 +642,8 @@ class ToolData
             [
                 'name' => 'CSS Minifier',
                 'slug' => 'css-minifier',
+                'icon_name' => 'css-minifier',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Dev Tools',
                 'controller' => 'Tools\Utility\CssMinifierController',
@@ -591,6 +659,8 @@ class ToolData
             [
                 'name' => 'JavaScript Minifier',
                 'slug' => 'js-minifier',
+                'icon_name' => 'js-minifier',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Dev Tools',
                 'controller' => 'Tools\Utility\JsMinifierController',
@@ -606,6 +676,8 @@ class ToolData
             [
                 'name' => 'HTML Minifier',
                 'slug' => 'html-minifier',
+                'icon_name' => 'html-minifier',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Dev Tools',
                 'controller' => 'Tools\Utility\HtmlMinifierController',
@@ -620,6 +692,8 @@ class ToolData
             ],
             [
                 'slug' => 'ascii-converter',
+                'icon_name' => 'ascii-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"/></svg>',
                 'name' => 'ASCII Converter',
                 'category' => 'utility',
                 'subcategory' => 'Encoding/Decoding Tools',
@@ -633,6 +707,8 @@ class ToolData
             ],
             [
                 'slug' => 'binary-hex-converter',
+                'icon_name' => 'binary-hex-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4\"/></svg>',
                 'name' => 'Binary to Hexadecimal Converter',
                 'category' => 'utility',
                 'subcategory' => 'Number System Converters',
@@ -646,6 +722,8 @@ class ToolData
             ],
             [
                 'slug' => 'camel-case-converter',
+                'icon_name' => 'camel-case-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 6h16M4 12h16M4 18h7\"/></svg>',
                 'name' => 'Camel Case Converter',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -672,6 +750,8 @@ class ToolData
             ],
             [
                 'slug' => 'decimal-binary-converter',
+                'icon_name' => 'decimal-binary-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4\"/></svg>',
                 'name' => 'Decimal to Binary Converter',
                 'category' => 'utility',
                 'subcategory' => 'Number System Converters',
@@ -685,6 +765,8 @@ class ToolData
             ],
             [
                 'slug' => 'decimal-hex-converter',
+                'icon_name' => 'decimal-hex-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4\"/></svg>',
                 'name' => 'Decimal to Hexadecimal Converter',
                 'category' => 'utility',
                 'subcategory' => 'Number System Converters',
@@ -698,6 +780,8 @@ class ToolData
             ],
             [
                 'slug' => 'decimal-octal-converter',
+                'icon_name' => 'decimal-octal-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4\"/></svg>',
                 'name' => 'Decimal to Octal Converter',
                 'category' => 'utility',
                 'subcategory' => 'Number System Converters',
@@ -776,6 +860,8 @@ class ToolData
             ],
             [
                 'slug' => 'jwt-decoder',
+                'icon_name' => 'jwt-decoder',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z\"/></svg>',
                 'name' => 'JWT Decoder',
                 'category' => 'utility',
                 'subcategory' => 'Encoding/Decoding Tools',
@@ -789,6 +875,8 @@ class ToolData
             ],
             [
                 'slug' => 'kebab-case-converter',
+                'icon_name' => 'kebab-case-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 6h16M4 12h16M4 18h7\"/></svg>',
                 'name' => 'Kebab Case Converter',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -815,6 +903,8 @@ class ToolData
             ],
             [
                 'slug' => 'morse-to-text-converter',
+                'icon_name' => 'morse-to-text-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4\"/></svg>',
                 'name' => 'Morse Code to Text',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -828,6 +918,8 @@ class ToolData
             ],
             [
                 'slug' => 'number-base-converter',
+                'icon_name' => 'number-base-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4\"/></svg>',
                 'name' => 'Number Base Converter',
                 'category' => 'utility',
                 'subcategory' => 'Number System Converters',
@@ -841,6 +933,8 @@ class ToolData
             ],
             [
                 'slug' => 'pascal-case-converter',
+                'icon_name' => 'pascal-case-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 6h16M4 12h16M4 18h7\"/></svg>',
                 'name' => 'Pascal Case Converter',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -854,6 +948,8 @@ class ToolData
             ],
             [
                 'slug' => 'sentence-case-converter',
+                'icon_name' => 'sentence-case-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 6h16M4 12h16M4 18h7\"/></svg>',
                 'name' => 'Sentence Case Converter',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -867,6 +963,8 @@ class ToolData
             ],
             [
                 'slug' => 'snake-case-converter',
+                'icon_name' => 'snake-case-converter',
+                'icon_svg' => ' <svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 6h16M4 12h16M4 18h7\"/></svg>',
                 'name' => 'Snake Case Converter',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -880,6 +978,8 @@ class ToolData
             ],
             [
                 'slug' => 'studly-case-converter',
+                'icon_name' => 'studly-case-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 6h16M4 12h16M4 18h7\"/></svg>',
                 'name' => 'Studly Case Converter',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -893,6 +993,8 @@ class ToolData
             ],
             [
                 'slug' => 'text-reverser',
+                'icon_name' => 'text-reverser',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4\"/></svg>',
                 'name' => 'Text Reverser',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -906,6 +1008,8 @@ class ToolData
             ],
             [
                 'slug' => 'text-to-morse-converter',
+                'icon_name' => 'text-to-morse-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4\"/></svg>',
                 'name' => 'Text to Morse Code',
                 'category' => 'utility',
                 'subcategory' => 'Text & String Converters',
@@ -932,6 +1036,8 @@ class ToolData
             ],
             [
                 'slug' => 'unicode-encoder-decoder',
+                'icon_name' => 'unicode-encoder-decoder',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z\"/></svg>',
                 'name' => 'Unicode Encoder/Decoder',
                 'category' => 'utility',
                 'subcategory' => 'Encoding/Decoding Tools',
@@ -965,6 +1071,8 @@ class ToolData
             [
                 'name' => 'YouTube Monetization Checker',
                 'slug' => 'youtube-monetization-checker',
+                'icon_name' => 'youtube-monetization-checker',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Monetization & Analytics',
                 'controller' => 'Tools\YouTube\MonetizationCheckerController',
@@ -980,6 +1088,8 @@ class ToolData
             [
                 'name' => 'YouTube Thumbnail Downloader',
                 'slug' => 'youtube-thumbnail-downloader',
+                'icon_name' => 'youtube-thumbnail-downloader',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Video Tools',
                 'controller' => 'Tools\YouTube\ThumbnailDownloaderController',
@@ -995,6 +1105,8 @@ class ToolData
             [
                 'name' => 'YouTube Video Data Extractor',
                 'slug' => 'youtube-video-data-extractor',
+                'icon_name' => 'youtube-video-data-extractor',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Video Tools',
                 'controller' => 'Tools\YouTube\VideoDataExtractorController',
@@ -1010,6 +1122,8 @@ class ToolData
             [
                 'name' => 'YouTube Tags Generator',
                 'slug' => 'youtube-tag-generator',
+                'icon_name' => 'youtube-tag-generator',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Video Tools',
                 'controller' => 'Tools\YouTube\TagsGeneratorController',
@@ -1025,6 +1139,8 @@ class ToolData
             [
                 'name' => 'YouTube Channel Data Extractor',
                 'slug' => 'youtube-channel-data-extractor',
+                'icon_name' => 'youtube-channel-data-extractor',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Channel Tools',
                 'controller' => 'Tools\YouTube\ChannelDataExtractorController',
@@ -1040,6 +1156,8 @@ class ToolData
             [
                 'name' => 'YouTube Handle Checker',
                 'slug' => 'youtube-handle-checker',
+                'icon_name' => 'youtube-handle-checker',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Channel Tools',
                 'controller' => 'Tools\YouTube\HandleCheckerController',
@@ -1055,6 +1173,8 @@ class ToolData
             [
                 'name' => 'YouTube Video Tags Extractor',
                 'slug' => 'youtube-video-tags-extractor',
+                'icon_name' => 'youtube-video-tags-extractor',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Video Tools',
                 'controller' => 'Tools\YouTube\VideoTagsExtractorController',
@@ -1070,6 +1190,8 @@ class ToolData
             [
                 'name' => 'YouTube Channel ID Finder',
                 'slug' => 'youtube-channel-id-finder',
+                'icon_name' => 'youtube-channel-id-finder',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M14.752 11.168l-6.197-3.582A1 1 0 007 8.382v7.236a1 1 0 001.555.832l6.197-3.582a1 1 0 000-1.664z\"/><path d=\"M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Channel Tools',
                 'controller' => 'Tools\YouTube\ChannelIdFinderController',
@@ -1085,6 +1207,8 @@ class ToolData
             [
                 'name' => 'YouTube Earnings Calculator',
                 'slug' => 'youtube-earnings-calculator',
+                'icon_name' => 'youtube-earnings-calculator',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>',
                 'category' => 'youtube',
                 'subcategory' => 'Monetization & Analytics',
                 'controller' => 'Tools\YouTube\EarningsCalculatorController',
@@ -1136,6 +1260,8 @@ class ToolData
             [
                 'name' => 'Word Counter',
                 'slug' => 'word-counter',
+                'icon_name' => 'word-counter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 6h16M4 12h16M4 18h7\"/></svg>',
                 'category' => 'seo',
                 'subcategory' => 'Analysis Tools',
                 'controller' => 'Tools\SEO\WordCounterController',
@@ -1151,6 +1277,8 @@ class ToolData
             [
                 'name' => 'Redirect & HTTP Status Checker',
                 'slug' => 'redirect-checker',
+                'icon_name' => 'redirect-checker',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>',
                 'category' => 'seo',
                 'subcategory' => 'Technical SEO',
                 'controller' => 'Tools\Network\RedirectCheckerController',
@@ -1165,6 +1293,8 @@ class ToolData
             ],
             [
                 'slug' => 'bing-serp-checker',
+                'icon_name' => 'bing-serp-checker',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7\"/></svg>',
                 'name' => 'Bing SERP Checker',
                 'category' => 'seo',
                 'subcategory' => 'Google SERP Checker',
@@ -1178,6 +1308,8 @@ class ToolData
             ],
             [
                 'slug' => 'broken-links-checker',
+                'icon_name' => 'broken-links-checker',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1\"/></svg>',
                 'name' => 'Broken Links Checker',
                 'category' => 'seo',
                 'subcategory' => 'Broken Links Checker',
@@ -1191,6 +1323,8 @@ class ToolData
             ],
             [
                 'slug' => 'google-serp-checker',
+                'icon_name' => 'google-serp-checker',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7\"/></svg>',
                 'name' => 'Google SERP Checker',
                 'category' => 'seo',
                 'subcategory' => 'Google SERP Checker',
@@ -1204,6 +1338,8 @@ class ToolData
             ],
             [
                 'slug' => 'on-page-seo-checker',
+                'icon_name' => 'on-page-seo-checker',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>',
                 'name' => 'On-Page SEO Checker',
                 'category' => 'seo',
                 'subcategory' => 'On-Page SEO Checker',
@@ -1217,6 +1353,8 @@ class ToolData
             ],
             [
                 'slug' => 'yahoo-serp-checker',
+                'icon_name' => 'yahoo-serp-checker',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7\"/></svg>',
                 'name' => 'Yahoo SERP Checker',
                 'category' => 'seo',
                 'subcategory' => 'Google SERP Checker',
@@ -1237,6 +1375,8 @@ class ToolData
             [
                 'name' => 'Excel to CSV Converter',
                 'slug' => 'excel-to-csv',
+                'icon_name' => 'excel-to-csv',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Spreadsheet Tools',
                 'controller' => 'SpreadsheetConverterController',
@@ -1252,6 +1392,8 @@ class ToolData
             [
                 'name' => 'CSV to Excel Converter',
                 'slug' => 'csv-to-excel',
+                'icon_name' => 'csv-to-excel',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Spreadsheet Tools',
                 'controller' => 'SpreadsheetConverterController',
@@ -1267,6 +1409,8 @@ class ToolData
             [
                 'name' => 'XLS to XLSX Converter',
                 'slug' => 'xls-to-xlsx',
+                'icon_name' => 'xls-to-xlsx',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Spreadsheet Tools',
                 'controller' => 'SpreadsheetConverterController',
@@ -1282,6 +1426,8 @@ class ToolData
             [
                 'name' => 'XLSX to XLS Converter',
                 'slug' => 'xlsx-to-xls',
+                'icon_name' => 'xlsx-to-xls',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Spreadsheet Tools',
                 'controller' => 'SpreadsheetConverterController',
@@ -1297,6 +1443,8 @@ class ToolData
             [
                 'name' => 'Google Sheets to Excel',
                 'slug' => 'google-sheets-to-excel',
+                'icon_name' => 'google-sheets-to-excel',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Spreadsheet Tools',
                 'controller' => 'SpreadsheetConverterController',
@@ -1312,6 +1460,8 @@ class ToolData
             [
                 'name' => 'CSV to SQL Converter',
                 'slug' => 'csv-to-sql',
+                'icon_name' => 'csv-to-sql',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4\"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Spreadsheet Tools',
                 'controller' => 'SpreadsheetConverterController',
@@ -1333,6 +1483,8 @@ class ToolData
             [
                 'name' => 'PDF to Word Converter',
                 'slug' => 'pdf-to-word',
+                'icon_name' => 'pdf-to-word',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z\"/></svg>',
                 'description' => 'Convert PDF documents to editable Microsoft Word (DOC/DOCX) files.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1349,6 +1501,8 @@ class ToolData
             [
                 'name' => 'Word to PDF Converter',
                 'slug' => 'word-to-pdf',
+                'icon_name' => 'word-to-pdf',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z\"/></svg>',
                 'description' => 'Convert Microsoft Word (DOC/DOCX) documents to PDF format.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1364,6 +1518,8 @@ class ToolData
             [
                 'name' => 'PDF to Excel Converter',
                 'slug' => 'pdf-to-excel',
+                'icon_name' => 'pdf-to-excel',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z\"/></svg>',
                 'description' => 'Convert PDF tables to editable Microsoft Excel (XLS/XLSX) spreadsheets.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1379,6 +1535,8 @@ class ToolData
             [
                 'name' => 'Excel to PDF Converter',
                 'slug' => 'excel-to-pdf',
+                'icon_name' => 'excel-to-pdf',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z\"/></svg>',
                 'description' => 'Convert Microsoft Excel (XLS/XLSX) spreadsheets to PDF format.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1424,6 +1582,8 @@ class ToolData
             [
                 'name' => 'PDF to JPG Converter',
                 'slug' => 'pdf-to-jpg',
+                'icon_name' => 'pdf-to-jpg',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z\"/></svg>',
                 'description' => 'Convert PDF pages to high-quality JPG images.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1439,6 +1599,8 @@ class ToolData
             [
                 'name' => 'JPG to PDF Converter',
                 'slug' => 'jpg-to-pdf',
+                'icon_name' => 'jpg-to-pdf',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z\"/></svg>',
                 'description' => 'Convert JPG images to PDF format.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1454,6 +1616,8 @@ class ToolData
             [
                 'name' => 'PDF Compressor',
                 'slug' => 'pdf-compressor',
+                'icon_name' => 'pdf-compressor',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M4 8h16M4 16h16M12 4v16m-4-4l4 4 4-4M8 8l4-4 4 4\"/></svg>',
                 'description' => 'Compress PDF files to reduce file size without losing quality.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1469,6 +1633,8 @@ class ToolData
             [
                 'name' => 'PDF Merger',
                 'slug' => 'pdf-merger',
+                'icon_name' => 'pdf-merger',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2\"/></svg>',
                 'description' => 'Combine multiple PDF files into one single document.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1484,6 +1650,8 @@ class ToolData
             [
                 'name' => 'PDF Splitter',
                 'slug' => 'pdf-splitter',
+                'icon_name' => 'pdf-splitter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z\"/></svg>',
                 'description' => 'Split a PDF file into multiple separate documents.',
                 'category' => 'utility',
                 'subcategory' => 'Document Tools',
@@ -1505,6 +1673,8 @@ class ToolData
             [
                 'name' => 'Time Zone Converter',
                 'slug' => 'time-zone-converter',
+                'icon_name' => 'time-zone-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>',
                 'description' => 'Convert time instantly between any global time zones.',
                 'category' => 'utility',
                 'subcategory' => 'Time & Date Tools',
@@ -1520,6 +1690,8 @@ class ToolData
             [
                 'name' => 'Epoch Time Converter',
                 'slug' => 'epoch-time-converter',
+                'icon_name' => 'epoch-time-converter',
+                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>',
                 'description' => 'Convert Unix timestamps to human-readable dates and vice versa.',
                 'category' => 'utility',
                 'subcategory' => 'Time & Date Tools',

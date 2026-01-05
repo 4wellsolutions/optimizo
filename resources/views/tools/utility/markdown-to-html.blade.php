@@ -5,16 +5,7 @@
 
 @section('content')
     <div class="max-w-6xl mx-auto">
-        <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-blue-500 via-cyan-500 to-purple-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
-                </div>
+        <x-tool-hero :tool="$tool" />
                 <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
                     {{ $tool->name }}
                 </h1>

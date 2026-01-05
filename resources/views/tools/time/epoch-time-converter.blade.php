@@ -4,8 +4,7 @@
 @section('meta_description', 'Free online Epoch Time Converter. Convert Unix timestamps to human-readable dates and vice versa. View the current epoch time instantly.')
 
 @section('content')
-    <x-tool-hero :tool="$tool" title="Epoch Time Converter"
-        description="Convert Unix timestamps to human-readable dates and vice versa." icon="server" />
+    <x-tool-hero :tool="$tool" />
 
     <!-- Current Epoch Hero -->
     <div
@@ -137,18 +136,7 @@
     <!-- SEO Content -->
     <article class="prose prose-lg prose-indigo max-w-none">
 
-            <!-- Hero Section -->
-            <div class="relative bg-gray-900 rounded-3xl p-8 mb-12 text-white overflow-hidden shadow-2xl">
-                <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-black opacity-90"></div>
-                 <!-- Matrix-like background effect -->
-                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#4f46e5 1px, transparent 1px); background-size: 20px 20px;"></div>
-
-                <div class="relative z-10">
-                    <div class="flex items-center gap-3 text-indigo-300 font-mono text-sm tracking-widest mb-4 uppercase">
-                        <span>System Time</span>
-                        <span class="w-1 h-1 bg-indigo-500 rounded-full"></span>
-                        <span>The Beginning</span>
-                    </div>
+            <x-tool-hero :tool="$tool" />
                     <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">The Pulse of Digital Time</h2>
                     <p class="text-lg text-gray-300 leading-relaxed max-w-2xl">
                         Unix Time is the universal clock of the internet. It's a single, ticking number that connects every server, database, and smartphone on Earth to the same precise moment in history.

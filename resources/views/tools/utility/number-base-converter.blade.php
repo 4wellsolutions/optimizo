@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', $tool->meta_title)
 @section('meta_description', $tool->meta_description)
@@ -9,28 +9,8 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Hero Section -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    Universal Number Base Converter
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Convert numbers between any base from 2 to 36 - Binary, Octal, Decimal, Hexadecimal, and more!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Hero Section -->
+        <x-tool-hero :tool="$tool" />
 
         <!-- Tool Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-blue-200 mb-8">
@@ -482,9 +462,9 @@
                 if (isNegative) result = '-' + result;
 
                 output.value = result;
-                showStatus(`✓ Converted from base ${fromBase} to base ${toBase} successfully`, 'success');
+                showStatus(`? Converted from base ${fromBase} to base ${toBase} successfully`, 'success');
             } catch (error) {
-                showStatus('✗ Error: ' + error.message, 'error');
+                showStatus('? Error: ' + error.message, 'error');
             }
         }
 
@@ -502,7 +482,7 @@
             }
             output.select();
             document.execCommand('copy');
-            showStatus('✓ Copied to clipboard', 'success');
+            showStatus('? Copied to clipboard', 'success');
         }
 
         function showStatus(message, type) {

@@ -73,6 +73,57 @@
                     <small class="text-muted">Comma-separated keywords</small>
                 </div>
 
+                {{-- Icon Management Section --}}
+                <div class="card mb-3 bg-light">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-icons"></i> Icon Configuration</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="icon_name" class="form-label">Icon Name</label>
+                            <input type="text" class="form-control @error('icon_name') is-invalid @enderror" 
+                                   id="icon_name" name="icon_name" value="{{ old('icon_name', $tool->icon_name) }}">
+                            @error('icon_name')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                            <small class="text-muted">Optional icon identifier (e.g., "image-compressor")</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="icon_svg" class="form-label">Icon SVG Code</label>
+                            <textarea class="form-control @error('icon_svg') is-invalid @enderror font-monospace" 
+                                      id="icon_svg" name="icon_svg" rows="8" 
+                                      placeholder='<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">...</svg>'
+                                      style="font-size: 0.875rem;">{{ old('icon_svg', $tool->icon_svg) }}</textarea>
+                            @error('icon_svg')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                            <small class="text-muted d-block mt-1">
+                                <i class="fas fa-info-circle"></i> Paste SVG markup here. Use "currentColor" for fill/stroke to inherit icon color.
+                            </small>
+                        </div>
+
+                        @if($tool->icon_svg)
+                        <div class="mb-3">
+                            <label class="form-label">Icon Preview</label>
+                            <div class="p-4 border rounded bg-white">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="flex-shrink-0" style="width: 48px; height: 48px; display: flex; align-items: center; justify-center;">
+                                        <div class="text-primary" style="width: 36px; height: 36px;">
+                                            {!! $tool->icon_svg !!}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0 fw-bold">{{ $tool->name }}</p>
+                                        <small class="text-muted">Icon preview as it appears in hero section</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-md-4">
                         <div class="mb-3">

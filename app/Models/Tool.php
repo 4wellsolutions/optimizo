@@ -9,6 +9,8 @@ class Tool extends Model
     protected $fillable = [
         'name',
         'slug',
+        'icon_svg', // SVG markup for icon
+        'icon_name', // Icon identifier
         'description', // Tool short description
         'content', // Full SEO content
         'category',

@@ -7,29 +7,8 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         {{-- Hero Section --}}
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-purple-500 via-pink-500 to-rose-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                        </path>
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    Sentence Case Converter
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Convert text to sentence case format instantly - 100% free and accurate!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        {{-- Hero Section --}}
+        <x-tool-hero :tool="$tool" />
 
 
         {{-- Tool Section --}}
@@ -110,32 +89,41 @@
 
         <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-            <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
+            <div
+                class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
                 <div class="text-3xl mb-3">🎯</div>
                 <h4 class="font-bold text-gray-900 mb-2">Automatic Capitalization</h4>
-                <p class="text-gray-600 text-sm">Intelligently detects sentence boundaries and capitalizes the first letter of each sentence</p>
+                <p class="text-gray-600 text-sm">Intelligently detects sentence boundaries and capitalizes the first letter
+                    of each sentence</p>
             </div>
-            <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
+            <div
+                class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                 <div class="text-3xl mb-3">⚡</div>
                 <h4 class="font-bold text-gray-900 mb-2">Instant Conversion</h4>
                 <p class="text-gray-600 text-sm">Real-time processing with immediate results - no waiting required</p>
             </div>
-            <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
+            <div
+                class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
                 <div class="text-3xl mb-3">🔒</div>
                 <h4 class="font-bold text-gray-900 mb-2">Privacy Protected</h4>
-                <p class="text-gray-600 text-sm">All conversions happen in your browser - your text never leaves your device</p>
+                <p class="text-gray-600 text-sm">All conversions happen in your browser - your text never leaves your device
+                </p>
             </div>
-            <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
+            <div
+                class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
                 <div class="text-3xl mb-3">📝</div>
                 <h4 class="font-bold text-gray-900 mb-2">Bulk Processing</h4>
                 <p class="text-gray-600 text-sm">Convert multiple paragraphs and long documents in one go</p>
             </div>
-            <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+            <div
+                class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
                 <div class="text-3xl mb-3">🎨</div>
                 <h4 class="font-bold text-gray-900 mb-2">Clean Formatting</h4>
-                <p class="text-gray-600 text-sm">Removes inconsistent capitalization and creates uniform, professional text</p>
+                <p class="text-gray-600 text-sm">Removes inconsistent capitalization and creates uniform, professional text
+                </p>
             </div>
-            <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
+            <div
+                class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
                 <div class="text-3xl mb-3">🆓</div>
                 <h4 class="font-bold text-gray-900 mb-2">100% Free</h4>
                 <p class="text-gray-600 text-sm">No registration, no limits, no hidden fees - completely free to use</p>

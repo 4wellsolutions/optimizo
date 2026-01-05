@@ -3,37 +3,6 @@
 @section('title', $tool->meta_title)
 @section('meta_description', $tool->meta_description)
 @if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
-@section('content')
-    <div class="max-w-4xl mx-auto">
-        <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-teal-500 via-emerald-500 to-green-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M20.38 8.57l-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44z" />
-                        <path d="M10.59 15.41a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
-                    Internet Speed Test
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium">
-                    Test your connection speed instantly!
-                </p>
-
-            @include('components.hero-actions')
-        </div>
-        </div>
-
-        <!-- Tool -->
-        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-teal-200 mb-8">
-            <div class="text-center mb-8">
-                <button id="startBtn" onclick="startTest()" class="btn-primary justify-center text-lg py-4 px-12">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />

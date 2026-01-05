@@ -6,28 +6,8 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-red-500 via-pink-500 to-purple-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    YouTube Channel ID Finder
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Find any YouTube channel ID instantly from channel URL or name!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <!-- Header -->
+        <x-tool-hero :tool="$tool" />
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
@@ -156,21 +136,21 @@
 
                     if (data.channelName) {
                         const nameCard = $(`
-                                    <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
-                                        <h4 class="font-bold text-gray-900 mb-2">Channel Name</h4>
-                                        <p class="text-gray-700">${data.channelName}</p>
-                                    </div>
-                                `);
+                                            <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
+                                                <h4 class="font-bold text-gray-900 mb-2">Channel Name</h4>
+                                                <p class="text-gray-700">${data.channelName}</p>
+                                            </div>
+                                        `);
                         infoContainer.append(nameCard);
                     }
 
                     if (data.channelUrl) {
                         const urlCard = $(`
-                                    <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
-                                        <h4 class="font-bold text-gray-900 mb-2">Channel URL</h4>
-                                        <a href="${data.channelUrl}" target="_blank" class="text-indigo-600 hover:text-indigo-800 break-all">${data.channelUrl}</a>
-                                    </div>
-                                `);
+                                            <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
+                                                <h4 class="font-bold text-gray-900 mb-2">Channel URL</h4>
+                                                <a href="${data.channelUrl}" target="_blank" class="text-indigo-600 hover:text-indigo-800 break-all">${data.channelUrl}</a>
+                                            </div>
+                                        `);
                         infoContainer.append(urlCard);
                     }
                 }

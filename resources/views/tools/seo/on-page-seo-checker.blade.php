@@ -7,56 +7,7 @@
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Hero Section -->
-        <!-- Hero Section -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-900 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl isolate">
-            <!-- Animated Background -->
-            <div class="absolute inset-0 -z-10 overflow-hidden">
-                <div
-                    class="absolute -top-[40%] -right-[20%] w-[70%] h-[140%] rounded-full bg-gradient-to-b from-indigo-500/20 to-purple-500/0 blur-3xl animate-pulse-slow">
-                </div>
-                <div
-                    class="absolute top-[20%] -left-[20%] w-[60%] h-[120%] rounded-full bg-gradient-to-t from-pink-500/20 to-blue-500/0 blur-3xl animate-pulse-slow delay-1000">
-                </div>
-                <svg class="absolute inset-0 h-full w-full stroke-white/5 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-                    aria-hidden="true">
-                    <defs>
-                        <pattern id="hero-pattern" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-                            <path d="M100 200V.5M.5 .5H200" fill="none" />
-                        </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" stroke-width="0" fill="url(#hero-pattern)" />
-                </svg>
-            </div>
-
-            <div class="relative z-10 text-center max-w-3xl mx-auto">
-                <div
-                    class="inline-flex items-center justify-center p-2 mb-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-inner">
-                    <div class="bg-indigo-500 p-2 rounded-xl">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <span class="ml-3 text-white font-medium tracking-wide pr-2">Advanced SEO Audit Tool</span>
-                </div>
-
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight tracking-tight">
-                    Analyze & Optimize <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">Your Use
-                        Website</span> Today
-                </h1>
-
-                <p class="text-base md:text-lg text-gray-300 font-medium leading-relaxed mb-6 max-w-2xl mx-auto">
-                    Get a comprehensive, actionable SEO report for Google, Mobile, and AI Search rankings in
-                    seconds—completely free.
-                </p>
-
-                <div class="mt-4">
-                    @include('components.hero-actions')
-                </div>
-            </div>
-        </div>
+        <x-tool-hero :tool="$tool" />
 
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl border border-gray-100 mb-8">
@@ -488,30 +439,30 @@
                 detailsHtml = '<div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 bg-white/50 p-3 rounded-lg text-sm">';
                 for (const [key, value] of Object.entries(data.details)) {
                     detailsHtml += `
-                <div class="flex flex-col">
-                    <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
-                    <span class="font-bold text-gray-800">${value}</span>
-                </div>
-                `;
+                    <div class="flex flex-col">
+                        <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
+                        <span class="font-bold text-gray-800">${value}</span>
+                    </div>
+                    `;
                 }
                 detailsHtml += '</div>';
             }
 
             const html = `
-            <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
-                        <span>${icon}</span> ${data.title}
-                    </h3>
-                    <span
-                        class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                            <span>${icon}</span> ${data.title}
+                        </h3>
+                        <span
+                            class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
+                    ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
+                            class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
+                    ${detailsHtml}
                 </div>
-                <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
-                ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
-                        class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
-                ${detailsHtml}
-            </div>
-            `;
+                `;
             const container = document.getElementById('modulesContainer');
             const div = document.createElement('div');
             div.innerHTML = html;

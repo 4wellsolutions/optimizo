@@ -6,25 +6,7 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Header -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
-                    {{ $tool->name }}
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium">
-                    {{ $tool->meta_description }}
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <x-tool-hero :tool="$tool" icon="html-to-markdown-converter" />
 
         <!-- Converter Tool -->
         <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-8">
@@ -262,30 +244,30 @@
         function loadExample() {
             const example = `<h1>Welcome to HTML</h1>
 
-    <h2>This is a subheading</h2>
+        <h2>This is a subheading</h2>
 
-    <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
+        <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
 
-    <h3>Features</h3>
+        <h3>Features</h3>
 
-    <ul>
-      <li>Easy to write</li>
-      <li>Easy to read</li>
-      <li>Converts to Markdown</li>
-    </ul>
+        <ul>
+          <li>Easy to write</li>
+          <li>Easy to read</li>
+          <li>Converts to Markdown</li>
+        </ul>
 
-    <h3>Code Example</h3>
+        <h3>Code Example</h3>
 
-    <pre><code class="language-javascript">function hello() {
-        console.log("Hello, World!");
-    }
-    </code></pre>
+        <pre><code class="language-javascript">function hello() {
+            console.log("Hello, World!");
+        }
+        </code></pre>
 
-    <blockquote>
-      <p>This is a blockquote</p>
-    </blockquote>
+        <blockquote>
+          <p>This is a blockquote</p>
+        </blockquote>
 
-    <p><a href="https://example.com">Visit our website</a></p>`;
+        <p><a href="https://example.com">Visit our website</a></p>`;
 
             document.getElementById('htmlInput').value = example;
             convertHtmlToMarkdown();

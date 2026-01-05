@@ -5,19 +5,7 @@
 
 @section('content')
     <div class="max-w-6xl mx-auto">
-        <!-- Hero Section -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-green-500 via-teal-500 to-cyan-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                    </svg>
-                </div>
+        <x-tool-hero :tool="$tool" />
                 <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
                     JWT Decoder
                 </h1>
@@ -69,18 +57,7 @@
 
             <!-- Decoded Output -->
             <div id="decodedOutput" class="hidden space-y-6">
-                <!-- Header -->
-                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border-2 border-blue-200">
-                    <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        Header
-                    </h3>
-                    <pre id="headerOutput"
-                        class="bg-white p-4 rounded-lg font-mono text-sm overflow-x-auto border border-blue-200"></pre>
-                </div>
+                <x-tool-hero :tool="$tool" />
 
                 <!-- Payload -->
                 <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border-2 border-green-200">

@@ -5,22 +5,7 @@
 
 @section('content')
     <div class="max-w-6xl mx-auto">
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-9 h-9 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">SQL to JSON Converter</h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto">Convert SQL INSERT statements to
-                    JSON format!</p>
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <x-tool-hero :tool="$tool" />
 
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-violet-200 mb-8">
             <div class="flex flex-wrap gap-3 mb-6">
@@ -203,14 +188,14 @@
                     <div>
                         <p class="text-sm font-semibold text-gray-700 mb-2">SQL Input:</p>
                         <pre class="bg-gray-50 p-3 rounded text-sm overflow-x-auto"><code>INSERT INTO users (name, age) 
-    VALUES ('John', 30);</code></pre>
+        VALUES ('John', 30);</code></pre>
                     </div>
                     <div>
                         <p class="text-sm font-semibold text-gray-700 mb-2">JSON Output:</p>
                         <pre class="bg-gray-50 p-3 rounded text-sm overflow-x-auto"><code>{
-      "name": "John",
-      "age": 30
-    }</code></pre>
+          "name": "John",
+          "age": 30
+        }</code></pre>
                     </div>
                 </div>
             </div>

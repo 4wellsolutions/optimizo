@@ -42,15 +42,7 @@
     <!-- SEO Content -->
     <article class="prose prose-lg prose-indigo max-w-none">
 
-        <!-- Hero Section -->
-        <div class="relative bg-gray-900 rounded-3xl p-8 mb-12 text-white overflow-hidden shadow-2xl">
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-black opacity-90"></div>
-            <div class="relative z-10">
-                <div class="flex items-center gap-3 text-gray-400 font-mono text-sm tracking-widest mb-4 uppercase">
-                    <span>Encoding</span>
-                    <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
-                    <span>System Time</span>
-                </div>
+        <x-tool-hero :tool="$tool" />
                 <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">Generate the Epoch</h2>
                 <p class="text-lg text-gray-400 leading-relaxed max-w-2xl">
                     Create precise timestamps for databases, APIs, and logs. Whether you need the current second or a

@@ -82,6 +82,8 @@ class AdminToolController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
+            'icon_svg' => 'nullable|string',
+            'icon_name' => 'nullable|string|max:255',
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string',
             'meta_keywords' => 'nullable|string',

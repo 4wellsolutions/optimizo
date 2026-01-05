@@ -9,29 +9,7 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- SEO-Optimized Header with Gradient Background -->
-        <div
-            class="relative overflow-hidden bg-gradient-to-br from-red-500 via-pink-500 to-purple-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
-            <!-- Decorative Elements -->
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
-
-            <div class="relative z-10 text-center">
-                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
-                    <svg class="w-12 h-12 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                </div>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    YouTube Video Data Extractor
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    Extract complete video metadata instantly - title, description, tags, views, likes, and more!
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+        <x-tool-hero :tool="$tool" />
 
         <!-- Video Data Extractor Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
@@ -144,11 +122,11 @@
                     // Add thumbnail if available
                     if (data.thumbnail) {
                         const thumbnailHtml = `
-                                    <div class="bg-white rounded-xl p-4 border-2 border-gray-200 mb-4">
-                                        <h4 class="font-bold text-gray-900 mb-3">Video Thumbnail</h4>
-                                        <img src="${data.thumbnail}" alt="Video Thumbnail" class="w-48 rounded-lg shadow-lg border-2 border-gray-300">
-                                    </div>
-                                `;
+                                            <div class="bg-white rounded-xl p-4 border-2 border-gray-200 mb-4">
+                                                <h4 class="font-bold text-gray-900 mb-3">Video Thumbnail</h4>
+                                                <img src="${data.thumbnail}" alt="Video Thumbnail" class="w-48 rounded-lg shadow-lg border-2 border-gray-300">
+                                            </div>
+                                        `;
                         container.append(thumbnailHtml);
                     }
 
@@ -167,25 +145,25 @@
                     fields.forEach(field => {
                         if (field.value) {
                             const copyButton = field.copyable ? `
-                                        <button onclick="copyText('${field.label.replace(/\s/g, '')}', this)" 
-                                            class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 font-semibold transition-colors">
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                            </svg>
-                                            Copy
-                                        </button>
-                                    ` : '';
+                                                <button onclick="copyText('${field.label.replace(/\s/g, '')}', this)" 
+                                                    class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 font-semibold transition-colors">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                                    </svg>
+                                                    Copy
+                                                </button>
+                                            ` : '';
 
                             const item = $(`
-                                        <div class="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-indigo-200 transition-all">
-                                            <div class="flex justify-between items-start mb-2">
-                                                <h4 class="font-bold text-gray-900">${field.label}</h4>
-                                                ${copyButton}
-                                            </div>
-                                            <p id="${field.label.replace(/\s/g, '')}" class="text-gray-700 ${field.multiline ? 'whitespace-pre-wrap' : ''}">${field.value}</p>
-                                        </div>
-                                    `);
+                                                <div class="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-indigo-200 transition-all">
+                                                    <div class="flex justify-between items-start mb-2">
+                                                        <h4 class="font-bold text-gray-900">${field.label}</h4>
+                                                        ${copyButton}
+                                                    </div>
+                                                    <p id="${field.label.replace(/\s/g, '')}" class="text-gray-700 ${field.multiline ? 'whitespace-pre-wrap' : ''}">${field.value}</p>
+                                                </div>
+                                            `);
                             container.append(item);
                         }
                     });
