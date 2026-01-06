@@ -57,11 +57,16 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="{{ route('home') }}" class="nav-link">Home</a>
-                    <a href="{{ route('category.youtube') }}" class="nav-link">YouTube Tools</a>
-                    <a href="{{ route('category.seo') }}" class="nav-link">SEO Tools</a>
-                    <a href="{{ route('category.utility') }}" class="nav-link">Utility Tools</a>
-                    <a href="{{ route('category.network') }}" class="nav-link">Network Tools</a>
+                    <a href="{{ route('home') }}" class="nav-link">{{ __('navigation.home') }}</a>
+                    <a href="{{ route('category.youtube') }}" class="nav-link">{{ __('navigation.youtube_tools') }}</a>
+                    <a href="{{ route('category.seo') }}" class="nav-link">{{ __('navigation.seo_tools') }}</a>
+                    <a href="{{ route('category.utility') }}" class="nav-link">{{ __('navigation.utility_tools') }}</a>
+                    <a href="{{ route('category.network') }}" class="nav-link">{{ __('navigation.network_tools') }}</a>
+
+                    <!-- Language Switcher -->
+                    <div class="ml-2">
+                        <x-language-switcher position="header" />
+                    </div>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -95,11 +100,19 @@
             </div>
 
             <div class="px-4 py-3 space-y-1">
-                <a href="{{ route('home') }}" class="block nav-link">Home</a>
-                <a href="{{ route('category.youtube') }}" class="block nav-link">YouTube Tools</a>
-                <a href="{{ route('category.seo') }}" class="block nav-link">SEO Tools</a>
-                <a href="{{ route('category.utility') }}" class="block nav-link">Utility Tools</a>
-                <a href="{{ route('category.network') }}" class="block nav-link">Network Tools</a>
+                <a href="{{ route('home') }}" class="block nav-link">{{ __('navigation.home') }}</a>
+                <a href="{{ route('category.youtube') }}"
+                    class="block nav-link">{{ __('navigation.youtube_tools') }}</a>
+                <a href="{{ route('category.seo') }}" class="block nav-link">{{ __('navigation.seo_tools') }}</a>
+                <a href="{{ route('category.utility') }}"
+                    class="block nav-link">{{ __('navigation.utility_tools') }}</a>
+                <a href="{{ route('category.network') }}"
+                    class="block nav-link">{{ __('navigation.network_tools') }}</a>
+
+                <!-- Language Switcher -->
+                <div class="pt-2">
+                    <x-language-switcher position="mobile" />
+                </div>
             </div>
         </div>
     </nav>

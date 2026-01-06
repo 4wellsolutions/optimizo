@@ -17,23 +17,23 @@
                     </svg>
                 </div>
                 <h1 class="text-2xl md:text-3xl font-black text-white mb-2 leading-tight">
-                    YouTube Tools
+                    {{ __('categories.youtube_title') }}
                 </h1>
                 <p class="text-sm md:text-base text-white/90 font-medium max-w-2xl mx-auto mb-3">
-                    Professional tools for YouTube creators - 100% free, no registration required
+                    {{ __('categories.youtube_subtitle') }}
                 </p>
                 <div class="flex flex-wrap justify-center gap-3">
                     <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
                         <div class="text-2xl font-black text-white">{{ $tools->count() }}</div>
-                        <div class="text-xs text-white/80">Free Tools</div>
+                        <div class="text-xs text-white/80">{{ __('categories.free_tools') }}</div>
                     </div>
                     <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
                         <div class="text-2xl font-black text-white">100%</div>
-                        <div class="text-xs text-white/80">Free Forever</div>
+                        <div class="text-xs text-white/80">{{ __('categories.free_forever') }}</div>
                     </div>
                     <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
                         <div class="text-2xl font-black text-white">⚡</div>
-                        <div class="text-xs text-white/80">Instant Access</div>
+                        <div class="text-xs text-white/80">{{ __('categories.instant_access') }}</div>
                     </div>
                 </div>
             </div>
@@ -68,12 +68,12 @@
                                 </div>
                                 <div class="flex-1">
                                     <h3 class="font-bold text-lg text-gray-900 group-hover:text-red-600 transition-colors">
-                                        {{ str_replace('YouTube ', '', $tool->name) }}
+                                        {{ str_replace('YouTube ', '', __t($tool, 'name')) }}
                                     </h3>
                                 </div>
                             </div>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                {{ $tool->meta_description }}
+                                {{ __t($tool, 'meta_description') }}
                             </p>
                         </a>
                     @endforeach
@@ -88,7 +88,7 @@
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-                Back to Home
+                {{ __('categories.back_to_home') }}
             </a>
         </div>
     </div>

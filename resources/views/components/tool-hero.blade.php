@@ -2,8 +2,8 @@
 
 @php
     // Use provided props, or fall back to $tool properties
-    $displayTitle = $title ?? $tool->name ?? $tool->meta_title ?? 'Tool';
-    $displayDescription = $description ?? $tool->description ?? $tool->meta_description ?? '';
+    $displayTitle = $title ?? __t($tool, 'name') ?? $tool->meta_title ?? 'Tool';
+    $displayDescription = $description ?? __t($tool, 'meta_description') ?? $tool->description ?? '';
     $displayIcon = $icon ?? $tool->icon ?? $tool->slug ?? 'default';
 
     // Category-based gradient colors
@@ -38,16 +38,8 @@
 
     <div class="relative z-10 text-center">
         <div
-            class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3 transform -rotate-3 hover:rotate-0 transition-transform duration-300 {{ $iconColorClass }}">
-            @if(!empty($tool->icon_svg))
-                {{-- Render SVG from database with category color --}}
-                <div class="w-9 h-9 {{ $iconColorClass }}">
-                    {!! stripslashes($tool->icon_svg) !!}
-                </div>
-            @else
-                {{-- Fallback to icon component --}}
-                <x-tool-icon :slug="$displayIcon" class="w-9 h-9 {{ $iconColorClass }}" />
-            @endif
+            class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+            @include('components.tool-icon', ['slug' => $tool->slug])
         </div>
         <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight tracking-tight">
             {{ $displayTitle }}

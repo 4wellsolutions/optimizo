@@ -2,10 +2,25 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Traits\HasTranslations;
 
 class Tool extends Model
 {
+    use HasFactory, HasTranslations;
+
+    /**
+     * Fields that can be translated
+     */
+    protected $translatable = [
+        'name',
+        'description',
+        'meta_title',
+        'meta_description',
+        'meta_keywords',
+    ];
+
     protected $fillable = [
         'name',
         'slug',

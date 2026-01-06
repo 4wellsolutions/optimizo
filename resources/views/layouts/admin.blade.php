@@ -152,6 +152,13 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
+                                    <a href="{{ route('admin.languages.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.languages.*') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Languages</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a href="{{ route('admin.redirects.index') }}"
                                         class="nav-link {{ request()->routeIs('admin.redirects.*') ? 'active' : '' }}">
                                         <i class="far fa-circle nav-icon"></i>
