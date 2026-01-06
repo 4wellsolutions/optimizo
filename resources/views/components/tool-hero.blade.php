@@ -17,7 +17,19 @@
         'time' => 'from-violet-500 via-indigo-500 to-purple-600',
     ];
 
+    // Category-based icon colors (matching the primary color of each gradient)
+    $iconColorMap = [
+        'network' => 'text-blue-600',
+        'seo' => 'text-green-600',
+        'youtube' => 'text-red-600',
+        'utility' => 'text-indigo-600',
+        'document' => 'text-orange-600',
+        'spreadsheet' => 'text-green-600',
+        'time' => 'text-violet-600',
+    ];
+
     $gradientClass = $gradientMap[$tool->category] ?? 'from-indigo-500 via-purple-500 to-pink-600';
+    $iconColorClass = $iconColorMap[$tool->category] ?? 'text-indigo-600';
 @endphp
 
 <div class="relative overflow-hidden bg-gradient-to-br {{ $gradientClass }} rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
@@ -26,15 +38,15 @@
 
     <div class="relative z-10 text-center">
         <div
-            class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3 transform -rotate-3 hover:rotate-0 transition-transform duration-300 text-indigo-600">
+            class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3 transform -rotate-3 hover:rotate-0 transition-transform duration-300 {{ $iconColorClass }}">
             @if(!empty($tool->icon_svg))
-                {{-- Render SVG from database --}}
-                <div class="w-9 h-9">
-                    {!! $tool->icon_svg !!}
+                {{-- Render SVG from database with category color --}}
+                <div class="w-9 h-9 {{ $iconColorClass }}">
+                    {!! stripslashes($tool->icon_svg) !!}
                 </div>
             @else
                 {{-- Fallback to icon component --}}
-                <x-tool-icon :slug="$displayIcon" class="w-9 h-9 text-indigo-600" />
+                <x-tool-icon :slug="$displayIcon" class="w-9 h-9 {{ $iconColorClass }}" />
             @endif
         </div>
         <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight tracking-tight">

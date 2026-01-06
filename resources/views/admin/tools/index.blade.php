@@ -94,7 +94,7 @@
             <div class="card-body">
                 <form action="{{ route('admin.tools.index') }}" method="GET">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>Search Term</label>
                                 <div class="input-group">
@@ -106,7 +106,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>Category</label>
                                 <select class="form-control select2" name="category" style="width: 100%;">
@@ -116,6 +116,17 @@
                                             {{ ucfirst($cat) }}
                                         </option>
                                     @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Per Page</label>
+                                <select class="form-control" name="per_page">
+                                    <option value="10" {{ request('per_page') == 10 ? 'selected' : '' }}>10</option>
+                                    <option value="20" {{ request('per_page', 20) == 20 ? 'selected' : '' }}>20</option>
+                                    <option value="50" {{ request('per_page') == 50 ? 'selected' : '' }}>50</option>
+                                    <option value="100" {{ request('per_page') == 100 ? 'selected' : '' }}>100</option>
                                 </select>
                             </div>
                         </div>
@@ -141,6 +152,7 @@
                         <thead>
                             <tr>
                                 <th style="width: 50px">#</th>
+                                <th style="width: 50px">Icon</th>
                                 <th>Name</th>
                                 <th>Category</th>
                                 <th>URL</th>
@@ -153,6 +165,15 @@
                             @foreach($tools as $index => $tool)
                                 <tr>
                                     <td>{{ $tools->firstItem() + $index }}</td>
+                                    <td class="text-center">
+                                        @if(!empty($tool->icon_svg) && trim($tool->icon_svg) !== '')
+                                            <div class="d-inline-block" style="width: 32px; height: 32px;">
+                                                {!! stripslashes($tool->icon_svg) !!}
+                                            </div>
+                                        @else
+                                            <i class="fas fa-tools text-muted" style="font-size: 24px;"></i>
+                                        @endif
+                                    </td>
                                     <td>
                                         <strong>{{ $tool->name }}</strong>
                                         <br>

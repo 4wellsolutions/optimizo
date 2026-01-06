@@ -84,7 +84,13 @@ class AdminToolController extends Controller
             $query->where('category', $request->input('category'));
         }
 
-        $tools = $query->orderBy('id', 'desc')->paginate(20)->withQueryString();
+        // Per page filter
+        $perPage = $request->input('per_page', 20);
+        if (!in_array($perPage, [10, 20, 50, 100])) {
+            $perPage = 20;
+        }
+
+        $tools = $query->orderBy('id', 'desc')->paginate($perPage)->withQueryString();
         $categories = Tool::select('category')->distinct()->pluck('category');
 
         // Statistics Counts
