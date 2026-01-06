@@ -71,11 +71,101 @@
             </div>
         </div>
 
+        {{-- Sitemap Statistics Table --}}
         <div class="row">
             <div class="col-lg-12">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-primary">Configuration & Actions</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">All Sitemaps</h6>
+                        <span class="badge badge-primary">{{ count($sitemaps) }} Sitemaps</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover" width="100%" cellspacing="0">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th width="5%">#</th>
+                                        <th width="25%">Sitemap Name</th>
+                                        <th width="10%">Type</th>
+                                        <th width="15%">URL Count</th>
+                                        <th width="35%">URL</th>
+                                        <th width="10%">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($sitemaps as $index => $sitemap)
+                                        <tr>
+                                            <td class="text-center">{{ $index + 1 }}</td>
+                                            <td class="font-weight-bold">
+                                                @if($sitemap['type'] === 'index')
+                                                    <i class="fas fa-sitemap text-primary mr-2"></i>
+                                                @elseif($sitemap['type'] === 'categories')
+                                                    <i class="fas fa-folder text-warning mr-2"></i>
+                                                @else
+                                                    <i class="fas fa-list text-info mr-2"></i>
+                                                @endif
+                                                {{ $sitemap['name'] }}
+                                            </td>
+                                            <td>
+                                                @if($sitemap['type'] === 'index')
+                                                    <span class="badge badge-primary">Index</span>
+                                                @elseif($sitemap['type'] === 'categories')
+                                                    <span class="badge badge-warning">Categories</span>
+                                                @else
+                                                    <span class="badge badge-info">Category</span>
+                                                @endif
+                                            </td>
+                                            <td class="text-center">
+                                                @if($sitemap['count'] > 0)
+                                                    <span
+                                                        class="badge badge-success badge-pill">{{ number_format($sitemap['count']) }}
+                                                        {{ $sitemap['type'] === 'index' ? 'sitemaps' : 'URLs' }}</span>
+                                                @else
+                                                    <span class="badge badge-secondary badge-pill">0</span>
+                                                @endif
+                                            </td>
+                                            <td>
+                                                <code class="small">{{ $sitemap['url'] }}</code>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="{{ $sitemap['url'] }}" target="_blank" class="btn btn-sm btn-primary"
+                                                    title="View Sitemap">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                                <tfoot class="thead-light">
+                                    <tr>
+                                        <th colspan="3" class="text-right">Total URLs Across All Sitemaps:</th>
+                                        <th class="text-center">
+                                            <span class="badge badge-success badge-pill">
+                                                {{ number_format(collect($sitemaps)->where('type', '!=', 'index')->sum('count')) }}
+                                            </span>
+                                        </th>
+                                        <th colspan="2"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-muted small mb-0">
+                                <i class="fas fa-info-circle mr-1"></i>
+                                <strong>Note:</strong> Sitemaps are dynamically generated from your ToolData service. New
+                                tools are automatically included.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Legacy Sitemap Generator</h6>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -116,7 +206,7 @@
                                             <i class="fas fa-sync-alt fa-2x"></i>
                                         </span>
                                     </div>
-                                    <h5 class="font-weight-bold">Regenerate Sitemap</h5>
+                                    <h5 class="font-weight-bold">Regenerate Legacy Sitemap</h5>
                                     <p class="text-muted small mb-4">
                                         This will crawl your database for active tools and pages, calculate priorities, and
                                         overwrite the existing <code>sitemap.xml</code> file.

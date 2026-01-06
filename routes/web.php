@@ -130,6 +130,13 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/privacy', 'privacy')->name('privacy');
 });
 
+// Sitemap Routes
+Route::controller(App\Http\Controllers\SitemapController::class)->group(function () {
+    Route::get('/sitemap.xml', 'index')->name('sitemap.index');
+    Route::get('/sitemap-categories.xml', 'categories')->name('sitemap.categories');
+    Route::get('/sitemap-{category}.xml', 'category')->name('sitemap.category');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Tool Routes - YouTube
