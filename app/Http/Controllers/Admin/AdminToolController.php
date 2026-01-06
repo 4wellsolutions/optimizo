@@ -67,10 +67,33 @@ class AdminToolController extends Controller
         }
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $tools = Tool::orderBy('id', 'desc')->get();
-        return view('admin.tools.index', compact('tools'));
+        $query = Tool::query();
+
+        if ($request->filled('search')) {
+            $search = $request->input('search');
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                    ->orWhere('slug', 'like', "%{$search}%")
+                    ->orWhere('description', 'like', "%{$search}%");
+            });
+        }
+
+        if ($request->filled('category')) {
+            $query->where('category', $request->input('category'));
+        }
+
+        $tools = $query->orderBy('id', 'desc')->paginate(20)->withQueryString();
+        $categories = Tool::select('category')->distinct()->pluck('category');
+
+        // Statistics Counts
+        $totalTools = Tool::count();
+        $activeTools = Tool::where('is_active', true)->count();
+        $utilityTools = Tool::where('category', 'utility')->count();
+        $youtubeTools = Tool::where('category', 'youtube')->count();
+
+        return view('admin.tools.index', compact('tools', 'categories', 'totalTools', 'activeTools', 'utilityTools', 'youtubeTools'));
     }
 
     public function edit(Tool $tool)

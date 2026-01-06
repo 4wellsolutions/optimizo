@@ -58,6 +58,15 @@ use App\Http\Controllers\Tools\Utility\{
     DecimalBinaryController,
     DecimalHexController,
     BinaryHexController,
+    LoremIpsumGeneratorController,
+    RandomNumberGeneratorController,
+    UuidGeneratorController,
+    DuplicateRemoverController,
+    XmlFormatterController,
+    DiffCheckerController,
+    CronJobGeneratorController,
+    UserAgentParserController,
+    CurlBuilderController,
     DecimalOctalController,
     NumberBaseController,
     JsonXmlController,
@@ -91,6 +100,8 @@ use App\Http\Controllers\Tools\Network\{
     ReverseDnsController,
     RedirectCheckerController
 };
+
+use App\Http\Controllers\Tools\Converters\UnitConverterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -236,6 +247,22 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/csv-to-xml-converter', [CsvXmlController::class, 'index'])->name('csv-xml');
     Route::get('/json-to-sql-converter', [JsonSqlController::class, 'index'])->name('json-sql');
     Route::get('/tsv-to-csv-converter', [TsvCsvController::class, 'index'])->name('tsv-csv');
+    Route::post('/tsv-to-csv-converter', [TsvCsvController::class, 'convert'])->name('tsv-csv.convert');
+
+    // New Generators
+    Route::get('/lorem-ipsum-generator', [LoremIpsumGeneratorController::class, 'index'])->name('lorem-ipsum');
+    Route::get('/random-number-generator', [RandomNumberGeneratorController::class, 'index'])->name('random-number');
+    Route::get('/uuid-generator', [UuidGeneratorController::class, 'index'])->name('uuid-generator');
+
+    // New Text Tools
+    Route::get('/duplicate-line-remover', [DuplicateRemoverController::class, 'index'])->name('duplicate-remover');
+    Route::get('/xml-formatter', [XmlFormatterController::class, 'index'])->name('xml-formatter');
+    Route::get('/diff-checker', [DiffCheckerController::class, 'index'])->name('diff-checker');
+
+    // New Complex Tools
+    Route::get('/cron-job-generator', [CronJobGeneratorController::class, 'index'])->name('cron-generator');
+    Route::get('/user-agent-parser', [UserAgentParserController::class, 'index'])->name('user-agent-parser');
+    Route::get('/curl-command-builder', [CurlBuilderController::class, 'index'])->name('curl-builder');
 
     // Text & String Converters
     Route::get('/sentence-case-converter', [SentenceCaseController::class, 'index'])->name('sentence-case');
@@ -319,6 +346,31 @@ Route::prefix('tools')->name('utility.')->group(function () {
     Route::get('/svg-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'svgToJpg'])->name('svg-to-jpg');
     Route::get('/heic-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'heicToJpg'])->name('heic-to-jpg');
     Route::get('/ico-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'icoConverter'])->name('ico-converter');
+
+    // Unit Converters (20 Tools)
+    Route::get('/length-converter', [UnitConverterController::class, 'length'])->name('length-converter');
+    Route::get('/weight-converter', [UnitConverterController::class, 'weight'])->name('weight-converter');
+    Route::get('/temperature-converter', [UnitConverterController::class, 'temperature'])->name('temperature-converter');
+    Route::get('/volume-converter', [UnitConverterController::class, 'volume'])->name('volume-converter');
+    Route::get('/area-converter', [UnitConverterController::class, 'area'])->name('area-converter');
+
+    Route::get('/speed-converter', [UnitConverterController::class, 'speed'])->name('speed-converter');
+    Route::get('/time-unit-converter', [UnitConverterController::class, 'time'])->name('time-converter');
+    Route::get('/digital-storage-converter', [UnitConverterController::class, 'storage'])->name('storage-converter');
+    Route::get('/energy-converter', [UnitConverterController::class, 'energy'])->name('energy-converter');
+    Route::get('/pressure-converter', [UnitConverterController::class, 'pressure'])->name('pressure-converter');
+
+    Route::get('/power-converter', [UnitConverterController::class, 'power'])->name('power-converter');
+    Route::get('/force-converter', [UnitConverterController::class, 'force'])->name('force-converter');
+    Route::get('/angle-converter', [UnitConverterController::class, 'angle'])->name('angle-converter');
+    Route::get('/fuel-consumption-converter', [UnitConverterController::class, 'fuel'])->name('fuel-converter');
+    Route::get('/data-transfer-rate-converter', [UnitConverterController::class, 'dataTransfer'])->name('data-transfer-converter');
+
+    Route::get('/cooking-unit-converter', [UnitConverterController::class, 'cooking'])->name('cooking-converter');
+    Route::get('/torque-converter', [UnitConverterController::class, 'torque'])->name('torque-converter');
+    Route::get('/density-converter', [UnitConverterController::class, 'density'])->name('density-converter');
+    Route::get('/molar-mass-converter', [UnitConverterController::class, 'molarMass'])->name('molar-mass-converter');
+    Route::get('/frequency-converter', [UnitConverterController::class, 'frequency'])->name('frequency-converter');
 });
 
 /*
