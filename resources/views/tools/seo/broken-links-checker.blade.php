@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('broken-links-checker', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('broken-links-checker', 'seo.description', $tool->meta_description))
 @section('meta_keywords', $tool->meta_keywords)
 
 @section('content')
@@ -618,28 +618,28 @@
             let html = '';
             links.forEach((link, index) => {
                 html += `
-                            <tr id="row-${index}" class="hover:bg-gray-50/80 transition-colors border-b border-gray-100 last:border-0 opacity-60">
-                                <td class="p-4">
-                                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-500 status-badge">
-                                        <svg class="animate-spin -ml-1 mr-1 h-3 w-3 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                        </svg> Pending
-                                    </span>
-                                </td>
-                                <td class="p-4 max-w-xs truncate" title="${link.url}">
-                                     <a href="${link.url}" target="_blank" class="text-gray-400 font-medium hover:underline pointer-events-none link-url">
-                                        ${link.url}
-                                    </a>
-                                </td>
-                                <td class="p-4 text-gray-600 font-medium truncate">${link.text}</td>
-                                 <td class="p-4 text-right">
-                                    <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full uppercase tracking-wide">
-                                        ${link.is_internal ? 'Internal' : 'External'}
-                                    </span>
-                                </td>
-                            </tr>
-                        `;
+                                <tr id="row-${index}" class="hover:bg-gray-50/80 transition-colors border-b border-gray-100 last:border-0 opacity-60">
+                                    <td class="p-4">
+                                        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-500 status-badge">
+                                            <svg class="animate-spin -ml-1 mr-1 h-3 w-3 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            </svg> Pending
+                                        </span>
+                                    </td>
+                                    <td class="p-4 max-w-xs truncate" title="${link.url}">
+                                         <a href="${link.url}" target="_blank" class="text-gray-400 font-medium hover:underline pointer-events-none link-url">
+                                            ${link.url}
+                                        </a>
+                                    </td>
+                                    <td class="p-4 text-gray-600 font-medium truncate">${link.text}</td>
+                                     <td class="p-4 text-right">
+                                        <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full uppercase tracking-wide">
+                                            ${link.is_internal ? 'Internal' : 'External'}
+                                        </span>
+                                    </td>
+                                </tr>
+                            `;
             });
             tbody.innerHTML = html;
         }

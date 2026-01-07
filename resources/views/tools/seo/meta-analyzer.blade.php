@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('meta-analyzer', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('meta-analyzer', 'seo.description', $tool->meta_description))
 @if($tool->meta_keywords)
 @section('meta_keywords', $tool->meta_keywords)
 @endif
@@ -14,8 +14,9 @@
         <!-- Tool Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-green-200 mb-8">
             <div class="mb-6">
-                <label for="urlInput" class="form-label text-base">Enter Website URL</label>
-                <input type="url" id="urlInput" class="form-input" placeholder="https://example.com" />
+                <label for="urlInput" class="form-label text-base">{{ __tool('meta-analyzer', 'form.label') }}</label>
+                <input type="url" id="urlInput" class="form-input"
+                    placeholder="{{ __tool('meta-analyzer', 'form.placeholder') }}" />
             </div>
 
             <button onclick="analyzeMeta()" id="analyzeBtn" class="btn-primary w-full justify-center text-lg py-4 mb-6">
@@ -23,7 +24,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
-                <span id="btnText">Analyze Meta Tags</span>
+                <span id="btnText">{{ __tool('meta-analyzer', 'form.button') }}</span>
             </button>
 
             <!-- Status Message -->
@@ -345,22 +346,22 @@
             // Other meta tags
             const otherMeta = document.getElementById('otherMeta');
             otherMeta.innerHTML = `
-                        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                            <div class="font-bold text-gray-900 mb-1">Viewport</div>
-                            <code class="text-sm text-gray-600">width=device-width, initial-scale=1</code>
-                            <span class="ml-2 text-green-600">✓</span>
-                        </div>
-                        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                            <div class="font-bold text-gray-900 mb-1">Charset</div>
-                            <code class="text-sm text-gray-600">UTF-8</code>
-                            <span class="ml-2 text-green-600">✓</span>
-                        </div>
-                        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                            <div class="font-bold text-gray-900 mb-1">Robots</div>
-                            <code class="text-sm text-gray-600">index, follow</code>
-                            <span class="ml-2 text-green-600">✓</span>
-                        </div>
-                    `;
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="font-bold text-gray-900 mb-1">Viewport</div>
+                                <code class="text-sm text-gray-600">width=device-width, initial-scale=1</code>
+                                <span class="ml-2 text-green-600">✓</span>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="font-bold text-gray-900 mb-1">Charset</div>
+                                <code class="text-sm text-gray-600">UTF-8</code>
+                                <span class="ml-2 text-green-600">✓</span>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="font-bold text-gray-900 mb-1">Robots</div>
+                                <code class="text-sm text-gray-600">index, follow</code>
+                                <span class="ml-2 text-green-600">✓</span>
+                            </div>
+                        `;
 
             // SEO Score
             const score = 85;

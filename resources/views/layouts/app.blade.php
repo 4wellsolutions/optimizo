@@ -87,10 +87,13 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="{{ localeRoute('home') }}" class="nav-link">{{ __('navigation.home') }}</a>
-                    <a href="{{ localeRoute('category.youtube') }}" class="nav-link">{{ __('navigation.youtube_tools') }}</a>
+                    <a href="{{ localeRoute('category.youtube') }}"
+                        class="nav-link">{{ __('navigation.youtube_tools') }}</a>
                     <a href="{{ localeRoute('category.seo') }}" class="nav-link">{{ __('navigation.seo_tools') }}</a>
-                    <a href="{{ localeRoute('category.utility') }}" class="nav-link">{{ __('navigation.utility_tools') }}</a>
-                    <a href="{{ localeRoute('category.network') }}" class="nav-link">{{ __('navigation.network_tools') }}</a>
+                    <a href="{{ localeRoute('category.utility') }}"
+                        class="nav-link">{{ __('navigation.utility_tools') }}</a>
+                    <a href="{{ localeRoute('category.network') }}"
+                        class="nav-link">{{ __('navigation.network_tools') }}</a>
 
                     <!-- Language Switcher -->
                     <div class="ml-2">
@@ -344,6 +347,9 @@
 
     <!-- Global Paste Functionality -->
     <script src="{{ asset('js/paste-functionality.js') }}"></script>
+
+    <!-- jQuery - Loaded globally for all tools -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     @stack('scripts')
 </body>

@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('youtube-video-extractor', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('youtube-video-extractor', 'seo.description', $tool->meta_description))
 @if($tool->meta_keywords)
 @section('meta_keywords', $tool->meta_keywords)
 @endif
@@ -53,145 +53,7 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#extractorForm').on('submit', function (e) {
-                    e.preventDefault();
-
-                    const url = $('#url').val().trim();
-                    const btn = $(this).find('button[type="submit"]');
-                    const btnText = $('#btnText');
-                    const originalText = btnText.text();
-
-                    // Hide previous results/errors
-                    $('#resultsSection').addClass('hidden');
-                    $('#errorMessage').addClass('hidden');
-
-                    // Validate URL
-                    if (!url) {
-                        showError('{{ __tool('youtube-video-extractor', 'js.error_enter_url', 'Please enter a YouTube URL') }}');
-                        return;
-                    }
-
-                    // Basic YouTube URL validation
-                    const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/.+$/;
-                    if (!youtubeRegex.test(url)) {
-                        showError('{{ __tool('youtube-video-extractor', 'js.error_valid_url', 'Please enter a valid YouTube URL') }}');
-                        return;
-                    }
-
-                    // Show loading state
-                    btn.prop('disabled', true).addClass('opacity-75');
-                    btnText.text('{{ __tool('youtube-video-extractor', 'js.extracting', 'Extracting Data...') }}');
-
-                    // AJAX Request
-                    $.ajax({
-                        url: '{{ route("youtube.extractor.extract") }}',
-                        method: 'POST',
-                        data: {
-                            _token: '{{ csrf_token() }}',
-                            url: url
-                        },
-                        success: function (response) {
-                            if (response.success) {
-                                displayVideoData(response.data);
-                                $('#resultsSection').removeClass('hidden');
-
-                                // Smooth scroll to results
-                                setTimeout(() => {
-                                    $('#resultsSection')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                                }, 100);
-                            }
-                        },
-                        error: function (xhr) {
-                            const error = xhr.responseJSON?.error || '{{ __tool('youtube-video-extractor', 'js.error_failed', 'Failed to extract video data. Please try again.') }}';
-                            showError(error);
-                        },
-                        complete: function () {
-                            btn.prop('disabled', false).removeClass('opacity-75');
-                            btnText.text(originalText);
-                        }
-                    });
-                });
-
-                function displayVideoData(data) {
-                    const container = $('#videoData');
-                    container.empty();
-
-                    // Add thumbnail if available
-                    if (data.thumbnail) {
-                        const thumbnailHtml = `
-                                            <div class="bg-white rounded-xl p-4 border-2 border-gray-200 mb-4">
-                                                <h4 class="font-bold text-gray-900 mb-3">{{ __tool('youtube-video-extractor', 'js.video_thumbnail', 'Video Thumbnail') }}</h4>
-                                                <img src="${data.thumbnail}" alt="{{ __tool('youtube-video-extractor', 'js.video_thumbnail', 'Video Thumbnail') }}" class="w-48 rounded-lg shadow-lg border-2 border-gray-300">
-                                            </div>
-                                        `;
-                        container.append(thumbnailHtml);
-                    }
-
-                    const fields = [
-                        { label: '{{ __tool('youtube-video-extractor', 'js.video_title', 'Video Title') }}', value: data.title, copyable: true },
-                        { label: '{{ __tool('youtube-video-extractor', 'js.channel_name', 'Channel Name') }}', value: data.channel },
-                        { label: '{{ __tool('youtube-video-extractor', 'js.views', 'Views') }}', value: data.views },
-                        { label: '{{ __tool('youtube-video-extractor', 'js.likes', 'Likes') }}', value: data.likes },
-                        { label: '{{ __tool('youtube-video-extractor', 'js.publish_date', 'Publish Date') }}', value: data.publishDate },
-                        { label: '{{ __tool('youtube-video-extractor', 'js.duration', 'Duration') }}', value: data.duration },
-                        { label: '{{ __tool('youtube-video-extractor', 'js.video_id', 'Video ID') }}', value: data.videoId },
-                        { label: '{{ __tool('youtube-video-extractor', 'js.description', 'Description') }}', value: data.description, copyable: true, multiline: true },
-                        { label: '{{ __tool('youtube-video-extractor', 'js.tags', 'Tags') }}', value: data.tags, copyable: true }
-                    ];
-
-                    fields.forEach(field => {
-                        if (field.value) {
-                            const copyButton = field.copyable ? `
-                                                <button onclick="copyText('${field.label.replace(/\s/g, '')}', this)" 
-                                                    class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 font-semibold transition-colors">
-                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                    </svg>
-                                                    {{ __tool('youtube-video-extractor', 'js.copy', 'Copy') }}
-                                                </button>
-                                            ` : '';
-
-                            const item = $(`
-                                                <div class="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-indigo-200 transition-all">
-                                                    <div class="flex justify-between items-start mb-2">
-                                                        <h4 class="font-bold text-gray-900">${field.label}</h4>
-                                                        ${copyButton}
-                                                    </div>
-                                                    <p id="${field.label.replace(/\s/g, '')}" class="text-gray-700 ${field.multiline ? 'whitespace-pre-wrap' : ''}">${field.value}</p>
-                                                </div>
-                                            `);
-                            container.append(item);
-                        }
-                    });
-                }
-
-                function showError(message) {
-                    $('#errorText').text(message);
-                    $('#errorMessage').removeClass('hidden');
-                    setTimeout(() => {
-                        $('#errorMessage')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    }, 100);
-                }
-            });
-
-            function copyText(id, button) {
-                const text = document.getElementById(id).textContent;
-                navigator.clipboard.writeText(text).then(() => {
-                    const originalText = button.textContent;
-                    button.textContent = '{{ __tool('youtube-video-extractor', 'js.copied', 'Copied!') }}';
-                    button.classList.add('text-green-600');
-                    setTimeout(() => {
-                        button.textContent = originalText;
-                        button.classList.remove('text-green-600');
-                    }, 2000);
-                });
-            }
-        </script>
-
+        </div>
 
         <!-- SEO Content Section -->
         <div
@@ -375,3 +237,163 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script>
+    // Translation keys for JavaScript
+    const translations = {
+        error_enter_url: "{{ __tool('youtube-video-extractor', 'js.error_enter_url') }}",
+        error_valid_url: "{{ __tool('youtube-video-extractor', 'js.error_valid_url') }}",
+        extracting: "{{ __tool('youtube-video-extractor', 'js.extracting') }}",
+        error_failed: "{{ __tool('youtube-video-extractor', 'js.error_failed') }}",
+        video_thumbnail: "{{ __tool('youtube-video-extractor', 'js.video_thumbnail') }}",
+        video_title: "{{ __tool('youtube-video-extractor', 'js.video_title') }}",
+        channel_name: "{{ __tool('youtube-video-extractor', 'js.channel_name') }}",
+        views: "{{ __tool('youtube-video-extractor', 'js.views') }}",
+        likes: "{{ __tool('youtube-video-extractor', 'js.likes') }}",
+        publish_date: "{{ __tool('youtube-video-extractor', 'js.publish_date') }}",
+        duration: "{{ __tool('youtube-video-extractor', 'js.duration') }}",
+        video_id: "{{ __tool('youtube-video-extractor', 'js.video_id') }}",
+        description: "{{ __tool('youtube-video-extractor', 'js.description') }}",
+        tags: "{{ __tool('youtube-video-extractor', 'js.tags') }}",
+        copy: "{{ __tool('youtube-video-extractor', 'js.copy') }}",
+        copied: "{{ __tool('youtube-video-extractor', 'js.copied') }}",
+    };
+
+    $(document).ready(function () {
+        $('#extractorForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const url = $('#url').val().trim();
+            const btn = $(this).find('button[type="submit"]');
+            const btnText = $('#btnText');
+            const originalText = btnText.text();
+
+            // Hide previous results/errors
+            $('#resultsSection').addClass('hidden');
+            $('#errorMessage').addClass('hidden');
+
+            // Validate URL
+            if (!url) {
+                showError(translations.error_enter_url);
+                return;
+            }
+
+            // Basic YouTube URL validation
+            const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/.+$/;
+            if (!youtubeRegex.test(url)) {
+                showError(translations.error_valid_url);
+                return;
+            }
+
+            // Show loading state
+            btn.prop('disabled', true).addClass('opacity-75');
+            btnText.text(translations.extracting);
+
+            // AJAX Request
+            $.ajax({
+                url: '{{ route("youtube.extractor.extract") }}',
+                method: 'POST',
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    url: url
+                },
+                success: function (response) {
+                    if (response.success) {
+                        displayVideoData(response.data);
+                        $('#resultsSection').removeClass('hidden');
+
+                        // Smooth scroll to results
+                        setTimeout(() => {
+                            $('#resultsSection')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }, 100);
+                    }
+                },
+                error: function (xhr) {
+                    const error = xhr.responseJSON?.error || translations.error_failed;
+                    showError(error);
+                },
+                complete: function () {
+                    btn.prop('disabled', false).removeClass('opacity-75');
+                    btnText.text(originalText);
+                }
+            });
+        });
+
+        function displayVideoData(data) {
+            const container = $('#videoData');
+            container.empty();
+
+            // Add thumbnail if available
+            if (data.thumbnail) {
+                const thumbnailHtml = `
+                    <div class="bg-white rounded-xl p-4 border-2 border-gray-200 mb-4">
+                        <h4 class="font-bold text-gray-900 mb-3">${translations.video_thumbnail}</h4>
+                        <img src="${data.thumbnail}" alt="${translations.video_thumbnail}" class="w-48 rounded-lg shadow-lg border-2 border-gray-300">
+                    </div>
+                `;
+                container.append(thumbnailHtml);
+            }
+
+            const fields = [
+                { label: translations.video_title, value: data.title, copyable: true },
+                { label: translations.channel_name, value: data.channel },
+                { label: translations.views, value: data.views },
+                { label: translations.likes, value: data.likes },
+                { label: translations.publish_date, value: data.publishDate },
+                { label: translations.duration, value: data.duration },
+                { label: translations.video_id, value: data.videoId },
+                { label: translations.description, value: data.description, copyable: true, multiline: true },
+                { label: translations.tags, value: data.tags, copyable: true }
+            ];
+
+            fields.forEach(field => {
+                if (field.value) {
+                    const copyButton = field.copyable ? `
+                        <button onclick="copyText('${field.label.replace(/\s/g, '')}', this)" 
+                            class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 font-semibold transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                            ${translations.copy}
+                        </button>
+                    ` : '';
+
+                    const item = $(`
+                        <div class="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-indigo-200 transition-all">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-bold text-gray-900">${field.label}</h4>
+                                ${copyButton}
+                            </div>
+                            <p id="${field.label.replace(/\s/g, '')}" class="text-gray-700 ${field.multiline ? 'whitespace-pre-wrap' : ''}">${field.value}</p>
+                        </div>
+                    `);
+                    container.append(item);
+                }
+            });
+        }
+
+        function showError(message) {
+            $('#errorText').text(message);
+            $('#errorMessage').removeClass('hidden');
+            setTimeout(() => {
+                $('#errorMessage')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        }
+    });
+
+    function copyText(id, button) {
+        const text = document.getElementById(id).textContent;
+        navigator.clipboard.writeText(text).then(() => {
+            const originalText = button.textContent;
+            button.textContent = translations.copied;
+            button.classList.add('text-green-600');
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.classList.remove('text-green-600');
+            }, 2000);
+        });
+    }
+</script>
+@endpush

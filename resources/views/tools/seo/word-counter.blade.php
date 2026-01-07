@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('word-counter', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('word-counter', 'seo.description', $tool->meta_description))
 @if($tool->meta_keywords)
 @section('meta_keywords', $tool->meta_keywords)
 @endif
@@ -14,27 +14,27 @@
         <!-- Tool Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-blue-200 mb-8">
             <div class="mb-6">
-                <label for="textInput" class="form-label text-base">Enter or Paste Your Text</label>
+                <label for="textInput" class="form-label text-base">{{ __tool('word-counter', 'form.label') }}</label>
                 <textarea id="textInput" class="form-input min-h-[300px]"
-                    placeholder="Start typing or paste your text here..."></textarea>
+                    placeholder="{{ __tool('word-counter', 'form.placeholder') }}"></textarea>
             </div>
 
             <!-- Real-time Stats -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                 <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border-2 border-blue-200">
-                    <div class="text-sm text-gray-600 mb-1">Words</div>
+                    <div class="text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.words') }}</div>
                     <div class="text-3xl font-black text-blue-600" id="wordCount">0</div>
                 </div>
                 <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-4 border-2 border-indigo-200">
-                    <div class="text-sm text-gray-600 mb-1">Characters</div>
+                    <div class="text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.characters') }}</div>
                     <div class="text-3xl font-black text-indigo-600" id="charCount">0</div>
                 </div>
                 <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border-2 border-purple-200">
-                    <div class="text-sm text-gray-600 mb-1">Sentences</div>
+                    <div class="text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.sentences') }}</div>
                     <div class="text-3xl font-black text-purple-600" id="sentenceCount">0</div>
                 </div>
                 <div class="bg-gradient-to-br from-pink-50 to-red-50 rounded-xl p-4 border-2 border-pink-200">
-                    <div class="text-sm text-gray-600 mb-1">Reading Time</div>
+                    <div class="text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.reading_time') }}</div>
                     <div class="text-3xl font-black text-pink-600" id="readingTime">0m</div>
                 </div>
             </div>
@@ -42,23 +42,23 @@
             <!-- Additional Stats -->
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                 <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
-                    <div class="text-sm text-gray-600 mb-1">Paragraphs</div>
+                    <div class=" text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.paragraphs') }}</div>
                     <div class="text-xl font-bold text-gray-900" id="paragraphCount">0</div>
                 </div>
                 <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
-                    <div class="text-sm text-gray-600 mb-1">Long Sentences</div>
+                    <div class="text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.long_sentences') }}</div>
                     <div class="text-xl font-bold text-gray-900" id="longSentences">0</div>
                 </div>
                 <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
-                    <div class="text-sm text-gray-600 mb-1">Short Sentences</div>
+                    <div class="text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.short_sentences') }}</div>
                     <div class="text-xl font-bold text-gray-900" id="shortSentences">0</div>
                 </div>
                 <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
-                    <div class="text-sm text-gray-600 mb-1">Characters (no spaces)</div>
+                    <div class="text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.chars_no_spaces') }}</div>
                     <div class="text-xl font-bold text-gray-900" id="charCountNoSpaces">0</div>
                 </div>
                 <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
-                    <div class="text-sm text-gray-600 mb-1">Average Word Length</div>
+                    <div class="text-sm text-gray-600 mb-1">{{ __tool('word-counter', 'stats.avg_word_length') }}</div>
                     <div class="text-xl font-bold text-gray-900" id="avgWordLength">0</div>
                 </div>
             </div>
@@ -75,62 +75,56 @@
                             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Free Word Counter Tool</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Count words, characters, and analyze your text in
-                    real-time</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{{ __tool('word-counter', 'content.main_title') }}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ __tool('word-counter', 'content.main_description') }}
+                </p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free Word Counter tool provides instant, real-time analysis of your text. Perfect for writers, students,
-                bloggers, and content creators who need to track word count, character count, reading time, and other
-                important text metrics. Get accurate counts for essays, articles, social media posts, and any written
-                content.
+                {{ __tool('word-counter', 'content.intro') }}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('word-counter', 'content.features_title') }}</h3>
             <div class="grid md:grid-cols-2 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📊</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Real-Time Counting</h4>
-                    <p class="text-gray-600 text-sm">Instant updates as you type or paste text</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('word-counter', 'content.feature1_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('word-counter', 'content.feature1_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📖</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Reading Time</h4>
-                    <p class="text-gray-600 text-sm">Estimate how long it takes to read your content</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('word-counter', 'content.feature2_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('word-counter', 'content.feature2_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔢</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Multiple Metrics</h4>
-                    <p class="text-gray-600 text-sm">Words, characters, sentences, paragraphs, and more</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('word-counter', 'content.feature3_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('word-counter', 'content.feature3_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚡</div>
-                    <h4 class="font-bold text-gray-900 mb-2">100% Free</h4>
-                    <p class="text-gray-600 text-sm">No limits, no registration required</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('word-counter', 'content.feature4_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('word-counter', 'content.feature4_desc') }}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('word-counter', 'content.faq_title') }}</h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">How accurate is the word count?</h4>
-                    <p class="text-gray-700 leading-relaxed">Our word counter is highly accurate and counts words the same
-                        way most word processors do. It counts any sequence of characters separated by spaces as a word.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('word-counter', 'content.faq1_q') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('word-counter', 'content.faq1_a') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">How is reading time calculated?</h4>
-                    <p class="text-gray-700 leading-relaxed">Reading time is estimated based on an average reading speed of
-                        200-250 words per minute, which is the typical reading speed for adults.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('word-counter', 'content.faq2_q') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('word-counter', 'content.faq2_a') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my text stored or saved?</h4>
-                    <p class="text-gray-700 leading-relaxed">No! All text analysis happens in your browser. Your text is
-                        never sent to our servers or stored anywhere. Your privacy is completely protected.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('word-counter', 'content.faq3_q') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('word-counter', 'content.faq3_a') }}</p>
                 </div>
             </div>
         </div>

@@ -1,25 +1,23 @@
 ﻿@extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('youtube-channel-id-finder', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('youtube-channel-id-finder', 'seo.description', $tool->meta_description))
 
 @section('content')
     <div class="max-w-6xl mx-auto">
-        <!-- Header -->
-        <!-- Header -->
         <x-tool-hero :tool="$tool" />
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('youtube-channel-id-finder', 'how_to_use.step2', 'Find Channel ID') }}</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('youtube-channel-id-finder', 'form.title') }}</h2>
             <form id="channelForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="url" class="form-label text-base">{{ __tool('youtube-channel-id-finder', 'form.url_label', 'YouTube Channel URL') }}</label>
+                    <label for="url" class="form-label text-base">{{ __tool('youtube-channel-id-finder', 'form.url_label') }}</label>
                     <input type="url" id="url" name="url" class="form-input"
-                        placeholder="https://www.youtube.com/@channelname or https://www.youtube.com/c/channelname"
+                        placeholder="{{ __tool('youtube-channel-id-finder', 'form.url_placeholder') }}"
                         required>
-                    <p class="text-sm text-gray-500 mt-2">{{ __tool('youtube-channel-id-finder', 'form.url_help', 'Paste any YouTube channel URL to find its unique ID') }}</p>
+                    <p class="text-sm text-gray-500 mt-2">{{ __tool('youtube-channel-id-finder', 'form.url_help') }}</p>
                 </div>
 
                 <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
@@ -27,7 +25,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <span id="btnText">{{ __tool('youtube-channel-id-finder', 'form.find_button', 'Find Channel ID') }}</span>
+                    <span id="btnText">{{ __tool('youtube-channel-id-finder', 'form.find_button') }}</span>
                 </button>
             </form>
 
@@ -46,17 +44,17 @@
             <!-- Results Section -->
             <div id="resultsSection" class="hidden mt-8">
                 <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Channel ID Found!</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4" id="successTitle">{{ __tool('youtube-channel-id-finder', 'js.success_title') }}</h3>
                     <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
                         <div class="flex justify-between items-start mb-2">
-                            <h4 class="font-bold text-gray-900">Channel ID</h4>
+                            <h4 class="font-bold text-gray-900" id="channelIdLabel">{{ __tool('youtube-channel-id-finder', 'js.channel_id') }}</h4>
                             <button onclick="copyChannelId()"
                                 class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 font-semibold transition-colors">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                                 </svg>
-                                Copy
+                                <span id="copyText">{{ __tool('youtube-channel-id-finder', 'js.copy') }}</span>
                             </button>
                         </div>
                         <p id="channelId" class="text-gray-700 font-mono break-all text-lg"></p>
@@ -65,120 +63,6 @@
                 </div>
             </div>
         </div>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#channelForm').on('submit', function (e) {
-                    e.preventDefault();
-
-                    const url = $('#url').val().trim();
-                    const btn = $(this).find('button[type="submit"]');
-                    const btnText = $('#btnText');
-                    const originalText = btnText.text();
-
-                    // Hide previous results/errors
-                    $('#resultsSection').addClass('hidden');
-                    $('#errorMessage').addClass('hidden');
-
-                    // Validate URL
-                    if (!url) {
-                        showError('Please enter a YouTube channel URL');
-                        return;
-                    }
-
-                    // Basic YouTube channel URL validation
-                    const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com)\/(c\/|@|channel\/|user\/).+$/;
-                    if (!youtubeRegex.test(url)) {
-                        showError('Please enter a valid YouTube channel URL');
-                        return;
-                    }
-
-                    // Show loading state
-                    btn.prop('disabled', true).addClass('opacity-75');
-                    btnText.text('Finding ID...');
-
-                    // AJAX Request
-                    $.ajax({
-                        url: '{{ route("youtube.channel-id.find") }}',
-                        method: 'POST',
-                        data: {
-                            _token: '{{ csrf_token() }}',
-                            url: url
-                        },
-                        success: function (response) {
-                            if (response.success) {
-                                displayResult(response.data);
-                                $('#resultsSection').removeClass('hidden');
-
-                                // Smooth scroll to results
-                                setTimeout(() => {
-                                    $('#resultsSection')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                                }, 100);
-                            }
-                        },
-                        error: function (xhr) {
-                            const error = xhr.responseJSON?.error || 'Failed to find channel ID. Please try again.';
-                            showError(error);
-                        },
-                        complete: function () {
-                            btn.prop('disabled', false).removeClass('opacity-75');
-                            btnText.text(originalText);
-                        }
-                    });
-                });
-
-                function displayResult(data) {
-                    $('#channelId').text(data.channelId);
-
-                    const infoContainer = $('#channelInfo');
-                    infoContainer.empty();
-
-                    if (data.channelName) {
-                        const nameCard = $(`
-                                            <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
-                                                <h4 class="font-bold text-gray-900 mb-2">Channel Name</h4>
-                                                <p class="text-gray-700">${data.channelName}</p>
-                                            </div>
-                                        `);
-                        infoContainer.append(nameCard);
-                    }
-
-                    if (data.channelUrl) {
-                        const urlCard = $(`
-                                            <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
-                                                <h4 class="font-bold text-gray-900 mb-2">Channel URL</h4>
-                                                <a href="${data.channelUrl}" target="_blank" class="text-indigo-600 hover:text-indigo-800 break-all">${data.channelUrl}</a>
-                                            </div>
-                                        `);
-                        infoContainer.append(urlCard);
-                    }
-                }
-
-                function showError(message) {
-                    $('#errorText').text(message);
-                    $('#errorMessage').removeClass('hidden');
-                    setTimeout(() => {
-                        $('#errorMessage')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    }, 100);
-                }
-            });
-
-            function copyChannelId() {
-                const id = $('#channelId').text();
-                navigator.clipboard.writeText(id).then(() => {
-                    const btn = event.target.closest('button');
-                    const originalHTML = btn.innerHTML;
-                    btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Copied!';
-                    btn.classList.add('text-green-600');
-
-                    setTimeout(() => {
-                        btn.innerHTML = originalHTML;
-                        btn.classList.remove('text-green-600');
-                    }, 2000);
-                });
-            }
-        </script>
 
         <!-- SEO Content Section -->
         <div
@@ -266,37 +150,37 @@
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚙️</div>
                     <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'use_cases.case1', 'API Integration') }}</h4>
-                    <p class="text-gray-600 text-sm">Use channel IDs in YouTube Data API calls for your applications</p>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-channel-id-finder', 'use_cases.case1_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📈</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Analytics Tools</h4>
-                    <p class="text-gray-600 text-sm">Build custom analytics dashboards and tracking systems</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'use_cases.case2') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-channel-id-finder', 'use_cases.case2_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-rose-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🤝</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Influencer Marketing</h4>
-                    <p class="text-gray-600 text-sm">Track and manage influencer partnerships efficiently</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'use_cases.case3') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-channel-id-finder', 'use_cases.case3_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔗</div>
-                    <h4 class="font-bold text-gray-900 mb-2">RSS Feeds</h4>
-                    <p class="text-gray-600 text-sm">Create RSS feeds for channel uploads using channel IDs</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'use_cases.case4') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-channel-id-finder', 'use_cases.case4_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🎬</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Content Curation</h4>
-                    <p class="text-gray-600 text-sm">Organize and categorize channels for content strategies</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'use_cases.case5') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-channel-id-finder', 'use_cases.case5_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-rose-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔧</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Automation</h4>
-                    <p class="text-gray-600 text-sm">Automate channel monitoring and data collection</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'use_cases.case6') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-channel-id-finder', 'use_cases.case6_desc') }}</p>
                 </div>
             </div>
 
@@ -307,14 +191,14 @@
                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                             clip-rule="evenodd" />
                     </svg>
-                    💡 Pro Tips: Using Channel IDs
+                    {{ __tool('youtube-channel-id-finder', 'pro_tips.title') }}
                 </h4>
                 <ul class="text-blue-800 leading-relaxed space-y-2">
-                    <li>✅ Channel IDs always start with "UC" followed by 22 characters</li>
-                    <li>✅ Use channel IDs instead of usernames for API reliability</li>
-                    <li>✅ Channel IDs never change, even if the channel name or handle changes</li>
-                    <li>✅ Store channel IDs in your database for long-term tracking</li>
-                    <li>✅ Use channel IDs to create direct RSS feed URLs: youtube.com/feeds/videos.xml?channel_id=ID</li>
+                    <li>✅ {{ __tool('youtube-channel-id-finder', 'pro_tips.tip1') }}</li>
+                    <li>✅ {{ __tool('youtube-channel-id-finder', 'pro_tips.tip2') }}</li>
+                    <li>✅ {{ __tool('youtube-channel-id-finder', 'pro_tips.tip3') }}</li>
+                    <li>✅ {{ __tool('youtube-channel-id-finder', 'pro_tips.tip4') }}</li>
+                    <li>✅ {{ __tool('youtube-channel-id-finder', 'pro_tips.tip5') }}</li>
                 </ul>
             </div>
 
@@ -337,13 +221,144 @@
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-channel-id-finder', 'faq.a5', 'Yes! Channel IDs are required for most YouTube Data API endpoints. Use them to fetch channel statistics, videos, playlists, and more. Our tool makes it easy to get the IDs you need for your API projects.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What URL formats does this tool support?</h4>
-                    <p class="text-gray-700 leading-relaxed">Our tool supports all YouTube channel URL formats: @handle
-                        (youtube . com / @username), /c/ (youtube.com/c/channelname), /channel/ (youtube.com/channel/ID),
-                        and
-                        /user/ (youtube.com/user/username).</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-channel-id-finder', 'faq.q6', 'What URL formats does this tool support?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-channel-id-finder', 'faq.a6', 'Our tool supports all YouTube channel URL formats: @handle (youtube.com/@username), /c/ (youtube.com/c/channelname), /channel/ (youtube.com/channel/ID), and /user/ (youtube.com/user/username).') }}</p>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script>
+    // Translation keys for JavaScript
+    const translations = {
+        error_enter_url: "{{ __tool('youtube-channel-id-finder', 'js.error_enter_url') }}",
+        error_valid_url: "{{ __tool('youtube-channel-id-finder', 'js.error_valid_url') }}",
+        finding: "{{ __tool('youtube-channel-id-finder', 'js.finding') }}",
+        error_failed: "{{ __tool('youtube-channel-id-finder', 'js.error_failed') }}",
+        success_title: "{{ __tool('youtube-channel-id-finder', 'js.success_title') }}",
+        channel_id: "{{ __tool('youtube-channel-id-finder', 'js.channel_id') }}",
+        channel_name: "{{ __tool('youtube-channel-id-finder', 'js.channel_name') }}",
+        channel_url: "{{ __tool('youtube-channel-id-finder', 'js.channel_url') }}",
+        copy: "{{ __tool('youtube-channel-id-finder', 'js.copy') }}",
+        copied: "{{ __tool('youtube-channel-id-finder', 'js.copied') }}",
+    };
+
+    $(document).ready(function () {
+        // Set initial text for results labels
+        $('#successTitle').text(translations.success_title);
+        $('#channelIdLabel').text(translations.channel_id);
+        $('#copyText').text(translations.copy);
+
+        $('#channelForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const url = $('#url').val().trim();
+            const btn = $(this).find('button[type="submit"]');
+            const btnText = $('#btnText');
+            const originalText = btnText.text();
+
+            // Hide previous results/errors
+            $('#resultsSection').addClass('hidden');
+            $('#errorMessage').addClass('hidden');
+
+            // Validate URL
+            if (!url) {
+                showError(translations.error_enter_url);
+                return;
+            }
+
+            // Basic YouTube channel URL validation
+            const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com)\/(c\/|@|channel\/|user\/).+$/;
+            if (!youtubeRegex.test(url)) {
+                showError(translations.error_valid_url);
+                return;
+            }
+
+            // Show loading state
+            btn.prop('disabled', true).addClass('opacity-75');
+            btnText.text(translations.finding);
+
+            // AJAX Request
+            $.ajax({
+                url: '{{ route("youtube.channel-id.find") }}',
+                method: 'POST',
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    url: url
+                },
+                success: function (response) {
+                    if (response.success) {
+                        displayResult(response.data);
+                        $('#resultsSection').removeClass('hidden');
+
+                        // Smooth scroll to results
+                        setTimeout(() => {
+                            $('#resultsSection')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }, 100);
+                    }
+                },
+                error: function (xhr) {
+                    const error = xhr.responseJSON?.error || translations.error_failed;
+                    showError(error);
+                },
+                complete: function () {
+                    btn.prop('disabled', false).removeClass('opacity-75');
+                    btnText.text(originalText);
+                }
+            });
+        });
+
+        function displayResult(data) {
+            $('#channelId').text(data.channelId);
+
+            const infoContainer = $('#channelInfo');
+            infoContainer.empty();
+
+            if (data.channelName) {
+                const nameCard = $(`
+                    <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
+                        <h4 class="font-bold text-gray-900 mb-2">${translations.channel_name}</h4>
+                        <p class="text-gray-700">${data.channelName}</p>
+                    </div>
+                `);
+                infoContainer.append(nameCard);
+            }
+
+            if (data.channelUrl) {
+                const urlCard = $(`
+                    <div class="bg-white rounded-xl p-4 border-2 border-gray-200">
+                        <h4 class="font-bold text-gray-900 mb-2">${translations.channel_url}</h4>
+                        <a href="${data.channelUrl}" target="_blank" class="text-indigo-600 hover:text-indigo-800 break-all">${data.channelUrl}</a>
+                    </div>
+                `);
+                infoContainer.append(urlCard);
+            }
+        }
+
+        function showError(message) {
+            $('#errorText').text(message);
+            $('#errorMessage').removeClass('hidden');
+            setTimeout(() => {
+                $('#errorMessage')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        }
+    });
+
+    function copyChannelId() {
+        const id = $('#channelId').text();
+        navigator.clipboard.writeText(id).then(() => {
+            const btn = event.target.closest('button');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> ' + translations.copied;
+            btn.classList.add('text-green-600');
+
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+                btn.classList.remove('text-green-600');
+            }, 2000);
+        });
+    }
+</script>
+@endpush

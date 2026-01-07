@@ -71,61 +71,6 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#earningsForm').on('submit', function (e) {
-                    e.preventDefault();
-
-                    const views = parseInt($('#views').val());
-                    const cpm = parseFloat($('#cpm').val());
-
-                    if (!views || views < 0) {
-                        alert('Please enter valid daily views');
-                        return;
-                    }
-
-                    if (!cpm || cpm < 0) {
-                        alert('Please enter valid CPM');
-                        return;
-                    }
-
-                    // Calculate earnings (CPM is per 1000 views)
-                    const dailyEarnings = (views / 1000) * cpm;
-                    const monthlyEarnings = dailyEarnings * 30;
-                    const yearlyEarnings = dailyEarnings * 365;
-
-                    // Calculate ranges (low: 50% of CPM, high: 150% of CPM)
-                    const lowCpm = cpm * 0.5;
-                    const highCpm = cpm * 1.5;
-
-                    const dailyLow = (views / 1000) * lowCpm;
-                    const dailyHigh = (views / 1000) * highCpm;
-                    const monthlyLow = dailyLow * 30;
-                    const monthlyHigh = dailyHigh * 30;
-                    const yearlyLow = dailyLow * 365;
-                    const yearlyHigh = dailyHigh * 365;
-
-                    // Display results
-                    $('#dailyEarnings').text('$' + dailyEarnings.toFixed(2));
-                    $('#dailyRange').text('$' + dailyLow.toFixed(2) + ' - $' + dailyHigh.toFixed(2));
-
-                    $('#monthlyEarnings').text('$' + monthlyEarnings.toFixed(2));
-                    $('#monthlyRange').text('$' + monthlyLow.toFixed(2) + ' - $' + monthlyHigh.toFixed(2));
-
-                    $('#yearlyEarnings').text('$' + yearlyEarnings.toFixed(2));
-                    $('#yearlyRange').text('$' + yearlyLow.toFixed(2) + ' - $' + yearlyHigh.toFixed(2));
-
-                    $('#resultsSection').removeClass('hidden');
-
-                    // Smooth scroll to results
-                    setTimeout(() => {
-                        $('#resultsSection')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    }, 100);
-                });
-            });
-        </script>
-
         <!-- SEO Content Section -->
         <div
             class="bg-gradient-to-br from-red-50 to-pink-50 rounded-3xl p-8 md:p-12 mt-8 border-2 border-red-100 shadow-2xl">
@@ -290,3 +235,65 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script>
+    // Translation keys for JavaScript
+    const translations = {
+        error_views: "{{ __tool('youtube-earnings-calculator', 'js.error_views') }}",
+        error_cpm: "{{ __tool('youtube-earnings-calculator', 'js.error_cpm') }}",
+    };
+
+    $(document).ready(function () {
+        $('#earningsForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const views = parseInt($('#views').val());
+            const cpm = parseFloat($('#cpm').val());
+
+            if (!views || views < 0) {
+                alert(translations.error_views);
+                return;
+            }
+
+            if (!cpm || cpm < 0) {
+                alert(translations.error_cpm);
+                return;
+            }
+
+            // Calculate earnings (CPM is per 1000 views)
+            const dailyEarnings = (views / 1000) * cpm;
+            const monthlyEarnings = dailyEarnings * 30;
+            const yearlyEarnings = dailyEarnings * 365;
+
+            // Calculate ranges (low: 50% of CPM, high: 150% of CPM)
+            const lowCpm = cpm * 0.5;
+            const highCpm = cpm * 1.5;
+
+            const dailyLow = (views / 1000) * lowCpm;
+            const dailyHigh = (views / 1000) * highCpm;
+            const monthlyLow = dailyLow * 30;
+            const monthlyHigh = dailyHigh * 30;
+            const yearlyLow = dailyLow * 365;
+            const yearlyHigh = dailyHigh * 365;
+
+            // Display results
+            $('#dailyEarnings').text('$' + dailyEarnings.toFixed(2));
+            $('#dailyRange').text('$' + dailyLow.toFixed(2) + ' - $' + dailyHigh.toFixed(2));
+
+            $('#monthlyEarnings').text('$' + monthlyEarnings.toFixed(2));
+            $('#monthlyRange').text('$' + monthlyLow.toFixed(2) + ' - $' + monthlyHigh.toFixed(2));
+
+            $('#yearlyEarnings').text('$' + yearlyEarnings.toFixed(2));
+            $('#yearlyRange').text('$' + yearlyLow.toFixed(2) + ' - $' + yearlyHigh.toFixed(2));
+
+            $('#resultsSection').removeClass('hidden');
+
+            // Smooth scroll to results
+            setTimeout(() => {
+                $('#resultsSection')[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        });
+    });
+</script>
+@endpush

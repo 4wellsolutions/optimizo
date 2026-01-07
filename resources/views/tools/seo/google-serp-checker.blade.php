@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
-@section('meta_keywords', $tool->meta_keywords)
+@section('title', __tool('google-serp-checker', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('google-serp-checker', 'seo.description', $tool->meta_description))
+@section('meta_keywords', __tool('google-serp-checker', 'seo.keywords', $tool->meta_keywords))
 
 @section('content')
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -23,7 +23,7 @@
                     <!-- Keyword Input -->
                     <div>
                         <label for="keyword" class="block text-sm font-bold text-gray-700 mb-2">
-                            Target Keyword
+                            {{ __tool('google-serp-checker', 'form.keyword_label') }}
                         </label>
                         <input type="text" id="keyword" name="keyword" required
                             class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent font-medium text-gray-900 placeholder-gray-400 text-base transition-colors hover:border-purple-300"
@@ -100,7 +100,7 @@
                 <div class="pt-4">
                     <button type="submit"
                         class="btn-primary w-full px-8 py-4 rounded-xl flex items-center justify-center gap-3 transform hover:-translate-y-0.5 transition-all shadow-lg hover:shadow-xl text-lg font-bold">
-                        <span>Check Live Rankings</span>
+                        <span>{{ __tool('google-serp-checker', 'form.button') }}</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3" />

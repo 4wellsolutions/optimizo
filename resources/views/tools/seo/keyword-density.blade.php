@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('keyword-density', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('keyword-density', 'seo.description', $tool->meta_description))
 @if($tool->meta_keywords)
 @section('meta_keywords', $tool->meta_keywords)
 @endif
@@ -14,9 +14,9 @@
         <!-- Tool Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-purple-200 mb-8">
             <div class="mb-6">
-                <label for="textInput" class="form-label text-base">Enter Your Content</label>
+                <label for="textInput" class="form-label text-base">{{ __tool('keyword-density', 'form.label') }}</label>
                 <textarea id="textInput" class="form-input min-h-[300px]"
-                    placeholder="Paste your article, blog post, or web page content here..."></textarea>
+                    placeholder="{{ __tool('keyword-density', 'form.placeholder') }}"></textarea>
             </div>
 
             <button onclick="analyzeKeywords()" class="btn-primary w-full justify-center text-lg py-4 mb-6">
@@ -24,12 +24,12 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
-                <span>Analyze Keyword Density</span>
+                <span>{{ __tool('keyword-density', 'form.button') }}</span>
             </button>
 
             <!-- Results -->
             <div id="results" class="hidden">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Keyword Density Analysis</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ __tool('keyword-density', 'results.title') }}</h3>
 
                 <!-- Summary Stats -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
@@ -363,12 +363,12 @@
                 const densityClass = density > 5 ? 'text-red-600' : density > 3 ? 'text-orange-600' : density > 1 ? 'text-yellow-600' : 'text-green-600';
 
                 return `
-                            <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                <td class="py-3 px-4 font-medium text-gray-900">${word}</td>
-                                <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
-                                <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
-                            </tr>
-                        `;
+                                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium text-gray-900">${word}</td>
+                                    <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
+                                    <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
+                                </tr>
+                            `;
             }).join('');
 
             // Build 2-word phrase table
@@ -378,12 +378,12 @@
                 const densityClass = density > 3 ? 'text-red-600' : density > 2 ? 'text-orange-600' : density > 1 ? 'text-yellow-600' : 'text-green-600';
 
                 return `
-                            <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                <td class="py-3 px-4 font-medium text-gray-900">${phrase}</td>
-                                <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
-                                <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
-                            </tr>
-                        `;
+                                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium text-gray-900">${phrase}</td>
+                                    <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
+                                    <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
+                                </tr>
+                            `;
             }).join('');
 
             // Build 3-word phrase table
@@ -393,12 +393,12 @@
                 const densityClass = density > 2 ? 'text-red-600' : density > 1.5 ? 'text-orange-600' : density > 1 ? 'text-yellow-600' : 'text-green-600';
 
                 return `
-                            <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                <td class="py-3 px-4 font-medium text-gray-900">${phrase}</td>
-                                <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
-                                <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
-                            </tr>
-                        `;
+                                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium text-gray-900">${phrase}</td>
+                                    <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
+                                    <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
+                                </tr>
+                            `;
             }).join('');
 
             // Show results

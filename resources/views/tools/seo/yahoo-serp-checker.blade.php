@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('yahoo-serp-checker', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('yahoo-serp-checker', 'seo.description', $tool->meta_description))
 @section('meta_keywords', $tool->meta_keywords)
 
 @section('content')
