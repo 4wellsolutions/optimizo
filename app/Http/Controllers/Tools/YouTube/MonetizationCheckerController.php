@@ -11,7 +11,7 @@ class MonetizationCheckerController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'youtube-monetization-checker')->firstOrFail();
-        return view('tools.youtube.monetization-checker', compact('tool'));
+        return view('tools.youtube.youtube-monetization-checker', compact('tool'));
     }
 
     public function check(Request $request)

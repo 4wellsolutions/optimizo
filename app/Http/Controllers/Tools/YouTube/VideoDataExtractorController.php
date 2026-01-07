@@ -12,7 +12,7 @@ class VideoDataExtractorController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'youtube-video-data-extractor')->firstOrFail();
-        return view('tools.youtube.extractor', compact('tool'));
+        return view('tools.youtube.youtube-video-extractor', compact('tool'));
     }
 
     public function extract(Request $request)

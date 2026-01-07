@@ -9,7 +9,7 @@ class YouTubeController extends Controller
 {
     public function thumbnail()
     {
-        return view('tools.youtube.thumbnail');
+        return view('tools.youtube.youtube-thumbnail-downloader');
     }
 
     public function downloadThumbnail(Request $request)
@@ -58,12 +58,12 @@ class YouTubeController extends Controller
             return response()->json(['success' => true, 'thumbnails' => $thumbnails, 'videoId' => $videoId]);
         }
 
-        return view('tools.youtube.thumbnail', compact('thumbnails', 'videoId'));
+        return view('tools.youtube.youtube-thumbnail-downloader', compact('thumbnails', 'videoId'));
     }
 
     public function extractor()
     {
-        return view('tools.youtube.extractor');
+        return view('tools.youtube.youtube-video-extractor');
     }
 
     public function extractData(Request $request)
@@ -155,7 +155,7 @@ class YouTubeController extends Controller
                 return response()->json(['success' => true, 'data' => $data]);
             }
 
-            return view('tools.youtube.extractor', compact('data'));
+            return view('tools.youtube.youtube-video-extractor', compact('data'));
         } catch (\Exception $e) {
             $error = 'Failed to extract video data. Please try again.';
             if ($request->ajax() || $request->wantsJson()) {
@@ -174,7 +174,7 @@ class YouTubeController extends Controller
 
     public function tags()
     {
-        return view('tools.youtube.tags');
+        return view('tools.youtube.youtube-tag-generator');
     }
 
     public function generateTags(Request $request)
@@ -188,7 +188,7 @@ class YouTubeController extends Controller
         // Generate related tags based on the keyword
         $tags = $this->generateRelatedTags($keyword);
 
-        return view('tools.youtube.tags', compact('tags', 'keyword'));
+        return view('tools.youtube.youtube-tag-generator', compact('tags', 'keyword'));
     }
 
     private function extractVideoId($url)
@@ -236,7 +236,7 @@ class YouTubeController extends Controller
     // Channel Data Extractor
     public function channel()
     {
-        return view('tools.youtube.channel');
+        return view('tools.youtube.youtube-channel');
     }
 
     public function extractChannelData(Request $request)
@@ -368,7 +368,7 @@ class YouTubeController extends Controller
                 return response()->json(['success' => true, 'data' => $data]);
             }
 
-            return view('tools.youtube.channel', compact('data'));
+            return view('tools.youtube.youtube-channel', compact('data'));
         } catch (\Exception $e) {
             $error = 'Failed to extract channel data. Please try again.';
             if ($request->ajax() || $request->wantsJson()) {
@@ -402,7 +402,7 @@ class YouTubeController extends Controller
     // YouTube Handle Availability Checker
     public function handleChecker()
     {
-        return view('tools.youtube.handle-checker');
+        return view('tools.youtube.youtube-handle-checker');
     }
 
     public function checkHandle(Request $request)
@@ -450,7 +450,7 @@ class YouTubeController extends Controller
                 return response()->json(['success' => true, 'data' => $data]);
             }
 
-            return view('tools.youtube.handle-checker', compact('data'));
+            return view('tools.youtube.youtube-handle-checker', compact('data'));
         } catch (\Exception $e) {
             $error = 'Failed to check handle availability';
             if ($request->ajax() || $request->wantsJson()) {
@@ -463,7 +463,7 @@ class YouTubeController extends Controller
     // YouTube Monetization Checker
     public function monetizationChecker()
     {
-        return view('tools.youtube.monetization-checker');
+        return view('tools.youtube.youtube-monetization-checker');
     }
 
     public function checkMonetization(Request $request)
@@ -501,7 +501,7 @@ class YouTubeController extends Controller
                 return response()->json(['success' => true, 'data' => $data]);
             }
 
-            return view('tools.youtube.monetization-checker', compact('data'));
+            return view('tools.youtube.youtube-monetization-checker', compact('data'));
         } catch (\Exception $e) {
             $error = 'Failed to check monetization status';
             if ($request->ajax() || $request->wantsJson()) {

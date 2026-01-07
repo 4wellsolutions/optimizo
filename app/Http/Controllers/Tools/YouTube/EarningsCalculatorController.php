@@ -11,7 +11,7 @@ class EarningsCalculatorController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'youtube-earnings-calculator')->firstOrFail();
-        return view('tools.youtube.earnings-calculator', compact('tool'));
+        return view('tools.youtube.youtube-earnings-calculator', compact('tool'));
     }
 
     public function calculate(Request $request)

@@ -10,6 +10,6 @@ class TagsGeneratorController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'youtube-tag-generator')->firstOrFail();
-        return view('tools.youtube.tags', compact('tool'));
+        return view('tools.youtube.youtube-tag-generator', compact('tool'));
     }
 }

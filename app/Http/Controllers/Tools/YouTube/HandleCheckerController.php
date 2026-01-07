@@ -11,7 +11,7 @@ class HandleCheckerController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'youtube-handle-checker')->firstOrFail();
-        return view('tools.youtube.handle-checker', compact('tool'));
+        return view('tools.youtube.youtube-handle-checker', compact('tool'));
     }
 
     public function check(Request $request)

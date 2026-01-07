@@ -11,7 +11,7 @@ class ChannelIdFinderController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'youtube-channel-id-finder')->firstOrFail();
-        return view('tools.youtube.channel-id-finder', compact('tool'));
+        return view('tools.youtube.youtube-channel-id-finder', compact('tool'));
     }
 
     public function find(Request $request)

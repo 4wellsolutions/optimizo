@@ -11,7 +11,7 @@ class ThumbnailDownloaderController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'youtube-thumbnail-downloader')->firstOrFail();
-        return view('tools.youtube.thumbnail', compact('tool'));
+        return view('tools.youtube.youtube-thumbnail-downloader', compact('tool'));
     }
 
     public function download(Request $request)

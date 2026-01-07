@@ -11,7 +11,7 @@ class VideoTagsExtractorController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'youtube-video-tags-extractor')->firstOrFail();
-        return view('tools.youtube.video-tags-extractor', compact('tool'));
+        return view('tools.youtube.youtube-video-tags-extractor', compact('tool'));
     }
 
     public function extract(Request $request)

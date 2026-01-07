@@ -44,8 +44,24 @@ if (!function_exists('__tool')) {
     function __tool(string $toolSlug, string $key, string $default = ''): string
     {
         $locale = app()->getLocale();
-        $translationKey = "tools.{$toolSlug}.{$key}";
-        $translation = trans($translationKey, [], $locale);
-        return ($translation === $translationKey) ? $default : $translation;
+
+        // Extract category from tool slug (e.g., 'youtube-channel' -> 'youtube')
+        $category = explode('-', $toolSlug)[0];
+
+        // Try category-based file first: tools.{category}.{toolSlug}.{key}
+        $categoryKey = "tools.{$category}.{$toolSlug}.{$key}";
+        $translation = trans($categoryKey, [], $locale);
+
+        // If found in category file, return it
+        if ($translation !== $categoryKey) {
+            return $translation;
+        }
+
+        // Fallback to monolithic file: tools.{toolSlug}.{$key}
+        $legacyKey = "tools.{$toolSlug}.{$key}";
+        $translation = trans($legacyKey, [], $locale);
+
+        // Return translation or default
+        return ($translation === $legacyKey) ? $default : $translation;
     }
 }
