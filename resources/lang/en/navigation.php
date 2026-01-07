@@ -28,6 +28,10 @@ return [
     'follow_us' => 'Follow us',
     'newsletter' => 'Newsletter',
     'subscribe' => 'Subscribe',
+    'footer_description' => 'Professional tools for creators and developers.',
+    'footer_tools_section' => 'Tools',
+    'footer_company_section' => 'Company',
+    'footer_legal_section' => 'Legal',
 
     // Breadcrumbs
     'you_are_here' => 'You are here',

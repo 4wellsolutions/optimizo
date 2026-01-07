@@ -23,7 +23,21 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer('*', function ($view) {
-            $view->with('searchableTools', Tool::select('name', 'url', 'category')->where('is_active', true)->get());
+            $locale = app()->getLocale();
+            $localePrefix = $locale === 'en' ? '' : '/' . $locale;
+
+            $tools = Tool::select('name', 'slug', 'category')
+                ->where('is_active', true)
+                ->get()
+                ->map(function ($tool) use ($localePrefix) {
+                    return [
+                        'name' => __t($tool, 'name') ?? $tool->name,
+                        'category' => $tool->category,
+                        'url' => $localePrefix . '/' . $tool->slug,
+                    ];
+                });
+
+            $view->with('searchableTools', $tools);
         });
     }
 }

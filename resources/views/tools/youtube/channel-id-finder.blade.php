@@ -11,15 +11,15 @@
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Find Channel ID</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('youtube-channel-id-finder', 'how_to_use.step2', 'Find Channel ID') }}</h2>
             <form id="channelForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="url" class="form-label text-base">YouTube Channel URL</label>
+                    <label for="url" class="form-label text-base">{{ __tool('youtube-channel-id-finder', 'form.url_label', 'YouTube Channel URL') }}</label>
                     <input type="url" id="url" name="url" class="form-input"
                         placeholder="https://www.youtube.com/@channelname or https://www.youtube.com/c/channelname"
                         required>
-                    <p class="text-sm text-gray-500 mt-2">Paste any YouTube channel URL to find its unique ID</p>
+                    <p class="text-sm text-gray-500 mt-2">{{ __tool('youtube-channel-id-finder', 'form.url_help', 'Paste any YouTube channel URL to find its unique ID') }}</p>
                 </div>
 
                 <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
@@ -27,7 +27,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <span id="btnText">Find Channel ID</span>
+                    <span id="btnText">{{ __tool('youtube-channel-id-finder', 'form.find_button', 'Find Channel ID') }}</span>
                 </button>
             </form>
 
@@ -191,14 +191,12 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Find Channel IDs Instantly</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover any YouTube channel's unique identifier</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{{ __tool('youtube-channel-id-finder', 'content.main_title', 'Find Channel IDs Instantly') }}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ __tool('youtube-channel-id-finder', 'content.main_subtitle', 'Discover any YouTube channel\'s unique identifier') }}</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free YouTube Channel ID Finder helps you discover the unique channel ID for any YouTube channel.
-                Essential for developers using the YouTube API, marketers tracking channels, and content creators managing
-                collaborations. Get instant access to channel IDs without needing API keys or technical knowledge.
+                {{ __tool('youtube-channel-id-finder', 'content.main_description', 'Our free YouTube Channel ID Finder helps you discover the unique channel ID for any YouTube channel. Essential for developers using the YouTube API, marketers tracking channels, and content creators managing collaborations. Get instant access to channel IDs without needing API keys or technical knowledge.') }}
             </p>
 
             <div class="grid md:grid-cols-3 gap-6 mb-10">
@@ -211,8 +209,8 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">Instant Results</h3>
-                    <p class="text-gray-600">Get channel IDs immediately from any channel URL</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'features.instant', 'Instant Results') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel-id-finder', 'content.feature_instant_desc', 'Get channel IDs immediately from any channel URL') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-2xl p-6 shadow-xl border-2 border-pink-100 hover:border-pink-300 transition-all hover:shadow-2xl">
@@ -223,8 +221,8 @@
                                 d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">All URL Formats</h3>
-                    <p class="text-gray-600">Works with @handle, /c/, /channel/, and /user/ URLs</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'content.feature_formats', 'All URL Formats') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel-id-finder', 'content.feature_formats_desc', 'Works with @handle, /c/, /channel/, and /user/ URLs') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-2xl p-6 shadow-xl border-2 border-rose-100 hover:border-rose-300 transition-all hover:shadow-2xl">
@@ -235,39 +233,39 @@
                                 d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">One-Click Copy</h3>
-                    <p class="text-gray-600">Copy channel IDs instantly for easy use in your projects</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'content.feature_copy', 'One-Click Copy') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel-id-finder', 'content.feature_copy_desc', 'Copy channel IDs instantly for easy use in your projects') }}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Why You Need Channel IDs</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel-id-finder', 'use_cases.title', '🎯 Why You Need Channel IDs') }}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
-                    <h4 class="font-bold text-2xl mb-3">💻 API Development</h4>
+                    <h4 class="font-bold text-2xl mb-3">{{ __tool('youtube-channel-id-finder', 'content.api_dev_title', '💻 API Development') }}</h4>
                     <ul class="space-y-2 text-white/90">
-                        <li>• Required for YouTube Data API requests</li>
-                        <li>• Essential for building YouTube integrations</li>
-                        <li>• Needed for analytics and reporting tools</li>
-                        <li>• Critical for automation scripts</li>
+                        <li>• {{ __tool('youtube-channel-id-finder', 'content.api_dev_1', 'Required for YouTube Data API requests') }}</li>
+                        <li>• {{ __tool('youtube-channel-id-finder', 'content.api_dev_2', 'Essential for building YouTube integrations') }}</li>
+                        <li>• {{ __tool('youtube-channel-id-finder', 'content.api_dev_3', 'Needed for analytics and reporting tools') }}</li>
+                        <li>• {{ __tool('youtube-channel-id-finder', 'content.api_dev_4', 'Critical for automation scripts') }}</li>
                     </ul>
                 </div>
                 <div class="bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl p-6 text-white shadow-xl">
-                    <h4 class="font-bold text-2xl mb-3">📊 Marketing & Analytics</h4>
+                    <h4 class="font-bold text-2xl mb-3">{{ __tool('youtube-channel-id-finder', 'content.marketing_title', '📊 Marketing & Analytics') }}</h4>
                     <ul class="space-y-2 text-white/90">
-                        <li>• Track competitor channels</li>
-                        <li>• Monitor influencer performance</li>
-                        <li>• Build channel databases</li>
-                        <li>• Create custom reports</li>
+                        <li>• {{ __tool('youtube-channel-id-finder', 'content.marketing_1', 'Track competitor channels') }}</li>
+                        <li>• {{ __tool('youtube-channel-id-finder', 'content.marketing_2', 'Monitor influencer performance') }}</li>
+                        <li>• {{ __tool('youtube-channel-id-finder', 'content.marketing_3', 'Build channel databases') }}</li>
+                        <li>• {{ __tool('youtube-channel-id-finder', 'content.marketing_4', 'Create custom reports') }}</li>
                     </ul>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🔍 Common Use Cases</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel-id-finder', 'use_cases.title', '🔍 Common Use Cases') }}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚙️</div>
-                    <h4 class="font-bold text-gray-900 mb-2">API Integration</h4>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-channel-id-finder', 'use_cases.case1', 'API Integration') }}</h4>
                     <p class="text-gray-600 text-sm">Use channel IDs in YouTube Data API calls for your applications</p>
                 </div>
                 <div
@@ -320,32 +318,23 @@
                 </ul>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel-id-finder', 'faq.title', '❓ Frequently Asked Questions') }}</h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What is a YouTube Channel ID?</h4>
-                    <p class="text-gray-700 leading-relaxed">A YouTube Channel ID is a unique 24-character identifier
-                        (starting with "UC") assigned to every YouTube channel. It's permanent and doesn't change even if
-                        the channel name or handle changes, making it essential for API integrations and tracking.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-channel-id-finder', 'faq.q1', 'What is a YouTube Channel ID?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-channel-id-finder', 'faq.a1', 'A YouTube Channel ID is a unique 24-character identifier (starting with "UC") assigned to every YouTube channel. It\'s permanent and doesn\'t change even if the channel name or handle changes, making it essential for API integrations and tracking.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">How do I find my own YouTube Channel ID?</h4>
-                    <p class="text-gray-700 leading-relaxed">Simply paste your channel URL into our tool above! You can use
-                        any format: @handle, /c/channelname, /channel/ID, or /user/username. Our tool will extract the
-                        channel ID instantly.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-channel-id-finder', 'faq.q2', 'How do I find my own YouTube Channel ID?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-channel-id-finder', 'faq.a2', 'Simply paste your channel URL into our tool above! You can use any format: @handle, /c/channelname, /channel/ID, or /user/username. Our tool will extract the channel ID instantly.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Why do I need a Channel ID instead of the channel name?
-                    </h4>
-                    <p class="text-gray-700 leading-relaxed">Channel names and handles can change, but channel IDs are
-                        permanent. For API calls, automation, and reliable tracking, using the channel ID ensures your
-                        integrations won't break if the channel rebrands.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-channel-id-finder', 'faq.q4', 'Why do I need a Channel ID instead of the channel name?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-channel-id-finder', 'faq.a4', 'Channel names and handles can change, but channel IDs are permanent. For API calls, automation, and reliable tracking, using the channel ID ensures your integrations won\'t break if the channel rebrands.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I use Channel IDs with the YouTube Data API?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! Channel IDs are required for most YouTube Data API
-                        endpoints. Use them to fetch channel statistics, videos, playlists, and more. Our tool makes it easy
-                        to get the IDs you need for your API projects.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-channel-id-finder', 'faq.q5', 'Can I use Channel IDs with the YouTube Data API?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-channel-id-finder', 'faq.a5', 'Yes! Channel IDs are required for most YouTube Data API endpoints. Use them to fetch channel statistics, videos, playlists, and more. Our tool makes it easy to get the IDs you need for your API projects.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">What URL formats does this tool support?</h4>

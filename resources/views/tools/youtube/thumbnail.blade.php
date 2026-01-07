@@ -12,15 +12,14 @@
 
         <!-- Thumbnail Downloader Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Download YouTube Thumbnail</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('youtube-thumbnail-downloader', 'form.title', 'Download YouTube Thumbnail') }}</h2>
             <form id="thumbnailForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="url" class="form-label text-base">YouTube Video URL</label>
+                    <label for="url" class="form-label text-base">{{ __tool('youtube-thumbnail-downloader', 'form.url_label', 'YouTube Video URL') }}</label>
                     <input type="url" id="url" name="url" class="form-input"
                         placeholder="https://www.youtube.com/watch?v=..." required>
-                    <p class="text-sm text-gray-500 mt-2">Paste any YouTube video URL to get all available thumbnail
-                        resolutions</p>
+                    <p class="text-sm text-gray-500 mt-2">{{ __tool('youtube-thumbnail-downloader', 'form.url_help', 'Paste any YouTube video URL to get all available thumbnail resolutions') }}</p>
                 </div>
 
                 <button type="submit" class="btn-primary w-full justify-center text-lg py-4 shadow-2xl">
@@ -28,7 +27,7 @@
                         <path
                             d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.11-.9-2-2-2zm0 14H3V5h18v12zm-5-6l-7 4V7z" />
                     </svg>
-                    <span id="btnText">Get Thumbnails</span>
+                    <span id="btnText">{{ __tool('youtube-thumbnail-downloader', 'form.submit', 'Get Thumbnails') }}</span>
                 </button>
             </form>
 
@@ -48,7 +47,7 @@
             <div id="resultsSection" class="hidden mt-8">
                 <!-- Thumbnail Preview -->
                 <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-6 mb-6 border-2 border-indigo-200">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Thumbnail Preview</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">{{ __tool('youtube-thumbnail-downloader', 'results.preview_title', 'Thumbnail Preview') }}</h3>
                     <div class="max-w-2xl mx-auto">
                         <img id="previewImage" src="" alt="Thumbnail Preview"
                             class="w-full rounded-xl shadow-2xl border-2 border-white">
@@ -57,7 +56,7 @@
 
                 <!-- Download Options -->
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Available Resolutions</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">{{ __tool('youtube-thumbnail-downloader', 'results.resolutions_title', 'Available Resolutions') }}</h3>
                     <div id="resolutionList" class="space-y-3"></div>
                 </div>
             </div>
@@ -74,16 +73,12 @@
                             d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.11-.9-2-2-2zm0 14H3V5h18v12zm-5-6l-7 4V7z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">How It Works</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Download HD thumbnails from any YouTube video instantly -
-                    all resolutions available!</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{{ __tool('youtube-thumbnail-downloader', 'content.main_title', 'How It Works') }}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ __tool('youtube-thumbnail-downloader', 'content.main_subtitle', 'Download HD thumbnails from any YouTube video instantly - all resolutions available!') }}</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Download YouTube video thumbnails in the highest quality available with our free thumbnail downloader tool.
-                Get thumbnails in HD (1920x1080), Full HD, SD (640x480), HQ, MQ, and default resolutions - all with a single
-                click. Perfect for content creators analyzing competitor thumbnails, designers needing reference images,
-                marketers creating presentations, or anyone who wants to save memorable video thumbnails for inspiration.
+                {{ __tool('youtube-thumbnail-downloader', 'content.description', 'Download YouTube video thumbnails in the highest quality available with our free thumbnail downloader tool. Get thumbnails in HD (1920x1080), Full HD, SD (640x480), HQ, MQ, and default resolutions - all with a single click. Perfect for content creators analyzing competitor thumbnails, designers needing reference images, marketers creating presentations, or anyone who wants to save memorable video thumbnails for inspiration.') }}
             </p>
 
             <div class="grid md:grid-cols-3 gap-6 mb-10">
@@ -96,10 +91,8 @@
                                 d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">All Resolutions</h3>
-                    <p class="text-gray-600">Download thumbnails in HD, Full HD, SD, HQ, MQ, and default sizes -
-                        choose the
-                        perfect quality</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.feature_all_resolutions_title', 'All Resolutions') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-thumbnail-downloader', 'content.feature_all_resolutions_description', 'Download thumbnails in HD, Full HD, SD, HQ, MQ, and default sizes - choose the perfect quality') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-2xl p-6 shadow-xl border-2 border-pink-100 hover:border-pink-300 transition-all hover:shadow-2xl">
@@ -110,9 +103,8 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">Instant Download</h3>
-                    <p class="text-gray-600">Get thumbnails immediately without any processing delays or waiting
-                        time</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.feature_instant_download_title', 'Instant Download') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-thumbnail-downloader', 'content.feature_instant_download_description', 'Get thumbnails immediately without any processing delays or waiting time') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-2xl p-6 shadow-xl border-2 border-rose-100 hover:border-rose-300 transition-all hover:shadow-2xl">
@@ -123,79 +115,73 @@
                                 d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">100% Free</h3>
-                    <p class="text-gray-600">No registration, no watermarks, no limits - completely free forever</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.feature_free_title', '100% Free') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-thumbnail-downloader', 'content.feature_free_description', 'No registration, no watermarks, no limits - completely free forever') }}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">📐 Available Thumbnail Resolutions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-thumbnail-downloader', 'content.resolutions_section_title', 'Available Thumbnail Resolutions') }}</h3>
             <div class="grid md:grid-cols-2 gap-4 mb-10">
                 <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
-                    <h4 class="font-bold text-2xl mb-2">🎬 HD (Maxres)</h4>
-                    <p class="text-white/90 mb-2"><strong>Resolution:</strong> 1920x1080 pixels</p>
-                    <p class="text-white/80 text-sm">Highest quality available - perfect for presentations, design
-                        work, and
-                        professional use</p>
+                    <h4 class="font-bold text-2xl mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.resolution_hd_title', 'HD (Maxres)') }}</h4>
+                    <p class="text-white/90 mb-2"><strong>{{ __tool('youtube-thumbnail-downloader', 'content.resolution_label', 'Resolution') }}:</strong> 1920x1080 pixels</p>
+                    <p class="text-white/80 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.resolution_hd_description', 'Highest quality available - perfect for presentations, design work, and professional use') }}</p>
                 </div>
                 <div class="bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl p-6 text-white shadow-xl">
-                    <h4 class="font-bold text-2xl mb-2">📺 SD (Standard)</h4>
-                    <p class="text-white/90 mb-2"><strong>Resolution:</strong> 640x480 pixels</p>
-                    <p class="text-white/80 text-sm">Standard definition - good balance of quality and file size for
-                        web use
+                    <h4 class="font-bold text-2xl mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.resolution_sd_title', 'SD (Standard)') }}</h4>
+                    <p class="text-white/90 mb-2"><strong>{{ __tool('youtube-thumbnail-downloader', 'content.resolution_label', 'Resolution') }}:</strong> 640x480 pixels</p>
+                    <p class="text-white/80 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.resolution_sd_description', 'Standard definition - good balance of quality and file size for web use') }}
                     </p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-red-200 shadow-lg">
-                    <h4 class="font-bold text-xl text-gray-900 mb-2">🎯 HQ (High Quality)</h4>
-                    <p class="text-gray-700 mb-2"><strong>Resolution:</strong> 480x360 pixels</p>
-                    <p class="text-gray-600 text-sm">High quality thumbnail for social media and blogs</p>
+                    <h4 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.resolution_hq_title', 'HQ (High Quality)') }}</h4>
+                    <p class="text-gray-700 mb-2"><strong>{{ __tool('youtube-thumbnail-downloader', 'content.resolution_label', 'Resolution') }}:</strong> 480x360 pixels</p>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.resolution_hq_description', 'High quality thumbnail for social media and blogs') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-pink-200 shadow-lg">
-                    <h4 class="font-bold text-xl text-gray-900 mb-2">📱 MQ (Medium Quality)</h4>
-                    <p class="text-gray-700 mb-2"><strong>Resolution:</strong> 320x180 pixels</p>
-                    <p class="text-gray-600 text-sm">Medium quality for mobile displays and previews</p>
+                    <h4 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.resolution_mq_title', 'MQ (Medium Quality)') }}</h4>
+                    <p class="text-gray-700 mb-2"><strong>{{ __tool('youtube-thumbnail-downloader', 'content.resolution_label', 'Resolution') }}:</strong> 320x180 pixels</p>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.resolution_mq_description', 'Medium quality for mobile displays and previews') }}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Common Use Cases</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-thumbnail-downloader', 'content.use_cases_section_title', 'Common Use Cases') }}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🎨</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Design Inspiration</h4>
-                    <p class="text-gray-600 text-sm">Analyze successful thumbnail designs and create your own
-                        eye-catching
-                        thumbnails</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_design_title', 'Design Inspiration') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_design_description', 'Analyze successful thumbnail designs and create your own eye-catching thumbnails') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📊</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Competitor Analysis</h4>
-                    <p class="text-gray-600 text-sm">Study competitor thumbnails to understand what works in your
-                        niche</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_competitor_title', 'Competitor Analysis') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_competitor_description', 'Study competitor thumbnails to understand what works in your niche') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-rose-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📱</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Social Media Sharing</h4>
-                    <p class="text-gray-600 text-sm">Share video thumbnails on Instagram, Twitter, or Facebook</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_social_media_title', 'Social Media Sharing') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_social_media_description', 'Share video thumbnails on Instagram, Twitter, or Facebook') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">💼</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Presentations</h4>
-                    <p class="text-gray-600 text-sm">Use thumbnails in business presentations and reports</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_presentations_title', 'Presentations') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_presentations_description', 'Use thumbnails in business presentations and reports') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📝</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Blog Posts</h4>
-                    <p class="text-gray-600 text-sm">Embed video thumbnails in articles and blog content</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_blog_posts_title', 'Blog Posts') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_blog_posts_description', 'Embed video thumbnails in articles and blog content') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-rose-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🎓</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Educational Content</h4>
-                    <p class="text-gray-600 text-sm">Save educational video thumbnails for reference and study</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_educational_title', 'Educational Content') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('youtube-thumbnail-downloader', 'content.use_case_educational_description', 'Save educational video thumbnails for reference and study') }}</p>
                 </div>
             </div>
 
@@ -206,88 +192,68 @@
                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                             clip-rule="evenodd" />
                     </svg>
-                    💡 Pro Tip: Creating Effective Thumbnails
+                    {{ __tool('youtube-thumbnail-downloader', 'content.pro_tip_title', 'Pro Tip: Creating Effective Thumbnails') }}
                 </h4>
                 <ul class="text-blue-800 leading-relaxed space-y-2">
-                    <li>✅ Use bright, contrasting colors to stand out in search results</li>
-                    <li>✅ Include clear, readable text (max 3-5 words)</li>
-                    <li>✅ Show faces with emotions - they get 30% more clicks</li>
-                    <li>✅ Maintain consistent branding across all your thumbnails</li>
-                    <li>✅ Use the 1920x1080 resolution for best quality across all devices</li>
+                    <li>✅ {{ __tool('youtube-thumbnail-downloader', 'content.pro_tip_1', 'Use bright, contrasting colors to stand out in search results') }}</li>
+                    <li>✅ {{ __tool('youtube-thumbnail-downloader', 'content.pro_tip_2', 'Include clear, readable text (max 3-5 words)') }}</li>
+                    <li>✅ {{ __tool('youtube-thumbnail-downloader', 'content.pro_tip_3', 'Show faces with emotions - they get 30% more clicks') }}</li>
+                    <li>✅ {{ __tool('youtube-thumbnail-downloader', 'content.pro_tip_4', 'Maintain consistent branding across all your thumbnails') }}</li>
+                    <li>✅ {{ __tool('youtube-thumbnail-downloader', 'content.pro_tip_5', 'Use the 1920x1080 resolution for best quality across all devices') }}</li>
                 </ul>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-thumbnail-downloader', 'content.faq_section_title', 'Frequently Asked Questions') }}</h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I download thumbnails from any YouTube
-                        video?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! Our tool works with any public YouTube video.
-                        Simply paste
-                        the video URL and download thumbnails in all available resolutions instantly.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-thumbnail-downloader', 'content.faq_q1', 'Can I download thumbnails from any YouTube video?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-thumbnail-downloader', 'content.faq_a1', 'Yes! Our tool works with any public YouTube video. Simply paste the video URL and download thumbnails in all available resolutions instantly.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What resolution should I choose?</h4>
-                    <p class="text-gray-700 leading-relaxed">For professional use, presentations, or design work,
-                        choose HD
-                        (1920x1080). For web use and social media, SD (640x480) or HQ (480x360) are perfect. The
-                        higher the
-                        resolution, the better the quality but larger file size.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-thumbnail-downloader', 'content.faq_q2', 'What resolution should I choose?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-thumbnail-downloader', 'content.faq_a2', 'For professional use, presentations, or design work, choose HD (1920x1080). For web use and social media, SD (640x480) or HQ (480x360) are perfect. The higher the resolution, the better the quality but larger file size.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is it legal to download YouTube thumbnails?
-                    </h4>
-                    <p class="text-gray-700 leading-relaxed">Downloading thumbnails for personal use, research, or
-                        inspiration is generally acceptable. However, using someone else's thumbnail for your own
-                        videos
-                        without permission may violate copyright. Always create original thumbnails for your
-                        content.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-thumbnail-downloader', 'content.faq_q3', 'Is it legal to download YouTube thumbnails?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-thumbnail-downloader', 'content.faq_a3', 'Downloading thumbnails for personal use, research, or inspiration is generally acceptable. However, using someone else\'s thumbnail for your own videos without permission may violate copyright. Always create original thumbnails for your content.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Do I need to install any software?</h4>
-                    <p class="text-gray-700 leading-relaxed">No! Our tool is completely web-based. Just paste the
-                        YouTube
-                        URL and download - no software installation, no registration, and no downloads required.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-thumbnail-downloader', 'content.faq_q4', 'Do I need to install any software?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-thumbnail-downloader', 'content.faq_a4', 'No! Our tool is completely web-based. Just paste the YouTube URL and download - no software installation, no registration, and no downloads required.') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Why are some resolutions not available?</h4>
-                    <p class="text-gray-700 leading-relaxed">Not all videos have thumbnails in all resolutions.
-                        Older videos
-                        or videos from smaller channels may only have lower resolution thumbnails available. Our
-                        tool shows
-                        all available resolutions for each video.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-thumbnail-downloader', 'content.faq_q5', 'Why are some resolutions not available?') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-thumbnail-downloader', 'content.faq_a5', 'Not all videos have thumbnails in all resolutions. Older videos or videos from smaller channels may only have lower resolution thumbnails available. Our tool shows all available resolutions for each video.') }}</p>
                 </div>
             </div>
         </div>
 
         <!-- How to Use Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl border-2 border-gray-200 mt-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">How to Download YouTube Thumbnails</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('youtube-thumbnail-downloader', 'how_to_use.title', 'How to Download YouTube Thumbnails') }}</h2>
             <ol class="space-y-3 text-gray-700">
                 <li class="flex items-start">
                     <span class="font-bold text-red-600 mr-3">1.</span>
-                    <span><strong>Copy Video URL:</strong> Go to YouTube and copy the video URL from the address bar.</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'how_to_use.step1_title', 'Copy Video URL:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'how_to_use.step1_description', 'Go to YouTube and copy the video URL from the address bar.') }}</span>
                 </li>
                 <li class="flex items-start">
                     <span class="font-bold text-red-600 mr-3">2.</span>
-                    <span><strong>Paste URL:</strong> Paste the YouTube video URL into the input field above.</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'how_to_use.step2_title', 'Paste URL:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'how_to_use.step2_description', 'Paste the YouTube video URL into the input field above.') }}</span>
                 </li>
                 <li class="flex items-start">
                     <span class="font-bold text-red-600 mr-3">3.</span>
-                    <span><strong>Get Thumbnails:</strong> Click the button to load all available thumbnail
-                        resolutions.</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'how_to_use.step3_title', 'Get Thumbnails:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'how_to_use.step3_description', 'Click the button to load all available thumbnail resolutions.') }}</span>
                 </li>
                 <li class="flex items-start">
                     <span class="font-bold text-red-600 mr-3">4.</span>
-                    <span><strong>Download:</strong> Choose your preferred resolution and click download to save the
-                        thumbnail.</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'how_to_use.step4_title', 'Download:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'how_to_use.step4_description', 'Choose your preferred resolution and click download to save the thumbnail.') }}</span>
                 </li>
             </ol>
         </div>
 
-        <!-- SEO Content: Use Cases -->
+        {{-- SEO Content: Use Cases --}}
         <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 md:p-8 mt-8 border border-purple-100">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Popular Use Cases for YouTube Thumbnails</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.title', 'Popular Use Cases for YouTube Thumbnails') }}</h2>
             <ul class="space-y-2 text-gray-700">
                 <li class="flex items-start">
                     <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -295,8 +261,7 @@
                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                             clip-rule="evenodd" />
                     </svg>
-                    <span><strong>Content Creation:</strong> Analyze competitor thumbnails for inspiration and
-                        trends</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.content_creation_title', 'Content Creation:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.content_creation_desc', 'Analyze competitor thumbnails for inspiration and trends') }}</span>
                 </li>
                 <li class="flex items-start">
                     <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -304,7 +269,7 @@
                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                             clip-rule="evenodd" />
                     </svg>
-                    <span><strong>Presentations:</strong> Use video thumbnails in PowerPoint or Google Slides</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.presentations_title', 'Presentations:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.presentations_desc', 'Use video thumbnails in PowerPoint or Google Slides') }}</span>
                 </li>
                 <li class="flex items-start">
                     <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -312,7 +277,7 @@
                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                             clip-rule="evenodd" />
                     </svg>
-                    <span><strong>Social Media:</strong> Share video previews on Twitter, Facebook, or Instagram</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.social_media_title', 'Social Media:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.social_media_desc', 'Share video previews on Twitter, Facebook, or Instagram') }}</span>
                 </li>
                 <li class="flex items-start">
                     <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -320,8 +285,7 @@
                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                             clip-rule="evenodd" />
                     </svg>
-                    <span><strong>Design Reference:</strong> Use thumbnails as design inspiration for your own
-                        content</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.design_reference_title', 'Design Reference:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.design_reference_desc', 'Use thumbnails as design inspiration for your own content') }}</span>
                 </li>
                 <li class="flex items-start">
                     <svg class="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -329,7 +293,7 @@
                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                             clip-rule="evenodd" />
                     </svg>
-                    <span><strong>Archiving:</strong> Save memorable video thumbnails for personal collections</span>
+                    <span><strong>{{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.archiving_title', 'Archiving:') }}</strong> {{ __tool('youtube-thumbnail-downloader', 'extra_use_cases.archiving_desc', 'Save memorable video thumbnails for personal collections') }}</span>
                 </li>
             </ul>
         </div>

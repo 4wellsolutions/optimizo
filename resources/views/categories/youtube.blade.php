@@ -59,7 +59,7 @@
                 <!-- Tools Grid for this Subcategory -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     @foreach($subcategoryTools as $tool)
-                        <a href="{{ route($tool->route_name) }}"
+                        <a href="{{ localeRoute($tool->route_name) }}"
                             class="group bg-white rounded-2xl p-6 shadow-lg border-2 border-red-200 hover:border-red-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                             <div class="flex items-center gap-4 mb-4">
                                 <div
@@ -83,7 +83,7 @@
 
         <!-- Back to Home -->
         <div class="text-center mb-12">
-            <a href="{{ route('home') }}"
+            <a href="{{ localeRoute('home') }}"
                 class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-xl font-bold shadow-lg hover:shadow-2xl transition-all hover:scale-105">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />

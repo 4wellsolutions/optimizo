@@ -31,3 +31,21 @@ if (!function_exists('trans_model')) {
         return TranslationService::get($model, $field, $locale);
     }
 }
+
+if (!function_exists('__tool')) {
+    /**
+     * Get tool-specific translation
+     * 
+     * @param string $toolSlug Tool slug identifier
+     * @param string $key Translation key (dot notation supported)
+     * @param string $default Default value if translation not found
+     * @return string
+     */
+    function __tool(string $toolSlug, string $key, string $default = ''): string
+    {
+        $locale = app()->getLocale();
+        $translationKey = "tools.{$toolSlug}.{$key}";
+        $translation = trans($translationKey, [], $locale);
+        return ($translation === $translationKey) ? $default : $translation;
+    }
+}

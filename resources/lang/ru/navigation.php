@@ -28,6 +28,10 @@ return [
     'follow_us' => 'Следите за нами',
     'newsletter' => 'Рассылка',
     'subscribe' => 'Подписаться',
+    'footer_description' => 'Профессиональные инструменты для создателей и разработчиков.',
+    'footer_tools_section' => 'Инструменты',
+    'footer_company_section' => 'Компания',
+    'footer_legal_section' => 'Правовая информация',
 
     // Breadcrumbs
     'you_are_here' => 'Вы здесь',

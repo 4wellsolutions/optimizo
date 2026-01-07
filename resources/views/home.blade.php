@@ -52,18 +52,18 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             @foreach($youtubeTools as $tool)
-                <a href="{{ route($tool->route_name) }}" class="tool-card">
+                <a href="{{ localeRoute($tool->route_name) }}" class="tool-card">
                     <div class="tool-card-icon">
                         @include('components.tool-icon', ['slug' => $tool->slug])
                     </div>
-                    <h3 class="tool-card-title">{{ $tool->name }}</h3>
-                    <p class="tool-card-description">{{ Str::limit($tool->meta_description, 80) }}</p>
+                    <h3 class="tool-card-title">{{ __t($tool, 'name') }}</h3>
+                    <p class="tool-card-description">{{ Str::limit(__t($tool, 'meta_description'), 80) }}</p>
                 </a>
             @endforeach
         </div>
 
         <div class="text-center">
-            <a href="{{ route('category.youtube') }}"
+            <a href="{{ localeRoute('category.youtube') }}"
                 class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-xl font-bold shadow-lg hover:shadow-2xl transition-all hover:scale-105">
                 <span>{{ __('home.view_all_youtube') }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,18 +88,18 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             @foreach($seoTools as $tool)
-                <a href="{{ route($tool->route_name) }}" class="tool-card">
+                <a href="{{ localeRoute($tool->route_name) }}" class="tool-card">
                     <div class="tool-card-icon">
                         @include('components.tool-icon', ['slug' => $tool->slug])
                     </div>
-                    <h3 class="tool-card-title">{{ $tool->name }}</h3>
-                    <p class="tool-card-description">{{ Str::limit($tool->meta_description, 80) }}</p>
+                    <h3 class="tool-card-title">{{ __t($tool, 'name') }}</h3>
+                    <p class="tool-card-description">{{ Str::limit(__t($tool, 'meta_description'), 80) }}</p>
                 </a>
             @endforeach
         </div>
 
         <div class="text-center">
-            <a href="{{ route('category.seo') }}"
+            <a href="{{ localeRoute('category.seo') }}"
                 class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl font-bold shadow-lg hover:shadow-2xl transition-all hover:scale-105">
                 <span>{{ __('home.view_all_seo') }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,18 +126,18 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             @foreach($utilityTools as $tool)
-                <a href="{{ route($tool->route_name) }}" class="tool-card">
+                <a href="{{ localeRoute($tool->route_name) }}" class="tool-card">
                     <div class="tool-card-icon">
                         @include('components.tool-icon', ['slug' => $tool->slug])
                     </div>
-                    <h3 class="tool-card-title">{{ $tool->name }}</h3>
-                    <p class="tool-card-description">{{ Str::limit($tool->meta_description, 80) }}</p>
+                    <h3 class="tool-card-title">{{ __t($tool, 'name') }}</h3>
+                    <p class="tool-card-description">{{ Str::limit(__t($tool, 'meta_description'), 80) }}</p>
                 </a>
             @endforeach
         </div>
 
         <div class="text-center">
-            <a href="{{ route('category.utility') }}"
+            <a href="{{ localeRoute('category.utility') }}"
                 class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-600 text-white rounded-xl font-bold shadow-lg hover:shadow-2xl transition-all hover:scale-105">
                 <span>{{ __('home.view_all_utility') }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -162,21 +162,21 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             @foreach($networkTools as $tool)
-                <a href="{{ route($tool->route_name) }}" class="tool-card">
+                <a href="{{ localeRoute($tool->route_name) }}" class="tool-card">
                     <div class="tool-card-icon">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
                     </div>
-                    <h3 class="tool-card-title">{{ $tool->name }}</h3>
-                    <p class="tool-card-description">{{ Str::limit($tool->meta_description, 80) }}</p>
+                    <h3 class="tool-card-title">{{ __t($tool, 'name') }}</h3>
+                    <p class="tool-card-description">{{ Str::limit(__t($tool, 'meta_description'), 80) }}</p>
                 </a>
             @endforeach
         </div>
 
         <div class="text-center">
-            <a href="{{ route('category.network') }}"
+            <a href="{{ localeRoute('category.network') }}"
                 class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-xl font-bold shadow-lg hover:shadow-2xl transition-all hover:scale-105">
                 <span>{{ __('home.view_all_network') }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

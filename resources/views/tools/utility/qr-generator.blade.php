@@ -93,20 +93,17 @@
                 registration required.
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">?? What is a QR Code?</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('qr-code-generator', 'faq.q1', '?? What is a QR Code?') }}</h3>
             <p class="text-gray-700 leading-relaxed mb-6">
-                QR (Quick Response) codes are two-dimensional barcodes that can store various types of information. They can
-                be scanned using smartphone cameras or dedicated QR code readers, instantly accessing the encoded data. QR
-                codes are widely used for marketing, payments, authentication, product tracking, and contactless information
-                sharing.
+                {{ __tool('qr-code-generator', 'faq.a1', 'QR (Quick Response) codes are two-dimensional barcodes that can store various types of information. They can be scanned using smartphone cameras or dedicated QR code readers, instantly accessing the encoded data. QR codes are widely used for marketing, payments, authentication, product tracking, and contactless information sharing.') }}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">? Features</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('qr-code-generator', 'features.title', '? Features') }}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">?</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Instant Generation</h4>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('qr-code-generator', 'features.instant', 'Instant Generation') }}</h4>
                     <p class="text-gray-600 text-sm">Create QR codes in seconds with real-time preview</p>
                 </div>
                 <div
@@ -130,7 +127,7 @@
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">??</div>
-                    <h4 class="font-bold text-gray-900 mb-2">100% Free</h4>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('qr-code-generator', 'features.free', '100% Free') }}</h4>
                     <p class="text-gray-600 text-sm">No limits, no watermarks, no registration</p>
                 </div>
                 <div
@@ -141,7 +138,7 @@
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">?? Common Use Cases</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('qr-code-generator', 'use_cases.title', '?? Common Use Cases') }}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">?? Website URLs</h4>

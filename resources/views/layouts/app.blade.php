@@ -5,6 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    {{-- hreflang tags for SEO --}}
+    @php
+        $currentPath = request()->path();
+
+        // Remove 'ru' or 'ru/' prefix if present
+        if (str_starts_with($currentPath, 'ru/')) {
+            $pathWithoutLocale = substr($currentPath, 3);
+        } elseif ($currentPath === 'ru') {
+            $pathWithoutLocale = '';
+        } else {
+            $pathWithoutLocale = $currentPath;
+        }
+
+        // Build full URLs
+        $baseUrl = rtrim(url('/'), '/');
+
+        if (empty($pathWithoutLocale)) {
+            $enUrl = $baseUrl;
+            $ruUrl = $baseUrl . '/ru';
+        } else {
+            $enUrl = $baseUrl . '/' . $pathWithoutLocale;
+            $ruUrl = $baseUrl . '/ru/' . $pathWithoutLocale;
+        }
+    @endphp
+
+    <link rel="alternate" hreflang="en" href="{{ $enUrl }}" />
+    <link rel="alternate" hreflang="ru" href="{{ $ruUrl }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ $enUrl }}" />
     <title>@yield('title', config('app.name', 'Optimizo'))</title>
     <meta name="description" content="@yield('meta_description', 'Professional online tools for creators')">
     @hasSection('meta_keywords')
@@ -25,7 +54,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
-                <a href="{{ route('home') }}" class="flex items-center space-x-2 group">
+                <a href="{{ localeRoute('home') }}" class="flex items-center space-x-2 group">
                     <div
                         class="w-9 h-9 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,11 +86,11 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="{{ route('home') }}" class="nav-link">{{ __('navigation.home') }}</a>
-                    <a href="{{ route('category.youtube') }}" class="nav-link">{{ __('navigation.youtube_tools') }}</a>
-                    <a href="{{ route('category.seo') }}" class="nav-link">{{ __('navigation.seo_tools') }}</a>
-                    <a href="{{ route('category.utility') }}" class="nav-link">{{ __('navigation.utility_tools') }}</a>
-                    <a href="{{ route('category.network') }}" class="nav-link">{{ __('navigation.network_tools') }}</a>
+                    <a href="{{ localeRoute('home') }}" class="nav-link">{{ __('navigation.home') }}</a>
+                    <a href="{{ localeRoute('category.youtube') }}" class="nav-link">{{ __('navigation.youtube_tools') }}</a>
+                    <a href="{{ localeRoute('category.seo') }}" class="nav-link">{{ __('navigation.seo_tools') }}</a>
+                    <a href="{{ localeRoute('category.utility') }}" class="nav-link">{{ __('navigation.utility_tools') }}</a>
+                    <a href="{{ localeRoute('category.network') }}" class="nav-link">{{ __('navigation.network_tools') }}</a>
 
                     <!-- Language Switcher -->
                     <div class="ml-2">
@@ -100,13 +129,13 @@
             </div>
 
             <div class="px-4 py-3 space-y-1">
-                <a href="{{ route('home') }}" class="block nav-link">{{ __('navigation.home') }}</a>
-                <a href="{{ route('category.youtube') }}"
+                <a href="{{ localeRoute('home') }}" class="block nav-link">{{ __('navigation.home') }}</a>
+                <a href="{{ localeRoute('category.youtube') }}"
                     class="block nav-link">{{ __('navigation.youtube_tools') }}</a>
-                <a href="{{ route('category.seo') }}" class="block nav-link">{{ __('navigation.seo_tools') }}</a>
-                <a href="{{ route('category.utility') }}"
+                <a href="{{ localeRoute('category.seo') }}" class="block nav-link">{{ __('navigation.seo_tools') }}</a>
+                <a href="{{ localeRoute('category.utility') }}"
                     class="block nav-link">{{ __('navigation.utility_tools') }}</a>
-                <a href="{{ route('category.network') }}"
+                <a href="{{ localeRoute('category.network') }}"
                     class="block nav-link">{{ __('navigation.network_tools') }}</a>
 
                 <!-- Language Switcher -->
@@ -124,7 +153,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    {{-- Footer --}}
     <footer class="bg-gray-900 text-white mt-16 md:mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -139,42 +168,45 @@
                         </div>
                         <span class="text-xl font-black">Optimizo</span>
                     </div>
-                    <p class="text-gray-400 text-sm">Professional tools for creators and developers.</p>
+                    <p class="text-gray-400 text-sm">{{ __('navigation.footer_description') }}</p>
                 </div>
                 <div>
-                    <h3 class="font-bold text-base mb-4">Tools</h3>
+                    <h3 class="font-bold text-base mb-4">{{ __('navigation.footer_tools_section') }}</h3>
                     <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="{{ route('category.youtube') }}" class="hover:text-white transition-colors">YouTube
-                                Tools</a></li>
-                        <li><a href="{{ route('category.seo') }}" class="hover:text-white transition-colors">SEO
-                                Tools</a></li>
-                        <li><a href="{{ route('category.utility') }}" class="hover:text-white transition-colors">Utility
-                                Tools</a></li>
-                        <li><a href="{{ route('category.network') }}" class="hover:text-white transition-colors">Network
-                                Tools</a></li>
+                        <li><a href="{{ localeRoute('category.youtube') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.youtube_tools') }}</a></li>
+                        <li><a href="{{ localeRoute('category.seo') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.seo_tools') }}</a></li>
+                        <li><a href="{{ localeRoute('category.utility') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.utility_tools') }}</a></li>
+                        <li><a href="{{ localeRoute('category.network') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.network_tools') }}</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-bold text-base mb-4">Company</h3>
+                    <h3 class="font-bold text-base mb-4">{{ __('navigation.footer_company_section') }}</h3>
                     <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="{{ route('about') }}" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="{{ route('contact') }}" class="hover:text-white transition-colors">Contact</a></li>
-                        <li><a href="{{ route('sponsors') }}" class="hover:text-white transition-colors">Sponsors</a>
+                        <li><a href="{{ localeRoute('about') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.about') }}</a></li>
+                        <li><a href="{{ localeRoute('contact') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.contact') }}</a></li>
+                        <li><a href="{{ localeRoute('sponsors') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.subscribe') }}</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-bold text-base mb-4">Legal</h3>
+                    <h3 class="font-bold text-base mb-4">{{ __('navigation.footer_legal_section') }}</h3>
                     <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="{{ route('terms') }}" class="hover:text-white transition-colors">Terms &
-                                Conditions</a></li>
-                        <li><a href="{{ route('privacy') }}" class="hover:text-white transition-colors">Privacy
-                                Policy</a></li>
+                        <li><a href="{{ localeRoute('terms') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.terms') }}</a></li>
+                        <li><a href="{{ localeRoute('privacy') }}"
+                                class="hover:text-white transition-colors">{{ __('navigation.privacy') }}</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-                <p>&copy; {{ date('Y') }} Optimizo. All rights reserved.</p>
+                <p>&copy; {{ date('Y') }} Optimizo. {{ __('navigation.all_rights_reserved') }}.</p>
             </div>
         </div>
     </footer>

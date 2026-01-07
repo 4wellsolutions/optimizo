@@ -17,10 +17,10 @@
             <form id="monetizationForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="channelUrl" class="form-label text-base">YouTube Channel URL or Handle</label>
+                    <label for="channelUrl" class="form-label text-base">URL канала YouTube или хэндл</label>
                     <input type="text" id="channelUrl" name="url" class="form-input"
-                        placeholder="https://www.youtube.com/@channelname or @channelname" required>
-                    <p class="text-sm text-gray-500 mt-2">Enter channel URL, handle (@username), or channel ID</p>
+                        placeholder="https://www.youtube.com/@channelname или @channelname" required>
+                    <p class="text-sm text-gray-500 mt-2">Введите URL канала, хэндл (@username) или ID канала</p>
                 </div>
 
                 <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
@@ -28,7 +28,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span id="btnText">Check Monetization</span>
+                    <span id="btnText">Проверить монетизацию</span>
                 </button>
             </form>
 
@@ -45,19 +45,20 @@
 
                     <div class="grid md:grid-cols-2 gap-4 mt-6">
                         <div class="bg-white rounded-lg p-4">
-                            <div class="text-sm text-gray-600 mb-1">Monetization Status</div>
+                            <div class="text-sm text-gray-600 mb-1">Статус монетизации</div>
                             <div class="text-2xl font-black" id="monetizationStatus"></div>
                         </div>
                         <div class="bg-white rounded-lg p-4">
-                            <div class="text-sm text-gray-600 mb-1">Estimated Status</div>
+                            <div class="text-sm text-gray-600 mb-1">Расчетный статус</div>
                             <div class="text-lg font-bold text-gray-900" id="estimatedStatus"></div>
                         </div>
                     </div>
 
                     <div class="mt-4 p-4 bg-blue-50 border-2 border-blue-200 rounded-lg">
                         <p class="text-sm text-blue-800">
-                            <strong>Note:</strong> This tool estimates monetization based on public channel data. Actual
-                            monetization status can only be confirmed by the channel owner through YouTube Studio.
+                            <strong>Примечание:</strong> Этот инструмент оценивает монетизацию на основе публичных данных
+                            канала. Фактический статус монетизации может быть подтвержден только владельцем канала через
+                            YouTube Studio.
                         </p>
                     </div>
 
@@ -83,70 +84,76 @@
                     content creators tracking their progress, marketers researching influencers, or anyone curious about a
                     channel's revenue potential. </p>
 
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">✅ YouTube Partner Program Requirements
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">✅ Требования программы партнеров YouTube
                         (2024)</h3>
                     <div class="grid md:grid-cols-2 gap-6 mb-10">
                         <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
-                            <h4 class="font-bold text-2xl mb-3">👥 1,000 Subscribers</h4>
-                            <p class="text-white/90 mb-3">Minimum subscriber threshold required for monetization eligibility
-                            </p>
-                            <p class="text-white/80 text-sm">Essential first milestone for YouTube Partner Program</p>
+                            <h4 class="font-bold text-2xl mb-3">👥 1000 подписчиков</h4>
+                            <p class="text-white/90 mb-3">Минимальный порог подписчиков, необходимый для получения права на
+                                монетизацию</p>
+                            <p class="text-white/80 text-sm">Важная первая веха для программы партнеров YouTube</p>
                         </div>
                         <div class="bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl p-6 text-white shadow-xl">
-                            <h4 class="font-bold text-2xl mb-3">⏱️ 4,000 Watch Hours</h4>
-                            <p class="text-white/90 mb-3">Must be accumulated in the past 12 months for long-form content
+                            <h4 class="font-bold text-2xl mb-3">⏱️ 4000 часов просмотра</h4>
+                            <p class="text-white/90 mb-3">Должны быть накоплены за последние 12 месяцев для длинного
+                                контента</p>
+                            <p class="text-white/80 text-sm">Или 10 млн просмотров Shorts за 90 дней в качестве альтернативы
                             </p>
-                            <p class="text-white/80 text-sm">Or 10M Shorts views in 90 days as alternative</p>
                         </div>
                         <div class="bg-white rounded-2xl p-6 border-2 border-red-200 shadow-lg">
-                            <h4 class="font-bold text-xl text-gray-900 mb-3">💳 Google AdSense Account</h4>
-                            <p class="text-gray-700 mb-3">Valid and approved AdSense account linked to your channel</p>
-                            <p class="text-gray-600 text-sm">Required for receiving payments from YouTube</p>
+                            <h4 class="font-bold text-xl text-gray-900 mb-3">💳 Аккаунт Google AdSense</h4>
+                            <p class="text-gray-700 mb-3">Действительный и одобренный аккаунт AdSense, привязанный к вашему
+                                каналу</p>
+                            <p class="text-gray-600 text-sm">Требуется для получения платежей от YouTube</p>
                         </div>
                         <div class="bg-white rounded-2xl p-6 border-2 border-pink-200 shadow-lg">
-                            <h4 class="font-bold text-xl text-gray-900 mb-3">📋 Policy Compliance</h4>
-                            <p class="text-gray-700 mb-3">No active strikes, violations, or policy warnings</p>
-                            <p class="text-gray-600 text-sm">Full compliance with community and content guidelines</p>
+                            <h4 class="font-bold text-xl text-gray-900 mb-3">📋 Соблюдение политики</h4>
+                            <p class="text-gray-700 mb-3">Отсутствие активных предупреждений, нарушений или предупреждений о
+                                политике</p>
+                            <p class="text-gray-600 text-sm">Полное соответствие правилам сообщества и контента</p>
                         </div>
                     </div>
 
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6">💰 YouTube Monetization Revenue Streams</h3>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">💰 Источники дохода от монетизации YouTube</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                         <div
                             class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg">
                             <div class="text-3xl mb-3">📺</div>
-                            <h4 class="font-bold text-gray-900 mb-2">Ad Revenue</h4>
-                            <p class="text-gray-600 text-sm">Display, overlay, skippable, and non-skippable video ads</p>
+                            <h4 class="font-bold text-gray-900 mb-2">Доход от рекламы</h4>
+                            <p class="text-gray-600 text-sm">Медийная, оверлейная, пропускаемая и непропускаемая
+                                видеореклама</p>
                         </div>
                         <div
                             class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg">
                             <div class="text-3xl mb-3">⭐</div>
-                            <h4 class="font-bold text-gray-900 mb-2">Channel Memberships</h4>
-                            <p class="text-gray-600 text-sm">Monthly recurring payments for exclusive perks</p>
+                            <h4 class="font-bold text-gray-900 mb-2">Членство в канале</h4>
+                            <p class="text-gray-600 text-sm">Ежемесячные повторяющиеся платежи за эксклюзивные привилегии
+                            </p>
                         </div>
                         <div
                             class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-rose-300 transition-all shadow-lg">
                             <div class="text-3xl mb-3">💬</div>
-                            <h4 class="font-bold text-gray-900 mb-2">Super Chat & Thanks</h4>
-                            <p class="text-gray-600 text-sm">Fan funding during live streams and on videos</p>
+                            <h4 class="font-bold text-gray-900 mb-2">Super Chat и Thanks</h4>
+                            <p class="text-gray-600 text-sm">Финансирование от фанатов во время прямых трансляций и на видео
+                            </p>
                         </div>
                         <div
                             class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg">
                             <div class="text-3xl mb-3">🎬</div>
                             <h4 class="font-bold text-gray-900 mb-2">YouTube Premium</h4>
-                            <p class="text-gray-600 text-sm">Share of subscription fees from Premium members</p>
+                            <p class="text-gray-600 text-sm">Доля от абонентской платы участников Premium</p>
                         </div>
                         <div
                             class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg">
                             <div class="text-3xl mb-3">🛍️</div>
-                            <h4 class="font-bold text-gray-900 mb-2">Merchandise Shelf</h4>
-                            <p class="text-gray-600 text-sm">Sell branded merchandise directly below videos</p>
+                            <h4 class="font-bold text-gray-900 mb-2">Полка товаров</h4>
+                            <p class="text-gray-600 text-sm">Продавайте фирменные товары прямо под видео</p>
                         </div>
                         <div
                             class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-rose-300 transition-all shadow-lg">
                             <div class="text-3xl mb-3">🤝</div>
-                            <h4 class="font-bold text-gray-900 mb-2">Sponsored Content</h4>
-                            <p class="text-gray-600 text-sm">Brand deals and sponsorships opportunities</p>
+                            <h4 class="font-bold text-gray-900 mb-2">Спонсируемый контент</h4>
+                            <p class="text-gray-600 text-sm">Возможности для сделок с брендами и спонсорства</p>
                         </div>
                     </div>
 
@@ -157,64 +164,58 @@
                                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                                     clip-rule="evenodd" />
                             </svg>
-                            💡 Important Disclaimer
+                            💡 Важное уведомление
                         </h4>
                         <p class="text-blue-800 leading-relaxed">
-                            This tool provides estimates based on publicly available channel data and YouTube Partner
-                            Program
-                            requirements. Actual monetization status can only be confirmed by the channel owner through
-                            YouTube
-                            Studio. Meeting minimum requirements doesn't guarantee approval - channels must maintain
-                            compliance with
-                            all YouTube policies, community guidelines, and advertiser-friendly content guidelines.
+                            Этот инструмент предоставляет оценки на основе публично доступных данных канала и требований
+                            программы партнеров YouTube. Фактический статус монетизации может быть подтвержден только
+                            владельцем канала через YouTube Studio. Соответствие минимальным требованиям не гарантирует
+                            одобрения - каналы должны поддерживать соответствие всем политикам YouTube, правилам сообщества
+                            и рекомендациям по контенту, дружественному рекламодателям.
                         </p>
                     </div>
 
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Часто задаваемые вопросы</h3>
                     <div class="space-y-4">
                         <div
                             class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                            <h4 class="font-bold text-gray-900 mb-3 text-lg">How accurate is the monetization check?</h4>
-                            <p class="text-gray-700 leading-relaxed">Our tool provides highly accurate estimates (90%+
-                                accuracy)
-                                based on public metrics and YouTube Partner Program requirements. However, only channel
-                                owners can
-                                confirm actual monetization status through YouTube Studio.</p>
+                            <h4 class="font-bold text-gray-900 mb-3 text-lg">Насколько точна проверка монетизации?</h4>
+                            <p class="text-gray-700 leading-relaxed">Наш инструмент предоставляет высокоточные оценки
+                                (точность 90%+) на основе публичных метрик и требований программы партнеров YouTube. Однако
+                                только владельцы каналов могут подтвердить фактический статус монетизации через YouTube
+                                Studio.</p>
                         </div>
                         <div
                             class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                            <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I check any YouTube channel?</h4>
-                            <p class="text-gray-700 leading-relaxed">Yes! You can check any public YouTube channel by
-                                entering its
-                                URL, handle (@username), or channel ID. Private or deleted channels cannot be analyzed.</p>
+                            <h4 class="font-bold text-gray-900 mb-3 text-lg">Могу ли я проверить любой канал YouTube?</h4>
+                            <p class="text-gray-700 leading-relaxed">Да! Вы можете проверить любой публичный канал YouTube,
+                                введя его URL, хэндл (@username) или ID канала. Частные или удаленные каналы не могут быть
+                                проанализированы.</p>
                         </div>
                         <div
                             class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                            <h4 class="font-bold text-gray-900 mb-3 text-lg">How long does monetization approval take?</h4>
-                            <p class="text-gray-700 leading-relaxed">YouTube typically reviews applications within 1 month
-                                after you
-                                meet all requirements. Complex cases or high-volume periods may result in longer wait times
-                                (up to
-                                2-3 months).</p>
-                        </div>
-                        <div
-                            class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                            <h4 class="font-bold text-gray-900 mb-3 text-lg">What if my channel is rejected?</h4>
-                            <p class="text-gray-700 leading-relaxed">If rejected, review YouTube's feedback, address any
-                                policy
-                                violations, and reapply after 30 days. Common rejection reasons include reused content,
-                                spam,
-                                misleading metadata, or policy violations.</p>
-                        </div>
-                        <div
-                            class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                            <h4 class="font-bold text-gray-900 mb-3 text-lg">How much money can monetized channels make?
+                            <h4 class="font-bold text-gray-900 mb-3 text-lg">Сколько времени занимает одобрение монетизации?
                             </h4>
-                            <p class="text-gray-700 leading-relaxed">Earnings vary widely based on niche, audience
-                                demographics, CPM
-                                rates, and engagement. Average CPM ranges from $0.25 to $4.00 per 1,000 views, but can be
-                                much
-                                higher for premium niches like finance, technology, or business content.</p>
+                            <p class="text-gray-700 leading-relaxed">YouTube обычно рассматривает заявки в течение 1 месяца
+                                после того, как вы выполните все требования. Сложные случаи или периоды высокой нагрузки
+                                могут привести к более длительному времени ожидания (до 2-3 месяцев).</p>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                            <h4 class="font-bold text-gray-900 mb-3 text-lg">Что делать, если мой канал отклонен?</h4>
+                            <p class="text-gray-700 leading-relaxed">Если отклонен, просмотрите отзывы YouTube, устраните
+                                любые нарушения политики и подайте заявку повторно через 30 дней. Распространенные причины
+                                отклонения включают повторно используемый контент, спам, вводящие в заблуждение метаданные
+                                или нарушения политики.</p>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                            <h4 class="font-bold text-gray-900 mb-3 text-lg">Сколько денег могут зарабатывать
+                                монетизированные каналы?</h4>
+                            <p class="text-gray-700 leading-relaxed">Доходы сильно различаются в зависимости от ниши,
+                                демографии аудитории, ставок CPM и вовлеченности. Средний CPM варьируется от $0.25 до $4.00
+                                за 1000 просмотров, но может быть намного выше для премиальных ниш, таких как финансы,
+                                технологии или бизнес-контент.</p>
                         </div>
                     </div>
                 </div>
@@ -232,7 +233,7 @@
                     if (!url) return;
 
                     btn.prop('disabled', true).addClass('opacity-75');
-                    btnText.text('Checking...');
+                    btnText.text('Проверка...');
                     $('#results').addClass('hidden');
                     $('#error').addClass('hidden');
 
@@ -255,7 +256,7 @@
                         },
                         complete: function () {
                             btn.prop('disabled', false).removeClass('opacity-75');
-                            btnText.text('Check Monetization');
+                            btnText.text('Проверить монетизацию');
                         }
                     });
                 });
@@ -263,11 +264,11 @@
                 function displayResults(data) {
                     $('#channelThumbnail').attr('src', data.thumbnail);
                     $('#channelName').text(data.channelName);
-                    $('#subscriberCount').text(data.subscribers + ' subscribers');
+                    $('#subscriberCount').text(data.subscribers + ' подписчиков');
 
                     const isMonetized = data.isMonetized;
                     const statusColor = isMonetized ? 'text-green-600' : 'text-red-600';
-                    const statusText = isMonetized ? '✅ Likely Monetized' : '❌ Not Monetized';
+                    const statusText = isMonetized ? '✅ Вероятно монетизирован' : '❌ Не монетизирован';
 
                     $('#monetizationStatus').html(`<span class="${statusColor}">${statusText}</span>`);
                     $('#estimatedStatus').text(data.estimatedStatus);

@@ -11,15 +11,19 @@
 
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Extract Channel Data</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                {{ __tool('youtube-channel-extractor', 'form.title', 'Extract Channel Data') }}</h2>
             <form id="channelForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="url" class="form-label text-base">YouTube Channel URL</label>
+                    <label for="url"
+                        class="form-label text-base">{{ __tool('youtube-channel-extractor', 'form.url_label', 'YouTube Channel URL') }}</label>
                     <input type="url" id="url" name="url" class="form-input"
                         placeholder="https://www.youtube.com/@channelname or https://www.youtube.com/c/channelname"
                         required>
-                    <p class="text-sm text-gray-500 mt-2">Paste any YouTube channel URL to extract its data</p>
+                    <p class="text-sm text-gray-500 mt-2">
+                        {{ __tool('youtube-channel-extractor', 'form.url_help', 'Paste any YouTube channel URL to extract its data') }}
+                    </p>
                 </div>
 
                 <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
@@ -27,7 +31,8 @@
                         <path
                             d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                     </svg>
-                    <span id="btnText">Extract Channel Data</span>
+                    <span
+                        id="btnText">{{ __tool('youtube-channel-extractor', 'form.submit', 'Extract Channel Data') }}</span>
                 </button>
             </form>
 
@@ -46,7 +51,9 @@
             <!-- Results Section -->
             <div id="resultsSection" class="hidden mt-8">
                 <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Channel Data Extracted Successfully!</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        {{ __tool('youtube-channel-extractor', 'results.success_title', 'Channel Data Extracted Successfully!') }}
+                    </h3>
                     <div id="channelData" class="space-y-4"></div>
                 </div>
             </div>
@@ -121,11 +128,11 @@
                     // Add channel avatar if available
                     if (data.avatar) {
                         const avatarHtml = `
-                                        <div class="bg-white rounded-xl p-4 border-2 border-gray-200 mb-4">
-                                            <h4 class="font-bold text-gray-900 mb-3">Channel Avatar</h4>
-                                            <img src="${data.avatar}" alt="Channel Avatar" class="w-32 h-32 rounded-full shadow-lg border-2 border-gray-300">
-                                        </div>
-                                    `;
+                                            <div class="bg-white rounded-xl p-4 border-2 border-gray-200 mb-4">
+                                                <h4 class="font-bold text-gray-900 mb-3">Channel Avatar</h4>
+                                                <img src="${data.avatar}" alt="Channel Avatar" class="w-32 h-32 rounded-full shadow-lg border-2 border-gray-300">
+                                            </div>
+                                        `;
                         container.append(avatarHtml);
                     }
 
@@ -144,25 +151,25 @@
                     fields.forEach(field => {
                         if (field.value) {
                             const copyButton = field.copyable ? `
-                                            <button onclick="copyText('${field.label.replace(/\s/g, '')}', this)" 
-                                                class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 font-semibold transition-colors">
-                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-                                                Copy
-                                            </button>
-                                        ` : '';
+                                                <button onclick="copyText('${field.label.replace(/\s/g, '')}', this)" 
+                                                    class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 font-semibold transition-colors">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                                    </svg>
+                                                    Copy
+                                                </button>
+                                            ` : '';
 
                             const item = $(`
-                                            <div class="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-indigo-200 transition-all">
-                                                <div class="flex justify-between items-start mb-2">
-                                                    <h4 class="font-bold text-gray-900">${field.label}</h4>
-                                                    ${copyButton}
+                                                <div class="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-indigo-200 transition-all">
+                                                    <div class="flex justify-between items-start mb-2">
+                                                        <h4 class="font-bold text-gray-900">${field.label}</h4>
+                                                        ${copyButton}
+                                                    </div>
+                                                    <p id="${field.label.replace(/\s/g, '')}" class="text-gray-700 ${field.multiline ? 'whitespace-pre-wrap' : ''}">${field.value}</p>
                                                 </div>
-                                                <p id="${field.label.replace(/\s/g, '')}" class="text-gray-700 ${field.multiline ? 'whitespace-pre-wrap' : ''}">${field.value}</p>
-                                            </div>
-                                        `);
+                                            `);
                             container.append(item);
                         }
                     });
@@ -202,16 +209,15 @@
                             d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">YouTube Channel Data Extractor</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Extract complete channel statistics and information
-                    instantly</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">
+                    {{ __tool('youtube-channel-extractor', 'content.main_title', 'YouTube Channel Data Extractor') }}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    {{ __tool('youtube-channel-extractor', 'content.main_subtitle', 'Extract complete channel statistics and information instantly') }}
+                </p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free YouTube Channel Data Extractor helps you analyze any YouTube channel by extracting comprehensive
-                statistics and information. Get subscriber counts, total videos, view counts, channel descriptions, join
-                dates, and more - all without needing a YouTube API key. Perfect for competitor analysis, influencer
-                research, marketing campaigns, and content strategy planning.
+                {{ __tool('youtube-channel-extractor', 'content.description', 'Our free YouTube Channel Data Extractor helps you analyze any YouTube channel by extracting comprehensive statistics and information. Get subscriber counts, total videos, view counts, channel descriptions, join dates, and more - all without needing a YouTube API key. Perfect for competitor analysis, influencer research, marketing campaigns, and content strategy planning.') }}
             </p>
 
             <div class="grid md:grid-cols-3 gap-6 mb-10">
@@ -224,8 +230,8 @@
                                 d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">Complete Statistics</h3>
-                    <p class="text-gray-600">Get subscribers, views, video count, and all channel metrics</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-extractor', 'content.feature_complete_stats_title', 'Complete Statistics') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel-extractor', 'content.feature_complete_stats_description', 'Get subscribers, views, video count, and all channel metrics') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-2xl p-6 shadow-xl border-2 border-pink-100 hover:border-pink-300 transition-all hover:shadow-2xl">
@@ -236,8 +242,8 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">Instant Results</h3>
-                    <p class="text-gray-600">Extract channel data instantly without any delays</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-extractor', 'content.feature_instant_results_title', 'Instant Results') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel-extractor', 'content.feature_instant_results_description', 'Extract channel data instantly without any delays') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-2xl p-6 shadow-xl border-2 border-rose-100 hover:border-rose-300 transition-all hover:shadow-2xl">
@@ -248,12 +254,12 @@
                                 d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">100% Free</h3>
-                    <p class="text-gray-600">No API keys, no registration, completely free forever</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-extractor', 'content.feature_free_title', '100% Free') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel-extractor', 'content.feature_free_description', 'No API keys, no registration, completely free forever') }}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">📊 Extractable Channel Data</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel-extractor', 'content.extractable_data_title', 'Extractable Channel Data') }}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
                     <h4 class="font-bold text-2xl mb-3">📈 Channel Statistics</h4>
@@ -275,7 +281,7 @@
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Common Use Cases</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel-extractor', 'content.use_cases_title', 'Common Use Cases') }}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
@@ -324,7 +330,7 @@
                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                             clip-rule="evenodd" />
                     </svg>
-                    💡 Pro Tips: Channel Analysis
+                    {{ __tool('youtube-channel-extractor', 'content.pro_tips_title', 'Pro Tips: Channel Analysis') }}
                 </h4>
                 <ul class="text-blue-800 leading-relaxed space-y-2">
                     <li>✅ Compare multiple channels in your niche to find growth patterns</li>
@@ -335,7 +341,7 @@
                 </ul>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel-extractor', 'content.faq_title', 'Frequently Asked Questions') }}</h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">Do I need a YouTube API key?</h4>
