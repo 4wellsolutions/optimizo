@@ -245,7 +245,7 @@ return [
     | YouTube Channel ID Finder Tool Translations
     |--------------------------------------------------------------------------
     */
-    
+
 
     /*
     |--------------------------------------------------------------------------
@@ -399,13 +399,133 @@ return [
     ],
 
 
+    // YouTube Video Data Extractor - FULLY TRANSLATED
+    "youtube-video-extractor" => [
+        "seo" => [
+            "title" => "Free YouTube Video Data Extractor - Extract Video Metadata | Optimizo",
+            "description" => "Extract complete YouTube video data instantly. Get title, description, tags, views, likes, and more without API keys.",
+        ],
+
+        "form" => [
+            "title" => "Extract YouTube Video Data",
+            "url_label" => "YouTube Video URL",
+            "url_help" => "Paste any YouTube video URL to extract all its metadata",
+            "submit" => "Extract Video Data",
+        ],
+
+        "results" => [
+            "success_title" => "Video Data Extracted Successfully!",
+        ],
+
+        "js" => [
+            "error_enter_url" => "Please enter a YouTube video URL",
+            "error_valid_url" => "Please enter a valid YouTube URL",
+            "extracting" => "Extracting...",
+            "error_failed" => "Failed to extract video data",
+            "video_thumbnail" => "Video Thumbnail",
+            "video_title" => "Video Title",
+            "video_description" => "Description",
+            "video_tags" => "Tags",
+            "view_count" => "Views",
+            "like_count" => "Likes",
+            "channel_name" => "Channel",
+            "publish_date" => "Published",
+            "copy" => "Copy",
+            "copied" => "Copied!",
+        ],
+
+        "content" => [
+            "main_title" => "Complete Video Data Extraction",
+            "main_subtitle" => "Extract complete video data instantly",
+            "description" => "Our free YouTube Video Data Extractor is the ultimate tool for content creators, digital marketers, SEO specialists, and researchers who need quick access to comprehensive video metadata. Extract complete video information including title, description, tags, views, likes, channel name, publish date, and thumbnail - all without using any YouTube API. Perfect for competitive analysis, content research, SEO optimization, and video marketing strategies.",
+
+            "feature_complete_data_title" => "Complete Data Extraction",
+            "feature_complete_data_description" => "Get all video metadata in one place - title, description, tags, views, likes, and more",
+            "feature_easy_copy_title" => "Easy Copy Function",
+            "feature_easy_copy_description" => "One-click copy buttons for title, description, and tags - perfect for content reuse",
+            "feature_instant_results_title" => "Instant Results",
+            "feature_instant_results_description" => "Get video data instantly without any API keys or registration required",
+
+            "extractable_data_title" => "Extractable Data Fields",
+            "data_content_title" => "📝 Content Information",
+            "data_video_title" => "Video Title",
+            "data_video_title_desc" => "Full title with formatting",
+            "data_description" => "Description",
+            "data_description_desc" => "Complete video description",
+            "data_tags" => "Tags",
+            "data_tags_desc" => "All video tags for SEO analysis",
+            "data_category" => "Category",
+            "data_category_desc" => "Video category classification",
+
+            "data_performance_title" => "📈 Performance Metrics",
+            "data_view_count" => "View Count",
+            "data_view_count_desc" => "Total video views",
+            "data_likes" => "Likes",
+            "data_likes_desc" => "Number of likes received",
+            "data_publish_date" => "Publish Date",
+            "data_publish_date_desc" => "When video was uploaded",
+            "data_duration" => "Duration",
+            "data_duration_desc" => "Video length in minutes",
+
+            "data_channel_title" => "👤 Channel Details",
+            "data_channel_name" => "Channel Name",
+            "data_channel_name_desc" => "Creator's channel name",
+            "data_channel_url" => "Channel URL",
+            "data_channel_url_desc" => "Direct link to channel",
+            "data_subscriber_count" => "Subscriber Count",
+            "data_subscriber_count_desc" => "Channel subscribers",
+
+            "data_visual_title" => "🖼️ Visual Assets",
+            "data_thumbnail" => "Thumbnail",
+            "data_thumbnail_desc" => "Video thumbnail image",
+            "data_resolutions" => "Multiple Resolutions",
+            "data_resolutions_desc" => "HD, SD, HQ options",
+            "data_avatar" => "Channel Avatar",
+            "data_avatar_desc" => "Creator profile picture",
+
+            "use_cases_title" => "Common Use Cases",
+            "use_case_research_title" => "Content Research",
+            "use_case_research_desc" => "Analyze competitor videos to understand successful content strategies",
+            "use_case_seo_title" => "SEO Optimization",
+            "use_case_seo_desc" => "Extract tags and keywords from high-performing videos to optimize your own content",
+            "use_case_marketing_title" => "Marketing Analysis",
+            "use_case_marketing_desc" => "Track video performance metrics and analyze engagement data",
+            "use_case_creation_title" => "Content Creation",
+            "use_case_creation_desc" => "Get inspiration from successful videos and understand what works",
+            "use_case_competitive_title" => "Competitive Analysis",
+            "use_case_competitive_desc" => "Study competitor strategies and identify successful patterns",
+            "use_case_data_title" => "Data Collection",
+            "use_case_data_desc" => "Gather video metadata for research and analysis projects",
+
+            "pro_tips_title" => "Pro Tip: Competitive Analysis Strategy",
+            "pro_tip_1" => "Extract data from top 10 videos in your niche to identify patterns",
+            "pro_tip_2" => "Analyze tags used by successful creators for SEO insights",
+            "pro_tip_3" => "Study video descriptions to understand effective copywriting",
+            "pro_tip_4" => "Compare view-to-like ratios to gauge engagement quality",
+            "pro_tip_5" => "Track publish dates to identify optimal posting times",
+
+            "faq_title" => "Frequently Asked Questions",
+            "faq_q1" => "Do I need a YouTube API key to use this tool?",
+            "faq_a1" => "No! Our tool extracts publicly available video data without requiring any API keys, registration, or authentication. Simply paste the video URL and get instant results.",
+            "faq_q2" => "What data can I extract from YouTube videos?",
+            "faq_a2" => "You can extract comprehensive data including video title, description, tags, view count, likes, channel name, publish date, category, duration, thumbnail, and more. All data is displayed in an easy-to-read format with copy buttons.",
+            "faq_q3" => "Can I use this for competitor analysis?",
+            "faq_a3" => "Absolutely! This tool is perfect for competitive analysis. Extract data from competitor videos to understand their SEO strategy, content approach, and what makes their videos successful.",
+            "faq_q4" => "Is there a limit on how many videos I can analyze?",
+            "faq_a4" => "No limits! You can extract data from as many YouTube videos as you need, completely free. There are no daily limits, no registration required, and no hidden fees.",
+            "faq_q5" => "Can I copy the extracted data?",
+            "faq_a5" => "Yes! We provide one-click copy buttons for title, description, and tags. You can easily copy any data field and use it for your own content creation, research, or analysis purposes.",
+        ],
+    ],
+
+
     // YouTube Tag Generator - FULLY TRANSLATED
     "youtube-tag-generator" => [
         "seo" => [
             "title" => "Free YouTube Tag Generator - Generate SEO Tags | Optimizo",
             "description" => "Generate optimized YouTube tags instantly. Get tag suggestions based on keywords for better video SEO.",
         ],
-        
+
         "form" => [
             "title" => "Generate YouTube Tags",
             "keyword_label" => "Main Keyword or Topic",
@@ -414,7 +534,7 @@ return [
             "button" => "Generate Tags",
             "button_generating" => "Generating Tags...",
         ],
-        
+
         "results" => [
             "title" => "Generated Tags",
             "count_prefix" => "Generated Tags (",
@@ -423,23 +543,23 @@ return [
             "copied" => "Copied!",
             "comma_separated" => "Comma-separated format:",
         ],
-        
+
         "messages" => [
             "error_keyword_required" => "Please enter a keyword or topic",
         ],
-        
+
         "content" => [
             "main_title" => "Generate SEO-Optimized Tags",
             "main_subtitle" => "Boost your video's visibility and rankings with smart tag suggestions",
             "intro" => "Our free YouTube Tag Generator helps content creators, marketers, and video producers create effective, SEO-optimized tags that improve video discoverability. Generate relevant tags based on your main keyword, understand tag strategy, and boost your YouTube SEO with data-driven tag suggestions. Perfect for maximizing reach, improving search rankings, and growing your channel organically.",
-            
+
             "feature1_title" => "SEO Optimized",
             "feature1_desc" => "Generate tags optimized for YouTube's search algorithm to improve rankings",
             "feature2_title" => "Instant Results",
             "feature2_desc" => "Get relevant tag suggestions instantly based on your keyword",
             "feature3_title" => "Easy Copy",
             "feature3_desc" => "One-click copy in comma-separated format ready to paste",
-            
+
             "strategy_title" => "🎯 Tag Strategy Guide",
             "primary_title" => "🎯 Primary Tags (3-5)",
             "primary_desc" => "Your main keywords that directly describe your video",
@@ -453,7 +573,7 @@ return [
             "branded_title" => "🏷️ Branded Tags (2-3)",
             "branded_desc" => "Your channel name and brand keywords",
             "branded_example" => "Example: \"YourChannelName\", \"YourBrand cooking\"",
-            
+
             "best_practices_title" => "✅ Tag Best Practices",
             "bp1_title" => "Use 15-20 Tags",
             "bp1_desc" => "Optimal number for maximum SEO benefit without over-tagging",
@@ -467,25 +587,25 @@ return [
             "bp5_desc" => "Refresh tags based on performance and trends",
             "bp6_title" => "Research Competitors",
             "bp6_desc" => "Analyze successful videos in your niche",
-            
+
             "tips_title" => "💡 Pro Tips: Maximizing Tag Effectiveness",
             "tip1" => "Use your main keyword in the video title, description, AND first tag",
             "tip2" => "Include misspellings of popular keywords to capture more searches",
             "tip3" => "Add location-based tags if your content is location-specific",
             "tip4" => "Use YouTube's autocomplete to find popular search terms",
             "tip5" => "Monitor analytics to see which tags drive the most traffic",
-            
+
             "faq_title" => "❓ Frequently Asked Questions",
-            "faq1_q" => "How many tags should I use for my YouTube videos?",
-            "faq1_a" => "YouTube allows up to 500 characters of tags. The sweet spot is 15-20 well-chosen tags that mix broad keywords, specific phrases, and long-tail variations. Quality matters more than quantity.",
-            "faq2_q" => "Do YouTube tags really help with SEO?",
-            "faq2_a" => "Yes! While title and description are more important, tags help YouTube understand your content and suggest it to relevant viewers. They're especially useful for commonly misspelled keywords and synonyms.",
-            "faq3_q" => "Should I use single words or phrases as tags?",
-            "faq3_a" => "Use both! Mix single-word tags (broad reach) with multi-word phrases (specific targeting). For example: \"cooking\" (broad) and \"easy cooking for beginners\" (specific).",
-            "faq4_q" => "Can I copy tags from popular videos?",
-            "faq4_a" => "You can use them as inspiration, but create your own unique tag combination. Focus on tags that accurately describe YOUR content. Misleading tags can hurt your channel's performance.",
-            "faq5_q" => "How often should I update my video tags?",
-            "faq5_a" => "Review and update tags every 3-6 months, or when you notice performance changes. Add trending keywords relevant to your content and remove underperforming tags based on your analytics.",
+            "faq_q1" => "How many tags should I use for my YouTube videos?",
+            "faq_a1" => "YouTube allows up to 500 characters of tags. The sweet spot is 15-20 well-chosen tags that mix broad keywords, specific phrases, and long-tail variations. Quality matters more than quantity.",
+            "faq_q2" => "Do YouTube tags really help with SEO?",
+            "faq_a2" => "Yes! While title and description are more important, tags help YouTube understand your content and suggest it to relevant viewers. They're especially useful for commonly misspelled keywords and synonyms.",
+            "faq_q3" => "Should I use single words or phrases as tags?",
+            "faq_a3" => "Use both! Mix single-word tags (broad reach) with multi-word phrases (specific targeting). For example: \"cooking\" (broad) and \"easy cooking for beginners\" (specific).",
+            "faq_q4" => "Can I copy tags from popular videos?",
+            "faq_a4" => "You can use them as inspiration, but create your own unique tag combination. Focus on tags that accurately describe YOUR content. Misleading tags can hurt your channel's performance.",
+            "faq_q5" => "How often should I update my video tags?",
+            "faq_a5" => "Review and update tags every 3-6 months, or when you notice performance changes. Add trending keywords relevant to your content and remove underperforming tags based on your analytics.",
         ],
     ],
 
@@ -495,7 +615,7 @@ return [
             "title" => "Free YouTube Channel ID Finder - Get Any Channel ID | Optimizo",
             "description" => "Find any YouTube channel's unique ID instantly. Simple tool for developers, marketers, and creators. No API key needed.",
         ],
-        
+
         "form" => [
             "title" => "Find YouTube Channel ID",
             "url_label" => "YouTube Channel URL or Username",
@@ -503,7 +623,7 @@ return [
             "url_help" => "Enter the URL of the YouTube channel or @username to find its ID",
             "find_button" => "Find Channel ID",
         ],
-        
+
         "js" => [
             "error_enter_url" => "Please enter a YouTube channel URL",
             "error_valid_url" => "Please enter a valid YouTube channel URL",
@@ -517,40 +637,42 @@ return [
             "copied" => "Copied!",
         ],
 
-
-            "use_cases.case1_desc" => "Use channel IDs in YouTube Data API calls for your applications",
-            "use_cases.case2" => "Analytics Tools",
-            "use_cases.case2_desc" => "Build custom analytics dashboards and tracking systems",
-            "use_cases.case3" => "Influencer Marketing",
-            "use_cases.case3_desc" => "Track and manage influencer partnerships efficiently",
-            "use_cases.case4" => "RSS Feeds",
-            "use_cases.case4_desc" => "Create RSS feeds for channel uploads using channel IDs",
-            "use_cases.case5" => "Content Curation",
-            "use_cases.case5_desc" => "Organize and categorize channels for content strategies",
-            "use_cases.case6" => "Automation",
-            "use_cases.case6_desc" => "Automate channel monitoring and data collection",
+        "use_cases" => [
+            "case1" => "API Integration",
+            "case1_desc" => "Use channel IDs in YouTube Data API calls for your applications",
+            "case2" => "Analytics Tools",
+            "case2_desc" => "Build custom analytics dashboards and tracking systems",
+            "case3" => "Influencer Marketing",
+            "case3_desc" => "Track and manage influencer partnerships efficiently",
+            "case4" => "RSS Feeds",
+            "case4_desc" => "Create RSS feeds for channel uploads using channel IDs",
+            "case5" => "Content Curation",
+            "case5_desc" => "Organize and categorize channels for content strategies",
+            "case6" => "Automation",
+            "case6_desc" => "Automate channel monitoring and data collection",
         ],
-        
+
         "pro_tips" => [
-            "title" => " Pro Tips: Using Channel IDs",
+            "title" => "💡 Pro Tips: Using Channel IDs",
             "tip1" => "Channel IDs always start with \"UC\" followed by 22 characters",
             "tip2" => "Use channel IDs instead of usernames for API reliability",
             "tip3" => "Channel IDs never change, even if the channel name or handle changes",
             "tip4" => "Store channel IDs in your database for long-term tracking",
             "tip5" => "Use channel IDs to create direct RSS feed URLs: youtube.com/feeds/videos.xml?channel_id=ID",
-        
+        ],
+
         "content" => [
             "main_title" => "Find YouTube Channel ID Instantly",
             "main_subtitle" => "Get any channel's unique ID for API integration, analytics, and development",
             "main_description" => "Our free YouTube Channel ID Finder helps developers, marketers, and content creators quickly retrieve the unique ID for any YouTube channel. Whether you need it for API integration, analytics tools, or third-party applications, get accurate channel IDs instantly without requiring an API key.",
-            
+
             "feature_instant_title" => "Instant Results",
             "feature_instant_desc" => "Get channel IDs immediately without delays or complicated setup",
             "feature_formats" => "All URL Formats",
             "feature_formats_desc" => "Works with @username, /c/channelname, /channel/ID, and /user/username",
             "feature_copy" => "Easy Copy",
             "feature_copy_desc" => "One-click copy to clipboard for quick use in your projects",
-            
+
             "why_need_title" => "Why You Need Channel IDs",
             "api_dev_title" => "🔧 API & Development",
             "api_dev_1" => "Required for YouTube Data API v3 integration",
@@ -563,7 +685,7 @@ return [
             "marketing_3" => "Verify channel authenticity",
             "marketing_4" => "Analyze channel growth trends",
         ],
-        
+
         "use_cases" => [
             "title" => "Common Use Cases",
             "case1" => "API Integration",
@@ -579,7 +701,7 @@ return [
             "case6" => "Development Projects",
             "case6_desc" => "Integrate YouTube channel data into applications and websites",
         ],
-        
+
         "pro_tips" => [
             "title" => "💡 Pro Tips: Working with Channel IDs",
             "tip1" => "Channel IDs always start with 'UC' followed by 22 characters",
@@ -588,7 +710,7 @@ return [
             "tip4" => "Use the ID in RSS feeds: youtube.com/feeds/videos.xml?channel_id=YOUR_ID",
             "tip5" => "Bookmark frequently used channel IDs for quick reference",
         ],
-        
+
         "faq" => [
             "title" => "❓ Frequently Asked Questions",
             "q1" => "What is a YouTube Channel ID?",
@@ -604,49 +726,110 @@ return [
         ],
     ],
 
+    // YouTube Handle Checker
+    "youtube-handle-checker" => [
+        "seo" => [
+            "title" => "YouTube Handle Checker - Check @Handle Availability | Optimizo",
+            "description" => "Check if your desired YouTube handle is available. Free tool to find the perfect @handle for your YouTube channel.",
+        ],
+
+        "form" => [
+            "title" => "Check Handle Availability",
+            "handle_label" => "Desired Handle",
+            "handle_placeholder" => "yourhandle",
+            "handle_help" => "Enter handle without the @ symbol",
+            "check_button" => "Check Availability",
+        ],
+
+        "js" => [
+            "error_enter_handle" => "Please enter a handle",
+            "error_invalid_handle" => "Invalid handle format",
+            "checking" => "Checking...",
+            "error_failed" => "Failed to check handle",
+            "available_title" => "✅ Available!",
+            "available_message" => "This handle is available",
+            "taken_title" => "❌ Taken",
+            "taken_message" => "This handle is already taken",
+            "try_alternatives" => "Try these alternatives:",
+        ],
+
+        "content" => [
+            "main_title" => "Check Handle Availability",
+            "main_subtitle" => "Find the perfect @handle for your YouTube channel",
+            "description" => "Our free YouTube Handle Checker helps you find the perfect @handle for your YouTube channel. Instantly check handle availability, get alternative suggestions if your desired handle is taken, and secure your brand identity on YouTube.",
+
+            "feature1_title" => "Instant Check",
+            "feature1_desc" => "Get immediate results on handle availability",
+            "feature2_title" => "Smart Suggestions",
+            "feature2_desc" => "Get alternative handle ideas if yours is taken",
+            "feature3_title" => "100% Free",
+            "feature3_desc" => "No limits, no registration required",
+
+            "tips_title" => "💡 Pro Tips: Choosing the Perfect Handle",
+            "tip1" => "Check availability on Instagram, Twitter, and TikTok too for consistency",
+            "tip2" => "Consider future growth - will this handle still fit in 5 years?",
+            "tip3" => "Test pronunciation - can people easily say it?",
+            "tip4" => "Avoid trends that might date your brand",
+            "tip5" => "If your first choice is taken, try adding your niche or location",
+
+            "faq_title" => "❓ Frequently Asked Questions",
+            "faq_q1" => "What characters can I use in a YouTube handle?",
+            "faq_a1" => "YouTube handles can contain letters (a-z), numbers (0-9), periods (.), underscores (_), and hyphens (-). Handles must be 3-30 characters long and cannot contain spaces or special characters.",
+            "faq_q2" => "Can I change my YouTube handle later?",
+            "faq_a2" => "Yes! YouTube allows you to change your handle, but you can only do so a limited number of times within a certain period. Choose wisely to avoid frequent changes that might confuse your audience.",
+            "faq_q3" => "What if my desired handle is taken?",
+            "faq_a3" => "Our tool provides alternative suggestions if your handle is unavailable. Try adding numbers, your niche, location, or variations of your name.",
+            "faq_q4" => "Should my YouTube handle match my channel name?",
+            "faq_a4" => "Ideally, yes! Matching your handle with your channel name creates consistency and makes you easier to find. However, if your channel name is long, consider a shortened version for your handle.",
+            "faq_q5" => "How do I claim my YouTube handle?",
+            "faq_a5" => "After checking that a handle is available with our tool, go to YouTube Studio, navigate to Settings > Basic Info, and you'll see the option to choose your handle. Claim it quickly before someone else does!",
+        ],
+    ],
+
     // YouTube Video Tags Extractor - FULLY TRANSLATED
     "youtube-video-tags-extractor" => [
         "seo" => [
             "title" => "Free YouTube Video Tags Extractor - See Any Video's Tags | Optimizo",
             "description" => "Extract tags from any YouTube video instantly. Analyze competitor tags, discover trending keywords, and optimize your SEO strategy.",
         ],
-        
+
         "form" => [
             "title" => "Extract Video Tags",
             "url_label" => "YouTube Video URL",
             "url_placeholder" => "https://www.youtube.com/watch?v=...",
             "url_help" => "Paste any YouTube video URL to extract all its tags",
-            "button" => "Extract Tags",
-            "button_extracting" => "Extracting Tags...",
+            "extract_button" => "Extract Tags",
+            "extracting" => "Extracting...",
         ],
-        
+
         "results" => [
             "title" => "Extracted Tags",
-            "count" => "0",
-            "copy_button" => "Copy All",
+            "copy_all" => "Copy All",
             "copied" => "Copied!",
             "comma_separated" => "Comma-separated format:",
         ],
-        
-        "messages" => [
-            "error_enter_url" => "Please enter a YouTube URL",
+
+        "js" => [
+            "error_enter_url" => "Please enter a YouTube video URL",
             "error_valid_url" => "Please enter a valid YouTube URL",
             "error_failed" => "Failed to extract tags. Please try again.",
-            "error_no_tags" => "No tags found for this video",
+            "extracting" => "Extracting...",
+            "extract_button" => "Extract Tags",
+            "copied" => "Copied!",
         ],
-        
+
         "content" => [
             "main_title" => "Extract Video Tags for SEO",
             "main_subtitle" => "Analyze tags from any YouTube video for optimization insights",
             "intro" => "Extract all tags from any YouTube video instantly with our free tags extractor tool. Analyze competitor tags, discover trending keywords, and optimize your own video tags for better search rankings. Perfect for content creators, SEO specialists, and digital marketers who want to understand what tags successful videos use to rank higher in YouTube search results.",
-            
+
             "feature1_title" => "Complete Tag List",
             "feature1_desc" => "Extract all tags from any video - see exactly what keywords creators use",
             "feature2_title" => "One-Click Copy",
             "feature2_desc" => "Copy all tags instantly in comma-separated format for easy use",
             "feature3_title" => "Instant Results",
             "feature3_desc" => "Get tags immediately without any delays or processing time",
-            
+
             "why_title" => "🎯 Why Extract YouTube Tags?",
             "competitor_title" => "📊 Competitor Analysis",
             "competitor_desc" => "Discover what tags successful videos in your niche use",
@@ -660,7 +843,7 @@ return [
             "seo_title" => "📈 SEO Optimization",
             "seo_desc" => "Optimize your tags for better rankings",
             "seo_detail" => "Learn from successful videos to improve your own SEO strategy",
-            
+
             "use_cases_title" => "🎯 Common Use Cases",
             "case1_title" => "Content Research",
             "case1_desc" => "Analyze competitor tags to understand successful content strategies",
@@ -674,138 +857,47 @@ return [
             "case5_desc" => "Identify trending topics and keywords in your niche",
             "case6_title" => "Learning & Research",
             "case6_desc" => "Study how successful creators optimize their content",
-            
+
             "tips_title" => "💡 Pro Tips: Using Extracted Tags Effectively",
             "tip1" => "Analyze tags from top 10 videos in your niche to find common patterns",
             "tip2" => "Don't copy tags directly - use them as inspiration for your own unique tags",
             "tip3" => "Focus on tags that are relevant to your specific content",
             "tip4" => "Mix broad and specific tags for maximum reach",
             "tip5" => "Update your tags regularly based on trending keywords",
-            
+
             "faq_title" => "❓ Frequently Asked Questions",
-            "faq1_q" => "How do I extract tags from a YouTube video?",
-            "faq1_a" => "Simply paste the YouTube video URL into the input field above and click \"Extract Tags\". Our tool will instantly retrieve all tags used in that video and display them in an easy-to-copy format.",
-            "faq2_q" => "Can I see tags from any YouTube video?",
-            "faq2_a" => "Yes! Our tool works with any public YouTube video. However, if a video creator hasn't added any tags, the tool will show that no tags are available for that particular video.",
-            "faq3_q" => "Is it legal to extract YouTube video tags?",
-            "faq3_a" => "Yes, extracting tags for research and analysis is completely legal. Tags are publicly available metadata. However, you should create your own original tags rather than copying them directly from other videos.",
-            "faq4_q" => "How can I use extracted tags for my videos?",
-            "faq4_a" => "Use extracted tags as inspiration and research. Analyze patterns in successful videos, identify relevant keywords for your niche, and create your own unique tag combinations that accurately describe your content.",
-            "faq5_q" => "Do I need a YouTube API key?",
-            "faq5_a" => "No! Our tool doesn't require any API keys or authentication. Simply paste the video URL and get instant results - completely free and unlimited.",
+            "faq_q1" => "How do I extract tags from a YouTube video?",
+            "faq_a1" => "Simply paste the YouTube video URL into the input field above and click \"Extract Tags\". Our tool will instantly retrieve all tags used in that video and display them in an easy-to-copy format.",
+            "faq_q2" => "Can I see tags from any YouTube video?",
+            "faq_a2" => "Yes! Our tool works with any public YouTube video. However, if a video creator hasn't added any tags, the tool will show that no tags are available for that particular video.",
+            "faq_q3" => "Is it legal to extract YouTube video tags?",
+            "faq_a3" => "Yes, extracting tags for research and analysis is completely legal. Tags are publicly available metadata. However, you should create your own original tags rather than copying them directly from other videos.",
+            "faq_q4" => "How can I use extracted tags for my videos?",
+            "faq_a4" => "Use extracted tags as inspiration and research. Analyze patterns in successful videos, identify relevant keywords for your niche, and create your own unique tag combinations that accurately describe your content.",
+            "faq_q5" => "Do I need a YouTube API key?",
+            "faq_a5" => "No! Our tool doesn't require any API keys or authentication. Simply paste the video URL and get instant results - completely free and unlimited.",
         ],
     ],
 
     // YouTube Handle Checker - FULLY TRANSLATED
-    "youtube-handle-checker" => [
-        "seo" => [
-            "title" => "Free YouTube Handle Checker - Check @Handle Availability | Optimizo",
-            "description" => "Check if your desired YouTube @handle is available. Get instant results, smart suggestions, and secure your perfect channel identity.",
-        ],
-        
-        "form" => [
-            "title" => "Check Handle Availability",
-            "label" => "YouTube Handle",
-            "placeholder" => "yourhandle",
-            "help" => "Enter your desired handle (without @). Letters, numbers, dots, underscores, and hyphens only.",
-            "button" => "Check Availability",
-            "button_checking" => "Checking...",
-        ],
-        
-        "results" => [
-            "available_title" => "Available! 🎉",
-            "available_message" => "This handle is available for your YouTube channel",
-            "unavailable_title" => "Not Available",
-            "unavailable_message" => "This handle is already taken",
-            "suggestions_title" => "Try these alternatives:",
-        ],
-        
-        "messages" => [
-            "error_enter_handle" => "Please enter a handle",
-            "error_invalid_format" => "Handle can only contain letters, numbers, dots, underscores, and hyphens",
-            "error_too_short" => "Handle must be at least 3 characters long",
-            "error_failed" => "Failed to check handle. Please try again.",
-        ],
-        
-        "content" => [
-            "main_title" => "Check Handle Availability",
-            "main_subtitle" => "Find the perfect @handle for your YouTube channel",
-            "intro" => "Our free YouTube Handle Checker helps you find the perfect @handle for your YouTube channel. Check handle availability instantly, get alternative suggestions if your desired handle is taken, and secure your brand identity on YouTube. Essential for new channels, rebranding, or claiming your unique identity on the platform.",
-            
-            "feature1_title" => "Instant Check",
-            "feature1_desc" => "Get immediate results on handle availability",
-            "feature2_title" => "Smart Suggestions",
-            "feature2_desc" => "Get alternative handle ideas if yours is taken",
-            "feature3_title" => "100% Free",
-            "feature3_desc" => "No limits, no registration required",
-            
-            "best_practices_title" => "✅ Handle Best Practices",
-            "dos_title" => "✅ Do's",
-            "dos_1" => "Keep it short and memorable (3-20 characters)",
-            "dos_2" => "Use your brand name or personal name",
-            "dos_3" => "Make it easy to spell and pronounce",
-            "dos_4" => "Check availability across other platforms",
-            "dos_5" => "Use consistent branding across social media",
-            "donts_title" => "❌ Don'ts",
-            "donts_1" => "Avoid special characters (except . _ -)",
-            "donts_2" => "Don't use confusing numbers or letters",
-            "donts_3" => "Avoid trademarked names",
-            "donts_4" => "Don't make it too long or complex",
-            "donts_5" => "Avoid handles that are hard to remember",
-            
-            "why_matters_title" => "🎯 Why Your Handle Matters",
-            "matter1_title" => "Easy Sharing",
-            "matter1_desc" => "Simple @handles are easier to share and remember than long channel URLs",
-            "matter2_title" => "Brand Identity",
-            "matter2_desc" => "Your handle is part of your brand - make it count",
-            "matter3_title" => "Cross-Platform",
-            "matter3_desc" => "Use the same handle across all social platforms for consistency",
-            "matter4_title" => "Discoverability",
-            "matter4_desc" => "A good handle makes you easier to find and tag",
-            "matter5_title" => "Professionalism",
-            "matter5_desc" => "Clean handles look more professional and trustworthy",
-            "matter6_title" => "Memorability",
-            "matter6_desc" => "Short, catchy handles stick in people's minds",
-            
-            "tips_title" => "💡 Pro Tips: Choosing the Perfect Handle",
-            "tip1" => "Check availability on Instagram, Twitter, and TikTok too for consistency",
-            "tip2" => "Consider future growth - will this handle still fit in 5 years?",
-            "tip3" => "Test pronunciation - can people say it easily?",
-            "tip4" => "Avoid trends that might date your brand",
-            "tip5" => "If your first choice is taken, try adding your niche or location",
-            
-            "faq_title" => "❓ Frequently Asked Questions",
-            "faq1_q" => "What characters can I use in my YouTube handle?",
-            "faq1_a" => "YouTube handles can contain letters (a-z), numbers (0-9), periods (.), underscores (_), and hyphens (-). Handles must be 3-30 characters long and cannot contain spaces or special characters.",
-            "faq2_q" => "Can I change my YouTube handle later?",
-            "faq2_a" => "Yes! YouTube allows you to change your handle, but you can only do it a limited number of times within a certain period. Choose wisely to avoid frequent changes that might confuse your audience.",
-            "faq3_q" => "What if my desired handle is taken?",
-            "faq3_a" => "Our tool provides alternative suggestions if your handle is unavailable. Try adding numbers, your niche, location, or variations of your name. You can also check if the handle is available with different capitalization.",
-            "faq4_q" => "Should my YouTube handle match my channel name?",
-            "faq4_a" => "Ideally, yes! Having your handle match your channel name creates consistency and makes you easier to find. However, if your channel name is long, consider a shortened version for your handle.",
-            "faq5_q" => "How do I claim my YouTube handle?",
-            "faq5_a" => "Once you verify a handle is available using our tool, go to YouTube Studio, navigate to Customization > Basic Info, and you'll see the option to choose your handle. Claim it quickly before someone else does!",
-        ],
-    ],
-
     // YouTube Channel Data Extractor - FULLY TRANSLATED
     "youtube-channel-extractor" => [
         "seo" => [
             "title" => "Free YouTube Channel Data Extractor - Get Channel Statistics | Optimizo",
             "description" => "Extract complete YouTube channel data including subscribers, views, videos count, description, and more. Free channel statistics extractor tool.",
         ],
-        
+
         "form" => [
             "title" => "Extract Channel Data",
             "url_label" => "YouTube Channel URL",
             "url_help" => "Paste any YouTube channel URL (supports @handle, /c/, /channel/, or /user/ formats)",
             "submit" => "Extract Channel Data",
         ],
-        
+
         "results" => [
             "success_title" => "Channel Data Extracted Successfully!",
         ],
-        
+
         "js" => [
             "error_enter_url" => "Please enter a channel URL",
             "error_valid_url" => "Please enter a valid YouTube channel URL",
@@ -824,19 +916,19 @@ return [
             "copy" => "Copy",
             "copied" => "Copied!",
         ],
-        
+
         "content" => [
             "main_title" => "YouTube Channel Data Extractor",
             "main_subtitle" => "Extract complete statistics and information from any YouTube channel",
             "description" => "Our free YouTube Channel Data Extractor helps you gather comprehensive statistics and information from any YouTube channel. Extract subscriber counts, video counts, total views, channel descriptions, and more in seconds. Perfect for competitor analysis, influencer research, market research, and partnership evaluation.",
-            
+
             "feature_complete_stats_title" => "Complete Statistics",
             "feature_complete_stats_description" => "Get all channel metrics including subscribers, videos, and total views",
             "feature_instant_results_title" => "Instant Results",
             "feature_instant_results_description" => "Extract channel data in seconds with our fast processing",
             "feature_free_title" => "100% Free",
             "feature_free_description" => "No registration, no limits, completely free to use",
-            
+
             "extractable_data_title" => " Extractable Channel Data",
             "data_statistics_title" => " Statistics",
             "data_subscriber_count" => "Subscriber Count",
@@ -849,7 +941,7 @@ return [
             "data_total_views_desc" => "Cumulative channel views",
             "data_join_date" => "Join Date",
             "data_join_date_desc" => "When the channel was created",
-            
+
             "data_information_title" => "ℹ Channel Information",
             "data_channel_name" => "Channel Name",
             "data_channel_name_desc" => "Official channel name",
@@ -859,7 +951,7 @@ return [
             "data_description_desc" => "Full channel description",
             "data_channel_id" => "Channel ID",
             "data_channel_id_desc" => "Unique YouTube channel identifier",
-            
+
             "use_cases_title" => " Common Use Cases",
             "use_case_competitor_title" => "Competitor Analysis",
             "use_case_competitor_desc" => "Analyze competitor channels to understand their growth and strategy",
@@ -873,14 +965,14 @@ return [
             "use_case_growth_desc" => "Monitor channel growth over time for strategic insights",
             "use_case_content_title" => "Content Strategy",
             "use_case_content_desc" => "Learn from successful channels to improve your content approach",
-            
+
             "pro_tips_title" => " Pro Tips: Using Channel Data Effectively",
             "pro_tip_1" => "Track competitor channels regularly to spot trends early",
             "pro_tip_2" => "Compare channels in your niche to find content gaps",
             "pro_tip_3" => "Use subscriber-to-view ratios to gauge engagement levels",
             "pro_tip_4" => "Monitor video upload frequency for competitive benchmarking",
             "pro_tip_5" => "Save channel data periodically to track growth over time",
-            
+
             "faq_title" => " Frequently Asked Questions",
             "faq_q1" => "What channel data can I extract?",
             "faq_a1" => "Our tool extracts comprehensive channel information including subscriber count, total videos, total views, channel description, channel ID, handle, join date, and channel avatar. All data is publicly available information from YouTube.",
@@ -905,11 +997,11 @@ return [
             "title" => "Free YouTube Video Downloader - Download Videos in HD | Optimizo",
             "description" => "Download YouTube videos in multiple quality options FREE. High quality downloads in 1080p, 720p, 480p, 360p, and MP3 audio. No registration required.",
         ],
-        
+
         "content" => [
             "main_title" => "Free YouTube Video Downloader",
             "intro" => "Download YouTube videos easily with our free online video downloader. Choose from multiple quality options including Full HD (1080p), HD (720p), SD (480p), 360p, and MP3 audio format. No registration required, completely free, and works with all YouTube videos. Perfect for saving videos for offline viewing, creating compilations, or extracting audio for podcasts and music.",
-            
+
             "feature1_title" => "Multiple Formats",
             "feature1_desc" => "Download in MP4, WebM, or extract MP3 audio from videos",
             "feature2_title" => "Fast Downloads",
@@ -924,40 +1016,13 @@ return [
             "title" => "YouTube Earnings Calculator - Estimate Your Revenue | Optimizo",
             "description" => "Calculate YouTube earnings based on views and CPM. Get instant daily, monthly, and yearly revenue estimates. Free earnings calculator for content creators.",
         ],
-        
+
         "js" => [
             "error_views" => "Please enter valid daily views (must be 0 or greater)",
             "error_cpm" => "Please enter valid CPM (must be 0 or greater)",
         ],
     ],
     // YouTube Channel ID Finder - COMPREHENSIVE TRANSLATION KEYS
-    "youtube-channel-id-finder" => [
-        "seo" => [
-            "title" => "YouTube Channel ID Finder - Find Any Channel ID Instantly | Optimizo",
-            "description" => "Find YouTube channel IDs instantly from any channel URL. Free tool for developers, marketers, and content creators. Works with @handles, /c/, /channel/, and /user/ URLs.",
-        ],
-        
-        "form" => [
-            "title" => "Find Channel ID",
-            "url_label" => "YouTube Channel URL",
-            "url_placeholder" => "https://www.youtube.com/@channelname or https://www.youtube.com/c/channelname",
-            "url_help" => "Paste any YouTube channel URL to find its unique ID",
-            "find_button" => "Find Channel ID",
-        ],
-        
-        "js" => [
-            "error_enter_url" => "Please enter a YouTube channel URL",
-            "error_valid_url" => "Please enter a valid YouTube channel URL",
-            "finding" => "Finding ID...",
-            "error_failed" => "Failed to find channel ID. Please try again.",
-            "success_title" => "Channel ID Found!",
-            "channel_id" => "Channel ID",
-            "channel_name" => "Channel Name",
-            "channel_url" => "Channel URL",
-            "copy" => "Copy",
-            "copied" => "Copied!",
-        ],
-    ],
 
     // YouTube Channel Data Extractor - COMPREHENSIVE TRANSLATION KEYS
     "youtube-channel" => [
@@ -965,7 +1030,7 @@ return [
             "title" => "YouTube Channel Data Extractor - Get Channel Statistics & Info | Optimizo",
             "description" => "Extract complete YouTube channel data including subscriber count, video count, views, and more. Free tool for marketers, researchers, and content creators.",
         ],
-        
+
         "form" => [
             "title" => "Extract Channel Data",
             "url_label" => "YouTube Channel URL",
@@ -973,7 +1038,7 @@ return [
             "url_help" => "Paste any YouTube channel URL to extract its data",
             "submit" => "Extract Channel Data",
         ],
-        
+
         "js" => [
             "error_enter_url" => "Please enter a YouTube channel URL",
             "error_valid_url" => "Please enter a valid YouTube channel URL",
@@ -985,70 +1050,70 @@ return [
         ],
 
 
-            "stats" => [
-                "title" => " Channel Statistics",
-                "subscriber_count" => "Subscriber Count",
-                "subscriber_count_desc" => "Total subscribers",
-                "video_count" => "Video Count",
-                "video_count_desc" => "Number of videos published",
-                "total_views" => "Total Views",
-                "total_views_desc" => "Lifetime channel views",
-                "join_date" => "Join Date",
-                "join_date_desc" => "When channel was created",
-            ],
-            
-            "info" => [
-                "title" => "ℹ Channel Information",
-                "channel_name" => "Channel Name",
-                "channel_name_desc" => "Official channel title",
-                "channel_handle" => "Channel Handle",
-                "channel_handle_desc" => "@username format",
-                "description" => "Description",
-                "description_desc" => "Full channel description",
-                "channel_id" => "Channel ID",
-                "channel_id_desc" => "Unique identifier",
-            ],
-            
-            "use_cases" => [
-                "case1" => "Competitor Analysis",
-                "case1_desc" => "Research competitor channels to understand their growth and strategy",
-                "case2" => "Influencer Research",
-                "case2_desc" => "Evaluate influencers for collaboration and sponsorship opportunities",
-                "case3" => "Market Research",
-                "case3_desc" => "Analyze channel performance in your niche or industry",
-                "case4" => "Partnership Evaluation",
-                "case4_desc" => "Assess potential partners based on their channel metrics",
-                "case5" => "Growth Tracking",
-                "case5_desc" => "Monitor channel growth over time for benchmarking",
-                "case6" => "Content Strategy",
-                "case6_desc" => "Study successful channels to inform your content strategy",
-            ],
-            
-            "pro_tips" => [
-                "title" => " Pro Tips for Channel Analysis",
-                "tip1" => "Compare multiple channels in your niche to identify growth patterns",
-                "tip2" => "Track channel metrics over time to spot trends and opportunities",
-                "tip3" => "Use subscriber-to-view ratios to gauge audience engagement",
-                "tip4" => "Analyze channel descriptions for keyword and SEO insights",
-                "tip5" => "Check join dates to understand channel maturity and growth rate",
-            ],
-            
-            "faq" => [
-                "title" => " Frequently Asked Questions",
-                "q1" => "Do I need a YouTube API key?",
-                "a1" => "No! Our tool works without any API keys. Simply paste the channel URL and get instant results.",
-                "q2" => "What channel data can I extract?",
-                "a2" => "You can extract subscriber count, total videos, total views, channel name, description, channel ID, custom URL, country, and join date.",
-                "q3" => "Is this tool free to use?",
-                "a3" => "Yes, completely free! Extract data from unlimited channels without any restrictions or hidden fees.",
-                "q4" => "Can I use this for competitor analysis?",
-                "a4" => "Absolutely! This tool is perfect for analyzing competitor channels, understanding their growth metrics, and identifying successful strategies in your niche.",
-                "q5" => "Is there a limit on how many channels I can analyze?",
-                "a5" => "No limits! Extract data from as many YouTube channels as you need, completely free. Perfect for comprehensive market research and competitive analysis.",
-                "q6" => "What channel URL formats are supported?",
-                "a6" => "We support all YouTube channel URL formats including @handle, /c/channelname, /channel/ID, and /user/username. Just paste any valid channel URL and we'll extract the data.",
-            ],
-        
+        "stats" => [
+            "title" => " Channel Statistics",
+            "subscriber_count" => "Subscriber Count",
+            "subscriber_count_desc" => "Total subscribers",
+            "video_count" => "Video Count",
+            "video_count_desc" => "Number of videos published",
+            "total_views" => "Total Views",
+            "total_views_desc" => "Lifetime channel views",
+            "join_date" => "Join Date",
+            "join_date_desc" => "When channel was created",
+        ],
+
+        "info" => [
+            "title" => "ℹ Channel Information",
+            "channel_name" => "Channel Name",
+            "channel_name_desc" => "Official channel title",
+            "channel_handle" => "Channel Handle",
+            "channel_handle_desc" => "@username format",
+            "description" => "Description",
+            "description_desc" => "Full channel description",
+            "channel_id" => "Channel ID",
+            "channel_id_desc" => "Unique identifier",
+        ],
+
+        "use_cases" => [
+            "case1" => "Competitor Analysis",
+            "case1_desc" => "Research competitor channels to understand their growth and strategy",
+            "case2" => "Influencer Research",
+            "case2_desc" => "Evaluate influencers for collaboration and sponsorship opportunities",
+            "case3" => "Market Research",
+            "case3_desc" => "Analyze channel performance in your niche or industry",
+            "case4" => "Partnership Evaluation",
+            "case4_desc" => "Assess potential partners based on their channel metrics",
+            "case5" => "Growth Tracking",
+            "case5_desc" => "Monitor channel growth over time for benchmarking",
+            "case6" => "Content Strategy",
+            "case6_desc" => "Study successful channels to inform your content strategy",
+        ],
+
+        "pro_tips" => [
+            "title" => " Pro Tips for Channel Analysis",
+            "tip1" => "Compare multiple channels in your niche to identify growth patterns",
+            "tip2" => "Track channel metrics over time to spot trends and opportunities",
+            "tip3" => "Use subscriber-to-view ratios to gauge audience engagement",
+            "tip4" => "Analyze channel descriptions for keyword and SEO insights",
+            "tip5" => "Check join dates to understand channel maturity and growth rate",
+        ],
+
+        "faq" => [
+            "title" => " Frequently Asked Questions",
+            "q1" => "Do I need a YouTube API key?",
+            "a1" => "No! Our tool works without any API keys. Simply paste the channel URL and get instant results.",
+            "q2" => "What channel data can I extract?",
+            "a2" => "You can extract subscriber count, total videos, total views, channel name, description, channel ID, custom URL, country, and join date.",
+            "q3" => "Is this tool free to use?",
+            "a3" => "Yes, completely free! Extract data from unlimited channels without any restrictions or hidden fees.",
+            "q4" => "Can I use this for competitor analysis?",
+            "a4" => "Absolutely! This tool is perfect for analyzing competitor channels, understanding their growth metrics, and identifying successful strategies in your niche.",
+            "q5" => "Is there a limit on how many channels I can analyze?",
+            "a5" => "No limits! Extract data from as many YouTube channels as you need, completely free. Perfect for comprehensive market research and competitive analysis.",
+            "q6" => "What channel URL formats are supported?",
+            "a6" => "We support all YouTube channel URL formats including @handle, /c/channelname, /channel/ID, and /user/username. Just paste any valid channel URL and we'll extract the data.",
+        ],
+
         "results" => [
             "success_title" => "Channel Data Extracted Successfully!",
         ],
@@ -1061,11 +1126,11 @@ return [
             "title" => "Free YouTube Video Downloader - Download Videos in HD | Optimizo",
             "description" => "Download YouTube videos for free in multiple formats and quality options. Fast, safe, and easy to use. No registration required.",
         ],
-        
+
         "content" => [
             "main_title" => "Free YouTube Video Downloader",
             "main_description" => "Download YouTube videos easily with our free online video downloader. Choose from multiple quality options including Full HD (1080p), HD (720p), SD (480p), 360p, and MP3 audio format. No registration required, completely free, and works with all YouTube videos. Perfect for saving videos for offline viewing, creating compilations, or extracting audio for podcasts and music.",
-            
+
             "feature1_title" => "Multiple Formats",
             "feature1_desc" => "Download in MP4, WebM, or extract MP3 audio from videos",
             "feature2_title" => "Fast Downloads",
@@ -1073,7 +1138,7 @@ return [
             "feature3_title" => "Safe & Secure",
             "feature3_desc" => "No malware, no viruses, completely safe to use",
         ],
-        
+
         "js" => [
             "error_enter_url" => "Please enter a YouTube URL",
             "processing" => "Processing...",
@@ -1083,60 +1148,6 @@ return [
 
 
     // YouTube Earnings Calculator - Translation Keys
-    "youtube-earnings-calculator" => [
-        "seo" => [
-            "title" => "YouTube Earnings Calculator - Estimate Your Revenue | Optimizo",
-            "description" => "Calculate your potential YouTube earnings based on views and CPM. Free tool with daily, monthly, and yearly revenue estimates.",
-        ],
-        
-        "how_to_use" => [
-            "title" => "Calculate YouTube Earnings",
-        ],
-        
-        "form" => [
-            "daily_views_label" => "Daily Video Views",
-            "daily_views_help" => "Enter your average daily video views",
-            "cpm_label" => "Estimated CPM ($)",
-            "cpm_help" => "Average CPM ranges from $0.25 to $4.00",
-            "calculate_button" => "Calculate Earnings",
-            "estimated_earnings" => "Estimated Earnings",
-            "daily" => "Daily",
-            "monthly" => "Monthly",
-            "yearly" => "Yearly",
-            "note" => "Note: These are estimates based on your CPM. Actual earnings vary based on niche, audience location, engagement, and ad types.",
-        ],
-        
-        "js" => [
-            "error_views" => "Please enter valid daily views",
-            "error_cpm" => "Please enter valid CPM",
-        ],
-        
-        "content" => [
-            "main_title" => "Calculate Your Revenue Potential",
-            "main_subtitle" => "Estimate your YouTube earnings based on views and CPM",
-            "main_description" => "Our free YouTube Earnings Calculator helps content creators estimate their potential revenue based on daily views and CPM (Cost Per Mille). Get instant calculations for daily, monthly, and yearly earnings with realistic ranges. Perfect for planning your YouTube career, setting revenue goals, and understanding your channel's monetization potential.",
-            "tips_title" => " Pro Tips: Maximizing YouTube Earnings",
-            "tip1" => "Create videos over 8 minutes to enable mid-roll ads",
-            "tip2" => "Target high-CPM niches like finance, tech, or business",
-            "tip3" => "Focus on attracting viewers from tier-1 countries (US, UK, Canada)",
-            "tip4" => "Maintain high watch time and engagement for better ad performance",
-            "tip5" => "Diversify income with memberships, Super Chat, and merchandise",
-        ],
-        
-        "faq" => [
-            "title" => " Frequently Asked Questions",
-            "q1" => "How much does YouTube pay per 1,000 views?",
-            "a1" => "YouTube pays between $0.25 to $4.00 per 1,000 views on average, depending on your niche, audience location, and engagement. High-value niches like finance can earn $4-$12 per 1,000 views, while gaming typically earns $0.50-$3.",
-            "q2" => "What is CPM and how does it work?",
-            "a2" => "CPM (Cost Per Mille) is the amount advertisers pay per 1,000 ad impressions. YouTube takes 45% and creators receive 55%. Your actual CPM varies based on niche, audience demographics, video length, and ad types enabled on your videos.",
-            "q3" => "How many views do I need to make $1,000/month?",
-            "a3" => "With an average CPM of $2.50, you'd need approximately 400,000 monthly views (13,333 daily views) to earn $1,000/month. However, this varies significantly based on your CPM, which depends on your niche and audience.",
-            "q4" => "Do all views generate revenue?",
-            "a4" => "No. Only monetized views (where ads are shown and viewed) generate revenue. Viewers with ad blockers, YouTube Premium subscribers, and videos watched in countries with low ad demand may not generate ad revenue, though Premium views do generate revenue through subscription fees.",
-            "q5" => "How can I increase my YouTube earnings?",
-            "a5" => "Increase earnings by: creating longer videos (8+ minutes) for mid-roll ads, targeting high-CPM niches, attracting tier-1 country viewers, improving watch time and engagement, enabling all ad formats, and diversifying with memberships, Super Chat, and merchandise.",
-        ],
-    ],
 
 
     // YouTube Video Data Extractor - Comprehensive Translation Keys
@@ -1145,14 +1156,14 @@ return [
             "title" => "YouTube Video Data Extractor - Get Complete Video Metadata | Optimizo",
             "description" => "Extract complete YouTube video data including title, description, tags, views, likes, and more. Free tool for content creators and marketers.",
         ],
-        
+
         "form" => [
             "title" => "Extract YouTube Video Data",
             "url_label" => "YouTube Video URL",
             "url_help" => "Paste any YouTube video URL to extract all its metadata",
             "submit" => "Extract Video Data",
         ],
-        
+
         "js" => [
             "error_enter_url" => "Please enter a YouTube URL",
             "error_valid_url" => "Please enter a valid YouTube URL",
@@ -1171,23 +1182,23 @@ return [
             "copy" => "Copy",
             "copied" => "Copied!",
         ],
-        
+
         "results" => [
             "success_title" => "Video Data Extracted Successfully!",
         ],
-        
+
         "content" => [
             "main_title" => "Complete Video Data Extraction",
             "main_subtitle" => "Extract complete video data instantly",
             "description" => "Our free YouTube Video Data Extractor is the ultimate tool for content creators, digital marketers, SEO specialists, and researchers who need quick access to comprehensive video metadata. Extract complete video information including title, description, tags, views, likes, channel name, publish date, and thumbnail - all without using any YouTube API. Perfect for competitive analysis, content research, SEO optimization, and video marketing strategies.",
-            
+
             "feature_complete_data_title" => "Complete Data Extraction",
             "feature_complete_data_description" => "Get all video metadata in one place - title, description, tags, views, likes, and more",
             "feature_easy_copy_title" => "Easy Copy Function",
             "feature_easy_copy_description" => "One-click copy buttons for title, description, and tags - perfect for content reuse",
             "feature_instant_results_title" => "Instant Results",
             "feature_instant_results_description" => "Get video data instantly without any API keys or registration required",
-            
+
             "extractable_data_title" => "Extractable Data Fields",
             "data_content_title" => " Content Information",
             "data_video_title" => "Video Title",
@@ -1198,7 +1209,7 @@ return [
             "data_tags_desc" => "All video tags for SEO analysis",
             "data_category" => "Category",
             "data_category_desc" => "Video category classification",
-            
+
             "data_performance_title" => " Performance Metrics",
             "data_view_count" => "View Count",
             "data_view_count_desc" => "Total video views",
@@ -1208,7 +1219,7 @@ return [
             "data_publish_date_desc" => "When video was uploaded",
             "data_duration" => "Duration",
             "data_duration_desc" => "Video length in minutes",
-            
+
             "data_channel_title" => " Channel Details",
             "data_channel_name" => "Channel Name",
             "data_channel_name_desc" => "Creator's channel name",
@@ -1216,7 +1227,7 @@ return [
             "data_channel_url_desc" => "Direct link to channel",
             "data_subscriber_count" => "Subscriber Count",
             "data_subscriber_count_desc" => "Channel subscribers",
-            
+
             "data_visual_title" => " Visual Assets",
             "data_thumbnail" => "Thumbnail",
             "data_thumbnail_desc" => "Video thumbnail image",
@@ -1224,7 +1235,7 @@ return [
             "data_resolutions_desc" => "HD, SD, HQ options",
             "data_avatar" => "Channel Avatar",
             "data_avatar_desc" => "Creator profile picture",
-            
+
             "use_cases_title" => "Common Use Cases",
             "use_case_research_title" => "Content Research",
             "use_case_research_desc" => "Analyze competitor videos to understand successful content strategies",
@@ -1238,14 +1249,14 @@ return [
             "use_case_competitive_desc" => "Study competitor strategies and identify successful patterns",
             "use_case_data_title" => "Data Collection",
             "use_case_data_desc" => "Gather video metadata for research and analysis projects",
-            
+
             "pro_tips_title" => "Pro Tip: Competitive Analysis Strategy",
             "pro_tip_1" => "Extract data from top 10 videos in your niche to identify patterns",
             "pro_tip_2" => "Analyze tags used by successful creators for SEO insights",
             "pro_tip_3" => "Study video descriptions to understand effective copywriting",
             "pro_tip_4" => "Compare view-to-like ratios to gauge engagement quality",
             "pro_tip_5" => "Track publish dates to identify optimal posting times",
-            
+
             "faq_title" => "Frequently Asked Questions",
             "faq_q1" => "Do I need a YouTube API key to use this tool?",
             "faq_a1" => "No! Our tool extracts publicly available video data without requiring any API keys, registration, or authentication. Simply paste the video URL and get instant results.",
@@ -1262,70 +1273,6 @@ return [
 
 
     // YouTube Handle Checker - Comprehensive Translation Keys
-    "youtube-handle-checker" => [
-        "seo" => [
-            "title" => "YouTube Handle Checker - Check Handle Availability | Optimizo",
-            "description" => "Check if your desired YouTube handle is available. Free tool to verify @handle availability before claiming it.",
-        ],
-        
-        "form" => [
-            "title" => "Check Handle Availability",
-            "handle_label" => "YouTube Handle",
-            "handle_placeholder" => "yourhandle",
-            "handle_help" => "Enter your desired handle (without @). Letters, numbers, dots, underscores, and hyphens only.",
-            "check_button" => "Check Availability",
-        ],
-        
-        "js" => [
-            "error_enter_handle" => "Please enter a handle",
-            "error_invalid_handle" => "Handle can only contain letters, numbers, dots, underscores, and hyphens",
-            "checking" => "Checking...",
-            "error_failed" => "Failed to check handle availability. Please try again.",
-            "available_title" => "Handle Available!",
-            "available_message" => "This handle is available for registration",
-            "taken_title" => "Handle Taken",
-            "taken_message" => "This handle is already in use",
-            "try_alternatives" => "Try these alternatives:",
-        ],
-        
-        "content" => [
-            "main_title" => "YouTube Handle Availability Checker",
-            "main_subtitle" => "Check if your desired @handle is available",
-            "description" => "Our free YouTube Handle Checker helps you verify if your desired @handle is available before you try to claim it. YouTube handles are unique identifiers that make it easier for viewers to find and remember your channel. Check availability instantly and get alternative suggestions if your preferred handle is taken.",
-            
-            "feature1_title" => "Instant Verification",
-            "feature1_desc" => "Check handle availability in real-time without logging in",
-            "feature2_title" => "Smart Suggestions",
-            "feature2_desc" => "Get alternative handle suggestions if your choice is taken",
-            "feature3_title" => "Format Validation",
-            "feature3_desc" => "Ensures your handle meets YouTube's requirements",
-            
-            "requirements_title" => "Handle Requirements",
-            "req1" => "3-30 characters long",
-            "req2" => "Letters, numbers, dots, underscores, hyphens only",
-            "req3" => "Must be unique across YouTube",
-            "req4" => "Cannot contain spaces or special characters",
-            
-            "tips_title" => " Pro Tips: Choosing a Great Handle",
-            "tip1" => "Keep it short and memorable for easy sharing",
-            "tip2" => "Use your brand name or niche keywords",
-            "tip3" => "Avoid numbers and special characters when possible",
-            "tip4" => "Check availability across other social platforms",
-            "tip5" => "Make it consistent with your other social media handles",
-            
-            "faq_title" => " Frequently Asked Questions",
-            "faq_q1" => "What is a YouTube handle?",
-            "faq_a1" => "A YouTube handle is a unique identifier starting with @ that makes it easier for viewers to find and mention your channel. It appears on your channel page and in comments.",
-            "faq_q2" => "Can I change my YouTube handle?",
-            "faq_a2" => "Yes, you can change your handle up to 3 times every 14 days. However, your old handle becomes available for others to claim.",
-            "faq_q3" => "What if my desired handle is taken?",
-            "faq_a3" => "If your handle is taken, try variations like adding your niche, location, or numbers. Our tool provides smart suggestions to help you find available alternatives.",
-            "faq_q4" => "Are handles case-sensitive?",
-            "faq_a4" => "No, YouTube handles are not case-sensitive. @YourHandle and @yourhandle are treated as the same handle.",
-            "faq_q5" => "How long should my handle be?",
-            "faq_a5" => "YouTube handles must be 3-30 characters long. Shorter handles (5-15 characters) are generally more memorable and easier to share.",
-        ],
-    ],
 
 
     // YouTube Monetization Checker - Comprehensive Translation Keys
@@ -1334,7 +1281,7 @@ return [
             "title" => "YouTube Monetization Checker - Check Channel Monetization Status | Optimizo",
             "description" => "Check if a YouTube channel is monetized. Free tool to verify monetization eligibility and requirements.",
         ],
-        
+
         "form" => [
             "url_label" => "YouTube Channel URL or Handle",
             "url_placeholder" => "https://www.youtube.com/@channelname or @channelname",
@@ -1342,7 +1289,7 @@ return [
             "check_button" => "Check Monetization",
             "checking" => "Checking...",
         ],
-        
+
         "results" => [
             "monetization_status" => "Monetization Status",
             "estimated_status" => "Estimated Status",
@@ -1352,14 +1299,14 @@ return [
             "note_title" => "Note:",
             "note_text" => "This tool estimates monetization based on public channel data. Actual monetization status can only be confirmed by the channel owner through YouTube Studio.",
         ],
-        
+
         "js" => [
             "error_failed" => "Failed to check monetization status",
             "subscribers_text" => "subscribers",
             "likely_monetized" => " Likely Monetized",
             "not_monetized" => " Not Monetized",
         ],
-        
+
         "content" => [
             "requirements_title" => " YouTube Partner Program Requirements (2024)",
             "req1_title" => " 1,000 Subscribers",
@@ -1374,7 +1321,7 @@ return [
             "req4_title" => " Policy Compliance",
             "req4_desc" => "No active strikes, violations, or policy warnings",
             "req4_note" => "Full adherence to community and content guidelines",
-            
+
             "revenue_title" => " YouTube Monetization Revenue Streams",
             "revenue1_title" => "Ad Revenue",
             "revenue1_desc" => "Display, overlay, skippable, and non-skippable video ads",
@@ -1388,10 +1335,10 @@ return [
             "revenue5_desc" => "Sell branded merchandise directly under videos",
             "revenue6_title" => "Sponsored Content",
             "revenue6_desc" => "Brand deals and sponsorship opportunities",
-            
+
             "notice_title" => " Important Notice",
             "notice_text" => "This tool provides estimates based on publicly available channel data and YouTube Partner Program requirements. Actual monetization status can only be confirmed by the channel owner through YouTube Studio. Meeting minimum requirements does not guarantee approval - channels must maintain compliance with all YouTube policies, community guidelines, and advertiser-friendly content guidelines.",
-            
+
             "faq_title" => " Frequently Asked Questions",
             "faq_q1" => "How accurate is the monetization check?",
             "faq_a1" => "Our tool provides highly accurate estimates (90%+ accuracy) based on public metrics and YouTube Partner Program requirements. However, only channel owners can confirm actual monetization status through YouTube Studio.",
@@ -1408,129 +1355,6 @@ return [
 
 
     // YouTube Tag Generator - Comprehensive Translation Keys
-    "youtube-tag-generator" => [
-        "seo" => [
-            "title" => "YouTube Tag Generator - Generate Optimized Video Tags | Optimizo",
-            "description" => "Generate optimized YouTube tags for better video discoverability. Free AI-powered tag generator for content creators.",
-        ],
-        
-        "form" => [
-            "title" => "Generate YouTube Tags",
-            "keyword_label" => "Main Keyword or Topic",
-            "keyword_placeholder" => "e.g., cooking recipes, gaming tutorial, tech review...",
-            "keyword_help" => "Enter your video's main topic to generate relevant tags",
-            "generate_button" => "Generate Tags",
-            "generating" => "Generating...",
-        ],
-        
-        "results" => [
-            "title" => "Generated Tags",
-            "copy_all" => "Copy All Tags",
-            "copied" => "Copied!",
-            "tag_count" => "tags",
-        ],
-        
-        "js" => [
-            "error_enter_keyword" => "Please enter a keyword or topic",
-            "error_failed" => "Failed to generate tags. Please try again.",
-            "generating" => "Generating...",
-            "generate_button" => "Generate Tags",
-            "copied" => "Copied!",
-            "copy_all" => "Copy All Tags",
-        ],
-        
-        "content" => [
-            "main_title" => "YouTube Tag Generator",
-            "main_subtitle" => "Generate optimized tags for better video discoverability",
-            "description" => "Our free YouTube Tag Generator helps you create relevant, SEO-optimized tags for your videos. Generate dozens of high-performing tags based on your video topic, improve discoverability, and reach more viewers. Perfect for content creators, marketers, and anyone looking to maximize their YouTube video performance.",
-            
-            "feature1_title" => "AI-Powered Generation",
-            "feature1_desc" => "Smart algorithm generates relevant tags based on your topic",
-            "feature2_title" => "SEO Optimized",
-            "feature2_desc" => "Tags designed to improve video discoverability and ranking",
-            "feature3_title" => "One-Click Copy",
-            "feature3_desc" => "Copy all tags instantly and paste directly into YouTube",
-            
-            "tips_title" => " Pro Tips: Tag Optimization",
-            "tip1" => "Use a mix of broad and specific tags for maximum reach",
-            "tip2" => "Include your main keyword in the first few tags",
-            "tip3" => "Add trending tags related to your niche",
-            "tip4" => "Use 10-15 tags per video for optimal performance",
-            "tip5" => "Research competitor tags for inspiration",
-            
-            "faq_title" => " Frequently Asked Questions",
-            "faq_q1" => "How many tags should I use?",
-            "faq_a1" => "YouTube allows up to 500 characters of tags. We recommend using 10-15 relevant tags that accurately describe your video content. Quality over quantity is key.",
-            "faq_q2" => "Do tags really help with YouTube SEO?",
-            "faq_a2" => "Yes! Tags help YouTube understand your video content and show it to the right audience. While titles and descriptions are more important, tags still play a role in discoverability.",
-            "faq_q3" => "Can I use the same tags for all my videos?",
-            "faq_a3" => "No, each video should have unique tags that accurately describe its specific content. Generic tags won't help your videos rank for relevant searches.",
-            "faq_q4" => "Should I use single-word or multi-word tags?",
-            "faq_a4" => "Use both! Single-word tags cast a wide net, while multi-word (long-tail) tags target specific searches. A good mix helps you reach different audiences.",
-            "faq_q5" => "How do I know if my tags are working?",
-            "faq_a5" => "Check YouTube Analytics to see which tags drive traffic to your videos. Look at 'Traffic Source: YouTube Search' to see what search terms viewers use to find your content.",
-        ],
-    ],
-
 
     // YouTube Video Tags Extractor - Comprehensive Translation Keys
-    "youtube-video-tags-extractor" => [
-        "seo" => [
-            "title" => "YouTube Video Tags Extractor - Extract Tags from Any Video | Optimizo",
-            "description" => "Extract tags from any YouTube video instantly. Free tool to analyze competitor tags and improve your SEO strategy.",
-        ],
-        
-        "form" => [
-            "title" => "Extract Video Tags",
-            "url_label" => "YouTube Video URL",
-            "url_placeholder" => "https://www.youtube.com/watch?v=...",
-            "url_help" => "Paste any YouTube video URL to extract all its tags",
-            "extract_button" => "Extract Tags",
-            "extracting" => "Extracting...",
-        ],
-        
-        "results" => [
-            "title" => "Extracted Tags",
-            "copy_all" => "Copy All",
-            "copied" => "Copied!",
-            "comma_separated" => "Comma-separated format:",
-        ],
-        
-        "js" => [
-            "error_enter_url" => "Please enter a YouTube video URL",
-            "error_valid_url" => "Please enter a valid YouTube URL",
-            "error_failed" => "Failed to extract tags. Please try again.",
-            "extracting" => "Extracting...",
-            "extract_button" => "Extract Tags",
-            "copied" => "Copied!",
-        ],
-        
-        "content" => [
-            "feature1_title" => "Instant Extraction",
-            "feature1_desc" => "Extract all tags from any YouTube video in seconds",
-            "feature2_title" => "Competitor Analysis",
-            "feature2_desc" => "Analyze successful videos to improve your tag strategy",
-            "feature3_title" => "One-Click Copy",
-            "feature3_desc" => "Copy all tags instantly for your own videos",
-            
-            "tips_title" => " Pro Tips: Using Extracted Tags",
-            "tip1" => "Analyze tags from top-performing videos in your niche",
-            "tip2" => "Don't copy tags directly - use them as inspiration",
-            "tip3" => "Look for patterns in successful videos' tag strategies",
-            "tip4" => "Combine insights from multiple videos for best results",
-            "tip5" => "Focus on tags that accurately describe YOUR content",
-            
-            "faq_title" => " Frequently Asked Questions",
-            "faq_q1" => "Can I extract tags from any YouTube video?",
-            "faq_a1" => "Yes! You can extract tags from any public YouTube video. Simply paste the video URL and our tool will retrieve all the tags used by the creator.",
-            "faq_q2" => "Is it okay to use tags from other videos?",
-            "faq_a2" => "Use them as inspiration, not direct copies. Analyze successful videos to understand tag strategies, but always use tags that accurately describe YOUR specific content.",
-            "faq_q3" => "Why can't I see tags on some videos?",
-            "faq_a3" => "Some videos may have no tags, or the creator may have used very few tags. Additionally, private or deleted videos cannot be analyzed.",
-            "faq_q4" => "How can extracted tags help my channel?",
-            "faq_a4" => "By analyzing tags from successful videos in your niche, you can understand what keywords work well, discover trending topics, and improve your own tag strategy for better discoverability.",
-            "faq_q5" => "Should I use all the tags I extract?",
-            "faq_a5" => "No! Only use tags that accurately describe your video content. Using irrelevant tags can hurt your video's performance and violate YouTube's policies.",
-        ],
-    ],
 ];

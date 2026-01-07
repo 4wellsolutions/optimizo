@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('youtube-earnings-calculator', 'seo.title', $tool->meta_title))
+@section('meta_description', __tool('youtube-earnings-calculator', 'seo.description', $tool->meta_description))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

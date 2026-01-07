@@ -116,6 +116,7 @@
                     <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-handle-checker', 'content.feature3_title') }}</h3>
                     <p class="text-gray-600">{{ __tool('youtube-handle-checker', 'content.feature3_desc') }}</p>
                 </div>
+            </div>
 
 
             <div class="bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-2xl p-8 mb-10">
