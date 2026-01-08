@@ -35,7 +35,7 @@
     <link rel="alternate" hreflang="ru" href="{{ $ruUrl }}" />
     <link rel="alternate" hreflang="x-default" href="{{ $enUrl }}" />
     <title>@yield('title', config('app.name', 'Optimizo'))</title>
-    <meta name="description" content="@yield('meta_description', 'Professional online tools for creators')">
+    <meta name="description" content="@yield('meta_description', __('common.meta_description_default'))">
     @hasSection('meta_keywords')
         <meta name="keywords" content="@yield('meta_keywords')">
     @endif
@@ -76,7 +76,7 @@
                     </div>
                     <input type="text"
                         class="tool-search-input block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-xl leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 sm:text-sm transition-all duration-200"
-                        placeholder="Search for tools..." autocomplete="off">
+                        placeholder="{{ __('common.search_placeholder') }}" autocomplete="off">
 
                     <div
                         class="search-results absolute z-50 mt-2 w-full bg-white shadow-xl rounded-xl border border-gray-100 py-1 text-base overflow-auto max-h-96 sm:text-sm hidden">

@@ -27,16 +27,16 @@ class AppServiceProvider extends ServiceProvider
             $localePrefix = $locale === 'en' ? '' : '/' . $locale;
 
             // Select category_id instead of legacy category string
-            $tools = Tool::select('name', 'slug', 'category_id', 'is_active')
+            $tools = Tool::select('name', 'slug', 'category_id', 'is_active', 'url') // Added 'url'
                 ->where('is_active', true)
-                ->with('categoryRelation')
+                ->with(['categoryRelation', 'translations']) // Eager load translations
                 ->get()
                 ->map(function ($tool) use ($localePrefix) {
                     $categoryName = $tool->categoryRelation ? $tool->categoryRelation->slug : 'other';
                     return [
                         'name' => __t($tool, 'name') ?? $tool->name,
                         'category' => $categoryName, // Maintain 'category' key for frontend compatibility
-                        'url' => $localePrefix . '/' . $tool->slug,
+                        'url' => $localePrefix . $tool->url, // Use database URL
                     ];
                 });
 

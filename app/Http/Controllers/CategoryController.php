@@ -33,10 +33,10 @@ class CategoryController extends Controller
         // Correctly fetch tools based on whether it's a parent or subcategory
         if ($category->parent_id) {
             // It's a subcategory, tools are linked via subcategory_id
-            $tools = $category->subTools()->active()->ordered()->get();
+            $tools = $category->subTools()->active()->ordered()->with('translations')->get();
         } else {
             // It's a parent category, tools are linked via category_id
-            $tools = $category->tools()->active()->ordered()->get();
+            $tools = $category->tools()->active()->ordered()->with('translations')->get();
         }
 
         return view('categories.index', compact('category', 'tools'));

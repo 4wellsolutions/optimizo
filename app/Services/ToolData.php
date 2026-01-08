@@ -44,6 +44,7 @@ class ToolData
             self::getNetworkTools(),
             self::getUtilityTools(),
             self::getYouTubeTools(),
+            self::getTimeTools(),
             self::getSeoTools(),
             self::getSpreadsheetTools(),
             self::getDocumentTools(),
@@ -1409,6 +1410,8 @@ class ToolData
             ],
         ];
     }
+
+
 
     private static function getSeoTools()
     {

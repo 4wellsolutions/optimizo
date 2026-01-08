@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $category->name . ' - Free Online Tools | Optimizo')
-@section('meta_description', 'Free ' . strtolower($category->name) . ' tools including converters, generators, and more. Professional tools for developers and creators.')
+@section('title', __('categories.meta_title', ['category' => __t($category, 'name')]))
+@section('meta_description', __('categories.meta_description', ['category' => strtolower(__t($category, 'name'))]))
 
 @section('content')
     <div class="max-w-7xl mx-auto">
@@ -66,7 +66,7 @@
             // Group tools by subcategory name using the relationship
             // $tools is already a Collection of Tool models
             $toolsBySubcategory = $tools->groupBy(function ($tool) {
-                return $tool->subcategoryRelation ? $tool->subcategoryRelation->name : 'General';
+                return $tool->subcategoryRelation ? __t($tool->subcategoryRelation, 'name') : 'General';
             });
         @endphp
 
@@ -78,8 +78,9 @@
                         style="background: linear-gradient(to right, transparent, {{ $category->bg_gradient_from }}66, transparent);">
                     </div>
                     <h2 class="text-2xl font-black text-gray-900 px-4">
-                        {{ $subcategory }}
-                        <span class="text-sm font-normal text-gray-500 ml-2">({{ $subcategoryTools->count() }} tools)</span>
+                        {{ $subcategory === 'General' ? __('categories.general') : $subcategory }}
+                        <span class="text-sm font-normal text-gray-500 ml-2">({{ $subcategoryTools->count() }}
+                            {{ __('categories.tools_count') }})</span>
                     </h2>
                     <div class="flex-1 h-px"
                         style="background: linear-gradient(to right, transparent, {{ $category->bg_gradient_from }}66, transparent);">

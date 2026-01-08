@@ -2,7 +2,7 @@
 
 @php
     // Use provided props, or fall back to $tool properties
-    $displayTitle = $title ?? __t($tool, 'name') ?? $tool->meta_title ?? 'Tool';
+    $displayTitle = $title ?? __t($tool, 'name') ?? $tool->meta_title ?? __('common.tool_fallback');
     $displayDescription = $description ?? __t($tool, 'meta_description') ?? $tool->description ?? '';
     $displayIcon = $icon ?? $tool->icon ?? $tool->slug ?? 'default';
 

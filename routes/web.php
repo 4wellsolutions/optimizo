@@ -85,7 +85,8 @@ use App\Http\Controllers\Tools\Utility\{
     TextToMorseController,
     MorseToTextController,
     DocumentConverterController,
-    SpreadsheetConverterController
+    SpreadsheetConverterController,
+    TimeConverterController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -389,6 +390,14 @@ $definePublicRoutes = function () {
         Route::get('/density-converter', [UnitConverterController::class, 'density'])->name('density-converter');
         Route::get('/molar-mass-converter', [UnitConverterController::class, 'molarMass'])->name('molar-mass-converter');
         Route::get('/frequency-converter', [UnitConverterController::class, 'frequency'])->name('frequency-converter');
+
+        // Time Converters (New)
+        Route::get('/time-zone-converter', [TimeConverterController::class, 'timeZoneConverter'])->name('time-zone-converter');
+        Route::get('/epoch-time-converter', [TimeConverterController::class, 'epochTimeConverter'])->name('epoch-time-converter');
+        Route::get('/unix-timestamp-to-date', [TimeConverterController::class, 'unixToDate'])->name('unix-to-date');
+        Route::get('/date-to-unix-timestamp', [TimeConverterController::class, 'dateToUnix'])->name('date-to-unix');
+        Route::get('/utc-to-local-time', [TimeConverterController::class, 'utcToLocal'])->name('utc-to-local');
+        Route::get('/local-time-to-utc', [TimeConverterController::class, 'localToUtc'])->name('local-to-utc');
     });
 
     /*
