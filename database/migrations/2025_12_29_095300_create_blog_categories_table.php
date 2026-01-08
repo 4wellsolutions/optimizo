@@ -7,21 +7,18 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('blog_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name'); // Removed unique constraint globally to avoid issues, or can keep unique
             $table->string('slug')->unique();
-            $table->string('type')->default('post')->index(); // 'post', 'tool'
             $table->text('description')->nullable();
-            $table->unsignedBigInteger('parent_id')->nullable();
+            $table->foreignId('parent_id')->nullable()->constrained('blog_categories')->onDelete('set null');
             $table->timestamps();
-
-            $table->index('parent_id');
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('blog_categories');
     }
 };

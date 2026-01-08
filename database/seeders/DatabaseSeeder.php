@@ -27,7 +27,9 @@ class DatabaseSeeder extends Seeder
         );
 
         $this->call([
+            \Database\Seeders\LanguageSeeder::class,
             AdminUserSeeder::class,
+            CategorySeeder::class,
             ToolSeeder::class,
         ]);
     }

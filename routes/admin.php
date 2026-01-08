@@ -17,12 +17,16 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
 
     // Tools Management
+    // Tools Management
     Route::prefix('tools')->name('tools.')->group(function () {
         Route::get('/', [App\Http\Controllers\Admin\AdminToolController::class, 'index'])->name('index');
         Route::post('/sync', [App\Http\Controllers\Admin\AdminToolController::class, 'sync'])->name('sync');
         Route::post('/build', [App\Http\Controllers\Admin\AdminToolController::class, 'build'])->name('build');
         Route::get('/{tool}/edit', [App\Http\Controllers\Admin\AdminToolController::class, 'edit'])->name('edit');
         Route::put('/{tool}', [App\Http\Controllers\Admin\AdminToolController::class, 'update'])->name('update');
+
+        // Tool Categories
+        Route::resource('categories', App\Http\Controllers\Admin\CategoryController::class);
     });
 
     // Language Management
@@ -46,8 +50,13 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::post('posts/{post}/publish', [App\Http\Controllers\Admin\PostController::class, 'publish'])->name('posts.publish');
 
     // Categories & Tags
-    Route::get('categories/list', [App\Http\Controllers\Admin\CategoryController::class, 'list'])->name('categories.list');
-    Route::resource('categories', App\Http\Controllers\Admin\CategoryController::class);
+    // Categories & Tags
+    Route::prefix('blog')->name('blog.')->group(function () {
+        Route::get('categories/list', [App\Http\Controllers\Admin\BlogCategoryController::class, 'list'])->name('categories.list');
+        Route::resource('categories', App\Http\Controllers\Admin\BlogCategoryController::class);
+    });
+
+
 
     Route::prefix('tags')->name('tags.')->group(function () {
         Route::get('/list', [App\Http\Controllers\Admin\PostController::class, 'tagsList'])->name('list');

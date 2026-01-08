@@ -8,11 +8,11 @@
             <div class="card card-primary card-outline shadow-sm">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h3 class="card-title font-weight-bold">Edit Category: {{ $category->name }}</h3>
-                    <a href="{{ route('admin.categories.index') }}" class="btn btn-sm btn-light">
+                    <a href="{{ route('admin.blog.categories.index') }}" class="btn btn-sm btn-light">
                         <i class="fas fa-arrow-left mr-1"></i> Back
                     </a>
                 </div>
-                <form action="{{ route('admin.categories.update', $category->id) }}" method="POST">
+                <form action="{{ route('admin.blog.categories.update', $category->id) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="card-body">
@@ -26,14 +26,7 @@
                             <input type="text" name="slug" id="slug" value="{{ $category->slug }}" class="form-control">
                         </div>
 
-                        <div class="form-group">
-                            <label for="type">Type</label>
-                            <select name="type" id="type" class="form-control">
-                                <option value="post" {{ $category->type == 'post' ? 'selected' : '' }}>Post Category</option>
-                                <option value="tool" {{ $category->type == 'tool' ? 'selected' : '' }}>Tool Category</option>
-                            </select>
-                            <small class="text-muted">Changing type may affect visibility of associated items.</small>
-                        </div>
+
 
                         <div class="form-group">
                             <label for="parent_id">Parent Category</label>
@@ -51,27 +44,6 @@
                             <label for="description">Description</label>
                             <textarea name="description" id="description" rows="4"
                                 class="form-control">{{ $category->description }}</textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Styling <span class="text-muted">(Dynamic View)</span></label>
-                            <div class="row">
-                                <div class="col-6">
-                                    <label for="bg_gradient_from" class="small">Gradient From</label>
-                                    <input type="color" name="bg_gradient_from" id="bg_gradient_from" class="form-control"
-                                        style="height: 38px;" value="{{ $category->bg_gradient_from }}">
-                                </div>
-                                <div class="col-6">
-                                    <label for="bg_gradient_to" class="small">Gradient To</label>
-                                    <input type="color" name="bg_gradient_to" id="bg_gradient_to" class="form-control"
-                                        style="height: 38px;" value="{{ $category->bg_gradient_to }}">
-                                </div>
-                            </div>
-                            <div class="mt-2">
-                                <label for="text_color" class="small">Text Color Class</label>
-                                <input type="text" name="text_color" id="text_color" class="form-control"
-                                    placeholder="e.g. text-white" value="{{ $category->text_color }}">
-                            </div>
                         </div>
                     </div>
                     <div class="card-footer bg-white text-right">

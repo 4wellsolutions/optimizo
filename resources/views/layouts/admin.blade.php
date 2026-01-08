@@ -76,9 +76,9 @@
                         </li>
                         <!-- Blog Submenu -->
                         <li
-                            class="nav-item {{ request()->routeIs('admin.posts.*') || request()->routeIs('admin.categories.*') || request()->routeIs('admin.import.*') || request()->routeIs('admin.media.*') ? 'menu-open' : '' }}">
+                            class="nav-item {{ request()->routeIs('admin.posts.*') || request()->routeIs('admin.blog.categories.*') || request()->routeIs('admin.import.*') || request()->routeIs('admin.media.*') ? 'menu-open' : '' }}">
                             <a href="#"
-                                class="nav-link {{ request()->routeIs('admin.posts.*') || request()->routeIs('admin.categories.*') || request()->routeIs('admin.import.*') || request()->routeIs('admin.media.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.posts.*') || request()->routeIs('admin.blog.categories.*') || request()->routeIs('admin.import.*') || request()->routeIs('admin.media.*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-blog"></i>
                                 <p>
                                     Blog
@@ -94,8 +94,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.categories.index') }}"
-                                        class="nav-link {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.blog.categories.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.blog.categories.*') ? 'active' : '' }}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Categories</p>
                                     </a>
@@ -117,12 +117,30 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="{{ route('admin.tools.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.tools.*') ? 'active' : '' }}">
+                        <li class="nav-item {{ request()->routeIs('admin.tools.*') ? 'menu-open' : '' }}">
+                            <a href="#" class="nav-link {{ request()->routeIs('admin.tools.*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-tools"></i>
-                                <p>Tools Management</p>
+                                <p>
+                                    Tools
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.tools.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.tools.index') || request()->routeIs('admin.tools.edit') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Tools List</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.tools.categories.index') }}"
+                                        class="nav-link {{ request()->routeIs('admin.tools.categories.*') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Tool Categories</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
 
                         <!-- Settings Submenu -->

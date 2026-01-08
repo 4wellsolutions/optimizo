@@ -12,9 +12,20 @@ return new class extends Migration {
     {
         Schema::create('tools', function (Blueprint $table) {
             $table->id();
+
+            // Foreign Keys for Category and Subcategory
+            $table->foreignId('category_id')->nullable()->constrained('categories')->nullOnDelete();
+            $table->foreignId('subcategory_id')->nullable()->constrained('categories')->nullOnDelete();
+
             $table->string('name'); // Tool display name
             $table->string('slug')->unique(); // URL-friendly identifier
-            $table->enum('category', ['utility', 'youtube', 'seo', 'network']); // Tool category
+
+            $table->text('icon_svg')->nullable(); // SVG markup for tool icon
+            $table->string('icon_name')->nullable(); // Icon identifier/name
+
+            $table->text('description')->nullable();
+            $table->longText('content')->nullable();
+
             $table->string('controller'); // Controller class name
             $table->string('route_name')->unique(); // Laravel route name
             $table->string('url')->unique(); // Full URL path
@@ -28,7 +39,6 @@ return new class extends Migration {
             $table->timestamps();
 
             // Indexes for performance
-            $table->index('category');
             $table->index('is_active');
             $table->index('slug');
         });

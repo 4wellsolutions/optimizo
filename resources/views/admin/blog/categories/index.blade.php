@@ -3,38 +3,60 @@
 @section('page-title', ucfirst($type) . ' Categories')
 
 @section('content')
-    <div class="row mb-3">
-        <div class="col-12">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link {{ $type === 'post' ? 'active' : '' }}"
-                        href="{{ route('admin.categories.index', ['type' => 'post']) }}">
-                        <i class="fas fa-newspaper mr-1"></i> Post Categories
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ $type === 'tool' ? 'active' : '' }}"
-                        href="{{ route('admin.categories.index', ['type' => 'tool']) }}">
-                        <i class="fas fa-tools mr-1"></i> Tool Categories
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <div class="row">
+        <!-- Quick Create Form -->
+        <div class="col-md-4">
+            <div class="card card-primary card-outline shadow-sm">
+                <div class="card-header">
+                    <h3 class="card-title font-weight-bold">Add New {{ ucfirst($type) }} Category</h3>
+                </div>
+                <form action="{{ route('admin.blog.categories.store') }}" method="POST">
+                    @csrf
+                    
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="e.g. Technology"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="slug">Slug</label>
+                            <input type="text" name="slug" id="slug" class="form-control" placeholder="e.g. technology">
+                            <small class="text-muted">The "slug" is the URL-friendly version of the name.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parent_id">Parent Category <span class="text-muted">(Optional)</span></label>
+                            <select name="parent_id" id="parent_id" class="form-control">
+                                <option value="">None (Top Level)</option>
+                                @foreach($parents as $parent)
+                                    <option value="{{ $parent->id }}">{{ $parent->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" rows="3" class="form-control"
+                                placeholder="Optional description..."></textarea>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white text-right">
+                        <button type="submit" class="btn btn-primary font-weight-bold">
+                            <i class="fas fa-plus mr-1"></i> Add Category
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <!-- Category List -->
-        <div class="col-12">
+        <div class="col-md-8">
             <div class="card shadow-sm">
-                <div class="card-header border-0 d-flex justify-content-between align-items-center">
+                <div class="card-header border-0">
                     <h3 class="card-title font-weight-bold">All {{ ucfirst($type) }} Categories</h3>
-                    <div class="card-tools d-flex align-items-center">
-                        <a href="{{ route('admin.categories.create', ['type' => $type]) }}"
-                            class="btn btn-primary btn-sm mr-3">
-                            <i class="fas fa-plus mr-1"></i> Add New
-                        </a>
-                        <form action="{{ route('admin.categories.index') }}" method="GET" class="d-inline-block">
-                            <input type="hidden" name="type" value="{{ $type }}">
+                    <div class="card-tools">
+                        <form action="{{ route('admin.blog.categories.index') }}" method="GET">
                             <div class="input-group input-group-sm" style="width: 250px;">
                                 <input type="text" name="search" class="form-control float-right" placeholder="Search"
                                     value="{{ request('search') }}">
@@ -73,20 +95,17 @@
                                     <td>{{ $category->slug }}</td>
                                     <td>
                                         @if($type === 'tool')
-                                            {{-- Show tools count if parent, or subTools count if subcategory --}}
-                                            <span class="badge badge-light border">
-                                                {{ $category->parent_id ? $category->sub_tools_count : $category->tools_count }}
-                                            </span>
+                                            <span class="badge badge-light border">{{ $category->tools_count ?? 0 }}</span>
                                         @else
                                             <span class="badge badge-light border">{{ $category->posts_count }}</span>
                                         @endif
                                     </td>
                                     <td class="text-right">
-                                        <a href="{{ route('admin.categories.edit', $category->id) }}"
+                                        <a href="{{ route('admin.blog.categories.edit', $category->id) }}"
                                             class="btn btn-sm btn-info mr-1">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        <form action="{{ route('admin.categories.destroy', $category->id) }}" method="POST"
+                                        <form action="{{ route('admin.blog.categories.destroy', $category->id) }}" method="POST"
                                             class="d-inline" onsubmit="return confirm('Are you sure?');">
                                             @csrf
                                             @method('DELETE')

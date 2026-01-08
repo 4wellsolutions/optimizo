@@ -8,11 +8,11 @@
             <div class="card card-primary card-outline shadow-sm">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h3 class="card-title font-weight-bold">Edit Category: {{ $category->name }}</h3>
-                    <a href="{{ route('admin.categories.index') }}" class="btn btn-sm btn-light">
+                    <a href="{{ route('admin.tools.categories.index') }}" class="btn btn-sm btn-light">
                         <i class="fas fa-arrow-left mr-1"></i> Back
                     </a>
                 </div>
-                <form action="{{ route('admin.categories.update', $category->id) }}" method="POST">
+                <form action="{{ route('admin.tools.categories.update', $category->id) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="card-body">
@@ -24,15 +24,6 @@
                         <div class="form-group">
                             <label for="slug">Slug</label>
                             <input type="text" name="slug" id="slug" value="{{ $category->slug }}" class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="type">Type</label>
-                            <select name="type" id="type" class="form-control">
-                                <option value="post" {{ $category->type == 'post' ? 'selected' : '' }}>Post Category</option>
-                                <option value="tool" {{ $category->type == 'tool' ? 'selected' : '' }}>Tool Category</option>
-                            </select>
-                            <small class="text-muted">Changing type may affect visibility of associated items.</small>
                         </div>
 
                         <div class="form-group">

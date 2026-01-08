@@ -18,7 +18,8 @@ return new class extends Migration {
             $table->text('value');
             $table->timestamps();
 
-            $table->index(['translatable_type', 'translatable_id']);
+            // Morph index is created automatically by $table->morphs()
+            // $table->index(['translatable_type', 'translatable_id']);
             $table->index(['language_id', 'field']);
             $table->unique(['language_id', 'translatable_type', 'translatable_id', 'field'], 'unique_translation');
         });

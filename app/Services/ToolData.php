@@ -4,7 +4,40 @@ namespace App\Services;
 
 class ToolData
 {
+    /**
+     * Get all tools from Database (Cached)
+     */
     public static function getTools()
+    {
+        return \Illuminate\Support\Facades\Cache::remember('tools_all', 3600, function () {
+            $tools = \App\Models\Tool::with('categoryRelation')->active()->ordered()->get();
+            return $tools->map(function ($tool) {
+                // Format as object/array to match legacy expected output if needed, or return Model
+                // Existing view code might expect Arrays or Objects with specific properties.
+                // Tool types seem to use object syntax $tool->name in views (e.g. category pages).
+                // ToolData::getToolBySlug output was cast to (object).
+                // Eloquent Models are objects, so compatibility is high.
+                // But we need to ensure 'category' property matches what views expect (slug vs relationship).
+                // The 'category' column exists in tools table (varchar), so $tool->category returns the slug.
+                return $tool;
+            });
+        });
+    }
+
+    /**
+     * Get tool by slug from Database (Cached)
+     */
+    public static function getToolBySlug($slug)
+    {
+        return \Illuminate\Support\Facades\Cache::remember("tool_{$slug}", 3600, function () use ($slug) {
+            return \App\Models\Tool::where('slug', $slug)->active()->first();
+        });
+    }
+
+    /**
+     * Get Initial Data for Seeding (Legacy Array)
+     */
+    public static function getInitialToolsData()
     {
         return array_merge(
             self::getImageTools(),
@@ -16,17 +49,6 @@ class ToolData
             self::getDocumentTools(),
             self::getUnitConverterTools(),
         );
-    }
-
-    public static function getToolBySlug($slug)
-    {
-        $tools = self::getTools();
-        foreach ($tools as $tool) {
-            if ($tool['slug'] === $slug) {
-                return (object) $tool;
-            }
-        }
-        return null;
     }
 
     private static function getImageTools()
@@ -257,7 +279,7 @@ class ToolData
                 'name' => 'QR Code Generator',
                 'slug' => 'qr-code-generator',
                 'icon_name' => 'qr-code-generator',
-                'icon_svg' => '<svg fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h2M4 8h4m12 0h2M4 16h4m12 0h2\"/></svg>',
+                'icon_svg' => '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h2M4 8h4m12 0h2M4 16h4m12 0h2"/></svg>',
                 'category' => 'utility',
                 'subcategory' => 'Image Tools',
                 'controller' => 'Tools\Utility\QrGeneratorController',

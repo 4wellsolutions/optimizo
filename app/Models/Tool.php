@@ -28,8 +28,8 @@ class Tool extends Model
         'icon_name', // Icon identifier
         'description', // Tool short description
         'content', // Full SEO content
-        'category',
-        'subcategory',
+        'category_id', // Foreign Key (Parent ID)
+        'subcategory_id', // Foreign Key (Child ID)
         'controller',
         'route_name',
         'url',
@@ -46,7 +46,19 @@ class Tool extends Model
         'is_active' => 'boolean',
         'priority' => 'decimal:1',
         'order' => 'integer',
+        'category_id' => 'integer',
+        'subcategory_id' => 'integer',
     ];
+
+    public function categoryRelation(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
+
+    public function subcategoryRelation(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Category::class, 'subcategory_id');
+    }
 
     // Scopes
     public function scopeActive($query)

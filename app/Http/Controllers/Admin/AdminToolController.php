@@ -13,15 +13,45 @@ class AdminToolController extends Controller
     public function sync()
     {
         try {
-            $tools = \App\Services\ToolData::getTools();
+            // Use legacy array data for syncing from code to DB
+            $tools = \App\Services\ToolData::getInitialToolsData();
             $count = 0;
 
-            foreach ($tools as $tool) {
+            foreach ($tools as $toolData) {
                 // Ensure slug is present as the unique key
-                if (isset($tool['slug'])) {
+                if (isset($toolData['slug'])) {
+
+                    // Resolve Category ID
+                    $categoryId = null;
+                    if (isset($toolData['category'])) {
+                        $catSlug = $toolData['category'];
+                        $parent = \App\Models\Category::where('slug', $catSlug)->whereNull('parent_id')->first();
+
+                        if ($parent) {
+                            $categoryId = $parent->id;
+
+                            // Check for subcategory
+                            if (!empty($toolData['subcategory'])) {
+                                $subSlug = \Illuminate\Support\Str::slug($catSlug . '-' . $toolData['subcategory']);
+                                $child = \App\Models\Category::where('slug', $subSlug)
+                                    ->where('parent_id', $parent->id)
+                                    ->first();
+
+                                if ($child) {
+                                    $categoryId = $child->id;
+                                }
+                            }
+                        }
+                    }
+
+                    // Add category_id to data
+                    if ($categoryId) {
+                        $toolData['category_id'] = $categoryId;
+                    }
+
                     Tool::updateOrCreate(
-                        ['slug' => $tool['slug']],
-                        $tool
+                        ['slug' => $toolData['slug']],
+                        $toolData
                     );
                     $count++;
                 }
@@ -90,21 +120,43 @@ class AdminToolController extends Controller
             $perPage = 20;
         }
 
-        $tools = $query->orderBy('id', 'desc')->paginate($perPage)->withQueryString();
-        $categories = Tool::select('category')->distinct()->pluck('category');
+        $tools = $query->orderBy('id', 'desc')
+            ->with(['categoryRelation', 'subcategoryRelation'])
+            ->paginate($perPage)
+            ->withQueryString();
+
+        // Fetch unique categories used by tools (via relation)
+        // Since we now store category_id, we should fetch Category models.
+        // Or simply fetch all categories for the filter dropdown?
+        // Let's fetch all categories that are parents.
+        $categories = \App\Models\Category::whereNull('parent_id')->get();
+        // Or if we want ONLY categories that are actually used:
+        // $usedCategoryIds = Tool::distinct()->pluck('category_id');
+        // $categories = Category::whereIn('id', $usedCategoryIds)->get();
+        // But usually filter dropdowns show all available options or at least all parents.
+        // The original code was `Tool::select('category')->distinct()...` which implies "existing categories".
+        // Let's stick to showing all parent categories for filtering.
 
         // Statistics Counts
         $totalTools = Tool::count();
         $activeTools = Tool::where('is_active', true)->count();
-        $utilityTools = Tool::where('category', 'utility')->count();
-        $youtubeTools = Tool::where('category', 'youtube')->count();
+        // Count by new category_id mechanism. 
+        // We need to look up IDs for 'utility' and 'youtube' if we want to keep these specific counts.
+        $utilityCat = \App\Models\Category::where('slug', 'utility')->first();
+        $youtubeCat = \App\Models\Category::where('slug', 'youtube')->first();
+
+        $utilityTools = $utilityCat ? Tool::where('category_id', $utilityCat->id)->count() : 0;
+        $youtubeTools = $youtubeCat ? Tool::where('category_id', $youtubeCat->id)->count() : 0;
 
         return view('admin.tools.index', compact('tools', 'categories', 'totalTools', 'activeTools', 'utilityTools', 'youtubeTools'));
     }
 
     public function edit(Tool $tool)
     {
-        return view('admin.tools.edit', compact('tool'));
+        $categories = \App\Models\Category::whereNull('parent_id')->orderBy('name')->get();
+        $subcategories = \App\Models\Category::whereNotNull('parent_id')->with('parent')->orderBy('name')->get();
+
+        return view('admin.tools.edit', compact('tool', 'categories', 'subcategories'));
     }
 
     public function update(Request $request, Tool $tool)
@@ -113,7 +165,8 @@ class AdminToolController extends Controller
             'name' => 'required|string|max:255',
             'icon_svg' => 'nullable|string',
             'icon_name' => 'nullable|string|max:255',
-            'meta_title' => 'nullable|string|max:255',
+            'category_id' => 'required|exists:categories,id',
+            'subcategory_id' => 'nullable|exists:categories,id',
             'meta_description' => 'nullable|string',
             'meta_keywords' => 'nullable|string',
             'url' => 'required|string|max:255|unique:tools,url,' . $tool->id,
@@ -124,6 +177,12 @@ class AdminToolController extends Controller
         ]);
 
         $validated['is_active'] = $request->has('is_active');
+
+        // Sync legacy category string
+        $category = \App\Models\Category::find($validated['category_id']);
+        if ($category) {
+            $validated['category'] = $category->slug;
+        }
 
         $tool->update($validated);
 

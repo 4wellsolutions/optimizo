@@ -112,8 +112,8 @@
                                 <select class="form-control select2" name="category" style="width: 100%;">
                                     <option value="">All Categories</option>
                                     @foreach($categories as $cat)
-                                        <option value="{{ $cat }}" {{ request('category') == $cat ? 'selected' : '' }}>
-                                            {{ ucfirst($cat) }}
+                                        <option value="{{ $cat->id }}" {{ request('category') == $cat->id ? 'selected' : '' }}>
+                                            {{ $cat->name }}
                                         </option>
                                     @endforeach
                                 </select>
@@ -180,10 +180,18 @@
                                         <small class="text-muted">{{ $tool->meta_title }}</small>
                                     </td>
                                     <td>
-                                        <span
-                                            class="badge bg-{{ $tool->category === 'utility' ? 'primary' : ($tool->category === 'youtube' ? 'danger' : ($tool->category === 'seo' ? 'success' : 'info')) }}">
-                                            {{ ucfirst($tool->category) }}
-                                        </span>
+                                        @if($tool->categoryRelation)
+                                            <span class="badge bg-info">
+                                                {{ $tool->categoryRelation->name }}
+                                            </span>
+                                            @if($tool->subcategoryRelation)
+                                                <small class="d-block text-muted">
+                                                    <i class="fas fa-level-up-alt fa-rotate-90"></i> {{ $tool->subcategoryRelation->name }}
+                                                </small>
+                                            @endif
+                                        @else
+                                            <span class="badge bg-secondary">Uncategorized</span>
+                                        @endif
                                     </td>
                                     <td>
                                         <a href="{{ url($tool->url) }}" target="_blank" class="text-decoration-none">

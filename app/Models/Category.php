@@ -8,12 +8,17 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Category extends Model
 {
-    protected $fillable = ['name', 'slug', 'description', 'parent_id'];
+    protected $fillable = ['name', 'slug', 'description', 'parent_id', 'bg_gradient_from', 'bg_gradient_to', 'text_color'];
 
-    public function posts(): BelongsToMany
+    // Removed posts() as this is now strictly for tools
+
+    public function tools(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->belongsToMany(Post::class);
+        return $this->hasMany(Tool::class);
     }
+
+    // Removed scopeTools as all categories in this table are tools
+
 
     public function parent(): BelongsTo
     {
@@ -23,5 +28,10 @@ class Category extends Model
     public function children()
     {
         return $this->hasMany(Category::class, 'parent_id');
+    }
+
+    public function subTools(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Tool::class, 'subcategory_id');
     }
 }

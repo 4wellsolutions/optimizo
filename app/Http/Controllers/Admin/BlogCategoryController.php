@@ -3,39 +3,28 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
+use App\Models\BlogCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-class CategoryController extends Controller
+class BlogCategoryController extends Controller
 {
-    /**
-     * Display a listing of the categories.
-     */
     /**
      * Display a listing of the categories.
      */
     public function index()
     {
-        $categories = Category::with('parent')
-            ->withCount(['tools', 'subTools'])
+        $categories = BlogCategory::with('parent')
+            ->withCount('posts')
             ->latest()
             ->paginate(20);
 
-        return view('admin.tools.categories.index', compact('categories'));
-    }
-
-    /**
-     * Show the form for creating a new category.
-     */
-    public function create()
-    {
-        // Fetch potential parents for the dropdown
-        $parents = Category::whereNull('parent_id')
+        // Fetch potential parents for the dropdown (only top-level)
+        $parents = BlogCategory::whereNull('parent_id')
             ->orderBy('name')
             ->get();
 
-        return view('admin.tools.categories.create', compact('parents'));
+        return view('admin.blog.categories.index', compact('categories', 'parents'));
     }
 
     /**
@@ -45,62 +34,56 @@ class CategoryController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'slug' => 'nullable|string|max:255|unique:categories,slug',
+            'slug' => 'nullable|string|max:255|unique:blog_categories,slug',
             'description' => 'nullable|string',
-            'parent_id' => 'nullable|exists:categories,id',
-            'bg_gradient_from' => 'nullable|string|max:7',
-            'bg_gradient_to' => 'nullable|string|max:7',
-            'text_color' => 'nullable|string|max:50',
+            'parent_id' => 'nullable|exists:blog_categories,id',
         ]);
 
         if (empty($validated['slug'])) {
             $validated['slug'] = Str::slug($validated['name']);
             // Ensure slug is unique if generated
-            $count = Category::where('slug', $validated['slug'])->count();
+            $count = BlogCategory::where('slug', $validated['slug'])->count();
             if ($count > 0) {
                 $validated['slug'] .= '-' . ($count + 1);
             }
         }
 
-        Category::create($validated);
+        BlogCategory::create($validated);
 
         if ($request->wantsJson()) {
             return response()->json([
                 'success' => true,
-                'category' => Category::latest()->first()
+                'category' => BlogCategory::latest()->first()
             ]);
         }
 
-        return redirect()->route('admin.tools.categories.index')
+        return redirect()->route('admin.blog.categories.index')
             ->with('success', 'Category created successfully.');
     }
 
     /**
      * Show the form for editing the specified category.
      */
-    public function edit(Category $category)
+    public function edit(BlogCategory $category)
     {
-        $parents = Category::whereNull('parent_id')
+        $parents = BlogCategory::whereNull('parent_id')
             ->where('id', '!=', $category->id)
             ->orderBy('name')
             ->get();
 
-        return view('admin.tools.categories.edit', compact('category', 'parents'));
+        return view('admin.blog.categories.edit', compact('category', 'parents'));
     }
 
     /**
      * Update the specified category in storage.
      */
-    public function update(Request $request, Category $category)
+    public function update(Request $request, BlogCategory $category)
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'slug' => 'nullable|string|max:255|unique:categories,slug,' . $category->id,
+            'slug' => 'nullable|string|max:255|unique:blog_categories,slug,' . $category->id,
             'description' => 'nullable|string',
-            'parent_id' => 'nullable|exists:categories,id',
-            'bg_gradient_from' => 'nullable|string|max:7',
-            'bg_gradient_to' => 'nullable|string|max:7',
-            'text_color' => 'nullable|string|max:50',
+            'parent_id' => 'nullable|exists:blog_categories,id',
         ]);
 
         if (empty($validated['slug'])) {
@@ -113,29 +96,34 @@ class CategoryController extends Controller
 
         $category->update($validated);
 
-        return redirect()->route('admin.tools.categories.index')
+        return redirect()->route('admin.blog.categories.index')
             ->with('success', 'Category updated successfully.');
     }
 
     /**
      * Remove the specified category from storage.
      */
-    public function destroy(Category $category)
+    public function destroy(BlogCategory $category)
     {
-        // Check for child categories
         if ($category->children()->count() > 0) {
             return back()->with('error', 'Cannot delete category with subcategories. Delete them first.');
         }
 
-        // Check for associated tools
-        if ($category->tools()->count() > 0) {
-            return back()->with('error', 'Cannot delete category with associated tools.');
+        if ($category->posts()->count() > 0) {
+            return back()->with('error', 'Cannot delete category with associated posts.');
         }
 
         $category->delete();
 
-        return redirect()->route('admin.tools.categories.index')
+        return redirect()->route('admin.blog.categories.index')
             ->with('success', 'Category deleted successfully.');
     }
 
+    /**
+     * AJAX List for Post Editor
+     */
+    public function list()
+    {
+        return response()->json(BlogCategory::all());
+    }
 }

@@ -1,40 +1,19 @@
 @extends('layouts.admin')
 
-@section('page-title', ucfirst($type) . ' Categories')
+@section('page-title', 'Tool Categories')
 
 @section('content')
-    <div class="row mb-3">
-        <div class="col-12">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link {{ $type === 'post' ? 'active' : '' }}"
-                        href="{{ route('admin.categories.index', ['type' => 'post']) }}">
-                        <i class="fas fa-newspaper mr-1"></i> Post Categories
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ $type === 'tool' ? 'active' : '' }}"
-                        href="{{ route('admin.categories.index', ['type' => 'tool']) }}">
-                        <i class="fas fa-tools mr-1"></i> Tool Categories
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <div class="row">
         <!-- Category List -->
         <div class="col-12">
             <div class="card shadow-sm">
                 <div class="card-header border-0 d-flex justify-content-between align-items-center">
-                    <h3 class="card-title font-weight-bold">All {{ ucfirst($type) }} Categories</h3>
+                    <h3 class="card-title font-weight-bold">All Tool Categories</h3>
                     <div class="card-tools d-flex align-items-center">
-                        <a href="{{ route('admin.categories.create', ['type' => $type]) }}"
-                            class="btn btn-primary btn-sm mr-3">
+                        <a href="{{ route('admin.tools.categories.create') }}" class="btn btn-primary btn-sm mr-3">
                             <i class="fas fa-plus mr-1"></i> Add New
                         </a>
-                        <form action="{{ route('admin.categories.index') }}" method="GET" class="d-inline-block">
-                            <input type="hidden" name="type" value="{{ $type }}">
+                        <form action="{{ route('admin.tools.categories.index') }}" method="GET" class="d-inline-block">
                             <div class="input-group input-group-sm" style="width: 250px;">
                                 <input type="text" name="search" class="form-control float-right" placeholder="Search"
                                     value="{{ request('search') }}">
@@ -72,22 +51,18 @@
                                     </td>
                                     <td>{{ $category->slug }}</td>
                                     <td>
-                                        @if($type === 'tool')
-                                            {{-- Show tools count if parent, or subTools count if subcategory --}}
-                                            <span class="badge badge-light border">
-                                                {{ $category->parent_id ? $category->sub_tools_count : $category->tools_count }}
-                                            </span>
-                                        @else
-                                            <span class="badge badge-light border">{{ $category->posts_count }}</span>
-                                        @endif
+                                        {{-- Show tools count if parent, or subTools count if subcategory --}}
+                                        <span class="badge badge-light border">
+                                            {{ $category->parent_id ? $category->sub_tools_count : $category->tools_count }}
+                                        </span>
                                     </td>
                                     <td class="text-right">
-                                        <a href="{{ route('admin.categories.edit', $category->id) }}"
+                                        <a href="{{ route('admin.tools.categories.edit', $category->id) }}"
                                             class="btn btn-sm btn-info mr-1">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        <form action="{{ route('admin.categories.destroy', $category->id) }}" method="POST"
-                                            class="d-inline" onsubmit="return confirm('Are you sure?');">
+                                        <form action="{{ route('admin.tools.categories.destroy', $category->id) }}"
+                                            method="POST" class="d-inline" onsubmit="return confirm('Are you sure?');">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-sm btn-danger">
@@ -115,10 +90,8 @@
     </div>
 
     <script>
-        // Auto-slug
-        document.getElementById('name').addEventListener('input', function () {
-            let slug = this.value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-            document.getElementById('slug').value = slug;
-        });
+        // Auto-slug - Need to ensure input exists if we had a quick create form
+        // But we removed it. So we don't need this script here anymore unless for search?
+        // No, search input doesn't need auto-slug.
     </script>
 @endsection

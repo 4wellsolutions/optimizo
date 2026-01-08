@@ -8,41 +8,37 @@ class CategoryController extends Controller
 {
     public function youtube()
     {
-        $tools = Tool::where('category', 'youtube')
-            ->where('is_active', true)
-            ->orderBy('name')
-            ->get();
-
-        return view('categories.youtube', compact('tools'));
+        return $this->showCategory('youtube');
     }
 
     public function seo()
     {
-        $tools = Tool::where('category', 'seo')
-            ->where('is_active', true)
-            ->orderBy('name')
-            ->get();
-
-        return view('categories.seo', compact('tools'));
+        return $this->showCategory('seo');
     }
 
     public function utility()
     {
-        $tools = Tool::where('category', 'utility')
-            ->where('is_active', true)
-            ->orderBy('name')
-            ->get();
-
-        return view('categories.utility', compact('tools'));
+        return $this->showCategory('utility');
     }
 
     public function network()
     {
-        $tools = Tool::where('category', 'network')
-            ->where('is_active', true)
-            ->orderBy('name')
-            ->get();
+        return $this->showCategory('network');
+    }
 
-        return view('categories.network', compact('tools'));
+    private function showCategory($slug)
+    {
+        $category = \App\Models\Category::where('slug', $slug)->firstOrFail();
+
+        // Correctly fetch tools based on whether it's a parent or subcategory
+        if ($category->parent_id) {
+            // It's a subcategory, tools are linked via subcategory_id
+            $tools = $category->subTools()->active()->ordered()->get();
+        } else {
+            // It's a parent category, tools are linked via category_id
+            $tools = $category->tools()->active()->ordered()->get();
+        }
+
+        return view('categories.index', compact('category', 'tools'));
     }
 }

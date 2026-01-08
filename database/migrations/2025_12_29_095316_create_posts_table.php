@@ -46,10 +46,10 @@ return new class extends Migration {
         });
 
         // Pivot table for post-category relationship
-        Schema::create('post_category', function (Blueprint $table) {
+        Schema::create('blog_category_post', function (Blueprint $table) {
             $table->foreignId('post_id')->constrained()->onDelete('cascade');
-            $table->foreignId('category_id')->constrained()->onDelete('cascade');
-            $table->primary(['post_id', 'category_id']);
+            $table->foreignId('blog_category_id')->constrained('blog_categories')->onDelete('cascade');
+            $table->primary(['post_id', 'blog_category_id']);
         });
 
         // Pivot table for post-tag relationship
