@@ -15,14 +15,39 @@ class CategoryController extends Controller
     /**
      * Display a listing of the categories.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $categories = Category::with('parent')
-            ->withCount(['tools', 'subTools'])
-            ->latest()
-            ->paginate(20);
+        $query = Category::with('parent')
+            ->withCount(['tools', 'subTools']);
 
-        return view('admin.tools.categories.index', compact('categories'));
+        // Search Filter
+        if ($request->has('search')) {
+            $search = $request->input('search');
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                    ->orWhere('slug', 'like', "%{$search}%")
+                    ->orWhere('description', 'like', "%{$search}%");
+            });
+        }
+
+        // Parent Filter
+        if ($request->has('parent_id') && $request->input('parent_id') != '') {
+            $parentId = $request->input('parent_id');
+            if ($parentId == 'top') {
+                $query->whereNull('parent_id');
+            } else {
+                $query->where('parent_id', $parentId);
+            }
+        }
+
+        $categories = $query->latest()->paginate(20);
+
+        // Fetch potential parents for the filter dropdown
+        $parents = Category::whereNull('parent_id')
+            ->orderBy('name')
+            ->get();
+
+        return view('admin.tools.categories.index', compact('categories', 'parents'));
     }
 
     /**
