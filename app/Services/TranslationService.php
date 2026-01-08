@@ -21,6 +21,11 @@ class TranslationService
             return $model->$field ?? null;
         }
 
+        // Check if model matches requirements for translation (has ID)
+        if (!is_object($model) || !isset($model->id)) {
+            return $model->$field ?? null;
+        }
+
         $language = Language::where('code', $locale)->first();
         if (!$language) {
             return $model->$field ?? null;
@@ -47,6 +52,11 @@ class TranslationService
             return;
         }
 
+        // Check if model matches requirements for translation (has ID)
+        if (!is_object($model) || !isset($model->id)) {
+            return;
+        }
+
         Translation::updateOrCreate(
             [
                 'translatable_type' => get_class($model),
@@ -70,6 +80,11 @@ class TranslationService
     {
         $language = Language::where('code', $locale)->first();
         if (!$language) {
+            return [];
+        }
+
+        // Check if model matches requirements for translation (has ID)
+        if (!is_object($model) || !isset($model->id)) {
             return [];
         }
 

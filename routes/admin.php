@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
+    // Redirect /admin to /admin/dashboard
+    Route::redirect('/', '/admin/dashboard');
+
     // Dashboard
     Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
 
