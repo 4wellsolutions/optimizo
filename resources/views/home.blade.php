@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Optimizo - Professional Online Tools')
-@section('meta_description', 'Free professional online tools for YouTube creators, SEO optimization, and daily utilities. No registration required.')
+@section('title', __('home.title'))
+@section('meta_description', __('home.meta_description'))
 
 @section('content')
     <!-- Hero Section -->

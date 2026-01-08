@@ -1,6 +1,10 @@
 <?php
 
 return [
+    // Meta Tags
+    'title' => 'Optimizo - Professional Online Tools',
+    'meta_description' => 'Free professional online tools for YouTube creators, SEO optimization, and daily utilities. No registration required.',
+
     // Hero Section
     'hero_badge' => 'Free Professional Tools',
     'hero_title' => 'Professional Tools<br>for Creators',

@@ -213,6 +213,30 @@ class TranslationSeeder extends Seeder
                 'meta_title' => 'Проверка Конкуренции Ключевых Слов - SEO Анализ',
                 'meta_description' => 'Анализируйте сложность продвижения по ключевым словам. Найдите низкоконкурентные запросы.',
             ],
+            'on-page-seo-checker' => [
+                'name' => 'Проверка SEO на странице',
+                'description' => 'Полный анализ SEO факторов одной страницы. Проверьте заголовки, контент и технические параметры.',
+                'meta_title' => 'On-Page SEO Checker - Анализ Страницы Онлайн',
+                'meta_description' => 'Бесплатный инструмент для SEO анализа страницы. Улучшите ранжирование вашего контента.',
+            ],
+            'broken-links-checker' => [
+                'name' => 'Проверка битых ссылок',
+                'description' => 'Сканирование сайта на наличие неработающих ссылок (ошибки 404).',
+                'meta_title' => 'Проверка Битых Ссылок - Поиск Ошибок 404',
+                'meta_description' => 'Найдите и исправьте битые ссылки на вашем сайте. Улучшите пользовательский опыт и SEO.',
+            ],
+            'word-counter' => [
+                'name' => 'Счетчик слов',
+                'description' => 'Подсчет количества слов, символов, предложений и времени чтения.',
+                'meta_title' => 'Счетчик Слов и Символов Онлайн',
+                'meta_description' => 'Бесплатный счетчик слов. Узнайте длину текста, количество знаков без пробелов и время чтения.',
+            ],
+            'redirect-checker' => [
+                'name' => 'Проверка редиректов',
+                'description' => 'Анализ цепочек редиректов и HTTP кодов состояния (301, 302, 404).',
+                'meta_title' => 'Проверка Редиректов - Анализ Ссылок',
+                'meta_description' => 'Проверьте правильность настройки перенаправлений. Найдите циклические редиректы и битые ссылки.',
+            ],
             'get-source-code-of-webpage' => [
                 'name' => 'Просмотр кода страницы',
                 'description' => 'Получите исходный HTML код любой веб-страницы онлайн.',
@@ -231,12 +255,7 @@ class TranslationSeeder extends Seeder
                 'meta_title' => 'Проверка Кэша Google - Дата Кэширования',
                 'meta_description' => 'Проверьте наличие и дату кэшированной версии страницы в Google. Важно для SEO аудита.',
             ],
-            'whois-lookup' => [
-                'name' => 'WHOIS проверка домена',
-                'description' => 'Узнайте информацию о владельце домена, дате регистрации и серверах имен.',
-                'meta_title' => 'WHOIS Проверка - Информация о Домене',
-                'meta_description' => 'Бесплатный сервис WHOIS. Узнайте, кому принадлежит домен, когда он был зарегистрирован и когда истекает.',
-            ],
+
             'domain-age-checker' => [
                 'name' => 'Проверка возраста домена',
                 'description' => 'Определите точный возраст доменного имени с момента регистрации.',
@@ -399,13 +418,13 @@ class TranslationSeeder extends Seeder
                 'name' => 'Конвертер Двоичный в HEX',
                 'description' => 'Перевод чисел из двоичной системы в шестнадцатеричную.',
                 'meta_title' => 'Двоичный в Шестнадцатеричный - Конвертер Систем',
-                'meta_description' => 'Калькулятор для перевода битов в hex коды. Binary to Hex converter.',
+                'meta_description' => 'Калькулятор для перевода битов в hex коды. Конвертер систем счисления.',
             ],
             'decimal-binary-converter' => [
                 'name' => 'Конвертер Десятичный в Двоичный',
                 'description' => 'Перевод чисел из десятичной системы в двоичную.',
                 'meta_title' => 'Десятичный в Двоичный - Конвертер Чисел',
-                'meta_description' => 'Переведите обычные числа в нули и единицы. Decimal to Binary converter.',
+                'meta_description' => 'Переведите обычные числа в нули и единицы. Конвертер систем счисления.',
             ],
             'decimal-hex-converter' => [
                 'name' => 'Конвертер Десятичный в HEX',
@@ -522,6 +541,324 @@ class TranslationSeeder extends Seeder
             'network' => [
                 'name' => 'Сеть',
                 'description' => 'Сетевые инструменты',
+            ],
+
+            'utility-number-system-converters' => [
+                'name' => 'Системы Счисления',
+                'description' => 'Конвертеры систем счисления (Binary, Hex, Decimal)',
+            ],
+            'utility-encoding-decoding-tools' => [
+                'name' => 'Кодирование и Декодирование',
+                'description' => 'Инструменты для кодирования и декодирования данных',
+            ],
+            'utility-text-content-tools' => [
+                'name' => 'Текст и Контент',
+                'description' => 'Инструменты для работы с текстом и контентом',
+            ],
+            'utility-data-format-converters' => [
+                'name' => 'Конвертеры Форматов Данных',
+                'description' => 'Преобразование форматов данных (JSON, XML, YAML, CSV)',
+            ],
+            'utility-spreadsheet-tools' => [
+                'name' => 'Таблицы и Excel',
+                'description' => 'Инструменты для работы с Excel и CSV файлами',
+            ],
+            'utility-image-tools' => [
+                'name' => 'Инструменты Изображений',
+                'description' => 'Инструменты для работы с изображениями, PDF и QR',
+            ],
+            'utility-dev-tools' => [
+                'name' => 'Инструменты Разработчика',
+                'description' => 'Утилиты для веб-разработки и программирования',
+            ],
+            'utility-text-tools' => [
+                'name' => 'Текстовые Инструменты',
+                'description' => 'Инструменты для обработки и форматирования текста',
+            ],
+            'utility-encodingdecoding-tools' => [
+                'name' => 'Кодирование/Декодирование',
+                'description' => 'Инструменты для кодирования и декодирования данных',
+            ],
+            'utility-security-tools' => [
+                'name' => 'Безопасность',
+                'description' => 'Инструменты для шифрования и проверки безопасности',
+            ],
+            'utility-social-tools' => [
+                'name' => 'Социальные Инструменты',
+                'description' => 'Утилиты для социальных сетей и профилей',
+            ],
+            'utility-text-string-converters' => [
+                'name' => 'Конвертеры Текста',
+                'description' => 'Преобразование регистра и формата строк',
+            ],
+            'utility-document-tools' => [
+                'name' => 'Инструменты Документов',
+                'description' => 'Конвертация и обработка документов',
+            ],
+            'utility-network-diagnostics' => [
+                'name' => 'Диагностика Сети',
+                'description' => 'Инструменты для проверки доступности и производительности сети',
+            ],
+            'utility-generator-tools' => [
+                'name' => 'Генераторы',
+                'description' => 'Инструменты для генерации случайных данных',
+            ],
+            'utility-network-tools' => [
+                'name' => 'Сетевые Инструменты',
+                'description' => 'Утилиты для анализа сетевых данных',
+            ],
+            'utility-unit-converters' => [
+                'name' => 'Конвертеры Единиц',
+                'description' => 'Преобразование различных единиц измерения',
+            ],
+
+            // Missing Utility Tools
+            'markdown-to-html-converter' => [
+                'name' => 'Markdown в HTML',
+                'description' => 'Конвертация Markdown разметки в HTML код для веб-страниц.',
+                'meta_title' => 'Markdown в HTML - Конвертер Разметки',
+                'meta_description' => 'Преобразуйте Markdown в чистый HTML. Парсинг MD синтаксиса онлайн.',
+            ],
+            'html-to-markdown-converter' => [
+                'name' => 'HTML в Markdown',
+                'description' => 'Конвертация HTML кода в Markdown формат для документации.',
+                'meta_title' => 'HTML в Markdown - Конвертер Документации',
+                'meta_description' => 'Преобразуйте HTML в Markdown. Упрощение кода для README и Wiki.',
+            ],
+            'url-encoder-decoder' => [
+                'name' => 'URL Кодер/Декодер',
+                'description' => 'Кодирование и декодирование URL строк. Преобразование спецсимволов.',
+                'meta_title' => 'URL Кодировщик - Encode/Decode URL',
+                'meta_description' => 'Безопасное кодирование URL параметров. Конвертация спецсимволов в URL-формат.',
+            ],
+            'html-encoder-decoder' => [
+                'name' => 'HTML Кодер/Декодер',
+                'description' => 'Кодирование HTML сущностей для защиты от XSS атак.',
+                'meta_title' => 'HTML Encoder - Экранирование HTML',
+                'meta_description' => 'Преобразуйте спецсимволы в HTML entities для безопасной вставки в код.',
+            ],
+            'unicode-encoder-decoder' => [
+                'name' => 'Unicode Кодер/Декодер',
+                'description' => 'Кодирование и декодирование Unicode символов.',
+                'meta_title' => 'Unicode Конвертер - Encode/Decode Unicode',
+                'meta_description' => 'Преобразование текста в Unicode коды и обратно. Поддержка всех языков.',
+            ],
+            'jwt-decoder' => [
+                'name' => 'JWT Декодер',
+                'description' => 'Декодирование и анализ JSON Web Tokens (JWT).',
+                'meta_title' => 'JWT Decoder - Расшифровка JWT Токенов',
+                'meta_description' => 'Просмотр содержимого JWT токенов. Анализ заголовка, payload и подписи.',
+            ],
+            'json-to-xml-converter' => [
+                'name' => 'Конвертер JSON в XML',
+                'description' => 'Преобразование JSON данных в формат XML и обратно.',
+                'meta_title' => 'JSON в XML - Конвертер Данных',
+                'meta_description' => 'Двунаправленная конвертация JSON-XML. Настройка корневого элемента.',
+            ],
+            'json-to-yaml-converter' => [
+                'name' => 'Конвертер JSON в YAML',
+                'description' => 'Преобразование JSON в YAML для конфигурационных файлов.',
+                'meta_title' => 'JSON в YAML - Конвертер Конфигураций',
+                'meta_description' => 'Конвертируйте JSON в читаемый YAML формат. Для Docker, Kubernetes и др.',
+            ],
+            'csv-to-xml-converter' => [
+                'name' => 'Конвертер CSV в XML',
+                'description' => 'Преобразование CSV таблиц в XML формат.',
+                'meta_title' => 'CSV в XML - Конвертер Таблиц',
+                'meta_description' => 'Импортируйте CSV данные в XML. Настройка имен элементов и атрибутов.',
+            ],
+            'json-to-sql-converter' => [
+                'name' => 'Конвертер JSON в SQL',
+                'description' => 'Генерация SQL INSERT запросов из JSON данных.',
+                'meta_title' => 'JSON в SQL - Генератор Запросов',
+                'meta_description' => 'Создайте INSERT запросы из JSON объектов. Быстрый импорт в БД.',
+            ],
+            'tsv-to-csv-converter' => [
+                'name' => 'Конвертер TSV в CSV',
+                'description' => 'Преобразование TSV (Tab) в CSV (Comma) формат.',
+                'meta_title' => 'TSV в CSV - Конвертер Таблиц',
+                'meta_description' => 'Замена разделителей табуляции на запятые. Конвертация таблиц.',
+            ],
+            'case-converter' => [
+                'name' => 'Конвертер Регистра',
+                'description' => 'Преобразование текста в разные регистры (UPPER, lower, Title Case).',
+                'meta_title' => 'Case Converter - Изменение Регистра Текста',
+                'meta_description' => 'Быстрое преобразование регистра текста. Верхний, нижний, заглавный.',
+            ],
+            'sentence-case-converter' => [
+                'name' => 'Sentence Case',
+                'description' => 'Преобразование текста в формат предложения (первая заглавная).',
+                'meta_title' => 'Sentence Case Converter - Регистр Предложения',
+                'meta_description' => 'Первая буква заглавная, остальные строчные. Формат предложения.',
+            ],
+            'camel-case-converter' => [
+                'name' => 'camelCase Конвертер',
+                'description' => 'Преобразование текста в camelCase для переменных JavaScript.',
+                'meta_title' => 'camelCase Converter - Верблюжий Регистр',
+                'meta_description' => 'Конвертация в camelCase. Идеально для JS переменных и функций.',
+            ],
+            'pascal-case-converter' => [
+                'name' => 'PascalCase Конвертер',
+                'description' => 'Преобразование в PascalCase (UpperCamelCase) для классов.',
+                'meta_title' => 'PascalCase Converter - Конвертер Классов',
+                'meta_description' => 'Формат PascalCase для имен классов и типов в программировании.',
+            ],
+            'snake-case-converter' => [
+                'name' => 'snake_case Конвертер',
+                'description' => 'Преобразование в snake_case для Python и БД.',
+                'meta_title' => 'snake_case Converter - Змеиный Регистр',
+                'meta_description' => 'Конвертация в snake_case. Стандарт для Python и SQL.',
+            ],
+            'kebab-case-converter' => [
+                'name' => 'kebab-case Конвертер',
+                'description' => 'Преобразование в kebab-case для URL и CSS классов.',
+                'meta_title' => 'kebab-case Converter - Шашлычный Регистр',
+                'meta_description' => 'Формат kebab-case для SEO-дружественных URL и CSS.',
+            ],
+            'studly-case-converter' => [
+                'name' => 'StUdLy CaSe Конвертер',
+                'description' => 'Случайное чередование регистра букв.',
+                'meta_title' => 'Studly Case Converter - Случайный Регистр',
+                'meta_description' => 'Создайте мемный текст с чередующимся регистром.',
+            ],
+            'text-reverser' => [
+                'name' => 'Переворот Текста',
+                'description' => 'Переворачивает текст задом наперед (зеркало).',
+                'meta_title' => 'Text Reverser - Зеркальный Текст',
+                'meta_description' => 'Переверните текст наоборот. Создайте зеркальные надписи.',
+            ],
+            'text-to-morse-code' => [
+                'name' => 'Текст в Азбуку Морзе',
+                'description' => 'Преобразование текста в код Морзе (точки и тире).',
+                'meta_title' => 'Morse Code Generator - Генератор Морзе',
+                'meta_description' => 'Конвертируйте текст в азбуку Морзе. Зашифруйте сообщения.',
+            ],
+            'morse-code-to-text' => [
+                'name' => 'Азбука Морзе в Текст',
+                'description' => 'Декодирование азбуки Морзе обратно в текст.',
+                'meta_title' => 'Morse Code Decoder - Декодер Морзе',
+                'meta_description' => 'Расшифруйте код Морзе. Перевод точек и тире в буквы.',
+            ],
+            'curl-command-builder' => [
+                'name' => 'Генератор cURL команд',
+                'description' => 'Создание cURL команд для тестирования API запросов.',
+                'meta_title' => 'cURL Command Builder - Генератор Запросов',
+                'meta_description' => 'Визуальный конструктор cURL команд. Настройка заголовков и параметров.',
+            ],
+            'duplicate-line-remover' => [
+                'name' => 'Удаление Дубликатов Строк',
+                'description' => 'Удаление повторяющихся строк из текста.',
+                'meta_title' => 'Duplicate Line Remover - Очистка Текста',
+                'meta_description' => 'Автоматическое удаление дублирующихся строк. Очистка списков.',
+            ],
+            'username-checker' => [
+                'name' => 'Проверка Имени Пользователя',
+                'description' => 'Проверка доступности юзернейма в социальных сетях.',
+                'meta_title' => 'Username Checker - Проверка Доступности',
+                'meta_description' => 'Проверьте свободен ли username в Instagram, Twitter, GitHub и др.',
+            ],
+            'cooking-unit-converter' => [
+                'name' => 'Конвертер Кулинарных Единиц',
+                'description' => 'Перевод кухонных мер. Чайные ложки в миллилитры, стаканы в унции.',
+                'meta_title' => 'Конвертер Кулинарных Единиц - Онлайн',
+                'meta_description' => 'Переводите чайные ложки, столовые ложки, стаканы и унции для рецептов.',
+            ],
+            'torque-converter' => [
+                'name' => 'Конвертер Крутящего Момента',
+                'description' => 'Перевод крутящего момента. Ньютон-метры в фут-фунты.',
+                'meta_title' => 'Конвертер Крутящего Момента - Nm в ft-lb',
+                'meta_description' => 'Переводите крутящий момент для автомобильных и промышленных расчетов.',
+            ],
+            'density-converter' => [
+                'name' => 'Конвертер Плотности',
+                'description' => 'Перевод единиц плотности. Килограммы на кубический метр в граммы на кубический сантиметр.',
+                'meta_title' => 'Конвертер Плотности - kg/m³ в g/cm³',
+                'meta_description' => 'Переводите плотность материалов и веществ между единицами измерения.',
+            ],
+            'molar-mass-converter' => [
+                'name' => 'Конвертер Молярной Массы',
+                'description' => 'Расчет молярной массы по химическим формулам.',
+                'meta_title' => 'Калькулятор Молярной Массы - Химия',
+                'meta_description' => 'Вычислите молярную массу химических соединений. Полезно для студентов.',
+            ],
+            'frequency-converter' => [
+                'name' => 'Конвертер Частоты',
+                'description' => 'Перевод единиц частоты. Герцы в Килогерцы, Мегагерцы в Гигагерцы.',
+                'meta_title' => 'Конвертер Частоты - Hz в kHz/MHz/GHz',
+                'meta_description' => 'Переводите частоты для радио, звука и электроники.',
+            ],
+            // Case Converters
+            'sentence-case-converter' => [
+                'name' => 'Конвертер в Sentence Case',
+                'description' => 'Преобразуйте текст: первая буква заглавная, остальные строчные.',
+                'meta_title' => 'Sentence Case Converter - Конвертер Регистра',
+                'meta_description' => 'Конвертируйте текст в формат sentence case онлайн бесплатно.',
+            ],
+            // Morse Code Tools
+            'text-to-morse-converter' => [
+                'name' => 'Конвертер Текста в Азбуку Морзе',
+                'description' => 'Преобразуйте текст в символы азбуки Морзе для связи или развлечения.',
+                'meta_title' => 'Text to Morse Code - Конвертер в Морзе',
+                'meta_description' => 'Конвертируйте текст в код Морзе онлайн. Точки и тире.',
+            ],
+            'morse-to-text-converter' => [
+                'name' => 'Декодер Азбуки Морзе',
+                'description' => 'Преобразуйте азбуку Морзе обратно в читаемый текст.',
+                'meta_title' => 'Morse to Text - Декодер Морзе',
+                'meta_description' => 'Расшифруйте код Морзе в обычный текст онлайн.',
+            ],
+            // Excel/CSV Converters
+            'excel-to-csv' => [
+                'name' => 'Конвертер Excel в CSV',
+                'description' => 'Быстро конвертируйте файлы Excel (.xls, .xlsx) в формат CSV.',
+                'meta_title' => 'Excel to CSV Converter - Онлайн Конвертер',
+                'meta_description' => 'Преобразуйте Excel файлы в CSV формат бесплатно онлайн.',
+            ],
+            'csv-to-excel' => [
+                'name' => 'Конвертер CSV в Excel',
+                'description' => 'Преобразуйте файлы CSV в формат Excel (.xlsx) для удобного просмотра.',
+                'meta_title' => 'CSV to Excel Converter - Онлайн Конвертер',
+                'meta_description' => 'Конвертируйте CSV в Excel для лучшей визуализации данных.',
+            ],
+
+            // YouTube Tools Subcategories
+            'youtube-monetization-analytics' => [
+                'name' => 'Монетизация',
+                'description' => 'Инструменты для монетизации и аналитики канала',
+            ],
+            'youtube-video-tools' => [
+                'name' => 'Видео Инструменты',
+                'description' => 'Инструменты для работы с видео контентом',
+            ],
+            'youtube-channel-tools' => [
+                'name' => 'Инструменты Канала',
+                'description' => 'Инструменты для анализа и настройки канала',
+            ],
+
+            // SEO Tools Subcategories
+            'seo-analysis-tools' => [
+                'name' => 'Инструменты Анализа',
+                'description' => 'Инструменты для глубокого анализа вашего контента',
+            ],
+            'seo-keyword-tools' => [
+                'name' => 'Инструменты Ключевых Слов',
+                'description' => 'Поиск и анализ ключевых слов',
+            ],
+            'seo-technical-seo' => [
+                'name' => 'Технический SEO',
+                'description' => 'Инструменты технического аудита сайта',
+            ],
+            'seo-google-serp-checker' => [
+                'name' => 'Проверка Позиций (SERP)',
+                'description' => 'Мониторинг позиций в поисковой выдаче',
+            ],
+            'seo-broken-links-checker' => [
+                'name' => 'Проверка Битых Ссылок',
+                'description' => 'Поиск неработающих ссылок на сайте',
+            ],
+            'seo-on-page-seo-checker' => [
+                'name' => 'On-Page SEO',
+                'description' => 'Анализ контента страницы',
             ],
 
             // Network Tools Subcategories
