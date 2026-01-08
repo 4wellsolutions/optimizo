@@ -121,6 +121,19 @@
                         </div>
                         <div class="col-md-2">
                             <div class="form-group">
+                                <label>Subcategory</label>
+                                <select class="form-control select2" name="subcategory" style="width: 100%;">
+                                    <option value="">All</option>
+                                    @foreach($subcategories as $sub)
+                                        <option value="{{ $sub->id }}" {{ request('subcategory') == $sub->id ? 'selected' : '' }}>
+                                            {{ $sub->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
                                 <label>Per Page</label>
                                 <select class="form-control" name="per_page">
                                     <option value="10" {{ request('per_page') == 10 ? 'selected' : '' }}>10</option>

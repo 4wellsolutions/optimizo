@@ -9,7 +9,7 @@ class TimeConverterController extends Controller
 {
     private function getTool($slug)
     {
-        return \App\Models\Tool::where('slug', $slug)->firstOrFail();
+        return \App\Models\Tool::with('categoryRelation')->where('slug', $slug)->firstOrFail();
     }
 
     public function timeZoneConverter()

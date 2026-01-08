@@ -29,27 +29,27 @@ class CategorySeeder extends Seeder
                 'youtube' => [
                     'from' => '#ef4444', // red-500
                     'to' => '#b91c1c',   // red-700
-                    'text' => 'text-white'
+                    'text' => 'text-red-600'
                 ],
                 'seo' => [
                     'from' => '#10b981', // emerald-500
                     'to' => '#047857',   // emerald-700
-                    'text' => 'text-white'
+                    'text' => 'text-emerald-600'
                 ],
                 'utility' => [
                     'from' => '#3b82f6', // blue-500
                     'to' => '#1d4ed8',   // blue-700
-                    'text' => 'text-white'
+                    'text' => 'text-blue-600'
                 ],
                 'network' => [
                     'from' => '#8b5cf6', // violet-500
                     'to' => '#6d28d9',   // violet-700
-                    'text' => 'text-white'
+                    'text' => 'text-violet-600'
                 ],
                 default => [ // Other
                     'from' => '#6b7280', // gray-500
                     'to' => '#374151',   // gray-700
-                    'text' => 'text-white'
+                    'text' => 'text-gray-600'
                 ]
             };
 

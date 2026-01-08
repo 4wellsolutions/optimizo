@@ -7,39 +7,23 @@
     $displayIcon = $icon ?? $tool->icon ?? $tool->slug ?? 'default';
 
     // Category-based gradient colors
-    $gradientMap = [
-        'network' => 'from-blue-500 via-cyan-500 to-teal-600',
-        'seo' => 'from-green-500 via-emerald-500 to-teal-600',
-        'youtube' => 'from-red-500 via-pink-500 to-rose-600',
-        'utility' => 'from-indigo-500 via-purple-500 to-pink-600',
-        'document' => 'from-orange-500 via-amber-500 to-yellow-600',
-        'spreadsheet' => 'from-green-600 via-lime-500 to-emerald-600',
-        'time' => 'from-violet-500 via-indigo-500 to-purple-600',
-    ];
+    // Category-based gradient colors from Database
+    $category = $tool->categoryRelation;
+    $gradientFrom = $category?->bg_gradient_from ?? '#6366f1'; // Default Indigo-500
+    $gradientTo = $category?->bg_gradient_to ?? '#db2777';   // Default Pink-600
+    $textColor = $category?->text_color ?? 'text-indigo-600'; // Default text color
 
-    // Category-based icon colors (matching the primary color of each gradient)
-    $iconColorMap = [
-        'network' => 'text-blue-600',
-        'seo' => 'text-green-600',
-        'youtube' => 'text-red-600',
-        'utility' => 'text-indigo-600',
-        'document' => 'text-orange-600',
-        'spreadsheet' => 'text-green-600',
-        'time' => 'text-violet-600',
-    ];
-
-    $gradientClass = $gradientMap[$tool->category] ?? 'from-indigo-500 via-purple-500 to-pink-600';
-    $iconColorClass = $iconColorMap[$tool->category] ?? 'text-indigo-600';
+    $iconColorClass = $textColor;
 @endphp
 
-<div class="relative overflow-hidden bg-gradient-to-br {{ $gradientClass }} rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
+<div class="relative overflow-hidden bg-gradient-to-br rounded-3xl p-4 md:p-6 mb-8 shadow-2xl"
+    style="--tw-gradient-from: {{ $gradientFrom }}; --tw-gradient-to: {{ $gradientTo }}; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);">
     <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
     <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
 
     <div class="relative z-10 text-center">
-        <div
-            class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-            @include('components.tool-icon', ['slug' => $tool->slug])
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-2xl mb-4 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+            <x-tool-icon :slug="$tool->slug" class="{{ $iconColorClass }}" />
         </div>
         <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight tracking-tight">
             {{ $displayTitle }}

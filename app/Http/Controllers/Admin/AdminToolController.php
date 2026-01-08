@@ -23,6 +23,8 @@ class AdminToolController extends Controller
 
                     // Resolve Category ID
                     $categoryId = null;
+                    $subcategoryId = null;
+
                     if (isset($toolData['category'])) {
                         $catSlug = $toolData['category'];
                         $parent = \App\Models\Category::where('slug', $catSlug)->whereNull('parent_id')->first();
@@ -38,16 +40,15 @@ class AdminToolController extends Controller
                                     ->first();
 
                                 if ($child) {
-                                    $categoryId = $child->id;
+                                    $subcategoryId = $child->id;
                                 }
                             }
                         }
                     }
 
-                    // Add category_id to data
-                    if ($categoryId) {
-                        $toolData['category_id'] = $categoryId;
-                    }
+                    // Add IDs to data
+                    $toolData['category_id'] = $categoryId;
+                    $toolData['subcategory_id'] = $subcategoryId;
 
                     Tool::updateOrCreate(
                         ['slug' => $toolData['slug']],
@@ -111,7 +112,16 @@ class AdminToolController extends Controller
         }
 
         if ($request->filled('category')) {
-            $query->where('category', $request->input('category'));
+            $val = $request->input('category');
+            if (is_numeric($val)) {
+                $query->where('category_id', $val);
+            } else {
+                $query->where('category', $val);
+            }
+        }
+
+        if ($request->filled('subcategory')) {
+            $query->where('subcategory_id', $request->input('subcategory'));
         }
 
         // Per page filter
@@ -128,8 +138,10 @@ class AdminToolController extends Controller
         // Fetch unique categories used by tools (via relation)
         // Since we now store category_id, we should fetch Category models.
         // Or simply fetch all categories for the filter dropdown?
+        // Or simply fetch all categories for the filter dropdown?
         // Let's fetch all categories that are parents.
-        $categories = \App\Models\Category::whereNull('parent_id')->get();
+        $categories = \App\Models\Category::whereNull('parent_id')->orderBy('name')->get();
+        $subcategories = \App\Models\Category::whereNotNull('parent_id')->orderBy('name')->get();
         // Or if we want ONLY categories that are actually used:
         // $usedCategoryIds = Tool::distinct()->pluck('category_id');
         // $categories = Category::whereIn('id', $usedCategoryIds)->get();
@@ -148,7 +160,7 @@ class AdminToolController extends Controller
         $utilityTools = $utilityCat ? Tool::where('category_id', $utilityCat->id)->count() : 0;
         $youtubeTools = $youtubeCat ? Tool::where('category_id', $youtubeCat->id)->count() : 0;
 
-        return view('admin.tools.index', compact('tools', 'categories', 'totalTools', 'activeTools', 'utilityTools', 'youtubeTools'));
+        return view('admin.tools.index', compact('tools', 'categories', 'subcategories', 'totalTools', 'activeTools', 'utilityTools', 'youtubeTools'));
     }
 
     public function edit(Tool $tool)
