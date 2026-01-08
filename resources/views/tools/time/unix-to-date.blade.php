@@ -1,195 +1,178 @@
 @extends('layouts.app')
 
-@section('title', 'Unix Timestamp to Date - Convert Epoch to Human Time')
-@section('meta_description', 'Convert Unix Timestamp to human-readable date formats (ISO, GMT, Local) instantly. Free online Unix to Date converter.')
+@section('title', __tool('unix-to-date', 'seo.title'))
+@section('meta_description', __tool('unix-to-date', 'seo.description'))
 
 @section('content')
-    <x-tool-hero :tool="$tool" title="Unix Timestamp to Date"
-        description="Convert numeric Unix timestamps to readable date and time formats." icon="calendar" />
+    <x-tool-hero :tool="$tool" />
 
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 sm:p-8 mb-8">
-        <div class="max-w-xl mx-auto space-y-6">
-            <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Unix Timestamp</label>
-                <div class="flex gap-2">
-                    <input type="number" id="tsInput"
-                        class="flex-1 rounded-lg border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 font-mono text-lg"
-                        placeholder="e.g. 1672531200">
-                    <button onclick="useCurrent()"
-                        class="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 text-sm font-medium">Now</button>
-                </div>
+    {{-- CONVERTER SECTION --}}
+    <div class="max-w-4xl mx-auto mb-16 px-4">
+        <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 md:p-12 overflow-hidden relative">
+            <div
+                class="absolute top-0 right-0 w-64 h-64 bg-green-100 rounded-full mix-blend-multiply opacity-50 blur-3xl -mr-32 -mt-32">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply opacity-50 blur-3xl -ml-32 -mb-32">
             </div>
 
-            <button onclick="convert()"
-                class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 font-medium transition shadow-sm">Convert
-                to Date</button>
+            <div class="relative z-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-green-100 text-green-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </span>
+                    {{ __tool('unix-to-date', 'form.title') }}
+                </h2>
 
-            <div id="result" class="hidden space-y-3 pt-4 border-t border-gray-100">
-                <div class="bg-indigo-50 p-4 rounded-lg">
-                    <span class="block text-xs text-indigo-500 uppercase font-bold tracking-wide">GMT / UTC</span>
-                    <span id="outGmt" class="block text-xl font-mono text-gray-900 mt-1 select-all"></span>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <span class="block text-xs text-gray-500 uppercase font-bold tracking-wide">Your Local Time</span>
-                    <span id="outLocal" class="block text-xl font-mono text-gray-900 mt-1 select-all"></span>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <span class="block text-xs text-gray-500 uppercase font-bold tracking-wide">ISO 8601</span>
-                    <span id="outIso" class="block text-xl font-mono text-gray-900 mt-1 select-all"></span>
+                <div class="space-y-6">
+                    <div class="relative">
+                        <input type="text" id="unixInput"
+                            class="w-full text-xl font-mono border-2 border-gray-200 rounded-2xl px-5 py-4 focus:ring-4 focus:ring-green-500/20 focus:border-green-500 transition-all placeholder-gray-300"
+                            placeholder="{{ __tool('unix-to-date', 'form.placeholder') }}" value="{{ time() }}">
+                        <button onclick="setInputToNow()"
+                            class="absolute right-3 top-3 px-3 py-1 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-lg text-sm font-bold transition-colors">
+                            {{ __tool('unix-to-date', 'form.button_now') }}
+                        </button>
+                    </div>
+
+                    <button onclick="convertUnix()"
+                        class="w-full py-4 bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                        {{ __tool('unix-to-date', 'form.button_convert') }}
+                    </button>
+
+                    <div id="resultContainer" class="hidden space-y-4 pt-8 border-t border-gray-100 animate-fade-in-up">
+                        <div class="grid gap-4">
+                            <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
+                                <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">
+                                    {{ __tool('unix-to-date', 'form.result_gmt') }}</div>
+                                <div id="resGmt" class="font-mono text-lg text-gray-800 font-medium break-all"></div>
+                            </div>
+                            <div class="p-4 bg-green-50 rounded-xl border border-green-100">
+                                <div class="text-xs font-bold text-green-600 uppercase tracking-widest mb-1">
+                                    {{ __tool('unix-to-date', 'form.result_local') }}</div>
+                                <div id="resLocal" class="font-mono text-lg text-green-900 font-bold break-all"></div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
+                                <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">
+                                    {{ __tool('unix-to-date', 'form.result_iso') }}</div>
+                                <div id="resIso" class="font-mono text-lg text-gray-800 font-medium break-all"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- SEO Content -->
-    <article class="prose prose-lg prose-indigo max-w-none">
+    {{-- CONTENT SECTION --}}
+    <article class="max-w-4xl mx-auto prose prose-lg prose-green mb-20 px-4">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 font-display">
+                {{ __tool('unix-to-date', 'content.hero_title') }}</h2>
+            <p class="lead text-gray-600">{{ __tool('unix-to-date', 'content.hero_description') }}</p>
 
-        <x-tool-hero :tool="$tool" />
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">Deciphering the Epoch</h2>
-                <p class="text-lg text-indigo-100 leading-relaxed max-w-2xl">
-                    Unix timestamps are the language of machines. This tool translates that raw numeric data into human
-                    history, instantly converting seconds into readable moments.
-                </p>
-            </div>
-            <!-- Decorative Background -->
-            <div class="absolute -bottom-10 -right-10 text-9xl text-white opacity-5 select-none pointer-events-none">
-                <svg class="w-48 h-48" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-            </div>
-        </div>
+            <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mt-12 mb-6">
+                <span class="p-2 bg-green-100 rounded-lg text-green-600"><svg class="w-6 h-6" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                        </path>
+                    </svg></span>
+                {{ __tool('unix-to-date', 'content.formats_title') }}
+            </h3>
 
-        <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mb-8">
-            <span class="p-2 bg-indigo-100 rounded-lg text-indigo-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                    </path>
-                </svg>
-            </span>
-            Output Formats Explained
-        </h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="text-xs font-bold px-2 py-1 bg-green-100 text-green-700 rounded-md">Standard</span>
-                    <h4 class="font-bold text-gray-900">RFC 2822 (GMT)</h4>
+            <div class="space-y-6 not-prose mb-12">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-green-200 transition-colors">
+                    <h4 class="font-bold text-gray-900 flex justify-between items-center mb-2">
+                        <span>{{ __tool('unix-to-date', 'content.format_gmt_title') }}</span>
+                        <span class="text-xs font-normal px-2 py-1 bg-gray-200 rounded text-gray-600">RFC 2822</span>
+                    </h4>
+                    <code
+                        class="block bg-white border border-gray-200 rounded p-2 mb-2 text-sm text-green-700 font-mono">{{ __tool('unix-to-date', 'content.format_gmt_example') }}</code>
+                    <p class="text-sm text-gray-600 mb-0">{{ __tool('unix-to-date', 'content.format_gmt_desc') }}</p>
                 </div>
-                <p class="text-sm text-gray-600 font-mono bg-white p-2 rounded border border-gray-200">Mon, 25 Dec 2023
-                    15:30:00 GMT</p>
-                <p class="text-sm text-gray-500 mt-2">The internet standard for HTTP headers and emails.</p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-700 rounded-md">Database</span>
-                    <h4 class="font-bold text-gray-900">ISO 8601</h4>
-                </div>
-                <p class="text-sm text-gray-600 font-mono bg-white p-2 rounded border border-gray-200">
-                    2023-12-25T15:30:00.000Z</p>
-                <p class="text-sm text-gray-500 mt-2">The international standard. Sortable and unambiguous.</p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="text-xs font-bold px-2 py-1 bg-purple-100 text-purple-700 rounded-md">Human</span>
-                    <h4 class="font-bold text-gray-900">Local Time</h4>
-                </div>
-                <p class="text-sm text-gray-600 font-mono bg-white p-2 rounded border border-gray-200">12/25/2023, 10:30:00
-                    AM</p>
-                <p class="text-sm text-gray-500 mt-2">Adjusted to your browser's specific timezone settings.</p>
-            </div>
-        </div>
 
-        <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mb-6">
-            <span class="p-2 bg-gray-100 rounded-lg text-gray-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                </svg>
-            </span>
-            Reversing the Process (Date to Timestamp)
-        </h3>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-green-200 transition-colors">
+                    <h4 class="font-bold text-gray-900 flex justify-between items-center mb-2">
+                        <span>{{ __tool('unix-to-date', 'content.format_iso_title') }}</span>
+                        <span class="text-xs font-normal px-2 py-1 bg-gray-200 rounded text-gray-600">ISO 8601</span>
+                    </h4>
+                    <code
+                        class="block bg-white border border-gray-200 rounded p-2 mb-2 text-sm text-green-700 font-mono">{{ __tool('unix-to-date', 'content.format_iso_example') }}</code>
+                    <p class="text-sm text-gray-600 mb-0">{{ __tool('unix-to-date', 'content.format_iso_desc') }}</p>
+                </div>
 
-        <div class="space-y-4 mb-12">
-            <!-- JavaScript -->
-            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800">
-                <div class="flex items-center justify-between px-4 py-2 bg-gray-800 border-b border-gray-700">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">JavaScript</span>
-                    <div class="flex gap-1.5">
-                        <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-green-200 transition-colors">
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('unix-to-date', 'content.format_local_title') }}</h4>
+                    <code
+                        class="block bg-white border border-gray-200 rounded p-2 mb-2 text-sm text-green-700 font-mono">{{ __tool('unix-to-date', 'content.format_local_example') }}</code>
+                    <p class="text-sm text-gray-600 mb-0">{{ __tool('unix-to-date', 'content.format_local_desc') }}</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-blue-50 rounded-2xl p-8 border border-blue-100 flex flex-col md:flex-row gap-6 items-center text-center md:text-left">
+                <div class="flex-shrink-0">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                        </svg>
                     </div>
                 </div>
-                <div class="p-4 font-mono text-sm text-gray-300">
-                    <span class="text-purple-400">const</span> date = <span class="text-purple-400">new</span> <span
-                        class="text-yellow-400">Date</span>(<span class="text-green-400">1672531200</span> * <span
-                        class="text-green-400">1000</span>); <span class="text-gray-500">// MS correct</span><br>
-                    console.<span class="text-blue-400">log</span>(date.<span class="text-blue-400">toUTCString</span>());
+                <div>
+                    <h3 class="mt-0 text-blue-900">{{ __tool('unix-to-date', 'content.reverse_title') }}</h3>
+                    <p class="text-blue-800 mb-4">{{ __tool('unix-to-date', 'content.reverse_description') }}</p>
+                    <a href="{{ route('tool.show', ['tool' => 'date-to-unix']) }}"
+                        class="inline-block px-6 py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors no-underline">
+                        {{ __tool('unix-to-date', 'content.reverse_button') }} &rarr;
+                    </a>
                 </div>
             </div>
 
-            <!-- Python -->
-            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800">
-                <div class="flex items-center justify-between px-4 py-2 bg-gray-800 border-b border-gray-700">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Python</span>
-                    <div class="flex gap-1.5">
-                        <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-                    </div>
-                </div>
-                <div class="p-4 font-mono text-sm text-gray-300">
-                    <span class="text-purple-400">import</span> datetime<br>
-                    <span class="text-blue-400">print</span>(datetime.datetime.<span
-                        class="text-yellow-400">utcfromtimestamp</span>(<span class="text-green-400">1672531200</span>))
-                </div>
-            </div>
-
-            <!-- PHP -->
-            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800">
-                <div class="flex items-center justify-between px-4 py-2 bg-gray-800 border-b border-gray-700">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">PHP</span>
-                    <div class="flex gap-1.5">
-                        <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-                    </div>
-                </div>
-                <div class="p-4 font-mono text-sm text-gray-300">
-                    <span class="text-blue-400">echo</span> <span class="text-yellow-400">date</span>(<span
-                        class="text-green-300">'Y-m-d H:i:s'</span>, <span class="text-green-400">1672531200</span>);
-                </div>
+            <div class="mt-12 p-6 border-l-4 border-yellow-400 bg-yellow-50 rounded-r-xl">
+                <h4 class="font-bold text-yellow-800 mt-0">{{ __tool('unix-to-date', 'content.tip_title') }}</h4>
+                <p class="text-yellow-700 mb-0 leading-relaxed">{{ __tool('unix-to-date', 'content.tip_desc') }}</p>
             </div>
         </div>
-
-        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-xl">
-            <h4 class="text-indigo-900 font-bold mb-2">Pro Tip: Seconds vs Milliseconds</h4>
-            <p class="text-indigo-800 mb-0">
-                If your timestamp has <strong>13 digits</strong> (e.g., 1672531200000), it includes milliseconds.
-                Standard Unix timestamps have <strong>10 digits</strong> (seconds). Always multiply standard timestamps by
-                1000 when feeding them into JavaScript's <code>Date()</code> constructor.
-            </p>
-        </div>
-
     </article>
 
     @push('scripts')
         <script>
-            function useCurrent() {
-                document.getElementById('tsInput').value = Math.floor(Date.now() / 1000);
-                convert();
+            function setInputToNow() {
+                document.getElementById('unixInput').value = Math.floor(Date.now() / 1000);
+                convertUnix();
             }
 
-            function convert() {
-                const val = document.getElementById('tsInput').value;
-                if (!val) return;
+            function convertUnix() {
+                let input = document.getElementById('unixInput').value.trim();
+                if (!input) return;
 
-                const date = new Date(val * 1000);
-                document.getElementById('outGmt').textContent = date.toUTCString();
-                document.getElementById('outLocal').textContent = date.toLocaleString();
-                document.getElementById('outIso').textContent = date.toISOString();
-                document.getElementById('result').classList.remove('hidden');
+                // Simple heuristic: if length > 11, assume ms and warn (or handle)
+                // Using standard Date constructor
+                let ts = parseInt(input);
+
+                // If timestamp is likely seconds (less than 12 digits, around year 3000), multiply by 1000
+                // Because JS Date uses milliseconds
+                if (input.length <= 10) {
+                    ts *= 1000;
+                }
+
+                const date = new Date(ts);
+
+                if (isNaN(date.getTime())) {
+                    alert('Invalid Timestamp');
+                    return;
+                }
+
+                document.getElementById('resGmt').innerText = date.toUTCString();
+                document.getElementById('resLocal').innerText = date.toLocaleString();
+                document.getElementById('resIso').innerText = date.toISOString();
+
+                document.getElementById('resultContainer').classList.remove('hidden');
             }
         </script>
     @endpush

@@ -1,393 +1,274 @@
 @extends('layouts.app')
 
-@section('title', 'Epoch Time Converter - Unix Timestamp Conversion')
-@section('meta_description', 'Free online Epoch Time Converter. Convert Unix timestamps to human-readable dates and vice versa. View the current epoch time instantly.')
+@section('title', __tool('epoch-time-converter', 'seo.title'))
+@section('meta_description', __tool('epoch-time-converter', 'seo.description'))
 
 @section('content')
     <x-tool-hero :tool="$tool" />
 
-    <!-- Current Epoch Hero -->
-    <div
-        class="relative overflow-hidden bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-10 text-center text-white mb-12 shadow-2xl">
-        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-        <div class="relative z-10">
-            <h2 class="text-sm font-bold uppercase tracking-widest text-indigo-100 mb-4">Current Unix Epoch Time</h2>
-            <div class="text-5xl sm:text-7xl font-mono font-bold tracking-tight mb-4 tabular-nums" id="currentEpoch">
-                Loading...</div>
-            <div
-                class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-indigo-50 border border-white/20">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                Seconds since Jan 01 1970 (UTC)
+    {{-- EPOCH CONVERTER SECTION --}}
+    <div class="max-w-7xl mx-auto mb-16 px-4">
+        {{-- Current Epoch Display --}}
+        <div class="text-center mb-12 animate-fade-in-down">
+            <h2 class="text-2xl font-bold text-gray-600 mb-2 tracking-wide uppercase">
+                {{ __tool('epoch-time-converter', 'current_epoch.title') }}
+            </h2>
+            <div id="currentEpoch"
+                class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 tracking-tighter mb-2 font-mono tabular-nums leading-none drop-shadow-sm select-all cursor-pointer hover:scale-105 transition-transform duration-200"
+                title="{{ __tool('epoch-time-converter', 'click_to_copy') }}">
+                {{ time() }}
             </div>
+            <p class="text-gray-500 font-medium">{{ __tool('epoch-time-converter', 'current_epoch.subtitle') }}</p>
         </div>
-    </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-        <!-- Timestamp to Date -->
-        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 flex flex-col h-full">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                        </path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900">Timestamp to Date</h3>
-            </div>
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+            {{-- Timestamp to Date --}}
+            <div class="group relative bg-white rounded-3xl shadow-xl border border-indigo-50 p-8 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-indigo-100 rounded-full mix-blend-multiply opacity-50 blur-3xl -mr-20 -mt-20 group-hover:scale-150 transition-transform duration-700"></div>
+                
+                <h3 class="flex items-center gap-3 text-2xl font-black text-gray-800 mb-6 relative z-10">
+                    <span class="p-3 bg-indigo-600 rounded-xl text-white shadow-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </span>
+                    {{ __tool('epoch-time-converter', 'timestamp_to_date.title') }}
+                </h3>
 
-            <div class="space-y-6 flex-1">
-                <div>
-                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Enter
-                        Timestamp</label>
-                    <div class="flex gap-3">
-                        <input type="number" id="inputTimestamp"
-                            class="flex-1 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:border-indigo-500 focus:ring-indigo-500 font-mono text-lg py-3 px-4 transition-all"
-                            placeholder="1672531200">
+                <div class="space-y-5 relative z-10">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2 ml-1">
+                            {{ __tool('epoch-time-converter', 'timestamp_to_date.label') }}
+                        </label>
+                        <input type="text" id="tsInput"
+                            class="w-full text-xl font-mono text-indigo-700 bg-indigo-50/50 border-2 border-indigo-100 rounded-2xl px-5 py-4 focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all placeholder-indigo-200"
+                            placeholder="{{ __tool('epoch-time-converter', 'timestamp_to_date.placeholder') }}" value="{{ time() }}">
                     </div>
-                </div>
+                    
+                    <button onclick="convertTs()"
+                        class="w-full py-4 px-6 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-indigo-500/30 hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 group/btn">
+                        <span>{{ __tool('epoch-time-converter', 'timestamp_to_date.button') }}</span>
+                        <svg class="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </button>
 
-                <button onclick="convertTimestamp()"
-                    class="w-full bg-indigo-600 text-white py-3.5 rounded-xl font-bold hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2">
-                    <span>Convert to Date</span>
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                        </path>
-                    </svg>
-                </button>
-
-                <div id="tsResult" class="hidden">
-                    <div class="bg-gray-50 rounded-xl border border-gray-200 p-5 space-y-3">
-                        <div
-                            class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 border-b border-gray-200 pb-3 last:border-0 last:pb-0">
-                            <span class="text-xs font-bold text-gray-400 uppercase">GMT / UCT</span>
-                            <span id="resGmt" class="font-mono font-medium text-gray-900 text-right"></span>
+                    <div id="tsResult" class="hidden space-y-3 pt-4 border-t border-gray-100">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">{{ __tool('epoch-time-converter', 'timestamp_to_date.result_gmt') }}</span>
+                            <span id="resGmt" class="font-mono text-gray-800 font-medium text-right sm:text-left"></span>
                         </div>
-                        <div
-                            class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 border-b border-gray-200 pb-3 last:border-0 last:pb-0">
-                            <span class="text-xs font-bold text-indigo-500 uppercase">Your Local Time</span>
-                            <span id="resLocal" class="font-mono font-bold text-indigo-700 text-right"></span>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center p-3 rounded-lg hover:bg-gray-50 transition-colors bg-indigo-50/50">
+                            <span class="text-xs font-bold text-indigo-500 uppercase tracking-wider">{{ __tool('epoch-time-converter', 'timestamp_to_date.result_local') }}</span>
+                            <span id="resLocal" class="font-mono text-indigo-900 font-bold text-right sm:text-left"></span>
                         </div>
-                        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-1">
-                            <span class="text-xs font-bold text-gray-400 uppercase">Relative</span>
-                            <span id="resRelative" class="font-mono font-medium text-gray-600 text-right"></span>
+                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">{{ __tool('epoch-time-converter', 'timestamp_to_date.result_relative') }}</span>
+                            <span id="resRelative" class="text-gray-600 text-sm text-right sm:text-left"></span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Date to Timestamp -->
-        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 flex flex-col h-full">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900">Date to Timestamp</h3>
-            </div>
+            {{-- Date to Timestamp --}}
+            <div class="group relative bg-white rounded-3xl shadow-xl border border-purple-50 p-8 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                 <div class="absolute top-0 right-0 w-40 h-40 bg-purple-100 rounded-full mix-blend-multiply opacity-50 blur-3xl -mr-20 -mt-20 group-hover:scale-150 transition-transform duration-700"></div>
 
-            <div class="space-y-6 flex-1">
-                <div>
-                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Select Date &
-                        Time</label>
-                    <input type="datetime-local" id="inputDate" step="1"
-                        class="w-full rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:border-purple-500 focus:ring-purple-500 font-mono text-lg py-3 px-4 transition-all">
+                <h3 class="flex items-center gap-3 text-2xl font-black text-gray-800 mb-6 relative z-10">
+                    <span class="p-3 bg-purple-600 rounded-xl text-white shadow-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </span>
+                    {{ __tool('epoch-time-converter', 'date_to_timestamp.title') }}
+                </h3>
 
-                    <label class="flex items-center gap-3 mt-4 cursor-pointer group">
-                        <div class="relative">
-                            <input type="checkbox" id="isGmt" class="peer sr-only">
-                            <div
-                                class="w-10 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600">
-                            </div>
+                <div class="space-y-5 relative z-10">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2 ml-1">
+                            {{ __tool('epoch-time-converter', 'date_to_timestamp.label') }}
+                        </label>
+                        <div class="grid grid-cols-3 gap-3 mb-3">
+                            <input type="number" id="year" placeholder="YYYY" class="w-full text-center font-mono rounded-xl border-gray-200 focus:border-purple-500 focus:ring-purple-500 h-12">
+                            <input type="number" id="month" placeholder="MM" class="w-full text-center font-mono rounded-xl border-gray-200 focus:border-purple-500 focus:ring-purple-500 h-12">
+                            <input type="number" id="day" placeholder="DD" class="w-full text-center font-mono rounded-xl border-gray-200 focus:border-purple-500 focus:ring-purple-500 h-12">
                         </div>
-                        <span class="text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors">Treat as
-                            GMT/UTC time</span>
-                    </label>
-                </div>
-
-                <button onclick="convertDate()"
-                    class="w-full bg-purple-600 text-white py-3.5 rounded-xl font-bold hover:bg-purple-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2">
-                    <span>Convert to Timestamp</span>
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                </button>
-
-                <div id="dateResult" class="hidden">
-                    <div
-                        class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100 p-6 text-center">
-                        <span class="text-xs text-purple-600 uppercase font-bold tracking-widest mb-2 block">Unix
-                            Timestamp</span>
-                        <div class="text-3xl font-mono font-bold text-gray-900 tracking-tight select-all" id="resEpoch">
+                        <div class="grid grid-cols-3 gap-3">
+                            <input type="number" id="hour" placeholder="HH" class="w-full text-center font-mono rounded-xl border-gray-200 focus:border-purple-500 focus:ring-purple-500 h-12">
+                            <input type="number" id="minute" placeholder="MM" class="w-full text-center font-mono rounded-xl border-gray-200 focus:border-purple-500 focus:ring-purple-500 h-12">
+                            <input type="number" id="second" placeholder="SS" class="w-full text-center font-mono rounded-xl border-gray-200 focus:border-purple-500 focus:ring-purple-500 h-12">
                         </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="isGmt" class="rounded border-gray-300 text-purple-600 focus:ring-purple-500 w-5 h-5">
+                        <label for="isGmt" class="text-sm font-medium text-gray-700 cursor-pointer select-none">{{ __tool('epoch-time-converter', 'date_to_timestamp.checkbox') }}</label>
+                    </div>
+
+                    <button onclick="convertDate()"
+                        class="w-full py-4 px-6 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-purple-500/30 hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 group/btn">
+                        <span>{{ __tool('epoch-time-converter', 'date_to_timestamp.button') }}</span>
+                         <svg class="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                    </button>
+
+                    <div id="dateResult" class="hidden pt-4 border-t border-gray-100 text-center animate-fade-in-up">
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">{{ __tool('epoch-time-converter', 'date_to_timestamp.result_title') }}</div>
+                        <div id="resEpoch" class="text-4xl font-mono font-black text-gray-800 tracking-tight cursor-pointer hover:text-purple-600 transition-colors" title="Click to Copy"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- SEO Content -->
-    <article class="prose prose-lg prose-indigo max-w-none">
-        <div class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 rounded-3xl p-10 text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">The Pulse of Digital Time</h2>
-            <p class="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
-                Unix Time is the universal clock of the internet. It's a single, ticking number that connects every server,
-                database, and smartphone on Earth to the same precise moment in history.
-            </p>
-        </div>
+    {{-- SEO Content --}}
+    <article class="max-w-4xl mx-auto prose prose-lg prose-indigo mb-20 px-4">
+        <div class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 font-display">{{ __tool('epoch-time-converter', 'content.hero_title') }}</h2>
+            <p class="lead text-gray-600">{{ __tool('epoch-time-converter', 'content.hero_description') }}</p>
 
-        <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mb-8">
-            <span class="p-2 bg-indigo-100 rounded-lg text-indigo-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
-                    </path>
-                </svg>
-            </span>
-            Why Computers Count in Seconds
-        </h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                </div>
-                <h4 class="text-lg font-bold text-gray-900 mb-2">Efficiency</h4>
-                <p class="text-gray-600 text-sm">Validating "October 5th" requires complex parsing rules. Validating
-                    "1696516200" is just checking an integer. Speed matters.</p>
-            </div>
-
-            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                        </path>
-                    </svg>
-                </div>
-                <h4 class="text-lg font-bold text-gray-900 mb-2">Universal</h4>
-                <p class="text-gray-600 text-sm">It's timezone agnostic. 1696516200 is the same distinct moment in time
-                    whether you are in Tokyo, London, or New York.</p>
-            </div>
-
-            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 mb-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z">
-                        </path>
-                    </svg>
-                </div>
-                <h4 class="text-lg font-bold text-gray-900 mb-2">Math-Ready</h4>
-                <p class="text-gray-600 text-sm">Calculating duration is simple subtraction:
-                    <code>End - Start = Duration</code>. No need to worry about days in a month.</p>
-            </div>
-        </div>
-
-        <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mb-6">
-            <span class="p-2 bg-gray-100 rounded-lg text-gray-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                </svg>
-            </span>
-            Current Epoch in Every Language
-        </h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-            <!-- JS -->
-            <div
-                class="group relative bg-gray-900 rounded-2xl p-5 border border-gray-800 hover:border-indigo-500 transition-colors">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">JavaScript</span>
-                    <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-                </div>
-                <code class="font-mono text-white text-sm">Math.floor(Date.now() / 1000)</code>
-            </div>
-
-            <!-- Python -->
-            <div
-                class="group relative bg-gray-900 rounded-2xl p-5 border border-gray-800 hover:border-yellow-500 transition-colors">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs font-bold text-yellow-400 uppercase tracking-wider">Python</span>
-                    <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
-                </div>
-                <code class="font-mono text-white text-sm">import time; int(time.time())</code>
-            </div>
-
-            <!-- PHP -->
-            <div
-                class="group relative bg-gray-900 rounded-2xl p-5 border border-gray-800 hover:border-purple-500 transition-colors">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">PHP</span>
-                    <span class="w-2 h-2 rounded-full bg-purple-500"></span>
-                </div>
-                <code class="font-mono text-white text-sm">time();</code>
-            </div>
-
-            <!-- Swift -->
-            <div
-                class="group relative bg-gray-900 rounded-2xl p-5 border border-gray-800 hover:border-orange-500 transition-colors">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs font-bold text-orange-400 uppercase tracking-wider">Swift</span>
-                    <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-                </div>
-                <code class="font-mono text-white text-sm">Int(Date().timeIntervalSince1970)</code>
-            </div>
-        </div>
-
-        <div class="bg-amber-50 rounded-2xl p-8 mb-12 border-l-4 border-amber-500">
-            <h3 class="text-xl font-bold text-amber-900 mb-4 flex items-center gap-2">
-                <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
-                    </path>
-                </svg>
-                The 2038 Apocalypse?
+            <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mt-12 mb-6">
+                <span class="p-2 bg-indigo-100/50 rounded-lg text-indigo-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></span>
+                {{ __tool('epoch-time-converter', 'content.why_title') }}
             </h3>
-            <p class="text-amber-800 leading-relaxed">
-                On <strong>January 19, 2038 at 03:14:07 UTC</strong>, older 32-bit systems will run out of numbers to count
-                seconds. They will overflow and think it is December 13, 1901. Most of the modern web (including 64-bit
-                systems) is already safe, but many legacy embedded systems still need to be patched.
-            </p>
-        </div>
-
-        <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mb-6">
-            <span class="p-2 bg-gray-100 rounded-lg text-gray-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                    </path>
-                </svg>
-            </span>
-            Common Questions
-        </h3>
-
-        <div class="space-y-4">
-            <details
-                class="group bg-white rounded-2xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm hover:shadow-md transition-all">
-                <summary class="flex justify-between items-center font-bold text-gray-900">
-                    Does Unix Time account for Leap Seconds?
-                    <span class="transition group-open:rotate-180">
-                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </span>
-                </summary>
-                <div class="text-gray-600 mt-4 leading-relaxed group-open:animate-fadeIn">
-                    No. Unix time ignores leap seconds. It treats every day as exactly 86,400 seconds long. When a leap
-                    second occurs, the timestamp technically "repeats" a second or stalls, allowing the atomic clocks to
-                    sync up with Earth's rotation.
+            
+            <div class="grid md:grid-cols-3 gap-6 not-prose mb-12">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mb-3 font-bold">1</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('epoch-time-converter', 'content.efficiency_title') }}</h4>
+                    <p class="text-sm text-gray-600">{{ __tool('epoch-time-converter', 'content.efficiency_desc') }}</p>
                 </div>
-            </details>
-
-            <details
-                class="group bg-white rounded-2xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm hover:shadow-md transition-all">
-                <summary class="flex justify-between items-center font-bold text-gray-900">
-                    Why does it start from 1970?
-                    <span class="transition group-open:rotate-180">
-                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </span>
-                </summary>
-                <div class="text-gray-600 mt-4 leading-relaxed group-open:animate-fadeIn">
-                    It was an arbitrary date chosen by Unix engineers (Ken Thompson and Dennis Ritchie) as a convenient
-                    starting point for the new operating system they were building at Bell Labs. It was appropriately the
-                    start of a new decade.
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                     <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-3 font-bold">2</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('epoch-time-converter', 'content.universal_title') }}</h4>
+                    <p class="text-sm text-gray-600">{{ __tool('epoch-time-converter', 'content.universal_desc') }}</p>
                 </div>
-            </details>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                     <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 mb-3 font-bold">3</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('epoch-time-converter', 'content.math_title') }}</h4>
+                    <p class="text-sm text-gray-600">{{ __tool('epoch-time-converter', 'content.math_desc') }}</p>
+                </div>
+            </div>
+
+            <h3 class="font-bold text-gray-900">{{ __tool('epoch-time-converter', 'content.code_title') }}</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-sm font-mono not-prose my-6">
+                <div class="bg-gray-900 text-gray-300 p-4 rounded-xl flex justify-between">
+                    <span class="text-pink-400">PHP</span>
+                    <span>time()</span>
+                </div>
+                 <div class="bg-gray-900 text-gray-300 p-4 rounded-xl flex justify-between">
+                    <span class="text-yellow-400">JavaScript</span>
+                    <span>Math.floor(Date.now() / 1000)</span>
+                </div>
+                 <div class="bg-gray-900 text-gray-300 p-4 rounded-xl flex justify-between">
+                    <span class="text-blue-400">Python</span>
+                    <span>import time; time.time()</span>
+                </div>
+                 <div class="bg-gray-900 text-gray-300 p-4 rounded-xl flex justify-between">
+                    <span class="text-green-400">Java</span>
+                    <span>System.currentTimeMillis() / 1000</span>
+                </div>
+                <div class="bg-gray-900 text-gray-300 p-4 rounded-xl flex justify-between">
+                    <span class="text-cyan-400">Go</span>
+                    <span>time.Now().Unix()</span>
+                </div>
+                <div class="bg-gray-900 text-gray-300 p-4 rounded-xl flex justify-between">
+                    <span class="text-red-400">Ruby</span>
+                    <span>Time.now.to_i</span>
+                </div>
+            </div>
+
+            <div class="bg-red-50 rounded-2xl p-6 border-l-4 border-red-500 my-8">
+                <h4 class="text-red-800 font-bold flex items-center gap-2 mb-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    {{ __tool('epoch-time-converter', 'content.apocalypse_title') }}
+                </h4>
+                <p class="text-red-700 text-sm mb-0">
+                    {{ __tool('epoch-time-converter', 'content.apocalypse_desc') }}
+                </p>
+            </div>
+
+             <h3 class="font-bold text-gray-900">{{ __tool('epoch-time-converter', 'content.faq_title') }}</h3>
+             <div class="space-y-4 not-prose">
+                <details class="bg-white rounded-xl shadow-sm border border-gray-100 group">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer font-bold text-gray-800">
+                        {{ __tool('epoch-time-converter', 'faq.q1') }}
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600 leading-relaxed">
+                        {{ __tool('epoch-time-converter', 'faq.a1') }}
+                    </div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm border border-gray-100 group">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer font-bold text-gray-800">
+                        {{ __tool('epoch-time-converter', 'faq.q2') }}
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-gray-600 leading-relaxed">
+                        {{ __tool('epoch-time-converter', 'faq.a2') }}
+                    </div>
+                </details>
+             </div>
         </div>
     </article>
-    </div>
 
     @push('scripts')
         <script>
-            // Update Current Epoch
+            // Live Update
             setInterval(() => {
-                document.getElementById('currentEpoch').textContent = Math.floor(Date.now() / 1000);
+                document.getElementById('currentEpoch').innerText = Math.floor(Date.now() / 1000);
             }, 1000);
-            document.getElementById('currentEpoch').textContent = Math.floor(Date.now() / 1000);
 
-            // Pre-fill date
-            const now = new Date();
-            now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
-            document.getElementById('inputDate').value = now.toISOString().slice(0, 19);
+            function convertTs() {
+                const ts = document.getElementById('tsInput').value.trim();
+                const resGmt = document.getElementById('resGmt');
+                const resLocal = document.getElementById('resLocal');
+                const resRelative = document.getElementById('resRelative');
+                const resultDiv = document.getElementById('tsResult');
 
-            // Convert Timestamp -> Date
-            function convertTimestamp() {
-                const tsInput = document.getElementById('inputTimestamp').value;
-                if (!tsInput) return;
-
-                let ts = parseInt(tsInput);
-                // Auto-detect milliseconds (if > 100000000000, likely ms)
-                if (ts > 100000000000 && ts < 10000000000000) {
-                    // It's likely ms, but user expects seconds for unix usually. 
-                    // Standard unix is seconds. Let's assume input is seconds unless user specifies?
-                    // Simple logic: Use as seconds.
-                }
+                if (!ts) return;
 
                 const date = new Date(ts * 1000);
+                
+                resGmt.innerText = date.toUTCString();
+                resLocal.innerText = date.toLocaleString();
+                
+                // Relative time logic (simple version)
+                const diff = Math.floor(Date.now()/1000) - ts;
+                let relText = "";
+                if(diff < 0) relText = "In " + Math.abs(diff) + " seconds";
+                else if(diff < 60) relText = diff + " seconds ago";
+                else if(diff < 3600) relText = Math.floor(diff/60) + " minutes ago";
+                else if(diff < 86400) relText = Math.floor(diff/3600) + " hours ago";
+                else relText = Math.floor(diff/86400) + " days ago";
+                
+                resRelative.innerText = relText;
 
-                document.getElementById('resGmt').textContent = date.toUTCString();
-                document.getElementById('resLocal').textContent = date.toLocaleString();
-                document.getElementById('resRelative').textContent = getRelativeTime(ts);
-
-                document.getElementById('tsResult').classList.remove('hidden');
+                resultDiv.classList.remove('hidden');
             }
 
-            // Convert Date -> Timestamp
             function convertDate() {
-                const dateStr = document.getElementById('inputDate').value;
+                const y = document.getElementById('year').value;
+                const m = document.getElementById('month').value - 1; // 0-indexed
+                const d = document.getElementById('day').value;
+                const h = document.getElementById('hour').value || 0;
+                const min = document.getElementById('minute').value || 0;
+                const s = document.getElementById('second').value || 0;
                 const isGmt = document.getElementById('isGmt').checked;
 
-                if (!dateStr) return;
-
-                const d = new Date(dateStr);
-                let epoch = 0;
-
-                if (isGmt) {
-                    // If input is meant to be GMT, we need to treat the string as UTC
-                    // dateStr is "YYYY-MM-DDTHH:MM:SS"
-                    // new Date(dateStr) parses as Local
-                    // We add the offset back to get the UTC value of that wall time
-                    const offset = d.getTimezoneOffset() * 60000;
-                    epoch = Math.floor((d.getTime() - offset) / 1000); // Wait, if I want 12:00 UTC, and I'm in +5. "12:00" parses as 12:00 local (07:00 UTC).
-                    // I want it to be 12:00 UTC. So I need to add 5 hours to the timestamp?
-                    // Actually easier: Date.UTC(...)
-                    const parts = dateStr.split(/[^0-9]/);
-                    // Date.UTC(year, monthIndex, day, hour, minute, second)
-                    // Note: month is 0-indexed
-                    epoch = Math.floor(Date.UTC(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5] || 0) / 1000);
+                let date;
+                if(isGmt) {
+                    date = new Date(Date.UTC(y, m, d, h, min, s));
                 } else {
-                    epoch = Math.floor(d.getTime() / 1000);
+                    date = new Date(y, m, d, h, min, s);
                 }
 
-                document.getElementById('resEpoch').textContent = epoch;
+                const epoch = Math.floor(date.getTime() / 1000);
+                document.getElementById('resEpoch').innerText = epoch;
                 document.getElementById('dateResult').classList.remove('hidden');
             }
 
-            function getRelativeTime(ts) {
-                const now = Math.floor(Date.now() / 1000);
-                const diff = now - ts;
-                const absDiff = Math.abs(diff);
-                const suffix = diff > 0 ? 'ago' : 'from now';
-
-                if (absDiff < 60) return `${absDiff} seconds ${suffix}`;
-                if (absDiff < 3600) return `${Math.floor(absDiff / 60)} minutes ${suffix}`;
-                if (absDiff < 86400) return `${Math.floor(absDiff / 3600)} hours ${suffix}`;
-                return `${Math.floor(absDiff / 86400)} days ${suffix}`;
-            }
+            // Init inputs with current date
+            const now = new Date();
+            document.getElementById('year').value = now.getFullYear();
+            document.getElementById('month').value = now.getMonth() + 1;
+            document.getElementById('day').value = now.getDate();
+            document.getElementById('hour').value = now.getHours();
+            document.getElementById('minute').value = now.getMinutes();
+            document.getElementById('second').value = now.getSeconds();
         </script>
     @endpush
 @endsection

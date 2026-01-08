@@ -1,225 +1,155 @@
 @extends('layouts.app')
 
-@section('title', 'Date to Unix Timestamp - Convert Date to Epoch')
-@section('meta_description', 'Convert Date and Time to Unix Timestamp instantly. Supports local time and UTC input. Free online Date to Epoch converter.')
+@section('title', __tool('date-to-unix', 'seo.title'))
+@section('meta_description', __tool('date-to-unix', 'seo.description'))
 
 @section('content')
-    <x-tool-hero :tool="$tool" title="Date to Unix Timestamp"
-        description="Convert any date and time to a Unix Epoch timestamp." icon="clock" />
+    <x-tool-hero :tool="$tool" />
 
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 sm:p-8 mb-8">
-        <div class="max-w-xl mx-auto space-y-6">
-            <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Select Date & Time</label>
-                <input type="datetime-local" id="dateInput" step="1"
-                    class="w-full rounded-lg border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 text-lg">
-                <div class="mt-4 flex items-center gap-6 mb-6">
-                    <label class="inline-flex items-center">
-                        <input type="radio" name="tzOption" id="tzLocal" class="text-indigo-600 focus:ring-indigo-500"
-                            checked onchange="convert()">
-                        <span class="ml-2 text-gray-700">Local Time</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                        <input type="radio" name="tzOption" id="tzUtc" class="text-indigo-600 focus:ring-indigo-500"
-                            onchange="convert()">
-                        <span class="ml-2 text-gray-700">UTC Mode</span>
-                    </label>
-                </div>
+    {{-- CONVERTER SECTION --}}
+    <div class="max-w-4xl mx-auto mb-16 px-4">
+        <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 md:p-12 overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-100 rounded-full mix-blend-multiply opacity-50 blur-3xl -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply opacity-50 blur-3xl -ml-32 -mb-32"></div>
 
-                <button onclick="convert()"
-                    class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 font-medium transition shadow-sm">Get
-                    Timestamp</button>
+            <div class="relative z-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </span>
+                    {{ __tool('date-to-unix', 'form.title') }}
+                </h2>
 
-                <div id="result" class="hidden text-center pt-6 border-t border-gray-100">
-                    <p class="text-sm text-gray-500 uppercase font-bold tracking-wide mb-2">Unix Timestamp</p>
-                    <div class="text-4xl font-mono font-bold text-indigo-600 select-all" id="outTs"></div>
-                    <p class="text-gray-400 text-sm mt-2">seconds since historic epoch</p>
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                             <label class="block text-sm font-semibold text-gray-700">{{ __tool('date-to-unix', 'form.date_label') }}</label>
+                             <input type="date" id="dateInput" class="w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 py-3 px-4">
+                        </div>
+                        <div class="space-y-2">
+                             <label class="block text-sm font-semibold text-gray-700">{{ __tool('date-to-unix', 'form.time_label') }}</label>
+                             <div class="flex gap-2">
+                                <input type="time" id="timeInput" step="1" class="w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 py-3 px-4">
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-6 p-4 bg-gray-50 rounded-xl">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="radio" name="mode" value="local" checked class="w-5 h-5 text-indigo-600 focus:ring-indigo-500 border-gray-300">
+                            <span class="font-medium text-gray-700">{{ __tool('date-to-unix', 'form.local_time') }}</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="radio" name="mode" value="utc" class="w-5 h-5 text-indigo-600 focus:ring-indigo-500 border-gray-300">
+                            <span class="font-medium text-gray-700">{{ __tool('date-to-unix', 'form.utc_mode') }}</span>
+                        </label>
+                    </div>
+
+                    <button onclick="convertToUnix()" class="w-full py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                        {{ __tool('date-to-unix', 'form.button') }}
+                    </button>
+
+                    <div id="resultContainer" class="hidden pt-8 border-t border-gray-100 text-center animate-fade-in-up">
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">{{ __tool('date-to-unix', 'form.result_title') }}</p>
+                        <div id="unixResult" class="text-5xl md:text-6xl font-black text-gray-900 font-mono tracking-tight mb-2 select-all cursor-pointer hover:text-indigo-600 transition-colors" title="{{ __tool('date-to-unix', 'click_to_copy') }}"></div>
+                        <p class="text-gray-500">{{ __tool('date-to-unix', 'form.result_subtitle') }}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- SEO Content -->
-    <article class="prose prose-lg prose-indigo max-w-none">
+    {{-- CONTENT SECTION --}}
+    <article class="max-w-4xl mx-auto prose prose-lg prose-indigo mb-20 px-4">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 font-display">{{ __tool('date-to-unix', 'content.hero_title') }}</h2>
+            <p class="lead text-gray-600">{{ __tool('date-to-unix', 'content.hero_description') }}</p>
 
-        <x-tool-hero :tool="$tool" />
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">Generate the Epoch</h2>
-                <p class="text-lg text-gray-400 leading-relaxed max-w-2xl">
-                    Create precise timestamps for databases, APIs, and logs. Whether you need the current second or a
-                    historical date from 1970, we convert your human time into machine-readable integers instantly.
-                </p>
+            <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mt-12 mb-6">
+                <span class="p-2 bg-purple-100 rounded-lg text-purple-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></span>
+                {{ __tool('date-to-unix', 'content.mode_title') }}
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-8 not-prose mb-12">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <h4 class="font-bold text-indigo-700 mb-2">{{ __tool('date-to-unix', 'content.local_title') }}</h4>
+                    <p class="text-sm text-gray-600">{{ __tool('date-to-unix', 'content.local_desc') }}</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <h4 class="font-bold text-purple-700 mb-2">{{ __tool('date-to-unix', 'content.utc_title') }}</h4>
+                    <p class="text-sm text-gray-600">{{ __tool('date-to-unix', 'content.utc_desc') }}</p>
+                </div>
             </div>
+
+            <h3 class="font-bold text-gray-900">{{ __tool('date-to-unix', 'content.snippets_title') }}</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-sm font-mono not-prose my-6">
+                <div class="bg-gray-900 text-gray-300 p-4 rounded-xl">
+                    <div class="text-xs text-gray-500 mb-1">PHP</div>
+                    strtotime('2023-10-05 14:30:00');
+                </div>
+                <div class="bg-gray-900 text-gray-300 p-4 rounded-xl">
+                    <div class="text-xs text-gray-500 mb-1">JavaScript</div>
+                    Math.floor(new Date('2023-10-05').getTime() / 1000)
+                </div>
+                <div class="bg-gray-900 text-gray-300 p-4 rounded-xl">
+                    <div class="text-xs text-gray-500 mb-1">Python</div>
+                    int(datetime(2023, 10, 5, 14, 30).timestamp())
+                </div>
+                 <div class="bg-gray-900 text-gray-300 p-4 rounded-xl">
+                    <div class="text-xs text-gray-500 mb-1">MySQL</div>
+                    SELECT UNIX_TIMESTAMP('2023-10-05 14:30:00');
+                </div>
+            </div>
+
+             <h3 class="font-bold text-gray-900 mt-12 mb-6">{{ __tool('date-to-unix', 'content.use_cases_title') }}</h3>
+             <ul class="space-y-3 text-gray-600">
+                <li class="flex gap-3">
+                    <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span>{{ __tool('date-to-unix', 'content.use_case_1') }}</span>
+                </li>
+                <li class="flex gap-3">
+                    <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span>{{ __tool('date-to-unix', 'content.use_case_2') }}</span>
+                </li>
+                <li class="flex gap-3">
+                    <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span>{{ __tool('date-to-unix', 'content.use_case_3') }}</span>
+                </li>
+             </ul>
         </div>
-
-        <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mb-8">
-            <span class="p-2 bg-indigo-100 rounded-lg text-indigo-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-            </span>
-            Local vs. UTC Mode
-        </h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div
-                class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-50 rounded-bl-full -mr-4 -mt-4 z-0"></div>
-                <div class="relative z-10">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div
-                            class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 font-bold">
-                            L</div>
-                        <h4 class="text-xl font-bold text-gray-900">Local Time</h4>
-                    </div>
-                    <p class="text-gray-600">
-                        Uses your computer's current timezone offset. If you select "12:00 PM" and you are in New York, we
-                        calculate the timestamp for 12:00 PM EST (which is 17:00 UTC).
-                    </p>
-                </div>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -mr-4 -mt-4 z-0"></div>
-                <div class="relative z-10">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div
-                            class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 font-bold">
-                            U</div>
-                        <h4 class="text-xl font-bold text-gray-900">UTC Mode</h4>
-                    </div>
-                    <p class="text-gray-600">
-                        Treats your input strictly as Universal Time. If you select "12:00 PM", the result is the timestamp
-                        for exactly 12:00:00 UTC, ignoring your physical location.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mb-6">
-            <span class="p-2 bg-gray-100 rounded-lg text-gray-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                </svg>
-            </span>
-            Quick Code Snippets
-        </h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-            <!-- JS -->
-            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800">
-                <div class="flex items-center justify-between px-4 py-2 bg-gray-800 border-b border-gray-700">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">JavaScript (Current)</span>
-                    <div class="flex gap-1.5">
-                        <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-                    </div>
-                </div>
-                <div class="p-4 font-mono text-sm text-gray-300">
-                    Math.<span class="text-blue-400">floor</span>(Date.<span class="text-blue-400">now</span>() / 1000)
-                </div>
-            </div>
-
-            <!-- Python -->
-            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800">
-                <div class="flex items-center justify-between px-4 py-2 bg-gray-800 border-b border-gray-700">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Python (Current)</span>
-                    <div class="flex gap-1.5">
-                        <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-                    </div>
-                </div>
-                <div class="p-4 font-mono text-sm text-gray-300">
-                    <span class="text-purple-400">import</span> time; <span class="text-blue-400">int</span>(time.<span
-                        class="text-blue-400">time</span>())
-                </div>
-            </div>
-
-            <!-- Go -->
-            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800">
-                <div class="flex items-center justify-between px-4 py-2 bg-gray-800 border-b border-gray-700">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Golang</span>
-                    <div class="flex gap-1.5">
-                        <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-                    </div>
-                </div>
-                <div class="p-4 font-mono text-sm text-gray-300">
-                    time.<span class="text-blue-400">Now</span>().<span class="text-yellow-400">Unix</span>()
-                </div>
-            </div>
-
-            <!-- SQL -->
-            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800">
-                <div class="flex items-center justify-between px-4 py-2 bg-gray-800 border-b border-gray-700">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">MySQL</span>
-                    <div class="flex gap-1.5">
-                        <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-                    </div>
-                </div>
-                <div class="p-4 font-mono text-sm text-gray-300">
-                    <span class="text-purple-400">SELECT</span> UNIX_TIMESTAMP();
-                </div>
-            </div>
-        </div>
-
-        <h3>Common Use Cases</h3>
-        <ul class="space-y-3">
-            <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span><strong>API Authentication:</strong> Generating nonces or expiry times for HMAC signatures.</span>
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span><strong>Database Indexing:</strong> Storing `created_at` as an integer is often faster for range
-                    queries than DATETIME columns.</span>
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span><strong>File Versioning:</strong> Appending timestamps to filenames (e.g., `backup_16788822.zip`)
-                    guarantees unique chronological naming.</span>
-            </li>
-        </ul>
     </article>
 
     @push('scripts')
         <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const now = new Date();
-                now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
-                document.getElementById('dateInput').value = now.toISOString().slice(0, 19);
-            });
+            // Set default to now
+            const now = new Date();
+            document.getElementById('dateInput').valueAsDate = now;
+            document.getElementById('timeInput').value = now.toTimeString().slice(0, 8);
 
-            function convert() {
-                const val = document.getElementById('dateInput').value;
-                if (!val) return;
+            function convertToUnix() {
+                const datePart = document.getElementById('dateInput').value;
+                const timePart = document.getElementById('timeInput').value;
+                const mode = document.querySelector('input[name="mode"]:checked').value;
 
-                const isUtc = document.getElementById('tzUtc').checked;
-                let ts = 0;
+                if(!datePart || !timePart) return;
 
-                if (isUtc) {
-                    const parts = val.split(/[^0-9]/);
-                    // Date.UTC inputs: Y, M-1, D, H, m, s
-                    ts = Math.floor(Date.UTC(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5] || 0) / 1000);
+                const fullString = `${datePart}T${timePart}`;
+                let dateObj;
+
+                if (mode === 'utc') {
+                    dateObj = new Date(fullString + 'Z');
                 } else {
-                    ts = Math.floor(new Date(val).getTime() / 1000);
+                    dateObj = new Date(fullString);
                 }
 
-                document.getElementById('outTs').textContent = ts;
-                document.getElementById('result').classList.remove('hidden');
+                if (isNaN(dateObj.getTime())) {
+                    alert('Invalid Date');
+                    return;
+                }
+
+                const unix = Math.floor(dateObj.getTime() / 1000);
+                document.getElementById('unixResult').innerText = unix;
+                document.getElementById('resultContainer').classList.remove('hidden');
             }
         </script>
     @endpush
