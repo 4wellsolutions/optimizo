@@ -1,22 +1,11 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title ?? $tool->name)
-@section('meta_description', $tool->meta_description ?? $tool->description)
+@section('title', __tool('google-sheets-to-excel', 'seo.title', $tool->meta_title ?? $tool->name))
+@section('meta_description', __tool('google-sheets-to-excel', 'seo.description', $tool->meta_description ?? $tool->description))
 
 @section('content')
     <x-tool-hero :tool="$tool" />
-            <h1 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight tracking-tight">
-                {{ $tool->name }}
-            </h1>
-            <p class="text-xl md:text-2xl text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                {{ $tool->description }}
-            </p>
-            <div class="mt-8">
-                @include('components.hero-actions')
-            </div>
-        </div>
-    </div>
-
+            
     <!-- Tool Interface Section -->
     <div class="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-gray-100 mb-16">
         <div class="text-center mb-8">

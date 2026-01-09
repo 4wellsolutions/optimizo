@@ -1,21 +1,10 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title ?? $tool->name)
-@section('meta_description', $tool->meta_description ?? $tool->description)
+@section('title', __tool('excel-to-csv', 'seo.title', $tool->meta_title ?? $tool->name))
+@section('meta_description', __tool('excel-to-csv', 'seo.description', $tool->meta_description ?? $tool->description))
 
 @section('content')
     <x-tool-hero :tool="$tool" />
-            <h1 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight tracking-tight">
-                {{ $tool->name }}
-            </h1>
-            <p class="text-xl md:text-2xl text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                {{ $tool->description }}
-            </p>
-            <div class="mt-8">
-                @include('components.hero-actions')
-            </div>
-        </div>
-    </div>
 
     <!-- Tool Interface Section -->
     <div class="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-gray-100 mb-16">
@@ -74,30 +63,81 @@
                         <span class="text-gray-900 font-medium">Tab</span>
                     </label>
                 </div>
+    <div class="max-w-4xl mx-auto mb-16 px-4">
+        <div class="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-gray-100">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Upload Excel File</h2>
+                <p class="text-lg text-gray-600">Drag & drop XLS or XLSX to convert to CSV</p>
             </div>
 
-            <div class="text-center">
-                <button type="submit"
-                    class="w-full md:w-auto min-w-[300px] inline-flex items-center justify-center px-10 py-5 border border-transparent text-xl font-bold rounded-2xl shadow-xl text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 focus:outline-none focus:ring-4 focus:ring-emerald-500/50 transform hover:-translate-y-1 transition-all">
-                    Convert to CSV
-                    <!-- Icon: Arrow Right -->
-                    <svg class="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                </button>
-            </div>
-        </form>
+            <form action="{{ route('utility.excel-to-csv.convert') }}" method="POST" enctype="multipart/form-data"
+                class="space-y-8">
+                @csrf
+
+                <div class="border-4 border-dashed border-emerald-100 rounded-3xl p-10 text-center hover:border-emerald-300 hover:bg-emerald-50 transition-all cursor-pointer relative group bg-gray-50/50"
+                    id="dropzone">
+                    <input type="file" name="file" id="file"
+                        class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" accept=".xls,.xlsx">
+                    <div class="space-y-6 pointer-events-none">
+                        <div
+                            class="inline-flex items-center justify-center w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full group-hover:scale-110 transition-transform">
+                            <!-- Icon: Cloud Upload -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold text-gray-700">Click to upload or drag and drop</p>
+                            <p class="text-base text-gray-500 mt-2">Excel files (XLS, XLSX)</p>
+                        </div>
+                    </div>
+                    <div id="file-name" class="mt-4 text-emerald-600 font-medium hidden text-lg"></div>
+                </div>
+
+                <!-- Options -->
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                    <label class="block text-gray-700 font-bold mb-2">CSV Delimiter</label>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="delimiter" value="," checked
+                                class="text-emerald-600 focus:ring-emerald-500 w-5 h-5">
+                            <span class="text-gray-900 font-medium">Comma (,)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="delimiter" value=";"
+                                class="text-emerald-600 focus:ring-emerald-500 w-5 h-5">
+                            <span class="text-gray-900 font-medium">Semicolon (;)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="delimiter" value="|"
+                                class="text-emerald-600 focus:ring-emerald-500 w-5 h-5">
+                            <span class="text-gray-900 font-medium">Pipe (|)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="delimiter" value="tab"
+                                class="text-emerald-600 focus:ring-emerald-500 w-5 h-5">
+                            <span class="text-gray-900 font-medium">Tab</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit"
+                        class="w-full md:w-auto min-w-[300px] inline-flex items-center justify-center px-10 py-5 border border-transparent text-xl font-bold rounded-2xl shadow-xl text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 focus:outline-none focus:ring-4 focus:ring-emerald-500/50 transform hover:-translate-y-1 transition-all">
+                        Convert to CSV
+                        <!-- Icon: Arrow Right -->
+                        <svg class="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- SEO Content Section -->
-    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 mb-12">
-        <article class="prose prose-lg md:prose-xl max-w-none text-gray-600">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">Convert Excel to CSV Online</h2>
-                <p class="text-xl leading-relaxed text-gray-600">
-                    The fastest way to extract raw data from your spreadsheets. Convert Microsoft Excel files (XLS, XLSX) to
-                    standard CSV format for database imports, analysis, and interoperability.
                 </p>
             </div>
 

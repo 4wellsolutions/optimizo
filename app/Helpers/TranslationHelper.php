@@ -55,6 +55,11 @@ if (!function_exists('__tool')) {
             'unix' => 'time',
             'local' => 'time',
             'utc' => 'time',
+            'csv' => 'spreadsheet',
+            'excel' => 'spreadsheet',
+            'xls' => 'spreadsheet',
+            'xlsx' => 'spreadsheet',
+            'google' => 'spreadsheet',
         ];
 
         // Map category if it exists in the mapping

@@ -1,21 +1,10 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title ?? $tool->name)
-@section('meta_description', $tool->meta_description ?? $tool->description)
+@section('title', __tool('xlsx-to-xls', 'seo.title', $tool->meta_title ?? $tool->name))
+@section('meta_description', __tool('xlsx-to-xls', 'seo.description', $tool->meta_description ?? $tool->description))
 
 @section('content')
     <x-tool-hero :tool="$tool" />
-            <h1 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight tracking-tight">
-                {{ $tool->name }}
-            </h1>
-            <p class="text-xl md:text-2xl text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                {{ $tool->description }}
-            </p>
-            <div class="mt-8">
-                @include('components.hero-actions')
-            </div>
-        </div>
-    </div>
 
     <!-- Tool Interface Section -->
     <div class="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-gray-100 mb-16">
@@ -47,20 +36,6 @@
                     </div>
                 </div>
                 <div id="file-name" class="mt-4 text-green-600 font-medium hidden text-lg"></div>
-            </div>
-
-            <div class="text-center">
-                <button type="submit"
-                    class="w-full md:w-auto min-w-[300px] inline-flex items-center justify-center px-10 py-5 border border-transparent text-xl font-bold rounded-2xl shadow-xl text-white bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 focus:outline-none focus:ring-4 focus:ring-green-500/50 transform hover:-translate-y-1 transition-all">
-                    Convert to XLS
-                    <!-- Icon: Arrow Right -->
-                    <svg class="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                </button>
-            </div>
-        </form>
     </div>
 
     <!-- SEO Content Section -->
