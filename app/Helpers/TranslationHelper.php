@@ -62,20 +62,44 @@ if (!function_exists('__tool')) {
             $category = $categoryMap[$category];
         }
 
-        // Try category-based file first: tools.{category}.{toolSlug}.{key}
-        $categoryKey = "tools.{$category}.{$toolSlug}.{$key}";
-        $translation = trans($categoryKey, [], $locale);
+        // Build the translation key path: tools/{category}.{toolSlug}.{key}
+        $translationKey = "{$toolSlug}.{$key}";
 
-        // If found in category file, return it
-        if ($translation !== $categoryKey) {
-            return $translation;
+        // Try to load directly from category file
+        $categoryFile = resource_path("lang/{$locale}/tools/{$category}.php");
+
+        if (file_exists($categoryFile)) {
+            static $loadedCategories = [];
+
+            // Load category translations only once per request
+            if (!isset($loadedCategories[$locale][$category])) {
+                $categoryTranslations = require $categoryFile;
+                $loadedCategories[$locale][$category] = $categoryTranslations;
+            }
+
+            // Get the translation from the loaded category
+            $translations = $loadedCategories[$locale][$category];
+
+            // Navigate through the nested array using dot notation
+            $keys = explode('.', $translationKey);
+            $value = $translations;
+
+            foreach ($keys as $segment) {
+                if (is_array($value) && array_key_exists($segment, $value)) {
+                    $value = $value[$segment];
+                } else {
+                    $value = null;
+                    break;
+                }
+            }
+
+            // Return the translation if found, otherwise return default
+            if ($value !== null && !is_array($value)) {
+                return $value;
+            }
         }
 
-        // Fallback to monolithic file: tools.{toolSlug}.{$key}
-        $legacyKey = "tools.{$toolSlug}.{$key}";
-        $translation = trans($legacyKey, [], $locale);
-
-        // Return translation or default
-        return ($translation === $legacyKey) ? $default : $translation;
+        // Return default if translation not found
+        return $default;
     }
 }
