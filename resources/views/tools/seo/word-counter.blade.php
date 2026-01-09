@@ -129,7 +129,9 @@
             </div>
         </div>
     </div>
+@endsection
 
+@push('scripts')
     <script>
         const textInput = document.getElementById('textInput');
         const wordCount = document.getElementById('wordCount');
@@ -189,4 +191,4 @@
 
         textInput.addEventListener('input', updateCounts);
     </script>
-@endsection
+@endpush

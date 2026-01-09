@@ -38,10 +38,10 @@ if (!function_exists('__tool')) {
      * 
      * @param string $toolSlug Tool slug identifier
      * @param string $key Translation key (dot notation supported)
-     * @param string $default Default value if translation not found
+     * @param string|null $default Default value if translation not found
      * @return string
      */
-    function __tool(string $toolSlug, string $key, string $default = ''): string
+    function __tool(string $toolSlug, string $key, ?string $default = ''): string
     {
         $locale = app()->getLocale();
 
@@ -59,8 +59,25 @@ if (!function_exists('__tool')) {
             'excel' => 'spreadsheet',
             'xls' => 'spreadsheet',
             'xlsx' => 'spreadsheet',
-            'google' => 'spreadsheet',
+            'meta' => 'seo',
+            'keyword' => 'seo',
+            'word' => 'seo',
+            'bing' => 'seo',
+            'yahoo' => 'seo',
+            'broken' => 'seo',
+            'pdf' => 'seo',
+            'on' => 'seo',
         ];
+
+        // Special case: 'google' can be either spreadsheet or seo
+        // Check the full tool slug to determine which category
+        if ($category === 'google') {
+            if (str_contains($toolSlug, 'sheets')) {
+                $category = 'spreadsheet';
+            } else {
+                $category = 'seo';
+            }
+        }
 
         // Map category if it exists in the mapping
         if (isset($categoryMap[$category])) {
@@ -104,7 +121,7 @@ if (!function_exists('__tool')) {
             }
         }
 
-        // Return default if translation not found
-        return $default;
+        // Return default if translation not found (handle null)
+        return $default ?? '';
     }
 }

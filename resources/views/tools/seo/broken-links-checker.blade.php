@@ -7,17 +7,8 @@
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Hero Section -->
-        <a href="mailto:support@optimizo.com?subject=Issue with Broken Links Checker&body=Please describe the issue:"
-            class="inline-flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white text-sm font-semibold rounded-lg transition-all duration-200">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-            Report
-        </a>
-    </div>
-    </div>
-    </div>
+        <x-tool-hero :tool="$tool" />
+
 
     <!-- Tool Interface -->
     <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-100 mb-8">
@@ -29,9 +20,8 @@
                         d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Scan Your Webpage</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">Enter your webpage URL below to check for broken links and improve
-                your SEO</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{{ __tool('broken-links-checker', 'interface.scan_title') }}</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">{{ __tool('broken-links-checker', 'interface.scan_subtitle') }}</p>
         </div>
 
         <form id="brokenLinksForm" class="max-w-3xl mx-auto">
@@ -40,7 +30,7 @@
                 <!-- URL Input -->
                 <div class="group">
                     <label for="urlInput" class="block text-sm font-bold text-gray-600 uppercase tracking-wider mb-2 ml-1">
-                        Webpage URL
+                        {{ __tool('broken-links-checker', 'interface.url_label') }}
                     </label>
                     <div class="relative transition-all duration-300 group-focus-within:-translate-y-1">
                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -58,7 +48,7 @@
                 <div class="pt-2">
                     <button type="submit" id="submitBtn"
                         class="w-full bg-gray-900 hover:bg-gray-800 text-white font-bold text-xl rounded-xl px-8 py-5 shadow-xl shadow-gray-500/30 transform hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex items-center justify-center gap-3">
-                        <span id="btnText">Check for Broken Links</span>
+                        <span id="btnText">{{ __tool('broken-links-checker', 'interface.button') }}</span>
                         <div id="btnLoading" class="hidden flex items-center">
                             <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24">
@@ -68,7 +58,7 @@
                                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
                                 </path>
                             </svg>
-                            Scanning...
+                            {{ __tool('broken-links-checker', 'interface.button_scanning') }}
                         </div>
                     </button>
                 </div>
@@ -88,7 +78,7 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <span class="text-base font-bold text-gray-700" id="progressStatus">Extracting Links...</span>
+                    <span class="text-base font-bold text-gray-700" id="progressStatus">{{ __tool('broken-links-checker', 'progress.extracting') }}</span>
                 </div>
                 <div class="flex items-center gap-4">
                     <span
@@ -100,7 +90,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M6 18L18 6M6 6l12 12" />
                         </svg>
-                        Stop
+                        {{ __tool('broken-links-checker', 'progress.stop') }}
                     </button>
                 </div>
             </div>
@@ -111,9 +101,9 @@
                 </div>
             </div>
             <div class="flex justify-between items-center mt-3">
-                <div class="text-sm text-gray-500 font-medium">Processing links sequentially...</div>
-                <div class="text-sm font-bold text-gray-600">Processed <span id="processedCount"
-                        class="text-indigo-600">0</span> of <span id="totalCount" class="text-indigo-600">0</span> links
+                <div class="text-sm text-gray-500 font-medium">{{ __tool('broken-links-checker', 'progress.processing') }}</div>
+                <div class="text-sm font-bold text-gray-600">{{ __tool('broken-links-checker', 'progress.processed') }} <span id="processedCount"
+                        class="text-indigo-600">0</span> {{ __tool('broken-links-checker', 'progress.of') }} <span id="totalCount" class="text-indigo-600">0</span> {{ __tool('broken-links-checker', 'progress.links') }}
                 </div>
             </div>
         </div>
@@ -124,19 +114,19 @@
         <!-- Stats Cards -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
             <div class="bg-white rounded-2xl p-6 shadow-md border-l-4 border-blue-500">
-                <div class="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">Total Links</div>
+                <div class="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">{{ __tool('broken-links-checker', 'stats.total') }}</div>
                 <div class="text-3xl font-black text-gray-800" id="statTotal">0</div>
             </div>
             <div class="bg-white rounded-2xl p-6 shadow-md border-l-4 border-green-500">
-                <div class="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">Working (200)</div>
+                <div class="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">{{ __tool('broken-links-checker', 'stats.working') }}</div>
                 <div class="text-3xl font-black text-green-600" id="statWorking">0</div>
             </div>
             <div class="bg-white rounded-2xl p-6 shadow-md border-l-4 border-yellow-500">
-                <div class="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">Redirects (3xx)</div>
+                <div class="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">{{ __tool('broken-links-checker', 'stats.redirects') }}</div>
                 <div class="text-3xl font-black text-yellow-600" id="statRedirects">0</div>
             </div>
             <div class="bg-white rounded-2xl p-6 shadow-md border-l-4 border-red-500">
-                <div class="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">Broken (4xx/5xx)</div>
+                <div class="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">{{ __tool('broken-links-checker', 'stats.broken') }}</div>
                 <div class="text-3xl font-black text-red-600" id="statBroken">0</div>
             </div>
         </div>
@@ -149,7 +139,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                 </svg>
-                Download CSV Report
+                {{ __tool('broken-links-checker', 'results.download') }}
             </button>
         </div>
 
@@ -163,23 +153,22 @@
                                 d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                         </svg>
                     </div>
-                    Detailed Analysis
+                    {{ __tool('broken-links-checker', 'results.detailed_analysis') }}
                 </h3>
                 <div class="flex space-x-2 text-xs">
-                    <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-1"></span> 200
-                        OK</span>
+                    <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-1"></span> {{ __tool('broken-links-checker', 'interface.legend_ok') }}</span>
                     <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-red-500 mr-1"></span>
-                        404/Err</span>
+                        {{ __tool('broken-links-checker', 'interface.legend_err') }}</span>
                 </div>
             </div>
             <div class="max-h-[600px] overflow-y-auto">
                 <table class="w-full text-left border-collapse relative">
                     <thead class="sticky top-0 bg-gray-100 z-10 shadow-sm">
                         <tr class="text-gray-500 uppercase text-xs tracking-wider border-b border-gray-200">
-                            <th class="p-4 font-bold w-32">Status</th>
-                            <th class="p-4 font-bold">Link URL</th>
-                            <th class="p-4 font-bold w-48">Anchor Text</th>
-                            <th class="p-4 font-bold text-right w-24">Type</th>
+                            <th class="p-4 font-bold w-32">{{ __tool('broken-links-checker', 'results.status') }}</th>
+                            <th class="p-4 font-bold">{{ __tool('broken-links-checker', 'results.link_url') }}</th>
+                            <th class="p-4 font-bold w-48">{{ __tool('broken-links-checker', 'results.anchor_text') }}</th>
+                            <th class="p-4 font-bold text-right w-24">{{ __tool('broken-links-checker', 'results.type') }}</th>
                         </tr>
                     </thead>
                     <tbody id="linksTableBody" class="text-sm divide-y divide-gray-100">
@@ -202,10 +191,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
             </div>
-            <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">Why Check for Broken Links?</h2>
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">{{ __tool('broken-links-checker', 'content.main_title') }}</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Broken links damage your website's credibility, user experience, and SEO performance. Our free broken link
-                checker helps you identify and fix dead links before they hurt your rankings.
+                {{ __tool('broken-links-checker', 'content.main_subtitle') }}
             </p>
         </div>
 
@@ -214,100 +202,83 @@
             <div
                 class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-red-200 transition-all duration-300 transform hover:-translate-y-1">
                 <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-2xl mb-4">📉</div>
-                <h3 class="text-xl font-bold mb-3 text-gray-800">User Experience</h3>
-                <p class="text-gray-600 leading-relaxed">Dead links frustrate users. When visitors click a link and see a
-                    404 error, they lose trust in your site and are likely to leave immediately, increasing your bounce rate
-                    and reducing conversions.</p>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">{{ __tool('broken-links-checker', 'benefits.ux_title') }}</h3>
+                <p class="text-gray-600 leading-relaxed">{{ __tool('broken-links-checker', 'benefits.ux_desc') }}</p>
             </div>
 
             <div
                 class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-blue-200 transition-all duration-300 transform hover:-translate-y-1">
                 <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl mb-4">🤖</div>
-                <h3 class="text-xl font-bold mb-3 text-gray-800">SEO Impact</h3>
-                <p class="text-gray-600 leading-relaxed">Search engines like Google view broken links as a sign of a
-                    neglected website. Too many dead links can negatively affect your crawl budget, page authority, and
-                    overall search rankings.</p>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">{{ __tool('broken-links-checker', 'benefits.seo_title') }}</h3>
+                <p class="text-gray-600 leading-relaxed">{{ __tool('broken-links-checker', 'benefits.seo_desc') }}</p>
             </div>
 
             <div
                 class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-green-200 transition-all duration-300 transform hover:-translate-y-1">
                 <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl mb-4">⚡</div>
-                <h3 class="text-xl font-bold mb-3 text-gray-800">Site Maintenance</h3>
-                <p class="text-gray-600 leading-relaxed">Regular link checking helps maintain a professional website.
-                    Identify outdated content, removed pages, and external links that have changed or disappeared over time.
-                </p>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">{{ __tool('broken-links-checker', 'benefits.maintenance_title') }}</h3>
+                <p class="text-gray-600 leading-relaxed">{{ __tool('broken-links-checker', 'benefits.maintenance_desc') }}</p>
             </div>
         </div>
 
         <!-- What is a Broken Link Checker -->
         <div class="bg-white rounded-2xl p-8 mb-12 border-l-4 border-red-500 shadow-sm">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">What is a Broken Link Checker?</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('broken-links-checker', 'content.what_is_title') }}</h3>
             <p class="mb-6 text-gray-700 leading-relaxed">
-                A <strong>broken link checker</strong> (also known as a <strong>dead link checker</strong> or <strong>link
-                    validator</strong>) is an essential SEO tool that scans your web pages to identify links that no longer
-                work. These broken links typically return HTTP error codes like <strong>404 (Not Found)</strong>,
-                <strong>410 (Gone)</strong>, or <strong>500 (Server Error)</strong>.
+                {!! __tool('broken-links-checker', 'content.what_is_desc') !!}
             </p>
 
-            <h4 class="text-lg font-bold text-gray-900 mb-3">How Does It Work?</h4>
+            <h4 class="text-lg font-bold text-gray-900 mb-3">{{ __tool('broken-links-checker', 'content.how_works_title') }}</h4>
             <p class="mb-4 text-gray-700 leading-relaxed">
-                Our broken link checker tool works in three simple steps:
+                {{ __tool('broken-links-checker', 'content.how_works_intro') }}
             </p>
             <ol class="list-decimal list-inside space-y-2 text-gray-700 mb-6 ml-4">
-                <li><strong>Extraction:</strong> We crawl your specified webpage and extract all hyperlinks (both internal
-                    and external)</li>
-                <li><strong>Validation:</strong> Each link is checked sequentially by sending HTTP requests to verify its
-                    status</li>
-                <li><strong>Reporting:</strong> Results are displayed in real-time with color-coded status indicators and
-                    exportable CSV reports</li>
+                <li>{!! __tool('broken-links-checker', 'content.how_works_step1') !!}</li>
+                <li>{!! __tool('broken-links-checker', 'content.how_works_step2') !!}</li>
+                <li>{!! __tool('broken-links-checker', 'content.how_works_step3') !!}</li>
             </ol>
 
             <div class="bg-red-50 p-4 rounded-lg">
                 <p class="text-sm text-red-900">
-                    <strong>💡 Pro Tip:</strong> Run this checker regularly (monthly or quarterly) to catch broken links
-                    before they impact your SEO. Set up a maintenance schedule to keep your website healthy!
+                    <strong>{{ __tool('broken-links-checker', 'content.pro_tip_title') }}</strong> {{ __tool('broken-links-checker', 'content.pro_tip_desc') }}
                 </p>
             </div>
         </div>
 
         <!-- Types of Broken Links -->
         <div class="mb-12">
-            <h3 class="text-2xl font-black text-gray-900 mb-8 border-b-2 border-red-100 pb-4">Types of Broken Links</h3>
+            <h3 class="text-2xl font-black text-gray-900 mb-8 border-b-2 border-red-100 pb-4">{{ __tool('broken-links-checker', 'content.types_title') }}</h3>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white/80 p-6 rounded-xl border border-red-50 hover:bg-white transition-colors">
                     <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                        <span class="text-red-500">🔴</span> 404 Not Found
+                        {!! __tool('broken-links-checker', 'link_types.type1_title') !!}
                     </h4>
                     <p class="text-sm text-gray-600">
-                        The most common broken link error. The page existed before but has been deleted or moved without a
-                        proper redirect. This is the primary target of link checkers.
+                        {{ __tool('broken-links-checker', 'link_types.type1_desc') }}
                     </p>
                 </div>
                 <div class="bg-white/80 p-6 rounded-xl border border-red-50 hover:bg-white transition-colors">
                     <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                        <span class="text-orange-500">🟠</span> 410 Gone
+                        {!! __tool('broken-links-checker', 'link_types.type2_title') !!}
                     </h4>
                     <p class="text-sm text-gray-600">
-                        Similar to 404, but indicates the page was intentionally removed and won't be coming back. Search
-                        engines treat this differently than temporary 404s.
+                        {{ __tool('broken-links-checker', 'link_types.type2_desc') }}
                     </p>
                 </div>
                 <div class="bg-white/80 p-6 rounded-xl border border-red-50 hover:bg-white transition-colors">
                     <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                        <span class="text-yellow-500">🟡</span> 3xx Redirects
+                        {!! __tool('broken-links-checker', 'link_types.type3_title') !!}
                     </h4>
                     <p class="text-sm text-gray-600">
-                        While not "broken," redirect chains (multiple redirects) slow down page load times and can dilute
-                        link equity. Our tool identifies these for optimization.
+                        {{ __tool('broken-links-checker', 'link_types.type3_desc') }}
                     </p>
                 </div>
                 <div class="bg-white/80 p-6 rounded-xl border border-red-50 hover:bg-white transition-colors">
                     <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                        <span class="text-purple-500">🟣</span> 500 Server Errors
+                        {!! __tool('broken-links-checker', 'link_types.type4_title') !!}
                     </h4>
                     <p class="text-sm text-gray-600">
-                        Indicates a problem with the destination server. These are often temporary but should be monitored
-                        as they create poor user experiences.
+                        {{ __tool('broken-links-checker', 'link_types.type4_desc') }}
                     </p>
                 </div>
             </div>
@@ -321,76 +292,70 @@
                         d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
                         clip-rule="evenodd" />
                 </svg>
-                Common Causes of Broken Links
+                {{ __tool('broken-links-checker', 'content.common_causes_title') }}
             </h4>
             <ul class="text-yellow-800 leading-relaxed space-y-2">
-                <li>❌ <strong>Typos in URLs:</strong> Misspelled links during content creation or migration</li>
-                <li>❌ <strong>Deleted pages:</strong> Content removed without setting up 301 redirects</li>
-                <li>❌ <strong>Website restructuring:</strong> URL structure changes during redesigns</li>
-                <li>❌ <strong>External link rot:</strong> Third-party websites removing or moving their content</li>
-                <li>❌ <strong>Domain expiration:</strong> Linked websites going offline permanently</li>
-                <li>❌ <strong>Protocol changes:</strong> HTTP to HTTPS migrations without proper redirects</li>
+                <li>{!! __tool('broken-links-checker', 'content.cc_1') !!}</li>
+                <li>{!! __tool('broken-links-checker', 'content.cc_2') !!}</li>
+                <li>{!! __tool('broken-links-checker', 'content.cc_3') !!}</li>
+                <li>{!! __tool('broken-links-checker', 'content.cc_4') !!}</li>
+                <li>{!! __tool('broken-links-checker', 'content.cc_5') !!}</li>
+                <li>{!! __tool('broken-links-checker', 'content.cc_6') !!}</li>
             </ul>
         </div>
 
         <!-- Best Practices -->
         <div class="mb-12">
-            <h3 class="text-3xl font-black text-gray-900 mb-8">Best Practices for Link Management</h3>
+            <h3 class="text-3xl font-black text-gray-900 mb-8">{{ __tool('broken-links-checker', 'content.best_practices_title') }}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div
                     class="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔍</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Regular Audits</h4>
-                    <p class="text-gray-600 text-sm">Schedule monthly or quarterly link checks to catch issues early. Set
-                        calendar reminders for consistent maintenance.</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('broken-links-checker', 'best_practices.bp1_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('broken-links-checker', 'best_practices.bp1_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">↪️</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Use 301 Redirects</h4>
-                    <p class="text-gray-600 text-sm">When moving or deleting pages, always implement proper 301 redirects to
-                        preserve link equity and user experience.</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('broken-links-checker', 'best_practices.bp2_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('broken-links-checker', 'best_practices.bp2_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📊</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Monitor External Links</h4>
-                    <p class="text-gray-600 text-sm">Check external links more frequently as you have no control over
-                        third-party websites changing their content.</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('broken-links-checker', 'best_practices.bp3_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('broken-links-checker', 'best_practices.bp3_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📝</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Document Changes</h4>
-                    <p class="text-gray-600 text-sm">Keep a log of broken links found and fixed to track patterns and
-                        prevent recurring issues.</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('broken-links-checker', 'best_practices.bp4_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('broken-links-checker', 'best_practices.bp4_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔗</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Quality Over Quantity</h4>
-                    <p class="text-gray-600 text-sm">Focus on linking to authoritative, stable sources. Avoid linking to
-                        low-quality sites that frequently change.</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('broken-links-checker', 'best_practices.bp5_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('broken-links-checker', 'best_practices.bp5_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚙️</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Automate When Possible</h4>
-                    <p class="text-gray-600 text-sm">Use tools and scripts to automatically check critical pages regularly
-                        and alert you to issues.</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('broken-links-checker', 'best_practices.bp6_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('broken-links-checker', 'best_practices.bp6_desc') }}</p>
                 </div>
             </div>
         </div>
 
         <!-- FAQ Section -->
         <div class="mb-8">
-            <h3 class="text-3xl font-black text-center text-gray-900 mb-10">Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-black text-center text-gray-900 mb-10">{{ __tool('broken-links-checker', 'faq.title') }}</h3>
             <div class="space-y-4 max-w-3xl mx-auto">
                 <!-- FAQ Item 1 -->
                 <details class="group bg-white rounded-2xl shadow-sm border border-red-100 overflow-hidden">
                     <summary
                         class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                        <span>How often should I check for broken links?</span>
+                        <span>{{ __tool('broken-links-checker', 'faq.q1') }}</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-red-600">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 width="24">
@@ -399,9 +364,7 @@
                         </span>
                     </summary>
                     <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                        For most websites, checking for broken links <strong>monthly</strong> is sufficient. High-traffic
-                        sites or e-commerce platforms should check <strong>weekly</strong>. After major website updates,
-                        redesigns, or migrations, run an immediate check. Set up a regular schedule and stick to it!
+                        {{ __tool('broken-links-checker', 'faq.a1') }}
                     </div>
                 </details>
 
@@ -409,7 +372,7 @@
                 <details class="group bg-white rounded-2xl shadow-sm border border-red-100 overflow-hidden">
                     <summary
                         class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                        <span>Do broken links hurt my SEO rankings?</span>
+                        <span>{{ __tool('broken-links-checker', 'faq.q2') }}</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-red-600">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 width="24">
@@ -418,14 +381,7 @@
                         </span>
                     </summary>
                     <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                        Yes, but indirectly. Google has stated that a few broken links won't directly harm rankings.
-                        However, <strong>many broken links</strong> signal poor site maintenance, which can:
-                        <ul class="list-disc ml-6 mt-2 space-y-1">
-                            <li>Increase bounce rates (a ranking factor)</li>
-                            <li>Waste crawl budget on error pages</li>
-                            <li>Reduce user trust and engagement</li>
-                            <li>Break internal linking structure</li>
-                        </ul>
+                        {!! __tool('broken-links-checker', 'faq.a2') !!}
                     </div>
                 </details>
 
@@ -433,7 +389,7 @@
                 <details class="group bg-white rounded-2xl shadow-sm border border-red-100 overflow-hidden">
                     <summary
                         class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                        <span>What's the difference between internal and external broken links?</span>
+                        <span>{{ __tool('broken-links-checker', 'faq.q3') }}</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-red-600">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 width="24">
@@ -442,10 +398,7 @@
                         </span>
                     </summary>
                     <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                        <strong>Internal broken links</strong> point to pages on your own domain and are fully under your
-                        control. These should be fixed immediately with redirects or updated links. <strong>External broken
-                            links</strong> point to other websites. You can't fix these directly, but you should either
-                        update them to working alternatives or remove them if no suitable replacement exists.
+                        {!! __tool('broken-links-checker', 'faq.a3') !!}
                     </div>
                 </details>
 
@@ -453,7 +406,7 @@
                 <details class="group bg-white rounded-2xl shadow-sm border border-red-100 overflow-hidden">
                     <summary
                         class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                        <span>Can I check broken links for my entire website?</span>
+                        <span>{{ __tool('broken-links-checker', 'faq.q4') }}</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-red-600">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 width="24">
@@ -462,10 +415,7 @@
                         </span>
                     </summary>
                     <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                        This tool checks <strong>one page at a time</strong> to provide fast, focused results. For full-site
-                        audits, you would need to check each important page individually or use enterprise SEO crawling
-                        tools. We recommend starting with your most important pages: homepage, top landing pages, and
-                        high-traffic content.
+                        {!! __tool('broken-links-checker', 'faq.a4') !!}
                     </div>
                 </details>
 
@@ -473,7 +423,7 @@
                 <details class="group bg-white rounded-2xl shadow-sm border border-red-100 overflow-hidden">
                     <summary
                         class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                        <span>What should I do when I find broken links?</span>
+                        <span>{{ __tool('broken-links-checker', 'faq.q_what_to_do') }}</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-red-600">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 width="24">
@@ -482,16 +432,12 @@
                         </span>
                     </summary>
                     <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                        Follow this priority order:
+                        {{ __tool('broken-links-checker', 'faq.a_what_to_do_intro') }}
                         <ol class="list-decimal ml-6 mt-2 space-y-2">
-                            <li><strong>Internal links:</strong> Set up 301 redirects to the new URL or update the link
-                                directly</li>
-                            <li><strong>External links:</strong> Find an alternative working page or use archive.org to find
-                                the old content</li>
-                            <li><strong>If no alternative:</strong> Remove the link and update surrounding content to
-                                maintain flow</li>
-                            <li><strong>Document everything:</strong> Keep a log for future reference and pattern analysis
-                            </li>
+                            <li>{!! __tool('broken-links-checker', 'faq.a_what_to_do_li1') !!}</li>
+                            <li>{!! __tool('broken-links-checker', 'faq.a_what_to_do_li2') !!}</li>
+                            <li>{!! __tool('broken-links-checker', 'faq.a_what_to_do_li3') !!}</li>
+                            <li>{!! __tool('broken-links-checker', 'faq.a_what_to_do_li4') !!}</li>
                         </ol>
                     </div>
                 </details>
@@ -501,6 +447,9 @@
     </div>
     </div>
 
+@endsection
+
+@push('scripts')
     <script>
         let allLinks = [];
         let processedCount = 0;
@@ -529,7 +478,7 @@
             document.getElementById('progressBar').style.width = '0%';
             document.getElementById('processedCount').innerText = '0';
             document.getElementById('totalCount').innerText = '0';
-            document.getElementById('progressStatus').innerText = 'Extracting Links...';
+            document.getElementById('progressStatus').innerText = '{{ __tool('broken-links-checker', 'progress.extracting') }}';
 
             btn.disabled = true;
             btnText.classList.add('hidden');
@@ -559,7 +508,7 @@
 
                 document.getElementById('statTotal').innerText = total;
                 document.getElementById('totalCount').innerText = total;
-                document.getElementById('progressStatus').innerText = 'Checking Links...';
+                document.getElementById('progressStatus').innerText = '{{ __tool('broken-links-checker', 'progress.checking') }}';
 
                 // Show stop button
                 const stopBtn = document.getElementById('stopBtn');
@@ -569,8 +518,8 @@
                 stopBtn.onclick = () => {
                     shouldStop = true;
                     stopBtn.disabled = true;
-                    stopBtn.innerHTML = '<svg class="w-4 h-4 inline-block mr-1 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Stopping...';
-                    document.getElementById('progressStatus').innerText = 'Stopping scan...';
+                    stopBtn.innerHTML = '<svg class="w-4 h-4 inline-block mr-1 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> {{ __tool('broken-links-checker', 'js.stopping') }}';
+                    document.getElementById('progressStatus').innerText = '{{ __tool('broken-links-checker', 'js.stopping') }}';
                 };
 
                 // Render Initial Table (Pending Status)
@@ -580,7 +529,7 @@
                 // Phase 2: Check Links Sequentially (One at a time for resource efficiency)
                 for (let i = 0; i < allLinks.length; i++) {
                     if (shouldStop) {
-                        document.getElementById('progressStatus').innerText = 'Scan Stopped';
+                        document.getElementById('progressStatus').innerText = '{{ __tool('broken-links-checker', 'js.scan_stopped') }}';
                         document.getElementById('progressBar').classList.remove('bg-gradient-to-r', 'from-indigo-600', 'to-purple-600');
                         document.getElementById('progressBar').classList.add('bg-yellow-500');
                         break;
@@ -591,7 +540,7 @@
 
                 // Phase 3: Done
                 if (!shouldStop) {
-                    document.getElementById('progressStatus').innerText = 'Scan Complete!';
+                    document.getElementById('progressStatus').innerText = '{{ __tool('broken-links-checker', 'js.scan_complete') }}';
                     document.getElementById('progressBar').classList.remove('bg-gradient-to-r', 'from-indigo-600', 'to-purple-600');
                     document.getElementById('progressBar').classList.add('bg-green-600');
                     actionArea.classList.remove('hidden');
@@ -604,7 +553,7 @@
 
             } catch (error) {
                 console.error(error);
-                alert('Error: ' + error.message);
+                alert('{{ __tool('broken-links-checker', 'js.error_prefix') }}' + error.message);
             } finally {
                 btn.disabled = false;
                 btnText.classList.remove('hidden');
@@ -624,7 +573,7 @@
                                             <svg class="animate-spin -ml-1 mr-1 h-3 w-3 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                                 <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                            </svg> Pending
+                                            </svg> {{ __tool('broken-links-checker', 'js.pending') }}
                                         </span>
                                     </td>
                                     <td class="p-4 max-w-xs truncate" title="${link.url}">
@@ -635,7 +584,7 @@
                                     <td class="p-4 text-gray-600 font-medium truncate">${link.text}</td>
                                      <td class="p-4 text-right">
                                         <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full uppercase tracking-wide">
-                                            ${link.is_internal ? 'Internal' : 'External'}
+                                            ${link.is_internal ? '{{ __tool('broken-links-checker', 'js.internal') }}' : '{{ __tool('broken-links-checker', 'js.external') }}'}
                                         </span>
                                     </td>
                                 </tr>
@@ -746,4 +695,4 @@
             document.body.removeChild(link);
         }
     </script>
-@endsection
+@endpush

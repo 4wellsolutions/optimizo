@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>SEO Report - {{ $meta['url'] }}</title>
+    <title>{{ __tool('pdf-report', 'seo.title') }} - {{ $meta['url'] }}</title>
     <style>
         @page {
             margin: 0;
@@ -248,9 +248,9 @@
 
     <!-- PAGE 1: COVER -->
     <div class="cover-page">
-        <div class="cover-brand">Optimizo</div>
+        <div class="cover-brand">{{ __tool('pdf-report', 'interface.brand_name') }}</div>
         <br><br>
-        <div class="cover-title">SEO Audit Report</div>
+        <div class="cover-title">{{ __tool('pdf-report', 'interface.cover_title') }}</div>
         <div class="cover-url">{{ $meta['url'] }}</div>
 
         <div class="score-container">
@@ -258,12 +258,12 @@
         </div>
 
         <div style="font-size: 18px; font-weight: 300; opacity: 0.9;">
-            OVERALL SCORE
+            {{ __tool('pdf-report', 'interface.overall_score') }}
         </div>
 
         <div class="cover-footer">
-            Generated on {{ $meta['date'] }}<br>
-            Optimizo SEO Tools Suite
+            {{ __tool('pdf-report', 'interface.generated_on') }} {{ $meta['date'] }}<br>
+            {{ __tool('pdf-report', 'interface.suite_name') }}
         </div>
     </div>
 
@@ -271,13 +271,13 @@
 
     <!-- PAGE 2+: CONTENT -->
     <div class="header">
-        <div class="header-brand">Optimizo SEO Audit</div>
+        <div class="header-brand">{{ __tool('pdf-report', 'interface.audit_title') }}</div>
         <div class="header-date">{{ $meta['date'] }}</div>
         <div class="clearfix"></div>
     </div>
 
     <div class="content">
-        <div class="section-header">Detailed Analysis Methods</div>
+        <div class="section-header">{{ __tool('pdf-report', 'interface.analysis_methods') }}</div>
 
         @foreach($results as $step => $data)
             <div class="module">
@@ -313,7 +313,7 @@
 
                     @if(!empty($data['fix']))
                         <div class="recommendation-box">
-                            <strong>RECOMMENDATION:</strong> {{ $data['fix'] }}
+                            <strong>{{ __tool('pdf-report', 'interface.recommendation') }}</strong> {{ $data['fix'] }}
                         </div>
                     @endif
                 </div>

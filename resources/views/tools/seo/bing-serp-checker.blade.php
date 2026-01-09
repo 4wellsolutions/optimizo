@@ -12,7 +12,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-blue-200 mb-8">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Live Bing SERP Check Simulation</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                    {{ __tool('bing-serp-checker', 'interface.simulation_title') }}</h2>
                 <div class="h-1 w-16 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto rounded-full"></div>
             </div>
 
@@ -23,21 +24,21 @@
                     <!-- Keyword Input -->
                     <div>
                         <label for="keyword" class="block text-sm font-bold text-gray-700 mb-2">
-                            Target Keyword
+                            {{ __tool('bing-serp-checker', 'interface.keyword_label') }}
                         </label>
                         <input type="text" id="keyword" name="keyword" required
                             class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent font-medium text-gray-900 placeholder-gray-400 text-base transition-colors hover:border-blue-300"
-                            placeholder="e.g. digital marketing agency">
+                            placeholder="{{ __tool('bing-serp-checker', 'form.keyword_placeholder') }}">
                     </div>
 
                     <!-- Location Input -->
                     <div class="relative">
                         <label for="locationInput" class="block text-sm font-bold text-gray-700 mb-2">
-                            Location (City/Region)
+                            {{ __tool('bing-serp-checker', 'interface.location_label') }}
                         </label>
                         <input type="text" id="locationInput" autocomplete="off"
                             class="no-paste w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent font-medium text-gray-900 placeholder-gray-400 text-base transition-colors hover:border-blue-300"
-                            placeholder="Enter city or check 'Global'">
+                            placeholder="{{ __tool('bing-serp-checker', 'interface.location_placeholder') }}">
                         <input type="hidden" id="selectedLocation">
                         <!-- Using shared location logic -->
                         <div id="locationDropdown"
@@ -48,23 +49,23 @@
                     <!-- Market Selector -->
                     <div>
                         <label for="market" class="block text-sm font-bold text-gray-700 mb-2">
-                            Bing Market (Region)
+                            {{ __tool('bing-serp-checker', 'interface.market_label') }}
                         </label>
                         <div class="relative">
                             <select id="market"
                                 class="appearance-none w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent font-medium text-gray-700 bg-white pr-10 cursor-pointer hover:border-blue-300 transition-colors">
-                                <option value="en-US">United States (English)</option>
-                                <option value="en-GB">United Kingdom (English)</option>
-                                <option value="en-CA">Canada (English)</option>
-                                <option value="en-AU">Australia (English)</option>
-                                <option value="de-DE">Germany (German)</option>
-                                <option value="fr-FR">France (French)</option>
-                                <option value="es-ES">Spain (Spanish)</option>
-                                <option value="it-IT">Italy (Italian)</option>
-                                <option value="nl-NL">Netherlands (Dutch)</option>
-                                <option value="pt-BR">Brazil (Portuguese)</option>
-                                <option value="ja-JP">Japan (Japanese)</option>
-                                <option value="en-IN">India (English)</option>
+                                <option value="en-US">{{ __tool('bing-serp-checker', 'markets.us') }}</option>
+                                <option value="en-GB">{{ __tool('bing-serp-checker', 'markets.uk') }}</option>
+                                <option value="en-CA">{{ __tool('bing-serp-checker', 'markets.ca') }}</option>
+                                <option value="en-AU">{{ __tool('bing-serp-checker', 'markets.au') }}</option>
+                                <option value="de-DE">{{ __tool('bing-serp-checker', 'markets.de') }}</option>
+                                <option value="fr-FR">{{ __tool('bing-serp-checker', 'markets.fr') }}</option>
+                                <option value="es-ES">{{ __tool('bing-serp-checker', 'markets.es') }}</option>
+                                <option value="it-IT">{{ __tool('bing-serp-checker', 'markets.it') }}</option>
+                                <option value="nl-NL">{{ __tool('bing-serp-checker', 'markets.nl') }}</option>
+                                <option value="pt-BR">{{ __tool('bing-serp-checker', 'markets.br') }}</option>
+                                <option value="ja-JP">{{ __tool('bing-serp-checker', 'markets.jp') }}</option>
+                                <option value="en-IN">{{ __tool('bing-serp-checker', 'markets.in') }}</option>
                             </select>
                             <div
                                 class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-blue-600">
@@ -79,13 +80,14 @@
                     <!-- Device Type -->
                     <div>
                         <label for="deviceType" class="block text-sm font-bold text-gray-700 mb-2">
-                            Device Type
+                            {{ __tool('bing-serp-checker', 'interface.device_label') }}
                         </label>
                         <div class="relative">
                             <select id="deviceType"
                                 class="appearance-none w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent font-medium text-gray-700 bg-white pr-10 cursor-pointer hover:border-blue-300 transition-colors">
-                                <option value="desktop">Desktop</option>
-                                <option value="mobile">Mobile (Smartphone)</option>
+                                <option value="desktop">{{ __tool('bing-serp-checker', 'interface.device_desktop') }}
+                                </option>
+                                <option value="mobile">{{ __tool('bing-serp-checker', 'interface.device_mobile') }}</option>
                             </select>
                             <div
                                 class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-blue-600">
@@ -101,15 +103,16 @@
                 <div class="pt-4">
                     <button type="submit"
                         class="btn-primary w-full px-8 py-4 rounded-xl flex items-center justify-center gap-3 transform hover:-translate-y-0.5 transition-all shadow-lg hover:shadow-xl text-lg font-bold bg-blue-600 hover:bg-blue-700 text-white border-none">
-                        <span>Check Bing Rankings</span>
+                        <span>{{ __tool('bing-serp-checker', 'form.button') }}</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </button>
                     <p class="text-center text-xs font-bold text-gray-400 mt-4 uppercase tracking-wider">
-                        <span class="text-blue-600">✔</span> No Login Required &nbsp;•&nbsp; <span
-                            class="text-blue-600">✔</span> Real-Time Results
+                        <span class="text-blue-600">✔</span> {{ __tool('bing-serp-checker', 'interface.no_login') }}
+                        &nbsp;•&nbsp; <span class="text-blue-600">✔</span>
+                        {{ __tool('bing-serp-checker', 'interface.realtime_results') }}
                     </p>
                 </div>
             </form>
@@ -126,11 +129,10 @@
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">Why Use Our Free Bing SERP Checker?</h2>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">
+                    {{ __tool('bing-serp-checker', 'content.main_title') }}</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Optimize for the 2nd largest search engine. Our <span class="text-blue-600 font-bold">Bing Rank
-                        Tracker</span> helps you uncover opportunities and track your <strong>Bing SEO</strong> performance
-                    accurately.
+                    {{ __tool('bing-serp-checker', 'content.main_subtitle') }}
                 </p>
             </div>
 
@@ -146,10 +148,10 @@
                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Local Bing Results</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">
+                        {{ __tool('bing-serp-checker', 'content.feature1_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        See what users in "New York" or "London" see. We force Bing to simulate the location using
-                        <strong>precise location parameters</strong> for local SEO accuracy.
+                        {{ __tool('bing-serp-checker', 'content.feature1_desc') }}
                     </p>
                 </div>
 
@@ -161,10 +163,10 @@
                                 d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Bing Mobile View</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">
+                        {{ __tool('bing-serp-checker', 'content.feature2_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Check your mobile rankings on Bing. Essential for capturing mobile traffic from the Microsoft
-                        ecosystem and mobile devices.
+                        {{ __tool('bing-serp-checker', 'content.feature2_desc') }}
                     </p>
                 </div>
 
@@ -176,52 +178,49 @@
                                 d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Global Markets</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">
+                        {{ __tool('bing-serp-checker', 'content.feature3_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Support for all major Bing markets including USA, UK, Canada, Australia, Germany, France, and more.
-                        Truly global <strong>Bing position checker</strong>.
+                        {{ __tool('bing-serp-checker', 'content.feature3_desc') }}
                     </p>
                 </div>
             </div>
 
             <!-- SERP Features -->
             <div class="mb-16">
-                <h3 class="text-2xl font-black text-gray-900 mb-8 border-b-2 border-blue-100 pb-4">Understanding Bing
-                    SERP Features</h3>
+                <h3 class="text-2xl font-black text-gray-900 mb-8 border-b-2 border-blue-100 pb-4">
+                    {{ __tool('bing-serp-checker', 'content.serp_features_title') }}</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white/80 p-6 rounded-xl border border-blue-50 hover:bg-white transition-colors">
                         <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                            <span class="text-blue-500">★</span> Featured Snippets
+                            <span class="text-blue-500">★</span> {{ __tool('bing-serp-checker', 'content.sf_snippets_title') }}
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Bing often provides rich answers and "intelligent answers" at position zero. Check if your
-                            content is capturing these high-visibility spots.
+                            {{ __tool('bing-serp-checker', 'content.sf_snippets_desc') }}
                         </p>
                     </div>
                     <div class="bg-white/80 p-6 rounded-xl border border-blue-50 hover:bg-white transition-colors">
                         <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                            <span class="text-blue-500">📍</span> Bing Places
+                            <span class="text-blue-500">📍</span> {{ __tool('bing-serp-checker', 'content.sf_places_title') }}
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Bing's equivalent of the Local Pack. Crucial for local businesses. Use our "Location" feature to
-                            verify your <strong>Bing Places</strong> ranking.
+                            {!! __tool('bing-serp-checker', 'content.sf_places_desc') !!}
                         </p>
                     </div>
                     <div class="bg-white/80 p-6 rounded-xl border border-blue-50 hover:bg-white transition-colors">
                         <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                            <span class="text-blue-500">📷</span> Visual Search
+                            <span class="text-blue-500">📷</span> {{ __tool('bing-serp-checker', 'content.sf_visual_title') }}
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Bing heavily emphasizes visual search results. Monitor how your images appear in image-heavy
-                            SERP layouts.
+                            {{ __tool('bing-serp-checker', 'content.sf_visual_desc') }}
                         </p>
                     </div>
                     <div class="bg-white/80 p-6 rounded-xl border border-blue-50 hover:bg-white transition-colors">
                         <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                            <span class="text-blue-500">ℹ️</span> Knowledge Cards
+                            <span class="text-blue-500">ℹ️</span> {{ __tool('bing-serp-checker', 'content.sf_knowledge_title') }}
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Rich information panels on the right side. Check if Bing clearly understands your brand entity.
+                            {{ __tool('bing-serp-checker', 'content.sf_knowledge_desc') }}
                         </p>
                     </div>
                 </div>
@@ -229,30 +228,27 @@
 
             <!-- Deep Dive Content -->
             <div class="bg-white rounded-2xl p-8 mb-12 border-l-4 border-blue-500 shadow-sm">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">Why Check Bing Rankings?</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('bing-serp-checker', 'content.why_check_title') }}</h3>
                 <p class="mb-6 text-gray-700 leading-relaxed">
-                    While Google dominates, Bing still holds a significant market share, especially in enterprise
-                    environments (default in Windows/Edge) and among older demographics. Ranking high on Bing can tap into a
-                    valuable, often higher-income audience.
+                    {{ __tool('bing-serp-checker', 'content.why_check_desc') }}
                 </p>
 
-                <h4 class="text-lg font-bold text-gray-900 mb-3">How accurate is this tool?</h4>
+                <h4 class="text-lg font-bold text-gray-900 mb-3">{{ __tool('bing-serp-checker', 'content.how_accurate_title') }}</h4>
                 <p class="mb-4 text-gray-700">
-                    We use Bing's own `setmkt` (Set Market) and `loc` parameters to request results directly from
-                    Microsoft's servers. This provides a clean, unbiased view of the SERP, free from your personal
-                    browsing history or cookie bias.
+                    {{ __tool('bing-serp-checker', 'content.how_accurate_desc') }}
                 </p>
             </div>
 
             <!-- FAQ Section -->
             <div class="mb-8">
-                <h3 class="text-3xl font-black text-center text-gray-900 mb-10">Frequently Asked Questions</h3>
+                <h3 class="text-3xl font-black text-center text-gray-900 mb-10">
+                    {{ __tool('bing-serp-checker', 'faq.title') }}</h3>
                 <div class="space-y-4 max-w-3xl mx-auto">
                     <!-- FAQ Item 1 -->
                     <details class="group bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
                         <summary
                             class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                            <span>Is this Bing SERP Tool Free?</span>
+                            <span>{{ __tool('bing-serp-checker', 'faq.q1') }}</span>
                             <span class="transition-transform duration-300 group-open:rotate-180 text-blue-600">
                                 <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                     width="24">
@@ -261,8 +257,7 @@
                             </span>
                         </summary>
                         <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                            Yes! Our **bing rank checker** is completely free. You can check unlimited keywords to optimize
-                            your presence on Microsoft's search engine without any cost.
+                            {!! __tool('bing-serp-checker', 'faq.a1') !!}
                         </div>
                     </details>
 
@@ -270,7 +265,7 @@
                     <details class="group bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
                         <summary
                             class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                            <span>Does Bing ranking affect Yahoo?</span>
+                            <span>{{ __tool('bing-serp-checker', 'faq.q2') }}</span>
                             <span class="transition-transform duration-300 group-open:rotate-180 text-blue-600">
                                 <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                     width="24">
@@ -279,8 +274,7 @@
                             </span>
                         </summary>
                         <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                            Yes, generally. Yahoo Search is largely powered by Bing's index. Optimizing for Bing often leads
-                            to improved rankings on Yahoo as well, giving you a "two-for-one" SEO benefit.
+                            {{ __tool('bing-serp-checker', 'faq.a2') }}
                         </div>
                     </details>
 
@@ -288,7 +282,7 @@
                     <details class="group bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
                         <summary
                             class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                            <span>Can I check local rankings for a specific city?</span>
+                            <span>{{ __tool('bing-serp-checker', 'faq.q3') }}</span>
                             <span class="transition-transform duration-300 group-open:rotate-180 text-blue-600">
                                 <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                     width="24">
@@ -297,9 +291,7 @@
                             </span>
                         </summary>
                         <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                            Absolutely. Enter your city in the "Location" field. We append specific location parameters to
-                            the search query, allowing you to see the <strong>local bing results</strong> exactly as a user
-                            in that city would see them.
+                            {!! __tool('bing-serp-checker', 'faq.a3') !!}
                         </div>
                     </details>
                 </div>
@@ -307,8 +299,9 @@
 
         </div>
     </div>
+@endsection
 
-    <!-- Hidden form implementation -->
+@push('scripts')
     <script>
         // Initialize elements
         const locationInput = document.getElementById('locationInput');
@@ -369,31 +362,23 @@
             const device = document.getElementById('deviceType').value;
             const location = document.getElementById('selectedLocation').value;
 
-            // Bing URL construction
-            // Base: https://www.bing.com/search?q=KEYWORD
-            // Market: &setmkt=en-US
-            // Location: Bing supports 'loc' parameter in query string "KEYWORD loc:City" or sometimes &loc=City in URL (less reliable).
-            // Safest bet for Bing is "KEYWORD loc:LocationName" if a location is specified.
-
             let finalQuery = keyword;
             if (location && location.trim() !== '') {
-                // Append location operator to query for precise local results if supported, 
-                // or rely on market if no specific city.
-                // Actually, "loc:" operator is quite standard for Bing.
                 finalQuery += ` loc:${location}`;
             }
 
             let url = `https://www.bing.com/search?q=${encodeURIComponent(finalQuery)}&setmkt=${market}`;
 
             if (device === 'mobile') {
-                // Open customized window for mobile simulation
                 window.open(url, 'bing_serp_mobile', 'width=414,height=896,menubar=no,toolbar=no,location=yes,status=yes,scrollbars=yes,resizable=yes,left=100,top=100');
             } else {
                 window.open(url, '_blank');
             }
         }
     </script>
+@endpush
 
+@push('styles')
     <style>
         .custom-scrollbar::-webkit-scrollbar {
             width: 6px;
@@ -405,13 +390,11 @@
 
         .custom-scrollbar::-webkit-scrollbar-thumb {
             background: #93c5fd;
-            /* blue-300 */
             border-radius: 3px;
         }
 
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #60a5fa;
-            /* blue-400 */
         }
     </style>
-@endsection
+@endpush

@@ -12,7 +12,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-indigo-200 mb-8">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Live Yahoo Search Simulation</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                    {{ __tool('yahoo-serp-checker', 'interface.simulation_title') }}</h2>
                 <div class="h-1 w-16 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto rounded-full"></div>
             </div>
 
@@ -23,21 +24,21 @@
                     <!-- Keyword Input -->
                     <div>
                         <label for="keyword" class="block text-sm font-bold text-gray-700 mb-2">
-                            Target Keyword
+                            {{ __tool('yahoo-serp-checker', 'interface.keyword_label') }}
                         </label>
                         <input type="text" id="keyword" name="keyword" required
                             class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent font-medium text-gray-900 placeholder-gray-400 text-base transition-colors hover:border-indigo-300"
-                            placeholder="e.g. best pizza recipe">
+                            placeholder="{{ __tool('yahoo-serp-checker', 'form.keyword_placeholder') }}">
                     </div>
 
                     <!-- Location Input -->
                     <div class="relative">
                         <label for="locationInput" class="block text-sm font-bold text-gray-700 mb-2">
-                            Location (City)
+                            {{ __tool('yahoo-serp-checker', 'interface.location_label') }}
                         </label>
                         <input type="text" id="locationInput" autocomplete="off"
                             class="no-paste w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent font-medium text-gray-900 placeholder-gray-400 text-base transition-colors hover:border-indigo-300"
-                            placeholder="Enter city (Optional)">
+                            placeholder="{{ __tool('yahoo-serp-checker', 'form.location_placeholder') }}">
                         <!-- Yahoo location is less precise with parameters, but adding it to query helps -->
                         <div id="locationDropdown"
                             class="hidden absolute z-50 w-full mt-2 bg-white rounded-xl shadow-2xl border border-gray-100 max-h-60 overflow-y-auto custom-scrollbar ring-1 ring-black/5">
@@ -47,20 +48,20 @@
                     <!-- Yahoo Domain/Market -->
                     <div>
                         <label for="yahooDomain" class="block text-sm font-bold text-gray-700 mb-2">
-                            Yahoo Domain
+                            {{ __tool('yahoo-serp-checker', 'interface.yahoo_domain_label') }}
                         </label>
                         <div class="relative">
                             <select id="yahooDomain"
                                 class="appearance-none w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent font-medium text-gray-700 bg-white pr-10 cursor-pointer hover:border-indigo-300 transition-colors">
-                                <option value="search.yahoo.com" data-vc="us">Yahoo.com (USA/Global)</option>
-                                <option value="uk.search.yahoo.com" data-vc="uk">Yahoo.co.uk (United Kingdom)</option>
-                                <option value="ca.search.yahoo.com" data-vc="ca">Yahoo.ca (Canada)</option>
-                                <option value="au.search.yahoo.com" data-vc="au">Yahoo.com.au (Australia)</option>
-                                <option value="de.search.yahoo.com" data-vc="de">Yahoo.de (Germany)</option>
-                                <option value="fr.search.yahoo.com" data-vc="fr">Yahoo.fr (France)</option>
-                                <option value="it.search.yahoo.com" data-vc="it">Yahoo.it (Italy)</option>
-                                <option value="es.search.yahoo.com" data-vc="es">Yahoo.es (Spain)</option>
-                                <option value="br.search.yahoo.com" data-vc="br">Yahoo.com.br (Brazil)</option>
+                                <option value="search.yahoo.com" data-vc="us">{{ __tool('yahoo-serp-checker', 'domains.us') }}</option>
+                                <option value="uk.search.yahoo.com" data-vc="uk">{{ __tool('yahoo-serp-checker', 'domains.uk') }}</option>
+                                <option value="ca.search.yahoo.com" data-vc="ca">{{ __tool('yahoo-serp-checker', 'domains.ca') }}</option>
+                                <option value="au.search.yahoo.com" data-vc="au">{{ __tool('yahoo-serp-checker', 'domains.au') }}</option>
+                                <option value="de.search.yahoo.com" data-vc="de">{{ __tool('yahoo-serp-checker', 'domains.de') }}</option>
+                                <option value="fr.search.yahoo.com" data-vc="fr">{{ __tool('yahoo-serp-checker', 'domains.fr') }}</option>
+                                <option value="it.search.yahoo.com" data-vc="it">{{ __tool('yahoo-serp-checker', 'domains.it') }}</option>
+                                <option value="es.search.yahoo.com" data-vc="es">{{ __tool('yahoo-serp-checker', 'domains.es') }}</option>
+                                <option value="br.search.yahoo.com" data-vc="br">{{ __tool('yahoo-serp-checker', 'domains.br') }}</option>
                             </select>
                             <div
                                 class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-indigo-600">
@@ -75,13 +76,13 @@
                     <!-- Device Type -->
                     <div>
                         <label for="deviceType" class="block text-sm font-bold text-gray-700 mb-2">
-                            Device Type
+                            {{ __tool('yahoo-serp-checker', 'interface.device_label') }}
                         </label>
                         <div class="relative">
                             <select id="deviceType"
                                 class="appearance-none w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent font-medium text-gray-700 bg-white pr-10 cursor-pointer hover:border-indigo-300 transition-colors">
-                                <option value="desktop">Desktop</option>
-                                <option value="mobile">Mobile (Smartphone)</option>
+                                <option value="desktop">{{ __tool('yahoo-serp-checker', 'interface.device_desktop') }}</option>
+                                <option value="mobile">{{ __tool('yahoo-serp-checker', 'interface.device_mobile') }}</option>
                             </select>
                             <div
                                 class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-indigo-600">
@@ -97,15 +98,16 @@
                 <div class="pt-4">
                     <button type="submit"
                         class="btn-primary w-full px-8 py-4 rounded-xl flex items-center justify-center gap-3 transform hover:-translate-y-0.5 transition-all shadow-lg hover:shadow-xl text-lg font-bold bg-indigo-600 hover:bg-indigo-700 text-white border-none">
-                        <span>Check Yahoo Rankings</span>
+                        <span>{{ __tool('yahoo-serp-checker', 'form.button') }}</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </button>
                     <p class="text-center text-xs font-bold text-gray-400 mt-4 uppercase tracking-wider">
-                        <span class="text-indigo-600">✔</span> No Login Required &nbsp;•&nbsp; <span
-                            class="text-indigo-600">✔</span> Real-Time Results
+                        <span class="text-indigo-600">✔</span> {{ __tool('yahoo-serp-checker', 'interface.no_login') }}
+                        &nbsp;•&nbsp; <span class="text-indigo-600">✔</span>
+                        {{ __tool('yahoo-serp-checker', 'interface.realtime_results') }}
                     </p>
                 </div>
             </form>
@@ -122,11 +124,10 @@
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">Why Use Our Free Yahoo SERP Checker?</h2>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">
+                    {{ __tool('yahoo-serp-checker', 'content.main_title') }}</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Yahoo is powered by Bing but maintains its own unique audience layer. Our <span
-                        class="text-indigo-600 font-bold">Yahoo Rank Tracker</span> is crucial for complete search
-                    visibility.
+                    {{ __tool('yahoo-serp-checker', 'content.main_subtitle') }}
                 </p>
             </div>
 
@@ -142,10 +143,10 @@
                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Targeted Local Search</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">
+                        {{ __tool('yahoo-serp-checker', 'content.feature1_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Simulate searches from "Miami" or "Chicago". We append location specific queries to help you see
-                        what local users see on Yahoo.
+                        {{ __tool('yahoo-serp-checker', 'content.feature1_desc') }}
                     </p>
                 </div>
 
@@ -157,10 +158,10 @@
                                 d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Yahoo Mobile View</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">
+                        {{ __tool('yahoo-serp-checker', 'content.feature2_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Yahoo's mobile interface is distinct. Check your mobile rankings to ensure your site is optimized
-                        for Yahoo's mobile users.
+                        {{ __tool('yahoo-serp-checker', 'content.feature2_desc') }}
                     </p>
                 </div>
 
@@ -172,38 +173,36 @@
                                 d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">International Yahoo</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">
+                        {{ __tool('yahoo-serp-checker', 'content.feature3_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Check results on Yahoo.co.uk, Yahoo.fr, Yahoo.jp and more. Full support for international Yahoo
-                        domains.
+                        {{ __tool('yahoo-serp-checker', 'content.feature3_desc') }}
                     </p>
                 </div>
             </div>
 
             <!-- Deep Dive Content -->
             <div class="bg-white rounded-2xl p-8 mb-12 border-l-4 border-indigo-500 shadow-sm">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">Why Yahoo SEO Matters?</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('yahoo-serp-checker', 'content.why_matters_title') }}</h3>
                 <p class="mb-6 text-gray-700 leading-relaxed">
-                    Yahoo remains a top traffic source for news, finance, and sports. Its user base is loyal and distinct
-                    from Google's. ignoring Yahoo means leaving traffic on the table.
+                    {{ __tool('yahoo-serp-checker', 'content.why_matters_desc') }}
                 </p>
-                <h4 class="text-lg font-bold text-gray-900 mb-3">Is Yahoo the same as Bing?</h4>
+                <h4 class="text-lg font-bold text-gray-900 mb-3">{{ __tool('yahoo-serp-checker', 'content.same_as_bing_title') }}</h4>
                 <p class="mb-4 text-gray-700">
-                    Mostly, yes. Yahoo Search is powered by Bing's index. However, the <strong>user interface, ads, and
-                        localized content</strong> wrapping the results are different. Our tool helps you verify the final
-                    presentation.
+                    {!! __tool('yahoo-serp-checker', 'content.same_as_bing_desc') !!}
                 </p>
             </div>
 
             <!-- FAQ Section -->
             <div class="mb-8">
-                <h3 class="text-3xl font-black text-center text-gray-900 mb-10">Frequently Asked Questions</h3>
+                <h3 class="text-3xl font-black text-center text-gray-900 mb-10">
+                    {{ __tool('yahoo-serp-checker', 'faq.title') }}</h3>
                 <div class="space-y-4 max-w-3xl mx-auto">
                     <!-- FAQ Item 1 -->
                     <details class="group bg-white rounded-2xl shadow-sm border border-indigo-100 overflow-hidden">
                         <summary
                             class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                            <span>Is this Yahoo SERP Checker Free?</span>
+                            <span>{{ __tool('yahoo-serp-checker', 'faq.q1') }}</span>
                             <span class="transition-transform duration-300 group-open:rotate-180 text-indigo-600">
                                 <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                     width="24">
@@ -212,8 +211,7 @@
                             </span>
                         </summary>
                         <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                            Yes! Our **yahoo rank tracker** is 100% free. Check your rankings on Yahoo as often as you need
-                            without any hidden fees or subscriptions.
+                            {{ __tool('yahoo-serp-checker', 'faq.a1') }}
                         </div>
                     </details>
 
@@ -221,7 +219,7 @@
                     <details class="group bg-white rounded-2xl shadow-sm border border-indigo-100 overflow-hidden">
                         <summary
                             class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                            <span>How do I improve my Yahoo Ranking?</span>
+                            <span>{{ __tool('yahoo-serp-checker', 'faq.q2') }}</span>
                             <span class="transition-transform duration-300 group-open:rotate-180 text-indigo-600">
                                 <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                     width="24">
@@ -230,9 +228,7 @@
                             </span>
                         </summary>
                         <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                            Since Yahoo is powered by Bing, focus on Bing SEO best practices: clear technical SEO,
-                            authoritative backlinks, and relevant content. Using this tool to monitor progress is a great
-                            start.
+                            {{ __tool('yahoo-serp-checker', 'faq.a2') }}
                         </div>
                     </details>
                 </div>
@@ -240,8 +236,9 @@
 
         </div>
     </div>
+@endsection
 
-    <!-- Hidden form implementation -->
+@push('scripts')
     <script>
         // Initialize elements
         const locationInput = document.getElementById('locationInput');
@@ -302,9 +299,6 @@
             const device = document.getElementById('deviceType').value;
             const location = locationInput.value;
 
-            // Yahoo URL construction
-            // https://search.yahoo.com/search?p=KEYWORD&vc=US
-
             let finalQuery = keyword;
             if (location && location.trim() !== '') {
                 finalQuery += ` ${location}`; // Append location to query for Yahoo
@@ -316,13 +310,15 @@
             }
 
             if (device === 'mobile') {
-                // Open customized window for mobile simulation
                 window.open(url, 'yahoo_serp_mobile', 'width=414,height=896,menubar=no,toolbar=no,location=yes,status=yes,scrollbars=yes,resizable=yes,left=100,top=100');
             } else {
                 window.open(url, '_blank');
             }
         }
     </script>
+@endpush
+
+@push('styles')
     <style>
         .custom-scrollbar::-webkit-scrollbar {
             width: 6px;
@@ -334,13 +330,11 @@
 
         .custom-scrollbar::-webkit-scrollbar-thumb {
             background: #a5b4fc;
-            /* indigo-300 */
             border-radius: 3px;
         }
 
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #818cf8;
-            /* indigo-400 */
         }
     </style>
-@endsection
+@endpush

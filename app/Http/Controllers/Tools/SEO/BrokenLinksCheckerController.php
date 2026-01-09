@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Tools\Seo;
 
 use App\Http\Controllers\Controller;
+use App\Models\Tool;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
@@ -12,7 +13,8 @@ class BrokenLinksCheckerController extends Controller
 {
     public function index()
     {
-        return view('tools.seo.broken-links-checker');
+        $tool = Tool::where('slug', 'broken-links-checker')->firstOrFail();
+        return view('tools.seo.broken-links-checker', compact('tool'));
     }
 
     // Phase 1: Extract links only

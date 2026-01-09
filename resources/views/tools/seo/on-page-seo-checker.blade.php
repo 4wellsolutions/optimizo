@@ -12,7 +12,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl border border-gray-100 mb-8">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Start Your Free Audit</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{{ __tool('on-page-seo-checker', 'interface.title') }}
+                </h2>
                 <div class="h-1 w-16 bg-gradient-to-r from-indigo-600 to-pink-600 mx-auto rounded-full"></div>
             </div>
 
@@ -23,7 +24,7 @@
                     <!-- URL Input -->
                     <div class="group">
                         <label for="url" class="block text-sm font-bold text-gray-600 uppercase tracking-wider mb-2 ml-1">
-                            Website URL
+                            {{ __tool('on-page-seo-checker', 'interface.url_label') }}
                         </label>
                         <div class="relative transition-all duration-300 group-focus-within:-translate-y-1">
                             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -41,10 +42,10 @@
                     <div class="group">
                         <div class="flex justify-between items-center mb-2 ml-1">
                             <label for="keywords" class="block text-sm font-bold text-gray-600 uppercase tracking-wider">
-                                Target Keywords
+                                {{ __tool('on-page-seo-checker', 'interface.keywords_label') }}
                             </label>
                             <span
-                                class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-md uppercase tracking-wider">Recommended</span>
+                                class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-md uppercase tracking-wider">{{ __tool('on-page-seo-checker', 'interface.recommended') }}</span>
                         </div>
                         <div class="relative transition-all duration-300 group-focus-within:-translate-y-1">
                             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -62,7 +63,7 @@
                     <div class="pt-2">
                         <button type="submit"
                             class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xl rounded-xl px-8 py-5 shadow-xl shadow-indigo-500/30 transform hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex items-center justify-center gap-3">
-                            <span>Start Comprehensive Audit</span>
+                            <span>{{ __tool('on-page-seo-checker', 'interface.button') }}</span>
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -77,7 +78,7 @@
         <div id="progressSection" class="hidden mb-10 scroll-mt-24">
             <div class="bg-white rounded-2xl p-6 shadow-xl border border-gray-100">
                 <h3 class="text-lg font-bold text-gray-800 mb-4 flex justify-between">
-                    <span id="progressStatus">Initializing...</span>
+                    <span id="progressStatus">{{ __tool('on-page-seo-checker', 'labels.initializing') }}</span>
                     <span id="progressPercent" class="text-indigo-600">0%</span>
                 </h3>
                 <div class="w-full bg-gray-100 rounded-full h-4 overflow-hidden">
@@ -99,7 +100,9 @@
                 <div class="sticky top-24 space-y-6">
                     <!-- Score Card -->
                     <div class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-indigo-600">
-                        <h2 class="text-xl font-bold text-gray-800 mb-4 text-center">Page Analysis</h2>
+                        <h2 class="text-xl font-bold text-gray-800 mb-4 text-center">
+                            {{ __tool('on-page-seo-checker', 'interface.page_analysis') }}
+                        </h2>
 
                         <!-- Thumbnail Preview -->
 
@@ -113,11 +116,11 @@
                         </div>
                         <div class="grid grid-cols-2 gap-4 text-center">
                             <div class="p-3 bg-blue-50 rounded-xl">
-                                <div class="text-xs text-uppercase text-blue-600 font-bold tracking-wider">Desktop</div>
+                                <div class="text-xs text-uppercase text-blue-600 font-bold tracking-wider">{{ __tool('on-page-seo-checker', 'labels.desktop') }}</div>
                                 <div class="text-2xl font-bold text-blue-900" id="desktopScore">--</div>
                             </div>
                             <div class="p-3 bg-pink-50 rounded-xl">
-                                <div class="text-xs text-uppercase text-pink-600 font-bold tracking-wider">Mobile</div>
+                                <div class="text-xs text-uppercase text-pink-600 font-bold tracking-wider">{{ __tool('on-page-seo-checker', 'labels.mobile') }}</div>
                                 <div class="text-2xl font-bold text-pink-900" id="mobileScore">--</div>
                             </div>
                         </div>
@@ -141,102 +144,70 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <div
             class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl p-8 md:p-12 shadow-lg border border-indigo-100">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Comprehensive On-Page SEO Checker &
-                Analyzer</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-                Modern search engines use neural matching to understand the <em>intent</em> behind a query, not just exact
-                keywords. Our <strong>on-page seo checker</strong> is built on these same principles. Whether you need a
-                quick <strong>onpage seo check</strong> or a deep semantic audit, our tool acts as a neural <strong>onpage
-                    seo analyzer</strong>, helping you bridge the gap between your content and how AI-driven algorithms
-                interpret it.
-            </p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">{{ __tool('on-page-seo-checker', 'content.main_content_title') }}</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">{!! __tool('on-page-seo-checker', 'content.main_content_desc') !!}</p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <!-- Feature 1 -->
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-indigo-50">
                     <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🚀</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Instant Semantic Analysis</h3>
-                    <p class="text-gray-600">
-                        Search spiders crawl efficiently. Our <strong>on page seo check online</strong> mimics this
-                        behavior, parsing your DOM to understand structure and hierarchy. This <strong>onpage checker
-                            tool</strong> ensures your HTML speaks the language of search engines.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f1_title') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f1_desc') !!}</p>
                 </div>
 
                 <!-- Feature 2 -->
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-purple-50">
                     <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 text-2xl">📊</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Data-Driven Scoring</h3>
-                    <p class="text-gray-600">
-                        Algorithms rely on signals. Get a precise <strong>check onpage seo score</strong> based on 20+
-                        ranking factors. Our <strong>onpage grader</strong> quantifies quality, giving you a clear benchmark
-                        for optimization.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f2_title') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f2_desc') !!}</p>
                 </div>
 
                 <!-- Feature 3 -->
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-pink-50">
                     <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🔍</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Contextual Content Review</h3>
-                    <p class="text-gray-600">
-                        It's not just about word count; it's about density and relevance. Use our <strong>web page seo
-                            checker</strong> to ensure your entities are recognized. A true <strong>onpage analysis
-                            tool</strong> for the AI era.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f3_title') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f3_desc') !!}</p>
                 </div>
 
                 <!-- Feature 4 -->
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-blue-50">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-2xl">📱</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Mobile & Technical Check</h3>
-                    <p class="text-gray-600">
-                        With mobile-first indexing, technical health is paramount. Perform a <strong>seo on page
-                            test</strong> for viewport settings and schema markup using our comprehensive <strong>onpage seo
-                            test</strong> suite.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f4_title') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f4_desc') !!}</p>
                 </div>
 
                 <!-- Feature 5 -->
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-green-50">
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🆓</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">100% Free Access</h3>
-                    <p class="text-gray-600">
-                        Democratizing SEO data. Looking for a <strong>free onpage seo checker</strong>? We provide
-                        premium-level insights without the paywall. It's the most robust <strong>onpage seo tool
-                            free</strong> access you'll find.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f5_title') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f5_desc') !!}</p>
                 </div>
 
                 <!-- Feature 6 -->
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-orange-50">
                     <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🔗</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Link Architecture</h3>
-                    <p class="text-gray-600">
-                        Context flows through links. Our <strong>on page optimization checker</strong> calculates link
-                        ratios to ensure authority flows correctly. A vital step in any <strong>seo check onpage</strong>
-                        workflow.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f6_title') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f6_desc') !!}</p>
                 </div>
             </div>
 
             <!-- Steps Section -->
             <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">How to Use the On-Page SEO Checker Tool</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('on-page-seo-checker', 'content.how_to_title') }}</h2>
                 <div class="space-y-6">
                     <div class="flex items-start">
                         <div
                             class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-4">
                             1</div>
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800">Enter Your URL</h3>
-                            <p class="text-gray-600">Provide the specific page endpoint. Our <strong>on page seo checker
-                                    online</strong> fetches the raw HTML just like a search bot would.</p>
+                            <h3 class="text-lg font-bold text-gray-800">{{ __tool('on-page-seo-checker', 'how_to.step1_title') }}</h3>
+                            <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step1_desc') !!}</p>
                         </div>
                     </div>
                     <div class="flex items-start">
@@ -244,9 +215,8 @@
                             class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-4">
                             2</div>
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800">Analyze Signals</h3>
-                            <p class="text-gray-600">Initiate the <strong>seo page tester</strong>. We analyze headers,
-                                metadata, and content structure to emulate how algorithms "read" your page.</p>
+                            <h3 class="text-lg font-bold text-gray-800">{{ __tool('on-page-seo-checker', 'how_to.step2_title') }}</h3>
+                            <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step2_desc') !!}</p>
                         </div>
                     </div>
                     <div class="flex items-start">
@@ -254,10 +224,8 @@
                             class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-4">
                             3</div>
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800">Optimize for Intent</h3>
-                            <p class="text-gray-600">Use the data to refine your content's relevance. <strong>Check onpage
-                                    website</strong> logic and improve your actionable <strong>onpage seo score</strong>.
-                            </p>
+                            <h3 class="text-lg font-bold text-gray-800">{{ __tool('on-page-seo-checker', 'how_to.step3_title') }}</h3>
+                            <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step3_desc') !!}</p>
                         </div>
                     </div>
                 </div>
@@ -265,239 +233,226 @@
 
             <!-- FAQ Section -->
             <div class="space-y-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Frequently Asked Questions</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('on-page-seo-checker', 'faq.title') }}</h2>
 
                 <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                    <h3 class=" font-bold text-lg text-gray-800 mb-2">Why is an onpage seo checkup critical for ranking?
-                    </h3>
-                    <p class="text-gray-600">
-                        Search is about relevance. An <strong>onpage seo checkup</strong> ensures your signals (titles,
-                        schema, content) align with user intent. Regular auditing with an <strong>onpage site
-                            seo</strong> tool keeps your site synced with evolving algorithm updates.
-                    </p>
+                    <h3 class=" font-bold text-lg text-gray-800 mb-2">{{ __tool('on-page-seo-checker', 'faq.q1') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'faq.a1') !!}</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                    <h3 class=" font-bold text-lg text-gray-800 mb-2">Is this onpage seo tool online really free?</h3>
-                    <p class="text-gray-600">
-                        Yes. We believe in accessible data. Our <strong>on page seo tool online</strong> is free to use,
-                        allowing you to act as your own <strong>free onpage seo tool</strong> without subscription barriers.
-                    </p>
+                    <h3 class=" font-bold text-lg text-gray-800 mb-2">{{ __tool('on-page-seo-checker', 'faq.q2') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'faq.a2') !!}</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                    <h3 class=" font-bold text-lg text-gray-800 mb-2">How do search engines understand my content?</h3>
-                    <p class="text-gray-600">
-                        Engines use NLP (Natural Language Processing) to relate entities. Our <strong>on page seo
-                            grader</strong> checks if your structure supports this understanding, acting as a proxy
-                        <strong>seo onpage test</strong> for neural compatibility.
-                    </p>
+                    <h3 class=" font-bold text-lg text-gray-800 mb-2">{{ __tool('on-page-seo-checker', 'faq.q3') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'faq.a3') !!}</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                    <h3 class=" font-bold text-lg text-gray-800 mb-2">Can I check onpage seo for any website?</h3>
-                    <p class="text-gray-600">
-                        Yes. Our crawler respects `robots.txt` but can analyze any public URL. You can <strong>check onpage
-                            seo</strong> for competitors to reverse-engineer their success. It's a versatile <strong>onpage
-                            checker tool</strong> for any strategy.
-                    </p>
+                    <h3 class=" font-bold text-lg text-gray-800 mb-2">{{ __tool('on-page-seo-checker', 'faq.q4') }}</h3>
+                    <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'faq.a4') !!}</p>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        // Global Variables and Function Definitions (Outside DOMContentLoaded)
-        const steps = [
-            'topic_intent', 'keywords', 'title', 'meta_description', 'url_structure',
-            'headings', 'content_quality', 'gpt_optimization', 'mobile_ux', 'core_web_vitals',
-            'images', 'internal_links', 'external_links', 'schema', 'trust_signals',
-            'ai_citation', 'zero_click', 'canonical', 'indexing'
-        ];
-        let currentStepIndex = 0;
-        let token = '';
-        let totalScore = 0;
-        let completedModules = 0;
+@endsection
 
-        // Global scan function callable from onsubmit
-        window.runSeoScan = function () {
-            console.log('Starting SEO Scan...');
+@push('scripts')
+<script>
+    // Global Variables and Function Definitions (Outside DOMContentLoaded)
+    const steps = [
+        'topic_intent', 'keywords', 'title', 'meta_description', 'url_structure',
+        'headings', 'content_quality', 'gpt_optimization', 'mobile_ux', 'core_web_vitals',
+        'images', 'internal_links', 'external_links', 'schema', 'trust_signals',
+        'ai_citation', 'zero_click', 'canonical', 'indexing'
+    ];
+    let currentStepIndex = 0;
+    let token = '';
+    let totalScore = 0;
+    let completedModules = 0;
 
-            const urlVal = document.getElementById('url').value;
-            const keywordsVal = document.getElementById('keywords').value;
+    // Global scan function callable from onsubmit
+    window.runSeoScan = function () {
+        console.log('Starting SEO Scan...');
 
-            if (!urlVal) {
-                alert('Please enter a website URL');
-                return;
-            }
+        const urlVal = document.getElementById('url').value;
+        const keywordsVal = document.getElementById('keywords').value;
 
-            // Reset UI
-            currentStepIndex = 0;
-            totalScore = 0;
-            completedModules = 0;
-            document.getElementById('modulesContainer').innerHTML = '';
-            document.getElementById('progressSection').classList.remove('hidden');
-            document.getElementById('resultsGrid').classList.remove('hidden');
+        if (!urlVal) {
+            alert('Please enter a website URL');
+            return;
+        }
 
-            // Auto-scroll to results
-            document.getElementById('progressSection').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Reset UI
+        currentStepIndex = 0;
+        totalScore = 0;
+        completedModules = 0;
+        document.getElementById('modulesContainer').innerHTML = '';
+        document.getElementById('progressSection').classList.remove('hidden');
+        document.getElementById('resultsGrid').classList.remove('hidden');
 
-            const btn = document.querySelector('#seoForm button');
-            btn.disabled = true;
-            btn.classList.add('opacity-75');
+        // Auto-scroll to results
+        document.getElementById('progressSection').scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-            // Init Scan
-            fetch('{{ route("seo.on-page.init") }}', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
-                },
-                body: JSON.stringify({
-                    url: urlVal,
-                    keywords: keywordsVal
-                })
+        const btn = document.querySelector('#seoForm button');
+        btn.disabled = true;
+        btn.classList.add('opacity-75');
+
+        // Init Scan
+        fetch('{{ route("seo.on-page.init") }}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            body: JSON.stringify({
+                url: urlVal,
+                keywords: keywordsVal
             })
-                .then(response => response.json())
-                .then(res => {
-                    if (res.success) {
-                        token = res.token;
-                        processNextStep();
-                    } else {
-                        throw new Error(res.message);
-                    }
-                })
-                .catch(error => {
-                    alert('Failed to initialize scan: ' + error.message);
-                    btn.disabled = false;
-                    btn.classList.remove('opacity-75');
-                });
-        };
-
-        function processNextStep() {
-            if (currentStepIndex >= steps.length) {
-                finishScan();
-                return;
-            }
-
-            const step = steps[currentStepIndex];
-            const percent = Math.round(((currentStepIndex) / steps.length) * 100);
-            updateProgress(percent, `Analyzing ${step.replace('_', ' ')}...`);
-
-            const urlVal = document.getElementById('url').value;
-            const keywordsVal = document.getElementById('keywords').value;
-
-            fetch('{{ route("seo.on-page.analyze-step") }}', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
-                },
-                body: JSON.stringify({
-                    token: token,
-                    step: step,
-                    url: urlVal,
-                    keywords: keywordsVal
-                })
+        })
+            .then(response => response.json())
+            .then(res => {
+                if (res.success) {
+                    token = res.token;
+                    processNextStep();
+                } else {
+                    throw new Error(res.message);
+                }
             })
-                .then(response => response.json())
-                .then(res => {
-                    if (res.success) {
-                        renderModuleResult(res.result);
-                        totalScore += res.result.score;
-                        completedModules++;
-                        updateScoreDisplay();
-                    }
-                    currentStepIndex++;
-                    processNextStep();
-                })
-                .catch(() => {
-                    currentStepIndex++;
-                    processNextStep();
-                });
+            .catch(error => {
+                alert('Failed to initialize scan: ' + error.message);
+                btn.disabled = false;
+                btn.classList.remove('opacity-75');
+            });
+    };
+
+    function processNextStep() {
+        if (currentStepIndex >= steps.length) {
+            finishScan();
+            return;
         }
 
-        function updateProgress(percent, status) {
-            document.getElementById('progressBar').style.width = percent + '%';
-            document.getElementById('progressPercent').innerText = percent + '%';
-            document.getElementById('progressStatus').innerText = status;
+        const step = steps[currentStepIndex];
+        const percent = Math.round(((currentStepIndex) / steps.length) * 100);
+        updateProgress(percent, `Analyzing ${step.replace('_', ' ')}...`);
+
+        const urlVal = document.getElementById('url').value;
+        const keywordsVal = document.getElementById('keywords').value;
+
+        fetch('{{ route("seo.on-page.analyze-step") }}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            body: JSON.stringify({
+                token: token,
+                step: step,
+                url: urlVal,
+                keywords: keywordsVal
+            })
+        })
+            .then(response => response.json())
+            .then(res => {
+                if (res.success) {
+                    renderModuleResult(res.result);
+                    totalScore += res.result.score;
+                    completedModules++;
+                    updateScoreDisplay();
+                }
+                currentStepIndex++;
+                processNextStep();
+            })
+            .catch(() => {
+                currentStepIndex++;
+                processNextStep();
+            });
+    }
+
+    function updateProgress(percent, status) {
+        document.getElementById('progressBar').style.width = percent + '%';
+        document.getElementById('progressPercent').innerText = percent + '%';
+        document.getElementById('progressStatus').innerText = status;
+    }
+
+    function updateScoreDisplay() {
+        const avg = Math.round(totalScore / Math.max(1, completedModules));
+        document.getElementById('finalScore').innerText = avg;
+        document.getElementById('desktopScore').innerText = avg;
+        document.getElementById('mobileScore').innerText = Math.max(0, avg - 5);
+    }
+
+    function renderModuleResult(data) {
+        const colorClass = data.status === 'pass' ? 'border-green-200 bg-green-50' : (data.status === 'warning' ?
+            'border-yellow-200 bg-yellow-50' : 'border-red-200 bg-red-50');
+        const icon = data.status === 'pass' ? '✅' : (data.status === 'warning' ? '⚠️' : '❌');
+
+        let detailsHtml = '';
+        if (data.details && typeof data.details === 'object') {
+            detailsHtml = '<div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 bg-white/50 p-3 rounded-lg text-sm">';
+            for (const [key, value] of Object.entries(data.details)) {
+                detailsHtml += `
+                            <div class="flex flex-col">
+                                <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
+                                <span class="font-bold text-gray-800">${value}</span>
+                            </div>
+                            `;
+            }
+            detailsHtml += '</div>';
         }
 
-        function updateScoreDisplay() {
-            const avg = Math.round(totalScore / Math.max(1, completedModules));
-            document.getElementById('finalScore').innerText = avg;
-            document.getElementById('desktopScore').innerText = avg;
-            document.getElementById('mobileScore').innerText = Math.max(0, avg - 5);
-        }
-
-        function renderModuleResult(data) {
-            const colorClass = data.status === 'pass' ? 'border-green-200 bg-green-50' : (data.status === 'warning' ?
-                'border-yellow-200 bg-yellow-50' : 'border-red-200 bg-red-50');
-            const icon = data.status === 'pass' ? '✅' : (data.status === 'warning' ? '⚠️' : '❌');
-
-            let detailsHtml = '';
-            if (data.details && typeof data.details === 'object') {
-                detailsHtml = '<div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 bg-white/50 p-3 rounded-lg text-sm">';
-                for (const [key, value] of Object.entries(data.details)) {
-                    detailsHtml += `
-                        <div class="flex flex-col">
-                            <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
-                            <span class="font-bold text-gray-800">${value}</span>
+        const html = `
+                        <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                                    <span>${icon}</span> ${data.title}
+                                </h3>
+                                <span
+                                    class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
+                            </div>
+                            <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
+                            ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
+                                    class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
+                            ${detailsHtml}
                         </div>
                         `;
-                }
-                detailsHtml += '</div>';
-            }
+        const container = document.getElementById('modulesContainer');
+        const div = document.createElement('div');
+        div.innerHTML = html;
+        container.appendChild(div.firstElementChild);
+    }
 
-            const html = `
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
-                                <span>${icon}</span> ${data.title}
-                            </h3>
-                            <span
-                                class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
-                        </div>
-                        <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
-                        ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
-                                class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
-                        ${detailsHtml}
-                    </div>
-                    `;
-            const container = document.getElementById('modulesContainer');
-            const div = document.createElement('div');
-            div.innerHTML = html;
-            container.appendChild(div.firstElementChild);
+    function finishScan() {
+        updateProgress(100, 'Scan Complete!');
+        const btn = document.querySelector('#seoForm button');
+        btn.disabled = false;
+        btn.classList.remove('opacity-75');
+
+        const exportBtn = document.getElementById('exportBtn');
+        exportBtn.disabled = false;
+        exportBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        exportBtn.classList.add('hover:scale-105');
+
+        // Set download action
+        exportBtn.onclick = function () {
+            window.location.href = '{{ route("seo.on-page.export") }}?token=' + token;
+        };
+
+        document.getElementById('progressBar').classList.remove('from-indigo-500');
+        document.getElementById('progressBar').classList.add('bg-green-500');
+    }
+
+    // Bind fallback on load just in case
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('seoForm');
+        if (form) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                window.runSeoScan();
+            });
         }
-
-        function finishScan() {
-            updateProgress(100, 'Scan Complete!');
-            const btn = document.querySelector('#seoForm button');
-            btn.disabled = false;
-            btn.classList.remove('opacity-75');
-
-            const exportBtn = document.getElementById('exportBtn');
-            exportBtn.disabled = false;
-            exportBtn.classList.remove('opacity-50', 'cursor-not-allowed');
-            exportBtn.classList.add('hover:scale-105');
-
-            // Set download action
-            exportBtn.onclick = function () {
-                window.location.href = '{{ route("seo.on-page.export") }}?token=' + token;
-            };
-
-            document.getElementById('progressBar').classList.remove('from-indigo-500');
-            document.getElementById('progressBar').classList.add('bg-green-500');
-        }
-
-        // Bind fallback on load just in case
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.getElementById('seoForm');
-            if (form) {
-                form.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    window.runSeoScan();
-                });
-            }
-        });
-    </script>
-@endsection
+    });
+</script>
+@endpush

@@ -12,7 +12,7 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-purple-200 mb-8">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Live SERP Check Simulation</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{{ __tool('google-serp-checker', 'interface.simulation_title') }}</h2>
                 <div class="h-1 w-16 bg-gradient-to-r from-purple-600 to-red-600 mx-auto rounded-full"></div>
             </div>
 
@@ -33,11 +33,11 @@
                     <!-- Location Input -->
                     <div class="relative">
                         <label for="locationInput" class="block text-sm font-bold text-gray-700 mb-2">
-                            Location
+                            {{ __tool('google-serp-checker', 'interface.location_label') }}
                         </label>
                         <input type="text" id="locationInput" autocomplete="off"
                             class="no-paste w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent font-medium text-gray-900 placeholder-gray-400 text-base transition-colors hover:border-purple-300"
-                            placeholder="Enter city, country, or zip">
+                            placeholder="{{ __tool('google-serp-checker', 'interface.location_placeholder') }}">
                         <input type="hidden" id="selectedUULE">
                         <div id="locationDropdown"
                             class="hidden absolute z-50 w-full mt-2 bg-white rounded-xl shadow-2xl border border-gray-100 max-h-60 overflow-y-auto custom-scrollbar ring-1 ring-black/5">
@@ -47,7 +47,7 @@
                     <!-- Google Domain -->
                     <div>
                         <label for="googleDomain" class="block text-sm font-bold text-gray-700 mb-2">
-                            Google Domain
+                            {{ __tool('google-serp-checker', 'interface.domain_label') }}
                         </label>
                         <div class="relative">
                             <select id="googleDomain"
@@ -78,13 +78,13 @@
                     <!-- Device Type -->
                     <div>
                         <label for="deviceType" class="block text-sm font-bold text-gray-700 mb-2">
-                            Device Type
+                            {{ __tool('google-serp-checker', 'interface.device_label') }}
                         </label>
                         <div class="relative">
                             <select id="deviceType"
                                 class="appearance-none w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent font-medium text-gray-700 bg-white pr-10 cursor-pointer hover:border-purple-300 transition-colors">
-                                <option value="desktop">Desktop</option>
-                                <option value="mobile">Mobile (Smartphone)</option>
+                                <option value="desktop">{{ __tool('google-serp-checker', 'interface.device_desktop') }}</option>
+                                <option value="mobile">{{ __tool('google-serp-checker', 'interface.device_mobile') }}</option>
                             </select>
                             <div
                                 class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-purple-600">
@@ -107,8 +107,8 @@
                         </svg>
                     </button>
                     <p class="text-center text-xs font-bold text-gray-400 mt-4 uppercase tracking-wider">
-                        <span class="text-purple-600">✔</span> No Login Required &nbsp;•&nbsp; <span
-                            class="text-purple-600">✔</span> Real-Time Results
+                        <span class="text-purple-600">✔</span> {{ __tool('google-serp-checker', 'interface.no_login') }} &nbsp;•&nbsp; <span
+                            class="text-purple-600">✔</span> {{ __tool('google-serp-checker', 'interface.realtime_results') }}
                     </p>
                 </div>
             </form>
@@ -126,11 +126,9 @@
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">Why Use Our Free Google SERP Checker?</h2>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">{{ __tool('google-serp-checker', 'content.main_title') }}</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    In the world of SEO, <span class="text-purple-600 font-bold">accuracy is everything</span>. Our
-                    <strong>SERP analyzer</strong>
-                    bypasses personalization algorithms to show you the <strong>true SERP rankings</strong> of your website.
+                    {{ __tool('google-serp-checker', 'content.main_subtitle') }}
                 </p>
             </div>
 
@@ -146,10 +144,9 @@
                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Hyper-Local SERP Position Accuracy</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">{{ __tool('google-serp-checker', 'content.feature1_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Rank for "pizza in midtown manhattan". We use advanced <strong>Google UULE parameters</strong>
-                        to simulate precise localized <strong>SERP checking</strong>.
+                        {{ __tool('google-serp-checker', 'content.feature1_desc') }}
                     </p>
                 </div>
 
@@ -161,10 +158,9 @@
                                 d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Mobile SERP Finder & Analysis</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">{{ __tool('google-serp-checker', 'content.feature2_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Verify your rankings on iPhone and Android. Don't let <strong>Mobile-First Indexing</strong>
-                        catch you off guard. Comprehensive <strong>mobile SERP analysis</strong>.
+                        {{ __tool('google-serp-checker', 'content.feature2_desc') }}
                     </p>
                 </div>
 
@@ -176,53 +172,47 @@
                                 d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Global Google SERP Tracker</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">{{ __tool('google-serp-checker', 'content.feature3_title') }}</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Expanding? Check rankings across 190+ countries. Toggle between <strong>Google.co.uk, Google.de
-                            (Kostenlos SERP Checker), Google.jp</strong> and more.
+                        {{ __tool('google-serp-checker', 'content.feature3_desc') }}
                     </p>
                 </div>
             </div>
 
             <!-- SERP Features -->
             <div class="mb-16">
-                <h3 class="text-2xl font-black text-gray-900 mb-8 border-b-2 border-purple-100 pb-4">Understanding Google
-                    SERP Features</h3>
+                <h3 class="text-2xl font-black text-gray-900 mb-8 border-b-2 border-purple-100 pb-4">{{ __tool('google-serp-checker', 'content.serp_features_title') }}</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white/80 p-6 rounded-xl border border-purple-50 hover:bg-white transition-colors">
                         <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                            <span class="text-purple-500">★</span> Featured Snippets
+                            <span class="text-purple-500">★</span> {{ __tool('google-serp-checker', 'content.feature_snippet_title') }}
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Also known as "answer boxes", these appear about 12% of search queries. Our tool helps you check
-                            if you own this prime real estate.
+                            {{ __tool('google-serp-checker', 'content.feature_snippet_desc') }}
                         </p>
                     </div>
                     <div class="bg-white/80 p-6 rounded-xl border border-purple-50 hover:bg-white transition-colors">
                         <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                            <span class="text-purple-500">📍</span> Local Pack
+                            <span class="text-purple-500">📍</span> {{ __tool('google-serp-checker', 'content.feature_local_title') }}
                         </h4>
                         <p class="text-sm text-gray-600">
-                            The map-based list of 3 local businesses. Crucial for brick-and-mortar stores. Use our
-                            "Location" feature to verify your presence.
+                            {{ __tool('google-serp-checker', 'content.feature_local_desc') }}
                         </p>
                     </div>
                     <div class="bg-white/80 p-6 rounded-xl border border-purple-50 hover:bg-white transition-colors">
                         <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                            <span class="text-purple-500">❓</span> People Also Ask
+                            <span class="text-purple-500">❓</span> {{ __tool('google-serp-checker', 'content.feature_paa_title') }}
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Accordion-style questions related to the user's query. Ranking here can drive significant
-                            awareness traffic. Use our **serp keyword checker** to identify these opportunities.
+                            {{ __tool('google-serp-checker', 'content.feature_paa_desc') }}
                         </p>
                     </div>
                     <div class="bg-white/80 p-6 rounded-xl border border-purple-50 hover:bg-white transition-colors">
                         <h4 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-2">
-                            <span class="text-purple-500">ℹ️</span> Knowledge Panel
+                            <span class="text-purple-500">ℹ️</span> {{ __tool('google-serp-checker', 'content.feature_knowledge_title') }}
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Information boxes that appear on the right side of desktop results. Essential for brand
-                            authority and entity SEO.
+                            {{ __tool('google-serp-checker', 'content.feature_knowledge_desc') }}
                         </p>
                     </div>
                 </div>
@@ -230,39 +220,29 @@
 
             <!-- Deep Dive Content -->
             <div class="bg-white rounded-2xl p-8 mb-12 border-l-4 border-purple-500 shadow-sm">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">What is a SERP Checker & Analyzer?</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('google-serp-checker', 'content.what_is_title') }}</h3>
                 <p class="mb-6 text-gray-700 leading-relaxed">
-                    A <strong>Search Engine Results Page (SERP) Checker</strong> is an essential diagnostic tool for
-                    SEO professionals and business owners. It allows you to use a <strong>website SERP checker</strong> to
-                    view the results for a specific keyword
-                    as they would appear to a neutral user in a specific geographic location.
+                    {{ __tool('google-serp-checker', 'content.what_is_desc') }}
                 </p>
 
-                <h4 class="text-lg font-bold text-gray-900 mb-3">The "Google Bubble" Problem</h4>
+                <h4 class="text-lg font-bold text-gray-900 mb-3">{{ __tool('google-serp-checker', 'content.bubble_problem_title') }}</h4>
                 <p class="mb-4 text-gray-700">
-                    If you simply go to Google.com and search for your own keywords, the results are heavily biased.
-                    Google customizes results based on <strong>Your IP Address</strong>, <strong>Search History</strong>,
-                    and <strong>Device Type</strong>. This makes it hard to answer "<strong>what is my serp</strong>"
-                    accurately without a tool.
+                    {{ __tool('google-serp-checker', 'content.bubble_problem_desc') }}
                 </p>
                 <p class="text-gray-700 bg-purple-50 p-4 rounded-lg">
-                    Our <strong>Free Google SERP Checker</strong> bursts this bubble. By using the <strong>UULE
-                        parameter</strong>,
-                    we generate a specially encoded string that tells Google exactly where to simulate the <strong>online
-                        SERP tracking</strong> from,
-                    giving you 100% clean, unbiased data.
+                    {{ __tool('google-serp-checker', 'content.solution_text') }}
                 </p>
             </div>
 
             <!-- FAQ Section -->
             <div class="mb-8">
-                <h3 class="text-3xl font-black text-center text-gray-900 mb-10">Freqeuntly Asked Questions</h3>
+                <h3 class="text-3xl font-black text-center text-gray-900 mb-10">{{ __tool('google-serp-checker', 'faq.title') }}</h3>
                 <div class="space-y-4 max-w-3xl mx-auto">
                     <!-- FAQ Item 1 -->
                     <details class="group bg-white rounded-2xl shadow-sm border border-purple-100 overflow-hidden">
                         <summary
                             class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                            <span>Is this SERP Tool Free for unlimited searches?</span>
+                            <span>{{ __tool('google-serp-checker', 'faq.q1') }}</span>
                             <span class="transition-transform duration-300 group-open:rotate-180 text-purple-600">
                                 <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                     width="24">
@@ -271,9 +251,7 @@
                             </span>
                         </summary>
                         <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                            Yes! Our **serp tool free** of charge allows you to check as many keywords as you like without
-                            creating an account or paying a subscription fee. We believe in providing accessible **online
-                            serp rank checker** tools for everyone.
+                            {{ __tool('google-serp-checker', 'faq.a1') }}
                         </div>
                     </details>
 
@@ -281,7 +259,7 @@
                     <details class="group bg-white rounded-2xl shadow-sm border border-purple-100 overflow-hidden">
                         <summary
                             class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                            <span>How does the SERP Position Tool location feature work?</span>
+                            <span>{{ __tool('google-serp-checker', 'faq.q2') }}</span>
                             <span class="transition-transform duration-300 group-open:rotate-180 text-purple-600">
                                 <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                     width="24">
@@ -290,9 +268,7 @@
                             </span>
                         </summary>
                         <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                            We use Google's official <strong>UULE (Universal URL Location Encoded)</strong> parameter. When
-                            you enter a city, we find its precise GPS coordinates and encode them into the search request,
-                            forcing Google to show results as if you were physically standing in that city.
+                            {{ __tool('google-serp-checker', 'faq.a2') }}
                         </div>
                     </details>
 
@@ -300,7 +276,7 @@
                     <details class="group bg-white rounded-2xl shadow-sm border border-purple-100 overflow-hidden">
                         <summary
                             class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none p-6 hover:bg-gray-50 transition-colors">
-                            <span>Why does my SERP Google Ranking look different on Mobile?</span>
+                            <span>{{ __tool('google-serp-checker', 'faq.q3') }}</span>
                             <span class="transition-transform duration-300 group-open:rotate-180 text-purple-600">
                                 <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                     width="24">
@@ -309,10 +285,7 @@
                             </span>
                         </summary>
                         <div class="text-gray-600 p-6 pt-0 leading-relaxed">
-                            Google uses <strong>Mobile-First Indexing</strong>, meaning it predominantly uses the mobile
-                            version of the content for indexing and ranking. Mobile search results also have different
-                            layouts (more ads, different snippets). Use our "Device" selector to verify your mobile presence
-                            specifically with this **google serps tracker**.
+                            {{ __tool('google-serp-checker', 'faq.a3') }}
                         </div>
                     </details>
                 </div>
@@ -320,8 +293,9 @@
 
         </div>
     </div>
+@endsection
 
-    <!-- Hidden form implementation -->
+@push('scripts')
     <script>
         // Initialize elements
         const locationInput = document.getElementById('locationInput');
@@ -405,7 +379,9 @@
             }
         }
     </script>
+@endpush
 
+@push('styles')
     <style>
         @keyframes shine {
             100% {
@@ -434,4 +410,4 @@
             background: #c084fc;
         }
     </style>
-@endsection
+@endpush
