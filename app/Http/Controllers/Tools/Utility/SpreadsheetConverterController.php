@@ -15,16 +15,30 @@ use App\Models\Tool;
 
 class SpreadsheetConverterController extends Controller
 {
-    public function index($tool)
+    public function index(Request $request)
     {
-        $tool = Tool::where('slug', $tool)->firstOrFail();
+        // Get tool slug from route defaults
+        $toolSlug = $request->route()->parameter('tool') ?? $request->route()->defaults['tool'] ?? null;
+
+        if (!$toolSlug) {
+            abort(404, 'Tool not specified');
+        }
+
+        $tool = Tool::where('slug', $toolSlug)->firstOrFail();
         // Return valid view based on tool slug
         // excel-to-csv, csv-to-excel, xls-to-xlsx, xlsx-to-xls, google-sheets-to-excel, csv-to-sql
         return view("tools.spreadsheet.{$tool->slug}", compact('tool'));
     }
 
-    public function convert(Request $request, $tool)
+    public function convert(Request $request)
     {
+        // Get tool slug from route defaults
+        $tool = $request->route()->parameter('tool') ?? $request->route()->defaults['tool'] ?? null;
+
+        if (!$tool) {
+            abort(404, 'Tool not specified');
+        }
+
         $request->validate([
             'file' => 'required|file|max:10240', // 10MB max
             'delimiter' => 'nullable|string',
