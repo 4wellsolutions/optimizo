@@ -15,14 +15,14 @@ class SitemapController extends Controller
     {
         $languages = Language::where('is_active', true)->get();
 
-        $xml = '<?xml version="1.0" encoding="UTF-8"?>';
-        $xml .= '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+        $xml .= '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
 
         foreach ($languages as $language) {
-            $xml .= '<sitemap>';
-            $xml .= '<loc>' . url("/sitemap_{$language->code}.xml") . '</loc>';
-            $xml .= '<lastmod>' . now()->toAtomString() . '</lastmod>';
-            $xml .= '</sitemap>';
+            $xml .= '  <sitemap>' . "\n";
+            $xml .= '    <loc>' . url("/sitemap_{$language->code}.xml") . '</loc>' . "\n";
+            $xml .= '    <lastmod>' . now()->toAtomString() . '</lastmod>' . "\n";
+            $xml .= '  </sitemap>' . "\n";
         }
 
         $xml .= '</sitemapindex>';
@@ -44,16 +44,16 @@ class SitemapController extends Controller
         $tools = Tool::where('is_active', true)->get();
         $urlPrefix = $locale === 'en' ? '' : "/{$locale}";
 
-        $xml = '<?xml version="1.0" encoding="UTF-8"?>';
-        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">';
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' . "\n";
 
         // Homepage
-        $xml .= '<url>';
-        $xml .= '<loc>' . url($urlPrefix . '/') . '</loc>';
-        $xml .= '<changefreq>daily</changefreq>';
-        $xml .= '<priority>1.0</priority>';
-        $xml .= $this->addAlternateLinks('/');
-        $xml .= '</url>';
+        $xml .= '  <url>' . "\n";
+        $xml .= '    <loc>' . url($urlPrefix . '/') . '</loc>' . "\n";
+        $xml .= '    <changefreq>daily</changefreq>' . "\n";
+        $xml .= '    <priority>1.0</priority>' . "\n";
+        $xml .= '    ' . $this->addAlternateLinks('/') . "\n";
+        $xml .= '  </url>' . "\n";
 
         // Category pages
         $categories = [
@@ -64,22 +64,22 @@ class SitemapController extends Controller
         ];
 
         foreach ($categories as $slug => $route) {
-            $xml .= '<url>';
-            $xml .= '<loc>' . url($urlPrefix . '/' . $slug) . '</loc>';
-            $xml .= '<changefreq>weekly</changefreq>';
-            $xml .= '<priority>0.8</priority>';
-            $xml .= $this->addAlternateLinks('/' . $slug);
-            $xml .= '</url>';
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . url($urlPrefix . '/' . $slug) . '</loc>' . "\n";
+            $xml .= '    <changefreq>weekly</changefreq>' . "\n";
+            $xml .= '    <priority>0.8</priority>' . "\n";
+            $xml .= '    ' . $this->addAlternateLinks('/' . $slug) . "\n";
+            $xml .= '  </url>' . "\n";
         }
 
         // Tool pages
         foreach ($tools as $tool) {
-            $xml .= '<url>';
-            $xml .= '<loc>' . url($urlPrefix . '/' . $tool->slug) . '</loc>';
-            $xml .= '<changefreq>monthly</changefreq>';
-            $xml .= '<priority>0.6</priority>';
-            $xml .= $this->addAlternateLinks('/' . $tool->slug);
-            $xml .= '</url>';
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . url($urlPrefix . '/tools/' . $tool->slug) . '</loc>' . "\n";
+            $xml .= '    <changefreq>monthly</changefreq>' . "\n";
+            $xml .= '    <priority>0.6</priority>' . "\n";
+            $xml .= '    ' . $this->addAlternateLinks('/tools/' . $tool->slug) . "\n";
+            $xml .= '  </url>' . "\n";
         }
 
         $xml .= '</urlset>';
@@ -97,12 +97,65 @@ class SitemapController extends Controller
 
         foreach ($languages as $language) {
             $urlPrefix = $language->code === 'en' ? '' : "/{$language->code}";
-            $links .= '<xhtml:link rel="alternate" hreflang="' . $language->code . '" href="' . url($urlPrefix . $path) . '" />';
+            $links .= '<xhtml:link rel="alternate" hreflang="' . $language->code . '" href="' . url($urlPrefix . $path) . '" />' . "\n      ";
         }
 
         // Add x-default (English)
         $links .= '<xhtml:link rel="alternate" hreflang="x-default" href="' . url($path) . '" />';
 
         return $links;
+    }
+
+    /**
+     * Generate categories sitemap (for backward compatibility)
+     */
+    public function categories()
+    {
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' . "\n";
+
+        $categories = [
+            'youtube-tools' => 'YouTube Tools',
+            'seo-tools' => 'SEO Tools',
+            'utility-tools' => 'Utility Tools',
+            'network-tools' => 'Network Tools',
+        ];
+
+        foreach ($categories as $slug => $name) {
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . url('/' . $slug) . '</loc>' . "\n";
+            $xml .= '    <changefreq>weekly</changefreq>' . "\n";
+            $xml .= '    <priority>0.8</priority>' . "\n";
+            $xml .= '    ' . $this->addAlternateLinks('/' . $slug) . "\n";
+            $xml .= '  </url>' . "\n";
+        }
+
+        $xml .= '</urlset>';
+
+        return response($xml, 200)->header('Content-Type', 'application/xml');
+    }
+
+    /**
+     * Generate category-specific sitemap (for backward compatibility)
+     */
+    public function category($category)
+    {
+        $tools = Tool::where('is_active', true)->get();
+
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' . "\n";
+
+        foreach ($tools as $tool) {
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . url('/tools/' . $tool->slug) . '</loc>' . "\n";
+            $xml .= '    <changefreq>monthly</changefreq>' . "\n";
+            $xml .= '    <priority>0.6</priority>' . "\n";
+            $xml .= '    ' . $this->addAlternateLinks('/tools/' . $tool->slug) . "\n";
+            $xml .= '  </url>' . "\n";
+        }
+
+        $xml .= '</urlset>';
+
+        return response($xml, 200)->header('Content-Type', 'application/xml');
     }
 }
