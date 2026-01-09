@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('whois-lookup', 'seo.title'))
+@section('meta_description', __tool('whois-lookup', 'seo.description'))
+@section('meta_keywords', __tool('whois-lookup', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">
@@ -14,9 +15,11 @@
             <form id="whoisForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="domain" class="form-label text-base">Domain Name</label>
-                    <input type="text" id="domain" name="domain" class="form-input" placeholder="example.com" required>
-                    <p class="text-sm text-gray-500 mt-2">Enter domain without http:// or https://</p>
+                    <label for="domain"
+                        class="form-label text-base">{{ __tool('whois-lookup', 'form.domain_label') }}</label>
+                    <input type="text" id="domain" name="domain" class="form-input"
+                        placeholder="{{ __tool('whois-lookup', 'form.domain_placeholder') }}" required>
+                    <p class="text-sm text-gray-500 mt-2">{{ __tool('whois-lookup', 'content.form_hint') }}</p>
                 </div>
 
                 <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
@@ -24,99 +27,81 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <span>Lookup WHOIS</span>
+                    <span>{{ __tool('whois-lookup', 'form.button') }}</span>
                 </button>
             </form>
 
             <div id="statusMessage" class="hidden mt-6 p-4 rounded-xl"></div>
 
             <div id="resultSection" class="hidden mt-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-4">WHOIS Information</h3>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">{{ __tool('whois-lookup', 'results.title') }}</h3>
                 <div id="whoisData" class="bg-gray-50 p-4 rounded-xl"></div>
             </div>
         </div>
 
         <!-- SEO Content -->
         <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">What is WHOIS Lookup?</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{{ __tool('whois-lookup', 'content.what_is_title') }}</h2>
             <p class="text-gray-700 mb-4">
-                WHOIS Lookup is a query and response protocol used to search databases that store registered users or
-                assignees of internet resources, particularly domain names. When you perform a WHOIS lookup, you retrieve
-                detailed information about domain ownership, registration dates, expiration dates, registrar information,
-                and nameserver details. This tool is essential for domain research, cybersecurity investigations, trademark
-                protection, and verifying domain availability.
+                {{ __tool('whois-lookup', 'content.what_is_desc') }}
             </p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">Why Use WHOIS Lookup?</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">{{ __tool('whois-lookup', 'content.why_use_title') }}
+            </h2>
             <p class="text-gray-700 mb-4">
-                WHOIS lookup serves multiple critical purposes in the digital world. Website owners use it to verify domain
-                registration details and ensure their information is accurate. Security professionals rely on WHOIS data to
-                investigate phishing attempts, identify malicious domains, and track down cybercriminals. Legal teams use
-                WHOIS information for trademark disputes and intellectual property protection. Businesses use it to research
-                competitors, verify potential partners, and identify available domain names for acquisition. The
-                transparency provided by WHOIS data helps maintain accountability and trust in the domain name system.
+                {{ __tool('whois-lookup', 'content.why_use_desc') }}
             </p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">Key Information Provided</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">{{ __tool('whois-lookup', 'content.key_info_title') }}</h2>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                <li><strong>Registrant Information:</strong> Domain owner details (may be privacy protected)</li>
-                <li><strong>Registration Dates:</strong> When domain was registered and last updated</li>
-                <li><strong>Expiration Date:</strong> When domain registration expires</li>
-                <li><strong>Registrar:</strong> Company managing the domain registration</li>
-                <li><strong>Name Servers:</strong> DNS servers hosting the domain</li>
-                <li><strong>Domain Status:</strong> Current status codes and locks</li>
+                <li>{!! __tool('whois-lookup', 'content.key_info1') !!}</li>
+                <li>{!! __tool('whois-lookup', 'content.key_info2') !!}</li>
+                <li>{!! __tool('whois-lookup', 'content.key_info3') !!}</li>
+                <li>{!! __tool('whois-lookup', 'content.key_info4') !!}</li>
+                <li>{!! __tool('whois-lookup', 'content.key_info5') !!}</li>
+                <li>{!! __tool('whois-lookup', 'content.key_info6') !!}</li>
             </ul>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">How to Use</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">{{ __tool('whois-lookup', 'content.how_to_title') }}</h2>
             <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
-                <li>Enter the domain name you want to lookup</li>
-                <li>Click "Lookup WHOIS" button</li>
-                <li>Review comprehensive registration information</li>
-                <li>Use the data for your research or verification needs</li>
+                <li>{{ __tool('whois-lookup', 'content.how_to1') }}</li>
+                <li>{{ __tool('whois-lookup', 'content.how_to2') }}</li>
+                <li>{{ __tool('whois-lookup', 'content.how_to3') }}</li>
+                <li>{{ __tool('whois-lookup', 'content.how_to4') }}</li>
             </ol>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">Privacy and WHOIS</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">{{ __tool('whois-lookup', 'content.privacy_title') }}</h2>
             <p class="text-gray-700 mb-4">
-                Many domain registrars now offer WHOIS privacy protection services that mask personal information from
-                public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation
-                while still maintaining the essential technical information needed for domain operation. GDPR regulations
-                have also impacted WHOIS data availability, with many European registrars redacting personal information to
-                comply with privacy laws.
+                {{ __tool('whois-lookup', 'content.privacy_desc') }}
             </p>
         </div>
 
         <!-- FAQ -->
         <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-xl p-6 md:p-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('whois-lookup', 'faq.title') }}</h2>
             <div class="space-y-4">
                 <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Is WHOIS lookup legal?</h3>
-                    <p class="text-gray-700">Yes, WHOIS lookup is completely legal. WHOIS data is publicly available
-                        information required by ICANN for domain registration.</p>
+                    <h3 class="font-semibold text-gray-900 mb-2">{{ __tool('whois-lookup', 'faq.q1') }}</h3>
+                    <p class="text-gray-700">{{ __tool('whois-lookup', 'faq.a1') }}</p>
                 </div>
                 <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Why can't I see the domain owner's name?</h3>
-                    <p class="text-gray-700">Many domain owners use privacy protection services that mask personal
-                        information. You'll see the privacy service's details instead.</p>
+                    <h3 class="font-semibold text-gray-900 mb-2">{{ __tool('whois-lookup', 'faq.q2') }}</h3>
+                    <p class="text-gray-700">{{ __tool('whois-lookup', 'faq.a2') }}</p>
                 </div>
                 <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">How often is WHOIS data updated?</h3>
-                    <p class="text-gray-700">WHOIS data is updated in real-time when changes are made to domain
-                        registration, but it may take 24-48 hours to propagate globally.</p>
+                    <h3 class="font-semibold text-gray-900 mb-2">{{ __tool('whois-lookup', 'faq.q3') }}</h3>
+                    <p class="text-gray-700">{{ __tool('whois-lookup', 'faq.a3') }}</p>
                 </div>
                 <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Can I use WHOIS to find expired domains?</h3>
-                    <p class="text-gray-700">Yes, checking the expiration date in WHOIS data helps identify domains that are
-                        expiring soon or have recently expired.</p>
-                </div>
-                <div class="bg-white rounded-xl p-5 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">What does domain status mean?</h3>
-                    <p class="text-gray-700">Domain status codes indicate the current state of a domain (active, locked,
-                        pending transfer, etc.) and what operations are allowed.</p>
+                    <h3 class="font-semibold text-gray-900 mb-2">{{ __tool('whois-lookup', 'faq.q4') }}</h3>
+                    <p class="text-gray-700">{{ __tool('whois-lookup', 'faq.a4') }}</p>
                 </div>
             </div>
         </div>
     </div>
+@endsection
+
+@push('scripts')
 
     <script>
         const form = document.getElementById('whoisForm');
@@ -134,7 +119,7 @@
 
             submitBtn.disabled = true;
             submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
-            btnText.textContent = 'Looking up...';
+            btnText.textContent = '{{ __tool('whois-lookup', 'form.button_loading') }}';
             btnIcon.classList.add('animate-spin');
 
             statusMessage.classList.add('hidden');
@@ -167,9 +152,9 @@
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
-                btnText.textContent = 'Lookup WHOIS';
+                btnText.textContent = '{{ __tool('whois-lookup', 'form.button') }}';
                 btnIcon.classList.remove('animate-spin');
             }
         });
     </script>
-@endsection
+@endpush

@@ -1,10 +1,8 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
+@section('title', __tool('redirect-checker', 'seo.title'))
+@section('meta_description', __tool('redirect-checker', 'seo.description'))
+@section('meta_keywords', __tool('redirect-checker', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-5xl mx-auto">
@@ -16,17 +14,17 @@
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-purple-200 mb-8">
             <div class="mb-6">
                 <label class="block text-sm font-bold text-gray-700 mb-2">
-                    Enter URL(s) to Check (One per line, max 10)
+                    {{ __tool('redirect-checker', 'form.url_label') }}
                 </label>
                 <textarea id="urlInput" rows="6"
                     class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent font-mono text-sm"
-                    placeholder="https://example.com&#10;https://another-site.com&#10;https://third-site.com"></textarea>
+                    placeholder="{{ __tool('redirect-checker', 'form.url_placeholder') }}"></textarea>
                 <div class="flex items-center justify-between mt-2">
                     <span class="text-xs text-gray-500" id="urlCount">0 / 10 URLs</span>
                     <label class="inline-flex items-center cursor-pointer">
                         <input type="checkbox" id="checkCanonical"
                             class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
-                        <span class="ml-2 text-sm text-gray-700">Also check domain canonical (www vs non-www)</span>
+                        <span class="ml-2 text-sm text-gray-700">{{ __tool('redirect-checker', 'form.canonical_check') }}</span>
                     </label>
                 </div>
             </div>
@@ -38,25 +36,22 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        User Agent
+                        {{ __tool('redirect-checker', 'form.user_agent_label') }}
                     </div>
                 </label>
                 <div class="relative">
                     <select id="userAgent"
                         class="appearance-none w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm bg-white pr-10 cursor-pointer hover:border-purple-300 transition-colors">
-                        <option value="">Default (Browser)</option>
-                        <option value="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)">Googlebot
-                            (Google)</option>
-                        <option value="Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)">Bingbot
-                            (Bing)</option>
-                        <option value="facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)">Facebook
-                            Crawler</option>
+                        <option value="">{{ __tool('redirect-checker', 'form.user_agent_default') }}</option>
+                        <option value="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)">{{ __tool('redirect-checker', 'form.user_agent_googlebot') }}</option>
+                        <option value="Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)">{{ __tool('redirect-checker', 'form.user_agent_bingbot') }}</option>
+                        <option value="facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)">{{ __tool('redirect-checker', 'form.user_agent_facebook') }}</option>
                         <option
-                            value="Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1">
-                            iPhone (Safari)</option>
+                            value="Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)">
+                            {{ __tool('redirect-checker', 'form.user_agent_iphone') }}</option>
                         <option
-                            value="Mozilla/5.0 (Linux; Android 10; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Mobile Safari/537.36">
-                            Android (Chrome)</option>
+                            value="Mozilla/5.0 (Linux; Android 10)">
+                            {{ __tool('redirect-checker', 'form.user_agent_android') }}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-purple-600">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,13 +66,13 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
-                <span>Check URLs</span>
+                <span>{{ __tool('redirect-checker', 'form.button') }}</span>
             </button>
 
             <!-- Loading State -->
             <div id="loading" class="hidden text-center py-8">
                 <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div>
-                <p class="mt-4 text-gray-600" id="loadingText">Analyzing URL...</p>
+                <p class="mt-4 text-gray-600" id="loadingText">{{ __tool('redirect-checker', 'loading.analyzing') }}</p>
                 <div id="bulkProgress" class="hidden mt-4">
                     <div class="w-full bg-gray-200 rounded-full h-2">
                         <div id="progressBar" class="bg-purple-600 h-2 rounded-full transition-all" style="width: 0%"></div>
@@ -108,189 +103,137 @@
                             d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Redirect & HTTP Status Checker Tool</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Complete URL analysis with redirect tracing, status
-                    code checking, and loop detection</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{{ __tool('redirect-checker', 'content.main_title') }}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ __tool('redirect-checker', 'content.main_subtitle') }}</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Analyze HTTP status codes, trace redirect chains, detect 301 and 302 redirects, identify broken links, and
-                find redirect loops with our comprehensive free tool. Essential for SEO optimization, website debugging,
-                migration planning, and ensuring proper URL structure. Check any URL instantly to see the complete redirect
-                path, response codes, and potential issues.
+                {{ __tool('redirect-checker', 'content.intro') }}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Key Features</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('redirect-checker', 'content.features_title') }}</h3>
             <div class="grid md:grid-cols-2 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔄</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Bulk URL Checking</h4>
-                    <p class="text-gray-600 text-sm">Check up to 10 URLs simultaneously with progress tracking</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('redirect-checker', 'content.feature1_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('redirect-checker', 'content.feature1_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🌐</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Canonical Domain Check</h4>
-                    <p class="text-gray-600 text-sm">Verify www vs non-www consistency for SEO</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('redirect-checker', 'content.feature2_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('redirect-checker', 'content.feature2_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔍</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Loop Detection</h4>
-                    <p class="text-gray-600 text-sm">Visual diagram showing exact redirect loop patterns</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('redirect-checker', 'content.feature3_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('redirect-checker', 'content.feature3_desc') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📊</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Complete Chain Analysis</h4>
-                    <p class="text-gray-600 text-sm">Trace full redirect paths with status codes and timing</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('redirect-checker', 'content.feature4_title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('redirect-checker', 'content.feature4_desc') }}</p>
                 </div>
             </div>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">What Are HTTP Redirects?</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ __tool('redirect-checker', 'content.what_are_redirects_title') }}</h3>
             <p class="text-gray-700 leading-relaxed mb-4">
-                HTTP redirects are server responses that tell browsers and search engines that a requested URL has moved to
-                a
-                different location. When you visit a URL that redirects, your browser automatically follows the redirect
-                chain
-                until it reaches the final destination. Redirects are essential for website maintenance, URL restructuring,
-                and SEO preservation during site migrations.
+                {{ __tool('redirect-checker', 'content.what_are_redirects_desc') }}
             </p>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Understanding HTTP Status Codes</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ __tool('redirect-checker', 'content.status_codes_title') }}</h3>
             <div class="grid md:grid-cols-2 gap-4 mb-6">
                 <div class="bg-white rounded-lg p-4 border-2 border-green-200">
-                    <h4 class="font-bold text-green-900 mb-2">✅ 2xx Success Codes</h4>
-                    <p class="text-gray-700 text-sm mb-2"><strong>200 OK:</strong> Request successful, page loaded</p>
-                    <p class="text-gray-700 text-sm mb-2"><strong>201 Created:</strong> Resource successfully created</p>
-                    <p class="text-gray-700 text-sm">These indicate successful requests with no issues</p>
+                    <h4 class="font-bold text-green-900 mb-2">{{ __tool('redirect-checker', 'content.status_2xx_title') }}</h4>
+                    <p class="text-gray-700 text-sm">{{ __tool('redirect-checker', 'content.status_2xx_desc') }}</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-blue-200">
-                    <h4 class="font-bold text-blue-900 mb-2">🔄 3xx Redirect Codes</h4>
-                    <p class="text-gray-700 text-sm mb-2"><strong>301:</strong> Permanent redirect (SEO-friendly)</p>
-                    <p class="text-gray-700 text-sm mb-2"><strong>302:</strong> Temporary redirect</p>
-                    <p class="text-gray-700 text-sm mb-2"><strong>307/308:</strong> Temporary/Permanent (method preserved)
-                    </p>
-                    <p class="text-gray-700 text-sm">URL has moved to a new location</p>
+                    <h4 class="font-bold text-blue-900 mb-2">{{ __tool('redirect-checker', 'content.status_3xx_title') }}</h4>
+                    <p class="text-gray-700 text-sm">{{ __tool('redirect-checker', 'content.status_3xx_desc') }}</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-yellow-200">
-                    <h4 class="font-bold text-yellow-900 mb-2">⚠️ 4xx Client Error Codes</h4>
-                    <p class="text-gray-700 text-sm mb-2"><strong>404 Not Found:</strong> Page doesn't exist</p>
-                    <p class="text-gray-700 text-sm mb-2"><strong>403 Forbidden:</strong> Access denied</p>
-                    <p class="text-gray-700 text-sm mb-2"><strong>410 Gone:</strong> Permanently removed</p>
-                    <p class="text-gray-700 text-sm">Request error on client side</p>
+                    <h4 class="font-bold text-yellow-900 mb-2">{{ __tool('redirect-checker', 'content.status_4xx_title') }}</h4>
+                    <p class="text-gray-700 text-sm">{{ __tool('redirect-checker', 'content.status_4xx_desc') }}</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-red-200">
-                    <h4 class="font-bold text-red-900 mb-2">❌ 5xx Server Error Codes</h4>
-                    <p class="text-gray-700 text-sm mb-2"><strong>500 Internal Server Error:</strong> Server crashed</p>
-                    <p class="text-gray-700 text-sm mb-2"><strong>502 Bad Gateway:</strong> Invalid response</p>
-                    <p class="text-gray-700 text-sm mb-2"><strong>503 Service Unavailable:</strong> Server overloaded</p>
-                    <p class="text-gray-700 text-sm">Server-side errors</p>
+                    <h4 class="font-bold text-red-900 mb-2">{{ __tool('redirect-checker', 'content.status_5xx_title') }}</h4>
+                    <p class="text-gray-700 text-sm">{{ __tool('redirect-checker', 'content.status_5xx_desc') }}</p>
                 </div>
             </div>
 
             <h3 class="text-2xl font-bold text-gray-900 mb-3">301 vs 302 Redirects: Which to Use?</h3>
             <div class="grid md:grid-cols-2 gap-4 mb-6">
                 <div class="bg-white rounded-lg p-4 border-2 border-purple-200">
-                    <h4 class="font-bold text-purple-900 mb-2">🔗 301 Permanent Redirect</h4>
-                    <p class="text-gray-700 text-sm mb-3">
-                        <strong>When to use:</strong> Content permanently moved to a new URL
-                    </p>
-                    <ul class="text-gray-700 text-sm space-y-1 mb-3">
-                        <li>• Passes 90-99% of link equity (SEO value)</li>
-                        <li>• Search engines update their index</li>
-                        <li>• Browsers cache the redirect</li>
-                        <li>• Best for site migrations and URL changes</li>
+                    <h4 class="font-bold text-purple-900 mb-3">{{ __tool('redirect-checker', 'content.redirect_301_title') }}</h4>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>{!! __tool('redirect-checker', 'content.redirect_301_when') !!}</li>
+                        <li>{!! __tool('redirect-checker', 'content.redirect_301_seo') !!}</li>
+                        <li>{!! __tool('redirect-checker', 'content.redirect_301_cache') !!}</li>
                     </ul>
-                    <p class="text-gray-700 text-sm">
-                        <strong>SEO Impact:</strong> Positive - preserves rankings
-                    </p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-pink-200">
-                    <h4 class="font-bold text-pink-900 mb-2">🔄 302 Temporary Redirect</h4>
-                    <p class="text-gray-700 text-sm mb-3">
-                        <strong>When to use:</strong> Content temporarily at different URL
-                    </p>
-                    <ul class="text-gray-700 text-sm space-y-1 mb-3">
-                        <li>• Does NOT pass full link equity</li>
-                        <li>• Search engines keep original URL indexed</li>
-                        <li>• Not cached by browsers</li>
-                        <li>• Use for A/B testing, maintenance pages</li>
+                    <h4 class="font-bold text-pink-900 mb-3">{{ __tool('redirect-checker', 'content.redirect_302_title') }}</h4>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>{!! __tool('redirect-checker', 'content.redirect_302_when') !!}</li>
+                        <li>{!! __tool('redirect-checker', 'content.redirect_302_seo') !!}</li>
+                        <li>{!! __tool('redirect-checker', 'content.redirect_302_cache') !!}</li>
                     </ul>
-                    <p class="text-gray-700 text-sm">
-                        <strong>SEO Impact:</strong> Neutral - temporary change
-                    </p>
                 </div>
             </div>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Why Check Redirects?</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ __tool('redirect-checker', 'content.why_check_title') }}</h3>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6 leading-relaxed">
-                <li><strong>SEO Optimization:</strong> Ensure redirects pass link equity and don't harm rankings</li>
-                <li><strong>Site Migrations:</strong> Verify all old URLs properly redirect to new locations</li>
-                <li><strong>Broken Link Detection:</strong> Find 404 errors and broken redirect chains</li>
-                <li><strong>Performance Issues:</strong> Identify excessive redirect chains slowing page load</li>
-                <li><strong>Redirect Loop Detection:</strong> Catch circular redirects causing infinite loops</li>
-                <li><strong>Security Audits:</strong> Verify redirect destinations and prevent malicious redirects</li>
-                <li><strong>User Experience:</strong> Ensure visitors reach intended content quickly</li>
-                <li><strong>Analytics Accuracy:</strong> Confirm tracking codes work through redirect chains</li>
+                <li>{!! __tool('redirect-checker', 'content.why_check_1') !!}</li>
+                <li>{!! __tool('redirect-checker', 'content.why_check_2') !!}</li>
+                <li>{!! __tool('redirect-checker', 'content.why_check_3') !!}</li>
+                <li>{!! __tool('redirect-checker', 'content.why_check_4') !!}</li>
+                <li>{!! __tool('redirect-checker', 'content.why_check_5') !!}</li>
+                <li>{!! __tool('redirect-checker', 'content.why_check_6') !!}</li>
+                <li>{!! __tool('redirect-checker', 'content.why_check_7') !!}</li>
             </ul>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">What Are Redirect Chains?</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ __tool('redirect-checker', 'content.redirect_chains_title') }}</h3>
             <p class="text-gray-700 leading-relaxed mb-4">
-                A redirect chain occurs when a URL redirects to another URL, which then redirects to another, and so on. For
-                example: URL A → URL B → URL C → Final URL. Each hop in the chain adds latency and dilutes SEO value. Best
-                practice is to redirect directly to the final destination (URL A → Final URL) to minimize load time and
-                preserve maximum link equity.
+                {{ __tool('redirect-checker', 'content.redirect_chains_desc') }}
             </p>
-            <div class="bg-white rounded-lg p-4 border-2 border-gray-200 mb-6">
-                <p class="text-gray-700 leading-relaxed mb-2">
-                    <strong>Recommended:</strong> 0-1 redirects (direct or single hop)
-                </p>
-                <p class="text-gray-700 leading-relaxed mb-2">
-                    <strong>Acceptable:</strong> 2-3 redirects (minor performance impact)
-                </p>
-                <p class="text-gray-700 leading-relaxed">
-                    <strong>Problematic:</strong> 4+ redirects (significant SEO and speed issues)
-                </p>
+            <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-5 border-2 border-yellow-200 mb-6">
+                <h4 class="font-bold text-yellow-900 mb-3">🚦 Redirect Chain Impact</h4>
+                <ul class="text-yellow-800 text-sm space-y-2">
+                    <li>{!! __tool('redirect-checker', 'content.chain_recommended') !!}</li>
+                    <li>{!! __tool('redirect-checker', 'content.chain_acceptable') !!}</li>
+                    <li>{!! __tool('redirect-checker', 'content.chain_problematic') !!}</li>
+                </ul>
             </div>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">What Are Redirect Loops?</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
-                A redirect loop happens when URL A redirects to URL B, which redirects back to URL A, creating an infinite
-                cycle. Browsers detect this and show an error like "Too many redirects" or "Redirect loop detected." Common
-                causes include misconfigured .htaccess rules, conflicting redirect plugins, incorrect server settings, or
-                HTTPS/HTTP redirect conflicts. Our tool detects these loops instantly.
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ __tool('redirect-checker', 'content.redirect_loops_title') }}</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                {{ __tool('redirect-checker', 'content.redirect_loops_desc') }}
             </p>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Common Redirect Issues & Solutions</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ __tool('redirect-checker', 'content.common_issues_title') }}</h3>
             <div class="space-y-3 mb-6">
                 <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
-                    <h4 class="font-bold text-gray-900 mb-2">🔴 Redirect Chain Too Long</h4>
-                    <p class="text-gray-700 text-sm mb-2"><strong>Problem:</strong> Multiple redirects slow page load and
-                        hurt SEO</p>
-                    <p class="text-gray-700 text-sm"><strong>Solution:</strong> Update redirects to point directly to final
-                        destination</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('redirect-checker', 'content.issue1_title') }}</h4>
+                    <p class="text-gray-700 text-sm mb-2">{!! __tool('redirect-checker', 'content.issue1_problem') !!}</p>
+                    <p class="text-gray-700 text-sm">{!! __tool('redirect-checker', 'content.issue1_solution') !!}</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
-                    <h4 class="font-bold text-gray-900 mb-2">🔴 Mixed 301 and 302 Redirects</h4>
-                    <p class="text-gray-700 text-sm mb-2"><strong>Problem:</strong> Inconsistent redirect types confuse
-                        search engines</p>
-                    <p class="text-gray-700 text-sm"><strong>Solution:</strong> Use 301 for permanent moves, 302 only for
-                        temporary</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('redirect-checker', 'content.issue2_title') }}</h4>
+                    <p class="text-gray-700 text-sm mb-2">{!! __tool('redirect-checker', 'content.issue2_problem') !!}</p>
+                    <p class="text-gray-700 text-sm">{!! __tool('redirect-checker', 'content.issue2_solution') !!}</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
-                    <h4 class="font-bold text-gray-900 mb-2">🔴 Redirect to 404 Error</h4>
-                    <p class="text-gray-700 text-sm mb-2"><strong>Problem:</strong> Redirect points to non-existent page</p>
-                    <p class="text-gray-700 text-sm"><strong>Solution:</strong> Update redirect to valid destination or
-                        remove it</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('redirect-checker', 'content.issue3_title') }}</h4>
+                    <p class="text-gray-700 text-sm mb-2">{!! __tool('redirect-checker', 'content.issue3_problem') !!}</p>
+                    <p class="text-gray-700 text-sm">{!! __tool('redirect-checker', 'content.issue3_solution') !!}</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
-                    <h4 class="font-bold text-gray-900 mb-2">🔴 HTTPS/HTTP Redirect Loop</h4>
-                    <p class="text-gray-700 text-sm mb-2"><strong>Problem:</strong> Site redirects between HTTP and HTTPS
-                        infinitely</p>
-                    <p class="text-gray-700 text-sm"><strong>Solution:</strong> Fix SSL configuration and .htaccess rules
-                    </p>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('redirect-checker', 'content.issue4_title') }}</h4>
+                    <p class="text-gray-700 text-sm mb-2">{!! __tool('redirect-checker', 'content.issue4_problem') !!}</p>
+                    <p class="text-gray-700 text-sm">{!! __tool('redirect-checker', 'content.issue4_solution') !!}</p>
                 </div>
             </div>
 
@@ -301,58 +244,47 @@
                             d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
                             clip-rule="evenodd" />
                     </svg>
-                    SEO Best Practices for Redirects
+                    {{ __tool('redirect-checker', 'content.best_practices_title') }}
                 </h4>
                 <ul class="text-yellow-800 text-sm leading-relaxed space-y-2">
-                    <li>• Always use 301 redirects for permanent URL changes to preserve SEO value</li>
-                    <li>• Minimize redirect chains - redirect directly to final destination when possible</li>
-                    <li>• Avoid redirect loops at all costs - they break user experience and SEO</li>
-                    <li>• Update internal links instead of relying on redirects</li>
-                    <li>• Monitor redirect performance regularly with tools like this</li>
-                    <li>• Keep redirects active for at least 1 year after URL changes</li>
-                    <li>• Use 302 redirects sparingly and only for truly temporary situations</li>
+                    <li>{{ __tool('redirect-checker', 'content.best_practice1') }}</li>
+                    <li>{{ __tool('redirect-checker', 'content.best_practice2') }}</li>
+                    <li>{{ __tool('redirect-checker', 'content.best_practice3') }}</li>
+                    <li>{{ __tool('redirect-checker', 'content.best_practice4') }}</li>
+                    <li>{{ __tool('redirect-checker', 'content.best_practice5') }}</li>
+                    <li>{{ __tool('redirect-checker', 'content.best_practice6') }}</li>
+                    <li>{{ __tool('redirect-checker', 'content.best_practice7') }}</li>
                 </ul>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ __tool('redirect-checker', 'faq.title') }}</h3>
             <div class="space-y-4">
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">How many redirects are too many?</h4>
-                    <p class="text-gray-700 leading-relaxed">Google recommends keeping redirect chains to a maximum of 3-5
-                        hops, but ideally you should have 0-1 redirects. Each redirect adds latency (typically 100-300ms)
-                        and
-                        dilutes link equity by approximately 10-15% per hop.</p>
+                <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('redirect-checker', 'faq.q1') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('redirect-checker', 'faq.a1') }}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Do redirects hurt SEO?</h4>
-                    <p class="text-gray-700 leading-relaxed">301 redirects are SEO-friendly and pass 90-99% of link equity
-                        to
-                        the destination URL. However, long redirect chains, redirect loops, and excessive 302 redirects can
-                        harm SEO by slowing page load and confusing search engines.</p>
+                <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('redirect-checker', 'faq.q2') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('redirect-checker', 'faq.a2') }}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What causes redirect loops?</h4>
-                    <p class="text-gray-700 leading-relaxed">Common causes include misconfigured .htaccess or nginx rules,
-                        conflicting WordPress plugins, incorrect HTTPS redirects, CDN configuration errors, or circular
-                        redirect rules where URL A points to URL B which points back to URL A.</p>
+                <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('redirect-checker', 'faq.q3') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('redirect-checker', 'faq.a3') }}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Should I use 301 or 302 for site maintenance?</h4>
-                    <p class="text-gray-700 leading-relaxed">Use 302 (or 503 Service Unavailable) for temporary maintenance
-                        pages. This tells search engines the change is temporary and they should keep the original URL
-                        indexed.
-                        Never use 301 for maintenance as it signals permanent removal.</p>
+                <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('redirect-checker', 'faq.q4') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('redirect-checker', 'faq.a4') }}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">How do I fix a broken redirect chain?</h4>
-                    <p class="text-gray-700 leading-relaxed">Identify the broken link in the chain (usually a 404 or 500
-                        error), then update the redirect rule to skip the broken URL and point directly to a working
-                        destination. Test the entire chain after making changes.</p>
+                <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('redirect-checker', 'faq.q5') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('redirect-checker', 'faq.a5') }}</p>
                 </div>
             </div>
         </div>
     </div>
+@endsection
 
+@push('styles')
     <style>
         .tab-btn {
             border-bottom-color: transparent;
@@ -370,7 +302,9 @@
             border-bottom-color: #9333ea;
         }
     </style>
+@endpush
 
+@push('scripts')
     <script>
         // Global data storage
         let resultsStore = [];
@@ -539,12 +473,12 @@
                     const headerEl = document.createElement('div');
                     headerEl.className = 'mt-6 mb-3 flex items-center gap-2 px-1';
                     headerEl.innerHTML = `
-                                <div class="h-px bg-gray-200 flex-grow"></div>
-                                <span class="text-sm font-bold text-gray-500 uppercase tracking-wider bg-gray-50 px-3 rounded-full border border-gray-200">
-                                    ${result.baseDomain}
-                                </span>
-                                <div class="h-px bg-gray-200 flex-grow"></div>
-                            `;
+                                    <div class="h-px bg-gray-200 flex-grow"></div>
+                                    <span class="text-sm font-bold text-gray-500 uppercase tracking-wider bg-gray-50 px-3 rounded-full border border-gray-200">
+                                        ${result.baseDomain}
+                                    </span>
+                                    <div class="h-px bg-gray-200 flex-grow"></div>
+                                `;
                     container.appendChild(headerEl);
                     lastBaseDomain = result.baseDomain;
                 }
@@ -572,30 +506,30 @@
                 const hasChain = chain.length > 1;
 
                 resultEl.innerHTML = `
-                                                <div class="p-4 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors" onclick="toggleChain(${index})">
-                                                    <div class="flex items-center gap-3 overflow-hidden">
-                                                        <div class="text-gray-400">
-                                                            ${hasChain ? '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>' : ''}
+                                                    <div class="p-4 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors" onclick="toggleChain(${index})">
+                                                        <div class="flex items-center gap-3 overflow-hidden">
+                                                            <div class="text-gray-400">
+                                                                ${hasChain ? '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>' : ''}
+                                                            </div>
+                                                            <div class="font-mono text-sm text-gray-700 truncate pr-4">${displayUrl}</div>
                                                         </div>
-                                                        <div class="font-mono text-sm text-gray-700 truncate pr-4">${displayUrl}</div>
+                                                        <div class="flex items-center gap-3 shrink-0">
+                                                            ${hasChain ? `<button class="text-gray-400 hover:text-purple-600 transition-transform duration-200" id="chevron-${index}">
+                                                                <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                                            </button>` : ''}
+                                                            <span class="px-2.5 py-1 rounded text-xs font-bold ${finalStatusClass}">${finalStatus}</span>
+                                                            <button onclick="copyToClipboard('${displayUrl}', event)" class="text-gray-400 hover:text-gray-600" title="Copy URL">
+                                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <div class="flex items-center gap-3 shrink-0">
-                                                        ${hasChain ? `<button class="text-gray-400 hover:text-purple-600 transition-transform duration-200" id="chevron-${index}">
-                                                            <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                                                        </button>` : ''}
-                                                        <span class="px-2.5 py-1 rounded text-xs font-bold ${finalStatusClass}">${finalStatus}</span>
-                                                        <button onclick="copyToClipboard('${displayUrl}', event)" class="text-gray-400 hover:text-gray-600" title="Copy URL">
-                                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
 
-                                                ${hasChain ? `
-                                                <div id="chain-${index}" class="hidden bg-gray-50 border-t border-gray-100">
-                                                    ${renderChainSteps(chain)}
-                                                </div>
-                                                ` : ''}
-                                            `;
+                                                    ${hasChain ? `
+                                                    <div id="chain-${index}" class="hidden bg-gray-50 border-t border-gray-100">
+                                                        ${renderChainSteps(chain)}
+                                                    </div>
+                                                    ` : ''}
+                                                `;
 
                 container.appendChild(resultEl);
             });
@@ -603,16 +537,16 @@
 
         function renderChainSteps(chain) {
             return chain.map((hop, i) => `
-                                            <div class="p-3 pl-8 border-b border-gray-100 last:border-0 flex items-center justify-between hover:bg-gray-100 transition-colors">
-                                                <div class="flex items-center gap-3 overflow-hidden">
-                                                    <div class="${hop.isRedirect ? 'text-blue-500' : (hop.isSuccess ? 'text-green-500' : 'text-gray-400')}">
-                                                         ${getStatusIconSVG(hop)}
+                                                <div class="p-3 pl-8 border-b border-gray-100 last:border-0 flex items-center justify-between hover:bg-gray-100 transition-colors">
+                                                    <div class="flex items-center gap-3 overflow-hidden">
+                                                        <div class="${hop.isRedirect ? 'text-blue-500' : (hop.isSuccess ? 'text-green-500' : 'text-gray-400')}">
+                                                             ${getStatusIconSVG(hop)}
+                                                        </div>
+                                                        <div class="font-mono text-xs text-gray-600 truncate">${hop.url}</div>
                                                     </div>
-                                                    <div class="font-mono text-xs text-gray-600 truncate">${hop.url}</div>
+                                                    ${hop.status !== '???' ? `<span class="px-2 py-0.5 rounded text-[10px] font-bold ${getStatusBadgeClass(hop)}">${hop.status}</span>` : ''}
                                                 </div>
-                                                ${hop.status !== '???' ? `<span class="px-2 py-0.5 rounded text-[10px] font-bold ${getStatusBadgeClass(hop)}">${hop.status}</span>` : ''}
-                                            </div>
-                                        `).join('');
+                                            `).join('');
         }
 
         function toggleChain(index) {
@@ -650,4 +584,4 @@
             });
         }
     </script>
-@endsection
+@endpush

@@ -67,6 +67,17 @@ if (!function_exists('__tool')) {
             'broken' => 'seo',
             'pdf' => 'seo',
             'on' => 'seo',
+            // Network tools
+            'dns' => 'network',
+            'domain' => 'network',
+            'ip' => 'network',
+            'ping' => 'network',
+            'port' => 'network',
+            'reverse' => 'network',
+            'traceroute' => 'network',
+            'whois' => 'network',
+            'what' => 'network',
+            'redirect' => 'network',
         ];
 
         // Special case: 'google' can be either spreadsheet or seo

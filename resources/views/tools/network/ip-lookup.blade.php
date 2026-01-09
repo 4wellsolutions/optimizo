@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('ip-lookup', 'seo.title'))
+@section('meta_description', __tool('ip-lookup', 'seo.description'))
+@section('meta_keywords', __tool('ip-lookup', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">
@@ -15,8 +16,9 @@
             <form id="ipForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="ipAddress" class="form-label text-base">IP Address</label>
-                    <input type="text" id="ipAddress" name="ip_address" class="form-input" placeholder="8.8.8.8" required>
+                    <label for="ipAddress" class="form-label text-base">{{ __tool('ip-lookup', 'form.ip_label') }}</label>
+                    <input type="text" id="ipAddress" name="ip_address" class="form-input"
+                        placeholder="{{ __tool('ip-lookup', 'form.ip_placeholder') }}" required>
                 </div>
 
                 <button type="submit" class="btn-primary w-full justify-center text-lg py-4">
@@ -24,7 +26,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <span>Lookup IP Address</span>
+                    <span>{{ __tool('ip-lookup', 'form.button') }}</span>
                 </button>
             </form>
 
@@ -32,7 +34,7 @@
             <div id="statusMessage" class="hidden mt-6 p-4 rounded-xl"></div>
 
             <div id="resultSection" class="hidden mt-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-4">IP Details</h3>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">{{ __tool('ip-lookup', 'results.title') }}</h3>
                 <div class="grid md:grid-cols-2 gap-5" id="ipDetails"></div>
             </div>
         </div>
@@ -50,13 +52,10 @@
                             clip-rule="evenodd" />
                     </svg>
                 </span>
-                What is IP Lookup?
+                {{ __tool('ip-lookup', 'content.what_is_title') }}
             </h2>
             <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical
-                location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP
-                address. This information is valuable for network administrators, security professionals, website owners,
-                and anyone interested in understanding where internet traffic originates from.
+                {{ __tool('ip-lookup', 'content.what_is_desc') }}
             </p>
 
             <h2 class="text-3xl font-black text-gray-900 mb-6 mt-10 flex items-center gap-3">
@@ -68,78 +67,73 @@
                             clip-rule="evenodd" />
                     </svg>
                 </span>
-                Why Use IP Lookup?
+                {{ __tool('ip-lookup', 'content.why_use_title') }}
             </h2>
             <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content
-                localization, network troubleshooting, and compliance verification. Website owners use IP lookup to
-                understand their visitor demographics, while security teams use it to identify potential threats and block
-                malicious traffic. It's also useful for verifying VPN connections and understanding your own internet
-                footprint.
+                {{ __tool('ip-lookup', 'content.why_use_desc') }}
             </p>
 
-            <h2 class="text-3xl font-black text-gray-900 mb-6 mt-10">Key Features</h2>
+            <h2 class="text-3xl font-black text-gray-900 mb-6 mt-10">{{ __tool('ip-lookup', 'content.features_title') }}
+            </h2>
             <div class="grid md:grid-cols-2 gap-4">
                 <div
                     class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-cyan-500 hover:shadow-xl transition-shadow">
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">🌍 Geolocation Data</h3>
-                    <p class="text-gray-600">Country, region, city, and coordinates</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('ip-lookup', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('ip-lookup', 'content.feature1_desc') }}</p>
                 </div>
                 <div
                     class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-teal-500 hover:shadow-xl transition-shadow">
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">🏢 ISP Information</h3>
-                    <p class="text-gray-600">Internet Service Provider details</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('ip-lookup', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('ip-lookup', 'content.feature2_desc') }}</p>
                 </div>
                 <div
                     class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-blue-500 hover:shadow-xl transition-shadow">
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">🔗 Hostname Resolution</h3>
-                    <p class="text-gray-600">Domain name associated with IP</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('ip-lookup', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('ip-lookup', 'content.feature3_desc') }}</p>
                 </div>
                 <div
                     class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-cyan-600 hover:shadow-xl transition-shadow">
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">⚡ Instant Results</h3>
-                    <p class="text-gray-600">Fast and accurate lookup</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('ip-lookup', 'content.feature4_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('ip-lookup', 'content.feature4_desc') }}</p>
                 </div>
             </div>
         </div>
 
         <!-- FAQ Section -->
         <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10">
-            <h2 class="text-3xl font-black text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+            <h2 class="text-3xl font-black text-gray-900 mb-8 text-center">{{ __tool('ip-lookup', 'faq.title') }}</h2>
             <div class="space-y-5">
                 <div
                     class="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-cyan-500">
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Is IP lookup legal?</h3>
-                    <p class="text-gray-700 text-lg">Yes, IP lookup is completely legal. IP addresses are public information
-                        used for internet routing.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">{{ __tool('ip-lookup', 'faq.q1') }}</h3>
+                    <p class="text-gray-700 text-lg">{{ __tool('ip-lookup', 'faq.a1') }}</p>
                 </div>
                 <div
                     class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-teal-500">
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">How accurate is IP geolocation?</h3>
-                    <p class="text-gray-700 text-lg">IP geolocation is typically accurate to the city level, but exact
-                        location may vary by 50-100 miles.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">{{ __tool('ip-lookup', 'faq.q2') }}</h3>
+                    <p class="text-gray-700 text-lg">{{ __tool('ip-lookup', 'faq.a2') }}</p>
                 </div>
                 <div
                     class="bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-blue-500">
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Can I lookup my own IP?</h3>
-                    <p class="text-gray-700 text-lg">Yes, you can lookup your own IP address to see what information is
-                        publicly available about your connection.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">{{ __tool('ip-lookup', 'faq.q3') }}</h3>
+                    <p class="text-gray-700 text-lg">{{ __tool('ip-lookup', 'faq.a3') }}</p>
                 </div>
                 <div
                     class="bg-gradient-to-r from-cyan-50 to-teal-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-cyan-600">
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">What's the difference between IPv4 and IPv6?</h3>
-                    <p class="text-gray-700 text-lg">IPv4 uses 32-bit addresses (e.g., 192.168.1.1) while IPv6 uses 128-bit
-                        addresses for more available IPs.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">{{ __tool('ip-lookup', 'faq.q4') }}</h3>
+                    <p class="text-gray-700 text-lg">{{ __tool('ip-lookup', 'faq.a4') }}</p>
                 </div>
                 <div
                     class="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-teal-600">
-                    <h3 class="font-bold text-xl text-gray-900 mb-3">Can IP lookup identify a specific person?</h3>
-                    <p class="text-gray-700 text-lg">No, IP lookup only shows ISP and general location. Specific user
-                        identification requires ISP cooperation.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3">{{ __tool('ip-lookup', 'faq.q5') }}</h3>
+                    <p class="text-gray-700 text-lg">{{ __tool('ip-lookup', 'faq.a5') }}</p>
                 </div>
             </div>
         </div>
     </div>
+@endsection
+
+@push('scripts')
 
     <script>
         const form = document.getElementById('ipForm');
@@ -158,7 +152,7 @@
             // Show loading state
             submitBtn.disabled = true;
             submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
-            btnText.textContent = 'Looking up...';
+            btnText.textContent = '{{ __tool('ip-lookup', 'js.looking_up') }}';
             btnIcon.classList.add('animate-spin');
 
             statusMessage.classList.add('hidden');
@@ -175,43 +169,43 @@
 
                 if (data.success) {
                     displayResults(data.data);
-                    showMessage('✓ IP lookup successful!', 'success');
+                    showMessage('{{ __tool('ip-lookup', 'js.success') }}', 'success');
                     resultSection.classList.remove('hidden');
                 } else {
                     showMessage('✗ ' + data.error, 'error');
                 }
             } catch (error) {
-                showMessage('✗ An error occurred. Please try again.', 'error');
+                showMessage('{{ __tool('ip-lookup', 'js.error') }}', 'error');
             } finally {
                 // Reset button state
                 submitBtn.disabled = false;
                 submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
-                btnText.textContent = 'Lookup IP Address';
+                btnText.textContent = '{{ __tool('ip-lookup', 'form.button') }}';
                 btnIcon.classList.remove('animate-spin');
             }
         });
 
         function displayResults(data) {
             const fields = [
-                { label: 'IP Address', value: data.ip, icon: '🌐' },
-                { label: 'Type', value: data.type, icon: '📡' },
-                { label: 'Hostname', value: data.hostname, icon: '🔗' },
-                { label: 'ISP', value: data.isp, icon: '🏢' },
-                { label: 'Country', value: data.country, icon: '🌍' },
-                { label: 'Region', value: data.region, icon: '📍' },
-                { label: 'City', value: data.city, icon: '🏙️' },
-                { label: 'Timezone', value: data.timezone, icon: '🕐' }
+                { label: '{{ __tool('ip-lookup', 'results.ip_address') }}', value: data.ip, icon: '🌐' },
+                { label: '{{ __tool('ip-lookup', 'results.type') }}', value: data.type, icon: '📡' },
+                { label: '{{ __tool('ip-lookup', 'results.hostname') }}', value: data.hostname, icon: '🔗' },
+                { label: '{{ __tool('ip-lookup', 'results.isp') }}', value: data.isp, icon: '🏢' },
+                { label: '{{ __tool('ip-lookup', 'results.country') }}', value: data.country, icon: '🌍' },
+                { label: '{{ __tool('ip-lookup', 'results.region') }}', value: data.region, icon: '📍' },
+                { label: '{{ __tool('ip-lookup', 'results.city') }}', value: data.city, icon: '🏙️' },
+                { label: '{{ __tool('ip-lookup', 'results.timezone') }}', value: data.timezone, icon: '🕐' }
             ];
 
             ipDetails.innerHTML = fields.map(field => `
-                                                        <div class="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all transform hover:-translate-y-1">
-                                                            <p class="text-sm font-semibold text-gray-600 mb-2 flex items-center gap-2">
-                                                                <span class="text-2xl">${field.icon}</span>
-                                                                ${field.label}
-                                                            </p>
-                                                            <p class="text-xl font-black text-gray-900">${field.value}</p>
-                                                        </div>
-                                                    `).join('');
+                                                            <div class="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all transform hover:-translate-y-1">
+                                                                <p class="text-sm font-semibold text-gray-600 mb-2 flex items-center gap-2">
+                                                                    <span class="text-2xl">${field.icon}</span>
+                                                                    ${field.label}
+                                                                </p>
+                                                                <p class="text-xl font-black text-gray-900">${field.value}</p>
+                                                            </div>
+                                                        `).join('');
         }
 
         function showMessage(message, type) {
@@ -220,4 +214,4 @@
             statusMessage.classList.remove('hidden');
         }
     </script>
-@endsection
+@endpush
