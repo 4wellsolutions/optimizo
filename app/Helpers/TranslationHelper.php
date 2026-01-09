@@ -48,6 +48,20 @@ if (!function_exists('__tool')) {
         // Extract category from tool slug (e.g., 'youtube-channel' -> 'youtube')
         $category = explode('-', $toolSlug)[0];
 
+        // Category mapping for tools that don't follow the naming convention
+        $categoryMap = [
+            'epoch' => 'time',
+            'date' => 'time',
+            'unix' => 'time',
+            'local' => 'time',
+            'utc' => 'time',
+        ];
+
+        // Map category if it exists in the mapping
+        if (isset($categoryMap[$category])) {
+            $category = $categoryMap[$category];
+        }
+
         // Try category-based file first: tools.{category}.{toolSlug}.{key}
         $categoryKey = "tools.{$category}.{$toolSlug}.{$key}";
         $translation = trans($categoryKey, [], $locale);

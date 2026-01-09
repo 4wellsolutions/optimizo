@@ -1,6 +1,22 @@
 ﻿<?php
 
-return [
+// Dynamically load and merge translation files from tools subdirectory
+$toolsTranslations = [];
+$toolsDirectory = __DIR__ . '/tools';
+
+if (is_dir($toolsDirectory)) {
+    // Load all PHP files from the tools directory
+    $files = glob($toolsDirectory . '/*.php');
+    foreach ($files as $file) {
+        $category = basename($file, '.php'); // e.g., 'youtube', 'time'
+        $categoryTranslations = require $file;
+
+        // Merge category translations into main array with category prefix
+        $toolsTranslations[$category] = $categoryTranslations;
+    }
+}
+
+return array_merge($toolsTranslations, [
     /*
     |--------------------------------------------------------------------------
     | Tools Translation Keys
@@ -1080,4 +1096,4 @@ ID постоянны и работают более надежно в вызо�
             "faq_a5" => "Да! Мы предоставляем кнопки копирования в один клик для названия, описания и тегов. Вы можете легко скопировать любое поле данных и использовать его для создания собственного контента, исследований или аналитических целей.",
         ],
     ],
-];
+]);
