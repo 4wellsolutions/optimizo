@@ -47,17 +47,20 @@
                         <div class="grid gap-4">
                             <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
                                 <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">
-                                    {{ __tool('unix-to-date', 'form.result_gmt') }}</div>
+                                    {{ __tool('unix-to-date', 'form.result_gmt') }}
+                                </div>
                                 <div id="resGmt" class="font-mono text-lg text-gray-800 font-medium break-all"></div>
                             </div>
                             <div class="p-4 bg-green-50 rounded-xl border border-green-100">
                                 <div class="text-xs font-bold text-green-600 uppercase tracking-widest mb-1">
-                                    {{ __tool('unix-to-date', 'form.result_local') }}</div>
+                                    {{ __tool('unix-to-date', 'form.result_local') }}
+                                </div>
                                 <div id="resLocal" class="font-mono text-lg text-green-900 font-bold break-all"></div>
                             </div>
                             <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
                                 <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">
-                                    {{ __tool('unix-to-date', 'form.result_iso') }}</div>
+                                    {{ __tool('unix-to-date', 'form.result_iso') }}
+                                </div>
                                 <div id="resIso" class="font-mono text-lg text-gray-800 font-medium break-all"></div>
                             </div>
                         </div>
@@ -71,7 +74,8 @@
     <article class="max-w-4xl mx-auto prose prose-lg prose-green mb-20 px-4">
         <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6 font-display">
-                {{ __tool('unix-to-date', 'content.hero_title') }}</h2>
+                {{ __tool('unix-to-date', 'content.hero_title') }}
+            </h2>
             <p class="lead text-gray-600">{{ __tool('unix-to-date', 'content.hero_description') }}</p>
 
             <h3 class="flex items-center gap-3 text-2xl font-bold text-gray-900 mt-12 mb-6">
@@ -126,7 +130,7 @@
                 <div>
                     <h3 class="mt-0 text-blue-900">{{ __tool('unix-to-date', 'content.reverse_title') }}</h3>
                     <p class="text-blue-800 mb-4">{{ __tool('unix-to-date', 'content.reverse_description') }}</p>
-                    <a href="{{ route('tool.show', ['tool' => 'date-to-unix']) }}"
+                    <a href="{{ url('tools/date-to-unix-timestamp') }}"
                         class="inline-block px-6 py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors no-underline">
                         {{ __tool('unix-to-date', 'content.reverse_button') }} &rarr;
                     </a>
