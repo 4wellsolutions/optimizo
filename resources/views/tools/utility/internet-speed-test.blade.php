@@ -1,8 +1,39 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', $tool->meta_title)
 @section('meta_description', $tool->meta_description)
 @if($tool->meta_keywords)
+@section('meta_keywords', $tool->meta_keywords)
+@endif
+
+@section('content')
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div
+            class="relative overflow-hidden bg-gradient-to-br from-teal-500 via-emerald-500 to-green-600 rounded-3xl p-4 md:p-6 mb-8 shadow-2xl">
+            <div class="relative z-10 text-center">
+                <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-2xl mb-3">
+                    <svg class="w-9 h-9 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.38 8.57l-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44z" />
+                        <path d="M10.59 15.41a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z" />
+                    </svg>
+                </div>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">
+                    Internet Speed Test
+                </h1>
+                <p class="text-base md:text-lg text-white/90 font-medium">
+                    Test your connection speed instantly!
+                </p>
+
+            @include('components.hero-actions')
+        </div>
+        </div>
+
+        <!-- Tool -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-teal-200 mb-8">
+            <div class="text-center mb-8">
+                <button id="startBtn" onclick="startTest()" class="btn-primary justify-center text-lg py-4 px-12">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -77,21 +108,21 @@
             <h3 class="text-2xl font-bold text-gray-900 mb-3">Understanding Speed Test Metrics</h3>
             <div class="grid md:grid-cols-3 gap-4 mb-6">
                 <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
-                    <h4 class="font-bold text-teal-900 mb-2">📥 Download Speed</h4>
+                    <h4 class="font-bold text-teal-900 mb-2">≡ƒôÑ Download Speed</h4>
                     <p class="text-gray-700 text-sm mb-2">Measures how fast data travels FROM the internet TO your device
                     </p>
                     <p class="text-gray-700 text-sm"><strong>Used for:</strong> Streaming, downloading files, browsing
                         websites</p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
-                    <h4 class="font-bold text-emerald-900 mb-2">📤 Upload Speed</h4>
+                    <h4 class="font-bold text-emerald-900 mb-2">≡ƒôñ Upload Speed</h4>
                     <p class="text-gray-700 text-sm mb-2">Measures how fast data travels FROM your device TO the internet
                     </p>
                     <p class="text-gray-700 text-sm"><strong>Used for:</strong> Video calls, uploading files, live streaming
                     </p>
                 </div>
                 <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
-                    <h4 class="font-bold text-green-900 mb-2">⚡ Ping (Latency)</h4>
+                    <h4 class="font-bold text-green-900 mb-2">ΓÜí Ping (Latency)</h4>
                     <p class="text-gray-700 text-sm mb-2">Measures response time between your device and server (in
                         milliseconds)</p>
                     <p class="text-gray-700 text-sm"><strong>Important for:</strong> Gaming, video calls, real-time
@@ -171,12 +202,12 @@
                     Testing Tips for Accurate Results
                 </h4>
                 <ul class="text-blue-800 text-sm leading-relaxed space-y-2">
-                    <li>• Close all applications and browser tabs except the speed test</li>
-                    <li>• Pause downloads, uploads, and streaming services</li>
-                    <li>• Test multiple times at different times of day</li>
-                    <li>• Use Ethernet connection for most accurate results</li>
-                    <li>• Disconnect other devices from your network temporarily</li>
-                    <li>• Test from different devices to identify device-specific issues</li>
+                    <li>ΓÇó Close all applications and browser tabs except the speed test</li>
+                    <li>ΓÇó Pause downloads, uploads, and streaming services</li>
+                    <li>ΓÇó Test multiple times at different times of day</li>
+                    <li>ΓÇó Use Ethernet connection for most accurate results</li>
+                    <li>ΓÇó Disconnect other devices from your network temporarily</li>
+                    <li>ΓÇó Test from different devices to identify device-specific issues</li>
                 </ul>
             </div>
 
