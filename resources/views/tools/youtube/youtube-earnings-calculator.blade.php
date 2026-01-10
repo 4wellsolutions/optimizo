@@ -252,12 +252,12 @@
             const cpm = parseFloat($('#cpm').val());
 
             if (!views || views < 0) {
-                alert(translations.error_views);
+                showError(translations.error_views);
                 return;
             }
 
             if (!cpm || cpm < 0) {
-                alert(translations.error_cpm);
+                showError(translations.error_cpm);
                 return;
             }
 

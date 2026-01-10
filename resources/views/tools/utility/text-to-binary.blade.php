@@ -159,7 +159,7 @@
         function convertTextToBinary() {
             const text = document.getElementById('textInput').value;
             if (!text.trim()) {
-                alert('Please enter some text to convert.');
+                showError('Please enter some text to convert.');
                 return;
             }
 
@@ -170,26 +170,26 @@
 
                 document.getElementById('binaryOutput').value = binary;
             } catch (error) {
-                alert('Error converting text: ' + error.message);
+                showError('Error converting text: ' + error.message);
             }
         }
 
         function copyBinary() {
             const output = document.getElementById('binaryOutput');
             if (!output.value.trim()) {
-                alert('No binary to copy. Please convert text first.');
+                showError('No binary to copy. Please convert text first.');
                 return;
             }
 
             output.select();
             document.execCommand('copy');
-            alert('Binary copied to clipboard!');
+            showSuccess('Binary copied to clipboard!');
         }
 
         function downloadBinary() {
             const binary = document.getElementById('binaryOutput').value;
             if (!binary.trim()) {
-                alert('No binary to download. Please convert text first.');
+                showError('No binary to download. Please convert text first.');
                 return;
             }
 

@@ -154,7 +154,7 @@
         function convertYamlToJson() {
             const yaml = document.getElementById('yamlInput').value;
             if (!yaml.trim()) {
-                alert('Please enter some YAML data to convert.');
+                showError('Please enter some YAML data to convert.');
                 return;
             }
 
@@ -163,26 +163,26 @@
                 const json = JSON.stringify(obj, null, 2);
                 document.getElementById('jsonOutput').value = json;
             } catch (error) {
-                alert('Error converting YAML: ' + error.message);
+                showError('Error converting YAML: ' + error.message);
             }
         }
 
         function copyJson() {
             const output = document.getElementById('jsonOutput');
             if (!output.value.trim()) {
-                alert('No JSON to copy. Please convert YAML first.');
+                showError('No JSON to copy. Please convert YAML first.');
                 return;
             }
 
             output.select();
             document.execCommand('copy');
-            alert('JSON copied to clipboard!');
+            showSuccess('JSON copied to clipboard!');
         }
 
         function downloadJson() {
             const json = document.getElementById('jsonOutput').value;
             if (!json.trim()) {
-                alert('No JSON to download. Please convert YAML first.');
+                showError('No JSON to download. Please convert YAML first.');
                 return;
             }
 
@@ -206,21 +206,21 @@
 
         function loadExample() {
             const example = `# Configuration Example
-            name: My Application
-            version: 1.0.0
-            database:
-              host: localhost
-              port: 5432
-              credentials:
-                username: admin
-                password: secret
-            features:
-              - authentication
-              - logging
-              - caching
-            settings:
-              debug: true
-              timeout: 30`;
+                name: My Application
+                version: 1.0.0
+                database:
+                  host: localhost
+                  port: 5432
+                  credentials:
+                    username: admin
+                    password: secret
+                features:
+                  - authentication
+                  - logging
+                  - caching
+                settings:
+                  debug: true
+                  timeout: 30`;
 
             document.getElementById('yamlInput').value = example;
             convertYamlToJson();

@@ -218,7 +218,7 @@
             imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
             function handleFile(file) {
-                if (!file.type.match('image.*')) { alert('Please upload a valid image'); return; }
+                if (!file.type.match('image.*')) { showError('Please upload a valid image'); return; }
                 const reader = new FileReader();
                 reader.onload = (e) => {
                     currentImg = new Image();

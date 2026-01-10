@@ -161,7 +161,7 @@
         function convertCsvToJson() {
             const csv = document.getElementById('csvInput').value;
             if (!csv.trim()) {
-                alert('Please enter some CSV data to convert.');
+                showError('Please enter some CSV data to convert.');
                 return;
             }
 
@@ -188,26 +188,26 @@
 
                 document.getElementById('jsonOutput').value = JSON.stringify(result, null, 2);
             } catch (error) {
-                alert('Error converting CSV: ' + error.message);
+                showError('Error converting CSV: ' + error.message);
             }
         }
 
         function copyJson() {
             const output = document.getElementById('jsonOutput');
             if (!output.value.trim()) {
-                alert('No JSON to copy. Please convert CSV first.');
+                showError('No JSON to copy. Please convert CSV first.');
                 return;
             }
 
             output.select();
             document.execCommand('copy');
-            alert('JSON copied to clipboard!');
+            showSuccess('JSON copied to clipboard!');
         }
 
         function downloadJson() {
             const json = document.getElementById('jsonOutput').value;
             if (!json.trim()) {
-                alert('No JSON to download. Please convert CSV first.');
+                showError('No JSON to download. Please convert CSV first.');
                 return;
             }
 
@@ -231,9 +231,9 @@
 
         function loadExample() {
             const example = `name,email,age,city
-        John Doe,john@example.com,30,New York
-        Jane Smith,jane@example.com,25,Los Angeles
-        Bob Johnson,bob@example.com,35,Chicago`;
+            John Doe,john@example.com,30,New York
+            Jane Smith,jane@example.com,25,Los Angeles
+            Bob Johnson,bob@example.com,35,Chicago`;
 
             document.getElementById('csvInput').value = example;
             convertCsvToJson();

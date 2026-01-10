@@ -333,7 +333,7 @@
             const canonicalCheck = document.getElementById('checkCanonical').checked;
 
             if (urls.length === 0) {
-                alert('Please enter at least one URL');
+                showError('Please enter at least one URL');
                 return;
             }
 
@@ -406,7 +406,7 @@
 
             } catch (e) {
                 console.error(e);
-                alert('Error checking canonical versions for: ' + url);
+                showError('Error checking canonical versions for: ' + url);
             }
         }
 

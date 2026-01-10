@@ -156,7 +156,7 @@
         function convertJsonToCsv() {
             const json = document.getElementById('jsonInput').value;
             if (!json.trim()) {
-                alert('Please enter some JSON data to convert.');
+                showError('Please enter some JSON data to convert.');
                 return;
             }
 
@@ -207,26 +207,26 @@
 
                 document.getElementById('csvOutput').value = csv;
             } catch (error) {
-                alert('Error converting JSON: ' + error.message);
+                showError('Error converting JSON: ' + error.message);
             }
         }
 
         function copyCsv() {
             const output = document.getElementById('csvOutput');
             if (!output.value.trim()) {
-                alert('No CSV to copy. Please convert JSON first.');
+                showError('No CSV to copy. Please convert JSON first.');
                 return;
             }
 
             output.select();
             document.execCommand('copy');
-            alert('CSV copied to clipboard!');
+            showSuccess('CSV copied to clipboard!');
         }
 
         function downloadCsv() {
             const csv = document.getElementById('csvOutput').value;
             if (!csv.trim()) {
-                alert('No CSV to download. Please convert JSON first.');
+                showError('No CSV to download. Please convert JSON first.');
                 return;
             }
 
@@ -250,25 +250,25 @@
 
         function loadExample() {
             const example = `[
-          {
-            "name": "John Doe",
-            "email": "john@example.com",
-            "age": 30,
-            "address": {
-              "city": "New York",
-              "country": "USA"
-            }
-          },
-          {
-            "name": "Jane Smith",
-            "email": "jane@example.com",
-            "age": 25,
-            "address": {
-              "city": "Los Angeles",
-              "country": "USA"
-            }
-          }
-        ]`;
+              {
+                "name": "John Doe",
+                "email": "john@example.com",
+                "age": 30,
+                "address": {
+                  "city": "New York",
+                  "country": "USA"
+                }
+              },
+              {
+                "name": "Jane Smith",
+                "email": "jane@example.com",
+                "age": 25,
+                "address": {
+                  "city": "Los Angeles",
+                  "country": "USA"
+                }
+              }
+            ]`;
 
             document.getElementById('jsonInput').value = example;
             convertJsonToCsv();

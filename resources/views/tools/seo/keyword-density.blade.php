@@ -76,14 +76,18 @@
 
                 <!-- Single Word Density -->
                 <div class="bg-gray-50 rounded-xl p-6 border-2 border-gray-200 mb-6">
-                    <h4 class="font-bold text-lg text-gray-900 mb-4">{{ __tool('keyword-density', 'results.single_keywords_title') }}</h4>
+                    <h4 class="font-bold text-lg text-gray-900 mb-4">
+                        {{ __tool('keyword-density', 'results.single_keywords_title') }}</h4>
                     <div class="overflow-x-auto">
                         <table class="w-full">
                             <thead>
                                 <tr class="border-b-2 border-gray-300">
-                                    <th class="text-left py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.keyword_header') }}</th>
-                                    <th class="text-center py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.count_header') }}</th>
-                                    <th class="text-center py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.density_header') }}</th>
+                                    <th class="text-left py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.keyword_header') }}</th>
+                                    <th class="text-center py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.count_header') }}</th>
+                                    <th class="text-center py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.density_header') }}</th>
                                 </tr>
                             </thead>
                             <tbody id="keywordTable"></tbody>
@@ -93,14 +97,18 @@
 
                 <!-- 2-Word Phrases -->
                 <div class="bg-gray-50 rounded-xl p-6 border-2 border-gray-200 mb-6">
-                    <h4 class="font-bold text-lg text-gray-900 mb-4">{{ __tool('keyword-density', 'results.two_word_title') }}</h4>
+                    <h4 class="font-bold text-lg text-gray-900 mb-4">
+                        {{ __tool('keyword-density', 'results.two_word_title') }}</h4>
                     <div class="overflow-x-auto">
                         <table class="w-full">
                             <thead>
                                 <tr class="border-b-2 border-gray-300">
-                                    <th class="text-left py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.phrase_header') }}</th>
-                                    <th class="text-center py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.count_header') }}</th>
-                                    <th class="text-center py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.density_header') }}</th>
+                                    <th class="text-left py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.phrase_header') }}</th>
+                                    <th class="text-center py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.count_header') }}</th>
+                                    <th class="text-center py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.density_header') }}</th>
                                 </tr>
                             </thead>
                             <tbody id="twoWordTable"></tbody>
@@ -110,14 +118,18 @@
 
                 <!-- 3-Word Phrases -->
                 <div class="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-4">{{ __tool('keyword-density', 'results.three_word_title') }}</h4>
+                    <h4 class="font-bold text-lg text-gray-900 mb-4">
+                        {{ __tool('keyword-density', 'results.three_word_title') }}</h4>
                     <div class="overflow-x-auto">
                         <table class="w-full">
                             <thead>
                                 <tr class="border-b-2 border-gray-300">
-                                    <th class="text-left py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.phrase_header') }}</th>
-                                    <th class="text-center py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.count_header') }}</th>
-                                    <th class="text-center py-3 px-4 font-bold text-gray-700">{{ __tool('keyword-density', 'results.density_header') }}</th>
+                                    <th class="text-left py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.phrase_header') }}</th>
+                                    <th class="text-center py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.count_header') }}</th>
+                                    <th class="text-center py-3 px-4 font-bold text-gray-700">
+                                        {{ __tool('keyword-density', 'results.density_header') }}</th>
                                 </tr>
                             </thead>
                             <tbody id="threeWordTable"></tbody>
@@ -212,7 +224,8 @@
             </div>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">
-                {{ __tool('keyword-density', 'content.best_practices_title') }}</h3>
+                {{ __tool('keyword-density', 'content.best_practices_title') }}
+            </h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-3">
@@ -277,7 +290,7 @@
                 const text = document.getElementById('textInput').value.trim();
 
                 if (!text) {
-                    alert('{{ __tool('keyword-density', 'alerts.enter_text') }}');
+                    showError('{{ __tool('keyword-density', 'alerts.enter_text') }}');
                     return;
                 }
 
@@ -348,12 +361,12 @@
                     const densityClass = density > 5 ? 'text-red-600' : density > 3 ? 'text-orange-600' : density > 1 ? 'text-yellow-600' : 'text-green-600';
 
                     return `
-                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                                <td class="py-3 px-4 font-medium text-gray-900">${word}</td>
-                                                <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
-                                                <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
-                                            </tr>
-                                        `;
+                                                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                    <td class="py-3 px-4 font-medium text-gray-900">${word}</td>
+                                                    <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
+                                                    <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
+                                                </tr>
+                                            `;
                 }).join('');
 
                 // Build 2-word phrase table
@@ -363,12 +376,12 @@
                     const densityClass = density > 3 ? 'text-red-600' : density > 2 ? 'text-orange-600' : density > 1 ? 'text-yellow-600' : 'text-green-600';
 
                     return `
-                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                                <td class="py-3 px-4 font-medium text-gray-900">${phrase}</td>
-                                                <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
-                                                <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
-                                            </tr>
-                                        `;
+                                                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                    <td class="py-3 px-4 font-medium text-gray-900">${phrase}</td>
+                                                    <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
+                                                    <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
+                                                </tr>
+                                            `;
                 }).join('');
 
                 // Build 3-word phrase table
@@ -378,12 +391,12 @@
                     const densityClass = density > 2 ? 'text-red-600' : density > 1.5 ? 'text-orange-600' : density > 1 ? 'text-yellow-600' : 'text-green-600';
 
                     return `
-                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                                <td class="py-3 px-4 font-medium text-gray-900">${phrase}</td>
-                                                <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
-                                                <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
-                                            </tr>
-                                        `;
+                                                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                    <td class="py-3 px-4 font-medium text-gray-900">${phrase}</td>
+                                                    <td class="py-3 px-4 text-center font-bold text-gray-700">${count}</td>
+                                                    <td class="py-3 px-4 text-center font-bold ${densityClass}">${density}%</td>
+                                                </tr>
+                                            `;
                 }).join('');
 
                 // Show results

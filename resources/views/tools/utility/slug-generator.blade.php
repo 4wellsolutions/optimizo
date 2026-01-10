@@ -212,7 +212,7 @@
         function copySlug() {
             const output = document.getElementById('slugOutput');
             if (!output.value) {
-                alert('No slug to copy');
+                showError('No slug to copy');
                 return;
             }
             output.select();

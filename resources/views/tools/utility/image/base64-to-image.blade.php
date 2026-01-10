@@ -156,7 +156,7 @@
 
             convertBtn.addEventListener('click', () => {
                 const input = base64Input.value.trim();
-                if (!input) { alert('Please paste a Base64 string first.'); return; }
+                if (!input) { showError('Please paste a Base64 string first.'); return; }
 
                 // Basic validation/cleanup
                 // Note: Users might paste just the base64 part without data URI prefix.
@@ -166,7 +166,7 @@
                 imagePreview.src = input;
 
                 imagePreview.onerror = () => {
-                    alert('Invalid Base64 string or unsupported image format.');
+                    showError('Invalid Base64 string or unsupported image format.');
                     resultArea.classList.add('hidden');
                 };
 

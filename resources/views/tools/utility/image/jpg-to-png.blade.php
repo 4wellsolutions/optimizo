@@ -177,7 +177,7 @@
         imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
         function handleFile(file) {
-            if (!file.type.match('image.*')) { alert('Please upload a valid JPG image'); return; }
+            if (!file.type.match('image.*')) { showError('Please upload a valid JPG image'); return; }
             const reader = new FileReader();
             reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
             reader.readAsDataURL(file);

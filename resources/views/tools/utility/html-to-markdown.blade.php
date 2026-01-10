@@ -192,7 +192,7 @@
         function convertHtmlToMarkdown() {
             const html = document.getElementById('htmlInput').value;
             if (!html.trim()) {
-                alert('Please enter some HTML code to convert.');
+                showError('Please enter some HTML code to convert.');
                 return;
             }
 
@@ -200,26 +200,26 @@
                 const markdown = turndownService.turndown(html);
                 document.getElementById('markdownOutput').value = markdown;
             } catch (error) {
-                alert('Error converting HTML: ' + error.message);
+                showError('Error converting HTML: ' + error.message);
             }
         }
 
         function copyMarkdown() {
             const output = document.getElementById('markdownOutput');
             if (!output.value.trim()) {
-                alert('No Markdown to copy. Please convert HTML first.');
+                showError('No Markdown to copy. Please convert HTML first.');
                 return;
             }
 
             output.select();
             document.execCommand('copy');
-            alert('Markdown copied to clipboard!');
+            showSuccess('Markdown copied to clipboard!');
         }
 
         function downloadMarkdown() {
             const markdown = document.getElementById('markdownOutput').value;
             if (!markdown.trim()) {
-                alert('No Markdown to download. Please convert HTML first.');
+                showError('No Markdown to download. Please convert HTML first.');
                 return;
             }
 
@@ -244,30 +244,30 @@
         function loadExample() {
             const example = `<h1>Welcome to HTML</h1>
 
-        <h2>This is a subheading</h2>
+            <h2>This is a subheading</h2>
 
-        <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
+            <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
 
-        <h3>Features</h3>
+            <h3>Features</h3>
 
-        <ul>
-          <li>Easy to write</li>
-          <li>Easy to read</li>
-          <li>Converts to Markdown</li>
-        </ul>
+            <ul>
+              <li>Easy to write</li>
+              <li>Easy to read</li>
+              <li>Converts to Markdown</li>
+            </ul>
 
-        <h3>Code Example</h3>
+            <h3>Code Example</h3>
 
-        <pre><code class="language-javascript">function hello() {
-            console.log("Hello, World!");
-        }
-        </code></pre>
+            <pre><code class="language-javascript">function hello() {
+                console.log("Hello, World!");
+            }
+            </code></pre>
 
-        <blockquote>
-          <p>This is a blockquote</p>
-        </blockquote>
+            <blockquote>
+              <p>This is a blockquote</p>
+            </blockquote>
 
-        <p><a href="https://example.com">Visit our website</a></p>`;
+            <p><a href="https://example.com">Visit our website</a></p>`;
 
             document.getElementById('htmlInput').value = example;
             convertHtmlToMarkdown();

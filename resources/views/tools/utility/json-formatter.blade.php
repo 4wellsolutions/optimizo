@@ -311,7 +311,7 @@
                     btn.classList.remove('bg-green-600', 'text-white', 'border-green-600');
                 }, 2000);
             }).catch(err => {
-                alert('Failed to copy. Please copy manually.');
+                showError('Failed to copy. Please copy manually.');
             });
         }
 

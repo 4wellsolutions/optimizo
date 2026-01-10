@@ -116,11 +116,13 @@
                         </div>
                         <div class="grid grid-cols-2 gap-4 text-center">
                             <div class="p-3 bg-blue-50 rounded-xl">
-                                <div class="text-xs text-uppercase text-blue-600 font-bold tracking-wider">{{ __tool('on-page-seo-checker', 'labels.desktop') }}</div>
+                                <div class="text-xs text-uppercase text-blue-600 font-bold tracking-wider">
+                                    {{ __tool('on-page-seo-checker', 'labels.desktop') }}</div>
                                 <div class="text-2xl font-bold text-blue-900" id="desktopScore">--</div>
                             </div>
                             <div class="p-3 bg-pink-50 rounded-xl">
-                                <div class="text-xs text-uppercase text-pink-600 font-bold tracking-wider">{{ __tool('on-page-seo-checker', 'labels.mobile') }}</div>
+                                <div class="text-xs text-uppercase text-pink-600 font-bold tracking-wider">
+                                    {{ __tool('on-page-seo-checker', 'labels.mobile') }}</div>
                                 <div class="text-2xl font-bold text-pink-900" id="mobileScore">--</div>
                             </div>
                         </div>
@@ -144,15 +146,18 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <div
             class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl p-8 md:p-12 shadow-lg border border-indigo-100">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">{{ __tool('on-page-seo-checker', 'content.main_content_title') }}</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">{!! __tool('on-page-seo-checker', 'content.main_content_desc') !!}</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+                {{ __tool('on-page-seo-checker', 'content.main_content_title') }}</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
+                {!! __tool('on-page-seo-checker', 'content.main_content_desc') !!}</p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <!-- Feature 1 -->
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-indigo-50">
                     <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🚀</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f1_title') }}</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        {{ __tool('on-page-seo-checker', 'features.f1_title') }}</h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f1_desc') !!}</p>
                 </div>
 
@@ -160,7 +165,8 @@
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-purple-50">
                     <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 text-2xl">📊</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f2_title') }}</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        {{ __tool('on-page-seo-checker', 'features.f2_title') }}</h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f2_desc') !!}</p>
                 </div>
 
@@ -168,7 +174,8 @@
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-pink-50">
                     <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🔍</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f3_title') }}</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        {{ __tool('on-page-seo-checker', 'features.f3_title') }}</h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f3_desc') !!}</p>
                 </div>
 
@@ -176,7 +183,8 @@
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-blue-50">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-2xl">📱</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f4_title') }}</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        {{ __tool('on-page-seo-checker', 'features.f4_title') }}</h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f4_desc') !!}</p>
                 </div>
 
@@ -184,7 +192,8 @@
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-green-50">
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🆓</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f5_title') }}</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        {{ __tool('on-page-seo-checker', 'features.f5_title') }}</h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f5_desc') !!}</p>
                 </div>
 
@@ -192,21 +201,24 @@
                 <div
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-orange-50">
                     <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🔗</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ __tool('on-page-seo-checker', 'features.f6_title') }}</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        {{ __tool('on-page-seo-checker', 'features.f6_title') }}</h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f6_desc') !!}</p>
                 </div>
             </div>
 
             <!-- Steps Section -->
             <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('on-page-seo-checker', 'content.how_to_title') }}</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                    {{ __tool('on-page-seo-checker', 'content.how_to_title') }}</h2>
                 <div class="space-y-6">
                     <div class="flex items-start">
                         <div
                             class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-4">
                             1</div>
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800">{{ __tool('on-page-seo-checker', 'how_to.step1_title') }}</h3>
+                            <h3 class="text-lg font-bold text-gray-800">
+                                {{ __tool('on-page-seo-checker', 'how_to.step1_title') }}</h3>
                             <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step1_desc') !!}</p>
                         </div>
                     </div>
@@ -215,7 +227,8 @@
                             class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-4">
                             2</div>
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800">{{ __tool('on-page-seo-checker', 'how_to.step2_title') }}</h3>
+                            <h3 class="text-lg font-bold text-gray-800">
+                                {{ __tool('on-page-seo-checker', 'how_to.step2_title') }}</h3>
                             <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step2_desc') !!}</p>
                         </div>
                     </div>
@@ -224,7 +237,8 @@
                             class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-4">
                             3</div>
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800">{{ __tool('on-page-seo-checker', 'how_to.step3_title') }}</h3>
+                            <h3 class="text-lg font-bold text-gray-800">
+                                {{ __tool('on-page-seo-checker', 'how_to.step3_title') }}</h3>
                             <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step3_desc') !!}</p>
                         </div>
                     </div>
@@ -233,7 +247,8 @@
 
             <!-- FAQ Section -->
             <div class="space-y-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('on-page-seo-checker', 'faq.title') }}</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                    {{ __tool('on-page-seo-checker', 'faq.title') }}</h2>
 
                 <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                     <h3 class=" font-bold text-lg text-gray-800 mb-2">{{ __tool('on-page-seo-checker', 'faq.q1') }}</h3>
@@ -260,199 +275,199 @@
 @endsection
 
 @push('scripts')
-<script>
-    // Global Variables and Function Definitions (Outside DOMContentLoaded)
-    const steps = [
-        'topic_intent', 'keywords', 'title', 'meta_description', 'url_structure',
-        'headings', 'content_quality', 'gpt_optimization', 'mobile_ux', 'core_web_vitals',
-        'images', 'internal_links', 'external_links', 'schema', 'trust_signals',
-        'ai_citation', 'zero_click', 'canonical', 'indexing'
-    ];
-    let currentStepIndex = 0;
-    let token = '';
-    let totalScore = 0;
-    let completedModules = 0;
+    <script>
+        // Global Variables and Function Definitions (Outside DOMContentLoaded)
+        const steps = [
+            'topic_intent', 'keywords', 'title', 'meta_description', 'url_structure',
+            'headings', 'content_quality', 'gpt_optimization', 'mobile_ux', 'core_web_vitals',
+            'images', 'internal_links', 'external_links', 'schema', 'trust_signals',
+            'ai_citation', 'zero_click', 'canonical', 'indexing'
+        ];
+        let currentStepIndex = 0;
+        let token = '';
+        let totalScore = 0;
+        let completedModules = 0;
 
-    // Global scan function callable from onsubmit
-    window.runSeoScan = function () {
-        console.log('Starting SEO Scan...');
+        // Global scan function callable from onsubmit
+        window.runSeoScan = function () {
+            console.log('Starting SEO Scan...');
 
-        const urlVal = document.getElementById('url').value;
-        const keywordsVal = document.getElementById('keywords').value;
+            const urlVal = document.getElementById('url').value;
+            const keywordsVal = document.getElementById('keywords').value;
 
-        if (!urlVal) {
-            alert('Please enter a website URL');
-            return;
-        }
-
-        // Reset UI
-        currentStepIndex = 0;
-        totalScore = 0;
-        completedModules = 0;
-        document.getElementById('modulesContainer').innerHTML = '';
-        document.getElementById('progressSection').classList.remove('hidden');
-        document.getElementById('resultsGrid').classList.remove('hidden');
-
-        // Auto-scroll to results
-        document.getElementById('progressSection').scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-        const btn = document.querySelector('#seoForm button');
-        btn.disabled = true;
-        btn.classList.add('opacity-75');
-
-        // Init Scan
-        fetch('{{ route("seo.on-page.init") }}', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '{{ csrf_token() }}'
-            },
-            body: JSON.stringify({
-                url: urlVal,
-                keywords: keywordsVal
-            })
-        })
-            .then(response => response.json())
-            .then(res => {
-                if (res.success) {
-                    token = res.token;
-                    processNextStep();
-                } else {
-                    throw new Error(res.message);
-                }
-            })
-            .catch(error => {
-                alert('Failed to initialize scan: ' + error.message);
-                btn.disabled = false;
-                btn.classList.remove('opacity-75');
-            });
-    };
-
-    function processNextStep() {
-        if (currentStepIndex >= steps.length) {
-            finishScan();
-            return;
-        }
-
-        const step = steps[currentStepIndex];
-        const percent = Math.round(((currentStepIndex) / steps.length) * 100);
-        updateProgress(percent, `Analyzing ${step.replace('_', ' ')}...`);
-
-        const urlVal = document.getElementById('url').value;
-        const keywordsVal = document.getElementById('keywords').value;
-
-        fetch('{{ route("seo.on-page.analyze-step") }}', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': '{{ csrf_token() }}'
-            },
-            body: JSON.stringify({
-                token: token,
-                step: step,
-                url: urlVal,
-                keywords: keywordsVal
-            })
-        })
-            .then(response => response.json())
-            .then(res => {
-                if (res.success) {
-                    renderModuleResult(res.result);
-                    totalScore += res.result.score;
-                    completedModules++;
-                    updateScoreDisplay();
-                }
-                currentStepIndex++;
-                processNextStep();
-            })
-            .catch(() => {
-                currentStepIndex++;
-                processNextStep();
-            });
-    }
-
-    function updateProgress(percent, status) {
-        document.getElementById('progressBar').style.width = percent + '%';
-        document.getElementById('progressPercent').innerText = percent + '%';
-        document.getElementById('progressStatus').innerText = status;
-    }
-
-    function updateScoreDisplay() {
-        const avg = Math.round(totalScore / Math.max(1, completedModules));
-        document.getElementById('finalScore').innerText = avg;
-        document.getElementById('desktopScore').innerText = avg;
-        document.getElementById('mobileScore').innerText = Math.max(0, avg - 5);
-    }
-
-    function renderModuleResult(data) {
-        const colorClass = data.status === 'pass' ? 'border-green-200 bg-green-50' : (data.status === 'warning' ?
-            'border-yellow-200 bg-yellow-50' : 'border-red-200 bg-red-50');
-        const icon = data.status === 'pass' ? '✅' : (data.status === 'warning' ? '⚠️' : '❌');
-
-        let detailsHtml = '';
-        if (data.details && typeof data.details === 'object') {
-            detailsHtml = '<div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 bg-white/50 p-3 rounded-lg text-sm">';
-            for (const [key, value] of Object.entries(data.details)) {
-                detailsHtml += `
-                            <div class="flex flex-col">
-                                <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
-                                <span class="font-bold text-gray-800">${value}</span>
-                            </div>
-                            `;
+            if (!urlVal) {
+                showError('Please enter a website URL');
+                return;
             }
-            detailsHtml += '</div>';
-        }
 
-        const html = `
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
-                                    <span>${icon}</span> ${data.title}
-                                </h3>
-                                <span
-                                    class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
-                            </div>
-                            <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
-                            ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
-                                    class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
-                            ${detailsHtml}
-                        </div>
-                        `;
-        const container = document.getElementById('modulesContainer');
-        const div = document.createElement('div');
-        div.innerHTML = html;
-        container.appendChild(div.firstElementChild);
-    }
+            // Reset UI
+            currentStepIndex = 0;
+            totalScore = 0;
+            completedModules = 0;
+            document.getElementById('modulesContainer').innerHTML = '';
+            document.getElementById('progressSection').classList.remove('hidden');
+            document.getElementById('resultsGrid').classList.remove('hidden');
 
-    function finishScan() {
-        updateProgress(100, 'Scan Complete!');
-        const btn = document.querySelector('#seoForm button');
-        btn.disabled = false;
-        btn.classList.remove('opacity-75');
+            // Auto-scroll to results
+            document.getElementById('progressSection').scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        const exportBtn = document.getElementById('exportBtn');
-        exportBtn.disabled = false;
-        exportBtn.classList.remove('opacity-50', 'cursor-not-allowed');
-        exportBtn.classList.add('hover:scale-105');
+            const btn = document.querySelector('#seoForm button');
+            btn.disabled = true;
+            btn.classList.add('opacity-75');
 
-        // Set download action
-        exportBtn.onclick = function () {
-            window.location.href = '{{ route("seo.on-page.export") }}?token=' + token;
+            // Init Scan
+            fetch('{{ route("seo.on-page.init") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                body: JSON.stringify({
+                    url: urlVal,
+                    keywords: keywordsVal
+                })
+            })
+                .then(response => response.json())
+                .then(res => {
+                    if (res.success) {
+                        token = res.token;
+                        processNextStep();
+                    } else {
+                        throw new Error(res.message);
+                    }
+                })
+                .catch(error => {
+                    showError('Failed to initialize scan: ' + error.message);
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-75');
+                });
         };
 
-        document.getElementById('progressBar').classList.remove('from-indigo-500');
-        document.getElementById('progressBar').classList.add('bg-green-500');
-    }
+        function processNextStep() {
+            if (currentStepIndex >= steps.length) {
+                finishScan();
+                return;
+            }
 
-    // Bind fallback on load just in case
-    document.addEventListener('DOMContentLoaded', function () {
-        const form = document.getElementById('seoForm');
-        if (form) {
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                window.runSeoScan();
-            });
+            const step = steps[currentStepIndex];
+            const percent = Math.round(((currentStepIndex) / steps.length) * 100);
+            updateProgress(percent, `Analyzing ${step.replace('_', ' ')}...`);
+
+            const urlVal = document.getElementById('url').value;
+            const keywordsVal = document.getElementById('keywords').value;
+
+            fetch('{{ route("seo.on-page.analyze-step") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                body: JSON.stringify({
+                    token: token,
+                    step: step,
+                    url: urlVal,
+                    keywords: keywordsVal
+                })
+            })
+                .then(response => response.json())
+                .then(res => {
+                    if (res.success) {
+                        renderModuleResult(res.result);
+                        totalScore += res.result.score;
+                        completedModules++;
+                        updateScoreDisplay();
+                    }
+                    currentStepIndex++;
+                    processNextStep();
+                })
+                .catch(() => {
+                    currentStepIndex++;
+                    processNextStep();
+                });
         }
-    });
-</script>
+
+        function updateProgress(percent, status) {
+            document.getElementById('progressBar').style.width = percent + '%';
+            document.getElementById('progressPercent').innerText = percent + '%';
+            document.getElementById('progressStatus').innerText = status;
+        }
+
+        function updateScoreDisplay() {
+            const avg = Math.round(totalScore / Math.max(1, completedModules));
+            document.getElementById('finalScore').innerText = avg;
+            document.getElementById('desktopScore').innerText = avg;
+            document.getElementById('mobileScore').innerText = Math.max(0, avg - 5);
+        }
+
+        function renderModuleResult(data) {
+            const colorClass = data.status === 'pass' ? 'border-green-200 bg-green-50' : (data.status === 'warning' ?
+                'border-yellow-200 bg-yellow-50' : 'border-red-200 bg-red-50');
+            const icon = data.status === 'pass' ? '✅' : (data.status === 'warning' ? '⚠️' : '❌');
+
+            let detailsHtml = '';
+            if (data.details && typeof data.details === 'object') {
+                detailsHtml = '<div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 bg-white/50 p-3 rounded-lg text-sm">';
+                for (const [key, value] of Object.entries(data.details)) {
+                    detailsHtml += `
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
+                                    <span class="font-bold text-gray-800">${value}</span>
+                                </div>
+                                `;
+                }
+                detailsHtml += '</div>';
+            }
+
+            const html = `
+                            <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
+                                <div class="flex justify-between items-start mb-4">
+                                    <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                                        <span>${icon}</span> ${data.title}
+                                    </h3>
+                                    <span
+                                        class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
+                                </div>
+                                <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
+                                ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
+                                        class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
+                                ${detailsHtml}
+                            </div>
+                            `;
+            const container = document.getElementById('modulesContainer');
+            const div = document.createElement('div');
+            div.innerHTML = html;
+            container.appendChild(div.firstElementChild);
+        }
+
+        function finishScan() {
+            updateProgress(100, 'Scan Complete!');
+            const btn = document.querySelector('#seoForm button');
+            btn.disabled = false;
+            btn.classList.remove('opacity-75');
+
+            const exportBtn = document.getElementById('exportBtn');
+            exportBtn.disabled = false;
+            exportBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            exportBtn.classList.add('hover:scale-105');
+
+            // Set download action
+            exportBtn.onclick = function () {
+                window.location.href = '{{ route("seo.on-page.export") }}?token=' + token;
+            };
+
+            document.getElementById('progressBar').classList.remove('from-indigo-500');
+            document.getElementById('progressBar').classList.add('bg-green-500');
+        }
+
+        // Bind fallback on load just in case
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('seoForm');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    window.runSeoScan();
+                });
+            }
+        });
+    </script>
 @endpush

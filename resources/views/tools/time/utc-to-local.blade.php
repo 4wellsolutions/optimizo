@@ -113,7 +113,7 @@
                 const date = new Date(inputVal + 'Z');
                 
                 if(isNaN(date.getTime())) {
-                    alert("Invalid Date");
+                    showError("Invalid Date");
                     return;
                 }
 

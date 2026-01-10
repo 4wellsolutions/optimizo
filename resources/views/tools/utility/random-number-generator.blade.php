@@ -65,11 +65,11 @@
             const count = parseInt(document.getElementById('count').value) || 1;
 
             if (isNaN(min) || isNaN(max)) {
-                alert("Please enter valid numbers");
+                showError("Please enter valid numbers");
                 return;
             }
             if (min > max) {
-                alert("Min cannot be greater than Max");
+                showError("Min cannot be greater than Max");
                 return;
             }
 

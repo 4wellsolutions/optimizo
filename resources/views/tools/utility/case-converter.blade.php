@@ -184,7 +184,7 @@
         function convertCase(type) {
             const input = document.getElementById('inputText').value;
             if (!input) {
-                alert('Please enter some text');
+                showError('Please enter some text');
                 return;
             }
 
@@ -210,7 +210,7 @@
         function copyResult() {
             const output = document.getElementById('outputText');
             if (!output.value) {
-                alert('No text to copy');
+                showError('No text to copy');
                 return;
             }
             output.select();

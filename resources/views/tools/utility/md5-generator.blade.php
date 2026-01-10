@@ -213,7 +213,7 @@
         function generateMD5() {
             const text = document.getElementById('inputText').value;
             if (!text) {
-                alert('Please enter some text');
+                showError('Please enter some text');
                 return;
             }
 

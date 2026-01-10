@@ -168,7 +168,7 @@
                 const date = new Date(ts);
 
                 if (isNaN(date.getTime())) {
-                    alert('Invalid Timestamp');
+                    showError('Invalid Timestamp');
                     return;
                 }
 

@@ -237,7 +237,7 @@
 
         function handleFile(file) {
             if (!file.type.match('image.*')) {
-                alert('Please upload a valid image file');
+                showError('Please upload a valid image file');
                 return;
             }
 

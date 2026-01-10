@@ -222,7 +222,7 @@
                     })
                     .catch(function (e) {
                         loadingIndicator.classList.add('hidden');
-                        alert('Error converting HEIC file: ' + e.message);
+                        showError('Error converting HEIC file: ' + e.message);
                         console.error(e);
                     });
             }

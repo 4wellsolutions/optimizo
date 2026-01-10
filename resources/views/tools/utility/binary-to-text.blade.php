@@ -142,7 +142,7 @@
         function convertBinaryToText() {
             const binary = document.getElementById('binaryInput').value;
             if (!binary.trim()) {
-                alert('Please enter some binary code to convert.');
+                showError('Please enter some binary code to convert.');
                 return;
             }
 
@@ -153,11 +153,11 @@
                 // Validate binary input
                 for (const bin of binaryArray) {
                     if (!/^[01]+$/.test(bin)) {
-                        alert('Invalid binary input. Please use only 0 and 1.');
+                        showError('Invalid binary input. Please use only 0 and 1.');
                         return;
                     }
                     if (bin.length !== 8) {
-                        alert('Each binary number must be exactly 8 bits.');
+                        showError('Each binary number must be exactly 8 bits.');
                         return;
                     }
                 }
@@ -169,26 +169,26 @@
 
                 document.getElementById('textOutput').value = text;
             } catch (error) {
-                alert('Error converting binary: ' + error.message);
+                showError('Error converting binary: ' + error.message);
             }
         }
 
         function copyText() {
             const output = document.getElementById('textOutput');
             if (!output.value.trim()) {
-                alert('No text to copy. Please convert binary first.');
+                showError('No text to copy. Please convert binary first.');
                 return;
             }
 
             output.select();
             document.execCommand('copy');
-            alert('Text copied to clipboard!');
+            showSuccess('Text copied to clipboard!');
         }
 
         function downloadText() {
             const text = document.getElementById('textOutput').value;
             if (!text.trim()) {
-                alert('No text to download. Please convert binary first.');
+                showError('No text to download. Please convert binary first.');
                 return;
             }
 

@@ -540,7 +540,7 @@
         function convertXmlToJson() {
             const xml = document.getElementById('xmlInput').value;
             if (!xml.trim()) {
-                alert('Please enter some XML data to convert.');
+                showError('Please enter some XML data to convert.');
                 return;
             }
 
@@ -556,7 +556,7 @@
         function copyJson() {
             const output = document.getElementById('jsonOutput');
             if (!output.value.trim()) {
-                alert('No JSON to copy. Please convert XML first.');
+                showError('No JSON to copy. Please convert XML first.');
                 return;
             }
 
@@ -575,7 +575,7 @@
         function downloadJson() {
             const json = document.getElementById('jsonOutput').value;
             if (!json.trim()) {
-                alert('No JSON to download. Please convert XML first.');
+                showError('No JSON to download. Please convert XML first.');
                 return;
             }
 

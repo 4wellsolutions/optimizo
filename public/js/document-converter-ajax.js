@@ -170,7 +170,7 @@ $(document).ready(function () {
 
                 const sizeValidation = validateFileSize(file);
                 if (!sizeValidation.valid) {
-                    alert(`Error in file "${file.name}": ${sizeValidation.error}`);
+                    showError(`Error in file "${file.name}": ${sizeValidation.error}`);
                     return false;
                 }
 

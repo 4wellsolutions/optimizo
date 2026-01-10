@@ -444,7 +444,7 @@
                 window.URL.revokeObjectURL(blobUrl);
             } catch (error) {
                 console.error('Download failed:', error);
-                alert('Failed to download thumbnail. Please try again.');
+                showError('Failed to download thumbnail. Please try again.');
             }
         }
     </script>
