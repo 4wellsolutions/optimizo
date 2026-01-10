@@ -44,6 +44,9 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800,900" rel="stylesheet" />
 
+    <!-- Notification System -->
+    <link rel="stylesheet" href="{{ asset('css/notification-system.css') }}">
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -344,6 +347,9 @@
             });
         });
     </script>
+
+    <!-- Notification System -->
+    <script src="{{ asset('js/notification-system.js') }}"></script>
 
     <!-- Global Paste Functionality -->
     <script src="{{ asset('js/paste-functionality.js') }}"></script>

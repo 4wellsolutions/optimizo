@@ -56,7 +56,6 @@ if (!function_exists('__tool')) {
             'local' => 'time',
             'utc' => 'time',
             'csv' => 'spreadsheet',
-            'excel' => 'spreadsheet',
             'xls' => 'spreadsheet',
             'xlsx' => 'spreadsheet',
             'meta' => 'seo',
@@ -80,9 +79,20 @@ if (!function_exists('__tool')) {
             'redirect' => 'network',
         ];
 
+        // Special case: Document conversion tools (pdf-to-word, word-to-pdf, etc.)
+        // Check if tool slug matches document conversion patterns
+        if (
+            str_contains($toolSlug, '-to-') ||
+            str_ends_with($toolSlug, '-compressor') ||
+            str_ends_with($toolSlug, '-merger') ||
+            str_ends_with($toolSlug, '-splitter')
+        ) {
+            $category = 'document';
+        }
+
         // Special case: 'google' can be either spreadsheet or seo
         // Check the full tool slug to determine which category
-        if ($category === 'google') {
+        elseif ($category === 'google') {
             if (str_contains($toolSlug, 'sheets')) {
                 $category = 'spreadsheet';
             } else {

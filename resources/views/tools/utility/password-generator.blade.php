@@ -534,7 +534,7 @@
                     }, 100);
                 }
             } catch (error) {
-                alert('Error generating password. Please try again.');
+                showError('Error generating password. Please try again');
                 console.error('Error:', error);
             } finally {
                 btn.disabled = false;
@@ -559,7 +559,7 @@
                     btn.classList.add('bg-white', 'text-indigo-600', 'border-indigo-600');
                 }, 2000);
             }).catch(err => {
-                alert('Failed to copy password. Please copy manually.');
+                showError('Failed to copy password. Please copy manually.');
             });
         }
     </script>

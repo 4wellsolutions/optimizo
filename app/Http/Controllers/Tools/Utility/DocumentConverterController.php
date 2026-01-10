@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
+use Barryvdh\DomPDF\Facade\Pdf;
 // Libraries will be used here
 // use PhpOffice\PhpWord\PhpWord;
 // use PhpOffice\PhpSpreadsheet\Spreadsheet;
@@ -25,11 +26,11 @@ class DocumentConverterController extends Controller
     public function processPdfToWord(Request $request)
     {
         $request->validate(['file' => 'required|mimes:pdf|max:10240']); // 10MB
-        // Placeholder for logic using specialized library or API
-        // PDF to Word is complex in pure PHP. Often requires 'pdftotext' or external service.
-        // For now, we returns a "not fully implemented" or "best effort" message if lib missing.
 
-        return back()->with('error', 'PDF to Word conversion requires advanced libraries not fully configured.');
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
     }
 
     // --- Word to PDF ---
@@ -43,17 +44,10 @@ class DocumentConverterController extends Controller
     {
         $request->validate(['file' => 'required|mimes:doc,docx|max:10240']);
 
-        try {
-            // Logic using PHPOffice/PHPWord to load Docx and save as HTML then PDF (via DomPDF)
-            // $phpWord = \PhpOffice\PhpWord\IOFactory::load($request->file('file')->path());
-            // $xmlWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'PDF');
-            // $fileName = 'converted_' . time() . '.pdf';
-            // $xmlWriter->save(storage_path('app/public/' . $fileName));
-            // return response()->download(storage_path('app/public/' . $fileName));
-            return back()->with('error', 'Conversion Logic Pending Library Setup');
-        } catch (\Exception $e) {
-            return back()->with('error', 'Conversion failed: ' . $e->getMessage());
-        }
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
     }
 
     // --- PDF to Excel ---
@@ -66,7 +60,11 @@ class DocumentConverterController extends Controller
     public function processPdfToExcel(Request $request)
     {
         $request->validate(['file' => 'required|mimes:pdf|max:10240']);
-        return back()->with('error', 'PDF to Excel conversion requires advanced libraries not fully configured.');
+
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
     }
 
     // --- Excel to PDF ---
@@ -78,8 +76,48 @@ class DocumentConverterController extends Controller
 
     public function processExcelToPdf(Request $request)
     {
-        $request->validate(['file' => 'required|mimes:xls,xlsx|max:10240']);
-        return back()->with('error', 'Excel to PDF conversion requires advanced libraries not fully configured.');
+        try {
+            $request->validate(['file' => 'required|mimes:xls,xlsx|max:10240']);
+
+            $file = $request->file('file');
+            $filename = Str::random(32);
+            $storagePath = storage_path('app/temp');
+
+            // Create temp directory if it doesn't exist
+            if (!file_exists($storagePath)) {
+                mkdir($storagePath, 0755, true);
+            }
+
+            // Load the Excel file
+            $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($file->getRealPath());
+
+            // Convert to HTML
+            $writer = new \PhpOffice\PhpSpreadsheet\Writer\Html($spreadsheet);
+            $htmlContent = $writer->generateHTMLAll();
+
+            // Generate PDF from HTML
+            $pdf = Pdf::loadHTML($htmlContent);
+            $pdf->setPaper('A4', 'landscape');
+
+            $pdfPath = $storagePath . '/' . $filename . '.pdf';
+            $pdf->save($pdfPath);
+
+            // Clean up
+            $file->delete();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Excel converted to PDF successfully!',
+                'download_url' => route('utility.excel-to-pdf.download', ['filename' => $filename])
+            ]);
+
+        } catch (\Exception $e) {
+            \Log::error('Excel to PDF conversion failed: ' . $e->getMessage());
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to convert Excel to PDF. Please ensure the file is a valid Excel document.'
+            ], 500);
+        }
     }
 
     // --- PowerPoint to PDF ---
@@ -92,7 +130,11 @@ class DocumentConverterController extends Controller
     public function processPptToPdf(Request $request)
     {
         $request->validate(['file' => 'required|mimes:ppt,pptx|max:10240']);
-        return back()->with('error', 'PowerPoint to PDF conversion requires advanced libraries not fully configured.');
+
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
     }
 
     // --- PDF to PowerPoint ---
@@ -105,7 +147,11 @@ class DocumentConverterController extends Controller
     public function processPdfToPpt(Request $request)
     {
         $request->validate(['file' => 'required|mimes:pdf|max:10240']);
-        return back()->with('error', 'PDF to PowerPoint conversion requires advanced libraries not fully configured.');
+
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
     }
 
     // --- PDF to JPG ---
@@ -118,7 +164,11 @@ class DocumentConverterController extends Controller
     public function processPdfToJpg(Request $request)
     {
         $request->validate(['file' => 'required|mimes:pdf|max:10240']);
-        return back()->with('error', 'PDF to JPG conversion requires advanced libraries not fully configured.');
+
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
     }
 
     // --- JPG to PDF ---
@@ -130,8 +180,57 @@ class DocumentConverterController extends Controller
 
     public function processJpgToPdf(Request $request)
     {
-        $request->validate(['file' => 'required|mimes:jpg,jpeg,png|max:10240']);
-        return back()->with('error', 'JPG to PDF conversion requires advanced libraries not fully configured.');
+        try {
+            $request->validate(['file' => 'required|mimes:jpg,jpeg,png|max:10240']);
+
+            $file = $request->file('file');
+            $filename = Str::random(32);
+            $storagePath = storage_path('app/temp');
+
+            // Create temp directory if it doesn't exist
+            if (!file_exists($storagePath)) {
+                mkdir($storagePath, 0755, true);
+            }
+
+            // Save uploaded image temporarily
+            $imagePath = $storagePath . '/' . $filename . '_img.' . $file->getClientOriginalExtension();
+            $file->move($storagePath, $filename . '_img.' . $file->getClientOriginalExtension());
+
+            // Get image dimensions
+            list($width, $height) = getimagesize($imagePath);
+
+            // Create HTML with the image
+            $html = '<html><body style="margin:0;padding:0;"><img src="' . $imagePath . '" style="width:100%;height:auto;"/></body></html>';
+
+            // Generate PDF
+            $pdf = Pdf::loadHTML($html);
+
+            // Set paper size based on image aspect ratio
+            if ($width > $height) {
+                $pdf->setPaper('A4', 'landscape');
+            } else {
+                $pdf->setPaper('A4', 'portrait');
+            }
+
+            $pdfPath = $storagePath . '/' . $filename . '.pdf';
+            $pdf->save($pdfPath);
+
+            // Clean up temp image
+            @unlink($imagePath);
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Image converted to PDF successfully!',
+                'download_url' => route('utility.jpg-to-pdf.download', ['filename' => $filename])
+            ]);
+
+        } catch (\Exception $e) {
+            \Log::error('JPG to PDF conversion failed: ' . $e->getMessage());
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to convert image to PDF. Please ensure the file is a valid image.'
+            ], 500);
+        }
     }
 
     // --- PDF Compressor ---
@@ -153,5 +252,28 @@ class DocumentConverterController extends Controller
     {
         $tool = \App\Models\Tool::where('slug', 'pdf-splitter')->first();
         return view('tools.document.pdf-splitter', compact('tool'));
+    }
+
+    // --- Download Methods ---
+    public function downloadExcelToPdf($filename)
+    {
+        $filePath = storage_path('app/temp/' . $filename . '.pdf');
+
+        if (!file_exists($filePath)) {
+            abort(404, 'File not found');
+        }
+
+        return response()->download($filePath, 'converted.pdf')->deleteFileAfterSend(true);
+    }
+
+    public function downloadJpgToPdf($filename)
+    {
+        $filePath = storage_path('app/temp/' . $filename . '.pdf');
+
+        if (!file_exists($filePath)) {
+            abort(404, 'File not found');
+        }
+
+        return response()->download($filePath, 'converted.pdf')->deleteFileAfterSend(true);
     }
 }
