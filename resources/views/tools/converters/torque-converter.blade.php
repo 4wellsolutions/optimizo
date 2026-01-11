@@ -1,12 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Torque Converter - Newton-meters, Foot-pounds')
-@section('meta_description', 'Convert torque units instantly. Newton-meters to Foot-pounds, Inch-pounds, and Kilogram-force meters.')
-@section('meta_keywords', 'torque converter, nm to ft-lb, torque calculator, engine torque conversion')
+@section('title', __tool('torque-converter', 'seo.title'))
+@section('meta_description', __tool('torque-converter', 'seo.description'))
+@section('meta_keywords', __tool('torque-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        {{-- Hero Section --}}
         {{-- Hero Section --}}
         <x-tool-hero :tool="$tool" />
 
@@ -18,7 +17,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('torque-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="100" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,10 +25,10 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="Nm" selected>Newton-meter (N·m)</option>
-                        <option value="lbfft">Pound-force foot (lbf·ft)</option>
-                        <option value="lbfin">Pound-force inch (lbf·in)</option>
-                        <option value="kgfm">Kilogram-force meter (kgf·m)</option>
+                        <option value="Nm" selected>{{ __tool('torque-converter', 'form.unit_Nm') }}</option>
+                        <option value="lbfft">{{ __tool('torque-converter', 'form.unit_lbfft') }}</option>
+                        <option value="lbfin">{{ __tool('torque-converter', 'form.unit_lbfin') }}</option>
+                        <option value="kgfm">{{ __tool('torque-converter', 'form.unit_kgfm') }}</option>
                     </select>
                 </div>
 
@@ -48,7 +47,7 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('torque-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -56,10 +55,10 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="Nm">Newton-meter (N·m)</option>
-                        <option value="lbfft" selected>Pound-force foot (lbf·ft)</option>
-                        <option value="lbfin">Pound-force inch (lbf·in)</option>
-                        <option value="kgfm">Kilogram-force meter (kgf·m)</option>
+                        <option value="Nm">{{ __tool('torque-converter', 'form.unit_Nm') }}</option>
+                        <option value="lbfft" selected>{{ __tool('torque-converter', 'form.unit_lbfft') }}</option>
+                        <option value="lbfin">{{ __tool('torque-converter', 'form.unit_lbfin') }}</option>
+                        <option value="kgfm">{{ __tool('torque-converter', 'form.unit_kgfm') }}</option>
                     </select>
                 </div>
             </div>
@@ -80,8 +79,8 @@
                                 d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Torque Units</h3>
-                    <p class="text-gray-600">Convert between N·m, lb-ft, kgf·m, and other torque measurements.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('torque-converter', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('torque-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
@@ -90,8 +89,8 @@
                                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Automotive & Engineering</h3>
-                    <p class="text-gray-600">Perfect for engine specs, bolt tightening, and mechanical design.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('torque-converter', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('torque-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4">
@@ -100,34 +99,28 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Rotational Force</h3>
-                    <p class="text-gray-600">Accurate conversions for rotational force measurements.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('torque-converter', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('torque-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Torque Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('torque-converter', 'content.main_title') }}</h2>
                 <div class="prose prose-indigo max-w-none text-gray-600">
-                    <p>Torque measures rotational force—the tendency of a force to rotate an object around an axis. It's
-                        calculated as force multiplied by distance from the pivot point. The SI unit is the newton-meter
-                        (N·m), while pound-feet (lb-ft) is common in the US, especially for automotive applications like
-                        engine torque and bolt tightening specifications.</p>
-                    <p class="mt-4">One pound-foot equals approximately 1.356 newton-meters. Kilogram-force meters (kgf·m)
-                        are used in some engineering contexts, where 1 kgf·m equals 9.807 N·m. Understanding torque
-                        conversions is essential for automotive work, mechanical engineering, and any application involving
-                        rotational forces like motors, engines, and fasteners.</p>
+                    <p>{{ __tool('torque-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('torque-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('torque-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Automotive:</strong> Engine torque specifications and comparisons</li>
-                            <li><strong>Mechanical Repair:</strong> Bolt tightening torque requirements</li>
-                            <li><strong>Engineering:</strong> Motor and gearbox torque ratings</li>
+                            <li>{!! __tool('torque-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('torque-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('torque-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Tool Selection:</strong> Choosing the right torque wrench</li>
-                            <li><strong>Performance Tuning:</strong> Comparing vehicle power curves</li>
-                            <li><strong>Industrial Equipment:</strong> Machinery torque specifications</li>
+                            <li>{!! __tool('torque-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('torque-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('torque-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -140,113 +133,109 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('torque-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How do I convert lb-ft to N·m?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Multiply lb-ft by 1.356. For example, 100 lb-ft ×
-                            1.356 = 135.6 N·m. This is useful for converting US automotive specs to metric.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('torque-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('torque-converter', 'content.faq_a1') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What's the difference between torque and power?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Torque is rotational force (N·m), while power is
-                            the rate of doing work (watts). Power = Torque × Angular Velocity. High torque at low RPM
-                            provides strong acceleration.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('torque-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('torque-converter', 'content.faq_a2') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Why is torque important for engines?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Torque determines an engine's pulling power and
-                            acceleration capability. Higher torque means better low-end power for towing and acceleration
-                            from a standstill.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('torque-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('torque-converter', 'content.faq_a3') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What torque wrench setting should I use?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Always follow manufacturer specifications for bolt
-                            tightening. Over-tightening can strip threads or break bolts, while under-tightening can cause
-                            loosening. Use our converter to match your wrench's units!</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('torque-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('torque-converter', 'content.faq_a4') }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        // Conversion rates relative to Newton-meter (Nm)
-        const rates = {
-            'Nm': 1,
-            'lbfft': 1.355818, // 1 lb-ft = 1.3558 Nm? No, 1 Nm = 0.73756 lb-ft. So 1 lb-ft = 1.3558 Nm. Correct.
-            'lbfin': 0.1129848,
-            'kgfm': 9.80665
-        };
+@endsection
 
-        const names = {
-            'Nm': 'N·m', 'lbfft': 'lb-ft',
-            'lbfin': 'lb-in', 'kgfm': 'kgf·m'
-        };
+@push('scripts')
+<script>
+    // Conversion rates relative to Newton-meter (Nm)
+    const rates = {
+        'Nm': 1,
+        'lbfft': 1.355818, // 1 lb-ft = 1.3558 Nm? No, 1 Nm = 0.73756 lb-ft. So 1 lb-ft = 1.3558 Nm. Correct.
+        'lbfin': 0.1129848,
+        'kgfm': 9.80665
+    };
 
-        function convert(source) {
-            const fromUnit = document.getElementById('fromUnit').value;
-            const toUnit = document.getElementById('toUnit').value;
-            const fromInput = document.getElementById('fromValue');
-            const toInput = document.getElementById('toValue');
+    const names = {
+        'Nm': 'N·m', 'lbfft': 'lb-ft',
+        'lbfin': 'lb-in', 'kgfm': 'kgf·m'
+    };
 
-            let value;
-            if (source === 'from') {
-                value = parseFloat(fromInput.value);
-                if (isNaN(value)) {
-                    toInput.value = '';
-                    updateFormula(null);
-                    return;
-                }
+    function convert(source) {
+        const fromUnit = document.getElementById('fromUnit').value;
+        const toUnit = document.getElementById('toUnit').value;
+        const fromInput = document.getElementById('fromValue');
+        const toInput = document.getElementById('toValue');
 
-                // Convert to Base (Nm) then to target
-                // Nm = Value * RateOfUnit??
-                // Wait, if 1 lb-ft = 1.3558 Nm.
-                // Then Nm value = lb-ft value * 1.3558.
-                // So my rates define "How many Nm is 1 Unit".
-
-                const baseValue = value * rates[fromUnit];
-                const result = baseValue / rates[toUnit];
-                toInput.value = parseFloat(result.toPrecision(12)) / 1;
-            } else {
-                value = parseFloat(toInput.value);
-                if (isNaN(value)) {
-                    fromInput.value = '';
-                    updateFormula(null);
-                    return;
-                }
-
-                const baseValue = value * rates[toUnit];
-                const result = baseValue / rates[fromUnit];
-                fromInput.value = parseFloat(result.toPrecision(12)) / 1;
-            }
-
-            updateFormula(fromUnit, toUnit);
-        }
-
-        function swapUnits() {
-            const fromSelect = document.getElementById('fromUnit');
-            const toSelect = document.getElementById('toUnit');
-            const temp = fromSelect.value;
-
-            fromSelect.value = toSelect.value;
-            toSelect.value = temp;
-            convert('from');
-        }
-
-        function updateFormula(from, to) {
-            const display = document.getElementById('formulaDisplay');
-            if (!from) {
-                display.innerText = '';
+        let value;
+        if (source === 'from') {
+            value = parseFloat(fromInput.value);
+            if (isNaN(value)) {
+                toInput.value = '';
+                updateFormula(null);
                 return;
             }
-            const factor = rates[from] / rates[to];
-            const cleanFactor = parseFloat(factor.toPrecision(8)) / 1;
-            display.innerHTML = `1 ${names[from]} = ${cleanFactor} ${names[to]}`;
+
+            // Convert to Base (Nm) then to target
+            // Nm = Value * RateOfUnit??
+            // Wait, if 1 lb-ft = 1.3558 Nm.
+            // Then Nm value = lb-ft value * 1.3558.
+            // So my rates define "How many Nm is 1 Unit".
+
+            const baseValue = value * rates[fromUnit];
+            const result = baseValue / rates[toUnit];
+            toInput.value = parseFloat(result.toPrecision(12)) / 1;
+        } else {
+            value = parseFloat(toInput.value);
+            if (isNaN(value)) {
+                fromInput.value = '';
+                updateFormula(null);
+                return;
+            }
+
+            const baseValue = value * rates[toUnit];
+            const result = baseValue / rates[fromUnit];
+            fromInput.value = parseFloat(result.toPrecision(12)) / 1;
         }
 
-        // Initialize
-        window.addEventListener('load', () => convert('from'));
-    </script>
-@endsection
+        updateFormula(fromUnit, toUnit);
+    }
+
+    function swapUnits() {
+        const fromSelect = document.getElementById('fromUnit');
+        const toSelect = document.getElementById('toUnit');
+        const temp = fromSelect.value;
+
+        fromSelect.value = toSelect.value;
+        toSelect.value = temp;
+        convert('from');
+    }
+
+    function updateFormula(from, to) {
+        const display = document.getElementById('formulaDisplay');
+        if (!from) {
+            display.innerText = '';
+            return;
+        }
+        const factor = rates[from] / rates[to];
+        const cleanFactor = parseFloat(factor.toPrecision(8)) / 1;
+        display.innerHTML = `1 ${names[from]} = ${cleanFactor} ${names[to]}`;
+    }
+
+    // Initialize
+    window.addEventListener('load', () => convert('from'));
+</script>
+@endpush

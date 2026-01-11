@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Digital Storage Converter - Bytes, KB, MB, GB, TB')
-@section('meta_description', 'Convert digital storage units instantly. Bytes to Megabytes, Gigabytes to Terabytes, and Petabytes.')
-@section('meta_keywords', 'storage converter, bytes to mb, gb to tb, data size calculator, digital units')
+@section('title', __tool('digital-storage-converter', 'seo.title'))
+@section('meta_description', __tool('digital-storage-converter', 'seo.description'))
+@section('meta_keywords', __tool('digital-storage-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,7 +18,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('digital-storage-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="1" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-gray-300 focus:border-gray-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,13 +26,13 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="b">Bit (b)</option>
-                        <option value="B">Byte (B)</option>
-                        <option value="KB">Kilobyte (KB)</option>
-                        <option value="MB" selected>Megabyte (MB)</option>
-                        <option value="GB">Gigabyte (GB)</option>
-                        <option value="TB">Terabyte (TB)</option>
-                        <option value="PB">Petabyte (PB)</option>
+                        <option value="b">{{ __tool('digital-storage-converter', 'form.unit_b') }}</option>
+                        <option value="B">{{ __tool('digital-storage-converter', 'form.unit_B') }}</option>
+                        <option value="KB">{{ __tool('digital-storage-converter', 'form.unit_KB') }}</option>
+                        <option value="MB" selected>{{ __tool('digital-storage-converter', 'form.unit_MB') }}</option>
+                        <option value="GB">{{ __tool('digital-storage-converter', 'form.unit_GB') }}</option>
+                        <option value="TB">{{ __tool('digital-storage-converter', 'form.unit_TB') }}</option>
+                        <option value="PB">{{ __tool('digital-storage-converter', 'form.unit_PB') }}</option>
                     </select>
                 </div>
 
@@ -51,7 +51,8 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue"
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('digital-storage-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-gray-300 focus:border-gray-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -59,13 +60,13 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="b">Bit (b)</option>
-                        <option value="B">Byte (B)</option>
-                        <option value="KB" selected>Kilobyte (KB)</option>
-                        <option value="MB">Megabyte (MB)</option>
-                        <option value="GB">Gigabyte (GB)</option>
-                        <option value="TB">Terabyte (TB)</option>
-                        <option value="PB">Petabyte (PB)</option>
+                        <option value="b">{{ __tool('digital-storage-converter', 'form.unit_b') }}</option>
+                        <option value="B">{{ __tool('digital-storage-converter', 'form.unit_B') }}</option>
+                        <option value="KB" selected>{{ __tool('digital-storage-converter', 'form.unit_KB') }}</option>
+                        <option value="MB">{{ __tool('digital-storage-converter', 'form.unit_MB') }}</option>
+                        <option value="GB">{{ __tool('digital-storage-converter', 'form.unit_GB') }}</option>
+                        <option value="TB">{{ __tool('digital-storage-converter', 'form.unit_TB') }}</option>
+                        <option value="PB">{{ __tool('digital-storage-converter', 'form.unit_PB') }}</option>
                     </select>
                 </div>
             </div>
@@ -87,9 +88,8 @@
                                 d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Binary Storage Units</h3>
-                    <p class="text-gray-600">Convert between bits, bytes, KB, MB, GB, TB, and PB using binary (1024)
-                        standards.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('digital-storage-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
@@ -98,9 +98,8 @@
                                 d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">File Sizes & Devices</h3>
-                    <p class="text-gray-600">Perfect for understanding hard drive capacities, file sizes, and memory
-                        specifications.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('digital-storage-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4">
@@ -109,35 +108,30 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Accurate Calculations</h3>
-                    <p class="text-gray-600">Uses binary (1024) standard matching how operating systems calculate storage.
-                    </p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('digital-storage-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Digital Storage Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                    {{ __tool('digital-storage-converter', 'content.main_title') }}
+                </h2>
                 <div class="prose prose-gray max-w-none text-gray-600">
-                    <p>Digital storage measures data capacity in binary units. The fundamental unit is the bit (binary
-                        digit), and 8 bits make 1 byte. Storage capacities scale using binary multiples: 1 kilobyte (KB) =
-                        1,024 bytes, 1 megabyte (MB) = 1,024 KB, and so on. This binary system (base-2) differs from the
-                        decimal system (base-10) used in everyday counting.</p>
-                    <p class="mt-4">Operating systems use binary calculations (1024), which is why a "500 GB" hard drive
-                        shows as ~465 GB in Windows. Manufacturers sometimes use decimal (1000) for marketing. Our converter
-                        uses the binary standard (1024) to match how your computer actually measures storage, ensuring
-                        accuracy for file management and system specifications.</p>
+                    <p>{{ __tool('digital-storage-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('digital-storage-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('digital-storage-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>File Management:</strong> Understanding document and media file sizes</li>
-                            <li><strong>Device Shopping:</strong> Comparing hard drive and SSD capacities</li>
-                            <li><strong>Cloud Storage:</strong> Managing storage limits and quotas</li>
+                            <li>{!! __tool('digital-storage-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('digital-storage-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('digital-storage-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Programming:</strong> Memory allocation and buffer sizes</li>
-                            <li><strong>Networking:</strong> Understanding data transfer sizes</li>
-                            <li><strong>Photography:</strong> Calculating how many photos fit on a memory card</li>
+                            <li>{!! __tool('digital-storage-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('digital-storage-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('digital-storage-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -150,38 +144,33 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('digital-storage-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How many megabytes are in a gigabyte?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">There are 1,024 megabytes in 1 gigabyte when using
-                            binary calculation (how computers measure). In decimal, it's 1,000 MB, but binary is more
-                            accurate for actual storage.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('digital-storage-converter', 'content.faq_a1') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Why is my 1TB drive showing as 931GB?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Manufacturers use decimal (1TB = 1,000GB), but
-                            operating systems use binary (1TB = 1,024GB). Additionally, some space is used for file system
-                            overhead. This is normal!</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('digital-storage-converter', 'content.faq_a2') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What's the difference between KB and KiB?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">KB traditionally means 1,024 bytes (binary), while
-                            KiB (kibibyte) explicitly denotes binary. KB can also mean 1,000 bytes (decimal) in some
-                            contexts. Our converter uses binary (1,024) standard.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('digital-storage-converter', 'content.faq_a3') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How many bytes are in a bit?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">It's the opposite: 8 bits make 1 byte. A bit is the
-                            smallest unit of data (0 or 1), while a byte is a group of 8 bits that can represent 256
-                            different values.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('digital-storage-converter', 'content.faq_a4') }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+@endsection
+
+@push('scripts')
     <script>
         // Conversion rates relative to Bit (b)
         // Using Binary standard (1024)
@@ -258,4 +247,4 @@
         // Initialize
         window.addEventListener('load', () => convert('from'));
     </script>
-@endsection
+@endpush

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Cooking Unit Converter - Cups, Tablespoons, Teaspoons')
-@section('meta_description', 'Convert cooking units instantly. Cups to Tablespoons, Teaspoons to Milliliters, and Fluid Ounces.')
-@section('meta_keywords', 'cooking converter, cups to tbsp, tsp to ml, kitchen calculator, baking conversions')
+@section('title', __tool('cooking-unit-converter', 'seo.title'))
+@section('meta_description', __tool('cooking-unit-converter', 'seo.description'))
+@section('meta_keywords', __tool('cooking-unit-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,7 +18,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('cooking-unit-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="1" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-yellow-100 focus:border-yellow-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,14 +26,14 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="cup" selected>Cup (US)</option>
-                        <option value="tbsp">Tablespoon (US)</option>
-                        <option value="tsp">Teaspoon (US)</option>
-                        <option value="ml">Milliliter (ml)</option>
-                        <option value="fl_oz">Fluid Ounce (fl oz)</option>
-                        <option value="pt">Pint (US)</option>
-                        <option value="qt">Quart (US)</option>
-                        <option value="gal">Gallon (US)</option>
+                        <option value="cup" selected>{{ __tool('cooking-unit-converter', 'form.unit_cup') }}</option>
+                        <option value="tbsp">{{ __tool('cooking-unit-converter', 'form.unit_tbsp') }}</option>
+                        <option value="tsp">{{ __tool('cooking-unit-converter', 'form.unit_tsp') }}</option>
+                        <option value="ml">{{ __tool('cooking-unit-converter', 'form.unit_ml') }}</option>
+                        <option value="fl_oz">{{ __tool('cooking-unit-converter', 'form.unit_fl_oz') }}</option>
+                        <option value="pt">{{ __tool('cooking-unit-converter', 'form.unit_pt') }}</option>
+                        <option value="qt">{{ __tool('cooking-unit-converter', 'form.unit_qt') }}</option>
+                        <option value="gal">{{ __tool('cooking-unit-converter', 'form.unit_gal') }}</option>
                     </select>
                 </div>
 
@@ -52,7 +52,8 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue"
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('cooking-unit-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-yellow-100 focus:border-yellow-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -60,14 +61,14 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="cup">Cup (US)</option>
-                        <option value="tbsp" selected>Tablespoon (US)</option>
-                        <option value="tsp">Teaspoon (US)</option>
-                        <option value="ml">Milliliter (ml)</option>
-                        <option value="fl_oz">Fluid Ounce (fl oz)</option>
-                        <option value="pt">Pint (US)</option>
-                        <option value="qt">Quart (US)</option>
-                        <option value="gal">Gallon (US)</option>
+                        <option value="cup">{{ __tool('cooking-unit-converter', 'form.unit_cup') }}</option>
+                        <option value="tbsp" selected>{{ __tool('cooking-unit-converter', 'form.unit_tbsp') }}</option>
+                        <option value="tsp">{{ __tool('cooking-unit-converter', 'form.unit_tsp') }}</option>
+                        <option value="ml">{{ __tool('cooking-unit-converter', 'form.unit_ml') }}</option>
+                        <option value="fl_oz">{{ __tool('cooking-unit-converter', 'form.unit_fl_oz') }}</option>
+                        <option value="pt">{{ __tool('cooking-unit-converter', 'form.unit_pt') }}</option>
+                        <option value="qt">{{ __tool('cooking-unit-converter', 'form.unit_qt') }}</option>
+                        <option value="gal">{{ __tool('cooking-unit-converter', 'form.unit_gal') }}</option>
                     </select>
                 </div>
             </div>
@@ -88,8 +89,8 @@
                                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Cooking Units</h3>
-                    <p class="text-gray-600">Convert between cups, tablespoons, teaspoons, milliliters, and more.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('cooking-unit-converter', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('cooking-unit-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-4">
@@ -98,9 +99,8 @@
                                 d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Recipe Scaling</h3>
-                    <p class="text-gray-600">Perfect for adjusting recipes, baking, and international cooking conversions.
-                    </p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('cooking-unit-converter', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('cooking-unit-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-4">
@@ -109,34 +109,28 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Metric & Imperial</h3>
-                    <p class="text-gray-600">Seamlessly convert between US, UK, and metric cooking measurements.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('cooking-unit-converter', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('cooking-unit-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Cooking Unit Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('cooking-unit-converter', 'content.main_title') }}</h2>
                 <div class="prose prose-yellow max-w-none text-gray-600">
-                    <p>Cooking measurements vary by region and recipe tradition. US recipes use cups, tablespoons, and
-                        teaspoons, while European and Asian recipes often use milliliters and grams. Understanding these
-                        conversions is essential for following international recipes, scaling portions, and achieving
-                        consistent results in baking where precision matters.</p>
-                    <p class="mt-4">One US cup equals approximately 237 milliliters (often rounded to 240 ml). A tablespoon
-                        is about 15 ml, and a teaspoon is 5 ml. Note that US and UK measurements differ: a US cup is 237 ml,
-                        while a UK cup is 284 ml. These conversions help you adapt recipes from different cuisines and
-                        ensure accurate ingredient proportions.</p>
+                    <p>{{ __tool('cooking-unit-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('cooking-unit-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('cooking-unit-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Baking:</strong> Converting recipe measurements for precision</li>
-                            <li><strong>International Recipes:</strong> Adapting European recipes to US measurements</li>
-                            <li><strong>Recipe Scaling:</strong> Doubling or halving ingredient quantities</li>
+                            <li>{!! __tool('cooking-unit-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('cooking-unit-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('cooking-unit-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Meal Prep:</strong> Calculating bulk cooking measurements</li>
-                            <li><strong>Dietary Planning:</strong> Portion control and serving sizes</li>
-                            <li><strong>Professional Cooking:</strong> Standardizing restaurant recipes</li>
+                            <li>{!! __tool('cooking-unit-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('cooking-unit-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('cooking-unit-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -149,39 +143,32 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('cooking-unit-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How many tablespoons are in a cup?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">There are 16 tablespoons in 1 cup. This is useful
-                            for scaling recipes: half a cup equals 8 tablespoons, and a quarter cup equals 4 tablespoons.
-                        </p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('cooking-unit-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('cooking-unit-converter', 'content.faq_a1') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How many milliliters are in a cup?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">A US cup equals approximately 237 milliliters
-                            (often rounded to 240 ml for convenience). A UK cup is larger at 284 ml. Always check which
-                            standard a recipe uses!</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('cooking-unit-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('cooking-unit-converter', 'content.faq_a2') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What's the difference between a teaspoon and tablespoon?
-                        </h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">A tablespoon is 3 times larger than a teaspoon. 1
-                            tablespoon = 3 teaspoons = 15 ml, while 1 teaspoon = 5 ml. Using the wrong one can significantly
-                            affect recipes!</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('cooking-unit-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('cooking-unit-converter', 'content.faq_a3') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Can I use volume measurements for all ingredients?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Volume works well for liquids, but weight (grams)
-                            is more accurate for dry ingredients like flour. For baking precision, consider using a kitchen
-                            scale alongside volume measurements.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('cooking-unit-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('cooking-unit-converter', 'content.faq_a4') }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+@endsection
 
+@push('scripts')
     <script>
         // Conversion rates relative to Milliliter (ml)
         const rates = {
@@ -260,4 +247,4 @@
         // Initialize
         window.addEventListener('load', () => convert('from'));
     </script>
-@endsection
+@endpush

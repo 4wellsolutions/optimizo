@@ -50,14 +50,38 @@ if (!function_exists('__tool')) {
 
         // Category mapping for tools that don't follow the naming convention
         $categoryMap = [
+            // Converter tools - all use converters.php
+            'angle' => 'converters',
+            'area' => 'converters',
+            'cooking' => 'converters',
+            'data' => 'converters',
+            'density' => 'converters',
+            'digital' => 'converters',
+            'energy' => 'converters',
+            'force' => 'converters',
+            'frequency' => 'converters',
+            'fuel' => 'converters',
+            'length' => 'converters',
+            'molar' => 'converters',
+            'power' => 'converters',
+            'pressure' => 'converters',
+            'speed' => 'converters',
+            'temperature' => 'converters',
+            'time' => 'converters',
+            'torque' => 'converters',
+            'volume' => 'converters',
+            'weight' => 'converters',
+            // Time tools
             'epoch' => 'time',
             'date' => 'time',
             'unix' => 'time',
             'local' => 'time',
             'utc' => 'time',
+            // Spreadsheet tools
             'csv' => 'spreadsheet',
             'xls' => 'spreadsheet',
             'xlsx' => 'spreadsheet',
+            // SEO tools
             'meta' => 'seo',
             'keyword' => 'seo',
             'word' => 'seo',

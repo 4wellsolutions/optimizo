@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Density Converter - kg/m³, g/cm³, lb/ft³')
-@section('meta_description', 'Convert density units instantly. Kilograms per cubic meter to Grams per cubic centimeter and Pounds per cubic foot.')
-@section('meta_keywords', 'density converter, kg/m3 to g/cm3, density calculator, physics conversions')
+@section('title', __tool('density-converter', 'seo.title'))
+@section('meta_description', __tool('density-converter', 'seo.description'))
+@section('meta_keywords', __tool('density-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,7 +18,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('density-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="1000" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-teal-100 focus:border-teal-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,10 +26,10 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="kg_m3" selected>kg/m³ (Kilogram/cubic meter)</option>
-                        <option value="g_cm3">g/cm³ (Gram/cubic centimeter)</option>
-                        <option value="lb_ft3">lb/ft³ (Pound/cubic foot)</option>
-                        <option value="lb_in3">lb/in³ (Pound/cubic inch)</option>
+                        <option value="kg_m3" selected>{{ __tool('density-converter', 'form.unit_kg_m3') }}</option>
+                        <option value="g_cm3">{{ __tool('density-converter', 'form.unit_g_cm3') }}</option>
+                        <option value="lb_ft3">{{ __tool('density-converter', 'form.unit_lb_ft3') }}</option>
+                        <option value="lb_in3">{{ __tool('density-converter', 'form.unit_lb_in3') }}</option>
                     </select>
                 </div>
 
@@ -48,7 +48,8 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue"
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('density-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-teal-100 focus:border-teal-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -56,10 +57,10 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="kg_m3">kg/m³ (Kilogram/cubic meter)</option>
-                        <option value="g_cm3" selected>g/cm³ (Gram/cubic centimeter)</option>
-                        <option value="lb_ft3">lb/ft³ (Pound/cubic foot)</option>
-                        <option value="lb_in3">lb/in³ (Pound/cubic inch)</option>
+                        <option value="kg_m3">{{ __tool('density-converter', 'form.unit_kg_m3') }}</option>
+                        <option value="g_cm3" selected>{{ __tool('density-converter', 'form.unit_g_cm3') }}</option>
+                        <option value="lb_ft3">{{ __tool('density-converter', 'form.unit_lb_ft3') }}</option>
+                        <option value="lb_in3">{{ __tool('density-converter', 'form.unit_lb_in3') }}</option>
                     </select>
                 </div>
             </div>
@@ -80,8 +81,10 @@
                                 d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Density Units</h3>
-                    <p class="text-gray-600">Convert between kg/m³, g/cm³, lb/ft³, and other density measurements.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('density-converter', 'content.feature1_title') }}
+                    </h3>
+                    <p class="text-gray-600">{{ __tool('density-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
@@ -90,8 +93,10 @@
                                 d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Material Science</h3>
-                    <p class="text-gray-600">Perfect for physics, chemistry, engineering, and material identification.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('density-converter', 'content.feature2_title') }}
+                    </h3>
+                    <p class="text-gray-600">{{ __tool('density-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center text-cyan-600 mb-4">
@@ -100,34 +105,33 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Mass-Volume Ratio</h3>
-                    <p class="text-gray-600">Accurate conversions for density calculations and material properties.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('density-converter', 'content.feature3_title') }}
+                    </h3>
+                    <p class="text-gray-600">{{ __tool('density-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Density Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('density-converter', 'content.main_title') }}
+                </h2>
                 <div class="prose prose-teal max-w-none text-gray-600">
-                    <p>Density measures mass per unit volume (ρ = m/V), indicating how tightly matter is packed. The SI unit
-                        is kilograms per cubic meter (kg/m³), though grams per cubic centimeter (g/cm³) is common in
-                        chemistry and materials science. Imperial systems use pounds per cubic foot (lb/ft³). Understanding
-                        density is essential for material identification, buoyancy calculations, and engineering design.</p>
-                    <p class="mt-4">Water has a density of approximately 1000 kg/m³ or 1 g/cm³ at standard conditions,
-                        making it a useful reference. One g/cm³ equals exactly 1000 kg/m³. One lb/ft³ equals about 16.02
-                        kg/m³. Density varies with temperature and pressure, which is important for precise scientific work
-                        and engineering applications.</p>
+                    <p>{{ __tool('density-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('density-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+                        {{ __tool('density-converter', 'content.usage_examples_title') }}
+                    </h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Material Identification:</strong> Determining unknown materials by density</li>
-                            <li><strong>Buoyancy:</strong> Calculating whether objects float or sink</li>
-                            <li><strong>Chemistry:</strong> Solution concentration and purity testing</li>
+                            <li>{!! __tool('density-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('density-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('density-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Engineering:</strong> Structural load calculations and material selection</li>
-                            <li><strong>Manufacturing:</strong> Quality control and material specifications</li>
-                            <li><strong>Geology:</strong> Rock and mineral identification</li>
+                            <li>{!! __tool('density-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('density-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('density-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -140,37 +144,36 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('density-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How do I convert g/cm³ to kg/m³?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Multiply g/cm³ by 1000. For example, 2.5 g/cm³ ×
-                            1000 = 2500 kg/m³. This is because 1 cm³ = 0.000001 m³ and 1 g = 0.001 kg.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('density-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('density-converter', 'content.faq_a1') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What is the density of water?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Water's density is approximately 1000 kg/m³ or 1
-                            g/cm³ at 4°C. This makes it a convenient reference: materials denser than water sink, while less
-                            dense materials float.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('density-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('density-converter', 'content.faq_a2') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How is density related to buoyancy?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Objects float if their density is less than the
-                            fluid's density. A ship floats because its average density (including air space) is less than
-                            water's 1000 kg/m³.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('density-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('density-converter', 'content.faq_a3') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Why does density change with temperature?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Most materials expand when heated, increasing
-                            volume while mass stays constant, thus decreasing density. Water is unusual: it's densest at
-                            4°C, which is why ice floats.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('density-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('density-converter', 'content.faq_a4') }}
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+@endsection
 
+@push('scripts')
     <script>
         // Conversion rates relative to kg/m³
         const rates = {
@@ -249,4 +252,4 @@
         // Initialize
         window.addEventListener('load', () => convert('from'));
     </script>
-@endsection
+@endpush

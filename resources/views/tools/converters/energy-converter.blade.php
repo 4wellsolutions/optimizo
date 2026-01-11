@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Energy Converter - Joules, Calories, kWh')
-@section('meta_description', 'Convert energy units instantly. Joules to Calories, Kilowatt-hours to BTUs, and more.')
-@section('meta_keywords', 'energy converter, joules to calories, btu conversion, kwh to joules')
+@section('title', __tool('energy-converter', 'seo.title'))
+@section('meta_description', __tool('energy-converter', 'seo.description'))
+@section('meta_keywords', __tool('energy-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,7 +18,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('energy-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="1" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-orange-100 focus:border-orange-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,14 +26,14 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="J" selected>Joule (J)</option>
-                        <option value="kJ">Kilojoule (kJ)</option>
-                        <option value="cal">Calorie (cal)</option>
-                        <option value="kcal">Kilocalorie (kcal/Cal)</option>
-                        <option value="Wh">Watt-hour (Wh)</option>
-                        <option value="kWh">Kilowatt-hour (kWh)</option>
-                        <option value="BTU">British Thermal Unit (BTU)</option>
-                        <option value="ftlb">Foot-pound (ft⋅lb)</option>
+                        <option value="J" selected>{{ __tool('energy-converter', 'form.unit_J') }}</option>
+                        <option value="kJ">{{ __tool('energy-converter', 'form.unit_kJ') }}</option>
+                        <option value="cal">{{ __tool('energy-converter', 'form.unit_cal') }}</option>
+                        <option value="kcal">{{ __tool('energy-converter', 'form.unit_kcal') }}</option>
+                        <option value="Wh">{{ __tool('energy-converter', 'form.unit_Wh') }}</option>
+                        <option value="kWh">{{ __tool('energy-converter', 'form.unit_kWh') }}</option>
+                        <option value="BTU">{{ __tool('energy-converter', 'form.unit_BTU') }}</option>
+                        <option value="ftlb">{{ __tool('energy-converter', 'form.unit_ftlb') }}</option>
                     </select>
                 </div>
 
@@ -52,7 +52,8 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue"
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('energy-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-orange-100 focus:border-orange-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -60,14 +61,14 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="J">Joule (J)</option>
-                        <option value="kJ">Kilojoule (kJ)</option>
-                        <option value="cal" selected>Calorie (cal)</option>
-                        <option value="kcal">Kilocalorie (kcal/Cal)</option>
-                        <option value="Wh">Watt-hour (Wh)</option>
-                        <option value="kWh">Kilowatt-hour (kWh)</option>
-                        <option value="BTU">British Thermal Unit (BTU)</option>
-                        <option value="ftlb">Foot-pound (ft⋅lb)</option>
+                        <option value="J">{{ __tool('energy-converter', 'form.unit_J') }}</option>
+                        <option value="kJ">{{ __tool('energy-converter', 'form.unit_kJ') }}</option>
+                        <option value="cal" selected>{{ __tool('energy-converter', 'form.unit_cal') }}</option>
+                        <option value="kcal">{{ __tool('energy-converter', 'form.unit_kcal') }}</option>
+                        <option value="Wh">{{ __tool('energy-converter', 'form.unit_Wh') }}</option>
+                        <option value="kWh">{{ __tool('energy-converter', 'form.unit_kWh') }}</option>
+                        <option value="BTU">{{ __tool('energy-converter', 'form.unit_BTU') }}</option>
+                        <option value="ftlb">{{ __tool('energy-converter', 'form.unit_ftlb') }}</option>
                     </select>
                 </div>
             </div>
@@ -88,8 +89,8 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Multiple Energy Units</h3>
-                    <p class="text-gray-600">Convert between joules, calories, BTU, kilowatt-hours, and more.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('energy-converter', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('energy-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-4">
@@ -98,9 +99,8 @@
                                 d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Nutrition & Physics</h3>
-                    <p class="text-gray-600">Perfect for food calories, electricity bills, and thermodynamics calculations.
-                    </p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('energy-converter', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('energy-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-yellow-600 mb-4">
@@ -109,33 +109,31 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Scientific Accuracy</h3>
-                    <p class="text-gray-600">Precise conversions for engineering, nutrition, and energy management.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('energy-converter', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('energy-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Energy Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('energy-converter', 'content.main_title') }}
+                </h2>
                 <div class="prose prose-orange max-w-none text-gray-600">
-                    <p>Energy is the capacity to do work or produce heat. Different fields use different units: joules (J)
-                        in physics, calories in nutrition, BTU in heating/cooling, and kilowatt-hours (kWh) for electricity.
-                        Understanding these conversions is essential for diet planning, energy bills, and scientific
-                        calculations.</p>
-                    <p class="mt-4">The SI unit is the joule. One food Calorie (capital C) equals 1 kilocalorie (kcal) or
-                        4,184 joules. A kilowatt-hour, used on electric bills, equals 3.6 million joules. BTU (British
-                        Thermal Unit) measures heat energy, with 1 BTU equaling approximately 1,055 joules.</p>
+                    <p>{{ __tool('energy-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('energy-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+                        {{ __tool('energy-converter', 'content.usage_examples_title') }}
+                    </h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Nutrition:</strong> Converting food calories to joules or kJ</li>
-                            <li><strong>Electricity Bills:</strong> Understanding kWh consumption</li>
-                            <li><strong>HVAC Systems:</strong> BTU ratings for air conditioners and heaters</li>
+                            <li>{!! __tool('energy-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('energy-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('energy-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Physics:</strong> Energy calculations in joules</li>
-                            <li><strong>Fitness:</strong> Tracking calorie burn during exercise</li>
-                            <li><strong>Engineering:</strong> Thermal energy and efficiency calculations</li>
+                            <li>{!! __tool('energy-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('energy-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('energy-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -148,36 +146,36 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('energy-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How many joules are in a calorie?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">One small calorie (cal) equals 4.184 joules. One
-                            food Calorie (Cal or kcal) equals 4,184 joules or 4.184 kilojoules.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('energy-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('energy-converter', 'content.faq_a1') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What's the difference between calories and Calories?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">A small calorie (cal) is the energy to heat 1g of
-                            water by 1°C. A food Calorie (Cal, capital C) equals 1,000 small calories (1 kcal). Food labels
-                            use Calories (kcal).</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('energy-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('energy-converter', 'content.faq_a2') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How do I convert kWh to joules?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Multiply kWh by 3,600,000. For example, 1 kWh =
-                            3,600,000 joules (3.6 megajoules). This is useful for understanding electricity consumption.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('energy-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('energy-converter', 'content.faq_a3') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What is a BTU used for?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">BTU (British Thermal Unit) measures heating and
-                            cooling capacity. Air conditioners and heaters are rated in BTU/hour, indicating how much heat
-                            they can add or remove.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('energy-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('energy-converter', 'content.faq_a4') }}
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+@endsection
 
+@push('scripts')
     <script>
         // Conversion rates relative to Joule (J)
         const rates = {
@@ -254,4 +252,4 @@
         // Initialize
         window.addEventListener('load', () => convert('from'));
     </script>
-@endsection
+@endpush

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Length Converter - Free Online Unit Converter')
-@section('meta_description', 'Convert length measurements instantly. Supports metric and imperial units like meters, feet, inches, kilometers, and miles.')
-@section('meta_keywords', 'length converter, meter to feet, cm to inch, km to miles, online unit converter')
+@section('title', __tool('length-converter', 'seo.title'))
+@section('meta_description', __tool('length-converter', 'seo.description'))
+@section('meta_keywords', __tool('length-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -17,7 +17,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('length-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="1" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-blue-100 focus:border-blue-500 transition-all text-gray-800 placeholder-gray-300"
@@ -25,17 +25,17 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <optgroup label="Metric">
-                            <option value="mm">Millimeter (mm)</option>
-                            <option value="cm">Centimeter (cm)</option>
-                            <option value="m" selected>Meter (m)</option>
-                            <option value="km">Kilometer (km)</option>
+                        <optgroup label="{{ __tool('length-converter', 'form.optgroup_metric') }}">
+                            <option value="mm">{{ __tool('length-converter', 'form.unit_mm') }}</option>
+                            <option value="cm">{{ __tool('length-converter', 'form.unit_cm') }}</option>
+                            <option value="m" selected>{{ __tool('length-converter', 'form.unit_m') }}</option>
+                            <option value="km">{{ __tool('length-converter', 'form.unit_km') }}</option>
                         </optgroup>
-                        <optgroup label="Imperial">
-                            <option value="in">Inch (in)</option>
-                            <option value="ft">Foot (ft)</option>
-                            <option value="yd">Yard (yd)</option>
-                            <option value="mi">Mile (mi)</option>
+                        <optgroup label="{{ __tool('length-converter', 'form.optgroup_imperial') }}">
+                            <option value="in">{{ __tool('length-converter', 'form.unit_in') }}</option>
+                            <option value="ft">{{ __tool('length-converter', 'form.unit_ft') }}</option>
+                            <option value="yd">{{ __tool('length-converter', 'form.unit_yd') }}</option>
+                            <option value="mi">{{ __tool('length-converter', 'form.unit_mi') }}</option>
                         </optgroup>
                     </select>
                 </div>
@@ -55,7 +55,8 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue"
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('length-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -63,17 +64,17 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <optgroup label="Metric">
-                            <option value="mm">Millimeter (mm)</option>
-                            <option value="cm">Centimeter (cm)</option>
-                            <option value="m">Meter (m)</option>
-                            <option value="km">Kilometer (km)</option>
+                        <optgroup label="{{ __tool('length-converter', 'form.optgroup_metric') }}">
+                            <option value="mm">{{ __tool('length-converter', 'form.unit_mm') }}</option>
+                            <option value="cm">{{ __tool('length-converter', 'form.unit_cm') }}</option>
+                            <option value="m">{{ __tool('length-converter', 'form.unit_m') }}</option>
+                            <option value="km">{{ __tool('length-converter', 'form.unit_km') }}</option>
                         </optgroup>
-                        <optgroup label="Imperial">
-                            <option value="in">Inch (in)</option>
-                            <option value="ft" selected>Foot (ft)</option>
-                            <option value="yd">Yard (yd)</option>
-                            <option value="mi">Mile (mi)</option>
+                        <optgroup label="{{ __tool('length-converter', 'form.optgroup_imperial') }}">
+                            <option value="in">{{ __tool('length-converter', 'form.unit_in') }}</option>
+                            <option value="ft" selected>{{ __tool('length-converter', 'form.unit_ft') }}</option>
+                            <option value="yd">{{ __tool('length-converter', 'form.unit_yd') }}</option>
+                            <option value="mi">{{ __tool('length-converter', 'form.unit_mi') }}</option>
                         </optgroup>
                     </select>
                 </div>
@@ -96,8 +97,8 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Instant Conversion</h3>
-                    <p class="text-gray-600">Get results immediately as you type. No waiting, no page reloads.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('length-converter', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('length-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 mb-4">
@@ -106,8 +107,8 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">High Precision</h3>
-                    <p class="text-gray-600">Calculates up to 10 decimal places for scientific accuracy.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('length-converter', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('length-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4">
@@ -116,39 +117,29 @@
                                 d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Metric & Imperial</h3>
-                    <p class="text-gray-600">Supports all common units from Millimeters to Miles.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('length-converter', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('length-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             {{-- Long Content --}}
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Length Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('length-converter', 'content.main_title') }}
+                </h2>
                 <div class="prose prose-indigo max-w-none text-gray-600">
-                    <p>
-                        Length conversion is the process of changing a unit of measurement for length or distance into
-                        another unit.
-                        This is common in science, engineering, and daily life, as different regions and industries use
-                        different systems.
-                    </p>
-                    <p class="mt-4">
-                        The two most common systems are the <strong>Metric System</strong> (meters, kilometers, centimeters)
-                        and the
-                        <strong>Imperial System</strong> (feet, inches, miles). The metric system is used globally, while
-                        the imperial
-                        system is primarily used in the United States.
-                    </p>
+                    <p>{{ __tool('length-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('length-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Scenarios</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('length-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Construction:</strong> Converting blueprints from meters to feet.</li>
-                            <li><strong>Travel:</strong> Understanding distances in kilometers vs miles.</li>
-                            <li><strong>Science:</strong> Precise measurements in millimeters or micrometers.</li>
+                            <li>{!! __tool('length-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('length-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('length-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Sports:</strong> Track lengths (100m sprint vs 100 yards).</li>
-                            <li><strong>Education:</strong> Teaching unit conversion in physics.</li>
+                            <li>{!! __tool('length-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('length-converter', 'content.usage_5') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -162,29 +153,28 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('length-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How many feet are in a meter?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">There are approximately 3.28084 feet in one meter.
-                            This is a common conversion for height and room dimensions.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('length-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('length-converter', 'content.faq_a1') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What is the difference between a Yard and a Meter?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">A meter is slightly longer than a yard. 1 Meter =
-                            1.09361 Yards. While close in size, they belong to different measurement systems.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('length-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('length-converter', 'content.faq_a2') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How to convert Kilometers to Miles?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">To convert kilometers to miles, multiply the
-                            kilometer value by 0.621371. For example, 10 km is approximately 6.2 miles.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('length-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('length-converter', 'content.faq_a3') }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+@endsection
 
+@push('scripts')
     <script>
         // Conversion rates relative to Meter
         const rates = {
@@ -273,4 +263,4 @@
         // Initialize
         window.addEventListener('load', () => convert('from'));
     </script>
-@endsection
+@endpush

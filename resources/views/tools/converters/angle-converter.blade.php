@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Angle Converter - Degrees, Radians, Gradians')
-@section('meta_description', 'Convert angle units instantly. Degrees to Radians, Gradians, Arcminutes, and Arcseconds.')
-@section('meta_keywords', 'angle converter, degrees to radians, radian conversion, geometry calculator')
+@section('title', __tool('angle-converter', 'seo.title'))
+@section('meta_description', __tool('angle-converter', 'seo.description'))
+@section('meta_keywords', __tool('angle-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,7 +18,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('angle-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="1" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-amber-100 focus:border-amber-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,11 +26,11 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="deg" selected>Degree (°)</option>
-                        <option value="rad">Radian (rad)</option>
-                        <option value="grad">Gradian (gon)</option>
-                        <option value="min">Arcminute (')</option>
-                        <option value="sec">Arcsecond (")</option>
+                        <option value="deg" selected>{{ __tool('angle-converter', 'form.unit_degree') }}</option>
+                        <option value="rad">{{ __tool('angle-converter', 'form.unit_radian') }}</option>
+                        <option value="grad">{{ __tool('angle-converter', 'form.unit_gradian') }}</option>
+                        <option value="min">{{ __tool('angle-converter', 'form.unit_arcminute') }}</option>
+                        <option value="sec">{{ __tool('angle-converter', 'form.unit_arcsecond') }}</option>
                     </select>
                 </div>
 
@@ -49,7 +49,8 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue"
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('angle-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-amber-100 focus:border-amber-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -57,11 +58,11 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="deg">Degree (°)</option>
-                        <option value="rad" selected>Radian (rad)</option>
-                        <option value="grad">Gradian (gon)</option>
-                        <option value="min">Arcminute (')</option>
-                        <option value="sec">Arcsecond (")</option>
+                        <option value="deg">{{ __tool('angle-converter', 'form.unit_degree') }}</option>
+                        <option value="rad" selected>{{ __tool('angle-converter', 'form.unit_radian') }}</option>
+                        <option value="grad">{{ __tool('angle-converter', 'form.unit_gradian') }}</option>
+                        <option value="min">{{ __tool('angle-converter', 'form.unit_arcminute') }}</option>
+                        <option value="sec">{{ __tool('angle-converter', 'form.unit_arcsecond') }}</option>
                     </select>
                 </div>
             </div>
@@ -82,8 +83,9 @@
                                 d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Angle Units</h3>
-                    <p class="text-gray-600">Convert between degrees, radians, gradians, and turns for any application.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('angle-converter', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('angle-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-4">
@@ -92,9 +94,9 @@
                                 d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Math & Engineering</h3>
-                    <p class="text-gray-600">Perfect for trigonometry, navigation, CAD design, and scientific calculations.
-                    </p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('angle-converter', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('angle-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-yellow-600 mb-4">
@@ -103,34 +105,29 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Precise Conversions</h3>
-                    <p class="text-gray-600">Accurate angle conversions using mathematical constants like π.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('angle-converter', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('angle-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Angle Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('angle-converter', 'content.main_title') }}</h2>
                 <div class="prose prose-amber max-w-none text-gray-600">
-                    <p>Angles measure rotation or the space between two intersecting lines. Degrees (°) are most common in
-                        everyday use, with a full circle being 360°. Radians are the standard unit in mathematics and
-                        physics, where a full circle equals 2π radians. Gradians (gon) divide a circle into 400 parts, used
-                        in some surveying applications.</p>
-                    <p class="mt-4">One radian is the angle subtended by an arc equal in length to the radius. Since a
-                        circle's circumference is 2πr, a full circle contains 2π radians. This makes 180° = π radians, a
-                        fundamental relationship in trigonometry. Understanding angle conversions is essential for
-                        mathematics, engineering, navigation, and computer graphics.</p>
+                    <p>{{ __tool('angle-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('angle-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('angle-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Mathematics:</strong> Trigonometric calculations in radians</li>
-                            <li><strong>Navigation:</strong> Bearing and heading measurements in degrees</li>
-                            <li><strong>CAD/Design:</strong> Rotation angles for 3D modeling</li>
+                            <li>{!! __tool('angle-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('angle-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('angle-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Surveying:</strong> Land measurements using gradians</li>
-                            <li><strong>Programming:</strong> Graphics rotation and animation</li>
-                            <li><strong>Astronomy:</strong> Celestial coordinates and positions</li>
+                            <li>{!! __tool('angle-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('angle-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('angle-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -143,36 +140,35 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('angle-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How do I convert degrees to radians?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Multiply degrees by π/180. For example, 90° ×
-                            (π/180) = π/2 radians ≈ 1.571 radians. Our converter handles this automatically!</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('angle-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('angle-converter', 'content.faq_a1') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Why are radians used in mathematics?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Radians are the "natural" unit for angles because
-                            they simplify many mathematical formulas. In calculus and trigonometry, using radians eliminates
-                            conversion factors and makes equations cleaner.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('angle-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('angle-converter', 'content.faq_a2') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What are gradians used for?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Gradians (gon) divide a circle into 400 parts,
-                            making right angles exactly 100 gon. They're used in some surveying and civil engineering
-                            applications, particularly in Europe.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('angle-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('angle-converter', 'content.faq_a3') }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How many degrees are in π radians?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">π radians equals exactly 180 degrees. This is a
-                            fundamental relationship: π rad = 180°, so 2π rad = 360° (a full circle).</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('angle-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('angle-converter', 'content.faq_a4') }}
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+@endsection
 
+@push('scripts')
     <script>
         // Conversion rates relative to Degree (deg)
         const rates = {
@@ -246,4 +242,4 @@
         // Initialize
         window.addEventListener('load', () => convert('from'));
     </script>
-@endsection
+@endpush

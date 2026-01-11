@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Fuel Consumption Converter - MPG, km/L, L/100km')
-@section('meta_description', 'Convert fuel consumption units instantly. Miles per Gallon (MPG) to L/100km and Kilometers per Liter.')
-@section('meta_keywords', 'fuel converter, mpg to l/100km, km/l to mpg, fuel efficiency calculator')
+@section('title', __tool('fuel-consumption-converter', 'seo.title'))
+@section('meta_description', __tool('fuel-consumption-converter', 'seo.description'))
+@section('meta_keywords', __tool('fuel-consumption-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,7 +18,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('fuel-consumption-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="10" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-green-100 focus:border-green-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,10 +26,10 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="mpg_us" selected>MPG (US)</option>
-                        <option value="mpg_uk">MPG (UK)</option>
-                        <option value="km_l">Kilometers/Liter (km/L)</option>
-                        <option value="l_100km">Liters/100km</option>
+                        <option value="mpg_us" selected>{{ __tool('fuel-consumption-converter', 'form.unit_mpg_us') }}</option>
+                        <option value="mpg_uk">{{ __tool('fuel-consumption-converter', 'form.unit_mpg_uk') }}</option>
+                        <option value="km_l">{{ __tool('fuel-consumption-converter', 'form.unit_km_l') }}</option>
+                        <option value="l_100km">{{ __tool('fuel-consumption-converter', 'form.unit_l_100km') }}</option>
                     </select>
                 </div>
 
@@ -48,7 +48,7 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('fuel-consumption-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-green-100 focus:border-green-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -56,10 +56,10 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="mpg_us">MPG (US)</option>
-                        <option value="mpg_uk">MPG (UK)</option>
-                        <option value="km_l">Kilometers/Liter (km/L)</option>
-                        <option value="l_100km" selected>Liters/100km</option>
+                        <option value="mpg_us">{{ __tool('fuel-consumption-converter', 'form.unit_mpg_us') }}</option>
+                        <option value="mpg_uk">{{ __tool('fuel-consumption-converter', 'form.unit_mpg_uk') }}</option>
+                        <option value="km_l">{{ __tool('fuel-consumption-converter', 'form.unit_km_l') }}</option>
+                        <option value="l_100km" selected>{{ __tool('fuel-consumption-converter', 'form.unit_l_100km') }}</option>
                     </select>
                 </div>
             </div>
@@ -80,8 +80,8 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fuel Economy Units</h3>
-                    <p class="text-gray-600">Convert between MPG, L/100km, km/L, and imperial/US gallons.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('fuel-consumption-converter', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('fuel-consumption-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
@@ -90,8 +90,8 @@
                                 d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Automotive & Travel</h3>
-                    <p class="text-gray-600">Perfect for comparing vehicle efficiency and calculating trip fuel costs.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('fuel-consumption-converter', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('fuel-consumption-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 mb-4">
@@ -100,34 +100,28 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Inverse Relationship</h3>
-                    <p class="text-gray-600">Handles efficiency (MPG) vs consumption (L/100km) conversions accurately.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('fuel-consumption-converter', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('fuel-consumption-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Fuel Consumption Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('fuel-consumption-converter', 'content.main_title') }}</h2>
                 <div class="prose prose-green max-w-none text-gray-600">
-                    <p>Fuel consumption measures how efficiently a vehicle uses fuel. Different regions use different
-                        standards: MPG (miles per gallon) in the US and UK, L/100km (liters per 100 kilometers) in Europe
-                        and most other countries, and km/L in some Asian markets. These units measure opposite concepts: MPG
-                        shows efficiency (higher is better), while L/100km shows consumption (lower is better).</p>
-                    <p class="mt-4">US and UK gallons differ: 1 US gallon = 3.785 liters, while 1 UK (imperial) gallon =
-                        4.546 liters. This means a car rated at 30 MPG (US) equals about 36 MPG (UK). To convert MPG to
-                        L/100km, use the formula: 235.21 ÷ MPG (US) = L/100km. Understanding these conversions is essential
-                        for comparing vehicle specifications internationally and calculating fuel costs.</p>
+                    <p>{{ __tool('fuel-consumption-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('fuel-consumption-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('fuel-consumption-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Vehicle Shopping:</strong> Comparing fuel economy between US and European cars</li>
-                            <li><strong>Trip Planning:</strong> Calculating fuel costs for road trips</li>
-                            <li><strong>Fleet Management:</strong> Tracking vehicle efficiency across regions</li>
+                            <li>{!! __tool('fuel-consumption-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('fuel-consumption-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('fuel-consumption-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Environmental Impact:</strong> Assessing carbon footprint from fuel use</li>
-                            <li><strong>Budget Planning:</strong> Estimating monthly fuel expenses</li>
-                            <li><strong>International Relocation:</strong> Understanding local fuel economy standards</li>
+                            <li>{!! __tool('fuel-consumption-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('fuel-consumption-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('fuel-consumption-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -140,127 +134,123 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('fuel-consumption-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How do I convert MPG to L/100km?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Divide 235.21 by MPG (US). For example, 30 MPG →
-                            235.21 ÷ 30 = 7.84 L/100km. Note: higher MPG means lower L/100km (inverse relationship).</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('fuel-consumption-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('fuel-consumption-converter', 'content.faq_a1') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What's the difference between US and UK MPG?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">UK (imperial) gallons are 20% larger than US
-                            gallons. A car rated at 30 MPG (US) equals about 36 MPG (UK). Always check which gallon type is
-                            used!</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('fuel-consumption-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('fuel-consumption-converter', 'content.faq_a2') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Which is better: higher MPG or lower L/100km?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Both indicate better fuel efficiency! Higher MPG
-                            means more miles per gallon (good), while lower L/100km means less fuel per distance (also
-                            good). They're inversely related.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('fuel-consumption-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('fuel-consumption-converter', 'content.faq_a3') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Why does Europe use L/100km instead of MPG?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">L/100km directly shows fuel consumption for a
-                            standard distance, making it easier to calculate fuel costs. It's also metric-based, aligning
-                            with European measurement standards.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('fuel-consumption-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('fuel-consumption-converter', 'content.faq_a4') }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        // Use a conversion map to standardized "MPG (US)"
-        // For L/100km, the relationship is inverse: x mpg = 235.215 / y l/100km
+@endsection
 
-        function toMpgUs(val, unit) {
-            if (val === 0) return 0; // Avoid division by zero issues
-            if (unit === 'mpg_us') return val;
-            if (unit === 'mpg_uk') return val / 1.20095;
-            if (unit === 'km_l') return val * 2.35215;
-            if (unit === 'l_100km') return 235.215 / val;
-            return val;
-        }
+@push('scripts')
+<script>
+    // Use a conversion map to standardized "MPG (US)"
+    // For L/100km, the relationship is inverse: x mpg = 235.215 / y l/100km
 
-        function fromMpgUs(mpg, unit) {
-            if (mpg === 0) return 0;
-            if (unit === 'mpg_us') return mpg;
-            if (unit === 'mpg_uk') return mpg * 1.20095;
-            if (unit === 'km_l') return mpg / 2.35215;
-            if (unit === 'l_100km') return 235.215 / mpg;
-            return mpg;
-        }
+    function toMpgUs(val, unit) {
+        if (val === 0) return 0; // Avoid division by zero issues
+        if (unit === 'mpg_us') return val;
+        if (unit === 'mpg_uk') return val / 1.20095;
+        if (unit === 'km_l') return val * 2.35215;
+        if (unit === 'l_100km') return 235.215 / val;
+        return val;
+    }
 
-        function convert(source) {
-            const fromUnit = document.getElementById('fromUnit').value;
-            const toUnit = document.getElementById('toUnit').value;
-            const fromInput = document.getElementById('fromValue');
-            const toInput = document.getElementById('toValue');
+    function fromMpgUs(mpg, unit) {
+        if (mpg === 0) return 0;
+        if (unit === 'mpg_us') return mpg;
+        if (unit === 'mpg_uk') return mpg * 1.20095;
+        if (unit === 'km_l') return mpg / 2.35215;
+        if (unit === 'l_100km') return 235.215 / mpg;
+        return mpg;
+    }
 
-            let val;
-            let result;
+    function convert(source) {
+        const fromUnit = document.getElementById('fromUnit').value;
+        const toUnit = document.getElementById('toUnit').value;
+        const fromInput = document.getElementById('fromValue');
+        const toInput = document.getElementById('toValue');
 
-            if (source === 'from') {
-                val = parseFloat(fromInput.value);
-                // Handle 0 or invalid input specially for inverse units
-                if (isNaN(val)) {
-                    toInput.value = '';
-                    updateFormula(null);
-                    return;
-                }
+        let val;
+        let result;
 
-                // Convert to Base (MPG US)
-                const baseMpg = toMpgUs(val, fromUnit);
-                // Convert to Target
-                result = fromMpgUs(baseMpg, toUnit);
-
-                // Precision handling
-                toInput.value = parseFloat(result.toPrecision(8)) / 1;
-            } else {
-                val = parseFloat(toInput.value);
-                if (isNaN(val)) {
-                    fromInput.value = '';
-                    updateFormula(null);
-                    return;
-                }
-
-                const baseMpg = toMpgUs(val, toUnit);
-                result = fromMpgUs(baseMpg, fromUnit);
-
-                fromInput.value = parseFloat(result.toPrecision(8)) / 1;
-            }
-
-            updateFormula(fromUnit, toUnit);
-        }
-
-        function swapUnits() {
-            const fromSelect = document.getElementById('fromUnit');
-            const toSelect = document.getElementById('toUnit');
-            const temp = fromSelect.value;
-
-            fromSelect.value = toSelect.value;
-            toSelect.value = temp;
-            convert('from');
-        }
-
-        function updateFormula(from, to) {
-            const display = document.getElementById('formulaDisplay');
-            if (!from) {
-                display.innerText = '';
+        if (source === 'from') {
+            val = parseFloat(fromInput.value);
+            // Handle 0 or invalid input specially for inverse units
+            if (isNaN(val)) {
+                toInput.value = '';
+                updateFormula(null);
                 return;
             }
 
-            // Generate dynamic text since formula varies
-            if (from === 'l_100km' || to === 'l_100km') {
-                display.innerText = "Inverse relationship: Higher value means less efficiency.";
-            } else {
-                display.innerText = "Direct conversion.";
+            // Convert to Base (MPG US)
+            const baseMpg = toMpgUs(val, fromUnit);
+            // Convert to Target
+            result = fromMpgUs(baseMpg, toUnit);
+
+            // Precision handling
+            toInput.value = parseFloat(result.toPrecision(8)) / 1;
+        } else {
+            val = parseFloat(toInput.value);
+            if (isNaN(val)) {
+                fromInput.value = '';
+                updateFormula(null);
+                return;
             }
+
+            const baseMpg = toMpgUs(val, toUnit);
+            result = fromMpgUs(baseMpg, fromUnit);
+
+            fromInput.value = parseFloat(result.toPrecision(8)) / 1;
         }
 
-        // Initialize
-        window.addEventListener('load', () => convert('from'));
-    </script>
-@endsection
+        updateFormula(fromUnit, toUnit);
+    }
+
+    function swapUnits() {
+        const fromSelect = document.getElementById('fromUnit');
+        const toSelect = document.getElementById('toUnit');
+        const temp = fromSelect.value;
+
+        fromSelect.value = toSelect.value;
+        toSelect.value = temp;
+        convert('from');
+    }
+
+    function updateFormula(from, to) {
+        const display = document.getElementById('formulaDisplay');
+        if (!from) {
+            display.innerText = '';
+            return;
+        }
+
+        // Generate dynamic text since formula varies
+        if (from === 'l_100km' || to === 'l_100km') {
+            display.innerText = "Inverse relationship: Higher value means less efficiency.";
+        } else {
+            display.innerText = "Direct conversion.";
+        }
+    }
+
+    // Initialize
+    window.addEventListener('load', () => convert('from'));
+</script>
+@endpush

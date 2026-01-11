@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Frequency Converter - Hertz, kHz, MHz, GHz')
-@section('meta_description', 'Convert frequency units instantly. Hertz to Megahertz, Gigahertz to Kilohertz.')
-@section('meta_keywords', 'frequency converter, hertz to mhz, ghz to khz, radio frequency calculator')
+@section('title', __tool('frequency-converter', 'seo.title'))
+@section('meta_description', __tool('frequency-converter', 'seo.description'))
+@section('meta_keywords', __tool('frequency-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,7 +18,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('frequency-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="1" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,12 +26,12 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="Hz">Hertz (Hz)</option>
-                        <option value="kHz">Kilohertz (kHz)</option>
-                        <option value="MHz" selected>Megahertz (MHz)</option>
-                        <option value="GHz">Gigahertz (GHz)</option>
-                        <option value="THz">Terahertz (THz)</option>
-                        <option value="rpm">Rev. per Minute (RPM)</option>
+                        <option value="Hz">{{ __tool('frequency-converter', 'form.unit_Hz') }}</option>
+                        <option value="kHz">{{ __tool('frequency-converter', 'form.unit_kHz') }}</option>
+                        <option value="MHz" selected>{{ __tool('frequency-converter', 'form.unit_MHz') }}</option>
+                        <option value="GHz">{{ __tool('frequency-converter', 'form.unit_GHz') }}</option>
+                        <option value="THz">{{ __tool('frequency-converter', 'form.unit_THz') }}</option>
+                        <option value="rpm">{{ __tool('frequency-converter', 'form.unit_rpm') }}</option>
                     </select>
                 </div>
 
@@ -50,7 +50,7 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('frequency-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -58,12 +58,12 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="Hz" selected>Hertz (Hz)</option>
-                        <option value="kHz">Kilohertz (kHz)</option>
-                        <option value="MHz">Megahertz (MHz)</option>
-                        <option value="GHz">Gigahertz (GHz)</option>
-                        <option value="THz">Terahertz (THz)</option>
-                        <option value="rpm">Rev. per Minute (RPM)</option>
+                        <option value="Hz" selected>{{ __tool('frequency-converter', 'form.unit_Hz') }}</option>
+                        <option value="kHz">{{ __tool('frequency-converter', 'form.unit_kHz') }}</option>
+                        <option value="MHz">{{ __tool('frequency-converter', 'form.unit_MHz') }}</option>
+                        <option value="GHz">{{ __tool('frequency-converter', 'form.unit_GHz') }}</option>
+                        <option value="THz">{{ __tool('frequency-converter', 'form.unit_THz') }}</option>
+                        <option value="rpm">{{ __tool('frequency-converter', 'form.unit_rpm') }}</option>
                     </select>
                 </div>
             </div>
@@ -110,29 +110,22 @@
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Frequency Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('frequency-converter', 'content.main_title') }}</h2>
                 <div class="prose prose-cyan max-w-none text-gray-600">
-                    <p>Frequency measures how often a repeating event occurs per unit time, expressed in hertz (Hz), where 1
-                        Hz equals one cycle per second. Different scales are used for different applications: kilohertz
-                        (kHz) for audio, megahertz (MHz) for radio, and gigahertz (GHz) for computer processors and wireless
-                        communications. Understanding frequency is essential for electronics, telecommunications, and
-                        physics.</p>
-                    <p class="mt-4">One kilohertz equals 1,000 Hz, one megahertz equals 1,000,000 Hz, and one gigahertz
-                        equals 1,000,000,000 Hz. Revolutions per minute (RPM) is also a frequency unit: 1 Hz = 60 RPM. These
-                        conversions are crucial for understanding CPU clock speeds, radio frequencies, audio sampling rates,
-                        and rotational speeds in mechanical systems.</p>
+                    <p>{{ __tool('frequency-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('frequency-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('frequency-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Computing:</strong> CPU and GPU clock speeds in GHz</li>
-                            <li><strong>Radio/TV:</strong> Broadcast frequencies in MHz and kHz</li>
-                            <li><strong>Audio:</strong> Sound frequencies and sampling rates</li>
+                            <li>{!! __tool('frequency-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('frequency-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('frequency-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Wireless:</strong> WiFi, Bluetooth, and cellular frequencies</li>
-                            <li><strong>Mechanical:</strong> Engine RPM and rotational speeds</li>
-                            <li><strong>Physics:</strong> Wave frequencies and oscillations</li>
+                            <li>{!! __tool('frequency-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('frequency-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('frequency-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -145,109 +138,105 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('frequency-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How do I convert MHz to GHz?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Divide MHz by 1000. For example, 3000 MHz ÷ 1000 =
-                            3 GHz. This is useful for understanding CPU speeds and wireless frequencies.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('frequency-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('frequency-converter', 'content.faq_a1') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What's the relationship between Hz and RPM?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">1 Hz = 60 RPM. For example, a motor spinning at
-                            1800 RPM has a frequency of 30 Hz (1800 ÷ 60). This connects rotational and oscillation
-                            frequencies.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('frequency-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('frequency-converter', 'content.faq_a2') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Why are CPU speeds measured in GHz?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Modern CPUs operate at billions of cycles per
-                            second. A 3.5 GHz processor completes 3.5 billion cycles per second, determining how fast it can
-                            execute instructions.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('frequency-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('frequency-converter', 'content.faq_a3') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What frequency range is used for WiFi?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">WiFi uses 2.4 GHz and 5 GHz frequency bands. The
-                            2.4 GHz band has longer range but more interference, while 5 GHz offers faster speeds with
-                            shorter range.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('frequency-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('frequency-converter', 'content.faq_a4') }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        // Conversion rates relative to Hertz (Hz)
-        const rates = {
-            'Hz': 1,
-            'kHz': 1000,
-            'MHz': 1000000,
-            'GHz': 1000000000,
-            'THz': 1000000000000,
-            'rpm': 0.016666667
-        };
+@endsection
 
-        const names = {
-            'Hz': 'Hz', 'kHz': 'kHz', 'MHz': 'MHz',
-            'GHz': 'GHz', 'THz': 'THz', 'rpm': 'RPM'
-        };
+@push('scripts')
+<script>
+    // Conversion rates relative to Hertz (Hz)
+    const rates = {
+        'Hz': 1,
+        'kHz': 1000,
+        'MHz': 1000000,
+        'GHz': 1000000000,
+        'THz': 1000000000000,
+        'rpm': 0.016666667
+    };
 
-        function convert(source) {
-            const fromUnit = document.getElementById('fromUnit').value;
-            const toUnit = document.getElementById('toUnit').value;
-            const fromInput = document.getElementById('fromValue');
-            const toInput = document.getElementById('toValue');
+    const names = {
+        'Hz': 'Hz', 'kHz': 'kHz', 'MHz': 'MHz',
+        'GHz': 'GHz', 'THz': 'THz', 'rpm': 'RPM'
+    };
 
-            let value;
-            if (source === 'from') {
-                value = parseFloat(fromInput.value);
-                if (isNaN(value)) {
-                    toInput.value = '';
-                    updateFormula(null);
-                    return;
-                }
+    function convert(source) {
+        const fromUnit = document.getElementById('fromUnit').value;
+        const toUnit = document.getElementById('toUnit').value;
+        const fromInput = document.getElementById('fromValue');
+        const toInput = document.getElementById('toValue');
 
-                const baseValue = value * rates[fromUnit];
-                const result = baseValue / rates[toUnit];
-                toInput.value = parseFloat(result.toPrecision(12)) / 1;
-            } else {
-                value = parseFloat(toInput.value);
-                if (isNaN(value)) {
-                    fromInput.value = '';
-                    updateFormula(null);
-                    return;
-                }
-
-                const baseValue = value * rates[toUnit];
-                const result = baseValue / rates[fromUnit];
-                fromInput.value = parseFloat(result.toPrecision(12)) / 1;
-            }
-
-            updateFormula(fromUnit, toUnit);
-        }
-
-        function swapUnits() {
-            const fromSelect = document.getElementById('fromUnit');
-            const toSelect = document.getElementById('toUnit');
-            const temp = fromSelect.value;
-
-            fromSelect.value = toSelect.value;
-            toSelect.value = temp;
-            convert('from');
-        }
-
-        function updateFormula(from, to) {
-            const display = document.getElementById('formulaDisplay');
-            if (!from) {
-                display.innerText = '';
+        let value;
+        if (source === 'from') {
+            value = parseFloat(fromInput.value);
+            if (isNaN(value)) {
+                toInput.value = '';
+                updateFormula(null);
                 return;
             }
-            const factor = rates[from] / rates[to];
-            const cleanFactor = parseFloat(factor.toPrecision(8)) / 1;
-            display.innerHTML = `1 ${names[from]} = ${cleanFactor} ${names[to]}`;
+
+            const baseValue = value * rates[fromUnit];
+            const result = baseValue / rates[toUnit];
+            toInput.value = parseFloat(result.toPrecision(12)) / 1;
+        } else {
+            value = parseFloat(toInput.value);
+            if (isNaN(value)) {
+                fromInput.value = '';
+                updateFormula(null);
+                return;
+            }
+
+            const baseValue = value * rates[toUnit];
+            const result = baseValue / rates[fromUnit];
+            fromInput.value = parseFloat(result.toPrecision(12)) / 1;
         }
 
-        // Initialize
-        window.addEventListener('load', () => convert('from'));
-    </script>
-@endsection
+        updateFormula(fromUnit, toUnit);
+    }
+
+    function swapUnits() {
+        const fromSelect = document.getElementById('fromUnit');
+        const toSelect = document.getElementById('toUnit');
+        const temp = fromSelect.value;
+
+        fromSelect.value = toSelect.value;
+        toSelect.value = temp;
+        convert('from');
+    }
+
+    function updateFormula(from, to) {
+        const display = document.getElementById('formulaDisplay');
+        if (!from) {
+            display.innerText = '';
+            return;
+        }
+        const factor = rates[from] / rates[to];
+        const cleanFactor = parseFloat(factor.toPrecision(8)) / 1;
+        display.innerHTML = `1 ${names[from]} = ${cleanFactor} ${names[to]}`;
+    }
+
+    // Initialize
+    window.addEventListener('load', () => convert('from'));
+</script>
+@endpush

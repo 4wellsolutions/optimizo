@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Time Unit Converter - Seconds, Minutes, Hours')
-@section('meta_description', 'Convert time durations instantly. Seconds to minutes, hours to days, weeks to months, and years.')
-@section('meta_keywords', 'time converter, seconds to minutes, hours to days, duration calculator')
+@section('title', __tool('time-unit-converter', 'seo.title'))
+@section('meta_description', __tool('time-unit-converter', 'seo.description'))
+@section('meta_keywords', __tool('time-unit-converter', 'seo.keywords'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,7 +18,7 @@
                 {{-- From Section --}}
                 <div class="md:col-span-3 space-y-2">
                     <label for="fromValue"
-                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">From</label>
+                        class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('time-unit-converter', 'form.from_label') }}</label>
                     <div class="relative">
                         <input type="number" id="fromValue" value="1" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-teal-100 focus:border-teal-500 transition-all text-gray-800 placeholder-gray-300"
@@ -26,14 +26,14 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="ms">Millisecond (ms)</option>
-                        <option value="s">Second (s)</option>
-                        <option value="min" selected>Minute (min)</option>
-                        <option value="hr">Hour (hr)</option>
-                        <option value="day">Day (d)</option>
-                        <option value="wk">Week (wk)</option>
-                        <option value="mo">Month (Avg. 30.44d)</option>
-                        <option value="yr">Year (365.25d)</option>
+                        <option value="ms">{{ __tool('time-unit-converter', 'form.unit_ms') }}</option>
+                        <option value="s">{{ __tool('time-unit-converter', 'form.unit_s') }}</option>
+                        <option value="min" selected>{{ __tool('time-unit-converter', 'form.unit_min') }}</option>
+                        <option value="hr">{{ __tool('time-unit-converter', 'form.unit_hr') }}</option>
+                        <option value="day">{{ __tool('time-unit-converter', 'form.unit_day') }}</option>
+                        <option value="wk">{{ __tool('time-unit-converter', 'form.unit_wk') }}</option>
+                        <option value="mo">{{ __tool('time-unit-converter', 'form.unit_mo') }}</option>
+                        <option value="yr">{{ __tool('time-unit-converter', 'form.unit_yr') }}</option>
                     </select>
                 </div>
 
@@ -52,7 +52,7 @@
 
                 {{-- To Section --}}
                 <div class="md:col-span-3 space-y-2">
-                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">To</label>
+                    <label for="toValue" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">{{ __tool('time-unit-converter', 'form.to_label') }}</label>
                     <div class="relative">
                         <input type="number" id="toValue" step="any"
                             class="block w-full text-3xl font-bold p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-teal-100 focus:border-teal-500 transition-all text-gray-800 placeholder-gray-300 bg-gray-50"
@@ -60,14 +60,14 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="ms">Millisecond (ms)</option>
-                        <option value="s" selected>Second (s)</option>
-                        <option value="min">Minute (min)</option>
-                        <option value="hr">Hour (hr)</option>
-                        <option value="day">Day (d)</option>
-                        <option value="wk">Week (wk)</option>
-                        <option value="mo">Month (Avg. 30.44d)</option>
-                        <option value="yr">Year (365.25d)</option>
+                        <option value="ms">{{ __tool('time-unit-converter', 'form.unit_ms') }}</option>
+                        <option value="s" selected>{{ __tool('time-unit-converter', 'form.unit_s') }}</option>
+                        <option value="min">{{ __tool('time-unit-converter', 'form.unit_min') }}</option>
+                        <option value="hr">{{ __tool('time-unit-converter', 'form.unit_hr') }}</option>
+                        <option value="day">{{ __tool('time-unit-converter', 'form.unit_day') }}</option>
+                        <option value="wk">{{ __tool('time-unit-converter', 'form.unit_wk') }}</option>
+                        <option value="mo">{{ __tool('time-unit-converter', 'form.unit_mo') }}</option>
+                        <option value="yr">{{ __tool('time-unit-converter', 'form.unit_yr') }}</option>
                     </select>
                 </div>
             </div>
@@ -88,8 +88,8 @@
                                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Duration Conversion</h3>
-                    <p class="text-gray-600">Convert between seconds, minutes, hours, days, weeks, months, and years.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('time-unit-converter', 'content.feature1_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('time-unit-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
@@ -98,9 +98,8 @@
                                 d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Project Planning</h3>
-                    <p class="text-gray-600">Perfect for scheduling, video editing, project timelines, and time tracking.
-                    </p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('time-unit-converter', 'content.feature2_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('time-unit-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 mb-4">
@@ -109,34 +108,28 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Precise Calculations</h3>
-                    <p class="text-gray-600">Accurate time conversions for science, programming, and daily planning.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('time-unit-converter', 'content.feature3_title') }}</h3>
+                    <p class="text-gray-600">{{ __tool('time-unit-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Understanding Time Unit Conversion</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('time-unit-converter', 'content.main_title') }}</h2>
                 <div class="prose prose-teal max-w-none text-gray-600">
-                    <p>Time is a fundamental dimension measuring duration and sequence of events. Different scales serve
-                        different purposes: milliseconds for computing, seconds for physics, hours for daily schedules, and
-                        years for long-term planning. Understanding time conversions is essential for project management,
-                        scientific calculations, and international coordination.</p>
-                    <p class="mt-4">The SI base unit is the second, defined by atomic transitions. A minute contains 60
-                        seconds, an hour has 3,600 seconds, and a day equals 86,400 seconds. Years are more complex: a
-                        standard year has 365 days, but accounting for leap years, the average is 365.25 days (31,557,600
-                        seconds).</p>
+                    <p>{{ __tool('time-unit-converter', 'content.description_p1') }}</p>
+                    <p class="mt-4">{{ __tool('time-unit-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Common Usage Examples</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('time-unit-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Project Management:</strong> Converting work hours to days or weeks</li>
-                            <li><strong>Video Editing:</strong> Converting timestamps between formats</li>
-                            <li><strong>Programming:</strong> Millisecond to second conversions for timers</li>
+                            <li>{!! __tool('time-unit-converter', 'content.usage_1') !!}</li>
+                            <li>{!! __tool('time-unit-converter', 'content.usage_2') !!}</li>
+                            <li>{!! __tool('time-unit-converter', 'content.usage_3') !!}</li>
                         </ul>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><strong>Science:</strong> Measuring reaction times in experiments</li>
-                            <li><strong>Fitness:</strong> Converting workout durations</li>
-                            <li><strong>Travel:</strong> Calculating trip durations across time zones</li>
+                            <li>{!! __tool('time-unit-converter', 'content.usage_4') !!}</li>
+                            <li>{!! __tool('time-unit-converter', 'content.usage_5') !!}</li>
+                            <li>{!! __tool('time-unit-converter', 'content.usage_6') !!}</li>
                         </ul>
                     </div>
                 </div>
@@ -149,36 +142,33 @@
                             d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                         </path>
                     </svg>
-                    Frequently Asked Questions
+                    {{ __tool('time-unit-converter', 'content.faq_title') }}
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How many seconds are in a day?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">There are exactly 86,400 seconds in one day (24
-                            hours × 60 minutes × 60 seconds = 86,400 seconds).</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('time-unit-converter', 'content.faq_q1') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('time-unit-converter', 'content.faq_a1') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">How do I convert hours to days?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Divide the number of hours by 24. For example, 48
-                            hours ÷ 24 = 2 days. Our converter handles this automatically!</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('time-unit-converter', 'content.faq_q2') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('time-unit-converter', 'content.faq_a2') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">Why is a year 365.25 days?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Earth's orbit takes approximately 365.25 days,
-                            which is why we have leap years every 4 years to add the extra quarter day and keep calendars
-                            aligned with seasons.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('time-unit-converter', 'content.faq_q3') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('time-unit-converter', 'content.faq_a3') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">What's the difference between duration and time?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Time refers to a specific moment (e.g., 3:00 PM),
-                            while duration measures how long something lasts (e.g., 2 hours). This converter handles
-                            duration conversions.</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('time-unit-converter', 'content.faq_q4') }}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('time-unit-converter', 'content.faq_a4') }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+@endsection
+
+@push('scripts')
     <script>
         // Conversion rates relative to Second (s)
         const rates = {
@@ -255,4 +245,4 @@
         // Initialize
         window.addEventListener('load', () => convert('from'));
     </script>
-@endsection
+@endpush
