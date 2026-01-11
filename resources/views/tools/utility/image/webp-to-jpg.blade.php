@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'WEBP to JPG Converter - Convert WebP to JPG Online | Optimizo')
-@section('meta_description', 'Convert WebP images to standard JPG format for broad compatibility. Free, fast, and secure converter.')
-@section('meta_keywords', 'webp to jpg, convert webp, image converter, free webp to jpg')
+@section('title', __tool('webp-to-jpg', 'meta.title'))
+@section('meta_description', __tool('webp-to-jpg', 'meta.desc'))
+@section('meta_keywords', __tool('webp-to-jpg', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-cyan-50 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload WEBP Image</h2>
-                <p class="text-gray-600">Drag & drop your WEBP file here</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('webp-to-jpg', 'input.title') !!}</h2>
+                <p class="text-gray-600">{!! __tool('webp-to-jpg', 'input.desc') !!}</p>
             </div>
 
             <div id="dropZone"
@@ -30,8 +30,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-gray-700">Drop WEBP file here</p>
-                        <p class="text-sm text-gray-500">Supports WEBP (Max 10MB)</p>
+                        <p class="text-lg font-bold text-gray-700">{!! __tool('webp-to-jpg', 'input.drop_title') !!}</p>
+                        <p class="text-sm text-gray-500">{!! __tool('webp-to-jpg', 'input.drop_desc') !!}</p>
                     </div>
                 </div>
             </div>
@@ -40,19 +40,19 @@
                 <!-- Left Column: Image Preview -->
                 <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center border border-gray-200 h-[400px]">
                     <img id="imagePreview" class="max-h-full max-w-full object-contain rounded-lg shadow-sm" src=""
-                        alt="Preview">
+                        alt="{!! __tool('webp-to-jpg', 'editor.image_alt') !!}">
                 </div>
 
                 <!-- Right Column: Actions -->
                 <div class="flex flex-col justify-center space-y-6">
                     <!-- White BG Note -->
+                    <!-- White BG Note -->
                     <div class="bg-cyan-50 border border-cyan-200 rounded-lg p-4 text-sm text-cyan-700">
-                        <span class="font-bold">Note:</span> Transparent backgrounds (common in WEBP) will be verified to
-                        white.
+                        <span class="font-bold">{!! __tool('webp-to-jpg', 'editor.note') !!}</span> {!! __tool('webp-to-jpg', 'editor.note_text') !!}
                     </div>
 
                     <div class="text-center text-gray-600 font-medium">
-                        Output Format: <span class="font-bold text-cyan-600">JPG</span>
+                        {!! __tool('webp-to-jpg', 'editor.output_format') !!} <span class="font-bold text-cyan-600">JPG</span>
                     </div>
 
                     <button id="convertBtn"
@@ -61,7 +61,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
-                        Convert to JPG & Download
+                        </svg>
+                        {!! __tool('webp-to-jpg', 'editor.btn_convert') !!}
                     </button>
                 </div>
             </div>
@@ -71,15 +72,13 @@
         <div class="mt-12 mb-20 max-w-7xl mx-auto">
             <article
                 class="prose prose-lg prose-cyan max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">WebP to JPG: The Compatibility Fixer</h2>
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">{!! __tool('webp-to-jpg', 'content.title') !!}</h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
-                        WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older
-                        image viewers, or upload it to platforms that only accept JPG.
+                        {!! __tool('webp-to-jpg', 'content.p1') !!}
                     </p>
                     <p>
-                        Our <strong>WebP to JPG Converter</strong> bridges this gap. It takes your highly optimized WebP
-                        images and transforms them into the universally compatible JPEG format in milliseconds.
+                        {!! __tool('webp-to-jpg', 'content.p2') !!}
                     </p>
                 </div>
 
@@ -93,9 +92,8 @@
                                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Universal Support</h3>
-                        <p class="text-sm text-gray-600">JPG works everywhere: Word docs, PowerPoint, legacy software, and
-                            every social media platform.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('webp-to-jpg', 'content.features.universal.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('webp-to-jpg', 'content.features.universal.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -106,9 +104,8 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Secure Processing</h3>
-                        <p class="text-sm text-gray-600">We don't see your files. The conversion is performed locally by
-                            your web browser.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('webp-to-jpg', 'content.features.secure.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('webp-to-jpg', 'content.features.secure.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -118,31 +115,26 @@
                                     d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Smart Backgrounds</h3>
-                        <p class="text-sm text-gray-600">Automatically detects transparent pixels in WebP and fills them
-                            with a clean white background.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('webp-to-jpg', 'content.features.smart.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('webp-to-jpg', 'content.features.smart.desc') !!}</p>
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Step-by-Step Guide</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('webp-to-jpg', 'content.how_to.title') !!}</h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
-                            <li><strong>Select File:</strong> Click the box or drag your WebP image onto the page.</li>
-                            <li><strong>Review:</strong> The tool will display a preview of your image.</li>
-                            <li><strong>Convert:</strong> Click the "Convert to JPG" button. The system handles transparency
-                                and compression automatically.</li>
-                            <li><strong>Save:</strong> Your new .jpg file will download instantly.</li>
+                             @foreach(__tool('webp-to-jpg', 'content.how_to.list') as $step)
+                                <li>{!! $step !!}</li>
+                            @endforeach
                         </ol>
                     </div>
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Why Convert WebP?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('webp-to-jpg', 'content.why.title') !!}</h3>
                         <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                            <li><strong>Editing:</strong> Many desktop editors typically don't support WebP out of the box.
-                            </li>
-                            <li><strong>Email:</strong> Outlook and other email clients might not render WebP inline images
-                                correctly.</li>
-                            <li><strong>Printing:</strong> Print shops often require standard JPG or TIFF files.</li>
+                             @foreach(__tool('webp-to-jpg', 'content.why.list') as $item)
+                                <li>{!! $item !!}</li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -150,17 +142,15 @@
                 <hr class="my-12 border-gray-200">
 
                 <div>
-                    <h3 class="font-bold text-2xl mb-6 text-center text-gray-900">FAQ</h3>
+                    <h3 class="font-bold text-2xl mb-6 text-center text-gray-900">{!! __tool('webp-to-jpg', 'content.faq.title') !!}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-gray-50 rounded-xl p-6">
-                            <h4 class="font-bold text-lg mb-2 text-gray-800">What happens to transparent backgrounds?</h4>
-                            <p class="text-gray-600 text-sm">Since JPG doesn't support transparency, our tool replaces
-                                transparent areas with white. This is perfect for product photos and logos.</p>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">{!! __tool('webp-to-jpg', 'content.faq.q1') !!}</h4>
+                            <p class="text-gray-600 text-sm">{!! __tool('webp-to-jpg', 'content.faq.a1') !!}</p>
                         </div>
                         <div class="bg-gray-50 rounded-xl p-6">
-                            <h4 class="font-bold text-lg mb-2 text-gray-800">Is it safe?</h4>
-                            <p class="text-gray-600 text-sm">Yes. Unlike other converters that upload your file to a server,
-                                this tool runs 100% on your device. Your data remains private.</p>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">{!! __tool('webp-to-jpg', 'content.faq.q2') !!}</h4>
+                            <p class="text-gray-600 text-sm">{!! __tool('webp-to-jpg', 'content.faq.a2') !!}</p>
                         </div>
                     </div>
                 </div>
@@ -168,6 +158,7 @@
         </div>
     </div>
 
+    @push('scripts')
     <script>
         const imageInput = document.getElementById('imageInput');
         const dropZone = document.getElementById('dropZone');
@@ -187,7 +178,7 @@
         imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
         function handleFile(file) {
-            if (!file.type.match('image.*')) { showError('Please upload a valid WEBP image'); return; }
+            if (!file.type.match('image.*')) { showError('{!! __tool('webp-to-jpg', 'js.invalid_image') !!}'); return; }
             const reader = new FileReader();
             reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
             reader.readAsDataURL(file);
@@ -213,4 +204,5 @@
             };
         });
     </script>
+    @endpush
 @endsection

@@ -39,14 +39,15 @@ if (!function_exists('__tool')) {
      * @param string $toolSlug Tool slug identifier
      * @param string $key Translation key (dot notation supported)
      * @param string|null $default Default value if translation not found
-     * @return string
+     * @return string|array|null
      */
-    function __tool(string $toolSlug, string $key, ?string $default = ''): string
+    function __tool(string $toolSlug, string $key, ?string $default = '')
     {
         $locale = app()->getLocale();
 
         // Extract category from tool slug (e.g., 'youtube-channel' -> 'youtube')
-        $category = explode('-', $toolSlug)[0];
+        $prefix = explode('-', $toolSlug)[0];
+        $category = $prefix;
 
         // Category mapping for tools that don't follow the naming convention
         $categoryMap = [
@@ -71,6 +72,15 @@ if (!function_exists('__tool')) {
             'torque' => 'converters',
             'volume' => 'converters',
             'weight' => 'converters',
+            // Image tools
+            'jpg' => 'images',
+            'png' => 'images',
+            'webp' => 'images',
+            'svg' => 'images',
+            'heic' => 'images',
+            'ico' => 'images',
+            'image' => 'images',
+            'base64' => 'images',
             // Time tools
             'epoch' => 'time',
             'date' => 'time',
@@ -103,9 +113,13 @@ if (!function_exists('__tool')) {
             'redirect' => 'network',
         ];
 
+        // Check mapping first
+        if (isset($categoryMap[$prefix])) {
+            $category = $categoryMap[$prefix];
+        }
         // Special case: Document conversion tools (pdf-to-word, word-to-pdf, etc.)
-        // Check if tool slug matches document conversion patterns
-        if (
+        // Check if tool slug matches document conversion patterns AND is not already mapped
+        elseif (
             str_contains($toolSlug, '-to-') ||
             str_ends_with($toolSlug, '-compressor') ||
             str_ends_with($toolSlug, '-merger') ||
@@ -113,20 +127,13 @@ if (!function_exists('__tool')) {
         ) {
             $category = 'document';
         }
-
         // Special case: 'google' can be either spreadsheet or seo
-        // Check the full tool slug to determine which category
-        elseif ($category === 'google') {
+        elseif ($prefix === 'google') {
             if (str_contains($toolSlug, 'sheets')) {
                 $category = 'spreadsheet';
             } else {
                 $category = 'seo';
             }
-        }
-
-        // Map category if it exists in the mapping
-        if (isset($categoryMap[$category])) {
-            $category = $categoryMap[$category];
         }
 
         // Build the translation key path: tools/{category}.{toolSlug}.{key}
@@ -160,8 +167,8 @@ if (!function_exists('__tool')) {
                 }
             }
 
-            // Return the translation if found, otherwise return default
-            if ($value !== null && !is_array($value)) {
+            // Return the translation if found (allow arrays)
+            if ($value !== null) {
                 return $value;
             }
         }

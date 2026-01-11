@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'HEIC to JPG Converter - Convert iPhone Photos Online | Optimizo')
-@section('meta_description', 'Convert High Efficiency Image File (HEIC/HEIF) photos from iPhone to standard JPG format. Free, private, client-side converter.')
-@section('meta_keywords', 'heic to jpg, native iphone converter, heic converter, heif to jpg, online image converter')
+@section('title', __tool('heic-to-jpg', 'meta.title'))
+@section('meta_description', __tool('heic-to-jpg', 'meta.desc'))
+@section('meta_keywords', __tool('heic-to-jpg', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-indigo-100 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload HEIC File</h2>
-                <p class="text-gray-600">Drag & drop your .heic or .heif file here</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('heic-to-jpg', 'input.title') !!}</h2>
+                <p class="text-gray-600">{!! __tool('heic-to-jpg', 'input.desc') !!}</p>
             </div>
 
             <div id="dropZone"
@@ -30,8 +30,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-gray-700">Drop HEIC file here</p>
-                        <p class="text-sm text-gray-500">Supports HEIC/HEIF (Max 20MB)</p>
+                        <p class="text-lg font-bold text-gray-700">{!! __tool('heic-to-jpg', 'input.drop_title') !!}</p>
+                        <p class="text-sm text-gray-500">{!! __tool('heic-to-jpg', 'input.drop_desc') !!}</p>
                     </div>
                 </div>
             </div>
@@ -45,21 +45,23 @@
                         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
                     </path>
                 </svg>
-                <p class="text-lg font-bold text-gray-700">Processing HEIC file...</p>
-                <p class="text-sm text-gray-500">Larger files may take a few seconds.</p>
+                </svg>
+                <p class="text-lg font-bold text-gray-700">{!! __tool('heic-to-jpg', 'loading.title') !!}</p>
+                <p class="text-sm text-gray-500">{!! __tool('heic-to-jpg', 'loading.desc') !!}</p>
             </div>
 
             <div id="editorArea" class="hidden mt-8 grid md:grid-cols-2 gap-8">
                 <!-- Left Column: Image Preview -->
                 <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center border border-gray-200 h-[400px]">
                     <img id="imagePreview" class="max-h-full max-w-full object-contain rounded-lg shadow-sm" src=""
-                        alt="Preview">
+                        alt="{!! __tool('heic-to-jpg', 'result.image_alt') !!}">
                 </div>
 
                 <!-- Right Column: Actions -->
                 <div class="flex flex-col justify-center space-y-6">
                     <div class="text-center text-gray-600 font-medium">
-                        Converted to: <span class="font-bold text-indigo-600">JPG</span>
+                        {!! __tool('heic-to-jpg', 'result.converted_to') !!} <span
+                            class="font-bold text-indigo-600">JPG</span>
                     </div>
 
                     <button id="downloadBtn"
@@ -68,7 +70,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
-                        Download JPG Image
+                        {!! __tool('heic-to-jpg', 'result.btn_download') !!}
                     </button>
                 </div>
             </div>
@@ -78,16 +80,14 @@
         <div class="mt-12 mb-20 max-w-7xl mx-auto">
             <article
                 class="prose prose-lg prose-indigo max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">Convert HEIC to JPG Instantly</h2>
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">
+                    {!! __tool('heic-to-jpg', 'content.title') !!}</h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
-                        Apple's High Efficiency Image Format (HEIC) is great for saving space on your iPhone, but it can be
-                        a nightmare to open on Windows, Android, or older software. Our <strong>HEIC to JPG
-                            Converter</strong> solves this problem instantly.
+                        {!! __tool('heic-to-jpg', 'content.p1') !!}
                     </p>
                     <p>
-                        We use advanced local processing capabilities to convert your photos without ever uploading them to
-                        a cloud server. This is the <strong>safest way</strong> to convert personal photos.
+                        {!! __tool('heic-to-jpg', 'content.p2') !!}
                     </p>
                 </div>
 
@@ -102,9 +102,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">100% Private</h3>
-                        <p class="text-sm text-gray-600">Your personal photos stay on your device. We use client-side logic
-                            for zero-risk conversion.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('heic-to-jpg', 'content.features.private.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('heic-to-jpg', 'content.features.private.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -115,9 +115,10 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Broad Compatibility</h3>
-                        <p class="text-sm text-gray-600">Convert HEIC and HEIF files from any iOS version (iPhone/iPad) to
-                            universally accepted JPGs.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('heic-to-jpg', 'content.features.compatibility.title') !!}</h3>
+                        <p class="text-sm text-gray-600">
+                            {!! __tool('heic-to-jpg', 'content.features.compatibility.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -127,33 +128,30 @@
                                     d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Fast & Free</h3>
-                        <p class="text-sm text-gray-600">No software installation needed. Just drag, drop, and convert in
-                            seconds.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('heic-to-jpg', 'content.features.fast.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('heic-to-jpg', 'content.features.fast.desc') !!}</p>
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">How to Convert HEIC to JPG?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">
+                            {!! __tool('heic-to-jpg', 'content.how_to.title') !!}</h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
-                            <li><strong>Upload:</strong> Drag your .heic or .heif file into the upload zone.</li>
-                            <li><strong>Process:</strong> The tool will automatically read and convert the file using
-                                advanced browser libraries.</li>
-                            <li><strong>Preview:</strong> See a preview of your converted JPG image immediately.</li>
-                            <li><strong>Download:</strong> Click the "Download JPG Image" button to save it to your
-                                computer.</li>
+                            @foreach(__tool('heic-to-jpg', 'content.how_to.list') as $step)
+                                <li>{!! $step !!}</li>
+                            @endforeach
                         </ol>
                     </div>
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Technical Details</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">
+                            {!! __tool('heic-to-jpg', 'content.details.title') !!}</h3>
                         <p class="text-gray-600 mb-4">
-                            HEIC (High Efficiency Image Container) uses modern compression methods to keep file sizes small.
-                            However, Windows and Android often struggle to open them.
+                            {!! __tool('heic-to-jpg', 'content.details.p1') !!}
                         </p>
                         <p class="text-gray-600">
-                            Our tool decodes the HEIC data and re-encodes it as a standardized JPEG image with 90% quality
-                            retention, ensuring your photos look great while being accessible everywhere.
+                            {!! __tool('heic-to-jpg', 'content.details.p2') !!}
                         </p>
                     </div>
                 </div>
@@ -161,24 +159,25 @@
                 <hr class="my-12 border-gray-200">
 
                 <div>
-                    <h3 class="font-bold text-2xl mb-6 text-center text-gray-900">Common Questions</h3>
+                    <h3 class="font-bold text-2xl mb-6 text-center text-gray-900">
+                        {!! __tool('heic-to-jpg', 'content.faq.title') !!}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-gray-50 rounded-xl p-6">
-                            <h4 class="font-bold text-lg mb-2 text-gray-800">Can I convert iPhone Live Photos?</h4>
-                            <p class="text-gray-600 text-sm">You can convert the still image part of the Live Photo if you
-                                transfer the .HEIC file to your computer first.</p>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">{!! __tool('heic-to-jpg', 'content.faq.q1') !!}
+                            </h4>
+                            <p class="text-gray-600 text-sm">{!! __tool('heic-to-jpg', 'content.faq.a1') !!}</p>
                         </div>
                         <div class="bg-gray-50 rounded-xl p-6">
-                            <h4 class="font-bold text-lg mb-2 text-gray-800">Is quality lost during conversion?</h4>
-                            <p class="text-gray-600 text-sm">We use a high-quality setting (0.9 out of 1.0) to ensure
-                                minimal visual difference. JPG is a lossy format, but the difference is usually negligible
-                                to the human eye.</p>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">{!! __tool('heic-to-jpg', 'content.faq.q2') !!}
+                            </h4>
+                            <p class="text-gray-600 text-sm">{!! __tool('heic-to-jpg', 'content.faq.a2') !!}</p>
                         </div>
                     </div>
                 </div>
             </article>
         </div>
 
+        @push('scripts')
         <!-- Load heic2any Library -->
         <script src="https://unpkg.com/heic2any"></script>
 
@@ -222,7 +221,7 @@
                     })
                     .catch(function (e) {
                         loadingIndicator.classList.add('hidden');
-                        showError('Error converting HEIC file: ' + e.message);
+                        showError('{!! __tool('heic-to-jpg', 'js.error') !!}' + e.message);
                         console.error(e);
                     });
             }
@@ -235,4 +234,5 @@
                 link.click();
             });
         </script>
+        @endpush
 @endsection

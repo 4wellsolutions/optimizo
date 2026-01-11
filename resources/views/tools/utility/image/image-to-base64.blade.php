@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Image to Base64 Converter - Convert Image to String | Optimizo')
-@section('meta_description', 'Convert images to Base64 encoded strings for embedding in HTML or CSS. Free online tool supporting PNG, JPG, GIF.')
-@section('meta_keywords', 'image to base64, base64 encoder, image to string, embed image, data uri generator')
+@section('title', __tool('image-to-base64', 'meta.title'))
+@section('meta_description', __tool('image-to-base64', 'meta.desc'))
+@section('meta_keywords', __tool('image-to-base64', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-gray-100 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload Image</h2>
-                <p class="text-gray-600">Drag & drop your image file here</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('image-to-base64', 'input.title') !!}</h2>
+                <p class="text-gray-600">{!! __tool('image-to-base64', 'input.desc') !!}</p>
             </div>
 
             <div id="dropZone"
@@ -30,8 +30,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-gray-700">Drop image file here</p>
-                        <p class="text-sm text-gray-500">Supports All Image Formats</p>
+                        <p class="text-lg font-bold text-gray-700">{!! __tool('image-to-base64', 'input.drop_title') !!}</p>
+                        <p class="text-sm text-gray-500">{!! __tool('image-to-base64', 'input.drop_desc') !!}</p>
                     </div>
                 </div>
             </div>
@@ -40,21 +40,21 @@
                 <!-- Left Column: Image Preview -->
                 <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center border border-gray-200 h-[400px]">
                     <img id="imagePreview" class="max-h-full max-w-full object-contain rounded-lg shadow-sm" src=""
-                        alt="Preview">
+                        alt="{!! __tool('image-to-base64', 'editor.image_alt') !!}">
                 </div>
 
                 <!-- Right Column: Output -->
                 <div class="flex flex-col space-y-6">
                     <div>
                         <div class="flex justify-between items-center mb-2">
-                            <label class="block text-sm font-bold text-gray-700">Base64 String</label>
+                            <label class="block text-sm font-bold text-gray-700">{!! __tool('image-to-base64', 'editor.label_string') !!}</label>
                             <button id="copyBtn"
                                 class="text-indigo-600 hover:text-indigo-800 font-bold text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
                                 </svg>
-                                Copy to Clipboard
+                            {!! __tool('image-to-base64', 'editor.btn_copy') !!}
                             </button>
                         </div>
                         <textarea id="base64Output" readonly
@@ -63,11 +63,11 @@
 
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-blue-50 p-4 rounded-lg">
-                            <span class="block text-xs font-bold text-blue-600 uppercase mb-1">Character Count</span>
+                            <span class="block text-xs font-bold text-blue-600 uppercase mb-1">{!! __tool('image-to-base64', 'editor.char_count') !!}</span>
                             <span id="charCount" class="text-xl font-black text-gray-800">0</span>
                         </div>
                         <div class="bg-green-50 p-4 rounded-lg">
-                            <span class="block text-xs font-bold text-green-600 uppercase mb-1">MIME Type</span>
+                            <span class="block text-xs font-bold text-green-600 uppercase mb-1">{!! __tool('image-to-base64', 'editor.mime_type') !!}</span>
                             <span id="mimeType" class="text-xl font-black text-gray-800">-</span>
                         </div>
                     </div>
@@ -79,15 +79,13 @@
         <div class="mt-12 mb-20 max-w-7xl mx-auto">
             <article
                 class="prose prose-lg prose-slate max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">Convert Image to Base64 String</h2>
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">{!! __tool('image-to-base64', 'content.title') !!}</h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
-                        Developers and web designers often need to embed images directly into HTML or CSS files to reduce
-                        HTTP requests.
+                        {!! __tool('image-to-base64', 'content.p1') !!}
                     </p>
                     <p>
-                        Our <strong>Image to Base64 Converter</strong> encodes your image file into a long string of
-                        characters that represents the binary data. You can paste this string straight into your code.
+                        {!! __tool('image-to-base64', 'content.p2') !!}
                     </p>
                 </div>
 
@@ -101,9 +99,8 @@
                                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Clipboard Ready</h3>
-                        <p class="text-sm text-gray-600">One-click copy. We format the output for HTML (`&lt;img
-                            src="..."&gt;`) or CSS (`background: url(...)`).</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('image-to-base64', 'content.features.clipboard.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('image-to-base64', 'content.features.clipboard.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -114,9 +111,8 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Reduce Requests</h3>
-                        <p class="text-sm text-gray-600">Embedding small icons and logos as Base64 eliminates the network
-                            overhead of fetching external image files.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('image-to-base64', 'content.features.requests.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('image-to-base64', 'content.features.requests.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -126,35 +122,33 @@
                                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Any Format</h3>
-                        <p class="text-sm text-gray-600">Works with PNG, JPG, GIF, WEBP, SVG, and even ICO files.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('image-to-base64', 'content.features.formats.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('image-to-base64', 'content.features.formats.desc') !!}</p>
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">How to use?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('image-to-base64', 'content.how_to.title') !!}</h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
-                            <li><strong>Upload:</strong> Select your image file.</li>
-                            <li><strong>Generate:</strong> The tool immediately converts the file to a Data URI.</li>
-                            <li><strong>Copy:</strong> Click "Copy to Clipboard" to grab the code.</li>
-                            <li><strong>Paste:</strong> Insert it into your `src` attribute or CSS file.</li>
+                             @foreach(__tool('image-to-base64', 'content.how_to.list') as $step)
+                                <li>{!! $step !!}</li>
+                            @endforeach
                         </ol>
                     </div>
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">When to use Base64?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('image-to-base64', 'content.use_cases.title') !!}</h3>
                         <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                            <li><strong>Small Images:</strong> Best for icons, spinners, and small logos (under 10KB).</li>
-                            <li><strong>Single-File Apps:</strong> When you need to bundle everything into one HTML file
-                                (e.g., email templates).</li>
-                            <li><strong>Offline Access:</strong> Ensures images load even without a network connection if
-                                the HTML is saved locally.</li>
+                             @foreach(__tool('image-to-base64', 'content.use_cases.list') as $item)
+                                <li>{!! $item !!}</li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
             </article>
         </div>
 
+        @push('scripts')
         <script>
             const imageInput = document.getElementById('imageInput');
             const dropZone = document.getElementById('dropZone');
@@ -193,8 +187,9 @@
                 base64Output.select();
                 document.execCommand('copy');
                 const originalText = copyBtn.innerHTML;
-                copyBtn.innerText = 'Copied!';
+                copyBtn.innerText = '{!! __tool('image-to-base64', 'js.copied') !!}';
                 setTimeout(() => { copyBtn.innerHTML = originalText; }, 2000);
             });
         </script>
+        @endpush
 @endsection

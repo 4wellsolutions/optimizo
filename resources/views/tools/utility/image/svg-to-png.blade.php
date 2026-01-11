@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'SVG to PNG Converter - Rasterize SVG Images | Optimizo')
-@section('meta_description', 'Convert Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don\'t support vector files.')
-@section('meta_keywords', 'svg to png, svg converter, vector to raster, free svg tool')
+@section('title', __tool('svg-to-png', 'meta.title'))
+@section('meta_description', __tool('svg-to-png', 'meta.desc'))
+@section('meta_keywords', __tool('svg-to-png', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-rose-50 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload SVG File</h2>
-                <p class="text-gray-600">Drag & drop your SVG file here</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('svg-to-png', 'input.title') !!}</h2>
+                <p class="text-gray-600">{!! __tool('svg-to-png', 'input.desc') !!}</p>
             </div>
 
             <div id="dropZone"
@@ -30,8 +30,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-gray-700">Drop SVG file here</p>
-                        <p class="text-sm text-gray-500">Supports SVG, SVGZ (Max 10MB)</p>
+                        <p class="text-lg font-bold text-gray-700">{!! __tool('svg-to-png', 'input.drop_title') !!}</p>
+                        <p class="text-sm text-gray-500">{!! __tool('svg-to-png', 'input.drop_desc') !!}</p>
                     </div>
                 </div>
             </div>
@@ -41,23 +41,23 @@
                 <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center border border-gray-200 h-[400px]">
                     <img id="imagePreview"
                         class="max-h-full max-w-full object-contain rounded-lg shadow-sm bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAF0lEQVQ4T2N89+7df3Qmo2F4NAyjYQAAq003wQ2u5x4AAAAASUVORK5CYII=')] bg-repeat"
-                        src="" alt="Preview">
+                        src="" alt="{!! __tool('svg-to-png', 'editor.image_alt') !!}">
                 </div>
                 <!-- Right Column: Actions -->
                 <div class="flex flex-col justify-center space-y-6">
-                    <p class="text-xs text-center text-gray-400">Checkerboard background indicates transparency</p>
+                    <p class="text-xs text-center text-gray-400">{!! __tool('svg-to-png', 'editor.checkerboard') !!}</p>
 
                     <div class="text-center text-gray-600 font-medium">
-                        Output Format: <span class="font-bold text-rose-600">PNG</span>
+                        {!! __tool('svg-to-png', 'editor.output_format') !!} <span class="font-bold text-rose-600">PNG</span>
                     </div>
 
                     <div class="w-full">
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Resolution Multiplier (Scale)</label>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">{!! __tool('svg-to-png', 'editor.scale_label') !!}</label>
                         <select id="scaleSelect"
                             class="w-full rounded-lg border-gray-300 focus:border-rose-500 shadow-sm p-3">
-                            <option value="1">1x (Original Size)</option>
-                            <option value="2">2x (High Res)</option>
-                            <option value="4">4x (Ultra Res)</option>
+                            <option value="1">{!! __tool('svg-to-png', 'editor.scale_1') !!}</option>
+                            <option value="2">{!! __tool('svg-to-png', 'editor.scale_2') !!}</option>
+                            <option value="4">{!! __tool('svg-to-png', 'editor.scale_4') !!}</option>
                         </select>
                     </div>
 
@@ -67,7 +67,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
-                        Convert to PNG & Download
+                        </svg>
+                        {!! __tool('svg-to-png', 'editor.btn_convert') !!}
                     </button>
                 </div>
             </div>
@@ -77,16 +78,13 @@
         <div class="mt-12 mb-20 max-w-7xl mx-auto">
             <article
                 class="prose prose-lg prose-rose max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">Rasterize SVG to PNG High-Res</h2>
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">{!! __tool('svg-to-png', 'content.title') !!}</h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
-                        Scalable Vector Graphics (SVG) are perfect for the web, but impossible to use on social media, in
-                        Word documents, or as email attachments.
+                        {!! __tool('svg-to-png', 'content.p1') !!}
                     </p>
                     <p>
-                        Our <strong>SVG to PNG Converter</strong> allows you to turn your vector logo or icon into a
-                        high-quality, transparent PNG image. With our unique <strong>scaling feature</strong>, you can
-                        produce ultra-high-resolution images without any pixelation.
+                        {!! __tool('svg-to-png', 'content.p2') !!}
                     </p>
                 </div>
 
@@ -101,9 +99,8 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Transparency Preserved</h3>
-                        <p class="text-sm text-gray-600">Unlike JPG, PNG keeps the background transparent. Perfect for logos
-                            and overlays.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('svg-to-png', 'content.features.transparency.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('svg-to-png', 'content.features.transparency.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -113,9 +110,8 @@
                                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Up to 4x Scaling</h3>
-                        <p class="text-sm text-gray-600">Export at 4x the original size. Get crisp edges even for large
-                            print formats.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('svg-to-png', 'content.features.scaling.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('svg-to-png', 'content.features.scaling.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -126,32 +122,29 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Browser-Based</h3>
-                        <p class="text-sm text-gray-600">Fast and secure. No files are uploaded to any server.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">{!! __tool('svg-to-png', 'content.features.browser.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('svg-to-png', 'content.features.browser.desc') !!}</p>
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">How to Convert SVG to PNG?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('svg-to-png', 'content.how_to.title') !!}</h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
-                            <li><strong>Upload:</strong> Drop your `.svg` file into the upload area.</li>
-                            <li><strong>Choose Scale:</strong> Select `1x`, `2x`, or `4x` from the dropdown. Higher is
-                                better for quality.</li>
-                            <li><strong>Preview:</strong> Check the preview image on the left. The checkerboard indicates
-                                transparency.</li>
-                            <li><strong>Convert:</strong> Hit the button to generate and download your PNG.</li>
+                             @foreach(__tool('svg-to-png', 'content.how_to.list') as $step)
+                                <li>{!! $step !!}</li>
+                            @endforeach
                         </ol>
                     </div>
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Why Convert Vectors?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('svg-to-png', 'content.why.title') !!}</h3>
                         <p class="text-gray-600 mb-4">
-                            Vectors are mathematical formulas, while PNGs are grids of pixels. You need pixels for:
+                            {!! __tool('svg-to-png', 'content.why.p1') !!}
                         </p>
                         <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                            <li>Profile pictures (Twitter/LinkedIn often reject SVG).</li>
-                            <li>Embedding in emails (SVG support is poor).</li>
-                            <li>Using in video editors or simple graphic tools (Canva, Paint).</li>
+                             @foreach(__tool('svg-to-png', 'content.why.list') as $item)
+                                <li>{!! $item !!}</li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -159,18 +152,15 @@
                 <hr class="my-12 border-gray-200">
 
                 <div>
-                    <h3 class="font-bold text-2xl mb-6 text-center text-gray-900">Frequently Asked Questions</h3>
+                    <h3 class="font-bold text-2xl mb-6 text-center text-gray-900">{!! __tool('svg-to-png', 'content.faq.title') !!}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-gray-50 rounded-xl p-6">
-                            <h4 class="font-bold text-lg mb-2 text-gray-800">My SVG looks blurry in other tools. Why?</h4>
-                            <p class="text-gray-600 text-sm">Most tools rasterize at the default screen size. Our
-                                "Multiplier" feature lets you render the vector at a much higher resolution before saving,
-                                keeping it crisp.</p>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">{!! __tool('svg-to-png', 'content.faq.q1') !!}</h4>
+                            <p class="text-gray-600 text-sm">{!! __tool('svg-to-png', 'content.faq.a1') !!}</p>
                         </div>
                         <div class="bg-gray-50 rounded-xl p-6">
-                            <h4 class="font-bold text-lg mb-2 text-gray-800">Do you support animated SVGs?</h4>
-                            <p class="text-gray-600 text-sm">We capture the first frame of the animation as a static PNG
-                                image.</p>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">{!! __tool('svg-to-png', 'content.faq.q2') !!}</h4>
+                            <p class="text-gray-600 text-sm">{!! __tool('svg-to-png', 'content.faq.a2') !!}</p>
                         </div>
                     </div>
                 </div>
@@ -178,6 +168,7 @@
         </div>
     </div>
 
+    @push('scripts')
     <script>
         const imageInput = document.getElementById('imageInput');
         const dropZone = document.getElementById('dropZone');
@@ -198,7 +189,7 @@
         imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
         function handleFile(file) {
-            if (!file.type.match('image/svg.*')) { showError('Please upload a valid SVG image'); return; }
+            if (!file.type.match('image/svg.*')) { showError('{!! __tool('svg-to-png', 'js.invalid_image') !!}'); return; }
             const reader = new FileReader();
             reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
             reader.readAsDataURL(file);
@@ -225,4 +216,5 @@
             };
         });
     </script>
+    @endpush
 @endsection

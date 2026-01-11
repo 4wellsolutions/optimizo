@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'PNG to JPG Converter - Convert PNG to JPG Online | Optimizo')
-@section('meta_description', 'Convert PNG images to JPG format for smaller file sizes. Free online converter.')
-@section('meta_keywords', 'png to jpg, png converter, convert image to jpg, free jpg converter')
+@section('title', __tool('png-to-jpg', 'meta.title'))
+@section('meta_description', __tool('png-to-jpg', 'meta.desc'))
+@section('meta_keywords', __tool('png-to-jpg', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-green-50 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload PNG Image</h2>
-                <p class="text-gray-600">Drag & drop your PNG file here</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('png-to-jpg', 'input.title') !!}</h2>
+                <p class="text-gray-600">{!! __tool('png-to-jpg', 'input.desc') !!}</p>
             </div>
 
             <div id="dropZone"
@@ -30,8 +30,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-gray-700">Drop PNG file here</p>
-                        <p class="text-sm text-gray-500">Supports PNG (Max 10MB)</p>
+                        <p class="text-lg font-bold text-gray-700">{!! __tool('png-to-jpg', 'input.drop_title') !!}</p>
+                        <p class="text-sm text-gray-500">{!! __tool('png-to-jpg', 'input.drop_desc') !!}</p>
                     </div>
                 </div>
             </div>
@@ -40,18 +40,21 @@
                 <!-- Left Column: Image Preview -->
                 <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center border border-gray-200 h-[400px]">
                     <img id="imagePreview" class="max-h-full max-w-full object-contain rounded-lg shadow-sm" src=""
-                        alt="Preview">
+                        alt="{!! __tool('png-to-jpg', 'editor.image_alt') !!}">
                 </div>
 
                 <!-- Right Column: Actions -->
                 <div class="flex flex-col justify-center space-y-6">
                     <!-- White BG Note -->
+                    <!-- White BG Note -->
                     <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-700">
-                        <span class="font-bold">Note:</span> Transparent backgrounds will be converted to white.
+                        <span class="font-bold">{!! __tool('png-to-jpg', 'editor.note') !!}</span>
+                        {!! __tool('png-to-jpg', 'editor.note_text') !!}
                     </div>
 
                     <div class="text-center text-gray-600 font-medium">
-                        Output Format: <span class="font-bold text-green-600">JPG</span>
+                        {!! __tool('png-to-jpg', 'editor.output_format') !!} <span
+                            class="font-bold text-green-600">JPG</span>
                     </div>
 
                     <button id="convertBtn"
@@ -60,7 +63,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
-                        Convert to JPG & Download
+                        </svg>
+                        {!! __tool('png-to-jpg', 'editor.btn_convert') !!}
                     </button>
                 </div>
             </div>
@@ -70,16 +74,14 @@
         <div class="mt-12 mb-20 max-w-7xl mx-auto">
             <article
                 class="prose prose-lg prose-green max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">Compress PNG to JPG Instantly</h2>
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">{!! __tool('png-to-jpg', 'content.title') !!}
+                </h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
-                        PNG files are great for quality, but they can be massive. If you're uploading photos to a website or
-                        sending them via email, JPG is often the better choice.
+                        {!! __tool('png-to-jpg', 'content.p1') !!}
                     </p>
                     <p>
-                        Our <strong>PNG to JPG Converter</strong> drastically reduces file size by using JPEG compression.
-                        We automatically handle transparent backgrounds by filling them with white, ensuring your images
-                        look perfect.
+                        {!! __tool('png-to-jpg', 'content.p2') !!}
                     </p>
                 </div>
 
@@ -94,9 +96,10 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Drastic Size Reduction</h3>
-                        <p class="text-sm text-gray-600">Reduce file sizes by up to 80% with minimal loss in visual quality.
-                        </p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('png-to-jpg', 'content.features.size.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('png-to-jpg', 'content.features.size.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -107,9 +110,10 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Secure & Private</h3>
-                        <p class="text-sm text-gray-600">Local browser processing means your photos are never uploaded to
-                            the cloud.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('png-to-jpg', 'content.features.secure.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('png-to-jpg', 'content.features.secure.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -119,29 +123,31 @@
                                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Smart Conversion</h3>
-                        <p class="text-sm text-gray-600">Intelligent background handling converts transparency to a clean
-                            white matte.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('png-to-jpg', 'content.features.smart.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('png-to-jpg', 'content.features.smart.desc') !!}</p>
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Steps to Convert</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">
+                            {!! __tool('png-to-jpg', 'content.how_to.title') !!}
+                        </h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
-                            <li><strong>Upload:</strong> Select a PNG image from your device.</li>
-                            <li><strong>Process:</strong> The tool instantly processes the image.</li>
-                            <li><strong>Review:</strong> Check the preview (transparent areas will now be white).</li>
-                            <li><strong>Save:</strong> Download your optimized JPG file.</li>
+                            @foreach(__tool('png-to-jpg', 'content.how_to.list') as $step)
+                                <li>{!! $step !!}</li>
+                            @endforeach
                         </ol>
                     </div>
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">When to use JPG?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('png-to-jpg', 'content.why.title') !!}
+                        </h3>
                         <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                            <li><strong>Photographs:</strong> JPG is designed for complex, real-world images.</li>
-                            <li><strong>Web Uploads:</strong> Many forms only accept .jpg or .jpeg.</li>
-                            <li><strong>Saving Space:</strong> If you have thousands of images, JPG saves GBs of storage.
-                            </li>
+                            @foreach(__tool('png-to-jpg', 'content.why.list') as $item)
+                                <li>{!! $item !!}</li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -149,6 +155,7 @@
         </div>
     </div>
 
+    @push('scripts')
     <script>
         const imageInput = document.getElementById('imageInput');
         const dropZone = document.getElementById('dropZone');
@@ -168,7 +175,7 @@
         imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
         function handleFile(file) {
-            if (!file.type.match('image.*')) { showError('Please upload a valid PNG image'); return; }
+            if (!file.type.match('image.*')) { showError('{!! __tool('png-to-jpg', 'js.invalid_image') !!}'); return; }
             const reader = new FileReader();
             reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
             reader.readAsDataURL(file);
@@ -194,4 +201,5 @@
             };
         });
     </script>
+    @endpush
 @endsection

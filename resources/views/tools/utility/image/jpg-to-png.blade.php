@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'JPG to PNG Converter - Convert JPG Images to PNG Free | Optimizo')
-@section('meta_description', 'Convert JPG images to PNG format instantly. 100% free, secure client-side conversion, no file size limits.')
-@section('meta_keywords', 'jpg to png, jpg converter, convert image to png, free image converter')
+@section('title', __tool('jpg-to-png', 'meta.title'))
+@section('meta_description', __tool('jpg-to-png', 'meta.desc'))
+@section('meta_keywords', __tool('jpg-to-png', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-indigo-50 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload JPG Image</h2>
-                <p class="text-gray-600">Drag & drop your JPG/JPEG file here</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('jpg-to-png', 'input.title') !!}</h2>
+                <p class="text-gray-600">{!! __tool('jpg-to-png', 'input.desc') !!}</p>
             </div>
 
             <!-- Upload Area -->
@@ -31,8 +31,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-gray-700">Drop JPG file here</p>
-                        <p class="text-sm text-gray-500">Supports JPG, JPEG (Max 10MB)</p>
+                        <p class="text-lg font-bold text-gray-700">{!! __tool('jpg-to-png', 'input.drop_title') !!}</p>
+                        <p class="text-sm text-gray-500">{!! __tool('jpg-to-png', 'input.drop_desc') !!}</p>
                     </div>
                 </div>
             </div>
@@ -46,13 +46,14 @@
                 <!-- Left Column: Image Preview -->
                 <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center border border-gray-200 h-[400px]">
                     <img id="imagePreview" class="max-h-full max-w-full object-contain rounded-lg shadow-sm" src=""
-                        alt="Preview">
+                        alt="{!! __tool('jpg-to-png', 'editor.image_alt') !!}">
                 </div>
 
                 <!-- Right Column: Actions -->
                 <div class="flex flex-col justify-center space-y-6">
                     <div class="text-center text-gray-600 font-medium">
-                        Output Format: <span class="font-bold text-blue-600">PNG</span>
+                        {!! __tool('jpg-to-png', 'editor.output_format') !!} <span
+                            class="font-bold text-blue-600">{!! __tool('jpg-to-png', 'editor.format_short') !!}</span>
                     </div>
 
                     <button id="convertBtn"
@@ -61,7 +62,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
-                        Convert to PNG & Download
+                        {!! __tool('jpg-to-png', 'editor.btn_convert') !!}
                     </button>
                 </div>
             </div>
@@ -70,16 +71,14 @@
         <!-- SEO Content -->
         <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 mb-12">
             <article class="prose prose-lg prose-blue max-w-none">
-                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">Convert JPG to PNG Instantly</h2>
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">{!! __tool('jpg-to-png', 'content.title') !!}
+                </h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
-                        JPG is the world's most popular image format, but it often lacks the versatility needed for modern
-                        web
-                        design. By converting to PNG, you gain access to lossless compression and transparency support.
+                        {!! __tool('jpg-to-png', 'content.p1') !!}
                     </p>
                     <p>
-                        Our <strong>JPG to PNG Converter</strong> is designed for speed and privacy, handling everything
-                        directly in your browser without uploading your sensitive photos to any server.
+                        {!! __tool('jpg-to-png', 'content.p2') !!}
                     </p>
                 </div>
 
@@ -93,9 +92,10 @@
                                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Lossless Quality</h3>
-                        <p class="text-sm text-gray-600">Stop image degradation. PNG uses lossless compression to keep every
-                            pixel perfect during edits.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('jpg-to-png', 'content.features.lossless.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('jpg-to-png', 'content.features.lossless.desc') !!}</p>
                     </div>
                     <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-center">
                         <div
@@ -106,9 +106,10 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">100% Private</h3>
-                        <p class="text-sm text-gray-600">Files are processed locally on your device. We never see, store, or
-                            upload your images.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('jpg-to-png', 'content.features.private.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('jpg-to-png', 'content.features.private.desc') !!}</p>
                     </div>
                     <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-center">
                         <div
@@ -119,36 +120,39 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Transparency Ready</h3>
-                        <p class="text-sm text-gray-600">Convert to the preferred format for logos, icons, and graphics that
-                            require transparent backgrounds.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('jpg-to-png', 'content.features.transparency.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('jpg-to-png', 'content.features.transparency.desc') !!}
+                        </p>
                     </div>
                 </div>
 
                 <!-- How-to and FAQ Guide -->
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">How to Convert JPG to PNG</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">
+                            {!! __tool('jpg-to-png', 'content.how_to.title') !!}
+                        </h3>
                         <ol class="list-decimal pl-5 space-y-3 text-gray-600">
-                            <li><strong>Upload Image:</strong> Drag and drop your JPG file into the designated area.</li>
-                            <li><strong>Auto-Process:</strong> The tool immediately reads the file ready for conversion.
-                            </li>
-                            <li><strong>Preview:</strong> See exactly how your image looks before saving.</li>
-                            <li><strong>Download:</strong> Click "Convert & Download" to save your new PNG instantly.</li>
+                            @foreach(__tool('jpg-to-png', 'content.how_to.list') as $step)
+                                <li>{!! $step !!}</li>
+                            @endforeach
                         </ol>
                     </div>
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Frequently Asked Questions</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('jpg-to-png', 'content.faq.title') !!}
+                        </h3>
                         <div class="space-y-4">
                             <div>
-                                <h4 class="font-bold text-lg text-gray-800">Is the quality better?</h4>
-                                <p class="text-gray-600 text-sm">Converting to PNG stops <em>future</em> quality loss. It's
-                                    best for images you plan to edit further or need to keep sharp.</p>
+                                <h4 class="font-bold text-lg text-gray-800">{!! __tool('jpg-to-png', 'content.faq.q1') !!}
+                                </h4>
+                                <p class="text-gray-600 text-sm">{!! __tool('jpg-to-png', 'content.faq.a1') !!}</p>
                             </div>
                             <div>
-                                <h4 class="font-bold text-lg text-gray-800">Are there file limits?</h4>
-                                <p class="text-gray-600 text-sm">Since we process files in your browser, the limit is
-                                    determined by your device's memory, usually allowing files up to 50MB easily.</p>
+                                <h4 class="font-bold text-lg text-gray-800">{!! __tool('jpg-to-png', 'content.faq.q2') !!}
+                                </h4>
+                                <p class="text-gray-600 text-sm">{!! __tool('jpg-to-png', 'content.faq.a2') !!}</p>
                             </div>
                         </div>
                     </div>
@@ -158,6 +162,7 @@
     </div>
 
     <!-- Reuse same script logic but simplified -->
+    @push('scripts')
     <script>
         const imageInput = document.getElementById('imageInput');
         const dropZone = document.getElementById('dropZone');
@@ -177,7 +182,7 @@
         imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
         function handleFile(file) {
-            if (!file.type.match('image.*')) { showError('Please upload a valid JPG image'); return; }
+            if (!file.type.match('image.*')) { showError('{!! __tool('jpg-to-png', 'js.invalid_image') !!}'); return; }
             const reader = new FileReader();
             reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
             reader.readAsDataURL(file);
@@ -194,10 +199,11 @@
                 ctx.drawImage(img, 0, 0);
                 const dataUrl = canvas.toDataURL('image/png');
                 const link = document.createElement('a');
-                link.download = 'converted-image.png';
+                link.download = '{!! __tool('jpg-to-png', 'js.converted_name') !!}.png';
                 link.href = dataUrl;
                 link.click();
             };
         });
     </script>
+    @endpush
 @endsection

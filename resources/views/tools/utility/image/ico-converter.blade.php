@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'ICO Converter - Create Favicons Online | Optimizo')
-@section('meta_description', 'Convert images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Free online favicon generator.')
-@section('meta_keywords', 'ico converter, favicon generator, image to ico, create favicon, online ico tool')
+@section('title', __tool('ico-converter', 'meta.title'))
+@section('meta_description', __tool('ico-converter', 'meta.desc'))
+@section('meta_keywords', __tool('ico-converter', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-amber-50 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload Image to Convert</h2>
-                <p class="text-gray-600">Drag & drop your PNG/JPG file</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('ico-converter', 'input.title') !!}</h2>
+                <p class="text-gray-600">{!! __tool('ico-converter', 'input.desc') !!}</p>
             </div>
 
             <div id="dropZone"
@@ -30,8 +30,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-gray-700">Drop image file here</p>
-                        <p class="text-sm text-gray-500">Fast conversion to .ico</p>
+                        <p class="text-lg font-bold text-gray-700">{!! __tool('ico-converter', 'input.drop_title') !!}</p>
+                        <p class="text-sm text-gray-500">{!! __tool('ico-converter', 'input.drop_desc') !!}</p>
                     </div>
                 </div>
             </div>
@@ -42,9 +42,11 @@
                     class="bg-gray-50 rounded-xl p-4 flex flex-col items-center justify-center border border-gray-200 h-[400px] space-y-6">
                     <div class="flex items-center justify-center gap-8">
                         <div>
-                            <p class="text-xs text-gray-500 mb-2 text-center">Original</p>
+                            <p class="text-xs text-gray-500 mb-2 text-center">
+                                {!! __tool('ico-converter', 'editor.original') !!}
+                            </p>
                             <img id="imagePreview" class="h-24 w-auto rounded-lg shadow-sm border border-gray-200" src=""
-                                alt="Preview">
+                                alt="{!! __tool('ico-converter', 'editor.image_alt') !!}">
                         </div>
                         <div class="text-gray-300">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,7 +55,9 @@
                             </svg>
                         </div>
                         <div>
-                            <p class="text-xs text-gray-500 mb-2 text-center">Favicon</p>
+                            <p class="text-xs text-gray-500 mb-2 text-center">
+                                {!! __tool('ico-converter', 'editor.favicon') !!}
+                            </p>
                             <div
                                 class="w-24 h-24 flex items-center justify-center bg-gray-50 border border-gray-200 rounded-lg">
                                 <canvas id="faviconCanvas" width="32" height="32" class="shadow-sm"></canvas>
@@ -65,7 +69,8 @@
                 <!-- Right Column: Settings & Actions -->
                 <div class="flex flex-col justify-center space-y-6">
                     <div class="w-full">
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Icon Size</label>
+                        <label
+                            class="block text-sm font-bold text-gray-700 mb-2">{!! __tool('ico-converter', 'editor.size_label') !!}</label>
                         <div class="grid grid-cols-3 gap-3">
                             <button type="button"
                                 class="size-btn px-4 py-2 border-2 border-amber-500 bg-amber-50 text-amber-700 font-bold rounded-lg"
@@ -81,7 +86,8 @@
                     </div>
 
                     <div class="text-center text-gray-600 font-medium">
-                        Output Format: <span class="font-bold text-amber-600">ICO</span>
+                        {!! __tool('ico-converter', 'editor.output_format') !!} <span
+                            class="font-bold text-amber-600">ICO</span>
                     </div>
 
                     <button id="convertBtn"
@@ -90,7 +96,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
-                        Download Favicon (.ico)
+                        </svg>
+                        {!! __tool('ico-converter', 'editor.btn_download') !!}
                     </button>
                 </div>
             </div>
@@ -100,14 +107,15 @@
         <div class="mt-12 mb-20 max-w-7xl mx-auto">
             <article
                 class="prose prose-lg prose-amber max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">Free ICO Converter & Favicon Generator</h2>
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">
+                    {!! __tool('ico-converter', 'content.title') !!}
+                </h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
-                        Creating a website? You need a favicon - that little icon that appears in browser tabs.
+                        {!! __tool('ico-converter', 'content.p1') !!}
                     </p>
                     <p>
-                        Our <strong>ICO Converter</strong> transforms any PNG or JPG image into a standard Microsoft `.ico`
-                        file. We support all common favicon sizes to ensure your brand looks sharp on every device.
+                        {!! __tool('ico-converter', 'content.p2') !!}
                     </p>
                 </div>
 
@@ -122,9 +130,10 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Standard Sizes</h3>
-                        <p class="text-sm text-gray-600">Choose from 16x16, 32x32, 48x48, 64x64, or 128x128 pixels. Or
-                            select all!</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('ico-converter', 'content.features.sizes.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('ico-converter', 'content.features.sizes.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -135,9 +144,10 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Auto-Resizing</h3>
-                        <p class="text-sm text-gray-600">Upload a large logo, and we'll automatically downscale it smoothly
-                            to fit the tiny icon format.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('ico-converter', 'content.features.resize.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('ico-converter', 'content.features.resize.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -148,33 +158,37 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Multi-Icon Support</h3>
-                        <p class="text-sm text-gray-600">Modern .ico files can contain multiple sizes in one file. We handle
-                            that for you.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('ico-converter', 'content.features.multi.title') !!}
+                        </h3>
+                        <p class="text-sm text-gray-600">{!! __tool('ico-converter', 'content.features.multi.desc') !!}</p>
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Steps to Create Favicon</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">
+                            {!! __tool('ico-converter', 'content.how_to.title') !!}
+                        </h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
-                            <li><strong>Upload:</strong> Use a square image (PNG/JPG) for best results.</li>
-                            <li><strong>Select Sizes:</strong> 16x16 (Browser tabs), 32x32 (Taskbar), 48x48 (Desktop).</li>
-                            <li><strong>Preview:</strong> See how it looks instantly.</li>
-                            <li><strong>Download:</strong> Get your `favicon.ico` file.</li>
+                            @foreach(__tool('ico-converter', 'content.how_to.list') as $step)
+                                <li>{!! $step !!}</li>
+                            @endforeach
                         </ol>
                     </div>
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Why .ICO format?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">
+                            {!! __tool('ico-converter', 'content.why.title') !!}
+                        </h3>
                         <p class="text-gray-600 mb-4">
-                            While modern browsers support PNG favicons, the `.ico` format is still the standard for maximum
-                            compatibility across all operating systems and legacy browsers (like Internet Explorer).
+                            {!! __tool('ico-converter', 'content.why.p1') !!}
                         </p>
                     </div>
                 </div>
             </article>
         </div>
 
+        @push('scripts')
         <script>
             const imageInput = document.getElementById('imageInput');
             const dropZone = document.getElementById('dropZone');
@@ -218,7 +232,7 @@
             imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
             function handleFile(file) {
-                if (!file.type.match('image.*')) { showError('Please upload a valid image'); return; }
+                if (!file.type.match('image.*')) { showError('{!! __tool('ico-converter', 'js.invalid_image') !!}'); return; }
                 const reader = new FileReader();
                 reader.onload = (e) => {
                     currentImg = new Image();
@@ -250,4 +264,5 @@
                 link.click();
             });
         </script>
+        @endpush
 @endsection

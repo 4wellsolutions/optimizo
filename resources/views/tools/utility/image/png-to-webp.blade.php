@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'PNG to WEBP Converter - Compress PNG to WebP | Optimizo')
-@section('meta_description', 'Convert PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.')
-@section('meta_keywords', 'png to webp, webp converter, compress png, free image converter')
+@section('title', __tool('png-to-webp', 'meta.title'))
+@section('meta_description', __tool('png-to-webp', 'meta.desc'))
+@section('meta_keywords', __tool('png-to-webp', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-purple-50 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Upload PNG Image</h2>
-                <p class="text-gray-600">Drag & drop your PNG file here</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('png-to-webp', 'input.title') !!}</h2>
+                <p class="text-gray-600">{!! __tool('png-to-webp', 'input.desc') !!}</p>
             </div>
 
             <div id="dropZone"
@@ -30,8 +30,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-gray-700">Drop PNG file here</p>
-                        <p class="text-sm text-gray-500">Supports PNG (Max 10MB)</p>
+                        <p class="text-lg font-bold text-gray-700">{!! __tool('png-to-webp', 'input.drop_title') !!}</p>
+                        <p class="text-sm text-gray-500">{!! __tool('png-to-webp', 'input.drop_desc') !!}</p>
                     </div>
                 </div>
             </div>
@@ -40,17 +40,19 @@
                 <!-- Left Column: Image Preview -->
                 <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center border border-gray-200 h-[400px]">
                     <img id="imagePreview" class="max-h-full max-w-full object-contain rounded-lg shadow-sm" src=""
-                        alt="Preview">
+                        alt="{!! __tool('png-to-webp', 'editor.image_alt') !!}">
                 </div>
 
                 <!-- Right Column: Actions -->
                 <div class="flex flex-col justify-center space-y-6">
                     <div class="text-center text-gray-600 font-medium">
-                        Output Format: <span class="font-bold text-purple-600">WEBP</span>
+                        {!! __tool('png-to-webp', 'editor.output_format') !!} <span
+                            class="font-bold text-purple-600">WEBP</span>
                     </div>
 
                     <div class="w-full">
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Compression Quality</label>
+                        <label
+                            class="block text-sm font-bold text-gray-700 mb-2">{!! __tool('png-to-webp', 'editor.quality') !!}</label>
                         <div class="flex items-center gap-4">
                             <input type="range" id="qualityRange" min="0.1" max="1.0" step="0.1" value="0.9"
                                 class="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer">
@@ -64,7 +66,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
-                        Convert to WEBP & Download
+                        </svg>
+                        {!! __tool('png-to-webp', 'editor.btn_convert') !!}
                     </button>
                 </div>
             </div>
@@ -74,15 +77,14 @@
         <div class="mt-12 mb-20 max-w-7xl mx-auto">
             <article
                 class="prose prose-lg prose-purple max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">Optimize Images with PNG to WebP</h2>
+                <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">
+                    {!! __tool('png-to-webp', 'content.title') !!}</h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
-                        Want faster website load times? Converting your PNGs to WebP is the #1 recommendation from Google
-                        PageSpeed Insights.
+                        {!! __tool('png-to-webp', 'content.p1') !!}
                     </p>
                     <p>
-                        Our tool compresses your PNG images into the modern WebP format, reducing file size by up to
-                        <strong>30-50%</strong> while keeping the background transparent and the quality sharp.
+                        {!! __tool('png-to-webp', 'content.p2') !!}
                     </p>
                 </div>
 
@@ -96,9 +98,9 @@
                                     d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Significantly Smaller</h3>
-                        <p class="text-sm text-gray-600">WebP offers superior compression. Save bandwidth and storage space
-                            instantly.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('png-to-webp', 'content.features.smaller.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('png-to-webp', 'content.features.smaller.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -109,9 +111,10 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Transparency Kept</h3>
-                        <p class="text-sm text-gray-600">Unlike converting to JPG, switching from PNG to WebP preserves your
-                            alpha channel (background transparency).</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('png-to-webp', 'content.features.transparency.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('png-to-webp', 'content.features.transparency.desc') !!}
+                        </p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -122,32 +125,30 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Adjustable Quality</h3>
-                        <p class="text-sm text-gray-600">You control the balance. Choose 90% for high quality or 70% for
-                            maximum savings.</p>
+                        <h3 class="font-bold text-xl mb-2 text-gray-900">
+                            {!! __tool('png-to-webp', 'content.features.adjustable.title') !!}</h3>
+                        <p class="text-sm text-gray-600">{!! __tool('png-to-webp', 'content.features.adjustable.desc') !!}
+                        </p>
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">How to Convert?</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('png-to-webp', 'content.how_to.title') !!}</h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
-                            <li><strong>Upload PNG:</strong> Drag and drop your file.</li>
-                            <li><strong>Set Quality:</strong> Use the slider. We recommend 80-90% for a good balance.</li>
-                            <li><strong>Process:</strong> Click the "Convert" button.</li>
-                            <li><strong>Download:</strong> Your lighter .webp file is ready.</li>
+                            @foreach(__tool('png-to-webp', 'content.how_to.list') as $step)
+                                <li>{!! $step !!}</li>
+                            @endforeach
                         </ol>
                     </div>
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">Why WebP?</h3>
-                        <p class="text-gray-600 mb-4">
-                            WebP is a modern image format developed by Google.
-                        </p>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('png-to-webp', 'content.why.title') !!}
+                        </h3>
+                        <p class="text-gray-600 mb-4">{!! __tool('png-to-webp', 'content.why.p1') !!}</p>
                         <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                            <li><strong>SEO Boost:</strong> Faster sites rank better on Google.</li>
-                            <li><strong>Mobile Friendly:</strong> Uses less data for mobile visitors.</li>
-                            <li><strong>Support:</strong> Supported by Chrome, Firefox, Safari, Edge, and all modern
-                                browsers.</li>
+                            @foreach(__tool('png-to-webp', 'content.why.list') as $item)
+                                <li>{!! $item !!}</li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -155,6 +156,7 @@
         </div>
     </div>
 
+    @push('scripts')
     <script>
         const imageInput = document.getElementById('imageInput');
         const dropZone = document.getElementById('dropZone');
@@ -177,7 +179,7 @@
         qualityRange.addEventListener('input', (e) => { qualityValue.innerText = Math.round(e.target.value * 100) + '%'; });
 
         function handleFile(file) {
-            if (!file.type.match('image.*')) { showError('Please upload a valid PNG image'); return; }
+            if (!file.type.match('image.*')) { showError('{!! __tool('png-to-webp', 'js.invalid_image') !!}'); return; }
             const reader = new FileReader();
             reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
             reader.readAsDataURL(file);
@@ -201,4 +203,5 @@
             };
         });
     </script>
+    @endpush
 @endsection
