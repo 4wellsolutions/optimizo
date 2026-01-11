@@ -189,8 +189,14 @@
         };
 
         const names = {
-            'mm': 'Millimeters', 'cm': 'Centimeters', 'm': 'Meters', 'km': 'Kilometers',
-            'in': 'Inches', 'ft': 'Feet', 'yd': 'Yards', 'mi': 'Miles'
+            'mm': '{!! __tool('length-converter', 'form.unit_mm') !!}', 
+            'cm': '{!! __tool('length-converter', 'form.unit_cm') !!}', 
+            'm': '{!! __tool('length-converter', 'form.unit_m') !!}', 
+            'km': '{!! __tool('length-converter', 'form.unit_km') !!}',
+            'in': '{!! __tool('length-converter', 'form.unit_in') !!}', 
+            'ft': '{!! __tool('length-converter', 'form.unit_ft') !!}', 
+            'yd': '{!! __tool('length-converter', 'form.unit_yd') !!}', 
+            'mi': '{!! __tool('length-converter', 'form.unit_mi') !!}'
         };
 
         function convert(source) {
