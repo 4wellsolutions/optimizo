@@ -1,9 +1,16 @@
 @props(['title' => null, 'description' => null, 'icon' => null, 'tool'])
 
 @php
-    // Use provided props, or fall back to $tool properties
-    $displayTitle = $title ?? __t($tool, 'name') ?? $tool->meta_title ?? __('common.tool_fallback');
-    $displayDescription = $description ?? __t($tool, 'meta_description') ?? $tool->description ?? '';
+    // Use provided props, or fall back to file-based translation, then DB translation
+    $fileTitle = __tool($tool->slug, 'meta.h1');
+    $fileDescription = __tool($tool->slug, 'meta.subtitle');
+
+    $displayTitle = $title
+        ?: ($fileTitle ?: (__t($tool, 'name') ?: ($tool->meta_title ?: __('common.tool_fallback'))));
+
+    $displayDescription = $description
+        ?: ($fileDescription ?: (__t($tool, 'meta_description') ?: ($tool->description ?: '')));
+
     $displayIcon = $icon ?? $tool->icon ?? $tool->slug ?? 'default';
 
     // Category-based gradient colors
@@ -22,7 +29,8 @@
     <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
 
     <div class="relative z-10 text-center">
-        <div class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-2xl mb-4 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+        <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-2xl mb-4 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
             <x-tool-icon :slug="$tool->slug" class="{{ $iconColorClass }}" />
         </div>
         <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight tracking-tight">
