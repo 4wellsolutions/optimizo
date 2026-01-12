@@ -5,6 +5,7 @@ return [
     'pdf-to-word' => [
         'seo' => [
             'title' => 'PDF to Word Converter - Free Online Tool',
+            'h1' => 'PDF to Word Converter',
             'description' => 'Convert PDF files to editable Word documents online. Free PDF to DOCX converter with layout preservation and high accuracy.',
         ],
         'form' => [
@@ -38,6 +39,7 @@ return [
     'word-to-pdf' => [
         'seo' => [
             'title' => 'Word to PDF Converter - Free Online Tool',
+            'h1' => 'Word to PDF Converter',
             'description' => 'Convert Word documents to PDF online. Free DOC to PDF converter with perfect formatting preservation.',
         ],
         'form' => [
@@ -71,6 +73,7 @@ return [
     'excel-to-pdf' => [
         'seo' => [
             'title' => 'Excel to PDF Converter - Free Online Tool',
+            'h1' => 'Excel to PDF Converter',
             'description' => 'Convert Excel spreadsheets to PDF online. Free XLS to PDF converter for professional data presentation.',
         ],
         'form' => [
@@ -115,6 +118,7 @@ return [
     'pdf-to-excel' => [
         'seo' => [
             'title' => 'PDF to Excel Converter - Free Online Tool',
+            'h1' => 'PDF to Excel Converter',
             'description' => 'Convert PDF to Excel spreadsheets online. Extract tables from PDF to editable XLSX format.',
         ],
         'form' => [
@@ -148,6 +152,7 @@ return [
     'ppt-to-pdf' => [
         'seo' => [
             'title' => 'PowerPoint to PDF Converter - Free Online Tool',
+            'h1' => 'PowerPoint to PDF Converter',
             'description' => 'Convert PowerPoint presentations to PDF online. Free PPT to PDF converter for easy sharing.',
         ],
         'form' => [
@@ -181,6 +186,7 @@ return [
     'pdf-to-ppt' => [
         'seo' => [
             'title' => 'PDF to PowerPoint Converter - Free Online Tool',
+            'h1' => 'PDF to PowerPoint Converter',
             'description' => 'Convert PDF to PowerPoint slides online. Transform PDF pages into editable PPTX presentations.',
         ],
         'form' => [
@@ -214,6 +220,7 @@ return [
     'jpg-to-pdf' => [
         'seo' => [
             'title' => 'JPG to PDF Converter - Free Online Tool',
+            'h1' => 'JPG to PDF Converter',
             'description' => 'Convert JPG images to PDF online. Combine multiple images into one PDF document.',
         ],
         'form' => [
@@ -247,6 +254,7 @@ return [
     'pdf-to-jpg' => [
         'seo' => [
             'title' => 'PDF to JPG Converter - Free Online Tool',
+            'h1' => 'PDF to JPG Converter',
             'description' => 'Convert PDF to JPG images online. Extract PDF pages as high-quality JPG files.',
         ],
         'form' => [
@@ -280,6 +288,7 @@ return [
     'pdf-compressor' => [
         'seo' => [
             'title' => 'PDF Compressor - Reduce PDF File Size Online',
+            'h1' => 'PDF Compressor',
             'description' => 'Compress PDF files online. Reduce PDF file size while maintaining quality with our free PDF compressor.',
         ],
         'form' => [
@@ -319,6 +328,7 @@ return [
     'pdf-merger' => [
         'seo' => [
             'title' => 'PDF Merger - Combine PDF Files Online',
+            'h1' => 'PDF Merger',
             'description' => 'Merge PDF files online. Combine multiple PDFs into one document with our free PDF merger tool.',
         ],
         'form' => [
@@ -353,6 +363,7 @@ return [
     'pdf-splitter' => [
         'seo' => [
             'title' => 'PDF Splitter - Split PDF Files Online',
+            'h1' => 'PDF Splitter',
             'description' => 'Split PDF files online. Extract pages and divide large PDFs into smaller documents.',
         ],
         'form' => [

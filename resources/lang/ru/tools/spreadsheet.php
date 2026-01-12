@@ -4,6 +4,7 @@ return [
     'csv-to-sql' => [
         'seo' => [
             'title' => 'Конвертер CSV в SQL - Генерация INSERT Запросов | Optimizo',
+            'h1' => 'Конвертер CSV в SQL',
             'description' => 'Конвертируйте CSV файлы в SQL INSERT запросы мгновенно. Бесплатный онлайн инструмент для генерации CREATE TABLE и массовых INSERT запросов для MySQL, PostgreSQL, SQLite.',
         ],
         'form' => [
@@ -50,6 +51,7 @@ return [
     'csv-to-excel' => [
         'seo' => [
             'title' => 'Конвертер CSV в Excel - Бесплатный Онлайн Инструмент | Optimizo',
+            'h1' => 'Конвертер CSV в Excel',
             'description' => 'Конвертируйте CSV в Excel (XLSX) онлайн бесплатно. Преобразуйте файлы с разделителями-запятыми в отформатированные таблицы Excel мгновенно.',
         ],
         'form' => [
@@ -82,6 +84,7 @@ return [
     'excel-to-csv' => [
         'seo' => [
             'title' => 'Конвертер Excel в CSV - Бесплатный Инструмент XLSX в CSV | Optimizo',
+            'h1' => 'Конвертер Excel в CSV',
             'description' => 'Конвертируйте Excel файлы в формат CSV онлайн бесплатно. Преобразуйте XLSX таблицы в значения, разделенные запятыми, мгновенно.',
         ],
         'form' => [
@@ -114,6 +117,7 @@ return [
     'google-sheets-to-excel' => [
         'seo' => [
             'title' => 'Конвертер Google Таблиц в Excel - Скачать как XLSX | Optimizo',
+            'h1' => 'Конвертер Google Таблиц в Excel',
             'description' => 'Конвертируйте Google Таблицы в формат Excel онлайн. Скачивайте ваши таблицы Google как XLSX файлы для автономного использования.',
         ],
         'form' => [
@@ -146,6 +150,7 @@ return [
     'xls-to-xlsx' => [
         'seo' => [
             'title' => 'Конвертер XLS в XLSX - Обновление Формата Excel | Optimizo',
+            'h1' => 'Конвертер XLS в XLSX',
             'description' => 'Конвертируйте старые XLS файлы в современный формат XLSX онлайн. Бесплатный инструмент для обновления устаревших Excel файлов.',
         ],
         'form' => [
@@ -178,6 +183,7 @@ return [
     'xlsx-to-xls' => [
         'seo' => [
             'title' => 'Конвертер XLSX в XLS - Устаревший Формат Excel | Optimizo',
+            'h1' => 'Конвертер XLSX в XLS',
             'description' => 'Конвертируйте XLSX файлы в формат XLS для совместимости со старыми версиями Excel. Бесплатный онлайн конвертер.',
         ],
         'form' => [

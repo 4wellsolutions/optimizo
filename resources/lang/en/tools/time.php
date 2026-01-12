@@ -14,6 +14,7 @@ return [
     'epoch-time-converter' => [
         'seo' => [
             'title' => 'Epoch Time Converter - Unix Timestamp to Date & Date to Timestamp',
+            'h1' => 'Epoch Time Converter',
             'description' => 'Convert Unix Epoch timestamps to human-readable dates and vice versa. Support for local time, GMT/UTC, and relative time with our free, instant converter.',
         ],
         'current_epoch' => [
@@ -64,6 +65,7 @@ return [
     'date-to-unix' => [
         'seo' => [
             'title' => 'Date to Unix Timestamp Converter - Instant & Accurate',
+            'h1' => 'Date to Unix Timestamp Converter',
             'description' => 'Convert any date and time into a Unix IP imestamp instantly. Supports both local time and UTC/GMT inputs for precise server-side scheduling and debugging.',
         ],
         'form' => [
@@ -97,6 +99,7 @@ return [
     'unix-to-date' => [
         'seo' => [
             'title' => 'Unix Timestamp to Date Converter - Readable DateTime Tool',
+            'h1' => 'Unix Timestamp to Date Converter',
             'description' => 'Decode Unix Timestamps into human-readable dates. See the exact time in GMT, your local timezone, and ISO 8601 format instantly.',
         ],
         'form' => [
@@ -133,6 +136,7 @@ return [
     'local-to-utc' => [
         'seo' => [
             'title' => 'Local Time to UTC Converter - Timezone Adjuster',
+            'h1' => 'Local Time to UTC Converter',
             'description' => 'Convert your local time to UTC (Coordinated Universal Time). Essential for scheduling international calls and server logs synchronization.',
         ],
         'live_clocks' => [
@@ -181,6 +185,7 @@ return [
     'utc-to-local' => [
         'seo' => [
             'title' => 'UTC to Local Time Converter - Global Time Translator',
+            'h1' => 'UTC to Local Time Converter',
             'description' => 'Quickly convert UTC/GMT time to your local timezone. Perfect for checking server logs, international meeting times, and global event schedules.',
         ],
         'form' => [
@@ -215,6 +220,7 @@ return [
     'time-zone-converter' => [
         'seo' => [
             'title' => 'Time Zone Converter - Global Meeting Planner',
+            'h1' => 'Time Zone Converter',
             'description' => 'Visualize time differences across the globe. Compare times between two cities or zones side-by-side. Ideal for arranging international meetings.',
         ],
         'form' => [

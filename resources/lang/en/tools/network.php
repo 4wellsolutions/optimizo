@@ -5,6 +5,7 @@ return [
     'dns-lookup' => [
         'seo' => [
             'title' => 'DNS Lookup Tool - Check DNS Records Online Free',
+            'h1' => 'DNS Lookup Tool',
             'description' => 'Free DNS lookup tool to check DNS records for any domain. View A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.',
             'keywords' => 'dns lookup, dns checker, dns records, mx records, nameserver lookup, dns query tool',
         ],
@@ -57,6 +58,7 @@ return [
     'domain-to-ip' => [
         'seo' => [
             'title' => 'Domain to IP Converter - Find IP Address of Any Domain Free',
+            'h1' => 'Domain to IP Converter',
             'description' => 'Free domain to IP lookup tool. Instantly convert any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.',
             'keywords' => 'domain to ip, ip lookup, dns lookup, find ip address, domain ip converter, hostname to ip',
         ],
@@ -128,6 +130,7 @@ return [
     'ip-lookup' => [
         'seo' => [
             'title' => 'IP Lookup Tool - Get IP Address Information & Geolocation Free',
+            'h1' => 'IP Lookup Tool',
             'description' => 'Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.',
             'keywords' => 'ip lookup, ip address lookup, ip geolocation, find ip location, ip address information, whois ip',
         ],
@@ -188,6 +191,7 @@ return [
     'ping-test' => [
         'seo' => [
             'title' => 'Ping Test Tool - Check Network Latency & Connectivity Free',
+            'h1' => 'Ping Test Tool',
             'description' => 'Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.',
             'keywords' => 'ping test, network ping, latency test, packet loss, network connectivity, ping checker, server ping',
         ],
@@ -240,6 +244,7 @@ return [
     'port-checker' => [
         'seo' => [
             'title' => 'Port Checker Tool - Check Open Ports & Network Connectivity Free',
+            'h1' => 'Port Checker Tool',
             'description' => 'Free port checker tool to test if ports are open, closed, or filtered. Check TCP/UDP ports instantly for network troubleshooting and security auditing.',
             'keywords' => 'port checker, open port checker, port scanner, check port status, tcp port checker, network port test',
         ],
@@ -295,6 +300,7 @@ return [
     'redirect-checker' => [
         'seo' => [
             'title' => 'Redirect Checker - HTTP Status Code & Redirect Chain Analyzer Free',
+            'h1' => 'Redirect Checker',
             'description' => 'Free redirect checker tool to analyze URL redirects, trace redirect chains, check HTTP status codes, and detect redirect loops. Essential for SEO and debugging.',
             'keywords' => 'redirect checker, http redirect, 301 redirect, 302 redirect, redirect chain, status code checker, redirect loop detector',
         ],
@@ -410,6 +416,7 @@ return [
     'reverse-dns' => [
         'seo' => [
             'title' => 'Reverse DNS Lookup Tool - Find Hostname from IP Address Free',
+            'h1' => 'Reverse DNS Lookup Tool',
             'description' => 'Free reverse DNS lookup tool to find the hostname associated with any IP address. Check PTR records instantly for email verification and network troubleshooting.',
             'keywords' => 'reverse dns, reverse dns lookup, ptr record, ip to hostname, reverse ip lookup, rdns checker',
         ],
@@ -453,6 +460,7 @@ return [
     'traceroute' => [
         'seo' => [
             'title' => 'Traceroute Tool - Trace Network Path & Hops Online Free',
+            'h1' => 'Traceroute Tool',
             'description' => 'Free traceroute tool to trace the network path packets take to reach a destination. View all hops, latency, and routing information instantly for network troubleshooting.',
             'keywords' => 'traceroute, trace route, network path, network hops, ping trace, route trace, network diagnostic',
         ],
@@ -499,6 +507,7 @@ return [
     'what-is-my-ip' => [
         'seo' => [
             'title' => 'What is My IP Address? - Check Your IP Location Free',
+            'h1' => 'What is My IP Address?',
             'description' => 'Find out your public IP address instantly. Check your IPv4/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.',
             'keywords' => 'what is my ip, my ip address, check ip, find my ip, ip address lookup, public ip address',
         ],
@@ -571,6 +580,7 @@ return [
     'what-is-my-isp' => [
         'seo' => [
             'title' => 'What is My ISP? - Check Internet Service Provider Free',
+            'h1' => 'What is My ISP?',
             'description' => 'Find out your Internet Service Provider (ISP) instantly. Check ISP name, organization, ASN, and IP address information for free.',
             'keywords' => 'what is my isp, check isp, internet service provider, my isp, asn lookup, isp checker',
         ],
@@ -646,6 +656,7 @@ return [
     'whois-lookup' => [
         'seo' => [
             'title' => 'WHOIS Lookup Tool - Domain Registration Information Free',
+            'h1' => 'WHOIS Lookup Tool',
             'description' => 'Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.',
             'keywords' => 'whois lookup, domain whois, whois checker, domain registration, domain info, whois search',
         ],

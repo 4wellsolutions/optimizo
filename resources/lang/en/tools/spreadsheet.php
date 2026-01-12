@@ -4,6 +4,7 @@ return [
     'csv-to-sql' => [
         'seo' => [
             'title' => 'CSV to SQL Converter - Generate INSERT Statements | Optimizo',
+            'h1' => 'CSV to SQL Converter',
             'description' => 'Convert CSV files to SQL INSERT statements instantly. Free online tool to generate CREATE TABLE and bulk INSERT queries for MySQL, PostgreSQL, SQLite.',
         ],
         'form' => [
@@ -50,6 +51,7 @@ return [
     'csv-to-excel' => [
         'seo' => [
             'title' => 'CSV to Excel Converter - Free Online Tool | Optimizo',
+            'h1' => 'CSV to Excel Converter',
             'description' => 'Convert CSV to Excel (XLSX) online for free. Transform comma-separated files into formatted Excel spreadsheets instantly.',
         ],
         'form' => [
@@ -82,6 +84,7 @@ return [
     'excel-to-csv' => [
         'seo' => [
             'title' => 'Excel to CSV Converter - Free XLSX to CSV Tool | Optimizo',
+            'h1' => 'Excel to CSV Converter',
             'description' => 'Convert Excel files to CSV format online for free. Transform XLSX spreadsheets into comma-separated values instantly.',
         ],
         'form' => [
@@ -114,6 +117,7 @@ return [
     'google-sheets-to-excel' => [
         'seo' => [
             'title' => 'Google Sheets to Excel Converter - Download as XLSX | Optimizo',
+            'h1' => 'Google Sheets to Excel Converter',
             'description' => 'Convert Google Sheets to Excel format online. Download your Google Spreadsheets as XLSX files for offline use.',
         ],
         'form' => [
@@ -146,6 +150,7 @@ return [
     'xls-to-xlsx' => [
         'seo' => [
             'title' => 'XLS to XLSX Converter - Upgrade Excel Format | Optimizo',
+            'h1' => 'XLS to XLSX Converter',
             'description' => 'Convert old XLS files to modern XLSX format online. Free tool to upgrade legacy Excel files.',
         ],
         'form' => [
@@ -178,6 +183,7 @@ return [
     'xlsx-to-xls' => [
         'seo' => [
             'title' => 'XLSX to XLS Converter - Legacy Excel Format | Optimizo',
+            'h1' => 'XLSX to XLS Converter',
             'description' => 'Convert XLSX files to XLS format for compatibility with older Excel versions. Free online converter.',
         ],
         'form' => [

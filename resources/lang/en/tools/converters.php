@@ -4,6 +4,7 @@ return [
     'angle-converter' => [
         'seo' => [
             'title' => 'Angle Converter - Degrees, Radians, Gradians',
+            'h1' => 'Angle Converter',
             'description' => 'Convert angle units instantly. Degrees to Radians, Gradians to Degrees, Arcminutes and Arcseconds.',
             'keywords' => 'angle converter, degrees to radians, radians to degrees, angle calculator',
         ],
@@ -48,6 +49,7 @@ return [
     'area-converter' => [
         'seo' => [
             'title' => 'Area Converter - Square Meters, Acres, Hectares',
+            'h1' => 'Area Converter',
             'description' => 'Convert area units instantly. Square meters to acres, hectares to square feet, and square miles.',
             'keywords' => 'area converter, square meters to acres, hectares conversion, land measurement',
         ],
@@ -96,6 +98,7 @@ return [
     'cooking-unit-converter' => [
         'seo' => [
             'title' => 'Cooking Unit Converter - Cups, Tablespoons, Teaspoons',
+            'h1' => 'Cooking Unit Converter',
             'description' => 'Convert cooking units instantly. Cups to Tablespoons, Teaspoons to Milliliters, and Fluid Ounces.',
             'keywords' => 'cooking converter, cups to tbsp, tsp to ml, kitchen calculator, baking conversions',
         ],
@@ -143,6 +146,7 @@ return [
     'data-transfer-rate-converter' => [
         'seo' => [
             'title' => 'Data Transfer Converter - Mbps, Gbps, KB/s',
+            'h1' => 'Data Transfer Converter',
             'description' => 'Convert data transfer rates instantly. Mbps to MB/s, Gbps to KB/s, and internet speed conversions.',
             'keywords' => 'data transfer converter, mbps to mb/s, internet speed calculator, bandwidth converter',
         ],
@@ -189,6 +193,7 @@ return [
     'density-converter' => [
         'seo' => [
             'title' => 'Density Converter - kg/m³, g/cm³, lb/ft³',
+            'h1' => 'Density Converter',
             'description' => 'Convert density units instantly. Kilograms per cubic meter to Grams per cubic centimeter and Pounds per cubic foot.',
             'keywords' => 'density converter, kg/m3 to g/cm3, density calculator, physics conversions',
         ],
@@ -232,6 +237,7 @@ return [
     'digital-storage-converter' => [
         'seo' => [
             'title' => 'Digital Storage Converter - Bytes, KB, MB, GB, TB',
+            'h1' => 'Digital Storage Converter',
             'description' => 'Convert digital storage units instantly. Bytes to Megabytes, Gigabytes to Terabytes, and Petabytes.',
             'keywords' => 'storage converter, bytes to mb, gb to tb, data size calculator, digital units',
         ],
@@ -278,6 +284,7 @@ return [
     'energy-converter' => [
         'seo' => [
             'title' => 'Energy Converter - Joules, Calories, kWh',
+            'h1' => 'Energy Converter',
             'description' => 'Convert energy units instantly. Joules to Calories, Kilowatt-hours to BTUs, and more.',
             'keywords' => 'energy converter, joules to calories, btu conversion, kwh to joules',
         ],
@@ -325,6 +332,7 @@ return [
     'force-converter' => [
         'seo' => [
             'title' => 'Force Converter - Newtons, Pound-force, Kilogram-force',
+            'h1' => 'Force Converter',
             'description' => 'Convert force units instantly. Newtons to Pound-force (lbf), Kilogram-force (kgf), and more.',
             'keywords' => 'force converter, newtons to lbf, kgf conversion, physics calculator',
         ],
@@ -369,6 +377,7 @@ return [
     'frequency-converter' => [
         'seo' => [
             'title' => 'Frequency Converter - Hertz, kHz, MHz, GHz',
+            'h1' => 'Frequency Converter',
             'description' => 'Convert frequency units instantly. Hertz to Megahertz, Gigahertz to Kilohertz.',
             'keywords' => 'frequency converter, hertz to mhz, ghz to khz, radio frequency calculator',
         ],
@@ -414,6 +423,7 @@ return [
     'fuel-consumption-converter' => [
         'seo' => [
             'title' => 'Fuel Consumption Converter - MPG, km/L, L/100km',
+            'h1' => 'Fuel Consumption Converter',
             'description' => 'Convert fuel consumption units instantly. Miles per Gallon (MPG) to L/100km and Kilometers per Liter.',
             'keywords' => 'fuel converter, mpg to l/100km, km/l to mpg, fuel efficiency calculator',
         ],
@@ -457,6 +467,7 @@ return [
     'length-converter' => [
         'seo' => [
             'title' => 'Length Converter - Free Online Unit Converter',
+            'h1' => 'Length Converter',
             'description' => 'Convert length measurements instantly. Supports metric and imperial units like meters, feet, inches, kilometers, and miles.',
             'keywords' => 'length converter, meter to feet, cm to inch, km to miles, online unit converter',
         ],
@@ -503,6 +514,7 @@ return [
     'molar-mass-converter' => [
         'seo' => [
             'title' => 'Molar Mass Converter - g/mol to kg/mol',
+            'h1' => 'Molar Mass Converter',
             'description' => 'Convert molar mass units instantly. Grams per mole to Kilograms per mole.',
             'keywords' => 'molar mass converter, g/mol conversion, chemistry calculator, molecular weight',
         ],
@@ -545,6 +557,7 @@ return [
     'power-converter' => [
         'seo' => [
             'title' => 'Power Converter - Watts, Kilowatts, Horsepower',
+            'h1' => 'Power Converter',
             'description' => 'Convert power units instantly. Watts to Horsepower, Kilowatts to BTU/h, and more.',
             'keywords' => 'power converter, watts to hp, horsepower conversion, kilowatts calculator',
         ],
@@ -590,6 +603,7 @@ return [
     'pressure-converter' => [
         'seo' => [
             'title' => 'Pressure Converter - Pascal, Bar, PSI, Atm',
+            'h1' => 'Pressure Converter',
             'description' => 'Convert pressure units instantly. Pascal to Bar, PSI to Atmospheres, and mmHg conversions.',
             'keywords' => 'pressure converter, psi to bar, pascal to atm, mmhg conversion, tyre pressure',
         ],
@@ -635,6 +649,7 @@ return [
     'speed-converter' => [
         'seo' => [
             'title' => 'Speed Converter - Free Online Unit Converter',
+            'h1' => 'Speed Converter',
             'description' => 'Convert speed units instantly. Miles per hour to Kilometers per hour, Meters per second, and Knots.',
             'keywords' => 'speed converter, mph to kph, knots conversion, speed limit converter',
         ],
@@ -679,6 +694,7 @@ return [
     'temperature-converter' => [
         'seo' => [
             'title' => 'Temperature Converter - Celsius, Fahrenheit, Kelvin',
+            'h1' => 'Temperature Converter',
             'description' => 'Convert temperature readings between Celsius, Fahrenheit, and Kelvin scales instantly.',
             'keywords' => 'temperature converter, celsius to fahrenheit, kelvin to celsius, fahrenheit to celsius',
         ],
@@ -722,6 +738,7 @@ return [
     'time-unit-converter' => [
         'seo' => [
             'title' => 'Time Unit Converter - Seconds, Minutes, Hours',
+            'h1' => 'Time Unit Converter',
             'description' => 'Convert time durations instantly. Seconds to minutes, hours to days, weeks to months, and years.',
             'keywords' => 'time converter, seconds to minutes, hours to days, duration calculator',
         ],
@@ -769,6 +786,7 @@ return [
     'torque-converter' => [
         'seo' => [
             'title' => 'Torque Converter - Newton-meters, Foot-pounds',
+            'h1' => 'Torque Converter',
             'description' => 'Convert torque units instantly. Newton-meters to Foot-pounds, Inch-pounds, and Kilogram-force meters.',
             'keywords' => 'torque converter, nm to ft-lb, torque calculator, engine torque conversion',
         ],
