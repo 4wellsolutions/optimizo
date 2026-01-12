@@ -173,6 +173,98 @@ if (!function_exists('__tool')) {
             }
         }
 
+        // Fallback: Check utilities.php if not found in specific category
+        if ($category !== 'utilities') {
+            $utilitiesFile = resource_path("lang/{$locale}/tools/utilities.php");
+
+            if (file_exists($utilitiesFile)) {
+                static $loadedUtilities = [];
+
+                // Load utilities translations once
+                if (!isset($loadedUtilities[$locale])) {
+                    $loadedUtilities[$locale] = require $utilitiesFile;
+                }
+
+                $translations = $loadedUtilities[$locale];
+
+                // Navigate through keys
+                $keys = explode('.', $translationKey);
+                $value = $translations;
+                $found = true;
+
+                foreach ($keys as $segment) {
+                    if (is_array($value) && array_key_exists($segment, $value)) {
+                        $value = $value[$segment];
+                    } else {
+                        $found = false;
+                        break;
+                    }
+                }
+
+                if ($found && $value !== null) {
+                    return $value;
+                }
+            }
+        }
+
+        // Fallback: Check 'en' locale if current locale is not 'en'
+        if ($locale !== 'en') {
+            $enFile = resource_path("lang/en/tools/{$category}.php");
+
+            // Try specific category file in EN
+            if (file_exists($enFile)) {
+                static $loadedEnCategories = [];
+                if (!isset($loadedEnCategories[$category])) {
+                    $loadedEnCategories[$category] = require $enFile;
+                }
+
+                $value = $loadedEnCategories[$category];
+                $keys = explode('.', $translationKey);
+                $found = true;
+
+                foreach ($keys as $segment) {
+                    if (is_array($value) && array_key_exists($segment, $value)) {
+                        $value = $value[$segment];
+                    } else {
+                        $found = false;
+                        break;
+                    }
+                }
+
+                if ($found && $value !== null) {
+                    return $value;
+                }
+            }
+
+            // Try utilities.php in EN
+            if ($category !== 'utilities') {
+                $enUtilities = resource_path("lang/en/tools/utilities.php");
+                if (file_exists($enUtilities)) {
+                    static $loadedEnUtilities = null;
+                    if ($loadedEnUtilities === null) {
+                        $loadedEnUtilities = require $enUtilities;
+                    }
+
+                    $value = $loadedEnUtilities;
+                    $keys = explode('.', $translationKey);
+                    $found = true;
+
+                    foreach ($keys as $segment) {
+                        if (is_array($value) && array_key_exists($segment, $value)) {
+                            $value = $value[$segment];
+                        } else {
+                            $found = false;
+                            break;
+                        }
+                    }
+
+                    if ($found && $value !== null) {
+                        return $value;
+                    }
+                }
+            }
+        }
+
         // Return default if translation not found (handle null)
         return $default ?? '';
     }

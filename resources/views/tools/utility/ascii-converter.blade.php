@@ -6,7 +6,6 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Hero Section -->
-        <!-- Hero Section -->
         <x-tool-hero :tool="$tool" />
 
         <!-- Tool Section -->
@@ -19,7 +18,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
                     </svg>
-                    Text to ASCII
+                    {!! __tool('ascii-converter', 'editor.to_ascii') !!}
                 </button>
                 <button onclick="setMode('toText')" id="toTextBtn"
                     class="flex-1 px-6 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all">
@@ -27,15 +26,15 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
                     </svg>
-                    ASCII to Text
+                    {!! __tool('ascii-converter', 'editor.to_text') !!}
                 </button>
             </div>
 
             <!-- Input -->
             <div class="mb-6">
-                <label for="asciiInput" class="form-label text-base" id="inputLabel">Enter Text</label>
+                <label for="asciiInput" class="form-label text-base" id="inputLabel">{!! __tool('ascii-converter', 'editor.label_text') !!}</label>
                 <textarea id="asciiInput" class="form-input font-mono text-sm min-h-[300px]"
-                    placeholder="Hello World"></textarea>
+                    placeholder="{!! __tool('ascii-converter', 'editor.ph_text') !!}"></textarea>
             </div>
 
             <!-- Action Buttons -->
@@ -45,14 +44,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    <span id="processBtn">Convert to ASCII</span>
+                    <span id="processBtn">{!! __tool('ascii-converter', 'editor.btn_convert_ascii') !!}</span>
                 </button>
                 <button onclick="clearAll()"
                     class="px-6 py-3 bg-gray-500 text-white rounded-xl hover:bg-gray-600 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
-                    <span>Clear</span>
+                    <span>{!! __tool('ascii-converter', 'editor.btn_clear') !!}</span>
                 </button>
                 <button onclick="copyOutput()"
                     class="px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -60,7 +59,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
-                    <span>Copy</span>
+                    <span>{!! __tool('ascii-converter', 'editor.btn_copy') !!}</span>
                 </button>
             </div>
 
@@ -69,9 +68,9 @@
 
             <!-- Output -->
             <div class="mb-6">
-                <label for="asciiOutput" class="form-label text-base" id="outputLabel">ASCII Codes</label>
+                <label for="asciiOutput" class="form-label text-base" id="outputLabel">{!! __tool('ascii-converter', 'editor.label_output_ascii') !!}</label>
                 <textarea id="asciiOutput" class="form-input font-mono text-sm min-h-[300px]" readonly
-                    placeholder="Converted output will appear here..."></textarea>
+                    placeholder="{!! __tool('ascii-converter', 'editor.ph_ascii') !!}"></textarea>
             </div>
         </div>
 
@@ -79,109 +78,119 @@
         <div
             class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-8 md:p-12 border-2 border-yellow-100 shadow-2xl">
             <div class="text-center mb-8">
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Free ASCII Converter Online</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Convert between text and ASCII codes instantly</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{!! __tool('ascii-converter', 'content.title') !!}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{!! __tool('ascii-converter', 'content.subtitle') !!}</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free ASCII Converter tool allows you to convert text to ASCII codes and vice versa. Perfect for
-                programming, data encoding, and understanding character representations in computers.
+                {!! __tool('ascii-converter', 'content.p1') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🔤 What is ASCII?</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('ascii-converter', 'content.what_title') !!}</h3>
             <p class="text-gray-700 leading-relaxed mb-6">
-                ASCII (American Standard Code for Information Interchange) is a character encoding standard that assigns
-                numeric codes (0-127) to letters, numbers, and symbols. Each character has a unique ASCII code that
-                computers use to represent text.
+                {!! __tool('ascii-converter', 'content.what_desc') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('converters', 'general.features', 'Features') !!}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg">
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg">
                     <div class="text-3xl mb-3">⚡</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Instant Conversion</h4>
-                    <p class="text-gray-600 text-sm">Convert text to ASCII and back in milliseconds</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('ascii-converter', 'content.features.instant.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('ascii-converter', 'content.features.instant.desc') !!}</p>
                 </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-orange-300 transition-all shadow-lg">
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-orange-300 transition-all shadow-lg">
                     <div class="text-3xl mb-3">🔄</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Bidirectional</h4>
-                    <p class="text-gray-600 text-sm">Convert text to ASCII or ASCII to text</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('ascii-converter', 'content.features.bidirectional.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('ascii-converter', 'content.features.bidirectional.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg">
                     <div class="text-3xl mb-3">🔒</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Privacy First</h4>
-                    <p class="text-gray-600 text-sm">All processing happens in your browser</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('ascii-converter', 'content.features.privacy.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('ascii-converter', 'content.features.privacy.desc') !!}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Common Use Cases</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('ascii-converter', 'content.uses.title') !!}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">💻 Programming</h4>
-                    <p class="text-gray-700 leading-relaxed">Work with character codes in programming and data processing
-                    </p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('ascii-converter', 'content.uses.programming.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('ascii-converter', 'content.uses.programming.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📚 Learning</h4>
-                    <p class="text-gray-700 leading-relaxed">Understand how computers represent text using numbers</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('ascii-converter', 'content.uses.learning.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('ascii-converter', 'content.uses.learning.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔐 Encoding</h4>
-                    <p class="text-gray-700 leading-relaxed">Encode text data for transmission or storage</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('ascii-converter', 'content.uses.encoding.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('ascii-converter', 'content.uses.encoding.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🐛 Debugging</h4>
-                    <p class="text-gray-700 leading-relaxed">Debug character encoding issues in applications</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('ascii-converter', 'content.uses.debugging.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('ascii-converter', 'content.uses.debugging.desc') !!}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">💡 ASCII Examples</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('ascii-converter', 'content.examples.title') !!}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <div class="space-y-4">
                     <div>
-                        <p class="font-semibold text-gray-900 mb-2">Letter 'A':</p>
+                        <p class="font-semibold text-gray-900 mb-2">{!! __tool('ascii-converter', 'content.examples.a_upper') !!}</p>
                         <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">ASCII Code: 65</p>
                     </div>
                     <div>
-                        <p class="font-semibold text-gray-900 mb-2">Letter 'a':</p>
+                        <p class="font-semibold text-gray-900 mb-2">{!! __tool('ascii-converter', 'content.examples.a_lower') !!}</p>
                         <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">ASCII Code: 97</p>
                     </div>
                     <div>
-                        <p class="font-semibold text-gray-900 mb-2">Number '0':</p>
+                        <p class="font-semibold text-gray-900 mb-2">{!! __tool('ascii-converter', 'content.examples.zero') !!}</p>
                         <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">ASCII Code: 48</p>
                     </div>
                     <div>
-                        <p class="font-semibold text-gray-900 mb-2">Space Character:</p>
+                        <p class="font-semibold text-gray-900 mb-2">{!! __tool('ascii-converter', 'content.examples.space') !!}</p>
                         <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">ASCII Code: 32</p>
                     </div>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('ascii-converter', 'content.faq.title') !!}</h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What is the ASCII code range?</h4>
-                    <p class="text-gray-700 leading-relaxed">Standard ASCII uses codes 0-127. Extended ASCII uses 0-255.
-                        This tool works with standard ASCII characters.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('ascii-converter', 'content.faq.q1') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('ascii-converter', 'content.faq.a1') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I convert special characters?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! This tool converts all ASCII characters including letters,
-                        numbers, punctuation, and special symbols.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('ascii-converter', 'content.faq.q2') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('ascii-converter', 'content.faq.a2') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my data secure?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! All conversions happen in your browser. Your text never
-                        leaves your device.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('ascii-converter', 'content.faq.q3') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('ascii-converter', 'content.faq.a3') !!}</p>
                 </div>
             </div>
         </div>
     </div>
 
+    @push('scripts')
     <script>
         let currentMode = 'toAscii';
+        const msgs = {
+            empty: "{!! __tool('ascii-converter', 'js.error_empty') !!}",
+            successAscii: "{!! __tool('ascii-converter', 'js.success_ascii') !!}",
+            successText: "{!! __tool('ascii-converter', 'js.success_text') !!}",
+            invalidAscii: "{!! __tool('ascii-converter', 'js.error_invalid_ascii') !!}",
+            errorGeneral: "{!! __tool('ascii-converter', 'js.error_general') !!}",
+            noOutput: "{!! __tool('ascii-converter', 'js.error_no_output') !!}",
+            copied: "{!! __tool('ascii-converter', 'js.success_copy') !!}"
+        };
+
+        const labels = {
+            inputText: "{!! __tool('ascii-converter', 'editor.label_text') !!}",
+            inputAscii: "{!! __tool('ascii-converter', 'editor.label_ascii') !!}",
+            outputText: "{!! __tool('ascii-converter', 'editor.label_output_text') !!}",
+            outputAscii: "{!! __tool('ascii-converter', 'editor.label_output_ascii') !!}",
+            btnAscii: "{!! __tool('ascii-converter', 'editor.btn_convert_ascii') !!}",
+            btnText: "{!! __tool('ascii-converter', 'editor.btn_convert_text') !!}"
+        };
 
         function setMode(mode) {
             currentMode = mode;
@@ -196,17 +205,17 @@
                 toAsciiBtn.classList.add('bg-yellow-600', 'text-white');
                 toTextBtn.classList.remove('bg-yellow-600', 'text-white');
                 toTextBtn.classList.add('bg-gray-200', 'text-gray-700');
-                inputLabel.textContent = 'Enter Text';
-                outputLabel.textContent = 'ASCII Codes';
-                processBtn.textContent = 'Convert to ASCII';
+                inputLabel.textContent = labels.inputText;
+                outputLabel.textContent = labels.outputAscii;
+                processBtn.textContent = labels.btnAscii;
             } else {
                 toTextBtn.classList.remove('bg-gray-200', 'text-gray-700');
                 toTextBtn.classList.add('bg-yellow-600', 'text-white');
                 toAsciiBtn.classList.remove('bg-yellow-600', 'text-white');
                 toAsciiBtn.classList.add('bg-gray-200', 'text-gray-700');
-                inputLabel.textContent = 'Enter ASCII Codes (space-separated)';
-                outputLabel.textContent = 'Converted Text';
-                processBtn.textContent = 'Convert to Text';
+                inputLabel.textContent = labels.inputAscii;
+                outputLabel.textContent = labels.outputText;
+                processBtn.textContent = labels.btnText;
             }
             clearAll();
         }
@@ -216,7 +225,7 @@
             const output = document.getElementById('asciiOutput');
 
             if (!input) {
-                showStatus('Please enter text to convert', 'error');
+                showStatus(msgs.empty, 'error');
                 return;
             }
 
@@ -228,7 +237,7 @@
                         codes.push(input.charCodeAt(i));
                     }
                     output.value = codes.join(' ');
-                    showStatus('✓ Text converted to ASCII codes successfully', 'success');
+                    showStatus(msgs.successAscii, 'success');
                 } else {
                     // ASCII to Text
                     const codes = input.split(/\s+/).filter(code => code.trim());
@@ -236,16 +245,16 @@
                     for (let code of codes) {
                         const num = parseInt(code);
                         if (isNaN(num) || num < 0 || num > 127) {
-                            showStatus('✗ Invalid ASCII code: ' + code, 'error');
+                            showStatus(msgs.invalidAscii + code, 'error');
                             return;
                         }
                         text += String.fromCharCode(num);
                     }
                     output.value = text;
-                    showStatus('✓ ASCII codes converted to text successfully', 'success');
+                    showStatus(msgs.successText, 'success');
                 }
             } catch (error) {
-                showStatus('✗ Error converting: ' + error.message, 'error');
+                showStatus(msgs.errorGeneral + error.message, 'error');
             }
         }
 
@@ -258,12 +267,12 @@
         function copyOutput() {
             const output = document.getElementById('asciiOutput');
             if (!output.value) {
-                showStatus('No output to copy', 'error');
+                showStatus(msgs.noOutput, 'error');
                 return;
             }
             output.select();
             document.execCommand('copy');
-            showStatus('✓ Copied to clipboard', 'success');
+            showStatus(msgs.copied, 'success');
         }
 
         function showStatus(message, type) {
@@ -285,4 +294,5 @@
             }
         });
     </script>
+    @endpush
 @endsection

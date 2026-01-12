@@ -1,240 +1,263 @@
 @extends('layouts.app')
 
-@section('title', $tool->name . ' - ' . config('app.name'))
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('yaml-to-json', 'meta.h1'))
+@section('meta_description', __tool('yaml-to-json', 'meta.subtitle'))
 
 @section('content')
-    <div class="max-w-6xl mx-auto">
-        <!-- Header -->
-        <!-- Header -->
-        <x-tool-hero :tool="$tool" icon="yaml-to-json-converter" />
+    <div class="max-w-7xl mx-auto">
+        <x-tool-hero :tool="$tool" icon="yaml-to-json" />
 
-        <!-- Converter Tool -->
-        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-8">
-            <!-- Action Buttons -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-indigo-200 mb-8">
             <div class="flex flex-wrap gap-3 mb-6">
-                <button onclick="convertYamlToJson()"
-                    class="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all">
-                    <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Convert Button -->
+                <button onclick="convertYaml()"
+                    class="px-8 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                     </svg>
-                    Convert
+                    <span>{{ __tool('yaml-to-json', 'editor.btn_convert', 'Convert') }}</span>
                 </button>
+
+                <!-- Copy JSON -->
                 <button onclick="copyJson()"
-                    class="px-6 py-2.5 bg-gray-100 text-gray-700 rounded-lg font-semibold hover:bg-gray-200 transition-all">
-                    <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="px-6 py-3 bg-gray-700 text-white rounded-xl hover:bg-gray-800 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
-                    Copy JSON
+                    <span>{{ __tool('yaml-to-json', 'editor.btn_copy', 'Copy JSON') }}</span>
                 </button>
+
+                <!-- Download -->
                 <button onclick="downloadJson()"
-                    class="px-6 py-2.5 bg-gray-100 text-gray-700 rounded-lg font-semibold hover:bg-gray-200 transition-all">
-                    <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="px-6 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                     </svg>
-                    Download
+                    <span>{{ __tool('yaml-to-json', 'editor.btn_download', 'Download') }}</span>
                 </button>
+
+                <!-- Example -->
                 <button onclick="loadExample()"
-                    class="px-6 py-2.5 bg-gray-100 text-gray-700 rounded-lg font-semibold hover:bg-gray-200 transition-all">
-                    <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
-                    Example
+                    <span>{{ __tool('yaml-to-json', 'editor.btn_example', 'Example') }}</span>
                 </button>
+
+                <!-- Clear -->
                 <button onclick="clearAll()"
-                    class="px-6 py-2.5 bg-gray-100 text-gray-700 rounded-lg font-semibold hover:bg-gray-200 transition-all">
-                    <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    class="px-6 py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
-                    Clear
+                    <span>{{ __tool('yaml-to-json', 'editor.btn_clear', 'Clear') }}</span>
                 </button>
             </div>
 
-            <!-- Input/Output Grid -->
+            <!-- Status Message -->
+            <div id="statusMessage" class="hidden mb-6 p-4 rounded-xl font-semibold"></div>
+
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- YAML Input -->
+                <!-- Input -->
                 <div>
-                    <label class="block text-sm font-bold text-gray-900 mb-2">YAML Input</label>
-                    <textarea id="yamlInput"
-                        class="w-full h-96 p-4 border-2 border-gray-200 rounded-lg font-mono text-sm focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all"
-                        placeholder="Paste your YAML data here..."></textarea>
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="yamlInput" class="form-label text-base mb-0">{{ __tool('yaml-to-json', 'editor.label_input', 'YAML Input') }}</label>
+                    </div>
+                    <textarea id="yamlInput" class="form-input font-mono text-sm min-h-[500px]"
+                        placeholder="{{ __tool('yaml-to-json', 'editor.ph_input', 'Paste your YAML data here...') }}"></textarea>
                 </div>
 
-                <!-- JSON Output -->
+                <!-- Output -->
                 <div>
-                    <label class="block text-sm font-bold text-gray-900 mb-2">JSON Output</label>
-                    <textarea id="jsonOutput" readonly
-                        class="w-full h-96 p-4 border-2 border-gray-200 rounded-lg font-mono text-sm bg-gray-50 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all"
-                        placeholder="Converted JSON will appear here..."></textarea>
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="jsonOutput" class="form-label text-base mb-0">{{ __tool('yaml-to-json', 'editor.label_output', 'JSON Output') }}</label>
+                    </div>
+                    <textarea id="jsonOutput" class="form-input font-mono text-sm min-h-[500px] bg-gray-50" readonly
+                        placeholder="{{ __tool('yaml-to-json', 'editor.ph_output', 'Converted JSON will appear here...') }}"></textarea>
                 </div>
             </div>
         </div>
 
         <!-- SEO Content -->
-        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-8">
-            <h2 class="text-3xl font-black text-gray-900 mb-6">🔄 About YAML to JSON Converter</h2>
-            <div class="prose prose-lg max-w-none">
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Convert YAML configuration files to JSON format instantly with our free online YAML to JSON converter.
-                    Perfect for developers working with configuration files, CI/CD pipelines, and data transformation.
-                </p>
-
-                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">✨ Key Features</h3>
-                <ul class="space-y-2 text-gray-700">
-                    <li>✅ <strong>Syntax Validation:</strong> Detects YAML syntax errors</li>
-                    <li>✅ <strong>Nested Structure:</strong> Preserves complex hierarchies</li>
-                    <li>✅ <strong>Array Support:</strong> Handles YAML lists and sequences</li>
-                    <li>✅ <strong>Pretty Formatting:</strong> Clean, readable JSON output</li>
-                    <li>✅ <strong>Instant Conversion:</strong> Real-time transformation</li>
-                    <li>✅ <strong>Privacy First:</strong> All processing in browser</li>
-                </ul>
-
-                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">🎯 Common Use Cases</h3>
-                <div class="grid md:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-5 border-2 border-purple-200">
-                        <h4 class="font-bold text-lg text-gray-900 mb-2">⚙️ Config Files</h4>
-                        <p class="text-gray-700 text-sm">Convert YAML configuration files to JSON for applications.</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-5 border-2 border-pink-200">
-                        <h4 class="font-bold text-lg text-gray-900 mb-2">🔄 CI/CD Pipelines</h4>
-                        <p class="text-gray-700 text-sm">Transform YAML pipeline configs to JSON format.</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-rose-50 to-red-50 rounded-xl p-5 border-2 border-rose-200">
-                        <h4 class="font-bold text-lg text-gray-900 mb-2">☸️ Kubernetes</h4>
-                        <p class="text-gray-700 text-sm">Convert Kubernetes YAML manifests to JSON.</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-fuchsia-50 to-purple-50 rounded-xl p-5 border-2 border-fuchsia-200">
-                        <h4 class="font-bold text-lg text-gray-900 mb-2">📦 Docker Compose</h4>
-                        <p class="text-gray-700 text-sm">Transform Docker Compose YAML to JSON.</p>
-                    </div>
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-8 md:p-12 border-2 border-indigo-100 shadow-2xl">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl shadow-xl mb-4">
+                    <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
                 </div>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{{ __tool('yaml-to-json', 'meta.h1', 'YAML to JSON Converter') }}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ __tool('yaml-to-json', 'meta.subtitle', 'Convert YAML configuration files to JSON format instantly') }}</p>
+            </div>
 
-                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">📚 How to Use YAML to JSON Converter</h3>
-                <ol
-                    class="space-y-3 text-gray-700 list-decimal list-inside pl-4 bg-gray-50 p-6 rounded-xl border border-gray-200">
-                    <li class="pl-2"><span class="font-semibold">Enter YAML:</span> Paste your YAML code into the input box
-                        on the left.</li>
-                    <li class="pl-2"><span class="font-semibold">Convert:</span> The tool automatically converts your code
-                        as you type (or click "Convert").</li>
-                    <li class="pl-2"><span class="font-semibold">Review:</span> Check the generated JSON output in the right
-                        panel.</li>
-                    <li class="pl-2"><span class="font-semibold">Copy/Download:</span> Use the buttons to copy the result or
-                        download it as a .json file.</li>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">ℹ️ {{ __tool('yaml-to-json', 'content.h2', 'About YAML to JSON Converter') }}</h3>
+            <p class="text-gray-700 leading-relaxed mb-8 text-lg">
+                {{ __tool('yaml-to-json', 'content.p1', 'Convert YAML configuration files to JSON format instantly with our free online YAML to JSON converter. Perfect for developers working with configuration files, CI/CD pipelines, and data transformation.') }}
+            </p>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ {{ __tool('yaml-to-json', 'content.features_title', 'Key Features') }}</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <!-- Syntax Validation -->
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">✅</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('yaml-to-json', 'content.features.syntax.title', 'Syntax Validation') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('yaml-to-json', 'content.features.syntax.desc', 'Detects YAML syntax errors') }}</p>
+                </div>
+                <!-- Nested Structure -->
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🌳</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('yaml-to-json', 'content.features.nested.title', 'Nested Structure') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('yaml-to-json', 'content.features.nested.desc', 'Preserves complex hierarchies') }}</p>
+                </div>
+                <!-- Array Support -->
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">📚</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('yaml-to-json', 'content.features.array.title', 'Array Support') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('yaml-to-json', 'content.features.array.desc', 'Handles YAML lists and sequences') }}</p>
+                </div>
+                <!-- Pretty Formatting -->
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🎨</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('yaml-to-json', 'content.features.pretty.title', 'Pretty Formatting') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('yaml-to-json', 'content.features.pretty.desc', 'Clean, readable JSON output') }}</p>
+                </div>
+                <!-- Instant Conversion -->
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">⚡</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('yaml-to-json', 'content.features.instant.title', 'Instant Conversion') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('yaml-to-json', 'content.features.instant.desc', 'Real-time transformation') }}</p>
+                </div>
+                <!-- Privacy First -->
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('yaml-to-json', 'content.features.privacy.title', 'Privacy First') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('yaml-to-json', 'content.features.privacy.desc', 'All processing in browser') }}</p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 {{ __tool('yaml-to-json', 'content.uses_title', 'Common Use Cases') }}</h3>
+            <div class="grid md:grid-cols-2 gap-6 mb-10">
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">⚙️ {{ __tool('yaml-to-json', 'content.uses.config.title', 'Config Files') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('yaml-to-json', 'content.uses.config.desc', 'Convert YAML configuration files to JSON for applications.') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">🚀 {{ __tool('yaml-to-json', 'content.uses.pipeline.title', 'CI/CD Pipelines') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('yaml-to-json', 'content.uses.pipeline.desc', 'Transform YAML pipeline configs to JSON format.') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">☸️ {{ __tool('yaml-to-json', 'content.uses.k8s.title', 'Kubernetes') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('yaml-to-json', 'content.uses.k8s.desc', 'Convert Kubernetes YAML manifests to JSON.') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">🐳 {{ __tool('yaml-to-json', 'content.uses.docker.title', 'Docker Compose') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('yaml-to-json', 'content.uses.docker.desc', 'Transform Docker Compose YAML to JSON.') }}</p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">📝 {{ __tool('yaml-to-json', 'content.how_to_title', 'How to Use YAML to JSON Converter') }}</h3>
+            <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8 shadow-lg">
+                <ol class="space-y-4">
+                    @foreach(__tool('yaml-to-json', 'content.how_to_steps') as $step)
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-3">{{ $loop->iteration }}</span>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">{{ $step['title'] }}</p>
+                                <p class="text-gray-700">{{ $step['desc'] }}</p>
+                            </div>
+                        </li>
+                    @endforeach
                 </ol>
+            </div>
 
-                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">❓ Frequently Asked Questions</h3>
-                <div class="space-y-4">
-                    <div class="border-l-4 border-purple-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
-                        <h4 class="font-bold text-gray-900">Is this tool free?</h4>
-                        <p class="text-gray-700 text-sm mt-1">Yes, this YAML to JSON converter is 100% free to use with no
-                            limits.</p>
-                    </div>
-                    <div class="border-l-4 border-purple-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
-                        <h4 class="font-bold text-gray-900">Does it support YAML comments?</h4>
-                        <p class="text-gray-700 text-sm mt-1">The converter processes the data structure, but comments are
-                            not preserved in JSON as JSON does not support comments.</p>
-                    </div>
-                    <div class="border-l-4 border-purple-500 pl-4 py-2 bg-gray-50 rounded-r-lg">
-                        <h4 class="font-bold text-gray-900">Is my data secure?</h4>
-                        <p class="text-gray-700 text-sm mt-1">Absolutely. The conversion happens entirely in your browser.
-                            No data is sent to any server.</p>
-                    </div>
-                </div>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ {{ __tool('yaml-to-json', 'content.faq_title', 'Frequently Asked Questions') }}</h3>
+            <div class="space-y-4">
+                @foreach(__tool('yaml-to-json', 'content.faq') as $key => $value)
+                    @if(str_starts_with($key, 'q'))
+                        <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                            <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ $value }}</h4>
+                            <p class="text-gray-700 leading-relaxed">{{ __tool('yaml-to-json', 'content.faq.a' . substr($key, 1)) }}</p>
+                        </div>
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>
 
+    @push('scripts')
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
     <script>
-        function convertYamlToJson() {
-            const yaml = document.getElementById('yamlInput').value;
+        const input = document.getElementById('yamlInput');
+        const output = document.getElementById('jsonOutput');
+
+        input.addEventListener('input', () => { convertYaml(); });
+
+        function convertYaml() {
+            const yaml = input.value;
             if (!yaml.trim()) {
-                showError('Please enter some YAML data to convert.');
+                output.value = '';
+                document.getElementById('statusMessage').classList.add('hidden');
                 return;
             }
 
             try {
                 const obj = jsyaml.load(yaml);
-                const json = JSON.stringify(obj, null, 2);
-                document.getElementById('jsonOutput').value = json;
-            } catch (error) {
-                showError('Error converting YAML: ' + error.message);
+                output.value = JSON.stringify(obj, null, 2);
+                document.getElementById('statusMessage').classList.add('hidden');
+            } catch (e) {
+                showStatus("{{ __tool('yaml-to-json', 'js.error_process', 'Error converting YAML: ') }}" + e.message, 'error');
             }
         }
 
         function copyJson() {
-            const output = document.getElementById('jsonOutput');
-            if (!output.value.trim()) {
-                showError('No JSON to copy. Please convert YAML first.');
+            if (!output.value) {
+                showStatus("{{ __tool('yaml-to-json', 'js.error_no_copy', 'No JSON to copy. Please convert YAML first.') }}", 'error');
                 return;
             }
-
             output.select();
             document.execCommand('copy');
-            showSuccess('JSON copied to clipboard!');
+            showStatus("{{ __tool('yaml-to-json', 'js.success_copy', 'JSON copied to clipboard!') }}", 'success');
         }
 
         function downloadJson() {
-            const json = document.getElementById('jsonOutput').value;
-            if (!json.trim()) {
-                showError('No JSON to download. Please convert YAML first.');
+            if (!output.value) {
+                showStatus("{{ __tool('yaml-to-json', 'js.error_no_download', 'No JSON to download. Please convert YAML first.') }}", 'error');
                 return;
             }
-
-            const blob = new Blob([json], {
-                type: 'application/json'
-            });
+            const blob = new Blob([output.value], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'converted.json';
-            document.body.appendChild(a);
+            a.download = 'data.json';
             a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
         }
 
         function clearAll() {
-            document.getElementById('yamlInput').value = '';
-            document.getElementById('jsonOutput').value = '';
+            input.value = '';
+            output.value = '';
+            document.getElementById('statusMessage').classList.add('hidden');
+            input.focus();
         }
 
         function loadExample() {
-            const example = `# Configuration Example
-                name: My Application
-                version: 1.0.0
-                database:
-                  host: localhost
-                  port: 5432
-                  credentials:
-                    username: admin
-                    password: secret
-                features:
-                  - authentication
-                  - logging
-                  - caching
-                settings:
-                  debug: true
-                  timeout: 30`;
-
-            document.getElementById('yamlInput').value = example;
-            convertYamlToJson();
+            input.value = "name: John Doe\nage: 30\nskills:\n  - PHP\n  - Laravel\n  - JavaScript";
+            convertYaml();
         }
 
-        // Auto-convert on input (debounced)
-        let debounceTimer;
-        document.getElementById('yamlInput').addEventListener('input', function () {
-            clearTimeout(debounceTimer);
-            debounceTimer = setTimeout(() => {
-                if (this.value.trim()) {
-                    convertYamlToJson();
-                }
-            }, 500);
-        });
+        function showStatus(message, type) {
+            const status = document.getElementById('statusMessage');
+            status.textContent = message;
+            status.className = type === 'success'
+                ? 'mb-6 p-4 rounded-xl font-semibold bg-green-100 text-green-800 border-2 border-green-300'
+                : 'mb-6 p-4 rounded-xl font-semibold bg-red-100 text-red-800 border-2 border-red-300';
+            status.classList.remove('hidden');
+        }
     </script>
+    @endpush
 @endsection

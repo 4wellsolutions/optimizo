@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title))
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('html-encoder', 'meta.h1'))
+@section('meta_description', __tool('html-encoder', 'meta.subtitle'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">
@@ -18,20 +18,20 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                     </svg>
-                    Encode HTML
+                    {{ __tool('html-encoder', 'editor.btn_encode') }}
                 </button>
                 <button onclick="setMode('decode')" id="decodeBtn"
                     class="flex-1 px-6 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all">
                     <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
                     </svg>
-                    Decode HTML
+                    {{ __tool('html-encoder', 'editor.btn_decode') }}
                 </button>
             </div>
 
             <!-- Input -->
             <div class="mb-6">
-                <label for="htmlInput" class="form-label text-base" id="inputLabel">Enter HTML to Encode</label>
+                <label for="htmlInput" class="form-label text-base" id="inputLabel">{{ __tool('html-encoder', 'editor.label_input_enc') }}</label>
                 <textarea id="htmlInput" class="form-input font-mono text-sm min-h-[300px]"
                     placeholder="<div class='example'>Hello & Welcome!</div>"></textarea>
             </div>
@@ -43,14 +43,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    <span id="processBtn">Encode HTML</span>
+                    <span id="processBtn">{{ __tool('html-encoder', 'editor.btn_process_enc') }}</span>
                 </button>
                 <button onclick="clearAll()"
                     class="px-6 py-3 bg-gray-500 text-white rounded-xl hover:bg-gray-600 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
-                    <span>Clear</span>
+                    <span>{{ __tool('html-encoder', 'editor.btn_clear') }}</span>
                 </button>
                 <button onclick="copyOutput()"
                     class="px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -58,7 +58,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
-                    <span>Copy</span>
+                    <span>{{ __tool('html-encoder', 'editor.btn_copy') }}</span>
                 </button>
             </div>
 
@@ -67,151 +67,92 @@
 
             <!-- Output -->
             <div class="mb-6">
-                <label for="htmlOutput" class="form-label text-base" id="outputLabel">Encoded HTML</label>
+                <label for="htmlOutput" class="form-label text-base" id="outputLabel">{{ __tool('html-encoder', 'editor.label_output_enc') }}</label>
                 <textarea id="htmlOutput" class="form-input font-mono text-sm min-h-[300px]" readonly
                     placeholder="Processed HTML will appear here..."></textarea>
             </div>
         </div>
 
         <!-- SEO Content -->
-        <div
-            class="bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl p-8 md:p-12 border-2 border-orange-100 shadow-2xl">
+        <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl p-8 md:p-12 border-2 border-orange-100 shadow-2xl">
             <div class="text-center mb-8">
-                <div
-                    class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-xl mb-4">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-xl mb-4">
                     <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Free HTML Encoder & Decoder</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Encode and decode HTML entities for safe web display</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{{ __tool('html-encoder', 'meta.h1') }}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ __tool('html-encoder', 'meta.subtitle') }}</p>
             </div>
 
-            <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free HTML Encoder & Decoder tool helps you convert special characters to HTML entities (encoding) or
-                convert HTML entities back to regular characters (decoding). Essential for preventing XSS attacks,
-                displaying code examples, and ensuring proper HTML rendering.
-            </p>
+            <p class="text-gray-700 leading-relaxed text-lg mb-8">{{ __tool('html-encoder', 'content.p1') }}</p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🔐 What is HTML Encoding?</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">
-                HTML encoding converts special characters like <,>, &, and quotes into their HTML entity equivalents (&lt;,
-                    &gt;, &amp;, etc.). This prevents browsers from interpreting them as HTML code and protects against XSS
-                    (Cross-Site Scripting) attacks.
-            </p>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">🔐 {{ __tool('html-encoder', 'content.what_title') }}</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">{{ __tool('html-encoder', 'content.what_desc') }}</p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ {{ __tool('html-encoder', 'content.features_title') }}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-orange-300 transition-all shadow-lg hover:shadow-xl">
-                    <div class="text-3xl mb-3">⚡</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Instant Conversion</h4>
-                    <p class="text-gray-600 text-sm">Encode or decode HTML in milliseconds</p>
-                </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
-                    <div class="text-3xl mb-3">🔄</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Bidirectional</h4>
-                    <p class="text-gray-600 text-sm">Encode to entities or decode back to original</p>
-                </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
-                    <div class="text-3xl mb-3">🔒</div>
-                    <h4 class="font-bold text-gray-900 mb-2">XSS Protection</h4>
-                    <p class="text-gray-600 text-sm">Prevent cross-site scripting attacks</p>
-                </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
-                    <div class="text-3xl mb-3">📋</div>
-                    <h4 class="font-bold text-gray-900 mb-2">One-Click Copy</h4>
-                    <p class="text-gray-600 text-sm">Copy encoded/decoded HTML instantly</p>
-                </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
-                    <div class="text-3xl mb-3">🆓</div>
-                    <h4 class="font-bold text-gray-900 mb-2">100% Free</h4>
-                    <p class="text-gray-600 text-sm">No limits, no registration required</p>
-                </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
-                    <div class="text-3xl mb-3">🌐</div>
-                    <h4 class="font-bold text-gray-900 mb-2">All Characters</h4>
-                    <p class="text-gray-600 text-sm">Handles all HTML special characters</p>
-                </div>
+                @foreach (['instant', 'bi', 'xss', 'copy', 'free', 'chars'] as $key)
+                    <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-orange-300 transition-all shadow-lg hover:shadow-xl">
+                        <div class="text-3xl mb-3">
+                            @switch($key)
+                                @case('instant') ⚡ @break
+                                @case('bi') 🔄 @break
+                                @case('xss') 🔒 @break
+                                @case('copy') 📋 @break
+                                @case('free') 🆓 @break
+                                @case('chars') 🌐 @break
+                            @endswitch
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">{{ __tool('html-encoder', 'content.features.' . $key . '.title') }}</h4>
+                        <p class="text-gray-600 text-sm">{{ __tool('html-encoder', 'content.features.' . $key . '.desc') }}</p>
+                    </div>
+                @endforeach
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Common Use Cases</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 {{ __tool('html-encoder', 'content.uses_title') }}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
-                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔒 Security</h4>
-                    <p class="text-gray-700 leading-relaxed">Prevent XSS attacks by encoding user input before displaying on
-                        web pages</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">💻 Code Display</h4>
-                    <p class="text-gray-700 leading-relaxed">Display HTML code examples without them being rendered by the
-                        browser</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📧 Email Templates</h4>
-                    <p class="text-gray-700 leading-relaxed">Encode special characters in email HTML to ensure proper
-                        rendering</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🗄️ Database Storage</h4>
-                    <p class="text-gray-700 leading-relaxed">Safely store HTML content in databases without breaking queries
-                    </p>
-                </div>
+                @foreach (['security', 'display', 'email', 'db'] as $key)
+                    <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                        <h4 class="font-bold text-lg text-gray-900 mb-3">
+                            @switch($key)
+                                @case('security') 🔒 @break
+                                @case('display') 💻 @break
+                                @case('email') 📧 @break
+                                @case('db') 🗄️ @break
+                            @endswitch
+                            {{ __tool('html-encoder', 'content.uses.' . $key . '.title') }}
+                        </h4>
+                        <p class="text-gray-700 leading-relaxed">{{ __tool('html-encoder', 'content.uses.' . $key . '.desc') }}</p>
+                    </div>
+                @endforeach
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">💡 HTML Entity Examples</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">💡 {{ __tool('html-encoder', 'content.examples_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <div class="space-y-4">
-                    <div>
-                        <p class="font-semibold text-gray-900 mb-2">Less Than (<):< /p>
-                                <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Original: "<" →
-                                        Encoded: "&lt;" </p>
-                    </div>
-                    <div>
-                        <p class="font-semibold text-gray-900 mb-2">Greater Than (>):</p>
-                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Original: ">" → Encoded: "&gt;"
-                        </p>
-                    </div>
-                    <div>
-                        <p class="font-semibold text-gray-900 mb-2">Ampersand (&):</p>
-                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Original: "&" → Encoded: "&amp;"
-                        </p>
-                    </div>
-                    <div>
-                        <p class="font-semibold text-gray-900 mb-2">Quote ("):</p>
-                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Original: '"' → Encoded: "&quot;"
-                        </p>
-                    </div>
+                    @foreach (['less', 'greater', 'amp', 'quote'] as $key)
+                        <div>
+                            <p class="font-semibold text-gray-900 mb-2">{{ __tool('html-encoder', 'content.examples.' . $key . '.title') }}</p>
+                            <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">{{ __tool('html-encoder', 'content.examples.' . $key . '.desc') }}</p>
+                        </div>
+                    @endforeach
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ {{ __tool('html-encoder', 'content.faq_title') }}</h3>
             <div class="space-y-4">
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Why should I encode HTML?</h4>
-                    <p class="text-gray-700 leading-relaxed">HTML encoding prevents browsers from interpreting special
-                        characters as HTML code, protecting against XSS attacks and ensuring content displays correctly.</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What characters need encoding?</h4>
-                    <p class="text-gray-700 leading-relaxed">Characters like <,>, &, ", and ' should be encoded when
-                            displaying user-generated content or code examples in HTML.</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my data secure?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! All encoding and decoding happens entirely in your browser
-                        using JavaScript. Your HTML never leaves your device.</p>
-                </div>
+                @foreach (['q1', 'q2', 'q3'] as $q)
+                    <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('html-encoder', 'content.faq.' . $q) }}</h4>
+                        <p class="text-gray-700 leading-relaxed">{{ __tool('html-encoder', 'content.faq.a' . substr($q, 1)) }}</p>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
 
+@push('scripts')
     <script>
         let currentMode = 'encode';
 
@@ -228,17 +169,17 @@
                 encodeBtn.classList.add('bg-orange-600', 'text-white');
                 decodeBtn.classList.remove('bg-orange-600', 'text-white');
                 decodeBtn.classList.add('bg-gray-200', 'text-gray-700');
-                inputLabel.textContent = 'Enter HTML to Encode';
-                outputLabel.textContent = 'Encoded HTML';
-                processBtn.textContent = 'Encode HTML';
+                inputLabel.textContent = "{{ __tool('html-encoder', 'editor.label_input_enc') }}";
+                outputLabel.textContent = "{{ __tool('html-encoder', 'editor.label_output_enc') }}";
+                processBtn.textContent = "{{ __tool('html-encoder', 'editor.btn_process_enc') }}";
             } else {
                 decodeBtn.classList.remove('bg-gray-200', 'text-gray-700');
                 decodeBtn.classList.add('bg-orange-600', 'text-white');
                 encodeBtn.classList.remove('bg-orange-600', 'text-white');
                 encodeBtn.classList.add('bg-gray-200', 'text-gray-700');
-                inputLabel.textContent = 'Enter HTML to Decode';
-                outputLabel.textContent = 'Decoded HTML';
-                processBtn.textContent = 'Decode HTML';
+                inputLabel.textContent = "{{ __tool('html-encoder', 'editor.label_input_dec') }}";
+                outputLabel.textContent = "{{ __tool('html-encoder', 'editor.label_output_dec') }}";
+                processBtn.textContent = "{{ __tool('html-encoder', 'editor.btn_process_dec') }}";
             }
             clearAll();
         }
@@ -248,7 +189,7 @@
             const output = document.getElementById('htmlOutput');
 
             if (!input) {
-                showStatus('Please enter HTML to process', 'error');
+                showStatus("{{ __tool('html-encoder', 'editor.error_empty') }}", 'error');
                 return;
             }
 
@@ -260,7 +201,7 @@
                         .replace(/>/g, '&gt;')
                         .replace(/"/g, '&quot;')
                         .replace(/'/g, '&#39;');
-                    showStatus('✓ HTML encoded successfully', 'success');
+                    showStatus("{{ __tool('html-encoder', 'editor.success_enc') }}", 'success');
                 } else {
                     output.value = input
                         .replace(/&lt;/g, '<')
@@ -268,10 +209,10 @@
                         .replace(/&quot;/g, '"')
                         .replace(/&#39;/g, "'")
                         .replace(/&amp;/g, '&');
-                    showStatus('✓ HTML decoded successfully', 'success');
+                    showStatus("{{ __tool('html-encoder', 'editor.success_dec') }}", 'success');
                 }
             } catch (error) {
-                showStatus('✗ Error processing HTML: ' + error.message, 'error');
+                showStatus("{{ __tool('html-encoder', 'editor.error_general') }}" + error.message, 'error');
             }
         }
 
@@ -284,12 +225,12 @@
         function copyOutput() {
             const output = document.getElementById('htmlOutput');
             if (!output.value) {
-                showStatus('No output to copy', 'error');
+                showStatus("{{ __tool('html-encoder', 'editor.error_no_copy') }}", 'error');
                 return;
             }
             output.select();
             document.execCommand('copy');
-            showStatus('✓ Copied to clipboard', 'success');
+            showStatus("{{ __tool('html-encoder', 'editor.success_copy') }}", 'success');
         }
 
         function showStatus(message, type) {
@@ -311,4 +252,5 @@
             }
         });
     </script>
+@endpush
 @endsection

@@ -7,188 +7,206 @@
 @endif
 
 @section('content')
-    <div class="max-w-4xl mx-auto">
-        <!-- Header -->
-        <x-tool-hero :tool="$tool" icon="case-converter" />
+    <div class="max-w-6xl mx-auto">
+        {{-- Hero Section --}}
+        <x-tool-hero :tool="$tool" />
 
-        <!-- Tool -->
-        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-orange-200 mb-8">
-            <div class="mb-6">
-                <label for="inputText" class="form-label text-base">Enter Text</label>
-                <textarea id="inputText" class="form-input min-h-[300px]" placeholder="Enter text to convert..."></textarea>
+        {{-- Tool Section --}}
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-indigo-200 mb-8">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label for="inputText" class="block text-sm font-semibold text-gray-700 mb-2">{!! __tool('case-converter', 'editor.label_input') !!}</label>
+                    <textarea id="inputText" rows="8"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200 font-mono text-sm resize-none"
+                        placeholder="{!! __tool('case-converter', 'editor.ph_input') !!}"></textarea>
+                </div>
+                <div>
+                    <label for="outputText" class="block text-sm font-semibold text-gray-700 mb-2">{!! __tool('case-converter', 'editor.label_output') !!}</label>
+                    <textarea id="outputText" rows="8" readonly
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl bg-gray-50 font-mono text-sm resize-none"
+                        placeholder="{!! __tool('case-converter', 'editor.label_output') !!}..."></textarea>
+                </div>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                <button onclick="convertCase('upper')" class="btn-primary justify-center py-3">
-                    UPPERCASE
+            <div class="flex flex-wrap gap-3 mt-6 justify-center">
+                <button onclick="convertCase('upper')"
+                    class="px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all font-semibold shadow-lg hover:shadow-xl uppercase tracking-wide">
+                    {!! __tool('case-converter', 'editor.btn_upper') !!}
                 </button>
-                <button onclick="convertCase('lower')" class="btn-primary justify-center py-3">
-                    lowercase
+                <button onclick="convertCase('lower')"
+                    class="px-6 py-3 bg-pink-600 text-white rounded-xl hover:bg-pink-700 transition-all font-semibold shadow-lg hover:shadow-xl lowercase tracking-wide">
+                    {!! __tool('case-converter', 'editor.btn_lower') !!}
                 </button>
-                <button onclick="convertCase('title')" class="btn-primary justify-center py-3">
-                    Title Case
+                <button onclick="convertCase('title')"
+                    class="px-6 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-all font-semibold shadow-lg hover:shadow-xl capitalize tracking-wide">
+                    {!! __tool('case-converter', 'editor.btn_title') !!}
                 </button>
-                <button onclick="convertCase('sentence')" class="btn-primary justify-center py-3">
-                    Sentence case
+                <button onclick="convertCase('sentence')"
+                    class="px-6 py-3 bg-teal-600 text-white rounded-xl hover:bg-teal-700 transition-all font-semibold shadow-lg hover:shadow-xl first-letter:uppercase tracking-wide">
+                    {!! __tool('case-converter', 'editor.btn_sentence') !!}
                 </button>
             </div>
 
-            <div>
-                <label class="form-label text-base">Result</label>
-                <textarea id="outputText" readonly class="form-input bg-gray-50 min-h-[300px]"></textarea>
-                <button onclick="copyResult()" class="mt-3 btn-primary justify-center w-full py-3">
-                    Copy Result
+            <div class="flex justify-center mt-6">
+                <button onclick="copyOutput()"
+                    class="px-8 py-3 bg-gray-800 text-white rounded-xl hover:bg-gray-900 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                    <span>{!! __tool('case-converter', 'editor.btn_copy') !!}</span>
                 </button>
-
-                @include('components.hero-actions')
             </div>
+            
+            <div id="statusMessage" class="hidden mt-4 p-4 rounded-xl font-semibold text-center max-w-md mx-auto"></div>
         </div>
 
-        <!-- SEO Content - Stunning Design -->
-        <div
-            class="bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 rounded-3xl p-8 md:p-12 mt-8 border-2 border-orange-100 shadow-2xl">
+        {{-- SEO Content --}}
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-8 md:p-12 border-2 border-indigo-100 shadow-2xl">
             <div class="text-center mb-8">
                 <div
-                    class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-xl mb-4">
-                    <svg class="w-9 h-9 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+                    class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl shadow-xl mb-4">
+                    <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129">
+                        </path>
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Text Case Converter</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Convert text between different cases instantly</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{!! __tool('case-converter', 'content.hero_title') !!}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{!! __tool('case-converter', 'content.hero_subtitle') !!}</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Convert text between uppercase, lowercase, title case, and sentence case with one click using our free
-                online case converter. Perfect for formatting text, fixing caps lock mistakes, preparing content for
-                different platforms, and ensuring consistent text styling. All processing happens instantly in your browser
-                - no data is sent to any server.
+                {!! __tool('case-converter', 'content.p1') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">📝 Available Case Types</h3>
-            <div class="grid md:grid-cols-2 gap-6 mb-10">
-                <div class="bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl p-6 text-white shadow-xl">
-                    <h4 class="font-bold text-2xl mb-3">🔠 UPPERCASE</h4>
-                    <p class="text-white/90 mb-3">Converts all letters to capital letters</p>
-                    <p class="text-white/80 text-sm">Example: "hello world" → "HELLO WORLD"</p>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('case-converter', 'content.types_title') !!}</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('case-converter', 'content.types.upper.title') !!}</h4>
+                    <p class="text-gray-600 text-sm mb-2">{!! __tool('case-converter', 'content.types.upper.desc') !!}</p>
+                    <code class="bg-gray-100 p-1 rounded text-xs block">{!! __tool('case-converter', 'content.types.upper.example') !!}</code>
                 </div>
-                <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
-                    <h4 class="font-bold text-2xl mb-3">🔡 lowercase</h4>
-                    <p class="text-white/90 mb-3">Converts all letters to small letters</p>
-                    <p class="text-white/80 text-sm">Example: "HELLO WORLD" → "hello world"</p>
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('case-converter', 'content.types.lower.title') !!}</h4>
+                    <p class="text-gray-600 text-sm mb-2">{!! __tool('case-converter', 'content.types.lower.desc') !!}</p>
+                    <code class="bg-gray-100 p-1 rounded text-xs block">{!! __tool('case-converter', 'content.types.lower.example') !!}</code>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-orange-200 shadow-lg">
-                    <h4 class="font-bold text-xl text-gray-900 mb-3">📖 Title Case</h4>
-                    <p class="text-gray-700 mb-3">Capitalizes the first letter of each word</p>
-                    <p class="text-gray-600 text-sm">Example: "hello world" → "Hello World"</p>
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('case-converter', 'content.types.title.title') !!}</h4>
+                    <p class="text-gray-600 text-sm mb-2">{!! __tool('case-converter', 'content.types.title.desc') !!}</p>
+                    <code class="bg-gray-100 p-1 rounded text-xs block">{!! __tool('case-converter', 'content.types.title.example') !!}</code>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-red-200 shadow-lg">
-                    <h4 class="font-bold text-xl text-gray-900 mb-3">✍️ Sentence case</h4>
-                    <p class="text-gray-700 mb-3">Capitalizes the first letter of each sentence</p>
-                    <p class="text-gray-600 text-sm">Example: "hello. world here." → "Hello. World here."</p>
+                <div
+                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-teal-300 transition-all shadow-lg hover:shadow-xl">
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('case-converter', 'content.types.sentence.title') !!}</h4>
+                    <p class="text-gray-600 text-sm mb-2">{!! __tool('case-converter', 'content.types.sentence.desc') !!}</p>
+                    <code class="bg-gray-100 p-1 rounded text-xs block">{!! __tool('case-converter', 'content.types.sentence.example') !!}</code>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Common Use Cases</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-orange-300 transition-all shadow-lg">
-                    <div class="text-3xl mb-3">⌨️</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Fix Caps Lock</h4>
-                    <p class="text-gray-600 text-sm">Quickly fix text typed with caps lock accidentally enabled</p>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('case-converter', 'content.uses_title') !!}</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('case-converter', 'content.uses.caps.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.uses.caps.desc') !!}</p>
                 </div>
-                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg">
-                    <div class="text-3xl mb-3">📄</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Format Documents</h4>
-                    <p class="text-gray-600 text-sm">Ensure consistent capitalization in documents and reports</p>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('case-converter', 'content.uses.docs.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.uses.docs.desc') !!}</p>
                 </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg">
-                    <div class="text-3xl mb-3">📱</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Social Media</h4>
-                    <p class="text-gray-600 text-sm">Format posts and captions for different platforms</p>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('case-converter', 'content.uses.social.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.uses.social.desc') !!}</p>
                 </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-orange-300 transition-all shadow-lg">
-                    <div class="text-3xl mb-3">💼</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Professional Emails</h4>
-                    <p class="text-gray-600 text-sm">Ensure proper capitalization in business communications</p>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('case-converter', 'content.uses.email.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.uses.email.desc') !!}</p>
                 </div>
-                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg">
-                    <div class="text-3xl mb-3">📝</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Content Writing</h4>
-                    <p class="text-gray-600 text-sm">Format headings, titles, and body text consistently</p>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('case-converter', 'content.uses.content.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.uses.content.desc') !!}</p>
                 </div>
-                <div
-                    class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg">
-                    <div class="text-3xl mb-3">🔤</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Data Cleaning</h4>
-                    <p class="text-gray-600 text-sm">Standardize text data for databases and spreadsheets</p>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('case-converter', 'content.uses.data.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.uses.data.desc') !!}</p>
                 </div>
             </div>
 
-            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-2xl p-8 mb-10">
-                <h4 class="font-bold text-blue-900 mb-3 flex items-center gap-3 text-xl">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    💡 Capitalization Best Practices
-                </h4>
-                <ul class="text-blue-800 leading-relaxed space-y-2">
-                    <li>✅ Use sentence case for body text and paragraphs</li>
-                    <li>✅ Use title case for headings, titles, and headlines</li>
-                    <li>✅ Use uppercase sparingly - only for acronyms or emphasis</li>
-                    <li>✅ Avoid mixing case styles within the same document</li>
-                    <li>✅ Follow platform-specific guidelines (e.g., Twitter, LinkedIn)</li>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('case-converter', 'content.tips_title') !!}</h3>
+            <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-indigo-500">➜</span>
+                        <span>{!! __tool('case-converter', 'content.tips_list.1') !!}</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-indigo-500">➜</span>
+                        <span>{!! __tool('case-converter', 'content.tips_list.2') !!}</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-indigo-500">➜</span>
+                        <span>{!! __tool('case-converter', 'content.tips_list.3') !!}</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-indigo-500">➜</span>
+                        <span>{!! __tool('case-converter', 'content.tips_list.4') !!}</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-indigo-500">➜</span>
+                        <span>{!! __tool('case-converter', 'content.tips_list.5') !!}</span>
+                    </li>
                 </ul>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('case-converter', 'content.faq_title') !!}</h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What is the difference between title case and sentence
-                        case?</h4>
-                    <p class="text-gray-700 leading-relaxed">Title case capitalizes the first letter of every word (e.g.,
-                        "Hello World"), while sentence case only capitalizes the first letter of each sentence (e.g., "Hello
-                        world. This is great.").</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('case-converter', 'content.faq.q1') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.faq.a1') !!}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I convert multiple paragraphs at once?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! Our case converter handles text of any length, including
-                        multiple paragraphs, sentences, and even entire documents. Simply paste your text and convert.</p>
+                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('case-converter', 'content.faq.q2') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.faq.a2') !!}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Does the tool preserve formatting and line breaks?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes, the case converter preserves all formatting, line breaks,
-                        and special characters. Only the letter case is changed - everything else remains intact.</p>
+                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('case-converter', 'content.faq.q3') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.faq.a3') !!}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my text sent to a server?</h4>
-                    <p class="text-gray-700 leading-relaxed">No! All text conversion happens entirely in your browser using
-                        JavaScript. Your text never leaves your device, ensuring complete privacy and security.</p>
+                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('case-converter', 'content.faq.q4') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.faq.a4') !!}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">When should I use each case type?</h4>
-                    <p class="text-gray-700 leading-relaxed">Use uppercase for acronyms and emphasis, lowercase for URLs and
-                        code, title case for headings and titles, and sentence case for body text and natural writing.
-                        Choose based on your content type and platform requirements.</p>
+                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('case-converter', 'content.faq.q5') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('case-converter', 'content.faq.a5') !!}</p>
                 </div>
             </div>
         </div>
     </div>
 
+    @push('scripts')
     <script>
+        const caseMsgs = {
+            empty: "{!! __tool('case-converter', 'js.error_empty') !!}",
+            noCopy: "{!! __tool('case-converter', 'js.no_copy') !!}",
+            copied: "{!! __tool('case-converter', 'js.copied') !!}"
+        };
+
         function convertCase(type) {
             const input = document.getElementById('inputText').value;
-            if (!input) {
-                showError('Please enter some text');
+            const output = document.getElementById('outputText');
+
+            if (!input.trim()) {
+                showStatus(caseMsgs.empty, 'error');
                 return;
             }
 
             let result = '';
+
             switch (type) {
                 case 'upper':
                     result = input.toUpperCase();
@@ -197,29 +215,46 @@
                     result = input.toLowerCase();
                     break;
                 case 'title':
-                    result = input.toLowerCase().replace(/\b\w/g, l => l.toUpperCase());
+                    result = input.replace(/\w\S*/g, (txt) => {
+                        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                    });
                     break;
                 case 'sentence':
-                    result = input.toLowerCase().replace(/(^\s*\w|[.!?]\s*\w)/g, l => l.toUpperCase());
+                    result = input.replace(/(^\s*\w|[\.\!\?]\s*\w)/g, (c) => {
+                        return c.toUpperCase();
+                    });
                     break;
             }
 
-            document.getElementById('outputText').value = result;
+            output.value = result;
         }
 
-        function copyResult() {
+        function copyOutput() {
             const output = document.getElementById('outputText');
-            if (!output.value) {
-                showError('No text to copy');
+
+            if (!output.value.trim()) {
+                showStatus(caseMsgs.noCopy, 'error');
                 return;
             }
+
             output.select();
             document.execCommand('copy');
+            showStatus(caseMsgs.copied, 'success');
+        }
 
-            const btn = event.target;
-            const originalText = btn.textContent;
-            btn.textContent = 'Copied!';
-            setTimeout(() => btn.textContent = originalText, 2000);
+        function showStatus(message, type) {
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.textContent = message;
+            statusMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'border-green-300', 'border-red-300');
+
+            if (type === 'success') {
+                statusMessage.classList.add('bg-green-100', 'text-green-800', 'border-2', 'border-green-300');
+            } else {
+                statusMessage.classList.add('bg-red-100', 'text-red-800', 'border-2', 'border-red-300');
+            }
+            
+            statusMessage.classList.remove('hidden');
         }
     </script>
+    @endpush
 @endsection

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->name . ' - ' . config('app.name'))
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('csv-to-tsv', 'meta.h1'))
+@section('meta_description', __tool('csv-to-tsv', 'meta.subtitle'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">
@@ -13,36 +13,38 @@
                         viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg><span>Convert to TSV</span></button>
+                    </svg><span>{!! __tool('csv-to-tsv', 'editor.btn_convert') !!}</span></button>
                 <button onclick="clearAll()"
                     class="px-6 py-3 bg-gray-500 text-white rounded-xl hover:bg-gray-600 transition-all font-semibold shadow-lg flex items-center gap-2"><svg
                         class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg><span>Clear</span></button>
+                    </svg><span>{!! __tool('csv-to-tsv', 'editor.btn_clear') !!}</span></button>
                 <button onclick="copyOutput()"
                     class="px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-all font-semibold shadow-lg flex items-center gap-2"><svg
                         class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                    </svg><span>Copy</span></button>
+                    </svg><span>{!! __tool('csv-to-tsv', 'editor.btn_copy') !!}</span></button>
                 <button onclick="loadExample()"
                     class="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all font-semibold shadow-lg flex items-center gap-2"><svg
                         class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg><span>Example</span></button>
+                    </svg><span>{!! __tool('csv-to-tsv', 'editor.btn_example') !!}</span></button>
             </div>
             <div id="statusMessage" class="hidden mb-6 p-4 rounded-xl font-semibold"></div>
             <div class="grid md:grid-cols-2 gap-6">
                 <div>
-                    <label for="csvInput" class="form-label text-base">Enter CSV Data</label>
+                    <label for="csvInput"
+                        class="form-label text-base">{!! __tool('csv-to-tsv', 'editor.label_input') !!}</label>
                     <textarea id="csvInput" class="form-input font-mono text-sm min-h-[400px]"
-                        placeholder="name,age,city&#10;John,30,New York"></textarea>
+                        placeholder="{!! __tool('csv-to-tsv', 'editor.ph_input') !!}"></textarea>
                 </div>
                 <div>
-                    <label for="tsvOutput" class="form-label text-base">TSV Output</label>
+                    <label for="tsvOutput"
+                        class="form-label text-base">{!! __tool('csv-to-tsv', 'editor.label_output') !!}</label>
                     <textarea id="tsvOutput" class="form-input font-mono text-sm min-h-[400px]" readonly
-                        placeholder="Converted TSV will appear here..."></textarea>
+                        placeholder="{!! __tool('csv-to-tsv', 'editor.ph_output') !!}"></textarea>
                 </div>
             </div>
         </div>
@@ -57,176 +59,174 @@
                             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Free CSV to TSV Converter</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Transform Comma-Separated Values into Tab-Separated
-                    format</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{!! __tool('csv-to-tsv', 'content.hero_title') !!}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{!! __tool('csv-to-tsv', 'content.hero_subtitle') !!}</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free CSV to TSV converter transforms Comma-Separated Values files into Tab-Separated Values format.
-                Perfect for data processing, database imports, and converting spreadsheet data to TSV format for
-                applications that require tab delimiters instead of commas.
+                {!! __tool('csv-to-tsv', 'content.p1') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🔐 What is CSV to TSV Conversion?</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('csv-to-tsv', 'content.what_title') !!}</h3>
             <p class="text-gray-700 leading-relaxed mb-8">
-                CSV to TSV conversion transforms data from Comma-Separated Values format (where columns are separated by
-                commas) to Tab-Separated Values format (where columns are separated by tabs). TSV is preferred in some
-                applications because it avoids conflicts with commas that might appear in the data itself.
+                {!! __tool('csv-to-tsv', 'content.what_desc') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('csv-to-tsv', 'content.features_title') !!}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-lime-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚡</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Lightning Fast</h4>
-                    <p class="text-gray-600 text-sm">Convert CSV to TSV instantly</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('csv-to-tsv', 'content.features.fast.title') !!}
+                    </h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('csv-to-tsv', 'content.features.fast.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔒</div>
-                    <h4 class="font-bold text-gray-900 mb-2">100% Private</h4>
-                    <p class="text-gray-600 text-sm">All processing happens in your browser</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('csv-to-tsv', 'content.features.private.title') !!}
+                    </h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('csv-to-tsv', 'content.features.private.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-emerald-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📋</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Quick Copy</h4>
-                    <p class="text-gray-600 text-sm">Copy TSV output to clipboard instantly</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('csv-to-tsv', 'content.features.copy.title') !!}
+                    </h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('csv-to-tsv', 'content.features.copy.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🎯</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Smart Conversion</h4>
-                    <p class="text-gray-600 text-sm">Handles quoted values and special characters</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('csv-to-tsv', 'content.features.smart.title') !!}
+                    </h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('csv-to-tsv', 'content.features.smart.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🆓</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Completely Free</h4>
-                    <p class="text-gray-600 text-sm">No limits, no registration needed</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('csv-to-tsv', 'content.features.free.title') !!}
+                    </h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('csv-to-tsv', 'content.features.free.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🗄️</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Database Ready</h4>
-                    <p class="text-gray-600 text-sm">Perfect for database imports and data processing</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('csv-to-tsv', 'content.features.db.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('csv-to-tsv', 'content.features.db.desc') !!}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Common Use Cases</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('csv-to-tsv', 'content.uses_title') !!}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🗄️ Database Import</h4>
-                    <p class="text-gray-700 leading-relaxed">Convert CSV to TSV for importing into databases that prefer
-                        tab-delimited format.</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('csv-to-tsv', 'content.uses.db.title') !!}
+                    </h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.uses.db.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📊 Data Processing</h4>
-                    <p class="text-gray-700 leading-relaxed">Transform CSV to TSV for data processing tools and ETL
-                        pipelines that require tab delimiters.</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('csv-to-tsv', 'content.uses.process.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.uses.process.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔧 Legacy Systems</h4>
-                    <p class="text-gray-700 leading-relaxed">Convert CSV files to TSV format for legacy applications that
-                        only support tab-separated data.</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('csv-to-tsv', 'content.uses.legacy.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.uses.legacy.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📈 Data Analysis</h4>
-                    <p class="text-gray-700 leading-relaxed">Transform CSV to TSV for analysis tools that prefer
-                        tab-delimited format.</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('csv-to-tsv', 'content.uses.analysis.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.uses.analysis.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔄 Format Standardization</h4>
-                    <p class="text-gray-700 leading-relaxed">Standardize data formats by converting CSV to TSV for specific
-                        system requirements.</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('csv-to-tsv', 'content.uses.standard.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.uses.standard.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📄 Data Export</h4>
-                    <p class="text-gray-700 leading-relaxed">Convert CSV exports to TSV for applications that require
-                        tab-separated format.</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('csv-to-tsv', 'content.uses.export.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.uses.export.desc') !!}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">📝 How to Convert CSV to TSV</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('csv-to-tsv', 'content.how_title') !!}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8 shadow-lg">
                 <ol class="space-y-4">
                     <li class="flex items-start">
                         <span
                             class="flex-shrink-0 w-8 h-8 bg-lime-600 text-white rounded-full flex items-center justify-center font-bold mr-3">1</span>
                         <div>
-                            <p class="font-semibold text-gray-900 mb-1">Paste CSV Data</p>
-                            <p class="text-gray-700">Copy your Comma-Separated Values data and paste it into the left input
-                                field.</p>
+                            <p class="font-semibold text-gray-900 mb-1">
+                                {!! __tool('csv-to-tsv', 'content.how_steps.1.title') !!}</p>
+                            <p class="text-gray-700">{!! __tool('csv-to-tsv', 'content.how_steps.1.desc') !!}</p>
                         </div>
                     </li>
                     <li class="flex items-start">
                         <span
                             class="flex-shrink-0 w-8 h-8 bg-lime-600 text-white rounded-full flex items-center justify-center font-bold mr-3">2</span>
                         <div>
-                            <p class="font-semibold text-gray-900 mb-1">Click Convert</p>
-                            <p class="text-gray-700">Press "Convert to TSV" to transform your CSV into TSV format.</p>
+                            <p class="font-semibold text-gray-900 mb-1">
+                                {!! __tool('csv-to-tsv', 'content.how_steps.2.title') !!}</p>
+                            <p class="text-gray-700">{!! __tool('csv-to-tsv', 'content.how_steps.2.desc') !!}</p>
                         </div>
                     </li>
                     <li class="flex items-start">
                         <span
                             class="flex-shrink-0 w-8 h-8 bg-lime-600 text-white rounded-full flex items-center justify-center font-bold mr-3">3</span>
                         <div>
-                            <p class="font-semibold text-gray-900 mb-1">Copy and Use</p>
-                            <p class="text-gray-700">The TSV output appears on the right. Click "Copy" to use it in your
-                                application.</p>
+                            <p class="font-semibold text-gray-900 mb-1">
+                                {!! __tool('csv-to-tsv', 'content.how_steps.3.title') !!}</p>
+                            <p class="text-gray-700">{!! __tool('csv-to-tsv', 'content.how_steps.3.desc') !!}</p>
                         </div>
                     </li>
                 </ol>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">💡 Conversion Example</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('csv-to-tsv', 'content.example_title') !!}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8 shadow-lg">
                 <div class="grid md:grid-cols-2 gap-4">
                     <div>
-                        <p class="text-sm font-semibold text-gray-700 mb-2">CSV Input:</p>
+                        <p class="text-sm font-semibold text-gray-700 mb-2">
+                            {!! __tool('csv-to-tsv', 'content.example_input') !!}</p>
                         <pre class="bg-gray-50 p-3 rounded text-sm overflow-x-auto"><code>name,age,city
-        John,30,New York</code></pre>
+            John,30,New York</code></pre>
                     </div>
                     <div>
-                        <p class="text-sm font-semibold text-gray-700 mb-2">TSV Output:</p>
+                        <p class="text-sm font-semibold text-gray-700 mb-2">
+                            {!! __tool('csv-to-tsv', 'content.example_output') !!}</p>
                         <pre class="bg-gray-50 p-3 rounded text-sm overflow-x-auto"><code>name	age	city
-        John	30	New York</code></pre>
+            John	30	New York</code></pre>
                     </div>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('csv-to-tsv', 'content.faq_title') !!}</h3>
             <div class="space-y-4 mb-8">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Why convert CSV to TSV?</h4>
-                    <p class="text-gray-700 leading-relaxed">TSV format avoids conflicts with commas that might appear in
-                        the data itself, making it more reliable for certain applications and databases.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('csv-to-tsv', 'content.faq.q1') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.faq.a1') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my data secure?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! All conversion happens in your browser using JavaScript.
-                        Your CSV data never leaves your device.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('csv-to-tsv', 'content.faq.q2') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.faq.a2') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I convert large CSV files?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes, you can convert CSV files of any size. Very large files
-                        may take a few seconds to process.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('csv-to-tsv', 'content.faq.q3') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.faq.a3') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">How are quoted values handled?</h4>
-                    <p class="text-gray-700 leading-relaxed">Quoted values in CSV are properly parsed and converted to TSV
-                        format, removing quotes where appropriate.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('csv-to-tsv', 'content.faq.q4') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.faq.a4') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Will tabs in my data cause issues?</h4>
-                    <p class="text-gray-700 leading-relaxed">If your CSV data contains tab characters, they will be
-                        preserved in the TSV output. Ensure your data doesn't have unexpected tabs.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('csv-to-tsv', 'content.faq.q5') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('csv-to-tsv', 'content.faq.a5') !!}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎓 Best Practices</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('csv-to-tsv', 'content.tips_title') !!}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
                 <ul class="space-y-3">
                     <li class="flex items-start">
@@ -234,59 +234,56 @@
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span class="text-gray-700"><strong>Verify CSV format:</strong> Ensure your CSV is properly
-                            formatted before conversion.</span>
+                        <span class="text-gray-700">{!! __tool('csv-to-tsv', 'content.tips_list.1') !!}</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span class="text-gray-700"><strong>Check for tabs:</strong> Ensure your CSV data doesn't contain
-                            unexpected tab characters.</span>
+                        <span class="text-gray-700">{!! __tool('csv-to-tsv', 'content.tips_list.2') !!}</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span class="text-gray-700"><strong>Test with examples:</strong> Use the "Example" button to
-                            understand the conversion format.</span>
+                        <span class="text-gray-700">{!! __tool('csv-to-tsv', 'content.tips_list.3') !!}</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span class="text-gray-700"><strong>Validate output:</strong> Always verify the TSV output matches
-                            your expectations.</span>
+                        <span class="text-gray-700">{!! __tool('csv-to-tsv', 'content.tips_list.4') !!}</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span class="text-gray-700"><strong>Preserve headers:</strong> Include column headers in your CSV
-                            for better TSV structure.</span>
+                        <span class="text-gray-700">{!! __tool('csv-to-tsv', 'content.tips_list.5') !!}</span>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <script>
-        function convert() {
-            const input = document.getElementById('csvInput').value;
-            if (!input.trim()) { showStatus('Please enter CSV data', 'error'); return; }
-            try {
-                const tsv = input.split('\n').map(line => line.split(',').join('\t')).join('\n');
-                document.getElementById('tsvOutput').value = tsv;
-                showStatus('✓ CSV converted to TSV successfully', 'success');
-            } catch (error) { showStatus('✗ Error: ' + error.message, 'error'); }
-        }
-        function clearAll() { document.getElementById('csvInput').value = ''; document.getElementById('tsvOutput').value = ''; document.getElementById('statusMessage').classList.add('hidden'); }
-        function copyOutput() { const output = document.getElementById('tsvOutput'); if (!output.value) { showStatus('No output to copy', 'error'); return; } output.select(); document.execCommand('copy'); showStatus('✓ Copied to clipboard', 'success'); }
-        function loadExample() { document.getElementById('csvInput').value = 'name,age,city\nJohn Doe,30,New York\nJane Smith,25,London'; convert(); }
-        function showStatus(message, type) { const statusMessage = document.getElementById('statusMessage'); statusMessage.textContent = message; statusMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'border-green-300', 'border-red-300'); if (type === 'success') { statusMessage.classList.add('bg-green-100', 'text-green-800', 'border-2', 'border-green-300'); } else { statusMessage.classList.add('bg-red-100', 'text-red-800', 'border-2', 'border-red-300'); } }
-    </script>
+    @push('scripts')
+        <script>
+            function convert() {
+                const input = document.getElementById('csvInput').value;
+                if (!input.trim()) { showStatus("{!! __tool('csv-to-tsv', 'js.error_empty') !!}", 'error'); return; }
+                try {
+                    const tsv = input.split('\n').map(line => line.split(',').join('\t')).join('\n');
+                    document.getElementById('tsvOutput').value = tsv;
+                    showStatus("{!! __tool('csv-to-tsv', 'js.success_convert') !!}", 'success');
+                } catch (error) { showStatus("{!! __tool('csv-to-tsv', 'js.error_general') !!}" + error.message, 'error'); }
+            }
+            function clearAll() { document.getElementById('csvInput').value = ''; document.getElementById('tsvOutput').value = ''; document.getElementById('statusMessage').classList.add('hidden'); }
+            function copyOutput() { const output = document.getElementById('tsvOutput'); if (!output.value) { showStatus("{!! __tool('csv-to-tsv', 'js.error_no_copy') !!}", 'error'); return; } output.select(); document.execCommand('copy'); showStatus("{!! __tool('csv-to-tsv', 'js.success_copy') !!}", 'success'); }
+            function loadExample() { document.getElementById('csvInput').value = 'name,age,city\nJohn Doe,30,New York\nJane Smith,25,London'; convert(); }
+            function showStatus(message, type) { const statusMessage = document.getElementById('statusMessage'); statusMessage.textContent = message; statusMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'border-green-300', 'border-red-300'); if (type === 'success') { statusMessage.classList.add('bg-green-100', 'text-green-800', 'border-2', 'border-green-300'); } else { statusMessage.classList.add('bg-red-100', 'text-red-800', 'border-2', 'border-red-300'); } }
+        </script>
+    @endpush
 @endsection

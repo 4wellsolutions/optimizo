@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('html-encoder-decoder', 'meta.h1'))
+@section('meta_description', __tool('html-encoder-decoder', 'meta.subtitle'))
 @if($tool->meta_keywords)
 @section('meta_keywords', $tool->meta_keywords)
 @endif
@@ -21,22 +21,23 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                     </svg>
-                    Encode HTML
+                    {!! __tool('html-encoder-decoder', 'editor.mode_encode') !!}
                 </button>
                 <button onclick="setMode('decode')" id="decodeBtn"
                     class="flex-1 px-6 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all">
                     <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
                     </svg>
-                    Decode HTML
+                    {!! __tool('html-encoder-decoder', 'editor.mode_decode') !!}
                 </button>
             </div>
 
             <!-- Input -->
             <div class="mb-6">
-                <label for="htmlInput" class="form-label text-base" id="inputLabel">Enter HTML to Encode</label>
+                <label for="htmlInput" class="form-label text-base"
+                    id="inputLabel">{!! __tool('html-encoder-decoder', 'editor.label_input_encode') !!}</label>
                 <textarea id="htmlInput" class="form-input font-mono text-sm min-h-[300px]"
-                    placeholder="<div>Hello & Welcome</div>"></textarea>
+                    placeholder="{!! __tool('html-encoder-decoder', 'editor.ph_input_encode') !!}"></textarea>
             </div>
 
             <!-- Action Buttons -->
@@ -46,14 +47,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    <span id="processBtn">Encode HTML</span>
+                    <span id="processBtn">{!! __tool('html-encoder-decoder', 'editor.btn_encode') !!}</span>
                 </button>
                 <button onclick="clearAll()"
                     class="px-6 py-3 bg-gray-500 text-white rounded-xl hover:bg-gray-600 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
-                    <span>Clear</span>
+                    <span>{!! __tool('html-encoder-decoder', 'editor.btn_clear') !!}</span>
                 </button>
                 <button onclick="copyOutput()"
                     class="px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -61,7 +62,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
-                    <span>Copy</span>
+                    <span>{!! __tool('html-encoder-decoder', 'editor.btn_copy') !!}</span>
                 </button>
             </div>
 
@@ -70,9 +71,10 @@
 
             <!-- Output -->
             <div class="mb-6">
-                <label for="htmlOutput" class="form-label text-base" id="outputLabel">Encoded HTML</label>
+                <label for="htmlOutput" class="form-label text-base"
+                    id="outputLabel">{!! __tool('html-encoder-decoder', 'editor.label_output_encode') !!}</label>
                 <textarea id="htmlOutput" class="form-input font-mono text-sm min-h-[300px]" readonly
-                    placeholder="Processed HTML will appear here..."></textarea>
+                    placeholder="{!! __tool('html-encoder-decoder', 'editor.ph_output') !!}"></textarea>
             </div>
         </div>
 
@@ -87,275 +89,273 @@
                             d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Free HTML Encoder & Decoder</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Encode and decode HTML entities to prevent XSS attacks
-                </p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">
+                    {!! __tool('html-encoder-decoder', 'content.hero_title') !!}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    {!! __tool('html-encoder-decoder', 'content.hero_subtitle') !!}</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free URL Encoder & Decoder tool helps you encode special characters in URLs for safe transmission over
-                the internet, or decode encoded URLs back to their original format. Perfect for developers, SEO
-                professionals, and anyone working with web URLs. 100% free, client-side processing ensures your data stays
-                private.
+                {!! __tool('html-encoder-decoder', 'content.p1') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🔗 What is URL Encoding?</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('html-encoder-decoder', 'content.what_title') !!}
+            </h3>
             <p class="text-gray-700 leading-relaxed mb-6">
-                URL encoding (also called percent-encoding) converts special characters in URLs into a format that can be
-                transmitted over the internet. Spaces become %20, special characters like & become %26, and so on. This
-                ensures URLs work correctly across all browsers and systems.
+                {!! __tool('html-encoder-decoder', 'content.what_desc') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">
+                {!! __tool('html-encoder-decoder', 'content.features_title') !!}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚡</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Instant Conversion</h4>
-                    <p class="text-gray-600 text-sm">Encode or decode URLs in milliseconds</p>
+                    <h4 class="font-bold text-gray-900 mb-2">
+                        {!! __tool('html-encoder-decoder', 'content.features.fast.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('html-encoder-decoder', 'content.features.fast.desc') !!}
+                    </p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔄</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Bidirectional</h4>
-                    <p class="text-gray-600 text-sm">Encode to URL format or decode back to original</p>
+                    <h4 class="font-bold text-gray-900 mb-2">
+                        {!! __tool('html-encoder-decoder', 'content.features.bidirectional.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">
+                        {!! __tool('html-encoder-decoder', 'content.features.bidirectional.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔒</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Privacy First</h4>
-                    <p class="text-gray-600 text-sm">All processing happens in your browser</p>
+                    <h4 class="font-bold text-gray-900 mb-2">
+                        {!! __tool('html-encoder-decoder', 'content.features.privacy.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('html-encoder-decoder', 'content.features.privacy.desc') !!}
+                    </p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📋</div>
-                    <h4 class="font-bold text-gray-900 mb-2">One-Click Copy</h4>
-                    <p class="text-gray-600 text-sm">Copy encoded/decoded URLs instantly</p>
+                    <h4 class="font-bold text-gray-900 mb-2">
+                        {!! __tool('html-encoder-decoder', 'content.features.copy.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('html-encoder-decoder', 'content.features.copy.desc') !!}
+                    </p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🆓</div>
-                    <h4 class="font-bold text-gray-900 mb-2">100% Free</h4>
-                    <p class="text-gray-600 text-sm">No limits, no registration required</p>
+                    <h4 class="font-bold text-gray-900 mb-2">
+                        {!! __tool('html-encoder-decoder', 'content.features.free.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('html-encoder-decoder', 'content.features.free.desc') !!}
+                    </p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🌐</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Universal Support</h4>
-                    <p class="text-gray-600 text-sm">Works with all URL formats and characters</p>
+                    <h4 class="font-bold text-gray-900 mb-2">
+                        {!! __tool('html-encoder-decoder', 'content.features.safe.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('html-encoder-decoder', 'content.features.safe.desc') !!}
+                    </p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Common Use Cases</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('html-encoder-decoder', 'content.uses_title') !!}
+            </h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔗 Query Parameters</h4>
-                    <p class="text-gray-700 leading-relaxed">Encode special characters in URL query strings for API calls
-                        and web requests</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('html-encoder-decoder', 'content.uses.security.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        {!! __tool('html-encoder-decoder', 'content.uses.security.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📊 Analytics Tracking</h4>
-                    <p class="text-gray-700 leading-relaxed">Encode UTM parameters and tracking URLs for marketing campaigns
-                    </p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('html-encoder-decoder', 'content.uses.display.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        {!! __tool('html-encoder-decoder', 'content.uses.display.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔐 Authentication</h4>
-                    <p class="text-gray-700 leading-relaxed">Encode credentials and tokens in OAuth and API authentication
-                    </p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('html-encoder-decoder', 'content.uses.data.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        {!! __tool('html-encoder-decoder', 'content.uses.data.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🌍 Internationalization</h4>
-                    <p class="text-gray-700 leading-relaxed">Encode non-ASCII characters in URLs for global compatibility
-                    </p>
-                </div>
-                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔍 SEO & Redirects</h4>
-                    <p class="text-gray-700 leading-relaxed">Create properly encoded redirect URLs and canonical links</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📧 Email Links</h4>
-                    <p class="text-gray-700 leading-relaxed">Encode mailto links with subject lines and body content</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">
+                        {!! __tool('html-encoder-decoder', 'content.uses.email.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        {!! __tool('html-encoder-decoder', 'content.uses.email.desc') !!}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">📚 How to Use</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('html-encoder-decoder', 'content.how_title') !!}
+            </h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <ol class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">1.</span>
-                        <span><strong>Choose Mode:</strong> Select "Encode URL" or "Decode URL" based on your need</span>
+                        <span>{!! __tool('html-encoder-decoder', 'content.how_steps.1') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">2.</span>
-                        <span><strong>Enter URL:</strong> Paste your URL or text in the input field</span>
+                        <span>{!! __tool('html-encoder-decoder', 'content.how_steps.2') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">3.</span>
-                        <span><strong>Process:</strong> Click "Encode URL" or "Decode URL" button</span>
+                        <span>{!! __tool('html-encoder-decoder', 'content.how_steps.3') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">4.</span>
-                        <span><strong>Copy Result:</strong> Click "Copy" to copy the processed URL to clipboard</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="font-bold text-blue-600 text-lg">5.</span>
-                        <span><strong>Use Anywhere:</strong> Paste the encoded/decoded URL in your application</span>
+                        <span>{!! __tool('html-encoder-decoder', 'content.how_steps.4') !!}</span>
                     </li>
                 </ol>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">💡 URL Encoding Examples</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">
+                {!! __tool('html-encoder-decoder', 'content.examples_title') !!}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <div class="space-y-4">
                     <div>
-                        <p class="font-semibold text-gray-900 mb-2">Space Character:</p>
-                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Original: "Hello World" → Encoded:
-                            "Hello%20World"</p>
+                        <p class="font-semibold text-gray-900 mb-2">
+                            {!! __tool('html-encoder-decoder', 'content.examples.1.title') !!}</p>
+                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">
+                            {!! __tool('html-encoder-decoder', 'content.examples.1.code') !!}</p>
                     </div>
                     <div>
-                        <p class="font-semibold text-gray-900 mb-2">Special Characters:</p>
-                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Original: "name=John&age=30" →
-                            Encoded: "name%3DJohn%26age%3D30"</p>
+                        <p class="font-semibold text-gray-900 mb-2">
+                            {!! __tool('html-encoder-decoder', 'content.examples.2.title') !!}</p>
+                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">
+                            {!! __tool('html-encoder-decoder', 'content.examples.2.code') !!}</p>
                     </div>
                     <div>
-                        <p class="font-semibold text-gray-900 mb-2">Full URL:</p>
-                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">Original:
-                            "https://example.com/search?q=hello world" → Encoded:
-                            "https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world"</p>
+                        <p class="font-semibold text-gray-900 mb-2">
+                            {!! __tool('html-encoder-decoder', 'content.examples.3.title') !!}</p>
+                        <p class="text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">
+                            {!! __tool('html-encoder-decoder', 'content.examples.3.code') !!}</p>
                     </div>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('html-encoder-decoder', 'content.faq_title') !!}
+            </h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">When should I encode URLs?</h4>
-                    <p class="text-gray-700 leading-relaxed">Encode URLs when passing them as query parameters, storing them
-                        in databases, or when they contain special characters like spaces, &, =, ?, or non-ASCII characters.
-                    </p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">
+                        {!! __tool('html-encoder-decoder', 'content.faq.q1') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('html-encoder-decoder', 'content.faq.a1') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">What characters need encoding?</h4>
-                    <p class="text-gray-700 leading-relaxed">Reserved characters like : / ? # [ ] @ ! $ & ' ( ) * + , ; =
-                        and unsafe characters like spaces, <,>, ", {, }, |, \, ^, `, and non-ASCII characters must be
-                            encoded.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">
+                        {!! __tool('html-encoder-decoder', 'content.faq.q2') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('html-encoder-decoder', 'content.faq.a2') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is URL encoding the same as Base64?</h4>
-                    <p class="text-gray-700 leading-relaxed">No. URL encoding converts specific characters to %XX format,
-                        while Base64 encodes entire data into a different character set. They serve different purposes.</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I encode entire URLs?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes, but typically you only encode the query string portion.
-                        Encoding the entire URL including protocol (https://) is less common and may cause issues.</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my data secure?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! All encoding and decoding happens entirely in your browser
-                        using JavaScript. Your URLs never leave your device or get sent to any server.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">
+                        {!! __tool('html-encoder-decoder', 'content.faq.q3') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('html-encoder-decoder', 'content.faq.a3') !!}</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        let currentMode = 'encode';
+    @push('scripts')
+        <script>
+            let currentMode = 'encode';
 
-        function setMode(mode) {
-            currentMode = mode;
-            const encodeBtn = document.getElementById('encodeBtn');
-            const decodeBtn = document.getElementById('decodeBtn');
-            const inputLabel = document.getElementById('inputLabel');
-            const outputLabel = document.getElementById('outputLabel');
-            const processBtn = document.getElementById('processBtn');
+            function setMode(mode) {
+                currentMode = mode;
+                const encodeBtn = document.getElementById('encodeBtn');
+                const decodeBtn = document.getElementById('decodeBtn');
+                const inputLabel = document.getElementById('inputLabel');
+                const outputLabel = document.getElementById('outputLabel');
+                const processBtn = document.getElementById('processBtn');
 
-            if (mode === 'encode') {
-                encodeBtn.classList.remove('bg-gray-200', 'text-gray-700');
-                encodeBtn.classList.add('bg-blue-600', 'text-white');
-                decodeBtn.classList.remove('bg-blue-600', 'text-white');
-                decodeBtn.classList.add('bg-gray-200', 'text-gray-700');
-                inputLabel.textContent = 'Enter HTML to Encode';
-                outputLabel.textContent = 'Encoded HTML';
-                processBtn.textContent = 'Encode HTML';
-            } else {
-                decodeBtn.classList.remove('bg-gray-200', 'text-gray-700');
-                decodeBtn.classList.add('bg-blue-600', 'text-white');
-                encodeBtn.classList.remove('bg-blue-600', 'text-white');
-                encodeBtn.classList.add('bg-gray-200', 'text-gray-700');
-                inputLabel.textContent = 'Enter HTML to Decode';
-                outputLabel.textContent = 'Decoded HTML';
-                processBtn.textContent = 'Decode HTML';
-            }
-            clearAll();
-        }
-
-        function processURL() {
-            const input = document.getElementById('htmlInput').value.trim();
-            const output = document.getElementById('htmlOutput');
-
-            if (!input) {
-                showStatus('Please enter HTML to process', 'error');
-                return;
-            }
-
-            try {
-                if (currentMode === 'encode') {
-                    output.value = input
-                        .replace(/&/g, '&amp;')
-                        .replace(/</g, '&lt;')
-                        .replace(/>/g, '&gt;')
-                        .replace(/"/g, '&quot;')
-                        .replace(/'/g, '&#39;');
-                    showStatus('✓ HTML encoded successfully', 'success');
+                if (mode === 'encode') {
+                    encodeBtn.classList.remove('bg-gray-200', 'text-gray-700');
+                    encodeBtn.classList.add('bg-blue-600', 'text-white');
+                    decodeBtn.classList.remove('bg-blue-600', 'text-white');
+                    decodeBtn.classList.add('bg-gray-200', 'text-gray-700');
+                    inputLabel.textContent = "{!! __tool('html-encoder-decoder', 'editor.label_input_encode') !!}";
+                    outputLabel.textContent = "{!! __tool('html-encoder-decoder', 'editor.label_output_encode') !!}";
+                    processBtn.textContent = "{!! __tool('html-encoder-decoder', 'editor.btn_encode') !!}";
                 } else {
-                    output.value = input
-                        .replace(/&quot;/g, '"')
-                        .replace(/&#39;/g, "'")
-                        .replace(/&lt;/g, '<')
-                        .replace(/&gt;/g, '>')
-                        .replace(/&amp;/g, '&');
-                    showStatus('✓ HTML decoded successfully', 'success');
+                    decodeBtn.classList.remove('bg-gray-200', 'text-gray-700');
+                    decodeBtn.classList.add('bg-blue-600', 'text-white');
+                    encodeBtn.classList.remove('bg-blue-600', 'text-white');
+                    encodeBtn.classList.add('bg-gray-200', 'text-gray-700');
+                    inputLabel.textContent = "{!! __tool('html-encoder-decoder', 'editor.label_input_decode') !!}";
+                    outputLabel.textContent = "{!! __tool('html-encoder-decoder', 'editor.label_output_decode') !!}";
+                    processBtn.textContent = "{!! __tool('html-encoder-decoder', 'editor.btn_decode') !!}";
                 }
-            } catch (error) {
-                showStatus('✗ Error processing HTML: ' + error.message, 'error');
+                clearAll();
             }
-        }
 
-        function clearAll() {
-            document.getElementById('htmlInput').value = '';
-            document.getElementById('htmlOutput').value = '';
-            document.getElementById('statusMessage').classList.add('hidden');
-        }
+            function processURL() {
+                const input = document.getElementById('htmlInput').value.trim();
+                const output = document.getElementById('htmlOutput');
 
-        function copyOutput() {
-            const output = document.getElementById('htmlOutput');
-            if (!output.value) {
-                showStatus('No output to copy', 'error');
-                return;
+                if (!input) {
+                    showStatus("{!! __tool('html-encoder-decoder', 'js.error_empty') !!}", 'error');
+                    return;
+                }
+
+                try {
+                    if (currentMode === 'encode') {
+                        output.value = input
+                            .replace(/&/g, '&amp;')
+                            .replace(/</g, '&lt;')
+                            .replace(/>/g, '&gt;')
+                            .replace(/"/g, '&quot;')
+                            .replace(/'/g, '&#39;');
+                        showStatus("{!! __tool('html-encoder-decoder', 'js.success_encode') !!}", 'success');
+                    } else {
+                        output.value = input
+                            .replace(/&quot;/g, '"')
+                            .replace(/&#39;/g, "'")
+                            .replace(/&lt;/g, '<')
+                            .replace(/&gt;/g, '>')
+                            .replace(/&amp;/g, '&');
+                        showStatus("{!! __tool('html-encoder-decoder', 'js.success_decode') !!}", 'success');
+                    }
+                } catch (error) {
+                    showStatus("{!! __tool('html-encoder-decoder', 'js.error_process') !!}" + error.message, 'error');
+                }
             }
-            output.select();
-            document.execCommand('copy');
-            showStatus('✓ Copied to clipboard', 'success');
-        }
 
-        function showStatus(message, type) {
-            const statusMessage = document.getElementById('statusMessage');
-            statusMessage.textContent = message;
-            statusMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'border-green-300', 'border-red-300');
-
-            if (type === 'success') {
-                statusMessage.classList.add('bg-green-100', 'text-green-800', 'border-2', 'border-green-300');
-            } else {
-                statusMessage.classList.add('bg-red-100', 'text-red-800', 'border-2', 'border-red-300');
+            function clearAll() {
+                document.getElementById('htmlInput').value = '';
+                document.getElementById('htmlOutput').value = '';
+                document.getElementById('statusMessage').classList.add('hidden');
             }
-        }
 
-        // Allow Enter key to process
-        document.getElementById('htmlInput').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter' && e.ctrlKey) {
-                processURL();
+            function copyOutput() {
+                const output = document.getElementById('htmlOutput');
+                if (!output.value) {
+                    showStatus("{!! __tool('html-encoder-decoder', 'js.error_no_copy') !!}", 'error');
+                    return;
+                }
+                output.select();
+                document.execCommand('copy');
+                showStatus("{!! __tool('html-encoder-decoder', 'js.success_copy') !!}", 'success');
             }
-        });
-    </script>
+
+            function showStatus(message, type) {
+                const statusMessage = document.getElementById('statusMessage');
+                statusMessage.textContent = message;
+                statusMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'border-green-300', 'border-red-300');
+
+                if (type === 'success') {
+                    statusMessage.classList.add('bg-green-100', 'text-green-800', 'border-2', 'border-green-300');
+                } else {
+                    statusMessage.classList.add('bg-red-100', 'text-red-800', 'border-2', 'border-red-300');
+                }
+            }
+
+            // Allow Enter key to process
+            document.getElementById('htmlInput').addEventListener('keypress', function (e) {
+                if (e.key === 'Enter' && e.ctrlKey) {
+                    processURL();
+                }
+            });
+        </script>
+    @endpush
 @endsection

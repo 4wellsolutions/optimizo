@@ -19,6 +19,11 @@
             $pathWithoutLocale = $currentPath;
         }
 
+        // Handle root path case to prevent double slashes
+        if ($pathWithoutLocale === '/') {
+            $pathWithoutLocale = '';
+        }
+
         // Build full URLs
         $baseUrl = rtrim(url('/'), '/');
 

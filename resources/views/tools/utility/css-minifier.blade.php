@@ -14,9 +14,9 @@
         <!-- Tool Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-blue-200 mb-8">
             <div class="mb-6">
-                <label for="cssInput" class="form-label text-base">CSS Input</label>
+                <label for="cssInput" class="form-label text-base">{!! __tool('css-minifier', 'editor.label_input') !!}</label>
                 <textarea id="cssInput" class="form-input font-mono text-sm min-h-[300px]"
-                    placeholder="Paste your CSS code here..."></textarea>
+                    placeholder="{!! __tool('css-minifier', 'editor.ph_input') !!}"></textarea>
             </div>
 
             <div class="flex flex-wrap gap-3 mb-6">
@@ -24,21 +24,21 @@
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
-                    <span>Minify CSS</span>
+                    <span>{!! __tool('css-minifier', 'editor.btn_minify') !!}</span>
                 </button>
                 <button onclick="processCSS('beautify')" class="btn-secondary">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                     </svg>
-                    <span>Beautify CSS</span>
+                    <span>{!! __tool('css-minifier', 'editor.btn_beautify') !!}</span>
                 </button>
                 <button onclick="clearCSS()"
                     class="px-6 py-3 bg-gray-500 text-white rounded-xl hover:bg-gray-600 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
-                    <span>Clear</span>
+                    <span>{!! __tool('css-minifier', 'editor.btn_clear') !!}</span>
                 </button>
                 <button onclick="copyCSS()"
                     class="px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-all font-semibold shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -46,33 +46,33 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
-                    <span>Copy</span>
+                    <span>{!! __tool('css-minifier', 'editor.btn_copy') !!}</span>
                 </button>
             </div>
 
             <div id="statusMessage" class="hidden mb-6 p-4 rounded-xl font-semibold"></div>
 
             <div class="mb-6">
-                <label for="cssOutput" class="form-label text-base">CSS Output</label>
+                <label for="cssOutput" class="form-label text-base">{!! __tool('css-minifier', 'editor.label_output') !!}</label>
                 <textarea id="cssOutput" class="form-input font-mono text-sm min-h-[300px]" readonly
-                    placeholder="Processed CSS will appear here..."></textarea>
+                    placeholder="{!! __tool('css-minifier', 'editor.ph_output') !!}"></textarea>
             </div>
 
             <div id="stats" class="hidden grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-4 border-2 border-blue-200">
-                    <div class="text-sm text-gray-600 mb-1">Original Size</div>
+                    <div class="text-sm text-gray-600 mb-1">{!! __tool('css-minifier', 'editor.stats.original') !!}</div>
                     <div class="text-2xl font-black text-blue-600" id="originalSize">0</div>
                 </div>
                 <div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border-2 border-cyan-200">
-                    <div class="text-sm text-gray-600 mb-1">Minified Size</div>
+                    <div class="text-sm text-gray-600 mb-1">{!! __tool('css-minifier', 'editor.stats.minified') !!}</div>
                     <div class="text-2xl font-black text-cyan-600" id="minifiedSize">0</div>
                 </div>
                 <div class="bg-gradient-to-br from-teal-50 to-green-50 rounded-xl p-4 border-2 border-teal-200">
-                    <div class="text-sm text-gray-600 mb-1">Saved</div>
+                    <div class="text-sm text-gray-600 mb-1">{!! __tool('css-minifier', 'editor.stats.saved') !!}</div>
                     <div class="text-2xl font-black text-teal-600" id="savedSize">0</div>
                 </div>
                 <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-4 border-2 border-green-200">
-                    <div class="text-sm text-gray-600 mb-1">Compression</div>
+                    <div class="text-sm text-gray-600 mb-1">{!! __tool('css-minifier', 'editor.stats.compression') !!}</div>
                     <div class="text-2xl font-black text-green-600" id="compressionRate">0%</div>
                 </div>
             </div>
@@ -88,193 +88,166 @@
                             d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">Free CSS Minifier & Beautifier</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Optimize CSS files for faster page loads and better
-                    performance</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{!! __tool('css-minifier', 'content.hero_title') !!}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{!! __tool('css-minifier', 'content.hero_subtitle') !!}</p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                Our free CSS Minifier compresses CSS files by removing whitespace, comments, and unnecessary characters,
-                significantly reducing file size and improving website load times. Perfect for web developers, designers,
-                and anyone optimizing website performance. Also includes a CSS beautifier to format and organize your
-                stylesheets for better readability. 100% free, client-side processing ensures your code stays private.
+                {!! __tool('css-minifier', 'content.p1') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎨 What is CSS Minification?</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('css-minifier', 'content.what_title') !!}</h3>
             <p class="text-gray-700 leading-relaxed mb-6">
-                CSS minification is the process of removing unnecessary characters from CSS code without changing its
-                functionality. This includes whitespace, line breaks, comments, and redundant code. Minified CSS files are
-                smaller, load faster, and improve website performance. It's an essential optimization technique for
-                production websites.
+                {!! __tool('css-minifier', 'content.what_desc') !!}
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">✨ Features</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('css-minifier', 'content.features_title') !!}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📦</div>
-                    <h4 class="font-bold text-gray-900 mb-2">CSS Minification</h4>
-                    <p class="text-gray-600 text-sm">Compress CSS by removing whitespace and comments</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('css-minifier', 'content.features.minify.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('css-minifier', 'content.features.minify.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-cyan-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🎨</div>
-                    <h4 class="font-bold text-gray-900 mb-2">CSS Beautification</h4>
-                    <p class="text-gray-600 text-sm">Format CSS with proper indentation and spacing</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('css-minifier', 'content.features.beautify.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('css-minifier', 'content.features.beautify.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-teal-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📊</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Compression Stats</h4>
-                    <p class="text-gray-600 text-sm">See file size reduction and compression rate</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('css-minifier', 'content.features.stats.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('css-minifier', 'content.features.stats.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-green-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚡</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Instant Processing</h4>
-                    <p class="text-gray-600 text-sm">Minify or beautify CSS in milliseconds</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('css-minifier', 'content.features.instant.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('css-minifier', 'content.features.instant.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-yellow-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔒</div>
-                    <h4 class="font-bold text-gray-900 mb-2">Privacy First</h4>
-                    <p class="text-gray-600 text-sm">All processing happens in your browser</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('css-minifier', 'content.features.privacy.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('css-minifier', 'content.features.privacy.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📋</div>
-                    <h4 class="font-bold text-gray-900 mb-2">One-Click Copy</h4>
-                    <p class="text-gray-600 text-sm">Copy minified CSS to clipboard instantly</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('css-minifier', 'content.features.copy.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('css-minifier', 'content.features.copy.desc') !!}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Benefits of CSS Minification</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('css-minifier', 'content.benefits_title') !!}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">⚡ Faster Page Loads</h4>
-                    <p class="text-gray-700 leading-relaxed">Smaller CSS files download faster, improving page load times
-                        and user experience</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('css-minifier', 'content.benefits.speed.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.benefits.speed.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">💰 Reduced Bandwidth</h4>
-                    <p class="text-gray-700 leading-relaxed">Lower bandwidth usage saves hosting costs and mobile data for
-                        users</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('css-minifier', 'content.benefits.bandwidth.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.benefits.bandwidth.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📈 Better SEO</h4>
-                    <p class="text-gray-700 leading-relaxed">Faster sites rank better in search engines, improving
-                        visibility</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('css-minifier', 'content.benefits.seo.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.benefits.seo.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🎯 Improved Performance</h4>
-                    <p class="text-gray-700 leading-relaxed">Optimized CSS reduces browser parsing time and rendering delays
-                    </p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('css-minifier', 'content.benefits.performance.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.benefits.performance.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">📱 Mobile Optimization</h4>
-                    <p class="text-gray-700 leading-relaxed">Crucial for mobile users with limited bandwidth and slower
-                        connections</p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('css-minifier', 'content.benefits.mobile.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.benefits.mobile.desc') !!}</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                    <h4 class="font-bold text-lg text-gray-900 mb-3">🔧 Production Ready</h4>
-                    <p class="text-gray-700 leading-relaxed">Minified CSS is standard practice for production deployments
-                    </p>
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('css-minifier', 'content.benefits.production.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.benefits.production.desc') !!}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">📚 How to Use</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('css-minifier', 'content.how_title') !!}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <ol class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">1.</span>
-                        <span><strong>Paste CSS:</strong> Copy and paste your CSS code into the input field</span>
+                        <span>{!! __tool('css-minifier', 'content.how_steps.1') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">2.</span>
-                        <span><strong>Choose Action:</strong> Click "Minify CSS" to compress or "Beautify CSS" to
-                            format</span>
+                        <span>{!! __tool('css-minifier', 'content.how_steps.2') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">3.</span>
-                        <span><strong>View Results:</strong> See the processed CSS in the output field with compression
-                            stats</span>
+                        <span>{!! __tool('css-minifier', 'content.how_steps.3') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">4.</span>
-                        <span><strong>Copy:</strong> Click "Copy" to copy the minified CSS to your clipboard</span>
+                        <span>{!! __tool('css-minifier', 'content.how_steps.4') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="font-bold text-blue-600 text-lg">5.</span>
-                        <span><strong>Use in Production:</strong> Replace your original CSS file with the minified
-                            version</span>
+                        <span>{!! __tool('css-minifier', 'content.how_steps.5') !!}</span>
                     </li>
                 </ol>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">💡 Best Practices</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('css-minifier', 'content.best_practices_title') !!}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 font-bold text-xl">✓</span>
-                        <span><strong>Keep source files:</strong> Always maintain readable, unminified versions for
-                            development</span>
+                        <span>{!! __tool('css-minifier', 'content.best_practices_list.1') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 font-bold text-xl">✓</span>
-                        <span><strong>Minify for production:</strong> Only use minified CSS in production
-                            environments</span>
+                        <span>{!! __tool('css-minifier', 'content.best_practices_list.2') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 font-bold text-xl">✓</span>
-                        <span><strong>Combine files:</strong> Merge multiple CSS files before minifying for better
-                            compression</span>
+                        <span>{!! __tool('css-minifier', 'content.best_practices_list.3') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 font-bold text-xl">✓</span>
-                        <span><strong>Test thoroughly:</strong> Always test minified CSS to ensure no functionality is
-                            broken</span>
+                        <span>{!! __tool('css-minifier', 'content.best_practices_list.4') !!}</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 font-bold text-xl">✓</span>
-                        <span><strong>Use build tools:</strong> Integrate minification into your build process for
-                            automation</span>
+                        <span>{!! __tool('css-minifier', 'content.best_practices_list.5') !!}</span>
                     </li>
                 </ul>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('css-minifier', 'content.faq_title') !!}</h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">How much can CSS minification reduce file size?</h4>
-                    <p class="text-gray-700 leading-relaxed">Typically 20-40% reduction, depending on your CSS structure.
-                        Files with lots of comments and whitespace see bigger savings. Combined with gzip compression, you
-                        can achieve 70-80% total reduction.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('css-minifier', 'content.faq.q1') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.faq.a1') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Will minification break my CSS?</h4>
-                    <p class="text-gray-700 leading-relaxed">No! Minification only removes unnecessary characters while
-                        preserving functionality. However, always test your minified CSS to ensure everything works as
-                        expected.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('css-minifier', 'content.faq.q2') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.faq.a2') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Should I minify CSS for development?</h4>
-                    <p class="text-gray-700 leading-relaxed">No. Keep CSS readable during development for easier debugging.
-                        Only minify for production deployments. Use beautified CSS during development and testing.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('css-minifier', 'content.faq.q3') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.faq.a3') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Can I reverse minification?</h4>
-                    <p class="text-gray-700 leading-relaxed">Yes! Use our "Beautify CSS" feature to format minified CSS back
-                        into a readable format. However, comments are permanently removed during minification.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('css-minifier', 'content.faq.q4') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.faq.a4') !!}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">Is my CSS data secure?</h4>
-                    <p class="text-gray-700 leading-relaxed">Absolutely! All processing happens entirely in your browser.
-                        Your CSS code never leaves your device and is not sent to any server.</p>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('css-minifier', 'content.faq.q5') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('css-minifier', 'content.faq.a5') !!}</p>
                 </div>
             </div>
         </div>
     </div>
 
+    @push('scripts')
     <script>
         function processCSS(action) {
             const input = document.getElementById('cssInput').value.trim();
@@ -283,7 +256,7 @@
             const stats = document.getElementById('stats');
 
             if (!input) {
-                showStatus('Please enter CSS code to process', 'error');
+                showStatus("{!! __tool('css-minifier', 'js.error_empty') !!}", 'error');
                 return;
             }
 
@@ -292,15 +265,15 @@
                 if (action === 'minify') {
                     processed = minifyCSS(input);
                     showStats(input, processed);
-                    showStatus('✓ CSS minified successfully', 'success');
+                    showStatus("{!! __tool('css-minifier', 'js.success_minify') !!}", 'success');
                 } else {
                     processed = beautifyCSS(input);
                     stats.classList.add('hidden');
-                    showStatus('✓ CSS beautified successfully', 'success');
+                    showStatus("{!! __tool('css-minifier', 'js.success_beautify') !!}", 'success');
                 }
                 output.value = processed;
             } catch (error) {
-                showStatus('✗ Error processing CSS: ' + error.message, 'error');
+                showStatus("{!! __tool('css-minifier', 'js.error_process') !!}" + error.message, 'error');
             }
         }
 
@@ -372,12 +345,12 @@
         function copyCSS() {
             const output = document.getElementById('cssOutput');
             if (!output.value) {
-                showStatus('No CSS to copy', 'error');
+                showStatus("{!! __tool('css-minifier', 'js.no_copy') !!}", 'error');
                 return;
             }
             output.select();
             document.execCommand('copy');
-            showStatus('✓ CSS copied to clipboard', 'success');
+            showStatus("{!! __tool('css-minifier', 'js.success_copy') !!}", 'success');
         }
 
         function showStatus(message, type) {
@@ -392,4 +365,5 @@
             }
         }
     </script>
+    @endpush
 @endsection
