@@ -46,7 +46,7 @@
                 <!-- Stats -->
                 <div class="flex flex-wrap justify-center gap-3">
                     <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-                        <div class="text-2xl font-black text-white">{{ $tools->count() }}</div>
+                        <div class="text-2xl font-black text-white">{{ collect($tools)->count() }}</div>
                         <div class="text-xs text-white/80">{{ __('categories.free_tools') }}</div>
                     </div>
                     <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
@@ -64,8 +64,8 @@
         <!-- Tools by Subcategory -->
         @php
             // Group tools by subcategory name using the relationship
-            // $tools is already a Collection of Tool models
-            $toolsBySubcategory = $tools->groupBy(function ($tool) {
+            // Ensure $tools is a Collection
+            $toolsBySubcategory = collect($tools)->groupBy(function ($tool) {
                 return $tool->subcategoryRelation ? __t($tool->subcategoryRelation, 'name') : 'General';
             });
         @endphp

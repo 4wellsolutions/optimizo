@@ -538,6 +538,9 @@ return [
 
     // Google SERP Checker
     'google-serp-checker' => [
+        'meta' => [
+            'h1' => 'Google SERP Checker',
+        ],
         'seo' => [
             'title' => 'Google SERP Checker - Check Search Rankings by Location',
             'description' => 'Free Google SERP checker to analyze search engine results and track keyword rankings across different locations.',
@@ -616,6 +619,9 @@ return [
 
     // Yahoo SERP Checker
     'yahoo-serp-checker' => [
+        'meta' => [
+            'h1' => 'Yahoo SERP Checker',
+        ],
         'seo' => [
             'title' => 'Yahoo SERP Checker - Check Your Yahoo Search Rankings',
             'description' => 'Free Yahoo SERP checker to track your website rankings on Yahoo search engine.',
@@ -683,6 +689,9 @@ return [
 
     // Broken Links Checker
     'broken-links-checker' => [
+        'meta' => [
+            'h1' => 'Broken Links Checker',
+        ],
         'seo' => [
             'title' => 'Broken Link Checker - Find Dead Links on Your Website',
             'description' => 'Free broken link checker to scan your website for dead links, 404 errors, and fix broken URLs for better SEO.',
@@ -814,6 +823,9 @@ return [
 
     // On-Page SEO Checker
     'on-page-seo-checker' => [
+        'meta' => [
+            'h1' => 'On-Page SEO Checker',
+        ],
         'seo' => [
             'title' => 'On-Page SEO Checker - Complete SEO Analysis',
             'description' => 'Free on-page SEO checker to analyze and optimize your web pages for search engines.',
@@ -877,6 +889,9 @@ return [
 
     // PDF Report Generator
     'pdf-report' => [
+        'meta' => [
+            'h1' => 'PDF Report Generator',
+        ],
         'seo' => [
             'title' => 'PDF Report - SEO Audit Report',
             'description' => 'Generate a free PDF SEO audit report for your website.',
