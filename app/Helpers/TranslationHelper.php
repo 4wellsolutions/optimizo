@@ -46,6 +46,8 @@ if (!function_exists('__tool')) {
         $locale = app()->getLocale();
 
         // Extract category from tool slug (e.g., 'youtube-channel' -> 'youtube')
+        // Normalize to lowercase to handle potential DB casing inconsistencies (e.g. 'YouTube-Tool')
+        $toolSlug = strtolower($toolSlug);
         $prefix = explode('-', $toolSlug)[0];
         $category = $prefix;
 
@@ -111,6 +113,14 @@ if (!function_exists('__tool')) {
             'whois' => 'network',
             'what' => 'network',
             'redirect' => 'network',
+
+            // Utility tools (explicit mapping)
+            'text' => 'utilities',
+            'binary' => 'utilities',
+            'hex' => 'utilities',
+            'decimal' => 'utilities',
+            'morse' => 'utilities',
+            'ascii' => 'utilities',
         ];
 
         // Check mapping first

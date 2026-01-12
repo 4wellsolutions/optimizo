@@ -64,14 +64,14 @@
                     </svg>
                 </div>
                 <h2 class="text-4xl font-black text-gray-900 mb-3">
-                    {{ __tool('youtube-channel-extractor', 'content.main_title', 'YouTube Channel Data Extractor') }}</h2>
+                    {{ __tool('youtube-channel', 'content.main_title', 'YouTube Channel Data Extractor') }}</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    {{ __tool('youtube-channel-extractor', 'content.main_subtitle', 'Extract complete channel statistics and information instantly') }}
+                    {{ __tool('youtube-channel', 'content.main_subtitle', 'Extract complete channel statistics and information instantly') }}
                 </p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
-                {{ __tool('youtube-channel-extractor', 'content.description', 'Our free YouTube Channel Data Extractor helps you analyze any YouTube channel by extracting comprehensive statistics and information. Get subscriber counts, total videos, view counts, channel descriptions, join dates, and more - all without needing a YouTube API key. Perfect for competitor analysis, influencer research, marketing campaigns, and content strategy planning.') }}
+                {{ __tool('youtube-channel', 'content.description', 'Our free YouTube Channel Data Extractor helps you analyze any YouTube channel by extracting comprehensive statistics and information. Get subscriber counts, total videos, view counts, channel descriptions, join dates, and more - all without needing a YouTube API key. Perfect for competitor analysis, influencer research, marketing campaigns, and content strategy planning.') }}
             </p>
 
             <div class="grid md:grid-cols-3 gap-6 mb-10">
@@ -84,8 +84,8 @@
                                 d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-extractor', 'content.feature_complete_stats_title', 'Complete Statistics') }}</h3>
-                    <p class="text-gray-600">{{ __tool('youtube-channel-extractor', 'content.feature_complete_stats_description', 'Get subscribers, views, video count, and all channel metrics') }}</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel', 'content.feature_complete_stats_title', 'Complete Statistics') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel', 'content.feature_complete_stats_description', 'Get subscribers, views, video count, and all channel metrics') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-2xl p-6 shadow-xl border-2 border-pink-100 hover:border-pink-300 transition-all hover:shadow-2xl">
@@ -96,8 +96,8 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-extractor', 'content.feature_instant_results_title', 'Instant Results') }}</h3>
-                    <p class="text-gray-600">{{ __tool('youtube-channel-extractor', 'content.feature_instant_results_description', 'Extract channel data instantly without any delays') }}</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel', 'content.feature_instant_results_title', 'Instant Results') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel', 'content.feature_instant_results_description', 'Extract channel data instantly without any delays') }}</p>
                 </div>
                 <div
                     class="bg-white rounded-2xl p-6 shadow-xl border-2 border-rose-100 hover:border-rose-300 transition-all hover:shadow-2xl">
@@ -108,12 +108,12 @@
                                 d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel-extractor', 'content.feature_free_title', '100% Free') }}</h3>
-                    <p class="text-gray-600">{{ __tool('youtube-channel-extractor', 'content.feature_free_description', 'No API keys, no registration, completely free forever') }}</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-channel', 'content.feature_free_title', '100% Free') }}</h3>
+                    <p class="text-gray-600">{{ __tool('youtube-channel', 'content.feature_free_description', 'No API keys, no registration, completely free forever') }}</p>
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel-extractor', 'content.extractable_data_title', 'Extractable Channel Data') }}</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel', 'content.extractable_data_title', 'Extractable Channel Data') }}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
                 <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
                     <h4 class="font-bold text-2xl mb-3">{{ __tool('youtube-channel', 'stats.title') }}</h4>
@@ -135,7 +135,7 @@
                 </div>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel-extractor', 'content.use_cases_title', 'Common Use Cases') }}</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-channel', 'content.use_cases_title', 'Common Use Cases') }}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">

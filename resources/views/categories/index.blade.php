@@ -105,12 +105,13 @@
                                         style="transition: color 0.3s;"
                                         onmouseover="this.style.color='{{ $category->bg_gradient_to }}'"
                                         onmouseout="this.style.color=''">
-                                        {{ __t($tool, 'name') }}
+                                        <!-- DEBUG: Tool: {{ $tool->slug }} | Category: {{ explode('-', $tool->slug)[0] }} | File Exists: {{ file_exists(resource_path('lang/' . app()->getLocale() . '/tools/' . explode('-', $tool->slug)[0] . '.php')) ? 'YES' : 'NO' }} | Path: {{ resource_path('lang/' . app()->getLocale() . '/tools/' . explode('-', $tool->slug)[0] . '.php') }} -->
+                                        {{ __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'form.title') ?: __t($tool, 'name') }}
                                     </h3>
                                 </div>
                             </div>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                {{ __t($tool, 'meta_description') }}
+                                {{ __tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: __t($tool, 'meta_description') }}
                             </p>
                         </a>
                     @endforeach

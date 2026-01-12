@@ -1,9 +1,9 @@
 @props(['title' => null, 'description' => null, 'icon' => null, 'tool'])
 
 @php
-    // Use provided props, or fall back to file-based translation, then DB translation
-    $fileTitle = __tool($tool->slug, 'meta.h1');
-    $fileDescription = __tool($tool->slug, 'meta.subtitle');
+    // Use provided props, or fall back to file-based translation (meta.h1 -> form.title -> seo.title), then DB translation
+    $fileTitle = __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'form.title') ?: __tool($tool->slug, 'seo.title');
+    $fileDescription = __tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description');
 
     $displayTitle = $title
         ?: ($fileTitle ?: (__t($tool, 'name') ?: ($tool->meta_title ?: __('common.tool_fallback'))));
