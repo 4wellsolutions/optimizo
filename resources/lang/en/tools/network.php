@@ -3,6 +3,9 @@
 return [
     // DNS Lookup Tool
     'dns-lookup' => [
+        'meta' => [
+            'h1' => 'DNS Lookup Tool',
+        ],
         'seo' => [
             'title' => 'DNS Lookup Tool - Check DNS Records Online Free',
             'h1' => 'DNS Lookup Tool',
@@ -56,6 +59,9 @@ return [
 
     // Domain to IP Tool
     'domain-to-ip' => [
+        'meta' => [
+            'h1' => 'Domain to IP Converter',
+        ],
         'seo' => [
             'title' => 'Domain to IP Converter - Find IP Address of Any Domain Free',
             'h1' => 'Domain to IP Converter',
@@ -128,6 +134,9 @@ return [
 
     // IP Lookup Tool
     'ip-lookup' => [
+        'meta' => [
+            'h1' => 'IP Lookup Tool',
+        ],
         'seo' => [
             'title' => 'IP Lookup Tool - Get IP Address Information & Geolocation Free',
             'h1' => 'IP Lookup Tool',
@@ -189,6 +198,9 @@ return [
 
     // Ping Test Tool
     'ping-test' => [
+        'meta' => [
+            'h1' => 'Ping Test Tool',
+        ],
         'seo' => [
             'title' => 'Ping Test Tool - Check Network Latency & Connectivity Free',
             'h1' => 'Ping Test Tool',
@@ -242,6 +254,9 @@ return [
 
     // Port Checker Tool
     'port-checker' => [
+        'meta' => [
+            'h1' => 'Port Checker Tool',
+        ],
         'seo' => [
             'title' => 'Port Checker Tool - Check Open Ports & Network Connectivity Free',
             'h1' => 'Port Checker Tool',
@@ -298,6 +313,9 @@ return [
 
     // Redirect Checker Tool
     'redirect-checker' => [
+        'meta' => [
+            'h1' => 'Redirect Checker',
+        ],
         'seo' => [
             'title' => 'Redirect Checker - HTTP Status Code & Redirect Chain Analyzer Free',
             'h1' => 'Redirect Checker',
@@ -414,6 +432,9 @@ return [
 
     // Reverse DNS Tool
     'reverse-dns' => [
+        'meta' => [
+            'h1' => 'Reverse DNS Lookup Tool',
+        ],
         'seo' => [
             'title' => 'Reverse DNS Lookup Tool - Find Hostname from IP Address Free',
             'h1' => 'Reverse DNS Lookup Tool',
@@ -458,6 +479,9 @@ return [
 
     // Traceroute Tool
     'traceroute' => [
+        'meta' => [
+            'h1' => 'Traceroute Tool',
+        ],
         'seo' => [
             'title' => 'Traceroute Tool - Trace Network Path & Hops Online Free',
             'h1' => 'Traceroute Tool',
@@ -505,6 +529,9 @@ return [
 
     // What is My IP Tool
     'what-is-my-ip' => [
+        'meta' => [
+            'h1' => 'What is My IP Address?',
+        ],
         'seo' => [
             'title' => 'What is My IP Address? - Check Your IP Location Free',
             'h1' => 'What is My IP Address?',
@@ -578,6 +605,9 @@ return [
 
     // What is My ISP Tool
     'what-is-my-isp' => [
+        'meta' => [
+            'h1' => 'What is My ISP?',
+        ],
         'seo' => [
             'title' => 'What is My ISP? - Check Internet Service Provider Free',
             'h1' => 'What is My ISP?',
@@ -654,6 +684,9 @@ return [
 
     // WHOIS Lookup Tool
     'whois-lookup' => [
+        'meta' => [
+            'h1' => 'WHOIS Lookup Tool',
+        ],
         'seo' => [
             'title' => 'WHOIS Lookup Tool - Domain Registration Information Free',
             'h1' => 'WHOIS Lookup Tool',

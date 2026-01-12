@@ -12,6 +12,9 @@ return [
 
     // Epoch Time Converter
     'epoch-time-converter' => [
+        'meta' => [
+            'h1' => 'Конвертер Epoch Time',
+        ],
         'seo' => [
             'title' => 'Конвертер Epoch Time - Unix Timestamp в Дату и обратно',
             'h1' => 'Конвертер Epoch Time',
@@ -63,6 +66,9 @@ return [
 
     // Date to Unix Timestamp
     'date-to-unix' => [
+        'meta' => [
+            'h1' => 'Конвертер Даты в Unix Timestamp',
+        ],
         'seo' => [
             'title' => 'Конвертер Даты в Unix Timestamp - Мгновенно и Точно',
             'h1' => 'Конвертер Даты в Unix Timestamp',
@@ -97,6 +103,9 @@ return [
 
     // Unix Timestamp to Date
     'unix-to-date' => [
+        'meta' => [
+            'h1' => 'Конвертер Unix Timestamp в Дату',
+        ],
         'seo' => [
             'title' => 'Конвертер Unix Timestamp в Дату - Читаемый формат',
             'h1' => 'Конвертер Unix Timestamp в Дату',
@@ -134,6 +143,9 @@ return [
 
     // Local to UTC
     'local-to-utc' => [
+        'meta' => [
+            'h1' => 'Конвертер Местного времени в UTC',
+        ],
         'seo' => [
             'title' => 'Конвертер Местного времени в UTC - Настройка часового пояса',
             'h1' => 'Конвертер Местного времени в UTC',
@@ -183,6 +195,9 @@ return [
 
     // UTC to Local
     'utc-to-local' => [
+        'meta' => [
+            'h1' => 'Конвертер UTC в Местное Время',
+        ],
         'seo' => [
             'title' => 'Конвертер UTC в Местное Время - Глобальный Переводчик Времени',
             'h1' => 'Конвертер UTC в Местное Время',
@@ -218,6 +233,9 @@ return [
 
     // Time Zone Converter
     'time-zone-converter' => [
+        'meta' => [
+            'h1' => 'Конвертер Часовых Поясов',
+        ],
         'seo' => [
             'title' => 'Конвертер Часовых Поясов - Планировщик Встреч',
             'h1' => 'Конвертер Часовых Поясов',

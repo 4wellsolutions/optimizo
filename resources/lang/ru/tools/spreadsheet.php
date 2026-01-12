@@ -2,6 +2,9 @@
 
 return [
     'csv-to-sql' => [
+        'meta' => [
+            'h1' => 'Конвертер CSV в SQL',
+        ],
         'seo' => [
             'title' => 'Конвертер CSV в SQL - Генерация INSERT Запросов | Optimizo',
             'h1' => 'Конвертер CSV в SQL',
@@ -49,6 +52,9 @@ return [
     ],
 
     'csv-to-excel' => [
+        'meta' => [
+            'h1' => 'Конвертер CSV в Excel',
+        ],
         'seo' => [
             'title' => 'Конвертер CSV в Excel - Бесплатный Онлайн Инструмент | Optimizo',
             'h1' => 'Конвертер CSV в Excel',
@@ -82,6 +88,9 @@ return [
     ],
 
     'excel-to-csv' => [
+        'meta' => [
+            'h1' => 'Конвертер Excel в CSV',
+        ],
         'seo' => [
             'title' => 'Конвертер Excel в CSV - Бесплатный Инструмент XLSX в CSV | Optimizo',
             'h1' => 'Конвертер Excel в CSV',
@@ -115,6 +124,9 @@ return [
     ],
 
     'google-sheets-to-excel' => [
+        'meta' => [
+            'h1' => 'Конвертер Google Таблиц в Excel',
+        ],
         'seo' => [
             'title' => 'Конвертер Google Таблиц в Excel - Скачать как XLSX | Optimizo',
             'h1' => 'Конвертер Google Таблиц в Excel',
@@ -148,6 +160,9 @@ return [
     ],
 
     'xls-to-xlsx' => [
+        'meta' => [
+            'h1' => 'Конвертер XLS в XLSX',
+        ],
         'seo' => [
             'title' => 'Конвертер XLS в XLSX - Обновление Формата Excel | Optimizo',
             'h1' => 'Конвертер XLS в XLSX',
@@ -181,6 +196,9 @@ return [
     ],
 
     'xlsx-to-xls' => [
+        'meta' => [
+            'h1' => 'Конвертер XLSX в XLS',
+        ],
         'seo' => [
             'title' => 'Конвертер XLSX в XLS - Устаревший Формат Excel | Optimizo',
             'h1' => 'Конвертер XLSX в XLS',

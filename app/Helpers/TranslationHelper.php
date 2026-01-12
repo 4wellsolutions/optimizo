@@ -96,11 +96,9 @@ if (!function_exists('__tool')) {
             // SEO tools
             'meta' => 'seo',
             'keyword' => 'seo',
-            'word' => 'seo',
             'bing' => 'seo',
             'yahoo' => 'seo',
             'broken' => 'seo',
-            'pdf' => 'seo',
             'on' => 'seo',
             // Network tools
             'dns' => 'network',
@@ -111,8 +109,8 @@ if (!function_exists('__tool')) {
             'reverse' => 'network',
             'traceroute' => 'network',
             'whois' => 'network',
-            'what' => 'network',
             'redirect' => 'network',
+            'what' => 'network',
 
             // Utility tools (explicit mapping)
             'text' => 'utilities',
@@ -121,28 +119,67 @@ if (!function_exists('__tool')) {
             'decimal' => 'utilities',
             'morse' => 'utilities',
             'ascii' => 'utilities',
+            'json' => 'utilities',
+            'xml' => 'utilities',
+            'sql' => 'utilities',
+            'html' => 'utilities',
+            'tsv' => 'utilities',
         ];
 
-        // Check mapping first
-        if (isset($categoryMap[$prefix])) {
+        // 1. Check for specific tool exceptions first (Highest Priority)
+        $exceptions = [
+            // Document Tools
+            'word-to-pdf' => 'document',
+            'percentage-calculator' => 'math',
+            'excel-to-pdf' => 'document',
+            'powerpoint-to-pdf' => 'document',
+            'ppt-to-pdf' => 'document',
+            'jpg-to-pdf' => 'document',
+            'jpeg-to-pdf' => 'document',
+            'png-to-pdf' => 'document',
+            'text-to-pdf' => 'document',
+            // Time Tools
+            'time-zone-converter' => 'time',
+            'epoch-time-converter' => 'time',
+            'unix-timestamp-converter' => 'time',
+            // Spreadsheet Tools
+            'excel-to-csv' => 'spreadsheet',
+            'csv-to-excel' => 'spreadsheet',
+            'excel-to-json' => 'spreadsheet',
+            'json-to-excel' => 'spreadsheet',
+            // Utilities
+            'csv-to-xml' => 'utilities',
+            'xml-to-csv' => 'utilities',
+            'csv-to-json' => 'utilities',
+            'json-to-csv' => 'utilities',
+        ];
+
+        if (isset($exceptions[$toolSlug])) {
+            $category = $exceptions[$toolSlug];
+        }
+        // 2. Check strict prefix mapping
+        elseif (isset($categoryMap[$prefix])) {
             $category = $categoryMap[$prefix];
         }
-        // Special case: Document conversion tools (pdf-to-word, word-to-pdf, etc.)
-        // Check if tool slug matches document conversion patterns AND is not already mapped
-        elseif (
-            str_contains($toolSlug, '-to-') ||
-            str_ends_with($toolSlug, '-compressor') ||
-            str_ends_with($toolSlug, '-merger') ||
-            str_ends_with($toolSlug, '-splitter')
-        ) {
+        // 3. Special case: Document conversion tools pattern (pdf-*)
+        elseif (str_starts_with($toolSlug, 'pdf-')) {
             $category = 'document';
         }
-        // Special case: 'google' can be either spreadsheet or seo
-        elseif ($prefix === 'google') {
-            if (str_contains($toolSlug, 'sheets')) {
-                $category = 'spreadsheet';
+        // 4. Special case: 'word-' prefix usually maps to 'seo' (word-counter), 
+        // unlike 'word-to-pdf' which is handled in exceptions.
+        elseif ($prefix === 'word' && !isset($exceptions[$toolSlug])) {
+            $category = 'seo';
+        }
+        // 5. Special case: 'time' prefix.
+        // 'time-zone-converter' -> time (handled in exceptions)
+        // 'time-converter' -> converters (unit converter)
+        elseif ($prefix === 'time') {
+            // If it's the generic time unit converter, it goes to converters
+            // If it's specific time tools (like date calc), checking exceptions or default
+            if ($toolSlug === 'time-converter' || $toolSlug === 'time-unit-converter') {
+                $category = 'converters';
             } else {
-                $category = 'seo';
+                $category = 'time';
             }
         }
 

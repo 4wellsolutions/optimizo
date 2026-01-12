@@ -3,6 +3,9 @@
 return [
     // PDF to Word Converter
     'pdf-to-word' => [
+        'meta' => [
+            'h1' => 'Конвертер PDF в Word',
+        ],
         'seo' => [
             'title' => 'Конвертер PDF в Word - Бесплатный онлайн-инструмент',
             'h1' => 'Конвертер PDF в Word',
@@ -37,6 +40,9 @@ return [
 
     // Word to PDF Converter
     'word-to-pdf' => [
+        'meta' => [
+            'h1' => 'Конвертер Word в PDF',
+        ],
         'seo' => [
             'title' => 'Конвертер Word в PDF - Бесплатный онлайн-инструмент',
             'h1' => 'Конвертер Word в PDF',
@@ -71,6 +77,9 @@ return [
 
     // Excel to PDF Converter
     'excel-to-pdf' => [
+        'meta' => [
+            'h1' => 'Конвертер Excel в PDF',
+        ],
         'seo' => [
             'title' => 'Конвертер Excel в PDF - Бесплатный онлайн-инструмент',
             'h1' => 'Конвертер Excel в PDF',
@@ -116,6 +125,9 @@ return [
 
     // PDF to Excel Converter
     'pdf-to-excel' => [
+        'meta' => [
+            'h1' => 'Конвертер PDF в Excel',
+        ],
         'seo' => [
             'title' => 'Конвертер PDF в Excel - Бесплатный онлайн-инструмент',
             'h1' => 'Конвертер PDF в Excel',
@@ -150,6 +162,9 @@ return [
 
     // PPT to PDF Converter
     'ppt-to-pdf' => [
+        'meta' => [
+            'h1' => 'Конвертер PowerPoint в PDF',
+        ],
         'seo' => [
             'title' => 'Конвертер PowerPoint в PDF - Бесплатный онлайн-инструмент',
             'h1' => 'Конвертер PowerPoint в PDF',
@@ -184,6 +199,9 @@ return [
 
     // PDF to PPT Converter
     'pdf-to-ppt' => [
+        'meta' => [
+            'h1' => 'Конвертер PDF в PowerPoint',
+        ],
         'seo' => [
             'title' => 'Конвертер PDF в PowerPoint - Бесплатный онлайн-инструмент',
             'h1' => 'Конвертер PDF в PowerPoint',
@@ -218,6 +236,9 @@ return [
 
     // JPG to PDF Converter
     'jpg-to-pdf' => [
+        'meta' => [
+            'h1' => 'Конвертер JPG в PDF',
+        ],
         'seo' => [
             'title' => 'Конвертер JPG в PDF - Бесплатный онлайн-инструмент',
             'h1' => 'Конвертер JPG в PDF',
@@ -252,6 +273,9 @@ return [
 
     // PDF to JPG Converter
     'pdf-to-jpg' => [
+        'meta' => [
+            'h1' => 'Конвертер PDF в JPG',
+        ],
         'seo' => [
             'title' => 'Конвертер PDF в JPG - Бесплатный онлайн-инструмент',
             'h1' => 'Конвертер PDF в JPG',
@@ -286,6 +310,9 @@ return [
 
     // PDF Compressor
     'pdf-compressor' => [
+        'meta' => [
+            'h1' => 'Сжатие PDF',
+        ],
         'seo' => [
             'title' => 'Сжатие PDF - Уменьшить размер PDF файла онлайн',
             'h1' => 'Сжатие PDF',
@@ -326,6 +353,9 @@ return [
 
     // PDF Merger
     'pdf-merger' => [
+        'meta' => [
+            'h1' => 'Объединение PDF',
+        ],
         'seo' => [
             'title' => 'Объединение PDF - Объединить PDF файлы онлайн',
             'h1' => 'Объединение PDF',
@@ -361,6 +391,9 @@ return [
 
     // PDF Splitter
     'pdf-splitter' => [
+        'meta' => [
+            'h1' => 'Разделение PDF',
+        ],
         'seo' => [
             'title' => 'Разделение PDF - Разделить PDF файлы онлайн',
             'h1' => 'Разделение PDF',

@@ -3,6 +3,9 @@
 return [
     // PDF to Word Converter
     'pdf-to-word' => [
+        'meta' => [
+            'h1' => 'PDF to Word Converter',
+        ],
         'seo' => [
             'title' => 'PDF to Word Converter - Free Online Tool',
             'h1' => 'PDF to Word Converter',
@@ -37,6 +40,9 @@ return [
 
     // Word to PDF Converter
     'word-to-pdf' => [
+        'meta' => [
+            'h1' => 'Word to PDF Converter',
+        ],
         'seo' => [
             'title' => 'Word to PDF Converter - Free Online Tool',
             'h1' => 'Word to PDF Converter',
@@ -71,6 +77,9 @@ return [
 
     // Excel to PDF Converter
     'excel-to-pdf' => [
+        'meta' => [
+            'h1' => 'Excel to PDF Converter',
+        ],
         'seo' => [
             'title' => 'Excel to PDF Converter - Free Online Tool',
             'h1' => 'Excel to PDF Converter',
@@ -116,6 +125,9 @@ return [
 
     // PDF to Excel Converter
     'pdf-to-excel' => [
+        'meta' => [
+            'h1' => 'PDF to Excel Converter',
+        ],
         'seo' => [
             'title' => 'PDF to Excel Converter - Free Online Tool',
             'h1' => 'PDF to Excel Converter',
@@ -150,6 +162,9 @@ return [
 
     // PPT to PDF Converter
     'ppt-to-pdf' => [
+        'meta' => [
+            'h1' => 'PowerPoint to PDF Converter',
+        ],
         'seo' => [
             'title' => 'PowerPoint to PDF Converter - Free Online Tool',
             'h1' => 'PowerPoint to PDF Converter',
@@ -184,6 +199,9 @@ return [
 
     // PDF to PPT Converter
     'pdf-to-ppt' => [
+        'meta' => [
+            'h1' => 'PDF to PowerPoint Converter',
+        ],
         'seo' => [
             'title' => 'PDF to PowerPoint Converter - Free Online Tool',
             'h1' => 'PDF to PowerPoint Converter',
@@ -218,6 +236,9 @@ return [
 
     // JPG to PDF Converter
     'jpg-to-pdf' => [
+        'meta' => [
+            'h1' => 'JPG to PDF Converter',
+        ],
         'seo' => [
             'title' => 'JPG to PDF Converter - Free Online Tool',
             'h1' => 'JPG to PDF Converter',
@@ -252,6 +273,9 @@ return [
 
     // PDF to JPG Converter
     'pdf-to-jpg' => [
+        'meta' => [
+            'h1' => 'PDF to JPG Converter',
+        ],
         'seo' => [
             'title' => 'PDF to JPG Converter - Free Online Tool',
             'h1' => 'PDF to JPG Converter',
@@ -286,6 +310,9 @@ return [
 
     // PDF Compressor
     'pdf-compressor' => [
+        'meta' => [
+            'h1' => 'PDF Compressor',
+        ],
         'seo' => [
             'title' => 'PDF Compressor - Reduce PDF File Size Online',
             'h1' => 'PDF Compressor',
@@ -326,6 +353,9 @@ return [
 
     // PDF Merger
     'pdf-merger' => [
+        'meta' => [
+            'h1' => 'PDF Merger',
+        ],
         'seo' => [
             'title' => 'PDF Merger - Combine PDF Files Online',
             'h1' => 'PDF Merger',
@@ -361,6 +391,9 @@ return [
 
     // PDF Splitter
     'pdf-splitter' => [
+        'meta' => [
+            'h1' => 'PDF Splitter',
+        ],
         'seo' => [
             'title' => 'PDF Splitter - Split PDF Files Online',
             'h1' => 'PDF Splitter',

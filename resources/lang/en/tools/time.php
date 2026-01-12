@@ -12,6 +12,9 @@ return [
 
     // Epoch Time Converter
     'epoch-time-converter' => [
+        'meta' => [
+            'h1' => 'Epoch Time Converter',
+        ],
         'seo' => [
             'title' => 'Epoch Time Converter - Unix Timestamp to Date & Date to Timestamp',
             'h1' => 'Epoch Time Converter',
@@ -63,6 +66,9 @@ return [
 
     // Date to Unix Timestamp
     'date-to-unix' => [
+        'meta' => [
+            'h1' => 'Date to Unix Timestamp Converter',
+        ],
         'seo' => [
             'title' => 'Date to Unix Timestamp Converter - Instant & Accurate',
             'h1' => 'Date to Unix Timestamp Converter',
@@ -97,6 +103,9 @@ return [
 
     // Unix Timestamp to Date
     'unix-to-date' => [
+        'meta' => [
+            'h1' => 'Unix Timestamp to Date Converter',
+        ],
         'seo' => [
             'title' => 'Unix Timestamp to Date Converter - Readable DateTime Tool',
             'h1' => 'Unix Timestamp to Date Converter',
@@ -134,6 +143,9 @@ return [
 
     // Local to UTC
     'local-to-utc' => [
+        'meta' => [
+            'h1' => 'Local Time to UTC Converter',
+        ],
         'seo' => [
             'title' => 'Local Time to UTC Converter - Timezone Adjuster',
             'h1' => 'Local Time to UTC Converter',
@@ -183,6 +195,9 @@ return [
 
     // UTC to Local
     'utc-to-local' => [
+        'meta' => [
+            'h1' => 'UTC to Local Time Converter',
+        ],
         'seo' => [
             'title' => 'UTC to Local Time Converter - Global Time Translator',
             'h1' => 'UTC to Local Time Converter',
@@ -218,6 +233,9 @@ return [
 
     // Time Zone Converter
     'time-zone-converter' => [
+        'meta' => [
+            'h1' => 'Time Zone Converter',
+        ],
         'seo' => [
             'title' => 'Time Zone Converter - Global Meeting Planner',
             'h1' => 'Time Zone Converter',

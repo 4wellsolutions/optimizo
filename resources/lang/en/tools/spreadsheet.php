@@ -2,6 +2,9 @@
 
 return [
     'csv-to-sql' => [
+        'meta' => [
+            'h1' => 'CSV to SQL Converter',
+        ],
         'seo' => [
             'title' => 'CSV to SQL Converter - Generate INSERT Statements | Optimizo',
             'h1' => 'CSV to SQL Converter',
@@ -49,6 +52,9 @@ return [
     ],
 
     'csv-to-excel' => [
+        'meta' => [
+            'h1' => 'CSV to Excel Converter',
+        ],
         'seo' => [
             'title' => 'CSV to Excel Converter - Free Online Tool | Optimizo',
             'h1' => 'CSV to Excel Converter',
@@ -82,6 +88,9 @@ return [
     ],
 
     'excel-to-csv' => [
+        'meta' => [
+            'h1' => 'Excel to CSV Converter',
+        ],
         'seo' => [
             'title' => 'Excel to CSV Converter - Free XLSX to CSV Tool | Optimizo',
             'h1' => 'Excel to CSV Converter',
@@ -115,6 +124,9 @@ return [
     ],
 
     'google-sheets-to-excel' => [
+        'meta' => [
+            'h1' => 'Google Sheets to Excel Converter',
+        ],
         'seo' => [
             'title' => 'Google Sheets to Excel Converter - Download as XLSX | Optimizo',
             'h1' => 'Google Sheets to Excel Converter',
@@ -148,6 +160,9 @@ return [
     ],
 
     'xls-to-xlsx' => [
+        'meta' => [
+            'h1' => 'XLS to XLSX Converter',
+        ],
         'seo' => [
             'title' => 'XLS to XLSX Converter - Upgrade Excel Format | Optimizo',
             'h1' => 'XLS to XLSX Converter',
@@ -181,6 +196,9 @@ return [
     ],
 
     'xlsx-to-xls' => [
+        'meta' => [
+            'h1' => 'XLSX to XLS Converter',
+        ],
         'seo' => [
             'title' => 'XLSX to XLS Converter - Legacy Excel Format | Optimizo',
             'h1' => 'XLSX to XLS Converter',

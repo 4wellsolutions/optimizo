@@ -1594,7 +1594,7 @@ return [
     ],
     'json-sql-converter' => [
         'meta' => [
-            'h1' => 'JSON ↔ SQL Конвертер',
+            'h1' => 'Конвертер JSON ↔ SQL',
             'subtitle' => 'Двустороннее преобразование JSON и SQL',
         ],
         'editor' => [
@@ -1602,13 +1602,13 @@ return [
             'btn_decode' => 'SQL в JSON',
             'label_table' => 'Имя таблицы',
             'ph_table' => 'users',
-            'label_input_json' => 'JSON Массив',
-            'ph_input_json' => '[{"name": "Ivan", "age": 30}]',
-            'label_input_sql' => 'SQL INSERT Запросы',
+            'label_input_json' => 'Введите JSON массив',
+            'ph_input_json' => '[{"name": "Иван", "age": 30}, {"name": "Мария", "age": 25}]',
+            'label_input_sql' => 'Введите SQL INSERT запросы',
             'label_output_sql' => 'SQL Результат',
             'label_output_json' => 'JSON Результат',
-            'ph_output_sql' => 'Здесь будет SQL...',
-            'ph_output_json' => 'Здесь будет JSON...',
+            'ph_output_sql' => 'Результат появится здесь...',
+            'ph_output_json' => 'Результат появится здесь...',
             'btn_convert_sql' => 'В SQL',
             'btn_convert_json' => 'В JSON',
             'btn_clear' => 'Очистить',

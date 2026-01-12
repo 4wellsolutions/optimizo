@@ -2,6 +2,9 @@
 
 return [
     'angle-converter' => [
+        'meta' => [
+            'h1' => 'Angle Converter',
+        ],
         'seo' => [
             'title' => 'Angle Converter - Degrees, Radians, Gradians',
             'h1' => 'Angle Converter',
@@ -47,6 +50,9 @@ return [
     ],
 
     'area-converter' => [
+        'meta' => [
+            'h1' => 'Area Converter',
+        ],
         'seo' => [
             'title' => 'Area Converter - Square Meters, Acres, Hectares',
             'h1' => 'Area Converter',
@@ -96,6 +102,9 @@ return [
     ],
 
     'cooking-unit-converter' => [
+        'meta' => [
+            'h1' => 'Cooking Unit Converter',
+        ],
         'seo' => [
             'title' => 'Cooking Unit Converter - Cups, Tablespoons, Teaspoons',
             'h1' => 'Cooking Unit Converter',
@@ -144,6 +153,9 @@ return [
     ],
 
     'data-transfer-rate-converter' => [
+        'meta' => [
+            'h1' => 'Data Transfer Converter',
+        ],
         'seo' => [
             'title' => 'Data Transfer Converter - Mbps, Gbps, KB/s',
             'h1' => 'Data Transfer Converter',
@@ -191,6 +203,9 @@ return [
     ],
 
     'density-converter' => [
+        'meta' => [
+            'h1' => 'Density Converter',
+        ],
         'seo' => [
             'title' => 'Density Converter - kg/m³, g/cm³, lb/ft³',
             'h1' => 'Density Converter',
@@ -235,6 +250,9 @@ return [
     ],
 
     'digital-storage-converter' => [
+        'meta' => [
+            'h1' => 'Digital Storage Converter',
+        ],
         'seo' => [
             'title' => 'Digital Storage Converter - Bytes, KB, MB, GB, TB',
             'h1' => 'Digital Storage Converter',
@@ -282,6 +300,9 @@ return [
     ],
 
     'energy-converter' => [
+        'meta' => [
+            'h1' => 'Energy Converter',
+        ],
         'seo' => [
             'title' => 'Energy Converter - Joules, Calories, kWh',
             'h1' => 'Energy Converter',
@@ -330,6 +351,9 @@ return [
     ],
 
     'force-converter' => [
+        'meta' => [
+            'h1' => 'Force Converter',
+        ],
         'seo' => [
             'title' => 'Force Converter - Newtons, Pound-force, Kilogram-force',
             'h1' => 'Force Converter',
@@ -375,6 +399,9 @@ return [
     ],
 
     'frequency-converter' => [
+        'meta' => [
+            'h1' => 'Frequency Converter',
+        ],
         'seo' => [
             'title' => 'Frequency Converter - Hertz, kHz, MHz, GHz',
             'h1' => 'Frequency Converter',
@@ -421,6 +448,9 @@ return [
     ],
 
     'fuel-consumption-converter' => [
+        'meta' => [
+            'h1' => 'Fuel Consumption Converter',
+        ],
         'seo' => [
             'title' => 'Fuel Consumption Converter - MPG, km/L, L/100km',
             'h1' => 'Fuel Consumption Converter',
@@ -465,6 +495,9 @@ return [
     ],
 
     'length-converter' => [
+        'meta' => [
+            'h1' => 'Length Converter',
+        ],
         'seo' => [
             'title' => 'Length Converter - Free Online Unit Converter',
             'h1' => 'Length Converter',
@@ -512,6 +545,9 @@ return [
     ],
 
     'molar-mass-converter' => [
+        'meta' => [
+            'h1' => 'Molar Mass Converter',
+        ],
         'seo' => [
             'title' => 'Molar Mass Converter - g/mol to kg/mol',
             'h1' => 'Molar Mass Converter',
@@ -555,6 +591,9 @@ return [
     ],
 
     'power-converter' => [
+        'meta' => [
+            'h1' => 'Power Converter',
+        ],
         'seo' => [
             'title' => 'Power Converter - Watts, Kilowatts, Horsepower',
             'h1' => 'Power Converter',
@@ -601,6 +640,9 @@ return [
     ],
 
     'pressure-converter' => [
+        'meta' => [
+            'h1' => 'Pressure Converter',
+        ],
         'seo' => [
             'title' => 'Pressure Converter - Pascal, Bar, PSI, Atm',
             'h1' => 'Pressure Converter',
@@ -647,6 +689,9 @@ return [
     ],
 
     'speed-converter' => [
+        'meta' => [
+            'h1' => 'Speed Converter',
+        ],
         'seo' => [
             'title' => 'Speed Converter - Free Online Unit Converter',
             'h1' => 'Speed Converter',
@@ -692,6 +737,9 @@ return [
     ],
 
     'temperature-converter' => [
+        'meta' => [
+            'h1' => 'Temperature Converter',
+        ],
         'seo' => [
             'title' => 'Temperature Converter - Celsius, Fahrenheit, Kelvin',
             'h1' => 'Temperature Converter',
@@ -736,6 +784,9 @@ return [
     ],
 
     'time-unit-converter' => [
+        'meta' => [
+            'h1' => 'Time Unit Converter',
+        ],
         'seo' => [
             'title' => 'Time Unit Converter - Seconds, Minutes, Hours',
             'h1' => 'Time Unit Converter',
@@ -784,6 +835,9 @@ return [
     ],
 
     'torque-converter' => [
+        'meta' => [
+            'h1' => 'Torque Converter',
+        ],
         'seo' => [
             'title' => 'Torque Converter - Newton-meters, Foot-pounds',
             'h1' => 'Torque Converter',
