@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('slug-generator', 'meta.h1'))
-@section('meta_description', __tool('slug-generator', 'meta.subtitle'))
+@section('title', __tool('slug-generator', 'meta.title'))
+@section('meta_description', __tool('slug-generator', 'meta.description'))
 @section('content')
     <div class="max-w-6xl mx-auto">
         <x-tool-hero :tool="$tool" icon="slug-generator" />

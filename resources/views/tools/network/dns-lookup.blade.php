@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 
-@section('title', __tool('dns-lookup', 'seo.title'))
-@section('meta_description', __tool('dns-lookup', 'seo.description'))
-@section('meta_keywords', __tool('dns-lookup', 'seo.keywords'))
+@section('title', __tool('dns-lookup', 'meta.title'))
+@section('meta_description', __tool('dns-lookup', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

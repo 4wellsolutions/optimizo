@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('password-generator', 'meta.h1'))
-@section('meta_description', __tool('password-generator', 'meta.subtitle'))
+@section('title', __tool('password-generator', 'meta.title'))
+@section('meta_description', __tool('password-generator', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

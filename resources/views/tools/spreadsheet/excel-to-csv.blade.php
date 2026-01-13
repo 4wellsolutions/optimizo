@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('excel-to-csv', 'seo.title', $tool->meta_title ?? $tool->name))
-@section('meta_description', __tool('excel-to-csv', 'seo.description', $tool->meta_description ?? $tool->description))
+@section('title', __tool('excel-to-csv', 'meta.title'))
+@section('meta_description', __tool('excel-to-csv', 'meta.description'))
 
 @section('content')
     <x-tool-hero :tool="$tool" />

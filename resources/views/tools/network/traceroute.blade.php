@@ -1,7 +1,6 @@
 @extends('layouts.app')
-@section('title', __tool('traceroute', 'seo.title'))
-@section('meta_description', __tool('traceroute', 'seo.description'))
-@section('meta_keywords', __tool('traceroute', 'seo.keywords'))
+@section('title', __tool('traceroute', 'meta.title'))
+@section('meta_description', __tool('traceroute', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

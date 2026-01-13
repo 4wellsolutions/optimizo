@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('username-checker', 'meta.h1'))
-@section('meta_description', __tool('username-checker', 'meta.subtitle'))
+@section('title', __tool('username-checker', 'meta.title'))
+@section('meta_description', __tool('username-checker', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

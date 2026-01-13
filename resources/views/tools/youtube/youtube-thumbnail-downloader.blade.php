@@ -1,10 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', __tool('youtube-thumbnail-downloader', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('youtube-thumbnail-downloader', 'seo.description', $tool->meta_description))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
+@section('title', __tool('youtube-thumbnail-downloader', 'meta.title'))
+@section('meta_description', __tool('youtube-thumbnail-downloader', 'meta.description'))
 
 @section('content')
     <div class="max-w-5xl mx-auto">

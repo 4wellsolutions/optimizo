@@ -1,7 +1,7 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
-@section('title', __tool('internet-speed-test', 'meta.h1'))
-@section('meta_description', __tool('internet-speed-test', 'meta.subtitle'))
+@section('title', __tool('internet-speed-test', 'meta.title'))
+@section('meta_description', __tool('internet-speed-test', 'meta.description'))
 
 @section('content')
     <div class="max-w-4xl mx-auto">

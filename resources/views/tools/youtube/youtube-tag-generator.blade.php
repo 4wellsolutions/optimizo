@@ -1,6 +1,7 @@
 ﻿@extends('layouts.app')
 
-@section('title', __tool('youtube-tag-generator', 'seo.title', $tool->meta_title))@section('meta_description', __tool('youtube-tag-generator', 'seo.description', $tool->meta_description))
+@section('title', __tool('youtube-tag-generator', 'meta.title'))
+@section('meta_description', __tool('youtube-tag-generator', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">
@@ -9,11 +10,14 @@
 
         <!-- Tag Generator Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ __tool('youtube-tag-generator', 'form.title') }}</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                {{ __tool('youtube-tag-generator', 'form.title') }}
+            </h2>
             <form id="tagForm">
                 @csrf
                 <div class="mb-6">
-                    <label for="keyword" class="form-label text-base">{{ __tool('youtube-tag-generator', 'form.keyword_label') }}</label>
+                    <label for="keyword"
+                        class="form-label text-base">{{ __tool('youtube-tag-generator', 'form.keyword_label') }}</label>
                     <input type="text" id="keyword" name="keyword" class="form-input"
                         placeholder="{{ __tool('youtube-tag-generator', 'form.keyword_placeholder') }}" required>
                     <p class="text-sm text-gray-500 mt-2">{{ __tool('youtube-tag-generator', 'form.keyword_help') }}</p>
@@ -44,7 +48,8 @@
             <div id="resultsSection" class="hidden mt-8">
                 <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-6">
                     <div class="flex justify-between items-center mb-4">
-                        <h3 class="text-xl font-bold text-gray-900">{{ __tool('youtube-tag-generator', 'results.title') }} (<span id="tagCount">0</span>)</h3>
+                        <h3 class="text-xl font-bold text-gray-900">{{ __tool('youtube-tag-generator', 'results.title') }}
+                            (<span id="tagCount">0</span>)</h3>
                         <button onclick="copyAllTags()" class="btn-secondary flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -65,34 +70,46 @@
         </div>
 
         <!-- SEO Content -->
-        <div class="bg-gradient-to-br from-red-50 via-pink-50 to-rose-50 rounded-3xl p-8 md:p-12 mt-8 border-2 border-red-100 shadow-2xl">
+        <div
+            class="bg-gradient-to-br from-red-50 via-pink-50 to-rose-50 rounded-3xl p-8 md:p-12 mt-8 border-2 border-red-100 shadow-2xl">
             <div class="grid md:grid-cols-3 gap-6 mb-10">
-                <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-red-100 hover:border-red-300 transition-all hover:shadow-2xl">
-                    <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-xl border-2 border-red-100 hover:border-red-300 transition-all hover:shadow-2xl">
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-tag-generator', 'content.feature1_title') }}</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">
+                        {{ __tool('youtube-tag-generator', 'content.feature1_title') }}</h3>
                     <p class="text-gray-600">{{ __tool('youtube-tag-generator', 'content.feature1_desc') }}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-pink-100 hover:border-pink-300 transition-all hover:shadow-2xl">
-                    <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-xl border-2 border-pink-100 hover:border-pink-300 transition-all hover:shadow-2xl">
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-tag-generator', 'content.feature2_title') }}</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">
+                        {{ __tool('youtube-tag-generator', 'content.feature2_title') }}</h3>
                     <p class="text-gray-600">{{ __tool('youtube-tag-generator', 'content.feature2_desc') }}</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-rose-100 hover:border-rose-300 transition-all hover:shadow-2xl">
-                    <div class="w-12 h-12 bg-gradient-to-br from-rose-500 to-red-600 rounded-xl flex items-center justify-center mb-4">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-xl border-2 border-rose-100 hover:border-rose-300 transition-all hover:shadow-2xl">
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-rose-500 to-red-600 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">{{ __tool('youtube-tag-generator', 'content.feature3_title') }}</h3>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">
+                        {{ __tool('youtube-tag-generator', 'content.feature3_title') }}</h3>
                     <p class="text-gray-600">{{ __tool('youtube-tag-generator', 'content.feature3_desc') }}</p>
                 </div>
             </div>
@@ -115,26 +132,32 @@
                 </ul>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-tag-generator', 'content.faq_title') }}</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('youtube-tag-generator', 'content.faq_title') }}
+            </h3>
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q1') }}</h4>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q1') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-tag-generator', 'content.faq_a1') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q2') }}</h4>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q2') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-tag-generator', 'content.faq_a2') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q3') }}</h4>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q3') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-tag-generator', 'content.faq_a3') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q4') }}</h4>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q4') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-tag-generator', 'content.faq_a4') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q5') }}</h4>
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('youtube-tag-generator', 'content.faq_q5') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-tag-generator', 'content.faq_a5') }}</p>
                 </div>
             </div>
@@ -241,10 +264,10 @@
 
                 tags.forEach(tag => {
                     const badge = $(`
-                        <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-semibold hover:bg-indigo-200 transition-colors cursor-pointer">
-                            ${tag}
-                        </span>
-                    `);
+                            <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-semibold hover:bg-indigo-200 transition-colors cursor-pointer">
+                                ${tag}
+                            </span>
+                        `);
                     container.append(badge);
                 });
 

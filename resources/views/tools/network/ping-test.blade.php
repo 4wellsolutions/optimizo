@@ -1,7 +1,6 @@
 @extends('layouts.app')
-@section('title', __tool('ping-test', 'seo.title'))
-@section('meta_description', __tool('ping-test', 'seo.description'))
-@section('meta_keywords', __tool('ping-test', 'seo.keywords'))
+@section('title', __tool('ping-test', 'meta.title'))
+@section('meta_description', __tool('ping-test', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('decimal-octal-converter', 'meta.h1'))
-@section('meta_description', __tool('decimal-octal-converter', 'meta.subtitle'))
+@section('title', __tool('decimal-octal-converter', 'meta.title'))
+@section('meta_description', __tool('decimal-octal-converter', 'meta.description'))
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Hero Section -->

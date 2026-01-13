@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('youtube-monetization-checker', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('youtube-monetization-checker', 'seo.description', $tool->meta_description))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
+@section('title', __tool('youtube-monetization-checker', 'meta.title'))
+@section('meta_description', __tool('youtube-monetization-checker', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

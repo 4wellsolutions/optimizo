@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('broken-links-checker', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('broken-links-checker', 'seo.description', $tool->meta_description))
-@section('meta_keywords', $tool->meta_keywords)
+@section('title', __tool('broken-links-checker', 'meta.title'))
+@section('meta_description', __tool('broken-links-checker', 'meta.description'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

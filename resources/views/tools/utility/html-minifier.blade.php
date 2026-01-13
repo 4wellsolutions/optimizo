@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('html-minifier', 'meta.h1'))
-@section('meta_description', __tool('html-minifier', 'meta.subtitle'))
+@section('title', __tool('html-minifier', 'meta.title'))
+@section('meta_description', __tool('html-minifier', 'meta.description'))
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- SEO-Optimized Header with Gradient Background -->

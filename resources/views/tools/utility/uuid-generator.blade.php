@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('uuid-generator', 'meta.h1'))
-@section('meta_description', __tool('uuid-generator', 'meta.subtitle'))
+@section('title', __tool('uuid-generator', 'meta.title'))
+@section('meta_description', __tool('uuid-generator', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

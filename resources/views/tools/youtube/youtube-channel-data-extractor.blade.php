@@ -1,11 +1,10 @@
 @extends('layouts.app')
 
-@section('title', __tool('youtube-channel-data-extractor', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('youtube-channel-data-extractor', 'seo.description', $tool->meta_description))
+@section('title', __tool('youtube-channel-data-extractor', 'meta.title'))
+@section('meta_description', __tool('youtube-channel-data-extractor', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">
-        <!-- Header -->
         <!-- Header -->
         <x-tool-hero :tool="$tool" />
 

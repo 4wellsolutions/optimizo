@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('tsv-csv-converter', 'meta.h1'))
-@section('meta_description', __tool('tsv-csv-converter', 'meta.subtitle'))
+@section('title', __tool('tsv-csv-converter', 'meta.title'))
+@section('meta_description', __tool('tsv-csv-converter', 'meta.description'))
 
 
 @section('content')

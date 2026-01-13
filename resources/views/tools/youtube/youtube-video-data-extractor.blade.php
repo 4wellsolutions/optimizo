@@ -1,9 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('youtube-video-data-extractor', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('youtube-video-data-extractor', 'seo.description', $tool->meta_description))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
+@section('title', __tool('youtube-video-data-extractor', 'meta.title'))
+@section('meta_description', __tool('youtube-video-data-extractor', 'meta.description'))
 @endif
 
 @section('content')

@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
-@section('title', __tool('pdf-compressor', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('pdf-compressor', 'seo.description', $tool->meta_description))
+@section('title', __tool('pdf-compressor', 'meta.title'))
+@section('meta_description', __tool('pdf-compressor', 'meta.description'))
 @if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
 @endif
 
 @section('content')

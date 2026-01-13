@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('json-formatter', 'meta.h1'))
-@section('meta_description', __tool('json-formatter', 'meta.subtitle'))
+@section('title', __tool('json-formatter', 'meta.title'))
+@section('meta_description', __tool('json-formatter', 'meta.description'))
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- SEO-Optimized Header with Gradient Background -->

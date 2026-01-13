@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('md5-generator', 'meta.h1'))
-@section('meta_description', __tool('md5-generator', 'meta.subtitle'))
+@section('title', __tool('md5-generator', 'meta.title'))
+@section('meta_description', __tool('md5-generator', 'meta.description'))
 @section('content')
     <div class="max-w-4xl mx-auto">
         <!-- Header -->

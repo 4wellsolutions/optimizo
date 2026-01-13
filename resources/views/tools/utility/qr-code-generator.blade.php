@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('qr-code-generator', 'meta.h1'))
-@section('meta_description', __tool('qr-code-generator', 'meta.subtitle'))
+@section('title', __tool('qr-code-generator', 'meta.title'))
+@section('meta_description', __tool('qr-code-generator', 'meta.description'))
 
 @section('content')
     <div class="max-w-5xl mx-auto">

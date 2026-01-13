@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('fuel-consumption-converter', 'seo.title'))
-@section('meta_description', __tool('fuel-consumption-converter', 'seo.description'))
-@section('meta_keywords', __tool('fuel-consumption-converter', 'seo.keywords'))
+@section('title', __tool('fuel-consumption-converter', 'meta.title'))
+@section('meta_description', __tool('fuel-consumption-converter', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

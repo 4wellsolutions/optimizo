@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('rgb-hex-converter', 'meta.h1'))
-@section('meta_description', __tool('rgb-hex-converter', 'meta.subtitle'))
+@section('title', __tool('rgb-hex-converter', 'meta.title'))
+@section('meta_description', __tool('rgb-hex-converter', 'meta.description'))
 
 @section('content')
     <div class="max-w-4xl mx-auto">

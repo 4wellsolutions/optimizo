@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('xlsx-to-xls', 'seo.title', $tool->meta_title ?? $tool->name))
-@section('meta_description', __tool('xlsx-to-xls', 'seo.description', $tool->meta_description ?? $tool->description))
+@section('title', __tool('xlsx-to-xls', 'meta.title'))
+@section('meta_description', __tool('xlsx-to-xls', 'meta.description'))
 
 @section('content')
     <x-tool-hero :tool="$tool" />

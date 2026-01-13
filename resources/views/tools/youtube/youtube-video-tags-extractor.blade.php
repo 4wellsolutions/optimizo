@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('youtube-video-tags-extractor', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('youtube-video-tags-extractor', 'seo.description', $tool->meta_description))
+@section('title', __tool('youtube-video-tags-extractor', 'meta.title'))
+@section('meta_description', __tool('youtube-video-tags-extractor', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

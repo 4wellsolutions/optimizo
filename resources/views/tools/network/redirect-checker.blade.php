@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('redirect-checker', 'seo.title'))
-@section('meta_description', __tool('redirect-checker', 'seo.description'))
-@section('meta_keywords', __tool('redirect-checker', 'seo.keywords'))
+@section('title', __tool('redirect-checker', 'meta.title'))
+@section('meta_description', __tool('redirect-checker', 'meta.description'))
 
 @section('content')
     <div class="max-w-5xl mx-auto">

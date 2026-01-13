@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('sql-to-json', 'meta.h1'))
-@section('meta_description', __tool('sql-to-json', 'meta.subtitle'))
+@section('title', __tool('sql-to-json', 'meta.title'))
+@section('meta_description', __tool('sql-to-json', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

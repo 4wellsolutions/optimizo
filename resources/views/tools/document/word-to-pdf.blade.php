@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
-@section('title', __tool('word-to-pdf', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('word-to-pdf', 'seo.description', $tool->meta_description))
+@section('title', __tool('word-to-pdf', 'meta.title'))
+@section('meta_description', __tool('word-to-pdf', 'meta.description'))
 @if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
 @endif
 
 @section('content')

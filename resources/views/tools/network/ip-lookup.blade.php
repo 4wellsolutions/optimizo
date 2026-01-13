@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('ip-lookup', 'seo.title'))
-@section('meta_description', __tool('ip-lookup', 'seo.description'))
-@section('meta_keywords', __tool('ip-lookup', 'seo.keywords'))
+@section('title', __tool('ip-lookup', 'meta.title'))
+@section('meta_description', __tool('ip-lookup', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

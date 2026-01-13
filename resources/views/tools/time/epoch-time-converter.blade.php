@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('epoch-time-converter', 'seo.title'))
-@section('meta_description', __tool('epoch-time-converter', 'seo.description'))
+@section('title', __tool('epoch-time-converter', 'meta.title'))
+@section('meta_description', __tool('epoch-time-converter', 'meta.description'))
 
 @section('content')
     <x-tool-hero :tool="$tool" />

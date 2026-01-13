@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('tsv-to-csv', 'meta.h1'))
-@section('meta_description', __tool('tsv-to-csv', 'meta.subtitle'))
+@section('title', __tool('tsv-to-csv', 'meta.title'))
+@section('meta_description', __tool('tsv-to-csv', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

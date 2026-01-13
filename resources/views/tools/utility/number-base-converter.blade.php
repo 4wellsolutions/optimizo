@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('number-base-converter', 'meta.h1'))
-@section('meta_description', __tool('number-base-converter', 'meta.subtitle'))
+@section('title', __tool('number-base-converter', 'meta.title'))
+@section('meta_description', __tool('number-base-converter', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

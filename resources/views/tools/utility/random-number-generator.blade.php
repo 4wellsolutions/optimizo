@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('random-number-generator', 'meta.h1'))
-@section('meta_description', __tool('random-number-generator', 'meta.subtitle'))
+@section('title', __tool('random-number-generator', 'meta.title'))
+@section('meta_description', __tool('random-number-generator', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('html-to-markdown-converter', 'meta.h1'))
-@section('meta_description', __tool('html-to-markdown-converter', 'meta.subtitle'))
+@section('title', __tool('html-to-markdown-converter', 'meta.title'))
+@section('meta_description', __tool('html-to-markdown-converter', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

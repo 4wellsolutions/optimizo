@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('xml-formatter', 'meta.h1'))
-@section('meta_description', __tool('xml-formatter', 'meta.subtitle'))
+@section('title', __tool('xml-formatter', 'meta.title'))
+@section('meta_description', __tool('xml-formatter', 'meta.description'))
 @section('content')
     <div class="max-w-7xl mx-auto">
         <x-tool-hero :tool="$tool" icon="xml-formatter" />

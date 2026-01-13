@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('camel-case-converter', 'meta.h1'))
-@section('meta_description', __tool('camel-case-converter', 'meta.subtitle'))
+@section('title', __tool('camel-case-converter', 'meta.title'))
+@section('meta_description', __tool('camel-case-converter', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

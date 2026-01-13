@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('yahoo-serp-checker', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('yahoo-serp-checker', 'seo.description', $tool->meta_description))
-@section('meta_keywords', $tool->meta_keywords)
+@section('title', __tool('yahoo-serp-checker', 'meta.title'))
+@section('meta_description', __tool('yahoo-serp-checker', 'meta.description'))
 
 @section('content')
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -13,7 +12,8 @@
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-indigo-200 mb-8">
             <div class="text-center mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-2">
-                    {{ __tool('yahoo-serp-checker', 'interface.simulation_title') }}</h2>
+                    {{ __tool('yahoo-serp-checker', 'interface.simulation_title') }}
+                </h2>
                 <div class="h-1 w-16 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto rounded-full"></div>
             </div>
 
@@ -53,15 +53,24 @@
                         <div class="relative">
                             <select id="yahooDomain"
                                 class="appearance-none w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent font-medium text-gray-700 bg-white pr-10 cursor-pointer hover:border-indigo-300 transition-colors">
-                                <option value="search.yahoo.com" data-vc="us">{{ __tool('yahoo-serp-checker', 'domains.us') }}</option>
-                                <option value="uk.search.yahoo.com" data-vc="uk">{{ __tool('yahoo-serp-checker', 'domains.uk') }}</option>
-                                <option value="ca.search.yahoo.com" data-vc="ca">{{ __tool('yahoo-serp-checker', 'domains.ca') }}</option>
-                                <option value="au.search.yahoo.com" data-vc="au">{{ __tool('yahoo-serp-checker', 'domains.au') }}</option>
-                                <option value="de.search.yahoo.com" data-vc="de">{{ __tool('yahoo-serp-checker', 'domains.de') }}</option>
-                                <option value="fr.search.yahoo.com" data-vc="fr">{{ __tool('yahoo-serp-checker', 'domains.fr') }}</option>
-                                <option value="it.search.yahoo.com" data-vc="it">{{ __tool('yahoo-serp-checker', 'domains.it') }}</option>
-                                <option value="es.search.yahoo.com" data-vc="es">{{ __tool('yahoo-serp-checker', 'domains.es') }}</option>
-                                <option value="br.search.yahoo.com" data-vc="br">{{ __tool('yahoo-serp-checker', 'domains.br') }}</option>
+                                <option value="search.yahoo.com" data-vc="us">
+                                    {{ __tool('yahoo-serp-checker', 'domains.us') }}</option>
+                                <option value="uk.search.yahoo.com" data-vc="uk">
+                                    {{ __tool('yahoo-serp-checker', 'domains.uk') }}</option>
+                                <option value="ca.search.yahoo.com" data-vc="ca">
+                                    {{ __tool('yahoo-serp-checker', 'domains.ca') }}</option>
+                                <option value="au.search.yahoo.com" data-vc="au">
+                                    {{ __tool('yahoo-serp-checker', 'domains.au') }}</option>
+                                <option value="de.search.yahoo.com" data-vc="de">
+                                    {{ __tool('yahoo-serp-checker', 'domains.de') }}</option>
+                                <option value="fr.search.yahoo.com" data-vc="fr">
+                                    {{ __tool('yahoo-serp-checker', 'domains.fr') }}</option>
+                                <option value="it.search.yahoo.com" data-vc="it">
+                                    {{ __tool('yahoo-serp-checker', 'domains.it') }}</option>
+                                <option value="es.search.yahoo.com" data-vc="es">
+                                    {{ __tool('yahoo-serp-checker', 'domains.es') }}</option>
+                                <option value="br.search.yahoo.com" data-vc="br">
+                                    {{ __tool('yahoo-serp-checker', 'domains.br') }}</option>
                             </select>
                             <div
                                 class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-indigo-600">
@@ -81,8 +90,10 @@
                         <div class="relative">
                             <select id="deviceType"
                                 class="appearance-none w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent font-medium text-gray-700 bg-white pr-10 cursor-pointer hover:border-indigo-300 transition-colors">
-                                <option value="desktop">{{ __tool('yahoo-serp-checker', 'interface.device_desktop') }}</option>
-                                <option value="mobile">{{ __tool('yahoo-serp-checker', 'interface.device_mobile') }}</option>
+                                <option value="desktop">{{ __tool('yahoo-serp-checker', 'interface.device_desktop') }}
+                                </option>
+                                <option value="mobile">{{ __tool('yahoo-serp-checker', 'interface.device_mobile') }}
+                                </option>
                             </select>
                             <div
                                 class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-indigo-600">
@@ -125,7 +136,8 @@
                     </svg>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">
-                    {{ __tool('yahoo-serp-checker', 'content.main_title') }}</h2>
+                    {{ __tool('yahoo-serp-checker', 'content.main_title') }}
+                </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     {{ __tool('yahoo-serp-checker', 'content.main_subtitle') }}
                 </p>
@@ -144,7 +156,8 @@
                         </svg>
                     </div>
                     <h3 class="font-bold text-xl text-gray-900 mb-3">
-                        {{ __tool('yahoo-serp-checker', 'content.feature1_title') }}</h3>
+                        {{ __tool('yahoo-serp-checker', 'content.feature1_title') }}
+                    </h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
                         {{ __tool('yahoo-serp-checker', 'content.feature1_desc') }}
                     </p>
@@ -159,7 +172,8 @@
                         </svg>
                     </div>
                     <h3 class="font-bold text-xl text-gray-900 mb-3">
-                        {{ __tool('yahoo-serp-checker', 'content.feature2_title') }}</h3>
+                        {{ __tool('yahoo-serp-checker', 'content.feature2_title') }}
+                    </h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
                         {{ __tool('yahoo-serp-checker', 'content.feature2_desc') }}
                     </p>
@@ -174,7 +188,8 @@
                         </svg>
                     </div>
                     <h3 class="font-bold text-xl text-gray-900 mb-3">
-                        {{ __tool('yahoo-serp-checker', 'content.feature3_title') }}</h3>
+                        {{ __tool('yahoo-serp-checker', 'content.feature3_title') }}
+                    </h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
                         {{ __tool('yahoo-serp-checker', 'content.feature3_desc') }}
                     </p>
@@ -183,11 +198,13 @@
 
             <!-- Deep Dive Content -->
             <div class="bg-white rounded-2xl p-8 mb-12 border-l-4 border-indigo-500 shadow-sm">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ __tool('yahoo-serp-checker', 'content.why_matters_title') }}</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                    {{ __tool('yahoo-serp-checker', 'content.why_matters_title') }}</h3>
                 <p class="mb-6 text-gray-700 leading-relaxed">
                     {{ __tool('yahoo-serp-checker', 'content.why_matters_desc') }}
                 </p>
-                <h4 class="text-lg font-bold text-gray-900 mb-3">{{ __tool('yahoo-serp-checker', 'content.same_as_bing_title') }}</h4>
+                <h4 class="text-lg font-bold text-gray-900 mb-3">
+                    {{ __tool('yahoo-serp-checker', 'content.same_as_bing_title') }}</h4>
                 <p class="mb-4 text-gray-700">
                     {!! __tool('yahoo-serp-checker', 'content.same_as_bing_desc') !!}
                 </p>
@@ -196,7 +213,8 @@
             <!-- FAQ Section -->
             <div class="mb-8">
                 <h3 class="text-3xl font-black text-center text-gray-900 mb-10">
-                    {{ __tool('yahoo-serp-checker', 'faq.title') }}</h3>
+                    {{ __tool('yahoo-serp-checker', 'faq.title') }}
+                </h3>
                 <div class="space-y-4 max-w-3xl mx-auto">
                     <!-- FAQ Item 1 -->
                     <details class="group bg-white rounded-2xl shadow-sm border border-indigo-100 overflow-hidden">

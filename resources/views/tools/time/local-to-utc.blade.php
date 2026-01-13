@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('local-to-utc', 'seo.title'))
-@section('meta_description', __tool('local-to-utc', 'seo.description'))
+@section('title', __tool('local-to-utc', 'meta.title'))
+@section('meta_description', __tool('local-to-utc', 'meta.description'))
 
 @section('content')
     <x-tool-hero :tool="$tool" />

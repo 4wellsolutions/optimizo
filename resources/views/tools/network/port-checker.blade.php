@@ -1,7 +1,6 @@
 @extends('layouts.app')
-@section('title', __tool('port-checker', 'seo.title'))
-@section('meta_description', __tool('port-checker', 'seo.description'))
-@section('meta_keywords', __tool('port-checker', 'seo.keywords'))
+@section('title', __tool('port-checker', 'meta.title'))
+@section('meta_description', __tool('port-checker', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

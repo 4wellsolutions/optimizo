@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('html-viewer', 'meta.h1'))
-@section('meta_description', __tool('html-viewer', 'meta.subtitle'))
+@section('title', __tool('html-viewer', 'meta.title'))
+@section('meta_description', __tool('html-viewer', 'meta.description'))
 @section('content')
     <div class="w-full">
         <!-- Hero Section -->

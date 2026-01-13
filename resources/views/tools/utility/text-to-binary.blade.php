@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('text-to-binary', 'meta.h1'))
-@section('meta_description', __tool('text-to-binary', 'meta.subtitle'))
+@section('title', __tool('text-to-binary', 'meta.title'))
+@section('meta_description', __tool('text-to-binary', 'meta.description'))
 @section('content')
     <div class="max-w-6xl mx-auto">
         <x-tool-hero :tool="$tool" icon="text-to-binary" />

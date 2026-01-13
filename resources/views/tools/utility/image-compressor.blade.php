@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('image-compressor', 'meta.h1'))
-@section('meta_description', __tool('image-compressor', 'meta.subtitle'))
+@section('title', __tool('image-compressor', 'meta.title'))
+@section('meta_description', __tool('image-compressor', 'meta.description'))
 
 @section('content')
     <div class="max-w-4xl mx-auto">

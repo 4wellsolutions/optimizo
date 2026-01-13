@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('length-converter', 'seo.title'))
-@section('meta_description', __tool('length-converter', 'seo.description'))
-@section('meta_keywords', __tool('length-converter', 'seo.keywords'))
+@section('title', __tool('length-converter', 'meta.title'))
+@section('meta_description', __tool('length-converter', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('user-agent-parser', 'meta.h1'))
-@section('meta_description', __tool('user-agent-parser', 'meta.subtitle'))
+@section('title', __tool('user-agent-parser', 'meta.title'))
+@section('meta_description', __tool('user-agent-parser', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

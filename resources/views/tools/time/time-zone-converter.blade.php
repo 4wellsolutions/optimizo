@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('time-zone-converter', 'seo.title'))
-@section('meta_description', __tool('time-zone-converter', 'seo.description'))
+@section('title', __tool('time-zone-converter', 'meta.title'))
+@section('meta_description', __tool('time-zone-converter', 'meta.description'))
 
 @section('content')
     <x-tool-hero :tool="$tool" />

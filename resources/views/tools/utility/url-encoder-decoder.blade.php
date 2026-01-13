@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('url-encoder-decoder', 'meta.h1'))
-@section('meta_description', __tool('url-encoder-decoder', 'meta.subtitle'))
+@section('title', __tool('url-encoder-decoder', 'meta.title'))
+@section('meta_description', __tool('url-encoder-decoder', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

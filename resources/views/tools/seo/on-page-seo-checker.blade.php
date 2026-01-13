@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('on-page-seo-checker', 'seo.title', $tool->meta_title))
-@section('meta_description', __tool('on-page-seo-checker', 'seo.description', $tool->meta_description))
-@section('meta_keywords', $tool->meta_keywords)
+@section('title', __tool('on-page-seo-checker', 'meta.title'))
+@section('meta_description', __tool('on-page-seo-checker', 'meta.description'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,12 +116,14 @@
                         <div class="grid grid-cols-2 gap-4 text-center">
                             <div class="p-3 bg-blue-50 rounded-xl">
                                 <div class="text-xs text-uppercase text-blue-600 font-bold tracking-wider">
-                                    {{ __tool('on-page-seo-checker', 'labels.desktop') }}</div>
+                                    {{ __tool('on-page-seo-checker', 'labels.desktop') }}
+                                </div>
                                 <div class="text-2xl font-bold text-blue-900" id="desktopScore">--</div>
                             </div>
                             <div class="p-3 bg-pink-50 rounded-xl">
                                 <div class="text-xs text-uppercase text-pink-600 font-bold tracking-wider">
-                                    {{ __tool('on-page-seo-checker', 'labels.mobile') }}</div>
+                                    {{ __tool('on-page-seo-checker', 'labels.mobile') }}
+                                </div>
                                 <div class="text-2xl font-bold text-pink-900" id="mobileScore">--</div>
                             </div>
                         </div>
@@ -147,9 +148,11 @@
         <div
             class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl p-8 md:p-12 shadow-lg border border-indigo-100">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-                {{ __tool('on-page-seo-checker', 'content.main_content_title') }}</h2>
+                {{ __tool('on-page-seo-checker', 'content.main_content_title') }}
+            </h2>
             <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-                {!! __tool('on-page-seo-checker', 'content.main_content_desc') !!}</p>
+                {!! __tool('on-page-seo-checker', 'content.main_content_desc') !!}
+            </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <!-- Feature 1 -->
@@ -157,7 +160,8 @@
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-indigo-50">
                     <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🚀</div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        {{ __tool('on-page-seo-checker', 'features.f1_title') }}</h3>
+                        {{ __tool('on-page-seo-checker', 'features.f1_title') }}
+                    </h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f1_desc') !!}</p>
                 </div>
 
@@ -166,7 +170,8 @@
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-purple-50">
                     <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 text-2xl">📊</div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        {{ __tool('on-page-seo-checker', 'features.f2_title') }}</h3>
+                        {{ __tool('on-page-seo-checker', 'features.f2_title') }}
+                    </h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f2_desc') !!}</p>
                 </div>
 
@@ -175,7 +180,8 @@
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-pink-50">
                     <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🔍</div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        {{ __tool('on-page-seo-checker', 'features.f3_title') }}</h3>
+                        {{ __tool('on-page-seo-checker', 'features.f3_title') }}
+                    </h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f3_desc') !!}</p>
                 </div>
 
@@ -184,7 +190,8 @@
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-blue-50">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-2xl">📱</div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        {{ __tool('on-page-seo-checker', 'features.f4_title') }}</h3>
+                        {{ __tool('on-page-seo-checker', 'features.f4_title') }}
+                    </h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f4_desc') !!}</p>
                 </div>
 
@@ -193,7 +200,8 @@
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-green-50">
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🆓</div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        {{ __tool('on-page-seo-checker', 'features.f5_title') }}</h3>
+                        {{ __tool('on-page-seo-checker', 'features.f5_title') }}
+                    </h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f5_desc') !!}</p>
                 </div>
 
@@ -202,7 +210,8 @@
                     class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-orange-50">
                     <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-2xl">🔗</div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        {{ __tool('on-page-seo-checker', 'features.f6_title') }}</h3>
+                        {{ __tool('on-page-seo-checker', 'features.f6_title') }}
+                    </h3>
                     <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'features.f6_desc') !!}</p>
                 </div>
             </div>
@@ -210,7 +219,8 @@
             <!-- Steps Section -->
             <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 mb-12">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
-                    {{ __tool('on-page-seo-checker', 'content.how_to_title') }}</h2>
+                    {{ __tool('on-page-seo-checker', 'content.how_to_title') }}
+                </h2>
                 <div class="space-y-6">
                     <div class="flex items-start">
                         <div
@@ -218,7 +228,8 @@
                             1</div>
                         <div>
                             <h3 class="text-lg font-bold text-gray-800">
-                                {{ __tool('on-page-seo-checker', 'how_to.step1_title') }}</h3>
+                                {{ __tool('on-page-seo-checker', 'how_to.step1_title') }}
+                            </h3>
                             <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step1_desc') !!}</p>
                         </div>
                     </div>
@@ -228,7 +239,8 @@
                             2</div>
                         <div>
                             <h3 class="text-lg font-bold text-gray-800">
-                                {{ __tool('on-page-seo-checker', 'how_to.step2_title') }}</h3>
+                                {{ __tool('on-page-seo-checker', 'how_to.step2_title') }}
+                            </h3>
                             <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step2_desc') !!}</p>
                         </div>
                     </div>
@@ -238,7 +250,8 @@
                             3</div>
                         <div>
                             <h3 class="text-lg font-bold text-gray-800">
-                                {{ __tool('on-page-seo-checker', 'how_to.step3_title') }}</h3>
+                                {{ __tool('on-page-seo-checker', 'how_to.step3_title') }}
+                            </h3>
                             <p class="text-gray-600">{!! __tool('on-page-seo-checker', 'how_to.step3_desc') !!}</p>
                         </div>
                     </div>
@@ -248,7 +261,8 @@
             <!-- FAQ Section -->
             <div class="space-y-6">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
-                    {{ __tool('on-page-seo-checker', 'faq.title') }}</h2>
+                    {{ __tool('on-page-seo-checker', 'faq.title') }}
+                </h2>
 
                 <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                     <h3 class=" font-bold text-lg text-gray-800 mb-2">{{ __tool('on-page-seo-checker', 'faq.q1') }}</h3>
@@ -409,30 +423,30 @@
                 detailsHtml = '<div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 bg-white/50 p-3 rounded-lg text-sm">';
                 for (const [key, value] of Object.entries(data.details)) {
                     detailsHtml += `
-                                <div class="flex flex-col">
-                                    <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
-                                    <span class="font-bold text-gray-800">${value}</span>
-                                </div>
-                                `;
+                                    <div class="flex flex-col">
+                                        <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
+                                        <span class="font-bold text-gray-800">${value}</span>
+                                    </div>
+                                    `;
                 }
                 detailsHtml += '</div>';
             }
 
             const html = `
-                            <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
-                                <div class="flex justify-between items-start mb-4">
-                                    <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
-                                        <span>${icon}</span> ${data.title}
-                                    </h3>
-                                    <span
-                                        class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
+                                <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                                            <span>${icon}</span> ${data.title}
+                                        </h3>
+                                        <span
+                                            class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
+                                    </div>
+                                    <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
+                                    ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
+                                            class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
+                                    ${detailsHtml}
                                 </div>
-                                <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
-                                ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
-                                        class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
-                                ${detailsHtml}
-                            </div>
-                            `;
+                                `;
             const container = document.getElementById('modulesContainer');
             const div = document.createElement('div');
             div.innerHTML = html;

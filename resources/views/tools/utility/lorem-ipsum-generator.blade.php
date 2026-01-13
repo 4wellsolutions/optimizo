@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('lorem-ipsum-generator', 'meta.h1'))
-@section('meta_description', __tool('lorem-ipsum-generator', 'meta.subtitle'))
+@section('title', __tool('lorem-ipsum-generator', 'meta.title'))
+@section('meta_description', __tool('lorem-ipsum-generator', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

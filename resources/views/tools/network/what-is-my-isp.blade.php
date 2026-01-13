@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('what-is-my-isp', 'seo.title'))
-@section('meta_description', __tool('what-is-my-isp', 'seo.description'))
-@section('meta_keywords', __tool('what-is-my-isp', 'seo.keywords'))
+@section('title', __tool('what-is-my-isp', 'meta.title'))
+@section('meta_description', __tool('what-is-my-isp', 'meta.description'))
 
 @section('content')
     <div class="max-w-4xl mx-auto">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('unicode-encoder', 'meta.h1'))
-@section('meta_description', __tool('unicode-encoder', 'meta.subtitle'))
+@section('title', __tool('unicode-encoder', 'meta.title'))
+@section('meta_description', __tool('unicode-encoder', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

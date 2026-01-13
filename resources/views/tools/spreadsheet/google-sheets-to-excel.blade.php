@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('google-sheets-to-excel', 'seo.title', $tool->meta_title ?? $tool->name))
-@section('meta_description', __tool('google-sheets-to-excel', 'seo.description', $tool->meta_description ?? $tool->description))
+@section('title', __tool('google-sheets-to-excel', 'meta.title'))
+@section('meta_description', __tool('google-sheets-to-excel', 'meta.description'))
 
 @section('content')
     <x-tool-hero :tool="$tool" />
