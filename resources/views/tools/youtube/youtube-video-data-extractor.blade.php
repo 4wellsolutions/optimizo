@@ -2,7 +2,7 @@
 
 @section('title', __tool('youtube-video-data-extractor', 'meta.title'))
 @section('meta_description', __tool('youtube-video-data-extractor', 'meta.description'))
-@endif
+
 
 @section('content')
     <div class="max-w-6xl mx-auto">
