@@ -1792,6 +1792,8 @@ return [
     ],
     'json-parser' => [
         'meta' => [
+            'title' => 'JSON Parser & Validator',
+            'description' => 'Parse, validate, and visualize JSON structure',
             'h1' => 'JSON Parser & Validator',
             'subtitle' => 'Parse, validate, and visualize JSON structure',
         ],
@@ -1874,6 +1876,8 @@ return [
     ],
     'json-to-csv' => [
         'meta' => [
+            'title' => 'JSON to CSV Converter',
+            'description' => 'Convert JSON data to CSV format instantly',
             'h1' => 'JSON to CSV Converter',
             'subtitle' => 'Convert JSON data to CSV format instantly',
         ],
@@ -1932,6 +1936,8 @@ return [
     ],
     'json-to-sql-converter' => [
         'meta' => [
+            'title' => 'JSON to SQL Converter',
+            'description' => 'Convert JSON data to SQL INSERT statements',
             'h1' => 'JSON to SQL Converter',
             'subtitle' => 'Convert JSON data to SQL INSERT statements',
         ],
@@ -2017,9 +2023,10 @@ return [
             ],
         ],
     ],
-
     'json-sql-converter' => [
         'meta' => [
+            'title' => 'Free JSON ↔ SQL Converter',
+            'description' => 'Generate SQL INSERT statements from JSON and vice versa',
             'h1' => 'Free JSON ↔ SQL Converter',
             'subtitle' => 'Generate SQL INSERT statements from JSON and vice versa',
         ],
@@ -2120,6 +2127,8 @@ return [
     ],
     'json-to-xml' => [
         'meta' => [
+            'title' => 'Free JSON to XML Converter',
+            'description' => 'Convert JSON data to XML format',
             'h1' => 'JSON to XML Converter',
             'subtitle' => 'Convert JSON data to XML format',
         ],
@@ -2197,6 +2206,8 @@ return [
     ],
     'json-to-yaml-converter' => [
         'meta' => [
+            'title' => 'JSON to YAML Converter',
+            'description' => 'Convert JSON to YAML format',
             'h1' => 'JSON to YAML Converter',
             'subtitle' => 'Convert JSON to YAML format',
         ],
@@ -2285,6 +2296,8 @@ return [
     ],
     'json-xml-converter' => [
         'meta' => [
+            'title' => 'Free JSON ↔ XML Converter',
+            'description' => 'Transform data between JSON and XML formats',
             'h1' => 'Free JSON ↔ XML Converter',
             'subtitle' => 'Transform data between JSON and XML formats',
         ],
@@ -2376,6 +2389,8 @@ return [
     ],
     'json-yaml-converter' => [
         'meta' => [
+            'title' => 'Free JSON ↔ YAML Converter',
+            'description' => 'Effortlessly convert between JSON and YAML formats',
             'h1' => 'Free JSON ↔ YAML Converter',
             'subtitle' => 'Effortlessly convert between JSON and YAML formats',
         ],
@@ -2466,6 +2481,8 @@ return [
     ],
     'jwt-decoder' => [
         'meta' => [
+            'title' => 'JWT Decoder',
+            'description' => 'Decode and inspect JSON Web Tokens (JWT) - View header, payload, and signature!',
             'h1' => 'JWT Decoder',
             'subtitle' => 'Decode and inspect JSON Web Tokens (JWT) - View header, payload, and signature!',
         ],
@@ -2517,6 +2534,8 @@ return [
     ],
     'kebab-case-converter' => [
         'meta' => [
+            'title' => 'Kebab Case Converter',
+            'description' => 'Convert text to kebab-case for URLs and CSS',
             'h1' => 'Kebab Case Converter',
             'subtitle' => 'Convert text to kebab-case for URLs and CSS',
         ],
@@ -2601,6 +2620,8 @@ return [
     ],
     'lorem-ipsum-generator' => [
         'meta' => [
+            'title' => 'Lorem Ipsum Generator',
+            'description' => 'Generate placeholder text for your designs',
             'h1' => 'Lorem Ipsum Generator',
             'subtitle' => 'Generate placeholder text for your designs',
         ],
@@ -2628,6 +2649,8 @@ return [
     ],
     'markdown-to-html-converter' => [
         'meta' => [
+            'title' => 'Markdown to HTML Converter',
+            'description' => 'Convert Markdown to HTML instantly',
             'h1' => 'Markdown to HTML Converter',
             'subtitle' => 'Convert Markdown to HTML instantly',
         ],
@@ -2641,7 +2664,6 @@ return [
             'ph_input' => '# Enter your Markdown here...',
             'label_output' => 'HTML Output',
             'ph_output' => 'HTML output will appear here...',
-
             'label_preview' => 'Live Preview',
             'ph_preview' => 'Preview will appear here...',
         ],
@@ -2651,7 +2673,7 @@ return [
             'error_no_copy' => 'No HTML to copy. Please convert Markdown first.',
             'success_copy' => 'HTML copied to clipboard!',
             'error_no_download' => 'No HTML to download. Please convert Markdown first.',
-            'example' => "# Welcome to Markdown\n\n## This is a subheading\n\nThis is a paragraph with **bold text** and *italic text*.\n\n### Features\n\n- Easy to write\n- Easy to read\n- Converts to HTML\n\n### Code Example\n\n```javascript\nfunction hello() {\n    console.log(\"Hello, World!\");\n}\n```\n\n> This is a blockquote\n\n[Visit our website](https://example.com)",
+            'example' => "# Welcome to Markdown\n\n## This is a subheading\n\nThis is a paragraph with **bold text** and *italic text*.\n\n### Features\n\n- Easy to write\n- Easy to read\n- Converts to HTML\n\n### Code Example\n\n```javascript\nfunction hello() {\n    console.log(\"Hello, World!\");\n}\n```\n\n> This is a blockquote\n\n[Visit our website](https://example.com)",
         ],
         'content' => [
             'hero_title' => '🚀 Free Markdown to HTML Converter',
@@ -2692,6 +2714,8 @@ return [
     ],
     'md5-generator' => [
         'meta' => [
+            'title' => 'MD5 Hash Generator',
+            'description' => 'Generate MD5 hashes from any text instantly',
             'h1' => 'MD5 Hash Generator',
             'subtitle' => 'Generate MD5 hashes from any text instantly',
         ],
@@ -2745,9 +2769,10 @@ return [
             ],
         ],
     ],
-
     'morse-to-text-converter' => [
         'meta' => [
+            'title' => 'Free Morse Code to Text Converter',
+            'description' => 'Decode Morse code into readable text',
             'h1' => 'Free Morse Code to Text Converter',
             'subtitle' => 'Decode Morse code into readable text',
         ],
@@ -2820,6 +2845,8 @@ return [
     ],
     'number-base-converter' => [
         'meta' => [
+            'title' => 'Universal Number Base Converter',
+            'description' => 'Convert numbers between any base from 2 to 36',
             'h1' => 'Universal Number Base Converter',
             'subtitle' => 'Convert numbers between any base from 2 to 36',
         ],
@@ -2903,6 +2930,8 @@ return [
     ],
     'pascal-case-converter' => [
         'meta' => [
+            'title' => 'Free Pascal Case Converter Tool',
+            'description' => 'Convert text to PascalCase for class names and types',
             'h1' => 'Free Pascal Case Converter Tool',
             'subtitle' => 'Convert text to PascalCase for class names and types',
         ],
@@ -2975,6 +3004,8 @@ return [
     ],
     'password-generator' => [
         'meta' => [
+            'title' => 'Secure Password Generator Tool',
+            'description' => 'Generate strong, secure, and random passwords instantly with customizable length and character settings.',
             'h1' => 'Secure Password Generator',
             'subtitle' => 'Generate strong, random passwords instantly',
         ],
@@ -3069,8 +3100,10 @@ return [
     ],
     'qr-code-generator' => [
         'meta' => [
-            'h1' => 'Free Online QR Code Generator - Create & Download Custom QR Codes',
-            'subtitle' => 'Generate permanent, high-quality QR codes for URLs, text, contact info, and WiFi. Download as PNG in multiple sizes.',
+            'title' => 'Free Online QR Code Generator',
+            'description' => 'Create custom QR codes instantly for URLs, text, WiFi, and more. Download high-quality PNG images.',
+            'h1' => 'Free Online QR Code Generator',
+            'subtitle' => 'Create custom QR codes instantly for any purpose',
         ],
         'editor' => [
             'title' => 'Generate QR Code',
@@ -3123,8 +3156,10 @@ return [
     ],
     'random-number-generator' => [
         'meta' => [
-            'h1' => 'Random Number Generation',
-            'subtitle' => 'Generate true random integers within your specified range. Useful for games, lotteries, statistical sampling, and giveaways.',
+            'title' => 'Random Number Generator',
+            'description' => 'Generate true random integers within your specified range. Useful for games, lotteries, and giveaways.',
+            'h1' => 'Random Number Generator',
+            'subtitle' => 'Generate true random integers within your specified range',
         ],
         'editor' => [
             'label_min' => 'Min Value',
@@ -3140,8 +3175,10 @@ return [
     ],
     'rgb-hex-converter' => [
         'meta' => [
-            'h1' => 'RGB to HEX Color Converter - Convert Colors Online',
-            'subtitle' => 'Convert colors between RGB and HEX formats instantly with our free online color converter tool.',
+            'title' => 'RGB to HEX Color Converter',
+            'description' => 'Convert colors between RGB and HEX formats instantly with live preview.',
+            'h1' => 'RGB to HEX Color Converter',
+            'subtitle' => 'Convert colors between RGB and HEX formats instantly',
         ],
         'editor' => [
             'rgb_to_hex' => 'RGB to HEX',
@@ -3235,6 +3272,8 @@ return [
     ],
     'sentence-case-converter' => [
         'meta' => [
+            'title' => 'Free Sentence Case Converter Tool',
+            'description' => 'Convert text to proper sentence case format. Automatically capitalizes first letters.',
             'h1' => 'Free Sentence Case Converter Tool',
             'subtitle' => 'Convert text to proper sentence case format',
         ],
@@ -3368,8 +3407,8 @@ return [
     ],
     'slug-generator' => [
         'meta' => [
-            'title' => 'URL Slug Generator - Create SEO-Friendly URLs',
-            'description' => 'Generate clean, SEO-friendly URL slugs from any text instantly with our free tool',
+            'title' => 'URL Slug Generator',
+            'description' => 'Generate clean, SEO-friendly URL slugs from any text instantly with our free tool.',
             'h1' => 'URL Slug Generator - Create SEO-Friendly URLs',
             'subtitle' => 'Generate clean, SEO-friendly URL slugs from any text instantly',
         ],
@@ -3450,7 +3489,7 @@ return [
     'snake-case-converter' => [
         'meta' => [
             'title' => 'Free Snake Case Converter Tool',
-            'description' => 'Convert text to snake_case for Python and databases with our free online tool',
+            'description' => 'Convert text to snake_case format for Python variables and databases instantly.',
             'h1' => 'Free Snake Case Converter Tool',
             'subtitle' => 'Convert text to snake_case for Python and databases',
         ],
@@ -3567,7 +3606,7 @@ return [
     'sql-to-json' => [
         'meta' => [
             'title' => 'Free SQL to JSON Converter',
-            'description' => 'Transform SQL INSERT statements into JSON format instantly with our free tool',
+            'description' => 'Transform SQL INSERT statements into JSON format instantly. Perfect for API development and migration.',
             'h1' => 'Free SQL to JSON Converter',
             'subtitle' => 'Transform SQL INSERT statements into JSON format instantly',
         ],
@@ -3646,7 +3685,6 @@ return [
             ],
         ],
     ],
-
     'studly-case-converter' => [
         'meta' => [
             'title' => 'Free Studly Case Converter Tool',
@@ -3719,7 +3757,6 @@ return [
             ],
         ],
     ],
-
     'text-reverser' => [
         'meta' => [
             'title' => 'Free Text Reverser Tool',
@@ -3792,11 +3829,10 @@ return [
             ],
         ],
     ],
-
     'text-to-binary' => [
         'meta' => [
             'title' => 'Text to Binary Converter',
-            'description' => 'Convert text to binary code instantly with our free online tool',
+            'description' => 'Convert text to binary code instantly. Encode text into 0s and 1s.',
             'h1' => 'Text to Binary Converter',
             'subtitle' => 'Decode binary code to readable text instantly',
         ],
@@ -3857,11 +3893,10 @@ return [
             ],
         ],
     ],
-
     'text-to-morse-converter' => [
         'meta' => [
             'title' => 'Free Text to Morse Code Converter',
-            'description' => 'Encode text into Morse code with our free online converter',
+            'description' => 'Encode text into Morse code symbols with our free online converter.',
             'h1' => 'Free Text to Morse Code Converter',
             'subtitle' => 'Encode text into Morse code',
         ],
@@ -3932,8 +3967,8 @@ return [
     ],
     'tsv-csv-converter' => [
         'meta' => [
-            'title' => 'Free TSV to CSV Converter',
-            'description' => 'Convert TSV to CSV and CSV to TSV - instant and accurate with our free tool',
+            'title' => 'TSV to CSV Converter',
+            'description' => 'Convert TSV to CSV and CSV to TSV easily. Free online tool for data format conversion.',
             'h1' => 'Free TSV to CSV Converter',
             'subtitle' => 'Convert TSV to CSV and CSV to TSV instant and accurate',
         ],
@@ -4022,7 +4057,7 @@ return [
     'tsv-to-csv' => [
         'meta' => [
             'title' => 'Free TSV to CSV Converter',
-            'description' => 'Transform Tab-Separated Values into Comma-Separated format with our free tool',
+            'description' => 'Transform Tab-Separated Values into Comma-Separated format instantly with our free tool.',
             'h1' => 'Free TSV to CSV Converter',
             'subtitle' => 'Transform Tab-Separated Values into Comma-Separated format',
         ],
@@ -4102,7 +4137,7 @@ return [
     'unicode-encoder-decoder' => [
         'meta' => [
             'title' => 'Free Unicode Encoder & Decoder',
-            'description' => 'Encode and decode Unicode escape sequences for JavaScript and JSON with our free tool',
+            'description' => 'Encode and decode Unicode escape sequences for JavaScript and JSON with our free tool.',
             'h1' => 'Free Unicode Encoder & Decoder',
             'subtitle' => 'Encode and decode Unicode escape sequences for JavaScript and JSON',
         ],
@@ -4183,7 +4218,7 @@ return [
     'url-encoder' => [
         'meta' => [
             'title' => 'Free URL Encoder & Decoder',
-            'description' => 'Encode and decode URLs for safe web transmission with our free online tool',
+            'description' => 'Encode and decode URLs for safe web transmission with our free online tool.',
             'h1' => 'Free URL Encoder & Decoder',
             'subtitle' => 'Encode and decode URLs for safe web transmission',
         ],
@@ -4268,7 +4303,7 @@ return [
     'user-agent-parser' => [
         'meta' => [
             'title' => 'Free User Agent Parser',
-            'description' => 'Identify browser, OS, and device from User Agent string with our free tool',
+            'description' => 'Identify browser, OS, and device from User Agent string with our free tool.',
             'h1' => 'Free User Agent Parser',
             'subtitle' => 'Identify browser, OS, and device from User Agent string',
         ],
@@ -4312,14 +4347,14 @@ return [
                 'q2' => 'Is this parser accurate?',
                 'a2' => 'It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.',
                 'q3' => 'Is my data private?',
-                'a3' => 'Yes, parsing happens locally in your browser (or client-side logic). We do not store your user agent data.',
+                'a3' => 'Yes, parsing happens locally in your browser. We do not store your user agent data.',
             ],
         ],
     ],
     'username-checker' => [
         'meta' => [
             'title' => 'Username Availability Checker',
-            'description' => 'Check username availability across all major social platforms with our free tool',
+            'description' => 'Check username availability across major social platforms instantly.',
             'h1' => 'Username Availability Checker',
             'subtitle' => 'Check username availability across all major social platforms',
         ],
@@ -4394,11 +4429,10 @@ return [
             ],
         ],
     ],
-
     'uuid-generator' => [
         'meta' => [
             'title' => 'UUID Generator',
-            'description' => 'Generate Version 4 UUIDs instantly with our free online tool',
+            'description' => 'Generate Version 4 UUIDs instantly with our free online tool.',
             'h1' => 'UUID Generator',
             'subtitle' => 'Generate Version 4 UUIDs instantly',
         ],
@@ -4422,7 +4456,7 @@ return [
     'xml-formatter' => [
         'meta' => [
             'title' => 'XML Formatter',
-            'description' => 'Format, beautify, and minify XML data with our free online tool',
+            'description' => 'Format, beautify, and minify XML data with our free online tool.',
             'h1' => 'XML Formatter',
             'subtitle' => 'Format, beautify, and minify XML data',
         ],
@@ -4443,7 +4477,7 @@ return [
     'xml-to-csv' => [
         'meta' => [
             'title' => 'Free XML to CSV Converter',
-            'description' => 'Transform XML data into spreadsheet-friendly CSV format with our free tool',
+            'description' => 'Transform XML data into spreadsheet-friendly CSV format instantly.',
             'h1' => 'Free XML to CSV Converter',
             'subtitle' => 'Transform XML data into spreadsheet-friendly CSV format',
         ],
@@ -4520,7 +4554,7 @@ return [
     'xml-to-json' => [
         'meta' => [
             'title' => 'Free XML to JSON Converter Online',
-            'description' => 'Transform XML data into JSON format instantly with our free online converter',
+            'description' => 'Transform XML data into JSON format instantly with our free online converter.',
             'h1' => 'Free XML to JSON Converter Online',
             'subtitle' => 'Transform XML data into JSON format instantly',
         ],
@@ -4603,7 +4637,7 @@ return [
     'yaml-to-json' => [
         'meta' => [
             'title' => 'YAML to JSON Converter',
-            'description' => 'Convert YAML configuration files to JSON format instantly with our free tool',
+            'description' => 'Convert YAML configuration files to JSON format instantly with our free tool.',
             'h1' => 'YAML to JSON Converter',
             'subtitle' => 'Convert YAML configuration files to JSON format instantly',
         ],
@@ -4665,7 +4699,7 @@ return [
     'csv-xml-converter' => [
         'meta' => [
             'title' => 'Free CSV ↔ XML Converter',
-            'description' => 'Convert spreadsheet data to structured XML and back with our free tool',
+            'description' => 'Convert spreadsheet data to structured XML and back with our free tool.',
             'h1' => 'Free CSV ↔ XML Converter',
             'subtitle' => 'Convert spreadsheet data to structured XML and back',
         ],
@@ -4747,7 +4781,7 @@ return [
     'decimal-binary-converter' => [
         'meta' => [
             'title' => 'Free Decimal ↔ Binary Converter',
-            'description' => 'Convert between decimal and binary number systems with our free online tool',
+            'description' => 'Convert between decimal and binary number systems with our free online tool.',
             'h1' => 'Free Decimal ↔ Binary Converter',
             'subtitle' => 'Convert between decimal and binary number systems',
         ],
@@ -4826,7 +4860,7 @@ return [
     'decimal-hex-converter' => [
         'meta' => [
             'title' => 'Free Decimal ↔ Hexadecimal Converter',
-            'description' => 'Convert between decimal and hexadecimal number systems with our free tool',
+            'description' => 'Convert between decimal and hexadecimal number systems with our free tool.',
             'h1' => 'Free Decimal ↔ Hexadecimal Converter',
             'subtitle' => 'Convert between decimal and hexadecimal number systems',
         ],
@@ -4905,7 +4939,7 @@ return [
     'decimal-octal-converter' => [
         'meta' => [
             'title' => 'Free Decimal ↔ Octal Converter',
-            'description' => 'Convert between decimal and octal number systems with our free online tool',
+            'description' => 'Convert between decimal and octal number systems with our free online tool.',
             'h1' => 'Free Decimal ↔ Octal Converter',
             'subtitle' => 'Convert between decimal and octal number systems',
         ],
@@ -4983,11 +5017,10 @@ return [
     ],
     'html-encoder' => [
         'meta' => [
+            'title' => 'Free HTML Encoder & Decoder',
+            'description' => 'Encode and decode HTML entities instantly with our free tool.',
             'h1' => 'Free HTML Encoder & Decoder',
             'subtitle' => 'Encode and decode HTML entities for safe web display',
-            'redirect_title' => 'Redirecting...',
-            'redirect_msg' => 'Redirecting to HTML Encoder/Decoder...',
-            'redirect_manual' => 'Click here if not redirected',
         ],
         'editor' => [
             'btn_encode' => 'Encode HTML',
@@ -5045,380 +5078,4 @@ return [
             ],
         ],
     ],
-    'image-compressor' => [
-        'meta' => [
-            'h1' => 'Free Online Image Compressor - Reduce Image File Size',
-            'subtitle' => 'Compress images online for free without losing quality',
-        ],
-        'editor' => [
-            'label_upload' => 'Upload Image',
-            'drop_title' => 'Drop your image here',
-            'drop_subtitle' => 'or click to browse',
-            'supports' => 'Supports JPG, PNG, WebP formats',
-            'label_quality' => 'Compression Quality:',
-            'title_original' => 'Original',
-            'title_compressed' => 'Compressed',
-            'label_size' => 'Size:',
-            'label_saved' => 'Saved:',
-            'btn_download' => 'Download Compressed Image',
-        ],
-        'content' => [
-            'p1' => 'Compress images online for free without losing quality using our advanced image compression tool. Reduce image file sizes by up to 90% for faster website loading, easier sharing, lower storage costs, and improved SEO. Supports JPG, PNG, and WebP formats with adjustable quality control. All compression happens client-side in your browser - your images never leave your device, ensuring complete privacy and security.',
-            'why_title' => 'Why Compress Images?',
-            'why_list' => [
-                'Faster Website Loading: Compressed images load 3-5x faster, improving user experience and SEO rankings',
-                'Reduced Bandwidth: Save on hosting costs and data transfer fees',
-                'Better Mobile Experience: Smaller images load faster on mobile networks',
-                'Improved SEO: Google prioritizes fast-loading websites in search results',
-                'Storage Savings: Store more images in the same space',
-                'Easier Sharing: Send images via email and messaging apps faster',
-                'Social Media Optimization: Meet platform size requirements without quality loss',
-            ],
-            'formats_title' => 'Supported Image Formats',
-            'formats' => [
-                'jpg' => ['title' => '📷 JPG/JPEG', 'desc' => 'Best for photographs and complex images with many colors. Compression: Lossy, up to 90% size reduction'],
-                'png' => ['title' => '🖼️ PNG', 'desc' => 'Best for graphics, logos, and images with transparency. Compression: Lossless or lossy, maintains transparency'],
-                'webp' => ['title' => '🌐 WebP', 'desc' => 'Modern format with superior compression and quality. Compression: 25-35% smaller than JPG/PNG'],
-            ],
-            'quality_title' => 'Compression Quality Guide',
-            'quality_list' => [
-                '90-100% Quality: Minimal compression, nearly identical to original (use for print)',
-                '80-90% Quality: Excellent balance of quality and file size (recommended for web)',
-                '70-80% Quality: Good quality with significant size reduction (social media)',
-                '50-70% Quality: Noticeable quality loss but very small files (thumbnails)',
-                'Below 50%: Poor quality, only for extreme size reduction needs',
-            ],
-            'how_title' => 'How Image Compression Works',
-            'how_desc' => 'Our tool uses advanced compression algorithms to reduce image file sizes while preserving visual quality. For JPG images, we use lossy compression that removes imperceptible details. For PNG images, we optimize color palettes and remove metadata. All processing happens in your browser using HTML5 Canvas API - no server uploads required, ensuring your images remain private.',
-            'best_title' => 'Best Practices for Image Compression',
-            'best_list' => [
-                'Start with high-quality source images for best compression results',
-                'Use 80-85% quality for web images - perfect balance of quality and size',
-                'Compress images before uploading to websites or social media',
-                'Choose JPG for photos, PNG for graphics with transparency',
-                'Resize images to actual display dimensions before compressing',
-                'Test different quality levels to find optimal compression',
-                'Keep original files backed up before compression',
-                'Use WebP format for modern browsers (best compression)',
-            ],
-            'privacy_title' => 'Privacy & Security',
-            'privacy_desc' => 'Your images are processed entirely in your browser using JavaScript. No files are uploaded to our servers. Your images never leave your device, ensuring complete privacy and security. This also means faster processing and no file size limits.',
-            'faq_title' => 'Frequently Asked Questions',
-            'faq' => [
-                'q1' => 'Does compression reduce image quality?',
-                'a1' => 'Yes, but at 80-90% quality, the difference is imperceptible to human eyes. Our tool lets you adjust quality to find the perfect balance between file size and visual quality.',
-                'q2' => 'Are my images uploaded to your server?',
-                'a2' => 'No! All compression happens in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.',
-                'q3' => "What's the maximum file size I can compress?",
-                'a3' => 'Since processing happens in your browser, there\'s no strict limit. However, very large images (>50MB) may slow down your browser. For best performance, use images under 20MB.',
-                'q4' => 'Can I compress multiple images at once?',
-                'a4' => 'Currently, our tool processes one image at a time for optimal quality control. You can compress multiple images by repeating the process for each file.',
-                'q5' => 'Which format should I use - JPG or PNG?',
-                'a5' => 'Use JPG for photographs and images with many colors. Use PNG for graphics, logos, screenshots, and images requiring transparency. WebP offers best compression for both types.',
-            ],
-        ],
-    ],
-    'internet-speed-test' => [
-        'meta' => [
-            'h1' => 'Internet Speed Test',
-            'subtitle' => 'Test your connection speed instantly!',
-        ],
-        'editor' => [
-            'btn_start' => 'Start Speed Test',
-            'status_init' => 'Initializing...',
-            'status_ping' => 'Testing ping...',
-            'status_download' => 'Testing download speed...',
-            'status_upload' => 'Testing upload speed...',
-            'label_download' => 'Download Speed',
-            'label_upload' => 'Upload Speed',
-            'label_ping' => 'Ping',
-            'label_quality' => 'Connection Quality',
-            'btn_retry' => 'Test Again',
-            'quality_val_excellent' => 'Excellent',
-            'quality_val_very_good' => 'Very Good',
-            'quality_val_good' => 'Good',
-            'quality_val_fair' => 'Fair',
-            'quality_val_poor' => 'Poor',
-        ],
-        'content' => [
-            'p1' => 'Test your internet connection speed instantly with our free online speed test tool. Measure download speed, upload speed, and ping latency in seconds to verify you\'re getting the internet speeds you\'re paying for. Perfect for troubleshooting slow connections, verifying ISP claims, testing WiFi performance, and optimizing your network setup.',
-            'metrics_title' => 'Understanding Speed Test Metrics',
-            'metrics' => [
-                'download' => ['title' => '≡ƒôÑ Download Speed', 'desc' => 'Measures how fast data travels FROM the internet TO your device. Used for: Streaming, downloading files, browsing'],
-                'upload' => ['title' => '≡ƒôñ Upload Speed', 'desc' => 'Measures how fast data travels FROM your device TO the internet. Used for: Video calls, uploading files, live streaming'],
-                'ping' => ['title' => 'ΓÜí Ping (Latency)', 'desc' => 'Measures response time between your device and server (in milliseconds). Important for: Gaming, video calls, real-time applications'],
-            ],
-            'req_title' => 'Internet Speed Requirements by Activity',
-            'req_list' => [
-                'Basic Browsing & Email: 1-5 Mbps download',
-                'HD Video Streaming (1080p): 5-10 Mbps download',
-                '4K Video Streaming: 25+ Mbps download',
-                'Online Gaming: 3-6 Mbps download, <50ms ping',
-                'Video Conferencing (HD): 3-4 Mbps up/down',
-                'Large File Downloads: 50+ Mbps download',
-                'Working from Home: 10-25 Mbps download, 3-10 Mbps upload',
-                'Smart Home (Multiple Devices): 25-50 Mbps download',
-            ],
-            'why_title' => 'Why Test Your Internet Speed?',
-            'why_list' => [
-                'Verify ISP Claims: Ensure you\'re getting the speeds you\'re paying for',
-                'Troubleshoot Slow Connections: Identify network bottlenecks and issues',
-                'Compare Plans: Decide if you need to upgrade your internet package',
-                'Test WiFi Performance: Check signal strength in different locations',
-                'Optimize Streaming: Determine if your connection supports HD/4K streaming',
-                'Gaming Performance: Verify low ping for competitive online gaming',
-                'Remote Work: Ensure stable connection for video calls and file transfers',
-                'Before/After Changes: Test impact of router upgrades or ISP changes',
-            ],
-            'factors_title' => 'Factors Affecting Internet Speed',
-            'factors' => [
-                'congestion' => ['title' => 'Network Congestion', 'desc' => 'Peak usage times (evenings, weekends) can slow speeds as more users share bandwidth'],
-                'wifi' => ['title' => 'WiFi vs Ethernet', 'desc' => 'Wired connections are faster and more stable than WiFi. WiFi speed decreases with distance and obstacles'],
-                'device' => ['title' => 'Device Limitations', 'desc' => 'Older devices, outdated network cards, or too many connected devices can bottleneck speeds'],
-                'router' => ['title' => 'Router Quality', 'desc' => 'Old or low-quality routers can\'t handle high speeds. Upgrade to WiFi 6 for best performance'],
-            ],
-            'improve_title' => 'How to Improve Your Internet Speed',
-            'improve_list' => [
-                'Use Ethernet cable instead of WiFi for critical devices',
-                'Position router centrally and elevated for better WiFi coverage',
-                'Upgrade to a modern router (WiFi 6 or WiFi 6E)',
-                'Close bandwidth-heavy applications and background downloads',
-                'Limit number of connected devices during important tasks',
-                'Update router firmware regularly for performance improvements',
-                'Consider upgrading your internet plan if consistently slow',
-                'Use Quality of Service (QoS) settings to prioritize traffic',
-            ],
-            'tips_title' => 'Testing Tips for Accurate Results',
-            'tips_list' => [
-                'Close all applications and browser tabs except the speed test',
-                'Pause downloads, uploads, and streaming services',
-                'Test multiple times at different times of day',
-                'Use Ethernet connection for most accurate results',
-                'Disconnect other devices from your network temporarily',
-                'Test from different devices to identify device-specific issues',
-            ],
-            'faq_title' => 'Frequently Asked Questions',
-            'faq' => [
-                'q1' => 'Why is my internet slower than advertised?',
-                'a1' => 'ISPs advertise "up to" speeds, not guaranteed speeds. Actual speeds depend on network congestion, WiFi quality, distance from router, and number of connected devices. Test with Ethernet for true connection speed.',
-                'q2' => "What's a good internet speed?",
-                'a2' => 'For general use: 25+ Mbps download. For families/multiple devices: 100+ Mbps. For 4K streaming and gaming: 200+ Mbps. Upload speed of 10+ Mbps is good for video calls and cloud backups.',
-                'q3' => "What's a good ping for gaming?",
-                'a3' => 'Excellent: <20ms, Good: 20-50ms, Average: 50-100ms, Poor:> 100ms. Lower ping means less lag. Competitive gamers need <20ms ping for best performance.',
-                'q4' => 'Why is WiFi slower than Ethernet?',
-                'a4' => 'WiFi signals weaken with distance and obstacles (walls, furniture). Interference from other WiFi networks and devices also reduces speed. Ethernet provides direct, stable connection without these issues.',
-                'q5' => 'How often should I test my internet speed?',
-                'a5' => 'Test monthly to ensure consistent performance, after ISP changes or upgrades, when experiencing slow speeds, and before/after router changes. Test at different times of day for complete picture.',
-            ],
-        ],
-    ],
-    'unicode-encoder' => [
-        'meta' => [
-            'h1' => 'Free Unicode Encoder & Decoder',
-            'subtitle' => 'Convert text to Unicode escape sequences and back',
-            'redirect_title' => 'Redirecting...',
-            'redirect_msg' => 'Redirecting to Unicode Encoder/Decoder...',
-            'redirect_manual' => 'Click here if not redirected',
-        ],
-        'editor' => [
-            'btn_encode' => 'Encode Unicode',
-            'btn_decode' => 'Decode Unicode',
-            'label_input_enc' => 'Enter Text to Encode',
-            'label_input_dec' => 'Enter Unicode to Decode',
-            'label_output_enc' => 'Encoded Unicode',
-            'label_output_dec' => 'Decoded Text',
-            'ph_input_enc' => 'Hello 世界 🌍',
-            'ph_output' => 'Processed Unicode will appear here...',
-            'btn_process_enc' => 'Encode Unicode',
-            'btn_process_dec' => 'Decode Unicode',
-            'btn_clear' => 'Clear',
-            'btn_copy' => 'Copy',
-            'error_empty' => 'Please enter text to process',
-            'success_enc' => '✓ Text encoded to Unicode successfully',
-            'success_dec' => '✓ Unicode decoded successfully',
-            'error_general' => '✗ Error processing Unicode: ',
-            'error_no_copy' => 'No output to copy',
-            'success_copy' => '✓ Copied to clipboard',
-        ],
-        'content' => [
-            'p1' => 'Our free Unicode Encoder & Decoder tool converts text to Unicode escape sequences (\uXXXX format) for use in JavaScript, JSON, and other programming contexts. Perfect for handling international characters and emojis in your code.',
-            'what_title' => 'What is Unicode Encoding?',
-            'what_desc' => 'Unicode encoding converts characters to their \uXXXX escape sequence format, where XXXX is the hexadecimal code point. This allows you to represent any character using only ASCII characters, making it safe for JavaScript strings and JSON data.',
-            'features_title' => 'Features',
-            'features' => [
-                'instant' => ['title' => 'Instant Conversion', 'desc' => 'Encode or decode Unicode in milliseconds'],
-                'all' => ['title' => 'All Languages', 'desc' => 'Supports all Unicode characters and emojis'],
-                'secure' => ['title' => 'Privacy First', 'desc' => 'All processing happens in your browser'],
-            ],
-            'uses_title' => 'Common Use Cases',
-            'uses' => [
-                'js' => ['title' => 'JavaScript Strings', 'desc' => 'Encode special characters for JavaScript string literals'],
-                'json' => ['title' => 'JSON Data', 'desc' => 'Safely include international characters in JSON files'],
-                'i18n' => ['title' => 'Internationalization', 'desc' => 'Handle multilingual text in web applications'],
-                'emoji' => ['title' => 'Emoji Support', 'desc' => 'Encode emojis for cross-platform compatibility'],
-            ],
-            'examples_title' => 'Unicode Examples',
-            'examples' => [
-                'chinese' => ['title' => 'Chinese Character:', 'desc' => 'Original: "世" → Encoded: "\u4e16"'],
-                'emoji' => ['title' => 'Emoji:', 'desc' => 'Original: "🌍" → Encoded: "\ud83c\udf0d"'],
-                'accent' => ['title' => 'Accented Character:', 'desc' => 'Original: "é" → Encoded: "\u00e9"'],
-            ],
-            'faq_title' => 'Frequently Asked Questions',
-            'faq' => [
-                'q1' => 'When should I use Unicode encoding?',
-                'a1' => 'Use Unicode encoding when you need to represent non-ASCII characters in JavaScript strings, JSON data, or when working with internationalization.',
-                'q2' => "What's the difference from URL encoding?",
-                'a2' => 'Unicode encoding uses \uXXXX format for JavaScript/JSON, while URL encoding uses %XX format for URLs. They serve different purposes.',
-                'q3' => 'Is my data secure?',
-                'a3' => 'Yes! All encoding and decoding happens in your browser. Your text never leaves your device.',
-            ],
-        ],
-    ],
-
-    'decimal-octal-converter' => [
-        'meta' => [
-            'h1' => 'Free Decimal ↔ Octal Converter',
-            'subtitle' => 'Convert between decimal and octal number systems',
-        ],
-        'editor' => [
-            'to_octal' => 'Decimal to Octal',
-            'to_decimal' => 'Octal to Decimal',
-            'label_decimal' => 'Decimal Number',
-            'label_octal' => 'Octal Number',
-            'label_result_octal' => 'Octal Result',
-            'label_result_decimal' => 'Decimal Result',
-            'ph_decimal' => '420',
-            'ph_octal' => '644',
-            'ph_output' => 'Result will appear here...',
-            'btn_convert_octal' => 'Convert to Octal',
-            'btn_convert_decimal' => 'Convert to Decimal',
-            'btn_clear' => 'Clear',
-            'btn_copy' => 'Copy',
-            'error_empty' => 'Please enter a number to convert',
-            'error_invalid_decimal' => 'Invalid decimal number',
-            'error_invalid_octal' => 'Invalid octal number (only digits 0-7 allowed)',
-            'error_general' => 'Error converting number: ',
-            'error_no_copy' => 'No output to copy',
-            'success_octal' => '✓ Converted to octal successfully',
-            'success_decimal' => '✓ Converted to decimal successfully',
-            'success_copy' => '✓ Copied to clipboard',
-        ],
-        'content' => [
-            'p1' => 'Our free Decimal ↔ Octal Converter allows instant conversion between base-10 (decimal) and base-8 (octal) number systems. Essential for legacy computing support, file permission management (chmod), and computer science education.',
-            'format_title' => 'Number System Formats',
-            'format_desc' => 'Decimal uses digits 0-9 (base-10), while octal uses digits 0-7 (base-8). Octal is commonly used in Unix/Linux file permissions and legacy computing systems.',
-            'features_title' => 'Features',
-            'features' => [
-                'fast' => [
-                    'title' => 'Instant Conversion',
-                    'desc' => 'Convert between decimal and octal in milliseconds',
-                ],
-                'bi' => [
-                    'title' => 'Two-Way Tool',
-                    'desc' => 'Convert Decimal to Octal and back',
-                ],
-                'secure' => [
-                    'title' => 'Secure & Private',
-                    'desc' => 'No server uploads needed',
-                ],
-                'copy' => [
-                    'title' => 'Easy Copy',
-                    'desc' => 'Copy results with one click',
-                ],
-                'free' => [
-                    'title' => 'Always Free',
-                    'desc' => 'Unlimited usage',
-                ],
-                'universal' => [
-                    'title' => 'Universal Compatibility',
-                    'desc' => 'Works on all devices and browsers',
-                ],
-            ],
-            'uses_title' => 'Common Use Cases',
-            'uses' => [
-                'linux' => [
-                    'title' => 'File Permissions',
-                    'desc' => 'Calculate Unix/Linux "chmod" values (e.g., 755, 644)',
-                ],
-                'computing' => [
-                    'title' => 'Computing History',
-                    'desc' => 'Work with older computing architectures and aviation electronics (ARINC 429)',
-                ],
-                'permission' => [
-                    'title' => 'Permission Management',
-                    'desc' => 'Understand and set file access rights',
-                ],
-                'legacy' => [
-                    'title' => 'Legacy Systems',
-                    'desc' => 'Support older systems using octal notation',
-                ],
-                'aviation' => [
-                    'title' => 'Aviation Electronics',
-                    'desc' => 'Work with ARINC 429 and similar systems',
-                ],
-                'education' => [
-                    'title' => 'CS Education',
-                    'desc' => 'Learn bases and number system conversion',
-                ],
-            ],
-            'steps_title' => 'How to Use',
-            'steps' => [
-                '1' => [
-                    'title' => 'Select Mode',
-                    'desc' => 'Choose Decimal to Octal or Octal to Decimal',
-                ],
-                '2' => [
-                    'title' => 'Input Number',
-                    'desc' => 'Enter the value to convert',
-                ],
-                '3' => [
-                    'title' => 'Convert',
-                    'desc' => 'Press the convert button',
-                ],
-                '4' => [
-                    'title' => 'Get Result',
-                    'desc' => 'View and copy the converted value',
-                ],
-                '5' => [
-                    'title' => 'Apply',
-                    'desc' => 'Use the octal/decimal value in your task',
-                ],
-            ],
-            'examples_title' => 'Conversion Examples',
-            'examples' => [
-                'small' => [
-                    'title' => 'Small Number',
-                    'desc' => 'Decimal 8 = Octal 10',
-                ],
-                'large' => [
-                    'title' => 'Large Number',
-                    'desc' => 'Decimal 512 = Octal 1000',
-                ],
-                'rights' => [
-                    'title' => 'File Rights',
-                    'desc' => 'Decimal 420 = Octal 644 (rw-r--r--)',
-                ],
-                'max' => [
-                    'title' => 'Max Permissions',
-                    'desc' => 'Decimal 511 = Octal 777 (rwxrwxrwx)',
-                ],
-            ],
-            'faq_title' => 'Frequently Asked Questions',
-            'faq' => [
-                'q1' => 'What is octal?',
-                'a1' => 'Octal is a base-8 number system using digits 0-7. It\'s commonly used in Unix file permissions and legacy computing.',
-                'q2' => 'Why use octal for file permissions?',
-                'a2' => 'Octal provides a compact way to represent Unix file permissions. Each digit (0-7) represents read (4), write (2), and execute (1) permissions.',
-                'q3' => 'How do I convert decimal to octal?',
-                'a3' => 'Divide the decimal number by 8 repeatedly, noting remainders. Read remainders from bottom to top. Or use our tool for instant conversion!',
-                'q4' => 'What does chmod 755 mean?',
-                'a4' => '755 in octal = 493 in decimal. It means: owner has full permissions (7=rwx), group and others have read+execute (5=r-x).',
-                'q5' => 'Is this tool free?',
-                'a5' => 'Yes! Completely free with no limits. All processing happens in your browser for privacy and speed.',
-            ],
-        ],
-    ],
-
 ];
-
-

@@ -39,6 +39,19 @@ class LanguageSeeder extends Seeder
                     'direction' => 'ltr'
                 ]
             );
+
+            // Spanish
+            DB::table('languages')->updateOrInsert(
+                ['code' => 'es'],
+                [
+                    'name' => 'Spanish',
+                    'native_name' => 'Español',
+                    'flag_icon' => '🇪🇸',
+                    'is_default' => false,
+                    'is_active' => true,
+                    'direction' => 'ltr'
+                ]
+            );
         }
     }
 }
