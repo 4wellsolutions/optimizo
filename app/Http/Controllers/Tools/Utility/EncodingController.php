@@ -11,7 +11,7 @@ class EncodingController extends Controller
     public function urlEncode()
     {
         $tool = Tool::where('slug', 'url-encoder')->firstOrFail();
-        return view('tools.utility.url-encoder', compact('tool'));
+        return view('tools.utility.url-encoder-decoder', compact('tool'));
     }
 
     public function urlDecode()

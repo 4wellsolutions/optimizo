@@ -2,10 +2,6 @@
 
 @section('title', __tool('text-reverser', 'meta.h1'))
 @section('meta_description', __tool('text-reverser', 'meta.subtitle'))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
 @section('content')
     <div class="max-w-6xl mx-auto">
         <x-tool-hero :tool="$tool" icon="text-reverser" />

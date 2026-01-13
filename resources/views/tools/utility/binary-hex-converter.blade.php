@@ -2,10 +2,6 @@
 
 @section('title', $tool->meta_title)
 @section('meta_description', $tool->meta_description)
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Hero Section -->

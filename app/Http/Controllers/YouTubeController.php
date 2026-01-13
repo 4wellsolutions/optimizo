@@ -63,7 +63,7 @@ class YouTubeController extends Controller
 
     public function extractor()
     {
-        return view('tools.youtube.youtube-video-extractor');
+        return view('tools.youtube.youtube-video-data-extractor');
     }
 
     public function extractData(Request $request)
@@ -155,7 +155,7 @@ class YouTubeController extends Controller
                 return response()->json(['success' => true, 'data' => $data]);
             }
 
-            return view('tools.youtube.youtube-video-extractor', compact('data'));
+            return view('tools.youtube.youtube-video-data-extractor', compact('data'));
         } catch (\Exception $e) {
             $error = 'Failed to extract video data. Please try again.';
             if ($request->ajax() || $request->wantsJson()) {
@@ -236,7 +236,7 @@ class YouTubeController extends Controller
     // Channel Data Extractor
     public function channel()
     {
-        return view('tools.youtube.youtube-channel');
+        return view('tools.youtube.youtube-channel-data-extractor');
     }
 
     public function extractChannelData(Request $request)
@@ -368,7 +368,7 @@ class YouTubeController extends Controller
                 return response()->json(['success' => true, 'data' => $data]);
             }
 
-            return view('tools.youtube.youtube-channel', compact('data'));
+            return view('tools.youtube.youtube-channel-data-extractor', compact('data'));
         } catch (\Exception $e) {
             $error = 'Failed to extract channel data. Please try again.';
             if ($request->ajax() || $request->wantsJson()) {

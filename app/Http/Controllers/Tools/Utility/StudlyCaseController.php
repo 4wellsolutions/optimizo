@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\Tools\Utility;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
+use App\Models\Tool;
 
 class StudlyCaseController extends Controller
 {
     public function index()
     {
-        $tool = DB::table('tools')->where('slug', 'studly-case-converter')->first();
+        $tool = Tool::where('slug', 'studly-case-converter')->firstOrFail();
         return view('tools.utility.studly-case-converter', compact('tool'));
     }
 }

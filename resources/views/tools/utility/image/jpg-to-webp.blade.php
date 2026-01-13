@@ -2,7 +2,6 @@
 
 @section('title', __tool('jpg-to-webp', 'meta.title'))
 @section('meta_description', __tool('jpg-to-webp', 'meta.desc'))
-@section('meta_keywords', __tool('jpg-to-webp', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,7 +133,8 @@
                 <!-- How-to and FAQ Guide -->
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('jpg-to-webp', 'content.how_to.title') !!}</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">
+                            {!! __tool('jpg-to-webp', 'content.how_to.title') !!}</h3>
                         <ol class="list-decimal pl-5 space-y-3 text-gray-600">
                             @foreach(__tool('jpg-to-webp', 'content.how_to.list') as $step)
                                 <li>{!! $step !!}</li>
@@ -161,53 +161,53 @@
             </article>
         </div>
 
-    @push('scripts')
-    <script>
-        const imageInput = document.getElementById('imageInput');
-        const dropZone = document.getElementById('dropZone');
-        const editorArea = document.getElementById('editorArea');
-        const imagePreview = document.getElementById('imagePreview');
-        const convertBtn = document.getElementById('convertBtn');
-        const qualityRange = document.getElementById('qualityRange');
-        const qualityValue = document.getElementById('qualityValue');
+        @push('scripts')
+            <script>
+                const imageInput = document.getElementById('imageInput');
+                const dropZone = document.getElementById('dropZone');
+                const editorArea = document.getElementById('editorArea');
+                const imagePreview = document.getElementById('imagePreview');
+                const convertBtn = document.getElementById('convertBtn');
+                const qualityRange = document.getElementById('qualityRange');
+                const qualityValue = document.getElementById('qualityValue');
 
-        // Drag & Drop
-        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-orange-500', 'bg-orange-50'); });
-        dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-orange-500', 'bg-orange-50'); });
-        dropZone.addEventListener('drop', (e) => {
-            e.preventDefault();
-            dropZone.classList.remove('border-orange-500', 'bg-orange-50');
-            if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
-        });
+                // Drag & Drop
+                dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-orange-500', 'bg-orange-50'); });
+                dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-orange-500', 'bg-orange-50'); });
+                dropZone.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    dropZone.classList.remove('border-orange-500', 'bg-orange-50');
+                    if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+                });
 
-        imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
+                imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
-        qualityRange.addEventListener('input', (e) => { qualityValue.innerText = Math.round(e.target.value * 100) + '%'; });
+                qualityRange.addEventListener('input', (e) => { qualityValue.innerText = Math.round(e.target.value * 100) + '%'; });
 
-        function handleFile(file) {
-            if (!file.type.match('image.*')) { showError('{!! __tool('jpg-to-webp', 'js.invalid_image') !!}'); return; }
-            const reader = new FileReader();
-            reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
-            reader.readAsDataURL(file);
-        }
+                function handleFile(file) {
+                    if (!file.type.match('image.*')) { showError('{!! __tool('jpg-to-webp', 'js.invalid_image') !!}'); return; }
+                    const reader = new FileReader();
+                    reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
+                    reader.readAsDataURL(file);
+                }
 
-        convertBtn.addEventListener('click', () => {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            const img = new Image();
-            img.src = imagePreview.src;
-            img.onload = () => {
-                canvas.width = img.width;
-                canvas.height = img.height;
-                ctx.drawImage(img, 0, 0);
-                const quality = parseFloat(qualityRange.value);
-                const dataUrl = canvas.toDataURL('image/webp', quality);
-                const link = document.createElement('a');
-                link.download = '{!! __tool('jpg-to-webp', 'js.converted_name') !!}.webp';
-                link.href = dataUrl;
-                link.click();
-            };
-        });
-    </script>
-    @endpush
+                convertBtn.addEventListener('click', () => {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    const img = new Image();
+                    img.src = imagePreview.src;
+                    img.onload = () => {
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        ctx.drawImage(img, 0, 0);
+                        const quality = parseFloat(qualityRange.value);
+                        const dataUrl = canvas.toDataURL('image/webp', quality);
+                        const link = document.createElement('a');
+                        link.download = '{!! __tool('jpg-to-webp', 'js.converted_name') !!}.webp';
+                        link.href = dataUrl;
+                        link.click();
+                    };
+                });
+            </script>
+        @endpush
 @endsection

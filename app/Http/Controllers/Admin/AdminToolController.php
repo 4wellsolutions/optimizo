@@ -50,9 +50,29 @@ class AdminToolController extends Controller
                     $toolData['category_id'] = $categoryId;
                     $toolData['subcategory_id'] = $subcategoryId;
 
+                    // Filter out legacy fields that were removed from the database
+                    $validFields = [
+                        'name',
+                        'slug',
+                        'icon_svg',
+                        'icon_name',
+                        'description',
+                        'category_id',
+                        'subcategory_id',
+                        'controller',
+                        'route_name',
+                        'url',
+                        'is_active',
+                        'priority',
+                        'change_frequency',
+                        'order'
+                    ];
+
+                    $dataToSync = \Illuminate\Support\Arr::only($toolData, $validFields);
+
                     Tool::updateOrCreate(
                         ['slug' => $toolData['slug']],
-                        $toolData
+                        $dataToSync
                     );
                     $count++;
                 }
@@ -179,8 +199,6 @@ class AdminToolController extends Controller
             'icon_name' => 'nullable|string|max:255',
             'category_id' => 'required|exists:categories,id',
             'subcategory_id' => 'nullable|exists:categories,id',
-            'meta_description' => 'nullable|string',
-            'meta_keywords' => 'nullable|string',
             'url' => 'required|string|max:255|unique:tools,url,' . $tool->id,
             'priority' => 'required|numeric|min:0|max:1',
             'change_frequency' => 'required|in:always,hourly,daily,weekly,monthly,yearly,never',

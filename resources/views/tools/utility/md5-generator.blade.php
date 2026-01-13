@@ -2,11 +2,6 @@
 
 @section('title', __tool('md5-generator', 'meta.h1'))
 @section('meta_description', __tool('md5-generator', 'meta.subtitle'))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
-
 @section('content')
     <div class="max-w-4xl mx-auto">
         <!-- Header -->

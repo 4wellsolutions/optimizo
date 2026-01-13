@@ -1,6 +1,6 @@
 <?php
 
-use App\Services\TranslationService;
+
 
 if (!function_exists('__t')) {
     /**
@@ -13,7 +13,10 @@ if (!function_exists('__t')) {
      */
     function __t($model, string $field, ?string $locale = null): ?string
     {
-        return TranslationService::get($model, $field, $locale);
+        // Legacy Stub: Safely return the model attribute directly.
+        // File-based translation is now standard, but this ensures no errors 
+        // if old code still calls __t().
+        return $model->$field ?? null;
     }
 }
 
@@ -28,7 +31,7 @@ if (!function_exists('trans_model')) {
      */
     function trans_model($model, string $field, ?string $locale = null): ?string
     {
-        return TranslationService::get($model, $field, $locale);
+        return $model->$field ?? null;
     }
 }
 
@@ -124,10 +127,19 @@ if (!function_exists('__tool')) {
             'sql' => 'utilities',
             'html' => 'utilities',
             'tsv' => 'utilities',
+            'url' => 'utilities',
+            'user' => 'utilities',
+            'yaml' => 'utilities',
+            'qr' => 'utilities',
+            'barcode' => 'utilities',
+            'color' => 'utilities',
+            'password' => 'utilities',
         ];
 
         // 1. Check for specific tool exceptions first (Highest Priority)
         $exceptions = [
+            // Utility Exceptions
+            'base64-encoder-decoder' => 'utilities',
             // Document Tools
             'word-to-pdf' => 'document',
             'percentage-calculator' => 'math',
@@ -152,6 +164,9 @@ if (!function_exists('__tool')) {
             'xml-to-csv' => 'utilities',
             'csv-to-json' => 'utilities',
             'json-to-csv' => 'utilities',
+            // Google Tools
+            'google-serp-checker' => 'seo',
+            'google-sheets-to-excel' => 'spreadsheet',
         ];
 
         if (isset($exceptions[$toolSlug])) {

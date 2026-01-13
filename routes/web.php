@@ -316,15 +316,20 @@ $definePublicRoutes = function () {
         Route::post('/jpg-to-pdf', [DocumentConverterController::class, 'processJpgToPdf'])->name('jpg-to-pdf.process');
         Route::get('/jpg-to-pdf/download/{filename}', [DocumentConverterController::class, 'downloadJpgToPdf'])->name('jpg-to-pdf.download');
 
-        Route::get('/powerpoint-to-pdf', [DocumentConverterController::class, 'indexPptToPdf'])->name('powerpoint-to-pdf');
-        Route::post('/powerpoint-to-pdf', [DocumentConverterController::class, 'processPptToPdf'])->name('powerpoint-to-pdf.process');
+        Route::get('/powerpoint-to-pdf', [DocumentConverterController::class, 'indexPptToPdf'])->name('ppt-to-pdf');
+        Route::post('/powerpoint-to-pdf', [DocumentConverterController::class, 'processPptToPdf'])->name('ppt-to-pdf.process');
 
         Route::get('/pdf-to-powerpoint', [DocumentConverterController::class, 'indexPdfToPpt'])->name('pdf-to-ppt');
         Route::post('/pdf-to-powerpoint', [DocumentConverterController::class, 'processPdfToPpt'])->name('pdf-to-ppt.process');
 
+
         Route::get('/pdf-compressor', [DocumentConverterController::class, 'indexPdfCompressor'])->name('pdf-compressor');
+        Route::post('/pdf-compressor', [DocumentConverterController::class, 'processPdfCompressor'])->name('pdf-compressor.process');
         Route::get('/pdf-merger', [DocumentConverterController::class, 'indexPdfMerger'])->name('pdf-merger');
+        Route::post('/pdf-merger', [DocumentConverterController::class, 'processPdfMerger'])->name('pdf-merger.process');
         Route::get('/pdf-splitter', [DocumentConverterController::class, 'indexPdfSplitter'])->name('pdf-splitter');
+        Route::post('/pdf-splitter', [DocumentConverterController::class, 'processPdfSplitter'])->name('pdf-splitter.process');
+
 
 
         // Spreadsheet & Data Converters

@@ -2,7 +2,6 @@
 
 @section('title', __tool('png-to-webp', 'meta.title'))
 @section('meta_description', __tool('png-to-webp', 'meta.desc'))
-@section('meta_keywords', __tool('png-to-webp', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +77,8 @@
             <article
                 class="prose prose-lg prose-purple max-w-none bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
                 <h2 class="text-3xl font-black text-gray-900 mb-6 text-center">
-                    {!! __tool('png-to-webp', 'content.title') !!}</h2>
+                    {!! __tool('png-to-webp', 'content.title') !!}
+                </h2>
                 <div class="text-gray-600 text-center mb-12">
                     <p class="mb-4">
                         {!! __tool('png-to-webp', 'content.p1') !!}
@@ -99,7 +99,8 @@
                             </svg>
                         </div>
                         <h3 class="font-bold text-xl mb-2 text-gray-900">
-                            {!! __tool('png-to-webp', 'content.features.smaller.title') !!}</h3>
+                            {!! __tool('png-to-webp', 'content.features.smaller.title') !!}
+                        </h3>
                         <p class="text-sm text-gray-600">{!! __tool('png-to-webp', 'content.features.smaller.desc') !!}</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
@@ -112,7 +113,8 @@
                             </svg>
                         </div>
                         <h3 class="font-bold text-xl mb-2 text-gray-900">
-                            {!! __tool('png-to-webp', 'content.features.transparency.title') !!}</h3>
+                            {!! __tool('png-to-webp', 'content.features.transparency.title') !!}
+                        </h3>
                         <p class="text-sm text-gray-600">{!! __tool('png-to-webp', 'content.features.transparency.desc') !!}
                         </p>
                     </div>
@@ -126,7 +128,8 @@
                             </svg>
                         </div>
                         <h3 class="font-bold text-xl mb-2 text-gray-900">
-                            {!! __tool('png-to-webp', 'content.features.adjustable.title') !!}</h3>
+                            {!! __tool('png-to-webp', 'content.features.adjustable.title') !!}
+                        </h3>
                         <p class="text-sm text-gray-600">{!! __tool('png-to-webp', 'content.features.adjustable.desc') !!}
                         </p>
                     </div>
@@ -134,7 +137,8 @@
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="font-bold text-2xl mb-4 text-gray-900">{!! __tool('png-to-webp', 'content.how_to.title') !!}</h3>
+                        <h3 class="font-bold text-2xl mb-4 text-gray-900">
+                            {!! __tool('png-to-webp', 'content.how_to.title') !!}</h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
                             @foreach(__tool('png-to-webp', 'content.how_to.list') as $step)
                                 <li>{!! $step !!}</li>
@@ -157,51 +161,51 @@
     </div>
 
     @push('scripts')
-    <script>
-        const imageInput = document.getElementById('imageInput');
-        const dropZone = document.getElementById('dropZone');
-        const editorArea = document.getElementById('editorArea');
-        const imagePreview = document.getElementById('imagePreview');
-        const convertBtn = document.getElementById('convertBtn');
-        const qualityRange = document.getElementById('qualityRange');
-        const qualityValue = document.getElementById('qualityValue');
+        <script>
+            const imageInput = document.getElementById('imageInput');
+            const dropZone = document.getElementById('dropZone');
+            const editorArea = document.getElementById('editorArea');
+            const imagePreview = document.getElementById('imagePreview');
+            const convertBtn = document.getElementById('convertBtn');
+            const qualityRange = document.getElementById('qualityRange');
+            const qualityValue = document.getElementById('qualityValue');
 
-        // Drag & Drop
-        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-purple-500', 'bg-purple-50'); });
-        dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-purple-500', 'bg-purple-50'); });
-        dropZone.addEventListener('drop', (e) => {
-            e.preventDefault();
-            dropZone.classList.remove('border-purple-500', 'bg-purple-50');
-            if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
-        });
+            // Drag & Drop
+            dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-purple-500', 'bg-purple-50'); });
+            dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-purple-500', 'bg-purple-50'); });
+            dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropZone.classList.remove('border-purple-500', 'bg-purple-50');
+                if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+            });
 
-        imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
-        qualityRange.addEventListener('input', (e) => { qualityValue.innerText = Math.round(e.target.value * 100) + '%'; });
+            imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
+            qualityRange.addEventListener('input', (e) => { qualityValue.innerText = Math.round(e.target.value * 100) + '%'; });
 
-        function handleFile(file) {
-            if (!file.type.match('image.*')) { showError('{!! __tool('png-to-webp', 'js.invalid_image') !!}'); return; }
-            const reader = new FileReader();
-            reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
-            reader.readAsDataURL(file);
-        }
+            function handleFile(file) {
+                if (!file.type.match('image.*')) { showError('{!! __tool('png-to-webp', 'js.invalid_image') !!}'); return; }
+                const reader = new FileReader();
+                reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
+                reader.readAsDataURL(file);
+            }
 
-        convertBtn.addEventListener('click', () => {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            const img = new Image();
-            img.src = imagePreview.src;
-            img.onload = () => {
-                canvas.width = img.width;
-                canvas.height = img.height;
-                ctx.drawImage(img, 0, 0);
-                const quality = parseFloat(qualityRange.value);
-                const dataUrl = canvas.toDataURL('image/webp', quality);
-                const link = document.createElement('a');
-                link.download = 'converted-image.webp';
-                link.href = dataUrl;
-                link.click();
-            };
-        });
-    </script>
+            convertBtn.addEventListener('click', () => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                const img = new Image();
+                img.src = imagePreview.src;
+                img.onload = () => {
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.drawImage(img, 0, 0);
+                    const quality = parseFloat(qualityRange.value);
+                    const dataUrl = canvas.toDataURL('image/webp', quality);
+                    const link = document.createElement('a');
+                    link.download = 'converted-image.webp';
+                    link.href = dataUrl;
+                    link.click();
+                };
+            });
+        </script>
     @endpush
 @endsection

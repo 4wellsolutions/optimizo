@@ -10,6 +10,6 @@ class UrlEncoderController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'url-encoder-decoder')->firstOrFail();
-        return view('tools.utility.url-encoder', compact('tool'));
+        return view('tools.utility.url-encoder-decoder', compact('tool'));
     }
 }

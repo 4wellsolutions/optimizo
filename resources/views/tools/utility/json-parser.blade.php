@@ -2,10 +2,6 @@
 
 @section('title', __tool('json-parser', 'meta.h1'))
 @section('meta_description', __tool('json-parser', 'meta.subtitle'))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Hero Section -->
@@ -160,13 +156,15 @@
                 <!-- Config -->
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">
-                        {{ __tool('json-parser', 'content.uses.config.title') }}</h4>
+                        {{ __tool('json-parser', 'content.uses.config.title') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('json-parser', 'content.uses.config.desc') }}</p>
                 </div>
                 <!-- Analysis -->
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">
-                        {{ __tool('json-parser', 'content.uses.analysis.title') }}</h4>
+                        {{ __tool('json-parser', 'content.uses.analysis.title') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('json-parser', 'content.uses.analysis.desc') }}</p>
                 </div>
                 <!-- Debug -->
@@ -184,7 +182,8 @@
                 <!-- Migration -->
                 <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
                     <h4 class="font-bold text-lg text-gray-900 mb-3">
-                        {{ __tool('json-parser', 'content.uses.migration.title') }}</h4>
+                        {{ __tool('json-parser', 'content.uses.migration.title') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('json-parser', 'content.uses.migration.desc') }}</p>
                 </div>
             </div>
@@ -192,7 +191,7 @@
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-parser', 'content.how_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <ol class="space-y-3 text-gray-700">
-                    @foreach(__('tools.utilities.json-parser.content.how_steps') as $step)
+                    @foreach(__tool('json-parser', 'content.how_steps') as $step)
                         <li class="flex items-start gap-3">
                             <span class="font-bold text-purple-600 text-lg">{{ $loop->iteration }}.</span>
                             <span>{!! $step !!}</span>
@@ -204,7 +203,7 @@
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-parser', 'content.tips_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <ul class="space-y-3 text-gray-700">
-                    @foreach(__('tools.utilities.json-parser.content.tips_list') as $tip)
+                    @foreach(__tool('json-parser', 'content.tips_list') as $tip)
                         <li class="flex items-start gap-3">
                             <span class="text-green-600 font-bold text-xl">✓</span>
                             <span>{!! $tip !!}</span>
@@ -215,12 +214,13 @@
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-parser', 'content.faq_title') }}</h3>
             <div class="space-y-4">
-                @foreach(__('tools.utilities.json-parser.content.faq') as $key => $value)
+                @foreach(__tool('json-parser', 'content.faq') as $key => $value)
                     @if(str_starts_with($key, 'q'))
                         <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                             <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ $value }}</h4>
                             <p class="text-gray-700 leading-relaxed">
-                                {{ __('tools.utilities.json-parser.content.faq.a' . substr($key, 1)) }}</p>
+                                {{ __tool('json-parser', 'content.faq.a' . substr($key, 1)) }}
+                            </p>
                         </div>
                     @endif
                 @endforeach

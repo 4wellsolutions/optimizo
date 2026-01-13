@@ -6,15 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-use App\Traits\HasTranslations;
+
 
 class Category extends Model
 {
-    use HasTranslations;
-
     protected $fillable = ['name', 'slug', 'description', 'parent_id', 'bg_gradient_from', 'bg_gradient_to', 'text_color'];
-
-    public $translatable = ['name', 'description'];
 
     // Removed posts() as this is now strictly for tools
 

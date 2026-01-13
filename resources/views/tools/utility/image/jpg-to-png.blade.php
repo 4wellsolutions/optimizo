@@ -2,7 +2,6 @@
 
 @section('title', __tool('jpg-to-png', 'meta.title'))
 @section('meta_description', __tool('jpg-to-png', 'meta.desc'))
-@section('meta_keywords', __tool('jpg-to-png', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -163,47 +162,47 @@
 
     <!-- Reuse same script logic but simplified -->
     @push('scripts')
-    <script>
-        const imageInput = document.getElementById('imageInput');
-        const dropZone = document.getElementById('dropZone');
-        const editorArea = document.getElementById('editorArea');
-        const imagePreview = document.getElementById('imagePreview');
-        const convertBtn = document.getElementById('convertBtn');
+        <script>
+            const imageInput = document.getElementById('imageInput');
+            const dropZone = document.getElementById('dropZone');
+            const editorArea = document.getElementById('editorArea');
+            const imagePreview = document.getElementById('imagePreview');
+            const convertBtn = document.getElementById('convertBtn');
 
-        // Drag & Drop
-        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-blue-500', 'bg-blue-50'); });
-        dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-blue-500', 'bg-blue-50'); });
-        dropZone.addEventListener('drop', (e) => {
-            e.preventDefault();
-            dropZone.classList.remove('border-blue-500', 'bg-blue-50');
-            if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
-        });
+            // Drag & Drop
+            dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-blue-500', 'bg-blue-50'); });
+            dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-blue-500', 'bg-blue-50'); });
+            dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropZone.classList.remove('border-blue-500', 'bg-blue-50');
+                if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+            });
 
-        imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
+            imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
-        function handleFile(file) {
-            if (!file.type.match('image.*')) { showError('{!! __tool('jpg-to-png', 'js.invalid_image') !!}'); return; }
-            const reader = new FileReader();
-            reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
-            reader.readAsDataURL(file);
-        }
+            function handleFile(file) {
+                if (!file.type.match('image.*')) { showError('{!! __tool('jpg-to-png', 'js.invalid_image') !!}'); return; }
+                const reader = new FileReader();
+                reader.onload = (e) => { imagePreview.src = e.target.result; editorArea.classList.remove('hidden'); };
+                reader.readAsDataURL(file);
+            }
 
-        convertBtn.addEventListener('click', () => {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            const img = new Image();
-            img.src = imagePreview.src;
-            img.onload = () => {
-                canvas.width = img.width;
-                canvas.height = img.height;
-                ctx.drawImage(img, 0, 0);
-                const dataUrl = canvas.toDataURL('image/png');
-                const link = document.createElement('a');
-                link.download = '{!! __tool('jpg-to-png', 'js.converted_name') !!}.png';
-                link.href = dataUrl;
-                link.click();
-            };
-        });
-    </script>
+            convertBtn.addEventListener('click', () => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                const img = new Image();
+                img.src = imagePreview.src;
+                img.onload = () => {
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.drawImage(img, 0, 0);
+                    const dataUrl = canvas.toDataURL('image/png');
+                    const link = document.createElement('a');
+                    link.download = '{!! __tool('jpg-to-png', 'js.converted_name') !!}.png';
+                    link.href = dataUrl;
+                    link.click();
+                };
+            });
+        </script>
     @endpush
 @endsection

@@ -2,7 +2,6 @@
 
 @section('title', __tool('base64-to-image', 'meta.title'))
 @section('meta_description', __tool('base64-to-image', 'meta.desc'))
-@section('meta_keywords', __tool('base64-to-image', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,52 +154,52 @@
         </div>
 
         @push('scripts')
-        <script>
-            const base64Input = document.getElementById('base64Input');
-            const convertBtn = document.getElementById('convertBtn');
-            const resultArea = document.getElementById('resultArea');
-            const imagePreview = document.getElementById('imagePreview');
-            const downloadBtn = document.getElementById('downloadBtn');
-            const clearBtn = document.getElementById('clearBtn');
+            <script>
+                const base64Input = document.getElementById('base64Input');
+                const convertBtn = document.getElementById('convertBtn');
+                const resultArea = document.getElementById('resultArea');
+                const imagePreview = document.getElementById('imagePreview');
+                const downloadBtn = document.getElementById('downloadBtn');
+                const clearBtn = document.getElementById('clearBtn');
 
-            convertBtn.addEventListener('click', () => {
-                const input = base64Input.value.trim();
-                if (!input) { showError('{!! __tool('base64-to-image', 'js.input_required') !!}'); return; }
+                convertBtn.addEventListener('click', () => {
+                    const input = base64Input.value.trim();
+                    if (!input) { showError('{!! __tool('base64-to-image', 'js.input_required') !!}'); return; }
 
-                // Basic validation/cleanup
-                // Note: Users might paste just the base64 part without data URI prefix.
-                // A robust tool might try to detect common headers, but let's assume if it doesn't start with data:image, we might need to add it or fail.
-                // For now, we set src directly, browsers are good at handling data URIs.
+                    // Basic validation/cleanup
+                    // Note: Users might paste just the base64 part without data URI prefix.
+                    // A robust tool might try to detect common headers, but let's assume if it doesn't start with data:image, we might need to add it or fail.
+                    // For now, we set src directly, browsers are good at handling data URIs.
 
-                imagePreview.src = input;
+                    imagePreview.src = input;
 
-                imagePreview.onerror = () => {
-                    showError('{!! __tool('base64-to-image', 'js.invalid_error') !!}');
+                    imagePreview.onerror = () => {
+                        showError('{!! __tool('base64-to-image', 'js.invalid_error') !!}');
+                        resultArea.classList.add('hidden');
+                    };
+
+                    imagePreview.onload = () => {
+                        resultArea.classList.remove('hidden');
+                    };
+                });
+
+                downloadBtn.addEventListener('click', () => {
+                    const link = document.createElement('a');
+                    link.href = imagePreview.src;
+                    // Try to guess extension from mime
+                    let ext = 'png';
+                    const match = imagePreview.src.match(/data:image\/(.*?);/);
+                    if (match && match[1]) ext = match[1];
+
+                    link.download = 'decoded-image.' + ext;
+                    link.click();
+                });
+
+                clearBtn.addEventListener('click', () => {
+                    base64Input.value = '';
                     resultArea.classList.add('hidden');
-                };
-
-                imagePreview.onload = () => {
-                    resultArea.classList.remove('hidden');
-                };
-            });
-
-            downloadBtn.addEventListener('click', () => {
-                const link = document.createElement('a');
-                link.href = imagePreview.src;
-                // Try to guess extension from mime
-                let ext = 'png';
-                const match = imagePreview.src.match(/data:image\/(.*?);/);
-                if (match && match[1]) ext = match[1];
-
-                link.download = 'decoded-image.' + ext;
-                link.click();
-            });
-
-            clearBtn.addEventListener('click', () => {
-                base64Input.value = '';
-                resultArea.classList.add('hidden');
-                imagePreview.src = '';
-            });
-        </script>
+                    imagePreview.src = '';
+                });
+            </script>
         @endpush
 @endsection

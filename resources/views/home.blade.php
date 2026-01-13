@@ -56,8 +56,8 @@
                     <div class="tool-card-icon">
                         @include('components.tool-icon', ['slug' => $tool->slug])
                     </div>
-                    <h3 class="tool-card-title">{{ __t($tool, 'name') }}</h3>
-                    <p class="tool-card-description">{{ Str::limit(__t($tool, 'meta_description'), 80) }}</p>
+                    <h3 class="tool-card-title">{{ __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'form.title') ?: $tool->slug }}</h3>
+                    <p class="tool-card-description">{{ Str::limit(__tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: '', 80) }}</p>
                 </a>
             @endforeach
         </div>
@@ -92,8 +92,8 @@
                     <div class="tool-card-icon">
                         @include('components.tool-icon', ['slug' => $tool->slug])
                     </div>
-                    <h3 class="tool-card-title">{{ __t($tool, 'name') }}</h3>
-                    <p class="tool-card-description">{{ Str::limit(__t($tool, 'meta_description'), 80) }}</p>
+                    <h3 class="tool-card-title">{{ __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'form.title') ?: $tool->slug }}</h3>
+                    <p class="tool-card-description">{{ Str::limit(__tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: '', 80) }}</p>
                 </a>
             @endforeach
         </div>
@@ -130,8 +130,8 @@
                     <div class="tool-card-icon">
                         @include('components.tool-icon', ['slug' => $tool->slug])
                     </div>
-                    <h3 class="tool-card-title">{{ __t($tool, 'name') }}</h3>
-                    <p class="tool-card-description">{{ Str::limit(__t($tool, 'meta_description'), 80) }}</p>
+                    <h3 class="tool-card-title">{{ __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'form.title') ?: $tool->slug }}</h3>
+                    <p class="tool-card-description">{{ Str::limit(__tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: '', 80) }}</p>
                 </a>
             @endforeach
         </div>
@@ -169,8 +169,8 @@
                                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
                     </div>
-                    <h3 class="tool-card-title">{{ __t($tool, 'name') }}</h3>
-                    <p class="tool-card-description">{{ Str::limit(__t($tool, 'meta_description'), 80) }}</p>
+                    <h3 class="tool-card-title">{{ __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'form.title') ?: $tool->slug }}</h3>
+                    <p class="tool-card-description">{{ Str::limit(__tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: '', 80) }}</p>
                 </a>
             @endforeach
         </div>

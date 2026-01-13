@@ -123,7 +123,7 @@ class DocumentConverterController extends Controller
     // --- PowerPoint to PDF ---
     public function indexPptToPdf()
     {
-        $tool = \App\Models\Tool::where('slug', 'powerpoint-to-pdf')->first();
+        $tool = \App\Models\Tool::where('slug', 'ppt-to-pdf')->first();
         return view('tools.document.ppt-to-pdf', compact('tool'));
     }
 
@@ -233,12 +233,22 @@ class DocumentConverterController extends Controller
         }
     }
 
-    // --- PDF Compressor ---
     public function indexPdfCompressor()
     {
         $tool = \App\Models\Tool::where('slug', 'pdf-compressor')->first();
         return view('tools.document.pdf-compressor', compact('tool'));
     }
+
+    public function processPdfCompressor(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:pdf|max:10240']);
+
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
+    }
+
 
     // --- PDF Merger ---
     public function indexPdfMerger()
@@ -247,11 +257,31 @@ class DocumentConverterController extends Controller
         return view('tools.document.pdf-merger', compact('tool'));
     }
 
+    public function processPdfMerger(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:pdf|max:10240']);
+
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
+    }
+
     // --- PDF Splitter ---
     public function indexPdfSplitter()
     {
         $tool = \App\Models\Tool::where('slug', 'pdf-splitter')->first();
         return view('tools.document.pdf-splitter', compact('tool'));
+    }
+
+    public function processPdfSplitter(Request $request)
+    {
+        $request->validate(['file' => 'required|mimes:pdf|max:10240']);
+
+        return response()->json([
+            'success' => false,
+            'message' => __('This feature is currently in development. Please check back soon!')
+        ], 503);
     }
 
     // --- Download Methods ---

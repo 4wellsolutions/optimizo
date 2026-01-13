@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+
 
 class Language extends Model
 {
@@ -24,13 +24,7 @@ class Language extends Model
         'order' => 'integer',
     ];
 
-    /**
-     * Get all translations for this language
-     */
-    public function translations(): HasMany
-    {
-        return $this->hasMany(Translation::class);
-    }
+
 
     /**
      * Scope to get only active languages

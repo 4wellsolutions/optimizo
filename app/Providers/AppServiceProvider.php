@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
             // Select category_id instead of legacy category string
             $tools = Tool::select('name', 'slug', 'category_id', 'is_active', 'url') // Added 'url'
                 ->where('is_active', true)
-                ->with(['categoryRelation', 'translations']) // Eager load translations
+                ->with(['categoryRelation']) // Eager load category
                 ->get()
                 ->map(function ($tool) use ($localePrefix) {
                     $categoryName = $tool->categoryRelation ? $tool->categoryRelation->slug : 'other';

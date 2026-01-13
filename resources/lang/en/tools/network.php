@@ -1,26 +1,19 @@
 <?php
 
 return [
-    // DNS Lookup Tool
+    // Dns Lookup
     'dns-lookup' => [
         'meta' => [
-            'h1' => 'DNS Lookup Tool',
-        ],
-        'seo' => [
             'title' => 'DNS Lookup Tool - Check DNS Records Online Free',
-            'h1' => 'DNS Lookup Tool',
             'description' => 'Free DNS lookup tool to check DNS records for any domain. View A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.',
-            'keywords' => 'dns lookup, dns checker, dns records, mx records, nameserver lookup, dns query tool',
+            'h1' => 'DNS Lookup Tool',
+            'subtitle' => 'Query DNS records to find nameservers, MX, A, CNAME & TXT records instantly',
         ],
         'form' => [
             'domain_label' => 'Domain Name',
             'domain_placeholder' => 'example.com',
             'button' => 'Lookup DNS',
             'button_loading' => 'Looking up...',
-        ],
-        'results' => [
-            'title' => 'DNS Records',
-            'records_label' => 'Records',
         ],
         'content' => [
             'what_is_title' => 'What is DNS Lookup?',
@@ -35,38 +28,15 @@ return [
             'txt_record' => '<strong>TXT Record:</strong> Text records for verification',
             'cname_record' => '<strong>CNAME Record:</strong> Canonical name alias',
         ],
-        'faq' => [
-            'title' => 'FAQ',
-            'q1' => 'What is DNS?',
-            'a1' => 'DNS (Domain Name System) translates human-readable domain names into IP addresses.',
-            'q2' => 'How long does DNS propagation take?',
-            'a2' => 'DNS changes can take 24-48 hours to fully propagate worldwide.',
-            'q3' => 'Can I lookup any domain?',
-            'a3' => 'Yes, you can lookup DNS records for any publicly registered domain.',
-            'q4' => 'What\'s an MX record?',
-            'a4' => 'MX (Mail Exchange) records specify the mail servers responsible for receiving email.',
-            'q5' => 'Why are multiple DNS records returned?',
-            'a5' => 'Domains often have multiple records for redundancy and different purposes.',
-        ],
-        'js' => [
-            'looking_up' => 'Looking up...',
-            'lookup_dns' => 'Lookup DNS',
-            'success' => '✓ DNS lookup successful!',
-            'error' => '✗ An error occurred',
-            'records_label' => 'Records',
-        ],
     ],
 
-    // Domain to IP Tool
+    // Domain To Ip
     'domain-to-ip' => [
         'meta' => [
-            'h1' => 'Domain to IP Converter',
-        ],
-        'seo' => [
             'title' => 'Domain to IP Converter - Find IP Address of Any Domain Free',
-            'h1' => 'Domain to IP Converter',
             'description' => 'Free domain to IP lookup tool. Instantly convert any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.',
-            'keywords' => 'domain to ip, ip lookup, dns lookup, find ip address, domain ip converter, hostname to ip',
+            'h1' => 'Domain to IP Converter',
+            'subtitle' => 'Resolve domain names to IP addresses with detailed DNS information',
         ],
         'form' => [
             'domain_label' => 'Enter Domain Name',
@@ -74,11 +44,6 @@ return [
             'domain_hint' => 'Enter domain without http:// or https://',
             'button' => 'Lookup IP Address',
             'button_loading' => 'Looking up...',
-        ],
-        'results' => [
-            'title' => 'DNS Lookup Results',
-            'domain_label' => 'Domain',
-            'ip_label' => 'IP Address',
         ],
         'content' => [
             'main_title' => 'Domain to IP Converter',
@@ -112,53 +77,21 @@ return [
             'tip4' => '✅ Compare IP addresses before and after DNS changes',
             'tip5' => '✅ Identify shared hosting by checking if multiple domains share IPs',
         ],
-        'faq' => [
-            'title' => '❓ Frequently Asked Questions',
-            'q1' => 'What is the difference between a domain and an IP address?',
-            'a1' => 'A domain name (like google.com) is a human-readable address, while an IP address (like 142.250.185.46) is the numerical address computers use to identify servers. DNS translates domain names to IP addresses automatically when you visit websites.',
-            'q2' => 'Can a domain have multiple IP addresses?',
-            'a2' => 'Yes! Many websites use multiple IP addresses for load balancing, redundancy, or CDN distribution. Our tool shows the primary IP address returned by DNS, but domains can have multiple A records pointing to different servers.',
-            'q3' => 'Why would I need to convert a domain to IP?',
-            'a3' => 'Common reasons include: configuring firewalls with IP whitelists, troubleshooting DNS issues, verifying server locations, setting up direct connections, monitoring infrastructure changes, and security analysis to identify hosting providers.',
-            'q4' => 'Do IP addresses change?',
-            'a4' => 'Yes, IP addresses can change when websites migrate servers, switch hosting providers, or update their infrastructure. That\'s why using domain names is more reliable than hardcoding IP addresses in applications.',
-            'q5' => 'Is this tool accurate?',
-            'a5' => 'Yes! Our tool performs real-time DNS queries to get the current IP address for any domain. Results reflect the actual DNS configuration at the time of lookup, ensuring accuracy for troubleshooting and verification.',
-        ],
-        'js' => [
-            'looking_up' => 'Looking up...',
-            'lookup_ip' => 'Lookup IP Address',
-            'error_failed' => 'Failed to lookup domain',
-        ],
     ],
 
-    // IP Lookup Tool
+    // Ip Lookup
     'ip-lookup' => [
         'meta' => [
-            'h1' => 'IP Lookup Tool',
-        ],
-        'seo' => [
             'title' => 'IP Lookup Tool - Get IP Address Information & Geolocation Free',
-            'h1' => 'IP Lookup Tool',
             'description' => 'Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.',
-            'keywords' => 'ip lookup, ip address lookup, ip geolocation, find ip location, ip address information, whois ip',
+            'h1' => 'IP Lookup Tool',
+            'subtitle' => 'Get detailed information about any IP address including location & ISP',
         ],
         'form' => [
             'ip_label' => 'IP Address',
             'ip_placeholder' => '8.8.8.8',
             'button' => 'Lookup IP Address',
             'button_loading' => 'Looking up...',
-        ],
-        'results' => [
-            'title' => 'IP Details',
-            'ip_address' => 'IP Address',
-            'type' => 'Type',
-            'hostname' => 'Hostname',
-            'isp' => 'ISP',
-            'country' => 'Country',
-            'region' => 'Region',
-            'city' => 'City',
-            'timezone' => 'Timezone',
         ],
         'content' => [
             'what_is_title' => 'What is IP Lookup?',
@@ -175,46 +108,21 @@ return [
             'feature4_title' => '⚡ Instant Results',
             'feature4_desc' => 'Fast and accurate lookup',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'Is IP lookup legal?',
-            'a1' => 'Yes, IP lookup is completely legal. IP addresses are public information used for internet routing.',
-            'q2' => 'How accurate is IP geolocation?',
-            'a2' => 'IP geolocation is typically accurate to the city level, but exact location may vary by 50-100 miles.',
-            'q3' => 'Can I lookup my own IP?',
-            'a3' => 'Yes, you can lookup your own IP address to see what information is publicly available about your connection.',
-            'q4' => 'What\'s the difference between IPv4 and IPv6?',
-            'a4' => 'IPv4 uses 32-bit addresses (e.g., 192.168.1.1) while IPv6 uses 128-bit addresses for more available IPs.',
-            'q5' => 'Can IP lookup identify a specific person?',
-            'a5' => 'No, IP lookup only shows ISP and general location. Specific user identification requires ISP cooperation.',
-        ],
-        'js' => [
-            'looking_up' => 'Looking up...',
-            'lookup_ip' => 'Lookup IP Address',
-            'success' => '✓ IP lookup successful!',
-            'error' => '✗ An error occurred. Please try again.',
-        ],
     ],
 
-    // Ping Test Tool
+    // Ping Test
     'ping-test' => [
         'meta' => [
-            'h1' => 'Ping Test Tool',
-        ],
-        'seo' => [
             'title' => 'Ping Test Tool - Check Network Latency & Connectivity Free',
-            'h1' => 'Ping Test Tool',
             'description' => 'Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.',
-            'keywords' => 'ping test, network ping, latency test, packet loss, network connectivity, ping checker, server ping',
+            'h1' => 'Ping Test Tool',
+            'subtitle' => 'Test server response time and network connectivity from multiple locations',
         ],
         'form' => [
             'host_label' => 'Host or IP Address',
             'host_placeholder' => 'google.com or 8.8.8.8',
             'button' => 'Ping Host',
             'button_loading' => 'Pinging...',
-        ],
-        'results' => [
-            'title' => 'Ping Results',
         ],
         'content' => [
             'what_is_title' => 'What is Ping Test?',
@@ -231,37 +139,15 @@ return [
             'interpreting_title' => 'Interpreting Results',
             'interpreting_desc' => 'Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues.',
         ],
-        'faq' => [
-            'title' => 'FAQ',
-            'q1' => 'What is a good ping time?',
-            'a1' => 'Under 50ms is excellent, 50-100ms is good, 100-200ms is acceptable, and above 200ms may cause noticeable lag.',
-            'q2' => 'Why do I get "Request timed out"?',
-            'a2' => 'This means the host didn\'t respond within the timeout period. It could be offline, blocking ICMP, or unreachable due to network issues.',
-            'q3' => 'Can firewalls block ping?',
-            'a3' => 'Yes, many firewalls block ICMP packets for security reasons. A failed ping doesn\'t always mean the host is down.',
-            'q4' => 'What causes high ping times?',
-            'a4' => 'Network congestion, long physical distance, poor routing, server overload, or internet connection issues can all increase latency.',
-            'q5' => 'How often should I ping?',
-            'a5' => 'For monitoring, ping every few minutes. For troubleshooting, continuous ping helps identify intermittent issues.',
-        ],
-        'js' => [
-            'pinging' => 'Pinging...',
-            'ping_host' => 'Ping Host',
-            'success' => '✓ Ping test successful!',
-            'error' => '✗ An error occurred',
-        ],
     ],
 
-    // Port Checker Tool
+    // Port Checker
     'port-checker' => [
         'meta' => [
-            'h1' => 'Port Checker Tool',
-        ],
-        'seo' => [
             'title' => 'Port Checker Tool - Check Open Ports & Network Connectivity Free',
-            'h1' => 'Port Checker Tool',
             'description' => 'Free port checker tool to test if ports are open, closed, or filtered. Check TCP/UDP ports instantly for network troubleshooting and security auditing.',
-            'keywords' => 'port checker, open port checker, port scanner, check port status, tcp port checker, network port test',
+            'h1' => 'Port Checker Tool',
+            'subtitle' => 'Check if ports are open on any server for troubleshooting connectivity',
         ],
         'form' => [
             'host_label' => 'Host or IP Address',
@@ -270,9 +156,6 @@ return [
             'port_placeholder' => '80',
             'button' => 'Check Port',
             'button_loading' => 'Checking...',
-        ],
-        'results' => [
-            'title' => 'Port Status',
         ],
         'content' => [
             'what_is_title' => 'What is Port Checker?',
@@ -290,41 +173,21 @@ return [
             'security_title' => 'Security Implications',
             'security_desc' => 'Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others\' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don\'t own.',
         ],
-        'faq' => [
-            'title' => 'FAQ',
-            'q1' => 'What does "port closed" mean?',
-            'a1' => 'A closed port actively rejects connections. The server is reachable but no service is listening on that port.',
-            'q2' => 'What\'s the difference between closed and filtered?',
-            'a2' => 'Closed ports respond with rejection. Filtered ports don\'t respond at all, usually due to firewall blocking.',
-            'q3' => 'Can I check any port?',
-            'a3' => 'Yes, you can check ports 1-65535. However, only check ports on systems you own or have permission to scan.',
-            'q4' => 'Why is my port showing closed when service is running?',
-            'a4' => 'Check firewall rules, ensure the service is listening on the correct interface, and verify port forwarding if behind NAT.',
-            'q5' => 'Is port scanning legal?',
-            'a5' => 'Scanning your own systems is legal. Scanning others without permission may violate laws and terms of service.',
-        ],
-        'js' => [
-            'checking' => 'Checking...',
-            'check_port' => 'Check Port',
-            'success' => '✓ Port check complete!',
-            'error' => '✗ An error occurred',
-        ],
     ],
 
-    // Redirect Checker Tool
+    // Redirect Checker
     'redirect-checker' => [
         'meta' => [
-            'h1' => 'Redirect Checker',
-        ],
-        'seo' => [
             'title' => 'Redirect Checker - HTTP Status Code & Redirect Chain Analyzer Free',
-            'h1' => 'Redirect Checker',
             'description' => 'Free redirect checker tool to analyze URL redirects, trace redirect chains, check HTTP status codes, and detect redirect loops. Essential for SEO and debugging.',
-            'keywords' => 'redirect checker, http redirect, 301 redirect, 302 redirect, redirect chain, status code checker, redirect loop detector',
+            'h1' => 'Redirect Checker',
+            'subtitle' => 'Trace HTTP redirects and identify 301, 302 & meta refresh chains',
         ],
         'form' => [
             'url_label' => 'Enter URL(s) to Check (One per line, max 10)',
-            'url_placeholder' => "https://example.com\nhttps://another-site.com\nhttps://third-site.com",
+            'url_placeholder' => 'https://example.com
+https://another-site.com
+https://third-site.com',
             'url_count' => '{count} / 10 URLs',
             'canonical_check' => 'Also check domain canonical (www vs non-www)',
             'user_agent_label' => 'User Agent',
@@ -335,11 +198,6 @@ return [
             'user_agent_iphone' => 'iPhone (Safari)',
             'user_agent_android' => 'Android (Chrome)',
             'button' => 'Check URLs',
-        ],
-        'loading' => [
-            'analyzing' => 'Analyzing URL...',
-            'progress' => '{checked} / {total} URLs checked',
-            'progress_domains' => '{checked} / {total} domains checked',
         ],
         'content' => [
             'main_title' => 'Redirect & HTTP Status Checker Tool',
@@ -410,46 +268,21 @@ return [
             'best_practice6' => '• Keep redirects active for at least 1 year after URL changes',
             'best_practice7' => '• Use 302 redirects sparingly and only for truly temporary situations',
         ],
-        'faq' => [
-            'title' => '❓ Frequently Asked Questions',
-            'q1' => 'How many redirects are too many?',
-            'a1' => 'Google recommends keeping redirect chains to a maximum of 3-5 hops, but ideally you should have 0-1 redirects. Each redirect adds latency (typically 100-300ms) and dilutes link equity by approximately 10-15% per hop.',
-            'q2' => 'What causes redirect loops?',
-            'a2' => 'Common causes include misconfigured .htaccess or nginx rules, conflicting redirect rules, incorrect CMS settings, or circular redirects between HTTP/HTTPS or www/non-www versions.',
-            'q3' => 'Should I use 301 or 302 for site maintenance?',
-            'a3' => 'Use 302 (temporary) for maintenance pages since you plan to restore the original URL. Using 301 (permanent) tells search engines the move is permanent and they may deindex the original URL.',
-            'q4' => 'How do I fix a broken redirect chain?',
-            'a4' => 'Identify the broken link in the chain (usually a 404 or 500 error), then update the redirect before it to point directly to the final working destination, bypassing the broken URL.',
-        ],
-        'js' => [
-            'check_urls' => 'Check URLs',
-            'analyzing' => 'Analyzing URL...',
-            'alert_enter_url' => 'Please enter at least one URL',
-            'error_investigation' => 'Investigation failed',
-            'error_checking' => 'Error checking canonical versions for: {url}',
-        ],
     ],
 
-    // Reverse DNS Tool
+    // Reverse Dns
     'reverse-dns' => [
         'meta' => [
-            'h1' => 'Reverse DNS Lookup Tool',
-        ],
-        'seo' => [
             'title' => 'Reverse DNS Lookup Tool - Find Hostname from IP Address Free',
-            'h1' => 'Reverse DNS Lookup Tool',
             'description' => 'Free reverse DNS lookup tool to find the hostname associated with any IP address. Check PTR records instantly for email verification and network troubleshooting.',
-            'keywords' => 'reverse dns, reverse dns lookup, ptr record, ip to hostname, reverse ip lookup, rdns checker',
+            'h1' => 'Reverse DNS Lookup Tool',
+            'subtitle' => 'Perform reverse DNS lookup to find hostname from IP address',
         ],
         'form' => [
             'ip_label' => 'IP Address',
             'ip_placeholder' => '8.8.8.8',
             'button' => 'Lookup Hostname',
             'button_loading' => 'Looking up...',
-        ],
-        'results' => [
-            'title' => 'Reverse DNS Results',
-            'hostname' => 'Hostname',
         ],
         'content' => [
             'what_is_title' => 'What is Reverse DNS?',
@@ -466,40 +299,21 @@ return [
             'use_cases_title' => 'Common Use Cases',
             'use_cases_desc' => 'Email server administrators configure reverse DNS to ensure their mail servers aren\'t flagged as spam. Network engineers verify that server IP addresses have correct PTR records matching their hostnames. Security analysts investigate suspicious connections by looking up the hostnames of attacking IP addresses. Website owners analyze traffic sources by resolving visitor IP addresses to hostnames. System administrators troubleshoot network issues by verifying DNS configuration integrity through forward and reverse lookup consistency checks.',
         ],
-        'faq' => [
-            'title' => 'FAQ',
-            'q1' => 'What is a PTR record?',
-            'a1' => 'A PTR record maps an IP address to a hostname, enabling reverse DNS lookups.',
-            'q2' => 'Why is reverse DNS important for email?',
-            'a2' => 'Many email servers reject messages from IPs without proper reverse DNS records as a spam prevention measure.',
-            'q3' => 'Can all IPs be reverse looked up?',
-            'a3' => 'No, only IPs with configured PTR records will return a hostname.',
-        ],
     ],
 
-    // Traceroute Tool
+    // Traceroute
     'traceroute' => [
         'meta' => [
-            'h1' => 'Traceroute Tool',
-        ],
-        'seo' => [
             'title' => 'Traceroute Tool - Trace Network Path & Hops Online Free',
-            'h1' => 'Traceroute Tool',
             'description' => 'Free traceroute tool to trace the network path packets take to reach a destination. View all hops, latency, and routing information instantly for network troubleshooting.',
-            'keywords' => 'traceroute, trace route, network path, network hops, ping trace, route trace, network diagnostic',
+            'h1' => 'Traceroute Tool',
+            'subtitle' => 'Trace network path and identify routing hops to any destination',
         ],
         'form' => [
             'host_label' => 'Host or IP Address',
             'host_placeholder' => 'google.com or 8.8.8.8',
             'button' => 'Trace Route',
             'button_loading' => 'Tracing...',
-        ],
-        'results' => [
-            'title' => 'Traceroute Results',
-            'hop' => 'Hop',
-            'ip' => 'IP Address',
-            'hostname' => 'Hostname',
-            'time' => 'Time',
         ],
         'content' => [
             'what_is_title' => 'What is Traceroute?',
@@ -516,43 +330,15 @@ return [
             'issues_title' => 'Common Issues Revealed',
             'issues_desc' => 'Traceroute can identify routing loops where packets circle between routers, high latency at specific hops indicating network congestion, packet loss at particular points in the network, and inefficient routing paths. If response times suddenly increase at a specific hop, that router or network segment is likely causing delays. Multiple timeouts suggest firewall blocking or router configuration issues. Understanding these patterns helps pinpoint exactly where network problems originate.',
         ],
-        'faq' => [
-            'title' => 'FAQ',
-            'q1' => 'What is a hop?',
-            'a1' => 'A hop is a router or gateway that packets pass through on their way to the destination.',
-            'q2' => 'Why do some hops show asterisks?',
-            'a2' => 'Asterisks (*) indicate that the router didn\'t respond, often due to firewall settings.',
-            'q3' => 'How many hops is normal?',
-            'a3' => 'Typically 10-20 hops for most internet destinations, but it varies based on distance and routing.',
-        ],
     ],
 
-    // What is My IP Tool
+    // What Is My Ip
     'what-is-my-ip' => [
         'meta' => [
-            'h1' => 'What is My IP Address?',
-        ],
-        'seo' => [
             'title' => 'What is My IP Address? - Check Your IP Location Free',
-            'h1' => 'What is My IP Address?',
             'description' => 'Find out your public IP address instantly. Check your IPv4/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.',
-            'keywords' => 'what is my ip, my ip address, check ip, find my ip, ip address lookup, public ip address',
-        ],
-        'ui' => [
-            'loading' => 'Loading your IP information...',
-            'your_ip_title' => 'Your IP Address',
-            'copy_button' => 'Copy IP',
-            'timezone' => 'Timezone',
-        ],
-        'results' => [
-            'title' => 'Your IP Information',
-            'ip_address' => 'Your IP Address',
-            'hostname' => 'Hostname',
-            'isp' => 'ISP',
-            'location' => 'Location',
-            'country' => 'Country',
-            'region' => 'Region',
-            'city' => 'City',
+            'h1' => 'What is My IP Address?',
+            'subtitle' => 'Instantly discover your public IP address with detailed ISP information',
         ],
         'content' => [
             'main_title' => 'What Is My IP Address - Free IP Lookup Tool',
@@ -592,34 +378,15 @@ return [
             'privacy_tip4' => '• Regularly check your IP to detect unauthorized VPN disconnections',
             'privacy_tip5' => '• Be aware that websites log your IP for security and analytics',
         ],
-        'faq' => [
-            'title' => 'FAQ',
-            'q1' => 'Can my IP address reveal my exact location?',
-            'a1' => 'No, IP addresses only show your approximate location (city/region), not your exact address.',
-            'q2' => 'Does my IP address change?',
-            'a2' => 'Most home internet connections use dynamic IPs that change periodically. Business connections often use static IPs.',
-            'q3' => 'Can I hide my IP address?',
-            'a3' => 'Yes, using a VPN or proxy service will mask your real IP address.',
-        ],
     ],
 
-    // What is My ISP Tool
+    // What Is My Isp
     'what-is-my-isp' => [
         'meta' => [
-            'h1' => 'What is My ISP?',
-        ],
-        'seo' => [
             'title' => 'What is My ISP? - Check Internet Service Provider Free',
-            'h1' => 'What is My ISP?',
             'description' => 'Find out your Internet Service Provider (ISP) instantly. Check ISP name, organization, ASN, and IP address information for free.',
-            'keywords' => 'what is my isp, check isp, internet service provider, my isp, asn lookup, isp checker',
-        ],
-        'results' => [
-            'title' => 'Your ISP Information',
-            'isp_name' => 'Internet Service Provider',
-            'organization' => 'Organization',
-            'asn' => 'ASN (Autonomous System Number)',
-            'ip_address' => 'Your IP Address',
+            'h1' => 'What is My ISP?',
+            'subtitle' => 'Identify your Internet Service Provider with connection details',
         ],
         'content' => [
             'what_is_title' => 'What is an ISP?',
@@ -668,45 +435,21 @@ return [
             'isp_type5' => '<strong>Satellite ISPs:</strong> Internet via satellite for remote areas',
             'isp_type6' => '<strong>Business ISPs:</strong> Dedicated enterprise-grade connections with SLAs',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'Is my ISP information public?',
-            'a1' => 'Your ISP information is publicly visible to websites you visit. However, your exact identity and personal details are not revealed - only your ISP name, general location, and network information.',
-            'q2' => 'Why does my ISP show a different company name?',
-            'a2' => 'Many ISPs use infrastructure from larger network providers or wholesale networks. The organization name shown may be the actual network operator rather than your retail ISP brand name.',
-            'q3' => 'What can my ISP see?',
-            'a3' => 'Your ISP can see all websites you visit (URLs), connection times, data usage, and unencrypted traffic. Using HTTPS and VPNs can limit what your ISP can monitor.',
-        ],
-        'js' => [
-            'error_loading' => 'Failed to load ISP information',
-        ],
     ],
 
-    // WHOIS Lookup Tool
+    // Whois Lookup
     'whois-lookup' => [
         'meta' => [
-            'h1' => 'WHOIS Lookup Tool',
-        ],
-        'seo' => [
             'title' => 'WHOIS Lookup Tool - Domain Registration Information Free',
-            'h1' => 'WHOIS Lookup Tool',
             'description' => 'Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.',
-            'keywords' => 'whois lookup, domain whois, whois checker, domain registration, domain info, whois search',
+            'h1' => 'WHOIS Lookup Tool',
+            'subtitle' => 'Query WHOIS database for domain registration & ownership details',
         ],
         'form' => [
             'domain_label' => 'Domain Name',
             'domain_placeholder' => 'example.com',
             'button' => 'Lookup WHOIS',
             'button_loading' => 'Looking up...',
-        ],
-        'results' => [
-            'title' => 'WHOIS Information',
-            'domain' => 'Domain',
-            'registrar' => 'Registrar',
-            'registration_date' => 'Registration Date',
-            'expiration_date' => 'Expiration Date',
-            'nameservers' => 'Nameservers',
-            'status' => 'Status',
         ],
         'content' => [
             'what_is_title' => 'What is WHOIS Lookup?',
@@ -729,16 +472,6 @@ return [
             'privacy_title' => 'Privacy and WHOIS',
             'privacy_desc' => 'Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws.',
         ],
-        'faq' => [
-            'title' => 'FAQ',
-            'q1' => 'Is WHOIS information always public?',
-            'a1' => 'Not always. Many domain owners use WHOIS privacy protection to hide their personal information.',
-            'q2' => 'What is a domain registrar?',
-            'a2' => 'A domain registrar is a company authorized to register and manage domain names on behalf of customers.',
-            'q3' => 'Can I see who owns a domain?',
-            'a3' => 'Only if the owner hasn\'t enabled WHOIS privacy protection. Otherwise, you\'ll see the privacy service\'s information.',
-            'q4' => 'What are nameservers?',
-            'a4' => 'Nameservers are servers that translate domain names into IP addresses, directing traffic to the correct web server.',
-        ],
     ],
+
 ];

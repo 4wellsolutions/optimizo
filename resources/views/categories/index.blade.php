@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __('categories.meta_title', ['category' => __t($category, 'name')]))
-@section('meta_description', __('categories.meta_description', ['category' => strtolower(__t($category, 'name'))]))
+@section('title', __('categories.meta_title', ['category' => __('categories.' . str_replace('-', '_', $category->slug) . '_title')]))
+@section('meta_description', __('categories.meta_description', ['category' => strtolower(__('categories.' . str_replace('-', '_', $category->slug) . '_title'))]))
 
 @section('content')
     <div class="max-w-7xl mx-auto">
@@ -37,10 +37,10 @@
                     </svg>
                 </div>
                 <h1 class="text-2xl md:text-3xl font-black text-white mb-2 leading-tight">
-                    {{ __('categories.' . str_replace('-', '_', $category->slug) . '_title', ['default' => $category->name . ' Tools']) }}
+                    {{ __('categories.' . str_replace('-', '_', $category->slug) . '_title', ['default' => $category->name]) }}
                 </h1>
                 <p class="text-sm md:text-base text-white/90 font-medium max-w-2xl mx-auto mb-3">
-                    {{ __('categories.' . str_replace('-', '_', $category->slug) . '_subtitle', ['default' => 'Free online ' . strtolower($category->name) . ' tools.']) }}
+                    {{ __('categories.' . str_replace('-', '_', $category->slug) . '_subtitle', ['default' => $category->description]) }}
                 </p>
 
                 <!-- Stats -->
@@ -63,14 +63,14 @@
 
         <!-- Tools by Subcategory -->
         @php
-            // Group tools by subcategory name using the relationship
+            // Group tools by subcategory slug using the relationship
             // Ensure $tools is a Collection
             $toolsBySubcategory = collect($tools)->groupBy(function ($tool) {
-                return $tool->subcategoryRelation ? __t($tool->subcategoryRelation, 'name') : 'General';
+                return $tool->subcategoryRelation ? $tool->subcategoryRelation->slug : 'general';
             });
         @endphp
 
-        @foreach($toolsBySubcategory as $subcategory => $subcategoryTools)
+        @foreach($toolsBySubcategory as $subcategorySlug => $subcategoryTools)
             <div class="mb-10">
                 <!-- Subcategory Header -->
                 <div class="flex items-center gap-3 mb-6">
@@ -78,7 +78,7 @@
                         style="background: linear-gradient(to right, transparent, {{ $category->bg_gradient_from }}66, transparent);">
                     </div>
                     <h2 class="text-2xl font-black text-gray-900 px-4">
-                        {{ $subcategory === 'General' ? __('categories.general') : $subcategory }}
+                        {{ $subcategorySlug === 'general' ? __('categories.general') : __('categories.' . str_replace('-', '_', $subcategorySlug) . '_title', ['default' => ucwords(str_replace('-', ' ', $subcategorySlug))]) }}
                         <span class="text-sm font-normal text-gray-500 ml-2">({{ $subcategoryTools->count() }}
                             {{ __('categories.tools_count') }})</span>
                     </h2>
@@ -106,12 +106,12 @@
                                         onmouseover="this.style.color='{{ $category->bg_gradient_to }}'"
                                         onmouseout="this.style.color=''">
                                         <!-- DEBUG: Tool: {{ $tool->slug }} | Category: {{ explode('-', $tool->slug)[0] }} | File Exists: {{ file_exists(resource_path('lang/' . app()->getLocale() . '/tools/' . explode('-', $tool->slug)[0] . '.php')) ? 'YES' : 'NO' }} | Path: {{ resource_path('lang/' . app()->getLocale() . '/tools/' . explode('-', $tool->slug)[0] . '.php') }} -->
-                                        {{ __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'form.title') ?: __t($tool, 'name') }}
+                                        {{ __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'meta.title') ?: __tool($tool->slug, 'form.title') ?: $tool->slug }}
                                     </h3>
                                 </div>
                             </div>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                {{ __tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: __t($tool, 'meta_description') }}
+                                {{ __tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: __tool($tool->slug, 'meta.desc') ?: '' }}
                             </p>
                         </a>
                     @endforeach

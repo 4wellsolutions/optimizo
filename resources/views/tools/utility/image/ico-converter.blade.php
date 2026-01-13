@@ -2,7 +2,6 @@
 
 @section('title', __tool('ico-converter', 'meta.title'))
 @section('meta_description', __tool('ico-converter', 'meta.desc'))
-@section('meta_keywords', __tool('ico-converter', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -189,80 +188,80 @@
         </div>
 
         @push('scripts')
-        <script>
-            const imageInput = document.getElementById('imageInput');
-            const dropZone = document.getElementById('dropZone');
-            const editorArea = document.getElementById('editorArea');
-            const imagePreview = document.getElementById('imagePreview');
-            const convertBtn = document.getElementById('convertBtn');
-            const faviconCanvas = document.getElementById('faviconCanvas');
-            const ctx = faviconCanvas.getContext('2d');
-            const sizeBtns = document.querySelectorAll('.size-btn');
-            const selectedSizeInput = document.getElementById('selectedSize');
+            <script>
+                const imageInput = document.getElementById('imageInput');
+                const dropZone = document.getElementById('dropZone');
+                const editorArea = document.getElementById('editorArea');
+                const imagePreview = document.getElementById('imagePreview');
+                const convertBtn = document.getElementById('convertBtn');
+                const faviconCanvas = document.getElementById('faviconCanvas');
+                const ctx = faviconCanvas.getContext('2d');
+                const sizeBtns = document.querySelectorAll('.size-btn');
+                const selectedSizeInput = document.getElementById('selectedSize');
 
-            let currentImg = new Image();
+                let currentImg = new Image();
 
-            // Size Selection
-            sizeBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    sizeBtns.forEach(b => {
-                        b.classList.remove('border-amber-500', 'bg-amber-50', 'text-amber-700', 'font-bold');
-                        b.classList.add('border-gray-200', 'bg-white', 'text-gray-600', 'font-medium');
+                // Size Selection
+                sizeBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        sizeBtns.forEach(b => {
+                            b.classList.remove('border-amber-500', 'bg-amber-50', 'text-amber-700', 'font-bold');
+                            b.classList.add('border-gray-200', 'bg-white', 'text-gray-600', 'font-medium');
+                        });
+                        btn.classList.add('border-amber-500', 'bg-amber-50', 'text-amber-700', 'font-bold');
+                        btn.classList.remove('border-gray-200', 'bg-white', 'text-gray-600', 'font-medium');
+
+                        const size = parseInt(btn.dataset.size);
+                        selectedSizeInput.value = size;
+                        faviconCanvas.width = size;
+                        faviconCanvas.height = size;
+                        updateCanvas();
                     });
-                    btn.classList.add('border-amber-500', 'bg-amber-50', 'text-amber-700', 'font-bold');
-                    btn.classList.remove('border-gray-200', 'bg-white', 'text-gray-600', 'font-medium');
-
-                    const size = parseInt(btn.dataset.size);
-                    selectedSizeInput.value = size;
-                    faviconCanvas.width = size;
-                    faviconCanvas.height = size;
-                    updateCanvas();
                 });
-            });
 
-            // Drag & Drop
-            dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-amber-500', 'bg-amber-50'); });
-            dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-amber-500', 'bg-amber-50'); });
-            dropZone.addEventListener('drop', (e) => {
-                e.preventDefault();
-                dropZone.classList.remove('border-amber-500', 'bg-amber-50');
-                if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
-            });
+                // Drag & Drop
+                dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-amber-500', 'bg-amber-50'); });
+                dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-amber-500', 'bg-amber-50'); });
+                dropZone.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    dropZone.classList.remove('border-amber-500', 'bg-amber-50');
+                    if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+                });
 
-            imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
+                imageInput.addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
 
-            function handleFile(file) {
-                if (!file.type.match('image.*')) { showError('{!! __tool('ico-converter', 'js.invalid_image') !!}'); return; }
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    currentImg = new Image();
-                    currentImg.src = e.target.result;
-                    imagePreview.src = e.target.result;
-                    currentImg.onload = updateCanvas;
-                    editorArea.classList.remove('hidden');
-                };
-                reader.readAsDataURL(file);
-            }
+                function handleFile(file) {
+                    if (!file.type.match('image.*')) { showError('{!! __tool('ico-converter', 'js.invalid_image') !!}'); return; }
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        currentImg = new Image();
+                        currentImg.src = e.target.result;
+                        imagePreview.src = e.target.result;
+                        currentImg.onload = updateCanvas;
+                        editorArea.classList.remove('hidden');
+                    };
+                    reader.readAsDataURL(file);
+                }
 
-            function updateCanvas() {
-                if (!currentImg.src) return;
-                ctx.clearRect(0, 0, faviconCanvas.width, faviconCanvas.height);
-                ctx.drawImage(currentImg, 0, 0, faviconCanvas.width, faviconCanvas.height);
-            }
+                function updateCanvas() {
+                    if (!currentImg.src) return;
+                    ctx.clearRect(0, 0, faviconCanvas.width, faviconCanvas.height);
+                    ctx.drawImage(currentImg, 0, 0, faviconCanvas.width, faviconCanvas.height);
+                }
 
-            convertBtn.addEventListener('click', () => {
-                // Note: True ICO files are binary containers. 
-                // Browsers don't support creating true .ico binary via Canvas API natively without complex byte manipulation.
-                // Using PNG with .ico extension works in most modern browsers/OS, which is standard for client-side only tools.
-                // If strict ICO binary is needed, a JS library like 'js-monad-ico' would be required.
-                // We stick to the PNG-masquerade approach for speed and simplicity as generally accepted.
+                convertBtn.addEventListener('click', () => {
+                    // Note: True ICO files are binary containers. 
+                    // Browsers don't support creating true .ico binary via Canvas API natively without complex byte manipulation.
+                    // Using PNG with .ico extension works in most modern browsers/OS, which is standard for client-side only tools.
+                    // If strict ICO binary is needed, a JS library like 'js-monad-ico' would be required.
+                    // We stick to the PNG-masquerade approach for speed and simplicity as generally accepted.
 
-                const dataUrl = faviconCanvas.toDataURL('image/png');
-                const link = document.createElement('a');
-                link.download = 'favicon.ico';
-                link.href = dataUrl;
-                link.click();
-            });
-        </script>
+                    const dataUrl = faviconCanvas.toDataURL('image/png');
+                    const link = document.createElement('a');
+                    link.download = 'favicon.ico';
+                    link.href = dataUrl;
+                    link.click();
+                });
+            </script>
         @endpush
 @endsection

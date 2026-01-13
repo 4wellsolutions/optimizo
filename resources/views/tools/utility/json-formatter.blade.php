@@ -2,10 +2,6 @@
 
 @section('title', __tool('json-formatter', 'meta.h1'))
 @section('meta_description', __tool('json-formatter', 'meta.subtitle'))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- SEO-Optimized Header with Gradient Background -->
@@ -90,7 +86,8 @@
                     class="bg-white rounded-xl p-5 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-indigo-200">
                     <div class="text-4xl mb-3">⚡</div>
                     <h3 class="font-bold text-indigo-600 mb-2 text-lg">
-                        {{ __tool('json-formatter', 'content.features.instant.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.features.instant.title') }}
+                    </h3>
                     <p class="text-sm text-gray-600">{{ __tool('json-formatter', 'content.features.instant.desc') }}</p>
                 </div>
                 <!-- Error Detection -->
@@ -98,7 +95,8 @@
                     class="bg-white rounded-xl p-5 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-purple-200">
                     <div class="text-4xl mb-3">✅</div>
                     <h3 class="font-bold text-purple-600 mb-2 text-lg">
-                        {{ __tool('json-formatter', 'content.features.error.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.features.error.title') }}
+                    </h3>
                     <p class="text-sm text-gray-600">{{ __tool('json-formatter', 'content.features.error.desc') }}</p>
                 </div>
                 <!-- Privacy -->
@@ -106,7 +104,8 @@
                     class="bg-white rounded-xl p-5 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-pink-200">
                     <div class="text-4xl mb-3">🔒</div>
                     <h3 class="font-bold text-pink-600 mb-2 text-lg">
-                        {{ __tool('json-formatter', 'content.features.privacy.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.features.privacy.title') }}
+                    </h3>
                     <p class="text-sm text-gray-600">{{ __tool('json-formatter', 'content.features.privacy.desc') }}</p>
                 </div>
 
@@ -117,7 +116,8 @@
         <!-- How to Use Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl border-2 border-gray-200 mt-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
-                {{ __tool('json-formatter', 'content.how_title') }}</h2>
+                {{ __tool('json-formatter', 'content.how_title') }}
+            </h2>
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Step 1 -->
                 <div class="flex flex-col items-center text-center p-4 rounded-xl bg-indigo-50 border-2 border-indigo-200">
@@ -125,7 +125,8 @@
                         class="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg mb-4">
                         1</div>
                     <h3 class="font-bold text-lg text-gray-900 mb-2">
-                        {{ __tool('json-formatter', 'content.how_steps.1.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.how_steps.1.title') }}
+                    </h3>
                     <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.how_steps.1.desc') }}</p>
                 </div>
                 <!-- Step 2 -->
@@ -134,7 +135,8 @@
                         class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg mb-4">
                         2</div>
                     <h3 class="font-bold text-lg text-gray-900 mb-2">
-                        {{ __tool('json-formatter', 'content.how_steps.2.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.how_steps.2.title') }}
+                    </h3>
                     <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.how_steps.2.desc') }}</p>
                 </div>
                 <!-- Step 3 -->
@@ -143,7 +145,8 @@
                         class="w-12 h-12 bg-gradient-to-br from-pink-600 to-red-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg mb-4">
                         3</div>
                     <h3 class="font-bold text-lg text-gray-900 mb-2">
-                        {{ __tool('json-formatter', 'content.how_steps.3.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.how_steps.3.title') }}
+                    </h3>
                     <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.how_steps.3.desc') }}</p>
                 </div>
 
@@ -160,7 +163,8 @@
                     <div class="flex-shrink-0 text-3xl">🔌</div>
                     <div>
                         <h3 class="font-bold text-lg text-gray-900 mb-2">
-                            {{ __tool('json-formatter', 'content.uses.api.title') }}</h3>
+                            {{ __tool('json-formatter', 'content.uses.api.title') }}
+                        </h3>
                         <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.uses.api.desc') }}</p>
                     </div>
                 </div>
@@ -169,7 +173,8 @@
                     <div class="flex-shrink-0 text-3xl">⚙️</div>
                     <div>
                         <h3 class="font-bold text-lg text-gray-900 mb-2">
-                            {{ __tool('json-formatter', 'content.uses.config.title') }}</h3>
+                            {{ __tool('json-formatter', 'content.uses.config.title') }}
+                        </h3>
                         <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.uses.config.desc') }}</p>
                     </div>
                 </div>
@@ -178,7 +183,8 @@
                     <div class="flex-shrink-0 text-3xl">💾</div>
                     <div>
                         <h3 class="font-bold text-lg text-gray-900 mb-2">
-                            {{ __tool('json-formatter', 'content.uses.db.title') }}</h3>
+                            {{ __tool('json-formatter', 'content.uses.db.title') }}
+                        </h3>
                         <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.uses.db.desc') }}</p>
                     </div>
                 </div>
@@ -187,7 +193,8 @@
                     <div class="flex-shrink-0 text-3xl">📦</div>
                     <div>
                         <h3 class="font-bold text-lg text-gray-900 mb-2">
-                            {{ __tool('json-formatter', 'content.uses.export.title') }}</h3>
+                            {{ __tool('json-formatter', 'content.uses.export.title') }}
+                        </h3>
                         <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.uses.export.desc') }}</p>
                     </div>
                 </div>
@@ -204,25 +211,29 @@
                 <!-- Validate -->
                 <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-green-500">
                     <h3 class="font-bold text-lg text-gray-900 mb-2">
-                        {{ __tool('json-formatter', 'content.tips.validate.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.tips.validate.title') }}
+                    </h3>
                     <p class="text-gray-700">{{ __tool('json-formatter', 'content.tips.validate.desc') }}</p>
                 </div>
                 <!-- Indent -->
                 <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-blue-500">
                     <h3 class="font-bold text-lg text-gray-900 mb-2">
-                        {{ __tool('json-formatter', 'content.tips.indent.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.tips.indent.title') }}
+                    </h3>
                     <p class="text-gray-700">{{ __tool('json-formatter', 'content.tips.indent.desc') }}</p>
                 </div>
                 <!-- Minify -->
                 <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-purple-500">
                     <h3 class="font-bold text-lg text-gray-900 mb-2">
-                        {{ __tool('json-formatter', 'content.tips.minify.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.tips.minify.title') }}
+                    </h3>
                     <p class="text-gray-700">{{ __tool('json-formatter', 'content.tips.minify.desc') }}</p>
                 </div>
                 <!-- Naming -->
                 <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-orange-500">
                     <h3 class="font-bold text-lg text-gray-900 mb-2">
-                        {{ __tool('json-formatter', 'content.tips.naming.title') }}</h3>
+                        {{ __tool('json-formatter', 'content.tips.naming.title') }}
+                    </h3>
                     <p class="text-gray-700">{{ __tool('json-formatter', 'content.tips.naming.desc') }}</p>
                 </div>
             </div>
@@ -231,13 +242,14 @@
         <!-- FAQ Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl border-2 border-gray-200 mt-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
-                {{ __tool('json-formatter', 'content.faq_title') }}</h2>
+                {{ __tool('json-formatter', 'content.faq_title') }}
+            </h2>
             <div class="space-y-4">
-                @foreach(__('tools.utilities.json-formatter.content.faq') as $key => $value)
+                @foreach(__tool('json-formatter', 'content.faq') as $key => $value)
                     @if(str_starts_with($key, 'q'))
                         <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
                             <h3 class="font-bold text-lg text-gray-900 mb-2">{{ $value }}</h3>
-                            <p class="text-gray-700">{{ __('tools.utilities.json-formatter.content.faq.a' . substr($key, 1)) }}</p>
+                            <p class="text-gray-700">{{ __tool('json-formatter', 'content.faq.a' . substr($key, 1)) }}</p>
                         </div>
                     @endif
                 @endforeach

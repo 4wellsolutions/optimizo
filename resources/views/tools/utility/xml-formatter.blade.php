@@ -2,10 +2,6 @@
 
 @section('title', __tool('xml-formatter', 'meta.h1'))
 @section('meta_description', __tool('xml-formatter', 'meta.subtitle'))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
 @section('content')
     <div class="max-w-7xl mx-auto">
         <x-tool-hero :tool="$tool" icon="xml-formatter" />

@@ -6,16 +6,7 @@
 @section('content')
     <div class="max-w-6xl mx-auto">
         <x-tool-hero :tool="$tool" />
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2 leading-tight">
-                    {{ __tool('jwt-decoder', 'meta.h1') }}
-                </h1>
-                <p class="text-base md:text-lg text-white/90 font-medium max-w-3xl mx-auto leading-relaxed">
-                    {{ __tool('jwt-decoder', 'meta.subtitle') }}
-                </p>
-
-                @include('components.hero-actions')
-            </div>
-        </div>
+                
 
         <!-- Tool Section -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-green-200 mb-8">

@@ -3,12 +3,10 @@
 return [
     'csv-to-sql' => [
         'meta' => [
-            'h1' => 'CSV to SQL Converter',
-        ],
-        'seo' => [
             'title' => 'CSV to SQL Converter - Generate INSERT Statements | Optimizo',
-            'h1' => 'CSV to SQL Converter',
             'description' => 'Convert CSV files to SQL INSERT statements instantly. Free online tool to generate CREATE TABLE and bulk INSERT queries for MySQL, PostgreSQL, SQLite.',
+            'h1' => 'CSV to SQL Converter',
+            'subtitle' => 'Convert CSV files to SQL INSERT statements for database import instantly',
         ],
         'form' => [
             'title' => 'Convert CSV to SQL INSERTs',
@@ -23,17 +21,14 @@ return [
         'content' => [
             'hero_title' => 'Convert CSV to SQL INSERT Statement',
             'hero_description' => 'The ultimate developer tool for data migration. Instantly turn your CSV files into executable SQL scripts with CREATE TABLE and INSERT INTO commands.',
-
             'feature1_title' => 'Auto Schema',
             'feature1_desc' => 'Automatically detects column names from your first header row and generates the CREATE TABLE schema.',
             'feature2_title' => 'Bulk Insertions',
             'feature2_desc' => 'Generates clean, escaped SQL INSERT statements ready for bulk execution in any SQL client.',
             'feature3_title' => 'Universal SQL',
             'feature3_desc' => 'Generates SQL-92 compliant code that works on MySQL, PostgreSQL, SQLite, and MariaDB.',
-
             'databases_title' => 'Supported Databases',
             'databases_desc' => 'Our tool generates standard SQL (Structured Query Language) that is compatible with most relational database management systems (RDBMS):',
-
             'how_it_works_title' => 'How it works',
             'step1_title' => 'Analysis:',
             'step1_desc' => 'We scan your CSV file to determine columns and data types (text vs numbers).',
@@ -42,23 +37,14 @@ return [
             'step3_title' => 'Data Insertion:',
             'step3_desc' => 'We iterate through every row and generate INSERT INTO statements for the data.',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'How do I specify the table name?',
-            'a1' => 'You can enter a custom table name in the input field above. If you leave it blank, we will default to using your uploaded file\'s name (e.g., "my_data.csv" becomes "my_data").',
-            'q2' => 'Are quotes handled correctly?',
-            'a2' => 'Yes! We automatically escape single quotes within your text data to prevent SQL syntax errors during importation.',
-        ],
     ],
 
     'csv-to-excel' => [
         'meta' => [
-            'h1' => 'CSV to Excel Converter',
-        ],
-        'seo' => [
             'title' => 'CSV to Excel Converter - Free Online Tool | Optimizo',
-            'h1' => 'CSV to Excel Converter',
             'description' => 'Convert CSV to Excel (XLSX) online for free. Transform comma-separated files into formatted Excel spreadsheets instantly.',
+            'h1' => 'CSV to Excel Converter',
+            'subtitle' => 'Transform CSV data to Excel format with proper formatting & sheets',
         ],
         'form' => [
             'title' => 'Convert CSV to Excel',
@@ -70,7 +56,6 @@ return [
         'content' => [
             'hero_title' => 'CSV to Excel Converter',
             'hero_description' => 'Easily convert your CSV files to Excel format (XLSX). Perfect for creating professional spreadsheets from raw data.',
-
             'feature1_title' => 'Preserves Data',
             'feature1_desc' => 'Maintains all your data integrity during conversion with proper formatting.',
             'feature2_title' => 'Auto Formatting',
@@ -78,23 +63,14 @@ return [
             'feature3_title' => 'Instant Download',
             'feature3_desc' => 'Get your Excel file instantly after conversion, ready to use.',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'What is the difference between CSV and Excel?',
-            'a1' => 'CSV is a plain text format that stores data in rows and columns. Excel (XLSX) is a binary format with additional features like formatting, formulas, and multiple sheets.',
-            'q2' => 'Will formatting be preserved?',
-            'a2' => 'CSV files don\'t contain formatting. Our tool converts the data and applies basic Excel formatting for better readability.',
-        ],
     ],
 
     'excel-to-csv' => [
         'meta' => [
-            'h1' => 'Excel to CSV Converter',
-        ],
-        'seo' => [
             'title' => 'Excel to CSV Converter - Free XLSX to CSV Tool | Optimizo',
-            'h1' => 'Excel to CSV Converter',
             'description' => 'Convert Excel files to CSV format online for free. Transform XLSX spreadsheets into comma-separated values instantly.',
+            'h1' => 'Excel to CSV Converter',
+            'subtitle' => 'Convert Excel spreadsheets to CSV format for data portability',
         ],
         'form' => [
             'title' => 'Convert Excel to CSV',
@@ -106,7 +82,6 @@ return [
         'content' => [
             'hero_title' => 'Excel to CSV Converter',
             'hero_description' => 'Convert Excel files to CSV format for compatibility with databases, data analysis tools, and programming languages.',
-
             'feature1_title' => 'Multi-Sheet Support',
             'feature1_desc' => 'Converts all sheets from your Excel file into separate CSV files.',
             'feature2_title' => 'Data Integrity',
@@ -114,23 +89,14 @@ return [
             'feature3_title' => 'Fast Processing',
             'feature3_desc' => 'Quick conversion with immediate download of CSV files.',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'Why convert Excel to CSV?',
-            'a1' => 'CSV format is universal and compatible with most software, programming languages, and databases. It\'s perfect for data import/export.',
-            'q2' => 'What happens to formulas?',
-            'a2' => 'Formulas are converted to their calculated values. CSV format doesn\'t support formulas, only the resulting data.',
-        ],
     ],
 
     'google-sheets-to-excel' => [
         'meta' => [
-            'h1' => 'Google Sheets to Excel Converter',
-        ],
-        'seo' => [
             'title' => 'Google Sheets to Excel Converter - Download as XLSX | Optimizo',
-            'h1' => 'Google Sheets to Excel Converter',
             'description' => 'Convert Google Sheets to Excel format online. Download your Google Spreadsheets as XLSX files for offline use.',
+            'h1' => 'Google Sheets to Excel Converter',
+            'subtitle' => 'Download Google Sheets as Excel files for offline editing',
         ],
         'form' => [
             'title' => 'Convert Google Sheets to Excel',
@@ -142,7 +108,6 @@ return [
         'content' => [
             'hero_title' => 'Google Sheets to Excel Converter',
             'hero_description' => 'Download your Google Sheets as Excel files for offline editing, sharing, or archiving.',
-
             'feature1_title' => 'Direct Download',
             'feature1_desc' => 'No need to open Google Sheets - convert directly from the link.',
             'feature2_title' => 'Maintains Formatting',
@@ -150,23 +115,14 @@ return [
             'feature3_title' => 'Offline Access',
             'feature3_desc' => 'Work on your spreadsheets without internet connection.',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'Do I need permission to convert?',
-            'a1' => 'Yes, the Google Sheet must be publicly accessible or you must have view access via the sharing link.',
-            'q2' => 'Will all features work in Excel?',
-            'a2' => 'Most features transfer well, but some Google Sheets-specific functions may need adjustment in Excel.',
-        ],
     ],
 
     'xls-to-xlsx' => [
         'meta' => [
-            'h1' => 'XLS to XLSX Converter',
-        ],
-        'seo' => [
             'title' => 'XLS to XLSX Converter - Upgrade Excel Format | Optimizo',
-            'h1' => 'XLS to XLSX Converter',
             'description' => 'Convert old XLS files to modern XLSX format online. Free tool to upgrade legacy Excel files.',
+            'h1' => 'XLS to XLSX Converter',
+            'subtitle' => 'Upgrade legacy XLS files to modern XLSX format effortlessly',
         ],
         'form' => [
             'title' => 'Convert XLS to XLSX',
@@ -178,7 +134,6 @@ return [
         'content' => [
             'hero_title' => 'XLS to XLSX Converter',
             'hero_description' => 'Upgrade legacy Excel 97-2003 (XLS) files to the modern XLSX format for better compatibility and features.',
-
             'feature1_title' => 'Better Compression',
             'feature1_desc' => 'XLSX files are smaller due to ZIP compression technology.',
             'feature2_title' => 'More Rows',
@@ -186,23 +141,14 @@ return [
             'feature3_title' => 'Enhanced Security',
             'feature3_desc' => 'XLSX format has better security and corruption recovery.',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'What\'s the difference between XLS and XLSX?',
-            'a1' => 'XLS is the older binary format (Excel 97-2003). XLSX is the modern XML-based format with better features, security, and smaller file sizes.',
-            'q2' => 'Will my macros work?',
-            'a2' => 'Macros will generally transfer, but complex VBA code should be tested after conversion.',
-        ],
     ],
 
     'xlsx-to-xls' => [
         'meta' => [
-            'h1' => 'XLSX to XLS Converter',
-        ],
-        'seo' => [
             'title' => 'XLSX to XLS Converter - Legacy Excel Format | Optimizo',
-            'h1' => 'XLSX to XLS Converter',
             'description' => 'Convert XLSX files to XLS format for compatibility with older Excel versions. Free online converter.',
+            'h1' => 'XLSX to XLS Converter',
+            'subtitle' => 'Convert XLSX to XLS format for compatibility with older systems',
         ],
         'form' => [
             'title' => 'Convert XLSX to XLS',
@@ -214,20 +160,12 @@ return [
         'content' => [
             'hero_title' => 'XLSX to XLS Converter',
             'hero_description' => 'Convert modern Excel files (XLSX) to legacy format (XLS) for compatibility with Excel 97-2003 and older systems.',
-
             'feature1_title' => 'Maximum Compatibility',
             'feature1_desc' => 'Ensures your files work on older computers and Excel versions.',
             'feature2_title' => 'Data Preservation',
             'feature2_desc' => 'Maintains your data while converting to older format.',
             'feature3_title' => 'Quick Conversion',
             'feature3_desc' => 'Fast processing with instant download.',
-        ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'Why convert to older format?',
-            'a1' => 'Some legacy systems or organizations still use Excel 97-2003, requiring the XLS format.',
-            'q2' => 'Will I lose data?',
-            'a2' => 'Basic data transfers fine, but advanced XLSX features (more rows, newer functions) may not be supported in XLS.',
         ],
     ],
 ];

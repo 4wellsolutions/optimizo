@@ -1,12 +1,13 @@
 <?php
 
 return [
-    // Meta Tag Analyzer
+    // Meta Analyzer
     'meta-analyzer' => [
-        'seo' => [
+        'meta' => [
             'title' => 'Meta Tag Analyzer - SEO Meta Tags Checker',
             'description' => 'Free meta tag analyzer to check and optimize your website meta tags for better SEO.',
-            'keywords' => 'meta tag analyzer, meta checker, seo meta tags, meta description checker',
+            'h1' => 'Meta Tag Analyzer',
+            'subtitle' => 'Analyze meta tags, title, description & keywords for SEO optimization',
         ],
         'form' => [
             'label' => 'Enter Website URL',
@@ -44,21 +45,18 @@ return [
             'title_optimal_value' => '50-60 characters',
             'title_best_practice' => 'Best Practice:',
             'title_best_value' => 'Include primary keyword near the beginning',
-
             'meta_desc_title' => '📝 Meta Description',
             'meta_desc_desc' => 'Summary that appears below the title in search results. Influences click-through rates.',
             'meta_desc_optimal_length' => 'Optimal Length:',
             'meta_desc_optimal_value' => '150-160 characters',
             'meta_desc_best_practice' => 'Best Practice:',
             'meta_desc_best_value' => 'Compelling call-to-action with keywords',
-
             'og_title' => '🌐 Open Graph Tags',
             'og_desc' => 'Control how your page appears when shared on social media platforms.',
             'og_key_tags' => 'Key Tags:',
             'og_key_value' => 'og:title, og:description, og:image',
             'og_platform' => 'Platform:',
             'og_platform_value' => 'Facebook, LinkedIn, others',
-
             'twitter_title' => '🐦 Twitter Cards',
             'twitter_desc' => 'Optimize appearance of shared links on Twitter/X platform.',
             'twitter_key_tags' => 'Key Tags:',
@@ -124,14 +122,13 @@ return [
         ],
     ],
 
-    // Meta Tag Analyzer (Alias for DB slug)
+    // Meta Tag Analyzer
     'meta-tag-analyzer' => [
         'meta' => [
-            'h1' => 'Meta Tag Analyzer',
-        ],
-        'seo' => [
             'title' => 'Meta Tag Analyzer - SEO Meta Tags Checker',
             'description' => 'Free meta tag analyzer to check and optimize your website meta tags for better SEO.',
+            'h1' => 'Meta Tag Analyzer',
+            'subtitle' => 'Comprehensive analysis of meta tags for search engine optimization',
         ],
         'form' => [
             'label' => 'Enter Website URL',
@@ -144,13 +141,6 @@ return [
             'length' => 'Length',
             'characters' => 'characters',
             'meta_description' => 'Meta Description',
-        ],
-        'results_labels' => [
-            'other_tags' => 'Other Meta Tags',
-            'seo_score' => 'SEO Score',
-            'viewport' => 'Viewport',
-            'charset' => 'Charset',
-            'robots' => 'Robots',
         ],
         'content' => [
             'main_title' => 'Meta Tag Analyzer',
@@ -204,6 +194,13 @@ return [
             'b4_title' => 'Competitor Analysis',
             'b4_desc' => 'Analyze competitor tags to refine your strategy.',
         ],
+        'results_labels' => [
+            'other_tags' => 'Other Meta Tags',
+            'seo_score' => 'SEO Score',
+            'viewport' => 'Viewport',
+            'charset' => 'Charset',
+            'robots' => 'Robots',
+        ],
         'features' => [
             'f2_title' => 'Instant Analysis',
             'f2_desc' => 'Get results in seconds.',
@@ -243,12 +240,17 @@ return [
         ],
     ],
 
-    // Bing SERP Checker
+    // Bing Serp Checker
     'bing-serp-checker' => [
-
-        'seo' => [
+        'meta' => [
             'title' => 'Bing SERP Checker - Check Bing Search Rankings',
             'description' => 'Free tool to check your website rankings on Bing search engine. accurate, real-time results for any location and device.',
+            'h1' => 'Bing SERP Checker',
+            'subtitle' => 'Check Bing search rankings for your keywords across different locations',
+        ],
+        'form' => [
+            'keyword_placeholder' => 'e.g. digital marketing agency',
+            'button' => 'Check Bing Rankings',
         ],
         'interface' => [
             'simulation_title' => 'Bing Search Simulator',
@@ -261,24 +263,6 @@ return [
             'device_mobile' => 'Mobile',
             'no_login' => 'No Login Required',
             'realtime_results' => 'Real-Time Results',
-        ],
-        'form' => [
-            'keyword_placeholder' => 'e.g. digital marketing agency',
-            'button' => 'Check Bing Rankings',
-        ],
-        'markets' => [
-            'us' => 'United States (English)',
-            'uk' => 'United Kingdom (English)',
-            'ca' => 'Canada (English)',
-            'au' => 'Australia (English)',
-            'de' => 'Germany (German)',
-            'fr' => 'France (French)',
-            'es' => 'Spain (Spanish)',
-            'it' => 'Italy (Italian)',
-            'nl' => 'Netherlands (Dutch)',
-            'br' => 'Brazil (Portuguese)',
-            'jp' => 'Japan (Japanese)',
-            'in' => 'India (English)',
         ],
         'content' => [
             'main_title' => 'Advanced Bing Rank Checker',
@@ -312,105 +296,29 @@ return [
             'q3' => 'Can I check local rankings for a specific city?',
             'a3' => 'Absolutely. Enter your city in the "Location" field. We append specific location parameters to the search query, allowing you to see the <strong>local bing results</strong> exactly as a user in that city would see them.',
         ],
+        'markets' => [
+            'us' => 'United States (English)',
+            'uk' => 'United Kingdom (English)',
+            'ca' => 'Canada (English)',
+            'au' => 'Australia (English)',
+            'de' => 'Germany (German)',
+            'fr' => 'France (French)',
+            'es' => 'Spain (Spanish)',
+            'it' => 'Italy (Italian)',
+            'nl' => 'Netherlands (Dutch)',
+            'br' => 'Brazil (Portuguese)',
+            'jp' => 'Japan (Japanese)',
+            'in' => 'India (English)',
+        ],
     ],
 
     // Keyword Density Checker
-    'keyword-density' => [
-        'meta' => [
-            'h1' => 'Keyword Density Checker',
-        ],
-        'seo' => [
-            'title' => 'Keyword Density Checker - Analyze Keyword Usage',
-            'description' => 'Free keyword density checker to analyze keyword frequency and optimize your content for SEO.',
-            'keywords' => 'keyword density, keyword frequency, seo keyword tool, keyword analyzer',
-        ],
-        'form' => [
-            'label' => 'Enter Your Content',
-            'placeholder' => 'Paste your content here...',
-            'button' => 'Analyze Keyword Density',
-        ],
-        'results' => [
-            'title' => 'Analysis Results',
-            'total_words' => 'Total Words',
-            'unique_words' => 'Unique Words',
-            'sentences' => 'Sentences',
-            'paragraphs' => 'Paragraphs',
-            'long_sentences' => 'Long Sentences (>20 words)',
-            'short_sentences' => 'Short Sentences (<10 words)',
-            'top_keyword' => 'Top Keyword',
-            'top_density' => 'Top Density',
-
-            // Table headers and titles (New)
-            'single_keywords_title' => 'Top Single Keywords (excluding common words)',
-            'two_word_title' => 'Top 2-Word Phrases',
-            'three_word_title' => 'Top 3-Word Phrases',
-            'keyword_header' => 'Keyword',
-            'phrase_header' => 'Phrase',
-            'count_header' => 'Count',
-            'density_header' => 'Density',
-        ],
-        'alerts' => [
-            'enter_text' => 'Please enter some text to analyze',
-        ],
-        'content' => [
-            'main_title' => 'Keyword Density Analyzer',
-            'main_subtitle' => 'Optimize your content for search engines with keyword density analysis',
-            'intro' => 'Our free Keyword Density Checker analyzes your content to show how often keywords appear and their density percentage. Essential for SEO optimization, content writing, and ensuring your target keywords are properly distributed throughout your text without over-optimization or keyword stuffing.',
-            'what_is_title' => '🎯 What is Keyword Density?',
-            'what_is_text' => 'Keyword density is the percentage of times a keyword or phrase appears in your content compared to the total word count. For example, if a keyword appears 10 times in a 1000-word article, the keyword density is 1%. Search engines use keyword density as one factor to understand what your content is about, but over-optimization can lead to penalties.',
-            'guidelines_title' => '💡 Optimal Keyword Density Guidelines',
-            'why_use_title' => '✨ Why Use Keyword Density Analysis?',
-            'best_practices_title' => '📚 Best Practices for Keyword Usage',
-            'faq_title' => '❓ Frequently Asked Questions',
-        ],
-        'guidelines' => [
-            'g1' => '✅ <strong>1-2%</strong> - Ideal keyword density for most content',
-            'g2' => '✅ <strong>0.5-1%</strong> - Safe range for competitive keywords',
-            'g3' => '⚠️ <strong>3-5%</strong> - Approaching over-optimization territory',
-            'g4' => '❌ <strong>Above 5%</strong> - Risk of keyword stuffing penalties',
-            'g5' => '✅ Focus on natural, reader-friendly content over exact percentages',
-        ],
-        'features' => [
-            'f1_title' => 'SEO Optimization',
-            'f1_desc' => 'Ensure keywords appear enough without over-optimization',
-            'f2_title' => 'Content Balance',
-            'f2_desc' => 'Maintain natural keyword distribution throughout content',
-            'f3_title' => 'Avoid Penalties',
-            'f3_desc' => 'Prevent keyword stuffing that can harm rankings',
-            'f4_title' => 'Competitor Analysis',
-            'f4_desc' => 'Analyze top-ranking content keyword strategies',
-            'f5_title' => 'Content Writing',
-            'f5_desc' => 'Guide keyword usage during content creation',
-            'f6_title' => 'Topic Relevance',
-            'f6_desc' => 'Verify content focuses on target topics',
-        ],
-        'best_practices' => [
-            'bp1' => '<strong>Write for humans first:</strong> Create valuable, readable content before optimizing for search engines',
-            'bp2' => '<strong>Use variations:</strong> Include synonyms, related terms, and LSI keywords naturally',
-            'bp3' => '<strong>Strategic placement:</strong> Include keywords in titles, headings, first paragraph, and conclusion',
-            'bp4' => '<strong>Natural flow:</strong> Keywords should fit seamlessly into sentences without forced insertion',
-            'bp5' => '<strong>Avoid keyword stuffing:</strong> Don\'t repeat keywords unnaturally or excessively',
-            'bp6' => '<strong>Don\'t sacrifice quality:</strong> Never compromise content quality for keyword density',
-        ],
-        'faq' => [
-            'q1' => 'What is the ideal keyword density for SEO?',
-            'a1' => 'There\'s no perfect number, but 1-2% is generally considered optimal. Modern SEO focuses more on content quality, relevance, and user intent than exact keyword density percentages. Aim for natural keyword usage that serves readers first.',
-            'q2' => 'Can high keyword density hurt my SEO?',
-            'a2' => 'Yes! Keyword stuffing (excessive keyword repetition) can trigger search engine penalties and harm your rankings. Search engines prioritize natural, valuable content over keyword-optimized but low-quality text. Focus on comprehensive, helpful content.',
-            'q3' => 'Should I check keyword density for every page?',
-            'a3' => 'It\'s helpful for important pages like landing pages, blog posts, and product pages. Use it as a guide to ensure you\'re covering your topic thoroughly without over-optimization. It\'s especially useful when optimizing existing content.',
-            'q4' => 'What about long-tail keywords?',
-            'a4' => 'Long-tail keywords (3+ word phrases) naturally have lower density but can be more valuable for SEO. Focus on including them naturally throughout your content rather than hitting specific density targets.',
-            'q5' => 'How does this tool filter common words?',
-            'a5' => 'Our tool automatically excludes common stop words (like "the", "and", "is") that don\'t contribute to SEO. This helps you focus on meaningful keywords that actually impact your content\'s relevance and rankings.',
-        ],
-    ],
-
-    // Keyword Density Checker (Alias for DB slug)
     'keyword-density-checker' => [
-        'seo' => [
+        'meta' => [
             'title' => 'Keyword Density Checker - Check Keyword Frequency',
             'description' => 'Free keyword density checker tool. Analyze word frequency and keyword usage to optimize your content.',
+            'h1' => 'Keyword Density Checker',
+            'subtitle' => 'Check keyword usage and density for better search rankings',
         ],
         'form' => [
             'label' => 'Paste Text or URL',
@@ -435,6 +343,9 @@ return [
             'phrase_header' => 'Phrase',
             'three_word_title' => '3-Word Phrases',
         ],
+        'alerts' => [
+            'enter_text' => 'Please enter some text to analyze',
+        ],
         'content' => [
             'main_title' => 'Keyword Density Checker',
             'main_subtitle' => 'Optimize your content relevance by analyzing keyword frequency.',
@@ -445,13 +356,6 @@ return [
             'why_use_title' => 'Why Check Keyword Density?',
             'best_practices_title' => 'Best Practices',
             'faq_title' => 'FAQ',
-        ],
-        'guidelines' => [
-            'g1' => 'There is no "perfect" percentage, but <strong>1-3%</strong> is often considered safe.',
-            'g2' => 'Avoid "Keyword Stuffing" as it can harm your rankings.',
-            'g3' => 'Write naturally for readers, not just for bots.',
-            'g4' => 'Use synonyms and LSI (Latent Semantic Indexing) keywords.',
-            'g5' => 'Check not just single words, but 2-3 word phrases.',
         ],
         'features' => [
             'f1_title' => 'Deep Analysis',
@@ -467,14 +371,6 @@ return [
             'f6_title' => 'Stop Words',
             'f6_desc' => 'Intelligent filtering of common stop words.',
         ],
-        'best_practices' => [
-            'bp1' => 'Focus on content quality rather than specific density numbers.',
-            'bp2' => 'Include your main keyword in the first paragraph.',
-            'bp3' => 'Use keywords in H1 and H2 headers.',
-            'bp4' => 'Use long-tail keyword variations.',
-            'bp5' => 'Don\'t sacrifice readability for SEO.',
-            'bp6' => 'Don\'t repeat the same word unnaturally.',
-        ],
         'faq' => [
             'q1' => 'What is a good keyword density?',
             'a1' => 'Most SEO experts recommend around 1-2%. The text should read naturally.',
@@ -487,16 +383,30 @@ return [
             'q5' => 'Can I check a URL?',
             'a5' => 'Currently this tool works with text input. Copy your page content and paste it here.',
         ],
-        'alerts' => [
-            'enter_text' => 'Please enter some text to analyze',
+        'best_practices' => [
+            'bp1' => 'Focus on content quality rather than specific density numbers.',
+            'bp2' => 'Include your main keyword in the first paragraph.',
+            'bp3' => 'Use keywords in H1 and H2 headers.',
+            'bp4' => 'Use long-tail keyword variations.',
+            'bp5' => 'Don\'t sacrifice readability for SEO.',
+            'bp6' => 'Don\'t repeat the same word unnaturally.',
+        ],
+        'guidelines' => [
+            'g1' => 'There is no "perfect" percentage, but <strong>1-3%</strong> is often considered safe.',
+            'g2' => 'Avoid "Keyword Stuffing" as it can harm your rankings.',
+            'g3' => 'Write naturally for readers, not just for bots.',
+            'g4' => 'Use synonyms and LSI (Latent Semantic Indexing) keywords.',
+            'g5' => 'Check not just single words, but 2-3 word phrases.',
         ],
     ],
 
     // Word Counter
     'word-counter' => [
-        'seo' => [
+        'meta' => [
             'title' => 'Word Counter - Count Words, Characters & Reading Time',
             'description' => 'Free online word counter tool to count words, characters, sentences, and estimate reading time for your content.',
+            'h1' => 'Word Counter',
+            'subtitle' => 'Count words, characters, sentences & paragraphs in your text instantly',
         ],
         'form' => [
             'label' => 'Enter Your Text',
@@ -536,17 +446,19 @@ return [
         ],
     ],
 
-    // Google SERP Checker
+    // Google Serp Checker
     'google-serp-checker' => [
         'meta' => [
-            'h1' => 'Google SERP Checker',
-        ],
-        'seo' => [
             'title' => 'Google SERP Checker - Check Search Rankings by Location',
             'description' => 'Free Google SERP checker to analyze search engine results and track keyword rankings across different locations.',
-            'keywords' => 'google serp checker, serp analysis, keyword ranking, search position tracker',
+            'h1' => 'Google SERP Checker',
+            'subtitle' => 'Check Google search rankings and track keyword positions globally',
         ],
-
+        'form' => [
+            'keyword_label' => 'Enter Keyword',
+            'keyword_placeholder' => 'e.g. coffee shop near me',
+            'button' => 'Check SERP',
+        ],
         'interface' => [
             'simulation_title' => 'Live SERP Check Simulation',
             'location_label' => 'Location',
@@ -558,74 +470,53 @@ return [
             'no_login' => 'No Login Required',
             'realtime_results' => 'Real-Time Results',
         ],
-
-        'form' => [
-            'keyword_label' => 'Enter Keyword',
-            'keyword_placeholder' => 'e.g. coffee shop near me',
-            'button' => 'Check SERP',
-        ],
-
         'content' => [
             'main_title' => 'Why Use Our Free Google SERP Checker?',
             'main_subtitle' => 'In the world of SEO, accuracy is everything. Our SERP analyzer bypasses personalization algorithms to show you the true SERP rankings of your website.',
-
             'feature1_title' => 'Hyper-Local SERP Position Accuracy',
             'feature1_desc' => 'Rank for "pizza in midtown manhattan". We use advanced Google UULE parameters to simulate precise localized SERP checking.',
-
             'feature2_title' => 'Mobile SERP Finder & Analysis',
             'feature2_desc' => 'Verify your rankings on iPhone and Android. Don\'t let Mobile-First Indexing catch you off guard. Comprehensive mobile SERP analysis.',
-
             'feature3_title' => 'Global Google SERP Tracker',
             'feature3_desc' => 'Expanding? Check rankings across 190+ countries. Toggle between Google.co.uk, Google.de (Kostenlos SERP Checker), Google.jp and more.',
-
             'serp_features_title' => 'Understanding Google SERP Features',
-
             'feature_snippet_title' => 'Featured Snippets',
             'feature_snippet_desc' => 'Also known as "answer boxes", these appear about 12% of search queries. Our tool helps you check if you own this prime real estate.',
-
             'feature_local_title' => 'Local Pack',
             'feature_local_desc' => 'The map-based list of 3 local businesses. Crucial for brick-and-mortar stores. Use our "Location" feature to verify your presence.',
-
             'feature_paa_title' => 'People Also Ask',
             'feature_paa_desc' => 'Accordion-style questions related to the user\'s query. Ranking here can drive significant awareness traffic. Use our serp keyword checker to identify these opportunities.',
-
             'feature_knowledge_title' => 'Knowledge Panel',
             'feature_knowledge_desc' => 'Information boxes that appear on the right side of desktop results. Essential for brand authority and entity SEO.',
-
             'what_is_title' => 'What is a SERP Checker & Analyzer?',
             'what_is_desc' => 'A Search Engine Results Page (SERP) Checker is an essential diagnostic tool for SEO professionals and business owners. It allows you to use a website SERP checker to view the results for a specific keyword as they would appear to a neutral user in a specific geographic location.',
-
             'bubble_problem_title' => 'The "Google Bubble" Problem',
             'bubble_problem_desc' => 'If you simply go to Google.com and search for your own keywords, the results are heavily biased. Google customizes results based on Your IP Address, Search History, and Device Type. This makes it hard to answer "what is my serp" accurately without a tool.',
-
             'solution_text' => 'Our Free Google SERP Checker bursts this bubble. By using the UULE parameter, we generate a specially encoded string that tells Google exactly where to simulate the online SERP tracking from, giving you 100% clean, unbiased data.',
         ],
-
         'faq' => [
             'title' => 'Frequently Asked Questions',
-
             'q1' => 'Is this SERP Tool Free for unlimited searches?',
             'a1' => 'Yes! Our serp tool free of charge allows you to check as many keywords as you like without creating an account or paying a subscription fee. We believe in providing accessible online serp rank checker tools for everyone.',
-
             'q2' => 'How does the SERP Position Tool location feature work?',
             'a2' => 'We use Google\'s official UULE (Universal URL Location Encoded) parameter. When you enter a city, we find its precise GPS coordinates and encode them into the search request, forcing Google to show results as if you were physically standing in that city.',
-
             'q3' => 'Why does my SERP Google Ranking look different on Mobile?',
             'a3' => 'Google uses Mobile-First Indexing, meaning it predominantly uses the mobile version of the content for indexing and ranking. Mobile search results also have different layouts (more ads, different snippets). Use our "Device" selector to verify your mobile presence specifically with this google serps tracker.',
         ],
     ],
 
-
-
-    // Yahoo SERP Checker
+    // Yahoo Serp Checker
     'yahoo-serp-checker' => [
         'meta' => [
-            'h1' => 'Yahoo SERP Checker',
-        ],
-        'seo' => [
             'title' => 'Yahoo SERP Checker - Check Your Yahoo Search Rankings',
             'description' => 'Free Yahoo SERP checker to track your website rankings on Yahoo search engine.',
-            'keywords' => 'yahoo serp checker, yahoo rank tracker, yahoo search rankings',
+            'h1' => 'Yahoo SERP Checker',
+            'subtitle' => 'Monitor Yahoo search rankings for your keywords and competitors',
+        ],
+        'form' => [
+            'keyword_placeholder' => 'your keyword...',
+            'location_placeholder' => 'Enter city (Optional)',
+            'button' => 'Check Yahoo SERP',
         ],
         'interface' => [
             'simulation_title' => 'Live Yahoo SERP Check',
@@ -638,27 +529,8 @@ return [
             'no_login' => 'No Login Required',
             'realtime_results' => 'Real-Time Results',
         ],
-
-        'form' => [
-            'keyword_placeholder' => 'your keyword...',
-            'location_placeholder' => 'Enter city (Optional)',
-            'button' => 'Check Yahoo SERP',
-        ],
-
-        'domains' => [
-            'us' => 'Yahoo.com (USA/Global)',
-            'uk' => 'Yahoo.co.uk (United Kingdom)',
-            'ca' => 'Yahoo.ca (Canada)',
-            'au' => 'Yahoo.com.au (Australia)',
-            'de' => 'Yahoo.de (Germany)',
-            'fr' => 'Yahoo.fr (France)',
-            'it' => 'Yahoo.it (Italy)',
-            'es' => 'Yahoo.es (Spain)',
-            'br' => 'Yahoo.com.br (Brazil)',
-        ],
-
         'content' => [
-            'main_title' => 'Advanced Yahoo Rank Checker', // Re-adding main_title just in case
+            'main_title' => 'Advanced Yahoo Rank Checker',
             'main_subtitle' => 'Monitor your search performance on Yahoo. Get accurate, real-time ranking data to optimize your SEO strategy.',
             'feature1_title' => '100% Free',
             'feature1_desc' => 'Use this tool as many times as you want. No hidden costs.',
@@ -671,31 +543,35 @@ return [
             'same_as_bing_title' => 'Does Yahoo use Bing Results?',
             'same_as_bing_desc' => 'Yes, Yahoo Search is largely powered by <strong>Bing\'s search index</strong>. This means optimizing for Bing often helps your Yahoo rankings. However, Yahoo\'s interface and features differ, so verifying your actual appearance is crucial.',
         ],
-
         'faq' => [
             'title' => 'Frequently Asked Questions',
-
             'q1' => 'Is this Yahoo Rank Checker free?',
             'a1' => 'Yes! Our **yahoo rank tracker** is 100% free. Check your rankings on Yahoo as often as you need without any hidden fees or subscriptions.',
-
             'q2' => 'Does Yahoo use Bing\'s search results?',
             'a2' => 'Since Yahoo is powered by Bing, focus on Bing SEO best practices: clear technical SEO, authoritative backlinks, and relevant content. Using this tool to monitor progress is a great start.',
-
             'q3' => 'Is this tool free?',
             'a3' => 'Absolutely! Our Yahoo SERP checker is completely free with unlimited searches.',
         ],
-
+        'domains' => [
+            'us' => 'Yahoo.com (USA/Global)',
+            'uk' => 'Yahoo.co.uk (United Kingdom)',
+            'ca' => 'Yahoo.ca (Canada)',
+            'au' => 'Yahoo.com.au (Australia)',
+            'de' => 'Yahoo.de (Germany)',
+            'fr' => 'Yahoo.fr (France)',
+            'it' => 'Yahoo.it (Italy)',
+            'es' => 'Yahoo.es (Spain)',
+            'br' => 'Yahoo.com.br (Brazil)',
+        ],
     ],
 
     // Broken Links Checker
     'broken-links-checker' => [
         'meta' => [
-            'h1' => 'Broken Links Checker',
-        ],
-        'seo' => [
             'title' => 'Broken Link Checker - Find Dead Links on Your Website',
             'description' => 'Free broken link checker to scan your website for dead links, 404 errors, and fix broken URLs for better SEO.',
-            'keywords' => 'broken link checker, dead link finder, 404 checker, link validator',
+            'h1' => 'Broken Links Checker',
+            'subtitle' => 'Find and fix broken links on your website for better SEO & UX',
         ],
         'interface' => [
             'title' => 'Scan Your Website',
@@ -711,31 +587,6 @@ return [
             'legend_ok' => '200 OK',
             'legend_err' => '404/Err',
         ],
-        'progress' => [
-            'extracting' => 'Extracting Links...',
-            'checking' => 'Checking Links...',
-            'processing' => 'Processing links sequentially...',
-            'processed' => 'Processed',
-            'of' => 'of',
-            'links' => 'links',
-            'stop' => 'Stop',
-        ],
-        'stats' => [
-            'total' => 'Total Links',
-            'redirects' => 'Redirects (3xx)',
-            'broken' => 'Broken (4xx/5xx)',
-            'working' => 'Working (200)',
-        ],
-        'js' => [
-            'stopping' => 'Stopping scan...',
-            'scan_complete' => 'Scan Complete!',
-            'scan_stopped' => 'Scan Stopped',
-            'error_prefix' => 'Error: ',
-            'check_failed' => 'Check failed',
-            'pending' => 'Pending',
-            'internal' => 'Internal',
-            'external' => 'External',
-        ],
         'results' => [
             'download' => 'Download CSV Report',
             'detailed_analysis' => 'Detailed Analysis',
@@ -747,13 +598,11 @@ return [
             'external' => 'External',
             'pending' => 'Pending',
         ],
-        'benefits' => [
-            'ux_title' => 'User Experience',
-            'ux_desc' => 'Broken links frustrate visitors and increase bounce rates. Keep your users happy with a smooth browsing experience.',
-            'seo_title' => 'SEO Impact',
-            'seo_desc' => 'Search engines penalize sites with many broken links. Maintain your rankings by fixing dead links promptly.',
-            'maintenance_title' => 'Easy Maintenance',
-            'maintenance_desc' => 'Quickly identify and fix broken links before they damage your site\'s reputation and search visibility.',
+        'stats' => [
+            'total' => 'Total Links',
+            'redirects' => 'Redirects (3xx)',
+            'broken' => 'Broken (4xx/5xx)',
+            'working' => 'Working (200)',
         ],
         'content' => [
             'main_title' => 'Why Check for Broken Links?',
@@ -775,6 +624,50 @@ return [
             'cc_6' => '❌ <strong>Protocol changes:</strong> HTTP to HTTPS migrations without proper redirects',
             'pro_tip_title' => '💡 Pro Tip:',
             'pro_tip_desc' => 'Run this checker regularly (monthly or quarterly) to catch broken links before they impact your SEO. Set up a maintenance schedule to keep your website healthy!',
+        ],
+        'benefits' => [
+            'ux_title' => 'User Experience',
+            'ux_desc' => 'Broken links frustrate visitors and increase bounce rates. Keep your users happy with a smooth browsing experience.',
+            'seo_title' => 'SEO Impact',
+            'seo_desc' => 'Search engines penalize sites with many broken links. Maintain your rankings by fixing dead links promptly.',
+            'maintenance_title' => 'Easy Maintenance',
+            'maintenance_desc' => 'Quickly identify and fix broken links before they damage your site\'s reputation and search visibility.',
+        ],
+        'faq' => [
+            'title' => 'Frequently Asked Questions',
+            'q1' => 'How often should I check for broken links?',
+            'a1' => 'For most websites, checking for broken links monthly is sufficient. High-traffic sites or e-commerce platforms should check weekly. After major website updates, redesigns, or migrations, run an immediate check.',
+            'q2' => 'Do broken links hurt my SEO rankings?',
+            'a2' => 'Yes, but indirectly. Google has stated that a few broken links won\'t directly harm rankings. However, <strong>many broken links</strong> signal poor site maintenance, which can increase bounce rates, waste crawl budget, and reduce user trust.',
+            'q3' => 'What\'s the difference between internal and external broken links?',
+            'a3' => '<strong>Internal broken links</strong> point to pages on your own domain and are fully under your control. <strong>External broken links</strong> point to other websites. You should update them to working alternatives or remove them.',
+            'q4' => 'Can I check broken links for my entire website?',
+            'a4' => 'This tool checks <strong>one page at a time</strong> to provide fast, focused results. For full-site audits, we recommend starting with your most important pages: homepage, top landing pages, and high-traffic content.',
+            'q_what_to_do' => 'What should I do when I find broken links?',
+            'a_what_to_do_intro' => 'Follow this priority order:',
+            'a_what_to_do_li1' => '<strong>Internal links:</strong> Set up 301 redirects to the new URL or update the link directly',
+            'a_what_to_do_li2' => '<strong>External links:</strong> Find an alternative working page or use archive.org to find the old content',
+            'a_what_to_do_li3' => '<strong>If no alternative:</strong> Remove the link and update surrounding content to maintain flow',
+            'a_what_to_do_li4' => '<strong>Document everything:</strong> Keep a log for future reference and pattern analysis',
+        ],
+        'js' => [
+            'stopping' => 'Stopping scan...',
+            'scan_complete' => 'Scan Complete!',
+            'scan_stopped' => 'Scan Stopped',
+            'error_prefix' => 'Error: ',
+            'check_failed' => 'Check failed',
+            'pending' => 'Pending',
+            'internal' => 'Internal',
+            'external' => 'External',
+        ],
+        'progress' => [
+            'extracting' => 'Extracting Links...',
+            'checking' => 'Checking Links...',
+            'processing' => 'Processing links sequentially...',
+            'processed' => 'Processed',
+            'of' => 'of',
+            'links' => 'links',
+            'stop' => 'Stop',
         ],
         'link_types' => [
             'type1_title' => '🔴 404 Not Found',
@@ -801,35 +694,15 @@ return [
             'bp6_title' => 'Use Relative URLs',
             'bp6_desc' => 'For internal links, use relative URLs to avoid issues during domain changes',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'How often should I check for broken links?',
-            'a1' => 'For most websites, checking for broken links monthly is sufficient. High-traffic sites or e-commerce platforms should check weekly. After major website updates, redesigns, or migrations, run an immediate check.',
-            'q2' => 'Do broken links hurt my SEO rankings?',
-            'a2' => 'Yes, but indirectly. Google has stated that a few broken links won\'t directly harm rankings. However, <strong>many broken links</strong> signal poor site maintenance, which can increase bounce rates, waste crawl budget, and reduce user trust.',
-            'q3' => 'What\'s the difference between internal and external broken links?',
-            'a3' => '<strong>Internal broken links</strong> point to pages on your own domain and are fully under your control. <strong>External broken links</strong> point to other websites. You should update them to working alternatives or remove them.',
-            'q4' => 'Can I check broken links for my entire website?',
-            'a4' => 'This tool checks <strong>one page at a time</strong> to provide fast, focused results. For full-site audits, we recommend starting with your most important pages: homepage, top landing pages, and high-traffic content.',
-            'q_what_to_do' => 'What should I do when I find broken links?',
-            'a_what_to_do_intro' => 'Follow this priority order:',
-            'a_what_to_do_li1' => '<strong>Internal links:</strong> Set up 301 redirects to the new URL or update the link directly',
-            'a_what_to_do_li2' => '<strong>External links:</strong> Find an alternative working page or use archive.org to find the old content',
-            'a_what_to_do_li3' => '<strong>If no alternative:</strong> Remove the link and update surrounding content to maintain flow',
-            'a_what_to_do_li4' => '<strong>Document everything:</strong> Keep a log for future reference and pattern analysis',
-        ],
-
     ],
 
-    // On-Page SEO Checker
+    // On Page Seo Checker
     'on-page-seo-checker' => [
         'meta' => [
-            'h1' => 'On-Page SEO Checker',
-        ],
-        'seo' => [
             'title' => 'On-Page SEO Checker - Complete SEO Analysis',
             'description' => 'Free on-page SEO checker to analyze and optimize your web pages for search engines.',
-            'keywords' => 'on-page seo, seo checker, page analyzer, seo audit tool',
+            'h1' => 'On-Page SEO Checker',
+            'subtitle' => 'Complete on-page SEO audit with actionable recommendations',
         ],
         'interface' => [
             'title' => 'Start Your Free Audit',
@@ -860,6 +733,17 @@ return [
             'f6_title' => 'Link Architecture',
             'f6_desc' => 'Internal and external link audit in one view. See how many outbound links point where, and whether your internal linking strengthens topical authority. It\'s a holistic <strong>free onpage seo checker</strong> designed for comprehensiveness.',
         ],
+        'faq' => [
+            'title' => 'Frequently Asked Questions',
+            'q1' => 'Why is an onpage seo checkup critical for ranking?',
+            'a1' => 'Search is about relevance. An <strong>onpage seo checkup</strong> ensures your signals (titles, schema, content) align with user intent. Regular auditing with an <strong>onpage site seo</strong> tool keeps your site synced with evolving algorithm updates.',
+            'q2' => 'Is this onpage seo tool online really free?',
+            'a2' => 'Yes. We believe in accessible data. Our <strong>on page seo tool online</strong> is free to use, allowing you to act as your own <strong>free onpage seo tool</strong> without subscription barriers.',
+            'q3' => 'How do search engines understand my content?',
+            'a3' => 'Engines use NLP (Natural Language Processing) to relate entities. Our <strong>on page seo grader</strong> checks if your structure supports this understanding, acting as a proxy <strong>seo onpage test</strong> for neural compatibility.',
+            'q4' => 'Can I check onpage seo for any website?',
+            'a4' => 'Yes. Our crawler respects `robots.txt` but can analyze any public URL. You can <strong>check onpage seo</strong> for competitors to reverse-engineer their success. It\'s a versatile <strong>onpage checker tool</strong> for any strategy.',
+        ],
         'labels' => [
             'initializing' => 'Initializing...',
             'desktop' => 'Desktop',
@@ -874,27 +758,15 @@ return [
             'step3_title' => 'Optimize for Intent',
             'step3_desc' => 'Use the data to refine your content\'s relevance. <strong>Check onpage website</strong> logic and improve your actionable <strong>onpage seo score</strong>.',
         ],
-        'faq' => [
-            'title' => 'Frequently Asked Questions',
-            'q1' => 'Why is an onpage seo checkup critical for ranking?',
-            'a1' => 'Search is about relevance. An <strong>onpage seo checkup</strong> ensures your signals (titles, schema, content) align with user intent. Regular auditing with an <strong>onpage site seo</strong> tool keeps your site synced with evolving algorithm updates.',
-            'q2' => 'Is this onpage seo tool online really free?',
-            'a2' => 'Yes. We believe in accessible data. Our <strong>on page seo tool online</strong> is free to use, allowing you to act as your own <strong>free onpage seo tool</strong> without subscription barriers.',
-            'q3' => 'How do search engines understand my content?',
-            'a3' => 'Engines use NLP (Natural Language Processing) to relate entities. Our <strong>on page seo grader</strong> checks if your structure supports this understanding, acting as a proxy <strong>seo onpage test</strong> for neural compatibility.',
-            'q4' => 'Can I check onpage seo for any website?',
-            'a4' => 'Yes. Our crawler respects `robots.txt` but can analyze any public URL. You can <strong>check onpage seo</strong> for competitors to reverse-engineer their success. It\'s a versatile <strong>onpage checker tool</strong> for any strategy.',
-        ],
     ],
 
-    // PDF Report Generator
+    // Pdf Report
     'pdf-report' => [
         'meta' => [
-            'h1' => 'PDF Report Generator',
-        ],
-        'seo' => [
             'title' => 'PDF Report - SEO Audit Report',
             'description' => 'Generate a free PDF SEO audit report for your website.',
+            'h1' => 'PDF Report Generator',
+            'subtitle' => 'Generate detailed PDF reports for SEO analysis and audits',
         ],
         'interface' => [
             'brand_name' => 'Optimizo',

@@ -1,27 +1,37 @@
 @props(['title' => null, 'description' => null, 'icon' => null, 'tool'])
 
 @php
-    // Use provided props, or fall back to file-based translation (meta.h1 -> form.title -> seo.title), then DB translation
+    // Initialize default variables immediately to prevent undefined variable errors
+    $gradientFrom = '#6366f1'; // Default Indigo-500
+    $gradientTo = '#db2777';   // Default Pink-600
+    $textColor = 'text-indigo-600'; // Default text color
+
+    // Use provided props, or fall back to file-based translation (meta.h1 -> form.title -> seo.title)
+    // We prioritize file-based translations as they are the source of truth for localization.
     $fileTitle = __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'form.title') ?: __tool($tool->slug, 'seo.title');
     $fileDescription = __tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description');
 
-    $displayTitle = $title
-        ?: ($fileTitle ?: (__t($tool, 'name') ?: ($tool->meta_title ?: __('common.tool_fallback'))));
-
-    $displayDescription = $description
-        ?: ($fileDescription ?: (__t($tool, 'meta_description') ?: ($tool->description ?: '')));
+    // Display Logic:
+    // 1. Component Prop (if passed explicitly)
+    // 2. File-based Translation (if found)
+    // 3. Database Model Attribute (as a final fallback for non-localized English defaults)
+    $displayTitle = $title ?: ($fileTitle ?: $tool->name);
+    $displayDescription = $description ?: ($fileDescription ?: $tool->description);
 
     $displayIcon = $icon ?? $tool->icon ?? $tool->slug ?? 'default';
 
     // Category-based gradient colors
-    // Category-based gradient colors from Database
-    $category = $tool->categoryRelation;
-    $gradientFrom = $category?->bg_gradient_from ?? '#6366f1'; // Default Indigo-500
-    $gradientTo = $category?->bg_gradient_to ?? '#db2777';   // Default Pink-600
-    $textColor = $category?->text_color ?? 'text-indigo-600'; // Default text color
+    $category = $tool->categoryRelation ?? null;
+
+    if ($category) {
+        $gradientFrom = $category->bg_gradient_from ?? $gradientFrom;
+        $gradientTo = $category->bg_gradient_to ?? $gradientTo;
+        $textColor = $category->text_color ?? $textColor;
+    }
 
     $iconColorClass = $textColor;
 @endphp
+
 
 <div class="relative overflow-hidden bg-gradient-to-br rounded-3xl p-4 md:p-6 mb-8 shadow-2xl"
     style="--tw-gradient-from: {{ $gradientFrom }}; --tw-gradient-to: {{ $gradientTo }}; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);">

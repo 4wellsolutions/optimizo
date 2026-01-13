@@ -2,9 +2,6 @@
 
 @section('title', __tool('tsv-csv-converter', 'meta.h1'))
 @section('meta_description', __tool('tsv-csv-converter', 'meta.subtitle'))
-@if($tool->meta_keywords)
-    @section('meta_keywords', $tool->meta_keywords)
-@endif
 
 
 @section('content')

@@ -1,15 +1,13 @@
 <?php
 
 return [
-    // PDF to Word Converter
+    // Pdf To Word
     'pdf-to-word' => [
         'meta' => [
-            'h1' => 'PDF to Word Converter',
-        ],
-        'seo' => [
             'title' => 'PDF to Word Converter - Free Online Tool',
-            'h1' => 'PDF to Word Converter',
             'description' => 'Convert PDF files to editable Word documents online. Free PDF to DOCX converter with layout preservation and high accuracy.',
+            'h1' => 'PDF to Word Converter',
+            'subtitle' => 'Convert PDF documents to editable Word files instantly with high accuracy',
         ],
         'form' => [
             'upload_title' => 'Upload PDF File',
@@ -38,15 +36,13 @@ return [
         ],
     ],
 
-    // Word to PDF Converter
+    // Word To Pdf
     'word-to-pdf' => [
         'meta' => [
-            'h1' => 'Word to PDF Converter',
-        ],
-        'seo' => [
             'title' => 'Word to PDF Converter - Free Online Tool',
-            'h1' => 'Word to PDF Converter',
             'description' => 'Convert Word documents to PDF online. Free DOC to PDF converter with perfect formatting preservation.',
+            'h1' => 'Word to PDF Converter',
+            'subtitle' => 'Transform Word documents to PDF format with perfect formatting preserved',
         ],
         'form' => [
             'upload_title' => 'Upload Word File',
@@ -75,15 +71,13 @@ return [
         ],
     ],
 
-    // Excel to PDF Converter
+    // Excel To Pdf
     'excel-to-pdf' => [
         'meta' => [
-            'h1' => 'Excel to PDF Converter',
-        ],
-        'seo' => [
             'title' => 'Excel to PDF Converter - Free Online Tool',
-            'h1' => 'Excel to PDF Converter',
             'description' => 'Convert Excel spreadsheets to PDF online. Free XLS to PDF converter for professional data presentation.',
+            'h1' => 'Excel to PDF Converter',
+            'subtitle' => 'Convert Excel spreadsheets to professional PDF documents effortlessly',
         ],
         'form' => [
             'upload_title' => 'Upload Excel File',
@@ -123,15 +117,13 @@ return [
         ],
     ],
 
-    // PDF to Excel Converter
+    // Pdf To Excel
     'pdf-to-excel' => [
         'meta' => [
-            'h1' => 'PDF to Excel Converter',
-        ],
-        'seo' => [
             'title' => 'PDF to Excel Converter - Free Online Tool',
-            'h1' => 'PDF to Excel Converter',
             'description' => 'Convert PDF to Excel spreadsheets online. Extract tables from PDF to editable XLSX format.',
+            'h1' => 'PDF to Excel Converter',
+            'subtitle' => 'Extract data from PDF to editable Excel spreadsheets with precision',
         ],
         'form' => [
             'upload_title' => 'Upload PDF File',
@@ -160,15 +152,13 @@ return [
         ],
     ],
 
-    // PPT to PDF Converter
+    // Ppt To Pdf
     'ppt-to-pdf' => [
         'meta' => [
-            'h1' => 'PowerPoint to PDF Converter',
-        ],
-        'seo' => [
             'title' => 'PowerPoint to PDF Converter - Free Online Tool',
-            'h1' => 'PowerPoint to PDF Converter',
             'description' => 'Convert PowerPoint presentations to PDF online. Free PPT to PDF converter for easy sharing.',
+            'h1' => 'PowerPoint to PDF Converter',
+            'subtitle' => 'Convert PowerPoint presentations to PDF format for easy sharing',
         ],
         'form' => [
             'upload_title' => 'Upload PowerPoint File',
@@ -197,15 +187,13 @@ return [
         ],
     ],
 
-    // PDF to PPT Converter
+    // Pdf To Ppt
     'pdf-to-ppt' => [
         'meta' => [
-            'h1' => 'PDF to PowerPoint Converter',
-        ],
-        'seo' => [
             'title' => 'PDF to PowerPoint Converter - Free Online Tool',
-            'h1' => 'PDF to PowerPoint Converter',
             'description' => 'Convert PDF to PowerPoint slides online. Transform PDF pages into editable PPTX presentations.',
+            'h1' => 'PDF to PowerPoint Converter',
+            'subtitle' => 'Transform PDF documents into editable PowerPoint presentations',
         ],
         'form' => [
             'upload_title' => 'Upload PDF File',
@@ -234,15 +222,13 @@ return [
         ],
     ],
 
-    // JPG to PDF Converter
+    // Jpg To Pdf
     'jpg-to-pdf' => [
         'meta' => [
-            'h1' => 'JPG to PDF Converter',
-        ],
-        'seo' => [
             'title' => 'JPG to PDF Converter - Free Online Tool',
-            'h1' => 'JPG to PDF Converter',
             'description' => 'Convert JPG images to PDF online. Combine multiple images into one PDF document.',
+            'h1' => 'JPG to PDF Converter',
+            'subtitle' => 'Convert JPG images to PDF documents with custom page settings',
         ],
         'form' => [
             'upload_title' => 'Upload Image Files',
@@ -271,15 +257,13 @@ return [
         ],
     ],
 
-    // PDF to JPG Converter
+    // Pdf To Jpg
     'pdf-to-jpg' => [
         'meta' => [
-            'h1' => 'PDF to JPG Converter',
-        ],
-        'seo' => [
             'title' => 'PDF to JPG Converter - Free Online Tool',
-            'h1' => 'PDF to JPG Converter',
             'description' => 'Convert PDF to JPG images online. Extract PDF pages as high-quality JPG files.',
+            'h1' => 'PDF to JPG Converter',
+            'subtitle' => 'Extract pages from PDF as high-quality JPG images instantly',
         ],
         'form' => [
             'upload_title' => 'Upload PDF File',
@@ -308,15 +292,13 @@ return [
         ],
     ],
 
-    // PDF Compressor
+    // Pdf Compressor
     'pdf-compressor' => [
         'meta' => [
-            'h1' => 'PDF Compressor',
-        ],
-        'seo' => [
             'title' => 'PDF Compressor - Reduce PDF File Size Online',
-            'h1' => 'PDF Compressor',
             'description' => 'Compress PDF files online. Reduce PDF file size while maintaining quality with our free PDF compressor.',
+            'h1' => 'PDF Compressor',
+            'subtitle' => 'Reduce PDF file size while maintaining quality for faster sharing',
         ],
         'form' => [
             'upload_title' => 'Upload PDF File',
@@ -351,15 +333,13 @@ return [
         ],
     ],
 
-    // PDF Merger
+    // Pdf Merger
     'pdf-merger' => [
         'meta' => [
-            'h1' => 'PDF Merger',
-        ],
-        'seo' => [
             'title' => 'PDF Merger - Combine PDF Files Online',
-            'h1' => 'PDF Merger',
             'description' => 'Merge PDF files online. Combine multiple PDFs into one document with our free PDF merger tool.',
+            'h1' => 'PDF Merger',
+            'subtitle' => 'Combine multiple PDF files into a single document effortlessly',
         ],
         'form' => [
             'upload_title' => 'Combine PDF Files',
@@ -389,15 +369,13 @@ return [
         ],
     ],
 
-    // PDF Splitter
+    // Pdf Splitter
     'pdf-splitter' => [
         'meta' => [
-            'h1' => 'PDF Splitter',
-        ],
-        'seo' => [
             'title' => 'PDF Splitter - Split PDF Files Online',
-            'h1' => 'PDF Splitter',
             'description' => 'Split PDF files online. Extract pages and divide large PDFs into smaller documents.',
+            'h1' => 'PDF Splitter',
+            'subtitle' => 'Split PDF documents into separate pages or extract specific ranges',
         ],
         'form' => [
             'upload_title' => 'Upload PDF File',
@@ -429,4 +407,5 @@ return [
             'step3_desc' => 'Get your split PDF files.',
         ],
     ],
+
 ];

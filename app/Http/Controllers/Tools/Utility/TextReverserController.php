@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\Tools\Utility;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
+use App\Models\Tool;
 
 class TextReverserController extends Controller
 {
     public function index()
     {
-        $tool = DB::table('tools')->where('slug', 'text-reverser')->first();
+        $tool = Tool::where('slug', 'text-reverser')->firstOrFail();
         return view('tools.utility.text-reverser', compact('tool'));
     }
 }

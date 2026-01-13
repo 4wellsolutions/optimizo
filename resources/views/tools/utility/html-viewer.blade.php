@@ -2,10 +2,6 @@
 
 @section('title', __tool('html-viewer', 'meta.h1'))
 @section('meta_description', __tool('html-viewer', 'meta.subtitle'))
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
 @section('content')
     <div class="w-full">
         <!-- Hero Section -->

@@ -16,8 +16,10 @@ $toolsToTest = [
     'json-to-xml' => 'utilities',
     'word-to-pdf' => 'document',
     'time-zone-converter' => 'time',
-    'pdf-to-word' => 'document',
-    'csv-to-xml' => 'utilities',
+    'url-encoder' => 'utilities',
+    'xml-formatter' => 'utilities',
+    'user-agent-parser' => 'utilities',
+    'yaml-to-json' => 'utilities',
 ];
 
 foreach ($toolsToTest as $slug => $expectedCat) {

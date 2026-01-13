@@ -1,49 +1,16 @@
 <?php
 
 return [
-    /*
-    |--------------------------------------------------------------------------
-    | Time Tools Translation Keys
-    |--------------------------------------------------------------------------
-    |
-    | This file contains all translation keys for the Time tools category.
-    |
-    */
-
-    // Epoch Time Converter
     'epoch-time-converter' => [
         'meta' => [
-            'h1' => 'Epoch Time Converter',
-        ],
-        'seo' => [
             'title' => 'Epoch Time Converter - Unix Timestamp to Date & Date to Timestamp',
-            'h1' => 'Epoch Time Converter',
             'description' => 'Convert Unix Epoch timestamps to human-readable dates and vice versa. Support for local time, GMT/UTC, and relative time with our free, instant converter.',
-        ],
-        'current_epoch' => [
-            'title' => 'Current Unix Epoch Time',
-            'subtitle' => 'The number of seconds since January 1st, 1970 UTC',
-        ],
-        'click_to_copy' => 'Click to copy',
-        'timestamp_to_date' => [
-            'title' => 'Epoch Timestamp to Date',
-            'label' => 'Enter Timestamp',
-            'placeholder' => 'e.g. 1696516200',
-            'button' => 'Convert to Date',
-            'result_gmt' => 'GMT / UTC',
-            'result_local' => 'Your Local Time',
-            'result_relative' => 'Relative',
-        ],
-        'date_to_timestamp' => [
-            'title' => 'Date to Epoch Timestamp',
-            'label' => 'Enter Date & Time',
-            'checkbox' => 'Use GMT/UTC Time',
-            'button' => 'Convert to Epoch',
-            'result_title' => 'Unix Epoch',
+            'h1' => 'Epoch Time Converter',
+            'subtitle' => 'Convert Unix timestamps to human-readable dates and vice versa',
         ],
         'content' => [
             'hero_title' => 'Deciphering the Unix Epoch',
-            'hero_description' => 'Unix time (or Epoch time) is the system checking the heartbeat of the digital world. It tracks the number of seconds that have elapsed since the "Unix Epoch" — 00:00:00 UTC on 1 January 1970.',
+            'hero_description' => 'Unix time (or Epoch time) is the system checking the heartbeat of the digital world. It tracks the number of seconds that have elapsed since the "Unix Epoch" — 00:00:00 UTC on 1 January 1970. ',
             'why_title' => 'Why use Unix Time?',
             'efficiency_title' => 'Efficiency',
             'efficiency_desc' => 'Computers prefer simple integers over complex date strings. It\'s faster to process and store.',
@@ -53,26 +20,17 @@ return [
             'math_desc' => 'Calculating the difference between two dates is as simple as simple subtraction (A - B).',
             'code_title' => 'Get Current Epoch in Your Language',
             'apocalypse_title' => 'The Year 2038 Problem',
-            'apocalypse_desc' => 'On January 19, 2038, 32-bit systems will run out of numbers to store the time, causing the "Unix Y2K". Most modern 64-bit systems are already safe for the next 292 billion years.',
+            'apocalypse_desc' => 'On January 19, 2038, 32-bit systems will run out of numbers to store the time, causing the "Unix Y2K". Most modern 64-bit systems are already safe for the next 292 billion years. ',
             'faq_title' => 'Frequently Asked Questions',
-        ],
-        'faq' => [
-            'q1' => 'What happens during a Leap Second?',
-            'a1' => 'Unix time ignores leap seconds. It treats every day as containing exactly 86400 seconds. When a leap second occurs, the Unix time clock may appear to repeat a second or pause.',
-            'q2' => 'Why 1970?',
-            'a2' => 'It was an arbitrary date chosen by early Unix engineers provided a convenient starting point for the 32-bit signed integer implementation.',
         ],
     ],
 
-    // Date to Unix Timestamp
     'date-to-unix' => [
         'meta' => [
-            'h1' => 'Date to Unix Timestamp Converter',
-        ],
-        'seo' => [
             'title' => 'Date to Unix Timestamp Converter - Instant & Accurate',
+            'description' => 'Convert any date and time into a Unix Timestamp instantly. Supports both local time and UTC/GMT inputs for precise server-side scheduling and debugging.',
             'h1' => 'Date to Unix Timestamp Converter',
-            'description' => 'Convert any date and time into a Unix IP imestamp instantly. Supports both local time and UTC/GMT inputs for precise server-side scheduling and debugging.',
+            'subtitle' => 'Transform dates to Unix epoch timestamps for programming & databases',
         ],
         'form' => [
             'title' => 'Select Date & Time',
@@ -84,10 +42,9 @@ return [
             'result_title' => 'UNIX TIMESTAMP',
             'result_subtitle' => 'Seconds since Jan 01 1970 (UTC)',
         ],
-        'click_to_copy' => 'Click to copy',
         'content' => [
             'hero_title' => 'Convert Human Time to Machine Time',
-            'hero_description' => 'Transform readable dates into precise Unix Timestamps. Essential for database queries, API parameters, and debugging code.',
+            'hero_description' => 'Transform readable dates into precise Unix Timestamps. Essential for database queries, API parameters, and debugging code. ',
             'mode_title' => 'Understanding the Modes',
             'local_title' => 'Local Mode',
             'local_desc' => 'Uses your browser\'s current timezone. Best for finding the timestamp of an event happening "here and now" or in your specific location.',
@@ -101,15 +58,12 @@ return [
         ],
     ],
 
-    // Unix Timestamp to Date
     'unix-to-date' => [
         'meta' => [
-            'h1' => 'Unix Timestamp to Date Converter',
-        ],
-        'seo' => [
             'title' => 'Unix Timestamp to Date Converter - Readable DateTime Tool',
-            'h1' => 'Unix Timestamp to Date Converter',
             'description' => 'Decode Unix Timestamps into human-readable dates. See the exact time in GMT, your local timezone, and ISO 8601 format instantly.',
+            'h1' => 'Unix Timestamp to Date Converter',
+            'subtitle' => 'Convert Unix timestamps to readable date formats across timezones',
         ],
         'form' => [
             'title' => 'Enter Unix Timestamp',
@@ -129,7 +83,7 @@ return [
             'format_gmt_desc' => 'The absolute time reference, unaffected by daylight saving or geographical location.',
             'format_iso_title' => 'ISO 8601',
             'format_iso_example' => '2023-01-01T00:00:00.000Z',
-            'format_iso_desc' => 'The international standard format (YYYY-MM-DD), perfect for data exchange and APIs.',
+            'format_iso_desc' => 'The international standard format (YYYY-MM-DD), perfect for data exchange and APIs. ',
             'format_local_title' => 'Your Local Time',
             'format_local_example' => 'Sun Jan 01 2023 00:00:00 GMT+0000',
             'format_local_desc' => 'Shows how it looks in your browser\'s local timezone',
@@ -141,21 +95,12 @@ return [
         ],
     ],
 
-    // Local to UTC
     'local-to-utc' => [
         'meta' => [
-            'h1' => 'Local Time to UTC Converter',
-        ],
-        'seo' => [
             'title' => 'Local Time to UTC Converter - Timezone Adjuster',
-            'h1' => 'Local Time to UTC Converter',
             'description' => 'Convert your local time to UTC (Coordinated Universal Time). Essential for scheduling international calls and server logs synchronization.',
-        ],
-        'live_clocks' => [
-            'local_title' => 'Your Local Time',
-            'utc_title' => 'Current UTC Time',
-            'loading' => 'Loading...',
-            'utc_subtitle' => 'Coordinated Universal Time',
+            'h1' => 'Local Time to UTC Converter',
+            'subtitle' => 'Convert local time to UTC for global time synchronization',
         ],
         'form' => [
             'title' => 'Convert Local Time',
@@ -166,19 +111,11 @@ return [
             'result_title' => 'UTC TIME',
             'result_subtitle' => 'Global Standard',
         ],
-        'features' => [
-            'instant_title' => 'Instant Conversion',
-            'instant_desc' => 'No page reloads. Conversion happens locally in your browser immediately.',
-            'timezone_title' => 'Auto-Detection',
-            'timezone_desc' => 'We automatically detect your system\'s timezone for accurate local context.',
-            'accurate_title' => 'DST Aware',
-            'accurate_desc' => 'Calculations respect Daylight Saving Time shifts for your specific location.',
-        ],
         'content' => [
             'why_title' => 'Why Convert to UTC?',
             'why_desc' => 'UTC (Coordinated Universal Time) is the primary time standard by which the world regulates clocks and time. It does not observe Daylight Saving Time, making it a stable reference point.',
             'utc_standard_title' => 'The Global Standard',
-            'utc_standard_intro' => 'Developers, pilots, and scientists use UTC because:',
+            'utc_standard_intro' => 'Developers, pilots, and scientists use UTC because: ',
             'timezone_reason' => 'Timezones are Political: They change often based on laws.',
             'dst_reason' => 'DST is Confusing: Clocks jump forward and back, creating gaps or duplicates using local time.',
             'political_reason' => 'No Ambiguity: 10:00 UTC is the same moment everywhere in the universe.',
@@ -193,15 +130,12 @@ return [
         ],
     ],
 
-    // UTC to Local
     'utc-to-local' => [
         'meta' => [
-            'h1' => 'UTC to Local Time Converter',
-        ],
-        'seo' => [
             'title' => 'UTC to Local Time Converter - Global Time Translator',
-            'h1' => 'UTC to Local Time Converter',
             'description' => 'Quickly convert UTC/GMT time to your local timezone. Perfect for checking server logs, international meeting times, and global event schedules.',
+            'h1' => 'UTC to Local Time Converter',
+            'subtitle' => 'Transform UTC time to your local timezone instantly',
         ],
         'form' => [
             'result_title' => 'Convert UTC to Local',
@@ -222,7 +156,7 @@ return [
             'simplicity_title' => 'Simplicity',
             'simplicity_desc' => 'It avoids the "ambiguous hour" problem when clocks fall back.',
             'offsets_title' => 'How to Read Offsets',
-            'offsets_intro' => 'When you convert UTC to local, you are applying an "Offset".',
+            'offsets_intro' => 'When you convert UTC to local, you are applying an "Offset". ',
             'offset_minus' => 'UTC-5 (e.g., New York EST) means local time is 5 hours behind UTC.',
             'offset_plus' => 'UTC+9 (e.g., Tokyo) means local time is 9 hours ahead of UTC.',
             'offset_half' => 'Some places like India use half-hour offsets (UTC+5:30).',
@@ -231,15 +165,12 @@ return [
         ],
     ],
 
-    // Time Zone Converter
     'time-zone-converter' => [
         'meta' => [
-            'h1' => 'Time Zone Converter',
-        ],
-        'seo' => [
             'title' => 'Time Zone Converter - Global Meeting Planner',
-            'h1' => 'Time Zone Converter',
             'description' => 'Visualize time differences across the globe. Compare times between two cities or zones side-by-side. Ideal for arranging international meetings.',
+            'h1' => 'Time Zone Converter',
+            'subtitle' => 'Convert time between different timezones worldwide accurately',
         ],
         'form' => [
             'source_label' => 'Source Time',
@@ -254,7 +185,7 @@ return [
         ],
         'content' => [
             'hero_title' => 'Mastering Global Time',
-            'hero_desc' => 'Schedule meetings, catch flights, and coordinate across continents without the headache. Our converter handles all the math.',
+            'hero_desc' => 'Schedule meetings, catch flights, and coordinate across continents without the headache. Our converter handles all the math. ',
             'meeting_planner_title' => 'Global Meeting Planner',
             'precision_title' => 'Why Precision Matters',
             'business_title' => 'Business Meetings',
@@ -277,4 +208,5 @@ return [
             'faq_a2' => 'Political and geographical reasons. India (UTC+5:30) and Nepal (UTC+5:45) chose these offsets to better align solar noon with their longitude.',
         ],
     ],
+
 ];

@@ -93,47 +93,90 @@
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-to-xml', 'content.features_title') }}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                @foreach($tool->content['features'] as $feature)
-                    <div
-                        class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
-                        <div class="text-3xl mb-3">
-                            @if($loop->index == 0) ⚡
-                            @elseif($loop->index == 1) 🔒
-                            @elseif($loop->index == 2) 📋
-                            @elseif($loop->index == 3) 🎯
-                            @elseif($loop->index == 4) 🆓
-                            @elseif($loop->index == 5) 🌐
-                            @endif
-                        </div>
-                        <h4 class="font-bold text-gray-900 mb-2">{{ $feature['title'] }}</h4>
-                        <p class="text-gray-600 text-sm">{{ $feature['desc'] }}</p>
-                    </div>
-                @endforeach
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">⚡</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-to-xml', 'content.features.instant.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-to-xml', 'content.features.instant.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-to-xml', 'content.features.privacy.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-to-xml', 'content.features.privacy.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">📋</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-to-xml', 'content.features.copy.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-to-xml', 'content.features.copy.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🎯</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-to-xml', 'content.features.format.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-to-xml', 'content.features.format.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🆓</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-to-xml', 'content.features.free.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-to-xml', 'content.features.free.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🌐</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-to-xml', 'content.features.offline.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-to-xml', 'content.features.offline.desc') }}</p>
+                </div>
             </div>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-to-xml', 'content.uses_title') }}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
-                @foreach($tool->content['uses'] as $use)
-                    <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
-                        <h4 class="font-bold text-lg text-gray-900 mb-3">{{ $use['title'] }}</h4>
-                        <p class="text-gray-700 leading-relaxed">{{ $use['desc'] }}</p>
-                    </div>
-                @endforeach
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-to-xml', 'content.uses.migration.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.uses.migration.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-to-xml', 'content.uses.integration.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.uses.integration.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-to-xml', 'content.uses.config.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.uses.config.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-to-xml', 'content.uses.enterprise.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.uses.enterprise.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-to-xml', 'content.uses.docs.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.uses.docs.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-to-xml', 'content.uses.export.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.uses.export.desc') }}</p>
+                </div>
             </div>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-to-xml', 'content.how_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8 shadow-lg">
                 <ol class="space-y-4">
-                    @foreach($tool->content['how_steps'] as $step)
-                        <li class="flex items-start">
-                            <span
-                                class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-3">{{ $loop->iteration }}</span>
-                            <div>
-                                <p class="font-semibold text-gray-900 mb-1">{{ $step['title'] }}</p>
-                                <p class="text-gray-700">{{ $step['desc'] }}</p>
-                            </div>
-                        </li>
-                    @endforeach
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-3">1</span>
+                        <div>
+                            <p class="font-semibold text-gray-900 mb-1">{{ __tool('json-to-xml', 'content.how_steps.1.title') }}</p>
+                            <p class="text-gray-700">{{ __tool('json-to-xml', 'content.how_steps.1.desc') }}</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-3">2</span>
+                        <div>
+                            <p class="font-semibold text-gray-900 mb-1">{{ __tool('json-to-xml', 'content.how_steps.2.title') }}</p>
+                            <p class="text-gray-700">{{ __tool('json-to-xml', 'content.how_steps.2.desc') }}</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-3">3</span>
+                        <div>
+                            <p class="font-semibold text-gray-900 mb-1">{{ __tool('json-to-xml', 'content.how_steps.3.title') }}</p>
+                            <p class="text-gray-700">{{ __tool('json-to-xml', 'content.how_steps.3.desc') }}</p>
+                        </div>
+                    </li>
                 </ol>
             </div>
 
@@ -181,26 +224,65 @@
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-to-xml', 'content.faq_title') }}</h3>
             <div class="space-y-4 mb-8">
-                @foreach($tool->content['faq'] as $faq)
-                    <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                        <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ $faq['question'] }}</h4>
-                        <p class="text-gray-700 leading-relaxed">{{ $faq['answer'] }}</p>
-                    </div>
-                @endforeach
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-to-xml', 'content.faq.q1') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.faq.a1') }}</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-to-xml', 'content.faq.q2') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.faq.a2') }}</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-to-xml', 'content.faq.q3') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.faq.a3') }}</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-to-xml', 'content.faq.q4') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.faq.a4') }}</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-to-xml', 'content.faq.q5') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.faq.a5') }}</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-to-xml', 'content.faq.q6') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-to-xml', 'content.faq.a6') }}</p>
+                </div>
             </div>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-to-xml', 'content.tips_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
                 <ul class="space-y-3">
-                    @foreach($tool->content['tips_list'] as $tip)
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">{!! $tip !!}</span>
-                        </li>
-                    @endforeach
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">{!! __tool('json-to-xml', 'content.tips_list.1') !!}</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">{!! __tool('json-to-xml', 'content.tips_list.2') !!}</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">{!! __tool('json-to-xml', 'content.tips_list.3') !!}</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">{!! __tool('json-to-xml', 'content.tips_list.4') !!}</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">{!! __tool('json-to-xml', 'content.tips_list.5') !!}</span>
+                    </li>
                 </ul>
             </div>
         </div>

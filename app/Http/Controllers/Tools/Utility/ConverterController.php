@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Tools\Utility;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Models\Tool;
 
 class ConverterController extends Controller
 {
@@ -13,8 +13,8 @@ class ConverterController extends Controller
      */
     public function htmlToMarkdown()
     {
-        $tool = DB::table('tools')->where('slug', 'html-to-markdown-converter')->first();
-        return view('tools.utility.html-to-markdown', compact('tool'));
+        $tool = Tool::where('slug', 'html-to-markdown-converter')->first();
+        return view('tools.utility.html-to-markdown-converter', compact('tool'));
     }
 
     /**
@@ -22,8 +22,8 @@ class ConverterController extends Controller
      */
     public function csvToJson()
     {
-        $tool = DB::table('tools')->where('slug', 'csv-to-json-converter')->first();
-        return view('tools.utility.csv-to-json', compact('tool'));
+        $tool = Tool::where('slug', 'csv-to-json-converter')->first();
+        return view('tools.utility.csv-to-json-converter', compact('tool'));
     }
 
     /**
@@ -31,8 +31,8 @@ class ConverterController extends Controller
      */
     public function jsonToCsv()
     {
-        $tool = DB::table('tools')->where('slug', 'json-to-csv-converter')->first();
-        return view('tools.utility.json-to-csv', compact('tool'));
+        $tool = Tool::where('slug', 'json-to-csv-converter')->first();
+        return view('tools.utility.json-to-csv-converter', compact('tool'));
     }
 
     /**
@@ -40,7 +40,7 @@ class ConverterController extends Controller
      */
     public function xmlToJson()
     {
-        $tool = DB::table('tools')->where('slug', 'xml-to-json-converter')->first();
+        $tool = Tool::where('slug', 'xml-to-json-converter')->first();
         return view('tools.utility.xml-to-json', compact('tool'));
     }
 
@@ -49,7 +49,7 @@ class ConverterController extends Controller
      */
     public function yamlToJson()
     {
-        $tool = DB::table('tools')->where('slug', 'yaml-to-json-converter')->first();
+        $tool = Tool::where('slug', 'yaml-to-json-converter')->first();
         return view('tools.utility.yaml-to-json', compact('tool'));
     }
 
@@ -58,13 +58,13 @@ class ConverterController extends Controller
      */
     public function textToBinary()
     {
-        $tool = DB::table('tools')->where('slug', 'text-to-binary-converter')->first();
+        $tool = Tool::where('slug', 'text-to-binary-converter')->first();
         return view('tools.utility.text-to-binary', compact('tool'));
     }
 
     public function binaryToText()
     {
-        $tool = DB::table('tools')->where('slug', 'binary-to-text-converter')->first();
+        $tool = Tool::where('slug', 'binary-to-text-converter')->first();
         return view('tools.utility.binary-to-text', compact('tool'));
     }
 
@@ -73,7 +73,7 @@ class ConverterController extends Controller
      */
     public function jsonToXml()
     {
-        $tool = DB::table('tools')->where('slug', 'json-to-xml-converter')->first();
+        $tool = Tool::where('slug', 'json-to-xml-converter')->first();
         return view('tools.utility.json-to-xml', compact('tool'));
     }
 
@@ -82,8 +82,8 @@ class ConverterController extends Controller
      */
     public function jsonToYaml()
     {
-        $tool = DB::table('tools')->where('slug', 'json-to-yaml-converter')->first();
-        return view('tools.utility.json-to-yaml', compact('tool'));
+        $tool = Tool::where('slug', 'json-to-yaml-converter')->first();
+        return view('tools.utility.json-to-yaml-converter', compact('tool'));
     }
 
     /**
@@ -91,8 +91,8 @@ class ConverterController extends Controller
      */
     public function csvToXml()
     {
-        $tool = DB::table('tools')->where('slug', 'csv-to-xml-converter')->first();
-        return view('tools.utility.csv-to-xml', compact('tool'));
+        $tool = Tool::where('slug', 'csv-to-xml-converter')->first();
+        return view('tools.utility.csv-to-xml-converter', compact('tool'));
     }
 
     /**
@@ -100,7 +100,7 @@ class ConverterController extends Controller
      */
     public function xmlToCsv()
     {
-        $tool = DB::table('tools')->where('slug', 'xml-to-csv-converter')->first();
+        $tool = Tool::where('slug', 'xml-to-csv-converter')->first();
         return view('tools.utility.xml-to-csv', compact('tool'));
     }
 
@@ -109,7 +109,7 @@ class ConverterController extends Controller
      */
     public function sqlToJson()
     {
-        $tool = DB::table('tools')->where('slug', 'sql-to-json-converter')->first();
+        $tool = Tool::where('slug', 'sql-to-json-converter')->first();
         return view('tools.utility.sql-to-json', compact('tool'));
     }
 
@@ -118,8 +118,8 @@ class ConverterController extends Controller
      */
     public function jsonToSql()
     {
-        $tool = DB::table('tools')->where('slug', 'json-to-sql-converter')->first();
-        return view('tools.utility.json-to-sql', compact('tool'));
+        $tool = Tool::where('slug', 'json-to-sql-converter')->first();
+        return view('tools.utility.json-to-sql-converter', compact('tool'));
     }
 
     /**
@@ -127,7 +127,7 @@ class ConverterController extends Controller
      */
     public function tsvToCsv()
     {
-        $tool = DB::table('tools')->where('slug', 'tsv-to-csv-converter')->first();
+        $tool = Tool::where('slug', 'tsv-to-csv-converter')->first();
         return view('tools.utility.tsv-to-csv', compact('tool'));
     }
 
@@ -136,7 +136,7 @@ class ConverterController extends Controller
      */
     public function csvToTsv()
     {
-        $tool = DB::table('tools')->where('slug', 'csv-to-tsv-converter')->first();
-        return view('tools.utility.csv-to-tsv', compact('tool'));
+        $tool = Tool::where('slug', 'csv-to-tsv-converter')->first();
+        return view('tools.utility.csv-to-tsv-converter', compact('tool'));
     }
 }

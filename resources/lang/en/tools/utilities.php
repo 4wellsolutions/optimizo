@@ -3,9 +3,10 @@
 return [
     'ascii-converter' => [
         'meta' => [
-            'title' => 'Free ASCII Converter Online', // Fallback if $tool->name not sufficient or for specific override
+            'title' => 'Free ASCII Converter Online',
+            'description' => 'Convert text to ASCII codes and vice versa. Perfect for programming, data encoding, and understanding character representations.',
+            'h1' => 'Free ASCII Converter Online',
             'subtitle' => 'Convert between text and ASCII codes instantly',
-            'desc' => 'Convert text to ASCII codes and vice versa. Perfect for programming, data encoding, and understanding character representations.',
         ],
         'editor' => [
             'to_ascii' => 'Text to ASCII',
@@ -89,6 +90,8 @@ return [
     ],
     'base64' => [
         'meta' => [
+            'title' => 'Base64 Encoder & Decoder',
+            'description' => 'Encode and decode Base64 data instantly with our free online tool',
             'h1' => 'Base64 Encoder & Decoder',
             'subtitle' => 'Encode and decode Base64 data instantly',
         ],
@@ -214,6 +217,8 @@ return [
     ],
     'binary-hex-converter' => [
         'meta' => [
+            'title' => 'Free Binary ↔ Hexadecimal Converter',
+            'description' => 'Convert between binary and hexadecimal number systems instantly',
             'h1' => 'Free Binary ↔ Hexadecimal Converter',
             'subtitle' => 'Convert between binary and hexadecimal number systems',
         ],
@@ -282,6 +287,8 @@ return [
     ],
     'binary-to-text' => [
         'meta' => [
+            'title' => 'Binary to Text Converter',
+            'description' => 'Decode binary code to readable text instantly with our free online tool',
             'h1' => 'Binary to Text Converter',
             'subtitle' => 'Decode binary code to readable text instantly',
         ],
@@ -337,6 +344,8 @@ return [
     ],
     'camel-case-converter' => [
         'meta' => [
+            'title' => 'Free Camel Case Converter Tool',
+            'description' => 'Convert text to camelCase format for programming with our free online tool',
             'h1' => 'Free Camel Case Converter Tool',
             'subtitle' => 'Convert text to camelCase format for programming',
         ],
@@ -449,6 +458,8 @@ return [
     ],
     'case-converter' => [
         'meta' => [
+            'title' => 'Text Case Converter',
+            'description' => 'Convert text between different cases instantly - uppercase, lowercase, title case, sentence case',
             'h1' => 'Text Case Converter',
             'subtitle' => 'Convert text between different cases instantly',
         ],
@@ -546,6 +557,8 @@ return [
     ],
     'code-formatter' => [
         'meta' => [
+            'title' => 'Free Online Code Formatter',
+            'description' => 'Beautify and format your code instantly - supports HTML, CSS, JavaScript, JSON, XML, SQL, PHP',
             'h1' => 'Free Online Code Formatter',
             'subtitle' => 'Beautify and format your code instantly',
         ],
@@ -649,6 +662,8 @@ return [
     ],
     'cron-job-generator' => [
         'meta' => [
+            'title' => 'Cron Job Generator',
+            'description' => 'Create cron schedules easily with our visual generator - no need to memorize cron syntax',
             'h1' => 'Cron Job Generator',
             'subtitle' => 'Create cron schedules easily with our visual generator',
         ],
@@ -753,6 +768,8 @@ return [
     ],
     'diff-checker' => [
         'meta' => [
+            'title' => 'Online Diff Checker',
+            'description' => 'Compare two text files and find differences instantly with our free online diff tool',
             'h1' => 'Online Diff Checker',
             'subtitle' => 'Compare two text files and find differences instantly',
         ],
@@ -775,6 +792,8 @@ return [
     ],
     'duplicate-line-remover' => [
         'meta' => [
+            'title' => 'Duplicate Line Remover',
+            'description' => 'Remove duplicate lines from your text list instantly with our free online tool',
             'h1' => 'Duplicate Line Remover',
             'subtitle' => 'Remove duplicate lines from your text list instantly',
         ],
@@ -799,6 +818,8 @@ return [
     ],
     'css-minifier' => [
         'meta' => [
+            'title' => 'Free CSS Minifier & Beautifier',
+            'description' => 'Optimize CSS files for faster page loads - minify and beautify CSS instantly',
             'h1' => 'Free CSS Minifier & Beautifier',
             'subtitle' => 'Optimize CSS files for faster page loads',
         ],
@@ -919,6 +940,8 @@ return [
     ],
     'csv-to-json' => [
         'meta' => [
+            'title' => 'CSV to JSON Converter',
+            'description' => 'Convert CSV data to JSON format instantly with our free online tool',
             'h1' => 'CSV to JSON Converter',
             'subtitle' => 'Convert CSV data to JSON format instantly',
         ],
@@ -992,6 +1015,8 @@ return [
     ],
     'csv-to-tsv' => [
         'meta' => [
+            'title' => 'Free CSV to TSV Converter',
+            'description' => 'Transform Comma-Separated Values into Tab-Separated format instantly with our free online tool',
             'h1' => 'Free CSV to TSV Converter',
             'subtitle' => 'Transform Comma-Separated Values into Tab-Separated format',
         ],
@@ -1115,6 +1140,8 @@ return [
     ],
     'csv-to-xml' => [
         'meta' => [
+            'title' => 'Free CSV to XML Converter',
+            'description' => 'Transform CSV spreadsheet data into structured XML format with our free online tool',
             'h1' => 'Free CSV to XML Converter',
             'subtitle' => 'Transform CSV spreadsheet data into structured XML format',
         ],
@@ -1238,6 +1265,8 @@ return [
     ],
     'curl-command-builder' => [
         'meta' => [
+            'title' => 'CURL Command Builder',
+            'description' => 'Build CURL commands easily with our visual builder - create HTTP requests without memorizing syntax',
             'h1' => 'CURL Command Builder',
             'subtitle' => 'Build CURL commands easily with our visual builder',
         ],
@@ -1259,6 +1288,8 @@ return [
     ],
     'html-encoder-decoder' => [
         'meta' => [
+            'title' => 'Free HTML Encoder & Decoder',
+            'description' => 'Encode and decode HTML entities to prevent XSS attacks with our free online tool',
             'h1' => 'Free HTML Encoder & Decoder',
             'subtitle' => 'Encode and decode HTML entities to prevent XSS attacks',
         ],
@@ -1371,6 +1402,8 @@ return [
     ],
     'html-minifier' => [
         'meta' => [
+            'title' => 'Free HTML Minifier & Beautifier',
+            'description' => 'Compress or format HTML code instantly - minify for production or beautify for development',
             'h1' => 'Free HTML Minifier & Beautifier',
             'subtitle' => 'Compress or format HTML code instantly',
         ],
@@ -1426,8 +1459,10 @@ return [
             ],
         ],
     ],
-    'html-to-markdown' => [
+    'html-to-markdown-converter' => [
         'meta' => [
+            'title' => 'HTML to Markdown Converter',
+            'description' => 'Convert HTML to clean Markdown format instantly with our free online tool',
             'h1' => 'HTML to Markdown Converter',
             'subtitle' => 'Convert HTML to clean Markdown format instantly',
         ],
@@ -1531,6 +1566,8 @@ return [
     ],
     'html-viewer' => [
         'meta' => [
+            'title' => 'HTML Viewer',
+            'description' => 'Preview HTML code in real-time with our free online HTML viewer',
             'h1' => 'HTML Viewer',
             'subtitle' => 'Preview HTML code in real-time',
         ],
@@ -1589,6 +1626,8 @@ return [
     ],
     'js-minifier' => [
         'meta' => [
+            'title' => 'JavaScript Minifier',
+            'description' => 'Compress and optimize your JavaScript code for faster page loads',
             'h1' => 'JavaScript Minifier',
             'subtitle' => 'Compress and optimize your JavaScript code',
         ],
@@ -1646,6 +1685,8 @@ return [
     ],
     'json-formatter' => [
         'meta' => [
+            'title' => 'JSON Formatter',
+            'description' => 'Format, validate, and minify your JSON data with our free online tool',
             'h1' => 'JSON Formatter',
             'subtitle' => 'Format, validate, and minify your JSON data',
         ],
@@ -1889,7 +1930,7 @@ return [
             ],
         ],
     ],
-    'json-to-sql' => [
+    'json-to-sql-converter' => [
         'meta' => [
             'h1' => 'JSON to SQL Converter',
             'subtitle' => 'Convert JSON data to SQL INSERT statements',
@@ -2154,7 +2195,7 @@ return [
             ],
         ],
     ],
-    'json-to-yaml' => [
+    'json-to-yaml-converter' => [
         'meta' => [
             'h1' => 'JSON to YAML Converter',
             'subtitle' => 'Convert JSON to YAML format',
@@ -2585,7 +2626,7 @@ return [
             'p1' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry\'s standard dummy text ever since the 1500s.',
         ],
     ],
-    'markdown-to-html' => [
+    'markdown-to-html-converter' => [
         'meta' => [
             'h1' => 'Markdown to HTML Converter',
             'subtitle' => 'Convert Markdown to HTML instantly',
@@ -3327,6 +3368,8 @@ return [
     ],
     'slug-generator' => [
         'meta' => [
+            'title' => 'URL Slug Generator - Create SEO-Friendly URLs',
+            'description' => 'Generate clean, SEO-friendly URL slugs from any text instantly with our free tool',
             'h1' => 'URL Slug Generator - Create SEO-Friendly URLs',
             'subtitle' => 'Generate clean, SEO-friendly URL slugs from any text instantly',
         ],
@@ -3406,6 +3449,8 @@ return [
     ],
     'snake-case-converter' => [
         'meta' => [
+            'title' => 'Free Snake Case Converter Tool',
+            'description' => 'Convert text to snake_case for Python and databases with our free online tool',
             'h1' => 'Free Snake Case Converter Tool',
             'subtitle' => 'Convert text to snake_case for Python and databases',
         ],
@@ -3521,6 +3566,8 @@ return [
     ],
     'sql-to-json' => [
         'meta' => [
+            'title' => 'Free SQL to JSON Converter',
+            'description' => 'Transform SQL INSERT statements into JSON format instantly with our free tool',
             'h1' => 'Free SQL to JSON Converter',
             'subtitle' => 'Transform SQL INSERT statements into JSON format instantly',
         ],
@@ -3602,6 +3649,8 @@ return [
 
     'studly-case-converter' => [
         'meta' => [
+            'title' => 'Free Studly Case Converter Tool',
+            'description' => 'Convert text to StUdLy CaSe for creative formatting with our free online tool',
             'h1' => 'Free Studly Case Converter Tool',
             'subtitle' => 'Convert text to StUdLy CaSe for creative formatting',
         ],
@@ -3673,6 +3722,8 @@ return [
 
     'text-reverser' => [
         'meta' => [
+            'title' => 'Free Text Reverser Tool',
+            'description' => 'Reverse text character by character with our free online tool',
             'h1' => 'Free Text Reverser Tool',
             'subtitle' => 'Reverse text character by character',
         ],
@@ -3744,6 +3795,8 @@ return [
 
     'text-to-binary' => [
         'meta' => [
+            'title' => 'Text to Binary Converter',
+            'description' => 'Convert text to binary code instantly with our free online tool',
             'h1' => 'Text to Binary Converter',
             'subtitle' => 'Decode binary code to readable text instantly',
         ],
@@ -3807,6 +3860,8 @@ return [
 
     'text-to-morse-converter' => [
         'meta' => [
+            'title' => 'Free Text to Morse Code Converter',
+            'description' => 'Encode text into Morse code with our free online converter',
             'h1' => 'Free Text to Morse Code Converter',
             'subtitle' => 'Encode text into Morse code',
         ],
@@ -3877,6 +3932,8 @@ return [
     ],
     'tsv-csv-converter' => [
         'meta' => [
+            'title' => 'Free TSV to CSV Converter',
+            'description' => 'Convert TSV to CSV and CSV to TSV - instant and accurate with our free tool',
             'h1' => 'Free TSV to CSV Converter',
             'subtitle' => 'Convert TSV to CSV and CSV to TSV instant and accurate',
         ],
@@ -3964,6 +4021,8 @@ return [
     ],
     'tsv-to-csv' => [
         'meta' => [
+            'title' => 'Free TSV to CSV Converter',
+            'description' => 'Transform Tab-Separated Values into Comma-Separated format with our free tool',
             'h1' => 'Free TSV to CSV Converter',
             'subtitle' => 'Transform Tab-Separated Values into Comma-Separated format',
         ],
@@ -4042,6 +4101,8 @@ return [
     ],
     'unicode-encoder-decoder' => [
         'meta' => [
+            'title' => 'Free Unicode Encoder & Decoder',
+            'description' => 'Encode and decode Unicode escape sequences for JavaScript and JSON with our free tool',
             'h1' => 'Free Unicode Encoder & Decoder',
             'subtitle' => 'Encode and decode Unicode escape sequences for JavaScript and JSON',
         ],
@@ -4121,6 +4182,8 @@ return [
     ],
     'url-encoder' => [
         'meta' => [
+            'title' => 'Free URL Encoder & Decoder',
+            'description' => 'Encode and decode URLs for safe web transmission with our free online tool',
             'h1' => 'Free URL Encoder & Decoder',
             'subtitle' => 'Encode and decode URLs for safe web transmission',
         ],
@@ -4204,6 +4267,8 @@ return [
     ],
     'user-agent-parser' => [
         'meta' => [
+            'title' => 'Free User Agent Parser',
+            'description' => 'Identify browser, OS, and device from User Agent string with our free tool',
             'h1' => 'Free User Agent Parser',
             'subtitle' => 'Identify browser, OS, and device from User Agent string',
         ],
@@ -4253,6 +4318,8 @@ return [
     ],
     'username-checker' => [
         'meta' => [
+            'title' => 'Username Availability Checker',
+            'description' => 'Check username availability across all major social platforms with our free tool',
             'h1' => 'Username Availability Checker',
             'subtitle' => 'Check username availability across all major social platforms',
         ],
@@ -4330,6 +4397,8 @@ return [
 
     'uuid-generator' => [
         'meta' => [
+            'title' => 'UUID Generator',
+            'description' => 'Generate Version 4 UUIDs instantly with our free online tool',
             'h1' => 'UUID Generator',
             'subtitle' => 'Generate Version 4 UUIDs instantly',
         ],
@@ -4352,6 +4421,8 @@ return [
     ],
     'xml-formatter' => [
         'meta' => [
+            'title' => 'XML Formatter',
+            'description' => 'Format, beautify, and minify XML data with our free online tool',
             'h1' => 'XML Formatter',
             'subtitle' => 'Format, beautify, and minify XML data',
         ],
@@ -4371,6 +4442,8 @@ return [
     ],
     'xml-to-csv' => [
         'meta' => [
+            'title' => 'Free XML to CSV Converter',
+            'description' => 'Transform XML data into spreadsheet-friendly CSV format with our free tool',
             'h1' => 'Free XML to CSV Converter',
             'subtitle' => 'Transform XML data into spreadsheet-friendly CSV format',
         ],
@@ -4446,6 +4519,8 @@ return [
     ],
     'xml-to-json' => [
         'meta' => [
+            'title' => 'Free XML to JSON Converter Online',
+            'description' => 'Transform XML data into JSON format instantly with our free online converter',
             'h1' => 'Free XML to JSON Converter Online',
             'subtitle' => 'Transform XML data into JSON format instantly',
         ],
@@ -4527,6 +4602,8 @@ return [
     ],
     'yaml-to-json' => [
         'meta' => [
+            'title' => 'YAML to JSON Converter',
+            'description' => 'Convert YAML configuration files to JSON format instantly with our free tool',
             'h1' => 'YAML to JSON Converter',
             'subtitle' => 'Convert YAML configuration files to JSON format instantly',
         ],
@@ -4587,6 +4664,8 @@ return [
     ],
     'csv-xml-converter' => [
         'meta' => [
+            'title' => 'Free CSV ↔ XML Converter',
+            'description' => 'Convert spreadsheet data to structured XML and back with our free tool',
             'h1' => 'Free CSV ↔ XML Converter',
             'subtitle' => 'Convert spreadsheet data to structured XML and back',
         ],
@@ -4667,6 +4746,8 @@ return [
     ],
     'decimal-binary-converter' => [
         'meta' => [
+            'title' => 'Free Decimal ↔ Binary Converter',
+            'description' => 'Convert between decimal and binary number systems with our free online tool',
             'h1' => 'Free Decimal ↔ Binary Converter',
             'subtitle' => 'Convert between decimal and binary number systems',
         ],
@@ -4744,6 +4825,8 @@ return [
     ],
     'decimal-hex-converter' => [
         'meta' => [
+            'title' => 'Free Decimal ↔ Hexadecimal Converter',
+            'description' => 'Convert between decimal and hexadecimal number systems with our free tool',
             'h1' => 'Free Decimal ↔ Hexadecimal Converter',
             'subtitle' => 'Convert between decimal and hexadecimal number systems',
         ],
@@ -4821,6 +4904,8 @@ return [
     ],
     'decimal-octal-converter' => [
         'meta' => [
+            'title' => 'Free Decimal ↔ Octal Converter',
+            'description' => 'Convert between decimal and octal number systems with our free online tool',
             'h1' => 'Free Decimal ↔ Octal Converter',
             'subtitle' => 'Convert between decimal and octal number systems',
         ],
@@ -5189,6 +5274,151 @@ return [
             ],
         ],
     ],
+
+    'decimal-octal-converter' => [
+        'meta' => [
+            'h1' => 'Free Decimal ↔ Octal Converter',
+            'subtitle' => 'Convert between decimal and octal number systems',
+        ],
+        'editor' => [
+            'to_octal' => 'Decimal to Octal',
+            'to_decimal' => 'Octal to Decimal',
+            'label_decimal' => 'Decimal Number',
+            'label_octal' => 'Octal Number',
+            'label_result_octal' => 'Octal Result',
+            'label_result_decimal' => 'Decimal Result',
+            'ph_decimal' => '420',
+            'ph_octal' => '644',
+            'ph_output' => 'Result will appear here...',
+            'btn_convert_octal' => 'Convert to Octal',
+            'btn_convert_decimal' => 'Convert to Decimal',
+            'btn_clear' => 'Clear',
+            'btn_copy' => 'Copy',
+            'error_empty' => 'Please enter a number to convert',
+            'error_invalid_decimal' => 'Invalid decimal number',
+            'error_invalid_octal' => 'Invalid octal number (only digits 0-7 allowed)',
+            'error_general' => 'Error converting number: ',
+            'error_no_copy' => 'No output to copy',
+            'success_octal' => '✓ Converted to octal successfully',
+            'success_decimal' => '✓ Converted to decimal successfully',
+            'success_copy' => '✓ Copied to clipboard',
+        ],
+        'content' => [
+            'p1' => 'Our free Decimal ↔ Octal Converter allows instant conversion between base-10 (decimal) and base-8 (octal) number systems. Essential for legacy computing support, file permission management (chmod), and computer science education.',
+            'format_title' => 'Number System Formats',
+            'format_desc' => 'Decimal uses digits 0-9 (base-10), while octal uses digits 0-7 (base-8). Octal is commonly used in Unix/Linux file permissions and legacy computing systems.',
+            'features_title' => 'Features',
+            'features' => [
+                'fast' => [
+                    'title' => 'Instant Conversion',
+                    'desc' => 'Convert between decimal and octal in milliseconds',
+                ],
+                'bi' => [
+                    'title' => 'Two-Way Tool',
+                    'desc' => 'Convert Decimal to Octal and back',
+                ],
+                'secure' => [
+                    'title' => 'Secure & Private',
+                    'desc' => 'No server uploads needed',
+                ],
+                'copy' => [
+                    'title' => 'Easy Copy',
+                    'desc' => 'Copy results with one click',
+                ],
+                'free' => [
+                    'title' => 'Always Free',
+                    'desc' => 'Unlimited usage',
+                ],
+                'universal' => [
+                    'title' => 'Universal Compatibility',
+                    'desc' => 'Works on all devices and browsers',
+                ],
+            ],
+            'uses_title' => 'Common Use Cases',
+            'uses' => [
+                'linux' => [
+                    'title' => 'File Permissions',
+                    'desc' => 'Calculate Unix/Linux "chmod" values (e.g., 755, 644)',
+                ],
+                'computing' => [
+                    'title' => 'Computing History',
+                    'desc' => 'Work with older computing architectures and aviation electronics (ARINC 429)',
+                ],
+                'permission' => [
+                    'title' => 'Permission Management',
+                    'desc' => 'Understand and set file access rights',
+                ],
+                'legacy' => [
+                    'title' => 'Legacy Systems',
+                    'desc' => 'Support older systems using octal notation',
+                ],
+                'aviation' => [
+                    'title' => 'Aviation Electronics',
+                    'desc' => 'Work with ARINC 429 and similar systems',
+                ],
+                'education' => [
+                    'title' => 'CS Education',
+                    'desc' => 'Learn bases and number system conversion',
+                ],
+            ],
+            'steps_title' => 'How to Use',
+            'steps' => [
+                '1' => [
+                    'title' => 'Select Mode',
+                    'desc' => 'Choose Decimal to Octal or Octal to Decimal',
+                ],
+                '2' => [
+                    'title' => 'Input Number',
+                    'desc' => 'Enter the value to convert',
+                ],
+                '3' => [
+                    'title' => 'Convert',
+                    'desc' => 'Press the convert button',
+                ],
+                '4' => [
+                    'title' => 'Get Result',
+                    'desc' => 'View and copy the converted value',
+                ],
+                '5' => [
+                    'title' => 'Apply',
+                    'desc' => 'Use the octal/decimal value in your task',
+                ],
+            ],
+            'examples_title' => 'Conversion Examples',
+            'examples' => [
+                'small' => [
+                    'title' => 'Small Number',
+                    'desc' => 'Decimal 8 = Octal 10',
+                ],
+                'large' => [
+                    'title' => 'Large Number',
+                    'desc' => 'Decimal 512 = Octal 1000',
+                ],
+                'rights' => [
+                    'title' => 'File Rights',
+                    'desc' => 'Decimal 420 = Octal 644 (rw-r--r--)',
+                ],
+                'max' => [
+                    'title' => 'Max Permissions',
+                    'desc' => 'Decimal 511 = Octal 777 (rwxrwxrwx)',
+                ],
+            ],
+            'faq_title' => 'Frequently Asked Questions',
+            'faq' => [
+                'q1' => 'What is octal?',
+                'a1' => 'Octal is a base-8 number system using digits 0-7. It\'s commonly used in Unix file permissions and legacy computing.',
+                'q2' => 'Why use octal for file permissions?',
+                'a2' => 'Octal provides a compact way to represent Unix file permissions. Each digit (0-7) represents read (4), write (2), and execute (1) permissions.',
+                'q3' => 'How do I convert decimal to octal?',
+                'a3' => 'Divide the decimal number by 8 repeatedly, noting remainders. Read remainders from bottom to top. Or use our tool for instant conversion!',
+                'q4' => 'What does chmod 755 mean?',
+                'a4' => '755 in octal = 493 in decimal. It means: owner has full permissions (7=rwx), group and others have read+execute (5=r-x).',
+                'q5' => 'Is this tool free?',
+                'a5' => 'Yes! Completely free with no limits. All processing happens in your browser for privacy and speed.',
+            ],
+        ],
+    ],
+
 ];
 
 

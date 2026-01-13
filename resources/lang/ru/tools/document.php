@@ -1,10 +1,11 @@
 <?php
 
 return [
-    // PDF to Word Converter
+    // Pdf To Word
     'pdf-to-word' => [
         'meta' => [
             'h1' => 'Конвертер PDF в Word',
+            'subtitle' => 'Конвертируйте PDF в редактируемые файлы Word мгновенно с высокой точностью',
         ],
         'seo' => [
             'title' => 'Конвертер PDF в Word - Бесплатный онлайн-инструмент',
@@ -38,10 +39,11 @@ return [
         ],
     ],
 
-    // Word to PDF Converter
+    // Word To Pdf
     'word-to-pdf' => [
         'meta' => [
             'h1' => 'Конвертер Word в PDF',
+            'subtitle' => 'Преобразуйте документы Word в PDF с сохранением идеального форматирования',
         ],
         'seo' => [
             'title' => 'Конвертер Word в PDF - Бесплатный онлайн-инструмент',
@@ -75,10 +77,11 @@ return [
         ],
     ],
 
-    // Excel to PDF Converter
+    // Excel To Pdf
     'excel-to-pdf' => [
         'meta' => [
             'h1' => 'Конвертер Excel в PDF',
+            'subtitle' => 'Конвертируйте таблицы Excel в профессиональные PDF-документы легко',
         ],
         'seo' => [
             'title' => 'Конвертер Excel в PDF - Бесплатный онлайн-инструмент',
@@ -123,10 +126,11 @@ return [
         ],
     ],
 
-    // PDF to Excel Converter
+    // Pdf To Excel
     'pdf-to-excel' => [
         'meta' => [
             'h1' => 'Конвертер PDF в Excel',
+            'subtitle' => 'Извлекайте данные из PDF в редактируемые таблицы Excel с точностью',
         ],
         'seo' => [
             'title' => 'Конвертер PDF в Excel - Бесплатный онлайн-инструмент',
@@ -160,10 +164,11 @@ return [
         ],
     ],
 
-    // PPT to PDF Converter
+    // Ppt To Pdf
     'ppt-to-pdf' => [
         'meta' => [
             'h1' => 'Конвертер PowerPoint в PDF',
+            'subtitle' => 'Конвертируйте презентации PowerPoint в PDF для удобного обмена',
         ],
         'seo' => [
             'title' => 'Конвертер PowerPoint в PDF - Бесплатный онлайн-инструмент',
@@ -197,10 +202,11 @@ return [
         ],
     ],
 
-    // PDF to PPT Converter
+    // Pdf To Ppt
     'pdf-to-ppt' => [
         'meta' => [
             'h1' => 'Конвертер PDF в PowerPoint',
+            'subtitle' => 'Преобразуйте PDF-документы в редактируемые презентации PowerPoint',
         ],
         'seo' => [
             'title' => 'Конвертер PDF в PowerPoint - Бесплатный онлайн-инструмент',
@@ -234,10 +240,11 @@ return [
         ],
     ],
 
-    // JPG to PDF Converter
+    // Jpg To Pdf
     'jpg-to-pdf' => [
         'meta' => [
             'h1' => 'Конвертер JPG в PDF',
+            'subtitle' => 'Конвертируйте изображения JPG в PDF с пользовательскими настройками страниц',
         ],
         'seo' => [
             'title' => 'Конвертер JPG в PDF - Бесплатный онлайн-инструмент',
@@ -271,10 +278,11 @@ return [
         ],
     ],
 
-    // PDF to JPG Converter
+    // Pdf To Jpg
     'pdf-to-jpg' => [
         'meta' => [
             'h1' => 'Конвертер PDF в JPG',
+            'subtitle' => 'Извлекайте страницы из PDF как высококачественные JPG изображения мгновенно',
         ],
         'seo' => [
             'title' => 'Конвертер PDF в JPG - Бесплатный онлайн-инструмент',
@@ -308,10 +316,11 @@ return [
         ],
     ],
 
-    // PDF Compressor
+    // Pdf Compressor
     'pdf-compressor' => [
         'meta' => [
             'h1' => 'Сжатие PDF',
+            'subtitle' => 'Уменьшайте размер PDF файлов сохраняя качество для быстрого обмена',
         ],
         'seo' => [
             'title' => 'Сжатие PDF - Уменьшить размер PDF файла онлайн',
@@ -351,10 +360,11 @@ return [
         ],
     ],
 
-    // PDF Merger
+    // Pdf Merger
     'pdf-merger' => [
         'meta' => [
             'h1' => 'Объединение PDF',
+            'subtitle' => 'Объединяйте несколько PDF файлов в один документ без усилий',
         ],
         'seo' => [
             'title' => 'Объединение PDF - Объединить PDF файлы онлайн',
@@ -389,10 +399,11 @@ return [
         ],
     ],
 
-    // PDF Splitter
+    // Pdf Splitter
     'pdf-splitter' => [
         'meta' => [
             'h1' => 'Разделение PDF',
+            'subtitle' => 'Разделяйте PDF документы на отдельные страницы или извлекайте диапазоны',
         ],
         'seo' => [
             'title' => 'Разделение PDF - Разделить PDF файлы онлайн',
@@ -429,4 +440,5 @@ return [
             'step3_desc' => 'Получите ваши разделённые PDF файлы.',
         ],
     ],
+
 ];

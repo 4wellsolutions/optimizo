@@ -69,7 +69,7 @@ class SeoController extends Controller
 
     public function keywordDensity()
     {
-        return view('tools.seo.keyword-density');
+        return view('tools.seo.keyword-density-checker');
     }
 
     public function analyzeKeywords(Request $request)
@@ -104,7 +104,7 @@ class SeoController extends Controller
         // Limit to top 20
         $keywords = array_slice($keywords, 0, 20);
 
-        return view('tools.seo.keyword-density', compact('keywords', 'totalWords'));
+        return view('tools.seo.keyword-density-checker', compact('keywords', 'totalWords'));
     }
 
     public function wordCounter()

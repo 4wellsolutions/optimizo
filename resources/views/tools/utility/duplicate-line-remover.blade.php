@@ -2,10 +2,6 @@
 
 @section('title', $tool->meta_title)
 @section('meta_description', $tool->meta_description)
-@if($tool->meta_keywords)
-@section('meta_keywords', $tool->meta_keywords)
-@endif
-
 @section('content')
     <div class="max-w-6xl mx-auto">
         <x-tool-hero :tool="$tool" icon="duplicate-line-remover" />
@@ -19,7 +15,8 @@
                         class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 transition-all font-mono text-sm resize-none"
                         placeholder="{!! __tool('duplicate-line-remover', 'editor.ph_input') !!}"></textarea>
                     <div class="text-right text-xs text-gray-500 mt-1">
-                        {!! __tool('duplicate-line-remover', 'editor.lines_count') !!} <span id="inputCount">0</span></div>
+                        {!! __tool('duplicate-line-remover', 'editor.lines_count') !!} <span id="inputCount">0</span>
+                    </div>
                 </div>
                 <div>
                     <label for="outputText"
@@ -27,7 +24,8 @@
                     <textarea id="outputText" rows="12" readonly
                         class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl bg-gray-50 font-mono text-sm resize-none focus:outline-none"></textarea>
                     <div class="text-right text-xs text-gray-500 mt-1">
-                        {!! __tool('duplicate-line-remover', 'editor.lines_count') !!} <span id="outputCount">0</span></div>
+                        {!! __tool('duplicate-line-remover', 'editor.lines_count') !!} <span id="outputCount">0</span>
+                    </div>
                 </div>
             </div>
 
@@ -59,7 +57,7 @@
             <div id="statusMessage" class="hidden mb-6 p-4 rounded-xl font-semibold"></div>
         </div>
 
-        <x-tool-content :tool="$tool" />
+
     </div>
 
     @push('scripts')

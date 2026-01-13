@@ -2,7 +2,6 @@
 
 @section('title', __tool('svg-to-jpg', 'meta.title'))
 @section('meta_description', __tool('svg-to-jpg', 'meta.desc'))
-@section('meta_keywords', __tool('svg-to-jpg', 'meta.keywords'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

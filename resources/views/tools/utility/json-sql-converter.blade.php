@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', __tool('json-to-sql', 'meta.h1'))
-@section('meta_description', __tool('json-to-sql', 'meta.subtitle'))
+@section('title', __tool('json-sql-converter', 'meta.h1'))
+@section('meta_description', __tool('json-sql-converter', 'meta.subtitle'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">
@@ -117,43 +117,89 @@
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-sql-converter', 'content.features_title') }}
             </h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                @foreach($tool->content['features'] as $feature)
-                    <div
-                        class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
-                        <div class="text-3xl mb-3">
-                            @if($loop->index == 0) ⚡
-                            @elseif($loop->index == 1) 🔄
-                            @elseif($loop->index == 2) 🔐
-                            @elseif($loop->index == 3) 🏷️
-                            @elseif($loop->index == 4) 🎯
-                            @elseif($loop->index == 5) 💰
-                            @endif
-                        </div>
-                        <h4 class="font-bold text-gray-900 mb-2">{{ $feature['title'] }}</h4>
-                        <p class="text-gray-600 text-sm">{{ $feature['desc'] }}</p>
-                    </div>
-                @endforeach
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">⚡</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-sql-converter', 'content.features.instant.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-sql-converter', 'content.features.instant.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🔄</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-sql-converter', 'content.features.bidirectional.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-sql-converter', 'content.features.bidirectional.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🔐</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-sql-converter', 'content.features.security.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-sql-converter', 'content.features.security.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🏷️</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-sql-converter', 'content.features.custom.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-sql-converter', 'content.features.custom.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">🎯</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-sql-converter', 'content.features.types.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-sql-converter', 'content.features.types.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-blue-300 transition-all shadow-lg hover:shadow-xl">
+                    <div class="text-3xl mb-3">💰</div>
+                    <h4 class="font-bold text-gray-900 mb-2">{{ __tool('json-sql-converter', 'content.features.free.title') }}</h4>
+                    <p class="text-gray-600 text-sm">{{ __tool('json-sql-converter', 'content.features.free.desc') }}</p>
+                </div>
             </div>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-sql-converter', 'content.uses_title') }}</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-10">
-                @foreach($tool->content['uses'] as $use)
-                    <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
-                        <h4 class="font-bold text-lg text-gray-900 mb-3">{{ $use['title'] }}</h4>
-                        <p class="text-gray-700 leading-relaxed">{{ $use['desc'] }}</p>
-                    </div>
-                @endforeach
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-sql-converter', 'content.uses.seeding.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.uses.seeding.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-sql-converter', 'content.uses.export.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.uses.export.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-sql-converter', 'content.uses.migration.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.uses.migration.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-sql-converter', 'content.uses.testing.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.uses.testing.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-sql-converter', 'content.uses.docs.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.uses.docs.desc') }}</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{{ __tool('json-sql-converter', 'content.uses.prototype.title') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.uses.prototype.desc') }}</p>
+                </div>
             </div>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-sql-converter', 'content.how_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <ol class="space-y-3 text-gray-700">
-                    @foreach($tool->content['how_steps'] as $step)
-                        <li class="flex items-start gap-3">
-                            <span class="font-bold text-blue-600 text-lg">{{ $loop->iteration }}.</span>
-                            <span><strong>{{ $step['title'] }}</strong> {{ $step['desc'] }}</span>
-                        </li>
-                    @endforeach
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-blue-600 text-lg">1.</span>
+                        <span><strong>{{ __tool('json-sql-converter', 'content.how_steps.1.title') }}</strong> {{ __tool('json-sql-converter', 'content.how_steps.1.desc') }}</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-blue-600 text-lg">2.</span>
+                        <span><strong>{{ __tool('json-sql-converter', 'content.how_steps.2.title') }}</strong> {{ __tool('json-sql-converter', 'content.how_steps.2.desc') }}</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-blue-600 text-lg">3.</span>
+                        <span><strong>{{ __tool('json-sql-converter', 'content.how_steps.3.title') }}</strong> {{ __tool('json-sql-converter', 'content.how_steps.3.desc') }}</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-blue-600 text-lg">4.</span>
+                        <span><strong>{{ __tool('json-sql-converter', 'content.how_steps.4.title') }}</strong> {{ __tool('json-sql-converter', 'content.how_steps.4.desc') }}</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-blue-600 text-lg">5.</span>
+                        <span><strong>{{ __tool('json-sql-converter', 'content.how_steps.5.title') }}</strong> {{ __tool('json-sql-converter', 'content.how_steps.5.desc') }}</span>
+                    </li>
                 </ol>
             </div>
 
@@ -171,12 +217,22 @@
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-sql-converter', 'content.faq_title') }}</h3>
             <div class="space-y-4">
-                @foreach($tool->content['faq'] as $faq)
-                    <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                        <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ $faq['question'] }}</h4>
-                        <p class="text-gray-700 leading-relaxed">{{ $faq['answer'] }}</p>
-                    </div>
-                @endforeach
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-sql-converter', 'content.faq.q1') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.faq.a1') }}</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-sql-converter', 'content.faq.q2') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.faq.a2') }}</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-sql-converter', 'content.faq.q3') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.faq.a3') }}</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __tool('json-sql-converter', 'content.faq.q4') }}</h4>
+                    <p class="text-gray-700 leading-relaxed">{{ __tool('json-sql-converter', 'content.faq.a4') }}</p>
+                </div>
             </div>
         </div>
     </div>

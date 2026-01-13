@@ -4,7 +4,7 @@
         <span class="text-sm font-semibold text-white/90">{{ __('common.share') }}:</span>
         <div class="flex gap-2">
             <!-- Twitter -->
-            <a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}&text={{ urlencode($tool->meta_title ?? __('common.check_out_tool')) }}"
+            <a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}&text={{ urlencode($tool->meta_title ?? $tool->name ?? __('common.check_out_tool')) }}"
                 target="_blank"
                 class="inline-flex items-center justify-center w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-lg transition-all duration-200"
                 title="{{ __('common.share_twitter') }}">
@@ -37,7 +37,8 @@
             </a>
 
             <!-- WhatsApp -->
-            <a href="https://wa.me/?text={{ urlencode($tool->meta_title . ' - ' . url()->current()) }}" target="_blank"
+            <a href="https://wa.me/?text={{ urlencode(($tool->meta_title ?? $tool->name ?? 'Tool') . ' - ' . url()->current()) }}"
+                target="_blank"
                 class="inline-flex items-center justify-center w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-lg transition-all duration-200"
                 title="{{ __('common.share_whatsapp') }}">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

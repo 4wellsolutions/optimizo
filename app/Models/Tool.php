@@ -4,22 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Traits\HasTranslations;
+
 
 class Tool extends Model
 {
-    use HasFactory, HasTranslations;
-
-    /**
-     * Fields that can be translated
-     */
-    protected $translatable = [
-        'name',
-        'description',
-        'meta_title',
-        'meta_description',
-        'meta_keywords',
-    ];
+    use HasFactory;
 
     protected $fillable = [
         'name',
@@ -27,15 +16,12 @@ class Tool extends Model
         'icon_svg', // SVG markup for icon
         'icon_name', // Icon identifier
         'description', // Tool short description
-        'content', // Full SEO content
+        'description', // Tool short description
         'category_id', // Foreign Key (Parent ID)
         'subcategory_id', // Foreign Key (Child ID)
         'controller',
         'route_name',
         'url',
-        'meta_title',
-        'meta_description',
-        'meta_keywords',
         'is_active',
         'priority',
         'change_frequency',

@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', __tool('youtube-video-tags-extractor', 'seo.title', $tool->meta_title))
 @section('meta_description', __tool('youtube-video-tags-extractor', 'seo.description', $tool->meta_description))
