@@ -1,8 +1,10 @@
 <?php
 
 return [
-    // YouTube Category
-    'youtube_title' => 'Инструменты YouTube',
+    // Subcategories
+    'youtube_channel_tools_title' => 'Инструменты канала YouTube',
+    'youtube_monetization_analytics_title' => 'Монетизация и аналитика',
+    'youtube_video_tools_title' => 'Видео инструменты',
     'youtube_subtitle' => 'Профессиональные инструменты для создателей YouTube - 100% бесплатно, регистрация не требуется',
 
     // SEO Category
@@ -12,6 +14,7 @@ return [
     // Utility Category
     'utility_title' => 'Утилиты',
     'utility_subtitle' => 'Необходимые инструменты для разработчиков и дизайнеров - 100% бесплатно, регистрация не требуется',
+    'utility_encodingdecoding_tools_title' => 'Кодирование и декодирование',
 
     // Network Category
     'network_title' => 'Сетевые инструменты',

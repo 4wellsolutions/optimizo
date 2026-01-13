@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('css-minifier', 'meta.title'))
+@section('meta_description', __tool('css-minifier', 'meta.description'))
 @section('content')
     <div class="max-w-6xl mx-auto">
         <!-- Hero Section -->

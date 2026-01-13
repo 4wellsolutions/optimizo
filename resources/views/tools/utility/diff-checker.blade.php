@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('diff-checker', 'meta.title'))
+@section('meta_description', __tool('diff-checker', 'meta.description'))
 @section('content')
     <div class="max-w-7xl mx-auto">
         <x-tool-hero :tool="$tool" icon="diff-checker" />

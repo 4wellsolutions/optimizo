@@ -90,30 +90,11 @@
                 <!-- Tools Grid for this Subcategory -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     @foreach($subcategoryTools as $tool)
-                        <a href="{{ localeRoute($tool->route_name) }}"
-                            class="group bg-white rounded-2xl p-6 shadow-lg border-2 border-[{{ $category->bg_gradient_from }}]/20 hover:border-[{{ $category->bg_gradient_from }}] hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-                            style="border-color: rgba(0,0,0,0.05);"
-                            onmouseover="this.style.borderColor='{{ $category->bg_gradient_from }}'"
-                            onmouseout="this.style.borderColor='rgba(0,0,0,0.05)'">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-14 h-14 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform"
-                                    style="background: linear-gradient(to bottom right, {{ $category->bg_gradient_from }}, {{ $category->bg_gradient_to }}); color: white;">
-                                    @include('components.tool-icon', ['slug' => $tool->slug])
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-lg text-gray-900 group-hover:text-[{{ $category->bg_gradient_to }}] transition-colors"
-                                        style="transition: color 0.3s;"
-                                        onmouseover="this.style.color='{{ $category->bg_gradient_to }}'"
-                                        onmouseout="this.style.color=''">
-                                        <!-- DEBUG: Tool: {{ $tool->slug }} | Category: {{ explode('-', $tool->slug)[0] }} | File Exists: {{ file_exists(resource_path('lang/' . app()->getLocale() . '/tools/' . explode('-', $tool->slug)[0] . '.php')) ? 'YES' : 'NO' }} | Path: {{ resource_path('lang/' . app()->getLocale() . '/tools/' . explode('-', $tool->slug)[0] . '.php') }} -->
-                                        {{ __tool($tool->slug, 'meta.h1') ?: __tool($tool->slug, 'meta.title') ?: __tool($tool->slug, 'form.title') ?: $tool->slug }}
-                                    </h3>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm leading-relaxed">
-                                {{ __tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: __tool($tool->slug, 'meta.desc') ?: '' }}
-                            </p>
-                        </a>
+                        <x-tool-card 
+                            :tool="$tool" 
+                            :gradientFrom="$category->bg_gradient_from" 
+                            :gradientTo="$category->bg_gradient_to" 
+                        />
                     @endforeach
                 </div>
             </div>

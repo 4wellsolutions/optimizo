@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->meta_title)
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('csv-to-xml-converter', 'meta.title'))
+@section('meta_description', __tool('csv-to-xml-converter', 'meta.description'))
 @section('content')
     <div class="max-w-6xl mx-auto">
         <x-tool-hero :tool="$tool" icon="csv-to-xml" />

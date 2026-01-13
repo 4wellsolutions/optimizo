@@ -74,7 +74,7 @@ class ConverterController extends Controller
     public function jsonToXml()
     {
         $tool = Tool::where('slug', 'json-to-xml-converter')->first();
-        return view('tools.utility.json-to-xml', compact('tool'));
+        return view('tools.utility.json-to-xml-converter', compact('tool'));
     }
 
     /**
@@ -128,7 +128,7 @@ class ConverterController extends Controller
     public function tsvToCsv()
     {
         $tool = Tool::where('slug', 'tsv-to-csv-converter')->first();
-        return view('tools.utility.tsv-to-csv', compact('tool'));
+        return view('tools.utility.tsv-to-csv-converter', compact('tool'));
     }
 
     /**

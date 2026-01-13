@@ -68,8 +68,6 @@
                 <div class="bg-gray-900 rounded-xl p-6 overflow-x-auto">
                     <pre id="formattedJSON" class="text-sm text-green-400 font-mono"></pre>
                 </div>
-
-                @include('components.hero-actions')
             </div>
         </div>
 
@@ -108,8 +106,6 @@
                     </h3>
                     <p class="text-sm text-gray-600">{{ __tool('json-formatter', 'content.features.privacy.desc') }}</p>
                 </div>
-
-                @include('components.hero-actions')
             </div>
         </div>
 
@@ -149,8 +145,6 @@
                     </h3>
                     <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.how_steps.3.desc') }}</p>
                 </div>
-
-                @include('components.hero-actions')
             </div>
         </div>
 
@@ -198,8 +192,6 @@
                         <p class="text-gray-700 text-sm">{{ __tool('json-formatter', 'content.uses.export.desc') }}</p>
                     </div>
                 </div>
-
-                @include('components.hero-actions')
             </div>
         </div>
 

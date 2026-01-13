@@ -29,6 +29,8 @@ return [
 
     // Subcategories
     'youtube_channel_tools_title' => 'Herramientas de Canal de YouTube',
+    'youtube_monetization_analytics_title' => 'Monetización y Análisis',
+    'youtube_video_tools_title' => 'Herramientas de Video',
     'utility_image_tools_title' => 'Herramientas de Imagen',
     'network_ip_tools_title' => 'Herramientas IP',
     'network_domain_tools_title' => 'Herramientas de Dominio',
@@ -43,6 +45,7 @@ return [
     'utility_text_string_converters_title' => 'Conversión de Texto',
     'utility_text_content_tools_title' => 'Herramientas de Contenido de Texto',
     'utility_encoding_decoding_tools_title' => 'Codificación y Decodificación',
+    'utility_encodingdecoding_tools_title' => 'Codificación y Decodificación',
     'utility_generator_tools_title' => 'Herramientas Generadoras',
     'utility_network_tools_title' => 'Herramientas de Red',
     'utility_unit_converters_title' => 'Conversores de Unidades',

@@ -88,7 +88,7 @@ return [
             ],
         ],
     ],
-    'base64' => [
+    'base64-encoder-decoder' => [
         'meta' => [
             'title' => 'Base64 Encoder & Decoder',
             'description' => 'Encode and decode Base64 data instantly with our free online tool',
@@ -1138,7 +1138,7 @@ return [
             ],
         ],
     ],
-    'csv-to-xml' => [
+    'csv-to-xml-converter' => [
         'meta' => [
             'title' => 'Free CSV to XML Converter',
             'description' => 'Transform CSV spreadsheet data into structured XML format with our free online tool',
@@ -2125,7 +2125,7 @@ return [
             ],
         ],
     ],
-    'json-to-xml' => [
+    'json-to-xml-converter' => [
         'meta' => [
             'title' => 'Free JSON to XML Converter',
             'description' => 'Convert JSON data to XML format',
@@ -4054,7 +4054,7 @@ return [
             ],
         ],
     ],
-    'tsv-to-csv' => [
+    'tsv-to-csv-converter' => [
         'meta' => [
             'title' => 'Free TSV to CSV Converter',
             'description' => 'Transform Tab-Separated Values into Comma-Separated format instantly with our free tool.',
@@ -4215,7 +4215,7 @@ return [
             ],
         ],
     ],
-    'url-encoder' => [
+    'url-encoder-decoder' => [
         'meta' => [
             'title' => 'Free URL Encoder & Decoder',
             'description' => 'Encode and decode URLs for safe web transmission with our free online tool.',
@@ -4786,21 +4786,23 @@ return [
             'subtitle' => 'Convert between decimal and binary number systems',
         ],
         'editor' => [
-            'btn_dec_to_bin' => 'Decimal to Binary',
-            'btn_bin_to_dec' => 'Binary to Decimal',
-            'label_input_dec' => 'Enter Decimal Number',
-            'label_input_bin' => 'Enter Binary Number',
-            'label_output_bin' => 'Binary Result',
-            'label_output_dec' => 'Decimal Result',
-            'btn_convert_bin' => 'Convert to Binary',
-            'btn_convert_dec' => 'Convert to Decimal',
+            'to_binary' => 'Decimal to Binary',
+            'to_decimal' => 'Binary to Decimal',
+            'label_decimal' => 'Enter Decimal Number',
+            'label_binary' => 'Enter Binary Number',
+            'label_result_binary' => 'Binary Result',
+            'label_result_decimal' => 'Decimal Result',
+            'ph_decimal' => 'Enter decimal number (e.g., 42)',
+            'ph_output' => 'Result will appear here',
+            'btn_convert_binary' => 'Convert to Binary',
+            'btn_convert_decimal' => 'Convert to Decimal',
             'btn_clear' => 'Clear',
             'btn_copy' => 'Copy',
             'error_empty' => 'Please enter a number to convert',
-            'error_invalid_dec' => 'Invalid decimal number',
-            'error_invalid_bin' => 'Invalid binary number (only 0 and 1 allowed)',
-            'success_bin' => '✓ Converted to binary successfully',
-            'success_dec' => '✓ Converted to decimal successfully',
+            'error_invalid_decimal' => 'Invalid decimal number',
+            'error_invalid_binary' => 'Invalid binary number (only 0 and 1 allowed)',
+            'success_binary' => '✓ Converted to binary successfully',
+            'success_decimal' => '✓ Converted to decimal successfully',
             'error_general' => '✗ Error: ',
             'error_no_copy' => 'No output to copy',
             'success_copy' => '✓ Copied to clipboard',
@@ -4811,7 +4813,7 @@ return [
             'what_desc' => 'Binary is a base-2 number system that uses only two digits: 0 and 1. It\'s the fundamental language of computers, where all data is ultimately represented as sequences of binary digits (bits). Decimal is the base-10 system we use daily with digits 0-9.',
             'features_title' => 'Features',
             'features' => [
-                'instant' => ['title' => 'Instant Conversion', 'desc' => 'Encode or decode URLs in milliseconds'],
+                'fast' => ['title' => 'Instant Conversion', 'desc' => 'Encode or decode URLs in milliseconds'],
                 'bi' => ['title' => 'Bidirectional', 'desc' => 'Encode to URL format or decode back to original'],
                 'secure' => ['title' => 'Privacy First', 'desc' => 'All processing happens in your browser'],
                 'copy' => ['title' => 'One-Click Copy', 'desc' => 'Copy encoded/decoded URLs instantly'],
@@ -4890,7 +4892,7 @@ return [
             'what_desc' => 'Hexadecimal (Base-16) is a number system that uses 16 symbols: 0-9 and A-F (where A=10, B=11... F=15). It\'s widely used in computing because it provides a human-friendly way to represent binary code. One hex digit represents exactly 4 bits (a nibble).',
             'features_title' => 'Features',
             'features' => [
-                'instant' => ['title' => 'Instant Conversion', 'desc' => 'Convert values in milliseconds'],
+                'fast' => ['title' => 'Instant Conversion', 'desc' => 'Convert values in milliseconds'],
                 'bi' => ['title' => 'Bidirectional', 'desc' => 'Decimal to Hex and Hex to Decimal'],
                 'secure' => ['title' => 'Privacy First', 'desc' => 'All processing happens in your browser'],
                 'copy' => ['title' => 'One-Click Copy', 'desc' => 'Copy results instantly'],
@@ -4969,21 +4971,21 @@ return [
             'what_desc' => 'The octal number system corresponds to base-8 and uses digits 0 through 7. It was widely used in early computing systems (like PDP-8, ICL 1900) because it easily maps to 3 bits of binary data (2^3 = 8). Today, it is most commonly seen in Unix/Linux file permissions.',
             'features_title' => 'Features',
             'features' => [
-                'instant' => ['title' => 'Instant Conversion', 'desc' => 'Rapid client-side processing'],
+                'fast' => ['title' => 'Instant Conversion', 'desc' => 'Rapid client-side processing'],
                 'bi' => ['title' => 'Two-Way Tool', 'desc' => 'Convert Decimal to Octal and back'],
                 'secure' => ['title' => 'Secure & Private', 'desc' => 'No server uploads needed'],
                 'copy' => ['title' => 'Easy Copy', 'desc' => 'Copy results with one click'],
                 'free' => ['title' => 'Always Free', 'desc' => 'Unlimited usage'],
-                'validate' => ['title' => 'Input Validation', 'desc' => 'Checks for valid digits automatically'],
+                'universal' => ['title' => 'Input Validation', 'desc' => 'Checks for valid digits automatically'],
             ],
             'uses_title' => 'Common Use Cases',
             'uses' => [
                 'linux' => ['title' => 'File Permissions', 'desc' => 'Calculate Unix/Linux "chmod" values (e.g., 755, 644)'],
+                'computing' => ['title' => 'Legacy Computing', 'desc' => 'Work with older computing architectures like PDP-8 and ICL 1900'],
+                'permission' => ['title' => 'Permission Codes', 'desc' => 'Understand Unix file permission codes in octal notation'],
                 'legacy' => ['title' => 'Legacy Systems', 'desc' => 'Work with older computing architectures and aviation electronics (ARINC 429)'],
+                'aviation' => ['title' => 'Aviation Electronics', 'desc' => 'Used in ARINC 429 and other aviation communication systems'],
                 'education' => ['title' => 'CS Education', 'desc' => 'Learn bases and number system conversion'],
-                'display' => ['title' => 'Digital Displays', 'desc' => 'Understand 7-segment display logic'],
-                'utf' => ['title' => 'UTF-8 Encoding', 'desc' => 'Understand byte sequences in UTF-8'],
-                'prog' => ['title' => 'Programming', 'desc' => 'Use octal literals (prefix 0 or 0o) in languages like C, Java, JS, Python'],
             ],
             'steps_title' => 'How to Use',
             'steps' => [
@@ -4995,10 +4997,10 @@ return [
             ],
             'examples_title' => 'Octal Examples',
             'examples' => [
-                'seven' => ['title' => 'Number 7:', 'desc' => 'Decimal: 7 → Octal: 7'],
-                'eight' => ['title' => 'Number 8:', 'desc' => 'Decimal: 8 → Octal: 10'],
-                'chmod' => ['title' => 'Perm 755:', 'desc' => 'Octal: 755 → Decimal: 493'],
-                'large' => ['title' => 'Number 64:', 'desc' => 'Decimal: 64 → Octal: 100'],
+                'small' => ['title' => 'Number 64:', 'desc' => 'Decimal: 64 → Octal: 100'],
+                'large' => ['title' => 'Number 8:', 'desc' => 'Decimal: 8 → Octal: 10'],
+                'rights' => ['title' => 'Perm 755:', 'desc' => 'Octal: 755 → Decimal: 493'],
+                'max' => ['title' => 'Number 7:', 'desc' => 'Decimal: 7 → Octal: 7'],
             ],
             'faq_title' => 'Frequently Asked Questions',
             'faq' => [

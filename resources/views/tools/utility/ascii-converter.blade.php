@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $tool->name . ' - ' . config('app.name'))
-@section('meta_description', $tool->meta_description)
+@section('title', __tool('ascii-converter', 'meta.title'))
+@section('meta_description', __tool('ascii-converter', 'meta.description'))
 
 @section('content')
     <div class="max-w-6xl mx-auto">

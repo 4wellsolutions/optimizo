@@ -9,7 +9,7 @@ class SeoController extends Controller
 {
     public function metaAnalyzer()
     {
-        return view('tools.seo.meta-analyzer');
+        return view('tools.seo.meta-tag-analyzer');
     }
 
     public function analyzeMeta(Request $request)
@@ -61,7 +61,7 @@ class SeoController extends Controller
             // Calculate SEO score
             $score = $this->calculateSeoScore($metaTags);
 
-            return view('tools.seo.meta-analyzer', compact('metaTags', 'score'));
+            return view('tools.seo.meta-tag-analyzer', compact('metaTags', 'score'));
         } catch (\Exception $e) {
             return back()->with('error', 'Failed to analyze URL. Please check the URL and try again.');
         }

@@ -25,7 +25,7 @@ return [
         ],
     ],
 
-    'date-to-unix' => [
+    'date-to-unix-timestamp' => [
         'meta' => [
             'title' => 'Date to Unix Timestamp Converter - Instant & Accurate',
             'description' => 'Convert any date and time into a Unix Timestamp instantly. Supports both local time and UTC/GMT inputs for precise server-side scheduling and debugging.',
@@ -58,7 +58,7 @@ return [
         ],
     ],
 
-    'unix-to-date' => [
+    'unix-timestamp-to-date' => [
         'meta' => [
             'title' => 'Unix Timestamp to Date Converter - Readable DateTime Tool',
             'description' => 'Decode Unix Timestamps into human-readable dates. See the exact time in GMT, your local timezone, and ISO 8601 format instantly.',
@@ -95,7 +95,7 @@ return [
         ],
     ],
 
-    'local-to-utc' => [
+    'local-time-to-utc' => [
         'meta' => [
             'title' => 'Local Time to UTC Converter - Timezone Adjuster',
             'description' => 'Convert your local time to UTC (Coordinated Universal Time). Essential for scheduling international calls and server logs synchronization.',
@@ -110,6 +110,20 @@ return [
             'timezone_label' => 'Your Timezone:',
             'result_title' => 'UTC TIME',
             'result_subtitle' => 'Global Standard',
+        ],
+        'live_clocks' => [
+            'local_title' => 'Your Local Time',
+            'utc_title' => 'UTC Time',
+            'utc_subtitle' => 'Coordinated Universal Time',
+            'loading' => 'Loading...',
+        ],
+        'features' => [
+            'instant_title' => 'Instant Conversion',
+            'instant_desc' => 'Convert local time to UTC in real-time with accurate timezone detection',
+            'timezone_title' => 'Auto-Detect Timezone',
+            'timezone_desc' => 'Automatically detects your browser timezone for accurate conversion',
+            'accurate_title' => 'Always Accurate',
+            'accurate_desc' => 'Handles DST changes and timezone offsets automatically',
         ],
         'content' => [
             'why_title' => 'Why Convert to UTC?',
@@ -130,7 +144,7 @@ return [
         ],
     ],
 
-    'utc-to-local' => [
+    'utc-to-local-time' => [
         'meta' => [
             'title' => 'UTC to Local Time Converter - Global Time Translator',
             'description' => 'Quickly convert UTC/GMT time to your local timezone. Perfect for checking server logs, international meeting times, and global event schedules.',
