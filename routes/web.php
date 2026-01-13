@@ -319,8 +319,8 @@ $definePublicRoutes = function () {
         Route::get('/powerpoint-to-pdf', [DocumentConverterController::class, 'indexPptToPdf'])->name('ppt-to-pdf');
         Route::post('/powerpoint-to-pdf', [DocumentConverterController::class, 'processPptToPdf'])->name('ppt-to-pdf.process');
 
-        Route::get('/pdf-to-powerpoint', [DocumentConverterController::class, 'indexPdfToPpt'])->name('pdf-to-ppt');
-        Route::post('/pdf-to-powerpoint', [DocumentConverterController::class, 'processPdfToPpt'])->name('pdf-to-ppt.process');
+        Route::get('/pdf-to-ppt', [DocumentConverterController::class, 'indexPdfToPpt'])->name('pdf-to-ppt');
+        Route::post('/pdf-to-ppt', [DocumentConverterController::class, 'processPdfToPpt'])->name('pdf-to-ppt.process');
 
 
         Route::get('/pdf-compressor', [DocumentConverterController::class, 'indexPdfCompressor'])->name('pdf-compressor');

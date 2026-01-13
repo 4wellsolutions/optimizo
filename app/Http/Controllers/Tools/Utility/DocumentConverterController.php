@@ -140,7 +140,7 @@ class DocumentConverterController extends Controller
     // --- PDF to PowerPoint ---
     public function indexPdfToPpt()
     {
-        $tool = \App\Models\Tool::where('slug', 'pdf-to-powerpoint')->first();
+        $tool = \App\Models\Tool::where('slug', 'pdf-to-ppt')->first();
         return view('tools.document.pdf-to-ppt', compact('tool'));
     }
 

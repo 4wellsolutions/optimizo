@@ -144,7 +144,7 @@ if (!function_exists('__tool')) {
             'word-to-pdf' => 'document',
             'percentage-calculator' => 'math',
             'excel-to-pdf' => 'document',
-            'powerpoint-to-pdf' => 'document',
+            'pdf-to-ppt' => 'document',
             'ppt-to-pdf' => 'document',
             'jpg-to-pdf' => 'document',
             'jpeg-to-pdf' => 'document',
