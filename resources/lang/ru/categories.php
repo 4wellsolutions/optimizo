@@ -1,32 +1,49 @@
 <?php
 
-return [
-    // Subcategories
-    'youtube_channel_tools_title' => 'Инструменты канала YouTube',
-    'youtube_monetization_analytics_title' => 'Монетизация и аналитика',
-    'youtube_video_tools_title' => 'Видео инструменты',
-    'youtube_subtitle' => 'Профессиональные инструменты для создателей YouTube - 100% бесплатно, регистрация не требуется',
-
-    // SEO Category
-    'seo_title' => 'Инструменты SEO',
-    'seo_subtitle' => 'Профессиональные инструменты SEO для оптимизации контента - 100% бесплатно, регистрация не требуется',
-
-    // Utility Category
-    'utility_title' => 'Утилиты',
-    'utility_subtitle' => 'Необходимые инструменты для разработчиков и дизайнеров - 100% бесплатно, регистрация не требуется',
-    'utility_encodingdecoding_tools_title' => 'Кодирование и декодирование',
-
-    // Network Category
-    'network_title' => 'Сетевые инструменты',
-    'network_subtitle' => 'Профессиональные сетевые инструменты для диагностики и анализа - 100% бесплатно, регистрация не требуется',
-
-    // Common Category Elements
-    'free_tools' => 'Бесплатные инструменты',
-    'free_forever' => '100% бесплатно навсегда',
-    'instant_access' => 'Мгновенный доступ',
-    'tools_count' => 'инструментов',
-    'back_to_home' => 'Вернуться на главную',
-    'general' => 'Общие',
-    'meta_title' => ':category - Бесплатные онлайн инструменты | Optimizo',
-    'meta_description' => 'Бесплатные :category, включая конвертеры, генераторы и многое другое. Профессиональные инструменты для разработчиков и создателей.',
-];
+return array (
+  'youtube_channel_tools_title' => 'Инструменты канала YouTube',
+  'youtube_monetization_analytics_title' => 'Монетизация и аналитика',
+  'youtube_video_tools_title' => 'Видео инструменты',
+  'youtube_subtitle' => 'Профессиональные инструменты для создателей YouTube - 100% бесплатно, регистрация не требуется',
+  'seo_title' => 'Инструменты SEO',
+  'seo_subtitle' => 'Профессиональные инструменты SEO для оптимизации контента - 100% бесплатно, регистрация не требуется',
+  'utility_title' => 'Утилиты',
+  'utility_subtitle' => 'Необходимые инструменты для разработчиков и дизайнеров - 100% бесплатно, регистрация не требуется',
+  'utility_encodingdecoding_tools_title' => 'Кодирование и декодирование',
+  'network_title' => 'Сетевые инструменты',
+  'network_subtitle' => 'Профессиональные сетевые инструменты для диагностики и анализа - 100% бесплатно, регистрация не требуется',
+  'free_tools' => 'Бесплатные инструменты',
+  'free_forever' => '100% бесплатно навсегда',
+  'instant_access' => 'Мгновенный доступ',
+  'tools_count' => 'инструментов',
+  'back_to_home' => 'Вернуться на главную',
+  'general' => 'Общие',
+  'meta_title' => ':category - Бесплатные онлайн инструменты | Optimizo',
+  'meta_description' => 'Бесплатные :category, включая конвертеры, генераторы и многое другое. Профессиональные инструменты для разработчиков и создателей.',
+  'youtube_title' => 'YouTube Инструменты',
+  'utility_image_tools_title' => 'Изображение Инструменты',
+  'network_ip_tools_title' => 'IP Инструменты',
+  'network_domain_tools_title' => 'Domain Инструменты',
+  'network_network_diagnostics_title' => 'Сеть Диагностика',
+  'utility_dev_tools_title' => 'Development Инструменты',
+  'utility_security_tools_title' => 'Security Инструменты',
+  'utility_social_tools_title' => 'Social Инструменты',
+  'utility_text_tools_title' => 'Text Инструменты',
+  'utility_encoding_decoding_tools_title' => 'Encoding & Decoding',
+  'utility_number_system_converters_title' => 'Number Systems',
+  'utility_data_format_converters_title' => 'Data Formats',
+  'utility_text_string_converters_title' => 'Text Conversion',
+  'utility_text_content_tools_title' => 'Text Content Инструменты',
+  'utility_generator_tools_title' => 'Generator Инструменты',
+  'utility_network_tools_title' => 'Сеть Инструменты',
+  'utility_unit_converters_title' => 'Unit Converters',
+  'utility_network_diagnostics_title' => 'Сеть Диагностика (Utility)',
+  'seo_analysis_tools_title' => 'Analysis Инструменты',
+  'seo_keyword_tools_title' => 'Keyword Инструменты',
+  'seo_technical_seo_title' => 'Technical SEO',
+  'seo_google_serp_checker_title' => 'SERP Инструменты',
+  'seo_broken_links_checker_title' => 'Link Analysis',
+  'seo_on_page_seo_checker_title' => 'On-Page Analysis',
+  'utility_spreadsheet_tools_title' => 'Spreadsheet Инструменты',
+  'utility_document_tools_title' => 'Document Инструменты',
+);
