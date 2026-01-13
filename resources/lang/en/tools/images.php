@@ -4,7 +4,6 @@ return [
     'base64-to-image' => [
         'meta' => [
             'title' => 'Base64 to Image Converter - Decode Base64 Output | Optimizo',
-            'h1' => 'Base64 to Image Converter',
             'desc' => 'Convert Base64 encoded strings back to images (PNG, JPG, GIF). Free online decoder and visualizer.',
             'keywords' => 'base64 to image, base64 decoder, string to image, recover image from base64',
         ],
@@ -64,7 +63,6 @@ return [
     'heic-to-jpg' => [
         'meta' => [
             'title' => 'HEIC to JPG Converter - Convert iPhone Photos Online | Optimizo',
-            'h1' => 'HEIC to JPG Converter',
             'desc' => 'Convert High Efficiency Image File (HEIC/HEIF) photos from iPhone to standard JPG format. Free, private, client-side converter.',
             'keywords' => 'heic to jpg, native iphone converter, heic converter, heif to jpg, online image converter',
         ],
@@ -130,7 +128,6 @@ return [
     'ico-converter' => [
         'meta' => [
             'title' => 'ICO Converter - Create Favicons Online | Optimizo',
-            'h1' => 'ICO Converter',
             'desc' => 'Convert images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Free online favicon generator.',
             'keywords' => 'ico converter, favicon generator, image to ico, create favicon, online ico tool',
         ],
@@ -187,7 +184,6 @@ return [
     'image-converter' => [
         'meta' => [
             'title' => 'Image Converter - Convert Images Online Free | Optimizo',
-            'h1' => 'Image Converter',
             'desc' => 'Convert images between multiple formats (PNG, JPG, WEBP) easily and for free. Secure, client-side conversion requiring no uploads.',
             'keywords' => 'image converter, png to jpg, jpg to png, webp converter, free image tool',
         ],
@@ -260,7 +256,6 @@ return [
     'image-to-base64' => [
         'meta' => [
             'title' => 'Image to Base64 Converter - Convert Image to String | Optimizo',
-            'h1' => 'Image to Base64 Converter',
             'desc' => 'Convert images to Base64 encoded strings for embedding in HTML or CSS. Free online tool supporting PNG, JPG, GIF.',
             'keywords' => 'image to base64, base64 encoder, image to string, embed image, data uri generator',
         ],
@@ -320,7 +315,6 @@ return [
     'jpg-to-png' => [
         'meta' => [
             'title' => 'JPG to PNG Converter - Convert JPG Images to PNG Free | Optimizo',
-            'h1' => 'JPG to PNG Converter',
             'desc' => 'Convert JPG images to PNG format instantly. 100% free, secure client-side conversion, no file size limits.',
             'keywords' => 'jpg to png, jpg converter, convert image to png, free image converter',
         ],
@@ -379,7 +373,6 @@ return [
     'jpg-to-webp' => [
         'meta' => [
             'title' => 'JPG to WEBP Converter - Convert Images to WebP | Optimizo',
-            'h1' => 'JPG to WEBP Converter',
             'desc' => 'Convert JPG images to the modern WebP format for superior compression and web performance. Free online tool.',
             'keywords' => 'jpg to webp, webp converter, image to webp, web optimization, free converter',
         ],
@@ -439,7 +432,6 @@ return [
     'png-to-jpg' => [
         'meta' => [
             'title' => 'PNG to JPG Converter - Convert PNG to JPG Online | Optimizo',
-            'h1' => 'PNG to JPG Converter',
             'desc' => 'Convert PNG images to JPG format for smaller file sizes. Free online converter.',
             'keywords' => 'png to jpg, png converter, convert image to jpg, free jpg converter',
         ],
@@ -499,7 +491,6 @@ return [
     'png-to-webp' => [
         'meta' => [
             'title' => 'PNG to WEBP Converter - Compress PNG to WebP | Optimizo',
-            'h1' => 'PNG to WEBP Converter',
             'desc' => 'Convert PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.',
             'keywords' => 'png to webp, webp converter, compress png, free image converter',
         ],
@@ -559,7 +550,6 @@ return [
     'svg-to-jpg' => [
         'meta' => [
             'title' => 'SVG to JPG Converter - Vector to Raster Conversion | Optimizo',
-            'h1' => 'SVG to JPG Converter',
             'desc' => 'Convert SVG vector files to JPG images online. Auto-fills transparent backgrounds with white for perfect JPG output.',
             'keywords' => 'svg to jpg, vector converter, svg rasterize, free jpg tool',
         ],
@@ -623,7 +613,6 @@ return [
     'svg-to-png' => [
         'meta' => [
             'title' => 'SVG to PNG Converter - Rasterize SVG Images | Optimizo',
-            'h1' => 'SVG to PNG Converter',
             'desc' => 'Convert Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don\'t support vector files.',
             'keywords' => 'svg to png, svg converter, vector to raster, free svg tool',
         ],
@@ -687,7 +676,6 @@ return [
     'webp-to-jpg' => [
         'meta' => [
             'title' => 'WEBP to JPG Converter - Convert WebP to JPG Online | Optimizo',
-            'h1' => 'WEBP to JPG Converter',
             'desc' => 'Convert WebP images to standard JPG format for broad compatibility. Free, fast, and secure converter.',
             'keywords' => 'webp to jpg, convert webp, image converter, free webp to jpg',
         ],
