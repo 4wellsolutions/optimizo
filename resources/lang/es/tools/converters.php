@@ -3,14 +3,10 @@
 return [
     'angle-converter' => [
         'meta' => [
+            'title' => 'Conversor de Ángulos - Grados, Radianes, Gradianes',
+            'description' => 'Convierta unidades de ángulo al instante. Grados a Radianes, Gradianes a Grados, Minutos y Segundos de Arco.',
             'h1' => 'Conversor de Ángulos',
             'subtitle' => 'Convierta grados, radianes, gradianes, minutos & segundos de arco al instante',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Ángulos - Grados, Radianes, Gradianes',
-            'h1' => 'Conversor de Ángulos',
-            'description' => 'Convierta unidades de ángulo al instante. Grados a Radianes, Gradianes a Grados, Minutos y Segundos de Arco.',
-            'keywords' => 'conversor de ángulos, grados a radianes, radianes a grados, calculadora de ángulos',
         ],
         'form' => [
             'from_label' => 'De',
@@ -52,14 +48,10 @@ return [
 
     'area-converter' => [
         'meta' => [
+            'title' => 'Conversor de Área - Metros Cuadrados, Acres, Hectáreas',
+            'description' => 'Convierta unidades de área al instante. Metros cuadrados a acres, hectáreas a pies cuadrados y millas cuadradas.',
             'h1' => 'Conversor de Área',
             'subtitle' => 'Convierta metros cuadrados, acres, hectáreas & pies cuadrados con precisión',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Área - Metros Cuadrados, Acres, Hectáreas',
-            'h1' => 'Conversor de Área',
-            'description' => 'Convierta unidades de área al instante. Metros cuadrados a acres, hectáreas a pies cuadrados y millas cuadradas.',
-            'keywords' => 'conversor de área, metros cuadrados a acres, conversión de hectáreas, medición de terrenos',
         ],
         'form' => [
             'from_label' => 'De',
@@ -105,14 +97,10 @@ return [
 
     'cooking-unit-converter' => [
         'meta' => [
+            'title' => 'Conversor de Unidades de Cocina - Tazas, Cucharadas, Cucharaditas',
+            'description' => 'Convierta unidades de cocina al instante. Tazas a Cucharadas, Cucharaditas a Mililitros y Onzas Líquidas.',
             'h1' => 'Conversor de Unidades de Cocina',
             'subtitle' => 'Convierta tazas, cucharadas, cucharaditas, ml & onzas líquidas para recetas',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Unidades de Cocina - Tazas, Cucharadas, Cucharaditas',
-            'h1' => 'Conversor de Unidades de Cocina',
-            'description' => 'Convierta unidades de cocina al instante. Tazas a Cucharadas, Cucharaditas a Mililitros y Onzas Líquidas.',
-            'keywords' => 'conversor de cocina, tazas a cdas, cdta a ml, calculadora de cocina, conversiones de horneado',
         ],
         'form' => [
             'from_label' => 'De',
@@ -157,14 +145,10 @@ return [
 
     'data-transfer-rate-converter' => [
         'meta' => [
+            'title' => 'Conversor de Transferencia de Datos - Mbps, Gbps, KB/s',
+            'description' => 'Convierta tasas de transferencia de datos al instante. Mbps a MB/s, Gbps a KB/s y conversiones de velocidad de Internet.',
             'h1' => 'Conversor de Tasa de Transferencia de Datos',
             'subtitle' => 'Convierta Mbps, Gbps, MB/s & KB/s para velocidades de Internet',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Transferencia de Datos - Mbps, Gbps, KB/s',
-            'h1' => 'Conversor de Tasa de Transferencia de Datos',
-            'description' => 'Convierta tasas de transferencia de datos al instante. Mbps a MB/s, Gbps a KB/s y conversiones de velocidad de Internet.',
-            'keywords' => 'conversor de transferencia de datos, mbps a mb/s, calculadora de velocidad de internet, conversor de ancho de banda',
         ],
         'form' => [
             'from_label' => 'De',
@@ -208,14 +192,10 @@ return [
 
     'density-converter' => [
         'meta' => [
+            'title' => 'Conversor de Densidad - kg/m³, g/cm³, lb/ft³',
+            'description' => 'Convierta unidades de densidad al instante. Kilogramos por metro cúbico a Gramos por centímetro cúbico y Libras por pie cúbico.',
             'h1' => 'Conversor de Densidad',
             'subtitle' => 'Convierta kg/m³, g/cm³ & lb/ft³ para ciencia de materiales',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Densidad - kg/m³, g/cm³, lb/ft³',
-            'h1' => 'Conversor de Densidad',
-            'description' => 'Convierta unidades de densidad al instante. Kilogramos por metro cúbico a Gramos por centímetro cúbico y Libras por pie cúbico.',
-            'keywords' => 'conversor de densidad, kg/m3 a g/cm3, calculadora de densidad, conversiones de física',
         ],
         'form' => [
             'from_label' => 'De',
@@ -256,14 +236,10 @@ return [
 
     'digital-storage-converter' => [
         'meta' => [
+            'title' => 'Conversor de Almacenamiento Digital - Bytes, KB, MB, GB, TB',
+            'description' => 'Convierta unidades de almacenamiento digital al instante. Bytes a Megabytes, Gigabytes a Terabytes y Petabytes.',
             'h1' => 'Conversor de Almacenamiento Digital',
             'subtitle' => 'Convierta bytes, KB, MB, GB & TB para tamaños de archivos y almacenamiento',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Almacenamiento Digital - Bytes, KB, MB, GB, TB',
-            'h1' => 'Conversor de Almacenamiento Digital',
-            'description' => 'Convierta unidades de almacenamiento digital al instante. Bytes a Megabytes, Gigabytes a Terabytes y Petabytes.',
-            'keywords' => 'conversor de almacenamiento, bytes a mb, gb a tb, calculadora de tamaño de datos, unidades digitales',
         ],
         'form' => [
             'from_label' => 'De',
@@ -305,17 +281,12 @@ return [
         ],
     ],
 
-    // Energy Converter
     'energy-converter' => [
         'meta' => [
+            'title' => 'Conversor de Energía - Julios, Calorías, kWh',
+            'description' => 'Convierta unidades de energía al instante. Julios a Calorías, Kilovatios-hora a BTU y más.',
             'h1' => 'Conversor de Energía',
             'subtitle' => 'Convierta julios, calorías, kWh & BTU para cálculos de energía',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Energía - Julios, Calorías, kWh',
-            'h1' => 'Conversor de Energía',
-            'description' => 'Convierta unidades de energía al instante. Julios a Calorías, Kilovatios-hora a BTU y más.',
-            'keywords' => 'conversor de energía, julios a calorías, conversión btu, kwh a julios',
         ],
         'form' => [
             'from_label' => 'De',
@@ -358,17 +329,12 @@ return [
         ],
     ],
 
-    // Force Converter
     'force-converter' => [
         'meta' => [
+            'title' => 'Conversor de Fuerza - Newtons, Libra-fuerza, Kilogramo-fuerza',
+            'description' => 'Convierta unidades de fuerza al instante. Newtons a Libra-fuerza (lbf), Kilogramo-fuerza (kgf) y más.',
             'h1' => 'Conversor de Fuerza',
             'subtitle' => 'Convierta newtons, libra-fuerza & kilogramo-fuerza al instante',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Fuerza - Newtons, Libra-fuerza, Kilogramo-fuerza',
-            'h1' => 'Conversor de Fuerza',
-            'description' => 'Convierta unidades de fuerza al instante. Newtons a Libra-fuerza (lbf), Kilogramo-fuerza (kgf) y más.',
-            'keywords' => 'conversor de fuerza, newtons a lbf, conversión kgf, calculadora de física',
         ],
         'form' => [
             'from_label' => 'De',
@@ -410,14 +376,10 @@ return [
 
     'frequency-converter' => [
         'meta' => [
+            'title' => 'Conversor de Frecuencia - Hertz, kHz, MHz, GHz',
+            'description' => 'Convierta unidades de frecuencia al instante. Hertz a Megahertz, Gigahertz a Kilohertz.',
             'h1' => 'Conversor de Frecuencia',
             'subtitle' => 'Convierta Hz, kHz, MHz & GHz para electrónica y señales',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Frecuencia - Hertz, kHz, MHz, GHz',
-            'h1' => 'Conversor de Frecuencia',
-            'description' => 'Convierta unidades de frecuencia al instante. Hertz a Megahertz, Gigahertz a Kilohertz.',
-            'keywords' => 'conversor de frecuencia, hertz a mhz, ghz a khz, calculadora de radiofrecuencia',
         ],
         'form' => [
             'from_label' => 'De',
@@ -460,14 +422,10 @@ return [
 
     'fuel-consumption-converter' => [
         'meta' => [
+            'title' => 'Conversor de Consumo - MPG, km/L, L/100km',
+            'description' => 'Convierta unidades de consumo de combustible al instante. Millas por Galón (MPG) a L/100km y Kilómetros por Litro.',
             'h1' => 'Conversor de Consumo de Combustible',
             'subtitle' => 'Convierta MPG, km/L & L/100km para eficiencia de combustible',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Consumo - MPG, km/L, L/100km',
-            'h1' => 'Conversor de Consumo de Combustible',
-            'description' => 'Convierta unidades de consumo de combustible al instante. Millas por Galón (MPG) a L/100km y Kilómetros por Litro.',
-            'keywords' => 'conversor de combustible, mpg a l/100km, km/l a mpg, calculadora de eficiencia de combustible',
         ],
         'form' => [
             'from_label' => 'De',
@@ -508,14 +466,10 @@ return [
 
     'length-converter' => [
         'meta' => [
+            'title' => 'Conversor de Longitud - Conversor de Unidades en Línea Gratuito',
+            'description' => 'Convierta medidas de longitud al instante. Admite unidades métricas e imperiales como metros, pies, pulgadas, kilómetros y millas.',
             'h1' => 'Conversor de Longitud',
             'subtitle' => 'Convierta metros, pies, pulgadas, km & millas con alta precisión',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Longitud - Conversor de Unidades en Línea Gratuito',
-            'h1' => 'Conversor de Longitud',
-            'description' => 'Convierta medidas de longitud al instante. Admite unidades métricas e imperiales como metros, pies, pulgadas, kilómetros y millas.',
-            'keywords' => 'conversor de longitud, metro a pies, cm a pulgada, km a millas, conversor de unidades en línea',
         ],
         'form' => [
             'from_label' => 'De',
@@ -559,14 +513,10 @@ return [
 
     'molar-mass-converter' => [
         'meta' => [
+            'title' => 'Conversor de Masa Molar - g/mol a kg/mol',
+            'description' => 'Convierta unidades de masa molar al instante. Gramos por mol a Kilogramos por mol.',
             'h1' => 'Conversor de Masa Molar',
             'subtitle' => 'Convierta g/mol, kg/mol & lb/mol para cálculos químicos',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Masa Molar - g/mol a kg/mol',
-            'h1' => 'Conversor de Masa Molar',
-            'description' => 'Convierta unidades de masa molar al instante. Gramos por mol a Kilogramos por mol.',
-            'keywords' => 'conversor de masa molar, conversión g/mol, calculadora química, peso molecular',
         ],
         'form' => [
             'from_label' => 'De',
@@ -604,17 +554,12 @@ return [
         ],
     ],
 
-    // Power Converter
     'power-converter' => [
         'meta' => [
+            'title' => 'Conversor de Potencia - Vatios, Kilovatios, Caballos de Fuerza',
+            'description' => 'Convierta unidades de potencia al instante. Vatios a Caballos de Fuerza, Kilovatios a BTU/h y más.',
             'h1' => 'Conversor de Potencia',
             'subtitle' => 'Convierta vatios, kilovatios, caballos de fuerza & BTU/h al instante',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Potencia - Vatios, Kilovatios, Caballos de Fuerza',
-            'h1' => 'Conversor de Potencia',
-            'description' => 'Convierta unidades de potencia al instante. Vatios a Caballos de Fuerza, Kilovatios a BTU/h y más.',
-            'keywords' => 'conversor de potencia, vatios a hp, conversión caballos de fuerza, calculadora de kilovatios',
         ],
         'form' => [
             'from_label' => 'De',
@@ -657,14 +602,10 @@ return [
 
     'pressure-converter' => [
         'meta' => [
+            'title' => 'Conversor de Presión - Pascal, Bar, PSI, Atm',
+            'description' => 'Convierta unidades de presión al instante. Pascal a Bar, PSI a Atmósferas y conversiones de mmHg.',
             'h1' => 'Conversor de Presión',
             'subtitle' => 'Convierta PSI, bar, pascal, atm & mmHg para diversas aplicaciones',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Presión - Pascal, Bar, PSI, Atm',
-            'h1' => 'Conversor de Presión',
-            'description' => 'Convierta unidades de presión al instante. Pascal a Bar, PSI a Atmósferas y conversiones de mmHg.',
-            'keywords' => 'conversor de presión, psi a bar, pascal a atm, conversión mmhg, presión de neumáticos',
         ],
         'form' => [
             'from_label' => 'De',
@@ -707,14 +648,10 @@ return [
 
     'speed-converter' => [
         'meta' => [
+            'title' => 'Conversor de Velocidad - Conversor de Unidades en Línea Gratuito',
+            'description' => 'Convierta unidades de velocidad al instante. Millas por hora a Kilómetros por hora, Metros por segundo y Nudos.',
             'h1' => 'Conversor de Velocidad',
             'subtitle' => 'Convierta MPH, KPH, nudos, m/s & números Mach al instante',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Velocidad - Conversor de Unidades en Línea Gratuito',
-            'h1' => 'Conversor de Velocidad',
-            'description' => 'Convierta unidades de velocidad al instante. Millas por hora a Kilómetros por hora, Metros por segundo y Nudos.',
-            'keywords' => 'conversor de velocidad, mph a kph, conversión nudos, conversor límite de velocidad',
         ],
         'form' => [
             'from_label' => 'De',
@@ -756,14 +693,10 @@ return [
 
     'temperature-converter' => [
         'meta' => [
+            'title' => 'Conversor de Temperatura - Celsius, Fahrenheit, Kelvin',
+            'description' => 'Convierta lecturas de temperatura entre escalas Celsius, Fahrenheit y Kelvin al instante.',
             'h1' => 'Conversor de Temperatura',
             'subtitle' => 'Convierta Celsius, Fahrenheit & Kelvin con fórmulas precisas',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Temperatura - Celsius, Fahrenheit, Kelvin',
-            'h1' => 'Conversor de Temperatura',
-            'description' => 'Convierta lecturas de temperatura entre escalas Celsius, Fahrenheit y Kelvin al instante.',
-            'keywords' => 'conversor de temperatura, celsius a fahrenheit, kelvin a celsius, fahrenheit a celsius',
         ],
         'form' => [
             'from_label' => 'De',
@@ -802,17 +735,12 @@ return [
         ],
     ],
 
-    // Time Unit Converter
     'time-unit-converter' => [
         'meta' => [
+            'title' => 'Conversor de Unidades de Tiempo - Segundos, Minutos, Horas',
+            'description' => 'Convierta duraciones de tiempo al instante. Segundos a minutos, horas a días, semanas a meses y años.',
             'h1' => 'Conversor de Unidades de Tiempo',
             'subtitle' => 'Convierta segundos, minutos, horas, días, semanas & años',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Unidades de Tiempo - Segundos, Minutos, Horas',
-            'h1' => 'Conversor de Unidades de Tiempo',
-            'description' => 'Convierta duraciones de tiempo al instante. Segundos a minutos, horas a días, semanas a meses y años.',
-            'keywords' => 'conversor de tiempo, segundos a minutos, horas a días, calculadora de duración',
         ],
         'form' => [
             'from_label' => 'De',
@@ -855,17 +783,12 @@ return [
         ],
     ],
 
-    // Torque Converter
     'torque-converter' => [
         'meta' => [
+            'title' => 'Conversor de Torque - Newton-metros, Pie-libras',
+            'description' => 'Convierta unidades de torque al instante. Newton-metros a Pie-libras, Pulgada-libras y Kilogramo-fuerza metros.',
             'h1' => 'Conversor de Torque',
             'subtitle' => 'Convierta Nm, lb-ft & kg-m para valoresTorque mecánicos',
-        ],
-        'seo' => [
-            'title' => 'Conversor de Torque - Newton-metros, Pie-libras',
-            'h1' => 'Conversor de Torque',
-            'description' => 'Convierta unidades de torque al instante. Newton-metros a Pie-libras, Pulgada-libras y Kilogramo-fuerza metros.',
-            'keywords' => 'conversor de torque, nm a pie-lb, calculadora de torque, conversión de torque del motor',
         ],
         'form' => [
             'from_label' => 'De',
@@ -904,16 +827,12 @@ return [
         ],
     ],
 
-    // Volume Converter
     'volume-converter' => [
         'meta' => [
-            'h1' => 'Conversor de Volumen',
-            'subtitle' => 'Convierta litros, galones, tazas, ml & metros cúbicos',
-        ],
-        'seo' => [
             'title' => 'Conversor de Volumen - Conversor de Unidades en Línea Gratuito',
             'description' => 'Convierta unidades de volumen líquido al instante. Soporte para Litros, Galones, Tazas, Pintas, Mililitros y Onzas Líquidas.',
-            'keywords' => 'conversor de volumen, litro a galón, ml a tazas, conversión onzas líquidas, medición líquida',
+            'h1' => 'Conversor de Volumen',
+            'subtitle' => 'Convierta litros, galones, tazas, ml & metros cúbicos',
         ],
         'form' => [
             'from_label' => 'De',
@@ -957,16 +876,12 @@ return [
         ],
     ],
 
-    // Weight Converter
     'weight-converter' => [
         'meta' => [
-            'h1' => 'Conversor de Peso',
-            'subtitle' => 'Convierta kg, libras, onzas, gramos & piedras con precisión',
-        ],
-        'seo' => [
             'title' => 'Conversor de Peso - Conversor de Unidades en Línea Gratuito',
             'description' => 'Convierta unidades de peso y masa al instante. Admite Kilogramos, Gramos, Libras, Onzas, Toneladas Métricas y Miligramos.',
-            'keywords' => 'conversor de peso, conversor de masa, kg a lbs, libras a kg, gramos a onzas',
+            'h1' => 'Conversor de Peso',
+            'subtitle' => 'Convierta kg, libras, onzas, gramos & piedras con precisión',
         ],
         'form' => [
             'from_label' => 'De',
@@ -1010,4 +925,3 @@ return [
         ],
     ],
 ];
-
