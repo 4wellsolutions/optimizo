@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\File;
 
 class LocationController extends Controller
 {
+    /**
+     * Search for locations based on query string.
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function search(Request $request)
     {
         $query = $request->get('q');

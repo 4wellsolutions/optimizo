@@ -7,6 +7,11 @@ use App\Models\Tool;
 
 class YahooSerpCheckerController extends Controller
 {
+    /**
+     * Display the Yahoo SERP Checker tool page.
+     *
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
         $tool = Tool::where('slug', 'yahoo-serp-checker')->first();

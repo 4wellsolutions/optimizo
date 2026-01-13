@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\File;
 
 class GoogleSerpCheckerController extends Controller
 {
+    /**
+     * Display the Google SERP Checker tool page.
+     *
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
         $tool = Tool::where('slug', 'google-serp-checker')->firstOrFail();

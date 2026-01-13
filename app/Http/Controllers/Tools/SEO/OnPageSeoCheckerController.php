@@ -14,11 +14,21 @@ class OnPageSeoCheckerController extends Controller
 {
     protected $analyzer;
 
+    /**
+     * Create a new controller instance.
+     *
+     * @param OnPageSeoAnalyzer $analyzer
+     */
     public function __construct(OnPageSeoAnalyzer $analyzer)
     {
         $this->analyzer = $analyzer;
     }
 
+    /**
+     * Display the On-Page SEO Checker tool page.
+     *
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
         $tool = Tool::where('slug', 'on-page-seo-checker')->first();

@@ -11,6 +11,11 @@ use voku\helper\HtmlDomParser;
 
 class BrokenLinksCheckerController extends Controller
 {
+    /**
+     * Display the Broken Links Checker tool page.
+     *
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
         $tool = Tool::where('slug', 'broken-links-checker')->firstOrFail();
