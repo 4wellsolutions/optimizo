@@ -115,14 +115,34 @@ if (!function_exists('__tool')) {
             'redirect' => 'network',
             'what' => 'network',
 
+            // Development tools
+            'rgb' => 'development',
+            'json' => 'development',
+            'base64' => 'development',
+            'code' => 'development',
+            'css' => 'development',
+            'js' => 'development',
+            'javascript' => 'development',
+            'file' => 'development',
+            'cron' => 'development',
+            'curl' => 'development',
+
+            // Text tools
+            'markdown' => 'text',
+            'sentence' => 'text',
+            'camel' => 'text',
+            'pascal' => 'text',
+            'snake' => 'text',
+            'kebab' => 'text',
+            'studly' => 'text',
+            'morse' => 'text',
+            'duplicate' => 'text',
+
             // Utility tools (explicit mapping)
-            'text' => 'utilities',
             'binary' => 'utilities',
             'hex' => 'utilities',
             'decimal' => 'utilities',
-            'morse' => 'utilities',
             'ascii' => 'utilities',
-            'json' => 'utilities',
             'xml' => 'utilities',
             'sql' => 'utilities',
             'html' => 'utilities',
@@ -138,8 +158,36 @@ if (!function_exists('__tool')) {
 
         // 1. Check for specific tool exceptions first (Highest Priority)
         $exceptions = [
+            // Text Tools
+            'markdown-to-html-converter' => 'text',
+            'html-to-markdown-converter' => 'text',
+            'sentence-case-converter' => 'text',
+            'camel-case-converter' => 'text',
+            'pascal-case-converter' => 'text',
+            'snake-case-converter' => 'text',
+            'kebab-case-converter' => 'text',
+            'studly-case-converter' => 'text',
+            'text-reverser' => 'text',
+            'text-to-morse-converter' => 'text',
+            'morse-to-text-converter' => 'text',
+            'url-slug-generator' => 'text',
+            'case-converter' => 'text',
+            'duplicate-line-remover' => 'text',
+            // Development Tools
+            'rgb-hex-converter' => 'development',
+            'json-formatter' => 'development',
+            'base64-encoder-decoder' => 'development',
+            'html-viewer' => 'development',
+            'json-parser' => 'development',
+            'code-formatter' => 'development',
+            'css-minifier' => 'development',
+            'js-minifier' => 'development',
+            'html-minifier' => 'development',
+            'xml-formatter' => 'development',
+            'file-difference-checker' => 'development',
+            'cron-job-generator' => 'development',
+            'curl-command-builder' => 'development',
             // Utility Exceptions
-            'base64-encoder-decoder' => 'utilities',
             // Document Tools
             'word-to-pdf' => 'document',
             'percentage-calculator' => 'math',
