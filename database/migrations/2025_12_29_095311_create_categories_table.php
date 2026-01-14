@@ -13,10 +13,7 @@ return new class extends Migration {
             $table->string('slug')->unique();
             $table->string('type')->default('post')->index(); // 'post', 'tool'
             $table->text('description')->nullable();
-            $table->unsignedBigInteger('parent_id')->nullable();
             $table->timestamps();
-
-            $table->index('parent_id');
         });
     }
 

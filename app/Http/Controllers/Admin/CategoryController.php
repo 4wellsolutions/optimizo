@@ -17,8 +17,7 @@ class CategoryController extends Controller
      */
     public function index(Request $request)
     {
-        $query = Category::with('parent')
-            ->withCount(['tools', 'subTools']);
+        $query = Category::withCount('tools');
 
         // Search Filter
         if ($request->has('search')) {
@@ -30,24 +29,11 @@ class CategoryController extends Controller
             });
         }
 
-        // Parent Filter
-        if ($request->has('parent_id') && $request->input('parent_id') != '') {
-            $parentId = $request->input('parent_id');
-            if ($parentId == 'top') {
-                $query->whereNull('parent_id');
-            } else {
-                $query->where('parent_id', $parentId);
-            }
-        }
+
 
         $categories = $query->latest()->paginate(20);
 
-        // Fetch potential parents for the filter dropdown
-        $parents = Category::whereNull('parent_id')
-            ->orderBy('name')
-            ->get();
-
-        return view('admin.tools.categories.index', compact('categories', 'parents'));
+        return view('admin.tools.categories.index', compact('categories'));
     }
 
     /**
@@ -55,12 +41,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        // Fetch potential parents for the dropdown
-        $parents = Category::whereNull('parent_id')
-            ->orderBy('name')
-            ->get();
-
-        return view('admin.tools.categories.create', compact('parents'));
+        return view('admin.tools.categories.create');
     }
 
     /**
@@ -72,7 +53,6 @@ class CategoryController extends Controller
             'name' => 'required|string|max:255',
             'slug' => 'nullable|string|max:255|unique:categories,slug',
             'description' => 'nullable|string',
-            'parent_id' => 'nullable|exists:categories,id',
             'bg_gradient_from' => 'nullable|string|max:7',
             'bg_gradient_to' => 'nullable|string|max:7',
             'text_color' => 'nullable|string|max:50',
@@ -105,12 +85,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        $parents = Category::whereNull('parent_id')
-            ->where('id', '!=', $category->id)
-            ->orderBy('name')
-            ->get();
-
-        return view('admin.tools.categories.edit', compact('category', 'parents'));
+        return view('admin.tools.categories.edit', compact('category'));
     }
 
     /**
@@ -122,7 +97,6 @@ class CategoryController extends Controller
             'name' => 'required|string|max:255',
             'slug' => 'nullable|string|max:255|unique:categories,slug,' . $category->id,
             'description' => 'nullable|string',
-            'parent_id' => 'nullable|exists:categories,id',
             'bg_gradient_from' => 'nullable|string|max:7',
             'bg_gradient_to' => 'nullable|string|max:7',
             'text_color' => 'nullable|string|max:50',
@@ -132,9 +106,7 @@ class CategoryController extends Controller
             $validated['slug'] = Str::slug($validated['name']);
         }
 
-        if ($validated['parent_id'] == $category->id) {
-            return back()->with('error', 'Category cannot be its own parent.');
-        }
+
 
         $category->update($validated);
 
@@ -147,10 +119,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        // Check for child categories
-        if ($category->children()->count() > 0) {
-            return back()->with('error', 'Cannot delete category with subcategories. Delete them first.');
-        }
+
 
         // Check for associated tools
         if ($category->tools()->count() > 0) {

@@ -13,37 +13,24 @@ class Tool extends Model
     protected $fillable = [
         'name',
         'slug',
-        'icon_svg', // SVG markup for icon
         'icon_name', // Icon identifier
-        'description', // Tool short description
-        'description', // Tool short description
-        'category_id', // Foreign Key (Parent ID)
-        'subcategory_id', // Foreign Key (Child ID)
+        'category_id', // Foreign Key
         'controller',
         'route_name',
         'url',
         'is_active',
-        'priority',
-        'change_frequency',
         'order',
     ];
 
     protected $casts = [
         'is_active' => 'boolean',
-        'priority' => 'decimal:1',
         'order' => 'integer',
         'category_id' => 'integer',
-        'subcategory_id' => 'integer',
     ];
 
     public function categoryRelation(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Category::class, 'category_id');
-    }
-
-    public function subcategoryRelation(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(Category::class, 'subcategory_id');
     }
 
     // Scopes

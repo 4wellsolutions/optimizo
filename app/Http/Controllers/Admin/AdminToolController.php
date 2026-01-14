@@ -23,48 +23,29 @@ class AdminToolController extends Controller
 
                     // Resolve Category ID
                     $categoryId = null;
-                    $subcategoryId = null;
 
                     if (isset($toolData['category'])) {
                         $catSlug = $toolData['category'];
-                        $parent = \App\Models\Category::where('slug', $catSlug)->whereNull('parent_id')->first();
+                        $category = \App\Models\Category::where('slug', $catSlug)->first();
 
-                        if ($parent) {
-                            $categoryId = $parent->id;
-
-                            // Check for subcategory
-                            if (!empty($toolData['subcategory'])) {
-                                $subSlug = \Illuminate\Support\Str::slug($catSlug . '-' . $toolData['subcategory']);
-                                $child = \App\Models\Category::where('slug', $subSlug)
-                                    ->where('parent_id', $parent->id)
-                                    ->first();
-
-                                if ($child) {
-                                    $subcategoryId = $child->id;
-                                }
-                            }
+                        if ($category) {
+                            $categoryId = $category->id;
                         }
                     }
 
-                    // Add IDs to data
+                    // Add ID to data
                     $toolData['category_id'] = $categoryId;
-                    $toolData['subcategory_id'] = $subcategoryId;
 
                     // Filter out legacy fields that were removed from the database
                     $validFields = [
                         'name',
                         'slug',
-                        'icon_svg',
                         'icon_name',
-                        'description',
                         'category_id',
-                        'subcategory_id',
                         'controller',
                         'route_name',
                         'url',
                         'is_active',
-                        'priority',
-                        'change_frequency',
                         'order'
                     ];
 
@@ -140,9 +121,7 @@ class AdminToolController extends Controller
             }
         }
 
-        if ($request->filled('subcategory')) {
-            $query->where('subcategory_id', $request->input('subcategory'));
-        }
+
 
         // Per page filter
         $perPage = $request->input('per_page', 20);
@@ -151,7 +130,7 @@ class AdminToolController extends Controller
         }
 
         $tools = $query->orderBy('id', 'desc')
-            ->with(['categoryRelation', 'subcategoryRelation'])
+            ->with(['categoryRelation'])
             ->paginate($perPage)
             ->withQueryString();
 
@@ -160,8 +139,7 @@ class AdminToolController extends Controller
         // Or simply fetch all categories for the filter dropdown?
         // Or simply fetch all categories for the filter dropdown?
         // Let's fetch all categories that are parents.
-        $categories = \App\Models\Category::whereNull('parent_id')->orderBy('name')->get();
-        $subcategories = \App\Models\Category::whereNotNull('parent_id')->orderBy('name')->get();
+        $categories = \App\Models\Category::orderBy('name')->get();
         // Or if we want ONLY categories that are actually used:
         // $usedCategoryIds = Tool::distinct()->pluck('category_id');
         // $categories = Category::whereIn('id', $usedCategoryIds)->get();
@@ -180,28 +158,23 @@ class AdminToolController extends Controller
         $utilityTools = $utilityCat ? Tool::where('category_id', $utilityCat->id)->count() : 0;
         $youtubeTools = $youtubeCat ? Tool::where('category_id', $youtubeCat->id)->count() : 0;
 
-        return view('admin.tools.index', compact('tools', 'categories', 'subcategories', 'totalTools', 'activeTools', 'utilityTools', 'youtubeTools'));
+        return view('admin.tools.index', compact('tools', 'categories', 'totalTools', 'activeTools', 'utilityTools', 'youtubeTools'));
     }
 
     public function edit(Tool $tool)
     {
-        $categories = \App\Models\Category::whereNull('parent_id')->orderBy('name')->get();
-        $subcategories = \App\Models\Category::whereNotNull('parent_id')->with('parent')->orderBy('name')->get();
+        $categories = \App\Models\Category::orderBy('name')->get();
 
-        return view('admin.tools.edit', compact('tool', 'categories', 'subcategories'));
+        return view('admin.tools.edit', compact('tool', 'categories'));
     }
 
     public function update(Request $request, Tool $tool)
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'icon_svg' => 'nullable|string',
             'icon_name' => 'nullable|string|max:255',
             'category_id' => 'required|exists:categories,id',
-            'subcategory_id' => 'nullable|exists:categories,id',
             'url' => 'required|string|max:255|unique:tools,url,' . $tool->id,
-            'priority' => 'required|numeric|min:0|max:1',
-            'change_frequency' => 'required|in:always,hourly,daily,weekly,monthly,yearly,never',
             'is_active' => 'boolean',
             'order' => 'nullable|integer',
         ]);
@@ -238,8 +211,8 @@ class AdminToolController extends Controller
         foreach ($tools as $tool) {
             $sitemap .= '  <url>' . PHP_EOL;
             $sitemap .= '    <loc>' . url($tool->url) . '</loc>' . PHP_EOL;
-            $sitemap .= '    <changefreq>' . $tool->change_frequency . '</changefreq>' . PHP_EOL;
-            $sitemap .= '    <priority>' . $tool->priority . '</priority>' . PHP_EOL;
+            $sitemap .= '    <changefreq>weekly</changefreq>' . PHP_EOL;
+            $sitemap .= '    <priority>0.8</priority>' . PHP_EOL;
             $sitemap .= '    <lastmod>' . $tool->updated_at->format('Y-m-d') . '</lastmod>' . PHP_EOL;
             $sitemap .= '  </url>' . PHP_EOL;
         }

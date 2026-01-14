@@ -10,30 +10,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Category extends Model
 {
-    protected $fillable = ['name', 'slug', 'description', 'parent_id', 'bg_gradient_from', 'bg_gradient_to', 'text_color'];
-
-    // Removed posts() as this is now strictly for tools
+    protected $fillable = ['name', 'slug', 'description', 'bg_gradient_from', 'bg_gradient_to', 'text_color'];
 
     public function tools(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Tool::class);
-    }
-
-    // Removed scopeTools as all categories in this table are tools
-
-
-    public function parent(): BelongsTo
-    {
-        return $this->belongsTo(Category::class, 'parent_id');
-    }
-
-    public function children()
-    {
-        return $this->hasMany(Category::class, 'parent_id');
-    }
-
-    public function subTools(): \Illuminate\Database\Eloquent\Relations\HasMany
-    {
-        return $this->hasMany(Tool::class, 'subcategory_id');
     }
 }
