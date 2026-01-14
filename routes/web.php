@@ -276,7 +276,7 @@ $definePublicRoutes = function () {
         // New Text Tools
         Route::get('/duplicate-line-remover', [DuplicateRemoverController::class, 'index'])->name('duplicate-remover');
         Route::get('/xml-formatter', [XmlFormatterController::class, 'index'])->name('xml-formatter');
-        Route::get('/diff-checker', [DiffCheckerController::class, 'index'])->name('diff-checker');
+        Route::get('/file-difference-checker', [DiffCheckerController::class, 'index'])->name('file-difference-checker');
 
         // New Complex Tools
         Route::get('/cron-job-generator', [CronJobGeneratorController::class, 'index'])->name('cron-generator');

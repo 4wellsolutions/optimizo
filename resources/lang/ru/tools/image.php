@@ -160,7 +160,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Конвертер ICO',
+      'h1' => 'Конвертер ICO и Генератор Favicon',
       'subtitle' => 'Создавайте ICO favicon файлы из изображений для сайтов и приложений',
       'title' => 'ICO Конвертироватьer - Create Favicons Online | Optimizo',
       'description' => 'Конвертировать Изображениеs to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Бесплатно online favicon generator.',
@@ -230,7 +230,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Конвертер изображений',
+      'h1' => 'Конвертер Изображений',
       'subtitle' => 'Конвертируйте изображения между форматами: JPG, PNG, WebP, SVG и др. мгновенно',
       'title' => 'Изображение Конвертироватьer - Конвертировать Изображениеs Online Бесплатно | Optimizo',
       'description' => 'Конвертировать Изображениеs between multiple formats (PNG, JPG, WEBP) easily and for Бесплатно. Secure, client-side conversion requiring no uploads.',
@@ -464,7 +464,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Конвертер JPG в WEBP',
+      'h1' => 'Конвертер JPG в WebP',
       'subtitle' => 'Конвертируйте JPG в WebP для быстрой работы веб-сайта и меньших файлов',
       'title' => 'JPG to WEBP Конвертироватьer - Конвертировать Изображениеs to WebP | Optimizo',
       'description' => 'Конвертировать JPG Изображениеs to the modern WebP format for superior compression and web performance. Бесплатно online tool.',
@@ -611,7 +611,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Конвертер PNG в WEBP',
+      'h1' => 'Конвертер PNG в WebP',
       'subtitle' => 'Конвертируйте PNG в WebP для современной веб-оптимизации и лучшего сжатия',
       'title' => 'PNG to WEBP Конвертироватьer - Compress PNG to WebP | Optimizo',
       'description' => 'Конвертировать PNG Изображениеs to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.',
@@ -841,7 +841,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Конвертер WEBP в JPG',
+      'h1' => 'Конвертер WebP в JPG',
       'subtitle' => 'Конвертируйте WebP изображения в JPG для максимальной совместимости',
       'title' => 'WEBP to JPG Конвертироватьer - Конвертировать WebP to JPG Online | Optimizo',
       'description' => 'Конвертировать WebP Изображениеs to standard JPG format for broad compatibility. Бесплатно, Быстрый, and secure Конвертироватьer.',

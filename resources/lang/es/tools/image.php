@@ -160,7 +160,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Convertidor de ICO',
+      'h1' => 'Convertidor ICO y Generador de Favicon',
       'subtitle' => 'Cree archivos ICO favicon desde imágenes para sitios web y aplicaciones',
       'title' => 'ICO Convertirer - Create Favicons Online | Optimizo',
       'description' => 'Convertir Imagens to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Gratis online favicon generator.',
@@ -464,7 +464,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Convertidor de JPG a WEBP',
+      'h1' => 'Convertidor de JPG a WebP',
       'subtitle' => 'Convierta JPG a formato WebP para mejor rendimiento web y archivos más pequeños',
       'title' => 'JPG to WEBP Convertirer - Convertir Imagens to WebP | Optimizo',
       'description' => 'Convertir JPG Imagens to the modern WebP format for superior compression and web performance. Gratis online tool.',
@@ -611,7 +611,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Convertidor de PNG a WEBP',
+      'h1' => 'Convertidor de PNG a WebP',
       'subtitle' => 'Convierta PNG a WebP para optimización web moderna y mejor compresión',
       'title' => 'PNG to WEBP Convertirer - Compress PNG to WebP | Optimizo',
       'description' => 'Convertir PNG Imagens to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.',
@@ -841,7 +841,7 @@ return array (
   array (
     'meta' => 
     array (
-      'h1' => 'Convertidor de WEBP a JPG',
+      'h1' => 'Convertidor de WebP a JPG',
       'subtitle' => 'Convierta imágenes WebP a formato JPG para máxima compatibilidad',
       'title' => 'WEBP to JPG Convertirer - Convertir WebP to JPG Online | Optimizo',
       'description' => 'Convertir WebP Imagens to standard JPG format for broad compatibility. Gratis, Rápido, and secure Convertirer.',

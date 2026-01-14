@@ -1,26 +1,26 @@
 @extends('layouts.app')
 
-@section('title', __tool('diff-checker', 'meta.title'))
-@section('meta_description', __tool('diff-checker', 'meta.description'))
+@section('title', __tool('file-difference-checker', 'meta.title'))
+@section('meta_description', __tool('file-difference-checker', 'meta.description'))
 @section('content')
     <div class="max-w-7xl mx-auto">
-        <x-tool-hero :tool="$tool" icon="diff-checker" />
+        <x-tool-hero :tool="$tool" icon="file-difference-checker" />
 
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-indigo-200 mb-8">
             <div class="grid md:grid-cols-2 gap-6 mb-4">
                 <div>
                     <label for="text1"
-                        class="block text-sm font-semibold text-gray-700 mb-2">{!! __tool('diff-checker', 'editor.original_text') !!}</label>
+                        class="block text-sm font-semibold text-gray-700 mb-2">{!! __tool('file-difference-checker', 'editor.original_text') !!}</label>
                     <textarea id="text1" rows="12"
                         class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 transition-all font-mono text-sm resize-none"
-                        placeholder="{!! __tool('diff-checker', 'editor.ph_original') !!}"></textarea>
+                        placeholder="{!! __tool('file-difference-checker', 'editor.ph_original') !!}"></textarea>
                 </div>
                 <div>
                     <label for="text2"
-                        class="block text-sm font-semibold text-gray-700 mb-2">{!! __tool('diff-checker', 'editor.modified_text') !!}</label>
+                        class="block text-sm font-semibold text-gray-700 mb-2">{!! __tool('file-difference-checker', 'editor.modified_text') !!}</label>
                     <textarea id="text2" rows="12"
                         class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 transition-all font-mono text-sm resize-none"
-                        placeholder="{!! __tool('diff-checker', 'editor.ph_modified') !!}"></textarea>
+                        placeholder="{!! __tool('file-difference-checker', 'editor.ph_modified') !!}"></textarea>
                 </div>
             </div>
 
@@ -31,18 +31,80 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                     </svg>
-                    <span>{!! __tool('diff-checker', 'editor.btn_compare') !!}</span>
+                    <span>{!! __tool('file-difference-checker', 'editor.btn_compare') !!}</span>
                 </button>
             </div>
 
             <div id="diffOutput" class="hidden mb-4">
                 <label
-                    class="block text-sm font-semibold text-gray-700 mb-2">{!! __tool('diff-checker', 'editor.result_label') !!}</label>
+                    class="block text-sm font-semibold text-gray-700 mb-2">{!! __tool('file-difference-checker', 'editor.result_label') !!}</label>
                 <div id="diffResult"
                     class="w-full border-2 border-gray-200 rounded-xl bg-gray-50 font-mono text-sm overflow-x-auto"></div>
             </div>
         </div>
 
+        {{-- SEO Content --}}
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-8 md:p-12 border-2 border-indigo-100 shadow-2xl">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl shadow-xl mb-4">
+                    <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{!! __tool('file-difference-checker', 'content.hero_title') !!}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{!! __tool('file-difference-checker', 'content.hero_subtitle') !!}</p>
+            </div>
+
+            <p class="text-gray-700 leading-relaxed text-lg mb-8">
+                {!! __tool('file-difference-checker', 'content.p1') !!}
+            </p>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('file-difference-checker', 'content.features_title') !!}</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                @foreach(['visual', 'instant', 'privacy', 'unlimited', 'accurate', 'free'] as $key)
+                <div class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-indigo-300 transition-all shadow-lg hover:shadow-xl">
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('file-difference-checker', 'content.features.'.$key.'.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('file-difference-checker', 'content.features.'.$key.'.desc') !!}</p>
+                </div>
+                @endforeach
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('file-difference-checker', 'content.uses_title') !!}</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                @foreach(['code', 'document', 'config', 'merge', 'backup', 'translation'] as $key)
+                <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+                    <h4 class="font-bold text-lg text-gray-900 mb-3">{!! __tool('file-difference-checker', 'content.uses.'.$key.'.title') !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('file-difference-checker', 'content.uses.'.$key.'.desc') !!}</p>
+                </div>
+                @endforeach
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('file-difference-checker', 'content.how_title') !!}</h3>
+            <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
+                <ol class="space-y-4 text-gray-700">
+                    @for($i = 1; $i <= 4; $i++)
+                    <li class="flex items-start gap-3">
+                        <span class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">{{ $i }}</span>
+                        <div>
+                            <strong>{!! __tool('file-difference-checker', 'content.how_steps.'.$i.'.title') !!}</strong>
+                            <span>{!! __tool('file-difference-checker', 'content.how_steps.'.$i.'.desc') !!}</span>
+                        </div>
+                    </li>
+                    @endfor
+                </ol>
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('file-difference-checker', 'content.faq_title') !!}</h3>
+            <div class="space-y-4">
+                @for($i = 1; $i <= 5; $i++)
+                <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                    <h4 class="font-bold text-gray-900 mb-3 text-lg">{!! __tool('file-difference-checker', 'content.faq.q'.$i) !!}</h4>
+                    <p class="text-gray-700 leading-relaxed">{!! __tool('file-difference-checker', 'content.faq.a'.$i) !!}</p>
+                </div>
+                @endfor
+            </div>
+        </div>
 
     </div>
 
@@ -89,18 +151,13 @@
                 const outputContainer = document.getElementById('diffOutput');
 
                 if (!text1 && !text2) {
-                    alert("{!! __tool('diff-checker', 'js.error_empty') !!}");
+                    alert("{!! __tool('file-difference-checker', 'js.error_empty') !!}");
                     return;
                 }
 
                 // Simple line-based diff
                 const lines1 = text1.split('\n');
                 const lines2 = text2.split('\n');
-
-                // This is a naive diff implementation (LCS based ideally, but strict index for simplicity or a simple greedy match)
-                // For a robust diff, we'd need a library like diff-match-patch. 
-                // Since we are strictly vanilla JS with no external deps asked, I'll implement a simple comparison.
-                // Actually, I can use a simple LCS algorithm for lines.
 
                 const matrix = Array(lines1.length + 1).fill(null).map(() => Array(lines2.length + 1).fill(0));
 
