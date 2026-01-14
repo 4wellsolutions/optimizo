@@ -53,27 +53,16 @@ class CategorySeeder extends Seeder
                 ]
             };
 
-            // Parent Category (e.g., 'utility')
-            $parentCategory = Category::firstOrCreate(
+            // Create Category
+            Category::firstOrCreate(
                 ['slug' => $categorySlug],
                 [
                     'name' => ucwords(str_replace('-', ' ', $categorySlug)),
-                    'parent_id' => null,
                     'bg_gradient_from' => $colors['from'],
                     'bg_gradient_to' => $colors['to'],
                     'text_color' => $colors['text']
                 ]
             );
-
-            // Child Category (Subcategory)
-            if (!empty($data['subcategory'])) {
-                $subSlug = Str::slug($parentCategory->slug . '-' . $data['subcategory']);
-
-                Category::firstOrCreate(
-                    ['slug' => $subSlug, 'parent_id' => $parentCategory->id],
-                    ['name' => $data['subcategory']] // Removed type
-                );
-            }
         }
 
         // Seed some sample Blog Categories

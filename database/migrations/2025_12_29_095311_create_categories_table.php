@@ -13,6 +13,9 @@ return new class extends Migration {
             $table->string('slug')->unique();
             $table->string('type')->default('post')->index(); // 'post', 'tool'
             $table->text('description')->nullable();
+            $table->string('bg_gradient_from')->nullable(); // Gradient start color
+            $table->string('bg_gradient_to')->nullable(); // Gradient end color
+            $table->string('text_color')->nullable(); // Text color class
             $table->timestamps();
         });
     }
