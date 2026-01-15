@@ -23,70 +23,74 @@ use App\Http\Controllers\Tools\YouTube\{
 use App\Http\Controllers\Tools\Seo\{
     MetaAnalyzerController,
     KeywordDensityController,
-    WordCounterController,
     GoogleSerpCheckerController,
     BingSerpCheckerController,
     YahooSerpCheckerController,
     LocationController,
     OnPageSeoCheckerController,
-    BrokenLinksCheckerController
+    BrokenLinksCheckerController,
+    SlugGeneratorController
 };
 
-use App\Http\Controllers\Tools\Utility\{
-    ImageCompressorController,
-    RgbHexConverterController,
-    SlugGeneratorController,
-    InternetSpeedTestController,
-    Md5GeneratorController,
-    CaseConverterController,
-    UsernameCheckerController,
-    PasswordGeneratorController,
-    JsonFormatterController,
-    Base64Controller,
-    QrGeneratorController,
-    HtmlViewerController,
-    JsonParserController,
-    CodeFormatterController,
-    CssMinifierController,
-    JsMinifierController,
-    HtmlMinifierController,
-    UrlEncoderController,
-    HtmlEncoderController,
-    UnicodeEncoderController,
-    MarkdownToHtmlController,
-    ConverterController,
-    EncodingController,
-    DecimalBinaryController,
-    DecimalHexController,
-    BinaryHexController,
-    LoremIpsumGeneratorController,
-    RandomNumberGeneratorController,
-    UuidGeneratorController,
-    DuplicateRemoverController,
-    XmlFormatterController,
-    DiffCheckerController,
-    CronJobGeneratorController,
-    UserAgentParserController,
-    CurlBuilderController,
-    DecimalOctalController,
-    NumberBaseController,
-    JsonXmlController,
-    JsonYamlController,
-    CsvXmlController,
-    JsonSqlController,
-    TsvCsvController,
-    SentenceCaseController,
-    CamelCaseController,
-    PascalCaseController,
-    SnakeCaseController,
-    KebabCaseController,
-    StudlyCaseController,
-    TextReverserController,
-    TextToMorseController,
-    MorseToTextController,
-    DocumentConverterController,
-    SpreadsheetConverterController,
+use App\Http\Controllers\Tools\Document\{
+    DocumentConverterController
+};
+
+use App\Http\Controllers\Tools\Image\{
+    ImageToolsController,
+    ImageCompressorController
+};
+
+use App\Http\Controllers\Tools\Time\{
     TimeConverterController
+};
+
+use App\Http\Controllers\Tools\Text\{
+    WordCounterController,
+    DuplicateRemoverController,
+    DiffCheckerController,
+    TextToMorseController,
+    TextReverserController,
+    MorseToTextController,
+    LoremIpsumGeneratorController
+};
+
+use App\Http\Controllers\Tools\Utilities\{
+    PasswordGeneratorController,
+    QrGeneratorController,
+    RandomNumberGeneratorController,
+    UsernameCheckerController
+};
+
+use App\Http\Controllers\Tools\Spreadsheet\{
+    SpreadsheetConverterController,
+    TsvCsvController,
+    CsvXmlController
+};
+
+use App\Http\Controllers\Tools\Development\{
+    JsonParserController,
+    JsonFormatterController,
+    XmlFormatterController,
+    HtmlMinifierController,
+    HtmlViewerController,
+    HtmlEncoderController,
+    JsMinifierController,
+    CssMinifierController,
+    CodeFormatterController,
+    CurlBuilderController,
+    CronJobGeneratorController,
+    UuidGeneratorController,
+    Md5GeneratorController,
+    UrlEncoderController,
+    UnicodeEncoderController,
+    EncodingController,
+    Base64Controller,
+    ConverterController,
+    JsonYamlController,
+    JsonXmlController,
+    JsonSqlController,
+    MarkdownToHtmlController
 };
 
 use App\Http\Controllers\Tools\Network\{
@@ -100,10 +104,27 @@ use App\Http\Controllers\Tools\Network\{
     TracerouteController,
     PortCheckerController,
     ReverseDnsController,
-    RedirectCheckerController
+    RedirectCheckerController,
+    InternetSpeedTestController,
+    UserAgentParserController
 };
 
-use App\Http\Controllers\Tools\Converters\UnitConverterController;
+use App\Http\Controllers\Tools\Converters\{
+    UnitConverterController,
+    NumberBaseController,
+    DecimalOctalController,
+    DecimalHexController,
+    DecimalBinaryController,
+    BinaryHexController,
+    RgbHexConverterController,
+    StudlyCaseController,
+    SnakeCaseController,
+    SentenceCaseController,
+    PascalCaseController,
+    KebabCaseController,
+    CamelCaseController,
+    CaseConverterController
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -249,18 +270,18 @@ $definePublicRoutes = function () {
 
     Route::prefix('tools')->name('image.')->group(function () {
         // Image Converters
-        Route::get('/image-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'imageConverter'])->name('image-converter');
-        Route::get('/jpg-to-png-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'jpgToPng'])->name('jpg-to-png-converter');
-        Route::get('/png-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'pngToJpg'])->name('png-to-jpg-converter');
-        Route::get('/jpg-to-webp-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'jpgToWebp'])->name('jpg-to-webp-converter');
-        Route::get('/webp-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'webpToJpg'])->name('webp-to-jpg-converter');
-        Route::get('/png-to-webp-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'pngToWebp'])->name('png-to-webp-converter');
-        Route::get('/image-to-base64-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'imageToBase64'])->name('image-to-base64-converter');
-        Route::get('/base64-to-image-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'base64ToImage'])->name('base64-to-image-converter');
-        Route::get('/svg-to-png-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'svgToPng'])->name('svg-to-png-converter');
-        Route::get('/svg-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'svgToJpg'])->name('svg-to-jpg-converter');
-        Route::get('/heic-to-jpg-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'heicToJpg'])->name('heic-to-jpg-converter');
-        Route::get('/ico-converter', [App\Http\Controllers\Tools\Utility\ImageToolsController::class, 'icoConverter'])->name('ico-converter');
+        Route::get('/image-converter', [ImageToolsController::class, 'imageConverter'])->name('image-converter');
+        Route::get('/jpg-to-png-converter', [ImageToolsController::class, 'jpgToPng'])->name('jpg-to-png-converter');
+        Route::get('/png-to-jpg-converter', [ImageToolsController::class, 'pngToJpg'])->name('png-to-jpg-converter');
+        Route::get('/jpg-to-webp-converter', [ImageToolsController::class, 'jpgToWebp'])->name('jpg-to-webp-converter');
+        Route::get('/webp-to-jpg-converter', [ImageToolsController::class, 'webpToJpg'])->name('webp-to-jpg-converter');
+        Route::get('/png-to-webp-converter', [ImageToolsController::class, 'pngToWebp'])->name('png-to-webp-converter');
+        Route::get('/image-to-base64-converter', [ImageToolsController::class, 'imageToBase64'])->name('image-to-base64-converter');
+        Route::get('/base64-to-image-converter', [ImageToolsController::class, 'base64ToImage'])->name('base64-to-image-converter');
+        Route::get('/svg-to-png-converter', [ImageToolsController::class, 'svgToPng'])->name('svg-to-png-converter');
+        Route::get('/svg-to-jpg-converter', [ImageToolsController::class, 'svgToJpg'])->name('svg-to-jpg-converter');
+        Route::get('/heic-to-jpg-converter', [ImageToolsController::class, 'heicToJpg'])->name('heic-to-jpg-converter');
+        Route::get('/ico-converter', [ImageToolsController::class, 'icoConverter'])->name('ico-converter');
         Route::get('/image-compressor', [ImageCompressorController::class, 'index'])->name('image-compressor');
     });
 
@@ -358,21 +379,21 @@ $definePublicRoutes = function () {
 
     Route::prefix('tools')->name('time.')->group(function () {
         // Time Zone Converter
-        Route::get('/time-zone-converter', [App\Http\Controllers\Tools\Utility\TimeConverterController::class, 'timeZoneConverter'])->name('time-zone-converter');
+        Route::get('/time-zone-converter', [TimeConverterController::class, 'timeZoneConverter'])->name('time-zone-converter');
 
         // Epoch Time Converter
-        Route::get('/epoch-time-converter', [App\Http\Controllers\Tools\Utility\TimeConverterController::class, 'epochTimeConverter'])->name('epoch-time-converter');
+        Route::get('/epoch-time-converter', [TimeConverterController::class, 'epochTimeConverter'])->name('epoch-time-converter');
 
         // Unix Timestamp Converters
-        Route::get('/unix-timestamp-to-date', [App\Http\Controllers\Tools\Utility\TimeConverterController::class, 'unixToDate'])->name('unix-timestamp-to-date');
-        Route::get('/date-to-unix-timestamp', [App\Http\Controllers\Tools\Utility\TimeConverterController::class, 'dateToUnix'])->name('date-to-unix-timestamp');
+        Route::get('/unix-timestamp-to-date', [TimeConverterController::class, 'unixToDate'])->name('unix-timestamp-to-date');
+        Route::get('/date-to-unix-timestamp', [TimeConverterController::class, 'dateToUnix'])->name('date-to-unix-timestamp');
 
         // UTC Converters
-        Route::get('/utc-to-local-time', [App\Http\Controllers\Tools\Utility\TimeConverterController::class, 'utcToLocal'])->name('utc-to-local-time');
-        Route::get('/local-time-to-utc', [App\Http\Controllers\Tools\Utility\TimeConverterController::class, 'localToUtc'])->name('local-time-to-utc');
+        Route::get('/utc-to-local-time', [TimeConverterController::class, 'utcToLocal'])->name('utc-to-local-time');
+        Route::get('/local-time-to-utc', [TimeConverterController::class, 'localToUtc'])->name('local-time-to-utc');
 
         // Time Unit Converter
-        Route::get('/time-unit-converter', [App\Http\Controllers\Tools\Converters\UnitConverterController::class, 'time'])->name('time-unit-converter');
+        Route::get('/time-unit-converter', [UnitConverterController::class, 'time'])->name('time-unit-converter');
     });
 
     /*
@@ -383,25 +404,25 @@ $definePublicRoutes = function () {
 
     Route::prefix('tools')->name('text.')->group(function () {
         // Word Counter
-        Route::get('/word-counter', [App\Http\Controllers\Tools\Seo\WordCounterController::class, 'index'])->name('word-counter');
+        Route::get('/word-counter', [WordCounterController::class, 'index'])->name('word-counter');
 
         // Duplicate Line Remover
-        Route::get('/duplicate-line-remover', [App\Http\Controllers\Tools\Utility\DuplicateRemoverController::class, 'index'])->name('duplicate-line-remover');
+        Route::get('/duplicate-line-remover', [DuplicateRemoverController::class, 'index'])->name('duplicate-line-remover');
 
         // File Difference Checker
-        Route::get('/file-difference-checker', [App\Http\Controllers\Tools\Utility\DiffCheckerController::class, 'index'])->name('file-difference-checker');
+        Route::get('/file-difference-checker', [DiffCheckerController::class, 'index'])->name('file-difference-checker');
 
         // Text to Morse Code
-        Route::get('/text-to-morse-converter', [App\Http\Controllers\Tools\Utility\TextToMorseController::class, 'index'])->name('text-to-morse-converter');
+        Route::get('/text-to-morse-converter', [TextToMorseController::class, 'index'])->name('text-to-morse-converter');
 
         // Text Reverser
-        Route::get('/text-reverser', [App\Http\Controllers\Tools\Utility\TextReverserController::class, 'index'])->name('text-reverser');
+        Route::get('/text-reverser', [TextReverserController::class, 'index'])->name('text-reverser');
 
         // Morse Code to Text
-        Route::get('/morse-to-text-converter', [App\Http\Controllers\Tools\Utility\MorseToTextController::class, 'index'])->name('morse-to-text-converter');
+        Route::get('/morse-to-text-converter', [MorseToTextController::class, 'index'])->name('morse-to-text-converter');
 
         // Lorem Ipsum Generator
-        Route::get('/lorem-ipsum-generator', [App\Http\Controllers\Tools\Utility\LoremIpsumGeneratorController::class, 'index'])->name('lorem-ipsum-generator');
+        Route::get('/lorem-ipsum-generator', [LoremIpsumGeneratorController::class, 'index'])->name('lorem-ipsum-generator');
     });
 
     /*
@@ -412,49 +433,49 @@ $definePublicRoutes = function () {
 
     Route::prefix('tools')->name('development.')->group(function () {
         // JSON Tools
-        Route::get('/json-parser', [App\Http\Controllers\Tools\Utility\JsonParserController::class, 'index'])->name('json-parser');
-        Route::get('/json-formatter', [App\Http\Controllers\Tools\Utility\JsonFormatterController::class, 'index'])->name('json-formatter');
+        Route::get('/json-parser', [JsonParserController::class, 'index'])->name('json-parser');
+        Route::get('/json-formatter', [JsonFormatterController::class, 'index'])->name('json-formatter');
 
         // XML Tools
-        Route::get('/xml-formatter', [App\Http\Controllers\Tools\Utility\XmlFormatterController::class, 'index'])->name('xml-formatter');
+        Route::get('/xml-formatter', [XmlFormatterController::class, 'index'])->name('xml-formatter');
 
         // HTML Tools
-        Route::get('/html-minifier', [App\Http\Controllers\Tools\Utility\HtmlMinifierController::class, 'index'])->name('html-minifier');
-        Route::post('/html-minifier/process', [App\Http\Controllers\Tools\Utility\HtmlMinifierController::class, 'process'])->name('html-minifier.process');
-        Route::get('/html-viewer', [App\Http\Controllers\Tools\Utility\HtmlViewerController::class, 'index'])->name('html-viewer');
-        Route::get('/html-encoder-decoder', [App\Http\Controllers\Tools\Utility\HtmlEncoderController::class, 'index'])->name('html-encoder-decoder');
+        Route::get('/html-minifier', [HtmlMinifierController::class, 'index'])->name('html-minifier');
+        Route::post('/html-minifier/process', [HtmlMinifierController::class, 'process'])->name('html-minifier.process');
+        Route::get('/html-viewer', [HtmlViewerController::class, 'index'])->name('html-viewer');
+        Route::get('/html-encoder-decoder', [HtmlEncoderController::class, 'index'])->name('html-encoder-decoder');
 
         // JavaScript & CSS Tools
-        Route::get('/js-minifier', [App\Http\Controllers\Tools\Utility\JsMinifierController::class, 'index'])->name('js-minifier');
-        Route::post('/js-minifier/process', [App\Http\Controllers\Tools\Utility\JsMinifierController::class, 'process'])->name('js-minifier.process');
-        Route::get('/css-minifier', [App\Http\Controllers\Tools\Utility\CssMinifierController::class, 'index'])->name('css-minifier');
-        Route::post('/css-minifier/process', [App\Http\Controllers\Tools\Utility\CssMinifierController::class, 'process'])->name('css-minifier.process');
+        Route::get('/js-minifier', [JsMinifierController::class, 'index'])->name('js-minifier');
+        Route::post('/js-minifier/process', [JsMinifierController::class, 'process'])->name('js-minifier.process');
+        Route::get('/css-minifier', [CssMinifierController::class, 'index'])->name('css-minifier');
+        Route::post('/css-minifier/process', [CssMinifierController::class, 'process'])->name('css-minifier.process');
 
         // Code Formatter
-        Route::get('/code-formatter', [App\Http\Controllers\Tools\Utility\CodeFormatterController::class, 'index'])->name('code-formatter');
-        Route::post('/code-formatter/format', [App\Http\Controllers\Tools\Utility\CodeFormatterController::class, 'format'])->name('code-formatter.format');
+        Route::get('/code-formatter', [CodeFormatterController::class, 'index'])->name('code-formatter');
+        Route::post('/code-formatter/format', [CodeFormatterController::class, 'format'])->name('code-formatter.format');
 
         // Curl & Cron
-        Route::get('/curl-command-builder', [App\Http\Controllers\Tools\Utility\CurlBuilderController::class, 'index'])->name('curl-command-builder');
-        Route::get('/cron-job-generator', [App\Http\Controllers\Tools\Utility\CronJobGeneratorController::class, 'index'])->name('cron-job-generator');
+        Route::get('/curl-command-builder', [CurlBuilderController::class, 'index'])->name('curl-command-builder');
+        Route::get('/cron-job-generator', [CronJobGeneratorController::class, 'index'])->name('cron-job-generator');
 
         // Generators
-        Route::get('/uuid-generator', [App\Http\Controllers\Tools\Utility\UuidGeneratorController::class, 'index'])->name('uuid-generator');
-        Route::get('/md5-generator', [App\Http\Controllers\Tools\Utility\Md5GeneratorController::class, 'index'])->name('md5-generator');
+        Route::get('/uuid-generator', [UuidGeneratorController::class, 'index'])->name('uuid-generator');
+        Route::get('/md5-generator', [Md5GeneratorController::class, 'index'])->name('md5-generator');
 
         // Encoders/Decoders
-        Route::get('/url-encoder-decoder', [App\Http\Controllers\Tools\Utility\UrlEncoderController::class, 'index'])->name('url-encoder-decoder');
-        Route::get('/unicode-encoder-decoder', [App\Http\Controllers\Tools\Utility\UnicodeEncoderController::class, 'index'])->name('unicode-encoder-decoder');
-        Route::get('/jwt-decoder', [App\Http\Controllers\Tools\Utility\EncodingController::class, 'jwtDecode'])->name('jwt-decoder');
-        Route::get('/base64-encoder-decoder', [App\Http\Controllers\Tools\Utility\Base64Controller::class, 'index'])->name('base64-encoder-decoder');
+        Route::get('/url-encoder-decoder', [UrlEncoderController::class, 'index'])->name('url-encoder-decoder');
+        Route::get('/unicode-encoder-decoder', [UnicodeEncoderController::class, 'index'])->name('unicode-encoder-decoder');
+        Route::get('/jwt-decoder', [EncodingController::class, 'jwtDecode'])->name('jwt-decoder');
+        Route::get('/base64-encoder-decoder', [Base64Controller::class, 'index'])->name('base64-encoder-decoder');
 
         // Converters
-        Route::get('/json-to-yaml-converter', [App\Http\Controllers\Tools\Utility\ConverterController::class, 'jsonToYaml'])->name('json-to-yaml-converter');
-        Route::get('/json-to-xml-converter', [App\Http\Controllers\Tools\Utility\ConverterController::class, 'jsonToXml'])->name('json-to-xml-converter');
-        Route::get('/json-to-sql-converter', [App\Http\Controllers\Tools\Utility\ConverterController::class, 'jsonToSql'])->name('json-to-sql-converter');
-        Route::get('/markdown-to-html-converter', [App\Http\Controllers\Tools\Utility\MarkdownToHtmlController::class, 'index'])->name('markdown-to-html-converter');
-        Route::post('/markdown-to-html/convert', [App\Http\Controllers\Tools\Utility\MarkdownToHtmlController::class, 'convert'])->name('markdown-to-html-converter.convert');
-        Route::get('/html-to-markdown-converter', [App\Http\Controllers\Tools\Utility\ConverterController::class, 'htmlToMarkdown'])->name('html-to-markdown-converter');
+        Route::get('/json-to-yaml-converter', [ConverterController::class, 'jsonToYaml'])->name('json-to-yaml-converter');
+        Route::get('/json-to-xml-converter', [ConverterController::class, 'jsonToXml'])->name('json-to-xml-converter');
+        Route::get('/json-to-sql-converter', [ConverterController::class, 'jsonToSql'])->name('json-to-sql-converter');
+        Route::get('/markdown-to-html-converter', [MarkdownToHtmlController::class, 'index'])->name('markdown-to-html-converter');
+        Route::post('/markdown-to-html/convert', [MarkdownToHtmlController::class, 'convert'])->name('markdown-to-html-converter.convert');
+        Route::get('/html-to-markdown-converter', [ConverterController::class, 'htmlToMarkdown'])->name('html-to-markdown-converter');
     });
 
     /*
@@ -486,24 +507,24 @@ $definePublicRoutes = function () {
         Route::get('/length-converter', [App\Http\Controllers\Tools\Converters\UnitConverterController::class, 'length'])->name('length-converter');
 
         // Number System Converters
-        Route::get('/number-base-converter', [App\Http\Controllers\Tools\Utility\NumberBaseController::class, 'index'])->name('number-base-converter');
-        Route::get('/decimal-octal-converter', [App\Http\Controllers\Tools\Utility\DecimalOctalController::class, 'index'])->name('decimal-octal-converter');
-        Route::get('/decimal-hex-converter', [App\Http\Controllers\Tools\Utility\DecimalHexController::class, 'index'])->name('decimal-hex-converter');
-        Route::get('/decimal-binary-converter', [App\Http\Controllers\Tools\Utility\DecimalBinaryController::class, 'index'])->name('decimal-binary-converter');
-        Route::get('/binary-hex-converter', [App\Http\Controllers\Tools\Utility\BinaryHexController::class, 'index'])->name('binary-hex-converter');
-        Route::get('/ascii-converter', [App\Http\Controllers\Tools\Utility\EncodingController::class, 'asciiConvert'])->name('ascii-converter');
+        Route::get('/number-base-converter', [NumberBaseController::class, 'index'])->name('number-base-converter');
+        Route::get('/decimal-octal-converter', [DecimalOctalController::class, 'index'])->name('decimal-octal-converter');
+        Route::get('/decimal-hex-converter', [DecimalHexController::class, 'index'])->name('decimal-hex-converter');
+        Route::get('/decimal-binary-converter', [DecimalBinaryController::class, 'index'])->name('decimal-binary-converter');
+        Route::get('/binary-hex-converter', [BinaryHexController::class, 'index'])->name('binary-hex-converter');
+        Route::get('/ascii-converter', [EncodingController::class, 'asciiConvert'])->name('ascii-converter');
 
         // Color Converter
-        Route::get('/rgb-hex-converter', [App\Http\Controllers\Tools\Utility\RgbHexConverterController::class, 'index'])->name('rgb-hex-converter');
+        Route::get('/rgb-hex-converter', [RgbHexConverterController::class, 'index'])->name('rgb-hex-converter');
 
         // Case Converters
-        Route::get('/studly-case-converter', [App\Http\Controllers\Tools\Utility\StudlyCaseController::class, 'index'])->name('studly-case-converter');
-        Route::get('/snake-case-converter', [App\Http\Controllers\Tools\Utility\SnakeCaseController::class, 'index'])->name('snake-case-converter');
-        Route::get('/sentence-case-converter', [App\Http\Controllers\Tools\Utility\SentenceCaseController::class, 'index'])->name('sentence-case-converter');
-        Route::get('/pascal-case-converter', [App\Http\Controllers\Tools\Utility\PascalCaseController::class, 'index'])->name('pascal-case-converter');
-        Route::get('/kebab-case-converter', [App\Http\Controllers\Tools\Utility\KebabCaseController::class, 'index'])->name('kebab-case-converter');
-        Route::get('/camel-case-converter', [App\Http\Controllers\Tools\Utility\CamelCaseController::class, 'index'])->name('camel-case-converter');
-        Route::get('/case-converter', [App\Http\Controllers\Tools\Utility\CaseConverterController::class, 'index'])->name('case-converter');
+        Route::get('/studly-case-converter', [StudlyCaseController::class, 'index'])->name('studly-case-converter');
+        Route::get('/snake-case-converter', [SnakeCaseController::class, 'index'])->name('snake-case-converter');
+        Route::get('/sentence-case-converter', [SentenceCaseController::class, 'index'])->name('sentence-case-converter');
+        Route::get('/pascal-case-converter', [PascalCaseController::class, 'index'])->name('pascal-case-converter');
+        Route::get('/kebab-case-converter', [KebabCaseController::class, 'index'])->name('kebab-case-converter');
+        Route::get('/camel-case-converter', [CamelCaseController::class, 'index'])->name('camel-case-converter');
+        Route::get('/case-converter', [CaseConverterController::class, 'index'])->name('case-converter');
     });
 
     /*
@@ -514,35 +535,35 @@ $definePublicRoutes = function () {
 
     Route::prefix('tools')->name('spreadsheet.')->group(function () {
         // CSV to SQL
-        Route::get('/csv-to-sql', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'index'])->defaults('tool', 'csv-to-sql')->name('csv-to-sql');
-        Route::post('/csv-to-sql', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'csv-to-sql')->name('csv-to-sql.convert');
+        Route::get('/csv-to-sql', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'csv-to-sql')->name('csv-to-sql');
+        Route::post('/csv-to-sql', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'csv-to-sql')->name('csv-to-sql.convert');
 
         // Google Sheets to Excel
-        Route::get('/google-sheets-to-excel', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'index'])->defaults('tool', 'google-sheets-to-excel')->name('google-sheets-to-excel');
-        Route::post('/google-sheets-to-excel', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'google-sheets-to-excel')->name('google-sheets-to-excel.convert');
+        Route::get('/google-sheets-to-excel', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'google-sheets-to-excel')->name('google-sheets-to-excel');
+        Route::post('/google-sheets-to-excel', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'google-sheets-to-excel')->name('google-sheets-to-excel.convert');
 
         // XLSX to XLS
-        Route::get('/xlsx-to-xls', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'index'])->defaults('tool', 'xlsx-to-xls')->name('xlsx-to-xls');
-        Route::post('/xlsx-to-xls', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'xlsx-to-xls')->name('xlsx-to-xls.convert');
+        Route::get('/xlsx-to-xls', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'xlsx-to-xls')->name('xlsx-to-xls');
+        Route::post('/xlsx-to-xls', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'xlsx-to-xls')->name('xlsx-to-xls.convert');
 
         // XLS to XLSX
-        Route::get('/xls-to-xlsx', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'index'])->defaults('tool', 'xls-to-xlsx')->name('xls-to-xlsx');
-        Route::post('/xls-to-xlsx', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'xls-to-xlsx')->name('xls-to-xlsx.convert');
+        Route::get('/xls-to-xlsx', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'xls-to-xlsx')->name('xls-to-xlsx');
+        Route::post('/xls-to-xlsx', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'xls-to-xlsx')->name('xls-to-xlsx.convert');
 
         // CSV to Excel
-        Route::get('/csv-to-excel', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'index'])->defaults('tool', 'csv-to-excel')->name('csv-to-excel');
-        Route::post('/csv-to-excel', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'csv-to-excel')->name('csv-to-excel.convert');
+        Route::get('/csv-to-excel', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'csv-to-excel')->name('csv-to-excel');
+        Route::post('/csv-to-excel', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'csv-to-excel')->name('csv-to-excel.convert');
 
         // Excel to CSV
-        Route::get('/excel-to-csv', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'index'])->defaults('tool', 'excel-to-csv')->name('excel-to-csv');
-        Route::post('/excel-to-csv', [App\Http\Controllers\Tools\Utility\SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'excel-to-csv')->name('excel-to-csv.convert');
+        Route::get('/excel-to-csv', [SpreadsheetConverterController::class, 'index'])->defaults('tool', 'excel-to-csv')->name('excel-to-csv');
+        Route::post('/excel-to-csv', [SpreadsheetConverterController::class, 'convert'])->defaults('tool', 'excel-to-csv')->name('excel-to-csv.convert');
 
         // TSV to CSV
-        Route::get('/tsv-to-csv-converter', [App\Http\Controllers\Tools\Utility\TsvCsvController::class, 'index'])->name('tsv-to-csv-converter');
-        Route::post('/tsv-to-csv-converter', [App\Http\Controllers\Tools\Utility\TsvCsvController::class, 'convert'])->name('tsv-to-csv-converter.convert');
+        Route::get('/tsv-to-csv-converter', [TsvCsvController::class, 'index'])->name('tsv-to-csv-converter');
+        Route::post('/tsv-to-csv-converter', [TsvCsvController::class, 'convert'])->name('tsv-to-csv-converter.convert');
 
         // CSV to XML
-        Route::get('/csv-to-xml-converter', [App\Http\Controllers\Tools\Utility\CsvXmlController::class, 'index'])->name('csv-to-xml-converter');
+        Route::get('/csv-to-xml-converter', [CsvXmlController::class, 'index'])->name('csv-to-xml-converter');
     });
 
 
