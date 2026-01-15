@@ -16,6 +16,58 @@ return [
     // Network Category
     'network_title' => 'Herramientas de Red',
     'network_subtitle' => 'Herramientas de red profesionales para diagnósticos y análisis - 100% gratis, sin registro',
+    'network_meta_title' => 'Herramientas de Red - Diagnóstico de Red Gratis | Optimizo',
+    'network_meta_description' => 'Herramientas de red gratuitas incluyendo búsqueda de IP, búsqueda DNS, prueba de ping, traceroute y más. Diagnóstico de red profesional.',
+    'network_h1' => 'Herramientas de Red',
+
+    // Image Category
+    'image_title' => 'Herramientas de Imagen',
+    'image_subtitle' => 'Herramientas profesionales de conversión y optimización de imágenes - 100% gratis, sin registro',
+    'image_meta_title' => 'Herramientas de Imagen - Convertidores de Imagen Gratis | Optimizo',
+    'image_meta_description' => 'Herramientas de imagen gratuitas incluyendo convertidores de formato, compresores y más. Convierte JPG, PNG, WebP, SVG y otros formatos al instante.',
+    'image_h1' => 'Herramientas de Imagen',
+
+    // Document Category
+    'document_title' => 'Herramientas de Documentos',
+    'document_subtitle' => 'Herramientas profesionales de conversión de documentos - 100% gratis, sin registro',
+    'document_meta_title' => 'Herramientas de Documentos - Convertidores PDF Gratis | Optimizo',
+    'document_meta_description' => 'Herramientas de documentos gratuitas incluyendo convertidores PDF, Word a PDF, Excel a PDF y más. Conversión de documentos profesional.',
+    'document_h1' => 'Herramientas de Documentos',
+
+    // Time Category
+    'time_title' => 'Herramientas de Tiempo',
+    'time_subtitle' => 'Herramientas profesionales de conversión de tiempo y zona horaria - 100% gratis, sin registro',
+    'time_meta_title' => 'Herramientas de Tiempo - Convertidores de Zona Horaria Gratis | Optimizo',
+    'time_meta_description' => 'Herramientas de tiempo gratuitas incluyendo convertidores de zona horaria, convertidores de marca de tiempo Unix, convertidores UTC y más.',
+    'time_h1' => 'Herramientas de Tiempo',
+
+    // Text Category
+    'text_title' => 'Herramientas de Texto',
+    'text_subtitle' => 'Herramientas profesionales de manipulación y análisis de texto - 100% gratis, sin registro',
+    'text_meta_title' => 'Herramientas de Texto - Manipulación de Texto Gratis | Optimizo',
+    'text_meta_description' => 'Herramientas de texto gratuitas incluyendo contador de palabras, eliminador de duplicados, inversor de texto y más. Manipulación de texto profesional.',
+    'text_h1' => 'Herramientas de Texto',
+
+    // Development Category
+    'development_title' => 'Herramientas de Desarrollo',
+    'development_subtitle' => 'Herramientas profesionales de desarrollo para programadores - 100% gratis, sin registro',
+    'development_meta_title' => 'Herramientas de Desarrollo - Herramientas para Desarrolladores Gratis | Optimizo',
+    'development_meta_description' => 'Herramientas de desarrollo gratuitas incluyendo formateador JSON, minificadores de código, codificadores/decodificadores y más. Herramientas esenciales para desarrolladores web.',
+    'development_h1' => 'Herramientas de Desarrollo',
+
+    // Converters Category
+    'converters_title' => 'Convertidores',
+    'converters_subtitle' => 'Convertidores profesionales de unidades y formatos - 100% gratis, sin registro',
+    'converters_meta_title' => 'Convertidores - Convertidores de Unidades Gratis | Optimizo',
+    'converters_meta_description' => 'Convertidores gratuitos incluyendo convertidores de unidades, convertidores de sistemas numéricos, convertidores de mayúsculas y más.',
+    'converters_h1' => 'Convertidores',
+
+    // Spreadsheet Category
+    'spreadsheet_title' => 'Herramientas de Hojas de Cálculo',
+    'spreadsheet_subtitle' => 'Herramientas profesionales de conversión de hojas de cálculo - 100% gratis, sin registro',
+    'spreadsheet_meta_title' => 'Herramientas de Hojas de Cálculo - Convertidores Excel Gratis | Optimizo',
+    'spreadsheet_meta_description' => 'Herramientas de hojas de cálculo gratuitas incluyendo convertidores Excel, convertidores CSV y más. Conversión de hojas de cálculo profesional.',
+    'spreadsheet_h1' => 'Herramientas de Hojas de Cálculo',
 
     // Common Category Elements
     'free_tools' => 'Herramientas Gratuitas',
@@ -44,7 +96,6 @@ return [
     'utility_data_format_converters_title' => 'Formatos de Datos',
     'utility_text_string_converters_title' => 'Conversión de Texto',
     'utility_text_content_tools_title' => 'Herramientas de Contenido de Texto',
-    'utility_encoding_decoding_tools_title' => 'Codificación y Decodificación',
     'utility_encodingdecoding_tools_title' => 'Codificación y Decodificación',
     'utility_generator_tools_title' => 'Herramientas Generadoras',
     'utility_network_tools_title' => 'Herramientas de Red',

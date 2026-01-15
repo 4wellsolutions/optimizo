@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Category extends Model
 {
-    protected $fillable = ['name', 'slug', 'description', 'bg_gradient_from', 'bg_gradient_to', 'text_color'];
+    protected $fillable = ['name', 'slug', 'description', 'bg_gradient_from', 'bg_gradient_to', 'text_color', 'is_active'];
 
     public function tools(): \Illuminate\Database\Eloquent\Relations\HasMany
     {

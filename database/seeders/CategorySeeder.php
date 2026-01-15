@@ -46,6 +46,11 @@ class CategorySeeder extends Seeder
                     'to' => '#6d28d9',   // violet-700
                     'text' => 'text-violet-600'
                 ],
+                'image' => [
+                    'from' => '#f97316', // orange-500
+                    'to' => '#c2410c',   // orange-700
+                    'text' => 'text-orange-600'
+                ],
                 default => [ // Other
                     'from' => '#6b7280', // gray-500
                     'to' => '#374151',   // gray-700

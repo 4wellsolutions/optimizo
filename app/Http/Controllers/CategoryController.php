@@ -26,6 +26,41 @@ class CategoryController extends Controller
         return $this->showCategory('network');
     }
 
+    public function image()
+    {
+        return $this->showCategory('image');
+    }
+
+    public function document()
+    {
+        return $this->showCategory('document');
+    }
+
+    public function time()
+    {
+        return $this->showCategory('time');
+    }
+
+    public function text()
+    {
+        return $this->showCategory('text');
+    }
+
+    public function development()
+    {
+        return $this->showCategory('development');
+    }
+
+    public function converters()
+    {
+        return $this->showCategory('converters');
+    }
+
+    public function spreadsheet()
+    {
+        return $this->showCategory('spreadsheet');
+    }
+
     private function showCategory($slug)
     {
         $category = \App\Models\Category::where('slug', $slug)->firstOrFail();

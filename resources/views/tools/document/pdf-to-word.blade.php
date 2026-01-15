@@ -15,7 +15,7 @@
             <p class="text-lg text-gray-600">{{ __tool('pdf-to-word', 'form.upload_subtitle') }}</p>
         </div>
 
-        <form id="converterForm" action="{{ route('utility.pdf-to-word.process') }}" enctype="multipart/form-data" class="space-y-8">
+        <form id="converterForm" action="{{ route('document.pdf-to-word.process') }}" enctype="multipart/form-data" class="space-y-8">
             @csrf
 
             <div class="border-4 border-dashed border-blue-100 rounded-3xl p-10 text-center hover:border-blue-300 hover:bg-blue-50 transition-all cursor-pointer relative group bg-gray-50/50"

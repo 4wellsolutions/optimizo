@@ -14,7 +14,7 @@
             <p class="text-lg text-gray-600">{{ __tool('ppt-to-pdf', 'form.upload_subtitle') }}</p>
         </div>
 
-        <form id="converterForm" action="{{ route('utility.ppt-to-pdf.process') }}" enctype="multipart/form-data" class="space-y-8">
+        <form id="converterForm" action="{{ route('document.ppt-to-pdf.process') }}" enctype="multipart/form-data" class="space-y-8">
             @csrf
 
             <div class="border-4 border-dashed border-orange-100 rounded-3xl p-10 text-center hover:border-orange-300 hover:bg-orange-50 transition-all cursor-pointer relative group bg-gray-50/50"

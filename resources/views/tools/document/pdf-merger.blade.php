@@ -14,7 +14,7 @@
             <p class="text-lg text-gray-600">{{ __tool('pdf-merger', 'form.upload_subtitle') }}</p>
         </div>
 
-        <form id="converterForm" action="{{ route('utility.pdf-merger.process') }}" enctype="multipart/form-data" class="space-y-8">
+        <form id="converterForm" action="{{ route('document.pdf-merger.process') }}" enctype="multipart/form-data" class="space-y-8">
             @csrf
 
             <div class="border-4 border-dashed border-indigo-100 rounded-3xl p-10 text-center hover:border-indigo-300 hover:bg-indigo-50 transition-all cursor-pointer relative group bg-gray-50/50"

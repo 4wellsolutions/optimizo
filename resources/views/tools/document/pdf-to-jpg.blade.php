@@ -16,7 +16,7 @@
             <p class="text-lg text-gray-600">{{ __tool('pdf-to-jpg', 'form.upload_subtitle') }}</p>
         </div>
 
-        <form id="converterForm" action="{{ route('utility.pdf-to-jpg.process') }}" enctype="multipart/form-data" class="space-y-8">
+        <form id="converterForm" action="{{ route('document.pdf-to-jpg.process') }}" enctype="multipart/form-data" class="space-y-8">
             @csrf
 
             <div class="border-4 border-dashed border-amber-100 rounded-3xl p-10 text-center hover:border-amber-300 hover:bg-amber-50 transition-all cursor-pointer relative group bg-gray-50/50"

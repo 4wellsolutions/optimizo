@@ -1,6 +1,6 @@
 <?php
 
-return array (
+return array(
   'youtube_channel_tools_title' => 'Инструменты канала YouTube',
   'youtube_monetization_analytics_title' => 'Монетизация и аналитика',
   'youtube_video_tools_title' => 'Видео инструменты',
@@ -9,9 +9,60 @@ return array (
   'seo_subtitle' => 'Профессиональные инструменты SEO для оптимизации контента - 100% бесплатно, регистрация не требуется',
   'utility_title' => 'Утилиты',
   'utility_subtitle' => 'Необходимые инструменты для разработчиков и дизайнеров - 100% бесплатно, регистрация не требуется',
-  'utility_encodingdecoding_tools_title' => 'Кодирование и декодирование',
   'network_title' => 'Сетевые инструменты',
   'network_subtitle' => 'Профессиональные сетевые инструменты для диагностики и анализа - 100% бесплатно, регистрация не требуется',
+  'network_meta_title' => 'Сетевые инструменты - Бесплатная сетевая диагностика | Optimizo',
+  'network_meta_description' => 'Бесплатные сетевые инструменты, включая поиск IP, поиск DNS, тест ping, traceroute и многое другое.',
+  'network_h1' => 'Сетевые инструменты',
+
+  // Image Category
+  'image_title' => 'Инструменты для изображений',
+  'image_subtitle' => 'Профессиональные инструменты для конвертации и оптимизации изображений - 100% бесплатно, регистрация не требуется',
+  'image_meta_title' => 'Инструменты для изображений - Бесплатные конвертеры изображений | Optimizo',
+  'image_meta_description' => 'Бесплатные инструменты для изображений, включая конвертеры форматов, компрессоры и многое другое. Конвертируйте JPG, PNG, WebP, SVG и другие форматы мгновенно.',
+  'image_h1' => 'Инструменты для изображений',
+
+  // Document Category
+  'document_title' => 'Инструменты для документов',
+  'document_subtitle' => 'Профессиональные инструменты для конвертации документов - 100% бесплатно, регистрация не требуется',
+  'document_meta_title' => 'Инструменты для документов - Бесплатные PDF конвертеры | Optimizo',
+  'document_meta_description' => 'Бесплатные инструменты для документов, включая PDF конвертеры, Word в PDF, Excel в PDF и многое другое.',
+  'document_h1' => 'Инструменты для документов',
+
+  // Time Category
+  'time_title' => 'Инструменты времени',
+  'time_subtitle' => 'Профессиональные инструменты для конвертации времени и часовых поясов - 100% бесплатно, регистрация не требуется',
+  'time_meta_title' => 'Инструменты времени - Бесплатные конвертеры часовых поясов | Optimizo',
+  'time_meta_description' => 'Бесплатные инструменты времени, включая конвертеры часовых поясов, Unix timestamp, UTC и многое другое.',
+  'time_h1' => 'Инструменты времени',
+
+  // Text Category
+  'text_title' => 'Текстовые инструменты',
+  'text_subtitle' => 'Профессиональные инструменты для манипуляции и анализа текста - 100% бесплатно, регистрация не требуется',
+  'text_meta_title' => 'Текстовые инструменты - Бесплатная обработка текста | Optimizo',
+  'text_meta_description' => 'Бесплатные текстовые инструменты, включая счетчик слов, удаление дубликатов, реверс текста и многое другое.',
+  'text_h1' => 'Текстовые инструменты',
+
+  // Development Category
+  'development_title' => 'Инструменты разработки',
+  'development_subtitle' => 'Профессиональные инструменты разработки для программистов - 100% бесплатно, регистрация не требуется',
+  'development_meta_title' => 'Инструменты разработки - Бесплатные инструменты для разработчиков | Optimizo',
+  'development_meta_description' => 'Бесплатные инструменты разработки, включая JSON форматтер, минификаторы кода, кодировщики/декодеры и многое другое.',
+  'development_h1' => 'Инструменты разработки',
+
+  // Converters Category
+  'converters_title' => 'Конвертеры',
+  'converters_subtitle' => 'Профессиональные конвертеры единиц и форматов - 100% бесплатно, регистрация не требуется',
+  'converters_meta_title' => 'Конвертеры - Бесплатные конвертеры единиц | Optimizo',
+  'converters_meta_description' => 'Бесплатные конвертеры, включая конвертеры единиц, систем счисления, регистра и многое другое.',
+  'converters_h1' => 'Конвертеры',
+
+  // Spreadsheet Category
+  'spreadsheet_title' => 'Инструменты для таблиц',
+  'spreadsheet_subtitle' => 'Профессиональные инструменты для конвертации таблиц - 100% бесплатно, регистрация не требуется',
+  'spreadsheet_meta_title' => 'Инструменты для таблиц - Бесплатные Excel конвертеры | Optimizo',
+  'spreadsheet_meta_description' => 'Бесплатные инструменты для таблиц, включая Excel конвертеры, CSV конвертеры и многое другое.',
+  'spreadsheet_h1' => 'Инструменты для таблиц',
   'free_tools' => 'Бесплатные инструменты',
   'free_forever' => '100% бесплатно навсегда',
   'instant_access' => 'Мгновенный доступ',
@@ -29,7 +80,7 @@ return array (
   'utility_security_tools_title' => 'Security Инструменты',
   'utility_social_tools_title' => 'Social Инструменты',
   'utility_text_tools_title' => 'Text Инструменты',
-  'utility_encoding_decoding_tools_title' => 'Encoding & Decoding',
+  'utility_encodingdecoding_tools_title' => 'Кодирование и декодирование',
   'utility_number_system_converters_title' => 'Number Systems',
   'utility_data_format_converters_title' => 'Data Formats',
   'utility_text_string_converters_title' => 'Text Conversion',

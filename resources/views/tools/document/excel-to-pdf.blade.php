@@ -17,7 +17,7 @@
             <p class="text-lg text-gray-600">{{ __tool('excel-to-pdf', 'form.upload_subtitle') }}</p>
         </div>
 
-        <form id="converterForm" action="{{ route('utility.excel-to-pdf.process') }}" enctype="multipart/form-data" class="space-y-8">
+        <form id="converterForm" action="{{ route('document.excel-to-pdf.process') }}" enctype="multipart/form-data" class="space-y-8">
             @csrf
 
             <div class="border-4 border-dashed border-green-100 rounded-3xl p-10 text-center hover:border-green-300 hover:bg-green-50 transition-all cursor-pointer relative group bg-gray-50/50"

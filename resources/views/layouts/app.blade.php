@@ -52,6 +52,9 @@
     <!-- Notification System -->
     <link rel="stylesheet" href="{{ asset('css/notification-system.css') }}">
 
+    <!-- Alpine.js for dropdown functionality -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -95,13 +98,78 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="{{ localeRoute('home') }}" class="nav-link">{{ __('navigation.home') }}</a>
-                    <a href="{{ localeRoute('category.youtube') }}"
-                        class="nav-link">{{ __('navigation.youtube_tools') }}</a>
-                    <a href="{{ localeRoute('category.seo') }}" class="nav-link">{{ __('navigation.seo_tools') }}</a>
-                    <a href="{{ localeRoute('category.utility') }}"
-                        class="nav-link">{{ __('navigation.utility_tools') }}</a>
-                    <a href="{{ localeRoute('category.network') }}"
-                        class="nav-link">{{ __('navigation.network_tools') }}</a>
+
+                    <!-- Categories Dropdown -->
+                    <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                        <button @click="open = !open"
+                            class="nav-link inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 rounded-lg hover:bg-gray-50 transition-all duration-200">
+                            <span>{{ __('navigation.categories') }}</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 translate-y-1"
+                            x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150"
+                            x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-1"
+                            class="absolute left-0 mt-2 w-56 rounded-xl shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
+                            style="display: none;">
+                            <div class="py-2">
+                                @php
+                                    $categories = \App\Models\Category::where('is_active', true)
+                                        ->orderBy('name')
+                                        ->get();
+                                @endphp
+                                @foreach($categories as $category)
+                                    <a href="{{ localeRoute('category.' . $category->slug) }}"
+                                        class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-gradient-to-r transition-all duration-200 group"
+                                        style="--tw-gradient-from: {{ $category->bg_gradient_from }}15; --tw-gradient-to: {{ $category->bg_gradient_to }}15;"
+                                        onmouseover="this.style.background='linear-gradient(to right, {{ $category->bg_gradient_from }}15, {{ $category->bg_gradient_to }}15)'"
+                                        onmouseout="this.style.background=''">
+                                        <div class="w-8 h-8 rounded-lg mr-3 flex items-center justify-center transition-all duration-200"
+                                            style="background: linear-gradient(to bottom right, {{ $category->bg_gradient_from }}, {{ $category->bg_gradient_to }});">
+                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                @if($category->slug == 'youtube')
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+                                                @elseif($category->slug == 'seo')
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z" />
+                                                @elseif($category->slug == 'utility')
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                                @elseif($category->slug == 'network')
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                                                @elseif($category->slug == 'image')
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                                @else
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                                @endif
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium group-hover:"
+                                                style="color: {{ $category->bg_gradient_to }};">{{ $category->name }}</div>
+                                            <div class="text-xs text-gray-500">{{ $category->tools()->count() }} tools</div>
+                                        </div>
+                                    </a>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Language Switcher -->
                     <div class="ml-2">
@@ -141,13 +209,55 @@
 
             <div class="px-4 py-3 space-y-1">
                 <a href="{{ localeRoute('home') }}" class="block nav-link">{{ __('navigation.home') }}</a>
-                <a href="{{ localeRoute('category.youtube') }}"
-                    class="block nav-link">{{ __('navigation.youtube_tools') }}</a>
-                <a href="{{ localeRoute('category.seo') }}" class="block nav-link">{{ __('navigation.seo_tools') }}</a>
-                <a href="{{ localeRoute('category.utility') }}"
-                    class="block nav-link">{{ __('navigation.utility_tools') }}</a>
-                <a href="{{ localeRoute('category.network') }}"
-                    class="block nav-link">{{ __('navigation.network_tools') }}</a>
+
+                <!-- Categories Section -->
+                <div class="pt-2 pb-1">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 py-2">
+                        {{ __('navigation.categories') }}
+                    </div>
+                    @php
+                        $categories = \App\Models\Category::where('is_active', true)
+                            ->orderBy('name')
+                            ->get();
+                    @endphp
+                    @foreach($categories as $category)
+                        <a href="{{ localeRoute('category.' . $category->slug) }}"
+                            class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200">
+                            <div class="w-8 h-8 rounded-lg mr-3 flex items-center justify-center"
+                                style="background: linear-gradient(to bottom right, {{ $category->bg_gradient_from }}, {{ $category->bg_gradient_to }});">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    @if($category->slug == 'youtube')
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+                                    @elseif($category->slug == 'seo')
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z" />
+                                    @elseif($category->slug == 'utility')
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    @elseif($category->slug == 'network')
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                                    @elseif($category->slug == 'image')
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    @else
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                    @endif
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-medium">{{ $category->name }}</div>
+                                <div class="text-xs text-gray-500">{{ $category->tools()->count() }} tools</div>
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
 
                 <!-- Language Switcher -->
                 <div class="pt-2">
