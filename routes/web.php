@@ -449,9 +449,9 @@ $definePublicRoutes = function () {
         Route::get('/base64-encoder-decoder', [App\Http\Controllers\Tools\Utility\Base64Controller::class, 'index'])->name('base64-encoder-decoder');
 
         // Converters
-        Route::get('/json-to-yaml-converter', [App\Http\Controllers\Tools\Utility\JsonYamlController::class, 'index'])->name('json-to-yaml-converter');
-        Route::get('/json-to-xml-converter', [App\Http\Controllers\Tools\Utility\JsonXmlController::class, 'index'])->name('json-to-xml-converter');
-        Route::get('/json-to-sql-converter', [App\Http\Controllers\Tools\Utility\JsonSqlController::class, 'index'])->name('json-to-sql-converter');
+        Route::get('/json-to-yaml-converter', [App\Http\Controllers\Tools\Utility\ConverterController::class, 'jsonToYaml'])->name('json-to-yaml-converter');
+        Route::get('/json-to-xml-converter', [App\Http\Controllers\Tools\Utility\ConverterController::class, 'jsonToXml'])->name('json-to-xml-converter');
+        Route::get('/json-to-sql-converter', [App\Http\Controllers\Tools\Utility\ConverterController::class, 'jsonToSql'])->name('json-to-sql-converter');
         Route::get('/markdown-to-html-converter', [App\Http\Controllers\Tools\Utility\MarkdownToHtmlController::class, 'index'])->name('markdown-to-html-converter');
         Route::post('/markdown-to-html/convert', [App\Http\Controllers\Tools\Utility\MarkdownToHtmlController::class, 'convert'])->name('markdown-to-html-converter.convert');
         Route::get('/html-to-markdown-converter', [App\Http\Controllers\Tools\Utility\ConverterController::class, 'htmlToMarkdown'])->name('html-to-markdown-converter');

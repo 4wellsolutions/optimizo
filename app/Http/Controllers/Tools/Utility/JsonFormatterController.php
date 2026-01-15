@@ -10,6 +10,6 @@ class JsonFormatterController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'json-formatter')->firstOrFail();
-        return view('tools.utility.json-formatter', compact('tool'));
+        return view('tools.development.json-formatter', compact('tool'));
     }
 }

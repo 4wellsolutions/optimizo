@@ -296,7 +296,7 @@
                     return;
                 }
 
-                fetch('{{ route('utility.markdown-to-html.convert') }}', {
+                fetch('{{ route('development.markdown-to-html-converter.convert') }}', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

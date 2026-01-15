@@ -10,6 +10,6 @@ class UnicodeEncoderController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'unicode-encoder-decoder')->firstOrFail();
-        return view('tools.utility.unicode-encoder-decoder', compact('tool'));
+        return view('tools.development.unicode-encoder-decoder', compact('tool'));
     }
 }

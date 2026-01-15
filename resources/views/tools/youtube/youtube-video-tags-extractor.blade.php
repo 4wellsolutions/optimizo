@@ -185,7 +185,7 @@
 
             // AJAX Request
             $.ajax({
-                url: '{{ route("youtube.video-tags.extract") }}',
+                url: '{{ route("youtube.youtube-video-tags-extractor.extract") }}',
                 method: 'POST',
                 data: {
                     _token: '{{ csrf_token() }}',

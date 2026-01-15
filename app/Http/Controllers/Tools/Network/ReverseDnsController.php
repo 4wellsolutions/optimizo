@@ -10,7 +10,7 @@ class ReverseDnsController extends Controller
 {
     public function index()
     {
-        $tool = Tool::where('slug', 'reverse-dns')->firstOrFail();
+        $tool = Tool::where('slug', 'reverse-dns-lookup')->firstOrFail();
         return view('tools.network.reverse-dns', compact('tool'));
     }
 

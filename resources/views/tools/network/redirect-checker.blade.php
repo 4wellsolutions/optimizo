@@ -370,7 +370,7 @@
 
         async function runCanonicalCheck(url) {
             try {
-                const response = await fetch('{{ route('network.redirect-checker.canonical') }}', {
+                const response = await fetch('{{ route('seo.redirect-checker.canonical') }}', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -421,7 +421,7 @@
                     if (!checkUrl.match(/^https?:\/\//i)) checkUrl = 'https://' + checkUrl;
 
                     // Call standard check API
-                    const response = await fetch('{{ route('network.redirect-checker.check') }}', {
+                    const response = await fetch('{{ route('seo.redirect-checker.check') }}', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

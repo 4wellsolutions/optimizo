@@ -330,7 +330,7 @@
 
                 // AJAX Request
                 $.ajax({
-                    url: '{{ route('youtube.thumbnail.download') }}',
+                    url: '{{ route('youtube.youtube-thumbnail-downloader.download') }}',
                     method: 'POST',
                     data: {
                         _token: '{{ csrf_token() }}',

@@ -178,7 +178,11 @@
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-to-sql-converter', 'content.how_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8 shadow-lg">
                 <ol class="space-y-4">
-                    @foreach(__tool('json-to-sql-converter', 'content.how_steps') as $step)
+                    @php 
+                        $howSteps = __tool('json-to-sql-converter', 'content.how_steps');
+                        $howSteps = is_array($howSteps) ? $howSteps : [];
+                    @endphp
+                    @foreach($howSteps as $step)
                         <li class="flex items-start">
                             <span
                                 class="flex-shrink-0 w-8 h-8 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold mr-3">{{ $loop->iteration }}</span>
@@ -211,7 +215,11 @@
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('json-to-sql-converter', 'content.tips_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
                 <ul class="space-y-3">
-                    @foreach(__tool('json-to-sql-converter', 'content.tips_list') as $tip)
+                    @php 
+                        $tipsList = __tool('json-to-sql-converter', 'content.tips_list');
+                        $tipsList = is_array($tipsList) ? $tipsList : [];
+                    @endphp
+                    @foreach($tipsList as $tip)
                         <li class="flex items-start">
                             <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">

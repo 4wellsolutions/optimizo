@@ -290,7 +290,7 @@
 
             // AJAX Request
             $.ajax({
-                url: '{{ route("youtube.extractor.extract") }}',
+                url: '{{ route("youtube.youtube-video-data-extractor.extract") }}',
                 method: 'POST',
                 data: {
                     _token: '{{ csrf_token() }}',

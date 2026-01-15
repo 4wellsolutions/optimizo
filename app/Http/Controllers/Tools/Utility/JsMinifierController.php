@@ -11,7 +11,7 @@ class JsMinifierController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'js-minifier')->firstOrFail();
-        return view('tools.utility.js-minifier', compact('tool'));
+        return view('tools.development.js-minifier', compact('tool'));
     }
 
     public function process(Request $request)

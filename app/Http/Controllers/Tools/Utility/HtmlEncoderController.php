@@ -10,6 +10,6 @@ class HtmlEncoderController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'html-encoder-decoder')->firstOrFail();
-        return view('tools.utility.html-encoder-decoder', compact('tool'));
+        return view('tools.development.html-encoder-decoder', compact('tool'));
     }
 }

@@ -12,6 +12,6 @@ class ImageCompressorController extends Controller
     {
         $tool = Tool::where('slug', 'image-compressor')->firstOrFail();
 
-        return view('tools.image-compressor', compact('tool'));
+        return view('tools.image.image-compressor', compact('tool'));
     }
 }

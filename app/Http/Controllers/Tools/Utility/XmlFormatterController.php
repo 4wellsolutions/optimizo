@@ -10,6 +10,6 @@ class XmlFormatterController extends Controller
     public function index()
     {
         $tool = \App\Models\Tool::where('slug', 'xml-formatter')->first();
-        return view('tools.utility.xml-formatter', compact('tool'));
+        return view('tools.development.xml-formatter', compact('tool'));
     }
 }

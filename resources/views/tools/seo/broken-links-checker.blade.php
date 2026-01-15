@@ -522,7 +522,7 @@
             try {
                 // Phase 1: Extract
                 const formData = new FormData(form);
-                const extractResponse = await fetch("{{ route('seo.broken-links.extract') }}", {
+                const extractResponse = await fetch("{{ route('seo.broken-links-checker.extract') }}", {
                     method: 'POST',
                     body: formData,
                     headers: {
@@ -631,7 +631,7 @@
             const row = document.getElementById(`row-${index}`);
 
             try {
-                const response = await fetch("{{ route('seo.broken-links.status') }}", {
+                const response = await fetch("{{ route('seo.broken-links-checker.status') }}", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

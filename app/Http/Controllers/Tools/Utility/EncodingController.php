@@ -47,7 +47,7 @@ class EncodingController extends Controller
     public function jwtDecode()
     {
         $tool = Tool::where('slug', 'jwt-decoder')->firstOrFail();
-        return view('tools.utility.jwt-decoder', compact('tool'));
+        return view('tools.development.jwt-decoder', compact('tool'));
     }
 
     public function asciiConvert()

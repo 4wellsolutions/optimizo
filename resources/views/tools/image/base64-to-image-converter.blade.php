@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', __tool('base64-to-image-converter', 'meta.title'))
-@section('meta_description', __tool('base64-to-image-converter', 'meta.desc'))
+@section('meta_description', __tool('base64-to-image-converter', 'meta.description'))
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,7 +12,8 @@
         <!-- Tool Interface -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-gray-100 mb-12">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('base64-to-image-converter', 'input.title') !!}</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{!! __tool('base64-to-image-converter', 'input.title') !!}
+                </h2>
                 <p class="text-gray-600">{!! __tool('base64-to-image-converter', 'input.desc') !!}</p>
             </div>
 
@@ -43,7 +44,8 @@
 
                 <!-- Right Column: Actions -->
                 <div class="flex flex-col justify-center space-y-6">
-                    <div class="text-center text-gray-600 font-medium">{!! __tool('base64-to-image-converter', 'result.success') !!}
+                    <div class="text-center text-gray-600 font-medium">
+                        {!! __tool('base64-to-image-converter', 'result.success') !!}
                     </div>
 
                     <div class="flex flex-col gap-4">
@@ -96,7 +98,8 @@
                         <h3 class="font-bold text-xl mb-2 text-gray-900">
                             {!! __tool('base64-to-image-converter', 'content.features.preview.title') !!}
                         </h3>
-                        <p class="text-sm text-gray-600">{!! __tool('base64-to-image-converter', 'content.features.preview.desc') !!}
+                        <p class="text-sm text-gray-600">
+                            {!! __tool('base64-to-image-converter', 'content.features.preview.desc') !!}
                         </p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
@@ -110,7 +113,9 @@
                         <h3 class="font-bold text-xl mb-2 text-gray-900">
                             {!! __tool('base64-to-image-converter', 'content.features.auto.title') !!}
                         </h3>
-                        <p class="text-sm text-gray-600">{!! __tool('base64-to-image-converter', 'content.features.auto.desc') !!}</p>
+                        <p class="text-sm text-gray-600">
+                            {!! __tool('base64-to-image-converter', 'content.features.auto.desc') !!}
+                        </p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
                         <div
@@ -123,7 +128,8 @@
                         <h3 class="font-bold text-xl mb-2 text-gray-900">
                             {!! __tool('base64-to-image-converter', 'content.features.download.title') !!}
                         </h3>
-                        <p class="text-sm text-gray-600">{!! __tool('base64-to-image-converter', 'content.features.download.desc') !!}
+                        <p class="text-sm text-gray-600">
+                            {!! __tool('base64-to-image-converter', 'content.features.download.desc') !!}
                         </p>
                     </div>
                 </div>
@@ -134,7 +140,11 @@
                             {!! __tool('base64-to-image-converter', 'content.how_to.title') !!}
                         </h3>
                         <ol class="list-decimal pl-5 space-y-2 text-gray-600">
-                            @foreach(__tool('base64-to-image-converter', 'content.how_to.list') as $step)
+                            @php
+                                $howToSteps = __tool('base64-to-image-converter', 'content.how_to.list');
+                                $howToSteps = is_array($howToSteps) ? $howToSteps : [];
+                            @endphp
+                            @foreach($howToSteps as $step)
                                 <li>{!! $step !!}</li>
                             @endforeach
                         </ol>
@@ -144,7 +154,11 @@
                             {!! __tool('base64-to-image-converter', 'content.use_cases.title') !!}
                         </h3>
                         <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                            @foreach(__tool('base64-to-image-converter', 'content.use_cases.list') as $item)
+                            @php
+                                $useCases = __tool('base64-to-image-converter', 'content.use_cases.list');
+                                $useCases = is_array($useCases) ? $useCases : [];
+                            @endphp
+                            @foreach($useCases as $item)
                                 <li>{!! $item !!}</li>
                             @endforeach
                         </ul>

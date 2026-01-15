@@ -37,7 +37,8 @@
             <p class="text-gray-700 mb-4">{{ __tool('reverse-dns', 'content.why_use_desc') }}</p>
 
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">{{ __tool('reverse-dns', 'content.ptr_records_title') }}</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">{{ __tool('reverse-dns', 'content.ptr_records_title') }}
+            </h2>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
                 <li>{!! __tool('reverse-dns', 'content.ptr_record1') !!}</li>
                 <li>{!! __tool('reverse-dns', 'content.ptr_record2') !!}</li>
@@ -47,7 +48,8 @@
                 <li>{!! __tool('reverse-dns', 'content.ptr_record6') !!}</li>
             </ul>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">{{ __tool('reverse-dns', 'content.use_cases_title') }}</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-6">{{ __tool('reverse-dns', 'content.use_cases_title') }}
+            </h2>
             <p class="text-gray-700 mb-4">{{ __tool('reverse-dns', 'content.use_cases_desc') }}</p>
         </div>
 
@@ -95,7 +97,7 @@
             resultSection.classList.add('hidden');
 
             try {
-                const response = await fetch('{{ route("network.reverse-dns.lookup") }}', {
+                const response = await fetch('{{ route("network.reverse-dns-lookup.lookup") }}', {
                     method: 'POST', body: formData, headers: { 'X-Requested-With': 'XMLHttpRequest' }
                 });
                 const data = await response.json();

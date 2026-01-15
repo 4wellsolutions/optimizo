@@ -282,7 +282,7 @@
 
             // AJAX Request
             $.ajax({
-                url: '{{ route("youtube.channel-id.find") }}',
+                url: '{{ route("youtube.youtube-channel-id-finder.find") }}',
                 method: 'POST',
                 data: {
                     _token: '{{ csrf_token() }}',

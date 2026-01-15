@@ -10,6 +10,6 @@ class CurlBuilderController extends Controller
     public function index()
     {
         $tool = \App\Models\Tool::where('slug', 'curl-command-builder')->first();
-        return view('tools.utility.curl-command-builder', compact('tool'));
+        return view('tools.development.curl-command-builder', compact('tool'));
     }
 }

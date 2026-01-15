@@ -11,7 +11,7 @@ class CodeFormatterController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'code-formatter')->firstOrFail();
-        return view('tools.utility.code-formatter', compact('tool'));
+        return view('tools.development.code-formatter', compact('tool'));
     }
 
     public function format(Request $request)

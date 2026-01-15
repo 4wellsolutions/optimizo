@@ -330,7 +330,7 @@
             btn.classList.add('opacity-75');
 
             // Init Scan
-            fetch('{{ route("seo.on-page.init") }}', {
+            fetch('{{ route("seo.on-page-seo-checker.init") }}', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -370,7 +370,7 @@
             const urlVal = document.getElementById('url').value;
             const keywordsVal = document.getElementById('keywords').value;
 
-            fetch('{{ route("seo.on-page.analyze-step") }}', {
+            fetch('{{ route("seo.on-page-seo-checker.analyze-step") }}', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -423,30 +423,30 @@
                 detailsHtml = '<div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 bg-white/50 p-3 rounded-lg text-sm">';
                 for (const [key, value] of Object.entries(data.details)) {
                     detailsHtml += `
-                                    <div class="flex flex-col">
-                                        <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
-                                        <span class="font-bold text-gray-800">${value}</span>
-                                    </div>
-                                    `;
+                                        <div class="flex flex-col">
+                                            <span class="text-xs text-uppercase text-gray-500 font-bold">${key.replace(/_/g, ' ')}</span>
+                                            <span class="font-bold text-gray-800">${value}</span>
+                                        </div>
+                                        `;
                 }
                 detailsHtml += '</div>';
             }
 
             const html = `
-                                <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
-                                    <div class="flex justify-between items-start mb-4">
-                                        <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
-                                            <span>${icon}</span> ${data.title}
-                                        </h3>
-                                        <span
-                                            class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
+                                    <div class="bg-white rounded-2xl p-6 shadow-sm border-2 ${colorClass} transition-all duration-500 animate-fade-in-up">
+                                        <div class="flex justify-between items-start mb-4">
+                                            <h3 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                                                <span>${icon}</span> ${data.title}
+                                            </h3>
+                                            <span
+                                                class="font-black text-2xl ${data.status === 'pass' ? 'text-green-600' : 'text-gray-600'}">${data.score}</span>
+                                        </div>
+                                        <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
+                                        ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
+                                                class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
+                                        ${detailsHtml}
                                     </div>
-                                    <p class="text-gray-700 font-medium mb-3">${data.explanation}</p>
-                                    ${data.fix ? `<div class="bg-white/50 p-3 rounded-lg text-sm text-gray-600 mb-3"><span
-                                            class="font-bold">Recommendation:</span> ${data.fix}</div>` : ''}
-                                    ${detailsHtml}
-                                </div>
-                                `;
+                                    `;
             const container = document.getElementById('modulesContainer');
             const div = document.createElement('div');
             div.innerHTML = html;
@@ -466,7 +466,7 @@
 
             // Set download action
             exportBtn.onclick = function () {
-                window.location.href = '{{ route("seo.on-page.export") }}?token=' + token;
+                window.location.href = '{{ route("seo.on-page-seo-checker.export") }}?token=' + token;
             };
 
             document.getElementById('progressBar').classList.remove('from-indigo-500');

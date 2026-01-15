@@ -12,7 +12,8 @@
         <!-- Tool -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-red-200 mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
-                {{ __tool('youtube-handle-checker', 'form.title') }}</h2>
+                {{ __tool('youtube-handle-checker', 'form.title') }}
+            </h2>
             <form id="handleForm">
                 @csrf
                 <div class="mb-6">
@@ -76,9 +77,11 @@
                     </svg>
                 </div>
                 <h2 class="text-4xl font-black text-gray-900 mb-3">
-                    {{ __tool('youtube-handle-checker', 'content.main_title') }}</h2>
+                    {{ __tool('youtube-handle-checker', 'content.main_title') }}
+                </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    {{ __tool('youtube-handle-checker', 'content.main_subtitle') }}</p>
+                    {{ __tool('youtube-handle-checker', 'content.main_subtitle') }}
+                </p>
             </div>
 
             <p class="text-gray-700 leading-relaxed text-lg mb-8">
@@ -96,7 +99,8 @@
                         </svg>
                     </div>
                     <h3 class="font-bold text-xl text-gray-900 mb-2">
-                        {{ __tool('youtube-handle-checker', 'content.feature1_title') }}</h3>
+                        {{ __tool('youtube-handle-checker', 'content.feature1_title') }}
+                    </h3>
                     <p class="text-gray-600">{{ __tool('youtube-handle-checker', 'content.feature1_desc') }}</p>
                 </div>
                 <div
@@ -109,7 +113,8 @@
                         </svg>
                     </div>
                     <h3 class="font-bold text-xl text-gray-900 mb-2">
-                        {{ __tool('youtube-handle-checker', 'content.feature2_title') }}</h3>
+                        {{ __tool('youtube-handle-checker', 'content.feature2_title') }}
+                    </h3>
                     <p class="text-gray-600">{{ __tool('youtube-handle-checker', 'content.feature2_desc') }}</p>
                 </div>
                 <div
@@ -122,7 +127,8 @@
                         </svg>
                     </div>
                     <h3 class="font-bold text-xl text-gray-900 mb-2">
-                        {{ __tool('youtube-handle-checker', 'content.feature3_title') }}</h3>
+                        {{ __tool('youtube-handle-checker', 'content.feature3_title') }}
+                    </h3>
                     <p class="text-gray-600">{{ __tool('youtube-handle-checker', 'content.feature3_desc') }}</p>
                 </div>
             </div>
@@ -151,27 +157,32 @@
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">
-                        {{ __tool('youtube-handle-checker', 'content.faq_q1') }}</h4>
+                        {{ __tool('youtube-handle-checker', 'content.faq_q1') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-handle-checker', 'content.faq_a1') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">
-                        {{ __tool('youtube-handle-checker', 'content.faq_q2') }}</h4>
+                        {{ __tool('youtube-handle-checker', 'content.faq_q2') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-handle-checker', 'content.faq_a2') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">
-                        {{ __tool('youtube-handle-checker', 'content.faq_q3') }}</h4>
+                        {{ __tool('youtube-handle-checker', 'content.faq_q3') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-handle-checker', 'content.faq_a3') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">
-                        {{ __tool('youtube-handle-checker', 'content.faq_q4') }}</h4>
+                        {{ __tool('youtube-handle-checker', 'content.faq_q4') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-handle-checker', 'content.faq_a4') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
                     <h4 class="font-bold text-gray-900 mb-3 text-lg">
-                        {{ __tool('youtube-handle-checker', 'content.faq_q5') }}</h4>
+                        {{ __tool('youtube-handle-checker', 'content.faq_q5') }}
+                    </h4>
                     <p class="text-gray-700 leading-relaxed">{{ __tool('youtube-handle-checker', 'content.faq_a5') }}</p>
                 </div>
             </div>
@@ -226,7 +237,7 @@
 
                 // AJAX Request
                 $.ajax({
-                    url: '{{ route("youtube.handle.check") }}',
+                    url: '{{ route("youtube.youtube-handle-checker.check") }}',
                     method: 'POST',
                     data: {
                         _token: '{{ csrf_token() }}',
@@ -267,10 +278,10 @@
                     resultCard.removeClass('bg-gradient-to-br from-red-50 to-pink-50 border-red-200')
                         .addClass('bg-gradient-to-br from-green-50 to-emerald-50 border-green-200');
                     resultIcon.html(`
-                        <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    `);
+                            <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        `);
                     resultTitle.text(translations.available_title).removeClass('text-red-900').addClass('text-green-900');
                     resultMessage.text(translations.available_message).removeClass('text-red-700').addClass('text-green-700');
                     handleDisplay.text('@' + handle).removeClass('text-red-600').addClass('text-green-600');
@@ -279,10 +290,10 @@
                     resultCard.removeClass('bg-gradient-to-br from-green-50 to-emerald-50 border-green-200')
                         .addClass('bg-gradient-to-br from-red-50 to-pink-50 border-red-200');
                     resultIcon.html(`
-                        <svg class="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    `);
+                            <svg class="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        `);
                     resultTitle.text(translations.taken_title).removeClass('text-green-900').addClass('text-red-900');
                     resultMessage.text(translations.taken_message).removeClass('text-green-700').addClass('text-red-700');
                     handleDisplay.text('@' + handle).removeClass('text-green-600').addClass('text-red-600');
@@ -292,11 +303,11 @@
                         suggestionsList.empty();
                         suggestions.forEach(suggestion => {
                             suggestionsList.append(`
-                                <button onclick="$('#handle').val('${suggestion}'); $('#handleForm').submit();" 
-                                    class="px-4 py-2 bg-red-100 hover:bg-red-200 text-red-800 rounded-lg font-semibold transition-colors">
-                                    @${suggestion}
-                                </button>
-                            `);
+                                    <button onclick="$('#handle').val('${suggestion}'); $('#handleForm').submit();" 
+                                        class="px-4 py-2 bg-red-100 hover:bg-red-200 text-red-800 rounded-lg font-semibold transition-colors">
+                                        @${suggestion}
+                                    </button>
+                                `);
                         });
                         suggestionsDiv.removeClass('hidden');
                     } else {

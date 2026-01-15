@@ -198,7 +198,7 @@
         $('#error').addClass('hidden');
 
         $.ajax({
-            url: '{{ route("youtube.monetization.check") }}',
+            url: '{{ route("youtube.youtube-monetization-checker.check") }}',
             method: 'POST',
             data: {
                 _token: '{{ csrf_token() }}',

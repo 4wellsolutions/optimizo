@@ -12,7 +12,7 @@ class MarkdownToHtmlController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'markdown-to-html-converter')->firstOrFail();
-        return view('tools.utility.markdown-to-html-converter', compact('tool'));
+        return view('tools.development.markdown-to-html-converter', compact('tool'));
     }
 
     public function convert(Request $request)

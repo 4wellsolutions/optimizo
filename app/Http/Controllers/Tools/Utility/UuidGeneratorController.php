@@ -10,6 +10,6 @@ class UuidGeneratorController extends Controller
     public function index()
     {
         $tool = \App\Models\Tool::where('slug', 'uuid-generator')->first();
-        return view('tools.utility.uuid-generator', compact('tool'));
+        return view('tools.development.uuid-generator', compact('tool'));
     }
 }

@@ -10,6 +10,6 @@ class UserAgentParserController extends Controller
     public function index()
     {
         $tool = \App\Models\Tool::where('slug', 'user-agent-parser')->first();
-        return view('tools.utility.user-agent-parser', compact('tool'));
+        return view('tools.network.user-agent-parser', compact('tool'));
     }
 }

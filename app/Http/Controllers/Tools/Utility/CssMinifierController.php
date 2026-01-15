@@ -11,7 +11,7 @@ class CssMinifierController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'css-minifier')->firstOrFail();
-        return view('tools.utility.css-minifier', compact('tool'));
+        return view('tools.development.css-minifier', compact('tool'));
     }
 
     public function process(Request $request)

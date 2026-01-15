@@ -8,7 +8,7 @@ class CsvXmlController extends Controller
 {
     public function index()
     {
-        $tool = \App\Models\Tool::where('route_name', 'utility.csv-xml')->firstOrFail();
-        return view('tools.utility.csv-xml-converter', compact('tool'));
+        $tool = \App\Models\Tool::where('slug', 'csv-to-xml-converter')->firstOrFail();
+        return view('tools.development.csv-to-xml-converter', compact('tool'));
     }
 }
