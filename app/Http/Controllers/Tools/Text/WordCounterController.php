@@ -15,6 +15,6 @@ class WordCounterController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'word-counter')->firstOrFail();
-        return view('tools.seo.word-counter', compact('tool'));
+        return view("tools.text.word-counter", compact('tool'));
     }
 }

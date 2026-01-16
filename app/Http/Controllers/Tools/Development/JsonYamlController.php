@@ -9,6 +9,6 @@ class JsonYamlController extends Controller
     public function index()
     {
         $tool = \App\Models\Tool::where('route_name', 'utility.json-yaml')->firstOrFail();
-        return view('tools.utility.json-yaml-converter', compact('tool'));
+        return view("tools.development.json-to-yaml-converter", compact('tool'));
     }
 }

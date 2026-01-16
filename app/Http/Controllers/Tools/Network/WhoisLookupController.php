@@ -11,7 +11,7 @@ class WhoisLookupController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'whois-lookup')->firstOrFail();
-        return view('tools.network.whois-lookup', compact('tool'));
+        return view("tools.network.whois-lookup", compact('tool'));
     }
 
     public function lookup(Request $request)

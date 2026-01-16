@@ -12,6 +12,6 @@ class JsonParserController extends Controller
     {
         $tool = Tool::where('slug', 'json-parser')->firstOrFail();
 
-        return view('tools.development.json-parser', compact('tool'));
+        return view("tools.development.json-parser", compact('tool'));
     }
 }

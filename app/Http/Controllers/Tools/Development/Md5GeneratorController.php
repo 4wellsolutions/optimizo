@@ -10,6 +10,6 @@ class Md5GeneratorController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'md5-generator')->firstOrFail();
-        return view('tools.development.md5-generator', compact('tool'));
+        return view("tools.development.md5-generator", compact('tool'));
     }
 }

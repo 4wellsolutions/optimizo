@@ -24,6 +24,6 @@ class YahooSerpCheckerController extends Controller
             ]);
         }
 
-        return view('tools.seo.yahoo-serp-checker', compact('tool'));
+        return view("tools.seo.yahoo-serp-checker", compact('tool'));
     }
 }

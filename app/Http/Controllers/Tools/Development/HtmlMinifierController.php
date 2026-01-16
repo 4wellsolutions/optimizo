@@ -11,7 +11,7 @@ class HtmlMinifierController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'html-minifier')->firstOrFail();
-        return view('tools.development.html-minifier', compact('tool'));
+        return view("tools.development.html-minifier", compact('tool'));
     }
 
     public function process(Request $request)

@@ -10,6 +10,6 @@ class CaseConverterController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'case-converter')->firstOrFail();
-        return view('tools.utility.case-converter', compact('tool'));
+        return view("tools.converters.case-converter", compact('tool'));
     }
 }

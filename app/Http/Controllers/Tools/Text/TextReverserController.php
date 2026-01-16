@@ -10,6 +10,6 @@ class TextReverserController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'text-reverser')->firstOrFail();
-        return view('tools.utility.text-reverser', compact('tool'));
+        return view("tools.text.text-reverser", compact('tool'));
     }
 }

@@ -10,6 +10,6 @@ class RgbHexConverterController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'rgb-hex-converter')->firstOrFail();
-        return view('tools.utility.rgb-hex-converter', compact('tool'));
+        return view("tools.converters.rgb-hex-converter", compact('tool'));
     }
 }

@@ -11,7 +11,7 @@ class IpLookupController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'ip-lookup')->firstOrFail();
-        return view('tools.network.ip-lookup', compact('tool'));
+        return view("tools.network.ip-lookup", compact('tool'));
     }
 
     public function lookup(Request $request)

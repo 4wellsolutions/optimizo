@@ -10,6 +10,6 @@ class CronJobGeneratorController extends Controller
     public function index()
     {
         $tool = \App\Models\Tool::where('slug', 'cron-job-generator')->first();
-        return view('tools.development.cron-job-generator', compact('tool'));
+        return view("tools.development.cron-job-generator", compact('tool'));
     }
 }

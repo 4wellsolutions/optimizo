@@ -10,6 +10,6 @@ class InternetSpeedTestController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'internet-speed-test')->firstOrFail();
-        return view('tools.utility.internet-speed-test', compact('tool'));
+        return view("tools.network.internet-speed-test", compact('tool'));
     }
 }

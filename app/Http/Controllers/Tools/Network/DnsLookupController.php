@@ -11,7 +11,7 @@ class DnsLookupController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'dns-lookup')->firstOrFail();
-        return view('tools.network.dns-lookup', compact('tool'));
+        return view("tools.network.dns-lookup", compact('tool'));
     }
 
     public function lookup(Request $request)

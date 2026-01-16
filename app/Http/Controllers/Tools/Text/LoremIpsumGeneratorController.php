@@ -10,6 +10,6 @@ class LoremIpsumGeneratorController extends Controller
     public function index()
     {
         $tool = \App\Models\Tool::where('slug', 'lorem-ipsum-generator')->first();
-        return view('tools.utility.lorem-ipsum-generator', compact('tool'));
+        return view("tools.text.lorem-ipsum-generator", compact('tool'));
     }
 }

@@ -11,7 +11,7 @@ class PingTestController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'ping-test')->firstOrFail();
-        return view('tools.network.ping-test', compact('tool'));
+        return view("tools.network.ping-test", compact('tool'));
     }
 
     public function ping(Request $request)

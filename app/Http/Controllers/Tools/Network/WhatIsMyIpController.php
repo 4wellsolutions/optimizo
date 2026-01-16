@@ -10,6 +10,6 @@ class WhatIsMyIpController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'what-is-my-ip')->firstOrFail();
-        return view('tools.network.what-is-my-ip', compact('tool'));
+        return view("tools.network.what-is-my-ip", compact('tool'));
     }
 }

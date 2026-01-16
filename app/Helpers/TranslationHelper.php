@@ -1,265 +1,172 @@
 <?php
 
-/**
- * DO NOT MODIFY THIS FILE UNLESS EXPLICITLY ASKED.
- * 
- * This file handles tool-specific translations by mapping each tool slug
- * directly to its corresponding category translation file.
- */
-
-if (!function_exists('__t')) {
-    /**
-     * Translate a model attribute
-     */
-    function __t($model, string $field, ?string $locale = null): ?string
-    {
-        return $model->$field ?? null;
-    }
-}
-
-if (!function_exists('trans_model')) {
-    /**
-     * Translate a model attribute (alias for __t)
-     */
-    function trans_model($model, string $field, ?string $locale = null): ?string
-    {
-        return $model->$field ?? null;
-    }
-}
-
 if (!function_exists('__tool')) {
-    /**
-     * Get tool-specific translation
-     * 
-     * @param string $toolSlug Tool slug identifier
-     * @param string $key Translation key (dot notation supported)
-     * @param string|null $default Default value if translation not found
-     * @return string|array|null
-     */
-    function __tool(string $toolSlug, string $key, ?string $default = '')
+    function __tool($slug, $key)
     {
-        $locale = app()->getLocale();
-        $toolSlug = strtolower($toolSlug);
-
-        // Explicit Mapping: Tool Slug -> Category Translation File
         $slugToCategory = [
-            // --- YOUTUBE TOOLS ---
-            'youtube-tag-generator' => 'youtube',
-            'youtube-tags-generator' => 'youtube',
-            'youtube-channel-id-finder' => 'youtube',
-            'youtube-channel-data-extractor' => 'youtube',
-            'youtube-monetization-checker' => 'youtube',
-            'youtube-handle-checker' => 'youtube',
-            'youtube-video-tags-extractor' => 'youtube',
-            'youtube-video-data-extractor' => 'youtube',
-            'youtube-thumbnail-downloader' => 'youtube',
-            'youtube-earnings-calculator' => 'youtube',
-
-            // --- SEO TOOLS ---
-            'yahoo-serp-checker' => 'seo',
-            'bing-serp-checker' => 'seo',
-            'meta-tag-analyzer' => 'seo',
-            'slug-generator' => 'seo',
-            'keyword-density-checker' => 'seo',
-            'redirect-checker' => 'seo',
-            'google-serp-checker' => 'seo',
-            'broken-links-checker' => 'seo',
-            'on-page-seo-checker' => 'seo',
-
-            // --- DOCUMENT TOOLS ---
-            'pdf-splitter' => 'document',
-            'pdf-merger' => 'document',
-            'pdf-compressor' => 'document',
-            'jpg-to-pdf' => 'document',
-            'pdf-to-jpg' => 'document',
-            'pdf-to-ppt' => 'document',
-            'ppt-to-pdf' => 'document',
-            'excel-to-pdf' => 'document',
-            'pdf-to-excel' => 'document',
-            'word-to-pdf' => 'document',
-            'pdf-to-word' => 'document',
-
-            // --- IMAGE TOOLS ---
-            'image-compressor' => 'image',
-            'ico-converter' => 'image',
-            'svg-to-jpg' => 'image',
-            'svg-to-png' => 'image',
-            'png-to-webp' => 'image',
-            'base64-to-image-converter' => 'image',
-            'image-to-base64-converter' => 'image',
-            'heic-to-jpg-converter' => 'image',
-            'webp-to-jpg-converter' => 'image',
-            'jpg-to-webp-converter' => 'image',
-            'png-to-jpg-converter' => 'image',
-            'jpg-to-png-converter' => 'image',
-            'image-converter' => 'image',
-
-            // --- TIME TOOLS ---
-            'time-unit-converter' => 'time',
-            'local-time-to-utc' => 'time',
-            'utc-to-local-time' => 'time',
-            'date-to-unix-timestamp' => 'time',
-            'unix-timestamp-to-date' => 'time',
-            'epoch-time-converter' => 'time',
-            'time-zone-converter' => 'time',
-
-            // --- TEXT TOOLS ---
-            'word-counter' => 'text',
-            'duplicate-line-remover' => 'text',
-            'file-difference-checker' => 'text',
-            'text-to-morse-converter' => 'text',
-            'text-reverser' => 'text',
-            'morse-to-text-converter' => 'text',
-            'lorem-ipsum-generator' => 'text',
-
-            // --- UTILITY TOOLS ---
-            'password-generator' => 'utilities',
-            'qr-code-generator' => 'utilities',
-            'random-number-generator' => 'utilities',
-            'username-checker' => 'utilities',
-
-            // --- SPREADSHEET TOOLS ---
-            'csv-to-sql' => 'spreadsheet',
-            'google-sheets-to-excel' => 'spreadsheet',
-            'xlsx-to-xls' => 'spreadsheet',
-            'xls-to-xlsx' => 'spreadsheet',
-            'csv-to-excel' => 'spreadsheet',
-            'excel-to-csv' => 'spreadsheet',
-            'tsv-to-csv-converter' => 'spreadsheet',
-            'csv-to-xml-converter' => 'spreadsheet',
-
-            // --- DEVELOPMENT TOOLS ---
-            'json-parser' => 'development',
-            'xml-formatter' => 'development',
-            'html-minifier' => 'development',
-            'javascript-minifier' => 'development',
-            'css-minifier' => 'development',
-            'code-formatter' => 'development',
-            'curl-command-builder' => 'development',
-            'cron-job-generator' => 'development',
-            'uuid-generator' => 'development',
-            'md5-generator' => 'development',
-            'url-encoder-decoder' => 'development',
-            'unicode-encoder-decoder' => 'development',
-            'jwt-decoder' => 'development',
-            'base64-encoder-decoder' => 'development',
-            'html-encoder-decoder' => 'development',
-            'json-to-yaml-converter' => 'development',
-            'json-to-xml-converter' => 'development',
-            'json-to-sql-converter' => 'development',
-            'markdown-to-html-converter' => 'development',
-            'html-to-markdown-converter' => 'development',
-            'html-viewer' => 'development',
-            'json-formatter' => 'development',
-
-            // --- CONVERTER TOOLS ---
-            'frequency-converter' => 'converters',
-            'molar-mass-converter' => 'converters',
-            'density-converter' => 'converters',
-            'torque-converter' => 'converters',
-            'cooking-unit-converter' => 'converters',
-            'data-transfer-rate-converter' => 'converters',
-            'fuel-consumption-converter' => 'converters',
             'angle-converter' => 'converters',
-            'force-converter' => 'converters',
-            'power-converter' => 'converters',
-            'pressure-converter' => 'converters',
-            'energy-converter' => 'converters',
-            'digital-storage-converter' => 'converters',
-            'speed-converter' => 'converters',
             'area-converter' => 'converters',
-            'volume-converter' => 'converters',
-            'temperature-converter' => 'converters',
-            'weight-converter' => 'converters',
-            'length-converter' => 'converters',
-            'number-base-converter' => 'converters',
-            'decimal-octal-converter' => 'converters',
-            'decimal-hex-converter' => 'converters',
-            'decimal-binary-converter' => 'converters',
-            'binary-hex-converter' => 'converters',
             'ascii-converter' => 'converters',
-            'rgb-hex-converter' => 'converters',
-            'studly-case-converter' => 'converters',
-            'snake-case-converter' => 'converters',
-            'sentence-case-converter' => 'converters',
-            'pascal-case-converter' => 'converters',
-            'kebab-case-converter' => 'converters',
+            'base64-encoder-decoder' => 'development',
+            'base64-to-image-converter' => 'image',
+            'binary-hex-converter' => 'converters',
+            'binary-to-text' => 'converters',
+            'bing-serp-checker' => 'seo',
+            'broken-links-checker' => 'seo',
             'camel-case-converter' => 'converters',
             'case-converter' => 'converters',
-
-            // --- NETWORK TOOLS ---
-            'internet-speed-test' => 'network',
-            'reverse-dns-lookup' => 'network',
-            'port-checker' => 'network',
-            'traceroute' => 'network',
-            'ping-test' => 'network',
-            'whois-lookup' => 'network',
+            'code-formatter' => 'development',
+            'cooking-unit-converter' => 'converters',
+            'cron-job-generator' => 'development',
+            'css-minifier' => 'development',
+            'csv-to-excel' => 'spreadsheet',
+            'csv-to-json' => 'spreadsheet',
+            'csv-to-sql' => 'spreadsheet',
+            'csv-to-tsv' => 'spreadsheet',
+            'csv-to-xml-converter' => 'spreadsheet',
+            'curl-command-builder' => 'development',
+            'data-transfer-rate-converter' => 'converters',
+            'date-to-unix-timestamp' => 'time',
+            'decimal-binary-converter' => 'converters',
+            'decimal-hex-converter' => 'converters',
+            'decimal-octal-converter' => 'converters',
+            'density-converter' => 'converters',
+            'digital-storage-converter' => 'converters',
             'dns-lookup' => 'network',
-            'ip-lookup' => 'network',
             'domain-to-ip' => 'network',
-            'what-is-my-isp' => 'network',
-            'what-is-my-ip' => 'network',
+            'duplicate-line-remover' => 'text',
+            'energy-converter' => 'converters',
+            'epoch-time-converter' => 'time',
+            'excel-to-csv' => 'spreadsheet',
+            'excel-to-pdf' => 'document',
+            'file-difference-checker' => 'text',
+            'force-converter' => 'converters',
+            'frequency-converter' => 'converters',
+            'fuel-consumption-converter' => 'converters',
+            'google-serp-checker' => 'seo',
+            'google-sheets-to-excel' => 'spreadsheet',
+            'heic-to-jpg-converter' => 'image',
+            'html-encoder-decoder' => 'development',
+            'html-minifier' => 'development',
+            'html-to-markdown-converter' => 'development',
+            'html-viewer' => 'development',
+            'ico-converter' => 'image',
+            'image-compressor' => 'image',
+            'image-converter' => 'image',
+            'image-to-base64-converter' => 'image',
+            'internet-speed-test' => 'network',
+            'ip-lookup' => 'network',
+            'jpg-to-pdf' => 'document',
+            'jpg-to-png-converter' => 'image',
+            'jpg-to-webp-converter' => 'image',
+            'js-minifier' => 'development',
+            'json-formatter' => 'development',
+            'json-parser' => 'development',
+            'json-to-csv-converter' => 'development',
+            'json-to-sql-converter' => 'development',
+            'json-to-xml-converter' => 'development',
+            'json-to-yaml-converter' => 'development',
+            'jwt-decoder' => 'development',
+            'kebab-case-converter' => 'converters',
+            'keyword-density-checker' => 'seo',
+            'length-converter' => 'converters',
+            'local-time-to-utc' => 'time',
+            'lorem-ipsum-generator' => 'text',
+            'markdown-to-html-converter' => 'development',
+            'md5-generator' => 'development',
+            'meta-tag-analyzer' => 'seo',
+            'molar-mass-converter' => 'converters',
+            'morse-to-text-converter' => 'text',
+            'number-base-converter' => 'converters',
+            'on-page-seo-checker' => 'seo',
+            'pascal-case-converter' => 'converters',
+            'password-generator' => 'utility',
+            'pdf-compressor' => 'document',
+            'pdf-merger' => 'document',
+            'pdf-splitter' => 'document',
+            'pdf-to-excel' => 'document',
+            'pdf-to-jpg' => 'document',
+            'pdf-to-ppt' => 'document',
+            'pdf-to-word' => 'document',
+            'ping-test' => 'network',
+            'png-to-jpg-converter' => 'image',
+            'png-to-webp-converter' => 'image',
+            'port-checker' => 'network',
+            'power-converter' => 'converters',
+            'ppt-to-pdf' => 'document',
+            'pressure-converter' => 'converters',
+            'qr-code-generator' => 'utility',
+            'random-number-generator' => 'utility',
+            'redirect-checker' => 'seo',
+            'reverse-dns-lookup' => 'network',
+            'rgb-hex-converter' => 'converters',
+            'sentence-case-converter' => 'converters',
+            'slug-generator' => 'seo',
+            'snake-case-converter' => 'converters',
+            'speed-converter' => 'converters',
+            'sql-to-json' => 'development',
+            'sql-to-json-converter' => 'development',
+            'studly-case-converter' => 'converters',
+            'svg-to-jpg-converter' => 'image',
+            'svg-to-png-converter' => 'image',
+            'temperature-converter' => 'converters',
+            'text-reverser' => 'text',
+            'text-to-binary' => 'converters',
+            'text-to-morse-converter' => 'text',
+            'time-unit-converter' => 'time',
+            'time-zone-converter' => 'time',
+            'torque-converter' => 'converters',
+            'traceroute' => 'network',
+            'tsv-to-csv-converter' => 'spreadsheet',
+            'unicode-encoder-decoder' => 'development',
+            'unix-timestamp-to-date' => 'time',
+            'url-encoder-decoder' => 'development',
             'user-agent-parser' => 'network',
+            'username-checker' => 'utility',
+            'utc-to-local-time' => 'time',
+            'uuid-generator' => 'development',
+            'volume-converter' => 'converters',
+            'webp-to-jpg-converter' => 'image',
+            'weight-converter' => 'converters',
+            'what-is-my-ip' => 'network',
+            'what-is-my-isp' => 'network',
+            'whois-lookup' => 'network',
+            'word-counter' => 'text',
+            'word-to-pdf' => 'document',
+            'xls-to-xlsx' => 'spreadsheet',
+            'xlsx-to-xls' => 'spreadsheet',
+            'xml-formatter' => 'development',
+            'xml-to-csv' => 'development',
+            'xml-to-json' => 'development',
+            'yaml-to-json' => 'development',
+            'yahoo-serp-checker' => 'seo',
+            'youtube-channel-data-extractor' => 'youtube',
+            'youtube-channel-id-finder' => 'youtube',
+            'youtube-earnings-calculator' => 'youtube',
+            'youtube-handle-checker' => 'youtube',
+            'youtube-monetization-checker' => 'youtube',
+            'youtube-tag-generator' => 'youtube',
+            'youtube-thumbnail-downloader' => 'youtube',
+            'youtube-video-data-extractor' => 'youtube',
+            'youtube-video-tags-extractor' => 'youtube',
         ];
 
-        $category = $slugToCategory[$toolSlug] ?? 'utilities';
+        $categoryFile = $slugToCategory[$slug] ?? 'utility';
+        return __("tools/$categoryFile.$slug.$key");
+    }
+}
 
-        // Load translation from the mapped category file
-        $translationKey = "{$toolSlug}.{$key}";
-        $categoryFile = resource_path("lang/{$locale}/tools/{$category}.php");
-
-        if (file_exists($categoryFile)) {
-            static $loadedTranslations = [];
-            if (!isset($loadedTranslations[$locale][$category])) {
-                $loadedTranslations[$locale][$category] = require $categoryFile;
-            }
-
-            $translations = $loadedTranslations[$locale][$category];
-            $keys = explode('.', $translationKey);
-            $value = $translations;
-
-            foreach ($keys as $segment) {
-                if (is_array($value) && array_key_exists($segment, $value)) {
-                    $value = $value[$segment];
-                } else {
-                    $value = null;
-                    break;
-                }
-            }
-
-            if ($value !== null) {
-                return $value;
-            }
-        }
-
-        // Fallback to English if current locale not found
-        if ($locale !== 'en') {
-            $enFile = resource_path("lang/en/tools/{$category}.php");
-            if (file_exists($enFile)) {
-                static $loadedEn = [];
-                if (!isset($loadedEn[$category])) {
-                    $loadedEn[$category] = require $enFile;
-                }
-
-                $translations = $loadedEn[$category];
-                $keys = explode('.', $translationKey);
-                $value = $translations;
-
-                foreach ($keys as $segment) {
-                    if (is_array($value) && array_key_exists($segment, $value)) {
-                        $value = $value[$segment];
-                    } else {
-                        $value = null;
-                        break;
-                    }
-                }
-
-                if ($value !== null) {
-                    return $value;
-                }
-            }
-        }
-
-        return $default ?? '';
+if (!function_exists('__t')) {
+    function __t($tool, $key)
+    {
+        $slug = is_object($tool) ? $tool->slug : $tool;
+        $map = [
+            'name' => 'meta.title',
+            'description' => 'meta.description',
+            'h1' => 'meta.h1',
+            'subtitle' => 'meta.subtitle',
+        ];
+        $targetKey = $map[$key] ?? $key;
+        return __tool($slug, $targetKey);
     }
 }

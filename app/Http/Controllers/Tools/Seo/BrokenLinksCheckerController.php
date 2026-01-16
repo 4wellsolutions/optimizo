@@ -19,7 +19,7 @@ class BrokenLinksCheckerController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'broken-links-checker')->firstOrFail();
-        return view('tools.seo.broken-links-checker', compact('tool'));
+        return view("tools.seo.broken-links-checker", compact('tool'));
     }
 
     // Phase 1: Extract links only

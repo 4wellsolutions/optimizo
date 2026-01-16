@@ -41,7 +41,7 @@ class OnPageSeoCheckerController extends Controller
                 'meta_keywords' => 'seo checker, on page seo, seo audit, website analysis'
             ]);
         }
-        return view('tools.seo.on-page-seo-checker', compact('tool'));
+        return view("tools.seo.on-page-seo-checker", compact('tool'));
     }
 
     public function init(Request $request)

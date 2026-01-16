@@ -11,7 +11,7 @@ class PortCheckerController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'port-checker')->firstOrFail();
-        return view('tools.network.port-checker', compact('tool'));
+        return view("tools.network.port-checker", compact('tool'));
     }
 
     public function check(Request $request)

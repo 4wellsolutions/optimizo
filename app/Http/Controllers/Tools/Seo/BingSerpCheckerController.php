@@ -24,6 +24,6 @@ class BingSerpCheckerController extends Controller
             ]);
         }
 
-        return view('tools.seo.bing-serp-checker', compact('tool'));
+        return view("tools.seo.bing-serp-checker", compact('tool'));
     }
 }

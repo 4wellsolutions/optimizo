@@ -11,7 +11,7 @@ class DomainToIpController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'domain-to-ip')->firstOrFail();
-        return view('tools.network.domain-to-ip', compact('tool'));
+        return view("tools.network.domain-to-ip", compact('tool'));
     }
 
     public function lookup(Request $request)

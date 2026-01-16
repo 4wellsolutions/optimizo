@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Http\Controllers\Tools\Youtube;
+
+use App\Http\Controllers\Controller;
+use App\Models\Tool;
+use Illuminate\Http\Request;
+
+class YoutubeVideoTagsExtractorController extends Controller
+{
+    public function index()
+    {
+        $tool = Tool::with(['categoryRelation'])->where('slug', 'youtube-video-tags-extractor')->active()->firstOrFail();
+        return view('tools.youtube.youtube-video-tags-extractor', compact('tool'));
+    }
+}

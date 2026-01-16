@@ -9,6 +9,6 @@ class JsonSqlController extends Controller
     public function index()
     {
         $tool = \App\Models\Tool::where('route_name', 'utility.json-sql')->firstOrFail();
-        return view('tools.utility.json-sql-converter', compact('tool'));
+        return view("tools.development.json-to-sql-converter", compact('tool'));
     }
 }

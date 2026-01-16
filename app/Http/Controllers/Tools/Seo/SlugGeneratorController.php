@@ -10,6 +10,6 @@ class SlugGeneratorController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'slug-generator')->firstOrFail();
-        return view('tools.utility.slug-generator', compact('tool'));
+        return view("tools.seo.slug-generator", compact('tool'));
     }
 }

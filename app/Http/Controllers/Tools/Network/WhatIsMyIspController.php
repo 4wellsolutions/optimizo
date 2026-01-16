@@ -10,6 +10,6 @@ class WhatIsMyIspController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'what-is-my-isp')->firstOrFail();
-        return view('tools.network.what-is-my-isp', compact('tool'));
+        return view("tools.network.what-is-my-isp", compact('tool'));
     }
 }

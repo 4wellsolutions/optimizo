@@ -16,7 +16,7 @@ class GoogleSerpCheckerController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'google-serp-checker')->firstOrFail();
-        return view('tools.seo.google-serp-checker', compact('tool'));
+        return view("tools.seo.google-serp-checker", compact('tool'));
     }
 
 

@@ -11,7 +11,7 @@ class TracerouteController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'traceroute')->firstOrFail();
-        return view('tools.network.traceroute', compact('tool'));
+        return view("tools.network.traceroute", compact('tool'));
     }
 
     public function trace(Request $request)
