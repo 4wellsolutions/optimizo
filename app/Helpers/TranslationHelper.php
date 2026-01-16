@@ -1,21 +1,18 @@
 <?php
 
-
+/**
+ * DO NOT MODIFY THIS FILE UNLESS EXPLICITLY ASKED.
+ * 
+ * This file handles tool-specific translations by mapping each tool slug
+ * directly to its corresponding category translation file.
+ */
 
 if (!function_exists('__t')) {
     /**
      * Translate a model attribute
-     * 
-     * @param mixed $model The model instance
-     * @param string $field The field to translate
-     * @param string|null $locale The locale (defaults to current locale)
-     * @return string|null
      */
     function __t($model, string $field, ?string $locale = null): ?string
     {
-        // Legacy Stub: Safely return the model attribute directly.
-        // File-based translation is now standard, but this ensures no errors 
-        // if old code still calls __t().
         return $model->$field ?? null;
     }
 }
@@ -23,11 +20,6 @@ if (!function_exists('__t')) {
 if (!function_exists('trans_model')) {
     /**
      * Translate a model attribute (alias for __t)
-     * 
-     * @param mixed $model The model instance
-     * @param string $field The field to translate
-     * @param string|null $locale The locale (defaults to current locale)
-     * @return string|null
      */
     function trans_model($model, string $field, ?string $locale = null): ?string
     {
@@ -47,224 +39,182 @@ if (!function_exists('__tool')) {
     function __tool(string $toolSlug, string $key, ?string $default = '')
     {
         $locale = app()->getLocale();
-
-        // Extract category from tool slug (e.g., 'youtube-channel' -> 'youtube')
-        // Normalize to lowercase to handle potential DB casing inconsistencies (e.g. 'YouTube-Tool')
         $toolSlug = strtolower($toolSlug);
-        $prefix = explode('-', $toolSlug)[0];
-        $category = $prefix;
 
-        // Category mapping for tools that don't follow the naming convention
-        $categoryMap = [
-            // Converter tools - all use converters.php
-            'angle' => 'converters',
-            'area' => 'converters',
-            'cooking' => 'converters',
-            'data' => 'converters',
-            'density' => 'converters',
-            'digital' => 'converters',
-            'energy' => 'converters',
-            'force' => 'converters',
-            'frequency' => 'converters',
-            'fuel' => 'converters',
-            'length' => 'converters',
-            'molar' => 'converters',
-            'power' => 'converters',
-            'pressure' => 'converters',
-            'speed' => 'converters',
-            'temperature' => 'converters',
-            'time' => 'converters',
-            'torque' => 'converters',
-            'volume' => 'converters',
-            'weight' => 'converters',
-            // Image tools
-            'jpg' => 'image',
-            'png' => 'image',
-            'webp' => 'image',
-            'svg' => 'image',
-            'heic' => 'image',
-            'ico' => 'image',
-            'image' => 'image',
-            'base64' => 'image',
-            // Time tools
-            'epoch' => 'time',
-            'date' => 'time',
-            'unix' => 'time',
-            'local' => 'time',
-            'utc' => 'time',
-            // Spreadsheet tools
-            'csv' => 'spreadsheet',
-            'xls' => 'spreadsheet',
-            'xlsx' => 'spreadsheet',
-            // SEO tools
-            'meta' => 'seo',
-            'keyword' => 'seo',
-            'bing' => 'seo',
-            'yahoo' => 'seo',
-            'broken' => 'seo',
-            'on' => 'seo',
-            // Network tools
-            'dns' => 'network',
-            'domain' => 'network',
-            'ip' => 'network',
-            'ping' => 'network',
-            'port' => 'network',
-            'reverse' => 'network',
-            'traceroute' => 'network',
-            'whois' => 'network',
-            'redirect' => 'network',
-            'what' => 'network',
+        // Explicit Mapping: Tool Slug -> Category Translation File
+        $slugToCategory = [
+            // --- YOUTUBE TOOLS ---
+            'youtube-tag-generator' => 'youtube',
+            'youtube-tags-generator' => 'youtube',
+            'youtube-channel-id-finder' => 'youtube',
+            'youtube-channel-data-extractor' => 'youtube',
+            'youtube-monetization-checker' => 'youtube',
+            'youtube-handle-checker' => 'youtube',
+            'youtube-video-tags-extractor' => 'youtube',
+            'youtube-video-data-extractor' => 'youtube',
+            'youtube-thumbnail-downloader' => 'youtube',
+            'youtube-earnings-calculator' => 'youtube',
 
-            // Development tools
-            'rgb' => 'development',
-            'json' => 'development',
-            'base64' => 'development',
-            'code' => 'development',
-            'css' => 'development',
-            'js' => 'development',
-            'javascript' => 'development',
-            'file' => 'development',
-            'cron' => 'development',
-            'curl' => 'development',
+            // --- SEO TOOLS ---
+            'yahoo-serp-checker' => 'seo',
+            'bing-serp-checker' => 'seo',
+            'meta-tag-analyzer' => 'seo',
+            'slug-generator' => 'seo',
+            'keyword-density-checker' => 'seo',
+            'redirect-checker' => 'seo',
+            'google-serp-checker' => 'seo',
+            'broken-links-checker' => 'seo',
+            'on-page-seo-checker' => 'seo',
 
-            // Text tools
-            'markdown' => 'text',
-            'sentence' => 'text',
-            'camel' => 'text',
-            'pascal' => 'text',
-            'snake' => 'text',
-            'kebab' => 'text',
-            'studly' => 'text',
-            'morse' => 'text',
-            'duplicate' => 'text',
-
-            // Utility tools (explicit mapping)
-            'binary' => 'utilities',
-            'hex' => 'utilities',
-            'decimal' => 'utilities',
-            'ascii' => 'utilities',
-            'xml' => 'utilities',
-            'sql' => 'utilities',
-            'html' => 'utilities',
-            'tsv' => 'utilities',
-            'url' => 'utilities',
-            'user' => 'utilities',
-            'yaml' => 'utilities',
-            'qr' => 'utilities',
-            'barcode' => 'utilities',
-            'color' => 'utilities',
-            'password' => 'utilities',
-        ];
-
-        // 1. Check for specific tool exceptions first (Highest Priority)
-        $exceptions = [
-            // Text Tools
-            'markdown-to-html-converter' => 'text',
-            'html-to-markdown-converter' => 'text',
-            'sentence-case-converter' => 'text',
-            'camel-case-converter' => 'text',
-            'pascal-case-converter' => 'text',
-            'snake-case-converter' => 'text',
-            'kebab-case-converter' => 'text',
-            'studly-case-converter' => 'text',
-            'text-reverser' => 'text',
-            'text-to-morse-converter' => 'text',
-            'morse-to-text-converter' => 'text',
-            'url-slug-generator' => 'text',
-            'case-converter' => 'text',
-            'duplicate-line-remover' => 'text',
-            // Development Tools
-            'rgb-hex-converter' => 'development',
-            'json-formatter' => 'development',
-            'base64-encoder-decoder' => 'development',
-            'html-viewer' => 'development',
-            'json-parser' => 'development',
-            'code-formatter' => 'development',
-            'css-minifier' => 'development',
-            'js-minifier' => 'development',
-            'html-minifier' => 'development',
-            'xml-formatter' => 'development',
-            'file-difference-checker' => 'development',
-            'cron-job-generator' => 'development',
-            'curl-command-builder' => 'development',
-            // Utility Exceptions
-            // Document Tools
-            'word-to-pdf' => 'document',
-            'percentage-calculator' => 'math',
-            'excel-to-pdf' => 'document',
+            // --- DOCUMENT TOOLS ---
+            'pdf-splitter' => 'document',
+            'pdf-merger' => 'document',
+            'pdf-compressor' => 'document',
+            'jpg-to-pdf' => 'document',
+            'pdf-to-jpg' => 'document',
             'pdf-to-ppt' => 'document',
             'ppt-to-pdf' => 'document',
-            'jpg-to-pdf' => 'document',
-            'jpeg-to-pdf' => 'document',
-            'png-to-pdf' => 'document',
-            'text-to-pdf' => 'document',
-            // Time Tools
-            'time-zone-converter' => 'time',
+            'excel-to-pdf' => 'document',
+            'pdf-to-excel' => 'document',
+            'word-to-pdf' => 'document',
+            'pdf-to-word' => 'document',
+
+            // --- IMAGE TOOLS ---
+            'image-compressor' => 'image',
+            'ico-converter' => 'image',
+            'svg-to-jpg' => 'image',
+            'svg-to-png' => 'image',
+            'png-to-webp' => 'image',
+            'base64-to-image-converter' => 'image',
+            'image-to-base64-converter' => 'image',
+            'heic-to-jpg-converter' => 'image',
+            'webp-to-jpg-converter' => 'image',
+            'jpg-to-webp-converter' => 'image',
+            'png-to-jpg-converter' => 'image',
+            'jpg-to-png-converter' => 'image',
+            'image-converter' => 'image',
+
+            // --- TIME TOOLS ---
+            'time-unit-converter' => 'time',
+            'local-time-to-utc' => 'time',
+            'utc-to-local-time' => 'time',
+            'date-to-unix-timestamp' => 'time',
+            'unix-timestamp-to-date' => 'time',
             'epoch-time-converter' => 'time',
-            'unix-timestamp-converter' => 'time',
-            // Spreadsheet Tools
-            'excel-to-csv' => 'spreadsheet',
-            'csv-to-excel' => 'spreadsheet',
-            'excel-to-json' => 'spreadsheet',
-            'json-to-excel' => 'spreadsheet',
-            // Utilities
-            'csv-to-xml' => 'utilities',
-            'xml-to-csv' => 'utilities',
-            'csv-to-json' => 'utilities',
-            'json-to-csv' => 'utilities',
-            // Google Tools
-            'google-serp-checker' => 'seo',
+            'time-zone-converter' => 'time',
+
+            // --- TEXT TOOLS ---
+            'word-counter' => 'text',
+            'duplicate-line-remover' => 'text',
+            'file-difference-checker' => 'text',
+            'text-to-morse-converter' => 'text',
+            'text-reverser' => 'text',
+            'morse-to-text-converter' => 'text',
+            'lorem-ipsum-generator' => 'text',
+
+            // --- UTILITY TOOLS ---
+            'password-generator' => 'utilities',
+            'qr-code-generator' => 'utilities',
+            'random-number-generator' => 'utilities',
+            'username-checker' => 'utilities',
+
+            // --- SPREADSHEET TOOLS ---
+            'csv-to-sql' => 'spreadsheet',
             'google-sheets-to-excel' => 'spreadsheet',
+            'xlsx-to-xls' => 'spreadsheet',
+            'xls-to-xlsx' => 'spreadsheet',
+            'csv-to-excel' => 'spreadsheet',
+            'excel-to-csv' => 'spreadsheet',
+            'tsv-to-csv-converter' => 'spreadsheet',
+            'csv-to-xml-converter' => 'spreadsheet',
+
+            // --- DEVELOPMENT TOOLS ---
+            'json-parser' => 'development',
+            'xml-formatter' => 'development',
+            'html-minifier' => 'development',
+            'javascript-minifier' => 'development',
+            'css-minifier' => 'development',
+            'code-formatter' => 'development',
+            'curl-command-builder' => 'development',
+            'cron-job-generator' => 'development',
+            'uuid-generator' => 'development',
+            'md5-generator' => 'development',
+            'url-encoder-decoder' => 'development',
+            'unicode-encoder-decoder' => 'development',
+            'jwt-decoder' => 'development',
+            'base64-encoder-decoder' => 'development',
+            'html-encoder-decoder' => 'development',
+            'json-to-yaml-converter' => 'development',
+            'json-to-xml-converter' => 'development',
+            'json-to-sql-converter' => 'development',
+            'markdown-to-html-converter' => 'development',
+            'html-to-markdown-converter' => 'development',
+            'html-viewer' => 'development',
+            'json-formatter' => 'development',
+
+            // --- CONVERTER TOOLS ---
+            'frequency-converter' => 'converters',
+            'molar-mass-converter' => 'converters',
+            'density-converter' => 'converters',
+            'torque-converter' => 'converters',
+            'cooking-unit-converter' => 'converters',
+            'data-transfer-rate-converter' => 'converters',
+            'fuel-consumption-converter' => 'converters',
+            'angle-converter' => 'converters',
+            'force-converter' => 'converters',
+            'power-converter' => 'converters',
+            'pressure-converter' => 'converters',
+            'energy-converter' => 'converters',
+            'digital-storage-converter' => 'converters',
+            'speed-converter' => 'converters',
+            'area-converter' => 'converters',
+            'volume-converter' => 'converters',
+            'temperature-converter' => 'converters',
+            'weight-converter' => 'converters',
+            'length-converter' => 'converters',
+            'number-base-converter' => 'converters',
+            'decimal-octal-converter' => 'converters',
+            'decimal-hex-converter' => 'converters',
+            'decimal-binary-converter' => 'converters',
+            'binary-hex-converter' => 'converters',
+            'ascii-converter' => 'converters',
+            'rgb-hex-converter' => 'converters',
+            'studly-case-converter' => 'converters',
+            'snake-case-converter' => 'converters',
+            'sentence-case-converter' => 'converters',
+            'pascal-case-converter' => 'converters',
+            'kebab-case-converter' => 'converters',
+            'camel-case-converter' => 'converters',
+            'case-converter' => 'converters',
+
+            // --- NETWORK TOOLS ---
+            'internet-speed-test' => 'network',
+            'reverse-dns-lookup' => 'network',
+            'port-checker' => 'network',
+            'traceroute' => 'network',
+            'ping-test' => 'network',
+            'whois-lookup' => 'network',
+            'dns-lookup' => 'network',
+            'ip-lookup' => 'network',
+            'domain-to-ip' => 'network',
+            'what-is-my-isp' => 'network',
+            'what-is-my-ip' => 'network',
+            'user-agent-parser' => 'network',
         ];
 
-        if (isset($exceptions[$toolSlug])) {
-            $category = $exceptions[$toolSlug];
-        }
-        // 2. Check strict prefix mapping
-        elseif (isset($categoryMap[$prefix])) {
-            $category = $categoryMap[$prefix];
-        }
-        // 3. Special case: Document conversion tools pattern (pdf-*)
-        elseif (str_starts_with($toolSlug, 'pdf-')) {
-            $category = 'document';
-        }
-        // 4. Special case: 'word-' prefix usually maps to 'seo' (word-counter), 
-        // unlike 'word-to-pdf' which is handled in exceptions.
-        elseif ($prefix === 'word' && !isset($exceptions[$toolSlug])) {
-            $category = 'seo';
-        }
-        // 5. Special case: 'time' prefix.
-        // 'time-zone-converter' -> time (handled in exceptions)
-        // 'time-converter' -> converters (unit converter)
-        elseif ($prefix === 'time') {
-            // If it's the generic time unit converter, it goes to converters
-            // If it's specific time tools (like date calc), checking exceptions or default
-            if ($toolSlug === 'time-converter' || $toolSlug === 'time-unit-converter') {
-                $category = 'converters';
-            } else {
-                $category = 'time';
-            }
-        }
+        $category = $slugToCategory[$toolSlug] ?? 'utilities';
 
-        // Build the translation key path: tools/{category}.{toolSlug}.{key}
+        // Load translation from the mapped category file
         $translationKey = "{$toolSlug}.{$key}";
-
-        // Try to load directly from category file
         $categoryFile = resource_path("lang/{$locale}/tools/{$category}.php");
 
         if (file_exists($categoryFile)) {
-            static $loadedCategories = [];
-
-            // Load category translations only once per request
-            if (!isset($loadedCategories[$locale][$category])) {
-                $categoryTranslations = require $categoryFile;
-                $loadedCategories[$locale][$category] = $categoryTranslations;
+            static $loadedTranslations = [];
+            if (!isset($loadedTranslations[$locale][$category])) {
+                $loadedTranslations[$locale][$category] = require $categoryFile;
             }
 
-            // Get the translation from the loaded category
-            $translations = $loadedCategories[$locale][$category];
-
-            // Navigate through the nested array using dot notation
+            $translations = $loadedTranslations[$locale][$category];
             $keys = explode('.', $translationKey);
             $value = $translations;
 
@@ -277,105 +227,39 @@ if (!function_exists('__tool')) {
                 }
             }
 
-            // Return the translation if found (allow arrays)
             if ($value !== null) {
                 return $value;
             }
         }
 
-        // Fallback: Check utilities.php if not found in specific category
-        if ($category !== 'utilities') {
-            $utilitiesFile = resource_path("lang/{$locale}/tools/utilities.php");
-
-            if (file_exists($utilitiesFile)) {
-                static $loadedUtilities = [];
-
-                // Load utilities translations once
-                if (!isset($loadedUtilities[$locale])) {
-                    $loadedUtilities[$locale] = require $utilitiesFile;
-                }
-
-                $translations = $loadedUtilities[$locale];
-
-                // Navigate through keys
-                $keys = explode('.', $translationKey);
-                $value = $translations;
-                $found = true;
-
-                foreach ($keys as $segment) {
-                    if (is_array($value) && array_key_exists($segment, $value)) {
-                        $value = $value[$segment];
-                    } else {
-                        $found = false;
-                        break;
-                    }
-                }
-
-                if ($found && $value !== null) {
-                    return $value;
-                }
-            }
-        }
-
-        // Fallback: Check 'en' locale if current locale is not 'en'
+        // Fallback to English if current locale not found
         if ($locale !== 'en') {
             $enFile = resource_path("lang/en/tools/{$category}.php");
-
-            // Try specific category file in EN
             if (file_exists($enFile)) {
-                static $loadedEnCategories = [];
-                if (!isset($loadedEnCategories[$category])) {
-                    $loadedEnCategories[$category] = require $enFile;
+                static $loadedEn = [];
+                if (!isset($loadedEn[$category])) {
+                    $loadedEn[$category] = require $enFile;
                 }
 
-                $value = $loadedEnCategories[$category];
+                $translations = $loadedEn[$category];
                 $keys = explode('.', $translationKey);
-                $found = true;
+                $value = $translations;
 
                 foreach ($keys as $segment) {
                     if (is_array($value) && array_key_exists($segment, $value)) {
                         $value = $value[$segment];
                     } else {
-                        $found = false;
+                        $value = null;
                         break;
                     }
                 }
 
-                if ($found && $value !== null) {
+                if ($value !== null) {
                     return $value;
-                }
-            }
-
-            // Try utilities.php in EN
-            if ($category !== 'utilities') {
-                $enUtilities = resource_path("lang/en/tools/utilities.php");
-                if (file_exists($enUtilities)) {
-                    static $loadedEnUtilities = null;
-                    if ($loadedEnUtilities === null) {
-                        $loadedEnUtilities = require $enUtilities;
-                    }
-
-                    $value = $loadedEnUtilities;
-                    $keys = explode('.', $translationKey);
-                    $found = true;
-
-                    foreach ($keys as $segment) {
-                        if (is_array($value) && array_key_exists($segment, $value)) {
-                            $value = $value[$segment];
-                        } else {
-                            $found = false;
-                            break;
-                        }
-                    }
-
-                    if ($found && $value !== null) {
-                        return $value;
-                    }
                 }
             }
         }
 
-        // Return default if translation not found (handle null)
         return $default ?? '';
     }
 }

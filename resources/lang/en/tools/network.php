@@ -1,7 +1,270 @@
 <?php
 
 return [
-    // Dns Lookup
+
+    // Internet Speed Test
+    'internet-speed-test' => 
+   [
+    'meta' => 
+     [
+      'title' => 'Free Internet Speed Test - Check Your Connection Speed',
+      'description' => 'Test your internet speed for free. Check download speed, upload speed, and ping instantly.',
+      'h1' => 'Internet Speed Test',
+      'subtitle' => 'Test your internet connection speed instantly',
+    ],
+    'editor' => 
+     [
+      'btn_start' => 'Start Speed Test',
+      'btn_retry' => 'Test Again',
+      'status_init' => 'Initializing test...',
+      'status_ping' => 'Testing ping...',
+      'status_download' => 'Testing download speed...',
+      'status_upload' => 'Testing upload speed...',
+      'label_download' => 'Download Speed',
+      'label_upload' => 'Upload Speed',
+      'label_ping' => 'Ping',
+      'label_quality' => 'Connection Quality',
+      'quality_val_excellent' => 'Excellent',
+      'quality_val_very_good' => 'Very Good',
+      'quality_val_good' => 'Good',
+      'quality_val_fair' => 'Fair',
+      'quality_val_poor' => 'Poor',
+    ],
+    'content' => 
+     [
+      'p1' => 'Test your internet connection speed with our free, accurate speed test tool. Measure your download speed, upload speed, and ping latency in seconds. Perfect for troubleshooting slow connections, verifying ISP speeds, or checking if you\'re getting what you pay for.',
+      'metrics_title' => 'Understanding Speed Test Metrics',
+      'metrics' => 
+       [
+        'download' => 
+         [
+          'title' => 'Download Speed',
+          'desc' => 'How fast data travels from the internet to your device. Important for streaming, browsing, and downloading files.',
+        ],
+        'upload' => 
+         [
+          'title' => 'Upload Speed',
+          'desc' => 'How fast data travels from your device to the internet. Important for video calls, uploading files, and live streaming.',
+        ],
+        'ping' => 
+         [
+          'title' => 'Ping (Latency)',
+          'desc' => 'Response time of your connection. Lower is better. Important for gaming and real-time applications.',
+        ],
+      ],
+      'req_title' => 'Requirements for Accurate Testing',
+      'req_list' => 
+       [
+        0 => 'Close all other applications and browser tabs',
+        1 => 'Connect via Ethernet cable for most accurate results',
+        2 => 'Disable VPN or proxy services temporarily',
+        3 => 'Ensure no downloads or uploads are running',
+        4 => 'Test multiple times at different times of day',
+      ],
+      'why_title' => 'Why Test Your Internet Speed?',
+      'why_list' => 
+       [
+        0 => 'Verify you\'re getting the speed you\'re paying for',
+        1 => 'Troubleshoot slow connection issues',
+        2 => 'Compare different ISP plans before switching',
+        3 => 'Optimize your network setup',
+        4 => 'Document speed for ISP support tickets',
+        5 => 'Test Wi-Fi vs Ethernet performance',
+      ],
+      'factors_title' => 'Factors Affecting Your Speed',
+      'factors' => 
+       [
+        'congestion' => 
+         [
+          'title' => 'Network Congestion',
+          'desc' => 'Peak usage times can slow down your connection as more users share bandwidth.',
+        ],
+        'wifi' => 
+         [
+          'title' => 'Wi-Fi Signal',
+          'desc' => 'Distance from router, walls, and interference from other devices affect wireless speeds.',
+        ],
+        'device' => 
+         [
+          'title' => 'Device Performance',
+          'desc' => 'Older devices or those running many programs may not achieve full speeds.',
+        ],
+        'router' => 
+         [
+          'title' => 'Router Quality',
+          'desc' => 'Outdated routers may not support your full internet speed capabilities.',
+        ],
+      ],
+      'improve_title' => 'How to Improve Your Speed',
+      'improve_list' => 
+       [
+        0 => 'Use Ethernet cable instead of Wi-Fi when possible',
+        1 => 'Place router in central location away from walls',
+        2 => 'Upgrade to a modern router that supports your speed tier',
+        3 => 'Close bandwidth-heavy applications',
+        4 => 'Update router firmware regularly',
+        5 => 'Consider upgrading your internet plan',
+        6 => 'Use Quality of Service (QoS) settings on router',
+      ],
+      'tips_title' => 'Pro Tips for Accurate Results',
+      'tips_list' => 
+       [
+        0 => 'Test at different times of day to see variations',
+        1 => 'Run multiple tests and average the results',
+        2 => 'Test on different devices to rule out device issues',
+        3 => 'Compare Wi-Fi speeds at different locations in your home',
+      ],
+      'faq_title' => 'Frequently Asked Questions',
+      'faq' => 
+       [
+        'q1' => 'What is a good internet speed?',
+        'a1' => 'For general browsing and streaming: 25+ Mbps. For 4K streaming and gaming: 50+ Mbps. For multiple users and heavy usage: 100+ Mbps. For remote work and large households: 200+ Mbps.',
+        'q2' => 'Why is my speed slower than advertised?',
+        'a2' => 'ISPs advertise "up to" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.',
+        'q3' => 'What\'s the difference between Mbps and MBps?',
+        'a3' => 'Mbps (megabits per second) is used for internet speeds. MBps (megabytes per second) is used for file sizes. 1 MBps = 8 Mbps. A 100 Mbps connection downloads at about 12.5 MBps.',
+        'q4' => 'How accurate is this speed test?',
+        'a4' => 'Our speed test provides accurate results by measuring real data transfer. For best accuracy, close other applications, use Ethernet, and run multiple tests.',
+        'q5' => 'Should I test with Wi-Fi or Ethernet?',
+        'a5' => 'Test with Ethernet to measure your true internet speed. Test with Wi-Fi to diagnose wireless issues. Comparing both helps identify if problems are with your internet or Wi-Fi.',
+      ],
+    ],
+  ],
+
+    // Reverse DNS Lookup
+    'reverse-dns' => [
+        'meta' => [
+            'title' => 'Reverse DNS Lookup Tool - Find Hostname from IP Address Free',
+            'description' => 'Free reverse DNS lookup tool to find the hostname associated with any IP address. Check PTR records instantly for email verification and network troubleshooting.',
+            'h1' => 'Reverse DNS Lookup Tool',
+            'subtitle' => 'Perform reverse DNS lookup to find hostname from IP address',
+        ],
+        'form' => [
+            'ip_label' => 'IP Address',
+            'ip_placeholder' => '8.8.8.8',
+            'button' => 'Lookup Hostname',
+            'button_loading' => 'Looking up...',
+        ],
+        'content' => [
+            'what_is_title' => 'What is Reverse DNS?',
+            'what_is_desc' => 'Reverse DNS lookup (rDNS) is the process of determining the hostname associated with an IP address. Unlike regular DNS lookup which converts domain names to IP addresses, reverse DNS does the opposite. It queries PTR (Pointer) records to find the domain name that points to a specific IP address.',
+            'why_use_title' => 'Why Use Reverse DNS?',
+            'why_use_desc' => 'Reverse DNS is crucial for email server verification, security analysis, network troubleshooting, and identifying the owner of an IP address. Email servers often check reverse DNS to verify sender authenticity and prevent spam.',
+            'ptr_records_title' => 'Understanding PTR Records',
+            'ptr_record1' => '<strong>PTR Record:</strong> DNS record type that maps IP to hostname',
+            'ptr_record2' => '<strong>Forward Confirmation:</strong> Hostname should resolve back to same IP',
+            'ptr_record3' => '<strong>Email Delivery:</strong> Required for reliable email server operation',
+            'ptr_record4' => '<strong>Network Identification:</strong> Helps identify server ownership',
+            'ptr_record5' => '<strong>Security Analysis:</strong> Reveals organization behind IP address',
+            'ptr_record6' => '<strong>Logging:</strong> Makes server logs more readable',
+            'use_cases_title' => 'Common Use Cases',
+            'use_cases_desc' => 'Email server administrators configure reverse DNS to ensure their mail servers aren\'t flagged as spam. Network engineers verify that server IP addresses have correct PTR records matching their hostnames. Security analysts investigate suspicious connections by looking up the hostnames of attacking IP addresses. Website owners analyze traffic sources by resolving visitor IP addresses to hostnames. System administrators troubleshoot network issues by verifying DNS configuration integrity through forward and reverse lookup consistency checks.',
+        ],
+    ],
+
+    // Port Checker
+    'port-checker' => [
+        'meta' => [
+            'title' => 'Port Checker Tool - Check Open Ports & Network Connectivity Free',
+            'description' => 'Free port checker tool to test if ports are open, closed, or filtered. Check TCP/UDP ports instantly for network troubleshooting and security auditing.',
+            'h1' => 'Port Checker Tool',
+            'subtitle' => 'Check if ports are open on any server for troubleshooting connectivity',
+        ],
+        'form' => [
+            'host_label' => 'Host or IP Address',
+            'host_placeholder' => 'example.com or 8.8.8.8',
+            'port_label' => 'Port Number',
+            'port_placeholder' => '80',
+            'button' => 'Check Port',
+            'button_loading' => 'Checking...',
+        ],
+        'content' => [
+            'what_is_title' => 'What is Port Checker?',
+            'what_is_desc' => 'A Port Checker is a network diagnostic tool that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Common ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Checking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.',
+            'why_check_title' => 'Why Check Ports?',
+            'why_check_desc' => 'Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren\'t accessible, determining if the issue is with the service itself, firewall rules, or network routing.',
+            'common_ports_title' => 'Common Ports',
+            'port1' => '<strong>Port 80:</strong> HTTP (web traffic)',
+            'port2' => '<strong>Port 443:</strong> HTTPS (secure web traffic)',
+            'port3' => '<strong>Port 22:</strong> SSH (secure shell access)',
+            'port4' => '<strong>Port 21:</strong> FTP (file transfer)',
+            'port5' => '<strong>Port 25:</strong> SMTP (email sending)',
+            'port6' => '<strong>Port 3306:</strong> MySQL database',
+            'port7' => '<strong>Port 3389:</strong> RDP (Remote Desktop)',
+            'security_title' => 'Security Implications',
+            'security_desc' => 'Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others\' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don\'t own.',
+        ],
+    ],
+
+    // Ping Test
+    'ping-test' => [
+        'meta' => [
+            'title' => 'Ping Test Tool - Check Network Latency & Connectivity Free',
+            'description' => 'Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.',
+            'h1' => 'Ping Test Tool',
+            'subtitle' => 'Test server response time and network connectivity from multiple locations',
+        ],
+        'form' => [
+            'host_label' => 'Host or IP Address',
+            'host_placeholder' => 'google.com or 8.8.8.8',
+            'button' => 'Ping Host',
+            'button_loading' => 'Pinging...',
+        ],
+        'content' => [
+            'what_is_title' => 'What is Ping Test?',
+            'what_is_desc' => 'Ping is a network diagnostic tool that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. The tool is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.',
+            'why_use_title' => 'Why Use Ping Test?',
+            'why_use_desc' => 'Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to check server latency before joining online games, while website owners monitor their server\'s responsiveness to ensure optimal user experience.',
+            'metrics_title' => 'Understanding Ping Metrics',
+            'metric1' => '<strong>Packets Sent/Received:</strong> Number of ping requests and successful responses',
+            'metric2' => '<strong>Packet Loss:</strong> Percentage of packets that didn\'t receive a response',
+            'metric3' => '<strong>Minimum Time:</strong> Fastest round-trip time recorded',
+            'metric4' => '<strong>Average Time:</strong> Mean latency across all pings',
+            'metric5' => '<strong>Maximum Time:</strong> Slowest round-trip time recorded',
+            'metric6' => '<strong>TTL (Time To Live):</strong> Number of network hops before packet expires',
+            'interpreting_title' => 'Interpreting Results',
+            'interpreting_desc' => 'Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues.',
+        ],
+    ],
+
+    // WHOIS Lookup
+    'whois-lookup' => [
+        'meta' => [
+            'title' => 'WHOIS Lookup Tool - Domain Registration Information Free',
+            'description' => 'Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.',
+            'h1' => 'WHOIS Lookup Tool',
+            'subtitle' => 'Query WHOIS database for domain registration & ownership details',
+        ],
+        'form' => [
+            'domain_label' => 'Domain Name',
+            'domain_placeholder' => 'example.com',
+            'button' => 'Lookup WHOIS',
+            'button_loading' => 'Looking up...',
+        ],
+        'content' => [
+            'what_is_title' => 'What is WHOIS Lookup?',
+            'what_is_desc' => 'WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.',
+            'why_use_title' => 'Why Use WHOIS Lookup?',
+            'why_use_desc' => 'WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors\' domains.',
+            'form_hint' => 'Enter domain without http:// or https://',
+            'key_info_title' => 'Key Information Provided',
+            'key_info1' => '<strong>Registrant Information:</strong> Domain owner details (may be privacy protected)',
+            'key_info2' => '<strong>Registration Dates:</strong> When domain was registered and last updated',
+            'key_info3' => '<strong>Expiration Date:</strong> When domain registration expires',
+            'key_info4' => '<strong>Registrar:</strong> Company managing the domain registration',
+            'key_info5' => '<strong>Name Servers:</strong> DNS servers hosting the domain',
+            'key_info6' => '<strong>Domain Status:</strong> Current status codes and locks',
+            'how_to_title' => 'How to Use',
+            'how_to1' => 'Enter the domain name you want to lookup',
+            'how_to2' => 'Click "Lookup WHOIS" button',
+            'how_to3' => 'Review comprehensive registration information',
+            'how_to4' => 'Use the data for your research or verification needs',
+            'privacy_title' => 'Privacy and WHOIS',
+            'privacy_desc' => 'Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws.',
+        ],
+    ],
+
+    // DNS Lookup
     'dns-lookup' => [
         'meta' => [
             'title' => 'DNS Lookup Tool - Check DNS Records Online Free',
@@ -30,7 +293,38 @@ return [
         ],
     ],
 
-    // Domain To Ip
+    // IP Lookup
+    'ip-lookup' => [
+        'meta' => [
+            'title' => 'IP Lookup Tool - Get IP Address Information & Geolocation Free',
+            'description' => 'Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.',
+            'h1' => 'IP Lookup Tool',
+            'subtitle' => 'Get detailed information about any IP address including location & ISP',
+        ],
+        'form' => [
+            'ip_label' => 'IP Address',
+            'ip_placeholder' => '8.8.8.8',
+            'button' => 'Lookup IP Address',
+            'button_loading' => 'Looking up...',
+        ],
+        'content' => [
+            'what_is_title' => 'What is IP Lookup?',
+            'what_is_desc' => 'IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. This information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.',
+            'why_use_title' => 'Why Use IP Lookup?',
+            'why_use_desc' => 'IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It\'s also useful for verifying VPN connections and understanding your own internet footprint.',
+            'features_title' => 'Key Features',
+            'feature1_title' => '🌍 Geolocation Data',
+            'feature1_desc' => 'Country, region, city, and coordinates',
+            'feature2_title' => '🏢 ISP Information',
+            'feature2_desc' => 'Internet Service Provider details',
+            'feature3_title' => '🔗 Hostname Resolution',
+            'feature3_desc' => 'Domain name associated with IP',
+            'feature4_title' => '⚡ Instant Results',
+            'feature4_desc' => 'Fast and accurate lookup',
+        ],
+    ],
+
+    // Domain to IP
     'domain-to-ip' => [
         'meta' => [
             'title' => 'Domain to IP Converter - Find IP Address of Any Domain Free',
@@ -79,308 +373,7 @@ return [
         ],
     ],
 
-    // Ip Lookup
-    'ip-lookup' => [
-        'meta' => [
-            'title' => 'IP Lookup Tool - Get IP Address Information & Geolocation Free',
-            'description' => 'Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.',
-            'h1' => 'IP Lookup Tool',
-            'subtitle' => 'Get detailed information about any IP address including location & ISP',
-        ],
-        'form' => [
-            'ip_label' => 'IP Address',
-            'ip_placeholder' => '8.8.8.8',
-            'button' => 'Lookup IP Address',
-            'button_loading' => 'Looking up...',
-        ],
-        'content' => [
-            'what_is_title' => 'What is IP Lookup?',
-            'what_is_desc' => 'IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. This information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.',
-            'why_use_title' => 'Why Use IP Lookup?',
-            'why_use_desc' => 'IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It\'s also useful for verifying VPN connections and understanding your own internet footprint.',
-            'features_title' => 'Key Features',
-            'feature1_title' => '🌍 Geolocation Data',
-            'feature1_desc' => 'Country, region, city, and coordinates',
-            'feature2_title' => '🏢 ISP Information',
-            'feature2_desc' => 'Internet Service Provider details',
-            'feature3_title' => '🔗 Hostname Resolution',
-            'feature3_desc' => 'Domain name associated with IP',
-            'feature4_title' => '⚡ Instant Results',
-            'feature4_desc' => 'Fast and accurate lookup',
-        ],
-    ],
-
-    // Ping Test
-    'ping-test' => [
-        'meta' => [
-            'title' => 'Ping Test Tool - Check Network Latency & Connectivity Free',
-            'description' => 'Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.',
-            'h1' => 'Ping Test Tool',
-            'subtitle' => 'Test server response time and network connectivity from multiple locations',
-        ],
-        'form' => [
-            'host_label' => 'Host or IP Address',
-            'host_placeholder' => 'google.com or 8.8.8.8',
-            'button' => 'Ping Host',
-            'button_loading' => 'Pinging...',
-        ],
-        'content' => [
-            'what_is_title' => 'What is Ping Test?',
-            'what_is_desc' => 'Ping is a network diagnostic tool that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. The tool is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.',
-            'why_use_title' => 'Why Use Ping Test?',
-            'why_use_desc' => 'Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to check server latency before joining online games, while website owners monitor their server\'s responsiveness to ensure optimal user experience.',
-            'metrics_title' => 'Understanding Ping Metrics',
-            'metric1' => '<strong>Packets Sent/Received:</strong> Number of ping requests and successful responses',
-            'metric2' => '<strong>Packet Loss:</strong> Percentage of packets that didn\'t receive a response',
-            'metric3' => '<strong>Minimum Time:</strong> Fastest round-trip time recorded',
-            'metric4' => '<strong>Average Time:</strong> Mean latency across all pings',
-            'metric5' => '<strong>Maximum Time:</strong> Slowest round-trip time recorded',
-            'metric6' => '<strong>TTL (Time To Live):</strong> Number of network hops before packet expires',
-            'interpreting_title' => 'Interpreting Results',
-            'interpreting_desc' => 'Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues.',
-        ],
-    ],
-
-    // Port Checker
-    'port-checker' => [
-        'meta' => [
-            'title' => 'Port Checker Tool - Check Open Ports & Network Connectivity Free',
-            'description' => 'Free port checker tool to test if ports are open, closed, or filtered. Check TCP/UDP ports instantly for network troubleshooting and security auditing.',
-            'h1' => 'Port Checker Tool',
-            'subtitle' => 'Check if ports are open on any server for troubleshooting connectivity',
-        ],
-        'form' => [
-            'host_label' => 'Host or IP Address',
-            'host_placeholder' => 'example.com or 8.8.8.8',
-            'port_label' => 'Port Number',
-            'port_placeholder' => '80',
-            'button' => 'Check Port',
-            'button_loading' => 'Checking...',
-        ],
-        'content' => [
-            'what_is_title' => 'What is Port Checker?',
-            'what_is_desc' => 'A Port Checker is a network diagnostic tool that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Common ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Checking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.',
-            'why_check_title' => 'Why Check Ports?',
-            'why_check_desc' => 'Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren\'t accessible, determining if the issue is with the service itself, firewall rules, or network routing.',
-            'common_ports_title' => 'Common Ports',
-            'port1' => '<strong>Port 80:</strong> HTTP (web traffic)',
-            'port2' => '<strong>Port 443:</strong> HTTPS (secure web traffic)',
-            'port3' => '<strong>Port 22:</strong> SSH (secure shell access)',
-            'port4' => '<strong>Port 21:</strong> FTP (file transfer)',
-            'port5' => '<strong>Port 25:</strong> SMTP (email sending)',
-            'port6' => '<strong>Port 3306:</strong> MySQL database',
-            'port7' => '<strong>Port 3389:</strong> RDP (Remote Desktop)',
-            'security_title' => 'Security Implications',
-            'security_desc' => 'Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others\' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don\'t own.',
-        ],
-    ],
-
-    // Redirect Checker
-    'redirect-checker' => [
-        'meta' => [
-            'title' => 'Redirect Checker - HTTP Status Code & Redirect Chain Analyzer Free',
-            'description' => 'Free redirect checker tool to analyze URL redirects, trace redirect chains, check HTTP status codes, and detect redirect loops. Essential for SEO and debugging.',
-            'h1' => 'Redirect Checker',
-            'subtitle' => 'Trace HTTP redirects and identify 301, 302 & meta refresh chains',
-        ],
-        'form' => [
-            'url_label' => 'Enter URL(s) to Check (One per line, max 10)',
-            'url_placeholder' => 'https://example.com
-https://another-site.com
-https://third-site.com',
-            'url_count' => '{count} / 10 URLs',
-            'canonical_check' => 'Also check domain canonical (www vs non-www)',
-            'user_agent_label' => 'User Agent',
-            'user_agent_default' => 'Default (Browser)',
-            'user_agent_googlebot' => 'Googlebot (Google)',
-            'user_agent_bingbot' => 'Bingbot (Bing)',
-            'user_agent_facebook' => 'Facebook Crawler',
-            'user_agent_iphone' => 'iPhone (Safari)',
-            'user_agent_android' => 'Android (Chrome)',
-            'button' => 'Check URLs',
-        ],
-        'content' => [
-            'main_title' => 'Redirect & HTTP Status Checker Tool',
-            'main_subtitle' => 'Complete URL analysis with redirect tracing, status code checking, and loop detection',
-            'intro' => 'Analyze HTTP status codes, trace redirect chains, detect 301 and 302 redirects, identify broken links, and find redirect loops with our comprehensive free tool. Essential for SEO optimization, website debugging, migration planning, and ensuring proper URL structure. Check any URL instantly to see the complete redirect path, response codes, and potential issues.',
-            'features_title' => '✨ Key Features',
-            'feature1_title' => 'Bulk URL Checking',
-            'feature1_desc' => 'Check up to 10 URLs simultaneously with progress tracking',
-            'feature2_title' => 'Canonical Domain Check',
-            'feature2_desc' => 'Verify www vs non-www consistency for SEO',
-            'feature3_title' => 'Loop Detection',
-            'feature3_desc' => 'Visual diagram showing exact redirect loop patterns',
-            'feature4_title' => 'Complete Chain Analysis',
-            'feature4_desc' => 'Trace full redirect paths with status codes and timing',
-            'what_are_redirects_title' => 'What Are HTTP Redirects?',
-            'what_are_redirects_desc' => 'HTTP redirects are server responses that automatically send visitors from one URL to another. When a browser requests a URL, the server can respond with a redirect status code (like 301 or 302) along with the new destination URL. Redirects are essential for maintaining SEO value when moving content, fixing broken links, enforcing HTTPS, and managing domain changes.',
-            'status_codes_title' => 'Understanding HTTP Status Codes',
-            'status_2xx_title' => '2xx - Success',
-            'status_2xx_desc' => 'These indicate successful requests with no issues',
-            'status_3xx_title' => '3xx - Redirects',
-            'status_3xx_desc' => 'URL has moved, browser should follow redirect',
-            'status_4xx_title' => '4xx - Client Errors',
-            'status_4xx_desc' => 'Request error on client side',
-            'status_5xx_title' => '5xx - Server Errors',
-            'status_5xx_desc' => 'Server-side errors',
-            'redirect_301_title' => '301 Permanent Redirect',
-            'redirect_301_when' => '<strong>When to use:</strong> Content permanently moved to a new URL',
-            'redirect_301_seo' => '<strong>SEO Impact:</strong> Passes 90-99% of link equity to new URL',
-            'redirect_301_cache' => '<strong>Caching:</strong> Browsers cache permanently, hard to change',
-            'redirect_302_title' => '302 Temporary Redirect',
-            'redirect_302_when' => '<strong>When to use:</strong> Content temporarily at different URL',
-            'redirect_302_seo' => '<strong>SEO Impact:</strong> Original URL keeps ranking power',
-            'redirect_302_cache' => '<strong>Caching:</strong> Not cached, easy to change or remove',
-            'why_check_title' => 'Why Check Redirects?',
-            'why_check_1' => '<strong>Site Migrations:</strong> Verify all old URLs properly redirect to new locations',
-            'why_check_2' => '<strong>Broken Link Detection:</strong> Find 404 errors and broken redirect chains',
-            'why_check_3' => '<strong>Performance Issues:</strong> Identify excessive redirect chains slowing page load',
-            'why_check_4' => '<strong>Redirect Loop Detection:</strong> Catch circular redirects causing infinite loops',
-            'why_check_5' => '<strong>Security Audits:</strong> Verify redirect destinations and prevent malicious redirects',
-            'why_check_6' => '<strong>User Experience:</strong> Ensure visitors reach intended content quickly',
-            'why_check_7' => '<strong>Analytics Accuracy:</strong> Confirm tracking codes work through redirect chains',
-            'redirect_chains_title' => 'What Are Redirect Chains?',
-            'redirect_chains_desc' => 'A redirect chain occurs when a URL redirects to another URL, which redirects to another, and so on. Each hop in the chain adds latency and can impact SEO. Example: URL A → URL B → URL C → Final URL (3 redirects).',
-            'chain_recommended' => '<strong>Recommended:</strong> 0-1 redirects (direct or single hop)',
-            'chain_acceptable' => '<strong>Acceptable:</strong> 2-3 redirects (minor performance impact)',
-            'chain_problematic' => '<strong>Problematic:</strong> 4+ redirects (significant SEO and speed issues)',
-            'redirect_loops_title' => 'What Are Redirect Loops?',
-            'redirect_loops_desc' => 'A redirect loop happens when URL A redirects to URL B, which redirects back to URL A, creating an infinite cycle. Browsers detect this and show an error like "Too many redirects" or "Redirect loop detected". This completely breaks the page and must be fixed immediately.',
-            'common_issues_title' => 'Common Redirect Issues & Solutions',
-            'issue1_title' => 'Long Redirect Chains',
-            'issue1_problem' => '<strong>Problem:</strong> Multiple redirects slow page load and dilute SEO value',
-            'issue1_solution' => '<strong>Solution:</strong> Update redirects to point directly to final destination',
-            'issue2_title' => 'Mixed Redirect Types',
-            'issue2_problem' => '<strong>Problem:</strong> Inconsistent redirect types confuse search engines',
-            'issue2_solution' => '<strong>Solution:</strong> Use 301 for permanent moves, 302 only for temporary',
-            'issue3_title' => 'Broken Redirect Chains',
-            'issue3_problem' => '<strong>Problem:</strong> Redirect points to non-existent page',
-            'issue3_solution' => '<strong>Solution:</strong> Update redirect to valid destination or remove it',
-            'issue4_title' => 'HTTPS/HTTP Loops',
-            'issue4_problem' => '<strong>Problem:</strong> Site redirects between HTTP and HTTPS infinitely',
-            'issue4_solution' => '<strong>Solution:</strong> Fix SSL configuration and .htaccess rules',
-            'best_practices_title' => 'SEO Best Practices for Redirects',
-            'best_practice1' => '• Always use 301 redirects for permanent URL changes to preserve SEO value',
-            'best_practice2' => '• Minimize redirect chains - redirect directly to final destination when possible',
-            'best_practice3' => '• Avoid redirect loops at all costs - they break user experience and SEO',
-            'best_practice4' => '• Update internal links instead of relying on redirects',
-            'best_practice5' => '• Monitor redirect performance regularly with tools like this',
-            'best_practice6' => '• Keep redirects active for at least 1 year after URL changes',
-            'best_practice7' => '• Use 302 redirects sparingly and only for truly temporary situations',
-        ],
-    ],
-
-    // Reverse Dns
-    'reverse-dns' => [
-        'meta' => [
-            'title' => 'Reverse DNS Lookup Tool - Find Hostname from IP Address Free',
-            'description' => 'Free reverse DNS lookup tool to find the hostname associated with any IP address. Check PTR records instantly for email verification and network troubleshooting.',
-            'h1' => 'Reverse DNS Lookup Tool',
-            'subtitle' => 'Perform reverse DNS lookup to find hostname from IP address',
-        ],
-        'form' => [
-            'ip_label' => 'IP Address',
-            'ip_placeholder' => '8.8.8.8',
-            'button' => 'Lookup Hostname',
-            'button_loading' => 'Looking up...',
-        ],
-        'content' => [
-            'what_is_title' => 'What is Reverse DNS?',
-            'what_is_desc' => 'Reverse DNS lookup (rDNS) is the process of determining the hostname associated with an IP address. Unlike regular DNS lookup which converts domain names to IP addresses, reverse DNS does the opposite. It queries PTR (Pointer) records to find the domain name that points to a specific IP address.',
-            'why_use_title' => 'Why Use Reverse DNS?',
-            'why_use_desc' => 'Reverse DNS is crucial for email server verification, security analysis, network troubleshooting, and identifying the owner of an IP address. Email servers often check reverse DNS to verify sender authenticity and prevent spam.',
-            'ptr_records_title' => 'Understanding PTR Records',
-            'ptr_record1' => '<strong>PTR Record:</strong> DNS record type that maps IP to hostname',
-            'ptr_record2' => '<strong>Forward Confirmation:</strong> Hostname should resolve back to same IP',
-            'ptr_record3' => '<strong>Email Delivery:</strong> Required for reliable email server operation',
-            'ptr_record4' => '<strong>Network Identification:</strong> Helps identify server ownership',
-            'ptr_record5' => '<strong>Security Analysis:</strong> Reveals organization behind IP address',
-            'ptr_record6' => '<strong>Logging:</strong> Makes server logs more readable',
-            'use_cases_title' => 'Common Use Cases',
-            'use_cases_desc' => 'Email server administrators configure reverse DNS to ensure their mail servers aren\'t flagged as spam. Network engineers verify that server IP addresses have correct PTR records matching their hostnames. Security analysts investigate suspicious connections by looking up the hostnames of attacking IP addresses. Website owners analyze traffic sources by resolving visitor IP addresses to hostnames. System administrators troubleshoot network issues by verifying DNS configuration integrity through forward and reverse lookup consistency checks.',
-        ],
-    ],
-
-    // Traceroute
-    'traceroute' => [
-        'meta' => [
-            'title' => 'Traceroute Tool - Trace Network Path & Hops Online Free',
-            'description' => 'Free traceroute tool to trace the network path packets take to reach a destination. View all hops, latency, and routing information instantly for network troubleshooting.',
-            'h1' => 'Traceroute Tool',
-            'subtitle' => 'Trace network path and identify routing hops to any destination',
-        ],
-        'form' => [
-            'host_label' => 'Host or IP Address',
-            'host_placeholder' => 'google.com or 8.8.8.8',
-            'button' => 'Trace Route',
-            'button_loading' => 'Tracing...',
-        ],
-        'content' => [
-            'what_is_title' => 'What is Traceroute?',
-            'what_is_desc' => 'Traceroute is a network diagnostic tool that tracks the path packets take from your computer to a destination host. It shows each router (hop) along the way and measures the time taken to reach each hop.',
-            'why_use_title' => 'Why Use Traceroute?',
-            'why_use_desc' => 'Traceroute helps identify network bottlenecks, routing issues, and points of failure. It\'s essential for diagnosing slow connections and understanding network topology.',
-            'hops_title' => 'Understanding Hops',
-            'hop1' => '<strong>Hop Number:</strong> Sequential number of each router in the path',
-            'hop2' => '<strong>IP Address:</strong> The router\'s IP address at each hop',
-            'hop3' => '<strong>Hostname:</strong> Domain name of the router (if available)',
-            'hop4' => '<strong>Response Time:</strong> How long it took to reach that hop',
-            'hop5' => '<strong>Asterisks (*):</strong> Indicate timeouts or routers that don\'t respond',
-            'hop6' => '<strong>Total Hops:</strong> Complete number of routers in the path',
-            'issues_title' => 'Common Issues Revealed',
-            'issues_desc' => 'Traceroute can identify routing loops where packets circle between routers, high latency at specific hops indicating network congestion, packet loss at particular points in the network, and inefficient routing paths. If response times suddenly increase at a specific hop, that router or network segment is likely causing delays. Multiple timeouts suggest firewall blocking or router configuration issues. Understanding these patterns helps pinpoint exactly where network problems originate.',
-        ],
-    ],
-
-    // What Is My Ip
-    'what-is-my-ip' => [
-        'meta' => [
-            'title' => 'What is My IP Address? - Check Your IP Location Free',
-            'description' => 'Find out your public IP address instantly. Check your IPv4/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.',
-            'h1' => 'What is My IP Address?',
-            'subtitle' => 'Instantly discover your public IP address with detailed ISP information',
-        ],
-        'content' => [
-            'main_title' => 'What Is My IP Address - Free IP Lookup Tool',
-            'main_desc' => 'Find your public IP address instantly with our free IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.',
-            'what_is_title' => 'What is My IP Address?',
-            'what_is_desc' => 'Your IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.',
-            'why_check_title' => 'Why Check Your IP?',
-            'why_check_desc' => 'Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.',
-            'ipv4_vs_ipv6_title' => 'IPv4 vs IPv6 Addresses',
-            'ipv4_title' => 'IPv4 Address',
-            'ipv4_format' => '<strong>Format:</strong> 192.168.1.1 (four numbers 0-255 separated by dots)',
-            'ipv4_total' => '<strong>Total Addresses:</strong> ~4.3 billion addresses',
-            'ipv4_desc' => 'Most common format worldwide, but running out of available addresses due to internet growth',
-            'ipv6_title' => 'IPv6 Address',
-            'ipv6_format' => '<strong>Format:</strong> 2001:0db8:85a3::8a2e:0370:7334',
-            'ipv6_total' => '<strong>Total Addresses:</strong> 340 undecillion addresses',
-            'ipv6_desc' => 'Newer format with virtually unlimited addresses, gradually replacing IPv4',
-            'public_vs_private_title' => 'Public vs Private IP Addresses',
-            'public_ip_title' => '🌐 Public IP Address',
-            'public_ip_desc' => 'Your unique address on the internet, visible to all websites and services you visit.',
-            'public_ip_example' => '<strong>Example:</strong> 203.0.113.45',
-            'public_ip_note' => 'Assigned by your ISP and used for all internet communication',
-            'private_ip_title' => '🏠 Private IP Address',
-            'private_ip_desc' => 'Your device\'s address on your local network, not visible on the internet.',
-            'private_ip_example' => '<strong>Example:</strong> 192.168.1.100',
-            'private_ip_note' => 'Used for communication within your home or office network',
-            'security_title' => 'IP Address Security & Privacy',
-            'security_desc1' => 'Your IP address reveals your approximate location (city/region), ISP, and can be used to track your online activity across websites. While it doesn\'t expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.',
-            'security_desc2' => '<strong>Privacy Protection:</strong> Use a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN\'s IP instead of yours. Our tool shows exactly what information websites can see about your connection.',
-            'dynamic_vs_static_title' => 'Dynamic vs Static IP Addresses',
-            'dynamic_ip' => '<strong>Dynamic IP:</strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.',
-            'static_ip' => '<strong>Static IP:</strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.',
-            'privacy_tips_title' => 'Privacy & Security Tips',
-            'privacy_tip1' => '• Never share your IP address publicly on forums or social media',
-            'privacy_tip2' => '• Use a VPN when connecting to public WiFi networks',
-            'privacy_tip3' => '• Enable your router\'s firewall to block unauthorized access',
-            'privacy_tip4' => '• Regularly check your IP to detect unauthorized VPN disconnections',
-            'privacy_tip5' => '• Be aware that websites log your IP for security and analytics',
-        ],
-    ],
-
-    // What Is My Isp
+    // What Is My ISP
     'what-is-my-isp' => [
         'meta' => [
             'title' => 'What is My ISP? - Check Internet Service Provider Free',
@@ -437,41 +430,158 @@ https://third-site.com',
         ],
     ],
 
-    // Whois Lookup
-    'whois-lookup' => [
+    // What Is My IP
+    'what-is-my-ip' => [
         'meta' => [
-            'title' => 'WHOIS Lookup Tool - Domain Registration Information Free',
-            'description' => 'Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.',
-            'h1' => 'WHOIS Lookup Tool',
-            'subtitle' => 'Query WHOIS database for domain registration & ownership details',
-        ],
-        'form' => [
-            'domain_label' => 'Domain Name',
-            'domain_placeholder' => 'example.com',
-            'button' => 'Lookup WHOIS',
-            'button_loading' => 'Looking up...',
+            'title' => 'What is My IP Address? - Check Your IP Location Free',
+            'description' => 'Find out your public IP address instantly. Check your IPv4/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.',
+            'h1' => 'What is My IP Address?',
+            'subtitle' => 'Instantly discover your public IP address with detailed ISP information',
         ],
         'content' => [
-            'what_is_title' => 'What is WHOIS Lookup?',
-            'what_is_desc' => 'WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.',
-            'why_use_title' => 'Why Use WHOIS Lookup?',
-            'why_use_desc' => 'WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors\' domains.',
-            'form_hint' => 'Enter domain without http:// or https://',
-            'key_info_title' => 'Key Information Provided',
-            'key_info1' => '<strong>Registrant Information:</strong> Domain owner details (may be privacy protected)',
-            'key_info2' => '<strong>Registration Dates:</strong> When domain was registered and last updated',
-            'key_info3' => '<strong>Expiration Date:</strong> When domain registration expires',
-            'key_info4' => '<strong>Registrar:</strong> Company managing the domain registration',
-            'key_info5' => '<strong>Name Servers:</strong> DNS servers hosting the domain',
-            'key_info6' => '<strong>Domain Status:</strong> Current status codes and locks',
-            'how_to_title' => 'How to Use',
-            'how_to1' => 'Enter the domain name you want to lookup',
-            'how_to2' => 'Click "Lookup WHOIS" button',
-            'how_to3' => 'Review comprehensive registration information',
-            'how_to4' => 'Use the data for your research or verification needs',
-            'privacy_title' => 'Privacy and WHOIS',
-            'privacy_desc' => 'Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws.',
+            'main_title' => 'What Is My IP Address - Free IP Lookup Tool',
+            'main_desc' => 'Find your public IP address instantly with our free IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.',
+            'what_is_title' => 'What is My IP Address?',
+            'what_is_desc' => 'Your IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.',
+            'why_check_title' => 'Why Check Your IP?',
+            'why_check_desc' => 'Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.',
+            'ipv4_vs_ipv6_title' => 'IPv4 vs IPv6 Addresses',
+            'ipv4_title' => 'IPv4 Address',
+            'ipv4_format' => '<strong>Format:</strong> 192.168.1.1 (four numbers 0-255 separated by dots)',
+            'ipv4_total' => '<strong>Total Addresses:</strong> ~4.3 billion addresses',
+            'ipv4_desc' => 'Most common format worldwide, but running out of available addresses due to internet growth',
+            'ipv6_title' => 'IPv6 Address',
+            'ipv6_format' => '<strong>Format:</strong> 2001:0db8:85a3::8a2e:0370:7334',
+            'ipv6_total' => '<strong>Total Addresses:</strong> 340 undecillion addresses',
+            'ipv6_desc' => 'Newer format with virtually unlimited addresses, gradually replacing IPv4',
+            'public_vs_private_title' => 'Public vs Private IP Addresses',
+            'public_ip_title' => '🌐 Public IP Address',
+            'public_ip_desc' => 'Your unique address on the internet, visible to all websites and services you visit.',
+            'public_ip_example' => '<strong>Example:</strong> 203.0.113.45',
+            'public_ip_note' => 'Assigned by your ISP and used for all internet communication',
+            'private_ip_title' => '🏠 Private IP Address',
+            'private_ip_desc' => 'Your device\'s address on your local network, not visible on the internet.',
+            'private_ip_example' => '<strong>Example:</strong> 192.168.1.100',
+            'private_ip_note' => 'Used for communication within your home or office network',
+            'security_title' => 'IP Address Security & Privacy',
+            'security_desc1' => 'Your IP address reveals your approximate location (city/region), ISP, and can be used to track your online activity across websites. While it doesn\'t expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.',
+            'security_desc2' => '<strong>Privacy Protection:</strong> Use a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN\'s IP instead of yours. Our tool shows exactly what information websites can see about your connection.',
+            'dynamic_vs_static_title' => 'Dynamic vs Static IP Addresses',
+            'dynamic_ip' => '<strong>Dynamic IP:</strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.',
+            'static_ip' => '<strong>Static IP:</strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.',
+            'privacy_tips_title' => 'Privacy & Security Tips',
+            'privacy_tip1' => '• Never share your IP address publicly on forums or social media',
+            'privacy_tip2' => '• Use a VPN when connecting to public WiFi networks',
+            'privacy_tip3' => '• Enable your router\'s firewall to block unauthorized access',
+            'privacy_tip4' => '• Regularly check your IP to detect unauthorized VPN disconnections',
+            'privacy_tip5' => '• Be aware that websites log your IP for security and analytics',
         ],
     ],
 
+    // User Agent Parser
+    'user-agent-parser' => 
+   [
+    'meta' => 
+     [
+      'title' => 'Free User Agent Parser',
+      'description' => 'Identify browser, OS, and device from User Agent string with our free tool.',
+      'h1' => 'User Agent Parser',
+      'subtitle' => 'Identify browser, OS, and device from User Agent string',
+    ],
+    'editor' => 
+     [
+      'label_input' => 'User Agent String',
+      'ph_input' => 'Mozilla/5.0...',
+      'btn_parse' => 'Parse',
+      'btn_use_my_ua' => 'Use My User Agent',
+      'label_browser' => 'Browser',
+      'label_os' => 'Operating System',
+      'label_device' => 'Device',
+      'label_raw' => 'Raw Engine info',
+    ],
+    'js' => 
+     [
+    ],
+    'content' => 
+     [
+      'p1' => 'Our free User Agent Parser instantly decodes user agent strings to identify the browser, operating system, device type, and engine version. Useful for developers debugging browser-specific issues or analyzing traffic sources.',
+      'features_title' => 'Features',
+      'features' => 
+       [
+        'instant' => 
+         [
+          'title' => 'Instant Parsing',
+          'desc' => 'Decode user agents in milliseconds',
+        ],
+        'detailed' => 
+         [
+          'title' => 'Detailed Info',
+          'desc' => 'Extracts Browser, OS, Device, and Engine',
+        ],
+        'auto' => 
+         [
+          'title' => 'Auto-Detect',
+          'desc' => 'One-click to parse your own current user agent',
+        ],
+        'free' => 
+         [
+          'title' => '100% Free',
+          'desc' => 'Unlimited uses, no cost',
+        ],
+      ],
+      'uses_title' => 'Common Use Cases',
+      'uses' => 
+       [
+        'debugging' => 
+         [
+          'title' => 'Debugging',
+          'desc' => 'Identify detailed browser versions for troubleshooting',
+        ],
+        'analytics' => 
+         [
+          'title' => 'Analytics',
+          'desc' => 'Understand what devices and OSs your users are using',
+        ],
+        'dev' => 
+         [
+          'title' => 'Development',
+          'desc' => 'Verify user agent strings during testing',
+        ],
+        'security' => 
+         [
+          'title' => 'Security',
+          'desc' => 'Analyze suspicious user agent strings in logs',
+        ],
+      ],
+      'how_to_title' => 'How to Use',
+      'how_to' => 
+       [
+        'step1' => 
+         [
+          'title' => 'Enter String',
+          'desc' => 'Paste a User Agent string or click "Use My User Agent"',
+        ],
+        'step2' => 
+         [
+          'title' => 'Parse',
+          'desc' => 'Click "Parse" to decode the string',
+        ],
+        'step3' => 
+         [
+          'title' => 'View Results',
+          'desc' => 'See the broken-down details for Browser, OS, and Device',
+        ],
+      ],
+      'faq_title' => 'Frequently Asked Questions',
+      'faq' => 
+       [
+        'q1' => 'What is a User Agent?',
+        'a1' => 'A User Agent is a string of text sent by your web browser to every website you visit, identifying the browser, version, operating system, and device type.',
+        'q2' => 'Is this parser accurate?',
+        'a2' => 'It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.',
+        'q3' => 'Is my data private?',
+        'a3' => 'Yes, parsing happens locally in your browser. We do not store your user agent data.',
+      ],
+    ],
+  ],
 ];

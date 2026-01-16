@@ -1,100 +1,57 @@
 <?php
 
 return [
-    'epoch-time-converter' => [
+
+    // Time Unit Converter
+    'time-unit-converter' => [
         'meta' => [
-            'title' => 'Epoch Time Converter - Unix Timestamp to Date & Date to Timestamp',
-            'description' => 'Convert Unix Epoch timestamps to human-readable dates and vice versa. Support for local time, GMT/UTC, and relative time with our free, instant converter.',
-            'h1' => 'Epoch Time Converter',
-            'subtitle' => 'Convert Unix timestamps to human-readable dates and vice versa',
+            'title' => 'Time Unit Converter - Seconds, Minutes, Hours',
+            'description' => 'Convert time durations instantly. Seconds to minutes, hours to days, weeks to months, and years.',
+            'h1' => 'Time Unit Converter',
+            'subtitle' => 'Convert seconds, minutes, hours, days, weeks & years',
+        ],
+        'form' => [
+            'from_label' => 'From',
+            'to_label' => 'To',
+            'unit_ms' => 'Millisecond (ms)',
+            'unit_s' => 'Second (s)',
+            'unit_min' => 'Minute (min)',
+            'unit_hr' => 'Hour (hr)',
+            'unit_day' => 'Day (d)',
+            'unit_wk' => 'Week (wk)',
+            'unit_mo' => 'Month (Avg. 30.44d)',
+            'unit_yr' => 'Year (365.25d)',
         ],
         'content' => [
-            'hero_title' => 'Deciphering the Unix Epoch',
-            'hero_description' => 'Unix time (or Epoch time) is the system checking the heartbeat of the digital world. It tracks the number of seconds that have elapsed since the "Unix Epoch" — 00:00:00 UTC on 1 January 1970. ',
-            'why_title' => 'Why use Unix Time?',
-            'efficiency_title' => 'Efficiency',
-            'efficiency_desc' => 'Computers prefer simple integers over complex date strings. It\'s faster to process and store.',
-            'universal_title' => 'Universal',
-            'universal_desc' => 'It ignores timezones during storage. 1696516200 is the same moment in Tokyo as it is in New York.',
-            'math_title' => 'Easy Math',
-            'math_desc' => 'Calculating the difference between two dates is as simple as simple subtraction (A - B).',
-            'code_title' => 'Get Current Epoch in Your Language',
-            'apocalypse_title' => 'The Year 2038 Problem',
-            'apocalypse_desc' => 'On January 19, 2038, 32-bit systems will run out of numbers to store the time, causing the "Unix Y2K". Most modern 64-bit systems are already safe for the next 292 billion years. ',
+            'feature1_title' => 'Duration Conversion',
+            'feature1_desc' => 'Convert between seconds, minutes, hours, days, weeks, months, and years.',
+            'feature2_title' => 'Project Planning',
+            'feature2_desc' => 'Perfect for scheduling, video editing, project timelines, and time tracking.',
+            'feature3_title' => 'Precise Calculations',
+            'feature3_desc' => 'Accurate time conversions for science, programming, and daily planning.',
+            'main_title' => 'Understanding Time Unit Conversion',
+            'description_p1' => 'Time is measured in various units depending on the scale: seconds for short durations, minutes and hours for daily activities, days for short periods, and weeks, months, and years for longer spans. The SI base unit is the second, defined by atomic clock precision. Understanding time conversions is essential for scheduling, programming, project management, and scientific calculations.',
+            'description_p2' => 'One minute equals 60 seconds, one hour equals 3,600 seconds, and one day equals 86,400 seconds. There are 168 hours in a week and approximately 730 hours in a month. These conversions become crucial when working with different time scales, converting between formats, or calculating durations across various contexts.',
+            'usage_examples_title' => 'Common Usage Examples',
+            'usage_1' => '<strong>Project Management:</strong> Converting work hours to days or weeks',
+            'usage_2' => '<strong>Video Editing:</strong> Converting timestamps between formats',
+            'usage_3' => '<strong>Programming:</strong> Millisecond to second conversions for timers',
+            'usage_4' => '<strong>Science:</strong> Measuring reaction times in experiments',
+            'usage_5' => '<strong>Fitness:</strong> Converting workout durations',
+            'usage_6' => '<strong>Travel:</strong> Calculating trip durations across time zones',
             'faq_title' => 'Frequently Asked Questions',
+            'faq_q1' => 'How many seconds are in a day?',
+            'faq_a1' => 'There are exactly 86,400 seconds in one day (24 hours × 60 minutes × 60 seconds = 86,400 seconds).',
+            'faq_q2' => 'How do I convert hours to days?',
+            'faq_a2' => 'Divide the number of hours by 24. For example, 48 hours ÷ 24 = 2 days. Our converter handles this automatically!',
+            'faq_q3' => 'Why is a year 365.25 days?',
+            'faq_a3' => 'Earth\'s orbit takes approximately 365.25 days, which is why we have leap years every 4 years to add the extra quarter day and keep calendars aligned with seasons.',
+            'faq_q4' => 'What\'s the difference between duration and time?',
+            'faq_a4' => 'Time refers to a specific moment (e.g., 3:00 PM), while duration measures how long something lasts (e.g., 2 hours). This converter handles duration conversions.',
         ],
     ],
 
-    'date-to-unix-timestamp' => [
-        'meta' => [
-            'title' => 'Date to Unix Timestamp Converter - Instant & Accurate',
-            'description' => 'Convert any date and time into a Unix Timestamp instantly. Supports both local time and UTC/GMT inputs for precise server-side scheduling and debugging.',
-            'h1' => 'Date to Unix Timestamp Converter',
-            'subtitle' => 'Transform dates to Unix epoch timestamps for programming & databases',
-        ],
-        'form' => [
-            'title' => 'Select Date & Time',
-            'date_label' => 'Date',
-            'time_label' => 'Time',
-            'local_time' => 'Use Local Time',
-            'utc_mode' => 'Use UTC/GMT',
-            'button' => 'Convert to Timestamp',
-            'result_title' => 'UNIX TIMESTAMP',
-            'result_subtitle' => 'Seconds since Jan 01 1970 (UTC)',
-        ],
-        'content' => [
-            'hero_title' => 'Convert Human Time to Machine Time',
-            'hero_description' => 'Transform readable dates into precise Unix Timestamps. Essential for database queries, API parameters, and debugging code. ',
-            'mode_title' => 'Understanding the Modes',
-            'local_title' => 'Local Mode',
-            'local_desc' => 'Uses your browser\'s current timezone. Best for finding the timestamp of an event happening "here and now" or in your specific location.',
-            'utc_title' => 'UTC Mode',
-            'utc_desc' => 'Treats your input as Coordinated Universal Time (GMT). Essential when dealing with server logs or international event coordination.',
-            'snippets_title' => 'Code Snippets for Generating Timestamps',
-            'use_cases_title' => 'Common Use Cases',
-            'use_case_1' => 'Setting expiration times for cookies or tokens.',
-            'use_case_2' => 'Scheduling crons or database jobs.',
-            'use_case_3' => 'Comparing dates efficiently in code logic.',
-        ],
-    ],
-
-    'unix-timestamp-to-date' => [
-        'meta' => [
-            'title' => 'Unix Timestamp to Date Converter - Readable DateTime Tool',
-            'description' => 'Decode Unix Timestamps into human-readable dates. See the exact time in GMT, your local timezone, and ISO 8601 format instantly.',
-            'h1' => 'Unix Timestamp to Date Converter',
-            'subtitle' => 'Convert Unix timestamps to readable date formats across timezones',
-        ],
-        'form' => [
-            'title' => 'Enter Unix Timestamp',
-            'placeholder' => 'e.g. 1672531200',
-            'button_now' => 'Use Now',
-            'button_convert' => 'Convert to Date',
-            'result_gmt' => 'GMT / UTC',
-            'result_local' => 'Your Local Time',
-            'result_iso' => 'ISO 8601 Format',
-        ],
-        'content' => [
-            'hero_title' => 'Deciphering the Epoch',
-            'hero_description' => 'Turn those cryptic 10-digit numbers back into concepts humans understand: years, months, days, and hours.',
-            'formats_title' => 'Output Formats Explained',
-            'format_gmt_title' => 'GMT/UTC',
-            'format_gmt_example' => 'Fri, 01 Jan 2023 00:00:00 GMT',
-            'format_gmt_desc' => 'The absolute time reference, unaffected by daylight saving or geographical location.',
-            'format_iso_title' => 'ISO 8601',
-            'format_iso_example' => '2023-01-01T00:00:00.000Z',
-            'format_iso_desc' => 'The international standard format (YYYY-MM-DD), perfect for data exchange and APIs. ',
-            'format_local_title' => 'Your Local Time',
-            'format_local_example' => 'Sun Jan 01 2023 00:00:00 GMT+0000',
-            'format_local_desc' => 'Shows how it looks in your browser\'s local timezone',
-            'reverse_title' => 'Reverse Process',
-            'reverse_description' => 'Need to go the other way? Convert a human date back into a timestamp.',
-            'reverse_button' => 'Go to Date to Timestamp Tool',
-            'tip_title' => 'Developer Tip',
-            'tip_desc' => 'If your timestamp has 13 digits instead of 10, it is in milliseconds! Our tool automatically detects and handles millisecond timestamps (common in JavaScript and Java) by converting them correctly.',
-        ],
-    ],
-
+    // Local Time to UTC
     'local-time-to-utc' => [
         'meta' => [
             'title' => 'Local Time to UTC Converter - Timezone Adjuster',
@@ -144,6 +101,7 @@ return [
         ],
     ],
 
+    // UTC to Local Time
     'utc-to-local-time' => [
         'meta' => [
             'title' => 'UTC to Local Time Converter - Global Time Translator',
@@ -179,6 +137,104 @@ return [
         ],
     ],
 
+    // Date to Unix Timestamp
+    'date-to-unix-timestamp' => [
+        'meta' => [
+            'title' => 'Date to Unix Timestamp Converter - Instant & Accurate',
+            'description' => 'Convert any date and time into a Unix Timestamp instantly. Supports both local time and UTC/GMT inputs for precise server-side scheduling and debugging.',
+            'h1' => 'Date to Unix Timestamp Converter',
+            'subtitle' => 'Transform dates to Unix epoch timestamps for programming & databases',
+        ],
+        'form' => [
+            'title' => 'Select Date & Time',
+            'date_label' => 'Date',
+            'time_label' => 'Time',
+            'local_time' => 'Use Local Time',
+            'utc_mode' => 'Use UTC/GMT',
+            'button' => 'Convert to Timestamp',
+            'result_title' => 'UNIX TIMESTAMP',
+            'result_subtitle' => 'Seconds since Jan 01 1970 (UTC)',
+        ],
+        'content' => [
+            'hero_title' => 'Convert Human Time to Machine Time',
+            'hero_description' => 'Transform readable dates into precise Unix Timestamps. Essential for database queries, API parameters, and debugging code. ',
+            'mode_title' => 'Understanding the Modes',
+            'local_title' => 'Local Mode',
+            'local_desc' => 'Uses your browser\'s current timezone. Best for finding the timestamp of an event happening "here and now" or in your specific location.',
+            'utc_title' => 'UTC Mode',
+            'utc_desc' => 'Treats your input as Coordinated Universal Time (GMT). Essential when dealing with server logs or international event coordination.',
+            'snippets_title' => 'Code Snippets for Generating Timestamps',
+            'use_cases_title' => 'Common Use Cases',
+            'use_case_1' => 'Setting expiration times for cookies or tokens.',
+            'use_case_2' => 'Scheduling crons or database jobs.',
+            'use_case_3' => 'Comparing dates efficiently in code logic.',
+        ],
+    ],
+
+    // Unix Timestamp to Date
+    'unix-timestamp-to-date' => [
+        'meta' => [
+            'title' => 'Unix Timestamp to Date Converter - Readable DateTime Tool',
+            'description' => 'Decode Unix Timestamps into human-readable dates. See the exact time in GMT, your local timezone, and ISO 8601 format instantly.',
+            'h1' => 'Unix Timestamp to Date Converter',
+            'subtitle' => 'Convert Unix timestamps to readable date formats across timezones',
+        ],
+        'form' => [
+            'title' => 'Enter Unix Timestamp',
+            'placeholder' => 'e.g. 1672531200',
+            'button_now' => 'Use Now',
+            'button_convert' => 'Convert to Date',
+            'result_gmt' => 'GMT / UTC',
+            'result_local' => 'Your Local Time',
+            'result_iso' => 'ISO 8601 Format',
+        ],
+        'content' => [
+            'hero_title' => 'Deciphering the Epoch',
+            'hero_description' => 'Turn those cryptic 10-digit numbers back into concepts humans understand: years, months, days, and hours.',
+            'formats_title' => 'Output Formats Explained',
+            'format_gmt_title' => 'GMT/UTC',
+            'format_gmt_example' => 'Fri, 01 Jan 2023 00:00:00 GMT',
+            'format_gmt_desc' => 'The absolute time reference, unaffected by daylight saving or geographical location.',
+            'format_iso_title' => 'ISO 8601',
+            'format_iso_example' => '2023-01-01T00:00:00.000Z',
+            'format_iso_desc' => 'The international standard format (YYYY-MM-DD), perfect for data exchange and APIs. ',
+            'format_local_title' => 'Your Local Time',
+            'format_local_example' => 'Sun Jan 01 2023 00:00:00 GMT+0000',
+            'format_local_desc' => 'Shows how it looks in your browser\'s local timezone',
+            'reverse_title' => 'Reverse Process',
+            'reverse_description' => 'Need to go the other way? Convert a human date back into a timestamp.',
+            'reverse_button' => 'Go to Date to Timestamp Tool',
+            'tip_title' => 'Developer Tip',
+            'tip_desc' => 'If your timestamp has 13 digits instead of 10, it is in milliseconds! Our tool automatically detects and handles millisecond timestamps (common in JavaScript and Java) by converting them correctly.',
+        ],
+    ],
+
+    // Epoch Time Converter
+    'epoch-time-converter' => [
+        'meta' => [
+            'title' => 'Epoch Time Converter - Unix Timestamp to Date & Date to Timestamp',
+            'description' => 'Convert Unix Epoch timestamps to human-readable dates and vice versa. Support for local time, GMT/UTC, and relative time with our free, instant converter.',
+            'h1' => 'Epoch Time Converter',
+            'subtitle' => 'Convert Unix timestamps to human-readable dates and vice versa',
+        ],
+        'content' => [
+            'hero_title' => 'Deciphering the Unix Epoch',
+            'hero_description' => 'Unix time (or Epoch time) is the system checking the heartbeat of the digital world. It tracks the number of seconds that have elapsed since the "Unix Epoch" — 00:00:00 UTC on 1 January 1970. ',
+            'why_title' => 'Why use Unix Time?',
+            'efficiency_title' => 'Efficiency',
+            'efficiency_desc' => 'Computers prefer simple integers over complex date strings. It\'s faster to process and store.',
+            'universal_title' => 'Universal',
+            'universal_desc' => 'It ignores timezones during storage. 1696516200 is the same moment in Tokyo as it is in New York.',
+            'math_title' => 'Easy Math',
+            'math_desc' => 'Calculating the difference between two dates is as simple as simple subtraction (A - B).',
+            'code_title' => 'Get Current Epoch in Your Language',
+            'apocalypse_title' => 'The Year 2038 Problem',
+            'apocalypse_desc' => 'On January 19, 2038, 32-bit systems will run out of numbers to store the time, causing the "Unix Y2K". Most modern 64-bit systems are already safe for the next 292 billion years. ',
+            'faq_title' => 'Frequently Asked Questions',
+        ],
+    ],
+
+    // Time Zone Converter
     'time-zone-converter' => [
         'meta' => [
             'title' => 'Time Zone Converter - Global Meeting Planner',
@@ -222,5 +278,4 @@ return [
             'faq_a2' => 'Political and geographical reasons. India (UTC+5:30) and Nepal (UTC+5:45) chose these offsets to better align solar noon with their longitude.',
         ],
     ],
-
 ];

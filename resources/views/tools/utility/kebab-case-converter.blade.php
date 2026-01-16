@@ -134,16 +134,12 @@
             <h3 class="text-3xl font-bold text-gray-900 mb-6">{{ __tool('kebab-case-converter', 'content.how_title') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 mb-8">
                 <ol class="space-y-3 text-gray-700">
-                    <li class="flex items-start gap-3"><span
-                            class="font-bold text-orange-600 text-lg">1.</span><span><strong>{{ __tool('kebab-case-converter', 'content.how_steps.1.title') }}</strong> {{ __tool('kebab-case-converter', 'content.how_steps.1.desc') }}</span></li>
-                    <li class="flex items-start gap-3"><span
-                            class="font-bold text-orange-600 text-lg">2.</span><span><strong>{{ __tool('kebab-case-converter', 'content.how_steps.2.title') }}</strong> {{ __tool('kebab-case-converter', 'content.how_steps.2.desc') }}</span></li>
-                    <li class="flex items-start gap-3"><span
-                            class="font-bold text-orange-600 text-lg">3.</span><span><strong>{{ __tool('kebab-case-converter', 'content.how_steps.3.title') }}</strong> {{ __tool('kebab-case-converter', 'content.how_steps.3.desc') }}</span></li>
-                    <li class="flex items-start gap-3"><span
-                            class="font-bold text-orange-600 text-lg">4.</span><span><strong>{{ __tool('kebab-case-converter', 'content.how_steps.4.title') }}</strong> {{ __tool('kebab-case-converter', 'content.how_steps.4.desc') }}</span></li>
-                    <li class="flex items-start gap-3"><span
-                            class="font-bold text-orange-600 text-lg">5.</span><span><strong>{{ __tool('kebab-case-converter', 'content.how_steps.5.title') }}</strong> {{ __tool('kebab-case-converter', 'content.how_steps.5.desc') }}</span></li>
+                    @foreach(__tool('kebab-case-converter', 'content.how_to_steps') as $index => $step)
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-orange-600 text-lg">{{ $index }}.</span>
+                            <span><strong>{{ $step['title'] }}:</strong> {{ $step['desc'] }}</span>
+                        </li>
+                    @endforeach
                 </ol>
             </div>
 

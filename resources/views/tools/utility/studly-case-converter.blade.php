@@ -58,37 +58,37 @@
                         </path>
                     </svg>
                 </div>
-                <h2 class="text-4xl font-black text-gray-900 mb-3">{!! __tool('studly-case-converter', 'meta.h1', 'Free Studly Case Converter Tool') !!}</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{!! __tool('studly-case-converter', 'meta.subtitle', 'Convert text to StUdLy CaSe for creative formatting') !!}</p>
+                <h2 class="text-4xl font-black text-gray-900 mb-3">{!! __tool('studly-case-converter', 'meta.h1') !!}</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">{!! __tool('studly-case-converter', 'meta.subtitle') !!}</p>
             </div>
 
-            <p class="text-gray-700 leading-relaxed text-lg mb-8">{!! __tool('studly-case-converter', 'content.p1', 'Transform your text into StUdLy CaSe format with our free online converter. Studly case randomly alternates between uppercase and lowercase letters, creating a playful and eye-catching text style. Perfect for social media posts, creative content, and fun messaging.') !!}</p>
+            <p class="text-gray-700 leading-relaxed text-lg mb-8">{!! __tool('studly-case-converter', 'content.p1') !!}</p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('utilities', 'features.title', 'Features') !!}</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">{!! __tool('studly-case-converter', 'content.features_title') !!}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🎨</div>
-                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('studly-case-converter', 'content.features.styling.title', 'Creative Styling') !!}</h4>
-                    <p class="text-gray-600 text-sm">{!! __tool('studly-case-converter', 'content.features.styling.desc', 'Create unique, eye-catching text formatting') !!}</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('studly-case-converter', 'content.features.styling.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('studly-case-converter', 'content.features.styling.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-rose-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">⚡</div>
-                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('studly-case-converter', 'content.features.instant.title', 'Instant Results') !!}</h4>
-                    <p class="text-gray-600 text-sm">{!! __tool('studly-case-converter', 'content.features.instant.desc', 'Convert to studly case in milliseconds') !!}</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('studly-case-converter', 'content.features.instant.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('studly-case-converter', 'content.features.instant.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-pink-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">🔒</div>
-                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('studly-case-converter', 'content.features.privacy.title', 'Privacy Protected') !!}</h4>
-                    <p class="text-gray-600 text-sm">{!! __tool('studly-case-converter', 'content.features.privacy.desc', 'All processing happens in your browser') !!}</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('studly-case-converter', 'content.features.privacy.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('studly-case-converter', 'content.features.privacy.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-red-300 transition-all shadow-lg hover:shadow-xl">
                     <div class="text-3xl mb-3">📝</div>
-                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('studly-case-converter', 'content.features.bulk.title', 'Bulk Processing') !!}</h4>
-                    <p class="text-gray-600 text-sm">{!! __tool('studly-case-converter', 'content.features.bulk.desc', 'Convert multiple lines at once') !!}</p>
+                    <h4 class="font-bold text-gray-900 mb-2">{!! __tool('studly-case-converter', 'content.features.bulk.title') !!}</h4>
+                    <p class="text-gray-600 text-sm">{!! __tool('studly-case-converter', 'content.features.bulk.desc') !!}</p>
                 </div>
                 <div
                     class="bg-white rounded-xl p-5 border-2 border-gray-200 hover:border-purple-300 transition-all shadow-lg hover:shadow-xl">
