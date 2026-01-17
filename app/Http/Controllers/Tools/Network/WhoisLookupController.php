@@ -14,7 +14,7 @@ class WhoisLookupController extends Controller
         return view("tools.network.whois-lookup", compact('tool'));
     }
 
-    public function lookup(Request $request)
+    public function process(Request $request)
     {
         $request->validate([
             'domain' => 'required|string'

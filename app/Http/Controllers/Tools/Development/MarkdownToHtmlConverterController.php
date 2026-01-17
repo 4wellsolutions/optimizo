@@ -15,7 +15,7 @@ class MarkdownToHtmlConverterController extends Controller
         return view("tools.development.markdown-to-html-converter", compact('tool'));
     }
 
-    public function convert(Request $request)
+    public function process(Request $request)
     {
         $request->validate([
             'markdown' => 'required|string|max:100000',

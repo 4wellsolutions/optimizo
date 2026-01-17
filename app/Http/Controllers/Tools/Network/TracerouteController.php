@@ -14,7 +14,7 @@ class TracerouteController extends Controller
         return view("tools.network.traceroute", compact('tool'));
     }
 
-    public function trace(Request $request)
+    public function process(Request $request)
     {
         $request->validate([
             'host' => 'required|string'

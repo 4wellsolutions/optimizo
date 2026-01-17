@@ -14,7 +14,7 @@ class IpLookupController extends Controller
         return view("tools.network.ip-lookup", compact('tool'));
     }
 
-    public function lookup(Request $request)
+    public function process(Request $request)
     {
         $request->validate([
             'ip_address' => 'required|ip'

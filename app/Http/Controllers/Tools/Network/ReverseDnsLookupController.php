@@ -14,7 +14,7 @@ class ReverseDnsLookupController extends Controller
         return view("tools.network.reverse-dns", compact('tool'));
     }
 
-    public function lookup(Request $request)
+    public function process(Request $request)
     {
         $request->validate([
             'ip_address' => 'required|ip'

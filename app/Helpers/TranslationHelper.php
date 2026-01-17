@@ -1,7 +1,7 @@
 <?php
 
 if (!function_exists('__tool')) {
-    function __tool($slug, $key)
+    function __tool($slug, $key, $default = null)
     {
         $slugToCategory = [
             'angle-converter' => 'converters',
@@ -152,7 +152,66 @@ if (!function_exists('__tool')) {
         ];
 
         $categoryFile = $slugToCategory[$slug] ?? 'utility';
-        return __("tools/$categoryFile.$slug.$key");
+
+        static $translations = [];
+        $locale = app()->getLocale();
+        $cacheKey = "$locale.$categoryFile";
+
+        if (!isset($translations[$cacheKey])) {
+            $jsonPath = base_path("resources/lang/$locale/tools/$categoryFile.json");
+            if (file_exists($jsonPath)) {
+                $translations[$cacheKey] = json_decode(file_get_contents($jsonPath), true) ?: [];
+            } else {
+                $translations[$cacheKey] = [];
+            }
+        }
+
+        $data = $translations[$cacheKey][$slug] ?? null;
+
+        // Traverse the nested key
+        if ($data !== null) {
+            $keys = explode('.', $key);
+            foreach ($keys as $k) {
+                if (is_array($data) && isset($data[$k])) {
+                    $data = $data[$k];
+                } else {
+                    $data = null;
+                    break;
+                }
+            }
+        }
+
+        if ($data === null || (is_string($data) && strpos($data, '[Pending Translation') !== false)) {
+            // Fallback to English if current locale is not English
+            if ($locale !== 'en') {
+                $enCacheKey = "en.$categoryFile";
+                if (!isset($translations[$enCacheKey])) {
+                    $enJsonPath = base_path("resources/lang/en/tools/$categoryFile.json");
+                    $translations[$enCacheKey] = file_exists($enJsonPath) ? json_decode(file_get_contents($enJsonPath), true) : [];
+                }
+
+                $enData = $translations[$enCacheKey][$slug] ?? null;
+                if ($enData !== null) {
+                    $keys = explode('.', $key);
+                    foreach ($keys as $k) {
+                        if (is_array($enData) && isset($enData[$k])) {
+                            $enData = $enData[$k];
+                        } else {
+                            $enData = null;
+                            break;
+                        }
+                    }
+                }
+
+                if ($enData !== null && !(is_string($enData) && strpos($enData, '[Pending Translation') !== false)) {
+                    return $enData;
+                }
+            }
+
+            return $default ?? "tools/$categoryFile.$slug.$key";
+        }
+
+        return $data;
     }
 }
 

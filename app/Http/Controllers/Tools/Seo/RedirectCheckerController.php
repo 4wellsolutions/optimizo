@@ -12,7 +12,7 @@ class RedirectCheckerController extends Controller
         $tool = Tool::where('slug', 'redirect-checker')->firstOrFail();
         return view("tools.seo.redirect-checker", compact('tool'));
     }
-    public function check(\Illuminate\Http\Request $request)
+    public function process(\Illuminate\Http\Request $request)
     {
         $request->validate([
             'url' => 'required|url',

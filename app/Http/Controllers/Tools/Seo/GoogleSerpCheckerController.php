@@ -19,5 +19,11 @@ class GoogleSerpCheckerController extends Controller
         return view("tools.seo.google-serp-checker", compact('tool'));
     }
 
+    public function process(\Illuminate\Http\Request $request)
+    {
+        // Placeholder for SERP checking logic
+        return response()->json(['success' => true]);
+    }
+
 
 }

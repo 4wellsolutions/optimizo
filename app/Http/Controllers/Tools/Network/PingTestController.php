@@ -14,7 +14,7 @@ class PingTestController extends Controller
         return view("tools.network.ping-test", compact('tool'));
     }
 
-    public function ping(Request $request)
+    public function process(Request $request)
     {
         $request->validate([
             'host' => 'required|string'

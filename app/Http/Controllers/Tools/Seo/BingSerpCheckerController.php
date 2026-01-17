@@ -14,16 +14,13 @@ class BingSerpCheckerController extends Controller
      */
     public function index()
     {
-        $tool = Tool::where('slug', 'bing-serp-checker')->first();
-
-        if (!$tool) {
-            $tool = new Tool([
-                'name' => 'Bing SERP Checker',
-                'description' => 'Check Bing search results from any location.',
-                'slug' => 'bing-serp-checker'
-            ]);
-        }
-
+        $tool = Tool::where('slug', 'bing-serp-checker')->firstOrFail();
         return view("tools.seo.bing-serp-checker", compact('tool'));
+    }
+
+    public function process(\Illuminate\Http\Request $request)
+    {
+        // Placeholder for SERP checking logic
+        return response()->json(['success' => true]);
     }
 }

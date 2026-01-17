@@ -14,7 +14,7 @@ class DomainToIpController extends Controller
         return view("tools.network.domain-to-ip", compact('tool'));
     }
 
-    public function lookup(Request $request)
+    public function process(Request $request)
     {
         $request->validate([
             'domain' => 'required|string'
