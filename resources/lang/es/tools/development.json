@@ -2455,9 +2455,23 @@
             },
             "example_title": "Ejemplo de Estructura",
             "faq_title": "Preguntas Frecuentes",
-            "faq": "¿Cómo maneja los atributos? Los atributos se convierten en columnas adicionales. ¿Soporta archivos grandes? Sí, el procesamiento es eficiente.",
+            "faq": {
+                "q1": "¿Cómo maneja los atributos?",
+                "a1": "Los atributos se convierten en columnas adicionales en el CSV.",
+                "q2": "¿Soporta archivos grandes?",
+                "a2": "Sí, el procesamiento es eficiente y ocurre localmente.",
+                "q3": "¿Es gratuito?",
+                "a3": "Sí, es un servicio 100% gratuito.",
+                "q4": "¿Es seguro?",
+                "a4": "Totalmente, tus datos no salen de tu equipo."
+            },
             "best_practices_title": "Mejores Prácticas",
-            "best_practices": "Asegúrate de que el XML esté bien formado antes de empezar."
+            "best_practices": [
+                {
+                    "title": "XML Bien Formado",
+                    "desc": "Asegúrate de que el XML esté bien formado antes de empezar."
+                }
+            ]
         },
         "js": {
             "error_empty": "Por favor ingresa datos XML",
@@ -2547,12 +2561,43 @@
             },
             "how_to_title": "Cómo usar el convertidor",
             "how_to_desc": "Sigue estos sencillos pasos para transformar tus datos.",
-            "steps": "1. Pega tu código XML. 2. Haz clic en 'Convertir'. 3. Copia el resultado JSON.",
+            "steps": [
+                {
+                    "title": "Pega tu XML",
+                    "desc": "Copia y pega tu código XML en el campo de entrada arriba."
+                },
+                {
+                    "title": "Haz clic en Convertir",
+                    "desc": "Presiona el botón \"Convertir a JSON\" para iniciar la transformación."
+                },
+                {
+                    "title": "Copia y Usa",
+                    "desc": "Revisa los resultados JSON y usa el botón de copiar para una exportación fácil."
+                }
+            ],
             "example_title": "Ejemplo de Transformación",
             "faq_title": "Preguntas Frecuentes",
-            "faq": "¿Es gratuito? Sí. ¿Soporta namespaces? Sí, se incluyen como prefijos.",
+            "faq": {
+                "q1": "¿Es gratuito?",
+                "a1": "Sí, nuestro convertidor es 100% gratuito.",
+                "q2": "¿Es seguro?",
+                "a2": "Sí, todo el proceso ocurre en tu navegador local.",
+                "q3": "¿Soporta estructuras anidadas?",
+                "a3": "Sí, maneja correctamente elementos XML complejos y anidados.",
+                "q4": "¿Cómo maneja los namespaces?",
+                "a4": "Los namespaces se incluyen como prefijos en el JSON final."
+            },
             "tips_title": "Consejos Útiles",
-            "tips": "Usa la indentación para revisar mejor el resultado."
+            "tips": [
+                {
+                    "title": "Valida tu XML",
+                    "desc": "Asegúrate de que tu XML esté bien formado antes de empezar."
+                },
+                {
+                    "title": "Indentación",
+                    "desc": "Usa la indentación para revisar mejor el resultado JSON."
+                }
+            ]
         },
         "js": {
             "error_empty": "Por favor ingresa datos XML para convertir",

@@ -11,7 +11,7 @@ class ReverseDnsLookupController extends Controller
     public function index()
     {
         $tool = Tool::where('slug', 'reverse-dns-lookup')->firstOrFail();
-        return view("tools.network.reverse-dns", compact('tool'));
+        return view("tools.network.reverse-dns-lookup", compact('tool'));
     }
 
     public function process(Request $request)

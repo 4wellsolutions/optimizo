@@ -8,51 +8,16 @@ use App\Models\Tool;
 
 class JwtDecoderController extends Controller
 {
-    public function urlEncode()
+    public function index()
     {
-        $tool = Tool::where('slug', 'url-encoder')->firstOrFail();
-        return view("tools.development.url-encoder-decoder", compact('tool'));
-    }
-
-    public function urlDecode()
-    {
-        $tool = Tool::where('slug', 'url-decoder')->firstOrFail();
-        return view("tools.development.url-encoder-decoder", compact('tool'));
-    }
-
-    public function htmlEncode()
-    {
-        $tool = Tool::where('slug', 'html-encoder')->firstOrFail();
-        return view("tools.development.html-encoder-decoder", compact('tool'));
-    }
-
-    public function htmlDecode()
-    {
-        $tool = Tool::where('slug', 'html-decoder')->firstOrFail();
-        return view("tools.development.html-encoder-decoder", compact('tool'));
-    }
-
-    public function unicodeEncode()
-    {
-        $tool = Tool::where('slug', 'unicode-encoder')->firstOrFail();
-        return view("tools.development.unicode-encoder-decoder", compact('tool'));
-    }
-
-    public function unicodeDecode()
-    {
-        $tool = Tool::where('slug', 'unicode-decoder')->firstOrFail();
-        return view("tools.development.unicode-encoder-decoder", compact('tool'));
-    }
-
-    public function jwtDecode()
-    {
-        $tool = Tool::where('slug', 'jwt-decoder')->firstOrFail();
+        $tool = Tool::where('slug', 'jwt-decoder')->active()->firstOrFail();
         return view("tools.development.jwt-decoder", compact('tool'));
     }
 
-    public function asciiConvert()
+    public function process(Request $request)
     {
-        $tool = Tool::where('slug', 'ascii-converter')->firstOrFail();
-        return view("tools.converters.ascii-converter", compact('tool'));
+        // For standardizing, we add the process method.
+        // However, the current blade file handles decoding in the browser.
+        return response()->json(['error' => 'Client-side processing expected'], 400);
     }
 }

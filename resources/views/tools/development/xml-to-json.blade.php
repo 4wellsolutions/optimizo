@@ -181,15 +181,20 @@
                 <p class="text-gray-700 mb-6 text-lg">{{ __tool('xml-to-json', 'content.how_to_desc', 'Our XML to JSON converter uses advanced parsing algorithms to accurately transform XML documents into JSON format.') }}</p>
                 
                 <div class="space-y-6">
-                    @foreach(__tool('xml-to-json', 'content.steps') as $step)
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">✓</div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 text-lg">{{ $step['title'] }}</h4>
-                                <p class="text-gray-600">{{ $step['desc'] }}</p>
-                            </div>
-                        </div>
-                    @endforeach
+                    @php $steps = __tool('xml-to-json', 'content.steps'); @endphp
+                    @if(is_array($steps))
+                        @foreach($steps as $step)
+                            @if(is_array($step) && isset($step['title'], $step['desc']))
+                                <div class="flex items-start gap-4">
+                                    <div class="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">✓</div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 text-lg">{{ $step['title'] }}</h4>
+                                        <p class="text-gray-600">{{ $step['desc'] }}</p>
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
+                    @endif
                 </div>
             </div>
 
@@ -230,14 +235,17 @@
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ {{ __tool('xml-to-json', 'content.faq_title', 'Frequently Asked Questions') }}</h3>
             <div class="space-y-4 mb-12">
-                @foreach(__tool('xml-to-json', 'content.faq') as $key => $value)
-                    @if(str_starts_with($key, 'q'))
-                        <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                            <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ $value }}</h4>
-                            <p class="text-gray-700 leading-relaxed">{{ __tool('xml-to-json', 'content.faq.a' . substr($key, 1)) }}</p>
-                        </div>
-                    @endif
-                @endforeach
+                @php $faqs = __tool('xml-to-json', 'content.faq'); @endphp
+                @if(is_array($faqs))
+                    @foreach($faqs as $key => $value)
+                        @if(str_starts_with($key, 'q'))
+                            <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                                <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ $value }}</h4>
+                                <p class="text-gray-700 leading-relaxed">{{ __tool('xml-to-json', 'content.faq.a' . substr($key, 1)) }}</p>
+                            </div>
+                        @endif
+                    @endforeach
+                @endif
             </div>
 
             <div class="bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-yellow-200 rounded-2xl p-8">
@@ -245,12 +253,17 @@
                     <span class="text-3xl">💡</span> {{ __tool('xml-to-json', 'content.tips_title', 'Tips & Best Practices') }}
                 </h3>
                 <div class="grid md:grid-cols-2 gap-6">
-                    @foreach(__tool('xml-to-json', 'content.tips') as $tip)
-                        <div>
-                            <h4 class="font-bold text-yellow-800 mb-2">{{ $tip['title'] }}</h4>
-                            <p class="text-yellow-700 text-sm">{{ $tip['desc'] }}</p>
-                        </div>
-                    @endforeach
+                    @php $tips = __tool('xml-to-json', 'content.tips'); @endphp
+                    @if(is_array($tips))
+                        @foreach($tips as $tip)
+                            @if(is_array($tip) && isset($tip['title'], $tip['desc']))
+                                <div>
+                                    <h4 class="font-bold text-yellow-800 mb-2">{{ $tip['title'] }}</h4>
+                                    <p class="text-yellow-700 text-sm">{{ $tip['desc'] }}</p>
+                                </div>
+                            @endif
+                        @endforeach
+                    @endif
                 </div>
             </div>
         </div>

@@ -197,7 +197,9 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::get('youtube-handle-checker', [YoutubeHandleCheckerController::class, 'index'])->name($n('youtube.youtube-handle-checker'));
     Route::post('youtube-handle-checker', [YoutubeHandleCheckerController::class, 'check'])->name($n('youtube.youtube-handle-checker.check'));
     Route::get('youtube-video-tags-extractor', [YoutubeVideoTagsExtractorController::class, 'index'])->name($n('youtube.youtube-video-tags-extractor'));
+    Route::post('youtube-video-tags-extractor', [YoutubeVideoTagsExtractorController::class, 'extract'])->name($n('youtube.youtube-video-tags-extractor.extract'));
     Route::get('youtube-channel-id-finder', [YoutubeChannelIdFinderController::class, 'index'])->name($n('youtube.youtube-channel-id-finder'));
+    Route::post('youtube-channel-id-finder', [YoutubeChannelIdFinderController::class, 'find'])->name($n('youtube.youtube-channel-id-finder.find'));
     Route::get('youtube-earnings-calculator', [YoutubeEarningsCalculatorController::class, 'index'])->name($n('youtube.youtube-earnings-calculator'));
     Route::post('youtube-earnings-calculator', [YoutubeEarningsCalculatorController::class, 'process'])->name($n('youtube.youtube-earnings-calculator.calculate'));
 });
@@ -392,7 +394,7 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::get('jwt-decoder', [JwtDecoderController::class, 'index'])->name($n('development.jwt-decoder'));
     Route::post('jwt-decoder', [JwtDecoderController::class, 'process'])->name($n('development.jwt-decoder.generate'));
     Route::get('markdown-to-html-converter', [MarkdownToHtmlConverterController::class, 'index'])->name($n('development.markdown-to-html-converter'));
-    Route::post('markdown-to-html-converter', [MarkdownToHtmlConverterController::class, 'process'])->name($n('development.markdown-to-html-converter.generate'));
+    Route::post('markdown-to-html-converter', [MarkdownToHtmlConverterController::class, 'process'])->name($n('development.markdown-to-html-converter.convert'));
     Route::get('unicode-encoder-decoder', [UnicodeEncoderDecoderController::class, 'index'])->name($n('development.unicode-encoder-decoder'));
     Route::post('unicode-encoder-decoder', [UnicodeEncoderDecoderController::class, 'process'])->name($n('development.unicode-encoder-decoder.generate'));
     Route::get('url-encoder-decoder', [UrlEncoderDecoderController::class, 'index'])->name($n('development.url-encoder-decoder'));

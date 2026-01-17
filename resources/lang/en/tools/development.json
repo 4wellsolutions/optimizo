@@ -2443,9 +2443,31 @@
             },
             "example_title": "Conversion Example",
             "faq_title": "Frequently Asked Questions",
-            "faq": "",
+            "faq": {
+                "q1": "Is this converter free?",
+                "a1": "Yes, our XML to CSV converter is completely free to use.",
+                "q2": "Is my data safe?",
+                "a2": "Yes, all processing happens in your browser. Your data is never sent to our servers.",
+                "q3": "Does it support large XML files?",
+                "a3": "Yes, it can handle large XML files, though very large files may take a moment to process.",
+                "q4": "How are attributes handled?",
+                "a4": "Currently, the tool focuses on tag content. Attributes can be included in future updates."
+            },
             "best_practices_title": "Best Practices",
-            "best_practices": ""
+            "best_practices": [
+                {
+                    "title": "Well-formed XML",
+                    "desc": "Ensure your XML is well-formed and contains repeating <row> elements for best results."
+                },
+                {
+                    "title": "Browser Side",
+                    "desc": "Since it runs in your browser, your data stays private and secure."
+                },
+                {
+                    "title": "Backup Data",
+                    "desc": "Always keep a backup of your original XML data before conversion."
+                }
+            ]
         },
         "js": {
             "error_empty": "Please enter XML data",
@@ -2535,12 +2557,47 @@
             },
             "how_to_title": "How XML to JSON Conversion Works",
             "how_to_desc": "Our XML to JSON converter uses advanced parsing algorithms to accurately transform XML documents into JSON format.",
-            "steps": "",
+            "steps": [
+                {
+                    "title": "Paste Your XML",
+                    "desc": "Copy and paste your XML code into the input field above."
+                },
+                {
+                    "title": "Click Convert",
+                    "desc": "Press the \"Convert to JSON\" button to start the transformation."
+                },
+                {
+                    "title": "Copy and Use",
+                    "desc": "Review the beautifully formatted JSON results and use the copy button for easy export."
+                }
+            ],
             "example_title": "Example Conversion",
             "faq_title": "Frequently Asked Questions",
-            "faq": "",
+            "faq": {
+                "q1": "Is this converter free to use?",
+                "a1": "Yes, our XML to JSON converter is 100% free with no hidden costs or registration required.",
+                "q2": "Is my data secure?",
+                "a2": "Absolutely. All processing happens locally in your browser, meaning your data never leaves your device.",
+                "q3": "Does it support nested structures?",
+                "a3": "Yes, it correctly handles complex nested XML elements and preserves their hierarchical relationships.",
+                "q4": "How are attributes handled?",
+                "a4": "XML attributes are converted into JSON properties, typically prefixed with an underscore for clarity."
+            },
             "tips_title": "Tips & Best Practices",
-            "tips": ""
+            "tips": [
+                {
+                    "title": "Validate Your XML",
+                    "desc": "Ensure your XML is well-formed before conversion to avoid processing errors."
+                },
+                {
+                    "title": "Use Pretty Printing",
+                    "desc": "Our tool automatically formats the JSON output for maximum readability."
+                },
+                {
+                    "title": "Browser Privacy",
+                    "desc": "Since it runs client-side, you can even use it offline once the page is loaded."
+                }
+            ]
         },
         "js": {
             "error_empty": "Please enter some XML data to convert.",

@@ -4,12 +4,19 @@ namespace App\Http\Controllers\Tools\Time;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Models\Tool;
 
 class EpochTimeConverterController extends Controller
-{public function index()
+{
+    public function index()
     {
-        $tool = $this->getTool('epoch-time-converter');
+        $tool = Tool::where('slug', 'epoch-time-converter')->active()->firstOrFail();
         return view("tools.time.epoch-time-converter", compact('tool'));
+    }
+
+    public function process(Request $request)
+    {
+        // Handled in browser
+        return response()->json(['error' => 'Client-side processing expected'], 400);
     }
 }

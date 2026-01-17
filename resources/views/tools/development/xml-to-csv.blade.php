@@ -194,28 +194,36 @@
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">❓ {{ __tool('xml-to-csv', 'content.faq_title', 'Frequently Asked Questions') }}</h3>
             <div class="space-y-4 mb-8">
-                @foreach(__tool('xml-to-csv', 'content.faq') as $key => $value)
-                    @if(str_starts_with($key, 'q'))
-                        <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
-                            <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ $value }}</h4>
-                            <p class="text-gray-700 leading-relaxed">{{ __tool('xml-to-csv', 'content.faq.a' . substr($key, 1)) }}</p>
-                        </div>
-                    @endif
-                @endforeach
+                @php $faqs = __tool('xml-to-csv', 'content.faq'); @endphp
+                @if(is_array($faqs))
+                    @foreach($faqs as $key => $value)
+                        @if(str_starts_with($key, 'q'))
+                            <div class="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all">
+                                <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ $value }}</h4>
+                                <p class="text-gray-700 leading-relaxed">{{ __tool('xml-to-csv', 'content.faq.a' . substr($key, 1)) }}</p>
+                            </div>
+                        @endif
+                    @endforeach
+                @endif
             </div>
 
             <h3 class="text-3xl font-bold text-gray-900 mb-6">🎓 {{ __tool('xml-to-csv', 'content.best_practices_title', 'Best Practices') }}</h3>
             <div class="bg-white rounded-xl p-6 border-2 border-gray-200 shadow-lg">
                 <ul class="space-y-3">
-                    @foreach(__tool('xml-to-csv', 'content.best_practices') as $item)
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700"><strong>{{ $item['title'] }}:</strong> {{ $item['desc'] }}</span>
-                        </li>
-                    @endforeach
+                    @php $best_practices = __tool('xml-to-csv', 'content.best_practices'); @endphp
+                    @if(is_array($best_practices))
+                        @foreach($best_practices as $item)
+                            @if(is_array($item) && isset($item['title'], $item['desc']))
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700"><strong>{{ $item['title'] }}:</strong> {{ $item['desc'] }}</span>
+                                </li>
+                            @endif
+                        @endforeach
+                    @endif
                 </ul>
             </div>
         </div>

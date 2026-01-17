@@ -13,4 +13,10 @@ class XmlToCsvController extends Controller
         $tool = Tool::with(['categoryRelation'])->where('slug', 'xml-to-csv')->active()->firstOrFail();
         return view('tools.development.xml-to-csv', compact('tool'));
     }
+
+    public function process(Request $request)
+    {
+        // Handled in browser
+        return response()->json(['error' => 'Client-side processing expected'], 400);
+    }
 }
