@@ -25,8 +25,8 @@
                     </div>
                     <select id="fromUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="b">{{ __tool('digital-storage-converter', 'form.unit_b') }}</option>
-                        <option value="B">{{ __tool('digital-storage-converter', 'form.unit_B') }}</option>
+                        <option value="b">{{ __tool('digital-storage-converter', 'form.unit_bit') }}</option>
+                        <option value="B">{{ __tool('digital-storage-converter', 'form.unit_byte') }}</option>
                         <option value="KB">{{ __tool('digital-storage-converter', 'form.unit_KB') }}</option>
                         <option value="MB" selected>{{ __tool('digital-storage-converter', 'form.unit_MB') }}</option>
                         <option value="GB">{{ __tool('digital-storage-converter', 'form.unit_GB') }}</option>
@@ -59,8 +59,8 @@
                     </div>
                     <select id="toUnit" onchange="convert('from')"
                         class="block w-full p-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-gray-700 focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all cursor-pointer hover:bg-gray-100">
-                        <option value="b">{{ __tool('digital-storage-converter', 'form.unit_b') }}</option>
-                        <option value="B">{{ __tool('digital-storage-converter', 'form.unit_B') }}</option>
+                        <option value="b">{{ __tool('digital-storage-converter', 'form.unit_bit') }}</option>
+                        <option value="B">{{ __tool('digital-storage-converter', 'form.unit_byte') }}</option>
                         <option value="KB" selected>{{ __tool('digital-storage-converter', 'form.unit_KB') }}</option>
                         <option value="MB">{{ __tool('digital-storage-converter', 'form.unit_MB') }}</option>
                         <option value="GB">{{ __tool('digital-storage-converter', 'form.unit_GB') }}</option>
@@ -87,7 +87,8 @@
                                 d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.feature1_title') }}</h3>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('digital-storage-converter', 'content.feature1_title') }}</h3>
                     <p class="text-gray-600">{{ __tool('digital-storage-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -97,7 +98,8 @@
                                 d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.feature2_title') }}</h3>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('digital-storage-converter', 'content.feature2_title') }}</h3>
                     <p class="text-gray-600">{{ __tool('digital-storage-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -107,7 +109,8 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.feature3_title') }}</h3>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        {{ __tool('digital-storage-converter', 'content.feature3_title') }}</h3>
                     <p class="text-gray-600">{{ __tool('digital-storage-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
@@ -120,7 +123,8 @@
                     <p>{{ __tool('digital-storage-converter', 'content.description_p1') }}</p>
                     <p class="mt-4">{{ __tool('digital-storage-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('digital-storage-converter', 'content.usage_examples_title') }}</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+                        {{ __tool('digital-storage-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
                             <li>{!! __tool('digital-storage-converter', 'content.usage_1') !!}</li>
@@ -147,20 +151,28 @@
                 </h2>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q1') }}</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('digital-storage-converter', 'content.faq_a1') }}</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q1') }}
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            {{ __tool('digital-storage-converter', 'content.faq_a1') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q2') }}</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('digital-storage-converter', 'content.faq_a2') }}</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q2') }}
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            {{ __tool('digital-storage-converter', 'content.faq_a2') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q3') }}</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('digital-storage-converter', 'content.faq_a3') }}</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q3') }}
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            {{ __tool('digital-storage-converter', 'content.faq_a3') }}</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q4') }}</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">{{ __tool('digital-storage-converter', 'content.faq_a4') }}</p>
+                        <h3 class="font-bold text-gray-900 mb-2">{{ __tool('digital-storage-converter', 'content.faq_q4') }}
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            {{ __tool('digital-storage-converter', 'content.faq_a4') }}</p>
                     </div>
                 </div>
             </div>

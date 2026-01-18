@@ -154,14 +154,14 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\SitemapController;
 
-$locales = ['', 'ru', 'es'];
+$locales = ['', 'ru', 'es', 'fr', 'de', 'it', 'pt', 'tr', 'ar', 'zh', 'ja', 'id', 'ko', 'fi', 'vi', 'nl', 'pl', 'no', 'cs', 'sv', 'ro', 'da'];
 
 foreach ($locales as $prefix) {
-    Route::prefix($prefix)->group(function() use ($prefix) {
-        $n = function($name) use ($prefix) {
+    Route::prefix($prefix)->group(function () use ($prefix) {
+        $n = function ($name) use ($prefix) {
             return ($prefix === '') ? $name : null;
         };
-        
+
         require __DIR__ . '/web_content.php';
     });
 }
