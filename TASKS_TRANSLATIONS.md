@@ -5,7 +5,7 @@
 - [x] Arabic (ar) - **100% Completed**
 - [x] Italian (it) - **100% Completed**
 - [x] Spanish (es) - **100% Completed**
-- [ ] German (de) - In Progress (converters.json completed)
+- [x] German (de) - **100% Completed**
 - [ ] French (fr) - Pending
 - [ ] Portuguese (pt) - Pending
 - [ ] Russian (ru) - Pending
@@ -35,7 +35,9 @@ For each incomplete language, the following files must be translated:
 7. `spreadsheet.json`
 8. `utility.json`
 9. `time.json`
+10. `youtube.json`
+11. `text.json`
 
 ## Current Focus
-- **Language**: German (de)
-- **File**: `document.json`
+- **Language**: French (fr)
+- **File**: `converters.json`
