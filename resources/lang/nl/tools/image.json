@@ -1,850 +1,834 @@
 {
     "base64-to-image-converter": {
         "meta": {
-            "title": "[Pending Translation] Base64 to Image Converter - Decode Base64 Output | Optimizo",
-            "description": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF). Free online decoder and visualizer.",
-            "h1": "[Pending Translation] Decode Base64 to Image",
-            "subtitle": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF) instantly"
+            "title": "Base64 naar Afbeelding Converter - Decodeer Base64 Output | Optimizo",
+            "description": "Converteer Base64-gecodeerde strings terug naar afbeeldingen (PNG, JPG, GIF). Gratis online decoder en visualizer.",
+            "h1": "Base64 naar Afbeelding Decoderen",
+            "subtitle": "Converteer Base64-gecodeerde strings direct terug naar afbeeldingen (PNG, JPG, GIF)"
         },
         "input": {
-            "title": "[Pending Translation] Paste Base64 String",
-            "desc": "[Pending Translation] Paste your code below to visualize the image",
-            "placeholder": "[Pending Translation] data:image\/png;base64,iVBORw0KGgo...",
-            "btn_decode": "[Pending Translation] Decode Image"
+            "title": "Plak Base64 String",
+            "desc": "Plak uw code hieronder om de afbeelding te visualiseren",
+            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
+            "btn_decode": "Decodeer Afbeelding"
         },
         "result": {
-            "image_alt": "[Pending Translation] Decoded Image",
-            "success": "[Pending Translation] Image Decoded Successfully",
-            "btn_download": "[Pending Translation] Download Image",
-            "btn_clear": "[Pending Translation] Clear Pattern"
+            "image_alt": "Gedecodeerde afbeelding",
+            "success": "Afbeelding succesvol gedecodeerd",
+            "btn_download": "Afbeelding downloaden",
+            "btn_clear": "Patroon wissen"
         },
         "content": {
-            "title": "[Pending Translation] Decode Base64 to Image",
-            "p1": "[Pending Translation] Found a long string of random characters starting with <code>data:image\/...<\/code> and don't know what it is? It's likely a Base64-encoded image.",
-            "p2": "[Pending Translation] Our <strong>Base64 to Image Decoder<\/strong> converts that text string back into a visible image file (PNG, JPG, GIF, etc.) that you can view and download to your computer.",
+            "title": "Base64 naar Afbeelding Decoderen",
+            "p1": "Heeft u een lange string van willekeurige tekens gevonden die begint met <code>data:image/...</code> en weet u niet wat het is? Het is waarschijnlijk een Base64-gecodeerde afbeelding.",
+            "p2": "Onze <strong>Base64 naar Afbeelding Decoder</strong> zet die tekststring weer om in een zichtbaar afbeeldingsbestand (PNG, JPG, GIF, etc.) dat u kunt bekijken en downloaden naar uw computer.",
             "features": {
                 "preview": {
-                    "title": "[Pending Translation] Instant Preview",
-                    "desc": "[Pending Translation] See the image immediately. We parse the binary data and render it on your screen."
+                    "title": "Directe voorvertoning",
+                    "desc": "Zie de afbeelding onmiddellijk. Wij verwerken de binaire data en tonen deze op uw scherm."
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detection",
-                    "desc": "[Pending Translation] We automatically detect the file format (PNG, JPEG, GIF) from the header of the Base64 string."
+                    "title": "Automatische detectie",
+                    "desc": "We detecteren automatisch het bestandsformaat (PNG, JPEG, GIF) uit de header van de Base64-string."
                 },
                 "download": {
-                    "title": "[Pending Translation] Download File",
-                    "desc": "[Pending Translation] Save the decoded result as a real image file to your hard drive with one click."
+                    "title": "Bestand downloaden",
+                    "desc": "Sla het gedecodeerde resultaat met één klik op als een echt afbeeldingsbestand op uw harde schijf."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Decode?",
+                "title": "Hoe te decoderen?",
                 "list": [
-                    "[Pending Translation] Paste your Base64 string into the textarea.",
-                    "[Pending Translation] We instantly attempt to read the string.",
-                    "[Pending Translation] If valid, the image appears on the left.",
-                    "[Pending Translation] Click \"Download Image\" to save it."
+                    "Plak uw Base64-string in het tekstveld.",
+                    "We proberen de string onmiddellijk te lezen.",
+                    "Indien geldig, verschijnt de afbeelding aan de linkerkant.",
+                    "Klik op \"Afbeelding downloaden\" om deze op te slaan."
                 ]
             },
             "use_cases": {
-                "title": "[Pending Translation] Common Use Cases",
+                "title": "Veelvoorkomende toepassingen",
                 "list": [
-                    "[Pending Translation] Debugging: Checking what image data is being sent in API responses or stored in databases.",
-                    "[Pending Translation] Recovery: Extracting images embedded in CSS files or HTML templates.",
-                    "[Pending Translation] Verification: Ensuring a Base64 string is not corrupted."
+                    "Debugging: Controleren welke afbeeldingsgegevens worden verzonden in API-antwoorden of opgeslagen in databases.",
+                    "Herstel: Afbeeldingen extraheren die zijn ingesloten in CSS-bestanden of HTML-sjablonen.",
+                    "Verificatie: Controleren of een Base64-string niet beschadigd is."
                 ]
             }
         },
         "js": {
-            "input_required": "[Pending Translation] Please paste a Base64 string first.",
-            "invalid_error": "[Pending Translation] Invalid Base64 string or unsupported image format."
+            "input_required": "Plak eerst een Base64-string.",
+            "invalid_error": "Ongeldige Base64-string of niet-ondersteund afbeeldingsformaat."
         }
     },
     "heic-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] HEIC to JPG Converter - Convert iPhone Photos Online | Optimizo",
+            "title": "HEIC naar JPG Converter - Converteer iPhone-foto's Online | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format. Free, private, client-side converter.",
-            "h1": "[Pending Translation] HEIC to JPG Converter",
-            "subtitle": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format"
+            "description": "Converteer High Efficiency Image File (HEIC/HEIF) foto's van iPhone naar standaard JPG-formaat. Gratis, privé, client-side converter.",
+            "h1": "HEIC naar JPG Converter",
+            "subtitle": "Converteer High Efficiency Image File (HEIC/HEIF) foto's van iPhone direct naar standaard JPG-formaat"
         },
         "input": {
-            "title": "[Pending Translation] Upload HEIC File",
-            "desc": "[Pending Translation] Drag & drop your .heic or .heif file here",
-            "drop_title": "[Pending Translation] Drop HEIC file here",
-            "drop_desc": "[Pending Translation] Supports HEIC\/HEIF (Max 20MB)"
+            "title": "Upload HEIC-bestand",
+            "desc": "Sleep uw .heic of .heif bestand hiernaartoe",
+            "drop_title": "Sleep HEIC-bestand hier",
+            "drop_desc": "Ondersteunt HEIC/HEIF (Max 20MB)"
         },
         "loading": {
-            "title": "[Pending Translation] Processing HEIC file...",
-            "desc": "[Pending Translation] Larger files may take a few seconds."
+            "title": "HEIC-bestand verwerken...",
+            "desc": "Grotere bestanden kunnen enkele seconden duren."
         },
         "result": {
-            "image_alt": "[Pending Translation] Preview",
-            "converted_to": "[Pending Translation] Converted to:",
-            "btn_download": "[Pending Translation] Download JPG Image"
+            "image_alt": "Voorbeeld",
+            "converted_to": "Geconverteerd naar:",
+            "btn_download": "JPG-afbeelding downloaden"
         },
         "content": {
-            "title": "[Pending Translation] Convert HEIC to JPG Instantly",
-            "p1": "[Pending Translation] Apple's High Efficiency Image Format (HEIC) is great for saving space on your iPhone, but it can be a nightmare to open on Windows, Android, or older software. Our <strong>HEIC to JPG Converter<\/strong> solves this problem instantly.",
-            "p2": "[Pending Translation] We use advanced local processing capabilities to convert your photos without ever uploading them to a cloud server. This is the <strong>safest way<\/strong> to convert personal photos.",
+            "title": "Converteer HEIC direct naar JPG",
+            "p1": "Apple's High Efficiency Image Format (HEIC) is geweldig om ruimte te besparen op uw iPhone, maar het kan lastig zijn om te openen op Windows, Android of oudere software. Onze <strong>HEIC naar JPG Converter</strong> lost dit probleem direct op.",
+            "p2": "We gebruiken geavanceerde lokale verwerkingsmogelijkheden om uw foto's te converteren zonder ze naar een cloudserver te uploaden. Dit is de <strong>veiligste manier</strong> om persoonlijke foto's te converteren.",
             "features": {
                 "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Your personal photos stay on your device. We use client-side logic for zero-risk conversion."
+                    "title": "100% Privé",
+                    "desc": "Uw persoonlijke foto's blijven op uw apparaat. We gebruiken client-side logica voor een risicovrije conversie."
                 },
                 "compatibility": {
-                    "title": "[Pending Translation] Broad Compatibility",
-                    "desc": "[Pending Translation] Convert HEIC and HEIF files from any iOS version (iPhone\/iPad) to universally accepted JPGs."
+                    "title": "Brede compatibiliteit",
+                    "desc": "Converteer HEIC- en HEIF-bestanden van elke iOS-versie (iPhone/iPad) naar universeel geaccepteerde JPG's."
                 },
                 "fast": {
-                    "title": "[Pending Translation] Fast & Free",
-                    "desc": "[Pending Translation] No software installation needed. Just drag, drop, and convert in seconds."
+                    "title": "Snel & Gratis",
+                    "desc": "Geen software-installatie nodig. Gewoon slepen, neerzetten en binnen enkele seconden converteren."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert HEIC to JPG?",
+                "title": "Hoe HEIC naar JPG converteren?",
                 "list": [
-                    "[Pending Translation] Drag your .heic or .heif file into the upload zone.",
-                    "[Pending Translation] The tool will automatically read and convert the file using advanced browser libraries.",
-                    "[Pending Translation] See a preview of your converted JPG image immediately.",
-                    "[Pending Translation] Click the \"Download JPG Image\" button to save it to your computer."
+                    "Sleep uw .heic of .heif bestand naar de uploadzone.",
+                    "De tool zal het bestand automatisch lezen en converteren met behulp van geavanceerde browserbibliotheken.",
+                    "Bekijk direct een voorvertoning van uw geconverteerde JPG-afbeelding.",
+                    "Klik op de knop \"JPG-afbeelding downloaden\" om deze op uw computer op te slaan."
                 ]
             },
             "details": {
-                "title": "[Pending Translation] Technical Details",
-                "p1": "[Pending Translation] HEIC (High Efficiency Image Container) uses modern compression methods to keep file sizes small. However, Windows and Android often struggle to open them.",
-                "p2": "[Pending Translation] Our tool decodes the HEIC data and re-encodes it as a standardized JPEG image with 90% quality retention, ensuring your photos look great while being accessible everywhere."
+                "title": "Technische details",
+                "p1": "HEIC (High Efficiency Image Container) gebruikt moderne compressiemethoden om bestanden klein te houden. Windows en Android hebben echter vaak moeite om ze te openen.",
+                "p2": "Onze tool decodeert de HEIC-gegevens en codeert ze opnieuw als een gestandaardiseerde JPEG-afbeelding met 90% kwaliteitsbehoud, zodat uw foto's er geweldig uitzien en overal toegankelijk zijn."
             },
             "faq": {
-                "title": "[Pending Translation] Common Questions",
-                "q1": "[Pending Translation] Can I convert iPhone Live Photos?",
-                "a1": "[Pending Translation] You can convert the still image part of the Live Photo if you transfer the .HEIC file to your computer first.",
-                "q2": "[Pending Translation] Is quality lost during conversion?",
-                "a2": "[Pending Translation] We use a high-quality setting (0.9 out of 1.0) to ensure minimal visual difference. JPG is a lossy format, but the difference is usually negligible to the human eye."
+                "title": "Veelgestelde vragen",
+                "q1": "Kan ik iPhone Live Photos converteren?",
+                "a1": "U kunt het stilstaande gedeelte van de Live Photo converteren als u het .HEIC-bestand eerst naar uw computer overzet.",
+                "q2": "Gaat er kwaliteit verloren tijdens de conversie?",
+                "a2": "We gebruiken een instelling van hoge kwaliteit (0.9 van 1.0) om een minimaal visueel verschil te garanderen. JPG is een formaat met verlies, maar het verschil is meestal verwaarloosbaar voor het menselijk oog."
             }
         },
         "js": {
-            "error": "[Pending Translation] Error converting HEIC file: "
+            "error": "Fout bij converteren van HEIC-bestand: "
         }
     },
     "ico-converter": {
         "meta": {
-            "title": "[Pending Translation] ICO Converter - Create Favicons Online | Optimizo",
+            "title": "ICO Converter - Maak Favicons Online | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Free online favicon generator.",
-            "h1": "[Pending Translation] ICO Converter & Favicon Generator",
-            "subtitle": "[Pending Translation] Convert images to ICO format for website favicons with custom sizing"
+            "description": "Converteer afbeeldingen naar ICO-formaat voor website-favicons. Ondersteunt aangepaste formaten (32x32, 64x64). Gratis online favicon generator.",
+            "h1": "ICO Converter & Favicon Generator",
+            "subtitle": "Converteer afbeeldingen naar ICO-formaat voor website-favicons met aangepaste formaten"
         },
         "input": {
-            "title": "[Pending Translation] Upload Image to Convert",
-            "desc": "[Pending Translation] Drag & drop your PNG\/JPG file",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Fast conversion to .ico"
+            "title": "Upload afbeelding om te converteren",
+            "desc": "Sleep uw PNG/JPG bestand hiernaartoe",
+            "drop_title": "Sleep afbeeldingsbestand hier",
+            "drop_desc": "Snelle conversie naar .ico"
         },
         "editor": {
-            "original": "[Pending Translation] Original",
-            "image_alt": "[Pending Translation] Preview",
-            "favicon": "[Pending Translation] Favicon",
-            "size_label": "[Pending Translation] Icon Size",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_download": "[Pending Translation] Download Favicon (.ico)"
+            "original": "Origineel",
+            "image_alt": "Voorbeeld",
+            "favicon": "Favicon",
+            "size_label": "Grootte pictogram",
+            "output_format": "Output formaat:",
+            "btn_download": "Favicon downloaden (.ico)"
         },
         "content": {
-            "title": "[Pending Translation] Free ICO Converter & Favicon Generator",
-            "p1": "[Pending Translation] Creating a website? You need a favicon - that little icon that appears in browser tabs.",
-            "p2": "[Pending Translation] Our <strong>ICO Converter<\/strong> transforms any PNG or JPG image into a standard Microsoft `.ico` file. We support all common favicon sizes to ensure your brand looks sharp on every device.",
+            "title": "Gratis ICO Converter & Favicon Generator",
+            "p1": "Maakt u een website? Dan heeft u een favicon nodig - dat kleine pictogram dat in browsertabs verschijnt.",
+            "p2": "Onze <strong>ICO Converter</strong> transformeert elke PNG- of JPG-afbeelding in een standaard Microsoft `.ico`-bestand. We ondersteunen alle gangbare favicon-formaten om ervoor te zorgen dat uw merk er op elk apparaat scherp uitziet.",
             "features": {
                 "sizes": {
-                    "title": "[Pending Translation] Standard Sizes",
-                    "desc": "[Pending Translation] Choose from 16x16, 32x32, 48x48, 64x64, or 128x128 pixels. Or select all!"
+                    "title": "Standaard formaten",
+                    "desc": "Kies uit 16x16, 32x32, 48x48, 64x64 of 128x128 pixels. Of selecteer ze allemaal!"
                 },
                 "resize": {
-                    "title": "[Pending Translation] Auto-Resizing",
-                    "desc": "[Pending Translation] Upload a large logo, and we'll automatically downscale it smoothly to fit the tiny icon format."
+                    "title": "Automatisch schalen",
+                    "desc": "Upload een groot logo en wij schalen het automatisch vloeiend af naar het kleine pictogramformaat."
                 },
                 "multi": {
-                    "title": "[Pending Translation] Multi-Icon Support",
-                    "desc": "[Pending Translation] Modern .ico files can contain multiple sizes in one file. We handle that for you."
+                    "title": "Multi-pictogram ondersteuning",
+                    "desc": "Moderne .ico-bestanden kunnen meerdere groottes in één bestand bevatten. Wij regelen dat voor u."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Steps to Create Favicon",
+                "title": "Stappen om een favicon te maken",
                 "list": [
-                    "[Pending Translation] Use a square image (PNG\/JPG) for best results.",
-                    "[Pending Translation] 16x16 (Browser tabs), 32x32 (Taskbar), 48x48 (Desktop).",
-                    "[Pending Translation] See how it looks instantly.",
-                    "[Pending Translation] Get your `favicon.ico` file."
+                    "Gebruik een vierkante afbeelding (PNG/JPG) voor het beste resultaat.",
+                    "16x16 (Browsertabs), 32x32 (Taakbalk), 48x48 (Bureaublad).",
+                    "Bekijk direct hoe het eruitziet.",
+                    "Ontvang uw `favicon.ico` bestand."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why .ICO format?",
-                "p1": "[Pending Translation] While modern browsers support PNG favicons, the `.ico` format is still the standard for maximum compatibility across all operating systems and legacy browsers (like Internet Explorer)."
+                "title": "Waarom .ICO formaat?",
+                "p1": "Hoewel moderne browsers PNG-favicons ondersteunen, is het `.ico`-formaat nog steeds de standaard voor maximale compatibiliteit met alle besturingssystemen en legacy-browsers (zoals Internet Explorer)."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image"
+            "invalid_image": "Upload een geldige afbeelding"
         }
     },
     "image-compressor": {
         "meta": {
-            "title": "[Pending Translation] Free Image Compressor - Reduce Image File Size Online",
-            "description": "[Pending Translation] Compress images online for free. Reduce JPG, PNG, and WebP file sizes while maintaining quality.",
-            "h1": "[Pending Translation] Image Compressor",
-            "subtitle": "[Pending Translation] Reduce image file sizes without losing quality"
+            "title": "Gratis Image Compressor - Verklein afbeeldingsbestanden Online",
+            "description": "Comprimeer afbeeldingen gratis online. Verklein JPG, PNG en WebP bestandsgroottes met behoud van kwaliteit.",
+            "h1": "Image Compressor",
+            "subtitle": "Verklein de bestandsgrootte van afbeeldingen zonder kwaliteitsverlies"
         },
         "editor": {
-            "label_upload": "[Pending Translation] Upload Image",
-            "drop_title": "[Pending Translation] Drop your image here or click to browse",
-            "drop_subtitle": "[Pending Translation] Drag and drop your image or click to select from your device",
-            "supports": "[Pending Translation] Supports JPG, PNG, WebP formats",
-            "label_quality": "[Pending Translation] Compression Quality:",
-            "title_original": "[Pending Translation] Original Image",
-            "label_size": "[Pending Translation] Size:",
-            "title_compressed": "[Pending Translation] Compressed Image",
-            "label_saved": "[Pending Translation] Saved:",
-            "btn_download": "[Pending Translation] Download Compressed Image"
+            "label_upload": "Afbeelding uploaden",
+            "drop_title": "Sleep uw afbeelding hierheen of klik om te bladeren",
+            "drop_subtitle": "Sleep uw afbeelding of klik om te selecteren vanaf uw apparaat",
+            "supports": "Ondersteunt JPG, PNG, WebP formaten",
+            "label_quality": "Compressiekwaliteit:",
+            "title_original": "Originele afbeelding",
+            "label_size": "Grootte:",
+            "title_compressed": "Gecomprimeerde afbeelding",
+            "label_saved": "Bespaard:",
+            "btn_download": "Gecomprimeerde afbeelding downloaden"
         },
         "content": {
-            "p1": "[Pending Translation] Compress your images online for free with our powerful image compression tool. Reduce JPG, PNG, and WebP file sizes by up to 90% while maintaining excellent visual quality. Perfect for optimizing images for websites, social media, email attachments, and faster page loading times.",
-            "why_title": "[Pending Translation] Why Compress Images?",
+            "p1": "Comprimeer uw afbeeldingen gratis online met onze krachtige tool voor beeldcompressie. Verklein JPG-, PNG- en WebP-bestanden tot wel 90% met behoud van uitstekende visuele kwaliteit. Perfect voor het optimaliseren van afbeeldingen voor websites, sociale media, e-mailbijlagen en snellere laadtijden van pagina's.",
+            "why_title": "Waarom afbeeldingen comprimeren?",
             "why_list": [
-                "[Pending Translation] Faster website loading times improve user experience and SEO",
-                "[Pending Translation] Reduce bandwidth usage and hosting costs",
-                "[Pending Translation] Optimize images for mobile devices and slow connections",
-                "[Pending Translation] Meet file size limits for email attachments and uploads",
-                "[Pending Translation] Improve Core Web Vitals and Google PageSpeed scores",
-                "[Pending Translation] Save storage space on your device or server"
+                "Snellere laadtijden van websites verbeteren de gebruikerservaring en SEO",
+                "Beperk bandbreedtegebruik en hostingkosten",
+                "Optimaliseer afbeeldingen voor mobiele apparaten en trage verbindingen",
+                "Voldoe aan limieten voor bestandsgrootte voor e-mailbijlagen en uploads",
+                "Verbeter Core Web Vitals en Google PageSpeed scores",
+                "Bespaar opslagruimte op uw apparaat of server"
             ],
-            "formats_title": "[Pending Translation] Supported Image Formats",
-            "quality_title": "[Pending Translation] Understanding Compression Quality",
+            "formats_title": "Ondersteunde afbeeldingsformaten",
+            "quality_title": "Compressiekwaliteit begrijpen",
             "quality_list": [
-                "[Pending Translation] 100% - No compression, original quality (largest file size)",
-                "[Pending Translation] 80-90% - High quality, minimal visible difference (recommended for most uses)",
-                "[Pending Translation] 60-80% - Good quality, noticeable compression at high zoom",
-                "[Pending Translation] 40-60% - Medium quality, visible artifacts but acceptable for web",
-                "[Pending Translation] 10-40% - Low quality, significant quality loss (smallest file size)"
+                "100% - Geen compressie, originele kwaliteit (grootste bestand)",
+                "80-90% - Hoge kwaliteit, minimaal zichtbaar verschil (aanbevolen voor de meeste toepassingen)",
+                "60-80% - Goede kwaliteit, merkbare compressie bij sterk inzoomen",
+                "40-60% - Gemiddelde kwaliteit, zichtbare artefacten maar acceptabel voor web",
+                "10-40% - Lage kwaliteit, aanzienlijk kwaliteitsverlies (kleinste bestand)"
             ],
-            "how_title": "[Pending Translation] How Image Compression Works",
-            "how_desc": "[Pending Translation] Our tool uses advanced compression algorithms to reduce file size while preserving image quality. For JPG images, we use lossy compression that removes imperceptible details. For PNG, we optimize the color palette and use efficient encoding. All compression happens in your browser - your images never leave your device.",
-            "best_title": "[Pending Translation] Best Practices for Image Compression",
+            "how_title": "Hoe beeldcompressie werkt",
+            "how_desc": "Onze tool maakt gebruik van geavanceerde compressiealgoritmen om de bestandsgrootte te verkleinen met behoud van de beeldkwaliteit. Voor JPG-afbeeldingen gebruiken we compressie met verlies die onmerkbare details verwijdert. Voor PNG optimaliseren we het kleurenpalet en gebruiken we efficiënte codering. Alle compressie gebeurt in uw browser - uw afbeeldingen ver laten nooit uw apparaat.",
+            "best_title": "Best practices voor beeldcompressie",
             "best_list": [
-                "[Pending Translation] Start with high-quality original images for best results",
-                "[Pending Translation] Use 80-90% quality for web images - perfect balance of size and quality",
-                "[Pending Translation] Compress images before uploading to websites or social media",
-                "[Pending Translation] Use JPG for photos, PNG for graphics with transparency",
-                "[Pending Translation] Consider WebP format for modern browsers (smaller files)",
-                "[Pending Translation] Always preview compressed images before downloading",
-                "[Pending Translation] Keep original files as backup before compression"
+                "Begin met originele afbeeldingen van hoge kwaliteit voor het beste resultaat",
+                "Gebruik 80-90% kwaliteit voor webafbeeldingen - perfecte balans tussen grootte en kwaliteit",
+                "Comprimeer afbeeldingen voordat u ze uploadt naar websites of sociale media",
+                "Gebruik JPG voor foto's, PNG voor afbeeldingen met transparantie",
+                "Overweeg het WebP-formaat voor moderne browsers (kleinere bestanden)",
+                "Bekijk altijd een voorvertoning van gecomprimeerde afbeeldingen voordat u ze downloadt",
+                "Bewaar originele bestanden als back-up voor compressie"
             ],
-            "privacy_title": "[Pending Translation] 100% Private & Secure",
-            "privacy_desc": "[Pending Translation] All image compression happens entirely in your browser using JavaScript. Your images are never uploaded to our servers, ensuring complete privacy and security. Your files never leave your device.",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "privacy_title": "100% Privé & Veilig",
+            "privacy_desc": "Alle beeldcompressie vindt volledig plaats in uw browser met behulp van JavaScript. Uw afbeeldingen worden nooit naar onze servers geüpload, wat volledige privacy en veiligheid garandeert. Uw bestanden verlaten uw apparaat nooit.",
+            "faq_title": "Veelgestelde vragen",
             "formats": {
                 "jpg": {
-                    "title": "[Pending Translation] JPG\/JPEG",
-                    "desc": "[Pending Translation] Best for photographs and complex images with many colors. Lossy compression."
+                    "title": "JPG/JPEG",
+                    "desc": "Het beste voor foto's en complexe afbeeldingen met veel kleuren. Compressie met verlies."
                 },
                 "png": {
-                    "title": "[Pending Translation] PNG",
-                    "desc": "[Pending Translation] Best for graphics, logos, and images with transparency. Lossless or lossy compression."
+                    "title": "PNG",
+                    "desc": "Het beste voor grafische afbeeldingen, logo's en afbeeldingen met transparantie. Lossless of compressie met verlies."
                 },
                 "webp": {
-                    "title": "[Pending Translation] WebP",
-                    "desc": "[Pending Translation] Modern format with superior compression. Smaller files than JPG\/PNG with same quality."
+                    "title": "WebP",
+                    "desc": "Modern formaat met superieure compressie. Kleinere bestanden dan JPG/PNG bij dezelfde kwaliteit."
                 }
             },
             "faq": {
-                "q1": "[Pending Translation] Will compressing images reduce quality?",
-                "a1": "[Pending Translation] Yes, but minimally. At 80-90% quality, the difference is imperceptible to the human eye. You can adjust the quality slider to find the perfect balance between file size and visual quality.",
-                "q2": "[Pending Translation] What's the difference between lossy and lossless compression?",
-                "a2": "[Pending Translation] Lossy compression (JPG) removes some image data to achieve smaller files, while lossless compression (PNG) reduces file size without losing any data. Lossy gives better compression but slight quality loss.",
-                "q3": "[Pending Translation] How much can I reduce image file size?",
-                "a3": "[Pending Translation] Typically 50-90% reduction depending on the original image and quality settings. Photos often compress more than graphics. WebP format provides the best compression.",
-                "q4": "[Pending Translation] Are my images uploaded to your server?",
-                "a4": "[Pending Translation] No! All compression happens in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.",
-                "q5": "[Pending Translation] What image formats are supported?",
-                "a5": "[Pending Translation] We support JPG\/JPEG, PNG, and WebP formats. These cover 99% of web images. The tool automatically detects the format and applies optimal compression."
+                "q1": "Vermindert het comprimeren van afbeeldingen de kwaliteit?",
+                "a1": "Ja, maar minimaal. Bij een kwaliteit van 80-90% is het verschil onmerkbaar voor het menselijk oog. U kunt de schuifregelaar voor kwaliteit aanpassen om de perfecte balans te vonden tussen bestandsgrootte en visuele kwaliteit.",
+                "q2": "Wat is het verschil tussen compressie met en zonder verlies (lossy/lossless)?",
+                "a2": "Compressie met verlies (JPG) verwijdert sommige beeldgegevens om kleinere bestanden te krijgen, terwijl compressie zonder verlies (PNG) de bestandsgrootte verkleint zonder gegevens te verliezen. Lossy geeft een betere compressie maar een klein kwaliteitsverlies.",
+                "q3": "Hoeveel kan ik de bestandsgrootte van een afbeelding verkleinen?",
+                "a3": "Meestal een vermindering van 50-90%, afhankelijk van de originele afbeelding en de kwaliteitsinstellingen. Foto's comprimeren vaak meer dan grafische afbeeldingen. Het WebP-formaat biedt de beste compressie.",
+                "q4": "Worden mijn afbeeldingen geüpload naar uw server?",
+                "a4": "Nee! Alle compressie gebeurt in uw browser met behulp van JavaScript. Uw afbeeldingen verlaten uw apparaat nooit, wat volledige privacy en veiligheid garandeert.",
+                "q5": "Welke afbeeldingsformaten worden ondersteund?",
+                "a5": "We ondersteunen JPG/JPEG-, PNG- en WebP-formaten. Hiermee wordt 99% van de webafbeeldingen gedekt. De tool detecteert automatisch het formaat en past de optimale compressie toe."
             }
         }
     },
     "image-converter": {
         "meta": {
-            "title": "[Pending Translation] Image Converter - Convert Images Online Free | Optimizo",
+            "title": "Afbeelding Converter - Gratis Online Afbeeldingen Converteren | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free. Secure, client-side conversion requiring no uploads.",
-            "h1": "[Pending Translation] Image Converter",
-            "subtitle": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free"
+            "description": "Converteer afbeeldingen eenvoudig en gratis tussen meerdere formaten (PNG, JPG, WEBP). Veilige conversie op uw eigen apparaat zonder uploads.",
+            "h1": "Afbeelding Converter",
+            "subtitle": "Converteer afbeeldingen eenvoudig en gratis tussen meerdere formaten (PNG, JPG, WEBP)"
         },
         "input": {
-            "title": "[Pending Translation] Upload Your Image",
-            "desc": "[Pending Translation] Drag & drop or click to select an image",
-            "drop_title": "[Pending Translation] Drop your image here",
-            "drop_desc": "[Pending Translation] Supports PNG, JPG, WEBP (Max 10MB)"
+            "title": "Upload uw afbeelding",
+            "desc": "Sleep een afbeelding hierheen of klik om te selecteren",
+            "drop_title": "Sleep uw afbeelding hier",
+            "drop_desc": "Ondersteunt PNG, JPG, WEBP (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "target_format": "[Pending Translation] Target Format",
-            "quality": "[Pending Translation] Quality (JPG\/WEBP)",
-            "btn_convert": "[Pending Translation] Convert & Download"
+            "image_alt": "Voorbeeld",
+            "target_format": "Doelformaat",
+            "quality": "Kwaliteit (JPG/WEBP)",
+            "btn_convert": "Converteren & Downloaden"
         },
         "content": {
-            "title": "[Pending Translation] The Ultimate Free Online Image Converter",
-            "p1": "[Pending Translation] In today's digital landscape, working with images requires versatility. Whether you're a web developer needing WEBP for performance, a designer needing PNG for transparency, or a photographer needing universal JPG compatibility, our <strong>Image Converter<\/strong> is the all-in-one solution.",
-            "p2": "[Pending Translation] Forget about installing heavy software or uploading your private photos to unknown servers. Our tool runs entirely in your browser, ensuring <strong>100% privacy and lightning-fast speeds<\/strong>.",
+            "title": "De ultieme gratis online afbeelding converter",
+            "p1": "In het huidige digitale landschap is veelzijdigheid bij het werken met afbeeldingen essentieel. Of u nu een webontwikkelaar bent die WEBP nodig heeft voor prestaties, een ontwerper die PNG gebruikt voor transparantie, of een fotograaf die universele JPG-compatibiliteit vereist, onze <strong>Afbeelding Converter</strong> is de alles-in-één oplossing.",
+            "p2": "Vergeet het installeren van zware software of het uploaden van uw privéfoto's naar onbekende servers. Onze tool draait volledig in uw browser, wat zorgt voor <strong>100% privacy en razendsnelle snelheden</strong>.",
             "features": {
                 "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Your files never leave your device. All processing happens locally in your browser."
+                    "title": "Veilig & Privé",
+                    "desc": "Uw bestanden verlaten uw apparaat nooit. Alle verwerking gebeurt lokaal in uw browser."
                 },
                 "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] No queuing or waiting. Powered by modern WebAssembly technology for speed."
+                    "title": "Directe conversie",
+                    "desc": "Geen wachtrijen of wachttijden. Aangedreven door moderne WebAssembly-technologie voor snelheid."
                 },
                 "bulk": {
-                    "title": "[Pending Translation] Bulk Processing",
-                    "desc": "[Pending Translation] Convert unlimited images one by one without any usage restrictions or costs."
+                    "title": "Onbeperkt verwerken",
+                    "desc": "Converteer onbeperkt afbeeldingen één voor één, zonder gebruiksbeperkingen of kosten."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert Images?",
+                "title": "Hoe afbeeldingen converteren?",
                 "list": [
-                    "[Pending Translation] Drag your image file into the blue box or click to select from your device.",
-                    "[Pending Translation] Select your desired output format (PNG, JPG, or WEBP) from the dropdown.",
-                    "[Pending Translation] If choosing JPG or WEBP, use the slider to balance file size and quality.",
-                    "[Pending Translation] Click the \"Convert & Download\" button to save your formatted image instantly."
+                    "Sleep uw afbeeldingsbestand naar het blauwe vak of klik om te selecteren vanaf uw apparaat.",
+                    "Selecteer het gewenste outputformaat (PNG, JPG of WEBP) uit het menu.",
+                    "Gebruik bij JPG of WEBP de schuifregelaar om de balans tussen bestandsgrootte en kwaliteit te bepalen.",
+                    "Klik op de knop \"Converteren & Downloaden\" om uw afbeelding direct op te slaan."
                 ]
             },
             "features_list": {
-                "title": "[Pending Translation] Key Features",
+                "title": "Belangrijkste kenmerken",
                 "list": [
-                    "[Pending Translation] Cross-Format Support: Effortlessly switch between PNG, JPG, and WEBP.",
-                    "[Pending Translation] Transparency Control: PNG conversions preserve transparency, while JPG fills it with a white background.",
-                    "[Pending Translation] Responsive: Works perfectly on Desktops, Tablets, and Mobile phones.",
-                    "[Pending Translation] No Limits: No file size limits and no daily conversion caps."
+                    "Cross-Format ondersteuning: Wissel moeiteloos tussen PNG, JPG en WEBP.",
+                    "Transparantiecontrole: PNG-conversies behouden transparantie, terwijl JPG deze vult met een witte achtergrond.",
+                    "Responsief: Werkt perfect op desktops, tablets en mobiele telefoons.",
+                    "Geen limieten: Geen beperkingen op bestandsgrootte en geen dagelijkse conversielimieten."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is this tool free?",
-                "a1": "[Pending Translation] Yes, absolutely. We don't charge anything, and there are no hidden premium features.",
-                "q2": "[Pending Translation] Does it support transparency?",
-                "a2": "[Pending Translation] Yes! If you convert to PNG or WEBP, transparency is preserved. For JPG, transparent areas become white.",
-                "q3": "[Pending Translation] Are my images uploaded?",
-                "a3": "[Pending Translation] No. All conversion logic runs in your own browser using JavaScript and Canvas APIs. We count privacy as our top feature.",
-                "q4": "[Pending Translation] What is the best format?",
-                "a4": "[Pending Translation] Use <strong>JPG<\/strong> for photos, <strong>PNG<\/strong> for graphics with sharp edges\/transparency, and <strong>WEBP<\/strong> for web performance."
+                "title": "Veelgestelde vragen",
+                "q1": "Is deze tool gratis?",
+                "a1": "Ja, absoluut. We brengen niets in rekening en er zijn geen verborgen premium-functies.",
+                "q2": "Ondersteunt het transparantie?",
+                "a2": "Ja! Als u naar PNG of WEBP converteert, blijft de transparantie behouden. Bij JPG worden transparante delen wit.",
+                "q3": "Worden mijn afbeeldingen geüpload?",
+                "a3": "Nee. Alle conversielogica draait in uw eigen browser met behulp van JavaScript en Canvas API's. Privacy is onze belangrijkste prioriteit.",
+                "q4": "Wat is het beste formaat?",
+                "a4": "Gebruik <strong>JPG</strong> voor foto's, <strong>PNG</strong> voor graphics met scherpe randen/transparantie, en <strong>WEBP</strong> voor webprestaties."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image file"
+            "invalid_image": "Upload een geldig afbeeldingsbestand"
         }
     },
     "image-to-base64-converter": {
         "meta": {
-            "title": "[Pending Translation] Image to Base64 Converter - Convert Image to String | Optimizo",
+            "title": "Afbeelding naar Base64 Converter - Converteer Afbeelding naar String | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS. Free online tool supporting PNG, JPG, GIF.",
-            "h1": "[Pending Translation] Convert Image to Base64 String",
-            "subtitle": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS"
+            "description": "Converteer afbeeldingen naar Base64-gecodeerde strings om in te sluiten in HTML of CSS. Gratis online tool die PNG, JPG en GIF ondersteunt.",
+            "h1": "Converteer Afbeelding naar Base64 String",
+            "subtitle": "Converteer afbeeldingen naar Base64-gecodeerde strings voor insluiting in HTML of CSS"
         },
         "input": {
-            "title": "[Pending Translation] Upload Image",
-            "desc": "[Pending Translation] Drag & drop your image file here",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Supports All Image Formats"
+            "title": "Afbeelding uploaden",
+            "desc": "Sleep uw afbeeldingsbestand hiernaartoe",
+            "drop_title": "Sleep afbeeldingsbestand hier",
+            "drop_desc": "Ondersteunt alle afbeeldingsformaten"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "label_string": "[Pending Translation] Base64 String",
-            "btn_copy": "[Pending Translation] Copy to Clipboard",
-            "char_count": "[Pending Translation] Character Count",
-            "mime_type": "[Pending Translation] MIME Type"
+            "image_alt": "Voorbeeld",
+            "label_string": "Base64 String",
+            "btn_copy": "Kopiëren naar klembord",
+            "char_count": "Aantal tekens",
+            "mime_type": "MIME Type"
         },
         "content": {
-            "title": "[Pending Translation] Convert Image to Base64 String",
-            "p1": "[Pending Translation] Developers and web designers often need to embed images directly into HTML or CSS files to reduce HTTP requests.",
-            "p2": "[Pending Translation] Our <strong>Image to Base64 Converter<\/strong> encodes your image file into a long string of characters that represents the binary data. You can paste this string straight into your code.",
+            "title": "Converteer afbeelding naar Base64 string",
+            "p1": "Ontwikkelaars en webontwerpers moeten afbeeldingen vaak rechtstreeks in HTML- of CSS-bestanden insluiten om het aantal HTTP-verzoeken te verminderen.",
+            "p2": "Onze <strong>Afbeelding naar Base64 Converter</strong> codeert uw afbeeldingsbestand naar een lange reeks tekens die de binaire gegevens vertegenwoordigt. U kunt deze string direct in uw code plakken.",
             "features": {
                 "clipboard": {
-                    "title": "[Pending Translation] Clipboard Ready",
-                    "desc": "[Pending Translation] One-click copy. We format the output for HTML (`&lt;img src=\"...\"&gt;`) or CSS (`background: url(...)`)."
+                    "title": "Klaar voor klembord",
+                    "desc": "Kopieer met één klik. We formatteren de output voor HTML (`&lt;img src=\"...\"&gt;`) of CSS (`background: url(...)`)."
                 },
                 "requests": {
-                    "title": "[Pending Translation] Reduce Requests",
-                    "desc": "[Pending Translation] Embedding small icons and logos as Base64 eliminates the network overhead of fetching external image files."
+                    "title": "Minder verzoeken",
+                    "desc": "Door kleine pictogrammen en logo's in te sluiten als Base64 vervalt de overhead van het ophalen van externe afbeeldingsbestanden."
                 },
                 "formats": {
-                    "title": "[Pending Translation] Any Format",
-                    "desc": "[Pending Translation] Works with PNG, JPG, GIF, WEBP, SVG, and even ICO files."
+                    "title": "Elk formaat",
+                    "desc": "Werkt met PNG, JPG, GIF, WEBP, SVG en zelfs ICO-bestanden."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to use?",
+                "title": "Hoe te gebruiken?",
                 "list": [
-                    "[Pending Translation] Select your image file.",
-                    "[Pending Translation] The tool immediately converts the file to a Data URI.",
-                    "[Pending Translation] Click \"Copy to Clipboard\" to grab the code.",
-                    "[Pending Translation] Insert it into your `src` attribute or CSS file."
+                    "Selecteer uw afbeeldingsbestand.",
+                    "De tool converteert het bestand onmiddellijk naar een Data URI.",
+                    "Klik op \"Kopiëren naar klembord\" om de code op te halen.",
+                    "Plaats het in uw `src`-attribuut of CSS-bestand."
                 ]
             },
             "use_cases": {
-                "title": "[Pending Translation] When to use Base64?",
+                "title": "Wanneer Base64 gebruiken?",
                 "list": [
-                    "[Pending Translation] Small Images: Best for icons, spinners, and small logos (under 10KB).",
-                    "[Pending Translation] Single-File Apps: When you need to bundle everything into one HTML file (e.g., email templates).",
-                    "[Pending Translation] Offline Access: Ensures images load even without a network connection if the HTML is saved locally."
+                    "Kleine afbeeldingen: Het beste voor pictogrammen, spinners en kleine logo's (onder 10KB).",
+                    "Apps uit één bestand: Wanneer u alles in één HTML-bestand wilt bundelen (bijv. e-mailsjablonen).",
+                    "Offline toegang: Zorgt ervoor dat afbeeldingen laden, zelfs zonder netwerkverbinding, als de HTML lokaal wordt opgeslagen."
                 ]
             }
         },
         "js": {
-            "copied": "[Pending Translation] Copied!"
+            "copied": "Gekopieerd!"
         }
     },
     "jpg-to-png-converter": {
         "meta": {
-            "title": "[Pending Translation] JPG to PNG Converter - Convert JPG Images to PNG Free | Optimizo",
+            "title": "JPG naar PNG Converter - Converteer Gratis JPG-afbeeldingen naar PNG | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert JPG images to PNG format instantly. 100% free, secure client-side conversion, no file size limits.",
-            "h1": "[Pending Translation] JPG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to PNG format instantly with 100% free conversion"
+            "description": "Converteer JPG-afbeeldingen direct naar PNG-formaat. 100% gratis, veilige conversie op uw apparaat, geen limieten voor bestandsgrootte.",
+            "h1": "JPG naar PNG Converter",
+            "subtitle": "Converteer JPG-afbeeldingen direct naar PNG-formaat met 100% gratis conversie"
         },
         "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG\/JPEG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
+            "title": "Upload JPG afbeelding",
+            "desc": "Sleep uw JPG/JPEG bestand hiernaartoe",
+            "drop_title": "Sleep JPG bestand hier",
+            "drop_desc": "Ondersteunt JPG, JPEG (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] PNG",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
+            "image_alt": "Voorbeeld",
+            "output_format": "Output Formaat:",
+            "format_short": "PNG",
+            "btn_convert": "Converteren naar PNG & Downloaden"
         },
         "content": {
-            "title": "[Pending Translation] Convert JPG to PNG Instantly",
-            "p1": "[Pending Translation] JPG is the world's most popular image format, but it often lacks the versatility needed for modern web design. By converting to PNG, you gain access to lossless compression and transparency support.",
-            "p2": "[Pending Translation] Our <strong>JPG to PNG Converter<\/strong> is designed for speed and privacy, handling everything directly in your browser without uploading your sensitive photos to any server.",
+            "title": "Converteer JPG direct naar PNG",
+            "p1": "JPG is 's werelds populairste afbeeldingsformaat, maar het mist vaak de veelzijdigheid die nodig is voor modern webontwerp. Door naar PNG te converteren, krijgt u toegang tot compressie zonder verlies en ondersteuning voor transparantie.",
+            "p2": "Onze <strong>JPG naar PNG Converter</strong> is ontworpen voor snelheid en privacy en verwerkt alles rechtstreeks in uw browser zonder uw gevoelige foto's naar een server te uploaden.",
             "features": {
                 "lossless": {
-                    "title": "[Pending Translation] Lossless Quality",
-                    "desc": "[Pending Translation] Stop image degradation. PNG uses lossless compression to keep every pixel perfect during edits."
+                    "title": "Kwaliteit zonder verlies",
+                    "desc": "Stop achteruitgang van de beeldkwaliteit. PNG gebruikt compressie zonder verlies om elke pixel perfect te houden tijdens bewerkingen."
                 },
                 "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Files are processed locally on your device. We never see, store, or upload your images."
+                    "title": "100% Privé",
+                    "desc": "Bestanden worden lokaal op uw apparaat verwerkt. Wij zien, bewaren of uploaden uw afbeeldingen nooit."
                 },
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Ready",
-                    "desc": "[Pending Translation] Convert to the preferred format for logos, icons, and graphics that require transparent backgrounds."
+                    "title": "Klaar voor transparantie",
+                    "desc": "Converteer naar het voorkeursformaat voor logo's, pictogrammen en graphics die een transparante achtergrond vereisen."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to PNG",
+                "title": "Hoe JPG naar PNG converteren?",
                 "list": [
-                    "[Pending Translation] Drag and drop your JPG file into the designated area.",
-                    "[Pending Translation] The tool immediately reads the file ready for conversion.",
-                    "[Pending Translation] See exactly how your image looks before saving.",
-                    "[Pending Translation] Click \"Convert & Download\" to save your new PNG instantly."
+                    "Sleep uw JPG-bestand naar de uploadzone.",
+                    "De tool herkent het bestand direct en bereidt de conversie voor.",
+                    "Bekijk precies hoe uw afbeelding eruitziet voordat u deze opslaat.",
+                    "Klik op \"Converteren & Downloaden\" om uw nieuwe PNG direct op te slaan."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is the quality better?",
-                "a1": "[Pending Translation] Converting to PNG stops <em>future<\/em> quality loss. It's best for images you plan to edit further or need to keep sharp.",
-                "q2": "[Pending Translation] Are there file limits?",
-                "a2": "[Pending Translation] Since we process files in your browser, the limit is determined by your device's memory, usually allowing files up to 50MB easily."
+                "title": "Veelgestelde vragen",
+                "q1": "Wordt de kwaliteit beter?",
+                "a1": "Converteren naar PNG voorkomt <em>toekomstig</em> kwaliteitsverlies. Het is het beste voor afbeeldingen die u nog verder wilt bewerken of scherp wilt houden.",
+                "q2": "Zijn er bestandslimieten?",
+                "a2": "Aangezien we bestanden in uw browser verwerken, wordt de limiet bepaald door het geheugen van uw apparaat. Meestal zijn bestanden tot 50MB probleemloos te verwerken."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
+            "invalid_image": "Upload een geldige JPG-afbeelding",
+            "converted_name": "geconverteerde-afbeelding"
         }
     },
     "jpg-to-webp-converter": {
         "meta": {
-            "title": "[Pending Translation] JPG to WEBP Converter - Convert Images to WebP | Optimizo",
+            "title": "JPG naar WebP Converter - Converteer Afbeeldingen naar WebP | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression and web performance. Free online tool.",
-            "h1": "[Pending Translation] JPG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression"
+            "description": "Converteer JPG-afbeeldingen naar het moderne WebP-formaat voor superieure compressie en webprestaties. Gratis online tool.",
+            "h1": "JPG naar WebP Converter",
+            "subtitle": "Converteer JPG-afbeeldingen naar het moderne WebP-formaat voor superieure compressie"
         },
         "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
+            "title": "Upload JPG afbeelding",
+            "desc": "Sleep uw JPG-bestand hiernaartoe",
+            "drop_title": "Sleep JPG bestand hier",
+            "drop_desc": "Ondersteunt JPG, JPEG (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] WEBP",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
+            "image_alt": "Voorbeeld",
+            "output_format": "Output Formaat:",
+            "format_short": "WEBP",
+            "quality": "Compressiekwaliteit",
+            "btn_convert": "Converteren naar WEBP & Downloaden"
         },
         "content": {
-            "title": "[Pending Translation] Convert JPG to WebP for Better Performance",
-            "p1": "[Pending Translation] WebP is a modern image format that provides superior lossless and lossy compression for images on the web. By converting JPG to WebP, developers and webmasters can create smaller, richer images that make the web faster.",
-            "p2": "[Pending Translation] Our <strong>JPG to WebP Converter<\/strong> helps you optimize your images instantly in the browser, reducing file size by up to 30% compared to JPEG without standard quality loss.",
+            "title": "Converteer JPG naar WebP voor betere prestaties",
+            "p1": "WebP is een modern afbeeldingsformaat dat superieure compressie met en zonder verlies biedt voor afbeeldingen op het web. Door JPG naar WebP te converteren, kunnen ontwikkelaars en webmasters kleinere, rijkere afbeeldingen maken die het web sneller maken.",
+            "p2": "Onze <strong>JPG naar WebP Converter</strong> helpt u uw afbeeldingen direct in de browser te optimaliseren, waardoor de bestandsgrootte tot 30% afneemt in vergelijking met JPEG zonder standaard kwaliteitsverlies.",
             "features": {
                 "faster": {
-                    "title": "[Pending Translation] Faster Loading",
-                    "desc": "[Pending Translation] WebP images are significantly smaller than JPGs, helping your website load faster and improving SEO scores."
+                    "title": "Sneller laden",
+                    "desc": "WebP-afbeeldingen zijn aanzienlijk kleiner dan JPG's, waardoor uw website sneller laadt en SEO-scores verbeteren."
                 },
                 "quality": {
-                    "title": "[Pending Translation] High Quality",
-                    "desc": "[Pending Translation] Maintain visual fidelity while reducing file weight. Perfect for photographs and complex web graphics."
+                    "title": "Hoge kwaliteit",
+                    "desc": "Behoud de visuele getrouwheid terwijl u de bestandsgrootte verkleint. Perfect voor foto's en complexe webgraphics."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] All conversions happen locally. Your sensitive images never leave your computer."
+                    "title": "Veilige verwerking",
+                    "desc": "Alle conversies vinden lokaal plaats. Uw gevoelige afbeeldingen verlaten uw computer nooit."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to WebP",
+                "title": "Hoe JPG naar WebP converteren?",
                 "list": [
-                    "[Pending Translation] Select or drag & drop your JPG image.",
-                    "[Pending Translation] Use the quality slider to balance size vs quality.",
-                    "[Pending Translation] See the result in real-time.",
-                    "[Pending Translation] Save your optimized WebP image."
+                    "Selecteer of sleep uw JPG-afbeelding.",
+                    "Gebruik de schuifregelaar voor kwaliteit om de balans tussen grootte en kwaliteit te bepalen.",
+                    "Bekijk het resultaat in real-time.",
+                    "Sla uw geoptimaliseerde WebP-afbeelding op."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Do all browsers support WebP?",
-                "a1": "[Pending Translation] Yes, all modern browsers (Chrome, Firefox, Safari, Edge) fully support WebP images.",
-                "q2": "[Pending Translation] Is WebP better for SEO?",
-                "a2": "[Pending Translation] Absolutely. Google prefers WebP because it loads faster, improving your Core Web Vitals score."
+                "title": "Veelgestelde vragen",
+                "q1": "Ondersteunen alle browsers WebP?",
+                "a1": "Ja, alle moderne browsers (Chrome, Firefox, Safari, Edge) bieden volledige ondersteuning voor WebP-afbeeldingen.",
+                "q2": "Is WebP beter voor SEO?",
+                "a2": "Absoluut. Google geeft de voorkeur aan WebP omdat het sneller laadt, wat uw Core Web Vitals score verbetert."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
+            "invalid_image": "Upload een geldige JPG-afbeelding",
+            "converted_name": "geconverteerde-afbeelding"
         }
     },
     "png-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] PNG to JPG Converter - Convert PNG to JPG Online | Optimizo",
+            "title": "PNG naar JPG Converter - Converteer Gratis PNG naar JPG | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes. Free online converter.",
-            "h1": "[Pending Translation] PNG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes instantly"
+            "description": "Converteer PNG-afbeeldingen naar JPG-formaat voor kleinere bestandsgroottes. Gratis online converter.",
+            "h1": "PNG naar JPG Converter",
+            "subtitle": "Converteer PNG-afbeeldingen direct naar JPG-formaat voor kleinere bestanden"
         },
         "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
+            "title": "Upload PNG afbeelding",
+            "desc": "Sleep uw PNG-bestand hiernaartoe",
+            "drop_title": "Sleep PNG bestand hier",
+            "drop_desc": "Ondersteunt PNG (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be converted to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Voorbeeld",
+            "note": "Let op:",
+            "note_text": "Transparante achtergronden worden geconverteerd naar wit.",
+            "output_format": "Output Formaat:",
+            "btn_convert": "Converteren naar JPG & Downloaden"
         },
         "content": {
-            "title": "[Pending Translation] Compress PNG to JPG Instantly",
-            "p1": "[Pending Translation] PNG files are great for quality, but they can be massive. If you're uploading photos to a website or sending them via email, JPG is often the better choice.",
-            "p2": "[Pending Translation] Our <strong>PNG to JPG Converter<\/strong> drastically reduces file size by using JPEG compression. We automatically handle transparent backgrounds by filling them with white, ensuring your images look perfect.",
+            "title": "Converteer PNG direct naar JPG",
+            "p1": "PNG-bestanden zijn geweldig voor kwaliteit, maar ze kunnen enorm groot zijn. Als u foto's naar een website uploadt of ze per e-mail verstuurt, is JPG vaak de betere keuze.",
+            "p2": "Onze <strong>PNG naar JPG Converter</strong> verkleint de bestandsgrootte drastisch door gebruik te maken van JPEG-compressie. We verwerken transparante achtergronden automatisch door ze wit te maken, zodat uw afbeeldingen er perfect uitzien.",
             "features": {
                 "size": {
-                    "title": "[Pending Translation] Drastic Size Reduction",
-                    "desc": "[Pending Translation] Reduce file sizes by up to 80% with minimal loss in visual quality."
+                    "title": "Drastische verkleining",
+                    "desc": "Verklein de bestandsgrootte tot wel 80% met minimaal verlies van visuele kwaliteit."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Local browser processing means your photos are never uploaded to the cloud."
+                    "title": "Veilig & Privé",
+                    "desc": "Lokale browserverwerking betekent dat uw foto's nooit naar de cloud worden geüpload."
                 },
                 "smart": {
-                    "title": "[Pending Translation] Smart Conversion",
-                    "desc": "[Pending Translation] Intelligent background handling converts transparency to a clean white matte."
+                    "title": "Slimme conversie",
+                    "desc": "Intelligente achtergrondverwerking zet transparantie om in een strakke witte kleur."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Steps to Convert",
+                "title": "Stappen om te converteren",
                 "list": [
-                    "[Pending Translation] Select a PNG image from your device.",
-                    "[Pending Translation] The tool instantly processes the image.",
-                    "[Pending Translation] Check the preview (transparent areas will now be white).",
-                    "[Pending Translation] Download your optimized JPG file."
+                    "Selecteer een PNG-afbeelding vanaf uw apparaat.",
+                    "De tool verwerkt de afbeelding direct.",
+                    "Bekijk het voorbeeld (transparante delen worden nu wit).",
+                    "Download uw geoptimaliseerde JPG-bestand."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] When to use JPG?",
+                "title": "Wanneer JPG gebruiken?",
                 "list": [
-                    "[Pending Translation] Photographs: JPG is designed for complex, real-world images.",
-                    "[Pending Translation] Web Uploads: Many forms only accept .jpg or .jpeg.",
-                    "[Pending Translation] Saving Space: If you have thousands of images, JPG saves GBs of storage."
+                    "Foto's: JPG is ontworpen voor complexe, realistische afbeeldingen.",
+                    "Web-uploads: Veel formulieren accepteren alleen .jpg of .jpeg.",
+                    "Ruimte besparen: Als u duizenden afbeeldingen heeft, bespaart JPG veel opslagruimte."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
+            "invalid_image": "Upload een geldige PNG-afbeelding"
         }
     },
     "png-to-webp-converter": {
         "meta": {
-            "title": "[Pending Translation] PNG to WEBP Converter - Compress PNG to WebP | Optimizo",
+            "title": "PNG naar WebP Converter - Comprimeer PNG naar WebP | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.",
-            "h1": "[Pending Translation] PNG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency"
+            "description": "Converteer PNG-afbeeldingen naar WebP om de bestandsgrootte te verkleinen met behoud van transparantie. Verbeter de laadsnelheid van uw website.",
+            "h1": "PNG naar WebP Converter",
+            "subtitle": "Converteer PNG-afbeeldingen naar WebP om bestanden te verkleinen met behoud van transparantie"
         },
         "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
+            "title": "Upload PNG afbeelding",
+            "desc": "Sleep uw PNG-bestand hiernaartoe",
+            "drop_title": "Sleep PNG bestand hier",
+            "drop_desc": "Ondersteunt PNG (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
+            "image_alt": "Voorbeeld",
+            "output_format": "Output Formaat:",
+            "quality": "Compressiekwaliteit",
+            "btn_convert": "Converteren naar WEBP & Downloaden"
         },
         "content": {
-            "title": "[Pending Translation] Optimize Images with PNG to WebP",
-            "p1": "[Pending Translation] Want faster website load times? Converting your PNGs to WebP is the #1 recommendation from Google PageSpeed Insights.",
-            "p2": "[Pending Translation] Our tool compresses your PNG images into the modern WebP format, reducing file size by up to <strong>30-50%<\/strong> while keeping the background transparent and the quality sharp.",
+            "title": "Optimaliseer afbeeldingen met PNG naar WebP",
+            "p1": "Wilt u een snellere website? Het converteren van uw PNG's naar WebP is dé aanbeveling van Google PageSpeed Insights.",
+            "p2": "Onze tool comprimeert uw PNG-afbeeldingen naar het moderne WebP-formaat, waardoor de bestandsgrootte met <strong>30-50%</strong> afneemt, terwijl de achtergrond transparant en de kwaliteit scherp blijft.",
             "features": {
                 "smaller": {
-                    "title": "[Pending Translation] Significantly Smaller",
-                    "desc": "[Pending Translation] WebP offers superior compression. Save bandwidth and storage space instantly."
+                    "title": "Aanzienlijk kleiner",
+                    "desc": "WebP biedt superieure compressie. Bespaar direct bandbreedte en opslagruimte."
                 },
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Kept",
-                    "desc": "[Pending Translation] Unlike converting to JPG, switching from PNG to WebP preserves your alpha channel (background transparency)."
+                    "title": "Behoud van transparantie",
+                    "desc": "In tegenstelling tot conversie naar JPG, blijft bij de overstap van PNG naar WebP de transparantie (alfakanaal) behouden."
                 },
                 "adjustable": {
-                    "title": "[Pending Translation] Adjustable Quality",
-                    "desc": "[Pending Translation] You control the balance. Choose 90% for high quality or 70% for maximum savings."
+                    "title": "Instelbare kwaliteit",
+                    "desc": "U heeft de controle. Kies 90% voor hoge kwaliteit of 70% voor maximale besparing."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert?",
+                "title": "Hoe converteren?",
                 "list": [
-                    "[Pending Translation] Drag and drop your file.",
-                    "[Pending Translation] Use the slider. We recommend 80-90% for a good balance.",
-                    "[Pending Translation] Click the \"Convert\" button.",
-                    "[Pending Translation] Your lighter .webp file is ready."
+                    "Sleep uw bestand naar de uploadzone.",
+                    "Gebruik de schuifregelaar. We raden 80-90% aan voor een goede balans.",
+                    "Klik op de knop \"Converteren\".",
+                    "Uw lichtere .webp bestand is klaar."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why WebP?",
-                "p1": "[Pending Translation] WebP is a modern image format developed by Google.",
+                "title": "Waarom WebP?",
+                "p1": "WebP is een modern afbeeldingsformaat ontwikkeld door Google.",
                 "list": [
-                    "[Pending Translation] SEO Boost: Faster sites rank better on Google.",
-                    "[Pending Translation] Mobile Friendly: Uses less data for mobile visitors.",
-                    "[Pending Translation] Support: Supported by Chrome, Firefox, Safari, Edge, and all modern browsers."
+                    "SEO Boost: Snellere sites scoren hoger in Google.",
+                    "Mobielvriendelijk: Gebruikt minder data voor mobiele bezoekers.",
+                    "Ondersteuning: Ondersteund door Chrome, Firefox, Safari, Edge en alle moderne browsers."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
+            "invalid_image": "Upload een geldige PNG-afbeelding"
         }
     },
     "svg-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] SVG to JPG Converter - Vector to Raster Conversion | Optimizo",
+            "title": "SVG naar JPG Converter - Vector naar Raster Conversie | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert SVG vector files to JPG images online. Auto-fills transparent backgrounds with white for perfect JPG output.",
-            "h1": "[Pending Translation] SVG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert SVG vector files to JPG images online with auto-fill backgrounds"
+            "description": "Converteer SVG-vectorbestanden online naar JPG-afbeeldingen. Vult automatisch transparante achtergronden met wit voor een perfecte JPG-output.",
+            "h1": "SVG naar JPG Converter",
+            "subtitle": "Converteer SVG-vectorbestanden online naar JPG-afbeeldingen met automatische achtergrondvulling"
         },
         "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
+            "title": "Upload SVG-bestand",
+            "desc": "Sleep uw SVG-bestand hiernaartoe",
+            "drop_title": "Sleep SVG bestand hier",
+            "drop_desc": "Ondersteunt SVG, SVGZ (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be filled with white color.",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Voorbeeld",
+            "note": "Let op:",
+            "note_text": "Transparante achtergronden worden gevuld met de kleur wit.",
+            "output_format": "Output Formaat:",
+            "scale_label": "Resolutie Multiplier (Schaal)",
+            "scale_1": "1x (Originele grootte)",
+            "scale_2": "2x (Hoge resolutie)",
+            "scale_4": "4x (Ultra resolutie)",
+            "btn_convert": "Converteren naar JPG & Downloaden"
         },
         "content": {
-            "title": "[Pending Translation] Convert SVG to JPG Format",
-            "p1": "[Pending Translation] Need to use a logo in a document or on a website that doesn't accept vector files? Our <strong>SVG to JPG Converter<\/strong> is the answer.",
-            "p2": "[Pending Translation] It creates a solid, high-compatibility image file from your vector source. We automatically handle transparency by adding a clean white background, ensuring your graphic looks professional on any medium.",
+            "title": "Converteer SVG naar JPG formaat",
+            "p1": "Moet u een logo gebruiken in een document of op een website die geen vectorbestanden accepteert? Onze <strong>SVG naar JPG Converter</strong> biedt de oplossing.",
+            "p2": "Het creëert een solide afbeeldingsbestand met hoge compatibiliteit vanuit uw vectorbron. We verwerken transparantie automatisch door een schone witte achtergrond toe te voegen, zodat uw graphic er op elk medium professioneel uitziet.",
             "features": {
                 "compatibility": {
-                    "title": "[Pending Translation] Maximum Compatibility",
-                    "desc": "[Pending Translation] JPG is opened by literally every digital device and software created in the last 30 years."
+                    "title": "Maximale compatibiliteit",
+                    "desc": "JPG kan worden geopend door vrijwel elk digitaal apparaat en alle software die de afgelopen 30 jaar is gemaakt."
                 },
                 "resolution": {
-                    "title": "[Pending Translation] 4x High Resolution",
-                    "desc": "[Pending Translation] Scale up your SVG before saving to ensure your JPG is sharp, not blurry."
+                    "title": "4x Hoge resolutie",
+                    "desc": "Schaal uw SVG op voordat u deze opslaat om te zorgen dat uw JPG scherp is en niet wazig."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure Client-Side",
-                    "desc": "[Pending Translation] Processing happens in your browser. We never see your files."
+                    "title": "Veilig op uw apparaat",
+                    "desc": "De verwerking vind plaats in uw browser. Wij zien uw bestanden nooit."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Easy Instructions",
+                "title": "Eenvoudige instructies",
                 "list": [
-                    "[Pending Translation] Click \"Upload\" or drag your file to the center box.",
-                    "[Pending Translation] Choose a scaling factor (e.g., 2x or 4x) for higher quality results.",
-                    "[Pending Translation] Observe the image. Note that transparent backgrounds are now white.",
-                    "[Pending Translation] Click \"Convert to JPG & Download\"."
+                    "Klik op \"Uploaden\" of sleep uw bestand naar het middelste vak.",
+                    "Kies een schaalfactor (bijv. 2x of 4x) voor resultaten met hogere kwaliteit.",
+                    "Bekijk de afbeelding. Merk op dat transparante achtergronden nu wit zijn.",
+                    "Klik op \"Converteren naar JPG & Downloaden\"."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why choose JPG over PNG for Vectors?",
-                "p1": "[Pending Translation] While PNG supports transparency, JPG generates smaller file sizes for complex, colorful images.",
+                "title": "Waarom kiezen voor JPG in plaats van PNG voor vectoren?",
+                "p1": "Hoewel PNG transparantie ondersteunt, genereert JPG kleinere bestandsgroottes voor complexe, kleurrijke afbeeldingen.",
                 "list": [
-                    "[Pending Translation] Smaller Files: Better for emails and attachments.",
-                    "[Pending Translation] No Transparency Issues: Some viewers render transparency as black. JPG forces a white background, ensuring your logo is legible."
+                    "Kleinere bestanden: Beter voor e-mails en bijlagen.",
+                    "Geen problemen met transparantie: Sommige viewers geven transparantie weer als zwart. JPG dwingt een witte achtergrond af, zodat uw logo leesbaar blijft."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
+            "invalid_image": "Upload een geldige SVG-afbeelding"
         }
     },
     "svg-to-png-converter": {
         "meta": {
-            "title": "[Pending Translation] SVG to PNG Converter - Rasterize SVG Images | Optimizo",
+            "title": "SVG naar PNG Converter - Rasteriseer SVG Afbeeldingen | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don't support vector files.",
-            "h1": "[Pending Translation] SVG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly"
+            "description": "Converteer Scalable Vector Graphics (SVG) direct naar PNG-afbeeldingen. Ideaal voor compatibiliteit met applicaties die geen vectorbestanden ondersteunen.",
+            "h1": "SVG naar PNG Converter",
+            "subtitle": "Converteer Scalable Vector Graphics (SVG) direct naar PNG-afbeeldingen"
         },
         "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
+            "title": "Upload SVG-bestand",
+            "desc": "Sleep uw SVG-bestand hiernaartoe",
+            "drop_title": "Sleep SVG bestand hier",
+            "drop_desc": "Ondersteunt SVG, SVGZ (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "checkerboard": "[Pending Translation] Checkerboard background indicates transparency",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
+            "image_alt": "Voorbeeld",
+            "checkerboard": "Schaakbordachtergrond geeft transparantie aan",
+            "output_format": "Output Formaat:",
+            "scale_label": "Resolutie Multiplier (Schaal)",
+            "scale_1": "1x (Originele grootte)",
+            "scale_2": "2x (Hoge resolutie)",
+            "scale_4": "4x (Ultra resolutie)",
+            "btn_convert": "Converteren naar PNG & Downloaden"
         },
         "content": {
-            "title": "[Pending Translation] Rasterize SVG to PNG High-Res",
-            "p1": "[Pending Translation] Scalable Vector Graphics (SVG) are perfect for the web, but impossible to use on social media, in Word documents, or as email attachments.",
-            "p2": "[Pending Translation] Our <strong>SVG to PNG Converter<\/strong> allows you to turn your vector logo or icon into a high-quality, transparent PNG image. With our unique <strong>scaling feature<\/strong>, you can produce ultra-high-resolution images without any pixelation.",
+            "title": "Rasteriseer SVG naar PNG in hoge resolutie",
+            "p1": "Scalable Vector Graphics (SVG) zijn perfect voor het web, maar onmogelijk te gebruiken op sociale media, in Word-documenten of als e-mailbijlagen.",
+            "p2": "Met onze <strong>SVG naar PNG Converter</strong> kunt u uw vector-logo of pictogram omzetten in een hoogwaardige, transparante PNG-afbeelding. Dankzij onze unieke <strong>schaalfunctie</strong> kunt u afbeeldingen met ultrahoge resolutie maken zonder enige pixelvorming.",
             "features": {
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Preserved",
-                    "desc": "[Pending Translation] Unlike JPG, PNG keeps the background transparent. Perfect for logos and overlays."
+                    "title": "Behoud van transparantie",
+                    "desc": "In tegenstelling tot JPG behoudt PNG de transparante achtergrond. Perfect voor logo's en overlays."
                 },
                 "scaling": {
-                    "title": "[Pending Translation] Up to 4x Scaling",
-                    "desc": "[Pending Translation] Export at 4x the original size. Get crisp edges even for large print formats."
+                    "title": "Tot 4x schalen",
+                    "desc": "Exporteer op 4x de originele grootte. Krijg scherpe randen, zelfs voor grote printformaten."
                 },
                 "browser": {
-                    "title": "[Pending Translation] Browser-Based",
-                    "desc": "[Pending Translation] Fast and secure. No files are uploaded to any server."
+                    "title": "In-browser verwerking",
+                    "desc": "Snel en veilig. Er worden geen bestanden naar een server geüpload."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert SVG to PNG?",
+                "title": "Hoe SVG naar PNG converteren?",
                 "list": [
-                    "[Pending Translation] Drop your `.svg` file into the upload area.",
-                    "[Pending Translation] Select `1x`, `2x`, or `4x` from the dropdown. Higher is better for quality.",
-                    "[Pending Translation] Check the preview image on the left. The checkerboard indicates transparency.",
-                    "[Pending Translation] Hit the button to generate and download your PNG."
+                    "Sleep uw `.svg` bestand naar de uploadzone.",
+                    "Selecteer `1x`, `2x` of `4x` in het menu. Hoger is beter voor de kwaliteit.",
+                    "Bekijk de voorvertoning aan de linkerkant. Het schaakbordpatroon geeft transparantie aan.",
+                    "Klik op de knop om uw PNG te genereren en te downloaden."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why Convert Vectors?",
-                "p1": "[Pending Translation] Vectors are mathematical formulas, while PNGs are grids of pixels. You need pixels for:",
+                "title": "Waarom vectoren converteren?",
+                "p1": "Vectoren zijn wiskundige formules, terwijl PNG's rasters van pixels zijn. U heeft pixels nodig voor:",
                 "list": [
-                    "[Pending Translation] Profile pictures (Twitter\/LinkedIn often reject SVG).",
-                    "[Pending Translation] Embedding in emails (SVG support is poor).",
-                    "[Pending Translation] Using in video editors or simple graphic tools (Canva, Paint)."
+                    "Profielfoto's (Twitter/LinkedIn weigeren vaak SVG).",
+                    "Insluiten in e-mails (SVG-ondersteuning is matig).",
+                    "Gebruik in video-editors of eenvoudige grafische tools (Canva, Paint)."
                 ]
-            },
-            "faq": {
-                "title": "",
-                "q1": "",
-                "a1": "",
-                "q2": "",
-                "a2": ""
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
+            "invalid_image": "Upload een geldige SVG-afbeelding"
         }
     },
     "webp-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] WEBP to JPG Converter - Convert WebP to JPG Online | Optimizo",
+            "title": "WebP naar JPG Converter - Converteer Gratis Online | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility. Free, fast, and secure converter.",
-            "h1": "[Pending Translation] WebP to JPG Converter",
-            "subtitle": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility"
+            "description": "Converteer WebP-afbeeldingen naar JPG-formaat voor betere compatibiliteit. Gratis, snelle en veilige online converter.",
+            "h1": "WebP naar JPG Converter",
+            "subtitle": "Converteer WebP-afbeeldingen direct naar JPG-formaat voor maximale compatibiliteit"
         },
         "input": {
-            "title": "[Pending Translation] Upload WEBP Image",
-            "desc": "[Pending Translation] Drag & drop your WEBP file here",
-            "drop_title": "[Pending Translation] Drop WEBP file here",
-            "drop_desc": "[Pending Translation] Supports WEBP (Max 10MB)"
+            "title": "Upload WebP-afbeelding",
+            "desc": "Sleep uw WebP-bestand hiernaartoe",
+            "drop_title": "Sleep WebP bestand hier",
+            "drop_desc": "Ondersteunt WebP (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds (common in WEBP) will be verified to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Voorbeeld",
+            "output_format": "Output Formaat:",
+            "quality": "Compressiekwaliteit",
+            "btn_convert": "Converteren naar JPG & Downloaden"
         },
         "content": {
-            "title": "[Pending Translation] WebP to JPG: The Compatibility Fixer",
-            "p1": "[Pending Translation] WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older image viewers, or upload it to platforms that only accept JPG.",
-            "p2": "[Pending Translation] Our <strong>WebP to JPG Converter<\/strong> bridges this gap. It takes your highly optimized WebP images and transforms them into the universally compatible JPEG format in milliseconds.",
+            "title": "Converteer WebP direct naar JPG",
+            "p1": "WebP is uitstekend voor het web, maar veel applicaties zoals Microsoft Word, oudere fotoviewers en bepaalde sociale mediaplatforms ondersteunen het nog steeds niet volledig.",
+            "p2": "Onze <strong>WebP naar JPG Converter</strong> stelt u in staat om uw moderne webafbeeldingen om te zetten in de universele JPEG-standaard. Het is de snelste manier om een WebP-bestand 'bruikbaar' te maken voor dagelijkse offline taken.",
             "features": {
                 "universal": {
-                    "title": "[Pending Translation] Universal Support",
-                    "desc": "[Pending Translation] JPG works everywhere: Word docs, PowerPoint, legacy software, and every social media platform."
+                    "title": "Universele standaard",
+                    "desc": "JPG werkt overal. Van printshops tot legacy-systemen, JPG is de veiligste keuze."
                 },
-                "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] We don't see your files. The conversion is performed locally by your web browser."
+                "quality": {
+                    "title": "Kwaliteitsbehoud",
+                    "desc": "Gebruik onze kwaliteitsschuifregelaar om de scherpte van uw originele WebP-afbeelding in de nieuwe JPG te behouden."
                 },
-                "smart": {
-                    "title": "[Pending Translation] Smart Backgrounds",
-                    "desc": "[Pending Translation] Automatically detects transparent pixels in WebP and fills them with a clean white background."
+                "safe": {
+                    "title": "Privacy voorop",
+                    "desc": "Geen uploads. De conversie gebeurt in uw browser, waardoor uw data veilig blijft."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Step-by-Step Guide",
+                "title": "Hoe WebP naar JPG converteren?",
                 "list": [
-                    "[Pending Translation] Click the box or drag your WebP image onto the page.",
-                    "[Pending Translation] The tool will display a preview of your image.",
-                    "[Pending Translation] Click the \"Convert to JPG\" button. The system handles transparency and compression automatically.",
-                    "[Pending Translation] Your new .jpg file will download instantly."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why Convert WebP?",
-                "list": [
-                    "[Pending Translation] Editing: Many desktop editors typically don't support WebP out of the box.",
-                    "[Pending Translation] Email: Outlook and other email clients might not render WebP inline images correctly.",
-                    "[Pending Translation] Printing: Print shops often require standard JPG or TIFF files."
+                    "Selecteer uw `.webp` bestand door het te slepen of te klikken.",
+                    "Kies de gewenste kwaliteit. Wij raden 90% aan voor de beste resultaten.",
+                    "Bekijk het resultaat direct in het voorbeeldvenster.",
+                    "Download uw JPG-bestand en gebruik het overal."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] FAQ",
-                "q1": "[Pending Translation] What happens to transparent backgrounds?",
-                "a1": "[Pending Translation] Since JPG doesn't support transparency, our tool replaces transparent areas with white. This is perfect for product photos and logos.",
-                "q2": "[Pending Translation] Is it safe?",
-                "a2": "[Pending Translation] Yes. Unlike other converters that upload your file to a server, this tool runs 100% on your device. Your data remains private."
+                "title": "Veelgestelde vragen",
+                "q1": "Waarom WebP converteren?",
+                "a1": "Compatibiliteit is de hoofdreden. Als u afbeeldingen moet gebruiken in software die geen WebP herkent, is JPG de beste oplossing.",
+                "q2": "Heeft dit invloed op de bestandsgrootte?",
+                "a2": "Ja, JPG-bestanden zijn meestal groter dan WebP-bestanden bij dezelfde kwaliteit. Dit is een noodzakelijke afweging voor compatibiliteit."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid WEBP image"
+            "invalid_image": "Upload een geldige WebP-afbeelding"
         }
     }
 }

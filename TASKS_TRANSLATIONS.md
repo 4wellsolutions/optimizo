@@ -13,7 +13,7 @@
 - [ ] Japanese (ja) - Pending
 - [ ] Korean (ko) - Pending
 - [ ] Turkish (tr) - Pending
-- [ ] Dutch (nl) - Pending
+- [x] Dutch (nl) - **100% Completed**
 - [ ] Polish (pl) - Pending
 - [ ] Swedish (sv) - Pending
 - [ ] Danish (da) - Pending
@@ -64,7 +64,19 @@ For each incomplete language, the following files must be translated:
 - [x] `youtube.json`
 - [x] `text.json`
 
-## Current Focus
-- **Language**: Dutch (nl)
-- **File**: starting `converters.json`
+## Dutch (`resources/lang/nl/tools/`)
+    - [x] `converters.json`
+    - [x] `development.json`
+    - [x] `seo.json`
+    - [x] `image.json` (Dutch) - COMPLETED
+    - [x] `network.json` (Dutch) - COMPLETED
+    - [x] `spreadsheet.json` (Dutch) - COMPLETED
+    - [x] `text.json` (Dutch) - COMPLETED
+    - [x] `time.json` (Dutch) - COMPLETED
+    - [x] `utility.json` (Dutch) - COMPLETED
+    - [x] `youtube.json` (Dutch) - COMPLETED
+    - [x] `document.json` (Dutch) - COMPLETED
 
+## Current Focus
+- **Language**: None (All Dutch Files Completed)
+- **File**: None
