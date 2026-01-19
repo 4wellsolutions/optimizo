@@ -6,9 +6,9 @@
 - [x] Italian (it) - **100% Completed**
 - [x] Spanish (es) - **100% Completed**
 - [x] German (de) - **100% Completed**
-- [ ] French (fr) - Pending
-- [ ] Portuguese (pt) - Pending
-- [ ] Russian (ru) - Pending
+- [x] French (fr) - **100% Completed**
+- [x] Portuguese (pt) - **100% Completed**
+- [x] Russian (ru) - **100% Completed**
 - [ ] Chinese (zh) - Pending
 - [ ] Japanese (ja) - Pending
 - [ ] Korean (ko) - Pending
@@ -38,6 +38,33 @@ For each incomplete language, the following files must be translated:
 10. `youtube.json`
 11. `text.json`
 
+## Portuguese (pt) Progress
+- [x] `converters.json`
+- [x] `development.json`
+- [x] `seo.json`
+- [x] `image.json`
+- [x] `network.json`
+- [x] `document.json`
+- [x] `spreadsheet.json`
+- [x] `utility.json`
+- [x] `time.json`
+- [x] `youtube.json`
+- [x] `text.json`
+
+## Russian (ru) Progress
+- [x] `converters.json`
+- [x] `development.json`
+- [x] `seo.json`
+- [x] `image.json`
+- [x] `network.json`
+- [x] `document.json`
+- [x] `spreadsheet.json`
+- [x] `utility.json`
+- [x] `time.json`
+- [x] `youtube.json`
+- [x] `text.json`
+
 ## Current Focus
-- **Language**: French (fr)
-- **File**: `converters.json`
+- **Language**: Dutch (nl)
+- **File**: starting `converters.json`
+

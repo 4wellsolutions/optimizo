@@ -1,735 +1,741 @@
 {
     "dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] DNS Lookup Tool - Check DNS Records Online Free",
-            "description": "[Pending Translation] Free DNS lookup tool to check DNS records for any domain. View A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.",
-            "h1": "[Pending Translation] DNS Lookup Tool",
-            "subtitle": "[Pending Translation] Query DNS records to find nameservers, MX, A, CNAME & TXT records instantly"
+            "title": "Ferramenta de Consulta DNS - Verificar Registros DNS Online Grátis",
+            "description": "Ferramenta gratuita de consulta DNS para verificar registros de qualquer domínio. Veja registros A, AAAA, MX, NS, TXT, CNAME instantaneamente. Essencial para resolver problemas de e-mail e configuração de domínio.",
+            "h1": "Ferramenta de Consulta DNS",
+            "subtitle": "Consulte registros DNS para encontrar nameservers, MX, A, CNAME e registros TXT instantaneamente"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup DNS"
+            "domain_label": "Nome de Domínio",
+            "domain_placeholder": "exemplo.com",
+            "button": "Consultar DNS"
         },
         "results": {
-            "title": ""
+            "title": "Registros DNS de"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is DNS Lookup?",
-            "what_is_desc": "[Pending Translation] DNS Lookup is a tool that queries Domain Name System servers to retrieve DNS records for a domain. DNS records contain important information about how a domain is configured, including mail servers (MX records), nameservers (NS records), IP addresses (A\/AAAA records), and text records (TXT records) used for verification and security.",
-            "why_use_title": "[Pending Translation] Why Use DNS Lookup?",
-            "why_use_desc": "[Pending Translation] DNS Lookup is essential for troubleshooting email delivery issues, verifying domain configuration, checking nameserver settings, validating SPF and DKIM records, and understanding how a domain is set up. It's used by system administrators, web developers, and IT professionals daily.",
-            "record_types_title": "[Pending Translation] DNS Record Types",
-            "a_record": "[Pending Translation] <strong>A Record:<\/strong> Maps domain to IPv4 address",
-            "aaaa_record": "[Pending Translation] <strong>AAAA Record:<\/strong> Maps domain to IPv6 address",
-            "mx_record": "[Pending Translation] <strong>MX Record:<\/strong> Mail server information",
-            "ns_record": "[Pending Translation] <strong>NS Record:<\/strong> Nameserver information",
-            "txt_record": "[Pending Translation] <strong>TXT Record:<\/strong> Text records for verification",
-            "cname_record": "[Pending Translation] <strong>CNAME Record:<\/strong> Canonical name alias"
+            "what_is_title": "O que é Consulta DNS?",
+            "what_is_desc": "A Consulta DNS (DNS Lookup) é uma ferramenta que consulta os servidores do Sistema de Nomes de Domínio para recuperar os registros DNS de um domínio. Os registros DNS contêm informações importantes sobre como um domínio está configurado, incluindo servidores de e-mail (registros MX), nomes de servidores (registros NS), endereços IP (registros A/AAAA) e registros de texto (registros TXT) usados para verificação e segurança.",
+            "why_use_title": "Por que usar a Consulta DNS?",
+            "why_use_desc": "A Consulta DNS é essencial para diagnosticar problemas de entrega de e-mail, verificar a configuração do domínio, checar as configurações de nameservers, validar registros SPF e DKIM e entender como um domínio está configurado. É usada diariamente por administradores de sistema, desenvolvedores web e profissionais de TI.",
+            "record_types_title": "Tipos de Registros DNS",
+            "a_record": "<strong>Registro A:</strong> Mapeia o domínio para o endereço IPv4",
+            "aaaa_record": "<strong>Registro AAAA:</strong> Mapeia o domínio para o endereço IPv6",
+            "mx_record": "<strong>Registro MX:</strong> Informações do servidor de e-mail",
+            "ns_record": "<strong>Registro NS:</strong> Informações do servidor de nomes (nameserver)",
+            "txt_record": "<strong>Registro TXT:</strong> Registros de texto para verificação",
+            "cname_record": "<strong>Registro CNAME:</strong> Alias de nome canônico"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Perguntas Frequentes",
+            "q1": "Quanto tempo as mudanças no DNS levam para propagar?",
+            "a1": "As alterações no DNS podem levar de alguns minutos a 48 horas para se propagarem globalmente, dependendo do valor TTL (Time to Live) definido nos registros.",
+            "q2": "O que é o TTL no DNS?",
+            "a2": "TTL significa 'Time to Live'. É um valor que indica aos servidores DNS por quanto tempo devem armazenar o registro em cache antes de solicitar uma nova atualização.",
+            "q3": "Qual a diferença entre o registro A e CNAME?",
+            "a3": "O registro A aponta um nome de domínio para um endereço IP, enquanto o registro CNAME aponta um nome de domínio para outro nome de domínio (alias).",
+            "q4": "Por que meus registros MX não estão aparecendo?",
+            "a4": "Isso pode ocorrer devido a erros de digitação na configuração, atrasos na propagação ou problemas com os servidores de nomes autoritativos do seu domínio.",
+            "q5": "Esta ferramenta é gratuita?",
+            "a5": "Sim, nossa ferramenta de consulta DNS é 100% gratuita e permite consultas ilimitadas."
         },
         "js": {
-            "looking_up": "",
-            "records_label": "",
-            "success": "",
-            "error": "",
-            "lookup_dns": ""
+            "looking_up": "Consultando...",
+            "records_label": "Registros",
+            "success": "Registros DNS recuperados com sucesso",
+            "error": "Falha ao recuperar registros DNS. Por favor, verifique o domínio.",
+            "lookup_dns": "Consultar DNS"
         }
     },
     "domain-to-ip": {
         "meta": {
-            "title": "[Pending Translation] Domain to IP Converter - Find IP Address of Any Domain Free",
-            "description": "[Pending Translation] Free domain to IP lookup tool. Instantly convert any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.",
-            "h1": "[Pending Translation] Domain to IP Converter",
-            "subtitle": "[Pending Translation] Resolve domain names to IP addresses with detailed DNS information"
+            "title": "Conversor de Domínio para IP - Encontrar Endereço IP de Qualquer Domínio Grátis",
+            "description": "Ferramenta gratuita de consulta de domínio para IP. Converta instantaneamente qualquer nome de domínio em seu endereço IP. Essencial para solução de problemas de rede, configuração de servidor e verificação de DNS.",
+            "h1": "Conversor de Domínio para IP",
+            "subtitle": "Resolva nomes de domínio para endereços IP com informações detalhadas de DNS"
         },
         "form": {
-            "domain_label": "[Pending Translation] Enter Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "domain_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "button": "[Pending Translation] Lookup IP Address"
+            "domain_label": "Insira o Nome do Domínio",
+            "domain_placeholder": "exemplo.com",
+            "domain_hint": "Insira o domínio sem http:// ou https://",
+            "button": "Consultar Endereço IP"
         },
         "results": {
-            "title": "",
-            "domain_label": "",
-            "ip_label": ""
+            "title": "Resultados de IP para",
+            "domain_label": "Domínio:",
+            "ip_label": "Endereço IP:"
         },
         "content": {
-            "main_title": "[Pending Translation] Domain to IP Converter",
-            "main_subtitle": "[Pending Translation] Convert any domain name to its IP address instantly",
-            "intro": "[Pending Translation] Our free Domain to IP tool instantly converts any domain name to its corresponding IP address using DNS lookup. Essential for network administrators, web developers, security professionals, and anyone needing to identify the server behind a domain. Get accurate IP addresses for troubleshooting, server verification, and network configuration.",
-            "feature1_title": "[Pending Translation] Instant Lookup",
-            "feature1_desc": "[Pending Translation] Get IP addresses immediately without delays",
-            "feature2_title": "[Pending Translation] Accurate Results",
-            "feature2_desc": "[Pending Translation] Real-time DNS queries for current IP addresses",
-            "feature3_title": "[Pending Translation] 100% Free",
-            "feature3_desc": "[Pending Translation] Unlimited lookups with no registration required",
-            "what_is_title": "[Pending Translation] 🌐 What is Domain to IP Lookup?",
-            "what_is_desc": "[Pending Translation] Domain to IP lookup is the process of converting a human-readable domain name (like example.com) into its corresponding numerical IP address (like 93.184.216.34). This conversion happens through DNS (Domain Name System) servers, which act as the internet's phone book. Every website has an IP address, but domain names make them easier to remember and access.",
-            "use_cases_title": "[Pending Translation] 🎯 Common Use Cases",
-            "uc1_title": "[Pending Translation] Server Configuration",
-            "uc1_desc": "[Pending Translation] Configure firewalls, whitelists, and server settings with IP addresses",
-            "uc2_title": "[Pending Translation] Security Analysis",
-            "uc2_desc": "[Pending Translation] Verify server locations and identify hosting providers",
-            "uc3_title": "[Pending Translation] Troubleshooting",
-            "uc3_desc": "[Pending Translation] Diagnose DNS issues and verify domain configurations",
-            "uc4_title": "[Pending Translation] Network Monitoring",
-            "uc4_desc": "[Pending Translation] Track server changes and monitor infrastructure",
-            "uc5_title": "[Pending Translation] Geolocation",
-            "uc5_desc": "[Pending Translation] Determine server geographic location from IP address",
-            "uc6_title": "[Pending Translation] API Integration",
-            "uc6_desc": "[Pending Translation] Use IP addresses for direct API connections",
-            "pro_tips_title": "[Pending Translation] 💡 Pro Tips: Using Domain to IP Lookup",
-            "tip1": "[Pending Translation] ✅ Use IP addresses for direct server connections when DNS is slow",
-            "tip2": "[Pending Translation] ✅ Verify CDN configurations by checking multiple domain resolutions",
-            "tip3": "[Pending Translation] ✅ Whitelist server IPs in firewalls for secure access",
-            "tip4": "[Pending Translation] ✅ Compare IP addresses before and after DNS changes",
-            "tip5": "[Pending Translation] ✅ Identify shared hosting by checking if multiple domains share IPs"
+            "main_title": "Conversor de Domínio para IP",
+            "main_subtitle": "Converta qualquer nome de domínio em seu endereço IP instantaneamente",
+            "intro": "Nossa ferramenta gratuita de Domínio para IP converte instantaneamente qualquer nome de domínio em seu endereço IP correspondente usando consulta DNS. Essencial para administradores de rede, desenvolvedores web, profissionais de segurança e qualquer pessoa que precise identificar o servidor por trás de um domínio. Obtenha endereços IP precisos para solução de problemas, verificação de servidor e configuração de rede.",
+            "feature1_title": "Consulta Instantânea",
+            "feature1_desc": "Obtenha endereços IP imediatamente sem esperas",
+            "feature2_title": "Resultados Precisos",
+            "feature2_desc": "Consultas DNS em tempo real para endereços IP atuais",
+            "feature3_title": "100% Gratuito",
+            "feature3_desc": "Consultas ilimitadas sem necessidade de registro",
+            "what_is_title": "🌐 O que é Consulta de Domínio para IP?",
+            "what_is_desc": "A consulta de domínio para IP é o processo de converter um nome de domínio legível por humanos (como exemplo.com) em seu endereço IP numérico correspondente (como 93.184.216.34). Essa conversão ocorre através dos servidores DNS (Sistema de Nomes de Domínio), que funcionam como a lista telefônica da internet. Cada site possui um endereço IP, mas os nomes de domínio os tornam mais fáceis de lembrar e acessar.",
+            "use_cases_title": "🎯 Casos de Uso Comuns",
+            "uc1_title": "Configuração de Servidor",
+            "uc1_desc": "Configure firewalls, listas brancas e configurações de servidor com endereços IP",
+            "uc2_title": "Análise de Segurança",
+            "uc2_desc": "Verifique a localização dos servidores e identifique os provedores de hospedagem",
+            "uc3_title": "Solução de Problemas",
+            "uc3_desc": "Diagnostique problemas de DNS e verifique as configurações de domínio",
+            "uc4_title": "Monitoramento de Rede",
+            "uc4_desc": "Acompanhe mudanças no servidor e monitore a infraestrutura",
+            "uc5_title": "Geolocalização",
+            "uc5_desc": "Determine a localização geográfica do servidor a partir do endereço IP",
+            "uc6_title": "Integração de API",
+            "uc6_desc": "Use endereços IP para conexões diretas de API",
+            "pro_tips_title": "💡 Dicas Profissionais: Usando Consulta de Domínio para IP",
+            "tip1": "✅ Use endereços IP para conexões diretas de servidor quando o DNS estiver lento",
+            "tip2": "✅ Verifique as configurações de CDN checando múltiplas resoluções de domínio",
+            "tip3": "✅ Coloque os IPs do servidor em listas brancas nos firewalls para acesso seguro",
+            "tip4": "✅ Compare endereços IP antes e depois de mudanças no DNS",
+            "tip5": "✅ Identifique hospedagem compartilhada checando se múltiplos domínios compartilham IPs"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Perguntas Frequentes",
+            "q1": "Um domínio pode ter múltiplos endereços IP?",
+            "a1": "Sim, domínios grandes costumam usar múltiplos endereços IP para balanceamento de carga e redundância.",
+            "q2": "Por que o endereço IP mudou?",
+            "a2": "Isso pode ocorrer se o site mudou de servidor, provedor de hospedagem ou se está usando um serviço de CDN (como Cloudflare) que alterna IPs.",
+            "q3": "Qual a diferença entre IPv4 e IPv6?",
+            "a3": "IPv4 é o formato antigo (ex: 192.168.1.1) e IPv6 é o novo formato (ex: 2001:db8::1) criado porque os endereços IPv4 estão se esgotando.",
+            "q4": "O que é um IP dinâmico?",
+            "a4": "Um IP dinâmico é aquele que muda periodicamente, geralmente atribuído por provedores de internet residencial.",
+            "q5": "Como faço para encontrar o meu próprio IP?",
+            "a5": "Você pode usar nossa ferramenta 'Qual é o Meu IP' para descobrir seu endereço IP público atual."
         },
         "js": {
-            "looking_up": "",
-            "error_failed": ""
+            "looking_up": "Consultando...",
+            "error_failed": "Falha ao resolver o domínio. Por favor, tente novamente."
         }
     },
     "internet-speed-test": {
         "meta": {
-            "title": "[Pending Translation] Free Internet Speed Test - Check Your Connection Speed",
-            "description": "[Pending Translation] Test your internet speed for free. Check download speed, upload speed, and ping instantly.",
-            "h1": "[Pending Translation] Internet Speed Test",
-            "subtitle": "[Pending Translation] Test your internet connection speed instantly"
+            "title": "Teste de Velocidade de Internet Grátis - Verifique sua Velocidade de Conexão",
+            "description": "Teste sua velocidade de internet gratuitamente. Verifique a velocidade de download, upload e ping instantaneamente.",
+            "h1": "Teste de Velocidade de Internet",
+            "subtitle": "Teste a velocidade da sua conexão de internet instantaneamente"
         },
         "editor": {
-            "btn_start": "[Pending Translation] Start Speed Test",
-            "status_init": "[Pending Translation] Initializing test...",
-            "label_download": "[Pending Translation] Download Speed",
-            "label_upload": "[Pending Translation] Upload Speed",
-            "label_ping": "[Pending Translation] Ping",
-            "label_quality": "[Pending Translation] Connection Quality",
-            "btn_retry": "[Pending Translation] Test Again",
-            "status_ping": "[Pending Translation] Testing ping...",
-            "status_download": "[Pending Translation] Testing download speed...",
-            "status_upload": "[Pending Translation] Testing upload speed...",
-            "quality_val_excellent": "[Pending Translation] Excellent",
-            "quality_val_very_good": "[Pending Translation] Very Good",
-            "quality_val_good": "[Pending Translation] Good",
-            "quality_val_fair": "[Pending Translation] Fair",
-            "quality_val_poor": "[Pending Translation] Poor"
+            "btn_start": "Iniciar Teste de Velocidade",
+            "status_init": "Inicializando teste...",
+            "label_download": "Velocidade de Download",
+            "label_upload": "Velocidade de Upload",
+            "label_ping": "Ping",
+            "label_quality": "Qualidade da Conexão",
+            "btn_retry": "Testar Novamente",
+            "status_ping": "Testando ping...",
+            "status_download": "Testando velocidade de download...",
+            "status_upload": "Testando velocidade de upload...",
+            "quality_val_excellent": "Excelente",
+            "quality_val_very_good": "Muito Boa",
+            "quality_val_good": "Boa",
+            "quality_val_fair": "Razoável",
+            "quality_val_poor": "Ruim"
         },
         "content": {
-            "p1": "[Pending Translation] Test your internet connection speed with our free, accurate speed test tool. Measure your download speed, upload speed, and ping latency in seconds. Perfect for troubleshooting slow connections, verifying ISP speeds, or checking if you're getting what you pay for.",
-            "metrics_title": "[Pending Translation] Understanding Speed Test Metrics",
-            "req_title": "[Pending Translation] Requirements for Accurate Testing",
+            "p1": "Teste a velocidade da sua conexão de internet com nossa ferramenta de teste de velocidade gratuita e precisa. Meça sua velocidade de download, velocidade de upload e latência de ping em segundos. Perfeito para diagnosticar conexões lentas, verificar velocidades do provedor ou checar se você está recebendo o que contratou.",
+            "metrics_title": "Entendendo as Métricas do Teste de Velocidade",
+            "req_title": "Requisitos para um Teste Preciso",
             "req_list": [
-                "[Pending Translation] Close all other applications and browser tabs",
-                "[Pending Translation] Connect via Ethernet cable for most accurate results",
-                "[Pending Translation] Disable VPN or proxy services temporarily",
-                "[Pending Translation] Ensure no downloads or uploads are running",
-                "[Pending Translation] Test multiple times at different times of day"
+                "Feche todos os outros aplicativos e abas do navegador",
+                "Conecte-se via cabo Ethernet para resultados mais precisos",
+                "Desative serviços de VPN ou proxy temporariamente",
+                "Certifique-se de que nenhum download ou upload esteja sendo executado",
+                "Teste várias vezes em diferentes momentos do dia"
             ],
-            "why_title": "[Pending Translation] Why Test Your Internet Speed?",
+            "why_title": "Por que Testar sua Velocidade de Internet?",
             "why_list": [
-                "[Pending Translation] Verify you're getting the speed you're paying for",
-                "[Pending Translation] Troubleshoot slow connection issues",
-                "[Pending Translation] Compare different ISP plans before switching",
-                "[Pending Translation] Optimize your network setup",
-                "[Pending Translation] Document speed for ISP support tickets",
-                "[Pending Translation] Test Wi-Fi vs Ethernet performance"
+                "Verificar se você está recebendo a velocidade pela qual está pagando",
+                "Solucionar problemas de conexão lenta",
+                "Comparar diferentes planos de provedores antes de trocar",
+                "Otimizar a configuração da sua rede",
+                "Documentar a velocidade para chamados de suporte do provedor",
+                "Testar o desempenho do Wi-Fi vs Ethernet"
             ],
-            "factors_title": "[Pending Translation] Factors Affecting Your Speed",
-            "improve_title": "[Pending Translation] How to Improve Your Speed",
+            "factors_title": "Fatores que Afetam sua Velocidade",
+            "improve_title": "Como Melhorar sua Velocidade",
             "improve_list": [
-                "[Pending Translation] Use Ethernet cable instead of Wi-Fi when possible",
-                "[Pending Translation] Place router in central location away from walls",
-                "[Pending Translation] Upgrade to a modern router that supports your speed tier",
-                "[Pending Translation] Close bandwidth-heavy applications",
-                "[Pending Translation] Update router firmware regularly",
-                "[Pending Translation] Consider upgrading your internet plan",
-                "[Pending Translation] Use Quality of Service (QoS) settings on router"
+                "Use cabo Ethernet em vez de Wi-Fi quando possível",
+                "Coloque o roteador em um local central, longe de paredes",
+                "Atualize para um roteador moderno que suporte sua faixa de velocidade",
+                "Feche aplicativos que consomem muita largura de banda",
+                "Atualize o firmware do roteador regularmente",
+                "Considere atualizar seu plano de internet",
+                "Use configurações de Qualidade de Serviço (QoS) no roteador"
             ],
-            "tips_title": "[Pending Translation] Pro Tips for Accurate Results",
+            "tips_title": "Dicas Profissionais para Resultados Precisos",
             "tips_list": [
-                "[Pending Translation] Test at different times of day to see variations",
-                "[Pending Translation] Run multiple tests and average the results",
-                "[Pending Translation] Test on different devices to rule out device issues",
-                "[Pending Translation] Compare Wi-Fi speeds at different locations in your home"
+                "Teste em diferentes horários do dia para ver variações",
+                "Execute vários testes e tire a média dos resultados",
+                "Teste em dispositivos diferentes para descartar problemas no dispositivo",
+                "Compare as velocidades do Wi-Fi em diferentes locais da sua casa"
             ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "Perguntas Frequentes",
             "metrics": {
                 "download": {
-                    "title": "[Pending Translation] Download Speed",
-                    "desc": "[Pending Translation] How fast data travels from the internet to your device. Important for streaming, browsing, and downloading files."
+                    "title": "Velocidade de Download",
+                    "desc": "A rapidez com que os dados viajam da internet para o seu dispositivo. Importante para streaming, navegação e download de arquivos."
                 },
                 "upload": {
-                    "title": "[Pending Translation] Upload Speed",
-                    "desc": "[Pending Translation] How fast data travels from your device to the internet. Important for video calls, uploading files, and live streaming."
+                    "title": "Velocidade de Upload",
+                    "desc": "A rapidez com que os dados viajam do seu dispositivo para a internet. Importante para chamadas de vídeo, upload de arquivos e transmissões ao vivo."
                 },
                 "ping": {
-                    "title": "[Pending Translation] Ping (Latency)",
-                    "desc": "[Pending Translation] Response time of your connection. Lower is better. Important for gaming and real-time applications."
+                    "title": "Ping (Latência)",
+                    "desc": "O tempo de resposta da sua conexão. Quanto menor, melhor. Importante para jogos e aplicativos em tempo real."
                 }
             },
             "factors": {
                 "congestion": {
-                    "title": "[Pending Translation] Network Congestion",
-                    "desc": "[Pending Translation] Peak usage times can slow down your connection as more users share bandwidth."
+                    "title": "Congestionamento de Rede",
+                    "desc": "Horários de pico de uso podem desacelerar sua conexão à medida que mais usuários compartilham a largura de banda."
                 },
                 "wifi": {
-                    "title": "[Pending Translation] Wi-Fi Signal",
-                    "desc": "[Pending Translation] Distance from router, walls, and interference from other devices affect wireless speeds."
+                    "title": "Sinal de Wi-Fi",
+                    "desc": "Distância do roteador, paredes e interferência de outros dispositivos afetam as velocidades sem fio."
                 },
                 "device": {
-                    "title": "[Pending Translation] Device Performance",
-                    "desc": "[Pending Translation] Older devices or those running many programs may not achieve full speeds."
+                    "title": "Desempenho do Dispositivo",
+                    "desc": "Dispositivos mais antigos ou que estão executando muitos programas podem não atingir as velocidades totais."
                 },
                 "router": {
-                    "title": "[Pending Translation] Router Quality",
-                    "desc": "[Pending Translation] Outdated routers may not support your full internet speed capabilities."
+                    "title": "Qualidade do Roteador",
+                    "desc": "Roteadores desatualizados podem não suportar as capacidades totais da sua velocidade de internet."
                 }
             },
             "faq": {
-                "q1": "[Pending Translation] What is a good internet speed?",
-                "a1": "[Pending Translation] For general browsing and streaming: 25+ Mbps. For 4K streaming and gaming: 50+ Mbps. For multiple users and heavy usage: 100+ Mbps. For remote work and large households: 200+ Mbps.",
-                "q2": "[Pending Translation] Why is my speed slower than advertised?",
-                "a2": "[Pending Translation] ISPs advertise \"up to\" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.",
-                "q3": "[Pending Translation] What's the difference between Mbps and MBps?",
-                "a3": "[Pending Translation] Mbps (megabits per second) is used for internet speeds. MBps (megabytes per second) is used for file sizes. 1 MBps = 8 Mbps. A 100 Mbps connection downloads at about 12.5 MBps.",
-                "q4": "[Pending Translation] How accurate is this speed test?",
-                "a4": "[Pending Translation] Our speed test provides accurate results by measuring real data transfer. For best accuracy, close other applications, use Ethernet, and run multiple tests.",
-                "q5": "[Pending Translation] Should I test with Wi-Fi or Ethernet?",
-                "a5": "[Pending Translation] Test with Ethernet to measure your true internet speed. Test with Wi-Fi to diagnose wireless issues. Comparing both helps identify if problems are with your internet or Wi-Fi."
+                "q1": "O que é uma boa velocidade de internet?",
+                "a1": "Para navegação geral e streaming: 25+ Mbps. Para streaming 4K e jogos: 50+ Mbps. Para múltiplos usuários e uso intenso: 100+ Mbps. Para trabalho remoto e famílias grandes: 200+ Mbps.",
+                "q2": "Por que minha velocidade é menor que a anunciada?",
+                "a2": "Os provedores anunciam velocidades 'até'. As velocidades reais dependem do congestionamento da rede, qualidade do Wi-Fi, distância do roteador e capacidades do dispositivo. Teste com Ethernet para resultados mais precisos.",
+                "q3": "Qual a diferença entre Mbps e MBps?",
+                "a3": "Mbps (megabits por segundo) é usado para velocidades de internet. MBps (megabytes por segundo) é usado para tamanhos de arquivo. 1 MBps = 8 Mbps. Uma conexão de 100 Mbps baixa a cerca de 12,5 MBps.",
+                "q4": "Quão preciso é este teste de velocidade?",
+                "a4": "Nosso teste de velocidade fornece resultados precisos ao medir a transferência real de dados. Para melhor precisão, feche outros aplicativos, use Ethernet e execute vários testes.",
+                "q5": "Devo testar com Wi-Fi ou Ethernet?",
+                "a5": "Teste com Ethernet para medir sua verdadeira velocidade de internet. Teste com Wi-Fi para diagnosticar problemas sem fio. Comparar ambos ajuda a identificar se os problemas são com sua internet ou seu Wi-Fi."
             }
         }
     },
     "ip-lookup": {
         "meta": {
-            "title": "[Pending Translation] IP Lookup Tool - Get IP Address Information & Geolocation Free",
-            "description": "[Pending Translation] Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.",
-            "h1": "[Pending Translation] IP Lookup Tool",
-            "subtitle": "[Pending Translation] Get detailed information about any IP address including location & ISP"
+            "title": "Ferramenta de Consulta de IP - Obter Informações de Endereço IP e Geolocalização Grátis",
+            "description": "Ferramenta gratuita de consulta de IP para encontrar informações detalhadas sobre qualquer endereço IP. Veja localização, ISP, hostname e muito mais. Essencial para análise de segurança e solução de problemas de rede.",
+            "h1": "Ferramenta de Consulta de IP",
+            "subtitle": "Obtenha informações detalhadas sobre qualquer endereço IP, incluindo localização e ISP"
         },
         "form": {
-            "ip_label": "[Pending Translation] IP Address",
-            "ip_placeholder": "[Pending Translation] 8.8.8.8",
-            "button": "[Pending Translation] Lookup IP Address"
+            "ip_label": "Endereço IP",
+            "ip_placeholder": "8.8.8.8",
+            "button": "Consultar Endereço IP"
         },
         "results": {
-            "title": "",
-            "ip_address": "",
-            "type": "",
-            "hostname": "",
-            "isp": "",
-            "country": "",
-            "region": "",
-            "city": "",
-            "timezone": ""
+            "title": "Informações do IP",
+            "ip_address": "Endereço IP",
+            "type": "Tipo",
+            "hostname": "Hostname",
+            "isp": "Provedor (ISP)",
+            "country": "País",
+            "region": "Região",
+            "city": "Cidade",
+            "timezone": "Fuso Horário"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is IP Lookup?",
-            "what_is_desc": "[Pending Translation] IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. This information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.",
-            "why_use_title": "[Pending Translation] Why Use IP Lookup?",
-            "why_use_desc": "[Pending Translation] IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It's also useful for verifying VPN connections and understanding your own internet footprint.",
-            "features_title": "[Pending Translation] Key Features",
-            "feature1_title": "[Pending Translation] 🌍 Geolocation Data",
-            "feature1_desc": "[Pending Translation] Country, region, city, and coordinates",
-            "feature2_title": "[Pending Translation] 🏢 ISP Information",
-            "feature2_desc": "[Pending Translation] Internet Service Provider details",
-            "feature3_title": "[Pending Translation] 🔗 Hostname Resolution",
-            "feature3_desc": "[Pending Translation] Domain name associated with IP",
-            "feature4_title": "[Pending Translation] ⚡ Instant Results",
-            "feature4_desc": "[Pending Translation] Fast and accurate lookup"
+            "what_is_title": "O que é Consulta de IP?",
+            "what_is_desc": "A Consulta de IP (IP Lookup) é uma ferramenta que fornece informações detalhadas sobre qualquer endereço IP. Ela revela a localização geográfica, o Provedor de Serviços de Internet (ISP), o hostname e outros detalhes técnicos associados a um endereço IP. Essas informações são valiosas para administradores de rede, profissionais de segurança, proprietários de sites e qualquer pessoa interessada em entender de onde vem o tráfego da internet.",
+            "why_use_title": "Por que usar a Consulta de IP?",
+            "why_use_desc": "Ferramentas de consulta de IP são essenciais para diversos fins, incluindo análise de segurança, prevenção de fraudes, localização de conteúdo, solução de problemas de rede e verificação de conformidade. Proprietários de sites usam a consulta de IP para entender a demografia de seus visitantes, enquanto equipes de segurança a utilizam para identificar ameaças potenciais e bloquear tráfego malicioso. Também é útil para verificar conexões VPN e entender sua própria pegada na internet.",
+            "features_title": "Principais Recursos",
+            "feature1_title": "🌍 Dados de Geolocalização",
+            "feature1_desc": "País, região, cidade e coordenadas",
+            "feature2_title": "🏢 Informações do Provedor (ISP)",
+            "feature2_desc": "Detalhes do Provedor de Serviços de Internet",
+            "feature3_title": "🔗 Resolução de Hostname",
+            "feature3_desc": "Nome de domínio associado ao IP",
+            "feature4_title": "⚡ Resultados Instantâneos",
+            "feature4_desc": "Consulta rápida e precisa"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Perguntas Frequentes",
+            "q1": "Qual a diferença entre IP público e privado?",
+            "a1": "O IP público é o endereço usado para identificar seu dispositivo na internet, enquanto o IP privado é usado apenas dentro da sua rede local (casa ou escritório).",
+            "q2": "Quão precisa é a localização por IP?",
+            "a2": "A localização por IP geralmente é precisa ao nível da cidade, mas raramente mostra o endereço exato da rua devido a preocupações com a privacidade e à forma como os provedores alocam IPs.",
+            "q3": "Um endereço IP pode mudar?",
+            "a3": "Sim, a maioria dos usuários domésticos tem IPs dinâmicos que mudam periodicamente. Empresas costumam usar IPs estáticos que permanecem os mesmos.",
+            "q4": "O que é um ASN?",
+            "a4": "ASN significa Autonomous System Number. É um identificador único para uma rede ou grupo de redes gerenciadas por uma organização (como um ISP).",
+            "q5": "Como os sites sabem meu IP?",
+            "a5": "Seu navegador envia seu endereço IP público para cada servidor que você acessa para que ele saiba para onde enviar os dados de volta."
         },
         "js": {
-            "looking_up": "",
-            "success": "",
-            "error": ""
+            "looking_up": "Consultando...",
+            "success": "Informações do IP recuperadas com sucesso",
+            "error": "Falha ao recuperar informações do IP. Por favor, tente novamente."
         }
     },
     "ping-test": {
         "meta": {
-            "title": "[Pending Translation] Ping Test Tool - Check Network Latency & Connectivity Free",
-            "description": "[Pending Translation] Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] Ping Test Tool",
-            "subtitle": "[Pending Translation] Test server response time and network connectivity from multiple locations"
+            "title": "Ferramenta de Teste de Ping - Verificar Latência e Conectividade de Rede Grátis",
+            "description": "Ferramenta de teste de ping gratuita para verificar a latência da rede, perda de pacotes e acessibilidade do servidor. Teste a conectividade para qualquer host ou endereço IP instantaneamente. Essencial para solução de problemas de rede.",
+            "h1": "Ferramenta de Teste de Ping",
+            "subtitle": "Teste o tempo de resposta do servidor e a conectividade de rede de vários locais"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] google.com or 8.8.8.8",
-            "button": "[Pending Translation] Ping Host"
+            "host_label": "Host ou Endereço IP",
+            "host_placeholder": "google.com ou 8.8.8.8",
+            "button": "Fazer Ping no Host"
         },
         "results": {
-            "title": ""
+            "title": "Resultados do Ping para"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Ping Test?",
-            "what_is_desc": "[Pending Translation] Ping is a network diagnostic tool that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. The tool is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.",
-            "why_use_title": "[Pending Translation] Why Use Ping Test?",
-            "why_use_desc": "[Pending Translation] Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to check server latency before joining online games, while website owners monitor their server's responsiveness to ensure optimal user experience.",
-            "metrics_title": "[Pending Translation] Understanding Ping Metrics",
-            "metric1": "[Pending Translation] <strong>Packets Sent\/Received:<\/strong> Number of ping requests and successful responses",
-            "metric2": "[Pending Translation] <strong>Packet Loss:<\/strong> Percentage of packets that didn't receive a response",
-            "metric3": "[Pending Translation] <strong>Minimum Time:<\/strong> Fastest round-trip time recorded",
-            "metric4": "[Pending Translation] <strong>Average Time:<\/strong> Mean latency across all pings",
-            "metric5": "[Pending Translation] <strong>Maximum Time:<\/strong> Slowest round-trip time recorded",
-            "metric6": "[Pending Translation] <strong>TTL (Time To Live):<\/strong> Number of network hops before packet expires",
-            "interpreting_title": "[Pending Translation] Interpreting Results",
-            "interpreting_desc": "[Pending Translation] Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
+            "what_is_title": "O que é Teste de Ping?",
+            "what_is_desc": "O Ping é uma ferramenta de diagnóstico de rede que testa a acessibilidade de um host em uma rede de Protocolo de Internet (IP). Ele mede o tempo de ida e volta das mensagens enviadas do computador de origem para um destino e de volta. O Ping opera enviando pacotes ICMP (Internet Control Message Protocol) Echo Request ao host de destino e aguardando uma Echo Reply. A ferramenta recebeu o nome do som de ping do sonar usado na detecção de submarinos, pois envia um sinal e ouve uma resposta.",
+            "why_use_title": "Por que usar o Teste de Ping?",
+            "why_use_desc": "O teste de ping é essencial para a solução de problemas de rede e monitoramento de desempenho. Administradores de sistema usam o ping para verificar a conectividade da rede, diagnosticar problemas de conexão e medir a latência. Ele ajuda a identificar se um servidor está online e responsivo, detectar perda de pacotes que pode indicar congestionamento de rede ou problemas de hardware e medir a qualidade das conexões de rede. Jogadores usam o ping para verificar a latência do servidor antes de entrar em jogos online, enquanto proprietários de sites monitoram a capacidade de resposta de seus servidores para garantir a melhor experiência do usuário.",
+            "metrics_title": "Entendendo as Métricas de Ping",
+            "metric1": "<strong>Pacotes Enviados/Recebidos:</strong> Número de solicitações de ping e respostas bem-sucedidas",
+            "metric2": "<strong>Perda de Pacotes:</strong> Porcentagem de pacotes que não receberam resposta",
+            "metric3": "<strong>Tempo Mínimo:</strong> O tempo de ida e volta mais rápido registrado",
+            "metric4": "<strong>Tempo Médio:</strong> A latência média de todos os pings",
+            "metric5": "<strong>Tempo Máximo:</strong> O tempo de ida e volta mais lento registrado",
+            "metric6": "<strong>TTL (Time To Live):</strong> Número de saltos de rede antes que o pacote expire",
+            "interpreting_title": "Interpretando os Resultados",
+            "interpreting_desc": "Tempos de ping baixos são tipicamente menores que 50ms para conexões locais e menores que 100ms para conexões internacionais. Tempos entre 100-200ms são aceitáveis para a maioria dos aplicativos, mas podem causar atrasos perceptíveis em aplicativos de tempo real, como jogos ou videoconferências. Qualquer valor acima de 200ms indica potenciais problemas de rede. Perda de pacotes acima de 1% sugere problemas de rede que precisam de investigação. Tempos de ping consistentes indicam conexões estáveis, enquanto tempos altamente variáveis sugerem congestionamento de rede ou problemas de roteamento."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Perguntas Frequentes",
+            "q1": "O que causa um ping alto?",
+            "a1": "O ping alto pode ser causado por congestionamento de rede, roteamento ineficiente do ISP, distância física do servidor, hardware de rede defeituoso ou outros aplicativos usando sua largura de banda.",
+            "q2": "O que é perda de pacotes?",
+            "a2": "A perda de pacotes ocorre quando um ou mais pacotes de dados viajando através de uma rede de computadores falham em alcançar seu destino.",
+            "q3": "Qual é a diferença entre Ping e Latência?",
+            "a3": "Muitas vezes usados como sinônimos, a latência é o tempo que leva para os dados viajarem de um ponto a outro, enquanto o ping é a medição dessa latência.",
+            "q4": "Por que alguns servidores não respondem ao ping?",
+            "a4": "Muitos servidores e roteadores são configurados para ignorar pacotes ICMP (ping) por motivos de segurança, para prevenir ataques de negação de serviço (DoS).",
+            "q5": "O que é um 'Jitter'?",
+            "a5": "Jitter é a variação no tempo de latência. Um jitter baixo significa que seu ping é estável, o que é crucial para uma boa experiência em chamadas de voz e jogos."
         },
         "js": {
-            "pinging": "",
-            "success": "",
-            "error": "",
-            "ping_host": ""
+            "pinging": "Fazendo ping...",
+            "success": "Teste de ping concluído com sucesso",
+            "error": "Falha ao fazer ping no host. Pode estar offline ou bloqueando requisições ICMP.",
+            "ping_host": "Fazer Ping no Host"
         }
     },
     "port-checker": {
         "meta": {
-            "title": "[Pending Translation] Port Checker Tool - Check Open Ports & Network Connectivity Free",
-            "description": "[Pending Translation] Free port checker tool to test if ports are open, closed, or filtered. Check TCP\/UDP ports instantly for network troubleshooting and security auditing.",
-            "h1": "[Pending Translation] Port Checker Tool",
-            "subtitle": "[Pending Translation] Check if ports are open on any server for troubleshooting connectivity"
+            "title": "Ferramenta Verificadora de Portas - Verificar Portas Abertas e Conectividade de Rede Grátis",
+            "description": "Ferramenta gratuita de verificação de portas para testar se as portas estão abertas, fechadas ou filtradas. Verifique portas TCP/UDP instantaneamente para solução de problemas de rede e auditoria de segurança.",
+            "h1": "Ferramenta Verificadora de Portas",
+            "subtitle": "Verifique se as portas estão abertas em qualquer servidor para diagnosticar problemas de conectividade"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] example.com or 8.8.8.8",
-            "port_label": "[Pending Translation] Port Number",
-            "port_placeholder": "[Pending Translation] 80",
-            "button": "[Pending Translation] Check Port"
+            "host_label": "Host ou Endereço IP",
+            "host_placeholder": "exemplo.com ou 8.8.8.8",
+            "port_label": "Número da Porta",
+            "port_placeholder": "80",
+            "button": "Verificar Porta"
         },
         "results": {
-            "title": ""
+            "title": "Status da Porta de"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Port Checker?",
-            "what_is_desc": "[Pending Translation] A Port Checker is a network diagnostic tool that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Common ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Checking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.",
-            "why_check_title": "[Pending Translation] Why Check Ports?",
-            "why_check_desc": "[Pending Translation] Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren't accessible, determining if the issue is with the service itself, firewall rules, or network routing.",
-            "common_ports_title": "[Pending Translation] Common Ports",
-            "port1": "[Pending Translation] <strong>Port 80:<\/strong> HTTP (web traffic)",
-            "port2": "[Pending Translation] <strong>Port 443:<\/strong> HTTPS (secure web traffic)",
-            "port3": "[Pending Translation] <strong>Port 22:<\/strong> SSH (secure shell access)",
-            "port4": "[Pending Translation] <strong>Port 21:<\/strong> FTP (file transfer)",
-            "port5": "[Pending Translation] <strong>Port 25:<\/strong> SMTP (email sending)",
-            "port6": "[Pending Translation] <strong>Port 3306:<\/strong> MySQL database",
-            "port7": "[Pending Translation] <strong>Port 3389:<\/strong> RDP (Remote Desktop)",
-            "security_title": "[Pending Translation] Security Implications",
-            "security_desc": "[Pending Translation] Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
+            "what_is_title": "O que é Verificador de Portas?",
+            "what_is_desc": "Um Verificador de Portas é uma ferramenta de diagnóstico de rede que determina se uma porta TCP ou UDP específica em um servidor ou dispositivo está aberta (aceitando conexões), fechada (rejeitando conexões) ou filtrada (bloqueada por um firewall). As portas são pontos finais virtuais para comunicação de rede, com cada número de porta (1-65535) hospedando potencialmente diferentes serviços. Portas comuns incluem 80 para tráfego web HTTP, 443 para HTTPS, 22 para SSH e 25 para e-mail. Verificar o status da porta é essencial para configuração de rede, auditoria de segurança e solução de problemas de conectividade.",
+            "why_check_title": "Por que verificar portas?",
+            "why_check_desc": "A verificação de portas serve para múltiplos propósitos críticos no gerenciamento e segurança de rede. Administradores de sistema verificam se os serviços estão acessíveis em suas portas pretendidas após alterações de configuração. Profissionais de segurança escaneiam portas abertas para identificar vulnerabilidades potenciais e garantir que portas desnecessárias estejam fechadas. Desenvolvedores testam se seus aplicativos estão ouvindo corretamente nas portas configuradas. Técnicos de rede usam a verificação de portas para diagnosticar por que os serviços não estão acessíveis, determinando se o problema é o próprio serviço, regras de firewall ou roteamento de rede.",
+            "common_ports_title": "Portas Comuns",
+            "port1": "<strong>Porta 80:</strong> HTTP (tráfego web)",
+            "port2": "<strong>Porta 443:</strong> HTTPS (tráfego web seguro)",
+            "port3": "<strong>Porta 22:</strong> SSH (acesso seguro via shell)",
+            "port4": "<strong>Porta 21:</strong> FTP (transferência de arquivos)",
+            "port5": "<strong>Porta 25:</strong> SMTP (envio de e-mail)",
+            "port6": "<strong>Porta 3306:</strong> Banco de dados MySQL",
+            "port7": "<strong>Porta 3389:</strong> RDP (Acesso Remoto)",
+            "security_title": "Implicações de Segurança",
+            "security_desc": "Portas abertas representam pontos de entrada potenciais para invasores. A melhor prática de segurança dita manter apenas as portas necessárias abertas e fechar ou filtrar todas as outras. Escanear regularmente seus próprios servidores ajuda a identificar portas abertas involuntariamente que poderiam ser exploradas. No entanto, escanear portas de sistemas de terceiros sem permissão pode ser ilegal e é considerado atividade hostil. Certifique-se sempre de ter autorização antes de verificar portas em sistemas que você não possui."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Perguntas Frequentes",
+            "q1": "O que significa uma porta estar 'Filtrada'?",
+            "a1": "Uma porta filtrada significa que um firewall, filtro ou outro obstáculo de rede está bloqueando a porta, e a ferramenta não consegue determinar se ela está aberta ou fechada.",
+            "q2": "É seguro abrir portas no meu roteador?",
+            "a2": "Abrir portas (port forwarding) pode ser arriscado, pois expõe seu dispositivo diretamente à internet. Faça isso apenas para serviços necessários e garanta que o software de destino seja seguro.",
+            "q3": "Qual a diferença entre TCP e UDP?",
+            "a3": "TCP é um protocolo orientado à conexão (garante a entrega), enquanto UDP é um protocolo sem conexão (mais rápido, mas não garante a entrega).",
+            "q4": "Posso verificar portas no meu IP local?",
+            "a4": "Esta ferramenta online verifica o status das portas a partir de nossos servidores. Para verificar portas na sua própria rede local, você precisaria de uma ferramenta instalada no seu computador.",
+            "q5": "Como fecho uma porta aberta?",
+            "a5": "Você pode fechar uma porta parando o serviço que a está usando ou configurando as regras do seu firewall ou roteador para bloquear o tráfego naquela porta."
         },
         "js": {
-            "checking": "",
-            "success": "",
-            "error": "",
-            "check_port": ""
+            "checking": "Verificando...",
+            "success": "Verificação de porta concluída",
+            "error": "Falha ao verificar a porta. Certifique-se de que o host e a porta estão corretos.",
+            "check_port": "Verificar Porta"
         }
     },
     "reverse-dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] Reverse DNS Lookup - Free Online Tool",
-            "description": "[Pending Translation] Free online reverse DNS lookup tool. Find the hostname associated with any IP address instantly. Fast, secure, and easy to use.",
-            "h1": "[Pending Translation] Reverse DNS Lookup",
-            "subtitle": "[Pending Translation] Find the domain name or hostname associated with an IP address instantly"
+            "title": "Consulta de DNS Reverso - Ferramenta Online Gratuita",
+            "description": "Ferramenta de consulta de DNS reverso online gratuita. Encontre o hostname associado a qualquer endereço IP instantaneamente. Rápido, seguro e fácil de usar.",
+            "h1": "Consulta de DNS Reverso",
+            "subtitle": "Encontre o nome de domínio ou hostname associado a um endereço IP instantaneamente"
         },
         "form": {
-            "ip_label": "[Pending Translation] Enter IP Address",
-            "ip_placeholder": "[Pending Translation] e.g., 8.8.8.8",
-            "button": "[Pending Translation] Lookup Reverse DNS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "ip_label": "Insira o Endereço IP",
+            "ip_placeholder": "ex: 8.8.8.8",
+            "button": "Consultar DNS Reverso",
+            "button_loading": "Consultando..."
         },
         "results": {
-            "title": "[Pending Translation] Reverse DNS Results"
+            "title": "Resultados do DNS Reverso"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Reverse DNS Lookup?",
-            "what_is_desc": "[Pending Translation] Reverse DNS lookup (rDNS) is the process of determining the domain name or hostname associated with an IP address. Unlike a standard DNS lookup that converts a domain name to an IP address (forward lookup), rDNS does the opposite. It's often used to verify the identity of a server or to troubleshoot network issues.",
-            "why_use_title": "[Pending Translation] Why Use Reverse DNS Lookup?",
-            "why_use_desc": "[Pending Translation] Reverse DNS is widely used for security and verification purposes. It helps identify the source of incoming traffic, verify email senders (to prevent spam), and troubleshoot network connectivity issues. Many mail servers require valid rDNS records to accept incoming emails.",
-            "ptr_records_title": "[Pending Translation] Understanding PTR Records",
-            "ptr_record1": "[Pending Translation] <strong>PTR Record:<\/strong> A Pointer Record (PTR) is the type of DNS record used for reverse DNS lookups.",
-            "ptr_record2": "[Pending Translation] <strong>Mapping:<\/strong> It maps an IP address back to a hostname.",
-            "ptr_record3": "[Pending Translation] <strong>Verification:<\/strong> Crucial for email deliverability and security verification.",
-            "ptr_record4": "[Pending Translation] <strong>IP-to-Host:<\/strong> Essential for identifying the true owner of an IP address.",
-            "ptr_record5": "[Pending Translation] <strong>Spam Prevention:<\/strong> Used by mail servers to validate sender authenticity.",
-            "ptr_record6": "[Pending Translation] <strong>Network Logs:<\/strong> Helpful for making network logs human-readable by showing hostnames.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_cases_desc": "[Pending Translation] Common use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
+            "what_is_title": "O que é Consulta de DNS Reverso?",
+            "what_is_desc": "A consulta de DNS reverso (rDNS) é o processo de determinar o nome de domínio ou hostname associado a um endereço IP. Ao contrário de uma consulta DNS padrão que converte um nome de domínio em um endereço IP (consulta direta), o rDNS faz o oposto. É frequentemente usado para verificar a identidade de um servidor ou para resolver problemas de rede.",
+            "why_use_title": "Por que usar a Consulta de DNS Reverso?",
+            "why_use_desc": "O DNS reverso é amplamente utilizado para fins de segurança e verificação. Ele ajuda a identificar a origem do tráfego de entrada, verificar remetentes de e-mail (para evitar spam) e diagnosticar problemas de conectividade de rede. Muitos servidores de e-mail exigem registros rDNS válidos para aceitar e-mails de entrada.",
+            "ptr_records_title": "Entendendo os Registros PTR",
+            "ptr_record1": "<strong>Registro PTR:</strong> Um Registro de Ponteiro (PTR) é o tipo de registro DNS usado para consultas de DNS reverso.",
+            "ptr_record2": "<strong>Mapeamento:</strong> Ele mapeia um endereço IP de volta para um hostname.",
+            "ptr_record3": "<strong>Verificação:</strong> Crucial para a entrega de e-mail e verificação de segurança.",
+            "ptr_record4": "<strong>IP para Host:</strong> Essencial para identificar o verdadeiro proprietário de um endereço IP.",
+            "ptr_record5": "<strong>Prevenção de Spam:</strong> Usado por servidores de e-mail para validar a autenticidade do remetente.",
+            "ptr_record6": "<strong>Logs de Rede:</strong> Útil para tornar os logs de rede legíveis, mostrando nomes de host em vez de IPs.",
+            "use_cases_title": "Casos de Uso Comuns",
+            "use_cases_desc": "Casos de uso comuns incluem verificar a origem do tráfego web, diagnosticar latência de rede ou problemas de roteamento, validar configurações de servidores de e-mail e aprimorar auditorias de segurança cibernética ao identificar endereços IP potencialmente maliciosos."
         },
         "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] What is a PTR record?",
-            "a1": "[Pending Translation] A PTR (Pointer) record is a type of DNS record that maps an IP address to a hostname. It is the core component of a reverse DNS lookup.",
-            "q2": "[Pending Translation] Why is reverse DNS important for email?",
-            "a2": "[Pending Translation] Many email providers use reverse DNS to verify that the sending server is legitimate. If a server's IP address doesn't have a matching rDNS record, its emails may be flagged as spam.",
-            "q3": "[Pending Translation] Can any IP address have a reverse DNS record?",
-            "a3": "[Pending Translation] Yes, but the owner of the IP address (typically the ISP or hosting provider) must configure the PTR record in their DNS settings."
+            "title": "Perguntas Frequentes",
+            "q1": "O que é um registro PTR?",
+            "a1": "Um registro PTR (Pointer) é um tipo de registro DNS que mapeia um endereço IP para um hostname. É o componente principal de uma consulta de DNS reverso.",
+            "q2": "Por que o DNS reverso é importante para o e-mail?",
+            "a2": "Muitos provedores de e-mail usam o DNS reverso para verificar se o servidor de envio é legítimo. Se o endereço IP de um servidor não tiver um registro rDNS correspondente, seus e-mails podem ser marcados como spam.",
+            "q3": "Qualquer endereço IP pode ter um registro de DNS reverso?",
+            "a3": "Sim, mas o proprietário do endereço IP (tipicamente o ISP ou provedor de hospedagem) deve configurar o registro PTR em suas configurações de DNS.",
+            "q4": "O que acontece se o DNS reverso e o direto não baterem?",
+            "a4": "Isso é chamado de falha na Verificação de DNS Reverso Direto (FCrDNS), o que pode fazer com que servidores de e-mail e segurança rejeitem a conexão como suspeita.",
+            "q5": "Como verifico o rDNS de um IP?",
+            "a5": "Você pode usar nossa ferramenta gratuita acima inserindo o endereço IP e clicando em 'Consultar DNS Reverso'."
         }
     },
     "traceroute": {
         "meta": {
-            "title": "[Pending Translation] Traceroute - Free Online Tool",
-            "description": "[Pending Translation] Free online traceroute tool. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] Traceroute",
-            "subtitle": "[Pending Translation] The best traceroute for developers and IT professionals"
+            "title": "Traceroute - Ferramenta Online Gratuita",
+            "description": "Ferramenta de traceroute online gratuita. Rápido, seguro e fácil de usar.",
+            "h1": "Traceroute",
+            "subtitle": "O melhor traceroute para desenvolvedores e profissionais de TI"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "Host ou Endereço IP",
+            "host_placeholder": "ex: google.com",
+            "button": "Executar Traceroute",
+            "button_loading": "Executando..."
         },
         "results": {
-            "title": ""
+            "title": "Resultados do Traceroute para"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Traceroute?",
-            "what_is_desc": "[Pending Translation] This is a free online tool to traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
+            "what_is_title": "O que é Traceroute?",
+            "what_is_desc": "O Traceroute é uma ferramenta de diagnóstico de rede usada para rastrear o caminho (rota) e medir os atrasos de trânsito de pacotes através de uma rede de Protocolo de Internet (IP). Ele mostra cada 'salto' (hop) pelo qual os dados passam até chegar ao destino final.",
+            "why_use_title": "Por que usar o Traceroute?",
+            "why_use_desc": "O Traceroute é fundamental para identificar onde a conexão está falhando ou ficando lenta. Ele ajuda a ver se o problema está na sua rede local, no seu ISP ou em algum ponto da internet global.",
+            "hops_title": "Entendendo os Saltos (Hops)",
+            "hop1": "<strong>Salto:</strong> Cada roteador ou dispositivo pelo qual o pacote passa.",
+            "hop2": "<strong>Tempo de Resposta:</strong> Medido em milissegundos (ms) para cada salto.",
+            "hop3": "<strong>IP/Hostname:</strong> O endereço do dispositivo em cada etapa.",
+            "hop4": "<strong>Timeout:</strong> Quando um dispositivo não responde à solicitação.",
+            "hop5": "<strong>Gargalos:</strong> Saltos com tempos de resposta muito altos indicam lentidão.",
+            "hop6": "<strong>Destino Final:</strong> O último salto representa o servidor de destino.",
+            "issues_title": "Problemas Comuns",
+            "issues_desc": "Asteriscos (*) nos resultados costumam indicar que um roteador está configurado para não responder a pacotes ICMP por motivos de segurança, o que não necessariamente significa uma falha na rede."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Perguntas Frequentes",
+            "q1": "Quanto tempo leva um traceroute?",
+            "a1": "Geralmente de alguns segundos a um minuto, dependendo do número de saltos e da velocidade de resposta de cada nó.",
+            "q2": "Por que aparecem asteriscos (*) nos resultados?",
+            "a2": "Asteriscos significam que o pacote não recebeu uma resposta dentro do tempo limite. Isso é comum em roteadores que priorizam tráfego real sobre requisições de diagnóstico.",
+            "q3": "Qual a diferença entre Ping e Traceroute?",
+            "a3": "O Ping diz se um destino está acessível e quão rápido. O Traceroute mostra o caminho exato percorrido para chegar lá."
         }
     },
     "user-agent-parser": {
         "meta": {
-            "title": "[Pending Translation] Free User Agent Parser",
-            "description": "[Pending Translation] Identify browser, OS, and device from User Agent string with our free tool.",
-            "h1": "[Pending Translation] User Agent Parser",
-            "subtitle": "[Pending Translation] Identify browser, OS, and device from User Agent string"
+            "title": "Analisador de User Agent Grátis",
+            "description": "Identifique navegador, sistema operacional e dispositivo a partir da string de User Agent com nossa ferramenta gratuita.",
+            "h1": "Analisador de User Agent",
+            "subtitle": "Identifique navegador, sistema operacional e dispositivo a partir da string de User Agent"
         },
         "editor": {
-            "label_input": "[Pending Translation] User Agent String",
-            "ph_input": "[Pending Translation] Mozilla\/5.0...",
-            "btn_parse": "[Pending Translation] Parse",
-            "btn_use_my_ua": "[Pending Translation] Use My User Agent",
-            "label_browser": "[Pending Translation] Browser",
-            "label_os": "[Pending Translation] Operating System",
-            "label_device": "[Pending Translation] Device",
-            "label_raw": "[Pending Translation] Raw Engine info"
+            "label_input": "String do User Agent",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Analisar",
+            "btn_use_my_ua": "Usar Meu User Agent",
+            "label_browser": "Navegador",
+            "label_os": "Sistema Operacional",
+            "label_device": "Dispositivo",
+            "label_raw": "Informações do Mecanismo (Raw)"
         },
         "content": {
-            "p1": "[Pending Translation] Our free User Agent Parser instantly decodes user agent strings to identify the browser, operating system, device type, and engine version. Useful for developers debugging browser-specific issues or analyzing traffic sources.",
-            "features_title": "[Pending Translation] Features",
+            "p1": "Nosso Analisador de User Agent gratuito decodifica instantaneamente strings de user agent para identificar o navegador, sistema operacional, tipo de dispositivo e versão do mecanismo. Útil para desenvolvedores que depuram problemas específicos do navegador ou analisam fontes de tráfego.",
+            "features_title": "Recursos",
             "features": {
                 "instant": {
-                    "title": "[Pending Translation] Instant Parsing",
-                    "desc": "[Pending Translation] Decode user agents in milliseconds"
+                    "title": "Análise Instantânea",
+                    "desc": "Decodifique user agents em milissegundos"
                 },
                 "detailed": {
-                    "title": "[Pending Translation] Detailed Info",
-                    "desc": "[Pending Translation] Extracts Browser, OS, Device, and Engine"
+                    "title": "Informações Detalhadas",
+                    "desc": "Extrai Navegador, SO, Dispositivo e Mecanismo"
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detect",
-                    "desc": "[Pending Translation] One-click to parse your own current user agent"
+                    "title": "Auto-Detecção",
+                    "desc": "Um clique para analisar seu próprio user agent atual"
                 },
                 "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] Unlimited uses, no cost"
+                    "title": "100% Grátis",
+                    "desc": "Usos ilimitados, sem custo"
                 }
             },
-            "uses_title": "[Pending Translation] Common Use Cases",
+            "uses_title": "Casos de Uso Comuns",
             "uses": {
                 "debugging": {
-                    "title": "[Pending Translation] Debugging",
-                    "desc": "[Pending Translation] Identify detailed browser versions for troubleshooting"
+                    "title": "Depuração",
+                    "desc": "Identifique versões detalhadas do navegador para solução de problemas"
                 },
                 "analytics": {
-                    "title": "[Pending Translation] Analytics",
-                    "desc": "[Pending Translation] Understand what devices and OSs your users are using"
+                    "title": "Análise",
+                    "desc": "Entenda quais dispositivos e SOs seus usuários estão utilizando"
                 },
                 "dev": {
-                    "title": "[Pending Translation] Development",
-                    "desc": "[Pending Translation] Verify user agent strings during testing"
+                    "title": "Desenvolvimento",
+                    "desc": "Verifique strings de user agent durante os testes"
                 },
                 "security": {
-                    "title": "[Pending Translation] Security",
-                    "desc": "[Pending Translation] Analyze suspicious user agent strings in logs"
+                    "title": "Segurança",
+                    "desc": "Analise strings de user agent suspeitas em logs"
                 }
             },
-            "how_to_title": "[Pending Translation] How to Use",
+            "how_to_title": "Como Usar",
             "how_to": {
                 "step1": {
-                    "title": "[Pending Translation] Enter String",
-                    "desc": "[Pending Translation] Paste a User Agent string or click \"Use My User Agent\""
+                    "title": "Insira a String",
+                    "desc": "Cole uma string de User Agent ou clique em \"Usar Meu User Agent\""
                 },
                 "step2": {
-                    "title": "[Pending Translation] Parse",
-                    "desc": "[Pending Translation] Click \"Parse\" to decode the string"
+                    "title": "Analisar",
+                    "desc": "Clique em \"Analisar\" para decodificar a string"
                 },
                 "step3": {
-                    "title": "[Pending Translation] View Results",
-                    "desc": "[Pending Translation] See the broken-down details for Browser, OS, and Device"
+                    "title": "Veja os Resultados",
+                    "desc": "Veja os detalhes divididos por Navegador, SO e Dispositivo"
                 }
             },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "Perguntas Frequentes",
             "faq": {
-                "q1": "[Pending Translation] What is a User Agent?",
-                "a1": "[Pending Translation] A User Agent is a string of text sent by your web browser to every website you visit, identifying the browser, version, operating system, and device type.",
-                "q2": "[Pending Translation] Is this parser accurate?",
-                "a2": "[Pending Translation] It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.",
-                "q3": "[Pending Translation] Is my data private?",
-                "a3": "[Pending Translation] Yes, parsing happens locally in your browser. We do not store your user agent data."
+                "q1": "O que é um User Agent?",
+                "a1": "Um User Agent é uma string de texto enviada pelo seu navegador web para cada site que você visita, identificando o navegador, versão, sistema operacional e tipo de dispositivo.",
+                "q2": "Este analisador é preciso?",
+                "a2": "Ele usa correspondência de padrões padrão para identificar user agents comuns do mundo real. No entanto, strings de user agent podem ser falsificadas ou modificadas.",
+                "q3": "Meus dados estão privados?",
+                "a3": "Sim, a análise acontece localmente no seu navegador. Nós não armazenamos seus dados de user agent."
             }
         }
     },
     "what-is-my-ip": {
         "meta": {
-            "title": "[Pending Translation] What is My IP Address? - Check Your IP Location Free",
-            "description": "[Pending Translation] Find out your public IP address instantly. Check your IPv4\/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] What is My IP Address?",
-            "subtitle": "[Pending Translation] Instantly discover your public IP address with detailed ISP information"
+            "title": "Qual é o Meu Endereço IP? - Verifique sua Localização de IP Grátis",
+            "description": "Descubra seu endereço IP público instantaneamente. Verifique seu endereço IPv4/IPv6, ISP, localização e detalhes de conexão gratuitamente. Essencial para solução de problemas de rede.",
+            "h1": "Qual é o Meu Endereço IP?",
+            "subtitle": "Descubra instantaneamente seu endereço IP público com informações detalhadas do provedor"
         },
         "ui": {
-            "loading": "",
-            "your_ip_title": "",
-            "copy_button": "",
-            "timezone": ""
+            "loading": "Carregando...",
+            "your_ip_title": "Seu Endereço IP Público",
+            "copy_button": "Copiar",
+            "timezone": "Fuso Horário"
         },
         "results": {
-            "location": "",
-            "isp": "",
-            "country": ""
+            "location": "Localização",
+            "isp": "Provedor (ISP)",
+            "country": "País"
         },
         "content": {
-            "main_title": "[Pending Translation] What Is My IP Address - Free IP Lookup Tool",
-            "main_desc": "[Pending Translation] Find your public IP address instantly with our free IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.",
-            "what_is_title": "[Pending Translation] What is My IP Address?",
-            "what_is_desc": "[Pending Translation] Your IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.",
-            "ipv4_vs_ipv6_title": "[Pending Translation] IPv4 vs IPv6 Addresses",
-            "ipv4_title": "[Pending Translation] IPv4 Address",
-            "ipv4_format": "[Pending Translation] <strong>Format:<\/strong> 192.168.1.1 (four numbers 0-255 separated by dots)",
-            "ipv4_total": "[Pending Translation] <strong>Total Addresses:<\/strong> ~4.3 billion addresses",
-            "ipv4_desc": "[Pending Translation] Most common format worldwide, but running out of available addresses due to internet growth",
-            "ipv6_title": "[Pending Translation] IPv6 Address",
-            "ipv6_format": "[Pending Translation] <strong>Format:<\/strong> 2001:0db8:85a3::8a2e:0370:7334",
-            "ipv6_total": "[Pending Translation] <strong>Total Addresses:<\/strong> 340 undecillion addresses",
-            "ipv6_desc": "[Pending Translation] Newer format with virtually unlimited addresses, gradually replacing IPv4",
-            "why_check_title": "[Pending Translation] Why Check Your IP?",
-            "why_check_desc": "[Pending Translation] Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.",
-            "public_vs_private_title": "[Pending Translation] Public vs Private IP Addresses",
-            "public_ip_title": "[Pending Translation] 🌐 Public IP Address",
-            "public_ip_desc": "[Pending Translation] Your unique address on the internet, visible to all websites and services you visit.",
-            "public_ip_example": "[Pending Translation] <strong>Example:<\/strong> 203.0.113.45",
-            "public_ip_note": "[Pending Translation] Assigned by your ISP and used for all internet communication",
-            "private_ip_title": "[Pending Translation] 🏠 Private IP Address",
-            "private_ip_desc": "[Pending Translation] Your device's address on your local network, not visible on the internet.",
-            "private_ip_example": "[Pending Translation] <strong>Example:<\/strong> 192.168.1.100",
-            "private_ip_note": "[Pending Translation] Used for communication within your home or office network",
-            "security_title": "[Pending Translation] IP Address Security & Privacy",
-            "security_desc1": "[Pending Translation] Your IP address reveals your approximate location (city\/region), ISP, and can be used to track your online activity across websites. While it doesn't expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.",
-            "security_desc2": "[Pending Translation] <strong>Privacy Protection:<\/strong> Use a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN's IP instead of yours. Our tool shows exactly what information websites can see about your connection.",
-            "dynamic_vs_static_title": "[Pending Translation] Dynamic vs Static IP Addresses",
-            "dynamic_ip": "[Pending Translation] <strong>Dynamic IP:<\/strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.",
-            "static_ip": "[Pending Translation] <strong>Static IP:<\/strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.",
-            "privacy_tips_title": "[Pending Translation] Privacy & Security Tips",
-            "privacy_tip1": "[Pending Translation] • Never share your IP address publicly on forums or social media",
-            "privacy_tip2": "[Pending Translation] • Use a VPN when connecting to public WiFi networks",
-            "privacy_tip3": "[Pending Translation] • Enable your router's firewall to block unauthorized access",
-            "privacy_tip4": "[Pending Translation] • Regularly check your IP to detect unauthorized VPN disconnections",
-            "privacy_tip5": "[Pending Translation] • Be aware that websites log your IP for security and analytics"
+            "main_title": "Qual É O Meu IP - Ferramenta de Consulta de IP Gratuita",
+            "main_desc": "Encontre seu endereço IP público instantaneamente com nossa ferramenta gratuita. Descubra seu endereço IPv4 ou IPv6, localização geográfica precisa (cidade, região, país), informações do provedor (ISP), fuso horário e detalhes completos da rede. Essencial para configuração de rede, testes de segurança, configuração de acesso remoto, verificação de VPN e compreensão da sua pegada digital na internet.",
+            "what_is_title": "O que é meu endereço IP?",
+            "what_is_desc": "Seu endereço IP é um identificador numérico único atribuído ao seu dispositivo quando ele se conecta à internet. Ele permite que sites e serviços se comuniquem com seu dispositivo e identifiquem sua localização aproximada.",
+            "ipv4_vs_ipv6_title": "Endereços IPv4 vs IPv6",
+            "ipv4_title": "Endereço IPv4",
+            "ipv4_format": "<strong>Formato:</strong> 192.168.1.1 (quatro números de 0-255 separados por pontos)",
+            "ipv4_total": "<strong>Total de Endereços:</strong> ~4,3 bilhões de endereços",
+            "ipv4_desc": "Formato mais comum em todo o mundo, mas os endereços disponíveis estão se esgotando devido ao crescimento da internet",
+            "ipv6_title": "Endereço IPv6",
+            "ipv6_format": "<strong>Formato:</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>Total de Endereços:</strong> 340 undecilhões de endereços",
+            "ipv6_desc": "Formato mais novo com endereços virtualmente ilimitados, substituindo gradualmente o IPv4",
+            "why_check_title": "Por que verificar seu IP?",
+            "why_check_desc": "Saber seu endereço IP é útil para diagnosticar problemas de rede, verificar conexões VPN, checar se sua localização está sendo mascarada e entender quais informações os sites podem ver sobre você.",
+            "public_vs_private_title": "Endereços IP Públicos vs Privados",
+            "public_ip_title": "🌐 Endereço IP Público",
+            "public_ip_desc": "Seu endereço único na internet, visível para todos os sites e serviços que você visita.",
+            "public_ip_example": "<strong>Exemplo:</strong> 203.0.113.45",
+            "public_ip_note": "Atribuído pelo seu provedor (ISP) e usado para toda a comunicação na internet",
+            "private_ip_title": "🏠 Endereço IP Privado",
+            "private_ip_desc": "O endereço do seu dispositivo na sua rede local, não visível na internet.",
+            "private_ip_example": "<strong>Exemplo:</strong> 192.168.1.100",
+            "private_ip_note": "Usado para comunicação dentro da sua rede doméstica ou de escritório",
+            "security_title": "Segurança e Privacidade do Endereço IP",
+            "security_desc1": "Seu endereço IP revela sua localização aproximada (cidade/região), provedor (ISP) e pode ser usado para rastrear sua atividade online entre sites. Embora não exponha diretamente seu endereço residencial exato ou identidade pessoal, ele pode ser combinado com outros dados para rastreamento. Sites usam seu IP para análises, segmentação de anúncios e restrições geográficas.",
+            "security_desc2": "<strong>Proteção de Privacidade:</strong> Use uma VPN (Rede Virtual Privada) para mascarar seu endereço IP real e aumentar a privacidade. As VPNs roteiam seu tráfego através de seus servidores, mostrando o IP da VPN em vez do seu. Nossa ferramenta mostra exatamente quais informações os sites podem ver sobre sua conexão.",
+            "dynamic_vs_static_title": "Endereços IP Dinâmicos vs Estáticos",
+            "dynamic_ip": "<strong>IP Dinâmico:</strong> Muda periodicamente (diariamente, semanalmente ou quando você reinicia o roteador). A maioria dos usuários domésticos tem IPs dinâmicos atribuídos automaticamente pelo provedor. Mais barato e comum para conexões residenciais.",
+            "static_ip": "<strong>IP Estático:</strong> Nunca muda e permanece constante. Tipicamente usado para conexões empresariais, servidores web, servidores de e-mail e acesso remoto. Custa mais, mas é essencial para hospedar serviços.",
+            "privacy_tips_title": "Dicas de Privacidade e Segurança",
+            "privacy_tip1": "• Nunca compartilhe seu endereço IP publicamente em fóruns ou redes sociais",
+            "privacy_tip2": "• Use uma VPN ao se conectar a redes WiFi públicas",
+            "privacy_tip3": "• Ative o firewall do seu roteador para bloquear acessos não autorizados",
+            "privacy_tip4": "• Verifique regularmente seu IP para detectar desconexões não autorizadas da VPN",
+            "privacy_tip5": "• Esteja ciente de que os sites registram seu IP para segurança e análises"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Perguntas Frequentes",
+            "q1": "Como encontrar meu endereço IP privado?",
+            "a1": "No Windows, use o comando 'ipconfig' no Prompt de Comando. No Mac/Linux, use o comando 'ifconfig' ou 'ip addr' no Terminal.",
+            "q2": "Uma VPN pode esconder totalmente meu IP?",
+            "a2": "Sim, uma VPN substitui seu endereço IP real pelo endereço IP do servidor VPN, tornando as atividades online mais privadas.",
+            "q3": "Meu endereço IP revela minha localização exata?",
+            "a3": "Não, ele geralmente mostra apenas a cidade ou região associada ao seu provedor de internet, não o endereço da sua casa.",
+            "q4": "O que causa uma mudança de endereço IP?",
+            "a4": "O seu provedor pode mudar seu IP dinâmico se você reiniciar o roteador ou se a concessão do endereço IP expirar."
         }
     },
     "what-is-my-isp": {
         "meta": {
-            "title": "[Pending Translation] What is My ISP? - Check Internet Service Provider Free",
-            "description": "[Pending Translation] Find out your Internet Service Provider (ISP) instantly. Check ISP name, organization, ASN, and IP address information for free.",
-            "h1": "[Pending Translation] What is My ISP?",
-            "subtitle": "[Pending Translation] Identify your Internet Service Provider with connection details"
+            "title": "Qual é o Meu Provedor? - Verifique seu Provedor de Internet Grátis",
+            "description": "Descubra qual é o seu Provedor de Serviços de Internet (ISP) instantaneamente. Verifique o nome do provedor, organização, ASN e informações do endereço IP gratuitamente.",
+            "h1": "Qual é o Meu Provedor?",
+            "subtitle": "Identifique seu Provedor de Serviços de Internet com detalhes da conexão"
         },
         "content": {
-            "loading": "[Pending Translation] Loading ISP information...",
-            "your_isp_title": "[Pending Translation] Your Internet Service Provider",
-            "network_label": "[Pending Translation] Network",
-            "location_label": "[Pending Translation] Location",
-            "main_title": "[Pending Translation] What Is My ISP - Internet Service Provider Lookup Tool",
-            "main_desc": "[Pending Translation] Instantly identify your Internet Service Provider (ISP), organization name, network details, and connection information. Our free ISP lookup tool reveals your ISP name, ASN (Autonomous System Number), IP address, location, and network infrastructure. Perfect for verifying VPN connections, troubleshooting network issues, confirming business internet lines, and understanding your network routing.",
-            "info_title": "[Pending Translation] What Information Can You Find?",
-            "info1": "[Pending Translation] <strong>ISP Name:<\/strong> The company providing your internet connection",
-            "info2": "[Pending Translation] <strong>Organization:<\/strong> The organization or entity managing your network connection",
-            "info3": "[Pending Translation] <strong>ASN:<\/strong> Unique network identifier for routing and peering",
-            "info4": "[Pending Translation] <strong>Location:<\/strong> City, region, and country associated with your connection",
-            "info5": "[Pending Translation] <strong>Network Details:<\/strong> IP range, subnet information, and network infrastructure data",
-            "why_use_title": "[Pending Translation] Why Use This Tool?",
-            "why_use1": "[Pending Translation] Verify you're connected through the correct internet provider",
-            "why_use2": "[Pending Translation] Troubleshoot network connectivity and performance issues",
-            "why_use3": "[Pending Translation] Check if you're using a VPN or proxy service correctly",
-            "why_use4": "[Pending Translation] Identify your network for security and privacy purposes",
-            "why_use5": "[Pending Translation] Verify ISP claims about service coverage and infrastructure",
-            "why_use6": "[Pending Translation] Research network routing and peering relationships",
-            "why_use7": "[Pending Translation] Confirm business internet connections and dedicated lines",
-            "why_use8": "[Pending Translation] Detect unauthorized network access or connection hijacking",
-            "asn_title": "[Pending Translation] Understanding ASN (Autonomous System Number)",
-            "asn_desc": "[Pending Translation] An Autonomous System Number (ASN) is a globally unique identifier assigned to a network or group of networks under a single administrative control. ISPs, large organizations, and content delivery networks each have their own ASN. This number is used in BGP (Border Gateway Protocol) routing to determine how internet traffic flows between different networks. Knowing your ASN helps identify your network provider and understand routing paths.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_case1_title": "[Pending Translation] 🔧 Network Troubleshooting",
-            "use_case1_desc": "[Pending Translation] Identify ISP-related issues, verify routing paths, and diagnose connection problems",
-            "use_case2_title": "[Pending Translation] 🔒 VPN Verification",
-            "use_case2_desc": "[Pending Translation] Confirm your VPN is working by checking if ISP changes when connected",
-            "use_case3_title": "[Pending Translation] 🛡️ Security Audits",
-            "use_case3_desc": "[Pending Translation] Verify connection authenticity and detect unauthorized network access",
-            "use_case4_title": "[Pending Translation] 💼 Business Verification",
-            "use_case4_desc": "[Pending Translation] Confirm dedicated business lines and enterprise internet connections",
-            "isp_types_title": "[Pending Translation] Types of ISPs",
-            "isp_type1": "[Pending Translation] <strong>DSL ISPs:<\/strong> Internet over telephone lines (ADSL, VDSL)",
-            "isp_type2": "[Pending Translation] <strong>Cable ISPs:<\/strong> High-speed internet via coaxial cable infrastructure",
-            "isp_type3": "[Pending Translation] <strong>Fiber Optic ISPs:<\/strong> Ultra-fast connections using fiber optic cables",
-            "isp_type4": "[Pending Translation] <strong>Wireless\/Mobile ISPs:<\/strong> 4G\/5G cellular internet connections",
-            "isp_type5": "[Pending Translation] <strong>Satellite ISPs:<\/strong> Internet via satellite for remote areas",
-            "isp_type6": "[Pending Translation] <strong>Business ISPs:<\/strong> Dedicated enterprise-grade connections with SLAs",
-            "privacy_note_title": "[Pending Translation] Privacy Note",
-            "privacy_note_desc": "[Pending Translation] Your ISP can see all unencrypted internet traffic and the websites you visit (but not HTTPS content). They may log connection data, browsing history, and DNS queries. Use a VPN to encrypt your traffic and prevent ISP monitoring. Our tool only displays publicly available information that websites can already see."
+            "loading": "Carregando informações do provedor...",
+            "your_isp_title": "Seu Provedor de Serviços de Internet",
+            "network_label": "Rede",
+            "location_label": "Localização",
+            "main_title": "Qual É O Meu Provedor - Ferramenta de Consulta de ISP",
+            "main_desc": "Identifique instantaneamente seu Provedor de Serviços de Internet (ISP), nome da organização, detalhes da rede e informações da conexão. Nossa ferramenta gratuita de consulta de ISP revela o nome do seu provedor, ASN (Número de Sistema Autônomo), endereço IP, localização e infraestrutura de rede. Perfeito para verificar conexões VPN, diagnosticar problemas de rede, confirmar linhas de internet empresariais e entender o roteamento da sua rede.",
+            "info_title": "Que informações você pode encontrar?",
+            "info1": "<strong>Nome do Provedor:</strong> A empresa que fornece sua conexão de internet",
+            "info2": "<strong>Organização:</strong> A organização ou entidade que gerencia sua conexão de rede",
+            "info3": "<strong>ASN:</strong> Identificador único de rede para roteamento e peering",
+            "info4": "<strong>Localização:</strong> Cidade, região e país associados à sua conexão",
+            "info5": "<strong>Detalhes da Rede:</strong> Faixa de IP, informações de sub-rede e dados de infraestrutura de rede",
+            "why_use_title": "Por que usar esta ferramenta?",
+            "why_use1": "Verificar se você está conectado através do provedor de internet correto",
+            "why_use2": "Solucionar problemas de conectividade e desempenho de rede",
+            "why_use3": "Verificar se você está usando um serviço de VPN ou proxy corretamente",
+            "why_use4": "Identificar sua rede para fins de segurança e privacidade",
+            "why_use5": "Validar alegações do provedor sobre cobertura de serviço e infraestrutura",
+            "why_use6": "Pesquisar roteamento de rede e relações de peering",
+            "why_use7": "Confirmar conexões de internet empresariais e linhas dedicadas",
+            "why_use8": "Detectar acesso não autorizado à rede ou sequestro de conexão",
+            "asn_title": "Entendendo ASN (Número de Sistema Autônomo)",
+            "asn_desc": "An Autonomous System Number (ASN) is a globally unique identifier assigned to a network or group of networks under a single administrative control. ISPs, large organizations, and content delivery networks each have their own ASN. This number is used in BGP (Border Gateway Protocol) routing to determine how internet traffic flows between different networks. Knowing your ASN helps identify your network provider and understand routing paths.",
+            "use_cases_title": "Casos de Uso Comuns",
+            "use_case1_title": "🔧 Solução de Problemas de Rede",
+            "use_case1_desc": "Identifique problemas relacionados ao provedor, verifique caminhos de roteamento e diagnostique problemas de conexão",
+            "use_case2_title": "🔒 Verificação de VPN",
+            "use_case2_desc": "Confirme se sua VPN está funcionando verificando se o provedor muda ao conectar",
+            "use_case3_title": "🛡️ Auditorias de Segurança",
+            "use_case3_desc": "Verifique a autenticidade da conexão e detecte acessos não autorizados à rede",
+            "use_case4_title": "💼 Verificação Empresarial",
+            "use_case4_desc": "Confirme linhas empresariais dedicadas e conexões de internet corporativas",
+            "isp_types_title": "Tipos de Provedores (ISPs)",
+            "isp_type1": "<strong>Provedores DSL:</strong> Internet através de linhas telefônicas (ADSL, VDSL)",
+            "isp_type2": "<strong>Provedores de Cabo:</strong> Internet de alta velocidade via infraestrutura de cabo coaxial",
+            "isp_type3": "<strong>Provedores de Fibra Óptica:</strong> Conexões ultra-rápidas usando cabos de fibra óptica",
+            "isp_type4": "<strong>Provedores Sem Fio/Móveis:</strong> Conexões de internet celular 4G/5G",
+            "isp_type5": "<strong>Provedores via Satélite:</strong> Internet via satélite para áreas remotas",
+            "isp_type6": "<strong>Provedores Empresariais:</strong> Conexões dedicadas de nível corporativo com acordos de nível de serviço (SLAs)",
+            "privacy_note_title": "Nota de Privacidade",
+            "privacy_note_desc": "Seu provedor pode ver todo o tráfego de internet não criptografado e os sites que você visita (mas não o conteúdo HTTPS). Eles podem registrar dados de conexão, histórico de navegação e consultas DNS. Use uma VPN para criptografar seu tráfego e evitar o monitoramento do provedor. Nossa ferramenta exibe apenas informações publicamente disponíveis que os sites já podem ver."
         },
         "results": {
-            "ip_address": "",
-            "asn": ""
+            "ip_address": "Endereço IP",
+            "asn": "ASN"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Perguntas Frequentes",
+            "q1": "Como saber se estou usando uma VPN?",
+            "a1": "Se o nome do provedor exibido nesta ferramenta for diferente do seu provedor de internet real, ou se mostrar o nome de uma empresa de VPN, então você está conectado através de uma VPN.",
+            "q2": "O que é um 'Host' ou 'Hostname'?",
+            "a2": "É o nome atribuído ao seu endereço IP na rede do seu provedor, geralmente contendo informações sobre a sua região e o tipo de conexão.",
+            "q3": "Meu provedor pode ver quais sites eu visito?",
+            "a3": "Sim, a menos que você use uma VPN ou serviços como DNS sobre HTTPS, seu provedor pode ver os domínios que você acessa."
         },
         "js": {
-            "error_loading": ""
+            "error_loading": "Erro ao carregar informações do provedor"
         }
     },
     "whois-lookup": {
         "meta": {
-            "title": "[Pending Translation] WHOIS Lookup Tool - Domain Registration Information Free",
-            "description": "[Pending Translation] Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.",
-            "h1": "[Pending Translation] WHOIS Lookup Tool",
-            "subtitle": "[Pending Translation] Query WHOIS database for domain registration & ownership details"
+            "title": "Consulta WHOIS - Informações de Registro de Domínio Grátis",
+            "description": "Ferramenta gratuita de consulta WHOIS para verificar detalhes de registro de domínio. Veja registrador, servidores de nomes, data de expiração e status do domínio instantaneamente.",
+            "h1": "Ferramenta de Consulta WHOIS",
+            "subtitle": "Consulte o banco de dados WHOIS para detalhes de registro e propriedade de domínio"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup WHOIS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "domain_label": "Nome do Domínio",
+            "domain_placeholder": "exemplo.com",
+            "button": "Consultar WHOIS",
+            "button_loading": "Consultando..."
         },
         "content": {
-            "form_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "what_is_title": "[Pending Translation] What is WHOIS Lookup?",
-            "what_is_desc": "[Pending Translation] WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.",
-            "why_use_title": "[Pending Translation] Why Use WHOIS Lookup?",
-            "why_use_desc": "[Pending Translation] WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors' domains.",
-            "key_info_title": "[Pending Translation] Key Information Provided",
-            "key_info1": "[Pending Translation] <strong>Registrant Information:<\/strong> Domain owner details (may be privacy protected)",
-            "key_info2": "[Pending Translation] <strong>Registration Dates:<\/strong> When domain was registered and last updated",
-            "key_info3": "[Pending Translation] <strong>Expiration Date:<\/strong> When domain registration expires",
-            "key_info4": "[Pending Translation] <strong>Registrar:<\/strong> Company managing the domain registration",
-            "key_info5": "[Pending Translation] <strong>Name Servers:<\/strong> DNS servers hosting the domain",
-            "key_info6": "[Pending Translation] <strong>Domain Status:<\/strong> Current status codes and locks",
-            "how_to_title": "[Pending Translation] How to Use",
-            "how_to1": "[Pending Translation] Enter the domain name you want to lookup",
-            "how_to2": "[Pending Translation] Click \"Lookup WHOIS\" button",
-            "how_to3": "[Pending Translation] Review comprehensive registration information",
-            "how_to4": "[Pending Translation] Use the data for your research or verification needs",
-            "privacy_title": "[Pending Translation] Privacy and WHOIS",
-            "privacy_desc": "[Pending Translation] Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws."
+            "form_hint": "Insira o domínio sem http:// ou https://",
+            "what_is_title": "O que é Consulta WHOIS?",
+            "what_is_desc": "WHOIS é um protocolo que fornece informações sobre registros de nomes de domínio. Ele revela detalhes sobre a propriedade do domínio, datas de registro, datas de expiração, servidores de nomes e informações do registrador.",
+            "why_use_title": "Por que usar a Consulta WHOIS?",
+            "why_use_desc": "A consulta WHOIS é essencial para verificar a propriedade do domínio, verificar a disponibilidade do domínio, investigar sites suspeitos, monitorar datas de expiração e pesquisar domínios da concorrência.",
+            "key_info_title": "Principais Informações Fornecidas",
+            "key_info1": "<strong>Informações do Registrante:</strong> Detalhes do proprietário do domínio (podem estar protegidos por privacidade)",
+            "key_info2": "<strong>Datas de Registro:</strong> Quando o domínio foi registrado e atualizado pela última vez",
+            "key_info3": "<strong>Data de Expiração:</strong> Quando expira o registro do domínio",
+            "key_info4": "<strong>Registrador:</strong> Empresa que gerencia o registro do domínio",
+            "key_info5": "<strong>Servidores de Nomes (DNS):</strong> Servidores que hospedam o domínio",
+            "key_info6": "<strong>Status do Domínio:</strong> Códigos de status atuais e bloqueios",
+            "how_to_title": "Como Usar",
+            "how_to1": "Insira o nome do domínio que você deseja consultar",
+            "how_to2": "Clique no botão \"Consultar WHOIS\"",
+            "how_to3": "Revise as informações de registro abrangentes",
+            "how_to4": "Use os dados para suas necessidades de pesquisa ou verificação",
+            "privacy_title": "Privacidade e WHOIS",
+            "privacy_desc": "Muitos registradores de domínios agora oferecem serviços de proteção de privacidade WHOIS que ocultam informações pessoais dos bancos de dados públicos. Isso protege os proprietários de domínios contra spam e roubo de identidade, mantendo as informações técnicas essenciais. As regulamentações do GDPR também afetaram a disponibilidade dos dados WHOIS, com muitos registradores europeus ocultando informações pessoais para cumprir as leis de privacidade."
         },
         "results": {
-            "title": ""
+            "title": "Resultados WHOIS para"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": ""
+            "title": "Perguntas Frequentes",
+            "q1": "O que é proteção de privacidade WHOIS?",
+            "a1": "É um serviço que oculta seus dados pessoais (nome, e-mail, telefone) do banco de dados público WHOIS, substituindo-os pelos dados do registrador.",
+            "q2": "Por que não consigo ver o dono do domínio?",
+            "a2": "Devido ao GDPR e serviços de privacidade, muitos detalhees pessoais são ocultos hoje em dia para proteger a privacidade do proprietário.",
+            "q3": "Como saber se um domínio está disponível?",
+            "a3": "Se a consulta WHOIS não retornar resultados ou indicar que o domínio não está registrado, ele provavelmente está disponível para compra.",
+            "q4": "O que é o status 'ClientHold'?",
+            "a4": "É um status que impede o domínio de ser resolvido no DNS, geralmente devido a problemas de pagamento ou verificação de conta."
         }
     }
 }
