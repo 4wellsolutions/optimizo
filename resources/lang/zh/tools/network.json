@@ -1,735 +1,757 @@
 {
     "dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] DNS Lookup Tool - Check DNS Records Online Free",
-            "description": "[Pending Translation] Free DNS lookup tool to check DNS records for any domain. View A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.",
-            "h1": "[Pending Translation] DNS Lookup Tool",
-            "subtitle": "[Pending Translation] Query DNS records to find nameservers, MX, A, CNAME & TXT records instantly"
+            "title": "DNS 查询工具 - 在线免费检查 DNS 记录",
+            "description": "免费的 DNS 查询工具，可检查任何域名的 DNS 记录。立即查看 A、AAAA、MX、NS、TXT、CNAME 记录。对于排除电子邮件和域名配置故障至关重要。",
+            "h1": "DNS 查询工具",
+            "subtitle": "即时查询 DNS 记录以查找名称服务器、MX、A、CNAME 和 TXT 记录"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup DNS"
+            "domain_label": "域名",
+            "domain_placeholder": "example.com",
+            "button": "查询 DNS"
         },
         "results": {
-            "title": ""
+            "title": "DNS 查询结果"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is DNS Lookup?",
-            "what_is_desc": "[Pending Translation] DNS Lookup is a tool that queries Domain Name System servers to retrieve DNS records for a domain. DNS records contain important information about how a domain is configured, including mail servers (MX records), nameservers (NS records), IP addresses (A\/AAAA records), and text records (TXT records) used for verification and security.",
-            "why_use_title": "[Pending Translation] Why Use DNS Lookup?",
-            "why_use_desc": "[Pending Translation] DNS Lookup is essential for troubleshooting email delivery issues, verifying domain configuration, checking nameserver settings, validating SPF and DKIM records, and understanding how a domain is set up. It's used by system administrators, web developers, and IT professionals daily.",
-            "record_types_title": "[Pending Translation] DNS Record Types",
-            "a_record": "[Pending Translation] <strong>A Record:<\/strong> Maps domain to IPv4 address",
-            "aaaa_record": "[Pending Translation] <strong>AAAA Record:<\/strong> Maps domain to IPv6 address",
-            "mx_record": "[Pending Translation] <strong>MX Record:<\/strong> Mail server information",
-            "ns_record": "[Pending Translation] <strong>NS Record:<\/strong> Nameserver information",
-            "txt_record": "[Pending Translation] <strong>TXT Record:<\/strong> Text records for verification",
-            "cname_record": "[Pending Translation] <strong>CNAME Record:<\/strong> Canonical name alias"
+            "what_is_title": "什么是 DNS 查询？",
+            "what_is_desc": "DNS 查询是一种向域名系统服务器查询以检索域名 DNS 记录的工具。DNS 记录包含有关域名配置的重要信息，包括邮件服务器（MX 记录）、名称服务器（NS 记录）、IP 地址（A/AAAA 记录）以及用于验证和安全的文本记录（TXT 记录）。",
+            "why_use_title": "为什么要使用 DNS 查询？",
+            "why_use_desc": "DNS 查询对于排除电子邮件递送问题、验证域名配置、检查名称服务器设置、验证 SPF 和 DKIM 记录以及了解域名的设置非常重要。它是系统管理员、Web 开发人员和 IT 专业人员日常使用的工具。",
+            "record_types_title": "DNS 记录类型",
+            "a_record": "<strong>A 记录：</strong> 将域名映射到 IPv4 地址",
+            "aaaa_record": "<strong>AAAA 记录：</strong> 将域名映射到 IPv6 地址",
+            "mx_record": "<strong>MX 记录：</strong> 邮件服务器信息",
+            "ns_record": "<strong>NS 记录：</strong> 名称服务器信息",
+            "txt_record": "<strong>TXT 记录：</strong> 用于验证的文本记录",
+            "cname_record": "<strong>CNAME 记录：</strong> 规范名称别名"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "常见问题记录",
+            "q1": "什么是 DNS 传播？",
+            "a1": "DNS 传播是 DNS 更改在互联网上更新所需的时间，通常需要 24-48 小时。",
+            "q2": "我可以看到所有的记录吗？",
+            "a2": "是的，我们的工具支持查询 A、MX、TXT、NS、CNAME 等所有常见的 DNS 记录。",
+            "q3": "它是免费的吗？",
+            "a3": "是的，它完全免费，无查询次数限制。",
+            "q4": "查询结果准确吗？",
+            "a4": "结果基于实时 DNS 查询，反映了当前解析状态。",
+            "q5": "支持子域名吗？",
+            "a5": "支持，您可以输入任何有效的子域名进行查询。"
         },
         "js": {
-            "looking_up": "",
-            "records_label": "",
-            "success": "",
-            "error": "",
-            "lookup_dns": ""
+            "looking_up": "正在查询...",
+            "records_label": "记录：",
+            "success": "查询成功！",
+            "error": "查询失败，请检查域名。",
+            "lookup_dns": "查询 DNS"
         }
     },
     "domain-to-ip": {
         "meta": {
-            "title": "[Pending Translation] Domain to IP Converter - Find IP Address of Any Domain Free",
-            "description": "[Pending Translation] Free domain to IP lookup tool. Instantly convert any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.",
-            "h1": "[Pending Translation] Domain to IP Converter",
-            "subtitle": "[Pending Translation] Resolve domain names to IP addresses with detailed DNS information"
+            "title": "域名转 IP 转换器 - 免费查找任何域名的 IP 地址",
+            "description": "免费的域名转 IP 查询工具。立即将任何域名转换为其对应的 IP 地址。对于网络故障排除、服务器配置和 DNS 验证至关重要。",
+            "h1": "域名转 IP 转换器",
+            "subtitle": "将域名解析为 IP 地址并获取详细的 DNS 信息"
         },
         "form": {
-            "domain_label": "[Pending Translation] Enter Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "domain_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "button": "[Pending Translation] Lookup IP Address"
+            "domain_label": "输入域名",
+            "domain_placeholder": "example.com",
+            "domain_hint": "输入域名，不带 http:// 或 https://",
+            "button": "查询 IP 地址"
         },
         "results": {
-            "title": "",
-            "domain_label": "",
-            "ip_label": ""
+            "title": "IP 查询结果",
+            "domain_label": "域名",
+            "ip_label": "IP 地址"
         },
         "content": {
-            "main_title": "[Pending Translation] Domain to IP Converter",
-            "main_subtitle": "[Pending Translation] Convert any domain name to its IP address instantly",
-            "intro": "[Pending Translation] Our free Domain to IP tool instantly converts any domain name to its corresponding IP address using DNS lookup. Essential for network administrators, web developers, security professionals, and anyone needing to identify the server behind a domain. Get accurate IP addresses for troubleshooting, server verification, and network configuration.",
-            "feature1_title": "[Pending Translation] Instant Lookup",
-            "feature1_desc": "[Pending Translation] Get IP addresses immediately without delays",
-            "feature2_title": "[Pending Translation] Accurate Results",
-            "feature2_desc": "[Pending Translation] Real-time DNS queries for current IP addresses",
-            "feature3_title": "[Pending Translation] 100% Free",
-            "feature3_desc": "[Pending Translation] Unlimited lookups with no registration required",
-            "what_is_title": "[Pending Translation] 🌐 What is Domain to IP Lookup?",
-            "what_is_desc": "[Pending Translation] Domain to IP lookup is the process of converting a human-readable domain name (like example.com) into its corresponding numerical IP address (like 93.184.216.34). This conversion happens through DNS (Domain Name System) servers, which act as the internet's phone book. Every website has an IP address, but domain names make them easier to remember and access.",
-            "use_cases_title": "[Pending Translation] 🎯 Common Use Cases",
-            "uc1_title": "[Pending Translation] Server Configuration",
-            "uc1_desc": "[Pending Translation] Configure firewalls, whitelists, and server settings with IP addresses",
-            "uc2_title": "[Pending Translation] Security Analysis",
-            "uc2_desc": "[Pending Translation] Verify server locations and identify hosting providers",
-            "uc3_title": "[Pending Translation] Troubleshooting",
-            "uc3_desc": "[Pending Translation] Diagnose DNS issues and verify domain configurations",
-            "uc4_title": "[Pending Translation] Network Monitoring",
-            "uc4_desc": "[Pending Translation] Track server changes and monitor infrastructure",
-            "uc5_title": "[Pending Translation] Geolocation",
-            "uc5_desc": "[Pending Translation] Determine server geographic location from IP address",
-            "uc6_title": "[Pending Translation] API Integration",
-            "uc6_desc": "[Pending Translation] Use IP addresses for direct API connections",
-            "pro_tips_title": "[Pending Translation] 💡 Pro Tips: Using Domain to IP Lookup",
-            "tip1": "[Pending Translation] ✅ Use IP addresses for direct server connections when DNS is slow",
-            "tip2": "[Pending Translation] ✅ Verify CDN configurations by checking multiple domain resolutions",
-            "tip3": "[Pending Translation] ✅ Whitelist server IPs in firewalls for secure access",
-            "tip4": "[Pending Translation] ✅ Compare IP addresses before and after DNS changes",
-            "tip5": "[Pending Translation] ✅ Identify shared hosting by checking if multiple domains share IPs"
+            "main_title": "域名转 IP 转换器",
+            "main_subtitle": "立即将任何域名转换为其对应的 IP 地址",
+            "intro": "我们的免费域名转 IP 工具可通过 DNS 查询立即将任何域名转换为其对应的 IP 地址使用。对于网络管理员、Web 开发人员、安全专业人员以及任何需要识别域名背后服务器的人来说，这都是必不可少的工具。获取准确的 IP 地址用于故障排除、服务器验证和网络配置。",
+            "feature1_title": "即时查询",
+            "feature1_desc": "立即获取 IP 地址，无需等待",
+            "feature2_title": "准确结果",
+            "feature2_desc": "针对当前 IP 地址进行实时 DNS 查询",
+            "feature3_title": "100% 免费",
+            "feature3_desc": "无限制查询，无需注册",
+            "what_is_title": "🌐 什么是域名转 IP 查询？",
+            "what_is_desc": "域名转 IP 查询是将人类可读的域名（如 example.com）转换为其对应的数字 IP 地址（如 93.184.216.34）的过程。这种转换通过充当“互联网电话簿”的 DNS（域名系统）服务器完成。每个网站都有一个 IP 地址，但域名让它们更易于记忆和访问。",
+            "use_cases_title": "🎯 常用场景",
+            "uc1_title": "服务器配置",
+            "uc1_desc": "使用 IP 地址配置防火墙、白名单和服务器设置",
+            "uc2_title": "安全分析",
+            "uc2_desc": "验证服务器位置并识别托管服务提供商",
+            "uc3_title": "故障排除",
+            "uc3_desc": "诊断 DNS 问题并验证域名配置",
+            "uc4_title": "网络监控",
+            "uc4_desc": "跟踪服务器更改和监控基础设施",
+            "uc5_title": "地理位置",
+            "uc5_desc": "根据 IP 地址确定服务器地理位置",
+            "uc6_title": "API 集成",
+            "uc6_desc": "使用 IP 地址进行直接的 API 连接",
+            "pro_tips_title": "💡 专家提示：使用域名转 IP 查询",
+            "tip1": "✅ 当 DNS 缓慢时，使用 IP 地址直接连接服务器",
+            "tip2": "✅ 通过检查多个域名解析来验证 CDN 配置",
+            "tip3": "✅ 在防火墙中将服务器 IP 加入白名单以实现安全访问",
+            "tip4": "✅ 在 DNS 更改前后对比 IP 地址",
+            "tip5": "✅ 通过检查多个域名是否共享 IP 来识别共享托管"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "常见问题解答",
+            "q1": "为什么一个域名会有多个 IP？",
+            "a1": "这通常是由于使用了负载均衡或 CDN 服务，以提高网站的访问速度和可靠性。",
+            "q2": "转换是实时的吗？",
+            "a2": "是的，我们的工具反映了当前的 DNS 记录状态。",
+            "q3": "我可以查询子域名吗？",
+            "a3": "可以，只要它具有对应的 DNS A 记录。",
+            "q4": "解析失败的原因有哪些？",
+            "a4": "可能是域名输入错误、域名已通过过期或 DNS 记录尚未生效。",
+            "q5": "支持 IPv6 吗？",
+            "a5": "支持，我们会查询并显示 AAAA 记录（如果存在）。"
         },
         "js": {
-            "looking_up": "",
-            "error_failed": ""
+            "looking_up": "查询中...",
+            "error_failed": "查询失败"
         }
     },
     "internet-speed-test": {
         "meta": {
-            "title": "[Pending Translation] Free Internet Speed Test - Check Your Connection Speed",
-            "description": "[Pending Translation] Test your internet speed for free. Check download speed, upload speed, and ping instantly.",
-            "h1": "[Pending Translation] Internet Speed Test",
-            "subtitle": "[Pending Translation] Test your internet connection speed instantly"
+            "title": "免费网速测试 - 检查您的连接速度",
+            "description": "免费测试您的互联网速度。立即检查下载速度、上传速度和延迟 (Ping)。",
+            "h1": "网速测试",
+            "subtitle": "立即测试您的互联网连接速度"
         },
         "editor": {
-            "btn_start": "[Pending Translation] Start Speed Test",
-            "status_init": "[Pending Translation] Initializing test...",
-            "label_download": "[Pending Translation] Download Speed",
-            "label_upload": "[Pending Translation] Upload Speed",
-            "label_ping": "[Pending Translation] Ping",
-            "label_quality": "[Pending Translation] Connection Quality",
-            "btn_retry": "[Pending Translation] Test Again",
-            "status_ping": "[Pending Translation] Testing ping...",
-            "status_download": "[Pending Translation] Testing download speed...",
-            "status_upload": "[Pending Translation] Testing upload speed...",
-            "quality_val_excellent": "[Pending Translation] Excellent",
-            "quality_val_very_good": "[Pending Translation] Very Good",
-            "quality_val_good": "[Pending Translation] Good",
-            "quality_val_fair": "[Pending Translation] Fair",
-            "quality_val_poor": "[Pending Translation] Poor"
+            "btn_start": "开始测速",
+            "status_init": "初始化测试中...",
+            "label_download": "下载速度",
+            "label_upload": "上传速度",
+            "label_ping": "延迟 (Ping)",
+            "label_quality": "连接质量",
+            "btn_retry": "重新测速",
+            "status_ping": "正在测试延迟...",
+            "status_download": "正在测试下载速度...",
+            "status_upload": "正在测试上传速度...",
+            "quality_val_excellent": "优秀",
+            "quality_val_very_good": "非常好",
+            "quality_val_good": "良好",
+            "quality_val_fair": "一般",
+            "quality_val_poor": "较差"
         },
         "content": {
-            "p1": "[Pending Translation] Test your internet connection speed with our free, accurate speed test tool. Measure your download speed, upload speed, and ping latency in seconds. Perfect for troubleshooting slow connections, verifying ISP speeds, or checking if you're getting what you pay for.",
-            "metrics_title": "[Pending Translation] Understanding Speed Test Metrics",
-            "req_title": "[Pending Translation] Requirements for Accurate Testing",
+            "p1": "使用我们免费、准确的测速工具测试您的互联网连接速度。在几秒钟内测量您的下载速度、上传速度和 Ping 延迟。对于排除慢速连接故障、验证 ISP 速度或检查您的网络性能而言非常完美。",
+            "metrics_title": "理解测速指标",
+            "req_title": "获得准确测试结果的要求",
             "req_list": [
-                "[Pending Translation] Close all other applications and browser tabs",
-                "[Pending Translation] Connect via Ethernet cable for most accurate results",
-                "[Pending Translation] Disable VPN or proxy services temporarily",
-                "[Pending Translation] Ensure no downloads or uploads are running",
-                "[Pending Translation] Test multiple times at different times of day"
+                "关闭所有其他应用程序和浏览器标签页",
+                "使用以太网线连接以获得最准确的结果",
+                "暂时禁用 VPN 或代理服务",
+                "确保没有正在运行的下载或上传任务",
+                "在一天的不同时间多次进行测试"
             ],
-            "why_title": "[Pending Translation] Why Test Your Internet Speed?",
+            "why_title": "为什么要测试您的网速？",
             "why_list": [
-                "[Pending Translation] Verify you're getting the speed you're paying for",
-                "[Pending Translation] Troubleshoot slow connection issues",
-                "[Pending Translation] Compare different ISP plans before switching",
-                "[Pending Translation] Optimize your network setup",
-                "[Pending Translation] Document speed for ISP support tickets",
-                "[Pending Translation] Test Wi-Fi vs Ethernet performance"
+                "验证您是否获得了所支付的速度",
+                "排查慢速连接问题",
+                "在切换 ISP 套餐前对比不同的服务商",
+                "优化您的网络设置",
+                "记录速度数据用于 ISP 故障申告",
+                "对比 Wi-Fi 与网线连接的性能"
             ],
-            "factors_title": "[Pending Translation] Factors Affecting Your Speed",
-            "improve_title": "[Pending Translation] How to Improve Your Speed",
+            "factors_title": "影响网速的因素",
+            "improve_title": "如何提高您的网速",
             "improve_list": [
-                "[Pending Translation] Use Ethernet cable instead of Wi-Fi when possible",
-                "[Pending Translation] Place router in central location away from walls",
-                "[Pending Translation] Upgrade to a modern router that supports your speed tier",
-                "[Pending Translation] Close bandwidth-heavy applications",
-                "[Pending Translation] Update router firmware regularly",
-                "[Pending Translation] Consider upgrading your internet plan",
-                "[Pending Translation] Use Quality of Service (QoS) settings on router"
+                "尽可能使用网线连接而非 Wi-Fi",
+                "将路由器放置在中心位置，远离墙壁",
+                "升级支持您带宽速率的现代路由器",
+                "关闭占用带宽的应用程序",
+                "定期更新路由器固件",
+                "考虑升级您的互联网套餐",
+                "在路由器上使用服务质量 (QoS) 设置"
             ],
-            "tips_title": "[Pending Translation] Pro Tips for Accurate Results",
+            "tips_title": "测速专家建议",
             "tips_list": [
-                "[Pending Translation] Test at different times of day to see variations",
-                "[Pending Translation] Run multiple tests and average the results",
-                "[Pending Translation] Test on different devices to rule out device issues",
-                "[Pending Translation] Compare Wi-Fi speeds at different locations in your home"
+                "在一天的不同时间点测试以观察波动情况",
+                "运行多次测试并取平均值",
+                "在不同设备上测试以排查设备本身的问题",
+                "对比家中不同位置的 Wi-Fi 速度"
             ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "常见问题解答",
             "metrics": {
                 "download": {
-                    "title": "[Pending Translation] Download Speed",
-                    "desc": "[Pending Translation] How fast data travels from the internet to your device. Important for streaming, browsing, and downloading files."
+                    "title": "下载速度",
+                    "desc": "数据从互联网传输到您设备的速度。对流媒体播放、网页浏览和下载文件很重要。"
                 },
                 "upload": {
-                    "title": "[Pending Translation] Upload Speed",
-                    "desc": "[Pending Translation] How fast data travels from your device to the internet. Important for video calls, uploading files, and live streaming."
+                    "title": "上传速度",
+                    "desc": "数据从您设备传输到互联网的速度。对视频通话、上传文件和直播很重要。"
                 },
                 "ping": {
-                    "title": "[Pending Translation] Ping (Latency)",
-                    "desc": "[Pending Translation] Response time of your connection. Lower is better. Important for gaming and real-time applications."
+                    "title": "延迟 (Ping)",
+                    "desc": "连接的响应时间。越低越好。对游戏和实时应用很重要。"
                 }
             },
             "factors": {
                 "congestion": {
-                    "title": "[Pending Translation] Network Congestion",
-                    "desc": "[Pending Translation] Peak usage times can slow down your connection as more users share bandwidth."
+                    "title": "网络拥堵",
+                    "desc": "高峰使用时间可能会由于更多用户共享带宽而导致连接变慢。"
                 },
                 "wifi": {
-                    "title": "[Pending Translation] Wi-Fi Signal",
-                    "desc": "[Pending Translation] Distance from router, walls, and interference from other devices affect wireless speeds."
+                    "title": "Wi-Fi 信号",
+                    "desc": "离路由器的距离、墙壁以及来自其他设备的干扰都会影响无线速度。"
                 },
                 "device": {
-                    "title": "[Pending Translation] Device Performance",
-                    "desc": "[Pending Translation] Older devices or those running many programs may not achieve full speeds."
+                    "title": "设备性能",
+                    "desc": "较旧的设备或运行较多程序的设备可能无法达到最高速度。"
                 },
                 "router": {
-                    "title": "[Pending Translation] Router Quality",
-                    "desc": "[Pending Translation] Outdated routers may not support your full internet speed capabilities."
+                    "title": "路由器质量",
+                    "desc": "过时的路由器可能无法完全支持您的互联网带宽能力。"
                 }
             },
             "faq": {
-                "q1": "[Pending Translation] What is a good internet speed?",
-                "a1": "[Pending Translation] For general browsing and streaming: 25+ Mbps. For 4K streaming and gaming: 50+ Mbps. For multiple users and heavy usage: 100+ Mbps. For remote work and large households: 200+ Mbps.",
-                "q2": "[Pending Translation] Why is my speed slower than advertised?",
-                "a2": "[Pending Translation] ISPs advertise \"up to\" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.",
-                "q3": "[Pending Translation] What's the difference between Mbps and MBps?",
-                "a3": "[Pending Translation] Mbps (megabits per second) is used for internet speeds. MBps (megabytes per second) is used for file sizes. 1 MBps = 8 Mbps. A 100 Mbps connection downloads at about 12.5 MBps.",
-                "q4": "[Pending Translation] How accurate is this speed test?",
-                "a4": "[Pending Translation] Our speed test provides accurate results by measuring real data transfer. For best accuracy, close other applications, use Ethernet, and run multiple tests.",
-                "q5": "[Pending Translation] Should I test with Wi-Fi or Ethernet?",
-                "a5": "[Pending Translation] Test with Ethernet to measure your true internet speed. Test with Wi-Fi to diagnose wireless issues. Comparing both helps identify if problems are with your internet or Wi-Fi."
+                "q1": "多少网速是理想的？",
+                "a1": "一般的浏览和流媒体：25+ Mbps；4K 流媒体和游戏：50+ Mbps；多用户及重度使用：100+ Mbps；远程办公及大型家庭：200+ Mbps。",
+                "q2": "为什么我的速度比宣传的慢？",
+                "a2": "运营商宣传的是“最高”速度。实际速度取决于网络拥挤、Wi-Fi 质量、离路由器的距离以及设备能力。连接网线测速最准。",
+                "q3": "Mbps 和 MBps 有什么区别？",
+                "a3": "Mbps (Mb/s) 用于测速，MBps (MB/s) 用于文件大小。1 MBps = 8 Mbps。100 Mbps 的连接下载速度约为 12.5 MB/s。",
+                "q4": "这个测速准确吗？",
+                "a4": "测速通过测量真实数据传输来提供准确结果。建议关闭其他程序并多次测试以获知真实性能。",
+                "q5": "我应该用 Wi-Fi 还是网线测速？",
+                "a5": "用网线测速以衡量真实的网速；用 Wi-Fi 测速以诊断无线信号问题。对比两者可以确定问题出在网速还是 Wi-Fi。"
             }
         }
     },
     "ip-lookup": {
         "meta": {
-            "title": "[Pending Translation] IP Lookup Tool - Get IP Address Information & Geolocation Free",
-            "description": "[Pending Translation] Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.",
-            "h1": "[Pending Translation] IP Lookup Tool",
-            "subtitle": "[Pending Translation] Get detailed information about any IP address including location & ISP"
+            "title": "IP 查询工具 - 免费获取 IP 地址信息和地理位置",
+            "description": "免费的 IP 查询工具，可查找任何 IP 地址的详细信息。查看位置、ISP、主机名等。对于安全分析和网络故障排除至关重要。",
+            "h1": "IP 查询工具",
+            "subtitle": "获取任何 IP 地址的详细信息，包括位置和 ISP"
         },
         "form": {
-            "ip_label": "[Pending Translation] IP Address",
-            "ip_placeholder": "[Pending Translation] 8.8.8.8",
-            "button": "[Pending Translation] Lookup IP Address"
+            "ip_label": "IP 地址",
+            "ip_placeholder": "8.8.8.8",
+            "button": "查询 IP 信息"
         },
         "results": {
-            "title": "",
-            "ip_address": "",
-            "type": "",
-            "hostname": "",
-            "isp": "",
-            "country": "",
-            "region": "",
-            "city": "",
-            "timezone": ""
+            "title": "IP 查询详情",
+            "ip_address": "IP 地址",
+            "type": "类型",
+            "hostname": "主机名",
+            "isp": "服务提供商 (ISP)",
+            "country": "国家/地区",
+            "region": "省/州",
+            "city": "城市",
+            "timezone": "时区"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is IP Lookup?",
-            "what_is_desc": "[Pending Translation] IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. This information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.",
-            "why_use_title": "[Pending Translation] Why Use IP Lookup?",
-            "why_use_desc": "[Pending Translation] IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It's also useful for verifying VPN connections and understanding your own internet footprint.",
-            "features_title": "[Pending Translation] Key Features",
-            "feature1_title": "[Pending Translation] 🌍 Geolocation Data",
-            "feature1_desc": "[Pending Translation] Country, region, city, and coordinates",
-            "feature2_title": "[Pending Translation] 🏢 ISP Information",
-            "feature2_desc": "[Pending Translation] Internet Service Provider details",
-            "feature3_title": "[Pending Translation] 🔗 Hostname Resolution",
-            "feature3_desc": "[Pending Translation] Domain name associated with IP",
-            "feature4_title": "[Pending Translation] ⚡ Instant Results",
-            "feature4_desc": "[Pending Translation] Fast and accurate lookup"
+            "what_is_title": "什么是 IP 查询？",
+            "what_is_desc": "IP 查询是一种提供有关任何 IP 地址详细信息的工具。它揭示了与 IP 地址关联的地理位置、互联网服务提供商 (ISP)、主机名和其他技术细节。这些信息对于网络管理员、安全专业人员、网站所有者以及任何有兴趣了解互联网流量来源的人来说都很有价值。",
+            "why_use_title": "为什么要使用 IP 查询？",
+            "why_use_desc": "IP 查询工具对于各种用途都必不可少，包括安全分析、欺诈预防、内容本地化、网络故障排除和合规性验证。网站所有者使用 IP 查询来了解他们的访问者人口统计信息，而安全团队则使用它来识别潜在威胁并阻止恶意流量。它对于验证 VPN 连接和了解您自己的互联网足迹也很有用。",
+            "features_title": "核心功能",
+            "feature1_title": "🌍 地理位置数据",
+            "feature1_desc": "国家、地区、城市和坐标",
+            "feature2_title": "🏢 ISP 信息",
+            "feature2_desc": "互联网服务提供商详情",
+            "feature3_title": "🔗 主机名解析",
+            "feature3_desc": "与 IP 关联的域名",
+            "feature4_title": "⚡ 即时结果",
+            "feature4_desc": "快速且准确的查询"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "常见问题",
+            "q1": "它能显示确切的街道地址吗？",
+            "a1": "不能。出于隐私原因，公共 IP 查询通常只能精确定位到城市或邮编级别，无法显示具体的门牌号。",
+            "q2": "我可以看到自己的 IP 信息吗？",
+            "a2": "可以，只要输入您的公共 IP 即可。我们的工具会自动识别并加载您的当前 IP。",
+            "q3": "数据多久更新一次？",
+            "a3": "IP 数据库通常每周更新一次，但地理位置分配有时可能会由于缓存原因有一定的延迟。",
+            "q4": "IPv6 地址支持吗？",
+            "a4": "是的，我们的工具完全支持 IPv4 和 IPv6 地址查询。",
+            "q5": "它是免费的吗？",
+            "a5": "是的，它完全免费，无查询次数限制。"
         },
         "js": {
-            "looking_up": "",
-            "success": "",
-            "error": ""
+            "looking_up": "正在查询...",
+            "success": "查询成功",
+            "error": "查询出错"
         }
     },
     "ping-test": {
         "meta": {
-            "title": "[Pending Translation] Ping Test Tool - Check Network Latency & Connectivity Free",
-            "description": "[Pending Translation] Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] Ping Test Tool",
-            "subtitle": "[Pending Translation] Test server response time and network connectivity from multiple locations"
+            "title": "Ping 测试工具 - 免费检查网络延迟和连通性",
+            "description": "免费的 Ping 测试工具，可检查网络延迟、数据包丢失和服务器可达性。立即测试与任何主机或 IP 地址的连通性。对于网络故障排除至关重要。",
+            "h1": "Ping 测试工具",
+            "subtitle": "从多个位置测试服务器响应时间和网络连通性"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] google.com or 8.8.8.8",
-            "button": "[Pending Translation] Ping Host"
+            "host_label": "主机或 IP 地址",
+            "host_placeholder": "google.com 或 8.8.8.8",
+            "button": "测试 Ping"
         },
         "results": {
-            "title": ""
+            "title": "Ping 测试结果"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Ping Test?",
-            "what_is_desc": "[Pending Translation] Ping is a network diagnostic tool that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. The tool is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.",
-            "why_use_title": "[Pending Translation] Why Use Ping Test?",
-            "why_use_desc": "[Pending Translation] Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to check server latency before joining online games, while website owners monitor their server's responsiveness to ensure optimal user experience.",
-            "metrics_title": "[Pending Translation] Understanding Ping Metrics",
-            "metric1": "[Pending Translation] <strong>Packets Sent\/Received:<\/strong> Number of ping requests and successful responses",
-            "metric2": "[Pending Translation] <strong>Packet Loss:<\/strong> Percentage of packets that didn't receive a response",
-            "metric3": "[Pending Translation] <strong>Minimum Time:<\/strong> Fastest round-trip time recorded",
-            "metric4": "[Pending Translation] <strong>Average Time:<\/strong> Mean latency across all pings",
-            "metric5": "[Pending Translation] <strong>Maximum Time:<\/strong> Slowest round-trip time recorded",
-            "metric6": "[Pending Translation] <strong>TTL (Time To Live):<\/strong> Number of network hops before packet expires",
-            "interpreting_title": "[Pending Translation] Interpreting Results",
-            "interpreting_desc": "[Pending Translation] Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
+            "what_is_title": "什么是 Ping 测试？",
+            "what_is_desc": "Ping 是一种网络诊断工具，用于测试互联网协议 (IP) 网络上主机的可达性。它测量从源到目标计算机再返回的消息往返时间。Ping 的运行原理是向目标主机发送互联网控制消息协议 (ICMP) 回显请求数据包并等待回显答复。该工具以潜艇探测中使用的声纳脉冲声命名，因为它通过类似地发出信号并监听反馈来判断目标状态。",
+            "why_use_title": "为什么要使用 Ping 测试？",
+            "why_use_desc": "Ping 测试对于网络故障排除和性能监控至关重要。系统管理员使用 Ping 来验证网络连通性、诊断连接问题并测量网络延迟。它有助于识别服务器是否在线且有响应，检测可能指示网络拥塞或硬件问题的数据包丢失，并衡量网络连接的质量。游戏玩家在加入在线游戏前使用 Ping 来检查服务器延迟，而网站所有者则监控其服务器的响应能力以确保最佳的用户体验。",
+            "metrics_title": "理解 Ping 指标",
+            "metric1": "<strong>已发送/已接收数据包：</strong> Ping 请求和成功收到响应的次数",
+            "metric2": "<strong>丢包率：</strong> 未收到响应的数据包百分比",
+            "metric3": "<strong>最短时间：</strong> 记录的最快往返时间",
+            "metric4": "<strong>平均时间：</strong> 所有 Ping 记录的平均延迟",
+            "metric5": "<strong>最长时间：</strong> 记录的最慢往返时间",
+            "metric6": "<strong>TTL (生存时间)：</strong> 数据包过期前的网络跳数",
+            "interpreting_title": "结果解读",
+            "interpreting_desc": "良好的 Ping 时间对于本地连接通常在 50ms 以下，对于国际连接在 100ms 以下。100-200ms 之间的延迟对于大多数应用是可以接受的，但在游戏或视频会议等实时应用中可能会有明显的滞后。超过 200ms 则表示存在潜在的网络问题。丢包率超过 1% 说明需要调查网络通畅性。稳定的 Ping 时间表示连接稳定，而波动剧烈的时间则可能存在网络拥塞或路由问题。"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "常见问题解答",
+            "q1": "为什么会有丢包？",
+            "a1": "丢包可能是由于网络拥塞、硬件故障、防火墙拦截或物理线路干扰造成的。",
+            "q2": "Ping 值越低越好吗？",
+            "a2": "是的，较低的 Ping 值意味着响应速度更快，连接质量更优。",
+            "q3": "我可以 Ping 任何网站吗？",
+            "a3": "大多数网站都是可以的，但有些服务器为了安全会禁用 ICMP 协议（即禁 Ping）。",
+            "q4": "TTL 代表什么？",
+            "a4": "TTL 是存活时间，表示数据包在被丢弃前可以经过的最大路由器跳数。",
+            "q5": "Ping 测试是免费的吗？",
+            "a5": "是的，它是完全免费的在线测试服务。"
         },
         "js": {
-            "pinging": "",
-            "success": "",
-            "error": "",
-            "ping_host": ""
+            "pinging": "正在测试...",
+            "success": "测试成功",
+            "error": "测试失败",
+            "ping_host": "测试 Ping"
         }
     },
     "port-checker": {
         "meta": {
-            "title": "[Pending Translation] Port Checker Tool - Check Open Ports & Network Connectivity Free",
-            "description": "[Pending Translation] Free port checker tool to test if ports are open, closed, or filtered. Check TCP\/UDP ports instantly for network troubleshooting and security auditing.",
-            "h1": "[Pending Translation] Port Checker Tool",
-            "subtitle": "[Pending Translation] Check if ports are open on any server for troubleshooting connectivity"
+            "title": "端口检查工具 - 免费检查开放端口和网络连通性",
+            "description": "免费的端口检查工具，用于测试端口是开放、关闭还是被过滤。立即检查 TCP/UDP 端口用于网络故障排除和安全审计。",
+            "h1": "端口检查工具",
+            "subtitle": "检查任何服务器上的端口是否开放，以排查连接故障"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] example.com or 8.8.8.8",
-            "port_label": "[Pending Translation] Port Number",
-            "port_placeholder": "[Pending Translation] 80",
-            "button": "[Pending Translation] Check Port"
+            "host_label": "主机或 IP 地址",
+            "host_placeholder": "example.com 或 8.8.8.8",
+            "port_label": "端口号",
+            "port_placeholder": "80",
+            "button": "检查端口"
         },
         "results": {
-            "title": ""
+            "title": "端口检查结果"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Port Checker?",
-            "what_is_desc": "[Pending Translation] A Port Checker is a network diagnostic tool that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Common ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Checking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.",
-            "why_check_title": "[Pending Translation] Why Check Ports?",
-            "why_check_desc": "[Pending Translation] Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren't accessible, determining if the issue is with the service itself, firewall rules, or network routing.",
-            "common_ports_title": "[Pending Translation] Common Ports",
-            "port1": "[Pending Translation] <strong>Port 80:<\/strong> HTTP (web traffic)",
-            "port2": "[Pending Translation] <strong>Port 443:<\/strong> HTTPS (secure web traffic)",
-            "port3": "[Pending Translation] <strong>Port 22:<\/strong> SSH (secure shell access)",
-            "port4": "[Pending Translation] <strong>Port 21:<\/strong> FTP (file transfer)",
-            "port5": "[Pending Translation] <strong>Port 25:<\/strong> SMTP (email sending)",
-            "port6": "[Pending Translation] <strong>Port 3306:<\/strong> MySQL database",
-            "port7": "[Pending Translation] <strong>Port 3389:<\/strong> RDP (Remote Desktop)",
-            "security_title": "[Pending Translation] Security Implications",
-            "security_desc": "[Pending Translation] Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
+            "what_is_title": "什么是端口检查？",
+            "what_is_desc": "端口检查器是一种网络诊断工具，用于确定服务器或设备上的特定 TCP 或 UDP 端口是开放（接受连接）、关闭（拒绝连接）还是被过滤（被防火墙阻止）。端口是网络通信的虚拟端点，每个端口号（1-65535）都可能托管不同的服务。常见的端口包括用于 HTTP 网页流量的 80、用于 HTTPS 的 443、用于 SSH 的 22 以及用于电子邮件的 25。检查端口状态对于网络配置、安全审计和排查连接问题至关重要。",
+            "why_check_title": "为什么要检查端口？",
+            "why_check_desc": "端口检查在网络管理和安全方面具有多个关键用途。系统管理员会在配置更改后验证服务是否在其预期端口上可供访问。安全专业人员会扫描开放端口以识别潜在漏洞并确保不必要的端口已关闭。开发人员测试他们的应用程序是否在配置的端口上正确监听。网络故障排除人员使用端口检查来诊断为什么服务不可访问，确定问题出在服务本身、防火墙规则还是网络路由。",
+            "common_ports_title": "常见端口",
+            "port1": "<strong>端口 80：</strong> HTTP (网页流量)",
+            "port2": "<strong>端口 443：</strong> HTTPS (安全网页流量)",
+            "port3": "<strong>端口 22：</strong> SSH (安全外壳访问)",
+            "port4": "<strong>端口 21：</strong> FTP (文件传输)",
+            "port5": "<strong>端口 25：</strong> SMTP (邮件发送)",
+            "port6": "<strong>端口 3306：</strong> MySQL 数据库",
+            "port7": "<strong>端口 3389：</strong> RDP (远程桌面)",
+            "security_title": "安全含义",
+            "security_desc": "开放端口代表了攻击者的潜在入口点。最佳安全实践要求只保持必要的端口开放，并关闭或过滤所有其他端口。定期扫描您自己的服务器有助于识别可能被利用的意外开放端口。但是，在未经许可的情况下向他人的系统进行端口扫描可能是非法的，并被视为敌对活动。在扫描不属于您的系统上的端口之前，请务必确保您获得了授权。"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "常见问题解答",
+            "q1": "什么是“被过滤”状态？",
+            "a1": "这意味着防火墙或某种网络过滤器正在拦截指向该端口的流量，导致无法确定端口是否开放。",
+            "q2": "端口检查是免费的吗？",
+            "a2": "是的，它完全免费。",
+            "q3": "我可以一次检查多个端口吗？",
+            "a3": "当前工具支持逐个检查，以确保扫描的准确性和服务的响应性。",
+            "q4": "扫描失败的常见原因？",
+            "a4": "主机名错误、端口号超出范围、或者目标服务器启用了严格的防扫描策略。",
+            "q5": "端口 443 为什么通常是开着的？",
+            "a5": "端口 443 是 HTTPS 协议的标准端口，大多数现代网站都使用它进行加密通信。"
         },
         "js": {
-            "checking": "",
-            "success": "",
-            "error": "",
-            "check_port": ""
+            "checking": "正在检查...",
+            "success": "检查成功",
+            "error": "检查失败",
+            "check_port": "检查端口"
         }
     },
     "reverse-dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] Reverse DNS Lookup - Free Online Tool",
-            "description": "[Pending Translation] Free online reverse DNS lookup tool. Find the hostname associated with any IP address instantly. Fast, secure, and easy to use.",
-            "h1": "[Pending Translation] Reverse DNS Lookup",
-            "subtitle": "[Pending Translation] Find the domain name or hostname associated with an IP address instantly"
+            "title": "反向 DNS 查询 - 免费在线工具",
+            "description": "免费在线反向 DNS 查询工具。立即查找与任何 IP 地址关联的主机名。快速、安全且易于使用。",
+            "h1": "反向 DNS 查询",
+            "subtitle": "立即查找与 IP 地址关联的域名或主机名"
         },
         "form": {
-            "ip_label": "[Pending Translation] Enter IP Address",
-            "ip_placeholder": "[Pending Translation] e.g., 8.8.8.8",
-            "button": "[Pending Translation] Lookup Reverse DNS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "ip_label": "输入 IP 地址",
+            "ip_placeholder": "例如 8.8.8.8",
+            "button": "查询反向 DNS",
+            "button_loading": "查询中..."
         },
         "results": {
-            "title": "[Pending Translation] Reverse DNS Results"
+            "title": "反向 DNS 查询结果"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Reverse DNS Lookup?",
-            "what_is_desc": "[Pending Translation] Reverse DNS lookup (rDNS) is the process of determining the domain name or hostname associated with an IP address. Unlike a standard DNS lookup that converts a domain name to an IP address (forward lookup), rDNS does the opposite. It's often used to verify the identity of a server or to troubleshoot network issues.",
-            "why_use_title": "[Pending Translation] Why Use Reverse DNS Lookup?",
-            "why_use_desc": "[Pending Translation] Reverse DNS is widely used for security and verification purposes. It helps identify the source of incoming traffic, verify email senders (to prevent spam), and troubleshoot network connectivity issues. Many mail servers require valid rDNS records to accept incoming emails.",
-            "ptr_records_title": "[Pending Translation] Understanding PTR Records",
-            "ptr_record1": "[Pending Translation] <strong>PTR Record:<\/strong> A Pointer Record (PTR) is the type of DNS record used for reverse DNS lookups.",
-            "ptr_record2": "[Pending Translation] <strong>Mapping:<\/strong> It maps an IP address back to a hostname.",
-            "ptr_record3": "[Pending Translation] <strong>Verification:<\/strong> Crucial for email deliverability and security verification.",
-            "ptr_record4": "[Pending Translation] <strong>IP-to-Host:<\/strong> Essential for identifying the true owner of an IP address.",
-            "ptr_record5": "[Pending Translation] <strong>Spam Prevention:<\/strong> Used by mail servers to validate sender authenticity.",
-            "ptr_record6": "[Pending Translation] <strong>Network Logs:<\/strong> Helpful for making network logs human-readable by showing hostnames.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_cases_desc": "[Pending Translation] Common use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
+            "what_is_title": "什么是反向 DNS 查询？",
+            "what_is_desc": "反向 DNS 查询 (rDNS) 是确定与 IP 地址关联的域名或主机名的过程。与将域名转换为 IP 地址的标准 DNS 查询（即正向查询）不同，rDNS 执行的是相反的操作。它通常用于验证服务器的身份或解决复杂的网络问题。",
+            "why_use_title": "为什么要使用反向 DNS 查询？",
+            "why_use_desc": "反向 DNS 广泛用于安全和验证目的。它有助于识别传入流量的来源、验证电子邮件发送者（以防止垃圾邮件）并解决网络连通性问题。许多邮件服务器需要有效的 rDNS 记录才能接受传入的电子邮件。",
+            "ptr_records_title": "理解 PTR 记录",
+            "ptr_record1": "<strong>PTR 记录：</strong> 指针记录 (PTR) 是用于反向 DNS 查询的核心 DNS 记录类型。",
+            "ptr_record2": "<strong>映射：</strong> 它负责将 IP 地址精准映射回对应的域名或主机名。",
+            "ptr_record3": "<strong>验证：</strong> 对电子邮件递送、安全性验证以及日志分析至关重要。",
+            "ptr_record4": "<strong>IP 到主机：</strong> 它是识别 IP 地址真实归属者或服务器标识的必备手段。",
+            "ptr_record5": "<strong>反垃圾邮件：</strong> 许多邮件系统会自动查询 rDNS 以确认发件人的服务器真实性。",
+            "ptr_record6": "<strong>网络日志：</strong> 有助于将晦涩的 IP 地址转换为易读的主机名，方便技术人员分析。",
+            "use_cases_title": "常见使用场景",
+            "use_cases_desc": "常见场景包括但不限于：验证 Web 流量来源、诊断网络延迟或路由故障、校准电子邮件服务器配置、以及在网络安全审计中识别潜在的恶意 IP 活动。"
         },
         "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] What is a PTR record?",
-            "a1": "[Pending Translation] A PTR (Pointer) record is a type of DNS record that maps an IP address to a hostname. It is the core component of a reverse DNS lookup.",
-            "q2": "[Pending Translation] Why is reverse DNS important for email?",
-            "a2": "[Pending Translation] Many email providers use reverse DNS to verify that the sending server is legitimate. If a server's IP address doesn't have a matching rDNS record, its emails may be flagged as spam.",
-            "q3": "[Pending Translation] Can any IP address have a reverse DNS record?",
-            "a3": "[Pending Translation] Yes, but the owner of the IP address (typically the ISP or hosting provider) must configure the PTR record in their DNS settings."
+            "title": "常见问题解答",
+            "q1": "什么是 PTR 记录？",
+            "a1": "PTR (指针) 记录是 DNS 数据库中的一种记录，用于将 IP 地址指向一个特定的主机名。它是实现反向查询的基础。",
+            "q2": "为什么邮件服务强制要求反向 DNS？",
+            "a2": "为了过滤垃圾邮件。如果发送服务器的 IP 无法通过反向查询解析回其声称的域名，邮件很可能会被拦截或归入垃圾箱。",
+            "q3": "任何 IP 都可以拥有反向 DNS 记录吗？",
+            "a3": "逻辑上可以，但实际配置权限通常归 IP 地址的拥有者（如 ISP 或 IDC 服务商）所有。",
+            "q4": "查询结果显示多个主机名正常吗？",
+            "a4": "虽然一个 IP 通常对应一个 PTR 记录，但在某些复杂的负载均衡配置下，确实可能存在多个映射关系。",
+            "q5": "它是免费的吗？",
+            "a5": "是的，我们的工具提供完全免费的反向 DNS 解析查询。"
         }
     },
     "traceroute": {
         "meta": {
-            "title": "[Pending Translation] Traceroute - Free Online Tool",
-            "description": "[Pending Translation] Free online traceroute tool. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] Traceroute",
-            "subtitle": "[Pending Translation] The best traceroute for developers and IT professionals"
+            "title": "Traceroute (路由跟踪) - 免费在线工具",
+            "description": "免费在线路由跟踪工具。快速、安全且易于解析。",
+            "h1": "Traceroute (路由跟踪)",
+            "subtitle": "为开发者和 IT 专业人员提供的专业路由跟踪分析工具"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "目标主机或 IP",
+            "host_placeholder": "例如 google.com",
+            "button": "执行路由跟踪",
+            "button_loading": "正在执行跟踪..."
         },
         "results": {
-            "title": ""
+            "title": "路由跟踪详细路径"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Traceroute?",
-            "what_is_desc": "[Pending Translation] This is a free online tool to traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
+            "what_is_title": "什么是 Traceroute？",
+            "what_is_desc": "Traceroute 是一种网络诊断工具，用于显示数据包跨越互联网协议 (IP) 网络到达目标所经过的具体路径（路由）。它不仅记录沿途的每个节点，还会测量数据包在每个中转路由器上产生的延迟时间。",
+            "why_use_title": "为什么要使用 Traceroute？",
+            "why_use_desc": "它可以帮助技术人员识别网络传输中的瓶颈、定位路由循环或发现连接中断发生的具体地理/逻辑位置。对于排查复杂的跨国或跨运营商连接问题非常有价值。",
+            "hops_title": "理解“跳数” (Hops)",
+            "hop1": "每一“跳”代表数据包经过的一个三层设备（如路由器、网关或交换机）。",
+            "hop2": "工具会显示每个节点对连续探测包的响应时间 (ms)，用以衡量带宽质量。",
+            "hop3": "通过跳数，你可以清晰地看到数据是如何在复杂的互联网织网中穿梭的。",
+            "hop4": "有助于诊断具体是哪家 ISP（互联网服务商）出现了骨干网拥塞。",
+            "hop5": "显示结果包括每个节点的 IP 地址，在可能的情况下还会尝试解析主机名。",
+            "hop6": "可以检测数据包是否绕路，比如从北京访问上海却经过了海外转发。",
+            "issues_title": "如何识别路径问题",
+            "issues_desc": "如果结果中某一步显示为星号 (*)，通常意味着该节点丢包或超时。这可能是因为对应的路由器配置了安全策略禁用了 ICMP 响应，也可能确实存在严重的连接故障。"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "常见问题解答",
+            "q1": "Traceroute 是如何工作的？",
+            "a1": "它利用探测包中逐渐递增的 TTL（生存时间）值。每经过一个路由器 TTL 减 1，当 TTL 为 0 时路由器会返回超时的差错报文，从而暴露自身身份。",
+            "q2": "为什么最后几步总是显示星号？",
+            "a2": "这在现代网络中很常见。许多防火墙出于防御 DDoS 攻击的考虑，会故意忽略或拦截由于 TTL 过期产生的差错报文。",
+            "q3": "查询是完全免费的吗？",
+            "a3": "是的，我们的工具不收取任何费用且无需繁琐注册。",
+            "q4": "最大跳数是多少？",
+            "a4": "标准配置通常追踪到 30 跳，这足以覆盖绝大多数全球范围内的连接路径。",
+            "q5": "延迟时间显示为三组数字表示什么？",
+            "a5": "它表示我们为每一跳发送了三个探测包，这有助于更客观地判断延迟的波动情况。"
         }
     },
     "user-agent-parser": {
         "meta": {
-            "title": "[Pending Translation] Free User Agent Parser",
-            "description": "[Pending Translation] Identify browser, OS, and device from User Agent string with our free tool.",
-            "h1": "[Pending Translation] User Agent Parser",
-            "subtitle": "[Pending Translation] Identify browser, OS, and device from User Agent string"
+            "title": "免费 User Agent 解析器",
+            "description": "使用我们的免费工具从 User Agent 字符串中识别浏览器、操作系统和设备信息。",
+            "h1": "User Agent 解析器",
+            "subtitle": "从 User Agent 字符串中识别浏览器、操作系统和设备"
         },
         "editor": {
-            "label_input": "[Pending Translation] User Agent String",
-            "ph_input": "[Pending Translation] Mozilla\/5.0...",
-            "btn_parse": "[Pending Translation] Parse",
-            "btn_use_my_ua": "[Pending Translation] Use My User Agent",
-            "label_browser": "[Pending Translation] Browser",
-            "label_os": "[Pending Translation] Operating System",
-            "label_device": "[Pending Translation] Device",
-            "label_raw": "[Pending Translation] Raw Engine info"
+            "label_input": "User Agent 字符串",
+            "ph_input": "例如 Mozilla/5.0...",
+            "btn_parse": "立即解析",
+            "btn_use_my_ua": "使用我的 UA",
+            "label_browser": "浏览器",
+            "label_os": "操作系统",
+            "label_device": "设备型号",
+            "label_raw": "原始引擎信息"
         },
         "content": {
-            "p1": "[Pending Translation] Our free User Agent Parser instantly decodes user agent strings to identify the browser, operating system, device type, and engine version. Useful for developers debugging browser-specific issues or analyzing traffic sources.",
-            "features_title": "[Pending Translation] Features",
+            "p1": "我们的免费 User Agent 解析器可立即解码用户代理字符串，识别浏览器、操作系统、设备类型和引擎版本。这对于开发人员调试浏览器特定问题或分析流量来源非常有用。",
+            "features_title": "功能特点",
             "features": {
                 "instant": {
-                    "title": "[Pending Translation] Instant Parsing",
-                    "desc": "[Pending Translation] Decode user agents in milliseconds"
+                    "title": "即时解析",
+                    "desc": "在毫秒内解码复杂的 UA 字符串"
                 },
                 "detailed": {
-                    "title": "[Pending Translation] Detailed Info",
-                    "desc": "[Pending Translation] Extracts Browser, OS, Device, and Engine"
+                    "title": "详细信息",
+                    "desc": "提取浏览器核心、系统版本、设备品牌等数据"
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detect",
-                    "desc": "[Pending Translation] One-click to parse your own current user agent"
+                    "title": "自动检测",
+                    "desc": "一键获取并解析您当前正在使用的用户代理"
                 },
                 "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] Unlimited uses, no cost"
+                    "title": "100% 免费",
+                    "desc": "无次数限制，完全免费开放使用"
                 }
             },
-            "uses_title": "[Pending Translation] Common Use Cases",
+            "uses_title": "常见使用场景",
             "uses": {
                 "debugging": {
-                    "title": "[Pending Translation] Debugging",
-                    "desc": "[Pending Translation] Identify detailed browser versions for troubleshooting"
+                    "title": "兼容性调试",
+                    "desc": "根据 UA 识别特定浏览器版本以便复现和排查 Bug"
                 },
                 "analytics": {
-                    "title": "[Pending Translation] Analytics",
-                    "desc": "[Pending Translation] Understand what devices and OSs your users are using"
+                    "title": "流量分析",
+                    "desc": "统计访问者使用的设备类型和操作系统比例"
                 },
                 "dev": {
-                    "title": "[Pending Translation] Development",
-                    "desc": "[Pending Translation] Verify user agent strings during testing"
+                    "title": "程序开发",
+                    "desc": "在模拟不同终端环境时验证 UA 伪装是否正确"
                 },
                 "security": {
-                    "title": "[Pending Translation] Security",
-                    "desc": "[Pending Translation] Analyze suspicious user agent strings in logs"
+                    "title": "安全审计",
+                    "desc": "在日志中识别异常的爬虫或伪造的访问者标识"
                 }
             },
-            "how_to_title": "[Pending Translation] How to Use",
+            "how_to_title": "如何使用",
             "how_to": {
                 "step1": {
-                    "title": "[Pending Translation] Enter String",
-                    "desc": "[Pending Translation] Paste a User Agent string or click \"Use My User Agent\""
+                    "title": "输入字符串",
+                    "desc": "粘贴一个 User Agent 字符串或点击“使用我的 UA”"
                 },
                 "step2": {
-                    "title": "[Pending Translation] Parse",
-                    "desc": "[Pending Translation] Click \"Parse\" to decode the string"
+                    "title": "点击解析",
+                    "desc": "点击“立即解析”按钮开始解码过程"
                 },
                 "step3": {
-                    "title": "[Pending Translation] View Results",
-                    "desc": "[Pending Translation] See the broken-down details for Browser, OS, and Device"
+                    "title": "查看结果",
+                    "desc": "获取浏览器、系统及设备硬件的详细拆解报告"
                 }
             },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "常见问题解答",
             "faq": {
-                "q1": "[Pending Translation] What is a User Agent?",
-                "a1": "[Pending Translation] A User Agent is a string of text sent by your web browser to every website you visit, identifying the browser, version, operating system, and device type.",
-                "q2": "[Pending Translation] Is this parser accurate?",
-                "a2": "[Pending Translation] It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.",
-                "q3": "[Pending Translation] Is my data private?",
-                "a3": "[Pending Translation] Yes, parsing happens locally in your browser. We do not store your user agent data."
+                "q1": "什么是 User Agent？",
+                "a1": "User Agent (UA) 是浏览器向服务器发送的一个文本标识符，用于告知服务器自己的名称、版本以及运行的系统环境。",
+                "q2": "这个解析器准确吗？",
+                "a2": "准确。它基于主流的解析库，能识别绝大多数真实世界的 UA，但无法识别完全自定义或伪造的随机字符。",
+                "q3": "我的 UA 信息会被泄露吗？",
+                "a3": "不会。解析逻辑完全在您的浏览器端运行，我们不存储任何解析记录。",
+                "q4": "支持识别手机和平板吗？",
+                "a4": "支持。它可以轻松区分桌面端、移动端（iPhone/Android）以及各种平板设备。",
+                "q5": "什么是原始引擎信息？",
+                "a5": "它指的是浏览器的渲染引擎和内核版本，如 WebKit、Blink 或 Gecko。"
             }
         }
     },
     "what-is-my-ip": {
         "meta": {
-            "title": "[Pending Translation] What is My IP Address? - Check Your IP Location Free",
-            "description": "[Pending Translation] Find out your public IP address instantly. Check your IPv4\/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] What is My IP Address?",
-            "subtitle": "[Pending Translation] Instantly discover your public IP address with detailed ISP information"
+            "title": "我的 IP 地址是什么？- 免费检查您的 IP 位置",
+            "description": "立即查出您的公网 IP 地址。免费查看您的 IPv4/IPv6 地址、ISP、位置和连接详情。对于网络故障排除至关重要。",
+            "h1": "我的 IP 地址是什么？",
+            "subtitle": "立即发现您的公网 IP 地址并获取详细的 ISP 信息"
         },
         "ui": {
-            "loading": "",
-            "your_ip_title": "",
-            "copy_button": "",
-            "timezone": ""
+            "loading": "正在检测...",
+            "your_ip_title": "您的公网 IP 地址",
+            "copy_button": "点击复制",
+            "timezone": "当前时区"
         },
         "results": {
-            "location": "",
-            "isp": "",
-            "country": ""
+            "location": "地理位置",
+            "isp": "服务商 (ISP)",
+            "country": "国家/地区"
         },
         "content": {
-            "main_title": "[Pending Translation] What Is My IP Address - Free IP Lookup Tool",
-            "main_desc": "[Pending Translation] Find your public IP address instantly with our free IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.",
-            "what_is_title": "[Pending Translation] What is My IP Address?",
-            "what_is_desc": "[Pending Translation] Your IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.",
-            "ipv4_vs_ipv6_title": "[Pending Translation] IPv4 vs IPv6 Addresses",
-            "ipv4_title": "[Pending Translation] IPv4 Address",
-            "ipv4_format": "[Pending Translation] <strong>Format:<\/strong> 192.168.1.1 (four numbers 0-255 separated by dots)",
-            "ipv4_total": "[Pending Translation] <strong>Total Addresses:<\/strong> ~4.3 billion addresses",
-            "ipv4_desc": "[Pending Translation] Most common format worldwide, but running out of available addresses due to internet growth",
-            "ipv6_title": "[Pending Translation] IPv6 Address",
-            "ipv6_format": "[Pending Translation] <strong>Format:<\/strong> 2001:0db8:85a3::8a2e:0370:7334",
-            "ipv6_total": "[Pending Translation] <strong>Total Addresses:<\/strong> 340 undecillion addresses",
-            "ipv6_desc": "[Pending Translation] Newer format with virtually unlimited addresses, gradually replacing IPv4",
-            "why_check_title": "[Pending Translation] Why Check Your IP?",
-            "why_check_desc": "[Pending Translation] Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.",
-            "public_vs_private_title": "[Pending Translation] Public vs Private IP Addresses",
-            "public_ip_title": "[Pending Translation] 🌐 Public IP Address",
-            "public_ip_desc": "[Pending Translation] Your unique address on the internet, visible to all websites and services you visit.",
-            "public_ip_example": "[Pending Translation] <strong>Example:<\/strong> 203.0.113.45",
-            "public_ip_note": "[Pending Translation] Assigned by your ISP and used for all internet communication",
-            "private_ip_title": "[Pending Translation] 🏠 Private IP Address",
-            "private_ip_desc": "[Pending Translation] Your device's address on your local network, not visible on the internet.",
-            "private_ip_example": "[Pending Translation] <strong>Example:<\/strong> 192.168.1.100",
-            "private_ip_note": "[Pending Translation] Used for communication within your home or office network",
-            "security_title": "[Pending Translation] IP Address Security & Privacy",
-            "security_desc1": "[Pending Translation] Your IP address reveals your approximate location (city\/region), ISP, and can be used to track your online activity across websites. While it doesn't expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.",
-            "security_desc2": "[Pending Translation] <strong>Privacy Protection:<\/strong> Use a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN's IP instead of yours. Our tool shows exactly what information websites can see about your connection.",
-            "dynamic_vs_static_title": "[Pending Translation] Dynamic vs Static IP Addresses",
-            "dynamic_ip": "[Pending Translation] <strong>Dynamic IP:<\/strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.",
-            "static_ip": "[Pending Translation] <strong>Static IP:<\/strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.",
-            "privacy_tips_title": "[Pending Translation] Privacy & Security Tips",
-            "privacy_tip1": "[Pending Translation] • Never share your IP address publicly on forums or social media",
-            "privacy_tip2": "[Pending Translation] • Use a VPN when connecting to public WiFi networks",
-            "privacy_tip3": "[Pending Translation] • Enable your router's firewall to block unauthorized access",
-            "privacy_tip4": "[Pending Translation] • Regularly check your IP to detect unauthorized VPN disconnections",
-            "privacy_tip5": "[Pending Translation] • Be aware that websites log your IP for security and analytics"
+            "main_title": "我的 IP 地址是什么 - 免费 IP 查询工具",
+            "main_desc": "使用我们的免费工具立即查找您的公网 IP 地址。发现您的 IPv4 或 IPv6 地址、精确的地理位置（城市、省份、国家）、ISP 信息、时区和完整的网络详情。对于网络配置、安全测试、远程访问设置、VPN 验证和了解您的互联网足迹至关重要。",
+            "what_is_title": "什么是我的 IP 地址？",
+            "what_is_desc": "您的 IP 地址是一个唯一的数字标识符，在您的设备连接到互联网时分配。它允许网站和服务与您的设备通信并识别您的概略位置。",
+            "ipv4_vs_ipv6_title": "IPv4 与 IPv6 地址对比",
+            "ipv4_title": "IPv4 地址",
+            "ipv4_format": "<strong>格式：</strong> 192.168.1.1 (由点分隔的四个 0-255 的数字)",
+            "ipv4_total": "<strong>总地址数：</strong> 约 43 亿个地址",
+            "ipv4_desc": "全球最常见的格式，但由于互联网的爆发式增长，可用地址已近枯竭",
+            "ipv6_title": "IPv6 地址",
+            "ipv6_format": "<strong>格式：</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>总地址数：</strong> 3.4 x 10^38 个地址（几乎无限）",
+            "ipv6_desc": "新一代互联网协议，旨在彻底解决地址不足的问题，并提供更好的安全性",
+            "why_check_title": "为什么要检查您的 IP？",
+            "why_check_desc": "了解您的 IP 地址有助于排查网络连接故障、验证 VPN 是否正常工作、检查地理位置是否被正确识别，以及监控第三方网站能获取您的哪些信息。",
+            "public_vs_private_title": "公网 IP 与私有（内网）IP 区别",
+            "public_ip_title": "🌐 公网 IP 地址",
+            "public_ip_desc": "您在广域网上的唯一标识，对您访问的所有网站和服务都是可见的。",
+            "public_ip_example": "<strong>示例：</strong> 203.0.113.45",
+            "public_ip_note": "通常由您的 ISP 分配，是所有外向通信的网关地址",
+            "private_ip_title": "🏠 私有 (内网) IP 地址",
+            "private_ip_desc": "您在家庭或办公室局域网内的分配地址，在互联网上无法直接访问。",
+            "private_ip_example": "<strong>示例：</strong> 192.168.1.100",
+            "private_ip_note": "用于本地设备间的通信，由您的路由器管理分配",
+            "security_title": "IP 地址的安全与隐私",
+            "security_desc1": "IP 地址会映射出您的城市、ISP 信息，并可能被用于广告跟踪。虽然它不像姓名手机号那样敏感，但结合其他行为数据可以勾勒出用户的画像。网站利用 IP 来实施流量控制和地区内容限制。",
+            "security_desc2": "<strong>如何保护隐私：</strong> 使用高匿名 VPN 或代理可以掩盖真实 IP，显示代理服务器的地址。本工具可以帮助您验证隐私保护措施是否生效。",
+            "dynamic_vs_static_title": "动态 IP 与静态 IP",
+            "dynamic_ip": "<strong>动态 IP：</strong> 每次拨号或重启路由后都可能变化。绝大多数家庭宽带用户都使用这种方式，成本低且对一般上网无影响。",
+            "static_ip": "<strong>静态 IP：</strong> 固定不变。主要用于商业托管、远程办公网关或需要反向解析的服务。通常包月费用更高。",
+            "privacy_tips_title": "隐私安全贴士",
+            "privacy_tip1": "• 避免在公共论坛泄露敏感的公网 IP 信息",
+            "privacy_tip2": "• 连接不信任的公共 WiFi 时务必开启加密连接",
+            "privacy_tip3": "• 确保路由器防火墙处于开启状态",
+            "privacy_tip4": "• 定期检测 IP 以防 VPN 意外断开导致的真实地址暴露",
+            "privacy_tip5": "• 请知悉：合法的网络监管要求 ISP 必须记录并留存 IP 日志"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "常见问题解答",
+            "q1": "关闭路由器能更换 IP 吗？",
+            "a1": "对于动态 IP 用户，重启路由器通常可以获取一个新的 IP 地址。",
+            "q2": "网站可以看到我的真实家庭住址吗？",
+            "a2": "普通查询只能定位到城市或街区级别，只有拥有执法权限的机构配合 ISP 才能查询到确切的物理地址。",
+            "q3": "VPN 真的能隐藏我的 IP 吗？",
+            "a3": "是的，它通过加密隧道将流量路由到中转节点，网站只能识别到中转节点的 IP。",
+            "q4": "IPv4 和 IPv6 会同时存在吗？",
+            "a4": "是的，现代网络通常采用“双栈”模式，您可以同时拥有这两类地址。",
+            "q5": "查询是免费的吗？",
+            "a5": "是的，本工具提供永久免费的在线 IP 检测服务。"
         }
     },
     "what-is-my-isp": {
         "meta": {
-            "title": "[Pending Translation] What is My ISP? - Check Internet Service Provider Free",
-            "description": "[Pending Translation] Find out your Internet Service Provider (ISP) instantly. Check ISP name, organization, ASN, and IP address information for free.",
-            "h1": "[Pending Translation] What is My ISP?",
-            "subtitle": "[Pending Translation] Identify your Internet Service Provider with connection details"
+            "title": "我的 ISP 是什么？- 免费检查互联网服务提供商",
+            "description": "立即查出您的互联网服务提供商 (ISP)。免费查看 ISP 名称、组织、ASN 和 IP 地址信息。",
+            "h1": "我的 ISP 是什么？",
+            "subtitle": "识别您的互联网服务提供商并获取连接详情"
         },
         "content": {
-            "loading": "[Pending Translation] Loading ISP information...",
-            "your_isp_title": "[Pending Translation] Your Internet Service Provider",
-            "network_label": "[Pending Translation] Network",
-            "location_label": "[Pending Translation] Location",
-            "main_title": "[Pending Translation] What Is My ISP - Internet Service Provider Lookup Tool",
-            "main_desc": "[Pending Translation] Instantly identify your Internet Service Provider (ISP), organization name, network details, and connection information. Our free ISP lookup tool reveals your ISP name, ASN (Autonomous System Number), IP address, location, and network infrastructure. Perfect for verifying VPN connections, troubleshooting network issues, confirming business internet lines, and understanding your network routing.",
-            "info_title": "[Pending Translation] What Information Can You Find?",
-            "info1": "[Pending Translation] <strong>ISP Name:<\/strong> The company providing your internet connection",
-            "info2": "[Pending Translation] <strong>Organization:<\/strong> The organization or entity managing your network connection",
-            "info3": "[Pending Translation] <strong>ASN:<\/strong> Unique network identifier for routing and peering",
-            "info4": "[Pending Translation] <strong>Location:<\/strong> City, region, and country associated with your connection",
-            "info5": "[Pending Translation] <strong>Network Details:<\/strong> IP range, subnet information, and network infrastructure data",
-            "why_use_title": "[Pending Translation] Why Use This Tool?",
-            "why_use1": "[Pending Translation] Verify you're connected through the correct internet provider",
-            "why_use2": "[Pending Translation] Troubleshoot network connectivity and performance issues",
-            "why_use3": "[Pending Translation] Check if you're using a VPN or proxy service correctly",
-            "why_use4": "[Pending Translation] Identify your network for security and privacy purposes",
-            "why_use5": "[Pending Translation] Verify ISP claims about service coverage and infrastructure",
-            "why_use6": "[Pending Translation] Research network routing and peering relationships",
-            "why_use7": "[Pending Translation] Confirm business internet connections and dedicated lines",
-            "why_use8": "[Pending Translation] Detect unauthorized network access or connection hijacking",
-            "asn_title": "[Pending Translation] Understanding ASN (Autonomous System Number)",
-            "asn_desc": "[Pending Translation] An Autonomous System Number (ASN) is a globally unique identifier assigned to a network or group of networks under a single administrative control. ISPs, large organizations, and content delivery networks each have their own ASN. This number is used in BGP (Border Gateway Protocol) routing to determine how internet traffic flows between different networks. Knowing your ASN helps identify your network provider and understand routing paths.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_case1_title": "[Pending Translation] 🔧 Network Troubleshooting",
-            "use_case1_desc": "[Pending Translation] Identify ISP-related issues, verify routing paths, and diagnose connection problems",
-            "use_case2_title": "[Pending Translation] 🔒 VPN Verification",
-            "use_case2_desc": "[Pending Translation] Confirm your VPN is working by checking if ISP changes when connected",
-            "use_case3_title": "[Pending Translation] 🛡️ Security Audits",
-            "use_case3_desc": "[Pending Translation] Verify connection authenticity and detect unauthorized network access",
-            "use_case4_title": "[Pending Translation] 💼 Business Verification",
-            "use_case4_desc": "[Pending Translation] Confirm dedicated business lines and enterprise internet connections",
-            "isp_types_title": "[Pending Translation] Types of ISPs",
-            "isp_type1": "[Pending Translation] <strong>DSL ISPs:<\/strong> Internet over telephone lines (ADSL, VDSL)",
-            "isp_type2": "[Pending Translation] <strong>Cable ISPs:<\/strong> High-speed internet via coaxial cable infrastructure",
-            "isp_type3": "[Pending Translation] <strong>Fiber Optic ISPs:<\/strong> Ultra-fast connections using fiber optic cables",
-            "isp_type4": "[Pending Translation] <strong>Wireless\/Mobile ISPs:<\/strong> 4G\/5G cellular internet connections",
-            "isp_type5": "[Pending Translation] <strong>Satellite ISPs:<\/strong> Internet via satellite for remote areas",
-            "isp_type6": "[Pending Translation] <strong>Business ISPs:<\/strong> Dedicated enterprise-grade connections with SLAs",
-            "privacy_note_title": "[Pending Translation] Privacy Note",
-            "privacy_note_desc": "[Pending Translation] Your ISP can see all unencrypted internet traffic and the websites you visit (but not HTTPS content). They may log connection data, browsing history, and DNS queries. Use a VPN to encrypt your traffic and prevent ISP monitoring. Our tool only displays publicly available information that websites can already see."
+            "loading": "正在加载 ISP 信息...",
+            "your_isp_title": "您的互联网服务提供商",
+            "network_label": "网络架构",
+            "location_label": "归属地",
+            "main_title": "我的 ISP 是什么 - 互联网服务提供商查询工具",
+            "main_desc": "立即识别您的互联网服务提供商 (ISP)、组织名称、网络详情和连接信息。我们的免费 ISP 查询工具会显示您的 ISP 名称、ASN（自治系统编号）、IP 地址、位置和网络基础设施。非常适合验证 VPN 连接、排查网络故障、确认企业互联网线路以及理解您的全球网络路由路径。",
+            "info_title": "您可以获取哪些信息？",
+            "info1": "<strong>ISP 名称：</strong> 为您提供上网服务的商业公司名称",
+            "info2": "<strong>运营组织：</strong> 管理您当前 IP 块的实际组织实体",
+            "info3": "<strong>ASN：</strong> 全球唯一的自治系统编号，用于 BGP 路由协议",
+            "info4": "<strong>地理位置：</strong> 与您当前连接关联的城市、省份级物理区域",
+            "info5": "<strong>网络详情：</strong> 包括 IP 广播段、底层配套设施等数据",
+            "why_use_title": "为什么要使用此工具？",
+            "why_use1": "确认您当前是否通过预期的宽带提供商进行连接",
+            "why_use2": "排查网络拥堵是因为国际出口还是本地 ISP 故障",
+            "why_use3": "检测您的 VPN 是否发生了漏传（DNS 泄漏或 IP 暴露）",
+            "why_use4": "从安全角度识别您在互联网上的“网络面孔”",
+            "why_use5": "验证 ISP 宣称的出口质量与实际解析是否相符",
+            "why_use6": "作为网络管理员研究跨网对等（Peering）关系",
+            "why_use7": "确认您使用的是否为真正的精品 CN2/商务专线",
+            "why_use8": "识别是否存在非法的中间件劫持或透明代理",
+            "asn_title": "理解什么是 ASN",
+            "asn_desc": "自治系统编号 (ASN) 是分配给由单一管理机构控制的一组 IP 网络的唯一 ID。ISP、大型互联网公司和 CDN 服务商都有自己的 ASN。它是互联网底层路由协议（BGP）的核心，决定了数据包如何在不同国家和运营商之间跳转。了解您的 ASN 有助于精准定位网络上游供应商。",
+            "use_cases_title": "典型应用场景",
+            "use_case1_title": "🔧 线路故障排查",
+            "use_case1_desc": "识别 ISP 的骨干网波动，验证绕路问题",
+            "use_case2_title": "🔒 隐私身份验证",
+            "use_case2_desc": "通过 ISP 信息判断当前代理是否真正掩盖了原始宽带属性",
+            "use_case3_title": "🛡️ 安全策略制定",
+            "use_case3_desc": "根据 ISP 属性在服务器端配置差异化的访问策略",
+            "use_case4_title": "💼 企业级链路审计",
+            "use_case4_desc": "确认商业合同约定的独享带宽是否由指定的运营商提供",
+            "isp_types_title": "常见的 ISP 类型",
+            "isp_type1": "<strong>DSL/光纤宽带：</strong> 即常见的入户宽带 (FTTH/ADSL)",
+            "isp_type2": "<strong>有线电视宽带：</strong> 通过同轴电缆提供的互联网服务",
+            "isp_type3": "<strong>移动蜂窝网络：</strong> 典型的 4G/5G 数据流量连接",
+            "isp_type4": "<strong>卫星互联网：</strong> 针对远洋或偏远地区的星链类服务",
+            "isp_type5": "<strong>公有云/数据中心：</strong> 运行在云服务器上的网络出口",
+            "isp_type6": "<strong>政企专用线路：</strong> 带 SLA 高稳定性保证的专用光纤",
+            "privacy_note_title": "隐私性说明",
+            "privacy_note_desc": "请注意，您的 ISP 具备在底层审查未加密流量的能力。它们通常会记录您的拨号日志和 DNS 查询记录。本工具仅提取您在访问网站时必然流露出的公开参数，旨在帮助您了解自身的联网状态。"
         },
         "results": {
-            "ip_address": "",
-            "asn": ""
+            "ip_address": "公网 IP",
+            "asn": "ASN 编号"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "常见问题解答",
+            "q1": "ASN 能告诉我们什么？",
+            "a1": "它能明确告诉我们数据包是受哪家运营商管理的，有助于判断网络延迟是否源于特定服务商。",
+            "q2": "我可以用它来测速吗？",
+            "a2": "不可以，本工具仅提供身份识别。如需测速请使用我们的“网速测试”工具。",
+            "q3": "查询到的 ISP 和我缴费的公司不一样？",
+            "a3": "这很常见。一些二级宽带商会租用一级运营商（如电信、联通）的带宽及 IP 资源进行运营。",
+            "q4": "ISP 可以看到我访问的网站吗？",
+            "a4": "可以看到域名，但对于 HTTPS 加密后的具体网页内容无法直接看到。",
+            "q5": "它是实时更新的吗？",
+            "a5": "是的，基于最新的全球自治系统数据库。"
         },
         "js": {
-            "error_loading": ""
+            "error_loading": "数据加载失败"
         }
     },
     "whois-lookup": {
         "meta": {
-            "title": "[Pending Translation] WHOIS Lookup Tool - Domain Registration Information Free",
-            "description": "[Pending Translation] Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.",
-            "h1": "[Pending Translation] WHOIS Lookup Tool",
-            "subtitle": "[Pending Translation] Query WHOIS database for domain registration & ownership details"
+            "title": "WHOIS 查询工具 - 免费查看域名注册详细信息",
+            "description": "免费的在线 WHOIS 查询工具，可检查域名的注册信息、所有者、注册商及到期日期。支持多种后缀域名即时查询。",
+            "h1": "WHOIS 查询工具",
+            "subtitle": "通过 WHOIS 数据库查询获取域名所有权、状态及注册详情"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup WHOIS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "domain_label": "域名名称",
+            "domain_placeholder": "例如 example.com",
+            "button": "立即查询",
+            "button_loading": "正在同步 WHOIS 数据..."
         },
         "content": {
-            "form_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "what_is_title": "[Pending Translation] What is WHOIS Lookup?",
-            "what_is_desc": "[Pending Translation] WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.",
-            "why_use_title": "[Pending Translation] Why Use WHOIS Lookup?",
-            "why_use_desc": "[Pending Translation] WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors' domains.",
-            "key_info_title": "[Pending Translation] Key Information Provided",
-            "key_info1": "[Pending Translation] <strong>Registrant Information:<\/strong> Domain owner details (may be privacy protected)",
-            "key_info2": "[Pending Translation] <strong>Registration Dates:<\/strong> When domain was registered and last updated",
-            "key_info3": "[Pending Translation] <strong>Expiration Date:<\/strong> When domain registration expires",
-            "key_info4": "[Pending Translation] <strong>Registrar:<\/strong> Company managing the domain registration",
-            "key_info5": "[Pending Translation] <strong>Name Servers:<\/strong> DNS servers hosting the domain",
-            "key_info6": "[Pending Translation] <strong>Domain Status:<\/strong> Current status codes and locks",
-            "how_to_title": "[Pending Translation] How to Use",
-            "how_to1": "[Pending Translation] Enter the domain name you want to lookup",
-            "how_to2": "[Pending Translation] Click \"Lookup WHOIS\" button",
-            "how_to3": "[Pending Translation] Review comprehensive registration information",
-            "how_to4": "[Pending Translation] Use the data for your research or verification needs",
-            "privacy_title": "[Pending Translation] Privacy and WHOIS",
-            "privacy_desc": "[Pending Translation] Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws."
+            "form_hint": "请输入完整域名，无需带 http:// 等前缀",
+            "what_is_title": "什么是 WHOIS 查询？",
+            "what_is_desc": "WHOIS 是一种用于查询域名注册信息的底层协议。它相当于互联网域名的“身份证查询系统”，能够揭示某个域名的注册时间、续费到期日、当前状态代码以及管理该域名的技术机构名称。",
+            "why_use_title": "为什么要使用 WHOIS 查询？",
+            "why_use_desc": "它是验证域名真实性的基石。无论是调查钓鱼网站、购买抢注域名、核查竞争对手背景，还是排除由于域名过期导致的网络故障，WHOIS 查询都能提供最权威的第一手资料。",
+            "key_info_title": "在此工具中您可以查到：",
+            "key_info1": "<strong>注册商 (Registrar)：</strong> 负责代理注册该域名的商业机构",
+            "key_info2": "<strong>注册信息：</strong> 该域名的首次注册日期以及最近一次的更新记录",
+            "key_info3": "<strong>过期日期 (Expiry)：</strong> 域名注册到期的时间，是判断该域名能否被抢注的关键",
+            "key_info4": "<strong>域名状态：</strong> 包括 ClientHold (锁定) 或 OK (正常) 等状态码",
+            "key_info5": "<strong>DNS 服务器：</strong> 解析该域名所指向的核心名称服务器信息",
+            "key_info6": "<strong>联系人信息：</strong> 如果未开启隐私保护，可查看管理员的联系方式",
+            "how_to_title": "使用指南",
+            "how_to1": "在输入框中输入您感兴趣的顶级域名（如 .com, .cn, .net 等）",
+            "how_to2": "点击“立即查询”按钮发送协议请求",
+            "how_to3": "本工具将直接从对应的 NIC 数据库抓取原始 WHOIS 文本并呈现",
+            "how_to4": "根据反馈的 Expiring Date 规划您的域名管理或收购计划",
+            "privacy_title": "隐私保护与 GDPR 的影响",
+            "privacy_desc": "随着 GDPR 隐私法案的实施，越来越多的域名注册人信息被强制隐去，取而代之的是“Redacted for Privacy”。这保护了个人注册者的隐私免受垃圾邮件骚扰，但也提升了联系具体域名持有者的难度。如果需要联系，通常需要通过注册商提供的统一隐私联系表单进行。"
         },
         "results": {
-            "title": ""
+            "title": "WHOIS 数据解析结果"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": ""
+            "title": "常见问题解答",
+            "q1": "为什么我查不到具体的注册人姓名？",
+            "a1": "这通常是因为对方开启了“隐私保护”服务，或者是受到 GDPR 法案保护，注册信息被系统隐去了。",
+            "q2": "信息显示域名已过期但网站还能打开？",
+            "a2": "这可能是因为域名进入了“续费宽带期”或“赎回期”，或者当前查询的是缓存数据。",
+            "q3": "支持查询中文域名吗？",
+            "a3": "支持。对于转码后的 Punycode (如 xn--...) 格式支持度更佳。",
+            "q4": "查询不到信息代表什么？",
+            "a4": "可能该域名尚未被注册，或者该域名后缀属于不公开 WHOIS 的特殊类型。",
+            "q5": "它是免费且无限次查询的吗？",
+            "a5": "是的，我们的工具对全体用户免费开放。"
         }
     }
 }

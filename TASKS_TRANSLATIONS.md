@@ -9,10 +9,10 @@
 - [x] French (fr) - **100% Completed**
 - [x] Portuguese (pt) - **100% Completed**
 - [x] Russian (ru) - **100% Completed**
-- [ ] Chinese (zh) - Pending
-- [ ] Japanese (ja) - Pending
+- [ ] Chinese (zh) - Pending (Reset from English keys)
+- [ ] Japanese (ja) - Pending (Reset from English keys)
 - [ ] Korean (ko) - Pending
-- [ ] Turkish (tr) - Pending
+- [x] Turkish (tr) - **100% Completed**
 - [x] Dutch (nl) - **100% Completed**
 - [x] Polish (pl) - **100% Completed**
 - [ ] Swedish (sv) - In Progress
