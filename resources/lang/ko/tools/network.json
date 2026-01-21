@@ -1,735 +1,735 @@
 {
     "dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] DNS Lookup Tool - Check DNS Records Online Free",
-            "description": "[Pending Translation] Free DNS lookup tool to check DNS records for any domain. View A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.",
-            "h1": "[Pending Translation] DNS Lookup Tool",
-            "subtitle": "[Pending Translation] Query DNS records to find nameservers, MX, A, CNAME & TXT records instantly"
+            "title": "DNS 조회 도구 - 무료 온라인 DNS 레코드 확인",
+            "description": "모든 도메인의 DNS 레코드를 확인하는 무료 도구입니다. A, AAAA, MX, NS, TXT, CNAME 레코드를 즉시 조회하세요. 이메일 및 도메인 설정 문제 해결에 필수적입니다.",
+            "h1": "DNS 조회 도구",
+            "subtitle": "네임서버, MX, A, CNAME 및 TXT 레코드를 즉시 쿼리하여 DNS 정보를 파악하세요"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup DNS"
+            "domain_label": "도메인 이름",
+            "domain_placeholder": "example.com",
+            "button": "DNS 조회하기"
         },
         "results": {
-            "title": ""
+            "title": "조회 결과"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is DNS Lookup?",
-            "what_is_desc": "[Pending Translation] DNS Lookup is a tool that queries Domain Name System servers to retrieve DNS records for a domain. DNS records contain important information about how a domain is configured, including mail servers (MX records), nameservers (NS records), IP addresses (A\/AAAA records), and text records (TXT records) used for verification and security.",
-            "why_use_title": "[Pending Translation] Why Use DNS Lookup?",
-            "why_use_desc": "[Pending Translation] DNS Lookup is essential for troubleshooting email delivery issues, verifying domain configuration, checking nameserver settings, validating SPF and DKIM records, and understanding how a domain is set up. It's used by system administrators, web developers, and IT professionals daily.",
-            "record_types_title": "[Pending Translation] DNS Record Types",
-            "a_record": "[Pending Translation] <strong>A Record:<\/strong> Maps domain to IPv4 address",
-            "aaaa_record": "[Pending Translation] <strong>AAAA Record:<\/strong> Maps domain to IPv6 address",
-            "mx_record": "[Pending Translation] <strong>MX Record:<\/strong> Mail server information",
-            "ns_record": "[Pending Translation] <strong>NS Record:<\/strong> Nameserver information",
-            "txt_record": "[Pending Translation] <strong>TXT Record:<\/strong> Text records for verification",
-            "cname_record": "[Pending Translation] <strong>CNAME Record:<\/strong> Canonical name alias"
+            "what_is_title": "DNS 조회(DNS Lookup)란 무엇인가요?",
+            "what_is_desc": "DNS 조회는 도메인 이름 시스템(Domain Name System) 서버에 질의하여 특정 도메인의 DNS 레코드를 가져오는 도구입니다. DNS 레코드에는 메일 서버(MX), 네임서버(NS), IP 주소(A/AAAA), 보안 및 검증용 텍스트 레코드(TXT) 등 도메인 구성에 관한 중요한 정보가 담겨 있습니다.",
+            "why_use_title": "DNS 조회가 필요한 이유",
+            "why_use_desc": "DNS 조구는 이메일 수신 문제 해결, 도메인 설정 확인, 네임서버 변경 사항 체크, SPF 및 DKIM 레코드 검증 등 서비스 구성 상태를 파악하는 데 필수적입니다. 시스템 관리자, 웹 개발자, IT 전문가들이 매일 네트워크 상태를 진단하기 위해 사용합니다.",
+            "record_types_title": "주요 DNS 레코드 유형",
+            "a_record": "<strong>A 레코드:</strong> 도메인을 IPv4 주소에 매핑",
+            "aaaa_record": "<strong>AAAA 레코드:</strong> 도메인을 IPv6 주소에 매핑",
+            "mx_record": "<strong>MX 레코드:</strong> 메일 서버 전달 정보",
+            "ns_record": "<strong>NS 레코드:</strong> 도메인 관리 네임서버 정보",
+            "txt_record": "<strong>TXT 레코드:</strong> 검증 및 보안용 텍스트 정보",
+            "cname_record": "<strong>CNAME 레코드:</strong> 도메인 별칭(애칭) 설정"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "자주 묻는 질문",
+            "q1": "DNS 레코드를 변경했는데 왜 조회가 안 되나요?",
+            "a1": "DNS 변경 사항은 전파(Propagation)되는 데 시간이 걸립니다. 보통 몇 분에서 최대 48시간까지 소요될 수 있습니다.",
+            "q2": "MX 레코드는 무엇을 의미하나요?",
+            "a2": "Mail Exchanger의 약자로, 해당 도메인으로 오는 이메일을 처리할 서버를 지정합니다. 이메일 전송에 결정적인 역할을 합니다.",
+            "q3": "TXT 레코드는 어디에 쓰이나요?",
+            "a3": "주로 구글 서치 콘솔 소유권 확인이나 스팸 방지를 위한 SPF, DKIM 설정 등 텍스트 기반 인증 정보를 담는 데 사용됩니다.",
+            "q4": "이 도구로 다른 나라의 DNS 결과도 볼 수 있나요?",
+            "a4": "네, 본 도구는 글로벌 DNS 서버를 대상으로 쿼리하므로 전 세계 어디서든 도메인의 공통된 설정값을 확인할 수 있습니다.",
+            "q5": "DNS 조회가 보안과 관련이 있나요?",
+            "a5": "매우 그렇습니다. 비정상적인 DNS 레코드는 하이재킹이나 피싱의 징후일 수 있으므로 정기적인 점검이 중요합니다."
         },
         "js": {
-            "looking_up": "",
-            "records_label": "",
-            "success": "",
-            "error": "",
-            "lookup_dns": ""
+            "looking_up": "DNS 조회 중...",
+            "records_label": "레코드 유형",
+            "success": "성공적으로 조회되었습니다",
+            "error": "DNS 정보를 가져오는 데 실패했습니다",
+            "lookup_dns": "조회 시작"
         }
     },
     "domain-to-ip": {
         "meta": {
-            "title": "[Pending Translation] Domain to IP Converter - Find IP Address of Any Domain Free",
-            "description": "[Pending Translation] Free domain to IP lookup tool. Instantly convert any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.",
-            "h1": "[Pending Translation] Domain to IP Converter",
-            "subtitle": "[Pending Translation] Resolve domain names to IP addresses with detailed DNS information"
+            "title": "도메인 IP 변환기 - 모든 웹사이트의 IP 주소 찾기 | 무료 도구",
+            "description": "도메인 이름을 IP 주소로 즉시 변환하세요. 네트워크 문제 해결, 서버 설정 및 DNS 검증을 위한 필수적인 무료 조회 도구입니다.",
+            "h1": "도메인 IP 변환기",
+            "subtitle": "도메인 이름을 IP 주소로 분석하고 상세 DNS 정보를 확인하세요"
         },
         "form": {
-            "domain_label": "[Pending Translation] Enter Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "domain_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "button": "[Pending Translation] Lookup IP Address"
+            "domain_label": "도메인 이름 입력",
+            "domain_placeholder": "example.com",
+            "domain_hint": "http:// 나 https:// 를 제외하고 입력하세요",
+            "button": "IP 주소 조회하기"
         },
         "results": {
-            "title": "",
-            "domain_label": "",
-            "ip_label": ""
+            "title": "변환 결과",
+            "domain_label": "도메인:",
+            "ip_label": "IP 주소:"
         },
         "content": {
-            "main_title": "[Pending Translation] Domain to IP Converter",
-            "main_subtitle": "[Pending Translation] Convert any domain name to its IP address instantly",
-            "intro": "[Pending Translation] Our free Domain to IP tool instantly converts any domain name to its corresponding IP address using DNS lookup. Essential for network administrators, web developers, security professionals, and anyone needing to identify the server behind a domain. Get accurate IP addresses for troubleshooting, server verification, and network configuration.",
-            "feature1_title": "[Pending Translation] Instant Lookup",
-            "feature1_desc": "[Pending Translation] Get IP addresses immediately without delays",
-            "feature2_title": "[Pending Translation] Accurate Results",
-            "feature2_desc": "[Pending Translation] Real-time DNS queries for current IP addresses",
-            "feature3_title": "[Pending Translation] 100% Free",
-            "feature3_desc": "[Pending Translation] Unlimited lookups with no registration required",
-            "what_is_title": "[Pending Translation] 🌐 What is Domain to IP Lookup?",
-            "what_is_desc": "[Pending Translation] Domain to IP lookup is the process of converting a human-readable domain name (like example.com) into its corresponding numerical IP address (like 93.184.216.34). This conversion happens through DNS (Domain Name System) servers, which act as the internet's phone book. Every website has an IP address, but domain names make them easier to remember and access.",
-            "use_cases_title": "[Pending Translation] 🎯 Common Use Cases",
-            "uc1_title": "[Pending Translation] Server Configuration",
-            "uc1_desc": "[Pending Translation] Configure firewalls, whitelists, and server settings with IP addresses",
-            "uc2_title": "[Pending Translation] Security Analysis",
-            "uc2_desc": "[Pending Translation] Verify server locations and identify hosting providers",
-            "uc3_title": "[Pending Translation] Troubleshooting",
-            "uc3_desc": "[Pending Translation] Diagnose DNS issues and verify domain configurations",
-            "uc4_title": "[Pending Translation] Network Monitoring",
-            "uc4_desc": "[Pending Translation] Track server changes and monitor infrastructure",
-            "uc5_title": "[Pending Translation] Geolocation",
-            "uc5_desc": "[Pending Translation] Determine server geographic location from IP address",
-            "uc6_title": "[Pending Translation] API Integration",
-            "uc6_desc": "[Pending Translation] Use IP addresses for direct API connections",
-            "pro_tips_title": "[Pending Translation] 💡 Pro Tips: Using Domain to IP Lookup",
-            "tip1": "[Pending Translation] ✅ Use IP addresses for direct server connections when DNS is slow",
-            "tip2": "[Pending Translation] ✅ Verify CDN configurations by checking multiple domain resolutions",
-            "tip3": "[Pending Translation] ✅ Whitelist server IPs in firewalls for secure access",
-            "tip4": "[Pending Translation] ✅ Compare IP addresses before and after DNS changes",
-            "tip5": "[Pending Translation] ✅ Identify shared hosting by checking if multiple domains share IPs"
+            "main_title": "정밀 도메인 IP 변환기",
+            "main_subtitle": "모든 도메인의 서버 IP 주소를 실시간으로 파악하세요",
+            "intro": "당사의 무료 도구는 DNS 조회를 통해 도메인 이름을 해당 IP 주소로 즉시 변환해 줍니다. 시스템 관리자, 웹 개발자, 보안 전문가들이 서버의 실제 위치를 파악하거나 네트워크 구성을 검증할 때 유용하게 사용할 수 있습니다. 정확하고 최신화된 IP 정보를 통해 효율적인 인프라 관리를 시작해 보세요.",
+            "feature1_title": "즉각적인 조회",
+            "feature1_desc": "지연 없이 즉시 서버의 IP 주소를 결과로 보여줍니다.",
+            "feature2_title": "정확한 실시간 데이터",
+            "feature2_desc": "실시간 DNS 쿼리를 통해 현재 작동 중인 가장 정확한 IP 주소를 제공합니다.",
+            "feature3_title": "100% 무료 사용",
+            "feature3_desc": "가입이나 요금 지불 없이 무제한으로 조회가 가능합니다.",
+            "what_is_title": "🌐 도메인 IP 조회란?",
+            "what_is_desc": "도메인 IP 조회는 사람이 읽기 쉬운 도메인 이름(예: google.com)을 컴퓨터가 이해할 수 있는 숫자로 된 IP 주소(예: 142.250.206.238)로 바꾸는 과정입니다. 이 작업은 인터넷의 전화번호부 역할을 하는 DNS(Domain Name System) 서버를 통해 이루어집니다.",
+            "use_cases_title": "🎯 주요 활용 사례",
+            "uc1_title": "서버 설정 및 방화벽",
+            "uc1_desc": "IP 주소를 사용하여 방화벽 화이트리스트를 설정하거나 서버 연결 정보를 구성할 때",
+            "uc2_title": "보안 분석",
+            "uc2_desc": "서버의 실제 위치를 확인하고 호스팅 제공업체를 식별하여 위협을 분석할 때",
+            "uc3_title": "네트워크 문제 해결",
+            "uc3_desc": "DNS가 정상적으로 작동하는지 확인하고 도메인 연결 설정 오류를 진단할 때",
+            "uc4_title": "인프라 모니터링",
+            "uc4_desc": "서버 이전이나 IP 변경 사항이 정상적으로 반영되었는지 추적할 때",
+            "uc5_title": "지리적 위치 파악",
+            "uc5_desc": "IP 주소를 기반으로 해당 서버가 어느 국가에 위치해 있는지 알아낼 때",
+            "uc6_title": "직접 API 연결",
+            "uc6_desc": "DNS 지연을 피하기 위해 직접 IP 주소를 통해 서버나 API에 연결해야 할 때",
+            "pro_tips_title": "💡 전문가용 팁: 도메인 IP 조회 활용법",
+            "tip1": "✅ DNS 속도가 느릴 경우 IP 주소로 직접 접속하여 대기 시간을 줄일 수 있습니다.",
+            "tip2": "✅ CDN 설정 시 여러 도메인이 동일한 IP 그룹으로 로드밸런싱되는지 확인해 보세요.",
+            "tip3": "✅ 보안 접속을 위해 방화벽 설정 시 도메인 대신 IP 주소를 등록하는 것이 안전합니다.",
+            "tip4": "✅ DNS 설정 변경 전후의 IP 주소를 비교하여 전파 상태를 확인하세요.",
+            "tip5": "✅ 하나의 IP 주소에 여러 도메인이 연결되어 있다면 공유 호스팅 환경임을 알 수 있습니다."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "자주 묻는 질문",
+            "q1": "하나의 도메인이 여러 IP를 가질 수 있나요?",
+            "a1": "네, 대규모 사이트는 부하 분산을 위해 하나의 도메인에 여러 개의 IP 주소를 연결(Round Robin)하여 운영하곤 합니다.",
+            "q2": "고정 IP와 유동 IP의 차이는 무엇인가요?",
+            "a2": "고정 IP는 서버처럼 항상 동일한 주소를 유지하는 것이고, 유동 IP는 접속할 때마다 또는 주기적으로 주소가 바뀌는 것을 말합니다.",
+            "q3": "사이트 이전 후에도 예전 IP가 보입니다.",
+            "a3": "DNS 캐시 때문일 가능성이 큽니다. DNS 서버의 TTL(Time to Live) 값이 지나야 전 세계의 인터넷 환경에 새 주소가 반영됩니다.",
+            "q4": "IP 주소만 알면 서버 위치를 정확히 알 수 있나요?",
+            "a4": "국가나 도시 수준의 위치는 대략적으로 파악할 수 있지만, 정확한 지번이나 건물 위치까지는 알 수 없습니다.",
+            "q5": "IP 주소가 숨겨진 사이트도 조회 가능한가요?",
+            "a5": "Cloudflare와 같은 프록시 서비스를 사용하는 경우, 실제 서버 IP 대신 해당 서비스 업체의 IP 주소가 나타나게 됩니다."
         },
         "js": {
-            "looking_up": "",
-            "error_failed": ""
+            "looking_up": "IP 조회 중...",
+            "error_failed": "해당 도메인의 IP 정보를 찾을 수 없습니다"
         }
     },
     "internet-speed-test": {
         "meta": {
-            "title": "[Pending Translation] Free Internet Speed Test - Check Your Connection Speed",
-            "description": "[Pending Translation] Test your internet speed for free. Check download speed, upload speed, and ping instantly.",
-            "h1": "[Pending Translation] Internet Speed Test",
-            "subtitle": "[Pending Translation] Test your internet connection speed instantly"
+            "title": "무료 인터넷 속도 측정 - 내 연결 속도 확인하기",
+            "description": "현재 인터넷 속도를 무료로 측정하세요. 다운로드, 업로드 속도 및 핑(Ping) 지연율을 즉시 확인하여 네트워크 상태를 점검할 수 있습니다.",
+            "h1": "인터넷 속도 측정",
+            "subtitle": "클릭 한 번으로 내 인터넷 연결 속도를 즉시 테스트하세요"
         },
         "editor": {
-            "btn_start": "[Pending Translation] Start Speed Test",
-            "status_init": "[Pending Translation] Initializing test...",
-            "label_download": "[Pending Translation] Download Speed",
-            "label_upload": "[Pending Translation] Upload Speed",
-            "label_ping": "[Pending Translation] Ping",
-            "label_quality": "[Pending Translation] Connection Quality",
-            "btn_retry": "[Pending Translation] Test Again",
-            "status_ping": "[Pending Translation] Testing ping...",
-            "status_download": "[Pending Translation] Testing download speed...",
-            "status_upload": "[Pending Translation] Testing upload speed...",
-            "quality_val_excellent": "[Pending Translation] Excellent",
-            "quality_val_very_good": "[Pending Translation] Very Good",
-            "quality_val_good": "[Pending Translation] Good",
-            "quality_val_fair": "[Pending Translation] Fair",
-            "quality_val_poor": "[Pending Translation] Poor"
+            "btn_start": "속도 측정 시작",
+            "status_init": "테스트 초기화 중...",
+            "label_download": "다운로드 속도",
+            "label_upload": "업로드 속도",
+            "label_ping": "지연 시간(Ping)",
+            "label_quality": "연결 품질",
+            "btn_retry": "다시 테스트하기",
+            "status_ping": "지연 시간 측정 중...",
+            "status_download": "다운로드 속도 측정 중...",
+            "status_upload": "업로드 속도 측정 중...",
+            "quality_val_excellent": "최상 (Excellent)",
+            "quality_val_very_good": "매우 좋음",
+            "quality_val_good": "좋음",
+            "quality_val_fair": "보통",
+            "quality_val_poor": "나쁨"
         },
         "content": {
-            "p1": "[Pending Translation] Test your internet connection speed with our free, accurate speed test tool. Measure your download speed, upload speed, and ping latency in seconds. Perfect for troubleshooting slow connections, verifying ISP speeds, or checking if you're getting what you pay for.",
-            "metrics_title": "[Pending Translation] Understanding Speed Test Metrics",
-            "req_title": "[Pending Translation] Requirements for Accurate Testing",
+            "p1": "당사의 무료 속도 측정 도구를 사용하여 인터넷 연결 상태를 정확하게 진단하세요. 단 몇 초 만에 다운로드 및 업로드 속도, 핑 지연율을 파악할 수 있습니다. 연결이 끊기거나 느릴 때, 현재 사용 중인 요금제의 속도가 제대로 나오는지 확인하고 싶을 때 가장 편리한 방법입니다.",
+            "metrics_title": "주요 측정 지표의 이해",
+            "req_title": "정확한 측정을 위한 권장 사항",
             "req_list": [
-                "[Pending Translation] Close all other applications and browser tabs",
-                "[Pending Translation] Connect via Ethernet cable for most accurate results",
-                "[Pending Translation] Disable VPN or proxy services temporarily",
-                "[Pending Translation] Ensure no downloads or uploads are running",
-                "[Pending Translation] Test multiple times at different times of day"
+                "정확한 측정을 위해 다른 프로그램이나 브라우저 탭을 모두 닫아주세요.",
+                "가장 객관적인 수치를 확인하려면 무선(Wi-Fi)보다는 유선(LAN) 연결을 추천합니다.",
+                "테스트 중에는 VPN이나 프록시 서비스를 잠시 종료해 주세요.",
+                "진행 중인 다운로드나 업로드 작업이 없는지 확인하세요.",
+                "시간대별 변동성을 확인하기 위해 하루 중 여러 번 측정해 보는 것이 좋습니다."
             ],
-            "why_title": "[Pending Translation] Why Test Your Internet Speed?",
+            "why_title": "인터넷 속도를 측정해야 하는 이유",
             "why_list": [
-                "[Pending Translation] Verify you're getting the speed you're paying for",
-                "[Pending Translation] Troubleshoot slow connection issues",
-                "[Pending Translation] Compare different ISP plans before switching",
-                "[Pending Translation] Optimize your network setup",
-                "[Pending Translation] Document speed for ISP support tickets",
-                "[Pending Translation] Test Wi-Fi vs Ethernet performance"
+                "가입한 요금제 서비스 속도가 실제로 보장되고 있는지 확인",
+                "인터넷 버벅임이나 끊김 현상의 원인 파악",
+                "다른 통신사나 요금제로 변경하기 전 성능 비교",
+                "공유기 위치나 네트워크 설정을 변경한 후 성능 향상 검증",
+                "통신사 상담 시 증빙 자료로 활용",
+                "Wi-Fi 성능과 유선 성능의 차이 비교"
             ],
-            "factors_title": "[Pending Translation] Factors Affecting Your Speed",
-            "improve_title": "[Pending Translation] How to Improve Your Speed",
+            "factors_title": "속도에 영향을 미치는 요인",
+            "improve_title": "인터넷 속도를 높이는 방법",
             "improve_list": [
-                "[Pending Translation] Use Ethernet cable instead of Wi-Fi when possible",
-                "[Pending Translation] Place router in central location away from walls",
-                "[Pending Translation] Upgrade to a modern router that supports your speed tier",
-                "[Pending Translation] Close bandwidth-heavy applications",
-                "[Pending Translation] Update router firmware regularly",
-                "[Pending Translation] Consider upgrading your internet plan",
-                "[Pending Translation] Use Quality of Service (QoS) settings on router"
+                "가능하다면 Wi-Fi 대신 유선 케이블을 직접 연결하세요.",
+                "공유기를 벽이나 장애물이 없는 개방된 중앙 장소에 배치하세요.",
+                "현재 속도를 지원할 수 있는 최신 규격의 공유기를 사용하세요.",
+                "불필요하게 네트워크 대역폭을 점유하는 프로그램을 종료하세요.",
+                "공유기의 펌웨어를 주기적으로 최신 버전으로 업데이트하세요.",
+                "오래된 회선을 사용 중이라면 통신사에 점검을 요청하거나 요금제를 업그레이드하세요.",
+                "공유기 설정에서 QoS(서비스 품질 우선순위) 기능을 활용해 보세요."
             ],
-            "tips_title": "[Pending Translation] Pro Tips for Accurate Results",
+            "tips_title": "측정 결과 신뢰도를 높이는 팁",
             "tips_list": [
-                "[Pending Translation] Test at different times of day to see variations",
-                "[Pending Translation] Run multiple tests and average the results",
-                "[Pending Translation] Test on different devices to rule out device issues",
-                "[Pending Translation] Compare Wi-Fi speeds at different locations in your home"
+                "시간대별 사용자 혼잡도를 확인하기 위해 아침, 낮, 밤에 각각 측정해 보세요.",
+                "여러 번 반복 측정하여 평균값을 확인하는 것이 더 정확합니다.",
+                "PC뿐만 아니라 모바일에서도 측정하여 기기 자체의 문제인지 네트워크 문제인지 구분하세요.",
+                "장소에 따른 Wi-Fi 신호 도달 범위를 확인하며 측정해 보세요."
             ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "자주 묻는 질문",
             "metrics": {
                 "download": {
-                    "title": "[Pending Translation] Download Speed",
-                    "desc": "[Pending Translation] How fast data travels from the internet to your device. Important for streaming, browsing, and downloading files."
+                    "title": "다운로드 속도",
+                    "desc": "인터넷에서 내 기기로 데이터를 가져오는 속도입니다. 스트리밍, 웹 서핑, 파일 내려받기에 가장 중요한 지표입니다."
                 },
                 "upload": {
-                    "title": "[Pending Translation] Upload Speed",
-                    "desc": "[Pending Translation] How fast data travels from your device to the internet. Important for video calls, uploading files, and live streaming."
+                    "title": "업로드 속도",
+                    "desc": "내 기기에서 인터넷으로 데이터를 보내는 속도입니다. 영상 통화, 클라우드 파일 올리기, 실시간 방송에 중요합니다."
                 },
                 "ping": {
-                    "title": "[Pending Translation] Ping (Latency)",
-                    "desc": "[Pending Translation] Response time of your connection. Lower is better. Important for gaming and real-time applications."
+                    "title": "지연 시간 (Ping)",
+                    "desc": "명령을 보냈을 때 서버가 반응하는 시간입니다. 낮을수록 좋으며, 게임이나 실시간 반응이 필요한 앱에서 결정적입니다."
                 }
             },
             "factors": {
                 "congestion": {
-                    "title": "[Pending Translation] Network Congestion",
-                    "desc": "[Pending Translation] Peak usage times can slow down your connection as more users share bandwidth."
+                    "title": "네트워크 혼잡",
+                    "desc": "특정 시간대에 사용자가 몰리면 대역폭을 나눠 쓰게 되어 속도가 줄어들 수 있습니다."
                 },
                 "wifi": {
-                    "title": "[Pending Translation] Wi-Fi Signal",
-                    "desc": "[Pending Translation] Distance from router, walls, and interference from other devices affect wireless speeds."
+                    "title": "무선 신호 세기",
+                    "desc": "공유기와의 거리, 벽 등의 장애물은 신호를 약화시키고 지연율을 높입니다."
                 },
                 "device": {
-                    "title": "[Pending Translation] Device Performance",
-                    "desc": "[Pending Translation] Older devices or those running many programs may not achieve full speeds."
+                    "title": "기기 사양",
+                    "desc": "오래된 구형 PC나 스마트폰은 하드웨어 한계로 인해 들어오는 속도를 다 처리하지 못할 수 있습니다."
                 },
                 "router": {
-                    "title": "[Pending Translation] Router Quality",
-                    "desc": "[Pending Translation] Outdated routers may not support your full internet speed capabilities."
+                    "title": "공유기 성능",
+                    "desc": "성능이 낮은 저가형 공유기는 동시 접속 기기가 많아지면 처리 속도가 급격히 떨어집니다."
                 }
             },
             "faq": {
-                "q1": "[Pending Translation] What is a good internet speed?",
-                "a1": "[Pending Translation] For general browsing and streaming: 25+ Mbps. For 4K streaming and gaming: 50+ Mbps. For multiple users and heavy usage: 100+ Mbps. For remote work and large households: 200+ Mbps.",
-                "q2": "[Pending Translation] Why is my speed slower than advertised?",
-                "a2": "[Pending Translation] ISPs advertise \"up to\" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.",
-                "q3": "[Pending Translation] What's the difference between Mbps and MBps?",
-                "a3": "[Pending Translation] Mbps (megabits per second) is used for internet speeds. MBps (megabytes per second) is used for file sizes. 1 MBps = 8 Mbps. A 100 Mbps connection downloads at about 12.5 MBps.",
-                "q4": "[Pending Translation] How accurate is this speed test?",
-                "a4": "[Pending Translation] Our speed test provides accurate results by measuring real data transfer. For best accuracy, close other applications, use Ethernet, and run multiple tests.",
-                "q5": "[Pending Translation] Should I test with Wi-Fi or Ethernet?",
-                "a5": "[Pending Translation] Test with Ethernet to measure your true internet speed. Test with Wi-Fi to diagnose wireless issues. Comparing both helps identify if problems are with your internet or Wi-Fi."
+                "q1": "좋은 인터넷 속도란 어느 정도인가요?",
+                "a1": "일반 서핑은 25Mbps 이상, 고화질 영상 시청은 50Mbps 이상, 대가족이나 재택근무 환경이라면 200Mbps 이상의 속도가 쾌적합니다.",
+                "q2": "왜 광고하는 속도보다 느리게 나오나요?",
+                "a2": "통신사는 '최대' 속도를 광고하며, 실제 속도는 자택 내부 선로 상태, 공유기 성능, 무선 환경 등에 따라 70~90% 수준으로 측정되는 경우가 흔합니다.",
+                "q3": "Mbps와 MB/s의 차이가 무엇인가요?",
+                "a3": "Mbps는 비트 단위, MB/s는 바이트 단위입니다. 1MB/s는 대략 8Mbps와 같습니다. 100Mbps 광랜이라면 실제 파일 다운로드 속도는 약 12.5MB/s 정도가 됩니다.",
+                "q4": "이 측정 결과는 얼마나 신뢰할 수 있나요?",
+                "a4": "실시간 데이터 전송을 통해 측정하므로 실제 체감 속도와 매우 일치합니다. 단, 측정 위치나 시간대에 따라 변동이 있을 수 있습니다.",
+                "q5": "테스트 도중 데이터가 많이 소모되나요?",
+                "a5": "속도를 확인하기 위해 잠시 대용량 데이터를 주고받으므로 무제한 요금제가 아닌 모바일 환경에서는 주의가 필요할 수 있습니다."
             }
         }
     },
     "ip-lookup": {
         "meta": {
-            "title": "[Pending Translation] IP Lookup Tool - Get IP Address Information & Geolocation Free",
-            "description": "[Pending Translation] Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.",
-            "h1": "[Pending Translation] IP Lookup Tool",
-            "subtitle": "[Pending Translation] Get detailed information about any IP address including location & ISP"
+            "title": "IP 조회 도구 - 무료 IP 주소 정보 및 지리적 위치 확인",
+            "description": "모든 IP 주소에 대한 상세 정보를 조회하세요. 위치, ISP, 호스트 이름 등을 무료로 즉시 확인할 수 있습니다. 보안 분석 및 네트워크 점검에 필수적인 도구입니다.",
+            "h1": "IP 조회 도구",
+            "subtitle": "모든 IP 주소의 지리적 위치 및 통신사 정보를 상세히 조회하세요"
         },
         "form": {
-            "ip_label": "[Pending Translation] IP Address",
-            "ip_placeholder": "[Pending Translation] 8.8.8.8",
-            "button": "[Pending Translation] Lookup IP Address"
+            "ip_label": "IP 주소 입력",
+            "ip_placeholder": "8.8.8.8",
+            "button": "IP 정보 조회하기"
         },
         "results": {
-            "title": "",
-            "ip_address": "",
-            "type": "",
-            "hostname": "",
-            "isp": "",
-            "country": "",
-            "region": "",
-            "city": "",
-            "timezone": ""
+            "title": "조회 결과",
+            "ip_address": "IP 주소:",
+            "type": "유형 (IPv4/IPv6):",
+            "hostname": "호스트 이름:",
+            "isp": "통신사 (ISP):",
+            "country": "국가:",
+            "region": "지역(주/도):",
+            "city": "도시:",
+            "timezone": "시간대:"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is IP Lookup?",
-            "what_is_desc": "[Pending Translation] IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. This information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.",
-            "why_use_title": "[Pending Translation] Why Use IP Lookup?",
-            "why_use_desc": "[Pending Translation] IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It's also useful for verifying VPN connections and understanding your own internet footprint.",
-            "features_title": "[Pending Translation] Key Features",
-            "feature1_title": "[Pending Translation] 🌍 Geolocation Data",
-            "feature1_desc": "[Pending Translation] Country, region, city, and coordinates",
-            "feature2_title": "[Pending Translation] 🏢 ISP Information",
-            "feature2_desc": "[Pending Translation] Internet Service Provider details",
-            "feature3_title": "[Pending Translation] 🔗 Hostname Resolution",
-            "feature3_desc": "[Pending Translation] Domain name associated with IP",
-            "feature4_title": "[Pending Translation] ⚡ Instant Results",
-            "feature4_desc": "[Pending Translation] Fast and accurate lookup"
+            "what_is_title": "IP 조회란 무엇인가요?",
+            "what_is_desc": "IP 조회(IP Lookup)는 특정 IP 주소에 연계된 상세 기술 정보를 제공하는 도구입니다. 이를 통해 해당 주소의 대략적인 지리적 위치, 인터넷 서비스 제공업체(ISP), 도메인 이름(호스트명) 등을 파악할 수 있습니다. 네트워크 관리자, 보안 요원, 그리고 웹사이트 소유자들에게 필수적인 정보 탐색 수단입니다.",
+            "why_use_title": "IP 조회가 필요한 이유",
+            "why_use_desc": "IP 조회는 보안 분석, 사기 방지, 접속 국가별 콘텐츠 제한 관리, 네트워크 문제 해결 등 다양한 분야에서 사용됩니다. 웹사이트 관리자는 방문자의 주요 분포를 파악할 수 있고, 보안 팀은 의심스러운 접속을 추적하거나 차단하는 데 활용합니다. 자신의 VPN 연결이 정상적으로 작동하는지 또는 공개된 내 정보가 무엇인지 확인하는 데도 유용합니다.",
+            "features_title": "핵심 조회 기능",
+            "feature1_title": "🌍 정확한 지리적 위치",
+            "feature1_desc": "국가, 도시, 위도/경도 정보를 기반으로 대략적인 위치를 표시합니다.",
+            "feature2_title": "🏢 통신사(ISP) 확인",
+            "feature2_desc": "해당 IP를 할당한 인터넷 서비스 업체 정보를 상세히 보여줍니다.",
+            "feature3_title": "🔗 호스트 이름 분석",
+            "feature3_desc": "IP 주소와 연결된 도메인 이름을 역방향으로 조회하여 표시합니다.",
+            "feature4_title": "⚡ 실시간 결과 제공",
+            "feature4_desc": "가장 최신의 데이터베이스를 사용하여 즉각적이고 정확한 분석 결과를 도출합니다."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "자주 묻는 질문",
+            "q1": "IP 주소만으로 정확한 집 주소를 알 수 있나요?",
+            "a1": "아니요. IP 조회를 통해서는 국가 및 도시 단위의 대략적인 위치만 알 수 있습니다. 상세한 주소는 법적 절차를 통해 통신사만 확인 가능합니다.",
+            "q2": "IPv4와 IPv6 중 무엇을 조회해야 하나요?",
+            "a2": "본 도구는 두 가지 형식 모두 지원합니다. 현재 사용 중인 대부분의 주소는 IPv4 형식이지만, 최신 기기는 IPv6를 사용하기도 합니다.",
+            "q3": "조회 결과 국가가 실제와 다르게 나옵니다.",
+            "a3": "VPN을 사용 중이거나, 통신사의 IP 할당 방식(해외 게이트웨이 경유 등)에 따라 일시적인 오차가 발생할 수 있습니다.",
+            "q4": "이 조회를 하면 상대방이 알게 되나요?",
+            "a4": "아니요. 조회를 수행한다고 해서 해당 IP의 실제 소유자에게 알림이 가거나 추적되지 않습니다. 100% 익명 조회입니다.",
+            "q5": "고급 정보(ASN 등)도 볼 수 있나요?",
+            "a5": "기본적인 정보 외에도 배경망(ISP)과 네트워크 유형 등을 통해 전문적인 분석에 필요한 단초를 제공합니다."
         },
         "js": {
-            "looking_up": "",
-            "success": "",
-            "error": ""
+            "looking_up": "IP 정보 분석 중...",
+            "success": "조회에 성공했습니다",
+            "error": "IP 정보를 조회할 수 없습니다. 주소를 다시 확인해 주세요."
         }
     },
     "ping-test": {
         "meta": {
-            "title": "[Pending Translation] Ping Test Tool - Check Network Latency & Connectivity Free",
-            "description": "[Pending Translation] Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] Ping Test Tool",
-            "subtitle": "[Pending Translation] Test server response time and network connectivity from multiple locations"
+            "title": "핑(Ping) 테스트 도구 - 네트워크 지연 시간 및 연결 확인",
+            "description": "서버의 응답성, 패킷 손실률 및 네트워크 지연 시간을 무료로 점검하세요. 모든 호스트나 IP 주소의 연결 상태를 즉시 테스트할 수 있는 필수 도구입니다.",
+            "h1": "핑 테스트 도구",
+            "subtitle": "서버 응답 속도와 네트워크 연결 상태를 실시간으로 측정하세요"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] google.com or 8.8.8.8",
-            "button": "[Pending Translation] Ping Host"
+            "host_label": "호스트 이름 또는 IP 주소",
+            "host_placeholder": "google.com 또는 8.8.8.8",
+            "button": "핑 테스트 시작"
         },
         "results": {
-            "title": ""
+            "title": "테스트 결과"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Ping Test?",
-            "what_is_desc": "[Pending Translation] Ping is a network diagnostic tool that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. The tool is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.",
-            "why_use_title": "[Pending Translation] Why Use Ping Test?",
-            "why_use_desc": "[Pending Translation] Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to check server latency before joining online games, while website owners monitor their server's responsiveness to ensure optimal user experience.",
-            "metrics_title": "[Pending Translation] Understanding Ping Metrics",
-            "metric1": "[Pending Translation] <strong>Packets Sent\/Received:<\/strong> Number of ping requests and successful responses",
-            "metric2": "[Pending Translation] <strong>Packet Loss:<\/strong> Percentage of packets that didn't receive a response",
-            "metric3": "[Pending Translation] <strong>Minimum Time:<\/strong> Fastest round-trip time recorded",
-            "metric4": "[Pending Translation] <strong>Average Time:<\/strong> Mean latency across all pings",
-            "metric5": "[Pending Translation] <strong>Maximum Time:<\/strong> Slowest round-trip time recorded",
-            "metric6": "[Pending Translation] <strong>TTL (Time To Live):<\/strong> Number of network hops before packet expires",
-            "interpreting_title": "[Pending Translation] Interpreting Results",
-            "interpreting_desc": "[Pending Translation] Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
+            "what_is_title": "핑(Ping) 테스트란 무엇인가요?",
+            "what_is_desc": "핑은 인터넷 프로토콜(IP) 네트워크에서 특정 호스트에 도달할 수 있는지 확인하는 진단 도구입니다. 내 컴퓨터에서 보낸 메시지가 상대방 컴퓨터에 도달했다가 되돌아오는 데 걸리는 시간(왕복 시간)을 측정합니다. 잠수함의 소나 핑 소리에서 이름을 따온 것처럼, 신호를 보내고 그에 대한 응답을 기다리는 방식으로 작동합니다.",
+            "why_use_title": "핑 테스트가 필요한 이유",
+            "why_use_desc": "핑 테스트는 네트워크 문제 해결과 성능 모니터링에 필수적입니다. 시스템 관리자는 서버가 온라인 상태인지, 응답 속도가 일정하지 않은지 파악하는 데 사용합니다. 패킷 손실(데이터 유실)이 발생한다면 회선 혼잡이나 하드웨어 문제를 의심할 수 있습니다. 온라인 게임 유저나 웹사이트 소유자에게도 서버와의 반응 속도를 확인하기 위한 가장 직관적인 지표가 됩니다.",
+            "metrics_title": "주요 측정 지표 설명",
+            "metric1": "<strong>패킷 전송/수신:</strong> 요청한 횟수와 정상적으로 응답받은 횟수",
+            "metric2": "<strong>패킷 손실률:</strong> 응답을 받지 못한 데이터의 비율 (0%가 가장 이상적)",
+            "metric3": "<strong>최소 시간:</strong> 기록된 가장 빠른 왕복 응답 시간",
+            "metric4": "<strong>평균 시간:</strong> 모든 테스트 횟수의 산술적인 평균 지연 시간",
+            "metric5": "<strong>최대 시간:</strong> 기록된 가장 느린 왕복 응답 시간",
+            "metric6": "<strong>TTL (Life Span):</strong> 패킷이 소멸되기 전까지 거칠 수 있는 네트워크 경로 수",
+            "interpreting_title": "결과 해석 가이드",
+            "interpreting_desc": "일반적으로 국내 연결은 50ms 미만, 국제 연결은 100~150ms 미만을 '양호'한 상태로 봅니다. 150ms를 넘어가면 실시간 게임이나 화상 회의에서 다소 느린 느낌을 받을 수 있으며, 200ms 이상은 비정상적인 지연이 발생하고 있음을 의미합니다. 패킷 손실이 1%라도 발생한다면 회선 안정성에 문제가 있는 것이므로 정밀 점검이 필요합니다."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "자주 묻는 질문",
+            "q1": "핑이 높은데 인터넷 속도는 빠릅니다. 왜 그런가요?",
+            "a1": "대역폭(속도)과 지연율(핑)은 다른 개념입니다. 길은 넓지만 거리가 멀거나 신호 변환이 늦어지면 핑이 높게 나올 수 있습니다.",
+            "q2": "패킷 손실은 무엇을 의미하나요?",
+            "a2": "데이터 덩어리가 중간에 사라졌다는 뜻입니다. 웹페이지가 늦게 뜨거나 게임에서 버벅이는 현상의 주범입니다.",
+            "q3": "'Request Timed Out'은 서버가 죽은 건가요?",
+            "a3": "서버가 꺼져 있거나, 서버의 방화벽이 보안을 위해 핑 응답(ICMP)을 차단하고 있을 때 이 메시지가 뜹니다.",
+            "q4": "지역마다 핑이 다른 이유가 무엇인가요?",
+            "a4": "물리적 거리가 가장 큰 요인입니다. 서울에서 미국 서버를 측정하면 싱가포르 서버보다 핑이 높게 나오는 것이 정상입니다.",
+            "q5": "특정 게임에서만 핑이 튑니다.",
+            "a5": "내 회선의 문제일 수도 있지만, 해당 게임 서버의 부하나 경로상의 특정 라우터 문제일 가능성도 큽니다."
         },
         "js": {
-            "pinging": "",
-            "success": "",
-            "error": "",
-            "ping_host": ""
+            "pinging": "신호를 보내는 중...",
+            "success": "테스트 완료",
+            "error": "핑 테스트에 실패했습니다",
+            "ping_host": "테스트 실행"
         }
     },
     "port-checker": {
         "meta": {
-            "title": "[Pending Translation] Port Checker Tool - Check Open Ports & Network Connectivity Free",
-            "description": "[Pending Translation] Free port checker tool to test if ports are open, closed, or filtered. Check TCP\/UDP ports instantly for network troubleshooting and security auditing.",
-            "h1": "[Pending Translation] Port Checker Tool",
-            "subtitle": "[Pending Translation] Check if ports are open on any server for troubleshooting connectivity"
+            "title": "포트 체커 도구 - 열린 포트 및 네트워크 연결 무료 확인",
+            "description": "특정 포트가 열려 있는지(Open), 닫혀 있는지(Closed) 무료로 확인하세요. 네트워크 설정 및 보안 감사를 위해 TCP/UDP 포트 상태를 즉시 점검할 수 있습니다.",
+            "h1": "포트 체커 도구",
+            "subtitle": "서버의 특정 포트 개방 여부를 확인하여 서비스 연결 문제를 진단하세요"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] example.com or 8.8.8.8",
-            "port_label": "[Pending Translation] Port Number",
-            "port_placeholder": "[Pending Translation] 80",
-            "button": "[Pending Translation] Check Port"
+            "host_label": "호스트 이름 또는 IP 주소",
+            "host_placeholder": "example.com 또는 8.8.8.8",
+            "port_label": "포트 번호",
+            "port_placeholder": "80",
+            "button": "포트 상태 확인"
         },
         "results": {
-            "title": ""
+            "title": "체크 결과"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Port Checker?",
-            "what_is_desc": "[Pending Translation] A Port Checker is a network diagnostic tool that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Common ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Checking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.",
-            "why_check_title": "[Pending Translation] Why Check Ports?",
-            "why_check_desc": "[Pending Translation] Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren't accessible, determining if the issue is with the service itself, firewall rules, or network routing.",
-            "common_ports_title": "[Pending Translation] Common Ports",
-            "port1": "[Pending Translation] <strong>Port 80:<\/strong> HTTP (web traffic)",
-            "port2": "[Pending Translation] <strong>Port 443:<\/strong> HTTPS (secure web traffic)",
-            "port3": "[Pending Translation] <strong>Port 22:<\/strong> SSH (secure shell access)",
-            "port4": "[Pending Translation] <strong>Port 21:<\/strong> FTP (file transfer)",
-            "port5": "[Pending Translation] <strong>Port 25:<\/strong> SMTP (email sending)",
-            "port6": "[Pending Translation] <strong>Port 3306:<\/strong> MySQL database",
-            "port7": "[Pending Translation] <strong>Port 3389:<\/strong> RDP (Remote Desktop)",
-            "security_title": "[Pending Translation] Security Implications",
-            "security_desc": "[Pending Translation] Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
+            "what_is_title": "포트 체커(Port Checker)란 무엇인가요?",
+            "what_is_desc": "포트 체커는 서버나 기기의 특정 TCP/UDP 포트가 외부에서 접근 가능한 상태인지 확인하는 진단 도구입니다. 포트는 네트워크 통신의 입구와 같은 역할을 하며, 각 서비스마다 고유한 번호(1~65535)를 사용합니다. 포트가 '열려 있음'은 외부 연결을 받을 준비가 되었음을, '닫혀 있음'은 접근이 거부됨을 의미합니다.",
+            "why_check_title": "포트 점검이 필요한 이유",
+            "why_check_desc": "포트 점검은 서버 관리와 보안에 매우 중요합니다. 서버 설정 변경 후 서비스가 제대로 외부로 노출되었는지 확인하거나, 반대로 불필요한 포트가 열려 보안 취약점이 생기지는 않았는지 감시할 때 사용합니다. 개발자들은 내 앱이 포트에서 올바르게 대기 중인지 테스트할 수 있고, 네트워크 엔지니어들은 방화벽 규칙이 잘 적용되었는지 검증할 수 있습니다.",
+            "common_ports_title": "주요 공통 포트 목록",
+            "port1": "<strong>80번 포트:</strong> HTTP (일반 웹 트래픽)",
+            "port2": "<strong>443번 포트:</strong> HTTPS (보안 웹 트래픽)",
+            "port3": "<strong>22번 포트:</strong> SSH (보안 원격 접속)",
+            "port4": "<strong>21번 포트:</strong> FTP (파일 전송)",
+            "port5": "<strong>25번 포트:</strong> SMTP (이메일 발송)",
+            "port6": "<strong>3306번 포트:</strong> MySQL 데이터베이스",
+            "port7": "<strong>3389번 포트:</strong> RDP (원격 데스크톱)",
+            "security_title": "보안상 주의사항",
+            "security_desc": "열려 있는 포트는 잠재적인 공격 통로가 될 수 있습니다. 꼭 필요한 서비스용 포트만 열어두고 나머지는 방화벽으로 차단(Filter)하는 것이 보안의 기본입니다. 정기적으로 자신의 서버 포트를 스캔하여 의도치 않게 열린 곳이 없는지 확인하세요. 다만, 본인이 소유하지 않은 타인의 시스템을 무단으로 스캔하는 행위는 공격적으로 간주될 수 있으므로 주의해야 합니다."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "자주 묻는 질문",
+            "q1": "포트가 열려 있는데 접속이 안 됩니다.",
+            "a1": "포트는 열려 있지만, 서비스 자체가 제대로 구동되지 않거나 해당 서비스를 이용하기 위한 인증(아이디/비밀번호 등) 절차에 문제가 있을 수 있습니다.",
+            "q2": "UDP 포트도 확인 가능한가요?",
+            "a2": "네, 하지만 UDP는 비연결형 프로토콜이기 때문에 TCP보다 응답 확인이 명확하지 않을 수 있습니다.",
+            "q3": "'Filtered'는 무엇을 의미하나요?",
+            "a3": "포트가 닫힌 것이 아니라, 방화벽이나 네트워크 보안 장비에 의해 통신 패킷이 완전히 무시(Drop)되고 있음을 뜻합니다.",
+            "q4": "집 컴퓨터의 포트를 확인하려면 어떻게 하나요?",
+            "a4": "본인의 공인 IP(Public IP)를 입력하시고, 공유기를 사용 중이라면 '포트 포워딩' 설정이 되어 있어야 외부에서 확인이 가능합니다.",
+            "q5": "특정 포트 번호는 아무나 써도 되나요?",
+            "a5": "0~1023번은 시스템용으로 예약된 잘 알려진 포트이므로 가급적 피하시고, 일반적인 앱 개발에는 가급적 1024번 이후의 번호를 쓰는 것이 좋습니다."
         },
         "js": {
-            "checking": "",
-            "success": "",
-            "error": "",
-            "check_port": ""
+            "checking": "포트 상태 확인 중...",
+            "success": "검사 완료",
+            "error": "포트 정보를 가져올 수 없습니다",
+            "check_port": "체크 실행"
         }
     },
     "reverse-dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] Reverse DNS Lookup - Free Online Tool",
-            "description": "[Pending Translation] Free online reverse DNS lookup tool. Find the hostname associated with any IP address instantly. Fast, secure, and easy to use.",
-            "h1": "[Pending Translation] Reverse DNS Lookup",
-            "subtitle": "[Pending Translation] Find the domain name or hostname associated with an IP address instantly"
+            "title": "역방향 DNS 조회 - 무료 온라인 IP 도메인 역추적 도구",
+            "description": "모든 IP 주소와 연계된 도메인 이름이나 호스트 이름을 즉시 찾아보세요. 빠르고 안전하며 사용하기 쉬운 무료 역방향 DNS 조회 도구입니다.",
+            "h1": "역방향 DNS 조회 (rDNS)",
+            "subtitle": "IP 주소를 입력하여 연결된 도메인이나 호스트 이름을 즉시 확인하세요"
         },
         "form": {
-            "ip_label": "[Pending Translation] Enter IP Address",
-            "ip_placeholder": "[Pending Translation] e.g., 8.8.8.8",
-            "button": "[Pending Translation] Lookup Reverse DNS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "ip_label": "IP 주소 입력",
+            "ip_placeholder": "예: 8.8.8.8",
+            "button": "역방향 DNS 조회하기",
+            "button_loading": "조회 중..."
         },
         "results": {
-            "title": "[Pending Translation] Reverse DNS Results"
+            "title": "역방향 DNS 결과"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Reverse DNS Lookup?",
-            "what_is_desc": "[Pending Translation] Reverse DNS lookup (rDNS) is the process of determining the domain name or hostname associated with an IP address. Unlike a standard DNS lookup that converts a domain name to an IP address (forward lookup), rDNS does the opposite. It's often used to verify the identity of a server or to troubleshoot network issues.",
-            "why_use_title": "[Pending Translation] Why Use Reverse DNS Lookup?",
-            "why_use_desc": "[Pending Translation] Reverse DNS is widely used for security and verification purposes. It helps identify the source of incoming traffic, verify email senders (to prevent spam), and troubleshoot network connectivity issues. Many mail servers require valid rDNS records to accept incoming emails.",
-            "ptr_records_title": "[Pending Translation] Understanding PTR Records",
-            "ptr_record1": "[Pending Translation] <strong>PTR Record:<\/strong> A Pointer Record (PTR) is the type of DNS record used for reverse DNS lookups.",
-            "ptr_record2": "[Pending Translation] <strong>Mapping:<\/strong> It maps an IP address back to a hostname.",
-            "ptr_record3": "[Pending Translation] <strong>Verification:<\/strong> Crucial for email deliverability and security verification.",
-            "ptr_record4": "[Pending Translation] <strong>IP-to-Host:<\/strong> Essential for identifying the true owner of an IP address.",
-            "ptr_record5": "[Pending Translation] <strong>Spam Prevention:<\/strong> Used by mail servers to validate sender authenticity.",
-            "ptr_record6": "[Pending Translation] <strong>Network Logs:<\/strong> Helpful for making network logs human-readable by showing hostnames.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_cases_desc": "[Pending Translation] Common use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
+            "what_is_title": "역방향 DNS 조회(Reverse DNS)란 무엇인가요?",
+            "what_is_desc": "역방향 DNS 조회(rDNS)는 IP 주소를 통해 해당 주소에 지정된 도메인 이름이나 호스트 이름을 알아내는 과정입니다. 일반적인 DNS 조회가 이름(도메인)을 주소(IP)로 바꾸는 것이라면, 역방향 조치는 그 반대 역할을 수행합니다. 주로 서버의 신원을 확인하거나 네트워크 문제를 진단할 때 유용하게 쓰입니다.",
+            "why_use_title": "역방향 조회가 필요한 이유",
+            "why_use_desc": "역방향 DNS는 보안 및 인증 용도로 널리 사용됩니다. 서버로 들어오는 트래픽의 출처를 확인하거나, 이메일 발신자의 정당성(스팸 방지)을 검증할 때 필수적입니다. 많은 메일 서버는 신뢰할 수 있는 역방향 DNS 레코드가 없는 IP로부터의 메일 수신을 거부하기도 합니다.",
+            "ptr_records_title": "PTR 레코드의 이해",
+            "ptr_record1": "<strong>PTR 레코드:</strong> 포인터 레코드로, 역방향 DNS 조회를 위해 사용되는 핵심 레코드 유형입니다.",
+            "ptr_record2": "<strong>매핑 방식:</strong> 숫자 IP 주소를 다시 문자 기반의 호스트 이름으로 연결해 줍니다.",
+            "ptr_record3": "<strong>이메일 보안:</strong> 이메일 도달율과 보안 발송 인증의 신뢰도를 높여줍니다.",
+            "ptr_record4": "<strong>실소유주 확인:</strong> 해당 IP 주소를 실제로 관리하고 있는 주체를 투명하게 보여줍니다.",
+            "ptr_record5": "<strong>스팸 차단:</strong> 스팸 필터가 발신 서버의 진위 여부를 판단하는 주요 근거로 활용합니다.",
+            "ptr_record6": "<strong>로그 가독성:</strong> 네트워크 로그 파일에서 난해한 숫자 대신 이름을 보여주어 관리를 편하게 해줍니다.",
+            "use_cases_title": "주요 활용 사례",
+            "use_cases_desc": "웹 트래픽의 실제 출처 확인, 네트워크 지연 및 경로 분석 진단, 이메일 서버 구성의 유효성 검증, 그리고 사이버 보안 감사 시 의심스러운 IP의 정체 파악 등에 전천후로 활용됩니다."
         },
         "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] What is a PTR record?",
-            "a1": "[Pending Translation] A PTR (Pointer) record is a type of DNS record that maps an IP address to a hostname. It is the core component of a reverse DNS lookup.",
-            "q2": "[Pending Translation] Why is reverse DNS important for email?",
-            "a2": "[Pending Translation] Many email providers use reverse DNS to verify that the sending server is legitimate. If a server's IP address doesn't have a matching rDNS record, its emails may be flagged as spam.",
-            "q3": "[Pending Translation] Can any IP address have a reverse DNS record?",
-            "a3": "[Pending Translation] Yes, but the owner of the IP address (typically the ISP or hosting provider) must configure the PTR record in their DNS settings."
+            "title": "자주 묻는 질문",
+            "q1": "PTR 레코드가 무엇인가요?",
+            "a1": "PTR(Pointer) 레코드는 IP를 호스트 이름으로 변환하는 DNS 레코드입니다. rDNS 조치의 핵심 구성 요소입니다.",
+            "q2": "이메일 발송 시 왜 rDNS가 중요한가요?",
+            "a2": "네이버나 구글 같은 거대 메일 서비스는 발신 서버의 rDNS가 없으면 스팸으로 처리할 가능성이 매우 높기 때문입니다.",
+            "q3": "모든 IP가 역방향 조회가 가능한가요?",
+            "a3": "기술적으로는 가능하지만, 해당 IP 대역을 소유한 인터넷 서비스 업체(ISP)나 호스팅사가 DNS 설정을 해두었을 때만 결과가 나타납니다."
         }
     },
     "traceroute": {
         "meta": {
-            "title": "[Pending Translation] Traceroute - Free Online Tool",
-            "description": "[Pending Translation] Free online traceroute tool. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] Traceroute",
-            "subtitle": "[Pending Translation] The best traceroute for developers and IT professionals"
+            "title": "온라인 트레이스라우트(Traceroute) - 네트워크 경로 추적 도구",
+            "description": "내 패킷이 목적지 서버까지 도달하는 전체 경로를 추적하세요. 각 단계별 지연 시간과 거쳐가는 라우터를 분석하는 무료 전문가용 도구입니다.",
+            "h1": "네트워크 경로 추적 (Traceroute)",
+            "subtitle": "개발자와 IT 전문가를 위해 패킷이 이동하는 모든 경로를 시각화하고 진단하세요"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "대상 호스트 또는 IP 주소",
+            "host_placeholder": "google.com 또는 8.8.8.8",
+            "button": "경로 추적 시작",
+            "button_loading": "추적 중..."
         },
         "results": {
-            "title": ""
+            "title": "Traceroute 결과"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Traceroute?",
-            "what_is_desc": "[Pending Translation] This is a free online tool to traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
+            "what_is_title": "트레이스라우트(Traceroute)란 무엇인가요?",
+            "what_is_desc": "트레이스라우트는 인터넷상의 데이터 패킷이 목적지에 도달하기까지 거치는 모든 서버(라우터)와 그 과정에서의 응답 시간을 보여주는 진단 도구입니다. 이 도구는 패킷이 어떤 길을 따라 지구 반대편까지 가는지, 그리고 중간에 어디에서 속도가 느려지는지를 정확히 짚어낼 수 있게 해줍니다.",
+            "why_use_title": "경로 추적이 필요한 이유",
+            "why_use_desc": "네트워크 연결이 느리거나 끊길 때, 문제가 내 컴퓨터 때문인지, 통신사 구간인지, 아니면 목적지 근처 서버 때문인지 판별하는 데 결정적인 도움을 줍니다. 복잡한 네트워크 환경에서 병목 현상이 발생하는 지점을 시각적으로 파악할 수 있는 가장 강력한 방법 중 하나입니다.",
+            "hops_title": "홉(Hop) 정보의 이해",
+            "hop1": "<strong>결과 목록:</strong> 목적지까지 거치는 모든 중간 장비들의 IP와 이름을 단계별로 보여줍니다.",
+            "hop2": "<strong>지연 시간(RRT):</strong> 각 단계별로 세 번의 응답 시간을 측정하여 기복 여부를 표시합니다.",
+            "hop3": "<strong>* 표시:</strong> 특정 라우터가 응답을 거부하거나 타임아웃이 발생했음을 의미합니다.",
+            "hop4": "<strong>홉 수:</strong> 연결 단계가 많을수록 패킷 손실 확률과 지연 시간이 늘어날 수 있습니다.",
+            "hop5": "<strong>ISP 확인:</strong> 패킷이 어떤 통신사망을 거쳐 해외로 나가는지 직접 눈으로 확인할 수 있습니다.",
+            "hop6": "<strong>최종 도달:</strong> 목적지 서버에 도달했을 때의 마지막 상태를 최종적으로 분석합니다.",
+            "issues_title": "흔히 발견되는 문제",
+            "issues_desc": "중간 경로에서의 급격한 지연 시간 증가, 특정 라우터 이후의 연결 단절, 또는 패킷이 다시 되돌아오는 루핑(Looping) 현상 등을 발견하고 조치할 수 고안되었습니다."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "자주 묻는 질문",
+            "q1": "결과 중간에 별표(*)가 나오는 건 고장인가요?",
+            "a1": "아니요. 일부 보안이 강화된 라우터는 자신의 정보를 숨기기 위해 트레이스라우트 신호에 답변하지 않도록 설정되어 있을 뿐입니다.",
+            "q2": "몇 단계(Hop)까지 나오는 것이 정상인가요?",
+            "a2": "보통 국내는 10단계 이내, 해외는 15~25단계 내외로 연결되는 것이 일반적입니다.",
+            "q3": "집에서 맥(Mac)이나 윈도우로도 할 수 있나요?",
+            "a3": "네, 윈도우는 명령 프롬프트에서 `tracert`, 맥은 터미널에서 `traceroute` 명령어로 직접 실행해 보실 수 있습니다."
         }
     },
     "user-agent-parser": {
         "meta": {
-            "title": "[Pending Translation] Free User Agent Parser",
-            "description": "[Pending Translation] Identify browser, OS, and device from User Agent string with our free tool.",
-            "h1": "[Pending Translation] User Agent Parser",
-            "subtitle": "[Pending Translation] Identify browser, OS, and device from User Agent string"
+            "title": "무료 유저 에이전트 분석기 (User Agent Parser)",
+            "description": "유저 에이전트 문자열을 통해 브라우저, 운영체제 및 기기 정보를 무료로 식별하세요. 개발자 및 마케터를 위한 정밀 분석 도구입니다.",
+            "h1": "유저 에이전트 분석기",
+            "subtitle": "User Agent 문자열을 해석하여 브라우저와 기기 정보를 즉시 파악하세요"
         },
         "editor": {
-            "label_input": "[Pending Translation] User Agent String",
-            "ph_input": "[Pending Translation] Mozilla\/5.0...",
-            "btn_parse": "[Pending Translation] Parse",
-            "btn_use_my_ua": "[Pending Translation] Use My User Agent",
-            "label_browser": "[Pending Translation] Browser",
-            "label_os": "[Pending Translation] Operating System",
-            "label_device": "[Pending Translation] Device",
-            "label_raw": "[Pending Translation] Raw Engine info"
+            "label_input": "유저 에이전트 문자열 (UA String)",
+            "ph_input": "Mozilla/5.0... 를 입력하세요",
+            "btn_parse": "분석하기",
+            "btn_use_my_ua": "내 기기 정보 사용하기",
+            "label_browser": "브라우저 정보",
+            "label_os": "운영체제 (OS)",
+            "label_device": "기기 유형",
+            "label_raw": "엔진 로직 정보"
         },
         "content": {
-            "p1": "[Pending Translation] Our free User Agent Parser instantly decodes user agent strings to identify the browser, operating system, device type, and engine version. Useful for developers debugging browser-specific issues or analyzing traffic sources.",
-            "features_title": "[Pending Translation] Features",
+            "p1": "당사의 무료 유저 에이전트 분석기는 복잡한 문자열을 해석하여 브라우저 종류, 버전, 운영체제 및 하드웨어 유형을 즉시 식별합니다. 특정 브라우저에서 발생하는 버그를 디버깅하거나 유입된 트래픽의 기기 구성을 분석해야 하는 개발자에게 최적화된 도구입니다.",
+            "features_title": "주요 특징",
             "features": {
                 "instant": {
-                    "title": "[Pending Translation] Instant Parsing",
-                    "desc": "[Pending Translation] Decode user agents in milliseconds"
+                    "title": "즉각적인 파싱",
+                    "desc": "수 밀리초 만에 방대한 데이터를 분석하여 결과를 도출합니다."
                 },
                 "detailed": {
-                    "title": "[Pending Translation] Detailed Info",
-                    "desc": "[Pending Translation] Extracts Browser, OS, Device, and Engine"
+                    "title": "상세 정보 추출",
+                    "desc": "브라우저 엔진 정보부터 디테일한 OS 빌드 버전까지 추출할 수 있습니다."
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detect",
-                    "desc": "[Pending Translation] One-click to parse your own current user agent"
+                    "title": "자동 감지 기능",
+                    "desc": "클릭 한 번으로 현재 접속 중인 본인의 유저 에이전트를 즉시 분석해 보여줍니다."
                 },
                 "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] Unlimited uses, no cost"
+                    "title": "100% 무료 도구",
+                    "desc": "별도의 비용이나 가입 제한 없이 무제한으로 사용이 가능합니다."
                 }
             },
-            "uses_title": "[Pending Translation] Common Use Cases",
+            "uses_title": "주요 활용 사례",
             "uses": {
                 "debugging": {
-                    "title": "[Pending Translation] Debugging",
-                    "desc": "[Pending Translation] Identify detailed browser versions for troubleshooting"
+                    "title": "버그 디버깅",
+                    "desc": "특정 브라우저 환경에서만 나타나는 문제의 원인을 파악하기 위해 상세 버전을 확인합니다."
                 },
                 "analytics": {
-                    "title": "[Pending Translation] Analytics",
-                    "desc": "[Pending Translation] Understand what devices and OSs your users are using"
+                    "title": "사용자 분석",
+                    "desc": "우리 서비스 사용자들이 주로 어떤 스마트폰이나 OS를 쓰는지 정확한 원형 데이터를 확인합니다."
                 },
                 "dev": {
-                    "title": "[Pending Translation] Development",
-                    "desc": "[Pending Translation] Verify user agent strings during testing"
+                    "title": "개발 및 테스트",
+                    "desc": "반응형 웹 디자인이나 브라우저 호환성 코드가 잘 작동하는지 가상의 UA로 시뮬레이션할 때 유용합니다."
                 },
                 "security": {
-                    "title": "[Pending Translation] Security",
-                    "desc": "[Pending Translation] Analyze suspicious user agent strings in logs"
+                    "title": "보안 점검",
+                    "desc": "서버 로그에 찍힌 의심스러운 접속자가 보낸 UA가 조작된 것인지 분석할 때 활용합니다."
                 }
             },
-            "how_to_title": "[Pending Translation] How to Use",
+            "how_to_title": "사용 방법",
             "how_to": {
                 "step1": {
-                    "title": "[Pending Translation] Enter String",
-                    "desc": "[Pending Translation] Paste a User Agent string or click \"Use My User Agent\""
+                    "title": "문자열 입력",
+                    "desc": "분석할 User Agent 문자열을 붙여넣거나 '내 기기 정보 사용하기'를 눌러주세요."
                 },
                 "step2": {
-                    "title": "[Pending Translation] Parse",
-                    "desc": "[Pending Translation] Click \"Parse\" to decode the string"
+                    "title": "분석 클릭",
+                    "desc": "'분석하기' 버튼을 눌러 데이터를 처리합니다."
                 },
                 "step3": {
-                    "title": "[Pending Translation] View Results",
-                    "desc": "[Pending Translation] See the broken-down details for Browser, OS, and Device"
+                    "title": "결과 확인",
+                    "desc": "브라우저명, 버전, 기기 제조사 등 분류된 상세 정보를 확인하세요."
                 }
             },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "자주 묻는 질문",
             "faq": {
-                "q1": "[Pending Translation] What is a User Agent?",
-                "a1": "[Pending Translation] A User Agent is a string of text sent by your web browser to every website you visit, identifying the browser, version, operating system, and device type.",
-                "q2": "[Pending Translation] Is this parser accurate?",
-                "a2": "[Pending Translation] It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.",
-                "q3": "[Pending Translation] Is my data private?",
-                "a3": "[Pending Translation] Yes, parsing happens locally in your browser. We do not store your user agent data."
+                "q1": "유저 에이전트(User Agent)란 무엇인가요?",
+                "a1": "웹 브라우저가 웹사이트 서버로 보내는 소개장 같은 텍스트입니다. 현재 어떤 브라우저와 OS를 사용하여 접속 중인지 알려주는 역할을 합니다.",
+                "q2": "이 분석기의 정확도는 어느 정도인가요?",
+                "a2": "표준적인 브라우저 라이브러리를 사용하여 최신 크롬, 사파리, 엣지 등을 정확히 판별합니다. 단, 사용자 의도적으로 정보를 숨기거나 조작(Spoofing)한 경우는 원본 그대로의 텍스트만 보여줍니다.",
+                "q3": "분석된 내 정보가 저장되나요?",
+                "a3": "아니요. 모든 분석 작업은 사용자의 브라우저 내에서 직접 수행됩니다. 당사는 어떠한 개인 기기 정보도 서버에 저장하지 않습니다."
             }
         }
     },
     "what-is-my-ip": {
         "meta": {
-            "title": "[Pending Translation] What is My IP Address? - Check Your IP Location Free",
-            "description": "[Pending Translation] Find out your public IP address instantly. Check your IPv4\/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] What is My IP Address?",
-            "subtitle": "[Pending Translation] Instantly discover your public IP address with detailed ISP information"
+            "title": "내 IP 주소 확인 - 현재 내 공인 IP 및 위치 무료 조회",
+            "description": "현재 접속 중인 내 공개 IP 주소를 즉시 확인하세요. IPv4/IPv6 주소, 통신사(ISP), 대략적인 위치 및 네트워크 상세 정보를 무료로 제공합니다.",
+            "h1": "내 IP 주소 확인",
+            "subtitle": "현재 내 기기에 할당된 공인 IP와 접속 정보를 즉시 확인하세요"
         },
         "ui": {
-            "loading": "",
-            "your_ip_title": "",
-            "copy_button": "",
-            "timezone": ""
+            "loading": "IP 정보 불러오는 중...",
+            "your_ip_title": "현재 내 공인 IP 주소",
+            "copy_button": "IP 복사",
+            "timezone": "내 시간대:"
         },
         "results": {
-            "location": "",
-            "isp": "",
-            "country": ""
+            "location": "대략적 위치:",
+            "isp": "통신사 (ISP):",
+            "country": "국가:"
         },
         "content": {
-            "main_title": "[Pending Translation] What Is My IP Address - Free IP Lookup Tool",
-            "main_desc": "[Pending Translation] Find your public IP address instantly with our free IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.",
-            "what_is_title": "[Pending Translation] What is My IP Address?",
-            "what_is_desc": "[Pending Translation] Your IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.",
-            "ipv4_vs_ipv6_title": "[Pending Translation] IPv4 vs IPv6 Addresses",
-            "ipv4_title": "[Pending Translation] IPv4 Address",
-            "ipv4_format": "[Pending Translation] <strong>Format:<\/strong> 192.168.1.1 (four numbers 0-255 separated by dots)",
-            "ipv4_total": "[Pending Translation] <strong>Total Addresses:<\/strong> ~4.3 billion addresses",
-            "ipv4_desc": "[Pending Translation] Most common format worldwide, but running out of available addresses due to internet growth",
-            "ipv6_title": "[Pending Translation] IPv6 Address",
-            "ipv6_format": "[Pending Translation] <strong>Format:<\/strong> 2001:0db8:85a3::8a2e:0370:7334",
-            "ipv6_total": "[Pending Translation] <strong>Total Addresses:<\/strong> 340 undecillion addresses",
-            "ipv6_desc": "[Pending Translation] Newer format with virtually unlimited addresses, gradually replacing IPv4",
-            "why_check_title": "[Pending Translation] Why Check Your IP?",
-            "why_check_desc": "[Pending Translation] Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.",
-            "public_vs_private_title": "[Pending Translation] Public vs Private IP Addresses",
-            "public_ip_title": "[Pending Translation] 🌐 Public IP Address",
-            "public_ip_desc": "[Pending Translation] Your unique address on the internet, visible to all websites and services you visit.",
-            "public_ip_example": "[Pending Translation] <strong>Example:<\/strong> 203.0.113.45",
-            "public_ip_note": "[Pending Translation] Assigned by your ISP and used for all internet communication",
-            "private_ip_title": "[Pending Translation] 🏠 Private IP Address",
-            "private_ip_desc": "[Pending Translation] Your device's address on your local network, not visible on the internet.",
-            "private_ip_example": "[Pending Translation] <strong>Example:<\/strong> 192.168.1.100",
-            "private_ip_note": "[Pending Translation] Used for communication within your home or office network",
-            "security_title": "[Pending Translation] IP Address Security & Privacy",
-            "security_desc1": "[Pending Translation] Your IP address reveals your approximate location (city\/region), ISP, and can be used to track your online activity across websites. While it doesn't expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.",
-            "security_desc2": "[Pending Translation] <strong>Privacy Protection:<\/strong> Use a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN's IP instead of yours. Our tool shows exactly what information websites can see about your connection.",
-            "dynamic_vs_static_title": "[Pending Translation] Dynamic vs Static IP Addresses",
-            "dynamic_ip": "[Pending Translation] <strong>Dynamic IP:<\/strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.",
-            "static_ip": "[Pending Translation] <strong>Static IP:<\/strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.",
-            "privacy_tips_title": "[Pending Translation] Privacy & Security Tips",
-            "privacy_tip1": "[Pending Translation] • Never share your IP address publicly on forums or social media",
-            "privacy_tip2": "[Pending Translation] • Use a VPN when connecting to public WiFi networks",
-            "privacy_tip3": "[Pending Translation] • Enable your router's firewall to block unauthorized access",
-            "privacy_tip4": "[Pending Translation] • Regularly check your IP to detect unauthorized VPN disconnections",
-            "privacy_tip5": "[Pending Translation] • Be aware that websites log your IP for security and analytics"
+            "main_title": "내 IP 주소 및 위치 실시간 조회",
+            "main_desc": "복잡한 설정 없이도 현재 내 컴퓨터나 모바일 기기가 인터넷 세상에서 어떤 주소를 가지고 있는지 즉시 알려드립니다. IPv4 또는 IPv6 형식의 주소는 물론, 현재 내가 접속 중인 도시, 지역, 국가 정보와 가입된 통신사(ISP) 및 시간대 정보까지 한눈에 파악하세요. 네트워크 문제 진단, VPN 작동 여부 확인, 보안 테스트 등에 필수적인 기본 도구입니다.",
+            "what_is_title": "IP 주소란 무엇인가요?",
+            "what_is_desc": "IP 주소는 인터넷에 연결된 모든 기기에 부여되는 고유한 디지털 주소입니다. 현실 세계의 집 주소처럼, 웹사이트나 다른 서비스들이 내 기기와 데이터를 주고받기 위해 어디를 찾아가야 할지 알려주는 역할을 합니다.",
+            "ipv4_vs_ipv6_title": "IPv4와 IPv6 주소의 차이",
+            "ipv4_title": "IPv4 주소 (기존 방식)",
+            "ipv4_format": "<strong>형식:</strong> 192.168.1.1 (네 개의 숫자가 점으로 구분됨)",
+            "ipv4_total": "<strong>총 개수:</strong> 약 43억 개",
+            "ipv4_desc": "가장 널리 쓰이는 표준 형식이지만, 인터넷 인구 폭증으로 인해 주소가 거의 고갈된 상태입니다.",
+            "ipv6_title": "IPv6 주소 (최신 방식)",
+            "ipv6_format": "<strong>형식:</strong> 2001:0db8:85a3::... (8개 그룹의 16진수)",
+            "ipv6_total": "<strong>총 개수:</strong> 거의 무한대 (340 조의 조의 조... 배)",
+            "ipv6_desc": "주소 부족 문제를 해결하기 위해 고안된 새로운 체계로, 점차 IPv4를 대체해 가고 있습니다.",
+            "why_check_title": "내 IP를 확인해야 하는 이유",
+            "why_check_desc": "네트워크 연결 장애가 발생했을 때 기본적인 주소 할당 상태를 점검하거나, 해외 사이트 접속 제한이 있을 때 내 IP 위치가 어디로 잡히는지 확인하기 위해 사용합니다. 특히 VPN 사용 시 실제 내 주소가 잘 숨겨지고 있는지 확인하는 용도로 매우 유용합니다.",
+            "public_vs_private_title": "공인 IP vs 사설 IP",
+            "public_ip_title": "🌐 공인 IP (Public IP)",
+            "public_ip_desc": "인터넷 세상에서 전 세계적으로 고유한 주소입니다. 외부 사이트가 나를 식별할 때 쓰입니다.",
+            "public_ip_example": "<strong>예시:</strong> 203.0.113.45",
+            "public_ip_note": "통신사가 여러분에게 직접 부여하는 주소로, 외부와 소통할 때 쓰입니다.",
+            "private_ip_title": "🏠 사설 IP (Private IP)",
+            "private_ip_desc": "집이나 사무실 공유기 내부에서만 쓰이는 주소입니다. 인터넷에서는 보이지 않습니다.",
+            "private_ip_example": "<strong>예시:</strong> 192.168.1.100",
+            "private_ip_note": "스마트폰, 노트북, TV 등을 공유기에 연결했을 때 내부적으로 서로를 구분하기 위해 쓰입니다.",
+            "security_title": "IP 주소와 보안 및 프라이버시",
+            "security_desc1": "내 IP 주소는 대략적인 거주 도시나 국가 등의 위치 정보를 담고 있습니다. 비록 구체적인 동호수까지 노출되지는 않지만, 마케팅 업체 등이 내 활동을 추적하는 데 쓰일 수 있습니다. 본 사이트는 사용자에게 내 정보가 외부에 어떻게 노출되는지 투명하게 보여드림으로써 보안 의식을 높여드립니다.",
+            "security_desc2": "<strong>프라이버시 보호법:</strong> IP 주소를 완벽하게 숨기고 싶다면 VPN을 사용하여 실제 IP 대신 암호화된 가상 서버의 IP를 사용하는 것이 좋습니다. 이 도구를 사용하여 VPN 접속 전후의 IP 변화를 주기적으로 체크해 보세요.",
+            "dynamic_vs_static_title": "유동 IP vs 고정 IP",
+            "dynamic_ip": "<strong>유동 IP:</strong> 주기적으로 또는 공유기를 껐다 켤 때마다 주소가 바뀝니다. 대부분의 일반 가정집 요금제가 이 방식을 사용합니다.",
+            "static_ip": "<strong>고정 IP:</strong> 절대 바뀌지 않는 고정된 주소입니다. 서버 운영이나 특정 보안 시스템 접근을 위해 주로 기업체에서 추가 비용을 내고 사용합니다.",
+            "privacy_tips_title": "보안 및 프라이버시 꿀팁",
+            "privacy_tip1": "• 공개된 커뮤니티나 SNS에 자신의 IP 주소를 굳이 적지 마세요.",
+            "privacy_tip2": "• 공공 무료 Wi-Fi를 쓸 때는 가급적 VPN을 사용하는 것이 안전합니다.",
+            "privacy_tip3": "• 공유기 관리자 페이지에서 비밀번호를 복잡하게 설정하여 외부 접근을 막으세요.",
+            "privacy_tip4": "• 정기적으로 내 IP를 체크하여 모르는 기기가 연결되어 있지는 않은지 감시하세요.",
+            "privacy_tip5": "• 웹브라우저의 시크릿 모드를 써도 IP 주소 자체는 웹사이트에 기록됨을 명심하세요."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "자주 묻는 질문",
+            "q1": "내 IP를 알면 해킹될 위험이 있나요?",
+            "a1": "IP 주소는 공개된 정보이므로 그 자체만으로 큰 위험은 없으나, 보안이 취약한 공유기나 PC를 사용한다면 공격의 대상이 될 수는 있습니다. 항상 보안 패치를 최신으로 유지하세요.",
+            "q2": "위치 정보가 실제와 다르게 나오는 이유는?",
+            "a2": "통신사가 보유한 IP 할당 데이터베이스의 실제 갱신 시점과 차이가 있을 수 있습니다. 보통은 도 단위나 인근 도시 위치로 나타납니다.",
+            "q3": "사설 IP는 여기서 확인할 수 없나요?",
+            "a3": "본 도구는 외부에서 보이는 '공인 IP' 위주로 보여드립니다. 사설 IP는 윈도우 설정이나 공유기 관리 페이지에서 확인하실 수 있습니다."
         }
     },
     "what-is-my-isp": {
         "meta": {
-            "title": "[Pending Translation] What is My ISP? - Check Internet Service Provider Free",
-            "description": "[Pending Translation] Find out your Internet Service Provider (ISP) instantly. Check ISP name, organization, ASN, and IP address information for free.",
-            "h1": "[Pending Translation] What is My ISP?",
-            "subtitle": "[Pending Translation] Identify your Internet Service Provider with connection details"
+            "title": "내 통신사(ISP) 확인 - 현재 인터넷 제공업체 조회 무료 도구",
+            "description": "현재 접속 중인 인터넷 서비스 제공업체(ISP) 정보를 즉시 확인하세요. 업체명, 네트워크 조직, ASN 정보를 무료로 제공합니다.",
+            "h1": "내 통신사 확인하기",
+            "subtitle": "내가 쓰고 있는 인터넷 회선 업체와 상세 네트워크 정보를 확인하세요"
         },
         "content": {
-            "loading": "[Pending Translation] Loading ISP information...",
-            "your_isp_title": "[Pending Translation] Your Internet Service Provider",
-            "network_label": "[Pending Translation] Network",
-            "location_label": "[Pending Translation] Location",
-            "main_title": "[Pending Translation] What Is My ISP - Internet Service Provider Lookup Tool",
-            "main_desc": "[Pending Translation] Instantly identify your Internet Service Provider (ISP), organization name, network details, and connection information. Our free ISP lookup tool reveals your ISP name, ASN (Autonomous System Number), IP address, location, and network infrastructure. Perfect for verifying VPN connections, troubleshooting network issues, confirming business internet lines, and understanding your network routing.",
-            "info_title": "[Pending Translation] What Information Can You Find?",
-            "info1": "[Pending Translation] <strong>ISP Name:<\/strong> The company providing your internet connection",
-            "info2": "[Pending Translation] <strong>Organization:<\/strong> The organization or entity managing your network connection",
-            "info3": "[Pending Translation] <strong>ASN:<\/strong> Unique network identifier for routing and peering",
-            "info4": "[Pending Translation] <strong>Location:<\/strong> City, region, and country associated with your connection",
-            "info5": "[Pending Translation] <strong>Network Details:<\/strong> IP range, subnet information, and network infrastructure data",
-            "why_use_title": "[Pending Translation] Why Use This Tool?",
-            "why_use1": "[Pending Translation] Verify you're connected through the correct internet provider",
-            "why_use2": "[Pending Translation] Troubleshoot network connectivity and performance issues",
-            "why_use3": "[Pending Translation] Check if you're using a VPN or proxy service correctly",
-            "why_use4": "[Pending Translation] Identify your network for security and privacy purposes",
-            "why_use5": "[Pending Translation] Verify ISP claims about service coverage and infrastructure",
-            "why_use6": "[Pending Translation] Research network routing and peering relationships",
-            "why_use7": "[Pending Translation] Confirm business internet connections and dedicated lines",
-            "why_use8": "[Pending Translation] Detect unauthorized network access or connection hijacking",
-            "asn_title": "[Pending Translation] Understanding ASN (Autonomous System Number)",
-            "asn_desc": "[Pending Translation] An Autonomous System Number (ASN) is a globally unique identifier assigned to a network or group of networks under a single administrative control. ISPs, large organizations, and content delivery networks each have their own ASN. This number is used in BGP (Border Gateway Protocol) routing to determine how internet traffic flows between different networks. Knowing your ASN helps identify your network provider and understand routing paths.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_case1_title": "[Pending Translation] 🔧 Network Troubleshooting",
-            "use_case1_desc": "[Pending Translation] Identify ISP-related issues, verify routing paths, and diagnose connection problems",
-            "use_case2_title": "[Pending Translation] 🔒 VPN Verification",
-            "use_case2_desc": "[Pending Translation] Confirm your VPN is working by checking if ISP changes when connected",
-            "use_case3_title": "[Pending Translation] 🛡️ Security Audits",
-            "use_case3_desc": "[Pending Translation] Verify connection authenticity and detect unauthorized network access",
-            "use_case4_title": "[Pending Translation] 💼 Business Verification",
-            "use_case4_desc": "[Pending Translation] Confirm dedicated business lines and enterprise internet connections",
-            "isp_types_title": "[Pending Translation] Types of ISPs",
-            "isp_type1": "[Pending Translation] <strong>DSL ISPs:<\/strong> Internet over telephone lines (ADSL, VDSL)",
-            "isp_type2": "[Pending Translation] <strong>Cable ISPs:<\/strong> High-speed internet via coaxial cable infrastructure",
-            "isp_type3": "[Pending Translation] <strong>Fiber Optic ISPs:<\/strong> Ultra-fast connections using fiber optic cables",
-            "isp_type4": "[Pending Translation] <strong>Wireless\/Mobile ISPs:<\/strong> 4G\/5G cellular internet connections",
-            "isp_type5": "[Pending Translation] <strong>Satellite ISPs:<\/strong> Internet via satellite for remote areas",
-            "isp_type6": "[Pending Translation] <strong>Business ISPs:<\/strong> Dedicated enterprise-grade connections with SLAs",
-            "privacy_note_title": "[Pending Translation] Privacy Note",
-            "privacy_note_desc": "[Pending Translation] Your ISP can see all unencrypted internet traffic and the websites you visit (but not HTTPS content). They may log connection data, browsing history, and DNS queries. Use a VPN to encrypt your traffic and prevent ISP monitoring. Our tool only displays publicly available information that websites can already see."
+            "loading": "통신사 정보 분석 중...",
+            "your_isp_title": "접속 중인 인터넷 통신사(ISP)",
+            "network_label": "네트워크명",
+            "location_label": "접속 위치",
+            "main_title": "인터넷 서비스 제공업체(ISP) 분석 도구",
+            "main_desc": "내가 가입해서 사용하는 인터넷 회선이 정확히 어떤 업체의 네트워크를 타고 있는지 궁금하신가요? 당사의 무료 도구는 ISP 이름, 소속된 조직, ASN(자율 시스템 번호), 그리고 현재 기기에 할당된 IP 주소와 위치 정보를 즉시 보여드립니다. VPN이 정상 작동하는지 확인하거나, 공용 네트워크의 보안 등급을 평가할 때 필수적인 도구입니다.",
+            "info_title": "어떤 정보를 알 수 있나요?",
+            "info1": "<strong>통신사 이름 (ISP Name):</strong> KT, SK브로드밴드, LG U+와 같은 실제 회선 제공 업체명",
+            "info2": "<strong>조직명 (Organization):</strong> 네트워크망을 실제 운영하고 관리하는 법인 또는 기관 정보",
+            "info3": "<strong>ASN (자율 시스템 번호):</strong> 전 세계 인터넷 라우팅을 위해 부여된 네트워크 고유 식별 번호",
+            "info4": "<strong>접속 지역:</strong> 현재 내 회선이 연결된 게이트웨이의 대략적인 지리적 위치",
+            "info5": "<strong>서브넷 정보:</strong> 내 IP가 속한 통신사의 네트워크 대역폭 및 세부 인프라 데이터",
+            "why_use_title": "이 도구의 활용 방법",
+            "why_use1": "가입한 통신사의 회선이 광고한 업체와 일치하는지 확인",
+            "why_use2": "특정 사이트 접속 장애 시 해당 통신사의 망 문제인지 판별",
+            "why_use3": "VPN을 켰을 때 실제 내 원래 통신사가 잘 가려지는지 검증",
+            "why_use4": "공공장소나 직장 내 네트워크가 안전한 업체에 의해 유지되는지 확인",
+            "why_use5": "현재 내가 쓰고 있는 인터넷망이 일반 회선인지 전용선인지 파악",
+            "why_use6": "글로벌 네트워크 경로와 라우팅 성능을 분석하기 위한 기본 정보 확보",
+            "why_use7": "법인이나 비즈니스 회선의 전용망 할당 여부 확인",
+            "why_use8": "비인가된 인터넷 우회 및 접속 경로가 생기지는 않았는지 보안 점검",
+            "asn_title": "ASN (Autonomous System Number)이란?",
+            "asn_desc": "자율 시스템 번호(ASN)는 단일 관리 주체 하에 있는 거대 네트워크(또는 네트워크 그룹)에 부여된 전 세계 고유 번호입니다. ISP나 구글 같은 거대 IT 기업은 각각 자신만의 ASN을 가지고 있으며, 이 번호를 통해 전 세계 인터넷 트래픽이 어떤 길로 갈지가 결정(BGP 라우팅)됩니다. 내 인터넷 연결의 '주춧돌' 같은 정보라고 이해하시면 됩니다.",
+            "use_cases_title": "주요 활용 분야",
+            "use_case1_title": "🔧 네트워크 장애 진단",
+            "use_case1_desc": "특정 통신사 이용자들 중에서만 발생하는 오류를 잡아내고 해결 방안을 모색할 수 있습니다.",
+            "use_case2_title": "🔒 VPN 신뢰도 검증",
+            "use_case2_desc": "VPN 작동 중에는 ISP 이름이 VPN 업체의 네트워크 이름으로 바뀌어야 합니다. 이를 통해 데이터 누출 여부를 알 수 있습니다.",
+            "use_case3_title": "🛡️ 보안 및 인증 감사",
+            "use_case3_desc": "의심스러운 접속이 어떤 국가나 어떤 통신사로부터 들어왔는지 분석하여 위험을 사전에 차단합니다.",
+            "use_case4_title": "💼 기업 보안 관리",
+            "use_case4_desc": "사내 직원이 승인된 업무용 전용선을 쓰고 있는지, 혹은 외부 핫스팟으로 우회 중인지 체크합니다.",
+            "isp_types_title": "인터넷 회선의 주요 종류",
+            "isp_type1": "<strong>광랜 (Fiber):</strong> 빛을 이용한 초고속 전송으로 가장 빠른 속도 보장",
+            "isp_type2": "<strong>케이블 (Cable):</strong> TV 동축 케이블 공유망을 이용하는 보편적인 방식",
+            "isp_type3": "<strong>전화선 (DSL/VDSL):</strong> 기존 구리 전화선을 개선하여 사용하는 고전적 방식",
+            "isp_type4": "<strong>무선/모바일 (Mobile):</strong> 4G/5G 등 기지국 전파를 이용하는 무선 통신",
+            "isp_type5": "<strong>위성 (Satellite):</strong> 오지나 격오지에서 인공위성을 직접 수신하는 방식",
+            "isp_type6": "<strong>전용 회선:</strong> 기업체를 위한 속도 보장형 독립 네트워크 서비스",
+            "privacy_note_title": "프라이버시 알림",
+            "privacy_note_desc": "내가 쓰고 있는 통신사는 내가 어떤 사이트를 보는지 원칙적으로 다 볼 수 있습니다(암호화되지 않은 경우). 만약 통신사의 감시로부터 완벽히 벗어나고 싶다면 VPN 사용을 권장합니다. 본 도구는 웹사이트가 공통적으로 수집할 수 있는 기본적인 '망 정보'만을 보여드립니다."
         },
         "results": {
-            "ip_address": "",
-            "asn": ""
+            "ip_address": "내 IP:",
+            "asn": "ASN 번호:"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "자주 묻는 질문",
+            "q1": "ISP 이름이 실제 계약한 회사와 다르게 나옵니다.",
+            "a1": "소규모 알뜰 인터넷이나 지역 케이블사의 경우, 대형 통신사의 망을 임대(재판매)하여 쓰기 때문에 결과에 모회사의 이름이 나올 수 있습니다.",
+            "q2": "ASN 정보를 공개해도 안전한가요?",
+            "a2": "네, ASN은 전 세계적으로 공개된 공용 정보이므로 여러분의 기기 개인 정보와는 무관합니다.",
+            "q3": "해외 망을 경유한다고 나오는데 문제인가요?",
+            "a3": "특정 통신사나 보안 솔루션 환경에서는 트래픽이 해외 지점을 거쳐 나가는 경우가 있으나 정상적인 연결일 확률이 높습니다."
         },
         "js": {
-            "error_loading": ""
+            "error_loading": "통신사 정보를 불러오지 못했습니다"
         }
     },
     "whois-lookup": {
         "meta": {
-            "title": "[Pending Translation] WHOIS Lookup Tool - Domain Registration Information Free",
-            "description": "[Pending Translation] Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.",
-            "h1": "[Pending Translation] WHOIS Lookup Tool",
-            "subtitle": "[Pending Translation] Query WHOIS database for domain registration & ownership details"
+            "title": "WHOIS 조회 도구 - 도메인 소유자 및 등록 정보 무료 확인",
+            "description": "도메인의 등록 대행자, 네임서버, 만료일 및 소유 정보를 무료로 점검하세요. WHOIS 데이터베이스를 즉시 쿼리하여 상세 내역을 제공합니다.",
+            "h1": "WHOIS 조회 도구",
+            "subtitle": "도메인 등록 정보 및 소유권 내역을 WHOIS 데이터베이스에서 즉시 확인하세요"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup WHOIS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "domain_label": "도메인 이름",
+            "domain_placeholder": "example.com",
+            "button": "WHOIS 조회하기",
+            "button_loading": "조회 요청 중..."
         },
         "content": {
-            "form_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "what_is_title": "[Pending Translation] What is WHOIS Lookup?",
-            "what_is_desc": "[Pending Translation] WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.",
-            "why_use_title": "[Pending Translation] Why Use WHOIS Lookup?",
-            "why_use_desc": "[Pending Translation] WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors' domains.",
-            "key_info_title": "[Pending Translation] Key Information Provided",
-            "key_info1": "[Pending Translation] <strong>Registrant Information:<\/strong> Domain owner details (may be privacy protected)",
-            "key_info2": "[Pending Translation] <strong>Registration Dates:<\/strong> When domain was registered and last updated",
-            "key_info3": "[Pending Translation] <strong>Expiration Date:<\/strong> When domain registration expires",
-            "key_info4": "[Pending Translation] <strong>Registrar:<\/strong> Company managing the domain registration",
-            "key_info5": "[Pending Translation] <strong>Name Servers:<\/strong> DNS servers hosting the domain",
-            "key_info6": "[Pending Translation] <strong>Domain Status:<\/strong> Current status codes and locks",
-            "how_to_title": "[Pending Translation] How to Use",
-            "how_to1": "[Pending Translation] Enter the domain name you want to lookup",
-            "how_to2": "[Pending Translation] Click \"Lookup WHOIS\" button",
-            "how_to3": "[Pending Translation] Review comprehensive registration information",
-            "how_to4": "[Pending Translation] Use the data for your research or verification needs",
-            "privacy_title": "[Pending Translation] Privacy and WHOIS",
-            "privacy_desc": "[Pending Translation] Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws."
+            "form_hint": "도메인 이름만 입력하세요 (http:// 생략)",
+            "what_is_title": "WHOIS 조회란 무엇인가요?",
+            "what_is_desc": "WHOIS는 도메인 이름 등록 정보를 제공하는 프로토콜입니다. 특정 도메인을 누가 소유하고 있는지, 언제 등록되었고 언제 만료되는지, 어떤 네임서버를 사용하는지 등의 기술적인 관리 정보를 전 세계에 공개하는 신원 조회 서비스입니다.",
+            "why_use_title": "WHOIS 조회가 필요한 이유",
+            "why_use_desc": "도메인 소유권을 확인하거나, 내가 사고 싶은 도메인이 비어 있는지, 혹은 언제 만료되는지 체크할 때 필수입니다. 또한 저작권 침해 사이트나 의심스러운 도메인의 정보를 추적하여 관리자에게 연락해야 할 때, 혹은 경쟁사의 기술 인프라를 분석할 때 유용하게 쓰입니다.",
+            "key_info_title": "제공되는 주요 정보",
+            "key_info1": "<strong>등록인(Registrant) 정보:</strong> 도메인 소유자의 이름 및 연락처 (정보 보호 시 숨김 처리 가능)",
+            "key_info2": "<strong>등록/수정 일자:</strong> 도메인이 처음 생성된 날짜와 마지막 설정 변경일",
+            "key_info3": "<strong>만료 예정일:</strong> 도메인 권리가 사라지는 시점 (연장 여부 판단 지표)",
+            "key_info4": "<strong>등록 대행자 (Registrar):</strong> 가비아, 고대디 등 도메인 관리를 대행하는 업체명",
+            "key_info5": "<strong>네임서버 (NS):</strong> 해당 도메인의 연결 정보를 담고 있는 DNS 서버 주소",
+            "key_info6": "<strong>도메인 상태:</strong> 변경 금지(Lock) 설정이나 이전 대기 모드 등의 상태값",
+            "how_to_title": "사용 방법",
+            "how_to1": "조회하고 싶은 도메인 주소를 입력창에 적어주세요.",
+            "how_to2": "'WHOIS 조회하기' 버튼을 클릭합니다.",
+            "how_to3": "처리된 방대한 텍스트 데이터에서 필요한 소유권 상세 내역을 검토하세요.",
+            "how_to4": "복사하거나 저장하여 추후 검증 자료로 활용할 수 있습니다.",
+            "privacy_title": "프라이버시 보호와 WHOIS",
+            "privacy_desc": "개인정보 보호법(GDPR 등) 강화로 인해 소유자의 상세 이메일이나 주소는 'Privacy Protection' 서비스에 의해 숨겨지는 경우가 많습니다. 이는 스팸 방지를 위한 정당한 조치이며, 대신 등록 대행자를 통해서만 소유자에게 연락할 수 있는 창구를 제공합니다. 만약 본인의 정보가 너무 많이 노출되어 있다면 이용 중인 도메인 관리 업체에서 개인정보 보호 서비스를 신청하시기 바랍니다."
         },
         "results": {
-            "title": ""
+            "title": "WHOIS 조회 상세 내용"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": ""
+            "title": "자주 묻는 질문",
+            "q1": "개인 정보가 아예 안 나오는데 왜 그런가요?",
+            "a1": "대부분의 대행자가 개인정보 보호 서비스를 기본으로 제공하거나, 법령에 따라 비공개(Redacted) 처리를 하기 때문입니다.",
+            "q2": "만료일이 지나면 바로 내가 살 수 있나요?",
+            "a2": "아니요. 만료 후에도 기존 소유자에게 연기 기회를 주는 유예 기간(Grace Period)이 수십 일 정도 유지됩니다.",
+            "q3": ".kr 도메인도 여기서 조회가 되나요?",
+            "a3": "네, .com 같은 글로벌 도메인은 물론 .kr, .cn 같은 국가 코드 도메인 정보도 함께 쿼리하여 보여드립니다.",
+            "q4": "조회 기록이 남아서 도메인 가격이 오르나요?",
+            "a4": "당사는 조회 기록을 제삼자에게 팔거나 도메인 선점을 시도하지 않으므로 안심하고 조회하셔도 됩니다."
         }
     }
 }

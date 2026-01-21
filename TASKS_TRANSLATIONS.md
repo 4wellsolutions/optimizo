@@ -16,7 +16,7 @@
 13. [x] Danish (da) - **100% Completed**
 14. [x] Swedish (sv) - **100% Completed**
 15. [x] Japanese (ja) - **100% Completed**
-16. [ ] Korean (ko) - Pending
+16. [x] Korean (ko) - **100% Completed**
 17. [ ] Finnish (fi) - Pending
 18. [ ] Norwegian (no) - Pending
 19. [ ] Czech (cs) - Pending
@@ -37,6 +37,19 @@ For each incomplete language, the following files must be translated:
 9. `time.json`
 10. `youtube.json`
 11. `text.json`
+
+## Korean (ko) Progress
+- [x] `converters.json`
+- [x] `development.json`
+- [x] `seo.json`
+- [x] `image.json`
+- [x] `network.json`
+- [x] `document.json`
+- [x] `spreadsheet.json`
+- [x] `utility.json`
+- [x] `time.json`
+- [x] `youtube.json`
+- [x] `text.json`
 
 ## German (de) Progress
 - [x] `converters.json`
