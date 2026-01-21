@@ -1,850 +1,367 @@
 {
     "base64-to-image-converter": {
         "meta": {
-            "title": "[Pending Translation] Base64 to Image Converter - Decode Base64 Output | Optimizo",
-            "description": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF). Free online decoder and visualizer.",
-            "h1": "[Pending Translation] Decode Base64 to Image",
-            "subtitle": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF) instantly"
+            "title": "Base64-kuva-muunnin - Pura Base64-koodi",
+            "description": "Muunna Base64-koodatut merkkijonot takaisin kuviksi (PNG, JPG, GIF). Ilmainen online-dekooderi.",
+            "h1": "Pura Base64 kuvaksi",
+            "subtitle": "Muunna Base64-koodatut merkkijonot takaisin kuviksi (PNG, JPG, GIF) välittömästi"
         },
         "input": {
-            "title": "[Pending Translation] Paste Base64 String",
-            "desc": "[Pending Translation] Paste your code below to visualize the image",
-            "placeholder": "[Pending Translation] data:image\/png;base64,iVBORw0KGgo...",
-            "btn_decode": "[Pending Translation] Decode Image"
+            "title": "Liitä Base64-merkkijono",
+            "desc": "Liitä koodisi alapuolelle visualisoidaksesi kuvan",
+            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
+            "btn_decode": "Pura kuva"
         },
         "result": {
-            "image_alt": "[Pending Translation] Decoded Image",
-            "success": "[Pending Translation] Image Decoded Successfully",
-            "btn_download": "[Pending Translation] Download Image",
-            "btn_clear": "[Pending Translation] Clear Pattern"
+            "image_alt": "Purettu kuva",
+            "success": "Kuva purettu onnistuneesti",
+            "btn_download": "Lataa kuva",
+            "btn_clear": "Tyhjennä"
         },
         "content": {
-            "title": "[Pending Translation] Decode Base64 to Image",
-            "p1": "[Pending Translation] Found a long string of random characters starting with <code>data:image\/...<\/code> and don't know what it is? It's likely a Base64-encoded image.",
-            "p2": "[Pending Translation] Our <strong>Base64 to Image Decoder<\/strong> converts that text string back into a visible image file (PNG, JPG, GIF, etc.) that you can view and download to your computer.",
+            "title": "Pura Base64 kuvaksi",
+            "p1": "Löytyikö pitkä rimsu satunnaisia merkkejä, joka alkaa <code>data:image/...</code>? Se on todennäköisesti Base64-koodattu kuva.",
+            "p2": "Meidän <strong>Base64-kuva-dekooderimme</strong> muuntaa tekstin takaisin näkyväksi kuvaksi (PNG, JPG, GIF jne.), jonka voit ladata koneellesi.",
             "features": {
                 "preview": {
-                    "title": "[Pending Translation] Instant Preview",
-                    "desc": "[Pending Translation] See the image immediately. We parse the binary data and render it on your screen."
+                    "title": "Välitön esikatselu",
+                    "desc": "Näet kuvan heti. Jäsennämme binääritiedon ja näytämme sen ruudullasi."
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detection",
-                    "desc": "[Pending Translation] We automatically detect the file format (PNG, JPEG, GIF) from the header of the Base64 string."
+                    "title": "Automaattinen tunnistus",
+                    "desc": "Tunnistamme tiedostomuodon (PNG, JPEG, GIF) automaattisesti koodin alusta."
                 },
                 "download": {
-                    "title": "[Pending Translation] Download File",
-                    "desc": "[Pending Translation] Save the decoded result as a real image file to your hard drive with one click."
+                    "title": "Lataa tiedosto",
+                    "desc": "Tallenna purettu tulos oikeana kuvatiedostona yhdellä klikkauksella."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Decode?",
+                "title": "Miten purkaminen tapahtuu?",
                 "list": [
-                    "[Pending Translation] Paste your Base64 string into the textarea.",
-                    "[Pending Translation] We instantly attempt to read the string.",
-                    "[Pending Translation] If valid, the image appears on the left.",
-                    "[Pending Translation] Click \"Download Image\" to save it."
+                    "Liitä Base64-koodi tekstikenttään.",
+                    "Yritämme lukea koodin välittömästi.",
+                    "Jos koodi on kelvollinen, kuva ilmestyy vasemmalle.",
+                    "Klikkaa \"Lataa kuva\" tallentaaksesi sen."
                 ]
             },
             "use_cases": {
-                "title": "[Pending Translation] Common Use Cases",
+                "title": "Yleisimmät käyttötapaukset",
                 "list": [
-                    "[Pending Translation] Debugging: Checking what image data is being sent in API responses or stored in databases.",
-                    "[Pending Translation] Recovery: Extracting images embedded in CSS files or HTML templates.",
-                    "[Pending Translation] Verification: Ensuring a Base64 string is not corrupted."
+                    "Debuggaus: Tarkista, mitä kuvadataa API-vastauksissa liikkuu.",
+                    "Palautus: Poimi kuvia CSS- tai HTML-tiedostoista.",
+                    "Varmistus: Varmista, ettei Base64-merkkijono ole korruptoitunut."
                 ]
             }
         },
         "js": {
-            "input_required": "[Pending Translation] Please paste a Base64 string first.",
-            "invalid_error": "[Pending Translation] Invalid Base64 string or unsupported image format."
+            "input_required": "Ole hyvä ja liitä Base64-koodi ensin.",
+            "invalid_error": "Kelvoton Base64-koodi tai tukematon kuvamuoto."
         }
     },
     "heic-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] HEIC to JPG Converter - Convert iPhone Photos Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format. Free, private, client-side converter.",
-            "h1": "[Pending Translation] HEIC to JPG Converter",
-            "subtitle": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format"
+            "title": "HEIC-JPG-muunnin - Muunna iPhonen kuvat verkossa",
+            "description": "Muunna HEIC- ja HEIF-kuvat iPhonesta standardiin JPG-muotoon. Ilmainen ja turvallinen selaimeen pohjautuva muunnin.",
+            "h1": "HEIC-JPG-muunnin",
+            "subtitle": "Muunna HEIC/HEIF-kuvat iPhonesta standardiin JPG-muotoon välittömästi"
         },
         "input": {
-            "title": "[Pending Translation] Upload HEIC File",
-            "desc": "[Pending Translation] Drag & drop your .heic or .heif file here",
-            "drop_title": "[Pending Translation] Drop HEIC file here",
-            "drop_desc": "[Pending Translation] Supports HEIC\/HEIF (Max 20MB)"
+            "title": "Lataa HEIC-tiedosto",
+            "desc": "Raahaa ja pudota .heic tai .heif tiedosto tähän",
+            "drop_title": "Pudota HEIC-tiedosto tähän",
+            "drop_desc": "Tukee HEIC/HEIF (Max 20 Mt)"
         },
         "loading": {
-            "title": "[Pending Translation] Processing HEIC file...",
-            "desc": "[Pending Translation] Larger files may take a few seconds."
+            "title": "Käsitellään HEIC-tiedostoa...",
+            "desc": "Suurempien tiedostojen käsittely voi kestää hetken."
         },
         "result": {
-            "image_alt": "[Pending Translation] Preview",
-            "converted_to": "[Pending Translation] Converted to:",
-            "btn_download": "[Pending Translation] Download JPG Image"
+            "image_alt": "Esikatselu",
+            "converted_to": "Muunnettu muotoon:",
+            "btn_download": "Lataa JPG-kuva"
         },
         "content": {
-            "title": "[Pending Translation] Convert HEIC to JPG Instantly",
-            "p1": "[Pending Translation] Apple's High Efficiency Image Format (HEIC) is great for saving space on your iPhone, but it can be a nightmare to open on Windows, Android, or older software. Our <strong>HEIC to JPG Converter<\/strong> solves this problem instantly.",
-            "p2": "[Pending Translation] We use advanced local processing capabilities to convert your photos without ever uploading them to a cloud server. This is the <strong>safest way<\/strong> to convert personal photos.",
+            "title": "Muunna HEIC JPG-muotoon välittömästi",
+            "p1": "Applen HEIC-muoto säästää tilaa iPhonessa, mutta sen avaaminen Windowsilla tai Androidilla voi olla vaikeaa. Meidän muuntimemme ratkaisee tämän ongelman.",
+            "p2": "Käytämme selaimesi suorituskykyä kuvien muuntamiseen paikallisesti, joten kuviasi ei ladata pilveen. Tämä on <strong>turvallisin tapa</strong> muuntaa omia kuviasi.",
             "features": {
                 "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Your personal photos stay on your device. We use client-side logic for zero-risk conversion."
+                    "title": "100 % yksityinen",
+                    "desc": "Kuvasi pysyvät laitteellasi. Käytämme selainpohjaista logiikkaa."
                 },
                 "compatibility": {
-                    "title": "[Pending Translation] Broad Compatibility",
-                    "desc": "[Pending Translation] Convert HEIC and HEIF files from any iOS version (iPhone\/iPad) to universally accepted JPGs."
+                    "title": "Laaja yhteensopivuus",
+                    "desc": "Muunna HEIC-tiedostot kaikista iOS-versioista standardeiksi JPG-kuviksi."
                 },
                 "fast": {
-                    "title": "[Pending Translation] Fast & Free",
-                    "desc": "[Pending Translation] No software installation needed. Just drag, drop, and convert in seconds."
+                    "title": "Nopea ja ilmainen",
+                    "desc": "Ei ohjelmistoasennuksia. Raahaa, pudota ja muunna sekunneissa."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert HEIC to JPG?",
+                "title": "Miten muuntaa HEIC JPG-muotoon?",
                 "list": [
-                    "[Pending Translation] Drag your .heic or .heif file into the upload zone.",
-                    "[Pending Translation] The tool will automatically read and convert the file using advanced browser libraries.",
-                    "[Pending Translation] See a preview of your converted JPG image immediately.",
-                    "[Pending Translation] Click the \"Download JPG Image\" button to save it to your computer."
+                    "Raahaa .heic-tiedosto latausalueelle.",
+                    "Työkalu muuntaa tiedoston automaattisesti selaimessa.",
+                    "Näet esikatselun muunnetusta kuvasta heti.",
+                    "Klikkaa latauspainiketta tallentaaksesi kuvan."
                 ]
-            },
-            "details": {
-                "title": "[Pending Translation] Technical Details",
-                "p1": "[Pending Translation] HEIC (High Efficiency Image Container) uses modern compression methods to keep file sizes small. However, Windows and Android often struggle to open them.",
-                "p2": "[Pending Translation] Our tool decodes the HEIC data and re-encodes it as a standardized JPEG image with 90% quality retention, ensuring your photos look great while being accessible everywhere."
-            },
-            "faq": {
-                "title": "[Pending Translation] Common Questions",
-                "q1": "[Pending Translation] Can I convert iPhone Live Photos?",
-                "a1": "[Pending Translation] You can convert the still image part of the Live Photo if you transfer the .HEIC file to your computer first.",
-                "q2": "[Pending Translation] Is quality lost during conversion?",
-                "a2": "[Pending Translation] We use a high-quality setting (0.9 out of 1.0) to ensure minimal visual difference. JPG is a lossy format, but the difference is usually negligible to the human eye."
             }
         },
         "js": {
-            "error": "[Pending Translation] Error converting HEIC file: "
+            "error": "Virhe HEIC-tiedoston muuntamisessa: "
         }
     },
     "ico-converter": {
         "meta": {
-            "title": "[Pending Translation] ICO Converter - Create Favicons Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Free online favicon generator.",
-            "h1": "[Pending Translation] ICO Converter & Favicon Generator",
-            "subtitle": "[Pending Translation] Convert images to ICO format for website favicons with custom sizing"
+            "title": "ICO-muunnin - Luo faviconeja verkossa",
+            "description": "Muunna kuvat ICO-muotoon verkkosivujen faviconeja varten. Tukee useita kokoja (16x16, 32x32 jne.).",
+            "h1": "ICO-muunnin & Favicon-generaattori",
+            "subtitle": "Muunna kuvat ICO-muotoon faviconeja varten mukautetuilla koilla"
         },
         "input": {
-            "title": "[Pending Translation] Upload Image to Convert",
-            "desc": "[Pending Translation] Drag & drop your PNG\/JPG file",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Fast conversion to .ico"
+            "title": "Lataa muunnettava kuva",
+            "desc": "Raahaa ja pudota PNG/JPG-tiedosto",
+            "drop_title": "Pudota tiedosto tähän",
+            "drop_desc": "Nopea muunnos .ico-muotoon"
         },
         "editor": {
-            "original": "[Pending Translation] Original",
-            "image_alt": "[Pending Translation] Preview",
-            "favicon": "[Pending Translation] Favicon",
-            "size_label": "[Pending Translation] Icon Size",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_download": "[Pending Translation] Download Favicon (.ico)"
+            "original": "Alkuperäinen",
+            "image_alt": "Esikatselu",
+            "favicon": "Favicon",
+            "size_label": "Kuvakkeen koko",
+            "output_format": "Tulostusmuoto:",
+            "btn_download": "Lataa Favicon (.ico)"
         },
         "content": {
-            "title": "[Pending Translation] Free ICO Converter & Favicon Generator",
-            "p1": "[Pending Translation] Creating a website? You need a favicon - that little icon that appears in browser tabs.",
-            "p2": "[Pending Translation] Our <strong>ICO Converter<\/strong> transforms any PNG or JPG image into a standard Microsoft `.ico` file. We support all common favicon sizes to ensure your brand looks sharp on every device.",
+            "title": "Ilmainen ICO-muunnin",
+            "p1": "Rakennatko verkkosivua? Tarvitset faviconin - sen pienen ikonin, joka näkyy selaimen välilehdissä.",
+            "p2": "Meidän <strong>ICO-muuntimemme</strong> muuttaa PNG- tai JPG-kuvat .ico-tiedostoiksi.",
             "features": {
                 "sizes": {
-                    "title": "[Pending Translation] Standard Sizes",
-                    "desc": "[Pending Translation] Choose from 16x16, 32x32, 48x48, 64x64, or 128x128 pixels. Or select all!"
+                    "title": "Standardikoot",
+                    "desc": "Valitse kooksi 16x16, 32x32, 48x48 tai 64x64 pikseliä."
                 },
                 "resize": {
-                    "title": "[Pending Translation] Auto-Resizing",
-                    "desc": "[Pending Translation] Upload a large logo, and we'll automatically downscale it smoothly to fit the tiny icon format."
-                },
-                "multi": {
-                    "title": "[Pending Translation] Multi-Icon Support",
-                    "desc": "[Pending Translation] Modern .ico files can contain multiple sizes in one file. We handle that for you."
+                    "title": "Automaattinen koon muutos",
+                    "desc": "Lataa suuri logo, ja me skaalaamme sen sopivaksi pieneen ikoniin."
                 }
-            },
-            "how_to": {
-                "title": "[Pending Translation] Steps to Create Favicon",
-                "list": [
-                    "[Pending Translation] Use a square image (PNG\/JPG) for best results.",
-                    "[Pending Translation] 16x16 (Browser tabs), 32x32 (Taskbar), 48x48 (Desktop).",
-                    "[Pending Translation] See how it looks instantly.",
-                    "[Pending Translation] Get your `favicon.ico` file."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why .ICO format?",
-                "p1": "[Pending Translation] While modern browsers support PNG favicons, the `.ico` format is still the standard for maximum compatibility across all operating systems and legacy browsers (like Internet Explorer)."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image"
+            "invalid_image": "Ole hyvä ja lataa kelvollinen kuva"
         }
     },
     "image-compressor": {
         "meta": {
-            "title": "[Pending Translation] Free Image Compressor - Reduce Image File Size Online",
-            "description": "[Pending Translation] Compress images online for free. Reduce JPG, PNG, and WebP file sizes while maintaining quality.",
-            "h1": "[Pending Translation] Image Compressor",
-            "subtitle": "[Pending Translation] Reduce image file sizes without losing quality"
+            "title": "Ilmainen kuvan pakkaaja - Pienennä kuvatiedostoja verkossa",
+            "description": "Pakkaa kuvat verkossa ilmaiseksi. Pienennä JPG-, PNG- ja WebP-tiedostojen kokoa laadun säilyttäen.",
+            "h1": "Kuvan pakkaaja",
+            "subtitle": "Pienennä kuvien tiedostokokoa menettämättä laatua"
         },
         "editor": {
-            "label_upload": "[Pending Translation] Upload Image",
-            "drop_title": "[Pending Translation] Drop your image here or click to browse",
-            "drop_subtitle": "[Pending Translation] Drag and drop your image or click to select from your device",
-            "supports": "[Pending Translation] Supports JPG, PNG, WebP formats",
-            "label_quality": "[Pending Translation] Compression Quality:",
-            "title_original": "[Pending Translation] Original Image",
-            "label_size": "[Pending Translation] Size:",
-            "title_compressed": "[Pending Translation] Compressed Image",
-            "label_saved": "[Pending Translation] Saved:",
-            "btn_download": "[Pending Translation] Download Compressed Image"
+            "label_upload": "Lataa kuva",
+            "drop_title": "Pudota kuva tähän tai klikkaa selataksesi",
+            "drop_subtitle": "Raahaa kuva tai valitse tiedosto laitteeltasi",
+            "supports": "Tukee JPG, PNG, WebP -muotoja",
+            "label_quality": "Pakkauslaatu:",
+            "title_original": "Alkuperäinen",
+            "label_size": "Koko:",
+            "title_compressed": "Pakattu kuva",
+            "label_saved": "Säästö:",
+            "btn_download": "Lataa pakattu kuva"
         },
         "content": {
-            "p1": "[Pending Translation] Compress your images online for free with our powerful image compression tool. Reduce JPG, PNG, and WebP file sizes by up to 90% while maintaining excellent visual quality. Perfect for optimizing images for websites, social media, email attachments, and faster page loading times.",
-            "why_title": "[Pending Translation] Why Compress Images?",
+            "p1": "Pakkaa kuvasi verkossa ilmaisella työkalullamme. Pienennä JPG-, PNG- ja WebP-tiedostojen kokoa jopa 90 % säilyttäen erinomaisen visuaalisen laadun. Optimoi kuvat verkkosivuille ja someen.",
+            "why_title": "Miksi pakata kuvia?",
             "why_list": [
-                "[Pending Translation] Faster website loading times improve user experience and SEO",
-                "[Pending Translation] Reduce bandwidth usage and hosting costs",
-                "[Pending Translation] Optimize images for mobile devices and slow connections",
-                "[Pending Translation] Meet file size limits for email attachments and uploads",
-                "[Pending Translation] Improve Core Web Vitals and Google PageSpeed scores",
-                "[Pending Translation] Save storage space on your device or server"
+                "Nopeat latausajat parantavat käyttökokemusta ja hakukonenäkyvyyttä (SEO)",
+                "Vähennä kaistanleveyden käyttöä ja säästä tilaa",
+                "Optimoi kuvat hitaammille mobiiliyhteyksille",
+                "Täytä sähköpostiliitteiden kokorajoitukset"
             ],
-            "formats_title": "[Pending Translation] Supported Image Formats",
-            "quality_title": "[Pending Translation] Understanding Compression Quality",
+            "quality_title": "Tietoa pakkauslaadusta",
             "quality_list": [
-                "[Pending Translation] 100% - No compression, original quality (largest file size)",
-                "[Pending Translation] 80-90% - High quality, minimal visible difference (recommended for most uses)",
-                "[Pending Translation] 60-80% - Good quality, noticeable compression at high zoom",
-                "[Pending Translation] 40-60% - Medium quality, visible artifacts but acceptable for web",
-                "[Pending Translation] 10-40% - Low quality, significant quality loss (smallest file size)"
+                "100 % - Ei pakkausta, suurin tiedostokoko",
+                "80-90 % - Suositeltu: minimi ero laadussa, suuri säästö koossa",
+                "60-80 % - Hyvä laatu, pakkaus alkaa näkyä lähellä",
+                "10-40 % - Matala laatu, pienin tiedostokoko"
             ],
-            "how_title": "[Pending Translation] How Image Compression Works",
-            "how_desc": "[Pending Translation] Our tool uses advanced compression algorithms to reduce file size while preserving image quality. For JPG images, we use lossy compression that removes imperceptible details. For PNG, we optimize the color palette and use efficient encoding. All compression happens in your browser - your images never leave your device.",
-            "best_title": "[Pending Translation] Best Practices for Image Compression",
-            "best_list": [
-                "[Pending Translation] Start with high-quality original images for best results",
-                "[Pending Translation] Use 80-90% quality for web images - perfect balance of size and quality",
-                "[Pending Translation] Compress images before uploading to websites or social media",
-                "[Pending Translation] Use JPG for photos, PNG for graphics with transparency",
-                "[Pending Translation] Consider WebP format for modern browsers (smaller files)",
-                "[Pending Translation] Always preview compressed images before downloading",
-                "[Pending Translation] Keep original files as backup before compression"
-            ],
-            "privacy_title": "[Pending Translation] 100% Private & Secure",
-            "privacy_desc": "[Pending Translation] All image compression happens entirely in your browser using JavaScript. Your images are never uploaded to our servers, ensuring complete privacy and security. Your files never leave your device.",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "formats": {
-                "jpg": {
-                    "title": "[Pending Translation] JPG\/JPEG",
-                    "desc": "[Pending Translation] Best for photographs and complex images with many colors. Lossy compression."
-                },
-                "png": {
-                    "title": "[Pending Translation] PNG",
-                    "desc": "[Pending Translation] Best for graphics, logos, and images with transparency. Lossless or lossy compression."
-                },
-                "webp": {
-                    "title": "[Pending Translation] WebP",
-                    "desc": "[Pending Translation] Modern format with superior compression. Smaller files than JPG\/PNG with same quality."
-                }
-            },
             "faq": {
-                "q1": "[Pending Translation] Will compressing images reduce quality?",
-                "a1": "[Pending Translation] Yes, but minimally. At 80-90% quality, the difference is imperceptible to the human eye. You can adjust the quality slider to find the perfect balance between file size and visual quality.",
-                "q2": "[Pending Translation] What's the difference between lossy and lossless compression?",
-                "a2": "[Pending Translation] Lossy compression (JPG) removes some image data to achieve smaller files, while lossless compression (PNG) reduces file size without losing any data. Lossy gives better compression but slight quality loss.",
-                "q3": "[Pending Translation] How much can I reduce image file size?",
-                "a3": "[Pending Translation] Typically 50-90% reduction depending on the original image and quality settings. Photos often compress more than graphics. WebP format provides the best compression.",
-                "q4": "[Pending Translation] Are my images uploaded to your server?",
-                "a4": "[Pending Translation] No! All compression happens in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.",
-                "q5": "[Pending Translation] What image formats are supported?",
-                "a5": "[Pending Translation] We support JPG\/JPEG, PNG, and WebP formats. These cover 99% of web images. The tool automatically detects the format and applies optimal compression."
+                "q1": "Heikkeneekö laatu pakkauksessa?",
+                "a1": "Kyllä, mutta hyvin vähän. 80-90 % tasolla ero on paljaalla silmällä huomaamaton.",
+                "q4": "Ladataanko kuvani palvelimelle?",
+                "a4": "Ei! Pakkaus tapahtuu selaimesi JavaScriptillä. Tiedostosi eivät poistu laitteeltasi."
             }
         }
     },
     "image-converter": {
         "meta": {
-            "title": "[Pending Translation] Image Converter - Convert Images Online Free | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free. Secure, client-side conversion requiring no uploads.",
-            "h1": "[Pending Translation] Image Converter",
-            "subtitle": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free"
+            "title": "Kuvanmuunnin - Muunna kuvat verkossa ilmaiseksi",
+            "description": "Muunna kuvia eri muotojen välillä (PNG, JPG, WEBP) helposti ja ilmaiseksi. Turvallinen, ei latauksia palvelimelle.",
+            "h1": "Kuvanmuunnin",
+            "subtitle": "Muunna kuvia eri muotojen välillä (PNG, JPG, WEBP) helposti"
         },
         "input": {
-            "title": "[Pending Translation] Upload Your Image",
-            "desc": "[Pending Translation] Drag & drop or click to select an image",
-            "drop_title": "[Pending Translation] Drop your image here",
-            "drop_desc": "[Pending Translation] Supports PNG, JPG, WEBP (Max 10MB)"
+            "title": "Lataa kuvasi",
+            "desc": "Raahaa ja pudota tai klikkaa valitaksesi kuvan",
+            "drop_title": "Pudota kuvasi tähän",
+            "drop_desc": "Tukee PNG, JPG, WEBP (Max 10 Mt)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "target_format": "[Pending Translation] Target Format",
-            "quality": "[Pending Translation] Quality (JPG\/WEBP)",
-            "btn_convert": "[Pending Translation] Convert & Download"
+            "image_alt": "Esikatselu",
+            "target_format": "Kohdemuoto",
+            "quality": "Laatu (JPG/WEBP)",
+            "btn_convert": "Muunna ja lataa"
         },
         "content": {
-            "title": "[Pending Translation] The Ultimate Free Online Image Converter",
-            "p1": "[Pending Translation] In today's digital landscape, working with images requires versatility. Whether you're a web developer needing WEBP for performance, a designer needing PNG for transparency, or a photographer needing universal JPG compatibility, our <strong>Image Converter<\/strong> is the all-in-one solution.",
-            "p2": "[Pending Translation] Forget about installing heavy software or uploading your private photos to unknown servers. Our tool runs entirely in your browser, ensuring <strong>100% privacy and lightning-fast speeds<\/strong>.",
+            "title": "Lopullinen ilmainen online-kuvanmuunnin",
+            "p1": "Tarvitsetko WEBP-muotoa suorituskykyyn tai PNG-muotoa läpinäkyvyyteen? Meidän <strong>kuvanmuuntimemme</strong> on kattava ratkaisu.",
             "features": {
                 "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Your files never leave your device. All processing happens locally in your browser."
-                },
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] No queuing or waiting. Powered by modern WebAssembly technology for speed."
-                },
-                "bulk": {
-                    "title": "[Pending Translation] Bulk Processing",
-                    "desc": "[Pending Translation] Convert unlimited images one by one without any usage restrictions or costs."
+                    "title": "Turvallinen ja yksityinen",
+                    "desc": "Tiedostosi eivät poistu laitteeltasi. Käsittely tapahtuu selaimessa."
                 }
             },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert Images?",
-                "list": [
-                    "[Pending Translation] Drag your image file into the blue box or click to select from your device.",
-                    "[Pending Translation] Select your desired output format (PNG, JPG, or WEBP) from the dropdown.",
-                    "[Pending Translation] If choosing JPG or WEBP, use the slider to balance file size and quality.",
-                    "[Pending Translation] Click the \"Convert & Download\" button to save your formatted image instantly."
-                ]
-            },
-            "features_list": {
-                "title": "[Pending Translation] Key Features",
-                "list": [
-                    "[Pending Translation] Cross-Format Support: Effortlessly switch between PNG, JPG, and WEBP.",
-                    "[Pending Translation] Transparency Control: PNG conversions preserve transparency, while JPG fills it with a white background.",
-                    "[Pending Translation] Responsive: Works perfectly on Desktops, Tablets, and Mobile phones.",
-                    "[Pending Translation] No Limits: No file size limits and no daily conversion caps."
-                ]
-            },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is this tool free?",
-                "a1": "[Pending Translation] Yes, absolutely. We don't charge anything, and there are no hidden premium features.",
-                "q2": "[Pending Translation] Does it support transparency?",
-                "a2": "[Pending Translation] Yes! If you convert to PNG or WEBP, transparency is preserved. For JPG, transparent areas become white.",
-                "q3": "[Pending Translation] Are my images uploaded?",
-                "a3": "[Pending Translation] No. All conversion logic runs in your own browser using JavaScript and Canvas APIs. We count privacy as our top feature.",
-                "q4": "[Pending Translation] What is the best format?",
-                "a4": "[Pending Translation] Use <strong>JPG<\/strong> for photos, <strong>PNG<\/strong> for graphics with sharp edges\/transparency, and <strong>WEBP<\/strong> for web performance."
+                "q1": "Onko tämä työkalu ilmainen?",
+                "a1": "Kyllä, täysin ilmainen ilman rajoituksia.",
+                "q3": "Ladataanko kuviani mihinkään?",
+                "a3": "Ei. Muunnos tapahtuu suoraan selaimessasi."
             }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image file"
         }
     },
     "image-to-base64-converter": {
         "meta": {
-            "title": "[Pending Translation] Image to Base64 Converter - Convert Image to String | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS. Free online tool supporting PNG, JPG, GIF.",
-            "h1": "[Pending Translation] Convert Image to Base64 String",
-            "subtitle": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS"
+            "title": "Kuva Base64-muotoon - Muunna kuva koodiksi",
+            "description": "Muunna kuvat Base64-koodatuiksi merkkijonoiksi HTML- tai CSS-upotusta varten. Tukee PNG, JPG, GIF.",
+            "h1": "Muunna kuva Base64-merkinnäksi",
+            "subtitle": "Muunna kuvat Base64-koodatuiksi merkkijonoiksi HTML- tai CSS-tiedostoihin"
         },
         "input": {
-            "title": "[Pending Translation] Upload Image",
-            "desc": "[Pending Translation] Drag & drop your image file here",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Supports All Image Formats"
+            "title": "Lataa kuva",
+            "desc": "Raahaa ja pudota kuvatiedostosi tähän",
+            "drop_title": "Pudota kuva tähän",
+            "drop_desc": "Tukee kaikkia kuvamuotoja"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "label_string": "[Pending Translation] Base64 String",
-            "btn_copy": "[Pending Translation] Copy to Clipboard",
-            "char_count": "[Pending Translation] Character Count",
-            "mime_type": "[Pending Translation] MIME Type"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert Image to Base64 String",
-            "p1": "[Pending Translation] Developers and web designers often need to embed images directly into HTML or CSS files to reduce HTTP requests.",
-            "p2": "[Pending Translation] Our <strong>Image to Base64 Converter<\/strong> encodes your image file into a long string of characters that represents the binary data. You can paste this string straight into your code.",
-            "features": {
-                "clipboard": {
-                    "title": "[Pending Translation] Clipboard Ready",
-                    "desc": "[Pending Translation] One-click copy. We format the output for HTML (`&lt;img src=\"...\"&gt;`) or CSS (`background: url(...)`)."
-                },
-                "requests": {
-                    "title": "[Pending Translation] Reduce Requests",
-                    "desc": "[Pending Translation] Embedding small icons and logos as Base64 eliminates the network overhead of fetching external image files."
-                },
-                "formats": {
-                    "title": "[Pending Translation] Any Format",
-                    "desc": "[Pending Translation] Works with PNG, JPG, GIF, WEBP, SVG, and even ICO files."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to use?",
-                "list": [
-                    "[Pending Translation] Select your image file.",
-                    "[Pending Translation] The tool immediately converts the file to a Data URI.",
-                    "[Pending Translation] Click \"Copy to Clipboard\" to grab the code.",
-                    "[Pending Translation] Insert it into your `src` attribute or CSS file."
-                ]
-            },
-            "use_cases": {
-                "title": "[Pending Translation] When to use Base64?",
-                "list": [
-                    "[Pending Translation] Small Images: Best for icons, spinners, and small logos (under 10KB).",
-                    "[Pending Translation] Single-File Apps: When you need to bundle everything into one HTML file (e.g., email templates).",
-                    "[Pending Translation] Offline Access: Ensures images load even without a network connection if the HTML is saved locally."
-                ]
-            }
+            "image_alt": "Esikatselu",
+            "label_string": "Base64-koodi",
+            "btn_copy": "Kopioi leikepöydälle",
+            "char_count": "Merkkimäärä",
+            "mime_type": "MIME-tyyppi"
         },
         "js": {
-            "copied": "[Pending Translation] Copied!"
+            "copied": "Kopioitu!"
         }
     },
     "jpg-to-png-converter": {
         "meta": {
-            "title": "[Pending Translation] JPG to PNG Converter - Convert JPG Images to PNG Free | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert JPG images to PNG format instantly. 100% free, secure client-side conversion, no file size limits.",
-            "h1": "[Pending Translation] JPG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to PNG format instantly with 100% free conversion"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG\/JPEG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
+            "title": "JPG-PNG-muunnin - Muunna JPG-kuvat PNG-muotoon ilmaiseksi",
+            "description": "Muunna JPG-kuvat PNG-muotoon välittömästi. 100 % ilmainen ja turvallinen selaimeen pohjautuva muunnos.",
+            "h1": "JPG-PNG-muunnin",
+            "subtitle": "Muunna JPG-kuvat PNG-muotoon välittömästi ilmaiseksi"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] PNG",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert JPG to PNG Instantly",
-            "p1": "[Pending Translation] JPG is the world's most popular image format, but it often lacks the versatility needed for modern web design. By converting to PNG, you gain access to lossless compression and transparency support.",
-            "p2": "[Pending Translation] Our <strong>JPG to PNG Converter<\/strong> is designed for speed and privacy, handling everything directly in your browser without uploading your sensitive photos to any server.",
-            "features": {
-                "lossless": {
-                    "title": "[Pending Translation] Lossless Quality",
-                    "desc": "[Pending Translation] Stop image degradation. PNG uses lossless compression to keep every pixel perfect during edits."
-                },
-                "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Files are processed locally on your device. We never see, store, or upload your images."
-                },
-                "transparency": {
-                    "title": "[Pending Translation] Transparency Ready",
-                    "desc": "[Pending Translation] Convert to the preferred format for logos, icons, and graphics that require transparent backgrounds."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to PNG",
-                "list": [
-                    "[Pending Translation] Drag and drop your JPG file into the designated area.",
-                    "[Pending Translation] The tool immediately reads the file ready for conversion.",
-                    "[Pending Translation] See exactly how your image looks before saving.",
-                    "[Pending Translation] Click \"Convert & Download\" to save your new PNG instantly."
-                ]
-            },
-            "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is the quality better?",
-                "a1": "[Pending Translation] Converting to PNG stops <em>future<\/em> quality loss. It's best for images you plan to edit further or need to keep sharp.",
-                "q2": "[Pending Translation] Are there file limits?",
-                "a2": "[Pending Translation] Since we process files in your browser, the limit is determined by your device's memory, usually allowing files up to 50MB easily."
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
+            "btn_convert": "Muunna PNG-muotoon ja lataa"
         }
     },
     "jpg-to-webp-converter": {
         "meta": {
-            "title": "[Pending Translation] JPG to WEBP Converter - Convert Images to WebP | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression and web performance. Free online tool.",
-            "h1": "[Pending Translation] JPG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
+            "title": "JPG-WebP-muunnin - Optimoi kuvat nettiin",
+            "description": "Muunna JPG-kuvat moderniin WebP-muotoon paremman pakkauksen ja nopeuden saavuttamiseksi.",
+            "h1": "JPG-WebP-muunnin",
+            "subtitle": "Muunna JPG-kuvat moderniin WebP-muotoon"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] WEBP",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert JPG to WebP for Better Performance",
-            "p1": "[Pending Translation] WebP is a modern image format that provides superior lossless and lossy compression for images on the web. By converting JPG to WebP, developers and webmasters can create smaller, richer images that make the web faster.",
-            "p2": "[Pending Translation] Our <strong>JPG to WebP Converter<\/strong> helps you optimize your images instantly in the browser, reducing file size by up to 30% compared to JPEG without standard quality loss.",
-            "features": {
-                "faster": {
-                    "title": "[Pending Translation] Faster Loading",
-                    "desc": "[Pending Translation] WebP images are significantly smaller than JPGs, helping your website load faster and improving SEO scores."
-                },
-                "quality": {
-                    "title": "[Pending Translation] High Quality",
-                    "desc": "[Pending Translation] Maintain visual fidelity while reducing file weight. Perfect for photographs and complex web graphics."
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] All conversions happen locally. Your sensitive images never leave your computer."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to WebP",
-                "list": [
-                    "[Pending Translation] Select or drag & drop your JPG image.",
-                    "[Pending Translation] Use the quality slider to balance size vs quality.",
-                    "[Pending Translation] See the result in real-time.",
-                    "[Pending Translation] Save your optimized WebP image."
-                ]
-            },
-            "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Do all browsers support WebP?",
-                "a1": "[Pending Translation] Yes, all modern browsers (Chrome, Firefox, Safari, Edge) fully support WebP images.",
-                "q2": "[Pending Translation] Is WebP better for SEO?",
-                "a2": "[Pending Translation] Absolutely. Google prefers WebP because it loads faster, improving your Core Web Vitals score."
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
+            "btn_convert": "Muunna WebP-muotoon ja lataa"
         }
     },
     "png-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] PNG to JPG Converter - Convert PNG to JPG Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes. Free online converter.",
-            "h1": "[Pending Translation] PNG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes instantly"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
+            "title": "PNG-JPG-muunnin - Pienennä tiedostokokoa",
+            "description": "Muunna PNG-kuvat JPG-muotoon pienempää tiedostokokoa varten. Ilmainen online-työkalu.",
+            "h1": "PNG-JPG-muunnin",
+            "subtitle": "Muunna PNG-kuvat JPG-muotoon välittömästi"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be converted to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Compress PNG to JPG Instantly",
-            "p1": "[Pending Translation] PNG files are great for quality, but they can be massive. If you're uploading photos to a website or sending them via email, JPG is often the better choice.",
-            "p2": "[Pending Translation] Our <strong>PNG to JPG Converter<\/strong> drastically reduces file size by using JPEG compression. We automatically handle transparent backgrounds by filling them with white, ensuring your images look perfect.",
-            "features": {
-                "size": {
-                    "title": "[Pending Translation] Drastic Size Reduction",
-                    "desc": "[Pending Translation] Reduce file sizes by up to 80% with minimal loss in visual quality."
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Local browser processing means your photos are never uploaded to the cloud."
-                },
-                "smart": {
-                    "title": "[Pending Translation] Smart Conversion",
-                    "desc": "[Pending Translation] Intelligent background handling converts transparency to a clean white matte."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] Steps to Convert",
-                "list": [
-                    "[Pending Translation] Select a PNG image from your device.",
-                    "[Pending Translation] The tool instantly processes the image.",
-                    "[Pending Translation] Check the preview (transparent areas will now be white).",
-                    "[Pending Translation] Download your optimized JPG file."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] When to use JPG?",
-                "list": [
-                    "[Pending Translation] Photographs: JPG is designed for complex, real-world images.",
-                    "[Pending Translation] Web Uploads: Many forms only accept .jpg or .jpeg.",
-                    "[Pending Translation] Saving Space: If you have thousands of images, JPG saves GBs of storage."
-                ]
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
+            "note_text": "Läpinäkyvät taustat muuttuvat valkoisiksi.",
+            "btn_convert": "Muunna JPG-muotoon ja lataa"
         }
     },
     "png-to-webp-converter": {
         "meta": {
-            "title": "[Pending Translation] PNG to WEBP Converter - Compress PNG to WebP | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.",
-            "h1": "[Pending Translation] PNG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
+            "title": "PNG-WebP-muunnin - Pienempi tiedostokoko",
+            "description": "Muunna PNG-kuvat WebP-muotoon säilyttäen läpinäkyvyyden. Nopeuta verkkosivusi latautumista.",
+            "h1": "PNG-WebP-muunnin",
+            "subtitle": "Muunna PNG-kuvat WebP-muotoon pienentääksesi kokoa"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Optimize Images with PNG to WebP",
-            "p1": "[Pending Translation] Want faster website load times? Converting your PNGs to WebP is the #1 recommendation from Google PageSpeed Insights.",
-            "p2": "[Pending Translation] Our tool compresses your PNG images into the modern WebP format, reducing file size by up to <strong>30-50%<\/strong> while keeping the background transparent and the quality sharp.",
-            "features": {
-                "smaller": {
-                    "title": "[Pending Translation] Significantly Smaller",
-                    "desc": "[Pending Translation] WebP offers superior compression. Save bandwidth and storage space instantly."
-                },
-                "transparency": {
-                    "title": "[Pending Translation] Transparency Kept",
-                    "desc": "[Pending Translation] Unlike converting to JPG, switching from PNG to WebP preserves your alpha channel (background transparency)."
-                },
-                "adjustable": {
-                    "title": "[Pending Translation] Adjustable Quality",
-                    "desc": "[Pending Translation] You control the balance. Choose 90% for high quality or 70% for maximum savings."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert?",
-                "list": [
-                    "[Pending Translation] Drag and drop your file.",
-                    "[Pending Translation] Use the slider. We recommend 80-90% for a good balance.",
-                    "[Pending Translation] Click the \"Convert\" button.",
-                    "[Pending Translation] Your lighter .webp file is ready."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why WebP?",
-                "p1": "[Pending Translation] WebP is a modern image format developed by Google.",
-                "list": [
-                    "[Pending Translation] SEO Boost: Faster sites rank better on Google.",
-                    "[Pending Translation] Mobile Friendly: Uses less data for mobile visitors.",
-                    "[Pending Translation] Support: Supported by Chrome, Firefox, Safari, Edge, and all modern browsers."
-                ]
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
+            "btn_convert": "Muunna WebP-muotoon ja lataa"
         }
     },
     "svg-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] SVG to JPG Converter - Vector to Raster Conversion | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert SVG vector files to JPG images online. Auto-fills transparent backgrounds with white for perfect JPG output.",
-            "h1": "[Pending Translation] SVG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert SVG vector files to JPG images online with auto-fill backgrounds"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
+            "title": "SVG-JPG-muunnin - Vektorista rasteriksi",
+            "description": "Muunna SVG-vektoritiedostot JPG-kuviksi verkossa. Täyttää taustan automaattisesti valkoisella.",
+            "h1": "SVG-JPG-muunnin",
+            "subtitle": "Muunna SVG-vektoritiedostot JPG-kuviksi helposti"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be filled with white color.",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert SVG to JPG Format",
-            "p1": "[Pending Translation] Need to use a logo in a document or on a website that doesn't accept vector files? Our <strong>SVG to JPG Converter<\/strong> is the answer.",
-            "p2": "[Pending Translation] It creates a solid, high-compatibility image file from your vector source. We automatically handle transparency by adding a clean white background, ensuring your graphic looks professional on any medium.",
-            "features": {
-                "compatibility": {
-                    "title": "[Pending Translation] Maximum Compatibility",
-                    "desc": "[Pending Translation] JPG is opened by literally every digital device and software created in the last 30 years."
-                },
-                "resolution": {
-                    "title": "[Pending Translation] 4x High Resolution",
-                    "desc": "[Pending Translation] Scale up your SVG before saving to ensure your JPG is sharp, not blurry."
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure Client-Side",
-                    "desc": "[Pending Translation] Processing happens in your browser. We never see your files."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] Easy Instructions",
-                "list": [
-                    "[Pending Translation] Click \"Upload\" or drag your file to the center box.",
-                    "[Pending Translation] Choose a scaling factor (e.g., 2x or 4x) for higher quality results.",
-                    "[Pending Translation] Observe the image. Note that transparent backgrounds are now white.",
-                    "[Pending Translation] Click \"Convert to JPG & Download\"."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why choose JPG over PNG for Vectors?",
-                "p1": "[Pending Translation] While PNG supports transparency, JPG generates smaller file sizes for complex, colorful images.",
-                "list": [
-                    "[Pending Translation] Smaller Files: Better for emails and attachments.",
-                    "[Pending Translation] No Transparency Issues: Some viewers render transparency as black. JPG forces a white background, ensuring your logo is legible."
-                ]
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
+            "scale_label": "Resoluution kerroin (Skaalaus)",
+            "btn_convert": "Muunna JPG-muotoon ja lataa"
         }
     },
     "svg-to-png-converter": {
         "meta": {
-            "title": "[Pending Translation] SVG to PNG Converter - Rasterize SVG Images | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don't support vector files.",
-            "h1": "[Pending Translation] SVG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
+            "title": "SVG-PNG-muunnin - Tee vektoreista kuvia",
+            "description": "Muunna SVG-kuvat korkealaatuisiksi PNG-tiedostoiksi. Säilytä läpinäkyvyys ja skaalaa suuremmaksi.",
+            "h1": "SVG-PNG-muunnin",
+            "subtitle": "Muunna SVG-vektoritiedostot PNG-kuviksi välittömästi"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "checkerboard": "[Pending Translation] Checkerboard background indicates transparency",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Rasterize SVG to PNG High-Res",
-            "p1": "[Pending Translation] Scalable Vector Graphics (SVG) are perfect for the web, but impossible to use on social media, in Word documents, or as email attachments.",
-            "p2": "[Pending Translation] Our <strong>SVG to PNG Converter<\/strong> allows you to turn your vector logo or icon into a high-quality, transparent PNG image. With our unique <strong>scaling feature<\/strong>, you can produce ultra-high-resolution images without any pixelation.",
-            "features": {
-                "transparency": {
-                    "title": "[Pending Translation] Transparency Preserved",
-                    "desc": "[Pending Translation] Unlike JPG, PNG keeps the background transparent. Perfect for logos and overlays."
-                },
-                "scaling": {
-                    "title": "[Pending Translation] Up to 4x Scaling",
-                    "desc": "[Pending Translation] Export at 4x the original size. Get crisp edges even for large print formats."
-                },
-                "browser": {
-                    "title": "[Pending Translation] Browser-Based",
-                    "desc": "[Pending Translation] Fast and secure. No files are uploaded to any server."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert SVG to PNG?",
-                "list": [
-                    "[Pending Translation] Drop your `.svg` file into the upload area.",
-                    "[Pending Translation] Select `1x`, `2x`, or `4x` from the dropdown. Higher is better for quality.",
-                    "[Pending Translation] Check the preview image on the left. The checkerboard indicates transparency.",
-                    "[Pending Translation] Hit the button to generate and download your PNG."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why Convert Vectors?",
-                "p1": "[Pending Translation] Vectors are mathematical formulas, while PNGs are grids of pixels. You need pixels for:",
-                "list": [
-                    "[Pending Translation] Profile pictures (Twitter\/LinkedIn often reject SVG).",
-                    "[Pending Translation] Embedding in emails (SVG support is poor).",
-                    "[Pending Translation] Using in video editors or simple graphic tools (Canva, Paint)."
-                ]
-            },
-            "faq": {
-                "title": "",
-                "q1": "",
-                "a1": "",
-                "q2": "",
-                "a2": ""
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
+            "checkerboard": "Ruutukuvio ilmaisee läpinäkyvyyttä",
+            "btn_convert": "Muunna PNG-muotoon ja lataa"
         }
     },
     "webp-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] WEBP to JPG Converter - Convert WebP to JPG Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility. Free, fast, and secure converter.",
-            "h1": "[Pending Translation] WebP to JPG Converter",
-            "subtitle": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility"
+            "title": "WebP-JPG-muunnin - Paranna yhteensopivuutta",
+            "description": "Muunna WebP-kuvat standardiin JPG-muotoon. Ilmainen, nopea ja turvallinen muunnin.",
+            "h1": "WebP-JPG-muunnin",
+            "subtitle": "Muunna WebP-kuvat standardiin JPG-muotoon"
         },
         "input": {
-            "title": "[Pending Translation] Upload WEBP Image",
-            "desc": "[Pending Translation] Drag & drop your WEBP file here",
-            "drop_title": "[Pending Translation] Drop WEBP file here",
-            "drop_desc": "[Pending Translation] Supports WEBP (Max 10MB)"
+            "title": "Lataa WebP-kuva",
+            "drop_title": "Pudota WebP-tiedosto tähän"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds (common in WEBP) will be verified to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "note_text": "Läpinäkyvät taustat muuttuvat valkoisiksi.",
+            "btn_convert": "Muunna JPG-muotoon ja lataa"
         },
         "content": {
-            "title": "[Pending Translation] WebP to JPG: The Compatibility Fixer",
-            "p1": "[Pending Translation] WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older image viewers, or upload it to platforms that only accept JPG.",
-            "p2": "[Pending Translation] Our <strong>WebP to JPG Converter<\/strong> bridges this gap. It takes your highly optimized WebP images and transforms them into the universally compatible JPEG format in milliseconds.",
+            "title": "WebP:stä JPG:ksi: Ratkaisu yhteensopivuuteen",
+            "p1": "WebP on nopeampi netissä, mutta sen avaaminen muilla laitteilla tai sovelluksilla voi olla hankalaa.",
             "features": {
                 "universal": {
-                    "title": "[Pending Translation] Universal Support",
-                    "desc": "[Pending Translation] JPG works everywhere: Word docs, PowerPoint, legacy software, and every social media platform."
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] We don't see your files. The conversion is performed locally by your web browser."
+                    "title": "Yleinen tuki",
+                    "desc": "JPG toimii kaikkialla: Wordissa, Powerpointissa ja somessa."
                 },
                 "smart": {
-                    "title": "[Pending Translation] Smart Backgrounds",
-                    "desc": "[Pending Translation] Automatically detects transparent pixels in WebP and fills them with a clean white background."
+                    "title": "Älykkäät taustat",
+                    "desc": "Tunnistaa läpinäkyvyyden ja täyttää sen valkoisella värillä."
                 }
             },
-            "how_to": {
-                "title": "[Pending Translation] Step-by-Step Guide",
-                "list": [
-                    "[Pending Translation] Click the box or drag your WebP image onto the page.",
-                    "[Pending Translation] The tool will display a preview of your image.",
-                    "[Pending Translation] Click the \"Convert to JPG\" button. The system handles transparency and compression automatically.",
-                    "[Pending Translation] Your new .jpg file will download instantly."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why Convert WebP?",
-                "list": [
-                    "[Pending Translation] Editing: Many desktop editors typically don't support WebP out of the box.",
-                    "[Pending Translation] Email: Outlook and other email clients might not render WebP inline images correctly.",
-                    "[Pending Translation] Printing: Print shops often require standard JPG or TIFF files."
-                ]
-            },
             "faq": {
-                "title": "[Pending Translation] FAQ",
-                "q1": "[Pending Translation] What happens to transparent backgrounds?",
-                "a1": "[Pending Translation] Since JPG doesn't support transparency, our tool replaces transparent areas with white. This is perfect for product photos and logos.",
-                "q2": "[Pending Translation] Is it safe?",
-                "a2": "[Pending Translation] Yes. Unlike other converters that upload your file to a server, this tool runs 100% on your device. Your data remains private."
+                "q1": "Mitä tapahtuu läpinäkyvyydelle?",
+                "a1": "Koska JPG ei tue läpinäkyvyyttä, työkalu korvaa sen valkoisella. Se sopii hyvin logoihin.",
+                "q2": "Onko se turvallista?",
+                "a2": "Kyllä. Muunnos tapahtuu 100 % laitteellasi."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid WEBP image"
+            "invalid_image": "Ole hyvä ja lataa kelvollinen WebP-kuva"
         }
     }
 }

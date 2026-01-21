@@ -1,735 +1,510 @@
 {
     "dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] DNS Lookup Tool - Check DNS Records Online Free",
-            "description": "[Pending Translation] Free DNS lookup tool to check DNS records for any domain. View A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.",
-            "h1": "[Pending Translation] DNS Lookup Tool",
-            "subtitle": "[Pending Translation] Query DNS records to find nameservers, MX, A, CNAME & TXT records instantly"
+            "title": "DNS-hakutyökalu - Tarkista DNS-tietueet verkossa ilmaiseksi",
+            "description": "Ilmainen DNS-hakutyökalu minkä tahansa verkkotunnuksen DNS-tietueiden tarkistamiseen. Katso A, AAAA, MX, NS, TXT ja CNAME -tietueet välittömästi.",
+            "h1": "DNS-hakutyökalu",
+            "subtitle": "Hae DNS-tietueita ja löydä nimipalvelimet, MX, A, CNAME ja TXT -tietueet välittömästi"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup DNS"
+            "domain_label": "Verkkotunnus (Domain)",
+            "domain_placeholder": "esimerkki.fi",
+            "button": "Hae DNS"
         },
         "results": {
-            "title": ""
+            "title": "DNS-hakutulokset"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is DNS Lookup?",
-            "what_is_desc": "[Pending Translation] DNS Lookup is a tool that queries Domain Name System servers to retrieve DNS records for a domain. DNS records contain important information about how a domain is configured, including mail servers (MX records), nameservers (NS records), IP addresses (A\/AAAA records), and text records (TXT records) used for verification and security.",
-            "why_use_title": "[Pending Translation] Why Use DNS Lookup?",
-            "why_use_desc": "[Pending Translation] DNS Lookup is essential for troubleshooting email delivery issues, verifying domain configuration, checking nameserver settings, validating SPF and DKIM records, and understanding how a domain is set up. It's used by system administrators, web developers, and IT professionals daily.",
-            "record_types_title": "[Pending Translation] DNS Record Types",
-            "a_record": "[Pending Translation] <strong>A Record:<\/strong> Maps domain to IPv4 address",
-            "aaaa_record": "[Pending Translation] <strong>AAAA Record:<\/strong> Maps domain to IPv6 address",
-            "mx_record": "[Pending Translation] <strong>MX Record:<\/strong> Mail server information",
-            "ns_record": "[Pending Translation] <strong>NS Record:<\/strong> Nameserver information",
-            "txt_record": "[Pending Translation] <strong>TXT Record:<\/strong> Text records for verification",
-            "cname_record": "[Pending Translation] <strong>CNAME Record:<\/strong> Canonical name alias"
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "what_is_title": "Mikä on DNS-haku?",
+            "what_is_desc": "DNS-haku (Domain Name System Lookup) on työkalu, joka kysyy nimipalvelimilta verkkotunnuksen DNS-tietueita. DNS-tietueet sisältävät tärkeitä tietoja verkkotunnuksen kokoonpanosta, kuten sähköpostipalvelimet (MX), nimipalvelimet (NS), IP-osoitteet (A/AAAA) ja tekstimuotoiset tietueet (TXT), joita käytetään varmentamiseen ja turvallisuuteen.",
+            "why_use_title": "Miksi käyttää DNS-hakua?",
+            "why_use_desc": "DNS-haku on välttämätön sähköpostin toimitusongelmien vianetsinnässä, verkkotunnuksen määritysten tarkistamisessa, nimipalvelinasetusten varmistamisessa sekä SPF- ja DKIM-tietueiden validoinnissa. Järjestelmäylläpitäjät ja kehittäjät käyttävät sitä päivittäin.",
+            "record_types_title": "DNS-tietuetyypit",
+            "a_record": "<strong>A-tietue:</strong> Yhdistää verkkotunnuksen IPv4-osoitteeseen",
+            "aaaa_record": "<strong>AAAA-tietue:</strong> Yhdistää verkkotunnuksen IPv6-osoitteeseen",
+            "mx_record": "<strong>MX-tietue:</strong> Sähköpostipalvelimen tiedot",
+            "ns_record": "<strong>NS-tietue:</strong> Nimipalvelimen tiedot",
+            "txt_record": "<strong>TXT-tietue:</strong> Tekstitietueet varmentamiseen",
+            "cname_record": "<strong>CNAME-tietue:</strong> Kanoninen nimi eli alias"
         },
         "js": {
-            "looking_up": "",
-            "records_label": "",
-            "success": "",
-            "error": "",
-            "lookup_dns": ""
+            "looking_up": "Haetaan...",
+            "records_label": "Tietueet",
+            "success": "Haku onnistui",
+            "error": "Virhe haussa",
+            "lookup_dns": "Hae DNS"
         }
     },
     "domain-to-ip": {
         "meta": {
-            "title": "[Pending Translation] Domain to IP Converter - Find IP Address of Any Domain Free",
-            "description": "[Pending Translation] Free domain to IP lookup tool. Instantly convert any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.",
-            "h1": "[Pending Translation] Domain to IP Converter",
-            "subtitle": "[Pending Translation] Resolve domain names to IP addresses with detailed DNS information"
+            "title": "Verkkotunnus IP-osoitteeksi -muunnin",
+            "description": "Ilmainen verkkotunnus IP-muunnin. Muunna mikä tahansa domain-nimi IP-osoitteeksi välittömästi. Välttämätön vianetsintään ja palvelinmäärityksiin.",
+            "h1": "Verkkotunnus IP-osoitteeksi",
+            "subtitle": "Selvitä verkkotunnusten IP-osoitteet ja tarkat DNS-tiedot"
         },
         "form": {
-            "domain_label": "[Pending Translation] Enter Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "domain_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "button": "[Pending Translation] Lookup IP Address"
+            "domain_label": "Syötä verkkotunnus",
+            "domain_placeholder": "esimerkki.fi",
+            "domain_hint": "Syötä verkkotunnus ilman http:// tai https:// alkuja",
+            "button": "Hae IP-osoite"
         },
         "results": {
-            "title": "",
-            "domain_label": "",
-            "ip_label": ""
+            "title": "Hakutulokset",
+            "domain_label": "Verkkotunnus",
+            "ip_label": "IP-osoite"
         },
         "content": {
-            "main_title": "[Pending Translation] Domain to IP Converter",
-            "main_subtitle": "[Pending Translation] Convert any domain name to its IP address instantly",
-            "intro": "[Pending Translation] Our free Domain to IP tool instantly converts any domain name to its corresponding IP address using DNS lookup. Essential for network administrators, web developers, security professionals, and anyone needing to identify the server behind a domain. Get accurate IP addresses for troubleshooting, server verification, and network configuration.",
-            "feature1_title": "[Pending Translation] Instant Lookup",
-            "feature1_desc": "[Pending Translation] Get IP addresses immediately without delays",
-            "feature2_title": "[Pending Translation] Accurate Results",
-            "feature2_desc": "[Pending Translation] Real-time DNS queries for current IP addresses",
-            "feature3_title": "[Pending Translation] 100% Free",
-            "feature3_desc": "[Pending Translation] Unlimited lookups with no registration required",
-            "what_is_title": "[Pending Translation] 🌐 What is Domain to IP Lookup?",
-            "what_is_desc": "[Pending Translation] Domain to IP lookup is the process of converting a human-readable domain name (like example.com) into its corresponding numerical IP address (like 93.184.216.34). This conversion happens through DNS (Domain Name System) servers, which act as the internet's phone book. Every website has an IP address, but domain names make them easier to remember and access.",
-            "use_cases_title": "[Pending Translation] 🎯 Common Use Cases",
-            "uc1_title": "[Pending Translation] Server Configuration",
-            "uc1_desc": "[Pending Translation] Configure firewalls, whitelists, and server settings with IP addresses",
-            "uc2_title": "[Pending Translation] Security Analysis",
-            "uc2_desc": "[Pending Translation] Verify server locations and identify hosting providers",
-            "uc3_title": "[Pending Translation] Troubleshooting",
-            "uc3_desc": "[Pending Translation] Diagnose DNS issues and verify domain configurations",
-            "uc4_title": "[Pending Translation] Network Monitoring",
-            "uc4_desc": "[Pending Translation] Track server changes and monitor infrastructure",
-            "uc5_title": "[Pending Translation] Geolocation",
-            "uc5_desc": "[Pending Translation] Determine server geographic location from IP address",
-            "uc6_title": "[Pending Translation] API Integration",
-            "uc6_desc": "[Pending Translation] Use IP addresses for direct API connections",
-            "pro_tips_title": "[Pending Translation] 💡 Pro Tips: Using Domain to IP Lookup",
-            "tip1": "[Pending Translation] ✅ Use IP addresses for direct server connections when DNS is slow",
-            "tip2": "[Pending Translation] ✅ Verify CDN configurations by checking multiple domain resolutions",
-            "tip3": "[Pending Translation] ✅ Whitelist server IPs in firewalls for secure access",
-            "tip4": "[Pending Translation] ✅ Compare IP addresses before and after DNS changes",
-            "tip5": "[Pending Translation] ✅ Identify shared hosting by checking if multiple domains share IPs"
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "main_title": "Verkkotunnus IP-osoitteeksi -muunnin",
+            "main_subtitle": "Muunna mikä tahansa verkkotunnus IP-osoitteeksi välittömästi",
+            "intro": "Ilmainen domain-IP-työkalumme muuntaa minkä tahansa verkkotunnuksen sitä vastaavaksi IP-osoitteeksi. Välttämätön verkkoasentajille ja kehittäjille palvelimen tunnistamiseen.",
+            "feature1_title": "Välitön haku",
+            "feature1_desc": "Saat IP-osoitteet heti ilman viiveitä",
+            "feature2_title": "Tarkat tulokset",
+            "feature2_desc": "Reaaliaikaiset DNS-kyselyt nykyisille osoitteille",
+            "feature3_title": "100 % ilmainen",
+            "feature3_desc": "Rajoittamaton määrä hakuja ilman rekisteröitymistä",
+            "what_is_title": "🌐 Mikä on domain-IP-haku?",
+            "what_is_desc": "Tämä on prosessi, jossa ihmissilmin luettava nimi (esim. google.fi) muutetaan numeeriseksi IP-osoitteeksi (esim. 142.250.74.195). Tämä tapahtuu DNS-palvelinten kautta, jotka toimivat internetin puhelinluettelona.",
+            "use_cases_title": "🎯 Yleisimmät käyttötapaukset",
+            "uc1_title": "Palvelinmääritykset",
+            "uc1_desc": "Määritä palomuurit ja valkolistat käyttämällä IP-osoitteita",
+            "uc2_title": "Turvallisuusanalyysi",
+            "uc2_desc": "Varmista palvelinten sijainnit ja tunnistus",
+            "uc3_title": "Vianetsintä",
+            "uc3_desc": "Diagnosoi DNS-ongelmat ja verkkotunnusten asetukset",
+            "uc4_title": "Verkon seuranta",
+            "uc4_desc": "Seuraa palvelinmuutoksia ja infrastruktuuria",
+            "uc5_title": "Geosijainti",
+            "uc5_desc": "Määritä palvelimen maantieteellinen sijainti IP-osoitteesta",
+            "uc6_title": "API-integraatiot",
+            "uc6_desc": "Käytä IP-osoitteita suoriin rajapintayhteyksiin",
+            "pro_tips_title": "💡 Ammattilaisvinkit",
+            "tip1": "✅ Käytä IP-osoitetta suoraan, jos DNS on hidas",
+            "tip2": "✅ Varmista CDN-asetukset tarkistamalla useita vastauksia",
+            "tip3": "✅ Lisää palvelin-IP:t palomuuriin suojattua pääsyä varten",
+            "tip4": "✅ Vertaa IP-osoitteita ennen ja jälkeen DNS-muutosten",
+            "tip5": "✅ Tunnista jaettu hosting tarkistamalla, onko useilla domaineilla sama IP"
         },
         "js": {
-            "looking_up": "",
-            "error_failed": ""
+            "looking_up": "Haetaan...",
+            "error_failed": "Haku epäonnistui"
         }
     },
     "internet-speed-test": {
         "meta": {
-            "title": "[Pending Translation] Free Internet Speed Test - Check Your Connection Speed",
-            "description": "[Pending Translation] Test your internet speed for free. Check download speed, upload speed, and ping instantly.",
-            "h1": "[Pending Translation] Internet Speed Test",
-            "subtitle": "[Pending Translation] Test your internet connection speed instantly"
+            "title": "Ilmainen netin nopeustesti - Tarkista yhteysnopeutesi",
+            "description": "Testaa internet-yhteytesi nopeus ilmaiseksi. Tarkista latausnopeus, lähetysnopeus ja viive välittömästi.",
+            "h1": "Netin nopeustesti",
+            "subtitle": "Testaa internet-yhteytesi nopeus välittömästi"
         },
         "editor": {
-            "btn_start": "[Pending Translation] Start Speed Test",
-            "status_init": "[Pending Translation] Initializing test...",
-            "label_download": "[Pending Translation] Download Speed",
-            "label_upload": "[Pending Translation] Upload Speed",
-            "label_ping": "[Pending Translation] Ping",
-            "label_quality": "[Pending Translation] Connection Quality",
-            "btn_retry": "[Pending Translation] Test Again",
-            "status_ping": "[Pending Translation] Testing ping...",
-            "status_download": "[Pending Translation] Testing download speed...",
-            "status_upload": "[Pending Translation] Testing upload speed...",
-            "quality_val_excellent": "[Pending Translation] Excellent",
-            "quality_val_very_good": "[Pending Translation] Very Good",
-            "quality_val_good": "[Pending Translation] Good",
-            "quality_val_fair": "[Pending Translation] Fair",
-            "quality_val_poor": "[Pending Translation] Poor"
+            "btn_start": "Aloita nopeustesti",
+            "status_init": "Valmistellaan testiä...",
+            "label_download": "Latausnopeus",
+            "label_upload": "Lähetysnopeus",
+            "label_ping": "Viive (Ping)",
+            "label_quality": "Yhteyden laatu",
+            "btn_retry": "Testaa uudelleen",
+            "status_ping": "Testataan viivettä...",
+            "status_download": "Testataan latausnopeutta...",
+            "status_upload": "Testataan lähetysnopeutta...",
+            "quality_val_excellent": "Erinomainen",
+            "quality_val_very_good": "Erittäin hyvä",
+            "quality_val_good": "Hyvä",
+            "quality_val_fair": "Tyydyttävä",
+            "quality_val_poor": "Huono"
         },
         "content": {
-            "p1": "[Pending Translation] Test your internet connection speed with our free, accurate speed test tool. Measure your download speed, upload speed, and ping latency in seconds. Perfect for troubleshooting slow connections, verifying ISP speeds, or checking if you're getting what you pay for.",
-            "metrics_title": "[Pending Translation] Understanding Speed Test Metrics",
-            "req_title": "[Pending Translation] Requirements for Accurate Testing",
+            "p1": "Testaa internet-yhteytesi nopeus ilmaisella ja tarkalla työkalullamme. Mittaa lataus- ja lähetysnopeus sekä viive sekunneissa. Täydellinen hitaiden yhteyksien vianetsintään.",
+            "metrics_title": "Nopeustestin mittarit",
+            "req_title": "Vaatimukset tarkalle testille",
             "req_list": [
-                "[Pending Translation] Close all other applications and browser tabs",
-                "[Pending Translation] Connect via Ethernet cable for most accurate results",
-                "[Pending Translation] Disable VPN or proxy services temporarily",
-                "[Pending Translation] Ensure no downloads or uploads are running",
-                "[Pending Translation] Test multiple times at different times of day"
+                "Sulje muut sovellukset ja välilehdet",
+                "Käytä Ethernet-kaapelia parhaan tuloksen saamiseksi",
+                "Poista VPN tai välityspalvelin käytöstä testin ajaksi",
+                "Varmista, ettei taustalla ole latauksia",
+                "Testaa useita kertoja eri vuorokauden aikoina"
             ],
-            "why_title": "[Pending Translation] Why Test Your Internet Speed?",
+            "why_title": "Miksi testata netin nopeus?",
             "why_list": [
-                "[Pending Translation] Verify you're getting the speed you're paying for",
-                "[Pending Translation] Troubleshoot slow connection issues",
-                "[Pending Translation] Compare different ISP plans before switching",
-                "[Pending Translation] Optimize your network setup",
-                "[Pending Translation] Document speed for ISP support tickets",
-                "[Pending Translation] Test Wi-Fi vs Ethernet performance"
+                "Varmista, että saat tilaamasi nopeuden",
+                "Paikallista hitaan yhteyden syyt",
+                "Vertaa eri operaattoreiden nopeuksia",
+                "Optimoi kotiverkkosi asetukset",
+                "Dokumentoi nopeus vikailmoitusta varten",
+                "Testaa Wi-Fi:n ja kaapelin eroa"
             ],
-            "factors_title": "[Pending Translation] Factors Affecting Your Speed",
-            "improve_title": "[Pending Translation] How to Improve Your Speed",
+            "factors_title": "Nopeuteen vaikuttavat tekijät",
+            "improve_title": "Miten parantaa nopeutta",
             "improve_list": [
-                "[Pending Translation] Use Ethernet cable instead of Wi-Fi when possible",
-                "[Pending Translation] Place router in central location away from walls",
-                "[Pending Translation] Upgrade to a modern router that supports your speed tier",
-                "[Pending Translation] Close bandwidth-heavy applications",
-                "[Pending Translation] Update router firmware regularly",
-                "[Pending Translation] Consider upgrading your internet plan",
-                "[Pending Translation] Use Quality of Service (QoS) settings on router"
+                "Käytä kaapelia Wi-Fi:n sijaan",
+                "Sijoita reititin keskeiselle paikalle",
+                "Päivitä vanha reititin uudempaan",
+                "Sulje kaistanleveyttä vievät sovellukset",
+                "Päivitä reitittimen ohjelmisto",
+                "Harkitse nopeamman liittymän hankkimista",
+                "Käytä QoS-asetuksia reitittimessä"
             ],
-            "tips_title": "[Pending Translation] Pro Tips for Accurate Results",
+            "tips_title": "Ammattilaisvinkit",
             "tips_list": [
-                "[Pending Translation] Test at different times of day to see variations",
-                "[Pending Translation] Run multiple tests and average the results",
-                "[Pending Translation] Test on different devices to rule out device issues",
-                "[Pending Translation] Compare Wi-Fi speeds at different locations in your home"
+                "Testaa eri aikoina nähdäksesi vaihtelun",
+                "Aja useita testejä ja laske keskiarvo",
+                "Testaa eri laitteilla poistaaksesi laiteviat",
+                "Vertaa Wi-Fi-nopeutta eri huoneissa"
             ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "Usein kysytyt kysymykset",
             "metrics": {
                 "download": {
-                    "title": "[Pending Translation] Download Speed",
-                    "desc": "[Pending Translation] How fast data travels from the internet to your device. Important for streaming, browsing, and downloading files."
+                    "title": "Latausnopeus",
+                    "desc": "Kuinka nopeasti tieto siirtyy internetistä laitteellesi. Tärkeää suoratoistossa ja selaamisessa."
                 },
                 "upload": {
-                    "title": "[Pending Translation] Upload Speed",
-                    "desc": "[Pending Translation] How fast data travels from your device to the internet. Important for video calls, uploading files, and live streaming."
+                    "title": "Lähetysnopeus",
+                    "desc": "Kuinka nopeasti tieto siirtyy laitteeltasi internetiin. Tärkeää videopuheluissa ja tiedostojen lähettämisessä."
                 },
                 "ping": {
-                    "title": "[Pending Translation] Ping (Latency)",
-                    "desc": "[Pending Translation] Response time of your connection. Lower is better. Important for gaming and real-time applications."
+                    "title": "Viive (Ping)",
+                    "desc": "Yhteyden vasteaika. Pienempi arvo on parempi. Tärkeää pelaamisessa."
                 }
             },
             "factors": {
                 "congestion": {
-                    "title": "[Pending Translation] Network Congestion",
-                    "desc": "[Pending Translation] Peak usage times can slow down your connection as more users share bandwidth."
+                    "title": "Verkon ruuhkautuminen",
+                    "desc": "Ruuhka-ajat voivat hidastaa yhteyttä, kun monet käyttäjät jakavat kaistan."
                 },
                 "wifi": {
-                    "title": "[Pending Translation] Wi-Fi Signal",
-                    "desc": "[Pending Translation] Distance from router, walls, and interference from other devices affect wireless speeds."
+                    "title": "Wi-Fi-signaali",
+                    "desc": "Etäisyys reitittimeen, seinät ja muut laitteet voivat häiritä langatonta nopeutta."
                 },
                 "device": {
-                    "title": "[Pending Translation] Device Performance",
-                    "desc": "[Pending Translation] Older devices or those running many programs may not achieve full speeds."
+                    "title": "Laitteen suorituskyky",
+                    "desc": "Vanhat laitteet tai monet avoimet ohjelmat voivat hidastaa tulosta."
                 },
                 "router": {
-                    "title": "[Pending Translation] Router Quality",
-                    "desc": "[Pending Translation] Outdated routers may not support your full internet speed capabilities."
+                    "title": "Reitittimen laatu",
+                    "desc": "Vanhentuneet reitittimet eivät välttämättä tue täyttä nopeutta."
                 }
             },
             "faq": {
-                "q1": "[Pending Translation] What is a good internet speed?",
-                "a1": "[Pending Translation] For general browsing and streaming: 25+ Mbps. For 4K streaming and gaming: 50+ Mbps. For multiple users and heavy usage: 100+ Mbps. For remote work and large households: 200+ Mbps.",
-                "q2": "[Pending Translation] Why is my speed slower than advertised?",
-                "a2": "[Pending Translation] ISPs advertise \"up to\" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.",
-                "q3": "[Pending Translation] What's the difference between Mbps and MBps?",
-                "a3": "[Pending Translation] Mbps (megabits per second) is used for internet speeds. MBps (megabytes per second) is used for file sizes. 1 MBps = 8 Mbps. A 100 Mbps connection downloads at about 12.5 MBps.",
-                "q4": "[Pending Translation] How accurate is this speed test?",
-                "a4": "[Pending Translation] Our speed test provides accurate results by measuring real data transfer. For best accuracy, close other applications, use Ethernet, and run multiple tests.",
-                "q5": "[Pending Translation] Should I test with Wi-Fi or Ethernet?",
-                "a5": "[Pending Translation] Test with Ethernet to measure your true internet speed. Test with Wi-Fi to diagnose wireless issues. Comparing both helps identify if problems are with your internet or Wi-Fi."
+                "q1": "Mikä on hyvä internet-nopeus?",
+                "a1": "Selaamiseen: 25+ Mbps. 4K-suoratoistoon ja pelaamiseen: 50+ Mbps. Suuriin talouksiin: 200+ Mbps.",
+                "q2": "Miksi nopeuteni on hitaampi kuin luvattu?",
+                "a2": "Operaattorit lupaavat \"enimmäisnopeuden\". Todellinen nopeus riippuu ruuhkasta, Wi-Fi:stä ja etäisyydestä reitittimeen.",
+                "q3": "Mitä eroa on Mbps ja MBps?",
+                "a3": "Mbps (megabittiä sekunnissa) on internet-nopeus. MBps (megatavua sekunnissa) on tiedostokoko. 1 MBps = 8 Mbps.",
+                "q4": "Kuinka tarkka tämä testi on?",
+                "a4": "Testimme on erittäin tarkka. Parhaan tuloksen saat käyttämällä kaapelia ja sulkemalla muut ohjelmat.",
+                "q5": "Pitäisikö testata Wi-Fi:llä vai kaapelilla?",
+                "a5": "Testaa kaapelilla todellisen nopeuden mittaamiseksi ja Wi-Fi:llä diagnosoidaksesi langattoman verkon ongelmia."
             }
         }
     },
     "ip-lookup": {
         "meta": {
-            "title": "[Pending Translation] IP Lookup Tool - Get IP Address Information & Geolocation Free",
-            "description": "[Pending Translation] Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.",
-            "h1": "[Pending Translation] IP Lookup Tool",
-            "subtitle": "[Pending Translation] Get detailed information about any IP address including location & ISP"
+            "title": "IP-hakutyökalu - Hae sijainti ja tiedot IP-osoitteesta",
+            "description": "Ilmainen IP-hakutyökalu. Selvitä minkä tahansa IP-osoitteen sijainti, operaattori ja tekniset tiedot.",
+            "h1": "IP-hakutyökalu",
+            "subtitle": "Hae tarkat tiedot IP-osoitteista, mukaan lukien sijainti ja operaattori"
         },
         "form": {
-            "ip_label": "[Pending Translation] IP Address",
-            "ip_placeholder": "[Pending Translation] 8.8.8.8",
-            "button": "[Pending Translation] Lookup IP Address"
+            "ip_label": "IP-osoite",
+            "ip_placeholder": "8.8.8.8",
+            "button": "Hae tiedot"
         },
         "results": {
-            "title": "",
-            "ip_address": "",
-            "type": "",
-            "hostname": "",
-            "isp": "",
-            "country": "",
-            "region": "",
-            "city": "",
-            "timezone": ""
+            "title": "Hakutulokset",
+            "ip_address": "IP-osoite",
+            "type": "Tyyppi",
+            "hostname": "Isäntänimi",
+            "isp": "Operaattori (ISP)",
+            "country": "Maa",
+            "region": "Maakunta/Alue",
+            "city": "Kaupunki",
+            "timezone": "Aikavyöhyke"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is IP Lookup?",
-            "what_is_desc": "[Pending Translation] IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. This information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.",
-            "why_use_title": "[Pending Translation] Why Use IP Lookup?",
-            "why_use_desc": "[Pending Translation] IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It's also useful for verifying VPN connections and understanding your own internet footprint.",
-            "features_title": "[Pending Translation] Key Features",
-            "feature1_title": "[Pending Translation] 🌍 Geolocation Data",
-            "feature1_desc": "[Pending Translation] Country, region, city, and coordinates",
-            "feature2_title": "[Pending Translation] 🏢 ISP Information",
-            "feature2_desc": "[Pending Translation] Internet Service Provider details",
-            "feature3_title": "[Pending Translation] 🔗 Hostname Resolution",
-            "feature3_desc": "[Pending Translation] Domain name associated with IP",
-            "feature4_title": "[Pending Translation] ⚡ Instant Results",
-            "feature4_desc": "[Pending Translation] Fast and accurate lookup"
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "what_is_title": "Mikä on IP-haku?",
+            "what_is_desc": "IP-haku on työkalu, joka antaa yksityiskohtaisia tietoja IP-osoitteesta. Se paljastaa maantieteellisen sijainnin, operaattorin (ISP), isäntänimen ja muita teknisiä tietoja. Nämä tiedot ovat hyödyllisiä ylläpitäjille, tietoturva-ammattilaisille ja verkkosivun omistajille.",
+            "why_use_title": "Miksi käyttää IP-hakua?",
+            "why_use_desc": "IP-hakutyökalut ovat välttämättömiä turvallisuusanalyysissä, petosten torjunnassa, sisällön lokalisoinnissa ja vianetsinnässä. Verkkosivustojen omistajat voivat ymmärtää kävijöidensä demografiaa ja estää haitallista liikennettä.",
+            "features_title": "Tärkeimmät ominaisuudet",
+            "feature1_title": "🌍 Geosijaintitiedot",
+            "feature1_desc": "Maa, alue, kaupunki ja koordinaatit",
+            "feature2_title": "🏢 Operaattoritiedot",
+            "feature2_desc": "Internet-palveluntarjoajan (ISP) tiedot",
+            "feature3_title": "🔗 Isäntänimen selvitys",
+            "feature3_desc": "IP-osoitteeseen liittyvä verkkotunnus",
+            "feature4_title": "⚡ Välittömät tulokset",
+            "feature4_desc": "Nopea ja tarkka haku"
         },
         "js": {
-            "looking_up": "",
-            "success": "",
-            "error": ""
+            "looking_up": "Haetaan...",
+            "success": "Tiedot haettu",
+            "error": "Hakuvirhe"
         }
     },
     "ping-test": {
         "meta": {
-            "title": "[Pending Translation] Ping Test Tool - Check Network Latency & Connectivity Free",
-            "description": "[Pending Translation] Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] Ping Test Tool",
-            "subtitle": "[Pending Translation] Test server response time and network connectivity from multiple locations"
+            "title": "Ping-testi - Tarkista viive ja yhteys ilmaiseksi",
+            "description": "Ilmainen ping-testi palvelimen vasteajan, pakettihävikin ja saavutettavuuden tarkistamiseen. Välttämätön verkon vianetsinnässä.",
+            "h1": "Ping-testi",
+            "subtitle": "Testaa palvelimen vasteaika useista sijainneista"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] google.com or 8.8.8.8",
-            "button": "[Pending Translation] Ping Host"
+            "host_label": "Isäntä tai IP-osoite",
+            "host_placeholder": "google.fi tai 8.8.8.8",
+            "button": "Pingaa isäntää"
         },
         "results": {
-            "title": ""
+            "title": "Ping-tulokset"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Ping Test?",
-            "what_is_desc": "[Pending Translation] Ping is a network diagnostic tool that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. The tool is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.",
-            "why_use_title": "[Pending Translation] Why Use Ping Test?",
-            "why_use_desc": "[Pending Translation] Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to check server latency before joining online games, while website owners monitor their server's responsiveness to ensure optimal user experience.",
-            "metrics_title": "[Pending Translation] Understanding Ping Metrics",
-            "metric1": "[Pending Translation] <strong>Packets Sent\/Received:<\/strong> Number of ping requests and successful responses",
-            "metric2": "[Pending Translation] <strong>Packet Loss:<\/strong> Percentage of packets that didn't receive a response",
-            "metric3": "[Pending Translation] <strong>Minimum Time:<\/strong> Fastest round-trip time recorded",
-            "metric4": "[Pending Translation] <strong>Average Time:<\/strong> Mean latency across all pings",
-            "metric5": "[Pending Translation] <strong>Maximum Time:<\/strong> Slowest round-trip time recorded",
-            "metric6": "[Pending Translation] <strong>TTL (Time To Live):<\/strong> Number of network hops before packet expires",
-            "interpreting_title": "[Pending Translation] Interpreting Results",
-            "interpreting_desc": "[Pending Translation] Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "what_is_title": "Mikä on ping-testi?",
+            "what_is_desc": "Ping on verkkodiagnostiikka-työkalu, joka testaa isännän saavutettavuutta IP-verkossa. Se mittaa aikaa, joka kuluu viestin lähettämiseen lähteestä kohteeseen ja takaisin (viive). Ping lähettää ICMP Echo Request -paketteja ja odottaa vastausta (Echo Reply). Nimi tulee kaikuluotaimen äänestä.",
+            "why_use_title": "Miksi käyttää pingiä?",
+            "why_use_desc": "Ping-testaus on elintärkeää verkon vianetsinnässä. Ylläpitäjät varmistavat sillä yhteydet ja mittaavat viivettä. Se auttaa tunnistamaan, onko palvelin verkossa ja havaitsemaan pakettihävikkiä. Pelaajat tarkistavat sillä viiveen ennen peliin liittymistä.",
+            "metrics_title": "Ping-mittarit",
+            "metric1": "<strong>Lähetetyt/vastaanotetut paketit:</strong> Onnistuneiden kyselyiden määrä",
+            "metric2": "<strong>Pakettihävikki:</strong> Prosenttiosuus paketeista, jotka eivät saaneet vastausta",
+            "metric3": "<strong>Minimiaika:</strong> Nopein tallennettu vasteaika",
+            "metric4": "<strong>Keskiarvoaika:</strong> Viiveiden keskiarvo",
+            "metric5": "<strong>Maksimiaika:</strong> Hitain tallennettu vasteaika",
+            "metric6": "<strong>TTL (Time To Live):</strong> Verkko-hyppyjen määrä ennen paketin vanhenemista",
+            "interpreting_title": "Tulosten tulkinta",
+            "interpreting_desc": "Hyvä ping-aika on yleensä alle 50 ms paikallisesti ja alle 100 ms kansainvälisesti. Yli 200 ms viive kertoo mahdollisista ongelmista tai ruuhkasta."
         },
         "js": {
-            "pinging": "",
-            "success": "",
-            "error": "",
-            "ping_host": ""
+            "pinging": "Pingataan...",
+            "success": "Ping onnistui",
+            "error": "Ping epäonnistui",
+            "ping_host": "Pingaa isäntää"
         }
     },
     "port-checker": {
         "meta": {
-            "title": "[Pending Translation] Port Checker Tool - Check Open Ports & Network Connectivity Free",
-            "description": "[Pending Translation] Free port checker tool to test if ports are open, closed, or filtered. Check TCP\/UDP ports instantly for network troubleshooting and security auditing.",
-            "h1": "[Pending Translation] Port Checker Tool",
-            "subtitle": "[Pending Translation] Check if ports are open on any server for troubleshooting connectivity"
+            "title": "Porttitarkistus - Tarkista avoimet portit ilmaiseksi",
+            "description": "Ilmainen porttitarkistus. Testaa onko jokin portti auki, kiinni vai suodatettu. Välttämätön vianetsintään ja tietoturvaan.",
+            "h1": "Porttitarkistus",
+            "subtitle": "Tarkista ovatko portit auki millä tahansa palvelimella"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] example.com or 8.8.8.8",
-            "port_label": "[Pending Translation] Port Number",
-            "port_placeholder": "[Pending Translation] 80",
-            "button": "[Pending Translation] Check Port"
+            "host_label": "Isäntä tai IP-osoite",
+            "host_placeholder": "esimerkki.fi tai 8.8.8.8",
+            "port_label": "Portin numero",
+            "port_placeholder": "80",
+            "button": "Tarkista portti"
         },
         "results": {
-            "title": ""
+            "title": "Tulokset"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Port Checker?",
-            "what_is_desc": "[Pending Translation] A Port Checker is a network diagnostic tool that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Common ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Checking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.",
-            "why_check_title": "[Pending Translation] Why Check Ports?",
-            "why_check_desc": "[Pending Translation] Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren't accessible, determining if the issue is with the service itself, firewall rules, or network routing.",
-            "common_ports_title": "[Pending Translation] Common Ports",
-            "port1": "[Pending Translation] <strong>Port 80:<\/strong> HTTP (web traffic)",
-            "port2": "[Pending Translation] <strong>Port 443:<\/strong> HTTPS (secure web traffic)",
-            "port3": "[Pending Translation] <strong>Port 22:<\/strong> SSH (secure shell access)",
-            "port4": "[Pending Translation] <strong>Port 21:<\/strong> FTP (file transfer)",
-            "port5": "[Pending Translation] <strong>Port 25:<\/strong> SMTP (email sending)",
-            "port6": "[Pending Translation] <strong>Port 3306:<\/strong> MySQL database",
-            "port7": "[Pending Translation] <strong>Port 3389:<\/strong> RDP (Remote Desktop)",
-            "security_title": "[Pending Translation] Security Implications",
-            "security_desc": "[Pending Translation] Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "what_is_title": "Mikä on porttitarkistus?",
+            "what_is_desc": "Porttitarkistus on työkalu, joka määrittää, onko palvelimen TCP/UDP-portti auki, kiinni vai suodatettu (palomuuri estää). Portit ovat virtuaalisia päätepisteitä viestinnälle (1-65535). Esimerkiksi portti 80 on HTTP-liikenteelle ja 443 HTTPS:lle.",
+            "why_check_title": "Miksi tarkistaa portteja?",
+            "why_check_desc": "Ylläpitäjät varmistavat työkaluilla, että palvelut ovat saatavilla suoraan portista. Kehittäjät testaavat sovellustensa kuuntelua ja tietoturva-ammattilaiset havaitsevat haavoittuvuuksia.",
+            "common_ports_title": "Yleisimmät portit",
+            "port1": "<strong>Portti 80:</strong> HTTP (web-liikenne)",
+            "port2": "<strong>Portti 443:</strong> HTTPS (suojattu web-liikenne)",
+            "port3": "<strong>Portti 22:</strong> SSH (suojattu yhteys)",
+            "port4": "<strong>Portti 21:</strong> FTP (tiedostojen siirto)",
+            "port5": "<strong>Portti 25:</strong> SMTP (sähköpostin lähetys)",
+            "port6": "<strong>Portti 3306:</strong> MySQL-tietokanta",
+            "port7": "<strong>Portti 3389:</strong> RDP (etätyöpöytä)",
+            "security_title": "Tietoturvavaikutukset",
+            "security_desc": "Avoimet portit ovat mahdollisia sisääntuloreittejä hyökkääjille. Paras käytäntö on pitää vain välttämättömät portit auki ja suodattaa muut."
         },
         "js": {
-            "checking": "",
-            "success": "",
-            "error": "",
-            "check_port": ""
+            "checking": "Tarkistetaan...",
+            "success": "Tarkistus valmis",
+            "error": "Virhe tarkistuksessa",
+            "check_port": "Tarkista portti"
         }
     },
     "reverse-dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] Reverse DNS Lookup - Free Online Tool",
-            "description": "[Pending Translation] Free online reverse DNS lookup tool. Find the hostname associated with any IP address instantly. Fast, secure, and easy to use.",
-            "h1": "[Pending Translation] Reverse DNS Lookup",
-            "subtitle": "[Pending Translation] Find the domain name or hostname associated with an IP address instantly"
+            "title": "Käänteinen DNS-haku - Ilmainen online-työkalu",
+            "description": "Löydä IP-osoitteeseen liittyvä verkkotunnus tai isäntänimi välittömästi. Nopea ja turvallinen käänteinen haku.",
+            "h1": "Käänteinen DNS-haku",
+            "subtitle": "Selvitä IP-osoitteeseen liittyvä domain-nimi välittömästi"
         },
         "form": {
-            "ip_label": "[Pending Translation] Enter IP Address",
-            "ip_placeholder": "[Pending Translation] e.g., 8.8.8.8",
-            "button": "[Pending Translation] Lookup Reverse DNS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "ip_label": "Syötä IP-osoite",
+            "ip_placeholder": "esim. 8.8.8.8",
+            "button": "Hae käänteinen DNS",
+            "button_loading": "Haetaan..."
         },
         "results": {
-            "title": "[Pending Translation] Reverse DNS Results"
+            "title": "Tulokset"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Reverse DNS Lookup?",
-            "what_is_desc": "[Pending Translation] Reverse DNS lookup (rDNS) is the process of determining the domain name or hostname associated with an IP address. Unlike a standard DNS lookup that converts a domain name to an IP address (forward lookup), rDNS does the opposite. It's often used to verify the identity of a server or to troubleshoot network issues.",
-            "why_use_title": "[Pending Translation] Why Use Reverse DNS Lookup?",
-            "why_use_desc": "[Pending Translation] Reverse DNS is widely used for security and verification purposes. It helps identify the source of incoming traffic, verify email senders (to prevent spam), and troubleshoot network connectivity issues. Many mail servers require valid rDNS records to accept incoming emails.",
-            "ptr_records_title": "[Pending Translation] Understanding PTR Records",
-            "ptr_record1": "[Pending Translation] <strong>PTR Record:<\/strong> A Pointer Record (PTR) is the type of DNS record used for reverse DNS lookups.",
-            "ptr_record2": "[Pending Translation] <strong>Mapping:<\/strong> It maps an IP address back to a hostname.",
-            "ptr_record3": "[Pending Translation] <strong>Verification:<\/strong> Crucial for email deliverability and security verification.",
-            "ptr_record4": "[Pending Translation] <strong>IP-to-Host:<\/strong> Essential for identifying the true owner of an IP address.",
-            "ptr_record5": "[Pending Translation] <strong>Spam Prevention:<\/strong> Used by mail servers to validate sender authenticity.",
-            "ptr_record6": "[Pending Translation] <strong>Network Logs:<\/strong> Helpful for making network logs human-readable by showing hostnames.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_cases_desc": "[Pending Translation] Common use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
-        },
-        "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] What is a PTR record?",
-            "a1": "[Pending Translation] A PTR (Pointer) record is a type of DNS record that maps an IP address to a hostname. It is the core component of a reverse DNS lookup.",
-            "q2": "[Pending Translation] Why is reverse DNS important for email?",
-            "a2": "[Pending Translation] Many email providers use reverse DNS to verify that the sending server is legitimate. If a server's IP address doesn't have a matching rDNS record, its emails may be flagged as spam.",
-            "q3": "[Pending Translation] Can any IP address have a reverse DNS record?",
-            "a3": "[Pending Translation] Yes, but the owner of the IP address (typically the ISP or hosting provider) must configure the PTR record in their DNS settings."
+            "what_is_title": "Mikä on käänteinen DNS-haku?",
+            "what_is_desc": "Käänteinen DNS (rDNS) on prosessi, jossa selvitetään IP-osoitteseen liittyvä isäntänimi. Se on päinvastainen tavalliselle haulle.",
+            "why_use_title": "Miksi käyttää sitä?",
+            "why_use_desc": "Sitä käytetään turvallisuuteen, sähköpostien varmentamiseen (spämmin esto) ja vianetsintään. Monet sähköpostipalvelimet vaativat rDNS:n hyväksyäkseen viestit.",
+            "ptr_records_title": "PTR-tietueiden ymmärtäminen",
+            "ptr_record1": "<strong>PTR-tietue:</strong> Käytetään käänteisessä haussa.",
+            "ptr_record2": "<strong>Yhdistäminen:</strong> Yhdistää IP-osoitteen takaisin isäntänimeen.",
+            "ptr_record3": "<strong>Säihköposti:</strong> Elintärkeä sähköpostien perillemenolle.",
+            "ptr_record4": "<strong>Tunnistus:</strong> Tunnistaa IP:n todellisen omistajan.",
+            "ptr_record5": "<strong>Roskaposti:</strong> Auttaa roskapostin suodatuksessa.",
+            "ptr_record6": "<strong>Lokit:</strong> Tekee lokitiedoista helpommin luettavia."
         }
     },
     "traceroute": {
         "meta": {
-            "title": "[Pending Translation] Traceroute - Free Online Tool",
-            "description": "[Pending Translation] Free online traceroute tool. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] Traceroute",
-            "subtitle": "[Pending Translation] The best traceroute for developers and IT professionals"
+            "title": "Traceroute - Seuraa reittiä palvelimelle",
+            "description": "Ilmainen online-traceroute. Seuraa datan reittiä verkossa ja paikallista viiveet.",
+            "h1": "Traceroute",
+            "subtitle": "Paras traceroute-työkalu kehittäjille ja ammattilaisille"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "Isäntänimi / IP",
+            "host_placeholder": "esimerkki.fi",
+            "button": "Traceroute",
+            "button_loading": "Jäljitetään..."
         },
         "results": {
-            "title": ""
+            "title": "Reitin tiedot"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Traceroute?",
-            "what_is_desc": "[Pending Translation] This is a free online tool to traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "what_is_title": "Mikä on Traceroute?",
+            "what_is_desc": "Seuraa tiedon siirtymistä laitteeltasi kohdepalvelimelle eri verkkojen läpi. Näe jokainen välietappi ja niiden viiveet."
         }
     },
     "user-agent-parser": {
         "meta": {
-            "title": "[Pending Translation] Free User Agent Parser",
-            "description": "[Pending Translation] Identify browser, OS, and device from User Agent string with our free tool.",
-            "h1": "[Pending Translation] User Agent Parser",
-            "subtitle": "[Pending Translation] Identify browser, OS, and device from User Agent string"
+            "title": "Ilmainen User Agent -jäsennin",
+            "description": "Tunnista selain, käyttöjärjestelmä ja laite User Agent -merkkijonosta ilmaisella työkalullamme.",
+            "h1": "User Agent -jäsennin",
+            "subtitle": "Tunnista selain, käyttöjärjestelmä ja laite merkkijonon perusteella"
         },
         "editor": {
-            "label_input": "[Pending Translation] User Agent String",
-            "ph_input": "[Pending Translation] Mozilla\/5.0...",
-            "btn_parse": "[Pending Translation] Parse",
-            "btn_use_my_ua": "[Pending Translation] Use My User Agent",
-            "label_browser": "[Pending Translation] Browser",
-            "label_os": "[Pending Translation] Operating System",
-            "label_device": "[Pending Translation] Device",
-            "label_raw": "[Pending Translation] Raw Engine info"
+            "label_input": "User Agent -merkkijono",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Jäsennä",
+            "btn_use_my_ua": "Käytä omaani",
+            "label_browser": "Selain",
+            "label_os": "Käyttöjärjestelmä",
+            "label_device": "Laite",
+            "label_raw": "Raaka-tieto"
         },
         "content": {
-            "p1": "[Pending Translation] Our free User Agent Parser instantly decodes user agent strings to identify the browser, operating system, device type, and engine version. Useful for developers debugging browser-specific issues or analyzing traffic sources.",
-            "features_title": "[Pending Translation] Features",
+            "p1": "Pura User Agent -merkkijonot ja selvitä selain, käyttöjärjestelmä ja laiteversiot välittömästi. Hyödyllinen kehittäjille debuggaukseen.",
+            "features_title": "Ominaisuudet",
             "features": {
                 "instant": {
-                    "title": "[Pending Translation] Instant Parsing",
-                    "desc": "[Pending Translation] Decode user agents in milliseconds"
+                    "title": "Välitön jäsennys",
+                    "desc": "Pura tiedot millisekunneissa"
                 },
                 "detailed": {
-                    "title": "[Pending Translation] Detailed Info",
-                    "desc": "[Pending Translation] Extracts Browser, OS, Device, and Engine"
+                    "title": "Yksityiskohtaiset tiedot",
+                    "desc": "Selain, OS, Laite ja Moottori"
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detect",
-                    "desc": "[Pending Translation] One-click to parse your own current user agent"
+                    "title": "Tunista automaattisesti",
+                    "desc": "Jäsennä oma selaintietosi yhdellä klikkauksella"
                 },
                 "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] Unlimited uses, no cost"
+                    "title": "100 % ilmainen",
+                    "desc": "Rajoittamaton käyttö"
                 }
             },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "debugging": {
-                    "title": "[Pending Translation] Debugging",
-                    "desc": "[Pending Translation] Identify detailed browser versions for troubleshooting"
-                },
-                "analytics": {
-                    "title": "[Pending Translation] Analytics",
-                    "desc": "[Pending Translation] Understand what devices and OSs your users are using"
-                },
-                "dev": {
-                    "title": "[Pending Translation] Development",
-                    "desc": "[Pending Translation] Verify user agent strings during testing"
-                },
-                "security": {
-                    "title": "[Pending Translation] Security",
-                    "desc": "[Pending Translation] Analyze suspicious user agent strings in logs"
-                }
-            },
-            "how_to_title": "[Pending Translation] How to Use",
-            "how_to": {
-                "step1": {
-                    "title": "[Pending Translation] Enter String",
-                    "desc": "[Pending Translation] Paste a User Agent string or click \"Use My User Agent\""
-                },
-                "step2": {
-                    "title": "[Pending Translation] Parse",
-                    "desc": "[Pending Translation] Click \"Parse\" to decode the string"
-                },
-                "step3": {
-                    "title": "[Pending Translation] View Results",
-                    "desc": "[Pending Translation] See the broken-down details for Browser, OS, and Device"
-                }
-            },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "Usein kysytyt kysymykset",
             "faq": {
-                "q1": "[Pending Translation] What is a User Agent?",
-                "a1": "[Pending Translation] A User Agent is a string of text sent by your web browser to every website you visit, identifying the browser, version, operating system, and device type.",
-                "q2": "[Pending Translation] Is this parser accurate?",
-                "a2": "[Pending Translation] It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.",
-                "q3": "[Pending Translation] Is my data private?",
-                "a3": "[Pending Translation] Yes, parsing happens locally in your browser. We do not store your user agent data."
+                "q1": "Mikä on User Agent?",
+                "a1": "Se on tekstiä, jota selaimesi lähettää verkkosivuille tunnistaakseen itsensä ja laitteesi tyypin.",
+                "q2": "Onko tämä tarkka?",
+                "a2": "Kyllä, se käyttää standardeja tunnistusmalleja. Muista, että tieto on mahdollista väärentää (spoofing).",
+                "q3": "Onko datani turvassa?",
+                "a3": "Kyllä, jäsennys tapahtuu selaimessasi. Emme tallenna UA-tietojasi."
             }
         }
     },
     "what-is-my-ip": {
         "meta": {
-            "title": "[Pending Translation] What is My IP Address? - Check Your IP Location Free",
-            "description": "[Pending Translation] Find out your public IP address instantly. Check your IPv4\/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] What is My IP Address?",
-            "subtitle": "[Pending Translation] Instantly discover your public IP address with detailed ISP information"
+            "title": "Mikä on minun IP-osoitteeni? - Tarkista oma IP ilmaiseksi",
+            "description": "Selvitä julkinen IP-osoitteesi välittömästi. Tarkista IPv4/IPv6, operaattori ja sijainti ilmaiseksi.",
+            "h1": "Mikä on minun IP-osoitteeni?",
+            "subtitle": "Näe julkinen IP-osoitteesi ja operaattorisi tiedot heti"
         },
         "ui": {
-            "loading": "",
-            "your_ip_title": "",
-            "copy_button": "",
-            "timezone": ""
+            "loading": "Ladataan...",
+            "your_ip_title": "Sinun IP-osoitteesi on",
+            "copy_button": "Kopioi IP",
+            "timezone": "Aikavyöhyke"
         },
         "results": {
-            "location": "",
-            "isp": "",
-            "country": ""
+            "location": "Sijainti",
+            "isp": "Operaattori",
+            "country": "Maa"
         },
         "content": {
-            "main_title": "[Pending Translation] What Is My IP Address - Free IP Lookup Tool",
-            "main_desc": "[Pending Translation] Find your public IP address instantly with our free IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.",
-            "what_is_title": "[Pending Translation] What is My IP Address?",
-            "what_is_desc": "[Pending Translation] Your IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.",
-            "ipv4_vs_ipv6_title": "[Pending Translation] IPv4 vs IPv6 Addresses",
-            "ipv4_title": "[Pending Translation] IPv4 Address",
-            "ipv4_format": "[Pending Translation] <strong>Format:<\/strong> 192.168.1.1 (four numbers 0-255 separated by dots)",
-            "ipv4_total": "[Pending Translation] <strong>Total Addresses:<\/strong> ~4.3 billion addresses",
-            "ipv4_desc": "[Pending Translation] Most common format worldwide, but running out of available addresses due to internet growth",
-            "ipv6_title": "[Pending Translation] IPv6 Address",
-            "ipv6_format": "[Pending Translation] <strong>Format:<\/strong> 2001:0db8:85a3::8a2e:0370:7334",
-            "ipv6_total": "[Pending Translation] <strong>Total Addresses:<\/strong> 340 undecillion addresses",
-            "ipv6_desc": "[Pending Translation] Newer format with virtually unlimited addresses, gradually replacing IPv4",
-            "why_check_title": "[Pending Translation] Why Check Your IP?",
-            "why_check_desc": "[Pending Translation] Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.",
-            "public_vs_private_title": "[Pending Translation] Public vs Private IP Addresses",
-            "public_ip_title": "[Pending Translation] 🌐 Public IP Address",
-            "public_ip_desc": "[Pending Translation] Your unique address on the internet, visible to all websites and services you visit.",
-            "public_ip_example": "[Pending Translation] <strong>Example:<\/strong> 203.0.113.45",
-            "public_ip_note": "[Pending Translation] Assigned by your ISP and used for all internet communication",
-            "private_ip_title": "[Pending Translation] 🏠 Private IP Address",
-            "private_ip_desc": "[Pending Translation] Your device's address on your local network, not visible on the internet.",
-            "private_ip_example": "[Pending Translation] <strong>Example:<\/strong> 192.168.1.100",
-            "private_ip_note": "[Pending Translation] Used for communication within your home or office network",
-            "security_title": "[Pending Translation] IP Address Security & Privacy",
-            "security_desc1": "[Pending Translation] Your IP address reveals your approximate location (city\/region), ISP, and can be used to track your online activity across websites. While it doesn't expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.",
-            "security_desc2": "[Pending Translation] <strong>Privacy Protection:<\/strong> Use a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN's IP instead of yours. Our tool shows exactly what information websites can see about your connection.",
-            "dynamic_vs_static_title": "[Pending Translation] Dynamic vs Static IP Addresses",
-            "dynamic_ip": "[Pending Translation] <strong>Dynamic IP:<\/strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.",
-            "static_ip": "[Pending Translation] <strong>Static IP:<\/strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.",
-            "privacy_tips_title": "[Pending Translation] Privacy & Security Tips",
-            "privacy_tip1": "[Pending Translation] • Never share your IP address publicly on forums or social media",
-            "privacy_tip2": "[Pending Translation] • Use a VPN when connecting to public WiFi networks",
-            "privacy_tip3": "[Pending Translation] • Enable your router's firewall to block unauthorized access",
-            "privacy_tip4": "[Pending Translation] • Regularly check your IP to detect unauthorized VPN disconnections",
-            "privacy_tip5": "[Pending Translation] • Be aware that websites log your IP for security and analytics"
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "main_title": "Mikä on minun IP-osoitteeni - Ilmainen IP-haku",
+            "main_desc": "Selvitä julkinen IP-osoitteesi heti. Näet IPv4/IPv6-osoitteen, tarkan maantieteellisen sijainnin, operaattorin tiedot ja verkon yksityiskohdat. Välttämätön VPN-tarkistukseen ja vianetsintään.",
+            "what_is_title": "Mikä on IP-osoite?",
+            "what_is_desc": "IP-osoite on laitteesi yksilöllinen tunniste internetissä. Se sallii verkkosivujen kommunikoida laitteesi kanssa.",
+            "ipv4_vs_ipv6_title": "IPv4 vs IPv6",
+            "ipv4_desc": "Yleisin muoto, mutta osoitteet ovat loppumassa kesken maailmanlaajuisesti.",
+            "ipv6_desc": "Uudempi muoto, jossa on lähes rajaton määrä osoitteita.",
+            "security_title": "IP-osoite ja yksityisyys",
+            "security_desc1": "IP-osoitteesi paljastaa karkean sijaintisi ja operaattorisi. Käytä VPN-palvelua piilottaaksesi oikean osoitteesi ja lisätäksesi turvallisuutta.",
+            "privacy_tips_title": "Turvavinkkejä",
+            "privacy_tip1": "• Älä jaa IP-osoitettasi julkisesti",
+            "privacy_tip2": "• Käytä VPN:ää julkisissa Wi-Fi-verkoissa",
+            "privacy_tip3": "• Varmista reitittimen palomuurin toiminta"
         }
     },
     "what-is-my-isp": {
         "meta": {
-            "title": "[Pending Translation] What is My ISP? - Check Internet Service Provider Free",
-            "description": "[Pending Translation] Find out your Internet Service Provider (ISP) instantly. Check ISP name, organization, ASN, and IP address information for free.",
-            "h1": "[Pending Translation] What is My ISP?",
-            "subtitle": "[Pending Translation] Identify your Internet Service Provider with connection details"
+            "title": "Kuka on operaattorini? - Tarkista internet-palveluntarjoajasi",
+            "description": "Selvitä kuka tarjoaa internet-yhteytesi. Tarkista operaattorin nimi, ASN ja verkon tiedot ilmaiseksi.",
+            "h1": "Kuka on operaattorini?",
+            "subtitle": "Tunnista internet-palveluntarjoajasi ja yhteytesi tiedot"
         },
         "content": {
-            "loading": "[Pending Translation] Loading ISP information...",
-            "your_isp_title": "[Pending Translation] Your Internet Service Provider",
-            "network_label": "[Pending Translation] Network",
-            "location_label": "[Pending Translation] Location",
-            "main_title": "[Pending Translation] What Is My ISP - Internet Service Provider Lookup Tool",
-            "main_desc": "[Pending Translation] Instantly identify your Internet Service Provider (ISP), organization name, network details, and connection information. Our free ISP lookup tool reveals your ISP name, ASN (Autonomous System Number), IP address, location, and network infrastructure. Perfect for verifying VPN connections, troubleshooting network issues, confirming business internet lines, and understanding your network routing.",
-            "info_title": "[Pending Translation] What Information Can You Find?",
-            "info1": "[Pending Translation] <strong>ISP Name:<\/strong> The company providing your internet connection",
-            "info2": "[Pending Translation] <strong>Organization:<\/strong> The organization or entity managing your network connection",
-            "info3": "[Pending Translation] <strong>ASN:<\/strong> Unique network identifier for routing and peering",
-            "info4": "[Pending Translation] <strong>Location:<\/strong> City, region, and country associated with your connection",
-            "info5": "[Pending Translation] <strong>Network Details:<\/strong> IP range, subnet information, and network infrastructure data",
-            "why_use_title": "[Pending Translation] Why Use This Tool?",
-            "why_use1": "[Pending Translation] Verify you're connected through the correct internet provider",
-            "why_use2": "[Pending Translation] Troubleshoot network connectivity and performance issues",
-            "why_use3": "[Pending Translation] Check if you're using a VPN or proxy service correctly",
-            "why_use4": "[Pending Translation] Identify your network for security and privacy purposes",
-            "why_use5": "[Pending Translation] Verify ISP claims about service coverage and infrastructure",
-            "why_use6": "[Pending Translation] Research network routing and peering relationships",
-            "why_use7": "[Pending Translation] Confirm business internet connections and dedicated lines",
-            "why_use8": "[Pending Translation] Detect unauthorized network access or connection hijacking",
-            "asn_title": "[Pending Translation] Understanding ASN (Autonomous System Number)",
-            "asn_desc": "[Pending Translation] An Autonomous System Number (ASN) is a globally unique identifier assigned to a network or group of networks under a single administrative control. ISPs, large organizations, and content delivery networks each have their own ASN. This number is used in BGP (Border Gateway Protocol) routing to determine how internet traffic flows between different networks. Knowing your ASN helps identify your network provider and understand routing paths.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_case1_title": "[Pending Translation] 🔧 Network Troubleshooting",
-            "use_case1_desc": "[Pending Translation] Identify ISP-related issues, verify routing paths, and diagnose connection problems",
-            "use_case2_title": "[Pending Translation] 🔒 VPN Verification",
-            "use_case2_desc": "[Pending Translation] Confirm your VPN is working by checking if ISP changes when connected",
-            "use_case3_title": "[Pending Translation] 🛡️ Security Audits",
-            "use_case3_desc": "[Pending Translation] Verify connection authenticity and detect unauthorized network access",
-            "use_case4_title": "[Pending Translation] 💼 Business Verification",
-            "use_case4_desc": "[Pending Translation] Confirm dedicated business lines and enterprise internet connections",
-            "isp_types_title": "[Pending Translation] Types of ISPs",
-            "isp_type1": "[Pending Translation] <strong>DSL ISPs:<\/strong> Internet over telephone lines (ADSL, VDSL)",
-            "isp_type2": "[Pending Translation] <strong>Cable ISPs:<\/strong> High-speed internet via coaxial cable infrastructure",
-            "isp_type3": "[Pending Translation] <strong>Fiber Optic ISPs:<\/strong> Ultra-fast connections using fiber optic cables",
-            "isp_type4": "[Pending Translation] <strong>Wireless\/Mobile ISPs:<\/strong> 4G\/5G cellular internet connections",
-            "isp_type5": "[Pending Translation] <strong>Satellite ISPs:<\/strong> Internet via satellite for remote areas",
-            "isp_type6": "[Pending Translation] <strong>Business ISPs:<\/strong> Dedicated enterprise-grade connections with SLAs",
-            "privacy_note_title": "[Pending Translation] Privacy Note",
-            "privacy_note_desc": "[Pending Translation] Your ISP can see all unencrypted internet traffic and the websites you visit (but not HTTPS content). They may log connection data, browsing history, and DNS queries. Use a VPN to encrypt your traffic and prevent ISP monitoring. Our tool only displays publicly available information that websites can already see."
-        },
-        "results": {
-            "ip_address": "",
-            "asn": ""
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
-        },
-        "js": {
-            "error_loading": ""
+            "loading": "Ladataan tietoja...",
+            "your_isp_title": "Laitteesi internet-operaattori",
+            "network_label": "Verkko",
+            "location_label": "Sijainti",
+            "main_title": "Mikä on minun ISP - Operaattorin hakutyökalu",
+            "main_desc": "Tunnista heti kuka on operaattorisi (ISP), verkon tiedot ja sijainti. Välttämätön VPN-yhteyden varmistamiseen ja reititysongelmien selvittämiseen.",
+            "info_title": "Mitä tietoja näet?",
+            "info1": "<strong>Operaattorin nimi:</strong> Yritys, joka tarjoaa yhteytesi",
+            "info2": "<strong>Organisaatio:</strong> Verkkoa hallinnoiva taho",
+            "info3": "<strong>ASN:</strong> Verkon yksilöllinen numero",
+            "info4": "<strong>Sijainti:</strong> Kaupunki ja maa",
+            "info5": "<strong>Verkkotiedot:</strong> IP-alue ja infrastruktuuri",
+            "why_use_title": "Miksi käyttää tätä?",
+            "why_use1": "Varmista, että olet yhdistetty oikean operaattorin kautta",
+            "why_use2": "Selvitä yhteysongelmia ja nopeusvaihteluita",
+            "why_use3": "Tarkista toimiiko VPN-palvelusi oikein",
+            "why_use4": "Tunnista verkkosi tietoturvasyistä"
         }
     },
     "whois-lookup": {
         "meta": {
-            "title": "[Pending Translation] WHOIS Lookup Tool - Domain Registration Information Free",
-            "description": "[Pending Translation] Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.",
-            "h1": "[Pending Translation] WHOIS Lookup Tool",
-            "subtitle": "[Pending Translation] Query WHOIS database for domain registration & ownership details"
+            "title": "WHOIS-haku - Verkkotunnuksen rekisteröintitiedot",
+            "description": "Ilmainen WHOIS-haku. Tarkista kuka omistaa verkkotunnuksen, milloin se vanhenee ja kuka on rekisterinpitäjä.",
+            "h1": "WHOIS-haku",
+            "subtitle": "Hae WHOIS-tietokannasta verkkotunnuksen omistus- ja rekisteritiedot"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup WHOIS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "domain_label": "Verkkotunnus",
+            "domain_placeholder": "esimerkki.fi",
+            "button": "Hae WHOIS",
+            "button_loading": "Haetaan..."
         },
         "content": {
-            "form_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "what_is_title": "[Pending Translation] What is WHOIS Lookup?",
-            "what_is_desc": "[Pending Translation] WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.",
-            "why_use_title": "[Pending Translation] Why Use WHOIS Lookup?",
-            "why_use_desc": "[Pending Translation] WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors' domains.",
-            "key_info_title": "[Pending Translation] Key Information Provided",
-            "key_info1": "[Pending Translation] <strong>Registrant Information:<\/strong> Domain owner details (may be privacy protected)",
-            "key_info2": "[Pending Translation] <strong>Registration Dates:<\/strong> When domain was registered and last updated",
-            "key_info3": "[Pending Translation] <strong>Expiration Date:<\/strong> When domain registration expires",
-            "key_info4": "[Pending Translation] <strong>Registrar:<\/strong> Company managing the domain registration",
-            "key_info5": "[Pending Translation] <strong>Name Servers:<\/strong> DNS servers hosting the domain",
-            "key_info6": "[Pending Translation] <strong>Domain Status:<\/strong> Current status codes and locks",
-            "how_to_title": "[Pending Translation] How to Use",
-            "how_to1": "[Pending Translation] Enter the domain name you want to lookup",
-            "how_to2": "[Pending Translation] Click \"Lookup WHOIS\" button",
-            "how_to3": "[Pending Translation] Review comprehensive registration information",
-            "how_to4": "[Pending Translation] Use the data for your research or verification needs",
-            "privacy_title": "[Pending Translation] Privacy and WHOIS",
-            "privacy_desc": "[Pending Translation] Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws."
-        },
-        "results": {
-            "title": ""
-        },
-        "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": ""
+            "form_hint": "Syötä domain ilman http-alkua",
+            "what_is_title": "Mikä on WHOIS-haku?",
+            "what_is_desc": "WHOIS on protokolla, joka antaa tietoa verkkotunnusten rekisteröinnistä, kuten omistajista, päivämääristä ja nimipalvelimista.",
+            "why_use_title": "Miksi käyttää WHOIS-hakua?",
+            "why_use_desc": "Se on välttämätön omistajuuden varmistamiseen, saatavuuden tarkistamiseen ja epäilyttävien sivustojen tutkimiseen.",
+            "key_info_title": "Saatavat tiedot",
+            "key_info1": "<strong>Omistajatiedot:</strong> Verkkotunnuksen haltija (voi olla piilotettu)",
+            "key_info2": "<strong>Päivämäärät:</strong> Rekisteröinti ja vanhentuminen",
+            "key_info3": "<strong>Rekisterinpitäjä:</strong> Yritys, joka hallinnoi rekisteröintiä",
+            "key_info4": "<strong>Nimipalvelimet:</strong> DNS-palvelimet"
         }
     }
 }

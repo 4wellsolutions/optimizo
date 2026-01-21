@@ -1,1897 +1,286 @@
 {
     "base64-encoder-decoder": {
         "meta": {
-            "title": "[Pending Translation] Base64 Encoder & Decoder",
-            "description": "[Pending Translation] Encode and decode Base64 data instantly with our free online tool",
-            "h1": "[Pending Translation] Base64 Encoder & Decoder",
-            "subtitle": "[Pending Translation] Encode and decode Base64 data instantly"
+            "title": "Base64-koodain ja -dekoodain",
+            "description": "Koodaa ja pura Base64-tietoa välittömästi ilmaisella online-työkalullamme",
+            "h1": "Base64-koodain ja -dekoodain",
+            "subtitle": "Koodaa ja pura Base64-tietoa välittömästi"
         },
         "editor": {
-            "tab_encode": "[Pending Translation] Encode to Base64",
-            "tab_decode": "[Pending Translation] Decode from Base64",
-            "label_encode": "[Pending Translation] Enter Text to Encode",
-            "ph_encode": "[Pending Translation] Enter your text here...",
-            "desc_encode": "[Pending Translation] Enter any text to convert it to Base64 format",
-            "btn_encode": "[Pending Translation] Encode to Base64",
-            "label_decode": "[Pending Translation] Enter Base64 to Decode",
-            "ph_decode": "[Pending Translation] Enter Base64 encoded string...",
-            "desc_decode": "[Pending Translation] Enter Base64 encoded text to decode it back to plain text",
-            "btn_decode": "[Pending Translation] Decode from Base64",
-            "result_title": "[Pending Translation] Result",
-            "btn_copy": "[Pending Translation] Copy Result"
-        },
-        "content": {
-            "what_title": "[Pending Translation] What is Base64 Encoding?",
-            "what_desc": "[Pending Translation] Base64 is a binary-to-text encoding scheme that represents binary data in an ASCII string format. It's commonly used to encode data that needs to be stored or transferred over media designed to handle text. Our free Base64 encoder and decoder tool allows developers, data analysts, and IT professionals to quickly convert text to Base64 or decode Base64 strings back to readable text. Perfect for API development, data transmission, email attachments, embedding images in HTML\/CSS, and handling binary data in JSON.",
-            "features": {
-                "secure": {
-                    "title": "[Pending Translation] Secure Encoding",
-                    "desc": "[Pending Translation] All processing happens in your browser - your data never leaves your computer"
-                },
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] Encode or decode Base64 data in milliseconds with client-side processing"
-                },
-                "easy": {
-                    "title": "[Pending Translation] Easy to Use",
-                    "desc": "[Pending Translation] Simple tabbed interface for encoding and decoding with one-click copy"
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Use Base64 Encoder\/Decoder",
-                "encode": {
-                    "title": "[Pending Translation] Encoding Text",
-                    "step1": "[Pending Translation] Click the \"Encode to Base64\" tab",
-                    "step2": "[Pending Translation] Paste or type your text in the input area",
-                    "step3": "[Pending Translation] Click \"Encode to Base64\" button",
-                    "step4": "[Pending Translation] Copy the Base64 encoded result"
-                },
-                "decode": {
-                    "title": "[Pending Translation] Decoding Base64",
-                    "step1": "[Pending Translation] Click the \"Decode from Base64\" tab",
-                    "step2": "[Pending Translation] Paste your Base64 string in the input area",
-                    "step3": "[Pending Translation] Click \"Decode from Base64\" button",
-                    "step4": "[Pending Translation] Copy the decoded plain text result"
-                }
-            },
-            "uses": {
-                "title": "[Pending Translation] Common Base64 Use Cases",
-                "api": {
-                    "title": "[Pending Translation] API Authentication",
-                    "desc": "[Pending Translation] Encode credentials for Basic Authentication in HTTP headers and API requests."
-                },
-                "data_uri": {
-                    "title": "[Pending Translation] Data URIs",
-                    "desc": "[Pending Translation] Embed images, fonts, and files directly in HTML, CSS, or JSON using Base64 data URIs."
-                },
-                "email": {
-                    "title": "[Pending Translation] Email Attachments",
-                    "desc": "[Pending Translation] Encode binary attachments in MIME email messages for safe transmission."
-                },
-                "storage": {
-                    "title": "[Pending Translation] Data Storage",
-                    "desc": "[Pending Translation] Store binary data in text-based formats like JSON, XML, or databases."
-                }
-            },
-            "bottom": {
-                "h1": "[Pending Translation] Base64 Encoder & Decoder",
-                "subtitle": "[Pending Translation] Encode and decode Base64 data instantly",
-                "desc": "[Pending Translation] Base64 is a binary-to-text encoding scheme that converts binary data into ASCII text format. Our free Base64 Encoder & Decoder helps developers, system administrators, and IT professionals encode text to Base64 or decode Base64 back to readable text instantly. Perfect for API authentication, data URIs, email attachments, and secure data transmission. All processing happens in your browser for complete privacy.",
-                "works_title": "[Pending Translation] 🔄 How Base64 Works",
-                "works_encoding": "[Pending Translation] Converts binary data to ASCII text using 64 characters",
-                "works_encoding_sub": "[Pending Translation] A-Z, a-z, 0-9, +, \/ (and = for padding)",
-                "works_decoding": "[Pending Translation] Converts Base64 text back to original binary data",
-                "works_decoding_sub": "[Pending Translation] Reverses the encoding process perfectly",
-                "cases_title": "[Pending Translation] ✅ Common Use Cases",
-                "case_api": "[Pending Translation] API Authentication",
-                "case_api_desc": "[Pending Translation] Encode credentials for Basic Auth in HTTP headers",
-                "case_uri": "[Pending Translation] Data URIs",
-                "case_uri_desc": "[Pending Translation] Embed images and files directly in HTML\/CSS",
-                "case_email": "[Pending Translation] Email Attachments",
-                "case_email_desc": "[Pending Translation] Encode binary files for email transmission",
-                "case_url": "[Pending Translation] URL Parameters",
-                "case_url_desc": "[Pending Translation] Safely pass binary data in URLs",
-                "case_storage": "[Pending Translation] Data Storage",
-                "case_storage_desc": "[Pending Translation] Store binary data in text-only databases",
-                "case_web": "[Pending Translation] Web Development",
-                "case_web_desc": "[Pending Translation] Encode JSON, XML, and configuration files",
-                "best_practices_title": "[Pending Translation] 💡 Base64 Best Practices",
-                "best_practices_list": [
-                    "[Pending Translation] Base64 increases data size by approximately 33%",
-                    "[Pending Translation] Not suitable for encryption - use proper encryption algorithms",
-                    "[Pending Translation] Perfect for encoding binary data in text-only systems",
-                    "[Pending Translation] Always validate decoded data before using it",
-                    "[Pending Translation] Use URL-safe Base64 for URLs (replaces +\/= with -_)"
-                ]
-            },
-            "faq": {
-                "title": "[Pending Translation] ❓ Frequently Asked Questions",
-                "q1": "[Pending Translation] Is Base64 encoding secure?",
-                "a1": "[Pending Translation] No! Base64 is NOT encryption - it's simply encoding. Anyone can decode Base64 data instantly. Never use Base64 alone for security. For encryption, use proper cryptographic algorithms like AES, RSA, or TLS\/SSL.",
-                "q2": "[Pending Translation] Why does Base64 increase file size?",
-                "a2": "[Pending Translation] Base64 encoding increases data size by approximately 33% because it represents 3 bytes of binary data using 4 ASCII characters. This overhead is the trade-off for making binary data safe for text-only systems.",
-                "q3": "[Pending Translation] What is Base64 used for?",
-                "a3": "[Pending Translation] Base64 is used for encoding binary data (images, files, credentials) into ASCII text for transmission over text-only systems like email, URLs, JSON, XML, and HTTP headers. It's essential for API authentication, data URIs, and email attachments.",
-                "q4": "[Pending Translation] Is my data sent to a server?",
-                "a4": "[Pending Translation] No! All Base64 encoding and decoding happens entirely in your browser using JavaScript. Your data never leaves your device and is not stored, transmitted, or logged anywhere. Your privacy is completely protected.",
-                "q5": "[Pending Translation] Can I encode images to Base64?",
-                "a5": "[Pending Translation] Yes! While our tool encodes text, you can encode images using specialized tools. Base64-encoded images can be embedded directly in HTML\/CSS using data URIs (data:image\/png;base64,...). This is useful for small images but increases page size."
-            }
-        },
-        "js": {
-            "error_empty_encode": "[Pending Translation] Please enter text to encode",
-            "error_encoding": "[Pending Translation] Error encoding text: ",
-            "error_empty_decode": "[Pending Translation] Please enter Base64 string to decode",
-            "error_invalid": "[Pending Translation] Invalid Base64 string. Please check your input.",
-            "copied": "[Pending Translation] Copied!"
+            "tab_encode": "Koodaa Base64-muotoon",
+            "tab_decode": "Pura Base64-muodosta",
+            "label_encode": "Syötä koodattava teksti",
+            "ph_encode": "Kirjoita tekstisi tähän...",
+            "btn_encode": "Koodaa Base64-muotoon",
+            "label_decode": "Syötä purettava Base64",
+            "ph_decode": "Liitä Base64-koodattu merkkijono...",
+            "btn_decode": "Pura Base64-muodosta",
+            "result_title": "Tulos",
+            "btn_copy": "Kopioi tulos"
         }
     },
     "code-formatter": {
         "meta": {
-            "title": "[Pending Translation] Free Online Code Formatter",
-            "description": "[Pending Translation] Beautify and format your code instantly - supports HTML, CSS, JavaScript, JSON, XML, SQL, PHP",
-            "h1": "[Pending Translation] Free Online Code Formatter",
-            "subtitle": "[Pending Translation] Beautify and format your code instantly"
+            "title": "Ilmainen koodin muotoilija",
+            "description": "Kaunista ja muotoile koodisi välittömästi - tukee HTML, CSS, JavaScript, JSON, XML, SQL, PHP",
+            "h1": "Ilmainen koodin muotoilija",
+            "subtitle": "Kaunista ja muotoile koodisi välittömästi"
         },
         "editor": {
-            "label_language": "[Pending Translation] Language",
-            "languages": {
-                "html": "[Pending Translation] HTML",
-                "css": "[Pending Translation] CSS",
-                "js": "[Pending Translation] JavaScript",
-                "json": "[Pending Translation] JSON",
-                "xml": "[Pending Translation] XML",
-                "sql": "[Pending Translation] SQL",
-                "php": "[Pending Translation] PHP"
-            },
-            "label_indent": "[Pending Translation] Indentation",
-            "indents": {
-                "2": "",
-                "4": "",
-                "tab": "[Pending Translation] Tab"
-            },
-            "btn_format": "[Pending Translation] Format Code",
-            "label_input": "[Pending Translation] Input Code",
-            "btn_clear": "[Pending Translation] Clear",
-            "ph_input": "[Pending Translation] \/\/ Paste your code here...",
-            "label_output": "[Pending Translation] Formatted Code",
-            "btn_copy": "[Pending Translation] Copy",
-            "ph_output": "[Pending Translation] \/\/ Formatted code will appear here..."
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Free Online Code Formatter",
-            "p1": "[Pending Translation] Clean up messy code and improve readability with our free online code formatter. Whether you have minified code that needs beautifying or just want to standardize indentation, our tool handles it all instantly in your browser.",
-            "features": {
-                "multi": {
-                    "title": "[Pending Translation] Multi-Language Support",
-                    "desc": "[Pending Translation] Supports major programming languages including HTML, CSS, JS, JSON, and more"
-                },
-                "indent": {
-                    "title": "[Pending Translation] Custom Indentation",
-                    "desc": "[Pending Translation] Choose between 2 spaces, 4 spaces, or tabs for your preferred style"
-                },
-                "instant": {
-                    "title": "[Pending Translation] Instant Beautify",
-                    "desc": "[Pending Translation] Format code instantly without page reloads"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy Focused",
-                    "desc": "[Pending Translation] Code processing happens in your browser - no data is stored"
-                }
-            },
-            "langs_title": "[Pending Translation] 💻 Supported Languages",
-            "langs": {
-                "web": {
-                    "title": "[Pending Translation] Web Technologies",
-                    "desc": "[Pending Translation] HTML5, CSS3, JavaScript (ES6+)"
-                },
-                "data": {
-                    "title": "[Pending Translation] Data Formats",
-                    "desc": "[Pending Translation] JSON, XML"
-                },
-                "backend": {
-                    "title": "[Pending Translation] Backend",
-                    "desc": "[Pending Translation] PHP, SQL"
-                }
-            },
-            "why_title": "[Pending Translation] 🤔 Why Format Code?",
-            "why": {
-                "read": {
-                    "title": "[Pending Translation] Readability",
-                    "desc": "[Pending Translation] Properly indented code is easier to read, understand, and maintain."
-                },
-                "debug": {
-                    "title": "[Pending Translation] Debugging",
-                    "desc": "[Pending Translation] Find errors faster in well-structured code compared to minified strings."
-                },
-                "collab": {
-                    "title": "[Pending Translation] Collaboration",
-                    "desc": "[Pending Translation] Standard code style helps teams work together more efficiently."
-                }
-            },
-            "faq_title": "[Pending Translation] ❓ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is my code safe?",
-                "a1": "[Pending Translation] Yes! All code formatting is done using JavaScript directly in your browser. Your code is never sent to our servers.",
-                "q2": "[Pending Translation] Can I format minified code?",
-                "a2": "[Pending Translation] Absolutely! Our beautifier is perfect for un-minifying code to make it readable again.",
-                "q3": "[Pending Translation] Does it fix syntax errors?",
-                "a3": "[Pending Translation] The formatter focuses on layout and indentation. While it can handle some basic structure issues, it does not fix syntax errors.",
-                "q4": "[Pending Translation] Is there a limit on code size?",
-                "a4": "[Pending Translation] Since processing is done on your device, the limit depends on your browser's memory. It can easily handle files with thousands of lines."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please paste some code to format",
-            "success_format": "[Pending Translation] ✓ Code formatted successfully!",
-            "error_format": "[Pending Translation] Error formatting code: ",
-            "no_copy": "[Pending Translation] No code to copy",
-            "success_copy": "[Pending Translation] ✓ Copied to clipboard!"
+            "label_language": "Kieli",
+            "btn_format": "Muotoile koodi",
+            "label_input": "Syötä koodi",
+            "btn_clear": "Tyhjennä",
+            "label_output": "Muotoiltu koodi",
+            "btn_copy": "Kopioi"
         }
     },
     "cron-job-generator": {
         "meta": {
-            "title": "[Pending Translation] Cron Job Generator",
-            "description": "[Pending Translation] Create cron schedules easily with our visual generator - no need to memorize cron syntax",
-            "h1": "[Pending Translation] Cron Job Generator",
-            "subtitle": "[Pending Translation] Create cron schedules easily with our visual generator"
+            "title": "Cron-ajastuksen generaattori",
+            "description": "Luo cron-ajastuksia helposti visuaalisella generaattorilla - ei tarvetta muistaa syntaksia",
+            "h1": "Cron-ajastuksen generaattori",
+            "subtitle": "Luo cron-ajastuksia helposti visuaalisella generaattorilla"
         },
         "editor": {
-            "common_settings": "[Pending Translation] Common Settings",
-            "choose": "[Pending Translation] -- Choose --",
-            "options": {
-                "every_minute": "[Pending Translation] Every Minute (* * * * *)",
-                "every_5_minutes": "[Pending Translation] Every 5 Minutes (*\/5 * * * *)",
-                "every_15_minutes": "[Pending Translation] Every 15 Minutes (*\/15 * * * *)",
-                "every_30_minutes": "[Pending Translation] Every 30 Minutes (*\/30 * * * *)",
-                "every_hour": "[Pending Translation] Every Hour (0 * * * *)",
-                "every_day_midnight": "[Pending Translation] Every Day at Midnight (0 0 * * *)",
-                "every_week": "[Pending Translation] Every Week (0 0 * * 0)",
-                "every_month": "[Pending Translation] Every Month (0 0 1 * *)"
-            },
-            "minute": "[Pending Translation] Minute",
-            "every_minute": "[Pending Translation] Every Minute (*)",
-            "hour": "[Pending Translation] Hour",
-            "every_hour": "[Pending Translation] Every Hour (*)",
-            "day": "[Pending Translation] Day",
-            "every_day": "[Pending Translation] Every Day (*)",
-            "month": "[Pending Translation] Month",
-            "every_month": "[Pending Translation] Every Month (*)",
-            "weekday": "[Pending Translation] Weekday",
-            "every_weekday": "[Pending Translation] Every Weekday (*)",
-            "command": "[Pending Translation] Command to Run",
-            "ph_command": "[Pending Translation] \/usr\/bin\/php \/path\/to\/script.php",
-            "generated_cron": "[Pending Translation] Generated Cron Expression",
-            "btn_copy": "[Pending Translation] Copy Cron",
-            "btn_clear": "[Pending Translation] Reset"
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Cron Job Generator",
-            "p1": "[Pending Translation] Setting up cron jobs can be confusing with cryptic asterisks and numbers. Our free online Cron Job Generator allows you to build perfect cron schedules visually. Whether you need to run a script every 5 minutes, at midnight, or on specific days of the month, our tool generates the correct syntax for you instantly.",
-            "features": {
-                "visual": {
-                    "title": "[Pending Translation] Visual Editor",
-                    "desc": "[Pending Translation] Select minutes, hours, days, and months using a simple interface"
-                },
-                "readable": {
-                    "title": "[Pending Translation] Human Readable",
-                    "desc": "[Pending Translation] Converts cron expressions into plain English descriptions"
-                }
-            },
-            "syntax_title": "[Pending Translation] 📚 Understanding Cron Syntax",
-            "syntax_intro": "[Pending Translation] A cron expression consists of 5 fields separated by spaces:",
-            "syntax_fields": {
-                "min": "[Pending Translation] Minute (0-59)",
-                "hour": "[Pending Translation] Hour (0-23)",
-                "day": "[Pending Translation] Day of Month (1-31)",
-                "month": "[Pending Translation] Month (1-12)",
-                "week": "[Pending Translation] Day of Week (0-6, Sunday=0)"
-            },
-            "faq_title": "[Pending Translation] ❓ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] What is a cron job?",
-                "a1": "[Pending Translation] A cron job is a time-based job scheduler in Unix-like computer operating systems. Users can schedule jobs (commands or scripts) to run periodically at fixed times, dates, or intervals.",
-                "q2": "[Pending Translation] How do I install a cron job?",
-                "a2": "[Pending Translation] You typically use the command `crontab -e` in your terminal to edit your cron file. Then paste the generated line at the bottom of the file.",
-                "q4": "[Pending Translation] What does asterisk (*) mean?",
-                "a4": "[Pending Translation] An asterisk means \"every\". For example, an asterisk in the minute field means \"every minute\"."
-            }
-        },
-        "js": {
-            "success_copy": "[Pending Translation] ✓ Cron expression copied to clipboard!",
-            "no_copy": "[Pending Translation] No cron expression to copy"
+            "common_settings": "Yleiset asetukset",
+            "choose": "-- Valitse --",
+            "minute": "Minuutti",
+            "hour": "Tunti",
+            "day": "Päivä",
+            "month": "Kuukausi",
+            "weekday": "Viikonpäivä",
+            "command": "Suoritettava komento",
+            "generated_cron": "Generoitu cron-lauseke",
+            "btn_copy": "Kopioi cron",
+            "btn_clear": "Nollaa"
         }
     },
     "css-minifier": {
         "meta": {
-            "title": "[Pending Translation] Free CSS Minifier & Beautifier",
-            "description": "[Pending Translation] Optimize CSS files for faster page loads - minify and beautify CSS instantly",
-            "h1": "[Pending Translation] Free CSS Minifier & Beautifier",
-            "subtitle": "[Pending Translation] Optimize CSS files for faster page loads"
+            "title": "Ilmainen CSS-minimoija ja -muotoilija",
+            "description": "Optimoi CSS-tiedostot nopeampia latausaikoja varten - minimoi ja muotoile CSS välittömästi",
+            "h1": "Ilmainen CSS-minimoija ja -muotoilija",
+            "subtitle": "Optimoi CSS-tiedostot nopeampia latausaikoja varten"
         },
         "editor": {
-            "label_input": "[Pending Translation] CSS Input",
-            "ph_input": "[Pending Translation] Paste your CSS code here...",
-            "btn_minify": "[Pending Translation] Minify CSS",
-            "btn_beautify": "[Pending Translation] Beautify CSS",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy",
-            "label_output": "[Pending Translation] CSS Output",
-            "ph_output": "[Pending Translation] Processed CSS will appear here...",
+            "label_input": "CSS-syöte",
+            "ph_input": "Liitä CSS-koodisi tähän...",
+            "btn_minify": "Minimoi CSS",
+            "btn_beautify": "Muotoile CSS",
+            "btn_clear": "Tyhjennä",
+            "btn_copy": "Kopioi",
+            "label_output": "CSS-tuloste",
             "stats": {
-                "original": "[Pending Translation] Original Size",
-                "minified": "[Pending Translation] Minified Size",
-                "saved": "[Pending Translation] Saved",
-                "compression": "[Pending Translation] Compression"
+                "original": "Alkuperäinen koko",
+                "minified": "Minimoitu koko",
+                "saved": "Säästetty",
+                "compression": "Pakkausaste"
             }
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Free CSS Minifier & Beautifier",
-            "hero_subtitle": "[Pending Translation] Optimize CSS files for faster page loads and better performance",
-            "p1": "[Pending Translation] Our free CSS Minifier compresses CSS files by removing whitespace, comments, and unnecessary characters, significantly reducing file size and improving website load times. Perfect for web developers, designers, and anyone optimizing website performance. Also includes a CSS beautifier to format and organize your stylesheets for better readability. 100% free, client-side processing ensures your code stays private.",
-            "what_title": "[Pending Translation] 🎨 What is CSS Minification?",
-            "what_desc": "[Pending Translation] CSS minification is the process of removing unnecessary characters from CSS code without changing its functionality. This includes whitespace, line breaks, comments, and redundant code. Minified CSS files are smaller, load faster, and improve website performance. It's an essential optimization technique for production websites.",
-            "features_title": "[Pending Translation] ✨ Features",
-            "features": {
-                "minify": {
-                    "title": "[Pending Translation] CSS Minification",
-                    "desc": "[Pending Translation] Compress CSS by removing whitespace and comments"
-                },
-                "beautify": {
-                    "title": "[Pending Translation] CSS Beautification",
-                    "desc": "[Pending Translation] Format CSS with proper indentation and spacing"
-                },
-                "stats": {
-                    "title": "[Pending Translation] Compression Stats",
-                    "desc": "[Pending Translation] See file size reduction and compression rate"
-                },
-                "instant": {
-                    "title": "[Pending Translation] Instant Processing",
-                    "desc": "[Pending Translation] Minify or beautify CSS in milliseconds"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy First",
-                    "desc": "[Pending Translation] All processing happens in your browser"
-                },
-                "copy": {
-                    "title": "[Pending Translation] One-Click Copy",
-                    "desc": "[Pending Translation] Copy minified CSS to clipboard instantly"
-                }
-            },
-            "benefits_title": "[Pending Translation] 🎯 Benefits of CSS Minification",
-            "benefits": {
-                "speed": {
-                    "title": "[Pending Translation] ⚡ Faster Page Loads",
-                    "desc": "[Pending Translation] Smaller CSS files download faster, improving page load times and user experience"
-                },
-                "bandwidth": {
-                    "title": "[Pending Translation] 💰 Reduced Bandwidth",
-                    "desc": "[Pending Translation] Lower bandwidth usage saves hosting costs and mobile data for users"
-                },
-                "seo": {
-                    "title": "[Pending Translation] 📈 Better SEO",
-                    "desc": "[Pending Translation] Faster sites rank better in search engines, improving visibility"
-                },
-                "performance": {
-                    "title": "[Pending Translation] 🎯 Improved Performance",
-                    "desc": "[Pending Translation] Optimized CSS reduces browser parsing time and rendering delays"
-                },
-                "mobile": {
-                    "title": "[Pending Translation] 📱 Mobile Optimization",
-                    "desc": "[Pending Translation] Crucial for mobile users with limited bandwidth and slower connections"
-                },
-                "production": {
-                    "title": "[Pending Translation] 🔧 Production Ready",
-                    "desc": "[Pending Translation] Minified CSS is standard practice for production deployments"
-                }
-            },
-            "how_title": "[Pending Translation] 📚 How to Use",
-            "how_steps": {
-                "1": "[Pending Translation] <strong>Choose Action:<\/strong> Click \"Minify CSS\" to compress or \"Beautify CSS\" to format",
-                "2": "[Pending Translation] <strong>View Results:<\/strong> See the processed CSS in the output field with compression stats",
-                "3": "[Pending Translation] <strong>Copy:<\/strong> Click \"Copy\" to copy the minified CSS to your clipboard",
-                "4": "[Pending Translation] <strong>Use in Production:<\/strong> Replace your original CSS file with the minified version",
-                "5": ""
-            },
-            "best_practices_title": "[Pending Translation] 💡 Best Practices",
-            "best_practices_list": {
-                "1": "[Pending Translation] <strong>Minify for production:<\/strong> Only use minified CSS in production environments",
-                "2": "[Pending Translation] <strong>Combine files:<\/strong> Merge multiple CSS files before minifying for better compression",
-                "3": "[Pending Translation] <strong>Test thoroughly:<\/strong> Always test minified CSS to ensure no functionality is broken",
-                "4": "[Pending Translation] <strong>Use build tools:<\/strong> Integrate minification into your build process for automation",
-                "5": ""
-            },
-            "faq_title": "[Pending Translation] ❓ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] How much can CSS minification reduce file size?",
-                "a1": "[Pending Translation] Typically 20-40% reduction, depending on your CSS structure. Files with lots of comments and whitespace see bigger savings. Combined with gzip compression, you can achieve 70-80% total reduction.",
-                "q2": "[Pending Translation] Will minification break my CSS?",
-                "a2": "[Pending Translation] No! Minification only removes unnecessary characters while preserving functionality. However, always test your minified CSS to ensure everything works as expected.",
-                "q3": "[Pending Translation] Should I minify CSS for development?",
-                "a3": "[Pending Translation] No. Keep CSS readable during development for easier debugging. Only minify for production deployments. Use beautified CSS during development and testing.",
-                "q4": "[Pending Translation] Can I reverse minification?",
-                "a4": "[Pending Translation] Yes! Use our \"Beautify CSS\" feature to format minified CSS back into a readable format. However, comments are permanently removed during minification.",
-                "q5": "[Pending Translation] Is my CSS data secure?",
-                "a5": "[Pending Translation] Absolutely! All processing happens entirely in your browser. Your CSS code never leaves your device and is not sent to any server."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter CSS code to process",
-            "success_minify": "[Pending Translation] ✓ CSS minified successfully",
-            "success_beautify": "[Pending Translation] ✓ CSS beautified successfully",
-            "error_process": "[Pending Translation] ✗ Error processing CSS: ",
-            "no_copy": "[Pending Translation] No CSS to copy",
-            "success_copy": "[Pending Translation] ✓ CSS copied to clipboard"
         }
     },
     "curl-command-builder": {
         "meta": {
-            "title": "[Pending Translation] CURL Command Builder",
-            "description": "[Pending Translation] Build CURL commands easily with our visual builder - create HTTP requests without memorizing syntax",
-            "h1": "[Pending Translation] CURL Command Builder",
-            "subtitle": "[Pending Translation] Build CURL commands easily with our visual builder"
+            "title": "CURL-komennon rakentaja",
+            "h1": "CURL-komennon rakentaja",
+            "subtitle": "Rakenna CURL-komentoja helposti visuaalisella työkalulla"
         },
         "editor": {
-            "method_label": "[Pending Translation] Method",
-            "url_label": "[Pending Translation] URL",
-            "headers_tab": "[Pending Translation] Headers",
-            "body_tab": "[Pending Translation] Request Body",
-            "key_ph": "[Pending Translation] Key (e.g. Authorization)",
-            "value_ph": "[Pending Translation] Value (e.g. Bearer token)",
-            "add_header": "[Pending Translation] + Add Header",
-            "raw_data_label": "[Pending Translation] Raw Data (JSON\/Text)",
-            "generated_label": "[Pending Translation] Generated Command",
-            "btn_copy": "[Pending Translation] Copy Command"
-        },
-        "js": {
-            "success_copy": "[Pending Translation] Command copied!"
+            "method_label": "Metodi",
+            "url_label": "URL",
+            "headers_tab": "Otsakkeet",
+            "body_tab": "Pyyntörunko",
+            "add_header": "+ Lisää otsake",
+            "generated_label": "Generoitu komento",
+            "btn_copy": "Kopioi komento"
         }
     },
     "html-encoder-decoder": {
         "meta": {
-            "title": "[Pending Translation] Free HTML Encoder & Decoder",
-            "description": "[Pending Translation] Encode and decode HTML entities to prevent XSS attacks with our free online tool",
-            "h1": "[Pending Translation] HTML Encoder & Decoder",
-            "subtitle": "[Pending Translation] Encode and decode HTML entities to prevent XSS attacks"
+            "title": "Ilmainen HTML-koodain ja -dekoodain",
+            "description": "Koodaa ja pura HTML-entiteettejä XSS-hyökkäysten estämiseksi.",
+            "h1": "HTML-koodain ja -dekoodain",
+            "subtitle": "Koodaa ja pura HTML-entiteettejä turvallisesti"
         },
         "editor": {
-            "mode_encode": "[Pending Translation] Encode HTML",
-            "mode_decode": "[Pending Translation] Decode HTML",
-            "label_input_encode": "[Pending Translation] Enter HTML to Encode",
-            "ph_input_encode": "[Pending Translation] <div>Hello & Welcome<\/div>",
-            "btn_encode": "[Pending Translation] Encode HTML",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy",
-            "label_output_encode": "[Pending Translation] Encoded HTML",
-            "ph_output": "[Pending Translation] Processed HTML will appear here...",
-            "label_input_decode": "[Pending Translation] Enter HTML to Decode",
-            "label_output_decode": "[Pending Translation] Decoded HTML",
-            "btn_decode": "[Pending Translation] Decode HTML"
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Free HTML Encoder & Decoder",
-            "hero_subtitle": "[Pending Translation] Encode and decode HTML entities to prevent XSS attacks",
-            "p1": "[Pending Translation] Our free HTML Encoder & Decoder tool helps you encode special characters in HTML for safe display on web pages, or decode encoded HTML back to its original format. Perfect for developers, security professionals, and anyone working with raw HTML.",
-            "what_title": "[Pending Translation] ðŸ”— What is HTML Encoding?",
-            "what_desc": "[Pending Translation] HTML encoding converts characters that have special meaning in HTML (like <, >, &, \") into their corresponding HTML entities (like &lt;, &gt;, &amp;, &quot;). This prevents the browser from interpreting them as HTML tags, which is crucial for preventing Cross-Site Scripting (XSS) attacks.",
-            "features_title": "[Pending Translation] âœ¨ Features",
-            "features": {
-                "fast": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] Encode or decode HTML in milliseconds"
-                },
-                "bidirectional": {
-                    "title": "[Pending Translation] Bidirectional",
-                    "desc": "[Pending Translation] Encode special characters or decode entities back to text"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy First",
-                    "desc": "[Pending Translation] All processing happens in your browser"
-                },
-                "copy": {
-                    "title": "[Pending Translation] One-Click Copy",
-                    "desc": "[Pending Translation] Copy processed HTML to clipboard instantly"
-                },
-                "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] No limits, no registration required"
-                },
-                "safe": {
-                    "title": "[Pending Translation] Security Focused",
-                    "desc": "[Pending Translation] Helps prevent XSS vulnerabilities"
-                }
-            },
-            "uses_title": "[Pending Translation] ðŸŽ¯ Common Use Cases",
-            "uses": {
-                "security": {
-                    "title": "[Pending Translation] ðŸ”’ Security",
-                    "desc": "[Pending Translation] Sanitize user input to prevent XSS attacks by encoding special characters."
-                },
-                "display": {
-                    "title": "[Pending Translation] ðŸ’» Code Display",
-                    "desc": "[Pending Translation] Display raw HTML code on a webpage without it being rendered by the browser."
-                },
-                "data": {
-                    "title": "[Pending Translation] ðŸ“Š Data Storage",
-                    "desc": "[Pending Translation] Store content safely in databases without worrying about HTML parsing issues."
-                },
-                "email": {
-                    "title": "[Pending Translation] ðŸ“§ Email Templates",
-                    "desc": "[Pending Translation] Ensure special characters render correctly in HTML emails."
-                }
-            },
-            "how_title": "[Pending Translation] ðŸ“š How to Use",
-            "how_steps": {
-                "1": "[Pending Translation] Paste your HTML or text in the input field",
-                "2": "[Pending Translation] Click the process button to convert",
-                "3": "[Pending Translation] Copy the result to clipboard",
-                "4": ""
-            },
-            "examples_title": "[Pending Translation] ðŸ’¡ HTML Encoding Examples",
-            "examples": {
-                "1": {
-                    "title": "[Pending Translation] Quotes:",
-                    "code": "[Pending Translation] \"Hello\" â†’ &quot;Hello&quot;"
-                },
-                "2": {
-                    "title": "[Pending Translation] Ampersand:",
-                    "code": "[Pending Translation] Tom & Jerry â†’ Tom &amp; Jerry"
-                },
-                "3": {
-                    "title": "",
-                    "code": ""
-                }
-            },
-            "faq_title": "[Pending Translation] â“ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Why do I need to encode HTML?",
-                "a1": "[Pending Translation] Encoding is essential for security to prevent the browser from executing malicious scripts (XSS) and to display code snippets correctly.",
-                "q2": "[Pending Translation] Which characters are encoded?",
-                "a2": "[Pending Translation] Essential characters like <, >, &, \", and ' are always encoded. Extended ASCII characters may also be encoded.",
-                "q3": "[Pending Translation] Is it reversible?",
-                "a3": "[Pending Translation] Yes, decoding reverses the process exactly, restoring the original text."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter HTML to process",
-            "success_encode": "[Pending Translation] âœ“ HTML encoded successfully",
-            "success_decode": "[Pending Translation] âœ“ HTML decoded successfully",
-            "error_process": "[Pending Translation] âœ— Error processing HTML: ",
-            "error_no_copy": "[Pending Translation] No output to copy",
-            "success_copy": "[Pending Translation] âœ“ Copied to clipboard"
+            "mode_encode": "Koodaa HTML",
+            "mode_decode": "Pura HTML",
+            "btn_encode": "Koodaa HTML",
+            "btn_decode": "Pura HTML",
+            "btn_clear": "Tyhjennä",
+            "btn_copy": "Kopioi"
         }
     },
     "html-minifier": {
         "meta": {
-            "title": "[Pending Translation] Free HTML Minifier & Beautifier",
-            "description": "[Pending Translation] Compress or format HTML code instantly - minify for production or beautify for development",
-            "h1": "[Pending Translation] Free HTML Minifier & Beautifier",
-            "subtitle": "[Pending Translation] Compress or format HTML code instantly"
+            "title": "Ilmainen HTML-minimoija ja -muotoilija",
+            "h1": "Ilmainen HTML-minimoija ja -muotoilija",
+            "subtitle": "Pakkaa tai muotoile HTML-koodia välittömästi"
         },
         "editor": {
-            "label_input": "[Pending Translation] HTML Input",
-            "ph_input": "[Pending Translation] Paste your HTML code here...",
-            "btn_minify": "[Pending Translation] Minify HTML",
-            "btn_beautify": "[Pending Translation] Beautify HTML",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy Output",
-            "label_output": "[Pending Translation] HTML Output"
-        },
-        "content": {
-            "about_title": "[Pending Translation] What is an HTML Minifier?",
-            "about_desc": "[Pending Translation] An HTML Minifier is a tool that compresses HTML code by removing unnecessary characters like whitespace, comments, and line breaks without changing functionality. Minified HTML files are significantly smaller, leading to faster page load times and improved website performance. Our free online HTML minifier also includes a beautify feature to format HTML with proper indentation for better readability during development.",
-            "why_title": "[Pending Translation] Why Minify HTML?",
-            "why_desc": "[Pending Translation] Minifying HTML is important for web performance optimization. Smaller HTML files mean faster downloads, reduced bandwidth usage, and improved page load times. This is especially beneficial for large websites with lots of HTML content. Minified HTML reduces server load and improves user experience.",
-            "features_title": "[Pending Translation] Key Features",
-            "features_list": {
-                "minify": "[Pending Translation] <strong>Minify HTML:<\/strong> Remove whitespace and comments to reduce file size",
-                "beautify": "[Pending Translation] <strong>Beautify HTML:<\/strong> Format HTML with proper indentation",
-                "instant": "[Pending Translation] <strong>Instant Results:<\/strong> Process HTML in real-time",
-                "copy": "[Pending Translation] <strong>Copy Output:<\/strong> Easily copy minified HTML",
-                "secure": "[Pending Translation] <strong>Secure & Private:<\/strong> All processing in browser",
-                "free": "[Pending Translation] <strong>Free to Use:<\/strong> No registration required"
-            },
-            "how_title": "[Pending Translation] How to Use",
-            "how_steps": {
-                "1": "[Pending Translation] Click \"Minify HTML\" to compress the code",
-                "2": "[Pending Translation] Click \"Beautify HTML\" to format with indentation",
-                "3": "[Pending Translation] Copy the output using \"Copy Output\" button",
-                "4": ""
-            },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is this HTML minifier free?",
-                "a1": "[Pending Translation] Yes, completely free with no limitations or registration required.",
-                "q2": "[Pending Translation] Is my HTML code stored?",
-                "a2": "[Pending Translation] No, all processing happens in your browser. Your code is never sent to our servers.",
-                "q3": "[Pending Translation] How much smaller will my HTML be?",
-                "a3": "[Pending Translation] Typically 10-30% smaller depending on formatting and comments in original code.",
-                "q4": "[Pending Translation] Can I unminify HTML?",
-                "a4": "[Pending Translation] Yes, use the \"Beautify HTML\" button to format minified HTML with proper indentation.",
-                "q5": "[Pending Translation] Does minifying affect HTML functionality?",
-                "a5": "[Pending Translation] No, minification only removes unnecessary characters. The HTML works exactly the same."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter HTML code",
-            "success_minify": "[Pending Translation] ✓ HTML minified successfully!",
-            "success_beautify": "[Pending Translation] ✓ HTML beautified successfully!",
-            "error_no_copy": "[Pending Translation] No output to copy",
-            "success_copy": "[Pending Translation] ✓ Copied to clipboard!"
+            "label_input": "HTML-syöte",
+            "btn_minify": "Minimoi HTML",
+            "btn_beautify": "Muotoile HTML",
+            "btn_clear": "Tyhjennä",
+            "btn_copy": "Kopioi tulos",
+            "label_output": "HTML-tuloste"
         }
     },
     "html-to-markdown-converter": {
         "meta": {
-            "title": "[Pending Translation] HTML to Markdown Converter",
-            "description": "[Pending Translation] Convert HTML to clean Markdown format instantly with our free online tool",
-            "h1": "[Pending Translation] HTML to Markdown Converter",
-            "subtitle": "[Pending Translation] Convert HTML to clean Markdown format instantly"
+            "title": "HTML-Markdown-muunnin",
+            "h1": "HTML-Markdown-muunnin",
+            "subtitle": "Muunna HTML puhtaaseen Markdown-muotoon välittömästi"
         },
         "editor": {
-            "btn_convert": "[Pending Translation] Convert",
-            "btn_copy": "[Pending Translation] Copy Markdown",
-            "btn_download": "[Pending Translation] Download",
-            "btn_example": "[Pending Translation] Example",
-            "btn_clear": "[Pending Translation] Clear",
-            "label_input": "[Pending Translation] HTML Input",
-            "ph_input": "[Pending Translation] Paste your HTML code here...",
-            "label_output": "[Pending Translation] Markdown Output",
-            "ph_output": "[Pending Translation] Converted Markdown will appear here..."
-        },
-        "content": {
-            "about_title": "[Pending Translation] 🔄 About HTML to Markdown Converter",
-            "about_p1": "[Pending Translation] Convert HTML code to clean, readable Markdown format instantly with our free online HTML to Markdown converter. Perfect for developers, technical writers, and content creators who need to transform HTML content into Markdown for documentation, README files, or content management systems.",
-            "features_title": "[Pending Translation] ✨ Key Features",
-            "features_list": {
-                "1": "[Pending Translation] ✅ <strong>Preserve Formatting:<\/strong> Maintains headings, lists, links, and emphasis",
-                "2": "[Pending Translation] ✅ <strong>Clean Output:<\/strong> Generates readable, well-formatted Markdown",
-                "3": "[Pending Translation] ✅ <strong>No Installation:<\/strong> Works directly in your browser",
-                "4": "[Pending Translation] ✅ <strong>Free Forever:<\/strong> 100% free with no limitations",
-                "5": "[Pending Translation] ✅ <strong>Privacy First:<\/strong> All conversion happens locally in your browser",
-                "6": ""
-            },
-            "uses_title": "[Pending Translation] 🎯 Common Use Cases",
-            "uses": {
-                "docs": {
-                    "title": "[Pending Translation] 📚 Documentation",
-                    "desc": "[Pending Translation] Convert HTML documentation to Markdown for GitHub wikis, README files, and technical docs."
-                },
-                "migration": {
-                    "title": "[Pending Translation] ✍️ Content Migration",
-                    "desc": "[Pending Translation] Migrate content from HTML-based CMSs to Markdown-based platforms like Jekyll or Hugo."
-                },
-                "email": {
-                    "title": "[Pending Translation] 💻 Email to Markdown",
-                    "desc": "[Pending Translation] Convert HTML emails to Markdown format for easier editing and version control."
-                },
-                "blog": {
-                    "title": "[Pending Translation] 📍 Blog Posts",
-                    "desc": "[Pending Translation] Transform HTML blog posts to Markdown for static site generators and modern CMSs."
-                }
-            },
-            "elements_title": "[Pending Translation] 🛠️ Supported HTML Elements",
-            "elements": {
-                "text": {
-                    "title": "[Pending Translation] Text Formatting",
-                    "list": [
-                        "[Pending Translation] Headings (H1-H6)",
-                        "[Pending Translation] Paragraphs",
-                        "[Pending Translation] Bold & Strong",
-                        "[Pending Translation] Italic & Emphasis",
-                        "[Pending Translation] Code & Preformatted",
-                        "[Pending Translation] Blockquotes"
-                    ]
-                },
-                "lists": {
-                    "title": "[Pending Translation] Lists & Links",
-                    "list": [
-                        "[Pending Translation] Unordered Lists",
-                        "[Pending Translation] Ordered Lists",
-                        "[Pending Translation] Nested Lists",
-                        "[Pending Translation] Hyperlinks",
-                        "[Pending Translation] Images",
-                        "[Pending Translation] Line Breaks"
-                    ]
-                },
-                "advanced": {
-                    "title": "[Pending Translation] Advanced",
-                    "list": [
-                        "[Pending Translation] Tables",
-                        "[Pending Translation] Horizontal Rules",
-                        "[Pending Translation] Inline Code",
-                        "[Pending Translation] Code Blocks",
-                        "[Pending Translation] Strikethrough",
-                        "[Pending Translation] Task Lists"
-                    ]
-                }
-            },
-            "faq_title": "[Pending Translation] ❓ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is this HTML to Markdown converter free?",
-                "a1": "[Pending Translation] Yes! Our HTML to Markdown converter is 100% free with no limitations, registration, or hidden costs.",
-                "q2": "[Pending Translation] Does it work offline?",
-                "a2": "[Pending Translation] Yes, all conversion happens in your browser using JavaScript, so your data never leaves your device.",
-                "q3": "[Pending Translation] What HTML elements are supported?",
-                "a3": "[Pending Translation] We support all common HTML elements including headings, paragraphs, lists, links, images, tables, code blocks, and more.",
-                "q4": "[Pending Translation] Can I convert large HTML files?",
-                "a4": "[Pending Translation] Yes, there are no size limitations. However, very large files may take a moment to process depending on your browser performance."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter some HTML code to convert.",
-            "error_convert": "[Pending Translation] Error converting HTML: ",
-            "error_no_copy": "[Pending Translation] No Markdown to copy. Please convert HTML first.",
-            "success_copy": "[Pending Translation] Markdown copied to clipboard!",
-            "error_no_download": "[Pending Translation] No Markdown to download. Please convert HTML first."
+            "btn_convert": "Muunna",
+            "btn_copy": "Kopioi Markdown",
+            "btn_download": "Lataa",
+            "btn_clear": "Tyhjennä",
+            "label_input": "HTML-syöte",
+            "label_output": "Markdown-tuloste"
         }
     },
     "html-viewer": {
         "meta": {
-            "title": "[Pending Translation] HTML Viewer",
-            "description": "[Pending Translation] Preview HTML code in real-time with our free online HTML viewer",
-            "h1": "[Pending Translation] HTML Viewer",
-            "subtitle": "[Pending Translation] Preview HTML code in real-time"
+            "title": "HTML-katseluohjelma",
+            "h1": "HTML-katseluohjelma",
+            "subtitle": "Esikatsele HTML-koodia reaaliajassa"
         },
         "editor": {
-            "label_input": "[Pending Translation] HTML Code",
-            "ph_input": "[Pending Translation] Enter your HTML code here...",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_load_sample": "[Pending Translation] Load Sample",
-            "label_preview": "[Pending Translation] Live Preview",
-            "btn_fullscreen": "[Pending Translation] Fullscreen",
-            "btn_exit_fullscreen": "[Pending Translation] Exit Fullscreen"
-        },
-        "content": {
-            "about_title": "[Pending Translation] What is an HTML Viewer?",
-            "about_desc": "[Pending Translation] An HTML Viewer is a powerful online tool that allows you to preview and visualize HTML code in real-time. Whether you're a web developer testing code snippets, a student learning HTML, or a designer reviewing markup, our HTML viewer provides instant visual feedback for your HTML code. Simply paste your HTML code into the editor, and see the rendered output immediately in the live preview pane.",
-            "why_title": "[Pending Translation] Why Use Our HTML Viewer?",
-            "why_desc": "[Pending Translation] Our free HTML viewer offers several advantages for developers and designers. First, it provides instant visual feedback without needing to create files or set up a development environment. Second, it's completely browser-based, meaning you can use it anywhere without installing software. Third, it's perfect for quick testing, debugging, and learning HTML. The side-by-side view lets you see your code and its output simultaneously, making it easier to understand how HTML elements render.",
-            "features_title": "[Pending Translation] Key Features",
-            "features_list": {
-                "preview": "[Pending Translation] <strong>Real-Time Preview:<\/strong> See your HTML rendered instantly as you type",
-                "layout": "[Pending Translation] <strong>Side-by-Side View:<\/strong> Code editor and preview pane displayed together",
-                "syntax": "[Pending Translation] <strong>Syntax Highlighting:<\/strong> Easy-to-read code with color-coded syntax",
-                "sample": "[Pending Translation] <strong>Sample Code:<\/strong> Load example HTML to get started quickly",
-                "no_install": "[Pending Translation] <strong>No Installation Required:<\/strong> Works directly in your browser",
-                "free": "[Pending Translation] <strong>Free to Use:<\/strong> No registration or payment required",
-                "secure": "[Pending Translation] <strong>Secure:<\/strong> All processing happens in your browser"
-            },
-            "how_title": "[Pending Translation] How to Use the HTML Viewer",
-            "how_steps": {
-                "1": "[Pending Translation] The preview will update automatically in the right pane",
-                "2": "[Pending Translation] Use the \"Load Sample\" button to see example HTML code",
-                "3": "[Pending Translation] Click \"Clear\" to start fresh with a blank editor",
-                "4": "[Pending Translation] Test different HTML elements and see how they render",
-                "5": ""
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses_desc": "[Pending Translation] HTML viewers are essential tools for various web development tasks. Developers use them to quickly test HTML snippets before integrating them into larger projects. Students learning HTML can experiment with different tags and attributes to understand their effects. Email marketers use HTML viewers to preview email templates before sending. Content creators can visualize how their HTML content will appear on websites. Designers can review markup structure and ensure proper rendering of HTML elements.",
-            "basics_title": "[Pending Translation] Understanding HTML Basics",
-            "basics_desc": "[Pending Translation] HTML (HyperText Markup Language) is the standard markup language for creating web pages. It consists of elements represented by tags, which tell browsers how to display content. Common HTML elements include headings (&lt;h1&gt; to &lt;h6&gt;], paragraphs (&lt;p&gt;], links (&lt;a&gt;], images (&lt;img&gt;], and divisions (&lt;div&gt;). Understanding these basic elements is crucial for web development, and our HTML viewer helps you visualize how they work together to create web pages.",
-            "tips_title": "[Pending Translation] Best Practices for HTML",
-            "tips_desc": "[Pending Translation] When writing HTML, follow best practices to ensure clean, maintainable code. Always use semantic HTML elements that describe their content (like &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;). Properly nest elements and close all tags. Use lowercase for tag names and attribute names. Add alt attributes to images for accessibility. Validate your HTML to catch errors early. Keep your code organized with proper indentation. These practices lead to better SEO, accessibility, and maintainability.",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is this HTML viewer free to use?",
-                "a1": "[Pending Translation] Yes, our HTML viewer is completely free to use. There are no hidden fees, registration requirements, or usage limits.",
-                "q2": "[Pending Translation] Does the HTML viewer support CSS and JavaScript?",
-                "a2": "[Pending Translation] The HTML viewer primarily focuses on HTML markup. While inline CSS styles will render, external CSS and JavaScript are sandboxed for security.",
-                "q3": "[Pending Translation] Is my HTML code stored or saved?",
-                "a3": "[Pending Translation] No, all HTML processing happens entirely in your browser. Your code is never sent to our servers or stored anywhere.",
-                "q4": "[Pending Translation] Can I use this tool for learning HTML?",
-                "a4": "[Pending Translation] Absolutely! Our HTML viewer is perfect for learning HTML. You can experiment with different tags, attributes, and structures to see how they render.",
-                "q5": "[Pending Translation] What's the difference between an HTML viewer and a code editor?",
-                "a5": "[Pending Translation] An HTML viewer focuses on previewing and visualizing HTML code in real-time, while a code editor provides advanced features (syntax highlighting, debugging) and is better for full-scale development."
-            }
+            "label_input": "HTML-koodi",
+            "btn_clear": "Tyhjennä",
+            "btn_load_sample": "Lataa esimerkki",
+            "label_preview": "Live-esikatselu",
+            "btn_fullscreen": "Koko näyttö"
         }
     },
     "js-minifier": {
         "meta": {
-            "title": "[Pending Translation] JavaScript Minifier",
-            "description": "[Pending Translation] Compress and optimize your JavaScript code for faster page loads",
-            "h1": "[Pending Translation] JavaScript Minifier",
-            "subtitle": "[Pending Translation] Compress and optimize your JavaScript code"
+            "title": "JavaScript-minimoija",
+            "h1": "JavaScript-minimoija",
+            "subtitle": "Pakkaa ja optimoi JavaScript-koodisi"
         },
         "editor": {
-            "label_input": "[Pending Translation] JavaScript Input",
-            "ph_input": "[Pending Translation] Paste your JavaScript code here...",
-            "btn_minify": "[Pending Translation] Minify JS",
-            "btn_beautify": "[Pending Translation] Beautify JS",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy Output",
-            "label_output": "[Pending Translation] JavaScript Output"
-        },
-        "content": {
-            "about_title": "[Pending Translation] What is a JavaScript Minifier?",
-            "about_desc": "[Pending Translation] A JavaScript Minifier is a tool that compresses JavaScript code by removing unnecessary characters like whitespace, comments, and line breaks without changing functionality. Minified JavaScript files are significantly smaller, leading to faster page load times and improved website performance. Our free online JS minifier also includes a beautify feature to format JavaScript with proper indentation for better readability during development.",
-            "why_title": "[Pending Translation] Why Minify JavaScript?",
-            "why_desc": "[Pending Translation] Minifying JavaScript is essential for web performance optimization. Smaller JS files mean faster downloads, reduced bandwidth usage, and improved page load times. This is especially important for mobile users and users with slower internet connections. Minified JavaScript reduces server load and improves user experience. For production websites, minification is a standard best practice that can significantly improve Core Web Vitals scores.",
-            "features_title": "[Pending Translation] Key Features",
-            "features_list": {
-                "minify": "[Pending Translation] <strong>Minify JavaScript:<\/strong> Remove whitespace and comments to reduce file size",
-                "beautify": "[Pending Translation] <strong>Beautify JavaScript:<\/strong> Format JS with proper indentation",
-                "instant": "[Pending Translation] <strong>Instant Results:<\/strong> Process JavaScript in real-time",
-                "copy": "[Pending Translation] <strong>Copy Output:<\/strong> Easily copy minified JavaScript",
-                "secure": "[Pending Translation] <strong>Secure & Private:<\/strong> All processing in browser",
-                "free": "[Pending Translation] <strong>Free to Use:<\/strong> No registration required"
-            },
-            "how_title": "[Pending Translation] How to Use",
-            "how_steps": [
-                "[Pending Translation] Paste your JavaScript code into the input field",
-                "[Pending Translation] Click \"Minify JS\" to compress the code",
-                "[Pending Translation] Click \"Beautify JS\" to format with indentation",
-                "[Pending Translation] Copy the output using \"Copy Output\" button"
-            ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is this JavaScript minifier free?",
-                "a1": "[Pending Translation] Yes, completely free with no limitations or registration required.",
-                "q2": "[Pending Translation] Is my JavaScript code stored?",
-                "a2": "[Pending Translation] No, all processing happens in your browser. Your code is never sent to our servers.",
-                "q3": "[Pending Translation] How much smaller will my JS be?",
-                "a3": "[Pending Translation] Typically 30-50% smaller depending on formatting and comments in original code.",
-                "q4": "[Pending Translation] Can I unminify JavaScript?",
-                "a4": "[Pending Translation] Yes, use the \"Beautify JS\" button to format minified JavaScript with proper indentation.",
-                "q5": "[Pending Translation] Does minifying affect JavaScript functionality?",
-                "a5": "[Pending Translation] No, minification only removes unnecessary characters. The JavaScript works exactly the same."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter JavaScript code",
-            "success_minify": "[Pending Translation] ✓ JavaScript minified successfully!",
-            "success_beautify": "[Pending Translation] ✓ JavaScript beautified successfully!",
-            "error_no_copy": "[Pending Translation] No output to copy",
-            "success_copy": "[Pending Translation] ✓ Copied to clipboard!"
+            "label_input": "JS-syöte",
+            "btn_minify": "Minimoi JS",
+            "btn_beautify": "Muotoile JS",
+            "btn_clear": "Tyhjennä",
+            "btn_copy": "Kopioi tulos",
+            "label_output": "JS-tuloste"
         }
     },
     "json-formatter": {
         "meta": {
-            "title": "[Pending Translation] JSON Formatter",
-            "description": "[Pending Translation] Format, validate, and minify your JSON data with our free online tool",
-            "h1": "[Pending Translation] JSON Formatter",
-            "subtitle": "[Pending Translation] Format, validate, and minify your JSON data"
+            "title": "JSON-muotoilija",
+            "h1": "JSON-muotoilija",
+            "subtitle": "Muotoile, validoi ja minimoi JSON-tietosi"
         },
         "editor": {
-            "title": "[Pending Translation] Format Your JSON Data",
-            "label_input": "[Pending Translation] Enter JSON Data",
-            "ph_input": "[Pending Translation] {\"name\": \"John Doe\", \"age\": 30, \"city\": \"New York\"}",
-            "help_text": "[Pending Translation] Paste your JSON data to format, beautify, or minify it",
-            "btn_format": "[Pending Translation] Format & Beautify",
-            "btn_minify": "[Pending Translation] Minify JSON",
-            "label_results": "[Pending Translation] Formatted JSON",
-            "btn_copy": "[Pending Translation] Copy JSON"
-        },
-        "content": {
-            "why_title": "[Pending Translation] Why Use Our JSON Formatter?",
-            "why_desc": "[Pending Translation] JSON (JavaScript Object Notation) is the most popular data interchange format used in web development, APIs, and configuration files. Our free online JSON formatter helps developers, data analysts, and IT professionals quickly format, beautify, validate, and minify JSON data. Whether you're debugging API responses, cleaning up configuration files, or preparing JSON for production, our tool provides instant results with syntax highlighting and error detection. Perfect for developers working with REST APIs, NoSQL databases, and modern web applications.",
-            "features": {
-                "instant": {
-                    "title": "[Pending Translation] Instant Formatting",
-                    "desc": "[Pending Translation] Format and beautify JSON data in milliseconds with proper indentation and syntax highlighting"
-                },
-                "error": {
-                    "title": "[Pending Translation] Error Detection",
-                    "desc": "[Pending Translation] Automatically detect and highlight JSON syntax errors with helpful error messages"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] All processing happens in your browser - your JSON data never leaves your computer"
-                }
-            },
-            "how_title": "[Pending Translation] How to Format JSON in 3 Easy Steps",
-            "how_steps": {
-                "1": {
-                    "title": "[Pending Translation] Choose Action",
-                    "desc": "[Pending Translation] Click \"Format & Beautify\" to format or \"Minify\" to compress your JSON"
-                },
-                "2": {
-                    "title": "[Pending Translation] Copy Result",
-                    "desc": "[Pending Translation] Click the copy button to copy the formatted JSON to your clipboard"
-                },
-                "3": {
-                    "title": "",
-                    "desc": ""
-                }
-            },
-            "uses_title": "[Pending Translation] Common JSON Formatting Use Cases",
-            "uses": {
-                "api": {
-                    "title": "[Pending Translation] API Response Debugging",
-                    "desc": "[Pending Translation] Format messy API responses to easily read and debug JSON data from REST APIs, GraphQL, and web services."
-                },
-                "config": {
-                    "title": "[Pending Translation] Configuration Files",
-                    "desc": "[Pending Translation] Clean up and validate JSON configuration files for applications, package.json, tsconfig.json, and more."
-                },
-                "db": {
-                    "title": "[Pending Translation] Database Data",
-                    "desc": "[Pending Translation] Format JSON data from NoSQL databases like MongoDB, CouchDB, and Firebase for better readability."
-                },
-                "export": {
-                    "title": "[Pending Translation] Data Export\/Import",
-                    "desc": "[Pending Translation] Prepare JSON data for export or validate imported JSON data to ensure proper structure and syntax."
-                }
-            },
-            "tips_title": "[Pending Translation] JSON Best Practices & Tips",
-            "tips": {
-                "validate": {
-                    "title": "[Pending Translation] ✓ Always Validate JSON",
-                    "desc": "[Pending Translation] Use a JSON validator to catch syntax errors before deploying to production. Invalid JSON can break your application."
-                },
-                "indent": {
-                    "title": "[Pending Translation] ✓ Use Proper Indentation",
-                    "desc": "[Pending Translation] Format JSON with 2 or 4 space indentation for better readability during development and debugging."
-                },
-                "minify": {
-                    "title": "[Pending Translation] ✓ Minify for Production",
-                    "desc": "[Pending Translation] Minify JSON data before deploying to production to reduce file size and improve load times."
-                },
-                "naming": {
-                    "title": "[Pending Translation] ✓ Use Consistent Naming",
-                    "desc": "[Pending Translation] Follow camelCase or snake_case naming conventions consistently throughout your JSON structure."
-                }
-            },
-            "faq_title": "[Pending Translation] ❓ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is my JSON data safe?",
-                "a1": "[Pending Translation] Yes, absolutely. Our JSON formatter runs entirely in your web browser using JavaScript. Your data is never sent to our servers or stored anywhere.",
-                "q2": "[Pending Translation] Why is Minifying JSON important?",
-                "a2": "[Pending Translation] Minifying removes unnecessary whitespace and line breaks, significantly reducing the file size. This is crucial for improving API performance and reducing bandwidth usage in production environments.",
-                "q3": "[Pending Translation] Can I validate incomplete JSON?",
-                "a3": "[Pending Translation] The tool requires valid JSON structure to format or minify. However, it provides detailed error messages to help you locate and fix issues in your JSON data.",
-                "q4": "[Pending Translation] Does it support large JSON files?",
-                "a4": "[Pending Translation] Yes, the tool is optimized to handle large JSON datasets efficiently, though extremely large files might depend on your browser's memory limits."
-            }
-        },
-        "js": {
-            "error_empty_format": "[Pending Translation] Please enter JSON data to format",
-            "error_invalid": "[Pending Translation] Invalid JSON: ",
-            "error_empty_minify": "[Pending Translation] Please enter JSON data to minify",
-            "success_copy": "[Pending Translation] Copied!",
-            "error_copy": "[Pending Translation] Failed to copy. Please copy manually."
+            "btn_format": "Muotoile ja kaunista",
+            "btn_minify": "Minimoi JSON",
+            "label_results": "Muotoiltu JSON",
+            "btn_copy": "Kopioi JSON"
         }
     },
     "json-parser": {
         "meta": {
-            "title": "[Pending Translation] JSON Parser & Validator",
-            "description": "[Pending Translation] Parse, validate, and visualize JSON structure",
-            "h1": "[Pending Translation] JSON Parser & Validator",
-            "subtitle": "[Pending Translation] Parse, validate, and visualize JSON structure"
+            "title": "JSON-jäsennin ja -validoija",
+            "h1": "JSON-jäsennin ja -validoija",
+            "subtitle": "Jäsennä, validoi ja visualisoi JSON-rakenne"
         },
         "editor": {
-            "label_input": "[Pending Translation] JSON Input",
-            "ph_input": "[Pending Translation] {\"name\": \"John Doe\", \"age\": 30, \"isActive\": true}",
-            "btn_parse": "[Pending Translation] Parse JSON",
-            "btn_beautify": "[Pending Translation] Beautify",
-            "btn_minify": "[Pending Translation] Minify",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_load": "[Pending Translation] Load Sample",
-            "title_tree": "[Pending Translation] JSON Tree View"
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Free JSON Parser & Validator",
-            "hero_subtitle": "[Pending Translation] Parse, validate, beautify, and minify JSON data instantly",
-            "p1": "[Pending Translation] Our free JSON Parser is a powerful online tool for developers, data analysts, and anyone working with JSON data. Instantly parse, validate, beautify, and minify JSON with a clean, intuitive interface. Perfect for debugging APIs, formatting configuration files, or validating JSON structure. 100% free, client-side processing ensures your data stays private and secure.",
-            "what_title": "[Pending Translation] 📋 What is JSON?",
-            "what_desc": "[Pending Translation] JSON (JavaScript Object Notation) is a lightweight data-interchange format that's easy for humans to read and write, and easy for machines to parse and generate. It's the most popular format for APIs, configuration files, and data storage. JSON uses key-value pairs and supports strings, numbers, booleans, arrays, and nested objects.",
-            "features_title": "[Pending Translation] ✨ Features",
-            "features": {
-                "validate": {
-                    "title": "[Pending Translation] JSON Validation",
-                    "desc": "[Pending Translation] Instantly validate JSON syntax and structure"
-                },
-                "beautify": {
-                    "title": "[Pending Translation] Beautify JSON",
-                    "desc": "[Pending Translation] Format JSON with proper indentation and spacing"
-                },
-                "minify": {
-                    "title": "[Pending Translation] Minify JSON",
-                    "desc": "[Pending Translation] Compress JSON by removing whitespace"
-                },
-                "tree": {
-                    "title": "[Pending Translation] Tree View",
-                    "desc": "[Pending Translation] Visualize JSON structure in tree format"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy First",
-                    "desc": "[Pending Translation] All processing happens in your browser"
-                },
-                "instant": {
-                    "title": "[Pending Translation] Instant Results",
-                    "desc": "[Pending Translation] Parse and format JSON in milliseconds"
-                }
-            },
-            "uses_title": "[Pending Translation] 🎯 Common Use Cases",
-            "uses": {
-                "api": {
-                    "title": "[Pending Translation] 🔌 API Development",
-                    "desc": "[Pending Translation] Test and debug API responses, validate request payloads, and format JSON data"
-                },
-                "config": {
-                    "title": "[Pending Translation] ⚙️ Configuration Files",
-                    "desc": "[Pending Translation] Format and validate config files for applications, databases, and services"
-                },
-                "analysis": {
-                    "title": "[Pending Translation] 📊 Data Analysis",
-                    "desc": "[Pending Translation] Parse and visualize JSON data from databases, logs, and analytics tools"
-                },
-                "debug": {
-                    "title": "[Pending Translation] 🐛 Debugging",
-                    "desc": "[Pending Translation] Identify syntax errors, validate structure, and troubleshoot JSON issues"
-                },
-                "docs": {
-                    "title": "[Pending Translation] 📝 Documentation",
-                    "desc": "[Pending Translation] Create readable JSON examples for API docs and technical guides"
-                },
-                "migration": {
-                    "title": "[Pending Translation] 🔄 Data Migration",
-                    "desc": "[Pending Translation] Transform and validate JSON during data imports and exports"
-                }
-            },
-            "how_title": "[Pending Translation] 📚 How to Use",
-            "how_steps": [
-                "[Pending Translation] <strong>Paste JSON:<\/strong> Copy and paste your JSON data into the input field",
-                "[Pending Translation] <strong>Parse:<\/strong> Click \"Parse JSON\" to validate and visualize the structure",
-                "[Pending Translation] <strong>Beautify:<\/strong> Click \"Beautify\" to format with proper indentation",
-                "[Pending Translation] <strong>Minify:<\/strong> Click \"Minify\" to compress and remove whitespace",
-                "[Pending Translation] <strong>View Tree:<\/strong> See the hierarchical structure in tree view format"
-            ],
-            "tips_title": "[Pending Translation] 💡 JSON Best Practices",
-            "tips_list": [
-                "[Pending Translation] <strong>Use double quotes:<\/strong> JSON requires double quotes for strings, not single quotes",
-                "[Pending Translation] <strong>No trailing commas:<\/strong> Remove commas after the last item in objects and arrays",
-                "[Pending Translation] <strong>Proper data types:<\/strong> Use numbers without quotes, booleans as true\/false, null for empty values",
-                "[Pending Translation] <strong>Validate regularly:<\/strong> Always validate JSON before deployment or production use",
-                "[Pending Translation] <strong>Beautify for readability:<\/strong> Format JSON for easier debugging and maintenance"
-            ],
-            "faq_title": "[Pending Translation] ❓ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] What's the difference between beautify and minify?",
-                "a1": "[Pending Translation] Beautify adds indentation and line breaks to make JSON human-readable. Minify removes all whitespace to reduce file size, making it ideal for production environments.",
-                "q2": "[Pending Translation] Is my JSON data secure?",
-                "a2": "[Pending Translation] Yes! All JSON parsing and formatting happens entirely in your browser. Your data never leaves your device and is not sent to any server.",
-                "q3": "[Pending Translation] Can I parse large JSON files?",
-                "a3": "[Pending Translation] Yes, our parser can handle large JSON files. However, very large files (>10MB) may take longer to process depending on your device's performance.",
-                "q4": "[Pending Translation] What errors does the parser detect?",
-                "a4": "[Pending Translation] The parser detects syntax errors like missing quotes, trailing commas, invalid characters, unclosed brackets, and incorrect data types. Error messages show the exact location of the issue.",
-                "q5": "[Pending Translation] Can I use this for API testing?",
-                "a5": "[Pending Translation] Absolutely! This tool is perfect for testing API responses, validating request payloads, and formatting JSON data from API calls."
-            }
-        },
-        "js": {
-            "error_empty_parse": "[Pending Translation] Please enter JSON data to parse",
-            "success_valid": "[Pending Translation] ✓ Valid JSON! Parsed successfully",
-            "error_invalid": "[Pending Translation] ✗ Invalid JSON: ",
-            "error_empty_beautify": "[Pending Translation] Please enter JSON data to beautify",
-            "success_beautify": "[Pending Translation] ✓ JSON beautified successfully",
-            "error_beautify": "[Pending Translation] ✗ Cannot beautify invalid JSON: ",
-            "error_empty_minify": "[Pending Translation] Please enter JSON data to minify",
-            "success_minify": "[Pending Translation] ✓ JSON minified successfully",
-            "error_minify": "[Pending Translation] ✗ Cannot minify invalid JSON: ",
-            "success_load": "[Pending Translation] Sample JSON loaded"
+            "btn_parse": "Jäsennä JSON",
+            "title_tree": "JSON-puunäkymä"
         }
     },
     "json-to-csv-converter": {
         "meta": {
-            "title": "[Pending Translation] JSON to CSV Converter - Free Online Tool",
-            "description": "[Pending Translation] Convert JSON data to CSV or Excel format instantly with our free online tool. Fast, secure, and easy to use.",
-            "h1": "[Pending Translation] JSON to CSV Converter",
-            "subtitle": "[Pending Translation] Convert JSON arrays and objects to CSV format easily"
+            "title": "JSON-CSV-muunnin",
+            "h1": "JSON-CSV-muunnin",
+            "subtitle": "Muunna JSON-taulukot ja -objektit helposti CSV-muotoon"
         },
         "editor": {
-            "label_delimiter": "[Pending Translation] Select Delimiter",
-            "opt_comma": "[Pending Translation] Comma (,)",
-            "opt_semicolon": "[Pending Translation] Semicolon (;)",
-            "opt_tab": "[Pending Translation] Tab",
-            "opt_pipe": "[Pending Translation] Pipe (|)",
-            "btn_convert": "[Pending Translation] Convert to CSV",
-            "btn_copy": "[Pending Translation] Copy CSV",
-            "btn_download": "[Pending Translation] Download CSV",
-            "btn_example": "[Pending Translation] Load Example",
-            "btn_clear": "[Pending Translation] Clear",
-            "label_input": "[Pending Translation] JSON Input",
-            "ph_input": "[Pending Translation] Paste your JSON data here...",
-            "label_output": "[Pending Translation] CSV Output",
-            "ph_output": "[Pending Translation] Converted CSV will appear here..."
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Free JSON to CSV Converter",
-            "p1": "[Pending Translation] Our free JSON to CSV converter is a powerful tool designed for developers, data analysts, and IT professionals. Easily transform structured JSON data into clean, formatted CSV (Comma Separated Values) or TSV files. Whether you're preparing data for Excel, Google Sheets, or database imports, our tool ensures accuracy and speed with 100% client-side processing.",
-            "features_title": "[Pending Translation] Key Features",
-            "features_list": {
-                "fast": "[Pending Translation] <strong>Instant Conversion:<\/strong> Results in milliseconds",
-                "secure": "[Pending Translation] <strong>Private & Secure:<\/strong> All data stays in your browser",
-                "format": "[Pending Translation] <strong>Smart Flattening:<\/strong> Correctly handles nested JSON objects",
-                "custom": "[Pending Translation] <strong>Custom Delimiters:<\/strong> Choose between comma, semicolon, or tabs",
-                "export": "[Pending Translation] <strong>Easy Export:<\/strong> Copy to clipboard or download as .csv",
-                "free": "[Pending Translation] <strong>100% Free:<\/strong> No limits, no registration required"
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "api": {
-                    "title": "[Pending Translation] API Data Analysis",
-                    "desc": "[Pending Translation] Convert JSON responses from REST APIs into CSV format for easier analysis in spreadsheet software."
-                },
-                "db": {
-                    "title": "[Pending Translation] Database Migration",
-                    "desc": "[Pending Translation] Prepare JSON data for import into relational databases like MySQL or PostgreSQL."
-                },
-                "analysis": {
-                    "title": "[Pending Translation] Data Visualization",
-                    "desc": "[Pending Translation] Transform complex JSON datasets into a flat structure suitable for visualization tools."
-                },
-                "report": {
-                    "title": "[Pending Translation] Quick Reporting",
-                    "desc": "[Pending Translation] Generate readable CSV reports from structured JSON log files or application data."
-                }
-            },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Does it support nested JSON?",
-                "a1": "[Pending Translation] Yes, our tool automatically flattens nested objects so they appear as clearly labeled columns in your CSV.",
-                "q2": "[Pending Translation] Is my data uploaded?",
-                "a2": "[Pending Translation] No, all processing happens locally in your web browser. Your data is never sent to our servers.",
-                "q3": "[Pending Translation] Can I convert to TSV?",
-                "a3": "[Pending Translation] Yes, simply select the \"Tab\" delimiter option before converting.",
-                "q4": "[Pending Translation] What is the maximum file size?",
-                "a4": "[Pending Translation] The tool can handle large JSON files, though performance depends on your device's memory."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter JSON data to convert",
-            "error_convert": "[Pending Translation] Error converting JSON: ",
-            "error_no_copy": "[Pending Translation] No content to copy. Please convert JSON first.",
-            "success_copy": "[Pending Translation] ✓ CSV copied to clipboard!",
-            "error_no_download": "[Pending Translation] No content to download. Please convert JSON first."
+            "btn_convert": "Muunna CSV-muotoon",
+            "btn_download": "Lataa CSV"
         }
     },
     "json-to-sql-converter": {
         "meta": {
-            "title": "[Pending Translation] JSON to SQL Converter - Free Online Tool",
-            "description": "[Pending Translation] Transform JSON data into SQL INSERT statements instantly. Perfect for database seeding and data migration.",
-            "h1": "[Pending Translation] JSON to SQL Converter",
-            "subtitle": "[Pending Translation] Convert JSON arrays and objects to valid SQL scripts"
+            "title": "JSON-SQL-muunnin",
+            "h1": "JSON-SQL-muunnin",
+            "subtitle": "Muunna JSON-taulukot ja -objektit SQL-skripteiksi"
         },
         "editor": {
-            "label_tablename": "[Pending Translation] Table Name",
-            "ph_tablename": "[Pending Translation] Enter table name (e.g., users)",
-            "btn_convert": "[Pending Translation] Generate SQL",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy SQL",
-            "btn_example": "[Pending Translation] Load Example",
-            "label_input": "[Pending Translation] JSON Input",
-            "ph_input": "[Pending Translation] Paste your JSON array here...",
-            "label_output": "[Pending Translation] SQL Output",
-            "ph_output": "[Pending Translation] Generated SQL INSERT statements will appear here..."
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Effortless JSON to SQL Conversion",
-            "hero_subtitle": "[Pending Translation] The fastest way to generate database seeding scripts",
-            "p1": "[Pending Translation] Converting JSON data to SQL INSERT statements shouldn't be a manual task. Our JSON to SQL converter handles the heavy lifting by automatically mapping your JSON keys to database columns and escaping values for safe insertion. It is an essential tool for developers working on data migrations, testing, or database initialization.",
-            "what_title": "[Pending Translation] When to Use This Tool?",
-            "what_desc": "[Pending Translation] If you have a collection of data in JSON format—such as an export from a NoSQL database or an API response—and you need to insert it into a relational database like MySQL, PostgreSQL, or SQL Server, this tool is for you. It formats each object into a clean SQL statement.",
-            "features_title": "[Pending Translation] Key Features",
-            "features": {
-                "fast": {
-                    "title": "[Pending Translation] Instant Generation",
-                    "desc": "[Pending Translation] Generate hundreds of SQL lines in the blink of an eye."
-                },
-                "private": {
-                    "title": "[Pending Translation] Privacy Guaranteed",
-                    "desc": "[Pending Translation] All processing is local. Your sensitive data stays in your browser."
-                },
-                "copy": {
-                    "title": "[Pending Translation] One-Click Export",
-                    "desc": "[Pending Translation] Copy the entire script or download it for your migrations."
-                },
-                "smart": {
-                    "title": "[Pending Translation] Smart Escaping",
-                    "desc": "[Pending Translation] Automatically handles quotes and special characters in strings."
-                },
-                "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] No limits, no registration, no hassle."
-                },
-                "db": {
-                    "title": "[Pending Translation] Cross-DB Friendly",
-                    "desc": "[Pending Translation] Generates standard SQL compatible with most database systems."
-                }
-            },
-            "uses_title": "[Pending Translation] Professional Use Cases",
-            "uses": {
-                "migration": {
-                    "title": "[Pending Translation] Data Migration",
-                    "desc": "[Pending Translation] Easily move data from JSON-based systems to SQL databases."
-                },
-                "import": {
-                    "title": "[Pending Translation] Bulk Importing",
-                    "desc": "[Pending Translation] Load large amounts of test or production data quickly."
-                },
-                "api": {
-                    "title": "[Pending Translation] API to Database",
-                    "desc": "[Pending Translation] Convert third-party API results directly into SQL inserts."
-                },
-                "test": {
-                    "title": "[Pending Translation] Test Data Seeding",
-                    "desc": "[Pending Translation] Create SQL scripts for populating development environments."
-                },
-                "backup": {
-                    "title": "[Pending Translation] Backup Restoration",
-                    "desc": "[Pending Translation] Turn JSON backups back into functional SQL scripts."
-                },
-                "dev": {
-                    "title": "[Pending Translation] Rapid Prototyping",
-                    "desc": "[Pending Translation] Quickly populate new database tables during development."
-                }
-            },
-            "how_title": "[Pending Translation] How to Use",
-            "how_steps": [
-                "[Pending Translation] Enter the target database <strong>Table Name<\/strong>",
-                "[Pending Translation] Paste your <strong>JSON<\/strong> (must be an array or object)",
-                "[Pending Translation] Click <strong>Generate SQL<\/strong> to create the script",
-                "[Pending Translation] <strong>Copy<\/strong> the SQL output to your clipboard"
-            ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] What JSON format is required?",
-                "a1": "[Pending Translation] The tool works best with an array of objects, where each object represents a database row.",
-                "q2": "[Pending Translation] Does it handle nested objects?",
-                "a2": "[Pending Translation] It currently maps top-level keys. Nested objects are usually stringified or skipped depending on your DB needs.",
-                "q3": "[Pending Translation] Is there a limit on rows?",
-                "a3": "[Pending Translation] There is no hard limit, though your browser's performance may vary with thousands of rows."
-            },
-            "tips_title": "[Pending Translation] Pro Tips",
-            "tips_list": [
-                "[Pending Translation] Ensure your JSON keys match your SQL column names exactly.",
-                "[Pending Translation] Always verify the generated SQL before running it on a production database.",
-                "[Pending Translation] Use the \"Example\" button to see the expected JSON structure."
-            ]
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter JSON data and a table name",
-            "success_convert": "[Pending Translation] ✓ SQL generated successfully!",
-            "error_convert": "[Pending Translation] Error generating SQL: ",
-            "error_no_copy": "[Pending Translation] No SQL to copy. Please convert JSON first.",
-            "success_copy": "[Pending Translation] ✓ SQL copied to clipboard!"
+            "label_tablename": "Taulun nimi",
+            "btn_convert": "Generoi SQL"
         }
     },
     "json-to-xml-converter": {
         "meta": {
-            "title": "[Pending Translation] JSON to XML Converter - Free Online Tool",
-            "description": "[Pending Translation] Convert JSON data to structured XML format instantly with our free online tool. Fast, secure, and easy to use.",
-            "h1": "[Pending Translation] JSON to XML Converter",
-            "subtitle": "[Pending Translation] Transform JSON objects and arrays into valid XML documents"
+            "title": "JSON-XML-muunnin",
+            "h1": "JSON-XML-muunnin",
+            "subtitle": "Muunna JSON-objektit ja -taulukot XML-dokumenteiksi"
         },
         "editor": {
-            "btn_convert": "[Pending Translation] Convert to XML",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy XML",
-            "btn_example": "[Pending Translation] Load Example",
-            "label_input": "[Pending Translation] JSON Input",
-            "ph_input": "[Pending Translation] Paste your JSON data here...",
-            "label_output": "[Pending Translation] XML Output",
-            "ph_output": "[Pending Translation] Converted XML will appear here..."
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Free JSON to XML Converter",
-            "hero_subtitle": "[Pending Translation] The fastest way to transform JSON into XML",
-            "p1": "[Pending Translation] Our free JSON to XML converter is a powerful tool designed for developers and IT professionals. It allows you to transform JavaScript Object Notation (JSON) data into structured Extensible Markup Language (XML) instantly. Whether you're working with legacy systems, enterprise integrations, or specific XML-based APIs, our tool ensures accuracy and privacy with 100% client-side processing.",
-            "what_title": "[Pending Translation] What is JSON to XML Conversion?",
-            "what_desc": "[Pending Translation] JSON to XML conversion is the process of translating data structured in JSON—a lightweight format popular in modern web apps—into XML, a markup language often used in enterprise systems, SOAP services, and configuration files. Our tool bridges this gap, making data transformation seamless.",
-            "features_title": "[Pending Translation] Key Features",
-            "features": {
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] Get your XML results in milliseconds."
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy Guaranteed",
-                    "desc": "[Pending Translation] All data stays in your browser; nothing is uploaded."
-                },
-                "copy": {
-                    "title": "[Pending Translation] Easy Export",
-                    "desc": "[Pending Translation] Copy to clipboard or use the output directly."
-                },
-                "format": {
-                    "title": "[Pending Translation] Clean XML",
-                    "desc": "[Pending Translation] Generates well-formatted and readable XML code."
-                },
-                "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] No registration, no limits, no cost."
-                },
-                "offline": {
-                    "title": "[Pending Translation] Offline Capability",
-                    "desc": "[Pending Translation] Works without internet once the page is loaded."
-                }
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "migration": {
-                    "title": "[Pending Translation] System Migration",
-                    "desc": "[Pending Translation] Transform JSON data for import into legacy XML-based systems."
-                },
-                "integration": {
-                    "title": "[Pending Translation] API Integration",
-                    "desc": "[Pending Translation] Prepare data for SOAP APIs or REST APIs that require XML input."
-                },
-                "config": {
-                    "title": "[Pending Translation] Config Transformation",
-                    "desc": "[Pending Translation] Convert JSON configuration files into XML format."
-                },
-                "enterprise": {
-                    "title": "[Pending Translation] Enterprise Services",
-                    "desc": "[Pending Translation] Standardize data for corporate service buses and middleware."
-                },
-                "docs": {
-                    "title": "[Pending Translation] Technical Documentation",
-                    "desc": "[Pending Translation] Generate XML snippets for technical guides or specifications."
-                },
-                "export": {
-                    "title": "[Pending Translation] Data Exporting",
-                    "desc": "[Pending Translation] Easily export structured data into XML format for reporting."
-                }
-            },
-            "how_title": "[Pending Translation] How to Use",
-            "how_steps": {
-                "1": {
-                    "title": "[Pending Translation] Paste JSON",
-                    "desc": "[Pending Translation] Paste your JSON code into the 'JSON Input' field."
-                },
-                "2": {
-                    "title": "[Pending Translation] Convert",
-                    "desc": "[Pending Translation] Click 'Convert to XML' to generate the output."
-                },
-                "3": {
-                    "title": "[Pending Translation] Export Results",
-                    "desc": "[Pending Translation] Copy the generated XML and use it in your project."
-                }
-            },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Does it support nested JSON?",
-                "a1": "[Pending Translation] Yes, it handles complex nested objects and arrays by creating hierarchical XML tags.",
-                "q2": "[Pending Translation] Is my data secure?",
-                "a2": "[Pending Translation] Absolutely. Processing is done entirely in your browser using JavaScript.",
-                "q3": "[Pending Translation] Can I load an example?",
-                "a3": "[Pending Translation] Yes, click 'Load Example' to see a demonstration of the conversion.",
-                "q4": "[Pending Translation] Is there a size limit?",
-                "a4": "[Pending Translation] Performance depends on your browser's memory, but it handles most files easily.",
-                "q5": "[Pending Translation] Does it use any external APIs?",
-                "a5": "[Pending Translation] No, it is a self-contained tool that runs natively on your device.",
-                "q6": "[Pending Translation] Is the XML formatted?",
-                "a6": "[Pending Translation] Yes, the output is 'pretty-printed' with proper indentation for readability."
-            },
-            "tips_title": "[Pending Translation] Pro Tips",
-            "tips_list": {
-                "1": "[Pending Translation] Validate your JSON before converting to avoid syntax errors.",
-                "2": "[Pending Translation] Use the 'Clear' button for a fresh start when converting multiple files.",
-                "3": "[Pending Translation] Check the XML tags to ensure they match your expected target schema.",
-                "4": "[Pending Translation] Use 'Load Example' if you're unsure about the input format.",
-                "5": "[Pending Translation] Bookmark this page for quick access to your development tools."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter JSON data to convert",
-            "success_convert": "[Pending Translation] ✓ JSON converted to XML successfully!",
-            "error_convert": "[Pending Translation] Error converting JSON: ",
-            "error_no_copy": "[Pending Translation] No content to copy. Please convert JSON first.",
-            "success_copy": "[Pending Translation] ✓ XML copied to clipboard!"
+            "btn_convert": "Muunna XML-muotoon"
         }
     },
     "json-to-yaml-converter": {
         "meta": {
-            "title": "[Pending Translation] JSON to YAML Converter - Free Online Tool",
-            "description": "[Pending Translation] Convert JSON to YAML format instantly with our free online JSON to YAML converter. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] JSON to YAML Converter",
-            "subtitle": "[Pending Translation] The best json to yaml converter for developers and IT professionals"
-        },
-        "content": {
-            "hero_title": "[Pending Translation] JSON to YAML Converter",
-            "hero_subtitle": "[Pending Translation] Convert JSON to YAML format instantly and accurately",
-            "p1": "[Pending Translation] Our free JSON to YAML converter allows you to transform JSON data into YAML format instantly. Perfect for developers, DevOps engineers, and anyone working with configuration files or data serialization.",
-            "what_title": "[Pending Translation] What is JSON to YAML Converter?",
-            "what_desc": "[Pending Translation] JSON (JavaScript Object Notation) and YAML (YAML Ain't Markup Language) are both popular data serialization formats. YAML is often preferred for configuration files due to its human-readable syntax. Our tool helps you bridge the gap between these formats quickly.",
-            "features_title": "[Pending Translation] Key Features",
-            "features": {
-                "fast": {
-                    "title": "[Pending Translation] Fast Conversion",
-                    "desc": "[Pending Translation] Convert JSON to YAML in milliseconds"
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Processing happens entirely in your browser"
-                },
-                "copy": {
-                    "title": "[Pending Translation] One-Click Copy",
-                    "desc": "[Pending Translation] Copy the converted YAML instantly"
-                },
-                "format": {
-                    "title": "[Pending Translation] Clean Formatting",
-                    "desc": "[Pending Translation] Produces well-indented YAML output"
-                },
-                "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] No registration or payment required"
-                },
-                "offline": {
-                    "title": "[Pending Translation] Client-Side",
-                    "desc": "[Pending Translation] Works without sending data to a server"
-                }
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "docker": {
-                    "title": "[Pending Translation] Docker",
-                    "desc": "[Pending Translation] Convert JSON container configs to Docker Compose YAML."
-                },
-                "config": {
-                    "title": "[Pending Translation] Config Files",
-                    "desc": "[Pending Translation] Transform JSON settings to YAML configuration files."
-                },
-                "cicd": {
-                    "title": "[Pending Translation] CI\/CD Pipelines",
-                    "desc": "[Pending Translation] Prepare YAML pipeline definitions from JSON data."
-                },
-                "cloud": {
-                    "title": "[Pending Translation] Cloud Provider Configs",
-                    "desc": "[Pending Translation] Convert JSON data to YAML format for cloud platforms."
-                },
-                "data": {
-                    "title": "[Pending Translation] Data Transformation",
-                    "desc": "[Pending Translation] Switch between JSON and YAML for different data tools."
-                },
-                "tools": {
-                    "title": "[Pending Translation] DevOps Tools",
-                    "desc": "[Pending Translation] Format data correctly for tools that expect YAML."
-                }
-            },
-            "how_title": "[Pending Translation] How to Use",
-            "how_steps": {
-                "1": {
-                    "title": "[Pending Translation] Paste JSON",
-                    "desc": "[Pending Translation] Enter your JSON data into the input field."
-                },
-                "2": {
-                    "title": "[Pending Translation] Convert",
-                    "desc": "[Pending Translation] Click the \"Convert\" button to generate YAML."
-                },
-                "3": {
-                    "title": "[Pending Translation] Copy YAML",
-                    "desc": "[Pending Translation] Copy the resulting YAML for your project."
-                }
-            },
-            "samples_title": "[Pending Translation] Conversion Samples",
-            "samples": [
-                {
-                    "title": "[Pending Translation] Basic Object",
-                    "json": "[Pending Translation] { \"name\": \"Antigravity\", \"version\": \"1.0\" }",
-                    "yaml": "[Pending Translation] name: Antigravity\nversion: 1.0"
-                },
-                {
-                    "title": "[Pending Translation] Array Example",
-                    "json": "[Pending Translation] [ \"Java\", \"Python\", \"Go\" ]",
-                    "yaml": "[Pending Translation] - Java\n- Python\n- Go"
-                }
-            ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is it free?",
-                "a1": "[Pending Translation] Yes, our JSON to YAML converter is 100% free.",
-                "q2": "[Pending Translation] Is it secure?",
-                "a2": "[Pending Translation] Yes, all processing happens locally in your browser.",
-                "q3": "[Pending Translation] Does it support arrays?",
-                "a3": "[Pending Translation] Yes, it handles complex JSON structures including arrays and nested objects.",
-                "q4": "[Pending Translation] Is YAML better than JSON?",
-                "a4": "[Pending Translation] YAML is often easier for humans to read and write, while JSON is generally better for machine processing.",
-                "q5": "[Pending Translation] Can I use this offline?",
-                "a5": "[Pending Translation] Yes, once loaded, the tool works offline as it uses local JavaScript."
-            },
-            "tips_title": "[Pending Translation] Pro Tips",
-            "tips_list": {
-                "1": "[Pending Translation] Ensure your JSON is valid before converting.",
-                "2": "[Pending Translation] Use the \"Example\" button to see how the conversion works.",
-                "3": "[Pending Translation] YAML is case-sensitive, just like JSON.",
-                "4": "[Pending Translation] Check indentation in the resulting YAML.",
-                "5": "[Pending Translation] Clear all data easily for a fresh start."
-            }
+            "title": "JSON-YAML-muunnin",
+            "h1": "JSON-YAML-muunnin",
+            "subtitle": "Muunna JSON-tieto YAML-muotoon välittömästi"
         },
         "editor": {
-            "btn_convert": "[Pending Translation] Convert",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy YAML",
-            "btn_example": "[Pending Translation] Example",
-            "label_input": "[Pending Translation] JSON Input",
-            "ph_input": "[Pending Translation] Paste your JSON data here...",
-            "label_output": "[Pending Translation] YAML Output",
-            "ph_output": "[Pending Translation] Converted YAML will appear here..."
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter some JSON text",
-            "success_convert": "[Pending Translation] JSON converted to YAML successfully!",
-            "error_convert": "[Pending Translation] Error converting JSON: ",
-            "error_no_copy": "[Pending Translation] No YAML to copy. Please convert JSON first.",
-            "success_copy": "[Pending Translation] YAML copied to clipboard!"
+            "btn_convert": "Muunna",
+            "btn_copy": "Kopioi YAML"
         }
     },
     "jwt-decoder": {
         "meta": {
-            "title": "[Pending Translation] JWT Decoder",
-            "description": "[Pending Translation] Decode and inspect JSON Web Tokens (JWT) - View header, payload, and signature!",
-            "h1": "[Pending Translation] JWT Decoder",
-            "subtitle": "[Pending Translation] Decode and inspect JSON Web Tokens (JWT) - View header, payload, and signature!"
+            "title": "JWT-dekoodain",
+            "h1": "JWT-dekoodain",
+            "subtitle": "Pura ja tutki JSON Web Tokeneita (JWT)"
         },
         "editor": {
-            "label_input": "[Pending Translation] Enter JWT Token",
-            "ph_input": "[Pending Translation] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-            "btn_decode": "[Pending Translation] Decode JWT",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_example": "[Pending Translation] Example",
-            "label_payload": "[Pending Translation] Payload (Claims)",
-            "label_signature": "[Pending Translation] Signature",
-            "note_signature": "[Pending Translation] âš ï¸ Note: Signature verification requires the secret key"
-        },
-        "content": {
-            "hero_title": "[Pending Translation] Free JWT Decoder Online",
-            "hero_subtitle": "[Pending Translation] Decode and inspect JSON Web Tokens instantly",
-            "p1": "[Pending Translation] Our free JWT Decoder tool allows you to decode and inspect JSON Web Tokens (JWT) to view their header, payload, and signature components. Perfect for debugging authentication issues, understanding token structure, and validating JWT claims.",
-            "what_title": "[Pending Translation] ðŸ” What is JWT?",
-            "what_desc": "[Pending Translation] JSON Web Token (JWT) is a compact, URL-safe means of representing claims between two parties. JWTs consist of three parts: Header (algorithm and token type], Payload (claims\/data], and Signature (verification], separated by dots.",
-            "features_title": "[Pending Translation] âœ¨ Features",
-            "features": {
-                "instant": {
-                    "title": "[Pending Translation] Instant Decoding",
-                    "desc": "[Pending Translation] Decode JWTs in milliseconds"
-                },
-                "structured": {
-                    "title": "[Pending Translation] Structured View",
-                    "desc": "[Pending Translation] See header, payload, and signature separately"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy First",
-                    "desc": "[Pending Translation] All decoding happens in your browser"
-                }
-            },
-            "uses_title": "[Pending Translation] ðŸŽ¯ Common Use Cases",
-            "uses": {
-                "debug": {
-                    "title": "[Pending Translation] ðŸ› Debugging",
-                    "desc": "[Pending Translation] Debug authentication issues by inspecting JWT contents"
-                },
-                "validate": {
-                    "title": "[Pending Translation] âœ… Validation",
-                    "desc": "[Pending Translation] Verify JWT claims and expiration times"
-                },
-                "learn": {
-                    "title": "[Pending Translation] ðŸ“š Learning",
-                    "desc": "[Pending Translation] Understand JWT structure and components"
-                },
-                "dev": {
-                    "title": "[Pending Translation] ðŸ”§ Development",
-                    "desc": "[Pending Translation] Test JWT generation and parsing in your applications"
-                }
-            },
-            "faq_title": "[Pending Translation] â“ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is it safe to decode JWTs here?",
-                "a1": "[Pending Translation] Yes! All decoding happens in your browser. Your JWT never leaves your device. However, never share JWTs publicly as they may contain sensitive information.",
-                "q2": "[Pending Translation] Can this tool verify JWT signatures?",
-                "a2": "[Pending Translation] This tool decodes and displays JWT components but doesn't verify signatures, as that requires the secret key which should never be shared.",
-                "q3": "[Pending Translation] What are JWT claims?",
-                "a3": "[Pending Translation] Claims are statements about an entity (typically the user) and additional data. Common claims include 'sub' (subject], 'exp' (expiration], and 'iat' (issued at)."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter a JWT token",
-            "error_invalid_format": "[Pending Translation] Invalid JWT format. JWT should have 3 parts separated by dots.",
-            "success_decode": "[Pending Translation] âœ“ JWT decoded successfully",
-            "error_decode": "[Pending Translation] âœ— Error decoding JWT: "
+            "label_input": "Syötä JWT-token",
+            "btn_decode": "Pura JWT",
+            "label_payload": "Data (Payload)",
+            "label_signature": "Allekirjoitus"
         }
     },
     "markdown-to-html-converter": {
         "meta": {
-            "title": "[Pending Translation] Markdown to HTML Converter",
-            "description": "[Pending Translation] Convert Markdown to HTML instantly",
-            "h1": "[Pending Translation] Markdown to HTML Converter",
-            "subtitle": "[Pending Translation] Convert Markdown to HTML instantly"
+            "title": "Markdown-HTML-muunnin",
+            "h1": "Markdown-HTML-muunnin",
+            "subtitle": "Muunna Markdown HTML-muotoon välittömästi"
         },
         "editor": {
-            "btn_convert": "[Pending Translation] Convert",
-            "btn_copy": "[Pending Translation] Copy HTML",
-            "btn_download": "[Pending Translation] Download",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_example": "[Pending Translation] Example",
-            "label_input": "[Pending Translation] Markdown Input",
-            "ph_input": "[Pending Translation] # Enter your Markdown here...",
-            "label_output": "[Pending Translation] HTML Output",
-            "ph_output": "[Pending Translation] HTML output will appear here...",
-            "label_preview": "[Pending Translation] Live Preview",
-            "ph_preview": "[Pending Translation] Preview will appear here..."
-        },
-        "content": {
-            "features": {
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] Convert Markdown to HTML in milliseconds"
-                },
-                "preview": {
-                    "title": "[Pending Translation] Live Preview",
-                    "desc": "[Pending Translation] See your HTML rendered in real-time"
-                },
-                "export": {
-                    "title": "[Pending Translation] Copy & Download",
-                    "desc": "[Pending Translation] Easily copy HTML or download as a file"
-                },
-                "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] No registration, no limits, completely free"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy First",
-                    "desc": "[Pending Translation] All conversion happens in your browser"
-                },
-                "mobile": {
-                    "title": "[Pending Translation] Mobile Friendly",
-                    "desc": "[Pending Translation] Works perfectly on all devices"
-                }
-            },
-            "hero_title": "[Pending Translation] 🚀 Free Markdown to HTML Converter",
-            "hero_subtitle": "[Pending Translation] Transform your Markdown documents into clean, semantic HTML instantly. Perfect for developers, writers, and content creators.",
-            "what_title": "[Pending Translation] ✨ What is Markdown to HTML Conversion?",
-            "p1": "[Pending Translation] Markdown is a lightweight markup language that allows you to write formatted text using plain text syntax. Converting Markdown to HTML transforms your simple, readable Markdown documents into properly structured HTML code that can be used on websites, blogs, documentation sites, and web applications.",
-            "what_desc": "[Pending Translation] Our free Markdown to HTML converter uses the powerful Parsedown library to ensure accurate, standards-compliant HTML output. Whether you're writing documentation, blog posts, README files, or technical content, our tool makes the conversion process instant and effortless.",
-            "features_title": "[Pending Translation] 💡 Key Features",
-            "uses_title": "[Pending Translation] 🎯 Common Use Cases",
-            "uses": {
-                "docs": {
-                    "title": "[Pending Translation] 📚 Documentation",
-                    "desc": "[Pending Translation] Convert README files and docs to HTML"
-                },
-                "blog": {
-                    "title": "[Pending Translation] ✍️ Blog Posts",
-                    "desc": "[Pending Translation] Write in Markdown, publish in HTML"
-                },
-                "github": {
-                    "title": "[Pending Translation] 💻 GitHub Projects",
-                    "desc": "[Pending Translation] Transform README.md files into HTML"
-                },
-                "email": {
-                    "title": "[Pending Translation] 📧 Email Templates",
-                    "desc": "[Pending Translation] Create email content in Markdown"
-                }
-            },
-            "pro_tip": {
-                "title": "[Pending Translation] 💡 Pro Tip",
-                "desc": "[Pending Translation] For the best results, use standard Markdown syntax as defined by CommonMark. Our converter supports most Markdown flavors including GitHub Flavored Markdown (GFM). If you're working with complex documents, test small sections first to ensure proper conversion."
-            },
-            "faq_title": "[Pending Translation] ❓ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is this tool free?",
-                "a1": "[Pending Translation] Yes! Our Markdown to HTML converter is 100% free with no hidden costs and no usage limits.",
-                "q2": "[Pending Translation] Is my content private?",
-                "a2": "[Pending Translation] Absolutely! All conversion happens directly in your browser using JavaScript. Your content never leaves your device.",
-                "q3": "[Pending Translation] What syntax is supported?",
-                "a3": "[Pending Translation] Our converter supports standard Markdown syntax including headings, bold, italic, lists, links, images, code blocks, tables, and more (GFM compatible)."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter some Markdown text",
-            "error_general": "[Pending Translation] An error occurred during conversion",
-            "error_no_copy": "[Pending Translation] No HTML to copy. Please convert Markdown first.",
-            "success_copy": "[Pending Translation] HTML copied to clipboard!",
-            "error_no_download": "[Pending Translation] No HTML to download. Please convert Markdown first.",
-            "example": "[Pending Translation] # Welcome to Markdown\n\n## This is a subheading\n\nThis is a paragraph with **bold text** and *italic text*.\n\n### Features\n\n- Easy to write\n- Easy to read\n- Converts to HTML\n\n### Code Example\n\n```javascript\nfunction hello() {\n    console.log(\"Hello, World!\");\n}\n```\n\n> This is a blockquote\n\n[Visit our website](https:\/\/example.com)"
+            "btn_convert": "Muunna",
+            "btn_copy": "Kopioi HTML",
+            "label_preview": "Live-esikatselu"
         }
     },
     "md5-generator": {
         "meta": {
-            "title": "[Pending Translation] MD5 Hash Generator",
-            "description": "[Pending Translation] Generate MD5 hashes from any text instantly",
-            "h1": "[Pending Translation] MD5 Hash Generator",
-            "subtitle": "[Pending Translation] Generate MD5 hashes from any text instantly"
+            "title": "MD5-tiivisteen generaattori",
+            "h1": "MD5-tiivisteen generaattori",
+            "subtitle": "Luo MD5-tiivisteitä tekstistä välittömästi"
         },
         "editor": {
-            "label_input": "[Pending Translation] Enter Text",
-            "ph_input": "[Pending Translation] Enter text to hash...",
-            "btn_generate": "[Pending Translation] Generate MD5 Hash",
-            "label_result": "[Pending Translation] MD5 Hash",
-            "btn_copy": "[Pending Translation] Copy"
-        },
-        "content": {
-            "hero_title": "[Pending Translation] MD5 Hash Generator",
-            "hero_subtitle": "[Pending Translation] Generate MD5 hashes from any text instantly",
-            "p1": "[Pending Translation] Generate MD5 hashes from any text, password, or data string instantly with our free online MD5 hash generator. MD5 (Message-Digest Algorithm 5) is a widely used cryptographic hash function that produces a 128-bit (32-character hexadecimal) hash value. Perfect for data integrity verification, checksum generation, and understanding hash functions. All processing happens in your browser for complete privacy.",
-            "what_title": "[Pending Translation] ðŸ”’ What is MD5?",
-            "what_desc": "[Pending Translation] MD5 is a cryptographic hash function that takes an input of any length and produces a fixed 128-bit hash value, typically represented as a 32-character hexadecimal number. The same input always produces the same hash, but even a tiny change in input creates a completely different hash.",
-            "features_title": "[Pending Translation] âœ… MD5 Advantages",
-            "features": {
-                "fast": "[Pending Translation] <strong>Fast Processing:<\/strong> Extremely quick hash generation",
-                "fixed": "[Pending Translation] <strong>Fixed Length:<\/strong> Always produces 128-bit output",
-                "deterministic": "[Pending Translation] <strong>Deterministic:<\/strong> Same input = same hash",
-                "support": "[Pending Translation] <strong>Wide Support:<\/strong> Available in all programming languages"
-            },
-            "uses_title": "[Pending Translation] ðŸ“Š Common Use Cases",
-            "uses": {
-                "verify": "[Pending Translation] <strong>File Verification:<\/strong> Check file integrity",
-                "checksum": "[Pending Translation] <strong>Checksums:<\/strong> Verify downloads",
-                "cache": "[Pending Translation] <strong>Cache Keys:<\/strong> Generate unique identifiers",
-                "integrity": "[Pending Translation] <strong>Data Integrity:<\/strong> Detect changes"
-            },
-            "warning_title": "[Pending Translation] âš ï¸ Security Warning",
-            "warning_desc": "[Pending Translation] <strong>DO NOT use MD5 for password hashing or security-critical applications!<\/strong> MD5 is cryptographically broken and vulnerable to collision attacks. For password hashing, use modern algorithms like bcrypt, Argon2, or PBKDF2.",
-            "compare_title": "[Pending Translation] ðŸ”„ MD5 vs Other Hash Functions",
-            "compare": {
-                "md5": {
-                    "title": "[Pending Translation] MD5",
-                    "desc1": "[Pending Translation] 128-bit output",
-                    "desc2": "[Pending Translation] Fast but insecure for cryptography"
-                },
-                "sha1": {
-                    "title": "[Pending Translation] SHA-1",
-                    "desc1": "[Pending Translation] 160-bit output",
-                    "desc2": "[Pending Translation] Also deprecated for security use"
-                },
-                "sha256": {
-                    "title": "[Pending Translation] SHA-256",
-                    "desc1": "[Pending Translation] 256-bit output",
-                    "desc2": "[Pending Translation] Secure and widely used today"
-                }
-            },
-            "faq_title": "[Pending Translation] â“ Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is MD5 secure for passwords?",
-                "a1": "[Pending Translation] No! MD5 is cryptographically broken and should never be used for password hashing. Use bcrypt, Argon2, or PBKDF2 instead.",
-                "q2": "[Pending Translation] Can I reverse an MD5 hash?",
-                "a2": "[Pending Translation] No, MD5 is a one-way function - you cannot reverse a hash to get the original input. However, attackers can use rainbow tables to find inputs.",
-                "q3": "[Pending Translation] Is my data sent to a server?",
-                "a3": "[Pending Translation] No! All MD5 hash generation happens entirely in your browser using JavaScript. Your data never leaves your device."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter some text",
-            "btn_copied": "[Pending Translation] Copied!"
+            "btn_generate": "Luo MD5-tiiviste",
+            "label_result": "MD5-tiiviste"
         }
     },
     "sql-to-json": {
         "meta": {
-            "title": "[Pending Translation] SQL to JSON Converter - Free Online Tool",
-            "description": "[Pending Translation] Free online sql to json converter tool. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] SQL to JSON Converter",
-            "subtitle": "[Pending Translation] The best sql to json converter for developers and IT professionals"
+            "title": "SQL-JSON-muunnin",
+            "h1": "SQL-JSON-muunnin",
+            "subtitle": "Muunna SQL INSERT -lausekkeet JSON-muotoon"
         },
         "editor": {
-            "btn_convert": "[Pending Translation] Convert to JSON",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy",
-            "btn_example": "[Pending Translation] Example",
-            "label_input": "[Pending Translation] Enter SQL INSERT Statements",
-            "ph_input": "[Pending Translation] INSERT INTO users (name, age) VALUES ('John', 30);",
-            "label_output": "[Pending Translation] JSON Output",
-            "ph_output": "[Pending Translation] Converted JSON will appear here..."
-        },
-        "content": {
-            "p1": "[Pending Translation] Our free SQL to JSON converter transforms SQL INSERT statements into clean JSON format. Perfect for API development, data migration, NoSQL databases, and converting relational database data into JSON for modern web applications and microservices.",
-            "what_title": "[Pending Translation] 🔐 What is SQL to JSON Conversion?",
-            "what_desc": "[Pending Translation] SQL to JSON conversion transforms SQL INSERT statements into JavaScript Object Notation format. This is essential when migrating from SQL databases to NoSQL systems, creating REST APIs, or working with modern JavaScript frameworks that expect JSON data structures.",
-            "features": {
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] Convert SQL to JSON in milliseconds"
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] All processing happens locally in your browser"
-                },
-                "copy": {
-                    "title": "[Pending Translation] One-Click Copy",
-                    "desc": "[Pending Translation] Copy JSON output instantly to clipboard"
-                },
-                "smart": {
-                    "title": "[Pending Translation] Smart Parsing",
-                    "desc": "[Pending Translation] Automatically extracts columns and values from SQL"
-                },
-                "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] No limits, no registration required"
-                },
-                "api": {
-                    "title": "[Pending Translation] API Ready",
-                    "desc": "[Pending Translation] Output works perfectly with REST APIs and JavaScript"
-                }
-            },
-            "uses": {
-                "title": "[Pending Translation] Common Use Cases",
-                "migration": {
-                    "title": "[Pending Translation] Database Migration",
-                    "desc": "[Pending Translation] Convert SQL data to JSON for migrating from SQL databases to NoSQL systems like MongoDB, DynamoDB, or Firestore."
-                },
-                "api": {
-                    "title": "[Pending Translation] API Development",
-                    "desc": "[Pending Translation] Transform SQL INSERT statements to JSON for REST API payloads and testing."
-                },
-                "frontend": {
-                    "title": "[Pending Translation] Frontend Development",
-                    "desc": "[Pending Translation] Convert SQL data to JSON for use in React, Vue, Angular, and other JavaScript frameworks."
-                },
-                "analysis": {
-                    "title": "[Pending Translation] Data Analysis",
-                    "desc": "[Pending Translation] Transform SQL exports to JSON for data analysis tools and visualization libraries."
-                },
-                "testing": {
-                    "title": "[Pending Translation] Testing & Mocking",
-                    "desc": "[Pending Translation] Convert SQL test data to JSON for API mocking and automated testing."
-                },
-                "docs": {
-                    "title": "[Pending Translation] Documentation",
-                    "desc": "[Pending Translation] Transform SQL examples to JSON for API documentation and developer guides."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert SQL to JSON",
-                "step1": {
-                    "title": "[Pending Translation] Paste SQL INSERT Statement",
-                    "desc": "[Pending Translation] Copy your SQL INSERT statement and paste it into the left input field."
-                },
-                "step2": {
-                    "title": "[Pending Translation] Click Convert",
-                    "desc": "[Pending Translation] Press \"Convert to JSON\" to transform your SQL into JSON format."
-                },
-                "step3": {
-                    "title": "[Pending Translation] Copy and Use",
-                    "desc": "[Pending Translation] The JSON output appears on the right. Click \"Copy\" to use it in your application."
-                }
-            },
-            "example": {
-                "title": "[Pending Translation] Conversion Example",
-                "input": "[Pending Translation] SQL Input:",
-                "output": "[Pending Translation] JSON Output:"
-            },
-            "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] What SQL format is supported?",
-                "a1": "[Pending Translation] The converter supports standard SQL INSERT statements with column names and values. Both single and multiple row inserts are supported.",
-                "q2": "[Pending Translation] Is my data secure?",
-                "a2": "[Pending Translation] Yes! All conversion happens in your browser using JavaScript. Your SQL data never leaves your device or gets sent to any server.",
-                "q3": "[Pending Translation] Can I convert multiple rows?",
-                "a3": "[Pending Translation] Yes! The converter handles SQL INSERT statements with multiple rows, creating a JSON array of objects.",
-                "q4": "[Pending Translation] Does it work with all SQL databases?",
-                "a4": "[Pending Translation] Yes! The converter works with INSERT statements from MySQL, PostgreSQL, SQL Server, Oracle, and other SQL databases.",
-                "q5": "[Pending Translation] Can I use this for API development?",
-                "a5": "[Pending Translation] Absolutely! The generated JSON is perfect for REST API payloads, testing, and frontend development."
-            },
-            "best_practices": {
-                "title": "[Pending Translation] Best Practices",
-                "items": [
-                    {
-                        "title": "[Pending Translation] Use standard SQL",
-                        "desc": "[Pending Translation] Ensure your INSERT statements follow standard SQL syntax."
-                    },
-                    {
-                        "title": "[Pending Translation] Include column names",
-                        "desc": "[Pending Translation] Always specify column names in your INSERT statement for accurate JSON keys."
-                    },
-                    {
-                        "title": "[Pending Translation] Test with examples",
-                        "desc": "[Pending Translation] Use the \"Example\" button to understand the expected SQL format."
-                    },
-                    {
-                        "title": "[Pending Translation] Validate JSON output",
-                        "desc": "[Pending Translation] Always validate the generated JSON for your specific use case."
-                    },
-                    {
-                        "title": "[Pending Translation] Handle data types",
-                        "desc": "[Pending Translation] Be aware that all values are converted to strings or numbers in JSON."
-                    }
-                ]
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter SQL INSERT statements",
-            "error_no_matches": "[Pending Translation] No valid INSERT statements found",
-            "success_convert": "[Pending Translation] ✓ SQL converted to JSON successfully",
-            "error_general": "[Pending Translation] ✗ Error: ",
-            "error_no_copy": "[Pending Translation] No output to copy",
-            "success_copy": "[Pending Translation] ✓ Copied to clipboard"
+            "btn_convert": "Muunna JSON-muotoon"
         }
     },
     "sql-to-json-converter": {
@@ -2038,671 +427,82 @@
     },
     "unicode-encoder-decoder": {
         "meta": {
-            "title": "[Pending Translation] Free Unicode Encoder & Decoder",
-            "description": "[Pending Translation] Encode and decode Unicode escape sequences for JavaScript and JSON with our free tool.",
-            "h1": "[Pending Translation] Unicode Encoder & Decoder",
-            "subtitle": "[Pending Translation] Encode and decode Unicode escape sequences for JavaScript and JSON"
+            "title": "Unicode-koodain ja -dekoodain",
+            "h1": "Unicode-koodain ja -dekoodain",
+            "subtitle": "Koodaa ja pura Unicode-pakosarjat JavaScriptille ja JSONille"
         },
         "editor": {
-            "btn_encode": "[Pending Translation] Encode Unicode",
-            "btn_decode": "[Pending Translation] Decode Unicode",
-            "label_input_encode": "[Pending Translation] Enter Text to Encode",
-            "ph_input": "[Pending Translation] Hello ä¸–ç•Œ",
-            "btn_process_encode": "[Pending Translation] Encode Unicode",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy",
-            "label_output_encoded": "[Pending Translation] Encoded Unicode",
-            "ph_output": "[Pending Translation] Processed Unicode will appear here...",
-            "label_input_decode": "[Pending Translation] Enter Unicode to Decode",
-            "label_output_decoded": "[Pending Translation] Decoded Text",
-            "btn_process_decode": "[Pending Translation] Decode Unicode"
-        },
-        "content": {
-            "p1": "[Pending Translation] Our free Unicode Encoder & Decoder tool helps you encode text into Unicode escape sequences (e.g., \\u0041) for safe use in JavaScript, JSON, and other programming contexts, or decode them back to readable text. Perfect for developers, data analysts, and anyone dealing with international character sets. 100% free, client-side processing ensures your data stays private.",
-            "what_title": "[Pending Translation] What is Unicode Encoding?",
-            "what_desc": "[Pending Translation] Unicode encoding converts characters into their corresponding Unicode code points, often represented as escape sequences like \\uXXXX. This ensures that text containing special characters, emojis, or non-Latin scripts can be safely represented in environments that typically support only ASCII, such as source code files or JSON data.",
-            "features_title": "[Pending Translation] Features",
-            "features": {
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] Encode or decode Unicode in milliseconds"
-                },
-                "bidirectional": {
-                    "title": "[Pending Translation] Bidirectional",
-                    "desc": "[Pending Translation] Encode to Unicode format or decode back to original"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy First",
-                    "desc": "[Pending Translation] All processing happens in your browser"
-                },
-                "copy": {
-                    "title": "[Pending Translation] One-Click Copy",
-                    "desc": "[Pending Translation] Copy encoded\/decoded text instantly"
-                },
-                "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] No limits, no registration required"
-                },
-                "universal": {
-                    "title": "[Pending Translation] Universal Support",
-                    "desc": "[Pending Translation] Works with all Unicode characters and scripts"
-                }
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "programming": {
-                    "title": "[Pending Translation] Programming",
-                    "desc": "[Pending Translation] Embed special characters in JavaScript or Java source code safely"
-                },
-                "data": {
-                    "title": "[Pending Translation] Data Serialization",
-                    "desc": "[Pending Translation] Ensure safe transmission of non-ASCII characters in JSON"
-                },
-                "international": {
-                    "title": "[Pending Translation] Internationalization",
-                    "desc": "[Pending Translation] Debug and display text in various languages and scripts"
-                },
-                "security": {
-                    "title": "[Pending Translation] Security",
-                    "desc": "[Pending Translation] Analyze obfuscated code or data containing Unicode escapes"
-                }
-            },
-            "how_to_title": "[Pending Translation] How to Use",
-            "how_to": {
-                "step1": {
-                    "title": "[Pending Translation] Choose Mode",
-                    "desc": "[Pending Translation] Select \"Encode Unicode\" or \"Decode Unicode\" based on your need"
-                },
-                "step2": {
-                    "title": "[Pending Translation] Enter Text",
-                    "desc": "[Pending Translation] Paste your text or Unicode escapes in the input field"
-                },
-                "step3": {
-                    "title": "[Pending Translation] Process",
-                    "desc": "[Pending Translation] Click the encode or decode button"
-                },
-                "step4": {
-                    "title": "[Pending Translation] Copy Result",
-                    "desc": "[Pending Translation] Click \"Copy\" to copy the processed text to clipboard"
-                },
-                "step5": {
-                    "title": "[Pending Translation] Use Anywhere",
-                    "desc": "[Pending Translation] Paste the result in your code or application"
-                }
-            },
-            "examples_title": "[Pending Translation] Unicode Examples",
-            "examples": {
-                "simple": {
-                    "title": "[Pending Translation] Simple\/ASCII:",
-                    "desc": "[Pending Translation] Original: \"A\" â†’ Encoded: \"\\u0041\""
-                },
-                "special": {
-                    "title": "[Pending Translation] Special Characters:",
-                    "desc": "[Pending Translation] Original: \"Â©\" â†’ Encoded: \"\\u00A9\""
-                },
-                "emoji": {
-                    "title": "[Pending Translation] Emojis\/Multi-byte:",
-                    "desc": "[Pending Translation] Original: \"ðŸŒŸ\" â†’ Encoded: \"\\uD83C\\uDF1F\" (surrogate pairs) or \"\\u2B50\" depending on representation"
-                }
-            },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Why use Unicode escape sequences?",
-                "a1": "[Pending Translation] They allow you to represent any character using only ASCII characters, which ensures compatibility across different systems, encodings, and file transfers that might not handle raw Unicode correctly.",
-                "q2": "[Pending Translation] What format is used?",
-                "a2": "[Pending Translation] This tool typically uses the JavaScript\/JSON style \\uXXXX format for Basic Multilingual Plane characters.",
-                "q3": "[Pending Translation] Is this different from URL encoding?",
-                "a3": "[Pending Translation] Yes. URL encoding uses %XX hex values mainly for URLs. Unicode escaping uses \\uXXXX and is used in strings in programming languages like JavaScript, Java, and Python.",
-                "q4": "[Pending Translation] Is my data secure?",
-                "a4": "[Pending Translation] Yes! All encoding and decoding happens entirely in your browser using JavaScript. Your text never leaves your device."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter text to process",
-            "success_encode": "[Pending Translation] âœ“ Unicode encoded successfully",
-            "success_decode": "[Pending Translation] âœ“ Unicode decoded successfully",
-            "error_process": "[Pending Translation] âœ— Error processing Unicode: ",
-            "error_no_copy": "[Pending Translation] No output to copy",
-            "success_copy": "[Pending Translation] âœ“ Copied to clipboard"
+            "btn_encode": "Koodaa Unicode",
+            "btn_decode": "Pura Unicode",
+            "label_input_encode": "Syötä koodattava teksti",
+            "btn_process_encode": "Koodaa Unicode",
+            "btn_process_decode": "Pura Unicode"
         }
     },
     "url-encoder-decoder": {
         "meta": {
-            "title": "[Pending Translation] Free URL Encoder & Decoder",
-            "description": "[Pending Translation] Encode and decode URLs for safe web transmission with our free online tool.",
-            "h1": "[Pending Translation] URL Encoder & Decoder",
-            "subtitle": "[Pending Translation] Encode and decode URLs for safe web transmission"
+            "title": "URL-koodain ja -dekoodain",
+            "h1": "URL-koodain ja -dekoodain",
+            "subtitle": "Koodaa ja pura URL-osoitteet turvallista tiedonsiirtoa varten"
         },
         "editor": {
-            "btn_encode": "[Pending Translation] Encode URL",
-            "btn_decode": "[Pending Translation] Decode URL",
-            "label_input_encode": "[Pending Translation] Enter URL to Encode",
-            "ph_input": "[Pending Translation] https:\/\/example.com\/search?name=John Doe&age=30",
-            "btn_process_encode": "[Pending Translation] Encode URL",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy",
-            "label_output_encoded": "[Pending Translation] Encoded URL",
-            "ph_output": "[Pending Translation] Processed URL will appear here...",
-            "label_input_decode": "[Pending Translation] Enter URL to Decode",
-            "label_output_decoded": "[Pending Translation] Decoded URL",
-            "btn_process_decode": "[Pending Translation] Decode URL"
-        },
-        "content": {
-            "p1": "[Pending Translation] Our free URL Encoder & Decoder tool helps you encode special characters in URLs for safe transmission over the internet, or decode encoded URLs back to their original format. Perfect for developers, SEO professionals, and anyone working with web URLs. 100% free, client-side processing ensures your data stays private.",
-            "what_title": "[Pending Translation] What is URL Encoding?",
-            "what_desc": "[Pending Translation] URL encoding (also called percent-encoding) converts special characters in URLs into a format that can be transmitted over the internet. Spaces become %20, special characters like & become %26, and so on. This ensures URLs work correctly across all browsers and systems.",
-            "features_title": "[Pending Translation] Features",
-            "features": {
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] Encode or decode URLs in milliseconds"
-                },
-                "bidirectional": {
-                    "title": "[Pending Translation] Bidirectional",
-                    "desc": "[Pending Translation] Encode to URL format or decode back to original"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy First",
-                    "desc": "[Pending Translation] All processing happens in your browser"
-                },
-                "copy": {
-                    "title": "[Pending Translation] One-Click Copy",
-                    "desc": "[Pending Translation] Copy encoded\/decoded URLs instantly"
-                },
-                "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] No limits, no registration required"
-                },
-                "universal": {
-                    "title": "[Pending Translation] Universal Support",
-                    "desc": "[Pending Translation] Works with all URL formats and characters"
-                }
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "query": {
-                    "title": "[Pending Translation] Query Parameters",
-                    "desc": "[Pending Translation] Encode special characters in URL query strings for API calls and web requests"
-                },
-                "analytics": {
-                    "title": "[Pending Translation] Analytics Tracking",
-                    "desc": "[Pending Translation] Encode UTM parameters and tracking URLs for marketing campaigns"
-                },
-                "auth": {
-                    "title": "[Pending Translation] Authentication",
-                    "desc": "[Pending Translation] Encode credentials and tokens in OAuth and API authentication"
-                },
-                "i18n": {
-                    "title": "[Pending Translation] Internationalization",
-                    "desc": "[Pending Translation] Encode non-ASCII characters in URLs for global compatibility"
-                },
-                "seo": {
-                    "title": "[Pending Translation] SEO & Redirects",
-                    "desc": "[Pending Translation] Create properly encoded redirect URLs and canonical links"
-                },
-                "email": {
-                    "title": "[Pending Translation] Email Links",
-                    "desc": "[Pending Translation] Encode mailto links with subject lines and body content"
-                }
-            },
-            "how_to_title": "[Pending Translation] How to Use",
-            "how_to": {
-                "step1": {
-                    "title": "[Pending Translation] Choose Mode",
-                    "desc": "[Pending Translation] Select \"Encode URL\" or \"Decode URL\" based on your need"
-                },
-                "step2": {
-                    "title": "[Pending Translation] Enter URL",
-                    "desc": "[Pending Translation] Paste your URL or text in the input field"
-                },
-                "step3": {
-                    "title": "[Pending Translation] Process",
-                    "desc": "[Pending Translation] Click \"Encode URL\" or \"Decode URL\" button"
-                },
-                "step4": {
-                    "title": "[Pending Translation] Copy Result",
-                    "desc": "[Pending Translation] Click \"Copy\" to copy the processed URL to clipboard"
-                },
-                "step5": {
-                    "title": "[Pending Translation] Use Anywhere",
-                    "desc": "[Pending Translation] Paste the encoded\/decoded URL in your application"
-                }
-            },
-            "examples_title": "[Pending Translation] URL Encoding Examples",
-            "examples": {
-                "space": {
-                    "title": "[Pending Translation] Space Character:",
-                    "desc": "[Pending Translation] Original: \"Hello World\" â†’ Encoded: \"Hello%20World\""
-                },
-                "special": {
-                    "title": "[Pending Translation] Special Characters:",
-                    "desc": "[Pending Translation] Original: \"name=John&age=30\" â†’ Encoded: \"name%3DJohn%26age%3D30\""
-                },
-                "full": {
-                    "title": "[Pending Translation] Full URL:",
-                    "desc": "[Pending Translation] Original: \"https:\/\/example.com\/search?q=hello world\" â†’ Encoded: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
-                }
-            },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] When should I encode URLs?",
-                "a1": "[Pending Translation] Encode URLs when passing them as query parameters, storing them in databases, or when they contain special characters like spaces, &, =, ?, or non-ASCII characters.",
-                "q2": "[Pending Translation] What characters need encoding?",
-                "a2": "[Pending Translation] Reserved characters like : \/ ? # [ ] @ ! $ & ' ( ) * + , ; = and unsafe characters like spaces, <, >, \", {, }, |, \\, ^, `, and non-ASCII characters must be encoded.",
-                "q3": "[Pending Translation] Is URL encoding the same as Base64?",
-                "a3": "[Pending Translation] No. URL encoding converts specific characters to %XX format, while Base64 encodes entire data into a different character set. They serve different purposes.",
-                "q4": "[Pending Translation] Can I encode entire URLs?",
-                "a4": "[Pending Translation] Yes, but typically you only encode the query string portion. Encoding the entire URL including protocol (https:\/\/) is less common and may cause issues.",
-                "q5": "[Pending Translation] Is my data secure?",
-                "a5": "[Pending Translation] Yes! All encoding and decoding happens entirely in your browser using JavaScript. Your URLs never leave your device or get sent to any server."
-            }
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter a URL to process",
-            "success_encode": "[Pending Translation] âœ“ URL encoded successfully",
-            "success_decode": "[Pending Translation] âœ“ URL decoded successfully",
-            "error_process": "[Pending Translation] âœ— Error processing URL: ",
-            "error_no_copy": "[Pending Translation] No output to copy",
-            "success_copy": "[Pending Translation] âœ“ Copied to clipboard"
+            "btn_encode": "Koodaa URL",
+            "btn_decode": "Pura URL",
+            "btn_process_encode": "Koodaa URL",
+            "btn_process_decode": "Pura URL"
         }
     },
     "uuid-generator": {
         "meta": {
-            "title": "[Pending Translation] UUID Generator - Free Online Tool",
-            "description": "[Pending Translation] Free online uuid generator tool. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] UUID Generator",
-            "subtitle": "[Pending Translation] The best uuid generator for developers and IT professionals"
+            "title": "UUID-generaattori",
+            "h1": "UUID-generaattori",
+            "subtitle": "Luo universaalisti uniikkeja tunnisteita (UUID)"
         },
         "editor": {
-            "label_quantity": "[Pending Translation] Quantity",
-            "label_version": "[Pending Translation] Version",
-            "opt_v4": "[Pending Translation] Version 4 (Random)",
-            "btn_generate": "[Pending Translation] Generate UUIDs",
-            "btn_copy": "[Pending Translation] Copy",
-            "label_output": "[Pending Translation] Generated UUIDs"
-        },
-        "content": {
-            "about_title": "[Pending Translation] About UUIDs (Version 4)",
-            "about_desc": "[Pending Translation] A UUID (Universally Unique Identifier) is a 128-bit number used to identify information in computer systems. Version 4 UUIDs are generated using random or pseudo-random numbers. The probability of duplication is virtually zero."
-        },
-        "js": {
-            "success_generated": "[Pending Translation] Generated :count UUIDs!",
-            "success_copy": "[Pending Translation] Copied to clipboard!"
+            "label_quantity": "Määrä",
+            "btn_generate": "Generoi UUID:t"
         }
     },
     "xml-formatter": {
         "meta": {
-            "title": "[Pending Translation] XML Formatter",
-            "description": "[Pending Translation] Format, beautify, and minify XML data with our free online tool.",
-            "h1": "[Pending Translation] XML Formatter",
-            "subtitle": "[Pending Translation] Format, beautify, and minify XML data"
+            "title": "XML-muotoilija",
+            "h1": "XML-muotoilija",
+            "subtitle": "Muotoile, kaunista ja minimoi XML-tietosi"
         },
         "editor": {
-            "label_input": "[Pending Translation] XML Input",
-            "ph_input": "[Pending Translation] <root><child>value<\/child><\/root>",
-            "btn_format": "[Pending Translation] Format \/ Beautify",
-            "btn_minify": "[Pending Translation] Minify",
-            "btn_copy": "[Pending Translation] Copy"
-        },
-        "js": {
-            "success_format": "[Pending Translation] XML Formatted Successfully!",
-            "error_invalid": "[Pending Translation] Invalid XML",
-            "success_minify": "[Pending Translation] XML Minified!",
-            "success_copy": "[Pending Translation] Copied to clipboard!"
+            "btn_format": "Muotoile / Kaunista",
+            "btn_minify": "Minimoi"
         }
     },
     "xml-to-csv": {
         "meta": {
-            "title": "[Pending Translation] XML to CSV Converter - Free Online Tool",
-            "description": "[Pending Translation] Free online xml to csv converter tool. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] XML to CSV Converter",
-            "subtitle": "[Pending Translation] The best xml to csv converter for developers and IT professionals"
+            "title": "XML-CSV-muunnin",
+            "h1": "XML-CSV-muunnin",
+            "subtitle": "Muunna XML-tieto CSV-muotoon helposti"
         },
         "editor": {
-            "btn_convert": "[Pending Translation] Convert to CSV",
-            "btn_clear": "[Pending Translation] Clear",
-            "btn_copy": "[Pending Translation] Copy",
-            "btn_example": "[Pending Translation] Example",
-            "label_input": "[Pending Translation] Enter XML",
-            "ph_input": "[Pending Translation] <data><row><name>John<\/name><age>30<\/age><\/row><\/data>",
-            "label_output": "[Pending Translation] CSV Output",
-            "ph_output": "[Pending Translation] Converted CSV will appear here..."
-        },
-        "content": {
-            "p1": "[Pending Translation] Our free XML to CSV converter transforms structured XML data into comma-separated values format. Perfect for importing XML data into Excel, Google Sheets, databases, and data analysis tools. Convert complex XML structures into simple, tabular CSV format in seconds.",
-            "what_title": "[Pending Translation] What is XML to CSV Conversion?",
-            "what_desc": "[Pending Translation] XML to CSV conversion transforms structured eXtensible Markup Language data into comma-separated values format. While XML is great for complex data structures and APIs, CSV is simpler and universally supported by spreadsheet applications, making it ideal for data analysis, reporting, and import\/export operations.",
-            "features_title": "[Pending Translation] Features",
-            "features": {
-                "fast": {
-                    "title": "[Pending Translation] Lightning Fast",
-                    "desc": "[Pending Translation] Convert XML to CSV instantly with optimized parsing"
-                },
-                "secure": {
-                    "title": "[Pending Translation] 100% Secure",
-                    "desc": "[Pending Translation] All processing happens locally - your data stays private"
-                },
-                "copy": {
-                    "title": "[Pending Translation] Quick Copy",
-                    "desc": "[Pending Translation] Copy CSV output to clipboard with one click"
-                },
-                "smart": {
-                    "title": "[Pending Translation] Smart Parsing",
-                    "desc": "[Pending Translation] Automatically extracts data from XML row elements"
-                },
-                "free": {
-                    "title": "[Pending Translation] Completely Free",
-                    "desc": "[Pending Translation] No limits, no registration, free forever"
-                },
-                "excel": {
-                    "title": "[Pending Translation] Excel Ready",
-                    "desc": "[Pending Translation] Output works perfectly in Excel and Google Sheets"
-                }
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "analysis": {
-                    "title": "[Pending Translation] Data Analysis",
-                    "desc": "[Pending Translation] Convert XML reports and data exports to CSV for analysis in Excel, Google Sheets, or BI tools."
-                },
-                "migration": {
-                    "title": "[Pending Translation] System Migration",
-                    "desc": "[Pending Translation] Transform XML data from legacy systems to CSV for import into modern databases and applications."
-                },
-                "reporting": {
-                    "title": "[Pending Translation] Reporting",
-                    "desc": "[Pending Translation] Convert XML API responses to CSV for creating reports and dashboards."
-                },
-                "db": {
-                    "title": "[Pending Translation] Database Import",
-                    "desc": "[Pending Translation] Transform XML exports to CSV for bulk import into SQL databases."
-                },
-                "email": {
-                    "title": "[Pending Translation] Email Lists",
-                    "desc": "[Pending Translation] Convert XML contact data to CSV for email marketing platforms."
-                },
-                "cleaning": {
-                    "title": "[Pending Translation] Data Cleaning",
-                    "desc": "[Pending Translation] Transform XML to CSV for easier data cleaning and manipulation in spreadsheets."
-                }
-            },
-            "how_to_title": "[Pending Translation] How to Convert XML to CSV",
-            "how_to": {
-                "step1": {
-                    "title": "[Pending Translation] Paste Your XML Data",
-                    "desc": "[Pending Translation] Copy XML data from your source and paste it into the left input field."
-                },
-                "step2": {
-                    "title": "[Pending Translation] Click Convert",
-                    "desc": "[Pending Translation] Press \"Convert to CSV\" to transform your XML into CSV format."
-                },
-                "step3": {
-                    "title": "[Pending Translation] Copy and Use",
-                    "desc": "[Pending Translation] The CSV output appears on the right. Click \"Copy\" to paste it into Excel or any application."
-                }
-            },
-            "example_title": "[Pending Translation] Conversion Example",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is this converter free?",
-                "a1": "[Pending Translation] Yes, our XML to CSV converter is completely free to use.",
-                "q2": "[Pending Translation] Is my data safe?",
-                "a2": "[Pending Translation] Yes, all processing happens in your browser. Your data is never sent to our servers.",
-                "q3": "[Pending Translation] Does it support large XML files?",
-                "a3": "[Pending Translation] Yes, it can handle large XML files, though very large files may take a moment to process.",
-                "q4": "[Pending Translation] How are attributes handled?",
-                "a4": "[Pending Translation] Currently, the tool focuses on tag content. Attributes can be included in future updates."
-            },
-            "best_practices_title": "[Pending Translation] Best Practices",
-            "best_practices": [
-                {
-                    "title": "[Pending Translation] Well-formed XML",
-                    "desc": "[Pending Translation] Ensure your XML is well-formed and contains repeating <row> elements for best results."
-                },
-                {
-                    "title": "[Pending Translation] Browser Side",
-                    "desc": "[Pending Translation] Since it runs in your browser, your data stays private and secure."
-                },
-                {
-                    "title": "[Pending Translation] Backup Data",
-                    "desc": "[Pending Translation] Always keep a backup of your original XML data before conversion."
-                }
-            ]
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter XML data",
-            "error_no_row": "[Pending Translation] No <row> elements found in XML",
-            "success_convert": "[Pending Translation] ✓ XML converted to CSV successfully",
-            "error_process": "[Pending Translation] ✗ Error: ",
-            "error_no_copy": "[Pending Translation] No output to copy",
-            "success_copy": "[Pending Translation] ✓ Copied to clipboard"
+            "btn_convert": "Muunna CSV-muotoon"
         }
     },
     "xml-to-json": {
         "meta": {
-            "title": "[Pending Translation] XML to JSON Converter - Free Online Tool",
-            "description": "[Pending Translation] Free online xml to json converter tool. Fast, secure and easy to use.",
-            "subtitle": "[Pending Translation] The best xml to json converter for developers and IT professionals",
-            "h1": "[Pending Translation] XML to JSON Converter"
+            "title": "XML-JSON-muunnin",
+            "h1": "XML-JSON-muunnin",
+            "subtitle": "Muunna XML-dokumentit JSON-muotoon välittömästi"
         },
         "editor": {
-            "btn_convert": "[Pending Translation] Convert to JSON",
-            "btn_copy": "[Pending Translation] Copy JSON",
-            "btn_download": "[Pending Translation] Download",
-            "btn_example": "[Pending Translation] Load Example",
-            "btn_clear": "[Pending Translation] Clear",
-            "label_input": "[Pending Translation] XML Input",
-            "ph_input": "[Pending Translation] <' . '?x' . 'ml version=\"1.0\"?>n<root>n  <item>Your XML here...<\/item>n<\/root>",
-            "label_output": "[Pending Translation] JSON Output",
-            "ph_output": "[Pending Translation] Converted JSON will appear here..."
-        },
-        "content": {
-            "h2": "[Pending Translation] Free XML to JSON Converter Online",
-            "p1": "[Pending Translation] Transform XML data into JSON format instantly with our powerful, free online XML to JSON converter. Perfect for developers, data analysts, and anyone working with API integrations, data migration, or modern web applications.",
-            "p2": "[Pending Translation] XML (eXtensible Markup Language) has been a standard for data exchange for decades, but modern applications increasingly prefer JSON (JavaScript Object Notation) for its simplicity and native JavaScript support. Our converter bridges this gap, allowing you to seamlessly transform XML documents into clean, readable JSON format.",
-            "p3": "[Pending Translation] Whether you're migrating legacy systems, integrating with RESTful APIs, or simply need to convert configuration files, our tool handles it all with precision and speed. No installation required, no registration needed – just paste your XML and get instant results.",
-            "features_title": "[Pending Translation] Powerful Features",
-            "features": {
-                "fast": {
-                    "title": "[Pending Translation] Lightning Fast",
-                    "desc": "[Pending Translation] Instant conversion with real-time processing. No waiting, no delays."
-                },
-                "secure": {
-                    "title": "[Pending Translation] 100% Secure",
-                    "desc": "[Pending Translation] All conversion happens in your browser. Your data never leaves your device."
-                },
-                "attributes": {
-                    "title": "[Pending Translation] Attribute Handling",
-                    "desc": "[Pending Translation] Preserves XML attributes and converts them properly to JSON structure."
-                },
-                "nested": {
-                    "title": "[Pending Translation] Nested Structure",
-                    "desc": "[Pending Translation] Maintains complex hierarchical data structures during conversion."
-                },
-                "pretty": {
-                    "title": "[Pending Translation] Pretty Formatting",
-                    "desc": "[Pending Translation] Clean, indented JSON output that's easy to read and understand."
-                },
-                "validation": {
-                    "title": "[Pending Translation] Error Validation",
-                    "desc": "[Pending Translation] Detects and reports invalid XML syntax with helpful error messages."
-                }
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "api": {
-                    "title": "[Pending Translation] API Integration",
-                    "desc": "[Pending Translation] Convert XML API responses to JSON for modern web applications and RESTful services."
-                },
-                "migration": {
-                    "title": "[Pending Translation] Data Migration",
-                    "desc": "[Pending Translation] Transform XML databases and exports to JSON for NoSQL systems like MongoDB."
-                },
-                "config": {
-                    "title": "[Pending Translation] Configuration Files",
-                    "desc": "[Pending Translation] Convert XML configuration files to JSON for modern applications and build tools."
-                },
-                "soap": {
-                    "title": "[Pending Translation] SOAP to REST",
-                    "desc": "[Pending Translation] Transform SOAP XML responses to JSON for RESTful services."
-                },
-                "rss": {
-                    "title": "[Pending Translation] RSS Feeds",
-                    "desc": "[Pending Translation] Convert RSS and Atom feeds (XML format) to JSON for parsing in JS apps."
-                },
-                "analysis": {
-                    "title": "[Pending Translation] Data Analysis",
-                    "desc": "[Pending Translation] Convert XML data exports to JSON for easier analysis with JavaScript libraries."
-                }
-            },
-            "how_to_title": "[Pending Translation] How XML to JSON Conversion Works",
-            "how_to_desc": "[Pending Translation] Our XML to JSON converter uses advanced parsing algorithms to accurately transform XML documents into JSON format.",
-            "steps": [
-                {
-                    "title": "[Pending Translation] Paste Your XML",
-                    "desc": "[Pending Translation] Copy and paste your XML code into the input field above."
-                },
-                {
-                    "title": "[Pending Translation] Click Convert",
-                    "desc": "[Pending Translation] Press the \"Convert to JSON\" button to start the transformation."
-                },
-                {
-                    "title": "[Pending Translation] Copy and Use",
-                    "desc": "[Pending Translation] Review the beautifully formatted JSON results and use the copy button for easy export."
-                }
-            ],
-            "example_title": "[Pending Translation] Example Conversion",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is this converter free to use?",
-                "a1": "[Pending Translation] Yes, our XML to JSON converter is 100% free with no hidden costs or registration required.",
-                "q2": "[Pending Translation] Is my data secure?",
-                "a2": "[Pending Translation] Absolutely. All processing happens locally in your browser, meaning your data never leaves your device.",
-                "q3": "[Pending Translation] Does it support nested structures?",
-                "a3": "[Pending Translation] Yes, it correctly handles complex nested XML elements and preserves their hierarchical relationships.",
-                "q4": "[Pending Translation] How are attributes handled?",
-                "a4": "[Pending Translation] XML attributes are converted into JSON properties, typically prefixed with an underscore for clarity."
-            },
-            "tips_title": "[Pending Translation] Tips & Best Practices",
-            "tips": [
-                {
-                    "title": "[Pending Translation] Validate Your XML",
-                    "desc": "[Pending Translation] Ensure your XML is well-formed before conversion to avoid processing errors."
-                },
-                {
-                    "title": "[Pending Translation] Use Pretty Printing",
-                    "desc": "[Pending Translation] Our tool automatically formats the JSON output for maximum readability."
-                },
-                {
-                    "title": "[Pending Translation] Browser Privacy",
-                    "desc": "[Pending Translation] Since it runs client-side, you can even use it offline once the page is loaded."
-                }
-            ]
-        },
-        "js": {
-            "error_empty": "[Pending Translation] Please enter some XML data to convert.",
-            "error_syntax": "[Pending Translation] \\n\\nPlease check your XML syntax.",
-            "error_process": "[Pending Translation] Error converting XML: ",
-            "error_no_copy": "[Pending Translation] No JSON to copy. Please convert XML first.",
-            "success_copy": "[Pending Translation] Copied!",
-            "error_no_download": "[Pending Translation] No JSON to download. Please convert XML first."
+            "btn_convert": "Muunna JSON-muotoon"
         }
     },
     "yaml-to-json": {
         "meta": {
-            "title": "[Pending Translation] YAML to JSON Converter - Free Online Tool",
-            "description": "[Pending Translation] Convert YAML configuration files to JSON format instantly with our free online YAML to JSON converter. Perfect for developers working with configuration files.",
-            "h1": "[Pending Translation] YAML to JSON Converter",
-            "subtitle": "[Pending Translation] Convert YAML configuration files to JSON format instantly"
+            "title": "YAML-JSON-muunnin",
+            "h1": "YAML-JSON-muunnin",
+            "subtitle": "Muunna YAML-konfiguraatiot JSON-muotoon välittömästi"
         },
         "editor": {
-            "btn_convert": "[Pending Translation] Convert",
-            "btn_copy": "[Pending Translation] Copy JSON",
-            "btn_download": "[Pending Translation] Download",
-            "btn_example": "[Pending Translation] Example",
-            "btn_clear": "[Pending Translation] Clear",
-            "label_input": "[Pending Translation] YAML Input",
-            "ph_input": "[Pending Translation] Paste your YAML data here...",
-            "label_output": "[Pending Translation] JSON Output",
-            "ph_output": "[Pending Translation] Converted JSON will appear here..."
-        },
-        "content": {
-            "h2": "[Pending Translation] About YAML to JSON Converter",
-            "p1": "[Pending Translation] Convert YAML configuration files to JSON format instantly with our free online YAML to JSON converter. Perfect for developers working with configuration files, CI\/CD pipelines, and data transformation.",
-            "features_title": "[Pending Translation] Key Features",
-            "features": {
-                "syntax": {
-                    "title": "[Pending Translation] Syntax Validation",
-                    "desc": "[Pending Translation] Detects YAML syntax errors"
-                },
-                "nested": {
-                    "title": "[Pending Translation] Nested Structure",
-                    "desc": "[Pending Translation] Preserves complex hierarchies"
-                },
-                "array": {
-                    "title": "[Pending Translation] Array Support",
-                    "desc": "[Pending Translation] Handles YAML lists and sequences"
-                },
-                "pretty": {
-                    "title": "[Pending Translation] Pretty Formatting",
-                    "desc": "[Pending Translation] Clean, readable JSON output"
-                },
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] Real-time transformation"
-                },
-                "privacy": {
-                    "title": "[Pending Translation] Privacy First",
-                    "desc": "[Pending Translation] All processing in browser"
-                }
-            },
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "config": {
-                    "title": "[Pending Translation] Config Files",
-                    "desc": "[Pending Translation] Convert YAML configuration files to JSON for applications."
-                },
-                "pipeline": {
-                    "title": "[Pending Translation] CI\/CD Pipelines",
-                    "desc": "[Pending Translation] Transform YAML pipeline configs to JSON format."
-                },
-                "k8s": {
-                    "title": "[Pending Translation] Kubernetes",
-                    "desc": "[Pending Translation] Convert Kubernetes YAML manifests to JSON."
-                },
-                "docker": {
-                    "title": "[Pending Translation] Docker Compose",
-                    "desc": "[Pending Translation] Transform Docker Compose YAML to JSON."
-                }
-            },
-            "how_to_title": "[Pending Translation] How to Use YAML to JSON Converter",
-            "how_to_steps": [
-                {
-                    "title": "[Pending Translation] Paste YAML",
-                    "desc": "[Pending Translation] Copy and paste your YAML code into the input area."
-                },
-                {
-                    "title": "[Pending Translation] Automatic Conversion",
-                    "desc": "[Pending Translation] The tool converts YAML to JSON in real-time as you type."
-                },
-                {
-                    "title": "[Pending Translation] Copy or Download",
-                    "desc": "[Pending Translation] Copy the resulting JSON or download it as a .json file."
-                }
-            ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Is it free?",
-                "a1": "[Pending Translation] Yes, our YAML to JSON converter is 100% free.",
-                "q2": "[Pending Translation] Is my data secure?",
-                "a2": "[Pending Translation] Yes, all conversion happens in your browser. We don't store your data."
-            }
-        },
-        "js": {
-            "error_process": "[Pending Translation] Error converting YAML: ",
-            "error_no_copy": "[Pending Translation] No JSON to copy. Please convert YAML first.",
-            "success_copy": "[Pending Translation] JSON copied to clipboard!",
-            "error_no_download": "[Pending Translation] No JSON to download. Please convert YAML first."
+            "btn_convert": "Muunna",
+            "btn_copy": "Kopioi JSON"
         }
     }
 }
