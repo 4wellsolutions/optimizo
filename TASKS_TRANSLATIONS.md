@@ -18,7 +18,7 @@
 15. [x] Japanese (ja) - **100% Completed**
 16. [x] Korean (ko) - **100% Completed**
 17. [x] Finnish (fi) - **100% Completed**
-18. [ ] Norwegian (no) - Pending
+18. [x] Norwegian (no) - **100% Completed**
 19. [ ] Czech (cs) - Pending
 20. [ ] Romanian (ro) - Pending
 21. [ ] Indonesian (id) - Pending
@@ -175,6 +175,19 @@ For each incomplete language, the following files must be translated:
 - [x] `text.json`
 
 ## Finnish (fi) Progress
+- [x] `converters.json` (100% Complete)
+- [x] `youtube.json` (100% Complete)
+- [x] `text.json` (100% Complete)
+- [x] `time.json` (100% Complete)
+- [x] `utility.json` (100% Complete)
+- [x] `spreadsheet.json` (100% Complete)
+- [x] `document.json` (100% Complete)
+- [x] `network.json` (100% Complete)
+- [x] `image.json` (100% Complete)
+- [x] `seo.json` (100% Complete)
+- [x] `development.json` (100% Complete)
+
+## Norwegian (no) Progress
 - [x] `converters.json` (100% Complete)
 - [x] `youtube.json` (100% Complete)
 - [x] `text.json` (100% Complete)
