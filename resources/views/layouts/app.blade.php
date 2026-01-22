@@ -6,38 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    {{-- hreflang tags for SEO --}}
     @php
-        $currentPath = request()->path();
+        $currentLocale = app()->getLocale();
+        $segments = request()->segments();
 
-        // Remove 'ru' or 'ru/' prefix if present
-        if (str_starts_with($currentPath, 'ru/')) {
-            $pathWithoutLocale = substr($currentPath, 3);
-        } elseif ($currentPath === 'ru') {
-            $pathWithoutLocale = '';
-        } else {
-            $pathWithoutLocale = $currentPath;
+        // If the current locale is not English (default), the first segment is the locale code
+        // We strip it to get the base path for other language alternates
+        if ($currentLocale !== 'en' && !empty($segments) && $segments[0] === $currentLocale) {
+            array_shift($segments);
         }
 
-        // Handle root path case to prevent double slashes
-        if ($pathWithoutLocale === '/') {
-            $pathWithoutLocale = '';
-        }
-
-        // Build full URLs
+        $pathWithoutLocale = implode('/', $segments);
         $baseUrl = rtrim(url('/'), '/');
 
-        if (empty($pathWithoutLocale)) {
-            $enUrl = $baseUrl;
-            $ruUrl = $baseUrl . '/ru';
-        } else {
-            $enUrl = $baseUrl . '/' . $pathWithoutLocale;
-            $ruUrl = $baseUrl . '/ru/' . $pathWithoutLocale;
-        }
+        // English/Default URL
+        $enUrl = $baseUrl . ($pathWithoutLocale ? '/' . $pathWithoutLocale : '');
     @endphp
 
-    <link rel="alternate" hreflang="en" href="{{ $enUrl }}" />
-    <link rel="alternate" hreflang="ru" href="{{ $ruUrl }}" />
+    @foreach ($availableLanguages as $lang)
+        @php
+            $langUrl = $baseUrl;
+            if ($lang->code !== 'en') {
+                $langUrl .= '/' . $lang->code;
+            }
+            if ($pathWithoutLocale) {
+                $langUrl .= '/' . $pathWithoutLocale;
+            }
+        @endphp
+        <link rel="alternate" hreflang="{{ $lang->code }}" href="{{ $langUrl }}" />
+    @endforeach
     <link rel="alternate" hreflang="x-default" href="{{ $enUrl }}" />
     <title>@yield('title', config('app.name', 'Optimizo'))</title>
     <meta name="description" content="@yield('meta_description', __('common.meta_description_default'))">
