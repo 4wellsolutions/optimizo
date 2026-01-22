@@ -110,13 +110,91 @@
                 "privacy": {
                     "title": "Privasi Terjaga",
                     "desc": "Semua pemrosesan dilakukan di browser Anda"
+                },
+                "bulk": {
+                    "title": "Bulk Decoding",
+                    "desc": "Decode multiple words at once"
+                },
+                "alphanum": {
+                    "title": "Letters & Numbers",
+                    "desc": "Decodes A-Z and 0-9"
+                },
+                "free": {
+                    "title": "100% Free",
+                    "desc": "No limits or registration required"
                 }
+            },
+            "uses_title": "🎯 Common Use Cases",
+            "uses": {
+                "learn": {
+                    "title": "📚 Learning Morse Code",
+                    "desc": "Practice decoding Morse code to improve your skills"
+                },
+                "decode": {
+                    "title": "🔓 Decoding Messages",
+                    "desc": "Decode Morse code messages from friends or puzzles"
+                },
+                "games": {
+                    "title": "🎮 Gaming & Puzzles",
+                    "desc": "Solve Morse code puzzles in games and escape rooms"
+                },
+                "radio": {
+                    "title": "📡 Ham Radio",
+                    "desc": "Decode amateur radio transmissions and practice CW"
+                },
+                "edu": {
+                    "title": "🎓 Education",
+                    "desc": "Teach students about communication and encoding systems"
+                },
+                "emergency": {
+                    "title": "🚨 Emergency Signals",
+                    "desc": "Decode distress signals and emergency communications"
+                }
+            },
+            "how_title": "📚 How to Use",
+            "how_steps": {
+                "1": {
+                    "title": "Enter Morse Code:",
+                    "desc": "Type dots (.) and dashes (-) separated by spaces"
+                },
+                "2": {
+                    "title": "Click Decode:",
+                    "desc": "Press \"Decode to Text\" button"
+                },
+                "3": {
+                    "title": "Review Output:",
+                    "desc": "Check the decoded text result"
+                },
+                "4": {
+                    "title": "Copy Result:",
+                    "desc": "Click \"Copy\" to copy to clipboard"
+                },
+                "5": {
+                    "title": "Use Text:",
+                    "desc": "Use the decoded message"
+                }
+            },
+            "examples_title": "",
+            "samples": [],
+            "faq_title": "❓ Frequently Asked Questions",
+            "faq": {
+                "q1": "How do I format Morse code input?",
+                "a1": "Separate each letter with a space. Use / for word spaces. Example: \"... --- ...\" for SOS.",
+                "q2": "What if I make a mistake?",
+                "a2": "Invalid Morse code patterns will be skipped. Make sure dots and dashes are separated by spaces.",
+                "q3": "Can I decode numbers?",
+                "a3": "Yes! The tool decodes numbers 0-9 from their Morse code patterns.",
+                "q4": "How do I separate words?",
+                "a4": "Use a forward slash (/) to separate words in Morse code.",
+                "q5": "Is this tool free?",
+                "a5": "Yes! Completely free with no limits. All processing happens in your browser for privacy."
             }
         },
         "js": {
             "error_empty": "Harap masukkan kode Morse untuk diterjemahkan",
             "success_decode": "Kode Morse berhasil diterjemahkan!",
-            "success_copy": "Disalin ke papan klip!"
+            "success_copy": "Disalin ke papan klip!",
+            "error_copy": "Nothing to copy! Please decode some Morse code first."
         }
     },
     "text-reverser": {
@@ -136,12 +214,99 @@
             "ph_output": "aidnuD olaH"
         },
         "content": {
-            "p1": "Balikkan teks Anda secara instan. Alat ini memutar teks karakter demi karakter, menciptakan versi cermin."
+            "p1": "Balikkan teks Anda secara instan. Alat ini memutar teks karakter demi karakter, menciptakan versi cermin.",
+            "features": {
+                "char": {
+                    "title": "Character Reversal",
+                    "desc": "Reverses text character by character"
+                },
+                "instant": {
+                    "title": "Instant Results",
+                    "desc": "Reverse text in milliseconds"
+                },
+                "privacy": {
+                    "title": "Privacy Protected",
+                    "desc": "All processing happens in your browser"
+                },
+                "bulk": {
+                    "title": "Bulk Processing",
+                    "desc": "Reverse multiple lines at once"
+                },
+                "formatting": {
+                    "title": "Preserves Formatting",
+                    "desc": "Maintains spaces and special characters"
+                },
+                "free": {
+                    "title": "100% Free",
+                    "desc": "No limits or registration required"
+                }
+            },
+            "uses_title": "Common Use Cases",
+            "uses": {
+                "puzzles": {
+                    "title": "Puzzles & Games",
+                    "desc": "Create word puzzles, riddles, and brain teasers with reversed text"
+                },
+                "encoding": {
+                    "title": "Simple Encoding",
+                    "desc": "Create basic encoded messages for fun or simple obfuscation"
+                },
+                "palindrome": {
+                    "title": "Palindrome Testing",
+                    "desc": "Test if words or phrases are palindromes by comparing with reversed version"
+                },
+                "creative": {
+                    "title": "Creative Writing",
+                    "desc": "Add artistic flair to poetry and creative content"
+                },
+                "social": {
+                    "title": "Social Media",
+                    "desc": "Create unique posts and comments with reversed text"
+                },
+                "testing": {
+                    "title": "Testing",
+                    "desc": "Test string manipulation functions in programming"
+                }
+            },
+            "how_to": {
+                "title": "How to Use",
+                "step1": "Enter Text",
+                "step1_desc": "Type or paste the text you want to reverse",
+                "step2": "Click Reverse",
+                "step2_desc": "Press \"Reverse Text\" button",
+                "step3": "Review Output",
+                "step3_desc": "Check the reversed text result",
+                "step4": "Copy Result",
+                "step4_desc": "Click \"Copy\" to copy to clipboard",
+                "step5": "Use Anywhere",
+                "step5_desc": "Paste the reversed text wherever needed"
+            },
+            "examples_title": "Reversal Examples",
+            "examples": {
+                "simple": "Simple Text:",
+                "phrases": "Phrases:",
+                "palindromes": "Palindromes:",
+                "numbers": "Numbers:"
+            },
+            "faq_title": "Frequently Asked Questions",
+            "faq": {
+                "q1": "How does text reversal work?",
+                "a1": "The tool reverses the order of characters in your text. The last character becomes first, second-to-last becomes second, and so on.",
+                "q2": "Does it preserve spaces?",
+                "a2": "Yes! All characters including spaces, punctuation, and special characters are preserved and reversed in order.",
+                "q3": "Can I reverse it back?",
+                "a3": "Yes! Simply paste the reversed text back into the input and reverse it again to get the original text.",
+                "q4": "What are palindromes?",
+                "a4": "Palindromes are words or phrases that read the same forwards and backwards, like \"racecar\" or \"madam\". Use this tool to test them!",
+                "q5": "Is this tool free?",
+                "a5": "Yes! Completely free with no limits. All processing happens in your browser for privacy and speed."
+            }
         },
         "js": {
             "error_empty": "Harap masukkan teks untuk dibalik",
             "success_reverse": "Teks berhasil dibalik!",
-            "success_copy": "Disalin!"
+            "success_copy": "Disalin!",
+            "error_no_copy": "Nothing to copy! Please reverse some text first."
         }
     },
     "text-to-morse-converter": {
@@ -163,7 +328,97 @@
         "js": {
             "error_empty": "Harap masukkan teks untuk diubah",
             "success_convert": "Berhasil diubah ke kode Morse!",
-            "success_copy": "Disalin!"
+            "success_copy": "Disalin!",
+            "error_no_copy": "Nothing to copy! Please convert some text first."
+        },
+        "content": {
+            "p1": "Convert text to Morse code instantly with our free online converter. Morse code uses dots (.) and dashes (-) to represent letters and numbers. Perfect for learning Morse code, emergency communication practice, or creating encoded messages.",
+            "features": {
+                "standard": {
+                    "title": "Standard Morse Code",
+                    "desc": "Uses international Morse code standard"
+                },
+                "instant": {
+                    "title": "Instant Encoding",
+                    "desc": "Convert to Morse code in milliseconds"
+                },
+                "privacy": {
+                    "title": "Privacy Protected",
+                    "desc": "All processing happens in your browser"
+                },
+                "bulk": {
+                    "title": "Bulk Processing",
+                    "desc": "Convert multiple words at once"
+                },
+                "alphanumeric": {
+                    "title": "Letters & Numbers",
+                    "desc": "Supports A-Z and 0-9"
+                },
+                "free": {
+                    "title": "100% Free",
+                    "desc": "No limits or registration required"
+                }
+            },
+            "uses_title": "Common Use Cases",
+            "uses": {
+                "learning": {
+                    "title": "Learning Morse Code",
+                    "desc": "Practice and learn Morse code by converting familiar words and phrases"
+                },
+                "emergency": {
+                    "title": "Emergency Practice",
+                    "desc": "Learn SOS and other emergency signals in Morse code"
+                },
+                "gaming": {
+                    "title": "Gaming & Puzzles",
+                    "desc": "Create encoded messages for games and escape rooms"
+                },
+                "radio": {
+                    "title": "Ham Radio",
+                    "desc": "Practice for amateur radio licensing and communication"
+                },
+                "edu": {
+                    "title": "Education",
+                    "desc": "Teach students about communication history and encoding"
+                },
+                "secret": {
+                    "title": "Secret Messages",
+                    "desc": "Create fun encoded messages for friends"
+                }
+            },
+            "how_to": {
+                "title": "How to Use",
+                "step1": "Enter Text",
+                "step1_desc": "Type the text you want to convert",
+                "step2": "Click Convert",
+                "step2_desc": "Press \"Convert to Morse Code\"",
+                "step3": "Review Output",
+                "step3_desc": "Check the Morse code result",
+                "step4": "Copy Result",
+                "step4_desc": "Click \"Copy\" to copy to clipboard",
+                "step5": "Use Morse Code",
+                "step5_desc": "Share or practice with the encoded message"
+            },
+            "examples_title": "Conversion Examples",
+            "examples": {
+                "sos": "SOS Signal:",
+                "word": "Simple Word:",
+                "numbers": "Numbers:",
+                "phrase": "Phrase:"
+            },
+            "faq_title": "Frequently Asked Questions",
+            "faq": {
+                "q1": "What is Morse code?",
+                "a1": "Morse code is a method of encoding text using dots (.) and dashes (-) to represent letters and numbers. It was invented in the 1830s for telegraph communication.",
+                "q2": "What does SOS mean in Morse code?",
+                "a2": "SOS is ... --- ... (three dots, three dashes, three dots). It's the international distress signal.",
+                "q3": "Can I convert numbers?",
+                "a3": "Yes! The tool supports numbers 0-9, each with its own Morse code pattern.",
+                "q4": "Is Morse code still used today?",
+                "a4": "Yes! It's still used in aviation, maritime communication, amateur radio, and as an accessibility tool.",
+                "q5": "Is this tool free?",
+                "a5": "Yes! Completely free with no limits. All processing happens in your browser for privacy."
+            }
         }
     },
     "word-counter": {
@@ -187,6 +442,27 @@
             "short_sentences": "Kalimat Pendek",
             "chars_no_spaces": "Karakter (Tanpa Spasi)",
             "avg_word_length": "Rata-rata Panjang Kata"
+        },
+        "content": {
+            "main_title": "",
+            "main_description": "",
+            "intro": "",
+            "features_title": "Features",
+            "feature1_title": "",
+            "feature1_desc": "",
+            "feature2_title": "",
+            "feature2_desc": "",
+            "feature3_title": "",
+            "feature3_desc": "",
+            "feature4_title": "",
+            "feature4_desc": "",
+            "faq_title": "",
+            "faq1_q": "",
+            "faq1_a": "",
+            "faq2_q": "",
+            "faq2_a": "",
+            "faq3_q": "",
+            "faq3_a": ""
         }
     }
 }

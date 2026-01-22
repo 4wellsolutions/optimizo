@@ -20,9 +20,9 @@
 17. [x] Finnish (fi) - **100% Completed**
 18. [x] Norwegian (no) - **100% Completed**
 19. [x] Czech (cs) - **100% Completed**
-20. [ ] Romanian (ro) - Pending
-21. [ ] Indonesian (id) - Pending
-22. [ ] Vietnamese (vi) - Pending
+20. [x] Romanian (ro) - **100% Completed**
+21. [x] Indonesian (id) - **100% Completed**
+22. [x] Vietnamese (vi) - **100% Completed**
 
 ## Tasks Per Language
 For each incomplete language, the following files must be translated:
@@ -199,6 +199,15 @@ For each incomplete language, the following files must be translated:
 - [x] `image.json` (100% Complete)
 - [x] `seo.json` (100% Complete)
 - [x] `development.json` (100% Complete)
-
-
-
+## Romanian (ro) Progress
+- [x] `converters.json` (100% Complete)
+- [x] `youtube.json` (100% Complete)
+- [x] `text.json` (100% Complete)
+- [x] `time.json` (100% Complete)
+- [x] `utility.json` (100% Complete)
+- [x] `spreadsheet.json` (100% Complete)
+- [x] `document.json` (100% Complete)
+- [x] `network.json` (100% Complete)
+- [x] `image.json` (100% Complete)
+- [x] `seo.json` (100% Complete)
+- [x] `development.json` (100% Complete)

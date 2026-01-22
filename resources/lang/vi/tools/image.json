@@ -1,850 +1,850 @@
 {
-    "base64-to-image-converter": {
-        "meta": {
-            "title": "[Pending Translation] Base64 to Image Converter - Decode Base64 Output | Optimizo",
-            "description": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF). Free online decoder and visualizer.",
-            "h1": "[Pending Translation] Decode Base64 to Image",
-            "subtitle": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF) instantly"
-        },
-        "input": {
-            "title": "[Pending Translation] Paste Base64 String",
-            "desc": "[Pending Translation] Paste your code below to visualize the image",
-            "placeholder": "[Pending Translation] data:image\/png;base64,iVBORw0KGgo...",
-            "btn_decode": "[Pending Translation] Decode Image"
-        },
-        "result": {
-            "image_alt": "[Pending Translation] Decoded Image",
-            "success": "[Pending Translation] Image Decoded Successfully",
-            "btn_download": "[Pending Translation] Download Image",
-            "btn_clear": "[Pending Translation] Clear Pattern"
-        },
-        "content": {
-            "title": "[Pending Translation] Decode Base64 to Image",
-            "p1": "[Pending Translation] Found a long string of random characters starting with <code>data:image\/...<\/code> and don't know what it is? It's likely a Base64-encoded image.",
-            "p2": "[Pending Translation] Our <strong>Base64 to Image Decoder<\/strong> converts that text string back into a visible image file (PNG, JPG, GIF, etc.) that you can view and download to your computer.",
-            "features": {
-                "preview": {
-                    "title": "[Pending Translation] Instant Preview",
-                    "desc": "[Pending Translation] See the image immediately. We parse the binary data and render it on your screen."
-                },
-                "auto": {
-                    "title": "[Pending Translation] Auto-Detection",
-                    "desc": "[Pending Translation] We automatically detect the file format (PNG, JPEG, GIF) from the header of the Base64 string."
-                },
-                "download": {
-                    "title": "[Pending Translation] Download File",
-                    "desc": "[Pending Translation] Save the decoded result as a real image file to your hard drive with one click."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Decode?",
-                "list": [
-                    "[Pending Translation] Paste your Base64 string into the textarea.",
-                    "[Pending Translation] We instantly attempt to read the string.",
-                    "[Pending Translation] If valid, the image appears on the left.",
-                    "[Pending Translation] Click \"Download Image\" to save it."
-                ]
-            },
-            "use_cases": {
-                "title": "[Pending Translation] Common Use Cases",
-                "list": [
-                    "[Pending Translation] Debugging: Checking what image data is being sent in API responses or stored in databases.",
-                    "[Pending Translation] Recovery: Extracting images embedded in CSS files or HTML templates.",
-                    "[Pending Translation] Verification: Ensuring a Base64 string is not corrupted."
-                ]
-            }
-        },
-        "js": {
-            "input_required": "[Pending Translation] Please paste a Base64 string first.",
-            "invalid_error": "[Pending Translation] Invalid Base64 string or unsupported image format."
-        }
-    },
-    "heic-to-jpg-converter": {
-        "meta": {
-            "title": "[Pending Translation] HEIC to JPG Converter - Convert iPhone Photos Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format. Free, private, client-side converter.",
-            "h1": "[Pending Translation] HEIC to JPG Converter",
-            "subtitle": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload HEIC File",
-            "desc": "[Pending Translation] Drag & drop your .heic or .heif file here",
-            "drop_title": "[Pending Translation] Drop HEIC file here",
-            "drop_desc": "[Pending Translation] Supports HEIC\/HEIF (Max 20MB)"
-        },
-        "loading": {
-            "title": "[Pending Translation] Processing HEIC file...",
-            "desc": "[Pending Translation] Larger files may take a few seconds."
-        },
-        "result": {
-            "image_alt": "[Pending Translation] Preview",
-            "converted_to": "[Pending Translation] Converted to:",
-            "btn_download": "[Pending Translation] Download JPG Image"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert HEIC to JPG Instantly",
-            "p1": "[Pending Translation] Apple's High Efficiency Image Format (HEIC) is great for saving space on your iPhone, but it can be a nightmare to open on Windows, Android, or older software. Our <strong>HEIC to JPG Converter<\/strong> solves this problem instantly.",
-            "p2": "[Pending Translation] We use advanced local processing capabilities to convert your photos without ever uploading them to a cloud server. This is the <strong>safest way<\/strong> to convert personal photos.",
-            "features": {
-                "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Your personal photos stay on your device. We use client-side logic for zero-risk conversion."
-                },
-                "compatibility": {
-                    "title": "[Pending Translation] Broad Compatibility",
-                    "desc": "[Pending Translation] Convert HEIC and HEIF files from any iOS version (iPhone\/iPad) to universally accepted JPGs."
-                },
-                "fast": {
-                    "title": "[Pending Translation] Fast & Free",
-                    "desc": "[Pending Translation] No software installation needed. Just drag, drop, and convert in seconds."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert HEIC to JPG?",
-                "list": [
-                    "[Pending Translation] Drag your .heic or .heif file into the upload zone.",
-                    "[Pending Translation] The tool will automatically read and convert the file using advanced browser libraries.",
-                    "[Pending Translation] See a preview of your converted JPG image immediately.",
-                    "[Pending Translation] Click the \"Download JPG Image\" button to save it to your computer."
-                ]
-            },
-            "details": {
-                "title": "[Pending Translation] Technical Details",
-                "p1": "[Pending Translation] HEIC (High Efficiency Image Container) uses modern compression methods to keep file sizes small. However, Windows and Android often struggle to open them.",
-                "p2": "[Pending Translation] Our tool decodes the HEIC data and re-encodes it as a standardized JPEG image with 90% quality retention, ensuring your photos look great while being accessible everywhere."
-            },
-            "faq": {
-                "title": "[Pending Translation] Common Questions",
-                "q1": "[Pending Translation] Can I convert iPhone Live Photos?",
-                "a1": "[Pending Translation] You can convert the still image part of the Live Photo if you transfer the .HEIC file to your computer first.",
-                "q2": "[Pending Translation] Is quality lost during conversion?",
-                "a2": "[Pending Translation] We use a high-quality setting (0.9 out of 1.0) to ensure minimal visual difference. JPG is a lossy format, but the difference is usually negligible to the human eye."
-            }
-        },
-        "js": {
-            "error": "[Pending Translation] Error converting HEIC file: "
-        }
-    },
-    "ico-converter": {
-        "meta": {
-            "title": "[Pending Translation] ICO Converter - Create Favicons Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Free online favicon generator.",
-            "h1": "[Pending Translation] ICO Converter & Favicon Generator",
-            "subtitle": "[Pending Translation] Convert images to ICO format for website favicons with custom sizing"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload Image to Convert",
-            "desc": "[Pending Translation] Drag & drop your PNG\/JPG file",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Fast conversion to .ico"
-        },
-        "editor": {
-            "original": "[Pending Translation] Original",
-            "image_alt": "[Pending Translation] Preview",
-            "favicon": "[Pending Translation] Favicon",
-            "size_label": "[Pending Translation] Icon Size",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_download": "[Pending Translation] Download Favicon (.ico)"
-        },
-        "content": {
-            "title": "[Pending Translation] Free ICO Converter & Favicon Generator",
-            "p1": "[Pending Translation] Creating a website? You need a favicon - that little icon that appears in browser tabs.",
-            "p2": "[Pending Translation] Our <strong>ICO Converter<\/strong> transforms any PNG or JPG image into a standard Microsoft `.ico` file. We support all common favicon sizes to ensure your brand looks sharp on every device.",
-            "features": {
-                "sizes": {
-                    "title": "[Pending Translation] Standard Sizes",
-                    "desc": "[Pending Translation] Choose from 16x16, 32x32, 48x48, 64x64, or 128x128 pixels. Or select all!"
-                },
-                "resize": {
-                    "title": "[Pending Translation] Auto-Resizing",
-                    "desc": "[Pending Translation] Upload a large logo, and we'll automatically downscale it smoothly to fit the tiny icon format."
-                },
-                "multi": {
-                    "title": "[Pending Translation] Multi-Icon Support",
-                    "desc": "[Pending Translation] Modern .ico files can contain multiple sizes in one file. We handle that for you."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] Steps to Create Favicon",
-                "list": [
-                    "[Pending Translation] Use a square image (PNG\/JPG) for best results.",
-                    "[Pending Translation] 16x16 (Browser tabs), 32x32 (Taskbar), 48x48 (Desktop).",
-                    "[Pending Translation] See how it looks instantly.",
-                    "[Pending Translation] Get your `favicon.ico` file."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why .ICO format?",
-                "p1": "[Pending Translation] While modern browsers support PNG favicons, the `.ico` format is still the standard for maximum compatibility across all operating systems and legacy browsers (like Internet Explorer)."
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image"
-        }
-    },
-    "image-compressor": {
-        "meta": {
-            "title": "[Pending Translation] Free Image Compressor - Reduce Image File Size Online",
-            "description": "[Pending Translation] Compress images online for free. Reduce JPG, PNG, and WebP file sizes while maintaining quality.",
-            "h1": "[Pending Translation] Image Compressor",
-            "subtitle": "[Pending Translation] Reduce image file sizes without losing quality"
-        },
-        "editor": {
-            "label_upload": "[Pending Translation] Upload Image",
-            "drop_title": "[Pending Translation] Drop your image here or click to browse",
-            "drop_subtitle": "[Pending Translation] Drag and drop your image or click to select from your device",
-            "supports": "[Pending Translation] Supports JPG, PNG, WebP formats",
-            "label_quality": "[Pending Translation] Compression Quality:",
-            "title_original": "[Pending Translation] Original Image",
-            "label_size": "[Pending Translation] Size:",
-            "title_compressed": "[Pending Translation] Compressed Image",
-            "label_saved": "[Pending Translation] Saved:",
-            "btn_download": "[Pending Translation] Download Compressed Image"
-        },
-        "content": {
-            "p1": "[Pending Translation] Compress your images online for free with our powerful image compression tool. Reduce JPG, PNG, and WebP file sizes by up to 90% while maintaining excellent visual quality. Perfect for optimizing images for websites, social media, email attachments, and faster page loading times.",
-            "why_title": "[Pending Translation] Why Compress Images?",
-            "why_list": [
-                "[Pending Translation] Faster website loading times improve user experience and SEO",
-                "[Pending Translation] Reduce bandwidth usage and hosting costs",
-                "[Pending Translation] Optimize images for mobile devices and slow connections",
-                "[Pending Translation] Meet file size limits for email attachments and uploads",
-                "[Pending Translation] Improve Core Web Vitals and Google PageSpeed scores",
-                "[Pending Translation] Save storage space on your device or server"
-            ],
-            "formats_title": "[Pending Translation] Supported Image Formats",
-            "quality_title": "[Pending Translation] Understanding Compression Quality",
-            "quality_list": [
-                "[Pending Translation] 100% - No compression, original quality (largest file size)",
-                "[Pending Translation] 80-90% - High quality, minimal visible difference (recommended for most uses)",
-                "[Pending Translation] 60-80% - Good quality, noticeable compression at high zoom",
-                "[Pending Translation] 40-60% - Medium quality, visible artifacts but acceptable for web",
-                "[Pending Translation] 10-40% - Low quality, significant quality loss (smallest file size)"
-            ],
-            "how_title": "[Pending Translation] How Image Compression Works",
-            "how_desc": "[Pending Translation] Our tool uses advanced compression algorithms to reduce file size while preserving image quality. For JPG images, we use lossy compression that removes imperceptible details. For PNG, we optimize the color palette and use efficient encoding. All compression happens in your browser - your images never leave your device.",
-            "best_title": "[Pending Translation] Best Practices for Image Compression",
-            "best_list": [
-                "[Pending Translation] Start with high-quality original images for best results",
-                "[Pending Translation] Use 80-90% quality for web images - perfect balance of size and quality",
-                "[Pending Translation] Compress images before uploading to websites or social media",
-                "[Pending Translation] Use JPG for photos, PNG for graphics with transparency",
-                "[Pending Translation] Consider WebP format for modern browsers (smaller files)",
-                "[Pending Translation] Always preview compressed images before downloading",
-                "[Pending Translation] Keep original files as backup before compression"
-            ],
-            "privacy_title": "[Pending Translation] 100% Private & Secure",
-            "privacy_desc": "[Pending Translation] All image compression happens entirely in your browser using JavaScript. Your images are never uploaded to our servers, ensuring complete privacy and security. Your files never leave your device.",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "formats": {
-                "jpg": {
-                    "title": "[Pending Translation] JPG\/JPEG",
-                    "desc": "[Pending Translation] Best for photographs and complex images with many colors. Lossy compression."
-                },
-                "png": {
-                    "title": "[Pending Translation] PNG",
-                    "desc": "[Pending Translation] Best for graphics, logos, and images with transparency. Lossless or lossy compression."
-                },
-                "webp": {
-                    "title": "[Pending Translation] WebP",
-                    "desc": "[Pending Translation] Modern format with superior compression. Smaller files than JPG\/PNG with same quality."
-                }
-            },
-            "faq": {
-                "q1": "[Pending Translation] Will compressing images reduce quality?",
-                "a1": "[Pending Translation] Yes, but minimally. At 80-90% quality, the difference is imperceptible to the human eye. You can adjust the quality slider to find the perfect balance between file size and visual quality.",
-                "q2": "[Pending Translation] What's the difference between lossy and lossless compression?",
-                "a2": "[Pending Translation] Lossy compression (JPG) removes some image data to achieve smaller files, while lossless compression (PNG) reduces file size without losing any data. Lossy gives better compression but slight quality loss.",
-                "q3": "[Pending Translation] How much can I reduce image file size?",
-                "a3": "[Pending Translation] Typically 50-90% reduction depending on the original image and quality settings. Photos often compress more than graphics. WebP format provides the best compression.",
-                "q4": "[Pending Translation] Are my images uploaded to your server?",
-                "a4": "[Pending Translation] No! All compression happens in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.",
-                "q5": "[Pending Translation] What image formats are supported?",
-                "a5": "[Pending Translation] We support JPG\/JPEG, PNG, and WebP formats. These cover 99% of web images. The tool automatically detects the format and applies optimal compression."
-            }
-        }
-    },
-    "image-converter": {
-        "meta": {
-            "title": "[Pending Translation] Image Converter - Convert Images Online Free | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free. Secure, client-side conversion requiring no uploads.",
-            "h1": "[Pending Translation] Image Converter",
-            "subtitle": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload Your Image",
-            "desc": "[Pending Translation] Drag & drop or click to select an image",
-            "drop_title": "[Pending Translation] Drop your image here",
-            "drop_desc": "[Pending Translation] Supports PNG, JPG, WEBP (Max 10MB)"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "target_format": "[Pending Translation] Target Format",
-            "quality": "[Pending Translation] Quality (JPG\/WEBP)",
-            "btn_convert": "[Pending Translation] Convert & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] The Ultimate Free Online Image Converter",
-            "p1": "[Pending Translation] In today's digital landscape, working with images requires versatility. Whether you're a web developer needing WEBP for performance, a designer needing PNG for transparency, or a photographer needing universal JPG compatibility, our <strong>Image Converter<\/strong> is the all-in-one solution.",
-            "p2": "[Pending Translation] Forget about installing heavy software or uploading your private photos to unknown servers. Our tool runs entirely in your browser, ensuring <strong>100% privacy and lightning-fast speeds<\/strong>.",
-            "features": {
-                "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Your files never leave your device. All processing happens locally in your browser."
-                },
-                "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] No queuing or waiting. Powered by modern WebAssembly technology for speed."
-                },
-                "bulk": {
-                    "title": "[Pending Translation] Bulk Processing",
-                    "desc": "[Pending Translation] Convert unlimited images one by one without any usage restrictions or costs."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert Images?",
-                "list": [
-                    "[Pending Translation] Drag your image file into the blue box or click to select from your device.",
-                    "[Pending Translation] Select your desired output format (PNG, JPG, or WEBP) from the dropdown.",
-                    "[Pending Translation] If choosing JPG or WEBP, use the slider to balance file size and quality.",
-                    "[Pending Translation] Click the \"Convert & Download\" button to save your formatted image instantly."
-                ]
-            },
-            "features_list": {
-                "title": "[Pending Translation] Key Features",
-                "list": [
-                    "[Pending Translation] Cross-Format Support: Effortlessly switch between PNG, JPG, and WEBP.",
-                    "[Pending Translation] Transparency Control: PNG conversions preserve transparency, while JPG fills it with a white background.",
-                    "[Pending Translation] Responsive: Works perfectly on Desktops, Tablets, and Mobile phones.",
-                    "[Pending Translation] No Limits: No file size limits and no daily conversion caps."
-                ]
-            },
-            "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is this tool free?",
-                "a1": "[Pending Translation] Yes, absolutely. We don't charge anything, and there are no hidden premium features.",
-                "q2": "[Pending Translation] Does it support transparency?",
-                "a2": "[Pending Translation] Yes! If you convert to PNG or WEBP, transparency is preserved. For JPG, transparent areas become white.",
-                "q3": "[Pending Translation] Are my images uploaded?",
-                "a3": "[Pending Translation] No. All conversion logic runs in your own browser using JavaScript and Canvas APIs. We count privacy as our top feature.",
-                "q4": "[Pending Translation] What is the best format?",
-                "a4": "[Pending Translation] Use <strong>JPG<\/strong> for photos, <strong>PNG<\/strong> for graphics with sharp edges\/transparency, and <strong>WEBP<\/strong> for web performance."
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image file"
-        }
-    },
-    "image-to-base64-converter": {
-        "meta": {
-            "title": "[Pending Translation] Image to Base64 Converter - Convert Image to String | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS. Free online tool supporting PNG, JPG, GIF.",
-            "h1": "[Pending Translation] Convert Image to Base64 String",
-            "subtitle": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload Image",
-            "desc": "[Pending Translation] Drag & drop your image file here",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Supports All Image Formats"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "label_string": "[Pending Translation] Base64 String",
-            "btn_copy": "[Pending Translation] Copy to Clipboard",
-            "char_count": "[Pending Translation] Character Count",
-            "mime_type": "[Pending Translation] MIME Type"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert Image to Base64 String",
-            "p1": "[Pending Translation] Developers and web designers often need to embed images directly into HTML or CSS files to reduce HTTP requests.",
-            "p2": "[Pending Translation] Our <strong>Image to Base64 Converter<\/strong> encodes your image file into a long string of characters that represents the binary data. You can paste this string straight into your code.",
-            "features": {
-                "clipboard": {
-                    "title": "[Pending Translation] Clipboard Ready",
-                    "desc": "[Pending Translation] One-click copy. We format the output for HTML (`&lt;img src=\"...\"&gt;`) or CSS (`background: url(...)`)."
-                },
-                "requests": {
-                    "title": "[Pending Translation] Reduce Requests",
-                    "desc": "[Pending Translation] Embedding small icons and logos as Base64 eliminates the network overhead of fetching external image files."
-                },
-                "formats": {
-                    "title": "[Pending Translation] Any Format",
-                    "desc": "[Pending Translation] Works with PNG, JPG, GIF, WEBP, SVG, and even ICO files."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to use?",
-                "list": [
-                    "[Pending Translation] Select your image file.",
-                    "[Pending Translation] The tool immediately converts the file to a Data URI.",
-                    "[Pending Translation] Click \"Copy to Clipboard\" to grab the code.",
-                    "[Pending Translation] Insert it into your `src` attribute or CSS file."
-                ]
-            },
-            "use_cases": {
-                "title": "[Pending Translation] When to use Base64?",
-                "list": [
-                    "[Pending Translation] Small Images: Best for icons, spinners, and small logos (under 10KB).",
-                    "[Pending Translation] Single-File Apps: When you need to bundle everything into one HTML file (e.g., email templates).",
-                    "[Pending Translation] Offline Access: Ensures images load even without a network connection if the HTML is saved locally."
-                ]
-            }
-        },
-        "js": {
-            "copied": "[Pending Translation] Copied!"
-        }
-    },
-    "jpg-to-png-converter": {
-        "meta": {
-            "title": "[Pending Translation] JPG to PNG Converter - Convert JPG Images to PNG Free | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert JPG images to PNG format instantly. 100% free, secure client-side conversion, no file size limits.",
-            "h1": "[Pending Translation] JPG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to PNG format instantly with 100% free conversion"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG\/JPEG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] PNG",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert JPG to PNG Instantly",
-            "p1": "[Pending Translation] JPG is the world's most popular image format, but it often lacks the versatility needed for modern web design. By converting to PNG, you gain access to lossless compression and transparency support.",
-            "p2": "[Pending Translation] Our <strong>JPG to PNG Converter<\/strong> is designed for speed and privacy, handling everything directly in your browser without uploading your sensitive photos to any server.",
-            "features": {
-                "lossless": {
-                    "title": "[Pending Translation] Lossless Quality",
-                    "desc": "[Pending Translation] Stop image degradation. PNG uses lossless compression to keep every pixel perfect during edits."
-                },
-                "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Files are processed locally on your device. We never see, store, or upload your images."
-                },
-                "transparency": {
-                    "title": "[Pending Translation] Transparency Ready",
-                    "desc": "[Pending Translation] Convert to the preferred format for logos, icons, and graphics that require transparent backgrounds."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to PNG",
-                "list": [
-                    "[Pending Translation] Drag and drop your JPG file into the designated area.",
-                    "[Pending Translation] The tool immediately reads the file ready for conversion.",
-                    "[Pending Translation] See exactly how your image looks before saving.",
-                    "[Pending Translation] Click \"Convert & Download\" to save your new PNG instantly."
-                ]
-            },
-            "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is the quality better?",
-                "a1": "[Pending Translation] Converting to PNG stops <em>future<\/em> quality loss. It's best for images you plan to edit further or need to keep sharp.",
-                "q2": "[Pending Translation] Are there file limits?",
-                "a2": "[Pending Translation] Since we process files in your browser, the limit is determined by your device's memory, usually allowing files up to 50MB easily."
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
-        }
-    },
-    "jpg-to-webp-converter": {
-        "meta": {
-            "title": "[Pending Translation] JPG to WEBP Converter - Convert Images to WebP | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression and web performance. Free online tool.",
-            "h1": "[Pending Translation] JPG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] WEBP",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert JPG to WebP for Better Performance",
-            "p1": "[Pending Translation] WebP is a modern image format that provides superior lossless and lossy compression for images on the web. By converting JPG to WebP, developers and webmasters can create smaller, richer images that make the web faster.",
-            "p2": "[Pending Translation] Our <strong>JPG to WebP Converter<\/strong> helps you optimize your images instantly in the browser, reducing file size by up to 30% compared to JPEG without standard quality loss.",
-            "features": {
-                "faster": {
-                    "title": "[Pending Translation] Faster Loading",
-                    "desc": "[Pending Translation] WebP images are significantly smaller than JPGs, helping your website load faster and improving SEO scores."
-                },
-                "quality": {
-                    "title": "[Pending Translation] High Quality",
-                    "desc": "[Pending Translation] Maintain visual fidelity while reducing file weight. Perfect for photographs and complex web graphics."
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] All conversions happen locally. Your sensitive images never leave your computer."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to WebP",
-                "list": [
-                    "[Pending Translation] Select or drag & drop your JPG image.",
-                    "[Pending Translation] Use the quality slider to balance size vs quality.",
-                    "[Pending Translation] See the result in real-time.",
-                    "[Pending Translation] Save your optimized WebP image."
-                ]
-            },
-            "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Do all browsers support WebP?",
-                "a1": "[Pending Translation] Yes, all modern browsers (Chrome, Firefox, Safari, Edge) fully support WebP images.",
-                "q2": "[Pending Translation] Is WebP better for SEO?",
-                "a2": "[Pending Translation] Absolutely. Google prefers WebP because it loads faster, improving your Core Web Vitals score."
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
-        }
-    },
-    "png-to-jpg-converter": {
-        "meta": {
-            "title": "[Pending Translation] PNG to JPG Converter - Convert PNG to JPG Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes. Free online converter.",
-            "h1": "[Pending Translation] PNG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes instantly"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be converted to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Compress PNG to JPG Instantly",
-            "p1": "[Pending Translation] PNG files are great for quality, but they can be massive. If you're uploading photos to a website or sending them via email, JPG is often the better choice.",
-            "p2": "[Pending Translation] Our <strong>PNG to JPG Converter<\/strong> drastically reduces file size by using JPEG compression. We automatically handle transparent backgrounds by filling them with white, ensuring your images look perfect.",
-            "features": {
-                "size": {
-                    "title": "[Pending Translation] Drastic Size Reduction",
-                    "desc": "[Pending Translation] Reduce file sizes by up to 80% with minimal loss in visual quality."
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Local browser processing means your photos are never uploaded to the cloud."
-                },
-                "smart": {
-                    "title": "[Pending Translation] Smart Conversion",
-                    "desc": "[Pending Translation] Intelligent background handling converts transparency to a clean white matte."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] Steps to Convert",
-                "list": [
-                    "[Pending Translation] Select a PNG image from your device.",
-                    "[Pending Translation] The tool instantly processes the image.",
-                    "[Pending Translation] Check the preview (transparent areas will now be white).",
-                    "[Pending Translation] Download your optimized JPG file."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] When to use JPG?",
-                "list": [
-                    "[Pending Translation] Photographs: JPG is designed for complex, real-world images.",
-                    "[Pending Translation] Web Uploads: Many forms only accept .jpg or .jpeg.",
-                    "[Pending Translation] Saving Space: If you have thousands of images, JPG saves GBs of storage."
-                ]
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
-        }
-    },
-    "png-to-webp-converter": {
-        "meta": {
-            "title": "[Pending Translation] PNG to WEBP Converter - Compress PNG to WebP | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.",
-            "h1": "[Pending Translation] PNG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Optimize Images with PNG to WebP",
-            "p1": "[Pending Translation] Want faster website load times? Converting your PNGs to WebP is the #1 recommendation from Google PageSpeed Insights.",
-            "p2": "[Pending Translation] Our tool compresses your PNG images into the modern WebP format, reducing file size by up to <strong>30-50%<\/strong> while keeping the background transparent and the quality sharp.",
-            "features": {
-                "smaller": {
-                    "title": "[Pending Translation] Significantly Smaller",
-                    "desc": "[Pending Translation] WebP offers superior compression. Save bandwidth and storage space instantly."
-                },
-                "transparency": {
-                    "title": "[Pending Translation] Transparency Kept",
-                    "desc": "[Pending Translation] Unlike converting to JPG, switching from PNG to WebP preserves your alpha channel (background transparency)."
-                },
-                "adjustable": {
-                    "title": "[Pending Translation] Adjustable Quality",
-                    "desc": "[Pending Translation] You control the balance. Choose 90% for high quality or 70% for maximum savings."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert?",
-                "list": [
-                    "[Pending Translation] Drag and drop your file.",
-                    "[Pending Translation] Use the slider. We recommend 80-90% for a good balance.",
-                    "[Pending Translation] Click the \"Convert\" button.",
-                    "[Pending Translation] Your lighter .webp file is ready."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why WebP?",
-                "p1": "[Pending Translation] WebP is a modern image format developed by Google.",
-                "list": [
-                    "[Pending Translation] SEO Boost: Faster sites rank better on Google.",
-                    "[Pending Translation] Mobile Friendly: Uses less data for mobile visitors.",
-                    "[Pending Translation] Support: Supported by Chrome, Firefox, Safari, Edge, and all modern browsers."
-                ]
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
-        }
-    },
-    "svg-to-jpg-converter": {
-        "meta": {
-            "title": "[Pending Translation] SVG to JPG Converter - Vector to Raster Conversion | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert SVG vector files to JPG images online. Auto-fills transparent backgrounds with white for perfect JPG output.",
-            "h1": "[Pending Translation] SVG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert SVG vector files to JPG images online with auto-fill backgrounds"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be filled with white color.",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Convert SVG to JPG Format",
-            "p1": "[Pending Translation] Need to use a logo in a document or on a website that doesn't accept vector files? Our <strong>SVG to JPG Converter<\/strong> is the answer.",
-            "p2": "[Pending Translation] It creates a solid, high-compatibility image file from your vector source. We automatically handle transparency by adding a clean white background, ensuring your graphic looks professional on any medium.",
-            "features": {
-                "compatibility": {
-                    "title": "[Pending Translation] Maximum Compatibility",
-                    "desc": "[Pending Translation] JPG is opened by literally every digital device and software created in the last 30 years."
-                },
-                "resolution": {
-                    "title": "[Pending Translation] 4x High Resolution",
-                    "desc": "[Pending Translation] Scale up your SVG before saving to ensure your JPG is sharp, not blurry."
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure Client-Side",
-                    "desc": "[Pending Translation] Processing happens in your browser. We never see your files."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] Easy Instructions",
-                "list": [
-                    "[Pending Translation] Click \"Upload\" or drag your file to the center box.",
-                    "[Pending Translation] Choose a scaling factor (e.g., 2x or 4x) for higher quality results.",
-                    "[Pending Translation] Observe the image. Note that transparent backgrounds are now white.",
-                    "[Pending Translation] Click \"Convert to JPG & Download\"."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why choose JPG over PNG for Vectors?",
-                "p1": "[Pending Translation] While PNG supports transparency, JPG generates smaller file sizes for complex, colorful images.",
-                "list": [
-                    "[Pending Translation] Smaller Files: Better for emails and attachments.",
-                    "[Pending Translation] No Transparency Issues: Some viewers render transparency as black. JPG forces a white background, ensuring your logo is legible."
-                ]
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
-        }
-    },
-    "svg-to-png-converter": {
-        "meta": {
-            "title": "[Pending Translation] SVG to PNG Converter - Rasterize SVG Images | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don't support vector files.",
-            "h1": "[Pending Translation] SVG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "checkerboard": "[Pending Translation] Checkerboard background indicates transparency",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] Rasterize SVG to PNG High-Res",
-            "p1": "[Pending Translation] Scalable Vector Graphics (SVG) are perfect for the web, but impossible to use on social media, in Word documents, or as email attachments.",
-            "p2": "[Pending Translation] Our <strong>SVG to PNG Converter<\/strong> allows you to turn your vector logo or icon into a high-quality, transparent PNG image. With our unique <strong>scaling feature<\/strong>, you can produce ultra-high-resolution images without any pixelation.",
-            "features": {
-                "transparency": {
-                    "title": "[Pending Translation] Transparency Preserved",
-                    "desc": "[Pending Translation] Unlike JPG, PNG keeps the background transparent. Perfect for logos and overlays."
-                },
-                "scaling": {
-                    "title": "[Pending Translation] Up to 4x Scaling",
-                    "desc": "[Pending Translation] Export at 4x the original size. Get crisp edges even for large print formats."
-                },
-                "browser": {
-                    "title": "[Pending Translation] Browser-Based",
-                    "desc": "[Pending Translation] Fast and secure. No files are uploaded to any server."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] How to Convert SVG to PNG?",
-                "list": [
-                    "[Pending Translation] Drop your `.svg` file into the upload area.",
-                    "[Pending Translation] Select `1x`, `2x`, or `4x` from the dropdown. Higher is better for quality.",
-                    "[Pending Translation] Check the preview image on the left. The checkerboard indicates transparency.",
-                    "[Pending Translation] Hit the button to generate and download your PNG."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why Convert Vectors?",
-                "p1": "[Pending Translation] Vectors are mathematical formulas, while PNGs are grids of pixels. You need pixels for:",
-                "list": [
-                    "[Pending Translation] Profile pictures (Twitter\/LinkedIn often reject SVG).",
-                    "[Pending Translation] Embedding in emails (SVG support is poor).",
-                    "[Pending Translation] Using in video editors or simple graphic tools (Canva, Paint)."
-                ]
-            },
-            "faq": {
-                "title": "",
-                "q1": "",
-                "a1": "",
-                "q2": "",
-                "a2": ""
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
-        }
-    },
-    "webp-to-jpg-converter": {
-        "meta": {
-            "title": "[Pending Translation] WEBP to JPG Converter - Convert WebP to JPG Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility. Free, fast, and secure converter.",
-            "h1": "[Pending Translation] WebP to JPG Converter",
-            "subtitle": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility"
-        },
-        "input": {
-            "title": "[Pending Translation] Upload WEBP Image",
-            "desc": "[Pending Translation] Drag & drop your WEBP file here",
-            "drop_title": "[Pending Translation] Drop WEBP file here",
-            "drop_desc": "[Pending Translation] Supports WEBP (Max 10MB)"
-        },
-        "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds (common in WEBP) will be verified to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
-        },
-        "content": {
-            "title": "[Pending Translation] WebP to JPG: The Compatibility Fixer",
-            "p1": "[Pending Translation] WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older image viewers, or upload it to platforms that only accept JPG.",
-            "p2": "[Pending Translation] Our <strong>WebP to JPG Converter<\/strong> bridges this gap. It takes your highly optimized WebP images and transforms them into the universally compatible JPEG format in milliseconds.",
-            "features": {
-                "universal": {
-                    "title": "[Pending Translation] Universal Support",
-                    "desc": "[Pending Translation] JPG works everywhere: Word docs, PowerPoint, legacy software, and every social media platform."
-                },
-                "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] We don't see your files. The conversion is performed locally by your web browser."
-                },
-                "smart": {
-                    "title": "[Pending Translation] Smart Backgrounds",
-                    "desc": "[Pending Translation] Automatically detects transparent pixels in WebP and fills them with a clean white background."
-                }
-            },
-            "how_to": {
-                "title": "[Pending Translation] Step-by-Step Guide",
-                "list": [
-                    "[Pending Translation] Click the box or drag your WebP image onto the page.",
-                    "[Pending Translation] The tool will display a preview of your image.",
-                    "[Pending Translation] Click the \"Convert to JPG\" button. The system handles transparency and compression automatically.",
-                    "[Pending Translation] Your new .jpg file will download instantly."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why Convert WebP?",
-                "list": [
-                    "[Pending Translation] Editing: Many desktop editors typically don't support WebP out of the box.",
-                    "[Pending Translation] Email: Outlook and other email clients might not render WebP inline images correctly.",
-                    "[Pending Translation] Printing: Print shops often require standard JPG or TIFF files."
-                ]
-            },
-            "faq": {
-                "title": "[Pending Translation] FAQ",
-                "q1": "[Pending Translation] What happens to transparent backgrounds?",
-                "a1": "[Pending Translation] Since JPG doesn't support transparency, our tool replaces transparent areas with white. This is perfect for product photos and logos.",
-                "q2": "[Pending Translation] Is it safe?",
-                "a2": "[Pending Translation] Yes. Unlike other converters that upload your file to a server, this tool runs 100% on your device. Your data remains private."
-            }
-        },
-        "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid WEBP image"
-        }
-    }
+ "base64-to-image-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi Base64 Sang Hình Ảnh - Giải Mã Đầu Ra Base64 | Optimizo",
+  "description": "Chuyển đổi chuỗi mã hóa Base64 trở lại thành hình ảnh (PNG, JPG, GIF). Bộ giải mã và trình trực quan hóa trực tuyến miễn phí.",
+  "h1": "Giải Mã Base64 Sang Hình Ảnh",
+  "subtitle": "Chuyển đổi chuỗi mã hóa Base64 trở lại thành hình ảnh (PNG, JPG, GIF) ngay lập tức"
+ },
+ "input": {
+  "title": "Dán Chuỗi Base64",
+  "desc": "Dán mã của bạn bên dưới để trực quan hóa hình ảnh",
+  "placeholder": "dữ liệu:image/png;base64,iVBORw0KGgo..",
+  "btn_decode": "Giải Mã Hình Ảnh"
+ },
+ "result": {
+  "image_alt": "Hình Ảnh Đã Giải Mã",
+  "success": "Giải Mã Hình Ảnh Thành Công",
+  "btn_download": "Tải Hình Ảnh",
+  "btn_clear": "Xóa Mẫu"
+ },
+ "content": {
+  "title": "Giải Mã Base64 Sang Hình Ảnh",
+  "p1": "Bạn tìm thấy một chuỗi dài các ký tự ngẫu nhiên bắt đầu bằng <code>dữ liệu:image/..</code> và không biết nó là gì? Khả năng cao đó là một hình ảnh được mã hóa Base64.",
+  "p2": "<strong>Bộ Giải Mã Base64 Sang Hình Ảnh</strong> của chúng tôi chuyển đổi chuỗi văn bản đó trở lại thành một tệp hình ảnh có thể xem được (PNG, JPG, GIF, v.v.) mà bạn có thể xem và tải xuống máy tính của bạn.",
+  "features": {
+  "preview": {
+   "title": "Xem Trước Tức Thì",
+   "desc": "Xem hình ảnh ngay lập tức. Chúng tôi phân tích dữ liệu nhị phân và hiển thị nó trên màn hình của bạn."
+  },
+  "auto": {
+   "title": "Tự Động Phát Hiện",
+   "desc": "Chúng tôi tự động phát hiện định dạng tệp (PNG, JPEG, GIF) từ tiêu đề của chuỗi Base64."
+  },
+  "download": {
+   "title": "Tải Tệp Xuống",
+   "desc": "Lưu kết quả đã giải mã thành một tệp hình ảnh thực sự vào ổ cứng của bạn chỉ với một cú nhấp chuột."
+  }
+  },
+  "how_to": {
+  "title": "Cách Giải Mã?",
+  "list": [
+   "Dán chuỗi Base64 của bạn vào vùng văn bản.",
+   "Chúng tôi sẽ ngay lập tức cố gắng đọc chuỗi.",
+   "Nếu hợp lệ, hình ảnh sẽ xuất hiện ở bên trái.",
+   "Nhấp vào \"Tải Hình Ảnh\" để lưu lại."
+  ]
+  },
+  "use_cases": {
+  "title": "Các Trường Hợp Sử Dụng Phổ Biến",
+  "list": [
+   "Khắc phục lỗi: Kiểm tra dữ liệu hình ảnh nào đang được gửi trong phản hồi API hoặc được lưu trữ trong cơ sở dữ liệu.",
+   "Khôi phục: Trích xuất các hình ảnh được nhúng trong các tệp CSS hoặc mẫu HTML.",
+   "Xác minh: Đảm bảo chuỗi Base64 không bị hỏng."
+  ]
+  }
+ },
+ "js": {
+  "input_required": "Vui lòng dán một chuỗi Base64 trước.",
+  "invalid_error": "Chuỗi Base64 không hợp lệ hoặc định dạng hình ảnh không được hỗ trợ."
+ }
+ },
+ "heic-to-jpg-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi HEIC Sang JPG - Chuyển Đổi Ảnh iPhone Trực Tuyến | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi ảnh Định dạng Hình ảnh Hiệu suất Cao (HEIC/HEIF) từ iPhone sang định dạng JPG tiêu chuẩn. Bộ chuyển đổi miễn phí, riêng tư, phía máy khách.",
+  "h1": "Bộ Chuyển Đổi HEIC Sang JPG",
+  "subtitle": "Chuyển đổi ảnh Định dạng Hình ảnh Hiệu suất Cao (HEIC/HEIF) từ iPhone sang định dạng JPG tiêu chuẩn"
+ },
+ "input": {
+  "title": "Tải Tệp HEIC Lên",
+  "desc": "Kéo và thả tệp .heic hoặc .heif của bạn vào đây",
+  "drop_title": "Thả tệp HEIC tại đây",
+  "drop_desc": "hỗ trợ HEIC/HEIF (Tối đa 20MB)"
+ },
+ "loading": {
+  "title": "Đang xử lý tệp HEIC..",
+  "desc": "Các tệp lớn hơn có thể mất vài giây."
+ },
+ "result": {
+  "image_alt": "Xem Trước",
+  "converted_to": "Đã chuyển đổi sang:",
+  "btn_download": "Tải Hình Ảnh JPG"
+ },
+ "content": {
+  "title": "Chuyển Đổi HEIC Sang JPG Ngay Lập Tức",
+  "p1": "Định dạng Hình ảnh Hiệu suất Cao (HEIC) của Apple rất tuyệt vời trong việc tiết kiệm không gian trên iPhone của bạn, nhưng nó có thể là một cơn ác mộng khi mở trên Windows, Android hoặc các phần mềm cũ hơn. <strong>Bộ Chuyển Đổi HEIC Sang JPG</strong> của chúng tôi sẽ giải quyết vấn đề này ngay lập tức.",
+  "p2": "Chúng tôi sử dụng khả năng xử lý tại chỗ tiên tiến để chuyển đổi ảnh của bạn mà không cần tải chúng lên máy chủ đám mây. Đây là <strong>cách an toàn nhất</strong> để chuyển đổi ảnh cá nhân.",
+  "features": {
+  "private": {
+   "title": "Riêng Tư 100%",
+   "desc": "Ảnh cá nhân của bạn sẽ ở lại trên thiết bị của bạn. Chúng tôi sử dụng logic phía máy khách để chuyển đổi không rủi ro."
+  },
+  "compatibility": {
+   "title": "Khả Năng Tương Thích Rộng",
+   "desc": "Chuyển đổi các tệp HEIC và HEIF từ bất kỳ phiên bản iOS nào (iPhone/iPad) sang định dạng JPG được chấp nhận phổ biến."
+  },
+  "fast": {
+   "title": "Nhanh Chóng & Miễn Phí",
+   "desc": "Không cần cài đặt phần mềm. Chỉ cần kéo, thả và chuyển đổi trong vài giây."
+  }
+  },
+  "how_to": {
+  "title": "Cách Chuyển Đổi HEIC Sang JPG?",
+  "list": [
+   "Kéo tệp .heic hoặc .heif của bạn vào vùng tải lên.",
+   "Công cụ sẽ tự động đọc và chuyển đổi tệp bằng các thư viện trình duyệt tiên tiến.",
+   "Xem ngay bản xem trước của hình ảnh JPG đã chuyển đổi của bạn.",
+   "Nhấp vào nút \"Tải Hình Ảnh JPG\" để lưu vào máy tính của bạn."
+  ]
+  },
+  "details": {
+  "title": "Chi Tiết Kỹ Thuật",
+  "p1": "HEIC (High Efficiency Image Container) sử dụng các phương pháp nén hiện đại để giữ cho kích thước tệp nhỏ. Tuy nhiên, Windows và Android thường gặp khó khăn khi mở chúng.",
+  "p2": "Công cụ của chúng tôi giải mã dữ liệu HEIC và mã hóa lại nó thành hình ảnh JPEG tiêu chuẩn với tỷ lệ giữ chất lượng 90%, đảm bảo ảnh của bạn trông tuyệt vời trong khi có thể truy cập ở mọi nơi."
+  },
+  "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Tôi có thể chuyển đổi iPhone Live Photos không?",
+  "a1": "Bạn có thể chuyển đổi phần hình ảnh tĩnh của Live Photo nếu bạn chuyển tệp .HEIC sang máy tính trước.",
+  "q2": "Chất lượng có bị giảm trong quá trình chuyển đổi không?",
+  "a2": "Chúng tôi sử dụng cài đặt chất lượng cao (0,9 trên 1,0) để đảm bảo sự khác biệt hình ảnh tối thiểu. JPG là định dạng nén mất dữ liệu, nhưng sự khác biệt thường không đáng kể đối với mắt người."
+  }
+ },
+ "js": {
+  "error": "Lỗi khi chuyển đổi tệp HEIC: "
+ }
+ },
+ "ico-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi ICO - Tạo Favicon Trực Tuyến | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi hình ảnh sang định dạng ICO cho favicon của trang web. hỗ trợ kích thước tùy chỉnh (32x32, 64x64). Trình tạo favicon trực tuyến miễn phí.",
+  "h1": "Bộ Chuyển Đổi ICO & Trình Tạo Favicon",
+  "subtitle": "Chuyển đổi hình ảnh sang định dạng ICO cho favicon của trang web với kích thước tùy chỉnh"
+ },
+ "input": {
+  "title": "Tải Hình Ảnh Để Chuyển Đổi",
+  "desc": "Kéo & thả tệp PNG/JPG của bạn",
+  "drop_title": "Thả tệp hình ảnh tại đây",
+  "drop_desc": "Chuyển đổi nhanh sang .ico"
+ },
+ "editor": {
+  "original": "Gốc",
+  "image_alt": "Xem Trước",
+  "favicon": "Favicon",
+  "size_label": "Kích Thước Biểu Tượng",
+  "output_format": "Định Dạng Đầu Ra:",
+  "btn_download": "Tải Favicon (.ico)"
+ },
+ "content": {
+  "title": "Trình Chuyển Đổi ICO & Tạo Favicon Miễn Phí",
+  "p1": "Bạn đang tạo một trang web? Bạn cần một favicon - biểu tượng nhỏ xuất hiện trong các tab của trình duyệt.",
+  "p2": "<strong>Bộ Chuyển Đổi ICO</strong> của chúng tôi chuyển đổi bất kỳ hình ảnh PNG hoặc JPG nào thành một tệp `.ico` chuẩn của Microsoft. Chúng tôi hỗ trợ tất cả các kích thước favicon phổ biến để đảm bảo thương hiệu của bạn trông sắc nét trên mọi thiết bị.",
+  "features": {
+  "sizes": {
+   "title": "Kích Thước Tiêu Chuẩn",
+   "desc": "Chọn từ 16x16, 32x32, 48x48, 64x64, hoặc 128x128 pixel. Hoặc chọn tất cả!"
+  },
+  "resize": {
+   "title": "Tự Động Thay Đổi Kích Thước",
+   "desc": "Tải lên một logo lớn, và chúng tôi sẽ tự động giảm kích thước nó một cách mượt mà để phù hợp với định dạng biểu tượng nhỏ."
+  },
+  "multi": {
+   "title": "hỗ trợ Đa Biểu Tượng",
+   "desc": "Các tệp .ico hiện đại có thể chứa nhiều kích thước trong một tệp duy nhất. Chúng tôi sẽ xử lý việc đó cho bạn."
+  }
+  },
+  "how_to": {
+  "title": "Các Bước Để Tạo Favicon",
+  "list": [
+   "Sử dụng hình ảnh hình vuông (PNG/JPG) để có kết quả tốt nhất.",
+   "16x16 (Tab trình duyệt), 32x32 (Thanh tác vụ), 48x48 (Màn hình nền).",
+   "Xem nó trông như thế nào ngay lập tức.",
+   "Lấy tệp `favicon.ico` của bạn."
+  ]
+  },
+  "why": {
+  "title": "Tại sao nên dùng định dạng .ICO?",
+  "p1": "Mặc dù các trình duyệt hiện đại hỗ trợ favicon định dạng PNG, nhưng định dạng `.ico` vẫn là tiêu chuẩn để có khả năng tương thích tối đa trên tất cả các hệ điều hành và các trình duyệt cũ (như Internet Explorer)."
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một hình ảnh hợp lệ"
+ }
+ },
+ "image-compressor": {
+ "meta": {
+  "title": "Trình Nén Hình Ảnh Miễn Phí - Giảm kích thước tệp Hình Ảnh Trực Tuyến",
+  "description": "Nén hình ảnh trực tuyến miễn phí. Giảm kích thước tệp JPG, PNG và WebP mà vẫn giữ nguyên chất lượng.",
+  "h1": "Trình Nén Hình Ảnh",
+  "subtitle": "Giảm kích thước tệp hình ảnh mà không giảm chất lượng"
+ },
+ "editor": {
+  "label_upload": "Tải Hình Ảnh Lên",
+  "drop_title": "Thả hình ảnh của bạn tại đây hoặc nhấp để duyệt",
+  "drop_subtitle": "Kéo và thả hình ảnh của bạn hoặc nhấp để chọn từ thiết bị",
+  "supports": "hỗ trợ định dạng JPG, PNG, WebP",
+  "label_quality": "Chất Lượng Nén:",
+  "title_original": "Hình Ảnh Gốc",
+  "label_size": "Kích thước:",
+  "title_compressed": "Hình Ảnh Đã Nén",
+  "label_saved": "Tiết kiệm:",
+  "btn_download": "Tải Hình Ảnh Đã Nén"
+ },
+ "content": {
+  "p1": "Nén hình ảnh trực tuyến miễn phí với công cụ nén hình ảnh mạnh mẽ của chúng tôi. Giảm kích thước tệp JPG, PNG và WebP lên đến 90% trong khi vẫn duy trì chất lượng hình ảnh tuyệt vời. Hoàn hảo để tối ưu hóa hình ảnh cho trang web, mạng xã hội, tệp đính kèm email và thời gian tải trang nhanh hơn.",
+  "why_title": "Tại Sao Nên Nén Hình Ảnh?",
+  "why_list": [
+  "Thời gian tải trang web nhanh hơn giúp cải thiện trải nghiệm người dùng và SEO",
+  "Giảm mức sử dụng băng thông và chi phí lưu trữ",
+  "Tối ưu hóa hình ảnh cho các thiết bị di động và kết nối chậm",
+  "Đáp ứng giới hạn kích thước tệp cho tệp đính kèm email và tải lên",
+  "Cải thiện các chỉ số Core Web Vitals và điểm số Google PageSpeed",
+  "Tiết kiệm không gian lưu trữ trên thiết bị hoặc máy chủ của bạn"
+  ],
+  "formats_title": "Định Dạng Hình Ảnh Được hỗ trợ",
+  "quality_title": "Hiểu Về Chất Lượng Nén",
+  "quality_list": [
+  "100% - Không nén, chất lượng gốc (kích thước tệp lớn nhất)",
+  "80-90% - Chất lượng cao, khác biệt hình ảnh tối thiểu (khuyên dùng cho hầu hết các mục đích)",
+  "60-80% - Chất lượng tốt, có thể nhận thấy sự nén khi phóng to",
+  "40-60% - Chất lượng trung bình, các vết nén có thể thấy được nhưng vẫn chấp nhận được cho web",
+  "10-40% - Chất lượng thấp, mất chất lượng đáng kể (kích thước tệp nhỏ nhất)"
+  ],
+  "how_title": "Cách Thức Hoạt Động của Việc Nén Hình Ảnh",
+  "how_desc": "Công cụ của chúng tôi sử dụng các thuật toán nén tiên tiến để giảm kích thước tệp trong khi vẫn bảo toàn chất lượng hình ảnh. Đối với hình ảnh JPG, chúng tôi sử dụng nén mất dữ liệu (lossy) để loại bỏ các chi tiết không thể nhận thấy. Đối với PNG, chúng tôi tối ưu hóa bảng màu và sử dụng mã hóa hiệu quả. Tất cả quá trình nén đều diễn ra trong trình duyệt của bạn - hình ảnh của bạn không bao giờ rời khỏi thiết bị.",
+  "best_title": "Cách Thực Hành Tốt Nhất Để Nén Hình Ảnh",
+  "best_list": [
+  "Bắt đầu với hình ảnh gốc chất lượng cao để có kết quả tốt nhất",
+  "Sử dụng chất lượng 80-90% cho hình ảnh web - sự cân bằng hoàn hảo giữa kích thước và chất lượng",
+  "Nén hình ảnh trước khi tải lên các trang web hoặc mạng xã hội",
+  "Sử dụng JPG cho ảnh chụp, PNG cho các bản vẽ có độ trong suốt",
+  "Cân nhắc định dạng WebP cho các trình duyệt hiện đại (tệp nhỏ hơn)",
+  "Luôn xem trước hình ảnh đã nén trước khi tải xuống",
+  "Giữ các tệp gốc làm bản sao lưu trước khi nén"
+  ],
+  "privacy_title": "Riêng Tư & An Toàn 100%",
+  "privacy_desc": "Tất cả quá trình nén hình ảnh diễn ra hoàn toàn trong trình duyệt của bạn bằng JavaScript. Hình ảnh của bạn không bao giờ được tải lên máy chủ của chúng tôi, đảm bảo sự riêng tư và bảo mật hoàn toàn. Tệp của bạn không bao giờ rời khỏi thiết bị.",
+  "faq_title": "Các Câu Hỏi Thường Gặp",
+  "formats": {
+  "jpg": {
+   "title": "JPG/JPEG",
+   "desc": "Tốt nhất cho ảnh chụp và các hình ảnh phức tạp với nhiều màu sắc. Nén mất dữ liệu."
+  },
+  "png": {
+   "title": "PNG",
+   "desc": "Tốt nhất cho đồ họa, logo và hình ảnh có độ trong suốt. Nén không mất dữ liệu hoặc có mất dữ liệu."
+  },
+  "webp": {
+   "title": "WebP",
+   "desc": "Định dạng hiện đại với khả năng nén vượt trội. Tệp nhỏ hơn JPG/PNG với cùng chất lượng."
+  }
+  },
+  "faq": {
+  "q1": "Việc nén hình ảnh có làm giảm chất lượng không?",
+  "a1": "Có, nhưng rất ít. Ở chất lượng 80-90%, sự khác biệt là không thể nhận thấy đối với mắt người. Bạn có thể điều chỉnh thanh trượt chất lượng để tìm sự cân bằng hoàn hảo giữa kích thước tệp và chất lượng hình ảnh.",
+  "q2": "Sự khác biệt giữa nén lossy (mất dữ liệu) và lossless (không mất dữ liệu) là gì?",
+  "a2": "Nén mất dữ liệu (JPG) loại bỏ một số dữ liệu hình ảnh để đạt được các tệp nhỏ hơn, trong khi nén không mất dữ liệu (PNG) giảm kích thước tệp mà không mất bất kỳ dữ liệu nào. Nén mất dữ liệu cho khả năng nén tốt hơn nhưng chất lượng giảm nhẹ.",
+  "q3": "Tôi có thể giảm kích thước tệp hình ảnh bao nhiêu?",
+  "a3": "Thường là giảm 50-90% tùy thuộc vào hình ảnh gốc và cài đặt chất lượng. Ảnh chụp thường nén tốt hơn đồ họa. Định dạng WebP cung cấp khả năng nén tốt nhất.",
+  "q4": "Hình ảnh của tôi có được tải lên máy chủ của bạn không?",
+  "a4": "Không! Tất cả quá trình nén diễn ra trong trình duyệt của bạn bằng JavaScript. Hình ảnh của bạn không bao giờ rời khỏi thiết bị, đảm bảo quyền riêng tư và bảo mật hoàn toàn.",
+  "q5": "Những định dạng hình ảnh nào được hỗ trợ?",
+  "a5": "Chúng tôi hỗ trợ các định dạng JPG/JPEG, PNG và WebP. Các định dạng này bao phủ 99% hình ảnh trên web. Công cụ sẽ tự động phát hiện định dạng và áp dụng mức nén tối ưu."
+  }
+ }
+ },
+ "image-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi Hình Ảnh - Chuyển Đổi Hình Ảnh Trực Tuyến Miễn Phí | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi hình ảnh giữa nhiều định dạng (PNG, JPG, WEBP) dễ dàng và miễn phí. Chuyển đổi an toàn phía máy khách, không cần tải ảnh lên.",
+  "h1": "Bộ Chuyển Đổi Hình Ảnh",
+  "subtitle": "Chuyển đổi hình ảnh giữa nhiều định dạng (PNG, JPG, WEBP) một cách dễ dàng và miễn phí"
+ },
+ "input": {
+  "title": "Tải Hình Ảnh của Bạn Lên",
+  "desc": "Kéo & thả hoặc nhấp để chọn một hình ảnh",
+  "drop_title": "Drop your image here",
+  "drop_desc": "hỗ trợ PNG, JPG, WEBP (Tối đa 10MB)"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "target_format": "Định Dạng Đích",
+  "quality": "Chất lượng (JPG/WEBP)",
+  "btn_convert": "Chuyển Đổi & Tải Xuống"
+ },
+ "content": {
+  "title": "Trình Chuyển Đổi Hình Ảnh Trực Tuyến Miễn Phí Tối Ưu",
+  "p1": "Trong bối cảnh kỹ thuật số ngày nay, làm việc với hình ảnh đòi hỏi sự linh hoạt. Cho dù bạn là một nhà phát triển web cần WEBP để tăng hiệu suất, một nhà thiết kế cần PNG cho độ trong suốt, hay một nhiếp ảnh gia cần khả năng tương thích JPG phổ biến, <strong>Bộ Chuyển Đổi Hình Ảnh</strong> của chúng tôi là giải pháp tất cả trong một.",
+  "p2": "Hãy quên đi việc cài đặt các phần mềm nặng nề hoặc tải ảnh cá nhân lên các máy chủ không xác định. Công cụ của chúng tôi chạy hoàn toàn trong trình duyệt của bạn, đảm bảo <strong>quyền riêng tư 100% và tốc độ cực nhanh</strong>.",
+  "features": {
+  "secure": {
+   "title": "An Toàn & Riêng Tư",
+   "desc": "Tệp của bạn không bao giờ rời khỏi thiết bị. Mọi quá trình xử lý đều diễn ra cục bộ trong trình duyệt của bạn."
+  },
+  "instant": {
+   "title": "Chuyển Đổi Tức Thì",
+   "desc": "Không phải xếp hàng hay chờ đợi. Được hỗ trợ bởi công nghệ WebAssembly hiện đại để đảm bảo tốc độ."
+  },
+  "bulk": {
+   "title": "Xử Lý Hàng Loạt",
+   "desc": "Chuyển đổi hình ảnh không giới hạn từng cái một mà không có bất kỳ hạn chế sử dụng hay chi phí nào."
+  }
+  },
+  "how_to": {
+  "title": "Cách Chuyển Đổi Hình Ảnh?",
+  "list": [
+   "Kéo tệp hình ảnh của bạn vào hộp màu xanh hoặc nhấp để chọn từ thiết bị của bạn.",
+   "Chọn định dạng đầu ra mong muốn của bạn (PNG, JPG, hoặc WEBP) từ trình đơn thả xuống.",
+   "Nếu chọn JPG hoặc WEBP, hãy sử dụng thanh trượt để cân bằng giữa kích thước tệp và chất lượng.",
+   "Nhấp vào nút \"Chuyển Đổi & Tải Xuống\" để lưu hình ảnh đã định dạng của bạn ngay lập tức."
+  ]
+  },
+  "features_list": {
+  "title": "Các Tính Năng Chính",
+  "list": [
+   "hỗ trợ đa định dạng: Chuyển đổi dễ dàng giữa PNG, JPG và WEBP.",
+   "Kiểm soát độ trong suốt: Chuyển đổi sang PNG giữ nguyên độ trong suốt, trong khi JPG sẽ lấp đầy nó bằng nền trắng.",
+   "Phản hồi: Hoạt động hoàn hảo trên máy tính để bàn, máy tính bảng và điện thoại di động.",
+   "Không giới hạn: Không giới hạn kích thước tệp và không có hạn mức chuyển đổi hàng ngày."
+  ]
+  },
+  "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Công cụ này có miễn phí không?",
+  "a1": "Có, chắc chắn rồi. Chúng tôi không thu bất kỳ khoản phí nào và không có tính năng cao cấp tiềm ẩn nào.",
+  "q2": "Nó có hỗ trợ độ trong suốt không?",
+  "a2": "Có! Nếu bạn chuyển đổi sang PNG hoặc WEBP, độ trong suốt sẽ được giữ nguyên. Đối với JPG, các vùng trong suốt sẽ chuyển thành màu trắng.",
+  "q3": "Hình ảnh của tôi có được tải lên không?",
+  "a3": "Không. Tất cả logic chuyển đổi chạy trong chính trình duyệt của bạn bằng các API JavaScript và Canvas. Chúng tôi coi quyền riêng tư là tính năng hàng đầu của bạn.",
+  "q4": "Định dạng nào là tốt nhất?",
+  "a4": "Sử dụng <strong>JPG</strong> cho ảnh chụp, <strong>PNG</strong> cho đồ họa có cạnh sắc nét/độ trong suốt, và <strong>WEBP</strong> để tăng hiệu suất web."
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một tệp hình ảnh hợp lệ"
+ }
+ },
+ "image-to-base64-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi Hình Ảnh Sang Base64 - Chuyển Đổi Hình Ảnh Sang Chuỗi | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi hình ảnh sang chuỗi mã hóa Base64 để nhúng vào HTML hoặc CSS. Công cụ trực tuyến miễn phí hỗ trợ PNG, JPG, GIF.",
+  "h1": "Chuyển Đổi Hình Ảnh Sang Chuỗi Base64",
+  "subtitle": "Chuyển đổi hình ảnh sang chuỗi mã hóa Base64 để nhúng vào HTML hoặc CSS"
+ },
+ "input": {
+  "title": "Tải Hình Ảnh Lên",
+  "desc": "Drag & drop your image file here",
+  "drop_title": "Thả tệp hình ảnh tại đây",
+  "drop_desc": "hỗ trợ Tất Cả Định Dạng Hình Ảnh"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "label_string": "Chuỗi Base64",
+  "btn_copy": "Sao Chép Vào Bộ Nhớ Tạm",
+  "char_count": "số lượng Ký Tự",
+  "mime_type": "Loại MIME"
+ },
+ "content": {
+  "title": "Chuyển Đổi Hình Ảnh Sang Chuỗi Base64",
+  "p1": "Các nhà phát triển và thiết kế web thường cần nhúng hình ảnh trực tiếp vào các tệp HTML hoặc CSS để giảm các yêu cầu HTTP.",
+  "p2": "<strong>Bộ Chuyển Đổi Hình Ảnh Sang Base64</strong> của chúng tôi mã hóa tệp hình ảnh của bạn thành một chuỗi ký tự dài đại diện cho dữ liệu nhị phân. Bạn có thể dán chuỗi này trực tiếp vào mã của bạn.",
+  "features": {
+  "clipboard": {
+   "title": "Sẵn Sàng Để Sao Chép",
+   "desc": "Sao chép với một cú nhấp chuột. Chúng tôi định dạng đầu ra cho HTML (`&lt;img src=\"..\"&gt;`) hoặc CSS (`background: url(..)`)."
+  },
+  "requests": {
+   "title": "Giảm Các Yêu Cầu",
+   "desc": "Việc nhúng các biểu tượng và logo nhỏ dưới dạng Base64 loại bỏ chi phí mạng khi truy xuất các tệp hình ảnh bên ngoài."
+  },
+  "formats": {
+   "title": "Mọi Định Dạng",
+   "desc": "Hoạt động với các tệp PNG, JPG, GIF, WEBP, SVG và thậm chí cả tệp ICO."
+  }
+  },
+  "how_to": {
+  "title": "Cách sử dụng?",
+  "list": [
+   "Chọn tệp hình ảnh của bạn.",
+   "Công cụ ngay lập tức chuyển đổi tệp thành một dữ liệu URI.",
+   "Nhấp vào \"Sao Chép Vào Bộ Nhớ Tạm\" để lấy mã.",
+   "Thêm nó vào thuộc tính `src` hoặc tệp CSS của bạn."
+  ]
+  },
+  "use_cases": {
+  "title": "Khi nào nên sử dụng Base64?",
+  "list": [
+   "Hình ảnh nhỏ: Tốt nhất cho các biểu tượng, hiệu ứng chờ (spinner) và logo nhỏ (dưới 10KB).",
+   "Ứng dụng tệp đơn: Khi bạn cần đóng gói mọi thứ vào một tệp HTML duy nhất (ví dụ: mẫu email).",
+   "Truy cập ngoại tuyến: Đảm bảo hình ảnh vẫn tải ngay cả khi không có kết nối mạng nếu tệp HTML được lưu cục bộ."
+  ]
+  }
+ },
+ "js": {
+  "copied": "Đã sao chép!"
+ }
+ },
+ "jpg-to-png-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi JPG Sang PNG - Chuyển Đổi Ảnh JPG Sang PNG Miễn Phí | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi hình ảnh JPG sang định dạng PNG ngay lập tức. Miễn phí 100%, chuyển đổi phía khách hàng an toàn, không giới hạn kích thước tệp.",
+  "h1": "Bộ Chuyển Đổi JPG Sang PNG",
+  "subtitle": "Chuyển đổi hình ảnh JPG sang định dạng PNG ngay lập tức với việc chuyển đổi miễn phí 100%"
+ },
+ "input": {
+  "title": "Tải Hình Ảnh JPG Lên",
+  "desc": "Kéo & thả tệp JPG/JPEG của bạn tại đây",
+  "drop_title": "Thả tệp JPG tại đây",
+  "drop_desc": "hỗ trợ JPG, JPEG (Tối đa 10MB)"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "output_format": "Định Dạng Đầu Ra:",
+  "format_short": "PNG",
+  "btn_convert": "Chuyển Đổi Sang PNG & Tải Xuống"
+ },
+ "content": {
+  "title": "Chuyển Đổi JPG Sang PNG Ngay Lập Tức",
+  "p1": "JPG là định dạng hình ảnh phổ biến nhất thế giới, nhưng nó thường thiếu tính linh hoạt cần thiết cho thiết kế web hiện đại. Bằng cách chuyển đổi sang PNG, bạn có quyền truy cập vào nén không mất dữ liệu và hỗ trợ độ trong suốt.",
+  "p2": "<strong>Bộ Chuyển Đổi JPG Sang PNG</strong> của chúng tôi được thiết kế để đảm bảo tốc độ và quyền riêng tư, xử lý mọi thứ trực tiếp trong trình duyệt của bạn mà không cần tải những bức ảnh nhạy cảm lên bất kỳ máy chủ nào.",
+  "features": {
+  "lossless": {
+   "title": "Chất Lượng Không Mất Dữ Liệu",
+   "desc": "Ngừng việc giảm chất lượng hình ảnh. PNG sử dụng nén không mất dữ liệu để giữ cho từng pixel hoàn hảo trong suốt quá trình chỉnh sửa."
+  },
+  "private": {
+   "title": "Riêng Tư 100%",
+   "desc": "Files are processed locally on your device. We never see, store, or upload your images."
+  },
+  "transparency": {
+   "title": "Sẵn Sàng Cho Độ Trong Suốt",
+   "desc": "Chuyển đổi sang định dạng ưa thích cho logo, biểu tượng và đồ họa yêu cầu nền trong suốt."
+  }
+  },
+  "how_to": {
+  "title": "Cách Chuyển Đổi JPG Sang PNG",
+  "list": [
+   "Kéo và thả tệp JPG của bạn vào khu vực được chỉ định.",
+   "Công cụ ngay lập tức đọc tệp đã sẵn sàng để chuyển đổi.",
+   "Xem chính xác hình ảnh của bạn trông như thế nào trước khi lưu.",
+   "Nhấp vào \"Chuyển Đổi & Tải Xuống\" để lưu PNG mới của bạn ngay lập tức."
+  ]
+  },
+  "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Chất lượng có tốt hơn không?",
+  "a1": "Việc chuyển đổi sang PNG sẽ ngăn việc giảm chất lượng trong <em>tương lai</em>. Nó tốt nhất cho các hình ảnh mà bạn dự định chỉnh sửa thêm hoặc cần giữ độ sắc nét.",
+  "q2": "Có giới hạn tệp không?",
+  "a2": "Vì chúng tôi xử lý các tệp trong trình duyệt của bạn, giới hạn được xác định bởi bộ nhớ thiết bị của bạn, thường cho phép các tệp lên đến 50MB một cách dễ dàng."
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một hình ảnh JPG hợp lệ",
+  "converted_name": "hinh-anh-da-chuyen-doi"
+ }
+ },
+ "jpg-to-webp-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi JPG Sang WEBP - Chuyển Đổi Hình Ảnh Sang WebP | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi hình ảnh JPG sang định dạng WebP hiện đại để có khả năng nén và hiệu suất web vượt trội. Công cụ trực tuyến miễn phí.",
+  "h1": "Bộ Chuyển Đổi JPG Sang WebP",
+  "subtitle": "Chuyển đổi hình ảnh JPG sang định dạng WebP hiện đại để có khả năng nén vượt trội"
+ },
+ "input": {
+  "title": "Tải Hình Ảnh JPG Lên",
+  "desc": "Drag & drop your JPG file here",
+  "drop_title": "Thả tệp JPG tại đây",
+  "drop_desc": "hỗ trợ JPG, JPEG (Tối đa 10MB)"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "output_format": "Định Dạng Đầu Ra:",
+  "format_short": "WEBP",
+  "quality": "Chất Lượng Nén",
+  "btn_convert": "Chuyển Đổi Sang WEBP & Tải Xuống"
+ },
+ "content": {
+  "title": "Chuyển Đổi JPG Sang WebP Để Có Hiệu Suất Tốt Hơn",
+  "p1": "WebP là một định dạng hình ảnh hiện đại cung cấp khả năng nén không mất dữ liệu và có mất dữ liệu vượt trội cho hình ảnh trên web. Bằng cách chuyển đổi JPG sang WebP, các nhà phát triển và quản trị trang web có thể tạo ra các hình ảnh nhỏ hơn, phong phú hơn giúp trang web nhanh hơn.",
+  "p2": "<strong>Bộ Chuyển Đổi JPG Sang WebP</strong> của chúng tôi giúp bạn tối ưu hóa hình ảnh ngay lập tức trong trình duyệt, giảm kích thước tệp lên đến 30% so với JPEG mà không bị giảm chất lượng tiêu chuẩn.",
+  "features": {
+  "faster": {
+   "title": "Tải Nhanh Hơn",
+   "desc": "Hình ảnh WebP nhỏ hơn đáng kể so với JPG, giúp trang web của bạn tải nhanh hơn và cải thiện điểm số SEO."
+  },
+  "quality": {
+   "title": "Chất Lượng Cao",
+   "desc": "Duy trì độ chân thực của hình ảnh trong khi giảm trọng lượng tệp. Hoàn hảo cho ảnh chụp và các đồ họa web phức tạp."
+  },
+  "secure": {
+   "title": "Xử Lý An Toàn",
+   "desc": "Mọi quá trình chuyển đổi đều diễn ra cục bộ. Những hình ảnh nhạy cảm của bạn không bao giờ rời khỏi máy tính."
+  }
+  },
+  "how_to": {
+  "title": "Cách Chuyển Đổi JPG Sang WebP",
+  "list": [
+   "Chọn hoặc kéo & thả hình ảnh JPG của bạn.",
+   "Sử dụng thanh trượt chất lượng để cân bằng giữa kích thước và chất lượng.",
+   "Xem kết quả trong thời gian thực.",
+   "Lưu hình ảnh WebP đã được tối ưu hóa của bạn."
+  ]
+  },
+  "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Tất cả các trình duyệt có hỗ trợ WebP không?",
+  "a1": "Có, tất cả các trình duyệt hiện đại (Chrome, Firefox, Safari, Edge) đều hỗ trợ đầy đủ hình ảnh WebP.",
+  "q2": "WebP có tốt hơn cho SEO không?",
+  "a2": "Chắc chắn rồi. Google ưu tiên WebP vì nó tải nhanh hơn, giúp cải thiện điểm số Core Web Vitals của bạn."
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một hình ảnh JPG hợp lệ",
+  "converted_name": "hinh-anh-da-chuyen-doi"
+ }
+ },
+ "png-to-jpg-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi PNG Sang JPG - Chuyển Đổi PNG Sang JPG Trực Tuyến | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi hình ảnh PNG sang định dạng JPG để có kích thước tệp nhỏ hơn. Trình chuyển đổi trực tuyến miễn phí.",
+  "h1": "Bộ Chuyển Đổi PNG Sang JPG",
+  "subtitle": "Chuyển đổi hình ảnh PNG sang định dạng JPG để có kích thước tệp nhỏ hơn ngay lập tức"
+ },
+ "input": {
+  "title": "Tải Hình Ảnh PNG Lên",
+  "desc": "Drag & drop your PNG file here",
+  "drop_title": "Drop PNG file here",
+  "drop_desc": "hỗ trợ PNG (Tối đa 10MB)"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "note": "Ghi chú:",
+  "note_text": "Các nền trong suốt sẽ được chuyển thành màu trắng.",
+  "output_format": "Định Dạng Đầu Ra:",
+  "btn_convert": "Chuyển Đổi Sang JPG & Tải Xuống"
+ },
+ "content": {
+  "title": "Nén PNG Sang JPG Ngay Lập Tức",
+  "p1": "Các tệp PNG rất tốt về chất lượng, nhưng chúng có thể có dung lượng rất lớn. Nếu bạn đang tải ảnh lên một trang web hoặc gửi qua email, JPG thường là lựa chọn tốt hơn.",
+  "p2": "<strong>Bộ Chuyển Đổi PNG Sang JPG</strong> của chúng tôi giảm đáng kể kích thước tệp bằng cách sử dụng nén JPEG. Chúng tôi tự động xử lý các nền trong suốt bằng cách lấp đầy chúng bằng màu trắng, đảm bảo hình ảnh của bạn trông hoàn hảo.",
+  "features": {
+  "size": {
+   "title": "Giảm Kích Thước đáng kể",
+   "desc": "Giảm kích thước tệp lên đến 80% với sự giảm chất lượng hình ảnh tối thiểu."
+  },
+  "secure": {
+   "title": "An Toàn & Riêng Tư",
+   "desc": "Local browser processing means your photos are never uploaded to the cloud."
+  },
+  "smart": {
+   "title": "Chuyển Đổi Thông Minh",
+   "desc": "Xử lý hình nền thông minh chuyển đổi độ trong suốt thành màu trắng sạch sẽ."
+  }
+  },
+  "how_to": {
+  "title": "Các Bước Chuyển Đổi",
+  "list": [
+   "Chọn một hình ảnh PNG từ thiết bị của bạn.",
+   "Công cụ sẽ ngay lập tức xử lý hình ảnh.",
+   "Kiểm tra bản xem trước (các vùng trong suốt giờ sẽ là màu trắng).",
+   "Tải xuống tệp JPG đã được tối ưu hóa của bạn."
+  ]
+  },
+  "why": {
+  "title": "Khi nào nên sử dụng JPG?",
+  "list": [
+   "Ảnh chụp: JPG được thiết kế cho các hình ảnh thế giới thực, phức tạp.",
+   "Tải lên web: Nhiều biểu mẫu chỉ chấp nhận .jpg hoặc .jpeg.",
+   "Tiết kiệm không gian: Nếu bạn có hàng ngàn hình ảnh, JPG sẽ giúp tiết kiệm hàng GB dung lượng lưu trữ."
+  ]
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một hình ảnh PNG hợp lệ"
+ }
+ },
+ "png-to-webp-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi PNG Sang WEBP - Nén PNG Sang WebP | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi hình ảnh PNG sang WebP để giảm kích thước tệp trong khi vẫn giữ độ trong suốt. Nâng cao tốc độ tải trang web của bạn.",
+  "h1": "Bộ Chuyển Đổi PNG Sang WebP",
+  "subtitle": "Chuyển đổi hình ảnh PNG sang WebP để giảm kích thước tệp trong khi vẫn giữ được độ trong suốt"
+ },
+ "input": {
+  "title": "Tải Hình Ảnh PNG Lên",
+  "desc": "Drag & drop your PNG file here",
+  "drop_title": "Drop PNG file here",
+  "drop_desc": "hỗ trợ PNG (Tối đa 10MB)"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "output_format": "Định Dạng Đầu Ra:",
+  "quality": "Chất Lượng Nén",
+  "btn_convert": "Chuyển Đổi Sang WEBP & Tải Xuống"
+ },
+ "content": {
+  "title": "Tối Ưu Hóa Hình Ảnh Với PNG Sang WebP",
+  "p1": "Bạn muốn tốc độ tải trang web nhanh hơn? Chuyển đổi các tệp PNG của bạn sang WebP là khuyến nghị hàng đầu từ Google PageSpeed Insights.",
+  "p2": "Công cụ của chúng tôi nén các hình ảnh PNG của bạn thành định dạng WebP hiện đại, giảm kích thước tệp lên đến <strong>30-50%</strong> trong khi vẫn giữ nền trong suốt và chất lượng sắc nét.",
+  "features": {
+  "smaller": {
+   "title": "Nhỏ Hơn đáng kể",
+   "desc": "WebP cung cấp khả năng nén vượt trội. Tiết kiệm băng thông và không gian lưu trữ ngay lập tức."
+  },
+  "transparency": {
+   "title": "Giữ Nguyên Độ Trong Suốt",
+   "desc": "Khác với việc chuyển đổi sang JPG, chuyển từ PNG sang WebP vẫn giữ nguyên kênh alpha (độ trong suốt của nền) của bạn."
+  },
+  "adjustable": {
+   "title": "Chất Lượng Có Thể Điều Chỉnh",
+   "desc": "Bạn kiểm soát sự cân bằng. Chọn 90% cho chất lượng cao hoặc 70% để tiết kiệm tối đa."
+  }
+  },
+  "how_to": {
+  "title": "Cách Chuyển Đổi?",
+  "list": [
+   "Kéo và thả tệp của bạn.",
+   "Sử dụng thanh trượt. Chúng tôi khuyên bạn nên để 80-90% để có sự cân bằng tốt.",
+   "Nhấp vào nút \"Chuyển Đổi\".",
+   "Tệp .webp nhẹ hơn của bạn đã sẵn sàng."
+  ]
+  },
+  "why": {
+  "title": "Tại sao nên dùng WebP?",
+  "p1": "WebP là một định dạng hình ảnh hiện đại được phát triển bởi Google.",
+  "list": [
+   "Tăng cường SEO: Các trang web nhanh hơn sẽ có thứ hạng tốt hơn trên Google.",
+   "Thân thiện với di động: Sử dụng ít dữ liệu hơn cho khách truy cập di động.",
+   "hỗ trợ: Được hỗ trợ bởi Chrome, Firefox, Safari, Edge và tất cả các trình duyệt hiện đại."
+  ]
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một hình ảnh PNG hợp lệ"
+ }
+ },
+ "svg-to-jpg-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi SVG Sang JPG - Chuyển Đổi Vector Sang Raster | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi tệp vector SVG sang ảnh JPG trực tuyến. Tự động lấp đầy nền trong suốt bằng màu trắng để có đầu ra JPG hoàn hảo.",
+  "h1": "Bộ Chuyển Đổi SVG Sang JPG",
+  "subtitle": "Chuyển đổi tệp vector SVG sang ảnh JPG trực tuyến với tính năng tự động lấp đầy nền"
+ },
+ "input": {
+  "title": "Upload SVG File",
+  "desc": "Drag & drop your SVG file here",
+  "drop_title": "Drop SVG file here",
+  "drop_desc": "hỗ trợ SVG, SVGZ (Tối đa 10MB)"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "note": "Ghi chú:",
+  "note_text": "Nền trong suốt sẽ được lấp đầy bằng màu trắng.",
+  "output_format": "Định Dạng Đầu Ra:",
+  "scale_label": "Hệ Số Phân Giải (Tỷ Lệ)",
+  "scale_1": "1x (Kích Thước Gốc)",
+  "scale_2": "2x (Độ Phân Giải Cao)",
+  "scale_4": "4x (Độ Phân Giải Cực Cao)",
+  "btn_convert": "Chuyển Đổi Sang JPG & Tải Xuống"
+ },
+ "content": {
+  "title": "Chuyển Đổi Định Dạng SVG Sang JPG",
+  "p1": "Cần sử dụng logo trong tài liệu hoặc trên trang web không chấp nhận tệp vector? <strong>Bộ Chuyển Đổi SVG Sang JPG</strong> của chúng tôi là câu trả lời.",
+  "p2": "Nó tạo ra một tệp hình ảnh có độ tương thích cao từ nguồn vector của bạn. Chúng tôi tự động xử lý độ trong suốt bằng cách thêm một nền trắng sạch sẽ, đảm bảo đồ họa của bạn trông chuyên nghiệp trên mọi phương tiện.",
+  "features": {
+  "compatibility": {
+   "title": "Khả Năng Tương Thích Tối Đa",
+   "desc": "JPG có thể được mở bởi hầu như mọi thiết bị kỹ thuật số và phần mềm được tạo ra trong 30 năm qua."
+  },
+  "resolution": {
+   "title": "Độ Phân Giải Cao 4x",
+   "desc": "Phóng to SVG của bạn trước khi lưu để đảm bảo ảnh JPG của bạn sắc nét, không bị mờ."
+  },
+  "secure": {
+   "title": "An Toàn phía máy khách",
+   "desc": "Processing happens in your browser. We never see your files."
+  }
+  },
+  "how_to": {
+  "title": "Hướng Dẫn Dễ Dàng",
+  "list": [
+   "Nhấp vào \"Tải lên\" hoặc kéo tệp của bạn vào hộp ở giữa.",
+   "Chọn một hệ số tỷ lệ (ví dụ: 2x hoặc 4x) để có kết quả chất lượng cao hơn.",
+   "Quan sát hình ảnh. Lưu ý rằng nền trong suốt bây giờ đã là màu trắng.",
+   "Nhấp vào \"Chuyển Đổi Sang JPG & Tải Xuống\"."
+  ]
+  },
+  "why": {
+  "title": "Tại sao nên chọn JPG thay vì PNG cho Vector?",
+  "p1": "Trong khi PNG hỗ trợ độ trong suốt, JPG lại tạo ra kích thước tệp nhỏ hơn cho các hình ảnh phức tạp và nhiều màu sắc.",
+  "list": [
+   "Tệp nhỏ hơn: Tốt hơn cho email và tệp đính kèm.",
+   "Không có vấn đề về độ trong suốt: Một số trình xem hiển thị độ trong suốt thành màu đen. JPG buộc phải có nền trắng, đảm bảo logo của bạn dễ đọc."
+  ]
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một hình ảnh SVG hợp lệ"
+ }
+ },
+ "svg-to-png-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi SVG Sang PNG - Rasterize Hình Ảnh SVG | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi Đồ họa Vector Có thể mở rộng (SVG) sang hình ảnh PNG ngay lập tức. Hoàn hảo để đảm bảo khả năng tương thích với các ứng dụng không hỗ trợ tệp vector.",
+  "h1": "Bộ Chuyển Đổi SVG Sang PNG",
+  "subtitle": "Chuyển đổi Đồ họa Vector Có thể mở rộng (SVG) sang hình ảnh PNG ngay lập tức"
+ },
+ "input": {
+  "title": "Upload SVG File",
+  "desc": "Drag & drop your SVG file here",
+  "drop_title": "Drop SVG file here",
+  "drop_desc": "hỗ trợ SVG, SVGZ (Tối đa 10MB)"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "checkerboard": "Nền ca-rô biểu thị độ trong suốt",
+  "output_format": "Định Dạng Đầu Ra:",
+  "scale_label": "Hệ Số Phân Giải (Tỷ Lệ)",
+  "scale_1": "1x (Kích Thước Gốc)",
+  "scale_2": "2x (Độ Phân Giải Cao)",
+  "scale_4": "4x (Độ Phân Giải Cực Cao)",
+  "btn_convert": "Chuyển Đổi Sang PNG & Tải Xuống"
+ },
+ "content": {
+  "title": "Rasterize SVG Sang PNG Độ Phân Giải Cao",
+  "p1": "Đồ họa Vector Có thể mở rộng (SVG) hoàn hảo cho trang web, nhưng không thể sử dụng trên mạng xã hội, trong tài liệu Word hoặc làm tệp đính kèm email.",
+  "p2": "<strong>Bộ Chuyển Đổi SVG Sang PNG</strong> của chúng tôi cho phép bạn biến logo hoặc biểu tượng vector của bạn thành hình ảnh PNG trong suốt chất lượng cao. Với <strong>tính năng thay đổi tỷ lệ</strong> độc đáo của chúng tôi, bạn có thể tạo ra các hình ảnh có độ phân giải cực cao mà không bị vỡ hình.",
+  "features": {
+  "transparency": {
+   "title": "Giữ Nguyên Độ Trong Suốt",
+   "desc": "Không giống như JPG, PNG giữ cho nền luôn trong suốt. Hoàn hảo cho các logo và hình phủ (overlay)."
+  },
+  "scaling": {
+   "title": "Tỷ Lệ Lên Đến 4x",
+   "desc": "Xuất ở kích thước gấp 4 lần so với bản gốc. Có được các cạnh sắc nét ngay cả với các định dạng in lớn."
+  },
+  "browser": {
+   "title": "Dựa Trên Trình Duyệt",
+   "desc": "Fast and secure. No files are uploaded to any server."
+  }
+  },
+  "how_to": {
+  "title": "Cách Chuyển Đổi SVG Sang PNG?",
+  "list": [
+   "Thả tệp `.svg` của bạn vào vùng tải lên.",
+   "Chọn `1x`, `2x`, hoặc `4x` từ trình đơn thả xuống. Tỷ lệ càng cao chất lượng càng tốt.",
+   "Kiểm tra bản xem trước hình ảnh bên trái. Nền ca-rô biểu thị độ trong suốt.",
+   "Nhấn nút để tạo và tải xuống bản PNG của bạn."
+  ]
+  },
+  "why": {
+  "title": "Tại Sao Lại Chuyển Đổi Vector?",
+  "p1": "Vector là các công thức toán học, trong khi PNG là các lưới pixel. Bạn cần pixel cho:",
+  "list": [
+   "Ảnh hồ sơ (Twitter/LinkedIn thường từ chối SVG).",
+   "Nhúng vào email (khả năng hỗ trợ SVG rất kém).",
+   "Sử dụng trong các trình biên tập video hoặc các công cụ đồ họa đơn giản (Canva, Paint)."
+  ]
+  },
+  "faq": {
+  "title": "",
+  "q1": "",
+  "a1": "",
+  "q2": "",
+  "a2": ""
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một hình ảnh SVG hợp lệ"
+ }
+ },
+ "webp-to-jpg-converter": {
+ "meta": {
+  "title": "Bộ Chuyển Đổi WEBP Sang JPG - Chuyển Đổi WebP Sang JPG Trực Tuyến | Optimizo",
+  "desc": "",
+  "description": "Chuyển đổi hình ảnh WebP sang định dạng JPG tiêu chuẩn để có khả năng tương thích rộng rãi. Trình chuyển đổi miễn phí, nhanh chóng và an toàn.",
+  "h1": "Bộ Chuyển Đổi WebP Sang JPG",
+  "subtitle": "Chuyển đổi hình ảnh WebP sang định dạng JPG tiêu chuẩn để có khả năng tương thích rộng rãi"
+ },
+ "input": {
+  "title": "Tải Hình Ảnh WEBP Lên",
+  "desc": "Drag & drop your WEBP file here",
+  "drop_title": "Drop WEBP file here",
+  "drop_desc": "Supports WEBP (Max 10MB)"
+ },
+ "editor": {
+  "image_alt": "Xem Trước",
+  "note": "Ghi chú:",
+  "note_text": "Các nền trong suốt (phổ biến trong WEBP) sẽ được xác minh chuyển sang màu trắng.",
+  "output_format": "Định Dạng Đầu Ra:",
+  "btn_convert": "Chuyển Đổi Sang JPG & Tải Xuống"
+ },
+ "content": {
+  "title": "WebP to JPG: The Compatibility Fixer",
+  "p1": "WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older image viewers, or upload it to platforms that only accept JPG.",
+  "p2": "Our <strong>WebP to JPG Converter</strong> bridges this gap. It takes your highly optimized WebP images and transforms them into the universally compatible JPEG format in milliseconds.",
+  "features": {
+  "universal": {
+   "title": "Universal Support",
+   "desc": "JPG works everywhere: Word docs, PowerPoint, legacy software, and every social media platform."
+  },
+  "secure": {
+   "title": "Xử Lý An Toàn",
+   "desc": "We don't see your files. The conversion is performed locally by your web browser."
+  },
+  "smart": {
+   "title": "Smart Backgrounds",
+   "desc": "Automatically detects transparent pixels in WebP and fills them with a clean white background."
+  }
+  },
+  "how_to": {
+  "title": "Step-by-Step Guide",
+  "list": [
+   "Click the box or drag your WebP image onto the page.",
+   "The tool will display a preview of your image.",
+   "Click the \"Convert to JPG\" button. The system handles transparency and compression automatically.",
+   "Your new .jpg file will download instantly."
+  ]
+  },
+  "why": {
+  "title": "Why Convert WebP?",
+  "list": [
+   "Editing: Many desktop editors typically don't support WebP out of the box.",
+   "Email: Outlook and other email clients might not render WebP inline images correctly.",
+   "Printing: Print shops often require standard JPG or TIFF files."
+  ]
+  },
+  "faq": {
+  "title": "FAQ",
+  "q1": "What happens to transparent backgrounds?",
+  "a1": "Since JPG doesn't support transparency, our tool replaces transparent areas with white. This is perfect for product photos and logos.",
+  "q2": "Is it safe?",
+  "a2": "Yes. Unlike other converters that upload your file to a server, this tool runs 100% on your device. Your dữ liệu remains private."
+  }
+ },
+ "js": {
+  "invalid_image": "Vui lòng tải lên một hình ảnh WEBP hợp lệ"
+ }
+ }
 }

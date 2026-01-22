@@ -1,192 +1,468 @@
 {
-    "duplicate-line-remover": {
-        "meta": {
-            "title": "Xóa Dòng Trùng Lặp - Công Cụ Trực Tuyến Miễn Phí",
-            "description": "Dễ dàng xóa các dòng trùng lặp khỏi danh sách văn bản của bạn. Nhanh chóng, an toàn và miễn phí.",
-            "h1": "Xóa Dòng Trùng Lặp",
-            "subtitle": "Làm sạch danh sách và loại bỏ nội dung trùng lặp ngay lập tức"
-        },
-        "editor": {
-            "label_input": "Văn bản đầu vào",
-            "ph_input": "Dán văn bản của bạn vào đây...",
-            "lines_count": "Số dòng:",
-            "label_output": "Văn bản sau khi xóa",
-            "btn_remove": "Xóa dòng trùng",
-            "btn_copy": "Sao chép kết quả",
-            "label_sensitive": "Phân biệt hoa thường"
-        },
-        "js": {
-            "removed_msg": "Đã xóa :count dòng trùng lặp",
-            "copied": "Đã sao chép vào bộ nhớ tạm!"
-        }
-    },
-    "file-difference-checker": {
-        "meta": {
-            "title": "Kiểm Tra Khác Biệt File - So Sánh Văn Bản Online",
-            "description": "So sánh hai đoạn văn bản hoặc tệp tin để tìm ra sự khác biệt và thay đổi ngay lập tức.",
-            "h1": "Kiểm Tra Khác Biệt File",
-            "subtitle": "So sánh và phân tích dữ liệu của bạn một cách liền mạch"
-        },
-        "editor": {
-            "original_text": "Văn bản gốc",
-            "ph_original": "Nhập văn bản thứ nhất tại đây...",
-            "modified_text": "Văn bản đã sửa",
-            "ph_modified": "Nhập văn bản thứ hai tại đây...",
-            "btn_compare": "So sánh văn bản",
-            "result_label": "Sự khác biệt tìm thấy"
-        },
-        "content": {
-            "hero_title": "Kiểm Tra Khác Biệt File & Văn Bản",
-            "hero_subtitle": "Tìm kiếm thay đổi giữa hai phiên bản văn bản",
-            "p1": "Công cụ này cho phép bạn so sánh nhanh chóng hai khối văn bản hoặc tệp tin. Các điểm khác biệt, phần bị xóa và phần được thêm vào sẽ được làm nổi bật để dễ dàng phân tích.",
-            "features_title": "Tính năng",
-            "uses_title": "Trường hợp sử dụng",
-            "how_title": "Hướng dẫn sử dụng",
-            "faq_title": "Câu hỏi thường gặp"
-        },
-        "js": {
-            "error_empty": "Vui lòng nhập văn bản vào cả hai ô để so sánh"
-        }
-    },
-    "lorem-ipsum-generator": {
-        "meta": {
-            "title": "Trình tạo Lorem Ipsum - Văn Bản Mẫu",
-            "description": "Tạo văn bản mẫu Lorem Ipsum chuyên nghiệp cho các thiết kế và bố cục của bạn.",
-            "h1": "Trình tạo Lorem Ipsum",
-            "subtitle": "Văn bản mẫu chuyên nghiệp cho mọi dự án"
-        },
-        "editor": {
-            "label_count": "Số lượng",
-            "label_type": "Loại đơn vị",
-            "opt_paragraphs": "Đoạn văn",
-            "opt_sentences": "Câu",
-            "opt_words": "Từ",
-            "label_start_lorem": "Bắt đầu bằng 'Lorem ipsum'",
-            "btn_generate": "Tạo ngay",
-            "btn_copy": "Sao chép văn bản",
-            "label_output": "Văn bản đã tạo"
-        },
-        "content": {
-            "about_title": "Về Lorem Ipsum",
-            "about_desc": "Lorem Ipsum đã là văn bản mẫu tiêu chuẩn của ngành kể từ những năm 1500.",
-            "p1": "Tạo ngay văn bản giả chất lượng cao cho các dự án thiết kế web, in ấn hoặc phát triển của bạn."
-        },
-        "js": {
-            "success_generate": "Đã tạo văn bản thành công!",
-            "error_copy": "Lỗi khi sao chép",
-            "success_copy": "Đã sao chép!"
-        }
-    },
-    "morse-to-text-converter": {
-        "meta": {
-            "title": "Chuyển Đổi Mã Morse Sang Văn Bản - Công Cụ Online",
-            "description": "Chuyển đổi mã Morse thành văn bản thuần túy ngay lập tức. Nhanh chóng, an toàn và dễ sử dụng.",
-            "h1": "Chuyển Đổi Mã Morse Sang Văn Bản",
-            "subtitle": "Giải mã Morse một cách dễ dàng"
-        },
-        "editor": {
-            "label_input": "Nhập mã Morse",
-            "ph_input": "... --- ...",
-            "btn_decode": "Giải mã sang văn bản",
-            "btn_clear": "Xóa sạch",
-            "btn_copy": "Sao chép",
-            "label_output": "Văn bản giải mã",
-            "ph_output": "SOS"
-        },
-        "content": {
-            "hero_title": "Bộ Giải Mã Morse Sang Văn Bản Miễn Phí",
-            "hero_subtitle": "Dịch mã Morse sang văn bản dễ đọc",
-            "p1": "Giải mã Morse sang văn bản ngay lập tức. Chỉ cần nhập các dấu chấm (.) và dấu gạch (-) cách nhau bởi dấu cách.",
-            "features_title": "✨ Tính năng",
-            "features": {
-                "standard": {
-                    "title": "Giải mã chuẩn",
-                    "desc": "Sử dụng tiêu chuẩn mã Morse quốc tế"
-                },
-                "instant": {
-                    "title": "Xử lý tức thì",
-                    "desc": "Chuyển đổi trong mili giây"
-                },
-                "privacy": {
-                    "title": "Bảo mật",
-                    "desc": "Toàn bộ quá trình diễn ra trên trình duyệt của bạn"
-                }
-            }
-        },
-        "js": {
-            "error_empty": "Vui lòng nhập mã Morse để giải mã",
-            "success_decode": "Giải mã Morse thành công!",
-            "success_copy": "Đã sao chép vào bộ nhớ tạm!"
-        }
-    },
-    "text-reverser": {
-        "meta": {
-            "title": "Đảo Ngược Văn Bản - Công Cụ Trực Tuyến",
-            "description": "Đảo ngược văn bản của bạn ngay lập tức. Tạo văn bản phản chiếu để giải đố hoặc giải trí.",
-            "h1": "Đảo Ngược Văn Bản",
-            "subtitle": "Đảo ngược chuỗi ký tự chỉ với một cú nhấp"
-        },
-        "editor": {
-            "label_input": "Văn bản cần đảo ngược",
-            "ph_input": "Xin chào thế giới",
-            "btn_reverse": "Đảo ngược văn bản",
-            "btn_clear": "Xóa sạch",
-            "btn_copy": "Sao chép",
-            "label_output": "Văn bản đảo ngược",
-            "ph_output": "iới thề hoàhc niX"
-        },
-        "content": {
-            "p1": "Đảo ngược văn bản của bạn ngay lập tức. Công cụ này lật ngược văn bản từng ký tự một, tạo ra một phiên bản phản chiếu."
-        },
-        "js": {
-            "error_empty": "Vui lòng nhập văn bản để đảo ngược",
-            "success_reverse": "Đã đảo ngược văn bản thành công!",
-            "success_copy": "Đã sao chép!"
-        }
-    },
-    "text-to-morse-converter": {
-        "meta": {
-            "title": "Chuyển Đổi Văn Bản Sang Mã Morse - Miễn Phí",
-            "description": "Chuyển đổi văn bản của bạn sang mã Morse trực tuyến. Hoàn hảo cho tin nhắn mã hóa và học tập.",
-            "h1": "Chuyển Đổi Văn Bản Sang Mã Morse",
-            "subtitle": "Dịch thông điệp của bạn sang hệ Morse"
-        },
-        "editor": {
-            "label_input": "Nhập văn bản",
-            "ph_input": "SOS",
-            "btn_convert": "Chuyển sang Morse",
-            "btn_clear": "Xóa sạch",
-            "btn_copy": "Sao chép",
-            "label_output": "Kết quả mã Morse",
-            "ph_output": "... --- ..."
-        },
-        "js": {
-            "error_empty": "Vui lòng nhập văn bản để chuyển đổi",
-            "success_convert": "Đã chuyển đổi sang mã Morse thành công!",
-            "success_copy": "Đã sao chép!"
-        }
-    },
-    "word-counter": {
-        "meta": {
-            "title": "Bộ Đếm Từ - Đếm Từ, Ký Tự & Nhiều Hơn",
-            "description": "Đếm từ, ký tự và câu ngay lập tức. Công cụ miễn phí cho nhà văn và học sinh.",
-            "h1": "Bộ Đếm Từ",
-            "subtitle": "Thống kê văn bản chi tiết ngay trong tầm tay"
-        },
-        "form": {
-            "label": "Văn bản của bạn",
-            "placeholder": "Dán hoặc nhập văn bản tại đây..."
-        },
-        "stats": {
-            "words": "Số từ",
-            "characters": "Số ký tự",
-            "sentences": "Số câu",
-            "reading_time": "Thời gian đọc",
-            "paragraphs": "Số đoạn văn",
-            "long_sentences": "Câu dài",
-            "short_sentences": "Câu ngắn",
-            "chars_no_spaces": "Ký tự (không dấu cách)",
-            "avg_word_length": "Độ dài từ trung bình"
-        }
-    }
+ "duplicate-line-remover": {
+ "meta": {
+  "title": "Xóa Dòng Trùng Lặp - Công Cụ Trực Tuyến Miễn Phí",
+  "description": "Dễ dàng xóa các dòng trùng lặp khỏi danh sách văn bản của bạn. Nhanh chóng, an toàn và miễn phí.",
+  "h1": "Xóa Dòng Trùng Lặp",
+  "subtitle": "Làm sạch danh sách và loại bỏ nội dung trùng lặp ngay lập tức"
+ },
+ "editor": {
+  "label_input": "Văn bản đầu vào",
+  "ph_input": "Dán văn bản của bạn vào đây..",
+  "lines_count": "Số dòng:",
+  "label_output": "Văn bản sau khi xóa",
+  "btn_remove": "Xóa dòng trùng",
+  "btn_copy": "Sao chép kết quả",
+  "label_sensitive": "Phân biệt hoa thường"
+ },
+ "js": {
+  "removed_msg": "Đã xóa :count dòng trùng lặp",
+  "copied": "Đã sao chép vào bộ nhớ tạm!"
+ }
+ },
+ "file-difference-checker": {
+ "meta": {
+  "title": "Kiểm Tra Khác Biệt File - So Sánh Văn Bản Online",
+  "description": "So sánh hai đoạn văn bản hoặc tệp tin để tìm ra sự khác biệt và thay đổi ngay lập tức.",
+  "h1": "Kiểm Tra Khác Biệt File",
+  "subtitle": "So sánh và phân tích dữ liệu của bạn một cách liền mạch"
+ },
+ "editor": {
+  "original_text": "Văn bản gốc",
+  "ph_original": "Nhập văn bản thứ nhất tại đây..",
+  "modified_text": "Văn bản đã sửa",
+  "ph_modified": "Nhập văn bản thứ hai tại đây..",
+  "btn_compare": "So sánh văn bản",
+  "result_label": "Sự khác biệt tìm thấy"
+ },
+ "content": {
+  "hero_title": "Kiểm Tra Khác Biệt File & Văn Bản",
+  "hero_subtitle": "Tìm kiếm thay đổi giữa hai phiên bản văn bản",
+  "p1": "Công cụ này cho phép bạn so sánh nhanh chóng hai khối văn bản hoặc tệp tin. Các điểm khác biệt, phần bị xóa và phần được thêm vào sẽ được làm nổi bật để dễ dàng phân tích.",
+  "features_title": "Tính năng",
+  "uses_title": "Trường hợp sử dụng",
+  "how_title": "Hướng dẫn sử dụng",
+  "faq_title": "Câu hỏi thường gặp"
+ },
+ "js": {
+  "error_empty": "Vui lòng nhập văn bản vào cả hai ô để so sánh"
+ }
+ },
+ "lorem-ipsum-generator": {
+ "meta": {
+  "title": "Trình tạo Lorem Ipsum - Văn Bản Mẫu",
+  "description": "Tạo văn bản mẫu Lorem Ipsum chuyên nghiệp cho các thiết kế và bố cục của bạn.",
+  "h1": "Trình tạo Lorem Ipsum",
+  "subtitle": "Văn bản mẫu chuyên nghiệp cho mọi dự án"
+ },
+ "editor": {
+  "label_count": "số lượng",
+  "label_type": "Loại đơn vị",
+  "opt_paragraphs": "Đoạn văn",
+  "opt_sentences": "Câu",
+  "opt_words": "Từ",
+  "label_start_lorem": "Bắt đầu bằng 'Lorem ipsum'",
+  "btn_generate": "Tạo ngay",
+  "btn_copy": "Sao chép văn bản",
+  "label_output": "Văn bản đã tạo"
+ },
+ "content": {
+  "about_title": "Về Lorem Ipsum",
+  "about_desc": "Lorem Ipsum đã là văn bản mẫu tiêu chuẩn của ngành kể từ những năm 1500.",
+  "p1": "Tạo ngay văn bản giả chất lượng cao cho các dự án thiết kế web, in ấn hoặc phát triển của bạn."
+ },
+ "js": {
+  "success_generate": "Đã tạo văn bản thành công!",
+  "error_copy": "Lỗi khi sao chép",
+  "success_copy": "Đã sao chép!"
+ }
+ },
+ "morse-to-text-converter": {
+ "meta": {
+  "title": "Chuyển Đổi Mã Morse Sang Văn Bản - Công Cụ Online",
+  "description": "Chuyển đổi mã Morse thành văn bản thuần túy ngay lập tức. Nhanh chóng, an toàn và dễ sử dụng.",
+  "h1": "Chuyển Đổi Mã Morse Sang Văn Bản",
+  "subtitle": "Giải mã Morse một cách dễ dàng"
+ },
+ "editor": {
+  "label_input": "Nhập mã Morse",
+  "ph_input": ".. --- ..",
+  "btn_decode": "Giải mã sang văn bản",
+  "btn_clear": "Xóa sạch",
+  "btn_copy": "Sao chép",
+  "label_output": "Văn bản giải mã",
+  "ph_output": "SOS"
+ },
+ "content": {
+  "hero_title": "Bộ Giải Mã Morse Sang Văn Bản Miễn Phí",
+  "hero_subtitle": "Dịch mã Morse sang văn bản dễ đọc",
+  "p1": "Giải mã Morse sang văn bản ngay lập tức. Chỉ cần nhập các dấu chấm (.) và dấu gạch (-) cách nhau bởi dấu cách.",
+  "features_title": "✨ Tính năng",
+  "features": {
+  "standard": {
+   "title": "Giải mã chuẩn",
+   "desc": "Sử dụng tiêu chuẩn mã Morse quốc tế"
+  },
+  "instant": {
+   "title": "Xử lý tức thì",
+   "desc": "Chuyển đổi trong mili giây"
+  },
+  "privacy": {
+   "title": "Bảo mật",
+   "desc": "Toàn bộ quá trình diễn ra trên trình duyệt của bạn"
+  },
+  "bulk": {
+   "title": "Giải Mã Hàng Loạt",
+   "desc": "Giải mã nhiều từ cùng một lúc"
+  },
+  "alphanum": {
+   "title": "Chữ Cái & Số",
+   "desc": "Giải mã A-Z và 0-9"
+  },
+  "free": {
+   "title": "100% Miễn Phí",
+   "desc": "Không giới hạn hoặc yêu cầu đăng ký"
+  }
+  },
+  "uses_title": "🎯 Trường Hợp Sử Dụng Phổ Biến",
+  "uses": {
+  "learn": {
+   "title": "📚 Học Mã Morse",
+   "desc": "Luyện tập giải mã Morse để cải thiện kỹ năng của bạn"
+  },
+  "decode": {
+   "title": "🔓 Giải Mã Tin Nhắn",
+   "desc": "Giải mã tin nhắn Morse từ bạn bè hoặc câu đố"
+  },
+  "games": {
+   "title": "🎮 Trò Chơi & Câu Đố",
+   "desc": "Giải câu đố Morse trong trò chơi và phòng thoát hiểm"
+  },
+  "radio": {
+   "title": "📡 Radio Nghiệp Dư",
+   "desc": "Giải mã truyền dẫn radio nghiệp dư và luyện tập CW"
+  },
+  "edu": {
+   "title": "🎓 Giáo Dục",
+   "desc": "Dạy học sinh về hệ thống truyền thông và mã hóa"
+  },
+  "emergency": {
+   "title": "🚨 Tín Hiệu Khẩn Cấp",
+   "desc": "Giải mã tín hiệu cấp cứu và truyền thông khẩn cấp"
+  }
+  },
+  "how_title": "📚 Cách Sử Dụng",
+  "how_steps": {
+  "1": {
+   "title": "Nhập Mã Morse:",
+   "desc": "Nhập dấu chấm (.) và dấu gạch (-) cách nhau bởi dấu cách"
+  },
+  "2": {
+   "title": "Nhấp Giải Mã:",
+   "desc": "Press \"Decode to Text\" button"
+  },
+  "3": {
+   "title": "Xem Lại Kết Quả:",
+   "desc": "Kiểm tra kết quả văn bản đã giải mã"
+  },
+  "4": {
+   "title": "Sao Chép Kết Quả:",
+   "desc": "Click \"Copy\" to copy to clipboard"
+  },
+  "5": {
+   "title": "Sử Dụng Văn Bản:",
+   "desc": "Sử dụng tin nhắn đã giải mã"
+  }
+  },
+  "examples_title": "",
+  "samples": [],
+  "faq_title": "❓ Câu Hỏi Thường Gặp",
+  "faq": {
+  "q1": "Làm thế nào để định dạng đầu vào mã Morse?",
+  "a1": "Separate each letter with a space. Use / for word spaces. Example: \".. --- ..\" for SOS.",
+  "q2": "Nếu tôi mắc lỗi thì sao?",
+  "a2": "Các mẫu mã Morse không hợp lệ sẽ bị bỏ qua. Đảm bảo dấu chấm và dấu gạch được tách bởi dấu cách.",
+  "q3": "Tôi có thể giải mã số không?",
+  "a3": "Có! Công cụ giải mã số 0-9 từ các mẫu mã Morse của chúng.",
+  "q4": "Làm thế nào để tách từ?",
+  "a4": "Sử dụng dấu gạch chéo (/) để tách từ trong mã Morse.",
+  "q5": "Công cụ này có miễn phí không?",
+  "a5": "Có! Hoàn toàn miễn phí không giới hạn. Tất cả xử lý diễn ra trong trình duyệt của bạn để bảo mật."
+  }
+ },
+ "js": {
+  "error_empty": "Vui lòng nhập mã Morse để giải mã",
+  "success_decode": "Giải mã Morse thành công!",
+  "success_copy": "Đã sao chép vào bộ nhớ tạm!",
+  "error_copy": "Không có gì để sao chép! Vui lòng giải mã mã Morse trước."
+ }
+ },
+ "text-reverser": {
+ "meta": {
+  "title": "Đảo Ngược Văn Bản - Công Cụ Trực Tuyến",
+  "description": "Đảo ngược văn bản của bạn ngay lập tức. Tạo văn bản phản chiếu để giải đố hoặc giải trí.",
+  "h1": "Đảo Ngược Văn Bản",
+  "subtitle": "Đảo ngược chuỗi ký tự chỉ với một cú nhấp"
+ },
+ "editor": {
+  "label_input": "Văn bản cần đảo ngược",
+  "ph_input": "Xin chào thế giới",
+  "btn_reverse": "Đảo ngược văn bản",
+  "btn_clear": "Xóa sạch",
+  "btn_copy": "Sao chép",
+  "label_output": "Văn bản đảo ngược",
+  "ph_output": "iới thề hoàhc niX"
+ },
+ "content": {
+  "p1": "Đảo ngược văn bản của bạn ngay lập tức. Công cụ này lật ngược văn bản từng ký tự một, tạo ra một phiên bản phản chiếu.",
+  "features": {
+  "char": {
+   "title": "Đảo Ngược Ký Tự",
+   "desc": "Đảo ngược văn bản từng ký tự một"
+  },
+  "instant": {
+   "title": "Kết Quả Tức Thì",
+   "desc": "Đảo ngược văn bản trong mili giây"
+  },
+  "privacy": {
+   "title": "Bảo Vệ Quyền Riêng Tư",
+   "desc": "Tất cả xử lý diễn ra trong trình duyệt của bạn"
+  },
+  "bulk": {
+   "title": "Xử Lý Hàng Loạt",
+   "desc": "Đảo ngược nhiều dòng cùng một lúc"
+  },
+  "formatting": {
+   "title": "Bảo Toàn Định Dạng",
+   "desc": "Duy trì khoảng cách và ký tự đặc biệt"
+  },
+  "free": {
+   "title": "100% Miễn Phí",
+   "desc": "Không giới hạn hoặc yêu cầu đăng ký"
+  }
+  },
+  "uses_title": "Trường Hợp Sử Dụng Phổ Biến",
+  "uses": {
+  "puzzles": {
+   "title": "Câu Đố & Trò Chơi",
+   "desc": "Tạo câu đố từ, câu đố và trò chơi trí tuệ với văn bản đảo ngược"
+  },
+  "encoding": {
+   "title": "Mã Hóa Đơn Giản",
+   "desc": "Tạo tin nhắn mã hóa cơ bản để giải trí hoặc làm rối đơn giản"
+  },
+  "palindrome": {
+   "title": "Kiểm Tra Palindrome",
+   "desc": "Kiểm tra xem từ hoặc cụm từ có phải là palindrome bằng cách so sánh với phiên bản đảo ngược"
+  },
+  "creative": {
+   "title": "Viết Sáng Tạo",
+   "desc": "Thêm nét nghệ thuật vào thơ và nội dung sáng tạo"
+  },
+  "social": {
+   "title": "Mạng Xã Hội",
+   "desc": "Tạo bài đăng và bình luận độc đáo với văn bản đảo ngược"
+  },
+  "testing": {
+   "title": "Kiểm Tra",
+   "desc": "Kiểm tra các hàm thao tác chuỗi trong lập trình"
+  }
+  },
+  "how_to": {
+  "title": "Cách Sử Dụng",
+  "step1": "Nhập Văn Bản",
+  "step1_desc": "Nhập hoặc dán văn bản bạn muốn đảo ngược",
+  "step2": "Nhấp Đảo Ngược",
+  "step2_desc": "Press \"Reverse Text\" button",
+  "step3": "Xem Lại Kết Quả",
+  "step3_desc": "Kiểm tra kết quả văn bản đảo ngược",
+  "step4": "Sao Chép Kết Quả",
+  "step4_desc": "Click \"Copy\" to copy to clipboard",
+  "step5": "Sử Dụng Ở Bất Cứ Đâu",
+  "step5_desc": "Dán văn bản đảo ngược ở bất cứ đâu cần thiết"
+  },
+  "examples_title": "Ví Dụ Đảo Ngược",
+  "examples": {
+  "simple": "Văn Bản Đơn Giản:",
+  "phrases": "Cụm Từ:",
+  "palindromes": "Palindrome:",
+  "numbers": "Số:"
+  },
+  "faq_title": "Câu Hỏi Thường Gặp",
+  "faq": {
+  "q1": "Đảo ngược văn bản hoạt động như thế nào?",
+  "a1": "Công cụ đảo ngược thứ tự các ký tự trong văn bản của bạn. Ký tự cuối cùng trở thành đầu tiên, ký tự thứ hai từ cuối trở thành thứ hai, v.v.",
+  "q2": "Nó có bảo toàn khoảng cách không?",
+  "a2": "Có! Tất cả các ký tự bao gồm khoảng cách, dấu câu và ký tự đặc biệt được bảo toàn và đảo ngược theo thứ tự.",
+  "q3": "Tôi có thể đảo ngược lại không?",
+  "a3": "Có! Chỉ cần dán văn bản đảo ngược trở lại vào đầu vào và đảo ngược lại để có văn bản gốc.",
+  "q4": "Palindrome là gì?",
+  "a4": "Palindromes are words or phrases that read the same forwards and backwards, like \"racecar\" or \"madam\". Use this tool to test them!",
+  "q5": "Công cụ này có miễn phí không?",
+  "a5": "Yes! Completely free with no limits. Tất cả xử lý diễn ra trong trình duyệt của bạn for privacy and speed."
+  }
+ },
+ "js": {
+  "error_empty": "Vui lòng nhập văn bản để đảo ngược",
+  "success_reverse": "Đã đảo ngược văn bản thành công!",
+  "success_copy": "Đã sao chép!",
+  "error_no_copy": "Không có gì để sao chép! Vui lòng đảo ngược văn bản trước."
+ }
+ },
+ "text-to-morse-converter": {
+ "meta": {
+  "title": "Chuyển Đổi Văn Bản Sang Mã Morse - Miễn Phí",
+  "description": "Chuyển đổi văn bản của bạn sang mã Morse trực tuyến. Hoàn hảo cho tin nhắn mã hóa và học tập.",
+  "h1": "Chuyển Đổi Văn Bản Sang Mã Morse",
+  "subtitle": "Dịch thông điệp của bạn sang hệ Morse"
+ },
+ "editor": {
+  "label_input": "Nhập văn bản",
+  "ph_input": "SOS",
+  "btn_convert": "Chuyển sang Morse",
+  "btn_clear": "Xóa sạch",
+  "btn_copy": "Sao chép",
+  "label_output": "Kết quả mã Morse",
+  "ph_output": ".. --- .."
+ },
+ "js": {
+  "error_empty": "Vui lòng nhập văn bản để chuyển đổi",
+  "success_convert": "Đã chuyển đổi sang mã Morse thành công!",
+  "success_copy": "Đã sao chép!",
+  "error_no_copy": "Không có gì để sao chép! Vui lòng chuyển đổi văn bản trước."
+ },
+ "content": {
+  "p1": "Chuyển đổi văn bản sang mã Morse ngay lập tức với công cụ chuyển đổi trực tuyến miễn phí của chúng tôi. Mã Morse sử dụng dấu chấm (.) và dấu gạch (-) để biểu diễn chữ cái và số. Hoàn hảo để học mã Morse, luyện tập truyền thông khẩn cấp hoặc tạo tin nhắn mã hóa.",
+  "features": {
+  "standard": {
+   "title": "Mã Morse Tiêu Chuẩn",
+   "desc": "Sử dụng tiêu chuẩn mã Morse quốc tế"
+  },
+  "instant": {
+   "title": "Mã Hóa Tức Thì",
+   "desc": "Chuyển đổi sang mã Morse trong mili giây"
+  },
+  "privacy": {
+   "title": "Bảo Vệ Quyền Riêng Tư",
+   "desc": "Tất cả xử lý diễn ra trong trình duyệt của bạn"
+  },
+  "bulk": {
+   "title": "Xử Lý Hàng Loạt",
+   "desc": "Convert multiple words at once"
+  },
+  "alphanumeric": {
+   "title": "Chữ Cái & Số",
+   "desc": "hỗ trợ A-Z và 0-9"
+  },
+  "free": {
+   "title": "100% Miễn Phí",
+   "desc": "Không giới hạn hoặc yêu cầu đăng ký"
+  }
+  },
+  "uses_title": "Trường Hợp Sử Dụng Phổ Biến",
+  "uses": {
+  "learning": {
+   "title": "Học Mã Morse",
+   "desc": "Luyện tập và học mã Morse bằng cách chuyển đổi từ và cụm từ quen thuộc"
+  },
+  "emergency": {
+   "title": "Luyện Tập Khẩn Cấp",
+   "desc": "Học SOS và các tín hiệu khẩn cấp khác trong mã Morse"
+  },
+  "gaming": {
+   "title": "Trò Chơi & Câu Đố",
+   "desc": "Tạo tin nhắn mã hóa cho trò chơi và phòng thoát hiểm"
+  },
+  "radio": {
+   "title": "Ham Radio",
+   "desc": "Luyện tập cho giấy phép radio nghiệp dư và truyền thông"
+  },
+  "edu": {
+   "title": "Giáo Dục",
+   "desc": "Dạy học sinh về lịch sử truyền thông và mã hóa"
+  },
+  "secret": {
+   "title": "Tin Nhắn Bí Mật",
+   "desc": "Tạo tin nhắn mã hóa vui vẻ cho bạn bè"
+  }
+  },
+  "how_to": {
+  "title": "Cách Sử Dụng",
+  "step1": "Nhập Văn Bản",
+  "step1_desc": "Nhập văn bản bạn muốn chuyển đổi",
+  "step2": "Nhấp Chuyển Đổi",
+  "step2_desc": "Press \"Convert to Morse Code\"",
+  "step3": "Xem Lại Kết Quả",
+  "step3_desc": "Kiểm tra kết quả mã Morse",
+  "step4": "Sao Chép Kết Quả",
+  "step4_desc": "Click \"Copy\" to copy to clipboard",
+  "step5": "Sử Dụng Mã Morse",
+  "step5_desc": "Chia sẻ hoặc luyện tập với tin nhắn đã mã hóa"
+  },
+  "examples_title": "Ví Dụ Chuyển Đổi",
+  "examples": {
+  "sos": "Tín Hiệu SOS:",
+  "word": "Từ Đơn Giản:",
+  "numbers": "Số:",
+  "phrase": "Cụm Từ:"
+  },
+  "faq_title": "Câu Hỏi Thường Gặp",
+  "faq": {
+  "q1": "Mã Morse là gì?",
+  "a1": "Mã Morse là phương pháp mã hóa văn bản sử dụng dấu chấm (.) và dấu gạch (-) để biểu diễn chữ cái và số. Nó được phát minh vào những năm 1830 cho truyền thông điện báo.",
+  "q2": "SOS có nghĩa gì trong mã Morse?",
+  "a2": "SOS là .. --- .. (ba dấu chấm, ba dấu gạch, ba dấu chấm). Đó là tín hiệu cấp cứu quốc tế.",
+  "q3": "Tôi có thể chuyển đổi số không?",
+  "a3": "Có! Công cụ hỗ trợ số 0-9, mỗi số có mẫu mã Morse riêng.",
+  "q4": "Mã Morse vẫn được sử dụng ngày nay không?",
+  "a4": "Có! Nó vẫn được sử dụng trong hàng không, truyền thông hàng hải, radio nghiệp dư và như một công cụ hỗ trợ tiếp cận.",
+  "q5": "Công cụ này có miễn phí không?",
+  "a5": "Có! Hoàn toàn miễn phí không giới hạn. Tất cả xử lý diễn ra trong trình duyệt của bạn để bảo mật."
+  }
+ }
+ },
+ "word-counter": {
+ "meta": {
+  "title": "Bộ Đếm Từ - Đếm Từ, Ký Tự & Nhiều Hơn",
+  "description": "Đếm từ, ký tự và câu ngay lập tức. Công cụ miễn phí cho nhà văn và học sinh.",
+  "h1": "Bộ Đếm Từ",
+  "subtitle": "Thống kê văn bản chi tiết ngay trong tầm tay"
+ },
+ "form": {
+  "label": "Văn bản của bạn",
+  "placeholder": "Dán hoặc nhập văn bản tại đây.."
+ },
+ "stats": {
+  "words": "Số từ",
+  "characters": "Số ký tự",
+  "sentences": "Số câu",
+  "reading_time": "Thời gian đọc",
+  "paragraphs": "Số đoạn văn",
+  "long_sentences": "Câu dài",
+  "short_sentences": "Câu ngắn",
+  "chars_no_spaces": "Ký tự (không dấu cách)",
+  "avg_word_length": "Độ dài từ trung bình"
+ },
+ "content": {
+  "main_title": "",
+  "main_description": "",
+  "intro": "",
+  "features_title": "Tính Năng",
+  "feature1_title": "",
+  "feature1_desc": "",
+  "feature2_title": "",
+  "feature2_desc": "",
+  "feature3_title": "",
+  "feature3_desc": "",
+  "feature4_title": "",
+  "feature4_desc": "",
+  "faq_title": "",
+  "faq1_q": "",
+  "faq1_a": "",
+  "faq2_q": "",
+  "faq2_a": "",
+  "faq3_q": "",
+  "faq3_a": ""
+ }
+ }
 }

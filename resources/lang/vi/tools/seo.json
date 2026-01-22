@@ -1,767 +1,767 @@
 {
-    "bing-serp-checker": {
-        "meta": {
-            "title": "[Pending Translation] Bing SERP Checker - Check Bing Search Rankings",
-            "description": "[Pending Translation] Free tool to check your website rankings on Bing search engine. accurate, real-time results for any location and device.",
-            "h1": "[Pending Translation] Bing SERP Checker",
-            "subtitle": "[Pending Translation] Check Bing search rankings for your keywords across different locations"
-        },
-        "interface": {
-            "simulation_title": "[Pending Translation] Bing Search Simulator",
-            "keyword_label": "[Pending Translation] Target Keyword",
-            "location_label": "[Pending Translation] Location (Optional)",
-            "location_placeholder": "[Pending Translation] Enter city, state, or country...",
-            "market_label": "[Pending Translation] Market \/ Language",
-            "device_label": "[Pending Translation] Device Type",
-            "device_desktop": "[Pending Translation] Desktop",
-            "device_mobile": "[Pending Translation] Mobile",
-            "no_login": "[Pending Translation] No Login Required",
-            "realtime_results": "[Pending Translation] Real-Time Results"
-        },
-        "form": {
-            "keyword_placeholder": "[Pending Translation] e.g. digital marketing agency",
-            "button": "[Pending Translation] Check Bing Rankings"
-        },
-        "markets": {
-            "us": "[Pending Translation] United States (English)",
-            "uk": "[Pending Translation] United Kingdom (English)",
-            "ca": "[Pending Translation] Canada (English)",
-            "au": "[Pending Translation] Australia (English)",
-            "de": "[Pending Translation] Germany (German)",
-            "fr": "[Pending Translation] France (French)",
-            "es": "[Pending Translation] Spain (Spanish)",
-            "it": "[Pending Translation] Italy (Italian)",
-            "nl": "[Pending Translation] Netherlands (Dutch)",
-            "br": "[Pending Translation] Brazil (Portuguese)",
-            "jp": "[Pending Translation] Japan (Japanese)",
-            "in": "[Pending Translation] India (English)"
-        },
-        "content": {
-            "main_title": "[Pending Translation] Advanced Bing Rank Checker",
-            "main_subtitle": "[Pending Translation] Monitor your search performance on the second largest search engine in the world. Get accurate, localized ranking data to optimize your Bing SEO strategy.",
-            "feature1_title": "[Pending Translation] 100% Accurate Data",
-            "feature1_desc": "[Pending Translation] We fetch results directly from Bing in real-time, ensuring you see exactly what your potential visitors see.",
-            "feature2_title": "[Pending Translation] Location Specific",
-            "feature2_desc": "[Pending Translation] Check rankings as if you were searching from specific cities or countries. Vital for local SEO campaigns.",
-            "feature3_title": "[Pending Translation] Device Simulation",
-            "feature3_desc": "[Pending Translation] Switch between Desktop and Mobile viewports to analyze how your rankings differ across devices.",
-            "serp_features_title": "[Pending Translation] Analyze Bing SERP Features",
-            "sf_snippets_title": "[Pending Translation] Featured Snippets",
-            "sf_snippets_desc": "[Pending Translation] Bing often provides rich answers and \"intelligent answers\" at position zero. Check if your content is capturing these high-visibility spots.",
-            "sf_places_title": "[Pending Translation] Bing Places",
-            "sf_places_desc": "[Pending Translation] Bing's equivalent of the Local Pack. Crucial for local businesses. Use our \"Location\" feature to verify your <strong>Bing Places<\/strong> ranking.",
-            "sf_visual_title": "[Pending Translation] Visual Search",
-            "sf_visual_desc": "[Pending Translation] Bing heavily emphasizes visual search results. Monitor how your images appear in image-heavy SERP layouts.",
-            "sf_knowledge_title": "[Pending Translation] Knowledge Cards",
-            "sf_knowledge_desc": "[Pending Translation] Rich information panels on the right side. Check if Bing clearly understands your brand entity.",
-            "why_check_title": "[Pending Translation] Why Track Bing Rankings?",
-            "why_check_desc": "[Pending Translation] While Google is dominant, Bing powers search for Yahoo, AOL, and millions of Windows devices. It often has higher conversion rates and less competition. Ignoring Bing means missing out on ~30% of desktop search volume in some markets.",
-            "how_accurate_title": "[Pending Translation] How Accurate is This Tool?",
-            "how_accurate_desc": "[Pending Translation] Our tool performs live queries to Bing's servers at the moment you click \"Check\". We do not use cached data. The results are real-time, unbiased, and reflect the exact SERP (Search Engine Results Page) for the selected parameters."
-        },
-        "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] Is this Bing Rank Checker free?",
-            "a1": "[Pending Translation] Yes! Our **bing rank checker** is completely free. You can check unlimited keywords to optimize your presence on Microsoft's search engine without any cost.",
-            "q2": "[Pending Translation] Does this affect Yahoo rankings?",
-            "a2": "[Pending Translation] Yes, generally. Yahoo Search is largely powered by Bing's index. Optimizing for Bing often leads to improved rankings on Yahoo as well, giving you a \"two-for-one\" SEO benefit.",
-            "q3": "[Pending Translation] Can I check local rankings for a specific city?",
-            "a3": "[Pending Translation] Absolutely. Enter your city in the \"Location\" field. We append specific location parameters to the search query, allowing you to see the <strong>local bing results<\/strong> exactly as a user in that city would see them."
-        }
-    },
-    "broken-links-checker": {
-        "meta": {
-            "title": "[Pending Translation] Broken Link Checker - Find Dead Links on Your Website",
-            "description": "[Pending Translation] Free broken link checker to scan your website for dead links, 404 errors, and fix broken URLs for better SEO.",
-            "h1": "[Pending Translation] Broken Links Checker",
-            "subtitle": "[Pending Translation] Find and fix broken links on your website for better SEO & UX"
-        },
-        "interface": {
-            "scan_title": "[Pending Translation] Broken Links Checker",
-            "scan_subtitle": "[Pending Translation] Find broken links, redirects, and more.",
-            "url_label": "[Pending Translation] Website URL",
-            "button": "[Pending Translation] Scan for Broken Links",
-            "button_scanning": "[Pending Translation] Scanning...",
-            "legend_ok": "[Pending Translation] 200 OK",
-            "legend_err": "[Pending Translation] 404\/Err"
-        },
-        "progress": {
-            "extracting": "[Pending Translation] Extracting Links...",
-            "stop": "[Pending Translation] Stop",
-            "processing": "[Pending Translation] Processing links sequentially...",
-            "processed": "[Pending Translation] Processed",
-            "of": "[Pending Translation] of",
-            "links": "[Pending Translation] links",
-            "checking": "[Pending Translation] Checking Links..."
-        },
-        "stats": {
-            "total": "[Pending Translation] Total Links",
-            "working": "[Pending Translation] Working (200)",
-            "redirects": "[Pending Translation] Redirects (3xx)",
-            "broken": "[Pending Translation] Broken (4xx\/5xx)"
-        },
-        "results": {
-            "download": "[Pending Translation] Download CSV Report",
-            "detailed_analysis": "[Pending Translation] Detailed Analysis",
-            "status": "[Pending Translation] Status",
-            "link_url": "[Pending Translation] Link URL",
-            "anchor_text": "[Pending Translation] Anchor Text",
-            "type": "[Pending Translation] Type"
-        },
-        "content": {
-            "main_title": "[Pending Translation] Why Check for Broken Links?",
-            "main_subtitle": "[Pending Translation] Broken links damage your website's credibility, user experience, and SEO performance. Our free broken link checker helps you identify and fix dead links before they hurt your rankings.",
-            "what_is_title": "[Pending Translation] What is a Broken Link Checker?",
-            "what_is_desc": "[Pending Translation] A broken link checker is a tool that scans your web pages to find links that no longer work (404 errors, server errors, or redirects). It helps you maintain a healthy website by identifying dead links that can harm your SEO and user experience.",
-            "how_works_title": "[Pending Translation] How Does It Work?",
-            "how_works_intro": "[Pending Translation] Our broken link checker follows a simple 3-step process:",
-            "how_works_step1": "[Pending Translation] <strong>Scan:<\/strong> Enter your page URL and we'll extract all links",
-            "how_works_step2": "[Pending Translation] <strong>Check:<\/strong> We test each link to verify its status (200, 404, 301, etc.)",
-            "how_works_step3": "[Pending Translation] <strong>Report:<\/strong> Get a detailed report showing which links are broken and need fixing",
-            "pro_tip_title": "[Pending Translation] 💡 Pro Tip:",
-            "pro_tip_desc": "[Pending Translation] Run this checker regularly (monthly or quarterly) to catch broken links before they impact your SEO. Set up a maintenance schedule to keep your website healthy!",
-            "types_title": "[Pending Translation] Types of Broken Links",
-            "common_causes_title": "[Pending Translation] Common Causes of Broken Links",
-            "cc_1": "[Pending Translation] ❌ <strong>Typos in URLs:<\/strong> Misspelled links during content creation or migration",
-            "cc_2": "[Pending Translation] ❌ <strong>Deleted pages:<\/strong> Content removed without setting up 301 redirects",
-            "cc_3": "[Pending Translation] ❌ <strong>Website restructuring:<\/strong> URL structure changes during redesigns",
-            "cc_4": "[Pending Translation] ❌ <strong>External link rot:<\/strong> Third-party websites removing or moving their content",
-            "cc_5": "[Pending Translation] ❌ <strong>Domain expiration:<\/strong> Linked websites going offline permanently",
-            "cc_6": "[Pending Translation] ❌ <strong>Protocol changes:<\/strong> HTTP to HTTPS migrations without proper redirects",
-            "best_practices_title": ""
-        },
-        "benefits": {
-            "ux_title": "[Pending Translation] User Experience",
-            "ux_desc": "[Pending Translation] Broken links frustrate visitors and increase bounce rates. Keep your users happy with a smooth browsing experience.",
-            "seo_title": "[Pending Translation] SEO Impact",
-            "seo_desc": "[Pending Translation] Search engines penalize sites with many broken links. Maintain your rankings by fixing dead links promptly.",
-            "maintenance_title": "[Pending Translation] Easy Maintenance",
-            "maintenance_desc": "[Pending Translation] Quickly identify and fix broken links before they damage your site's reputation and search visibility."
-        },
-        "link_types": {
-            "type1_title": "[Pending Translation] 🔴 404 Not Found",
-            "type1_desc": "[Pending Translation] The most common broken link. The page no longer exists on the server.",
-            "type2_title": "[Pending Translation] 🟡 301\/302 Redirects",
-            "type2_desc": "[Pending Translation] The page has moved. While not \"broken\", too many redirects slow down your site.",
-            "type3_title": "[Pending Translation] 🔴 500 Server Errors",
-            "type3_desc": "[Pending Translation] The server encountered an error. These need immediate attention.",
-            "type4_title": "[Pending Translation] 🟢 Timeout Errors",
-            "type4_desc": "[Pending Translation] The server took too long to respond. May indicate performance issues."
-        },
-        "best_practices": {
-            "bp1_title": "[Pending Translation] Regular Audits",
-            "bp1_desc": "[Pending Translation] Check your site monthly for broken links, especially after content updates",
-            "bp2_title": "[Pending Translation] Use 301 Redirects",
-            "bp2_desc": "[Pending Translation] When moving or deleting pages, always set up proper redirects",
-            "bp3_title": "[Pending Translation] Monitor External Links",
-            "bp3_desc": "[Pending Translation] External sites change frequently. Review outbound links quarterly",
-            "bp4_title": "[Pending Translation] Document Changes",
-            "bp4_desc": "[Pending Translation] Keep a log of URL changes and redirects for future reference",
-            "bp5_title": "[Pending Translation] Fix Internal Links First",
-            "bp5_desc": "[Pending Translation] Prioritize fixing internal broken links as they're fully under your control",
-            "bp6_title": "[Pending Translation] Use Relative URLs",
-            "bp6_desc": "[Pending Translation] For internal links, use relative URLs to avoid issues during domain changes"
-        },
-        "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] How often should I check for broken links?",
-            "a1": "[Pending Translation] For most websites, checking for broken links monthly is sufficient. High-traffic sites or e-commerce platforms should check weekly. After major website updates, redesigns, or migrations, run an immediate check.",
-            "q2": "[Pending Translation] Do broken links hurt my SEO rankings?",
-            "a2": "[Pending Translation] Yes, but indirectly. Google has stated that a few broken links won't directly harm rankings. However, <strong>many broken links<\/strong> signal poor site maintenance, which can increase bounce rates, waste crawl budget, and reduce user trust.",
-            "q3": "[Pending Translation] What's the difference between internal and external broken links?",
-            "a3": "[Pending Translation] <strong>Internal broken links<\/strong> point to pages on your own domain and are fully under your control. <strong>External broken links<\/strong> point to other websites. You should update them to working alternatives or remove them.",
-            "q4": "[Pending Translation] Can I check broken links for my entire website?",
-            "a4": "[Pending Translation] This tool checks <strong>one page at a time<\/strong> to provide fast, focused results. For full-site audits, we recommend starting with your most important pages: homepage, top landing pages, and high-traffic content.",
-            "q_what_to_do": "[Pending Translation] What should I do when I find broken links?",
-            "a_what_to_do_intro": "[Pending Translation] Follow this priority order:",
-            "a_what_to_do_li1": "[Pending Translation] <strong>Internal links:<\/strong> Set up 301 redirects to the new URL or update the link directly",
-            "a_what_to_do_li2": "[Pending Translation] <strong>External links:<\/strong> Find an alternative working page or use archive.org to find the old content",
-            "a_what_to_do_li3": "[Pending Translation] <strong>If no alternative:<\/strong> Remove the link and update surrounding content to maintain flow",
-            "a_what_to_do_li4": "[Pending Translation] <strong>Document everything:<\/strong> Keep a log for future reference and pattern analysis"
-        },
-        "js": {
-            "stopping": "[Pending Translation] Stopping scan...",
-            "scan_stopped": "[Pending Translation] Scan Stopped",
-            "scan_complete": "[Pending Translation] Scan Complete!",
-            "error_prefix": "[Pending Translation] Error: ",
-            "pending": "[Pending Translation] Pending",
-            "internal": "[Pending Translation] Internal",
-            "external": "[Pending Translation] External"
-        }
-    },
-    "google-serp-checker": {
-        "meta": {
-            "title": "[Pending Translation] Google SERP Checker - Check Search Rankings by Location",
-            "description": "[Pending Translation] Free Google SERP checker to analyze search engine results and track keyword rankings across different locations.",
-            "h1": "[Pending Translation] Google SERP Checker",
-            "subtitle": "[Pending Translation] Check Google search rankings and track keyword positions globally"
-        },
-        "interface": {
-            "simulation_title": "[Pending Translation] Live SERP Check Simulation",
-            "location_label": "[Pending Translation] Location",
-            "location_placeholder": "[Pending Translation] Enter city, country, or zip",
-            "domain_label": "[Pending Translation] Google Domain",
-            "device_label": "[Pending Translation] Device Type",
-            "device_desktop": "[Pending Translation] Desktop",
-            "device_mobile": "[Pending Translation] Mobile (Smartphone)",
-            "no_login": "[Pending Translation] No Login Required",
-            "realtime_results": "[Pending Translation] Real-Time Results"
-        },
-        "form": {
-            "keyword_label": "[Pending Translation] Enter Keyword",
-            "button": "[Pending Translation] Check SERP"
-        },
-        "content": {
-            "main_title": "[Pending Translation] Why Use Our Free Google SERP Checker?",
-            "main_subtitle": "[Pending Translation] In the world of SEO, accuracy is everything. Our SERP analyzer bypasses personalization algorithms to show you the true SERP rankings of your website.",
-            "feature1_title": "[Pending Translation] Hyper-Local SERP Position Accuracy",
-            "feature1_desc": "[Pending Translation] Rank for \"pizza in midtown manhattan\". We use advanced Google UULE parameters to simulate precise localized SERP checking.",
-            "feature2_title": "[Pending Translation] Mobile SERP Finder & Analysis",
-            "feature2_desc": "[Pending Translation] Verify your rankings on iPhone and Android. Don't let Mobile-First Indexing catch you off guard. Comprehensive mobile SERP analysis.",
-            "feature3_title": "[Pending Translation] Global Google SERP Tracker",
-            "feature3_desc": "[Pending Translation] Expanding? Check rankings across 190+ countries. Toggle between Google.co.uk, Google.de (Kostenlos SERP Checker), Google.jp and more.",
-            "serp_features_title": "[Pending Translation] Understanding Google SERP Features",
-            "feature_snippet_title": "[Pending Translation] Featured Snippets",
-            "feature_snippet_desc": "[Pending Translation] Also known as \"answer boxes\", these appear about 12% of search queries. Our tool helps you check if you own this prime real estate.",
-            "feature_local_title": "[Pending Translation] Local Pack",
-            "feature_local_desc": "[Pending Translation] The map-based list of 3 local businesses. Crucial for brick-and-mortar stores. Use our \"Location\" feature to verify your presence.",
-            "feature_paa_title": "[Pending Translation] People Also Ask",
-            "feature_paa_desc": "[Pending Translation] Accordion-style questions related to the user's query. Ranking here can drive significant awareness traffic. Use our serp keyword checker to identify these opportunities.",
-            "feature_knowledge_title": "[Pending Translation] Knowledge Panel",
-            "feature_knowledge_desc": "[Pending Translation] Information boxes that appear on the right side of desktop results. Essential for brand authority and entity SEO.",
-            "what_is_title": "[Pending Translation] What is a SERP Checker & Analyzer?",
-            "what_is_desc": "[Pending Translation] A Search Engine Results Page (SERP) Checker is an essential diagnostic tool for SEO professionals and business owners. It allows you to use a website SERP checker to view the results for a specific keyword as they would appear to a neutral user in a specific geographic location.",
-            "bubble_problem_title": "[Pending Translation] The \"Google Bubble\" Problem",
-            "bubble_problem_desc": "[Pending Translation] If you simply go to Google.com and search for your own keywords, the results are heavily biased. Google customizes results based on Your IP Address, Search History, and Device Type. This makes it hard to answer \"what is my serp\" accurately without a tool.",
-            "solution_text": "[Pending Translation] Our Free Google SERP Checker bursts this bubble. By using the UULE parameter, we generate a specially encoded string that tells Google exactly where to simulate the online SERP tracking from, giving you 100% clean, unbiased data."
-        },
-        "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] Is this SERP Tool Free for unlimited searches?",
-            "a1": "[Pending Translation] Yes! Our serp tool free of charge allows you to check as many keywords as you like without creating an account or paying a subscription fee. We believe in providing accessible online serp rank checker tools for everyone.",
-            "q2": "[Pending Translation] How does the SERP Position Tool location feature work?",
-            "a2": "[Pending Translation] We use Google's official UULE (Universal URL Location Encoded) parameter. When you enter a city, we find its precise GPS coordinates and encode them into the search request, forcing Google to show results as if you were physically standing in that city.",
-            "q3": "[Pending Translation] Why does my SERP Google Ranking look different on Mobile?",
-            "a3": "[Pending Translation] Google uses Mobile-First Indexing, meaning it predominantly uses the mobile version of the content for indexing and ranking. Mobile search results also have different layouts (more ads, different snippets). Use our \"Device\" selector to verify your mobile presence specifically with this google serps tracker."
-        }
-    },
-    "keyword-density-checker": {
-        "meta": {
-            "title": "[Pending Translation] Keyword Density Checker - Check Keyword Frequency",
-            "description": "[Pending Translation] Free keyword density checker tool. Analyze word frequency and keyword usage to optimize your content.",
-            "h1": "[Pending Translation] Keyword Density Checker",
-            "subtitle": "[Pending Translation] Check keyword usage and density for better search rankings"
-        },
-        "form": {
-            "label": "[Pending Translation] Paste Text or URL",
-            "placeholder": "[Pending Translation] Paste your text here...",
-            "button": "[Pending Translation] Check Density"
-        },
-        "results": {
-            "title": "[Pending Translation] Keyword Stats",
-            "total_words": "[Pending Translation] Total Words",
-            "unique_words": "[Pending Translation] Unique Words",
-            "sentences": "[Pending Translation] Sentences",
-            "paragraphs": "[Pending Translation] Paragraphs",
-            "long_sentences": "[Pending Translation] Long Sentences",
-            "short_sentences": "[Pending Translation] Short Sentences",
-            "top_keyword": "[Pending Translation] Top Keyword",
-            "top_density": "[Pending Translation] Top Density",
-            "single_keywords_title": "[Pending Translation] Single Keywords",
-            "keyword_header": "[Pending Translation] Keyword",
-            "count_header": "[Pending Translation] Count",
-            "density_header": "[Pending Translation] Density",
-            "two_word_title": "[Pending Translation] 2-Word Phrases",
-            "phrase_header": "[Pending Translation] Phrase",
-            "three_word_title": "[Pending Translation] 3-Word Phrases"
-        },
-        "content": {
-            "main_title": "[Pending Translation] Keyword Density Checker",
-            "main_subtitle": "[Pending Translation] Optimize your content relevance by analyzing keyword frequency.",
-            "intro": "[Pending Translation] Our Keyword Density Checker helps you find the most frequently used words and phrases in your text. Perfect for SEOs and content writers to avoid keyword stuffing.",
-            "what_is_title": "[Pending Translation] What is Keyword Density?",
-            "what_is_text": "[Pending Translation] Keyword density is the percentage of times a keyword or phrase appears purely in the content compared to the total number of words on the page. It is a key factor in Search Engine Optimization (SEO).",
-            "guidelines_title": "[Pending Translation] Density Guidelines",
-            "why_use_title": "[Pending Translation] Why Check Keyword Density?",
-            "best_practices_title": "[Pending Translation] Best Practices",
-            "faq_title": "[Pending Translation] FAQ"
-        },
-        "guidelines": {
-            "g1": "[Pending Translation] There is no \"perfect\" percentage, but <strong>1-3%<\/strong> is often considered safe.",
-            "g2": "[Pending Translation] Avoid \"Keyword Stuffing\" as it can harm your rankings.",
-            "g3": "[Pending Translation] Write naturally for readers, not just for bots.",
-            "g4": "[Pending Translation] Use synonyms and LSI (Latent Semantic Indexing) keywords.",
-            "g5": "[Pending Translation] Check not just single words, but 2-3 word phrases."
-        },
-        "features": {
-            "f1_title": "[Pending Translation] Deep Analysis",
-            "f1_desc": "[Pending Translation] Analyzes single words, bigrams, and trigrams.",
-            "f2_title": "[Pending Translation] Word Counter",
-            "f2_desc": "[Pending Translation] Accurate count of words, sentences, and paragraphs.",
-            "f3_title": "[Pending Translation] Stuffing Check",
-            "f3_desc": "[Pending Translation] Helps identify if you represent keywords too frequently.",
-            "f4_title": "[Pending Translation] Free Tool",
-            "f4_desc": "[Pending Translation] Completely free to use with no limits.",
-            "f5_title": "[Pending Translation] For Writers",
-            "f5_desc": "[Pending Translation] Improve content quality and readability.",
-            "f6_title": "[Pending Translation] Stop Words",
-            "f6_desc": "[Pending Translation] Intelligent filtering of common stop words."
-        },
-        "best_practices": {
-            "bp1": "[Pending Translation] Focus on content quality rather than specific density numbers.",
-            "bp2": "[Pending Translation] Include your main keyword in the first paragraph.",
-            "bp3": "[Pending Translation] Use keywords in H1 and H2 headers.",
-            "bp4": "[Pending Translation] Use long-tail keyword variations.",
-            "bp5": "[Pending Translation] Don't sacrifice readability for SEO.",
-            "bp6": "[Pending Translation] Don't repeat the same word unnaturally."
-        },
-        "faq": {
-            "q1": "[Pending Translation] What is a good keyword density?",
-            "a1": "[Pending Translation] Most SEO experts recommend around 1-2%. The text should read naturally.",
-            "q2": "[Pending Translation] What is keyword stuffing?",
-            "a2": "[Pending Translation] It is the practice of loading a webpage with keywords in an attempt to manipulate a site's ranking in Google search results.",
-            "q3": "[Pending Translation] Does it ignore stop words?",
-            "a3": "[Pending Translation] Yes, our tool filters out common stop words (like \"the\", \"and\", \"is\") to give you density of meaningful words.",
-            "q4": "[Pending Translation] Does phrase density matter?",
-            "a4": "[Pending Translation] Yes, search engines look for phrases and topic clusters, not just single words.",
-            "q5": "[Pending Translation] Can I check a URL?",
-            "a5": "[Pending Translation] Currently this tool works with text input. Copy your page content and paste it here."
-        },
-        "alerts": {
-            "enter_text": "[Pending Translation] Please enter some text to analyze"
-        }
-    },
-    "meta-tag-analyzer": {
-        "meta": {
-            "title": "[Pending Translation] Meta Tag Analyzer - SEO Meta Tags Checker",
-            "description": "[Pending Translation] Free meta tag analyzer to check and optimize your website meta tags for better SEO.",
-            "h1": "[Pending Translation] Meta Tag Analyzer",
-            "subtitle": "[Pending Translation] Comprehensive analysis of meta tags for search engine optimization"
-        },
-        "form": {
-            "label": "[Pending Translation] Enter Website URL",
-            "placeholder": "[Pending Translation] https:\/\/example.com",
-            "button": "[Pending Translation] Analyze Meta Tags"
-        },
-        "results": {
-            "title": "[Pending Translation] Analysis Results",
-            "title_tag": "[Pending Translation] Title Tag",
-            "length": "[Pending Translation] Length",
-            "characters": "[Pending Translation] characters",
-            "meta_description": "[Pending Translation] Meta Description"
-        },
-        "results_labels": {
-            "other_tags": "[Pending Translation] Other Meta Tags",
-            "seo_score": "[Pending Translation] SEO Score",
-            "viewport": "[Pending Translation] Viewport",
-            "charset": "[Pending Translation] Charset",
-            "robots": "[Pending Translation] Robots"
-        },
-        "content": {
-            "main_title": "[Pending Translation] Meta Tag Analyzer",
-            "main_subtitle": "[Pending Translation] Analyze and optimize your website meta tags with ease.",
-            "intro": "[Pending Translation] Our free Meta Tag Analyzer tool helps you check the meta tags of any webpage. Get instant insights into your Title, Description, and other important SEO tags.",
-            "what_are_title": "[Pending Translation] What are Meta Tags?",
-            "what_are_desc": "[Pending Translation] Meta tags are snippets of text that describe a page's content; the meta tags don't appear on the page itself, but only in the page's source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.",
-            "essential_title": "[Pending Translation] Essential Meta Tags for SEO",
-            "common_mistakes_title": "[Pending Translation] Common Meta Tag Mistakes",
-            "mistake_1": "[Pending Translation] Missing Title or Description tags",
-            "mistake_2": "[Pending Translation] Exceeding recommended character limits",
-            "mistake_3": "[Pending Translation] Duplicate meta tags across pages",
-            "mistake_4": "[Pending Translation] Using irrelevant keywords",
-            "mistake_5": "[Pending Translation] No viewport tag for mobile optimization",
-            "mistake_6": "[Pending Translation] Multiple Title tags on one page",
-            "why_analyze_title": "[Pending Translation] Why Analyze Meta Tags?"
-        },
-        "meta_tags": {
-            "title_tag_title": "[Pending Translation] Title Tag",
-            "title_tag_desc": "[Pending Translation] The most important meta tag. It defines your page title in search results.",
-            "title_optimal_length": "[Pending Translation] Optimal Length:",
-            "title_optimal_value": "[Pending Translation] 50-60 characters",
-            "title_best_practice": "[Pending Translation] Best Practice:",
-            "title_best_value": "[Pending Translation] Include your main keyword near the beginning.",
-            "meta_desc_title": "[Pending Translation] Meta Description",
-            "meta_desc_desc": "[Pending Translation] Provides a summary of page content. Affects Click-Through Rate (CTR).",
-            "meta_desc_optimal_length": "[Pending Translation] Optimal Length:",
-            "meta_desc_optimal_value": "[Pending Translation] 150-160 characters",
-            "meta_desc_best_practice": "[Pending Translation] Best Practice:",
-            "meta_desc_best_value": "[Pending Translation] Write compelling copy with a call to action.",
-            "og_title": "[Pending Translation] Open Graph (Social)",
-            "og_desc": "[Pending Translation] Controls how your content appears when shared on social media (Facebook, LinkedIn).",
-            "og_key_tags": "[Pending Translation] Key Tags:",
-            "og_key_value": "[Pending Translation] og:title, og:description, og:image",
-            "og_platform": "[Pending Translation] Platforms:",
-            "og_platform_value": "[Pending Translation] Facebook, LinkedIn, Pinterest",
-            "twitter_title": "[Pending Translation] Twitter Cards",
-            "twitter_desc": "[Pending Translation] Specific meta tags for optimizing how your content appears on Twitter.",
-            "twitter_key_tags": "[Pending Translation] Key Tags:",
-            "twitter_key_value": "[Pending Translation] twitter:card, twitter:title, twitter:image",
-            "twitter_types": "[Pending Translation] Types:",
-            "twitter_types_value": "[Pending Translation] Summary, Summary with Large Image"
-        },
-        "benefits": {
-            "b1_title": "[Pending Translation] Better Rankings",
-            "b1_desc": "[Pending Translation] Proper tags help search engines understand your content.",
-            "b2_title": "[Pending Translation] Higher CTR",
-            "b2_desc": "[Pending Translation] Compelling titles and descriptions get more clicks.",
-            "b3_title": "[Pending Translation] Social Visibility",
-            "b3_desc": "[Pending Translation] Optimized Open Graph tags improve social sharing appearance.",
-            "b4_title": "[Pending Translation] Competitor Analysis",
-            "b4_desc": "[Pending Translation] Analyze competitor tags to refine your strategy."
-        },
-        "features": {
-            "f2_title": "[Pending Translation] Instant Analysis",
-            "f2_desc": "[Pending Translation] Get results in seconds.",
-            "f3_title": "[Pending Translation] Free to Use",
-            "f3_desc": "[Pending Translation] No hidden fees or limits."
-        },
-        "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] What is a Meta Tag Analyzer?",
-            "a1": "[Pending Translation] It's a tool that crawls a webpage and extracts its meta tags (title, description, robots, keywords) for analysis.",
-            "q2": "[Pending Translation] Why are meta tags important for SEO?",
-            "a2": "[Pending Translation] They provide search engines with information about your page and often determine how your site appears in search results.",
-            "q3": "[Pending Translation] What is the perfect Title tag length?",
-            "a3": "[Pending Translation] It is recommended to keep it between 50-60 characters to avoid being truncated in Google search results.",
-            "q4": "[Pending Translation] Do keywords meta tags affect ranking?",
-            "a4": "[Pending Translation] Most modern search engines (including Google) no longer use the keywords meta tag for ranking purposes.",
-            "q5": "[Pending Translation] How do I fix meta tag errors?",
-            "a5": "[Pending Translation] You need to edit your page HTML (in the <head> section) or use your CMS SEO settings\/plugins."
-        },
-        "js": {
-            "alert_enter_url": "[Pending Translation] Please enter a valid URL",
-            "analyzing": "[Pending Translation] Analyzing...",
-            "error_cors": "[Pending Translation] <strong>CORS Error (Demo):<\/strong> In production, requests to external URLs must go through your backend proxy. <br>Shown below are demo data.",
-            "error_general": "[Pending Translation] Error analyzing URL",
-            "analyze_btn": "[Pending Translation] Analyze Meta Tags",
-            "demo_title": "[Pending Translation] Example Page Title - Optimized for SEO",
-            "demo_description": "[Pending Translation] This is an example meta description. It should be descriptive, engaging, and contain keywords to attract clicks from search results.",
-            "status_optimal": "[Pending Translation] Optimal",
-            "advice_perfect_length": "[Pending Translation] Perfect length!",
-            "status_too_long": "[Pending Translation] Too Long",
-            "advice_truncated": "[Pending Translation] Might be truncated in search results.",
-            "status_too_short": "[Pending Translation] Too Short",
-            "advice_add_detail": "[Pending Translation] Consider adding more detail.",
-            "advice_truncated_short": "[Pending Translation] Might be truncated.",
-            "advice_add_detail_short": "[Pending Translation] Consider adding detail.",
-            "score_text": "[Pending Translation] Good! Your meta tags are well optimized."
-        }
-    },
-    "on-page-seo-checker": {
-        "meta": {
-            "title": "[Pending Translation] On-Page SEO Checker - Complete SEO Analysis",
-            "description": "[Pending Translation] Free on-page SEO checker to analyze and optimize your web pages for search engines.",
-            "h1": "[Pending Translation] On-Page SEO Checker",
-            "subtitle": "[Pending Translation] Complete on-page SEO audit with actionable recommendations"
-        },
-        "interface": {
-            "title": "[Pending Translation] Start Your Free Audit",
-            "url_label": "[Pending Translation] Website URL",
-            "keywords_label": "[Pending Translation] Target Keywords",
-            "recommended": "[Pending Translation] Recommended",
-            "button": "[Pending Translation] Start Comprehensive Audit",
-            "page_analysis": "[Pending Translation] Page Analysis"
-        },
-        "labels": {
-            "initializing": "[Pending Translation] Initializing...",
-            "desktop": "[Pending Translation] Desktop",
-            "mobile": "[Pending Translation] Mobile"
-        },
-        "content": {
-            "main_content_title": "[Pending Translation] Comprehensive On-Page SEO Checker & Analyzer",
-            "main_content_desc": "[Pending Translation] Modern search engines use neural matching to understand the <em>intent<\/em> behind a query, not just exact keywords. Our <strong>on-page seo checker<\/strong> is built on these same principles. Whether you need a quick <strong>onpage seo check<\/strong> or a deep semantic audit, our tool acts as a neural <strong>onpage seo analyzer<\/strong>, helping you bridge the gap between your content and how AI-driven algorithms interpret it.",
-            "how_to_title": "[Pending Translation] How to Use the On-Page SEO Checker Tool"
-        },
-        "features": {
-            "f1_title": "[Pending Translation] Instant Semantic Analysis",
-            "f1_desc": "[Pending Translation] Search spiders crawl efficiently. Our <strong>on page seo check online<\/strong> mimics this behavior, parsing your DOM to understand structure and hierarchy. This <strong>onpage checker tool<\/strong> ensures your HTML speaks the language of search engines.",
-            "f2_title": "[Pending Translation] Data-Driven Scoring",
-            "f2_desc": "[Pending Translation] Forget subjectivity—you receive weighted scores across signals like header optimization, meta completeness, and word count ratios. It's a transparent <strong>seo check on page<\/strong> mechanism with actionable thresholds.",
-            "f3_title": "[Pending Translation] Contextual Content Review",
-            "f3_desc": "[Pending Translation] The \"perfect\" keyword density myth is dead. Our <strong>onpage seo audit tool<\/strong> evaluates contextual relevance instead. Are your H1s aligned to user intent? Does your content satisfy the query? This is modern <strong>on page seo analysis<\/strong>.",
-            "f4_title": "[Pending Translation] Mobile & Technical Check",
-            "f4_desc": "[Pending Translation] Viewport tags, canonical links, and structured data snippets—checked. Our <strong>onpage seo tester<\/strong> flags mobile usability red flags and markup inconsistencies, giving you an <strong>on page seo report<\/strong> that's both aesthetic and algorithmic.",
-            "f5_title": "[Pending Translation] 100% Free Access",
-            "f5_desc": "[Pending Translation] No subscriptions, no hidden limits. This is your <strong>onpage seo tool free<\/strong> option. Run unlimited audits on any public URL, whether for your own site or competitive research.",
-            "f6_title": "[Pending Translation] Link Architecture",
-            "f6_desc": "[Pending Translation] Internal and external link audit in one view. See how many outbound links point where, and whether your internal linking strengthens topical authority. It's a holistic <strong>free onpage seo checker<\/strong> designed for comprehensiveness."
-        },
-        "how_to": {
-            "step1_title": "[Pending Translation] Enter Your URL",
-            "step1_desc": "[Pending Translation] Provide the specific page endpoint. Our <strong>on page seo checker online<\/strong> fetches the raw HTML just like a search bot would.",
-            "step2_title": "[Pending Translation] Analyze Signals",
-            "step2_desc": "[Pending Translation] Initiate the <strong>seo page tester<\/strong>. We analyze headers, metadata, and content structure to emulate how algorithms \"read\" your page.",
-            "step3_title": "[Pending Translation] Optimize for Intent",
-            "step3_desc": "[Pending Translation] Use the data to refine your content's relevance. <strong>Check onpage website<\/strong> logic and improve your actionable <strong>onpage seo score<\/strong>."
-        },
-        "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] Why is an onpage seo checkup critical for ranking?",
-            "a1": "[Pending Translation] Search is about relevance. An <strong>onpage seo checkup<\/strong> ensures your signals (titles, schema, content) align with user intent. Regular auditing with an <strong>onpage site seo<\/strong> tool keeps your site synced with evolving algorithm updates.",
-            "q2": "[Pending Translation] Is this onpage seo tool online really free?",
-            "a2": "[Pending Translation] Yes. We believe in accessible data. Our <strong>on page seo tool online<\/strong> is free to use, allowing you to act as your own <strong>free onpage seo tool<\/strong> without subscription barriers.",
-            "q3": "[Pending Translation] How do search engines understand my content?",
-            "a3": "[Pending Translation] Engines use NLP (Natural Language Processing) to relate entities. Our <strong>on page seo grader<\/strong> checks if your structure supports this understanding, acting as a proxy <strong>seo onpage test<\/strong> for neural compatibility.",
-            "q4": "[Pending Translation] Can I check onpage seo for any website?",
-            "a4": "[Pending Translation] Yes. Our crawler respects `robots.txt` but can analyze any public URL. You can <strong>check onpage seo<\/strong> for competitors to reverse-engineer their success. It's a versatile <strong>onpage checker tool<\/strong> for any strategy."
-        }
-    },
-    "pdf-report": {
-        "seo": {
-            "title": "[Pending Translation] PDF Report - Professional SEO Audit Report"
-        },
-        "interface": {
-            "brand_name": "[Pending Translation] Optimizo",
-            "cover_title": "[Pending Translation] SEO AUDIT REPORT",
-            "overall_score": "[Pending Translation] OVERALL SCORE",
-            "generated_on": "[Pending Translation] Generated on",
-            "suite_name": "[Pending Translation] Optimizo SEO Tools Suite",
-            "audit_title": "[Pending Translation] Optimizo SEO Audit",
-            "analysis_methods": "[Pending Translation] Detailed Analysis Methods",
-            "recommendation": "[Pending Translation] RECOMMENDATION:"
-        },
-        "meta": {
-            "title": "[Pending Translation] PDF Report - SEO Audit Report Generator",
-            "description": "[Pending Translation] Generate a free SEO audit report in PDF format for your website.",
-            "h1": "[Pending Translation] PDF Report Generator",
-            "subtitle": "[Pending Translation] Create detailed PDF reports for SEO analysis and audits"
-        }
-    },
-    "redirect-checker": {
-        "meta": {
-            "title": "[Pending Translation] Redirect Checker - HTTP Status Code & Redirect Chain Analyzer Free",
-            "description": "[Pending Translation] Free redirect checker tool to analyze URL redirects, trace redirect chains, check HTTP status codes, and detect redirect loops. Essential for SEO and debugging.",
-            "h1": "[Pending Translation] Redirect Checker",
-            "subtitle": "[Pending Translation] Trace HTTP redirects and identify 301, 302 & meta refresh chains"
-        },
-        "form": {
-            "url_label": "[Pending Translation] Enter URL(s) to Check (One per line, max 10)",
-            "url_placeholder": "[Pending Translation] https:\/\/example.com\nhttps:\/\/another-site.com\nhttps:\/\/third-site.com",
-            "canonical_check": "[Pending Translation] Also check domain canonical (www vs non-www)",
-            "user_agent_label": "[Pending Translation] User Agent",
-            "user_agent_default": "[Pending Translation] Default (Browser)",
-            "user_agent_googlebot": "[Pending Translation] Googlebot (Google)",
-            "user_agent_bingbot": "[Pending Translation] Bingbot (Bing)",
-            "user_agent_facebook": "[Pending Translation] Facebook Crawler",
-            "user_agent_iphone": "[Pending Translation] iPhone (Safari)",
-            "user_agent_android": "[Pending Translation] Android (Chrome)",
-            "button": "[Pending Translation] Check URLs"
-        },
-        "loading": {
-            "analyzing": "[Pending Translation] Analyzing redirect path..."
-        },
-        "content": {
-            "main_title": "[Pending Translation] Redirect & HTTP Status Checker Tool",
-            "main_subtitle": "[Pending Translation] Complete URL analysis with redirect tracing, status code checking, and loop detection",
-            "intro": "[Pending Translation] Analyze HTTP status codes, trace redirect chains, detect 301 and 302 redirects, identify broken links, and find redirect loops with our comprehensive free tool. Essential for SEO optimization, website debugging, migration planning, and ensuring proper URL structure. Check any URL instantly to see the complete redirect path, response codes, and potential issues.",
-            "features_title": "[Pending Translation] ✨ Key Features",
-            "feature1_title": "[Pending Translation] Bulk URL Checking",
-            "feature1_desc": "[Pending Translation] Check up to 10 URLs simultaneously with progress tracking",
-            "feature2_title": "[Pending Translation] Canonical Domain Check",
-            "feature2_desc": "[Pending Translation] Verify www vs non-www consistency for SEO",
-            "feature3_title": "[Pending Translation] Loop Detection",
-            "feature3_desc": "[Pending Translation] Visual diagram showing exact redirect loop patterns",
-            "feature4_title": "[Pending Translation] Complete Chain Analysis",
-            "feature4_desc": "[Pending Translation] Trace full redirect paths with status codes and timing",
-            "what_are_redirects_title": "[Pending Translation] What Are HTTP Redirects?",
-            "what_are_redirects_desc": "[Pending Translation] HTTP redirects are server responses that automatically send visitors from one URL to another. When a browser requests a URL, the server can respond with a redirect status code (like 301 or 302) along with the new destination URL. Redirects are essential for maintaining SEO value when moving content, fixing broken links, enforcing HTTPS, and managing domain changes.",
-            "status_codes_title": "[Pending Translation] Understanding HTTP Status Codes",
-            "status_2xx_title": "[Pending Translation] 2xx - Success",
-            "status_2xx_desc": "[Pending Translation] These indicate successful requests with no issues",
-            "status_3xx_title": "[Pending Translation] 3xx - Redirects",
-            "status_3xx_desc": "[Pending Translation] URL has moved, browser should follow redirect",
-            "status_4xx_title": "[Pending Translation] 4xx - Client Errors",
-            "status_4xx_desc": "[Pending Translation] Request error on client side",
-            "status_5xx_title": "[Pending Translation] 5xx - Server Errors",
-            "status_5xx_desc": "[Pending Translation] Server-side errors",
-            "redirect_301_title": "[Pending Translation] 301 Permanent Redirect",
-            "redirect_301_when": "[Pending Translation] <strong>When to use:<\/strong> Content permanently moved to a new URL",
-            "redirect_301_seo": "[Pending Translation] <strong>SEO Impact:<\/strong> Passes 90-99% of link equity to new URL",
-            "redirect_301_cache": "[Pending Translation] <strong>Caching:<\/strong> Browsers cache permanently, hard to change",
-            "redirect_302_title": "[Pending Translation] 302 Temporary Redirect",
-            "redirect_302_when": "[Pending Translation] <strong>When to use:<\/strong> Content temporarily at different URL",
-            "redirect_302_seo": "[Pending Translation] <strong>SEO Impact:<\/strong> Original URL keeps ranking power",
-            "redirect_302_cache": "[Pending Translation] <strong>Caching:<\/strong> Not cached, easy to change or remove",
-            "why_check_title": "[Pending Translation] Why Check Redirects?",
-            "why_check_1": "[Pending Translation] <strong>Site Migrations:<\/strong> Verify all old URLs properly redirect to new locations",
-            "why_check_2": "[Pending Translation] <strong>Broken Link Detection:<\/strong> Find 404 errors and broken redirect chains",
-            "why_check_3": "[Pending Translation] <strong>Performance Issues:<\/strong> Identify excessive redirect chains slowing page load",
-            "why_check_4": "[Pending Translation] <strong>Redirect Loop Detection:<\/strong> Catch circular redirects causing infinite loops",
-            "why_check_5": "[Pending Translation] <strong>Security Audits:<\/strong> Verify redirect destinations and prevent malicious redirects",
-            "why_check_6": "[Pending Translation] <strong>User Experience:<\/strong> Ensure visitors reach intended content quickly",
-            "why_check_7": "[Pending Translation] <strong>Analytics Accuracy:<\/strong> Confirm tracking codes work through redirect chains",
-            "redirect_chains_title": "[Pending Translation] What Are Redirect Chains?",
-            "redirect_chains_desc": "[Pending Translation] A redirect chain occurs when a URL redirects to another URL, which redirects to another, and so on. Each hop in the chain adds latency and can impact SEO. Example: URL A → URL B → URL C → Final URL (3 redirects).",
-            "chain_recommended": "[Pending Translation] <strong>Recommended:<\/strong> 0-1 redirects (direct or single hop)",
-            "chain_acceptable": "[Pending Translation] <strong>Acceptable:<\/strong> 2-3 redirects (minor performance impact)",
-            "chain_problematic": "[Pending Translation] <strong>Problematic:<\/strong> 4+ redirects (significant SEO and speed issues)",
-            "redirect_loops_title": "[Pending Translation] What Are Redirect Loops?",
-            "redirect_loops_desc": "[Pending Translation] A redirect loop happens when URL A redirects to URL B, which redirects back to URL A, creating an infinite cycle. Browsers detect this and show an error like \"Too many redirects\" or \"Redirect loop detected\". This completely breaks the page and must be fixed immediately.",
-            "common_issues_title": "[Pending Translation] Common Redirect Issues & Solutions",
-            "issue1_title": "[Pending Translation] Long Redirect Chains",
-            "issue1_problem": "[Pending Translation] <strong>Problem:<\/strong> Multiple redirects slow page load and dilute SEO value",
-            "issue1_solution": "[Pending Translation] <strong>Solution:<\/strong> Update redirects to point directly to final destination",
-            "issue2_title": "[Pending Translation] Mixed Redirect Types",
-            "issue2_problem": "[Pending Translation] <strong>Problem:<\/strong> Inconsistent redirect types confuse search engines",
-            "issue2_solution": "[Pending Translation] <strong>Solution:<\/strong> Use 301 for permanent moves, 302 only for temporary",
-            "issue3_title": "[Pending Translation] Broken Redirect Chains",
-            "issue3_problem": "[Pending Translation] <strong>Problem:<\/strong> Redirect points to non-existent page",
-            "issue3_solution": "[Pending Translation] <strong>Solution:<\/strong> Update redirect to valid destination or remove it",
-            "issue4_title": "[Pending Translation] HTTPS\/HTTP Loops",
-            "issue4_problem": "[Pending Translation] <strong>Problem:<\/strong> Site redirects between HTTP and HTTPS infinitely",
-            "issue4_solution": "[Pending Translation] <strong>Solution:<\/strong> Fix SSL configuration and .htaccess rules",
-            "best_practices_title": "[Pending Translation] SEO Best Practices for Redirects",
-            "best_practice1": "[Pending Translation] • Always use 301 redirects for permanent URL changes to preserve SEO value",
-            "best_practice2": "[Pending Translation] • Minimize redirect chains - redirect directly to final destination when possible",
-            "best_practice3": "[Pending Translation] • Avoid redirect loops at all costs - they break user experience and SEO",
-            "best_practice4": "[Pending Translation] • Update internal links instead of relying on redirects",
-            "best_practice5": "[Pending Translation] • Monitor redirect performance regularly with tools like this",
-            "best_practice6": "[Pending Translation] • Keep redirects active for at least 1 year after URL changes",
-            "best_practice7": "[Pending Translation] • Use 302 redirects sparingly and only for truly temporary situations"
-        },
-        "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] What is a redirect chain?",
-            "a1": "[Pending Translation] A redirect chain is a series of redirects from one URL to another until the final page is reached. Long chains slow down the site and waste crawl budget.",
-            "q2": "[Pending Translation] Does a 301 redirect affect ranking?",
-            "a2": "[Pending Translation] A 301 redirect preserves most of the link equity (ranking power), but excessive use in chains can dilute this effect.",
-            "q3": "[Pending Translation] How do I find redirect loops?",
-            "a3": "[Pending Translation] Use our tool - it will automatically highlight an error if it detects an infinite path.",
-            "q4": "[Pending Translation] Should I redirect from http to https?",
-            "a4": "[Pending Translation] Yes, it is a mandatory step for security and SEO. A 301 redirect at the server level (Nginx or Apache) is recommended.",
-            "q5": "[Pending Translation] How many redirects are acceptable?",
-            "a5": "[Pending Translation] Ideally, zero or one. Google usually follows up to 5 hops, but each hop increases load time."
-        }
-    },
-    "slug-generator": {
-        "meta": {
-            "title": "[Pending Translation] URL Slug Generator",
-            "description": "[Pending Translation] Generate clean, SEO-friendly URL slugs from any text instantly with our free tool.",
-            "h1": "[Pending Translation] URL Slug Generator",
-            "subtitle": "[Pending Translation] Generate clean, SEO-friendly URL slugs from any text instantly"
-        },
-        "editor": {
-            "label_input": "[Pending Translation] Enter Text or Title",
-            "ph_input": "[Pending Translation] Enter your title or text..."
-        },
-        "content": {
-            "hero_title": "[Pending Translation] URL Slug Generator - Create SEO-Friendly URLs",
-            "hero_subtitle": "[Pending Translation] Generate clean, SEO-friendly URL slugs from any text instantly with our free slug generator tool. Convert blog titles, article headings, and page names into readable, search-engine-optimized URLs.",
-            "what_title": "[Pending Translation] What is a URL Slug?",
-            "what_desc": "[Pending Translation] A URL slug is the part of a web address that comes after the domain name and identifies a specific page. For example, in \"example.com\/how-to-create-seo-friendly-urls\", the slug is \"how-to-create-seo-friendly-urls\".",
-            "why_title": "[Pending Translation] Why Use SEO-Friendly Slugs?",
-            "why_list": [
-                "[Pending Translation] Better SEO Rankings: Keywords in URLs help search engines understand page content",
-                "[Pending Translation] Improved Click-Through Rates: Readable URLs are more trustworthy and clickable",
-                "[Pending Translation] User Experience: Clear URLs tell users what to expect before clicking",
-                "[Pending Translation] Social Sharing: Clean URLs look professional when shared on social media",
-                "[Pending Translation] Link Building: Descriptive URLs make better anchor text for backlinks",
-                "[Pending Translation] Accessibility: Screen readers can better interpret meaningful URLs"
-            ],
-            "practices_title": "[Pending Translation] URL Slug Best Practices",
-            "practices_list": [
-                "[Pending Translation] Use lowercase letters - Avoid capitalization for consistency",
-                "[Pending Translation] Use hyphens (-) - Separate words with hyphens, not underscores",
-                "[Pending Translation] Keep it short - Aim for 3-5 words maximum",
-                "[Pending Translation] Include keywords - Use relevant keywords for SEO",
-                "[Pending Translation] Be descriptive - Clearly describe the page content",
-                "[Pending Translation] Avoid special characters - Remove @, #, %, &, etc.",
-                "[Pending Translation] Avoid stop words - Remove \"a\", \"the\", \"and\" when possible",
-                "[Pending Translation] Avoid numbers\/dates - Unless essential for content"
-            ],
-            "how_works_title": "[Pending Translation] How Our Slug Generator Works",
-            "how_works_desc": "[Pending Translation] Our tool follows industry best practices to create perfect URL slugs. It converts text to lowercase, removes special characters and punctuation, replaces spaces with hyphens, removes consecutive hyphens, and trims leading\/trailing hyphens.",
-            "uses_title": "[Pending Translation] Common Use Cases",
-            "uses": {
-                "blog": {
-                    "title": "[Pending Translation] ðŸ“ Blog Posts",
-                    "desc": "[Pending Translation] Convert article titles to SEO-friendly URLs for WordPress, Medium, or custom blogs"
-                },
-                "ecommerce": {
-                    "title": "[Pending Translation] ðŸ›ï¸ E-commerce",
-                    "desc": "[Pending Translation] Create product URLs that include keywords and product names"
-                },
-                "docs": {
-                    "title": "[Pending Translation] ðŸ“„ Documentation",
-                    "desc": "[Pending Translation] Generate clean URLs for help articles and documentation pages"
-                },
-                "landing": {
-                    "title": "[Pending Translation] ðŸŽ¯ Landing Pages",
-                    "desc": "[Pending Translation] Create keyword-rich URLs for marketing campaigns and landing pages"
-                }
-            },
-            "pro_tip_title": "[Pending Translation] ðŸ’¡ SEO Pro Tip",
-            "pro_tip_desc": "[Pending Translation] Google recommends using hyphens (-) instead of underscores (_) in URLs because hyphens are treated as word separators while underscores are not. This means \"seo-friendly-urls\" is better than \"seo_friendly_urls\" for search engine optimization.",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
-            "faq": {
-                "q1": "[Pending Translation] Should I use hyphens or underscores in URLs?",
-                "a1": "[Pending Translation] Always use hyphens (-). Google treats hyphens as word separators but treats underscores as word connectors. This means \"best-seo-practices\" is read as three separate words, while \"best_seo_practices\" is read as one word.",
-                "q2": "[Pending Translation] How long should a URL slug be?",
-                "a2": "[Pending Translation] Keep slugs between 3-5 words (30-60 characters). Shorter URLs are easier to remember, share, and rank better in search results. Remove unnecessary words like \"a\", \"the\", \"and\" to keep slugs concise.",
-                "q3": "[Pending Translation] Can I change a URL slug after publishing?",
-                "a3": "[Pending Translation] Yes, but it's not recommended. Changing URLs can break existing links and hurt SEO. If you must change a slug, always set up a 301 redirect from the old URL to the new one to preserve link equity and avoid 404 errors.",
-                "q4": "[Pending Translation] Should I include keywords in my URL slug?",
-                "a4": "[Pending Translation] Yes! Including relevant keywords in your URL slug helps search engines understand your content and can improve rankings. However, keep it natural and descriptive - don't stuff keywords unnaturally."
-            }
-        },
-        "js": {
-            "copied": "[Pending Translation] Copied!"
-        }
-    },
-    "yahoo-serp-checker": {
-        "meta": {
-            "title": "[Pending Translation] Yahoo SERP Checker - Check Your Yahoo Search Rankings",
-            "description": "[Pending Translation] Free Yahoo SERP checker to track your website rankings on Yahoo search engine.",
-            "h1": "[Pending Translation] Yahoo SERP Checker",
-            "subtitle": "[Pending Translation] Monitor Yahoo search rankings for your keywords and competitors"
-        },
-        "interface": {
-            "simulation_title": "[Pending Translation] Live Yahoo SERP Check",
-            "keyword_label": "[Pending Translation] Enter Keyword",
-            "location_label": "[Pending Translation] Location (City)",
-            "yahoo_domain_label": "[Pending Translation] Yahoo Domain",
-            "device_label": "[Pending Translation] Device Type",
-            "device_desktop": "[Pending Translation] Desktop",
-            "device_mobile": "[Pending Translation] Mobile (Smartphone)",
-            "no_login": "[Pending Translation] No Login Required",
-            "realtime_results": "[Pending Translation] Real-Time Results"
-        },
-        "form": {
-            "keyword_placeholder": "[Pending Translation] your keyword...",
-            "location_placeholder": "[Pending Translation] Enter city (Optional)",
-            "button": "[Pending Translation] Check Yahoo SERP"
-        },
-        "domains": {
-            "us": "[Pending Translation] Yahoo.com (USA\/Global)",
-            "uk": "[Pending Translation] Yahoo.co.uk (United Kingdom)",
-            "ca": "[Pending Translation] Yahoo.ca (Canada)",
-            "au": "[Pending Translation] Yahoo.com.au (Australia)",
-            "de": "[Pending Translation] Yahoo.de (Germany)",
-            "fr": "[Pending Translation] Yahoo.fr (France)",
-            "it": "[Pending Translation] Yahoo.it (Italy)",
-            "es": "[Pending Translation] Yahoo.es (Spain)",
-            "br": "[Pending Translation] Yahoo.com.br (Brazil)"
-        },
-        "content": {
-            "main_title": "[Pending Translation] Advanced Yahoo Rank Checker",
-            "main_subtitle": "[Pending Translation] Monitor your search performance on Yahoo. Get accurate, real-time ranking data to optimize your SEO strategy.",
-            "feature1_title": "[Pending Translation] 100% Free",
-            "feature1_desc": "[Pending Translation] Use this tool as many times as you want. No hidden costs.",
-            "feature2_title": "[Pending Translation] Unlimited Checks",
-            "feature2_desc": "[Pending Translation] Check unlimited keywords without any cost. No registration or subscription required.",
-            "feature3_title": "[Pending Translation] Real-Time Data",
-            "feature3_desc": "[Pending Translation] Get instant, real-time SERP results directly from Yahoo Search.",
-            "why_matters_title": "[Pending Translation] Why Yahoo Rankings Matter",
-            "why_matters_desc": "[Pending Translation] While smaller than Google, Yahoo still commands a significant share of search traffic, particularly in specific demographics and regions like Japan and parts of the US. Ignoring Yahoo means leaving potential traffic on the table.",
-            "same_as_bing_title": "[Pending Translation] Does Yahoo use Bing Results?",
-            "same_as_bing_desc": "[Pending Translation] Yes, Yahoo Search is largely powered by <strong>Bing's search index<\/strong>. This means optimizing for Bing often helps your Yahoo rankings. However, Yahoo's interface and features differ, so verifying your actual appearance is crucial."
-        },
-        "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] Is this Yahoo Rank Checker free?",
-            "a1": "[Pending Translation] Yes! Our **yahoo rank tracker** is 100% free. Check your rankings on Yahoo as often as you need without any hidden fees or subscriptions.",
-            "q2": "[Pending Translation] Does Yahoo use Bing's search results?",
-            "a2": "[Pending Translation] Since Yahoo is powered by Bing, focus on Bing SEO best practices: clear technical SEO, authoritative backlinks, and relevant content. Using this tool to monitor progress is a great start."
-        }
-    }
+ "bing-serp-checker": {
+ "meta": {
+  "title": "Công Cụ Kiểm Tra SERP Bing - Kiểm Tra Thứ Hạng Tìm Kiếm Bing",
+  "description": "Công cụ miễn phí để kiểm tra thứ hạng website của bạn trên công cụ tìm kiếm Bing. Kết quả chính xác, thời gian thực cho bất kỳ vị trí và thiết bị nào.",
+  "h1": "Kiểm Tra SERP Bing",
+  "subtitle": "Kiểm tra thứ hạng tìm kiếm Bing cho từ khóa của bạn tại các vị trí khác nhau"
+ },
+ "interface": {
+  "simulation_title": "Trình Giả Lập Tìm Kiếm Bing",
+  "keyword_label": "Từ Khóa mục tiêu",
+  "location_label": "Vị Trí (Tùy chọn)",
+  "location_placeholder": "Nhập thành phố, bang hoặc quốc gia..",
+  "market_label": "Thị trường \/ Ngôn ngữ",
+  "device_label": "Loại Thiết Bị",
+  "device_desktop": "Máy tính để bàn",
+  "device_mobile": "Di động",
+  "no_login": "Không Cần Đăng Nhập",
+  "realtime_results": "Kết Quả Thời Gian Thực"
+ },
+ "form": {
+  "keyword_placeholder": "vd: agency marketing kỹ thuật số",
+  "button": "Kiểm Tra Thứ Hạng Bing"
+ },
+ "markets": {
+  "us": "Hoa Kỳ (Tiếng Anh)",
+  "uk": "Vương Quốc Anh (Tiếng Anh)",
+  "ca": "Canada (Tiếng Anh)",
+  "au": "Úc (Tiếng Anh)",
+  "de": "Đức (Tiếng Đức)",
+  "fr": "Pháp (Tiếng Pháp)",
+  "es": "Tây Ban Nha (Tiếng Tây Ban Nha)",
+  "it": "Ý (Tiếng Ý)",
+  "nl": "Hà Lan (Tiếng Hà Lan)",
+  "br": "Brazil (Tiếng Bồ Đào Nha)",
+  "jp": "Nhật Bản (Tiếng Nhật)",
+  "in": "Ấn Độ (Tiếng Anh)"
+ },
+ "content": {
+  "main_title": "Công Cụ Kiểm Tra Thứ Hạng Bing Nâng Cao",
+  "main_subtitle": "theo dõi hiệu suất tìm kiếm của bạn trên công cụ tìm kiếm lớn thứ hai thế giới. Nhận dữ liệu thứ hạng chính xác, được nội địa hóa để tối ưu hóa chiến lược SEO Bing của bạn.",
+  "feature1_title": "Dữ Liệu Chính Xác 100%",
+  "feature1_desc": "Chúng tôi lấy kết quả trực tiếp từ Bing trong thời gian thực, đảm bảo bạn thấy chính xác những gì khách truy cập tiềm năng nhìn thấy.",
+  "feature2_title": "Vị Trí Cụ Thể",
+  "feature2_desc": "Kiểm tra thứ hạng như thể bạn đang tìm kiếm từ các thành phố hoặc quốc gia cụ thể. Quan trọng đối với các chiến dịch SEO địa phương.",
+  "feature3_title": "Giả Lập Thiết Bị",
+  "feature3_desc": "Chuyển đổi giữa chế độ xem Máy tính để bàn và Di động để phân tích sự khác biệt về thứ hạng trên các thiết bị.",
+  "serp_features_title": "Phân Tích Các Tính Năng SERP Bing",
+  "sf_snippets_title": "Đoạn Trích Nổi Bật",
+  "sf_snippets_desc": "Bing thường cung cấp các câu trả lời phong phú và \"câu trả lời thông minh\" tại vị trí số không. Kiểm tra xem nội dung của bạn có đang chiếm được các vị trí hiển thị cao này không.",
+  "sf_places_title": "Bing Places",
+  "sf_places_desc": "Tương đương với Local Pack của Google. Quan trọng đối với các doanh nghiệp địa phương. Sử dụng tính năng \"Vị Trí\" của chúng tôi để xác minh thứ hạng <strong>Bing Places<\/strong> của bạn.",
+  "sf_visual_title": "Tìm Kiếm Hình Ảnh",
+  "sf_visual_desc": "Bing nhấn mạnh mạnh mẽ vào kết quả tìm kiếm hình ảnh. theo dõi cách hình ảnh của bạn xuất hiện trong các bố cục SERP nhiều hình ảnh.",
+  "sf_knowledge_title": "Thẻ Kiến Thức",
+  "sf_knowledge_desc": "Các bảng thông tin phong phú ở phía bên phải. Kiểm tra xem Bing có hiểu rõ thực thể thương hiệu của bạn không.",
+  "why_check_title": "Tại Sao Nên theo Dõi Thứ Hạng Bing?",
+  "why_check_desc": "Trong khi Google chiếm ưu thế, Bing cung cấp sức mạnh tìm kiếm cho Yahoo, AOL và hàng triệu thiết bị Windows. Nó thường có tỷ lệ chuyển đổi cao hơn và ít cạnh tranh hơn. Bỏ qua Bing có nghĩa là bỏ lỡ khoảng 30% lượng tìm kiếm trên máy tính để bàn ở một số thị trường.",
+  "how_accurate_title": "Công Cụ Này Chính Xác Đến Mức Nào?",
+  "how_accurate_desc": "Công cụ của chúng tôi thực hiện các truy vấn trực tiếp đến máy chủ của Bing ngay khi bạn nhấp vào \"Kiểm tra\". Chúng tôi không sử dụng dữ liệu được lưu trong bộ nhớ đệm. Kết quả là thời gian thực, khách quan và phản ánh chính xác SERP (Trang kết quả tìm kiếm) cho các thông số đã chọn."
+ },
+ "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Công cụ kiểm tra thứ hạng Bing này có miễn phí không?",
+  "a1": "Có! **Công cụ kiểm tra thứ hạng Bing** của chúng tôi hoàn toàn miễn phí. Bạn có thể kiểm tra không giới hạn từ khóa để tối ưu hóa sự hiện diện của bạn trên công cụ tìm kiếm của Microsoft mà không mất bất kỳ chi phí nào.",
+  "q2": "Điều này có ảnh hưởng đến thứ hạng Yahoo không?",
+  "a2": "Có, nhìn chung là có. Yahoo Search phần lớn được cung cấp bởi chỉ mục của Bing. Tối ưu hóa cho Bing thường dẫn đến việc cải thiện thứ hạng trên Yahoo, mang lại cho bạn lợi ích SEO \"hai trong một\".",
+  "q3": "Tôi có thể kiểm tra thứ hạng địa phương cho một thành phố cụ thể không?",
+  "a3": "Chắc chắn rồi. Nhập thành phố của bạn vào trường \"Vị Trí\". Chúng tôi thêm các tham số vị trí cụ thể vào truy vấn tìm kiếm, cho phép bạn xem <strong>kết quả Bing địa phương<\/strong> chính xác như một người dùng ở thành phố đó sẽ thấy."
+ }
+ },
+ "broken-links-checker": {
+ "meta": {
+  "title": "Kiểm Tra Liên Kết Hỏng - Tìm Các Liên Kết Chết Trên Website của Bạn",
+  "description": "Công cụ kiểm tra liên kết hỏng miễn phí để quét website của bạn tìm các liên kết chết, lỗi 404 và sửa các URL hỏng để SEO tốt hơn.",
+  "h1": "Kiểm Tra Liên Kết Hỏng",
+  "subtitle": "Tìm và sửa các liên kết hỏng trên website của bạn để SEO và trải nghiệm người dùng tốt hơn"
+ },
+ "interface": {
+  "scan_title": "Kiểm Tra Liên Kết Hỏng",
+  "scan_subtitle": "Tìm các liên kết hỏng, chuyển hướng và hơn thế nữa.",
+  "url_label": "URL Website",
+  "button": "Quét Liên Kết Hỏng",
+  "button_scanning": "Đang quét..",
+  "legend_ok": "200 OK",
+  "legend_err": "404\/Lỗi"
+ },
+ "progress": {
+  "extracting": "Đang trích xuất liên kết..",
+  "stop": "Dừng",
+  "processing": "Đang xử lý các liên kết theo trình tự..",
+  "processed": "Đã xử lý",
+  "of": "trên",
+  "links": "liên kết",
+  "checking": "Đang kiểm tra liên kết.."
+ },
+ "stats": {
+  "total": "Tổng số liên kết",
+  "working": "Đang hoạt động (200)",
+  "redirects": "Chuyển hướng (3xx)",
+  "broken": "Bị hỏng (4xx\/5xx)"
+ },
+ "results": {
+  "download": "Tải Báo Cáo CSV",
+  "detailed_analysis": "Phân Tích Chi Tiết",
+  "status": "Trạng thái",
+  "link_url": "URL Liên Kết",
+  "anchor_text": "Văn Bản Neo",
+  "type": "Loại"
+ },
+ "content": {
+  "main_title": "Tại Sao Nên Kiểm Tra Liên Kết Hỏng?",
+  "main_subtitle": "Các liên kết hỏng làm hỏng uy tín của website, trải nghiệm người dùng và hiệu suất SEO. Công cụ kiểm tra liên kết hỏng miễn phí của chúng tôi giúp bạn xác định và sửa các liên kết chết trước khi chúng gây hại cho thứ hạng của bạn.",
+  "what_is_title": "Bộ Kiểm Tra Liên Kết Hỏng Là Gì?",
+  "what_is_desc": "Bộ kiểm tra liên kết hỏng là một công cụ quét các trang web của bạn để tìm các liên kết không còn hoạt động (lỗi 404, lỗi máy chủ hoặc chuyển hướng). Nó giúp bạn duy trì một website lành mạnh bằng cách xác định các liên kết chết có thể gây hại cho SEO và trải nghiệm người dùng của bạn.",
+  "how_works_title": "Nó Hoạt Động Như Thế Nào?",
+  "how_works_intro": "Công cụ kiểm tra liên kết hỏng của chúng tôi tuân theo quy trình 3 bước đơn giản:",
+  "how_works_step1": "<strong>Quét:<\/strong> Nhập URL trang của bạn và chúng tôi sẽ trích xuất tất cả các liên kết",
+  "how_works_step2": "<strong>Kiểm tra:<\/strong> Chúng tôi kiểm tra từng liên kết để xác minh trạng thái của nó (200, 404, 301, v.v.)",
+  "how_works_step3": "<strong>Báo cáo:<\/strong> Nhận báo cáo chi tiết cho thấy liên kết nào bị hỏng và cần sửa chữa",
+  "pro_tip_title": "💡 Mẹo Chuyên Nghiệp:",
+  "pro_tip_desc": "Chạy công cụ kiểm tra này thường xuyên (hàng tháng hoặc hàng quý) để phát hiện các liên kết hỏng trước khi chúng ảnh hưởng đến SEO của bạn. Thiết lập lịch bảo trì để giữ cho website của bạn luôn lành mạnh!",
+  "types_title": "Các Loại Liên Kết Hỏng",
+  "common_causes_title": "Các Nguyên Nhân Phổ Biến của Liên Kết Hỏng",
+  "cc_1": "❌ <strong>Lỗi đánh máy trong URL:<\/strong> Viết sai tên liên kết trong quá trình tạo nội dung hoặc di chuyển web",
+  "cc_2": "❌ <strong>Các trang đã xóa:<\/strong> Nội dung bị gỡ bỏ mà không thiết lập chuyển hướng 301",
+  "cc_3": "❌ <strong>Tái cấu trúc website:<\/strong> Thay đổi cấu trúc URL trong quá trình thiết kế lại",
+  "cc_4": "❌ <strong>Liên kết bên ngoài bị hỏng:<\/strong> Các trang web bên thứ ba gỡ bỏ hoặc di chuyển nội dung của họ",
+  "cc_5": "❌ <strong>Tên miền hết hạn:<\/strong> Các trang web được liên kết ngừng hoạt động vĩnh viễn",
+  "cc_6": "❌ <strong>Thay đổi giao thức:<\/strong> Di chuyển từ HTTP sang HTTPS mà không có chuyển hướng thích hợp",
+  "best_practices_title": ""
+ },
+ "benefits": {
+  "ux_title": "Trải Nghiệm Người Dùng",
+  "ux_desc": "Các liên kết hỏng làm khách truy cập thất vọng và tăng tỷ lệ thoát. Hãy giữ cho người dùng của bạn hài lòng với trải nghiệm duyệt web mượt mà.",
+  "seo_title": "Tác Động SEO",
+  "seo_desc": "Các công cụ tìm kiếm phạt các trang có nhiều liên kết hỏng. Duy trì thứ hạng của bạn bằng cách sửa các liên kết chết kịp thời.",
+  "maintenance_title": "Bảo Trì Dễ Dàng",
+  "maintenance_desc": "Nhanh chóng xác định và sửa các liên kết hỏng trước khi chúng làm hỏng uy tín và khả năng hiển thị tìm kiếm của trang web."
+ },
+ "link_types": {
+  "type1_title": "🔴 404 Not Found",
+  "type1_desc": "Liên kết hỏng phổ biến nhất. Trang không còn tồn tại trên máy chủ.",
+  "type2_title": "🟡 Chuyển hướng 301\/302",
+  "type2_desc": "Trang đã di chuyển. Mặc dù không phải là \"hỏng\", nhưng quá nhiều chuyển hướng làm chậm trang web của bạn.",
+  "type3_title": "🔴 Lỗi máy chủ 500",
+  "type3_desc": "Máy chủ đã gặp lỗi. Những lỗi này cần được chú ý ngay lập tức.",
+  "type4_title": "🟢 Lỗi Hết Thời Gian (Timeout)",
+  "type4_desc": "Máy chủ mất quá nhiều thời gian để phản hồi. Có thể cho thấy các vấn đề về hiệu suất."
+ },
+ "best_practices": {
+  "bp1_title": "Kiểm Toán Thường Xuyên",
+  "bp1_desc": "Kiểm tra trang web của bạn hàng tháng để tìm các liên kết hỏng, đặc biệt là sau khi cập nhật nội dung",
+  "bp2_title": "Sử Dụng Chuyển Hướng 301",
+  "bp2_desc": "Khi di chuyển hoặc xóa trang, hãy luôn thiết lập các chuyển hướng thích hợp",
+  "bp3_title": "theo Dõi Các Liên Kết Bên Ngoài",
+  "bp3_desc": "Các trang web bên ngoài thay đổi thường xuyên. Xem lại các liên kết trỏ ra ngoài hàng quý",
+  "bp4_title": "Ghi Lại Các Thay Đổi",
+  "bp4_desc": "Giữ một nhật ký các thay đổi URL và chuyển hướng để tham khảo trong tương lai",
+  "bp5_title": "Sửa Các Liên Kết Nội Bộ Trước",
+  "bp5_desc": "Ưu tiên sửa các liên kết nội bộ bị hỏng vì chúng hoàn toàn nằm trong tầm kiểm soát của bạn",
+  "bp6_title": "Sử Dụng URL Tương Đối",
+  "bp6_desc": "Đối với các liên kết nội bộ, hãy sử dụng URL tương đối để tránh các vấn đề khi thay đổi tên miền"
+ },
+ "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Tôi nên kiểm tra liên kết hỏng bao lâu một lần?",
+  "a1": "Đối với hầu hết các trang web, kiểm tra liên kết hỏng hàng tháng là đủ. Các trang có lưu lượng truy cập cao hoặc nền tảng thương mại điện tử nên kiểm tra hàng tuần. Sau các bản cập nhật lớn, thiết kế lại hoặc di chuyển web, hãy chạy kiểm tra ngay lập tức.",
+  "q2": "Các liên kết hỏng có làm hại thứ hạng SEO của tôi không?",
+  "a2": "Có, nhưng gián tiếp. Google đã tuyên bố rằng một vài liên kết hỏng sẽ không trực tiếp làm hại thứ hạng. Tuy nhiên, <strong>nhiều liên kết hỏng<\/strong> là dấu hiệu của việc bảo trì trang web kém, có thể làm tăng tỷ lệ thoát, lãng phí thời gian thu thập dữ liệu và giảm sự tin tưởng của người dùng.",
+  "q3": "Sự khác biệt giữa liên kết hỏng nội bộ và bên ngoài là gì?",
+  "a3": "<strong>Liên kết nội bộ bị hỏng<\/strong> trỏ đến các trang trên chính tên miền của bạn và hoàn toàn nằm dưới quyền kiểm soát của bạn. <strong>Liên kết bên ngoài bị hỏng<\/strong> trỏ đến các trang web khác. Bạn nên cập nhật chúng bằng các lựa chọn thay thế đang hoạt động hoặc xóa chúng đi.",
+  "q4": "Tôi có thể kiểm tra liên kết hỏng cho toàn bộ website của bạn không?",
+  "a4": "Công cụ này kiểm tra <strong>từng trang một<\/strong> để cung cấp kết quả nhanh chóng và tập trung. Đối với các cuộc kiểm tra toàn bộ trang web, chúng tôi khuyên bạn nên bắt đầu với các trang quan trọng nhất: trang chủ, các trang đích hàng đầu và nội dung có lưu lượng truy cập cao.",
+  "q_what_to_do": "Tôi nên làm gì khi tìm thấy các liên kết hỏng?",
+  "a_what_to_do_intro": "Hãy tuân theo thứ tự ưu tiên này:",
+  "a_what_to_do_li1": "<strong>Liên kết nội bộ:<\/strong> Thiết lập chuyển hướng 301 đến URL mới hoặc cập nhật liên kết trực tiếp",
+  "a_what_to_do_li2": "<strong>Liên kết bên ngoài:<\/strong> Tìm một trang thay thế đang hoạt động hoặc sử dụng archive.org để tìm nội dung cũ",
+  "a_what_to_do_li3": "<strong>Nếu không có thay thế:<\/strong> Xóa liên kết và cập nhật nội dung xung quanh để duy trì sự mạch lạc",
+  "a_what_to_do_li4": "<strong>Ghi lại mọi thứ:<\/strong> Giữ một nhật ký để tham khảo trong tương lai và phân tích các mô hình lỗi"
+ },
+ "js": {
+  "stopping": "Đang dừng quét..",
+  "scan_stopped": "Quét Đã Dừng",
+  "scan_complete": "Quét Hoàn Tất!",
+  "error_prefix": "Lỗi: ",
+  "pending": "Đang chờ",
+  "internal": "Nội bộ",
+  "external": "Bên ngoài"
+ }
+ },
+ "google-serp-checker": {
+ "meta": {
+  "title": "Kiểm Tra SERP Google - Kiểm Tra Thứ Hạng Tìm Kiếm theo Vị Trí",
+  "description": "Công cụ kiểm tra SERP Google miễn phí để phân tích kết quả công cụ tìm kiếm và theo dõi thứ hạng từ khóa tại các vị trí khác nhau.",
+  "h1": "Kiểm Tra SERP Google",
+  "subtitle": "Kiểm tra thứ hạng tìm kiếm Google và theo dõi vị trí từ khóa trên toàn cầu"
+ },
+ "interface": {
+  "simulation_title": "Giả Lập Kiểm Tra SERP Trực Tiếp",
+  "location_label": "Vị Trí",
+  "location_placeholder": "Nhập thành phố, quốc gia hoặc mã bưu điện",
+  "domain_label": "Tên Miền Google",
+  "device_label": "Loại Thiết Bị",
+  "device_desktop": "Máy tính để bàn",
+  "device_mobile": "Di động (Smartphone)",
+  "no_login": "Không Cần Đăng Nhập",
+  "realtime_results": "Kết Quả Thời Gian Thực"
+ },
+ "form": {
+  "keyword_label": "Nhập Từ Khóa",
+  "button": "Kiểm Tra SERP"
+ },
+ "content": {
+  "main_title": "Tại Sao Nên Sử Dụng Công Cụ Kiểm Tra SERP Google Miễn Phí của Chúng Tôi?",
+  "main_subtitle": "Trong thế giới SEO, sự chính xác là tất cả. Trình phân tích SERP của chúng tôi bỏ qua các thuật toán cá nhân hóa để hiển thị cho bạn thứ hạng SERP thực sự của website.",
+  "feature1_title": "Độ Chính Xác Vị Trí SERP Siêu Địa Phương",
+  "feature1_desc": "Xếp hạng cho từ khóa như \"pizza tại trung tâm thành phố\". Chúng tôi sử dụng các tham số Google UULE nâng cao để giả lập việc kiểm tra SERP địa phương chính xác.",
+  "feature2_title": "Tìm Kiếm & Phân Tích SERP Di Động",
+  "feature2_desc": "Xác minh thứ hạng của bạn trên iPhone và Android. Đừng để Mobile-First Indexing làm bạn bất ngờ. Phân tích SERP di động toàn diện.",
+  "feature3_title": "theo Dõi SERP Google Toàn Cầu",
+  "feature3_desc": "Đang mở rộng? Kiểm tra thứ hạng trên hơn 190 quốc gia. Chuyển đổi giữa Google.co.uk, Google.de, Google.jp và nhiều tên miền khác.",
+  "serp_features_title": "Hiểu Về Các Tính Năng SERP của Google",
+  "feature_snippet_title": "Đoạn Trích Nổi Bật",
+  "feature_snippet_desc": "Còn được gọi là \"hộp câu trả lời\", chúng xuất hiện trong khoảng 12% truy vấn tìm kiếm. Công cụ của chúng tôi giúp bạn kiểm tra xem bạn có đang sở hữu vị trí đắc địa này không.",
+  "feature_local_title": "Local Pack",
+  "feature_local_desc": "Danh sách 3 doanh nghiệp địa phương dựa trên bản đồ. Quan trọng đối với các cửa hàng vật lý. Sử dụng tính năng \"Vị Trí\" để xác minh sự hiện diện của bạn.",
+  "feature_paa_title": "Mọi người cũng hỏi",
+  "feature_paa_desc": "Các câu hỏi kiểu xếp chồng liên quan đến truy vấn của người dùng. Xếp hạng ở đây có thể mang lại lượng truy cập nhận thức đáng kể. Sử dụng công cụ kiểm tra từ khóa SERP của chúng tôi để xác định các cơ hội này.",
+  "feature_knowledge_title": "Bảng Tri Thức",
+  "feature_knowledge_desc": "Các hộp thông tin xuất hiện ở bên phải kết quả trên máy tính để bàn. Thiết yếu cho uy tín thương hiệu và SEO thực thể.",
+  "what_is_title": "Bộ Kiểm Tra & Phân Tích SERP Là Gì?",
+  "what_is_desc": "Bộ kiểm tra kết quả trang tìm kiếm (SERP) là một công cụ chẩn đoán thiết yếu cho các chuyên gia SEO và chủ doanh nghiệp. Nó cho phép bạn sử dụng trình kiểm tra SERP website để xem các kết quả cho một từ khóa cụ thể như chúng sẽ xuất hiện đối với một người dùng trung lập ở một vị trí địa lý cụ thể.",
+  "bubble_problem_title": "Vấn Đề \"Bong Bóng Google\"",
+  "bubble_problem_desc": "Nếu bạn chỉ truy cập Google.com và tìm kiếm từ khóa của riêng bạn, các kết quả sẽ bị thiên kiến nặng nề. Google tùy chỉnh kết quả dựa trên địa chỉ IP, lịch sử tìm kiếm và loại thiết bị của bạn. Điều này gây khó khăn cho việc trả lời \"thứ hạng SERP của tôi là gì\" một cách chính xác nếu không có công cụ.",
+  "solution_text": "Công cụ kiểm tra SERP Google miễn phí của chúng tôi sẽ xóa tan bong bóng này. Bằng cách sử dụng tham số UULE, chúng tôi tạo ra một chuỗi mã hóa đặc biệt cho Google biết chính xác vị trí giả lập việc theo dõi SERP, mang lại cho bạn dữ liệu sạch và khách quan 100%."
+ },
+ "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Công cụ SERP này có miễn phí cho các tìm kiếm không giới hạn không?",
+  "a1": "Có! Công cụ SERP miễn phí của chúng tôi cho phép bạn kiểm tra bao nhiêu từ khóa tùy thích mà không cần tạo tài khoản hay trả phí đăng ký. Chúng tôi tin tưởng vào việc cung cấp các công cụ kiểm tra thứ hạng SERP trực tuyến dễ tiếp cận cho mọi người.",
+  "q2": "Tính năng vị trí của Công cụ Vị trí SERP hoạt động như thế nào?",
+  "a2": "Chúng tôi sử dụng tham số UULE (Universal URL Location Encoded) chính thức của Google. Khi bạn nhập một thành phố, chúng tôi tìm tọa độ GPS chính xác của nó và mã hóa chúng vào yêu cầu tìm kiếm, buộc Google hiển thị các kết quả như thể bạn đang đứng tại thành phố đó.",
+  "q3": "Tại sao Thứ hạng Google SERP của tôi trông khác trên Di động?",
+  "a3": "Google sử dụng Mobile-First Indexing, nghĩa là nó chủ yếu sử dụng phiên bản di động của nội dung để lập chỉ mục và xếp hạng. Kết quả tìm kiếm trên di động cũng có các bố cục khác nhau (nhiều quảng cáo hơn, các đoạn trích khác nhau). Sử dụng bộ chọn \"Thiết bị\" để xác minh sự hiện diện di động của bạn một cách cụ thể."
+ }
+ },
+ "keyword-density-checker": {
+ "meta": {
+  "title": "Kiểm Tra Mật Độ Từ Khóa - Kiểm Tra Tần Suất Từ Khóa",
+  "description": "Công cụ kiểm tra mật độ từ khóa miễn phí. Phân tích tần suất từ và cách sử dụng từ khóa để tối ưu hóa nội dung của bạn.",
+  "h1": "Kiểm Tra Mật Độ Từ Khóa",
+  "subtitle": "Kiểm tra cách sử dụng và mật độ từ khóa để có thứ hạng tìm kiếm tốt hơn"
+ },
+ "form": {
+  "label": "Dán Văn Bản hoặc URL",
+  "placeholder": "Dán văn bản của bạn vào đây..",
+  "button": "Kiểm Tra Mật Độ"
+ },
+ "results": {
+  "title": "Thống Kê Từ Khóa",
+  "total_words": "Total Words",
+  "unique_words": "Từ Duy Nhất",
+  "sentences": "Câu",
+  "paragraphs": "Đoạn văn",
+  "long_sentences": "Câu dài",
+  "short_sentences": "Câu Ngắn",
+  "top_keyword": "Từ Khóa Hàng Đầu",
+  "top_density": "Mật Độ Cao Nhất",
+  "single_keywords_title": "Từ Khóa Đơn",
+  "keyword_header": "Từ khóa",
+  "count_header": "số lượng",
+  "density_header": "Mật độ",
+  "two_word_title": "Cụm 2 Từ",
+  "phrase_header": "Cụm từ",
+  "three_word_title": "Cụm 3 Từ"
+ },
+ "content": {
+  "main_title": "Kiểm Tra Mật Độ Từ Khóa",
+  "main_subtitle": "Tối ưu hóa mức độ liên quan của nội dung bằng cách phân tích tần suất từ khóa.",
+  "intro": "Công cụ kiểm tra mật độ từ khóa của chúng tôi giúp bạn tìm các từ và cụm từ được sử dụng thường xuyên nhất trong văn bản. Hoàn hảo cho các chuyên gia SEO và người viết nội dung để tránh nhồi nhét từ khóa.",
+  "what_is_title": "Mật Độ Từ Khóa Là Gì?",
+  "what_is_text": "Mật độ từ khóa là tỷ lệ phần trăm số lần một từ khóa hoặc cụm từ xuất hiện trong nội dung so với tổng số từ trên trang. Đây là một yếu tố quan trọng trong Tối ưu hóa Công cụ Tìm kiếm (SEO).",
+  "guidelines_title": "Hướng Dẫn Về Mật Độ",
+  "why_use_title": "Tại Sao Nên Kiểm Tra Mật Độ Từ Khóa?",
+  "best_practices_title": "Thực Hành Tốt Nhất",
+  "faq_title": "FAQ"
+ },
+ "guidelines": {
+  "g1": "Không có tỷ lệ phần trăm nào là \"hoàn hảo\", nhưng <strong>1-3%<\/strong> thường được coi là an toàn.",
+  "g2": "Tránh \"Nhồi nhét từ khóa\" vì nó có thể gây hại cho thứ hạng của bạn.",
+  "g3": "Viết một cách tự nhiên cho người đọc, không chỉ cho các công cụ tìm kiếm.",
+  "g4": "Sử dụng các từ đồng nghĩa và từ khóa LSI (Lập chỉ mục ngữ nghĩa tiềm ẩn).",
+  "g5": "Kiểm tra không chỉ các từ đơn lẻ mà còn cả các cụm từ 2-3 từ."
+ },
+ "features": {
+  "f1_title": "Phân Tích Sâu",
+  "f1_desc": "Phân tích các từ đơn lẻ, cụm 2 từ (bigram) và cụm 3 từ (trigram).",
+  "f2_title": "Bộ Đếm Từ",
+  "f2_desc": "Đếm chính xác số từ, số câu và số đoạn văn.",
+  "f3_title": "Kiểm Tra Nhồi Nhét",
+  "f3_desc": "Giúp xác định xem bạn có lặp lại từ khóa quá thường xuyên không.",
+  "f4_title": "Free Tool",
+  "f4_desc": "Completely free to use with no limits.",
+  "f5_title": "Dành Cho Người Viết",
+  "f5_desc": "Cải thiện chất lượng nội dung và khả năng đọc.",
+  "f6_title": "Từ Dừng (Stop Words)",
+  "f6_desc": "Lọc thông minh các từ dừng phổ biến."
+ },
+ "best_practices": {
+  "bp1": "Tập trung vào chất lượng nội dung thay vì các con số mật độ cụ thể.",
+  "bp2": "Đưa từ khóa chính của bạn vào đoạn văn đầu tiên.",
+  "bp3": "Sử dụng từ khóa trong các tiêu đề H1 và H2.",
+  "bp4": "Sử dụng các biến thể từ khóa đuôi dài (long-tail keywords).",
+  "bp5": "Đừng hy sinh khả năng đọc để đổi lấy SEO.",
+  "bp6": "Đừng lặp lại cùng một từ một cách không tự nhiên."
+ },
+ "faq": {
+  "q1": "Mật độ từ khóa tốt là bao nhiêu?",
+  "a1": "Hầu hết các chuyên gia SEO khuyên dùng khoảng 1-2%. Văn bản nên được đọc một cách tự nhiên.",
+  "q2": "Nhồi nhét từ khóa là gì?",
+  "a2": "Đó là việc đưa quá nhiều từ khóa vào một trang web nhằm thao túng thứ hạng của trang đó trong kết quả tìm kiếm của Google.",
+  "q3": "Công cụ có bỏ qua các từ dừng không?",
+  "a3": "Có, công cụ của chúng tôi lọc bỏ các từ dừng phổ biến (như \"the\", \"and\", \"is\") để cung cấp cho bạn mật độ của các từ có nghĩa.",
+  "q4": "Mật độ cụm từ có quan trọng không?",
+  "a4": "Có, các công cụ tìm kiếm tìm kiếm các cụm từ và nhóm chủ đề, không chỉ các từ đơn lẻ.",
+  "q5": "Tôi có thể kiểm tra một URL không?",
+  "a5": "Hiện tại công cụ này hoạt động với đầu vào văn bản. Hãy sao chép nội dung trang của bạn và dán vào đây."
+ },
+ "alerts": {
+  "enter_text": "Vui lòng nhập văn bản để phân tích"
+ }
+ },
+ "meta-tag-analyzer": {
+ "meta": {
+  "title": "Phân Tích Thẻ Meta - Kiểm Tra Thẻ Meta SEO",
+  "description": "Công cụ phân tích thẻ meta miễn phí để kiểm tra và tối ưu hóa các thẻ meta website của bạn giúp SEO tốt hơn.",
+  "h1": "Phân Tích Thẻ Meta",
+  "subtitle": "Phân tích toàn diện các thẻ meta để tối ưu hóa công cụ tìm kiếm"
+ },
+ "form": {
+  "label": "Nhập URL Website",
+  "placeholder": "https:\/\/example.com",
+  "button": "Phân Tích Thẻ Meta"
+ },
+ "results": {
+  "title": "Kết Quả Phân Tích",
+  "title_tag": "Thẻ Tiêu Đề (Title Tag)",
+  "length": "Độ dài",
+  "characters": "ký tự",
+  "meta_description": "Thẻ Mô Tả (Meta Description)"
+ },
+ "results_labels": {
+  "other_tags": "Các Thẻ Meta Khác",
+  "seo_score": "Điểm SEO",
+  "viewport": "Cửa sổ xem (Viewport)",
+  "charset": "Bảng mã (Charset)",
+  "robots": "Robot"
+ },
+ "content": {
+  "main_title": "Phân Tích Thẻ Meta",
+  "main_subtitle": "Phân tích và tối ưu hóa các thẻ meta website của bạn một cách dễ dàng.",
+  "intro": "Công cụ Phân tích Thẻ Meta miễn phí của chúng tôi giúp bạn kiểm tra các thẻ meta của bất kỳ trang web nào. Nhận thông tin chi tiết tức thì về Tiêu đề, Mô tả và các thẻ SEO quan trọng khác.",
+  "what_are_title": "Thẻ Meta Là Gì?",
+  "what_are_desc": "Thẻ meta là những đoạn văn bản ngắn mô tả nội dung của một trang; các thẻ meta không xuất hiện trên chính trang đó, mà chỉ xuất hiện trong mã nguồn của trang. Thẻ meta về cơ bản là các phần mô tả nội dung nhỏ giúp cho các công cụ tìm kiếm biết trang web đó nói về điều gì.",
+  "essential_title": "Các Thẻ Meta Thiết Yếu Cho SEO",
+  "common_mistakes_title": "Các Lỗi Thẻ Meta Phổ Biến",
+  "mistake_1": "Thiếu thẻ Tiêu đề hoặc Mô tả",
+  "mistake_2": "Vượt quá giới hạn ký tự được khuyến nghị",
+  "mistake_3": "Trùng lặp thẻ meta giữa các trang",
+  "mistake_4": "Sử dụng các từ khóa không liên quan",
+  "mistake_5": "Không có thẻ viewport để tối ưu hóa di động",
+  "mistake_6": "Nhiều thẻ Tiêu đề trên cùng một trang",
+  "why_analyze_title": "Tại Sao Nên Phân Tích Thẻ Meta?"
+ },
+ "meta_tags": {
+  "title_tag_title": "Thẻ Tiêu Đề (Title Tag)",
+  "title_tag_desc": "Thẻ meta quan trọng nhất. Nó xác định tiêu đề trang của bạn trong kết quả tìm kiếm.",
+  "title_optimal_length": "Độ dài Tối Ưu:",
+  "title_optimal_value": "50-60 ký tự",
+  "title_best_practice": "Thực Hành Tốt Nhất:",
+  "title_best_value": "Đưa từ khóa chính của bạn vào gần phần đầu.",
+  "meta_desc_title": "Thẻ Mô Tả (Meta Description)",
+  "meta_desc_desc": "Cung cấp một bản tóm tắt nội dung trang. Ảnh hưởng đến Tỷ lệ nhấp chuột (CTR).",
+  "meta_desc_optimal_length": "Độ dài Tối Ưu:",
+  "meta_desc_optimal_value": "150-160 ký tự",
+  "meta_desc_best_practice": "Thực Hành Tốt Nhất:",
+  "meta_desc_best_value": "Viết nội dung hấp dẫn với lời kêu gọi hành động (CTA).",
+  "og_title": "Open Graph (Mạng xã hội)",
+  "og_desc": "Kiểm soát cách nội dung của bạn xuất hiện khi được chia sẻ trên mạng xã hội (Facebook, LinkedIn).",
+  "og_key_tags": "Các Thẻ Chính:",
+  "og_key_value": "og:title, og:description, og:image",
+  "og_platform": "Nền tảng:",
+  "og_platform_value": "Facebook, LinkedIn, Pinterest",
+  "twitter_title": "Thẻ Twitter",
+  "twitter_desc": "Các thẻ meta cụ thể để tối ưu hóa cách nội dung của bạn xuất hiện trên Twitter.",
+  "twitter_key_tags": "Các Thẻ Chính:",
+  "twitter_key_value": "twitter:card, twitter:title, twitter:image",
+  "twitter_types": "Các loại:",
+  "twitter_types_value": "Tóm tắt, Tóm tắt với Hình ảnh Lớn"
+ },
+ "benefits": {
+  "b1_title": "Thứ Hạng Tốt Hơn",
+  "b1_desc": "Các thẻ thích hợp giúp công cụ tìm kiếm hiểu nội dung của bạn.",
+  "b2_title": "Tỷ Lệ Nhấp Cao Hơn",
+  "b2_desc": "Tiêu đề và mô tả hấp dẫn sẽ nhận được nhiều lượt nhấp hơn.",
+  "b3_title": "Khả Năng Hiển Thị Trên Mạng Xã Hội",
+  "b3_desc": "Các thẻ Open Graph được tối ưu hóa giúp cải thiện sự xuất hiện khi chia sẻ trên mạng xã hội.",
+  "b4_title": "Phân Tích Đối Thủ Cạnh Tranh",
+  "b4_desc": "Phân tích các thẻ của đối thủ để tinh chỉnh chiến lược của bạn."
+ },
+ "features": {
+  "f2_title": "Phân Tích Tức Thì",
+  "f2_desc": "Nhận kết quả trong vài giây.",
+  "f3_title": "Sử Dụng Miễn Phí",
+  "f3_desc": "Không có phí ẩn hoặc giới hạn."
+ },
+ "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Bộ Phân Tích Thẻ Meta Là Gì?",
+  "a1": "Đó là một công cụ thu thập thông tin một trang web và trích xuất các thẻ meta của trang đó (tiêu đề, mô tả, robot, từ khóa) để phân tích.",
+  "q2": "Tại sao thẻ meta quan trọng đối với SEO?",
+  "a2": "Chúng cung cấp cho công cụ tìm kiếm thông tin về trang của bạn và thường quyết định cách trang web của bạn xuất hiện trong kết quả tìm kiếm.",
+  "q3": "Độ dài thẻ Tiêu đề hoàn hảo là bao nhiêu?",
+  "a3": "Khuyến nghị nên giữ nó trong khoảng 50-60 ký tự để tránh bị cắt bớt trong kết quả tìm kiếm của Google.",
+  "q4": "Thẻ meta từ khóa có ảnh hưởng đến thứ hạng không?",
+  "a4": "Hầu hết các công cụ tìm kiếm hiện đại (bao gồm cả Google) không còn sử dụng thẻ meta từ khóa cho mục đích xếp hạng.",
+  "q5": "Làm thế nào để sửa các lỗi thẻ meta?",
+  "a5": "Bạn cần chỉnh sửa mã HTML của trang (trong phần <head>) hoặc sử dụng các cài đặt\/plugin SEO của CMS."
+ },
+ "js": {
+  "alert_enter_url": "Vui lòng nhập một URL hợp lệ",
+  "analyzing": "Đang phân tích..",
+  "error_cors": "<strong>Lỗi CORS (Demo):<\/strong> Trong môi trường sản xuất, các yêu cầu đến URL bên ngoài phải đi qua proxy phụ trợ của bạn. <br>Dưới đây là dữ liệu demo.",
+  "error_general": "Lỗi khi phân tích URL",
+  "analyze_btn": "Phân Tích Thẻ Meta",
+  "demo_title": "Tiêu đề Trang Ví Dụ - Đã tối ưu hóa cho SEO",
+  "demo_description": "Đây là một ví dụ về thẻ mô tả meta. Nó nên mang tính mô tả, hấp dẫn và chứa các từ khóa để thu hút lượt nhấp từ kết quả tìm kiếm.",
+  "status_optimal": "Tối ưu",
+  "advice_perfect_length": "Độ dài hoàn hảo!",
+  "status_too_long": "Quá dài",
+  "advice_truncated": "Có thể bị cắt bớt trong kết quả tìm kiếm.",
+  "status_too_short": "Quá Ngắn",
+  "advice_add_detail": "Hãy cân nhắc thêm chi tiết.",
+  "advice_truncated_short": "Có thể bị cắt bớt.",
+  "advice_add_detail_short": "Hãy cân nhắc thêm chi tiết.",
+  "score_text": "Tốt! Các thẻ meta của bạn đã được tối ưu hóa tốt."
+ }
+ },
+ "on-page-seo-checker": {
+ "meta": {
+  "title": "Kiểm Tra SEO On-Page - Phân Tích SEO Toàn Diện",
+  "description": "Công cụ kiểm tra SEO on-page miễn phí để phân tích và tối ưu hóa các trang web của bạn cho công cụ tìm kiếm.",
+  "h1": "Kiểm Tra SEO On-Page",
+  "subtitle": "Kiểm toán SEO on-page đầy đủ với các đề xuất có thể thực hiện được"
+ },
+ "interface": {
+  "title": "Bắt Đầu Kiểm Toán Miễn Phí",
+  "url_label": "URL Website",
+  "keywords_label": "Từ Khóa mục tiêu",
+  "recommended": "Được khuyến nghị",
+  "button": "Bắt Đầu Kiểm Toán Toàn Diện",
+  "page_analysis": "Phân Tích Trang"
+ },
+ "labels": {
+  "initializing": "Đang khởi tạo..",
+  "desktop": "Máy tính để bàn",
+  "mobile": "Di động"
+ },
+ "content": {
+  "main_content_title": "Bộ Phân Tích & Kiểm Tra SEO On-Page Toàn Diện",
+  "main_content_desc": "Các công cụ tìm kiếm hiện đại sử dụng so khớp thần kinh để hiểu <em>ý định<\/em> đằng sau một truy vấn, không chỉ là các từ khóa chính xác. <strong>Công cụ kiểm tra SEO on-page<\/strong> của chúng tôi được xây dựng trên chính những nguyên tắc này. Cho dù bạn cần một <strong>kiểm tra SEO on-page<\/strong> nhanh chóng hay một cuộc kiểm toán ngữ nghĩa sâu sắc, công cụ của chúng tôi hoạt động như một <strong>trình phân tích SEO on-page<\/strong> thần kinh, giúp bạn thu hẹp khoảng cách giữa nội dung và cách các thuật toán AI diễn giải nó.",
+  "how_to_title": "Cách Sử Dụng Công Cụ Kiểm Tra SEO On-Page"
+ },
+ "features": {
+  "f1_title": "Phân Tích Ngữ Nghĩa Tức Thì",
+  "f1_desc": "Robot tìm kiếm thu thập dữ liệu một cách hiệu quả. Việc <strong>kiểm tra SEO on-page trực tuyến<\/strong> của chúng tôi mô phỏng hành vi này, phân tích cú pháp DOM của bạn để hiểu cấu trúc và hệ thống phân cấp. <strong>Công cụ kiểm tra on-page<\/strong> này đảm bảo mã HTML của bạn nói cùng ngôn ngữ với các công cụ tìm kiếm.",
+  "f2_title": "Chấm Điểm Dựa Trên Dữ Liệu",
+  "f2_desc": "Hãy quên tính chủ quan đi—bạn sẽ nhận được điểm số có trọng số dựa trên các tín hiệu như tối ưu hóa tiêu đề, mức độ hoàn thiện meta và tỷ lệ số lượng từ. Đó là một cơ chế <strong>kiểm tra SEO on-page<\/strong> minh bạch với các ngưỡng có thể thực hiện được.",
+  "f3_title": "Đánh Giá Nội Dung theo Ngữ Cảnh",
+  "f3_desc": "Huyền thoại về mật độ từ khóa \"hoàn hảo\" đã biến mất. <strong>Công cụ kiểm toán SEO on-page<\/strong> của chúng tôi đánh giá mức độ liên quan theo ngữ cảnh. Các thẻ H1 của bạn có phù hợp với mục đích của người dùng không? Nội dung của bạn có thỏa mãn truy vấn không? Đây là <strong>phân tích SEO on-page<\/strong> hiện đại.",
+  "f4_title": "Kiểm Tra Kỹ Thuật & Di Động",
+  "f4_desc": "Thẻ viewport, liên kết canonical và các đoạn trích dữ liệu cấu trúc—đã được kiểm tra. <strong>Trình kiểm tra SEO on-page<\/strong> của chúng tôi gắn cờ các vấn đề về khả năng sử dụng trên di động và sự không nhất quán trong đánh dấu, mang đến cho bạn một <strong>báo cáo SEO on-page<\/strong> vừa mang tính thẩm mỹ vừa chính xác về mặt thuật toán.",
+  "f5_title": "Truy Cập Miễn Phí 100%",
+  "f5_desc": "Không cần đăng ký, không có giới hạn ẩn. Đây là lựa chọn <strong>công cụ SEO on-page miễn phí<\/strong> của bạn. Chạy kiểm toán không giới hạn trên bất kỳ URL công khai nào, cho dù đó là trang web của chính bạn hay nghiên cứu đối thủ cạnh tranh.",
+  "f6_title": "Kiến Trúc Liên Kết",
+  "f6_desc": "Kiểm toán liên kết nội bộ và bên ngoài trong một chế độ xem. Xem có bao nhiêu liên kết trỏ ra ngoài và trỏ đến đâu, và liệu việc liên kết nội bộ của bạn có tăng cường quyền uy theo chủ đề không. Đó là một <strong>công cụ kiểm tra SEO on-page miễn phí<\/strong> toàn diện."
+ },
+ "how_to": {
+  "step1_title": "Nhập URL của Bạn",
+  "step1_desc": "Cung cấp endpoint trang cụ thể. <strong>Công cụ kiểm tra SEO on-page trực tuyến<\/strong> của chúng tôi sẽ lấy mã HTML thô giống như một robot tìm kiếm.",
+  "step2_title": "Phân Tích Tín Hiệu",
+  "step2_desc": "Khởi động <strong>trình kiểm tra trang SEO<\/strong>. Chúng tôi phân tích các tiêu đề, siêu dữ liệu và cấu trúc nội dung để mô phỏng cách thuật toán \"đọc\" trang của bạn.",
+  "step3_title": "Tối Ưu Hóa theo Ý Định",
+  "step3_desc": "Sử dụng dữ liệu để tinh chỉnh mức độ liên quan của nội dung. <strong>Kiểm tra logic website on-page<\/strong> và cải thiện <strong>điểm số SEO on-page<\/strong> có thể thực hiện được của bạn."
+ },
+ "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Tại sao việc kiểm tra SEO on-page lại quan trọng đối với thứ hạng?",
+  "a1": "Tìm kiếm là về sự liên quan. Một cuộc <strong>kiểm tra SEO on-page<\/strong> đảm bảo các tín hiệu của bạn (tiêu đề, schema, nội dung) phù hợp với ý định người dùng. Việc kiểm toán thường xuyên với công cụ <strong>SEO on-page trang web<\/strong> giúp trang của bạn luôn đồng bộ với các bản cập nhật thuật toán liên tục thay đổi.",
+  "q2": "Công cụ SEO on-page trực tuyến này có thực sự miễn phí không?",
+  "a2": "Có. Chúng tôi tin vào dữ liệu dễ tiếp cận. <strong>Công cụ SEO on-page trực tuyến<\/strong> của chúng tôi được sử dụng miễn phí, cho phép bạn tự làm SEO mà không gặp rào cản về phí đăng ký.",
+  "q3": "Các công cụ tìm kiếm hiểu nội dung của tôi như thế nào?",
+  "a3": "Các công cụ tìm kiếm sử dụng NLP (Xử lý ngôn ngữ tự nhiên) để liên kết các thực thể. <strong>Trình xếp hạng SEO on-page<\/strong> của chúng tôi kiểm tra xem cấu trúc của bạn có hỗ trợ sự hiểu biết này không, hoạt động như một <strong>bản kiểm tra SEO on-page<\/strong> cho khả năng tương thích thần kinh.",
+  "q4": "Tôi có thể kiểm tra SEO on-page cho bất kỳ website nào không?",
+  "a4": "Có. Trình thu thập của chúng tôi tôn trọng `robots.txt` nhưng có thể phân tích bất kỳ URL công khai nào. Bạn có thể <strong>kiểm tra SEO on-page<\/strong> cho các đối thủ để tìm hiểu bí quyết thành công của họ. Đây là một công cụ linh hoạt cho mọi chiến lược."
+ }
+ },
+ "pdf-report": {
+ "seo": {
+  "title": "Báo Cáo PDF - Báo Cáo Kiểm Toán SEO Chuyên Nghiệp"
+ },
+ "interface": {
+  "brand_name": "Optimizo",
+  "cover_title": "SEO AUDIT REPORT",
+  "overall_score": "ĐIỂM TỔNG QUAN",
+  "generated_on": "Được tạo vào ngày",
+  "suite_name": "Bộ Công Cụ SEO Optimizo",
+  "audit_title": "Kiểm Toán SEO Optimizo",
+  "analysis_methods": "Phương Pháp Phân Tích Chi Tiết",
+  "recommendation": "ĐỀ XUẤT:"
+ },
+ "meta": {
+  "title": "Báo Cáo PDF - Bộ Tạo Báo Cáo Kiểm Toán SEO",
+  "description": "Tạo báo cáo kiểm toán SEO miễn phí ở định dạng PDF cho website của bạn.",
+  "h1": "Bộ Tạo Báo Cáo PDF",
+  "subtitle": "Tạo các báo cáo PDF chi tiết để phân tích và kiểm toán SEO"
+ }
+ },
+ "redirect-checker": {
+ "meta": {
+  "title": "Kiểm Tra Chuyển Hướng - Phân Tích Mã Trạng Thái HTTP & Chuỗi Chuyển Hướng Miễn Phí",
+  "description": "Công cụ kiểm tra chuyển hướng miễn phí để phân tích các chuyển hướng URL, truy vết chuỗi chuyển hướng, kiểm tra mã trạng thái HTTP và phát hiện vòng lặp chuyển hướng. Thiết yếu cho SEO và gỡ lỗi.",
+  "h1": "Kiểm Tra Chuyển Hướng",
+  "subtitle": "Truy vết chuyển hướng HTTP và xác định các chuỗi 301, 302 và meta refresh"
+ },
+ "form": {
+  "url_label": "Nhập (các) URL cần kiểm tra (Mỗi URL một dòng, tối đa 10)",
+  "url_placeholder": "https:\/\/example.com\nhttps:\/\/another-site.com\nhttps:\/\/third-site.com",
+  "canonical_check": "Đồng thời kiểm tra tính chính tắc của tên miền (www và không có www)",
+  "user_agent_label": "User Agent",
+  "user_agent_default": "Mặc định (Trình duyệt)",
+  "user_agent_googlebot": "Googlebot (Google)",
+  "user_agent_bingbot": "Bingbot (Bing)",
+  "user_agent_facebook": "Facebook Crawler",
+  "user_agent_iphone": "iPhone (Safari)",
+  "user_agent_android": "Android (Chrome)",
+  "button": "Kiểm Tra URL"
+ },
+ "loading": {
+  "analyzing": "Đang phân tích đường dẫn chuyển hướng.."
+ },
+ "content": {
+  "main_title": "Công Cụ Kiểm Tra Chuyển Hướng & Trạng Thái HTTP",
+  "main_subtitle": "Phân tích URL đầy đủ với truy vết chuyển hướng, kiểm tra mã trạng thái và phát hiện vòng lặp",
+  "intro": "Phân tích mã trạng thái HTTP, truy vết chuỗi chuyển hướng, phát hiện chuyển hướng 301 và 302, xác định các liên kết hỏng và tìm vòng lặp chuyển hướng với công cụ miễn phí toàn diện của chúng tôi. Thiết yếu để tối ưu hóa SEO, gỡ lỗi website, lập kế hoạch di chuyển và đảm bảo cấu trúc URL chính xác. Kiểm tra bất kỳ URL nào ngay lập tức để xem đường dẫn chuyển hướng đầy đủ, mã phản hồi và các vấn đề tiềm ẩn.",
+  "features_title": "✨ Các Tính Năng Chính",
+  "feature1_title": "Kiểm Tra URL Hàng Loạt",
+  "feature1_desc": "Kiểm tra tối đa 10 URL cùng lúc với tính năng theo dõi tiến độ",
+  "feature2_title": "Kiểm Tra Tên Miền Chính Tắc",
+  "feature2_desc": "Xác minh tính nhất quán giữa www và không có www cho SEO",
+  "feature3_title": "Phát Hiện Vòng Lặp",
+  "feature3_desc": "Sơ đồ hình ảnh hiển thị chính xác các mẫu vòng lặp chuyển hướng",
+  "feature4_title": "Phân Tích Chuỗi Đầy Đủ",
+  "feature4_desc": "Truy vết đường dẫn chuyển hướng đầy đủ với mã trạng thái và thời gian",
+  "what_are_redirects_title": "Chuyển Hướng HTTP Là Gì?",
+  "what_are_redirects_desc": "Chuyển hướng HTTP là các phản hồi của máy chủ tự động gửi khách truy cập từ một URL này sang một URL khác. Khi trình duyệt yêu cầu một URL, máy chủ có thể phản hồi bằng một mã trạng thái chuyển hướng (như 301 hoặc 302) cùng với URL đích mới. Chuyển hướng là thiết yếu để duy trì giá trị SEO khi di chuyển nội dung, sửa liên kết hỏng, thực thi HTTPS và quản lý các thay đổi tên miền.",
+  "status_codes_title": "Hiểu Về Các Mã Trạng Thái HTTP",
+  "status_2xx_title": "2xx - Thành công",
+  "status_2xx_desc": "Các mã này cho thấy yêu cầu thành công và không có vấn đề gì",
+  "status_3xx_title": "3xx - Chuyển hướng",
+  "status_3xx_desc": "URL đã được di chuyển, trình duyệt nên tuân theo chuyển hướng",
+  "status_4xx_title": "4xx - Lỗi phía máy khách",
+  "status_4xx_desc": "Lỗi yêu cầu từ phía máy khách",
+  "status_5xx_title": "5xx - Lỗi phía máy chủ",
+  "status_5xx_desc": "Các lỗi từ phía máy chủ",
+  "redirect_301_title": "Chuyển Hướng Vĩnh Viễn 301",
+  "redirect_301_when": "<strong>Khi nào cần sử dụng:<\/strong> Nội dung đã được di chuyển vĩnh viễn sang một URL mới",
+  "redirect_301_seo": "<strong>Tác động SEO:<\/strong> Truyền qua 90-99% giá trị liên kết (link equity) sang URL mới",
+  "redirect_301_cache": "<strong>Bộ nhớ đệm:<\/strong> Trình duyệt lưu vào bộ nhớ đệm vĩnh viễn, rất khó để thay đổi",
+  "redirect_302_title": "Chuyển Hướng Tạm Thời 302",
+  "redirect_302_when": "<strong>Khi nào cần sử dụng:<\/strong> Nội dung tạm thời nằm ở một URL khác",
+  "redirect_302_seo": "<strong>Tác động SEO:<\/strong> URL gốc vẫn giữ nguyên sức mạnh thứ hạng",
+  "redirect_302_cache": "<strong>Bộ nhớ đệm:<\/strong> Không được lưu vào bộ nhớ đệm, dễ dàng thay đổi hoặc gỡ bỏ",
+  "why_check_title": "Tại Sao Nên Kiểm Tra Chuyển Hướng?",
+  "why_check_1": "<strong>Di chuyển trang web:<\/strong> Xác minh tất cả các URL cũ chuyển hướng chính xác đến các vị trí mới",
+  "why_check_2": "<strong>Phát hiện liên kết hỏng:<\/strong> Tìm lỗi 404 và các chuỗi chuyển hướng bị hỏng",
+  "why_check_3": "<strong>Các vấn đề về hiệu suất:<\/strong> Xác định các chuỗi chuyển hướng quá mức làm chậm quá trình tải trang",
+  "why_check_4": "<strong>Phát hiện vòng lặp chuyển hướng:<\/strong> Phát hiện các chuyển hướng vòng quanh gây ra vòng lặp vô tận",
+  "why_check_5": "<strong>Kiểm tra an ninh:<\/strong> Xác minh các điểm đến chuyển hướng và ngăn chặn các chuyển hướng độc hại",
+  "why_check_6": "<strong>Trải nghiệm người dùng:<\/strong> Đảm bảo khách truy cập tiếp cận nội dung mong muốn một cách nhanh chóng",
+  "why_check_7": "<strong>Độ chính xác của dữ liệu phân tích:<\/strong> Xác nhận các mã theo dõi hoạt động xuyên suốt các chuỗi chuyển hướng",
+  "redirect_chains_title": "Chuỗi Chuyển Hướng Là Gì?",
+  "redirect_chains_desc": "Một chuỗi chuyển hướng xảy ra khi một URL chuyển hướng sang một URL khác, URL đó lại chuyển hướng sang một URL tiếp theo, và cứ thế. Mỗi lần nhảy (hop) trong chuỗi sẽ làm tăng độ trễ và có thể ảnh hưởng đến SEO. Ví dụ: URL A → URL B → URL C → URL Cuối cùng (3 lần chuyển hướng).",
+  "chain_recommended": "<strong>Khuyến nghị:<\/strong> 0-1 lần chuyển hướng (trực tiếp hoặc một lần nhảy)",
+  "chain_acceptable": "<strong>Chấp nhận được:<\/strong> 2-3 lần chuyển hướng (ảnh hưởng nhỏ đến hiệu suất)",
+  "chain_problematic": "<strong>Vấn đề:<\/strong> 4+ lần chuyển hướng (các vấn đề nghiêm trọng về SEO và tốc độ)",
+  "redirect_loops_title": "Vòng Lặp Chuyển Hướng Là Gì?",
+  "redirect_loops_desc": "Vòng lặp chuyển hướng xảy ra khi URL A chuyển hướng sang URL B, rồi URL B lại chuyển hướng ngược lại URL A, tạo thành một chu kỳ vô tận. Trình duyệt sẽ phát hiện điều này và hiển thị lỗi như \"Quá nhiều chuyển hướng\" hoặc \"Phát hiện vòng lặp chuyển hướng\". Điều này làm trang web bị hỏng hoàn toàn và phải được sửa chữa ngay lập tức.",
+  "common_issues_title": "Các Vấn Đề Chuyển Hướng Phổ Biến & Giải Pháp",
+  "issue1_title": "Chuỗi Chuyển Hướng dài",
+  "issue1_problem": "<strong>Vấn đề:<\/strong> Nhiều lần chuyển hướng làm chậm quá trình tải trang và làm giảm giá trị SEO",
+  "issue1_solution": "<strong>Giải pháp:<\/strong> Cập nhật các chuyển hướng để trỏ trực tiếp đến đích cuối cùng",
+  "issue2_title": "Các Loại Chuyển Hướng Hỗn Hợp",
+  "issue2_problem": "<strong>Vấn đề:<\/strong> Các loại chuyển hướng không nhất quán gây nhầm lẫn cho các công cụ tìm kiếm",
+  "issue2_solution": "<strong>Giải pháp:<\/strong> Sử dụng 301 cho các di chuyển vĩnh viễn, và chỉ sử dụng 302 cho mục đích tạm thời",
+  "issue3_title": "Chuỗi Chuyển Hướng Bị Hỏng",
+  "issue3_problem": "<strong>Vấn đề:<\/strong> Chuyển hướng trỏ đến một trang không tồn tại",
+  "issue3_solution": "<strong>Giải pháp:<\/strong> Cập nhật chuyển hướng đến một đích đến hợp lệ hoặc xóa nó đi",
+  "issue4_title": "Vòng Lặp HTTPS\/HTTP",
+  "issue4_problem": "<strong>Vấn đề:<\/strong> Trang web chuyển hướng qua lại giữa HTTP and HTTPS vô tận",
+  "issue4_solution": "<strong>Giải pháp:<\/strong> Sửa cấu hình SSL và các quy tắc trong tệp .htaccess",
+  "best_practices_title": "Các Thực Hành Tốt Nhất Về SEO Cho Chuyển Hướng",
+  "best_practice1": "• Luôn sử dụng chuyển hướng 301 cho các thay đổi URL vĩnh viễn để bảo tồn giá trị SEO",
+  "best_practice2": "• Giảm thiểu các chuỗi chuyển hướng - chuyển hướng trực tiếp đến đích cuối cùng khi có thể",
+  "best_practice3": "• Tránh vòng lặp chuyển hướng bằng mọi giá - chúng làm hỏng trải nghiệm người dùng và SEO",
+  "best_practice4": "• Cập nhật các liên kết nội bộ thay vì dựa vào các chuyển hướng",
+  "best_practice5": "• theo dõi hiệu suất chuyển hướng thường xuyên với các công cụ như thế này",
+  "best_practice6": "• Giữ các chuyển hướng hoạt động ít nhất 1 năm sau khi thay đổi URL",
+  "best_practice7": "• Sử dụng chuyển hướng 302 một cách hạn chế và chỉ cho các tình huống thực sự tạm thời"
+ },
+ "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Chuỗi chuyển hướng là gì?",
+  "a1": "Chuỗi chuyển hướng là một loạt các lần chuyển hướng từ một URL này qua một URL khác cho đến khi tiếp cận được trang cuối cùng. Các chuỗi dài làm chậm trang web và lãng phí thời gian thu thập dữ liệu.",
+  "q2": "Chuyển hướng 301 có ảnh hưởng đến thứ hạng không?",
+  "a2": "Chuyển hướng 301 bảo tồn hầu hết giá trị liên kết (sức mạnh thứ hạng), nhưng việc lạm dụng quá mức trong các chuỗi có thể làm giảm hiệu quả này.",
+  "q3": "Làm thế nào để tìm vòng lặp chuyển hướng?",
+  "a3": "Sử dụng công cụ của chúng tôi - nó sẽ tự động làm nổi bật một lỗi nếu phát hiện một đường dẫn vô tận.",
+  "q4": "Tôi có nên chuyển hướng từ HTTP sang HTTPS không?",
+  "a4": "Có, đó là một bước bắt buộc vì lý do bảo mật và SEO. Khuyến nghị sử dụng chuyển hướng 301 ở cấp máy chủ (Nginx hoặc Apache).",
+  "q5": "Bao nhiêu lần chuyển hướng là ở mức chấp nhận được?",
+  "a5": "Lý tưởng nhất là không hoặc một lần. Google thường tuân theo tối đa 5 lần nhảy (hop), nhưng mỗi lần nhảy đều làm tăng thời gian tải."
+ }
+ },
+ "slug-generator": {
+ "meta": {
+  "title": "Bộ Tạo URL Slug",
+  "description": "Tạo ngay các URL slug sạch, thân thiện với SEO từ bất kỳ văn bản nào bằng công cụ miễn phí của chúng tôi.",
+  "h1": "Bộ Tạo URL Slug",
+  "subtitle": "Generate clean, SEO-friendly URL slugs from any text instantly"
+ },
+ "editor": {
+  "label_input": "Enter Text or Title",
+  "ph_input": "Enter your title or text.."
+ },
+ "content": {
+  "hero_title": "Trình Tạo URL Slug - Tạo Các URL Thân Thiện Với SEO",
+  "hero_subtitle": "Tạo ngay các URL slug sạch, thân thiện với SEO từ bất kỳ văn bản nào bằng công cụ tạo slug miễn phí của chúng tôi. Chuyển đổi tên blog, đầu đề bài viết và tên trang thành các URL dễ đọc, được tối ưu hóa cho công cụ tìm kiếm.",
+  "what_title": "URL Slug Là Gì?",
+  "what_desc": "A URL slug is the part of a web address that comes after the domain name and identifies a specific page. For example, in \"example.com\/how-to-create-seo-friendly-urls\", the slug is \"how-to-create-seo-friendly-urls\".",
+  "why_title": "Tại Sao Nên Sử Dụng Slug Thân Thiện Với SEO?",
+  "why_list": [
+  "Thứ hạng SEO tốt hơn: Từ khóa trong URL giúp công cụ tìm kiếm hiểu nội dung trang",
+  "Cải thiện tỷ lệ nhấp chuột (CTR): Các URL dễ đọc đáng tin cậy hơn và dễ nhấp hơn",
+  "Trải nghiệm người dùng: URL rõ ràng cho người dùng biết những gì mong đợi trước khi nhấp",
+  "Chia sẻ xã hội: Các URL sạch trông chuyên nghiệp hơn khi được chia sẻ trên mạng xã hội",
+  "Xây dựng liên kết: Các URL mang tính mô tả tạo ra văn bản neo (anchor text) tốt hơn cho các liên kết ngược (backlink)",
+  "Khả năng tiếp cận: Trình đọc màn hình có thể diễn giải tốt hơn các URL có ý nghĩa"
+  ],
+  "practices_title": "Thực Hành Tốt Nhất Cho URL Slug",
+  "practices_list": [
+  "Sử dụng chữ thường - Tránh viết hoa để đảm bảo tính nhất quán",
+  "Sử dụng dấu gạch ngang (-) - Phân tách các từ bằng dấu gạch ngang, không dùng dấu gạch dưới",
+  "Giữ URL ngắn gọn - Đặt mục tiêu tối đa từ 3-5 từ",
+  "Bao gồm từ khóa - Sử dụng các từ khóa liên quan cho SEO",
+  "Mang tính mô tả - Mô tả rõ ràng nội dung của trang",
+  "Tránh các ký tự đặc biệt - Loại bỏ @, #, %, &, v.v.",
+  "Tránh các từ dừng - Loại bỏ \"a\", \"the\", \"and\" khi có thể",
+  "Tránh các con số\/ngày tháng - Trừ khi là điều thiết yếu đối với nội dung"
+  ],
+  "how_works_title": "Bộ Tạo Slug của Chúng Tôi Hoạt Động Như Thế Nào",
+  "how_works_desc": "Công cụ của chúng tôi tuân theo các thực hành tốt nhất trong ngành để tạo ra các URL slug hoàn hảo. Nó chuyển đổi văn bản thành chữ thường, xóa các ký tự đặc biệt và dấu câu, thay thế khoảng trắng bằng dấu gạch ngang, xóa các dấu gạch ngang liên tiếp và cắt bớt các dấu gạch ngang ở đầu\/cuối.",
+  "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+  "uses": {
+  "blog": {
+   "title": "ðŸ“ Blog Posts",
+   "desc": "Chuyển đổi tiêu đề bài viết thành các URL thân thiện với SEO cho WordPress, Medium hoặc blog tùy chỉnh"
+  },
+  "ecommerce": {
+   "title": "ðŸ›ï¸ E-commerce",
+   "desc": "Tạo URL sản phẩm bao gồm từ khóa và tên sản phẩm"
+  },
+  "docs": {
+   "title": "📄 Tài liệu",
+   "desc": "Tạo các URL sạch cho các bài viết trợ giúp và các trang tài liệu"
+  },
+  "landing": {
+   "title": "🎯 Trang đích (Landing Pages)",
+   "desc": "Tạo các URL giàu từ khóa cho các chiến dịch marketing và trang đích"
+  }
+  },
+  "pro_tip_title": "💡 Mẹo SEO Chuyên Nghiệp",
+  "pro_tip_desc": "Google recommends using hyphens (-) instead of underscores (_) in URLs because hyphens are treated as word separators while underscores are not. This means \"seo-friendly-urls\" is better than \"seo_friendly_urls\" for search engine optimization.",
+  "faq_title": "Các Câu Hỏi Thường Gặp",
+  "faq": {
+  "q1": "Tôi nên sử dụng dấu gạch ngang hay dấu gạch dưới trong URL?",
+  "a1": "Hãy luôn sử dụng dấu gạch ngang (-). Google coi dấu gạch ngang là dấu phân tách từ nhưng coi dấu gạch dưới là dấu nối từ. Có nghĩa là \"best-seo-practices\" được đọc thành ba từ riêng biệt, trong khi \"best_seo_practices\" được đọc thành một từ.",
+  "q2": "URL slug nên dài bao nhiêu?",
+  "a2": "Hãy giữ slug ở khoảng 3-5 từ (30-60 ký tự). Các URL ngắn hơn sẽ dễ nhớ, dễ chia sẻ hơn và có thứ hạng tốt hơn trong kết quả tìm kiếm. Loại bỏ các từ không cần thiết như \"a\", \"the\", \"and\" để giữ slug được súc tích.",
+  "q3": "Tôi có thể thay đổi URL slug sau khi bài được xuất bản không?",
+  "a3": "Có, nhưng việc này không được khuyến khích. Thay đổi URL có thể làm hỏng các liên kết hiện có và gây hại cho SEO. Nếu bạn buộc phải thay đổi một slug, hãy luôn thiết lập chuyển hướng 301 từ URL cũ sang URL mới để bảo tồn giá trị liên kết và tránh lỗi 404.",
+  "q4": "Tôi có nên đưa từ khóa vào URL slug không?",
+  "a4": "Có! Đưa các từ khóa liên quan vào URL slug giúp công cụ tìm kiếm hiểu nội dung của bạn và có thể cải thiện thứ hạng. Tuy nhiên, hãy giữ slug một cách tự nhiên và mang tính mô tả - đừng nhồi nhét từ khóa một cách thiếu tự nhiên."
+  }
+ },
+ "js": {
+  "copied": "Đã sao chép!"
+ }
+ },
+ "yahoo-serp-checker": {
+ "meta": {
+  "title": "Kiểm Tra SERP Yahoo - Kiểm Tra Thứ Hạng Tìm Kiếm Yahoo của Bạn",
+  "description": "Công cụ kiểm tra SERP Yahoo miễn phí để theo dõi thứ hạng website của bạn trên công cụ tìm kiếm Yahoo.",
+  "h1": "Kiểm Tra SERP Yahoo",
+  "subtitle": "theo dõi thứ hạng tìm kiếm Yahoo cho các từ khóa của bạn và các đối thủ cạnh tranh"
+ },
+ "interface": {
+  "simulation_title": "Kiểm Tra SERP Yahoo Trực Tiếp",
+  "keyword_label": "Nhập Từ Khóa",
+  "location_label": "Location (City)",
+  "yahoo_domain_label": "Tên Miền Yahoo",
+  "device_label": "Loại Thiết Bị",
+  "device_desktop": "Máy tính để bàn",
+  "device_mobile": "Di động (Smartphone)",
+  "no_login": "Không Cần Đăng Nhập",
+  "realtime_results": "Kết Quả Thời Gian Thực"
+ },
+ "form": {
+  "keyword_placeholder": "your keyword..",
+  "location_placeholder": "Enter city (Optional)",
+  "button": "Kiểm Tra SERP Yahoo"
+ },
+ "domains": {
+  "us": "Yahoo.com (Mỹ\/Toàn cầu)",
+  "uk": "Yahoo.co.uk (Vương Quốc Anh)",
+  "ca": "Yahoo.ca (Canada)",
+  "au": "Yahoo.com.au (Úc)",
+  "de": "Yahoo.de (Đức)",
+  "fr": "Yahoo.fr (Pháp)",
+  "it": "Yahoo.it (Ý)",
+  "es": "Yahoo.es (Tây Ban Nha)",
+  "br": "Yahoo.com.br (Brazil)"
+ },
+ "content": {
+  "main_title": "Kiểm Tra Thứ Hạng Yahoo Nâng Cao",
+  "main_subtitle": "theo dõi hiệu suất tìm kiếm của bạn trên Yahoo. Nhận dữ liệu thứ hạng chính xác, theo thời gian thực để tối ưu hóa chiến lược SEO của bạn.",
+  "feature1_title": "100% Free",
+  "feature1_desc": "Sử dụng công cụ này bao nhiêu lần tùy thích. Không có phí ẩn.",
+  "feature2_title": "Kiểm Tra Không Giới Hạn",
+  "feature2_desc": "Kiểm tra từ khóa không giới hạn mà không tốn phí. Không yêu cầu đăng ký hay thuê bao.",
+  "feature3_title": "Dữ Liệu Thời Gian Thực",
+  "feature3_desc": "Nhận ngay kết quả SERP thời gian thực trực tiếp từ Tìm kiếm Yahoo.",
+  "why_matters_title": "Tại Sao Thứ Hạng Yahoo Lại Quan Trọng",
+  "why_matters_desc": "Mặc dù nhỏ hơn Google, Yahoo vẫn chiếm một thị phần đáng kể về lưu lượng truy cập tìm kiếm, đặc biệt là ở một số nhóm nhân khẩu học và khu vực cụ thể như Nhật Bản và một phần của Hoa Kỳ. Bỏ qua Yahoo có nghĩa là bỏ lỡ lưu lượng truy cập tiềm năng.",
+  "same_as_bing_title": "Yahoo Có Sử Dụng Kết Quả Từ Bing Không?",
+  "same_as_bing_desc": "Có, Yahoo Search phần lớn được cung cấp bởi <strong>chỉ mục tìm kiếm của Bing<\/strong>. Điều này có nghĩa là tối ưu hóa cho Bing thường giúp ích cho thứ hạng Yahoo của bạn. Tuy nhiên, giao diện và các tính năng của Yahoo có sự khác biệt, vì vậy việc xác minh sự xuất hiện thực tế của bạn là rất quan trọng."
+ },
+ "faq": {
+  "title": "Các Câu Hỏi Thường Gặp",
+  "q1": "Công cụ kiểm tra thứ hạng Yahoo này có miễn phí không?",
+  "a1": "Có! **Công cụ theo dõi thứ hạng Yahoo** của chúng tôi hoàn toàn miễn phí 100%. Hãy kiểm tra thứ hạng của bạn trên Yahoo thường xuyên nếu cần mà không có bất kỳ phí ẩn hay thuê bao nào.",
+  "q2": "Yahoo có sử dụng kết quả tìm kiếm của Bing không?",
+  "a2": "Vì Yahoo được cung cấp bởi Bing, hãy tập trung vào các thực hành tốt nhất về SEO của Bing: SEO kỹ thuật sạch sẽ, liên kết ngược uy tín và nội dung liên quan. Sử dụng công cụ này để theo dõi tiến độ là một bước khởi đầu tuyệt vời."
+ }
+ }
 }
