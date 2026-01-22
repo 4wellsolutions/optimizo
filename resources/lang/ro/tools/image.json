@@ -1,850 +1,835 @@
 {
     "base64-to-image-converter": {
         "meta": {
-            "title": "[Pending Translation] Base64 to Image Converter - Decode Base64 Output | Optimizo",
-            "description": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF). Free online decoder and visualizer.",
-            "h1": "[Pending Translation] Decode Base64 to Image",
-            "subtitle": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF) instantly"
+            "title": "Convertor Base64 în Imagine - Decodifică Datele Base64 | Optimizo",
+            "description": "Convertește șirurile de caractere codificate Base64 înapoi în imagini (PNG, JPG, GIF). Decodificator și vizualizator online gratuit.",
+            "h1": "Decodifică Base64 în Imagine",
+            "subtitle": "Transformă șirurile Base64 înapoi în fișiere imagine (PNG, JPG, GIF) instantaneu"
         },
         "input": {
-            "title": "[Pending Translation] Paste Base64 String",
-            "desc": "[Pending Translation] Paste your code below to visualize the image",
-            "placeholder": "[Pending Translation] data:image\/png;base64,iVBORw0KGgo...",
-            "btn_decode": "[Pending Translation] Decode Image"
+            "title": "Lipește Șirul Base64",
+            "desc": "Lipește codul mai jos pentru a vizualiza imaginea",
+            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
+            "btn_decode": "Decodifică Imaginea"
         },
         "result": {
-            "image_alt": "[Pending Translation] Decoded Image",
-            "success": "[Pending Translation] Image Decoded Successfully",
-            "btn_download": "[Pending Translation] Download Image",
-            "btn_clear": "[Pending Translation] Clear Pattern"
+            "image_alt": "Imagine Decodificată",
+            "success": "Imagine Decodificată cu Succes",
+            "btn_download": "Descarcă Imaginea",
+            "btn_clear": "Șterge Tot"
         },
         "content": {
-            "title": "[Pending Translation] Decode Base64 to Image",
-            "p1": "[Pending Translation] Found a long string of random characters starting with <code>data:image\/...<\/code> and don't know what it is? It's likely a Base64-encoded image.",
-            "p2": "[Pending Translation] Our <strong>Base64 to Image Decoder<\/strong> converts that text string back into a visible image file (PNG, JPG, GIF, etc.) that you can view and download to your computer.",
+            "title": "Decodifică Base64 în Imagine",
+            "p1": "Ai găsit un șir lung de caractere aleatorii care începe cu <code>data:image/...</code> și nu știi ce este? Cel mai probabil este o imagine codificată în Base64.",
+            "p2": "<strong>Decodificatorul nostru Base64 în Imagine</strong> transformă acel text înapoi într-un fișier imagine vizibil (PNG, JPG, GIF etc.) pe care îl poți vedea și descărca pe computerul tău.",
             "features": {
                 "preview": {
-                    "title": "[Pending Translation] Instant Preview",
-                    "desc": "[Pending Translation] See the image immediately. We parse the binary data and render it on your screen."
+                    "title": "Previzualizare Instantanee",
+                    "desc": "Vezi imaginea imediat. Parsăm datele binare și le redăm direct pe ecran."
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detection",
-                    "desc": "[Pending Translation] We automatically detect the file format (PNG, JPEG, GIF) from the header of the Base64 string."
+                    "title": "Detecție Automată",
+                    "desc": "Detectăm automat formatul fișierului (PNG, JPEG, GIF) din antetul șirului Base64."
                 },
                 "download": {
-                    "title": "[Pending Translation] Download File",
-                    "desc": "[Pending Translation] Save the decoded result as a real image file to your hard drive with one click."
+                    "title": "Descarcă Fișierul",
+                    "desc": "Salvează rezultatul decodificat ca un fișier imagine real pe hard disk cu un singur clic."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Decode?",
+                "title": "Cum se decodifică?",
                 "list": [
-                    "[Pending Translation] Paste your Base64 string into the textarea.",
-                    "[Pending Translation] We instantly attempt to read the string.",
-                    "[Pending Translation] If valid, the image appears on the left.",
-                    "[Pending Translation] Click \"Download Image\" to save it."
+                    "Lipește șirul Base64 în zona de text.",
+                    "Sistemul va încerca instantaneu să citească codul.",
+                    "Dacă este valid, imaginea va apărea în partea stângă.",
+                    "Apasă pe \"Descarcă Imaginea\" pentru a o salva."
                 ]
             },
             "use_cases": {
-                "title": "[Pending Translation] Common Use Cases",
+                "title": "Cazuri de utilizare comune",
                 "list": [
-                    "[Pending Translation] Debugging: Checking what image data is being sent in API responses or stored in databases.",
-                    "[Pending Translation] Recovery: Extracting images embedded in CSS files or HTML templates.",
-                    "[Pending Translation] Verification: Ensuring a Base64 string is not corrupted."
+                    "Debugging: Verificarea datelor de imagine trimise în răspunsurile API sau stocate în baze de date.",
+                    "Recuperare: Extragerea imaginilor încorporate în fișiere CSS sau șabloane HTML.",
+                    "Verificare: Asigurarea că un șir Base64 nu este corupt."
                 ]
             }
         },
         "js": {
-            "input_required": "[Pending Translation] Please paste a Base64 string first.",
-            "invalid_error": "[Pending Translation] Invalid Base64 string or unsupported image format."
+            "input_required": "Vă rugăm să lipiți mai întâi un șir Base64.",
+            "invalid_error": "Șir Base64 invalid sau format de imagine nesuportat."
         }
     },
     "heic-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] HEIC to JPG Converter - Convert iPhone Photos Online | Optimizo",
+            "title": "Convertor HEIC în JPG - Convertește Pozele de pe iPhone Online | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format. Free, private, client-side converter.",
-            "h1": "[Pending Translation] HEIC to JPG Converter",
-            "subtitle": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format"
+            "description": "Convertește fotografiile High Efficiency Image File (HEIC/HEIF) de pe iPhone în format standard JPG. Convertor gratuit, privat, care funcționează direct în browser.",
+            "h1": "Convertor HEIC în JPG",
+            "subtitle": "Transformă pozele HEIC/HEIF de pe iPhone în format JPG universal"
         },
         "input": {
-            "title": "[Pending Translation] Upload HEIC File",
-            "desc": "[Pending Translation] Drag & drop your .heic or .heif file here",
-            "drop_title": "[Pending Translation] Drop HEIC file here",
-            "drop_desc": "[Pending Translation] Supports HEIC\/HEIF (Max 20MB)"
+            "title": "Încarcă Fișierul HEIC",
+            "desc": "Trage și plasează fișierul tău .heic sau .heif aici",
+            "drop_title": "Plasează fișierul HEIC aici",
+            "drop_desc": "Suportă HEIC/HEIF (Max 20MB)"
         },
         "loading": {
-            "title": "[Pending Translation] Processing HEIC file...",
-            "desc": "[Pending Translation] Larger files may take a few seconds."
+            "title": "Se procesează fișierul HEIC...",
+            "desc": "Fișierele mai mari pot dura câteva secunde."
         },
         "result": {
-            "image_alt": "[Pending Translation] Preview",
-            "converted_to": "[Pending Translation] Converted to:",
-            "btn_download": "[Pending Translation] Download JPG Image"
+            "image_alt": "Previzualizare",
+            "converted_to": "Convertit în:",
+            "btn_download": "Descarcă Imaginea JPG"
         },
         "content": {
-            "title": "[Pending Translation] Convert HEIC to JPG Instantly",
-            "p1": "[Pending Translation] Apple's High Efficiency Image Format (HEIC) is great for saving space on your iPhone, but it can be a nightmare to open on Windows, Android, or older software. Our <strong>HEIC to JPG Converter<\/strong> solves this problem instantly.",
-            "p2": "[Pending Translation] We use advanced local processing capabilities to convert your photos without ever uploading them to a cloud server. This is the <strong>safest way<\/strong> to convert personal photos.",
+            "title": "Convertește HEIC în JPG Instantaneu",
+            "p1": "Formatul HEIC de la Apple este excelent pentru a economisi spațiu pe iPhone, dar poate fi greu de deschis pe Windows, Android sau software mai vechi. <strong>Convertorul nostru HEIC în JPG</strong> rezolvă această problemă instantaneu.",
+            "p2": "Folosim procesare locală avansată pentru a converti fotografiile tale fără a le încărca vreodată pe un server extern. Aceasta este <strong>cea mai sigură cale</strong> de a-ți converti pozele personale.",
             "features": {
                 "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Your personal photos stay on your device. We use client-side logic for zero-risk conversion."
+                    "title": "100% Privat",
+                    "desc": "Fotografiile tale rămân pe dispozitivul tău. Folosim logică client-side pentru o conversie cu risc zero."
                 },
                 "compatibility": {
-                    "title": "[Pending Translation] Broad Compatibility",
-                    "desc": "[Pending Translation] Convert HEIC and HEIF files from any iOS version (iPhone\/iPad) to universally accepted JPGs."
+                    "title": "Compatibilitate Largă",
+                    "desc": "Convertește fișiere HEIC și HEIF din orice versiune de iOS (iPhone/iPad) în JPG-uri acceptate universal."
                 },
                 "fast": {
-                    "title": "[Pending Translation] Fast & Free",
-                    "desc": "[Pending Translation] No software installation needed. Just drag, drop, and convert in seconds."
+                    "title": "Rapid și Gratuit",
+                    "desc": "Nu este nevoie de instalare. Doar trage, plasează și convertește în câteva secunde."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert HEIC to JPG?",
+                "title": "Cum se convertește HEIC în JPG?",
                 "list": [
-                    "[Pending Translation] Drag your .heic or .heif file into the upload zone.",
-                    "[Pending Translation] The tool will automatically read and convert the file using advanced browser libraries.",
-                    "[Pending Translation] See a preview of your converted JPG image immediately.",
-                    "[Pending Translation] Click the \"Download JPG Image\" button to save it to your computer."
+                    "Trage fișierul .heic sau .heif în zona de încărcare.",
+                    "Instrumentul va citi și converti automat fișierul folosind librării avansate din browser.",
+                    "Vei vedea o previzualizare a imaginii JPG convertite imediat.",
+                    "Apasă butonul \"Descarcă Imaginea JPG\" pentru a o salva."
                 ]
             },
             "details": {
-                "title": "[Pending Translation] Technical Details",
-                "p1": "[Pending Translation] HEIC (High Efficiency Image Container) uses modern compression methods to keep file sizes small. However, Windows and Android often struggle to open them.",
-                "p2": "[Pending Translation] Our tool decodes the HEIC data and re-encodes it as a standardized JPEG image with 90% quality retention, ensuring your photos look great while being accessible everywhere."
+                "title": "Detalii Tehnice",
+                "p1": "HEIC (High Efficiency Image Container) folosește metode moderne de compresie. Totuși, Windows și Android au adesea dificultăți în a le deschide.",
+                "p2": "Instrumentul nostru decodifică datele HEIC și le re-codifică sub forma unei imagini JPEG standard, păstrând o calitate ridicată pentru ca pozele tale să arate excelent oriunde."
             },
             "faq": {
-                "title": "[Pending Translation] Common Questions",
-                "q1": "[Pending Translation] Can I convert iPhone Live Photos?",
-                "a1": "[Pending Translation] You can convert the still image part of the Live Photo if you transfer the .HEIC file to your computer first.",
-                "q2": "[Pending Translation] Is quality lost during conversion?",
-                "a2": "[Pending Translation] We use a high-quality setting (0.9 out of 1.0) to ensure minimal visual difference. JPG is a lossy format, but the difference is usually negligible to the human eye."
+                "title": "Întrebări Frecvente",
+                "q1": "Pot converti Live Photos de pe iPhone?",
+                "a1": "Poți converti partea de imagine statică a unui Live Photo dacă transferi fișierul .HEIC pe computer mai întâi.",
+                "q2": "Se pierde calitatea în timpul conversiei?",
+                "a2": "Folosim setări de înaltă calitate pentru a asigura o diferență vizuală minimă. JPG este un format compresat, dar diferența este de obicei insesizabilă la ochiul liber."
             }
         },
         "js": {
-            "error": "[Pending Translation] Error converting HEIC file: "
+            "error": "Eroare la conversia fișierului HEIC: "
         }
     },
     "ico-converter": {
         "meta": {
-            "title": "[Pending Translation] ICO Converter - Create Favicons Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Free online favicon generator.",
-            "h1": "[Pending Translation] ICO Converter & Favicon Generator",
-            "subtitle": "[Pending Translation] Convert images to ICO format for website favicons with custom sizing"
+            "title": "Convertor ICO - Creează Favicon Online | Optimizo",
+            "description": "Convertește imaginile în format ICO pentru favicon-ul site-ului tău. Suportă dimensiuni personalizate (32x32, 64x64). Generator de favicon gratuit online.",
+            "h1": "Convertor ICO și Generator de Favicon",
+            "subtitle": "Transformă imaginile în format ICO pentru site-ul tău cu dimensiuni personalizate"
         },
         "input": {
-            "title": "[Pending Translation] Upload Image to Convert",
-            "desc": "[Pending Translation] Drag & drop your PNG\/JPG file",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Fast conversion to .ico"
+            "title": "Încarcă Imaginea pentru Conversie",
+            "desc": "Trage și plasează fișierul PNG/JPG",
+            "drop_title": "Plasează imaginea aici",
+            "drop_desc": "Conversie rapidă în .ico"
         },
         "editor": {
-            "original": "[Pending Translation] Original",
-            "image_alt": "[Pending Translation] Preview",
-            "favicon": "[Pending Translation] Favicon",
-            "size_label": "[Pending Translation] Icon Size",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_download": "[Pending Translation] Download Favicon (.ico)"
+            "original": "Original",
+            "image_alt": "Previzualizare",
+            "favicon": "Favicon",
+            "size_label": "Dimensiune Iconiță",
+            "output_format": "Format Ieșire:",
+            "btn_download": "Descarcă Favicon (.ico)"
         },
         "content": {
-            "title": "[Pending Translation] Free ICO Converter & Favicon Generator",
-            "p1": "[Pending Translation] Creating a website? You need a favicon - that little icon that appears in browser tabs.",
-            "p2": "[Pending Translation] Our <strong>ICO Converter<\/strong> transforms any PNG or JPG image into a standard Microsoft `.ico` file. We support all common favicon sizes to ensure your brand looks sharp on every device.",
+            "title": "Convertor ICO și Generator de Favicon Gratuit",
+            "p1": "Îți creezi un site web? Ai nevoie de un favicon - acea iconiță mică ce apare în tab-urile browserului.",
+            "p2": "<strong>Convertorul nostru ICO</strong> transformă orice imagine PNG sau JPG într-un fișier standard Microsoft `.ico`. Suportăm toate dimensiunile comune de favicon pentru ca brandul tău să arate bine pe orice dispozitiv.",
             "features": {
                 "sizes": {
-                    "title": "[Pending Translation] Standard Sizes",
-                    "desc": "[Pending Translation] Choose from 16x16, 32x32, 48x48, 64x64, or 128x128 pixels. Or select all!"
+                    "title": "Dimensiuni Standard",
+                    "desc": "Alege între 16x16, 32x32, 48x48, 64x64 sau 128x128 pixeli."
                 },
                 "resize": {
-                    "title": "[Pending Translation] Auto-Resizing",
-                    "desc": "[Pending Translation] Upload a large logo, and we'll automatically downscale it smoothly to fit the tiny icon format."
+                    "title": "Redimensionare Automată",
+                    "desc": "Încarcă un logo mare și noi îl vom micșora fin pentru a se potrivi formatului de iconiță."
                 },
                 "multi": {
-                    "title": "[Pending Translation] Multi-Icon Support",
-                    "desc": "[Pending Translation] Modern .ico files can contain multiple sizes in one file. We handle that for you."
+                    "title": "Suport Multi-Icon",
+                    "desc": "Fișierele moderne .ico pot conține mai multe dimensiuni într-un singur fișier. Ne ocupăm noi de asta."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Steps to Create Favicon",
+                "title": "Pași pentru a crea un Favicon",
                 "list": [
-                    "[Pending Translation] Use a square image (PNG\/JPG) for best results.",
-                    "[Pending Translation] 16x16 (Browser tabs), 32x32 (Taskbar), 48x48 (Desktop).",
-                    "[Pending Translation] See how it looks instantly.",
-                    "[Pending Translation] Get your `favicon.ico` file."
+                    "Folosește o imagine pătrată (PNG/JPG) pentru cele mai bune rezultate.",
+                    "16x16 (Tab-uri browser), 32x32 (Taskbar), 48x48 (Desktop).",
+                    "Vezi cum arată instantaneu.",
+                    "Obține fișierul tău `favicon.ico`."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why .ICO format?",
-                "p1": "[Pending Translation] While modern browsers support PNG favicons, the `.ico` format is still the standard for maximum compatibility across all operating systems and legacy browsers (like Internet Explorer)."
+                "title": "De ce formatul .ICO?",
+                "p1": "Deși browserele moderne suportă favicon-uri PNG, formatul `.ico` rămâne standardul pentru o compatibilitate maximă între toate sistemele de operare și browserele vechi."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image"
+            "invalid_image": "Vă rugăm să încărcați o imagine validă"
         }
     },
     "image-compressor": {
         "meta": {
-            "title": "[Pending Translation] Free Image Compressor - Reduce Image File Size Online",
-            "description": "[Pending Translation] Compress images online for free. Reduce JPG, PNG, and WebP file sizes while maintaining quality.",
-            "h1": "[Pending Translation] Image Compressor",
-            "subtitle": "[Pending Translation] Reduce image file sizes without losing quality"
+            "title": "Compresor de Imagini Gratuit - Redu Dimensiunea Fișierului Online",
+            "description": "Comprimă imagini online gratuit. Redu dimensiunea fișierelor JPG, PNG și WebP păstrând calitatea vizuală.",
+            "h1": "Compresor de Imagini",
+            "subtitle": "Redu dimensiunea fișierelor tale de imagine fără a pierde din calitate"
         },
         "editor": {
-            "label_upload": "[Pending Translation] Upload Image",
-            "drop_title": "[Pending Translation] Drop your image here or click to browse",
-            "drop_subtitle": "[Pending Translation] Drag and drop your image or click to select from your device",
-            "supports": "[Pending Translation] Supports JPG, PNG, WebP formats",
-            "label_quality": "[Pending Translation] Compression Quality:",
-            "title_original": "[Pending Translation] Original Image",
-            "label_size": "[Pending Translation] Size:",
-            "title_compressed": "[Pending Translation] Compressed Image",
-            "label_saved": "[Pending Translation] Saved:",
-            "btn_download": "[Pending Translation] Download Compressed Image"
+            "label_upload": "Încarcă Imaginea",
+            "drop_title": "Trage imaginea aici sau dă click pentru a naviga",
+            "drop_subtitle": "Trage și plasează imaginea sau selectează-o de pe dispozitiv",
+            "supports": "Suportă formate JPG, PNG, WebP",
+            "label_quality": "Calitate Compresie:",
+            "title_original": "Imagine Originală",
+            "label_size": "Dimensiune:",
+            "title_compressed": "Imagine Comprimată",
+            "label_saved": "Economisit:",
+            "btn_download": "Descarcă Imaginea Comprimată"
         },
         "content": {
-            "p1": "[Pending Translation] Compress your images online for free with our powerful image compression tool. Reduce JPG, PNG, and WebP file sizes by up to 90% while maintaining excellent visual quality. Perfect for optimizing images for websites, social media, email attachments, and faster page loading times.",
-            "why_title": "[Pending Translation] Why Compress Images?",
+            "p1": "Comprimă imaginile tale online gratuit cu instrumentul nostru puternic. Redu dimensiunea fișierelor JPG, PNG și WebP cu până la 90% menținând o calitate vizuală excelentă. Perfect pentru optimizarea imaginilor pentru site-uri web, rețele sociale și trimiterea rapidă prin email.",
+            "why_title": "De ce să comprimi imaginile?",
             "why_list": [
-                "[Pending Translation] Faster website loading times improve user experience and SEO",
-                "[Pending Translation] Reduce bandwidth usage and hosting costs",
-                "[Pending Translation] Optimize images for mobile devices and slow connections",
-                "[Pending Translation] Meet file size limits for email attachments and uploads",
-                "[Pending Translation] Improve Core Web Vitals and Google PageSpeed scores",
-                "[Pending Translation] Save storage space on your device or server"
+                "Timp de încărcare mai rapid pentru site-uri web (SEO mai bun)",
+                "Reducerea consumului de date și a costurilor de găzduire",
+                "Optimizare pentru dispozitive mobile și conexiuni lente",
+                "Respectarea limitelor de dimensiune pentru atașamente email",
+                "Îmbunătățirea scorurilor Core Web Vitals și Google PageSpeed",
+                "Economisirea spațiului de stocare pe dispozitiv sau server"
             ],
-            "formats_title": "[Pending Translation] Supported Image Formats",
-            "quality_title": "[Pending Translation] Understanding Compression Quality",
+            "formats_title": "Formate de Imagine Suportate",
+            "quality_title": "Înțelegerea Calității de Compresie",
             "quality_list": [
-                "[Pending Translation] 100% - No compression, original quality (largest file size)",
-                "[Pending Translation] 80-90% - High quality, minimal visible difference (recommended for most uses)",
-                "[Pending Translation] 60-80% - Good quality, noticeable compression at high zoom",
-                "[Pending Translation] 40-60% - Medium quality, visible artifacts but acceptable for web",
-                "[Pending Translation] 10-40% - Low quality, significant quality loss (smallest file size)"
+                "100% - Fără compresie, calitate originală (fișier mare)",
+                "80-90% - Calitate înaltă, diferență vizibilă minimă (recomandat)",
+                "60-80% - Calitate bună, compresie vizibilă la zoom mare",
+                "40-60% - Calitate medie, artefacte vizibile dar acceptabil pentru web",
+                "10-40% - Calitate scăzută, pierdere semnificativă de detalii"
             ],
-            "how_title": "[Pending Translation] How Image Compression Works",
-            "how_desc": "[Pending Translation] Our tool uses advanced compression algorithms to reduce file size while preserving image quality. For JPG images, we use lossy compression that removes imperceptible details. For PNG, we optimize the color palette and use efficient encoding. All compression happens in your browser - your images never leave your device.",
-            "best_title": "[Pending Translation] Best Practices for Image Compression",
+            "how_title": "Cum funcționează compresia imaginilor",
+            "how_desc": "Instrumentul nostru folosește algoritmi avansați pentru a reduce dimensiunea fișierului păstrând calitatea. Pentru JPG, eliminăm detaliile imperceptibile. Pentru PNG, optimizăm paleta de culori. Totul se întâmplă în browserul tău - imaginile nu părăsesc niciodată dispozitivul.",
+            "best_title": "Cele mai bune practici",
             "best_list": [
-                "[Pending Translation] Start with high-quality original images for best results",
-                "[Pending Translation] Use 80-90% quality for web images - perfect balance of size and quality",
-                "[Pending Translation] Compress images before uploading to websites or social media",
-                "[Pending Translation] Use JPG for photos, PNG for graphics with transparency",
-                "[Pending Translation] Consider WebP format for modern browsers (smaller files)",
-                "[Pending Translation] Always preview compressed images before downloading",
-                "[Pending Translation] Keep original files as backup before compression"
+                "Începe cu imagini originale de înaltă calitate",
+                "Folosește 80-90% calitate pentru web - echilibrul perfect",
+                "Comprimă imaginile înainte de a le urca pe site-uri sociale",
+                "Folosește JPG pentru poze și PNG pentru grafică cu transparență",
+                "Consideră formatul WebP pentru browsere moderne",
+                "Previzualizează întotdeauna imaginea înainte de descărcare"
             ],
-            "privacy_title": "[Pending Translation] 100% Private & Secure",
-            "privacy_desc": "[Pending Translation] All image compression happens entirely in your browser using JavaScript. Your images are never uploaded to our servers, ensuring complete privacy and security. Your files never leave your device.",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "privacy_title": "100% Privat și Sigur",
+            "privacy_desc": "Toată compresia are loc direct în browser folosind JavaScript. Imaginile tale nu sunt trimise la serverele noastre, asigurând confidențialitate totală.",
+            "faq_title": "Întrebări Frecvente",
             "formats": {
                 "jpg": {
-                    "title": "[Pending Translation] JPG\/JPEG",
-                    "desc": "[Pending Translation] Best for photographs and complex images with many colors. Lossy compression."
+                    "title": "JPG/JPEG",
+                    "desc": "Cel mai bun pentru fotografii. Compresie cu pierdere de date (lossy)."
                 },
                 "png": {
-                    "title": "[Pending Translation] PNG",
-                    "desc": "[Pending Translation] Best for graphics, logos, and images with transparency. Lossless or lossy compression."
+                    "title": "PNG",
+                    "desc": "Cel mai bun pentru grafică, logo-uri și transparență. Compresie lossless."
                 },
                 "webp": {
-                    "title": "[Pending Translation] WebP",
-                    "desc": "[Pending Translation] Modern format with superior compression. Smaller files than JPG\/PNG with same quality."
+                    "title": "WebP",
+                    "desc": "Format modern cu compresie superioară. Fișiere mai mici decât JPG/PNG."
                 }
             },
             "faq": {
-                "q1": "[Pending Translation] Will compressing images reduce quality?",
-                "a1": "[Pending Translation] Yes, but minimally. At 80-90% quality, the difference is imperceptible to the human eye. You can adjust the quality slider to find the perfect balance between file size and visual quality.",
-                "q2": "[Pending Translation] What's the difference between lossy and lossless compression?",
-                "a2": "[Pending Translation] Lossy compression (JPG) removes some image data to achieve smaller files, while lossless compression (PNG) reduces file size without losing any data. Lossy gives better compression but slight quality loss.",
-                "q3": "[Pending Translation] How much can I reduce image file size?",
-                "a3": "[Pending Translation] Typically 50-90% reduction depending on the original image and quality settings. Photos often compress more than graphics. WebP format provides the best compression.",
-                "q4": "[Pending Translation] Are my images uploaded to your server?",
-                "a4": "[Pending Translation] No! All compression happens in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.",
-                "q5": "[Pending Translation] What image formats are supported?",
-                "a5": "[Pending Translation] We support JPG\/JPEG, PNG, and WebP formats. These cover 99% of web images. The tool automatically detects the format and applies optimal compression."
+                "q1": "Comprimarea reduce calitatea?",
+                "a1": "Da, dar minimal. La 80-90%, diferența este insesizabilă pentru ochiul uman.",
+                "q2": "Care e diferența între lossy și lossless?",
+                "a2": "Lossy (JPG) elimină date pentru dimensiuni mici, lossless (PNG) reduce mărimea fără a pierde date.",
+                "q3": "Cât de mult pot reduce dimensiunea?",
+                "a3": "De obicei între 50-90%, depinzând de imaginea originală și setări.",
+                "q4": "Sunt imaginile mele încărcate pe server?",
+                "a4": "Nu! Totul se procesează local în browserul tău.",
+                "q5": "Ce formate sunt suportate?",
+                "a5": "Suportăm JPG, PNG și WebP, care acoperă 99% din nevoile web."
             }
         }
     },
     "image-converter": {
         "meta": {
-            "title": "[Pending Translation] Image Converter - Convert Images Online Free | Optimizo",
+            "title": "Convertor de Imagini - Convertește Imagini Online Gratuit | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free. Secure, client-side conversion requiring no uploads.",
-            "h1": "[Pending Translation] Image Converter",
-            "subtitle": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free"
+            "description": "Convertește imagini între multiple formate (PNG, JPG, WEBP) ușor și gratuit. Conversie sigură în browser, fără încărcare pe server.",
+            "h1": "Convertor de Imagini",
+            "subtitle": "Transformă imaginile între PNG, JPG și WEBP instantaneu"
         },
         "input": {
-            "title": "[Pending Translation] Upload Your Image",
-            "desc": "[Pending Translation] Drag & drop or click to select an image",
-            "drop_title": "[Pending Translation] Drop your image here",
-            "drop_desc": "[Pending Translation] Supports PNG, JPG, WEBP (Max 10MB)"
+            "title": "Încarcă Imaginea Ta",
+            "desc": "Trage și plasează sau dă click pentru a selecta o imagine",
+            "drop_title": "Plasează imaginea aici",
+            "drop_desc": "Suportă PNG, JPG, WEBP (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "target_format": "[Pending Translation] Target Format",
-            "quality": "[Pending Translation] Quality (JPG\/WEBP)",
-            "btn_convert": "[Pending Translation] Convert & Download"
+            "image_alt": "Previzualizare",
+            "target_format": "Format Ieșire",
+            "quality": "Calitate (JPG/WEBP)",
+            "btn_convert": "Convertește și Descarcă"
         },
         "content": {
-            "title": "[Pending Translation] The Ultimate Free Online Image Converter",
-            "p1": "[Pending Translation] In today's digital landscape, working with images requires versatility. Whether you're a web developer needing WEBP for performance, a designer needing PNG for transparency, or a photographer needing universal JPG compatibility, our <strong>Image Converter<\/strong> is the all-in-one solution.",
-            "p2": "[Pending Translation] Forget about installing heavy software or uploading your private photos to unknown servers. Our tool runs entirely in your browser, ensuring <strong>100% privacy and lightning-fast speeds<\/strong>.",
+            "title": "Cel mai bun Convertor Online de Imagini",
+            "p1": "În lumea digitală de azi, lucrul cu imagini necesită versatilitate. Fie că ești un dezvoltator care are nevoie de WebP pentru performanță sau un designer care are nevoie de PNG pentru transparență, <strong>Convertorul nostru de Imagini</strong> este soluția completă.",
+            "p2": "Uită de instalarea programelor greoaie. Instrumentul nostru rulează direct în browser, asigurând <strong>privatitate 100% și viteză fulgerătoare</strong>.",
             "features": {
                 "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Your files never leave your device. All processing happens locally in your browser."
+                    "title": "Sigur și Privat",
+                    "desc": "Fișierele tale nu părăsesc dispozitivul. Toată procesarea are loc local."
                 },
                 "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] No queuing or waiting. Powered by modern WebAssembly technology for speed."
+                    "title": "Conversie Instantanee",
+                    "desc": "Fără cozi de așteptare. Folosește tehnologia modernă WebAssembly pentru viteză."
                 },
                 "bulk": {
-                    "title": "[Pending Translation] Bulk Processing",
-                    "desc": "[Pending Translation] Convert unlimited images one by one without any usage restrictions or costs."
+                    "title": "Procesare Nelimitată",
+                    "desc": "Convertește oricâte imagini dorești, fără restricții de utilizare sau costuri."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert Images?",
+                "title": "Cum se convertesc imaginile?",
                 "list": [
-                    "[Pending Translation] Drag your image file into the blue box or click to select from your device.",
-                    "[Pending Translation] Select your desired output format (PNG, JPG, or WEBP) from the dropdown.",
-                    "[Pending Translation] If choosing JPG or WEBP, use the slider to balance file size and quality.",
-                    "[Pending Translation] Click the \"Convert & Download\" button to save your formatted image instantly."
+                    "Trage fișierul de imagine în zona albastră sau selectează-l de pe dispozitiv.",
+                    "Alege formatul de ieșire dorit (PNG, JPG sau WEBP) din listă.",
+                    "Dacă alegi JPG sau WEBP, folosește slider-ul pentru echilibrul mărime-calitate.",
+                    "Apasă pe \"Convertește și Descarcă\" pentru a salva imaginea instantaneu."
                 ]
             },
             "features_list": {
-                "title": "[Pending Translation] Key Features",
+                "title": "Caracteristici Cheie",
                 "list": [
-                    "[Pending Translation] Cross-Format Support: Effortlessly switch between PNG, JPG, and WEBP.",
-                    "[Pending Translation] Transparency Control: PNG conversions preserve transparency, while JPG fills it with a white background.",
-                    "[Pending Translation] Responsive: Works perfectly on Desktops, Tablets, and Mobile phones.",
-                    "[Pending Translation] No Limits: No file size limits and no daily conversion caps."
+                    "Suport Cross-Format: Comută fără efort între PNG, JPG și WEBP.",
+                    "Control Transparență: Conversia în PNG păstrează transparența, iar JPG o umple cu alb.",
+                    "Responsiv: Funcționează perfect pe Desktop, Tabletă și Mobil.",
+                    "Fără Limite: Fără limite de mărime a fișierelor și fără plafoane zilnice."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is this tool free?",
-                "a1": "[Pending Translation] Yes, absolutely. We don't charge anything, and there are no hidden premium features.",
-                "q2": "[Pending Translation] Does it support transparency?",
-                "a2": "[Pending Translation] Yes! If you convert to PNG or WEBP, transparency is preserved. For JPG, transparent areas become white.",
-                "q3": "[Pending Translation] Are my images uploaded?",
-                "a3": "[Pending Translation] No. All conversion logic runs in your own browser using JavaScript and Canvas APIs. We count privacy as our top feature.",
-                "q4": "[Pending Translation] What is the best format?",
-                "a4": "[Pending Translation] Use <strong>JPG<\/strong> for photos, <strong>PNG<\/strong> for graphics with sharp edges\/transparency, and <strong>WEBP<\/strong> for web performance."
+                "title": "Întrebări Frecvente",
+                "q1": "Este acest instrument gratuit?",
+                "a1": "Da, complet. Nu percepem taxe și nu există funcții premium ascunse.",
+                "q2": "Suportă transparența?",
+                "a2": "Da! Dacă convertești în PNG sau WEBP, transparența este păstrată. Pentru JPG, fundalul devine alb.",
+                "q3": "Sunt imaginile mele încărcate?",
+                "a3": "Nu. Toată logica rulează în browserul tău. Protejarea intimității este prioritatea noastră.",
+                "q4": "Care este cel mai bun format?",
+                "a4": "Folosește <strong>JPG</strong> pentru poze, <strong>PNG</strong> pentru grafică și <strong>WEBP</strong> pentru performanță web."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image file"
+            "invalid_image": "Vă rugăm să încărcați un fișier de imagine valid"
         }
     },
     "image-to-base64-converter": {
         "meta": {
-            "title": "[Pending Translation] Image to Base64 Converter - Convert Image to String | Optimizo",
+            "title": "Convertor Imagine în Base64 - Transformă Imaginea în Text | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS. Free online tool supporting PNG, JPG, GIF.",
-            "h1": "[Pending Translation] Convert Image to Base64 String",
-            "subtitle": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS"
+            "description": "Convertește imaginile în șiruri Base64 pentru încorporare în HTML sau CSS. Instrument online gratuit pentru PNG, JPG, GIF.",
+            "h1": "Convertește Imaginea în Șir Base64",
+            "subtitle": "Transformă imaginile în cod text pentru a le folosi direct în codul tău"
         },
         "input": {
-            "title": "[Pending Translation] Upload Image",
-            "desc": "[Pending Translation] Drag & drop your image file here",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Supports All Image Formats"
+            "title": "Încarcă Imaginea",
+            "desc": "Trage și plasează fișierul de imagine aici",
+            "drop_title": "Plasează imaginea aici",
+            "drop_desc": "Suportă toate formatele de imagine"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "label_string": "[Pending Translation] Base64 String",
-            "btn_copy": "[Pending Translation] Copy to Clipboard",
-            "char_count": "[Pending Translation] Character Count",
-            "mime_type": "[Pending Translation] MIME Type"
+            "image_alt": "Previzualizare",
+            "label_string": "Șir Base64",
+            "btn_copy": "Copiază în Clipboard",
+            "char_count": "Număr Caractere",
+            "mime_type": "Tip MIME"
         },
         "content": {
-            "title": "[Pending Translation] Convert Image to Base64 String",
-            "p1": "[Pending Translation] Developers and web designers often need to embed images directly into HTML or CSS files to reduce HTTP requests.",
-            "p2": "[Pending Translation] Our <strong>Image to Base64 Converter<\/strong> encodes your image file into a long string of characters that represents the binary data. You can paste this string straight into your code.",
+            "title": "Convertește Imaginea în Șir Base64",
+            "p1": "Dezvoltatorii și designerii web au adesea nevoie să includă imagini direct în fișierele HTML sau CSS pentru a reduce cererile HTTP.",
+            "p2": "<strong>Convertorul nostru Imagine în Base64</strong> codifică fișierul tău într-un șir lung de caractere care reprezintă datele binare. Poți lipi acest text direct în codul tău.",
             "features": {
                 "clipboard": {
-                    "title": "[Pending Translation] Clipboard Ready",
-                    "desc": "[Pending Translation] One-click copy. We format the output for HTML (`&lt;img src=\"...\"&gt;`) or CSS (`background: url(...)`)."
+                    "title": "Gata pentru Copiere",
+                    "desc": "Copiere cu un singur clic. Formatăm rezultatul pentru HTML (`<img>`) sau CSS (`url(...)`)."
                 },
                 "requests": {
-                    "title": "[Pending Translation] Reduce Requests",
-                    "desc": "[Pending Translation] Embedding small icons and logos as Base64 eliminates the network overhead of fetching external image files."
+                    "title": "Redu Cererile",
+                    "desc": "Încorporarea iconițelor mici ca Base64 elimină timpul de rețea necesar pentru a descărca fișiere externe."
                 },
                 "formats": {
-                    "title": "[Pending Translation] Any Format",
-                    "desc": "[Pending Translation] Works with PNG, JPG, GIF, WEBP, SVG, and even ICO files."
+                    "title": "Orice Format",
+                    "desc": "Funcționează cu PNG, JPG, GIF, WEBP, SVG și chiar fișiere ICO."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to use?",
+                "title": "Cum se folosește?",
                 "list": [
-                    "[Pending Translation] Select your image file.",
-                    "[Pending Translation] The tool immediately converts the file to a Data URI.",
-                    "[Pending Translation] Click \"Copy to Clipboard\" to grab the code.",
-                    "[Pending Translation] Insert it into your `src` attribute or CSS file."
+                    "Selectează fișierul de imagine.",
+                    "Sistemul convertește imediat fișierul într-un Data URI.",
+                    "Apasă pe \"Copiază în Clipboard\" pentru a lua codul.",
+                    "Introdu-l în atributul `src` sau în fișierul CSS."
                 ]
             },
             "use_cases": {
-                "title": "[Pending Translation] When to use Base64?",
+                "title": "Când să folosești Base64?",
                 "list": [
-                    "[Pending Translation] Small Images: Best for icons, spinners, and small logos (under 10KB).",
-                    "[Pending Translation] Single-File Apps: When you need to bundle everything into one HTML file (e.g., email templates).",
-                    "[Pending Translation] Offline Access: Ensures images load even without a network connection if the HTML is saved locally."
+                    "Imagini Mici: Recomandat pentru iconițe și logo-uri sub 10KB.",
+                    "Aplicații Single-File: Când trebuie să incluzi totul într-un singur fișier (ex. mail-uri).",
+                    "Acces Offline: Asigură încărcarea imaginilor chiar și fără conexiune la rețea."
                 ]
             }
         },
         "js": {
-            "copied": "[Pending Translation] Copied!"
+            "copied": "Copiat!"
         }
     },
     "jpg-to-png-converter": {
         "meta": {
-            "title": "[Pending Translation] JPG to PNG Converter - Convert JPG Images to PNG Free | Optimizo",
+            "title": "Convertor JPG în PNG - Convertește Imagini JPG în PNG Gratuit | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert JPG images to PNG format instantly. 100% free, secure client-side conversion, no file size limits.",
-            "h1": "[Pending Translation] JPG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to PNG format instantly with 100% free conversion"
+            "description": "Convertește imaginile JPG în format PNG instantaneu. 100% gratuit, sigur în browser, fără limite de mărime.",
+            "h1": "Convertor JPG în PNG",
+            "subtitle": "Transformă imaginile JPG în format PNG de înaltă calitate"
         },
         "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG\/JPEG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
+            "title": "Încarcă Imaginea JPG",
+            "desc": "Trage și plasează fișierul JPG/JPEG aici",
+            "drop_title": "Plasează fișierul JPG aici",
+            "drop_desc": "Suportă JPG, JPEG (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] PNG",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
+            "image_alt": "Previzualizare",
+            "output_format": "Format Ieșire:",
+            "format_short": "PNG",
+            "btn_convert": "Convertește în PNG și Descarcă"
         },
         "content": {
-            "title": "[Pending Translation] Convert JPG to PNG Instantly",
-            "p1": "[Pending Translation] JPG is the world's most popular image format, but it often lacks the versatility needed for modern web design. By converting to PNG, you gain access to lossless compression and transparency support.",
-            "p2": "[Pending Translation] Our <strong>JPG to PNG Converter<\/strong> is designed for speed and privacy, handling everything directly in your browser without uploading your sensitive photos to any server.",
+            "title": "Convertește JPG în PNG Instantaneu",
+            "p1": "JPG este cel mai popular format, dar uneori ai nevoie de versatilitatea oferită de PNG. Prin conversia în PNG, obții o compresie fără pierderi și suport pentru transparență.",
+            "p2": "<strong>Convertorul nostru JPG în PNG</strong> este conceput pentru viteză și privatitate, operând direct în browser fără a încărca pozele tale sensibile pe vreun server.",
             "features": {
                 "lossless": {
-                    "title": "[Pending Translation] Lossless Quality",
-                    "desc": "[Pending Translation] Stop image degradation. PNG uses lossless compression to keep every pixel perfect during edits."
+                    "title": "Calitate fără Pierderi",
+                    "desc": "Oprește degradarea imaginii. PNG folosește compresie lossless pentru a păstra fiecare pixel perfect."
                 },
                 "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Files are processed locally on your device. We never see, store, or upload your images."
+                    "title": "100% Privat",
+                    "desc": "Fișierele sunt procesate local. Nu vom vedea, stoca sau încărca niciodată imaginile tale."
                 },
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Ready",
-                    "desc": "[Pending Translation] Convert to the preferred format for logos, icons, and graphics that require transparent backgrounds."
+                    "title": "Pregătit pentru Transparență",
+                    "desc": "Transformă pozele în formatul preferat pentru logo-uri și grafică ce necesită fundal transparent."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to PNG",
+                "title": "Cum se convertește JPG în PNG",
                 "list": [
-                    "[Pending Translation] Drag and drop your JPG file into the designated area.",
-                    "[Pending Translation] The tool immediately reads the file ready for conversion.",
-                    "[Pending Translation] See exactly how your image looks before saving.",
-                    "[Pending Translation] Click \"Convert & Download\" to save your new PNG instantly."
+                    "Trage fișierul JPG în zona marcată.",
+                    "Instrumentul va citi imediat fișierul pentru conversie.",
+                    "Vei vedea exact cum arată imaginea înainte de salvare.",
+                    "Apasă pe \"Convertește și Descarcă\" pentru a salva noul PNG."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is the quality better?",
-                "a1": "[Pending Translation] Converting to PNG stops <em>future<\/em> quality loss. It's best for images you plan to edit further or need to keep sharp.",
-                "q2": "[Pending Translation] Are there file limits?",
-                "a2": "[Pending Translation] Since we process files in your browser, the limit is determined by your device's memory, usually allowing files up to 50MB easily."
+                "title": "Întrebări Frecvente",
+                "q1": "Este calitatea mai bună?",
+                "a1": "Conversia în PNG oprește pierderile de calitate <em>viitoare</em>. E ideal pentru imagini pe care vrei să le editezi ulterior.",
+                "q2": "Există limite de fișiere?",
+                "a2": "Limita este dată de memoria dispozitivului tău, permițând de obicei fișiere de până la 50MB fără probleme."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
+            "invalid_image": "Vă rugăm să încărcați o imagine JPG validă",
+            "converted_name": "imagine-convertita"
         }
     },
     "jpg-to-webp-converter": {
         "meta": {
-            "title": "[Pending Translation] JPG to WEBP Converter - Convert Images to WebP | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression and web performance. Free online tool.",
-            "h1": "[Pending Translation] JPG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression"
+            "title": "Convertor JPG în WEBP - Optimizează Imagini pentru Web | Optimizo",
+            "description": "Convertește imaginile JPG în formatul modern WebP pentru o compresie superioară și performanță web îmbunătățită. Instrument online gratuit.",
+            "h1": "Convertor JPG în WebP",
+            "subtitle": "Transformă imaginile JPG în format WebP pentru viteză maximă de încărcare"
         },
         "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
+            "title": "Încarcă Imaginea JPG",
+            "desc": "Trage și plasează fișierul JPG aici",
+            "drop_title": "Plasează fișierul JPG aici",
+            "drop_desc": "Suportă JPG, JPEG (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] WEBP",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
+            "image_alt": "Previzualizare",
+            "output_format": "Format Ieșire:",
+            "format_short": "WEBP",
+            "quality": "Calitate Compresie",
+            "btn_convert": "Convertește în WEBP și Descarcă"
         },
         "content": {
-            "title": "[Pending Translation] Convert JPG to WebP for Better Performance",
-            "p1": "[Pending Translation] WebP is a modern image format that provides superior lossless and lossy compression for images on the web. By converting JPG to WebP, developers and webmasters can create smaller, richer images that make the web faster.",
-            "p2": "[Pending Translation] Our <strong>JPG to WebP Converter<\/strong> helps you optimize your images instantly in the browser, reducing file size by up to 30% compared to JPEG without standard quality loss.",
+            "title": "Convertește JPG în WebP pentru Performanță Mai Bună",
+            "p1": "WebP este un format modern de imagine care oferă o compresie superioară (lossless și lossy) pentru imaginile de pe web. Prin conversia JPG în WebP, site-urile se încarcă mult mai repede.",
+            "p2": "<strong>Convertorul nostru JPG în WebP</strong> te ajută să optimizezi imaginile instantaneu în browser, reducând dimensiunea fișierului cu până la 30% fără pierderi vizibile de calitate.",
             "features": {
                 "faster": {
-                    "title": "[Pending Translation] Faster Loading",
-                    "desc": "[Pending Translation] WebP images are significantly smaller than JPGs, helping your website load faster and improving SEO scores."
+                    "title": "Încărcare Mai Rapidă",
+                    "desc": "Imaginile WebP sunt semnificativ mai mici decât JPG-urile, ajutând site-ul tău să obțină scoruri SEO mai bune."
                 },
                 "quality": {
-                    "title": "[Pending Translation] High Quality",
-                    "desc": "[Pending Translation] Maintain visual fidelity while reducing file weight. Perfect for photographs and complex web graphics."
+                    "title": "Calitate Ridicată",
+                    "desc": "Menține fidelitatea vizuală în timp ce reduci greutatea fișierului. Perfect pentru fotografii web."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] All conversions happen locally. Your sensitive images never leave your computer."
+                    "title": "Procesare Sigură",
+                    "desc": "Toate conversiile au loc local. Imaginile tale sensibile nu părăsesc niciodată computerul."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to WebP",
+                "title": "Cum se convertește JPG în WebP",
                 "list": [
-                    "[Pending Translation] Select or drag & drop your JPG image.",
-                    "[Pending Translation] Use the quality slider to balance size vs quality.",
-                    "[Pending Translation] See the result in real-time.",
-                    "[Pending Translation] Save your optimized WebP image."
+                    "Selectează sau trage imaginea JPG.",
+                    "Folosește slider-ul de calitate pentru balansul mărime-calitate.",
+                    "Vezi rezultatul în timp real.",
+                    "Salvează imaginea WebP optimizată."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Do all browsers support WebP?",
-                "a1": "[Pending Translation] Yes, all modern browsers (Chrome, Firefox, Safari, Edge) fully support WebP images.",
-                "q2": "[Pending Translation] Is WebP better for SEO?",
-                "a2": "[Pending Translation] Absolutely. Google prefers WebP because it loads faster, improving your Core Web Vitals score."
+                "title": "Întrebări Frecvente",
+                "q1": "Browserele suportă WebP?",
+                "a1": "Da, toate browserele moderne (Chrome, Firefox, Safari, Edge) suportă complet formatul WebP.",
+                "q2": "Este WebP mai bun pentru SEO?",
+                "a2": "Absolut. Google preferă WebP deoarece se încarcă mai repede, îmbunătățind scorul Core Web Vitals."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
+            "invalid_image": "Vă rugăm să încărcați o imagine JPG validă",
+            "converted_name": "imagine-optimizata"
         }
     },
     "png-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] PNG to JPG Converter - Convert PNG to JPG Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes. Free online converter.",
-            "h1": "[Pending Translation] PNG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes instantly"
+            "title": "Convertor PNG în JPG - Transformă PNG în JPG Online | Optimizo",
+            "description": "Convertește imaginile PNG în format JPG pentru dimensiuni mai mici. Instrument online gratuit care procesează totul în browser.",
+            "h1": "Convertor PNG în JPG",
+            "subtitle": "Redu dimensiunea imaginilor tale prin conversia PNG în JPG"
         },
         "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
+            "title": "Încarcă Imaginea PNG",
+            "desc": "Trage și plasează fișierul PNG aici",
+            "drop_title": "Plasează fișierul PNG aici",
+            "drop_desc": "Suportă PNG (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be converted to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Previzualizare",
+            "note": "Notă:",
+            "note_text": "Fundalurile transparente vor fi convertite în alb.",
+            "output_format": "Format Ieșire:",
+            "btn_convert": "Convertește în JPG și Descarcă"
         },
         "content": {
-            "title": "[Pending Translation] Compress PNG to JPG Instantly",
-            "p1": "[Pending Translation] PNG files are great for quality, but they can be massive. If you're uploading photos to a website or sending them via email, JPG is often the better choice.",
-            "p2": "[Pending Translation] Our <strong>PNG to JPG Converter<\/strong> drastically reduces file size by using JPEG compression. We automatically handle transparent backgrounds by filling them with white, ensuring your images look perfect.",
+            "title": "Comprimă PNG în JPG Instantaneu",
+            "p1": "Fișierele PNG sunt excelente pentru calitate, dar pot fi masive. Dacă urci poze pe un site sau le trimiti prin email, JPG este adesea alegerea mai bună.",
+            "p2": "<strong>Convertorul nostru PNG în JPG</strong> reduce drastic dimensiunea fișierului folosind compresia JPEG. Gestionăm automat fundalurile transparente, înlocuindu-le cu alb.",
             "features": {
                 "size": {
-                    "title": "[Pending Translation] Drastic Size Reduction",
-                    "desc": "[Pending Translation] Reduce file sizes by up to 80% with minimal loss in visual quality."
+                    "title": "Reducere Drastică a Mărimii",
+                    "desc": "Reduci dimensiunea cu până la 80% cu o pierdere minimă de calitate vizuală."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Local browser processing means your photos are never uploaded to the cloud."
+                    "title": "Sigur și Privat",
+                    "desc": "Procesarea locală în browser înseamnă că pozele tale nu ajung niciodată în cloud."
                 },
                 "smart": {
-                    "title": "[Pending Translation] Smart Conversion",
-                    "desc": "[Pending Translation] Intelligent background handling converts transparency to a clean white matte."
+                    "title": "Conversie Inteligentă",
+                    "desc": "Fundalul transparent este transformat într-un alb curat în mod automat."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Steps to Convert",
+                "title": "Pași pentru conversie",
                 "list": [
-                    "[Pending Translation] Select a PNG image from your device.",
-                    "[Pending Translation] The tool instantly processes the image.",
-                    "[Pending Translation] Check the preview (transparent areas will now be white).",
-                    "[Pending Translation] Download your optimized JPG file."
+                    "Selectează o imagine PNG de pe dispozitiv.",
+                    "Sistemul procesează imaginea instantaneu.",
+                    "Verifică previzualizarea (zonele transparente vor fi acum albe).",
+                    "Descarcă fișierul JPG optimizat."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] When to use JPG?",
+                "title": "Când să folosești JPG?",
                 "list": [
-                    "[Pending Translation] Photographs: JPG is designed for complex, real-world images.",
-                    "[Pending Translation] Web Uploads: Many forms only accept .jpg or .jpeg.",
-                    "[Pending Translation] Saving Space: If you have thousands of images, JPG saves GBs of storage."
+                    "Fotografii: JPG este creat pentru imagini complexe din lumea reală.",
+                    "Upload Web: Multe formulare acceptă doar formatul .jpg sau .jpeg.",
+                    "Economisire Spațiu: Dacă ai mii de poze, JPG îți salvează gigabiți de stocare."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
+            "invalid_image": "Vă rugăm să încărcați o imagine PNG validă"
         }
     },
     "png-to-webp-converter": {
         "meta": {
-            "title": "[Pending Translation] PNG to WEBP Converter - Compress PNG to WebP | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.",
-            "h1": "[Pending Translation] PNG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency"
+            "title": "Convertor PNG în WEBP - Comprimă PNG în WebP | Optimizo",
+            "description": "Convertește imaginile PNG în formatul WebP pentru a reduce dimensiunea fișierului păstrând transparența. Îmbunătățește viteza site-ului tău.",
+            "h1": "Convertor PNG în WebP",
+            "subtitle": "Convertește PNG în WebP păstrând transparența și reducând mărimea"
         },
         "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
+            "title": "Încarcă Imaginea PNG",
+            "desc": "Trage și plasează fișierul PNG aici",
+            "drop_title": "Plasează fișierul PNG aici",
+            "drop_desc": "Suportă PNG (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
+            "image_alt": "Previzualizare",
+            "output_format": "Format Ieșire:",
+            "quality": "Calitate Compresie",
+            "btn_convert": "Convertește în WEBP și Descarcă"
         },
         "content": {
-            "title": "[Pending Translation] Optimize Images with PNG to WebP",
-            "p1": "[Pending Translation] Want faster website load times? Converting your PNGs to WebP is the #1 recommendation from Google PageSpeed Insights.",
-            "p2": "[Pending Translation] Our tool compresses your PNG images into the modern WebP format, reducing file size by up to <strong>30-50%<\/strong> while keeping the background transparent and the quality sharp.",
+            "title": "Optimizează Imaginile cu PNG în WebP",
+            "p1": "Vrei un site care se încarcă mai repede? Conversia PNG-urilor în WebP este recomandarea numărul 1 de la Google PageSpeed Insights.",
+            "p2": "Instrumentul nostru comprimă PNG-urile tale în formatul modern WebP, reducând dimensiunea cu <strong>30-50%</strong>, păstrând în același timp transparența fundalului.",
             "features": {
                 "smaller": {
-                    "title": "[Pending Translation] Significantly Smaller",
-                    "desc": "[Pending Translation] WebP offers superior compression. Save bandwidth and storage space instantly."
+                    "title": "Semnificativ mai Mic",
+                    "desc": "WebP oferă o compresie superioară. Economisește bandă și spațiu de stocare imediat."
                 },
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Kept",
-                    "desc": "[Pending Translation] Unlike converting to JPG, switching from PNG to WebP preserves your alpha channel (background transparency)."
+                    "title": "Transparență Păstrată",
+                    "desc": "Spre deosebire de JPG, trecerea la WebP îți păstrează canalul alfa (fundalul transparent)."
                 },
                 "adjustable": {
-                    "title": "[Pending Translation] Adjustable Quality",
-                    "desc": "[Pending Translation] You control the balance. Choose 90% for high quality or 70% for maximum savings."
+                    "title": "Calitate Ajustabilă",
+                    "desc": "Tu deții controlul. Alege 90% pentru calitate maximă sau 70% pentru economisire maximă."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert?",
+                "title": "Cum se convertește?",
                 "list": [
-                    "[Pending Translation] Drag and drop your file.",
-                    "[Pending Translation] Use the slider. We recommend 80-90% for a good balance.",
-                    "[Pending Translation] Click the \"Convert\" button.",
-                    "[Pending Translation] Your lighter .webp file is ready."
+                    "Trage fișierul tău în zonă.",
+                    "Folosește slider-ul de calitate (recomandăm 80-90%).",
+                    "Apasă pe butonul de conversie.",
+                    "Fișierul tău .webp este gata."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why WebP?",
-                "p1": "[Pending Translation] WebP is a modern image format developed by Google.",
+                "title": "De ce WebP?",
+                "p1": "WebP este un format modern dezvoltat de Google.",
                 "list": [
-                    "[Pending Translation] SEO Boost: Faster sites rank better on Google.",
-                    "[Pending Translation] Mobile Friendly: Uses less data for mobile visitors.",
-                    "[Pending Translation] Support: Supported by Chrome, Firefox, Safari, Edge, and all modern browsers."
+                    "Boost SEO: Site-urile rapide rankează mai bine.",
+                    "Mobile Friendly: Consumă mai puține date pentru vizitatorii de pe mobil.",
+                    "Suport: Lucrări în toate browserele moderne."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
+            "invalid_image": "Vă rugăm să încărcați o imagine PNG validă"
         }
     },
     "svg-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] SVG to JPG Converter - Vector to Raster Conversion | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert SVG vector files to JPG images online. Auto-fills transparent backgrounds with white for perfect JPG output.",
-            "h1": "[Pending Translation] SVG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert SVG vector files to JPG images online with auto-fill backgrounds"
+            "title": "Convertor SVG în JPG - Conversie Vector în Raster | Optimizo",
+            "description": "Convertește fișierele vectoriale SVG în imagini JPG online. Completează automat fundalul transparent cu alb.",
+            "h1": "Convertor SVG în JPG",
+            "subtitle": "Transformă fișierele SVG în imagini JPG compatibile universal"
         },
         "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
+            "title": "Încarcă Fișierul SVG",
+            "desc": "Trage și plasează fișierul SVG aici",
+            "drop_title": "Plasează fișierul SVG aici",
+            "drop_desc": "Suportă SVG, SVGZ (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be filled with white color.",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Previzualizare",
+            "note": "Notă:",
+            "note_text": "Fundalurile transparente vor fi umplute cu culoarea albă.",
+            "output_format": "Format Ieșire:",
+            "scale_label": "Multiplicator Rezoluție (Scalare)",
+            "scale_1": "1x (Mărime Originală)",
+            "scale_2": "2x (Înaltă Rezoluție)",
+            "scale_4": "4x (Ultra Rezoluție)",
+            "btn_convert": "Convertește în JPG și Descarcă"
         },
         "content": {
-            "title": "[Pending Translation] Convert SVG to JPG Format",
-            "p1": "[Pending Translation] Need to use a logo in a document or on a website that doesn't accept vector files? Our <strong>SVG to JPG Converter<\/strong> is the answer.",
-            "p2": "[Pending Translation] It creates a solid, high-compatibility image file from your vector source. We automatically handle transparency by adding a clean white background, ensuring your graphic looks professional on any medium.",
+            "title": "Convertește SVG în format JPG",
+            "p1": "Ai nevoie de un logo vectorial într-un document sau pe un site care nu acceptă fișiere vector? <strong>Convertorul nostru SVG în JPG</strong> este soluția.",
+            "p2": "Acesta creează un fișier de imagine solid și compatibil din sursa ta vectorială. Gestionăm automat transparența adăugând un fundal alb curat pentru un aspect profesional.",
             "features": {
                 "compatibility": {
-                    "title": "[Pending Translation] Maximum Compatibility",
-                    "desc": "[Pending Translation] JPG is opened by literally every digital device and software created in the last 30 years."
+                    "title": "Compatibilitate Maximă",
+                    "desc": "JPG-ul poate fi deschis de aproape orice dispozitiv sau software digital creat în ultimii 30 de ani."
                 },
                 "resolution": {
-                    "title": "[Pending Translation] 4x High Resolution",
-                    "desc": "[Pending Translation] Scale up your SVG before saving to ensure your JPG is sharp, not blurry."
+                    "title": "Rezoluție Înaltă 4x",
+                    "desc": "Scalează SVG-ul înainte de salvare pentru a te asigura că JPG-ul rezultat este clar, nu pixelat."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure Client-Side",
-                    "desc": "[Pending Translation] Processing happens in your browser. We never see your files."
+                    "title": "Securizat și Local",
+                    "desc": "Procesarea are loc în browser. Nu vedem și nu stocăm fișierele tale."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Easy Instructions",
+                "title": "Instrucțiuni Simple",
                 "list": [
-                    "[Pending Translation] Click \"Upload\" or drag your file to the center box.",
-                    "[Pending Translation] Choose a scaling factor (e.g., 2x or 4x) for higher quality results.",
-                    "[Pending Translation] Observe the image. Note that transparent backgrounds are now white.",
-                    "[Pending Translation] Click \"Convert to JPG & Download\"."
+                    "Click pe \"Încarcă\" sau trage fișierul în zona centrală.",
+                    "Alege factorul de scalare (ex. 2x sau 4x) pentru rezultate de calitate.",
+                    "Observă imaginea. Reține că zonele transparente sunt acum albe.",
+                    "Click pe \"Convertește în JPG și Descarcă\"."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why choose JPG over PNG for Vectors?",
-                "p1": "[Pending Translation] While PNG supports transparency, JPG generates smaller file sizes for complex, colorful images.",
+                "title": "De ce JPG în loc de PNG pentru Vectori?",
+                "p1": "Deși PNG suportă transparența, JPG generează fișiere mai mici pentru imagini complexe.",
                 "list": [
-                    "[Pending Translation] Smaller Files: Better for emails and attachments.",
-                    "[Pending Translation] No Transparency Issues: Some viewers render transparency as black. JPG forces a white background, ensuring your logo is legible."
+                    "Fișiere mai Mici: Mai bine pentru email-uri și atașamente.",
+                    "Fără Erori de Transparență: Unele vizualizatoare redau transparența ca negru. JPG forțează un fundal alb pentru claritate."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
+            "invalid_image": "Vă rugăm să încărcați un fișier SVG valid"
         }
     },
     "svg-to-png-converter": {
         "meta": {
-            "title": "[Pending Translation] SVG to PNG Converter - Rasterize SVG Images | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don't support vector files.",
-            "h1": "[Pending Translation] SVG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly"
+            "title": "Convertor SVG în PNG - Rasterizează Vectori Gratuit | Optimizo",
+            "description": "Convertește fișierele vectoriale SVG în imagini PNG cu fundal transparent. Suportă scalare până la 4x pentru rezoluție ultra-înaltă.",
+            "h1": "Convertor SVG în PNG",
+            "subtitle": "Transformă graficele vectoriale (SVG) în imagini PNG instantaneu"
         },
         "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
+            "title": "Încarcă Fișierul SVG",
+            "desc": "Trage și plasează fișierul SVG aici",
+            "drop_title": "Plasează fișierul SVG aici",
+            "drop_desc": "Suportă SVG, SVGZ (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "checkerboard": "[Pending Translation] Checkerboard background indicates transparency",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
+            "image_alt": "Previzualizare",
+            "checkerboard": "Fundalul în carouri indică transparența",
+            "output_format": "Format Ieșire:",
+            "scale_label": "Multiplicator Rezoluție (Scalare)",
+            "scale_1": "1x (Mărime Originală)",
+            "scale_2": "2x (Înaltă Rezoluție)",
+            "scale_4": "4x (Ultra Rezoluție)",
+            "btn_convert": "Convertește în PNG și Descarcă"
         },
         "content": {
-            "title": "[Pending Translation] Rasterize SVG to PNG High-Res",
-            "p1": "[Pending Translation] Scalable Vector Graphics (SVG) are perfect for the web, but impossible to use on social media, in Word documents, or as email attachments.",
-            "p2": "[Pending Translation] Our <strong>SVG to PNG Converter<\/strong> allows you to turn your vector logo or icon into a high-quality, transparent PNG image. With our unique <strong>scaling feature<\/strong>, you can produce ultra-high-resolution images without any pixelation.",
+            "title": "Rasterizează SVG în PNG la Rezoluție Înaltă",
+            "p1": "Graficele Vectoriale Scalabile (SVG) sunt ideale pentru web, dar imposibil de folosit pe rețelele sociale, în documente Word sau ca atașamente email simple.",
+            "p2": "<strong>Convertorul nostru SVG în PNG</strong> îți permite să transformi logo-ul sau iconița ta vectorială într-o imagine PNG de înaltă calitate, cu fundal transparent. Cu funcția noastră unică de <strong>scalare</strong>, poți produce imagini ultra-clare fără nicio pixelare.",
             "features": {
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Preserved",
-                    "desc": "[Pending Translation] Unlike JPG, PNG keeps the background transparent. Perfect for logos and overlays."
+                    "title": "Transparență Păstrată",
+                    "desc": "Spre deosebire de JPG, PNG păstrează fundalul transparent. Perfect pentru logo-uri și suprapuneri."
                 },
                 "scaling": {
-                    "title": "[Pending Translation] Up to 4x Scaling",
-                    "desc": "[Pending Translation] Export at 4x the original size. Get crisp edges even for large print formats."
+                    "title": "Scalare până la 4x",
+                    "desc": "Exportă la de 4 ori dimensiunea originală. Obține margini clare chiar și pentru formate mari de print."
                 },
                 "browser": {
-                    "title": "[Pending Translation] Browser-Based",
-                    "desc": "[Pending Translation] Fast and secure. No files are uploaded to any server."
+                    "title": "Bazat pe Browser",
+                    "desc": "Rapid și sigur. Niciun fișier nu este încărcat pe vreun server extern."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert SVG to PNG?",
+                "title": "Cum se convertește SVG în PNG?",
                 "list": [
-                    "[Pending Translation] Drop your `.svg` file into the upload area.",
-                    "[Pending Translation] Select `1x`, `2x`, or `4x` from the dropdown. Higher is better for quality.",
-                    "[Pending Translation] Check the preview image on the left. The checkerboard indicates transparency.",
-                    "[Pending Translation] Hit the button to generate and download your PNG."
+                    "Încarcă fișierul tău .svg în zona de upload.",
+                    "Selectează 1x, 2x sau 4x din listă. Mai mare înseamnă calitate mai bună.",
+                    "Verifică previzualizarea. Carourile confirmă că transparența este activă.",
+                    "Apasă butonul pentru a genera și descărca PNG-ul."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why Convert Vectors?",
-                "p1": "[Pending Translation] Vectors are mathematical formulas, while PNGs are grids of pixels. You need pixels for:",
+                "title": "De ce să convertești Vectorii?",
+                "p1": "Vectorii sunt formule matematice, în timp ce PNG-urile sunt grile de pixeli. Ai nevoie de pixeli pentru:",
                 "list": [
-                    "[Pending Translation] Profile pictures (Twitter\/LinkedIn often reject SVG).",
-                    "[Pending Translation] Embedding in emails (SVG support is poor).",
-                    "[Pending Translation] Using in video editors or simple graphic tools (Canva, Paint)."
+                    "Poze de profil (Twitter/LinkedIn refuză adesea SVG).",
+                    "Încorporarea în email-uri (suportul SVG este slab în clienții de mail).",
+                    "Folosirea în editoare video sau unelte grafice simple (Canva, Paint)."
                 ]
-            },
-            "faq": {
-                "title": "",
-                "q1": "",
-                "a1": "",
-                "q2": "",
-                "a2": ""
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
+            "invalid_image": "Vă rugăm să încărcați un fișier SVG valid"
         }
     },
     "webp-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] WEBP to JPG Converter - Convert WebP to JPG Online | Optimizo",
-            "desc": "",
-            "description": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility. Free, fast, and secure converter.",
-            "h1": "[Pending Translation] WebP to JPG Converter",
-            "subtitle": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility"
+            "title": "Convertor WEBP în JPG - Convertește WebP în JPG Online | Optimizo",
+            "description": "Convertește imaginile WebP în formatul standard JPG pentru compatibilitate maximă. Convertor gratuit, rapid și sigur.",
+            "h1": "Convertor WebP în JPG",
+            "subtitle": "Transformă imaginile WebP în format JPG compatibil universal"
         },
         "input": {
-            "title": "[Pending Translation] Upload WEBP Image",
-            "desc": "[Pending Translation] Drag & drop your WEBP file here",
-            "drop_title": "[Pending Translation] Drop WEBP file here",
-            "drop_desc": "[Pending Translation] Supports WEBP (Max 10MB)"
+            "title": "Încarcă Imaginea WEBP",
+            "desc": "Trage și plasează fișierul WEBP aici",
+            "drop_title": "Plasează fișierul WEBP aici",
+            "drop_desc": "Suportă WEBP (Max 10MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds (common in WEBP) will be verified to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Previzualizare",
+            "note": "Notă:",
+            "note_text": "Fundalurile transparente vor fi convertite în alb.",
+            "output_format": "Format Ieșire:",
+            "btn_convert": "Convertește în JPG și Descarcă"
         },
         "content": {
-            "title": "[Pending Translation] WebP to JPG: The Compatibility Fixer",
-            "p1": "[Pending Translation] WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older image viewers, or upload it to platforms that only accept JPG.",
-            "p2": "[Pending Translation] Our <strong>WebP to JPG Converter<\/strong> bridges this gap. It takes your highly optimized WebP images and transforms them into the universally compatible JPEG format in milliseconds.",
+            "title": "WebP în JPG: Rezolvarea Compatibilității",
+            "p1": "WebP este fantastic pentru viteza site-urilor, dar este o problemă când încerci să-l deschizi în Photoshop, vechi vizualizatoare de imagini sau să-l urci pe platforme care acceptă doar JPG.",
+            "p2": "<strong>Convertorul nostru WebP în JPG</strong> rezolvă această problemă. Preia imaginile tale WebP optimizate și le transformă în formatul universal JPEG în câteva milisecunde.",
             "features": {
                 "universal": {
-                    "title": "[Pending Translation] Universal Support",
-                    "desc": "[Pending Translation] JPG works everywhere: Word docs, PowerPoint, legacy software, and every social media platform."
+                    "title": "Suport Universal",
+                    "desc": "JPG funcționează peste tot: Word, PowerPoint, software legacy și toate rețelele sociale."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] We don't see your files. The conversion is performed locally by your web browser."
+                    "title": "Procesare Sigură",
+                    "desc": "Nu vedem fișierele tale. Conversia este realizată local de browserul tău web."
                 },
                 "smart": {
-                    "title": "[Pending Translation] Smart Backgrounds",
-                    "desc": "[Pending Translation] Automatically detects transparent pixels in WebP and fills them with a clean white background."
+                    "title": "Fundaluri Inteligente",
+                    "desc": "Detecteaza automat pixelii transparenți din WebP și îi umple cu un fundal alb curat."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Step-by-Step Guide",
+                "title": "Ghid Pas cu Pas",
                 "list": [
-                    "[Pending Translation] Click the box or drag your WebP image onto the page.",
-                    "[Pending Translation] The tool will display a preview of your image.",
-                    "[Pending Translation] Click the \"Convert to JPG\" button. The system handles transparency and compression automatically.",
-                    "[Pending Translation] Your new .jpg file will download instantly."
+                    "Dă click pe cutie sau trage imaginea WebP pe pagină.",
+                    "Instrumentul va afișa o previzualizare a imaginii.",
+                    "Apasă butonul \"Convertește în JPG\". Sistemul gestionează automat transparența.",
+                    "Noul tău fișier .jpg va fi descărcat instantaneu."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why Convert WebP?",
+                "title": "De ce să convertești WebP?",
                 "list": [
-                    "[Pending Translation] Editing: Many desktop editors typically don't support WebP out of the box.",
-                    "[Pending Translation] Email: Outlook and other email clients might not render WebP inline images correctly.",
-                    "[Pending Translation] Printing: Print shops often require standard JPG or TIFF files."
+                    "Editare: Multe editoare desktop nu suportă WebP nativ.",
+                    "Email: Outlook și alți clienți de mail pot să nu afișeze corect imaginile WebP.",
+                    "Print: Centrele de printare solicită de obicei fișiere standard JPG sau TIFF."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] FAQ",
-                "q1": "[Pending Translation] What happens to transparent backgrounds?",
-                "a1": "[Pending Translation] Since JPG doesn't support transparency, our tool replaces transparent areas with white. This is perfect for product photos and logos.",
-                "q2": "[Pending Translation] Is it safe?",
-                "a2": "[Pending Translation] Yes. Unlike other converters that upload your file to a server, this tool runs 100% on your device. Your data remains private."
+                "title": "Întrebări Frecvente",
+                "q1": "Ce se întâmplă cu fundalul transparent?",
+                "a1": "Deoarece JPG nu suportă transparența, unelata noastră înlocuiește zonele transparente cu alb. E perfect pentru poze de produs.",
+                "q2": "Este sigur?",
+                "a2": "Da. Spre deosebire de alte convertoare care încarcă fișierul pe un server, acesta rulează 100% pe dispozitivul tău."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid WEBP image"
+            "invalid_image": "Vă rugăm să încărcați o imagine WEBP validă"
         }
     }
 }
