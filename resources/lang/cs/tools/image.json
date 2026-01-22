@@ -1,850 +1,842 @@
 {
     "base64-to-image-converter": {
         "meta": {
-            "title": "[Pending Translation] Base64 to Image Converter - Decode Base64 Output | Optimizo",
-            "description": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF). Free online decoder and visualizer.",
-            "h1": "[Pending Translation] Decode Base64 to Image",
-            "subtitle": "[Pending Translation] Convert Base64 encoded strings back to images (PNG, JPG, GIF) instantly"
+            "title": "Převodník Base64 na obrázek – dekódování Base64 výstupu | Optimizo",
+            "description": "Převeďte řetězce kódované v Base64 zpět na obrázky (PNG, JPG, GIF). Bezplatný online dekodér a vizualizátor.",
+            "h1": "Dekódování Base64 na obrázek",
+            "subtitle": "Okamžitě převeďte řetězce kódované v Base64 zpět na obrázky (PNG, JPG, GIF)"
         },
         "input": {
-            "title": "[Pending Translation] Paste Base64 String",
-            "desc": "[Pending Translation] Paste your code below to visualize the image",
-            "placeholder": "[Pending Translation] data:image\/png;base64,iVBORw0KGgo...",
-            "btn_decode": "[Pending Translation] Decode Image"
+            "title": "Vložte Base64 řetězec",
+            "desc": "Vložte svůj kód níže pro vizualizaci obrázku",
+            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
+            "btn_decode": "Dekódovat obrázek"
         },
         "result": {
-            "image_alt": "[Pending Translation] Decoded Image",
-            "success": "[Pending Translation] Image Decoded Successfully",
-            "btn_download": "[Pending Translation] Download Image",
-            "btn_clear": "[Pending Translation] Clear Pattern"
+            "image_alt": "Dekódovaný obrázek",
+            "success": "Obrázek úspěšně dekódován",
+            "btn_download": "Stáhnout obrázek",
+            "btn_clear": "Vymazat vzor"
         },
         "content": {
-            "title": "[Pending Translation] Decode Base64 to Image",
-            "p1": "[Pending Translation] Found a long string of random characters starting with <code>data:image\/...<\/code> and don't know what it is? It's likely a Base64-encoded image.",
-            "p2": "[Pending Translation] Our <strong>Base64 to Image Decoder<\/strong> converts that text string back into a visible image file (PNG, JPG, GIF, etc.) that you can view and download to your computer.",
+            "title": "Dekódování Base64 na obrázek",
+            "p1": "Našli jste dlouhý řetězec náhodných znaků začínající na <code>data:image/...</code> a nevíte, co to je? Pravděpodobně jde o obrázek kódovaný v Base64.",
+            "p2": "Náš <strong>dekodér Base64 na obrázek</strong> převede tento textový řetězec zpět na viditelný obrázkový soubor (PNG, JPG, GIF atd.), který si můžete prohlédnout a stáhnout do svého počítače.",
             "features": {
                 "preview": {
-                    "title": "[Pending Translation] Instant Preview",
-                    "desc": "[Pending Translation] See the image immediately. We parse the binary data and render it on your screen."
+                    "title": "Okamžitý náhled",
+                    "desc": "Obrázek uvidíte okamžitě. Analyzujeme binární data a vykreslíme je na vaší obrazovce."
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detection",
-                    "desc": "[Pending Translation] We automatically detect the file format (PNG, JPEG, GIF) from the header of the Base64 string."
+                    "title": "Automatická detekce",
+                    "desc": "Automaticky detekujeme formát souboru (PNG, JPEG, GIF) z hlavičky Base64 řetězce."
                 },
                 "download": {
-                    "title": "[Pending Translation] Download File",
-                    "desc": "[Pending Translation] Save the decoded result as a real image file to your hard drive with one click."
+                    "title": "Stáhnout soubor",
+                    "desc": "Uložte dekódovaný výsledek jako skutečný obrázkový soubor na svůj pevný disk jedním kliknutím."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Decode?",
+                "title": "Jak dekódovat?",
                 "list": [
-                    "[Pending Translation] Paste your Base64 string into the textarea.",
-                    "[Pending Translation] We instantly attempt to read the string.",
-                    "[Pending Translation] If valid, the image appears on the left.",
-                    "[Pending Translation] Click \"Download Image\" to save it."
+                    "Vložte svůj Base64 řetězec do textového pole.",
+                    "Okamžitě se pokusíme řetězec přečíst.",
+                    "Pokud je platný, obrázek se objeví vlevo.",
+                    "Klikněte na „Stáhnout obrázek“ pro jeho uložení."
                 ]
             },
             "use_cases": {
-                "title": "[Pending Translation] Common Use Cases",
+                "title": "Běžné případy použití",
                 "list": [
-                    "[Pending Translation] Debugging: Checking what image data is being sent in API responses or stored in databases.",
-                    "[Pending Translation] Recovery: Extracting images embedded in CSS files or HTML templates.",
-                    "[Pending Translation] Verification: Ensuring a Base64 string is not corrupted."
+                    "Ladění: Kontrola, jaká obrazová data jsou odesílána v odpovědích API nebo ukládána v databázích.",
+                    "Obnova: Extrahování obrázků vložených v souborech CSS nebo šablonách HTML.",
+                    "Ověření: Zajištění, že Base64 řetězec není poškozen."
                 ]
             }
         },
         "js": {
-            "input_required": "[Pending Translation] Please paste a Base64 string first.",
-            "invalid_error": "[Pending Translation] Invalid Base64 string or unsupported image format."
+            "input_required": "Nejprve prosím vložte Base64 řetězec.",
+            "invalid_error": "Neplatný Base64 řetězec nebo nepodporovaný formát obrázku."
         }
     },
     "heic-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] HEIC to JPG Converter - Convert iPhone Photos Online | Optimizo",
+            "title": "Převodník HEIC na JPG – převod iPhone fotografií online | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format. Free, private, client-side converter.",
-            "h1": "[Pending Translation] HEIC to JPG Converter",
-            "subtitle": "[Pending Translation] Convert High Efficiency Image File (HEIC\/HEIF) photos from iPhone to standard JPG format"
+            "description": "Převeďte fotografie ve formátu High Efficiency Image File (HEIC/HEIF) z iPhonu do standardního formátu JPG. Bezplatný, soukromý převodník na straně klienta.",
+            "h1": "Převodník HEIC na JPG",
+            "subtitle": "Převeďte fotografie HEIC/HEIF z iPhonu do standardního formátu JPG"
         },
         "input": {
-            "title": "[Pending Translation] Upload HEIC File",
-            "desc": "[Pending Translation] Drag & drop your .heic or .heif file here",
-            "drop_title": "[Pending Translation] Drop HEIC file here",
-            "drop_desc": "[Pending Translation] Supports HEIC\/HEIF (Max 20MB)"
+            "title": "Nahrát soubor HEIC",
+            "desc": "Přetáhněte svůj soubor .heic nebo .heif sem",
+            "drop_title": "Přetáhněte soubor HEIC sem",
+            "drop_desc": "Podporuje HEIC/HEIF (max. 20 MB)"
         },
         "loading": {
-            "title": "[Pending Translation] Processing HEIC file...",
-            "desc": "[Pending Translation] Larger files may take a few seconds."
+            "title": "Zpracování souboru HEIC...",
+            "desc": "U větších souborů to může trvat několik sekund."
         },
         "result": {
-            "image_alt": "[Pending Translation] Preview",
-            "converted_to": "[Pending Translation] Converted to:",
-            "btn_download": "[Pending Translation] Download JPG Image"
+            "image_alt": "Náhled",
+            "converted_to": "Převedeno na:",
+            "btn_download": "Stáhnout JPG obrázek"
         },
         "content": {
-            "title": "[Pending Translation] Convert HEIC to JPG Instantly",
-            "p1": "[Pending Translation] Apple's High Efficiency Image Format (HEIC) is great for saving space on your iPhone, but it can be a nightmare to open on Windows, Android, or older software. Our <strong>HEIC to JPG Converter<\/strong> solves this problem instantly.",
-            "p2": "[Pending Translation] We use advanced local processing capabilities to convert your photos without ever uploading them to a cloud server. This is the <strong>safest way<\/strong> to convert personal photos.",
+            "title": "Okamžitý převod HEIC na JPG",
+            "p1": "Formát Apple High Efficiency Image Format (HEIC) je skvělý pro úsporu místa na iPhonu, ale může být noční můrou při otevírání ve Windows, Androidu nebo starším softwaru. Náš <strong>převodník HEIC na JPG</strong> tento problém okamžitě vyřeší.",
+            "p2": "K převodu vašich fotografií používáme pokročilé místní zpracování, aniž bychom je kdy nahrávali na cloudový server. Toto je <strong>nejbezpečnější způsob</strong> převodu osobních fotografií.",
             "features": {
                 "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Your personal photos stay on your device. We use client-side logic for zero-risk conversion."
+                    "title": "100% soukromé",
+                    "desc": "Vaše osobní fotografie zůstávají ve vašem zařízení. Pro převod s nulovým rizikem používáme logiku na straně klienta."
                 },
                 "compatibility": {
-                    "title": "[Pending Translation] Broad Compatibility",
-                    "desc": "[Pending Translation] Convert HEIC and HEIF files from any iOS version (iPhone\/iPad) to universally accepted JPGs."
+                    "title": "Široká kompatibilita",
+                    "desc": "Převádějte soubory HEIC a HEIF z jakékoli verze iOS (iPhone/iPad) na univerzálně přijímané JPG."
                 },
                 "fast": {
-                    "title": "[Pending Translation] Fast & Free",
-                    "desc": "[Pending Translation] No software installation needed. Just drag, drop, and convert in seconds."
+                    "title": "Rychle a zdarma",
+                    "desc": "Není nutná žádná instalace softwaru. Stačí přetáhnout a převést během několika sekund."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert HEIC to JPG?",
+                "title": "Jak převést HEIC na JPG?",
                 "list": [
-                    "[Pending Translation] Drag your .heic or .heif file into the upload zone.",
-                    "[Pending Translation] The tool will automatically read and convert the file using advanced browser libraries.",
-                    "[Pending Translation] See a preview of your converted JPG image immediately.",
-                    "[Pending Translation] Click the \"Download JPG Image\" button to save it to your computer."
+                    "Přetáhněte svůj .heic nebo .heif soubor do zóny nahrávání.",
+                    "Nástroj soubor automaticky načte a převede pomocí pokročilých knihoven v prohlížeči.",
+                    "Okamžitě uvidíte náhled převedeného obrázku JPG.",
+                    "Klikněte na tlačítko „Stáhnout JPG obrázek“ pro jeho uložení do počítače."
                 ]
             },
             "details": {
-                "title": "[Pending Translation] Technical Details",
-                "p1": "[Pending Translation] HEIC (High Efficiency Image Container) uses modern compression methods to keep file sizes small. However, Windows and Android often struggle to open them.",
-                "p2": "[Pending Translation] Our tool decodes the HEIC data and re-encodes it as a standardized JPEG image with 90% quality retention, ensuring your photos look great while being accessible everywhere."
+                "title": "Technické detaily",
+                "p1": "HEIC (High Efficiency Image Container) využívá moderní kompresní metody pro zachování malé velikosti souborů. Windows a Android s nimi však často bojují.",
+                "p2": "Náš nástroj dekóduje data HEIC a znovu je zakóduje jako standardizovaný obrázek JPEG s 90% zachováním kvality, čímž zajistí, že vaše fotografie budou vypadat skvěle a budou dostupné všude."
             },
             "faq": {
-                "title": "[Pending Translation] Common Questions",
-                "q1": "[Pending Translation] Can I convert iPhone Live Photos?",
-                "a1": "[Pending Translation] You can convert the still image part of the Live Photo if you transfer the .HEIC file to your computer first.",
-                "q2": "[Pending Translation] Is quality lost during conversion?",
-                "a2": "[Pending Translation] We use a high-quality setting (0.9 out of 1.0) to ensure minimal visual difference. JPG is a lossy format, but the difference is usually negligible to the human eye."
+                "title": "Časté dotazy",
+                "q1": "Mohu převádět iPhone Live Photos?",
+                "a1": "Pokud přenesete soubor .HEIC do počítače, můžete převést statickou část Live Photo.",
+                "q2": "Dochází při převodu ke ztrátě kvality?",
+                "a2": "Používáme nastavení vysoké kvality (0,9 z 1,0), abychom zajistili minimální vizuální rozdíl. JPG je ztrátový formát, ale rozdíl je pro lidské oko obvykle zanedbatelný."
             }
         },
         "js": {
-            "error": "[Pending Translation] Error converting HEIC file: "
+            "error": "Chyba při převodu souboru HEIC: "
         }
     },
     "ico-converter": {
         "meta": {
-            "title": "[Pending Translation] ICO Converter - Create Favicons Online | Optimizo",
+            "title": "Převodník ICO – vytvářejte ikony webu (Favicon) online | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Free online favicon generator.",
-            "h1": "[Pending Translation] ICO Converter & Favicon Generator",
-            "subtitle": "[Pending Translation] Convert images to ICO format for website favicons with custom sizing"
+            "description": "Převeďte obrázky do formátu ICO pro ikony webových stránek (favicon). Podporuje vlastní nastavení velikosti (32x32, 64x64). Bezplatný online generátor faviconů.",
+            "h1": "Převodník ICO a generátor Favicon",
+            "subtitle": "Převeďte obrázky do formátu ICO pro ikony webových stránek s vlastní velikostí"
         },
         "input": {
-            "title": "[Pending Translation] Upload Image to Convert",
-            "desc": "[Pending Translation] Drag & drop your PNG\/JPG file",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Fast conversion to .ico"
+            "title": "Nahrát obrázek k převodu",
+            "desc": "Přetáhněte svůj soubor PNG/JPG",
+            "drop_title": "Přetáhněte obrázek sem",
+            "drop_desc": "Rychlý převod na .ico"
         },
         "editor": {
-            "original": "[Pending Translation] Original",
-            "image_alt": "[Pending Translation] Preview",
-            "favicon": "[Pending Translation] Favicon",
-            "size_label": "[Pending Translation] Icon Size",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_download": "[Pending Translation] Download Favicon (.ico)"
+            "original": "Originál",
+            "image_alt": "Náhled",
+            "favicon": "Favicon",
+            "size_label": "Velikost ikony",
+            "output_format": "Výstupní formát:",
+            "btn_download": "Stáhnout Favicon (.ico)"
         },
         "content": {
-            "title": "[Pending Translation] Free ICO Converter & Favicon Generator",
-            "p1": "[Pending Translation] Creating a website? You need a favicon - that little icon that appears in browser tabs.",
-            "p2": "[Pending Translation] Our <strong>ICO Converter<\/strong> transforms any PNG or JPG image into a standard Microsoft `.ico` file. We support all common favicon sizes to ensure your brand looks sharp on every device.",
+            "title": "Bezplatný převodník ICO a generátor Favicon",
+            "p1": "Vytváříte webové stránky? Potřebujete favicon – tu malou ikonu, která se objevuje na kartách prohlížeče.",
+            "p2": "Náš <strong>převodník ICO</strong> transformuje jakýkoli obrázek PNG nebo JPG na standardní soubor Microsoft `.ico`. Podporujeme všechny běžné velikosti faviconů, aby vaše značka vypadala ostře na každém zařízení.",
             "features": {
                 "sizes": {
-                    "title": "[Pending Translation] Standard Sizes",
-                    "desc": "[Pending Translation] Choose from 16x16, 32x32, 48x48, 64x64, or 128x128 pixels. Or select all!"
+                    "title": "Standardní velikosti",
+                    "desc": "Vyberte si z 16x16, 32x32, 48x48, 64x64 nebo 128x128 pixelů. Nebo vyberte všechny!"
                 },
                 "resize": {
-                    "title": "[Pending Translation] Auto-Resizing",
-                    "desc": "[Pending Translation] Upload a large logo, and we'll automatically downscale it smoothly to fit the tiny icon format."
+                    "title": "Automatická změna velikosti",
+                    "desc": "Nahrajte velké logo a my jej automaticky a hladce zmenšíme, aby odpovídalo malému formátu ikony."
                 },
                 "multi": {
-                    "title": "[Pending Translation] Multi-Icon Support",
-                    "desc": "[Pending Translation] Modern .ico files can contain multiple sizes in one file. We handle that for you."
+                    "title": "Podpora více ikon",
+                    "desc": "Moderní soubory .ico mohou obsahovat více velikostí v jednom souboru. My to vyřešíme za vás."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Steps to Create Favicon",
+                "title": "Kroky k vytvoření Favicon",
                 "list": [
-                    "[Pending Translation] Use a square image (PNG\/JPG) for best results.",
-                    "[Pending Translation] 16x16 (Browser tabs), 32x32 (Taskbar), 48x48 (Desktop).",
-                    "[Pending Translation] See how it looks instantly.",
-                    "[Pending Translation] Get your `favicon.ico` file."
+                    "Pro nejlepší výsledky použijte čtvercový obrázek (PNG/JPG).",
+                    "16x16 (karty prohlížeče), 32x32 (hlavní panel), 48x48 (plocha).",
+                    "Okamžitě uvidíte, jak výsledek vypadá.",
+                    "Získejte svůj soubor „favicon.ico“."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why .ICO format?",
-                "p1": "[Pending Translation] While modern browsers support PNG favicons, the `.ico` format is still the standard for maximum compatibility across all operating systems and legacy browsers (like Internet Explorer)."
+                "title": "Proč formát .ICO?",
+                "p1": "Zatímco moderní prohlížeče podporují favicony ve formátu PNG, formát `.ico` je stále standardem pro maximální kompatibilitu napříč všemi operačními systémy a staršími prohlížeči (např. Internet Explorer)."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image"
+            "invalid_image": "Nahrajte prosím platný obrázek"
         }
     },
     "image-compressor": {
         "meta": {
-            "title": "[Pending Translation] Free Image Compressor - Reduce Image File Size Online",
-            "description": "[Pending Translation] Compress images online for free. Reduce JPG, PNG, and WebP file sizes while maintaining quality.",
-            "h1": "[Pending Translation] Image Compressor",
-            "subtitle": "[Pending Translation] Reduce image file sizes without losing quality"
+            "title": "Bezplatný kompresor obrázků – zmenšete velikost souborů online | Optimizo",
+            "description": "Komprimujte obrázky online zdarma. Zmenšete velikost souborů JPG, PNG a WebP při zachování kvality.",
+            "h1": "Kompresor obrázků",
+            "subtitle": "Zmenšete velikost obrázků bez ztráty kvality"
         },
         "editor": {
-            "label_upload": "[Pending Translation] Upload Image",
-            "drop_title": "[Pending Translation] Drop your image here or click to browse",
-            "drop_subtitle": "[Pending Translation] Drag and drop your image or click to select from your device",
-            "supports": "[Pending Translation] Supports JPG, PNG, WebP formats",
-            "label_quality": "[Pending Translation] Compression Quality:",
-            "title_original": "[Pending Translation] Original Image",
-            "label_size": "[Pending Translation] Size:",
-            "title_compressed": "[Pending Translation] Compressed Image",
-            "label_saved": "[Pending Translation] Saved:",
-            "btn_download": "[Pending Translation] Download Compressed Image"
+            "label_upload": "Nahrát obrázek",
+            "drop_title": "Přetáhněte obrázek sem nebo klikněte pro výběr",
+            "drop_subtitle": "Přetáhněte svůj obrázek nebo jej vyberte ze svého zařízení",
+            "supports": "Podporuje formáty JPG, PNG, WebP",
+            "label_quality": "Kvalita komprese:",
+            "title_original": "Původní obrázek",
+            "label_size": "Velikost:",
+            "title_compressed": "Komprimovaný obrázek",
+            "label_saved": "Ušetřeno:",
+            "btn_download": "Stáhnout komprimovaný obrázek"
         },
         "content": {
-            "p1": "[Pending Translation] Compress your images online for free with our powerful image compression tool. Reduce JPG, PNG, and WebP file sizes by up to 90% while maintaining excellent visual quality. Perfect for optimizing images for websites, social media, email attachments, and faster page loading times.",
-            "why_title": "[Pending Translation] Why Compress Images?",
+            "p1": "Komprimujte své obrázky online zdarma pomocí našeho výkonného nástroje. Zmenšete velikost souborů JPG, PNG a WebP až o 90 % při zachování vynikající vizuální kvality. Ideální pro optimalizaci obrázků pro webové stránky, sociální sítě, přílohy e-mailů a rychlejší načítání stránek.",
+            "why_title": "Proč komprimovat obrázky?",
             "why_list": [
-                "[Pending Translation] Faster website loading times improve user experience and SEO",
-                "[Pending Translation] Reduce bandwidth usage and hosting costs",
-                "[Pending Translation] Optimize images for mobile devices and slow connections",
-                "[Pending Translation] Meet file size limits for email attachments and uploads",
-                "[Pending Translation] Improve Core Web Vitals and Google PageSpeed scores",
-                "[Pending Translation] Save storage space on your device or server"
+                "Rychlejší načítání stránek zlepšuje uživatelskou zkušenost a SEO",
+                "Snížení využití šířky pásma a nákladů na hosting",
+                "Optimalizace obrázků pro mobilní zařízení a pomalá připojení",
+                "Splnění limitů velikosti souborů pro přílohy e-mailů a nahrávání",
+                "Zlepšení metrik Core Web Vitals a skóre Google PageSpeed",
+                "Úspora úložného prostoru ve vašem zařízení nebo na serveru"
             ],
-            "formats_title": "[Pending Translation] Supported Image Formats",
-            "quality_title": "[Pending Translation] Understanding Compression Quality",
+            "formats_title": "Podporované obrazové formáty",
+            "quality_title": "Jak funguje kvalita komprese",
             "quality_list": [
-                "[Pending Translation] 100% - No compression, original quality (largest file size)",
-                "[Pending Translation] 80-90% - High quality, minimal visible difference (recommended for most uses)",
-                "[Pending Translation] 60-80% - Good quality, noticeable compression at high zoom",
-                "[Pending Translation] 40-60% - Medium quality, visible artifacts but acceptable for web",
-                "[Pending Translation] 10-40% - Low quality, significant quality loss (smallest file size)"
+                "100 % – Žádná komprese, původní kvalita (největší soubor)",
+                "80–90 % – Vysoká kvalita, minimální viditelný rozdíl (doporučeno pro většinu použití)",
+                "60–80 % – Dobrá kvalita, patrná komprese při velkém přiblížení",
+                "40–60 % – Střední kvalita, viditelné artefakty, ale přijatelné pro web",
+                "10–40 % – Nízká kvalita, výrazná ztráta kvality (nejmenší soubor)"
             ],
-            "how_title": "[Pending Translation] How Image Compression Works",
-            "how_desc": "[Pending Translation] Our tool uses advanced compression algorithms to reduce file size while preserving image quality. For JPG images, we use lossy compression that removes imperceptible details. For PNG, we optimize the color palette and use efficient encoding. All compression happens in your browser - your images never leave your device.",
-            "best_title": "[Pending Translation] Best Practices for Image Compression",
+            "how_title": "Jak funguje komprese obrázků",
+            "how_desc": "Náš nástroj využívá pokročilé algoritmy ke snížení velikosti souborů při zachování kvality. U obrázků JPG používáme ztrátovou kompresi, která odstraňuje nepostřehnutelné detaily. U PNG optimalizujeme paletu barev a používáme efektivní kódování. Veškerá komprese probíhá ve vašem prohlížeči – vaše obrázky nikdy neopouštějí vaše zařízení.",
+            "best_title": "Osvědčené postupy pro kompresi obrázků",
             "best_list": [
-                "[Pending Translation] Start with high-quality original images for best results",
-                "[Pending Translation] Use 80-90% quality for web images - perfect balance of size and quality",
-                "[Pending Translation] Compress images before uploading to websites or social media",
-                "[Pending Translation] Use JPG for photos, PNG for graphics with transparency",
-                "[Pending Translation] Consider WebP format for modern browsers (smaller files)",
-                "[Pending Translation] Always preview compressed images before downloading",
-                "[Pending Translation] Keep original files as backup before compression"
+                "Pro nejlepší výsledky začněte s vysoce kvalitními originály",
+                "Pro webové obrázky používejte 80–90% kvalitu – ideální rovnováha mezi velikostí a kvalitou",
+                "Komprimujte obrázky před nahráním na web nebo sociální sítě",
+                "Pro fotografie použijte JPG, pro grafiku s průhledností PNG",
+                "Pro moderní prohlížeče zvažte formát WebP (menší soubory)",
+                "Před stažením si komprimované obrázky vždy prohlédněte",
+                "Před kompresí si ponechte originály jako zálohu"
             ],
-            "privacy_title": "[Pending Translation] 100% Private & Secure",
-            "privacy_desc": "[Pending Translation] All image compression happens entirely in your browser using JavaScript. Your images are never uploaded to our servers, ensuring complete privacy and security. Your files never leave your device.",
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "privacy_title": "100% soukromé a bezpečné",
+            "privacy_desc": "Veškerá komprese obrázků probíhá výhradně ve vašem prohlížeči pomocí JavaScriptu. Vaše obrázky se nikdy nenahrávají na naše servery, což zajišťuje naprosté soukromí a bezpečnost. Vaše soubory nikdy neopustí vaše zařízení.",
+            "faq_title": "Často kladené otázky",
             "formats": {
                 "jpg": {
-                    "title": "[Pending Translation] JPG\/JPEG",
-                    "desc": "[Pending Translation] Best for photographs and complex images with many colors. Lossy compression."
+                    "title": "JPG/JPEG",
+                    "desc": "Nejlepší pro fotografie a složité obrázky s mnoha barvami. Ztrátová komprese."
                 },
                 "png": {
-                    "title": "[Pending Translation] PNG",
-                    "desc": "[Pending Translation] Best for graphics, logos, and images with transparency. Lossless or lossy compression."
+                    "title": "PNG",
+                    "desc": "Nejlepší pro grafiku, loga a obrázky s průhledností. Bezztrátová nebo ztrátová komprese."
                 },
                 "webp": {
-                    "title": "[Pending Translation] WebP",
-                    "desc": "[Pending Translation] Modern format with superior compression. Smaller files than JPG\/PNG with same quality."
+                    "title": "WebP",
+                    "desc": "Moderní formát s vynikající kompresí. Menší soubory než JPG/PNG při stejné kvalitě."
                 }
             },
             "faq": {
-                "q1": "[Pending Translation] Will compressing images reduce quality?",
-                "a1": "[Pending Translation] Yes, but minimally. At 80-90% quality, the difference is imperceptible to the human eye. You can adjust the quality slider to find the perfect balance between file size and visual quality.",
-                "q2": "[Pending Translation] What's the difference between lossy and lossless compression?",
-                "a2": "[Pending Translation] Lossy compression (JPG) removes some image data to achieve smaller files, while lossless compression (PNG) reduces file size without losing any data. Lossy gives better compression but slight quality loss.",
-                "q3": "[Pending Translation] How much can I reduce image file size?",
-                "a3": "[Pending Translation] Typically 50-90% reduction depending on the original image and quality settings. Photos often compress more than graphics. WebP format provides the best compression.",
-                "q4": "[Pending Translation] Are my images uploaded to your server?",
-                "a4": "[Pending Translation] No! All compression happens in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.",
-                "q5": "[Pending Translation] What image formats are supported?",
-                "a5": "[Pending Translation] We support JPG\/JPEG, PNG, and WebP formats. These cover 99% of web images. The tool automatically detects the format and applies optimal compression."
+                "q1": "Sníží komprese kvalitu obrázků?",
+                "a1": "Ano, ale minimálně. Při 80–90% kvalitě je rozdíl pro lidské oko nepostřehnutelný. Posuvníkem kvality můžete najít dokonalou rovnováhu mezi velikostí souboru a vizuální kvalitou.",
+                "q2": "Jaký je rozdíl mezi ztrátovou a bezztrátovou kompresí?",
+                "a2": "Ztrátová komprese (JPG) odstraňuje některá obrazová data pro dosažení menších souborů, zatímco bezztrátová komprese (PNG) zmenšuje velikost souboru bez ztráty jakýchkoli dat. Ztrátová poskytuje lepší kompresi, ale mírnou ztrátu kvality.",
+                "q3": "O kolik mohu zmenšit velikost obrázku?",
+                "a3": "Obvykle o 50–90 % v závislosti na původním obrázku a nastavení kvality. Fotografie se často komprimují více než grafika. Nejlepší kompresi poskytuje formát WebP.",
+                "q4": "Nahrávají se moje obrázky na váš server?",
+                "a4": "Ne! Veškerá komprese probíhá ve vašem prohlížeči pomocí JavaScriptu. Vaše obrázky nikdy neopouštějí vaše zařízení, což zajišťuje naprosté soukromí.",
+                "q5": "Jaké formáty obrázků jsou podporovány?",
+                "a5": "Podporujeme formáty JPG/JPEG, PNG a WebP. Ty pokrývají 99 % webových obrázků. Nástroj automaticky detekuje formát a použije optimální kompresi."
             }
         }
     },
     "image-converter": {
         "meta": {
-            "title": "[Pending Translation] Image Converter - Convert Images Online Free | Optimizo",
+            "title": "Převodník obrázků – převod obrázků online zdarma | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free. Secure, client-side conversion requiring no uploads.",
-            "h1": "[Pending Translation] Image Converter",
-            "subtitle": "[Pending Translation] Convert images between multiple formats (PNG, JPG, WEBP) easily and for free"
+            "description": "Snadno a zdarma převádějte obrázky mezi různými formáty (PNG, JPG, WEBP). Bezpečný převod na straně klienta nevyžadující nahrávání souborů.",
+            "h1": "Převodník obrázků",
+            "subtitle": "Snadno a zdarma převádějte obrázky mezi formáty PNG, JPG a WEBP"
         },
         "input": {
-            "title": "[Pending Translation] Upload Your Image",
-            "desc": "[Pending Translation] Drag & drop or click to select an image",
-            "drop_title": "[Pending Translation] Drop your image here",
-            "drop_desc": "[Pending Translation] Supports PNG, JPG, WEBP (Max 10MB)"
+            "title": "Nahrajte svůj obrázek",
+            "desc": "Přetáhněte nebo klikněte pro výběr obrázku",
+            "drop_title": "Přetáhněte obrázek sem",
+            "drop_desc": "Podporuje PNG, JPG, WEBP (max. 10 MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "target_format": "[Pending Translation] Target Format",
-            "quality": "[Pending Translation] Quality (JPG\/WEBP)",
-            "btn_convert": "[Pending Translation] Convert & Download"
+            "image_alt": "Náhled",
+            "target_format": "Cílový formát",
+            "quality": "Kvalita (JPG/WEBP)",
+            "btn_convert": "Převést a stáhnout"
         },
         "content": {
-            "title": "[Pending Translation] The Ultimate Free Online Image Converter",
-            "p1": "[Pending Translation] In today's digital landscape, working with images requires versatility. Whether you're a web developer needing WEBP for performance, a designer needing PNG for transparency, or a photographer needing universal JPG compatibility, our <strong>Image Converter<\/strong> is the all-in-one solution.",
-            "p2": "[Pending Translation] Forget about installing heavy software or uploading your private photos to unknown servers. Our tool runs entirely in your browser, ensuring <strong>100% privacy and lightning-fast speeds<\/strong>.",
+            "title": "Špičkový bezplatný online převodník obrázků",
+            "p1": "V dnešním digitálním světě je univerzálnost obrázků klíčová. Ať už jste vývojář potřebující WEBP pro výkon, designér vyžadující PNG pro průhlednost nebo fotograf hledající univerzální kompatibilitu JPG, náš <strong>převodník obrázků</strong> je řešením „vše v jednom“.",
+            "p2": "Zapomeňte na instalaci těžkopádného softwaru nebo nahrávání vašich soukromých fotografií na neznámé servery. Náš nástroj běží zcela ve vašem prohlížeči, což zajišťuje <strong>100% soukromí a bleskovou rychlost</strong>.",
             "features": {
                 "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Your files never leave your device. All processing happens locally in your browser."
+                    "title": "Bezpečné a soukromé",
+                    "desc": "Vaše soubory nikdy neopustí vaše zařízení. Veškeré zpracování probíhá lokálně ve vašem prohlížeči."
                 },
                 "instant": {
-                    "title": "[Pending Translation] Instant Conversion",
-                    "desc": "[Pending Translation] No queuing or waiting. Powered by modern WebAssembly technology for speed."
+                    "title": "Okamžitý převod",
+                    "desc": "Žádné čekání ve frontách. Poháněno moderní technologií WebAssembly pro maximální rychlost."
                 },
                 "bulk": {
-                    "title": "[Pending Translation] Bulk Processing",
-                    "desc": "[Pending Translation] Convert unlimited images one by one without any usage restrictions or costs."
+                    "title": "Hromadné zpracování",
+                    "desc": "Převádějte neomezené množství obrázků postupně bez jakéhokoli omezení nebo poplatků."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert Images?",
+                "title": "Jak převádět obrázky?",
                 "list": [
-                    "[Pending Translation] Drag your image file into the blue box or click to select from your device.",
-                    "[Pending Translation] Select your desired output format (PNG, JPG, or WEBP) from the dropdown.",
-                    "[Pending Translation] If choosing JPG or WEBP, use the slider to balance file size and quality.",
-                    "[Pending Translation] Click the \"Convert & Download\" button to save your formatted image instantly."
+                    "Přetáhněte soubor obrázku do modrého pole nebo jej vyberte ze svého zařízení.",
+                    "Z rozbalovací nabídky vyberte požadovaný výstupní formát (PNG, JPG nebo WEBP).",
+                    "Pokud zvolíte JPG nebo WEBP, použijte posuvník k vyvážení velikosti a kvality.",
+                    "Klikněte na tlačítko „Převést a stáhnout“ pro okamžité uložení zformátovaného obrázku."
                 ]
             },
             "features_list": {
-                "title": "[Pending Translation] Key Features",
+                "title": "Klíčové funkce",
                 "list": [
-                    "[Pending Translation] Cross-Format Support: Effortlessly switch between PNG, JPG, and WEBP.",
-                    "[Pending Translation] Transparency Control: PNG conversions preserve transparency, while JPG fills it with a white background.",
-                    "[Pending Translation] Responsive: Works perfectly on Desktops, Tablets, and Mobile phones.",
-                    "[Pending Translation] No Limits: No file size limits and no daily conversion caps."
+                    "Podpora více formátů: Snadno přepínejte mezi PNG, JPG a WEBP.",
+                    "Kontrola průhlednosti: Převody do PNG zachovávají průhlednost, zatímco JPG ji vyplní bílým pozadím.",
+                    "Responzivní: Funguje perfektně na počítačích, tabletech i mobilních telefonech.",
+                    "Bez limitů: Žádné limity velikosti souborů a žádné denní limity počtu převodů."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is this tool free?",
-                "a1": "[Pending Translation] Yes, absolutely. We don't charge anything, and there are no hidden premium features.",
-                "q2": "[Pending Translation] Does it support transparency?",
-                "a2": "[Pending Translation] Yes! If you convert to PNG or WEBP, transparency is preserved. For JPG, transparent areas become white.",
-                "q3": "[Pending Translation] Are my images uploaded?",
-                "a3": "[Pending Translation] No. All conversion logic runs in your own browser using JavaScript and Canvas APIs. We count privacy as our top feature.",
-                "q4": "[Pending Translation] What is the best format?",
-                "a4": "[Pending Translation] Use <strong>JPG<\/strong> for photos, <strong>PNG<\/strong> for graphics with sharp edges\/transparency, and <strong>WEBP<\/strong> for web performance."
+                "title": "Často kladené otázky",
+                "q1": "Je tento nástroj zdarma?",
+                "a1": "Ano, naprosto. Nic neúčtujeme a neexistují žádné skryté prémiové funkce.",
+                "q2": "Podporuje průhlednost?",
+                "a2": "Ano! Pokud převádíte do PNG nebo WEBP, průhlednost zůstane zachována. U JPG se průhledné oblasti stanou bílými.",
+                "q3": "Nahrávají se moje obrázky jinam?",
+                "a3": "Ne. Veškerá logika převodu běží ve vašem vlastním prohlížeči pomocí rozhraní JavaScript a Canvas API. Soukromí je naší prioritou.",
+                "q4": "Jaký formát je nejlepší?",
+                "a4": "Používejte <strong>JPG</strong> pro fotografie, <strong>PNG</strong> pro grafiku s ostrými hranami/průhledností a <strong>WEBP</strong> pro výkon na webu."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid image file"
+            "invalid_image": "Nahrajte prosím platný soubor obrázku"
         }
     },
     "image-to-base64-converter": {
         "meta": {
-            "title": "[Pending Translation] Image to Base64 Converter - Convert Image to String | Optimizo",
+            "title": "Převodník obrázků na Base64 – převod obrázku na řetězec | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS. Free online tool supporting PNG, JPG, GIF.",
-            "h1": "[Pending Translation] Convert Image to Base64 String",
-            "subtitle": "[Pending Translation] Convert images to Base64 encoded strings for embedding in HTML or CSS"
+            "description": "Převeďte obrázky na řetězce kódované v Base64 pro vložení do HTML nebo CSS. Bezplatný online nástroj s podporou PNG, JPG, GIF.",
+            "h1": "Převod obrázku na Base64 řetězec",
+            "subtitle": "Převeďte obrázky na řetězce kódované v Base64 pro vložení do HTML nebo CSS"
         },
         "input": {
-            "title": "[Pending Translation] Upload Image",
-            "desc": "[Pending Translation] Drag & drop your image file here",
-            "drop_title": "[Pending Translation] Drop image file here",
-            "drop_desc": "[Pending Translation] Supports All Image Formats"
+            "title": "Nahrát obrázek",
+            "desc": "Přetáhněte svůj soubor obrázku sem",
+            "drop_title": "Přetáhněte obrázek sem",
+            "drop_desc": "Podporuje všechny formáty obrázků"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "label_string": "[Pending Translation] Base64 String",
-            "btn_copy": "[Pending Translation] Copy to Clipboard",
-            "char_count": "[Pending Translation] Character Count",
-            "mime_type": "[Pending Translation] MIME Type"
+            "image_alt": "Náhled",
+            "label_string": "Base64 řetězec",
+            "btn_copy": "Kopírovat do schránky",
+            "char_count": "Počet znaků",
+            "mime_type": "Typ MIME"
         },
         "content": {
-            "title": "[Pending Translation] Convert Image to Base64 String",
-            "p1": "[Pending Translation] Developers and web designers often need to embed images directly into HTML or CSS files to reduce HTTP requests.",
-            "p2": "[Pending Translation] Our <strong>Image to Base64 Converter<\/strong> encodes your image file into a long string of characters that represents the binary data. You can paste this string straight into your code.",
+            "title": "Převod obrázku na Base64 řetězec",
+            "p1": "Vývojáři a weboví designéři často potřebují vložit obrázky přímo do souborů HTML nebo CSS, aby snížili počet požadavků HTTP.",
+            "p2": "Náš <strong>převodník obrázků na Base64</strong> zakóduje váš soubor obrázku do dlouhého řetězce znaků, který reprezentuje binární data. Tento řetězec můžete vložit přímo do svého kódu.",
             "features": {
                 "clipboard": {
-                    "title": "[Pending Translation] Clipboard Ready",
-                    "desc": "[Pending Translation] One-click copy. We format the output for HTML (`&lt;img src=\"...\"&gt;`) or CSS (`background: url(...)`)."
+                    "title": "Připraveno ke zkopírování",
+                    "desc": "Kopírování jedním kliknutím. Výstup formátujeme pro HTML (`&lt;img src=\"...\"&gt;`) nebo CSS (`background: url(...)`)."
                 },
                 "requests": {
-                    "title": "[Pending Translation] Reduce Requests",
-                    "desc": "[Pending Translation] Embedding small icons and logos as Base64 eliminates the network overhead of fetching external image files."
+                    "title": "Snížení počtu požadavků",
+                    "desc": "Vkládání malých ikon a log jako Base64 eliminuje režii sítě spojenou s načítáním externích obrázkových souborů."
                 },
                 "formats": {
-                    "title": "[Pending Translation] Any Format",
-                    "desc": "[Pending Translation] Works with PNG, JPG, GIF, WEBP, SVG, and even ICO files."
+                    "title": "Jakýkoli formát",
+                    "desc": "Funguje se soubory PNG, JPG, GIF, WEBP, SVG a dokonce i ICO."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to use?",
+                "title": "Jak na to?",
                 "list": [
-                    "[Pending Translation] Select your image file.",
-                    "[Pending Translation] The tool immediately converts the file to a Data URI.",
-                    "[Pending Translation] Click \"Copy to Clipboard\" to grab the code.",
-                    "[Pending Translation] Insert it into your `src` attribute or CSS file."
+                    "Vyberte soubor obrázku.",
+                    "Nástroj soubor okamžitě převede na Data URI.",
+                    "Klikněte na „Kopírovat do schránky“ pro získání kódu.",
+                    "Vložte jej do atributu `src` nebo souboru CSS."
                 ]
             },
             "use_cases": {
-                "title": "[Pending Translation] When to use Base64?",
+                "title": "Kdy použít Base64?",
                 "list": [
-                    "[Pending Translation] Small Images: Best for icons, spinners, and small logos (under 10KB).",
-                    "[Pending Translation] Single-File Apps: When you need to bundle everything into one HTML file (e.g., email templates).",
-                    "[Pending Translation] Offline Access: Ensures images load even without a network connection if the HTML is saved locally."
+                    "Malé obrázky: Nejlepší pro ikony, „spinner“ indikátory a malá loga (pod 10 KB).",
+                    "Jednosouborové aplikace: Když potřebujete vše zabalit do jednoho dokumentu HTML (např. e-mailové šablony).",
+                    "Přístup offline: Zajišťuje načtení obrázků i bez připojení k síti, pokud je HTML uložen lokálně."
                 ]
             }
         },
         "js": {
-            "copied": "[Pending Translation] Copied!"
+            "copied": "Zkopírováno!"
         }
     },
     "jpg-to-png-converter": {
         "meta": {
-            "title": "[Pending Translation] JPG to PNG Converter - Convert JPG Images to PNG Free | Optimizo",
+            "title": "Převodník JPG na PNG – převod JPG obrázků na PNG zdarma | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert JPG images to PNG format instantly. 100% free, secure client-side conversion, no file size limits.",
-            "h1": "[Pending Translation] JPG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to PNG format instantly with 100% free conversion"
+            "description": "Okamžitě převádějte obrázky JPG do formátu PNG. 100% zdarma, bezpečný převod na straně klienta, žádné limity velikosti souborů.",
+            "h1": "Převodník JPG na PNG",
+            "subtitle": "Okamžitě převádějte obrázky JPG do formátu PNG se 100% bezplatným převodem"
         },
         "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG\/JPEG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
+            "title": "Nahrát JPG obrázek",
+            "desc": "Přetáhněte svůj soubor JPG/JPEG sem",
+            "drop_title": "Přetáhněte JPG soubor sem",
+            "drop_desc": "Podporuje JPG, JPEG (max. 10 MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] PNG",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
+            "image_alt": "Náhled",
+            "output_format": "Výstupní formát:",
+            "format_short": "PNG",
+            "btn_convert": "Převést na PNG a stáhnout"
         },
         "content": {
-            "title": "[Pending Translation] Convert JPG to PNG Instantly",
-            "p1": "[Pending Translation] JPG is the world's most popular image format, but it often lacks the versatility needed for modern web design. By converting to PNG, you gain access to lossless compression and transparency support.",
-            "p2": "[Pending Translation] Our <strong>JPG to PNG Converter<\/strong> is designed for speed and privacy, handling everything directly in your browser without uploading your sensitive photos to any server.",
+            "title": "Okamžitý převod JPG na PNG",
+            "p1": "JPG je celosvětově nejoblíbenější formát obrázků, ale často mu chybí univerzálnost potřebná pro moderní webový design. Převodem do PNG získáte přístup k bezztrátové kompresi a podpoře průhlednosti.",
+            "p2": "Náš <strong>převodník JPG na PNG</strong> je navržen pro rychlost a soukromí; vše vyřizuje přímo ve vašem prohlížeči, aniž by vaše citlivé fotografie nahrával na jakýkoli server.",
             "features": {
                 "lossless": {
-                    "title": "[Pending Translation] Lossless Quality",
-                    "desc": "[Pending Translation] Stop image degradation. PNG uses lossless compression to keep every pixel perfect during edits."
+                    "title": "Bezztrátová kvalita",
+                    "desc": "Zamezte degradaci obrázků. PNG používá bezztrátovou kompresi k zachování dokonalosti každého pixelu při úpravách."
                 },
                 "private": {
-                    "title": "[Pending Translation] 100% Private",
-                    "desc": "[Pending Translation] Files are processed locally on your device. We never see, store, or upload your images."
+                    "title": "100% soukromé",
+                    "desc": "Soubory jsou zpracovávány lokálně ve vašem zařízení. Vaše obrázky nikdy nevidíme, neukládáme ani nenahráváme."
                 },
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Ready",
-                    "desc": "[Pending Translation] Convert to the preferred format for logos, icons, and graphics that require transparent backgrounds."
+                    "title": "Podpora průhlednosti",
+                    "desc": "Převeďte do preferovaného formátu pro loga, ikony a grafiku vyžadující průhledné pozadí."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to PNG",
+                "title": "Jak převést JPG na PNG",
                 "list": [
-                    "[Pending Translation] Drag and drop your JPG file into the designated area.",
-                    "[Pending Translation] The tool immediately reads the file ready for conversion.",
-                    "[Pending Translation] See exactly how your image looks before saving.",
-                    "[Pending Translation] Click \"Convert & Download\" to save your new PNG instantly."
+                    "Přetáhněte svůj soubor JPG do vyhrazené oblasti.",
+                    "Nástroj soubor okamžitě načte a připraví k převodu.",
+                    "Před uložením uvidíte, jak přesně váš obrázek vypadá.",
+                    "Klikněte na „Převést a stáhnout“ pro okamžité uložení nového PNG."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Is the quality better?",
-                "a1": "[Pending Translation] Converting to PNG stops <em>future<\/em> quality loss. It's best for images you plan to edit further or need to keep sharp.",
-                "q2": "[Pending Translation] Are there file limits?",
-                "a2": "[Pending Translation] Since we process files in your browser, the limit is determined by your device's memory, usually allowing files up to 50MB easily."
+                "title": "Často kladené otázky",
+                "q1": "Bude kvalita lepší?",
+                "a1": "Převod do PNG zastaví <em>budoucí</em> ztrátu kvality. Je to nejlepší pro obrázky, které plánujete dále upravovat nebo potřebujete udržet ostré.",
+                "q2": "Existují limity pro soubory?",
+                "a2": "Vzhledem k tomu, že soubory zpracováváme ve vašem prohlížeči, je limit dán pamětí vašeho zařízení; soubory do 50 MB obvykle projdou bez problémů."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
+            "invalid_image": "Nahrajte prosím platný JPG obrázek",
+            "converted_name": "prevedeny-obrazek"
         }
     },
     "jpg-to-webp-converter": {
         "meta": {
-            "title": "[Pending Translation] JPG to WEBP Converter - Convert Images to WebP | Optimizo",
+            "title": "Převodník JPG na WEBP – převod obrázků na WebP | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression and web performance. Free online tool.",
-            "h1": "[Pending Translation] JPG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert JPG images to the modern WebP format for superior compression"
+            "description": "Převádějte obrázky JPG do moderního formátu WebP pro vynikající kompresi a výkon na webu. Bezplatný online nástroj.",
+            "h1": "Převodník JPG na WebP",
+            "subtitle": "Převádějte obrázky JPG do moderního formátu WebP pro vynikající kompresi"
         },
         "input": {
-            "title": "[Pending Translation] Upload JPG Image",
-            "desc": "[Pending Translation] Drag & drop your JPG file here",
-            "drop_title": "[Pending Translation] Drop JPG file here",
-            "drop_desc": "[Pending Translation] Supports JPG, JPEG (Max 10MB)"
+            "title": "Nahrát JPG obrázek",
+            "desc": "Přetáhněte svůj soubor JPG sem",
+            "drop_title": "Přetáhněte JPG soubor sem",
+            "drop_desc": "Podporuje JPG, JPEG (max. 10 MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "format_short": "[Pending Translation] WEBP",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
+            "image_alt": "Náhled",
+            "output_format": "Výstupní formát:",
+            "format_short": "WEBP",
+            "quality": "Kvalita komprese",
+            "btn_convert": "Převést na WEBP a stáhnout"
         },
         "content": {
-            "title": "[Pending Translation] Convert JPG to WebP for Better Performance",
-            "p1": "[Pending Translation] WebP is a modern image format that provides superior lossless and lossy compression for images on the web. By converting JPG to WebP, developers and webmasters can create smaller, richer images that make the web faster.",
-            "p2": "[Pending Translation] Our <strong>JPG to WebP Converter<\/strong> helps you optimize your images instantly in the browser, reducing file size by up to 30% compared to JPEG without standard quality loss.",
+            "title": "Převod JPG na WebP pro lepší výkon",
+            "p1": "WebP je moderní formát obrázků, který poskytuje vynikající bezztrátovou i ztrátovou kompresi. Převodem JPG na WebP mohou vývojáři a webmasteři vytvářet menší a bohatší obrázky, které zrychlují web.",
+            "p2": "Náš <strong>převodník JPG na WebP</strong> vám pomůže optimalizovat vaše obrázky okamžitě v prohlížeči a snížit velikost souborů až o 30 % oproti JPEG bez standardní ztráty kvality.",
             "features": {
                 "faster": {
-                    "title": "[Pending Translation] Faster Loading",
-                    "desc": "[Pending Translation] WebP images are significantly smaller than JPGs, helping your website load faster and improving SEO scores."
+                    "title": "Rychlejší načítání",
+                    "desc": "Obrázky WebP jsou výrazně menší než JPG, což pomáhá vašemu webu načítat se rychleji a zlepšuje SEO skóre."
                 },
                 "quality": {
-                    "title": "[Pending Translation] High Quality",
-                    "desc": "[Pending Translation] Maintain visual fidelity while reducing file weight. Perfect for photographs and complex web graphics."
+                    "title": "Vysoká kvalita",
+                    "desc": "Zachovejte vizuální věrnost při současném snížení hmotnosti souboru. Ideální pro fotografie i složitou webovou grafiku."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] All conversions happen locally. Your sensitive images never leave your computer."
+                    "title": "Bezpečné zpracování",
+                    "desc": "Veškeré převody probíhají lokálně. Vaše citlivé obrázky nikdy neopustí váš počítač."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert JPG to WebP",
+                "title": "Jak převést JPG na WebP",
                 "list": [
-                    "[Pending Translation] Select or drag & drop your JPG image.",
-                    "[Pending Translation] Use the quality slider to balance size vs quality.",
-                    "[Pending Translation] See the result in real-time.",
-                    "[Pending Translation] Save your optimized WebP image."
+                    "Vyberte nebo přetáhněte svůj obrázek JPG.",
+                    "Pomocí posuvníku kvality vyvažte velikost a kvalitu.",
+                    "Sledujte výsledek v reálném čase.",
+                    "Uložte svůj optimalizovaný obrázek WebP."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] Frequently Asked Questions",
-                "q1": "[Pending Translation] Do all browsers support WebP?",
-                "a1": "[Pending Translation] Yes, all modern browsers (Chrome, Firefox, Safari, Edge) fully support WebP images.",
-                "q2": "[Pending Translation] Is WebP better for SEO?",
-                "a2": "[Pending Translation] Absolutely. Google prefers WebP because it loads faster, improving your Core Web Vitals score."
+                "title": "Často kladené otázky",
+                "q1": "Podporují všechny prohlížeče WebP?",
+                "a1": "Ano, všechny moderní prohlížeče (Chrome, Firefox, Safari, Edge) formát WebP plně podporují.",
+                "q2": "Je WebP lepší pro SEO?",
+                "a2": "Rozhodně. Google upřednostňuje WebP, protože se načítá rychleji, což zlepšuje skóre Core Web Vitals."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid JPG image",
-            "converted_name": "[Pending Translation] converted-image"
+            "invalid_image": "Nahrajte prosím platný JPG obrázek",
+            "converted_name": "prevedeny-obrazek"
         }
     },
     "png-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] PNG to JPG Converter - Convert PNG to JPG Online | Optimizo",
+            "title": "Převodník PNG na JPG – převod PNG na JPG online | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes. Free online converter.",
-            "h1": "[Pending Translation] PNG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to JPG format for smaller file sizes instantly"
+            "description": "Převádějte obrázky PNG do formátu JPG pro menší velikost souborů. Bezplatný online převodník.",
+            "h1": "Převodník PNG na JPG",
+            "subtitle": "Okamžitě převádějte obrázky PNG do formátu JPG pro menší velikost souborů"
         },
         "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
+            "title": "Nahrát PNG obrázek",
+            "desc": "Přetáhněte svůj soubor PNG sem",
+            "drop_title": "Přetáhněte PNG soubor sem",
+            "drop_desc": "Podporuje PNG (max. 10 MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be converted to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Náhled",
+            "note": "Poznámka:",
+            "note_text": "Průhledné pozadí bude převedeno na bílé.",
+            "output_format": "Výstupní formát:",
+            "btn_convert": "Převést na JPG a stáhnout"
         },
         "content": {
-            "title": "[Pending Translation] Compress PNG to JPG Instantly",
-            "p1": "[Pending Translation] PNG files are great for quality, but they can be massive. If you're uploading photos to a website or sending them via email, JPG is often the better choice.",
-            "p2": "[Pending Translation] Our <strong>PNG to JPG Converter<\/strong> drastically reduces file size by using JPEG compression. We automatically handle transparent backgrounds by filling them with white, ensuring your images look perfect.",
+            "title": "Komprimujte PNG na JPG okamžitě",
+            "p1": "Soubory PNG jsou skvělé pro kvalitu, ale mohou být obrovské. Pokud nahráváte fotky na web nebo je posíláte e-mailem, JPG je často lepší volbou.",
+            "p2": "Náš <strong>převodník PNG na JPG</strong> drasticky snižuje velikost souborů pomocí komprese JPEG. Automaticky zpracováváme průhledná pozadí tak, že je vyplníme bílou barvou, čímž zajistíme, že vaše obrázky budou vypadat skvěle.",
             "features": {
                 "size": {
-                    "title": "[Pending Translation] Drastic Size Reduction",
-                    "desc": "[Pending Translation] Reduce file sizes by up to 80% with minimal loss in visual quality."
+                    "title": "Drastické snížení velikosti",
+                    "desc": "Snižte velikost souborů až o 80 % s minimální ztrátou vizuální kvality."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure & Private",
-                    "desc": "[Pending Translation] Local browser processing means your photos are never uploaded to the cloud."
+                    "title": "Bezpečné a soukromé",
+                    "desc": "Zpracování v lokálním prohlížeči znamená, že vaše fotky se nikdy nenahrávají na cloud."
                 },
                 "smart": {
-                    "title": "[Pending Translation] Smart Conversion",
-                    "desc": "[Pending Translation] Intelligent background handling converts transparency to a clean white matte."
+                    "title": "Chytrý převod",
+                    "desc": "Inteligentní zpracování pozadí převede průhlednost na čistě bílou plochu."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Steps to Convert",
+                "title": "Kroky k převodu",
                 "list": [
-                    "[Pending Translation] Select a PNG image from your device.",
-                    "[Pending Translation] The tool instantly processes the image.",
-                    "[Pending Translation] Check the preview (transparent areas will now be white).",
-                    "[Pending Translation] Download your optimized JPG file."
+                    "Vyberte obrázek PNG ze svého zařízení.",
+                    "Nástroj obrázek okamžitě zpracuje.",
+                    "Zkontrolujte náhled (průhledné oblasti budou nyní bílé).",
+                    "Stáhněte si svůj optimalizovaný soubor JPG."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] When to use JPG?",
+                "title": "Kdy použít JPG?",
                 "list": [
-                    "[Pending Translation] Photographs: JPG is designed for complex, real-world images.",
-                    "[Pending Translation] Web Uploads: Many forms only accept .jpg or .jpeg.",
-                    "[Pending Translation] Saving Space: If you have thousands of images, JPG saves GBs of storage."
+                    "Fotografie: JPG je navržen pro složité, reálné snímky.",
+                    "Nahrávání na web: Mnoho formulářů přijímá pouze formáty .jpg nebo .jpeg.",
+                    "Úspora místa: Pokud máte tisíce obrázků, JPG ušetří gigabajty úložného prostoru."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
+            "invalid_image": "Nahrajte prosím platný PNG obrázek"
         }
     },
     "png-to-webp-converter": {
         "meta": {
-            "title": "[Pending Translation] PNG to WEBP Converter - Compress PNG to WebP | Optimizo",
+            "title": "Převodník PNG na WEBP – komprese PNG do WebP | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.",
-            "h1": "[Pending Translation] PNG to WebP Converter",
-            "subtitle": "[Pending Translation] Convert PNG images to WebP to reduce file size while maintaining transparency"
+            "description": "Převeďte obrázky PNG do WebP pro zmenšení velikosti souborů při zachování průhlednosti. Zvyšte rychlost načítání svého webu.",
+            "h1": "Převodník PNG na WebP",
+            "subtitle": "Převeďte obrázky PNG do WebP pro zmenšení velikosti souborů při zachování průhlednosti"
         },
         "input": {
-            "title": "[Pending Translation] Upload PNG Image",
-            "desc": "[Pending Translation] Drag & drop your PNG file here",
-            "drop_title": "[Pending Translation] Drop PNG file here",
-            "drop_desc": "[Pending Translation] Supports PNG (Max 10MB)"
+            "title": "Nahrát PNG obrázek",
+            "desc": "Přetáhněte svůj soubor PNG sem",
+            "drop_title": "Přetáhněte PNG soubor sem",
+            "drop_desc": "Podporuje PNG (max. 10 MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "output_format": "[Pending Translation] Output Format:",
-            "quality": "[Pending Translation] Compression Quality",
-            "btn_convert": "[Pending Translation] Convert to WEBP & Download"
+            "image_alt": "Náhled",
+            "output_format": "Výstupní formát:",
+            "quality": "Kvalita komprese",
+            "btn_convert": "Převést na WEBP a stáhnout"
         },
         "content": {
-            "title": "[Pending Translation] Optimize Images with PNG to WebP",
-            "p1": "[Pending Translation] Want faster website load times? Converting your PNGs to WebP is the #1 recommendation from Google PageSpeed Insights.",
-            "p2": "[Pending Translation] Our tool compresses your PNG images into the modern WebP format, reducing file size by up to <strong>30-50%<\/strong> while keeping the background transparent and the quality sharp.",
+            "title": "Optimalizujte obrázky pomocí převodu PNG na WebP",
+            "p1": "Chcete rychlejší načítání webu? Převod vašich PNG na WebP je doporučením č. 1 od Google PageSpeed Insights.",
+            "p2": "Náš nástroj komprimuje vaše obrázky PNG do moderního formátu WebP a snižuje velikost souborů o <strong>30–50 %</strong>, přičemž zachovává průhledné pozadí a ostrou kvalitu.",
             "features": {
                 "smaller": {
-                    "title": "[Pending Translation] Significantly Smaller",
-                    "desc": "[Pending Translation] WebP offers superior compression. Save bandwidth and storage space instantly."
+                    "title": "Výrazně menší",
+                    "desc": "WebP nabízí vynikající kompresi. Okamžitě ušetřete šířku pásma i úložný prostor."
                 },
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Kept",
-                    "desc": "[Pending Translation] Unlike converting to JPG, switching from PNG to WebP preserves your alpha channel (background transparency)."
+                    "title": "Zachování průhlednosti",
+                    "desc": "Na rozdíl od převodu do JPG, přechod z PNG do WebP zachovává váš alfa kanál (průhlednost pozadí)."
                 },
                 "adjustable": {
-                    "title": "[Pending Translation] Adjustable Quality",
-                    "desc": "[Pending Translation] You control the balance. Choose 90% for high quality or 70% for maximum savings."
+                    "title": "Nastavitelná kvalita",
+                    "desc": "Rovnováhu ovládáte vy. Zvolte 90 % pro vysokou kvalitu nebo 70 % pro maximální úsporu."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert?",
+                "title": "Jak převést?",
                 "list": [
-                    "[Pending Translation] Drag and drop your file.",
-                    "[Pending Translation] Use the slider. We recommend 80-90% for a good balance.",
-                    "[Pending Translation] Click the \"Convert\" button.",
-                    "[Pending Translation] Your lighter .webp file is ready."
+                    "Přetáhněte soubor.",
+                    "Použijte posuvník. Doporučujeme 80–90 % pro dobrou rovnováhu.",
+                    "Klikněte na tlačítko „Převést“.",
+                    "Váš lehčí soubor .webp je připraven."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why WebP?",
-                "p1": "[Pending Translation] WebP is a modern image format developed by Google.",
+                "title": "Proč WebP?",
+                "p1": "WebP je moderní formát obrázků vyvinutý společností Google.",
                 "list": [
-                    "[Pending Translation] SEO Boost: Faster sites rank better on Google.",
-                    "[Pending Translation] Mobile Friendly: Uses less data for mobile visitors.",
-                    "[Pending Translation] Support: Supported by Chrome, Firefox, Safari, Edge, and all modern browsers."
+                    "SEO impuls: Rychlejší stránky se na Googlu umisťují lépe.",
+                    "Vhodné pro mobilní zařízení: Spotřebovává méně dat pro mobilní návštěvníky.",
+                    "Podpora: Podporováno Chrome, Firefox, Safari, Edge a všemi moderními prohlížeči."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid PNG image"
+            "invalid_image": "Nahrajte prosím platný PNG obrázek"
         }
     },
     "svg-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] SVG to JPG Converter - Vector to Raster Conversion | Optimizo",
+            "title": "Převodník SVG na JPG – převod vektorů na rastry | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert SVG vector files to JPG images online. Auto-fills transparent backgrounds with white for perfect JPG output.",
-            "h1": "[Pending Translation] SVG to JPG Converter",
-            "subtitle": "[Pending Translation] Convert SVG vector files to JPG images online with auto-fill backgrounds"
+            "description": "Převeďte vektorové soubory SVG na obrázky JPG online. Automaticky vyplňuje průhledné pozadí bílou barvou pro dokonalý výstup JPG.",
+            "h1": "Převodník SVG na JPG",
+            "subtitle": "Převeďte vektorové soubory SVG na obrázky JPG online s automatickým vyplněním pozadí"
         },
         "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
+            "title": "Nahrát soubor SVG",
+            "desc": "Přetáhněte svůj soubor SVG sem",
+            "drop_title": "Přetáhněte soubor SVG sem",
+            "drop_desc": "Podporuje SVG, SVGZ (max. 10 MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds will be filled with white color.",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Náhled",
+            "note": "Poznámka:",
+            "note_text": "Průhledné pozadí bude vyplněno bílou barvou.",
+            "output_format": "Výstupní formát:",
+            "scale_label": "Násobitel rozlišení (měřítko)",
+            "scale_1": "1x (původní velikost)",
+            "scale_2": "2x (vysoké rozlišení)",
+            "scale_4": "4x (ultra rozlišení)",
+            "btn_convert": "Převést na JPG a stáhnout"
         },
         "content": {
-            "title": "[Pending Translation] Convert SVG to JPG Format",
-            "p1": "[Pending Translation] Need to use a logo in a document or on a website that doesn't accept vector files? Our <strong>SVG to JPG Converter<\/strong> is the answer.",
-            "p2": "[Pending Translation] It creates a solid, high-compatibility image file from your vector source. We automatically handle transparency by adding a clean white background, ensuring your graphic looks professional on any medium.",
+            "title": "Převod SVG do formátu JPG",
+            "p1": "Potřebujete použít logo v dokumentu nebo na webu, který nepřijímá vektorové soubory? Náš <strong>převodník SVG na JPG</strong> je odpovědí.",
+            "p2": "Vytváří pevný, vysoce kompatibilní obrázkový soubor z vašeho vektorového zdroje. Automaticky ošetřujeme průhlednost přidáním čistě bílého pozadí, čímž zajišťujeme, že vaše grafika bude vypadat profesionálně na jakémkoli médiu.",
             "features": {
                 "compatibility": {
-                    "title": "[Pending Translation] Maximum Compatibility",
-                    "desc": "[Pending Translation] JPG is opened by literally every digital device and software created in the last 30 years."
+                    "title": "Maximální kompatibilita",
+                    "desc": "JPG otevře doslova každé digitální zařízení a software vytvořený za posledních 30 let."
                 },
                 "resolution": {
-                    "title": "[Pending Translation] 4x High Resolution",
-                    "desc": "[Pending Translation] Scale up your SVG before saving to ensure your JPG is sharp, not blurry."
+                    "title": "4x vysoké rozlišení",
+                    "desc": "Před uložením změňte měřítko svého SVG nahoru, aby váš JPG byl ostrý, nikoli rozmazaný."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure Client-Side",
-                    "desc": "[Pending Translation] Processing happens in your browser. We never see your files."
+                    "title": "Bezpečně na straně klienta",
+                    "desc": "Zpracování probíhá ve vašem prohlížeči. Vaše soubory nikdy nevidíme."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Easy Instructions",
+                "title": "Jednoduchý návod",
                 "list": [
-                    "[Pending Translation] Click \"Upload\" or drag your file to the center box.",
-                    "[Pending Translation] Choose a scaling factor (e.g., 2x or 4x) for higher quality results.",
-                    "[Pending Translation] Observe the image. Note that transparent backgrounds are now white.",
-                    "[Pending Translation] Click \"Convert to JPG & Download\"."
+                    "Klikněte na „Nahrát“ nebo přetáhněte soubor do středového pole.",
+                    "Zvolte faktor měřítka (např. 2x nebo 4x) pro výsledky ve vyšší kvalitě.",
+                    "Sledujte obrázek. Všimněte si, že průhledné pozadí je nyní bílé.",
+                    "Klikněte na „Převést na JPG a stáhnout“."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why choose JPG over PNG for Vectors?",
-                "p1": "[Pending Translation] While PNG supports transparency, JPG generates smaller file sizes for complex, colorful images.",
+                "title": "Proč zvolit pro vektory JPG místo PNG?",
+                "p1": "Zatímco PNG podporuje průhlednost, JPG generuje menší velikosti souborů pro složité a barevné obrázky.",
                 "list": [
-                    "[Pending Translation] Smaller Files: Better for emails and attachments.",
-                    "[Pending Translation] No Transparency Issues: Some viewers render transparency as black. JPG forces a white background, ensuring your logo is legible."
+                    "Menší soubory: Lepší pro e-maily a přílohy.",
+                    "Bez problémů s průhledností: Některé prohlížeče vykreslují průhlednost jako černou barvu. JPG vynucuje bílé pozadí a zajišťuje čitelnost vašeho loga."
                 ]
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
+            "invalid_image": "Nahrajte prosím platný soubor SVG"
         }
     },
     "svg-to-png-converter": {
         "meta": {
-            "title": "[Pending Translation] SVG to PNG Converter - Rasterize SVG Images | Optimizo",
+            "title": "Převodník SVG na PNG – rasterizace SVG obrázků | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don't support vector files.",
-            "h1": "[Pending Translation] SVG to PNG Converter",
-            "subtitle": "[Pending Translation] Convert Scalable Vector Graphics (SVG) to PNG images instantly"
+            "description": "Okamžitě převádějte Scalable Vector Graphics (SVG) na obrázky PNG. Ideální pro zajištění kompatibility s aplikacemi, které nepodporují vektorové soubory.",
+            "h1": "Převodník SVG na PNG",
+            "subtitle": "Okamžitě převádějte Scalable Vector Graphics (SVG) na obrázky PNG"
         },
         "input": {
-            "title": "[Pending Translation] Upload SVG File",
-            "desc": "[Pending Translation] Drag & drop your SVG file here",
-            "drop_title": "[Pending Translation] Drop SVG file here",
-            "drop_desc": "[Pending Translation] Supports SVG, SVGZ (Max 10MB)"
+            "title": "Nahrát soubor SVG",
+            "desc": "Přetáhněte svůj soubor SVG sem",
+            "drop_title": "Přetáhněte soubor SVG sem",
+            "drop_desc": "Podporuje SVG, SVGZ (max. 10 MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "checkerboard": "[Pending Translation] Checkerboard background indicates transparency",
-            "output_format": "[Pending Translation] Output Format:",
-            "scale_label": "[Pending Translation] Resolution Multiplier (Scale)",
-            "scale_1": "[Pending Translation] 1x (Original Size)",
-            "scale_2": "[Pending Translation] 2x (High Res)",
-            "scale_4": "[Pending Translation] 4x (Ultra Res)",
-            "btn_convert": "[Pending Translation] Convert to PNG & Download"
+            "image_alt": "Náhled",
+            "checkerboard": "Šachovnicové pozadí indikuje průhlednost",
+            "output_format": "Výstupní formát:",
+            "scale_label": "Násobitel rozlišení (měřítko)",
+            "scale_1": "1x (původní velikost)",
+            "scale_2": "2x (vysoké rozlišení)",
+            "scale_4": "4x (ultra rozlišení)",
+            "btn_convert": "Převést na PNG a stáhnout"
         },
         "content": {
-            "title": "[Pending Translation] Rasterize SVG to PNG High-Res",
-            "p1": "[Pending Translation] Scalable Vector Graphics (SVG) are perfect for the web, but impossible to use on social media, in Word documents, or as email attachments.",
-            "p2": "[Pending Translation] Our <strong>SVG to PNG Converter<\/strong> allows you to turn your vector logo or icon into a high-quality, transparent PNG image. With our unique <strong>scaling feature<\/strong>, you can produce ultra-high-resolution images without any pixelation.",
+            "title": "Rasterizace SVG na PNG ve vysokém rozlišení",
+            "p1": "Scalable Vector Graphics (SVG) jsou ideální pro web, ale jejich použití na sociálních sítích, v dokumentech Wordu nebo jako přílohy e-mailů je obtížné.",
+            "p2": "Náš <strong>převodník SVG na PNG</strong> vám umožňuje přeměnit vaše vektorové logo nebo ikonu na vysoce kvalitní, průhledný obrázek PNG. S naší unikátní <strong>funkcí měřítka</strong> můžete vytvářet obrázky v ultra vysokém rozlišení bez jakékoli pixelizace.",
             "features": {
                 "transparency": {
-                    "title": "[Pending Translation] Transparency Preserved",
-                    "desc": "[Pending Translation] Unlike JPG, PNG keeps the background transparent. Perfect for logos and overlays."
+                    "title": "Zachování průhlednosti",
+                    "desc": "Na rozdíl od JPG, PNG ponechává pozadí průhledné. Ideální pro loga a překryvné vrstvy."
                 },
                 "scaling": {
-                    "title": "[Pending Translation] Up to 4x Scaling",
-                    "desc": "[Pending Translation] Export at 4x the original size. Get crisp edges even for large print formats."
+                    "title": "Až 4x zvětšení",
+                    "desc": "Exportujte ve 4násobku původní velikosti. Získejte ostré hrany i pro velké tiskové formáty."
                 },
                 "browser": {
-                    "title": "[Pending Translation] Browser-Based",
-                    "desc": "[Pending Translation] Fast and secure. No files are uploaded to any server."
+                    "title": "Založeno na prohlížeči",
+                    "desc": "Rychlé a bezpečné. Žádné soubory se nenahrávají na žádný server."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] How to Convert SVG to PNG?",
+                "title": "Jak převést SVG na PNG?",
                 "list": [
-                    "[Pending Translation] Drop your `.svg` file into the upload area.",
-                    "[Pending Translation] Select `1x`, `2x`, or `4x` from the dropdown. Higher is better for quality.",
-                    "[Pending Translation] Check the preview image on the left. The checkerboard indicates transparency.",
-                    "[Pending Translation] Hit the button to generate and download your PNG."
+                    "Přetáhněte svůj soubor `.svg` do nahrávací oblasti.",
+                    "Z nabídky vyberte `1x`, `2x` nebo `4x`. Vyšší hodnota je lepší pro kvalitu.",
+                    "Zkontrolujte náhledový obrázek vlevo. Šachovnice značí průhlednost.",
+                    "Stiskněte tlačítko pro vygenerování a stažení vašeho PNG."
                 ]
             },
             "why": {
-                "title": "[Pending Translation] Why Convert Vectors?",
-                "p1": "[Pending Translation] Vectors are mathematical formulas, while PNGs are grids of pixels. You need pixels for:",
+                "title": "Proč převádět vektory?",
+                "p1": "Vektory jsou matematické vzorce, zatímco PNG jsou mřížky pixelů. Pixely potřebujete pro:",
                 "list": [
-                    "[Pending Translation] Profile pictures (Twitter\/LinkedIn often reject SVG).",
-                    "[Pending Translation] Embedding in emails (SVG support is poor).",
-                    "[Pending Translation] Using in video editors or simple graphic tools (Canva, Paint)."
+                    "Profilové obrázky (Twitter/LinkedIn často SVG odmítají).",
+                    "Vkládání do e-mailů (podpora SVG je slabá).",
+                    "Použití v editorech videa nebo jednoduchých grafických nástrojích (Canva, Paint)."
                 ]
             },
             "faq": {
-                "title": "",
-                "q1": "",
-                "a1": "",
-                "q2": "",
-                "a2": ""
+                "title": "Často kladené otázky",
+                "q1": "Můžu převést SVG s animacemi?",
+                "a1": "Tento nástroj zachytí první snímek vašeho SVG. Pro animace doporučujeme převod na formát GIF nebo MP4.",
+                "q2": "Je to bezpečné?",
+                "a2": "Ano. Veškeré grafické zpracování probíhá přímo ve vašem prohlížeči. Vaše data se nikam neposílají."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid SVG image"
+            "invalid_image": "Nahrajte prosím platný soubor SVG"
         }
     },
     "webp-to-jpg-converter": {
         "meta": {
-            "title": "[Pending Translation] WEBP to JPG Converter - Convert WebP to JPG Online | Optimizo",
+            "title": "Převodník WEBP na JPG – převod WebP na JPG online | Optimizo",
             "desc": "",
-            "description": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility. Free, fast, and secure converter.",
-            "h1": "[Pending Translation] WebP to JPG Converter",
-            "subtitle": "[Pending Translation] Convert WebP images to standard JPG format for broad compatibility"
+            "description": "Převeďte obrázky WebP do standardního formátu JPG pro širokou kompatibilitu. Bezplatný, rychlý a bezpečný převodník.",
+            "h1": "Převodník WebP na JPG",
+            "subtitle": "Převeďte obrázky WebP do standardního formátu JPG pro širokou kompatibilitu"
         },
         "input": {
-            "title": "[Pending Translation] Upload WEBP Image",
-            "desc": "[Pending Translation] Drag & drop your WEBP file here",
-            "drop_title": "[Pending Translation] Drop WEBP file here",
-            "drop_desc": "[Pending Translation] Supports WEBP (Max 10MB)"
+            "title": "Nahrát WEBP obrázek",
+            "desc": "Přetáhněte svůj soubor WEBP sem",
+            "drop_title": "Přetáhněte WEBP soubor sem",
+            "drop_desc": "Podporuje WEBP (max. 10 MB)"
         },
         "editor": {
-            "image_alt": "[Pending Translation] Preview",
-            "note": "[Pending Translation] Note:",
-            "note_text": "[Pending Translation] Transparent backgrounds (common in WEBP) will be verified to white.",
-            "output_format": "[Pending Translation] Output Format:",
-            "btn_convert": "[Pending Translation] Convert to JPG & Download"
+            "image_alt": "Náhled",
+            "note": "Poznámka:",
+            "note_text": "Průhledné pozadí (běžné u WEBP) bude nahrazeno bílou barvou.",
+            "output_format": "Výstupní formát:",
+            "btn_convert": "Převést na JPG a stáhnout"
         },
         "content": {
-            "title": "[Pending Translation] WebP to JPG: The Compatibility Fixer",
-            "p1": "[Pending Translation] WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older image viewers, or upload it to platforms that only accept JPG.",
-            "p2": "[Pending Translation] Our <strong>WebP to JPG Converter<\/strong> bridges this gap. It takes your highly optimized WebP images and transforms them into the universally compatible JPEG format in milliseconds.",
+            "title": "Převod WebP na univerzální JPG",
+            "p1": "WebP je skvělý pro rychlost webu, ale mnoho aplikací pro úpravu, sociálních sítí a starších prohlížečů ho stále nepodporuje. Náš <strong>převodník WebP na JPG</strong> vám pomůže tento problém překonat.",
+            "p2": "Během několika sekund vytvoříme z vašeho moderního souboru WebP vysoce kompatibilní obrázek JPG. Postaráme se o vše, včetně průhlednosti, kterou nahradíme bílým pozadím pro zachování čitelnosti.",
             "features": {
                 "universal": {
-                    "title": "[Pending Translation] Universal Support",
-                    "desc": "[Pending Translation] JPG works everywhere: Word docs, PowerPoint, legacy software, and every social media platform."
+                    "title": "Univerzální přístup",
+                    "desc": "Získejte soubor, který lze otevřít kdekoli – od Windows po staré mobilní telefony."
+                },
+                "compatibility": {
+                    "title": "Připraveno pro sociální sítě",
+                    "desc": "Získejte formát, který spolehlivě přijme Facebook, Twitter i LinkedIn bez chyb."
                 },
                 "secure": {
-                    "title": "[Pending Translation] Secure Processing",
-                    "desc": "[Pending Translation] We don't see your files. The conversion is performed locally by your web browser."
-                },
-                "smart": {
-                    "title": "[Pending Translation] Smart Backgrounds",
-                    "desc": "[Pending Translation] Automatically detects transparent pixels in WebP and fills them with a clean white background."
+                    "title": "Bezpečné a lokální",
+                    "desc": "Vše se děje přímo ve vašem prohlížeči. Vaše přílohy ani fotky se nikam neposílají."
                 }
             },
             "how_to": {
-                "title": "[Pending Translation] Step-by-Step Guide",
+                "title": "Jednoduché kroky",
                 "list": [
-                    "[Pending Translation] Click the box or drag your WebP image onto the page.",
-                    "[Pending Translation] The tool will display a preview of your image.",
-                    "[Pending Translation] Click the \"Convert to JPG\" button. The system handles transparency and compression automatically.",
-                    "[Pending Translation] Your new .jpg file will download instantly."
-                ]
-            },
-            "why": {
-                "title": "[Pending Translation] Why Convert WebP?",
-                "list": [
-                    "[Pending Translation] Editing: Many desktop editors typically don't support WebP out of the box.",
-                    "[Pending Translation] Email: Outlook and other email clients might not render WebP inline images correctly.",
-                    "[Pending Translation] Printing: Print shops often require standard JPG or TIFF files."
+                    "Vložte svůj soubor WebP do modrého boxu.",
+                    "Nástroj obrázek okamžitě načte.",
+                    "Podívejte se na náhled a zkontrolujte výsledek.",
+                    "Stáhněte si hotový JPG soubor."
                 ]
             },
             "faq": {
-                "title": "[Pending Translation] FAQ",
-                "q1": "[Pending Translation] What happens to transparent backgrounds?",
-                "a1": "[Pending Translation] Since JPG doesn't support transparency, our tool replaces transparent areas with white. This is perfect for product photos and logos.",
-                "q2": "[Pending Translation] Is it safe?",
-                "a2": "[Pending Translation] Yes. Unlike other converters that upload your file to a server, this tool runs 100% on your device. Your data remains private."
+                "title": "Často kladené otázky",
+                "q1": "Co se stane s průhledným pozadím?",
+                "a1": "Protože JPG nepodporuje průhlednost, náš nástroj nahradí průhledné oblasti bílou barvou. To je ideální pro produktové fotografie a loga.",
+                "q2": "Je to bezpečné?",
+                "a2": "Ano. Na rozdíl od jiných převodníků, které nahrávají váš soubor na server, tento nástroj běží 100% na vašem zařízení. Vaše data zůstávají soukromá."
             }
         },
         "js": {
-            "invalid_image": "[Pending Translation] Please upload a valid WEBP image"
+            "invalid_image": "Nahrajte prosím platný obrázek WEBP"
         }
     }
 }

@@ -19,7 +19,7 @@
 16. [x] Korean (ko) - **100% Completed**
 17. [x] Finnish (fi) - **100% Completed**
 18. [x] Norwegian (no) - **100% Completed**
-19. [ ] Czech (cs) - Pending
+19. [x] Czech (cs) - **100% Completed**
 20. [ ] Romanian (ro) - Pending
 21. [ ] Indonesian (id) - Pending
 22. [ ] Vietnamese (vi) - Pending

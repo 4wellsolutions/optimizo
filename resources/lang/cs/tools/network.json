@@ -1,735 +1,757 @@
 {
     "dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] DNS Lookup Tool - Check DNS Records Online Free",
-            "description": "[Pending Translation] Free DNS lookup tool to check DNS records for any domain. View A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.",
-            "h1": "[Pending Translation] DNS Lookup Tool",
-            "subtitle": "[Pending Translation] Query DNS records to find nameservers, MX, A, CNAME & TXT records instantly"
+            "title": "DNS Lookup - Kontrola DNS záznamů online zdarma",
+            "description": "Bezplatný nástroj pro kontrolu DNS záznamů libovolné domény. Okamžitě zobrazte záznamy A, AAAA, MX, NS, TXT, CNAME. Nezbytné pro řešení problémů s e-mailem a konfigurací domény.",
+            "h1": "DNS Lookup",
+            "subtitle": "Dotazujte se na DNS záznamy a najděte jmenné servery, MX, A, CNAME a TXT záznamy okamžitě"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup DNS"
+            "domain_label": "Název domény",
+            "domain_placeholder": "např. google.com",
+            "button": "Vyhledat DNS"
         },
         "results": {
-            "title": ""
+            "title": "Výsledky DNS pro"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is DNS Lookup?",
-            "what_is_desc": "[Pending Translation] DNS Lookup is a tool that queries Domain Name System servers to retrieve DNS records for a domain. DNS records contain important information about how a domain is configured, including mail servers (MX records), nameservers (NS records), IP addresses (A\/AAAA records), and text records (TXT records) used for verification and security.",
-            "why_use_title": "[Pending Translation] Why Use DNS Lookup?",
-            "why_use_desc": "[Pending Translation] DNS Lookup is essential for troubleshooting email delivery issues, verifying domain configuration, checking nameserver settings, validating SPF and DKIM records, and understanding how a domain is set up. It's used by system administrators, web developers, and IT professionals daily.",
-            "record_types_title": "[Pending Translation] DNS Record Types",
-            "a_record": "[Pending Translation] <strong>A Record:<\/strong> Maps domain to IPv4 address",
-            "aaaa_record": "[Pending Translation] <strong>AAAA Record:<\/strong> Maps domain to IPv6 address",
-            "mx_record": "[Pending Translation] <strong>MX Record:<\/strong> Mail server information",
-            "ns_record": "[Pending Translation] <strong>NS Record:<\/strong> Nameserver information",
-            "txt_record": "[Pending Translation] <strong>TXT Record:<\/strong> Text records for verification",
-            "cname_record": "[Pending Translation] <strong>CNAME Record:<\/strong> Canonical name alias"
+            "what_is_title": "Co je DNS Lookup?",
+            "what_is_desc": "DNS Lookup je nástroj, který se dotazuje serverů systému doménových jmen (Domain Name System) na DNS záznamy dané domény. Tyto záznamy obsahují důležité informace o konfiguraci domény, včetně poštovních serverů (MX), jmenných serverů (NS), IP adres (A/AAAA) a textových záznamů (TXT) používaných pro ověření a zabezpečení.",
+            "why_use_title": "Proč používat DNS Lookup?",
+            "why_use_desc": "DNS Lookup je nezbytný pro řešení problémů s doručováním e-mailů, ověřování konfigurace domény, kontrolu nastavení jmenných serverů, validaci záznamů SPF a DKIM a pochopení nastavení domény. Správci systémů, weboví vývojáři a IT profesionálové jej používají denně.",
+            "record_types_title": "Typy DNS záznamů",
+            "a_record": "<strong>A záznam:</strong> Mapuje doménu na IPv4 adresu",
+            "aaaa_record": "<strong>AAAA záznam:</strong> Mapuje doménu na IPv6 adresu",
+            "mx_record": "<strong>MX záznam:</strong> Informace o poštovním serveru",
+            "ns_record": "<strong>NS záznam:</strong> Informace o jmenném serveru",
+            "txt_record": "<strong>TXT záznam:</strong> Textové údaje pro ověření",
+            "cname_record": "<strong>CNAME záznam:</strong> Alias kanonického jména"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Často kladené otázky",
+            "q1": "Co je DNS?",
+            "a1": "DNS (Domain Name System) funguje jako telefonní seznam internetu, který překládá názvy domén (jako google.com) na IP adresy.",
+            "q2": "Jak dlouho trvá propagace DNS?",
+            "a2": "Změny DNS se mohou projevit okamžitě, ale plná propagace po celém světě může trvat 24 až 48 hodin.",
+            "q3": "K čemu slouží záznam MX?",
+            "a3": "MX (Mail Exchanger) záznam určuje poštovní server zodpovědný za přijímání e-mailů pro danou doménu.",
+            "q4": "Můžu zkontrolovat záznamy jakékoli domény?",
+            "a4": "Ano, DNS záznamy jsou veřejné informace, které může kdokoli dotazovat pomocí nástroje DNS Lookup.",
+            "q5": "Co je to TTL?",
+            "a5": "TTL (Time to Live) je hodnota v sekundách, která určuje, jak dlouho si mají DNS servery pamatovat (ukládat do mezipaměti) daný záznam."
         },
         "js": {
-            "looking_up": "",
-            "records_label": "",
-            "success": "",
-            "error": "",
-            "lookup_dns": ""
+            "looking_up": "Vyhledávám...",
+            "records_label": "Záznamů",
+            "success": "Záznamy byly úspěšně načteny",
+            "error": "Při vyhledávání DNS došlo k chybě",
+            "lookup_dns": "Vyhledat DNS"
         }
     },
     "domain-to-ip": {
         "meta": {
-            "title": "[Pending Translation] Domain to IP Converter - Find IP Address of Any Domain Free",
-            "description": "[Pending Translation] Free domain to IP lookup tool. Instantly convert any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.",
-            "h1": "[Pending Translation] Domain to IP Converter",
-            "subtitle": "[Pending Translation] Resolve domain names to IP addresses with detailed DNS information"
+            "title": "Převodník domény na IP - Najděte IP adresu domény zdarma",
+            "description": "Bezplatný nástroj pro vyhledání IP adresy domény. Okamžitě převeďte jakýkoli název domény na jeho IP adresu. Nezbytné pro diagnostiku sítě a správu serverů.",
+            "h1": "Převodník domény na IP",
+            "subtitle": "Získejte IP adresu libovolné domény s podrobnými informacemi o DNS"
         },
         "form": {
-            "domain_label": "[Pending Translation] Enter Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "domain_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "button": "[Pending Translation] Lookup IP Address"
+            "domain_label": "Zadejte název domény",
+            "domain_placeholder": "např. google.com",
+            "domain_hint": "Zadejte doménu bez http:// nebo https://",
+            "button": "Vyhledat IP adresu"
         },
         "results": {
-            "title": "",
-            "domain_label": "",
-            "ip_label": ""
+            "title": "Výsledek vyhledávání IP",
+            "domain_label": "Doména",
+            "ip_label": "IP adresa"
         },
         "content": {
-            "main_title": "[Pending Translation] Domain to IP Converter",
-            "main_subtitle": "[Pending Translation] Convert any domain name to its IP address instantly",
-            "intro": "[Pending Translation] Our free Domain to IP tool instantly converts any domain name to its corresponding IP address using DNS lookup. Essential for network administrators, web developers, security professionals, and anyone needing to identify the server behind a domain. Get accurate IP addresses for troubleshooting, server verification, and network configuration.",
-            "feature1_title": "[Pending Translation] Instant Lookup",
-            "feature1_desc": "[Pending Translation] Get IP addresses immediately without delays",
-            "feature2_title": "[Pending Translation] Accurate Results",
-            "feature2_desc": "[Pending Translation] Real-time DNS queries for current IP addresses",
-            "feature3_title": "[Pending Translation] 100% Free",
-            "feature3_desc": "[Pending Translation] Unlimited lookups with no registration required",
-            "what_is_title": "[Pending Translation] 🌐 What is Domain to IP Lookup?",
-            "what_is_desc": "[Pending Translation] Domain to IP lookup is the process of converting a human-readable domain name (like example.com) into its corresponding numerical IP address (like 93.184.216.34). This conversion happens through DNS (Domain Name System) servers, which act as the internet's phone book. Every website has an IP address, but domain names make them easier to remember and access.",
-            "use_cases_title": "[Pending Translation] 🎯 Common Use Cases",
-            "uc1_title": "[Pending Translation] Server Configuration",
-            "uc1_desc": "[Pending Translation] Configure firewalls, whitelists, and server settings with IP addresses",
-            "uc2_title": "[Pending Translation] Security Analysis",
-            "uc2_desc": "[Pending Translation] Verify server locations and identify hosting providers",
-            "uc3_title": "[Pending Translation] Troubleshooting",
-            "uc3_desc": "[Pending Translation] Diagnose DNS issues and verify domain configurations",
-            "uc4_title": "[Pending Translation] Network Monitoring",
-            "uc4_desc": "[Pending Translation] Track server changes and monitor infrastructure",
-            "uc5_title": "[Pending Translation] Geolocation",
-            "uc5_desc": "[Pending Translation] Determine server geographic location from IP address",
-            "uc6_title": "[Pending Translation] API Integration",
-            "uc6_desc": "[Pending Translation] Use IP addresses for direct API connections",
-            "pro_tips_title": "[Pending Translation] 💡 Pro Tips: Using Domain to IP Lookup",
-            "tip1": "[Pending Translation] ✅ Use IP addresses for direct server connections when DNS is slow",
-            "tip2": "[Pending Translation] ✅ Verify CDN configurations by checking multiple domain resolutions",
-            "tip3": "[Pending Translation] ✅ Whitelist server IPs in firewalls for secure access",
-            "tip4": "[Pending Translation] ✅ Compare IP addresses before and after DNS changes",
-            "tip5": "[Pending Translation] ✅ Identify shared hosting by checking if multiple domains share IPs"
+            "main_title": "Převodník domény na IP",
+            "main_subtitle": "Okamžitě převeďte jakýkoli název domény na jeho IP adresu",
+            "intro": "Náš bezplatný nástroj Doména na IP okamžitě převádí jakýkoli název domény na příslušnou IP adresu pomocí vyhledávání DNS. Je nepostradatelný pro síťové administrátory, vývojáře, bezpečnostní experty a kohokoli, kdo potřebuje identifikovat server stojící za doménou. Získejte přesné IP adresy pro řešení problémů a ověřování serverů.",
+            "feature1_title": "Okamžité vyhledání",
+            "feature1_desc": "Získejte IP adresy okamžitě bez zbytečného čekání.",
+            "feature2_title": "Přesné výsledky",
+            "feature2_desc": "DNS dotazy v reálném čase pro aktuální IP adresy.",
+            "feature3_title": "100% Zdarma",
+            "feature3_desc": "Neomezené vyhledávání bez nutnosti registrace.",
+            "what_is_title": "🌐 Co je vyhledávání domény na IP?",
+            "what_is_desc": "Vyhledávání domény na IP je proces převodu lidsky čitelného názvu domény (jako google.com) na jeho číselnou IP adresu (jako 142.250.217.78). Tento převod probíhá prostřednictvím DNS serverů, které fungují jako telefonní seznam internetu. Každý web má svou IP adresu, ale názvy domén si lidé lépe pamatují.",
+            "use_cases_title": "🎯 Běžné příklady použití",
+            "uc1_title": "Konfigurace serveru",
+            "uc1_desc": "Nastavení firewallů a serverů pomocí IP adres.",
+            "uc2_title": "Bezpečnostní analýza",
+            "uc2_desc": "Ověření umístění serverů a identifikace poskytovatelů hostingu.",
+            "uc3_title": "Řešení problémů",
+            "uc3_desc": "Diagnostika problémů s DNS a ověřování konfigurace domény.",
+            "uc4_title": "Monitorování sítě",
+            "uc4_desc": "Sledování změn serveru a správa infrastruktury.",
+            "uc5_title": "Geolokace",
+            "uc5_desc": "Určení geografické polohy serveru na základě IP adresy.",
+            "uc6_title": "Integrace API",
+            "uc6_desc": "Použití IP adres pro přímé propojení s API.",
+            "pro_tips_title": "💡 Tip pro experty",
+            "tip1": "✅ Používejte IP adresy pro přímé připojení k serveru, pokud je DNS pomalé.",
+            "tip2": "✅ Ověřujte nastavení CDN kontrolou rozlišení domény z různých míst.",
+            "tip3": "✅ Povolte IP adresy serverů ve firewallech pro bezpečný přístup.",
+            "tip4": "✅ Porovnejte IP adresy před a po provedení změn v DNS záznamech.",
+            "tip5": "✅ Odhalte sdílený hosting kontrolou, zda více domén sdílí stejnou IP."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Často kladené otázky",
+            "q1": "Může mít jedna doména více IP adres?",
+            "a1": "Ano, velké weby často používají více IP adres k rozložení zátěže (Load Balancing) nebo pro doručování obsahu (CDN).",
+            "q2": "Jak často se IP adresa domény mění?",
+            "a2": "Záleží na nastavení TTL. U dynamických DNS se může měnit často, u stabilních serverů zůstává stejná roky.",
+            "q3": "Co je to Round-robin DNS?",
+            "a3": "Je to metoda, kdy DNS server vrací seznam IP adres v různém pořadí, aby se zátěž rovnoměrně rozdělila mezi servery.",
+            "q4": "Je vyhledávání anonymní?",
+            "a4": "Ano, vyhledávání neupozorňuje majitele domény, že jste si ji prověřovali.",
+            "q5": "Podporuje nástroj i IPv6?",
+            "a5": "Náš nástroj prioritně zobrazuje IPv4, ale v záznamech DNS lze často najít i IPv6 (AAAA záznamy)."
         },
         "js": {
-            "looking_up": "",
-            "error_failed": ""
+            "looking_up": "Vyhledávám...",
+            "error_failed": "Nepodařilo se získat IP adresu. Zkontrolujte prosím doménu."
         }
     },
     "internet-speed-test": {
         "meta": {
-            "title": "[Pending Translation] Free Internet Speed Test - Check Your Connection Speed",
-            "description": "[Pending Translation] Test your internet speed for free. Check download speed, upload speed, and ping instantly.",
-            "h1": "[Pending Translation] Internet Speed Test",
-            "subtitle": "[Pending Translation] Test your internet connection speed instantly"
+            "title": "Test rychlosti internetu - Změřte rychlost svého připojení",
+            "description": "Otestujte si rychlost internetu zdarma. Okamžitě zkontrolujte rychlost stahování, nahrávání a odezvu (ping).",
+            "h1": "Test rychlosti internetu",
+            "subtitle": "Změřte si okamžitě kvalitu svého internetového připojení"
         },
         "editor": {
-            "btn_start": "[Pending Translation] Start Speed Test",
-            "status_init": "[Pending Translation] Initializing test...",
-            "label_download": "[Pending Translation] Download Speed",
-            "label_upload": "[Pending Translation] Upload Speed",
-            "label_ping": "[Pending Translation] Ping",
-            "label_quality": "[Pending Translation] Connection Quality",
-            "btn_retry": "[Pending Translation] Test Again",
-            "status_ping": "[Pending Translation] Testing ping...",
-            "status_download": "[Pending Translation] Testing download speed...",
-            "status_upload": "[Pending Translation] Testing upload speed...",
-            "quality_val_excellent": "[Pending Translation] Excellent",
-            "quality_val_very_good": "[Pending Translation] Very Good",
-            "quality_val_good": "[Pending Translation] Good",
-            "quality_val_fair": "[Pending Translation] Fair",
-            "quality_val_poor": "[Pending Translation] Poor"
+            "btn_start": "Spustit test rychlosti",
+            "status_init": "Inicializace testu...",
+            "label_download": "Rychlost stahování",
+            "label_upload": "Rychlost nahrávání",
+            "label_ping": "Ping (Odezva)",
+            "label_quality": "Kvalita připojení",
+            "btn_retry": "Zkusit znovu",
+            "status_ping": "Měřím ping...",
+            "status_download": "Měřím rychlost stahování...",
+            "status_upload": "Měřím rychlost nahrávání...",
+            "quality_val_excellent": "Vynikající",
+            "quality_val_very_good": "Velmi dobrá",
+            "quality_val_good": "Dobrá",
+            "quality_val_fair": "Průměrná",
+            "quality_val_poor": "Špatná"
         },
         "content": {
-            "p1": "[Pending Translation] Test your internet connection speed with our free, accurate speed test tool. Measure your download speed, upload speed, and ping latency in seconds. Perfect for troubleshooting slow connections, verifying ISP speeds, or checking if you're getting what you pay for.",
-            "metrics_title": "[Pending Translation] Understanding Speed Test Metrics",
-            "req_title": "[Pending Translation] Requirements for Accurate Testing",
+            "p1": "Otestujte si rychlost svého internetového připojení pomocí našeho bezplatného a přesného nástroje. Během několika sekund změřte rychlost stahování (download), nahrávání (upload) a odezvu (ping). Ideální pro řešení problémů s pomalým připojením nebo ověření rychlosti od vašeho poskytovatele.",
+            "metrics_title": "Pochopení metrik testu rychlosti",
+            "req_title": "Požadavky pro přesné měření",
             "req_list": [
-                "[Pending Translation] Close all other applications and browser tabs",
-                "[Pending Translation] Connect via Ethernet cable for most accurate results",
-                "[Pending Translation] Disable VPN or proxy services temporarily",
-                "[Pending Translation] Ensure no downloads or uploads are running",
-                "[Pending Translation] Test multiple times at different times of day"
+                "Zavřete všechny ostatní aplikace a karty prohlížeče",
+                "Pro nejvyšší přesnost se připojte kabelem (Ethernet)",
+                "Dočasně vypněte VPN nebo proxy služby",
+                "Ujistěte se, že neprobíhá žádné jiné stahování ani nahrávání",
+                "Testujte vícekrát v různé denní doby"
             ],
-            "why_title": "[Pending Translation] Why Test Your Internet Speed?",
+            "why_title": "Proč měřit rychlost internetu?",
             "why_list": [
-                "[Pending Translation] Verify you're getting the speed you're paying for",
-                "[Pending Translation] Troubleshoot slow connection issues",
-                "[Pending Translation] Compare different ISP plans before switching",
-                "[Pending Translation] Optimize your network setup",
-                "[Pending Translation] Document speed for ISP support tickets",
-                "[Pending Translation] Test Wi-Fi vs Ethernet performance"
+                "Ověřte si, zda dostáváte rychlost, za kterou platíte",
+                "Diagnostikujte příčiny pomalého připojení",
+                "Porovnejte tarify různých poskytovatelů před změnou",
+                "Optimalizujte nastavení své domácí sítě",
+                "Získejte podklady pro technickou podporu poskytovatele",
+                "Porovnejte výkon Wi-Fi oproti kabelovému připojení"
             ],
-            "factors_title": "[Pending Translation] Factors Affecting Your Speed",
-            "improve_title": "[Pending Translation] How to Improve Your Speed",
+            "factors_title": "Faktory ovlivňující vaši rychlost",
+            "improve_title": "Jak zrychlit váš internet",
             "improve_list": [
-                "[Pending Translation] Use Ethernet cable instead of Wi-Fi when possible",
-                "[Pending Translation] Place router in central location away from walls",
-                "[Pending Translation] Upgrade to a modern router that supports your speed tier",
-                "[Pending Translation] Close bandwidth-heavy applications",
-                "[Pending Translation] Update router firmware regularly",
-                "[Pending Translation] Consider upgrading your internet plan",
-                "[Pending Translation] Use Quality of Service (QoS) settings on router"
+                "Pokud je to možné, používejte kabel místo Wi-Fi",
+                "Umístěte router do středu domácnosti, nikoliv do rohu",
+                "Upgradujte na moderní router, který podporuje vaši rychlost",
+                "Ukončete aplikace náročné na šířku pásma",
+                "Pravidelně aktualizujte firmware svého routeru",
+                "Zvažte vyšší internetový tarif u svého poskytovatele",
+                "Použijte nastavení QoS (Quality of Service) na routeru"
             ],
-            "tips_title": "[Pending Translation] Pro Tips for Accurate Results",
+            "tips_title": "Tipy pro přesné výsledky",
             "tips_list": [
-                "[Pending Translation] Test at different times of day to see variations",
-                "[Pending Translation] Run multiple tests and average the results",
-                "[Pending Translation] Test on different devices to rule out device issues",
-                "[Pending Translation] Compare Wi-Fi speeds at different locations in your home"
+                "Testujte v různé denní doby pro zachycení špiček",
+                "Spusťte více testů a spočítejte průměrný výsledek",
+                "Zkuste test na různých zařízeních pro vyloučení chyby hardware",
+                "Porovnejte rychlost Wi-Fi v různých místnostech"
             ],
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "Často kladené otázky",
             "metrics": {
                 "download": {
-                    "title": "[Pending Translation] Download Speed",
-                    "desc": "[Pending Translation] How fast data travels from the internet to your device. Important for streaming, browsing, and downloading files."
+                    "title": "Rychlost stahování",
+                    "desc": "Jak rychle se data přenášejí z internetu do vašeho zařízení. Klíčové pro streamování videí a prohlížení webu."
                 },
                 "upload": {
-                    "title": "[Pending Translation] Upload Speed",
-                    "desc": "[Pending Translation] How fast data travels from your device to the internet. Important for video calls, uploading files, and live streaming."
+                    "title": "Rychlost nahrávání",
+                    "desc": "Jak rychle data cestují od vás na internet. Důležité pro videohovory a odesílání velkých souborů."
                 },
                 "ping": {
-                    "title": "[Pending Translation] Ping (Latency)",
-                    "desc": "[Pending Translation] Response time of your connection. Lower is better. Important for gaming and real-time applications."
+                    "title": "Ping (Latence)",
+                    "desc": "Doba odezvy vašeho připojení. Čím nižší číslo, tím lépe. Zásadní pro online hraní a plynulost aplikací."
                 }
             },
             "factors": {
                 "congestion": {
-                    "title": "[Pending Translation] Network Congestion",
-                    "desc": "[Pending Translation] Peak usage times can slow down your connection as more users share bandwidth."
+                    "title": "Vytížení sítě",
+                    "desc": "Ve špičce se může rychlost snížit, protože šířku pásma sdílí více uživatelů najednou."
                 },
                 "wifi": {
-                    "title": "[Pending Translation] Wi-Fi Signal",
-                    "desc": "[Pending Translation] Distance from router, walls, and interference from other devices affect wireless speeds."
+                    "title": "Signál Wi-Fi",
+                    "desc": "Vzdálenost od routeru, stěny a rušení jinými zařízeními výrazně zpomalují bezdrátovou rychlost."
                 },
                 "device": {
-                    "title": "[Pending Translation] Device Performance",
-                    "desc": "[Pending Translation] Older devices or those running many programs may not achieve full speeds."
+                    "title": "Výkon zařízení",
+                    "desc": "Starší počítače nebo telefony nemusí být schopny zpracovat maximální rychlosti vašeho tarifu."
                 },
                 "router": {
-                    "title": "[Pending Translation] Router Quality",
-                    "desc": "[Pending Translation] Outdated routers may not support your full internet speed capabilities."
+                    "title": "Kvalita routeru",
+                    "desc": "Zastaralý router může vytvářet úzké hrdlo a omezovat rychlost pro celou domácnost."
                 }
             },
             "faq": {
-                "q1": "[Pending Translation] What is a good internet speed?",
-                "a1": "[Pending Translation] For general browsing and streaming: 25+ Mbps. For 4K streaming and gaming: 50+ Mbps. For multiple users and heavy usage: 100+ Mbps. For remote work and large households: 200+ Mbps.",
-                "q2": "[Pending Translation] Why is my speed slower than advertised?",
-                "a2": "[Pending Translation] ISPs advertise \"up to\" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.",
-                "q3": "[Pending Translation] What's the difference between Mbps and MBps?",
-                "a3": "[Pending Translation] Mbps (megabits per second) is used for internet speeds. MBps (megabytes per second) is used for file sizes. 1 MBps = 8 Mbps. A 100 Mbps connection downloads at about 12.5 MBps.",
-                "q4": "[Pending Translation] How accurate is this speed test?",
-                "a4": "[Pending Translation] Our speed test provides accurate results by measuring real data transfer. For best accuracy, close other applications, use Ethernet, and run multiple tests.",
-                "q5": "[Pending Translation] Should I test with Wi-Fi or Ethernet?",
-                "a5": "[Pending Translation] Test with Ethernet to measure your true internet speed. Test with Wi-Fi to diagnose wireless issues. Comparing both helps identify if problems are with your internet or Wi-Fi."
+                "q1": "Jaká rychlost internetu je považována za dobrou?",
+                "a1": "Pro běžné prohlížení: 25+ Mbps. Pro 4K streamování a hry: 50+ Mbps. Pro rodiny a více uživatelů: 100+ Mbps. Pro práci z domova s velkými daty: 200+ Mbps.",
+                "q2": "Proč je moje rychlost nižší, než slibuje poskytovatel?",
+                "a2": "Poskytovatelé uvádějí rychlost „až“. Skutečnost ovlivňuje vytížení sítě, kvalita Wi-Fi a vzdálenost od ústředny. Pro nejpřesnější výsledek měřte kabelem.",
+                "q3": "Jaký je rozdíl mezi Mbps a MBps?",
+                "a3": "Mbps (megabity za sekundu) značí rychlost internetu. MBps (megabajty za sekundu) značí velikost souboru. 1 MBps = 8 Mbps. Linka 100 Mbps stahuje cca 12,5 MB za sekundu.",
+                "q4": "Jak přesný je tento test?",
+                "a4": "Náš test měří reálný přenos dat mezi vaším prohlížečem a naším serverem. Pro nejvyšší přesnost zavřete ostatní weby a použijte kabel.",
+                "q5": "Mám měřit na Wi-Fi nebo přes kabel?",
+                "a5": "Kabelem měříte skutečnou rychlost přípojky. Wi-Fi testem zjistíte, zda vám signál po bytě neklesá. Srovnáním obou zjistíte, zda je problém v internetu nebo v routeru."
             }
         }
     },
     "ip-lookup": {
         "meta": {
-            "title": "[Pending Translation] IP Lookup Tool - Get IP Address Information & Geolocation Free",
-            "description": "[Pending Translation] Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.",
-            "h1": "[Pending Translation] IP Lookup Tool",
-            "subtitle": "[Pending Translation] Get detailed information about any IP address including location & ISP"
+            "title": "IP Lookup - Informace o IP adrese a geolokace zdarma",
+            "description": "Bezplatný nástroj pro vyhledání podrobných informací o jakékoli IP adrese. Zobrazte polohu, poskytovatele (ISP), název hostitele a další údaje.",
+            "h1": "IP Lookup",
+            "subtitle": "Získejte podrobné informace o IP adrese včetně lokality a poskytovatele"
         },
         "form": {
-            "ip_label": "[Pending Translation] IP Address",
-            "ip_placeholder": "[Pending Translation] 8.8.8.8",
-            "button": "[Pending Translation] Lookup IP Address"
+            "ip_label": "IP adresa",
+            "ip_placeholder": "např. 8.8.8.8",
+            "button": "Vyhledat informace o IP"
         },
         "results": {
-            "title": "",
-            "ip_address": "",
-            "type": "",
-            "hostname": "",
-            "isp": "",
-            "country": "",
-            "region": "",
-            "city": "",
-            "timezone": ""
+            "title": "Podrobnosti o IP adrese",
+            "ip_address": "IP adresa",
+            "type": "Typ",
+            "hostname": "Název hostitele",
+            "isp": "Poskytovatel (ISP)",
+            "country": "Země",
+            "region": "Kraj / Region",
+            "city": "Město",
+            "timezone": "Časové pásmo"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is IP Lookup?",
-            "what_is_desc": "[Pending Translation] IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. This information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.",
-            "why_use_title": "[Pending Translation] Why Use IP Lookup?",
-            "why_use_desc": "[Pending Translation] IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It's also useful for verifying VPN connections and understanding your own internet footprint.",
-            "features_title": "[Pending Translation] Key Features",
-            "feature1_title": "[Pending Translation] 🌍 Geolocation Data",
-            "feature1_desc": "[Pending Translation] Country, region, city, and coordinates",
-            "feature2_title": "[Pending Translation] 🏢 ISP Information",
-            "feature2_desc": "[Pending Translation] Internet Service Provider details",
-            "feature3_title": "[Pending Translation] 🔗 Hostname Resolution",
-            "feature3_desc": "[Pending Translation] Domain name associated with IP",
-            "feature4_title": "[Pending Translation] ⚡ Instant Results",
-            "feature4_desc": "[Pending Translation] Fast and accurate lookup"
+            "what_is_title": "Co je IP Lookup?",
+            "what_is_desc": "IP Lookup je nástroj, který poskytuje podrobné informace o jakékoli veřejné IP adrese. Odhaluje geografickou polohu, poskytovatele internetových služeb (ISP), název hostitele a další technické detaily spojené s danou adresou. Tyto informace jsou cenné pro správce sítí, bezpečnostní experty i majitele webových stránek.",
+            "why_use_title": "Proč používat IP Lookup?",
+            "why_use_desc": "Nástroje pro vyhledávání IP jsou nezbytné pro bezpečnostní analýzu, prevenci podvodů, lokalizaci obsahu a řešení síťových problémů. Majitelé webů je používají pro pochopení demografie návštěvníků, zatímco bezpečnostní týmy k identifikaci potenciálních hrozeb a blokování škodlivého provozu.",
+            "features_title": "Klíčové funkce",
+            "feature1_title": "🌍 Geolokační data",
+            "feature1_desc": "Země, region, město a souřadnice.",
+            "feature2_title": "🏢 Informace o ISP",
+            "feature2_desc": "Podrobnosti o poskytovateli internetu.",
+            "feature3_title": "🔗 Rozlišení hostitele",
+            "feature3_desc": "Název domény spojený s IP adresou.",
+            "feature4_title": "⚡ Okamžité výsledky",
+            "feature4_desc": "Rychlé a přesné vyhledávání v reálném čase."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Často kladené otázky",
+            "q1": "Jak přesná je geolokace podle IP?",
+            "a1": "Geolokace je velmi přesná na úrovni země a města, ale obvykle neukazuje přesnou domovní adresu uživatele.",
+            "q2": "Proč moje IP ukazuje jiné město?",
+            "a2": "Často je to proto, že váš poskytovatel (ISP) směruje provoz přes centrálu v jiném městě, nebo používáte VPN.",
+            "q3": "Můžu najít jméno osoby podle IP?",
+            "a3": "Nikoliv. IP adresa identifikuje síťové rozhraní, nikoliv konkrétní identitu osoby. Tyto informace mají pouze poskytovatelé internetu.",
+            "q4": "Funguje to pro IPv4 i IPv6?",
+            "a4": "Ano, náš nástroj plně podporuje oba standardy IP adres.",
+            "q5": "Mají weby přístup k těmto informacím?",
+            "a5": "Ano, každá webová stránka, kterou navštívíte, vidí vaši veřejnou IP adresu a může tyto údaje načíst."
         },
         "js": {
-            "looking_up": "",
-            "success": "",
-            "error": ""
+            "looking_up": "Vyhledávám...",
+            "success": "Informace byly úspěšně načteny",
+            "error": "Při vyhledávání IP adresy došlo k chybě"
         }
     },
     "ping-test": {
         "meta": {
-            "title": "[Pending Translation] Ping Test Tool - Check Network Latency & Connectivity Free",
-            "description": "[Pending Translation] Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] Ping Test Tool",
-            "subtitle": "[Pending Translation] Test server response time and network connectivity from multiple locations"
+            "title": "Ping Test - Kontrola latence a síťové konektivity zdarma",
+            "description": "Bezplatný nástroj pro ping test. Zkontrolujte odezvu sítě, ztrátu paketů a dostupnost serveru. Otestujte připojení k jakékoli IP adrese okamžitě.",
+            "h1": "Ping Test",
+            "subtitle": "Otestujte dobu odezvy serveru a síťovou konektivitu z našeho uzlu"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] google.com or 8.8.8.8",
-            "button": "[Pending Translation] Ping Host"
+            "host_label": "Hostitel nebo IP adresa",
+            "host_placeholder": "např. google.com nebo 8.8.8.8",
+            "button": "Provést Ping"
         },
         "results": {
-            "title": ""
+            "title": "Výsledky Ping pro"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Ping Test?",
-            "what_is_desc": "[Pending Translation] Ping is a network diagnostic tool that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. The tool is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.",
-            "why_use_title": "[Pending Translation] Why Use Ping Test?",
-            "why_use_desc": "[Pending Translation] Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to check server latency before joining online games, while website owners monitor their server's responsiveness to ensure optimal user experience.",
-            "metrics_title": "[Pending Translation] Understanding Ping Metrics",
-            "metric1": "[Pending Translation] <strong>Packets Sent\/Received:<\/strong> Number of ping requests and successful responses",
-            "metric2": "[Pending Translation] <strong>Packet Loss:<\/strong> Percentage of packets that didn't receive a response",
-            "metric3": "[Pending Translation] <strong>Minimum Time:<\/strong> Fastest round-trip time recorded",
-            "metric4": "[Pending Translation] <strong>Average Time:<\/strong> Mean latency across all pings",
-            "metric5": "[Pending Translation] <strong>Maximum Time:<\/strong> Slowest round-trip time recorded",
-            "metric6": "[Pending Translation] <strong>TTL (Time To Live):<\/strong> Number of network hops before packet expires",
-            "interpreting_title": "[Pending Translation] Interpreting Results",
-            "interpreting_desc": "[Pending Translation] Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
+            "what_is_title": "Co je Ping Test?",
+            "what_is_desc": "Ping je diagnostický nástroj, který testuje dostupnost hostitele v síti IP. Měří čas obousměrné cesty zpráv odeslaných ze zdroje do cílového počítače a zpět. Ping funguje tak, že cílovému hostiteli odesílá pakety ICMP Echo Request a čeká na odpověď Echo Reply. Nástroj je pojmenován podle zvuku sonaru, protože funguje na podobném principu vyslání signálu a čekání na ozvěnu.",
+            "why_use_title": "Proč používat Ping Test?",
+            "why_use_desc": "Testování pingem je nezbytné pro řešení problémů se sítí a monitorování výkonu. Správci systémů jej používají k ověření konektivity a měření latence. Pomáhá identifikovat, zda je server online, odhalit ztrátu paketů (která může značit přetížení sítě) a změřit stabilitu připojení. Hráči používají ping ke kontrole zpoždění před připojením k online hře.",
+            "metrics_title": "Vysvětlení metrik Ping",
+            "metric1": "<strong>Paketů odesláno/přijato:</strong> Počet žádostí o ping a úspěšných odpovědí.",
+            "metric2": "<strong>Ztráta paketů:</strong> Procento paketů, které neobdržely odpověď.",
+            "metric3": "<strong>Minimální čas:</strong> Nejrychlejší zaznamenaná doba odezvy.",
+            "metric4": "<strong>Průměrný čas:</strong> Střední hodnota latence všech pingů.",
+            "metric5": "<strong>Maximální čas:</strong> Nejpomalejší zaznamenaná doba odezvy.",
+            "metric6": "<strong>TTL (Time To Live):</strong> Počet skoků, než paket vyprší.",
+            "interpreting_title": "Interpretace výsledků",
+            "interpreting_desc": "Dobré časy pingu jsou obvykle pod 50 ms pro lokální připojení a pod 100 ms pro mezinárodní. Časy mezi 100–200 ms jsou přijatelné, ale mohou způsobit znatelné zpoždění v aplikacích v reálném čase, jako jsou hry. Cokoliv nad 200 ms značí potenciální problémy v síti. Ztráta paketů vyšší než 1 % naznačuje potíže, které vyžadují vyšetření."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Často kladené otázky",
+            "q1": "Co ovlivňuje můj ping?",
+            "a1": "Fyzická vzdálenost od serveru, typ vašeho připojení (optika vs. Wi-Fi) a vytížení sítě na trase.",
+            "q2": "Proč jsou některé pingy ztraceny?",
+            "a2": "Ztráta paketů může být způsobena rušením u Wi-Fi, poškozeným kabelem nebo přetíženým routerem poskytovatele.",
+            "q3": "Je 100 ms ping dobrý?",
+            "a3": "Pro prohlížení webu je to neznatelné, ale pro kompetitivní hraní akčních her je to již příliš vysoká hodnota.",
+            "q4": "Funguje ping na všechny weby?",
+            "a4": "Většina webů na ping odpovídá, ale některé servery mají ICMP pakety z bezpečnostních důvodů zakázány.",
+            "q5": "Jaký je rozdíl mezi pingem a latencí?",
+            "a5": "Často se používají jako synonyma. Latence je zpoždění sítě obecně, ping je konkrétní nástroj k jejímu měření."
         },
         "js": {
-            "pinging": "",
-            "success": "",
-            "error": "",
-            "ping_host": ""
+            "pinging": "Testuji...",
+            "success": "Test proběhl úspěšně",
+            "error": "Ping se nepodařilo provést",
+            "ping_host": "Provést Ping"
         }
     },
     "port-checker": {
         "meta": {
-            "title": "[Pending Translation] Port Checker Tool - Check Open Ports & Network Connectivity Free",
-            "description": "[Pending Translation] Free port checker tool to test if ports are open, closed, or filtered. Check TCP\/UDP ports instantly for network troubleshooting and security auditing.",
-            "h1": "[Pending Translation] Port Checker Tool",
-            "subtitle": "[Pending Translation] Check if ports are open on any server for troubleshooting connectivity"
+            "title": "Port Checker - Kontrola otevřených portů online zdarma",
+            "description": "Bezplatný nástroj pro kontrolu portů. Otestujte, zda jsou porty otevřené, zavřené nebo filtrované. Kontrolujte TCP/UDP porty okamžitě pro diagnostiku sítě.",
+            "h1": "Port Checker",
+            "subtitle": "Zkontrolujte, zda jsou porty otevřené na libovolném serveru"
         },
         "form": {
-            "host_label": "[Pending Translation] Host or IP Address",
-            "host_placeholder": "[Pending Translation] example.com or 8.8.8.8",
-            "port_label": "[Pending Translation] Port Number",
-            "port_placeholder": "[Pending Translation] 80",
-            "button": "[Pending Translation] Check Port"
+            "host_label": "Hostitel nebo IP adresa",
+            "host_placeholder": "např. google.com nebo 8.8.8.8",
+            "port_label": "Číslo portu",
+            "port_placeholder": "např. 80",
+            "button": "Zkontrolovat port"
         },
         "results": {
-            "title": ""
+            "title": "Výsledek kontroly portu"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Port Checker?",
-            "what_is_desc": "[Pending Translation] A Port Checker is a network diagnostic tool that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Common ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Checking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.",
-            "why_check_title": "[Pending Translation] Why Check Ports?",
-            "why_check_desc": "[Pending Translation] Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren't accessible, determining if the issue is with the service itself, firewall rules, or network routing.",
-            "common_ports_title": "[Pending Translation] Common Ports",
-            "port1": "[Pending Translation] <strong>Port 80:<\/strong> HTTP (web traffic)",
-            "port2": "[Pending Translation] <strong>Port 443:<\/strong> HTTPS (secure web traffic)",
-            "port3": "[Pending Translation] <strong>Port 22:<\/strong> SSH (secure shell access)",
-            "port4": "[Pending Translation] <strong>Port 21:<\/strong> FTP (file transfer)",
-            "port5": "[Pending Translation] <strong>Port 25:<\/strong> SMTP (email sending)",
-            "port6": "[Pending Translation] <strong>Port 3306:<\/strong> MySQL database",
-            "port7": "[Pending Translation] <strong>Port 3389:<\/strong> RDP (Remote Desktop)",
-            "security_title": "[Pending Translation] Security Implications",
-            "security_desc": "[Pending Translation] Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
+            "what_is_title": "Co je Port Checker?",
+            "what_is_desc": "Port Checker je diagnostický nástroj, který určuje, zda je konkrétní port TCP nebo UDP na serveru nebo zařízení otevřený (přijímá připojení), zavřený (odmítá připojení) nebo filtrovaný (blokovaný firewallem). Porty jsou virtuální koncové body pro síťovou komunikaci, přičemž každé číslo portu (1-65535) může hostit různé služby. Běžné porty zahrnují 80 pro HTTP webový provoz nebo 443 pro HTTPS.",
+            "why_check_title": "Proč kontrolovat porty?",
+            "why_check_desc": "Kontrola portů slouží k několika kritickým účelům. Správci systémů ověřují, že jsou služby dostupné po změnách konfigurace. Bezpečnostní experti hledají otevřené porty, aby identifikovali potenciální zranitelnosti. Vývojáři testují, zda jejich aplikace správně naslouchají na nastavených portech.",
+            "common_ports_title": "Běžné porty",
+            "port1": "<strong>Port 80:</strong> HTTP (webový provoz)",
+            "port2": "<strong>Port 443:</strong> HTTPS (zabezpečený webový provoz)",
+            "port3": "<strong>Port 22:</strong> SSH (zabezpečený vzdálený přístup)",
+            "port4": "<strong>Port 21:</strong> FTP (přenos souborů)",
+            "port5": "<strong>Port 25:</strong> SMTP (odesílání e-mailů)",
+            "port6": "<strong>Port 3306:</strong> MySQL databáze",
+            "port7": "<strong>Port 3389:</strong> RDP (vzdálená plocha Windows)",
+            "security_title": "Bezpečnostní důsledky",
+            "security_desc": "Otevřené porty představují potenciální vstupní body pro útočníky. Nejlepší bezpečnostní praxí je ponechat otevřené pouze nezbytné porty a všechny ostatní zavřít nebo filtrovat. Pravidelné skenování vlastních serverů pomáhá identifikovat nechtěně otevřené porty, které by mohly být zneužity."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Často kladené otázky",
+            "q1": "Co znamená, že je port filtrovaný?",
+            "a1": "Filtrovaný port znamená, že firewall nebo síťový filtr blokuje pakety tak, že nástroj nemůže určit, zda je port otevřený nebo zavřený.",
+            "q2": "Jak otevřít port na mém počítači?",
+            "a2": "Většinou musíte nastavit pravidlo ve Windows Firewallu a také nastavit \"Port Forwarding\" (přesměrování portů) na vašem routeru.",
+            "q3": "Můžu skenovat jakýkoli server?",
+            "a3": "Měli byste skenovat pouze servery, které vlastníte nebo k nimž máte svolení. Časté skenování cizích serverů může být považováno za útok.",
+            "q4": "Jaký je rozdíl mezi TCP a UDP porty?",
+            "a4": "TCP je orientovaný na spojení a zaručuje doručení dat (např. web). UDP je bezstavový a rychlejší, ale nezaručuje doručení (např. streamování, hry).",
+            "q5": "Proč můj port 80 ukazuje 'zavřeno', když web funguje?",
+            "a5": "Může to být způsobeno tím, že váš poskytovatel internetu blokuje příchozí porty na rezidenčních linkách, nebo váš server naslouchá pouze na lokální adrese."
         },
         "js": {
-            "checking": "",
-            "success": "",
-            "error": "",
-            "check_port": ""
+            "checking": "Kontroluji...",
+            "success": "Kontrola portu dokončena",
+            "error": "Při kontrole portu došlo k chybě",
+            "check_port": "Zkontrolovat port"
         }
     },
     "reverse-dns-lookup": {
         "meta": {
-            "title": "[Pending Translation] Reverse DNS Lookup - Free Online Tool",
-            "description": "[Pending Translation] Free online reverse DNS lookup tool. Find the hostname associated with any IP address instantly. Fast, secure, and easy to use.",
-            "h1": "[Pending Translation] Reverse DNS Lookup",
-            "subtitle": "[Pending Translation] Find the domain name or hostname associated with an IP address instantly"
+            "title": "Reverzní DNS Lookup - Bezplatný online nástroj",
+            "description": "Bezplatný nástroj pro reverzní vyhledávání DNS. Okamžitě najděte název hostitele přidružený k jakékoli IP adrese. Rychlé, bezpečné a snadné.",
+            "h1": "Reverzní DNS Lookup",
+            "subtitle": "Najděte název domény nebo hostitele přidružený k IP adrese okamžitě"
         },
         "form": {
-            "ip_label": "[Pending Translation] Enter IP Address",
-            "ip_placeholder": "[Pending Translation] e.g., 8.8.8.8",
-            "button": "[Pending Translation] Lookup Reverse DNS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "ip_label": "Zadejte IP adresu",
+            "ip_placeholder": "např. 8.8.8.8",
+            "button": "Vyhledat reverzní DNS",
+            "button_loading": "Vyhledávám..."
         },
         "results": {
-            "title": "[Pending Translation] Reverse DNS Results"
+            "title": "Výsledky reverzního DNS"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Reverse DNS Lookup?",
-            "what_is_desc": "[Pending Translation] Reverse DNS lookup (rDNS) is the process of determining the domain name or hostname associated with an IP address. Unlike a standard DNS lookup that converts a domain name to an IP address (forward lookup), rDNS does the opposite. It's often used to verify the identity of a server or to troubleshoot network issues.",
-            "why_use_title": "[Pending Translation] Why Use Reverse DNS Lookup?",
-            "why_use_desc": "[Pending Translation] Reverse DNS is widely used for security and verification purposes. It helps identify the source of incoming traffic, verify email senders (to prevent spam), and troubleshoot network connectivity issues. Many mail servers require valid rDNS records to accept incoming emails.",
-            "ptr_records_title": "[Pending Translation] Understanding PTR Records",
-            "ptr_record1": "[Pending Translation] <strong>PTR Record:<\/strong> A Pointer Record (PTR) is the type of DNS record used for reverse DNS lookups.",
-            "ptr_record2": "[Pending Translation] <strong>Mapping:<\/strong> It maps an IP address back to a hostname.",
-            "ptr_record3": "[Pending Translation] <strong>Verification:<\/strong> Crucial for email deliverability and security verification.",
-            "ptr_record4": "[Pending Translation] <strong>IP-to-Host:<\/strong> Essential for identifying the true owner of an IP address.",
-            "ptr_record5": "[Pending Translation] <strong>Spam Prevention:<\/strong> Used by mail servers to validate sender authenticity.",
-            "ptr_record6": "[Pending Translation] <strong>Network Logs:<\/strong> Helpful for making network logs human-readable by showing hostnames.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_cases_desc": "[Pending Translation] Common use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
+            "what_is_title": "Co je reverzní DNS Lookup?",
+            "what_is_desc": "Reverzní DNS lookup (rDNS) je proces určení názvu domény nebo hostitele přidruženého k IP adrese. Na rozdíl od standardního DNS vyhledávání, které převádí doménu na IP adresu, rDNS dělá opak. Často se používá k ověření identity serveru nebo k řešení síťových problémů.",
+            "why_use_title": "Proč používat reverzní DNS?",
+            "why_use_desc": "Reverzní DNS se široce používá pro bezpečnostní a ověřovací účely. Pomáhá identifikovat zdroj příchozího provozu, ověřovat odesílatele e-mailů (prevence spamu) a řešit problémy s připojením. Mnoho poštovních serverů vyžaduje platné rDNS záznamy pro přijetí e-mailů.",
+            "ptr_records_title": "Pochopení záznamů PTR",
+            "ptr_record1": "<strong>PTR záznam:</strong> Pointer Record (PTR) je typ DNS záznamu používaný pro reverzní DNS vyhledávání.",
+            "ptr_record2": "<strong>Mapování:</strong> Mapuje IP adresu zpět na název hostitele.",
+            "ptr_record3": "<strong>Ověření:</strong> Klíčové pro doručitelnost e-mailů a bezpečnostní prověření.",
+            "ptr_record4": "<strong>IP-na-Host:</strong> Nezbytné pro identifikaci skutečného vlastníka IP adresy.",
+            "ptr_record5": "<strong>Prevence spamu:</strong> Používáno poštovními servery k validaci pravosti odesílatele.",
+            "ptr_record6": "<strong>Síťové logy:</strong> Pomáhá zprůhlednit síťové záznamy zobrazením názvů hostitelů.",
+            "use_cases_title": "Běžné příklady použití",
+            "use_cases_desc": "Běžné případy zahrnují ověřování původu webového provozu, diagnostiku zpoždění sítě nebo problémů se směrováním, validaci konfigurací e-mailových serverů a identifikaci potenciálně škodlivých IP adres."
         },
         "faq": {
-            "title": "[Pending Translation] Frequently Asked Questions",
-            "q1": "[Pending Translation] What is a PTR record?",
-            "a1": "[Pending Translation] A PTR (Pointer) record is a type of DNS record that maps an IP address to a hostname. It is the core component of a reverse DNS lookup.",
-            "q2": "[Pending Translation] Why is reverse DNS important for email?",
-            "a2": "[Pending Translation] Many email providers use reverse DNS to verify that the sending server is legitimate. If a server's IP address doesn't have a matching rDNS record, its emails may be flagged as spam.",
-            "q3": "[Pending Translation] Can any IP address have a reverse DNS record?",
-            "a3": "[Pending Translation] Yes, but the owner of the IP address (typically the ISP or hosting provider) must configure the PTR record in their DNS settings."
+            "title": "Často kladené otázky",
+            "q1": "Co je to PTR záznam?",
+            "a1": "Záznam PTR (Pointer) je typ DNS záznamu, který mapuje IP adresu na název hostitele. Je základním prvkem reverzního DNS vyhledávání.",
+            "q2": "Proč je reverzní DNS důležité pro e-mail?",
+            "a2": "Mnoho poskytovatelů e-mailu používá rDNS k ověření, zda je odesílající server legitimní. Pokud IP serveru nemá odpovídající rDNS záznam, mohou být e-maily označeny jako spam.",
+            "q3": "Může mít každá IP adresa reverzní DNS záznam?",
+            "a3": "Ano, ale majitel IP adresy (obvykle ISP nebo poskytovatel hostingu) musí PTR záznam ve svém DNS nastavení nakonfigurovat.",
+            "q4": "Jak zjistím svou reverzní DNS?",
+            "a4": "Stačí zadat svou veřejnou IP adresu do našeho nástroje a ten vám okamžitě zobrazí přidružený záznam hostitele.",
+            "q5": "Znamená chybějící rDNS problém?",
+            "a5": "U běžných uživatelů nikoliv. U serverů, které odesílají e-maily nebo vyžadují vysokou úroveň důvěryhodnosti, je to však kritický nedostatek."
         }
     },
     "traceroute": {
         "meta": {
-            "title": "[Pending Translation] Traceroute - Free Online Tool",
-            "description": "[Pending Translation] Free online traceroute tool. Fast, secure and easy to use.",
-            "h1": "[Pending Translation] Traceroute",
-            "subtitle": "[Pending Translation] The best traceroute for developers and IT professionals"
+            "title": "Traceroute Online - Sledujte cestu síťových paketů",
+            "description": "Bezplatný online nástroj traceroute. Sledujte cestu paketů k jakékoli doméně nebo IP adrese. Odhalte zpoždění a problémy v síti.",
+            "h1": "Traceroute",
+            "subtitle": "Profesionální diagnostika síťové cesty pro vývojáře a IT experty"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "Hostitel nebo IP adresa",
+            "host_placeholder": "např. google.com nebo 8.8.8.8",
+            "button": "Spustit Traceroute",
+            "button_loading": "Sleduji cestu..."
         },
         "results": {
-            "title": ""
+            "title": "Výsledky Traceroute"
         },
         "content": {
-            "what_is_title": "[Pending Translation] What is Traceroute?",
-            "what_is_desc": "[Pending Translation] This is a free online tool to traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
+            "what_is_title": "Co je Traceroute?",
+            "what_is_desc": "Traceroute je nástroj pro diagnostiku sítě, který zobrazuje cestu (trasu) a měří zpoždění paketů napříč sítí Internet Protocol (IP). Umožňuje vidět každý router, přes který data procházejí na cestě k cíli.",
+            "why_use_title": "Proč používat Traceroute?",
+            "why_use_desc": "Pomáhá identifikovat, kde v síti dochází k latenci nebo výpadkům, zobrazením každého „skoku“ (hopu), přes který paket prochází. Je neocenitelný pro debugging síťových problémů a pochopení routování.",
+            "hops_title": "Porozumění skokům (hops)",
+            "hop1": "Každý řádek představuje router nebo uzel v síti.",
+            "hop2": "Zobrazuje se IP adresa a název hostitele daného uzlu.",
+            "hop3": "Měří se čas odezvy (latency) pro každý skok.",
+            "hop4": "Hvězdičky (*) značí vypršení časového limitu (timeout).",
+            "hop5": "Skoky pomáhají lokalizovat úzká hrdla v síti.",
+            "hop6": "Cílový uzel je posledním skokem v seznamu.",
+            "issues_title": "Běžné problémy v síti",
+            "issues_desc": "Traceroute může odhalit špatné směrování, přetížené uzly nebo firewally, které blokují ICMP pakety, což vede k 'Hvězdičkám' ve výsledcích."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Často kladené otázky",
+            "q1": "Co znamenají hvězdičky (*) v traceroute?",
+            "a1": "Hvězdičky znamenají, že uzel neodpověděl v časovém limitu. Často je to způsobeno firewallem, který zahazuje ICMP pakety, nebo přetížením routeru.",
+            "q2": "Jak číst výsledky traceroute?",
+            "a2": "Sledujte časy v milisekundách (ms). Pokud v určitém bodě čas prudce vzroste, pravděpodobně jste našli místo síťového přetížení.",
+            "q3": "Je online traceroute stejný jako v příkazovém řádku?",
+            "a3": "Princip je stejný, ale online nástroj spouští dotaz z našeho serveru, nikoliv z vašeho počítače, což je užitečné pro testování konektivity z jiného uzlu sítě.",
+            "q4": "Jaký je maximální počet skoků?",
+            "a4": "Většina nástrojů traceroute standardně používá limit 30 skoků, což v drtivé většině případů stačí pro dosažení jakéhokoli bodu na internetu.",
+            "q5": "Co je to latence v kontextu traceroute?",
+            "a5": "Latence je čas, který paket potřebuje k cestě do uzlu a zpět. Čím nižší je latence na každém skoku, tím je síťová cesta rychlejší."
         }
     },
     "user-agent-parser": {
         "meta": {
-            "title": "[Pending Translation] Free User Agent Parser",
-            "description": "[Pending Translation] Identify browser, OS, and device from User Agent string with our free tool.",
-            "h1": "[Pending Translation] User Agent Parser",
-            "subtitle": "[Pending Translation] Identify browser, OS, and device from User Agent string"
+            "title": "User Agent Parser - Identifikujte prohlížeč a OS",
+            "description": "Zjistěte prohlížeč, operační systém a typ zařízení ze řetězce User Agent pomocí našeho bezplatného nástroje.",
+            "h1": "User Agent Parser",
+            "subtitle": "Identifikujte prohlížeč, OS a zařízení z User Agent stringu"
         },
         "editor": {
-            "label_input": "[Pending Translation] User Agent String",
-            "ph_input": "[Pending Translation] Mozilla\/5.0...",
-            "btn_parse": "[Pending Translation] Parse",
-            "btn_use_my_ua": "[Pending Translation] Use My User Agent",
-            "label_browser": "[Pending Translation] Browser",
-            "label_os": "[Pending Translation] Operating System",
-            "label_device": "[Pending Translation] Device",
-            "label_raw": "[Pending Translation] Raw Engine info"
+            "label_input": "User Agent řetězec",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Analyzovat",
+            "btn_use_my_ua": "Použít můj User Agent",
+            "label_browser": "Prohlížeč",
+            "label_os": "Operační systém",
+            "label_device": "Zařízení",
+            "label_raw": "Syrové info o jádru"
         },
         "content": {
-            "p1": "[Pending Translation] Our free User Agent Parser instantly decodes user agent strings to identify the browser, operating system, device type, and engine version. Useful for developers debugging browser-specific issues or analyzing traffic sources.",
-            "features_title": "[Pending Translation] Features",
+            "p1": "Náš bezplatný nástroj User Agent Parser okamžitě dešifruje řetězce user agent a identifikuje prohlížeč, operační systém, typ zařízení a verzi jádra. Užitečné pro vývojáře ladící problémy specifické pro určité prohlížeče nebo analyzující zdroje návštěvnosti.",
+            "features_title": "Funkce",
             "features": {
                 "instant": {
-                    "title": "[Pending Translation] Instant Parsing",
-                    "desc": "[Pending Translation] Decode user agents in milliseconds"
+                    "title": "Okamžitá analýza",
+                    "desc": "Dekódujte user agenty během milisekund."
                 },
                 "detailed": {
-                    "title": "[Pending Translation] Detailed Info",
-                    "desc": "[Pending Translation] Extracts Browser, OS, Device, and Engine"
+                    "title": "Podrobné informace",
+                    "desc": "Extrahuje prohlížeč, OS, zařízení i jádro."
                 },
                 "auto": {
-                    "title": "[Pending Translation] Auto-Detect",
-                    "desc": "[Pending Translation] One-click to parse your own current user agent"
+                    "title": "Automatická detekce",
+                    "desc": "Jedním kliknutím analyzujete svůj vlastní aktuální user agent."
                 },
                 "free": {
-                    "title": "[Pending Translation] 100% Free",
-                    "desc": "[Pending Translation] Unlimited uses, no cost"
+                    "title": "100% Zdarma",
+                    "desc": "Neomezené použití bez jakýchkoliv nákladů."
                 }
             },
-            "uses_title": "[Pending Translation] Common Use Cases",
+            "uses_title": "Běžné příklady použití",
             "uses": {
                 "debugging": {
-                    "title": "[Pending Translation] Debugging",
-                    "desc": "[Pending Translation] Identify detailed browser versions for troubleshooting"
+                    "title": "Ladění (Debugging)",
+                    "desc": "Identifikace verzí prohlížečů pro řešení technických potíží."
                 },
                 "analytics": {
-                    "title": "[Pending Translation] Analytics",
-                    "desc": "[Pending Translation] Understand what devices and OSs your users are using"
+                    "title": "Analytika",
+                    "desc": "Zjistěte, jaká zařízení a systémy vaši uživatelé preferují."
                 },
                 "dev": {
-                    "title": "[Pending Translation] Development",
-                    "desc": "[Pending Translation] Verify user agent strings during testing"
+                    "title": "Vývoj",
+                    "desc": "Ověřování řetězců user agent během testování aplikací."
                 },
                 "security": {
-                    "title": "[Pending Translation] Security",
-                    "desc": "[Pending Translation] Analyze suspicious user agent strings in logs"
+                    "title": "Zabezpečení",
+                    "desc": "Analýza podezřelých user agentů v serverových lozích."
                 }
             },
-            "how_to_title": "[Pending Translation] How to Use",
+            "how_to_title": "Jak nástroj používat",
             "how_to": {
                 "step1": {
-                    "title": "[Pending Translation] Enter String",
-                    "desc": "[Pending Translation] Paste a User Agent string or click \"Use My User Agent\""
+                    "title": "Vložte řetězec",
+                    "desc": "Vložte User Agent řetězec nebo klikněte na \"Použít můj User Agent\"."
                 },
                 "step2": {
-                    "title": "[Pending Translation] Parse",
-                    "desc": "[Pending Translation] Click \"Parse\" to decode the string"
+                    "title": "Analyzujte",
+                    "desc": "Klikněte na \"Analyzovat\" pro dekódování řetězce."
                 },
                 "step3": {
-                    "title": "[Pending Translation] View Results",
-                    "desc": "[Pending Translation] See the broken-down details for Browser, OS, and Device"
+                    "title": "Zobrazte výsledky",
+                    "desc": "Prohlédněte si rozepsané detaily o prohlížeči, OS a zařízení."
                 }
             },
-            "faq_title": "[Pending Translation] Frequently Asked Questions",
+            "faq_title": "Často kladené otázky",
             "faq": {
-                "q1": "[Pending Translation] What is a User Agent?",
-                "a1": "[Pending Translation] A User Agent is a string of text sent by your web browser to every website you visit, identifying the browser, version, operating system, and device type.",
-                "q2": "[Pending Translation] Is this parser accurate?",
-                "a2": "[Pending Translation] It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.",
-                "q3": "[Pending Translation] Is my data private?",
-                "a3": "[Pending Translation] Yes, parsing happens locally in your browser. We do not store your user agent data."
+                "q1": "Co je to User Agent?",
+                "a1": "User Agent je textový řetězec, který váš prohlížeč odesílá každému webu, který navštívíte. Identifikuje prohlížeč, jeho verzi, OS a typ zařízení.",
+                "q2": "Je tento parser přesný?",
+                "a2": "Využívá standardní vzory pro identifikaci běžných user agentů. Je však důležité vědět, že user agent strings lze podvrhnout (spoofing).",
+                "q3": "Jsou moje data v bezpečí?",
+                "a3": "Ano, analýza probíhá lokálně ve vašem prohlížeči. Žádná data o vašem user agentovi neukládáme.",
+                "q4": "Proč je User Agent tak dlouhý a složitý?",
+                "a4": "Historicky prohlížeče přidávaly jména svých konkurentů do svých řetězců, aby zajistily kompatibilitu se staršími weby, což vedlo k dnešní složité struktuře.",
+                "q5": "Změní se můj User Agent, když aktualizuji prohlížeč?",
+                "a5": "Ano, každá aktualizace prohlížeče obvykle mění číslo verze v řetězci User Agent."
             }
         }
     },
     "what-is-my-ip": {
         "meta": {
-            "title": "[Pending Translation] What is My IP Address? - Check Your IP Location Free",
-            "description": "[Pending Translation] Find out your public IP address instantly. Check your IPv4\/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.",
-            "h1": "[Pending Translation] What is My IP Address?",
-            "subtitle": "[Pending Translation] Instantly discover your public IP address with detailed ISP information"
+            "title": "Jaká je moje IP adresa? - Zjistěte svou lokaci a IP zdarma",
+            "description": "Zjistěte svou veřejnou IP adresu okamžitě. Zkontrolujte IPv4/IPv6, poskytovatele, polohu a detaily připojení zdarma. Nezbytné pro zabezpečení.",
+            "h1": "Jaká je moje IP adresa?",
+            "subtitle": "Okamžitě zjistěte svou veřejnou IP adresu s podrobnými informacemi o ISP"
         },
         "ui": {
-            "loading": "",
-            "your_ip_title": "",
-            "copy_button": "",
-            "timezone": ""
+            "loading": "Načítám vaši IP...",
+            "your_ip_title": "Vaše veřejná IP adresa",
+            "copy_button": "Kopírovat",
+            "timezone": "Časové pásmo"
         },
         "results": {
-            "location": "",
-            "isp": "",
-            "country": ""
+            "location": "Lokalita",
+            "isp": "Poskytovatel",
+            "country": "Země"
         },
         "content": {
-            "main_title": "[Pending Translation] What Is My IP Address - Free IP Lookup Tool",
-            "main_desc": "[Pending Translation] Find your public IP address instantly with our free IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.",
-            "what_is_title": "[Pending Translation] What is My IP Address?",
-            "what_is_desc": "[Pending Translation] Your IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.",
-            "ipv4_vs_ipv6_title": "[Pending Translation] IPv4 vs IPv6 Addresses",
-            "ipv4_title": "[Pending Translation] IPv4 Address",
-            "ipv4_format": "[Pending Translation] <strong>Format:<\/strong> 192.168.1.1 (four numbers 0-255 separated by dots)",
-            "ipv4_total": "[Pending Translation] <strong>Total Addresses:<\/strong> ~4.3 billion addresses",
-            "ipv4_desc": "[Pending Translation] Most common format worldwide, but running out of available addresses due to internet growth",
-            "ipv6_title": "[Pending Translation] IPv6 Address",
-            "ipv6_format": "[Pending Translation] <strong>Format:<\/strong> 2001:0db8:85a3::8a2e:0370:7334",
-            "ipv6_total": "[Pending Translation] <strong>Total Addresses:<\/strong> 340 undecillion addresses",
-            "ipv6_desc": "[Pending Translation] Newer format with virtually unlimited addresses, gradually replacing IPv4",
-            "why_check_title": "[Pending Translation] Why Check Your IP?",
-            "why_check_desc": "[Pending Translation] Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.",
-            "public_vs_private_title": "[Pending Translation] Public vs Private IP Addresses",
-            "public_ip_title": "[Pending Translation] 🌐 Public IP Address",
-            "public_ip_desc": "[Pending Translation] Your unique address on the internet, visible to all websites and services you visit.",
-            "public_ip_example": "[Pending Translation] <strong>Example:<\/strong> 203.0.113.45",
-            "public_ip_note": "[Pending Translation] Assigned by your ISP and used for all internet communication",
-            "private_ip_title": "[Pending Translation] 🏠 Private IP Address",
-            "private_ip_desc": "[Pending Translation] Your device's address on your local network, not visible on the internet.",
-            "private_ip_example": "[Pending Translation] <strong>Example:<\/strong> 192.168.1.100",
-            "private_ip_note": "[Pending Translation] Used for communication within your home or office network",
-            "security_title": "[Pending Translation] IP Address Security & Privacy",
-            "security_desc1": "[Pending Translation] Your IP address reveals your approximate location (city\/region), ISP, and can be used to track your online activity across websites. While it doesn't expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.",
-            "security_desc2": "[Pending Translation] <strong>Privacy Protection:<\/strong> Use a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN's IP instead of yours. Our tool shows exactly what information websites can see about your connection.",
-            "dynamic_vs_static_title": "[Pending Translation] Dynamic vs Static IP Addresses",
-            "dynamic_ip": "[Pending Translation] <strong>Dynamic IP:<\/strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.",
-            "static_ip": "[Pending Translation] <strong>Static IP:<\/strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.",
-            "privacy_tips_title": "[Pending Translation] Privacy & Security Tips",
-            "privacy_tip1": "[Pending Translation] • Never share your IP address publicly on forums or social media",
-            "privacy_tip2": "[Pending Translation] • Use a VPN when connecting to public WiFi networks",
-            "privacy_tip3": "[Pending Translation] • Enable your router's firewall to block unauthorized access",
-            "privacy_tip4": "[Pending Translation] • Regularly check your IP to detect unauthorized VPN disconnections",
-            "privacy_tip5": "[Pending Translation] • Be aware that websites log your IP for security and analytics"
+            "main_title": "Jaká je moje IP adresa - Vyhledávání IP zdarma",
+            "main_desc": "Zjistěte svou veřejnou IP adresu okamžitě pomocí našeho bezplatného nástroje. Objevte svou IPv4 nebo IPv6 adresu, přesnou geografickou polohu (město, region, země), informace o poskytovateli internetu (ISP), časové pásmo a kompletní síťové detaily. Nezbytné pro konfiguraci sítě, testování zabezpečení, nastavení vzdáleného přístupu a ověření VPN.",
+            "what_is_title": "Co je moje IP adresa?",
+            "what_is_desc": "Vaše IP adresa je jedinečný číselný identifikátor přiřazený vašemu zařízení při připojení k internetu. Umožňuje webům a službám komunikovat s vaším zařízením a identifikovat vaši přibližnou polohu.",
+            "ipv4_vs_ipv6_title": "IPv4 vs. IPv6 adresy",
+            "ipv4_title": "IPv4 adresa",
+            "ipv4_format": "<strong>Formát:</strong> 192.168.1.1 (čtyři čísla 0-255 oddělená tečkami)",
+            "ipv4_total": "<strong>Celkem adres:</strong> ~4,3 miliardy adres",
+            "ipv4_desc": "Nejběžnější formát, ale kvůli růstu internetu již docházejí volné adresy.",
+            "ipv6_title": "IPv6 adresa",
+            "ipv6_format": "<strong>Formát:</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>Celkem adres:</strong> 340 undecillionů adres",
+            "ipv6_desc": "Novější formát s prakticky neomezeným počtem adres, postupně nahrazuje IPv4.",
+            "why_check_title": "Proč kontrolovat svou IP?",
+            "why_check_desc": "Znalost vaší IP adresy je užitečná pro řešení problémů se sítí, ověřování připojení VPN, kontrolu, zda je vaše poloha maskována, a pochopení toho, jaké informace o vás weby vidí.",
+            "public_vs_private_title": "Veřejná vs. privátní IP adresa",
+            "public_ip_title": "🌐 Veřejná IP adresa",
+            "public_ip_desc": "Vaše jedinečná adresa na internetu, viditelná pro všechny navštívené weby.",
+            "public_ip_example": "<strong>Příklad:</strong> 203.0.113.45",
+            "public_ip_note": "Přiřazena vaším poskytovatelem (ISP) pro veškerou internetovou komunikaci.",
+            "private_ip_title": "🏠 Privátní IP adresa",
+            "private_ip_desc": "Adresa vašeho zařízení ve vaší místní síti, není viditelná na internetu.",
+            "private_ip_example": "<strong>Příklad:</strong> 192.168.1.100",
+            "private_ip_note": "Používá se pro komunikaci v rámci vaší domácí nebo kancelářské sítě.",
+            "security_title": "Zabezpečení a soukromí IP adresy",
+            "security_desc1": "Vaše IP adresa odhaluje vaši přibližnou polohu a poskytovatele. I když přímo neukazuje vaši domovní adresu, může být v kombinaci s dalšími daty použita ke sledování vaší aktivity online.",
+            "security_desc2": "<strong>Ochrana soukromí:</strong> Používejte VPN (virtuální privátní síť) k maskování své skutečné IP a zvýšení soukromí. Náš nástroj vám ukáže přesně to, co o vašem připojení vidí ostatní weby.",
+            "dynamic_vs_static_title": "Dynamická vs. statická IP adresa",
+            "dynamic_ip": "<strong>Dynamická IP:</strong> Mění se periodicky (denně, týdně nebo po restartu routeru). Většina domácností má dynamickou IP přidělenou automaticky.",
+            "static_ip": "<strong>Statická IP:</strong> Nikdy se nemění. Obvykle se používá pro firemní linky, webové servery nebo vzdálený přístup.",
+            "privacy_tips_title": "Tipy pro soukromí a bezpečnost",
+            "privacy_tip1": "• Nikdy nesdílejte svou IP adresu veřejně na fórech nebo sociálních sítích.",
+            "privacy_tip2": "• Na veřejných Wi-Fi sítích vždy používejte VPN.",
+            "privacy_tip3": "• Povolte firewall na svém routeru pro blokování neoprávněného přístupu.",
+            "privacy_tip4": "• Pravidelně kontrolujte svou IP, abyste zjistili případné výpadky VPN.",
+            "privacy_tip5": "• Mějte na paměti, že weby si logují vaši IP z bezpečnostních důvodů."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Často kladené otázky",
+            "q1": "Může někdo zjistit mou přesnou adresu podle IP?",
+            "a1": "Obvykle ne. IP ukazuje město nebo region. Přesnou adresu a jméno zná pouze váš poskytovatel internetu.",
+            "q2": "Jak změním svou IP adresu?",
+            "a2": "Svou veřejnou IP můžete změnit pomocí VPN, proxy serveru, nebo někdy pouhým restartem routeru.",
+            "q3": "Proč moje IP ukazuje jinou zemi?",
+            "a3": "To se děje, pokud používáte VPN, proxy, nebo pokud váš poskytovatel (ISP) používá bránu v jiné zemi.",
+            "q4": "Vidí mě weby v Inkognito módu?",
+            "a4": "Ano, Inkognito mód pouze neukládá historii ve vašem prohlížeči, ale vaše IP adresa je pro weby stále viditelná.",
+            "q5": "Je moje IP adresa nebezpečná?",
+            "a5": "IP adresa sama o sobě není nebezpečná, je to nezbytná součást fungování internetu. Je však dobré ji zbytečně nesdělovat."
         }
     },
     "what-is-my-isp": {
         "meta": {
-            "title": "[Pending Translation] What is My ISP? - Check Internet Service Provider Free",
-            "description": "[Pending Translation] Find out your Internet Service Provider (ISP) instantly. Check ISP name, organization, ASN, and IP address information for free.",
-            "h1": "[Pending Translation] What is My ISP?",
-            "subtitle": "[Pending Translation] Identify your Internet Service Provider with connection details"
+            "title": "Jaký je můj ISP? - Zjistěte svého poskytovatele internetu zdarma",
+            "description": "Zjistěte svého poskytovatele internetových služeb (ISP) okamžitě. Zkontrolujte název ISP, organizaci, ASN a detaily IP adresy zdarma.",
+            "h1": "Jaký je můj ISP?",
+            "subtitle": "Identifikujte svého poskytovatele internetu a detaily připojení"
         },
         "content": {
-            "loading": "[Pending Translation] Loading ISP information...",
-            "your_isp_title": "[Pending Translation] Your Internet Service Provider",
-            "network_label": "[Pending Translation] Network",
-            "location_label": "[Pending Translation] Location",
-            "main_title": "[Pending Translation] What Is My ISP - Internet Service Provider Lookup Tool",
-            "main_desc": "[Pending Translation] Instantly identify your Internet Service Provider (ISP), organization name, network details, and connection information. Our free ISP lookup tool reveals your ISP name, ASN (Autonomous System Number), IP address, location, and network infrastructure. Perfect for verifying VPN connections, troubleshooting network issues, confirming business internet lines, and understanding your network routing.",
-            "info_title": "[Pending Translation] What Information Can You Find?",
-            "info1": "[Pending Translation] <strong>ISP Name:<\/strong> The company providing your internet connection",
-            "info2": "[Pending Translation] <strong>Organization:<\/strong> The organization or entity managing your network connection",
-            "info3": "[Pending Translation] <strong>ASN:<\/strong> Unique network identifier for routing and peering",
-            "info4": "[Pending Translation] <strong>Location:<\/strong> City, region, and country associated with your connection",
-            "info5": "[Pending Translation] <strong>Network Details:<\/strong> IP range, subnet information, and network infrastructure data",
-            "why_use_title": "[Pending Translation] Why Use This Tool?",
-            "why_use1": "[Pending Translation] Verify you're connected through the correct internet provider",
-            "why_use2": "[Pending Translation] Troubleshoot network connectivity and performance issues",
-            "why_use3": "[Pending Translation] Check if you're using a VPN or proxy service correctly",
-            "why_use4": "[Pending Translation] Identify your network for security and privacy purposes",
-            "why_use5": "[Pending Translation] Verify ISP claims about service coverage and infrastructure",
-            "why_use6": "[Pending Translation] Research network routing and peering relationships",
-            "why_use7": "[Pending Translation] Confirm business internet connections and dedicated lines",
-            "why_use8": "[Pending Translation] Detect unauthorized network access or connection hijacking",
-            "asn_title": "[Pending Translation] Understanding ASN (Autonomous System Number)",
-            "asn_desc": "[Pending Translation] An Autonomous System Number (ASN) is a globally unique identifier assigned to a network or group of networks under a single administrative control. ISPs, large organizations, and content delivery networks each have their own ASN. This number is used in BGP (Border Gateway Protocol) routing to determine how internet traffic flows between different networks. Knowing your ASN helps identify your network provider and understand routing paths.",
-            "use_cases_title": "[Pending Translation] Common Use Cases",
-            "use_case1_title": "[Pending Translation] 🔧 Network Troubleshooting",
-            "use_case1_desc": "[Pending Translation] Identify ISP-related issues, verify routing paths, and diagnose connection problems",
-            "use_case2_title": "[Pending Translation] 🔒 VPN Verification",
-            "use_case2_desc": "[Pending Translation] Confirm your VPN is working by checking if ISP changes when connected",
-            "use_case3_title": "[Pending Translation] 🛡️ Security Audits",
-            "use_case3_desc": "[Pending Translation] Verify connection authenticity and detect unauthorized network access",
-            "use_case4_title": "[Pending Translation] 💼 Business Verification",
-            "use_case4_desc": "[Pending Translation] Confirm dedicated business lines and enterprise internet connections",
-            "isp_types_title": "[Pending Translation] Types of ISPs",
-            "isp_type1": "[Pending Translation] <strong>DSL ISPs:<\/strong> Internet over telephone lines (ADSL, VDSL)",
-            "isp_type2": "[Pending Translation] <strong>Cable ISPs:<\/strong> High-speed internet via coaxial cable infrastructure",
-            "isp_type3": "[Pending Translation] <strong>Fiber Optic ISPs:<\/strong> Ultra-fast connections using fiber optic cables",
-            "isp_type4": "[Pending Translation] <strong>Wireless\/Mobile ISPs:<\/strong> 4G\/5G cellular internet connections",
-            "isp_type5": "[Pending Translation] <strong>Satellite ISPs:<\/strong> Internet via satellite for remote areas",
-            "isp_type6": "[Pending Translation] <strong>Business ISPs:<\/strong> Dedicated enterprise-grade connections with SLAs",
-            "privacy_note_title": "[Pending Translation] Privacy Note",
-            "privacy_note_desc": "[Pending Translation] Your ISP can see all unencrypted internet traffic and the websites you visit (but not HTTPS content). They may log connection data, browsing history, and DNS queries. Use a VPN to encrypt your traffic and prevent ISP monitoring. Our tool only displays publicly available information that websites can already see."
+            "loading": "Načítám informace o ISP...",
+            "your_isp_title": "Váš poskytovatel internetu",
+            "network_label": "Síť",
+            "location_label": "Lokalita",
+            "main_title": "Jaký je můj ISP - Vyhledávání poskytovatele internetu",
+            "main_desc": "Okamžitě identifikujte svého poskytovatele internetových služeb (ISP), název organizace, detaily sítě a informace o připojení. Náš bezplatný nástroj pro vyhledávání ISP odhaluje název vašeho ISP, ASN (Autonomous System Number), IP adresu a síťovou infrastrukturu. Ideální pro ověřování připojení VPN, řešení problémů s rychlostí a pochopení routování sítě.",
+            "info_title": "Jaké informace můžete zjistit?",
+            "info1": "<strong>Název ISP:</strong> Společnost, která vám poskytuje internetové připojení.",
+            "info2": "<strong>Organizace:</strong> Subjekt spravující vaše síťové připojení.",
+            "info3": "<strong>ASN:</strong> Unikátní identifikátor sítě pro směrování (peering).",
+            "info4": "<strong>Lokalita:</strong> Město, region a země spojená s vaším připojením.",
+            "info5": "<strong>Síťové detaily:</strong> Rozsah IP adres a data o síťové infrastruktuře.",
+            "why_use_title": "Proč používat tento nástroj?",
+            "why_use1": "Ověřte si, zda jste připojeni přes správného poskytovatele.",
+            "why_use2": "Diagnostikujte problémy s konektivitou a výkonem sítě.",
+            "why_use3": "Zkontrolujte, zda vaše VPN nebo proxy funguje správně.",
+            "why_use4": "Identifikujte svou síť pro účely zabezpečení a soukromí.",
+            "why_use5": "Ověřte tvrzení poskytovatele o kvalitě infrastruktury.",
+            "why_use6": "Zkoumejte síťové směrování a vztahy mezi partnery (peering).",
+            "why_use7": "Potvrďte firemní internetové linky a dedikované sítě.",
+            "why_use8": "Odhalte neoprávněný přístup k síti nebo únos připojení.",
+            "asn_title": "Pochopení ASN (Autonomous System Number)",
+            "asn_desc": "Číslo autonomního systému (ASN) je globálně unikátní identifikátor přiřazený síti nebo skupině sítí pod jednou správou. ISP, velké organizace a CDN mají vlastní ASN. Toto číslo se používá v protokolu BGP k určení cesty internetového provozu.",
+            "use_cases_title": "Běžné příklady použití",
+            "use_case1_title": "🔧 Diagnostika sítě",
+            "use_case1_desc": "Identifikace problémů na straně poskytovatele a ověření směrovacích cest.",
+            "use_case2_title": "🔒 Verifikace VPN",
+            "use_case2_desc": "Potvrďte funkčnost VPN kontrolou, zda se váš ISP po připojení změní.",
+            "use_case3_title": "🛡️ Bezpečnostní audit",
+            "use_case3_desc": "Ověření pravosti připojení a detekce neoprávněného přístupu.",
+            "use_case4_title": "💼 Firemní ověření",
+            "use_case4_desc": "Potvrzení dedikovaných firemních linek a podnikových připojení.",
+            "isp_types_title": "Typy poskytovatelů (ISP)",
+            "isp_type1": "<strong>DSL ISP:</strong> Internet přes telefonní linky (ADSL, VDSL).",
+            "isp_type2": "<strong>Kabeloví ISP:</strong> Vysokorychlostní internet přes koaxiální kabely.",
+            "isp_type3": "<strong>Optičtí ISP:</strong> Ultrarychlé připojení pomocí optických vláken.",
+            "isp_type4": "<strong>Bezdrátoví/Mobilní ISP:</strong> Internetové připojení 4G/5G.",
+            "isp_type5": "<strong>Satelitní ISP:</strong> Internet přes satelit pro odlehlé oblasti.",
+            "isp_type6": "<strong>Business ISP:</strong> Firemní linky s garantovanou dostupností (SLA).",
+            "privacy_note_title": "Poznámka k soukromí",
+            "privacy_note_desc": "Váš poskytovatel může vidět nešifrovaný provoz a navštívené weby (nikoliv však obsah HTTPS). Pro vyšší soukromí používejte VPN. Náš nástroj zobrazuje pouze veřejně dostupné informace, které o vás weby již vědí."
         },
         "results": {
-            "ip_address": "",
-            "asn": ""
+            "ip_address": "IP adresa",
+            "asn": "Číslo ASN"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Často kladené otázky",
+            "q1": "Kdo je můj ISP?",
+            "a1": "Váš ISP je společnost, které platíte za internetové připojení. Může to být místní poskytovatel nebo velká telekomunikační firma.",
+            "q2": "Změní se můj ISP, když použiji VPN?",
+            "a2": "Fyzicky ne, ale pro weby se bude zdát, že váš ISP je společnost, která provozuje server VPN.",
+            "q3": "Co je to ASN?",
+            "a3": "ASN je unikátní číslo vaší sítě na globálním internetu. Pomáhá routerům vědět, kam poslat vaše data.",
+            "q4": "Můžu mít více poskytovatelů najednou?",
+            "a4": "Ano, některé firmy nebo nároční uživatelé používají dvě linky od různých ISP pro zálohu (failover).",
+            "q5": "Je moje ISP informace veřejná?",
+            "a5": "Ano, každý web, který navštívíte, může zjistit vašeho poskytovatele podle vaší veřejné IP adresy."
         },
         "js": {
-            "error_loading": ""
+            "error_loading": "Chyba při načítání informací o ISP"
         }
     },
     "whois-lookup": {
         "meta": {
-            "title": "[Pending Translation] WHOIS Lookup Tool - Domain Registration Information Free",
-            "description": "[Pending Translation] Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.",
-            "h1": "[Pending Translation] WHOIS Lookup Tool",
-            "subtitle": "[Pending Translation] Query WHOIS database for domain registration & ownership details"
+            "title": "Nástroj WHOIS Lookup - Informace o registraci domény zdarma",
+            "description": "Bezplatný nástroj WHOIS pro kontrolu registrace domény. Zjistěte registrátora, jmenné servery, datum vypršení a stav domény okamžitě.",
+            "h1": "WHOIS Lookup",
+            "subtitle": "Dotazujte se na databázi WHOIS pro informace o vlastnictví domény"
         },
         "form": {
-            "domain_label": "[Pending Translation] Domain Name",
-            "domain_placeholder": "[Pending Translation] example.com",
-            "button": "[Pending Translation] Lookup WHOIS",
-            "button_loading": "[Pending Translation] Looking up..."
+            "domain_label": "Název domény",
+            "domain_placeholder": "např. google.com",
+            "button": "Vyhledat WHOIS",
+            "button_loading": "Vyhledávám..."
         },
         "content": {
-            "form_hint": "[Pending Translation] Enter domain without http:\/\/ or https:\/\/",
-            "what_is_title": "[Pending Translation] What is WHOIS Lookup?",
-            "what_is_desc": "[Pending Translation] WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.",
-            "why_use_title": "[Pending Translation] Why Use WHOIS Lookup?",
-            "why_use_desc": "[Pending Translation] WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors' domains.",
-            "key_info_title": "[Pending Translation] Key Information Provided",
-            "key_info1": "[Pending Translation] <strong>Registrant Information:<\/strong> Domain owner details (may be privacy protected)",
-            "key_info2": "[Pending Translation] <strong>Registration Dates:<\/strong> When domain was registered and last updated",
-            "key_info3": "[Pending Translation] <strong>Expiration Date:<\/strong> When domain registration expires",
-            "key_info4": "[Pending Translation] <strong>Registrar:<\/strong> Company managing the domain registration",
-            "key_info5": "[Pending Translation] <strong>Name Servers:<\/strong> DNS servers hosting the domain",
-            "key_info6": "[Pending Translation] <strong>Domain Status:<\/strong> Current status codes and locks",
-            "how_to_title": "[Pending Translation] How to Use",
-            "how_to1": "[Pending Translation] Enter the domain name you want to lookup",
-            "how_to2": "[Pending Translation] Click \"Lookup WHOIS\" button",
-            "how_to3": "[Pending Translation] Review comprehensive registration information",
-            "how_to4": "[Pending Translation] Use the data for your research or verification needs",
-            "privacy_title": "[Pending Translation] Privacy and WHOIS",
-            "privacy_desc": "[Pending Translation] Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws."
+            "form_hint": "Zadejte doménu bez http:// nebo https://",
+            "what_is_title": "Co je WHOIS Lookup?",
+            "what_is_desc": "WHOIS je protokol, který poskytuje informace o registraci doménových jmen. Odhaluje podrobnosti o vlastnictví, datech registrace, expiraci, jmenných serverech a registrátorovi domény.",
+            "why_use_title": "Proč používat WHOIS Lookup?",
+            "why_use_desc": "WHOIS lookup je nezbytný pro ověření vlastnictví domény, kontrolu dostupnosti, vyšetřování podezřelých webů, sledování expirace domény a průzkum konkurence.",
+            "key_info_title": "Klíčové poskytované informace",
+            "key_info1": "<strong>Informace o registrantovi:</strong> Podrobnosti o vlastníku (mohou být skryté).",
+            "key_info2": "<strong>Data registrace:</strong> Kdy byla doména registrována a naposledy aktualizována.",
+            "key_info3": "<strong>Datum expirace:</strong> Kdy registrace domény vyprší.",
+            "key_info4": "<strong>Registrátor:</strong> Společnost spravující registraci domény.",
+            "key_info5": "<strong>Jmenné servery:</strong> DNS servery hostující doménu.",
+            "key_info6": "<strong>Stav domény:</strong> Aktuální stavové kódy a zámky domény.",
+            "how_to_title": "Jak nástroj používat",
+            "how_to1": "Zadejte název domény, kterou chcete vyhledat.",
+            "how_to2": "Klikněte na tlačítko \"Vyhledat WHOIS\".",
+            "how_to3": "Prohlédněte si komplexní registrační informace.",
+            "how_to4": "Použijte data pro svůj výzkum nebo ověření.",
+            "privacy_title": "Soukromí a WHOIS",
+            "privacy_desc": "Mnoho registrátorů nabízí služby ochrany soukromí WHOIS, které maskují osobní údaje. Na dostupnost dat mají velký vliv také nařízení jako GDPR, kvůli kterým jsou osobní údaje často anonymizovány."
         },
         "results": {
-            "title": ""
+            "title": "Výsledky WHOIS pro"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": ""
+            "title": "Často kladené otázky",
+            "q1": "Co je to ochrana soukromí WHOIS?",
+            "a1": "Je to služba, která v databázi WHOIS nahrazuje vaše osobní údaje údaji zprostředkovatelské společnosti, aby vás chránila před spamem.",
+            "q2": "Proč jsou některé údaje ve WHOIS skryté?",
+            "a2": "Kvůli ochraně soukromí (GDPR) nebo aktivované službě WHOIS Privacy. Většina evropských domén má údaje o vlastníkovi skryté.",
+            "q3": "Můžu koupit doménu prostřednictvím WHOIS?",
+            "a3": "WHOIS vám ukáže, kdo doménu vlastní. Pokud je na prodej, můžete zkusit kontaktovat vlastníka nebo registrátora.",
+            "q4": "Jak často se databáze WHOIS aktualizuje?",
+            "a4": "Většinou se změny projeví během několika hodin po aktualizaci u registrátora.",
+            "q5": "Je vyhledávání WHOIS zdarma?",
+            "a5": "Ano, dotazy do veřejných WHOIS databází jsou prostřednictvím našeho nástroje zcela zdarma."
         }
     }
 }
