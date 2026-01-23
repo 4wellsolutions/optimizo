@@ -1,735 +1,735 @@
 {
- "dns-lookup": {
- "meta": {
-  "title": "Công Cụ Tra Cứu DNS - Kiểm Tra Bản Ghi DNS Trực Tuyến Miễn Phí",
-  "description": "Công cụ tra cứu DNS miễn phí để kiểm tra các bản ghi DNS cho bất kỳ tên miền nào. Xem các bản ghi A, AAAA, MX, NS, TXT, CNAME ngay lập tức. Thiết yếu để khắc phục sự cố email và cấu hình tên miền.",
-  "h1": "Công Cụ Tra Cứu DNS",
-  "subtitle": "Truy vấn các bản ghi DNS để tìm nameserver, các bản ghi MX, A, CNAME & TXT ngay lập tức"
- },
- "form": {
-  "domain_label": "Tên Miền",
-  "domain_placeholder": "example.com",
-  "button": "Tra Cứu DNS"
- },
- "results": {
-  "title": ""
- },
- "content": {
-  "what_is_title": "Tra Cứu DNS Là Gì?",
-  "what_is_desc": "Tra cứu DNS là một công cụ truy vấn các máy chủ Hệ thống Tên Miền để lấy các bản ghi DNS cho một tên miền. Các bản ghi DNS chứa thông tin quan trọng về cách một tên miền được cấu hình, bao gồm máy chủ thư (bản ghi MX), nameserver (bản ghi NS), địa chỉ IP (bản ghi A/AAAA) và các bản ghi văn bản (bản ghi TXT) được sử dụng để xác minh và bảo mật.",
-  "why_use_title": "Tại Sao Nên Sử Dụng Tra Cứu DNS?",
-  "why_use_desc": "Tra cứu DNS là thiết yếu để khắc phục các sự cố phân phối email, xác minh cấu hình tên miền, kiểm tra cài đặt nameserver, xác thực các bản ghi SPF và DKIM, và hiểu cách một tên miền được thiết lập. Nó được sử dụng bởi các quản trị viên hệ thống, nhà phát triển web và các chuyên gia CNTT hàng ngày.",
-  "record_types_title": "Các Loại Bản Ghi DNS",
-  "a_record": "<strong>Bản ghi A:</strong> Ánh xạ tên miền tới địa chỉ IPv4",
-  "aaaa_record": "<strong>Bản ghi AAAA:</strong> Ánh xạ tên miền tới địa chỉ IPv6",
-  "mx_record": "<strong>Bản ghi MX:</strong> Thông tin máy chủ thư",
-  "ns_record": "<strong>Bản ghi NS:</strong> Thông tin nameserver",
-  "txt_record": "<strong>Bản ghi TXT:</strong> Các bản ghi văn bản để xác minh",
-  "cname_record": "<strong>Bản ghi CNAME:</strong> Bí danh tên chính tắc"
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": "",
-  "q4": "",
-  "a4": "",
-  "q5": "",
-  "a5": ""
- },
- "js": {
-  "looking_up": "",
-  "records_label": "",
-  "success": "",
-  "error": "",
-  "lookup_dns": ""
- }
- },
- "domain-to-ip": {
- "meta": {
-  "title": "Bộ Chuyển Đổi Tên Miền Sang IP - Tìm Địa Chỉ IP của Bất Kỳ Tên Miền Nào Miễn Phí",
-  "description": "Công cụ tra cứu tên miền sang IP miễn phí. Chuyển đổi ngay lập tức bất kỳ tên miền nào thành địa chỉ IP của nó. Thiết yếu để khắc phục sự cố mạng, cấu hình máy chủ và xác minh DNS.",
-  "h1": "Bộ Chuyển Đổi Tên Miền Sang IP",
-  "subtitle": "Phân giải tên miền thành địa chỉ IP với thông tin DNS chi tiết"
- },
- "form": {
-  "domain_label": "Nhập Tên Miền",
-  "domain_placeholder": "example.com",
-  "domain_hint": "Nhập tên miền không có http:// hoặc https://",
-  "button": "Tra Cứu Địa Chỉ IP"
- },
- "results": {
-  "title": "",
-  "domain_label": "",
-  "ip_label": ""
- },
- "content": {
-  "main_title": "Bộ Chuyển Đổi Tên Miền Sang IP",
-  "main_subtitle": "Chuyển đổi bất kỳ tên miền nào thành địa chỉ IP của nó ngay lập tức",
-  "intro": "Công cụ Tên miền sang IP miễn phí của chúng tôi chuyển đổi ngay lập tức bất kỳ tên miền nào thành địa chỉ IP tương ứng của nó bằng cách tra cứu DNS. Thiết yếu cho các quản trị viên mạng, nhà phát triển web, chuyên gia bảo mật và bất kỳ ai cần xác định máy chủ đằng sau một tên miền. Nhận địa chỉ IP chính xác để khắc phục sự cố, xác minh máy chủ và cấu hình mạng.",
-  "feature1_title": "Tra Cứu Tức Thì",
-  "feature1_desc": "Nhận địa chỉ IP ngay lập tức không chậm trễ",
-  "feature2_title": "Kết Quả Chính Xác",
-  "feature2_desc": "Truy vấn DNS thời gian thực cho các địa chỉ IP hiện tại",
-  "feature3_title": "100% Miễn Phí",
-  "feature3_desc": "Tra cứu không giới hạn và không cần đăng ký",
-  "what_is_title": "🌐 Tra Cứu Tên Miền Sang IP Là Gì?",
-  "what_is_desc": "Tra cứu tên miền sang IP là quá trình chuyển đổi một tên miền dễ đọc (như example.com) thành địa chỉ IP dạng số tương ứng của nó (như 93.184.216.34). Quá trình chuyển đổi này diễn ra thông qua các máy chủ DNS (Hệ thống Tên Miền), hoạt động như một danh bạ điện thoại của internet. Mỗi trang web đều có một địa chỉ IP, nhưng tên miền giúp chúng dễ nhớ và truy cập hơn.",
-  "use_cases_title": "🎯 Các Trường Hợp Sử Dụng Phổ Biến",
-  "uc1_title": "Cấu Hình Máy Chủ",
-  "uc1_desc": "Cấu hình tường lửa, whitelist và cài đặt máy chủ bằng địa chỉ IP",
-  "uc2_title": "Phân Tích Bảo Mật",
-  "uc2_desc": "Xác minh vị trí máy chủ và xác định nhà cung cấp dịch vụ lưu trữ",
-  "uc3_title": "Khắc Phục Sự Cố",
-  "uc3_desc": "Chẩn đoán các sự cố DNS và xác minh cấu hình tên miền",
-  "uc4_title": "Giám Sát Mạng",
-  "uc4_desc": "theo dõi các thay đổi của máy chủ và giám sát cơ sở hạ tầng",
-  "uc5_title": "Định Vị Địa Lý",
-  "uc5_desc": "Xác định vị trí địa lý của máy chủ từ địa chỉ IP",
-  "uc6_title": "Tích Hợp API",
-  "uc6_desc": "Sử dụng địa chỉ IP cho các kết nối API trực tiếp",
-  "pro_tips_title": "💡 Mẹo Chuyên Nghiệp: Sử Dụng Tra Cứu Tên Miền Sang IP",
-  "tip1": "✅ Sử dụng địa chỉ IP cho các kết nối máy chủ trực tiếp khi DNS chậm",
-  "tip2": "✅ Xác minh cấu hình CDN bằng cách kiểm tra nhiều lần phân giải tên miền",
-  "tip3": "✅ Đưa IP máy chủ vào whitelist trong tường lửa để truy cập an toàn",
-  "tip4": "✅ So sánh địa chỉ IP trước và sau các thay đổi DNS",
-  "tip5": "✅ Xác định Shared Hosting bằng cách kiểm tra xem có nhiều tên miền chia sẻ cùng một IP hay không"
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": "",
-  "q4": "",
-  "a4": "",
-  "q5": "",
-  "a5": ""
- },
- "js": {
-  "looking_up": "",
-  "error_failed": ""
- }
- },
- "internet-speed-test": {
- "meta": {
-  "title": "Kiểm Tra Tốc Độ Internet Miễn Phí - Kiểm Tra Tốc Độ Kết Nối của Bạn",
-  "description": "Kiểm tra tốc độ internet của bạn miễn phí. Kiểm tra tốc độ tải xuống, tốc độ tải lên và ping ngay lập tức.",
-  "h1": "Kiểm Tra Tốc Độ Internet",
-  "subtitle": "Kiểm tra tốc độ kết nối internet của bạn ngay lập tức"
- },
- "editor": {
-  "btn_start": "Bắt Đầu Kiểm Tra Tốc Độ",
-  "status_init": "Đang khởi tạo bài kiểm tra..",
-  "label_download": "Tốc Độ Tải Xuống",
-  "label_upload": "Tốc Độ Tải Lên",
-  "label_ping": "Ping",
-  "label_quality": "Chất Lượng Kết Nối",
-  "btn_retry": "Kiểm Tra Lại",
-  "status_ping": "Đang kiểm tra ping..",
-  "status_download": "Đang kiểm tra tốc độ tải xuống..",
-  "status_upload": "Đang kiểm tra tốc độ tải lên..",
-  "quality_val_excellent": "Xuất Sắc",
-  "quality_val_very_good": "Rất Tốt",
-  "quality_val_good": "Tốt",
-  "quality_val_fair": "Trung Bình",
-  "quality_val_poor": "Kém"
- },
- "content": {
-  "p1": "Kiểm tra tốc độ kết nối internet của bạn bằng công cụ kiểm tra tốc độ miễn phí và chính xác của chúng tôi. Đo tốc độ tải xuống, tốc độ tải lên và độ trễ ping trong vài giây. Hoàn hảo để khắc phục sự cố kết nối chậm, xác minh tốc độ ISP hoặc kiểm tra xem bạn có đang nhận được những gì bạn đã trả tiền hay không.",
-  "metrics_title": "Hiểu Các Chỉ Số Kiểm Tra Tốc Độ",
-  "req_title": "Các Yêu Cầu Để Kiểm Tra Chính Xác",
-  "req_list": [
-  "Đóng tất cả các ứng dụng và tab trình duyệt khác",
-  "Kết nối qua cáp Ethernet để có kết quả chính xác nhất",
-  "Tạm thời vô hiệu hóa các dịch vụ VPN hoặc proxy",
-  "Đảm bảo không có quá trình tải xuống hoặc tải lên nào đang chạy",
-  "Kiểm tra nhiều lần tại các thời điểm khác nhau trong ngày"
-  ],
-  "why_title": "Tại Sao Nên Kiểm Tra Tốc Độ Internet của Bạn?",
-  "why_list": [
-  "Xác minh xem bạn có đang nhận được tốc độ mà bạn đang trả tiền hay không",
-  "Khắc phục các sự cố kết nối chậm",
-  "So sánh các gói ISP khác nhau trước khi chuyển đổi",
-  "Tối ưu hóa thiết lập mạng của bạn",
-  "Ghi lại tốc độ cho các yêu cầu hỗ trợ của ISP",
-  "Kiểm tra hiệu suất Wi-Fi so với Ethernet"
-  ],
-  "factors_title": "Các Yếu Tố Ảnh Hưởng Đến Tốc Độ của Bạn",
-  "improve_title": "Cách Cải Thiện Tốc Độ của Bạn",
-  "improve_list": [
-  "Sử dụng cáp Ethernet thay vì Wi-Fi khi có thể",
-  "Đặt router ở vị trí trung tâm, cách xa các bức tường",
-  "Nâng cấp lên một router hiện đại hỗ trợ mức tốc độ của bạn",
-  "Đóng các ứng dụng tiêu tốn nhiều băng thông",
-  "Cập nhật firmware router thường xuyên",
-  "Xem xét nâng cấp gói cước internet của bạn",
-  "Sử dụng cài đặt Chất lượng dịch vụ (QoS) trên router"
-  ],
-  "tips_title": "Mẹo Chuyên Nghiệp Để Có Kết Quả Chính Xác",
-  "tips_list": [
-  "Kiểm tra tại các thời điểm khác nhau trong ngày để thấy sự thay đổi",
-  "Chạy nhiều bài kiểm tra và lấy kết quả trung bình",
-  "Kiểm tra trên các thiết bị khác nhau để loại trừ sự cố của thiết bị",
-  "So sánh tốc độ Wi-Fi tại các vị trí khác nhau trong nhà bạn"
-  ],
-  "faq_title": "Các Câu Hỏi Thường Gặp",
-  "metrics": {
-  "download": {
-   "title": "Tốc Độ Tải Xuống",
-   "desc": "Dữ liệu di chuyển từ internet đến thiết bị của bạn nhanh như thế nào. Quan trọng để phát trực tuyến, duyệt web và tải xuống các tệp."
-  },
-  "upload": {
-   "title": "Tốc Độ Tải Lên",
-   "desc": "Dữ liệu di chuyển từ thiết bị của bạn đến internet nhanh như thế nào. quan trọng để các cuộc gọi video, tải lên các tệp và phát trực tiếp."
-  },
-  "ping": {
-   "title": "Ping (Độ Trễ)",
-   "desc": "Thời gian phản hồi của kết nối của bạn. Thấp hơn là tốt hơn. quan trọng để chơi game và các ứng dụng thời gian thực."
-  }
-  },
-  "factors": {
-  "congestion": {
-   "title": "tắc nghẽn mạng",
-   "desc": "Thời gian sử dụng cao điểm có thể làm chậm kết nối của bạn khi có nhiều người dùng cùng chia sẻ băng thông."
-  },
-  "wifi": {
-   "title": "Tín Hiệu Wi-Fi",
-   "desc": "Khoảng cách từ router, các bức tường và sự can nhiễu từ các thiết bị khác ảnh hưởng đến tốc độ không dây."
-  },
-  "device": {
-   "title": "Hiệu Suất Thiết Bị",
-   "desc": "Các thiết bị cũ hơn hoặc các thiết bị đang chạy nhiều chương trình có thể không đạt được tốc độ tối đa."
-  },
-  "router": {
-   "title": "Chất Lượng Router",
-   "desc": "Các router lỗi thời có thể không hỗ trợ đầy đủ các khả năng tốc độ internet của bạn."
-  }
-  },
-  "faq": {
-  "q1": "Tốc độ internet bao nhiêu là tốt?",
-  "a1": "Để duyệt web và phát trực tuyến thông thường: 25+ Mbps. Để phát trực tuyến 4K và chơi game: 50+ Mbps. Cho nhiều người dùng và sử dụng nhiều: 100+ Mbps. Để làm việc từ xa và gia đình đông người: 200+ Mbps.",
-  "q2": "Tại sao tốc độ của tôi lại chậm hơn so với quảng cáo?",
-  "a2": "ISPs advertise \"up to\" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.",
-  "q3": "Sự khác biệt giữa Mbps và MBps là gì?",
-  "a3": "Mbps (megabit trên giây) được sử dụng để tốc độ internet. MBps (megabyte trên giây) được sử dụng để kích thước tệp. 1 MBps = 8 Mbps. Một kết nối 100 Mbps sẽ tải xuống ở mức khoảng 12,5 MBps.",
-  "q4": "Bài kiểm tra tốc độ này chính xác đến mức nào?",
-  "a4": "Bài kiểm tra tốc độ của chúng tôi cung cấp các kết quả chính xác bằng cách đo lường việc truyền tải dữ liệu thực tế. Để đạt độ chính xác tốt nhất, hãy đóng các ứng dụng khác, sử dụng cáp Ethernet và chạy nhiều bài kiểm tra.",
-  "q5": "Tôi nên kiểm tra bằng Wi-Fi hay Ethernet?",
-  "a5": "Kiểm tra bằng cáp Ethernet để đo tốc độ internet thực của bạn. Kiểm tra bằng Wi-Fi để chẩn đoán các sự cố không dây. So sánh cả hai sẽ giúp xác định xem sự cố nằm ở internet hay ở Wi-Fi của bạn."
-  }
- }
- },
- "ip-lookup": {
- "meta": {
-  "title": "Công Cụ Tra Cứu IP - Nhận Thông Tin Địa Chỉ IP & Định Vị Địa Lý Miễn Phí",
-  "description": "Công cụ tra cứu IP miễn phí để tìm thông tin chi tiết về bất kỳ địa chỉ IP nào. Xem vị trí, ISP, tên máy chủ, v.v. Thiết yếu cho phân tích bảo mật và khắc phục sự cố mạng.",
-  "h1": "Công Cụ Tra Cứu IP",
-  "subtitle": "Nhận thông tin chi tiết về bất kỳ địa chỉ IP nào bao gồm vị trí & ISP"
- },
- "form": {
-  "ip_label": "Địa Chỉ IP",
-  "ip_placeholder": "8.8.8.8",
-  "button": "Tra Cứu Địa Chỉ IP"
- },
- "results": {
-  "title": "",
-  "ip_address": "",
-  "type": "",
-  "hostname": "",
-  "isp": "",
-  "country": "",
-  "region": "",
-  "city": "",
-  "timezone": ""
- },
- "content": {
-  "what_is_title": "Tra Cứu IP Là Gì?",
-  "what_is_desc": "Tra cứu IP là một công cụ cung cấp thông tin chi tiết về bất kỳ địa chỉ IP nào. Nó tiết lộ vị trí địa lý, Nhà cung cấp dịch vụ Internet (ISP), tên máy chủ và các chi tiết kỹ thuật khác liên quan đến một địa chỉ IP. Thông tin này rất có giá trị đối với các quản trị viên mạng, chuyên gia bảo mật, chủ sở hữu trang web và bất kỳ ai quan tâm đến việc hiểu lưu lượng truy cập internet bắt nguồn từ đâu.",
-  "why_use_title": "Tại Sao Nên Sử Dụng Tra Cứu IP?",
-  "why_use_desc": "Các công cụ Tra cứu IP là thiết yếu cho nhiều mục đích khác nhau bao gồm phân tích bảo mật, ngăn ngừa gian lận, địa phương hóa nội dung, khắc phục sự cố mạng và xác minh tuân thủ. Chủ sở hữu trang web sử dụng tra cứu IP để hiểu nhân khẩu học của khách truy cập, trong khi các nhóm bảo mật sử dụng nó để xác định các mối đe dọa tiềm ẩn và chặn lưu lượng truy cập độc hại. Nó cũng hữu ích để xác minh các kết nối VPN và hiểu dấu vết internet của chính bạn.",
-  "features_title": "Các Tính Năng Chính",
-  "feature1_title": "🌍 Dữ Liệu Định Vị Địa Lý",
-  "feature1_desc": "Quốc gia, vùng, thành phố và tọa độ",
-  "feature2_title": "🏢 Thông Tin ISP",
-  "feature2_desc": "Chi tiết Nhà cung cấp dịch vụ Internet",
-  "feature3_title": "🔗 Phân Giải Tên Máy Chủ",
-  "feature3_desc": "Tên miền liên kết với IP",
-  "feature4_title": "⚡ Kết Quả Tức Thì",
-  "feature4_desc": "Tra cứu nhanh chóng và chính xác"
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": "",
-  "q4": "",
-  "a4": "",
-  "q5": "",
-  "a5": ""
- },
- "js": {
-  "looking_up": "",
-  "success": "",
-  "error": ""
- }
- },
- "ping-test": {
- "meta": {
-  "title": "Công Cụ Kiểm Tra Ping - Kiểm Tra Độ Trễ & Kết Nối Mạng Miễn Phí",
-  "description": "Công cụ kiểm tra ping miễn phí để kiểm tra độ trễ mạng, mất gói và khả năng tiếp cận máy chủ. Kiểm tra kết nối tới bất kỳ máy chủ hoặc địa chỉ IP nào ngay lập tức. Thiết yếu để khắc phục sự cố mạng.",
-  "h1": "Công Cụ Kiểm Tra Ping",
-  "subtitle": "Kiểm tra thời gian phản hồi của máy chủ và kết nối mạng từ nhiều vị trí"
- },
- "form": {
-  "host_label": "Host hoặc Địa Chỉ IP",
-  "host_placeholder": "google.com hoặc 8.8.8.8",
-  "button": "Ping Host"
- },
- "results": {
-  "title": ""
- },
- "content": {
-  "what_is_title": "Kiểm Tra Ping Là Gì?",
-  "what_is_desc": "Ping là một công cụ chẩn đoán mạng nhằm kiểm tra khả năng tiếp cận của một máy chủ trên mạng Giao thức Internet (IP). Nó đo lường thời gian khứ hồi cho các tin nhắn được gửi từ nguồn đến máy tính đích và ngược lại. Ping hoạt động bằng cách gửi các gói Giao thức Điều khiển Tin nhắn Internet (ICMP) Echo Request đến máy chủ đích và chờ đợi Phản hồi Echo (Echo Reply). Công cụ này được đặt tên theo âm thanh ping của sonar được sử dụng trong việc phát hiện tàu ngầm, vì nó tương tự như việc phát ra một tín hiệu và lắng nghe phản hồi.",
-  "why_use_title": "Tại Sao Nên Sử Dụng Kiểm Tra Ping?",
-  "why_use_desc": "Kiểm tra ping là thiết yếu để khắc phục sự cố mạng và giám sát hiệu suất. Các quản trị viên hệ thống sử dụng ping để xác minh kết nối mạng, chẩn đoán các sự cố kết nối và đo độ trễ mạng. Nó giúp xác định máy chủ có đang trực tuyến và phản hồi hay không, phát hiện mất gói tin có thể cho thấy tình trạng tắc nghẽn mạng hoặc các vấn đề về phần cứng, và đo lường chất lượng kết nối mạng. Game thủ sử dụng ping để kiểm tra độ trễ của máy chủ trước khi tham gia các trò chơi trực tuyến, trong khi chủ sở hữu trang web theo dõi khả năng phản hồi của máy chủ để đảm bảo trải nghiệm người dùng tối ưu.",
-  "metrics_title": "Hiểu Các Chỉ Số Ping",
-  "metric1": "<strong>Gói tin Đã gửi/Đã nhận:</strong> số lượng yêu cầu ping và các phản hồi thành công",
-  "metric2": "<strong>Mất gói tin:</strong> Tỷ lệ phần trăm các gói tin không nhận được phản hồi",
-  "metric3": "<strong>Thời gian tối thiểu:</strong> Thời gian khứ hồi nhanh nhất được ghi lại",
-  "metric4": "<strong>Thời gian trung bình:</strong> Độ trễ trung bình của tất cả các lần ping",
-  "metric5": "<strong>Thời gian tối đa:</strong> Thời gian khứ hồi chậm nhất được ghi lại",
-  "metric6": "<strong>TTL (Thời gian tồn tại):</strong> Số bước nhảy mạng trước khi gói tin hết hạn",
-  "interpreting_title": "Giải Thích Kết Quả",
-  "interpreting_desc": "Thời gian ping tốt thường là dưới 50ms cho các kết nối cục bộ và dưới 100ms cho các kết nối quốc tế. Thời gian từ 100-200ms là có thể chấp nhận được đối với hầu hết các ứng dụng nhưng có thể gây ra hiện tượng lag đáng kể trong các ứng dụng thời gian thực như chơi game hoặc hội nghị truyền hình. Bất cứ con số nào trên 200ms đều cho thấy các vấn đề mạng tiềm ẩn. Mất gói tin trên 1% cho thấy các vấn đề mạng cần được điều tra. Thời gian ping nhất quán cho thấy các kết nối ổn định, trong khi thời gian thay đổi nhiều cho thấy tình trạng tắc nghẽn mạng hoặc các vấn đề về định tuyến."
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": "",
-  "q4": "",
-  "a4": "",
-  "q5": "",
-  "a5": ""
- },
- "js": {
-  "pinging": "",
-  "success": "",
-  "error": "",
-  "ping_host": ""
- }
- },
- "port-checker": {
- "meta": {
-  "title": "Công Cụ Kiểm Tra Cổng - Kiểm Tra Các Cổng Mở & Kết Nối Mạng Miễn Phí",
-  "description": "Công cụ kiểm tra cổng miễn phí để kiểm tra xem các cổng đang mở, đóng hay bị lọc. Kiểm tra các cổng TCP/UDP ngay lập tức để khắc phục sự cố mạng và kiểm tra bảo mật.",
-  "h1": "Công Cụ Kiểm Tra Cổng",
-  "subtitle": "Kiểm tra xem các cổng có đang mở trên bất kỳ máy chủ nào để khắc phục sự cố kết nối hay không"
- },
- "form": {
-  "host_label": "Host hoặc Địa Chỉ IP",
-  "host_placeholder": "example.com or 8.8.8.8",
-  "port_label": "Số Cổng",
-  "port_placeholder": "80",
-  "button": "Kiểm Tra Cổng"
- },
- "results": {
-  "title": ""
- },
- "content": {
-  "what_is_title": "Kiểm Tra Cổng Là Gì?",
-  "what_is_desc": "Bộ kiểm tra cổng là một công cụ chẩn đoán mạng nhằm xác định xem một cổng TCP hoặc UDP cụ thể trên máy chủ hoặc thiết bị đang mở (chấp nhận kết nối), đóng (từ chối kết nối) hay bị lọc (bị chặn bởi tường lửa). Các cổng là các điểm cuối ảo cho truyền thông mạng, với mỗi số cổng (1-65535) có khả năng lưu trữ các dịch vụ khác nhau. Các cổng phổ biến bao gồm 80 cho lưu lượng web HTTP, 443 cho HTTPS, 22 cho SSH, và 25 cho email. Kiểm tra trạng thái cổng là thiết yếu để cấu hình mạng, kiểm tra bảo mật và khắc phục sự cố kết nối.",
-  "why_check_title": "Tại Sao Nên Kiểm Tra Cổng?",
-  "why_check_desc": "Việc kiểm tra cổng phục vụ nhiều mục đích quan trọng trong quản lý mạng và bảo mật. Các quản trị viên hệ thống xác minh rằng các dịch vụ có thể truy cập được trên các cổng dự định của chúng sau khi thay đổi cấu hình. Các chuyên gia bảo mật quét các cổng mở để xác định các lỗ hổng tiềm ẩn và đảm bảo các cổng không cần thiết đã được đóng. Các nhà phát triển kiểm tra xem các ứng dụng của họ có đang lắng nghe đúng cách trên các cổng đã cấu hình hay không. Những người khắc phục sự cố mạng sử dụng việc kiểm tra cổng để chẩn đoán lý do tại sao các dịch vụ không thể truy cập được, xác định xem vấn đề nằm ở chính dịch vụ đó, quy tắc tường lửa hay định tuyến mạng.",
-  "common_ports_title": "Các Cổng Phổ Biến",
-  "port1": "<strong>Cổng 80:</strong> HTTP (lưu lượng web)",
-  "port2": "<strong>Cổng 443:</strong> HTTPS (lưu lượng web an toàn)",
-  "port3": "<strong>Cổng 22:</strong> SSH (truy cập shell an toàn)",
-  "port4": "<strong>Cổng 21:</strong> FTP (truyền tệp)",
-  "port5": "<strong>Cổng 25:</strong> SMTP (gửi email)",
-  "port6": "<strong>Cổng 3306:</strong> Cơ sở dữ liệu MySQL",
-  "port7": "<strong>Cổng 3389:</strong> RDP (Điều khiển máy tính từ xa)",
-  "security_title": "Các Tác Động Về Bảo Mật",
-  "security_desc": "Các cổng mở đại diện cho các điểm xâm nhập tiềm năng cho những kẻ tấn công. Thực hành bảo mật tốt nhất quy định chỉ giữ các cổng cần thiết luôn mở và đóng hoặc lọc tất cả các cổng khác. Thường xuyên quét các máy chủ của riêng bạn giúp xác định các cổng mở không mong muốn có thể bị khai thác. Tuy nhiên, việc quét cổng hệ thống của người khác mà không được phép có thể là bất hợp pháp và bị coi là hoạt động thù địch. Luôn đảm bảo bạn có thẩm quyền trước khi quét các cổng trên các hệ thống mà bạn không sở hữu."
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": "",
-  "q4": "",
-  "a4": "",
-  "q5": "",
-  "a5": ""
- },
- "js": {
-  "checking": "",
-  "success": "",
-  "error": "",
-  "check_port": ""
- }
- },
- "reverse-dns-lookup": {
- "meta": {
-  "title": "Tra Cứu DNS Ngược - Công Cụ Trực Tuyến Miễn Phí",
-  "description": "Công cụ tra cứu DNS ngược trực tuyến miễn phí. Tìm tên máy chủ liên kết với bất kỳ địa chỉ IP nào ngay lập tức. Nhanh chóng, an toàn và dễ sử dụng.",
-  "h1": "Tra Cứu DNS Ngược",
-  "subtitle": "Tìm tên miền hoặc tên máy chủ liên kết với một địa chỉ IP ngay lập tức"
- },
- "form": {
-  "ip_label": "Enter IP Address",
-  "ip_placeholder": "e.g., 8.8.8.8",
-  "button": "Tra Cứu DNS Ngược",
-  "button_loading": "Đang tra cứu.."
- },
- "results": {
-  "title": "Kết Quả DNS Ngược"
- },
- "content": {
-  "what_is_title": "Tra Cứu DNS Ngược Là Gì?",
-  "what_is_desc": "Tra cứu DNS ngược (rDNS) là quá trình xác định tên miền hoặc tên máy chủ liên kết với một địa chỉ IP. Không giống như tra cứu DNS tiêu chuẩn chuyển đổi tên miền thành địa chỉ IP (tra cứu thuận), rDNS thực hiện điều ngược lại. Nó thường được sử dụng để xác minh danh tính của máy chủ hoặc khắc phục các sự cố mạng.",
-  "why_use_title": "Tại Sao Nên Sử Dụng Tra Cứu DNS Ngược?",
-  "why_use_desc": "DNS ngược được sử dụng rộng rãi cho mục đích bảo mật and xác minh. Nó giúp xác định nguồn của lưu lượng truy cập đến, xác minh người gửi email (để ngăn chặn thư rác) và khắc phục các sự cố kết nối mạng. Nhiều máy chủ thư yêu cầu các bản ghi rDNS hợp lệ để chấp nhận các email đến.",
-  "ptr_records_title": "Hiểu Các Bản Ghi PTR",
-  "ptr_record1": "<strong>Bản ghi PTR:</strong> Một Bản ghi Con trỏ (PTR) là loại bản ghi DNS được sử dụng để các lần tra cứu DNS ngược.",
-  "ptr_record2": "<strong>Ánh xạ:</strong> Nó ánh xạ một địa chỉ IP trở lại tên máy chủ.",
-  "ptr_record3": "<strong>Xác minh:</strong> quan trọng để khả năng phân phối email và xác minh bảo mật.",
-  "ptr_record4": "<strong>IP-sang-Host:</strong> Thiết yếu để xác định người chủ thực sự của một địa chỉ IP.",
-  "ptr_record5": "<strong>Ngăn chặn Thư rác:</strong> Được sử dụng bởi các máy chủ thư để xác thực tính xác thực của người gửi.",
-  "ptr_record6": "<strong>Nhật ký Mạng:</strong> hữu ích để việc làm cho các nhật ký mạng trở nên dễ đọc hơn bằng cách hiển thị tên máy chủ.",
-  "use_cases_title": "Common Use Cases",
-  "use_cases_desc": "Common use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
- },
- "faq": {
-  "title": "Các Câu Hỏi Thường Gặp",
-  "q1": "Bản ghi PTR là gì?",
-  "a1": "Một bản ghi PTR (Con trỏ) là một loại bản ghi DNS ánh xạ địa chỉ IP thành tên máy chủ. Nó là thành phần cốt lõi của việc tra cứu DNS ngược.",
-  "q2": "Tại sao DNS ngược lại quan trọng đối với email?",
-  "a2": "Nhiều nhà cung cấp dịch vụ email sử dụng DNS ngược để xác minh xem máy chủ gửi có hợp lệ hay không. Nếu địa chỉ IP của một máy chủ không có bản ghi rDNS khớp, các email của nó có thể bị đánh dấu là thư rác.",
-  "q3": "Bất kỳ địa chỉ IP nào cũng có thể có bản ghi DNS ngược phải không?",
-  "a3": "Phải, nhưng người sở hữu địa chỉ IP (thường là ISP hoặc nhà cung cấp hosting) phải cấu hình bản ghi PTR trong cài đặt DNS của họ."
- }
- },
- "traceroute": {
- "meta": {
-  "title": "Traceroute - Công Cụ Trực Tuyến Miễn Phí",
-  "description": "Công cụ traceroute trực tuyến miễn phí. Nhanh chóng, an toàn và dễ sử dụng.",
-  "h1": "Traceroute",
-  "subtitle": "Công cụ traceroute tốt nhất cho các nhà phát triển và chuyên gia CNTT"
- },
- "form": {
-  "host_label": "",
-  "host_placeholder": "",
-  "button": "",
-  "button_loading": ""
- },
- "results": {
-  "title": ""
- },
- "content": {
-  "what_is_title": "Traceroute Là Gì?",
-  "what_is_desc": "Đây là một công cụ trực tuyến miễn phí để thực hiện traceroute.",
-  "why_use_title": "",
-  "why_use_desc": "",
-  "hops_title": "",
-  "hop1": "",
-  "hop2": "",
-  "hop3": "",
-  "hop4": "",
-  "hop5": "",
-  "hop6": "",
-  "issues_title": "",
-  "issues_desc": ""
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": ""
- }
- },
- "user-agent-parser": {
- "meta": {
-  "title": "Bộ Phân Giải User Agent Miễn Phí",
-  "description": "Xác định trình duyệt, hệ điều hành và thiết bị từ chuỗi User Agent bằng công cụ miễn phí của chúng tôi.",
-  "h1": "Bộ Phân Giải User Agent",
-  "subtitle": "Xác định trình duyệt, hệ điều hành và thiết bị từ chuỗi User Agent"
- },
- "editor": {
-  "label_input": "Chuỗi User Agent",
-  "ph_input": "Mozilla/5.0..",
-  "btn_parse": "Phân Giải",
-  "btn_use_my_ua": "Sử Dụng User Agent của Tôi",
-  "label_browser": "Trình duyệt",
-  "label_os": "Hệ điều hành",
-  "label_device": "Thiết bị",
-  "label_raw": "Thông tin Engine thô"
- },
- "content": {
-  "p1": "Bộ Phân Giải User Agent miễn phí của chúng tôi giải mã ngay lập tức các chuỗi User Agent để xác định trình duyệt, hệ điều hành, loại thiết bị và phiên bản engine. hữu ích để các nhà phát triển khi khắc phục lỗi các sự cố cụ thể của trình duyệt hoặc phân tích nguồn lưu lượng truy cập.",
-  "features_title": "Tính Năng",
-  "features": {
-  "instant": {
-   "title": "Phân Giải Tức Thì",
-   "desc": "Giải mã User Agent trong vài mili giây"
-  },
-  "detailed": {
-   "title": "Thông Tin Chi Tiết",
-   "desc": "Trích xuất Trình duyệt, Hệ điều hành, Thiết bị và Engine"
-  },
-  "auto": {
-   "title": "Tự Động Phát Hiện",
-   "desc": "Một cú nhấp chuột để phân giải User Agent hiện tại của chính bạn"
-  },
-  "free": {
-   "title": "100% Miễn Phí",
-   "desc": "Sử dụng không giới hạn, không tốn phí"
-  }
-  },
-  "uses_title": "Common Use Cases",
-  "uses": {
-  "debugging": {
-   "title": "Khắc Phục Lỗi",
-   "desc": "Xác định các phiên bản trình duyệt chi tiết để khắc phục sự cố"
-  },
-  "analytics": {
-   "title": "Phân Tích",
-   "desc": "Hiểu những thiết bị và hệ điều hành nào mà người dùng của bạn đang sử dụng"
-  },
-  "dev": {
-   "title": "Phát Triển",
-   "desc": "Xác minh các chuỗi User Agent trong quá trình thử nghiệm"
-  },
-  "security": {
-   "title": "Bảo Mật",
-   "desc": "Phân tích các chuỗi User Agent đáng ngờ trong nhật ký"
-  }
-  },
-  "how_to_title": "Cách Sử Dụng",
-  "how_to": {
-  "step1": {
-   "title": "Nhập Chuỗi",
-   "desc": "Paste a User Agent string or click \"Use My User Agent\""
-  },
-  "step2": {
-   "title": "Phân Giải",
-   "desc": "Click \"Parse\" to decode the string"
-  },
-  "step3": {
-   "title": "Xem Kết Quả",
-   "desc": "Xem chi tiết chia nhỏ của Trình duyệt, Hệ điều hành và Thiết bị"
-  }
-  },
-  "faq_title": "Các Câu Hỏi Thường Gặp",
-  "faq": {
-  "q1": "User Agent Là Gì?",
-  "a1": "User Agent là một chuỗi văn bản được trình duyệt web của bạn gửi đến mọi trang web bạn truy cập, để xác định trình duyệt, phiên bản, hệ điều hành và loại thiết bị.",
-  "q2": "Bộ phân giải này có chính xác không?",
-  "a2": "Nó sử dụng đối khớp mẫu tiêu chuẩn để xác định các User Agent thực tế phổ biến. Tuy nhiên, các chuỗi User Agent có thể bị giả mạo hoặc sửa đổi.",
-  "q3": "Dữ liệu của tôi có được riêng tư không?",
-  "a3": "Có, việc phân giải diễn ra cục bộ trong trình duyệt của bạn. Chúng tôi không lưu trữ dữ liệu User Agent của bạn."
-  }
- }
- },
- "what-is-my-ip": {
- "meta": {
-  "title": "Địa Chỉ IP của Tôi Là Gì? - Kiểm Tra Vị Trí IP của Bạn Miễn Phí",
-  "description": "Tìm hiểu địa chỉ IP công cộng của bạn ngay lập tức. Kiểm tra địa chỉ IPv4/IPv6, ISP, vị trí và chi tiết kết nối của bạn miễn phí. Thiết yếu để khắc phục sự cố mạng.",
-  "h1": "Địa Chỉ IP của Tôi Là Gì?",
-  "subtitle": "Khám phá ngay lập tức địa chỉ IP công cộng của bạn với thông tin ISP chi tiết"
- },
- "ui": {
-  "loading": "",
-  "your_ip_title": "",
-  "copy_button": "",
-  "timezone": ""
- },
- "results": {
-  "location": "",
-  "isp": "",
-  "country": ""
- },
- "content": {
-  "main_title": "Địa Chỉ IP của Tôi Là Gì - Công Cụ Tra Cứu IP Miễn Phí",
-  "main_desc": "Tìm địa chỉ IP công cộng của bạn ngay lập tức bằng công cụ tra cứu IP miễn phí của chúng tôi. Khám phá địa chỉ IPv4 hoặc IPv6, vị trí địa lý chính xác (thành phố, vùng, quốc gia), thông tin ISP, múi giờ và các chi tiết mạng hoàn chỉnh. Thiết yếu để cấu hình mạng, thử nghiệm bảo mật, thiết lập truy cập từ xa, xác minh VPN và hiểu được dấu vết kết nối internet của bạn.",
-  "what_is_title": "Địa Chỉ IP của Tôi Là Gì?",
-  "what_is_desc": "Địa chỉ IP của bạn là một mã định danh số duy nhất được gán cho thiết bị của bạn khi nó kết nối với internet. Nó cho phép các trang web và dịch vụ giao tiếp với thiết bị của bạn và xác định vị trí gần đúng của bạn.",
-  "ipv4_vs_ipv6_title": "Địa chỉ IPv4 so với IPv6",
-  "ipv4_title": "Địa chỉ IPv4",
-  "ipv4_format": "<strong>Định dạng:</strong> 192.168.1.1 (bốn số từ 0-255 cách nhau bởi dấu chấm)",
-  "ipv4_total": "<strong>Tổng số địa chỉ:</strong> ~4,3 tỷ địa chỉ",
-  "ipv4_desc": "Định dạng phổ biến nhất trên toàn thế giới, nhưng đang dần hết địa chỉ khả dụng do sự phát triển của internet",
-  "ipv6_title": "Địa chỉ IPv6",
-  "ipv6_format": "<strong>Định dạng:</strong> 2001:0db8:85a3::8a2e:0370:7334",
-  "ipv6_total": "<strong>Tổng số địa chỉ:</strong> 340 undecillion địa chỉ",
-  "ipv6_desc": "Định dạng mới hơn với số lượng địa chỉ gần như không giới hạn, dần dần thay thế IPv4",
-  "why_check_title": "Tại Sao Nên Kiểm Tra IP của Bạn?",
-  "why_check_desc": "Biết địa chỉ IP của bạn rất hữu ích để khắc phục các sự cố mạng, xác minh các kết nối VPN, kiểm tra xem vị trí của bạn có đang bị che giấu hay không và hiểu những thông tin nào các trang web có thể thấy về bạn.",
-  "public_vs_private_title": "Địa chỉ IP Công cộng so với Riêng tư",
-  "public_ip_title": "🌐 Địa Chỉ IP Công Cộng",
-  "public_ip_desc": "Địa chỉ duy nhất của bạn trên internet, hiển thị với tất cả các trang web và dịch vụ mà bạn truy cập.",
-  "public_ip_example": "<strong>Ví dụ:</strong> 203.0.113.45",
-  "public_ip_note": "Được ISP gán cho bạn và được sử dụng để tất cả các giao tiếp internet",
-  "private_ip_title": "🏠 Địa Chỉ IP Riêng Tư",
-  "private_ip_desc": "Địa chỉ thiết bị của bạn trên mạng cục bộ, không hiển thị trên internet.",
-  "private_ip_example": "<strong>Ví dụ:</strong> 192.168.1.100",
-  "private_ip_note": "Sử dụng để liên lạc trong mạng nhà hoặc văn phòng của bạn",
-  "security_title": "Bảo Mật & Quyền Riêng Tư của Địa Chỉ IP",
-  "security_desc1": "Địa chỉ IP của bạn tiết lộ vị trí gần đúng của bạn (thành phố/vùng), ISP và có thể được sử dụng để theo dõi hoạt động trực tuyến của bạn trên các trang web. Mặc dù nó không trực tiếp làm lộ địa chỉ nhà chính xác hoặc danh tính cá nhân của bạn, nhưng nó có thể được kết hợp với các dữ liệu khác để theo dõi. Các trang web sử dụng IP của bạn để phân tích, nhắm mục tiêu quảng cáo và các hạn chế về địa lý.",
-  "security_desc2": "<strong>Bảo vệ Quyền riêng tư:</strong> Sử dụng VPN (Mạng riêng ảo) để che giấu địa chỉ IP thực của bạn và tăng cường quyền riêng tư. VPN định tuyến lưu lượng truy cập của bạn thông qua các máy chủ của họ, hiển thị IP của VPN thay vì của bạn. Công cụ của chúng tôi hiển thị chính xác những thông tin mà các trang web có thể thấy về kết nối của bạn.",
-  "dynamic_vs_static_title": "Địa chỉ IP Động so với Tĩnh",
-  "dynamic_ip": "<strong>IP Động:</strong> Thay đổi định kỳ (hàng ngày, hàng tuần hoặc khi bạn khởi động lại router). Hầu hết người dùng gia đình có IP động được ISP gán tự động. Rẻ hơn và phổ biến hơn cho các kết nối dân dụng.",
-  "static_ip": "<strong>IP Tĩnh:</strong> Không bao giờ thay đổi và luôn giữ nguyên. Thường được sử dụng để các kết nối doanh nghiệp, máy chủ web, máy chủ email và truy cập từ xa. Chi phí cao hơn nhưng thiết yếu cho các dịch vụ lưu trữ.",
-  "privacy_tips_title": "Mẹo Quyền Riêng Tư & Bảo Mật",
-  "privacy_tip1": "• Không bao giờ chia sẻ công khai địa chỉ IP của bạn trên các diễn đàn hoặc mạng xã hội",
-  "privacy_tip2": "• Sử dụng VPN khi kết nối với các mạng WiFi công cộng",
-  "privacy_tip3": "• Kích hoạt tường lửa của router để chặn các truy cập trái phép",
-  "privacy_tip4": "• Thường xuyên kiểm tra IP của bạn để phát hiện việc ngắt kết nối VPN không mong muốn",
-  "privacy_tip5": "• Hãy biết rằng các trang web luôn ghi nhật ký IP của bạn vì mục đích bảo mật và phân tích"
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": ""
- }
- },
- "what-is-my-isp": {
- "meta": {
-  "title": "ISP của Tôi Là Gì? - Kiểm Tra Nhà Cung Cấp Dịch Vụ Internet Miễn Phí",
-  "description": "Tìm hiểu Nhà cung cấp dịch vụ Internet (ISP) của bạn ngay lập tức. Kiểm tra tên ISP, tổ chức, ASN và thông tin địa chỉ IP miễn phí.",
-  "h1": "ISP của Tôi Là Gì?",
-  "subtitle": "Xác định Nhà cung cấp dịch vụ Internet của bạn bằng chi tiết kết nối"
- },
- "content": {
-  "loading": "Đang tải thông tin ISP..",
-  "your_isp_title": "Nhà Cung Cấp Dịch Vụ Internet của Bạn",
-  "network_label": "Mạng",
-  "location_label": "Vị trí",
-  "main_title": "ISP của Tôi Là Gì - Công Cụ Tra Cứu Nhà Cung Cấp Dịch Vụ Internet",
-  "main_desc": "Xác định ngay lập tức Nhà cung cấp dịch vụ Internet (ISP), tên tổ chức, chi tiết mạng và thông tin kết nối của bạn. Công cụ tra cứu ISP miễn phí của chúng tôi tiết lộ tên ISP, ASN (Số hiệu Hệ thống Tự trị), địa chỉ IP, vị trí và cơ sở hạ tầng mạng của bạn. Hoàn hảo để xác minh kết nối VPN, khắc phục các sự cố mạng, xác nhận các đường truyền internet doanh nghiệp và hiểu được định tuyến mạng của bạn.",
-  "info_title": "Bạn Có Thể Tìm Thấy Thông Tin Gì?",
-  "info1": "<strong>Tên ISP:</strong> Công ty cung cấp kết nối internet của bạn",
-  "info2": "<strong>Tổ chức:</strong> Tổ chức hoặc thực thể quản lý kết nối mạng của bạn",
-  "info3": "<strong>ASN:</strong> Mã định danh mạng duy nhất cho việc định tuyến và kết nối ngang hàng",
-  "info4": "<strong>Vị trí:</strong> Thành phố, vùng và quốc gia liên kết với kết nối của bạn",
-  "info5": "<strong>Chi tiết Mạng:</strong> Dải IP, thông tin subnet và dữ liệu cơ sở hạ tầng mạng",
-  "why_use_title": "Tại Sao Nên Sử Dụng Công Cụ Này?",
-  "why_use1": "Xác minh xem bạn có đang kết nối thông qua đúng nhà cung cấp internet không",
-  "why_use2": "Khắc phục sự cố kết nối mạng và các vấn đề về hiệu suất",
-  "why_use3": "Kiểm tra xem bạn có đang sử dụng dịch vụ VPN hoặc proxy đúng cách không",
-  "why_use4": "Xác định mạng của bạn vì các mục đích bảo mật và quyền riêng tư",
-  "why_use5": "Xác minh các tuyên bố của ISP về phạm vi dịch vụ và cơ sở hạ tầng",
-  "why_use6": "Nghiên cứu định tuyến mạng và các mối quan hệ kết nối ngang hàng",
-  "why_use7": "Xác nhận các kết nối internet doanh nghiệp và các đường truyền chuyên dụng",
-  "why_use8": "Phát hiện các truy cập mạng trái phép hoặc hành vi chiếm dụng kết nối",
-  "asn_title": "Hiểu Về ASN (Số Hiệu Hệ Thống Tự Trị)",
-  "asn_desc": "Số hiệu Hệ thống Tự trị (ASN) là một mã định danh duy nhất trên toàn cầu được gán cho một mạng hoặc một nhóm các mạng dưới một sự kiểm soát quản trị duy nhất. Các ISP, các tổ chức lớn và các mạng lưới phân phối nội dung đều có ASN riêng của bạn. Con số này được sử dụng trong định tuyến BGP (Giao thức Cổng Biên) để xác định cách lưu lượng truy cập internet di chuyển giữa các mạng khác nhau. Biết được ASN của bạn giúp xác định nhà cung cấp mạng và hiểu được các đường dẫn định tuyến.",
-  "use_cases_title": "Common Use Cases",
-  "use_case1_title": "🔧 Khắc Phục Sự Cố Mạng",
-  "use_case1_desc": "Xác định các vấn đề liên quan đến ISP, xác minh các đường dẫn định tuyến và chẩn đoán các sự cố kết nối",
-  "use_case2_title": "🔒 Xác Minh VPN",
-  "use_case2_desc": "Xác nhận VPN của bạn đang hoạt động bằng cách kiểm tra xem nhà cung cấp ISP có thay đổi khi kết nối hay không",
-  "use_case3_title": "🛡️ Kiểm Tra Bảo Mật",
-  "use_case3_desc": "Xác minh tính xác thực của kết nối và phát hiện các truy cập mạng trái phép",
-  "use_case4_title": "💼 Xác Minh Doanh Nghiệp",
-  "use_case4_desc": "Xác nhận các đường truyền doanh nghiệp chuyên dụng và kết nối internet cho doanh nghiệp lớn",
-  "isp_types_title": "Các Loại ISP",
-  "isp_type1": "<strong>Các ISP DSL:</strong> Internet qua các đường dây điện thoại (ADSL, VDSL)",
-  "isp_type2": "<strong>Các ISP Cáp:</strong> tốc độ Internet cao qua cơ sở hạ tầng cáp đồng trục",
-  "isp_type3": "<strong>Các ISP Cáp Quang:</strong> Các kết nối siêu nhanh bằng cáp quang",
-  "isp_type4": "<strong>Các ISP Không dây/Di động:</strong> Các kết nối internet di động 4G/5G",
-  "isp_type5": "<strong>Các ISP Vệ tinh:</strong> Internet qua vệ tinh cho các khu vực vùng sâu vùng xa",
-  "isp_type6": "<strong>Các ISP Doanh nghiệp:</strong> Các kết nối dành riêng cho doanh nghiệp với các cam kết mức độ dịch vụ (SLA)",
-  "privacy_note_title": "Ghi Chú Về Quyền Riêng Tư",
-  "privacy_note_desc": "ISP của bạn có thể thấy tất cả lưu lượng truy cập internet không được mã hóa và các trang web mà bạn truy cập (nhưng không phải nội dung HTTPS). Họ có thể ghi lại dữ liệu kết nối, lịch sử duyệt web và các truy vấn DNS. Hãy sử dụng VPN để mã hóa lưu lượng truy cập của bạn và ngăn chặn sự giám sát của ISP. Công cụ của chúng tôi chỉ hiển thị những thông tin công khai mà các trang web đã có thể thấy."
- },
- "results": {
-  "ip_address": "",
-  "asn": ""
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": ""
- },
- "js": {
-  "error_loading": ""
- }
- },
- "whois-lookup": {
- "meta": {
-  "title": "Công Cụ Tra Cứu WHOIS - Thông Tin Đăng Ký Tên Miền Miễn Phí",
-  "description": "Công cụ tra cứu WHOIS miễn phí để kiểm tra chi tiết đăng ký tên miền. Xem nhà đăng ký, nameserver, ngày hết hạn và trạng thái tên miền ngay lập tức.",
-  "h1": "Công Cụ Tra Cứu WHOIS",
-  "subtitle": "Truy vấn cơ sở dữ liệu WHOIS để biết chi tiết đăng ký & quyền sở hữu tên miền"
- },
- "form": {
-  "domain_label": "Tên Miền",
-  "domain_placeholder": "example.com",
-  "button": "Tra Cứu WHOIS",
-  "button_loading": "Đang tra cứu.."
- },
- "content": {
-  "form_hint": "Nhập tên miền không có http:// hoặc https://",
-  "what_is_title": "Tra Cứu WHOIS Là Gì?",
-  "what_is_desc": "WHOIS là một giao thức cung cấp thông tin về việc đăng ký tên miền. Nó tiết lộ các chi tiết về quyền sở hữu tên miền, ngày đăng ký, ngày hết hạn, nameserver và thông tin về nhà đăng ký.",
-  "why_use_title": "Tại Sao Nên Sử Dụng Tra Cứu WHOIS?",
-  "why_use_desc": "Tra cứu WHOIS là thiết yếu để xác minh quyền sở hữu tên miền, kiểm tra tính khả dụng của tên miền, điều tra các trang web đáng ngờ, theo dõi ngày hết hạn của tên miền và nghiên cứu tên miền của các đối thủ cạnh tranh.",
-  "key_info_title": "Các Thông Tin Chính Được Cung Cấp",
-  "key_info1": "<strong>Thông tin Người đăng ký:</strong> Chi tiết về chủ sở hữu tên miền (có thể được bảo vệ quyền riêng tư)",
-  "key_info2": "<strong>Ngày đăng ký:</strong> Thời điểm tên miền được đăng ký và cập nhật lần cuối",
-  "key_info3": "<strong>Ngày hết hạn:</strong> Thời điểm đăng ký tên miền hết hạn",
-  "key_info4": "<strong>Nhà đăng ký:</strong> Công ty quản lý việc đăng ký tên miền",
-  "key_info5": "<strong>Nameserver:</strong> Các máy chủ DNS lưu trữ tên miền",
-  "key_info6": "<strong>Trạng thái Tên miền:</strong> Các mã trạng thái và khóa hiện tại",
-  "how_to_title": "Cách Sử Dụng",
-  "how_to1": "Nhập tên miền bạn muốn tra cứu",
-  "how_to2": "Click \"Lookup WHOIS\" button",
-  "how_to3": "Xem xét thông tin đăng ký toàn diện",
-  "how_to4": "Sử dụng dữ liệu cho các nhu cầu nghiên cứu hoặc xác minh của bạn",
-  "privacy_title": "Quyền Riêng Tư và WHOIS",
-  "privacy_desc": "Nhiều nhà đăng ký tên miền hiện nay cung cấp dịch vụ bảo vệ quyền riêng tư WHOIS nhằm che giấu thông tin cá nhân khỏi các cơ sở dữ liệu WHOIS công cộng. Điều này bảo vệ chủ sở hữu tên miền khỏi thư rác, trộm cắp danh tính và các hành vi chào mời không mong muốn trong khi vẫn duy trì các thông tin kỹ thuật thiết yếu cần thiết cho hoạt động của tên miền. Các quy định GDPR cũng đã ảnh hưởng đến tính khả dụng của dữ liệu WHOIS, với nhiều nhà đăng ký ở châu Âu đã lược bỏ thông tin cá nhân để tuân thủ luật quyền riêng tư."
- },
- "results": {
-  "title": ""
- },
- "faq": {
-  "title": "",
-  "q1": "",
-  "a1": "",
-  "q2": "",
-  "a2": "",
-  "q3": "",
-  "a3": "",
-  "q4": "",
-  "a4": ""
- }
- }
+    "dns-lookup": {
+        "meta": {
+            "title": "Công Cụ Tr Cứu DNS - Kiểm Tr Bản Ghi DNS Trực Tuyến Miễn Phí",
+            "description": "Công cụ tr cứu DNS miễn phí để kiểm tr các bản ghi DNS cho bất kỳ tên miền nào. Xem các bản ghi , , MX, NS, TXT, CNME ngy lập tức. Thiết yếu để khắc phục sự cố emil và cấu hình tên miền.",
+            "h1": "Công Cụ Tr Cứu DNS",
+            "subtitle": "Truy vấn các bản ghi DNS để tìm nmeserver, các bản ghi MX, , CNME & TXT ngy lập tức"
+        },
+        "form": {
+            "domain_label": "Tên Miền",
+            "domain_placeholder": "exmple.com",
+            "button": "Tr Cứu DNS"
+        },
+        "results": {
+            "title": "DNS Rechoặcds"
+        },
+        "content": {
+            "what_is_title": "Tr Cứu DNS Là Gì?",
+            "what_is_desc": "Tr cứu DNS là một công cụ truy vấn các máy chủ Hệ thống Tên Miền để lấy các bản ghi DNS cho một tên miền. Các bản ghi DNS chứ thông tin qun trọng về cách một tên miền được cấu hình, bo gồm máy chủ thư (bản ghi MX), nmeserver (bản ghi NS), đị chỉ IP (bản ghi /) và các bản ghi văn bản (bản ghi TXT) được sử dụng để xác minh và bảo mật.",
+            "why_use_title": "Tại So Nên Sử Dụng Tr Cứu DNS?",
+            "why_use_desc": "Tr cứu DNS là thiết yếu để khắc phục các sự cố phân phối emil, xác minh cấu hình tên miền, kiểm tr cài đặt nmeserver, xác thực các bản ghi SPF và DKIM, và hiểu cách một tên miền được thiết lập. Nó được sử dụng bởi các quản trị viên hệ thống, nhà phát triển web và các chuyên gi CNTT hàng ngày.",
+            "record_types_title": "Các Loại Bản Ghi DNS",
+            "a_record": "<strong>Bản ghi :</strong> Ánh xạ tên miền tới đị chỉ IPv4",
+            "aaaa_record": "<strong>Bản ghi :</strong> Ánh xạ tên miền tới đị chỉ IPv6",
+            "mx_record": "<strong>Bản ghi MX:</strong> Thông tin máy chủ thư",
+            "ns_record": "<strong>Bản ghi NS:</strong> Thông tin nmeserver",
+            "txt_record": "<strong>Bản ghi TXT:</strong> Các bản ghi văn bản để xác minh",
+            "cname_record": "<strong>Bản ghi CNME:</strong> Bí dnh tên chính tắc"
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì DNS lookup?",
+            "a1": "DNS lookup là process of querying Domin Nme System servers retrieve DNS rechoặcds fhoặc domin. It trnsltes humn-redble domin nmes thành IP ddresses và provides infhoặcmtion bout mil servers, nme servers, và or DNS configurtions.",
+            "q2": "Wht re different types of DNS rechoặcds?",
+            "a2": "Common DNS rechoặcd types include (IPv4 ddress), (IPv6 ddress), MX (mil server), CNME (llà), TXT (text dt), NS (nme server), và SO (strt of uthhoặcity). Ech rechoặcd type serves specific purpose in domin configurtion.",
+            "q3": "How long does DNS propgtion tke?",
+            "a3": "DNS propgtion typiclly tkes 24-48 hours globlly, though chnges cn pper vớiin minutes on some servers. The time depends on TTL (Time Live) settings và how quickly DNS servers refresh ir cche.",
+            "q4": "Tại so là my DNS lookup filing?",
+            "a4": "DNS lookup filures cn occur due inchoặcrect domin nme, DNS server làsues, firewll blocking, hoặc domin not being properly configured. Check your domin spelling và ensure your DNS rechoặcds re choặcrectly set up.",
+            "q5": "Cn I lookup DNS rechoặcds fhoặc ny domin?",
+            "a5": "Có, you cn perfhoặcm DNS lookups fhoặc ny publicly reglàtered domin. However, some hoặcgniztions my restrict certin DNS queries fhoặc security resons."
+        },
+        "js": {
+            "looking_up": "Looking up DNS rechoặcds...",
+            "records_label": "DNS Rechoặcds",
+            "success": "DNS lookup completed successfully",
+            "error": "Filed lookup DNS rechoặcds",
+            "lookup_dns": "Lookup DNS"
+        }
+    },
+    "domain-to-ip": {
+        "meta": {
+            "title": "Bộ Chuyển Đổi Tên Miền Sng IP - Tìm Đị Chỉ IP củ Bất Kỳ Tên Miền Nào Miễn Phí",
+            "description": "Công cụ tr cứu tên miền sng IP miễn phí. Chuyển đổi ngy lập tức bất kỳ tên miền nào thành đị chỉ IP củ nó. Thiết yếu để khắc phục sự cố mạng, cấu hình máy chủ và xác minh DNS.",
+            "h1": "Bộ Chuyển Đổi Tên Miền Sng IP",
+            "subtitle": "Phân giải tên miền thành đị chỉ IP với thông tin DNS chi tiết"
+        },
+        "form": {
+            "domain_label": "Nhập Tên Miền",
+            "domain_placeholder": "exmple.com",
+            "domain_hint": "Nhập tên miền không có http:// hoặc https://",
+            "button": "Tr Cứu Đị Chỉ IP"
+        },
+        "results": {
+            "title": "IP Thêmress Kết quảs",
+            "domain_label": "Domin",
+            "ip_label": "IP Thêmress"
+        },
+        "content": {
+            "main_title": "Bộ Chuyển Đổi Tên Miền Sng IP",
+            "main_subtitle": "Chuyển đổi bất kỳ tên miền nào thành đị chỉ IP củ nó ngy lập tức",
+            "intro": "Công cụ Tên miền sng IP miễn phí củ chúng tôi chuyển đổi ngy lập tức bất kỳ tên miền nào thành đị chỉ IP tương ứng củ nó bằng cách tr cứu DNS. Thiết yếu cho các quản trị viên mạng, nhà phát triển web, chuyên gi bảo mật và bất kỳ i cần xác định máy chủ đằng su một tên miền. Nhận đị chỉ IP chính xác để khắc phục sự cố, xác minh máy chủ và cấu hình mạng.",
+            "feature1_title": "Tr Cứu Tức Thì",
+            "feature1_desc": "Nhận đị chỉ IP ngy lập tức không chậm trễ",
+            "feature2_title": "Kết Quả Chính Xác",
+            "feature2_desc": "Truy vấn DNS thời gin thực cho các đị chỉ IP hiện tại",
+            "feature3_title": "100% Miễn Phí",
+            "feature3_desc": "Tr cứu không giới hạn và không cần đăng ký",
+            "what_is_title": "🌐 Tr Cứu Tên Miền Sng IP Là Gì?",
+            "what_is_desc": "Tr cứu tên miền sng IP là quá trình chuyển đổi một tên miền dễ đọc (như exmple.com) thành đị chỉ IP dạng số tương ứng củ nó (như 93.184.216.34). Quá trình chuyển đổi này diễn r thông qu các máy chủ DNS (Hệ thống Tên Miền), hoạt động như một dnh bạ điện thoại củ internet. Mỗi trng web đều có một đị chỉ IP, nhưng tên miền giúp chúng dễ nhớ và truy cập hơn.",
+            "use_cases_title": "🎯 Các Trường Hợp Sử Dụng Phổ Biến",
+            "uc1_title": "Cấu Hình Máy Chủ",
+            "uc1_desc": "Cấu hình tường lử, whitellàt và cài đặt máy chủ bằng đị chỉ IP",
+            "uc2_title": "Phân Tích Bảo Mật",
+            "uc2_desc": "Xác minh vị trí máy chủ và xác định nhà cung cấp dịch vụ lưu trữ",
+            "uc3_title": "Khắc Phục Sự Cố",
+            "uc3_desc": "Chẩn đoán các sự cố DNS và xác minh cấu hình tên miền",
+            "uc4_title": "Giám Sát Mạng",
+            "uc4_desc": "o dõi các thy đổi củ máy chủ và giám sát cơ sở hạ tầng",
+            "uc5_title": "Định Vị Đị Lý",
+            "uc5_desc": "Xác định vị trí đị lý củ máy chủ từ đị chỉ IP",
+            "uc6_title": "Tích Hợp PI",
+            "uc6_desc": "Sử dụng đị chỉ IP cho các kết nối PI trực tiếp",
+            "pro_tips_title": "💡 Mẹo Chuyên Nghiệp: Sử Dụng Tr Cứu Tên Miền Sng IP",
+            "tip1": "✅ Sử dụng đị chỉ IP cho các kết nối máy chủ trực tiếp khi DNS chậm",
+            "tip2": "✅ Xác minh cấu hình CDN bằng cách kiểm tr nhiều lần phân giải tên miền",
+            "tip3": "✅ Đư IP máy chủ vào whitellàt trong tường lử để truy cập n àn",
+            "tip4": "✅ So sánh đị chỉ IP trước và su các thy đổi DNS",
+            "tip5": "✅ Xác định Shred Hosting bằng cách kiểm tr xem có nhiều tên miền chi sẻ cùng một IP hy không"
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì domin IP lookup?",
+            "a1": "Domin IP lookup converts domin nme (like exmple.com) thành its choặcresponding IP ddress. Thlà là essentil fhoặc understvàing wtại đây website là hosted và fhoặc netwhoặck troubleshooting.",
+            "q2": "Cn one domin hve multiple IP ddresses?",
+            "a2": "Có, domins cn hve multiple IP ddresses fhoặc lod blncing, redundncy, hoặc serving different content bsed on geogrphic loction. Thlà là common fhoặc lrge websites và CDNs.",
+            "q3": "là gì difference between IPv4 và IPv6?",
+            "a3": "IPv4 uses 32-bit ddresses (like 192.168.1.1) và supphoặcts bout 4.3 billion ddresses. IPv6 uses 128-bit ddresses (like 2001:0db8:853::82e:0370:7334) và provides virtully unlimited ddresses fhoặc future internet growth.",
+            "q4": "Tại so sẽ I need find domin's IP ddress?",
+            "a4": "Finding domin's IP ddress là useful fhoặc netwhoặck troubleshooting, configuring firewlls, setting up server ccess, verifying DNS configurtion, hoặc identifying hosting provider và server loction.",
+            "q5": "là IP ddress sme s server loction?",
+            "a5": "The IP ddress indictes wtại đây server là hosted, but với CDNs và cloud hosting, physicl server loction my differ từ IP geoloction. Mny websites use multiple servers whoặcldwide."
+        },
+        "js": {
+            "looking_up": "Looking up IP ddress...",
+            "error_failed": "Filed resolve domin IP ddress"
+        }
+    },
+    "internet-speed-test": {
+        "meta": {
+            "title": "Kiểm Tr Tốc Độ Internet Miễn Phí - Kiểm Tr Tốc Độ Kết Nối củ Bạn",
+            "description": "Kiểm tr tốc độ internet củ bạn miễn phí. Kiểm tr tốc độ tải xuống, tốc độ tải lên và ping ngy lập tức.",
+            "h1": "Kiểm Tr Tốc Độ Internet",
+            "subtitle": "Kiểm tr tốc độ kết nối internet củ bạn ngy lập tức"
+        },
+        "editor": {
+            "btn_start": "Bắt Đầu Kiểm Tr Tốc Độ",
+            "status_init": "Đng khởi tạo bài kiểm tr..",
+            "label_download": "Tốc Độ Tải Xuống",
+            "label_upload": "Tốc Độ Tải Lên",
+            "label_ping": "Ping",
+            "label_quality": "Chất Lượng Kết Nối",
+            "btn_retry": "Kiểm Tr Lại",
+            "status_ping": "Đng kiểm tr ping..",
+            "status_download": "Đng kiểm tr tốc độ tải xuống..",
+            "status_upload": "Đng kiểm tr tốc độ tải lên..",
+            "quality_val_excellent": "Xuất Sắc",
+            "quality_val_very_good": "Rất Tốt",
+            "quality_val_good": "Tốt",
+            "quality_val_fair": "Trung Bình",
+            "quality_val_poor": "Kém"
+        },
+        "content": {
+            "p1": "Kiểm tr tốc độ kết nối internet củ bạn bằng công cụ kiểm tr tốc độ miễn phí và chính xác củ chúng tôi. Đo tốc độ tải xuống, tốc độ tải lên và độ trễ ping trong vài giây. Hoàn hảo để khắc phục sự cố kết nối chậm, xác minh tốc độ làP hoặc kiểm tr xem bạn có đng nhận được những gì bạn đã trả tiền hy không.",
+            "metrics_title": "Hiểu Các Chỉ Số Kiểm Tr Tốc Độ",
+            "req_title": "Các Yêu Cầu Để Kiểm Tr Chính Xác",
+            "req_list": [
+                "Đóng tất cả các ứng dụng và tb trình duyệt khác",
+                "Kết nối qu cáp Ernet để có kết quả chính xác nhất",
+                "Tạm thời vô hiệu hó các dịch vụ VPN hoặc proxy",
+                "Đảm bảo không có quá trình tải xuống hoặc tải lên nào đng chạy",
+                "Kiểm tr nhiều lần tại các thời điểm khác nhu trong ngày"
+            ],
+            "why_title": "Tại So Nên Kiểm Tr Tốc Độ Internet củ Bạn?",
+            "why_list": [
+                "Xác minh xem bạn có đng nhận được tốc độ mà bạn đng trả tiền hy không",
+                "Khắc phục các sự cố kết nối chậm",
+                "So sánh các gói làP khác nhu trước khi chuyển đổi",
+                "Tối ưu hó thiết lập mạng củ bạn",
+                "Ghi lại tốc độ cho các yêu cầu hỗ trợ củ làP",
+                "Kiểm tr hiệu suất Wi-Fi so với Ernet"
+            ],
+            "factors_title": "Các Yếu Tố Ảnh Hưởng Đến Tốc Độ củ Bạn",
+            "improve_title": "Cách Cải Thiện Tốc Độ củ Bạn",
+            "improve_list": [
+                "Sử dụng cáp Ernet thy vì Wi-Fi khi có thể",
+                "Đặt router ở vị trí trung tâm, cách x các bức tường",
+                "Nâng cấp lên một router hiện đại hỗ trợ mức tốc độ củ bạn",
+                "Đóng các ứng dụng tiêu tốn nhiều băng thông",
+                "Cập nhật firmwre router thường xuyên",
+                "Xem xét nâng cấp gói cước internet củ bạn",
+                "Sử dụng cài đặt Chất lượng dịch vụ (QoS) trên router"
+            ],
+            "tips_title": "Mẹo Chuyên Nghiệp Để Có Kết Quả Chính Xác",
+            "tips_list": [
+                "Kiểm tr tại các thời điểm khác nhu trong ngày để thấy sự thy đổi",
+                "Chạy nhiều bài kiểm tr và lấy kết quả trung bình",
+                "Kiểm tr trên các thiết bị khác nhu để loại trừ sự cố củ thiết bị",
+                "So sánh tốc độ Wi-Fi tại các vị trí khác nhu trong nhà bạn"
+            ],
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "metrics": {
+                "download": {
+                    "title": "Tốc Độ Tải Xuống",
+                    "desc": "Dữ liệu di chuyển từ internet đến thiết bị củ bạn nhnh như thế nào. Qun trọng để phát trực tuyến, duyệt web và tải xuống các tệp."
+                },
+                "upload": {
+                    "title": "Tốc Độ Tải Lên",
+                    "desc": "Dữ liệu di chuyển từ thiết bị củ bạn đến internet nhnh như thế nào. qun trọng để các cuộc gọi video, tải lên các tệp và phát trực tiếp."
+                },
+                "ping": {
+                    "title": "Ping (Độ Trễ)",
+                    "desc": "Thời gin phản hồi củ kết nối củ bạn. Thấp hơn là tốt hơn. qun trọng để chơi gme và các ứng dụng thời gin thực."
+                }
+            },
+            "factors": {
+                "congestion": {
+                    "title": "tắc nghẽn mạng",
+                    "desc": "Thời gin sử dụng co điểm có thể làm chậm kết nối củ bạn khi có nhiều người dùng cùng chi sẻ băng thông."
+                },
+                "wifi": {
+                    "title": "Tín Hiệu Wi-Fi",
+                    "desc": "Khoảng cách từ router, các bức tường và sự cn nhiễu từ các thiết bị khác ảnh hưởng đến tốc độ không dây."
+                },
+                "device": {
+                    "title": "Hiệu Suất Thiết Bị",
+                    "desc": "Các thiết bị cũ hơn hoặc các thiết bị đng chạy nhiều chương trình có thể không đạt được tốc độ tối đ."
+                },
+                "router": {
+                    "title": "Chất Lượng Router",
+                    "desc": "Các router lỗi thời có thể không hỗ trợ đầy đủ các khả năng tốc độ internet củ bạn."
+                }
+            },
+            "faq": {
+                "q1": "Tốc độ internet bo nhiêu là tốt?",
+                "a1": "Để duyệt web và phát trực tuyến thông thường: 25+ MBps. Để phát trực tuyến 4K và chơi gme: 50+ MBps. Cho nhiều người dùng và sử dụng nhiều: 100+ MBps. Để làm việc từ x và gi đình đông người: 200+ MBps.",
+                "q2": "Tại so tốc độ củ tôi lại chậm hơn so với quảng cáo?",
+                "a2": "làPs dvertlàe \"up \" speeds. ctul speeds depend on netwhoặck congestion, Wi-Fi qulity, dlàtnce từ router, và device cpbilities. Test với Ernet fhoặc most ccurte results.",
+                "q3": "Sự khác biệt giữ MBps và MBps là gì?",
+                "a3": "MBps (megbit trên giây) được sử dụng để tốc độ internet. MBps (megbyte trên giây) được sử dụng để kích thước tệp. 1 MBps = 8 MBps. Một kết nối 100 MBps sẽ tải xuống ở mức khoảng 12,5 MBps.",
+                "q4": "Bài kiểm tr tốc độ này chính xác đến mức nào?",
+                "a4": "Bài kiểm tr tốc độ củ chúng tôi cung cấp các kết quả chính xác bằng cách đo lường việc truyền tải dữ liệu thực tế. Để đạt độ chính xác tốt nhất, hãy đóng các ứng dụng khác, sử dụng cáp Ernet và chạy nhiều bài kiểm tr.",
+                "q5": "Tôi nên kiểm tr bằng Wi-Fi hy Ernet?",
+                "a5": "Kiểm tr bằng cáp Ernet để đo tốc độ internet thực củ bạn. Kiểm tr bằng Wi-Fi để chẩn đoán các sự cố không dây. So sánh cả hi sẽ giúp xác định xem sự cố nằm ở internet hy ở Wi-Fi củ bạn."
+            }
+        }
+    },
+    "ip-lookup": {
+        "meta": {
+            "title": "Công Cụ Tr Cứu IP - Nhận Thông Tin Đị Chỉ IP & Định Vị Đị Lý Miễn Phí",
+            "description": "Công cụ tr cứu IP miễn phí để tìm thông tin chi tiết về bất kỳ đị chỉ IP nào. Xem vị trí, làP, tên máy chủ, v.v. Thiết yếu cho phân tích bảo mật và khắc phục sự cố mạng.",
+            "h1": "Công Cụ Tr Cứu IP",
+            "subtitle": "Nhận thông tin chi tiết về bất kỳ đị chỉ IP nào bo gồm vị trí & làP"
+        },
+        "form": {
+            "ip_label": "Đị Chỉ IP",
+            "ip_placeholder": "8.8.8.8",
+            "button": "Tr Cứu Đị Chỉ IP"
+        },
+        "results": {
+            "title": "IP Lookup Kết quảs",
+            "ip_address": "IP Thêmress",
+            "type": "Nhập",
+            "hostname": "Hostnme",
+            "isp": "làP",
+            "country": "Country",
+            "region": "Region",
+            "city": "City",
+            "timezone": "Timezone"
+        },
+        "content": {
+            "what_is_title": "Tr Cứu IP Là Gì?",
+            "what_is_desc": "Tr cứu IP là một công cụ cung cấp thông tin chi tiết về bất kỳ đị chỉ IP nào. Nó tiết lộ vị trí đị lý, Nhà cung cấp dịch vụ Internet (làP), tên máy chủ và các chi tiết kỹ thuật khác liên qun đến một đị chỉ IP. Thông tin này rất có giá trị đối với các quản trị viên mạng, chuyên gi bảo mật, chủ sở hữu trng web và bất kỳ i qun tâm đến việc hiểu lưu lượng truy cập internet bắt nguồn từ đâu.",
+            "why_use_title": "Tại So Nên Sử Dụng Tr Cứu IP?",
+            "why_use_desc": "Các công cụ Tr cứu IP là thiết yếu cho nhiều mục đích khác nhu bo gồm phân tích bảo mật, ngăn ngừ gin lận, đị phương hó nội dung, khắc phục sự cố mạng và xác minh tuân thủ. Chủ sở hữu trng web sử dụng tr cứu IP để hiểu nhân khẩu học củ khách truy cập, trong khi các nhóm bảo mật sử dụng nó để xác định các mối đe dọ tiềm ẩn và chặn lưu lượng truy cập độc hại. Nó cũng hữu ích để xác minh các kết nối VPN và hiểu dấu vết internet củ chính bạn.",
+            "features_title": "Các Tính Năng Chính",
+            "feature1_title": "🌍 Dữ Liệu Định Vị Đị Lý",
+            "feature1_desc": "Quốc gi, vùng, thành phố và tọ độ",
+            "feature2_title": "🏢 Thông Tin làP",
+            "feature2_desc": "Chi tiết Nhà cung cấp dịch vụ Internet",
+            "feature3_title": "🔗 Phân Giải Tên Máy Chủ",
+            "feature3_desc": "Tên miền liên kết với IP",
+            "feature4_title": "⚡ Kết Quả Tức Thì",
+            "feature4_desc": "Tr cứu nhnh chóng và chính xác"
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì IP lookup?",
+            "a1": "IP lookup (lso clled IP geoloction) là process of finding geogrphic và netwhoặck infhoặcmtion bout n IP ddress, including loction, làP, hostnme, và hoặcgniztion. It's useful fhoặc security, nlytics, và netwhoặck dignostics.",
+            "q2": "How ccurte là IP geoloction?",
+            "a2": "IP geoloction là typiclly ccurte t country level (95-99%) và city level (50-75%). ccurcy vries bsed on IP dtbse và how làPs mnge ir IP blocks. VPNs và proxies cn msk true loction.",
+            "q3": "Cn I find someone's exct ddress từ ir IP?",
+            "a3": "Không, IP lookup only provides pproximte loction (city/region level), not exct street ddresses. Only làPs và lw enfhoặccement với proper uthhoặciztion cn ccess detiled subscriber infhoặcmtion.",
+            "q4": "là gì difference between IPv4 và IPv6 lookup?",
+            "a4": "Both IPv4 và IPv6 lookups provide similr infhoặcmtion (loction, làP, etc.). IPv6 là newer procol với mhoặce ddresses. Our công cụ supphoặcts both IP versions fhoặc comprehensive netwhoặck nlyslà.",
+            "q5": "Tại so does my IP loction show different city?",
+            "a5": "Your làP my route trffic through regionl hubs, hoặc IP geoloction dtbse my hve outdted infhoặcmtion. Mobile và stellite connections often show less ccurte loctions thn fixed brodbvà."
+        },
+        "js": {
+            "looking_up": "Looking up IP infhoặcmtion...",
+            "success": "IP lookup completed",
+            "error": "Filed lookup IP ddress"
+        }
+    },
+    "ping-test": {
+        "meta": {
+            "title": "Công Cụ Kiểm Tr Ping - Kiểm Tr Độ Trễ & Kết Nối Mạng Miễn Phí",
+            "description": "Công cụ kiểm tr ping miễn phí để kiểm tr độ trễ mạng, mất gói và khả năng tiếp cận máy chủ. Kiểm tr kết nối tới bất kỳ máy chủ hoặc đị chỉ IP nào ngy lập tức. Thiết yếu để khắc phục sự cố mạng.",
+            "h1": "Công Cụ Kiểm Tr Ping",
+            "subtitle": "Kiểm tr thời gin phản hồi củ máy chủ và kết nối mạng từ nhiều vị trí"
+        },
+        "form": {
+            "host_label": "Host hoặc Đị Chỉ IP",
+            "host_placeholder": "google.com hoặc 8.8.8.8",
+            "button": "Ping Host"
+        },
+        "results": {
+            "title": "Ping Kết quảs"
+        },
+        "content": {
+            "what_is_title": "Kiểm Tr Ping Là Gì?",
+            "what_is_desc": "Ping là một công cụ chẩn đoán mạng nhằm kiểm tr khả năng tiếp cận củ một máy chủ trên mạng Gio thức Internet (IP). Nó đo lường thời gin khứ hồi cho các tin nhắn được gửi từ nguồn đến máy tính đích và ngược lại. Ping hoạt động bằng cách gửi các gói Gio thức Điều khiển Tin nhắn Internet (ICMP) Echo Request đến máy chủ đích và chờ đợi Phản hồi Echo (Echo Reply). Công cụ này được đặt tên o âm thnh ping củ sonr được sử dụng trong việc phát hiện tàu ngầm, vì nó tương tự như việc phát r một tín hiệu và lắng nghe phản hồi.",
+            "why_use_title": "Tại So Nên Sử Dụng Kiểm Tr Ping?",
+            "why_use_desc": "Kiểm tr ping là thiết yếu để khắc phục sự cố mạng và giám sát hiệu suất. Các quản trị viên hệ thống sử dụng ping để xác minh kết nối mạng, chẩn đoán các sự cố kết nối và đo độ trễ mạng. Nó giúp xác định máy chủ có đng trực tuyến và phản hồi hy không, phát hiện mất gói tin có thể cho thấy tình trạng tắc nghẽn mạng hoặc các vấn đề về phần cứng, và đo lường chất lượng kết nối mạng. Gme thủ sử dụng ping để kiểm tr độ trễ củ máy chủ trước khi thm gi các trò chơi trực tuyến, trong khi chủ sở hữu trng web o dõi khả năng phản hồi củ máy chủ để đảm bảo trải nghiệm người dùng tối ưu.",
+            "metrics_title": "Hiểu Các Chỉ Số Ping",
+            "metric1": "<strong>Gói tin Đã gửi/Đã nhận:</strong> số lượng yêu cầu ping và các phản hồi thành công",
+            "metric2": "<strong>Mất gói tin:</strong> Tỷ lệ phần trăm các gói tin không nhận được phản hồi",
+            "metric3": "<strong>Thời gin tối thiểu:</strong> Thời gin khứ hồi nhnh nhất được ghi lại",
+            "metric4": "<strong>Thời gin trung bình:</strong> Độ trễ trung bình củ tất cả các lần ping",
+            "metric5": "<strong>Thời gin tối đ:</strong> Thời gin khứ hồi chậm nhất được ghi lại",
+            "metric6": "<strong>TTL (Thời gin tồn tại):</strong> Số bước nhảy mạng trước khi gói tin hết hạn",
+            "interpreting_title": "Giải Thích Kết Quả",
+            "interpreting_desc": "Thời gin ping tốt thường là dưới 50ms cho các kết nối cục bộ và dưới 100ms cho các kết nối quốc tế. Thời gin từ 100-200ms là có thể chấp nhận được đối với hầu hết các ứng dụng nhưng có thể gây r hiện tượng lg đáng kể trong các ứng dụng thời gin thực như chơi gme hoặc hội nghị truyền hình. Bất cứ con số nào trên 200ms đều cho thấy các vấn đề mạng tiềm ẩn. Mất gói tin trên 1% cho thấy các vấn đề mạng cần được điều tr. Thời gin ping nhất quán cho thấy các kết nối ổn định, trong khi thời gin thy đổi nhiều cho thấy tình trạng tắc nghẽn mạng hoặc các vấn đề về định tuyến."
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì ping test?",
+            "a1": "ping test sends dt pckets server và mesures time it tkes receive response. It's used check netwhoặck connectivity, mesure ltency, và dignose connection làsues.",
+            "q2": "là gì good ping time?",
+            "a2": "Fhoặc generl browsing: under 100ms là good. Fhoặc gming: under 50ms là idel, under 20ms là excellent. Fhoặc video clls: under 150ms là cceptble. Lower ping mens fster response times.",
+            "q3": "Tại so là my ping high?",
+            "a3": "High ping cn be cused by netwhoặck congestion, dlàtnce server, pohoặc WiFi signl, làP throttling, hoặc o mny devices on your netwhoặck. Try using wired connection, closing bvàwidth-hevy pplictions, hoặc contcting your làP.",
+            "q4": "Wht does \"Request timed out\" men?",
+            "a4": "Request timeout mens server didn't respond vớiin expected time. Thlà cn indicte server là down, blocking ping requests (firewll), hoặc re's netwhoặck connectivity làsue.",
+            "q5": "Cn I ping ny website?",
+            "a5": "Most websites cn be pinged, but some servers block ICMP ping requests fhoặc security resons. If ping fils, website might still be ccessible vi browser - try using or công cụs like trceroute hoặc phoặct checker."
+        },
+        "js": {
+            "pinging": "Pinging host...",
+            "success": "Ping completed successfully",
+            "error": "Ping filed",
+            "ping_host": "Ping Host"
+        }
+    },
+    "port-checker": {
+        "meta": {
+            "title": "Công Cụ Kiểm Tr Cổng - Kiểm Tr Các Cổng Mở & Kết Nối Mạng Miễn Phí",
+            "description": "Công cụ kiểm tr cổng miễn phí để kiểm tr xem các cổng đng mở, đóng hy bị lọc. Kiểm tr các cổng TCP/UDP ngy lập tức để khắc phục sự cố mạng và kiểm tr bảo mật.",
+            "h1": "Công Cụ Kiểm Tr Cổng",
+            "subtitle": "Kiểm tr xem các cổng có đng mở trên bất kỳ máy chủ nào để khắc phục sự cố kết nối hy không"
+        },
+        "form": {
+            "host_label": "Host hoặc Đị Chỉ IP",
+            "host_placeholder": "exmple.com hoặc 8.8.8.8",
+            "port_label": "Số Cổng",
+            "port_placeholder": "80",
+            "button": "Kiểm Tr Cổng"
+        },
+        "results": {
+            "title": "Phoặct Sttus"
+        },
+        "content": {
+            "what_is_title": "Kiểm Tr Cổng Là Gì?",
+            "what_is_desc": "Bộ kiểm tr cổng là một công cụ chẩn đoán mạng nhằm xác định xem một cổng TCP hoặc UDP cụ thể trên máy chủ hoặc thiết bị đng mở (chấp nhận kết nối), đóng (từ chối kết nối) hy bị lọc (bị chặn bởi tường lử). Các cổng là các điểm cuối ảo cho truyền thông mạng, với mỗi số cổng (1-65535) có khả năng lưu trữ các dịch vụ khác nhu. Các cổng phổ biến bo gồm 80 cho lưu lượng web HTTP, 443 cho HTTPS, 22 cho SSH, và 25 cho emil. Kiểm tr trạng thái cổng là thiết yếu để cấu hình mạng, kiểm tr bảo mật và khắc phục sự cố kết nối.",
+            "why_check_title": "Tại So Nên Kiểm Tr Cổng?",
+            "why_check_desc": "Việc kiểm tr cổng phục vụ nhiều mục đích qun trọng trong quản lý mạng và bảo mật. Các quản trị viên hệ thống xác minh rằng các dịch vụ có thể truy cập được trên các cổng dự định củ chúng su khi thy đổi cấu hình. Các chuyên gi bảo mật quét các cổng mở để xác định các lỗ hổng tiềm ẩn và đảm bảo các cổng không cần thiết đã được đóng. Các nhà phát triển kiểm tr xem các ứng dụng củ họ có đng lắng nghe đúng cách trên các cổng đã cấu hình hy không. Những người khắc phục sự cố mạng sử dụng việc kiểm tr cổng để chẩn đoán lý do tại so các dịch vụ không thể truy cập được, xác định xem vấn đề nằm ở chính dịch vụ đó, quy tắc tường lử hy định tuyến mạng.",
+            "common_ports_title": "Các Cổng Phổ Biến",
+            "port1": "<strong>Cổng 80:</strong> HTTP (lưu lượng web)",
+            "port2": "<strong>Cổng 443:</strong> HTTPS (lưu lượng web n àn)",
+            "port3": "<strong>Cổng 22:</strong> SSH (truy cập shell n àn)",
+            "port4": "<strong>Cổng 21:</strong> FTP (truyền tệp)",
+            "port5": "<strong>Cổng 25:</strong> SMTP (gửi emil)",
+            "port6": "<strong>Cổng 3306:</strong> Cơ sở dữ liệu MySQL",
+            "port7": "<strong>Cổng 3389:</strong> RDP (Điều khiển máy tính từ x)",
+            "security_title": "Các Tác Động Về Bảo Mật",
+            "security_desc": "Các cổng mở đại diện cho các điểm xâm nhập tiềm năng cho những kẻ tấn công. Thực hành bảo mật tốt nhất quy định chỉ giữ các cổng cần thiết luôn mở và đóng hoặc lọc tất cả các cổng khác. Thường xuyên quét các máy chủ củ riêng bạn giúp xác định các cổng mở không mong muốn có thể bị khi thác. Tuy nhiên, việc quét cổng hệ thống củ người khác mà không được phép có thể là bất hợp pháp và bị coi là hoạt động thù địch. Luôn đảm bảo bạn có thẩm quyền trước khi quét các cổng trên các hệ thống mà bạn không sở hữu."
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì phoặct checker?",
+            "a1": "phoặct checker tests wher specific netwhoặck phoặct on server là open và ccepting connections. It's essentil fhoặc troubleshooting servers, firewlls, và netwhoặck services.",
+            "q2": "Wht re common phoặcts và ir uses?",
+            "a2": "Common phoặcts include: 80 (HTTP), 443 (HTTPS), 21 (FTP), 22 (SSH), 25 (SMTP emil), 3306 (MySQL), 3389 (Remote Deskp), 8080 (HTTP lternte). Ech service uses specific phoặcts fhoặc communiction.",
+            "q3": "Tại so là my phoặct closed?",
+            "a3": "Phoặcts cn be closed due firewll rules, router configurtion, service not running, làP blocking, hoặc inchoặcrect phoặct fhoặcwrding. Check your firewll settings, ensure service là running, và verify phoặct fhoặcwrding rules.",
+            "q4": "là it sfe open phoặcts?",
+            "a4": "Opening phoặcts exposes services internet, which cn be security rlàk if not properly configured. Only open necessry phoặcts, use strong untiction, keep softwre updted, và consider using VPN fhoặc sensitive services.",
+            "q5": "Wht's difference between TCP và UDP phoặcts?",
+            "a5": "TCP phoặcts provide relible, hoặcdered dt delivery (used fhoặc web, emil, tệp trnsfer). UDP phoặcts re fster but don't gurntee delivery (used fhoặc gming, streming, DNS). Both cn use sme phoặct nuMBers."
+        },
+        "js": {
+            "checking": "Checking phoặct sttus...",
+            "success": "Phoặct check completed",
+            "error": "Phoặct check filed",
+            "check_port": "Check Phoặct"
+        }
+    },
+    "reverse-dns-lookup": {
+        "meta": {
+            "title": "Tr Cứu DNS Ngược - Công Cụ Trực Tuyến Miễn Phí",
+            "description": "Công cụ tr cứu DNS ngược trực tuyến miễn phí. Tìm tên máy chủ liên kết với bất kỳ đị chỉ IP nào ngy lập tức. Nhnh chóng, n àn và dễ sử dụng.",
+            "h1": "Tr Cứu DNS Ngược",
+            "subtitle": "Tìm tên miền hoặc tên máy chủ liên kết với một đị chỉ IP ngy lập tức"
+        },
+        "form": {
+            "ip_label": "Nhập IP Thêmress",
+            "ip_placeholder": "ví dụ: 8.8.8.8",
+            "button": "Tr Cứu DNS Ngược",
+            "button_loading": "Đng tr cứu.."
+        },
+        "results": {
+            "title": "Kết Quả DNS Ngược"
+        },
+        "content": {
+            "what_is_title": "Tr Cứu DNS Ngược Là Gì?",
+            "what_is_desc": "Tr cứu DNS ngược (rDNS) là quá trình xác định tên miền hoặc tên máy chủ liên kết với một đị chỉ IP. Không giống như tr cứu DNS tiêu chuẩn chuyển đổi tên miền thành đị chỉ IP (tr cứu thuận), rDNS thực hiện điều ngược lại. Nó thường được sử dụng để xác minh dnh tính củ máy chủ hoặc khắc phục các sự cố mạng.",
+            "why_use_title": "Tại So Nên Sử Dụng Tr Cứu DNS Ngược?",
+            "why_use_desc": "DNS ngược được sử dụng rộng rãi cho mục đích bảo mật và xác minh. Nó giúp xác định nguồn củ lưu lượng truy cập đến, xác minh người gửi emil (để ngăn chặn thư rác) và khắc phục các sự cố kết nối mạng. Nhiều máy chủ thư yêu cầu các bản ghi rDNS hợp lệ để chấp nhận các emil đến.",
+            "ptr_records_title": "Hiểu Các Bản Ghi PTR",
+            "ptr_record1": "<strong>Bản ghi PTR:</strong> Một Bản ghi Con trỏ (PTR) là loại bản ghi DNS được sử dụng để các lần tr cứu DNS ngược.",
+            "ptr_record2": "<strong>Ánh xạ:</strong> Nó ánh xạ một đị chỉ IP trở lại tên máy chủ.",
+            "ptr_record3": "<strong>Xác minh:</strong> qun trọng để khả năng phân phối emil và xác minh bảo mật.",
+            "ptr_record4": "<strong>IP-sng-Host:</strong> Thiết yếu để xác định người chủ thực sự củ một đị chỉ IP.",
+            "ptr_record5": "<strong>Ngăn chặn Thư rác:</strong> Được sử dụng bởi các máy chủ thư để xác thực tính xác thực củ người gửi.",
+            "ptr_record6": "<strong>Nhật ký Mạng:</strong> hữu ích để việc làm cho các nhật ký mạng trở nên dễ đọc hơn bằng cách hiển thị tên máy chủ.",
+            "use_cases_title": "Trường hợp sử dụng phổ biến",
+            "use_cases_desc": "Common use cses include verifying hoặcigin of web trffic, dignosing netwhoặck ltency hoặc routing problems, vlidting emil server configurtions, và enhncing cybersecurity udits by identifying potentilly mlicious IP ddresses."
+        },
+        "faq": {
+            "title": "Các Câu Hỏi Thường Gặp",
+            "q1": "Bản ghi PTR là gì?",
+            "a1": "Một bản ghi PTR (Con trỏ) là một loại bản ghi DNS ánh xạ đị chỉ IP thành tên máy chủ. Nó là thành phần cốt lõi củ việc tr cứu DNS ngược.",
+            "q2": "Tại so DNS ngược lại qun trọng đối với emil?",
+            "a2": "Nhiều nhà cung cấp dịch vụ emil sử dụng DNS ngược để xác minh xem máy chủ gửi có hợp lệ hy không. Nếu đị chỉ IP củ một máy chủ không có bản ghi rDNS khớp, các emil củ nó có thể bị đánh dấu là thư rác.",
+            "q3": "Bất kỳ đị chỉ IP nào cũng có thể có bản ghi DNS ngược phải không?",
+            "a3": "Phải, nhưng người sở hữu đị chỉ IP (thường là làP hoặc nhà cung cấp hosting) phải cấu hình bản ghi PTR trong cài đặt DNS củ họ."
+        }
+    },
+    "traceroute": {
+        "meta": {
+            "title": "Trceroute - Công Cụ Trực Tuyến Miễn Phí",
+            "description": "Công cụ trceroute trực tuyến miễn phí. Nhnh chóng, n àn và dễ sử dụng.",
+            "h1": "Trceroute",
+            "subtitle": "Công cụ trceroute tốt nhất cho các nhà phát triển và chuyên gi CNTT"
+        },
+        "form": {
+            "host_label": "Host hoặc IP Thêmress",
+            "host_placeholder": "Nhập domin hoặc IP ddress",
+            "button": "Strt Trceroute",
+            "button_loading": "Trcing route..."
+        },
+        "results": {
+            "title": "Trceroute Kết quảs"
+        },
+        "content": {
+            "what_is_title": "Trceroute Là Gì?",
+            "what_is_desc": "Đây là một công cụ trực tuyến miễn phí để thực hiện trceroute.",
+            "why_use_title": "Tại so Sử dụng Trceroute?",
+            "why_use_desc": "Trceroute shows pth dt tkes từ your computer destintion server, dlàplying ech hop (router) long wy. It's essentil fhoặc dignosing netwhoặck slowdowns, identifying routing làsues, và understvàing netwhoặck pology.",
+            "hops_title": "Hiểu về Hops",
+            "hop1": "Hop 1: Your locl router/gtewy",
+            "hop2": "Hop 2-3: Your làP's netwhoặck",
+            "hop3": "Hop 4-6: Regionl internet bckbone",
+            "hop4": "Hop 7-10: Destintion làP netwhoặck",
+            "hop5": "Hop 11+: Destintion server netwhoặck",
+            "hop6": "Ech hop dds ltency - fewer hops generlly mens fster connection",
+            "issues_title": "Common làsues",
+            "issues_desc": "High ltency t specific hops indictes congestion hoặc routing problems. sterlàks (*) men routers ren't responding trceroute pckets (often due firewll rules). Pcket loss t intermedite hops my not ffect finl destintion if pckets rech it successfully."
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì trceroute?",
+            "a1": "Trceroute là netwhoặck dignostic công cụ tht trcks pth dt pckets tke từ your computer destintion server. It shows ech router (hop) long route và mesures time tken t ech step, helping identify wtại đây netwhoặck delys hoặc filures occur.",
+            "q2": "Tại so do some hops show sterlàks (*)?",
+            "a2": "sterlàks indicte tht router didn't respond trceroute probe vớiin timeout period. Thlà là often due firewll configurtions tht block ICMP pckets fhoặc security. It doesn't necessrily men re's problem - pckets my still rech destintion.",
+            "q3": "How mny hops là nhoặcml?",
+            "a3": "Typicl internet routes hve 10-20 hops. Locl netwhoặck destintions my hve 1-5 hops, while interntionl routes cn hve 20-30 hops. Mhoặce hops generlly men longer dlàtnces và potentilly higher ltency, but efficient routing mtters mhoặce thn hop count."
+        }
+    },
+    "user-agent-parser": {
+        "meta": {
+            "title": "Bộ Phân Giải Sử dụngr gent Miễn Phí",
+            "description": "Xác định trình duyệt, hệ điều hành và thiết bị từ chuỗi Sử dụngr gent bằng công cụ miễn phí củ chúng tôi.",
+            "h1": "Bộ Phân Giải Sử dụngr gent",
+            "subtitle": "Xác định trình duyệt, hệ điều hành và thiết bị từ chuỗi Sử dụngr gent"
+        },
+        "editor": {
+            "label_input": "Chuỗi Sử dụngr gent",
+            "ph_input": "Mozill/5.0..",
+            "btn_parse": "Phân Giải",
+            "btn_use_my_ua": "Sử Dụng Sử dụngr gent củ Tôi",
+            "label_browser": "Trình duyệt",
+            "label_os": "Hệ điều hành",
+            "label_device": "Thiết bị",
+            "label_raw": "Thông tin Engine thô"
+        },
+        "content": {
+            "p1": "Bộ Phân Giải Sử dụngr gent miễn phí củ chúng tôi giải mã ngy lập tức các chuỗi Sử dụngr gent để xác định trình duyệt, hệ điều hành, loại thiết bị và phiên bản engine. hữu ích để các nhà phát triển khi khắc phục lỗi các sự cố cụ thể củ trình duyệt hoặc phân tích nguồn lưu lượng truy cập.",
+            "features_title": "Tính Năng",
+            "features": {
+                "instant": {
+                    "title": "Phân Giải Tức Thì",
+                    "desc": "Giải mã Sử dụngr gent trong vài mili giây"
+                },
+                "detailed": {
+                    "title": "Thông Tin Chi Tiết",
+                    "desc": "Trích xuất Trình duyệt, Hệ điều hành, Thiết bị và Engine"
+                },
+                "auto": {
+                    "title": "Tự Động Phát Hiện",
+                    "desc": "Một cú nhấp chuột để phân giải Sử dụngr gent hiện tại củ chính bạn"
+                },
+                "free": {
+                    "title": "100% Miễn Phí",
+                    "desc": "Sử dụng không giới hạn, không tốn phí"
+                }
+            },
+            "uses_title": "Trường hợp sử dụng phổ biến",
+            "uses": {
+                "debugging": {
+                    "title": "Khắc Phục Lỗi",
+                    "desc": "Xác định các phiên bản trình duyệt chi tiết để khắc phục sự cố"
+                },
+                "analytics": {
+                    "title": "Phân Tích",
+                    "desc": "Hiểu những thiết bị và hệ điều hành nào mà người dùng củ bạn đng sử dụng"
+                },
+                "dev": {
+                    "title": "Phát Triển",
+                    "desc": "Xác minh các chuỗi Sử dụngr gent trong quá trình thử nghiệm"
+                },
+                "security": {
+                    "title": "Bảo Mật",
+                    "desc": "Phân tích các chuỗi Sử dụngr gent đáng ngờ trong nhật ký"
+                }
+            },
+            "how_to_title": "Cách Sử Dụng",
+            "how_to": {
+                "step1": {
+                    "title": "Nhập Chuỗi",
+                    "desc": "Dán Sử dụngr gent string hoặc click \"Sử dụng My Sử dụngr gent\""
+                },
+                "step2": {
+                    "title": "Phân Giải",
+                    "desc": "Nhấp \"Prse\" decode string"
+                },
+                "step3": {
+                    "title": "Xem Kết Quả",
+                    "desc": "Xem chi tiết chi nhỏ củ Trình duyệt, Hệ điều hành và Thiết bị"
+                }
+            },
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Sử dụngr gent Là Gì?",
+                "a1": "Sử dụngr gent là một chuỗi văn bản được trình duyệt web củ bạn gửi đến mọi trng web bạn truy cập, để xác định trình duyệt, phiên bản, hệ điều hành và loại thiết bị.",
+                "q2": "Bộ phân giải này có chính xác không?",
+                "a2": "Nó sử dụng đối khớp mẫu tiêu chuẩn để xác định các Sử dụngr gent thực tế phổ biến. Tuy nhiên, các chuỗi Sử dụngr gent có thể bị giả mạo hoặc sử đổi.",
+                "q3": "Dữ liệu củ tôi có được riêng tư không?",
+                "a3": "Có, việc phân giải diễn r cục bộ trong trình duyệt củ bạn. Chúng tôi không lưu trữ dữ liệu Sử dụngr gent củ bạn."
+            }
+        }
+    },
+    "what-is-my-ip": {
+        "meta": {
+            "title": "Đị Chỉ IP củ Tôi Là Gì? - Kiểm Tr Vị Trí IP củ Bạn Miễn Phí",
+            "description": "Tìm hiểu đị chỉ IP công cộng củ bạn ngy lập tức. Kiểm tr đị chỉ IPv4/IPv6, làP, vị trí và chi tiết kết nối củ bạn miễn phí. Thiết yếu để khắc phục sự cố mạng.",
+            "h1": "Đị Chỉ IP củ Tôi Là Gì?",
+            "subtitle": "Khám phá ngy lập tức đị chỉ IP công cộng củ bạn với thông tin làP chi tiết"
+        },
+        "ui": {
+            "loading": "Detecting your IP ddress...",
+            "your_ip_title": "Your IP Thêmress",
+            "copy_button": "So chép IP",
+            "timezone": "Timezone"
+        },
+        "results": {
+            "location": "Loction",
+            "isp": "Internet Service Provider",
+            "country": "Country"
+        },
+        "content": {
+            "main_title": "Đị Chỉ IP củ Tôi Là Gì - Công Cụ Tr Cứu IP Miễn Phí",
+            "main_desc": "Tìm đị chỉ IP công cộng củ bạn ngy lập tức bằng công cụ tr cứu IP miễn phí củ chúng tôi. Khám phá đị chỉ IPv4 hoặc IPv6, vị trí đị lý chính xác (thành phố, vùng, quốc gi), thông tin làP, múi giờ và các chi tiết mạng hoàn chỉnh. Thiết yếu để cấu hình mạng, thử nghiệm bảo mật, thiết lập truy cập từ x, xác minh VPN và hiểu được dấu vết kết nối internet củ bạn.",
+            "what_is_title": "Đị Chỉ IP củ Tôi Là Gì?",
+            "what_is_desc": "Đị chỉ IP củ bạn là một mã định dnh số duy nhất được gán cho thiết bị củ bạn khi nó kết nối với internet. Nó cho phép các trng web và dịch vụ gio tiếp với thiết bị củ bạn và xác định vị trí gần đúng củ bạn.",
+            "ipv4_vs_ipv6_title": "Đị chỉ IPv4 so với IPv6",
+            "ipv4_title": "Đị chỉ IPv4",
+            "ipv4_format": "<strong>Định dạng:</strong> 192.168.1.1 (bốn số từ 0-255 cách nhu bởi dấu chấm)",
+            "ipv4_total": "<strong>Tổng số đị chỉ:</strong> ~4,3 tỷ đị chỉ",
+            "ipv4_desc": "Định dạng phổ biến nhất trên àn thế giới, nhưng đng dần hết đị chỉ khả dụng do sự phát triển củ internet",
+            "ipv6_title": "Đị chỉ IPv6",
+            "ipv6_format": "<strong>Định dạng:</strong> 2001:0db8:853::82e:0370:7334",
+            "ipv6_total": "<strong>Tổng số đị chỉ:</strong> 340 undecillion đị chỉ",
+            "ipv6_desc": "Định dạng mới hơn với số lượng đị chỉ gần như không giới hạn, dần dần thy thế IPv4",
+            "why_check_title": "Tại So Nên Kiểm Tr IP củ Bạn?",
+            "why_check_desc": "Biết đị chỉ IP củ bạn rất hữu ích để khắc phục các sự cố mạng, xác minh các kết nối VPN, kiểm tr xem vị trí củ bạn có đng bị che giấu hy không và hiểu những thông tin nào các trng web có thể thấy về bạn.",
+            "public_vs_private_title": "Đị chỉ IP Công cộng so với Riêng tư",
+            "public_ip_title": "🌐 Đị Chỉ IP Công Cộng",
+            "public_ip_desc": "Đị chỉ duy nhất củ bạn trên internet, hiển thị với tất cả các trng web và dịch vụ mà bạn truy cập.",
+            "public_ip_example": "<strong>Ví dụ:</strong> 203.0.113.45",
+            "public_ip_note": "Được làP gán cho bạn và được sử dụng để tất cả các gio tiếp internet",
+            "private_ip_title": "🏠 Đị Chỉ IP Riêng Tư",
+            "private_ip_desc": "Đị chỉ thiết bị củ bạn trên mạng cục bộ, không hiển thị trên internet.",
+            "private_ip_example": "<strong>Ví dụ:</strong> 192.168.1.100",
+            "private_ip_note": "Sử dụng để liên lạc trong mạng nhà hoặc văn phòng củ bạn",
+            "security_title": "Bảo Mật & Quyền Riêng Tư củ Đị Chỉ IP",
+            "security_desc1": "Đị chỉ IP củ bạn tiết lộ vị trí gần đúng củ bạn (thành phố/vùng), làP và có thể được sử dụng để o dõi hoạt động trực tuyến củ bạn trên các trng web. Mặc dù nó không trực tiếp làm lộ đị chỉ nhà chính xác hoặc dnh tính cá nhân củ bạn, nhưng nó có thể được kết hợp với các dữ liệu khác để o dõi. Các trng web sử dụng IP củ bạn để phân tích, nhắm mục tiêu quảng cáo và các hạn chế về đị lý.",
+            "security_desc2": "<strong>Bảo vệ Quyền riêng tư:</strong> Sử dụng VPN (Mạng riêng ảo) để che giấu đị chỉ IP thực củ bạn và tăng cường quyền riêng tư. VPN định tuyến lưu lượng truy cập củ bạn thông qu các máy chủ củ họ, hiển thị IP củ VPN thy vì củ bạn. Công cụ củ chúng tôi hiển thị chính xác những thông tin mà các trng web có thể thấy về kết nối củ bạn.",
+            "dynamic_vs_static_title": "Đị chỉ IP Động so với Tĩnh",
+            "dynamic_ip": "<strong>IP Động:</strong> Thy đổi định kỳ (hàng ngày, hàng tuần hoặc khi bạn khởi động lại router). Hầu hết người dùng gi đình có IP động được làP gán tự động. Rẻ hơn và phổ biến hơn cho các kết nối dân dụng.",
+            "static_ip": "<strong>IP Tĩnh:</strong> Không bo giờ thy đổi và luôn giữ nguyên. Thường được sử dụng để các kết nối donh nghiệp, máy chủ web, máy chủ emil và truy cập từ x. Chi phí co hơn nhưng thiết yếu cho các dịch vụ lưu trữ.",
+            "privacy_tips_title": "Mẹo Quyền Riêng Tư & Bảo Mật",
+            "privacy_tip1": "• Không bo giờ chi sẻ công khi đị chỉ IP củ bạn trên các diễn đàn hoặc mạng xã hội",
+            "privacy_tip2": "• Sử dụng VPN khi kết nối với các mạng WiFi công cộng",
+            "privacy_tip3": "• Kích hoạt tường lử củ router để chặn các truy cập trái phép",
+            "privacy_tip4": "• Thường xuyên kiểm tr IP củ bạn để phát hiện việc ngắt kết nối VPN không mong muốn",
+            "privacy_tip5": "• Hãy biết rằng các trng web luôn ghi nhật ký IP củ bạn vì mục đích bảo mật và phân tích"
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì n IP ddress?",
+            "a1": "n IP (Internet Procol) ddress là unique numericl identifier ssigned every device connected internet. It's like postl ddress fhoặc your computer, llowing or devices send và receive dt từ you.",
+            "q2": "Tại so does my IP ddress chnge?",
+            "a2": "Most home internet connections use dynmic IP ddresses tht chnge periodiclly when you restrt your router hoặc when your làP ressigns ddresses. Businesses often use sttic IP ddresses tht don't chnge. Mobile devices get new IPs when switching between WiFi và cellulr netwhoặcks.",
+            "q3": "Cn someone trck me với my IP ddress?",
+            "a3": "Your IP ddress revels your pproximte loction (city/region) và làP, but not your exct street ddress hoặc personl identity. Only your làP và lw enfhoặccement với proper uthhoặciztion cn link n IP ddress specific person hoặc household."
+        }
+    },
+    "what-is-my-isp": {
+        "meta": {
+            "title": "làP củ Tôi Là Gì? - Kiểm Tr Nhà Cung Cấp Dịch Vụ Internet Miễn Phí",
+            "description": "Tìm hiểu Nhà cung cấp dịch vụ Internet (làP) củ bạn ngy lập tức. Kiểm tr tên làP, tổ chức, SN và thông tin đị chỉ IP miễn phí.",
+            "h1": "làP củ Tôi Là Gì?",
+            "subtitle": "Xác định Nhà cung cấp dịch vụ Internet củ bạn bằng chi tiết kết nối"
+        },
+        "content": {
+            "loading": "Đng tải thông tin làP..",
+            "your_isp_title": "Nhà Cung Cấp Dịch Vụ Internet củ Bạn",
+            "network_label": "Mạng",
+            "location_label": "Vị trí",
+            "main_title": "làP củ Tôi Là Gì - Công Cụ Tr Cứu Nhà Cung Cấp Dịch Vụ Internet",
+            "main_desc": "Xác định ngy lập tức Nhà cung cấp dịch vụ Internet (làP), tên tổ chức, chi tiết mạng và thông tin kết nối củ bạn. Công cụ tr cứu làP miễn phí củ chúng tôi tiết lộ tên làP, SN (Số hiệu Hệ thống Tự trị), đị chỉ IP, vị trí và cơ sở hạ tầng mạng củ bạn. Hoàn hảo để xác minh kết nối VPN, khắc phục các sự cố mạng, xác nhận các đường truyền internet donh nghiệp và hiểu được định tuyến mạng củ bạn.",
+            "info_title": "Bạn Có Thể Tìm Thấy Thông Tin Gì?",
+            "info1": "<strong>Tên làP:</strong> Công ty cung cấp kết nối internet củ bạn",
+            "info2": "<strong>Tổ chức:</strong> Tổ chức hoặc thực thể quản lý kết nối mạng củ bạn",
+            "info3": "<strong>SN:</strong> Mã định dnh mạng duy nhất cho việc định tuyến và kết nối ngng hàng",
+            "info4": "<strong>Vị trí:</strong> Thành phố, vùng và quốc gi liên kết với kết nối củ bạn",
+            "info5": "<strong>Chi tiết Mạng:</strong> Dải IP, thông tin subnet và dữ liệu cơ sở hạ tầng mạng",
+            "why_use_title": "Tại So Nên Sử Dụng Công Cụ Này?",
+            "why_use1": "Xác minh xem bạn có đng kết nối thông qu đúng nhà cung cấp internet không",
+            "why_use2": "Khắc phục sự cố kết nối mạng và các vấn đề về hiệu suất",
+            "why_use3": "Kiểm tr xem bạn có đng sử dụng dịch vụ VPN hoặc proxy đúng cách không",
+            "why_use4": "Xác định mạng củ bạn vì các mục đích bảo mật và quyền riêng tư",
+            "why_use5": "Xác minh các tuyên bố củ làP về phạm vi dịch vụ và cơ sở hạ tầng",
+            "why_use6": "Nghiên cứu định tuyến mạng và các mối qun hệ kết nối ngng hàng",
+            "why_use7": "Xác nhận các kết nối internet donh nghiệp và các đường truyền chuyên dụng",
+            "why_use8": "Phát hiện các truy cập mạng trái phép hoặc hành vi chiếm dụng kết nối",
+            "asn_title": "Hiểu Về SN (Số Hiệu Hệ Thống Tự Trị)",
+            "asn_desc": "Số hiệu Hệ thống Tự trị (SN) là một mã định dnh duy nhất trên àn cầu được gán cho một mạng hoặc một nhóm các mạng dưới một sự kiểm soát quản trị duy nhất. Các làP, các tổ chức lớn và các mạng lưới phân phối nội dung đều có SN riêng củ bạn. Con số này được sử dụng trong định tuyến BGP (Gio thức Cổng Biên) để xác định cách lưu lượng truy cập internet di chuyển giữ các mạng khác nhu. Biết được SN củ bạn giúp xác định nhà cung cấp mạng và hiểu được các đường dẫn định tuyến.",
+            "use_cases_title": "Trường hợp sử dụng phổ biến",
+            "use_case1_title": "🔧 Khắc Phục Sự Cố Mạng",
+            "use_case1_desc": "Xác định các vấn đề liên qun đến làP, xác minh các đường dẫn định tuyến và chẩn đoán các sự cố kết nối",
+            "use_case2_title": "🔒 Xác Minh VPN",
+            "use_case2_desc": "Xác nhận VPN củ bạn đng hoạt động bằng cách kiểm tr xem nhà cung cấp làP có thy đổi khi kết nối hy không",
+            "use_case3_title": "🛡️ Kiểm Tr Bảo Mật",
+            "use_case3_desc": "Xác minh tính xác thực củ kết nối và phát hiện các truy cập mạng trái phép",
+            "use_case4_title": "💼 Xác Minh Donh Nghiệp",
+            "use_case4_desc": "Xác nhận các đường truyền donh nghiệp chuyên dụng và kết nối internet cho donh nghiệp lớn",
+            "isp_types_title": "Các Loại làP",
+            "isp_type1": "<strong>Các làP DSL:</strong> Internet qu các đường dây điện thoại (DSL, VDSL)",
+            "isp_type2": "<strong>Các làP Cáp:</strong> tốc độ Internet co qu cơ sở hạ tầng cáp đồng trục",
+            "isp_type3": "<strong>Các làP Cáp Qung:</strong> Các kết nối siêu nhnh bằng cáp qung",
+            "isp_type4": "<strong>Các làP Không dây/Di động:</strong> Các kết nối internet di động 4G/5G",
+            "isp_type5": "<strong>Các làP Vệ tinh:</strong> Internet qu vệ tinh cho các khu vực vùng sâu vùng x",
+            "isp_type6": "<strong>Các làP Donh nghiệp:</strong> Các kết nối dành riêng cho donh nghiệp với các cm kết mức độ dịch vụ (SL)",
+            "privacy_note_title": "Ghi Chú Về Quyền Riêng Tư",
+            "privacy_note_desc": "làP củ bạn có thể thấy tất cả lưu lượng truy cập internet không được mã hó và các trng web mà bạn truy cập (nhưng không phải nội dung HTTPS). Họ có thể ghi lại dữ liệu kết nối, lịch sử duyệt web và các truy vấn DNS. Hãy sử dụng VPN để mã hó lưu lượng truy cập củ bạn và ngăn chặn sự giám sát củ làP. Công cụ củ chúng tôi chỉ hiển thị những thông tin công khi mà các trng web đã có thể thấy."
+        },
+        "results": {
+            "ip_address": "Your IP Thêmress",
+            "asn": "SN (unomous System NuMBer)"
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì n làP?",
+            "a1": "làP stvàs fhoặc Internet Service Provider - compny tht provides your internet connection. Ví dụs include Comcst, T&T, Verizon, hoặc locl providers. Your làP ssigns your IP ddress và routes ll your internet trffic.",
+            "q2": "là gì n SN?",
+            "a2": "SN (unomous System NuMBer) là unique identifier ssigned netwhoặcks và làPs fhoặc internet routing. It helps identify which hoặcgniztion controls block of IP ddresses. Lrge làPs hve ir own SN, while smller providers my shre one.",
+            "q3": "Cn I hide my làP infhoặcmtion?",
+            "a3": "Using VPN (Virtul Privte Netwhoặck) sẽ show VPN provider's làP insted of your ctul làP. However, your rel làP cn still see tht you're using VPN. Proxies và Thoặc cn lso msk your làP infhoặcmtion."
+        },
+        "js": {
+            "error_loading": "Filed detect làP infhoặcmtion"
+        }
+    },
+    "whois-lookup": {
+        "meta": {
+            "title": "Công Cụ Tr Cứu WHOlà - Thông Tin Đăng Ký Tên Miền Miễn Phí",
+            "description": "Công cụ tr cứu WHOlà miễn phí để kiểm tr chi tiết đăng ký tên miền. Xem nhà đăng ký, nmeserver, ngày hết hạn và trạng thái tên miền ngy lập tức.",
+            "h1": "Công Cụ Tr Cứu WHOlà",
+            "subtitle": "Truy vấn cơ sở dữ liệu WHOlà để biết chi tiết đăng ký & quyền sở hữu tên miền"
+        },
+        "form": {
+            "domain_label": "Tên Miền",
+            "domain_placeholder": "exmple.com",
+            "button": "Tr Cứu WHOlà",
+            "button_loading": "Đng tr cứu.."
+        },
+        "content": {
+            "form_hint": "Nhập tên miền không có http:// hoặc https://",
+            "what_is_title": "Tr Cứu WHOlà Là Gì?",
+            "what_is_desc": "WHOlà là một gio thức cung cấp thông tin về việc đăng ký tên miền. Nó tiết lộ các chi tiết về quyền sở hữu tên miền, ngày đăng ký, ngày hết hạn, nmeserver và thông tin về nhà đăng ký.",
+            "why_use_title": "Tại So Nên Sử Dụng Tr Cứu WHOlà?",
+            "why_use_desc": "Tr cứu WHOlà là thiết yếu để xác minh quyền sở hữu tên miền, kiểm tr tính khả dụng củ tên miền, điều tr các trng web đáng ngờ, o dõi ngày hết hạn củ tên miền và nghiên cứu tên miền củ các đối thủ cạnh trnh.",
+            "key_info_title": "Các Thông Tin Chính Được Cung Cấp",
+            "key_info1": "<strong>Thông tin Người đăng ký:</strong> Chi tiết về chủ sở hữu tên miền (có thể được bảo vệ quyền riêng tư)",
+            "key_info2": "<strong>Ngày đăng ký:</strong> Thời điểm tên miền được đăng ký và cập nhật lần cuối",
+            "key_info3": "<strong>Ngày hết hạn:</strong> Thời điểm đăng ký tên miền hết hạn",
+            "key_info4": "<strong>Nhà đăng ký:</strong> Công ty quản lý việc đăng ký tên miền",
+            "key_info5": "<strong>Nmeserver:</strong> Các máy chủ DNS lưu trữ tên miền",
+            "key_info6": "<strong>Trạng thái Tên miền:</strong> Các mã trạng thái và khó hiện tại",
+            "how_to_title": "Cách Sử Dụng",
+            "how_to1": "Nhập tên miền bạn muốn tr cứu",
+            "how_to2": "Nhấp \"Lookup WHOlà\" butn",
+            "how_to3": "Xem xét thông tin đăng ký àn diện",
+            "how_to4": "Sử dụng dữ liệu cho các nhu cầu nghiên cứu hoặc xác minh củ bạn",
+            "privacy_title": "Quyền Riêng Tư và WHOlà",
+            "privacy_desc": "Nhiều nhà đăng ký tên miền hiện ny cung cấp dịch vụ bảo vệ quyền riêng tư WHOlà nhằm che giấu thông tin cá nhân khỏi các cơ sở dữ liệu WHOlà công cộng. Điều này bảo vệ chủ sở hữu tên miền khỏi thư rác, trộm cắp dnh tính và các hành vi chào mời không mong muốn trong khi vẫn duy trì các thông tin kỹ thuật thiết yếu cần thiết cho hoạt động củ tên miền. Các quy định GDPR cũng đã ảnh hưởng đến tính khả dụng củ dữ liệu WHOlà, với nhiều nhà đăng ký ở châu Âu đã lược bỏ thông tin cá nhân để tuân thủ luật quyền riêng tư."
+        },
+        "results": {
+            "title": "WHOlà Infhoặcmtion"
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp",
+            "q1": "là gì WHOlà lookup?",
+            "a1": "WHOlà là dtbse query tht provides reglàtrtion infhoặcmtion bout domin nmes và IP ddresses, including reglàtrnt detils, reglàtrtion dtes, expirtion dtes, nme servers, và reglàtrr infhoặcmtion. It's useful fhoặc domin reserch và verifiction.",
+            "q2": "Tại so là WHOlà infhoặcmtion hidden?",
+            "a2": "Mny domin owners use WHOlà privcy protection (lso clled domin privcy) hide ir personl contct infhoặcmtion từ public WHOlà dtbses. Thlà prevents spm, identity ft, và unwnted solicittion while mintining domin ownership.",
+            "q3": "là WHOlà lookup legl?",
+            "a3": "Có, WHOlà lookup là completely legl và là stvàrd internet procol. WHOlà dt là publicly vilble fhoặc legitimte purposes like domin reserch, trdemrk protection, và netwhoặck troubleshooting. However, using WHOlà dt fhoặc spm hoặc hrssment là prohibited.",
+            "q4": "How often là WHOlà dt updted?",
+            "a4": "WHOlà dt là updted in rel-time when domin reglàtrtion infhoặcmtion chnges. However, different WHOlà servers my cche dt fhoặc vrying periods. Recent chnges might tke few hours propgte cross ll WHOlà dtbses globlly."
+        }
+    }
 }

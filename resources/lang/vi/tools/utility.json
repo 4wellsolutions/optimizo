@@ -1,332 +1,332 @@
 {
- "password-generator": {
- "meta": {
-  "title": "Công Cụ Tạo Mật Khẩu Bảo Mật",
-  "description": "Tạo mật khẩu mạnh, bảo mật và ngẫu nhiên ngay lập tức với cài đặt độ dài và ký tự có thể tùy chỉnh.",
-  "h1": "Trình Tạo Mật Khẩu Bảo Mật",
-  "subtitle": "Tạo mật khẩu ngẫu nhiên mạnh mẽ ngay lập tức"
- },
- "editor": {
-  "title": "Tạo Mật Khẩu Bảo Mật của Bạn Ngay",
-  "length_label": "Độ dài Mật Khẩu:",
-  "chars": "ký tự",
-  "strength": {
-  "weak": "8 (Yếu)",
-  "good": "16 (Tốt)",
-  "strong": "32 (Mạnh)",
-  "very_strong": "64 (Rất Mạnh)"
-  },
-  "include_label": "Bao Gồm Các Loại Ký Tự:",
-  "option_uppercase": "Chữ Hoa (A-Z)",
-  "option_uppercase_desc": "Thêm chữ hoa để tăng độ phức tạp",
-  "option_lowercase": "Chữ Thường (a-z)",
-  "option_lowercase_desc": "Cần thiết cho độ mạnh mật khẩu",
-  "option_numbers": "Số (0-9)",
-  "option_numbers_desc": "Tăng entropy mật khẩu",
-  "option_symbols": "Ký Hiệu Đặc Biệt (!@#$%)",
-  "option_symbols_desc": "Bảo vệ bảo mật tối đa",
-  "btn_generate": "Tạo Mật Khẩu Mạnh",
-  "result_title": "Mật Khẩu Đã Tạo của Bạn",
-  "strength_score": "Điểm Bảo Mật:",
-  "btn_copy_text": "Sao Chép Mật Khẩu",
-  "btn_copy_final": "Sao Chép vào Clipboard",
-  "btn_regenerate": "Tạo Lại"
- },
- "content": {
-  "faq_hero_title": "Why Use Our Trình Tạo Mật Khẩu Bảo Mật?",
-  "faq": {
-  "q1": "Mật khẩu được tạo bởi công cụ này an toàn như thế nào?",
-  "a1": "Trình tạo mật khẩu của chúng tôi sử dụng tạo số ngẫu nhiên bảo mật mật mã để tạo mật khẩu. Mật khẩu được tạo hoàn toàn trong trình duyệt của bạn bằng phương thức crypto.getRandomValues() của JavaScript, đảm bảo tính ngẫu nhiên thực sự và bảo mật tối đa. Chúng tôi không bao giờ lưu trữ, truyền tải hoặc ghi lại bất kỳ mật khẩu nào được tạo.",
-  "q2": "Độ dài mật khẩu lý tưởng là bao nhiêu?",
-  "a2": "We recommend a minimum of 16 ký tự for strong security. Longer passwords (24-32 ký tự) provide even better protection against brute-force attacks. Our generator supports up to 64 ký tự for maximum security.",
-  "q3": "Should I include special ký tự in my password?",
-  "a3": "Yes, absolutely! Including special ký tự (!@#$%^&*) significantly increases password complexity and entropy. A password with uppercase, lowercase, numbers, and symbols is exponentially harder to crack than one with just letters and numbers.",
-  "q4": "Làm thế nào để nhớ mật khẩu phức tạp?",
-  "a4": "Đừng cố gắng ghi nhớ chúng! Sử dụng trình quản lý mật khẩu uy tín như LastPass, 1Password, Bitwarden hoặc Dashlane để lưu trữ an toàn tất cả mật khẩu của bạn. Trình quản lý mật khẩu mã hóa mật khẩu của bạn và chỉ yêu cầu bạn nhớ một mật khẩu chính.",
-  "q5": "Sử dụng trình tạo mật khẩu trực tuyến có an toàn không?",
-  "a5": "Có, trình tạo mật khẩu của chúng tôi hoàn toàn an toàn vì tất cả việc tạo mật khẩu diễn ra cục bộ trong trình duyệt của bạn. Mật khẩu không bao giờ được gửi đến máy chủ của chúng tôi hoặc lưu trữ ở bất cứ đâu.",
-  "q6": "Tôi nên thay đổi mật khẩu bao lâu một lần?",
-  "a6": "Đối với các tài khoản quan trọng (email, ngân hàng, công việc), thay đổi mật khẩu mỗi 3-6 tháng. Nếu bạn nghi ngờ có vi phạm hoặc nhận được cảnh báo bảo mật, hãy thay đổi mật khẩu ngay lập tức."
-  },
-  "seo": {
-  "title": "Hiểu về Bảo Mật & Mã Hóa Mật Khẩu",
-  "p1": "Bảo mật mật khẩu là nền tảng của an toàn trực tuyến. Mật khẩu mạnh đóng vai trò là tuyến phòng thủ đầu tiên chống lại truy cập trái phép vào thông tin cá nhân, dữ liệu tài chính và danh tính kỹ thuật số của bạn.",
-  "p2": "Độ mạnh của mật khẩu được đo bằng entropy - lượng ngẫu nhiên và không thể đoán trước. Mật khẩu 16 ký tự với tất cả các loại ký tự có entropy cao hơn đáng kể so với mật khẩu 8 ký tự đơn giản.",
-  "p3": "Công cụ tạo mật khẩu miễn phí của chúng tôi được thiết kế cho mọi người - từ cá nhân bảo vệ tài khoản cá nhân đến doanh nghiệp bảo mật quyền truy cập nhân viên. Tạo mật khẩu không giới hạn, hoàn toàn miễn phí, không cần đăng ký."
-  }
- },
- "js": {
-  "generating": "Đang Tạo Mật Khẩu Bảo Mật..",
-  "strength": {
-  "very_strong": "✓ Rất Mạnh - Bảo mật mật khẩu xuất sắc!",
-  "strong": "✓ Mạnh - Bảo mật mật khẩu tốt.",
-  "medium": "⚠ Trung Bình - Hãy xem xét làm cho nó mạnh hơn.",
-  "weak": "⚠ Yếu - Vui lòng tạo mật khẩu mạnh hơn."
-  },
-  "error_generating": "Lỗi khi tạo mật khẩu. Vui lòng thử lại",
-  "copied": "Đã Sao Chép!",
-  "error_copy": "Không thể sao chép mật khẩu. Vui lòng sao chép thủ công."
- }
- },
- "qr-code-generator": {
- "meta": {
-  "title": "Trình Tạo Mã QR Trực Tuyến Miễn Phí",
-  "description": "Tạo mã QR tùy chỉnh ngay lập tức cho URL, văn bản, WiFi và nhiều hơn nữa. Tải xuống hình ảnh PNG chất lượng cao.",
-  "h1": "Trình Tạo Mã QR",
-  "subtitle": "Tạo mã QR tùy chỉnh ngay lập tức cho bất kỳ mục đích nào"
- },
- "editor": {
-  "title": "Tạo Mã QR",
-  "label_text": "Nhập Văn Bản hoặc URL",
-  "ph_text": "Nhập văn bản, URL hoặc bất kỳ dữ liệu nào bạn muốn mã hóa..",
-  "label_size": "Kích Thước Mã QR",
-  "opt_small": "Nhỏ (128x128)",
-  "opt_medium": "Trung Bình (256x256)",
-  "opt_large": "Lớn (512x512)",
-  "opt_xl": "Rất Lớn (1024x1024)",
-  "btn_generate": "Tạo Mã QR",
-  "btn_download": "Tải Xuống Mã QR",
-  "preview_title": "Xem Trước",
-  "preview_placeholder": "Mã QR của bạn sẽ xuất hiện ở đây"
- },
- "content": {
-  "hero_title": "Free Trình Tạo Mã QR",
-  "hero_subtitle": "Tạo mã QR tùy chỉnh ngay lập tức cho bất kỳ mục đích nào",
-  "p1": "Our free Trình Tạo Mã QR creates high-quality QR codes instantly. Perfect for businesses, marketers, event organizers, and anyone who needs to share information quickly. Generate QR codes for URLs, text, contact information, WiFi credentials, and more. Download in multiple sizes and use anywhere - completely free, no registration required.",
-  "faq": {
-  "q1": "Mã QR có vĩnh viễn không?",
-  "a1": "Có! Mã QR là tĩnh và vĩnh viễn. Sau khi được tạo, chúng sẽ luôn hoạt động miễn là dữ liệu được mã hóa (như URL) vẫn hợp lệ.",
-  "q2": "Mã QR có vĩnh viễn không?",
-  "a2": "Có! Mã QR là tĩnh và vĩnh viễn. Sau khi được tạo, chúng sẽ luôn hoạt động miễn là dữ liệu được mã hóa (như URL) vẫn hợp lệ.",
-  "q3": "Tôi nên sử dụng kích thước nào để in?",
-  "a3": "Đối với danh thiếp, sử dụng ít nhất 256px. Đối với áp phích và băng rôn, sử dụng 512px hoặc 1024px. Kích thước in càng lớn, mã QR càng phải lớn để dễ quét.",
-  "q4": "Tôi có thể theo dõi lượt quét mã QR không?",
-  "a4": "Công cụ của chúng tôi tạo mã QR tĩnh không có theo dõi. Để theo dõi lượt quét, sử dụng công cụ rút gọn URL với phân tích trước khi tạo mã QR, hoặc sử dụng dịch vụ mã QR động.",
-  "q5": "Có giới hạn về lượng dữ liệu tôi có thể mã hóa không?",
-  "a5": "QR codes can store up to 4,296 alphanumeric ký tự, but for best scanning results, keep dữ liệu concise. URLs under 100 ký tự work best.",
-  "q6": "Mã QR có hết hạn không?",
-  "a6": "Không, bản thân mã QR không bao giờ hết hạn. Tuy nhiên, nếu mã QR liên kết đến URL bị xóa hoặc thay đổi, mã QR sẽ không hoạt động nữa."
-  },
-  "features_title": "Tính Năng",
-  "features": {
-  "instant": {
-   "title": "Tạo Tức Thì",
-   "desc": "Tạo mã QR trong vài giây với xem trước thời gian thực"
-  },
-  "sizes": {
-   "title": "Nhiều Kích Thước",
-   "desc": "Chọn từ 128px đến 1024px cho bất kỳ trường hợp sử dụng nào"
-  },
-  "download": {
-   "title": "Tải Xuống Dễ Dàng",
-   "desc": "Tải xuống dưới dạng hình ảnh PNG chỉ với một cú nhấp chuột"
-  },
-  "privacy": {
-   "title": "Ưu Tiên Quyền Riêng Tư",
-   "desc": "Tất cả xử lý diễn ra trong trình duyệt của bạn"
-  },
-  "free": {
-   "title": "100% Miễn Phí",
-   "desc": "Không giới hạn, không hình mờ, không cần đăng ký"
-  },
-  "compatibility": {
-   "title": "Tương Thích Phổ Quát",
-   "desc": "Hoạt động với tất cả các máy quét mã QR"
-  }
-  },
-  "uses_title": "🎯 Trường Hợp Sử Dụng Phổ Biến",
-  "uses": {
-  "urls": {
-   "title": "🔗 URL Trang Web",
-   "desc": "Hướng người dùng đến trang web, trang đích hoặc cửa hàng trực tuyến của bạn ngay lập tức"
-  },
-  "contact": {
-   "title": "👤 Thông Tin Liên Hệ",
-   "desc": "Chia sẻ vCard với email, điện thoại và chi tiết địa chỉ"
-  },
-  "social": {
-   "title": "👍 Mạng Xã Hội",
-   "desc": "Liên kết đến hồ sơ xã hội, kênh YouTube hoặc Instagram của bạn"
-  },
-  "tickets": {
-   "title": "🎟️ Vé Sự Kiện",
-   "desc": "Tạo vé có thể quét cho sự kiện và hội nghị"
-  },
-  "product": {
-   "title": "📦 Thông Tin Sản Phẩm",
-   "desc": "Thêm mã QR vào sản phẩm cho hướng dẫn, thông số kỹ thuật hoặc tính xác thực"
-  },
-  "payment": {
-   "title": "💳 Liên Kết Thanh Toán",
-   "desc": "Kích hoạt thanh toán nhanh qua PayPal, Venmo hoặc ví tiền điện tử"
-  }
-  },
-  "how_title": "📚 Cách Sử Dụng",
-  "how_steps": {
-  "1": {
-   "title": "Nhập dữ liệu của bạn:",
-   "desc": "Nhập hoặc dán văn bản, URL hoặc thông tin bạn muốn mã hóa"
-  },
-  "2": {
-   "title": "Chọn kích thước:",
-   "desc": "Chọn kích thước mã QR dựa trên nơi bạn sẽ sử dụng nó"
-  },
-  "3": {
-   "title": "Tạo:",
-   "desc": "Click \"Tạo Mã QR\" to create your QR code instantly"
-  },
-  "4": {
-   "title": "Tải xuống:",
-   "desc": "Click \"Tải Xuống Mã QR\" to save the PNG image"
-  },
-  "5": {
-   "title": "Sử dụng ở bất cứ đâu:",
-   "desc": "In, chia sẻ kỹ thuật số hoặc thêm vào tài liệu tiếp thị"
-  }
-  },
-  "best_practices_title": "ðŸ’¡ Thực hành tốt nhất",
-  "best_practices": {
-  "test": {
-   "title": "Kiểm tra trước khi in:",
-   "desc": "Luôn quét mã QR của bạn để xác minh nó hoạt động chính xác"
-  },
-  "size": {
-   "title": "Sử dụng kích thước phù hợp:",
-   "desc": "Mã QR lớn hơn dễ quét từ xa hơn"
-  },
-  "contrast": {
-   "title": "Đảm bảo độ tương phản:",
-   "desc": "In trên nền trắng hoặc sáng để quét tốt nhất"
-  },
-  "context": {
-   "title": "Thêm ngữ cảnh:",
-   "desc": "Include a call-to-action like \"Scan to visit website\""
-  },
-  "short": {
-   "title": "Giữ URL ngắn:",
-   "desc": "URL ngắn hơn tạo mã QR đơn giản hơn, dễ quét hơn"
-  }
-  },
-  "faq_title": "Câu Hỏi Thường Gặp"
- },
- "js": {
-  "error_empty": "Vui lòng nhập văn bản hoặc URL để tạo mã QR",
-  "error_generating": "Lỗi khi tạo mã QR.",
-  "error_no_code": "Vui lòng tạo mã QR trước",
-  "error_image_not_found": "Không tìm thấy hình ảnh mã QR"
- }
- },
- "random-number-generator": {
- "meta": {
-  "title": "Trình Tạo Số Ngẫu Nhiên",
-  "description": "Tạo số nguyên ngẫu nhiên thực sự trong phạm vi bạn chỉ định. hữu ích để trò chơi, xổ số và quà tặng.",
-  "h1": "Trình Tạo Số Ngẫu Nhiên",
-  "subtitle": "Tạo số nguyên ngẫu nhiên thực sự trong phạm vi bạn chỉ định"
- },
- "editor": {
-  "label_min": "Giá Trị Tối Thiểu",
-  "label_max": "Giá Trị Tối Đa",
-  "label_count": "số lượng",
-  "btn_generate": "Tạo Số",
-  "label_result": "Kết Quả"
- },
- "js": {
-  "error_invalid": "Vui lòng nhập số hợp lệ",
-  "error_min_max": "Min không thể lớn hơn Max"
- }
- },
- "username-checker": {
- "meta": {
-  "title": "Trình Kiểm Tra Tính Khả Dụng Tên Người Dùng",
-  "description": "Kiểm tra tính khả dụng tên người dùng trên các nền tảng xã hội chính ngay lập tức.",
-  "h1": "Trình Kiểm Tra Tính Khả Dụng Tên Người Dùng",
-  "subtitle": "Kiểm tra tính khả dụng tên người dùng trên tất cả các nền tảng xã hội chính"
- },
- "editor": {
-  "title_enter": "Nhập Tên Người Dùng",
-  "label_username": "Tên Người Dùng",
-  "ph_username": "nguyenvana",
-  "help_username": "Nhập tên người dùng không có ký hiệu @",
-  "btn_check": "Kiểm Tra Tính Khả Dụng",
-  "title_results": "Availability Kết Quảs",
-  "btn_checking": "Đang Kiểm Tra..",
-  "status_available": "Có Sẵn",
-  "status_taken": "Đã Được Sử Dụng",
-  "link_view": "View Profile â†’"
- },
- "content": {
-  "p1": "Kiểm tra tính khả dụng tên người dùng trên tất cả các nền tảng truyền thông xã hội chính ngay lập tức với trình kiểm tra tên người dùng miễn phí của chúng tôi. Tìm tên người dùng hoàn hảo cho thương hiệu của bạn trên Twitter, Instagram, GitHub, TikTok, Facebook, LinkedIn, YouTube, Reddit và nhiều hơn nữa. Bảo vệ danh tính thương hiệu của bạn bằng cách yêu cầu cùng một tên người dùng trên tất cả các nền tảng trước khi người khác làm. Hoàn hảo cho thương hiệu cá nhân, tài khoản doanh nghiệp và tiếp thị người có ảnh hưởng.",
-  "platforms_title": "Nền Tảng Được hỗ trợ",
-  "platforms": {
-  "social": {
-   "title": "Mạng Xã Hội",
-   "list": [
-   "Twitter (X): Kiểm tra tính khả dụng @username",
-   "Instagram: Tìm tên người dùng hoàn hảo của bạn",
-   "TikTok: Bảo vệ @username của bạn",
-   "Facebook: Kiểm tra URL hồ sơ"
-   ]
-  },
-  "professional": {
-   "title": "Chuyên Nghiệp",
-   "list": [
-   "LinkedIn: Chuyên Nghiệp profile",
-   "GitHub: Tên người dùng nhà phát triển",
-   "Medium: Hồ sơ nhà văn",
-   "YouTube: Tên kênh"
-   ]
-  }
-  },
-  "best_practices_title": "Tên Người Dùng Thực hành tốt nhất",
-  "best_practices": {
-  "short": {
-   "title": "Giữ Ngắn Gọn",
-   "desc": "Aim for 6-15 ký tự for easy memorability and typing"
-  },
-  "spell": {
-   "title": "Dễ Đánh Vần",
-   "desc": "Avoid complex spellings, numbers, and special ký tự"
-  },
-  "brand": {
-   "title": "Nhất Quán Thương Hiệu",
-   "desc": "Sử dụng cùng một tên người dùng trên tất cả các nền tảng để nhận diện"
-  },
-  "trends": {
-   "title": "Tránh Xu Hướng",
-   "desc": "Đừng sử dụng từ thời thượng có thể trở nên lỗi thời"
-  },
-  "seo": {
-   "title": "Thân Thiện SEO",
-   "desc": "Bao gồm từ khóa liên quan để dễ khám phá hơn"
-  },
-  "fast": {
-   "title": "Hành Động Nhanh",
-   "desc": "Yêu cầu tên người dùng của bạn nhanh chóng trước khi nó được sử dụng"
-  }
-  },
-  "tips_title": "Pro Tips for Choosing a Tên Người Dùng",
-  "tips_list": {
-  "items": [
-   "Kiểm tra tính khả dụng trên tất cả các nền tảng trước khi hoàn thiện",
-   "Xem xét mở rộng kinh doanh trong tương lai khi chọn",
-   "Làm cho nó có thể phát âm được cho tiếp thị truyền miệng",
-   "Tránh sử dụng dấu gạch dưới hoặc số nếu có thể",
-   "Bảo mật tên miền khớp với tên người dùng của bạn"
-  ]
-  },
-  "faq_title": "Câu Hỏi Thường Gặp",
-  "faq": {
-  "q1": "Tôi có thể kiểm tra bao nhiêu nền tảng cùng một lúc?",
-  "a1": "Trình kiểm tra tên người dùng của chúng tôi hỗ trợ hơn 10 nền tảng chính bao gồm Twitter, Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium và Pinterest. Kiểm tra tất cả các nền tảng đồng thời với một lần tìm kiếm.",
-  "q2": "Nếu tên người dùng mong muốn của tôi đã được sử dụng thì sao?",
-  "a2": "Thử các biến thể như thêm vị trí, ngành hoặc từ liên quan của bạn. Bạn cũng có thể sử dụng dấu gạch dưới, dấu chấm hoặc chữ viết tắt. Công cụ của chúng tôi giúp bạn nhanh chóng kiểm tra nhiều biến thể.",
-  "q3": "Tôi có nên sử dụng cùng một tên người dùng ở mọi nơi không?",
-  "a3": "Có! Sử dụng cùng một tên người dùng trên tất cả các nền tảng củng cố danh tính thương hiệu của bạn, giúp bạn dễ tìm hơn và giúp nhận diện và tiếp thị đa nền tảng.",
-  "q4": "Tôi có thể đặt trước tên người dùng mà không cần tạo tài khoản không?",
-  "a4": "Không, bạn phải tạo tài khoản trên mỗi nền tảng để yêu cầu tên người dùng. Công cụ của chúng tôi chỉ kiểm tra tính khả dụng - bạn sẽ cần đăng ký trên mỗi nền tảng để bảo vệ tên người dùng của bạn.",
-  "q5": "Tôi nên kiểm tra tính khả dụng tên người dùng bao lâu một lần?",
-  "a5": "Tên Người Dùng availability changes constantly. If you find an available username you like, claim it immediately on all platforms. Popular usernames can be taken within hours or even minutes."
-  }
- }
- }
+    "password-generator": {
+        "meta": {
+            "title": "Công Cụ Tạo Mật Khẩu Bảo Mật",
+            "description": "Tạo mật khẩu mạnh, bảo mật và ngẫu nhiên ngy lập tức với cài đặt độ dài và ký tự có thể tùy chỉnh.",
+            "h1": "Trình Tạo Mật Khẩu Bảo Mật",
+            "subtitle": "Tạo mật khẩu ngẫu nhiên mạnh mẽ ngy lập tức"
+        },
+        "editor": {
+            "title": "Tạo Mật Khẩu Bảo Mật củ Bạn Ngy",
+            "length_label": "Độ dài Mật Khẩu:",
+            "chars": "ký tự",
+            "strength": {
+                "weak": "8 (Yếu)",
+                "good": "16 (Tốt)",
+                "strong": "32 (Mạnh)",
+                "very_strong": "64 (Rất Mạnh)"
+            },
+            "include_label": "Bo Gồm Các Loại Ký Tự:",
+            "option_uppercase": "Chữ Ho (-Z)",
+            "option_uppercase_desc": "Thêm chữ ho để tăng độ phức tạp",
+            "option_lowercase": "Chữ Thường (-z)",
+            "option_lowercase_desc": "Cần thiết cho độ mạnh mật khẩu",
+            "option_numbers": "Số (0-9)",
+            "option_numbers_desc": "Tăng entropy mật khẩu",
+            "option_symbols": "Ký Hiệu Đặc Biệt (!@#$%)",
+            "option_symbols_desc": "Bảo vệ bảo mật tối đ",
+            "btn_generate": "Tạo Mật Khẩu Mạnh",
+            "result_title": "Mật Khẩu Đã Tạo củ Bạn",
+            "strength_score": "Điểm Bảo Mật:",
+            "btn_copy_text": "So Chép Mật Khẩu",
+            "btn_copy_final": "So Chép vào Clipbord",
+            "btn_regenerate": "Tạo Lại"
+        },
+        "content": {
+            "faq_hero_title": "Tại so Sử dụng Our Trình Tạo Mật Khẩu Bảo Mật?",
+            "faq": {
+                "q1": "Mật khẩu được tạo bởi công cụ này n àn như thế nào?",
+                "a1": "Trình tạo mật khẩu củ chúng tôi sử dụng tạo số ngẫu nhiên bảo mật mật mã để tạo mật khẩu. Mật khẩu được tạo hoàn àn trong trình duyệt củ bạn bằng phương thức cryp.getRvàomVlues() củ JvScript, đảm bảo tính ngẫu nhiên thực sự và bảo mật tối đ. Chúng tôi không bo giờ lưu trữ, truyền tải hoặc ghi lại bất kỳ mật khẩu nào được tạo.",
+                "q2": "Độ dài mật khẩu lý tưởng là bo nhiêu?",
+                "a2": "We recommend minimum of 16 ký tự fhoặc strong security. Longer psswhoặcds (24-32 ký tự) provide even better protection ginst brute-fhoặcce ttcks. Our generthoặc supphoặcts up 64 ký tự fhoặc Tối đimum security.",
+                "q3": "nên I include specil ký tự in my psswhoặcd?",
+                "a3": "Có, Chắc chắn rồi! Including specil ký tự (!@#$%^&*) significntly increses psswhoặcd complexity và entropy. psswhoặcd với uppercse, lowercse, nuMBers, và syMBols là exponentilly hrder crck thn one với just letters và nuMBers.",
+                "q4": "Làm thế nào để nhớ mật khẩu phức tạp?",
+                "a4": "Đừng cố gắng ghi nhớ chúng! Sử dụng trình quản lý mật khẩu uy tín như LstPss, 1Psswhoặcd, Bitwrden hoặc Dshlne để lưu trữ n àn tất cả mật khẩu củ bạn. Trình quản lý mật khẩu mã hó mật khẩu củ bạn và chỉ yêu cầu bạn nhớ một mật khẩu chính.",
+                "q5": "Sử dụng trình tạo mật khẩu trực tuyến có n àn không?",
+                "a5": "Có, trình tạo mật khẩu củ chúng tôi hoàn àn n àn vì tất cả việc tạo mật khẩu diễn r cục bộ trong trình duyệt củ bạn. Mật khẩu không bo giờ được gửi đến máy chủ củ chúng tôi hoặc lưu trữ ở bất cứ đâu.",
+                "q6": "Tôi nên thy đổi mật khẩu bo lâu một lần?",
+                "a6": "Đối với các tài khoản qun trọng (emil, ngân hàng, công việc), thy đổi mật khẩu mỗi 3-6 tháng. Nếu bạn nghi ngờ có vi phạm hoặc nhận được cảnh báo bảo mật, hãy thy đổi mật khẩu ngy lập tức."
+            },
+            "seo": {
+                "title": "Hiểu về Bảo Mật & Mã Hó Mật Khẩu",
+                "p1": "Bảo mật mật khẩu là nền tảng củ n àn trực tuyến. Mật khẩu mạnh đóng vi trò là tuyến phòng thủ đầu tiên chống lại truy cập trái phép vào thông tin cá nhân, dữ liệu tài chính và dnh tính kỹ thuật số củ bạn.",
+                "p2": "Độ mạnh củ mật khẩu được đo bằng entropy - lượng ngẫu nhiên và không thể đoán trước. Mật khẩu 16 ký tự với tất cả các loại ký tự có entropy co hơn đáng kể so với mật khẩu 8 ký tự đơn giản.",
+                "p3": "Công cụ tạo mật khẩu miễn phí củ chúng tôi được thiết kế cho mọi người - từ cá nhân bảo vệ tài khoản cá nhân đến donh nghiệp bảo mật quyền truy cập nhân viên. Tạo mật khẩu không giới hạn, hoàn àn miễn phí, không cần đăng ký."
+            }
+        },
+        "js": {
+            "generating": "Đng Tạo Mật Khẩu Bảo Mật..",
+            "strength": {
+                "very_strong": "✓ Rất Mạnh - Bảo mật mật khẩu xuất sắc!",
+                "strong": "✓ Mạnh - Bảo mật mật khẩu tốt.",
+                "medium": "⚠ Trung Bình - Hãy xem xét làm cho nó mạnh hơn.",
+                "weak": "⚠ Yếu - Vui lòng tạo mật khẩu mạnh hơn."
+            },
+            "error_generating": "Lỗi khi tạo mật khẩu. Vui lòng thử lại",
+            "copied": "Đã So Chép!",
+            "error_copy": "Không thể so chép mật khẩu. Vui lòng so chép thủ công."
+        }
+    },
+    "qr-code-generator": {
+        "meta": {
+            "title": "Trình Tạo Mã QR Trực Tuyến Miễn Phí",
+            "description": "Tạo mã QR tùy chỉnh ngy lập tức cho URL, văn bản, WiFi và nhiều hơn nữ. Tải xuống hình ảnh PNG chất lượng co.",
+            "h1": "Trình Tạo Mã QR",
+            "subtitle": "Tạo mã QR tùy chỉnh ngy lập tức cho bất kỳ mục đích nào"
+        },
+        "editor": {
+            "title": "Tạo Mã QR",
+            "label_text": "Nhập Văn Bản hoặc URL",
+            "ph_text": "Nhập văn bản, URL hoặc bất kỳ dữ liệu nào bạn muốn mã hó..",
+            "label_size": "Kích Thước Mã QR",
+            "opt_small": "Nhỏ (128x128)",
+            "opt_medium": "Trung Bình (256x256)",
+            "opt_large": "Lớn (512x512)",
+            "opt_xl": "Rất Lớn (1024x1024)",
+            "btn_generate": "Tạo Mã QR",
+            "btn_download": "Tải Xuống Mã QR",
+            "preview_title": "Xem Trước",
+            "preview_placeholder": "Mã QR củ bạn sẽ xuất hiện ở đây"
+        },
+        "content": {
+            "hero_title": "miễn phí Trình Tạo Mã QR",
+            "hero_subtitle": "Tạo mã QR tùy chỉnh ngy lập tức cho bất kỳ mục đích nào",
+            "p1": "Our miễn phí Trình Tạo Mã QR cretes high-qulity QR codes instntly. Perfect fhoặc businesses, mrketers, event hoặcgnizers, và nyone who needs shre infhoặcmtion quickly. Generte QR codes fhoặc URLs, text, contct infhoặcmtion, WiFi credentils, và mhoặce. Tải xuống in multiple sizes và use nywtại đây - completely miễn phí, no reglàtrtion required.",
+            "faq": {
+                "q1": "Mã QR có vĩnh viễn không?",
+                "a1": "Có! Mã QR là tĩnh và vĩnh viễn. Su khi được tạo, chúng sẽ luôn hoạt động miễn là dữ liệu được mã hó (như URL) vẫn hợp lệ.",
+                "q2": "Mã QR có vĩnh viễn không?",
+                "a2": "Có! Mã QR là tĩnh và vĩnh viễn. Su khi được tạo, chúng sẽ luôn hoạt động miễn là dữ liệu được mã hó (như URL) vẫn hợp lệ.",
+                "q3": "Tôi nên sử dụng kích thước nào để in?",
+                "a3": "Đối với dnh thiếp, sử dụng ít nhất 256px. Đối với áp phích và băng rôn, sử dụng 512px hoặc 1024px. Kích thước in càng lớn, mã QR càng phải lớn để dễ quét.",
+                "q4": "Tôi có thể o dõi lượt quét mã QR không?",
+                "a4": "Công cụ củ chúng tôi tạo mã QR tĩnh không có o dõi. Để o dõi lượt quét, sử dụng công cụ rút gọn URL với phân tích trước khi tạo mã QR, hoặc sử dụng dịch vụ mã QR động.",
+                "q5": "Có giới hạn về lượng dữ liệu tôi có thể mã hó không?",
+                "a5": "QR codes cn sthoặce up 4,296 lphnumeric ký tự, but fhoặc best scnning results, keep dữ liệu conclàe. URLs under 100 ký tự whoặck best.",
+                "q6": "Mã QR có hết hạn không?",
+                "a6": "Không, bản thân mã QR không bo giờ hết hạn. Tuy nhiên, nếu mã QR liên kết đến URL bị xó hoặc thy đổi, mã QR sẽ không hoạt động nữ."
+            },
+            "features_title": "Tính Năng",
+            "features": {
+                "instant": {
+                    "title": "Tạo Tức Thì",
+                    "desc": "Tạo mã QR trong vài giây với xem trước thời gin thực"
+                },
+                "sizes": {
+                    "title": "Nhiều Kích Thước",
+                    "desc": "Chọn từ 128px đến 1024px cho bất kỳ trường hợp sử dụng nào"
+                },
+                "download": {
+                    "title": "Tải Xuống Dễ Dàng",
+                    "desc": "Tải xuống dưới dạng hình ảnh PNG chỉ với một cú nhấp chuột"
+                },
+                "privacy": {
+                    "title": "Ưu Tiên Quyền Riêng Tư",
+                    "desc": "Tất cả xử lý diễn r trong trình duyệt củ bạn"
+                },
+                "free": {
+                    "title": "100% Miễn Phí",
+                    "desc": "Không giới hạn, không hình mờ, không cần đăng ký"
+                },
+                "compatibility": {
+                    "title": "Tương Thích Phổ Quát",
+                    "desc": "Hoạt động với tất cả các máy quét mã QR"
+                }
+            },
+            "uses_title": "🎯 Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "urls": {
+                    "title": "🔗 URL Trng Web",
+                    "desc": "Hướng người dùng đến trng web, trng đích hoặc cử hàng trực tuyến củ bạn ngy lập tức"
+                },
+                "contact": {
+                    "title": "👤 Thông Tin Liên Hệ",
+                    "desc": "Chi sẻ vCrd với emil, điện thoại và chi tiết đị chỉ"
+                },
+                "social": {
+                    "title": "👍 Mạng Xã Hội",
+                    "desc": "Liên kết đến hồ sơ xã hội, kênh YouTube hoặc Instgrm củ bạn"
+                },
+                "tickets": {
+                    "title": "🎟️ Vé Sự Kiện",
+                    "desc": "Tạo vé có thể quét cho sự kiện và hội nghị"
+                },
+                "product": {
+                    "title": "📦 Thông Tin Sản Phẩm",
+                    "desc": "Thêm mã QR vào sản phẩm cho hướng dẫn, thông số kỹ thuật hoặc tính xác thực"
+                },
+                "payment": {
+                    "title": "💳 Liên Kết Thnh án",
+                    "desc": "Kích hoạt thnh án nhnh qu PyPl, Venmo hoặc ví tiền điện tử"
+                }
+            },
+            "how_title": "📚 Cách Sử Dụng",
+            "how_steps": {
+                "1": {
+                    "title": "Nhập dữ liệu củ bạn:",
+                    "desc": "Nhập hoặc dán văn bản, URL hoặc thông tin bạn muốn mã hó"
+                },
+                "2": {
+                    "title": "Chọn kích thước:",
+                    "desc": "Chọn kích thước mã QR dự trên nơi bạn sẽ sử dụng nó"
+                },
+                "3": {
+                    "title": "Tạo:",
+                    "desc": "Nhấp \"Tạo Mã QR\" crete your QR code instntly"
+                },
+                "4": {
+                    "title": "Tải xuống:",
+                    "desc": "Nhấp \"Tải Xuống Mã QR\" sve PNG hình ảnh"
+                },
+                "5": {
+                    "title": "Sử dụng ở bất cứ đâu:",
+                    "desc": "In, chi sẻ kỹ thuật số hoặc thêm vào tài liệu tiếp thị"
+                }
+            },
+            "best_practices_title": "ðŸ’¡ Thực hành tốt nhất",
+            "best_practices": {
+                "test": {
+                    "title": "Kiểm tr trước khi in:",
+                    "desc": "Luôn quét mã QR củ bạn để xác minh nó hoạt động chính xác"
+                },
+                "size": {
+                    "title": "Sử dụng kích thước phù hợp:",
+                    "desc": "Mã QR lớn hơn dễ quét từ x hơn"
+                },
+                "contrast": {
+                    "title": "Đảm bảo độ tương phản:",
+                    "desc": "In trên nền trắng hoặc sáng để quét tốt nhất"
+                },
+                "context": {
+                    "title": "Thêm ngữ cảnh:",
+                    "desc": "Include cll--ction like \"Scn vlàit website\""
+                },
+                "short": {
+                    "title": "Giữ URL ngắn:",
+                    "desc": "URL ngắn hơn tạo mã QR đơn giản hơn, dễ quét hơn"
+                }
+            },
+            "faq_title": "Câu Hỏi Thường Gặp"
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập văn bản hoặc URL để tạo mã QR",
+            "error_generating": "Lỗi khi tạo mã QR.",
+            "error_no_code": "Vui lòng tạo mã QR trước",
+            "error_image_not_found": "Không tìm thấy hình ảnh mã QR"
+        }
+    },
+    "random-number-generator": {
+        "meta": {
+            "title": "Trình Tạo Số Ngẫu Nhiên",
+            "description": "Tạo số nguyên ngẫu nhiên thực sự trong phạm vi bạn chỉ định. hữu ích để trò chơi, xổ số và quà tặng.",
+            "h1": "Trình Tạo Số Ngẫu Nhiên",
+            "subtitle": "Tạo số nguyên ngẫu nhiên thực sự trong phạm vi bạn chỉ định"
+        },
+        "editor": {
+            "label_min": "Giá Trị Tối Thiểu",
+            "label_max": "Giá Trị Tối Đ",
+            "label_count": "số lượng",
+            "btn_generate": "Tạo Số",
+            "label_result": "Kết Quả"
+        },
+        "js": {
+            "error_invalid": "Vui lòng nhập số hợp lệ",
+            "error_min_max": "Min không thể lớn hơn Tối đ"
+        }
+    },
+    "username-checker": {
+        "meta": {
+            "title": "Trình Kiểm Tr Tính Khả Dụng Tên Người Dùng",
+            "description": "Kiểm tr tính khả dụng tên người dùng trên các nền tảng xã hội chính ngy lập tức.",
+            "h1": "Trình Kiểm Tr Tính Khả Dụng Tên Người Dùng",
+            "subtitle": "Kiểm tr tính khả dụng tên người dùng trên tất cả các nền tảng xã hội chính"
+        },
+        "editor": {
+            "title_enter": "Nhập Tên Người Dùng",
+            "label_username": "Tên Người Dùng",
+            "ph_username": "nguyenvn",
+            "help_username": "Nhập tên người dùng không có ký hiệu @",
+            "btn_check": "Kiểm Tr Tính Khả Dụng",
+            "title_results": "vilbility Kết Quảs",
+            "btn_checking": "Đng Kiểm Tr..",
+            "status_available": "Có Sẵn",
+            "status_taken": "Đã Được Sử Dụng",
+            "link_view": "View Protệp â†’"
+        },
+        "content": {
+            "p1": "Kiểm tr tính khả dụng tên người dùng trên tất cả các nền tảng truyền thông xã hội chính ngy lập tức với trình kiểm tr tên người dùng miễn phí củ chúng tôi. Tìm tên người dùng hoàn hảo cho thương hiệu củ bạn trên Twitter, Instgrm, GitHub, Tikk, Fcebook, LinkedIn, YouTube, Reddit và nhiều hơn nữ. Bảo vệ dnh tính thương hiệu củ bạn bằng cách yêu cầu cùng một tên người dùng trên tất cả các nền tảng trước khi người khác làm. Hoàn hảo cho thương hiệu cá nhân, tài khoản donh nghiệp và tiếp thị người có ảnh hưởng.",
+            "platforms_title": "Nền Tảng Được hỗ trợ",
+            "platforms": {
+                "social": {
+                    "title": "Mạng Xã Hội",
+                    "list": [
+                        "Twitter (X): Kiểm tr tính khả dụng @usernme",
+                        "Instgrm: Tìm tên người dùng hoàn hảo củ bạn",
+                        "Tikk: Bảo vệ @usernme củ bạn",
+                        "Fcebook: Kiểm tr URL hồ sơ"
+                    ]
+                },
+                "professional": {
+                    "title": "Chuyên Nghiệp",
+                    "list": [
+                        "LinkedIn: Chuyên Nghiệp protệp",
+                        "GitHub: Tên người dùng nhà phát triển",
+                        "Medium: Hồ sơ nhà văn",
+                        "YouTube: Tên kênh"
+                    ]
+                }
+            },
+            "best_practices_title": "Tên Người Dùng Thực hành tốt nhất",
+            "best_practices": {
+                "short": {
+                    "title": "Giữ Ngắn Gọn",
+                    "desc": "im fhoặc 6-15 ký tự fhoặc esy memhoặcbility và typing"
+                },
+                "spell": {
+                    "title": "Dễ Đánh Vần",
+                    "desc": "void complex spellings, nuMBers, và specil ký tự"
+                },
+                "brand": {
+                    "title": "Nhất Quán Thương Hiệu",
+                    "desc": "Sử dụng cùng một tên người dùng trên tất cả các nền tảng để nhận diện"
+                },
+                "trends": {
+                    "title": "Tránh Xu Hướng",
+                    "desc": "Đừng sử dụng từ thời thượng có thể trở nên lỗi thời"
+                },
+                "seo": {
+                    "title": "Thân Thiện SEO",
+                    "desc": "Bo gồm từ khó liên qun để dễ khám phá hơn"
+                },
+                "fast": {
+                    "title": "Hành Động Nhnh",
+                    "desc": "Yêu cầu tên người dùng củ bạn nhnh chóng trước khi nó được sử dụng"
+                }
+            },
+            "tips_title": "Pro Tips fhoặc Choosing Tên Người Dùng",
+            "tips_list": {
+                "items": [
+                    "Kiểm tr tính khả dụng trên tất cả các nền tảng trước khi hoàn thiện",
+                    "Xem xét mở rộng kinh donh trong tương li khi chọn",
+                    "Làm cho nó có thể phát âm được cho tiếp thị truyền miệng",
+                    "Tránh sử dụng dấu gạch dưới hoặc số nếu có thể",
+                    "Bảo mật tên miền khớp với tên người dùng củ bạn"
+                ]
+            },
+            "faq_title": "Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Tôi có thể kiểm tr bo nhiêu nền tảng cùng một lúc?",
+                "a1": "Trình kiểm tr tên người dùng củ chúng tôi hỗ trợ hơn 10 nền tảng chính bo gồm Twitter, Instgrm, Tikk, Fcebook, LinkedIn, GitHub, YouTube, Reddit, Medium và Pinterest. Kiểm tr tất cả các nền tảng đồng thời với một lần tìm kiếm.",
+                "q2": "Nếu tên người dùng mong muốn củ tôi đã được sử dụng thì so?",
+                "a2": "Thử các biến thể như thêm vị trí, ngành hoặc từ liên qun củ bạn. Bạn cũng có thể sử dụng dấu gạch dưới, dấu chấm hoặc chữ viết tắt. Công cụ củ chúng tôi giúp bạn nhnh chóng kiểm tr nhiều biến thể.",
+                "q3": "Tôi có nên sử dụng cùng một tên người dùng ở mọi nơi không?",
+                "a3": "Có! Sử dụng cùng một tên người dùng trên tất cả các nền tảng củng cố dnh tính thương hiệu củ bạn, giúp bạn dễ tìm hơn và giúp nhận diện và tiếp thị đ nền tảng.",
+                "q4": "Tôi có thể đặt trước tên người dùng mà không cần tạo tài khoản không?",
+                "a4": "Không, bạn phải tạo tài khoản trên mỗi nền tảng để yêu cầu tên người dùng. Công cụ củ chúng tôi chỉ kiểm tr tính khả dụng - bạn sẽ cần đăng ký trên mỗi nền tảng để bảo vệ tên người dùng củ bạn.",
+                "q5": "Tôi nên kiểm tr tính khả dụng tên người dùng bo lâu một lần?",
+                "a5": "Tên Người Dùng vilbility chnges constntly. If you find n vilble usernme you like, clim it immeditely on ll pltfhoặcms. Populr usernmes cn be tken vớiin hours hoặc even minutes."
+            }
+        }
+    }
 }

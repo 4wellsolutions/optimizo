@@ -910,7 +910,7 @@
             "to_octal": "Sekizliye",
             "to_decimal": "Onluğa",
             "label_decimal": "Onluk Sayı",
-            "ph_decimal": "Enter a decimal number (e.g., 511)...",
+            "ph_decimal": "Ondalık bir sayı girin (örn. 511)...",
             "label_result_octal": "Sekizli Çıkış",
             "ph_output": "Sonuç burada görünecek...",
             "btn_convert_octal": "Sekizliye Dönüştür",
@@ -940,7 +940,7 @@
             "features": {
                 "fast": {
                     "title": "Hızlı Dönüşüm",
-                    "desc": "Hardware-level speed for near-instant results."
+                    "desc": "Neredeyse anında sonuçlar için donanım düzeyinde hız."
                 },
                 "bi": {
                     "title": "Çift Yönlü",
@@ -948,19 +948,19 @@
                 },
                 "secure": {
                     "title": "Gizlilik Garantili",
-                    "desc": "Calculations happen in your browser; no data is sent to our servers."
+                    "desc": "Hesaplamalar tarayıcınızda gerçekleşir; sunucularımıza hiçbir veri gönderilmez."
                 },
                 "copy": {
                     "title": "Sonuç Kopyalama",
-                    "desc": "Copy your converted values with a single click."
+                    "desc": "Dönüştürülen değerlerinizi tek tıklamayla kopyalayın."
                 },
                 "free": {
                     "title": "Sıfır Maliyet",
-                    "desc": "Free access to all conversion features forever."
+                    "desc": "Tüm dönüştürme özelliklerine sonsuza kadar ücretsiz erişim."
                 },
                 "universal": {
-                    "title": "Universal Access",
-                    "desc": "Works smoothly on all devices and modern web browsers."
+                    "title": "Evrensel Erişim",
+                    "desc": "Tüm cihazlarda ve modern web tarayıcılarında sorunsuz çalışır."
                 }
             },
             "uses": {
@@ -970,7 +970,7 @@
                 },
                 "computing": {
                     "title": "Bilgisayar Bilimi",
-                    "desc": "Learn how positional numeral systems function beyond base-2, 10, and 16."
+                    "desc": "Taban-2, 10 ve 16'nın ötesinde konumsal sayı sistemlerinin nasıl çalıştığını öğrenin."
                 },
                 "permission": {
                     "title": "Erişim Kontrolü",
@@ -978,54 +978,54 @@
                 },
                 "legacy": {
                     "title": "Eski Sistemler",
-                    "desc": "Process and analyze data from older hardware architectures and mainframes."
+                    "desc": "Eski donanım mimarilerinden ve ana bilgisayarlardan verileri işleyin ve analiz edin."
                 },
                 "aviation": {
                     "title": "Havacılık Transponderları",
-                    "desc": "Understand the squawk codes used by aircraft, which are octal values."
+                    "desc": "Uçaklar tarafından kullanılan ve sekizlik değerler olan squawk kodlarını anlayın."
                 },
                 "education": {
                     "title": "Matematik Eğitimi",
-                    "desc": "Explore the properties of base-8 mathematics and notation."
+                    "desc": "Taban-8 matematiğinin ve notasyonunun özelliklerini keşfedin."
                 }
             },
             "steps": {
                 "1": {
                     "title": "Mod Seçin",
-                    "desc": "Choose your conversion direction (Base-10 to Base-8 or vice versa)."
+                    "desc": "Dönüştürme yönünüzü seçin (Taban-10'dan Taban-8'e veya tam tersi)."
                 },
                 "2": {
-                    "title": "Enter Data",
-                    "desc": "Type the numeric value into the corresponding input field."
+                    "title": "Veri Girin",
+                    "desc": "Sayısal değeri ilgili giriş alanına yazın."
                 },
                 "3": {
-                    "title": "Process",
-                    "desc": "Press the conversion button to trigger the instant calculation."
+                    "title": "İşle",
+                    "desc": "Anında hesaplamayı tetiklemek için dönüştürme düğmesine basın."
                 },
                 "4": {
-                    "title": "Check Output",
-                    "desc": "Locate your result in the output box."
+                    "title": "Çıktıyı Kontrol Et",
+                    "desc": "Sonucunuzu çıkış kutusunda bulun."
                 },
                 "5": {
                     "title": "Kopyala",
-                    "desc": "Quickly copy the result for use in your code or documents."
+                    "desc": "Sonucu kodunuzda veya belgelerinizde kullanmak üzere hızlıca kopyalayın."
                 }
             },
             "examples": {
                 "small": {
-                    "title": "Single Digit",
+                    "title": "Tek Basamak",
                     "desc": "Decimal: 7 → Octal: 7"
                 },
                 "large": {
-                    "title": "Double Octal",
+                    "title": "Çift Sekizlik",
                     "desc": "Decimal: 64 → Octal: 100"
                 },
                 "rights": {
-                    "title": "Permission Value",
+                    "title": "İzin Değeri",
                     "desc": "Decimal: 493 → Octal: 755"
                 },
                 "max": {
-                    "title": "Transition",
+                    "title": "Geçiş",
                     "desc": "Decimal: 1024 → Octal: 2000"
                 }
             },
@@ -1111,11 +1111,11 @@
             "feature2_desc": "Perfect for understanding hard drive capacities, file sizes, and memory specifications.",
             "feature3_title": "Doğru Hesaplamalar",
             "feature3_desc": "Uses binary (1024) standard matching how operating systems calculate storage.",
-            "main_title": "Understanding Digital Storage Conversion",
+            "main_title": "Dijital Depolama Dönüşümünü Anlama",
             "description_p1": "Digital storage measures data capacity in binary units. The fundamental unit is the bit (binary digit), with 8 bits forming a byte. Storage capacities scale up through kilobytes (KB), megabytes (MB), gigabytes (GB), and terabytes (TB). Two standards exist: binary (1024-based: KiB, MiB, GiB) and decimal (1000-based: KB, MB, GB). Most operating systems use binary, while drive manufacturers use decimal.",
-            "description_p2": "In the binary system, 1 KB = 1,024 bytes, 1 MB = 1,048,576 bytes, and 1 GB = 1,073,741,824 bytes. This differs from the decimal system where 1 KB = 1,000 bytes. This is why a \"500 GB\" hard drive shows as about 465 GB in Windows. Understanding these conversions helps when purchasing storage, managing files, and comparing specifications.",
+            "description_p2": "İkili sistemde, 1 KB = 1.024 bayt, 1 MB = 1.048.576 bayt ve 1 GB = 1.073.741.824 bayttır. Bu, 1 KB = 1.000 bayt olan ondalık sistemden farklıdır. Bu nedenle \"500 GB\" sabit disk Windows'ta yaklaşık 465 GB olarak görünür. Bu dönüşümleri anlamak, depolama satın alırken, dosyaları yönetirken ve özellikleri karşılaştırırken yardımcı olur.",
             "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>File Management:</strong> Understanding document and media file sizes",
+            "usage_1": "<strong>Dosya Yönetimi:</strong> Anlama document and media file sizes",
             "usage_2": "<strong>Device Shopping:</strong> Comparing hard drive and SSD capacities",
             "usage_3": "<strong>Cloud Storage:</strong> Managing storage limits and quotas",
             "usage_4": "<strong>Data Transfer:</strong> Estimating download and upload times",
@@ -1144,23 +1144,23 @@
             "unit_J": "Joule (J)",
             "unit_kJ": "Kilojoule (kJ)",
             "unit_cal": "Kalori (cal)",
-            "unit_kcal": "Kilocalorie (kcal/Cal)",
+            "unit_kcal": "Kilokalori (kcal/Cal)",
             "unit_Wh": "Vat-saat (Wh)",
             "unit_kWh": "Kilovat-saat (kWh)",
-            "unit_BTU": "British Thermal Unit (BTU)",
-            "unit_ftlb": "Foot-pound (ft⋅lb)",
+            "unit_BTU": "İngiliz Termal Birimi (BTU)",
+            "unit_ftlb": "Fit-pound (ft⋅lb)",
             "to_label": "Hedef"
         },
         "content": {
-            "feature1_title": "Multiple Energy Units",
+            "feature1_title": "Çoklu Enerji Birimleri",
             "feature1_desc": "Convert between joules, calories, BTU, kilowatt-hours, and more.",
-            "feature2_title": "Nutrition & Physics",
+            "feature2_title": "Beslenme ve Fizik",
             "feature2_desc": "Perfect for food calories, electricity bills, and thermodynamics calculations.",
-            "feature3_title": "Scientific Accuracy",
+            "feature3_title": "Bilimsel Doğruluk",
             "feature3_desc": "Precise conversions for engineering, nutrition, and energy management.",
-            "main_title": "Understanding Energy Conversion",
+            "main_title": "Enerji Dönüşümünü Anlama",
             "description_p1": "Energy is the capacity to do work, measured in various units depending on the field. The SI unit is the Joule (J), used in physics and engineering. In nutrition, the Calorie (cal) or Kilocalorie (kcal) is standard. For electricity, Kilowatt-hours (kWh) are used to measure consumption over time.",
-            "description_p2": "One food Calorie (capital C) is actually a kilocalorie (1,000 cal), equivalent to 4,184 Joules. In heating and cooling systems, the British Thermal Unit (BTU) is common, where 1 BTU equals about 1,055 Joules. Understanding these conversions helps in everything from diet planning to calculating energy efficiency and costs.",
+            "description_p2": "Bir gıda Kalorisi (büyük K) aslında bir kilokaloridir (1.000 kal), 4.184 Joule'e eşittir. Isıtma ve soğutma sistemlerinde, İngiliz Termal Birimi (BTU) yaygındır; 1 BTU yaklaşık 1.055 Joule'e eşittir. Bu dönüşümleri anlamak, diyet planlamadan enerji verimliliği ve maliyetlerin hesaplanmasına kadar her şeyde yardımcı olur.",
             "usage_examples_title": "Common Usage Examples",
             "usage_1": "<strong>Nutrition:</strong> Converting food energy from Joules to Calories",
             "usage_2": "<strong>Electricity:</strong> Calculating energy usage in kWh for billing",
@@ -1196,15 +1196,15 @@
             "to_label": "Hedef"
         },
         "content": {
-            "feature1_title": "Force Units",
+            "feature1_title": "Kuvvet Birimleri",
             "feature1_desc": "Convert between newtons, pound-force, kilogram-force, and dynes.",
             "feature2_title": "Engineering & Physics",
             "feature2_desc": "Essential for structural analysis, mechanical design, and physics experiments.",
             "feature3_title": "Precise Calculations",
             "feature3_desc": "Accurate force conversions for technical specifications and scientific research.",
-            "main_title": "Understanding Force Conversion",
+            "main_title": "Kuvvet Dönüşümünü Anlama",
             "description_p1": "In physics, force is an interaction that can change the motion of an object. The SI unit is the Newton (N), named after Sir Isaac Newton. Imperial systems use pound-force (lbf), while kilogram-force (kgf) is used in some technical contexts.",
-            "description_p2": "Kilonewtons (kN) are used for large forces like structural loads (1 kN = 1000 N). Dynes are used at microscopic scales. Understanding these relationships is vital for aerospace, civil engineering, and basic physics. Note: 1 kgf ≈ 9.81 N on Earth.",
+            "description_p2": "Kilonewtonlar (kN), yapısal yükler gibi büyük kuvvetler için kullanılır (1 kN = 1000 N). Dinler mikroskobik ölçeklerde kullanılır. Bu ilişkileri anlamak havacılık, inşaat mühendisliği ve temel fizik için hayati önem taşır. Not: Dünya'da 1 kgf ≈ 9,81 N.",
             "usage_examples_title": "Common Usage Examples",
             "usage_1": "<strong>Engineering:</strong> Calculating cargo and structural load capacities",
             "usage_2": "<strong>Aerospace:</strong> Measuring engine thrust and aerodynamic forces",
@@ -1533,9 +1533,9 @@
             "label_from": "Kaynak Taban",
             "bases": {
                 "2": "Onluk (Taban 10)",
-                "8": "Octal",
-                "10": "Decimal",
-                "16": "Hexadecimal",
+                "8": "Sekizlik",
+                "10": "Ondalık",
+                "16": "Onaltılık",
                 "generic": "Taban :base"
             },
             "label_to": "Hedef Taban",
@@ -1836,8 +1836,8 @@
         },
         "form": {
             "from_label": "Kaynak",
-            "unit_Pa": "Pascal (Pa)",
-            "unit_kPa": "Kilopascal (kPa)",
+            "unit_Pa": "Paskal (Pa)",
+            "unit_kPa": "Kilopaskal (kPa)",
             "unit_bar": "Bar",
             "unit_psi": "PSI (lb/in²)",
             "unit_atm": "Atmosfer (atm)",
@@ -2400,8 +2400,8 @@
         },
         "form": {
             "from_label": "Kaynak",
-            "unit_c": "Celsius (°C)",
-            "unit_f": "Fahrenheit (°F)",
+            "unit_c": "Santigrat (°C)",
+            "unit_f": "Fahrenhayt (°F)",
             "unit_k": "Kelvin (K)",
             "to_label": "Hedef"
         },
@@ -2413,7 +2413,7 @@
             "feature3_title": "Gerçek Zamanlı Dönüşüm",
             "feature3_desc": "Herhangi bir sıcaklık alanına yazarken anında çift yönlü dönüşüm.",
             "main_title": "Sıcaklık Dönüşümünü Anlamak",
-            "description_p1": "Sıcaklık, bir nesnenin veya ortamın sıcaklık veya soğukluk derecesini ölçer. Dünya çapında üç ana ölçek kullanılır: <strong>Celsius (°C)</strong> küresel olarak kullanılan metrik standarttır, <strong>Fahrenheit (°F)</strong> birincil olarak Amerika Birleşik Devletleri'nde kullanılır ve <strong>Kelvin (K)</strong> bilimsel araştırmalarda kullanılan mutlak termodinamik ölçektir.",
+            "description_p1": "Sıcaklık, bir nesnenin veya ortamın sıcaklık veya soğukluk derecesini ölçer. Dünya çapında üç ana ölçek kullanılır: <strong>Celsius (°C)</strong> küresel olarak kullanılan metrik standarttır, <strong>Fahrenhayt (°F)</strong> birincil olarak Amerika Birleşik Devletleri'nde kullanılır ve <strong>Kelvin (K)</strong> bilimsel araştırmalarda kullanılan mutlak termodinamik ölçektir.",
             "description_p2": "Celsius ölçeği, standart atmosferik basınçta suyun donma (0°C) ve kaynama noktalarına (100°C) dayanır. Fahrenheit, suyun donma noktasını 32°F ve kaynama noktasını 212°F olarak belirler. Kelvin, tüm moleküler hareketin durduğu teorik nokta olan mutlak sıfırdan (-273,15°C) başlar, bu da onu bilimsel hesaplamalar için ideal kılar.",
             "usage_examples_title": "Yaygın Kullanım Örnekleri",
             "usage_1": "<strong>Hava Durumu Tahminleri:</strong> Uluslararası seyahatler için °C ve °F arasında dönüşüm",
