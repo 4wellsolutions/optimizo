@@ -36,6 +36,10 @@
         <link rel="alternate" hreflang="{{ $lang->code }}" href="{{ $langUrl }}" />
     @endforeach
     <link rel="alternate" hreflang="x-default" href="{{ $enUrl }}" />
+
+    {{-- Canonical URL --}}
+    <link rel="canonical" href="{{ url()->current() }}" />
+
     <title>@yield('title', config('app.name', 'Optimizo'))</title>
     <meta name="description" content="@yield('meta_description', __('common.meta_description_default'))">
     @hasSection('meta_keywords')

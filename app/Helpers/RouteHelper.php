@@ -29,10 +29,10 @@ if (!function_exists('localeRoute')) {
         $path = route($name, $parameters, false);
 
         // Prepend locale to the path
-        // If path is just '/', return '/ru/'
+        // If path is just '/', return '/ru' (no trailing slash)
         // If path is '/tools/dns-lookup', return '/ru/tools/dns-lookup'
         if ($path === '/') {
-            return '/' . $locale . '/';
+            return '/' . $locale;
         }
 
         return '/' . $locale . $path;
