@@ -39,6 +39,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
         Route::put('/{language}/toggle', [App\Http\Controllers\Admin\AdminLanguageController::class, 'toggle'])->name('toggle');
         Route::put('/{language}/set-default', [App\Http\Controllers\Admin\AdminLanguageController::class, 'setDefault'])->name('set-default');
         Route::delete('/{language}', [App\Http\Controllers\Admin\AdminLanguageController::class, 'destroy'])->name('destroy');
+        Route::get('/report', [App\Http\Controllers\Admin\AdminTranslationReportController::class, 'index'])->name('report');
     });
 
     // Sitemap Management

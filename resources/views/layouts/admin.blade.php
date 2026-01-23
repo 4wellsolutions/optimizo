@@ -177,6 +177,13 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
+                                    <a href="{{ route('admin.languages.report') }}"
+                                        class="nav-link {{ request()->routeIs('admin.languages.report') ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Translation Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a href="{{ route('admin.redirects.index') }}"
                                         class="nav-link {{ request()->routeIs('admin.redirects.*') ? 'active' : '' }}">
                                         <i class="far fa-circle nav-icon"></i>
