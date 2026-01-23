@@ -177,7 +177,8 @@
             "a_what_to_do_li1": "<strong>Dahili bağlantılar:</strong> Yeni URL'ye 301 yönlendirmesi ayarlayın veya bağlantıyı doğrudan güncelleyin",
             "a_what_to_do_li2": "<strong>Harici bağlantılar:</strong> Çalışan alternatif bir sayfa bulun veya eski içeriği bulmak için archive.org'u kullanın",
             "a_what_to_do_li3": "<strong>Alternatif yoksa:</strong> Bağlantıyı kaldırın ve akışı korumak için çevredeki içeriği güncelleyin",
-            "a_what_to_do_li4": "<strong>Her şeyi belgeleyin:</strong> Gelecekte başvurmak ve kalıp analizi yapmak için bir günlük tutun"
+            "a_what_to_do_li4": "<strong>Her şeyi belgeleyin:</strong> Gelecekte başvurmak ve kalıp analizi yapmak için bir günlük tutun",
+            "q_what_to_do": "What should I do when I find broken links?"
         },
         "js": {
             "stopping": "Tarama durduruluyor...",
@@ -680,7 +681,72 @@
             "bp2": "• <strong>Durdurma Kelimelerini Atın:</strong> \"ve\", \"mi\", \"bir\" gibi kelimeleri çıkararak önemli olana odaklanın.",
             "bp3": "• <strong>Küçük Harf Kullanın:</strong> Sunucu hatalarını önlemek için her zaman küçük harf tercih edin.",
             "bp4": "• <strong>Tire Kullanın:</strong> Google, tireleri (-) kelime ayırıcı olarak önerir.",
-            "bp5": "• <strong>Tarihlerden Kaçının:</strong> İçeriğiniz her zaman güncel kalsın diye URL'ye tarih eklemeyin."
+            "bp5": "• <strong>Tarihlerden Kaçının:</strong> İçeriğiniz her zaman güncel kalsın diye URL'ye tarih eklemeyin.",
+            "hero_title": "URL Slug Generator - Create SEO-Friendly URLs",
+            "hero_subtitle": "Generate clean, SEO-friendly URL slugs from any text instantly with our free slug generator tool. Convert blog titles, article headings, and page names into readable, search-engine-optimized URLs.",
+            "what_title": "What is a URL Slug?",
+            "what_desc": "A URL slug is the part of a web address that comes after the domain name and identifies a specific page. For example, in \"example.com/how-to-create-seo-friendly-urls\", the slug is \"how-to-create-seo-friendly-urls\".",
+            "why_title": "Why Use SEO-Friendly Slugs?",
+            "why_list": [
+                "Better SEO Rankings: Keywords in URLs help search engines understand page content",
+                "Improved Click-Through Rates: Readable URLs are more trustworthy and clickable",
+                "User Experience: Clear URLs tell users what to expect before clicking",
+                "Social Sharing: Clean URLs look professional when shared on social media",
+                "Link Building: Descriptive URLs make better anchor text for backlinks",
+                "Accessibility: Screen readers can better interpret meaningful URLs"
+            ],
+            "practices_title": "URL Slug Best Practices",
+            "practices_list": [
+                "Use lowercase letters - Avoid capitalization for consistency",
+                "Use hyphens (-) - Separate words with hyphens, not underscores",
+                "Keep it short - Aim for 3-5 words maximum",
+                "Include keywords - Use relevant keywords for SEO",
+                "Be descriptive - Clearly describe the page content",
+                "Avoid special characters - Remove @, #, %, &, etc.",
+                "Avoid stop words - Remove \"a\", \"the\", \"and\" when possible",
+                "Avoid numbers/dates - Unless essential for content"
+            ],
+            "how_works_title": "How Our Slug Generator Works",
+            "how_works_desc": "Our tool follows industry best practices to create perfect URL slugs. It converts text to lowercase, removes special characters and punctuation, replaces spaces with hyphens, removes consecutive hyphens, and trims leading/trailing hyphens.",
+            "uses_title": "Common Use Cases",
+            "uses": {
+                "blog": {
+                    "title": "ðŸ“ Blog Posts",
+                    "desc": "Convert article titles to SEO-friendly URLs for WordPress, Medium, or custom blogs"
+                },
+                "ecommerce": {
+                    "title": "ðŸ›ï¸ E-commerce",
+                    "desc": "Create product URLs that include keywords and product names"
+                },
+                "docs": {
+                    "title": "ðŸ“„ Documentation",
+                    "desc": "Generate clean URLs for help articles and documentation pages"
+                },
+                "landing": {
+                    "title": "ðŸŽ¯ Landing Pages",
+                    "desc": "Create keyword-rich URLs for marketing campaigns and landing pages"
+                }
+            },
+            "pro_tip_title": "ðŸ’¡ SEO Pro Tip",
+            "pro_tip_desc": "Google recommends using hyphens (-) instead of underscores (_) in URLs because hyphens are treated as word separators while underscores are not. This means \"seo-friendly-urls\" is better than \"seo_friendly_urls\" for search engine optimization.",
+            "faq_title": "Sıkça Sorulan Sorular",
+            "faq": {
+                "q1": "Should I use hyphens or underscores in URLs?",
+                "a1": "Always use hyphens (-). Google treats hyphens as word separators but treats underscores as word connectors. This means \"best-seo-practices\" is read as three separate words, while \"best_seo_practices\" is read as one word.",
+                "q2": "How long should a URL slug be?",
+                "a2": "Keep slugs between 3-5 words (30-60 characters). Shorter URLs are easier to remember, share, and rank better in search results. Remove unnecessary words like \"a\", \"the\", \"and\" to keep slugs concise.",
+                "q3": "Can I change a URL slug after publishing?",
+                "a3": "Yes, but it's not recommended. Changing URLs can break existing links and hurt SEO. If you must change a slug, always set up a 301 redirect from the old URL to the new one to preserve link equity and avoid 404 errors.",
+                "q4": "Should I include keywords in my URL slug?",
+                "a4": "Yes! Including relevant keywords in your URL slug helps search engines understand your content and can improve rankings. However, keep it natural and descriptive - don't stuff keywords unnaturally."
+            }
+        },
+        "editor": {
+            "label_input": "Enter Text or Title",
+            "ph_input": "Enter your title or text..."
+        },
+        "js": {
+            "copied": "Copied!"
         }
     },
     "yahoo-serp-checker": {
@@ -700,11 +766,13 @@
             "device_desktop": "Masaüstü",
             "device_mobile": "Mobil",
             "no_login": "Giriş Gerekmez",
-            "realtime_results": "Gerçek Zamanlı Sonuçlar"
+            "realtime_results": "Gerçek Zamanlı Sonuçlar",
+            "yahoo_domain_label": "Yahoo Domain"
         },
         "form": {
             "keyword_placeholder": "örn. en iyi kahve makineleri",
-            "button": "Yahoo Sıralamalarını Kontrol Et"
+            "button": "Yahoo Sıralamalarını Kontrol Et",
+            "location_placeholder": "Enter city (Optional)"
         },
         "markets": {
             "us": "Amerika Birleşik Devletleri (İngilizce)",
@@ -733,7 +801,11 @@
             "yahoo_seo_desc1": "Yahoo, pazar payı olarak Google'ın gerisinde olsa da, hala önemli bir kullanıcı kitlesine (özellikle finans ve haber odaklı kullanıcılara) sahiptir. Yahoo sonuçları genellikle Bing tarafından desteklendiği için, burada iyi sıralanmak Bing stratejinizin de çalıştığını gösterir.",
             "yahoo_seo_desc2": "Yahoo SEO'su, teknik doğruluk, sayfa hızı ve kaliteli geri bağlantılar (backlink) gibi temel unsurlara dayanır. Yahoo SERP kontrol aracımızı kullanarak bu çabalarınızın sonuçlarını takip edebilirsiniz.",
             "how_it_works_title": "Yahoo SERP Kontrolü Nasıl Çalışır?",
-            "how_it_works_desc": "Anahtar kelimenizi ve konumunuzu girdiğinizde, aracımız seçtiğiniz bölgeye özel bir Yahoo arama isteği oluşturur. Ardından ilk 100 sonuç içinden web sitenizi bulur ve tam pozisyonunuzu, yanındaki diğer rakip sonuçlarla birlikte gösterir."
+            "how_it_works_desc": "Anahtar kelimenizi ve konumunuzu girdiğinizde, aracımız seçtiğiniz bölgeye özel bir Yahoo arama isteği oluşturur. Ardından ilk 100 sonuç içinden web sitenizi bulur ve tam pozisyonunuzu, yanındaki diğer rakip sonuçlarla birlikte gösterir.",
+            "why_matters_title": "Why Yahoo Rankings Matter",
+            "why_matters_desc": "While smaller than Google, Yahoo still commands a significant share of search traffic, particularly in specific demographics and regions like Japan and parts of the US. Ignoring Yahoo means leaving potential traffic on the table.",
+            "same_as_bing_title": "Does Yahoo use Bing Results?",
+            "same_as_bing_desc": "Yes, Yahoo Search is largely powered by <strong>Bing's search index</strong>. This means optimizing for Bing often helps your Yahoo rankings. However, Yahoo's interface and features differ, so verifying your actual appearance is crucial."
         },
         "faq": {
             "title": "Sıkça Sorulan Sorular",
@@ -743,6 +815,17 @@
             "a2": "Güçlü başlık etiketleri, kaliteli içerik ve hızlı bir web sitesi Yahoo (ve Bing) için anahtardır. Ayrıca sosyal medya sinyalleri bu platformlarda Google'a göre biraz daha etkili olabilir.",
             "q3": "Bu araç kaç sonucu kontrol ediyor?",
             "a3": "Aracımız Yahoo'nun en güncel SERP listesinden genellikle ilk 50 ila 100 sonucu tarar ve web sitenizin bu sonuçlar içindeki tam yerini belirler."
+        },
+        "domains": {
+            "us": "Yahoo.com (USA/Global)",
+            "uk": "Yahoo.co.uk (United Kingdom)",
+            "ca": "Yahoo.ca (Canada)",
+            "au": "Yahoo.com.au (Australia)",
+            "de": "Yahoo.de (Germany)",
+            "fr": "Yahoo.fr (France)",
+            "it": "Yahoo.it (Italy)",
+            "es": "Yahoo.es (Spain)",
+            "br": "Yahoo.com.br (Brazil)"
         }
     }
 }

@@ -385,7 +385,7 @@
                 "2": "İlk kelimenin tamamını küçük harfe çevirir.",
                 "3": "Sonraki tüm kelimelerin ilk harfini büyük yapar.",
                 "4": "Sonuç, boşluk içermeyen tek bir dize olarak birleştirilir.",
-                "5": ""
+                "5": "Kullanın the Dönüştüred camelCase text in your code, variable names, or API endpoints for consistent naming conventions."
             },
             "examples_title": "Örnekler",
             "examples": {
@@ -496,7 +496,7 @@
                 "2": "Cümle Düzeni, uzun paragraflar ve açıklamalar için en okunabilir formattır.",
                 "3": "Manuel seçim hatalarını önlemek için her zaman \"Panoya Kopyala\" düğmesini kullanın.",
                 "4": "Tam düzenleme kontrolü için Durum Dönüştürücümüzü bir kelime sayacıyla birleştirin.",
-                "5": ""
+                "5": "Kullanın case conversion to maintain consistency across your codebase and improve code readability."
             },
             "faq_title": "Sıkça Sorulan Sorular",
             "faq": {
@@ -527,14 +527,14 @@
         },
         "form": {
             "from_label": "Kaynak",
-            "unit_cup": "Bardak (US)",
-            "unit_tbsp": "Yemek Kaşığı (US)",
-            "unit_tsp": "Çay Kaşığı (US)",
+            "unit_cup": "Bardak (ABD)",
+            "unit_tbsp": "Yemek Kaşığı (ABD)",
+            "unit_tsp": "Çay Kaşığı (ABD)",
             "unit_ml": "Millilitre (ml)",
             "unit_fl_oz": "Sıvı Ons (fl oz)",
-            "unit_pt": "Pint (US)",
-            "unit_qt": "Quart (US)",
-            "unit_gal": "Galon (US)",
+            "unit_pt": "Pint (ABD)",
+            "unit_qt": "Quart (ABD)",
+            "unit_gal": "Galon (ABD)",
             "to_label": "Hedef"
         },
         "content": {
@@ -766,7 +766,7 @@
             "to_hex": "Onaltılıya",
             "to_decimal": "Onluğa",
             "label_decimal": "Onluk Sayı",
-            "ph_decimal": "Enter a decimal number (e.g., 255)...",
+            "ph_decimal": "Bir onluk sayı girin (örn. 255)...",
             "label_result_hex": "Onaltılı Çıkış",
             "ph_output": "Sonuç burada görünecek...",
             "btn_convert_hex": "Onaltılıya Dönüştür",
@@ -780,7 +780,7 @@
             "success_hex": "✓ Onaltılıya başarıyla dönüştürüldü!",
             "error_invalid_hex": "Geçersiz onaltılı sayı. Lütfen 0-9 ve A-F kullanın.",
             "success_decimal": "✓ Onluğa başarıyla dönüştürüldü!",
-            "error_general": "An error occurred: ",
+            "error_general": "Bir hata oluştu: ",
             "error_no_copy": "Kopyalanacak bir şey yok! Lütfen önce bir sayıyı dönüştürün.",
             "success_copy": "✓ Panoya kopyalandı!"
         },
@@ -924,8 +924,8 @@
             "success_octal": "✓ Sekizliye başarıyla dönüştürüldü!",
             "error_invalid_octal": "Geçersiz sekizli sayı. Lütfen 0-7 rakamlarını kullanın.",
             "success_decimal": "✓ Onluğa başarıyla dönüştürüldü!",
-            "error_general": "An error occurred: ",
-            "error_no_copy": "Nothing to copy! Please convert a number first.",
+            "error_general": "Bir hata oluştu: ",
+            "error_no_copy": "Kopyalanacak bir şey yok! Lütfen önce bir sayıyı dönüştürün.",
             "success_copy": "✓ Panoya kopyalandı!"
         },
         "content": {
@@ -991,7 +991,7 @@
             },
             "steps": {
                 "1": {
-                    "title": "Select Mode",
+                    "title": "Mod Seçin",
                     "desc": "Choose your conversion direction (Base-10 to Base-8 or vice versa)."
                 },
                 "2": {
@@ -1007,7 +1007,7 @@
                     "desc": "Locate your result in the output box."
                 },
                 "5": {
-                    "title": "Copy",
+                    "title": "Kopyala",
                     "desc": "Quickly copy the result for use in your code or documents."
                 }
             },
@@ -1121,7 +1121,7 @@
             "usage_4": "<strong>Data Transfer:</strong> Estimating download and upload times",
             "usage_5": "<strong>Database Planning:</strong> Calculating storage requirements",
             "usage_6": "<strong>System Optimization:</strong> Managing disk space and memory",
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Sıkça Sorulan Sorular",
             "faq_q1": "Why does my 1 TB drive show as 931 GB?",
             "faq_a1": "Manufacturers use decimal (1 TB = 1,000 GB), while operating systems use binary (1 TB = 1,024 GB). 1 TB decimal equals about 931 GiB binary. This is normal and affects all storage devices.",
             "faq_q2": "What's the difference between GB and GiB?",
@@ -1168,7 +1168,7 @@
             "usage_4": "<strong>Physics:</strong> Work and energy calculations in Joules",
             "usage_5": "<strong>Exercise:</strong> Estimating energy burned during workouts",
             "usage_6": "<strong>Engineering:</strong> Mechanical work in foot-pounds",
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Sıkça Sorulan Sorular",
             "faq_q1": "What is the difference between a Calorie and a calorie?",
             "faq_a1": "A \"small\" calorie (cal) is the energy to heat 1g of water by 1°C. A \"food\" Calorie (kcal) is 1,000 small calories. Nutrition labels use kcal but often just call them \"Calories\".",
             "faq_q2": "How many Joules are in a kWh?",
@@ -1212,7 +1212,7 @@
             "usage_4": "<strong>Automotive:</strong> Analyzing vehicle acceleration and braking forces",
             "usage_5": "<strong>Physics:</strong> Calculating vector forces in laboratory experiments",
             "usage_6": "<strong>Lifting:</strong> Verifying winch and crane hoisting capacities",
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Sıkça Sorulan Sorular",
             "faq_q1": "What is the difference between a Newton and Kilogram-force?",
             "faq_a1": "A Newton is an absolute unit; kilogram-force depends on gravity. On Earth, 1 kg mass exerts about 9.81 Newtons of force.",
             "faq_q2": "How many Newtons are in a pound-force?",
@@ -1533,9 +1533,9 @@
             "label_from": "Kaynak Taban",
             "bases": {
                 "2": "Onluk (Taban 10)",
-                "8": "",
-                "10": "",
-                "16": "",
+                "8": "Octal",
+                "10": "Decimal",
+                "16": "Hexadecimal",
                 "generic": "Taban :base"
             },
             "label_to": "Hedef Taban",
@@ -1649,7 +1649,8 @@
             "success_convert": "✓ Taban :from'dan taban :to'ya başarıyla dönüştürüldü!",
             "error_general": "Beklenmedik bir hata oluştu: ",
             "error_no_copy": "Kopyalanacak bir şey yok! Lütfen önce bir dönüşüm gerçekleştirin.",
-            "success_copy": "✓ Panoya kopyalandı!"
+            "success_copy": "✓ Panoya kopyalandı!",
+            "error_copy": "Kopyalanacak bir şey yok! Lütfen önce bir dönüşüm yapın."
         }
     },
     "pascal-case-converter": {

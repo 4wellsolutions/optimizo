@@ -391,7 +391,7 @@
                 "2": "<strong>Sonuçları Görün:</strong> İşlenmiş CSS'yi çıkış alanında sıkıştırma istatistikleriyle birlikte görün",
                 "3": "<strong>Kopyalayın:</strong> Sıkıştırılmış CSS'yi panonuza kopyalamak için \"Kopyala\"ya tıklayın",
                 "4": "<strong>Canlıda Kullanın:</strong> Orijinal CSS dosyanızı sıkıştırılmış sürümle değiştirin",
-                "5": ""
+                "5": "İndir or Kopyala the minified CSS and Kullanın it in your production website to reduce file size and improve load times."
             },
             "best_practices_title": "💡 En İyi Uygulamalar",
             "best_practices_list": {
@@ -399,7 +399,7 @@
                 "2": "<strong>Dosyaları birleştirin:</strong> Daha iyi sıkıştırma için sıkıştırmadan önce birden fazla CSS dosyasını birleştirin",
                 "3": "<strong>İyice test edin:</strong> Hiçbir özelliğin bozulmadığından emin olmak için sıkıştırılmış CSS'yi her zaman test edin",
                 "4": "<strong>Derleme araçları kullanın:</strong> Otomasyon için sıkıştırmayı derleme sürecinize entegre edin",
-                "5": ""
+                "5": "Keep an unminified version for development and debugging purposes."
             },
             "faq_title": "❓ Sıkça Sorulan Sorular",
             "faq": {
@@ -525,7 +525,7 @@
                 "1": "HTML'nizi veya metninizi giriş alanına yapıştırın",
                 "2": "Dönüştürmek için işlem düğmesine tıklayın",
                 "3": "Sonucu panoya kopyalayın",
-                "4": ""
+                "4": "Kopyala the encoded/decoded Sonuç and Kullanın it in your HTML, XML, or web applications."
             },
             "examples_title": "💡 HTML Kodlama Örnekleri",
             "examples": {
@@ -538,8 +538,8 @@
                     "code": "Ali & Veli → Ali &amp; Veli"
                 },
                 "3": {
-                    "title": "",
-                    "code": ""
+                    "title": "Encoding Special Characters",
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
                 }
             },
             "faq_title": "❓ Sıkça Sorulan Sorular",
@@ -596,7 +596,7 @@
                 "1": "Kodu sıkıştırmak için \"HTML'yi Sıkıştır\"a tıklayın",
                 "2": "Girinti ile formatlamak için \"HTML'yi Güzelleştir\"e tıklayın",
                 "3": "\"Çıktıyı Kopyala\" düğmesini kullanarak sonucu kopyalayın",
-                "4": ""
+                "4": "Kullanın the minified HTML in your production environment to reduce bandwidth and improve page load speed."
             },
             "faq_title": "Sıkça Sorulan Sorular",
             "faq": {
@@ -648,7 +648,7 @@
                 "3": "✅ <strong>Kurulum Gerektirmez:</strong> Doğrudan tarayıcınızda çalışır",
                 "4": "✅ <strong>Sonsuza Kadar Ücretsiz:</strong> Sınırlama olmaksızın %100 ücretsiz",
                 "5": "✅ <strong>Önce Gizlilik:</strong> Tüm dönüştürme işlemleri tarayıcınızda yerel olarak gerçekleşir",
-                "6": ""
+                "6": "Preserves code blocks and syntax highlighting for technical documentation."
             },
             "uses_title": "🎯 Yaygın Kullanım Durumları",
             "uses": {
@@ -762,7 +762,7 @@
                 "2": "Örnek HTML kodunu görmek için \"Örnek Yükle\" düğmesini kullanın",
                 "3": "Boş bir düzenleyici ile başlamak için \"Temizle\"ye tıklayın",
                 "4": "Farklı HTML öğelerini test edin ve nasıl işlendiklerini görün",
-                "5": ""
+                "5": "Analyze the rendered Çıkış and DOM structure to debug layout issues or verify HTML rendering."
             },
             "uses_title": "Yaygın Kullanım Durumları",
             "uses_desc": "HTML izleyiciler, çeşitli web geliştirme görevleri için temel araçlardır. Geliştiriciler, HTML parçacıklarını daha büyük projelere entegre etmeden önce hızlıca test etmek için bunları kullanır. HTML öğrenen öğrenciler, etkilerini anlamak için farklı etiket ve niteliklerle denemeler yapabilir. E-posta pazarlamacıları, e-posta şablonlarını göndermeden önce önizlemek için HTML izleyicileri kullanır. İçerik oluşturucular, HTML içeriklerinin web sitelerinde nasıl görüneceğini görselleştirebilir. Tasarımcılar işaretleme yapısını inceleyebilir ve HTML öğelerinin düzgün işlendiğinden emin olabilir.",
@@ -832,13 +832,40 @@
                 "q1": "JS sıkıştırma güvenli mi?",
                 "a1": "Evet, kodun işlevselliği değişmez, sadece boyutu küçülür.",
                 "q2": "Hangi dilleri destekliyor?",
-                "a2": "Modern JavaScript (ES6+) standartlarını destekler."
-            }
+                "a2": "Modern JavaScript (ES6+) standartlarını destekler.",
+                "q3": "How much smaller will my JS be?",
+                "a3": "Typically 30-50% smaller depending on formatting and comments in original code.",
+                "q4": "Can I unminify JavaScript?",
+                "a4": "Yes, use the \"Beautify JS\" button to format minified JavaScript with proper indentation.",
+                "q5": "Does minifying affect JavaScript functionality?",
+                "a5": "No, minification only removes unnecessary characters. The JavaScript works exactly the same."
+            },
+            "about_title": "What is a JavaScript Minifier?",
+            "about_desc": "A JavaScript Minifier is a tool that compresses JavaScript code by removing unnecessary characters like whitespace, comments, and line breaks without changing functionality. Minified JavaScript files are significantly smaller, leading to faster page load times and improved website performance. Our free online JS minifier also includes a beautify feature to format JavaScript with proper indentation for better readability during development.",
+            "why_title": "Why Minify JavaScript?",
+            "why_desc": "Minifying JavaScript is essential for web performance optimization. Smaller JS files mean faster downloads, reduced bandwidth usage, and improved page load times. This is especially important for mobile users and users with slower internet connections. Minified JavaScript reduces server load and improves user experience. For production websites, minification is a standard best practice that can significantly improve Core Web Vitals scores.",
+            "features_list": {
+                "minify": "<strong>Minify JavaScript:</strong> Remove whitespace and comments to reduce file size",
+                "beautify": "<strong>Beautify JavaScript:</strong> Format JS with proper indentation",
+                "instant": "<strong>Instant Results:</strong> Process JavaScript in real-time",
+                "copy": "<strong>Copy Output:</strong> Easily copy minified JavaScript",
+                "secure": "<strong>Secure & Private:</strong> All processing in browser",
+                "free": "<strong>Free to Use:</strong> No registration required"
+            },
+            "how_title": "How to Use",
+            "how_steps": [
+                "Paste your JavaScript code into the input field",
+                "Click \"Minify JS\" to compress the code",
+                "Click \"Beautify JS\" to format with indentation",
+                "Copy the output using \"Copy Output\" button"
+            ]
         },
         "js": {
             "error_empty": "Lütfen kod girin",
             "success_minify": "✓ Başarıyla sıkıştırıldı",
-            "success_copy": "✓ Kopyalandı"
+            "success_copy": "✓ Kopyalandı",
+            "success_beautify": "✓ JavaScript beautified successfully!",
+            "error_no_copy": "No output to copy"
         }
     },
     "json-formatter": {
@@ -886,8 +913,8 @@
                     "desc": "Formatlanmış JSON'ı panonuza kopyalamak için kopyala düğmesine tıklayın"
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "Format or Minify",
+                    "desc": "Seçin to beautify (format with indentation) or minify (compress to single line) your JSON data based on your needs."
                 }
             },
             "uses_title": "Yaygın JSON Formatlama Kullanım Durumları",
@@ -2395,14 +2422,85 @@
                     "title": "Excel Uyumlu",
                     "desc": "Çıktı Excel ve Google E-Tablolar'da mükemmel çalışır"
                 }
-            }
+            },
+            "uses_title": "Common Use Cases",
+            "uses": {
+                "analysis": {
+                    "title": "Data Analysis",
+                    "desc": "Convert XML reports and data exports to CSV for analysis in Excel, Google Sheets, or BI tools."
+                },
+                "migration": {
+                    "title": "System Migration",
+                    "desc": "Transform XML data from legacy systems to CSV for import into modern databases and applications."
+                },
+                "reporting": {
+                    "title": "Reporting",
+                    "desc": "Convert XML API responses to CSV for creating reports and dashboards."
+                },
+                "db": {
+                    "title": "Database Import",
+                    "desc": "Transform XML exports to CSV for bulk import into SQL databases."
+                },
+                "email": {
+                    "title": "Email Lists",
+                    "desc": "Convert XML contact data to CSV for email marketing platforms."
+                },
+                "cleaning": {
+                    "title": "Data Cleaning",
+                    "desc": "Transform XML to CSV for easier data cleaning and manipulation in spreadsheets."
+                }
+            },
+            "how_to_title": "How to Convert XML to CSV",
+            "how_to": {
+                "step1": {
+                    "title": "Paste Your XML Data",
+                    "desc": "Copy XML data from your source and paste it into the left input field."
+                },
+                "step2": {
+                    "title": "Click Convert",
+                    "desc": "Press \"Convert to CSV\" to transform your XML into CSV format."
+                },
+                "step3": {
+                    "title": "Copy and Use",
+                    "desc": "The CSV output appears on the right. Click \"Copy\" to paste it into Excel or any application."
+                }
+            },
+            "example_title": "Conversion Example",
+            "faq_title": "Sıkça Sorulan Sorular",
+            "faq": {
+                "q1": "Is this converter free?",
+                "a1": "Yes, our XML to CSV converter is completely free to use.",
+                "q2": "Is my data safe?",
+                "a2": "Yes, all processing happens in your browser. Your data is never sent to our servers.",
+                "q3": "Does it support large XML files?",
+                "a3": "Yes, it can handle large XML files, though very large files may take a moment to process.",
+                "q4": "How are attributes handled?",
+                "a4": "Currently, the tool focuses on tag content. Attributes can be included in future updates."
+            },
+            "best_practices_title": "Best Practices",
+            "best_practices": [
+                {
+                    "title": "Well-formed XML",
+                    "desc": "Ensure your XML is well-formed and contains repeating <row> elements for best results."
+                },
+                {
+                    "title": "Browser Side",
+                    "desc": "Since it runs in your browser, your data stays private and secure."
+                },
+                {
+                    "title": "Backup Data",
+                    "desc": "Always keep a backup of your original XML data before conversion."
+                }
+            ]
         },
         "js": {
             "error_empty": "Lütfen XML verisini girin",
             "success_convert": "✓ XML başarıyla CSV'ye dönüştürüldü",
             "error_invalid": "✗ Geçersiz XML formatı",
             "error_no_copy": "Kopyalanacak içerik yok",
-            "success_copy": "✓ Panoya kopyalandı"
+            "success_copy": "✓ Panoya kopyalandı",
+            "error_no_row": "No <row> elements found in XML",
+            "error_process": "✗ Error: "
         }
     },
     "xml-to-json": {
