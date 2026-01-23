@@ -11,10 +11,35 @@ use RecursiveRegexIterator;
 
 class AdminTranslationReportController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $langPath = resource_path('lang');
-        $locales = array_filter(glob($langPath . '/*'), 'is_dir');
+        $allLocales = $this->getAllLocales($langPath);
+
+        // Get selected languages from request or default to all
+        $selectedLanguages = $request->input('languages', []);
+
+        // Always include 'en' as it's the reference
+        $localesToProcess = [];
+        if (empty($selectedLanguages)) {
+            $locales = array_filter(glob($langPath . '/*'), 'is_dir');
+        } else {
+            // Keep english + selected
+            $locales = [];
+
+            // Always check english path
+            if (is_dir($langPath . '/en')) {
+                $locales[] = $langPath . '/en';
+            }
+
+            foreach ($selectedLanguages as $lang) {
+                if ($lang !== 'en' && in_array($lang, $allLocales)) {
+                    if (is_dir($langPath . '/' . $lang)) {
+                        $locales[] = $langPath . '/' . $lang;
+                    }
+                }
+            }
+        }
 
         $englishKeys = $this->loadAllKeys($langPath . '/en', $langPath, 'en');
         $allLocalesData = [];
@@ -36,9 +61,16 @@ class AdminTranslationReportController extends Controller
 
             foreach ($englishKeys as $fileName => $refKeys) {
                 $translated = 0;
-                if (isset($localeKeys[$fileName])) {
+
+                // Handle main locale file naming (en.json vs de.json)
+                $targetFileName = $fileName;
+                if ($fileName === 'en.json') {
+                    $targetFileName = $locale . '.json';
+                }
+
+                if (isset($localeKeys[$targetFileName])) {
                     foreach ($refKeys as $key) {
-                        if (in_array($key, $localeKeys[$fileName])) {
+                        if (in_array($key, $localeKeys[$targetFileName])) {
                             $translated++;
                         }
                     }
@@ -50,7 +82,18 @@ class AdminTranslationReportController extends Controller
         $sortedLocaleCodes = array_keys($allLocalesData);
         sort($sortedLocaleCodes);
 
-        return view('admin.languages.report', compact('englishKeys', 'allLocalesData', 'sortedLocaleCodes'));
+        return view('admin.languages.report', compact('englishKeys', 'allLocalesData', 'sortedLocaleCodes', 'allLocales', 'selectedLanguages'));
+    }
+
+    private function getAllLocales($langPath)
+    {
+        $locales = array_filter(glob($langPath . '/*'), 'is_dir');
+        $codes = [];
+        foreach ($locales as $localeDir) {
+            $codes[] = basename($localeDir);
+        }
+        sort($codes);
+        return $codes;
     }
 
     private function getKeysRecursive($array, $prefix = '')

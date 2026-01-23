@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German (DE) Language Analysis Report</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+        h1 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .section {
+            margin: 30px 0;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .section-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .section-content {
+            padding: 20px;
+        }
+        .issue-item {
+            background: #fff5f5;
+            border-left: 3px solid #fc8181;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .success {
+            background: #f0fff4;
+            border-left: 3px solid #48bb78;
+            color: #22543d;
+        }
+        .key-path {
+            font-family: "Courier New", monospace;
+            color: #c53030;
+            font-weight: bold;
+        }
+        .value-preview {
+            color: #4a5568;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🇩🇪 German Language Analysis Report</h1>
+        <p style="color: #718096; font-size: 1.1em;">Comprehensive analysis of DE translation files</p>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">11</div>
+                <div class="stat-label">Files Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6788</div>
+                <div class="stat-label">Total Keys</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Empty Keys</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">485</div>
+                <div class="stat-label">Potential English Text</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Completeness</div>
+            </div>
+        </div><div class="section">
+        <div class="section-header">✅ Empty Keys Check</div>
+        <div class="section-content">
+            <div class="issue-item success">No empty keys found! All translation keys have values.</div>
+        </div>
+    </div><div class="section">
+        <div class="section-header">⚠️ Potential English Text (485)</div>
+        <div class="section-content">
+        <p><strong>Note:</strong> These are automated detections and may include false positives. Manual review recommended.</p><h3>converters.json (89 detections)</h3><div class="issue-item">
+                    <span class="key-path">ascii-converter.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Konvertieren Sie Text sofort in ASCII-Codes und umgekehrt mit unserem kostenlosen Online-Tool. Perfe...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ascii-converter.content.p1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser kostenloser ASCII-Umrechner ist ein vielseitiges Online-Dienstprogramm, das für Entwickler, S...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ascii-converter.content.what_desc</span>
+                    <div class="value-preview">Detected: "for"</div>
+                    <div class="value-preview">ASCII (American Standard Code for Information Interchange) ist ein Zeichenkodierungsstandard für di...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ascii-converter.content.faq.a1</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Ja, unser ASCII-Umrechner ist zu 100 % kostenlos und erfordert keine Registrierung oder Downloads. S...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ascii-converter.content.faq.q2</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unterstützt dieses Tool Unicode oder Extended ASCII?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ascii-converter.content.faq.a2</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Derzeit konzentriert sich dieses Tool auf den Standard-ASCII-Satz (0-127). Für die meisten modernen...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ascii-converter.content.faq.q3</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Sind meine Daten sicher, wenn ich dieses Tool verwende?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ascii-converter.content.faq.a3</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Absolut. Dieses Tool verwendet clientseitiges JavaScript für alle Konvertierungen. Ihre Eingabedate...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">binary-hex-converter.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Schneller und zuverlässiger Online-Umrechner zwischen Binär (Basis 2) und Hexadezimal (Basis 16). ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">binary-to-text.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Binär-zu-Text-Umrechner | Binär-Code online dekodieren</div>
+                </div><div class="issue-item">
+                    <span class="key-path">binary-to-text.content.how_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Fügen Sie einfach Ihre Binärsequenz (Gruppen von 8 Bits) in das Eingabefeld ein. Das Tool gruppier...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">binary-to-text.content.a1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ja, unser Tool funktioniert am besten mit 8-Bit-Blöcken, die durch Leerzeichen getrennt sind (z. B....</div>
+                </div><div class="issue-item">
+                    <span class="key-path">camel-case-converter.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Kostenloses camelCase-Umrechner-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">camel-case-converter.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Konvertieren Sie Text mit unserem kostenlosen Online-Tool in das camelCase-Format für die Programmi...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">camel-case-converter.content.p1</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Verwandeln Sie Ihren Text mit unserem kostenlosen Online-Umrechner in das camelCase-Format. CamelCas...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">case-converter.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Groß-/Kleinschreibung-Umrechner | Kostenloses Online-Textwerkzeug</div>
+                </div><div class="issue-item">
+                    <span class="key-path">case-converter.content.p1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Groß-/Kleinschreibung-Umrechner ist ein umfassendes Dienstprogramm zur Texttransformation, da...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">case-converter.content.faq.a1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Nein. Unser Tool verwendet optimiertes JavaScript, das tausende Zeilen Text in Millisekunden verarbe...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">data-transfer-rate-converter.content.feature2_desc</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Perfekt zum Verständnis von Internetgeschwindigkeiten, Downloadzeiten und Netzwerkleistung.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">data-transfer-rate-converter.content.description_p1</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Datentransferraten messen, wie schnell Daten von einem Ort zum anderen übertragen werden, typischer...</div>
+                </div><p><em>... and 69 more detections</em></p><h3>development.json (91 detections)</h3><div class="issue-item">
+                    <span class="key-path">base64-encoder-decoder.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Base64 Encoder &amp; Decoder - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">base64-encoder-decoder.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Base64-Daten sofort verschlüsseln und entschlüsseln mit unserem kostenlosen Online-Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">base64-encoder-decoder.content.what_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Base64 ist ein Binär-zu-Text-Kodierungsverfahren, das Binärdaten in einem ASCII-String-Format dars...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">base64-encoder-decoder.content.faq.a5</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ja! Während unser Tool Text kodiert, können Sie Bilder mit speziellen Tools kodieren. Base64-kodie...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">code-formatter.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Kostenloser Online-Code-Formatierer</div>
+                </div><div class="issue-item">
+                    <span class="key-path">code-formatter.meta.h1</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Kostenloser Online-Code-Formatierer</div>
+                </div><div class="issue-item">
+                    <span class="key-path">code-formatter.content.hero_title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Kostenloser Online-Code-Formatierer</div>
+                </div><div class="issue-item">
+                    <span class="key-path">code-formatter.content.p1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Bereinigen Sie unordentlichen Code und verbessern Sie die Lesbarkeit mit unserem kostenlosen Online-...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">code-formatter.content.why.collab.desc</span>
+                    <div class="value-preview">Detected: "enter"</div>
+                    <div class="value-preview">Ein standardmäßiger Codestil hilft Teams, effizienter zusammenzuarbeiten.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">cron-job-generator.content.p1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Das Einrichten von Cron-Jobs kann mit kryptischen Sternchen und Zahlen verwirrend sein. Mit unserem ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-encoder-decoder.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">HTML-Entities kodieren und dekodieren, um XSS-Angriffe zu verhindern – mit unserem kostenlosen Onl...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-encoder-decoder.content.p1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser kostenloses HTML-Encoder &amp; Decoder-Tool hilft Ihnen dabei, Sonderzeichen in HTML für die sich...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-encoder-decoder.content.how_steps.2</span>
+                    <div class="value-preview">Detected: "start"</div>
+                    <div class="value-preview">Klicken Sie auf die Schaltfläche zum Verarbeiten, um die Konvertierung zu starten</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-minifier.content.about_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ein HTML-Minifizierer ist ein Tool, das HTML-Code komprimiert, indem unnötige Zeichen wie Leerzeich...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-minifier.content.why_desc</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Die Minifizierung von HTML ist wichtig für die Optimierung der Web-Performance. Kleinere HTML-Datei...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-to-markdown-converter.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Konvertieren Sie HTML sofort in ein sauberes Markdown-Format mit unserem kostenlosen Online-Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-to-markdown-converter.content.about_p1</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie HTML-Code sofort in ein sauberes, lesbares Markdown-Format mit unserem kostenlosen ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-viewer.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Vorschau von HTML-Code in Echtzeit mit unserem kostenlosen Online-HTML-Viewer</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-viewer.content.about_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ein HTML-Viewer ist ein leistungsstarkes Online-Tool, mit dem Sie HTML-Code in Echtzeit in der Vorsc...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">html-viewer.content.features_list.sample</span>
+                    <div class="value-preview">Detected: "start"</div>
+                    <div class="value-preview">&lt;strong&gt;Beispielcode:&lt;/strong&gt; Laden Sie Beispiel-HTML, um schnell zu starten</div>
+                </div><p><em>... and 71 more detections</em></p><h3>document.json (24 detections)</h3><div class="issue-item">
+                    <span class="key-path">excel-to-pdf.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Excel-zu-PDF-Konverter - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">excel-to-pdf.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie Excel-Tabellen online in PDF. Kostenloser XLS-zu-PDF-Konverter für eine profession...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">jpg-to-pdf.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">JPG-zu-PDF-Konverter - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">jpg-to-pdf.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie JPG-Bilder online in PDF. Kombinieren Sie mehrere Bilder zu einem PDF-Dokument.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-compressor.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">PDF-Kompressor - PDF-Dateigröße online reduzieren</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-compressor.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">PDF-Dateien online komprimieren. Reduzieren Sie die PDF-Dateigröße unter Beibehaltung der Qualitä...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-merger.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">PDF-Zusammenführung - PDF-Dateien online kombinieren</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-merger.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">PDF-Dateien online zusammenführen. Kombinieren Sie mehrere PDFs zu einem Dokument mit unserem koste...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-splitter.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">PDF-Splitter - PDF-Dateien online teilen</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-splitter.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">PDF-Dateien online teilen. Extrahieren Sie Seiten und teilen Sie große PDFs in kleinere Dokumente a...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-excel.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">PDF-zu-Excel-Konverter - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-excel.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie PDF online in Excel-Tabellen. Extrahieren Sie Tabellen aus PDF in das editierbare X...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-excel.content.step2_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Tool extrahiert Tabellen und konvertiert sie in das Excel-Format.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-jpg.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">PDF-zu-JPG-Konverter - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-jpg.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie PDF online in JPG-Bilder. Extrahieren Sie PDF-Seiten als hochwertige JPG-Dateien.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-ppt.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">PDF-zu-PowerPoint-Konverter - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-ppt.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie PDF online in PowerPoint-Folien. Verwandeln Sie PDF-Seiten in editierbare PPTX-Prä...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-word.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">PDF-zu-Word-Konverter - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-word.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie PDF-Dateien online in editierbare Word-Dokumente. Kostenloser PDF-zu-DOCX-Konverter...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">pdf-to-word.content.step2_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Tool verarbeitet die Datei und extrahiert den Inhalt.</div>
+                </div><p><em>... and 4 more detections</em></p><h3>image.json (34 detections)</h3><div class="issue-item">
+                    <span class="key-path">base64-to-image-converter.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie Base64-kodierte Zeichenfolgen zurück in Bilder (PNG, JPG, GIF). Kostenloser Online...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">heic-to-jpg-converter.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">HEIC-zu-JPG-Konverter - iPhone-Fotos online konvertieren | Optimizo</div>
+                </div><div class="issue-item">
+                    <span class="key-path">heic-to-jpg-converter.content.how_to.list.0</span>
+                    <div class="value-preview">Detected: "upload"</div>
+                    <div class="value-preview">Ziehen Sie Ihre .heic oder .heif Datei in die Upload-Zone.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">heic-to-jpg-converter.content.how_to.list.1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Das Tool liest und konvertiert die Datei automatisch mithilfe moderner Browser-Bibliotheken.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">heic-to-jpg-converter.content.details.p2</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Tool decodiert die HEIC data und kodiert sie als standardisiertes JPEG-Bild mit 90 % Qualität...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ico-converter.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">ICO-Konverter - Favicons online erstellen | Optimizo</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ico-converter.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie Bilder für Website-Favicons in das ICO-Format. Unterstützt benutzerdefinierte Gr�...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-compressor.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Kostenloser Bildkompressor - Bilddateigröße online reduzieren</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-compressor.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Komprimieren Sie Bilder kostenlos online. Reduzieren Sie JPG-, PNG- und WebP-Dateigrößen bei gleic...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-compressor.content.p1</span>
+                    <div class="value-preview">Detected: "enter"</div>
+                    <div class="value-preview">Komprimieren Sie Ihre Bilder kostenlos online mit unserem leistungsstarken Bildkompressionstool. Red...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-compressor.content.why_list.3</span>
+                    <div class="value-preview">Detected: "upload"</div>
+                    <div class="value-preview">Dateigrößenlimits für E-Mail-Anhänge und Uploads einhalten</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-compressor.content.how_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Tool verwendet fortschrittliche Kompressionsalgorithmen, um die Dateigröße zu reduzieren und...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-compressor.content.faq.a5</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Wir unterstützen die Formate JPG/JPEG, PNG und WebP. Damit decken wir 99 % aller Web-Bilder ab. Das...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-converter.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Bildkonverter - Bilder kostenlos online konvertieren | Optimizo</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-converter.meta.description</span>
+                    <div class="value-preview">Detected: "upload"</div>
+                    <div class="value-preview">Konvertieren Sie Bilder einfach und kostenlos zwischen mehreren Formaten (PNG, JPG, WEBP). Sichere, ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-converter.content.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Der ultimative kostenlose Online-Bildkonverter</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-converter.content.p2</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Vergessen Sie die Installation schwerfälliger Software oder das Hochladen Ihrer privaten Fotos auf ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-converter.content.faq.q1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ist dieses Tool kostenlos?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-to-base64-converter.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Konvertieren Sie Bilder in Base64-kodierte Zeichenfolgen zum Einbetten in HTML oder CSS. Kostenloses...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">image-to-base64-converter.content.how_to.list.1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Das Tool konvertiert die Datei sofort in einen Daten-URI.</div>
+                </div><p><em>... and 14 more detections</em></p><h3>network.json (60 detections)</h3><div class="issue-item">
+                    <span class="key-path">dns-lookup.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">DNS Lookup Tool - DNS-Einträge online kostenlos prüfen</div>
+                </div><div class="issue-item">
+                    <span class="key-path">dns-lookup.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Kostenloses DNS-Lookup-Tool zur Überprüfung von DNS-Einträgen für jede Domain. Zeigen Sie A-, AA...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">dns-lookup.meta.h1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">DNS Lookup Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">dns-lookup.content.what_is_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">DNS-Lookup ist ein Tool, das Domain-Name-System-Server abfragt, um DNS-Einträge für eine Domain ab...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">domain-to-ip.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Kostenloses Tool zum Nachschlagen von Domains zu IP-Adressen. Wandeln Sie jeden Domainnamen sofort i...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">domain-to-ip.content.intro</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser kostenloses Domain-zu-IP-Tool wandelt jeden Domainnamen sofort mittels DNS-Abfrage in die ents...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">domain-to-ip.faq.a3</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Dieses Tool zeigt öffentliche IP-Adressen von Domains. Um Ihre eigene lokale IP zu finden, nutzen S...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.meta.description</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Testen Sie Ihre Internetgeschwindigkeit kostenlos. Überprüfen Sie Download-Geschwindigkeit, Upload...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.editor.btn_start</span>
+                    <div class="value-preview">Detected: "start"</div>
+                    <div class="value-preview">Geschwindigkeitstest starten</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.editor.label_download</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Download-Geschwindigkeit</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.editor.label_upload</span>
+                    <div class="value-preview">Detected: "upload"</div>
+                    <div class="value-preview">Upload-Geschwindigkeit</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.editor.status_download</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Download-Geschwindigkeit wird getestet...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.editor.status_upload</span>
+                    <div class="value-preview">Detected: "upload"</div>
+                    <div class="value-preview">Upload-Geschwindigkeit wird getestet...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.content.p1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Testen Sie Ihre Internet-Verbindungsgeschwindigkeit mit unserem kostenlosen, präzisen Speedtest-Too...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.content.req_list.3</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Stellen Sie sicher, dass keine Downloads oder Uploads im Hintergrund laufen</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.content.metrics.download.title</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Download-Geschwindigkeit</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.content.metrics.upload.title</span>
+                    <div class="value-preview">Detected: "upload"</div>
+                    <div class="value-preview">Upload-Geschwindigkeit</div>
+                </div><div class="issue-item">
+                    <span class="key-path">internet-speed-test.content.metrics.ping.desc</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Die Reaktionszeit Ihrer Verbindung. Ein niedrigerer Wert ist besser. Wichtig für Online-Spiele und ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ip-lookup.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">IP Lookup Tool - IP-Adressdaten &amp; Geolocation kostenlos abrufen</div>
+                </div><div class="issue-item">
+                    <span class="key-path">ip-lookup.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Kostenloses IP-Lookup-Tool zum Finden detaillierter Informationen über jede IP-Adresse. Zeigen Sie ...</div>
+                </div><p><em>... and 40 more detections</em></p><h3>seo.json (83 detections)</h3><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.meta.title</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Bing SERP Checker - Bing-Suchrankings kostenlos prüfen</div>
+                </div><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Kostenloses Tool zur Überprüfung Ihrer Website-Rankings in der Bing-Suchmaschine. Genaue Echtzeit-...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.meta.h1</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Bing SERP Checker</div>
+                </div><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.content.main_title</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Fortgeschrittener Bing-Rank-Checker</div>
+                </div><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.content.why_check_desc</span>
+                    <div class="value-preview">Detected: "here"</div>
+                    <div class="value-preview">Während Google dominant ist, treibt Bing die Suche für Yahoo, AOL und Millionen von Windows-Gerät...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.content.how_accurate_title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Wie genau ist dieses Tool?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.content.how_accurate_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Tool führt Live-Abfragen bei den Bing-Servern in dem Moment durch, in dem Sie auf „Prüfen�...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.faq.q1</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Ist dieser Bing Rank Checker kostenlos?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">bing-serp-checker.faq.a1</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Ja! Unser **Bing Rank Checker** ist komplett kostenlos. Sie können unbegrenzt Keywords prüfen, um ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.meta.title</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Broken Link Checker - Tote Links auf Ihrer Website finden</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.meta.description</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Kostenloser Broken Link Checker zum Scannen Ihrer Website nach toten Links und 404-Fehlern. Beheben ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.meta.h1</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Broken Links Checker</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.interface.scan_title</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Broken Links Checker</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.content.main_subtitle</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Tote Links schaden der Glaubwürdigkeit Ihrer Website, der Benutzererfahrung und der SEO-Leistung. U...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.content.what_is_title</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Was ist ein Broken Link Checker?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.content.what_is_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ein Broken Link Checker ist ein Tool, das Ihre Webseiten scannt, um Links zu finden, die nicht mehr ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.content.how_works_intro</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Unser Broken Link Checker folgt einem einfachen 3-Schritte-Prozess:</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.content.pro_tip_desc</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Führen Sie diesen Checker regelmäßig (monatlich oder vierteljährlich) aus, um tote Links abzufan...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">broken-links-checker.faq.a4</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Dieses Tool prüft &lt;strong&gt;eine Seite nach der anderen&lt;/strong&gt;, um schnelle und fokussierte Ergebni...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">google-serp-checker.meta.title</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Google SERP Checker - Suchrankings nach Standort prüfen</div>
+                </div><p><em>... and 63 more detections</em></p><h3>spreadsheet.json (25 detections)</h3><div class="issue-item">
+                    <span class="key-path">csv-to-excel.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">CSV zu Excel Konverter - Kostenloses Online-Tool | Optimizo</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-excel.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie CSV kostenlos online in Excel (XLSX). Wandeln Sie durch Komma getrennte Dateien sof...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-excel.content.feature3_title</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Sofortiger Download</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-excel.faq.a1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ja! Unser Tool verarbeitet CSV-Dateien verschiedener Größen. Bei sehr großen Dateien (100MB+) kan...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-json.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">CSV zu JSON - Schnelles, kostenloses und zuverlässiges Online-Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-json.meta.subtitle</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Professionelles CSV zu JSON Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-sql.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Konvertieren Sie CSV-Dateien sofort in SQL-INSERT-Anweisungen. Kostenloses Online-Tool zur Generieru...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-sql.content.hero_description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Das ultimative Entwickler-Tool für die Datenmigration. Verwandeln Sie Ihre CSV-Dateien sofort in au...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-sql.faq.a1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Tool generiert Standard-SQL-INSERT-Anweisungen, die mit MySQL, PostgreSQL, SQL Server, SQLite ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-tsv.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">CSV zu TSV - Schnelles, kostenloses und zuverlässiges Online-Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-tsv.meta.subtitle</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Professionelles CSV zu TSV Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-xml-converter.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Verwandeln Sie CSV-Tabellendaten mit unserem kostenlosen Online-Tool in ein strukturiertes XML-Forma...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-xml-converter.content.features.copy.title</span>
+                    <div class="value-preview">Detected: "click"</div>
+                    <div class="value-preview">One-Click-Kopie</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-xml-converter.content.how_steps.3.desc</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Klicken Sie auf die Download-Schaltfläche, um Ihre konvertierte XML-Datei zu speichern, die sofort ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">csv-to-xml-converter.content.faq.a5</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Absolut! Exportieren Sie Ihre Excel-Daten als CSV und verwenden Sie dann dieses Tool, um sie in das ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">excel-to-csv.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Excel zu CSV Konverter - Kostenloses XLSX zu CSV Tool | Optimizo</div>
+                </div><div class="issue-item">
+                    <span class="key-path">excel-to-csv.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie Excel-Dateien kostenlos online in das CSV-Format. Wandeln Sie XLSX-Tabellen sofort ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">excel-to-csv.content.feature3_desc</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Schnelle Konvertierung mit sofortigem Download der CSV-Dateien.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">google-sheets-to-excel.meta.description</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie Google Sheets online in das Excel-Format. Laden Sie Ihre Google-Tabellen als XLSX-D...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">google-sheets-to-excel.content.feature1_title</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Direkter Download</div>
+                </div><p><em>... and 5 more detections</em></p><h3>text.json (22 detections)</h3><div class="issue-item">
+                    <span class="key-path">duplicate-line-remover.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Duplikat-Zeilen-Entferner - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">file-difference-checker.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Dateidifferenz-Prüfer - Texte online vergleichen</div>
+                </div><div class="issue-item">
+                    <span class="key-path">file-difference-checker.content.p1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Mit diesem Tool können Sie zwei Textblöcke oder Dateien schnell vergleichen. Unterschiede, Löschu...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">morse-to-text-converter.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Morsezeichen-zu-Text-Konverter - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">morse-to-text-converter.content.p1</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Dekodieren Sie Morsezeichen sofort mit unserem kostenlosen Online-Konverter. Geben Sie einfach Punkt...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">morse-to-text-converter.content.how_steps.2.desc</span>
+                    <div class="value-preview">Detected: "button"</div>
+                    <div class="value-preview">Klicken Sie auf den Button „In Text umwandeln“</div>
+                </div><div class="issue-item">
+                    <span class="key-path">morse-to-text-converter.content.faq.a3</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ja, das Tool erkennt Zahlen von 0 bis 9.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">morse-to-text-converter.content.faq.q5</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ist das Tool kostenlos?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-reverser.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Textumkehrer - Text online umkehren</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-reverser.content.p1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Kehren Sie Ihren Text sofort mit unserem kostenlosen Online-Tool um. Dieses Tool spiegelt Ihren Text...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-reverser.content.how_to.step2_desc</span>
+                    <div class="value-preview">Detected: "button"</div>
+                    <div class="value-preview">Drücken Sie den &quot;Text umkehren&quot; Button</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-reverser.content.faq.a1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Das Tool kehrt die Reihenfolge der Zeichen um (das letzte wird das erste usw.).</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-reverser.content.faq.q5</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ist das Tool kostenlos?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-to-morse-converter.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Text-zu-Morsezeichen-Konverter - Kostenloses Online-Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-to-morse-converter.content.p1</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Konvertieren Sie Text sofort in Morsezeichen mit unserem kostenlosen Online-Konverter. Morsezeichen ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-to-morse-converter.content.faq.a3</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ja! Das Tool unterstützt Zahlen 0-9 mit eigenen Morse-Mustern.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-to-morse-converter.content.faq.a4</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ja! Sie werden noch in der Luftfahrt, Schifffahrt, im Amateurfunk und als Barrierefreiheits-Tool gen...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">text-to-morse-converter.content.faq.q5</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ist dieses Tool kostenlos?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">word-counter.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Zählen Sie sofort Wörter, Zeichen und Sätze mit unserem kostenlosen Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">word-counter.content.main_title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Online Wortzähler</div>
+                </div><p><em>... and 2 more detections</em></p><h3>time.json (13 detections)</h3><div class="issue-item">
+                    <span class="key-path">date-to-unix-timestamp.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Datum zu Unix-Zeitstempel - Schnelles, kostenloses und zuverlässiges Online-Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">date-to-unix-timestamp.meta.subtitle</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Professionelles Datum zu Unix-Zeitstempel Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">date-to-unix-timestamp.content.what_is_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Es ist Teil unserer umfassenden Tool-Sammlung für digitale Produktivität.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">local-time-to-utc.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ortszeit zu UTC - Schnelles, kostenloses und zuverlässiges Online-Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">local-time-to-utc.meta.subtitle</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Professionelles Ortszeit zu UTC Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">local-time-to-utc.content.what_is_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Es ist Teil unserer umfassenden Tool-Sammlung für digitale Produktivität.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">time-zone-converter.content.events_desc</span>
+                    <div class="value-preview">Detected: "start"</div>
+                    <div class="value-preview">Verpassen Sie nicht den Start eines globalen Livestreams.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">unix-timestamp-to-date.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unix-Zeitstempel zu Datum - Schnelles, kostenloses und zuverlässiges Online-Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">unix-timestamp-to-date.meta.subtitle</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Professionelles Unix-Zeitstempel zu Datum Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">unix-timestamp-to-date.content.what_is_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Es ist Teil unserer umfassenden Tool-Sammlung für digitale Produktivität.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">utc-to-local-time.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">UTC zu Ortszeit - Schnelles, kostenloses und zuverlässiges Online-Tool.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">utc-to-local-time.meta.subtitle</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Professionelles UTC zu Ortszeit Tool</div>
+                </div><div class="issue-item">
+                    <span class="key-path">utc-to-local-time.content.what_is_desc</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Es ist Teil unserer umfassenden Tool-Sammlung für digitale Produktivität.</div>
+                </div><h3>utility.json (12 detections)</h3><div class="issue-item">
+                    <span class="key-path">password-generator.meta.title</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Tool zur Generierung sicherer Passwörter</div>
+                </div><div class="issue-item">
+                    <span class="key-path">password-generator.content.faq.q1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Wie sicher sind die mit diesem Tool generierten Passwörter?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">password-generator.content.faq.q5</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Ist es sicher, einen Online-Passwort-Generator zu verwenden?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">password-generator.content.seo.p1</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Passwortsicherheit ist die Grundlage der Online-Sicherheit. Ein starkes Passwort fungiert als erste ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">password-generator.content.seo.p2</span>
+                    <div class="value-preview">Detected: "here"</div>
+                    <div class="value-preview">Die Stärke eines Passworts wird an seiner Entropie gemessen – dem Maß an Zufälligkeit und Unvor...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">password-generator.content.seo.p3</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser kostenloses Passwort-Generator-Tool ist für jeden konzipiert – von Einzelpersonen, die priv...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">qr-code-generator.meta.title</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Kostenloser Online QR-Code Generator</div>
+                </div><div class="issue-item">
+                    <span class="key-path">qr-code-generator.content.faq.a4</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Tool generiert statische QR-Codes ohne Tracking. Um Scans zu verfolgen, verwenden Sie vor dem ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">qr-code-generator.content.features.download.title</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">Einfacher Download</div>
+                </div><div class="issue-item">
+                    <span class="key-path">qr-code-generator.content.uses.urls.desc</span>
+                    <div class="value-preview">Detected: "online"</div>
+                    <div class="value-preview">Leiten Sie Benutzer sofort zu Ihrer Website, Landingpage oder Ihrem Online-Shop weiter</div>
+                </div><div class="issue-item">
+                    <span class="key-path">username-checker.content.faq.a2</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Probieren Sie Variationen aus, indem Sie Ihren Standort, Ihre Branche oder ein relevantes Wort hinzu...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">username-checker.content.faq.a4</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Nein, Sie müssen auf jeder Plattform ein Konto erstellen, um einen Benutzernamen zu beanspruchen. U...</div>
+                </div><h3>youtube.json (32 detections)</h3><div class="issue-item">
+                    <span class="key-path">youtube-channel-data-extractor.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Extrahiere komplette YouTube-Kanaldaten wie Abonnentenzahl, Videoanzahl, Aufrufe und mehr. Kostenlos...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-channel-data-extractor.meta.subtitle</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Extrahiere komplette YouTube-Kanalstatistiken und Infos. Kostenloses Tool für detaillierte Analysen...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-channel-data-extractor.faq.a1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Nein! Unser Tool funktioniert ohne API-Keys. Füge einfach die Kanal-URL ein und erhalte sofort Erge...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-channel-data-extractor.faq.q3</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ist dieses Tool kostenlos?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-channel-id-finder.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Finde sofort die eindeutige ID jedes YouTube-Kanals. Einfaches Tool für Entwickler und Marketer. Ke...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-channel-id-finder.use_cases.case4_desc</span>
+                    <div class="value-preview">Detected: "upload"</div>
+                    <div class="value-preview">Erstelle RSS-Feeds für Kanal-Uploads mittels Kanal-ID</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-channel-id-finder.pro_tips.tip1</span>
+                    <div class="value-preview">Detected: "start"</div>
+                    <div class="value-preview">Kanal-IDs starten immer mit &quot;UC&quot; gefolgt von 22 Zeichen</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-channel-id-finder.faq.q4</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Ist das Tool kostenlos?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-earnings-calculator.content.factor_niche_desc</span>
+                    <div class="value-preview">Detected: "here"</div>
+                    <div class="value-preview">Finanz- und Technik-Themen haben oft höhere Raten</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-handle-checker.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Prüfe, ob dein gewünschtes YouTube-Handle verfügbar ist. Kostenloses Tool für den perfekten @han...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-handle-checker.content.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Unser Tool hilft dir, deine Markenidentität auf YouTube zu sichern. Prüfe sofort und erhalte Vorsc...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-handle-checker.content.feature1_title</span>
+                    <div class="value-preview">Detected: "check"</div>
+                    <div class="value-preview">Sofort-Check</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-monetization-checker.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Prüfe, ob ein YouTube-Kanal monetarisiert ist. Kostenloses Tool für die Teilnahmebedingungen. Sofo...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-monetization-checker.results.note_text</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Dieses Tool schätzt basierend auf öffentlichen Daten. Den echten Status kennt nur der Inhaber.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-monetization-checker.content.notice_text</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Die Monetarisierungsberechtigung erfordert 1.000 Abonnenten und 4.000 Wiedergabestunden in den letzt...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-monetization-checker.content.faq_q1</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Wie genau ist das Tool?</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-monetization-checker.content.faq_a5</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Wir aktualisieren das Tool ständig gemäß den 2024er Richtlinien.</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-thumbnail-downloader.meta.title</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">YouTube Thumbnail Downloader - HD Qualität | Optimizo</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-thumbnail-downloader.meta.description</span>
+                    <div class="value-preview">Detected: "tool"</div>
+                    <div class="value-preview">Lade YouTube-Vorschaubilder in HD, 4K und 1080p herunter. Kostenloses Tool zum sofortigen Speichern ...</div>
+                </div><div class="issue-item">
+                    <span class="key-path">youtube-thumbnail-downloader.meta.h1</span>
+                    <div class="value-preview">Detected: "download"</div>
+                    <div class="value-preview">YouTube Thumbnail Downloader</div>
+                </div><p><em>... and 12 more detections</em></p></div></div>
+    </div>
+</body>
+</html>

@@ -12,7 +12,7 @@
             "button": "Lookup DNS"
         },
         "results": {
-            "title": ""
+            "title": "DNS Records"
         },
         "content": {
             "what_is_title": "What is DNS Lookup?",
@@ -28,24 +28,24 @@
             "cname_record": "<strong>CNAME Record:</strong> Canonical name alias"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is DNS lookup?",
+            "a1": "DNS lookup is the process of querying Domain Name System servers to retrieve DNS records for a domain. It translates human-readable domain names into IP addresses and provides information about mail servers, name servers, and other DNS configurations.",
+            "q2": "What are the different types of DNS records?",
+            "a2": "Common DNS record types include A (IPv4 address), AAAA (IPv6 address), MX (mail server), CNAME (alias), TXT (text data), NS (name server), and SOA (start of authority). Each record type serves a specific purpose in domain configuration.",
+            "q3": "How long does DNS propagation take?",
+            "a3": "DNS propagation typically takes 24-48 hours globally, though changes can appear within minutes on some servers. The time depends on TTL (Time To Live) settings and how quickly DNS servers refresh their cache.",
+            "q4": "Why is my DNS lookup failing?",
+            "a4": "DNS lookup failures can occur due to incorrect domain name, DNS server issues, firewall blocking, or the domain not being properly configured. Check your domain spelling and ensure your DNS records are correctly set up.",
+            "q5": "Can I lookup DNS records for any domain?",
+            "a5": "Yes, you can perform DNS lookups for any publicly registered domain. However, some organizations may restrict certain DNS queries for security reasons."
         },
         "js": {
-            "looking_up": "",
-            "records_label": "",
-            "success": "",
-            "error": "",
-            "lookup_dns": ""
+            "looking_up": "Looking up DNS records...",
+            "records_label": "DNS Records",
+            "success": "DNS lookup completed successfully",
+            "error": "Failed to lookup DNS records",
+            "lookup_dns": "Lookup DNS"
         }
     },
     "domain-to-ip": {
@@ -62,9 +62,9 @@
             "button": "Lookup IP Address"
         },
         "results": {
-            "title": "",
-            "domain_label": "",
-            "ip_label": ""
+            "title": "IP Address Results",
+            "domain_label": "Domain",
+            "ip_label": "IP Address"
         },
         "content": {
             "main_title": "Domain to IP Converter",
@@ -99,21 +99,21 @@
             "tip5": "✅ Identify shared hosting by checking if multiple domains share IPs"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is a domain to IP lookup?",
+            "a1": "Domain to IP lookup converts a domain name (like example.com) into its corresponding IP address. This is essential for understanding where a website is hosted and for network troubleshooting.",
+            "q2": "Can one domain have multiple IP addresses?",
+            "a2": "Yes, domains can have multiple IP addresses for load balancing, redundancy, or serving different content based on geographic location. This is common for large websites and CDNs.",
+            "q3": "What is the difference between IPv4 and IPv6?",
+            "a3": "IPv4 uses 32-bit addresses (like 192.168.1.1) and supports about 4.3 billion addresses. IPv6 uses 128-bit addresses (like 2001:0db8:85a3::8a2e:0370:7334) and provides virtually unlimited addresses for future internet growth.",
+            "q4": "Why would I need to find a domain's IP address?",
+            "a4": "Finding a domain's IP address is useful for network troubleshooting, configuring firewalls, setting up server access, verifying DNS configuration, or identifying the hosting provider and server location.",
+            "q5": "Is the IP address the same as the server location?",
+            "a5": "The IP address indicates where the server is hosted, but with CDNs and cloud hosting, the physical server location may differ from the IP geolocation. Many websites use multiple servers worldwide."
         },
         "js": {
-            "looking_up": "",
-            "error_failed": ""
+            "looking_up": "Looking up IP address...",
+            "error_failed": "Failed to resolve domain to IP address"
         }
     },
     "internet-speed-test": {
@@ -238,15 +238,15 @@
             "button": "Lookup IP Address"
         },
         "results": {
-            "title": "",
-            "ip_address": "",
-            "type": "",
-            "hostname": "",
-            "isp": "",
-            "country": "",
-            "region": "",
-            "city": "",
-            "timezone": ""
+            "title": "IP Lookup Results",
+            "ip_address": "IP Address",
+            "type": "Type",
+            "hostname": "Hostname",
+            "isp": "ISP",
+            "country": "Country",
+            "region": "Region",
+            "city": "City",
+            "timezone": "Timezone"
         },
         "content": {
             "what_is_title": "What is IP Lookup?",
@@ -264,22 +264,22 @@
             "feature4_desc": "Fast and accurate lookup"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is IP lookup?",
+            "a1": "IP lookup (also called IP geolocation) is the process of finding geographic and network information about an IP address, including location, ISP, hostname, and organization. It's useful for security, analytics, and network diagnostics.",
+            "q2": "How accurate is IP geolocation?",
+            "a2": "IP geolocation is typically accurate at the country level (95-99%) and city level (50-75%). Accuracy varies based on the IP database and how ISPs manage their IP blocks. VPNs and proxies can mask the true location.",
+            "q3": "Can I find someone's exact address from their IP?",
+            "a3": "No, IP lookup only provides approximate location (city/region level), not exact street addresses. Only ISPs and law enforcement with proper authorization can access detailed subscriber information.",
+            "q4": "What is the difference between IPv4 and IPv6 lookup?",
+            "a4": "Both IPv4 and IPv6 lookups provide similar information (location, ISP, etc.). IPv6 is the newer protocol with more addresses. Our tool supports both IP versions for comprehensive network analysis.",
+            "q5": "Why does my IP location show a different city?",
+            "a5": "Your ISP may route traffic through regional hubs, or the IP geolocation database may have outdated information. Mobile and satellite connections often show less accurate locations than fixed broadband."
         },
         "js": {
-            "looking_up": "",
-            "success": "",
-            "error": ""
+            "looking_up": "Looking up IP information...",
+            "success": "IP lookup completed",
+            "error": "Failed to lookup IP address"
         }
     },
     "ping-test": {
@@ -295,7 +295,7 @@
             "button": "Ping Host"
         },
         "results": {
-            "title": ""
+            "title": "Ping Results"
         },
         "content": {
             "what_is_title": "What is Ping Test?",
@@ -313,23 +313,23 @@
             "interpreting_desc": "Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is a ping test?",
+            "a1": "A ping test sends data packets to a server and measures the time it takes to receive a response. It's used to check network connectivity, measure latency, and diagnose connection issues.",
+            "q2": "What is a good ping time?",
+            "a2": "For general browsing: under 100ms is good. For gaming: under 50ms is ideal, under 20ms is excellent. For video calls: under 150ms is acceptable. Lower ping means faster response times.",
+            "q3": "Why is my ping high?",
+            "a3": "High ping can be caused by network congestion, distance to server, poor WiFi signal, ISP throttling, or too many devices on your network. Try using wired connection, closing bandwidth-heavy applications, or contacting your ISP.",
+            "q4": "What does \"Request timed out\" mean?",
+            "a4": "Request timeout means the server didn't respond within the expected time. This can indicate the server is down, blocking ping requests (firewall), or there's a network connectivity issue.",
+            "q5": "Can I ping any website?",
+            "a5": "Most websites can be pinged, but some servers block ICMP ping requests for security reasons. If ping fails, the website might still be accessible via browser - try using other tools like traceroute or port checker."
         },
         "js": {
-            "pinging": "",
-            "success": "",
-            "error": "",
-            "ping_host": ""
+            "pinging": "Pinging host...",
+            "success": "Ping completed successfully",
+            "error": "Ping failed",
+            "ping_host": "Ping Host"
         }
     },
     "port-checker": {
@@ -347,7 +347,7 @@
             "button": "Check Port"
         },
         "results": {
-            "title": ""
+            "title": "Port Status"
         },
         "content": {
             "what_is_title": "What is Port Checker?",
@@ -366,23 +366,23 @@
             "security_desc": "Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is a port checker?",
+            "a1": "A port checker tests whether a specific network port on a server is open and accepting connections. It's essential for troubleshooting servers, firewalls, and network services.",
+            "q2": "What are common ports and their uses?",
+            "a2": "Common ports include: 80 (HTTP), 443 (HTTPS), 21 (FTP), 22 (SSH), 25 (SMTP email), 3306 (MySQL), 3389 (Remote Desktop), 8080 (HTTP alternate). Each service uses specific ports for communication.",
+            "q3": "Why is my port closed?",
+            "a3": "Ports can be closed due to firewall rules, router configuration, service not running, ISP blocking, or incorrect port forwarding. Check your firewall settings, ensure the service is running, and verify port forwarding rules.",
+            "q4": "Is it safe to open ports?",
+            "a4": "Opening ports exposes services to the internet, which can be a security risk if not properly configured. Only open necessary ports, use strong authentication, keep software updated, and consider using VPN for sensitive services.",
+            "q5": "What's the difference between TCP and UDP ports?",
+            "a5": "TCP ports provide reliable, ordered data delivery (used for web, email, file transfer). UDP ports are faster but don't guarantee delivery (used for gaming, streaming, DNS). Both can use the same port numbers."
         },
         "js": {
-            "checking": "",
-            "success": "",
-            "error": "",
-            "check_port": ""
+            "checking": "Checking port status...",
+            "success": "Port check completed",
+            "error": "Port check failed",
+            "check_port": "Check Port"
         }
     },
     "reverse-dns-lookup": {
@@ -434,37 +434,37 @@
             "subtitle": "The best traceroute for developers and IT professionals"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "Host or IP Address",
+            "host_placeholder": "Enter domain or IP address",
+            "button": "Start Traceroute",
+            "button_loading": "Tracing route..."
         },
         "results": {
-            "title": ""
+            "title": "Traceroute Results"
         },
         "content": {
             "what_is_title": "What is Traceroute?",
             "what_is_desc": "This is a free online tool to traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
+            "why_use_title": "Why Use Traceroute?",
+            "why_use_desc": "Traceroute shows the path data takes from your computer to a destination server, displaying each hop (router) along the way. It's essential for diagnosing network slowdowns, identifying routing issues, and understanding network topology.",
+            "hops_title": "Understanding Hops",
+            "hop1": "Hop 1: Your local router/gateway",
+            "hop2": "Hop 2-3: Your ISP's network",
+            "hop3": "Hop 4-6: Regional internet backbone",
+            "hop4": "Hop 7-10: Destination ISP network",
+            "hop5": "Hop 11+: Destination server network",
+            "hop6": "Each hop adds latency - fewer hops generally means faster connection",
+            "issues_title": "Common Issues",
+            "issues_desc": "High latency at specific hops indicates congestion or routing problems. Asterisks (*) mean routers aren't responding to traceroute packets (often due to firewall rules). Packet loss at intermediate hops may not affect final destination if packets reach it successfully."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is traceroute?",
+            "a1": "Traceroute is a network diagnostic tool that tracks the path data packets take from your computer to a destination server. It shows each router (hop) along the route and measures the time taken at each step, helping identify where network delays or failures occur.",
+            "q2": "Why do some hops show asterisks (*)?",
+            "a2": "Asterisks indicate that a router didn't respond to the traceroute probe within the timeout period. This is often due to firewall configurations that block ICMP packets for security. It doesn't necessarily mean there's a problem - the packets may still reach the destination.",
+            "q3": "How many hops is normal?",
+            "a3": "Typical internet routes have 10-20 hops. Local network destinations may have 1-5 hops, while international routes can have 20-30 hops. More hops generally mean longer distances and potentially higher latency, but efficient routing matters more than hop count."
         }
     },
     "user-agent-parser": {
@@ -558,15 +558,15 @@
             "subtitle": "Instantly discover your public IP address with detailed ISP information"
         },
         "ui": {
-            "loading": "",
-            "your_ip_title": "",
-            "copy_button": "",
-            "timezone": ""
+            "loading": "Detecting your IP address...",
+            "your_ip_title": "Your IP Address",
+            "copy_button": "Copy IP",
+            "timezone": "Timezone"
         },
         "results": {
-            "location": "",
-            "isp": "",
-            "country": ""
+            "location": "Location",
+            "isp": "Internet Service Provider",
+            "country": "Country"
         },
         "content": {
             "main_title": "What Is My IP Address - Free IP Lookup Tool",
@@ -607,13 +607,13 @@
             "privacy_tip5": "• Be aware that websites log your IP for security and analytics"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is an IP address?",
+            "a1": "An IP (Internet Protocol) address is a unique numerical identifier assigned to every device connected to the internet. It's like a postal address for your computer, allowing other devices to send and receive data from you.",
+            "q2": "Why does my IP address change?",
+            "a2": "Most home internet connections use dynamic IP addresses that change periodically when you restart your router or when your ISP reassigns addresses. Businesses often use static IP addresses that don't change. Mobile devices get new IPs when switching between WiFi and cellular networks.",
+            "q3": "Can someone track me with my IP address?",
+            "a3": "Your IP address reveals your approximate location (city/region) and ISP, but not your exact street address or personal identity. Only your ISP and law enforcement with proper authorization can link an IP address to a specific person or household."
         }
     },
     "what-is-my-isp": {
@@ -667,20 +667,20 @@
             "privacy_note_desc": "Your ISP can see all unencrypted internet traffic and the websites you visit (but not HTTPS content). They may log connection data, browsing history, and DNS queries. Use a VPN to encrypt your traffic and prevent ISP monitoring. Our tool only displays publicly available information that websites can already see."
         },
         "results": {
-            "ip_address": "",
-            "asn": ""
+            "ip_address": "Your IP Address",
+            "asn": "ASN (Autonomous System Number)"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is an ISP?",
+            "a1": "ISP stands for Internet Service Provider - the company that provides your internet connection. Examples include Comcast, AT&T, Verizon, or local providers. Your ISP assigns your IP address and routes all your internet traffic.",
+            "q2": "What is an ASN?",
+            "a2": "ASN (Autonomous System Number) is a unique identifier assigned to networks and ISPs for internet routing. It helps identify which organization controls a block of IP addresses. Large ISPs have their own ASN, while smaller providers may share one.",
+            "q3": "Can I hide my ISP information?",
+            "a3": "Using a VPN (Virtual Private Network) will show the VPN provider's ISP instead of your actual ISP. However, your real ISP can still see that you're using a VPN. Proxies and Tor can also mask your ISP information."
         },
         "js": {
-            "error_loading": ""
+            "error_loading": "Failed to detect ISP information"
         }
     },
     "whois-lookup": {
@@ -718,18 +718,18 @@
             "privacy_desc": "Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws."
         },
         "results": {
-            "title": ""
+            "title": "WHOIS Information"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is WHOIS lookup?",
+            "a1": "WHOIS is a database query that provides registration information about domain names and IP addresses, including registrant details, registration dates, expiration dates, name servers, and registrar information. It's useful for domain research and verification.",
+            "q2": "Why is WHOIS information hidden?",
+            "a2": "Many domain owners use WHOIS privacy protection (also called domain privacy) to hide their personal contact information from public WHOIS databases. This prevents spam, identity theft, and unwanted solicitation while maintaining domain ownership.",
+            "q3": "Is WHOIS lookup legal?",
+            "a3": "Yes, WHOIS lookup is completely legal and is a standard internet protocol. WHOIS data is publicly available for legitimate purposes like domain research, trademark protection, and network troubleshooting. However, using WHOIS data for spam or harassment is prohibited.",
+            "q4": "How often is WHOIS data updated?",
+            "a4": "WHOIS data is updated in real-time when domain registration information changes. However, different WHOIS servers may cache data for varying periods. Recent changes might take a few hours to propagate across all WHOIS databases globally."
         }
     }
 }

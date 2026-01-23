@@ -24,11 +24,11 @@
             "feature3_desc": "Get your Excel file instantly after conversion, ready to use."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Frequently Asked Questions",
+            "q1": "Can I convert large CSV files to Excel?",
+            "a1": "Yes! Our tool handles CSV files of various sizes. For very large files (100MB+), the conversion may take a bit longer, but the process is optimized for performance.",
+            "q2": "Will formatting be preserved during conversion?",
+            "a2": "CSV files contain only raw data without formatting. The Excel file will have the data properly organized in cells, but you'll need to apply formatting (colors, fonts, borders) manually in Excel after conversion."
         }
     },
     "csv-to-json": {
@@ -67,11 +67,11 @@
             "feature3_desc": "Generates SQL-92 compliant code that works on MySQL, PostgreSQL, SQLite, and MariaDB."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What SQL databases are supported?",
+            "a1": "Our tool generates standard SQL INSERT statements compatible with MySQL, PostgreSQL, SQL Server, SQLite, and other major database systems. You can customize the table name and column names as needed.",
+            "q2": "How do I handle special characters in my CSV data?",
+            "a2": "The converter automatically escapes special characters (quotes, backslashes) to prevent SQL injection and syntax errors. Your data will be safely converted to properly formatted SQL statements."
         }
     },
     "csv-to-tsv": {
@@ -170,8 +170,8 @@
                     "desc": "The XML output appears on the right. Click \"Copy\" to use it in your application."
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "Download XML File",
+                    "desc": "Click the download button to save your converted XML file, ready to use in applications, APIs, or data exchange systems."
                 }
             },
             "example_title": "💡 Conversion Example",
@@ -196,7 +196,7 @@
                 "2": "<strong>Test with examples:</strong> Use the \"Example\" button to understand the conversion format.",
                 "3": "<strong>Validate XML output:</strong> Always validate the generated XML against your target system's requirements.",
                 "4": "<strong>Handle special characters:</strong> Special characters are automatically escaped for valid XML output.",
-                "5": ""
+                "5": "Validate your XML output using an XML validator to ensure proper structure and compatibility with your target system."
             }
         },
         "js": {
@@ -232,11 +232,11 @@
             "feature3_desc": "Quick conversion with immediate download of CSV files."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Frequently Asked Questions",
+            "q1": "Will formulas be converted to CSV?",
+            "a1": "CSV format only supports plain text values. When converting Excel to CSV, formulas will be replaced with their calculated values. If you need to preserve formulas, keep a copy of the original Excel file.",
+            "q2": "Can I convert multiple Excel sheets at once?",
+            "a2": "Each Excel worksheet needs to be converted separately to CSV. If your Excel file has multiple sheets, you'll get a separate CSV file for each sheet, or you can choose which sheet to convert."
         }
     },
     "google-sheets-to-excel": {
@@ -264,11 +264,11 @@
             "feature3_desc": "Work on your spreadsheets without internet connection."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Frequently Asked Questions",
+            "q1": "Do I need to download from Google Sheets first?",
+            "a1": "Yes, you'll need to download your Google Sheet as an Excel file (.xlsx) or CSV first. In Google Sheets, go to File > Download > Microsoft Excel (.xlsx) to get the file for conversion.",
+            "q2": "Will Google Sheets formulas work in Excel?",
+            "a2": "Most common formulas (SUM, AVERAGE, IF, VLOOKUP) are compatible between Google Sheets and Excel. However, some Google-specific functions may not work in Excel and will need to be adjusted."
         }
     },
     "tsv-to-csv-converter": {
@@ -436,11 +436,11 @@
             "feature3_desc": "XLSX format has better security and corruption recovery."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Frequently Asked Questions",
+            "q1": "What is the difference between XLS and XLSX?",
+            "a1": "XLS is the older Excel format (Excel 97-2003) with a 65,536 row limit. XLSX is the modern XML-based format (Excel 2007+) with 1,048,576 rows, better compression, and improved security. Converting to XLSX is recommended for better compatibility.",
+            "q2": "Will macros be preserved when converting XLS to XLSX?",
+            "a2": "Yes, macros and VBA code are preserved during conversion. However, if your file contains macros, save it as .XLSM (macro-enabled) instead of .XLSX to ensure macros remain functional."
         }
     },
     "xlsx-to-xls": {
@@ -468,11 +468,11 @@
             "feature3_desc": "Fast processing with instant download."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Frequently Asked Questions",
+            "q1": "Why would I convert XLSX back to XLS?",
+            "a1": "Converting to XLS format is useful for compatibility with older Excel versions (Excel 97-2003) or legacy systems that don't support the newer XLSX format. However, XLS has limitations like fewer rows and larger file sizes.",
+            "q2": "Will I lose data when converting XLSX to XLS?",
+            "a2": "If your XLSX file has more than 65,536 rows or 256 columns, data will be truncated when converting to XLS format. Also, some newer Excel features may not be supported in the older XLS format."
         }
     }
 }

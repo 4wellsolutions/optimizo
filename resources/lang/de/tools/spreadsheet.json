@@ -24,11 +24,11 @@
             "feature3_desc": "Erhalten Sie Ihre Excel-Datei sofort nach der Konvertierung, einsatzbereit."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Häufig gestellte Fragen",
+            "q1": "Kann ich große CSV-Dateien in Excel konvertieren?",
+            "a1": "Ja! Unser Tool verarbeitet CSV-Dateien verschiedener Größen. Bei sehr großen Dateien (100MB+) kann die Konvertierung etwas länger dauern, aber der Prozess ist für Leistung optimiert.",
+            "q2": "Wird die Formatierung bei der Konvertierung beibehalten?",
+            "a2": "CSV-Dateien enthalten nur Rohdaten ohne Formatierung. Die Excel-Datei enthält die Daten ordnungsgemäß in Zellen organisiert, aber Sie müssen die Formatierung (Farben, Schriftarten, Rahmen) nach der Konvertierung manuell in Excel anwenden."
         }
     },
     "csv-to-json": {
@@ -67,11 +67,11 @@
             "feature3_desc": "Generiert SQL-92-konformen Code, der auf MySQL, PostgreSQL, SQLite und MariaDB funktioniert."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Häufig gestellte Fragen",
+            "q1": "Welche SQL-Datenbanken werden unterstützt?",
+            "a1": "Unser Tool generiert Standard-SQL-INSERT-Anweisungen, die mit MySQL, PostgreSQL, SQL Server, SQLite und anderen wichtigen Datenbanksystemen kompatibel sind. Sie können den Tabellennamen und die Spaltennamen nach Bedarf anpassen.",
+            "q2": "Wie gehe ich mit Sonderzeichen in meinen CSV-Daten um?",
+            "a2": "Der Konverter maskiert automatisch Sonderzeichen (Anführungszeichen, Backslashes), um SQL-Injection und Syntaxfehler zu verhindern. Ihre Daten werden sicher in ordnungsgemäß formatierte SQL-Anweisungen konvertiert."
         }
     },
     "csv-to-tsv": {
@@ -170,8 +170,8 @@
                     "desc": "Die XML-Ausgabe erscheint rechts. Klicken Sie auf „Kopieren“, um sie in Ihrer Anwendung zu verwenden."
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "XML-Datei herunterladen",
+                    "desc": "Klicken Sie auf die Download-Schaltfläche, um Ihre konvertierte XML-Datei zu speichern, die sofort in Anwendungen, APIs oder Datenaustauschsystemen verwendet werden kann."
                 }
             },
             "example_title": "💡 Konvertierungsbeispiel",
@@ -192,11 +192,11 @@
             },
             "tips_title": "🎓 Best Practices",
             "tips_list": {
-                "1": "<strong>Bereinigen Sie Ihre Daten:<\/strong> Entfernen Sie vor der Konvertierung zusätzliche Leerzeichen und Sonderzeichen aus den Headern.",
-                "2": "<strong>Mit Beispielen testen:<\/strong> Verwenden Sie die Schaltfläche „Beispiel“, um das Konvertierungsformat zu verstehen.",
-                "3": "<strong>XML-Ausgabe validieren:<\/strong> Validieren Sie das generierte XML immer gegen die Anforderungen Ihres Zielsystems.",
-                "4": "<strong>Sonderzeichen behandeln:<\/strong> Sonderzeichen werden automatisch maskiert, um eine gültige XML-Ausgabe zu gewährleisten.",
-                "5": ""
+                "1": "<strong>Bereinigen Sie Ihre Daten:</strong> Entfernen Sie vor der Konvertierung zusätzliche Leerzeichen und Sonderzeichen aus den Headern.",
+                "2": "<strong>Mit Beispielen testen:</strong> Verwenden Sie die Schaltfläche „Beispiel“, um das Konvertierungsformat zu verstehen.",
+                "3": "<strong>XML-Ausgabe validieren:</strong> Validieren Sie das generierte XML immer gegen die Anforderungen Ihres Zielsystems.",
+                "4": "<strong>Sonderzeichen behandeln:</strong> Sonderzeichen werden automatisch maskiert, um eine gültige XML-Ausgabe zu gewährleisten.",
+                "5": "Validieren Sie Ihre XML-Ausgabe mit einem XML-Validator, um die ordnungsgemäße Struktur und Kompatibilität mit Ihrem Zielsystem sicherzustellen."
             }
         },
         "js": {
@@ -232,11 +232,11 @@
             "feature3_desc": "Schnelle Konvertierung mit sofortigem Download der CSV-Dateien."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Häufig gestellte Fragen",
+            "q1": "Werden Formeln in CSV konvertiert?",
+            "a1": "Das CSV-Format unterstützt nur Klartextwerte. Bei der Konvertierung von Excel in CSV werden Formeln durch ihre berechneten Werte ersetzt. Wenn Sie Formeln beibehalten müssen, bewahren Sie eine Kopie der ursprünglichen Excel-Datei auf.",
+            "q2": "Kann ich mehrere Excel-Tabellen gleichzeitig konvertieren?",
+            "a2": "Jedes Excel-Arbeitsblatt muss separat in CSV konvertiert werden. Wenn Ihre Excel-Datei mehrere Blätter hat, erhalten Sie für jedes Blatt eine separate CSV-Datei, oder Sie können wählen, welches Blatt konvertiert werden soll."
         }
     },
     "google-sheets-to-excel": {
@@ -264,11 +264,11 @@
             "feature3_desc": "Arbeiten Sie ohne Internetverbindung an Ihren Tabellen."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Häufig gestellte Fragen",
+            "q1": "Muss ich zuerst von Google Sheets herunterladen?",
+            "a1": "Ja, Sie müssen Ihr Google Sheet zuerst als Excel-Datei (.xlsx) oder CSV herunterladen. Gehen Sie in Google Sheets zu Datei > Herunterladen > Microsoft Excel (.xlsx), um die Datei für die Konvertierung zu erhalten.",
+            "q2": "Funktionieren Google Sheets-Formeln in Excel?",
+            "a2": "Die meisten gängigen Formeln (SUMME, MITTELWERT, WENN, SVERWEIS) sind zwischen Google Sheets und Excel kompatibel. Einige Google-spezifische Funktionen funktionieren jedoch möglicherweise nicht in Excel und müssen angepasst werden."
         }
     },
     "tsv-to-csv-converter": {
@@ -436,11 +436,11 @@
             "feature3_desc": "Das XLSX-Format bietet eine bessere Sicherheit und Wiederherstellung nach Beschädigungen."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Häufig gestellte Fragen",
+            "q1": "Was ist der Unterschied zwischen XLS und XLSX?",
+            "a1": "XLS ist das ältere Excel-Format (Excel 97-2003) mit einer Begrenzung von 65.536 Zeilen. XLSX ist das moderne XML-basierte Format (Excel 2007+) mit 1.048.576 Zeilen, besserer Komprimierung und verbesserter Sicherheit. Die Konvertierung zu XLSX wird für bessere Kompatibilität empfohlen.",
+            "q2": "Werden Makros bei der Konvertierung von XLS zu XLSX beibehalten?",
+            "a2": "Ja, Makros und VBA-Code werden während der Konvertierung beibehalten. Wenn Ihre Datei jedoch Makros enthält, speichern Sie sie als .XLSM (makrofähig) anstelle von .XLSX, um sicherzustellen, dass Makros funktionsfähig bleiben."
         }
     },
     "xlsx-to-xls": {
@@ -468,11 +468,12 @@
             "feature3_desc": "Schnelle Verarbeitung mit sofortigem Download."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Häufig gestellte Fragen",
+            "q1": "Warum sollte ich XLSX zurück in XLS konvertieren?",
+            "a1": "Die Konvertierung in das XLS-Format ist nützlich für die Kompatibilität mit älteren Excel-Versionen (Excel 97-2003) oder Legacy-Systemen, die das neuere XLSX-Format nicht unterstützen. XLS hat jedoch Einschränkungen wie weniger Zeilen und größere Dateigrößen.",
+            "q2": "Verliere ich Daten bei der Konvertierung von XLSX zu XLS?",
+            "a2": "Wenn Ihre XLSX-Datei mehr als 65.536 Zeilen oder 256 Spalten hat, werden die Daten beim Konvertieren in das XLS-Format abgeschnitten. Außerdem werden einige neuere Excel-Funktionen möglicherweise nicht im älteren XLS-Format unterstützt."
         }
-    }
+    },
+    "csv-to-excel.content.step3_desc": "Laden Sie Ihre konvertierte Excel-Datei (.xlsx) sofort herunter, wobei die Daten ordnungsgemäß in Spalten organisiert sind."
 }

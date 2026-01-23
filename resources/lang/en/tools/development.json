@@ -146,8 +146,8 @@
             },
             "label_indent": "Indentation",
             "indents": {
-                "2": "",
-                "4": "",
+                "2": "2 Spaces",
+                "4": "4 Spaces",
                 "tab": "Tab"
             },
             "btn_format": "Format Code",
@@ -391,7 +391,7 @@
                 "2": "<strong>View Results:</strong> See the processed CSS in the output field with compression stats",
                 "3": "<strong>Copy:</strong> Click \"Copy\" to copy the minified CSS to your clipboard",
                 "4": "<strong>Use in Production:</strong> Replace your original CSS file with the minified version",
-                "5": ""
+                "5": "Download or copy the minified CSS and use it in your production website to reduce file size and improve load times."
             },
             "best_practices_title": "💡 Best Practices",
             "best_practices_list": {
@@ -399,7 +399,7 @@
                 "2": "<strong>Combine files:</strong> Merge multiple CSS files before minifying for better compression",
                 "3": "<strong>Test thoroughly:</strong> Always test minified CSS to ensure no functionality is broken",
                 "4": "<strong>Use build tools:</strong> Integrate minification into your build process for automation",
-                "5": ""
+                "5": "Keep an unminified version for development and debugging purposes."
             },
             "faq_title": "❓ Frequently Asked Questions",
             "faq": {
@@ -525,7 +525,7 @@
                 "1": "Paste your HTML or text in the input field",
                 "2": "Click the process button to convert",
                 "3": "Copy the result to clipboard",
-                "4": ""
+                "4": "Copy the encoded/decoded result and use it in your HTML, XML, or web applications."
             },
             "examples_title": "ðŸ’¡ HTML Encoding Examples",
             "examples": {
@@ -538,8 +538,8 @@
                     "code": "Tom & Jerry â†’ Tom &amp; Jerry"
                 },
                 "3": {
-                    "title": "",
-                    "code": ""
+                    "title": "Encoding Special Characters",
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
                 }
             },
             "faq_title": "â“ Frequently Asked Questions",
@@ -596,7 +596,7 @@
                 "1": "Click \"Minify HTML\" to compress the code",
                 "2": "Click \"Beautify HTML\" to format with indentation",
                 "3": "Copy the output using \"Copy Output\" button",
-                "4": ""
+                "4": "Use the minified HTML in your production environment to reduce bandwidth and improve page load speed."
             },
             "faq_title": "Frequently Asked Questions",
             "faq": {
@@ -648,7 +648,7 @@
                 "3": "✅ <strong>No Installation:</strong> Works directly in your browser",
                 "4": "✅ <strong>Free Forever:</strong> 100% free with no limitations",
                 "5": "✅ <strong>Privacy First:</strong> All conversion happens locally in your browser",
-                "6": ""
+                "6": "Preserves code blocks and syntax highlighting for technical documentation."
             },
             "uses_title": "🎯 Common Use Cases",
             "uses": {
@@ -762,7 +762,7 @@
                 "2": "Use the \"Load Sample\" button to see example HTML code",
                 "3": "Click \"Clear\" to start fresh with a blank editor",
                 "4": "Test different HTML elements and see how they render",
-                "5": ""
+                "5": "Analyze the rendered output and DOM structure to debug layout issues or verify HTML rendering."
             },
             "uses_title": "Common Use Cases",
             "uses_desc": "HTML viewers are essential tools for various web development tasks. Developers use them to quickly test HTML snippets before integrating them into larger projects. Students learning HTML can experiment with different tags and attributes to understand their effects. Email marketers use HTML viewers to preview email templates before sending. Content creators can visualize how their HTML content will appear on websites. Designers can review markup structure and ensure proper rendering of HTML elements.",
@@ -889,8 +889,8 @@
                     "desc": "Click the copy button to copy the formatted JSON to your clipboard"
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "Format or Minify",
+                    "desc": "Choose to beautify (format with indentation) or minify (compress to single line) your JSON data based on your needs."
                 }
             },
             "uses_title": "Common JSON Formatting Use Cases",

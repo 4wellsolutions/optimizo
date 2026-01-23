@@ -3,6 +3,7 @@
 @section('page-title', 'Translation Comparison Report')
 
 @push('styles')
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <style>
     .file-section { background: white; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); margin-bottom: 40px; padding: 25px; overflow-x: auto; }
     h2 { color: #1877f2; border-bottom: 2px solid #e4e6eb; padding-bottom: 15px; margin-bottom: 20px; font-family: monospace; }
@@ -16,11 +17,36 @@
     .text-good { color: #f7b928; }
     .text-poor { color: #fa3e3e; }
     .lang-header { min-width: 60px; }
+    .select2-container .select2-selection--multiple { min-height: 38px; border: 1px solid #ced4da; }
 </style>
 @endpush
 
 @section('content')
 <div class="container-fluid">
+    <div class="card mb-4 shadow-sm border-0">
+        <div class="card-body">
+            <form action="{{ route('admin.languages.report') }}" method="GET" class="row align-items-end">
+                <div class="col-md-10">
+                    <label class="font-weight-bold">Compare Languages</label>
+                    <select class="form-control select2" name="languages[]" multiple="multiple" data-placeholder="Select languages to compare (leave empty for all)">
+                        @foreach($allLocales as $locale)
+                            @if($locale !== 'en')
+                                <option value="{{ $locale }}" {{ in_array($locale, $selectedLanguages) ? 'selected' : '' }}>
+                                    {{ strtoupper($locale) }}
+                                </option>
+                            @endif
+                        @endforeach
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary btn-block">Filter Report</button>
+                    @if(!empty($selectedLanguages))
+                        <a href="{{ route('admin.languages.report') }}" class="btn btn-link btn-block btn-sm mt-1">Reset Filter</a>
+                    @endif
+                </div>
+            </form>
+        </div>
+    </div>
     @foreach ($englishKeys as $fileName => $refKeys)
         @php
             if (strpos($fileName, 'tools') === false && $fileName !== 'en.json') continue;
@@ -79,3 +105,14 @@
     @endforeach
 </div>
 @endsection
+
+@push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.select2').select2({
+            width: '100%'
+        });
+    });
+</script>
+@endpush
