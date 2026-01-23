@@ -104,7 +104,6 @@ if (!function_exists('__tool')) {
             'slug-generator' => 'seo',
             'snake-case-converter' => 'converters',
             'speed-converter' => 'converters',
-            'sql-to-json' => 'development',
             'sql-to-json-converter' => 'development',
             'studly-case-converter' => 'converters',
             'svg-to-jpg-converter' => 'image',

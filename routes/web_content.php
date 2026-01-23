@@ -55,7 +55,6 @@ use App\Http\Controllers\Tools\Development\JsonToYamlConverterController;
 use App\Http\Controllers\Tools\Development\JwtDecoderController;
 use App\Http\Controllers\Tools\Development\MarkdownToHtmlConverterController;
 use App\Http\Controllers\Tools\Development\Md5GeneratorController;
-use App\Http\Controllers\Tools\Development\SqlToJsonController;
 use App\Http\Controllers\Tools\Development\SqlToJsonConverterController;
 use App\Http\Controllers\Tools\Development\UnicodeEncoderDecoderController;
 use App\Http\Controllers\Tools\Development\UrlEncoderDecoderController;
@@ -407,8 +406,6 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::post('curl-command-builder', [CurlCommandBuilderController::class, 'process'])->name($n('development.curl-command-builder.generate'));
     Route::get('json-to-csv-converter', [JsonToCsvConverterController::class, 'index'])->name($n('development.json-to-csv-converter'));
     Route::post('json-to-csv-converter', [JsonToCsvConverterController::class, 'process'])->name($n('development.json-to-csv-converter.generate'));
-    Route::get('sql-to-json', [SqlToJsonController::class, 'index'])->name($n('development.sql-to-json'));
-    Route::post('sql-to-json', [SqlToJsonController::class, 'process'])->name($n('development.sql-to-json.convert'));
     Route::get('xml-to-csv', [XmlToCsvController::class, 'index'])->name($n('development.xml-to-csv'));
     Route::post('xml-to-csv', [XmlToCsvController::class, 'process'])->name($n('development.xml-to-csv.convert'));
     Route::get('xml-to-json', [XmlToJsonController::class, 'index'])->name($n('development.xml-to-json'));
