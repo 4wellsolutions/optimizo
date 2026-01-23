@@ -439,7 +439,7 @@
             "key_ph": "Chiave (es. Authorization)",
             "value_ph": "Valore (es. Bearer token)",
             "add_header": "+ Aggiungi Intestazione",
-            "raw_data_label": "Dati Grezzi (JSON\/Testo)",
+            "raw_data_label": "Dati Grezzi (JSON/Testo)",
             "generated_label": "Comando Generato",
             "btn_copy": "Copia Comando"
         },
@@ -464,7 +464,16 @@
             "ph_decode": "Incolla le tue entità HTML qui (es. &lt;div&gt;Ciao&lt;/div&gt;)...",
             "btn_decode": "Decodifica da Entità",
             "result_title": "Risultato",
-            "btn_copy": "Copia Risultato"
+            "btn_copy": "Copia Risultato",
+            "mode_encode": "Codifica HTML",
+            "mode_decode": "Decodifica HTML",
+            "label_input_encode": "Input HTML",
+            "ph_input_encode": "Inserisci il codice HTML...",
+            "btn_clear": "Clear",
+            "label_output_encode": "Encoded HTML",
+            "ph_output": "Processed HTML will appear here...",
+            "label_input_decode": "Enter HTML to Decode",
+            "label_output_decode": "Decoded HTML"
         },
         "content": {
             "what_title": "Cos'è la codifica HTML?",
@@ -486,29 +495,102 @@
                 "secure": {
                     "title": "Sicurezza",
                     "desc": "Previene il Cross-Site Scripting (XSS) codificando l'input dell'utente"
+                },
+                "copy": {
+                    "title": "Copia Rapida",
+                    "desc": "Copia istantaneamente il risultato con un clic."
+                },
+                "fast": {
+                    "title": "Istantaneo Conversion",
+                    "desc": "Encode or decode HTML in milliseconds"
+                },
+                "bidirectional": {
+                    "title": "Bidirectional",
+                    "desc": "Encode special characters or decode entities back to text"
+                },
+                "privacy": {
+                    "title": "Privacy First",
+                    "desc": "All processing happens in your browser"
+                },
+                "free": {
+                    "title": "100% Gratis",
+                    "desc": "No limits, no registration required"
+                },
+                "safe": {
+                    "title": "Security Focused",
+                    "desc": "Helps prevent XSS vulnerabilities"
                 }
             },
             "how_to": {
-                "title": "Come usare il Codificatore\/Decodificatore HTML",
+                "title": "Come usare il Codificatore/Decodificatore HTML",
                 "step1": "Incolla o digita il tuo testo o le entità HTML nel campo di input.",
                 "step2": "Lo strumento mostrerà istantaneamente il risultato convertito nel campo di output.",
                 "step3": "Usa il pulsante \"Copia\" per copiare il risultato negli appunti."
             },
             "faq_title": "Domande Frequenti",
             "faq": {
-                "q1": "Perché devo codificare l'HTML?",
-                "a1": "La codifica HTML è fondamentale per la sicurezza (prevenire gli attacchi XSS) e per garantire che i browser visualizzino il tuo codice come testo anziché eseguirlo come HTML.",
+                "q1": "Perché codificare l'HTML?",
+                "a1": "Per visualizzare codice in sicurezza senza che venga eseguito dal browser.",
                 "q2": "Quali caratteri vengono codificati?",
                 "a2": "I caratteri comunemente codificati includono <, >, &, \", ', e vari simboli speciali o caratteri non ASCII.",
                 "q3": "I miei dati sono sicuri?",
-                "a3": "Sì, tutta la codifica e decodifica viene eseguita localmente nel tuo browser. I tuoi dati non vengono mai inviati ai nostri server."
+                "a3": "Sì, tutta la codifica e decodifica viene eseguita localmente nel tuo browser. I tuoi dati non vengono mai inviati ai nostri server.",
+                "title": "Domande Frequenti"
+            },
+            "hero_subtitle": "Il miglior strumento per convertire entità HTML",
+            "p1": "Lo strumento gratuito per codificare e decodificare codice HTML istantaneamente nel tuo browser.",
+            "hero_title": "Gratis HTML Encoder & Decoder",
+            "uses_title": "ðŸŽ¯ Common Use Cases",
+            "uses": {
+                "security": {
+                    "title": "ðŸ”’ Security",
+                    "desc": "Sanitize user input to prevent XSS attacks by encoding special characters."
+                },
+                "display": {
+                    "title": "ðŸ’» Code Display",
+                    "desc": "Display raw HTML code on a webpage without it being rendered by the browser."
+                },
+                "data": {
+                    "title": "ðŸ“Š Data Storage",
+                    "desc": "Store content safely in databases without worrying about HTML parsing issues."
+                },
+                "email": {
+                    "title": "ðŸ“§ Email Templates",
+                    "desc": "Ensure special characters render correctly in HTML emails."
+                }
+            },
+            "how_title": "ðŸ“š Come usare Use",
+            "how_steps": {
+                "1": "Paste your HTML or text in the Input field",
+                "2": "Click the process button to Converti",
+                "3": "Copia the Risultato to clipboard",
+                "4": "Copy the encoded/decoded result and use it in your HTML, XML, or web applications."
+            },
+            "examples_title": "ðŸ’¡ HTML Encoding Esempi",
+            "examples": {
+                "1": {
+                    "title": "Quotes:",
+                    "code": "\"Hello\" â†’ &quot;Hello&quot;"
+                },
+                "2": {
+                    "title": "Ampersand:",
+                    "code": "Tom & Jerry â†’ Tom &amp; Jerry"
+                },
+                "3": {
+                    "title": "Encoding Special Characters",
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
+                }
             }
         },
         "js": {
             "error_empty": "Inserisci del testo da elaborare",
             "error_process": "Errore durante l'elaborazione delle entità HTML: ",
             "no_copy": "Nessun testo da copiare",
-            "copied": "Copiato!"
+            "copied": "Copiato!",
+            "success_encode": "âœ“ HTML encoded Successofully",
+            "success_decode": "âœ“ HTML decoded Successofully",
+            "error_no_copy": "No Output to Copia",
+            "success_copy": "âœ“ Copied to clipboard"
         }
     },
     "html-minifier": {
@@ -649,7 +731,9 @@
                         "Tabelle",
                         "Linee Orizzontali",
                         "Codice Inline",
-                        "Collegamenti Automatici"
+                        "Collegamenti Automatici",
+                        "Strikethrough",
+                        "Task Lists"
                     ]
                 }
             },
@@ -675,7 +759,9 @@
                 "q2": "I miei dati sono sicuri?",
                 "a2": "Sì, tutta la conversione avviene direttamente nel tuo browser. Il tuo contenuto non viene mai inviato ai nostri server.",
                 "q3": "Supporta tutti i tag HTML?",
-                "a3": "Supporta tutti i tag HTML standard compatibili con Markdown. Gli elementi di layout complessi come div o span potrebbero essere semplificati."
+                "a3": "Supporta tutti i tag HTML standard compatibili con Markdown. Gli elementi di layout complessi come div o span potrebbero essere semplificati.",
+                "q4": "Can I Converti large HTML files?",
+                "a4": "Yes, there are no size limitations. However, very large files may take a moment to process depending on your browser performance."
             }
         },
         "js": {
@@ -702,7 +788,11 @@
             "btn_download": "Scarica",
             "label_editor": "Editor di Codice",
             "label_preview": "Anteprima Live",
-            "ph_input": "<!-- Il codice HTML va qui -->"
+            "ph_input": "<!-- Il codice HTML va qui -->",
+            "label_input": "HTML Code",
+            "btn_load_sample": "Load Sample",
+            "btn_fullscreen": "Fullscreen",
+            "btn_exit_fullscreen": "Exit Fullscreen"
         },
         "content": {
             "h2": "Visualizzatore HTML Online Gratuito",
@@ -761,13 +851,44 @@
             },
             "faq_title": "Domande Frequenti",
             "faq": {
-                "q1": "Supporta CSS e JavaScript?",
-                "a1": "Sì! Puoi includere i tag <style> e <script> all'interno del tuo codice HTML.",
+                "q1": "È uno strumento sicuro?",
+                "a1": "Sì, l'anteprima viene renderizzata nel tuo browser in modo isolato.",
                 "q2": "Posso usare librerie esterne come Bootstrap?",
                 "a2": "Sì, puoi collegarti a file CSS o JS esterni utilizzando i tag HTML standard.",
                 "q3": "Funziona offline?",
-                "a3": "Una volta caricata la pagina, il visualizzatore funziona interamente nel tuo browser senza bisogno di un server."
-            }
+                "a3": "Una volta caricata la pagina, il visualizzatore funziona interamente nel tuo browser senza bisogno di un server.",
+                "title": "Domande Frequenti",
+                "q4": "Can I use this tool for learning HTML?",
+                "a4": "Absolutely! Our HTML viewer is perfect for learning HTML. You can experiment with different tags, attributes, and structures to see how they render.",
+                "q5": "What's the difference between an HTML viewer and a code editor?",
+                "a5": "An HTML viewer focuses on previewing and visualizing HTML code in real-time, while a code editor provides advanced features (syntax highlighting, debugging) and is better for full-scale development."
+            },
+            "how_steps": {
+                "1": "Incolla il codice HTML",
+                "2": "Visualizza anteprima",
+                "3": "Controlla elementi",
+                "4": "Pulisci codice",
+                "5": "Copia risultato"
+            },
+            "basics_title": "Basi dell'HTML",
+            "basics_desc": "Impara come visualizzare il codice HTML istantaneamente.",
+            "tips_title": "Suggerimenti Utili",
+            "tips_desc": "Migliora la tua esperienza di visualizzazione.",
+            "about_title": "What is an HTML Viewer?",
+            "about_desc": "An HTML Viewer is a powerful online tool that allows you to preview and visualize HTML code in real-time. Whether you're a web developer testing code snippets, a student learning HTML, or a designer reviewing markup, our HTML viewer provides instant visual feedback for your HTML code. Simply paste your HTML code into the editor, and see the rendered output immediately in the live preview pane.",
+            "why_title": "Why Use Our HTML Viewer?",
+            "why_desc": "Our free HTML viewer offers several advantages for developers and designers. First, it provides instant visual feedback without needing to create files or set up a development environment. Second, it's completely browser-based, meaning you can use it anywhere without installing software. Third, it's perfect for quick testing, debugging, and learning HTML. The side-by-side view lets you see your code and its output simultaneously, making it easier to understand how HTML elements render.",
+            "features_list": {
+                "preview": "<strong>Real-Time Preview:</strong> See your HTML rendered instantly as you type",
+                "layout": "<strong>Side-by-Side View:</strong> Code editor and preview pane displayed together",
+                "syntax": "<strong>Syntax Highlighting:</strong> Easy-to-read code with color-coded syntax",
+                "sample": "<strong>Sample Code:</strong> Load example HTML to get started quickly",
+                "no_install": "<strong>No Installation Required:</strong> Works directly in your browser",
+                "free": "<strong>Free to Use:</strong> No registration or payment required",
+                "secure": "<strong>Secure:</strong> All processing happens in your browser"
+            },
+            "how_title": "Come usare Use the HTML Viewer",
+            "uses_desc": "HTML viewers are essential tools for various web development tasks. Developers use them to quickly test HTML snippets before integrating them into larger projects. Students learning HTML can experiment with different tags and attributes to understand their effects. Email marketers use HTML viewers to preview email templates before sending. Content creators can visualize how their HTML content will appear on websites. Designers can review markup structure and ensure proper rendering of HTML elements."
         },
         "js": {
             "error_empty": "Inserisci del codice HTML",
@@ -932,7 +1053,8 @@
                 "a3": "Lo strumento richiede una struttura JSON valida per la formattazione o la minificazione. Tuttavia, fornisce messaggi di errore dettagliati per aiutarti a individuare e risolvere i problemi nei tuoi dati JSON.",
                 "q4": "Supporta file JSON di grandi dimensioni?",
                 "a4": "Sì, lo strumento è ottimizzato per gestire in modo efficiente dataset JSON di grandi dimensioni, sebbene i file estremamente grandi possano dipendere dai limiti di memoria del tuo browser."
-            }
+            },
+            "how_title": "Come usare Format JSON in 3 Easy Passaggios"
         },
         "js": {
             "error_empty_format": "Inserisci i dati JSON da formattare",

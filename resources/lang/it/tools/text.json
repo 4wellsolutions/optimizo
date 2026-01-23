@@ -105,26 +105,105 @@
                 },
                 "instant": {
                     "title": "Decodifica Istantanea",
-                    "desc": "Conversione in pochi millisecondi"
+                    "desc": "Converti Morse in testo in millisecondi"
                 },
                 "privacy": {
                     "title": "Privacy Protetta",
-                    "desc": "Tutte le operazioni avvengono nel tuo browser"
+                    "desc": "Tutta l'elaborazione avviene nel tuo browser"
+                },
+                "bulk": {
+                    "title": "Decodifica di Massa",
+                    "desc": "Decodifica più parole contemporaneamente"
+                },
+                "alphanum": {
+                    "title": "Lettere e Numeri",
+                    "desc": "Decodifica A-Z e 0-9"
+                },
+                "free": {
+                    "title": "100% Gratuito",
+                    "desc": "Nessun limite o registrazione richiesta"
                 }
-            }
+            },
+            "faq": {
+                "q1": "Come formattare l'input Morse?",
+                "a1": "Separa ogni lettera con uno spazio. Usa / per gli spazi tra le parole.",
+                "q2": "E se faccio un errore?",
+                "a2": "I pattern Morse non validi verranno saltati.",
+                "q3": "Posso decodificare i numeri?",
+                "a3": "Sì! Lo strumento decodifica i numeri da 0 a 9.",
+                "q4": "Come separo le parole?",
+                "a4": "Usa una barra (/) per separare le parole in codice Morse.",
+                "q5": "Questo strumento è gratuito?",
+                "a5": "Sì! Completamente gratuito e senza limiti."
+            },
+            "how_title": "Come Decodificare il Morse",
+            "examples_title": "Esempi di Codice Morse",
+            "faq_title": "Domande Frequenti sul Morse",
+            "how_steps": {
+                "1": {
+                    "title": "Inserisci il Codice",
+                    "desc": "Scrivi o incolla il codice Morse."
+                },
+                "5": {
+                    "title": "Copia",
+                    "desc": "Salva il testo tradotto."
+                },
+                "2": {
+                    "title": "Click Decode:",
+                    "desc": "Press \"Decode to Text\" button"
+                },
+                "3": {
+                    "title": "Review Output:",
+                    "desc": "Check the decoded text Risultato"
+                },
+                "4": {
+                    "title": "Copia Risultato:",
+                    "desc": "Click \"Copia\" to Copia to clipboard"
+                }
+            },
+            "uses": {
+                "edu": {
+                    "title": "Istruzione",
+                    "desc": "Teach students about communication and encoding systems"
+                },
+                "radio": {
+                    "title": "Radioamatori",
+                    "desc": "Decode amateur radio transmissions and practice CW"
+                },
+                "learn": {
+                    "title": "📚 Learning Morse Code",
+                    "desc": "Practice decoding Morse code to improve your skills"
+                },
+                "decode": {
+                    "title": "🔓 Decoding Messages",
+                    "desc": "Decode Morse code messages from friends or puzzles"
+                },
+                "games": {
+                    "title": "🎮 Gaming & Puzzles",
+                    "desc": "Solve Morse code puzzles in games and escape rooms"
+                },
+                "emergency": {
+                    "title": "🚨 Emergency Signals",
+                    "desc": "Decode distress signals and emergency communications"
+                }
+            },
+            "uses_title": "🎯 Common Use Cases",
+            "samples": []
         },
         "js": {
             "error_empty": "Inserisci il codice Morse da decodificare",
             "success_decode": "Decodifica completata !",
-            "success_copy": "Copiato negli appunti!"
+            "success_copy": "Copiato negli appunti!",
+            "error_no_copy": "Niente da copiare! Decodifica prima del codice Morse.",
+            "error_copy": "Nothing to copy! Please decode some Morse code first."
         }
     },
     "text-reverser": {
         "meta": {
-            "title": "Invertitore di Testo - Inverti Testo Online",
-            "description": "Inverti il tuo testo istantaneamente. Crea testi a specchio per divertimento o messaggi segreti.",
+            "title": "Invertitore di Testo - Strumento Online Gratuito",
+            "description": "Strumento gratuito per invertire il testo. Veloce, sicuro e facile da usare per invertire frasi, parole o lettere.",
             "h1": "Invertitore di Testo",
-            "subtitle": "Rovescia i tuoi testi con un clic"
+            "subtitle": "Il miglior invertitore di testo per sviluppatori e creativi"
         },
         "editor": {
             "label_input": "Testo da invertire",
@@ -136,12 +215,105 @@
             "ph_output": "odnoM oaiC"
         },
         "content": {
-            "p1": "Inverti il tuo testo all'istante. Questo strumento rovescia il testo carattere per carattere, creando una versione speculare."
+            "p1": "Inverti istantaneamente il tuo testo con il nostro strumento gratuito. Perfetto per puzzle, codifica o semplicemente per divertimento.",
+            "features": {
+                "char": {
+                    "title": "Inversione dei Caratteri",
+                    "desc": "Inverte il testo carattere per carattere"
+                },
+                "instant": {
+                    "title": "Risultati Istantanei",
+                    "desc": "Inverti in pochi millisecondi"
+                },
+                "privacy": {
+                    "title": "Privacy Protetta",
+                    "desc": "Tutta l'elaborazione avviene nel tuo browser"
+                },
+                "bulk": {
+                    "title": "Elaborazione di Massa",
+                    "desc": "Inverti più righe contemporaneamente"
+                },
+                "formatting": {
+                    "title": "Conserva la Formattazione",
+                    "desc": "Mantiene spazi e caratteri speciali"
+                },
+                "free": {
+                    "title": "100% Gratuito",
+                    "desc": "Nessun limite o registrazione richiesta"
+                }
+            },
+            "uses_title": "Casi d'Uso Comuni",
+            "uses": {
+                "puzzles": {
+                    "title": "Puzzle e Giochi",
+                    "desc": "Crea divertenti enigmi di parole"
+                },
+                "encoding": {
+                    "title": "Codifica Semplice",
+                    "desc": "Crea messaggi in codice di base"
+                },
+                "palindrome": {
+                    "title": "Test Palindromi",
+                    "desc": "Verifica se una parola si legge uguale al contrario"
+                },
+                "creative": {
+                    "title": "Scrittura Creativa",
+                    "desc": "Aggiungi un tocco artistico ai tuoi testi"
+                },
+                "social": {
+                    "title": "Social Media",
+                    "desc": "Crea post unici e accattivanti"
+                },
+                "testing": {
+                    "title": "Testing",
+                    "desc": "Testa le tue funzioni di manipolazione stringhe"
+                }
+            },
+            "how_to": {
+                "title": "Come si usa",
+                "list": [
+                    "Inserisci o incolla il tuo testo nell'area di input.",
+                    "Scegli se invertire tutto o riga per riga.",
+                    "Clicca sul pulsante Inverti.",
+                    "Copia il risultato invertito."
+                ],
+                "step1": "Inserisci Testo",
+                "step1_desc": "Digita o incolla il tuo testo",
+                "step2": "Clicca Inverti",
+                "step2_desc": "Premi il pulsante per trasformare",
+                "step3": "Controlla Risultato",
+                "step3_desc": "Verifica il testo invertito",
+                "step4": "Copia",
+                "step4_desc": "Copia negli appunti con un clic",
+                "step5": "Utilizza",
+                "step5_desc": "Incolla dove preferisci il tuo testo"
+            },
+            "examples_title": "Esempi di Utilizzo",
+            "examples": {
+                "simple": "Testo Semplice",
+                "phrases": "Frasi Complesse",
+                "palindromes": "Palindromi",
+                "numbers": "Sequenze Numeriche"
+            },
+            "faq_title": "Domande Frequenti",
+            "faq": {
+                "q1": "Come funziona l'invertitore?",
+                "a1": "L'indice dei caratteri viene invertito ciclicamente per produrre l'ordine inverso.",
+                "q2": "Mantiene gli spazi?",
+                "a2": "Sì, tutti gli spazi e i caratteri speciali vengono preservati nella loro nuova posizione.",
+                "q3": "Posso invertire intere frasi?",
+                "a3": "Certamente, puoi invertire lunghi testi o singole parole.",
+                "q4": "Cosa sono i palindromi?",
+                "a4": "Parole o frasi che si leggono allo stesso modo in entrambi i sensi.",
+                "q5": "È sicuro per i miei dati?",
+                "a5": "Assolutamente, nulla viene salvato sui nostri server."
+            }
         },
         "js": {
             "error_empty": "Inserisci del testo da invertire",
             "success_reverse": "Testo invertito con successo!",
-            "success_copy": "Copiato!"
+            "success_copy": "Copiato!",
+            "error_no_copy": "Niente da copiare!"
         }
     },
     "text-to-morse-converter": {
@@ -163,7 +335,97 @@
         "js": {
             "error_empty": "Inserisci del testo da convertire",
             "success_convert": "Convertito in Morse con successo!",
-            "success_copy": "Copiato!"
+            "success_copy": "Copiato!",
+            "error_no_copy": "Niente da copiare! Converti prima del testo."
+        },
+        "content": {
+            "features": {
+                "standard": {
+                    "title": "Codice Morse Standard",
+                    "desc": "Utilizza lo standard internazionale del codice Morse"
+                },
+                "instant": {
+                    "title": "Codifica Istantanea",
+                    "desc": "Converti in codice Morse in millisecondi"
+                },
+                "privacy": {
+                    "title": "Privacy Protetta",
+                    "desc": "Tutta l'elaborazione avviene nel tuo browser"
+                },
+                "bulk": {
+                    "title": "Elaborazione di Massa",
+                    "desc": "Converti più parole contemporaneamente"
+                },
+                "alphanumeric": {
+                    "title": "Lettere e Numeri",
+                    "desc": "Supporta A-Z e 0-9"
+                },
+                "free": {
+                    "title": "100% Gratuito",
+                    "desc": "Nessun limite o registrazione richiesta"
+                }
+            },
+            "uses": {
+                "learning": {
+                    "title": "Imparare il Codice Morse",
+                    "desc": "Esercitati e impara il codice Morse convertendo parole e frasi familiari"
+                },
+                "emergency": {
+                    "title": "Pratica di Emergenza",
+                    "desc": "Impara il SOS e altri segnali di emergenza in codice Morse"
+                },
+                "gaming": {
+                    "title": "Gaming e Puzzle",
+                    "desc": "Crea messaggi codificati per giochi ed escape room"
+                },
+                "radio": {
+                    "title": "Radioamatore",
+                    "desc": "Pratica per la licenza di radioamatore e le comunicazioni"
+                },
+                "edu": {
+                    "title": "Istruzione",
+                    "desc": "Insegna agli studenti la storia della comunicazione e della codifica"
+                },
+                "secret": {
+                    "title": "Messaggi Segreti",
+                    "desc": "Crea divertenti messaggi codificati per gli amici"
+                }
+            },
+            "how_to": {
+                "title": "Come usare",
+                "step1": "Inserisci il Testo",
+                "step1_desc": "Digita il testo che desideri convertire",
+                "step2": "Clicca su Converti",
+                "step2_desc": "Premi \"Converti in Codice Morse\"",
+                "step3": "Controlla l'Output",
+                "step3_desc": "Verifica il risultato in codice Morse",
+                "step4": "Copia il Risultato",
+                "step4_desc": "Clicca su \"Copia\" per copiare negli appunti",
+                "step5": "Usa il Codice Morse",
+                "step5_desc": "Condividi o esercitati con il messaggio codificato"
+            },
+            "examples_title": "Esempi di Conversione",
+            "examples": {
+                "sos": "Segnale SOS:",
+                "word": "Parola Semplice:",
+                "numbers": "Numeri:",
+                "phrase": "Frase:"
+            },
+            "faq": {
+                "q1": "Cos'è il codice Morse?",
+                "a1": "Il codice Morse è un metodo di codifica del testo che utilizza punti (.) e linee (-) per rappresentare lettere e numeri.",
+                "q2": "Cosa significa SOS in codice Morse?",
+                "a2": "SOS è ... --- ... (tre punti, tre linee, tre punti). È il segnale di soccorso internazionale.",
+                "q3": "Posso convertire i numeri?",
+                "a3": "Sì! Lo strumento supporta i numeri da 0 a 9.",
+                "q4": "Il codice Morse è ancora usato oggi?",
+                "a4": "Sì! È ancora utilizzato in aviazione, comunicazioni marittime, radioamatori e come strumento di accessibilità.",
+                "q5": "Questo strumento è gratuito?",
+                "a5": "Sì! Completamente gratuito e senza limiti."
+            },
+            "p1": "Converti istantaneamente testo in codice Morse con il nostro strumento gratuito. Inserisci lettere e numeri per ottenere la codifica internazionale in punti e linee.",
+            "uses_title": "Casi d'Uso Comuni",
+            "faq_title": "FAQ sul Codice Morse"
         }
     },
     "word-counter": {
@@ -187,6 +449,27 @@
             "short_sentences": "Frasi brevi",
             "chars_no_spaces": "Caratteri (senza spazi)",
             "avg_word_length": "Lunghezza media parole"
+        },
+        "content": {
+            "main_title": "Strumento Contatore di Parole Gratuito",
+            "main_description": "Conta parole, caratteri, frasi e paragrafi istantaneamente. Perfetto per scrittori, studenti e creatori di contenuti SEO.",
+            "intro": "Il nostro strumento contatore di parole fornisce statistiche in tempo reale sul tuo testo, tra cui numero di parole, numero di caratteri, numero di frasi, tempo di lettura e altro ancora.",
+            "features_title": "Caratteristiche",
+            "feature1_title": "Conteggio in Tempo Reale",
+            "feature1_desc": "Visualizza il conteggio di parole e caratteri aggiornarsi istantaneamente mentre digiti o incolli il testo.",
+            "feature2_title": "Stima del Tempo di Lettura",
+            "feature2_desc": "Calcola quanto tempo occorre per leggere i tuoi contenuti in base alla velocità media di lettura.",
+            "feature3_title": "Analisi delle Frasi",
+            "feature3_desc": "Identifica frasi lunghe e brevi per migliorare la leggibilità e la scorrevolezza.",
+            "feature4_title": "Ottimizzazione SEO",
+            "feature4_desc": "Monitora i limiti di caratteri per meta descrizioni, titoli e post sui social media.",
+            "faq_title": "Domande Frequenti",
+            "faq1_q": "Quanto è accurato il conteggio delle parole?",
+            "faq1_a": "Il nostro contatore di parole utilizza algoritmi standard del settore per contare le parole in modo accurato.",
+            "faq2_q": "Cosa è considerata una \"frase lunga\"?",
+            "faq2_a": "Una frase con più di 20 parole è tipicamente considerata lunga.",
+            "faq3_q": "Come viene calcolato il tempo di lettura?",
+            "faq3_a": "Il tempo di lettura è calcolato in base a una velocità media di lettura di 200-250 parole al minuto."
         }
     }
 }

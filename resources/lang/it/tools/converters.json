@@ -1102,7 +1102,13 @@
             "unit_GB": "Gigabyte (GB)",
             "unit_TB": "Terabyte (TB)",
             "unit_PB": "Petabyte (PB)",
-            "to_label": "A"
+            "to_label": "A",
+            "unit_bit": "Bit (b)",
+            "unit_byte": "Byte (B)",
+            "unit_kb": "Kilobyte (KB)",
+            "unit_mb": "Megabyte (MB)",
+            "unit_gb": "Gigabyte (GB)",
+            "unit_tb": "Terabyte (TB)"
         },
         "content": {
             "feature1_title": "Unità di Archiviazione Binarie",
@@ -1729,20 +1735,24 @@
             "how_title": "Come Convertire",
             "how_steps": {
                 "1": {
-                    "title": "Fai clic su Converti",
-                    "desc": "Premi \"Converti in PascalCase\"."
+                    "title": "Inserisci Testo",
+                    "desc": "Digita o incolla il tuo testo."
                 },
                 "2": {
-                    "title": "Controlla l'Output",
-                    "desc": "Verifica il risultato in PascalCase."
+                    "title": "Scegli Opzioni",
+                    "desc": "Seleziona le impostazioni di formattazione."
                 },
                 "3": {
-                    "title": "Copia il Risultato",
-                    "desc": "Fai clic sul pulsante \"Copia\"."
+                    "title": "Converti",
+                    "desc": "Clicca sul pulsante per generare il PascalCase."
                 },
                 "4": {
-                    "title": "Usa nel Codice",
-                    "desc": "Incolla nel tuo progetto."
+                    "title": "Controlla",
+                    "desc": "Verifica il risultato."
+                },
+                "5": {
+                    "title": "Copia",
+                    "desc": "Salva il risultato negli appunti."
                 }
             },
             "examples_title": "Esempi",
@@ -1906,7 +1916,98 @@
             "faq_q3": "Cosa significa #000000?",
             "faq_a3": "#000000 rappresenta il colore nero, dove i valori di rosso, verde e blu sono tutti impostati a zero.",
             "faq_q4": "Perché i web designer preferiscono HEX?",
-            "faq_a4": "I codici HEX sono compatti, facili da copiare e sono stati il metodo standard per definire i colori nel codice HTML e CSS fin dalle origini del web."
+            "faq_a4": "I codici HEX sono compatti, facili da copiare e sono stati il metodo standard per definire i colori nel codice HTML e CSS fin dalle origini del web.",
+            "p1": "Converti facilmente i colori tra i sistemi RGB ed Esadecimale.",
+            "formats_title": "Formati Supportati",
+            "formats": {
+                "rgb": {
+                    "title": "RGB (Red, Green, Blue)",
+                    "format": "Format",
+                    "format_val": "rgb(red, green, blue)",
+                    "range": "Range",
+                    "range_val": "0-255 for each channel",
+                    "used_in": "Commonly Used In",
+                    "used_in_val": "Digital screens, monitors, TV"
+                },
+                "hex": {
+                    "title": "HEX (Hexadecimal)",
+                    "format": "Format",
+                    "format_val": "#RRGGBB",
+                    "range": "Range",
+                    "range_val": "00-FF for each channel (hex)",
+                    "used_in": "Commonly Used In",
+                    "used_in_val": "Web design, CSS, HTML"
+                }
+            },
+            "why_title": "Why Converti Between RGB and HEX?",
+            "why_list": [
+                {
+                    "title": "Web Standards",
+                    "desc": "HEX is the most used format in CSS for defining website colors."
+                },
+                {
+                    "title": "Universal Matching",
+                    "desc": "Ensure consistent colors across different design tools and platforms."
+                },
+                {
+                    "title": "Ease of Use",
+                    "desc": "Quickly get HEX codes from RGB values for efficient styling."
+                }
+            ],
+            "how_work_title": "How Color Conversion Works",
+            "how_work_t1": "RGB to HEX",
+            "how_work_p1": "Each color channel (R, G, B) is converted from a 0-255 decimal to a 00-FF hexadecimal value.",
+            "how_work_t2": "HEX to RGB",
+            "how_work_p2": "The hex string is split into pairs and each pair is converted back to a 0-255 decimal value.",
+            "uses_title": "Common Use Cases",
+            "uses": {
+                "web": {
+                    "title": "Web Development",
+                    "desc": "Convert design mockup colors (RGB) to CSS-ready HEX codes for websites"
+                },
+                "graphic": {
+                    "title": "Graphic Design",
+                    "desc": "Match colors between Adobe Photoshop (RGB) and web design tools (HEX)"
+                },
+                "brand": {
+                    "title": "Brand Guidelines",
+                    "desc": "Document brand colors in both formats for print (RGB) and web (HEX)"
+                }
+            },
+            "practices_title": "Color Format Best Practices",
+            "practices_list": [
+                "Use HEX for compact CSS file sizes.",
+                "Use RGB (specifically RGBA) when you need opacity/transparency.",
+                "Stick to one format within a single project for consistency."
+            ],
+            "pro_tip_title": "💡 Pro Tip",
+            "pro_tip_desc": "HEX shorthand: Colors like #FF0000 can be shortened to #F00 when each pair of digits is identical.",
+            "faq": {
+                "q1": "What's the difference between RGB and HEX?",
+                "a1": "RGB uses decimal numbers (0-255) for each color channel, while HEX uses hexadecimal (00-FF).",
+                "q2": "Can I use RGB in CSS?",
+                "a2": "Yes! CSS supports both rgb(255, 0, 0) and #FF0000.",
+                "q3": "What does the # symbol mean in HEX codes?",
+                "a3": "The # symbol indicates that the following characters are a hexadecimal color code.",
+                "q4": "Are 3-digit and 6-digit HEX codes the same?",
+                "a4": "3-digit HEX codes are shorthand for 6-digit codes where each digit is doubled."
+            }
+        },
+        "editor": {
+            "rgb_to_hex": "Da RGB a HEX",
+            "label_red": "Rosso (R)",
+            "label_green": "Verde (G)",
+            "label_blue": "Blu (B)",
+            "btn_convert": "Converti",
+            "hex_output": "Risultato HEX",
+            "label_hex": "Codice HEX",
+            "hex_to_rgb": "Da HEX a RGB",
+            "label_hex_input": "Inserisci HEX",
+            "ph_hex": "es. #FFFFFF",
+            "label_rgb_output": "Risultato RGB"
+        },
+        "js": {
+            "invalid_hex": "Invalid HEX"
         }
     },
     "sentence-case-converter": {
@@ -2085,6 +2186,14 @@
                 "free": {
                     "title": "Gratuito",
                     "desc": "Uso illimitato senza necessità di registrazione."
+                },
+                "bulk": {
+                    "title": "Bulk Processing",
+                    "desc": "Converti multiple names at once."
+                },
+                "smart": {
+                    "title": "Smart Formatting",
+                    "desc": "Automatically handles spaces and special characters."
                 }
             },
             "uses_title": "Quando Usare lo Snake Case",
@@ -2112,6 +2221,18 @@
                 "config": {
                     "title": "⚙️ File di Configurazione",
                     "desc": "Ideale per chiavi in file .env e file YAML."
+                },
+                "ruby": {
+                    "title": "Ruby Development",
+                    "desc": "Follow Ruby naming conventions for variables and methods."
+                },
+                "data": {
+                    "title": "📊 Data Science",
+                    "desc": "Format column names in pandas DataFrames and CSV files"
+                },
+                "api": {
+                    "title": "🔧 API Parameters",
+                    "desc": "Create consistent parameter names for REST APIs"
                 }
             },
             "how_title": "Come Convertire",
@@ -2156,13 +2277,52 @@
                 "a4": "Perché l'uso degli underscore fa scivolare le parole insieme a terra, come un serpente.",
                 "q5": "Lo strumento è sicuro?",
                 "a5": "Sì, i tuoi dati non lasciano mai il tuo browser. Tutto è elaborato localmente tramite JavaScript."
+            },
+            "how_to_title": "Come usare Use",
+            "how_to_steps": [
+                {
+                    "title": "Paste Text",
+                    "desc": "Paste your text in the Input box."
+                },
+                {
+                    "title": "Converti",
+                    "desc": "The converter replaces spaces and hyphens with underscores."
+                },
+                {
+                    "title": "Lowercase",
+                    "desc": "It Convertis all characters to lowercase."
+                },
+                {
+                    "title": "Cleanup",
+                    "desc": "Consecutive underscores are reduced to one."
+                },
+                {
+                    "title": "Risultato",
+                    "desc": "The snake_case Risultato is ready to use."
+                }
+            ],
+            "examples": {
+                "var": {
+                    "title": "Variable Names:"
+                },
+                "func": {
+                    "title": "Function Names:"
+                },
+                "db": {
+                    "title": "Database Columns:"
+                },
+                "config": {
+                    "title": "Config Keys:"
+                }
             }
         },
         "js": {
             "error_empty": "Inserisci del testo da convertire",
             "success_convert": "✓ Convertito in snake_case con successo!",
             "error_copy": "Niente da copiare! Converti prima del testo.",
-            "success_copy": "✓ Copiato negli appunti!"
+            "success_copy": "✓ Copiato negli appunti!",
+            "success_converted": "✓ Convertied to snake_case Successofully!",
+            "error_no_copy": "Nothing to Copia! Please Converti some text first."
         }
     },
     "speed-converter": {
@@ -2602,6 +2762,34 @@
             "faq_a3": "Una tonnellata metrica è uguale a 1.000 chilogrammi o circa 2.204,6 libbre. È leggermente più grande di una tonnellata corta statunitense (2.000 lb) ed è comunemente usata nelle spedizioni internazionali.",
             "faq_q4": "Perché si usa ancora l'unità stone?",
             "faq_a4": "Lo stone (14 libbre) è ancora comunemente usato nel Regno Unito e in Irlanda per misurare il peso corporeo. Sebbene non faccia parte del sistema metrico, rimane popolare per le misurazioni del peso personale in queste regioni."
+        }
+    },
+    "color-converter": {
+        "meta": {
+            "title": "Convertitore di colori - Converti HEX, RGB, HSL",
+            "desc": "Converti facilmente i codici colore tra i formati HEX, RGB, HSL e altri.",
+            "h1": "Convertitore di colori"
+        }
+    },
+    "morse-to-text-converter": {
+        "js": {
+            "error_copy": "Niente da copiare! Decodifica prima il codice."
+        },
+        "content": {
+            "how_steps": {
+                "1": {
+                    "title": "Input Morse"
+                },
+                "5": {
+                    "desc": "Usa il testo tradotto ovunque."
+                }
+            },
+            "faq": {
+                "q1": "Come inserire il codice?",
+                "a1": "Usa punti e linee con spazi tra le lettere.",
+                "q2": "È gratuito?",
+                "a2": "Sì, completamente gratuito."
+            }
         }
     }
 }
