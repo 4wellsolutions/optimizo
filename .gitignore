@@ -23,9 +23,5 @@ Homestead.json
 Homestead.yaml
 Thumbs.db
 
-# Ignore specific generated files in public
-/public/.htaccess
-/public/robots.txt
-/public/sitemap*.xml
-/public/ads.txt
-/public/index.php
+# Ignore entire public directory (server-specific files)
+/public/
