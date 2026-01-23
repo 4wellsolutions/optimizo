@@ -1635,7 +1635,7 @@
             "error_no_copy": "Nu există HTML de copiat. Te rugăm să convertești Markdown mai întâi.",
             "success_copy": "✓ HTML copiat în clipboard!",
             "error_no_download": "Nu există HTML de descărcat. Te rugăm să convertești Markdown mai întâi.",
-            "example": "# Bine ai venit la Markdown\n\n## Acesta este un subtitlu\n\nAcesta este un paragraf cu **text îngroșat** și *text cursiv*.\n\n### Caracteristici\n\n- Ușor de scris\n- Ușor de citit\n- Se convertește în HTML\n\n### Exemplu de Cod\n\n```javascript\nfunction salut() {\n    console.log(\"Salut, lume!\");\n}\n```\n\n> Acesta este un citat\n\n[Vizitează site-ul nostru](https:\/\/example.com)"
+            "example": "# Bine ai venit la Markdown\n\n## Acesta este un subtitlu\n\nAcesta este un paragraf cu **text îngroșat** și *text cursiv*.\n\n### Caracteristici\n\n- Ușor de scris\n- Ușor de citit\n- Se convertește în HTML\n\n### Exemplu de Cod\n\n```javascript\nfunction salut() {\n    console.log(\"Salut, lume!\");\n}\n```\n\n> Acesta este un citat\n\n[Vizitează site-ul nostru](https://example.com)"
         }
     },
     "md5-generator": {
@@ -1660,20 +1660,20 @@
             "what_desc": "MD5 este o funcție de hash criptografică care preia o intrare de orice lungime și produce o valoare fixă de 128 biți, reprezentată de obicei ca un număr hexazecimal de 32 de caractere. Aceeași intrare produce întotdeauna același hash, dar chiar și o schimbare minoră în intrare creează un hash complet diferit.",
             "features_title": "✅ Avantajele MD5",
             "features": {
-                "fast": "<strong>Procesare Rapidă:<\/strong> Generare extrem de rapidă a hash-ului",
-                "fixed": "<strong>Lungime Fixă:<\/strong> Produce întotdeauna un rezultat de 128 biți",
-                "deterministic": "<strong>Deterministic:<\/strong> Aceeași intrare = același hash",
-                "support": "<strong>Suport Larg:<\/strong> Disponibil în toate limbajele de programare"
+                "fast": "<strong>Procesare Rapidă:</strong> Generare extrem de rapidă a hash-ului",
+                "fixed": "<strong>Lungime Fixă:</strong> Produce întotdeauna un rezultat de 128 biți",
+                "deterministic": "<strong>Deterministic:</strong> Aceeași intrare = același hash",
+                "support": "<strong>Suport Larg:</strong> Disponibil în toate limbajele de programare"
             },
             "uses_title": "📊 Cazuri Comune de Utilizare",
             "uses": {
-                "verify": "<strong>Verificarea Fișierelor:<\/strong> Verifică integritatea fișierelor",
-                "checksum": "<strong>Checksum-uri:<\/strong> Verifică descărcările",
-                "cache": "<strong>Chei de Cache:<\/strong> Generează identificatori unici",
-                "integrity": "<strong>Integritatea Datelor:<\/strong> Detectează modificările"
+                "verify": "<strong>Verificarea Fișierelor:</strong> Verifică integritatea fișierelor",
+                "checksum": "<strong>Checksum-uri:</strong> Verifică descărcările",
+                "cache": "<strong>Chei de Cache:</strong> Generează identificatori unici",
+                "integrity": "<strong>Integritatea Datelor:</strong> Detectează modificările"
             },
             "warning_title": "⚠️ Avertisment de Securitate",
-            "warning_desc": "<strong>NU folosi MD5 pentru hashing-ul parolelor sau aplicații critice de securitate!<\/strong> MD5 este considerat nesigur din punct de vedere criptografic. Pentru parole, folosește algoritmi moderni precum bcrypt, Argon2 sau PBKDF2.",
+            "warning_desc": "<strong>NU folosi MD5 pentru hashing-ul parolelor sau aplicații critice de securitate!</strong> MD5 este considerat nesigur din punct de vedere criptografic. Pentru parole, folosește algoritmi moderni precum bcrypt, Argon2 sau PBKDF2.",
             "compare_title": "🔄 MD5 vs Alte Funcții de Hash",
             "compare": {
                 "md5": {
@@ -1705,148 +1705,6 @@
         "js": {
             "error_empty": "Te rugăm să introduci un text",
             "btn_copied": "Copiat!"
-        }
-    },
-    "sql-to-json": {
-        "meta": {
-            "title": "Convertor SQL în JSON Online Gratuit | Optimizo",
-            "description": "Transformă instrucțiunile SQL INSERT în format JSON curat instantaneu. Instrument gratuit, sigur și ușor de utilizat pentru dezvoltatori.",
-            "h1": "Convertor SQL în JSON",
-            "subtitle": "Transformă interogările SQL în obiecte JSON instantaneu"
-        },
-        "editor": {
-            "btn_convert": "Transformă în JSON",
-            "btn_clear": "Șterge",
-            "btn_copy": "Copiază",
-            "btn_example": "Încarcă Exemplu",
-            "label_input": "Introdu instrucțiuni SQL INSERT",
-            "ph_input": "INSERT INTO utilizatori (nume, varsta) VALUES ('Ion', 30);",
-            "label_output": "Rezultat JSON",
-            "ph_output": "Codul JSON convertit va apărea aici..."
-        },
-        "content": {
-            "p1": "Convertorul nostru gratuit SQL în JSON transformă instrucțiunile SQL INSERT în format JSON curat. Perfect pentru dezvoltarea API-urilor, migrarea datelor, baze de date NoSQL și transformarea datelor din baze de date relaționale în JSON pentru aplicații web moderne și microservicii. Toată procesarea are loc local în browserul tău.",
-            "what_title": "🔐 Ce este conversia SQL în JSON?",
-            "what_desc": "Conversia SQL în JSON transformă instrucțiunile SQL INSERT în formatul JavaScript Object Notation. Acest lucru este esențial atunci când migrezi de la baze de date SQL la sisteme NoSQL, creezi API-uri REST sau lucrezi cu framework-uri JavaScript moderne care utilizează structuri de date JSON.",
-            "features": {
-                "instant": {
-                    "title": "Conversie Instantanee",
-                    "desc": "Transformă SQL în JSON în milisecunde"
-                },
-                "secure": {
-                    "title": "Sigur și Privat",
-                    "desc": "Toată procesarea are loc local în browserul tău"
-                },
-                "copy": {
-                    "title": "Copiere Rapidă",
-                    "desc": "Copiază rezultatul JSON instantaneu în clipboard"
-                },
-                "smart": {
-                    "title": "Analiză Inteligentă",
-                    "desc": "Extrage automat coloanele și valorile din SQL"
-                },
-                "free": {
-                    "title": "100% Gratuit",
-                    "desc": "Fără limite, fără înregistrare necesară"
-                },
-                "api": {
-                    "title": "Gata pentru API",
-                    "desc": "Rezultatul funcționează perfect cu API-uri REST și JavaScript"
-                }
-            },
-            "uses": {
-                "title": "Cazuri Comune de Utilizare",
-                "migration": {
-                    "title": "Migrarea Bazelor de Date",
-                    "desc": "Convertește datele SQL în JSON pentru migrarea de la baze de date SQL la sisteme NoSQL precum MongoDB, DynamoDB sau Firestore."
-                },
-                "api": {
-                    "title": "Dezvoltare API",
-                    "desc": "Transformă instrucțiunile SQL INSERT în JSON pentru payload-uri API REST și testare."
-                },
-                "frontend": {
-                    "title": "Dezvoltare Frontend",
-                    "desc": "Convertește datele SQL în JSON pentru utilizare în React, Vue, Angular și alte framework-uri JavaScript."
-                },
-                "analysis": {
-                    "title": "Analiza Datelor",
-                    "desc": "Transformă exporturile SQL în JSON pentru instrumente de analiză a datelor și biblioteci de vizualizare."
-                },
-                "testing": {
-                    "title": "Testare și Mocking",
-                    "desc": "Convertește datele de test SQL în JSON pentru mocking API și testare automată."
-                },
-                "docs": {
-                    "title": "Documentație",
-                    "desc": "Transformă exemplele SQL în JSON pentru documentația API și ghiduri pentru dezvoltatori."
-                }
-            },
-            "how_to": {
-                "title": "Cum se convertește SQL în JSON",
-                "step1": {
-                    "title": "Lipește instrucțiunea SQL INSERT",
-                    "desc": "Copiază instrucțiunea SQL INSERT și lipește-o în câmpul de intrare din stânga."
-                },
-                "step2": {
-                    "title": "Fă clic pe Converteste",
-                    "desc": "Apasă „Transformă în JSON” pentru a-ți transforma SQL-ul în format JSON."
-                },
-                "step3": {
-                    "title": "Copiază și Utilizează",
-                    "desc": "Rezultatul JSON apare în dreapta. Fă clic pe „Copiază” pentru a-l utiliza în aplicația ta."
-                }
-            },
-            "example": {
-                "title": "Exemplu de Conversie",
-                "input": "Intrare SQL:",
-                "output": "Ieșire JSON:"
-            },
-            "faq": {
-                "title": "Întrebări Frecvente",
-                "q1": "Ce format SQL este suportat?",
-                "a1": "Convertorul suportă instrucțiuni standard SQL INSERT cu nume de coloane și valori. Sunt suportate atât inserțiile pe un singur rând, cât și pe mai multe rânduri.",
-                "q2": "Sunt datele mele sigure?",
-                "a2": "Da! Toată conversia are loc în browserul tău folosind JavaScript. Datele tale SQL nu părăsesc niciodată dispozitivul tău și nu sunt trimise către niciun server.",
-                "q3": "Pot converti mai multe rânduri?",
-                "a3": "Da! Convertorul gestionează instrucțiunile SQL INSERT cu mai multe rânduri, creând un array JSON de obiecte.",
-                "q4": "Funcționează cu toate bazele de date SQL?",
-                "a4": "Da! Convertorul funcționează cu instrucțiuni INSERT din MySQL, PostgreSQL, SQL Server, Oracle și alte baze de date SQL.",
-                "q5": "Pot folosi acest lucru pentru dezvoltarea API?",
-                "a5": "Absolut! JSON-ul generat este perfect pentru payload-uri API REST, testare și dezvoltare frontend."
-            },
-            "best_practices": {
-                "title": "Cele Mai Bune Practici",
-                "items": [
-                    {
-                        "title": "Utilizează SQL standard",
-                        "desc": "Asigură-te că instrucțiunile tale INSERT respectă sintaxa SQL standard."
-                    },
-                    {
-                        "title": "Include nume de coloane",
-                        "desc": "Specifică întotdeauna numele coloanelor în instrucțiunea INSERT pentru chei JSON precise."
-                    },
-                    {
-                        "title": "Testează cu exemple",
-                        "desc": "Utilizează butonul „Exemplu” pentru a înțelege formatul SQL așteptat."
-                    },
-                    {
-                        "title": "Validează ieșirea JSON",
-                        "desc": "Validează întotdeauna JSON-ul generat pentru cazul tău specific de utilizare."
-                    },
-                    {
-                        "title": "Gestionează tipurile de date",
-                        "desc": "Reține că toate valorile sunt convertite în șiruri sau numere în JSON."
-                    }
-                ]
-            }
-        },
-        "js": {
-            "error_empty": "Te rugăm să introduci instrucțiunile SQL",
-            "error_no_matches": "Nu au fost găsite instrucțiuni INSERT SQL valide",
-            "success_convert": "✓ SQL convertit în JSON cu succes!",
-            "error_general": "✗ Eroare: ",
-            "error_no_copy": "Nu există conținut de copiat",
-            "success_copy": "✓ Copiat în clipboard!"
         }
     },
     "sql-to-json-converter": {
@@ -2294,7 +2152,7 @@
         },
         "editor": {
             "label_input": "Intrare XML",
-            "ph_input": "<root><copil>valoare<\/copil><\/root>",
+            "ph_input": "<root><copil>valoare</copil></root>",
             "btn_format": "Formatează / Înfrumusețează",
             "btn_minify": "Minifică",
             "btn_copy": "Copiază"
@@ -2319,7 +2177,7 @@
             "btn_copy": "Copiază",
             "btn_example": "Încarcă Exemplu",
             "label_input": "Introdu XML",
-            "ph_input": "<data><row><nume>Ion<\/nume><varsta>30<\/varsta><\/row><\/data>",
+            "ph_input": "<data><row><nume>Ion</nume><varsta>30</varsta></row></data>",
             "label_output": "Rezultat CSV",
             "ph_output": "Codul CSV convertit va apărea aici..."
         },
@@ -2447,7 +2305,7 @@
             "btn_example": "Încarcă Exemplu",
             "btn_clear": "Șterge",
             "label_input": "Intrare XML",
-            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Lipește XML-ul tău aici...<\/item>\n<\/root>",
+            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Lipește XML-ul tău aici...</item>\n</root>",
             "label_output": "Ieșire JSON",
             "ph_output": "Codul JSON convertit va apărea aici..."
         },
