@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Language;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Cache;
 
 class AdminLanguageController extends Controller
 {
@@ -57,6 +58,8 @@ class AdminLanguageController extends Controller
             'order' => $request->order ?? 999,
         ]);
 
+        Cache::forget('languages_all');
+
         return redirect()->route('admin.languages.index')
             ->with('success', 'Language created successfully!');
     }
@@ -99,6 +102,8 @@ class AdminLanguageController extends Controller
             'order' => $request->order ?? $language->order,
         ]);
 
+        Cache::forget('languages_all');
+
         return redirect()->route('admin.languages.index')
             ->with('success', 'Language updated successfully!');
     }
@@ -117,6 +122,9 @@ class AdminLanguageController extends Controller
         $language->update(['is_active' => !$language->is_active]);
 
         $status = $language->is_active ? 'activated' : 'deactivated';
+
+        Cache::forget('languages_all');
+
         return redirect()->route('admin.languages.index')
             ->with('success', "Language {$status} successfully!");
     }
@@ -134,6 +142,8 @@ class AdminLanguageController extends Controller
             'is_default' => true,
             'is_active' => true,
         ]);
+
+        Cache::forget('languages_all');
 
         return redirect()->route('admin.languages.index')
             ->with('success', 'Default language updated successfully!');
@@ -157,6 +167,8 @@ class AdminLanguageController extends Controller
         }
 
         $language->delete();
+
+        Cache::forget('languages_all');
 
         return redirect()->route('admin.languages.index')
             ->with('success', 'Language deleted successfully!');
