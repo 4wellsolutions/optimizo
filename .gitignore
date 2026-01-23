@@ -23,5 +23,6 @@ Homestead.json
 Homestead.yaml
 Thumbs.db
 
-# Ignore entire public directory (server-specific files)
-/public/
+# Ignore entire public directory except index.php
+/public/*
+!/public/index.php
