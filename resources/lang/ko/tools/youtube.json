@@ -9,7 +9,7 @@
         "form": {
             "title": "채널 데이터 추출",
             "url_label": "YouTube 채널 URL",
-            "url_placeholder": "https://www.youtube.com/@channelname 또는 https://www.youtube.com/c/channelname",
+            "url_placeholder": "https:\/\/www.youtube.com\/@channelname 또는 https:\/\/www.youtube.com\/c\/channelname",
             "url_help": "데이터를 추출할 YouTube 채널의 URL을 붙여넣으세요",
             "submit": "데이터 추출"
         },
@@ -105,7 +105,7 @@
         "form": {
             "title": "YouTube 채널 ID 찾기",
             "url_label": "채널 URL 또는 사용자 이름",
-            "url_placeholder": "https://www.youtube.com/@channelname 또는 https://www.youtube.com/c/channelname",
+            "url_placeholder": "https:\/\/www.youtube.com\/@channelname 또는 https:\/\/www.youtube.com\/c\/channelname",
             "url_help": "ID를 찾으려는 YouTube 채널 URL 또는 @핸들을 입력하세요",
             "find_button": "채널 ID 찾기"
         },
@@ -127,7 +127,7 @@
             "main_description": "무료 YouTube 채널 ID 찾기 도구는 개발자, 마케터, 제작자가 채널의 고유 식별자를 빠르게 조회할 수 있도록 돕습니다. API 통합이나 분석 도구 제작 시, API 키 없이 즉시 정확한 ID를 얻을 수 있습니다.",
             "feature_instant_desc": "대기 시간이나 복잡한 설정 없이 채널 ID를 즉시 조회하세요",
             "feature_formats": "모든 URL 형식 지원",
-            "feature_formats_desc": "@핸들, /c/이름, /channel/ID, /user/이름 형식을 모두 지원합니다",
+            "feature_formats_desc": "@핸들, \/c\/이름, \/channel\/ID, \/user\/이름 형식을 모두 지원합니다",
             "feature_copy": "간편한 복사",
             "feature_copy_desc": "클릭 한 번으로 클립보드에 복사하여 프로젝트에 빠르게 사용 가능합니다",
             "api_dev_title": "🔧 API 및 개발",
@@ -178,7 +178,7 @@
             "q5": "채널 ID를 얻은 후 무엇을 할 수 있나요?",
             "a5": "YouTube API를 사용하여 통계를 조회하거나, 구독을 관리하거나, 외부 도구에 통합할 수 있습니다.",
             "q6": "어떤 URL 형식을 지원하나요?",
-            "a6": "모든 형식을 지원합니다: @핸들, /c/이름, /channel/ID, /user/이름."
+            "a6": "모든 형식을 지원합니다: @핸들, \/c\/이름, \/channel\/ID, \/user\/이름."
         }
     },
     "youtube-earnings-calculator": {
@@ -186,7 +186,7 @@
             "title": "YouTube 수익 계산기 - 예상 수입 확인 | Optimizo",
             "description": "조회수와 CPM을 바탕으로 YouTube 수익을 계산하세요. 일간, 월간, 연간 예상 수익을 무료로 제공합니다.",
             "h1": "YouTube 수익 계산기",
-            "subtitle": "조회수와 CPM을 기반으로 YouTube 수익을 산출합니다. 일/월/년 단위 예상치."
+            "subtitle": "조회수와 CPM을 기반으로 YouTube 수익을 산출합니다. 일\/월\/년 단위 예상치."
         },
         "how_to_use": {
             "title": "YouTube 수익 계산하기"
@@ -214,8 +214,8 @@
             "how_pays_3": "수익 배분: YouTube가 45%를 가져가고 제작자가 55%를 받습니다",
             "how_pays_4": "지급 기준액: 수익을 수령하려면 최소 $100 이상의 잔액이 필요합니다",
             "cpm_niche_title": "🎯 주제별 CPM",
-            "cpm_finance": "금융 / 비즈니스: $4 - $12",
-            "cpm_tech": "기술 / 소프트웨어: $2 - $8",
+            "cpm_finance": "금융 \/ 비즈니스: $4 - $12",
+            "cpm_tech": "기술 \/ 소프트웨어: $2 - $8",
             "cpm_gaming": "게이밍: $0.50 - $3",
             "cpm_entertainment": "엔터테인먼트: $0.25 - $2",
             "factors_title": "📈 수익에 영향을 미치는 요소",
@@ -327,7 +327,7 @@
         },
         "form": {
             "url_label": "채널 URL 또는 YouTube 핸들",
-            "url_placeholder": "https://www.youtube.com/@channelname 또는 @channelname",
+            "url_placeholder": "https:\/\/www.youtube.com\/@channelname 또는 @channelname",
             "url_help": "URL, 핸들 또는 채널 ID를 입력하세요",
             "check_button": "수익 창출 확인",
             "checking": "확인 중..."
@@ -373,7 +373,12 @@
             "faq_q4": "수치가 달성되었는데도 수익 창출이 안 되는 이유는 무엇인가요?",
             "faq_a4": "단순 수치 외에도 YouTube에서 콘텐츠 품질과 저작권을 직접 검토하기 때문입니다.",
             "faq_q5": "규정은 자주 바뀌나요?",
-            "faq_a5": "YouTube의 최신 정책을 모니터링하여 도구를 2024년 기준에 맞게 유지합니다."
+            "faq_a5": "YouTube의 최신 정책을 모니터링하여 도구를 2024년 기준에 맞게 유지합니다.",
+            "req4_desc": "No active strikes, violations, or policy warnings",
+            "revenue6_title": "YouTube Premium Revenue",
+            "revenue6_desc": "Earn a share of subscription fees when YouTube Premium members watch your content. This provides stable income independent of ads.",
+            "notice_title": "Important Notice",
+            "notice_text": "Monetization eligibility requires 1,000 subscribers and 4,000 watch hours in the past 12 months. Actual earnings vary based on CPM, audience location, content category, and advertiser demand. This tool provides estimates only."
         },
         "js": {
             "error_failed": "상태 확인 실패",
@@ -512,6 +517,20 @@
             "step3_description": "버튼을 눌러 미리보기 이미지를 생성합니다.",
             "step4_title": "저장:",
             "step4_description": "원하는 크기를 선택하고 이미지를 저장하세요."
+        },
+        "extra_use_cases": {
+            "archive_desc": "삭제되거나 비공개로 전환될 수 있는 비디오의 썸네일을 보관하세요.",
+            "title": "Popular Use Cases for YouTube Thumbnails",
+            "content_creation_title": "Content Creation:",
+            "content_creation_desc": "Analyze competitor thumbnails for inspiration and trends",
+            "presentations_title": "Presentations:",
+            "presentations_desc": "Use video thumbnails in PowerPoint or Google Slides",
+            "social_media_title": "Social Media:",
+            "social_media_desc": "Share video previews on Twitter, Facebook, or Instagram",
+            "design_reference_title": "Design Reference:",
+            "design_reference_desc": "Use thumbnails as design inspiration for your own content",
+            "archiving_title": "Archiving:",
+            "archiving_desc": "Save memorable video thumbnails for personal collections"
         }
     },
     "youtube-video-data-extractor": {
@@ -633,7 +652,7 @@
         "form": {
             "title": "영상 태그 추출",
             "url_label": "YouTube 영상 URL",
-            "url_placeholder": "https://www.youtube.com/watch?v=...",
+            "url_placeholder": "https:\/\/www.youtube.com\/watch?v=...",
             "url_help": "태그를 확인하려는 URL을 붙여넣으세요",
             "extract_button": "태그 추출하기"
         },

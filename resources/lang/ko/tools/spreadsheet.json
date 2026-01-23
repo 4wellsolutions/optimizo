@@ -22,6 +22,13 @@
             "feature2_desc": "데이터를 더 읽기 쉽게 만들기 위해 엑셀 서식을 자동으로 적용합니다.",
             "feature3_title": "즉시 다운로드",
             "feature3_desc": "변환 후 즉시 사용할 수 있는 엑셀 파일을 바로 받아보세요."
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "q1": "Can I convert large CSV files to Excel?",
+            "a1": "Yes! Our tool handles CSV files of various sizes. For very large files (100MB+), the conversion may take a bit longer, but the process is optimized for performance.",
+            "q2": "Will formatting be preserved during conversion?",
+            "a2": "CSV files contain only raw data without formatting. The Excel file will have the data properly organized in cells, but you'll need to apply formatting (colors, fonts, borders) manually in Excel after conversion."
         }
     },
     "csv-to-json": {
@@ -58,6 +65,13 @@
             "feature2_desc": "모든 SQL 클라이언트에서 대량 실행이 가능한 깨끗하고 이스케이프 처리된 SQL INSERT 문을 생성합니다.",
             "feature3_title": "범용 SQL 호환",
             "feature3_desc": "MySQL, PostgreSQL, SQLite, MariaDB에서 작동하는 SQL-92 표준 준수 코드를 생성합니다."
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "q1": "What SQL databases are supported?",
+            "a1": "Our tool generates standard SQL INSERT statements compatible with MySQL, PostgreSQL, SQL Server, SQLite, and other major database systems. You can customize the table name and column names as needed.",
+            "q2": "How do I handle special characters in my CSV data?",
+            "a2": "The converter automatically escapes special characters (quotes, backslashes) to prevent SQL injection and syntax errors. Your data will be safely converted to properly formatted SQL statements."
         }
     },
     "csv-to-tsv": {
@@ -154,6 +168,10 @@
                 "2": {
                     "title": "복사 및 사용",
                     "desc": "오른쪽에 생성된 XML 출력을 '복사'하여 애플리케이션에 사용하세요."
+                },
+                "3": {
+                    "title": "Download XML File",
+                    "desc": "Click the download button to save your converted XML file, ready to use in applications, APIs, or data exchange systems."
                 }
             },
             "example_title": "💡 변환 예시",
@@ -174,10 +192,11 @@
             },
             "tips_title": "🎓 최적의 사용 방법",
             "tips_list": {
-                "1": "<strong>데이터 정리:</strong> 변환 전 헤더에서 불필요한 공백이나 특수 문자를 제거하세요.",
-                "2": "<strong>예제로 테스트:</strong> '예제 보기' 버튼을 눌러 정확한 변환 형식을 파악해 보세요.",
-                "3": "<strong>XML 검증:</strong> 생성된 XML이 대상 시스템의 요구 사항에 맞는지 항상 한 번 더 확인하세요.",
-                "4": "<strong>특수 문자 처리:</strong> 유효한 XML 출력을 위해 특수 문자는 자동으로 이스케이프 처리됩니다."
+                "1": "<strong>데이터 정리:<\/strong> 변환 전 헤더에서 불필요한 공백이나 특수 문자를 제거하세요.",
+                "2": "<strong>예제로 테스트:<\/strong> '예제 보기' 버튼을 눌러 정확한 변환 형식을 파악해 보세요.",
+                "3": "<strong>XML 검증:<\/strong> 생성된 XML이 대상 시스템의 요구 사항에 맞는지 항상 한 번 더 확인하세요.",
+                "4": "<strong>특수 문자 처리:<\/strong> 유효한 XML 출력을 위해 특수 문자는 자동으로 이스케이프 처리됩니다.",
+                "5": "Validate your XML output using an XML validator to ensure proper structure and compatibility with your target system."
             }
         },
         "js": {
@@ -211,6 +230,13 @@
             "feature2_desc": "일반 텍스트 형식으로 변환하는 동안 모든 셀 값을 안전하게 보존합니다.",
             "feature3_title": "빠른 처리",
             "feature3_desc": "즉각적인 다운로드가 가능한 빠른 파일 변환 서비스를 제공합니다."
+        },
+        "faq": {
+            "title": "자주 묻는 질문",
+            "q1": "Excel을 CSV로 변환하면 서식이 유지되나요?",
+            "a1": "아니요, CSV는 순수 텍스트 형식이므로 색상, 글꼴, 수식 등은 제거됩니다. 데이터 값만 유지됩니다.",
+            "q2": "여러 시트가 있는 Excel 파일은 어떻게 되나요?",
+            "a2": "각 시트를 개별적으로 선택하여 별도의 CSV 파일로 변환해야 합니다. CSV는 단일 테이블만 지원합니다."
         }
     },
     "google-sheets-to-excel": {
@@ -236,6 +262,13 @@
             "feature2_desc": "가능한 경우 서식, 수식 및 스타일을 그대로 보존합니다.",
             "feature3_title": "오프라인 액세스",
             "feature3_desc": "인터넷 연결 없이도 스프레드시트 작업을 계속할 수 있습니다."
+        },
+        "faq": {
+            "title": "자주 묻는 질문",
+            "q1": "Google Sheets를 Excel로 변환하면 수식이 작동하나요?",
+            "a1": "대부분의 표준 수식은 변환됩니다. 그러나 Google Sheets 전용 함수는 Excel에서 작동하지 않을 수 있습니다.",
+            "q2": "여러 시트가 포함된 Google Sheets를 변환할 수 있나요?",
+            "a2": "네, 모든 시트가 Excel 파일의 별도 탭으로 변환됩니다."
         }
     },
     "tsv-to-csv-converter": {
@@ -401,6 +434,13 @@
             "feature2_desc": "XLS의 65,536행 제한을 넘어 100만 행 이상을 지원합니다.",
             "feature3_title": "강화된 보안성",
             "feature3_desc": "XLSX 포맷은 보안 및 손상된 파일 복구 능력이 뛰어납니다."
+        },
+        "faq": {
+            "title": "자주 묻는 질문",
+            "q1": "XLS와 XLSX의 차이점은 무엇인가요?",
+            "a1": "XLS는 Excel 97-2003의 이진 형식이고, XLSX는 Excel 2007 이상의 XML 기반 형식입니다. XLSX가 더 작고 안전하며 최신 기능을 지원합니다.",
+            "q2": "변환 시 데이터가 손실되나요?",
+            "a2": "아니요, 모든 데이터, 수식 및 서식이 보존됩니다. XLSX는 XLS의 모든 기능을 지원합니다."
         }
     },
     "xlsx-to-xls": {
@@ -426,6 +466,13 @@
             "feature2_desc": "이전 형식으로 바꾸는 동안에도 핵심 데이터를 안전하게 유지합니다.",
             "feature3_title": "신속한 파일 변환",
             "feature3_desc": "빠른 처리 후 즉시 다운로드할 수 있는 간편한 서비스를 제공합니다."
+        },
+        "faq": {
+            "title": "자주 묻는 질문",
+            "q1": "왜 XLSX를 XLS로 변환해야 하나요?",
+            "a1": "오래된 Excel 버전(2003 이전)이나 레거시 시스템과의 호환성을 위해 필요할 수 있습니다.",
+            "q2": "XLSX 기능이 XLS에서 작동하나요?",
+            "a2": "대부분의 기본 기능은 작동하지만, XLSX 전용 기능(예: 더 많은 행\/열)은 제한될 수 있습니다."
         }
     }
 }
