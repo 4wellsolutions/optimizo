@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Atlas | 100% Sync & Prune Verified</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --success: #10b981;
+            --error: #ef4444;
+            --dark: #020617;
+            --card: rgba(15, 23, 42, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background: var(--dark); color: #f1f5f9; padding-bottom: 5rem; }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        
+        header { text-align: center; margin-bottom: 4rem; padding: 2rem; }
+        h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -2px; margin-bottom: 0.5rem; }
+        .subtitle { color: #94a3b8; font-size: 1.1rem; }
+
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+        .stat-card { background: var(--card); border: 1px solid var(--border); padding: 1.5rem; border-radius: 1.5rem; text-align: center; }
+        .stat-val { font-size: 2.5rem; font-weight: 800; color: #fff; }
+        .stat-label { font-size: 0.7rem; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+        .search-wrap { margin-bottom: 2rem; }
+        .search-input { width: 100%; padding: 1.25rem 2rem; border-radius: 1.5rem; background: var(--card); border: 1px solid var(--border); color: #fff; outline: none; }
+
+        .atlas-table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: 2rem; overflow: hidden; }
+        th { text-align: left; padding: 1.25rem 1.5rem; font-size: 0.7rem; color: #64748b; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border); }
+        td { padding: 1.5rem; border-bottom: 1px solid var(--border); }
+
+        .tool-meta h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.2rem; }
+        .tool-meta p { font-size: 0.8rem; color: #64748b; font-family: monospace; }
+
+        .sync-tag { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.75rem; border-radius: 999px; font-size: 0.7rem; font-weight: 800; }
+        .sync-match { background: rgba(16, 185, 129, 0.1); color: var(--success); border: 1px solid rgba(16, 185, 129, 0.2); }
+        .sync-mismatch { background: rgba(239, 68, 68, 0.1); color: var(--error); border: 1px solid rgba(239, 68, 68, 0.2); }
+
+        .lang-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+        .lang-box { background: rgba(255,255,255,0.03); padding: 0.75rem; border-radius: 0.75rem; text-align: center; }
+        .lang-name { font-size: 0.6rem; font-weight: 800; opacity: 0.4; margin-bottom: 0.2rem; }
+        .lang-count { font-size: 1rem; font-weight: 700; }
+
+        .missing-keys { color: var(--error); font-size: 0.7rem; margin-top: 0.4rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Structural Atlas</h1>
+            <p class="subtitle">Official 100% Sync & Prune Verified Report</p>
+        </header>
+
+        <div class="stats">            <div class="stat-card"><div class="stat-val">145</div><div class="stat-label">Total Tools</div></div>
+            <div class="stat-card"><div class="stat-val">145</div><div class="stat-label">Perfectly Synced</div></div>
+            <div class="stat-card"><div class="stat-val">0</div><div class="stat-label">Unused Keys</div></div>
+            <div class="stat-card"><div class="stat-val">100%</div><div class="stat-label">Success Rate</div></div>
+        </div>
+
+        <div class="search-wrap">
+            <input type="text" id="searchInput" class="search-input" placeholder="Verify tool structural integrity..." onkeyup="filterTable()">
+        </div>
+
+        <table class="atlas-table" id="toolsTable">
+            <thead>
+                <tr>
+                    <th>Tool Identity</th>
+                    <th>Structural Requirement</th>
+                    <th>Sync Status (EN / RU / ES)</th>
+                    <th>Final Audit</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="tool-meta">
+                        <h3>Angle Converter</h3>
+                        <p>angle-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">39</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">39</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Area Converter</h3>
+                        <p>area-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">43</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">43</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">43</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">43</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Ascii Converter</h3>
+                        <p>ascii-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">58</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">58</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">58</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">58</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Base64 Encoder Decoder</h3>
+                        <p>base64-encoder-decoder</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">86</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">86</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">86</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">86</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Base64 To Image Converter</h3>
+                        <p>base64-to-image-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">30</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">30</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">30</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">30</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Binary Hex Converter</h3>
+                        <p>binary-hex-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">45</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">45</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">45</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">45</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Binary To Text</h3>
+                        <p>binary-to-text</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">48</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">48</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">48</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">48</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Bing Serp Checker</h3>
+                        <p>bing-serp-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">59</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">59</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">59</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">59</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Broken Links Checker</h3>
+                        <p>broken-links-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">99</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">99</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">99</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">99</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Camel Case Converter</h3>
+                        <p>camel-case-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">73</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">73</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">73</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">73</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Case Converter</h3>
+                        <p>case-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">64</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">64</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">64</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">64</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Code Formatter</h3>
+                        <p>code-formatter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">64</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">64</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">64</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">64</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Cooking Unit Converter</h3>
+                        <p>cooking-unit-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">42</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">42</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Cron Job Generator</h3>
+                        <p>cron-job-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">54</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">54</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">54</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">54</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Css Minifier</h3>
+                        <p>css-minifier</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">79</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">79</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">79</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">79</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Csv To Excel</h3>
+                        <p>csv-to-excel</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">24</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">24</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Csv To Json</h3>
+                        <p>csv-to-json</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Csv To Sql</h3>
+                        <p>csv-to-sql</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">27</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">27</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">27</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">27</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Csv To Tsv</h3>
+                        <p>csv-to-tsv</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Csv To Xml Converter</h3>
+                        <p>csv-to-xml-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">78</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">78</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">78</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">78</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Curl Command Builder</h3>
+                        <p>curl-command-builder</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">18</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">18</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">18</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">18</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Data Transfer Rate Converter</h3>
+                        <p>data-transfer-rate-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">41</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">41</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">41</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">41</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Date To Unix Timestamp</h3>
+                        <p>date-to-unix-timestamp</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Decimal Binary Converter</h3>
+                        <p>decimal-binary-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">35</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">35</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">35</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">35</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Decimal Hex Converter</h3>
+                        <p>decimal-hex-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">35</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">35</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">35</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">35</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Decimal Octal Converter</h3>
+                        <p>decimal-octal-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">35</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">35</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">35</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">35</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Density Converter</h3>
+                        <p>density-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">38</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">38</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Digital Storage Converter</h3>
+                        <p>digital-storage-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">41</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">41</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">41</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">41</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Dns Lookup</h3>
+                        <p>dns-lookup</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">38</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">38</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Domain To Ip</h3>
+                        <p>domain-to-ip</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">57</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">57</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">57</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">57</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Duplicate Line Remover</h3>
+                        <p>duplicate-line-remover</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">16</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">16</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">16</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">16</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Energy Converter</h3>
+                        <p>energy-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">42</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">42</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Epoch Time Converter</h3>
+                        <p>epoch-time-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">39</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">39</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Excel To Csv</h3>
+                        <p>excel-to-csv</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">24</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">24</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Excel To Pdf</h3>
+                        <p>excel-to-pdf</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>File Difference Checker</h3>
+                        <p>file-difference-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">21</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">21</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">21</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">21</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Force Converter</h3>
+                        <p>force-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">39</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">39</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Frequency Converter</h3>
+                        <p>frequency-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">34</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">34</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">34</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">34</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Fuel Consumption Converter</h3>
+                        <p>fuel-consumption-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">38</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">38</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Google Serp Checker</h3>
+                        <p>google-serp-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">47</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">47</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">47</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">47</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Google Sheets To Excel</h3>
+                        <p>google-sheets-to-excel</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">24</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">24</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Heic To Jpg Converter</h3>
+                        <p>heic-to-jpg-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">37</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">37</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">37</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">37</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Html Encoder Decoder</h3>
+                        <p>html-encoder-decoder</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">71</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">71</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">71</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">71</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Html Minifier</h3>
+                        <p>html-minifier</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">46</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">46</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">46</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">46</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Html To Markdown Converter</h3>
+                        <p>html-to-markdown-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">70</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">70</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">70</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">70</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Html Viewer</h3>
+                        <p>html-viewer</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">49</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">49</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">49</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">49</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Ico Converter</h3>
+                        <p>ico-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">32</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">32</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">32</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">32</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Image Compressor</h3>
+                        <p>image-compressor</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">30</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">30</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">30</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">30</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Image Converter</h3>
+                        <p>image-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">39</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">39</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Image To Base64 Converter</h3>
+                        <p>image-to-base64-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">31</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">31</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">31</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">31</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Internet Speed Test</h3>
+                        <p>internet-speed-test</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">34</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">34</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">34</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">34</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Ip Lookup</h3>
+                        <p>ip-lookup</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">46</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">46</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">46</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">46</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Jpg To Pdf</h3>
+                        <p>jpg-to-pdf</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Jpg To Png Converter</h3>
+                        <p>jpg-to-png-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">34</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">34</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">34</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">34</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Jpg To Webp Converter</h3>
+                        <p>jpg-to-webp-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">35</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">35</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">35</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">35</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Js Minifier</h3>
+                        <p>js-minifier</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">29</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">29</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">29</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">29</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Json Formatter</h3>
+                        <p>json-formatter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">55</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">55</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">55</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">55</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Json Parser</h3>
+                        <p>json-parser</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">62</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">62</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">62</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">62</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Json To Csv Converter</h3>
+                        <p>json-to-csv-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">41</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">41</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">41</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">41</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Json To Sql Converter</h3>
+                        <p>json-to-sql-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">59</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">59</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">59</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">59</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Json To Xml Converter</h3>
+                        <p>json-to-xml-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">77</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">77</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">77</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">77</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Json To Yaml Converter</h3>
+                        <p>json-to-yaml-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">74</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">74</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">74</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">74</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Jwt Decoder</h3>
+                        <p>jwt-decoder</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">47</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">47</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">47</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">47</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Kebab Case Converter</h3>
+                        <p>kebab-case-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">62</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">62</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">62</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">62</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Keyword Density Checker</h3>
+                        <p>keyword-density-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">69</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">69</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">69</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">69</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Length Converter</h3>
+                        <p>length-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">41</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">41</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">41</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">41</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Local Time To Utc</h3>
+                        <p>local-time-to-utc</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Lorem Ipsum Generator</h3>
+                        <p>lorem-ipsum-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">22</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">22</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">22</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">22</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Markdown To Html Converter</h3>
+                        <p>markdown-to-html-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">60</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">60</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">60</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">60</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Md5 Generator</h3>
+                        <p>md5-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">48</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">48</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">48</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">48</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Meta Tag Analyzer</h3>
+                        <p>meta-tag-analyzer</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">97</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">97</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">97</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">97</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Molar Mass Converter</h3>
+                        <p>molar-mass-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">37</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">37</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">37</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">37</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Morse To Text Converter</h3>
+                        <p>morse-to-text-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Number Base Converter</h3>
+                        <p>number-base-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">17</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">17</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">17</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">17</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>On Page Seo Checker</h3>
+                        <p>on-page-seo-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">46</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">46</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">46</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">46</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pascal Case Converter</h3>
+                        <p>pascal-case-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Password Generator</h3>
+                        <p>password-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pdf Compressor</h3>
+                        <p>pdf-compressor</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">34</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">34</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">34</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">34</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pdf Merger</h3>
+                        <p>pdf-merger</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pdf Splitter</h3>
+                        <p>pdf-splitter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">32</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">32</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">32</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">32</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pdf To Excel</h3>
+                        <p>pdf-to-excel</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pdf To Jpg</h3>
+                        <p>pdf-to-jpg</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pdf To Ppt</h3>
+                        <p>pdf-to-ppt</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pdf To Word</h3>
+                        <p>pdf-to-word</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Ping Test</h3>
+                        <p>ping-test</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">39</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">39</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Png To Jpg Converter</h3>
+                        <p>png-to-jpg-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">31</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">31</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">31</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">31</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Png To Webp Converter</h3>
+                        <p>png-to-webp-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">31</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">31</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">31</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">31</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Port Checker</h3>
+                        <p>port-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">42</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">42</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Power Converter</h3>
+                        <p>power-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">40</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">40</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Ppt To Pdf</h3>
+                        <p>ppt-to-pdf</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Pressure Converter</h3>
+                        <p>pressure-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">40</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">40</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Qr Code Generator</h3>
+                        <p>qr-code-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">17</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">17</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">17</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">17</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Random Number Generator</h3>
+                        <p>random-number-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">14</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">14</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">14</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">14</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Redirect Checker</h3>
+                        <p>redirect-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">97</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">97</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">97</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">97</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Reverse Dns Lookup</h3>
+                        <p>reverse-dns-lookup</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Rgb Hex Converter</h3>
+                        <p>rgb-hex-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">27</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">27</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">27</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">27</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Sentence Case Converter</h3>
+                        <p>sentence-case-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">38</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">38</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Slug Generator</h3>
+                        <p>slug-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">40</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">40</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Snake Case Converter</h3>
+                        <p>snake-case-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">8</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">8</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">8</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">8</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Speed Converter</h3>
+                        <p>speed-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">39</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">39</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">39</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Sql To Json</h3>
+                        <p>sql-to-json</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Sql To Json Converter</h3>
+                        <p>sql-to-json-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">84</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">84</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">84</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">84</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Studly Case Converter</h3>
+                        <p>studly-case-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">17</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">17</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">17</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">17</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Svg To Jpg Converter</h3>
+                        <p>svg-to-jpg-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">36</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">36</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">36</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">36</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Svg To Png Converter</h3>
+                        <p>svg-to-png-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">40</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">40</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Temperature Converter</h3>
+                        <p>temperature-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">38</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">38</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Text Reverser</h3>
+                        <p>text-reverser</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Text To Binary</h3>
+                        <p>text-to-binary</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Text To Morse Converter</h3>
+                        <p>text-to-morse-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Time Unit Converter</h3>
+                        <p>time-unit-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">42</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">42</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Time Zone Converter</h3>
+                        <p>time-zone-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">38</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">38</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Torque Converter</h3>
+                        <p>torque-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">38</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">38</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Traceroute</h3>
+                        <p>traceroute</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">32</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">32</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">32</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">32</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Tsv To Csv Converter</h3>
+                        <p>tsv-to-csv-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">36</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">36</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">36</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">36</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Unicode Encoder Decoder</h3>
+                        <p>unicode-encoder-decoder</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Unix Timestamp To Date</h3>
+                        <p>unix-timestamp-to-date</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Url Encoder Decoder</h3>
+                        <p>url-encoder-decoder</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>User Agent Parser</h3>
+                        <p>user-agent-parser</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Username Checker</h3>
+                        <p>username-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">11</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">11</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">11</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">11</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Utc To Local Time</h3>
+                        <p>utc-to-local-time</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Uuid Generator</h3>
+                        <p>uuid-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Volume Converter</h3>
+                        <p>volume-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">43</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">43</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">43</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">43</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Webp To Jpg Converter</h3>
+                        <p>webp-to-jpg-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">36</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">36</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">36</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">36</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Weight Converter</h3>
+                        <p>weight-converter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">43</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">43</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">43</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">43</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>What Is My Ip</h3>
+                        <p>what-is-my-ip</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">57</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">57</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">57</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">57</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>What Is My Isp</h3>
+                        <p>what-is-my-isp</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">58</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">58</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">58</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">58</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Whois Lookup</h3>
+                        <p>whois-lookup</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">40</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">40</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">40</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Word Counter</h3>
+                        <p>word-counter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">37</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">37</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">37</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">37</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Word To Pdf</h3>
+                        <p>word-to-pdf</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">28</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">28</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">28</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Xls To Xlsx</h3>
+                        <p>xls-to-xlsx</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">24</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">24</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Xlsx To Xls</h3>
+                        <p>xlsx-to-xls</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">24</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">24</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">24</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Xml Formatter</h3>
+                        <p>xml-formatter</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Xml To Csv</h3>
+                        <p>xml-to-csv</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Xml To Json</h3>
+                        <p>xml-to-json</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">10</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">10</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">10</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">10</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Yaml To Json</h3>
+                        <p>yaml-to-json</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Yahoo Serp Checker</h3>
+                        <p>yahoo-serp-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">45</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">45</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">45</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">45</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Channel Data Extractor</h3>
+                        <p>youtube-channel-data-extractor</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">65</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">65</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">65</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">65</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Channel Id Finder</h3>
+                        <p>youtube-channel-id-finder</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">38</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">38</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">38</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Earnings Calculator</h3>
+                        <p>youtube-earnings-calculator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">9</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">9</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">9</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Handle Checker</h3>
+                        <p>youtube-handle-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">46</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">46</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">46</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">46</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Monetization Checker</h3>
+                        <p>youtube-monetization-checker</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">59</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">59</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">59</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">59</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Tag Generator</h3>
+                        <p>youtube-tag-generator</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">42</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">42</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">42</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Thumbnail Downloader</h3>
+                        <p>youtube-thumbnail-downloader</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">7</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">7</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">7</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Video Data Extractor</h3>
+                        <p>youtube-video-data-extractor</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">23</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">23</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">23</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">23</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>                <tr>
+                    <td class="tool-meta">
+                        <h3>Youtube Video Tags Extractor</h3>
+                        <p>youtube-video-tags-extractor</p>
+                    </td>
+                    <td><div style="font-size: 1.5rem; font-weight: 800;">43</div><div style="font-size: 0.6rem; opacity: 0.5;">EXACT KEYS</div></td>
+                    <td>
+                        <div class="lang-grid">
+                            <div class="lang-box"><div class="lang-name">EN</div><div class="lang-count sync-match">43</div></div>
+                            <div class="lang-box"><div class="lang-name">RU</div><div class="lang-count sync-match">43</div></div>
+                            <div class="lang-box"><div class="lang-name">ES</div><div class="lang-count sync-match">43</div></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="sync-tag sync-match">MATCH - 100%</div>                    </td>
+                </tr>            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function filterTable() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("toolsTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 1; i < tr.length; i++) {
+                var rowVisible = false;
+                var cells = tr[i].getElementsByTagName("td");
+                for (var j = 0; j < cells.length; j++) {
+                    if (cells[j]) {
+                        txtValue = cells[j].textContent || cells[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) { rowVisible = true; break; }
+                    }
+                }
+                tr[i].style.display = rowVisible ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>
