@@ -106,6 +106,7 @@ use App\Http\Controllers\Tools\Seo\KeywordDensityCheckerController;
 use App\Http\Controllers\Tools\Seo\MetaTagAnalyzerController;
 use App\Http\Controllers\Tools\Seo\OnPageSeoCheckerController;
 use App\Http\Controllers\Tools\Seo\RedirectCheckerController;
+use App\Http\Controllers\Tools\Seo\SitemapValidatorController;
 use App\Http\Controllers\Tools\Seo\SlugGeneratorController;
 use App\Http\Controllers\Tools\Seo\YahooSerpCheckerController;
 use App\Http\Controllers\Tools\Spreadsheet\CsvToExcelController;
@@ -214,6 +215,9 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::get('redirect-checker', [RedirectCheckerController::class, 'index'])->name($n('seo.redirect-checker'));
     Route::post('redirect-checker/check', [RedirectCheckerController::class, 'process'])->name($n('seo.redirect-checker.check'));
     Route::post('redirect-checker/canonical', [RedirectCheckerController::class, 'checkCanonical'])->name($n('seo.redirect-checker.canonical'));
+    Route::get('sitemap-validator', [SitemapValidatorController::class, 'index'])->name($n('seo.sitemap-validator'));
+    Route::post('sitemap-validator/fetch', [SitemapValidatorController::class, 'fetch'])->name($n('seo.sitemap-validator.fetch'));
+    Route::post('sitemap-validator/validate', [SitemapValidatorController::class, 'validate'])->name($n('seo.sitemap-validator.validate'));
     Route::get('bing-serp-checker', [BingSerpCheckerController::class, 'index'])->name($n('seo.bing-serp-checker'));
     Route::post('bing-serp-checker', [BingSerpCheckerController::class, 'process'])->name($n('seo.bing-serp-checker.check'));
     Route::get('google-serp-checker', [GoogleSerpCheckerController::class, 'index'])->name($n('seo.google-serp-checker'));

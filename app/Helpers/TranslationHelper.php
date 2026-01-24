@@ -101,6 +101,7 @@ if (!function_exists('__tool')) {
             'reverse-dns-lookup' => 'network',
             'rgb-hex-converter' => 'converters',
             'sentence-case-converter' => 'converters',
+            'sitemap-validator' => 'seo',
             'slug-generator' => 'seo',
             'snake-case-converter' => 'converters',
             'speed-converter' => 'converters',
