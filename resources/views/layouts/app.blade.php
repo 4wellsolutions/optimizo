@@ -274,7 +274,7 @@
                 </div>
 
                 <!-- Language Switcher -->
-                <div class="pt-2 px-4">
+                <div class="pt-2 px-4 flex justify-end">
                     <x-language-switcher position="mobile" />
                 </div>
             </div>
