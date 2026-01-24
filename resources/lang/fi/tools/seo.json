@@ -11,7 +11,7 @@
             "keyword_label": "Kohdehakusana",
             "location_label": "Sijainti (valinnainen)",
             "location_placeholder": "Kaupunki, maakunta tai maa...",
-            "market_label": "Markkina / Kieli",
+            "market_label": "Markkina \/ Kieli",
             "device_label": "Laitetyyppi",
             "device_desktop": "Tietokone",
             "device_mobile": "Mobiili",
@@ -56,14 +56,14 @@
             "button": "Skannaa linkit",
             "button_scanning": "Skannataan...",
             "legend_ok": "200 OK",
-            "legend_err": "404/Virhe"
+            "legend_err": "404\/Virhe"
         },
         "progress": {
             "extracting": "Poimitaan linkkejä...",
             "stop": "Pysäytä",
             "processing": "Käsitellään linkkejä...",
             "processed": "Käsitelty",
-            "of": "/",
+            "of": "\/",
             "links": "linkkiä",
             "checking": "Tarkistetaan linkkejä..."
         },
@@ -71,7 +71,7 @@
             "total": "Linkkejä yhteensä",
             "working": "Toimivia (200)",
             "redirects": "Uudelleenohjauksia (3xx)",
-            "broken": "Rikki (4xx/5xx)"
+            "broken": "Rikki (4xx\/5xx)"
         },
         "results": {
             "download": "Lataa CSV-raportti",
@@ -87,13 +87,13 @@
             "what_is_title": "Mikä on rikkoutuneiden linkkien tarkistaja?",
             "what_is_desc": "Työkalu, joka käy läpi sivusi ja etsii linkkejä, jotka eivät enää toimi (404-virheet tai palvelinvirheet).",
             "how_works_title": "Miten se toimii?",
-            "how_works_step1": "<strong>Skannaus:</strong> Syötä URL ja me taltioimme kaikki linkit",
-            "how_works_step2": "<strong>Tarkistus:</strong> Testaamme jokaisen linkin tilan",
-            "how_works_step3": "<strong>Raportti:</strong> Saat listan linkeistä, jotka vaativat huomiota",
+            "how_works_step1": "<strong>Skannaus:<\/strong> Syötä URL ja me taltioimme kaikki linkit",
+            "how_works_step2": "<strong>Tarkistus:<\/strong> Testaamme jokaisen linkin tilan",
+            "how_works_step3": "<strong>Raportti:<\/strong> Saat listan linkeistä, jotka vaativat huomiota",
             "common_causes_title": "Yleisimmät syyt linkkien rikkoutumiseen",
-            "cc_1": "❌ <strong>Kirjoitusvirheet:</strong> Väärin kirjoitettu osoite linkkiä luotaessa",
-            "cc_2": "❌ <strong>Poistetut sivut:</strong> Sisältö on poistettu ilman uudelleenohjausta",
-            "cc_4": "❌ <strong>Ulkoiset sivut:</strong> Toinen sivusto on muuttanut osoitteitaan tai suljettu"
+            "cc_1": "❌ <strong>Kirjoitusvirheet:<\/strong> Väärin kirjoitettu osoite linkkiä luotaessa",
+            "cc_2": "❌ <strong>Poistetut sivut:<\/strong> Sisältö on poistettu ilman uudelleenohjausta",
+            "cc_4": "❌ <strong>Ulkoiset sivut:<\/strong> Toinen sivusto on muuttanut osoitteitaan tai suljettu"
         }
     },
     "google-serp-checker": {
@@ -167,7 +167,7 @@
         },
         "form": {
             "label": "Syötä verkkosivun URL",
-            "placeholder": "https://esimerkki.fi",
+            "placeholder": "https:\/\/esimerkki.fi",
             "button": "Analysoi meta-tiedot"
         },
         "results": {
@@ -261,6 +261,72 @@
             "description": "Ilmainen Yahoo SERP-tarkistus verkkosivustosi sijoitusten seurantaan Yahoo-hakukoneessa.",
             "h1": "Yahoo SERP-tarkistus",
             "subtitle": "Seuraa Yahoo-sijoituksiasi omien hakusanojesi ja kilpailijoiden osalta"
+        }
+    },
+    "sitemap-validator": {
+        "meta": {
+            "title": "Sivustokartta Validaattori - Ilmainen XML Tarkistustyökalu",
+            "description": "Ilmainen työkalu XML-sivustokarttojen virheiden tarkistamiseen, URL-osoitteiden validointiin ja protokollan noudattamisen varmistamiseen.",
+            "h1": "Ilmainen Sivustokartta Validaattori",
+            "subtitle": "Tarkista XML-sivustokarttasi virheiden varalta"
+        },
+        "editor": {
+            "title": "Validoi Sivustokartta",
+            "btn_xml_input": "XML Syöte",
+            "btn_url_input": "URL Syöte",
+            "label_xml": "Liitä XML",
+            "ph_xml": "Liitä sivustokartan XML-koodi tähän...",
+            "label_url": "Sivustokartan URL",
+            "ph_url": "https:\/\/esimerkki.fi\/sitemap.xml",
+            "help_url": "Syötä sitemap.xml-tiedoston koko URL",
+            "btn_fetch": "Hae",
+            "btn_validate": "Validoi",
+            "btn_validating": "Validoidaan...",
+            "btn_clear": "Tyhjennä",
+            "btn_example": "Lataa Esimerkki",
+            "check_urls": "Tarkista URL-osoitteiden toimivuus"
+        },
+        "results": {
+            "title": "Validointitulokset"
+        },
+        "content": {
+            "main_heading": "Hallitse sivustosi rakennetta",
+            "main_intro": "Varmista, että hakukoneet voivat indeksoida sivustosi täydellisesti. Löydä virheet ja optimoi.",
+            "what_is_title": "Mikä on XML Sivustokartta Validaattori?",
+            "what_is_desc_1": "Tärkeä SEO-työkalu sivustokartan syntaksivirheiden ja rikkinäisten linkkien tarkistamiseen.",
+            "what_is_desc_2": "Sivustokartta on kartta boteille. Virheet voivat estää tärkeiden sivujen indeksoinnin.",
+            "features_title": "Miksi valita meidät?",
+            "feature_instant_title": "Välitön analyysi",
+            "feature_instant_desc": "Saat palautteen heti.",
+            "feature_strict_title": "Tiukka validointi",
+            "feature_strict_desc": "Tarkistamme virallisen XSD-skeeman mukaan.",
+            "feature_index_title": "Indeksituki",
+            "feature_index_desc": "Tukee sivustokarttaindeksejä.",
+            "importance_title": "Merkitys SEO:lle",
+            "importance_budget_title": "Crawl Budget Tehokkuus",
+            "importance_budget_desc": "Auttaa hakukoneita käyttämään resursseja viisaasti.",
+            "importance_indexing_title": "Nopeampi indeksointi",
+            "importance_indexing_desc": "Priorisoi uutta sisältöä.",
+            "importance_discovery_title": "Sivujen löytäminen",
+            "importance_discovery_desc": "Löytää eristetyt sivut.",
+            "importance_troubleshooting_title": "Vianetsintä",
+            "importance_troubleshooting_desc": "Löytää 404-virheet ajoissa.",
+            "guide_title": "Käyttöohje",
+            "guide_step1_title": "Syötä URL",
+            "guide_step1_desc": "Liitä sivustokartan osoite.",
+            "guide_step2_title": "Suorita validointi",
+            "guide_step2_desc": "Klikkaa painiketta aloittaaksesi.",
+            "guide_step3_title": "Tarkista tulokset",
+            "guide_step3_desc": "Korjaa punaisella merkityt virheet.",
+            "faq_title": "UKK",
+            "faq_privacy_question": "Tallennatteko tietoja?",
+            "faq_privacy_answer": "Emme, kunnioitamme yksityisyyttäsi.",
+            "faq_frequency_question": "Kuinka usein tarkistaa?",
+            "faq_frequency_answer": "Rakennemuutosten yhteydessä tai kuukausittain.",
+            "faq_size_question": "Kokorajoitus?",
+            "faq_size_answer": "50MB tai 50 000 URL-osoitetta.",
+            "faq_localhost_question": "Toimiiko localhostissa?",
+            "faq_localhost_answer": "Kyllä, liittämällä XML-koodin."
         }
     }
 }
