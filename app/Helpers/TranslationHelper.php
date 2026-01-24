@@ -46,6 +46,7 @@ if (!function_exists('__tool')) {
             'google-serp-checker' => 'seo',
             'google-sheets-to-excel' => 'spreadsheet',
             'heic-to-jpg-converter' => 'image',
+            'hreflang-checker' => 'seo',
             'html-encoder-decoder' => 'development',
             'html-minifier' => 'development',
             'html-to-markdown-converter' => 'development',

@@ -900,6 +900,16 @@ class ToolData
                 'url' => '/tools/youtube-earnings-calculator',
                 'order' => 32,
             ],
+            [
+                'name' => 'Text to Speech',
+                'slug' => 'text-to-speech',
+                'icon_name' => 'volume-high',
+                'category' => 'youtube',
+                'controller' => 'Tools\Youtube\TextToSpeechController',
+                'route_name' => 'youtube.text-to-speech',
+                'url' => '/tools/text-to-speech',
+                'order' => 33,
+            ],
         ];
     }
 
@@ -995,6 +1005,16 @@ class ToolData
                 'route_name' => 'seo.yahoo-serp-checker',
                 'url' => '/tools/yahoo-serp-checker',
                 'order' => 16,
+            ],
+            [
+                'name' => 'Hreflang Checker',
+                'slug' => 'hreflang-checker',
+                'icon_name' => 'fa-solid fa-language',
+                'category' => 'seo',
+                'controller' => 'Tools\Seo\HreflangCheckerController',
+                'route_name' => 'seo.hreflang-checker',
+                'url' => '/tools/hreflang-checker',
+                'order' => 27,
             ],
         ];
     }

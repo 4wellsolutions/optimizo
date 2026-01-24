@@ -109,6 +109,7 @@ use App\Http\Controllers\Tools\Seo\RedirectCheckerController;
 use App\Http\Controllers\Tools\Seo\SitemapValidatorController;
 use App\Http\Controllers\Tools\Seo\SlugGeneratorController;
 use App\Http\Controllers\Tools\Seo\YahooSerpCheckerController;
+use App\Http\Controllers\Tools\Seo\HreflangCheckerController;
 use App\Http\Controllers\Tools\Spreadsheet\CsvToExcelController;
 use App\Http\Controllers\Tools\Spreadsheet\CsvToJsonController;
 use App\Http\Controllers\Tools\Spreadsheet\CsvToSqlController;
@@ -235,6 +236,8 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::get('locations/search', [LocationController::class, 'search'])->name($n('seo.locations.search'));
     Route::get('yahoo-serp-checker', [YahooSerpCheckerController::class, 'index'])->name($n('seo.yahoo-serp-checker'));
     Route::post('yahoo-serp-checker', [YahooSerpCheckerController::class, 'process'])->name($n('seo.yahoo-serp-checker.check'));
+    Route::get('hreflang-checker', [HreflangCheckerController::class, 'index'])->name($n('seo.hreflang-checker'));
+    Route::post('hreflang-checker', [HreflangCheckerController::class, 'process'])->name($n('seo.hreflang-checker.check'));
 });
 
 // Document Tools
