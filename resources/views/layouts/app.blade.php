@@ -274,7 +274,7 @@
                 </div>
 
                 <!-- Language Switcher -->
-                <div class="pt-2">
+                <div class="pt-2 px-4">
                     <x-language-switcher position="mobile" />
                 </div>
             </div>
