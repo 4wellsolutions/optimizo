@@ -119,19 +119,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>Subcategory</label>
-                                <select class="form-control select2" name="subcategory" style="width: 100%;">
-                                    <option value="">All</option>
-                                    @foreach($subcategories as $sub)
-                                        <option value="{{ $sub->id }}" {{ request('subcategory') == $sub->id ? 'selected' : '' }}>
-                                            {{ $sub->name }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
+
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label>Per Page</label>
@@ -197,11 +185,7 @@
                                             <span class="badge bg-info">
                                                 {{ $tool->categoryRelation->name }}
                                             </span>
-                                            @if($tool->subcategoryRelation)
-                                                <small class="d-block text-muted">
-                                                    <i class="fas fa-level-up-alt fa-rotate-90"></i> {{ $tool->subcategoryRelation->name }}
-                                                </small>
-                                            @endif
+
                                         @else
                                             <span class="badge bg-secondary">Uncategorized</span>
                                         @endif
