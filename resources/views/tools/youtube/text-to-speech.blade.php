@@ -154,7 +154,7 @@
                 <h3 class="text-3xl font-bold text-gray-900 mb-8">{{ __tool('text-to-speech', 'content.how_title') }}</h3>
                 <div class="space-y-8">
                     @foreach(range(1, 5) as $step)
-                        @if(__tool('text-to-speech', "content.step{$step}_title") !== "tools/text.text-to-speech.content.step{$step}_title")
+                        @if(__tool('text-to-speech', "content.step{$step}_title") !== "tools/youtube.text-to-speech.content.step{$step}_title")
                         <div class="flex flex-col md:flex-row gap-6 items-start">
                             <div class="flex-shrink-0 w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg shadow-indigo-200">{{ $step }}</div>
                             <div>
@@ -162,7 +162,7 @@
                                 <p class="text-gray-600">{{ __tool('text-to-speech', "content.step{$step}_desc") }}</p>
                             </div>
                         </div>
-                        @if(!$loop->last && __tool('text-to-speech', "content.step".($step+1)."_title") !== "tools/text.text-to-speech.content.step".($step+1)."_title")
+                        @if(!$loop->last && __tool('text-to-speech', "content.step".($step+1)."_title") !== "tools/youtube.text-to-speech.content.step".($step+1)."_title")
                         <div class="relative pl-5 md:pl-0">
                             <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-gray-100 hidden md:block"></div> 
                         </div>
@@ -177,7 +177,7 @@
                 <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">{{ __tool('text-to-speech', 'content.faq_title') }}</h3>
                 <div class="grid md:grid-cols-2 gap-6">
                     @foreach(range(1, 10) as $i)
-                        @if(__tool('text-to-speech', "content.faq{$i}_q") !== "tools/text.text-to-speech.content.faq{$i}_q")
+                        @if(__tool('text-to-speech', "content.faq{$i}_q") !== "tools/youtube.text-to-speech.content.faq{$i}_q")
                         <div class="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all border border-gray-100 h-full">
                             <h4 class="font-bold text-gray-900 mb-3">{{ __tool('text-to-speech', "content.faq{$i}_q") }}</h4>
                             <p class="text-gray-600 text-sm">{{ __tool('text-to-speech', "content.faq{$i}_a") }}</p>
