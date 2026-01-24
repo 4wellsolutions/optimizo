@@ -126,6 +126,7 @@ use App\Http\Controllers\Tools\Text\MorseToTextConverterController;
 use App\Http\Controllers\Tools\Text\TextReverserController;
 use App\Http\Controllers\Tools\Text\TextToMorseConverterController;
 use App\Http\Controllers\Tools\Text\WordCounterController;
+use App\Http\Controllers\Tools\Youtube\TextToSpeechController;
 use App\Http\Controllers\Tools\Time\DateToUnixTimestampController;
 use App\Http\Controllers\Tools\Time\EpochTimeConverterController;
 use App\Http\Controllers\Tools\Time\LocalTimeToUtcController;
@@ -202,6 +203,8 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::post('youtube-channel-id-finder', [YoutubeChannelIdFinderController::class, 'find'])->name($n('youtube.youtube-channel-id-finder.find'));
     Route::get('youtube-earnings-calculator', [YoutubeEarningsCalculatorController::class, 'index'])->name($n('youtube.youtube-earnings-calculator'));
     Route::post('youtube-earnings-calculator', [YoutubeEarningsCalculatorController::class, 'process'])->name($n('youtube.youtube-earnings-calculator.calculate'));
+    Route::get('text-to-speech', [TextToSpeechController::class, 'index'])->name($n('youtube.text-to-speech'));
+    Route::post('text-to-speech', [TextToSpeechController::class, 'process'])->name($n('youtube.text-to-speech.generate'));
 });
 
 // Seo Tools
@@ -516,5 +519,7 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::post('reverse-dns-lookup', [ReverseDnsLookupController::class, 'process'])->name($n('network.reverse-dns-lookup.lookup'));
     Route::get('internet-speed-test', [InternetSpeedTestController::class, 'index'])->name($n('network.internet-speed-test'));
 });
+
+
 
 

@@ -113,6 +113,7 @@ if (!function_exists('__tool')) {
             'text-reverser' => 'text',
             'text-to-binary' => 'converters',
             'text-to-morse-converter' => 'text',
+            'text-to-speech' => 'youtube',
             'time-unit-converter' => 'time',
             'time-zone-converter' => 'time',
             'torque-converter' => 'converters',
