@@ -9,7 +9,7 @@
         "form": {
             "title": "Hämta kanaldata",
             "url_label": "YouTube-kanal URL",
-            "url_placeholder": "https://www.youtube.com/@kanalnamn eller https://www.youtube.com/c/kanalnamn",
+            "url_placeholder": "https:\/\/www.youtube.com\/@kanalnamn eller https:\/\/www.youtube.com\/c\/kanalnamn",
             "url_help": "Klistra in URL:en till valfri YouTube-kanal för att extrahera dess data",
             "submit": "Extrahera data"
         },
@@ -105,7 +105,7 @@
         "form": {
             "title": "Hitta YouTube Kanal-ID",
             "url_label": "Kanal-URL eller användarnamn",
-            "url_placeholder": "https://www.youtube.com/@kanalnamn eller https://www.youtube.com/c/kanalnamn",
+            "url_placeholder": "https:\/\/www.youtube.com\/@kanalnamn eller https:\/\/www.youtube.com\/c\/kanalnamn",
             "url_help": "Ange YouTube-kanal URL eller @handle för att hitta dess ID",
             "find_button": "Hitta kanal-ID"
         },
@@ -127,7 +127,7 @@
             "main_description": "Vår gratis YouTube kanal-ID-finnare hjälper utvecklare, marknadsförare och skapare att snabbt slå upp en kanals unika identifierare. Oavsett om det är för API-integration eller för att bygga analysverktyg, få exakta ID:n direkt utan en API-nyckel.",
             "feature_instant_desc": "Hämta kanal-ID:n ögonblickligen utan några fördröjningar eller komplexa inställningar",
             "feature_formats": "Alla URL-format",
-            "feature_formats_desc": "Fungerar med @handles, /c/namn, /channel/ID och /user/användarnamn",
+            "feature_formats_desc": "Fungerar med @handles, \/c\/namn, \/channel\/ID och \/user\/användarnamn",
             "feature_copy": "Enkel kopiering",
             "feature_copy_desc": "Ett-klicks kopiering till urklipp för snabb användning i dina projekt",
             "api_dev_title": "🔧 API och utveckling",
@@ -178,7 +178,7 @@
             "q5": "Vad ska jag göra med kanal-ID:t när jag väl har fått det?",
             "a5": "Du kan använda det med YouTube-API för att hämta statistik, prenumerera på användare eller integrera det i tredjepartsverktyg.",
             "q6": "Vilka URL-format stöds?",
-            "a6": "Vi stöder alla format: @handles, /c/namn, /channel/ID och /user/namn."
+            "a6": "Vi stöder alla format: @handles, \/c\/namn, \/channel\/ID och \/user\/namn."
         }
     },
     "youtube-earnings-calculator": {
@@ -186,7 +186,7 @@
             "title": "YouTube Inkomstkalkylator - Estimera dina intäkter | Optimizo",
             "description": "Beräkna YouTube-inkomster baserat på visningar och CPM. Få gratis dagliga, månatliga och årliga prognoser.",
             "h1": "YouTube Inkomstkalkylator",
-            "subtitle": "Beräkna YouTube-vinst baserat på visningar och CPM. Dag/månad/år-prognoser."
+            "subtitle": "Beräkna YouTube-vinst baserat på visningar och CPM. Dag\/månad\/år-prognoser."
         },
         "how_to_use": {
             "title": "Beräkna YouTube-inkomster"
@@ -214,8 +214,8 @@
             "how_pays_3": "Intäktsdelning: YouTube tar 45 %, skapare får 55 %",
             "how_pays_4": "Utbetalningsgräns: Du måste ha ett saldo på minst $100 för att få utbetalning",
             "cpm_niche_title": "🎯 CPM efter nisch",
-            "cpm_finance": "Finans / Business: $4 - $12",
-            "cpm_tech": "Teknik / Programvara: $2 - $8",
+            "cpm_finance": "Finans \/ Business: $4 - $12",
+            "cpm_tech": "Teknik \/ Programvara: $2 - $8",
             "cpm_gaming": "Gaming: $0,50 - $3",
             "cpm_entertainment": "Underhållning: $0,25 - $2",
             "factors_title": "📈 Faktorer som påverkar inkomsterna",
@@ -327,7 +327,7 @@
         },
         "form": {
             "url_label": "Kanal-URL eller YouTube-handle",
-            "url_placeholder": "https://www.youtube.com/@kanalnamn eller @kanalnamn",
+            "url_placeholder": "https:\/\/www.youtube.com\/@kanalnamn eller @kanalnamn",
             "url_help": "Ange URL, handle eller kanal-ID",
             "check_button": "Kolla monetisering",
             "checking": "Kollar..."
@@ -633,7 +633,7 @@
         "form": {
             "title": "Extrahera videotaggar",
             "url_label": "YouTube-video-URL",
-            "url_placeholder": "https://www.youtube.com/watch?v=...",
+            "url_placeholder": "https:\/\/www.youtube.com\/watch?v=...",
             "url_help": "Klistra in URL:en för att se alla dess taggar",
             "extract_button": "Extrahera taggar"
         },
@@ -674,6 +674,61 @@
             "extracting": "Extraherar...",
             "extract_button": "Extrahera taggar",
             "copied": "Kopierat!"
+        }
+    },
+    "text-to-speech": {
+        "meta": {
+            "title": "Free Text to Speech Converter - Unlimited Audio Generation | Optimizo",
+            "description": "Convert text into natural-sounding speech instantly. Best free text to speech tool with premium neural voices. Unlimited characters, mp3 download.",
+            "h1": "Free Text to Speech Converter",
+            "subtitle": "Turn any text into lifelike audio with realistic AI voices instantly."
+        },
+        "form": {
+            "label_text": "Enter Text",
+            "placeholder_text": "Type or paste your text here (max 5000 characters)...",
+            "label_voice": "Select AI Voice",
+            "btn_generate": "Generate Audio",
+            "max_chars": "Max 5000 characters",
+            "chars_counter": "characters"
+        },
+        "content": {
+            "hero_title": "Turn Text into Human-Like Speech",
+            "hero_subtitle": "Instantly convert articles, scripts, and documents into natural-sounding audio. Perfect for creators, students, and accessibility.",
+            "features_title": "Advanced Text to Speech Features",
+            "feature1_title": "Natural AI Voices",
+            "feature1_desc": "Experience a wide range of premium neural voices that sound incredibly human and engaging.",
+            "feature2_title": "Multiple Languages",
+            "feature2_desc": "Support for global languages including English, Spanish, French, German, Japanese, and more.",
+            "feature3_title": "Unlimited & Free",
+            "feature3_desc": "Generate unlimited audio files without hidden fees or subscription requirements.",
+            "how_title": "How to Convert Text to Audio",
+            "step1_title": "Input Text",
+            "step1_desc": "Paste your text into the box. We support up to 5000 characters per conversion.",
+            "step2_title": "Select Voice",
+            "step2_desc": "Choose from our diverse library of male and female voices across different accents.",
+            "step3_title": "Download MP3",
+            "step3_desc": "Generate your audio in seconds and download the high-quality MP3 file immediately.",
+            "article_title": "The Power of Text to Speech Technology",
+            "article_body": "<p><strong>Text to Speech (TTS)<\/strong> technology has revolutionized how we consume digital content. By bridging the gap between written text and auditory communication, TTS makes information more accessible and engaging for everyone.<\/p><h3>Who Needs Text to Speech?<\/h3><p>Whether you're a <strong>content creator<\/strong> looking to add voiceovers to your videos, a <strong>student<\/strong> wanting to listen to your study notes, or someone with <strong>visual impairments<\/strong> needing screen reading assistance, our free tool provides a seamless solution.<\/p><h3>Key Benefits<\/h3><ul><li><strong>Accessibility:<\/strong> Make your content accessible to those with reading difficulties or visual impairments.<\/li><li><strong>Productivity:<\/strong> Multitask by listening to articles, reports, or emails while commuting or exercising.<\/li><li><strong>Learning:<\/strong> Improve language pronunciation and listening comprehension with native-sounding AI voices.<\/li><li><strong>Content Creation:<\/strong> Create professional voiceovers for YouTube videos, podcasts, and presentations without expensive recording gear.<\/li><\/ul><h3>Why Choose Our Tool?<\/h3><p>Our converter uses advanced neural network models to understand context and intonation, ensuring the output sounds fluid and natural, not robotic. With one-click MP3 downloads, you can take your audio anywhere.<\/p>",
+            "faq_title": "Frequently Asked Questions",
+            "faq1_q": "Is this text to speech tool completely free?",
+            "faq1_a": "Yes! Our tool is 100% free to use. You can generate audio as many times as you like.",
+            "faq2_q": "Can I use the audio for commercial projects?",
+            "faq2_a": "Yes, the generated audio is copyright-free and safe for use in commercial videos, podcasts, and other media.",
+            "faq3_q": "What is the character limit?",
+            "faq3_a": "You can process up to 5000 characters per request. For longer texts, simply generate in multiple batches.",
+            "faq4_q": "Do I need to install any software?",
+            "faq4_a": "No, this is a cloud-based tool. It works directly in your browser on any device, including mobile phones and tablets."
+        },
+        "js": {
+            "validating": "Generating Audio...",
+            "success": "Audio Generated Successfully!",
+            "error_generic": "An error occurred while generating the audio."
+        },
+        "results": {
+            "title": "Your Audio is Ready",
+            "btn_download": "Download Audio",
+            "btn_new": "Generate New Audio"
         }
     }
 }
