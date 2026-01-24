@@ -4,6 +4,29 @@
     $currentLocale = app()->getLocale();
     $languages = $availableLanguages ?? \App\Models\Language::active()->orderBy('order')->get();
     $currentLang = $languages->firstWhere('code', $currentLocale) ?? $languages->first();
+
+    // Map language codes to country codes for flags
+    $flagMap = [
+        'en' => 'us',
+        'es' => 'es',
+        'fr' => 'fr',
+        'de' => 'de',
+        'it' => 'it',
+        'pt' => 'pt',
+        'ru' => 'ru',
+        'tr' => 'tr',
+        'ar' => 'sa',
+        'hi' => 'in',
+        'zh' => 'cn',
+        'ja' => 'jp',
+        'ko' => 'kr',
+        'vi' => 'vn',
+        'id' => 'id',
+        'th' => 'th',
+        'nl' => 'nl',
+        'pl' => 'pl',
+        'uk' => 'ua',
+    ];
 @endphp
 
 <div class="relative inline-block text-left language-switcher" x-data="{ open: false }">
@@ -11,7 +34,10 @@
         <button @click="open = !open" @click.away="open = false" type="button"
             class="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
             style="min-width: 130px;">
-            <span class="text-lg mr-2">{{ $currentLang->flag_icon ?? '🌐' }}</span>
+            <span class="mr-2 flex items-center">
+                <span class="fi fi-{{ $flagMap[$currentLang->code] ?? 'xx' }} rounded-sm shadow-sm"
+                    style="font-size: 1.25em;"></span>
+            </span>
             <span>{{ $currentLang->native_name }}</span>
             <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd"
@@ -55,7 +81,10 @@
                 @endphp
                 <a href="{{ url($newPath) }}"
                     class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors {{ $language->code === $currentLocale ? 'bg-indigo-50 text-indigo-600 font-semibold' : '' }}">
-                    <span class="text-lg mr-3">{{ $language->flag_icon ?? '🌐' }}</span>
+                    <span class="mr-3 flex items-center">
+                        <span class="fi fi-{{ $flagMap[$language->code] ?? 'xx' }} rounded-sm shadow-sm"
+                            style="font-size: 1.25em;"></span>
+                    </span>
                     <span class="flex-1">{{ $language->native_name }}</span>
                     @if($language->code === $currentLocale)
                         <svg class="h-4 w-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
