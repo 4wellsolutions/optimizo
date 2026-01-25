@@ -108,7 +108,7 @@ class TextToSpeechController extends Controller
     public function process(Request $request)
     {
         // Increase PHP execution time to prevent timeout before process finishes
-        set_time_limit(120);
+        set_time_limit(200);
 
         $request->validate([
             'text' => 'required|string|max:5000',
@@ -125,9 +125,12 @@ class TextToSpeechController extends Controller
         try {
             file_put_contents($tempInputFile, $text);
 
-            // Command: edge-tts --file <temp_file> --voice <voice> --write-media <output_file>
+            // Command: python3.12 -m edge_tts --file <temp_file> --voice <voice> --write-media <output_file>
+            $pythonPath = env('TTS_PYTHON_PATH', 'python3.12');
             $command = [
-                'edge-tts',
+                $pythonPath,
+                '-m',
+                'edge_tts',
                 '--file',
                 $tempInputFile,
                 '--voice',
