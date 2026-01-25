@@ -74,6 +74,7 @@ use App\Http\Controllers\Tools\Document\PdfToPptController;
 use App\Http\Controllers\Tools\Document\PdfToWordController;
 use App\Http\Controllers\Tools\Document\PptToPdfController;
 use App\Http\Controllers\Tools\Document\WordToPdfController;
+use App\Http\Controllers\Tools\Document\DigitalSignatureController;
 use App\Http\Controllers\Tools\Image\Base64ToImageConverterController;
 use App\Http\Controllers\Tools\Image\HeicToJpgConverterController;
 use App\Http\Controllers\Tools\Image\IcoConverterController;
@@ -264,6 +265,7 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::post('pdf-merger', [PdfMergerController::class, 'process'])->name($n('document.pdf-merger.process'));
     Route::get('pdf-splitter', [PdfSplitterController::class, 'index'])->name($n('document.pdf-splitter'));
     Route::post('pdf-splitter', [PdfSplitterController::class, 'process'])->name($n('document.pdf-splitter.process'));
+    Route::get('digital-signature', [DigitalSignatureController::class, 'index'])->name($n('document.digital-signature'));
 });
 
 // Image Tools

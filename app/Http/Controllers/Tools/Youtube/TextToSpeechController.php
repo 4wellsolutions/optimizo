@@ -92,6 +92,14 @@ class TextToSpeechController extends Controller
             'hi-IN' => [
                 'hi-IN-SwaraNeural' => 'Swara (Female)',
                 'hi-IN-MadhurNeural' => 'Madhur (Male)'
+            ],
+            'ur-PK' => [
+                'ur-PK-UzmaNeural' => 'Uzma (Female)',
+                'ur-PK-AsadNeural' => 'Asad (Male)'
+            ],
+            'ar-SA' => [
+                'ar-SA-ZariyahNeural' => 'Zariyah (Female)',
+                'ar-SA-HamedNeural' => 'Hamed (Male)'
             ]
         ];
 
@@ -123,21 +131,23 @@ class TextToSpeechController extends Controller
         $tempOutputFile = $tempInputFile . '.mp3';
 
         try {
-            file_put_contents($tempInputFile, $text);
+            // Prepend BOM to ensure correct UTF-8 reading in Python
+            $bom = "\xEF\xBB\xBF";
+            file_put_contents($tempInputFile, $bom . $text);
 
-            // Command: python3.12 -m edge_tts --file <temp_file> --voice <voice> --write-media <output_file>
-            // Use config helper to properly support config:cache
+            // Command: python3.12 resources/scripts/tts_wrapper.py --input_file <temp_file> --output_file <output_file> --voice <voice>
             $pythonPath = config('services.tts.python_path', 'python3.12');
+            $wrapperPath = base_path('resources/scripts/tts_wrapper.py');
+
             $command = [
                 $pythonPath,
-                '-m',
-                'edge_tts',
-                '--file',
+                $wrapperPath,
+                '--input_file',
                 $tempInputFile,
+                '--output_file',
+                $tempOutputFile,
                 '--voice',
-                $voice,
-                '--write-media',
-                $tempOutputFile
+                $voice
             ];
 
             // Prepare robust environment variables for Python on Windows
@@ -150,6 +160,8 @@ class TextToSpeechController extends Controller
                 'USERPROFILE' => getenv('USERPROFILE'),
                 'HOMEDRIVE' => getenv('HOMEDRIVE'),
                 'HOMEPATH' => getenv('HOMEPATH'),
+                'PYTHONUTF8' => '1',
+                'PYTHONIOENCODING' => 'utf-8',
             ];
 
             // Filter out empty values

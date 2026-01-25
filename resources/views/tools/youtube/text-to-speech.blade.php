@@ -206,7 +206,7 @@
             
             // Clear previous errors/results
             $('#resultsSection').addClass('hidden');
-            $('.text-red-500').remove();
+            $('.text-red-500.tts-error').remove();
             $('textarea, select').removeClass('border-red-500');
 
             // Form Data
@@ -244,39 +244,52 @@
                     // audioPlayer.play();
                 },
                 error: function(xhr) {
-                    let errorMessage = "{{ __tool('text-to-speech', 'js.error_generic') }}";
-                    
-                    // Try to parse JSON error from blob if possible (tricky with responseType blob)
-                    // With 422, Laravel sends JSON. But XHR thinks it's a blob.
-                    // We need to read the blob as text to see the error.
-                    const reader = new FileReader();
-                    reader.onload = function() {
-                        try {
-                            const response = JSON.parse(reader.result);
-                            if (response.errors) {
-                                // Field specific errors
-                                Object.keys(response.errors).forEach(field => {
-                                    const input = $(`#${field}`);
-                                    input.addClass('border-red-500');
-                                    input.after(`<p class="text-red-500 text-xs mt-1">${response.errors[field][0]}</p>`);
-                                });
-                                errorMessage = response.message || errorMessage;
-                            } else if (response.message) {
-                                errorMessage = response.message;
-                            }
-                        } catch (e) {
-                            // Could not parse JSON, maybe it's not JSON
-                        }
+                    try {
+                        let errorMessage = "{{ __tool('text-to-speech', 'js.error_generic') }}";
                         
-                        // Show toast or alert
-                        // Assuming toastr is available as per other tools
-                        if (typeof toastr !== 'undefined') {
-                            toastr.error(errorMessage);
+                        if (xhr.response) {
+                            // Try to parse JSON error from blob if possible
+                            const reader = new FileReader();
+                            reader.onload = function() {
+                                try {
+                                    const response = JSON.parse(reader.result);
+                                    if (response.errors) {
+                                        // Field specific errors
+                                        Object.keys(response.errors).forEach(field => {
+                                            const input = $(`#${field}`);
+                                            input.addClass('border-red-500');
+                                            input.after(`<p class="text-red-500 text-xs mt-1 tts-error">${response.errors[field][0]}</p>`);
+                                        });
+                                        errorMessage = response.message || errorMessage;
+                                    } else if (response.message) {
+                                        errorMessage = response.message;
+                                    }
+                                } catch (e) {
+                                    // Could not parse JSON, use generic or status text
+                                    if (xhr.statusText) errorMessage = xhr.statusText;
+                                }
+                                
+                                // Show toast or alert
+                                if (typeof toastr !== 'undefined') {
+                                    toastr.error(errorMessage);
+                                } else {
+                                    alert(errorMessage);
+                                }
+                            };
+                            reader.readAsText(xhr.response);
                         } else {
-                            alert(errorMessage);
+                            // Fallback if no response blob
+                            if (typeof toastr !== 'undefined') {
+                                toastr.error(errorMessage);
+                            } else {
+                                alert(errorMessage);
+                            }
                         }
-                    };
-                    reader.readAsText(xhr.response);
+                    } catch (e) {
+                        console.error('Error handler failed:', e);
+                        // Ensure user is notified even if handler crashes
+                        alert("{{ __tool('text-to-speech', 'js.error_generic') }}");
+                    }
                 },
                 complete: function() {
                     btn.prop('disabled', false).html(originalBtnContent);
