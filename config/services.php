@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'tts' => [
+        'python_path' => env('TTS_PYTHON_PATH', 'python3.12'),
+    ],
+
 ];

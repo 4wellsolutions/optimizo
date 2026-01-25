@@ -126,7 +126,8 @@ class TextToSpeechController extends Controller
             file_put_contents($tempInputFile, $text);
 
             // Command: python3.12 -m edge_tts --file <temp_file> --voice <voice> --write-media <output_file>
-            $pythonPath = env('TTS_PYTHON_PATH', 'python3.12');
+            // Use config helper to properly support config:cache
+            $pythonPath = config('services.tts.python_path', 'python3.12');
             $command = [
                 $pythonPath,
                 '-m',
