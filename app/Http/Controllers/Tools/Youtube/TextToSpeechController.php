@@ -161,8 +161,9 @@ class TextToSpeechController extends Controller
             $process->run();
 
             if (!$process->isSuccessful()) {
-                Log::error('TTS Process failed: ' . $process->getErrorOutput());
-                throw new \Exception('Failed to generate audio. Please check server logs.');
+                $errorOutput = $process->getErrorOutput();
+                Log::error('TTS Process failed: ' . $errorOutput);
+                throw new \Exception('Failed to generate audio: ' . $errorOutput);
             }
 
             if (!file_exists($tempOutputFile) || filesize($tempOutputFile) === 0) {
