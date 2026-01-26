@@ -86,7 +86,7 @@
         },
         "editor": {
             "label_input": "Wprowadź kod Morse'a",
-            "ph_input": "... --- ...",
+            "ph_input": null,
             "btn_decode": "Dekoduj na tekst",
             "btn_clear": "Wyczyść",
             "btn_copy": "Kopiuj",
@@ -110,12 +110,90 @@
                 "privacy": {
                     "title": "Ochrona prywatności",
                     "desc": "Całe przetwarzanie odbywa się w Twojej przeglądarce"
+                },
+                "bulk": {
+                    "title": "Dekodowanie zbiorcze",
+                    "desc": "Odszyfruj wiele słów na raz"
+                },
+                "alphanum": {
+                    "title": "Litery i cyfry",
+                    "desc": "Dekoduje A-Z i 0-9"
+                },
+                "free": {
+                    "title": "100% za darmo",
+                    "desc": "Nie są wymagane żadne limity ani rejestracja"
                 }
+            },
+            "uses_title": "🎯 Typowe przypadki użycia",
+            "uses": {
+                "learn": {
+                    "title": "📚 Nauka alfabetu Morse'a",
+                    "desc": "Poćwicz dekodowanie alfabetu Morse'a, aby udoskonalić swoje umiejętności"
+                },
+                "decode": {
+                    "title": "🔓 Dekodowanie wiadomości",
+                    "desc": "Odszyfruj wiadomości alfabetem Morse'a od znajomych lub puzzle"
+                },
+                "games": {
+                    "title": "🎮 Gry i łamigłówki",
+                    "desc": "Rozwiązuj zagadki alfabetu Morse'a w grach i pokojach ucieczki"
+                },
+                "radio": {
+                    "title": "📡 Radio szynkowe",
+                    "desc": "Dekoduj amatorskie transmisje radiowe i ćwicz CW"
+                },
+                "edu": {
+                    "title": "🎓 Edukacja",
+                    "desc": "Naucz uczniów o systemach komunikacji i kodowania"
+                },
+                "emergency": {
+                    "title": "🚨 Sygnały alarmowe",
+                    "desc": "Odkoduj sygnały o niebezpieczeństwie i komunikaty alarmowe"
+                }
+            },
+            "how_title": "📚 Jak korzystać",
+            "how_steps": {
+                "1": {
+                    "title": "Wpisz alfabet Morse'a:",
+                    "desc": "Wpisz kropki (.) i myślniki (-) oddzielone spacjami"
+                },
+                "2": {
+                    "title": "Kliknij Dekoduj:",
+                    "desc": "Naciśnij przycisk „Dekoduj na tekst”."
+                },
+                "3": {
+                    "title": "Przejrzyj dane wyjściowe:",
+                    "desc": "Sprawdź wynik zdekodowanego tekstu"
+                },
+                "4": {
+                    "title": "Wynik kopiowania:",
+                    "desc": "Kliknij „Kopiuj”, aby skopiować do schowka"
+                },
+                "5": {
+                    "title": "Użyj tekstu:",
+                    "desc": "Skorzystaj z rozszyfrowanej wiadomości"
+                }
+            },
+            "examples_title": "Przykłady alfabetu Morse’a",
+            "samples": [],
+            "faq_title": "❓ Najczęściej zadawane pytania",
+            "faq": {
+                "q1": "Jak sformatować kod Morse'a?",
+                "a1": "Każdą literę oddziel spacją. Użyj / dla spacji wyrazowych. Przykład: „... --- …” dla SOS.",
+                "q2": "A co jeśli popełnię błąd?",
+                "a2": "Nieprawidłowe wzory alfabetu Morse’a zostaną pominięte. Upewnij się, że kropki i kreski są oddzielone spacjami.",
+                "q3": "Czy mogę rozszyfrować liczby?",
+                "a3": "Tak! Narzędzie dekoduje cyfry 0–9 na podstawie wzorców alfabetu Morse’a.",
+                "q4": "Jak oddzielać słowa?",
+                "a4": "Użyj ukośnika (/), aby oddzielić słowa alfabetem Morse'a.",
+                "q5": "Czy to narzędzie jest bezpłatne?",
+                "a5": "Tak! Całkowicie za darmo, bez ograniczeń. Całe przetwarzanie odbywa się w Twojej przeglądarce w celu zapewnienia prywatności."
             }
         },
         "js": {
             "error_empty": "Wprowadź kod Morse'a do zdekodowania",
             "success_decode": "Pomyślnie zdekodowano kod Morse'a!",
+            "error_copy": "Nie ma nic do kopiowania! Proszę najpierw rozszyfrować alfabet Morse'a.",
             "success_copy": "Skopiowano do schowka!"
         }
     },
@@ -136,11 +214,98 @@
             "ph_output": "eicaiśw jattiW"
         },
         "content": {
-            "p1": "Odwróć swój tekst błyskawicznie. To narzędzie odwraca tekst znak po znaku, tworząc wersję lustrzaną."
+            "p1": "Odwróć swój tekst błyskawicznie. To narzędzie odwraca tekst znak po znaku, tworząc wersję lustrzaną.",
+            "features": {
+                "char": {
+                    "title": "Odwrócenie charakteru",
+                    "desc": "Odwraca tekst znak po znaku"
+                },
+                "instant": {
+                    "title": "Natychmiastowe wyniki",
+                    "desc": "Odwróć tekst w milisekundach"
+                },
+                "privacy": {
+                    "title": "Ochrona prywatności",
+                    "desc": "Całe przetwarzanie odbywa się w Twojej przeglądarce"
+                },
+                "bulk": {
+                    "title": "Przetwarzanie zbiorcze",
+                    "desc": "Odwróć wiele linii na raz"
+                },
+                "formatting": {
+                    "title": "Zachowuje formatowanie",
+                    "desc": "Zachowuje spacje i znaki specjalne"
+                },
+                "free": {
+                    "title": "100% za darmo",
+                    "desc": "Nie są wymagane żadne limity ani rejestracja"
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "puzzles": {
+                    "title": "Łamigłówki i gry",
+                    "desc": "Twórz łamigłówki, zagadki i łamigłówki słowne z odwróconym tekstem"
+                },
+                "encoding": {
+                    "title": "Proste kodowanie",
+                    "desc": "Twórz podstawowe zakodowane wiadomości dla zabawy lub prostego zaciemniania"
+                },
+                "palindrome": {
+                    "title": "Testowanie palindromu",
+                    "desc": "Sprawdź, czy słowa lub wyrażenia są palindromami, porównując je z wersją odwróconą"
+                },
+                "creative": {
+                    "title": "Twórcze pisanie",
+                    "desc": "Dodaj artystyczny talent do poezji i kreatywnych treści"
+                },
+                "social": {
+                    "title": "Media społecznościowe",
+                    "desc": "Twórz unikalne posty i komentarze z odwróconym tekstem"
+                },
+                "testing": {
+                    "title": "Testowanie",
+                    "desc": "Funkcje manipulacji ciągami testowymi w programowaniu"
+                }
+            },
+            "how_to": {
+                "title": "Jak używać",
+                "step1": "Wprowadź tekst",
+                "step1_desc": "Wpisz lub wklej tekst, który chcesz odwrócić",
+                "step2": "Kliknij opcję Odwróć",
+                "step2_desc": "Naciśnij przycisk „Odwróć tekst”.",
+                "step3": "Przejrzyj dane wyjściowe",
+                "step3_desc": "Sprawdź wynik odwróconego tekstu",
+                "step4": "Skopiuj wynik",
+                "step4_desc": "Kliknij „Kopiuj”, aby skopiować do schowka",
+                "step5": "Użyj Gdziekolwiek",
+                "step5_desc": "Wklej odwrócony tekst tam, gdzie jest to konieczne"
+            },
+            "examples_title": "Przykłady odwrócenia",
+            "examples": {
+                "simple": "Prosty tekst:",
+                "phrases": "Frazesy:",
+                "palindromes": "Palindromy:",
+                "numbers": "Takty muzyczne:"
+            },
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Jak działa odwracanie tekstu?",
+                "a1": "Narzędzie odwraca kolejność znaków w tekście. Ostatni znak staje się pierwszym, przedostatni staje się drugim i tak dalej.",
+                "q2": "Czy chroni spacje?",
+                "a2": "Tak! Wszystkie znaki, w tym spacje, znaki interpunkcyjne i znaki specjalne, są zachowywane i odwracane w kolejności.",
+                "q3": "Czy mogę to odwrócić?",
+                "a3": "Tak! Po prostu wklej odwrócony tekst z powrotem do wejścia i odwróć go ponownie, aby uzyskać oryginalny tekst.",
+                "q4": "Co to są palindromy?",
+                "a4": "Palindromy to słowa lub wyrażenia, które czytane są tak samo od przodu i od tyłu, np. „samochód wyścigowy” lub „pani”. Użyj tego narzędzia, aby je przetestować!",
+                "q5": "Czy to narzędzie jest bezpłatne?",
+                "a5": "Tak! Całkowicie za darmo, bez ograniczeń. Całe przetwarzanie odbywa się w Twojej przeglądarce, co zapewnia prywatność i szybkość."
+            }
         },
         "js": {
             "error_empty": "Wprowadź tekst do odwrócenia",
             "success_reverse": "Tekst odwrócony pomyślnie!",
+            "error_no_copy": "Nie ma nic do kopiowania! Najpierw odwróć część tekstu.",
             "success_copy": "Skopiowano!"
         }
     },
@@ -158,11 +323,101 @@
             "btn_clear": "Wyczyść",
             "btn_copy": "Kopiuj",
             "label_output": "Kod Morse'a",
-            "ph_output": "... --- ..."
+            "ph_output": null
+        },
+        "content": {
+            "p1": "Natychmiastowa konwersja tekstu na alfabet Morse'a za pomocą naszego bezpłatnego konwertera online. Alfabet Morse'a wykorzystuje kropki (.) i myślniki (-) do oznaczania liter i cyfr. Idealny do nauki alfabetu Morse'a, praktyki komunikacji w sytuacjach awaryjnych lub tworzenia zakodowanych wiadomości.",
+            "features": {
+                "standard": {
+                    "title": "Standardowy kod Morse'a",
+                    "desc": "Wykorzystuje międzynarodowy standard alfabetu Morse'a"
+                },
+                "instant": {
+                    "title": "Natychmiastowe kodowanie",
+                    "desc": "Konwersja na alfabet Morse'a w milisekundach"
+                },
+                "privacy": {
+                    "title": "Ochrona prywatności",
+                    "desc": "Całe przetwarzanie odbywa się w Twojej przeglądarce"
+                },
+                "bulk": {
+                    "title": "Przetwarzanie zbiorcze",
+                    "desc": "Konwertuj wiele słów na raz"
+                },
+                "alphanumeric": {
+                    "title": "Litery i cyfry",
+                    "desc": "Obsługuje A-Z i 0-9"
+                },
+                "free": {
+                    "title": "100% za darmo",
+                    "desc": "Nie są wymagane żadne limity ani rejestracja"
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "learning": {
+                    "title": "Nauka alfabetu Morse’a",
+                    "desc": "Ćwicz i ucz się alfabetu Morse'a, konwertując znane słowa i frazy"
+                },
+                "emergency": {
+                    "title": "Praktyka w sytuacjach awaryjnych",
+                    "desc": "Naucz się sygnałów SOS i innych sygnałów alarmowych alfabetem Morse'a"
+                },
+                "gaming": {
+                    "title": "Gry i łamigłówki",
+                    "desc": "Twórz zakodowane wiadomości do gier i pokoi ewakuacyjnych"
+                },
+                "radio": {
+                    "title": "Ham Radio",
+                    "desc": "Praktyka w zakresie licencjonowania krótkofalarstwa i komunikacji"
+                },
+                "edu": {
+                    "title": "Edukacja",
+                    "desc": "Naucz uczniów o historii komunikacji i kodowaniu"
+                },
+                "secret": {
+                    "title": "Tajne wiadomości",
+                    "desc": "Twórz zabawne, zakodowane wiadomości dla znajomych"
+                }
+            },
+            "how_to": {
+                "title": "Jak używać",
+                "step1": "Wprowadź tekst",
+                "step1_desc": "Wpisz tekst, który chcesz przekonwertować",
+                "step2": "Kliknij Konwertuj",
+                "step2_desc": "Naciśnij „Konwertuj na alfabet Morse’a”",
+                "step3": "Przejrzyj dane wyjściowe",
+                "step3_desc": "Sprawdź wynik alfabetu Morse'a",
+                "step4": "Skopiuj wynik",
+                "step4_desc": "Kliknij „Kopiuj”, aby skopiować do schowka",
+                "step5": "Użyj alfabetu Morse'a",
+                "step5_desc": "Udostępnij lub przećwicz zakodowaną wiadomość"
+            },
+            "examples_title": "Przykłady konwersji",
+            "examples": {
+                "sos": "Sygnał SOS:",
+                "word": "Proste słowo:",
+                "numbers": "Takty muzyczne:",
+                "phrase": "Wyrażenie:"
+            },
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Co to jest alfabet Morse'a?",
+                "a1": "Alfabet Morse'a to metoda kodowania tekstu przy użyciu kropek (.) i myślników (-) do oznaczania liter i cyfr. Został wynaleziony w latach trzydziestych XIX wieku do komunikacji telegraficznej.",
+                "q2": "Co oznacza SOS w alfabecie Morse'a?",
+                "a2": "SOS to... --- ... (trzy kropki, trzy kreski, trzy kropki). To międzynarodowy sygnał wzywania pomocy.",
+                "q3": "Czy mogę konwertować liczby?",
+                "a3": "Tak! Narzędzie obsługuje cyfry 0–9, każda z własnym wzorem alfabetu Morse’a.",
+                "q4": "Czy alfabet Morse’a jest nadal używany?",
+                "a4": "Tak! Nadal jest używany w lotnictwie, komunikacji morskiej, radiu amatorskim i jako narzędzie dostępności.",
+                "q5": "Czy to narzędzie jest bezpłatne?",
+                "a5": "Tak! Całkowicie za darmo, bez ograniczeń. Całe przetwarzanie odbywa się w Twojej przeglądarce w celu zapewnienia prywatności."
+            }
         },
         "js": {
             "error_empty": "Wprowadź tekst do konwersji",
             "success_convert": "Pomyślnie przekonwertowano na kod Morse'a!",
+            "error_no_copy": "Nie ma nic do kopiowania! Najpierw przekonwertuj jakiś tekst.",
             "success_copy": "Skopiowano!"
         }
     },
@@ -187,6 +442,27 @@
             "short_sentences": "Krótkie zdania",
             "chars_no_spaces": "Znaki (bez spacji)",
             "avg_word_length": "Śr. długość słowa"
+        },
+        "content": {
+            "main_title": "Bezpłatne narzędzie do liczenia słów",
+            "main_description": "Natychmiast licz słowa, znaki, zdania i akapity. Idealny dla pisarzy, studentów i specjalistów SEO.",
+            "intro": "Nasze narzędzie do liczenia słów zapewnia w czasie rzeczywistym statystyki dotyczące tekstu, w tym liczbę słów, liczbę znaków, liczbę zdań, czas czytania i inne. Jest idealny do esejów, artykułów, postów w mediach społecznościowych i optymalizacji treści SEO.",
+            "features_title": "Cechy",
+            "feature1_title": "Liczenie w czasie rzeczywistym",
+            "feature1_desc": "Zobacz, jak liczba słów i znaków aktualizuje się natychmiast po wpisaniu lub wklejeniu tekstu.",
+            "feature2_title": "Szacowany czas czytania",
+            "feature2_desc": "Oblicz, ile czasu zajmuje przeczytanie treści, na podstawie średniej szybkości czytania.",
+            "feature3_title": "Analiza zdań",
+            "feature3_desc": "Identyfikuj długie i krótkie zdania, aby poprawić czytelność i płynność.",
+            "feature4_title": "Optymalizacja SEO",
+            "feature4_desc": "Śledź limity znaków w meta opisach, tytułach i postach w mediach społecznościowych.",
+            "faq_title": "Często zadawane pytania",
+            "faq1_q": "Jak dokładna jest liczba słów?",
+            "faq1_a": "Nasz licznik słów wykorzystuje standardowe algorytmy branżowe do dokładnego liczenia słów. Zlicza słowa oddzielone spacjami i ignoruje dodatkowe białe znaki, zapewniając dokładne wyniki dopasowujące się do narzędzi takich jak Microsoft Word i Dokumenty Google.",
+            "faq2_q": "Co uważa się za „długie zdanie”?",
+            "faq2_a": "Zdanie składające się z więcej niż 20 słów jest zwykle uważane za długie. Długie zdania mogą zmniejszać czytelność, dlatego nasze narzędzie wyróżnia je, aby pomóc Ci poprawić przejrzystość tekstu.",
+            "faq3_q": "Jak liczony jest czas czytania?",
+            "faq3_a": "Czas czytania oblicza się na podstawie średniej szybkości czytania dla dorosłych wynoszącej 200–250 słów na minutę. Dzięki temu możesz oszacować, ile czasu zajmuje przeczytanie Twojej treści."
         }
     }
 }

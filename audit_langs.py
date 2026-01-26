@@ -1,10 +1,15 @@
 import os
 import json
+import sys
 
 def audit_lang(lang_code):
     en_dir = r'd:\workspace\optimizo\resources\lang\en\tools'
     target_dir = fr'd:\workspace\optimizo\resources\lang\{lang_code}\tools'
     
+    if not os.path.exists(target_dir):
+        print(f"Directory {target_dir} does not exist.")
+        return
+
     files = [f for f in os.listdir(en_dir) if f.endswith('.json')]
     report = []
     
@@ -59,5 +64,8 @@ def audit_lang(lang_code):
     print(f"Audit report saved to audit_{lang_code}.txt")
 
 if __name__ == "__main__":
-    audit_lang('fi')
-    audit_lang('nl')
+    if len(sys.argv) > 1:
+        for lang in sys.argv[1:]:
+            audit_lang(lang)
+    else:
+        print("Usage: python audit_langs.py <lang1> <lang2> ...")

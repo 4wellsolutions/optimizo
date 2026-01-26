@@ -140,15 +140,15 @@
                 "css": "CSS",
                 "js": "JavaScript",
                 "json": "JSON",
-                "xml": "XML",
-                "sql": "SQL",
+                "xml": "XML-a",
+                "sql": "SQL-a",
                 "php": "PHP"
             },
             "label_indent": "Wcięcie",
             "indents": {
-                "2": "",
-                "4": "",
-                "tab": "Tab"
+                "2": "2 spacje",
+                "4": "4 spacje",
+                "tab": "Patka"
             },
             "btn_format": "Formatuj kod",
             "label_input": "Kod wejściowy",
@@ -187,10 +187,10 @@
                 },
                 "data": {
                     "title": "Formaty danych",
-                    "desc": "JSON, XML"
+                    "desc": "JSON-a, XML-a"
                 },
                 "backend": {
-                    "title": "Backend",
+                    "title": "Zaplecze",
                     "desc": "PHP, SQL"
                 }
             },
@@ -263,7 +263,7 @@
             "ph_command": "/usr/bin/php /sciezka/do/skryptu.php",
             "generated_cron": "Wygenerowane wyrażenie Cron",
             "btn_copy": "Kopiuj Cron",
-            "btn_clear": "Reset"
+            "btn_clear": "Nastawić"
         },
         "content": {
             "hero_title": "Generator zadań Cron",
@@ -391,7 +391,7 @@
                 "2": "<strong>Zobacz wyniki:</strong> Zobacz przetworzony CSS w polu wyjściowym ze statystykami kompresji",
                 "3": "<strong>Kopiuj:</strong> Kliknij \"Kopiuj\", aby skopiować zminimalizowany CSS do schowka",
                 "4": "<strong>Użyj w produkcji:</strong> Zastąp swój oryginalny plik CSS wersją zminimalizowaną",
-                "5": ""
+                "5": "Pobierz lub skopiuj zminimalizowany CSS i użyj go w swojej produkcyjnej witrynie internetowej, aby zmniejszyć rozmiar pliku i skrócić czas ładowania."
             },
             "best_practices_title": "💡 Dobre praktyki",
             "best_practices_list": {
@@ -399,7 +399,7 @@
                 "2": "<strong>Łącz pliki:</strong> Połącz wiele plików CSS przed minifikacją dla lepszej kompresji",
                 "3": "<strong>Testuj dokładnie:</strong> Zawsze testuj zminimalizowany CSS, aby upewnić się, że żadna funkcjonalność nie została uszkodzona",
                 "4": "<strong>Używaj narzędzi budowania:</strong> Zintegruj minifikację z procesem budowania dla automatyzacji",
-                "5": ""
+                "5": "Zachowaj niezminifikowaną wersję do celów programistycznych i debugowania."
             },
             "faq_title": "❓ Często zadawane pytania",
             "faq": {
@@ -433,7 +433,7 @@
         },
         "editor": {
             "method_label": "Metoda",
-            "url_label": "URL",
+            "url_label": "Adres URL",
             "headers_tab": "Nagłówki",
             "body_tab": "Treść żądania",
             "key_ph": "Klucz (np. Authorization)",
@@ -525,7 +525,7 @@
                 "1": "Wklej swój HTML lub tekst w polu wejściowym",
                 "2": "Kliknij przycisk przetwarzania, aby przekonwertować",
                 "3": "Skopiuj wynik do schowka",
-                "4": ""
+                "4": "Skopiuj zakodowany/dekodowany wynik i użyj go w swoich aplikacjach HTML, XML lub internetowych."
             },
             "examples_title": "💡 Przykłady kodowania HTML",
             "examples": {
@@ -538,8 +538,8 @@
                     "code": "Tom & Jerry → Tom &amp; Jerry"
                 },
                 "3": {
-                    "title": "",
-                    "code": ""
+                    "title": "Kodowanie znaków specjalnych",
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&gt;"
                 }
             },
             "faq_title": "❓ Często zadawane pytania",
@@ -596,7 +596,7 @@
                 "1": "Kliknij \"Minimalizuj HTML\", aby skompresować kod",
                 "2": "Kliknij \"Upiększ HTML\", aby sformatować z wcięciami",
                 "3": "Skopiuj wynik za pomocą przycisku \"Kopiuj wyjście\"",
-                "4": ""
+                "4": "Użyj zminimalizowanego kodu HTML w swoim środowisku produkcyjnym, aby zmniejszyć przepustowość i poprawić szybkość ładowania strony."
             },
             "faq_title": "Często zadawane pytania",
             "faq": {
@@ -648,7 +648,7 @@
                 "3": "✅ <strong>Brak instalacji:</strong> Działa bezpośrednio w przeglądarce",
                 "4": "✅ <strong>Darmowy na zawsze:</strong> 100% darmowy bez ograniczeń",
                 "5": "✅ <strong>Przede wszystkim prywatność:</strong> Cała konwersja odbywa się lokalnie w przeglądarce",
-                "6": ""
+                "6": "Zachowuje bloki kodu i podświetlanie składni na potrzeby dokumentacji technicznej."
             },
             "uses_title": "🎯 Typowe przypadki użycia",
             "uses": {
@@ -762,7 +762,7 @@
                 "2": "Użyj przycisku \"Załaduj przykład\", aby zobaczyć przykładowy kod HTML",
                 "3": "Kliknij \"Wyczyść\", aby zacząć od nowa z pustym edytorem",
                 "4": "Testuj różne elementy HTML i zobacz, jak się renderują",
-                "5": ""
+                "5": "Analizuj wyrenderowane dane wyjściowe i strukturę DOM, aby rozwiązać problemy z układem lub zweryfikować renderowanie HTML."
             },
             "uses_title": "Typowe przypadki użycia",
             "uses_desc": "Przeglądarki HTML są niezbędnymi narzędziami do różnych zadań związanych z tworzeniem stron internetowych. Programiści używają ich do szybkiego testowania fragmentów HTML przed zintegrowaniem ich z większymi projektami. Studenci uczący się HTML mogą eksperymentować z różnymi tagami i atrybutami, aby zrozumieć ich działanie. Marketingowcy e-mail używają przeglądarek HTML do podglądu szablonów e-mail przed wysłaniem. Twórcy treści mogą wizualizować, jak ich treść HTML będzie wyglądać na stronach internetowych. Projektanci mogą przeglądać strukturę znaczników i upewnić się, że elementy HTML są poprawnie renderowane.",
@@ -889,8 +889,8 @@
                     "desc": "Kliknij przycisk kopiowania, aby skopiować sformatowany JSON do schowka"
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "Formatuj lub minimalizuj",
+                    "desc": "Wybierz upiększenie (format z wcięciem) lub zminimalizowanie (kompresja do pojedynczej linii) danych JSON w zależności od potrzeb."
                 }
             },
             "uses_title": "Typowe przypadki użycia formatowania JSON",
@@ -1422,7 +1422,7 @@
             "uses_title": "Typowe przypadki użycia",
             "uses": {
                 "docker": {
-                    "title": "Docker",
+                    "title": "Doker",
                     "desc": "Konwertuj konfiguracje kontenerów JSON na Docker Compose YAML."
                 },
                 "config": {
@@ -1883,7 +1883,7 @@
         },
         "js": {
             "error_empty": "Wprowadź dane do przetworzenia",
-            "placeholder_table_name": "users",
+            "placeholder_table_name": "użytkownicy",
             "error_general": "Błąd konwersji: ",
             "error_invalid_array": "Błąd: Dane wejściowe muszą być tablicą obiektów JSON.",
             "error_empty_array": "Błąd: Tablica JSON jest pusta.",
@@ -2529,7 +2529,7 @@
                     "desc": "Konwertuj manifesty YAML Kubernetes na JSON."
                 },
                 "docker": {
-                    "title": "Docker Compose",
+                    "title": "Tworzenie Dockera",
                     "desc": "Przekształcaj YAML Docker Compose na JSON."
                 }
             },

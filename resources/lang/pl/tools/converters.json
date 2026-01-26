@@ -385,7 +385,7 @@
                 "2": "Pierwsze słowo zostaje całkowicie zamienione na małe litery.",
                 "3": "Pierwsza litera każdego kolejnego słowa zostaje zamieniona na dużą.",
                 "4": "Wynik jest łączony w jeden ciąg znaków bez spacji.",
-                "5": ""
+                "5": "Użyj przekonwertowanego tekstu camelCase w swoim kodzie, nazwach zmiennych lub punktach końcowych interfejsu API, aby zapewnić spójne konwencje nazewnictwa."
             },
             "examples_title": "Przykłady",
             "examples": {
@@ -496,7 +496,7 @@
                 "2": "Tryb \"Jak w zdaniu\" jest najbardziej czytelnym formatem dla długich akapitów i opisów.",
                 "3": "Zawsze używaj przycisku \"Kopiuj do schowka\", aby uniknąć błędów przy ręcznym zaznaczaniu tekstu.",
                 "4": "Połącz nasz konwerter wielkości liter z licznikiem słów dla pełnej kontroli nad redakcją tekstu.",
-                "5": ""
+                "5": "Użyj konwersji wielkości liter, aby zachować spójność w bazie kodu i poprawić czytelność kodu."
             },
             "faq_title": "Najczęściej zadawane pytania",
             "faq": {
@@ -936,7 +936,7 @@
             "uses_title": "Zastosowania praktyczne",
             "steps_title": "Przewodnik krok po kroku",
             "examples_title": "Typowe przykłady",
-            "faq_title": "FAQ",
+            "faq_title": "Często zadawane pytania",
             "features": {
                 "fast": {
                     "title": "Szybka konwersja",
@@ -1095,8 +1095,8 @@
         },
         "form": {
             "from_label": "Z",
-            "unit_b": "Bit (b)",
-            "unit_B": "Bajt (B)",
+            "unit_bit": "Bit (b)",
+            "unit_byte": "Bajt (B)",
             "unit_KB": "Kilobajt (KB)",
             "unit_MB": "Megabajt (MB)",
             "unit_GB": "Gigabajt (GB)",
@@ -1272,7 +1272,7 @@
         "form": {
             "from_label": "Z",
             "unit_mpg_us": "MPG (USA)",
-            "unit_mpg_uk": "MPG (UK)",
+            "unit_mpg_uk": "MPG (Wielka Brytania)",
             "unit_km_l": "Kilometry/Litr (km/L)",
             "unit_l_100km": "Litry/100km",
             "to_label": "Na"
@@ -1417,7 +1417,7 @@
             "faq": {
                 "q1": "Dlaczego nazywa się to kebab-case?",
                 "a1": "Ponieważ słowa są „nadziane” na myślnik, co przypomina kawałki mięsa na szpadzie do kebaba.",
-                "q2": "Kebab vs Snake Case?",
+                "q2": "Sprawa Kebab kontra Wąż?",
                 "a2": "Kebab używa myślników (-), snake używa podkreślników (_). Adresy URL wolą kebaby; bazy danych wolą węże.",
                 "q3": "Czy jest to przyjazne dla SEO?",
                 "a3": "Tak, Google i inne wyszukiwarki zalecają używanie myślników zamiast podkreślników w adresach URL.",
@@ -1764,7 +1764,7 @@
             "faq": {
                 "q1": "Czym jest PascalCase?",
                 "a1": "PascalCase to konwencja nazewnictwa, w której każde słowo zaczyna się wielką literą i nie ma spacji ani znaków specjalnych. Przykład: MojaNazwaKlasy",
-                "q2": "PascalCase vs camelCase?",
+                "q2": "PascalCase czy CamelCase?",
                 "a2": "PascalCase zaczyna się wielką literą (MojTytul), camelCase zaczyna się małą literą (mojTytul).",
                 "q3": "Dlaczego nazywa się to PascalCase?",
                 "a3": "Zostało spopularyzowane przez twórców języka programowania Pascal.",
@@ -1794,8 +1794,8 @@
             "unit_kW": "Kilowat (kW)",
             "unit_hp": "Koń mechaniczny (hp)",
             "unit_ps": "Koń mechaniczny metryczny (PS)",
-            "unit_kcal_h": "kcal/h",
-            "unit_btu_h": "BTU/h",
+            "unit_kcal_h": "kcal/godz",
+            "unit_btu_h": "BTU/godz",
             "to_label": "Na"
         },
         "content": {
@@ -1835,10 +1835,10 @@
         },
         "form": {
             "from_label": "Z",
-            "unit_Pa": "Pascal (Pa)",
-            "unit_kPa": "Kilopascal (kPa)",
+            "unit_Pa": "Paskal (Pa)",
+            "unit_kPa": "Kilopaskal (kPa)",
             "unit_bar": "Bar",
-            "unit_psi": "PSI (lb/in²)",
+            "unit_psi": "PSI (funty/cal²)",
             "unit_atm": "Atmosfera (atm)",
             "unit_mmHg": "Milimetr słupa rtęci (mmHg)",
             "to_label": "Na"
@@ -2166,7 +2166,7 @@
                     "desc": "Przestrzegaj konwencji nazewnictwa Ruby dla zmiennych i metod."
                 },
                 "data": {
-                    "title": "📊 Data Science",
+                    "title": "📊 Nauka o danych",
                     "desc": "Formatuj nazwy kolumn w pandas DataFrames i plikach CSV"
                 },
                 "api": {
@@ -2400,8 +2400,8 @@
         "form": {
             "from_label": "Z",
             "unit_c": "Celsjusz (°C)",
-            "unit_f": "Fahrenheit (°F)",
-            "unit_k": "Kelvin (K)",
+            "unit_f": "Fahrenheita (°F)",
+            "unit_k": "Kelwin (K)",
             "to_label": "Na"
         },
         "content": {
