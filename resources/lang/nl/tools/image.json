@@ -350,10 +350,10 @@
         },
         "editor": {
             "image_alt": "Voorbeeld",
-            "label_string": "Base64 String",
+            "label_string": "Base64-reeks",
             "btn_copy": "Kopiëren naar klembord",
             "char_count": "Aantal tekens",
-            "mime_type": "MIME Type"
+            "mime_type": "MIME-type"
         },
         "content": {
             "title": "Converteer afbeelding naar Base64 string",
@@ -756,6 +756,13 @@
                     "Insluiten in e-mails (SVG-ondersteuning is matig).",
                     "Gebruik in video-editors of eenvoudige grafische tools (Canva, Paint)."
                 ]
+            },
+            "faq": {
+                "title": "Veelgestelde vragen",
+                "q1": "Waarom SVG naar PNG converteren?",
+                "a1": "Het PNG-formaat wordt universeel ondersteund in alle browsers en applicaties, terwijl SVG compatibiliteitsproblemen kan hebben. Converteren naar PNG is handig voor e-mailhandtekeningen, sociale media en toepassingen die geen vectorafbeeldingen ondersteunen.",
+                "q2": "Ondersteunt PNG transparantie zoals SVG?",
+                "a2": "Ja! PNG ondersteunt transparantie, waardoor het perfect is voor logo's en afbeeldingen met een transparante achtergrond. Onze converter behoudt de transparantie bij het converteren van SVG naar PNG."
             }
         },
         "js": {
@@ -777,8 +784,9 @@
         },
         "editor": {
             "image_alt": "Voorbeeld",
+            "note": "Opmerking:",
+            "note_text": "Transparante achtergronden (gebruikelijk in WEBP) worden geverifieerd als wit.",
             "output_format": "Output Formaat:",
-            "quality": "Compressiekwaliteit",
             "btn_convert": "Converteren naar JPG & Downloaden"
         },
         "content": {
@@ -790,13 +798,13 @@
                     "title": "Universele standaard",
                     "desc": "JPG werkt overal. Van printshops tot legacy-systemen, JPG is de veiligste keuze."
                 },
-                "quality": {
-                    "title": "Kwaliteitsbehoud",
-                    "desc": "Gebruik onze kwaliteitsschuifregelaar om de scherpte van uw originele WebP-afbeelding in de nieuwe JPG te behouden."
+                "secure": {
+                    "title": "Veilige verwerking",
+                    "desc": "Wij zien uw bestanden niet. De conversie wordt lokaal door uw webbrowser uitgevoerd."
                 },
-                "safe": {
-                    "title": "Privacy voorop",
-                    "desc": "Geen uploads. De conversie gebeurt in uw browser, waardoor uw data veilig blijft."
+                "smart": {
+                    "title": "Slimme achtergronden",
+                    "desc": "Detecteert automatisch transparante pixels in WebP en vult deze met een zuivere witte achtergrond."
                 }
             },
             "how_to": {
@@ -806,6 +814,14 @@
                     "Kies de gewenste kwaliteit. Wij raden 90% aan voor de beste resultaten.",
                     "Bekijk het resultaat direct in het voorbeeldvenster.",
                     "Download uw JPG-bestand en gebruik het overal."
+                ]
+            },
+            "why": {
+                "title": "Waarom WebP converteren?",
+                "list": [
+                    "Bewerken: Veel desktop-editors ondersteunen WebP doorgaans niet standaard.",
+                    "E-mail: Outlook en andere e-mailclients geven WebP inline-afbeeldingen mogelijk niet correct weer.",
+                    "Afdrukken: Drukkerijen hebben vaak standaard JPG- of TIFF-bestanden nodig."
                 ]
             },
             "faq": {
