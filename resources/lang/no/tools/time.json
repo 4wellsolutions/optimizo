@@ -18,6 +18,27 @@
             "h1": "Epoch Time Converter",
             "subtitle": "Konverter Unix-tidsstempler til lesbare datoer og omvendt"
         },
+        "current_epoch": {
+            "title": "Gjeldende Unix-tidsstempel",
+            "subtitle": "Live epoketid i sekunder"
+        },
+        "click_to_copy": "Klikk for å kopiere",
+        "timestamp_to_date": {
+            "title": "Konverter tidsstempel til dato",
+            "label": "Skriv inn Unix-tidsstempel",
+            "placeholder": "f.eks. 1234567890",
+            "button": "Konverter til dato",
+            "result_gmt": "GMT/UTC",
+            "result_local": "Din lokale tid",
+            "result_relative": "Slektning"
+        },
+        "date_to_timestamp": {
+            "title": "Konverter dato til tidsstempel",
+            "label": "Velg dato og klokkeslett",
+            "checkbox": "Bruk gjeldende tid",
+            "button": "Konverter til tidsstempel",
+            "result_title": "Unix tidsstempel"
+        },
         "content": {
             "hero_title": "Forstå Unix Epoch",
             "hero_description": "Unix-tid (eller Epoch-tid) er systemet som sjekker hjerteslagene i den digitale verden. Den sporer antall sekunder som har gått siden \"Unix Epoch\" – 00:00:00 UTC den 1. januar 1970.",
@@ -32,6 +53,12 @@
             "apocalypse_title": "År 2038-problemet",
             "apocalypse_desc": "Den 19. januar 2038 vil 32-bits systemer gå tom for numre å lagre tiden i. De fleste moderne 64-bits systemer er allerede trygge i de neste 292 milliarder årene.",
             "faq_title": "Ofte stilte spørsmål"
+        },
+        "faq": {
+            "q1": "Hva er Unix-tidsstempel (epoketid)?",
+            "a1": "Unix-tidsstempel (også kjent som epoketid eller POSIX-tid) er antall sekunder som har gått siden 1. januar 1970, 00:00:00 UTC. Det er en mye brukt standard for å representere tid i datasystemer og programmering.",
+            "q2": "Hvorfor bruke epoketid i stedet for vanlige datoer?",
+            "a2": "Epoketid er tidssone-uavhengig, noe som gjør den perfekt for lagring av datoer i databaser og APIer. Det er et enkelt heltall som er enkelt å sammenligne, sortere og beregne tidsforskjeller. De fleste programmeringsspråk har innebygde funksjoner for å konvertere mellom epoketid og lesbare datoer."
         }
     },
     "local-time-to-utc": {
@@ -70,9 +97,27 @@
             "feature1_desc": "Konverter mellom sekunder, minutter, timer, dager, uker, måneder og år.",
             "feature2_title": "Prosjektplanlegging",
             "feature2_desc": "Perfekt for tidsplanlegging, videoredigering, tidslinjer og tidssporing.",
+            "feature3_title": "Nøyaktige beregninger",
+            "feature3_desc": "Nøyaktige tidskonverteringer for vitenskap, programmering og daglig planlegging.",
             "main_title": "Forstå konvertering av tidsenheter",
             "description_p1": "Tid måles i ulike enheter avhengig av skalaen. SI-grunnenheten er sekundet.",
-            "description_p2": "Ett minutt er 60 sekunder, én time er 3600 sekunder, og ett døgn er 86 400 sekunder."
+            "description_p2": "Ett minutt er 60 sekunder, én time er 3600 sekunder, og ett døgn er 86 400 sekunder.",
+            "usage_examples_title": "Eksempler på vanlig bruk",
+            "usage_1": "<strong>Prosjektledelse:</strong> Konvertering av arbeidstimer til dager eller uker",
+            "usage_2": "<strong>Videoredigering:</strong> Konvertering av tidsstempler mellom formater",
+            "usage_3": "<strong>Programmering:</strong> Millisekunder til sekundkonverteringer for tidtakere",
+            "usage_4": "<strong>Vitenskap:</strong> Måling av reaksjonstider i eksperimenter",
+            "usage_5": "<strong>Fitness:</strong> Konvertering av treningsvarighet",
+            "usage_6": "<strong>Reise:</strong> Beregner reisevarighet på tvers av tidssoner",
+            "faq_title": "Ofte stilte spørsmål",
+            "faq_q1": "Hvor mange sekunder er en dag?",
+            "faq_a1": "Det er nøyaktig 86 400 sekunder på en dag (24 timer × 60 minutter × 60 sekunder = 86 400 sekunder).",
+            "faq_q2": "Hvordan konverterer jeg timer til dager?",
+            "faq_a2": "Del antall timer med 24. For eksempel 48 timer ÷ 24 = 2 dager. Vår omformer håndterer dette automatisk!",
+            "faq_q3": "Hvorfor er et år 365,25 dager?",
+            "faq_a3": "Jordens bane tar omtrent 365,25 dager, og det er grunnen til at vi har skuddår hvert fjerde år for å legge til den ekstra kvarte dagen og holde kalendere på linje med årstidene.",
+            "faq_q4": "Hva er forskjellen mellom varighet og tid?",
+            "faq_a4": "Tid refererer til et bestemt øyeblikk (f.eks. kl. 15.00), mens varighet måler hvor lenge noe varer (f.eks. 2 timer). Denne omformeren håndterer varighetskonverteringer."
         }
     },
     "time-zone-converter": {
@@ -89,17 +134,33 @@
             "precision_title": "Hvorfor nøyaktighet teller",
             "business_title": "Forretningsmøter",
             "business_desc": "Unngå flausen med å ringe en klient klokken 3 på natten.",
+            "travel_title": "Reiseplanlegging",
+            "travel_desc": "Vet nøyaktig når flyet ditt lander i lokal tid.",
+            "events_title": "Live-arrangementer",
+            "events_desc": "Ikke gå glipp av starten på en global livestream.",
             "tips_title": "Proff-tips for tidssoner",
-            "faq_title": "Vanlige spørsmål"
+            "tip1_title": "Se opp for sommertid",
+            "tip1_desc": "Reglene for sommertid varierer fra land til land og endrer datoer hvert år. Automatiske omformere er tryggere enn mental matematikk.",
+            "tip2_title": "Bruk 24-timers format",
+            "tip2_desc": "Det fjerner tvetydighet mellom AM og PM (er f.eks. 12:00 midnatt eller middag?).",
+            "tip3_title": "Sjekk datoen",
+            "tip3_desc": "Når du ringer over Stillehavet (f.eks. USA til Australia), er det ofte allerede i morgen på den andre siden.",
+            "faq_title": "Vanlige spørsmål",
+            "faq_q1": "Er GMT og UTC det samme?",
+            "faq_a1": "For de fleste praktiske formål, ja. UTC er den nøyaktige atomstandarden, mens GMT er den eldre solcellebaserte standarden. De er innenfor en brøkdel av et sekund fra hverandre.",
+            "faq_q2": "Hvorfor har noen soner 30 eller 45 minutters forskyvninger?",
+            "faq_a2": "Politiske og geografiske årsaker. India (UTC+5:30) og Nepal (UTC+5:45) valgte disse forskyvningene for bedre å justere solens middag med lengdegraden deres."
         },
         "form": {
             "source_label": "Kildetid",
             "date_time_label": "Dato og tid",
             "timezone_label": "Tidssone",
             "selected_time_label": "VALGT TID",
+            "default_time": null,
             "target_label": "Måltid",
             "auto_calculated": "Auto-beregnet",
-            "result_label": "KONVERTERT TID"
+            "result_label": "KONVERTERT TID",
+            "result_subtitle": "Justert for tidssoneforskjell"
         }
     },
     "unix-timestamp-to-date": {

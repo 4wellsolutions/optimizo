@@ -22,6 +22,13 @@
             "feature2_desc": "Bruker automatisk Excel-formatering for å gjøre dataene mer lesbare.",
             "feature3_title": "Umiddelbar nedlasting",
             "feature3_desc": "Få Excel-filen din umiddelbart etter konvertering, klar til bruk."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Kan jeg konvertere store CSV-filer til Excel?",
+            "a1": "Ja! Verktøyet vårt håndterer CSV-filer i forskjellige størrelser. For svært store filer (100MB+) kan konverteringen ta litt lengre tid, men prosessen er optimalisert for ytelse.",
+            "q2": "Vil formateringen bli bevart under konverteringen?",
+            "a2": "CSV-filer inneholder bare rådata uten formatering. Excel-filen vil ha dataene ordentlig organisert i celler, men du må bruke formatering (farger, fonter, kantlinjer) manuelt i Excel etter konvertering."
         }
     },
     "csv-to-json": {
@@ -43,14 +50,28 @@
             "title": "Konverter CSV til SQL INSERTs",
             "subtitle": "Last opp CSV for å generere SQL-setninger",
             "upload_label": "Klikk for å laste opp eller dra og slipp",
+            "upload_help": "CSV-filer (.csv)",
+            "table_name_label": "Table Name (Optional)",
+            "table_name_placeholder": "f.eks. brukertabell",
+            "table_name_help": "Standard til filnavn hvis det står tomt.",
             "button": "Generer SQL"
         },
         "content": {
             "hero_title": "Konverter CSV til SQL INSERT-setninger",
             "hero_description": "Det ultimate verktøyet for dataoverføring. Gjør CSV-filer om til SQL-skript umiddelbart.",
             "feature1_title": "Auto-skjema",
+            "feature1_desc": "Oppdager automatisk kolonnenavn fra din første overskriftsrad og genererer CREATE TABLE-skjemaet.",
             "feature2_title": "Bulkinsetting",
-            "feature3_title": "Universal SQL"
+            "feature2_desc": "Genererer rene, escaped SQL INSERT-setninger klare for bulkkjøring i enhver SQL-klient.",
+            "feature3_title": "Universal SQL",
+            "feature3_desc": "Genererer SQL-92-kompatibel kode som fungerer på MySQL, PostgreSQL, SQLite og MariaDB."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hvilke SQL-databaser støttes?",
+            "a1": "Verktøyet vårt genererer standard SQL INSERT-setninger som er kompatible med MySQL, PostgreSQL, SQL Server, SQLite og andre store databasesystemer. Du kan tilpasse tabellnavnet og kolonnenavnene etter behov.",
+            "q2": "Hvordan håndterer jeg spesialtegn i CSV-dataene mine?",
+            "a2": "Konverteren unnslipper automatisk spesialtegn (anførselstegn, omvendt skråstrek) for å forhindre SQL-injeksjon og syntaksfeil. Dataene dine vil trygt konverteres til riktig formaterte SQL-setninger."
         }
     },
     "csv-to-tsv": {
@@ -79,7 +100,12 @@
             "ph_output": "Konvertert XML vil vises her..."
         },
         "content": {
+            "hero_title": "Gratis CSV til XML Converter",
+            "hero_subtitle": "Transform CSV-regnearkdata til strukturert XML-format",
             "p1": "Vår gratis CSV til XML-omformer transformerer CSV-data til et godt strukturert XML-format.",
+            "what_title": "🔍 Hva er CSV til XML-konvertering?",
+            "what_desc": "CSV til XML-konvertering transformerer tabelldata fra kommadelte verdiformater til eXtensible Markup Language. Mens CSV er enkelt og mye brukt for regneark og dataeksport, gir XML bedre struktur, metadatastøtte og kreves av mange bedriftssystemer, SOAP APIer og datautvekslingsstandarder.",
+            "features_title": "✨ Funksjoner",
             "features": {
                 "fast": {
                     "title": "Umiddelbar konvertering",
@@ -88,12 +114,96 @@
                 "secure": {
                     "title": "Sikkert og privat",
                     "desc": "All behandling skjer lokalt i din nettleser"
+                },
+                "copy": {
+                    "title": "Ett-klikks Kopier",
+                    "desc": "Kopier XML-utdata til utklippstavlen umiddelbart"
+                },
+                "smart": {
+                    "title": "Smart formatering",
+                    "desc": "Riktig strukturert XML med riktig innrykk"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen registrering, ingen grenser, helt gratis for alltid"
+                },
+                "header": {
+                    "title": "Overskriftsgjenkjenning",
+                    "desc": "Bruker automatisk første rad som XML-elementnavn"
                 }
+            },
+            "uses_title": "🎯 Vanlige brukstilfeller",
+            "uses": {
+                "migration": {
+                    "title": "🔄 Datamigrering",
+                    "desc": "Konverter CSV-eksporter fra Excel, Google Sheets eller databaser til XML for import til bedriftssystemer."
+                },
+                "api": {
+                    "title": "🔌 API-integrasjon",
+                    "desc": "Transform CSV-data til XML-format for SOAP-netttjenester og XML-baserte APIer."
+                },
+                "bi": {
+                    "title": "📊 Business Intelligence",
+                    "desc": "Konverter CSV-rapporter til XML for BI-verktøy, datavarehus og analyseplattformer."
+                },
+                "enterprise": {
+                    "title": "🏢 Bedriftssystemer",
+                    "desc": "Transform CSV-data til XML for ERP, CRM og eldre bedriftsapplikasjoner."
+                },
+                "doc": {
+                    "title": "📄 Dokumentbehandling",
+                    "desc": "Konverter CSV-data til XML for dokumentgenerering og malmotorer."
+                },
+                "db": {
+                    "title": "🗄️ Databaseeksport",
+                    "desc": "Transformer database CSV-eksporter til XML for datautveksling og arkivering."
+                }
+            },
+            "how_title": "📝 Hvordan konvertere CSV til XML",
+            "how_steps": {
+                "1": {
+                    "title": "Klikk Konverter",
+                    "desc": "Trykk \"Konverter til XML\" for å transformere CSV-en til strukturert XML-format."
+                },
+                "2": {
+                    "title": "Kopier og bruk",
+                    "desc": "XML-utdataene vises til høyre. Klikk \"Kopier\" for å bruke den i søknaden din."
+                },
+                "3": {
+                    "title": "Last ned XML-fil",
+                    "desc": "Klikk på nedlastingsknappen for å lagre den konverterte XML-filen, klar til bruk i applikasjoner, APIer eller datautvekslingssystemer."
+                }
+            },
+            "example_title": "💡 Konverteringseksempel",
+            "example_input": "CSV-inndata:",
+            "example_output": "XML-utdata:",
+            "faq_title": "❓ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "How does the converter handle CSV headers?",
+                "a1": "Den første raden i miljø-CSV-en din brukes automatisk som XML-elementnavn. Sørg for at CSV-en din har beskrivende overskrifter for best resultat.",
+                "q2": "Er dataene mine sikre?",
+                "a2": "Ja! All konvertering skjer i nettleseren din ved hjelp av JavaScript. CSV-dataene dine forlater aldri enheten din eller blir sendt til noen server.",
+                "q3": "Kan jeg konvertere store CSV-filer?",
+                "a3": "Ja, du kan konvertere CSV-filer i alle størrelser. Svært store filer kan ta noen sekunder å behandle, avhengig av enheten din.",
+                "q4": "Hva om CSV-en min har kommaer i dataene?",
+                "a4": "For CSV-data med komma, sørg for at verdiene er riktig sitert. Konverteren vår håndterer standard CSV-formatering inkludert felt i anførselstegn.",
+                "q5": "Kan jeg bruke dette til Excel-data?",
+                "a5": "Absolutt! Eksporter Excel-dataene dine som CSV, og bruk deretter dette verktøyet til å konvertere det til XML-format."
+            },
+            "tips_title": "🎓 Beste praksis",
+            "tips_list": {
+                "1": "<strong>Rengjør dataene dine:</strong> Fjern ekstra mellomrom og spesialtegn fra overskrifter før konvertering.",
+                "2": "<strong>Test med eksempler:</strong> Bruk \"Eksempel\"-knappen for å forstå konverteringsformatet.",
+                "3": "<strong>Valider XML-utdata:</strong> Valider alltid den genererte XML-en mot målsystemets krav.",
+                "4": "<strong>Håndter spesialtegn:</strong> Spesialtegn escapes automatisk for gyldig XML-utdata.",
+                "5": "Valider XML-utdataene dine ved å bruke en XML-validator for å sikre riktig struktur og kompatibilitet med målsystemet."
             }
         },
         "js": {
             "error_empty": "Vennligst skriv inn CSV-data",
             "success_convert": "✓ CSV konvertert til XML vellykket",
+            "error_general": "✕ Feil:",
+            "error_no_copy": "Ingen utdata å kopiere",
             "success_copy": "✓ Kopiert til utklippstavlen"
         }
     },
@@ -106,8 +216,27 @@
         },
         "form": {
             "title": "Konverter Excel til CSV",
+            "subtitle": "Gjør om Excel-regneark til CSV-format",
             "upload_label": "Klikk for å laste opp",
+            "upload_help": "Excel-filer (.xlsx, .xls)",
             "button": "Konverter til CSV"
+        },
+        "content": {
+            "hero_title": "Excel til CSV-konvertering",
+            "hero_description": "Konverter Excel-filer til CSV-format for kompatibilitet med databaser, dataanalyseverktøy og programmeringsspråk.",
+            "feature1_title": "Støtte for flere ark",
+            "feature1_desc": "Konverterer alle ark fra Excel-filen til separate CSV-filer.",
+            "feature2_title": "Dataintegritet",
+            "feature2_desc": "Bevarer alle celleverdier mens den konverteres til vanlig tekstformat.",
+            "feature3_title": "Rask behandling",
+            "feature3_desc": "Rask konvertering med umiddelbar nedlasting av CSV-filer."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Vil formler konverteres til CSV?",
+            "a1": "CSV-format støtter bare ren tekstverdier. Når du konverterer Excel til CSV, vil formler erstattes med deres beregnede verdier. Hvis du trenger å bevare formler, behold en kopi av den originale Excel-filen.",
+            "q2": "Kan jeg konvertere flere Excel-ark samtidig?",
+            "a2": "Hvert Excel-regneark må konverteres separat til CSV. Hvis Excel-filen din har flere ark, får du en separat CSV-fil for hvert ark, eller du kan velge hvilket ark som skal konverteres."
         }
     },
     "google-sheets-to-excel": {
@@ -119,9 +248,27 @@
         },
         "form": {
             "title": "Konverter Google Sheets til Excel",
+            "subtitle": "Last ned Google Sheets som Excel-filer",
             "url_label": "Lenke til Google Sheets",
             "url_help": "Lim inn delingslenken fra Google Sheets",
             "button": "Last ned som Excel"
+        },
+        "content": {
+            "hero_title": "Konverter fra Google Sheets til Excel",
+            "hero_description": "Last ned Google Sheets som Excel-filer for offline redigering, deling eller arkivering.",
+            "feature1_title": "Direkte nedlasting",
+            "feature1_desc": "Du trenger ikke å åpne Google Sheets - konverter direkte fra lenken.",
+            "feature2_title": "Vedlikeholder formatering",
+            "feature2_desc": "Bevarer formatering, formler og stiler når det er mulig.",
+            "feature3_title": "Frakoblet tilgang",
+            "feature3_desc": "Arbeid med regnearkene dine uten internettforbindelse."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Må jeg laste ned fra Google Sheets først?",
+            "a1": "Ja, du må først laste ned Google Regneark som en Excel-fil (.xlsx) eller CSV. I Google Sheets går du til Fil > Last ned > Microsoft Excel (.xlsx) for å hente filen for konvertering.",
+            "q2": "Vil Google Sheets-formler fungere i Excel?",
+            "a2": "De vanligste formlene (SUM, AVERAGE, IF, VLOOKUP) er kompatible mellom Google Sheets og Excel. Det kan imidlertid hende at enkelte Google-spesifikke funksjoner ikke fungerer i Excel og må justeres."
         }
     },
     "tsv-to-csv-converter": {
@@ -135,12 +282,132 @@
             "btn_convert": "Konverter til CSV",
             "btn_clear": "Tøm",
             "btn_copy": "Kopier",
+            "btn_example": "Eksempel",
             "label_input": "Skriv inn TSV-data",
-            "label_output": "CSV-resultat"
+            "ph_input": "navn alder by\nJohn 30 New York",
+            "label_output": "CSV-resultat",
+            "ph_output": "Konvertert CSV vises her..."
+        },
+        "content": {
+            "p1": "Vår gratis TSV til CSV-omformer transformerer tabulatordelte verdier til format med kommaseparerte verdier. Perfekt for å konvertere dataeksporter, databasedumper og regnearkfiler fra TSV til CSV for bruk i Excel, Google Sheets og dataanalyseverktøy.",
+            "what_title": "Hva er TSV til CSV-konvertering?",
+            "what_desc": "TSV til CSV-konvertering transformerer data fra formatet tabulatordelte verdier (hvor kolonner er atskilt med tabulatorer) til format med kommaseparerte verdier (der kolonner er atskilt med komma). CSV er mer utbredt støttet av regnearkapplikasjoner og dataverktøy, noe som gjør det til det foretrukne formatet for datautveksling.",
+            "features_title": "Funksjoner",
+            "features": {
+                "instant": {
+                    "title": "Øyeblikkelig konvertering",
+                    "desc": "Konverter TSV til CSV i millisekunder"
+                },
+                "secure": {
+                    "title": "100 % sikker",
+                    "desc": "All behandling skjer lokalt i nettleseren din"
+                },
+                "copy": {
+                    "title": "Ett-klikks Kopier",
+                    "desc": "Kopier CSV-utdata umiddelbart til utklippstavlen"
+                },
+                "smart": {
+                    "title": "Smart parsing",
+                    "desc": "Håndterer tabulatorskilletegn automatisk"
+                },
+                "free": {
+                    "title": "Helt gratis",
+                    "desc": "Ingen grenser, ingen registrering nødvendig"
+                },
+                "excel": {
+                    "title": "Excel-kompatibel",
+                    "desc": "Utdata fungerer perfekt i alle regnearkapper"
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "spreadsheet": {
+                    "title": "Regnearkimport",
+                    "desc": "Konverter TSV-filer til CSV for enkel import til Excel, Google Sheets og andre regnearkapplikasjoner."
+                },
+                "database": {
+                    "title": "Databaseeksport",
+                    "desc": "Transformer TSV-databaseeksporter til CSV-format for dataanalyse og rapportering."
+                },
+                "analysis": {
+                    "title": "Dataanalyse",
+                    "desc": "Konverter TSV-data til CSV for bruk i dataanalyseverktøy, BI-plattformer og visualiseringsprogramvare."
+                },
+                "standard": {
+                    "title": "Formatstandardisering",
+                    "desc": "Standardiser dataformater ved å konvertere TSV-filer til det mer universelle CSV-formatet."
+                },
+                "report": {
+                    "title": "Rapportgenerering",
+                    "desc": "Transformer TSV-rapporter til CSV for enklere deling og kompatibilitet."
+                },
+                "processing": {
+                    "title": "Databehandling",
+                    "desc": "Konverter TSV til CSV for datarensing, transformasjon og ETL-rørledninger."
+                }
+            },
+            "how_to_title": "Hvordan konvertere TSV til CSV",
+            "how_to": {
+                "step1": {
+                    "title": "Lim inn TSV-data",
+                    "desc": "Kopier dataene dine med tabulatordelte verdier og lim dem inn i det venstre inndatafeltet."
+                },
+                "step2": {
+                    "title": "Klikk Konverter",
+                    "desc": "Trykk \"Konverter til CSV\" for å transformere din TSV til CSV-format."
+                },
+                "step3": {
+                    "title": "Kopier og bruk",
+                    "desc": "CSV-utgangen vises til høyre. Klikk \"Kopier\" for å bruke den i søknaden din."
+                }
+            },
+            "examples_title": "Konverteringseksempel",
+            "examples": {
+                "input": "TSV-inngang:",
+                "output": "CSV-utdata:"
+            },
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Hva er forskjellen mellom TSV og CSV?",
+                "a1": "TSV bruker tabulatorer for å skille kolonner mens CSV bruker kommaer. CSV er mer utbredt støttet av regnearkapplikasjoner og dataverktøy.",
+                "q2": "Er dataene mine sikre?",
+                "a2": "Ja! All konvertering skjer i nettleseren din ved hjelp av JavaScript. TSV-dataene dine forlater aldri enheten din.",
+                "q3": "Kan jeg konvertere store TSV-filer?",
+                "a3": "Ja, du kan konvertere TSV-filer i alle størrelser. Svært store filer kan ta noen sekunder å behandle.",
+                "q4": "Vil CSV-en fungere i Excel?",
+                "a4": "Absolutt! Den genererte CSV-en fungerer perfekt i Excel, Google Sheets og alle regnearkapplikasjoner.",
+                "q5": "Hvordan håndteres spesialtegn?",
+                "a5": "Verdier som inneholder komma anføres automatisk i CSV-utdataene for å opprettholde dataintegriteten."
+            },
+            "best_title": "Beste praksis",
+            "best": {
+                "verify": {
+                    "title": "Bekreft tabulatorskilletegn:",
+                    "desc": "Sørg for at dataene dine bruker faktiske tabulatortegn, ikke mellomrom."
+                },
+                "commas": {
+                    "title": "Se etter komma:",
+                    "desc": "Vær oppmerksom på at verdier med komma vil bli sitert i CSV."
+                },
+                "test": {
+                    "title": "Test med eksempler:",
+                    "desc": "Bruk \"Eksempel\"-knappen for å forstå konverteringsformatet."
+                },
+                "validate": {
+                    "title": "Valider utdata:",
+                    "desc": "Kontroller alltid at CSV-utdataene samsvarer med forventningene dine."
+                },
+                "headers": {
+                    "title": "Behold overskrifter:",
+                    "desc": "Inkluder kolonneoverskrifter i TSV-en for bedre CSV-struktur."
+                }
+            }
         },
         "js": {
             "error_empty": "Vennligst skriv inn TSV-data",
             "success_convert": "✓ TSV konvertert til CSV vellykket",
+            "error_general": "✕ Feil:",
+            "error_no_copy": "Ingen utdata å kopiere",
             "success_copy": "✓ Kopiert til utklippstavlen"
         }
     },
@@ -153,7 +420,27 @@
         },
         "form": {
             "title": "Konverter XLS til XLSX",
+            "subtitle": "Oppgrader Excel-filene dine til moderne format",
+            "upload_label": "Klikk for å laste opp eller dra og slipp",
+            "upload_help": "Excel 97-2003-filer (.xls)",
             "button": "Konverter til XLSX"
+        },
+        "content": {
+            "hero_title": "XLS til XLSX Converter",
+            "hero_description": "Oppgrader eldre Excel 97-2003 (XLS)-filer til det moderne XLSX-formatet for bedre kompatibilitet og funksjoner.",
+            "feature1_title": "Bedre komprimering",
+            "feature1_desc": "XLSX-filer er mindre på grunn av ZIP-komprimeringsteknologi.",
+            "feature2_title": "Flere rader",
+            "feature2_desc": "XLSX støtter 1 million+ rader vs XLSs 65 536 radgrense.",
+            "feature3_title": "Forbedret sikkerhet",
+            "feature3_desc": "XLSX-formatet har bedre sikkerhet og gjenoppretting av korrupsjon."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er forskjellen mellom XLS og XLSX?",
+            "a1": "XLS er det eldre Excel-formatet (Excel 97-2003) med en grense på 65 536 rader. XLSX er det moderne XML-baserte formatet (Excel 2007+) med 1 048 576 rader, bedre komprimering og forbedret sikkerhet. Konvertering til XLSX anbefales for bedre kompatibilitet.",
+            "q2": "Vil makroer bli bevart når du konverterer XLS til XLSX?",
+            "a2": "Ja, makroer og VBA-kode er bevart under konvertering. Men hvis filen inneholder makroer, lagre den som .XLSM (makroaktivert) i stedet for .XLSX for å sikre at makroer forblir funksjonelle."
         }
     },
     "xlsx-to-xls": {
@@ -165,7 +452,27 @@
         },
         "form": {
             "title": "Konverter XLSX til XLS",
+            "subtitle": "Lag filer som er kompatible med eldre Excel-versjoner",
+            "upload_label": "Klikk for å laste opp eller dra og slipp",
+            "upload_help": "Excel-filer (.xlsx)",
             "button": "Konverter til XLS"
+        },
+        "content": {
+            "hero_title": "XLSX til XLS Converter",
+            "hero_description": "Konverter moderne Excel-filer (XLSX) til eldre format (XLS) for kompatibilitet med Excel 97-2003 og eldre systemer.",
+            "feature1_title": "Maksimal kompatibilitet",
+            "feature1_desc": "Sikrer at filene dine fungerer på eldre datamaskiner og Excel-versjoner.",
+            "feature2_title": "Databevaring",
+            "feature2_desc": "Vedlikeholder dataene dine mens du konverterer til eldre format.",
+            "feature3_title": "Rask konvertering",
+            "feature3_desc": "Rask behandling med umiddelbar nedlasting."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hvorfor skulle jeg konvertere XLSX tilbake til XLS?",
+            "a1": "Konvertering til XLS-format er nyttig for kompatibilitet med eldre Excel-versjoner (Excel 97-2003) eller eldre systemer som ikke støtter det nyere XLSX-formatet. XLS har imidlertid begrensninger som færre rader og større filstørrelser.",
+            "q2": "Vil jeg miste data når jeg konverterer XLSX til XLS?",
+            "a2": "Hvis XLSX-filen din har mer enn 65 536 rader eller 256 kolonner, avkortes data ved konvertering til XLS-format. Det kan også hende at enkelte nyere Excel-funksjoner ikke støttes i det eldre XLS-formatet."
         }
     }
 }

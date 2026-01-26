@@ -10,9 +10,63 @@
             "simulation_title": "Bing søkesimulator",
             "keyword_label": "Målnøkkelord",
             "location_label": "Posisjon (Valgfritt)",
+            "location_placeholder": "Skriv inn by, stat eller land...",
+            "market_label": "Marked / Språk",
             "device_label": "Enhetstype",
             "device_desktop": "Stasjonær",
-            "device_mobile": "Mobil"
+            "device_mobile": "Mobil",
+            "no_login": "Ingen pålogging kreves",
+            "realtime_results": "Sanntidsresultater"
+        },
+        "form": {
+            "keyword_placeholder": "f.eks. digitalt markedsføringsbyrå",
+            "button": "Sjekk Bing-rangeringer"
+        },
+        "markets": {
+            "us": "USA (engelsk)",
+            "uk": "Storbritannia (engelsk)",
+            "ca": "Canada (engelsk)",
+            "au": "Australia (engelsk)",
+            "de": "Tyskland (tysk)",
+            "fr": "Frankrike (fransk)",
+            "es": "Spania (spansk)",
+            "it": "Italia (italiensk)",
+            "nl": "Nederland (nederlandsk)",
+            "br": "Brasil (portugisisk)",
+            "jp": "Japan (japansk)",
+            "in": "India (engelsk)"
+        },
+        "content": {
+            "main_title": "Avansert Bing Rank Checker",
+            "main_subtitle": "Overvåk søkeytelsen din på den nest største søkemotoren i verden. Få nøyaktige, lokaliserte rangeringsdata for å optimalisere din Bing SEO-strategi.",
+            "feature1_title": "100 % nøyaktige data",
+            "feature1_desc": "Vi henter resultater direkte fra Bing i sanntid, og sikrer at du ser nøyaktig hva dine potensielle besøkende ser.",
+            "feature2_title": "Stedsspesifikk",
+            "feature2_desc": "Sjekk rangeringer som om du søkte fra bestemte byer eller land. Vital for lokale SEO-kampanjer.",
+            "feature3_title": "Enhetssimulering",
+            "feature3_desc": "Bytt mellom skrivebords- og mobilvisningsporter for å analysere hvordan rangeringene dine varierer mellom enheter.",
+            "serp_features_title": "Analyser Bing SERP-funksjoner",
+            "sf_snippets_title": "Utvalgte tekstutdrag",
+            "sf_snippets_desc": "Bing gir ofte fyldige svar og \"intelligente svar\" i posisjon null. Sjekk om innholdet ditt fanger disse synlige stedene.",
+            "sf_places_title": "Bing steder",
+            "sf_places_desc": "Bings ekvivalent til Local Pack. Avgjørende for lokalt næringsliv. Bruk \"Plassering\"-funksjonen vår for å bekrefte <strong>Bing Places</strong>-rangeringen din.",
+            "sf_visual_title": "Visuelt søk",
+            "sf_visual_desc": "Bing legger stor vekt på visuelle søkeresultater. Overvåk hvordan bildene dine vises i bildetunge SERP-oppsett.",
+            "sf_knowledge_title": "Kunnskapskort",
+            "sf_knowledge_desc": "Rike informasjonspaneler på høyre side. Sjekk om Bing tydelig forstår merkevareenheten din.",
+            "why_check_title": "Hvorfor spore Bing-rangeringer?",
+            "why_check_desc": "Mens Google er dominerende, lar Bing søke etter Yahoo, AOL og millioner av Windows-enheter. Den har ofte høyere konverteringsfrekvens og mindre konkurranse. Å ignorere Bing betyr at du går glipp av ~30 % av søkevolumet på skrivebordet i enkelte markeder.",
+            "how_accurate_title": "Hvor nøyaktig er dette verktøyet?",
+            "how_accurate_desc": "Verktøyet vårt utfører live-spørringer til Bings servere i det øyeblikket du klikker \"Sjekk\". Vi bruker ikke hurtigbufrede data. Resultatene er sanntids, objektive og gjenspeiler den eksakte SERP (Search Engine Results Page) for de valgte parameterne."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Er denne Bing Rank Checker gratis?",
+            "a1": "Ja! Vår **bing rank checker** er helt gratis. Du kan sjekke ubegrensede søkeord for å optimalisere tilstedeværelsen din på Microsofts søkemotor uten kostnad.",
+            "q2": "Påvirker dette Yahoo-rangeringene?",
+            "a2": "Ja, generelt sett. Yahoo Search er i stor grad drevet av Bings indeks. Optimalisering for Bing fører ofte til forbedrede rangeringer på Yahoo også, noe som gir deg en \"to-for-en\" SEO-fordel.",
+            "q3": "Kan jeg sjekke lokale rangeringer for en bestemt by?",
+            "a3": "Absolutt. Skriv inn byen din i \"Plassering\"-feltet. Vi legger til spesifikke stedsparametere til søket, slik at du kan se <strong>lokale bing-resultater</strong> nøyaktig slik en bruker i den byen ville sett dem."
         }
     },
     "broken-links-checker": {
@@ -23,161 +77,560 @@
             "subtitle": "Finn og fiks brutte lenker for bedre SEO og brukeropplevelse"
         },
         "interface": {
+            "scan_title": "Broken Links Checker",
+            "scan_subtitle": "Finn ødelagte koblinger, omdirigeringer og mer.",
             "url_label": "Nettside-URL",
             "button": "Skann etter brutte lenker",
-            "button_scanning": "Skanner..."
+            "button_scanning": "Skanner...",
+            "legend_ok": "200 OK",
+            "legend_err": "404/Feil"
+        },
+        "progress": {
+            "extracting": "Trekker ut linker...",
+            "stop": "Stoppe",
+            "processing": "Behandler koblinger sekvensielt...",
+            "processed": "Behandlet",
+            "of": "av",
+            "links": "lenker",
+            "checking": "Sjekker koblinger..."
         },
         "stats": {
             "total": "Totalt antall lenker",
             "working": "Fungerer (200)",
-            "redirect": "Omdirigeringer (3xx)",
+            "redirects": "Omdirigeringer (3xx)",
             "broken": "Brutte (4xx/5xx)"
+        },
+        "results": {
+            "download": "Last ned CSV-rapport",
+            "detailed_analysis": "Detaljert analyse",
+            "status": "Status",
+            "link_url": "Link URL",
+            "anchor_text": "Ankertekst",
+            "type": "Type"
+        },
+        "content": {
+            "main_title": "Hvorfor se etter ødelagte koblinger?",
+            "main_subtitle": "Ødelagte lenker skader nettstedets troverdighet, brukeropplevelse og SEO-ytelse. Vår gratis kontroll av brutte koblinger hjelper deg med å identifisere og fikse døde lenker før de skader rangeringene dine.",
+            "what_is_title": "Hva er en Broken Link Checker?",
+            "what_is_desc": "En kontroll av ødelagte koblinger er et verktøy som skanner nettsidene dine for å finne lenker som ikke lenger fungerer (404-feil, serverfeil eller omdirigeringer). Det hjelper deg å opprettholde et sunt nettsted ved å identifisere døde lenker som kan skade SEO og brukeropplevelsen din.",
+            "how_works_title": "Hvordan fungerer det?",
+            "how_works_intro": "Vår kontroll av brutte koblinger følger en enkel 3-trinns prosess:",
+            "how_works_step1": "<strong>Skann:</strong> Skriv inn nettadressen til siden din, så trekker vi ut alle koblingene",
+            "how_works_step2": "<strong>Sjekk:</strong> Vi tester hver kobling for å bekrefte statusen (200, 404, 301 osv.)",
+            "how_works_step3": "<strong>Rapport:</strong> Få en detaljert rapport som viser hvilke koblinger som er ødelagte og må fikses",
+            "pro_tip_title": "💡 Pro tips:",
+            "pro_tip_desc": "Kjør denne sjekken regelmessig (månedlig eller kvartalsvis) for å fange opp ødelagte koblinger før de påvirker SEO-en din. Sett opp en vedlikeholdsplan for å holde nettstedet ditt sunt!",
+            "types_title": "Typer ødelagte koblinger",
+            "common_causes_title": "Vanlige årsaker til ødelagte koblinger",
+            "cc_1": "❌ <strong>Skrivefeil i nettadresser:</strong> Feilstavede koblinger under innholdsoppretting eller migrering",
+            "cc_2": "❌ <strong>Slettede sider:</strong> Innhold fjernet uten å sette opp 301-viderekoblinger",
+            "cc_3": "❌ <strong>Omstrukturering av nettstedet:</strong> URL-strukturen endres under redesign",
+            "cc_4": "❌ <strong>Ekstern lenkeråte:</strong> Tredjepartsnettsteder som fjerner eller flytter innholdet deres",
+            "cc_5": "❌ <strong>Domeneutløp:</strong> Koblede nettsteder går permanent uten nett",
+            "cc_6": "❌ <strong>Protokollendringer:</strong> HTTP til HTTPS-migrering uten riktige omdirigeringer",
+            "best_practices_title": "Beste praksis for håndtering av ødelagte koblinger"
+        },
+        "benefits": {
+            "ux_title": "Brukeropplevelse",
+            "ux_desc": "Ødelagte koblinger frustrerer besøkende og øker fluktfrekvensen. Hold brukerne fornøyde med en jevn nettleseropplevelse.",
+            "seo_title": "SEO-effekt",
+            "seo_desc": "Søkemotorer straffer nettsteder med mange ødelagte lenker. Oppretthold rangeringene dine ved å fikse døde lenker umiddelbart.",
+            "maintenance_title": "Enkelt vedlikehold",
+            "maintenance_desc": "Identifiser og fiks ødelagte koblinger raskt før de skader nettstedets omdømme og søkesynlighet."
+        },
+        "link_types": {
+            "type1_title": "🔴 404 ikke funnet",
+            "type1_desc": "Den vanligste ødelagte lenken. Siden eksisterer ikke lenger på serveren.",
+            "type2_title": "301/302 omdirigeringer",
+            "type2_desc": "Siden har flyttet. Selv om det ikke er \"ødelagt\", bremser for mange omdirigeringer nettstedet ditt.",
+            "type3_title": "🔴 500 serverfeil",
+            "type3_desc": "Serveren oppdaget en feil. Disse trenger umiddelbar oppmerksomhet.",
+            "type4_title": "Tidsavbruddsfeil",
+            "type4_desc": "Serveren tok for lang tid å svare. Kan indikere ytelsesproblemer."
+        },
+        "best_practices": {
+            "bp1_title": "Regelmessige revisjoner",
+            "bp1_desc": "Sjekk nettstedet ditt månedlig for ødelagte koblinger, spesielt etter innholdsoppdateringer",
+            "bp2_title": "Bruk 301-viderekoblinger",
+            "bp2_desc": "Når du flytter eller sletter sider, må du alltid sette opp riktige omdirigeringer",
+            "bp3_title": "Overvåk eksterne lenker",
+            "bp3_desc": "Eksterne nettsteder endres ofte. Gjennomgå utgående linker kvartalsvis",
+            "bp4_title": "Dokumentendringer",
+            "bp4_desc": "Hold en logg over URL-endringer og omdirigeringer for fremtidig referanse",
+            "bp5_title": "Rett opp interne koblinger først",
+            "bp5_desc": "Prioriter å fikse interne ødelagte koblinger ettersom de er fullstendig under din kontroll",
+            "bp6_title": "Bruk relative nettadresser",
+            "bp6_desc": "For interne lenker, bruk relative URL-er for å unngå problemer under domeneendringer"
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hvor ofte bør jeg se etter ødelagte koblinger?",
+            "a1": "For de fleste nettsteder er det tilstrekkelig å se etter ødelagte lenker månedlig. Nettsteder eller e-handelsplattformer med høy trafikk bør sjekkes ukentlig. Etter større nettstedoppdateringer, redesign eller migreringer, kjør en umiddelbar sjekk.",
+            "q2": "Skader ødelagte koblinger mine SEO-rangeringer?",
+            "a2": "Ja, men indirekte. Google har uttalt at noen få ødelagte koblinger ikke vil direkte skade rangeringene. Imidlertid signaliserer <strong>mange ødelagte koblinger</strong> dårlig vedlikehold av nettstedet, noe som kan øke fluktfrekvensen, kaste bort gjennomgangsbudsjettet og redusere brukertilliten.",
+            "q3": "Hva er forskjellen mellom interne og eksterne brutte koblinger?",
+            "a3": "<strong>Interne ødelagte koblinger</strong> peker til sider på ditt eget domene og er fullstendig under din kontroll. <strong>Eksterne ødelagte koblinger</strong> peker til andre nettsteder. Du bør oppdatere dem til fungerende alternativer eller fjerne dem.",
+            "q4": "Kan jeg sjekke ødelagte koblinger for hele nettstedet mitt?",
+            "a4": "Dette verktøyet sjekker <strong>en side om gangen</strong> for å gi raske, fokuserte resultater. For fullsiderevisjoner anbefaler vi at du starter med de viktigste sidene dine: hjemmeside, topplandingssider og mye trafikk.",
+            "q_what_to_do": "Hva bør jeg gjøre når jeg finner ødelagte koblinger?",
+            "a_what_to_do_intro": "Følg denne prioriterte rekkefølgen:",
+            "a_what_to_do_li1": "<strong>Interne lenker:</strong> Sett opp 301-viderekoblinger til den nye nettadressen eller oppdater koblingen direkte",
+            "a_what_to_do_li2": "<strong>Eksterne lenker:</strong> Finn en alternativ arbeidsside eller bruk archive.org for å finne det gamle innholdet",
+            "a_what_to_do_li3": "<strong>Hvis ikke noe alternativ:</strong> Fjern koblingen og oppdater omkringliggende innhold for å opprettholde flyten",
+            "a_what_to_do_li4": "<strong>Dokumenter alt:</strong> Hold en logg for fremtidig referanse og mønsteranalyse"
+        },
+        "js": {
+            "stopping": "Stopper skanning...",
+            "scan_stopped": "Skanning stoppet",
+            "scan_complete": "Skanning fullført!",
+            "error_prefix": "Feil:",
+            "pending": "I påvente av",
+            "internal": "Innvendig",
+            "external": "Utvendig"
         }
     },
     "google-serp-checker": {
         "meta": {
             "title": "Google SERP Checker - Gratis online SEO-verktøy",
+            "description": "Gratis Google SERP-kontroll for å analysere søkemotorresultater og spore søkeordrangeringer på tvers av forskjellige steder.",
             "h1": "Google SERP Checker",
             "subtitle": "Sjekk rangeringer på Google og spor nøkkelordsposisjoner globalt"
         },
         "interface": {
+            "simulation_title": "Live SERP-sjekksimulering",
             "location_label": "Posisjon",
+            "location_placeholder": "Skriv inn by, land eller postnummer",
+            "domain_label": "Google Domain",
             "device_label": "Enhetstype",
             "device_desktop": "Stasjonær",
-            "device_mobile": "Mobil"
+            "device_mobile": "Mobil",
+            "no_login": "Ingen pålogging kreves",
+            "realtime_results": "Sanntidsresultater"
         },
         "form": {
             "keyword_label": "Skriv inn nøkkelord",
             "button": "Sjekk SERP"
+        },
+        "content": {
+            "main_title": "Hvorfor bruke vår gratis Google SERP Checker?",
+            "main_subtitle": "I SEO-verdenen er nøyaktighet alt. Vår SERP-analysator omgår personaliseringsalgoritmer for å vise deg den sanne SERP-rangeringen til nettstedet ditt.",
+            "feature1_title": "Hyper-lokal SERP-posisjonsnøyaktighet",
+            "feature1_desc": "Rangering for \"pizza i midtown manhattan\". Vi bruker avanserte Google UULE-parametere for å simulere nøyaktig lokalisert SERP-kontroll.",
+            "feature2_title": "Mobil SERP-finner og -analyse",
+            "feature2_desc": "Bekreft rangeringene dine på iPhone og Android. Ikke la Mobile-First Indexing overta deg. Omfattende mobil SERP-analyse.",
+            "feature3_title": "Global Google SERP Tracker",
+            "feature3_desc": "utvides? Sjekk rangeringer på tvers av 190+ land. Veksle mellom Google.co.uk, Google.de (Kostenlos SERP Checker), Google.jp og mer.",
+            "serp_features_title": "Forstå Google SERP-funksjoner",
+            "feature_snippet_title": "Utvalgte tekstutdrag",
+            "feature_snippet_desc": "Også kjent som \"svarbokser\", disse vises rundt 12 % av søkene. Vårt verktøy hjelper deg å sjekke om du eier denne førsteklasses eiendommen.",
+            "feature_local_title": "Lokal pakke",
+            "feature_local_desc": "Den kartbaserte listen over 3 lokale virksomheter. Avgjørende for murstein-og-mørtel-butikker. Bruk vår \"Plassering\"-funksjon for å bekrefte din tilstedeværelse.",
+            "feature_paa_title": "Folk spør også",
+            "feature_paa_desc": "Spørsmål i trekkspillstil knyttet til brukerens forespørsel. Rangering her kan føre til betydelig bevissthetstrafikk. Bruk vår serp-søkeordkontroll for å identifisere disse mulighetene.",
+            "feature_knowledge_title": "Kunnskapspanel",
+            "feature_knowledge_desc": "Informasjonsbokser som vises på høyre side av skrivebordsresultatene. Viktig for merkevareautoritet og entitets SEO.",
+            "what_is_title": "Hva er en SERP Checker & Analyzer?",
+            "what_is_desc": "En søkemotorresultatside (SERP) Checker er et viktig diagnoseverktøy for SEO-fagfolk og bedriftseiere. Den lar deg bruke en SERP-sjekker for et nettsted for å se resultatene for et spesifikt søkeord slik de vil se ut for en nøytral bruker på et bestemt geografisk sted.",
+            "bubble_problem_title": "\"Google Bubble\"-problemet",
+            "bubble_problem_desc": "Hvis du bare går til Google.com og søker etter dine egne søkeord, er resultatene sterkt partiske. Google tilpasser resultatene basert på din IP-adresse, søkehistorikk og enhetstype. Dette gjør det vanskelig å svare \"hva er min serp\" nøyaktig uten et verktøy.",
+            "solution_text": "Vår gratis Google SERP Checker sprenger denne boblen. Ved å bruke UULE-parameteren genererer vi en spesialkodet streng som forteller Google nøyaktig hvor den elektroniske SERP-sporingen skal simuleres fra, og gir deg 100 % rene, objektive data."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Er dette SERP-verktøyet gratis for ubegrensede søk?",
+            "a1": "Ja! Vårt gratis serp-verktøy lar deg sjekke så mange søkeord du vil uten å opprette en konto eller betale et abonnementsgebyr. Vi tror på å tilby tilgjengelige online serp-rangeringskontrollverktøy for alle.",
+            "q2": "Hvordan fungerer plasseringsfunksjonen i SERP Position Tool?",
+            "a2": "Vi bruker Googles offisielle UULE-parameter (Universal URL Location Encoded). Når du går inn i en by, finner vi dens nøyaktige GPS-koordinater og koder dem inn i søkeforespørselen, og tvinger Google til å vise resultater som om du fysisk sto i den byen.",
+            "q3": "Hvorfor ser min SERP Google-rangering annerledes ut på mobil?",
+            "a3": "Google bruker Mobile-First Indexing, noe som betyr at den hovedsakelig bruker mobilversjonen av innholdet for indeksering og rangering. Mobilsøkeresultater har også forskjellige oppsett (flere annonser, forskjellige tekstutdrag). Bruk \"Device\"-velgeren vår for å bekrefte din mobiltilstedeværelse spesifikt med denne google serps-sporeren."
         }
     },
     "keyword-density-checker": {
         "meta": {
             "title": "Keyword Density Checker - Gratis SEO-analyse på nettet",
+            "description": "Gratis søkeordtetthetskontrollverktøy. Analyser ordfrekvens og søkeordbruk for å optimalisere innholdet ditt.",
             "h1": "Søkeordtetthetskontroll",
             "subtitle": "Sjekk nøkkelordbruk for bedre søkerangeringer"
         },
         "form": {
             "label": "Lim inn tekst eller URL",
+            "placeholder": "Lim inn teksten din her...",
             "button": "Sjekk tetthet"
+        },
+        "results": {
+            "title": "Søkeordstatistikk",
+            "total_words": "Totale ord",
+            "unique_words": "Unike ord",
+            "sentences": "Setninger",
+            "paragraphs": "Avsnitt",
+            "long_sentences": "Lange setninger",
+            "short_sentences": "Korte setninger",
+            "top_keyword": "Topp søkeord",
+            "top_density": "Topp tetthet",
+            "single_keywords_title": "Enkelt nøkkelord",
+            "keyword_header": "Nøkkelord",
+            "count_header": "Telle",
+            "density_header": "Tetthet",
+            "two_word_title": "2-ord fraser",
+            "phrase_header": "Uttrykk",
+            "three_word_title": "3-ord fraser"
+        },
+        "content": {
+            "main_title": "Søkeordtetthetskontroll",
+            "main_subtitle": "Optimaliser innholdsrelevansen ved å analysere søkeordfrekvensen.",
+            "intro": "Vår søkeordtetthetskontroll hjelper deg med å finne de mest brukte ordene og frasene i teksten din. Perfekt for SEO-er og innholdsforfattere for å unngå søkeordstopping.",
+            "what_is_title": "Hva er søkeordtetthet?",
+            "what_is_text": "Søkeordtetthet er prosentandelen ganger et søkeord eller en setning vises rent i innholdet sammenlignet med det totale antallet ord på siden. Det er en nøkkelfaktor i søkemotoroptimalisering (SEO).",
+            "guidelines_title": "Retningslinjer for tetthet",
+            "why_use_title": "Hvorfor sjekke søkeordtetthet?",
+            "best_practices_title": "Beste praksis",
+            "faq_title": "FAQ"
+        },
+        "guidelines": {
+            "g1": "Det er ingen \"perfekt\" prosentandel, men <strong>1-3 %</strong> anses ofte som trygt.",
+            "g2": "Unngå \"Keyword Stuffing\" da det kan skade rangeringene dine.",
+            "g3": "Skriv naturlig for lesere, ikke bare for roboter.",
+            "g4": "Bruk synonymer og LSI-nøkkelord (Latent Semantic Indexing).",
+            "g5": "Sjekk ikke bare enkeltord, men setninger på 2-3 ord."
+        },
+        "features": {
+            "f1_title": "dyp analyse",
+            "f1_desc": "Analyserer enkeltord, bigrammer og trigrammer.",
+            "f2_title": "Ordteller",
+            "f2_desc": "Nøyaktig telling av ord, setninger og avsnitt.",
+            "f3_title": "Fyllingssjekk",
+            "f3_desc": "Hjelper med å identifisere om du representerer søkeord for ofte.",
+            "f4_title": "Gratis verktøy",
+            "f4_desc": "Helt gratis å bruke uten begrensninger.",
+            "f5_title": "For forfattere",
+            "f5_desc": "Forbedre innholdskvalitet og lesbarhet.",
+            "f6_title": "Stopp ord",
+            "f6_desc": "Intelligent filtrering av vanlige stoppord."
+        },
+        "best_practices": {
+            "bp1": "Fokuser på innholdskvalitet i stedet for spesifikke tetthetstall.",
+            "bp2": "Ta med hovedsøkeordet ditt i første avsnitt.",
+            "bp3": "Bruk nøkkelord i H1- og H2-overskrifter.",
+            "bp4": "Bruk langhale søkeordvarianter.",
+            "bp5": "Ikke ofre lesbarhet for SEO.",
+            "bp6": "Ikke gjenta det samme ordet unaturlig."
+        },
+        "faq": {
+            "q1": "Hva er en god søkeordtetthet?",
+            "a1": "De fleste SEO-eksperter anbefaler rundt 1-2 %. Teksten skal leses naturlig.",
+            "q2": "Hva er søkeordstopping?",
+            "a2": "Det er praksisen med å laste inn en nettside med søkeord i et forsøk på å manipulere et nettsteds rangering i Googles søkeresultater.",
+            "q3": "Ignorerer den stoppord?",
+            "a3": "Ja, verktøyet vårt filtrerer ut vanlige stoppord (som \"den\", \"og\", \"er\") for å gi deg tetthet av meningsfulle ord.",
+            "q4": "Har setningstetthet noen betydning?",
+            "a4": "Ja, søkemotorer ser etter setninger og emneklynger, ikke bare enkeltord.",
+            "q5": "Kan jeg sjekke en URL?",
+            "a5": "For øyeblikket fungerer dette verktøyet med tekstinntasting. Kopier sideinnholdet og lim det inn her."
+        },
+        "alerts": {
+            "enter_text": "Skriv inn litt tekst for å analysere"
         }
     },
     "meta-tag-analyzer": {
         "meta": {
             "title": "Meta Tag Analyzer - Gratis online SEO Meta Checker",
+            "description": "Gratis metatag-analysator for å sjekke og optimalisere nettstedets metatagger for bedre SEO.",
             "h1": "Meta Tag Analyzer",
             "subtitle": "Omfattende analyse av meta-tagger for søkemotoroptimalisering"
         },
         "form": {
             "label": "Skriv inn nettside-URL",
+            "placeholder": "https://example.com",
             "button": "Analyser meta-tagger"
+        },
+        "results": {
+            "title": "Analyseresultater",
+            "title_tag": "Titteltagg",
+            "length": "Lengde",
+            "characters": "tegn",
+            "meta_description": "Metabeskrivelse"
+        },
+        "results_labels": {
+            "other_tags": "Andre metakoder",
+            "seo_score": "SEO-poengsum",
+            "viewport": "Viewport",
+            "charset": "Tegnsett",
+            "robots": "Roboter"
+        },
+        "content": {
+            "main_title": "Meta Tag Analyzer",
+            "main_subtitle": "Analyser og optimaliser nettstedets metatagger på en enkel måte.",
+            "intro": "Vårt gratis Meta Tag Analyzer-verktøy hjelper deg å sjekke metakodene til enhver nettside. Få umiddelbar innsikt i tittelen, beskrivelsen og andre viktige SEO-tagger.",
+            "what_are_title": "Hva er metakoder?",
+            "what_are_desc": "Metakoder er tekstbiter som beskriver en sides innhold; metakodene vises ikke på selve siden, men bare i sidens kildekode. Metakoder er i hovedsak små innholdsbeskrivelser som hjelper til med å fortelle søkemotorer hva en nettside handler om.",
+            "essential_title": "Viktige metakoder for SEO",
+            "common_mistakes_title": "Vanlige metatag-feil",
+            "mistake_1": "Manglende tittel- eller beskrivelseskoder",
+            "mistake_2": "Overskrider anbefalte tegngrenser",
+            "mistake_3": "Dupliser metakoder på tvers av sider",
+            "mistake_4": "Bruker irrelevante søkeord",
+            "mistake_5": "Ingen viewport-tag for mobiloptimalisering",
+            "mistake_6": "Flere tittelkoder på én side",
+            "why_analyze_title": "Hvorfor analysere metakoder?"
+        },
+        "meta_tags": {
+            "title_tag_title": "Titteltagg",
+            "title_tag_desc": "Den viktigste metataggen. Den definerer sidetittelen i søkeresultatene.",
+            "title_optimal_length": "Optimal lengde:",
+            "title_optimal_value": "50-60 tegn",
+            "title_best_practice": "Beste praksis:",
+            "title_best_value": "Ta med hovedsøkeordet ditt nær begynnelsen.",
+            "meta_desc_title": "Metabeskrivelse",
+            "meta_desc_desc": "Gir et sammendrag av sideinnhold. Påvirker klikkfrekvens (CTR).",
+            "meta_desc_optimal_length": "Optimal lengde:",
+            "meta_desc_optimal_value": "150-160 tegn",
+            "meta_desc_best_practice": "Beste praksis:",
+            "meta_desc_best_value": "Skriv overbevisende kopi med en oppfordring til handling.",
+            "og_title": "Åpne graf (sosial)",
+            "og_desc": "Styrer hvordan innholdet ditt vises når det deles på sosiale medier (Facebook, LinkedIn).",
+            "og_key_tags": "Nøkkelkoder:",
+            "og_key_value": "og:tittel, og:beskrivelse, og:bilde",
+            "og_platform": "Plattformer:",
+            "og_platform_value": "Facebook, LinkedIn, Pinterest",
+            "twitter_title": "Twitter-kort",
+            "twitter_desc": "Spesifikke metakoder for å optimalisere hvordan innholdet ditt vises på Twitter.",
+            "twitter_key_tags": "Nøkkelkoder:",
+            "twitter_key_value": "twitter:kort, twitter:tittel, twitter:bilde",
+            "twitter_types": "Typer:",
+            "twitter_types_value": "Sammendrag, sammendrag med stort bilde"
+        },
+        "benefits": {
+            "b1_title": "Bedre rangeringer",
+            "b1_desc": "Riktige tagger hjelper søkemotorer med å forstå innholdet ditt.",
+            "b2_title": "Høyere CTR",
+            "b2_desc": "Overbevisende titler og beskrivelser får flere klikk.",
+            "b3_title": "Sosial synlighet",
+            "b3_desc": "Optimaliserte Open Graph-tagger forbedrer utseendet på sosial deling.",
+            "b4_title": "Konkurrentanalyse",
+            "b4_desc": "Analyser konkurrent-tagger for å avgrense strategien din."
+        },
+        "features": {
+            "f2_title": "Øyeblikkelig analyse",
+            "f2_desc": "Få resultater på sekunder.",
+            "f3_title": "Gratis å bruke",
+            "f3_desc": "Ingen skjulte avgifter eller grenser."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er en Meta Tag Analyzer?",
+            "a1": "Det er et verktøy som gjennomsøker en nettside og trekker ut metakodene (tittel, beskrivelse, roboter, nøkkelord) for analyse.",
+            "q2": "Hvorfor er metakoder viktige for SEO?",
+            "a2": "De gir søkemotorer informasjon om siden din og bestemmer ofte hvordan nettstedet ditt vises i søkeresultatene.",
+            "q3": "Hva er den perfekte lengden på Titteltaggen?",
+            "a3": "Det anbefales å holde det mellom 50-60 tegn for å unngå å bli avkortet i Googles søkeresultater.",
+            "q4": "Påvirker metakoder for søkeord rangeringen?",
+            "a4": "De fleste moderne søkemotorer (inkludert Google) bruker ikke lenger metakoden for søkeord for rangeringsformål.",
+            "q5": "Hvordan fikser jeg metatag-feil?",
+            "a5": "Du må redigere HTML-koden for siden din (i <head>-delen) eller bruke SEO-innstillingene/-plugins for CMS."
+        },
+        "js": {
+            "alert_enter_url": "Vennligst skriv inn en gyldig URL",
+            "analyzing": "Analyserer...",
+            "error_cors": "<strong>CORS-feil (demo):</strong> I produksjon må forespørsler til eksterne nettadresser gå gjennom din backend-proxy. <br> Nedenfor vises demodata.",
+            "error_general": "Feil ved analyse av URL",
+            "analyze_btn": "Analyser metatagger",
+            "demo_title": "Eksempel på sidetittel – Optimalisert for SEO",
+            "demo_description": "Dette er et eksempel på en metabeskrivelse. Den skal være beskrivende, engasjerende og inneholde nøkkelord for å tiltrekke klikk fra søkeresultater.",
+            "status_optimal": "Optimal",
+            "advice_perfect_length": "Perfekt lengde!",
+            "status_too_long": "For lang",
+            "advice_truncated": "Kan være avkortet i søkeresultatene.",
+            "status_too_short": "For kort",
+            "advice_add_detail": "Vurder å legge til flere detaljer.",
+            "advice_truncated_short": "Kan være avkortet.",
+            "advice_add_detail_short": "Vurder å legge til detaljer.",
+            "score_text": "God! Metakodene dine er godt optimalisert."
         }
     },
     "on-page-seo-checker": {
         "meta": {
             "title": "On-Page SEO Checker - Gratis online nettstedsrevisor",
+            "description": "Gratis SEO-sjekker på siden for å analysere og optimalisere nettsidene dine for søkemotorer.",
             "h1": "On-Page SEO Checker",
             "subtitle": "Komplett on-page SEO-revisjon med konkrete anbefalinger"
+        },
+        "interface": {
+            "title": "Start din gratis revisjon",
+            "url_label": "Nettstedets URL",
+            "keywords_label": "Målrette søkeord",
+            "recommended": "Anbefalt",
+            "button": "Start omfattende revisjon",
+            "page_analysis": "Sideanalyse"
+        },
+        "labels": {
+            "initializing": "Initialiserer...",
+            "desktop": "Skrivebord",
+            "mobile": "Mobil"
+        },
+        "content": {
+            "main_content_title": "Omfattende On-Page SEO Checker & Analyzer",
+            "main_content_desc": "Moderne søkemotorer bruker nevral matching for å forstå <em>hensikten</em> bak et søk, ikke bare eksakte søkeord. Vår <strong>sidesøkekontroll</strong> er bygget på de samme prinsippene. Enten du trenger en rask <strong>onpage seo-sjekk</strong> eller en dyp semantisk revisjon, fungerer verktøyet vårt som en nevral <strong>onpage seo-analysator</strong>, og hjelper deg å bygge bro mellom innholdet ditt og hvordan AI-drevne algoritmer tolker det.",
+            "how_to_title": "Slik bruker du On-Page SEO Checker Tool"
+        },
+        "features": {
+            "f1_title": "Øyeblikkelig semantisk analyse",
+            "f1_desc": "Søkeedderkopper kryper effektivt. Vår <strong>på-side seo-sjekk på nettet</strong> etterligner denne oppførselen, og analyserer DOM-en din for å forstå struktur og hierarki. Dette <strong>påsidekontrollverktøyet</strong> sikrer at HTML-koden din snakker søkemotorenes språk.",
+            "f2_title": "Datadrevet skåring",
+            "f2_desc": "Glem subjektivitet – du mottar vektet poengsum på tvers av signaler som topptekstoptimalisering, metafullstendighet og ordtellingsforhold. Det er en gjennomsiktig <strong>seo-sjekk på siden</strong>-mekanisme med handlingsbare terskler.",
+            "f3_title": "Kontekstuell innholdsgjennomgang",
+            "f3_desc": "Myten om \"perfekte\" søkeordtetthet er død. Vårt <strong>onpage seo-revisjonsverktøy</strong> evaluerer kontekstuell relevans i stedet. Er H1-ene dine tilpasset brukerhensikten? Tilfredsstiller innholdet ditt søket? Dette er moderne <strong>på side seo-analyse</strong>.",
+            "f4_title": "Mobil og teknisk sjekk",
+            "f4_desc": "Viewport-tagger, kanoniske koblinger og strukturerte databiter – avmerket. Vår <strong>onpage seo-tester</strong> rapporterer røde flagg for mobilbrukervennlighet og inkonsekvenser i oppmerking, og gir deg en <strong>on-side seo-rapport</strong> som er både estetisk og algoritmisk.",
+            "f5_title": "100 % gratis tilgang",
+            "f5_desc": "Ingen abonnementer, ingen skjulte grenser. Dette er ditt <strong>onpage seo-verktøy gratis</strong>-alternativ. Kjør ubegrensede revisjoner på alle offentlige nettadresser, enten for ditt eget nettsted eller konkurrerende forskning.",
+            "f6_title": "Link arkitektur",
+            "f6_desc": "Intern og ekstern lenke revisjon i én visning. Se hvor mange utgående lenker peker hvor, og om din interne kobling styrker aktuell autoritet. Det er en holistisk <strong>gratis seo-sjekker på siden</strong> designet for helhet."
+        },
+        "how_to": {
+            "step1_title": "Skriv inn URL-en din",
+            "step1_desc": "Oppgi det spesifikke sideendepunktet. Vår <strong>på-side seo-sjekker på nettet</strong> henter rå HTML akkurat som en søkerobot ville gjort.",
+            "step2_title": "Analyser signaler",
+            "step2_desc": "Start <strong>seo-sidetesteren</strong>. Vi analyserer overskrifter, metadata og innholdsstruktur for å etterligne hvordan algoritmer \"leser\" siden din.",
+            "step3_title": "Optimaliser for intensjoner",
+            "step3_desc": "Bruk dataene til å avgrense innholdets relevans. <strong>Sjekk logikken på nettstedet</strong> og forbedre den handlingsdyktige <strong>siden seo-poengsummen</strong>."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hvorfor er en seo-sjekk på siden kritisk for rangering?",
+            "a1": "Søk handler om relevans. En <strong>seo-sjekk på siden</strong> sikrer at signalene dine (titler, skjema, innhold) stemmer overens med brukernes hensikter. Regelmessig revisjon med et <strong>onpage site seo</strong>-verktøy holder nettstedet ditt synkronisert med utviklende algoritmeoppdateringer.",
+            "q2": "Er dette onpage seo-verktøyet på nettet virkelig gratis?",
+            "a2": "Ja. Vi tror på tilgjengelige data. Vårt <strong>på side seo-verktøy på nettet</strong> er gratis å bruke, slik at du kan fungere som ditt eget <strong>gratis on-side seo-verktøy</strong> uten abonnementsbarrierer.",
+            "q3": "Hvordan forstår søkemotorer innholdet mitt?",
+            "a3": "Motorer bruker NLP (Natural Language Processing) for å relatere enheter. Vår <strong>på side seo-grader</strong> sjekker om strukturen din støtter denne forståelsen, og fungerer som en proxy <strong>seo onpage-test</strong> for nevral kompatibilitet.",
+            "q4": "Kan jeg sjekke onpage seo for hvilken som helst nettside?",
+            "a4": "Ja. Søkeroboten vår respekterer \"robots.txt\", men kan analysere alle offentlige nettadresser. Du kan <strong>sjekke på side seo</strong> for at konkurrenter kan reversere suksessen deres. Det er et allsidig <strong>påsidekontrollverktøy</strong> for enhver strategi."
         }
     },
     "pdf-report": {
+        "seo": {
+            "title": "PDF-rapport - Profesjonell SEO-revisjonsrapport"
+        },
+        "interface": {
+            "brand_name": "Optimalisering",
+            "cover_title": "SEO REVISJONSRAPPORT",
+            "overall_score": "SAMLET POENG",
+            "generated_on": "Generert på",
+            "suite_name": "Optimizo SEO Tools Suite",
+            "audit_title": "Optimizo SEO-revisjon",
+            "analysis_methods": "Detaljerte analysemetoder",
+            "recommendation": "ANBEFALING:"
+        },
         "meta": {
             "title": "SEO PDF Report Generator - Gratis online revisjonsverktøy",
-            "h1": "PDF-rapportgenerator"
+            "description": "Generer en gratis SEO-revisjonsrapport i PDF-format for nettstedet ditt.",
+            "h1": "PDF-rapportgenerator",
+            "subtitle": "Lag detaljerte PDF-rapporter for SEO-analyse og revisjoner"
         }
     },
     "redirect-checker": {
         "meta": {
             "title": "Redirect Checker Online - Gratis HTTP-statusverktøy",
+            "description": "Gratis omdirigeringskontrollverktøy for å analysere URL-omdirigeringer, spore omdirigeringskjeder, sjekke HTTP-statuskoder og oppdage omdirigeringsløkker. Viktig for SEO og feilsøking.",
             "h1": "Redirect Checker",
             "subtitle": "Spor HTTP-omdirigeringer og identifiser 301, 302 og kjeder"
         },
         "form": {
             "url_label": "Skriv inn URL-er som skal sjekkes",
+            "url_placeholder": "https://example.com\nhttps://en annen-side.com\nhttps://third-site.com",
+            "canonical_check": "Sjekk også domene kanonisk (www vs ikke-www)",
+            "user_agent_label": "Brukeragent",
+            "user_agent_default": "Standard (nettleser)",
+            "user_agent_googlebot": "Googlebot (Google)",
+            "user_agent_bingbot": "Bingbot (Bing)",
+            "user_agent_facebook": "Facebook Crawler",
+            "user_agent_iphone": "iPhone (Safari)",
+            "user_agent_android": "Android (Chrome)",
             "button": "Sjekk URL-er"
-        }
-    },
-    "slug-generator": {
-        "meta": {
-            "title": "URL Slug Generator - Gratis online SEO-vennlig verktøy",
-            "h1": "URL Slug Generator",
-            "subtitle": "Generer rene, SEO-vennlige URL-slugs fra tekst umiddelbart"
         },
-        "editor": {
-            "label_input": "Skriv inn tekst eller tittel"
-        }
-    },
-    "yahoo-serp-checker": {
-        "meta": {
-            "title": "Yahoo SERP Checker - Gratis online SEO-rangeringsverktøy",
-            "h1": "Yahoo SERP Checker",
-            "subtitle": "Overvåk søkerangeringer på Yahoo for dine nøkkelord"
-        }
-    },
-    "sitemap-validator": {
-        "meta": {
-            "title": "Sitemap Validator - Gratis online XML Sitemap Checker",
-            "description": "Gratis verktøy for å sjekke XML sitemaps for feil, validere URL-er og sikre protokolloverholdelse.",
-            "h1": "Nettkartvalidator",
-            "subtitle": "Valider dine XML sitemaps for feil"
-        },
-        "editor": {
-            "title": "Valider Sitemap",
-            "btn_xml_input": "XML Input",
-            "btn_url_input": "URL Input",
-            "label_xml": "Lim inn XML",
-            "ph_xml": "Lim inn din sitemap XML-kode her...",
-            "label_url": "Sitemap URL",
-            "ph_url": "https://eksempel.no/sitemap.xml",
-            "help_url": "Skriv inn hele URL-en til din sitemap.xml-fil",
-            "btn_fetch": "Hent",
-            "btn_validate": "Valider",
-            "btn_validating": "Validerer...",
-            "btn_clear": "Tøm",
-            "btn_example": "Last Eksempel",
-            "check_urls": "Sjekk URL Tilgjengelighet"
-        },
-        "results": {
-            "title": "Valideringsresultater"
+        "loading": {
+            "analyzing": "Analyserer omdirigeringsbane ..."
         },
         "content": {
-            "main_heading": "Mestre din sidestruktur",
-            "main_intro": "Sørg for at nettstedet ditt er perfekt søkbart for søkemotorer. Finn feil og optimaliser rangeringen.",
-            "what_is_title": "Hva er en XML Sitemap Validator?",
-            "what_is_desc_1": "Et viktig SEO-verktøy for å sjekke sitemap-filer for syntaksfeil og døde lenker.",
-            "what_is_desc_2": "Sitemap er et kart for roboter. Feil kan hindre indeksering av viktige sider.",
-            "features_title": "Hvorfor velge oss?",
-            "feature_instant_title": "Øyeblikkelig analyse",
-            "feature_instant_desc": "Få tilbakemelding med en gang.",
-            "feature_strict_title": "Streng validering",
-            "feature_strict_desc": "Vi sjekker mot den offisielle XSD-standarden.",
-            "feature_index_title": "Støtte for indeks",
-            "feature_index_desc": "Støtter sitemap-indeksfiler.",
-            "importance_title": "Viktighet for SEO",
-            "importance_budget_title": "Crawl Budget Effektivitet",
-            "importance_budget_desc": "Hjelper søkemotorer med å bruke ressurser klokt.",
-            "importance_indexing_title": "Raskere indeksering",
-            "importance_indexing_desc": "Prioriter nytt innhold.",
-            "importance_discovery_title": "Oppdagelse av sider",
-            "importance_discovery_desc": "Finner isolerte sider.",
-            "importance_troubleshooting_title": "Feilsøking",
-            "importance_troubleshooting_desc": "Finn 404-feil raskt.",
-            "guide_title": "Slik gjør du det",
-            "guide_step1_title": "Skriv inn URL",
-            "guide_step1_desc": "Lim inn din sitemap-adresse.",
-            "guide_step2_title": "Kjør validering",
-            "guide_step2_desc": "Klikk for å starte analysen.",
-            "guide_step3_title": "Se resultater",
-            "guide_step3_desc": "Rett feil markert med rødt.",
-            "faq_title": "FAQ",
-            "faq_privacy_question": "Lagrer dere data?",
-            "faq_privacy_answer": "Nei, vi respekterer ditt personvern.",
-            "faq_frequency_question": "Hvor ofte bør jeg sjekke?",
-            "faq_frequency_answer": "Ved strukturendringer eller månedlig.",
-            "faq_size_question": "Størrelsesgrense?",
-            "faq_size_answer": "50MB eller 50 000 URL-er.",
-            "faq_localhost_question": "Fungerer det på localhost?",
-            "faq_localhost_answer": "Ja, ved å lime inn XML-koden."
+            "main_title": "Redirect & HTTP Status Checker Tool",
+            "main_subtitle": "Fullfør URL-analyse med omdirigeringssporing, statuskodekontroll og loop-deteksjon",
+            "intro": "Analyser HTTP-statuskoder, spor omdirigeringskjeder, oppdage 301- og 302-omdirigeringer, identifiser ødelagte koblinger og finn omdirigeringsløkker med vårt omfattende gratisverktøy. Viktig for SEO-optimalisering, feilsøking av nettsider, migreringsplanlegging og sikring av riktig URL-struktur. Sjekk hvilken som helst URL umiddelbart for å se den fullstendige omdirigeringsbanen, svarkoder og potensielle problemer.",
+            "features_title": "✨ Nøkkelfunksjoner",
+            "feature1_title": "Bulk URL-kontroll",
+            "feature1_desc": "Sjekk opptil 10 nettadresser samtidig med fremdriftssporing",
+            "feature2_title": "Kanonisk domenesjekk",
+            "feature2_desc": "Bekreft www vs ikke-www-konsistens for SEO",
+            "feature3_title": "Sløyfedeteksjon",
+            "feature3_desc": "Visuelt diagram som viser eksakte omdirigeringssløyfemønstre",
+            "feature4_title": "Komplett kjedeanalyse",
+            "feature4_desc": "Spor hele omdirigeringsstier med statuskoder og timing",
+            "what_are_redirects_title": "Hva er HTTP-omdirigeringer?",
+            "what_are_redirects_desc": "HTTP-omdirigeringer er serversvar som automatisk sender besøkende fra en URL til en annen. Når en nettleser ber om en URL, kan serveren svare med en omdirigeringsstatuskode (som 301 eller 302) sammen med den nye destinasjonsadressen. Omdirigeringer er avgjørende for å opprettholde SEO-verdi når du flytter innhold, fikser ødelagte koblinger, håndhever HTTPS og administrerer domeneendringer.",
+            "status_codes_title": "Forstå HTTP-statuskoder",
+            "status_2xx_title": "2xx - Suksess",
+            "status_2xx_desc": "Disse indikerer vellykkede forespørsler uten problemer",
+            "status_3xx_title": "3xx - Omdirigeringer",
+            "status_3xx_desc": "URL har flyttet, nettleseren skal følge omdirigering",
+            "status_4xx_title": "4xx - Klientfeil",
+            "status_4xx_desc": "Forespørselsfeil på klientsiden",
+            "status_5xx_title": "5xx - Serverfeil",
+            "status_5xx_desc": "Feil på serversiden",
+            "redirect_301_title": "301 Permanent omdirigering",
+            "redirect_301_when": "<strong>Når skal det brukes:</strong> Innhold flyttet permanent til en ny nettadresse",
+            "redirect_301_seo": "<strong>SEO-påvirkning:</strong> overfører 90–99 % av koblingskapitalen til ny nettadresse",
+            "redirect_301_cache": "<strong>Caching:</strong> Nettlesere bufre permanent, vanskelig å endre",
+            "redirect_302_title": "302 Midlertidig viderekobling",
+            "redirect_302_when": "<strong>Når skal du bruke:</strong> Innhold midlertidig på annen nettadresse",
+            "redirect_302_seo": "<strong>SEO-påvirkning:</strong> Den opprinnelige nettadressen beholder rangeringen",
+            "redirect_302_cache": "<strong>Caching:</strong> Ikke bufret, lett å endre eller fjerne",
+            "why_check_title": "Hvorfor sjekke omdirigeringer?",
+            "why_check_1": "<strong>Nettstedmigrering:</strong> Bekreft at alle gamle nettadresser omdirigerer til nye steder på riktig måte",
+            "why_check_2": "<strong>Deteksjon av ødelagte koblinger:</strong> Finn 404-feil og ødelagte viderekoblingskjeder",
+            "why_check_3": "<strong>Ytelsesproblemer:</strong> Identifiser overdreven viderekoblingskjeder som bremser sideinnlastingen",
+            "why_check_4": "<strong>Redirect Loop Detection:</strong> Fang sirkulære omdirigeringer som forårsaker uendelige looper",
+            "why_check_5": "<strong>Sikkerhetsrevisjoner:</strong> Bekreft omdirigeringsdestinasjoner og forhindre ondsinnede omdirigeringer",
+            "why_check_6": "<strong>Brukeropplevelse:</strong> Sørg for at besøkende når tiltenkt innhold raskt",
+            "why_check_7": "<strong>Analytics-nøyaktighet:</strong> Bekreft at sporingskoder fungerer gjennom viderekoblingskjeder",
+            "redirect_chains_title": "Hva er omdirigeringskjeder?",
+            "redirect_chains_desc": "En omdirigeringskjede oppstår når en URL omdirigerer til en annen URL, som omdirigerer til en annen, og så videre. Hvert hopp i kjeden legger til latens og kan påvirke SEO. Eksempel: URL A → URL B → URL C → Endelig URL (3 omdirigeringer).",
+            "chain_recommended": "<strong>Anbefalt:</strong> 0-1 omdirigeringer (direkte eller enkelt hopp)",
+            "chain_acceptable": "<strong>Akseptabelt:</strong> 2-3 omdirigeringer (mindre ytelsespåvirkning)",
+            "chain_problematic": "<strong>Problematisk:</strong> 4+ omdirigeringer (betydelige SEO- og hastighetsproblemer)",
+            "redirect_loops_title": "Hva er omdirigeringsløkker?",
+            "redirect_loops_desc": "En omdirigeringssløyfe skjer når URL A omdirigerer til URL B, som omdirigerer tilbake til URL A, og skaper en uendelig syklus. Nettlesere oppdager dette og viser en feil som \"For mange omdirigeringer\" eller \"Redirect loop oppdaget\". Dette ødelegger siden fullstendig og må fikses umiddelbart.",
+            "common_issues_title": "Vanlige omdirigeringsproblemer og løsninger",
+            "issue1_title": "Lange omdirigeringskjeder",
+            "issue1_problem": "<strong>Problem:</strong> Flere omdirigeringer senker sideinnlastingen og fortynner SEO-verdien",
+            "issue1_solution": "<strong>Løsning:</strong> Oppdater viderekoblinger til å peke direkte til den endelige destinasjonen",
+            "issue2_title": "Blandede omdirigeringstyper",
+            "issue2_problem": "<strong>Problem:</strong> Inkonsekvente viderekoblingstyper forvirrer søkemotorer",
+            "issue2_solution": "<strong>Løsning:</strong> Bruk 301 for permanente trekk, 302 bare for midlertidige",
+            "issue3_title": "Ødelagte omdirigeringskjeder",
+            "issue3_problem": "<strong>Problem:</strong> Omdiriger punkter til en ikke-eksisterende side",
+            "issue3_solution": "<strong>Løsning:</strong> Oppdater viderekobling til gyldig destinasjon eller fjern den",
+            "issue4_title": "HTTPS/HTTP-løkker",
+            "issue4_problem": "<strong>Problem:</strong> Nettstedet omdirigerer mellom HTTP og HTTPS i det uendelige",
+            "issue4_solution": "<strong>Løsning:</strong> Fiks SSL-konfigurasjon og .htaccess-regler",
+            "best_practices_title": "Beste praksis for SEO for omdirigeringer",
+            "best_practice1": "• Bruk alltid 301-viderekoblinger for permanente URL-endringer for å bevare SEO-verdien",
+            "best_practice2": "• Minimer viderekoblingskjeder - omdiriger direkte til endelig destinasjon når det er mulig",
+            "best_practice3": "• Unngå omdirigeringsløkker for enhver pris – de bryter brukeropplevelsen og SEO",
+            "best_practice4": "• Oppdater interne lenker i stedet for å stole på omdirigeringer",
+            "best_practice5": "• Overvåk omdirigeringsytelsen regelmessig med verktøy som dette",
+            "best_practice6": "• Hold viderekoblinger aktive i minst 1 år etter URL-endringer",
+            "best_practice7": "• Bruk 302-omdirigeringer sparsomt og kun for virkelig midlertidige situasjoner"
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er en omdirigeringskjede?",
+            "a1": "En omdirigeringskjede er en serie omdirigeringer fra en URL til en annen til den siste siden er nådd. Lange kjeder bremser nettstedet og sløser gjennom budsjettet.",
+            "q2": "Påvirker en 301-viderekobling rangeringen?",
+            "a2": "En 301-omdirigering bevarer mesteparten av linkequity (rangeringskraft), men overdreven bruk i kjeder kan fortynne denne effekten.",
+            "q3": "Hvordan finner jeg omdirigeringsløkker?",
+            "a3": "Bruk verktøyet vårt - det vil automatisk markere en feil hvis det oppdager en uendelig bane.",
+            "q4": "Bør jeg omdirigere fra http til https?",
+            "a4": "Ja, det er et obligatorisk trinn for sikkerhet og SEO. En 301-viderekobling på servernivå (Nginx eller Apache) anbefales.",
+            "q5": "Hvor mange omdirigeringer er akseptable?",
+            "a5": "Ideelt sett null eller én. Google følger vanligvis opptil 5 hopp, men hvert hopp øker lastetiden."
         }
     },
     "hreflang-checker": {
@@ -229,6 +682,203 @@
             "faq5_a": "Søkemotorer kan ignorere ugyldige tagger, noe som kan føre til at feil språkversjon vises til brukere, eller straff for duplikatinnhold.",
             "faq6_q": "Er dette verktøyet gratis?",
             "faq6_a": "Ja, du kan utføre ubegrensede sjekker gratis for å sikre perfekt internasjonal SEO."
+        }
+    },
+    "slug-generator": {
+        "meta": {
+            "title": "URL Slug Generator - Gratis online SEO-vennlig verktøy",
+            "description": "Generer rene, SEO-vennlige URL-slugs fra hvilken som helst tekst umiddelbart med vårt gratisverktøy.",
+            "h1": "URL Slug Generator",
+            "subtitle": "Generer rene, SEO-vennlige URL-slugs fra tekst umiddelbart"
+        },
+        "editor": {
+            "label_input": "Skriv inn tekst eller tittel",
+            "ph_input": "Skriv inn tittel eller tekst..."
+        },
+        "content": {
+            "hero_title": "URL Slug Generator - Lag SEO-vennlige URLer",
+            "hero_subtitle": "Generer rene, SEO-vennlige URL-snegler fra hvilken som helst tekst umiddelbart med vårt gratis sluggeneratorverktøy. Konverter bloggtitler, artikkeloverskrifter og sidenavn til lesbare, søkemotoroptimaliserte nettadresser.",
+            "what_title": "Hva er en URL-slug?",
+            "what_desc": "En URL-slug er den delen av en nettadresse som kommer etter domenenavnet og identifiserer en bestemt side. For eksempel, i \"example.com/how-to-create-seo-friendly-urls\", er sneglen \"how-to-create-seo-friendly-urls\".",
+            "why_title": "Hvorfor bruke SEO-vennlige snegler?",
+            "why_list": [
+                "Bedre SEO-rangeringer: Nøkkelord i URL-er hjelper søkemotorer med å forstå sideinnhold",
+                "Forbedrede klikkfrekvenser: Lesbare nettadresser er mer pålitelige og klikkbare",
+                "Brukeropplevelse: Tydelige nettadresser forteller brukerne hva de kan forvente før de klikker",
+                "Sosial deling: Rene nettadresser ser profesjonelle ut når de deles på sosiale medier",
+                "Link Building: Beskrivende URL-er gir bedre ankertekst for tilbakekoblinger",
+                "Tilgjengelighet: Skjermlesere kan bedre tolke meningsfulle nettadresser"
+            ],
+            "practices_title": "URL Slug beste praksis",
+            "practices_list": [
+                "Bruk små bokstaver – Unngå bruk av store bokstaver for konsistens",
+                "Bruk bindestreker (-) - Skill ord med bindestreker, ikke understrek",
+                "Hold det kort - Sikt på maksimalt 3-5 ord",
+                "Inkluder søkeord – Bruk relevante søkeord for SEO",
+                "Vær beskrivende - Beskriv sidens innhold tydelig",
+                "Unngå spesialtegn - Fjern @, #, %, & osv.",
+                "Unngå stoppord - Fjern \"a\", \"den\", \"og\" når det er mulig",
+                "Unngå tall/datoer – med mindre det er nødvendig for innholdet"
+            ],
+            "how_works_title": "Slik fungerer sneglegeneratoren vår",
+            "how_works_desc": "Verktøyet vårt følger bransjens beste praksis for å lage perfekte URL-slugs. Den konverterer tekst til små bokstaver, fjerner spesialtegn og tegnsetting, erstatter mellomrom med bindestreker, fjerner påfølgende bindestreker og trimmer innledende/etterfølgende bindestreker.",
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "blog": {
+                    "title": "ðŸ“ Blogginnlegg",
+                    "desc": "Konverter artikkeltitler til SEO-vennlige URL-er for WordPress, Medium eller tilpassede blogger"
+                },
+                "ecommerce": {
+                    "title": "ðŸ›ï¸ E-handel",
+                    "desc": "Opprett produktnettadresser som inkluderer søkeord og produktnavn"
+                },
+                "docs": {
+                    "title": "ðŸ“„ Dokumentasjon",
+                    "desc": "Generer rene URL-er for hjelpeartikler og dokumentasjonssider"
+                },
+                "landing": {
+                    "title": "🎯 Landingssider",
+                    "desc": "Lag søkeordrike nettadresser for markedsføringskampanjer og landingssider"
+                }
+            },
+            "pro_tip_title": "💡 SEO Pro-tips",
+            "pro_tip_desc": "Google anbefaler å bruke bindestreker (-) i stedet for understreking (_) i URL-er fordi bindestreker behandles som ordskilletegn mens understreking ikke er det. Dette betyr at \"seo-friendly-urls\" er bedre enn \"seo_friendly_urls\" for søkemotoroptimalisering.",
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Bør jeg bruke bindestreker eller understreker i nettadresser?",
+                "a1": "Bruk alltid bindestreker (-). Google behandler bindestreker som ordskillere, men behandler understrek som ordkoblinger. Dette betyr at \"best-seo-practices\" leses som tre separate ord, mens \"best_seo_practices\" leses som ett ord.",
+                "q2": "Hvor lang skal en URL-slug være?",
+                "a2": "Hold snegler mellom 3-5 ord (30-60 tegn). Kortere nettadresser er lettere å huske, dele og rangere bedre i søkeresultatene. Fjern unødvendige ord som \"a\", \"den\", \"og\" for å holde snegler konsise.",
+                "q3": "Kan jeg endre en URL-slug etter publisering?",
+                "a3": "Ja, men det anbefales ikke. Endring av nettadresser kan bryte eksisterende lenker og skade SEO. Hvis du må endre en slug, må du alltid sette opp en 301-viderekobling fra den gamle URL-en til den nye for å bevare linkequity og unngå 404-feil.",
+                "q4": "Bør jeg inkludere søkeord i URL-sluggen min?",
+                "a4": "Ja! Å inkludere relevante søkeord i URL-slugen hjelper søkemotorer med å forstå innholdet ditt og kan forbedre rangeringen. Men hold det naturlig og beskrivende – ikke fyll inn søkeord på unaturlig vis."
+            }
+        },
+        "js": {
+            "copied": "Kopiert!"
+        }
+    },
+    "yahoo-serp-checker": {
+        "meta": {
+            "title": "Yahoo SERP Checker - Gratis online SEO-rangeringsverktøy",
+            "description": "Gratis Yahoo SERP-sjekker for å spore nettstedets rangeringer på Yahoos søkemotor.",
+            "h1": "Yahoo SERP Checker",
+            "subtitle": "Overvåk søkerangeringer på Yahoo for dine nøkkelord"
+        },
+        "interface": {
+            "simulation_title": "Live Yahoo SERP-sjekk",
+            "keyword_label": "Skriv inn nøkkelord",
+            "location_label": "Plassering (by)",
+            "yahoo_domain_label": "Yahoo domene",
+            "device_label": "Enhetstype",
+            "device_desktop": "Skrivebord",
+            "device_mobile": "Mobil (smarttelefon)",
+            "no_login": "Ingen pålogging kreves",
+            "realtime_results": "Sanntidsresultater"
+        },
+        "form": {
+            "keyword_placeholder": "søkeordet ditt...",
+            "location_placeholder": "Angi by (valgfritt)",
+            "button": "Sjekk Yahoo SERP"
+        },
+        "domains": {
+            "us": "Yahoo.com (USA/Global)",
+            "uk": "Yahoo.co.uk (Storbritannia)",
+            "ca": "Yahoo.ca (Canada)",
+            "au": "Yahoo.com.au (Australia)",
+            "de": "Yahoo.de (Tyskland)",
+            "fr": "Yahoo.fr (Frankrike)",
+            "it": "Yahoo.it (Italia)",
+            "es": "Yahoo.es (Spania)",
+            "br": "Yahoo.com.br (Brasil)"
+        },
+        "content": {
+            "main_title": "Avansert Yahoo Rank Checker",
+            "main_subtitle": "Overvåk søkeresultatene dine på Yahoo. Få nøyaktige rangeringsdata i sanntid for å optimalisere SEO-strategien din.",
+            "feature1_title": "100 % gratis",
+            "feature1_desc": "Bruk dette verktøyet så mange ganger du vil. Ingen skjulte kostnader.",
+            "feature2_title": "Ubegrensede sjekker",
+            "feature2_desc": "Sjekk ubegrensede søkeord uten kostnad. Ingen registrering eller abonnement kreves.",
+            "feature3_title": "Sanntidsdata",
+            "feature3_desc": "Få øyeblikkelige, sanntids SERP-resultater direkte fra Yahoo Search.",
+            "why_matters_title": "Hvorfor Yahoo-rangeringer betyr noe",
+            "why_matters_desc": "Selv om Yahoo er mindre enn Google, har Yahoo fortsatt en betydelig andel av søketrafikken, spesielt i spesifikke demografier og regioner som Japan og deler av USA. Å ignorere Yahoo betyr å la potensiell trafikk ligge på bordet.",
+            "same_as_bing_title": "Bruker Yahoo Bing-resultater?",
+            "same_as_bing_desc": "Ja, Yahoo Search drives i stor grad av <strong>Bings søkeindeks</strong>. Dette betyr at optimalisering for Bing ofte hjelper Yahoo-rangeringene dine. Yahoos grensesnitt og funksjoner er imidlertid forskjellige, så det er avgjørende å verifisere ditt faktiske utseende."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Er denne Yahoo Rank Checker gratis?",
+            "a1": "Ja! Vår **yahoo rank tracker** er 100 % gratis. Sjekk rangeringene dine på Yahoo så ofte du trenger uten skjulte avgifter eller abonnementer.",
+            "q2": "Bruker Yahoo Bings søkeresultater?",
+            "a2": "Siden Yahoo er drevet av Bing, fokuser på Bing SEO beste praksis: tydelig teknisk SEO, autoritative tilbakekoblinger og relevant innhold. Å bruke dette verktøyet til å overvåke fremdriften er en god start."
+        }
+    },
+    "sitemap-validator": {
+        "meta": {
+            "title": "Sitemap Validator - Gratis online XML Sitemap Checker",
+            "description": "Gratis verktøy for å sjekke XML sitemaps for feil, validere URL-er og sikre protokolloverholdelse.",
+            "h1": "Nettkartvalidator",
+            "subtitle": "Valider dine XML sitemaps for feil"
+        },
+        "editor": {
+            "title": "Valider Sitemap",
+            "btn_xml_input": "XML-inndata",
+            "btn_url_input": "URL-inndata",
+            "label_xml": "Lim inn XML",
+            "ph_xml": "Lim inn din sitemap XML-kode her...",
+            "label_url": "Nettadressekart",
+            "ph_url": "https://eksempel.no/sitemap.xml",
+            "help_url": "Skriv inn hele URL-en til din sitemap.xml-fil",
+            "btn_fetch": "Hent",
+            "btn_validate": "Valider",
+            "btn_validating": "Validerer...",
+            "btn_clear": "Tøm",
+            "btn_example": "Last Eksempel",
+            "check_urls": "Sjekk URL Tilgjengelighet"
+        },
+        "results": {
+            "title": "Valideringsresultater"
+        },
+        "content": {
+            "main_heading": "Mestre din sidestruktur",
+            "main_intro": "Sørg for at nettstedet ditt er perfekt søkbart for søkemotorer. Finn feil og optimaliser rangeringen.",
+            "what_is_title": "Hva er en XML Sitemap Validator?",
+            "what_is_desc_1": "Et viktig SEO-verktøy for å sjekke sitemap-filer for syntaksfeil og døde lenker.",
+            "what_is_desc_2": "Sitemap er et kart for roboter. Feil kan hindre indeksering av viktige sider.",
+            "features_title": "Hvorfor velge oss?",
+            "feature_instant_title": "Øyeblikkelig analyse",
+            "feature_instant_desc": "Få tilbakemelding med en gang.",
+            "feature_strict_title": "Streng validering",
+            "feature_strict_desc": "Vi sjekker mot den offisielle XSD-standarden.",
+            "feature_index_title": "Støtte for indeks",
+            "feature_index_desc": "Støtter sitemap-indeksfiler.",
+            "importance_title": "Viktighet for SEO",
+            "importance_budget_title": "Crawl Budget Effektivitet",
+            "importance_budget_desc": "Hjelper søkemotorer med å bruke ressurser klokt.",
+            "importance_indexing_title": "Raskere indeksering",
+            "importance_indexing_desc": "Prioriter nytt innhold.",
+            "importance_discovery_title": "Oppdagelse av sider",
+            "importance_discovery_desc": "Finner isolerte sider.",
+            "importance_troubleshooting_title": "Feilsøking",
+            "importance_troubleshooting_desc": "Finn 404-feil raskt.",
+            "guide_title": "Slik gjør du det",
+            "guide_step1_title": "Skriv inn URL",
+            "guide_step1_desc": "Lim inn din sitemap-adresse.",
+            "guide_step2_title": "Kjør validering",
+            "guide_step2_desc": "Klikk for å starte analysen.",
+            "guide_step3_title": "Se resultater",
+            "guide_step3_desc": "Rett feil markert med rødt.",
+            "faq_title": "FAQ",
+            "faq_privacy_question": "Lagrer dere data?",
+            "faq_privacy_answer": "Nei, vi respekterer ditt personvern.",
+            "faq_frequency_question": "Hvor ofte bør jeg sjekke?",
+            "faq_frequency_answer": "Ved strukturendringer eller månedlig.",
+            "faq_size_question": "Størrelsesgrense?",
+            "faq_size_answer": "50MB eller 50 000 URL-er.",
+            "faq_localhost_question": "Fungerer det på localhost?",
+            "faq_localhost_answer": "Ja, ved å lime inn XML-koden."
         }
     }
 }

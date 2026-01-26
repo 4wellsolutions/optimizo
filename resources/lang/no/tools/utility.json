@@ -18,9 +18,13 @@
             },
             "include_label": "Inkluder tegntyper:",
             "option_uppercase": "Store bokstaver (A-Z)",
+            "option_uppercase_desc": "Legger til store bokstaver for kompleksitet",
             "option_lowercase": "Små bokstaver (a-z)",
+            "option_lowercase_desc": "Viktig for passordstyrke",
             "option_numbers": "Tall (0-9)",
+            "option_numbers_desc": "Øker passordentropien",
             "option_symbols": "Spesialtegn (!@#$%)",
+            "option_symbols_desc": "Maksimal sikkerhetsbeskyttelse",
             "btn_generate": "Generer sterkt passord",
             "result_title": "Ditt genererte passord",
             "strength_score": "Sikkerhetsskåre:",
@@ -34,7 +38,21 @@
                 "q1": "Hvor sikre er passordene som genereres?",
                 "a1": "Vår passordgenerator bruker kryptografisk sikre metoder for å skape passord rett i nettleseren din. Vi lagrer eller sender aldri passordene dine videre.",
                 "q2": "Hva er ideell passordlengde?",
-                "a2": "Vi anbefaler minst 16 tegn for god sikkerhet. Lengre passord gir enda bedre beskyttelse mot angrep."
+                "a2": "Vi anbefaler minst 16 tegn for god sikkerhet. Lengre passord gir enda bedre beskyttelse mot angrep.",
+                "q3": "Bør jeg inkludere spesialtegn i passordet mitt?",
+                "a3": "Ja, absolutt! Å inkludere spesialtegn (!@#$%^&*) øker passordkompleksiteten og entropien betraktelig. Et passord med store, små, tall og symboler er eksponentielt vanskeligere å knekke enn et med bare bokstaver og tall.",
+                "q4": "Hvordan husker jeg komplekse passord?",
+                "a4": "Ikke prøv å lære dem utenat! Bruk en anerkjent passordbehandler som LastPass, 1Password, Bitwarden eller Dashlane for å lagre alle passordene dine på en sikker måte. Passordadministratorer krypterer passordene dine og krever bare at du husker ett hovedpassord.",
+                "q5": "Er det trygt å bruke en online passordgenerator?",
+                "a5": "Ja, passordgeneratoren vår er helt trygg fordi all passordgenerering skjer lokalt i nettleseren din. Passordene sendes aldri til våre servere eller lagres noe sted.",
+                "q6": "Hvor ofte bør jeg endre passordene mine?",
+                "a6": "For kritiske kontoer (e-post, bank, jobb), bytt passord hver 3.-6. måned. Hvis du mistenker et brudd eller mottar et sikkerhetsvarsel, endre passordet ditt umiddelbart."
+            },
+            "seo": {
+                "title": "Forstå passordsikkerhet og kryptering",
+                "p1": "Passordsikkerhet er grunnlaget for nettsikkerhet. Et sterkt passord fungerer som den første forsvarslinjen mot uautorisert tilgang til din personlige informasjon, økonomiske data og digitale identitet.",
+                "p2": "Styrken til et passord måles ved dets entropi - mengden tilfeldighet og uforutsigbarhet. Et 16-tegns passord med alle tegntyper har betydelig høyere entropi enn et enkelt 8-tegns passord.",
+                "p3": "Vårt gratis passordgeneratorverktøy er designet for alle - fra enkeltpersoner som beskytter personlige kontoer til bedrifter som sikrer ansattes tilgang. Generer ubegrensede passord, helt gratis, uten registrering nødvendig."
             }
         },
         "js": {
@@ -45,7 +63,9 @@
                 "medium": "⚠ Middels - Vurder å gjøre det sterkere.",
                 "weak": "⚠ Svakt - Vennligst generer et sterkere passord."
             },
-            "copied": "Kopiert!"
+            "error_generating": "Feil under generering av passord. Vennligst prøv igjen",
+            "copied": "Kopiert!",
+            "error_copy": "Kunne ikke kopiere passordet. Vennligst kopier manuelt."
         }
     },
     "qr-code-generator": {
@@ -71,7 +91,22 @@
         },
         "content": {
             "hero_title": "Gratis QR-kodegenerator",
+            "hero_subtitle": "Lag tilpassede QR-koder umiddelbart for alle formål",
             "p1": "Vår gratis QR-kodegenerator lager QR-koder av høy kvalitet umiddelbart. Perfekt for bedrifter, markedsførere og privatpersoner.",
+            "faq": {
+                "q1": "Er QR-kodene permanente?",
+                "a1": "Ja! QR-koder er statiske og permanente. Når de er generert, vil de alltid fungere så lenge de kodede dataene (som en URL) forblir gyldige.",
+                "q2": "Er QR-kodene permanente?",
+                "a2": "Ja! QR-koder er statiske og permanente. Når de er generert, vil de alltid fungere så lenge de kodede dataene (som en URL) forblir gyldige.",
+                "q3": "Hvilken størrelse skal jeg bruke for utskrift?",
+                "a3": "For visittkort, bruk minst 256px. For plakater og bannere, bruk 512px eller 1024px. Jo større utskriftsstørrelsen er, desto større skal QR-koden være for enkel skanning.",
+                "q4": "Kan jeg spore QR-kodeskanninger?",
+                "a4": "Verktøyet vårt genererer statiske QR-koder uten sporing. For å spore skanninger, bruk en URL-forkorter med analyser før du genererer QR-koden, eller bruk en dynamisk QR-kodetjeneste.",
+                "q5": "Er det en grense for hvor mye data jeg kan kode?",
+                "a5": "QR-koder kan lagre opptil 4 296 alfanumeriske tegn, men for best skanneresultater, hold dataene konsise. Nettadresser under 100 tegn fungerer best.",
+                "q6": "Utløper QR-koder?",
+                "a6": "Nei, selve QR-kodene utløper aldri. Men hvis QR-koden kobler til en URL som blir slettet eller endret, vil ikke QR-koden fungere lenger."
+            },
             "features_title": "Funksjoner",
             "features": {
                 "instant": {
@@ -81,19 +116,104 @@
                 "sizes": {
                     "title": "Flere størrelser",
                     "desc": "Velg fra 128px til 1024px for ethvert bruk"
+                },
+                "download": {
+                    "title": "Enkel nedlasting",
+                    "desc": "Last ned som PNG-bilde med ett klikk"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All behandling skjer i nettleseren din"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen grenser, ingen vannmerker, ingen registrering"
+                },
+                "compatibility": {
+                    "title": "Universell kompatibilitet",
+                    "desc": "Fungerer med alle QR-kodeskannere"
                 }
             },
+            "uses_title": "🎯 Vanlige brukstilfeller",
             "uses": {
                 "urls": {
                     "title": "🔗 Nettside-URL-er",
                     "desc": "Send brukere rett til din nettside eller nettbutikk"
+                },
+                "contact": {
+                    "title": "👤 Kontaktinformasjon",
+                    "desc": "Del vCards med e-post, telefon og adressedetaljer"
+                },
+                "social": {
+                    "title": "👍 Sosiale medier",
+                    "desc": "Link til sosiale profiler, YouTube-kanal eller Instagram"
+                },
+                "tickets": {
+                    "title": "🎟️ Eventbilletter",
+                    "desc": "Generer skannbare billetter til arrangementer og konferanser"
+                },
+                "product": {
+                    "title": "📦 Produktinformasjon",
+                    "desc": "Legg til QR-koder til produkter for manualer, spesifikasjoner eller autentisitet"
+                },
+                "payment": {
+                    "title": "💳 Betalingslenker",
+                    "desc": "Aktiver raske betalinger via PayPal, Venmo eller kryptolommebøker"
                 }
-            }
+            },
+            "how_title": "📚 Slik bruker du",
+            "how_steps": {
+                "1": {
+                    "title": "Skriv inn dataene dine:",
+                    "desc": "Skriv eller lim inn teksten, URL-en eller informasjonen du vil kode"
+                },
+                "2": {
+                    "title": "Velg størrelse:",
+                    "desc": "Velg QR-kodestørrelsen basert på hvor du skal bruke den"
+                },
+                "3": {
+                    "title": "Generere:",
+                    "desc": "Klikk \"Generer QR-kode\" for å lage QR-koden din umiddelbart"
+                },
+                "4": {
+                    "title": "Last ned:",
+                    "desc": "Klikk på \"Last ned QR-kode\" for å lagre PNG-bildet"
+                },
+                "5": {
+                    "title": "Bruk hvor som helst:",
+                    "desc": "Skriv ut, del digitalt eller legg til markedsføringsmateriell"
+                }
+            },
+            "best_practices_title": "💡 Beste praksis",
+            "best_practices": {
+                "test": {
+                    "title": "Test før utskrift:",
+                    "desc": "Skann alltid QR-koden din for å bekrefte at den fungerer som den skal"
+                },
+                "size": {
+                    "title": "Bruk passende størrelse:",
+                    "desc": "Større QR-koder er lettere å skanne på avstand"
+                },
+                "contrast": {
+                    "title": "Sørg for kontrast:",
+                    "desc": "Skriv ut på hvit eller lys bakgrunn for best skanning"
+                },
+                "context": {
+                    "title": "Legg til kontekst:",
+                    "desc": "Ta med et handlingsfremmende uttrykk som «Skann for å besøke nettstedet»"
+                },
+                "short": {
+                    "title": "Hold nettadresser korte:",
+                    "desc": "Kortere URL-er skaper enklere, mer skannbare QR-koder"
+                }
+            },
+            "faq_title": "Ofte stilte spørsmål"
         },
         "js": {
             "error_empty": "Vennligst skriv inn tekst eller en URL",
             "error_generating": "Feil under generering av QR-kode.",
-            "error_no_code": "Vennligst generer en QR-kode først"
+            "error_no_code": "Vennligst generer en QR-kode først",
+            "error_image_not_found": "Finner ikke bilde av QR-kode"
         }
     },
     "random-number-generator": {
@@ -137,8 +257,76 @@
         "content": {
             "p1": "Sjekk om brukernavnet ditt er ledig på alle store sosiale medier umiddelbart. Finn det perfekte navnet for din merkevare på Twitter, Instagram, GitHub og mer.",
             "platforms_title": "Plattformer som støttes",
+            "platforms": {
+                "social": {
+                    "title": "Sosiale medier",
+                    "list": [
+                        "Twitter (X): Sjekk tilgjengeligheten av @brukernavn",
+                        "Instagram: Finn ditt perfekte håndtak",
+                        "TikTok: Sikre @brukernavnet ditt",
+                        "Facebook: Sjekk profilens URL"
+                    ]
+                },
+                "professional": {
+                    "title": "Profesjonell",
+                    "list": [
+                        "LinkedIn: Profesjonell profil",
+                        "GitHub: Utviklerbrukernavn",
+                        "Medium: Forfatterprofil",
+                        "YouTube: Kanalhåndtak"
+                    ]
+                }
+            },
             "best_practices_title": "Beste praksis for brukernavn",
-            "faq_title": "Ofte stilte spørsmål"
+            "best_practices": {
+                "short": {
+                    "title": "Hold det kort",
+                    "desc": "Sikt etter 6-15 tegn for enkel minne og skriving"
+                },
+                "spell": {
+                    "title": "Lett å stave",
+                    "desc": "Unngå komplekse stavemåter, tall og spesialtegn"
+                },
+                "brand": {
+                    "title": "Merkekonsistent",
+                    "desc": "Bruk samme brukernavn på alle plattformer for gjenkjennelse"
+                },
+                "trends": {
+                    "title": "Unngå trender",
+                    "desc": "Ikke bruk trendy ord som kan bli utdaterte"
+                },
+                "seo": {
+                    "title": "SEO-vennlig",
+                    "desc": "Inkluder relevante søkeord for bedre synlighet"
+                },
+                "fast": {
+                    "title": "Handle raskt",
+                    "desc": "Gjør krav på brukernavnet ditt raskt før det tas"
+                }
+            },
+            "tips_title": "Profesjonelle tips for å velge et brukernavn",
+            "tips_list": {
+                "items": [
+                    "Sjekk tilgjengeligheten på alle plattformer før du sluttfører",
+                    "Vurder fremtidig forretningsutvidelse når du velger",
+                    "Gjør det uttalt for muntlig markedsføring",
+                    "Unngå å bruke understrek eller tall hvis mulig",
+                    "Sikkert domenenavn som samsvarer med brukernavnet ditt"
+                ]
+            },
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Hvor mange plattformer kan jeg sjekke samtidig?",
+                "a1": "Vår brukernavnsjekker støtter 10+ store plattformer, inkludert Twitter, Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium og Pinterest. Sjekk alle plattformer samtidig med ett søk.",
+                "q2": "Hva om ønsket brukernavn blir tatt?",
+                "a2": "Prøv varianter som å legge til din plassering, bransje eller et relevant ord. Du kan også bruke understrek, punktum eller forkortelser. Verktøyet vårt hjelper deg raskt å teste flere varianter.",
+                "q3": "Bør jeg bruke samme brukernavn overalt?",
+                "a3": "Ja! Å bruke samme brukernavn på tvers av alle plattformer styrker merkevareidentiteten din, gjør deg lettere å finne og hjelper med gjenkjenning og markedsføring på tvers av plattformer.",
+                "q4": "Kan jeg reservere et brukernavn uten å opprette en konto?",
+                "a4": "Nei, du må opprette en konto på hver plattform for å kreve et brukernavn. Verktøyet vårt sjekker kun tilgjengelighet - du må registrere deg på hver plattform for å sikre brukernavnet ditt.",
+                "q5": "Hvor ofte bør jeg sjekke brukernavnets tilgjengelighet?",
+                "a5": "Tilgjengeligheten av brukernavn endres hele tiden. Hvis du finner et tilgjengelig brukernavn du liker, gjør krav på det umiddelbart på alle plattformer. Populære brukernavn kan tas i løpet av timer eller til og med minutter."
+            }
         }
     }
 }

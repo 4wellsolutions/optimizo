@@ -10,14 +10,117 @@
             "tab_encode": "Kod til Base64",
             "tab_decode": "Dekod fra Base64",
             "label_encode": "Skriv inn tekst som skal kodes",
+            "ph_encode": "Skriv inn teksten din her...",
+            "desc_encode": "Skriv inn hvilken som helst tekst for å konvertere den til Base64-format",
             "btn_encode": "Kod til Base64",
             "label_decode": "Skriv inn Base64 som skal dekodes",
+            "ph_decode": "Skriv inn Base64-kodet streng...",
+            "desc_decode": "Skriv inn Base64-kodet tekst for å dekode den tilbake til ren tekst",
             "btn_decode": "Dekod fra Base64",
             "result_title": "Resultat",
             "btn_copy": "Kopier resultat"
         },
+        "content": {
+            "what_title": "Hva er Base64-koding?",
+            "what_desc": "Base64 er et binært-til-tekst-kodingsskjema som representerer binære data i et ASCII-strengformat. Det brukes ofte til å kode data som må lagres eller overføres over medier designet for å håndtere tekst. Vårt gratis Base64-koder- og dekoderverktøy lar utviklere, dataanalytikere og IT-fagfolk raskt konvertere tekst til Base64 eller dekode Base64-strenger tilbake til lesbar tekst. Perfekt for API-utvikling, dataoverføring, e-postvedlegg, innebygging av bilder i HTML/CSS og håndtering av binære data i JSON.",
+            "features": {
+                "secure": {
+                    "title": "Sikker koding",
+                    "desc": "All behandling skjer i nettleseren din - dataene dine forlater aldri datamaskinen"
+                },
+                "instant": {
+                    "title": "Øyeblikkelig konvertering",
+                    "desc": "Kod eller dekod Base64-data i millisekunder med prosessering på klientsiden"
+                },
+                "easy": {
+                    "title": "Enkel å bruke",
+                    "desc": "Enkelt grensesnitt med faner for koding og dekoding med ett-klikks kopi"
+                }
+            },
+            "how_to": {
+                "title": "Slik bruker du Base64-koder/dekoder",
+                "encode": {
+                    "title": "Koding av tekst",
+                    "step1": "Klikk på \"Encode to Base64\"-fanen",
+                    "step2": "Lim inn eller skriv inn teksten i inndataområdet",
+                    "step3": "Klikk på \"Encode to Base64\"-knappen",
+                    "step4": "Kopier det Base64-kodede resultatet"
+                },
+                "decode": {
+                    "title": "Dekoding Base64",
+                    "step1": "Klikk på \"Decode from Base64\"-fanen",
+                    "step2": "Lim inn Base64-strengen i inndataområdet",
+                    "step3": "Klikk på \"Decode from Base64\"-knappen",
+                    "step4": "Kopier det dekodede rentekstresultatet"
+                }
+            },
+            "uses": {
+                "title": "Common Base64 Use Cases",
+                "api": {
+                    "title": "API-autentisering",
+                    "desc": "Kod inn legitimasjon for grunnleggende autentisering i HTTP-hoder og API-forespørsler."
+                },
+                "data_uri": {
+                    "title": "Data-URIer",
+                    "desc": "Bygg inn bilder, fonter og filer direkte i HTML, CSS eller JSON ved å bruke Base64-data-URIer."
+                },
+                "email": {
+                    "title": "E-postvedlegg",
+                    "desc": "Kod binære vedlegg i MIME-e-postmeldinger for sikker overføring."
+                },
+                "storage": {
+                    "title": "Datalagring",
+                    "desc": "Lagre binære data i tekstbaserte formater som JSON, XML eller databaser."
+                }
+            },
+            "bottom": {
+                "h1": "Base64-koder og dekoder",
+                "subtitle": "Kod og dekod Base64-data umiddelbart",
+                "desc": "Base64 er et binært-til-tekst-kodingsskjema som konverterer binære data til ASCII-tekstformat. Vår gratis Base64 Encoder & Decoder hjelper utviklere, systemadministratorer og IT-fagfolk med å kode tekst til Base64 eller dekode Base64 tilbake til lesbar tekst umiddelbart. Perfekt for API-autentisering, data-URIer, e-postvedlegg og sikker dataoverføring. All behandling skjer i nettleseren din for fullstendig personvern.",
+                "works_title": "🔄 Hvordan Base64 fungerer",
+                "works_encoding": "Konverterer binære data til ASCII-tekst med 64 tegn",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (og = for utfylling)",
+                "works_decoding": "Konverterer Base64-tekst tilbake til originale binære data",
+                "works_decoding_sub": "Reverserer kodingsprosessen perfekt",
+                "cases_title": "✅ Vanlige brukstilfeller",
+                "case_api": "API-autentisering",
+                "case_api_desc": "Kod inn legitimasjon for Basic Auth i HTTP-hoder",
+                "case_uri": "Data-URIer",
+                "case_uri_desc": "Legg inn bilder og filer direkte i HTML/CSS",
+                "case_email": "E-postvedlegg",
+                "case_email_desc": "Kode binære filer for e-postoverføring",
+                "case_url": "URL-parametere",
+                "case_url_desc": "Send binærdata trygt i URL-er",
+                "case_storage": "Datalagring",
+                "case_storage_desc": "Lagre binære data i bare tekstdatabaser",
+                "case_web": "Webutvikling",
+                "case_web_desc": "Kode JSON, XML og konfigurasjonsfiler",
+                "best_practices_title": "💡 Base64 beste praksis",
+                "best_practices_list": [
+                    "Base64 øker datastørrelsen med omtrent 33 %",
+                    "Ikke egnet for kryptering - bruk riktige krypteringsalgoritmer",
+                    "Perfekt for koding av binære data i kun tekstsystemer",
+                    "Valider alltid dekodede data før du bruker dem",
+                    "Bruk URL-sikker Base64 for URL-er (erstatter +/= med -_)"
+                ]
+            },
+            "faq": {
+                "title": "❓ Ofte stilte spørsmål",
+                "q1": "Er Base64-koding sikker?",
+                "a1": "Ingen! Base64 er IKKE kryptering - det er ganske enkelt koding. Alle kan dekode Base64-data umiddelbart. Bruk aldri Base64 alene for sikkerhets skyld. For kryptering, bruk riktige kryptografiske algoritmer som AES, RSA eller TLS/SSL.",
+                "q2": "Hvorfor øker Base64 filstørrelsen?",
+                "a2": "Base64-koding øker datastørrelsen med omtrent 33 % fordi den representerer 3 byte med binære data ved bruk av 4 ASCII-tegn. Denne overheaden er avveiningen for å gjøre binære data trygge for kun tekstsystemer.",
+                "q3": "Hva brukes Base64 til?",
+                "a3": "Base64 brukes til å kode binære data (bilder, filer, legitimasjon) til ASCII-tekst for overføring over kun tekstsystemer som e-post, URL-er, JSON, XML og HTTP-overskrifter. Det er viktig for API-autentisering, data-URIer og e-postvedlegg.",
+                "q4": "Sendes dataene mine til en server?",
+                "a4": "Ingen! All Base64-koding og dekoding skjer utelukkende i nettleseren din ved å bruke JavaScript. Dataene dine forlater aldri enheten din og blir ikke lagret, overført eller logget noe sted. Personvernet ditt er fullstendig beskyttet.",
+                "q5": "Kan jeg kode bilder til Base64?",
+                "a5": "Ja! Mens verktøyet vårt koder tekst, kan du kode bilder ved hjelp av spesialiserte verktøy. Base64-kodede bilder kan bygges inn direkte i HTML/CSS ved hjelp av data-URIer (data:image/png;base64,...). Dette er nyttig for små bilder, men øker sidestørrelsen."
+            }
+        },
         "js": {
             "error_empty_encode": "Vennligst skriv inn tekst som skal kodes",
+            "error_encoding": "Feil ved koding av tekst:",
             "error_empty_decode": "Vennligst skriv inn Base64-streng som skal dekodes",
             "error_invalid": "Ugyldig Base64-streng. Vennligst sjekk inndata.",
             "copied": "Kopiert!"
@@ -32,15 +135,97 @@
         },
         "editor": {
             "label_language": "Språk",
+            "languages": {
+                "html": "HTML",
+                "css": "CSS",
+                "js": "JavaScript",
+                "json": "JSON",
+                "xml": "XML",
+                "sql": "SQL",
+                "php": "PHP"
+            },
+            "label_indent": "Innrykk",
+            "indents": {
+                "2": "2 mellomrom",
+                "4": "4 mellomrom",
+                "tab": "Tab"
+            },
             "btn_format": "Formater kode",
             "label_input": "Inndatakode",
             "btn_clear": "Tøm",
+            "ph_input": "// Lim inn koden din her...",
             "label_output": "Formatert kode",
-            "btn_copy": "Kopier"
+            "btn_copy": "Kopier",
+            "ph_output": "// Formatert kode vil vises her..."
+        },
+        "content": {
+            "hero_title": "Gratis online kodeformater",
+            "p1": "Rydd opp i rotete kode og forbedre lesbarheten med vår gratis online kodeformater. Enten du har forminsket kode som trenger å forskjønnes eller bare ønsker å standardisere innrykk, håndterer verktøyet vårt det hele umiddelbart i nettleseren din.",
+            "features": {
+                "multi": {
+                    "title": "Flerspråklig støtte",
+                    "desc": "Støtter store programmeringsspråk inkludert HTML, CSS, JS, JSON og mer"
+                },
+                "indent": {
+                    "title": "Egendefinert innrykk",
+                    "desc": "Velg mellom 2 mellomrom, 4 mellomrom eller tabulatorer for din foretrukne stil"
+                },
+                "instant": {
+                    "title": "Øyeblikkelig forskjønnelse",
+                    "desc": "Formater koden umiddelbart uten å laste inn siden på nytt"
+                },
+                "privacy": {
+                    "title": "Personvernfokusert",
+                    "desc": "Kodebehandling skjer i nettleseren din - ingen data lagres"
+                }
+            },
+            "langs_title": "💻 Støttede språk",
+            "langs": {
+                "web": {
+                    "title": "Web-teknologier",
+                    "desc": "HTML5, CSS3, JavaScript (ES6+)"
+                },
+                "data": {
+                    "title": "Dataformater",
+                    "desc": "JSON, XML"
+                },
+                "backend": {
+                    "title": "Backend",
+                    "desc": "PHP, SQL"
+                }
+            },
+            "why_title": "🤔 Hvorfor formatere kode?",
+            "why": {
+                "read": {
+                    "title": "Lesbarhet",
+                    "desc": "Riktig innrykket kode er lettere å lese, forstå og vedlikeholde."
+                },
+                "debug": {
+                    "title": "Feilsøking",
+                    "desc": "Finn feil raskere i godt strukturert kode sammenlignet med minifiserte strenger."
+                },
+                "collab": {
+                    "title": "Samarbeidet",
+                    "desc": "Standard kodestil hjelper teamene til å jobbe mer effektivt sammen."
+                }
+            },
+            "faq_title": "❓ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er koden min trygg?",
+                "a1": "Ja! All kodeformatering gjøres ved hjelp av JavaScript direkte i nettleseren din. Koden din sendes aldri til våre servere.",
+                "q2": "Kan jeg formatere forminsket kode?",
+                "a2": "Absolutt! Vår forskjønner er perfekt for å un-minifying kode for å gjøre den lesbar igjen.",
+                "q3": "Løser det syntaksfeil?",
+                "a3": "Formateringsverktøyet fokuserer på layout og innrykk. Selv om det kan håndtere noen grunnleggende strukturproblemer, fikser det ikke syntaksfeil.",
+                "q4": "Er det en grense for kodestørrelse?",
+                "a4": "Siden behandlingen gjøres på enheten din, avhenger grensen av nettleserens minne. Den kan enkelt håndtere filer med tusenvis av linjer."
+            }
         },
         "js": {
             "error_empty": "Vennligst lim inn koden som skal formateres",
             "success_format": "✓ Koden er formatert!",
+            "error_format": "Feil ved formatering av kode:",
+            "no_copy": "Ingen kode å kopiere",
             "success_copy": "✓ Kopiert til utklippstavlen!"
         }
     },
@@ -53,15 +238,68 @@
         },
         "editor": {
             "common_settings": "Vanlige innstillinger",
+            "choose": "-- Velg --",
+            "options": {
+                "every_minute": "Hvert minutt (* * * * *)",
+                "every_5_minutes": "Hvert 5. minutt (*/5 * * * *)",
+                "every_15_minutes": "Hvert 15. minutt (*/15 * * * *)",
+                "every_30_minutes": "Hvert 30. minutt (*/30 * * * *)",
+                "every_hour": "Hver time (0 * * * *)",
+                "every_day_midnight": "Hver dag ved midnatt (0 0 * * *)",
+                "every_week": "Hver uke (0 0 * * 0)",
+                "every_month": "Hver måned (0 0 1 * *)"
+            },
             "minute": "Minutt",
+            "every_minute": "Hvert minutt (*)",
             "hour": "Time",
+            "every_hour": "Hver time (*)",
             "day": "Dag",
+            "every_day": "Hver dag (*)",
             "month": "Måned",
+            "every_month": "Hver måned (*)",
             "weekday": "Ukedag",
+            "every_weekday": "Every Weekday (*)",
             "command": "Kommando som skal kjøres",
+            "ph_command": "/usr/bin/php /path/to/script.php",
             "generated_cron": "Generert Cron-uttrykk",
             "btn_copy": "Kopier Cron",
             "btn_clear": "Nullstill"
+        },
+        "content": {
+            "hero_title": "Cron Job Generator",
+            "p1": "Å sette opp cron-jobber kan være forvirrende med kryptiske stjerner og tall. Vår gratis online Cron Job Generator lar deg bygge perfekte cron-planer visuelt. Enten du trenger å kjøre et skript hvert 5. minutt, ved midnatt eller på bestemte dager i måneden, genererer verktøyet vårt den riktige syntaksen for deg umiddelbart.",
+            "features": {
+                "visual": {
+                    "title": "Visuell redaktør",
+                    "desc": "Velg minutter, timer, dager og måneder ved hjelp av et enkelt grensesnitt"
+                },
+                "readable": {
+                    "title": "Lesbar for mennesker",
+                    "desc": "Konverterer cron-uttrykk til enkle engelske beskrivelser"
+                }
+            },
+            "syntax_title": "📚 Forstå Cron-syntaks",
+            "syntax_intro": "Et cron-uttrykk består av 5 felter atskilt med mellomrom:",
+            "syntax_fields": {
+                "min": "Minutt (0-59)",
+                "hour": "Time (0-23)",
+                "day": "Dag i måneden (1–31)",
+                "month": "Måned (1–12)",
+                "week": "Ukedag (0-6, søndag=0)"
+            },
+            "faq_title": "❓ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Hva er en cron-jobb?",
+                "a1": "En cron-jobb er en tidsbasert jobbplanlegger i Unix-lignende datamaskinoperativsystemer. Brukere kan planlegge jobber (kommandoer eller skript) til å kjøre periodisk til faste tider, datoer eller intervaller.",
+                "q2": "Hvordan installerer jeg en cron-jobb?",
+                "a2": "Du bruker vanligvis kommandoen `crontab -e` i terminalen for å redigere cron-filen. Deretter limer du inn den genererte linjen nederst i filen.",
+                "q4": "Hva betyr stjerne (*)?",
+                "a4": "En stjerne betyr \"hver\". For eksempel betyr en stjerne i minuttfeltet \"hvert minutt\"."
+            }
+        },
+        "js": {
+            "success_copy": "✓ Cron-uttrykk kopiert til utklippstavlen!",
+            "no_copy": "Ingen cron-uttrykk å kopiere"
         }
     },
     "css-minifier": {
@@ -73,16 +311,123 @@
         },
         "editor": {
             "label_input": "CSS Inndata",
+            "ph_input": "Lim inn CSS-koden din her...",
             "btn_minify": "Minifiser CSS",
-            "btn_beautify": "Beautify CSS",
+            "btn_beautify": "Forskjønn CSS",
             "btn_clear": "Tøm",
             "btn_copy": "Kopier",
-            "label_output": "CSS Resultat"
+            "label_output": "CSS Resultat",
+            "ph_output": "Behandlet CSS vises her...",
+            "stats": {
+                "original": "Original størrelse",
+                "minified": "Minimert størrelse",
+                "saved": "Lagret",
+                "compression": "Komprimering"
+            }
+        },
+        "content": {
+            "hero_title": "Gratis CSS Minifier & Beautifier",
+            "hero_subtitle": "Optimaliser CSS-filer for raskere sideinnlasting og bedre ytelse",
+            "p1": "Vår gratis CSS Minifier komprimerer CSS-filer ved å fjerne mellomrom, kommentarer og unødvendige tegn, noe som reduserer filstørrelsen betydelig og forbedrer nettsidens lastetider. Perfekt for nettutviklere, designere og alle som optimaliserer nettstedets ytelse. Inkluderer også en CSS-forskjønner for å formatere og organisere stilarkene dine for bedre lesbarhet. 100 % gratis behandling på klientsiden sikrer at koden din forblir privat.",
+            "what_title": "🎨 Hva er CSS Minification?",
+            "what_desc": "CSS-minifisering er prosessen med å fjerne unødvendige tegn fra CSS-koden uten å endre funksjonaliteten. Dette inkluderer mellomrom, linjeskift, kommentarer og overflødig kode. Minimerte CSS-filer er mindre, laster raskere og forbedrer nettstedets ytelse. Det er en viktig optimaliseringsteknikk for produksjonsnettsteder.",
+            "features_title": "✨ Funksjoner",
+            "features": {
+                "minify": {
+                    "title": "CSS-minifisering",
+                    "desc": "Komprimer CSS ved å fjerne mellomrom og kommentarer"
+                },
+                "beautify": {
+                    "title": "CSS forskjønnelse",
+                    "desc": "Formater CSS med riktig innrykk og mellomrom"
+                },
+                "stats": {
+                    "title": "Komprimeringsstatistikk",
+                    "desc": "Se reduksjon av filstørrelse og komprimeringshastighet"
+                },
+                "instant": {
+                    "title": "Øyeblikkelig behandling",
+                    "desc": "Forminsk eller forskjønn CSS på millisekunder"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All behandling skjer i nettleseren din"
+                },
+                "copy": {
+                    "title": "Ett-klikks Kopier",
+                    "desc": "Kopier minifisert CSS til utklippstavlen umiddelbart"
+                }
+            },
+            "benefits_title": "🎯 Fordeler med CSS Minification",
+            "benefits": {
+                "speed": {
+                    "title": "⚡ Raskere sideinnlastinger",
+                    "desc": "Mindre CSS-filer lastes ned raskere, noe som forbedrer sidelastetider og brukeropplevelse"
+                },
+                "bandwidth": {
+                    "title": "💰 Redusert båndbredde",
+                    "desc": "Lavere båndbreddebruk sparer hostingkostnader og mobildata for brukerne"
+                },
+                "seo": {
+                    "title": "📈 Bedre SEO",
+                    "desc": "Raskere nettsteder rangerer bedre i søkemotorer, og forbedrer synligheten"
+                },
+                "performance": {
+                    "title": "🎯 Forbedret ytelse",
+                    "desc": "Optimalisert CSS reduserer nettleserens parsingtid og gjengivelsesforsinkelser"
+                },
+                "mobile": {
+                    "title": "📱 Mobiloptimalisering",
+                    "desc": "Avgjørende for mobilbrukere med begrenset båndbredde og tregere tilkoblinger"
+                },
+                "production": {
+                    "title": "🔧 Produksjonsklar",
+                    "desc": "Minifisert CSS er standard praksis for produksjonsdistribusjoner"
+                }
+            },
+            "how_title": "📚 Slik bruker du",
+            "how_steps": {
+                "1": "<strong>Velg handling:</strong> Klikk på \"Minify CSS\" for å komprimere eller \"Beautify CSS\" for å formatere",
+                "2": "<strong>Se resultater:</strong> Se den behandlede CSS-en i utdatafeltet med komprimeringsstatistikk",
+                "3": "<strong>Kopier:</strong> Klikk \"Kopier\" for å kopiere den forminskede CSS-en til utklippstavlen",
+                "4": "<strong>Bruk i produksjon:</strong> Erstatt den originale CSS-filen med den forminskede versjonen",
+                "5": "Last ned eller kopier den forminskede CSS-en og bruk den på produksjonsnettstedet ditt for å redusere filstørrelsen og forbedre lastetidene."
+            },
+            "best_practices_title": "💡 Beste praksis",
+            "best_practices_list": {
+                "1": "<strong>Forminsk for produksjon:</strong> Bruk kun minifisert CSS i produksjonsmiljøer",
+                "2": "<strong>Kombiner filer:</strong> Slå sammen flere CSS-filer før du forminsker for bedre komprimering",
+                "3": "<strong>Test grundig:</strong> Test alltid minifisert CSS for å sikre at ingen funksjonalitet er ødelagt",
+                "4": "<strong>Bruk byggeverktøy:</strong> Integrer minifisering i byggeprosessen for automatisering",
+                "5": "Behold en unminifisert versjon for utviklings- og feilsøkingsformål."
+            },
+            "faq_title": "❓ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Hvor mye kan CSS-minifisering redusere filstørrelsen?",
+                "a1": "Vanligvis 20-40 % reduksjon, avhengig av CSS-strukturen din. Filer med mange kommentarer og mellomrom gir større besparelser. Kombinert med gzip-komprimering kan du oppnå 70-80 % total reduksjon.",
+                "q2": "Vil minifisering ødelegge CSS-en min?",
+                "a2": "Ingen! Minifisering fjerner bare unødvendige tegn samtidig som funksjonaliteten bevares. Test imidlertid alltid din minifiserte CSS for å sikre at alt fungerer som forventet.",
+                "q3": "Bør jeg forminske CSS for utvikling?",
+                "a3": "Nei. Hold CSS lesbar under utvikling for enklere feilsøking. Forminsk bare for produksjonsdistribusjoner. Bruk forskjønnet CSS under utvikling og testing.",
+                "q4": "Kan jeg reversere minifisering?",
+                "a4": "Ja! Bruk vår \"Beautify CSS\"-funksjon for å formatere minifisert CSS tilbake til et lesbart format. Kommentarer fjernes imidlertid permanent under minifisering.",
+                "q5": "Er CSS-dataene mine sikre?",
+                "a5": "Absolutt! All behandling skjer utelukkende i nettleseren din. CSS-koden din forlater aldri enheten din og sendes ikke til noen server."
+            }
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn CSS-koden for å behandle",
+            "success_minify": "✓ CSS minifisert vellykket",
+            "success_beautify": "✓ CSS forskjønnet vellykket",
+            "error_process": "✗ Feil ved behandling av CSS:",
+            "no_copy": "Ingen CSS å kopiere",
+            "success_copy": "✓ CSS kopiert til utklippstavlen"
         }
     },
     "curl-command-builder": {
         "meta": {
             "title": "Gratis CURL Command Builder - Online API-forespørselsverktøy",
+            "description": "Bygg CURL-kommandoer enkelt med vår visuelle bygger - lag HTTP-forespørsler uten å huske syntaks",
             "h1": "CURL Command Builder",
             "subtitle": "Bygg cURL-kommandoer enkelt"
         },
@@ -90,282 +435,1430 @@
             "method_label": "Metode",
             "url_label": "URL",
             "headers_tab": "Headere",
-            "body_tab": "Request Body",
+            "body_tab": "Forespørselsorgan",
+            "key_ph": "Nøkkel (f.eks. autorisasjon)",
+            "value_ph": "Verdi (f.eks. bærertoken)",
             "add_header": "+ Legg til header",
+            "raw_data_label": "Rådata (JSON/tekst)",
             "generated_label": "Generert kommando",
             "btn_copy": "Kopier kommando"
+        },
+        "js": {
+            "success_copy": "Kommandoen er kopiert!"
         }
     },
     "html-encoder-decoder": {
         "meta": {
             "title": "HTML Encoder & Decoder - Gratis Online Entity Tool",
+            "description": "Kod og dekod HTML-enheter for å forhindre XSS-angrep med vårt gratis onlineverktøy",
             "h1": "HTML-koder og dekoder",
             "subtitle": "Kod og dekod HTML-entiteter"
         },
         "editor": {
             "mode_encode": "Kod HTML",
             "mode_decode": "Dekod HTML",
+            "label_input_encode": "Skriv inn HTML for å kode",
+            "ph_input_encode": "<div>Hei og velkommen</div>",
             "btn_encode": "Kod HTML",
-            "btn_decode": "Dekod HTML",
             "btn_clear": "Tøm",
-            "btn_copy": "Kopier"
+            "btn_copy": "Kopier",
+            "label_output_encode": "Kodet HTML",
+            "ph_output": "Behandlet HTML vises her...",
+            "label_input_decode": "Skriv inn HTML for å dekode",
+            "label_output_decode": "Dekodet HTML",
+            "btn_decode": "Dekod HTML"
+        },
+        "content": {
+            "hero_title": "Gratis HTML-koder og dekoder",
+            "hero_subtitle": "Kod og dekod HTML-enheter for å forhindre XSS-angrep",
+            "p1": "Vårt gratis HTML Encoder & Decoder-verktøy hjelper deg med å kode spesialtegn i HTML for sikker visning på nettsider, eller dekode kodet HTML tilbake til det opprinnelige formatet. Perfekt for utviklere, sikkerhetseksperter og alle som jobber med rå HTML.",
+            "what_title": "🔗 Hva er HTML-koding?",
+            "what_desc": "HTML-koding konverterer tegn som har spesiell betydning i HTML (som <, >, &, \") til deres korresponderende HTML-enheter (som &lt;, &gt;, &amp;, &quot;). Dette forhindrer nettleseren i å tolke dem som HTML-tagger, noe som er avgjørende for å forhindre Cross-Site Scripting (XSS)-angrep.",
+            "features_title": "âœ¨ Funksjoner",
+            "features": {
+                "fast": {
+                    "title": "Øyeblikkelig konvertering",
+                    "desc": "Kode eller dekode HTML i millisekunder"
+                },
+                "bidirectional": {
+                    "title": "Toveis",
+                    "desc": "Kod spesialtegn eller dekod enheter tilbake til tekst"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All behandling skjer i nettleseren din"
+                },
+                "copy": {
+                    "title": "Ett-klikks Kopier",
+                    "desc": "Kopier behandlet HTML til utklippstavlen umiddelbart"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen grenser, ingen registrering nødvendig"
+                },
+                "safe": {
+                    "title": "Sikkerhetsfokusert",
+                    "desc": "Hjelper med å forhindre XSS-sårbarheter"
+                }
+            },
+            "uses_title": "🎯 Vanlige brukstilfeller",
+            "uses": {
+                "security": {
+                    "title": "🔒 Sikkerhet",
+                    "desc": "Rengjør brukerinndata for å forhindre XSS-angrep ved å kode spesialtegn."
+                },
+                "display": {
+                    "title": "💻 Kodevisning",
+                    "desc": "Vis rå HTML-kode på en nettside uten at den blir gjengitt av nettleseren."
+                },
+                "data": {
+                    "title": "📊 Datalagring",
+                    "desc": "Lagre innhold trygt i databaser uten å bekymre deg for HTML-parsingsproblemer."
+                },
+                "email": {
+                    "title": "📧 E-postmaler",
+                    "desc": "Sørg for at spesialtegn gjengis riktig i HTML-e-poster."
+                }
+            },
+            "how_title": "📚 Slik bruker du",
+            "how_steps": {
+                "1": "Lim inn HTML eller tekst i inndatafeltet",
+                "2": "Klikk på prosessknappen for å konvertere",
+                "3": "Kopier resultatet til utklippstavlen",
+                "4": "Kopier det kodede/dekodede resultatet og bruk det i HTML-, XML- eller nettapplikasjonene dine."
+            },
+            "examples_title": "💡 HTML-kodingseksempler",
+            "examples": {
+                "1": {
+                    "title": "Sitater:",
+                    "code": "\"Hei\" â†’ &quot;Hei&quot;"
+                },
+                "2": {
+                    "title": "Ampersand:",
+                    "code": "Tom & Jerry â†’ Tom &amp; Jerry"
+                },
+                "3": {
+                    "title": "Koding av spesialtegn",
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
+                }
+            },
+            "faq_title": "â“ Vanlige spørsmål",
+            "faq": {
+                "q1": "Hvorfor må jeg kode HTML?",
+                "a1": "Koding er avgjørende for sikkerheten for å forhindre at nettleseren kjører skadelige skript (XSS) og for å vise kodebiter riktig.",
+                "q2": "Hvilke tegn er kodet?",
+                "a2": "Viktige tegn som <, >, &, \" og ' er alltid kodet. Utvidede ASCII-tegn kan også kodes.",
+                "q3": "Er det reversibelt?",
+                "a3": "Ja, dekoding reverserer prosessen nøyaktig, og gjenoppretter den opprinnelige teksten."
+            }
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn HTML for å behandle",
+            "success_encode": "âœ“ HTML-kodet vellykket",
+            "success_decode": "âœ“ HTML dekodet vellykket",
+            "error_process": "✗ Feil ved behandling av HTML:",
+            "error_no_copy": "Ingen utdata å kopiere",
+            "success_copy": "âœ“ Kopiert til utklippstavlen"
         }
     },
     "html-minifier": {
         "meta": {
             "title": "HTML Minifier & Beautifier - Gratis online verktøy",
-            "h1": "HTML Minifier & Beautifier"
+            "description": "Komprimer eller formater HTML-kode umiddelbart - forminsk for produksjon eller forskjønn for utvikling",
+            "h1": "HTML Minifier & Beautifier",
+            "subtitle": "Komprimer eller formater HTML-kode umiddelbart"
         },
         "editor": {
+            "label_input": "HTML-inndata",
+            "ph_input": "Lim inn HTML-koden din her...",
             "btn_minify": "Minifiser HTML",
-            "btn_beautify": "Beautify HTML",
+            "btn_beautify": "Forskjønn HTML",
             "btn_clear": "Tøm",
-            "btn_copy": "Kopier resultat"
+            "btn_copy": "Kopier resultat",
+            "label_output": "HTML-utdata"
+        },
+        "content": {
+            "about_title": "Hva er en HTML-minifier?",
+            "about_desc": "En HTML Minifier er et verktøy som komprimerer HTML-kode ved å fjerne unødvendige tegn som mellomrom, kommentarer og linjeskift uten å endre funksjonalitet. Minimerte HTML-filer er betydelig mindre, noe som fører til raskere sideinnlastingstider og forbedret nettstedytelse. Vår gratis online HTML-minifier inkluderer også en forskjønningsfunksjon for å formatere HTML med riktig innrykk for bedre lesbarhet under utvikling.",
+            "why_title": "Hvorfor forminske HTML?",
+            "why_desc": "Å forminske HTML er viktig for optimalisering av nettytelse. Mindre HTML-filer betyr raskere nedlastinger, redusert båndbreddebruk og forbedret sideinnlastingstid. Dette er spesielt gunstig for store nettsteder med mye HTML-innhold. Minifisert HTML reduserer serverbelastningen og forbedrer brukeropplevelsen.",
+            "features_title": "Nøkkelfunksjoner",
+            "features_list": {
+                "minify": "<strong>Forminsk HTML:</strong> Fjern mellomrom og kommentarer for å redusere filstørrelsen",
+                "beautify": "<strong>Forskjønn HTML:</strong> Formater HTML med riktig innrykk",
+                "instant": "<strong>Øyeblikkelige resultater:</strong> Behandle HTML i sanntid",
+                "copy": "<strong>Kopiering:</strong> Kopier enkelt forminsket HTML",
+                "secure": "<strong>Sikker og privat:</strong> All behandling i nettleseren",
+                "free": "<strong>Gratis å bruke:</strong> Ingen registrering nødvendig"
+            },
+            "how_title": "Hvordan bruke",
+            "how_steps": {
+                "1": "Klikk \"Minify HTML\" for å komprimere koden",
+                "2": "Klikk \"Beautify HTML\" for å formatere med innrykk",
+                "3": "Kopier utdataene ved å bruke \"Kopier utdata\"-knappen",
+                "4": "Bruk den forminskede HTML-en i produksjonsmiljøet ditt for å redusere båndbredden og forbedre sideinnlastingshastigheten."
+            },
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er denne HTML-minifieren gratis?",
+                "a1": "Ja, helt gratis uten begrensninger eller registrering nødvendig.",
+                "q2": "Er HTML-koden min lagret?",
+                "a2": "Nei, all behandling skjer i nettleseren din. Koden din sendes aldri til våre servere.",
+                "q3": "Hvor mye mindre blir HTML-koden min?",
+                "a3": "Vanligvis 10-30 % mindre avhengig av formatering og kommentarer i originalkode.",
+                "q4": "Kan jeg unminify HTML?",
+                "a4": "Ja, bruk \"Forskjønn HTML\"-knappen for å formatere forminsket HTML med riktig innrykk.",
+                "q5": "Påvirker minifisering HTML-funksjonalitet?",
+                "a5": "Nei, minifisering fjerner bare unødvendige tegn. HTML fungerer akkurat det samme."
+            }
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn HTML-kode",
+            "success_minify": "✓ HTML minifisert vellykket!",
+            "success_beautify": "✓ HTML forskjønnet vellykket!",
+            "error_no_copy": "Ingen utdata å kopiere",
+            "success_copy": "✓ Kopiert til utklippstavlen!"
         }
     },
     "html-to-markdown-converter": {
         "meta": {
             "title": "HTML til Markdown Converter - Gratis Online Parser",
-            "h1": "HTML til Markdown Converter"
+            "description": "Konverter HTML til rent Markdown-format umiddelbart med vårt gratis onlineverktøy",
+            "h1": "HTML til Markdown Converter",
+            "subtitle": "Konverter HTML til rent Markdown-format umiddelbart"
         },
         "editor": {
             "btn_convert": "Konverter",
             "btn_copy": "Kopier Markdown",
             "btn_download": "Last ned",
-            "btn_clear": "Tøm"
+            "btn_example": "Eksempel",
+            "btn_clear": "Tøm",
+            "label_input": "HTML-inndata",
+            "ph_input": "Lim inn HTML-koden din her...",
+            "label_output": "Markdown-utgang",
+            "ph_output": "Konvertert Markdown vises her..."
+        },
+        "content": {
+            "about_title": "🔄 Om HTML til Markdown Converter",
+            "about_p1": "Konverter HTML-kode til rent, lesbart Markdown-format umiddelbart med vår gratis online HTML til Markdown-konverterer. Perfekt for utviklere, tekniske skribenter og innholdsskapere som trenger å transformere HTML-innhold til Markdown for dokumentasjon, README-filer eller innholdsstyringssystemer.",
+            "features_title": "✨ Nøkkelfunksjoner",
+            "features_list": {
+                "1": "✅ <strong>Bevar formatering:</strong> Opprettholder overskrifter, lister, koblinger og vektlegging",
+                "2": "✅ <strong>Ren utgang:</strong> Genererer lesbar, godt formatert Markdown",
+                "3": "✅ <strong>Ingen installasjon:</strong> Fungerer direkte i nettleseren din",
+                "4": "✅ <strong>Gratis for alltid:</strong> 100 % gratis uten begrensninger",
+                "5": "✅ <strong>Personvern først:</strong> All konvertering skjer lokalt i nettleseren din",
+                "6": "Bevarer kodeblokker og syntaksutheving for teknisk dokumentasjon."
+            },
+            "uses_title": "🎯 Vanlige brukstilfeller",
+            "uses": {
+                "docs": {
+                    "title": "📚 Dokumentasjon",
+                    "desc": "Konverter HTML-dokumentasjon til Markdown for GitHub-wikier, README-filer og tekniske dokumenter."
+                },
+                "migration": {
+                    "title": "✍️ Innholdsmigrering",
+                    "desc": "Migrer innhold fra HTML-baserte CMS-er til Markdown-baserte plattformer som Jekyll eller Hugo."
+                },
+                "email": {
+                    "title": "💻 E-post til Markdown",
+                    "desc": "Konverter HTML-e-poster til Markdown-format for enklere redigering og versjonskontroll."
+                },
+                "blog": {
+                    "title": "📍 Blogginnlegg",
+                    "desc": "Transform HTML-blogginnlegg til Markdown for statiske nettstedsgeneratorer og moderne CMS-er."
+                }
+            },
+            "elements_title": "🛠️ Støttede HTML-elementer",
+            "elements": {
+                "text": {
+                    "title": "Tekstformatering",
+                    "list": [
+                        "Overskrifter (H1-H6)",
+                        "Avsnitt",
+                        "Fet og sterk",
+                        "Kursiv og vekt",
+                        "Kode og forhåndsformatert",
+                        "Blockquotes"
+                    ]
+                },
+                "lists": {
+                    "title": "Lister og lenker",
+                    "list": [
+                        "Uordnede lister",
+                        "Bestilte lister",
+                        "Nestede lister",
+                        "Hyperkoblinger",
+                        "Bilder",
+                        "Linjebrudd"
+                    ]
+                },
+                "advanced": {
+                    "title": "Avansert",
+                    "list": [
+                        "Tabeller",
+                        "Horisontale regler",
+                        "Innebygd kode",
+                        "Kodeblokker",
+                        "Gjennomstreking",
+                        "Oppgavelister"
+                    ]
+                }
+            },
+            "faq_title": "❓ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er denne HTML til Markdown-konvertereren gratis?",
+                "a1": "Ja! Vår HTML til Markdown-konverterer er 100 % gratis uten begrensninger, registrering eller skjulte kostnader.",
+                "q2": "Fungerer det offline?",
+                "a2": "Ja, all konvertering skjer i nettleseren din med JavaScript, så dataene dine forlater aldri enheten din.",
+                "q3": "Hvilke HTML-elementer støttes?",
+                "a3": "Vi støtter alle vanlige HTML-elementer, inkludert overskrifter, avsnitt, lister, lenker, bilder, tabeller, kodeblokker og mer.",
+                "q4": "Kan jeg konvertere store HTML-filer?",
+                "a4": "Ja, det er ingen størrelsesbegrensninger. Det kan imidlertid ta et øyeblikk å behandle veldig store filer, avhengig av nettleserens ytelse."
+            }
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn litt HTML-kode for å konvertere.",
+            "error_convert": "Feil ved konvertering av HTML:",
+            "error_no_copy": "Ingen Markdown å kopiere. Vennligst konverter HTML først.",
+            "success_copy": "Markdown kopiert til utklippstavlen!",
+            "error_no_download": "Ingen Markdown å laste ned. Vennligst konverter HTML først."
         }
     },
     "html-viewer": {
         "meta": {
             "title": "HTML Viewer Online - Gratis sanntidskodeforhåndsviser",
-            "h1": "HTML Viewer"
+            "description": "Forhåndsvis HTML-kode i sanntid med vår gratis online HTML-visning",
+            "h1": "HTML Viewer",
+            "subtitle": "Preview HTML code in real-time"
         },
         "editor": {
             "label_input": "HTML-kode",
+            "ph_input": "Skriv inn HTML-koden din her...",
             "btn_clear": "Tøm",
             "btn_load_sample": "Last eksempel",
-            "label_preview": "Forhåndsvisning"
+            "label_preview": "Forhåndsvisning",
+            "btn_fullscreen": "Fullskjerm",
+            "btn_exit_fullscreen": "Avslutt fullskjerm"
+        },
+        "content": {
+            "about_title": "Hva er en HTML Viewer?",
+            "about_desc": "En HTML Viewer er et kraftig nettverktøy som lar deg forhåndsvise og visualisere HTML-kode i sanntid. Enten du er en nettutvikler som tester kodebiter, en student som lærer HTML eller en designer som vurderer markering, gir HTML-visningen vår umiddelbar visuell tilbakemelding for HTML-koden din. Bare lim inn HTML-koden din i redigeringsprogrammet, og se det gjengitte resultatet umiddelbart i forhåndsvisningsruten.",
+            "why_title": "Hvorfor bruke vår HTML Viewer?",
+            "why_desc": "Vår gratis HTML-viewer tilbyr flere fordeler for utviklere og designere. For det første gir den umiddelbar visuell tilbakemelding uten å måtte lage filer eller sette opp et utviklingsmiljø. For det andre er den fullstendig nettleserbasert, noe som betyr at du kan bruke den hvor som helst uten å installere programvare. For det tredje er den perfekt for rask testing, feilsøking og læring av HTML. Side-ved-side-visningen lar deg se koden og dens utdata samtidig, noe som gjør det lettere å forstå hvordan HTML-elementer gjengis.",
+            "features_title": "Nøkkelfunksjoner",
+            "features_list": {
+                "preview": "<strong>Forhåndsvisning i sanntid:</strong> Se HTML-koden din gjengis umiddelbart mens du skriver",
+                "layout": "<strong>Side-til-side-visning:</strong> Koderedigering og forhåndsvisningsrute vises sammen",
+                "syntax": "<strong>Syntaksutheving:</strong> Lett å lese kode med fargekodet syntaks",
+                "sample": "<strong>Eksempelkode:</strong> Last inn eksempel-HTML for å komme raskt i gang",
+                "no_install": "<strong>Ingen installasjon kreves:</strong> Fungerer direkte i nettleseren din",
+                "free": "<strong>Gratis å bruke:</strong> Ingen registrering eller betaling kreves",
+                "secure": "<strong>Sikker:</strong> All behandling skjer i nettleseren din"
+            },
+            "how_title": "Hvordan bruke HTML Viewer",
+            "how_steps": {
+                "1": "Forhåndsvisningen oppdateres automatisk i høyre rute",
+                "2": "Bruk \"Last inn prøve\"-knappen for å se eksempel på HTML-kode",
+                "3": "Klikk \"Slett\" for å starte på nytt med en tom editor",
+                "4": "Test forskjellige HTML-elementer og se hvordan de gjengis",
+                "5": "Analyser de gjengitte utdataene og DOM-strukturen for å feilsøke layoutproblemer eller bekrefte HTML-gjengivelse."
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses_desc": "HTML-lesere er viktige verktøy for ulike nettutviklingsoppgaver. Utviklere bruker dem til å raskt teste HTML-snutter før de integreres i større prosjekter. Elever som lærer HTML kan eksperimentere med forskjellige tagger og attributter for å forstå effektene deres. E-postmarkedsførere bruker HTML-lesere til å forhåndsvise e-postmaler før sending. Innholdsskapere kan visualisere hvordan HTML-innholdet deres vil vises på nettsteder. Designere kan gjennomgå markup-strukturen og sikre riktig gjengivelse av HTML-elementer.",
+            "basics_title": "Forstå grunnleggende HTML",
+            "basics_desc": "HTML (HyperText Markup Language) er standard markup-språk for å lage nettsider. Den består av elementer representert av tagger, som forteller nettlesere hvordan de skal vise innhold. Vanlige HTML-elementer inkluderer overskrifter (&lt;h1&gt; til &lt;h6&gt;), avsnitt (&lt;p&gt;), lenker (&lt;a&gt;), bilder (&lt;img&gt;), og inndelinger (&lt;div&gt;). Å forstå disse grunnleggende elementene er avgjørende for nettutvikling, og HTML-visningen vår hjelper deg med å visualisere hvordan de fungerer sammen.",
+            "tips_title": "Beste praksis for HTML",
+            "tips_desc": "Når du skriver HTML, følg beste praksis for å sikre ren, vedlikeholdbar kode. Bruk alltid semantiske HTML-elementer som beskriver innholdet deres (som &lt;header&gt;, &lt;nav&gt;, &lt;artikkel&gt;). Neste elementer på riktig måte og lukk alle tagger. Bruk små bokstaver for tagnavn og attributtnavn. Legg til alt-attributter til bilder for tilgjengelighet. Valider HTML-en din for å fange opp feil tidlig. Hold koden din organisert med riktig innrykk. Disse praksisene fører til bedre SEO, tilgjengelighet og vedlikehold.",
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er denne HTML-visningen gratis å bruke?",
+                "a1": "Ja, HTML-visningen vår er helt gratis å bruke. Det er ingen skjulte avgifter, registreringskrav eller bruksgrenser.",
+                "q2": "Støtter HTML-visningsprogrammet CSS og JavaScript?",
+                "a2": "HTML-visningsprogrammet fokuserer først og fremst på HTML-oppmerking. Mens innebygde CSS-stiler vil gjengis, er ekstern CSS og JavaScript satt i sandkasse for sikkerhet.",
+                "q3": "Er HTML-koden min lagret eller lagret?",
+                "a3": "Nei, all HTML-behandling skjer utelukkende i nettleseren din. Koden din sendes aldri til våre servere eller lagres noe sted.",
+                "q4": "Kan jeg bruke dette verktøyet til å lære HTML?",
+                "a4": "Absolutt! Vår HTML-visning er perfekt for å lære HTML. Du kan eksperimentere med forskjellige tagger, attributter og strukturer for å se hvordan de gjengis.",
+                "q5": "Hva er forskjellen mellom en HTML-visningsprogram og en koderedigerer?",
+                "a5": "En HTML-leser fokuserer på forhåndsvisning og visualisering av HTML-kode i sanntid, mens en koderedigerer gir avanserte funksjoner (syntaksutheving, feilsøking) og er bedre for fullskala utvikling."
+            }
         }
     },
     "js-minifier": {
         "meta": {
             "title": "JS Minifier - Gratis online JavaScript-kompressor",
-            "h1": "JavaScript-minifier"
+            "description": "Komprimer og optimaliser JavaScript-koden for raskere sideinnlasting",
+            "h1": "JavaScript-minifier",
+            "subtitle": "Komprimer og optimaliser JavaScript-koden din"
         },
         "editor": {
+            "label_input": "JavaScript-inndata",
+            "ph_input": "Lim inn JavaScript-koden din her...",
             "btn_minify": "Minifiser JS",
-            "btn_beautify": "Beautify JS",
+            "btn_beautify": "Forskjønne JS",
             "btn_clear": "Tøm",
-            "btn_copy": "Kopier"
+            "btn_copy": "Kopier",
+            "label_output": "JavaScript-utgang"
+        },
+        "content": {
+            "about_title": "Hva er en JavaScript-minifier?",
+            "about_desc": "En JavaScript Minifier er et verktøy som komprimerer JavaScript-kode ved å fjerne unødvendige tegn som mellomrom, kommentarer og linjeskift uten å endre funksjonalitet. Minimerte JavaScript-filer er betydelig mindre, noe som fører til raskere sideinnlastingstider og forbedret nettstedytelse. Vår gratis online JS-minifier inkluderer også en forskjønningsfunksjon for å formatere JavaScript med riktig innrykk for bedre lesbarhet under utvikling.",
+            "why_title": "Hvorfor forminske JavaScript?",
+            "why_desc": "Å forminske JavaScript er avgjørende for optimalisering av nettytelse. Mindre JS-filer betyr raskere nedlastinger, redusert båndbreddebruk og forbedret sideinnlastingstid. Dette er spesielt viktig for mobilbrukere og brukere med tregere internettforbindelser. Forminsket JavaScript reduserer serverbelastningen og forbedrer brukeropplevelsen. For produksjonsnettsteder er minifisering en standard beste fremgangsmåte som kan forbedre Core Web Vitals-poengsummen betydelig.",
+            "features_title": "Nøkkelfunksjoner",
+            "features_list": {
+                "minify": "<strong>Forminsk JavaScript:</strong> Fjern mellomrom og kommentarer for å redusere filstørrelsen",
+                "beautify": "<strong>Forskjønn JavaScript:</strong> Formater JS med riktig innrykk",
+                "instant": "<strong>Øyeblikkelige resultater:</strong> Behandle JavaScript i sanntid",
+                "copy": "<strong>Kopiering:</strong> Kopier enkelt forminsket JavaScript",
+                "secure": "<strong>Sikker og privat:</strong> All behandling i nettleseren",
+                "free": "<strong>Gratis å bruke:</strong> Ingen registrering nødvendig"
+            },
+            "how_title": "Hvordan bruke",
+            "how_steps": [
+                "Lim inn JavaScript-koden i inndatafeltet",
+                "Klikk \"Minify JS\" for å komprimere koden",
+                "Klikk \"Beautify JS\" for å formatere med innrykk",
+                "Kopier utdataene ved å bruke \"Kopier utdata\"-knappen"
+            ],
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er denne JavaScript-minifieren gratis?",
+                "a1": "Ja, helt gratis uten begrensninger eller registrering nødvendig.",
+                "q2": "Er JavaScript-koden min lagret?",
+                "a2": "Nei, all behandling skjer i nettleseren din. Koden din sendes aldri til våre servere.",
+                "q3": "Hvor mye mindre blir JS-en min?",
+                "a3": "Vanligvis 30-50 % mindre avhengig av formatering og kommentarer i originalkode.",
+                "q4": "Kan jeg deminifisere JavaScript?",
+                "a4": "Ja, bruk \"Beautify JS\"-knappen for å formatere minifisert JavaScript med riktig innrykk.",
+                "q5": "Påvirker minifisering JavaScript-funksjonalitet?",
+                "a5": "Nei, minifisering fjerner bare unødvendige tegn. JavaScript fungerer akkurat det samme."
+            }
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn JavaScript-kode",
+            "success_minify": "✓ JavaScript minifisert vellykket!",
+            "success_beautify": "✓ JavaScript forskjønnet vellykket!",
+            "error_no_copy": "Ingen utdata å kopiere",
+            "success_copy": "✓ Kopiert til utklippstavlen!"
         }
     },
     "json-formatter": {
         "meta": {
             "title": "JSON Formatter Online - Gratis JSON Pretifier-verktøy",
-            "h1": "JSON-formater"
+            "description": "Formater, valider og minifiser JSON-dataene dine med vårt gratis onlineverktøy",
+            "h1": "JSON-formater",
+            "subtitle": "Formater, valider og minifiser JSON-dataene dine"
         },
         "editor": {
+            "title": "Formater JSON-dataene dine",
+            "label_input": "Skriv inn JSON-data",
+            "ph_input": "{\"name\": \"John Doe\", \"age\": 30, \"city\": \"New York\"}",
+            "help_text": "Lim inn JSON-dataene dine for å formatere, forskjønne eller forminske dem",
             "btn_format": "Formater & Beautify",
             "btn_minify": "Minifiser JSON",
+            "label_results": "Formatert JSON",
             "btn_copy": "Kopier JSON"
+        },
+        "content": {
+            "why_title": "Hvorfor bruke vår JSON-formater?",
+            "why_desc": "JSON (JavaScript Object Notation) er det mest populære datautvekslingsformatet som brukes i webutvikling, APIer og konfigurasjonsfiler. Vår gratis online JSON-formatering hjelper utviklere, dataanalytikere og IT-fagfolk raskt å formatere, forskjønne, validere og forminske JSON-data. Enten du feilsøker API-svar, rydder opp i konfigurasjonsfiler eller forbereder JSON for produksjon, gir verktøyet vårt umiddelbare resultater med syntaksutheving og feildeteksjon. Perfekt for utviklere som jobber med REST APIer, NoSQL-databaser og moderne nettapplikasjoner.",
+            "features": {
+                "instant": {
+                    "title": "Øyeblikkelig formatering",
+                    "desc": "Formater og forskjønn JSON-data på millisekunder med riktig innrykk og syntaksutheving"
+                },
+                "error": {
+                    "title": "Feilgjenkjenning",
+                    "desc": "Oppdag og fremhev JSON-syntaksfeil automatisk med nyttige feilmeldinger"
+                },
+                "privacy": {
+                    "title": "100 % privat",
+                    "desc": "All behandling skjer i nettleseren din – JSON-dataene dine forlater aldri datamaskinen din"
+                }
+            },
+            "how_title": "Hvordan formatere JSON i 3 enkle trinn",
+            "how_steps": {
+                "1": {
+                    "title": "Velg Handling",
+                    "desc": "Klikk \"Formater og forskjønn\" for å formatere eller \"Minify\" for å komprimere JSON"
+                },
+                "2": {
+                    "title": "Kopier resultat",
+                    "desc": "Klikk på kopieringsknappen for å kopiere den formaterte JSON-en til utklippstavlen"
+                },
+                "3": {
+                    "title": "Formater eller forminsk",
+                    "desc": "Velg å forskjønne (formatere med innrykk) eller forminske (komprimere til én linje) dine JSON-data basert på dine behov."
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller for JSON-formatering",
+            "uses": {
+                "api": {
+                    "title": "API Response Debugging",
+                    "desc": "Formater rotete API-svar for enkelt å lese og feilsøke JSON-data fra REST APIer, GraphQL og nettjenester."
+                },
+                "config": {
+                    "title": "Konfigurasjonsfiler",
+                    "desc": "Rydd opp og valider JSON-konfigurasjonsfiler for applikasjoner, package.json, tsconfig.json og mer."
+                },
+                "db": {
+                    "title": "Database Data",
+                    "desc": "Formater JSON-data fra NoSQL-databaser som MongoDB, CouchDB og Firebase for bedre lesbarhet."
+                },
+                "export": {
+                    "title": "Dataeksport/import",
+                    "desc": "Klargjør JSON-data for eksport eller valider importerte JSON-data for å sikre riktig struktur og syntaks."
+                }
+            },
+            "tips_title": "JSON beste fremgangsmåter og tips",
+            "tips": {
+                "validate": {
+                    "title": "✓ Valider alltid JSON",
+                    "desc": "Bruk en JSON-validator for å fange syntaksfeil før du distribuerer til produksjon. Ugyldig JSON kan ødelegge applikasjonen din."
+                },
+                "indent": {
+                    "title": "✓ Bruk riktig innrykk",
+                    "desc": "Formater JSON med 2 eller 4 mellomromsinnrykk for bedre lesbarhet under utvikling og feilsøking."
+                },
+                "minify": {
+                    "title": "✓ Forminsk for produksjon",
+                    "desc": "Reduser JSON-data før de distribueres til produksjon for å redusere filstørrelsen og forbedre lastetidene."
+                },
+                "naming": {
+                    "title": "✓ Bruk konsekvent navngivning",
+                    "desc": "Følg navnekonvensjonene for camelCase eller snake_case konsekvent gjennom hele JSON-strukturen."
+                }
+            },
+            "faq_title": "❓ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er JSON-dataene mine trygge?",
+                "a1": "Ja, absolutt. Vår JSON-formater kjører helt i nettleseren din ved hjelp av JavaScript. Dine data blir aldri sendt til våre servere eller lagret noe sted.",
+                "q2": "Hvorfor er det viktig å forminske JSON?",
+                "a2": "Redusering fjerner unødvendig mellomrom og linjeskift, noe som reduserer filstørrelsen betydelig. Dette er avgjørende for å forbedre API-ytelsen og redusere båndbreddebruken i produksjonsmiljøer.",
+                "q3": "Kan jeg validere ufullstendig JSON?",
+                "a3": "Verktøyet krever gyldig JSON-struktur for å formatere eller forminske. Den gir imidlertid detaljerte feilmeldinger for å hjelpe deg med å finne og fikse problemer i JSON-dataene dine.",
+                "q4": "Støtter den store JSON-filer?",
+                "a4": "Ja, verktøyet er optimalisert for å håndtere store JSON-datasett effektivt, selv om ekstremt store filer kan avhenge av nettleserens minnegrenser."
+            }
+        },
+        "js": {
+            "error_empty_format": "Skriv inn JSON-data for å formatere",
+            "error_invalid": "Ugyldig JSON:",
+            "error_empty_minify": "Skriv inn JSON-data for å forminske",
+            "success_copy": "Kopiert!",
+            "error_copy": "Kunne ikke kopiere. Vennligst kopier manuelt."
         }
     },
     "json-parser": {
         "meta": {
             "title": "JSON Parser & Validator - Gratis online syntakssjekk",
-            "h1": "JSON Parser & Validator"
+            "description": "Analyser, valider og visualiser JSON-struktur",
+            "h1": "JSON Parser & Validator",
+            "subtitle": "Analyser, valider og visualiser JSON-struktur"
         },
         "editor": {
+            "label_input": "JSON-inngang",
+            "ph_input": "{\"name\": \"John Doe\", \"age\": 30, \"isActive\": true}",
             "btn_parse": "Pars JSON",
-            "btn_beautify": "Beautify",
+            "btn_beautify": "Forskjønne",
             "btn_minify": "Minifiser",
             "btn_clear": "Tøm",
+            "btn_load": "Last inn prøve",
             "title_tree": "JSON Tre-visning"
+        },
+        "content": {
+            "hero_title": "Gratis JSON Parser & Validator",
+            "hero_subtitle": "Analyser, valider, forskjønn og minifiser JSON-data umiddelbart",
+            "p1": "Vår gratis JSON Parser er et kraftig nettverktøy for utviklere, dataanalytikere og alle som jobber med JSON-data. Analyser, valider, forskjønn og minifiser JSON umiddelbart med et rent, intuitivt grensesnitt. Perfekt for feilsøking av APIer, formatering av konfigurasjonsfiler eller validering av JSON-struktur. 100 % gratis behandling på klientsiden sikrer at dataene dine forblir private og sikre.",
+            "what_title": "📋 Hva er JSON?",
+            "what_desc": "JSON (JavaScript Object Notation) er et lett datautvekslingsformat som er enkelt for mennesker å lese og skrive, og enkelt for maskiner å analysere og generere. Det er det mest populære formatet for APIer, konfigurasjonsfiler og datalagring. JSON bruker nøkkelverdi-par og støtter strenger, tall, booleaner, matriser og nestede objekter.",
+            "features_title": "✨ Funksjoner",
+            "features": {
+                "validate": {
+                    "title": "JSON-validering",
+                    "desc": "Valider JSON-syntaks og struktur umiddelbart"
+                },
+                "beautify": {
+                    "title": "Forskjønn JSON",
+                    "desc": "Formater JSON med riktig innrykk og mellomrom"
+                },
+                "minify": {
+                    "title": "Reduser JSON",
+                    "desc": "Komprimer JSON ved å fjerne mellomrom"
+                },
+                "tree": {
+                    "title": "Trevisning",
+                    "desc": "Visualiser JSON-struktur i treformat"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All behandling skjer i nettleseren din"
+                },
+                "instant": {
+                    "title": "Umiddelbare resultater",
+                    "desc": "Analyser og formater JSON i millisekunder"
+                }
+            },
+            "uses_title": "🎯 Vanlige brukstilfeller",
+            "uses": {
+                "api": {
+                    "title": "🔌 API-utvikling",
+                    "desc": "Test og feilsøk API-svar, valider forespørselsnyttelaster og formater JSON-data"
+                },
+                "config": {
+                    "title": "⚙️ Konfigurasjonsfiler",
+                    "desc": "Formater og valider konfigurasjonsfiler for applikasjoner, databaser og tjenester"
+                },
+                "analysis": {
+                    "title": "📊 Dataanalyse",
+                    "desc": "Analyser og visualiser JSON-data fra databaser, logger og analyseverktøy"
+                },
+                "debug": {
+                    "title": "🐛 Feilsøking",
+                    "desc": "Identifiser syntaksfeil, valider struktur og feilsøk JSON-problemer"
+                },
+                "docs": {
+                    "title": "📝 Dokumentasjon",
+                    "desc": "Lag lesbare JSON-eksempler for API-dokumenter og tekniske veiledninger"
+                },
+                "migration": {
+                    "title": "🔄 Datamigrering",
+                    "desc": "Transformer og valider JSON under dataimport og -eksport"
+                }
+            },
+            "how_title": "📚 Slik bruker du",
+            "how_steps": [
+                "<strong>Lim inn JSON:</strong> Kopier og lim inn JSON-dataene dine i inndatafeltet",
+                "<strong>Parse:</strong> Klikk \"Parse JSON\" for å validere og visualisere strukturen",
+                "<strong>Forskjønn:</strong> Klikk \"Forskjønn\" for å formatere med riktig innrykk",
+                "<strong>Forminsk:</strong> Klikk \"Forminsk\" for å komprimere og fjerne mellomrom",
+                "<strong>Vis tre:</strong> Se den hierarkiske strukturen i trevisningsformat"
+            ],
+            "tips_title": "💡 JSON beste fremgangsmåter",
+            "tips_list": [
+                "<strong>Bruk doble anførselstegn:</strong> JSON krever doble anførselstegn for strenger, ikke enkle anførselstegn",
+                "<strong>Ingen etterfølgende kommaer:</strong> Fjern kommaer etter det siste elementet i objekter og matriser",
+                "<strong>Riktige datatyper:</strong> Bruk tall uten anførselstegn, booleaner som sant/usant, null for tomme verdier",
+                "<strong>Valider regelmessig:</strong> Valider alltid JSON før distribusjon eller produksjonsbruk",
+                "<strong>Forskjønne for lesbarhet:</strong> Formater JSON for enklere feilsøking og vedlikehold"
+            ],
+            "faq_title": "❓ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Hva er forskjellen mellom beautify og minify?",
+                "a1": "Beautify legger til innrykk og linjeskift for å gjøre JSON lesbar for mennesker. Minify fjerner alt mellomrom for å redusere filstørrelsen, noe som gjør den ideell for produksjonsmiljøer.",
+                "q2": "Er JSON-dataene mine sikre?",
+                "a2": "Ja! All JSON-parsing og formatering skjer utelukkende i nettleseren din. Dataene dine forlater aldri enheten din og sendes ikke til noen server.",
+                "q3": "Kan jeg analysere store JSON-filer?",
+                "a3": "Ja, vår parser kan håndtere store JSON-filer. Svært store filer (>10 MB) kan imidlertid ta lengre tid å behandle avhengig av enhetens ytelse.",
+                "q4": "Hvilke feil oppdager parseren?",
+                "a4": "Parseren oppdager syntaksfeil som manglende anførselstegn, etterfølgende komma, ugyldige tegn, ulukkede parenteser og feil datatyper. Feilmeldinger viser den nøyaktige plasseringen av problemet.",
+                "q5": "Kan jeg bruke dette til API-testing?",
+                "a5": "Absolutt! Dette verktøyet er perfekt for å teste API-svar, validere forespørselsnyttelast og formatere JSON-data fra API-kall."
+            }
+        },
+        "js": {
+            "error_empty_parse": "Skriv inn JSON-data for å analysere",
+            "success_valid": "✓ Gyldig JSON! Analysert vellykket",
+            "error_invalid": "✗ Ugyldig JSON:",
+            "error_empty_beautify": "Vennligst skriv inn JSON-data for å forskjønne",
+            "success_beautify": "✓ JSON ble forskjønnet vellykket",
+            "error_beautify": "✗ Kan ikke forskjønne ugyldig JSON:",
+            "error_empty_minify": "Skriv inn JSON-data for å forminske",
+            "success_minify": "✓ JSON minifisert vellykket",
+            "error_minify": "✗ Kan ikke forminske ugyldig JSON:",
+            "success_load": "Eksempel JSON lastet"
         }
     },
     "json-to-csv-converter": {
         "meta": {
             "title": "JSON til CSV-konvertering - Gratis online dataverktøy",
-            "h1": "JSON til CSV-konvertering"
+            "description": "Konverter JSON-data til CSV- eller Excel-format umiddelbart med vårt gratis onlineverktøy. Rask, sikker og enkel å bruke.",
+            "h1": "JSON til CSV-konvertering",
+            "subtitle": "Konverter JSON-matriser og objekter til CSV-format enkelt"
         },
         "editor": {
+            "label_delimiter": "Velg skilletegn",
+            "opt_comma": "Komma (,)",
+            "opt_semicolon": "Semikolon (;)",
+            "opt_tab": "Tab",
+            "opt_pipe": "Rør (|)",
             "btn_convert": "Konverter til CSV",
             "btn_copy": "Kopier CSV",
-            "btn_download": "Last ned CSV"
+            "btn_download": "Last ned CSV",
+            "btn_example": "Last eksempel",
+            "btn_clear": "Klar",
+            "label_input": "JSON-inngang",
+            "ph_input": "Lim inn JSON-dataene dine her...",
+            "label_output": "CSV-utgang",
+            "ph_output": "Konvertert CSV vises her..."
+        },
+        "content": {
+            "hero_title": "Gratis JSON til CSV-konvertering",
+            "p1": "Vår gratis JSON til CSV-konverterer er et kraftig verktøy designet for utviklere, dataanalytikere og IT-fagfolk. Transformer enkelt strukturerte JSON-data til rene, formaterte CSV- (Comma Separated Values) eller TSV-filer. Enten du forbereder data for Excel, Google Sheets eller databaseimport, sikrer verktøyet vårt nøyaktighet og hastighet med 100 % behandling på klientsiden.",
+            "features_title": "Nøkkelfunksjoner",
+            "features_list": {
+                "fast": "<strong>Øyeblikkelig konvertering:</strong> Resultater i millisekunder",
+                "secure": "<strong>Privat og sikkert:</strong> Alle data forblir i nettleseren din",
+                "format": "<strong>Smart flattening:</strong> Håndterer nestede JSON-objekter på riktig måte",
+                "custom": "<strong>Egendefinerte skilletegn:</strong> Velg mellom komma, semikolon eller tabulatorer",
+                "export": "<strong>Enkel eksport:</strong> Kopier til utklippstavlen eller last ned som .csv",
+                "free": "<strong>100 % gratis:</strong> Ingen grenser, ingen registrering nødvendig"
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "api": {
+                    "title": "API-dataanalyse",
+                    "desc": "Konverter JSON-svar fra REST APIer til CSV-format for enklere analyse i regnearkprogramvare."
+                },
+                "db": {
+                    "title": "Database migrering",
+                    "desc": "Forbered JSON-data for import til relasjonsdatabaser som MySQL eller PostgreSQL."
+                },
+                "analysis": {
+                    "title": "Datavisualisering",
+                    "desc": "Transform komplekse JSON-datasett til en flat struktur egnet for visualiseringsverktøy."
+                },
+                "report": {
+                    "title": "Rask rapportering",
+                    "desc": "Generer lesbare CSV-rapporter fra strukturerte JSON-loggfiler eller applikasjonsdata."
+                }
+            },
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Støtter den nestet JSON?",
+                "a1": "Ja, verktøyet vårt flater automatisk sammen nestede objekter slik at de vises som tydelig merkede kolonner i CSV-en din.",
+                "q2": "Er dataene mine lastet opp?",
+                "a2": "Nei, all behandling skjer lokalt i nettleseren din. Dine data blir aldri sendt til våre servere.",
+                "q3": "Kan jeg konvertere til TSV?",
+                "a3": "Ja, bare velg \"Tab\"-avgrensningsalternativet før du konverterer.",
+                "q4": "Hva er maksimal filstørrelse?",
+                "a4": "Verktøyet kan håndtere store JSON-filer, selv om ytelsen avhenger av enhetens minne."
+            }
+        },
+        "js": {
+            "error_empty": "Skriv inn JSON-data for å konvertere",
+            "error_convert": "Feil ved konvertering av JSON:",
+            "error_no_copy": "Ikke noe innhold å kopiere. Konverter JSON først.",
+            "success_copy": "✓ CSV kopiert til utklippstavlen!",
+            "error_no_download": "Ikke noe innhold å laste ned. Konverter JSON først."
         }
     },
     "json-to-sql-converter": {
         "meta": {
             "title": "JSON til SQL-konvertering – gratis overføringsverktøy på nett",
-            "h1": "JSON til SQL-konvertering"
+            "description": "Transform JSON-data til SQL INSERT-setninger umiddelbart. Perfekt for databaseseeding og datamigrering.",
+            "h1": "JSON til SQL-konvertering",
+            "subtitle": "Konverter JSON-matriser og -objekter til gyldige SQL-skript"
         },
         "editor": {
             "label_tablename": "Tabellnavn",
+            "ph_tablename": "Skriv inn tabellnavn (f.eks. brukere)",
             "btn_convert": "Generer SQL",
-            "btn_copy": "Kopier SQL"
+            "btn_clear": "Klar",
+            "btn_copy": "Kopier SQL",
+            "btn_example": "Last eksempel",
+            "label_input": "JSON-inngang",
+            "ph_input": "Lim inn JSON-arrayen din her...",
+            "label_output": "SQL-utgang",
+            "ph_output": "Genererte SQL INSERT-setninger vises her..."
+        },
+        "content": {
+            "hero_title": "Uanstrengt JSON til SQL-konvertering",
+            "hero_subtitle": "Den raskeste måten å generere databaseseed-skript",
+            "p1": "Konvertering av JSON-data til SQL INSERT-setninger bør ikke være en manuell oppgave. Vår JSON til SQL-konvertering håndterer tunge løft ved automatisk å kartlegge JSON-nøkler til databasekolonner og unnslippe verdier for sikker innsetting. Det er et viktig verktøy for utviklere som jobber med datamigrering, testing eller databaseinitialisering.",
+            "what_title": "Når skal du bruke dette verktøyet?",
+            "what_desc": "Hvis du har en samling av data i JSON-format – for eksempel en eksport fra en NoSQL-database eller et API-svar – og du må sette den inn i en relasjonsdatabase som MySQL, PostgreSQL eller SQL Server, er dette verktøyet for deg. Den formaterer hvert objekt til en ren SQL-setning.",
+            "features_title": "Nøkkelfunksjoner",
+            "features": {
+                "fast": {
+                    "title": "Øyeblikkelig generasjon",
+                    "desc": "Generer hundrevis av SQL-linjer på et øyeblikk."
+                },
+                "private": {
+                    "title": "Personvern garantert",
+                    "desc": "All behandling er lokal. Dine sensitive data forblir i nettleseren din."
+                },
+                "copy": {
+                    "title": "Ett-klikks eksport",
+                    "desc": "Kopier hele skriptet eller last det ned for overføringene dine."
+                },
+                "smart": {
+                    "title": "Smart Escape",
+                    "desc": "Håndterer automatisk sitater og spesialtegn i strenger."
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen grenser, ingen registrering, ingen problemer."
+                },
+                "db": {
+                    "title": "Cross-DB-vennlig",
+                    "desc": "Genererer standard SQL-kompatibel med de fleste databasesystemer."
+                }
+            },
+            "uses_title": "Tilfeller for profesjonell bruk",
+            "uses": {
+                "migration": {
+                    "title": "Datamigrering",
+                    "desc": "Flytt enkelt data fra JSON-baserte systemer til SQL-databaser."
+                },
+                "import": {
+                    "title": "Bulk import",
+                    "desc": "Last inn store mengder test- eller produksjonsdata raskt."
+                },
+                "api": {
+                    "title": "API til database",
+                    "desc": "Konverter tredjeparts API-resultater direkte til SQL-innlegg."
+                },
+                "test": {
+                    "title": "Test data seeding",
+                    "desc": "Lag SQL-skript for å fylle utviklingsmiljøer."
+                },
+                "backup": {
+                    "title": "Gjenoppretting av sikkerhetskopi",
+                    "desc": "Gjør JSON-sikkerhetskopier tilbake til funksjonelle SQL-skript."
+                },
+                "dev": {
+                    "title": "Rask prototyping",
+                    "desc": "Fyll raskt ut nye databasetabeller under utvikling."
+                }
+            },
+            "how_title": "Hvordan bruke",
+            "how_steps": [
+                "Angi måldatabasen <strong>Tabellnavn</strong>",
+                "Lim inn <strong>JSON</strong> (må være en matrise eller et objekt)",
+                "Klikk <strong>Generer SQL</strong> for å lage skriptet",
+                "<strong>Kopier</strong> SQL-utdataene til utklippstavlen"
+            ],
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Hvilket JSON-format kreves?",
+                "a1": "Verktøyet fungerer best med en rekke objekter, der hvert objekt representerer en databaserad.",
+                "q2": "Håndterer den nestede objekter?",
+                "a2": "Den kartlegger for øyeblikket nøkler på toppnivå. Nestede objekter er vanligvis strenger eller hoppet over avhengig av DB-behovene dine.",
+                "q3": "Er det en grense for rader?",
+                "a3": "Det er ingen hard grense, selv om nettleserens ytelse kan variere med tusenvis av rader."
+            },
+            "tips_title": "Pro tips",
+            "tips_list": [
+                "Sørg for at JSON-nøklene samsvarer nøyaktig med SQL-kolonnenavnene dine.",
+                "Verifiser alltid den genererte SQL-en før du kjører den på en produksjonsdatabase.",
+                "Bruk \"Eksempel\"-knappen for å se den forventede JSON-strukturen."
+            ]
+        },
+        "js": {
+            "error_empty": "Skriv inn JSON-data og et tabellnavn",
+            "success_convert": "✓ SQL generert vellykket!",
+            "error_convert": "Feil under generering av SQL:",
+            "error_no_copy": "Ingen SQL å kopiere. Konverter JSON først.",
+            "success_copy": "✓ SQL kopiert til utklippstavlen!"
         }
     },
     "json-to-xml-converter": {
         "meta": {
             "title": "JSON til XML Converter - Gratis online dataoversetter",
-            "h1": "JSON til XML-konvertering"
+            "description": "Konverter JSON-data til strukturert XML-format umiddelbart med vårt gratis onlineverktøy. Rask, sikker og enkel å bruke.",
+            "h1": "JSON til XML-konvertering",
+            "subtitle": "Transform JSON-objekter og matriser til gyldige XML-dokumenter"
         },
         "editor": {
             "btn_convert": "Konverter til XML",
-            "btn_copy": "Kopier XML"
+            "btn_clear": "Klar",
+            "btn_copy": "Kopier XML",
+            "btn_example": "Last eksempel",
+            "label_input": "JSON-inngang",
+            "ph_input": "Lim inn JSON-dataene dine her...",
+            "label_output": "XML-utdata",
+            "ph_output": "Konvertert XML vises her..."
+        },
+        "content": {
+            "hero_title": "Gratis JSON til XML-konvertering",
+            "hero_subtitle": "Den raskeste måten å transformere JSON til XML",
+            "p1": "Vår gratis JSON til XML-konvertering er et kraftig verktøy designet for utviklere og IT-fagfolk. Den lar deg transformere JavaScript Object Notation (JSON)-data til strukturert Extensible Markup Language (XML) umiddelbart. Enten du jobber med eldre systemer, bedriftsintegrasjoner eller spesifikke XML-baserte APIer, sikrer verktøyet vårt nøyaktighet og personvern med 100 % behandling på klientsiden.",
+            "what_title": "Hva er JSON til XML-konvertering?",
+            "what_desc": "JSON til XML-konvertering er prosessen med å oversette data strukturert i JSON – et lettvektsformat som er populært i moderne nettapper – til XML, et markup-språk som ofte brukes i bedriftssystemer, SOAP-tjenester og konfigurasjonsfiler. Verktøyet vårt bygger bro over dette gapet, og gjør datatransformasjon sømløs.",
+            "features_title": "Nøkkelfunksjoner",
+            "features": {
+                "instant": {
+                    "title": "Øyeblikkelig konvertering",
+                    "desc": "Få XML-resultatene dine på millisekunder."
+                },
+                "privacy": {
+                    "title": "Personvern garantert",
+                    "desc": "Alle data forblir i nettleseren din; ingenting er lastet opp."
+                },
+                "copy": {
+                    "title": "Enkel eksport",
+                    "desc": "Kopier til utklippstavlen eller bruk utdataene direkte."
+                },
+                "format": {
+                    "title": "Ren XML",
+                    "desc": "Genererer godt formatert og lesbar XML-kode."
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen registrering, ingen begrensninger, ingen kostnader."
+                },
+                "offline": {
+                    "title": "Frakoblet evne",
+                    "desc": "Fungerer uten internett når siden er lastet inn."
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "migration": {
+                    "title": "Systemmigrering",
+                    "desc": "Transformer JSON-data for import til eldre XML-baserte systemer."
+                },
+                "integration": {
+                    "title": "API-integrasjon",
+                    "desc": "Forbered data for SOAP APIer eller REST APIer som krever XML-inndata."
+                },
+                "config": {
+                    "title": "Konfigurasjonstransformasjon",
+                    "desc": "Konverter JSON-konfigurasjonsfiler til XML-format."
+                },
+                "enterprise": {
+                    "title": "Enterprise Services",
+                    "desc": "Standardiser data for bedriftsservicebusser og mellomvare."
+                },
+                "docs": {
+                    "title": "Teknisk dokumentasjon",
+                    "desc": "Generer XML-snutter for tekniske veiledninger eller spesifikasjoner."
+                },
+                "export": {
+                    "title": "Dataeksport",
+                    "desc": "Eksporter enkelt strukturerte data til XML-format for rapportering."
+                }
+            },
+            "how_title": "Hvordan bruke",
+            "how_steps": {
+                "1": {
+                    "title": "Lim inn JSON",
+                    "desc": "Lim inn JSON-koden i 'JSON Input'-feltet."
+                },
+                "2": {
+                    "title": "Konvertere",
+                    "desc": "Klikk \"Konverter til XML\" for å generere utdata."
+                },
+                "3": {
+                    "title": "Eksporter resultater",
+                    "desc": "Kopier den genererte XML-en og bruk den i prosjektet ditt."
+                }
+            },
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Støtter den nestet JSON?",
+                "a1": "Ja, den håndterer komplekse nestede objekter og matriser ved å lage hierarkiske XML-koder.",
+                "q2": "Er dataene mine sikre?",
+                "a2": "Absolutt. Behandlingen gjøres i sin helhet i nettleseren din ved hjelp av JavaScript.",
+                "q3": "Kan jeg laste inn et eksempel?",
+                "a3": "Ja, klikk \"Last inn eksempel\" for å se en demonstrasjon av konverteringen.",
+                "q4": "Er det en størrelsesgrense?",
+                "a4": "Ytelsen avhenger av nettleserens minne, men den håndterer de fleste filer enkelt.",
+                "q5": "Bruker den noen eksterne APIer?",
+                "a5": "Nei, det er et selvstendig verktøy som kjører på enheten din.",
+                "q6": "Er XML formatert?",
+                "a6": "Ja, utskriften er \"ganske trykt\" med riktig innrykk for lesbarhet."
+            },
+            "tips_title": "Pro tips",
+            "tips_list": {
+                "1": "Valider din JSON før du konverterer for å unngå syntaksfeil.",
+                "2": "Bruk \"Slett\"-knappen for en ny start når du konverterer flere filer.",
+                "3": "Sjekk XML-taggene for å sikre at de samsvarer med det forventede målskjemaet.",
+                "4": "Bruk «Last inn eksempel» hvis du er usikker på inndataformatet.",
+                "5": "Bokmerk denne siden for rask tilgang til utviklingsverktøyene dine."
+            }
+        },
+        "js": {
+            "error_empty": "Skriv inn JSON-data for å konvertere",
+            "success_convert": "✓ JSON konvertert til XML vellykket!",
+            "error_convert": "Feil ved konvertering av JSON:",
+            "error_no_copy": "Ikke noe innhold å kopiere. Konverter JSON først.",
+            "success_copy": "✓ XML kopiert til utklippstavlen!"
         }
     },
     "json-to-yaml-converter": {
         "meta": {
             "title": "JSON til YAML Converter - Gratis online objektverktøy",
-            "h1": "JSON til YAML Converter"
+            "description": "Konverter JSON til YAML-format umiddelbart med vår gratis online JSON til YAML-konverter. Rask, sikker og enkel å bruke.",
+            "h1": "JSON til YAML Converter",
+            "subtitle": "Den beste json til yaml-konverteren for utviklere og IT-fagfolk"
+        },
+        "content": {
+            "hero_title": "JSON til YAML-konverterer",
+            "hero_subtitle": "Konverter JSON til YAML-format umiddelbart og nøyaktig",
+            "p1": "Vår gratis JSON til YAML-konverter lar deg transformere JSON-data til YAML-format umiddelbart. Perfekt for utviklere, DevOps-ingeniører og alle som jobber med konfigurasjonsfiler eller dataserialisering.",
+            "what_title": "Hva er JSON til YAML Converter?",
+            "what_desc": "JSON (JavaScript Object Notation) og YAML (YAML Ain't Markup Language) er begge populære dataserialiseringsformater. YAML er ofte foretrukket for konfigurasjonsfiler på grunn av den menneskelig lesbare syntaksen. Verktøyet vårt hjelper deg raskt å bygge bro mellom disse formatene.",
+            "features_title": "Nøkkelfunksjoner",
+            "features": {
+                "fast": {
+                    "title": "Rask konvertering",
+                    "desc": "Konverter JSON til YAML i millisekunder"
+                },
+                "secure": {
+                    "title": "Sikkert og privat",
+                    "desc": "Behandlingen skjer i sin helhet i nettleseren din"
+                },
+                "copy": {
+                    "title": "Ett-klikks Kopier",
+                    "desc": "Kopier den konverterte YAML umiddelbart"
+                },
+                "format": {
+                    "title": "Ren formatering",
+                    "desc": "Gir godt innrykket YAML-utgang"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen registrering eller betaling kreves"
+                },
+                "offline": {
+                    "title": "Kundesiden",
+                    "desc": "Fungerer uten å sende data til en server"
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "docker": {
+                    "title": "Docker",
+                    "desc": "Konverter JSON-beholderkonfigurasjoner til Docker Compose YAML."
+                },
+                "config": {
+                    "title": "Konfigurasjonsfiler",
+                    "desc": "Transformer JSON-innstillinger til YAML-konfigurasjonsfiler."
+                },
+                "cicd": {
+                    "title": "CI/CD rørledninger",
+                    "desc": "Forbered YAML-rørledningsdefinisjoner fra JSON-data."
+                },
+                "cloud": {
+                    "title": "Skyleverandørkonfigurasjoner",
+                    "desc": "Konverter JSON-data til YAML-format for skyplattformer."
+                },
+                "data": {
+                    "title": "Datatransformasjon",
+                    "desc": "Bytt mellom JSON og YAML for forskjellige dataverktøy."
+                },
+                "tools": {
+                    "title": "DevOps-verktøy",
+                    "desc": "Formater data riktig for verktøy som forventer YAML."
+                }
+            },
+            "how_title": "Hvordan bruke",
+            "how_steps": {
+                "1": {
+                    "title": "Lim inn JSON",
+                    "desc": "Skriv inn JSON-dataene dine i inndatafeltet."
+                },
+                "2": {
+                    "title": "Konvertere",
+                    "desc": "Klikk på \"Konverter\"-knappen for å generere YAML."
+                },
+                "3": {
+                    "title": "Kopier YAML",
+                    "desc": "Kopier den resulterende YAML for prosjektet ditt."
+                }
+            },
+            "samples_title": "Konverteringseksempler",
+            "samples": [
+                {
+                    "title": "Basic Object",
+                    "json": "{ \"name\": \"Antigravity\", \"version\": \"1.0\" }",
+                    "yaml": "name: Antigravity\nversion: 1.0"
+                },
+                {
+                    "title": "Array Example",
+                    "json": "[ \"Java\", \"Python\", \"Go\" ]",
+                    "yaml": "- Java\n- Python\n- Go"
+                }
+            ],
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er det gratis?",
+                "a1": "Ja, vår JSON til YAML-konverter er 100 % gratis.",
+                "q2": "Er det sikkert?",
+                "a2": "Ja, all behandling skjer lokalt i nettleseren din.",
+                "q3": "Støtter den arrays?",
+                "a3": "Ja, den håndterer komplekse JSON-strukturer inkludert matriser og nestede objekter.",
+                "q4": "Er YAML bedre enn JSON?",
+                "a4": "YAML er ofte lettere for mennesker å lese og skrive, mens JSON generelt er bedre for maskinbehandling.",
+                "q5": "Kan jeg bruke dette offline?",
+                "a5": "Ja, når det er lastet inn, fungerer verktøyet offline da det bruker lokal JavaScript."
+            },
+            "tips_title": "Pro tips",
+            "tips_list": {
+                "1": "Sørg for at JSON-en din er gyldig før du konverterer.",
+                "2": "Bruk \"Eksempel\"-knappen for å se hvordan konverteringen fungerer.",
+                "3": "YAML skiller mellom store og små bokstaver, akkurat som JSON.",
+                "4": "Sjekk innrykk i den resulterende YAML.",
+                "5": "Slett alle data enkelt for en ny start."
+            }
         },
         "editor": {
             "btn_convert": "Konverter",
-            "btn_copy": "Kopier YAML"
+            "btn_clear": "Klar",
+            "btn_copy": "Kopier YAML",
+            "btn_example": "Eksempel",
+            "label_input": "JSON-inngang",
+            "ph_input": "Lim inn JSON-dataene dine her...",
+            "label_output": "YAML-utgang",
+            "ph_output": "Konvertert YAML vises her..."
+        },
+        "js": {
+            "error_empty": "Skriv inn litt JSON-tekst",
+            "success_convert": "JSON konvertert til YAML vellykket!",
+            "error_convert": "Feil ved konvertering av JSON:",
+            "error_no_copy": "Ingen YAML å kopiere. Konverter JSON først.",
+            "success_copy": "YAML kopiert til utklippstavlen!"
         }
     },
     "jwt-decoder": {
         "meta": {
             "title": "JWT Decoder Online - Gratis JSON Web Token Debugger",
-            "h1": "JWT-dekoder"
+            "description": "Dekod og inspiser JSON Web Tokens (JWT) - Se overskrift, nyttelast og signatur!",
+            "h1": "JWT-dekoder",
+            "subtitle": "Dekod og inspiser JSON Web Tokens (JWT) – Se overskrift, nyttelast og signatur!"
         },
         "editor": {
             "label_input": "Skriv inn JWT-token",
+            "ph_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
             "btn_decode": "Dekod JWT",
-            "label_payload": "Payload (Claims)",
-            "label_signature": "Signatur"
+            "btn_clear": "Klar",
+            "btn_example": "Eksempel",
+            "label_payload": "Nyttelast (krav)",
+            "label_signature": "Signatur",
+            "note_signature": "âš ï¸ Merk: Signaturverifisering krever den hemmelige nøkkelen"
+        },
+        "content": {
+            "hero_title": "Gratis JWT-dekoder online",
+            "hero_subtitle": "Dekode og inspiser JSON Web Tokens umiddelbart",
+            "p1": "Vårt gratis JWT-dekoderverktøy lar deg dekode og inspisere JSON Web Tokens (JWT) for å se overskriften, nyttelasten og signaturkomponentene deres. Perfekt for å feilsøke autentiseringsproblemer, forstå tokenstruktur og validere JWT-påstander.",
+            "what_title": "ðŸ” Hva er JWT?",
+            "what_desc": "JSON Web Token (JWT) er en kompakt, URL-sikker måte å representere krav mellom to parter. JWT-er består av tre deler: Header (algoritme og tokentype), nyttelast (krav/data) og signatur (verifisering), atskilt med prikker.",
+            "features_title": "âœ¨ Funksjoner",
+            "features": {
+                "instant": {
+                    "title": "Øyeblikkelig dekoding",
+                    "desc": "Dekod JWT-er i millisekunder"
+                },
+                "structured": {
+                    "title": "Strukturert visning",
+                    "desc": "Se overskrift, nyttelast og signatur separat"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All dekoding skjer i nettleseren din"
+                }
+            },
+            "uses_title": "🎯 Vanlige brukstilfeller",
+            "uses": {
+                "debug": {
+                    "title": "ðŸ› Feilsøking",
+                    "desc": "Feilsøk autentiseringsproblemer ved å inspisere JWT-innhold"
+                },
+                "validate": {
+                    "title": "âœ... Validering",
+                    "desc": "Bekreft JWT-krav og utløpstider"
+                },
+                "learn": {
+                    "title": "📚 Læring",
+                    "desc": "Forstå JWT struktur og komponenter"
+                },
+                "dev": {
+                    "title": "🔧 Utvikling",
+                    "desc": "Test JWT-generering og parsing i applikasjonene dine"
+                }
+            },
+            "faq_title": "â“ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er det trygt å dekode JWT-er her?",
+                "a1": "Ja! All dekoding skjer i nettleseren din. Din JWT forlater aldri enheten din. Del imidlertid aldri JWT-er offentlig, da de kan inneholde sensitiv informasjon.",
+                "q2": "Kan dette verktøyet verifisere JWT-signaturer?",
+                "a2": "Dette verktøyet dekoder og viser JWT-komponenter, men verifiserer ikke signaturer, da det krever den hemmelige nøkkelen som aldri skal deles.",
+                "q3": "Hva er JWT-påstander?",
+                "a3": "Påstander er utsagn om en enhet (vanligvis brukeren) og tilleggsdata. Vanlige påstander inkluderer 'sub' (emne), 'exp' (utløp) og 'iat' (utstedt på)."
+            }
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn et JWT-token",
+            "error_invalid_format": "Ugyldig JWT-format. JWT skal ha 3 deler atskilt med prikker.",
+            "success_decode": "âœ“ JWT dekodet vellykket",
+            "error_decode": "✗ Feil ved dekoding av JWT:"
         }
     },
     "markdown-to-html-converter": {
         "meta": {
             "title": "Markdown to HTML Converter - Gratis online parser",
-            "h1": "Markdown til HTML Converter"
+            "description": "Konverter Markdown til HTML umiddelbart",
+            "h1": "Markdown til HTML Converter",
+            "subtitle": "Konverter Markdown til HTML umiddelbart"
         },
         "editor": {
             "btn_convert": "Konverter",
             "btn_copy": "Kopier HTML",
-            "btn_download": "Last ned"
+            "btn_download": "Last ned",
+            "btn_clear": "Klar",
+            "btn_example": "Eksempel",
+            "label_input": "Markdown-inngang",
+            "ph_input": "# Skriv inn Markdown her...",
+            "label_output": "HTML-utdata",
+            "ph_output": "HTML-utdata vises her...",
+            "label_preview": "Live forhåndsvisning",
+            "ph_preview": "Forhåndsvisning vises her..."
+        },
+        "content": {
+            "features": {
+                "instant": {
+                    "title": "Øyeblikkelig konvertering",
+                    "desc": "Konverter Markdown til HTML på millisekunder"
+                },
+                "preview": {
+                    "title": "Live forhåndsvisning",
+                    "desc": "Se HTML-koden din gjengitt i sanntid"
+                },
+                "export": {
+                    "title": "Kopier og last ned",
+                    "desc": "Kopier enkelt HTML eller last ned som en fil"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen registrering, ingen grenser, helt gratis"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All konvertering skjer i nettleseren din"
+                },
+                "mobile": {
+                    "title": "Mobilvennlig",
+                    "desc": "Fungerer perfekt på alle enheter"
+                }
+            },
+            "hero_title": "🚀 Gratis Markdown til HTML Converter",
+            "hero_subtitle": "Forvandle Markdown-dokumentene dine til ren, semantisk HTML umiddelbart. Perfekt for utviklere, forfattere og innholdsskapere.",
+            "what_title": "✨ Hva er Markdown til HTML-konvertering?",
+            "p1": "Markdown er et lett markeringsspråk som lar deg skrive formatert tekst ved å bruke ren tekstsyntaks. Konvertering av Markdown til HTML forvandler dine enkle, lesbare Markdown-dokumenter til riktig strukturert HTML-kode som kan brukes på nettsteder, blogger, dokumentasjonssider og nettapplikasjoner.",
+            "what_desc": "Vår gratis Markdown til HTML-konvertering bruker det kraftige Parsedown-biblioteket for å sikre nøyaktig, standardkompatibel HTML-utdata. Enten du skriver dokumentasjon, blogginnlegg, README-filer eller teknisk innhold, gjør verktøyet vårt konverteringsprosessen umiddelbar og enkel.",
+            "features_title": "💡 Nøkkelfunksjoner",
+            "uses_title": "🎯 Vanlige brukstilfeller",
+            "uses": {
+                "docs": {
+                    "title": "📚 Dokumentasjon",
+                    "desc": "Konverter README-filer og dokumenter til HTML"
+                },
+                "blog": {
+                    "title": "✍️ Blogginnlegg",
+                    "desc": "Skriv i Markdown, publiser i HTML"
+                },
+                "github": {
+                    "title": "💻 GitHub-prosjekter",
+                    "desc": "Gjør README.md-filer til HTML"
+                },
+                "email": {
+                    "title": "📧 E-postmaler",
+                    "desc": "Lag e-postinnhold i Markdown"
+                }
+            },
+            "pro_tip": {
+                "title": "💡 Pro tips",
+                "desc": "For best resultat, bruk standard Markdown-syntaks som definert av CommonMark. Konverteren vår støtter de fleste Markdown-smaker inkludert GitHub Flavored Markdown (GFM). Hvis du jobber med komplekse dokumenter, test små deler først for å sikre riktig konvertering."
+            },
+            "faq_title": "❓ Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er dette verktøyet gratis?",
+                "a1": "Ja! Vår Markdown til HTML-konverterer er 100 % gratis uten skjulte kostnader og ingen bruksgrenser.",
+                "q2": "Er innholdet mitt privat?",
+                "a2": "Absolutt! All konvertering skjer direkte i nettleseren din ved hjelp av JavaScript. Innholdet ditt forlater aldri enheten.",
+                "q3": "Hvilken syntaks støttes?",
+                "a3": "Konverteren vår støtter standard Markdown-syntaks inkludert overskrifter, fet, kursiv, lister, lenker, bilder, kodeblokker, tabeller og mer (GFM-kompatibel)."
+            }
+        },
+        "js": {
+            "error_empty": "Skriv inn litt Markdown-tekst",
+            "error_general": "Det oppstod en feil under konverteringen",
+            "error_no_copy": "Ingen HTML å kopiere. Vennligst konverter Markdown først.",
+            "success_copy": "HTML kopiert til utklippstavlen!",
+            "error_no_download": "Ingen HTML å laste ned. Vennligst konverter Markdown først.",
+            "example": "# Velkommen til Markdown\n\n## Dette er en underoverskrift\n\nDette er et avsnitt med **fet tekst** og *kursiv tekst*.\n\n### Funksjoner\n\n– Lett å skrive\n- Lett å lese\n- Konverterer til HTML\n\n### Kodeeksempel\n\n```javascript\nfunksjon hei() {\n    console.log(\"Hei, verden!\");\n}\n```\n\n> Dette er et blokksitat\n\n[Besøk nettstedet vårt](https://example.com)"
         }
     },
     "md5-generator": {
         "meta": {
             "title": "MD5 Hash Generator - Gratis online sikkerhetsverktøy",
-            "h1": "MD5 Hash Generator"
+            "description": "Generer MD5-hasher fra hvilken som helst tekst umiddelbart",
+            "h1": "MD5 Hash Generator",
+            "subtitle": "Generer MD5-hasher fra hvilken som helst tekst umiddelbart"
         },
         "editor": {
+            "label_input": "Skriv inn tekst",
+            "ph_input": "Skriv inn tekst til hash...",
             "btn_generate": "Generer MD5-hasj",
             "label_result": "MD5-hasj",
             "btn_copy": "Kopier"
+        },
+        "content": {
+            "hero_title": "MD5 Hash Generator",
+            "hero_subtitle": "Generer MD5-hasher fra hvilken som helst tekst umiddelbart",
+            "p1": "Generer MD5-hasher fra hvilken som helst tekst, passord eller datastreng umiddelbart med vår gratis online MD5-hashgenerator. MD5 (Message-Digest Algorithm 5) er en mye brukt kryptografisk hash-funksjon som produserer en 128-biters (32-tegn heksadesimal) hashverdi. Perfekt for verifisering av dataintegritet, generering av sjekksum og forståelse av hash-funksjoner. All behandling skjer i nettleseren din for fullstendig personvern.",
+            "what_title": "🔒 Hva er MD5?",
+            "what_desc": "MD5 er en kryptografisk hash-funksjon som tar inn en hvilken som helst lengde og produserer en fast 128-bits hash-verdi, typisk representert som et 32-tegns heksadesimalt tall. Den samme inngangen produserer alltid samme hash, men selv en liten endring i input skaper en helt annen hash.",
+            "features_title": "âœ... MD5 Fordeler",
+            "features": {
+                "fast": "<strong>Rask behandling:</strong> Ekstremt rask hashgenerering",
+                "fixed": "<strong>Fast lengde:</strong> Gir alltid 128-bits utdata",
+                "deterministic": "<strong>Deterministisk:</strong> Samme inndata = samme hash",
+                "support": "<strong>Bred støtte:</strong> Tilgjengelig på alle programmeringsspråk"
+            },
+            "uses_title": "📊 Vanlige brukstilfeller",
+            "uses": {
+                "verify": "<strong>Filbekreftelse:</strong> Sjekk filens integritet",
+                "checksum": "<strong>Sjekksummer:</strong> Bekreft nedlastinger",
+                "cache": "<strong>Buffernøkler:</strong> Generer unike identifikatorer",
+                "integrity": "<strong>Dataintegritet:</strong> Oppdag endringer"
+            },
+            "warning_title": "âš ï¸ Sikkerhetsadvarsel",
+            "warning_desc": "<strong>IKKE bruk MD5 til passordhashing eller sikkerhetskritiske applikasjoner!</strong> MD5 er kryptografisk ødelagt og sårbar for kollisjonsangrep. For passordhashing, bruk moderne algoritmer som bcrypt, Argon2 eller PBKDF2.",
+            "compare_title": "ðŸ”„ MD5 vs andre hasjfunksjoner",
+            "compare": {
+                "md5": {
+                    "title": "MD5",
+                    "desc1": "128-bits utgang",
+                    "desc2": "Rask, men usikker for kryptografi"
+                },
+                "sha1": {
+                    "title": "SHA-1",
+                    "desc1": "160-bits utgang",
+                    "desc2": "Også avviklet for sikkerhetsbruk"
+                },
+                "sha256": {
+                    "title": "SHA-256",
+                    "desc1": "256-bits utgang",
+                    "desc2": "Sikker og mye brukt i dag"
+                }
+            },
+            "faq_title": "â“ Vanlige spørsmål",
+            "faq": {
+                "q1": "Er MD5 sikker for passord?",
+                "a1": "Ingen! MD5 er kryptografisk ødelagt og bør aldri brukes til passordhashing. Bruk bcrypt, Argon2 eller PBKDF2 i stedet.",
+                "q2": "Kan jeg reversere en MD5-hash?",
+                "a2": "Nei, MD5 er en enveisfunksjon - du kan ikke reversere en hash for å få den originale inngangen. Angripere kan imidlertid bruke regnbuetabeller for å finne innspill.",
+                "q3": "Sendes dataene mine til en server?",
+                "a3": "Ingen! All MD5-hash-generering skjer utelukkende i nettleseren din ved å bruke JavaScript. Dataene dine forlater aldri enheten din."
+            }
+        },
+        "js": {
+            "error_empty": "Skriv inn litt tekst",
+            "btn_copied": "Kopiert!"
         }
     },
     "sql-to-json-converter": {
         "meta": {
             "title": "SQL til JSON Converter - Gratis online databaseverktøy",
-            "description": "Transform SQL INSERT statements into JSON arrays instantly with our free online tool. Fast, accurate, and secure.",
+            "description": "Transform SQL INSERT-setninger til JSON-matriser umiddelbart med vårt gratis onlineverktøy. Rask, nøyaktig og sikker.",
             "h1": "SQL til JSON-konvertering",
-            "subtitle": "Easily convert between SQL data and JSON objects"
+            "subtitle": "Konverter enkelt mellom SQL-data og JSON-objekter"
         },
         "editor": {
-            "btn_encode": "JSON to SQL Mode",
-            "btn_decode": "SQL to JSON Mode",
-            "label_table": "Table Name",
-            "ph_table": "Enter table name (e.g., users)",
-            "label_input_json": "JSON Input",
-            "ph_input_json": "Paste your JSON array here...",
-            "label_output_sql": "SQL Output",
-            "ph_output_sql": "Generated SQL will appear here...",
-            "label_input_sql": "SQL Input",
-            "label_output_json": "JSON Output",
-            "btn_convert_sql": "Generate SQL",
-            "btn_convert_json": "Generate JSON",
-            "btn_clear": "Clear",
-            "btn_copy": "Copy Output"
+            "btn_encode": "JSON til SQL-modus",
+            "btn_decode": "SQL til JSON-modus",
+            "label_table": "Tabellnavn",
+            "ph_table": "Skriv inn tabellnavn (f.eks. brukere)",
+            "label_input_json": "JSON-inngang",
+            "ph_input_json": "Lim inn JSON-arrayen din her...",
+            "label_output_sql": "SQL-utgang",
+            "ph_output_sql": "Generert SQL vises her...",
+            "label_input_sql": "SQL-inndata",
+            "label_output_json": "JSON-utgang",
+            "btn_convert_sql": "Generer SQL",
+            "btn_convert_json": "Generer JSON",
+            "btn_clear": "Klar",
+            "btn_copy": "Kopier utgang"
         },
         "content": {
-            "hero_title": "SQL to JSON Converter",
-            "hero_subtitle": "Bidirectional conversion for modern developers",
-            "p1": "Modern applications thrive on JSON, but databases still speak SQL. Our bidirectional converter bridges this gap effortlessly. Whether you need to turn database exports into JSON for your API, or JSON data into SQL seeding scripts, this tool provides a fast, secure, and accurate solution.",
-            "integration_title": "Seamless Integration",
-            "integration_desc": "Easily move data between your relational database and your web application. Our parser handles standard SQL INSERT statements and converts them into structured JSON objects, preserving data types and values.",
-            "features_title": "Key Features",
+            "hero_title": "SQL til JSON-konvertering",
+            "hero_subtitle": "Toveis konvertering for moderne utviklere",
+            "p1": "Moderne applikasjoner trives med JSON, men databaser snakker fortsatt SQL. Vår toveis-omformer bygger bro over dette gapet uten problemer. Enten du trenger å gjøre databaseeksport til JSON for API-en din, eller JSON-data til SQL-seed-skript, gir dette verktøyet en rask, sikker og nøyaktig løsning.",
+            "integration_title": "Sømløs integrasjon",
+            "integration_desc": "Flytt enkelt data mellom relasjonsdatabasen og nettapplikasjonen din. Parseren vår håndterer standard SQL INSERT-setninger og konverterer dem til strukturerte JSON-objekter, og bevarer datatyper og verdier.",
+            "features_title": "Nøkkelfunksjoner",
             "features": {
                 "instant": {
-                    "title": "Instant Results",
-                    "desc": "Conversions happen in real-time as you click."
+                    "title": "Øyeblikkelige resultater",
+                    "desc": "Konverteringer skjer i sanntid mens du klikker."
                 },
                 "bidirectional": {
-                    "title": "Dual Mode",
-                    "desc": "Switch between SQL-to-JSON and JSON-to-SQL modes."
+                    "title": "Dobbel modus",
+                    "desc": "Bytt mellom SQL-til-JSON- og JSON-til-SQL-moduser."
                 },
                 "security": {
-                    "title": "Secure Conversion",
-                    "desc": "Processing is 100% client-side for maximum privacy."
+                    "title": "Sikker konvertering",
+                    "desc": "Behandlingen er 100 % klientside for maksimalt personvern."
                 },
                 "custom": {
-                    "title": "Clean Formatting",
-                    "desc": "Output is professionally formatted and ready to use."
+                    "title": "Ren formatering",
+                    "desc": "Utdata er profesjonelt formatert og klar til bruk."
                 },
                 "types": {
-                    "title": "Type Awareness",
-                    "desc": "Correctly handles nulls, numbers, and strings."
+                    "title": "Typebevissthet",
+                    "desc": "Håndterer null, tall og strenger på riktig måte."
                 },
                 "free": {
-                    "title": "Totally Free",
-                    "desc": "No subscription or usage limits."
+                    "title": "Helt gratis",
+                    "desc": "Ingen abonnement eller bruksgrenser."
                 }
             },
-            "uses_title": "Common Use Cases",
+            "uses_title": "Vanlige brukstilfeller",
             "uses": {
                 "seeding": {
-                    "title": "Database Seeding",
-                    "desc": "Quickly generate SQL scripts to populate your dev environment."
+                    "title": "Database seeding",
+                    "desc": "Generer raskt SQL-skript for å fylle ut utviklermiljøet ditt."
                 },
                 "export": {
-                    "title": "Data Exporting",
-                    "desc": "Convert SQL query results into JSON for analysis."
+                    "title": "Dataeksport",
+                    "desc": "Konverter SQL-spørringsresultater til JSON for analyse."
                 },
                 "migration": {
-                    "title": "API Migration",
-                    "desc": "Prepare legacy database data for use in modern REST APIs."
+                    "title": "API-migrering",
+                    "desc": "Forbered eldre databasedata for bruk i moderne REST APIer."
                 },
                 "testing": {
-                    "title": "Mock Data",
-                    "desc": "Create JSON mock data from existing SQL tables."
+                    "title": "Hånte data",
+                    "desc": "Lag JSON mock-data fra eksisterende SQL-tabeller."
                 },
                 "docs": {
-                    "title": "Documentation",
-                    "desc": "Include JSON examples of your database structure in docs."
+                    "title": "Dokumentasjon",
+                    "desc": "Inkluder JSON-eksempler på databasestrukturen din i dokumenter."
                 },
                 "prototype": {
-                    "title": "Rapid Prototyping",
-                    "desc": "Move data quickly between states during development."
+                    "title": "Rask prototyping",
+                    "desc": "Flytt data raskt mellom stater under utvikling."
                 }
             },
-            "how_title": "How to Use",
+            "how_title": "Hvordan bruke",
             "how_steps": {
                 "1": {
-                    "title": "Select Mode",
-                    "desc": "Choose between JSON to SQL or SQL to JSON using the buttons."
+                    "title": "Velg Modus",
+                    "desc": "Velg mellom JSON til SQL eller SQL til JSON ved å bruke knappene."
                 },
                 "2": {
-                    "title": "Input Data",
-                    "desc": "Paste your source code into the left editor area."
+                    "title": "Inndata",
+                    "desc": "Lim inn kildekoden i venstre redigeringsområde."
                 },
                 "3": {
-                    "title": "Set Table Name",
-                    "desc": "If converting to SQL, specify the target database table."
+                    "title": "Sett tabellnavn",
+                    "desc": "Hvis du konverterer til SQL, spesifiser måldatabasetabellen."
                 },
                 "4": {
-                    "title": "Generate",
-                    "desc": "Click 'Generate' to see the transformation instantly."
+                    "title": "Generere",
+                    "desc": "Klikk \"Generer\" for å se transformasjonen umiddelbart."
                 },
                 "5": {
-                    "title": "Copy Result",
-                    "desc": "Use the 'Copy' button to grab your output."
+                    "title": "Kopier resultat",
+                    "desc": "Bruk 'Kopier'-knappen for å hente utdataene dine."
                 }
             },
-            "samples_title": "Conversion Samples",
+            "samples_title": "Konverteringsprøver",
             "samples": [
                 {
                     "title": "SQL Insert to JSON",
@@ -376,103 +1869,698 @@
                     "desc": "[{\"id\": 1}] → INSERT INTO table (id) VALUES (1);"
                 }
             ],
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Ofte stilte spørsmål",
             "faq": {
-                "q1": "What SQL statements are supported?",
-                "a1": "Currently, the tool supports standard INSERT INTO statements with defined column names.",
-                "q2": "Is my data safe?",
-                "a2": "Yes, we never send your data to our server. All logic runs in your browser.",
-                "q3": "Can I convert multiple rows?",
-                "a3": "Yes, the tool handles multi-line SQL or large JSON arrays efficiently.",
-                "q4": "Does it handle special characters?",
-                "a4": "Yes, it correctly escapes single quotes and handles basic special characters."
+                "q1": "Hvilke SQL-setninger støttes?",
+                "a1": "For øyeblikket støtter verktøyet standard INSERT INTO-setninger med definerte kolonnenavn.",
+                "q2": "Er dataene mine trygge?",
+                "a2": "Ja, vi sender aldri dataene dine til serveren vår. All logikk kjører i nettleseren din.",
+                "q3": "Kan jeg konvertere flere rader?",
+                "a3": "Ja, verktøyet håndterer multi-line SQL eller store JSON-matriser effektivt.",
+                "q4": "Klarer den spesialtegn?",
+                "a4": "Ja, den unnslipper enkelt anførselstegn og håndterer grunnleggende spesialtegn."
             }
         },
         "js": {
-            "error_empty": "Please enter some data to process",
-            "placeholder_table_name": "users",
-            "error_general": "Conversion error: ",
-            "error_invalid_array": "Error: Input must be a JSON array of objects.",
-            "error_empty_array": "Error: JSON array is empty.",
-            "success_sql": "✓ SQL generated successfully!",
-            "error_no_statements": "No valid SQL INSERT statements found.",
-            "success_json": "✓ JSON generated successfully!",
-            "error_no_copy": "No content to copy.",
-            "success_copy": "✓ Output copied to clipboard!"
+            "error_empty": "Vennligst skriv inn noen data for å behandle",
+            "placeholder_table_name": "brukere",
+            "error_general": "Konverteringsfeil:",
+            "error_invalid_array": "Feil: Inndata må være en JSON-gruppe med objekter.",
+            "error_empty_array": "Feil: JSON-matrisen er tom.",
+            "success_sql": "✓ SQL generert vellykket!",
+            "error_no_statements": "Fant ingen gyldige SQL INSERT-setninger.",
+            "success_json": "✓ JSON generert vellykket!",
+            "error_no_copy": "Ikke noe innhold å kopiere.",
+            "success_copy": "✓ Utdata kopiert til utklippstavlen!"
         }
     },
     "unicode-encoder-decoder": {
         "meta": {
             "title": "Unicode Encoder & Decoder - Gratis online tekstverktøy",
-            "h1": "Unicode-koder og -dekoder"
+            "description": "Kod og dekod Unicode-escape-sekvenser for JavaScript og JSON med vårt gratisverktøy.",
+            "h1": "Unicode-koder og -dekoder",
+            "subtitle": "Kod og dekod Unicode-escape-sekvenser for JavaScript og JSON"
         },
         "editor": {
             "btn_encode": "Kod Unicode",
             "btn_decode": "Dekod Unicode",
-            "btn_copy": "Kopier"
+            "label_input_encode": "Skriv inn tekst som skal kodes",
+            "ph_input": "Hei ä¸–ç•Œ",
+            "btn_process_encode": "Kode Unicode",
+            "btn_clear": "Klar",
+            "btn_copy": "Kopier",
+            "label_output_encoded": "Kodet Unicode",
+            "ph_output": "Behandlet Unicode vises her...",
+            "label_input_decode": "Skriv inn Unicode for å dekode",
+            "label_output_decoded": "Dekodet tekst",
+            "btn_process_decode": "Dekode Unicode"
+        },
+        "content": {
+            "p1": "Vårt gratis Unicode Encoder & Decoder-verktøy hjelper deg med å kode tekst inn i Unicode-escape-sekvenser (f.eks. \\u0041) for sikker bruk i JavaScript, JSON og andre programmeringskontekster, eller dekode dem tilbake til lesbar tekst. Perfekt for utviklere, dataanalytikere og alle som har å gjøre med internasjonale tegnsett. 100 % gratis behandling på klientsiden sikrer at dataene dine forblir private.",
+            "what_title": "Hva er Unicode-koding?",
+            "what_desc": "Unicode-koding konverterer tegn til deres tilsvarende Unicode-kodepunkter, ofte representert som escape-sekvenser som \\uXXXX. Dette sikrer at tekst som inneholder spesialtegn, emojier eller ikke-latinske skript kan representeres trygt i miljøer som vanligvis bare støtter ASCII, for eksempel kildekodefiler eller JSON-data.",
+            "features_title": "Funksjoner",
+            "features": {
+                "instant": {
+                    "title": "Øyeblikkelig konvertering",
+                    "desc": "Kod eller dekod Unicode i millisekunder"
+                },
+                "bidirectional": {
+                    "title": "Toveis",
+                    "desc": "Kod til Unicode-format eller dekod tilbake til originalen"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All behandling skjer i nettleseren din"
+                },
+                "copy": {
+                    "title": "Ett-klikks Kopier",
+                    "desc": "Kopier kodet/dekodet tekst umiddelbart"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen grenser, ingen registrering nødvendig"
+                },
+                "universal": {
+                    "title": "Universell støtte",
+                    "desc": "Fungerer med alle Unicode-tegn og skript"
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "programming": {
+                    "title": "Programmering",
+                    "desc": "Bygg inn spesialtegn i JavaScript eller Java-kildekode trygt"
+                },
+                "data": {
+                    "title": "Dataserialisering",
+                    "desc": "Sørg for sikker overføring av ikke-ASCII-tegn i JSON"
+                },
+                "international": {
+                    "title": "Internasjonalisering",
+                    "desc": "Feilsøk og vis tekst på forskjellige språk og skript"
+                },
+                "security": {
+                    "title": "Sikkerhet",
+                    "desc": "Analyser obfuskert kode eller data som inneholder Unicode-escapes"
+                }
+            },
+            "how_to_title": "Hvordan bruke",
+            "how_to": {
+                "step1": {
+                    "title": "Velg Modus",
+                    "desc": "Velg \"Encode Unicode\" eller \"Decode Unicode\" basert på ditt behov"
+                },
+                "step2": {
+                    "title": "Skriv inn tekst",
+                    "desc": "Lim inn teksten eller Unicode-escapes i inndatafeltet"
+                },
+                "step3": {
+                    "title": "Behandle",
+                    "desc": "Klikk på kode- eller dekodingsknappen"
+                },
+                "step4": {
+                    "title": "Kopier resultat",
+                    "desc": "Klikk \"Kopier\" for å kopiere den behandlede teksten til utklippstavlen"
+                },
+                "step5": {
+                    "title": "Bruk hvor som helst",
+                    "desc": "Lim inn resultatet i koden eller applikasjonen din"
+                }
+            },
+            "examples_title": "Unicode-eksempler",
+            "examples": {
+                "simple": {
+                    "title": "Enkel/ASCII:",
+                    "desc": "Original: \"A\" â†’ Kodet: \"\\u0041\""
+                },
+                "special": {
+                    "title": "Spesialtegn:",
+                    "desc": "Original: «Â©» â†’ Kodet: «\\u00A9»"
+                },
+                "emoji": {
+                    "title": "Emojis/Multi-byte:",
+                    "desc": "Original: \"ðŸŒŸ\" â†’ Kodet: \"\\uD83C\\uDF1F\" (surrogatpar) eller \"\\u2B50\" avhengig av representasjon"
+                }
+            },
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Hvorfor bruke Unicode-escape-sekvenser?",
+                "a1": "De lar deg representere et hvilket som helst tegn med kun ASCII-tegn, noe som sikrer kompatibilitet på tvers av forskjellige systemer, kodinger og filoverføringer som kanskje ikke håndterer rå Unicode riktig.",
+                "q2": "Hvilket format brukes?",
+                "a2": "Dette verktøyet bruker vanligvis JavaScript/JSON-stilen \\uXXXX-format for Basic Multilingual Plane-tegn.",
+                "q3": "Er dette forskjellig fra URL-koding?",
+                "a3": "Ja. URL-koding bruker %XX hex-verdier hovedsakelig for URL-er. Unicode-escape bruker \\uXXXX og brukes i strenger i programmeringsspråk som JavaScript, Java og Python.",
+                "q4": "Er dataene mine sikre?",
+                "a4": "Ja! All koding og dekoding skjer utelukkende i nettleseren din ved bruk av JavaScript. Teksten din forlater aldri enheten."
+            }
+        },
+        "js": {
+            "error_empty": "Skriv inn tekst for å behandle",
+            "success_encode": "âœ“ Unicode kodet vellykket",
+            "success_decode": "âœ“ Unicode dekodet vellykket",
+            "error_process": "✗ Feil ved behandling av Unicode:",
+            "error_no_copy": "Ingen utdata å kopiere",
+            "success_copy": "âœ“ Kopiert til utklippstavlen"
         }
     },
     "url-encoder-decoder": {
         "meta": {
             "title": "URL Encoder & Decoder - Gratis online prosentverktøy",
-            "h1": "URL-koder og dekoder"
+            "description": "Kod og dekod URL-er for sikker nettoverføring med vårt gratis onlineverktøy.",
+            "h1": "URL-koder og dekoder",
+            "subtitle": "Kod og dekod URL-er for sikker nettoverføring"
         },
         "editor": {
             "btn_encode": "Kod URL",
             "btn_decode": "Dekod URL",
-            "btn_copy": "Kopier"
+            "label_input_encode": "Skriv inn URL for å kode",
+            "ph_input": "https://example.com/search?name=John Doe&age=30",
+            "btn_process_encode": "Kode URL",
+            "btn_clear": "Klar",
+            "btn_copy": "Kopier",
+            "label_output_encoded": "Kodet URL",
+            "ph_output": "Behandlet URL vil vises her...",
+            "label_input_decode": "Skriv inn URL for å dekode",
+            "label_output_decoded": "Dekodet URL",
+            "btn_process_decode": "Dekod URL"
+        },
+        "content": {
+            "p1": "Vårt gratis URL Encoder & Decoder-verktøy hjelper deg med å kode spesialtegn i URL-er for sikker overføring over internett, eller dekode kodede URL-er tilbake til det opprinnelige formatet. Perfekt for utviklere, SEO-fagfolk og alle som jobber med nettadresser. 100 % gratis behandling på klientsiden sikrer at dataene dine forblir private.",
+            "what_title": "Hva er URL-koding?",
+            "what_desc": "URL-koding (også kalt prosentkoding) konverterer spesialtegn i URL-er til et format som kan overføres over internett. Mellomrom blir %20, spesialtegn som & blir %26, og så videre. Dette sikrer at URL-er fungerer riktig på tvers av alle nettlesere og systemer.",
+            "features_title": "Funksjoner",
+            "features": {
+                "instant": {
+                    "title": "Øyeblikkelig konvertering",
+                    "desc": "Kode eller dekode URL-er i millisekunder"
+                },
+                "bidirectional": {
+                    "title": "Toveis",
+                    "desc": "Kod til URL-format eller dekod tilbake til originalen"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All behandling skjer i nettleseren din"
+                },
+                "copy": {
+                    "title": "Ett-klikks Kopier",
+                    "desc": "Kopier kodede/dekodede URL-er umiddelbart"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen grenser, ingen registrering nødvendig"
+                },
+                "universal": {
+                    "title": "Universell støtte",
+                    "desc": "Fungerer med alle URL-formater og tegn"
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "query": {
+                    "title": "Spørringsparametere",
+                    "desc": "Kod spesialtegn i URL-spørringsstrenger for API-kall og nettforespørsler"
+                },
+                "analytics": {
+                    "title": "Analytics-sporing",
+                    "desc": "Kode UTM-parametere og sporings-URLer for markedsføringskampanjer"
+                },
+                "auth": {
+                    "title": "Autentisering",
+                    "desc": "Kod inn legitimasjon og tokens i OAuth- og API-autentisering"
+                },
+                "i18n": {
+                    "title": "Internasjonalisering",
+                    "desc": "Kod ikke-ASCII-tegn i URL-er for global kompatibilitet"
+                },
+                "seo": {
+                    "title": "SEO og omdirigeringer",
+                    "desc": "Lag riktig kodede omdirigerings-URLer og kanoniske lenker"
+                },
+                "email": {
+                    "title": "E-postkoblinger",
+                    "desc": "Kod inn mailto-lenker med emnelinjer og hovedinnhold"
+                }
+            },
+            "how_to_title": "Hvordan bruke",
+            "how_to": {
+                "step1": {
+                    "title": "Velg Modus",
+                    "desc": "Velg \"Encode URL\" eller \"Decode URL\" basert på ditt behov"
+                },
+                "step2": {
+                    "title": "Skriv inn URL",
+                    "desc": "Lim inn URL-en eller teksten i inndatafeltet"
+                },
+                "step3": {
+                    "title": "Behandle",
+                    "desc": "Klikk på \"Encode URL\" eller \"Decode URL\"-knappen"
+                },
+                "step4": {
+                    "title": "Kopier resultat",
+                    "desc": "Klikk \"Kopier\" for å kopiere den behandlede URL-en til utklippstavlen"
+                },
+                "step5": {
+                    "title": "Bruk hvor som helst",
+                    "desc": "Lim inn den kodede/dekodede URL-adressen i applikasjonen"
+                }
+            },
+            "examples_title": "Eksempler på URL-koding",
+            "examples": {
+                "space": {
+                    "title": "Space Character:",
+                    "desc": "Original: \"Hello World\" â†’ Kodet: \"Hello%20World\""
+                },
+                "special": {
+                    "title": "Spesialtegn:",
+                    "desc": "Original: \"name=John&age=30\" â†’ Kodet: \"name%3DJohn%26age%3D30\""
+                },
+                "full": {
+                    "title": "Full URL:",
+                    "desc": "Original: \"https://example.com/search?q=hello world\" â†’ Kodet: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
+                }
+            },
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Når bør jeg kode nettadresser?",
+                "a1": "Kode URL-er når du sender dem som søkeparametere, lagrer dem i databaser, eller når de inneholder spesialtegn som mellomrom, &, =, ? eller ikke-ASCII-tegn.",
+                "q2": "Hvilke tegn trenger koding?",
+                "a2": "Reserverte tegn som : / ? # [ ] @ ! $ & ' ( ) * + , ; = og usikre tegn som mellomrom, <, >, \", {, }, |, \\, ^, ` og ikke-ASCII-tegn må kodes.",
+                "q3": "Er URL-koding det samme som Base64?",
+                "a3": "Nei. URL-koding konverterer spesifikke tegn til %XX-format, mens Base64 koder hele data til et annet tegnsett. De tjener forskjellige formål.",
+                "q4": "Kan jeg kode hele nettadresser?",
+                "a4": "Ja, men vanligvis koder du bare søkestrengdelen. Koding av hele nettadressen inkludert protokoll (https://) er mindre vanlig og kan forårsake problemer.",
+                "q5": "Er dataene mine sikre?",
+                "a5": "Ja! All koding og dekoding skjer utelukkende i nettleseren din ved bruk av JavaScript. URL-ene dine forlater aldri enheten eller blir sendt til noen server."
+            }
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn en URL for å behandle",
+            "success_encode": "âœ“ URL-kodet vellykket",
+            "success_decode": "âœ“ URL dekodet vellykket",
+            "error_process": "✗ Feil ved behandling av URL:",
+            "error_no_copy": "Ingen utdata å kopiere",
+            "success_copy": "âœ“ Kopiert til utklippstavlen"
         }
     },
     "uuid-generator": {
         "meta": {
             "title": "Gratis UUID Generator - Online versjon 4 GUID Tool",
-            "h1": "UUID-generator"
+            "description": "Gratis online uuid-generatorverktøy. Rask, sikker og enkel å bruke.",
+            "h1": "UUID-generator",
+            "subtitle": "Den beste uuid-generatoren for utviklere og IT-fagfolk"
         },
         "editor": {
             "label_quantity": "Antall",
+            "label_version": "Versjon",
+            "opt_v4": "Versjon 4 (tilfeldig)",
             "btn_generate": "Generer UUID-er",
-            "btn_copy": "Kopier"
+            "btn_copy": "Kopier",
+            "label_output": "Genererte UUID-er"
+        },
+        "content": {
+            "about_title": "Om UUID-er (versjon 4)",
+            "about_desc": "En UUID (Universally Unique Identifier) ​​er et 128-bits tall som brukes til å identifisere informasjon i datasystemer. Versjon 4 UUID-er genereres ved hjelp av tilfeldige eller pseudo-tilfeldige tall. Sannsynligheten for duplisering er praktisk talt null."
+        },
+        "js": {
+            "success_generated": "Generert: telle UUIDer!",
+            "success_copy": "Kopiert til utklippstavlen!"
         }
     },
     "xml-formatter": {
         "meta": {
             "title": "XML Formatter Online - Gratis XML Pretifier-verktøy",
-            "h1": "XML-formater"
+            "description": "Formater, forskjønn og forminsk XML-data med vårt gratis nettbaserte verktøy.",
+            "h1": "XML-formater",
+            "subtitle": "Formater, forskjønn og minifiser XML-data"
         },
         "editor": {
+            "label_input": "XML-inndata",
+            "ph_input": "<root><child>verdi</child></root>",
             "btn_format": "Formater / Beautify",
             "btn_minify": "Minifiser",
             "btn_copy": "Kopier"
+        },
+        "js": {
+            "success_format": "XML-formatert vellykket!",
+            "error_invalid": "Ugyldig XML",
+            "success_minify": "XML forminsket!",
+            "success_copy": "Kopiert til utklippstavlen!"
         }
     },
     "xml-to-csv": {
         "meta": {
             "title": "XML til CSV Converter - Gratis Online Data Extractor",
-            "h1": "XML til CSV-konvertering"
+            "description": "Gratis online xml til csv-konverteringsverktøy. Rask, sikker og enkel å bruke.",
+            "h1": "XML til CSV-konvertering",
+            "subtitle": "Den beste xml til csv-konvertereren for utviklere og IT-fagfolk"
         },
         "editor": {
             "btn_convert": "Konverter til CSV",
-            "btn_copy": "Kopier"
+            "btn_clear": "Klar",
+            "btn_copy": "Kopier",
+            "btn_example": "Eksempel",
+            "label_input": "Skriv inn XML",
+            "ph_input": "<data><row><name>John</name><age>30</age></row></data>",
+            "label_output": "CSV-utgang",
+            "ph_output": "Konvertert CSV vises her..."
+        },
+        "content": {
+            "p1": "Vår gratis XML til CSV-konvertering transformerer strukturerte XML-data til kommadelte verdier. Perfekt for å importere XML-data til Excel, Google Sheets, databaser og dataanalyseverktøy. Konverter komplekse XML-strukturer til enkle, tabellformede CSV-format på sekunder.",
+            "what_title": "Hva er XML til CSV-konvertering?",
+            "what_desc": "XML til CSV-konvertering transformerer strukturerte eXtensible Markup Language-data til kommadelte verdier. Mens XML er flott for komplekse datastrukturer og APIer, er CSV enklere og universelt støttet av regnearkapplikasjoner, noe som gjør den ideell for dataanalyse, rapportering og import/eksportoperasjoner.",
+            "features_title": "Funksjoner",
+            "features": {
+                "fast": {
+                    "title": "Lynrask",
+                    "desc": "Konverter XML til CSV umiddelbart med optimalisert parsing"
+                },
+                "secure": {
+                    "title": "100 % sikker",
+                    "desc": "All behandling skjer lokalt – dataene dine forblir private"
+                },
+                "copy": {
+                    "title": "Rask kopi",
+                    "desc": "Kopier CSV-utdata til utklippstavlen med ett klikk"
+                },
+                "smart": {
+                    "title": "Smart parsing",
+                    "desc": "Trekker automatisk ut data fra XML-radelementer"
+                },
+                "free": {
+                    "title": "Helt gratis",
+                    "desc": "Ingen grenser, ingen registrering, gratis for alltid"
+                },
+                "excel": {
+                    "title": "Excel klar",
+                    "desc": "Utdata fungerer perfekt i Excel og Google Sheets"
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "analysis": {
+                    "title": "Dataanalyse",
+                    "desc": "Konverter XML-rapporter og dataeksporter til CSV for analyse i Excel, Google Sheets eller BI-verktøy."
+                },
+                "migration": {
+                    "title": "Systemmigrering",
+                    "desc": "Transformer XML-data fra eldre systemer til CSV for import til moderne databaser og applikasjoner."
+                },
+                "reporting": {
+                    "title": "Rapportering",
+                    "desc": "Konverter XML API-svar til CSV for å lage rapporter og dashbord."
+                },
+                "db": {
+                    "title": "Database import",
+                    "desc": "Transformer XML-eksporter til CSV for masseimport til SQL-databaser."
+                },
+                "email": {
+                    "title": "E-postlister",
+                    "desc": "Konverter XML-kontaktdata til CSV for e-postmarkedsføringsplattformer."
+                },
+                "cleaning": {
+                    "title": "Datarensing",
+                    "desc": "Transformer XML til CSV for enklere datarensing og manipulering i regneark."
+                }
+            },
+            "how_to_title": "Hvordan konvertere XML til CSV",
+            "how_to": {
+                "step1": {
+                    "title": "Lim inn XML-dataene dine",
+                    "desc": "Kopier XML-data fra kilden og lim dem inn i det venstre inndatafeltet."
+                },
+                "step2": {
+                    "title": "Klikk Konverter",
+                    "desc": "Trykk \"Konverter til CSV\" for å transformere XML-en til CSV-format."
+                },
+                "step3": {
+                    "title": "Kopier og bruk",
+                    "desc": "CSV-utgangen vises til høyre. Klikk \"Kopier\" for å lime den inn i Excel eller et hvilket som helst program."
+                }
+            },
+            "example_title": "Konverteringseksempel",
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er denne omformeren gratis?",
+                "a1": "Ja, vår XML til CSV-konvertering er helt gratis å bruke.",
+                "q2": "Er dataene mine trygge?",
+                "a2": "Ja, all behandling skjer i nettleseren din. Dine data blir aldri sendt til våre servere.",
+                "q3": "Støtter den store XML-filer?",
+                "a3": "Ja, den kan håndtere store XML-filer, selv om svært store filer kan ta et øyeblikk å behandle.",
+                "q4": "Hvordan håndteres attributter?",
+                "a4": "For øyeblikket fokuserer verktøyet på tag-innhold. Attributter kan inkluderes i fremtidige oppdateringer."
+            },
+            "best_practices_title": "Beste praksis",
+            "best_practices": [
+                {
+                    "title": "Well-formed XML",
+                    "desc": "Ensure your XML is well-formed and contains repeating <row> elements for best results."
+                },
+                {
+                    "title": "Browser Side",
+                    "desc": "Since it runs in your browser, your data stays private and secure."
+                },
+                {
+                    "title": "Backup Data",
+                    "desc": "Always keep a backup of your original XML data before conversion."
+                }
+            ]
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn XML-data",
+            "error_no_row": "Ingen <row>-elementer funnet i XML",
+            "success_convert": "✓ XML konvertert til CSV vellykket",
+            "error_process": "✗ Feil:",
+            "error_no_copy": "Ingen utdata å kopiere",
+            "success_copy": "✓ Kopiert til utklippstavlen"
         }
     },
     "xml-to-json": {
         "meta": {
             "title": "XML til JSON Converter - Gratis online parserverktøy",
+            "description": "Gratis online xml til json-konverteringsverktøy. Rask, sikker og enkel å bruke.",
+            "subtitle": "Den beste xml til json-konvertereren for utviklere og IT-fagfolk",
             "h1": "XML til JSON-konvertering"
         },
         "editor": {
             "btn_convert": "Konverter til JSON",
-            "btn_copy": "Kopier JSON"
+            "btn_copy": "Kopier JSON",
+            "btn_download": "Last ned",
+            "btn_example": "Last eksempel",
+            "btn_clear": "Klar",
+            "label_input": "XML-inndata",
+            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Din XML her...</item>\n</root>",
+            "label_output": "JSON-utgang",
+            "ph_output": "Konvertert JSON vises her..."
+        },
+        "content": {
+            "h2": "Gratis XML til JSON Converter Online",
+            "p1": "Transform XML-data til JSON-format umiddelbart med vår kraftige, gratis online XML til JSON-konverterer. Perfekt for utviklere, dataanalytikere og alle som jobber med API-integrasjoner, datamigrering eller moderne nettapplikasjoner.",
+            "p2": "XML (eXtensible Markup Language) har vært en standard for datautveksling i flere tiår, men moderne applikasjoner foretrekker i økende grad JSON (JavaScript Object Notation) for sin enkelhet og innebygde JavaScript-støtte. Konverteren vår bygger bro over dette gapet, slik at du sømløst kan transformere XML-dokumenter til rent, lesbart JSON-format.",
+            "p3": "Enten du migrerer eldre systemer, integrerer med RESTful APIer eller bare trenger å konvertere konfigurasjonsfiler, håndterer verktøyet vårt alt med presisjon og hastighet. Ingen installasjon nødvendig, ingen registrering nødvendig – bare lim inn XML-en og få umiddelbare resultater.",
+            "features_title": "Kraftige funksjoner",
+            "features": {
+                "fast": {
+                    "title": "Lynrask",
+                    "desc": "Øyeblikkelig konvertering med sanntidsbehandling. Ingen venting, ingen forsinkelser."
+                },
+                "secure": {
+                    "title": "100 % sikker",
+                    "desc": "All konvertering skjer i nettleseren din. Dataene dine forlater aldri enheten din."
+                },
+                "attributes": {
+                    "title": "Attributthåndtering",
+                    "desc": "Bevarer XML-attributter og konverterer dem riktig til JSON-struktur."
+                },
+                "nested": {
+                    "title": "Nestet struktur",
+                    "desc": "Opprettholder komplekse hierarkiske datastrukturer under konvertering."
+                },
+                "pretty": {
+                    "title": "Pen formatering",
+                    "desc": "Ren, innrykket JSON-utgang som er lett å lese og forstå."
+                },
+                "validation": {
+                    "title": "Feilvalidering",
+                    "desc": "Oppdager og rapporterer ugyldig XML-syntaks med nyttige feilmeldinger."
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "api": {
+                    "title": "API-integrasjon",
+                    "desc": "Konverter XML API-svar til JSON for moderne nettapplikasjoner og RESTful-tjenester."
+                },
+                "migration": {
+                    "title": "Datamigrering",
+                    "desc": "Transformer XML-databaser og eksporter til JSON for NoSQL-systemer som MongoDB."
+                },
+                "config": {
+                    "title": "Konfigurasjonsfiler",
+                    "desc": "Konverter XML-konfigurasjonsfiler til JSON for moderne applikasjoner og byggeverktøy."
+                },
+                "soap": {
+                    "title": "SÅPE å HVILE",
+                    "desc": "Transform SOAP XML-svar til JSON for RESTful-tjenester."
+                },
+                "rss": {
+                    "title": "RSS-feeder",
+                    "desc": "Konverter RSS- og Atom-feeder (XML-format) til JSON for parsing i JS-apper."
+                },
+                "analysis": {
+                    "title": "Dataanalyse",
+                    "desc": "Konverter XML-dataeksport til JSON for enklere analyse med JavaScript-biblioteker."
+                }
+            },
+            "how_to_title": "Hvordan XML til JSON-konvertering fungerer",
+            "how_to_desc": "Vår XML til JSON-konvertering bruker avanserte parsingalgoritmer for nøyaktig å transformere XML-dokumenter til JSON-format.",
+            "steps": [
+                {
+                    "title": "Paste Your XML",
+                    "desc": "Copy and paste your XML code into the input field above."
+                },
+                {
+                    "title": "Click Convert",
+                    "desc": "Press the \"Convert to JSON\" button to start the transformation."
+                },
+                {
+                    "title": "Copy and Use",
+                    "desc": "Review the beautifully formatted JSON results and use the copy button for easy export."
+                }
+            ],
+            "example_title": "Eksempel konvertering",
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er denne omformeren gratis å bruke?",
+                "a1": "Ja, vår XML til JSON-konverterer er 100 % gratis uten skjulte kostnader eller registrering nødvendig.",
+                "q2": "Er dataene mine sikre?",
+                "a2": "Absolutt. All behandling skjer lokalt i nettleseren din, noe som betyr at dataene dine aldri forlater enheten.",
+                "q3": "Støtter den nestede strukturer?",
+                "a3": "Ja, den håndterer komplekse nestede XML-elementer korrekt og bevarer deres hierarkiske relasjoner.",
+                "q4": "Hvordan håndteres attributter?",
+                "a4": "XML-attributter konverteres til JSON-egenskaper, vanligvis prefiks med et understrek for klarhet."
+            },
+            "tips_title": "Tips og beste fremgangsmåter",
+            "tips": [
+                {
+                    "title": "Validate Your XML",
+                    "desc": "Ensure your XML is well-formed before conversion to avoid processing errors."
+                },
+                {
+                    "title": "Use Pretty Printing",
+                    "desc": "Our tool automatically formats the JSON output for maximum readability."
+                },
+                {
+                    "title": "Browser Privacy",
+                    "desc": "Since it runs client-side, you can even use it offline once the page is loaded."
+                }
+            ]
+        },
+        "js": {
+            "error_empty": "Vennligst skriv inn noen XML-data som skal konverteres.",
+            "error_syntax": "\\n\\nKontroller XML-syntaksen.",
+            "error_process": "Feil ved konvertering av XML:",
+            "error_no_copy": "Ingen JSON å kopiere. Vennligst konverter XML først.",
+            "success_copy": "Kopiert!",
+            "error_no_download": "Ingen JSON å laste ned. Konverter XML først."
         }
     },
     "yaml-to-json": {
         "meta": {
             "title": "YAML til JSON Converter - Gratis online dataverktøy",
-            "h1": "YAML til JSON-konverterer"
+            "description": "Konverter YAML-konfigurasjonsfiler til JSON-format umiddelbart med vår gratis online YAML til JSON-konverterer. Perfekt for utviklere som jobber med konfigurasjonsfiler.",
+            "h1": "YAML til JSON-konverterer",
+            "subtitle": "Konverter YAML-konfigurasjonsfiler til JSON-format umiddelbart"
         },
         "editor": {
             "btn_convert": "Konverter",
-            "btn_copy": "Kopier JSON"
+            "btn_copy": "Kopier JSON",
+            "btn_download": "Last ned",
+            "btn_example": "Eksempel",
+            "btn_clear": "Klar",
+            "label_input": "YAML-inngang",
+            "ph_input": "Lim inn YAML-dataene dine her...",
+            "label_output": "JSON-utgang",
+            "ph_output": "Konvertert JSON vises her..."
+        },
+        "content": {
+            "h2": "Om YAML til JSON Converter",
+            "p1": "Konverter YAML-konfigurasjonsfiler til JSON-format umiddelbart med vår gratis online YAML til JSON-konverterer. Perfekt for utviklere som jobber med konfigurasjonsfiler, CI/CD-pipelines og datatransformasjon.",
+            "features_title": "Nøkkelfunksjoner",
+            "features": {
+                "syntax": {
+                    "title": "Syntaksvalidering",
+                    "desc": "Oppdager YAML-syntaksfeil"
+                },
+                "nested": {
+                    "title": "Nestet struktur",
+                    "desc": "Bevarer komplekse hierarkier"
+                },
+                "array": {
+                    "title": "Array-støtte",
+                    "desc": "Håndterer YAML-lister og sekvenser"
+                },
+                "pretty": {
+                    "title": "Pen formatering",
+                    "desc": "Ren, lesbar JSON-utgang"
+                },
+                "instant": {
+                    "title": "Øyeblikkelig konvertering",
+                    "desc": "Sanntidstransformasjon"
+                },
+                "privacy": {
+                    "title": "Personvern først",
+                    "desc": "All behandling i nettleseren"
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "config": {
+                    "title": "Konfigurasjonsfiler",
+                    "desc": "Konverter YAML-konfigurasjonsfiler til JSON for applikasjoner."
+                },
+                "pipeline": {
+                    "title": "CI/CD rørledninger",
+                    "desc": "Transformer YAML-pipeline-konfigurasjoner til JSON-format."
+                },
+                "k8s": {
+                    "title": "Kubernetes",
+                    "desc": "Konverter Kubernetes YAML-manifester til JSON."
+                },
+                "docker": {
+                    "title": "Docker Compose",
+                    "desc": "Transform Docker Compose YAML til JSON."
+                }
+            },
+            "how_to_title": "Hvordan bruke YAML til JSON Converter",
+            "how_to_steps": [
+                {
+                    "title": "Paste YAML",
+                    "desc": "Copy and paste your YAML code into the input area."
+                },
+                {
+                    "title": "Automatic Conversion",
+                    "desc": "The tool converts YAML to JSON in real-time as you type."
+                },
+                {
+                    "title": "Copy or Download",
+                    "desc": "Copy the resulting JSON or download it as a .json file."
+                }
+            ],
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Er det gratis?",
+                "a1": "Ja, vår YAML til JSON-omformer er 100 % gratis.",
+                "q2": "Er dataene mine sikre?",
+                "a2": "Ja, all konvertering skjer i nettleseren din. Vi lagrer ikke dataene dine."
+            }
+        },
+        "js": {
+            "error_process": "Feil ved konvertering av YAML:",
+            "error_no_copy": "Ingen JSON å kopiere. Vennligst konverter YAML først.",
+            "success_copy": "JSON kopiert til utklippstavlen!",
+            "error_no_download": "Ingen JSON å laste ned. Vennligst konverter YAML først."
         }
     }
 }

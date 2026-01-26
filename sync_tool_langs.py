@@ -11,7 +11,6 @@ def sync_dict(en_dict, target_dict, translator, path=""):
             sub_target = target_dict.get(key, {})
             updated[key] = sync_dict(en_value, sub_target, translator, current_path)
         elif isinstance(en_value, list):
-            # For lists, we just translate each element if it matches English
             sub_target = target_dict.get(key, [])
             updated_list = []
             for i, item in enumerate(en_value):
@@ -30,7 +29,6 @@ def sync_dict(en_dict, target_dict, translator, path=""):
                     updated_list.append(target_item)
             updated[key] = updated_list
         else:
-            # Simple value
             target_value = target_dict.get(key, "")
             
             if not target_value or target_value == en_value:

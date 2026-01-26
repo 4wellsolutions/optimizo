@@ -11,6 +11,9 @@
             "domain_placeholder": "eksempel.no",
             "button": "Søk opp DNS"
         },
+        "results": {
+            "title": "DNS-poster"
+        },
         "content": {
             "what_is_title": "Hva er DNS-oppslag?",
             "what_is_desc": "DNS-oppslag er et verktøy som spør Domain Name System-servere for å hente DNS-oppføringer for et domene.",
@@ -23,6 +26,26 @@
             "ns_record": "<strong>NS Record:</strong> Informasjon om navneserver",
             "txt_record": "<strong>TXT Record:</strong> Tekstoppføringer for verifisering",
             "cname_record": "<strong>CNAME Record:</strong> Kanonisk navnealias"
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er DNS-oppslag?",
+            "a1": "DNS-oppslag er prosessen med å spørre Domain Name System-servere for å hente DNS-poster for et domene. Den oversetter menneskelesbare domenenavn til IP-adresser og gir informasjon om e-postservere, navneservere og andre DNS-konfigurasjoner.",
+            "q2": "Hva er de forskjellige typene DNS-poster?",
+            "a2": "Vanlige DNS-posttyper inkluderer A (IPv4-adresse), AAAA (IPv6-adresse), MX (e-postserver), CNAME (alias), TXT (tekstdata), NS (navneserver) og SOA (start av autorisasjon). Hver posttype tjener et bestemt formål i domenekonfigurasjonen.",
+            "q3": "Hvor lang tid tar DNS-spredning?",
+            "a3": "DNS-utbredelse tar vanligvis 24–48 timer globalt, selv om endringer kan vises i løpet av minutter på enkelte servere. Tiden avhenger av TTL-innstillinger (Time To Live) og hvor raskt DNS-servere oppdaterer hurtigbufferen.",
+            "q4": "Hvorfor mislykkes mitt DNS-oppslag?",
+            "a4": "DNS-oppslagsfeil kan oppstå på grunn av feil domenenavn, DNS-serverproblemer, blokkering av brannmur eller at domenet ikke er riktig konfigurert. Sjekk domenestavingen og sørg for at DNS-postene dine er riktig konfigurert.",
+            "q5": "Kan jeg slå opp DNS-poster for et hvilket som helst domene?",
+            "a5": "Ja, du kan utføre DNS-oppslag for alle offentlig registrerte domene. Noen organisasjoner kan imidlertid begrense visse DNS-spørringer av sikkerhetsgrunner."
+        },
+        "js": {
+            "looking_up": "Slår opp DNS-poster...",
+            "records_label": "DNS-poster",
+            "success": "DNS-oppslag fullført",
+            "error": "Kunne ikke slå opp DNS-poster",
+            "lookup_dns": "Slå opp DNS"
         }
     },
     "domain-to-ip": {
@@ -38,17 +61,59 @@
             "domain_hint": "Skriv inn domene uten http:// eller https://",
             "button": "Finn IP-adresse"
         },
+        "results": {
+            "title": "IP-adresse resultater",
+            "domain_label": "Domene",
+            "ip_label": "IP-adresse"
+        },
         "content": {
             "main_title": "Domene til IP-omformer",
             "main_subtitle": "Konverter ethvert domenenavn til dets IP-adresse umiddelbart",
             "intro": "Vårt gratis domene til IP-verktøy konverterer umiddelbart ethvert domenenavn til tilhørende IP-adresse ved hjelp av DNS-oppslag.",
             "feature1_title": "Umiddelbart oppslag",
+            "feature1_desc": "Få IP-adresser umiddelbart uten forsinkelser",
             "feature2_title": "Nøyaktige resultater",
+            "feature2_desc": "Sanntids DNS-spørringer for gjeldende IP-adresser",
             "feature3_title": "100% gratis",
+            "feature3_desc": "Ubegrensede oppslag uten registrering nødvendig",
             "what_is_title": "🌐 Hva er domene til IP-oppslag?",
             "what_is_desc": "Domene til IP-oppslag er prosessen med å konvertere et lesbart domenenavn (som eksempel.no) til dets numeriske IP-adresse.",
             "use_cases_title": "🎯 Vanlige bruksområder",
-            "pro_tips_title": "💡 Pro-tips: Bruk av domene til IP-oppslag"
+            "uc1_title": "Serverkonfigurasjon",
+            "uc1_desc": "Konfigurer brannmurer, hvitelister og serverinnstillinger med IP-adresser",
+            "uc2_title": "Sikkerhetsanalyse",
+            "uc2_desc": "Bekreft serverplasseringer og identifiser vertsleverandører",
+            "uc3_title": "Feilsøking",
+            "uc3_desc": "Diagnostiser DNS-problemer og bekreft domenekonfigurasjoner",
+            "uc4_title": "Nettverksovervåking",
+            "uc4_desc": "Spor serverendringer og overvåk infrastruktur",
+            "uc5_title": "Geolokalisering",
+            "uc5_desc": "Bestem serverens geografiske plassering fra IP-adressen",
+            "uc6_title": "API-integrasjon",
+            "uc6_desc": "Bruk IP-adresser for direkte API-tilkoblinger",
+            "pro_tips_title": "💡 Pro-tips: Bruk av domene til IP-oppslag",
+            "tip1": "✅ Bruk IP-adresser for direkte servertilkoblinger når DNS er treg",
+            "tip2": "✅ Bekreft CDN-konfigurasjoner ved å sjekke flere domeneoppløsninger",
+            "tip3": "✅ Hvitelist server-IP-er i brannmurer for sikker tilgang",
+            "tip4": "✅ Sammenlign IP-adresser før og etter DNS-endringer",
+            "tip5": "✅ Identifiser delt hosting ved å sjekke om flere domener deler IP-er"
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er et domene til IP-oppslag?",
+            "a1": "Domene til IP-oppslag konverterer et domenenavn (som example.com) til dens tilsvarende IP-adresse. Dette er viktig for å forstå hvor et nettsted er vert og for nettverksfeilsøking.",
+            "q2": "Kan ett domene ha flere IP-adresser?",
+            "a2": "Ja, domener kan ha flere IP-adresser for belastningsbalansering, redundans eller visning av forskjellig innhold basert på geografisk plassering. This is common for large websites and CDNs.",
+            "q3": "Hva er forskjellen mellom IPv4 og IPv6?",
+            "a3": "IPv4 bruker 32-biters adresser (som 192.168.1.1) og støtter omtrent 4,3 milliarder adresser. IPv6 bruker 128-biters adresser (som 2001:0db8:85a3::8a2e:0370:7334) og gir praktisk talt ubegrensede adresser for fremtidig internettvekst.",
+            "q4": "Hvorfor må jeg finne IP-adressen til et domene?",
+            "a4": "Å finne et domenes IP-adresse er nyttig for nettverksfeilsøking, konfigurering av brannmurer, konfigurering av servertilgang, verifisering av DNS-konfigurasjon eller identifisering av vertsleverandør og serverplassering.",
+            "q5": "Er IP-adressen den samme som serverplasseringen?",
+            "a5": "IP-adressen indikerer hvor serveren er vert, men med CDN-er og skyhosting kan den fysiske serverplasseringen avvike fra IP-geolokaliseringen. Mange nettsteder bruker flere servere over hele verden."
+        },
+        "js": {
+            "looking_up": "Slår opp IP-adressen...",
+            "error_failed": "Kunne ikke løse domene til IP-adresse"
         }
     },
     "internet-speed-test": {
@@ -79,10 +144,40 @@
             "p1": "Test din internettforbindelse med vårt gratis og nøyaktige verktøy. Mål nedlasting, opplasting og ping på få sekunder.",
             "metrics_title": "Forstå målingene",
             "req_title": "Krav for nøyaktig testing",
+            "req_list": [
+                "Lukk alle andre applikasjoner og nettleserfaner",
+                "Koble til via Ethernet-kabel for mest nøyaktige resultater",
+                "Deaktiver VPN eller proxy-tjenester midlertidig",
+                "Sørg for at ingen nedlastinger eller opplastinger kjører",
+                "Test flere ganger til forskjellige tider på dagen"
+            ],
             "why_title": "Hvorfor teste hastigheten?",
+            "why_list": [
+                "Bekreft at du får hastigheten du betaler for",
+                "Feilsøk problemer med sakte tilkoblinger",
+                "Sammenlign forskjellige ISP-planer før du bytter",
+                "Optimaliser nettverksoppsettet",
+                "Dokumenthastighet for ISP-støttebilletter",
+                "Test Wi-Fi vs Ethernet-ytelse"
+            ],
             "factors_title": "Faktorer som påvirker hastigheten",
             "improve_title": "Slik forbedrer du hastigheten",
+            "improve_list": [
+                "Bruk Ethernet-kabel i stedet for Wi-Fi når det er mulig",
+                "Plasser ruteren sentralt unna vegger",
+                "Oppgrader til en moderne ruter som støtter hastighetsnivået ditt",
+                "Lukk båndbreddetunge programmer",
+                "Oppdater ruterens fastvare regelmessig",
+                "Vurder å oppgradere Internett-abonnementet ditt",
+                "Bruk Quality of Service (QoS)-innstillinger på ruteren"
+            ],
             "tips_title": "Pro-tips for nøyaktige resultater",
+            "tips_list": [
+                "Test på forskjellige tider på dagen for å se variasjoner",
+                "Kjør flere tester og gjennomsnitt resultatene",
+                "Test på forskjellige enheter for å utelukke enhetsproblemer",
+                "Sammenlign Wi-Fi-hastigheter på forskjellige steder i hjemmet ditt"
+            ],
             "faq_title": "Ofte stilte spørsmål",
             "metrics": {
                 "download": {
@@ -97,6 +192,36 @@
                     "title": "Ping (Latens)",
                     "desc": "Responstiden for din tilkobling. Lavere er bedre."
                 }
+            },
+            "factors": {
+                "congestion": {
+                    "title": "Overbelastning av nettverket",
+                    "desc": "Høye brukstider kan redusere tilkoblingen din ettersom flere brukere deler båndbredde."
+                },
+                "wifi": {
+                    "title": "Wi-Fi-signal",
+                    "desc": "Avstand fra ruter, vegger og forstyrrelser fra andre enheter påvirker trådløshastighetene."
+                },
+                "device": {
+                    "title": "Enhetsytelse",
+                    "desc": "Eldre enheter eller de som kjører mange programmer kan kanskje ikke oppnå full hastighet."
+                },
+                "router": {
+                    "title": "Ruterkvalitet",
+                    "desc": "Utdaterte rutere støtter kanskje ikke dine fulle internetthastighetsfunksjoner."
+                }
+            },
+            "faq": {
+                "q1": "Hva er en god internetthastighet?",
+                "a1": "For generell surfing og streaming: 25+ Mbps. For 4K-streaming og gaming: 50+ Mbps. For flere brukere og mye bruk: 100+ Mbps. For fjernarbeid og store husholdninger: 200+ Mbps.",
+                "q2": "Hvorfor er hastigheten min lavere enn annonsert?",
+                "a2": "Internett-leverandører annonserer \"opp til\" hastigheter. Faktiske hastigheter avhenger av nettverksoverbelastning, Wi-Fi-kvalitet, avstand fra ruteren og enhetens evner. Test med Ethernet for mest nøyaktige resultater.",
+                "q3": "Hva er forskjellen mellom Mbps og MBps?",
+                "a3": "Mbps (megabit per sekund) brukes for internetthastigheter. MBps (megabyte per sekund) brukes for filstørrelser. 1 MBps = 8 Mbps. En 100 Mbps-tilkobling laster ned med omtrent 12,5 MBps.",
+                "q4": "Hvor nøyaktig er denne hastighetstesten?",
+                "a4": "Vår hastighetstest gir nøyaktige resultater ved å måle reell dataoverføring. For best nøyaktighet, lukk andre applikasjoner, bruk Ethernet og kjør flere tester.",
+                "q5": "Bør jeg teste med Wi-Fi eller Ethernet?",
+                "a5": "Test med Ethernet for å måle din sanne internetthastighet. Test med Wi-Fi for å diagnostisere trådløse problemer. Ved å sammenligne begge kan du identifisere om det er problemer med Internett eller Wi-Fi."
             }
         }
     },
@@ -112,6 +237,17 @@
             "ip_placeholder": "8.8.8.8",
             "button": "Finn IP-informasjon"
         },
+        "results": {
+            "title": "IP-oppslagsresultater",
+            "ip_address": "IP-adresse",
+            "type": "Type",
+            "hostname": "Vertsnavn",
+            "isp": "ISP",
+            "country": "Land",
+            "region": "Region",
+            "city": "By",
+            "timezone": "Tidssone"
+        },
         "content": {
             "what_is_title": "Hva er IP-oppslag?",
             "what_is_desc": "IP-oppslag er et verktøy som gir detaljert informasjon om enhver IP-adresse, som geografisk posisjon og internettleverandør (ISP).",
@@ -119,133 +255,371 @@
             "why_use_desc": "IP-oppslag er essensielt for sikkerhetsanalyse, forebygging av svindel og feilsøking i nettverk.",
             "features_title": "Nøkkelfunksjoner",
             "feature1_title": "🌍 Geografisk data",
+            "feature1_desc": "Land, region, by og koordinater",
             "feature2_title": "🏢 ISP-informasjon",
+            "feature2_desc": "Informasjon om Internett-leverandøren",
             "feature3_title": "🔗 Vertsnavn-oppslag",
-            "feature4_title": "⚡ Umiddelbare resultater"
+            "feature3_desc": "Domenenavn knyttet til IP",
+            "feature4_title": "⚡ Umiddelbare resultater",
+            "feature4_desc": "Rask og nøyaktig oppslag"
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er IP-oppslag?",
+            "a1": "IP-oppslag (også kalt IP-geolokalisering) er prosessen med å finne geografisk informasjon og nettverksinformasjon om en IP-adresse, inkludert plassering, ISP, vertsnavn og organisasjon. Det er nyttig for sikkerhet, analyser og nettverksdiagnostikk.",
+            "q2": "Hvor nøyaktig er IP-geolokalisering?",
+            "a2": "IP-geolokalisering er vanligvis nøyaktig på landsnivå (95–99 %) og bynivå (50–75 %). Nøyaktigheten varierer basert på IP-databasen og hvordan Internett-leverandører administrerer IP-blokkene sine. VPN-er og proxyer kan maskere den sanne plasseringen.",
+            "q3": "Kan jeg finne noens eksakte adresse fra deres IP?",
+            "a3": "Nei, IP-oppslag gir bare omtrentlig plassering (by-/regionnivå), ikke eksakte gateadresser. Bare Internett-leverandører og rettshåndhevelse med riktig autorisasjon kan få tilgang til detaljert abonnentinformasjon.",
+            "q4": "Hva er forskjellen mellom IPv4 og IPv6-oppslag?",
+            "a4": "Både IPv4- og IPv6-oppslag gir lignende informasjon (plassering, ISP osv.). IPv6 er den nyere protokollen med flere adresser. Verktøyet vårt støtter begge IP-versjonene for omfattende nettverksanalyse.",
+            "q5": "Hvorfor viser IP-posisjonen min en annen by?",
+            "a5": "Internett-leverandøren din kan rute trafikk gjennom regionale huber, eller IP-geolokaliseringsdatabasen kan ha utdatert informasjon. Mobil- og satellittforbindelser viser ofte mindre nøyaktige plasseringer enn fast bredbånd."
+        },
+        "js": {
+            "looking_up": "Slår opp IP-informasjon...",
+            "success": "IP-oppslag fullført",
+            "error": "Kunne ikke slå opp IP-adressen"
         }
     },
     "ping-test": {
         "meta": {
             "title": "Ping Test Tool Online - Gratis Network Latency Checker",
+            "description": "Gratis ping-testverktøy for å sjekke nettverksforsinkelse, pakketap og servertilgjengelighet. Test tilkobling til hvilken som helst vert eller IP-adresse umiddelbart. Viktig for nettverksfeilsøking.",
             "h1": "Ping-testverktøy",
             "subtitle": "Test serverresponstid og nettverkstilkobling"
         },
         "form": {
             "host_label": "Vert eller IP-adresse",
+            "host_placeholder": "google.com eller 8.8.8.8",
             "button": "Ping vert"
+        },
+        "results": {
+            "title": "Ping-resultater"
         },
         "content": {
             "what_is_title": "Hva er en ping-test?",
+            "what_is_desc": "Ping er et nettverksdiagnoseverktøy som tester tilgjengeligheten til en vert på et IP-nettverk (Internet Protocol). Den måler rundturstiden for meldinger sendt fra kilden til en destinasjonsdatamaskin og tilbake. Ping fungerer ved å sende Internet Control Message Protocol (ICMP) Echo Request-pakker til målverten og venter på et ekkosvar. Verktøyet er oppkalt etter sonar-ping-lyden som brukes i ubåtdeteksjon, da det på samme måte sender ut et signal og lytter etter et svar.",
             "why_use_title": "Hvorfor bruke ping-test?",
+            "why_use_desc": "Ping-testing er avgjørende for nettverksfeilsøking og ytelsesovervåking. Systemadministratorer bruker ping for å bekrefte nettverkstilkobling, diagnostisere tilkoblingsproblemer og måle nettverksforsinkelse. Det hjelper med å identifisere om en server er online og responsiv, oppdage pakketap som kan indikere nettverksoverbelastning eller maskinvareproblemer, og måle kvaliteten på nettverkstilkoblinger. Spillere bruker ping for å sjekke serverforsinkelse før de blir med på nettspill, mens nettstedeiere overvåker serverens respons for å sikre optimal brukeropplevelse.",
             "metrics_title": "Forstå ping-målinger",
-            "interpreting_title": "Tolking av resultater"
+            "metric1": "<strong>Pakker sendt/mottatt:</strong> Antall ping-forespørsler og vellykkede svar",
+            "metric2": "<strong>Pakketap:</strong> Prosentandel av pakker som ikke mottok svar",
+            "metric3": "<strong>Minimumstid:</strong> Raskeste tur-retur-tid registrert",
+            "metric4": "<strong>Gjennomsnittlig tid:</strong> Gjennomsnittlig ventetid på tvers av alle ping",
+            "metric5": "<strong>Maksimal tid:</strong> Tregeste rundturstid registrert",
+            "metric6": "<strong>TTL (Time To Live):</strong> Antall nettverkshopp før pakken utløper",
+            "interpreting_title": "Tolking av resultater",
+            "interpreting_desc": "Gode ​​pingtider er vanligvis under 50 ms for lokale forbindelser og under 100 ms for internasjonale forbindelser. Tider mellom 100-200 ms er akseptable for de fleste applikasjoner, men kan forårsake merkbar forsinkelse i sanntidsapplikasjoner som spill eller videokonferanser. Alt over 200 ms indikerer potensielle nettverksproblemer. Pakketap over 1 % antyder nettverksproblemer som må undersøkes. Konsekvente pingtider indikerer stabile tilkoblinger, mens svært varierende tider antyder nettverksbelastning eller rutingproblemer."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er en ping-test?",
+            "a1": "En ping-test sender datapakker til en server og måler tiden det tar å motta et svar. Den brukes til å sjekke nettverkstilkobling, måle ventetid og diagnostisere tilkoblingsproblemer.",
+            "q2": "Hva er en god pingtid?",
+            "a2": "For generell surfing: under 100ms er bra. For spill: under 50 ms er ideelt, under 20 ms er utmerket. For videosamtaler: under 150 ms er akseptabelt. Lavere ping betyr raskere responstider.",
+            "q3": "Hvorfor er pinget mitt høyt?",
+            "a3": "Høy ping kan være forårsaket av overbelastning av nettverket, avstand til server, dårlig WiFi-signal, ISP-struping eller for mange enheter på nettverket ditt. Prøv å bruke kablet tilkobling, lukk applikasjoner med mye båndbredde, eller kontakt Internett-leverandøren din.",
+            "q4": "Hva betyr «Forespørselen ble tidsavbrutt»?",
+            "a4": "Tidsavbrudd for forespørsel betyr at serveren ikke svarte innen forventet tid. Dette kan indikere at serveren er nede, blokkerer ping-forespørsler (brannmur), eller det er et nettverkstilkoblingsproblem.",
+            "q5": "Kan jeg pinge hvilken som helst nettside?",
+            "a5": "De fleste nettsteder kan pinges, men noen servere blokkerer ICMP-pingforespørsler av sikkerhetsgrunner. Hvis ping mislykkes, kan nettstedet fortsatt være tilgjengelig via nettleseren - prøv å bruke andre verktøy som traceroute eller port checker."
+        },
+        "js": {
+            "pinging": "Pinger vert...",
+            "success": "Ping fullført",
+            "error": "Ping mislyktes",
+            "ping_host": "Ping vert"
         }
     },
     "port-checker": {
         "meta": {
             "title": "Port Checker Tool - Gratis online åpen portskanner",
+            "description": "Gratis portkontrollverktøy for å teste om porter er åpne, lukkede eller filtrerte. Sjekk TCP/UDP-porter umiddelbart for nettverksfeilsøking og sikkerhetsrevisjon.",
             "h1": "Verktøy for portkontroll",
             "subtitle": "Sjekk om porter er åpne på en server"
         },
         "form": {
             "host_label": "Vert eller IP-adresse",
+            "host_placeholder": "example.com eller 8.8.8.8",
             "port_label": "Portnummer",
+            "port_placeholder": "80",
             "button": "Sjekk port"
+        },
+        "results": {
+            "title": "Portstatus"
         },
         "content": {
             "what_is_title": "Hva er en port-sjekker?",
+            "what_is_desc": "En Port Checker er et nettverksdiagnoseverktøy som bestemmer om en spesifikk TCP- eller UDP-port på en server eller enhet er åpen (godtar tilkoblinger), lukket (avviser tilkoblinger) eller filtrert (blokkert av en brannmur). Porter er virtuelle endepunkter for nettverkskommunikasjon, der hvert portnummer (1-65535) potensielt er vert for forskjellige tjenester. Vanlige porter inkluderer 80 for HTTP-netttrafikk, 443 for HTTPS, 22 for SSH og 25 for e-post. Kontroll av portstatus er avgjørende for nettverkskonfigurasjon, sikkerhetsrevisjon og feilsøking av tilkoblingsproblemer.",
             "why_check_title": "Hvorfor sjekke porter?",
+            "why_check_desc": "Portkontroll tjener flere kritiske formål innen nettverksadministrasjon og sikkerhet. Systemadministratorer bekrefter at tjenester er tilgjengelige på de tiltenkte portene etter konfigurasjonsendringer. Sikkerhetseksperter søker etter åpne porter for å identifisere potensielle sårbarheter og sikre at unødvendige porter er stengt. Utviklere tester om applikasjonene deres lytter riktig på konfigurerte porter. Nettverksfeilsøkere bruker portkontroll for å diagnostisere hvorfor tjenester ikke er tilgjengelige, for å avgjøre om problemet er med selve tjenesten, brannmurregler eller nettverksruting.",
             "common_ports_title": "Vanlige porter",
-            "security_title": "Sikkerhetsimplikasjoner"
+            "port1": "<strong>Port 80:</strong> HTTP (netttrafikk)",
+            "port2": "<strong>Port 443:</strong> HTTPS (sikker nettrafikk)",
+            "port3": "<strong>Port 22:</strong> SSH (sikker skalltilgang)",
+            "port4": "<strong>Port 21:</strong> FTP (filoverføring)",
+            "port5": "<strong>Port 25:</strong> SMTP (e-postsending)",
+            "port6": "<strong>Port 3306:</strong> MySQL-database",
+            "port7": "<strong>Port 3389:</strong> RDP (Eksternt skrivebord)",
+            "security_title": "Sikkerhetsimplikasjoner",
+            "security_desc": "Åpne porter representerer potensielle inngangspunkter for angripere. Beste sikkerhetspraksis tilsier at bare nødvendige porter holdes åpne og lukkes eller filtreres alle andre. Regelmessig skanning av dine egne servere hjelper til med å identifisere utilsiktede åpne porter som kan utnyttes. Portskanning av andres systemer uten tillatelse kan imidlertid være ulovlig og anses som fiendtlig aktivitet. Sørg alltid for at du har autorisasjon før du skanner porter på systemer du ikke eier."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er en portkontrollør?",
+            "a1": "En portkontroller tester om en spesifikk nettverksport på en server er åpen og aksepterer tilkoblinger. Det er viktig for feilsøking av servere, brannmurer og nettverkstjenester.",
+            "q2": "Hva er vanlige porter og deres bruk?",
+            "a2": "Vanlige porter inkluderer: 80 (HTTP), 443 (HTTPS), 21 (FTP), 22 (SSH), 25 (SMTP e-post), 3306 (MySQL), 3389 (Eksternt skrivebord), 8080 (HTTP alternativ). Hver tjeneste bruker spesifikke porter for kommunikasjon.",
+            "q3": "Hvorfor er porten min stengt?",
+            "a3": "Porter kan stenges på grunn av brannmurregler, ruterkonfigurasjon, tjeneste som ikke kjører, ISP-blokkering eller feil portvideresending. Sjekk brannmurinnstillingene dine, sørg for at tjenesten kjører, og bekreft reglene for portvideresending.",
+            "q4": "Er det trygt å åpne porter?",
+            "a4": "Åpning av porter utsetter tjenester for internett, noe som kan være en sikkerhetsrisiko hvis den ikke er riktig konfigurert. Åpne bare nødvendige porter, bruk sterk autentisering, hold programvare oppdatert og vurder å bruke VPN for sensitive tjenester.",
+            "q5": "Hva er forskjellen mellom TCP- og UDP-porter?",
+            "a5": "TCP-porter gir pålitelig, bestilt datalevering (brukes til web, e-post, filoverføring). UDP-porter er raskere, men garanterer ikke levering (brukes til spill, streaming, DNS). Begge kan bruke de samme portnumrene."
+        },
+        "js": {
+            "checking": "Sjekker portstatus...",
+            "success": "Havnesjekk fullført",
+            "error": "Portkontroll mislyktes",
+            "check_port": "Sjekk port"
         }
     },
     "reverse-dns-lookup": {
         "meta": {
             "title": "Omvendt DNS-oppslag - Gratis Internett-verktøy for IP til domene",
+            "description": "Gratis online omvendt DNS-oppslagsverktøy. Finn vertsnavnet knyttet til en hvilken som helst IP-adresse umiddelbart. Rask, sikker og enkel å bruke.",
             "h1": "Omvendt DNS-oppslag",
             "subtitle": "Finn domenenavnet tilknyttet en IP-adresse"
         },
         "form": {
             "ip_label": "Skriv inn IP-adresse",
-            "button": "Søk opp omvendt DNS"
+            "ip_placeholder": "f.eks. 8.8.8.8",
+            "button": "Søk opp omvendt DNS",
+            "button_loading": "Ser opp..."
+        },
+        "results": {
+            "title": "Omvendt DNS-resultater"
+        },
+        "content": {
+            "what_is_title": "Hva er omvendt DNS-oppslag?",
+            "what_is_desc": "Omvendt DNS-oppslag (rDNS) er prosessen med å bestemme domenenavnet eller vertsnavnet knyttet til en IP-adresse. I motsetning til et standard DNS-oppslag som konverterer et domenenavn til en IP-adresse (forward lookup), gjør rDNS det motsatte. Det brukes ofte til å bekrefte identiteten til en server eller for å feilsøke nettverksproblemer.",
+            "why_use_title": "Hvorfor bruke omvendt DNS-oppslag?",
+            "why_use_desc": "Omvendt DNS er mye brukt for sikkerhets- og verifiseringsformål. Det hjelper med å identifisere kilden til innkommende trafikk, bekrefte e-postavsendere (for å forhindre spam) og feilsøke problemer med nettverkstilkobling. Mange e-postservere krever gyldige rDNS-poster for å akseptere innkommende e-poster.",
+            "ptr_records_title": "Forstå PTR-poster",
+            "ptr_record1": "<strong>PTR Record:</strong> En Pointer Record (PTR) er typen DNS-post som brukes for omvendte DNS-oppslag.",
+            "ptr_record2": "<strong>Kartlegging:</strong> Den tilordner en IP-adresse tilbake til et vertsnavn.",
+            "ptr_record3": "<strong>Bekreftelse:</strong> Avgjørende for e-postlevering og sikkerhetsverifisering.",
+            "ptr_record4": "<strong>IP-til-vert:</strong> Viktig for å identifisere den sanne eieren av en IP-adresse.",
+            "ptr_record5": "<strong>Spam Prevention:</strong> Brukes av e-postservere for å validere avsenderens autentisitet.",
+            "ptr_record6": "<strong>Nettverkslogger:</strong> Nyttig for å gjøre nettverkslogger lesbare for mennesker ved å vise vertsnavn.",
+            "use_cases_title": "Vanlige brukstilfeller",
+            "use_cases_desc": "Vanlige brukstilfeller inkluderer verifisering av opprinnelsen til nettrafikk, diagnostisering av nettverksforsinkelse eller rutingproblemer, validering av e-postserverkonfigurasjoner og forbedring av cybersikkerhetsrevisjoner ved å identifisere potensielt skadelige IP-adresser."
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er en PTR-post?",
+            "a1": "En PTR-post (peker) er en type DNS-post som tilordner en IP-adresse til et vertsnavn. Det er kjernekomponenten i et omvendt DNS-oppslag.",
+            "q2": "Hvorfor er omvendt DNS viktig for e-post?",
+            "a2": "Mange e-postleverandører bruker omvendt DNS for å bekrefte at sendeserveren er legitim. Hvis en servers IP-adresse ikke har en samsvarende rDNS-post, kan e-postene bli flagget som spam.",
+            "q3": "Kan en hvilken som helst IP-adresse ha en omvendt DNS-post?",
+            "a3": "Ja, men eieren av IP-adressen (vanligvis Internett-leverandøren eller vertsleverandøren) må konfigurere PTR-posten i sine DNS-innstillinger."
         }
     },
     "traceroute": {
         "meta": {
             "title": "Traceroute Online - Gratis nettverksanalyseverktøy",
-            "description": "Free online traceroute tool. Fast, secure and easy to use.",
+            "description": "Gratis online traceroute-verktøy. Rask, sikker og enkel å bruke.",
             "h1": "Traceroute",
-            "subtitle": "The best traceroute for developers and IT professionals"
+            "subtitle": "Den beste sporingsveien for utviklere og IT-fagfolk"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "Vert eller IP-adresse",
+            "host_placeholder": "Skriv inn domene eller IP-adresse",
+            "button": "Start Traceroute",
+            "button_loading": "Sporer rute..."
         },
         "results": {
-            "title": ""
+            "title": "Traceroute resultater"
         },
         "content": {
-            "what_is_title": "What is Traceroute?",
-            "what_is_desc": "This is a free online tool to traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
+            "what_is_title": "Hva er Traceroute?",
+            "what_is_desc": "Dette er et gratis online verktøy for å spore.",
+            "why_use_title": "Hvorfor bruke Traceroute?",
+            "why_use_desc": "Traceroute viser banen dataene tar fra datamaskinen til en destinasjonsserver, og viser hvert hopp (ruter) underveis. Det er viktig for å diagnostisere nettverksnedsettelser, identifisere rutingproblemer og forstå nettverkstopologi.",
+            "hops_title": "Forstå humle",
+            "hop1": "Hopp 1: Din lokale ruter/gateway",
+            "hop2": "Hopp 2-3: Internett-leverandørens nettverk",
+            "hop3": "Hopp 4-6: Regional internettryggrad",
+            "hop4": "Hop 7-10: Destinasjons-ISP-nettverk",
+            "hop5": "Hop 11+: Destinasjonsservernettverk",
+            "hop6": "Hver hop legger til latens - færre hopp betyr generelt raskere tilkobling",
+            "issues_title": "Vanlige problemer",
+            "issues_desc": "Høy ventetid ved spesifikke hopp indikerer overbelastning eller rutingproblemer. Stjerner (*) betyr at rutere ikke reagerer på traceroute-pakker (ofte på grunn av brannmurregler). Pakketap ved mellomliggende hopp vil kanskje ikke påvirke sluttdestinasjonen hvis pakkene når den."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er traceroute?",
+            "a1": "Traceroute er et nettverksdiagnoseverktøy som sporer banen datapakker tar fra datamaskinen til en destinasjonsserver. Den viser hver ruter (hopp) langs ruten og måler tiden det tar på hvert trinn, og hjelper til med å identifisere hvor nettverksforsinkelser eller feil oppstår.",
+            "q2": "Hvorfor viser noen humle stjerner (*)?",
+            "a2": "Stjerner indikerer at en ruter ikke reagerte på traceroute-sonden innen tidsavbruddsperioden. Dette skyldes ofte brannmurkonfigurasjoner som blokkerer ICMP-pakker for sikkerhet. Det betyr ikke nødvendigvis at det er et problem - pakkene kan fortsatt nå destinasjonen.",
+            "q3": "Hvor mange humle er normalt?",
+            "a3": "Typiske internettruter har 10-20 hopp. Lokale nettverksdestinasjoner kan ha 1-5 hopp, mens internasjonale ruter kan ha 20-30 hopp. Flere hopp betyr generelt lengre avstander og potensielt høyere latens, men effektiv ruting betyr mer enn antall hopp."
         }
     },
     "user-agent-parser": {
         "meta": {
             "title": "User Agent Parser - Gratis detaljverktøy for nettleser",
+            "description": "Identifiser nettleseren, operativsystemet og enheten fra User Agent-strengen med vårt gratisverktøy.",
             "h1": "User Agent Parser",
             "subtitle": "Identifiser nettleser, OS og enhet fra User Agent-streng"
         },
         "editor": {
             "label_input": "User Agent-streng",
+            "ph_input": "Mozilla/5.0...",
             "btn_parse": "Analyser",
             "btn_use_my_ua": "Bruk min User Agent",
             "label_browser": "Nettleser",
             "label_os": "Operativsystem",
-            "label_device": "Enhet"
+            "label_device": "Enhet",
+            "label_raw": "Raw Engine info"
+        },
+        "content": {
+            "p1": "Vår gratis User Agent Parser dekoder brukeragentstrenger umiddelbart for å identifisere nettleseren, operativsystemet, enhetstypen og motorversjonen. Nyttig for utviklere som feilsøker nettleserspesifikke problemer eller analyserer trafikkkilder.",
+            "features_title": "Funksjoner",
+            "features": {
+                "instant": {
+                    "title": "Øyeblikkelig parsing",
+                    "desc": "Dekod brukeragenter på millisekunder"
+                },
+                "detailed": {
+                    "title": "Detaljert informasjon",
+                    "desc": "Trekker ut nettleser, OS, enhet og motor"
+                },
+                "auto": {
+                    "title": "Automatisk oppdagelse",
+                    "desc": "Ett klikk for å analysere din egen nåværende brukeragent"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ubegrenset bruk, ingen kostnad"
+                }
+            },
+            "uses_title": "Vanlige brukstilfeller",
+            "uses": {
+                "debugging": {
+                    "title": "Feilsøking",
+                    "desc": "Identifiser detaljerte nettleserversjoner for feilsøking"
+                },
+                "analytics": {
+                    "title": "Analytics",
+                    "desc": "Forstå hvilke enheter og operativsystemer brukerne bruker"
+                },
+                "dev": {
+                    "title": "Utvikling",
+                    "desc": "Bekreft brukeragentstrenger under testing"
+                },
+                "security": {
+                    "title": "Sikkerhet",
+                    "desc": "Analyser mistenkelige brukeragentstrenger i logger"
+                }
+            },
+            "how_to_title": "Hvordan bruke",
+            "how_to": {
+                "step1": {
+                    "title": "Skriv inn streng",
+                    "desc": "Lim inn en brukeragentstreng eller klikk \"Bruk min brukeragent\""
+                },
+                "step2": {
+                    "title": "Parse",
+                    "desc": "Klikk \"Parse\" for å dekode strengen"
+                },
+                "step3": {
+                    "title": "Se resultater",
+                    "desc": "Se de oppdelte detaljene for nettleser, operativsystem og enhet"
+                }
+            },
+            "faq_title": "Ofte stilte spørsmål",
+            "faq": {
+                "q1": "Hva er en brukeragent?",
+                "a1": "En brukeragent er en tekststreng som sendes av nettleseren din til hvert nettsted du besøker, og identifiserer nettleseren, versjonen, operativsystemet og enhetstypen.",
+                "q2": "Er denne parseren nøyaktig?",
+                "a2": "Den bruker standard mønstertilpasning for å identifisere vanlige brukeragenter i den virkelige verden. Imidlertid kan brukeragentstrenger forfalskes eller endres.",
+                "q3": "Er dataene mine private?",
+                "a3": "Ja, parsing skjer lokalt i nettleseren din. Vi lagrer ikke brukeragentdataene dine."
+            }
         }
     },
     "what-is-my-ip": {
         "meta": {
             "title": "Hva er IP-adressen min? - Gratis online IP Checker",
+            "description": "Finn ut din offentlige IP-adresse umiddelbart. Sjekk din IPv4/IPv6-adresse, ISP, plassering og tilkoblingsdetaljer gratis. Viktig for nettverksfeilsøking.",
             "h1": "Hva er IP-adressen min?",
             "subtitle": "Finn din offentlige IP-adresse og informasjon om din leverandør"
         },
+        "ui": {
+            "loading": "Oppdager IP-adressen din...",
+            "your_ip_title": "Din IP-adresse",
+            "copy_button": "Kopier IP",
+            "timezone": "Tidssone"
+        },
+        "results": {
+            "location": "Sted",
+            "isp": "Internett-leverandør",
+            "country": "Land"
+        },
         "content": {
             "main_title": "Hva er min IP-adresse - Gratis oppslagsverktøy",
+            "main_desc": "Finn din offentlige IP-adresse umiddelbart med vårt gratis IP-oppslagsverktøy. Oppdag IPv4- eller IPv6-adressen din, nøyaktig geografisk plassering (by, region, land), ISP-informasjon, tidssone og fullstendig nettverksdetaljer. Viktig for nettverkskonfigurasjon, sikkerhetstesting, fjerntilgangsoppsett, VPN-verifisering og forståelse av fotavtrykket for Internett-tilkoblingen din.",
             "what_is_title": "Hva er min IP-adresse?",
+            "what_is_desc": "IP-adressen din er en unik numerisk identifikator som tildeles enheten din når den kobles til internett. Den lar nettsteder og tjenester kommunisere med enheten din og identifisere din omtrentlige plassering.",
             "ipv4_vs_ipv6_title": "IPv4 mot IPv6-adresser",
+            "ipv4_title": "IPv4-adresse",
+            "ipv4_format": "<strong>Format:</strong> 192.168.1.1 (fire tall 0-255 atskilt med prikker)",
+            "ipv4_total": "<strong>Totalt antall adresser:</strong> ~4,3 milliarder adresser",
+            "ipv4_desc": "Mest vanlig format over hele verden, men går tom for tilgjengelige adresser på grunn av internettvekst",
+            "ipv6_title": "IPv6-adresse",
+            "ipv6_format": "<strong>Format:</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>Totalt antall adresser:</strong> 340 ubestemte adresser",
+            "ipv6_desc": "Nyere format med praktisk talt ubegrensede adresser, som gradvis erstatter IPv4",
             "why_check_title": "Hvorfor sjekke din IP?",
+            "why_check_desc": "Å kjenne IP-adressen din er nyttig for å feilsøke nettverksproblemer, verifisere VPN-tilkoblinger, sjekke om posisjonen din blir maskert, og forstå hvilken informasjon nettsteder kan se om deg.",
             "public_vs_private_title": "Offentlige mot private IP-adresser",
+            "public_ip_title": "🌐 Offentlig IP-adresse",
+            "public_ip_desc": "Din unike adresse på internett, synlig for alle nettsider og tjenester du besøker.",
+            "public_ip_example": "<strong>Eksempel:</strong> 203.0.113.45",
+            "public_ip_note": "Tilordnet av Internett-leverandøren din og brukes til all internettkommunikasjon",
+            "private_ip_title": "🏠 Privat IP-adresse",
+            "private_ip_desc": "Enhetens adresse på ditt lokale nettverk, ikke synlig på internett.",
+            "private_ip_example": "<strong>Eksempel:</strong> 192.168.1.100",
+            "private_ip_note": "Brukes til kommunikasjon innenfor hjemme- eller kontornettverket",
             "security_title": "IP-adresse og personvern",
+            "security_desc1": "IP-adressen din avslører din omtrentlige plassering (by/region), ISP, og kan brukes til å spore din online aktivitet på tvers av nettsteder. Selv om den ikke eksponerer din eksakte hjemmeadresse eller personlige identitet direkte, kan den kombineres med andre data for sporing. Nettsteder bruker IP-en din til analyser, annonsemålretting og geografiske begrensninger.",
+            "security_desc2": "<strong>Personvern:</strong> Bruk en VPN (Virtual Private Network) for å maskere din virkelige IP-adresse og forbedre personvernet. VPN-er ruter trafikken din gjennom serverne sine, og viser VPN-ens IP i stedet for din. Verktøyet vårt viser nøyaktig hvilken informasjon nettsteder kan se om tilkoblingen din.",
             "dynamic_vs_static_title": "Dynamiske mot statiske IP-adresser",
-            "privacy_tips_title": "Tips for personvern og sikkerhet"
+            "dynamic_ip": "<strong>Dynamisk IP:</strong> Endres med jevne mellomrom (daglig, ukentlig eller når du starter ruteren på nytt). De fleste hjemmebrukere har dynamiske IP-er tildelt automatisk av Internett-leverandøren deres. Billigere og mer vanlig for boligforbindelser.",
+            "static_ip": "<strong>Statisk IP:</strong> Endres aldri og forblir konstant. Brukes vanligvis for forretningsforbindelser, webservere, e-postservere og ekstern tilgang. Koster mer, men viktig for hostingtjenester.",
+            "privacy_tips_title": "Tips for personvern og sikkerhet",
+            "privacy_tip1": "• Del aldri din IP-adresse offentlig på forum eller sosiale medier",
+            "privacy_tip2": "• Bruk en VPN når du kobler til offentlige WiFi-nettverk",
+            "privacy_tip3": "• Aktiver ruterens brannmur for å blokkere uautorisert tilgang",
+            "privacy_tip4": "• Sjekk IP-en din regelmessig for å oppdage uautoriserte VPN-frakoblinger",
+            "privacy_tip5": "• Vær oppmerksom på at nettsteder logger IP-en din for sikkerhet og analyser"
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er en IP-adresse?",
+            "a1": "En IP-adresse (Internet Protocol) er en unik numerisk identifikator som tildeles hver enhet som er koblet til internett. Det er som en postadresse for datamaskinen din, slik at andre enheter kan sende og motta data fra deg.",
+            "q2": "Hvorfor endres IP-adressen min?",
+            "a2": "De fleste Internett-tilkoblinger hjemme bruker dynamiske IP-adresser som endres med jevne mellomrom når du starter ruteren på nytt eller når Internett-leverandøren tildeler adresser på nytt. Bedrifter bruker ofte statiske IP-adresser som ikke endres. Mobile enheter får nye IP-er når de bytter mellom WiFi og mobilnettverk.",
+            "q3": "Kan noen spore meg med IP-adressen min?",
+            "a3": "IP-adressen din avslører din omtrentlige plassering (by/region) og Internett-leverandør, men ikke din eksakte gateadresse eller personlige identitet. Bare din Internett-leverandør og rettshåndhevelse med riktig autorisasjon kan koble en IP-adresse til en bestemt person eller husholdning."
         }
     },
     "what-is-my-isp": {
         "meta": {
             "title": "Hva er min ISP? - Gratis Online Provider Checker",
+            "description": "Finn ut din Internett-leverandør (ISP) umiddelbart. Sjekk informasjon om ISP-navn, organisasjon, ASN og IP-adresse gratis.",
             "h1": "Hva er min ISP?",
             "subtitle": "Identifiser din internettleverandør og tilkoblingsdetaljer"
         },
@@ -254,18 +628,108 @@
             "your_isp_title": "Din internettleverandør",
             "network_label": "Nettverk",
             "location_label": "Posisjon",
-            "main_title": "Hva er min ISP - Verktøy for oppslag av internettleverandør"
+            "main_title": "Hva er min ISP - Verktøy for oppslag av internettleverandør",
+            "main_desc": "Identifiser din Internett-leverandør (ISP), organisasjonsnavn, nettverksdetaljer og tilkoblingsinformasjon umiddelbart. Vårt gratis ISP-oppslagsverktøy avslører ISP-navnet ditt, ASN (Autonomous System Number), IP-adresse, plassering og nettverksinfrastruktur. Perfekt for å verifisere VPN-tilkoblinger, feilsøke nettverksproblemer, bekrefte forretningsinternettlinjer og forstå nettverksrutingen din.",
+            "info_title": "Hvilken informasjon kan du finne?",
+            "info1": "<strong>ISP-navn:</strong> Selskapet som leverer Internett-tilkoblingen din",
+            "info2": "<strong>Organisasjon:</strong> Organisasjonen eller enheten som administrerer nettverkstilkoblingen din",
+            "info3": "<strong>ASN:</strong> Unik nettverksidentifikator for ruting og peering",
+            "info4": "<strong>Sted:</strong> By, region og land knyttet til tilkoblingen din",
+            "info5": "<strong>Nettverksdetaljer:</strong> IP-område, undernettinformasjon og nettverksinfrastrukturdata",
+            "why_use_title": "Hvorfor bruke dette verktøyet?",
+            "why_use1": "Bekreft at du er tilkoblet via riktig internettleverandør",
+            "why_use2": "Feilsøk nettverkstilkobling og ytelsesproblemer",
+            "why_use3": "Sjekk om du bruker en VPN eller proxy-tjeneste på riktig måte",
+            "why_use4": "Identifiser nettverket ditt for sikkerhets- og personvernformål",
+            "why_use5": "Bekreft ISP-påstander om tjenestedekning og infrastruktur",
+            "why_use6": "Undersøk nettverksruting og peering-relasjoner",
+            "why_use7": "Bekreft forretningsinternettforbindelser og dedikerte linjer",
+            "why_use8": "Oppdag uautorisert nettverkstilgang eller tilkoblingskapring",
+            "asn_title": "Forstå ASN (Autonomous System Number)",
+            "asn_desc": "Et autonomt systemnummer (ASN) er en globalt unik identifikator som er tildelt et nettverk eller en gruppe av nettverk under én enkelt administrativ kontroll. Internett-leverandører, store organisasjoner og innholdsleveringsnettverk har hvert sitt ASN. Dette nummeret brukes i BGP (Border Gateway Protocol) ruting for å bestemme hvordan internetttrafikk flyter mellom ulike nettverk. Å kjenne ASN-en din hjelper deg med å identifisere nettverksleverandøren din og forstå rutingstier.",
+            "use_cases_title": "Vanlige brukstilfeller",
+            "use_case1_title": "🔧 Feilsøking av nettverk",
+            "use_case1_desc": "Identifiser ISP-relaterte problemer, verifiser rutingstier og diagnostiser tilkoblingsproblemer",
+            "use_case2_title": "🔒 VPN-verifisering",
+            "use_case2_desc": "Bekreft at VPN-en din fungerer ved å sjekke om Internett-leverandøren endres når den er tilkoblet",
+            "use_case3_title": "🛡️ Sikkerhetsrevisjoner",
+            "use_case3_desc": "Bekreft tilkoblingens autentisitet og oppdage uautorisert nettverkstilgang",
+            "use_case4_title": "💼 Bedriftsbekreftelse",
+            "use_case4_desc": "Bekreft dedikerte forretningslinjer og internettforbindelser for bedrifter",
+            "isp_types_title": "Typer Internett-leverandører",
+            "isp_type1": "<strong>DSL ISPer:</strong> Internett over telefonlinjer (ADSL, VDSL)",
+            "isp_type2": "<strong>ISP-er for kabel:</strong> Høyhastighetsinternett via koaksialkabelinfrastruktur",
+            "isp_type3": "<strong>Fiberoptiske Internett-leverandører:</strong> Ultraraske tilkoblinger ved hjelp av fiberoptiske kabler",
+            "isp_type4": "<strong>Trådløse/mobile ISPer:</strong> 4G/5G mobilnettforbindelser",
+            "isp_type5": "<strong>Satellitt-ISPer:</strong> Internett via satellitt for fjerntliggende områder",
+            "isp_type6": "<strong>Bedrifts-ISPer:</strong> Dedikerte tilkoblinger i bedriftsklasse med SLAer",
+            "privacy_note_title": "Personvernmerknad",
+            "privacy_note_desc": "Internett-leverandøren din kan se all ukryptert internetttrafikk og nettstedene du besøker (men ikke HTTPS-innhold). De kan logge tilkoblingsdata, nettleserhistorikk og DNS-spørringer. Bruk en VPN for å kryptere trafikken din og forhindre ISP-overvåking. Verktøyet vårt viser kun offentlig tilgjengelig informasjon som nettsteder allerede kan se."
+        },
+        "results": {
+            "ip_address": "Din IP-adresse",
+            "asn": "ASN (Autonomous System Number)"
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er en ISP?",
+            "a1": "ISP står for Internet Service Provider – selskapet som leverer internettforbindelsen din. Eksempler inkluderer Comcast, AT&T, Verizon eller lokale leverandører. Internett-leverandøren din tildeler din IP-adresse og ruter all Internett-trafikken din.",
+            "q2": "Hva er et ASN?",
+            "a2": "ASN (Autonomous System Number) er en unik identifikator som tildeles nettverk og ISPer for internettruting. Det hjelper å identifisere hvilken organisasjon som kontrollerer en blokk med IP-adresser. Store Internett-leverandører har sitt eget ASN, mens mindre tilbydere kan dele et.",
+            "q3": "Kan jeg skjule ISP-informasjonen min?",
+            "a3": "Bruk av en VPN (Virtual Private Network) vil vise VPN-leverandørens ISP i stedet for din faktiske ISP. Din ekte ISP kan imidlertid fortsatt se at du bruker en VPN. Proxyer og Tor kan også maskere ISP-informasjonen din."
+        },
+        "js": {
+            "error_loading": "Kunne ikke oppdage ISP-informasjon"
         }
     },
     "whois-lookup": {
         "meta": {
             "title": "WHOIS-oppslagsverktøy - Gratis online domeneinformasjonskontroll",
+            "description": "Gratis WHOIS-oppslagsverktøy for å sjekke domeneregistreringsdetaljer. Se registrar, navneservere, utløpsdato og domenestatus umiddelbart.",
             "h1": "WHOIS-oppslagsverktøy",
             "subtitle": "Sjekk hvem som eier et domene og registreringsdetaljer"
         },
         "form": {
             "domain_label": "Domenenavn",
-            "button": "Søk opp WHOIS"
+            "domain_placeholder": "eksempel.com",
+            "button": "Søk opp WHOIS",
+            "button_loading": "Ser opp..."
+        },
+        "content": {
+            "form_hint": "Skriv inn domene uten http:// eller https://",
+            "what_is_title": "Hva er WHOIS-oppslag?",
+            "what_is_desc": "WHOIS er en protokoll som gir informasjon om registrering av domenenavn. Den avslører detaljer om domeneeierskap, registreringsdatoer, utløpsdatoer, navneservere og registrarinformasjon.",
+            "why_use_title": "Hvorfor bruke WHOIS-oppslag?",
+            "why_use_desc": "WHOIS-oppslag er avgjørende for å verifisere domeneeierskap, sjekke domenetilgjengelighet, undersøke mistenkelige nettsteder, overvåke domenets utløpsdatoer og undersøke konkurrentenes domener.",
+            "key_info_title": "Nøkkelinformasjon gitt",
+            "key_info1": "<strong>Registrantinformasjon:</strong> Detaljer om domeneeier (kan være personvernbeskyttet)",
+            "key_info2": "<strong>Registreringsdatoer:</strong> Når domenet ble registrert og sist oppdatert",
+            "key_info3": "<strong>Utløpsdato:</strong> Når domeneregistreringen utløper",
+            "key_info4": "<strong>Registrator:</strong> Firma som administrerer domeneregistreringen",
+            "key_info5": "<strong>Navnetjenere:</strong> DNS-servere som er vert for domenet",
+            "key_info6": "<strong>Domenestatus:</strong> Gjeldende statuskoder og låser",
+            "how_to_title": "Hvordan bruke",
+            "how_to1": "Skriv inn domenenavnet du vil slå opp",
+            "how_to2": "Klikk på \"Søk WHOIS\"-knappen",
+            "how_to3": "Se gjennom omfattende registreringsinformasjon",
+            "how_to4": "Bruk dataene til dine forsknings- eller verifiseringsbehov",
+            "privacy_title": "Personvern og WHOIS",
+            "privacy_desc": "Mange domeneregistratorer tilbyr nå WHOIS-personverntjenester som maskerer personlig informasjon fra offentlige WHOIS-databaser. Dette beskytter domeneeiere mot spam, identitetstyveri og uønsket oppfordring, mens den fortsatt opprettholder den essensielle tekniske informasjonen som trengs for domenedrift. GDPR-forskrifter har også påvirket WHOIS-datatilgjengeligheten, med mange europeiske registrarer som redigerer personlig informasjon for å overholde personvernlovgivningen."
+        },
+        "results": {
+            "title": "WHOIS-informasjon"
+        },
+        "faq": {
+            "title": "Ofte stilte spørsmål",
+            "q1": "Hva er WHOIS-oppslag?",
+            "a1": "WHOIS er en databasespørring som gir registreringsinformasjon om domenenavn og IP-adresser, inkludert registrantdetaljer, registreringsdatoer, utløpsdatoer, navneservere og registrarinformasjon. Det er nyttig for domeneundersøkelser og verifisering.",
+            "q2": "Hvorfor er WHOIS-informasjon skjult?",
+            "a2": "Mange domeneeiere bruker WHOIS personvern (også kalt domenepersonvern) for å skjule sin personlige kontaktinformasjon fra offentlige WHOIS-databaser. Dette forhindrer spam, identitetstyveri og uønsket oppfordring samtidig som domeneeierskapet opprettholdes.",
+            "q3": "Er WHOIS-oppslag lovlig?",
+            "a3": "Ja, WHOIS-oppslag er helt lovlig og er en standard internettprotokoll. WHOIS-data er offentlig tilgjengelig for legitime formål som domeneforskning, varemerkebeskyttelse og nettverksfeilsøking. Det er imidlertid forbudt å bruke WHOIS-data for spam eller trakassering.",
+            "q4": "Hvor ofte oppdateres WHOIS-data?",
+            "a4": "WHOIS-data oppdateres i sanntid når informasjon om domeneregistrering endres. Forskjellige WHOIS-servere kan imidlertid hurtigbufre data i forskjellige perioder. Nylige endringer kan ta noen timer å spre seg over alle WHOIS-databaser globalt."
         }
     }
 }

@@ -25,19 +25,16 @@ def sync_main_lang(lang_code):
     for key, value in en_data.items():
         count += 1
         if key in target_data and target_data[key].strip() != "" and target_data[key] != value:
-            # Already translated and doesn't match English
             updated_data[key] = target_data[key]
         else:
-            # Needs translation or key is missing
             print(f"[{count}/{total}] Translating: {key}")
             try:
                 translated = translator.translate(value)
                 updated_data[key] = translated
             except Exception as e:
                 print(f"Error translating {key}: {e}")
-                updated_data[key] = value # Fallback to English
+                updated_data[key] = value
                 
-    # Sort keys to match English file order
     final_data = {key: updated_data[key] for key in en_data.keys()}
     
     with open(target_file, 'w', encoding='utf-8') as f:
