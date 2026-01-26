@@ -1,0 +1,735 @@
+{
+    "dns-lookup": {
+        "meta": {
+            "title": "DNS Lookup Tool - Gratis online DNS Record Checker",
+            "description": "Gratis DNS lookup værktøj to tjek DNS records for any domain. Vis A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.",
+            "h1": "DNS-opslagsværktøj",
+            "subtitle": "Query DNS records to find nameservers, MX, A, CNAME & TXT records instantly"
+        },
+        "form": {
+            "domain_label": "Domain Name",
+            "domain_placeholder": "example.com",
+            "button": "Lookup DNS"
+        },
+        "results": {
+            "title": ""
+        },
+        "content": {
+            "what_is_title": "Hvad er DNS Lookup?",
+            "what_is_desc": "DNS Lookup is a værktøj that queries Domain Name System servers to retrieve DNS records for a domain. DNS records contain important information about how a domain is configured, including mail servers (MX records), nameservers (NS records), IP addresses (A/AAAA records), and text records (TXT records) used for verification and security.",
+            "why_use_title": "Hvorfor Brug DNS Lookup?",
+            "why_use_desc": "DNS Lookup is essential for troubleshooting email delivery issues, verifying domain configuration, checking nameserver settings, validating SPF and DKIM records, and understanding how a domain is set up. It's used by system administrators, web developers, and IT professionals daily.",
+            "record_types_title": "DNS Record Typer",
+            "a_record": "<strong>A Record:</strong> Maps domain to IPv4 address",
+            "aaaa_record": "<strong>AAAA Record:</strong> Maps domain to IPv6 address",
+            "mx_record": "<strong>MX Record:</strong> Mail server information",
+            "ns_record": "<strong>NS Record:</strong> Nameserver information",
+            "txt_record": "<strong>TXT Record:</strong> Tekst records for verification",
+            "cname_record": "<strong>CNAME Record:</strong> Canonical name alias"
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": "",
+            "q4": "",
+            "a4": "",
+            "q5": "",
+            "a5": ""
+        },
+        "js": {
+            "looking_up": "",
+            "records_label": "",
+            "success": "",
+            "error": "",
+            "lookup_dns": ""
+        }
+    },
+    "domain-to-ip": {
+        "meta": {
+            "title": "Domæne til IP-konvertering - Gratis online DNS-værktøj",
+            "description": "Gratis domain to IP lookup tool. Instantly konverter any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.",
+            "h1": "Domæne til IP konverter",
+            "subtitle": "Resolve domain names to IP addresses with detailed DNS information"
+        },
+        "form": {
+            "domain_label": "Indtast Domain Name",
+            "domain_placeholder": "example.com",
+            "domain_hint": "Indtast domain without http:// or https://",
+            "button": "Lookup IP Address"
+        },
+        "results": {
+            "title": "",
+            "domain_label": "",
+            "ip_label": ""
+        },
+        "content": {
+            "main_title": "Domain to IP Konverter",
+            "main_subtitle": "Konverter any domain name to its IP address instantly",
+            "intro": "Vores gratis Domain to IP værktøj instantly converts any domain name to its corresponding IP address using DNS lookup. Essential for network administrators, web developers, security professionals, and anyone needing to identify the server behind a domain. Get accurate IP addresses for troubleshooting, server verification, and network configuration.",
+            "feature1_title": "Øjeblikkelig Lookup",
+            "feature1_desc": "Get IP addresses immediately without delays",
+            "feature2_title": "Accurate Resultats",
+            "feature2_desc": "Real-time DNS queries for current IP addresses",
+            "feature3_title": "100% Gratis",
+            "feature3_desc": "Unlimited lookups with no registration required",
+            "what_is_title": "🌐 Hvad er Domain to IP Lookup?",
+            "what_is_desc": "Domain to IP lookup is the process of converting a human-readable domain name (like example.com) into its corresponding numerical IP address (like 93.184.216.34). Dette conversion happens through DNS (Domain Name System) servers, which act as the internet's phone book. Every website has an IP address, but domain names make them easier to remember and access.",
+            "use_cases_title": "🎯 Almindelig Brug Cases",
+            "uc1_title": "Server Configuration",
+            "uc1_desc": "Configure firewalls, whitelists, and server settings with IP addresses",
+            "uc2_title": "Sikkerhed Analysis",
+            "uc2_desc": "Verify server locations and identify hosting providers",
+            "uc3_title": "Troubleshooting",
+            "uc3_desc": "Diagnose DNS issues and verify domain configurations",
+            "uc4_title": "Network Monitoring",
+            "uc4_desc": "Track server changes and monitor infrastructure",
+            "uc5_title": "Geolocation",
+            "uc5_desc": "Determine server geographic location from IP address",
+            "uc6_title": "API Integration",
+            "uc6_desc": "Brug IP addresses for direct API connections",
+            "pro_tips_title": "💡 Pro Tips: Using Domain to IP Lookup",
+            "tip1": "✅ Brug IP addresses for direct server connections when DNS is slow",
+            "tip2": "✅ Verify CDN configurations by checking multiple domain resolutions",
+            "tip3": "✅ Whitelist server IPs in firewalls for sikker access",
+            "tip4": "✅ Compare IP addresses before and after DNS changes",
+            "tip5": "✅ Identify shared hosting by checking if multiple domains share IPs"
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": "",
+            "q4": "",
+            "a4": "",
+            "q5": "",
+            "a5": ""
+        },
+        "js": {
+            "looking_up": "",
+            "error_failed": ""
+        }
+    },
+    "internet-speed-test": {
+        "meta": {
+            "title": "Internet Speed ​​Test - Gratis Online Connection Checker",
+            "description": "Test your internet speed for free. Tjek download speed, upload speed, and ping instantly.",
+            "h1": "Test af internethastighed",
+            "subtitle": "Test your internet connection speed instantly"
+        },
+        "editor": {
+            "btn_start": "Start Speed Test",
+            "status_init": "Initializing test...",
+            "label_download": "Download Speed",
+            "label_upload": "Upload Speed",
+            "label_ping": "Ping",
+            "label_quality": "Connection Kvalitet",
+            "btn_retry": "Test Again",
+            "status_ping": "Testing ping...",
+            "status_download": "Testing download speed...",
+            "status_upload": "Testing upload speed...",
+            "quality_val_excellent": "Excellent",
+            "quality_val_very_good": "Very Good",
+            "quality_val_good": "Good",
+            "quality_val_fair": "Fair",
+            "quality_val_poor": "Poor"
+        },
+        "content": {
+            "p1": "Test your internet connection speed with our free, accurate speed test tool. Measure your download speed, upload speed, and ping latency in seconds. Perfect for troubleshooting slow connections, verifying ISP speeds, or checking if you're getting what you pay for.",
+            "metrics_title": "Understanding Speed Test Metrics",
+            "req_title": "Requirements for Accurate Testing",
+            "req_list": [
+                "Close all other applications and browser tabs",
+                "Connect via Ethernet cable for most accurate results",
+                "Disable VPN or proxy services temporarily",
+                "Ensure no downloads or uploads are running",
+                "Test multiple times at different times of day"
+            ],
+            "why_title": "Hvorfor Test Din Internet Speed?",
+            "why_list": [
+                "Verify you're getting the speed you're paying for",
+                "Troubleshoot slow connection issues",
+                "Compare different ISP plans before switching",
+                "Optimize your network setup",
+                "Dokument speed for ISP support tickets",
+                "Test Wi-Fi vs Ethernet performance"
+            ],
+            "factors_title": "Factors Affecting Din Speed",
+            "improve_title": "Hvordan Improve Din Speed",
+            "improve_list": [
+                "Brug Ethernet cable instead of Wi-Fi when possible",
+                "Place router in central location away from walls",
+                "Upgrade to a modern router that supports your speed tier",
+                "Close bandwidth-heavy applications",
+                "Opdater router firmware regularly",
+                "Consider upgrading your internet plan",
+                "Brug Kvalitet of Service (QoS) settings on router"
+            ],
+            "tips_title": "Pro Tips for Accurate Resultats",
+            "tips_list": [
+                "Test at different times of day to see variations",
+                "Run multiple tests and average the results",
+                "Test on different devices to rule out device issues",
+                "Compare Wi-Fi speeds at different locations in your home"
+            ],
+            "faq_title": "Ofte Stillede Spørgsmål",
+            "metrics": {
+                "download": {
+                    "title": "Download Speed",
+                    "desc": "How hurtig data travels from the internet to your device. Important for streaming, browsing, and downloading files."
+                },
+                "upload": {
+                    "title": "Upload Speed",
+                    "desc": "How hurtig data travels from your device to the internet. Important for video calls, uploading files, and live streaming."
+                },
+                "ping": {
+                    "title": "Ping (Latency)",
+                    "desc": "Response time of your connection. Lower is better. Important for gaming and real-time applications."
+                }
+            },
+            "factors": {
+                "congestion": {
+                    "title": "Network Congestion",
+                    "desc": "Peak usage times can slow down your connection as more users share bandwidth."
+                },
+                "wifi": {
+                    "title": "Wi-Fi Signal",
+                    "desc": "Distance from router, walls, and interference from other devices affect wireless speeds."
+                },
+                "device": {
+                    "title": "Device Performance",
+                    "desc": "Older devices or those running many programs may not achieve full speeds."
+                },
+                "router": {
+                    "title": "Router Kvalitet",
+                    "desc": "Outdated routers may not support your full internet speed capabilities."
+                }
+            },
+            "faq": {
+                "q1": "Hvad er a good internet speed?",
+                "a1": "Til general browsing and streaming: 25+ Mbps. Til 4K streaming and gaming: 50+ Mbps. Til multiple users and heavy usage: 100+ Mbps. Til remote work and large households: 200+ Mbps.",
+                "q2": "Hvorfor is my speed slower than advertised?",
+                "a2": "ISPs advertise \"up to\" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.",
+                "q3": "What's the difference between Mbps and MBps?",
+                "a3": "Mbps (megabits per second) is used for internet speeds. MBps (megabytes per second) is used for file sizes. 1 MBps = 8 Mbps. A 100 Mbps connection downloads at about 12.5 MBps.",
+                "q4": "How accurate is this speed test?",
+                "a4": "Vores speed test provides accurate results by measuring real data transfer. Til best accuracy, close other applications, use Ethernet, and run multiple tests.",
+                "q5": "Should I test with Wi-Fi or Ethernet?",
+                "a5": "Test with Ethernet to measure your true internet speed. Test with Wi-Fi to diagnose wireless issues. Comparing both helps identify if problems are with your internet or Wi-Fi."
+            }
+        }
+    },
+    "ip-lookup": {
+        "meta": {
+            "title": "IP-opslagsværktøj - Gratis Online IP Geolocation Checker",
+            "description": "Gratis IP lookup værktøj to find detailed information about any IP address. Vis location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.",
+            "h1": "IP-opslagsværktøj",
+            "subtitle": "Get detailed information about any IP address including location & ISP"
+        },
+        "form": {
+            "ip_label": "IP Address",
+            "ip_placeholder": "8.8.8.8",
+            "button": "Lookup IP Address"
+        },
+        "results": {
+            "title": "",
+            "ip_address": "",
+            "type": "",
+            "hostname": "",
+            "isp": "",
+            "country": "",
+            "region": "",
+            "city": "",
+            "timezone": ""
+        },
+        "content": {
+            "what_is_title": "Hvad er IP Lookup?",
+            "what_is_desc": "IP Lookup is a værktøj that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. Dette information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.",
+            "why_use_title": "Hvorfor Brug IP Lookup?",
+            "why_use_desc": "IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It's also useful for verifying VPN connections and understanding your own internet footprint.",
+            "features_title": "Key Funktioner",
+            "feature1_title": "🌍 Geolocation Data",
+            "feature1_desc": "Country, region, city, and coordinates",
+            "feature2_title": "🏢 ISP Information",
+            "feature2_desc": "Internet Service Provider details",
+            "feature3_title": "🔗 Hostname Opløsning",
+            "feature3_desc": "Domain name associated with IP",
+            "feature4_title": "⚡ Øjeblikkelig Resultats",
+            "feature4_desc": "Hurtig and accurate lookup"
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": "",
+            "q4": "",
+            "a4": "",
+            "q5": "",
+            "a5": ""
+        },
+        "js": {
+            "looking_up": "",
+            "success": "",
+            "error": ""
+        }
+    },
+    "ping-test": {
+        "meta": {
+            "title": "Ping Test Tool Online - Gratis Network Latency Checker",
+            "description": "Gratis ping test værktøj to tjek network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.",
+            "h1": "Ping testværktøj",
+            "subtitle": "Test server response time and network connectivity from multiple locations"
+        },
+        "form": {
+            "host_label": "Host or IP Address",
+            "host_placeholder": "google.com or 8.8.8.8",
+            "button": "Ping Host"
+        },
+        "results": {
+            "title": ""
+        },
+        "content": {
+            "what_is_title": "Hvad er Ping Test?",
+            "what_is_desc": "Ping is a network diagnostic værktøj that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. Den værktøj is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.",
+            "why_use_title": "Hvorfor Brug Ping Test?",
+            "why_use_desc": "Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to tjek server latency before joining online games, while website owners monitor their server's responsiveness to ensure optimal user experience.",
+            "metrics_title": "Understanding Ping Metrics",
+            "metric1": "<strong>Packets Sent/Received:</strong> Nummer of ping requests and successful responses",
+            "metric2": "<strong>Packet Loss:</strong> Percentage of packets that didn't receive a response",
+            "metric3": "<strong>Minimum Tid:</strong> Fastest round-trip time recorded",
+            "metric4": "<strong>Gennemsnit Tid:</strong> Mean latency across all pings",
+            "metric5": "<strong>Maksimum Tid:</strong> Slowest round-trip time recorded",
+            "metric6": "<strong>TTL (Tid Til Live):</strong> Nummer of network hops before packet expires",
+            "interpreting_title": "Interpreting Resultats",
+            "interpreting_desc": "Good ping times are typically under 50ms for local connections and under 100ms for international connections. Tids between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": "",
+            "q4": "",
+            "a4": "",
+            "q5": "",
+            "a5": ""
+        },
+        "js": {
+            "pinging": "",
+            "success": "",
+            "error": "",
+            "ping_host": ""
+        }
+    },
+    "port-checker": {
+        "meta": {
+            "title": "Port Checker Tool - Gratis online Open Port Scanner",
+            "description": "Gratis port checker værktøj to test if ports are open, closed, or filtered. Tjek TCP/UDP ports instantly for network troubleshooting and security auditing.",
+            "h1": "Værktøj til portkontrol",
+            "subtitle": "Tjek if ports are open on any server for troubleshooting connectivity"
+        },
+        "form": {
+            "host_label": "Host or IP Address",
+            "host_placeholder": "example.com or 8.8.8.8",
+            "port_label": "Port Nummer",
+            "port_placeholder": "80",
+            "button": "Tjek Port"
+        },
+        "results": {
+            "title": ""
+        },
+        "content": {
+            "what_is_title": "Hvad er Port Tjeker?",
+            "what_is_desc": "A Port Tjeker is a network diagnostic værktøj that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Almindelig ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Tjeking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.",
+            "why_check_title": "Hvorfor Tjek Ports?",
+            "why_check_desc": "Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Sikkerhed professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren't accessible, determining if the issue is with the service itself, firewall rules, or network routing.",
+            "common_ports_title": "Almindelig Ports",
+            "port1": "<strong>Port 80:</strong> HTTP (web traffic)",
+            "port2": "<strong>Port 443:</strong> HTTPS (secure web traffic)",
+            "port3": "<strong>Port 22:</strong> SSH (secure shell access)",
+            "port4": "<strong>Port 21:</strong> FTP (file transfer)",
+            "port5": "<strong>Port 25:</strong> SMTP (email sending)",
+            "port6": "<strong>Port 3306:</strong> MySQL database",
+            "port7": "<strong>Port 3389:</strong> RDP (Remote Desktop)",
+            "security_title": "Sikkerhed Implications",
+            "security_desc": "Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": "",
+            "q4": "",
+            "a4": "",
+            "q5": "",
+            "a5": ""
+        },
+        "js": {
+            "checking": "",
+            "success": "",
+            "error": "",
+            "check_port": ""
+        }
+    },
+    "reverse-dns-lookup": {
+        "meta": {
+            "title": "Reverse DNS Lookup - Gratis online IP til domæneværktøj",
+            "description": "Gratis online reverse DNS lookup tool. Find the hostname associated with any IP address instantly. Hurtig, secure, and let to use.",
+            "h1": "Omvendt DNS-opslag",
+            "subtitle": "Find the domain name or hostname associated with an IP address instantly"
+        },
+        "form": {
+            "ip_label": "Indtast IP Address",
+            "ip_placeholder": "e.g., 8.8.8.8",
+            "button": "Lookup Reverse DNS",
+            "button_loading": "Looking up..."
+        },
+        "results": {
+            "title": "Reverse DNS Resultats"
+        },
+        "content": {
+            "what_is_title": "Hvad er Reverse DNS Lookup?",
+            "what_is_desc": "Reverse DNS lookup (rDNS) is the process of determining the domain name or hostname associated with an IP address. Unlike a standard DNS lookup that converts a domain name to an IP address (forward lookup), rDNS does the opposite. It's often used to verify the identity of a server or to troubleshoot network issues.",
+            "why_use_title": "Hvorfor Brug Reverse DNS Lookup?",
+            "why_use_desc": "Reverse DNS is widely used for security and verification purposes. It helps identify the source of incoming traffic, verify email senders (to prevent spam), and troubleshoot network connectivity issues. Many mail servers require valid rDNS records to accept incoming emails.",
+            "ptr_records_title": "Understanding PTR Records",
+            "ptr_record1": "<strong>PTR Record:</strong> A Pointer Record (PTR) is the type of DNS record used for reverse DNS lookups.",
+            "ptr_record2": "<strong>Mapping:</strong> It maps an IP address back to a hostname.",
+            "ptr_record3": "<strong>Verification:</strong> Crucial for email deliverability and security verification.",
+            "ptr_record4": "<strong>IP-to-Host:</strong> Essential for identifying the true owner of an IP address.",
+            "ptr_record5": "<strong>Spam Prevention:</strong> Used by mail servers to validate sender authenticity.",
+            "ptr_record6": "<strong>Network Logs:</strong> Helpful for making network logs human-readable by showing hostnames.",
+            "use_cases_title": "Almindelig Brug Cases",
+            "use_cases_desc": "Almindelig use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
+        },
+        "faq": {
+            "title": "Ofte Stillede Spørgsmål",
+            "q1": "Hvad er a PTR record?",
+            "a1": "A PTR (Pointer) record is a type of DNS record that maps an IP address to a hostname. It is the core component of a reverse DNS lookup.",
+            "q2": "Hvorfor is reverse DNS important for email?",
+            "a2": "Many email providers use reverse DNS to verify that the sending server is legitimate. If a server's IP address doesn't have a matching rDNS record, its emails may be flagged as spam.",
+            "q3": "Can any IP address have a reverse DNS record?",
+            "a3": "Ja, but the owner of the IP address (typically the ISP or hosting provider) must configure the PTR record in their DNS settings."
+        }
+    },
+    "traceroute": {
+        "meta": {
+            "title": "Traceroute Online - Gratis netværksanalyseværktøj",
+            "description": "Gratis online traceroute tool. Hurtig, sikker and let to use.",
+            "h1": "Traceroute",
+            "subtitle": "Den best traceroute for developers and IT professionals"
+        },
+        "form": {
+            "host_label": "",
+            "host_placeholder": "",
+            "button": "",
+            "button_loading": ""
+        },
+        "results": {
+            "title": ""
+        },
+        "content": {
+            "what_is_title": "Hvad er Traceroute?",
+            "what_is_desc": "Dette is a gratis online værktøj to traceroute.",
+            "why_use_title": "",
+            "why_use_desc": "",
+            "hops_title": "",
+            "hop1": "",
+            "hop2": "",
+            "hop3": "",
+            "hop4": "",
+            "hop5": "",
+            "hop6": "",
+            "issues_title": "",
+            "issues_desc": ""
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": ""
+        }
+    },
+    "user-agent-parser": {
+        "meta": {
+            "title": "User Agent Parser - Gratis Online Browser Detail Tool",
+            "description": "Identify browser, OS, and device from User Agent string with our gratis tool.",
+            "h1": "User Agent Parser",
+            "subtitle": "Identify browser, OS, and device from User Agent string"
+        },
+        "editor": {
+            "label_input": "User Agent String",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Parse",
+            "btn_use_my_ua": "Brug My User Agent",
+            "label_browser": "Browser",
+            "label_os": "Operating System",
+            "label_device": "Device",
+            "label_raw": "Raw Engine info"
+        },
+        "content": {
+            "p1": "Vores gratis User Agent Parser instantly decodes user agent strings to identify the browser, operating system, device type, and engine version. Useful for developers debugging browser-specific issues or analyzing traffic sources.",
+            "features_title": "Funktioner",
+            "features": {
+                "øjeblikkelig": {
+                    "title": "Øjeblikkelig Parsing",
+                    "desc": "Decode user agents in milliseconds"
+                },
+                "detailed": {
+                    "title": "Detailed Info",
+                    "desc": "Extracts Browser, OS, Device, and Engine"
+                },
+                "auto": {
+                    "title": "Auto-Detect",
+                    "desc": "One-click to parse your own current user agent"
+                },
+                "gratis": {
+                    "title": "100% Gratis",
+                    "desc": "Unlimited uses, no cost"
+                }
+            },
+            "uses_title": "Almindelig Brug Cases",
+            "uses": {
+                "debugging": {
+                    "title": "Debugging",
+                    "desc": "Identify detailed browser versions for troubleshooting"
+                },
+                "analytics": {
+                    "title": "Analytics",
+                    "desc": "Understand what devices and OSs your users are using"
+                },
+                "dev": {
+                    "title": "Development",
+                    "desc": "Verify user agent strings during testing"
+                },
+                "security": {
+                    "title": "Sikkerhed",
+                    "desc": "Analyser suspicious user agent strings in logs"
+                }
+            },
+            "how_to_title": "Hvordan Brug",
+            "how_to": {
+                "step1": {
+                    "title": "Indtast String",
+                    "desc": "Indsæt a User Agent string or click \"Brug My User Agent\""
+                },
+                "step2": {
+                    "title": "Parse",
+                    "desc": "Klik \"Parse\" to decode the string"
+                },
+                "step3": {
+                    "title": "Vis Resultats",
+                    "desc": "See the broken-down details for Browser, OS, and Device"
+                }
+            },
+            "faq_title": "Ofte Stillede Spørgsmål",
+            "faq": {
+                "q1": "Hvad er a User Agent?",
+                "a1": "A User Agent is a string of text sent by your web browser to every website you visit, identifying the browser, version, operating system, and device type.",
+                "q2": "Is this parser accurate?",
+                "a2": "It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.",
+                "q3": "Is my data private?",
+                "a3": "Ja, parsing happens locally in your browser. We do not store your user agent data."
+            }
+        }
+    },
+    "what-is-my-ip": {
+        "meta": {
+            "title": "Hvad er min IP-adresse? - Gratis online IP-kontrol",
+            "description": "Find out your public IP address instantly. Tjek your IPv4/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.",
+            "h1": "Hvad er min IP-adresse?",
+            "subtitle": "Instantly discover your public IP address with detailed ISP information"
+        },
+        "ui": {
+            "loading": "",
+            "your_ip_title": "",
+            "copy_button": "",
+            "timezone": ""
+        },
+        "results": {
+            "location": "",
+            "isp": "",
+            "country": ""
+        },
+        "content": {
+            "main_title": "What Is My IP Address - Gratis IP Lookup Værktøj",
+            "main_desc": "Find your public IP address instantly with our gratis IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.",
+            "what_is_title": "Hvad er My IP Address?",
+            "what_is_desc": "Din IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.",
+            "ipv4_vs_ipv6_title": "IPv4 vs IPv6 Addresses",
+            "ipv4_title": "IPv4 Address",
+            "ipv4_format": "<strong>Format:</strong> 192.168.1.1 (four numbers 0-255 separated by dots)",
+            "ipv4_total": "<strong>Total Addresses:</strong> ~4.3 billion addresses",
+            "ipv4_desc": "Most common format worldwide, but running out of available addresses due to internet growth",
+            "ipv6_title": "IPv6 Address",
+            "ipv6_format": "<strong>Format:</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>Total Addresses:</strong> 340 undecillion addresses",
+            "ipv6_desc": "Newer format with virtually unlimited addresses, gradually replacing IPv4",
+            "why_check_title": "Hvorfor Tjek Din IP?",
+            "why_check_desc": "Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.",
+            "public_vs_private_title": "Public vs Private IP Addresses",
+            "public_ip_title": "🌐 Public IP Address",
+            "public_ip_desc": "Din unique address on the internet, visible to all websites and services you visit.",
+            "public_ip_example": "<strong>Eksempel:</strong> 203.0.113.45",
+            "public_ip_note": "Assigned by your ISP and used for all internet communication",
+            "private_ip_title": "🏠 Private IP Address",
+            "private_ip_desc": "Din device's address on your local network, not visible on the internet.",
+            "private_ip_example": "<strong>Eksempel:</strong> 192.168.1.100",
+            "private_ip_note": "Used for communication within your home or office network",
+            "security_title": "IP Address Sikkerhed & Privatliv",
+            "security_desc1": "Din IP address reveals your approximate location (city/region), ISP, and can be used to track your online activity across websites. While it doesn't expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.",
+            "security_desc2": "<strong>Privatliv Protection:</strong> Brug a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN's IP instead of yours. Vores værktøj shows exactly what information websites can see about your connection.",
+            "dynamic_vs_static_title": "Dynamic vs Static IP Addresses",
+            "dynamic_ip": "<strong>Dynamic IP:</strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.",
+            "static_ip": "<strong>Static IP:</strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.",
+            "privacy_tips_title": "Privatliv & Sikkerhed Tips",
+            "privacy_tip1": "• Never share your IP address publicly on forums or social media",
+            "privacy_tip2": "• Brug a VPN when connecting to public WiFi networks",
+            "privacy_tip3": "• Enable your router's firewall to block unauthorized access",
+            "privacy_tip4": "• Regularly tjek your IP to detect unauthorized VPN disconnections",
+            "privacy_tip5": "• Be aware that websites log your IP for security and analytics"
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": ""
+        }
+    },
+    "what-is-my-isp": {
+        "meta": {
+            "title": "Hvad er min internetudbyder? - Free Online Provider Checker",
+            "description": "Find out your Internet Service Provider (ISP) instantly. Tjek ISP name, organization, ASN, and IP address information for free.",
+            "h1": "Hvad er min internetudbyder?",
+            "subtitle": "Identify your Internet Service Provider with connection details"
+        },
+        "content": {
+            "loading": "Indlæser ISP information...",
+            "your_isp_title": "Din Internet Service Provider",
+            "network_label": "Network",
+            "location_label": "Location",
+            "main_title": "What Is My ISP - Internet Service Provider Lookup Værktøj",
+            "main_desc": "Instantly identify your Internet Service Provider (ISP), organization name, network details, and connection information. Vores gratis ISP lookup værktøj reveals your ISP name, ASN (Autonomous System Nummer), IP address, location, and network infrastructure. Perfect for verifying VPN connections, troubleshooting network issues, confirming business internet lines, and understanding your network routing.",
+            "info_title": "What Information Can You Find?",
+            "info1": "<strong>ISP Name:</strong> Den company providing your internet connection",
+            "info2": "<strong>Organization:</strong> Den organization or entity managing your network connection",
+            "info3": "<strong>ASN:</strong> Unique network identifier for routing and peering",
+            "info4": "<strong>Location:</strong> City, region, and country associated with your connection",
+            "info5": "<strong>Network Details:</strong> IP range, subnet information, and network infrastructure data",
+            "why_use_title": "Hvorfor Brug Dette Værktøj?",
+            "why_use1": "Verify you're connected through the correct internet provider",
+            "why_use2": "Troubleshoot network connectivity and performance issues",
+            "why_use3": "Tjek if you're using a VPN or proxy service correctly",
+            "why_use4": "Identify your network for security and privacy purposes",
+            "why_use5": "Verify ISP claims about service coverage and infrastructure",
+            "why_use6": "Research network routing and peering relationships",
+            "why_use7": "Confirm business internet connections and dedicated lines",
+            "why_use8": "Detect unauthorized network access or connection hijacking",
+            "asn_title": "Understanding ASN (Autonomous System Nummer)",
+            "asn_desc": "An Autonomous System Nummer (ASN) is a globally unique identifier assigned to a network or group of networks under a single administrative control. ISPs, large organizations, and content delivery networks each have their own ASN. Dette number is used in BGP (Border Gateway Protocol) routing to determine how internet traffic flows between different networks. Knowing your ASN helps identify your network provider and understand routing paths.",
+            "use_cases_title": "Almindelig Brug Cases",
+            "use_case1_title": "🔧 Network Troubleshooting",
+            "use_case1_desc": "Identify ISP-related issues, verify routing paths, and diagnose connection problems",
+            "use_case2_title": "🔒 VPN Verification",
+            "use_case2_desc": "Confirm your VPN is working by checking if ISP changes when connected",
+            "use_case3_title": "🛡️ Sikkerhed Audits",
+            "use_case3_desc": "Verify connection authenticity and detect unauthorized network access",
+            "use_case4_title": "💼 Business Verification",
+            "use_case4_desc": "Confirm dedicated business lines and enterprise internet connections",
+            "isp_types_title": "Typer of ISPs",
+            "isp_type1": "<strong>DSL ISPs:</strong> Internet over telephone lines (ADSL, VDSL)",
+            "isp_type2": "<strong>Cable ISPs:</strong> High-speed internet via coaxial cable infrastructure",
+            "isp_type3": "<strong>Fiber Optic ISPs:</strong> Ultra-fast connections using fiber optic cables",
+            "isp_type4": "<strong>Wireless/Mobile ISPs:</strong> 4G/5G cellular internet connections",
+            "isp_type5": "<strong>Satellite ISPs:</strong> Internet via satellite for remote areas",
+            "isp_type6": "<strong>Business ISPs:</strong> Dedicated enterprise-grade connections with SLAs",
+            "privacy_note_title": "Privatliv Note",
+            "privacy_note_desc": "Din ISP can see all unencrypted internet traffic and the websites you visit (but not HTTPS content). They may log connection data, browsing history, and DNS queries. Brug a VPN to encrypt your traffic and prevent ISP monitoring. Vores værktøj only displays publicly available information that websites can already see."
+        },
+        "results": {
+            "ip_address": "",
+            "asn": ""
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": ""
+        },
+        "js": {
+            "error_loading": ""
+        }
+    },
+    "whois-lookup": {
+        "meta": {
+            "title": "WHOIS-opslagsværktøj - Gratis online domæneinformationskontrol",
+            "description": "Gratis WHOIS lookup værktøj to tjek domain registration details. Vis registrar, nameservers, expiration date, and domain status instantly.",
+            "h1": "WHOIS-opslagsværktøj",
+            "subtitle": "Query WHOIS database for domain registration & ownership details"
+        },
+        "form": {
+            "domain_label": "Domain Name",
+            "domain_placeholder": "example.com",
+            "button": "Lookup WHOIS",
+            "button_loading": "Looking up..."
+        },
+        "content": {
+            "form_hint": "Indtast domain without http:// or https://",
+            "what_is_title": "Hvad er WHOIS Lookup?",
+            "what_is_desc": "WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.",
+            "why_use_title": "Hvorfor Brug WHOIS Lookup?",
+            "why_use_desc": "WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors' domains.",
+            "key_info_title": "Key Information Provided",
+            "key_info1": "<strong>Registrant Information:</strong> Domain owner details (may be privacy protected)",
+            "key_info2": "<strong>Registration Datos:</strong> Hvornår domain was registered and last updated",
+            "key_info3": "<strong>Expiration Dato:</strong> Hvornår domain registration expires",
+            "key_info4": "<strong>Registrar:</strong> Company managing the domain registration",
+            "key_info5": "<strong>Name Servers:</strong> DNS servers hosting the domain",
+            "key_info6": "<strong>Domain Status:</strong> Current status codes and locks",
+            "how_to_title": "Hvordan Brug",
+            "how_to1": "Indtast the domain name you want to lookup",
+            "how_to2": "Klik \"Lookup WHOIS\" button",
+            "how_to3": "Review comprehensive registration information",
+            "how_to4": "Brug the data for your research or verification needs",
+            "privacy_title": "Privatliv and WHOIS",
+            "privacy_desc": "Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. Dette protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws."
+        },
+        "results": {
+            "title": ""
+        },
+        "faq": {
+            "title": "",
+            "q1": "",
+            "a1": "",
+            "q2": "",
+            "a2": "",
+            "q3": "",
+            "a3": "",
+            "q4": "",
+            "a4": ""
+        }
+    }
+}

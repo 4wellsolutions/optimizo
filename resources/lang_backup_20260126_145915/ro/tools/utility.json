@@ -1,0 +1,332 @@
+{
+    "password-generator": {
+        "meta": {
+            "title": "Secure Password Generator - Instrument de siguranță online gratuit",
+            "description": "Generează instantaneu parole puternice, sigure și aleatorii, cu lungime și setări de caractere personalizabile.",
+            "h1": "Generator de parole sigure",
+            "subtitle": "Generează instantaneu parole puternice și aleatorii"
+        },
+        "editor": {
+            "title": "Generează-ți Parola Securizată Acum",
+            "length_label": "Lungime Parolă:",
+            "chars": "caractere",
+            "strength": {
+                "weak": "8 (Slabă)",
+                "good": "16 (Bună)",
+                "strong": "32 (Puternică)",
+                "very_strong": "64 (Foarte Puternică)"
+            },
+            "include_label": "Include Tipuri de Caractere:",
+            "option_uppercase": "Litere Mari (A-Z)",
+            "option_uppercase_desc": "Adaugă litere majuscule pentru complexitate",
+            "option_lowercase": "Litere Mici (a-z)",
+            "option_lowercase_desc": "Esențiale pentru puterea parolei",
+            "option_numbers": "Cifre (0-9)",
+            "option_numbers_desc": "Crește entropia parolei",
+            "option_symbols": "Simboluri Speciale (!@#$%)",
+            "option_symbols_desc": "Protecție maximă de securitate",
+            "btn_generate": "Generează Parolă Puternică",
+            "result_title": "Parola Ta Generată",
+            "strength_score": "Scor de Securitate:",
+            "btn_copy_text": "Copiază Parola",
+            "btn_copy_final": "Copiat în Clipboard",
+            "btn_regenerate": "Regenerează"
+        },
+        "content": {
+            "faq_hero_title": "De ce să folosești Generatorul nostru de Parole Securizate?",
+            "faq": {
+                "q1": "Cât de sigure sunt parolele generate de acest instrument?",
+                "a1": "Generatorul nostru de parole folosește generarea de numere aleatorii securizate criptografic. Parolele sunt generate în întregime în browserul tău folosind metoda JavaScript crypto.getRandomValues(), asigurând un caracter aleatoriu real și securitate maximă. Nu stocăm, nu transmitem și nu înregistrăm niciodată parolele generate.",
+                "q2": "Care este lungimea ideală a unei parole?",
+                "a2": "Recomandăm un minim de 16 caractere pentru o securitate puternică. Parolele mai lungi (24-32 de caractere) oferă o protecție și mai bună împotriva atacurilor de tip brute-force. Generatorul nostru suportă până la 64 de caractere pentru securitate maximă.",
+                "q3": "Ar trebui să includ caractere speciale în parola mea?",
+                "a3": "Da, absolut! Includerea caracterelor speciale (!@#$%^&*) crește semnificativ complexitatea și entropia parolei. O parolă cu litere mari, litere mici, cifre și simboluri este exponențial mai greu de spart decât una care conține doar litere și cifre.",
+                "q4": "Cum rețin parolele complexe?",
+                "a4": "Nu încerca să le memorezi! Folosește un manager de parole de renume precum LastPass, 1Password, Bitwarden sau Dashlane pentru a stoca în siguranță toate parolele tale. Managerele de parole îți criptează parolele și necesită doar reținerea unei singure parole principale (master).",
+                "q5": "Este sigur să folosesc un generator de parole online?",
+                "a5": "Da, generatorul nostru de parole este complet sigur deoarece toată generarea parolelor are loc local în browserul tău. Parolele nu sunt niciodată trimise către serverele noastre sau stocate undeva.",
+                "q6": "Cât de des ar trebui să îmi schimb parolele?",
+                "a6": "Pentru conturile critice (e-mail, banking, serviciu), schimbă parolele la fiecare 3-6 luni. Dacă suspectezi o breșă de securitate sau primești o alertă de securitate, schimbă parola imediat."
+            },
+            "seo": {
+                "title": "Înțelegerea Securității Parolelor și Criptării",
+                "p1": "Securitatea parolelor este fundamentul siguranței online. O parolă puternică acționează ca prima linie de apărare împotriva accesului neautorizat la informațiile tale personale, datele financiare și identitatea digitală.",
+                "p2": "Puterea unei parole este măsurată prin entropia sa - cantitatea de caracter aleatoriu și imprevizibilitate. O parolă de 16 caractere cu toate tipurile de caractere are o entropie semnificativ mai mare decât o parolă simplă de 8 caractere.",
+                "p3": "Instrumentul nostru gratuit de generare a parolelor este conceput pentru toată lumea - de la persoane fizice care își protejează conturile personale la companii care securizează accesul angajaților. Generează parole nelimitate, complet gratuit, fără a fi necesară înregistrarea."
+            }
+        },
+        "js": {
+            "generating": "Se generează Parola Securizată...",
+            "strength": {
+                "very_strong": "✓ Foarte Puternică - Securitate excelentă a parolei!",
+                "strong": "✓ Puternică - Bună securitate a parolei.",
+                "medium": "⚠ Medie - Ia în calcul întărirea acesteia.",
+                "weak": "⚠ Slabă - Te rugăm să generezi o parolă mai puternică."
+            },
+            "error_generating": "Eroare la generarea parolei. Te rugăm să încerci din nou",
+            "copied": "Copiat!",
+            "error_copy": "Eroare la copierea parolei. Te rugăm să o copiezi manual."
+        }
+    },
+    "qr-code-generator": {
+        "meta": {
+            "title": "Generator de coduri QR - Creator online gratuit de QR personalizat",
+            "description": "Creează instantaneu coduri QR personalizate pentru URL-uri, text, WiFi și multe altele. Descarcă imagini PNG de înaltă calitate.",
+            "h1": "Generator de coduri QR",
+            "subtitle": "Creează instantaneu coduri QR personalizate pentru orice scop"
+        },
+        "editor": {
+            "title": "Generează Cod QR",
+            "label_text": "Introdu Text sau URL",
+            "ph_text": "Introdu textul, URL-ul sau orice date pe care dorești să le encodezi...",
+            "label_size": "Dimensiune Cod QR",
+            "opt_small": "Mic (128x128)",
+            "opt_medium": "Mediu (256x256)",
+            "opt_large": "Mare (512x512)",
+            "opt_xl": "Foarte Mare (1024x1024)",
+            "btn_generate": "Generează Cod QR",
+            "btn_download": "Descarcă Cod QR",
+            "preview_title": "Previzualizare",
+            "preview_placeholder": "Codul tău QR va apărea aici"
+        },
+        "content": {
+            "hero_title": "Generator Gratuit de Coduri QR",
+            "hero_subtitle": "Creează instantaneu coduri QR personalizate pentru orice scop",
+            "p1": "Generatorul nostru gratuit de Coduri QR creează coduri QR de înaltă calitate instantaneu. Perfect pentru afaceri, marketeri, organizatori de evenimente și oricine are nevoie să partajeze informații rapid. Generează coduri QR pentru URL-uri, text, informații de contact, acreditări WiFi și multe altele. Descarcă în mai multe dimensiuni și folosește oriunde - complet gratuit, fără a fi necesară înregistrarea.",
+            "faq": {
+                "q1": "Sunt codurile QR permanente?",
+                "a1": "Da! Codurile QR sunt statice și permanente. Odată generate, vor funcționa întotdeauna atâta timp cât datele encodate (cum ar fi un URL) rămân valide.",
+                "q2": "Cât costă utilizarea acestui generator?",
+                "a2": "Instrumentul nostru este 100% gratuit. Poți genera oricâte coduri QR ai nevoie, fără costuri ascunse sau abonamente.",
+                "q3": "Ce dimensiune ar trebui să folosesc pentru imprimare?",
+                "a3": "Pentru cărți de vizită, folosește cel puțin 256px. Pentru postere și bannere, folosește 512px sau 1024px. Cu cât dimensiunea de imprimare este mai mare, cu atât codul QR ar trebui să fie mai mare pentru o scanare ușoară.",
+                "q4": "Pot urmări scanările codurilor QR?",
+                "a4": "Instrumentul nostru generează coduri QR statice fără urmărire. Pentru a urmări scanările, folosește un serviciu de scurtare a URL-urilor cu analize (analytics) înainte de a genera codul QR, sau folosește un serviciu de coduri QR dinamice.",
+                "q5": "Există o limită la cât de multe date pot encoda?",
+                "a5": "Codurile QR pot stoca până la 4.296 de caractere alfanumerice, dar pentru cele mai bune rezultate de scanare, păstrează datele concise. URL-urile sub 100 de caractere funcționează cel mai bine.",
+                "q6": "Expiră codurile QR?",
+                "a6": "Nu, codurile QR în sine nu expiră niciodată. Totuși, dacă codul QR trimite către un URL care este șters sau modificat, codul QR nu va mai funcționa corect."
+            },
+            "features_title": "Caracteristici",
+            "features": {
+                "instant": {
+                    "title": "Generare Instantanee",
+                    "desc": "Creează coduri QR în câteva secunde cu previzualizare în timp real"
+                },
+                "sizes": {
+                    "title": "Dimensiuni Multiple",
+                    "desc": "Alege de la 128px la 1024px pentru orice scenariu de utilizare"
+                },
+                "download": {
+                    "title": "Descărcare Ușoară",
+                    "desc": "Descarcă imaginea PNG cu un singur clic"
+                },
+                "privacy": {
+                    "title": "Confidențialitate pe Primul Loc",
+                    "desc": "Toată procesarea are loc în browserul tău"
+                },
+                "free": {
+                    "title": "100% Gratuit",
+                    "desc": "Fără limite, fără filigrane, fără înregistrare"
+                },
+                "compatibility": {
+                    "title": "Compatibilitate Universală",
+                    "desc": "Funcționează cu toate scanerele de coduri QR"
+                }
+            },
+            "uses_title": "🎯 Cazuri de Utilizare Comune",
+            "uses": {
+                "urls": {
+                    "title": "🔗 URL-uri Website",
+                    "desc": "Direcționează utilizatorii instantaneu către site-ul tău, pagina de destinație sau magazinul online"
+                },
+                "contact": {
+                    "title": "👤 Informații de Contact",
+                    "desc": "Partajează vCards cu detalii despre e-mail, telefon și adresă"
+                },
+                "social": {
+                    "title": "👍 Rețele Sociale",
+                    "desc": "Link către profilurile tale sociale, canalul YouTube sau Instagram"
+                },
+                "tickets": {
+                    "title": "🎟️ Bilete la Evenimente",
+                    "desc": "Generează bilete scanabile pentru evenimente și conferințe"
+                },
+                "product": {
+                    "title": "📦 Informații despre Produs",
+                    "desc": "Adaugă coduri QR pe produse pentru manuale, specificații sau autenticitate"
+                },
+                "payment": {
+                    "title": "💳 Linkuri de Plată",
+                    "desc": "Activează plăți rapide prin PayPal, Venmo sau portofele crypto"
+                }
+            },
+            "how_title": "📚 Cum se Folosește",
+            "how_steps": {
+                "1": {
+                    "title": "Introdu datele tale:",
+                    "desc": "Scrie sau lipește textul, URL-ul sau informația pe care dorești să o encodezi"
+                },
+                "2": {
+                    "title": "Alege dimensiunea:",
+                    "desc": "Selectează dimensiunea codului QR în funcție de locul unde îl vei folosi"
+                },
+                "3": {
+                    "title": "Generează:",
+                    "desc": "Apasă pe „Generează Cod QR” pentru a-ți crea codul instantaneu"
+                },
+                "4": {
+                    "title": "Descarcă:",
+                    "desc": "Apasă pe „Descarcă Cod QR” pentru a salva imaginea PNG"
+                },
+                "5": {
+                    "title": "Folosește oriunde:",
+                    "desc": "Imprimă, partajează digital sau adaugă în materialele de marketing"
+                }
+            },
+            "best_practices_title": "💡 Bune Practici",
+            "best_practices": {
+                "test": {
+                    "title": "Testează înainte de imprimare:",
+                    "desc": "Scanează întotdeauna codul tău QR pentru a verifica dacă funcționează corect"
+                },
+                "size": {
+                    "title": "Folosește dimensiunea potrivită:",
+                    "desc": "Codurile QR mai mari sunt mai ușor de scanat de la distanță"
+                },
+                "contrast": {
+                    "title": "Asigură contrastul:",
+                    "desc": "Imprimă pe fundaluri albe sau deschise pentru cea mai bună scanare"
+                },
+                "context": {
+                    "title": "Adaugă context:",
+                    "desc": "Include un îndemn la acțiune precum „Scanează pentru a vizita site-ul”"
+                },
+                "short": {
+                    "title": "Păstrează URL-urile scurte:",
+                    "desc": "URL-urile mai scurte creează coduri QR mai simple și mai ușor de scanat"
+                }
+            },
+            "faq_title": "Întrebări Frecvente"
+        },
+        "js": {
+            "error_empty": "Te rugăm să introduci textul sau URL-ul pentru a genera codul QR",
+            "error_generating": "Eroare la generarea codului QR.",
+            "error_no_code": "Te rugăm să generezi mai întâi un cod QR",
+            "error_image_not_found": "Imaginea codului QR nu a fost găsită"
+        }
+    },
+    "random-number-generator": {
+        "meta": {
+            "title": "Generator de numere aleatorii - Instrument de matematică online gratuit",
+            "description": "Generează numere întregi cu adevărat aleatorii în intervalul specificat. Util pentru jocuri, tombole și cadouri.",
+            "h1": "Generator de numere aleatorii",
+            "subtitle": "Generează numere întregi cu adevărat aleatorii în intervalul tău specificat"
+        },
+        "editor": {
+            "label_min": "Valoare Minimă",
+            "label_max": "Valoare Maximă",
+            "label_count": "Cantitate",
+            "btn_generate": "Generează Numere",
+            "label_result": "Rezultat"
+        },
+        "js": {
+            "error_invalid": "Te rugăm să introduci numere valide",
+            "error_min_max": "Valoarea minimă nu poate fi mai mare decât cea maximă"
+        }
+    },
+    "username-checker": {
+        "meta": {
+            "title": "Verificator de disponibilitate nume de utilizator - Căutare online gratuită",
+            "description": "Verifică instantaneu disponibilitatea numelui de utilizator pe marile platforme sociale.",
+            "h1": "Verificator de disponibilitate nume de utilizator",
+            "subtitle": "Verifică disponibilitatea numelui de utilizator pe toate platformele sociale majore"
+        },
+        "editor": {
+            "title_enter": "Introdu Numele de Utilizator",
+            "label_username": "Nume de Utilizator",
+            "ph_username": "ion-popescu",
+            "help_username": "Introdu numele de utilizator fără simbolul @",
+            "btn_check": "Verifică Disponibilitatea",
+            "title_results": "Rezultate Disponibilitate",
+            "btn_checking": "Se verifică...",
+            "status_available": "Disponibil",
+            "status_taken": "Ocupat",
+            "link_view": "Vezi Profil →"
+        },
+        "content": {
+            "p1": "Verifică instantaneu disponibilitatea numelui de utilizator pe toate platformele majore de social media cu verificatorul nostru gratuit. Găsește handle-ul perfect pentru brandul tău pe Twitter, Instagram, GitHub, TikTok, Facebook, LinkedIn, YouTube, Reddit și multe altele. Securizează-ți identitatea brandului revendicând același nume de utilizator pe toate platformele înainte ca altcineva să o facă. Perfect pentru branding personal, conturi de afaceri și marketing prin influenceri.",
+            "platforms_title": "Platforme Suportate",
+            "platforms": {
+                "social": {
+                    "title": "Social Media",
+                    "list": [
+                        "Twitter (X): Verifică disponibilitatea @username",
+                        "Instagram: Găsește handle-ul tău perfect",
+                        "TikTok: Securizează-ți @username",
+                        "Facebook: Verifică URL-ul profilului"
+                    ]
+                },
+                "professional": {
+                    "title": "Profesional",
+                    "list": [
+                        "LinkedIn: Profil profesional",
+                        "GitHub: Nume de utilizator pentru dezvoltatori",
+                        "Medium: Profil de scriitor",
+                        "YouTube: Handle pentru canal"
+                    ]
+                }
+            },
+            "best_practices_title": "Bune Practici pentru Numele de Utilizator",
+            "best_practices": {
+                "short": {
+                    "title": "Păstrează-l Scurt",
+                    "desc": "Țintește către 6-15 caractere pentru a fi ușor de reținut și de tastat"
+                },
+                "spell": {
+                    "title": "Ușor de Scris",
+                    "desc": "Evită ortografiile complexe, cifrele și caracterele speciale"
+                },
+                "brand": {
+                    "title": "Consistent cu Brandul",
+                    "desc": "Folosește același nume de utilizator pe toate platformele pentru recunoaștere"
+                },
+                "trends": {
+                    "title": "Evită Trendurile",
+                    "desc": "Nu folosi cuvinte la modă care ar putea deveni învechite"
+                },
+                "seo": {
+                    "title": "Prietenos cu SEO",
+                    "desc": "Include cuvinte cheie relevante pentru o mai bună descoperire"
+                },
+                "fast": {
+                    "title": "Acționează Rapid",
+                    "desc": "Revendică-ți numele de utilizator rapid înainte de a fi ocupat"
+                }
+            },
+            "tips_title": "Sfaturi Pro pentru Alegerea unui Nume de Utilizator",
+            "tips_list": {
+                "items": [
+                    "Verifică disponibilitatea pe toate platformele înainte de a finaliza",
+                    "Ia în considerare extinderea viitoare a afacerii atunci când alegi",
+                    "Fă-l ușor de pronunțat pentru marketing-ul prin viu grai",
+                    "Evită folosirea underscore-urilor sau a cifrelor dacă este posibil",
+                    "Securizează numele de domeniu care se potrivește cu numele tău de utilizator"
+                ]
+            },
+            "faq_title": "Întrebări Frecvente",
+            "faq": {
+                "q1": "Câte platforme pot verifica simultan?",
+                "a1": "Verificatorul nostru de nume de utilizator acceptă peste 10 platforme majore, inclusiv Twitter, Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium și Pinterest. Verifică toate platformele simultan cu o singură căutare.",
+                "q2": "Ce aleg dacă numele de utilizator dorit este ocupat?",
+                "a2": "Încearcă variații precum adăugarea locației, domeniului de activitate sau a unui cuvânt relevant. De asemenea, poți folosi underscore-uri, puncte sau abrevieri. Instrumentul nostru te ajută să testezi rapid mai multe variații.",
+                "q3": "Ar trebui să folosesc același nume de utilizator peste tot?",
+                "a3": "Da! Folosirea aceluiași nume de utilizator pe toate platformele îți întărește identitatea brandului, te face mai ușor de găsit și ajută la recunoașterea și marketing-ul pe mai multe platforme.",
+                "q4": "Pot rezerva un nume de utilizator fără a crea un cont?",
+                "a4": "Nu, trebuie să creezi un cont pe fiecare platformă pentru a revendica un nume de utilizator. Instrumentul nostru verifică doar disponibilitatea - va trebui să te înregistrezi pe fiecare platformă pentru a-ți securiza numele de utilizator.",
+                "q5": "Cât de des ar trebui să verific disponibilitatea numelui de utilizator?",
+                "a5": "Disponibilitatea numelor de utilizator se schimbă constant. Dacă găsești un nume de utilizator disponibil care îți place, revendică-l imediat pe toate platformele. Numele de utilizator populare pot fi ocupate în câteva ore sau chiar minute."
+            }
+        }
+    }
+}

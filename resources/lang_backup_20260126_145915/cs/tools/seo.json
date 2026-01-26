@@ -1,0 +1,888 @@
+{
+    "bing-serp-checker": {
+        "meta": {
+            "title": "Bing SERP Checker – bezplatný online nástroj pro hodnocení",
+            "description": "Bezplatný nástroj pro kontrolu pozic vašeho webu ve vyhledávači Bing. Přesné výsledky v reálném čase pro libovolnou lokalitu a zařízení.",
+            "h1": "Kontrola Bing SERP",
+            "subtitle": "Zkontrolujte pozice na Bingu pro svá klíčová slova v různých lokalitách"
+        },
+        "interface": {
+            "simulation_title": "Simulátor vyhledávání Bing",
+            "keyword_label": "Cílové klíčové slovo",
+            "location_label": "Lokalita (volitelné)",
+            "location_placeholder": "Zadejte město, stát nebo zemi...",
+            "market_label": "Trh / Jazyk",
+            "device_label": "Typ zařízení",
+            "device_desktop": "Počítač",
+            "device_mobile": "Mobil",
+            "no_login": "Bez nutnosti přihlášení",
+            "realtime_results": "Výsledky v reálném čase"
+        },
+        "form": {
+            "keyword_placeholder": "např. marketingová agentura Praha",
+            "button": "Zkontrolovat pozice na Bingu"
+        },
+        "markets": {
+            "us": "USA (Angličtina)",
+            "uk": "Velká Británie (Angličtina)",
+            "ca": "Kanada (Angličtina)",
+            "au": "Austrálie (Angličtina)",
+            "de": "Německo (Němčina)",
+            "fr": "Francie (Francouzština)",
+            "es": "Španělsko (Španělština)",
+            "it": "Itálie (Italština)",
+            "nl": "Nizozemsko (Holandština)",
+            "br": "Brazílie (Portugalština)",
+            "jp": "Japonsko (Japonština)",
+            "in": "Indie (Angličtina)"
+        },
+        "content": {
+            "main_title": "Pokročilá kontrola pozic na Bingu",
+            "main_subtitle": "Sledujte svůj výkon ve druhém největším vyhledávači na světě. Získejte přesná, lokalizovaná data o pozicích pro optimalizaci své SEO strategie pro Bing.",
+            "feature1_title": "100% Přesná data",
+            "feature1_desc": "Získáváme výsledky přímo z Bingu v reálném čase, takže vidíte přesně to, co vidí vaši potenciální návštěvníci.",
+            "feature2_title": "Specifické pro lokalitu",
+            "feature2_desc": "Kontrolujte pozice, jako byste vyhledávali z konkrétních měst nebo zemí. Klíčové pro lokální SEO kampaně.",
+            "feature3_title": "Simulace zařízení",
+            "feature3_desc": "Přepínejte mezi zobrazením pro počítač a mobil pro analýzu rozdílů v pozicích mezi zařízeními.",
+            "serp_features_title": "Analýza funkcí Bing SERP",
+            "sf_snippets_title": "Doporučené úryvky (Featured Snippets)",
+            "sf_snippets_desc": "Bing často poskytuje bohaté odpovědi a „inteligentní odpovědi“ na pozici nula. Zkontrolujte, zda váš obsah tyto pozice získává.",
+            "sf_places_title": "Bing Places",
+            "sf_places_desc": "Ekvivalent Google Local Pack u Bingu. Zásadní pro lokální firmy. Použijte funkci „Lokalita“ k ověření své pozice v <strong>Bing Places</strong>.",
+            "sf_visual_title": "Vizuální vyhledávání",
+            "sf_visual_desc": "Bing klade velký důraz na vizuální výsledky. Sledujte, jak se vaše obrázky objevují v rozhraních plných grafiky.",
+            "sf_knowledge_title": "Informační karty (Knowledge Cards)",
+            "sf_knowledge_desc": "Informační panely na pravé straně. Zkontrolujte, zda Bing jasně rozumí entitě vaší značky.",
+            "why_check_title": "Proč sledovat pozice na Bingu?",
+            "why_check_desc": "I když Google dominuje, Bing pohání vyhledávání pro Yahoo, AOL a miliony zařízení s Windows. Často má vyšší konverzní poměry a menší konkurenci. Ignorování Bingu znamená ztrátu až ~30 % objemu vyhledávání na počítačích na některých trzích.",
+            "how_accurate_title": "Jak přesný je tento nástroj?",
+            "how_accurate_desc": "Náš nástroj provádí živé dotazy na servery Bingu v momentě, kdy kliknete na „Zkontrolovat“. Nepoužíváme data z mezipaměti. Výsledky jsou aktuální a odrážejí přesnou podobu SERP pro vybrané parametry."
+        },
+        "faq": {
+            "title": "Často kladené otázky",
+            "q1": "Je tato kontrola pozic na Bingu zdarma?",
+            "a1": "Ano! Náš **bing rank checker** je zcela zdarma. Můžete kontrolovat neomezený počet klíčových slov bez jakýchkoliv nákladů.",
+            "q2": "Ovlivňuje to pozice na Yahoo?",
+            "a2": "Ano, obecně řečeno. Vyhledávání Yahoo je z velké části poháněno indexem Bingu. Optimalizace pro Bing často vede ke zlepšení i na Yahoo.",
+            "q3": "Mohu kontrolovat lokální pozice pro konkrétní město?",
+            "a3": "Rozhodně. Zadejte své město do pole „Lokalita“. K vyhledávacímu dotazu přidáme parametry polohy, abyste viděli <strong>lokální výsledky Bing</strong> jako běžní uživatelé."
+        }
+    },
+    "broken-links-checker": {
+        "meta": {
+            "title": "Kontrola nefunkčních odkazů – bezplatný online audit webových stránek",
+            "description": "Bezplatný nástroj pro kontrolu nefunkčních odkazů. Skenujte svůj web na mrtvé odkazy, chyby 404 a fixujte URL pro lepší SEO.",
+            "h1": "Kontrola nefunkčních odkazů",
+            "subtitle": "Najděte a opravte nefunkční odkazy na svém webu pro lepší SEO a UX"
+        },
+        "interface": {
+            "scan_title": "Kontrola nefunkčních odkazů",
+            "scan_subtitle": "Najděte nefunkční odkazy, přesměrování a další problémy.",
+            "url_label": "URL adresa webu",
+            "button": "Skenovat nefunkční odkazy",
+            "button_scanning": "Skenuji...",
+            "legend_ok": "200 OK",
+            "legend_err": "404/Chyba"
+        },
+        "progress": {
+            "extracting": "Extrahuji odkazy...",
+            "stop": "Zastavit",
+            "processing": "Zpracovávám odkazy postupně...",
+            "processed": "Zpracováno",
+            "of": "z",
+            "links": "odkazů",
+            "checking": "Kontroluji odkazy..."
+        },
+        "stats": {
+            "total": "Celkem odkazů",
+            "working": "Funkční (200)",
+            "redirects": "Přesměrování (3xx)",
+            "broken": "Nefunkční (4xx/5xx)"
+        },
+        "results": {
+            "download": "Stáhnout CSV report",
+            "detailed_analysis": "Podrobná analýza",
+            "status": "Stav",
+            "link_url": "URL odkazu",
+            "anchor_text": "Text odkazu (Anchor)",
+            "type": "Typ"
+        },
+        "content": {
+            "main_title": "Proč kontrolovat nefunkční odkazy?",
+            "main_subtitle": "Nefunkční odkazy poškozují důvěryhodnost vašeho webu, uživatelskou zkušenost (UX) a výkon v SEO. Náš bezplatný nástroj vám pomůže identifikovat a opravit mrtvé odkazy dříve, než uškodí vašim pozicím.",
+            "what_is_title": "Co je kontrola nefunkčních odkazů?",
+            "what_is_desc": "Kontrola nefunkčních odkazů je nástroj, který skenuje vaše webové stránky a hledá odkazy, které již nefungují (chyby 404, chyby serveru nebo nefunkční přesměrování). Pomáhá udržovat web v dobrém stavu.",
+            "how_works_title": "Jak to funguje?",
+            "how_works_intro": "Náš nástroj postupuje ve 3 jednoduchých krocích:",
+            "how_works_step1": "<strong>Skenování:</strong> Zadáte URL a my extrahujeme všechny odkazy z dané stránky.",
+            "how_works_step2": "<strong>Kontrola:</strong> Testujeme každý odkaz a ověřujeme jeho stav (200, 404, 301 atd.).",
+            "how_works_step3": "<strong>Report:</strong> Získáte podrobný přehled nefunkčních odkazů, které vyžadují opravu.",
+            "pro_tip_title": "💡 Pro tip:",
+            "pro_tip_desc": "Spouštějte tuto kontrolu pravidelně (měsíčně nebo čtvrtletně), abyste zachytili nové mrtvé odkazy. Dodržujte plán údržby pro zdravý web!",
+            "types_title": "Typy nefunkčních odkazů",
+            "common_causes_title": "Běžné příčiny nefunkčních odkazů",
+            "cc_1": "❌ <strong>Překlepy v URL:</strong> Chybně napsané odkazy při tvorbě obsahu.",
+            "cc_2": "❌ <strong>Smazané stránky:</strong> Odstraněný obsah bez nastavení 301 přesměrování.",
+            "cc_3": "❌ <strong>Restrukturalizace webu:</strong> Změny struktury URL při redesignu.",
+            "cc_4": "❌ <strong>Hniloba externích odkazů:</strong> Externí weby mažou nebo přesouvají svůj obsah.",
+            "cc_5": "❌ <strong>Expirace domény:</strong> Odkazované weby trvale zanikají.",
+            "cc_6": "❌ <strong>Změny protokolu:</strong> Přechod z HTTP na HTTPS bez správných přesměrování.",
+            "best_practices_title": "Doporučené postupy"
+        },
+        "benefits": {
+            "ux_title": "Uživatelská zkušenost",
+            "ux_desc": "Nefunkční odkazy frustrují návštěvníky a zvyšují bounce rate. Dopřejte uživatelům plynulé procházení webu.",
+            "seo_title": "Dopad na SEO",
+            "seo_desc": "Vyhledávače penalizují stránky s mnoha nefunkčními odkazy. Udržujte své pozice včasnou opravou mrtvých odkazů.",
+            "maintenance_title": "Snadná údržba",
+            "maintenance_desc": "Rychle identifikujte a opravte problémy dříve, než poškodí reputaci vašeho webu a viditelnost ve vyhledávání."
+        },
+        "link_types": {
+            "type1_title": "🔴 404 Nenalezeno",
+            "type1_desc": "Nejběžnější nefunkční odkaz. Stránka již na serveru neexistuje.",
+            "type2_title": "🟡 301/302 Přesměrování",
+            "type2_desc": "Stránka se přesunula. I když není „mrtvá“, příliš mnoho přesměrování web zpomaluje.",
+            "type3_title": "🔴 500 Chyba serveru",
+            "type3_desc": "Server narazil na problém. Tyto chyby vyžadují okamžitou pozornost.",
+            "type4_title": "🟢 Timeout (Časový limit)",
+            "type4_desc": "Serveru trvalo příliš dlouho odpovědět. Může to značit problémy s výkonem."
+        },
+        "best_practices": {
+            "bp1_title": "Pravidelné audity",
+            "bp1_desc": "Kontrolujte web měsíčně, zejména po aktualizacích obsahu.",
+            "bp2_title": "Používejte 301 přesměrování",
+            "bp2_desc": "Při mazání stránek vždy nastavte trvalé přesměrování na nový relevantní obsah.",
+            "bp3_title": "Sledujte externí odkazy",
+            "bp3_desc": "Externí weby se často mění. Prověřujte odchozí odkazy jednou za čtvrtletí.",
+            "bp4_title": "Dokumentujte změny",
+            "bp4_desc": "Veďte si log změn URL pro budoucí referenci.",
+            "bp5_title": "Priorita vnitřních odkazů",
+            "bp5_desc": "Nejdříve opravte interní nefunkční odkazy, ty máte plně pod kontrolou.",
+            "bp6_title": "Relativní URL",
+            "bp6_desc": "Pro interní odkazy používejte relativní cesty, zamezíte problémům při změnách domény."
+        },
+        "faq": {
+            "title": "Často kladené otázky",
+            "q1": "Jak často bych měl kontrolovat nefunkční odkazy?",
+            "a1": "Pro většinu webů stačí měsíční kontrola. U e-shopů doporučujeme týdenní audit. Po každém velkém redesignu spusťte kontrolu ihned.",
+            "q2": "Škodí nefunkční odkazy mému SEO?",
+            "a2": "Ano, nepřímo. Pár mrtvých odkazů nevadí, ale <strong>velké množství</strong> signalizuje špatnou údržbu, což zvyšuje bounce rate a plýtvá crawl budgetem.",
+            "q3": "Jaký je rozdíl mezi interním a externím nefunkčním odkazem?",
+            "a3": "<strong>Interní</strong> míří na podstránky vaší domény. <strong>Externí</strong> míří na cizí weby. Ty byste měli buď opravit na funkční alternativu, nebo odstranit.",
+            "q4": "Mohu zkontrolovat celý web najednou?",
+            "a4": "Tento nástroj kontroluje <strong>jednu stránku po druhé</strong> pro rychlé a přesné výsledky. Pro celý web doporučujeme začít nejdůležitějšími vstupními stránkami.",
+            "q_what_to_do": "Co dělat, když najdu nefunkční odkaz?",
+            "a_what_to_do_intro": "Postupujte podle této priority:",
+            "a_what_to_do_li1": "<strong>Interní:</strong> Nastavte 301 přesměrování nebo odkaz rovnou opravte v kódu/CMS.",
+            "a_what_to_do_li2": "<strong>Externí:</strong> Najděte funkční náhradu nebo využijte archive.org k dohledání starého obsahu.",
+            "a_what_to_do_li3": "<strong>Bez náhrady:</strong> Odkaz odstraňte a upravte okolní text, aby dával smysl.",
+            "a_what_to_do_li4": "<strong>Logování:</strong> Záznam o chybách vám pomůže odhalit opakující se vzorce problémů."
+        },
+        "js": {
+            "stopping": "Zastavuji skenování...",
+            "scan_stopped": "Skenování zastaveno",
+            "scan_complete": "Skenování dokončeno!",
+            "error_prefix": "Chyba: ",
+            "pending": "Čeká na vyřízení",
+            "internal": "Interní",
+            "external": "Externí"
+        }
+    },
+    "google-serp-checker": {
+        "meta": {
+            "title": "Google SERP Checker – bezplatný online nástroj SEO",
+            "description": "Bezplatný nástroj Google SERP checker pro analýzu výsledků vyhledávání a sledování pozic klíčových slov v různých lokalitách.",
+            "h1": "Google SERP Checker",
+            "subtitle": "Zkontrolujte pozice v Googlu a sledujte klíčová slova globálně"
+        },
+        "interface": {
+            "simulation_title": "Živá simulace kontroly SERP",
+            "location_label": "Lokalita",
+            "location_placeholder": "Zadejte město, zemi nebo PSČ",
+            "domain_label": "Doména Google",
+            "device_label": "Typ zařízení",
+            "device_desktop": "Počítač (Desktop)",
+            "device_mobile": "Mobil (Smartphone)",
+            "no_login": "Bez nutnosti přihlášení",
+            "realtime_results": "Výsledky v reálném čase"
+        },
+        "form": {
+            "keyword_label": "Zadejte klíčové slovo",
+            "button": "Zkontrolovat SERP"
+        },
+        "content": {
+            "main_title": "Proč používat náš bezplatný Google SERP Checker?",
+            "main_subtitle": "Ve světě SEO je přesnost vším. Náš SERP analyzátor obchází personalizační algoritmy, aby vám ukázal skutečné pozice vašeho webu.",
+            "feature1_title": "Hyper-lokální přesnost pozic v SERP",
+            "feature1_desc": "Chcete vědět, jak si stojíte na dotaz „pizza v centru Prahy“? Používáme pokročilé parametry Google UULE k simulaci přesné lokalizované kontroly.",
+            "feature2_title": "Analýza mobilního vyhledávání",
+            "feature2_desc": "Ověřte si své pozice na iPhonech a Androidu. Nenechte se zaskočit Mobile-First indexací díky naší komplexní analýze mobilního SERP.",
+            "feature3_title": "Globální sledování vyhledávání Google",
+            "feature3_desc": "Expandujete? Kontrolujte pozice ve více než 190 zemích. Přepínejte mezi Google.cz, Google.sk, Google.de, Google.co.uk a dalšími.",
+            "serp_features_title": "Porozumění funkcím Google SERP",
+            "feature_snippet_title": "Doporučené úryvky (Featured Snippets)",
+            "feature_snippet_desc": "Známé také jako „nultá pozice“, objevují se u zhruba 12 % dotazů. Náš nástroj vám pomůže zjistit, zda tuto lukrativní pozici držíte.",
+            "feature_local_title": "Local Pack (Lokální balíček)",
+            "feature_local_desc": "Seznam 3 místních firem s mapou. Zásadní pro kamenné prodejny. Použijte naši funkci „Lokalita“ k ověření vaší přítomnosti.",
+            "feature_paa_title": "Lidé se také ptají (People Also Ask)",
+            "feature_paa_desc": "Seznam otázek souvisejících s dotazem uživatele. Umístění zde může přivést významnou návštěvnost. Naše kontrola je pomáhá identifikovat.",
+            "feature_knowledge_title": "Knowledge Panel (Panel znalostí)",
+            "feature_knowledge_desc": "Informační boxy na pravé straně výsledků na počítači. Klíčové pro autoritu značky a entitní SEO.",
+            "what_is_title": "Co je SERP Checker a analyzátor?",
+            "what_is_desc": "Search Engine Results Page (SERP) Checker je diagnostický nástroj pro SEO profesionály. Umožňuje zobrazit výsledky pro konkrétní slovo tak, jak by je viděl neutrální uživatel v dané geografické lokalitě.",
+            "bubble_problem_title": "Problém „bubliny Google“",
+            "bubble_problem_desc": "Pokud prostě půjdete na Google.cz a zadáte svá slova, výsledky budou zkreslené. Google je přizpůsobuje vaší IP adrese, historii hledání a typu zařízení.",
+            "solution_text": "Náš bezplatný Google SERP Checker tuto bublinu praskne. Pomocí parametru UULE simulujeme vyhledávání z přesného místa a dáváme vám 100% čistá data."
+        },
+        "faq": {
+            "title": "Často kladené otázky",
+            "q1": "Je tento nástroj SERP zdarma pro neomezené vyhledávání?",
+            "a1": "Ano! Náš nástroj vám umožňuje kontrolovat tolik klíčových slov, kolik si přejete, bez registrace nebo předplatného. Věříme v dostupnost SEO nástrojů pro každého.",
+            "q2": "Jak funguje funkce výběru lokality?",
+            "a2": "Využíváme oficiální parametr Google UULE. Když zadáte město, najdeme jeho přesné souřadnice a zakódujeme je do požadavku na vyhledávání.",
+            "q3": "Proč vypadá moje pozice na mobilu jinak?",
+            "a3": "Google používá Mobile-First indexaci a výsledky na mobilu mají jiné rozvržení (více reklam, jiné úryvky). Použijte náš přepínač zařízení pro kontrolu mobilní verze.",
+            "q4": "Co znamená zkratka SERP?",
+            "a4": "SERP znamená Search Engine Results Page, tedy stránka s výsledky zobrazená vyhledávačem po zadání dotazu.",
+            "q5": "Můžu kontrolovat pozice pro jiné země než ČR?",
+            "a5": "Ano, náš nástroj podporuje globální vyhledávání. Stačí v nastavení vybrat odpovídající doménu Google a lokalitu."
+        }
+    },
+    "keyword-density-checker": {
+        "meta": {
+            "title": "Kontrola hustoty klíčových slov – bezplatná online SEO analýza",
+            "description": "Bezplatný nástroj pro kontrolu hustoty klíčových slov. Analyzujte frekvenci slov a optimalizujte svůj obsah pro vyhledávače.",
+            "h1": "Kontrola hustoty klíčových slov",
+            "subtitle": "Zkontrolujte využití a hustotu klíčových slov pro lepší SEO"
+        },
+        "form": {
+            "label": "Vložte text nebo URL",
+            "placeholder": "Sem vložte svůj text k analýze...",
+            "button": "Zkontrolovat hustotu"
+        },
+        "results": {
+            "title": "Statistiky klíčových slov",
+            "total_words": "Celkem slov",
+            "unique_words": "Unikátních slov",
+            "sentences": "Vět",
+            "paragraphs": "Odstavců",
+            "long_sentences": "Dlouhých vět",
+            "short_sentences": "Krátkých vět",
+            "top_keyword": "Nejčastější slovo",
+            "top_density": "Nejvyšší hustota",
+            "single_keywords_title": "Jednotlivá slova",
+            "keyword_header": "Klíčové slovo",
+            "count_header": "Počet",
+            "density_header": "Hustota",
+            "two_word_title": "Dvouslovné fráze",
+            "phrase_header": "Fráze",
+            "three_word_title": "Tříslovné fráze"
+        },
+        "content": {
+            "main_title": "Analýza hustoty klíčových slov",
+            "main_subtitle": "Optimalizujte relevanci svého obsahu analýzou frekvence klíčových slov.",
+            "intro": "Náš nástroj vám pomůže najít nejčastěji používaná slova a fráze v textu. Ideální pro SEO specialisty a autory, kteří se chtějí vyhnout „keyword stuffingu“.",
+            "what_is_title": "Co je hustota klíčových slov?",
+            "what_is_text": "Hustota klíčových slov je procentuální vyjádření výskytu klíčového slova nebo fráze vzhledem k celkovému počtu slov na stránce. Je to jeden ze základních faktorů SEO.",
+            "guidelines_title": "Doporučené hodnoty hustoty",
+            "why_use_title": "Proč kontrolovat hustotu klíčových slov?",
+            "best_practices_title": "Osvědčené postupy",
+            "faq_title": "Často kladené otázky"
+        },
+        "guidelines": {
+            "g1": "Neexistuje „dokonalé“ procento, ale hodnota <strong>1-3 %</strong> je obvykle považována za bezpečnou.",
+            "g2": "Vyhněte se „Keyword Stuffingu“ (přeplňování slovy), může to vést k penalizaci webu.",
+            "g3": "Pište přirozeně pro čtenáře, nikoliv jen pro vyhledávací boty.",
+            "g4": "Používejte synonyma a LSI klíčová slova (Latent Semantic Indexing).",
+            "g5": "Sledujte nejen jednotlivá slova, ale i fráze o 2-3 slovech."
+        },
+        "features": {
+            "f1_title": "Hloubková analýza",
+            "f1_desc": "Analyzuje jednotlivá slova i dvouslovné a tříslovné fráze.",
+            "f2_title": "Počítadlo slov",
+            "f2_desc": "Přesný počet slov, vět a odstavců.",
+            "f3_title": "Kontrola přeplnění",
+            "f3_desc": "Pomáhá identifikovat příliš časté opakování klíčových slov.",
+            "f4_title": "Bezplatný nástroj",
+            "f4_desc": "Zcela zdarma k použití bez jakýchkoliv limitů.",
+            "f5_title": "Pro autory",
+            "f5_desc": "Zlepšete kvalitu obsahu a jeho čitelnost.",
+            "f6_title": "Stop slova",
+            "f6_desc": "Inteligentní filtrace běžných spojek a předložek."
+        },
+        "best_practices": {
+            "bp1": "Soustřeďte se na kvalitu obsahu více než na konkrétní čísla hustoty.",
+            "bp2": "Vložte hlavní klíčové slovo do prvního odstavce.",
+            "bp3": "Používejte klíčová slova v nadpisech H1 a H2.",
+            "bp4": "Využívejte long-tail varianty klíčových slov.",
+            "bp5": "Nikdy neobětujte čitelnost textu kvůli SEO.",
+            "bp6": "Neopakujte stejné slovo nepřirozeně často."
+        },
+        "faq": {
+            "q1": "Jaká hustota klíčových slov je ideální?",
+            "a1": "Většina expertů doporučuje 1-2 %. Text musí především působit přirozeně při čtení.",
+            "q2": "Co je to keyword stuffing?",
+            "a2": "Jde o nekalou praktiku zahlcování stránky klíčovými slovy ve snaze zmanipulovat pozice ve vyhledávání.",
+            "q3": "Ignoruje nástroj spojky a předložky?",
+            "a3": "Ano, náš nástroj filtruje běžná stop-slova (jako „a“, „v“, „je“), aby vám ukázal hustotu významových slov.",
+            "q4": "Záleží i na hustotě frází?",
+            "a4": "Ano, vyhledávače hledají tématické celky a fráze, nikoliv jen izolovaná slova.",
+            "q5": "Můžu analyzovat přímo URL adresu?",
+            "a5": "Momentálně nástroj pracuje s textovým vstupem. Zkopírujte text své stránky a vložte jej sem."
+        },
+        "alerts": {
+            "enter_text": "Prosím, vložte nějaký text pro analýzu"
+        }
+    },
+    "meta-tag-analyzer": {
+        "meta": {
+            "title": "Meta Tag Analyzer - Online SEO Meta Checker zdarma",
+            "description": "Bezplatný analyzátor meta tagů pro kontrolu a optimalizaci vašich webových značek pro lepší SEO.",
+            "h1": "Meta Tag Analyzer",
+            "subtitle": "Komplexní analýza meta značek pro optimalizaci vyhledávání"
+        },
+        "form": {
+            "label": "Zadejte URL adresu webu",
+            "placeholder": "https://priklad.cz",
+            "button": "Analyzovat meta tagy"
+        },
+        "results": {
+            "title": "Výsledky analýzy",
+            "title_tag": "Značka titulku (Title Tag)",
+            "length": "Délka",
+            "characters": "znaků",
+            "meta_description": "Meta popis (Description)"
+        },
+        "results_labels": {
+            "other_tags": "Ostatní meta značky",
+            "seo_score": "SEO Skóre",
+            "viewport": "Viewport",
+            "charset": "Znaková sada (Charset)",
+            "robots": "Robots"
+        },
+        "content": {
+            "main_title": "Analyzátor meta tagů",
+            "main_subtitle": "S lehkostí analyzujte a optimalizujte své meta značky.",
+            "intro": "Náš bezplatný nástroj vám pomůže zkontrolovat meta značky libovolné stránky. Získejte okamžitý přehled o Titulku, Popisu a dalších důležitých SEO prvcích.",
+            "what_are_title": "Co jsou meta tagy?",
+            "what_are_desc": "Meta tagy jsou úryvky textu, které popisují obsah stránky; nezobrazují se přímo čtenáři, ale jsou součástí zdrojového kódu. Pomáhají vyhledávačům pochopit téma dané podstránky.",
+            "essential_title": "Základní meta značky pro SEO",
+            "common_mistakes_title": "Běžné chyby v meta značkách",
+            "mistake_1": "Chybějící značky Titulek (Title) nebo Popis (Description)",
+            "mistake_2": "Překročení doporučeného limitu počtu znaků",
+            "mistake_3": "Duplicitní meta tagy napříč různými stránkami",
+            "mistake_4": "Používání nerelevantních klíčových slov",
+            "mistake_5": "Chybějící viewport tag pro mobilní optimalizaci",
+            "mistake_6": "Vícenásobné Title tagy na jedné stránce",
+            "why_analyze_title": "Proč analyzovat meta značky?"
+        },
+        "meta_tags": {
+            "title_tag_title": "Značka titulku (Title)",
+            "title_tag_desc": "Nejdůležitější meta značka. Definuje titulek vaší stránky ve výsledcích vyhledávání.",
+            "title_optimal_length": "Optimální délka:",
+            "title_optimal_value": "50-60 znaků",
+            "title_best_practice": "Doporučení:",
+            "title_best_value": "Vložte hlavní klíčové slovo co nejblíže k začátku.",
+            "meta_desc_title": "Meta popis (Description)",
+            "meta_desc_desc": "Poskytuje shrnutí obsahu stránky. Ovlivňuje míru propliku (CTR).",
+            "meta_desc_optimal_length": "Optimální délka:",
+            "meta_desc_optimal_value": "150-160 znaků",
+            "meta_desc_best_practice": "Doporučení:",
+            "meta_desc_best_value": "Pište poutavě s jasnou výzvou k akci (CTA).",
+            "og_title": "Open Graph (Sociální sítě)",
+            "og_desc": "Řídí, jak vypadá váš obsah při sdílení na Facebooku nebo LinkedInu.",
+            "og_key_tags": "Klíčové značky:",
+            "og_key_value": "og:title, og:description, og:image",
+            "og_platform": "Platformy:",
+            "og_platform_value": "Facebook, LinkedIn, Pinterest",
+            "twitter_title": "Twitter Cards",
+            "twitter_desc": "Specifické meta značky pro optimalizaci zobrazení obsahu na Twitteru/X.",
+            "twitter_key_tags": "Klíčové značky:",
+            "twitter_key_value": "twitter:card, twitter:title, twitter:image",
+            "twitter_types": "Typy:",
+            "twitter_types_value": "Summary, Summary with Large Image"
+        },
+        "benefits": {
+            "b1_title": "Lepší pozice",
+            "b1_desc": "Správné značky pomáhají vyhledávačům porozumět vašemu obsahu.",
+            "b2_title": "Vyšší CTR",
+            "b2_desc": "Poutavé titulky a popisy získávají více kliknutí od uživatelů.",
+            "b3_title": "Viditelnost na sítích",
+            "b3_desc": "Optimalizované Open Graph značky zlepšují vzhled při sdílení.",
+            "b4_title": "Analýza konkurence",
+            "b4_desc": "Sledujte strategii konkurence analýzou jejich značek."
+        },
+        "features": {
+            "f2_title": "Okamžitá analýza",
+            "f2_desc": "Získejte výsledky během několika sekund.",
+            "f3_title": "Zcela zdarma",
+            "f3_desc": "Bez skrytých poplatků či limitů."
+        },
+        "faq": {
+            "title": "Často kladené otázky",
+            "q1": "Co je to analyzátor meta tagů?",
+            "a1": "Je to nástroj, který projde webovou stránku a extrahuje její značky (title, description, robots atd.) pro následnou analýzu.",
+            "q2": "Proč jsou meta tagy pro SEO důležité?",
+            "a2": "Poskytují vyhledávačům informace o stránce a často určují, jak se váš web zobrazí ve výsledcích vyhledávání.",
+            "q3": "Jaká je ideální délka titulku (Title tag)?",
+            "a3": "Doporučuje se rozmezí 50-60 znaků, aby nedošlo k jeho oříznutí ve výsledcích vyhledávání Google.",
+            "q4": "Mají klíčová slova v meta tagu keywords vliv na pozice?",
+            "a4": "Většina moderních vyhledávačů (včetně Google) již značku keywords pro hodnocení webu nepoužívá.",
+            "q5": "Jak mohu opravit chyby v meta tagách?",
+            "a5": "Musíte upravit HTML kód své stránky v sekci <head> nebo použít SEO pluginy ve vašem redakčním systému (CMS)."
+        },
+        "js": {
+            "alert_enter_url": "Prosím, zadejte platnou URL adresu",
+            "analyzing": "Analyzuji...",
+            "error_cors": "<strong>Chyba CORS (Demo):</strong> V produkci musí požadavky na externí URL procházet přes backend proxy. <br>Níže jsou zobrazena demo data.",
+            "error_general": "Chyba při analýze URL",
+            "analyze_btn": "Analyzovat meta tagy",
+            "demo_title": "Příklad titulku stránky - Optimalizováno pro SEO",
+            "demo_description": "Toto je příklad meta popisu. Měl by být popisný, poutavý a obsahovat klíčová slova pro přilákání kliknutí z výsledků vyhledávání.",
+            "status_optimal": "Optimální",
+            "advice_perfect_length": "Perfektní délka!",
+            "status_too_long": "Příliš dlouhé",
+            "advice_truncated": "Může být oříznuto ve výsledcích vyhledávání.",
+            "status_too_short": "Příliš krátké",
+            "advice_add_detail": "Zvažte přidání dalších podrobností.",
+            "advice_truncated_short": "Může být oříznuto.",
+            "advice_add_detail_short": "Zvažte přidání informací.",
+            "score_text": "Skvělé! Vaše meta značky jsou dobře optimalizovány."
+        }
+    },
+    "on-page-seo-checker": {
+        "meta": {
+            "title": "On-Page SEO Checker – bezplatný online auditor webových stránek",
+            "description": "Bezplatný nástroj pro analýzu a optimalizaci vašich webových stránek pro vyhledávače přímo na stránce.",
+            "h1": "Kontrola SEO na stránce",
+            "subtitle": "Kompletní on-page SEO audit s akčními doporučeními"
+        },
+        "interface": {
+            "title": "Spusťte svůj bezplatný audit",
+            "url_label": "URL adresa webu",
+            "keywords_label": "Cílová klíčová slova",
+            "recommended": "Doporučeno",
+            "button": "Spustit komplexní audit",
+            "page_analysis": "Analýza stránky"
+        },
+        "labels": {
+            "initializing": "Inicializace...",
+            "desktop": "Počítač",
+            "mobile": "Mobil"
+        },
+        "content": {
+            "main_content_title": "Komplexní On-Page SEO Checker a analyzátor",
+            "main_content_desc": "Moderní vyhledávače používají pokročilé algoritmy k pochopení <em>záměru</em> (intentu) dotazu, nikoliv jen shodu slov. Náš <strong>on-page seo checker</strong> je postaven na stejných principech. Pomůžeme vám překlenout propast mezi vaším obsahem a tím, jak jej interpretují AI algoritmy.",
+            "how_to_title": "Jak používat nástroj On-Page SEO Checker"
+        },
+        "features": {
+            "f1_title": "Okamžitá sémantická analýza",
+            "f1_desc": "Vyhledávací roboti procházejí weby efektivně. Náš nástroj napodobuje toto chování, analyzuje váš DOM a strukturu HTML, aby zajistil, že váš web „mluví jazykem vyhledávačů“.",
+            "f2_title": "Bodování založené na datech",
+            "f2_desc": "Zapomeňte na subjektivitu. Získáte vážené skóre napříč signály jako jsou nadpisy, metadata a hustota slov. Je to transparentní mechanismus s jasnými prahy úspěchu.",
+            "f3_title": "Kontextová kontrola obsahu",
+            "f3_desc": "Mýtus o „dokonalé hustotě klíčových slov“ je mrtev. Náš audit hodnotí kontextovou relevanci. Odpovídají vaše H1 záměru uživatele? Uspokojuje obsah dotaz?",
+            "f4_title": "Mobilní a technická kontrola",
+            "f4_desc": "Značky viewport, kanonické odkazy a úryvky strukturovaných dat – vše prověřeno. Náš tester označí chyby v mobilní použitelnosti i nekonzistence v kódu.",
+            "f5_title": "100% bezplatný přístup",
+            "f5_desc": "Žádné předplatné, žádné skryté limity. Toto je vaše bezplatná volba. Spouštějte neomezené audity libovolných veřejných URL, ať už svých nebo konkurenčních.",
+            "f6_title": "Architektura odkazů",
+            "f6_desc": "Audit interních i externích odkazů v jednom pohledu. Podívejte se, kam směřují vaše odchozí odkazy a zda vnitřní prolinkování posiluje vaši autoritu."
+        },
+        "how_to": {
+            "step1_title": "Zadejte svou URL",
+            "step1_desc": "Vložte adresu konkrétní stránky. Náš nástroj stáhne HTML kód přesně tak, jak to dělá vyhledávací bot.",
+            "step2_title": "Analýza signálů",
+            "step2_desc": "Spusťte tester. Analyzujeme nadpisy, metadata a strukturu obsahu, abychom emulovali čtení stránky algoritmem.",
+            "step3_title": "Optimalizace pro záměr",
+            "step3_desc": "Použijte získaná data k vylepšení relevance obsahu a zvyšte své celkové SEO skóre."
+        },
+        "faq": {
+            "title": "Často kladené otázky",
+            "q1": "Proč je on-page SEO kontrola důležitá pro pozice?",
+            "a1": "Vyhledávání je o relevanci. On-page kontrola zajišťuje, že vaše signály (titulky, schéma, obsah) jsou v souladu se záměrem uživatele.",
+            "q2": "Je tento online on-page SEO nástroj opravdu zdarma?",
+            "a2": "Ano. Věříme v dostupnost dat. Náš nástroj je zdarma k použití, což vám umožní provádět audity bez bariér předplatného.",
+            "q3": "Jak vyhledávače rozumí mému obsahu?",
+            "a3": "Vyhledávače používají NLP (zpracování přirozeného jazyka) k propojování entit. Náš nástroj kontroluje, zda vaše struktura toto porozumění podporuje.",
+            "q4": "Mohu zkontrolovat on-page SEO u libovolné webové stránky?",
+            "a4": "Ano. Náš crawler respektuje robots.txt, ale dokáže analyzovat jakoukoliv veřejnou URL. Můžete tak analyzovat i konkurenci."
+        }
+    },
+    "pdf-report": {
+        "seo": {
+            "title": "PDF Report - Profesionální report SEO auditu"
+        },
+        "interface": {
+            "brand_name": "Optimizo",
+            "cover_title": "REPORT SEO AUDITU",
+            "overall_score": "CELKOVÉ SKÓRE",
+            "generated_on": "Generováno dne",
+            "suite_name": "Sada SEO nástrojů Optimizo",
+            "audit_title": "SEO audit Optimizo",
+            "analysis_methods": "Podrobné metody analýzy",
+            "recommendation": "DOPORUČENÍ:"
+        },
+        "meta": {
+            "title": "SEO PDF Report Generator – bezplatný online nástroj pro audit",
+            "description": "Vygenerujte si zdarma profesionální SEO report ve formátu PDF pro svůj web.",
+            "h1": "Generátor sestav PDF",
+            "subtitle": "Vytvářejte podrobné PDF reporty pro SEO analýzy a audity"
+        }
+    },
+    "redirect-checker": {
+        "meta": {
+            "title": "Kontrola přesměrování online – bezplatný nástroj pro stav HTTP",
+            "description": "Bezplatný nástroj pro analýzu přesměrování URL. Sledujte řetězce přesměrování, kontrolujte HTTP kód stavu a detekujte smyčky přesměrování.",
+            "h1": "Kontrola přesměrování",
+            "subtitle": "Sledujte HTTP přesměrování a identifikujte řetězce 301, 302 a meta refresh"
+        },
+        "form": {
+            "url_label": "Zadejte URL ke kontrole (jedna na řádek, max. 10)",
+            "url_placeholder": "https://priklad.cz\nhttps://dalsi-web.cz",
+            "canonical_check": "Zkontrolovat také kanonickou doménu (www vs bez www)",
+            "user_agent_label": "User Agent",
+            "user_agent_default": "Výchozí (Prohlížeč)",
+            "user_agent_googlebot": "Googlebot (Google)",
+            "user_agent_bingbot": "Bingbot (Bing)",
+            "user_agent_facebook": "Facebook Crawler",
+            "user_agent_iphone": "iPhone (Safari)",
+            "user_agent_android": "Android (Chrome)",
+            "button": "Zkontrolovat URL"
+        },
+        "loading": {
+            "analyzing": "Analyzuji cestu přesměrování..."
+        },
+        "content": {
+            "main_title": "Nástroj pro kontrolu přesměrování a HTTP stavů",
+            "main_subtitle": "Kompletní analýza URL se sledováním přesměrování a detekcí smyček",
+            "intro": "Analyzujte stavové kódy HTTP, sledujte řetězce přesměrování, detekujte 301 a 302 skoky a identifikujte nekonečné smyčky. Zásadní pro SEO optimalizaci, debugging webu a plánování migrací. Okamžitě uvidíte kompletní cestu požadavku.",
+            "features_title": "✨ Hlavní funkce",
+            "feature1_title": "Hromadná kontrola URL",
+            "feature1_desc": "Kontrolujte až 10 adres současně s přehledem průběhu.",
+            "feature2_title": "Kanonická kontrola domény",
+            "feature2_desc": "Ověřte konzistenci mezi verzí s www a bez www pro SEO.",
+            "feature3_title": "Detekce smyček",
+            "feature3_desc": "Vizuální diagram ukazující přesné vzorce zacykleného přesměrování.",
+            "feature4_title": "Kompletní analýza řetězce",
+            "feature4_desc": "Sledujte plnou trasu přesměrování včetně kódů stavu a časování.",
+            "what_are_redirects_title": "Co jsou to HTTP přesměrování?",
+            "what_are_redirects_desc": "Přesměrování jsou odpovědi serveru, které automaticky posílají návštěvníky z jedné adresy na druhou. Browsery při požadavku dostanou kód (např. 301) a novou cílovou adresu. Jsou nezbytná pro zachování SEO hodnoty při přesunech obsahu.",
+            "status_codes_title": "Porozumění stavovým kódům HTTP",
+            "status_2xx_title": "2xx - Úspěch",
+            "status_2xx_desc": "Indikují úspěšné zpracování požadavku bez problémů.",
+            "status_3xx_title": "3xx - Přesměrování",
+            "status_3xx_desc": "URL se přesunula, prohlížeč by měl následovat odkaz.",
+            "status_4xx_title": "4xx - Chyby klienta",
+            "status_4xx_desc": "Chyba na straně uživatele nebo prohlížeče (např. 404).",
+            "status_5xx_title": "5xx - Chyby serveru",
+            "status_5xx_desc": "Chyba na straně serveru.",
+            "redirect_301_title": "301 Trvalé přesměrování",
+            "redirect_301_when": "<strong>Kdy použít:</strong> Obsah byl trvale přesunut na novou URL.",
+            "redirect_301_seo": "<strong>Vliv na SEO:</strong> Předává 90-99 % síly odkazu na novou adresu.",
+            "redirect_301_cache": "<strong>Mezipaměť:</strong> Prohlížeče si jej pamatují trvale, těžko se mění.",
+            "redirect_302_title": "302 Dočasné přesměrování",
+            "redirect_302_when": "<strong>Kdy použít:</strong> Obsah je dočasně na jiné adrese.",
+            "redirect_302_seo": "<strong>Vliv na SEO:</strong> Původní URL si ponechává svou sílu v hodnocení.",
+            "redirect_302_cache": "<strong>Mezipaměť:</strong> Není ukládáno, snadno se mění nebo ruší.",
+            "why_check_title": "Proč kontrolovat přesměrování?",
+            "why_check_1": "<strong>Migrace webu:</strong> Ověřte, že staré adresy správně míří na nové.",
+            "why_check_2": "<strong>Nefunkční odkazy:</strong> Najděte chyby 404 a přetržené řetězce.",
+            "why_check_3": "<strong>Výkon webu:</strong> Odhalte příliš dlouhé řetězce, které zpomalují načítání.",
+            "why_check_4": "<strong>Detekce smyček:</strong> Zachyťte nekonečné cykly, které znefunkční stránku.",
+            "why_check_5": "<strong>Bezpečnost:</strong> Prověřte cíle přesměrování a zamezte škodlivým skokům.",
+            "why_check_6": "<strong>Uživatelská zkušenost:</strong> Zajistěte, aby lidé našli obsah co nejrychleji.",
+            "why_check_7": "<strong>Přenost analytiky:</strong> Potvrďte, že měřící kódy fungují i skrze přesměrování.",
+            "redirect_chains_title": "Co jsou to řetězce přesměrování (Redirect Chains)?",
+            "redirect_chains_desc": "K řetězení dochází, když jedna URL přesměruje na druhou a ta na další. Každý skok zvyšuje latenci. Příklad: A → B → C → Finální URL.",
+            "chain_recommended": "<strong>Doporučeno:</strong> 0-1 přesměrování (přímý hit).",
+            "chain_acceptable": "<strong>Akceptovatelné:</strong> 2-3 skoky (mírný vliv na výkon).",
+            "chain_problematic": "<strong>Problematické:</strong> 4+ skoků (významné zpomalení a SEO potíže).",
+            "redirect_loops_title": "Co jsou to smyčky přesměrování (Redirect Loops)?",
+            "redirect_loops_desc": "Smyčka nastane, když A míří na B a B míří zpět na A. Prohlížeč nahlásí chybu „Příliš mnoho přesměrování“. Toto stránku zcela vyřadí z provozu.",
+            "common_issues_title": "Běžné problémy a řešení",
+            "issue1_title": "Dlouhé řetězce",
+            "issue1_problem": "<strong>Problém:</strong> Zpomalují web a rozmělňují SEO sílu.",
+            "issue1_solution": "<strong>Řešení:</strong> Upravte přesměrování tak, aby mířila přímo do cíle.",
+            "issue2_title": "Smíšené typy",
+            "issue2_problem": "<strong>Problém:</strong> Nekonzistence mate vyhledávače.",
+            "issue2_solution": "<strong>Řešení:</strong> 301 pro trvalé, 302 jen pro skutečně dočasné věci.",
+            "issue3_title": "Přetržené řetězce",
+            "issue3_problem": "<strong>Problém:</strong> Přesměrování vede na neexistující stránku.",
+            "issue3_solution": "<strong>Řešení:</strong> Aktualizujte cíl na platnou adresu nebo jej odstraňte.",
+            "issue4_title": "HTTPS/HTTP smyčky",
+            "issue4_problem": "<strong>Problém:</strong> Web se nekonečně přepíná mezi protokoly.",
+            "issue4_solution": "<strong>Řešení:</strong> Opravte SSL konfiguraci a pravidla v .htaccess.",
+            "best_practices_title": "SEO doporučení pro přesměrování",
+            "best_practice1": "• Vždy používejte 301 pro trvalé změny, aby se přenesla autorita stránek.",
+            "best_practice2": "• Minimalizujte řetězce - skákejte přímo do finálního cíle.",
+            "best_practice3": "• Vyhněte se smyčkám za každou cenu - ničí UX i SEO.",
+            "best_practice4": "• Raději aktualizujte vnitřní odkazy, než abyste spoléhali na přesměrování.",
+            "best_practice5": "• Pravidelně monitorujte stav webu pomocí nástrojů, jako je tento.",
+            "best_practice6": "• Ponechte přesměrování aktivní alespoň 1 rok po změně URL.",
+            "best_practice7": "• Používejte 302 střídmě a pouze pro situace, které jsou opravdu krátkodobé."
+        },
+        "faq": {
+            "title": "Často kladené otázky",
+            "q1": "Co je to řetězec přesměrování?",
+            "a1": "Je to série skoků z jedné URL na druhou, dokud není dosaženo cíle. Dlouhé řetězce web zpomalují a plýtvají crawl budgetem.",
+            "q2": "Ovlivňuje 301 přesměrování mé pozice?",
+            "a2": "301 zachovává většinu síly odkazu, ale nadměrné řetězení může tento efekt oslabit.",
+            "q3": "Jak najdu smyčky přesměrování?",
+            "a3": "Použijte náš nástroj – automaticky chybu zvýrazní, pokud detekuje nekonečnou cestu.",
+            "q4": "Mám přesměrovávat z HTTP na HTTPS?",
+            "a4": "Ano, je to nezbytné pro bezpečnost i SEO. Doporučuje se 301 přesměrování na úrovni serveru (Nginx nebo Apache).",
+            "q5": "Kolik přesměrování je v pořádku?",
+            "a5": "Ideálně nula nebo jedno. Google obvykle sleduje až 5 skoků, ale každý další zvyšuje dobu načítání."
+        }
+    },
+    "slug-generator": {
+        "meta": {
+            "title": "URL Slug Generator – bezplatný online SEO Friendly nástroj",
+            "description": "Bezplatný nástroj pro okamžité generování čistých a SEO přátelských URL slugů z libovolného textu.",
+            "h1": "URL Slug generátor",
+            "subtitle": "Vytvářejte čisté a čitelné URL adresy pro své články a stránky"
+        },
+        "editor": {
+            "label_input": "Zadejte text nebo název",
+            "ph_input": "Sem vložte svůj nadpis nebo text..."
+        },
+        "content": {
+            "hero_title": "Generátor URL slugů - Optimalizujte své adresy pro SEO",
+            "hero_subtitle": "Náš bezplatný generátor vám pomůže přeměnit názvy článků a produktů na čitelné a optimalizované URL adresy. Zlepšete srozumitelnost svých odkazů pro lidi i vyhledávače.",
+            "what_title": "Co je to URL slug?",
+            "what_desc": "URL slug je část webové adresy, která následuje za názvem domény a identifikuje konkrétní stránku. Například v „priklad.cz/jak-vytvorit-seo-slug“ je slugem část „jak-vytvorit-seo-slug“.",
+            "why_title": "Proč používat SEO přátelské slugy?",
+            "why_list": [
+                "Lepší pozice ve vyhledávání: Klíčová slova v URL pomáhají vyhledávačům pochopit obsah.",
+                "Vyšší míra prokliku (CTR): Čitelné URL adresy působí důvěryhodněji.",
+                "Uživatelská zkušenost: Jasná URL říká uživateli, co na stránce najde.",
+                "Sdílení na sítích: Čisté odkazy vypadají profesionálně při sdílení.",
+                "Budování odkazů: Popisná URL slouží jako skvělý text pro zpětné odkazy.",
+                "Přístupnost: Čtečky obrazovky lépe interpretují smysluplné adresy."
+            ],
+            "practices_title": "Doporučené postupy pro URL slugy",
+            "practices_list": [
+                "Používejte pouze malá písmena - Pro konzistenci a zamezení chyb.",
+                "Používejte pomlčky (-) - Slova oddělujte pomlčkami, nikoliv podtržítky.",
+                "Udržujte stručnost - Snažte se o maximálně 3-5 slov.",
+                "Zahrňte klíčová slova - Používejte relevantní slova pro dané téma.",
+                "Buďte popisní - URL by měla jasně říkat, o čem stránka je.",
+                "Vyhněte se speciálním znakům - Odstraňte @, #, %, &, atd.",
+                "Odstraňte spojky a předložky - Vynechte slova jako „a“, „v“, „pro“, pokud je to možné.",
+                "Vyhněte se datům v URL - Pokud to není vysloveně nutné (např. u zpráv)."
+            ],
+            "how_works_title": "Jak náš generátor funguje",
+            "how_works_desc": "Nástroj automaticky čistí váš text: převádí na malá písmena, odstraňuje diakritiku (např. „ř“ -> „r“), maže speciální znaky, nahrazuje mezery pomlčkami a odstraňuje vícenásobné pomlčky.",
+            "uses_title": "Příklady použití",
+            "uses": {
+                "blog": {
+                    "title": "📝 Blogové příspěvky",
+                    "desc": "Převod názvů článků na SEO adresy pro WordPress nebo vlastní blogy."
+                },
+                "ecommerce": {
+                    "title": "🛒 E-shopy",
+                    "desc": "Vytváření URL produktů, které obsahují název a klíčové parametry."
+                },
+                "docs": {
+                    "title": "📄 Dokumentace",
+                    "desc": "Generování čistých adres pro návody a nápovědy."
+                },
+                "landing": {
+                    "title": "🎯 Landing Pages",
+                    "desc": "Vytváření úderných URL pro marketingové kampaně."
+                }
+            },
+            "pro_tip_title": "💡 SEO Tip",
+            "pro_tip_desc": "Google doporučuje v URL používat pomlčky (-) místo podtržítek (_). Pomlčky jsou zpracovávány jako oddělovače slov, zatímco podtržítka nikoliv. Proto je „seo-nastroje“ lepší než „seo_nastroje“.",
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Mám v URL používat pomlčky nebo podtržítka?",
+                "a1": "Vždy používejte pomlčky (-). Vyhledávače jako Google je vidí jako mezery mezi slovy, zatímco podtržítka spojují vše do jednoho dlouhého slova.",
+                "q2": "Jak dlouhý by měl být URL slug?",
+                "a2": "Ideální rozsah je 3-5 slov (cca 30-60 znaků). Kratší URL se lépe pamatují a sdílejí.",
+                "q3": "Mohu slug změnit po publikování stránky?",
+                "a3": "Můžete, ale není to doporučeno. Pokud to uděláte, nezapomeňte nastavit 301 přesměrování ze staré adresy na novou, abyste neztratili pozice a návštěvníky.",
+                "q4": "Mám ve slugu používat diakritiku?",
+                "a4": "Ne. Používejte pouze základní latinku bez háčků a čárek. Náš nástroj tuto konverzi provede za vás."
+            }
+        },
+        "js": {
+            "copied": "Zkopírováno!"
+        }
+    },
+    "yahoo-serp-checker": {
+        "meta": {
+            "title": "Yahoo SERP Checker – bezplatný online nástroj pro hodnocení SEO",
+            "description": "Bezplatná kontrola pozic v Yahoo (SERP) pro sledování umístění vašeho webu a klíčových slov.",
+            "h1": "Yahoo SERP Checker",
+            "subtitle": "Monitorujte své pozice v Yahoo pro vybraná klíčová slova"
+        },
+        "interface": {
+            "simulation_title": "Živá analýza SERP pro Yahoo",
+            "keyword_label": "Klíčové slovo",
+            "location_label": "Lokalita (Město)",
+            "yahoo_domain_label": "Doména Yahoo",
+            "device_label": "Typ zařízení",
+            "device_desktop": "Počítač",
+            "device_mobile": "Mobilní telefon",
+            "no_login": "Bez registrace",
+            "realtime_results": "Aktuální výsledky"
+        },
+        "form": {
+            "keyword_placeholder": "např. nejlepší káva Brno...",
+            "location_placeholder": "Zadejte město (volitelné)",
+            "button": "Zkontrolovat Yahoo SERP"
+        },
+        "domains": {
+            "us": "Yahoo.com (USA/Globální)",
+            "uk": "Yahoo.co.uk (Velká Británie)",
+            "ca": "Yahoo.ca (Kanada)",
+            "au": "Yahoo.com.au (Austrálie)",
+            "de": "Yahoo.de (Německo)",
+            "fr": "Yahoo.fr (Francie)",
+            "it": "Yahoo.it (Itálie)",
+            "es": "Yahoo.es (Španělsko)",
+            "br": "Yahoo.com.br (Brazílie)"
+        },
+        "content": {
+            "main_title": "Pokročilá kontrola pozic v Yahoo",
+            "main_subtitle": "Sledujte svůj výkon na Yahoo Search. Získejte přesná data pro optimalizaci své SEO strategie.",
+            "feature1_title": "100% Zdarma",
+            "feature1_desc": "Používejte tento nástroj, kolikrát chcete. Žádné skryté poplatky.",
+            "feature2_title": "Neomezené kontroly",
+            "feature2_desc": "Kontrolujte libovolný počet klíčových slov bez nutnosti registrace nebo předplatného.",
+            "feature3_title": "Data v reálném čase",
+            "feature3_desc": "Získejte okamžité výsledky SERP přímo z vyhledávacího indexu Yahoo.",
+            "why_matters_title": "Proč na pozicích v Yahoo záleží?",
+            "why_matters_desc": "Ačkoliv má Yahoo menší podíl než Google, stále generuje miliony návštěv měsíčně. V některých demografických skupinách a regionech (např. v USA) je jeho vliv nezanedbatelný. Ignorováním Yahoo přicházíte o část potenciální návštěvnosti.",
+            "same_as_bing_title": "Používá Yahoo výsledky Bingu?",
+            "same_as_bing_desc": "Ano, vyhledávání Yahoo je převážně poháněno <strong>indexem Bingu</strong>. To znamená, že optimalizace pro Bing vám obvykle pomůže i na Yahoo. Přesto se rozhraní a doplňkové funkce liší, proto je důležité sledovat reálný vzhled výsledků."
+        },
+        "faq": {
+            "title": "Často kladené otázky",
+            "q1": "Je tato kontrola pozic v Yahoo opravdu zdarma?",
+            "a1": "Ano! Náš nástroj je k dispozici zcela bezplatně. Můžete sledovat své pozice bez jakýchkoliv omezení.",
+            "q2": "Jak zlepšit pozice v Yahoo?",
+            "a2": "Protože Yahoo využívá technologii Bingu, soustřeďte se na základy: technické SEO, kvalitní zpětné odkazy a relevantní obsah. Yahoo klade velký důraz na stáří domény a přesnou shodu klíčových slov."
+        }
+    },
+    "sitemap-validator": {
+        "meta": {
+            "title": "Sitemap Validator – bezplatný online XML Sitemap Checker",
+            "description": "Bezplatný nástroj pro kontrolu chyb v XML mapách stránek, ověření URL a zajištění shody s protokolem.",
+            "h1": "Validátor mapy webu",
+            "subtitle": "Zkontrolujte své XML mapy stránek na chyby"
+        },
+        "editor": {
+            "title": "Ověřit Sitemap",
+            "btn_xml_input": "Vstup XML",
+            "btn_url_input": "Vstup URL",
+            "label_xml": "Vložit XML",
+            "ph_xml": "Zde vložte kód XML mapy stránek...",
+            "label_url": "URL Sitemap",
+            "ph_url": "https://priklad.cz/sitemap.xml",
+            "help_url": "Zadejte celou URL souboru sitemap.xml",
+            "btn_fetch": "Načíst",
+            "btn_validate": "Ověřit",
+            "btn_validating": "Ověřování...",
+            "btn_clear": "Vymazat",
+            "btn_example": "Načíst příklad",
+            "check_urls": "Zkontrolovat dostupnost URL"
+        },
+        "results": {
+            "title": "Výsledky ověření"
+        },
+        "content": {
+            "main_heading": "Ovládněte strukturu svého webu",
+            "main_intro": "Zajistěte, aby byl váš web pro vyhledávače dokonale procházený. Odhalte chyby a optimalizujte.",
+            "what_is_title": "Co je Validátor XML Sitemap?",
+            "what_is_desc_1": "Nezbytný SEO nástroj pro kontrolu syntaxe a nefunkčních odkazů v mapě stránek.",
+            "what_is_desc_2": "Sitemap je mapa pro roboty. Chyby mohou bránit indexování důležitých stránek.",
+            "features_title": "Proč zvolit nás?",
+            "feature_instant_title": "Okamžitá analýza",
+            "feature_instant_desc": "Získejte zpětnou vazbu ihned.",
+            "feature_strict_title": "Přísná validace",
+            "feature_strict_desc": "Kontrolujeme podle oficiálního schématu XSD.",
+            "feature_index_title": "Podpora indexů",
+            "feature_index_desc": "Podporujeme indexové soubory a podmapy.",
+            "importance_title": "Význam pro SEO",
+            "importance_budget_title": "Efektivita Crawl Budgetu",
+            "importance_budget_desc": "Pomáhá vyhledávačům chytře využívat zdroje.",
+            "importance_indexing_title": "Rychlejší indexace",
+            "importance_indexing_desc": "Prioritizuje nový obsah.",
+            "importance_discovery_title": "Objevování stránek",
+            "importance_discovery_desc": "Najde i hluboko zanořené stránky.",
+            "importance_troubleshooting_title": "Řešení problémů",
+            "importance_troubleshooting_desc": "Včas odhalí chyby 404.",
+            "guide_title": "Jak používat",
+            "guide_step1_title": "Zadejte URL",
+            "guide_step1_desc": "Vložte adresu své mapy stránek.",
+            "guide_step2_title": "Spusťte validaci",
+            "guide_step2_desc": "Klikněte pro analýzu.",
+            "guide_step3_title": "Zkontrolujte výsledky",
+            "guide_step3_desc": "Opravte chyby označené červeně.",
+            "faq_title": "Často kladené otázky",
+            "faq_privacy_question": "Ukládáte data?",
+            "faq_privacy_answer": "Ne, respektujeme vaše soukromí.",
+            "faq_frequency_question": "Jak často kontrolovat?",
+            "faq_frequency_answer": "Při změnách struktury nebo měsíčně.",
+            "faq_size_question": "Limit velikosti?",
+            "faq_size_answer": "50MB nebo 50 000 URL.",
+            "faq_localhost_question": "Funguje na localhost?",
+            "faq_localhost_answer": "Ano, vložením XML kódu."
+        }
+    },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Hreflang Checker – bezplatný online validátor značek",
+            "description": "Ověřte své hreflang štítky a zajistěte, že Google zobrazuje správné jazykové nebo regionální URL vašemu publiku.",
+            "h1": "Hreflang Checker",
+            "subtitle": "Bezplatný nástroj pro extrakci a validaci atributů hreflang pro mezinárodní SEO."
+        },
+        "form": {
+            "url_label": "Zadejte URL ke kontrole",
+            "url_placeholder": "https://priklad.cz/stranka",
+            "user_agent_label": "User Agent",
+            "user_agent_default": "Výchozí (Prohlížeč)",
+            "user_agent_googlebot": "Googlebot (Desktop)",
+            "user_agent_bingbot": "Bingbot (Desktop)",
+            "button": "Zkontrolovat hreflang štítky"
+        },
+        "content": {
+            "main_title": "Kontrola hreflang štítků",
+            "main_subtitle": "Zajistěte, aby se váš mezinárodní obsah dostal ke správnému publiku. Ověřte implementaci hreflang a opravte běžné SEO chyby.",
+            "intro": "Hreflang štítky jsou nezbytné pro webové stránky obsluhující více jazyků nebo zemí. Náš bezplatný nástroj extrahuje a validuje štítky `rel=\"alternate\" hreflang=\"x\"` z HTML hlavičky vaší stránky a HTTP hlaviček. Kontroluje reciproční (zpětné) štítky, aby zaručil, že Google a další vyhledávače správně indexují váš lokalizovaný obsah.",
+            "features_title": "Proč kontrolovat hreflang štítky?",
+            "feature1_title": "Validace recipročních štítků",
+            "feature1_desc": "Hreflang štítky musí fungovat v párech. Náš nástroj automaticky kontroluje, zda stránka A odkazuje na stránku B, a zda stránka B odkazuje zpět na stránku A.",
+            "feature2_title": "Detekce běžných chyb",
+            "feature2_desc": "Najděte chybějící zpětné štítky, neplatné kódy jazyků (ISO 639-1) a nesprávné kódy zemí (ISO 3166-1 Alpha-2).",
+            "feature3_title": "Prevence SEO problémů",
+            "feature3_desc": "Nesprávná implementace hreflang může vést k problémům s duplicitním obsahem a zobrazování stránek v nesprávném jazyce ve výsledcích vyhledávání.",
+            "how_title": "Jak používat kontrolu Hreflang",
+            "step1_title": "Zadejte URL",
+            "step1_desc": "Vložte celou URL adresu stránky, kterou chcete analyzovat (např. https://priklad.cz).",
+            "step2_title": "Vyberte User Agent",
+            "step2_desc": "Doporučuje se kontrolovat pomocí Googlebota, ale můžete kontrolovat i jako standardní prohlížeč.",
+            "step3_title": "Analyzujte výsledky",
+            "step3_desc": "Stáhneme stránku a vypíšeme všechny nalezené alternativní odkazy spolu s jejich validačním stavem.",
+            "step4_title": "Opravte problémy",
+            "step4_desc": "Pokud se objeví chyba 'Chybějící zpětný štítek', aktualizujte odkazované stránky tak, aby obsahovaly reciproční odkaz.",
+            "faq_title": "Často kladené otázky",
+            "faq1_q": "Co je to hreflang štítek?",
+            "faq1_a": "Hreflang je HTML atribut používaný k určení jazyka a geografického cílení webové stránky. Říká vyhledávačům, kterou verzi stránky zobrazit uživatelům v různých zemích nebo jazycích.",
+            "faq2_q": "Proč jsou zpětné štítky důležité?",
+            "faq2_a": "Google vyžaduje zpětné odkazy, aby zabránil tomu, že si někdo svévolně nárokuje stránku na jiném webu jako alternativní verzi své vlastní. Pokud stránka A odkazuje na stránku B, musí stránka B odkazovat zpět na stránku A.",
+            "faq3_q": "Kontroluje tento nástroj x-default štítek?",
+            "faq3_a": "Ano, náš nástroj identifikuje a validuje `x-default` hreflang štítek, který se používá pro neshodující se jazyky nebo striktní voliče země.",
+            "faq4_q": "Mohu kontrolovat hreflang v HTTP hlavičkách?",
+            "faq4_a": "Ano! Kontrolujeme jak sekci HTML `<head>`, tak hlavičky odpovědi HTTP na atributy `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
+            "faq5_q": "Co se stane, když mám chyby v hreflang?",
+            "faq5_a": "Vyhledávače mohou ignorovat vaše neplatné štítky, což vede k nezobrazování správných jazykových verzí správným uživatelům nebo k potenciálním penalizacím za duplicitní obsah.",
+            "faq6_q": "Je tento nástroj zdarma?",
+            "faq6_a": "Ano, můžete provádět neomezené kontroly zdarma, abyste zajistili, že vaše mezinárodní SEO je perfektní."
+        }
+    }
+}

@@ -1,0 +1,735 @@
+{
+    "dns-lookup": {
+        "meta": {
+            "title": "DNS-Lookup-Tool – Kostenloser Online-DNS-Eintragsprüfer",
+            "description": "Kostenloses DNS-Lookup-Tool zur Überprüfung von DNS-Einträgen für jede Domain. Zeigen Sie A-, AAAA-, MX-, NS-, TXT- und CNAME-Einträge sofort an. Unverzichtbar für die Fehlerbehebung bei E-Mails und Domain-Konfigurationen.",
+            "h1": "DNS-Suchtool",
+            "subtitle": "Fragen Sie DNS-Einträge ab, um Nameserver, MX, A, CNAME & TXT-Einträge sofort zu finden"
+        },
+        "form": {
+            "domain_label": "Domainname",
+            "domain_placeholder": "beispiel.de",
+            "button": "DNS nachschlagen"
+        },
+        "results": {
+            "title": "DNS-Ergebnisse"
+        },
+        "content": {
+            "what_is_title": "Was ist DNS-Lookup?",
+            "what_is_desc": "DNS-Lookup ist ein Tool, das Domain-Name-System-Server abfragt, um DNS-Einträge für eine Domain abzurufen. DNS-Einträge enthalten wichtige Informationen über die Konfiguration einer Domain, einschließlich Mail-Server (MX-Einträge), Nameserver (NS-Einträge), IP-Adressen (A/AAAA-Einträge) und Text-Einträge (TXT-Einträge), die zur Verifizierung und Sicherheit verwendet werden.",
+            "why_use_title": "Warum DNS-Lookup verwenden?",
+            "why_use_desc": "DNS-Lookup ist unverzichtbar für die Behebung von Problemen bei der E-Mail-Zustellung, die Verifizierung der Domain-Konfiguration, die Überprüfung von Nameserver-Einstellungen, die Validierung von SPF- und DKIM-Einträgen und das Verständnis der Einrichtung einer Domain. Es wird täglich von Systemadministratoren, Webentwicklern und IT-Profis genutzt.",
+            "record_types_title": "DNS-Eintragstypen",
+            "a_record": "<strong>A Record:</strong> Verknüpft Domain mit IPv4-Adresse",
+            "aaaa_record": "<strong>AAAA Record:</strong> Verknüpft Domain mit IPv6-Adresse",
+            "mx_record": "<strong>MX Record:</strong> Informationen zum Mail-Server",
+            "ns_record": "<strong>NS Record:</strong> Nameserver-Informationen",
+            "txt_record": "<strong>TXT Record:</strong> Texteinträge zur Verifizierung",
+            "cname_record": "<strong>CNAME Record:</strong> Kanonischer Namens-Alias"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Wie schnell werden DNS-Änderungen wirksam?",
+            "a1": "DNS-Änderungen können aufgrund der DNS-Propagierung zwischen wenigen Minuten und bis zu 48 Stunden dauern. Dies hängt vom TTL-Wert (Time to Live) der Einträge ab.",
+            "q2": "Was ist ein MX-Eintrag?",
+            "a2": "Ein MX-Eintrag (Mail Exchanger) gibt an, welcher Mail-Server für den Empfang von E-Mails im Namen einer Domain verantwortlich ist.",
+            "q3": "Warum sehe ich meine neuen DNS-Einträge noch nicht?",
+            "a3": "Dies liegt meist am Caching Ihres Browsers, Betriebssystems oder Internetanbieters. Nutzen Sie Tools wie unseres, um die Einträge direkt von den Nameservern abzufragen.",
+            "q4": "Was ist der Unterschied zwischen A- und AAAA-Einträgen?",
+            "a4": "Ein A-Eintrag verweist auf eine IPv4-Adresse (z. B. 192.168.1.1), während ein AAAA-Eintrag auf eine IPv6-Adresse verweist.",
+            "q5": "Können mehrere A-Einträge für eine Domain existieren?",
+            "a5": "Ja, dies wird oft für das Load Balancing verwendet, um den Datenverkehr auf mehrere Server zu verteilen."
+        },
+        "js": {
+            "looking_up": "DNS wird abgefragt...",
+            "records_label": "Einträge",
+            "success": "DNS-Einträge erfolgreich abgerufen",
+            "error": "Fehler beim Abrufen der DNS-Einträge",
+            "lookup_dns": "DNS nachschlagen"
+        }
+    },
+    "domain-to-ip": {
+        "meta": {
+            "title": "Domain-zu-IP-Konverter – kostenloses Online-DNS-Tool",
+            "description": "Kostenloses Tool zum Nachschlagen von Domains zu IP-Adressen. Wandeln Sie jeden Domainnamen sofort in seine IP-Adresse um. Unverzichtbar für die Netzwerk-Fehlerbehebung, Server-Konfiguration und DNS-Verifizierung.",
+            "h1": "Domain-zu-IP-Konverter",
+            "subtitle": "Domainnamen in IP-Adressen mit detaillierten DNS-Informationen auflösen"
+        },
+        "form": {
+            "domain_label": "Domainname eingeben",
+            "domain_placeholder": "beispiel.de",
+            "domain_hint": "Domain ohne http:// oder https:// eingeben",
+            "button": "IP-Adresse nachschlagen"
+        },
+        "results": {
+            "title": "Ergebnisse der IP-Abfrage",
+            "domain_label": "Domain",
+            "ip_label": "IP-Adresse"
+        },
+        "content": {
+            "main_title": "Domain zu IP Konverter",
+            "main_subtitle": "Jeden Domainnamen sofort in seine IP-Adresse umwandeln",
+            "intro": "Unser kostenloses Domain-zu-IP-Tool wandelt jeden Domainnamen sofort mittels DNS-Abfrage in die entsprechende IP-Adresse um. Es ist unverzichtbar für Netzwerkadministratoren, Webentwickler, Sicherheitsexperten und alle, die den Server hinter einer Domain identifizieren müssen. Erhalten Sie genaue IP-Adressen für die Fehlerbehebung, Serververifizierung und Netzwerkkonfiguration.",
+            "feature1_title": "Sofortige Abfrage",
+            "feature1_desc": "Erhalten Sie IP-Adressen ohne Verzögerung direkt",
+            "feature2_title": "Genaue Ergebnisse",
+            "feature2_desc": "Echtzeit-DNS-Abfragen für aktuelle IP-Adressen",
+            "feature3_title": "100 % kostenlos",
+            "feature3_desc": "Unbegrenzte Abfragen ohne Registrierung",
+            "what_is_title": "🌐 Was ist eine Domain-zu-IP-Abfrage?",
+            "what_is_desc": "Die Domain-zu-IP-Abfrage ist der Prozess der Umwandlung eines menschenlesbaren Domainnamens (wie beispiel.de) in seine entsprechende numerische IP-Adresse (wie 93.184.216.34). Diese Umwandlung erfolgt über DNS-Server (Domain Name System), die wie das Telefonbuch des Internets fungieren. Jede Website hat eine IP-Adresse, aber Domainnamen machen sie leichter merkbar und zugänglich.",
+            "use_cases_title": "🎯 Häufige Anwendungsfälle",
+            "uc1_title": "Server-Konfiguration",
+            "uc1_desc": "Konfigurieren Sie Firewalls, Whitelists und Servereinstellungen mit IP-Adressen",
+            "uc2_title": "Sicherheitsanalyse",
+            "uc2_desc": "Überprüfen Sie Serverstandorte und identifizieren Sie Hosting-Anbieter",
+            "uc3_title": "Fehlerbehebung",
+            "uc3_desc": "Diagnostizieren Sie DNS-Probleme und verifizieren Sie Domain-Konfigurationen",
+            "uc4_title": "Netzwerküberwachung",
+            "uc4_desc": "Verfolgen Sie Serveränderungen und überwachen Sie die Infrastruktur",
+            "uc5_title": "Geolocation",
+            "uc5_desc": "Bestimmen Sie den geografischen Standort des Servers anhand der IP-Adresse",
+            "uc6_title": "API-Integration",
+            "uc6_desc": "Verwenden Sie IP-Adressen für direkte API-Verbindungen",
+            "pro_tips_title": "💡 Pro-Tipps: Verwendung der Domain-zu-IP-Abfrage",
+            "tip1": "✅ Nutzen Sie IP-Adressen für direkte Serververbindungen, wenn DNS langsam ist",
+            "tip2": "✅ Verifizieren Sie CDN-Konfigurationen, indem Sie mehrere Domainauflösungen prüfen",
+            "tip3": "✅ Setzen Sie Server-IPs für sicheren Zugriff in Firewalls auf die Whitelist",
+            "tip4": "✅ Vergleichen Sie IP-Adressen vor und nach DNS-Änderungen",
+            "tip5": "✅ Identifizieren Sie Shared Hosting, indem Sie prüfen, ob mehrere Domains dieselbe IP teilen"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Was ist eine IP-Adresse?",
+            "a1": "Eine IP-Adresse (Internet Protocol) ist eine eindeutige Zeichenfolge aus Zahlen, die jedes Gerät identifiziert, das über ein Netzwerk kommuniziert.",
+            "q2": "Kann eine Domain mehrere IP-Adressen haben?",
+            "a2": "Ja, größere Websites nutzen oft mehrere IP-Adressen (Round Robin DNS), um Lasten zu verteilen oder Ausfallsicherheit zu gewährleisten.",
+            "q3": "Wie finde ich die IP meines eigenen lokalen Rechners?",
+            "a3": "Dieses Tool zeigt öffentliche IP-Adressen von Domains. Um Ihre eigene lokale IP zu finden, nutzen Sie Befehle wie 'ipconfig' (Windows) oder 'ifconfig' (Mac/Linux).",
+            "q4": "Was ist der Unterschied zwischen IPv4 und IPv6?",
+            "a4": "IPv4 nutzt 32-Bit-Adressen (z. B. 1.2.3.4), während IPv6 128-Bit-Adressen nutzt, um wesentlich mehr Geräte im Internet unterstützen zu können.",
+            "q5": "Warum ändert sich die IP-Adresse meiner Domain manchmal?",
+            "a5": "Dies kann passieren, wenn Sie den Hosting-Anbieter wechseln, auf einen neuen Server umziehen oder wenn Ihr Anbieter dynamische IP-Adressen für seine Infrastruktur nutzt."
+        },
+        "js": {
+            "looking_up": "IP-Adresse wird gesucht...",
+            "error_failed": "Abfrage fehlgeschlagen. Bitte prüfen Sie den Domainnamen."
+        }
+    },
+    "internet-speed-test": {
+        "meta": {
+            "title": "Internet-Geschwindigkeitstest – Kostenloser Online-Verbindungsprüfer",
+            "description": "Testen Sie Ihre Internetgeschwindigkeit kostenlos. Überprüfen Sie Download-Geschwindigkeit, Upload-Geschwindigkeit und Ping sofort.",
+            "h1": "Internet-Geschwindigkeitstest",
+            "subtitle": "Testen Sie Ihre Internet-Verbindungsgeschwindigkeit sofort"
+        },
+        "editor": {
+            "btn_start": "Geschwindigkeitstest starten",
+            "status_init": "Test wird initialisiert...",
+            "label_download": "Download-Geschwindigkeit",
+            "label_upload": "Upload-Geschwindigkeit",
+            "label_ping": "Ping",
+            "label_quality": "Verbindungsqualität",
+            "btn_retry": "Erneut testen",
+            "status_ping": "Ping wird getestet...",
+            "status_download": "Download-Geschwindigkeit wird getestet...",
+            "status_upload": "Upload-Geschwindigkeit wird getestet...",
+            "quality_val_excellent": "Hervorragend",
+            "quality_val_very_good": "Sehr gut",
+            "quality_val_good": "Gut",
+            "quality_val_fair": "Akzeptabel",
+            "quality_val_poor": "Schlecht"
+        },
+        "content": {
+            "p1": "Testen Sie Ihre Internet-Verbindungsgeschwindigkeit mit unserem kostenlosen, präzisen Speedtest-Tool. Messen Sie Ihre Download-Geschwindigkeit, Upload-Geschwindigkeit und Ping-Latenz in Sekunden. Perfekt zur Fehlerbehebung bei langsamen Verbindungen, zur Überprüfung von ISP-Versprechen oder um sicherzustellen, dass Sie die Leistung erhalten, für die Sie bezahlen.",
+            "metrics_title": "Speedtest-Metriken verstehen",
+            "req_title": "Voraussetzungen für präzise Tests",
+            "req_list": [
+                "Schließen Sie alle anderen Anwendungen und Browser-Tabs",
+                "Verbinden Sie sich per Ethernet-Kabel für die genauesten Ergebnisse",
+                "Deaktivieren Sie vorübergehend VPN- oder Proxy-Dienste",
+                "Stellen Sie sicher, dass keine Downloads oder Uploads im Hintergrund laufen",
+                "Testen Sie mehrmals zu verschiedenen Tageszeiten"
+            ],
+            "why_title": "Warum Sie Ihre Internetgeschwindigkeit testen sollten?",
+            "why_list": [
+                "Prüfen Sie, ob Sie die versprochene Geschwindigkeit Ihres Anbieters erhalten",
+                "Fehlerbehebung bei langsamen Verbindungsproblemen",
+                "Vergleichen Sie verschiedene ISP-Tarife vor einem Wechsel",
+                "Optimieren Sie Ihr Netzwerk-Setup",
+                "Dokumentieren Sie die Geschwindigkeit für Support-Tickets beim Anbieter",
+                "Vergleichen Sie die Leistung von WLAN vs. Ethernet"
+            ],
+            "factors_title": "Faktoren, die Ihre Geschwindigkeit beeinflussen",
+            "improve_title": "So verbessern Sie Ihre Geschwindigkeit",
+            "improve_list": [
+                "Verwenden Sie nach Möglichkeit ein Ethernet-Kabel anstelle von WLAN",
+                "Platzieren Sie den Router an einem zentralen Ort, weg von Wänden",
+                "Rüsten Sie auf einen modernen Router auf, der Ihren Tarif unterstützt",
+                "Schließen Sie Anwendungen mit hohem Bandbreitenverbrauch",
+                "Aktualisieren Sie regelmäßig die Router-Firmware",
+                "Erwägen Sie ein Upgrade Ihres Internet-Tarifs",
+                "Nutzen Sie Quality of Service (QoS)-Einstellungen am Router"
+            ],
+            "tips_title": "Pro-Tipps für genaue Ergebnisse",
+            "tips_list": [
+                "Testen Sie zu verschiedenen Tageszeiten, um Schwankungen zu sehen",
+                "Führen Sie mehrere Tests durch und bilden Sie den Durchschnitt",
+                "Testen Sie auf verschiedenen Geräten, um Geräteprobleme auszuschließen",
+                "Vergleichen Sie WLAN-Geschwindigkeiten an verschiedenen Orten in Ihrem Zuhause"
+            ],
+            "faq_title": "Häufig gestellte Fragen (FAQ)",
+            "metrics": {
+                "download": {
+                    "title": "Download-Geschwindigkeit",
+                    "desc": "Wie schnell Daten aus dem Internet auf Ihr Gerät übertragen werden. Wichtig für Streaming, Surfen und das Herunterladen von Dateien."
+                },
+                "upload": {
+                    "title": "Upload-Geschwindigkeit",
+                    "desc": "Wie schnell Daten von Ihrem Gerät ins Internet gesendet werden. Wichtig für Videogespräche, das Hochladen von Dateien und Live-Streaming."
+                },
+                "ping": {
+                    "title": "Ping (Latenz)",
+                    "desc": "Die Reaktionszeit Ihrer Verbindung. Ein niedrigerer Wert ist besser. Wichtig für Online-Spiele und Echtzeit-Anwendungen."
+                }
+            },
+            "factors": {
+                "congestion": {
+                    "title": "Netzwerkauslastung",
+                    "desc": "Stoßzeiten können Ihre Verbindung verlangsamen, da mehr Benutzer dieselbe Bandbreite teilen."
+                },
+                "wifi": {
+                    "title": "WLAN-Signal",
+                    "desc": "Entfernung zum Router, Wände und Störungen durch andere Geräte beeinflussen die WLAN-Geschwindigkeit."
+                },
+                "device": {
+                    "title": "Geräteleistung",
+                    "desc": "Ältere Geräte oder solche, auf denen viele Programme laufen, erreichen möglicherweise nicht die volle Geschwindigkeit."
+                },
+                "router": {
+                    "title": "Router-Qualität",
+                    "desc": "Veraltete Router unterstützen möglicherweise nicht die volle Kapazität Ihrer Internetleitung."
+                }
+            },
+            "faq": {
+                "q1": "Was ist eine gute Internetgeschwindigkeit?",
+                "a1": "Für allgemeines Surfen und Streaming: 25+ Mbit/s. Für 4K-Streaming und Gaming: 50+ Mbit/s. Für mehrere Benutzer und intensive Nutzung: 100+ Mbit/s. Für Home-Office und große Haushalte: 200+ Mbit/s.",
+                "q2": "Warum ist meine Geschwindigkeit langsamer als versprochen?",
+                "a2": "Anbieter bewerben „Bis zu“-Geschwindigkeiten. Die tatsächliche Geschwindigkeit hängt von der Netzwerkauslastung, der WLAN-Qualität, der Entfernung zum Router und der Geräteleistung ab. Testen Sie per Ethernet für genaueste Ergebnisse.",
+                "q3": "Was ist der Unterschied zwischen Mbit/s und MB/s?",
+                "a3": "Mbit/s (Megabit pro Sekunde) wird für Internetgeschwindigkeiten verwendet. MB/s (Megabyte pro Sekunde) wird für Dateigrößen verwendet. 1 MB/s = 8 Mbit/s. Eine 100-Mbit/s-Leitung lädt mit etwa 12,5 MB/s herunter.",
+                "q4": "Wie genau ist dieser Geschwindigkeitstest?",
+                "a4": "Unser Speedtest liefert präzise Ergebnisse durch Messung realer Datenübertragungen. Für beste Genauigkeit schließen Sie andere Programme, nutzen Sie Ethernet und führen Sie mehrere Tests durch.",
+                "q5": "Sollte ich per WLAN oder Ethernet testen?",
+                "a5": "Testen Sie per Ethernet, um Ihre wahre Internetgeschwindigkeit zu messen. Nutzen Sie WLAN, um kabellose Probleme zu diagnostizieren. Der Vergleich beider hilft festzustellen, ob das Problem am Internet oder am WLAN liegt."
+            }
+        }
+    },
+    "ip-lookup": {
+        "meta": {
+            "title": "IP Lookup Tool – Kostenloser Online-IP-Geolocation-Checker",
+            "description": "Kostenloses IP-Lookup-Tool zum Finden detaillierter Informationen über jede IP-Adresse. Zeigen Sie Standort, ISP, Hostnamen und mehr an. Unverzichtbar für Sicherheitsanalysen und Netzwerk-Fehlerbehebung.",
+            "h1": "IP-Suchtool",
+            "subtitle": "Detaillierte Informationen zu jeder IP-Adresse einschließlich Standort & ISP abrufen"
+        },
+        "form": {
+            "ip_label": "IP-Adresse",
+            "ip_placeholder": "8.8.8.8",
+            "button": "IP-Adresse nachschlagen"
+        },
+        "results": {
+            "title": "IP-Abfrage-Ergebnisse",
+            "ip_address": "IP-Adresse",
+            "type": "Typ",
+            "hostname": "Hostname",
+            "isp": "ISP (Internetanbieter)",
+            "country": "Land",
+            "region": "Region",
+            "city": "Stadt",
+            "timezone": "Zeitzone"
+        },
+        "content": {
+            "what_is_title": "Was ist IP-Lookup?",
+            "what_is_desc": "IP-Lookup ist ein Tool, das detaillierte Informationen zu jeder beliebigen IP-Adresse liefert. Es zeigt den geografischen Standort, den Internet-Service-Provider (ISP), den Hostnamen und andere technische Details an, die mit einer IP-Adresse verknüpft sind. Diese Informationen sind wertvoll für Netzwerkadministratoren, Sicherheitsexperten, Website-Besitzer und alle, die verstehen möchten, woher Internetverkehr stammt.",
+            "why_use_title": "Warum IP-Lookup verwenden?",
+            "why_use_desc": "IP-Lookup-Tools sind für verschiedene Zwecke unverzichtbar, darunter Sicherheitsanalyse, Betrugsprävention, Lokalisierung von Inhalten, Netzwerkfehlersuche und Compliance-Überprüfung. Website-Besitzer nutzen IP-Abfragen, um die Demografie ihrer Besucher zu verstehen, während Sicherheitsteams sie verwenden, um potenzielle Bedrohungen zu identifizieren und böswilligen Datenverkehr zu blockieren. Es ist auch nützlich, um VPN-Verbindungen zu verifizieren und den eigenen digitalen Fußabdruck im Internet zu verstehen.",
+            "features_title": "Hauptmerkmale",
+            "feature1_title": "🌍 Geolocation-Daten",
+            "feature1_desc": "Land, Region, Stadt und Koordinaten",
+            "feature2_title": "🏢 ISP-Informationen",
+            "feature2_desc": "Details zum Internet-Service-Provider",
+            "feature3_title": "🔗 Hostnamauflösung",
+            "feature3_desc": "Der mit der IP verknüpfte Domainname",
+            "feature4_title": "⚡ Sofortige Ergebnisse",
+            "feature4_desc": "Schnelle und genaue Abfrage"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Wie genau ist die Geolocation per IP?",
+            "a1": "Die Genauigkeit auf Länderebene beträgt fast 100 %, auf Stadtebene liegt sie oft zwischen 50 % und 80 %. Sie zeigt den Standort des ISP-Einwahlpunkts, nicht unbedingt die exakte Hausadresse.",
+            "q2": "Was ist der Unterschied zwischen einer IP-Abfrage und WHOIS?",
+            "a2": "Eine IP-Abfrage konzentriert sich auf den Standort und das Netzwerk einer IP, während WHOIS Informationen über den Besitzer einer Domain oder eines IP-Blocks liefert.",
+            "q3": "Kann ich die reale Adresse einer Person über deren IP herausfinden?",
+            "a3": "Nein, IP-Geolocations zeigen nur den allgemeinen Standort (Stadt/Region). Personenbezogene Daten wie Name oder exakte Adresse sind nur über den ISP mit richterlichem Beschluss zugänglich.",
+            "q4": "Warum zeigt IP-Lookup einen anderen Standort an, wenn ich ein VPN nutze?",
+            "a4": "Ein VPN leitet Ihren Verkehr über einen anderen Server um. Das Tool erkennt die IP des VPN-Servers, weshalb dessen Standort angezeigt wird.",
+            "q5": "Was bedeutet es, wenn ein Hostname nicht aufgelöst werden kann?",
+            "a5": "Das bedeutet, dass für diese IP-Adresse kein Reverse-DNS-Eintrag (PTR Record) konfiguriert wurde. Nicht alle IPs haben einen zugeordneten Hostnamen."
+        },
+        "js": {
+            "looking_up": "Daten werden abgerufen...",
+            "success": "IP-Informationen erfolgreich geladen",
+            "error": "Fehler beim Abrufen der IP-Daten"
+        }
+    },
+    "ping-test": {
+        "meta": {
+            "title": "Ping-Test-Tool online – kostenloser Netzwerk-Latenz-Checker",
+            "description": "Kostenloses Ping-Test-Tool zur Überprüfung der Netzwerklatenz, Paketverlust und Server-Erreichbarkeit. Testen Sie die Verbindung zu jedem Host oder jeder IP-Adresse sofort.",
+            "h1": "Ping-Testtool",
+            "subtitle": "Server-Antwortzeit und Netzwerkkonnektivität von mehreren Standorten testen"
+        },
+        "form": {
+            "host_label": "Host oder IP-Adresse",
+            "host_placeholder": "google.com oder 8.8.8.8",
+            "button": "Host anpingen"
+        },
+        "results": {
+            "title": "Ping-Ergebnisse"
+        },
+        "content": {
+            "what_is_title": "Was ist ein Ping-Test?",
+            "what_is_desc": "Ping ist ein Netzwerk-Diagnosetool, das die Erreichbarkeit eines Hosts in einem IP-Netzwerk testet. Es misst die Round-Trip-Zeit (Umlaufzeit) für Nachrichten, die vom Quellrechner zum Zielrechner und zurück gesendet werden. Ping funktioniert durch das Senden von ICMP (Internet Control Message Protocol) Echo Request-Paketen an den Ziel-Host und das Warten auf eine Antwort (Echo Reply). Das Tool ist nach dem Ping-Geräusch von Sonargeräten in U-Booten benannt, da es ähnlich ein Signal aussendet und auf eine Antwort wartet.",
+            "why_use_title": "Warum einen Ping-Test verwenden?",
+            "why_use_desc": "Ping-Tests sind für die Netzwerk-Fehlerbehebung und Leistungsüberwachung unverzichtbar. Systemadministratoren nutzen Ping, um die Netzwerkkonnektivität zu verifizieren, Verbindungsprobleme zu diagnostizieren und die Netzlatenz zu messen. Es hilft festzustellen, ob ein Server online und reaktionsfähig ist, Paketverluste zu erkennen (die auf Netzwerküberlastung oder Hardwareprobleme hinweisen können) und die Qualität von Netzwerkverbindungen zu messen. Gamer nutzen Ping, um die Serverlatenz vor dem Beitreten zu Online-Spielen zu prüfen, während Website-Besitzer die Reaktionsfähigkeit ihres Servers überwachen, um eine optimale Benutzererfahrung sicherzustellen.",
+            "metrics_title": "Ping-Metriken verstehen",
+            "metric1": "<strong>Pakete Gesendet/Empfangen:</strong> Anzahl der Ping-Anfragen und erfolgreichen Antworten",
+            "metric2": "<strong>Paketverlust:</strong> Prozentsatz der Pakete, die keine Antwort erhalten haben",
+            "metric3": "<strong>Minimum Zeit:</strong> Die schnellste gemessene Round-Trip-Zeit",
+            "metric4": "<strong>Durchschnitt Zeit:</strong> Die mittlere Latenz über alle Pings hinweg",
+            "metric5": "<strong>Maximum Zeit:</strong> Die langsamste gemessene Round-Trip-Zeit",
+            "metric6": "<strong>TTL (Time To Live):</strong> Anzahl der Netzwerk-Sprünge (Hops), bevor das Paket abläuft",
+            "interpreting_title": "Ergebnisse interpretieren",
+            "interpreting_desc": "Gute Ping-Zeiten liegen typischerweise unter 50 ms für lokale Verbindungen und unter 100 ms für internationale Verbindungen. Zeiten zwischen 100 und 200 ms sind für die meisten Anwendungen akzeptabel, können aber in Echtzeit-Anwendungen wie Gaming oder Videokonferenzen zu spürbaren Verzögerungen führen. Alles über 200 ms deutet auf potenzielle Netzwerkprobleme hin. Ein Paketverlust von über 1 % deutet auf Netzwerkprobleme hin, die untersucht werden müssen. Konstante Ping-Zeiten weisen auf eine stabile Verbindung hin, während stark schwankende Zeiten auf Netzwerküberlastung oder Routing-Probleme hindeuten."
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Was ist eine gute Ping-Zeit?",
+            "a1": "Für Online-Gaming ist ein Ping unter 20 ms ideal, unter 50 ms sehr gut. Für allgemeines Surfen sind Werte bis 100 ms kaum spürbar. Über 150 ms treten merkliche Verzögerungen auf.",
+            "q2": "Was bedeutet Paketverlust (Packet Loss)?",
+            "a2": "Paketverlust tritt auf, wenn gesendete Datenpakete ihr Ziel nicht erreichen. Dies führt zu Unterbrechungen in Streams, Lag in Spielen oder fehlgeschlagenen Dateitransfers.",
+            "q3": "Warum ist mein Ping zu bestimmten Zeiten höher?",
+            "a3": "Dies liegt oft an der Netzwerkauslastung zu Stoßzeiten, wenn viele Menschen gleichzeitig das Internet nutzen, oder am Routing Ihres Providers.",
+            "q4": "Beeinflusst WLAN meinen Ping?",
+            "a4": "Ja, WLAN-Verbindungen haben oft eine höhere Latenz und sind störanfälliger als direkte Ethernet-Kabelverbindungen.",
+            "q5": "Was kann ich tun, um meinen Ping zu verbessern?",
+            "a5": "Nutzen Sie ein LAN-Kabel, schließen Sie Hintergrundanwendungen, starten Sie Ihren Router neu oder wählen Sie Server, die geografisch näher an Ihrem Standort liegen."
+        },
+        "js": {
+            "pinging": "Host wird angepingt...",
+            "success": "Ping erfolgreich durchgeführt",
+            "error": "Fehler beim Pingen des Hosts",
+            "ping_host": "Host anpingen"
+        }
+    },
+    "port-checker": {
+        "meta": {
+            "title": "Port Checker Tool – Kostenloser Online-Scanner für offene Ports",
+            "description": "Kostenloses Port-Checker-Tool, um zu testen, ob Ports offen, geschlossen oder gefiltert sind. Prüfen Sie TCP/UDP-Ports sofort für Netzwerkfehlersuche und Sicherheitsaudits.",
+            "h1": "Port-Checker-Tool",
+            "subtitle": "Prüfen Sie, ob Ports auf einem Server offen sind, um Verbindungsprobleme zu beheben"
+        },
+        "form": {
+            "host_label": "Host oder IP-Adresse",
+            "host_placeholder": "beispiel.de oder 8.8.8.8",
+            "port_label": "Port-Nummer",
+            "port_placeholder": "80",
+            "button": "Port prüfen"
+        },
+        "results": {
+            "title": "Ergebnisse der Port-Prüfung"
+        },
+        "content": {
+            "what_is_title": "Was ist ein Port Checker?",
+            "what_is_desc": "Ein Port Checker ist ein Netzwerkdiagnosetool, das feststellt, ob ein bestimmter TCP- oder UDP-Port auf einem Server oder Gerät offen ist (Verbindungen akzeptiert), geschlossen ist (Verbindungen ablehnt) oder gefiltert wird (von einer Firewall blockiert). Ports sind virtuelle Endpunkte für die Netzwerkkommunikation, wobei jede Portnummer (1-65535) potenziell verschiedene Dienste hosten kann. Gängige Ports sind 80 für HTTP-Webverkehr, 443 für HTTPS, 22 für SSH und 25 für E-Mails. Die Überprüfung des Portstatus ist entscheidend für die Netzwerkkonfiguration, Sicherheitsaudits und die Behebung von Verbindungsproblemen.",
+            "why_check_title": "Warum Ports prüfen?",
+            "why_check_desc": "Die Portprüfung dient mehreren kritischen Zwecken in der Netzwerkverwaltung und Sicherheit. Systemadministratoren verifizieren, dass Dienste nach Konfigurationsänderungen auf ihren vorgesehenen Ports erreichbar sind. Sicherheitsexperten scannen nach offenen Ports, um potenzielle Schwachstellen zu identifizieren und sicherzustellen, dass nicht benötigte Ports geschlossen sind. Entwickler testen, ob ihre Anwendungen ordnungsgemäß auf konfigurierten Ports lauschen. Netzwerk-Fehlersucher nutzen die Portprüfung, um zu diagnostizieren, warum Dienste nicht erreichbar sind, und festzustellen, ob das Problem am Dienst selbst, an Firewall-Regeln oder am Netzwerk-Routing liegt.",
+            "common_ports_title": "Gängige Ports",
+            "port1": "<strong>Port 80:</strong> HTTP (Webverkehr)",
+            "port2": "<strong>Port 443:</strong> HTTPS (sicherer Webverkehr)",
+            "port3": "<strong>Port 22:</strong> SSH (sicherer Shell-Zugriff)",
+            "port4": "<strong>Port 21:</strong> FTP (Dateiübertragung)",
+            "port5": "<strong>Port 25:</strong> SMTP (E-Mail-Versand)",
+            "port6": "<strong>Port 3306:</strong> MySQL-Datenbank",
+            "port7": "<strong>Port 3389:</strong> RDP (Remote Desktop)",
+            "security_title": "Sicherheitsaspekte",
+            "security_desc": "Offene Ports stellen potenzielle Eintrittspunkte für Angreifer dar. Bewährte Sicherheitspraktiken schreiben vor, nur notwendige Ports offen zu halten und alle anderen zu schließen oder zu filtern. Das regelmäßige Scannen Ihrer eigenen Server hilft dabei, unbeabsichtigt offene Ports zu identifizieren, die ausgenutzt werden könnten. Beachten Sie jedoch, dass das Scannen der Ports fremder Systeme ohne Erlaubnis illegal sein kann und als feindselige Aktivität betrachtet wird. Stellen Sie immer sicher, dass Sie die Autorisierung haben, bevor Sie Ports auf Systemen scannen, die Ihnen nicht gehören."
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Was bedeutet ein 'gefilterter' Port?",
+            "a1": "Ein gefilterter Port bedeutet, dass eine Firewall oder ein anderes Netzwerkfiltergerät die Pakete abfängt und der Port-Status nicht bestimmt werden kann (keine Antwort).",
+            "q2": "Warum ist Port 80/443 so wichtig?",
+            "a2": "Diese Ports werden für fast den gesamten Webverkehr (HTTP und HTTPS) genutzt. Wenn sie geschlossen sind, kann eine Website nicht im Browser aufgerufen werden.",
+            "q3": "Wie öffne ich einen Port auf meinem eigenen Router?",
+            "a3": "Dies geschieht über die Port-Weiterleitung (Port Forwarding) in den Router-Einstellungen. Seien Sie vorsichtig, da dies Sicherheitsrisiken bergen kann.",
+            "q4": "Kann ich UDP-Ports genauso einfach prüfen wie TCP?",
+            "a4": "UDP ist schwieriger zu prüfen, da es verbindungslos ist. Eine fehlende Antwort kann bedeuten, dass der Port offen ist und einfach nicht antwortet, oder dass er gefiltert wird.",
+            "q5": "Welche Ports sollte ich aus Sicherheitsgründen immer schließen?",
+            "a5": "Alle Ports, die nicht explizit benötigt werden, sollten geschlossen werden. Besonders kritisch sind Ports für Datenbanken (3306), Fernwartung (3389) oder unverschlüsselte Dienste."
+        },
+        "js": {
+            "checking": "Port wird geprüft...",
+            "success": "Port-Status erfolgreich ermittelt",
+            "error": "Fehler bei der Port-Prüfung",
+            "check_port": "Port prüfen"
+        }
+    },
+    "reverse-dns-lookup": {
+        "meta": {
+            "title": "Reverse DNS Lookup – Kostenloses Online-IP-to-Domain-Tool",
+            "description": "Kostenloses Online-Tool für Reverse-DNS-Abfragen. Finden Sie sofort den Hostnamen zu jeder IP-Adresse. Schnell, sicher und einfach zu bedienen.",
+            "h1": "Reverse-DNS-Suche",
+            "subtitle": "Finden Sie sofort den Domainnamen oder Hostnamen, der mit einer IP-Adresse verknüpft ist"
+        },
+        "form": {
+            "ip_label": "IP-Adresse eingeben",
+            "ip_placeholder": "z. B. 8.8.8.8",
+            "button": "Reverse DNS abfragen",
+            "button_loading": "Wird abgefragt..."
+        },
+        "results": {
+            "title": "Reverse-DNS-Ergebnisse"
+        },
+        "content": {
+            "what_is_title": "Was ist eine Reverse-DNS-Abfrage?",
+            "what_is_desc": "Die Reverse-DNS-Abfrage (rDNS) ist der Prozess zur Bestimmung des Domainnamens oder Hostnamens, der einer IP-Adresse zugeordnet ist. Im Gegensatz zu einer Standard-DNS-Abfrage, die einen Domainnamen in eine IP-Adresse umwandelt (Vorwärts-Lookup), macht rDNS das Gegenteil. Es wird oft verwendet, um die Identität eines Servers zu verifizieren oder Netzwerkprobleme zu beheben.",
+            "why_use_title": "Warum eine Reverse-DNS-Abfrage verwenden?",
+            "why_use_desc": "Reverse DNS wird häufig für Sicherheits- und Verifizierungszwecke eingesetzt. Es hilft dabei, die Quelle von eingehendem Datenverkehr zu identifizieren, E-Mail-Absender zu verifizieren (um Spam zu verhindern) und Netzwerkverbindungsprobleme zu diagnostizieren. Viele Mailserver verlangen gültige rDNS-Einträge, um eingehende E-Mails zu akzeptieren.",
+            "ptr_records_title": "PTR-Einträge verstehen",
+            "ptr_record1": "<strong>PTR Record:</strong> Ein Pointer Record (PTR) ist der Typ von DNS-Eintrag, der für Reverse-DNS-Abfragen verwendet wird.",
+            "ptr_record2": "<strong>Mapping:</strong> Er verknüpft eine IP-Adresse zurück mit einem Hostnamen.",
+            "ptr_record3": "<strong>Verifizierung:</strong> Entscheidend für die Zustellbarkeit von E-Mails und Sicherheitsüberprüfungen.",
+            "ptr_record4": "<strong>IP-zu-Host:</strong> Unverzichtbar für die Identifizierung des wahren Eigentümers einer IP-Adresse.",
+            "ptr_record5": "<strong>Spam-Prävention:</strong> Wird von Mailservern verwendet, um die Authentizität des Absenders zu validieren.",
+            "ptr_record6": "<strong>Netzwerk-Logs:</strong> Hilfreich, um Netzwerkprotokolle menschenlesbar zu machen, indem Hostnamen anstelle von IPs angezeigt werden.",
+            "use_cases_title": "Häufige Anwendungsfälle",
+            "use_cases_desc": "Zu den häufigsten Anwendungsfällen gehören die Überprüfung der Herkunft von Webverkehr, die Diagnose von Netzlatenzen oder Routing-Problemen, die Validierung von E-Mail-Server-Konfigurationen und die Verbesserung von Cybersicherheits-Audits durch die Identifizierung potenziell bösartiger IP-Adressen."
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Was ist ein PTR-Eintrag?",
+            "a1": "Ein PTR-Eintrag (Pointer Record) ist ein Typ von DNS-Eintrag, der eine IP-Adresse einem Hostnamen zuordnet. Er ist die Kernkomponente einer Reverse-DNS-Abfrage.",
+            "q2": "Warum ist Reverse DNS wichtig für E-Mails?",
+            "a2": "Viele E-Mail-Anbieter nutzen Reverse DNS, um zu prüfen, ob der sendende Server legitim ist. Wenn die IP eines Servers keinen passenden rDNS-Eintrag hat, könnten E-Mails als Spam markiert werden.",
+            "q3": "Kann jede IP-Adresse einen Reverse-DNS-Eintrag haben?",
+            "a3": "Ja, aber der Eigentümer der IP-Adresse (normalerweise der ISP oder Hosting-Anbieter) muss den PTR-Eintrag in seinen DNS-Einstellungen konfigurieren."
+        }
+    },
+    "traceroute": {
+        "meta": {
+            "title": "Traceroute Online – Kostenloses Netzwerkanalyse-Tool",
+            "description": "Kostenloses Online-Traceroute-Tool. Analysieren Sie den Pfad von Datenpaketen über das Netzwerk zu einem Host. Schnell, sicher und einfach zu bedienen.",
+            "h1": "Traceroute",
+            "subtitle": "Das beste Traceroute-Tool für Entwickler und IT-Profis"
+        },
+        "form": {
+            "host_label": "Host oder IP-Adresse",
+            "host_placeholder": "beispiel.de oder 8.8.8.8",
+            "button": "Traceroute starten",
+            "button_loading": "Wird ausgeführt..."
+        },
+        "results": {
+            "title": "Traceroute-Ergebnisse"
+        },
+        "content": {
+            "what_is_title": "Was ist Traceroute?",
+            "what_is_desc": "Traceroute ist ein Diagnosewerkzeug, das den Pfad (die Route) und die Verzögerungszeit von Paketen IP-Netzwerke hinweg anzeigt. Es listet alle Zwischenstationen (Hops) auf, die ein Datenpaket auf dem Weg von der Quelle zum Ziel passiert.",
+            "why_use_title": "Warum Traceroute verwenden?",
+            "why_use_desc": "Traceroute hilft dabei, Netzwerkprobleme wie Engpässe, Paketverluste oder Fehlkonfigurationen im Routing zu lokalisieren. Es zeigt genau an, an welcher Stelle im Internet die Verbindung langsam wird oder abbricht.",
+            "hops_title": "Verständnis der 'Hops'",
+            "hop1": "<strong>Hop:</strong> Jede Zwischenstation (meist ein Router) auf dem Weg.",
+            "hop2": "<strong>Latenz:</strong> Die Zeit, die ein Paket benötigt, um einen Hop zu erreichen.",
+            "hop3": "<strong>IP-Adresse:</strong> Die Kennung jedes Routers in der Kette.",
+            "hop4": "<strong>Timeout:</strong> Wenn ein Hop nicht rechtzeitig antwortet (oft durch firewalls).",
+            "hop5": "<strong>Anzahl der Sprünge:</strong> Die Gesamtzahl der Stationen bis zum Ziel.",
+            "hop6": "<strong>Netzwerkpfad:</strong> Die geografische und technische Route der Daten.",
+            "issues_title": "Häufige Probleme identifizieren",
+            "issues_desc": "Hohe Latenzzeiten an einem bestimmten Hop weisen auf Überlastung hin. Ein vollständiger Abbruch (Sterne/Timeouts) deutet darauf hin, dass ein Router ICMP-Pakete blockiert oder die Verbindung dort endet."
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Was bedeuten die drei Zeitwerte pro Hop?",
+            "a1": "Traceroute sendet standardmäßig drei Pakete pro Hop, um Schwankungen in der Antwortzeit besser sichtbar zu machen.",
+            "q2": "Warum sehe ich Sternchen ( * * * ) in den Ergebnissen?",
+            "a2": "Das bedeutet, dass der Router am jeweiligen Hop nicht auf die ICMP-Anfragen antwortet, oft aus Sicherheitsgründen oder wegen Firewall-Regeln.",
+            "q3": "Ist ein hoher Ping am Ende immer ein Problem?",
+            "a3": "Nicht unbedingt. Wenn die Zwischenstationen schnell antworten, aber der Zielhost langsam ist, liegt das Problem wahrscheinlich am Server selbst, nicht am Netzwerk."
+        }
+    },
+    "user-agent-parser": {
+        "meta": {
+            "title": "User Agent Parser – Kostenloses Online-Browser-Detail-Tool",
+            "description": "Identifizieren Sie Browser, Betriebssystem und Gerät anhand des User-Agent-Strings mit unserem kostenlosen Tool.",
+            "h1": "Benutzeragenten-Parser",
+            "subtitle": "Identifizieren Sie Browser, Betriebssystem und Gerät aus dem User-Agent-String"
+        },
+        "editor": {
+            "label_input": "User-Agent-String",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Analysieren",
+            "btn_use_my_ua": "Mein User-Agent verwenden",
+            "label_browser": "Browser",
+            "label_os": "Betriebssystem",
+            "label_device": "Gerät",
+            "label_raw": "Rohdaten der Engine"
+        },
+        "content": {
+            "p1": "Unser kostenloser User Agent Parser dekodiert User-Agent-Strings sofort, um den Browser, das Betriebssystem, den Gerätetyp und die Engine-Version zu identifizieren. Nützlich für Entwickler zur Fehlersuche bei browserspezifischen Problemen oder zur Analyse von Traffic-Quellen.",
+            "features_title": "Funktionen",
+            "features": {
+                "instant": {
+                    "title": "Sofortige Analyse",
+                    "desc": "Dekodieren Sie User-Agents in Millisekunden"
+                },
+                "detailed": {
+                    "title": "Detaillierte Infos",
+                    "desc": "Extrahiert Browser, OS, Gerät und Engine"
+                },
+                "auto": {
+                    "title": "Auto-Erkennung",
+                    "desc": "Analysieren Sie Ihren eigenen aktuellen User-Agent mit einem Klick"
+                },
+                "free": {
+                    "title": "100 % kostenlos",
+                    "desc": "Unbegrenzte Nutzung ohne Kosten"
+                }
+            },
+            "uses_title": "Häufige Anwendungsfälle",
+            "uses": {
+                "debugging": {
+                    "title": "Fehlerbehebung",
+                    "desc": "Identifizieren Sie detaillierte Browserversionen für das Troubleshooting"
+                },
+                "analytics": {
+                    "title": "Analysen",
+                    "desc": "Verstehen Sie, welche Geräte und Betriebssysteme Ihre Nutzer verwenden"
+                },
+                "dev": {
+                    "title": "Entwicklung",
+                    "desc": "Überprüfen Sie User-Agent-Strings während des Testens"
+                },
+                "security": {
+                    "title": "Sicherheit",
+                    "desc": "Analysieren Sie verdächtige User-Agent-Strings in Protokollen"
+                }
+            },
+            "how_to_title": "Bedienungsanleitung",
+            "how_to": {
+                "step1": {
+                    "title": "String eingeben",
+                    "desc": "Fügen Sie einen User-Agent-String ein oder klicken Sie auf „Mein User-Agent verwenden“"
+                },
+                "step2": {
+                    "title": "Analysieren",
+                    "desc": "Klicken Sie auf „Analysieren“, um den String zu dekodieren"
+                },
+                "step3": {
+                    "title": "Ergebnisse anzeigen",
+                    "desc": "Sehen Sie sich die aufgeschlüsselten Details für Browser, OS und Gerät an"
+                }
+            },
+            "faq_title": "Häufig gestellte Fragen (FAQ)",
+            "faq": {
+                "q1": "Was ist ein User-Agent?",
+                "a1": "Ein User-Agent ist eine Textzeichenfolge, die Ihr Webbrowser an jede besuchte Website sendet und die den Browser, die Version, das Betriebssystem und den Gerätetyp identifiziert.",
+                "q2": "Wie genau ist dieser Parser?",
+                "a2": "Er verwendet Standard-Mustervergleiche, um gängige User-Agents zu identifizieren. Beachten Sie jedoch, dass User-Agent-Strings gefälscht oder modifiziert werden können.",
+                "q3": "Sind meine Daten sicher?",
+                "a3": "Ja, die Analyse erfolgt lokal in Ihrem Browser. Wir speichern Ihre User-Agent-Daten nicht."
+            }
+        }
+    },
+    "what-is-my-ip": {
+        "meta": {
+            "title": "Was ist meine IP-Adresse? - Kostenloser Online-IP-Checker",
+            "description": "Finden Sie sofort Ihre öffentliche IP-Adresse heraus. Überprüfen Sie kostenlos Ihre IPv4/IPv6-Adresse, ISP, Standort und Verbindungsdetails.",
+            "h1": "Was ist meine IP-Adresse?",
+            "subtitle": "Entdecken Sie sofort Ihre öffentliche IP-Adresse mit detaillierten ISP-Informationen"
+        },
+        "ui": {
+            "loading": "IP-Daten werden geladen...",
+            "your_ip_title": "Ihre öffentliche IP-Adresse",
+            "copy_button": "Kopieren",
+            "timezone": "Zeitzone"
+        },
+        "results": {
+            "location": "Standort",
+            "isp": "Internetanbieter (ISP)",
+            "country": "Land"
+        },
+        "content": {
+            "main_title": "Wie lautet meine IP-Adresse - Kostenloses IP-Lookup-Tool",
+            "main_desc": "Finden Sie Ihre öffentliche IP-Adresse sofort mit unserem kostenlosen IP-Lookup-Tool. Entdecken Sie Ihre IPv4- oder IPv6-Adresse, den genauen geografischen Standort (Stadt, Region, Land), ISP-Informationen, Zeitzone und vollständige Netzwerkdetails. Unverzichtbar für Netzwerkkonfigurationen, Sicherheitstests, Fernzugriffs-Einrichtungen, VPN-Verifizierungen und das Verständnis Ihres digitalen Fußabdrucks im Internet.",
+            "what_is_title": "Was ist meine IP-Adresse?",
+            "what_is_desc": "Ihre IP-Adresse ist eine eindeutige numerische Kennung, die Ihrem Gerät zugewiesen wird, wenn es eine Verbindung zum Internet herstellt. Sie ermöglicht es Websites und Diensten, mit Ihrem Gerät zu kommunizieren und Ihren ungefähren Standort zu identifizieren.",
+            "ipv4_vs_ipv6_title": "IPv4- vs. IPv6-Adressen",
+            "ipv4_title": "IPv4-Adresse",
+            "ipv4_format": "<strong>Format:</strong> 192.168.1.1 (vier Zahlen von 0-255, getrennt durch Punkte)",
+            "ipv4_total": "<strong>Gesamtzahl:</strong> ca. 4,3 Milliarden Adressen",
+            "ipv4_desc": "Das weltweit gebräuchlichste Format, dem jedoch aufgrund des Internetwachstums die verfügbaren Adressen ausgehen.",
+            "ipv6_title": "IPv6-Adresse",
+            "ipv6_format": "<strong>Format:</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>Gesamtzahl:</strong> 340 Sextillionen Adressen",
+            "ipv6_desc": "Das neuere Format mit virtuell unbegrenzten Adressen, das IPv4 schrittweise ersetzt.",
+            "why_check_title": "Warum Sie Ihre IP prüfen sollten?",
+            "why_check_desc": "Die Kenntnis Ihrer IP-Adresse ist nützlich für die Fehlerbehebung bei Netzwerkproblemen, die Verifizierung von VPN-Verbindungen, die Prüfung, ob Ihr Standort verschleiert wird, und das Verständnis dafür, welche Informationen Websites über Sie sehen können.",
+            "public_vs_private_title": "Öffentliche vs. private IP-Adressen",
+            "public_ip_title": "🌐 Öffentliche IP-Adresse",
+            "public_ip_desc": "Ihre eindeutige Adresse im Internet, die für alle besuchten Websites und Dienste sichtbar ist.",
+            "public_ip_example": "<strong>Beispiel:</strong> 203.0.113.45",
+            "public_ip_note": "Wird von Ihrem ISP zugewiesen und für die gesamte Internetkommunikation genutzt.",
+            "private_ip_title": "🏠 Private IP-Adresse",
+            "private_ip_desc": "Die Adresse Ihres Geräts in Ihrem lokalen Netzwerk, die nicht im Internet sichtbar ist.",
+            "private_ip_example": "<strong>Beispiel:</strong> 192.168.1.100",
+            "private_ip_note": "Wird für die Kommunikation innerhalb Ihres Heim- oder Büronetzwerks verwendet.",
+            "security_title": "IP-Adress-Sicherheit & Privatsphäre",
+            "security_desc1": "Ihre IP-Adresse verrät Ihren ungefähren Standort (Stadt/Region), Ihren ISP und kann verwendet werden, um Ihre Online-Aktivitäten über verschiedene Websites hinweg zu verfolgen. Obwohl sie nicht direkt Ihre exakte Wohnadresse oder persönliche Identität preisgibt, kann sie mit anderen Daten für das Tracking kombiniert werden. Websites nutzen Ihre IP für Analysen, Werbe-Targeting und geografische Beschränkungen.",
+            "security_desc2": "<strong>Schutz der Privatsphäre:</strong> Verwenden Sie ein VPN (Virtual Private Network), um Ihre reale IP-Adresse zu maskieren und die Privatsphäre zu erhöhen. VPNs leiten Ihren Datenverkehr über ihre Server und zeigen die IP des VPNs anstelle Ihrer eigenen. Unser Tool zeigt Ihnen genau, welche Informationen Websites über Ihre Verbindung sehen können.",
+            "dynamic_vs_static_title": "Dynamische vs. statische IP-Adressen",
+            "dynamic_ip": "<strong>Dynamische IP:</strong> Ändert sich regelmäßig (täglich, wöchentlich oder beim Router-Neustart). Die meisten Privatnutzer haben dynamische IPs, die automatisch vom ISP zugewiesen werden. Günstiger und üblicher für Privatanschlüsse.",
+            "static_ip": "<strong>Statische IP:</strong> Ändert sich nie und bleibt konstant. Wird typischerweise für Geschäftsanschlüsse, Webserver, Mailserver und Fernzugriff verwendet. Kostet mehr, ist aber für Hosting-Dienste unerlässlich.",
+            "privacy_tips_title": "Tipps für Privatsphäre & Sicherheit",
+            "privacy_tip1": "• Teilen Sie Ihre IP-Adresse niemals öffentlich in Foren oder sozialen Medien",
+            "privacy_tip2": "• Verwenden Sie ein VPN, wenn Sie sich mit öffentlichen WLAN-Netzwerken verbinden",
+            "privacy_tip3": "• Aktivieren Sie die Firewall Ihres Routers, um unbefugten Zugriff zu blockieren",
+            "privacy_tip4": "• Prüfen Sie regelmäßig Ihre IP, um ungewollte VPN-Verbindungsabbrüche zu bemerken",
+            "privacy_tip5": "• Seien Sie sich bewusst, dass Websites Ihre IP aus Sicherheits- und Analysezwecken protokollieren"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Kann man mich über meine IP-Adresse finden?",
+            "a1": "Nur Ihr Internetanbieter kann Ihre reale Identität einer IP zuordnen. Websites sehen nur den ungefähren Standort (Stadt/Region) und technische Verbindungsdaten.",
+            "q2": "Wie ändere ich meine IP-Adresse?",
+            "a2": "Häufig reicht ein Neustart des Routers aus. Alternativ können Sie ein VPN oder einen Proxy-Dienst nutzen, um Ihre IP dauerhaft zu maskieren.",
+            "q3": "Was ist der Unterschied zwischen meiner IP und meiner MAC-Adresse?",
+            "a3": "Die IP-Adresse ist Ihre Kennung im Netzwerk, während die MAC-Adresse die eindeutige Hardware-Kennung Ihrer Netzwerkkarte ist. Die MAC-Adresse wird nicht über das Internet übertragen."
+        }
+    },
+    "what-is-my-isp": {
+        "meta": {
+            "title": "Was ist mein ISP? - Kostenloser Online-Anbieter-Checker",
+            "description": "Finden Sie sofort Ihren Internet Service Provider (ISP) heraus. Prüfen Sie ISP-Name, Organisation, ASN und IP-Adressinformationen kostenlos.",
+            "h1": "Was ist mein ISP?",
+            "subtitle": "Identifizieren Sie Ihren Internetanbieter mit Verbindungsinformationen"
+        },
+        "content": {
+            "loading": "ISP-Informationen werden geladen...",
+            "your_isp_title": "Ihr Internetanbieter",
+            "network_label": "Netzwerk",
+            "location_label": "Standort",
+            "main_title": "Internet Service Provider Lookup Tool",
+            "main_desc": "Identifizieren Sie sofort Ihren Internet Service Provider (ISP), den Namen Ihrer Organisation, Netzwerkdetails und Verbindungsinformationen. Unser kostenloses ISP-Lookup-Tool offenbart Ihren ISP-Namen, das ASN (Autonomous System Number), Ihre IP-Adresse, den Standort und die Netzwerkinfrastruktur. Perfekt zur Verifizierung von VPN-Verbindungen, zur Fehlerbehebung von Netzwerkproblemen, zur Bestätigung geschäftlicher Internetleitungen und zum Verständnis Ihres Netzwerk-Routings.",
+            "info_title": "Welche Informationen können Sie finden?",
+            "info1": "<strong>ISP-Name:</strong> Das Unternehmen, das Ihren Internetanschluss bereitstellt.",
+            "info2": "<strong>Organisation:</strong> Die Organisation oder Instanz, die Ihre Netzwerkverbindung verwaltet.",
+            "info3": "<strong>ASN:</strong> Eindeutige Netzwerkkennung für Routing und Peering.",
+            "info4": "<strong>Standort:</strong> Stadt, Region und Land, die mit Ihrer Verbindung verknüpft sind.",
+            "info5": "<strong>Netzwerkdetails:</strong> IP-Bereich, Subnetz-Informationen und Daten zur Netzwerkinfrastruktur.",
+            "why_use_title": "Warum dieses Tool verwenden?",
+            "why_use1": "Überprüfen Sie, ob Sie über den richtigen Internetanbieter verbunden sind.",
+            "why_use2": "Behebung von Problemen mit der Netzwerkkonnektivität und -leistung.",
+            "why_use3": "Prüfen Sie, ob Sie einen VPN- oder Proxy-Dienst korrekt verwenden.",
+            "why_use4": "Identifizieren Sie Ihr Netzwerk für Sicherheits- und Datenschutzzwecke.",
+            "why_use5": "Überprüfen Sie ISP-Angaben zur Serviceabdeckung und Infrastruktur.",
+            "why_use6": "Recherchieren Sie Netzwerk-Routing und Peering-Beziehungen.",
+            "why_use7": "Bestätigen Sie geschäftliche Internetverbindungen und dedizierte Leitungen.",
+            "why_use8": "Erkennen Sie unbefugten Netzwerkzugriff oder Verbindungsmanipulationen.",
+            "asn_title": "ASN (Autonomous System Number) verstehen",
+            "asn_desc": "Eine Autonomous System Number (ASN) ist eine weltweit eindeutige Kennung, die einem Netzwerk oder einer Gruppe von Netzwerken unter einer einheitlichen administrativen Kontrolle zugewiesen wird. ISPs, große Organisationen und Content Delivery Networks haben jeweils ihre eigene ASN. Diese Nummer wird im BGP-Routing (Border Gateway Protocol) verwendet, um zu bestimmen, wie der Internetverkehr zwischen verschiedenen Netzwerken fließt. Die Kenntnis Ihrer ASN hilft dabei, Ihren Netzwerkanbieter zu identifizieren und Routing-Pfade zu verstehen.",
+            "use_cases_title": "Häufige Anwendungsfälle",
+            "use_case1_title": "🔧 Netzwerk-Fehlerbehebung",
+            "use_case1_desc": "Identifizieren Sie ISP-bezogene Probleme, verifizieren Sie Routing-Pfade und diagnostizieren Sie Verbindungsprobleme.",
+            "use_case2_title": "🔒 VPN-Verifizierung",
+            "use_case2_desc": "Bestätigen Sie, dass Ihr VPN funktioniert, indem Sie prüfen, ob der ISP sich ändert, wenn Sie verbunden sind.",
+            "use_case3_title": "🛡️ Sicherheitsaudits",
+            "use_case3_desc": "Verifizieren Sie die Authentizität der Verbindung und erkennen Sie unbefugte Netzwerkzugriffe.",
+            "use_case4_title": "💼 Geschäftliche Verifizierung",
+            "use_case4_desc": "Bestätigen Sie dedizierte Geschäftsleitungen und Enterprise-Internetverbindungen.",
+            "isp_types_title": "Arten von Internetanbietern (ISPs)",
+            "isp_type1": "<strong>DSL-ISPs:</strong> Internet über Telefonleitungen (ADSL, VDSL)",
+            "isp_type2": "<strong>Kabel-ISPs:</strong> Hochgeschwindigkeitsinternet über Koaxialkabel-Infrastruktur",
+            "isp_type3": "<strong>Glasfaser-ISPs:</strong> Ultraschnelle Verbindungen mittels Glasfaserkabeln",
+            "isp_type4": "<strong>Mobilfunk-ISPs:</strong> 4G/5G-Mobilfunk-Internetverbindungen",
+            "isp_type5": "<strong>Satelliten-ISPs:</strong> Internet via Satellit für entlegene Gebiete",
+            "isp_type6": "<strong>Business-ISPs:</strong> Dedizierte Unternehmensverbindungen mit Service-Level-Agreements (SLAs)",
+            "privacy_note_title": "Datenschutzhinweis",
+            "privacy_note_desc": "Ihr ISP kann den gesamten unverschlüsselten Internetverkehr und die von Ihnen besuchten Websites sehen (jedoch nicht den Inhalt von HTTPS-Seiten). Er kann Verbindungsdaten, den Browserverlauf und DNS-Abfragen protokollieren. Verwenden Sie ein VPN, um Ihren Datenverkehr zu verschlüsseln und die Überwachung durch den ISP zu verhindern. Unser Tool zeigt nur öffentlich verfügbare Informationen an, die Websites ohnehin sehen können."
+        },
+        "results": {
+            "ip_address": "IP-Adresse",
+            "asn": "ASN"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Was ist der Unterschied zwischen ISP und Hostanbieter?",
+            "a1": "Ein ISP verbindet Sie mit dem Internet, während ein Hostanbieter Speicherplatz und Dienste für Websites im Internet bereitstellt.",
+            "q2": "Warum zeigt das Tool meine Firma als ISP an?",
+            "a2": "Große Unternehmen besitzen oft eigene IP-Blöcke und ASNs, weshalb sie als ihr eigener Internetanbieter erscheinen.",
+            "q3": "Kann ich meinen ISP über dieses Tool wechseln?",
+            "a3": "Nein, dieses Tool dient nur zur Information. Um Ihren ISP zu wechseln, müssen Sie einen neuen Vertrag mit einem anderen Anbieter abschließen."
+        },
+        "js": {
+            "error_loading": "Fehler beim Laden der ISP-Daten."
+        }
+    },
+    "whois-lookup": {
+        "meta": {
+            "title": "WHOIS-Suchtool – Kostenloser Online-Domain-Info-Checker",
+            "description": "Kostenloses WHOIS-Lookup-Tool zur Überprüfung von Domain-Registrierungsdetails. Zeigen Sie Registrar, Nameserver, Ablaufdatum und Domainstatus sofort an.",
+            "h1": "WHOIS-Suchtool",
+            "subtitle": "Fragen Sie die WHOIS-Datenbank nach Domain-Registrierungs- und Eigentumsdetails ab"
+        },
+        "form": {
+            "domain_label": "Domainname",
+            "domain_placeholder": "beispiel.de",
+            "button": "WHOIS abfragen",
+            "button_loading": "Wird abgefragt..."
+        },
+        "content": {
+            "form_hint": "Domain ohne http:// oder https:// eingeben",
+            "what_is_title": "Was ist ein WHOIS-Lookup?",
+            "what_is_desc": "WHOIS ist ein Protokoll, das Informationen über Domainnamen-Registrierungen bereitstellt. Es offenbart Details über den Domain-Eigentümer, Registrierungsdaten, Ablaufdaten, Nameserver und Registrar-Informationen.",
+            "why_use_title": "Warum einen WHOIS-Lookup verwenden?",
+            "why_use_desc": "Ein WHOIS-Lookup ist unverzichtbar für die Verifizierung des Domain-Eigentums, die Prüfung der Domain-Verfügbarkeit, die Untersuchung verdächtiger Websites, die Überwachung von Domain-Ablaufdaten und die Recherche von Wettbewerber-Domains.",
+            "key_info_title": "Wichtige bereitgestellte Informationen",
+            "key_info1": "<strong>Registranten-Informationen:</strong> Details zum Domain-Eigentümer (können datenschutzrechtlich geschützt sein).",
+            "key_info2": "<strong>Registrierungsdaten:</strong> Wann die Domain registriert und zuletzt aktualisiert wurde.",
+            "key_info3": "<strong>Ablaufdatum:</strong> Wann die Domain-Registrierung ausläuft.",
+            "key_info4": "<strong>Registrar:</strong> Das Unternehmen, das die Domain-Registrierung verwaltet.",
+            "key_info5": "<strong>Nameserver:</strong> DNS-Server, die die Domain hosten.",
+            "key_info6": "<strong>Domain-Status:</strong> Aktuelle Statuscodes und Sperren.",
+            "how_to_title": "Bedienungsanleitung",
+            "how_to1": "Geben Sie den Domainnamen ein, den Sie nachschlagen möchten.",
+            "how_to2": "Klicken Sie auf die Schaltfläche „WHOIS abfragen“.",
+            "how_to3": "Überprüfen Sie die umfassenden Registrierungsinformationen.",
+            "how_to4": "Nutzen Sie die Daten für Ihre Recherche oder Verifizierungsbedürfnisse.",
+            "privacy_title": "Datenschutz und WHOIS",
+            "privacy_desc": "Viele Domain-Registrare bieten mittlerweile WHOIS-Datenschutzdienste an, die persönliche Informationen in öffentlichen WHOIS-Datenbanken maskieren. Dies schützt Domain-Eigentümer vor Spam, Identitätsdiebstahl und unerwünschter Werbung, während die wesentlichen technischen Informationen für den Domain-Betrieb erhalten bleiben. Die DSGVO-Bestimmungen haben ebenfalls die Verfügbarkeit von WHOIS-Daten beeinflusst, wobei viele europäische Registrare personenbezogene Daten schwärzen, um den Datenschutzgesetzen zu entsprechen."
+        },
+        "results": {
+            "title": "WHOIS-Ergebnisse"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1": "Warum sind manche WHOIS-Daten versteckt?",
+            "a1": "Aufgrund von Datenschutzdiensten (WHOIS Privacy) oder Bestimmungen wie der DSGVO werden persönliche Daten oft nicht öffentlich angezeigt.",
+            "q2": "Was bedeutet der Status 'ClientTransferProhibited'?",
+            "a2": "Dies ist eine Sicherheitssperre, die verhindert, dass die Domain ohne Zustimmung des Eigentümers zu einem anderen Registrar übertragen wird.",
+            "q3": "Wie kann ich den Eigentümer einer geheimen Domain kontaktieren?",
+            "a3": "Oft wird im WHOIS-Eintrag eine anonymisierte E-Mail-Adresse oder ein Kontaktformular des Registrars angegeben, über das Nachrichten weitergeleitet werden.",
+            "q4": "Was ist die ICANN?",
+            "a4": "Die ICANN ist die Organisation, die die Zuweisung von Domainnamen weltweit koordiniert und die Regeln für WHOIS-Daten festlegt."
+        }
+    }
+}

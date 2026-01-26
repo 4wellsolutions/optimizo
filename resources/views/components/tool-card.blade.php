@@ -22,6 +22,6 @@
         </div>
     </div>
     <p class="text-gray-600 text-sm leading-relaxed">
-        {{ Str::limit(__tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'seo.description') ?: __tool($tool->slug, 'meta.desc') ?: '', 100) }}
+        {{ Str::limit(__tool($tool->slug, 'meta.subtitle') ?: __tool($tool->slug, 'meta.description') ?: __tool($tool->slug, 'seo.description') ?: '', 100) }}
     </p>
 </a>

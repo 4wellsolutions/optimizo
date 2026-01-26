@@ -1,0 +1,510 @@
+{
+    "dns-lookup": {
+        "meta": {
+            "title": "DNS-hakutyökalu - ilmainen online-DNS-tietueiden tarkistus",
+            "description": "Ilmainen DNS-hakutyökalu minkä tahansa verkkotunnuksen DNS-tietueiden tarkistamiseen. Katso A, AAAA, MX, NS, TXT ja CNAME -tietueet välittömästi.",
+            "h1": "DNS-hakutyökalu",
+            "subtitle": "Hae DNS-tietueita ja löydä nimipalvelimet, MX, A, CNAME ja TXT -tietueet välittömästi"
+        },
+        "form": {
+            "domain_label": "Verkkotunnus (Domain)",
+            "domain_placeholder": "esimerkki.fi",
+            "button": "Hae DNS"
+        },
+        "results": {
+            "title": "DNS-hakutulokset"
+        },
+        "content": {
+            "what_is_title": "Mikä on DNS-haku?",
+            "what_is_desc": "DNS-haku (Domain Name System Lookup) on työkalu, joka kysyy nimipalvelimilta verkkotunnuksen DNS-tietueita. DNS-tietueet sisältävät tärkeitä tietoja verkkotunnuksen kokoonpanosta, kuten sähköpostipalvelimet (MX), nimipalvelimet (NS), IP-osoitteet (A/AAAA) ja tekstimuotoiset tietueet (TXT), joita käytetään varmentamiseen ja turvallisuuteen.",
+            "why_use_title": "Miksi käyttää DNS-hakua?",
+            "why_use_desc": "DNS-haku on välttämätön sähköpostin toimitusongelmien vianetsinnässä, verkkotunnuksen määritysten tarkistamisessa, nimipalvelinasetusten varmistamisessa sekä SPF- ja DKIM-tietueiden validoinnissa. Järjestelmäylläpitäjät ja kehittäjät käyttävät sitä päivittäin.",
+            "record_types_title": "DNS-tietuetyypit",
+            "a_record": "<strong>A-tietue:</strong> Yhdistää verkkotunnuksen IPv4-osoitteeseen",
+            "aaaa_record": "<strong>AAAA-tietue:</strong> Yhdistää verkkotunnuksen IPv6-osoitteeseen",
+            "mx_record": "<strong>MX-tietue:</strong> Sähköpostipalvelimen tiedot",
+            "ns_record": "<strong>NS-tietue:</strong> Nimipalvelimen tiedot",
+            "txt_record": "<strong>TXT-tietue:</strong> Tekstitietueet varmentamiseen",
+            "cname_record": "<strong>CNAME-tietue:</strong> Kanoninen nimi eli alias"
+        },
+        "js": {
+            "looking_up": "Haetaan...",
+            "records_label": "Tietueet",
+            "success": "Haku onnistui",
+            "error": "Virhe haussa",
+            "lookup_dns": "Hae DNS"
+        }
+    },
+    "domain-to-ip": {
+        "meta": {
+            "title": "Domain to IP Converter - ilmainen online DNS-työkalu",
+            "description": "Ilmainen verkkotunnus IP-muunnin. Muunna mikä tahansa domain-nimi IP-osoitteeksi välittömästi. Välttämätön vianetsintään ja palvelinmäärityksiin.",
+            "h1": "Domain to IP Converter",
+            "subtitle": "Selvitä verkkotunnusten IP-osoitteet ja tarkat DNS-tiedot"
+        },
+        "form": {
+            "domain_label": "Syötä verkkotunnus",
+            "domain_placeholder": "esimerkki.fi",
+            "domain_hint": "Syötä verkkotunnus ilman http:// tai https:// alkuja",
+            "button": "Hae IP-osoite"
+        },
+        "results": {
+            "title": "Hakutulokset",
+            "domain_label": "Verkkotunnus",
+            "ip_label": "IP-osoite"
+        },
+        "content": {
+            "main_title": "Verkkotunnus IP-osoitteeksi -muunnin",
+            "main_subtitle": "Muunna mikä tahansa verkkotunnus IP-osoitteeksi välittömästi",
+            "intro": "Ilmainen domain-IP-työkalumme muuntaa minkä tahansa verkkotunnuksen sitä vastaavaksi IP-osoitteeksi. Välttämätön verkkoasentajille ja kehittäjille palvelimen tunnistamiseen.",
+            "feature1_title": "Välitön haku",
+            "feature1_desc": "Saat IP-osoitteet heti ilman viiveitä",
+            "feature2_title": "Tarkat tulokset",
+            "feature2_desc": "Reaaliaikaiset DNS-kyselyt nykyisille osoitteille",
+            "feature3_title": "100 % ilmainen",
+            "feature3_desc": "Rajoittamaton määrä hakuja ilman rekisteröitymistä",
+            "what_is_title": "🌐 Mikä on domain-IP-haku?",
+            "what_is_desc": "Tämä on prosessi, jossa ihmissilmin luettava nimi (esim. google.fi) muutetaan numeeriseksi IP-osoitteeksi (esim. 142.250.74.195). Tämä tapahtuu DNS-palvelinten kautta, jotka toimivat internetin puhelinluettelona.",
+            "use_cases_title": "🎯 Yleisimmät käyttötapaukset",
+            "uc1_title": "Palvelinmääritykset",
+            "uc1_desc": "Määritä palomuurit ja valkolistat käyttämällä IP-osoitteita",
+            "uc2_title": "Turvallisuusanalyysi",
+            "uc2_desc": "Varmista palvelinten sijainnit ja tunnistus",
+            "uc3_title": "Vianetsintä",
+            "uc3_desc": "Diagnosoi DNS-ongelmat ja verkkotunnusten asetukset",
+            "uc4_title": "Verkon seuranta",
+            "uc4_desc": "Seuraa palvelinmuutoksia ja infrastruktuuria",
+            "uc5_title": "Geosijainti",
+            "uc5_desc": "Määritä palvelimen maantieteellinen sijainti IP-osoitteesta",
+            "uc6_title": "API-integraatiot",
+            "uc6_desc": "Käytä IP-osoitteita suoriin rajapintayhteyksiin",
+            "pro_tips_title": "💡 Ammattilaisvinkit",
+            "tip1": "✅ Käytä IP-osoitetta suoraan, jos DNS on hidas",
+            "tip2": "✅ Varmista CDN-asetukset tarkistamalla useita vastauksia",
+            "tip3": "✅ Lisää palvelin-IP:t palomuuriin suojattua pääsyä varten",
+            "tip4": "✅ Vertaa IP-osoitteita ennen ja jälkeen DNS-muutosten",
+            "tip5": "✅ Tunnista jaettu hosting tarkistamalla, onko useilla domaineilla sama IP"
+        },
+        "js": {
+            "looking_up": "Haetaan...",
+            "error_failed": "Haku epäonnistui"
+        }
+    },
+    "internet-speed-test": {
+        "meta": {
+            "title": "Internetin nopeustesti - ilmainen verkkoyhteyden tarkistus",
+            "description": "Testaa internet-yhteytesi nopeus ilmaiseksi. Tarkista latausnopeus, lähetysnopeus ja viive välittömästi.",
+            "h1": "Internetin nopeustesti",
+            "subtitle": "Testaa internet-yhteytesi nopeus välittömästi"
+        },
+        "editor": {
+            "btn_start": "Aloita nopeustesti",
+            "status_init": "Valmistellaan testiä...",
+            "label_download": "Latausnopeus",
+            "label_upload": "Lähetysnopeus",
+            "label_ping": "Viive (Ping)",
+            "label_quality": "Yhteyden laatu",
+            "btn_retry": "Testaa uudelleen",
+            "status_ping": "Testataan viivettä...",
+            "status_download": "Testataan latausnopeutta...",
+            "status_upload": "Testataan lähetysnopeutta...",
+            "quality_val_excellent": "Erinomainen",
+            "quality_val_very_good": "Erittäin hyvä",
+            "quality_val_good": "Hyvä",
+            "quality_val_fair": "Tyydyttävä",
+            "quality_val_poor": "Huono"
+        },
+        "content": {
+            "p1": "Testaa internet-yhteytesi nopeus ilmaisella ja tarkalla työkalullamme. Mittaa lataus- ja lähetysnopeus sekä viive sekunneissa. Täydellinen hitaiden yhteyksien vianetsintään.",
+            "metrics_title": "Nopeustestin mittarit",
+            "req_title": "Vaatimukset tarkalle testille",
+            "req_list": [
+                "Sulje muut sovellukset ja välilehdet",
+                "Käytä Ethernet-kaapelia parhaan tuloksen saamiseksi",
+                "Poista VPN tai välityspalvelin käytöstä testin ajaksi",
+                "Varmista, ettei taustalla ole latauksia",
+                "Testaa useita kertoja eri vuorokauden aikoina"
+            ],
+            "why_title": "Miksi testata netin nopeus?",
+            "why_list": [
+                "Varmista, että saat tilaamasi nopeuden",
+                "Paikallista hitaan yhteyden syyt",
+                "Vertaa eri operaattoreiden nopeuksia",
+                "Optimoi kotiverkkosi asetukset",
+                "Dokumentoi nopeus vikailmoitusta varten",
+                "Testaa Wi-Fi:n ja kaapelin eroa"
+            ],
+            "factors_title": "Nopeuteen vaikuttavat tekijät",
+            "improve_title": "Miten parantaa nopeutta",
+            "improve_list": [
+                "Käytä kaapelia Wi-Fi:n sijaan",
+                "Sijoita reititin keskeiselle paikalle",
+                "Päivitä vanha reititin uudempaan",
+                "Sulje kaistanleveyttä vievät sovellukset",
+                "Päivitä reitittimen ohjelmisto",
+                "Harkitse nopeamman liittymän hankkimista",
+                "Käytä QoS-asetuksia reitittimessä"
+            ],
+            "tips_title": "Ammattilaisvinkit",
+            "tips_list": [
+                "Testaa eri aikoina nähdäksesi vaihtelun",
+                "Aja useita testejä ja laske keskiarvo",
+                "Testaa eri laitteilla poistaaksesi laiteviat",
+                "Vertaa Wi-Fi-nopeutta eri huoneissa"
+            ],
+            "faq_title": "Usein kysytyt kysymykset",
+            "metrics": {
+                "download": {
+                    "title": "Latausnopeus",
+                    "desc": "Kuinka nopeasti tieto siirtyy internetistä laitteellesi. Tärkeää suoratoistossa ja selaamisessa."
+                },
+                "upload": {
+                    "title": "Lähetysnopeus",
+                    "desc": "Kuinka nopeasti tieto siirtyy laitteeltasi internetiin. Tärkeää videopuheluissa ja tiedostojen lähettämisessä."
+                },
+                "ping": {
+                    "title": "Viive (Ping)",
+                    "desc": "Yhteyden vasteaika. Pienempi arvo on parempi. Tärkeää pelaamisessa."
+                }
+            },
+            "factors": {
+                "congestion": {
+                    "title": "Verkon ruuhkautuminen",
+                    "desc": "Ruuhka-ajat voivat hidastaa yhteyttä, kun monet käyttäjät jakavat kaistan."
+                },
+                "wifi": {
+                    "title": "Wi-Fi-signaali",
+                    "desc": "Etäisyys reitittimeen, seinät ja muut laitteet voivat häiritä langatonta nopeutta."
+                },
+                "device": {
+                    "title": "Laitteen suorituskyky",
+                    "desc": "Vanhat laitteet tai monet avoimet ohjelmat voivat hidastaa tulosta."
+                },
+                "router": {
+                    "title": "Reitittimen laatu",
+                    "desc": "Vanhentuneet reitittimet eivät välttämättä tue täyttä nopeutta."
+                }
+            },
+            "faq": {
+                "q1": "Mikä on hyvä internet-nopeus?",
+                "a1": "Selaamiseen: 25+ Mbps. 4K-suoratoistoon ja pelaamiseen: 50+ Mbps. Suuriin talouksiin: 200+ Mbps.",
+                "q2": "Miksi nopeuteni on hitaampi kuin luvattu?",
+                "a2": "Operaattorit lupaavat \"enimmäisnopeuden\". Todellinen nopeus riippuu ruuhkasta, Wi-Fi:stä ja etäisyydestä reitittimeen.",
+                "q3": "Mitä eroa on Mbps ja MBps?",
+                "a3": "Mbps (megabittiä sekunnissa) on internet-nopeus. MBps (megatavua sekunnissa) on tiedostokoko. 1 MBps = 8 Mbps.",
+                "q4": "Kuinka tarkka tämä testi on?",
+                "a4": "Testimme on erittäin tarkka. Parhaan tuloksen saat käyttämällä kaapelia ja sulkemalla muut ohjelmat.",
+                "q5": "Pitäisikö testata Wi-Fi:llä vai kaapelilla?",
+                "a5": "Testaa kaapelilla todellisen nopeuden mittaamiseksi ja Wi-Fi:llä diagnosoidaksesi langattoman verkon ongelmia."
+            }
+        }
+    },
+    "ip-lookup": {
+        "meta": {
+            "title": "IP-hakutyökalu - ilmainen online-IP-paikannustarkistus",
+            "description": "Ilmainen IP-hakutyökalu. Selvitä minkä tahansa IP-osoitteen sijainti, operaattori ja tekniset tiedot.",
+            "h1": "IP-hakutyökalu",
+            "subtitle": "Hae tarkat tiedot IP-osoitteista, mukaan lukien sijainti ja operaattori"
+        },
+        "form": {
+            "ip_label": "IP-osoite",
+            "ip_placeholder": "8.8.8.8",
+            "button": "Hae tiedot"
+        },
+        "results": {
+            "title": "Hakutulokset",
+            "ip_address": "IP-osoite",
+            "type": "Tyyppi",
+            "hostname": "Isäntänimi",
+            "isp": "Operaattori (ISP)",
+            "country": "Maa",
+            "region": "Maakunta/Alue",
+            "city": "Kaupunki",
+            "timezone": "Aikavyöhyke"
+        },
+        "content": {
+            "what_is_title": "Mikä on IP-haku?",
+            "what_is_desc": "IP-haku on työkalu, joka antaa yksityiskohtaisia tietoja IP-osoitteesta. Se paljastaa maantieteellisen sijainnin, operaattorin (ISP), isäntänimen ja muita teknisiä tietoja. Nämä tiedot ovat hyödyllisiä ylläpitäjille, tietoturva-ammattilaisille ja verkkosivun omistajille.",
+            "why_use_title": "Miksi käyttää IP-hakua?",
+            "why_use_desc": "IP-hakutyökalut ovat välttämättömiä turvallisuusanalyysissä, petosten torjunnassa, sisällön lokalisoinnissa ja vianetsinnässä. Verkkosivustojen omistajat voivat ymmärtää kävijöidensä demografiaa ja estää haitallista liikennettä.",
+            "features_title": "Tärkeimmät ominaisuudet",
+            "feature1_title": "🌍 Geosijaintitiedot",
+            "feature1_desc": "Maa, alue, kaupunki ja koordinaatit",
+            "feature2_title": "🏢 Operaattoritiedot",
+            "feature2_desc": "Internet-palveluntarjoajan (ISP) tiedot",
+            "feature3_title": "🔗 Isäntänimen selvitys",
+            "feature3_desc": "IP-osoitteeseen liittyvä verkkotunnus",
+            "feature4_title": "⚡ Välittömät tulokset",
+            "feature4_desc": "Nopea ja tarkka haku"
+        },
+        "js": {
+            "looking_up": "Haetaan...",
+            "success": "Tiedot haettu",
+            "error": "Hakuvirhe"
+        }
+    },
+    "ping-test": {
+        "meta": {
+            "title": "Ping-testityökalu verkossa – ilmainen verkon latenssitarkistus",
+            "description": "Ilmainen ping-testi palvelimen vasteajan, pakettihävikin ja saavutettavuuden tarkistamiseen. Välttämätön verkon vianetsinnässä.",
+            "h1": "Ping-testityökalu",
+            "subtitle": "Testaa palvelimen vasteaika useista sijainneista"
+        },
+        "form": {
+            "host_label": "Isäntä tai IP-osoite",
+            "host_placeholder": "google.fi tai 8.8.8.8",
+            "button": "Pingaa isäntää"
+        },
+        "results": {
+            "title": "Ping-tulokset"
+        },
+        "content": {
+            "what_is_title": "Mikä on ping-testi?",
+            "what_is_desc": "Ping on verkkodiagnostiikka-työkalu, joka testaa isännän saavutettavuutta IP-verkossa. Se mittaa aikaa, joka kuluu viestin lähettämiseen lähteestä kohteeseen ja takaisin (viive). Ping lähettää ICMP Echo Request -paketteja ja odottaa vastausta (Echo Reply). Nimi tulee kaikuluotaimen äänestä.",
+            "why_use_title": "Miksi käyttää pingiä?",
+            "why_use_desc": "Ping-testaus on elintärkeää verkon vianetsinnässä. Ylläpitäjät varmistavat sillä yhteydet ja mittaavat viivettä. Se auttaa tunnistamaan, onko palvelin verkossa ja havaitsemaan pakettihävikkiä. Pelaajat tarkistavat sillä viiveen ennen peliin liittymistä.",
+            "metrics_title": "Ping-mittarit",
+            "metric1": "<strong>Lähetetyt/vastaanotetut paketit:</strong> Onnistuneiden kyselyiden määrä",
+            "metric2": "<strong>Pakettihävikki:</strong> Prosenttiosuus paketeista, jotka eivät saaneet vastausta",
+            "metric3": "<strong>Minimiaika:</strong> Nopein tallennettu vasteaika",
+            "metric4": "<strong>Keskiarvoaika:</strong> Viiveiden keskiarvo",
+            "metric5": "<strong>Maksimiaika:</strong> Hitain tallennettu vasteaika",
+            "metric6": "<strong>TTL (Time To Live):</strong> Verkko-hyppyjen määrä ennen paketin vanhenemista",
+            "interpreting_title": "Tulosten tulkinta",
+            "interpreting_desc": "Hyvä ping-aika on yleensä alle 50 ms paikallisesti ja alle 100 ms kansainvälisesti. Yli 200 ms viive kertoo mahdollisista ongelmista tai ruuhkasta."
+        },
+        "js": {
+            "pinging": "Pingataan...",
+            "success": "Ping onnistui",
+            "error": "Ping epäonnistui",
+            "ping_host": "Pingaa isäntää"
+        }
+    },
+    "port-checker": {
+        "meta": {
+            "title": "Portin tarkistustyökalu - ilmainen online-avoin porttilukija",
+            "description": "Ilmainen porttitarkistus. Testaa onko jokin portti auki, kiinni vai suodatettu. Välttämätön vianetsintään ja tietoturvaan.",
+            "h1": "Portin tarkistustyökalu",
+            "subtitle": "Tarkista ovatko portit auki millä tahansa palvelimella"
+        },
+        "form": {
+            "host_label": "Isäntä tai IP-osoite",
+            "host_placeholder": "esimerkki.fi tai 8.8.8.8",
+            "port_label": "Portin numero",
+            "port_placeholder": "80",
+            "button": "Tarkista portti"
+        },
+        "results": {
+            "title": "Tulokset"
+        },
+        "content": {
+            "what_is_title": "Mikä on porttitarkistus?",
+            "what_is_desc": "Porttitarkistus on työkalu, joka määrittää, onko palvelimen TCP/UDP-portti auki, kiinni vai suodatettu (palomuuri estää). Portit ovat virtuaalisia päätepisteitä viestinnälle (1-65535). Esimerkiksi portti 80 on HTTP-liikenteelle ja 443 HTTPS:lle.",
+            "why_check_title": "Miksi tarkistaa portteja?",
+            "why_check_desc": "Ylläpitäjät varmistavat työkaluilla, että palvelut ovat saatavilla suoraan portista. Kehittäjät testaavat sovellustensa kuuntelua ja tietoturva-ammattilaiset havaitsevat haavoittuvuuksia.",
+            "common_ports_title": "Yleisimmät portit",
+            "port1": "<strong>Portti 80:</strong> HTTP (web-liikenne)",
+            "port2": "<strong>Portti 443:</strong> HTTPS (suojattu web-liikenne)",
+            "port3": "<strong>Portti 22:</strong> SSH (suojattu yhteys)",
+            "port4": "<strong>Portti 21:</strong> FTP (tiedostojen siirto)",
+            "port5": "<strong>Portti 25:</strong> SMTP (sähköpostin lähetys)",
+            "port6": "<strong>Portti 3306:</strong> MySQL-tietokanta",
+            "port7": "<strong>Portti 3389:</strong> RDP (etätyöpöytä)",
+            "security_title": "Tietoturvavaikutukset",
+            "security_desc": "Avoimet portit ovat mahdollisia sisääntuloreittejä hyökkääjille. Paras käytäntö on pitää vain välttämättömät portit auki ja suodattaa muut."
+        },
+        "js": {
+            "checking": "Tarkistetaan...",
+            "success": "Tarkistus valmis",
+            "error": "Virhe tarkistuksessa",
+            "check_port": "Tarkista portti"
+        }
+    },
+    "reverse-dns-lookup": {
+        "meta": {
+            "title": "Käänteinen DNS-haku - ilmainen online-IP-verkkotunnustyökalu",
+            "description": "Löydä IP-osoitteeseen liittyvä verkkotunnus tai isäntänimi välittömästi. Nopea ja turvallinen käänteinen haku.",
+            "h1": "Käänteinen DNS-haku",
+            "subtitle": "Selvitä IP-osoitteeseen liittyvä domain-nimi välittömästi"
+        },
+        "form": {
+            "ip_label": "Syötä IP-osoite",
+            "ip_placeholder": "esim. 8.8.8.8",
+            "button": "Hae käänteinen DNS",
+            "button_loading": "Haetaan..."
+        },
+        "results": {
+            "title": "Tulokset"
+        },
+        "content": {
+            "what_is_title": "Mikä on käänteinen DNS-haku?",
+            "what_is_desc": "Käänteinen DNS (rDNS) on prosessi, jossa selvitetään IP-osoitteseen liittyvä isäntänimi. Se on päinvastainen tavalliselle haulle.",
+            "why_use_title": "Miksi käyttää sitä?",
+            "why_use_desc": "Sitä käytetään turvallisuuteen, sähköpostien varmentamiseen (spämmin esto) ja vianetsintään. Monet sähköpostipalvelimet vaativat rDNS:n hyväksyäkseen viestit.",
+            "ptr_records_title": "PTR-tietueiden ymmärtäminen",
+            "ptr_record1": "<strong>PTR-tietue:</strong> Käytetään käänteisessä haussa.",
+            "ptr_record2": "<strong>Yhdistäminen:</strong> Yhdistää IP-osoitteen takaisin isäntänimeen.",
+            "ptr_record3": "<strong>Säihköposti:</strong> Elintärkeä sähköpostien perillemenolle.",
+            "ptr_record4": "<strong>Tunnistus:</strong> Tunnistaa IP:n todellisen omistajan.",
+            "ptr_record5": "<strong>Roskaposti:</strong> Auttaa roskapostin suodatuksessa.",
+            "ptr_record6": "<strong>Lokit:</strong> Tekee lokitiedoista helpommin luettavia."
+        }
+    },
+    "traceroute": {
+        "meta": {
+            "title": "Traceroute Online - ilmainen verkkoanalyysityökalu",
+            "description": "Ilmainen online-traceroute. Seuraa datan reittiä verkossa ja paikallista viiveet.",
+            "h1": "Traceroute",
+            "subtitle": "Paras traceroute-työkalu kehittäjille ja ammattilaisille"
+        },
+        "form": {
+            "host_label": "Isäntänimi / IP",
+            "host_placeholder": "esimerkki.fi",
+            "button": "Traceroute",
+            "button_loading": "Jäljitetään..."
+        },
+        "results": {
+            "title": "Reitin tiedot"
+        },
+        "content": {
+            "what_is_title": "Mikä on Traceroute?",
+            "what_is_desc": "Seuraa tiedon siirtymistä laitteeltasi kohdepalvelimelle eri verkkojen läpi. Näe jokainen välietappi ja niiden viiveet."
+        }
+    },
+    "user-agent-parser": {
+        "meta": {
+            "title": "User Agent Parser - ilmainen online-selaimen tiedot -työkalu",
+            "description": "Tunnista selain, käyttöjärjestelmä ja laite User Agent -merkkijonosta ilmaisella työkalullamme.",
+            "h1": "Käyttäjäagentin jäsentäjä",
+            "subtitle": "Tunnista selain, käyttöjärjestelmä ja laite merkkijonon perusteella"
+        },
+        "editor": {
+            "label_input": "User Agent -merkkijono",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Jäsennä",
+            "btn_use_my_ua": "Käytä omaani",
+            "label_browser": "Selain",
+            "label_os": "Käyttöjärjestelmä",
+            "label_device": "Laite",
+            "label_raw": "Raaka-tieto"
+        },
+        "content": {
+            "p1": "Pura User Agent -merkkijonot ja selvitä selain, käyttöjärjestelmä ja laiteversiot välittömästi. Hyödyllinen kehittäjille debuggaukseen.",
+            "features_title": "Ominaisuudet",
+            "features": {
+                "instant": {
+                    "title": "Välitön jäsennys",
+                    "desc": "Pura tiedot millisekunneissa"
+                },
+                "detailed": {
+                    "title": "Yksityiskohtaiset tiedot",
+                    "desc": "Selain, OS, Laite ja Moottori"
+                },
+                "auto": {
+                    "title": "Tunista automaattisesti",
+                    "desc": "Jäsennä oma selaintietosi yhdellä klikkauksella"
+                },
+                "free": {
+                    "title": "100 % ilmainen",
+                    "desc": "Rajoittamaton käyttö"
+                }
+            },
+            "faq_title": "Usein kysytyt kysymykset",
+            "faq": {
+                "q1": "Mikä on User Agent?",
+                "a1": "Se on tekstiä, jota selaimesi lähettää verkkosivuille tunnistaakseen itsensä ja laitteesi tyypin.",
+                "q2": "Onko tämä tarkka?",
+                "a2": "Kyllä, se käyttää standardeja tunnistusmalleja. Muista, että tieto on mahdollista väärentää (spoofing).",
+                "q3": "Onko datani turvassa?",
+                "a3": "Kyllä, jäsennys tapahtuu selaimessasi. Emme tallenna UA-tietojasi."
+            }
+        }
+    },
+    "what-is-my-ip": {
+        "meta": {
+            "title": "Mikä on IP-osoitteeni? - Ilmainen online-IP-tarkistus",
+            "description": "Selvitä julkinen IP-osoitteesi välittömästi. Tarkista IPv4/IPv6, operaattori ja sijainti ilmaiseksi.",
+            "h1": "Mikä on IP-osoitteeni?",
+            "subtitle": "Näe julkinen IP-osoitteesi ja operaattorisi tiedot heti"
+        },
+        "ui": {
+            "loading": "Ladataan...",
+            "your_ip_title": "Sinun IP-osoitteesi on",
+            "copy_button": "Kopioi IP",
+            "timezone": "Aikavyöhyke"
+        },
+        "results": {
+            "location": "Sijainti",
+            "isp": "Operaattori",
+            "country": "Maa"
+        },
+        "content": {
+            "main_title": "Mikä on minun IP-osoitteeni - Ilmainen IP-haku",
+            "main_desc": "Selvitä julkinen IP-osoitteesi heti. Näet IPv4/IPv6-osoitteen, tarkan maantieteellisen sijainnin, operaattorin tiedot ja verkon yksityiskohdat. Välttämätön VPN-tarkistukseen ja vianetsintään.",
+            "what_is_title": "Mikä on IP-osoite?",
+            "what_is_desc": "IP-osoite on laitteesi yksilöllinen tunniste internetissä. Se sallii verkkosivujen kommunikoida laitteesi kanssa.",
+            "ipv4_vs_ipv6_title": "IPv4 vs IPv6",
+            "ipv4_desc": "Yleisin muoto, mutta osoitteet ovat loppumassa kesken maailmanlaajuisesti.",
+            "ipv6_desc": "Uudempi muoto, jossa on lähes rajaton määrä osoitteita.",
+            "security_title": "IP-osoite ja yksityisyys",
+            "security_desc1": "IP-osoitteesi paljastaa karkean sijaintisi ja operaattorisi. Käytä VPN-palvelua piilottaaksesi oikean osoitteesi ja lisätäksesi turvallisuutta.",
+            "privacy_tips_title": "Turvavinkkejä",
+            "privacy_tip1": "• Älä jaa IP-osoitettasi julkisesti",
+            "privacy_tip2": "• Käytä VPN:ää julkisissa Wi-Fi-verkoissa",
+            "privacy_tip3": "• Varmista reitittimen palomuurin toiminta"
+        }
+    },
+    "what-is-my-isp": {
+        "meta": {
+            "title": "Mikä on minun ISP? - Ilmainen online-palveluntarjoajan tarkistus",
+            "description": "Selvitä kuka tarjoaa internet-yhteytesi. Tarkista operaattorin nimi, ASN ja verkon tiedot ilmaiseksi.",
+            "h1": "Mikä on minun ISP?",
+            "subtitle": "Tunnista internet-palveluntarjoajasi ja yhteytesi tiedot"
+        },
+        "content": {
+            "loading": "Ladataan tietoja...",
+            "your_isp_title": "Laitteesi internet-operaattori",
+            "network_label": "Verkko",
+            "location_label": "Sijainti",
+            "main_title": "Mikä on minun ISP - Operaattorin hakutyökalu",
+            "main_desc": "Tunnista heti kuka on operaattorisi (ISP), verkon tiedot ja sijainti. Välttämätön VPN-yhteyden varmistamiseen ja reititysongelmien selvittämiseen.",
+            "info_title": "Mitä tietoja näet?",
+            "info1": "<strong>Operaattorin nimi:</strong> Yritys, joka tarjoaa yhteytesi",
+            "info2": "<strong>Organisaatio:</strong> Verkkoa hallinnoiva taho",
+            "info3": "<strong>ASN:</strong> Verkon yksilöllinen numero",
+            "info4": "<strong>Sijainti:</strong> Kaupunki ja maa",
+            "info5": "<strong>Verkkotiedot:</strong> IP-alue ja infrastruktuuri",
+            "why_use_title": "Miksi käyttää tätä?",
+            "why_use1": "Varmista, että olet yhdistetty oikean operaattorin kautta",
+            "why_use2": "Selvitä yhteysongelmia ja nopeusvaihteluita",
+            "why_use3": "Tarkista toimiiko VPN-palvelusi oikein",
+            "why_use4": "Tunnista verkkosi tietoturvasyistä"
+        }
+    },
+    "whois-lookup": {
+        "meta": {
+            "title": "WHOIS-hakutyökalu – ilmainen verkkotunnustietojen tarkistus",
+            "description": "Ilmainen WHOIS-haku. Tarkista kuka omistaa verkkotunnuksen, milloin se vanhenee ja kuka on rekisterinpitäjä.",
+            "h1": "WHOIS-hakutyökalu",
+            "subtitle": "Hae WHOIS-tietokannasta verkkotunnuksen omistus- ja rekisteritiedot"
+        },
+        "form": {
+            "domain_label": "Verkkotunnus",
+            "domain_placeholder": "esimerkki.fi",
+            "button": "Hae WHOIS",
+            "button_loading": "Haetaan..."
+        },
+        "content": {
+            "form_hint": "Syötä domain ilman http-alkua",
+            "what_is_title": "Mikä on WHOIS-haku?",
+            "what_is_desc": "WHOIS on protokolla, joka antaa tietoa verkkotunnusten rekisteröinnistä, kuten omistajista, päivämääristä ja nimipalvelimista.",
+            "why_use_title": "Miksi käyttää WHOIS-hakua?",
+            "why_use_desc": "Se on välttämätön omistajuuden varmistamiseen, saatavuuden tarkistamiseen ja epäilyttävien sivustojen tutkimiseen.",
+            "key_info_title": "Saatavat tiedot",
+            "key_info1": "<strong>Omistajatiedot:</strong> Verkkotunnuksen haltija (voi olla piilotettu)",
+            "key_info2": "<strong>Päivämäärät:</strong> Rekisteröinti ja vanhentuminen",
+            "key_info3": "<strong>Rekisterinpitäjä:</strong> Yritys, joka hallinnoi rekisteröintiä",
+            "key_info4": "<strong>Nimipalvelimet:</strong> DNS-palvelimet"
+        }
+    }
+}

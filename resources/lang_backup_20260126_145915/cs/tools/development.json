@@ -1,0 +1,2616 @@
+{
+    "base64-encoder-decoder": {
+        "meta": {
+            "title": "Base64 Encoder & Decoder – bezplatný online vývojářský nástroj",
+            "description": "Okamžitě kódujte a dekódujte data Base64 pomocí našeho bezplatného online nástroje.",
+            "h1": "Base64 kodér a dekodér",
+            "subtitle": "Okamžité kódování a dekódování dat v Base64"
+        },
+        "editor": {
+            "tab_encode": "Zakódovat do Base64",
+            "tab_decode": "Dekódovat z Base64",
+            "label_encode": "Zadejte text ke kódování",
+            "ph_encode": "Zde zadejte svůj text...",
+            "desc_encode": "Zadejte jakýkoli text pro převod do formátu Base64",
+            "btn_encode": "Zakódovat do Base64",
+            "label_decode": "Zadejte Base64 k dekódování",
+            "ph_decode": "Zadejte řetězec v Base64...",
+            "desc_decode": "Zadejte text v Base64 pro jeho dekódování zpět na prostý text",
+            "btn_decode": "Dekódovat z Base64",
+            "result_title": "Výsledek",
+            "btn_copy": "Kopírovat výsledek"
+        },
+        "content": {
+            "what_title": "Co je kódování Base64?",
+            "what_desc": "Base64 je schéma kódování binárních dat na text, které reprezentuje binární data ve formátu řetězce ASCII. Běžně se používá pro kódování dat, která je třeba uložit nebo přenést přes média navržená pro práci s textem. Náš bezplatný Base64 kodér a dekodér umožňuje vývojářům, datovým analytikům a IT profesionálům rychle převádět text na Base64 nebo dekódovat řetězce Base64 zpět na čitelný text. Ideální pro vývoj API, přenos dat, přílohy e-mailů, vkládání obrázků do HTML/CSS a manipulaci s binárními daty v JSON.",
+            "features": {
+                "secure": {
+                    "title": "Zabezpečené kódování",
+                    "desc": "Veškeré zpracování probíhá ve vašem prohlížeči – vaše data nikdy neopustí váš počítač."
+                },
+                "instant": {
+                    "title": "Okamžitý převod",
+                    "desc": "Kódujte nebo dekódujte data Base64 v milisekundách díky zpracování na straně klienta."
+                },
+                "easy": {
+                    "title": "Snadné použití",
+                    "desc": "Jednoduché rozhraní s kartami pro kódování a dekódování s kopírováním jedním kliknutím."
+                }
+            },
+            "how_to": {
+                "title": "Jak používat Base64 kodér/dekodér",
+                "encode": {
+                    "title": "Kódování textu",
+                    "step1": "Klikněte na kartu „Zakódovat do Base64“",
+                    "step2": "Vložte nebo napište text do vstupního pole",
+                    "step3": "Klikněte na tlačítko „Zakódovat do Base64“",
+                    "step4": "Zkopírujte výsledek v Base64"
+                },
+                "decode": {
+                    "title": "Dekódování Base64",
+                    "step1": "Klikněte na kartu „Dekódovat z Base64“",
+                    "step2": "Vložte řetězec v Base64 do vstupního pole",
+                    "step3": "Klikněte na tlačítko „Dekódovat z Base64“",
+                    "step4": "Zkopírujte dekódovaný výsledek v prostém textu"
+                }
+            },
+            "uses": {
+                "title": "Běžné příklady použití Base64",
+                "api": {
+                    "title": "Autentizace API",
+                    "desc": "Kódování přihlašovacích údajů pro Basic Authentication v HTTP hlavičkách a požadavcích API."
+                },
+                "data_uri": {
+                    "title": "Data URI",
+                    "desc": "Vkládání obrázků, písem a souborů přímo do HTML, CSS nebo JSON pomocí Base64 data URI."
+                },
+                "email": {
+                    "title": "Přílohy e-mailů",
+                    "desc": "Kódování binárních příloh v e-mailových zprávách MIME pro bezpečný přenos."
+                },
+                "storage": {
+                    "title": "Ukládání dat",
+                    "desc": "Ukládání binárních dat v textových formátech jako JSON, XML nebo v databázích."
+                }
+            },
+            "bottom": {
+                "h1": "Base64 kodér a dekodér",
+                "subtitle": "Okamžité kódování a dekódování dat v Base64",
+                "desc": "Base64 je schéma kódování binárních dat na text, které převádí binární data do formátu textu ASCII. Náš bezplatný Base64 Encoder & Decoder pomáhá vývojářům, správcům systémů a IT profesionálům okamžitě kódovat text do Base64 nebo dekódovat Base64 zpět na čitelný text. Ideální pro autentizaci API, data URI, přílohy e-mailů a bezpečný přenos dat. Veškeré zpracování probíhá ve vašem prohlížeči pro zajištění naprostého soukromí.",
+                "works_title": "🔄 Jak Base64 funguje",
+                "works_encoding": "Převádí binární data na text ASCII pomocí 64 znaků",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (a = pro výplň)",
+                "works_decoding": "Převádí text Base64 zpět na původní binární data",
+                "works_decoding_sub": "Dokonale obrací proces kódování",
+                "cases_title": "✅ Běžné příklady použití",
+                "case_api": "Autentizace API",
+                "case_api_desc": "Kódování přihlašovacích údajů pro Basic Auth v HTTP hlavičkách",
+                "case_uri": "Data URI",
+                "case_uri_desc": "Vkládání obrázků a souborů přímo do HTML/CSS",
+                "case_email": "Přílohy e-mailů",
+                "case_email_desc": "Kódování binárních souborů pro přenos e-mailem",
+                "case_url": "Parametry URL",
+                "case_url_desc": "Bezpečné předávání binárních dat v URL",
+                "case_storage": "Ukládání dat",
+                "case_storage_desc": "Ukládání binárních dat v textových databázích",
+                "case_web": "Vývoj webu",
+                "case_web_desc": "Kódování JSON, XML a konfiguračních souborů",
+                "best_practices_title": "💡 Nejlepší postupy pro Base64",
+                "best_practices_list": [
+                    "Base64 zvyšuje velikost dat přibližně o 33 %",
+                    "Není vhodný pro šifrování – používejte skutečné šifrovací algoritmy",
+                    "Ideální pro kódování binárních dat v textových systémech",
+                    "Před použitím dekódovaná data vždy validujte",
+                    "Pro URL používejte URL-safe Base64 (nahrazuje +/= znaky -_)"
+                ]
+            },
+            "faq": {
+                "title": "❓ Často kladené otázky",
+                "q1": "Je kódování Base64 bezpečné?",
+                "a1": "Ne! Base64 NENÍ šifrování – je to pouze způsob kódování. Kdokoli může data v Base64 okamžitě dekódovat. Nikdy nepoužívejte samotné Base64 pro zabezpečení. Pro šifrování použijte vhodné kryptografické algoritmy jako AES, RSA nebo TLS/SSL.",
+                "q2": "Proč Base64 zvyšuje velikost souboru?",
+                "a2": "Kódování Base64 zvyšuje velikost dat přibližně o 33 %, protože reprezentuje 3 bajty binárních dat pomocí 4 znaků ASCII. Tato režie je daní za to, že binární data jsou bezpečná pro textové systémy.",
+                "q3": "K čemu se Base64 používá?",
+                "a3": "Base64 se používá pro kódování binárních dat (obrázky, soubory, přihlašovací údaje) do textu ASCII pro přenos přes textové systémy jako e-mail, URL, JSON, XML a HTTP hlavičky. Je nezbytný pro autentizaci API, data URI a přílohy e-mailů.",
+                "q4": "Jsou moje data posílána na server?",
+                "a4": "Ne! Veškeré kódování a dekódování Base64 probíhá zcela ve vašem prohlížeči pomocí JavaScriptu. Vaše data nikdy neopustí vaše zařízení a nejsou nikde ukládána, přenášena ani protokolována. Vaše soukromí je plně chráněno.",
+                "q5": "Mohu kódovat obrázky do Base64?",
+                "a5": "Ano! Ačkoli náš nástroj kóduje text, obrázky můžete kódovat pomocí specializovaných nástrojů. Obrázky zakódované v Base64 lze vkládat přímo do HTML/CSS pomocí data URI (data:image/png;base64,...). To je užitečné pro malé obrázky, ale zvyšuje to velikost stránky."
+            }
+        },
+        "js": {
+            "error_empty_encode": "Zadejte prosím text ke kódování",
+            "error_encoding": "Chyba při kódování textu: ",
+            "error_empty_decode": "Zadejte prosím řetězec v Base64 k dekódování",
+            "error_invalid": "Neplatný řetězec Base64. Zkontrolujte prosím svůj vstup.",
+            "copied": "Zkopírováno!"
+        }
+    },
+    "code-formatter": {
+        "meta": {
+            "title": "Bezplatný online formátovač kódu – vyčistěte si zdrojový kód",
+            "description": "Zkrášlete a zformátujte svůj kód okamžitě – podporuje HTML, CSS, JavaScript, JSON, XML, SQL, PHP",
+            "h1": "Formátovač kódu",
+            "subtitle": "Zkrášlete a zformátujte svůj kód okamžitě"
+        },
+        "editor": {
+            "label_language": "Jazyk",
+            "languages": {
+                "html": "HTML",
+                "css": "CSS",
+                "js": "JavaScript",
+                "json": "JSON",
+                "xml": "XML",
+                "sql": "SQL",
+                "php": "PHP"
+            },
+            "label_indent": "Odsazení",
+            "indents": {
+                "2": "2 mezery",
+                "4": "4 mezery",
+                "tab": "Tabulátor"
+            },
+            "btn_format": "Formátovat kód",
+            "label_input": "Vstupní kód",
+            "btn_clear": "Vymazat",
+            "ph_input": "// Zde vložte svůj kód...",
+            "label_output": "Formátovaný kód",
+            "btn_copy": "Kopírovat",
+            "ph_output": "// Formátovaný kód se zobrazí zde..."
+        },
+        "content": {
+            "hero_title": "Bezplatný online formátovač kódu",
+            "p1": "Ukliďte nepřehledný kód a vylepšete jeho čitelnost pomocí našeho bezplatného online formátovače kódu. Ať už máte minifikovaný kód, který potřebuje zkrášlit, nebo jen chcete sjednotit odsazení, náš nástroj vše vyřídí okamžitě ve vašem prohlížeči.",
+            "features": {
+                "multi": {
+                    "title": "Podpora více jazyků",
+                    "desc": "Podporuje hlavní programovací jazyky včetně HTML, CSS, JS, JSON a dalších."
+                },
+                "indent": {
+                    "title": "Vlastní odsazení",
+                    "desc": "Vyberte si mezi 2 mezerami, 4 mezerami nebo tabulátory pro svůj preferovaný styl."
+                },
+                "instant": {
+                    "title": "Okamžité zkrášlení",
+                    "desc": "Formátujte kód okamžitě bez nutnosti znovunačtení stránky."
+                },
+                "privacy": {
+                    "title": "Zaměřeno na soukromí",
+                    "desc": "Zpracování kódu probíhá ve vašem prohlížeči – žádná data se neukládají."
+                }
+            },
+            "langs_title": "💻 Podporované jazyky",
+            "langs": {
+                "web": {
+                    "title": "Webové technologie",
+                    "desc": "HTML5, CSS3, JavaScript (ES6+)"
+                },
+                "data": {
+                    "title": "Datové formáty",
+                    "desc": "JSON, XML"
+                },
+                "backend": {
+                    "title": "Backend",
+                    "desc": "PHP, SQL"
+                }
+            },
+            "why_title": "🤔 Proč formátovat kód?",
+            "why": {
+                "read": {
+                    "title": "Čitelnost",
+                    "desc": "Správně odsazený kód se snadněji čte, chápe a udržuje."
+                },
+                "debug": {
+                    "title": "Ladění",
+                    "desc": "V dobře strukturovaném kódu najdete chyby rychleji než v minifikovaných řetězcích."
+                },
+                "collab": {
+                    "title": "Spolupráce",
+                    "desc": "Jednotný styl kódu pomáhá týmům pracovat efektivněji."
+                }
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Je můj kód v bezpečí?",
+                "a1": "Ano! Veškeré formátování kódu se provádí pomocí JavaScriptu přímo ve vašem prohlížeči. Váš kód není nikdy odesílán na naše servery.",
+                "q2": "Mohu formátovat minifikovaný kód?",
+                "a2": "Rozhodně! Náš zkrášlovač je ideální pro de-minifikaci kódu, aby byl opět čitelný.",
+                "q3": "Opravuje syntaxní chyby?",
+                "a3": "Formátovač se zaměřuje na rozvržení a odsazení. I když si poradí s některými základními problémy se strukturou, neopravuje chyby v syntaxi.",
+                "q4": "Existuje limit pro velikost kódu?",
+                "a4": "Vzhledem k tomu, že zpracování probíhá na vašem zařízení, limit závisí na paměti vašeho prohlížeče. Snadno si poradí i se soubory s tisíci řádky."
+            }
+        },
+        "js": {
+            "error_empty": "Zde prosím vložte kód k formátování",
+            "success_format": "✓ Kód byl úspěšně zformátován!",
+            "error_format": "Chyba při formátování kódu: ",
+            "no_copy": "Není co kopírovat",
+            "success_copy": "✓ Zkopírováno do schránky!"
+        }
+    },
+    "cron-job-generator": {
+        "meta": {
+            "title": "Cron Job Generator – bezplatný online nástroj Crontab",
+            "description": "Vytvářejte plány cron snadno pomocí našeho vizuálního generátoru – není třeba si pamatovat syntaxi cron",
+            "h1": "Generátor úloh Cron",
+            "subtitle": "Vytvářejte plány cron snadno pomocí našeho vizuálního generátoru"
+        },
+        "editor": {
+            "common_settings": "Běžná nastavení",
+            "choose": "-- Vyberte --",
+            "options": {
+                "every_minute": "Každou minutu (* * * * *)",
+                "every_5_minutes": "Každých 5 minut (*/5 * * * *)",
+                "every_15_minutes": "Každých 15 minut (*/15 * * * *)",
+                "every_30_minutes": "Každých 30 minut (*/30 * * * *)",
+                "every_hour": "Každou hodinu (0 * * * *)",
+                "every_day_midnight": "Každý den o půlnoci (0 0 * * *)",
+                "every_week": "Každý týden (0 0 * * 0)",
+                "every_month": "Každý měsíc (0 0 1 * *)"
+            },
+            "minute": "Minuta",
+            "every_minute": "Každou minutu (*)",
+            "hour": "Hodina",
+            "every_hour": "Každou hodinu (*)",
+            "day": "Den",
+            "every_day": "Každý den (*)",
+            "month": "Měsíc",
+            "every_month": "Každý měsíc (*)",
+            "weekday": "Den v týdnu",
+            "every_weekday": "Každý den v týdnu (*)",
+            "command": "Příkaz ke spuštění",
+            "ph_command": "/usr/bin/php /cesta/k/skriptu.php",
+            "generated_cron": "Vygenerovaný cron výraz",
+            "btn_copy": "Kopírovat cron",
+            "btn_clear": "Obnovit"
+        },
+        "content": {
+            "hero_title": "Generátor Cron úloh",
+            "p1": "Nastavení úloh cron může být matoucí kvůli kryptickým hvězdičkám a číslům. Náš bezplatný online generátor cron úloh vám umožní vytvářet dokonalé plány cron vizuálně. Ať už potřebujete spouštět skript každých 5 minut, o půlnoci nebo v určité dny v měsíci, náš nástroj pro vás okamžitě vygeneruje správnou syntaxi.",
+            "features": {
+                "visual": {
+                    "title": "Vizuální editor",
+                    "desc": "Vybírejte minuty, hodiny, dny a měsíce pomocí jednoduchého rozhraní."
+                },
+                "readable": {
+                    "title": "Čitelný formát",
+                    "desc": "Převádí cron výrazy do srozumitelného textového popisu."
+                }
+            },
+            "syntax_title": "📚 Porozumění syntaxi Cron",
+            "syntax_intro": "Existuje 5 polí cron výrazu oddělených mezerami:",
+            "syntax_fields": {
+                "min": "Minuta (0-59)",
+                "hour": "Hodina (0-23)",
+                "day": "Den v měsíci (1-31)",
+                "month": "Měsíc (1-12)",
+                "week": "Den v týdnu (0-6, neděle=0)"
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Co je to cron úloha?",
+                "a1": "Cron úloha je časově založený plánovač úloh v operačních systémech unixového typu. Uživatelé mohou naplánovat spouštění úloh (příkazů nebo skriptů) periodicky v pevně stanovených časech, datech nebo intervalech.",
+                "q2": "Jak nainstaluji cron úlohu?",
+                "a2": "K úpravě souboru cron obvykle použijete v terminálu příkaz `crontab -e`. Poté vložte vygenerovaný řádek na konec souboru.",
+                "q4": "Co znamená hvězdička (*)?",
+                "a4": "Hvězdička znamená „každý/každou“. Například hvězdička v poli minut znamená „každou minutu“."
+            }
+        },
+        "js": {
+            "success_copy": "✓ Cron výraz byl zkopírován do schránky!",
+            "no_copy": "Žádný cron výraz ke kopírování"
+        }
+    },
+    "css-minifier": {
+        "meta": {
+            "title": "CSS Miniifier & Beautifier – bezplatný online nástroj CSS",
+            "description": "Optimalizujte soubory CSS pro rychlejší načítání stránek – minifikujte a zkrášlujte CSS okamžitě",
+            "h1": "Minifikátor a zkrášlovač CSS",
+            "subtitle": "Optimalizujte soubory CSS pro rychlejší načítání stránek"
+        },
+        "editor": {
+            "label_input": "Vstupní CSS",
+            "ph_input": "Zde vložte svůj CSS kód...",
+            "btn_minify": "Minifikovat CSS",
+            "btn_beautify": "Zkrášlit CSS",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat",
+            "label_output": "Výstupní CSS",
+            "ph_output": "Zpracované CSS se zobrazí zde...",
+            "stats": {
+                "original": "Původní velikost",
+                "minified": "Minifikovaná velikost",
+                "saved": "Ušetřeno",
+                "compression": "Komprese"
+            }
+        },
+        "content": {
+            "hero_title": "Bezplatný CSS minifikátor a zkrášlovač",
+            "hero_subtitle": "Optimalizujte soubory CSS pro rychlejší načítání stránek a lepší výkon",
+            "p1": "Náš bezplatný CSS minifikátor komprimuje soubory CSS odstraněním přebytečných mezer, komentářů a nepotřebných znaků, což výrazně snižuje velikost souborů a zrychluje načítání stránek. Ideální pro webové vývojáře, designéry a kohokoli, kdo optimalizuje výkon webu. Součástí je také zkrášlovač CSS, který zformátuje vaše styly pro lepší čitelnost. Veškeré zpracování probíhá na straně klienta, což zajišťuje soukromí vašeho kódu.",
+            "what_title": "🎨 Co je minifikace CSS?",
+            "what_desc": "Minifikace CSS je proces odstranění nepotřebných znaků z kódu CSS beze změny jeho funkčnosti. To zahrnuje mezery, konce řádků, komentáře a redundantní kód. Minifikované soubory CSS jsou menší, načítají se rychleji a zlepšují výkon webu. Je to nezbytná optimalizační technika pro produkční weby.",
+            "features_title": "✨ Funkce",
+            "features": {
+                "minify": {
+                    "title": "Minifikace CSS",
+                    "desc": "Komprimujte CSS odstraněním mezer a komentářů."
+                },
+                "beautify": {
+                    "title": "Zkrášlení CSS",
+                    "desc": "Formátujte CSS se správným odsazením a mezerami."
+                },
+                "stats": {
+                    "title": "Statistiky komprese",
+                    "desc": "Sledujte zmenšení velikosti souboru a míru komprese."
+                },
+                "instant": {
+                    "title": "Okamžité zpracování",
+                    "desc": "Minifikujte nebo zkrášlete CSS v řádu milisekund."
+                },
+                "privacy": {
+                    "title": "Soukromí na prvním místě",
+                    "desc": "Veškeré zpracování probíhá ve vašem prohlížeči."
+                },
+                "copy": {
+                    "title": "Kopírování jedním kliknutím",
+                    "desc": "Okamžitě zkopírujte minifikované CSS do schránky."
+                }
+            },
+            "benefits_title": "🎯 Výhody minifikace CSS",
+            "benefits": {
+                "speed": {
+                    "title": "⚡ Rychlejší načítání stránek",
+                    "desc": "Menší soubory CSS se stahují rychleji, což zlepšuje uživatelský zážitek."
+                },
+                "bandwidth": {
+                    "title": "💰 Úspora šířky pásma",
+                    "desc": "Nižší využití dat šetří náklady na hosting a data uživatelům."
+                },
+                "seo": {
+                    "title": "📈 Lepší SEO",
+                    "desc": "Rychlejší weby mají lepší hodnocení ve vyhledávačích."
+                },
+                "performance": {
+                    "title": "🎯 Vyšší výkon",
+                    "desc": "Optimalizované CSS zkracuje dobu parsování a vykreslování prohlížečem."
+                },
+                "mobile": {
+                    "title": "📱 Optimalizace pro mobilní zařízení",
+                    "desc": "Klíčové pro uživatele s omezeným datovým limitem a pomalejším připojením."
+                },
+                "production": {
+                    "title": "🔧 Připraveno pro produkci",
+                    "desc": "Minifikované CSS je standardem pro produkční nasazení."
+                }
+            },
+            "how_title": "📚 Jak používat",
+            "how_steps": {
+                "1": "<strong>Vyberte akci:</strong> Klikněte na „Minifikovat CSS“ pro kompresi nebo „Zkrášlit CSS“ pro formátování.",
+                "2": "<strong>Zobrazte výsledky:</strong> Prohlédněte si zpracované CSS ve výstupním poli se statistikami komprese.",
+                "3": "<strong>Kopírujte:</strong> Klikněte na „Kopírovat“ pro vložení minifikovaného CSS do schránky.",
+                "4": "<strong>Použijte v produkci:</strong> Nahraďte svůj původní soubor CSS minifikovanou verzí.",
+                "5": ""
+            },
+            "best_practices_title": "💡 Nejlepší postupy",
+            "best_practices_list": {
+                "1": "<strong>Minifikujte pro produkci:</strong> Minifikované CSS používejte pouze v produkčním prostředí.",
+                "2": "<strong>Spojujte soubory:</strong> Před minifikací spojte více souborů CSS pro lepší kompresi.",
+                "3": "<strong>Důkladně testujte:</strong> Vždy otestujte minifikované CSS, abyste zajistili, že funkčnost zůstala zachována.",
+                "4": "<strong>Používejte nástroje pro sestavení:</strong> Integrujte minifikaci do svého procesu sestavení pro automatizaci.",
+                "5": ""
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "O kolik může minifikace CSS zmenšit velikost souboru?",
+                "a1": "Obvykle o 20–40 % v závislosti na struktuře vašeho CSS. Soubory s mnoha komentáři a mezerami zaznamenají větší úsporu. V kombinaci s kompresí gzip můžete dosáhnout celkového zmenšení o 70–80 %.",
+                "q2": "Může minifikace poškodit moje CSS?",
+                "a2": "Ne! Minifikace pouze odstraňuje nepotřebné znaky při zachování funkčnosti. Přesto své minifikované CSS vždy otestujte, abyste se ujistili, že vše funguje podle očekávání.",
+                "q3": "Mám minifikovat CSS pro vývoj?",
+                "a3": "Ne. Během vývoje udržujte CSS čitelné pro snadnější ladění. Minifikujte pouze pro produkční nasazení. Během vývoje používejte zkrášlené CSS.",
+                "q4": "Lze minifikaci zvrátit?",
+                "a4": "Ano! Použijte naši funkci „Zkrášlit CSS“ k přeformátování minifikovaného kódu zpět do čitelné podoby. Komentáře jsou však při minifikaci trvale odstraněny.",
+                "q5": "Je můj CSS kód v bezpečí?",
+                "a5": "Absolutně! Veškeré zpracování probíhá zcela ve vašem prohlížeči. Vaše CSS nikdy neopustí vaše zařízení a neposílá se na žádný server."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím CSS kód ke zpracování",
+            "success_minify": "✓ CSS bylo úspěšně minifikováno",
+            "success_beautify": "✓ CSS bylo úspěšně zkrášleno",
+            "error_process": "✗ Chyba při zpracování CSS: ",
+            "no_copy": "Není co kopírovat",
+            "success_copy": "✓ CSS bylo zkopírováno do schránky"
+        }
+    },
+    "curl-command-builder": {
+        "meta": {
+            "title": "Zdarma CURL Command Builder - Online API Request Tool",
+            "description": "Snadno generujte cURL příkazy pomocí našeho vizuálního generátoru. Vytvářejte GET, POST, PUT a DELETE požadavky s vlastními hlavičkami a daty bez hluboké znalosti syntaxe.",
+            "h1": "CURL Command Builder",
+            "subtitle": "Vytvářejte profesionální cURL příkazy vizuálně a bez chyb."
+        },
+        "editor": {
+            "method_label": "Metoda",
+            "url_label": "URL adresa",
+            "headers_tab": "Hlavičky (Headers)",
+            "body_tab": "Tělo (Body)",
+            "key_ph": "Klíč (např. Content-Type)",
+            "value_ph": "Hodnota (např. application/json)",
+            "add_header": "+ Přidat hlavičku",
+            "raw_data_label": "Surová data (JSON, XML nebo Text)",
+            "generated_label": "Vygenerovaný cURL příkaz",
+            "btn_copy": "Kopírovat příkaz"
+        },
+        "content": {
+            "main_title": "Zjednodušte si práci s cURL",
+            "main_description": "Nástroj cURL command builder je navržen tak, aby ušetřil čas vývojářům a testerům při sestavování komplexních HTTP požadavků. Namísto ručního vypisování parametrů v terminálu můžete vše nastavit v přehledném webovém rozhraní. Náš generátor automaticky formátuje příkaz podle standardů, včetně správného escapování uvozovek a nastavení hlaviček, což eliminuje časté syntaktické chyby.",
+            "features_title": "🚀 Hlavní výhody",
+            "feature1_title": "Vizuální konfigurace",
+            "feature1_desc": "Nastavte metodu, URL a hlavičky pomocí jednoduchých formulářů namísto složitých parametrů příkazové řádky.",
+            "feature2_title": "Podpora všech metod",
+            "feature2_desc": "Generujte příkazy pro GET, POST, PUT, DELETE, PATCH a další standardní HTTP metody.",
+            "feature3_title": "Správa hlaviček",
+            "feature3_desc": "Snadno přidávejte autentizační tokeny, typy obsahu a další uživatelské hlavičky.",
+            "faq_title": "❓ Často kladené otázky",
+            "faq1_q": "Co je to cURL?",
+            "faq1_a": "cURL je výkonný nástroj příkazové řádky pro přenos dat pomocí různých protokolů, nejčastěji pro HTTP a HTTPS. Je to standard pro testování API a automatizaci webových požadavků.",
+            "faq2_q": "Je příkaz bezpečný pro použití v terminálu?",
+            "faq2_a": "Ano, vygenerovaný příkaz je připraven k okamžitému vložení do vašeho terminálu (Bash, Zsh, CMD). Dbejte však na to, abyste veřejně nesdíleli příkazy obsahující citlivé údaje jako hesla nebo API klíče.",
+            "faq3_q": "Podporuje generátor JSON data?",
+            "faq3_a": "Samozřejmě. V záložce 'Tělo' můžete vložit surová JSON data, která generátor automaticky zabalí do správného formátu pro odeslání v rámci cURL příkazu."
+        },
+        "js": {
+            "success_copy": "Příkaz byl zkopírován do schránky!"
+        }
+    },
+    "html-encoder-decoder": {
+        "meta": {
+            "title": "HTML Encoder & Decoder – bezplatný online nástroj pro entity",
+            "description": "Kódujte a dekódujte HTML entity pro prevenci XSS útoků pomocí našeho bezplatného online nástroje.",
+            "h1": "HTML kodér a dekodér",
+            "subtitle": "Kódujte a dekódujte HTML entity pro prevenci XSS útoků"
+        },
+        "editor": {
+            "mode_encode": "Zakódovat HTML",
+            "mode_decode": "Dekódovat HTML",
+            "label_input_encode": "Zadejte HTML ke kódování",
+            "ph_input_encode": "<div>Ahoj a vítejte</div>",
+            "btn_encode": "Zakódovat HTML",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat",
+            "label_output_encode": "Zakódované HTML",
+            "ph_output": "Zde se zobrazí zpracované HTML...",
+            "label_input_decode": "Zadejte HTML k dekódování",
+            "label_output_decode": "Dekódované HTML",
+            "btn_decode": "Dekódovat HTML"
+        },
+        "content": {
+            "hero_title": "Bezplatný HTML kodér a dekodér",
+            "hero_subtitle": "Kódujte a dekódujte HTML entity pro prevenci XSS útoků",
+            "p1": "Náš bezplatný nástroj pro kódování a dekódování HTML vám pomůže zakódovat speciální znaky v HTML pro bezpečné zobrazení na webových stránkách nebo dekódovat zakódované HTML zpět do původního formátu. Ideální pro vývojáře, bezpečnostní experty a kohokoli, kdo pracuje se surovým HTML.",
+            "what_title": "🔗 Co je kódování HTML?",
+            "what_desc": "Kódování HTML převádí znaky, které mají v HTML speciální význam (jako <, >, &, \") na jejich odpovídající HTML entity (jako &lt;, &gt;, &amp;, &quot;). To brání prohlížeči v jejich interpretaci jako HTML značek, což je zásadní pro prevenci útoků Cross-Site Scripting (XSS).",
+            "features_title": "✨ Funkce",
+            "features": {
+                "fast": {
+                    "title": "Okamžitý převod",
+                    "desc": "Kódujte nebo dekódujte HTML v milisekundách"
+                },
+                "bidirectional": {
+                    "title": "Obousměrný",
+                    "desc": "Kódujte speciální znaky nebo dekódujte entity zpět na text"
+                },
+                "privacy": {
+                    "title": "Soukromí na prvním místě",
+                    "desc": "Veškeré zpracování probíhá ve vašem prohlížeči"
+                },
+                "copy": {
+                    "title": "Kopírování jedním kliknutím",
+                    "desc": "Okamžitě zkopírujte zpracované HTML do schránky"
+                },
+                "free": {
+                    "title": "100% Zdarma",
+                    "desc": "Žádné limity, žádná registrace není vyžadována"
+                },
+                "safe": {
+                    "title": "Zaměřeno na bezpečnost",
+                    "desc": "Pomáhá předcházet zranitelnostem XSS"
+                }
+            },
+            "uses_title": "🎯 Běžné příklady použití",
+            "uses": {
+                "security": {
+                    "title": "🔒 Bezpečnost",
+                    "desc": "Sanitize uživatelský vstup pro prevenci útoků XSS kódováním speciálních znaků."
+                },
+                "display": {
+                    "title": "💻 Zobrazení kódu",
+                    "desc": "Zobrazte surový HTML kód na webové stránce, aniž by jej prohlížeč vykreslil."
+                },
+                "data": {
+                    "title": "📊 Ukládání dat",
+                    "desc": "Ukládejte obsah bezpečně do databází bez obav z problémů s parsováním HTML."
+                },
+                "email": {
+                    "title": "📧 Emailové šablony",
+                    "desc": "Zajistěte, aby se speciální znaky v HTML emailech zobrazovaly správně."
+                }
+            },
+            "how_title": "📚 Jak používat",
+            "how_steps": {
+                "1": "Vložte své HTML nebo text do vstupního pole",
+                "2": "Klikněte na tlačítko zpracování pro převod",
+                "3": "Zkopírujte výsledek do schránky",
+                "4": ""
+            },
+            "examples_title": "💡 Příklady kódování HTML",
+            "examples": {
+                "1": {
+                    "title": "Uvozovky:",
+                    "code": "\"Ahoj\" → &quot;Ahoj&quot;"
+                },
+                "2": {
+                    "title": "Ampersand:",
+                    "code": "Tom & Jerry → Tom &amp; Jerry"
+                },
+                "3": {
+                    "title": "",
+                    "code": ""
+                }
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Proč musím kódovat HTML?",
+                "a1": "Kódování je nezbytné pro bezpečnost, aby se zabránilo prohlížeči ve spouštění škodlivých skriptů (XSS) a pro správné zobrazení fragmentů kódu.",
+                "q2": "Které znaky jsou kódovány?",
+                "a2": "Vždy jsou kódovány základní znaky jako <, >, &, \" a '. Mohou být kódovány také rozšířené znaky ASCII.",
+                "q3": "Je to vratné?",
+                "a3": "Ano, dekódování proces přesně zvrátí a obnoví původní text."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím HTML ke zpracování",
+            "success_encode": "✓ HTML bylo úspěšně zakódováno",
+            "success_decode": "✓ HTML bylo úspěšně dekódováno",
+            "error_process": "✗ Chyba při zpracování HTML: ",
+            "error_no_copy": "Není co kopírovat",
+            "success_copy": "✓ Zkopírováno do schránky"
+        }
+    },
+    "html-minifier": {
+        "meta": {
+            "title": "HTML Miniifier & Beautifier – bezplatný online nástroj",
+            "description": "Okamžitě komprimujte nebo formátujte HTML kód – minifikujte pro produkci nebo zkrášlete pro vývoj",
+            "h1": "Minifikátor a zkrášlovač HTML",
+            "subtitle": "Okamžitě komprimujte nebo formátujte HTML kód"
+        },
+        "editor": {
+            "label_input": "HTML vstup",
+            "ph_input": "Zde vložte svůj HTML kód...",
+            "btn_minify": "Minifikovat HTML",
+            "btn_beautify": "Zkrášlit HTML",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat výstup",
+            "label_output": "HTML výstup"
+        },
+        "content": {
+            "about_title": "Co je HTML minifikátor?",
+            "about_desc": "HTML minifikátor je nástroj, který komprimuje HTML kód odstraněním nepotřebných znaků, jako jsou mezery, komentáře a konce řádků, beze změny funkčnosti. Minifikované HTML soubory jsou výrazně menší, což vede k rychlejšímu načítání stránek a lepšímu výkonu webu. Náš bezplatný online HTML minifikátor obsahuje také funkci zkrášlení pro formátování HTML se správným odsazením pro lepší čitelnost během vývoje.",
+            "why_title": "Proč minifikovat HTML?",
+            "why_desc": "Minifikace HTML je důležitá pro optimalizaci výkonu webu. Menší HTML soubory znamenají rychlejší stahování, snížené využití šířky pásma a lepší časy načítání stránek. To je zvláště výhodné pro velké weby s velkým množstvím HTML obsahu. Minifikované HTML snižuje zatížení serveru a zlepšuje uživatelský zážitek.",
+            "features_title": "Klíčové funkce",
+            "features_list": {
+                "minify": "<strong>Minifikovat HTML:</strong> Odstraňte mezery a komentáře pro zmenšení velikosti souboru",
+                "beautify": "<strong>Zkrášlit HTML:</strong> Formátujte HTML se správným odsazením",
+                "instant": "<strong>Okamžité výsledky:</strong> Zpracovávejte HTML v reálném čase",
+                "copy": "<strong>Kopírovat výstup:</strong> Snadno zkopírujte minifikované HTML",
+                "secure": "<strong>Bezpečné a soukromé:</strong> Veškeré zpracování probíhá v prohlížeči",
+                "free": "<strong>Zdarma k použití:</strong> Není vyžadována žádná registrace"
+            },
+            "how_title": "Jak používat",
+            "how_steps": {
+                "1": "Klikněte na „Minifikovat HTML“ pro komprimaci kódu",
+                "2": "Klikněte na „Zkrášlit HTML“ pro formátování s odsazením",
+                "3": "Zkopírujte výstup pomocí tlačítka „Kopírovat výstup“",
+                "4": ""
+            },
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Je tento HTML minifikátor zdarma?",
+                "a1": "Ano, zcela zdarma bez omezení a bez nutnosti registrace.",
+                "q2": "Je můj HTML kód ukládán?",
+                "a2": "Po, veškeré zpracování probíhá ve vašem prohlížeči. Váš kód se nikdy neodesílá na naše servery.",
+                "q3": "O kolik se mé HTML zmenší?",
+                "a3": "Obvykle o 10–30 % v závislosti na formátování a komentářích v původním kódu.",
+                "q4": "Mohu minifikaci HTML zvrátit?",
+                "a4": "Ano, použijte tlačítko „Zkrášlit HTML“ pro formátování minifikovaného HTML se správným odsazením.",
+                "q5": "Ovlivňuje minifikace funkčnost HTML?",
+                "a5": "Ne, minifikace odstraňuje pouze nepotřebné znaky. HTML funguje naprosto stejně."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím HTML kód",
+            "success_minify": "✓ HTML bylo úspěšně minifikováno!",
+            "success_beautify": "✓ HTML bylo úspěšně zkrášleno!",
+            "error_no_copy": "Není co kopírovat",
+            "success_copy": "✓ Zkopírováno do schránky!"
+        }
+    },
+    "html-to-markdown-converter": {
+        "meta": {
+            "title": "Převaděč HTML na Markdown – bezplatný online analyzátor",
+            "description": "Převeďte HTML do čistého formátu Markdown okamžitě pomocí našeho bezplatného online nástroje.",
+            "h1": "Převaděč HTML na Markdown",
+            "subtitle": "Převeďte HTML do čistého formátu Markdown okamžitě"
+        },
+        "editor": {
+            "btn_convert": "Převést",
+            "btn_copy": "Kopírovat Markdown",
+            "btn_download": "Stáhnout",
+            "btn_example": "Příklad",
+            "btn_clear": "Vymazat",
+            "label_input": "HTML vstup",
+            "ph_input": "Zde vložte svůj HTML kód...",
+            "label_output": "Markdown výstup",
+            "ph_output": "Zde se zobrazí převedený Markdown..."
+        },
+        "content": {
+            "about_title": "🔄 O převodníku HTML na Markdown",
+            "about_p1": "Převeďte kód HTML do čistého a čitelného formátu Markdown okamžitě pomocí našeho bezplatného online převodníku HTML na Markdown. Ideální pro vývojáře, technické autory a tvůrce obsahu, kteří potřebují transformovat obsah HTML na Markdown pro dokumentaci, soubory README nebo systémy pro správu obsahu.",
+            "features_title": "✨ Klíčové funkce",
+            "features_list": {
+                "1": "✅ <strong>Zachování formátování:</strong> Zachovává nadpisy, seznamy, odkazy a zvýraznění",
+                "2": "✅ <strong>Čistý výstup:</strong> Generuje čitelný, dobře formátovaný Markdown",
+                "3": "✅ <strong>Žádná instalace:</strong> Funguje přímo ve vašem prohlížeči",
+                "4": "✅ <strong>Navždy zdarma:</strong> 100% zdarma bez omezení",
+                "5": "✅ <strong>Soukromí na prvním místě:</strong> Veškerý převod probíhá lokálně ve vašem prohlížeči",
+                "6": ""
+            },
+            "uses_title": "🎯 Běžné příklady použití",
+            "uses": {
+                "docs": {
+                    "title": "📚 Dokumentace",
+                    "desc": "Převádějte dokumentaci HTML na Markdown pro GitHub wiki, soubory README a technické dokumenty."
+                },
+                "migration": {
+                    "title": "✍️ Migrace obsahu",
+                    "desc": "Migrujte obsah z CMS založených na HTML na platformy založené na Markdownu jako Jekyll nebo Hugo."
+                },
+                "email": {
+                    "title": "💻 Email na Markdown",
+                    "desc": "Převádějte HTML emaily do formátu Markdown pro snadnější úpravy a správu verzí."
+                },
+                "blog": {
+                    "title": "📍 Blogové příspěvky",
+                    "desc": "Transformujte HTML blogové příspěvky na Markdown pro generátory statických stránek a moderní CMS."
+                }
+            },
+            "elements_title": "🛠️ Podporované HTML prvky",
+            "elements": {
+                "text": {
+                    "title": "Formátování textu",
+                    "list": [
+                        "Nadpisy (H1-H6)",
+                        "Odstavce",
+                        "Tučné a zvýrazněné",
+                        "Kurzíva a důraz",
+                        "Kód a předformátovaný text",
+                        "Blokové citace"
+                    ]
+                },
+                "lists": {
+                    "title": "Seznamy a odkazy",
+                    "list": [
+                        "Nečíslované seznamy",
+                        "Číslované seznamy",
+                        "Vnořené seznamy",
+                        "Hypertextové odkazy",
+                        "Obrázky",
+                        "Zalomení řádků"
+                    ]
+                },
+                "advanced": {
+                    "title": "Pokročilé",
+                    "list": [
+                        "Tabulky",
+                        "Vodorovné čáry",
+                        "Vložený kód",
+                        "Kódové bloky",
+                        "Přeškrtnuté",
+                        "Seznamy úkolů"
+                    ]
+                }
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Je tento převodník HTML na Markdown zdarma?",
+                "a1": "Ano! Náš převodník HTML na Markdown je 100% zdarma bez omezení, registrace nebo skrytých poplatků.",
+                "q2": "Funguje offline?",
+                "a2": "Ano, veškerý převod probíhá ve vašem prohlížeči pomocí JavaScriptu, takže vaše data nikdy neopustí vaše zařízení.",
+                "q3": "Jaké prvky HTML jsou podporovány?",
+                "a3": "Podporujeme všechny běžné prvky HTML včetně nadpisů, odstavců, seznamů, odkazů, obrázků, tabulek, kódových bloků a dalších.",
+                "q4": "Mohu převádět velké soubory HTML?",
+                "a4": "Ano, neexistují žádná omezení velikosti. Velmi velké soubory však mohou v závislosti na výkonu vašeho prohlížeči chvíli trvat."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím nějaký HTML kód k převodu.",
+            "error_convert": "Chyba při převodu HTML: ",
+            "error_no_copy": "Žádný Markdown ke kopírování. Nejdříve prosím převeďte HTML.",
+            "success_copy": "Markdown byl zkopírován do schránky!",
+            "error_no_download": "Žádný Markdown ke stažení. Nejdříve prosím převeďte HTML."
+        }
+    },
+    "html-viewer": {
+        "meta": {
+            "title": "HTML Viewer Online – bezplatný náhled kódu v reálném čase",
+            "description": "Prohlížejte si HTML kód v reálném čase pomocí našeho bezplatného online HTML prohlížeče",
+            "h1": "HTML prohlížeč",
+            "subtitle": "Náhled HTML kódu v reálném čase"
+        },
+        "editor": {
+            "label_input": "HTML kód",
+            "ph_input": "Zde zadejte svůj HTML kód...",
+            "btn_clear": "Vymazat",
+            "btn_load_sample": "Načíst ukázku",
+            "label_preview": "Živý náhled",
+            "btn_fullscreen": "Celá obrazovka",
+            "btn_exit_fullscreen": "Ukončit celou obrazovku"
+        },
+        "content": {
+            "about_title": "Co je to HTML prohlížeč?",
+            "about_desc": "HTML prohlížeč je výkonný online nástroj, který vám umožňuje prohlížet a vizualizovat HTML kód v reálném čase. Ať už jste webový vývojář testující úryvky kódu, student učící se HTML nebo designér kontrolující markup, náš HTML prohlížeč poskytuje okamžitou vizuální zpětnou vazbu pro váš HTML kód. Jednoduše vložte svůj HTML kód do editoru a okamžitě uvidíte vykreslený výstup v panelu živého náhledu.",
+            "why_title": "Proč používat náš HTML prohlížeč?",
+            "why_desc": "Náš bezplatný HTML prohlížeč nabízí vývojářům a designérům několik výhod. Za prvé poskytuje okamžitou vizuální zpětnou vazbu bez nutnosti vytvářet soubory nebo nastavovat vývojové prostředí. Za druhé je zcela založen na prohlížeči, což znamená, že jej můžete používat kdekoli bez instalace softwaru. Za třetí je ideální pro rychlé testování, ladění a učení se HTML. Zobrazení vedle sebe vám umožňuje vidět váš kód a jeho výstup současně, což usnadňuje pochopení toho, jak se prvky HTML vykreslují.",
+            "features_title": "Klíčové funkce",
+            "features_list": {
+                "preview": "<strong>Náhled v reálném čase:</strong> Sledujte, jak se vaše HTML vykresluje okamžitě při psaní",
+                "layout": "<strong>Zobrazení vedle sebe:</strong> Editor kódu a panel náhledu zobrazeny společně",
+                "syntax": "<strong>Zvýraznění syntaxe:</strong> Snadno čitelný kód s barevně odlišenou syntaxí",
+                "sample": "<strong>Ukázkový kód:</strong> Načtěte ukázkové HTML a začněte rychle",
+                "no_install": "<strong>Není vyžadována žádná instalace:</strong> Funguje přímo ve vašem prohlížeči",
+                "free": "<strong>Zdarma k použití:</strong> Není vyžadována žádná registrace ani platba",
+                "secure": "<strong>Zabezpečené:</strong> Veškeré zpracování probíhá ve vašem prohlížeči"
+            },
+            "how_title": "Jak používat HTML prohlížeč",
+            "how_steps": {
+                "1": "Náhled se automaticky aktualizuje v pravém panelu",
+                "2": "Pomocí tlačítka „Načíst ukázku“ zobrazíte ukázkový HTML kód",
+                "3": "Kliknutím na „Vymazat“ začnete znovu s prázdným editorem",
+                "4": "Testujte různé HTML prvky a sledujte, jak se vykreslují",
+                "5": ""
+            },
+            "uses_title": "Běžné příklady použití",
+            "uses_desc": "HTML prohlížeče jsou nezbytnými nástroji pro různé úkoly vývoje webu. Vývojáři je používají k rychlému testování úryvků HTML před jejich integrací do větších projektů. Studenti učící se HTML mohou experimentovat s různými značkami a atributy, aby pochopili jejich účinky. Emailoví marketéři používají HTML prohlížeče k náhledu emailových šablon před odesláním. Tvůrci obsahu si mohou vizualizovat, jak se jejich HTML obsah objeví na webových stránkách. Designéři mohou kontrolovat strukturu markupu a zajistit správné vykreslování HTML prvků.",
+            "basics_title": "Porozumění základům HTML",
+            "basics_desc": "HTML (HyperText Markup Language) je standardní značkovací jazyk pro vytváření webových stránek. Skládá se z prvků reprezentovaných značkami, které prohlížečům říkají, jak zobrazit obsah. Mezi běžné prvky HTML patří nadpisy (&lt;h1&gt; až &lt;h6&gt;), odstavce (&lt;p&gt;), odkazy (&lt;a&gt;), obrázky (&lt;img&gt;) a divize (&lt;div&gt;). Porozumění těmto základním prvkům je pro vývoj webu zásadní a náš HTML prohlížeč vám pomůže vizualizovat, jak společně vytvářejí webové stránky.",
+            "tips_title": "Nejlepší postupy pro HTML",
+            "tips_desc": "Při psaní HTML dodržujte osvědčené postupy pro zajištění čistého a udržovatelného kódu. Vždy používejte sémantické prvky HTML, které popisují svůj obsah (např. &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;). Prvky správně zanořujte a uzavírejte všechny značky. Pro názvy značek a atributů používejte malá písmena. K obrázkům přidávejte atributy alt pro přístupnost. Validujte své HTML, abyste včas zachytili chyby. Udržujte svůj kód organizovaný se správným odsazením. Tyto postupy vedou k lepšímu SEO, přístupnosti a udržovatelnosti.",
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Je tento HTML prohlížeč zdarma k použití?",
+                "a1": "Ano, náš HTML prohlížeč je zcela zdarma k použití. Nejsou zde žádné skryté poplatky, požadavky na registraci ani limity použití.",
+                "q2": "Podporuje HTML prohlížeč CSS a JavaScript?",
+                "a2": "HTML prohlížeč se primárně zaměřuje na HTML markup. Zatímco vložené styly CSS se vykreslí, externí CSS a JavaScript jsou z bezpečnostních důvodů v sandboxu.",
+                "q3": "Je můj HTML kód ukládán nebo ukládán?",
+                "a3": "Ne, veškeré zpracování HTML probíhá zcela ve vašem prohlížeči. Váš kód se nikdy neodesílá na naše servery ani se nikde neukládá.",
+                "q4": "Mohu tento nástroj použít pro výuku HTML?",
+                "a4": "Rozhodně! Náš HTML prohlížeč je ideální pro výuku HTML. Můžete experimentovat s různými značkami, atributy a strukturami a sledovat, jak se vykreslují.",
+                "q5": "Jaký je rozdíl mezi HTML prohlížečem a editorem kódu?",
+                "a5": "HTML prohlížeč se zaměřuje na náhled a vizualizaci HTML kódu v reálném čase, zatímco editor kódu poskytuje pokročilé funkce (zvýraznění syntaxe, ladění) a je lepší pro komplexní vývoj."
+            }
+        }
+    },
+    "js-minifier": {
+        "meta": {
+            "title": "JS Miniifier – bezplatný online JavaScriptový kompresor",
+            "description": "Komprimujte a optimalizujte svůj JavaScript kód pro rychlejší načítání stránek",
+            "h1": "Minifikátor JavaScriptu",
+            "subtitle": "Komprimujte a optimalizujte svůj JavaScript kód"
+        },
+        "editor": {
+            "label_input": "JavaScript vstup",
+            "ph_input": "Zde vložte svůj JavaScript kód...",
+            "btn_minify": "Minifikovat JS",
+            "btn_beautify": "Zkrášlit JS",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat výstup",
+            "label_output": "JavaScript výstup"
+        },
+        "content": {
+            "about_title": "Co je JavaScript minifikátor?",
+            "about_desc": "JavaScript minifikátor je nástroj, který komprimuje JavaScript kód odstraněním nepotřebných znaků, jako jsou mezery, komentáře a konce řádků, beze změny funkčnosti. Minifikované JavaScript soubory jsou výrazně menší, což vede k rychlejšímu načítání stránek a lepšímu výkonu webu. Náš bezplatný online JS minifikátor obsahuje také funkci zkrášlení pro formátování JavaScriptu se správným odsazením pro lepší čitelnost během vývoje.",
+            "why_title": "Proč minifikovat JavaScript?",
+            "why_desc": "Minifikace JavaScriptu je nezbytná pro optimalizaci výkonu webu. Menší JS soubory znamenají rychlejší stahování, snížené využití šířky pásma a lepší časy načítání stránek. To je důležité zejména pro mobilní uživatele a uživatele s pomalejším internetovým připojením. Minifikovaný JavaScript snižuje zatížení serveru a zlepšuje uživatelský zážitek. Pro produkční weby je minifikace standardním osvědčeným postupem, který může výrazně zlepšit skóre Core Web Vitals.",
+            "features_title": "Klíčové funkce",
+            "features_list": {
+                "minify": "<strong>Minifikovat JavaScript:</strong> Odstraňte mezery a komentáře pro zmenšení velikosti souboru",
+                "beautify": "<strong>Zkrášlit JavaScript:</strong> Formátujte JS se správným odsazením",
+                "instant": "<strong>Okamžité výsledky:</strong> Zpracovávejte JavaScript v reálném čase",
+                "copy": "<strong>Kopírovat výstup:</strong> Snadno zkopírujte minifikovaný JavaScript",
+                "secure": "<strong>Bezpečný a soukromý:</strong> Veškeré zpracování probíhá v prohlížeči",
+                "free": "<strong>Zdarma k použití:</strong> Není vyžadována žádná registrace"
+            },
+            "how_title": "Jak používat",
+            "how_steps": [
+                "Vložte svůj JavaScript kód do vstupního pole",
+                "Klikněte na „Minifikovat JS“ pro komprimaci kódu",
+                "Klikněte na „Zkrášlit JS“ pro formátování s odsazením",
+                "Zkopírujte výstup pomocí tlačítka „Kopírovat výstup“"
+            ],
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Je tento JavaScript minifikátor zdarma?",
+                "a1": "Ano, zcela zdarma bez omezení a bez nutnosti registrace.",
+                "q2": "Je můj JavaScript kód ukládán?",
+                "a2": "Ne, veškeré zpracování probíhá ve vašem prohlížeči. Váš kód se nikdy neodesílá na naše servery.",
+                "q3": "O kolik se můj JS zmenší?",
+                "a3": "Obvykle o 30–50 % v závislosti na formátování a komentářích v původním kódu.",
+                "q4": "Mohu minifikaci JavaScriptu zvrátit?",
+                "a4": "Ano, použijte tlačítko „Zkrášlit JS“ pro formátování minifikovaného JavaScriptu se správným odsazením.",
+                "q5": "Ovlivňuje minifikace funkčnost JavaScriptu?",
+                "a5": "Ne, minifikace odstraňuje pouze nepotřebné znaky. JavaScript funguje naprosto stejně."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím JavaScript kód",
+            "success_minify": "✓ JavaScript byl úspěšně minifikován!",
+            "success_beautify": "✓ JavaScript byl úspěšně zkrášlen!",
+            "error_no_copy": "Není co kopírovat",
+            "success_copy": "✓ Zkopírováno do schránky!"
+        }
+    },
+    "json-formatter": {
+        "meta": {
+            "title": "JSON Formatter online – bezplatný nástroj JSON Prettifier",
+            "description": "Formátujte, validujte a minifikujte své JSON data pomocí našeho bezplatného online nástroje.",
+            "h1": "Formát JSON",
+            "subtitle": "Formátujte, validujte a minifikujte své JSON data"
+        },
+        "editor": {
+            "title": "Formátujte svá JSON data",
+            "label_input": "Zadejte JSON data",
+            "ph_input": "{\"name\": \"John Doe\", \"age\": 30, \"city\": \"New York\"}",
+            "help_text": "Vložte svá JSON data pro formátování, zkrášlení nebo minifikaci",
+            "btn_format": "Formátovat a zkrášlit",
+            "btn_minify": "Minifikovat JSON",
+            "label_results": "Formátovaný JSON",
+            "btn_copy": "Kopírovat JSON"
+        },
+        "content": {
+            "why_title": "Proč používat náš JSON formátovač?",
+            "why_desc": "JSON (JavaScript Object Notation) je nejoblíbenější formát pro výměnu dat používaný při vývoji webových stránek, v API a konfiguračních souborech. Náš bezplatný online JSON formátovač pomáhá vývojářům, datovým analytikům a IT profesionálům rychle formátovat, zkrášlovat, validovat a minifikovat JSON data. Ať už ladíte odpovědi API, čistíte konfigurační soubory nebo připravujete JSON pro produkci, náš nástroj poskytuje okamžité výsledky se zvýrazněním syntaxe a detekcí chyb. Ideální pro vývojáře pracující s REST API, NoSQL databázemi a moderními webovými aplikacemi.",
+            "features": {
+                "instant": {
+                    "title": "Okamžité formátování",
+                    "desc": "Formátujte a zkrášlujte JSON data v milisekundách se správným odsazením a zvýrazněním syntaxe."
+                },
+                "error": {
+                    "title": "Detekce chyb",
+                    "desc": "Automaticky detekujte a zvýrazněte chyby v syntaxi JSON s užitečnými chybovými zprávami."
+                },
+                "privacy": {
+                    "title": "100% soukromí",
+                    "desc": "Veškeré zpracování probíhá ve vašem prohlížeči – vaše JSON data nikdy neopustí váš počítač."
+                }
+            },
+            "how_title": "Jak formátovat JSON ve 3 snadných krocích",
+            "how_steps": {
+                "1": {
+                    "title": "Vyberte akci",
+                    "desc": "Klikněte na „Formátovat a zkrášlit“ pro formátování nebo „Minifikovat“ pro komprimaci vašeho JSON."
+                },
+                "2": {
+                    "title": "Kopírovat výsledek",
+                    "desc": "Kliknutím na tlačítko kopírování zkopírujte formátovaný JSON do schránky."
+                },
+                "3": {
+                    "title": "",
+                    "desc": ""
+                }
+            },
+            "uses_title": "Běžné příklady použití formátování JSON",
+            "uses": {
+                "api": {
+                    "title": "Ladění odpovědí API",
+                    "desc": "Formátujte nepřehledné odpovědi API pro snadné čtení a ladění JSON dat z REST API, GraphQL a webových služeb."
+                },
+                "config": {
+                    "title": "Konfigurační soubory",
+                    "desc": "Čistěte a validujte JSON konfigurační soubory pro aplikace, package.json, tsconfig.json a další."
+                },
+                "db": {
+                    "title": "Databázová data",
+                    "desc": "Formátujte JSON data z NoSQL databází jako MongoDB, CouchDB a Firebase pro lepší čitelnost."
+                },
+                "export": {
+                    "title": "Export/Import dat",
+                    "desc": "Připravujte JSON data pro export nebo validujte importovaná JSON data pro zajištění správné struktury a syntaxe."
+                }
+            },
+            "tips_title": "Nejlepší postupy a tipy pro JSON",
+            "tips": {
+                "validate": {
+                    "title": "✓ Vždy validujte JSON",
+                    "desc": "Používejte JSON validátor k zachycení chyb v syntaxi před nasazením do produkce. Neplatný JSON může poškodit vaši aplikaci."
+                },
+                "indent": {
+                    "title": "✓ Používejte správné odsazení",
+                    "desc": "Formátujte JSON s odsazením 2 nebo 4 mezery pro lepší čitelnost během vývoje a ladění."
+                },
+                "minify": {
+                    "title": "✓ Minifikujte pro produkci",
+                    "desc": "Minifikujte JSON data před nasazením do produkce pro zmenšení velikosti souboru a zlepšení doby načítání."
+                },
+                "naming": {
+                    "title": "✓ Používejte konzistentní pojmenování",
+                    "desc": "Důsledně dodržujte konvence pojmenování camelCase nebo snake_case napříč celou strukturou JSON."
+                }
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Jsou moje JSON data v bezpečí?",
+                "a1": "Ano, absolutně. Náš JSON formátovač běží zcela ve vašem webovém prohlížeči pomocí JavaScriptu. Vaše data se nikdy neodesílá na naše servery ani se nikde neukládá.",
+                "q2": "Proč je minifikace JSON důležitá?",
+                "a2": "Minifikace odstraňuje nepotřebné mezery a konce řádků, čímž výrazně snižuje velikost souboru. To je zásadní pro zlepšení výkonu API a snížení využití šířky pásma v produkčním prostředí.",
+                "q3": "Mohu validovat neúplný JSON?",
+                "a3": "Nástroj vyžaduje platnou strukturu JSON pro formátování nebo minifikaci. Poskytuje však podrobné chybové zprávy, které vám pomohou najít a opravit problémy ve vašich JSON datech.",
+                "q4": "Podporuje velké JSON soubory?",
+                "a4": "Ano, nástroj je optimalizován pro efektivní zpracování velkých datových sad JSON, i když extrémně velké soubory mohou záviset na paměťových limitech vašeho prohlížeče."
+            }
+        },
+        "js": {
+            "error_empty_format": "Zadejte prosím JSON data k formátování",
+            "error_invalid": "Neplatný JSON: ",
+            "error_empty_minify": "Zadejte prosím JSON data k minifikaci",
+            "success_copy": "Zkopírováno!",
+            "error_copy": "Kopírování se nezdařilo. Zkopírujte prosím ručně."
+        }
+    },
+    "json-parser": {
+        "meta": {
+            "title": "JSON Parser & Validator – bezplatná online kontrola syntaxe",
+            "description": "Analyzujte, validujte a vizualizujte strukturu JSON",
+            "h1": "JSON Parser & Validator",
+            "subtitle": "Analyzujte, validujte a vizualizujte strukturu JSON"
+        },
+        "editor": {
+            "label_input": "JSON vstup",
+            "ph_input": "{\"name\": \"John Doe\", \"age\": 30, \"isActive\": true}",
+            "btn_parse": "Analyzovat JSON",
+            "btn_beautify": "Zkrášlit",
+            "btn_minify": "Minifikovat",
+            "btn_clear": "Vymazat",
+            "btn_load": "Načíst ukázku",
+            "title_tree": "Stromové zobrazení JSON"
+        },
+        "content": {
+            "hero_title": "Bezplatný JSON analyzátor a validátor",
+            "hero_subtitle": "Analyzujte, validujte, zkrášlujte a minifikujte JSON data okamžitě",
+            "p1": "Náš bezplatný JSON analyzátor je výkonný online nástroj pro vývojáře, datové analytiky a každého, kdo pracuje s JSON daty. Okamžitě analyzujte, validujte, zkrášlujte a minifikujte JSON pomocí čistého a intuitivního rozhraní. Ideální pro ladění API, formátování konfiguračních souborů nebo validaci struktury JSON. 100% zdarma, zpracování na straně klienta zajišťuje, že vaše data zůstanou soukromá a bezpečná.",
+            "what_title": "📋 Co je JSON?",
+            "what_desc": "JSON (JavaScript Object Notation) je lehký formát pro výměnu dat, který je pro lidi snadno čitelný a zapisovatelný a pro stroje snadno analyzovatelný a generovatelný. Je to nejoblíbenější formát pro API, konfigurační soubory a ukládání dat. JSON používá páry klíč-hodnota a podporuje řetězce, čísla, booleovské hodnoty, pole a vnořené objekty.",
+            "features_title": "✨ Funkce",
+            "features": {
+                "validate": {
+                    "title": "Validace JSON",
+                    "desc": "Okamžitě validujte syntaxi a strukturu JSON"
+                },
+                "beautify": {
+                    "title": "Zkrášlení JSON",
+                    "desc": "Formátujte JSON se správným odsazením a mezerami"
+                },
+                "minify": {
+                    "title": "Minifikace JSON",
+                    "desc": "Komprimujte JSON odstraněním mezer"
+                },
+                "tree": {
+                    "title": "Stromové zobrazení",
+                    "desc": "Vizualizujte strukturu JSON ve stromovém formátu"
+                },
+                "privacy": {
+                    "title": "Soukromí na prvním místě",
+                    "desc": "Veškeré zpracování probíhá ve vašem prohlížeči"
+                },
+                "instant": {
+                    "title": "Okamžité výsledky",
+                    "desc": "Analyzujte a formátujte JSON v milisekundách"
+                }
+            },
+            "uses_title": "🎯 Běžné příklady použití",
+            "uses": {
+                "api": {
+                    "title": "🔌 Vývoj API",
+                    "desc": "Testujte a ladíte odpovědi API, validujte data požadavků a formátujte JSON data."
+                },
+                "config": {
+                    "title": "⚙️ Konfigurační soubory",
+                    "desc": "Formátujte a validujte konfigurační soubory pro aplikace, databáze a služby."
+                },
+                "analysis": {
+                    "title": "📊 Analýza dat",
+                    "desc": "Analyzujte a vizualizujte JSON data z databází, logů a analytických nástrojů."
+                },
+                "debug": {
+                    "title": "🐛 Ladění",
+                    "desc": "Identifikujte chyby v syntaxi, validujte strukturu a řešte problémy s JSON."
+                },
+                "docs": {
+                    "title": "📝 Dokumentace",
+                    "desc": "Vytvářejte čitelné příklady JSON pro dokumentaci API a technické příručky."
+                },
+                "migration": {
+                    "title": "🔄 Migrace dat",
+                    "desc": "Transformujte a validujte JSON během importů a exportů dat."
+                }
+            },
+            "how_title": "📚 Jak používat",
+            "how_steps": [
+                "<strong>Vložte JSON:</strong> Zkopírujte a vložte svá JSON data do vstupního pole",
+                "<strong>Analyzovat:</strong> Klikněte na „Analyzovat JSON“ pro validaci a vizualizaci struktury",
+                "<strong>Zkrášlit:</strong> Klikněte na „Zkrášlit“ pro formátování se správným odsazením",
+                "<strong>Minifikovat:</strong> Klikněte na „Minifikovat“ pro komprimaci a odstranění mezer",
+                "<strong>Zobrazit strom:</strong> Podívejte se na hierarchickou strukturu ve formátu stromového zobrazení"
+            ],
+            "tips_title": "💡 Nejlepší postupy pro JSON",
+            "tips_list": [
+                "<strong>Používejte dvojité uvozovky:</strong> JSON vyžaduje pro řetězce dvojité uvozovky, nikoli jednoduché",
+                "<strong>Žádné přebytečné čárky:</strong> Odstraňte čárky za poslední položkou v objektech a polích",
+                "<strong>Správné datové typy:</strong> Používejte čísla bez uvozovek, booleovské hodnoty jako true/false, null pro prázdné hodnoty",
+                "<strong>Pravidelně validujte:</strong> Vždy validujte JSON před nasazením nebo produkčním použitím",
+                "<strong>Zkrášlujte pro čitelnost:</strong> Formátujte JSON pro snadnější ladění a údržbu"
+            ],
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Jaký je rozdíl mezi zkrášlením a minifikací?",
+                "a1": "Zkrášlení přidává odsazení a konce řádků, aby byl JSON pro lidi čitelný. Minifikace odstraňuje veškeré mezery pro zmenšení velikosti souboru, což je ideální pro produkční prostředí.",
+                "q2": "Jsou moje JSON data v bezpečí?",
+                "a2": "Ano! Veškerá analýza a formátování JSON probíhá zcela ve vašem prohlížeči. Vaše data nikdy neopustí vaše zařízení a neodesílají se na žádný server.",
+                "q3": "Mohu analyzovat velké soubory JSON?",
+                "a3": "Ano, náš analyzátor zvládne velké soubory JSON. Velmi velké soubory (>10 MB) však mohou v závislosti na výkonu vašeho zařízení trvat déle.",
+                "q4": "Jaké chyby analyzátor detekuje?",
+                "a4": "Analyzátor detekuje chyby v syntaxi, jako jsou chybějící uvozovky, přebytečné čárky, neplatné znaky, neuzavřené závorky a nesprávné datové typy. Chybové zprávy ukazují přesné umístění problému.",
+                "q5": "Mohu to použít pro testování API?",
+                "a5": "Absolutně! Tento nástroj je ideální pro testování odpovědí API, validaci dat požadavků a formátování JSON dat z volání API."
+            }
+        },
+        "js": {
+            "error_empty_parse": "Zadejte prosím JSON data k analýze",
+            "success_valid": "✓ Platný JSON! Úspěšně analyzováno",
+            "error_invalid": "✗ Neplatný JSON: ",
+            "error_empty_beautify": "Zadejte prosím JSON data ke zkrášlení",
+            "success_beautify": "✓ JSON byl úspěšně zkrášlen",
+            "error_beautify": "✗ Nelze zkrášlit neplatný JSON: ",
+            "error_empty_minify": "Zadejte prosím JSON data k minifikaci",
+            "success_minify": "✓ JSON byl úspěšně minifikován",
+            "error_minify": "✗ Nelze minifikovat neplatný JSON: ",
+            "success_load": "Ukázkový JSON byl načten"
+        }
+    },
+    "json-to-csv-converter": {
+        "meta": {
+            "title": "JSON to CSV Converter – bezplatný online datový nástroj",
+            "description": "Převeďte JSON data do formátu CSV nebo Excel okamžitě pomocí našeho bezplatného online nástroje. Rychlé, bezpečné a snadno použitelné.",
+            "h1": "Převaděč JSON na CSV",
+            "subtitle": "Snadno převádějte pole a objekty JSON do formátu CSV"
+        },
+        "editor": {
+            "label_delimiter": "Vyberte oddělovač",
+            "opt_comma": "Čárka (,)",
+            "opt_semicolon": "Středník (;)",
+            "opt_tab": "Tabulátor",
+            "opt_pipe": "Svislá čára (|)",
+            "btn_convert": "Převést na CSV",
+            "btn_copy": "Kopírovat CSV",
+            "btn_download": "Stáhnout CSV",
+            "btn_example": "Načíst příklad",
+            "btn_clear": "Vymazat",
+            "label_input": "JSON vstup",
+            "ph_input": "Zde vložte svá JSON data...",
+            "label_output": "CSV výstup",
+            "ph_output": "Zde se zobrazí převedené CSV..."
+        },
+        "content": {
+            "hero_title": "Bezplatný převodník JSON na CSV",
+            "p1": "Náš bezplatný převodník JSON na CSV je výkonný nástroj určený pro vývojáře, datové analytiky a IT profesionály. Snadno transformujte strukturovaná JSON data na čisté, formátované soubory CSV (Comma Separated Values) nebo TSV. Ať už připravujete data pro Excel, Google tabulky nebo importy do databází, náš nástroj zajišťuje přesnost a rychlost se 100% zpracováním na straně klienta.",
+            "features_title": "Klíčové funkce",
+            "features_list": {
+                "fast": "<strong>Okamžitý převod:</strong> Výsledky v milisekundách",
+                "secure": "<strong>Soukromé a bezpečné:</strong> Veškerá data zůstávají ve vašem prohlížeči",
+                "format": "<strong>Chytré zploštění:</strong> Správně zpracovává vnořené objekty JSON",
+                "custom": "<strong>Vlastní oddělovače:</strong> Vyberte si mezi čárkou, středníkem nebo tabulátory",
+                "export": "<strong>Snadný export:</strong> Zkopírujte do schránky nebo stáhněte jako .csv",
+                "free": "<strong>100% zdarma:</strong> Bez limitů, není vyžadována žádná registrace"
+            },
+            "uses_title": "Běžné příklady použití",
+            "uses": {
+                "api": {
+                    "title": "Analýza dat API",
+                    "desc": "Převádějte odpovědi JSON z REST API do formátu CSV pro snazší analýzu v tabulkovém procesoru."
+                },
+                "db": {
+                    "title": "Migrace databáze",
+                    "desc": "Připravujte JSON data pro import do relačních databází, jako je MySQL nebo PostgreSQL."
+                },
+                "analysis": {
+                    "title": "Vizualizace dat",
+                    "desc": "Transformujte složité datové sady JSON na plochou strukturu vhodnou pro vizualizační nástroje."
+                },
+                "report": {
+                    "title": "Rychlé reportování",
+                    "desc": "Generujte čitelná hlášení ve formátu CSV ze strukturovaných souborů protokolu JSON nebo dat aplikací."
+                }
+            },
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Podporuje vnořený JSON?",
+                "a1": "Ano, náš nástroj automaticky zplošťuje vnořené objekty, takže se ve vašem CSV zobrazí jako jasně označené sloupce.",
+                "q2": "Jsou moje data nahrávána?",
+                "a2": "Ne, veškeré zpracování probíhá lokálně ve vašem webovém prohlížeči. Vaše data se nikdy neodesílá na naše servery.",
+                "q3": "Mohu převádět na TSV?",
+                "a3": "Ano, před převodem jednoduše vyberte možnost oddělovače „Tabulátor“.",
+                "q4": "Jaká je maximální velikost souboru?",
+                "a4": "Nástroj zvládne velké soubory JSON, i když výkon závisí na paměti vašeho zařízení."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím JSON data k převodu",
+            "error_convert": "Chyba při převodu JSON: ",
+            "error_no_copy": "Žádný obsah ke kopírování. Nejdříve prosím převeďte JSON.",
+            "success_copy": "✓ CSV bylo zkopírováno do schránky!",
+            "error_no_download": "Žádný obsah ke stažení. Nejdříve prosím převeďte JSON."
+        }
+    },
+    "json-to-sql-converter": {
+        "meta": {
+            "title": "JSON to SQL Converter – bezplatný online nástroj pro migraci",
+            "description": "Transformujte JSON data do příkazů SQL INSERT okamžitě. Ideální pro naplnění databází a migraci dat.",
+            "h1": "Převaděč JSON na SQL",
+            "subtitle": "Převádějte pole a objekty JSON na platné SQL skripty"
+        },
+        "editor": {
+            "label_tablename": "Název tabulky",
+            "ph_tablename": "Zadejte název tabulky (např. users)",
+            "btn_convert": "Generovat SQL",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat SQL",
+            "btn_example": "Načíst příklad",
+            "label_input": "JSON vstup",
+            "ph_input": "Zde vložte své pole JSON...",
+            "label_output": "SQL výstup",
+            "ph_output": "Zde se zobrazí vygenerované příkazy SQL INSERT..."
+        },
+        "content": {
+            "hero_title": "Snadný převod JSON na SQL",
+            "hero_subtitle": "Nejrychlejší způsob, jak generovat skripty pro naplnění databází",
+            "p1": "Převod dat JSON na příkazy SQL INSERT by neměl být manuální úkol. Náš převodník JSON na SQL zvládne nejtěžší práci tím, že automaticky namapuje vaše klíče JSON na sloupce v databázi a ošetří hodnoty pro bezpečné vložení. Je to nezbytný nástroj pro vývojáře pracující na migracích dat, testování nebo inicializaci databází.",
+            "what_title": "Kdy použít tento nástroj?",
+            "what_desc": "Pokud máte sbírku dat ve formátu JSON – například export z NoSQL databáze nebo odpověď API – a potřebujete je vložit do relační databáze jako MySQL, PostgreSQL nebo SQL Server, je tento nástroj pro vás. Každý objekt zformátuje do čistého příkazu SQL.",
+            "features_title": "Klíčové funkce",
+            "features": {
+                "fast": {
+                    "title": "Okamžité generování",
+                    "desc": "Generujte stovky řádků SQL během okamžiku."
+                },
+                "private": {
+                    "title": "Soukromí zaručeno",
+                    "desc": "Veškeré zpracování je lokální. Vaše citlivá data zůstávají ve vašem prohlížeči."
+                },
+                "copy": {
+                    "title": "Export jedním kliknutím",
+                    "desc": "Zkopírujte celý skript nebo jej stáhněte pro své migrace."
+                },
+                "smart": {
+                    "title": "Chytré ošetření (escaping)",
+                    "desc": "Automaticky zpracovává uvozovky a speciální znaky v řetězcích."
+                },
+                "free": {
+                    "title": "100% zdarma",
+                    "desc": "Žádné limity, žádná registrace, žádné potíže."
+                },
+                "db": {
+                    "title": "Kompatibilní s různými DB",
+                    "desc": "Generuje standardní SQL kompatibilní s většinou databázových systémů."
+                }
+            },
+            "uses_title": "Profesionální příklady použití",
+            "uses": {
+                "migration": {
+                    "title": "Migrace dat",
+                    "desc": "Snadno přenášejte data ze systémů založených na JSON do SQL databází."
+                },
+                "import": {
+                    "title": "Hromadný import",
+                    "desc": "Rychle načtěte velké množství testovacích nebo produkčních dat."
+                },
+                "api": {
+                    "title": "Z API do databáze",
+                    "desc": "Převádějte výsledky API třetích stran přímo na SQL inserty."
+                },
+                "test": {
+                    "title": "Naplnění testovacími daty",
+                    "desc": "Vytvářejte SQL skripty pro populaci vývojových prostředí."
+                },
+                "backup": {
+                    "title": "Obnova zálohy",
+                    "desc": "Přeměňte zálohy JSON zpět na funkční SQL skripty."
+                },
+                "dev": {
+                    "title": "Rychlé prototypování",
+                    "desc": "Rychle naplňujte nové databázové tabulky během vývoje."
+                }
+            },
+            "how_title": "Jak používat",
+            "how_steps": [
+                "Zadejte cílový <strong>Název tabulky</strong> v databázi",
+                "Vložte svůj <strong>JSON</strong> (musí to být pole nebo objekt)",
+                "Klikněte na <strong>Generovat SQL</strong> pro vytvoření skriptu",
+                "<strong>Zkopírujte</strong> SQL výstup do schránky"
+            ],
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Jaký formát JSON je vyžadován?",
+                "a1": "Nástroj funguje nejlépe s polem objektů, kde každý objekt představuje řádek v databázi.",
+                "q2": "Zpracovává vnořené objekty?",
+                "a2": "V současné době mapuje klíče nejvyšší úrovně. Vnořené objekty jsou obvykle převedeny na řetězec nebo přeskočeny v závislosti na potřebách vaší databáze.",
+                "q3": "Existuje limit pro počet řádků?",
+                "a3": "Neexistuje žádný pevný limit, i když výkon vašeho prohlížeče se může u tisíců řádků lišit."
+            },
+            "tips_title": "Profesionální tipy",
+            "tips_list": [
+                "Ujistěte se, že vaše klíče JSON přesně odpovídají názvům SQL sloupců.",
+                "Před spuštěním na produkční databázi vždy vygenerované SQL zkontrolujte.",
+                "Pomocí tlačítka „Příklad“ si prohlédněte očekávanou strukturu JSON."
+            ]
+        },
+        "js": {
+            "error_empty": "Zadejte prosím JSON data a název tabulky",
+            "success_convert": "✓ SQL bylo úspěšně vygenerováno!",
+            "error_convert": "Chyba při generování SQL: ",
+            "error_no_copy": "Žádné SQL ke kopírování. Nejdříve prosím převeďte JSON.",
+            "success_copy": "✓ SQL bylo zkopírováno do schránky!"
+        }
+    },
+    "json-to-xml-converter": {
+        "meta": {
+            "title": "JSON to XML Converter – bezplatný online překladač dat",
+            "description": "Převeďte JSON data do strukturovaného formátu XML okamžitě pomocí našeho bezplatného online nástroje. Rychlé, bezpečné a snadno použitelné.",
+            "h1": "Převaděč JSON na XML",
+            "subtitle": "Transformujte objekty a pole JSON na platné dokumenty XML"
+        },
+        "editor": {
+            "btn_convert": "Převést na XML",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat XML",
+            "btn_example": "Načíst příklad",
+            "label_input": "JSON vstup",
+            "ph_input": "Zde vložte svá JSON data...",
+            "label_output": "XML výstup",
+            "ph_output": "Zde se zobrazí převedené XML..."
+        },
+        "content": {
+            "hero_title": "Bezplatný převodník JSON na XML",
+            "hero_subtitle": "Nejrychlejší způsob, jak transformovat JSON na XML",
+            "p1": "Náš bezplatný převodník JSON na XML je výkonný nástroj určený pro vývojáře a IT profesionály. Umožňuje vám okamžitě transformovat data JavaScript Object Notation (JSON) do strukturovaného Extensible Markup Language (XML). Ať už pracujete s dědičnými systémy, podnikovými integracemi nebo konkrétními XML API, náš nástroj zajišťuje přesnost a soukromí se 100% zpracováním na straně klienta.",
+            "what_title": "Co je převod JSON na XML?",
+            "what_desc": "Převod JSON na XML je proces překladu dat strukturovaných v JSON – lehkém formátu populárním v moderních webových aplikacích – do XML, značkovacího jazyka často používaného v podnikových systémech, službách SOAP a konfiguračních souborech. Náš nástroj tuto mezeru překlenuje a činí transformaci dat bezproblémovou.",
+            "features_title": "Klíčové funkce",
+            "features": {
+                "instant": {
+                    "title": "Okamžitý převod",
+                    "desc": "Získejte své výsledky v XML během milisekund."
+                },
+                "privacy": {
+                    "title": "Soukromí zaručeno",
+                    "desc": "Veškerá data zůstávají ve vašem prohlížeči; nic se nenahrává."
+                },
+                "copy": {
+                    "title": "Snadný export",
+                    "desc": "Zkopírujte do schránky nebo použijte výstup přímo."
+                },
+                "format": {
+                    "title": "Čisté XML",
+                    "desc": "Generuje správně naformátovaný a čitelný kód XML."
+                },
+                "free": {
+                    "title": "100% zdarma",
+                    "desc": "Žádná registrace, žádné limity, žádné náklady."
+                },
+                "offline": {
+                    "title": "Schopnost pracovat offline",
+                    "desc": "Funguje bez internetu, jakmile je stránka načtena."
+                }
+            },
+            "uses_title": "Běžné příklady použití",
+            "uses": {
+                "migration": {
+                    "title": "Migrace systému",
+                    "desc": "Transformujte JSON data pro import do starších systémů založených na XML."
+                },
+                "integration": {
+                    "title": "Integrace API",
+                    "desc": "Připravujte data pro SOAP API nebo REST API, která vyžadují XML vstup."
+                },
+                "config": {
+                    "title": "Transformace konfigurace",
+                    "desc": "Převádějte konfigurační soubory JSON do formátu XML."
+                },
+                "enterprise": {
+                    "title": "Podnikové služby",
+                    "desc": "Standardizujte data pro podnikové servisní sběrnice (ESB) a middleware."
+                },
+                "docs": {
+                    "title": "Technická dokumentace",
+                    "desc": "Generujte úryvky XML pro technické příručky nebo specifikace."
+                },
+                "export": {
+                    "title": "Export dat",
+                    "desc": "Snadno exportujte strukturovaná data do formátu XML pro účely reportování."
+                }
+            },
+            "how_title": "Jak používat",
+            "how_steps": {
+                "1": {
+                    "title": "Vložte JSON",
+                    "desc": "Vložte svůj kód JSON do pole „JSON vstup“."
+                },
+                "2": {
+                    "title": "Převést",
+                    "desc": "Klikněte na „Převést na XML“ pro vygenerování výstupu."
+                },
+                "3": {
+                    "title": "Exportovat výsledky",
+                    "desc": "Zkopírujte vygenerované XML a použijte jej ve svém projektu."
+                }
+            },
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Podporuje vnořený JSON?",
+                "a1": "Ano, zvládá složité vnořené objekty a pole vytvářením hierarchických značek XML.",
+                "q2": "Jsou moje data v bezpečí?",
+                "a2": "Absolutně. Zpracování probíhá zcela ve vašem prohlížeči pomocí JavaScriptu.",
+                "q3": "Mohu načíst příklad?",
+                "a3": "Ano, kliknutím na „Načíst příklad“ uvidíte ukázku převodu.",
+                "q4": "Existuje limit velikosti?",
+                "a4": "Výkon závisí na paměti vašeho prohlížeče, ale většinu souborů zvládne snadno.",
+                "q5": "Používá to nějaká externí API?",
+                "a5": "Ne, jedná se o samostatný nástroj, který běží nativně na vašem zařízení.",
+                "q6": "Je XML naformátované?",
+                "a6": "Ano, výstup je „zkrášlený“ (pretty-printed) se správným odsazením pro lepší čitelnost."
+            },
+            "tips_title": "Profesionální tipy",
+            "tips_list": {
+                "1": "Před převodem svůj JSON validujte, abyste se vyhnuli chybám v syntaxi.",
+                "2": "Použijte tlačítko „Vymazat“ pro nový začátek při převádění více souborů.",
+                "3": "Zkontrolujte značky XML, abyste se ujistili, že odpovídají vašemu očekávanému cílovému schématu.",
+                "4": "Pokud si nejste jisti formátem vstupu, použijte „Načíst příklad“.",
+                "5": "Přidejte si tuto stránku do záložek pro rychlý přístup k vašim vývojářským nástrojům."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím JSON data k převodu",
+            "success_convert": "✓ JSON byl úspěšně převeden na XML!",
+            "error_convert": "Chyba při převodu JSON: ",
+            "error_no_copy": "Žádný obsah ke kopírování. Nejdříve prosím převeďte JSON.",
+            "success_copy": "✓ XML bylo zkopírováno do schránky!"
+        }
+    },
+    "json-to-yaml-converter": {
+        "meta": {
+            "title": "JSON to YAML Converter – bezplatný online objektový nástroj",
+            "description": "Převeďte JSON do formátu YAML okamžitě pomocí našeho bezplatného online převodníku JSON na YAML. Rychlé, bezpečné a snadno použitelné.",
+            "h1": "Převaděč JSON na YAML",
+            "subtitle": "Nejlepší převodník JSON na YAML pro vývojáře a IT profesionály"
+        },
+        "content": {
+            "hero_title": "Převodník JSON na YAML",
+            "hero_subtitle": "Převádějte JSON do formátu YAML okamžitě a přesně",
+            "p1": "Náš bezplatný převodník JSON na YAML vám umožňuje okamžitě transformovat JSON data do formátu YAML. Ideální pro vývojáře, DevOps inženýry a každého, kdo pracuje s konfiguračními soubory nebo serializací dat.",
+            "what_title": "Co je převodník JSON na YAML?",
+            "what_desc": "JSON (JavaScript Object Notation) and YAML (YAML Ain't Markup Language) jsou oba populární formáty pro serializaci dat. YAML je často preferován pro konfigurační soubory díky své lidsky čitelné syntaxi. Náš nástroj vám pomůže rychle překlenout mezeru mezi těmito formáty.",
+            "features_title": "Klíčové funkce",
+            "features": {
+                "fast": {
+                    "title": "Rychlý převod",
+                    "desc": "Převeďte JSON na YAML během milisekund"
+                },
+                "secure": {
+                    "title": "Bezpečné a soukromé",
+                    "desc": "Zpracování probíhá zcela ve vašem prohlížeči"
+                },
+                "copy": {
+                    "title": "Kopírování jedním kliknutím",
+                    "desc": "Okamžitě zkopírujte převedený YAML"
+                },
+                "format": {
+                    "title": "Čisté formátování",
+                    "desc": "Produkuje správně odsazený výstup YAML"
+                },
+                "free": {
+                    "title": "100% zdarma",
+                    "desc": "Není vyžadována žádná registrace ani platba"
+                },
+                "offline": {
+                    "title": "Na straně klienta",
+                    "desc": "Funguje bez odesílání dat na server"
+                }
+            },
+            "uses_title": "Běžné příklady použití",
+            "uses": {
+                "docker": {
+                    "title": "Docker",
+                    "desc": "Převádějte konfigurace kontejnerů JSON na Docker Compose YAML."
+                },
+                "config": {
+                    "title": "Konfigurační soubory",
+                    "desc": "Transformujte nastavení JSON na konfigurační soubory YAML."
+                },
+                "cicd": {
+                    "title": "CI/CD pipeliny",
+                    "desc": "Připravujte definice YAML pipelin z dat JSON."
+                },
+                "cloud": {
+                    "title": "Konfigurace cloudových poskytovatelů",
+                    "desc": "Převádějte data JSON do formátu YAML pro cloudové platformy."
+                },
+                "data": {
+                    "title": "Transformace dat",
+                    "desc": "Přepínejte mezi JSON a YAML pro různé datové nástroje."
+                },
+                "tools": {
+                    "title": "DevOps nástroje",
+                    "desc": "Formátujte data správně pro nástroje, které očekávají YAML."
+                }
+            },
+            "how_title": "Jak používat",
+            "how_steps": {
+                "1": {
+                    "title": "Vložte JSON",
+                    "desc": "Zadejte svá JSON data do vstupního pole."
+                },
+                "2": {
+                    "title": "Převést",
+                    "desc": "Kliknutím na tlačítko „Převést“ vygenerujte YAML."
+                },
+                "3": {
+                    "title": "Kopírovat YAML",
+                    "desc": "Zkopírujte výsledný YAML pro svůj projekt."
+                }
+            },
+            "samples_title": "Ukázky převodu",
+            "samples": [
+                {
+                    "title": "Základní objekt",
+                    "json": "{ \"name\": \"Antigravity\", \"version\": \"1.0\" }",
+                    "yaml": "name: Antigravity\nversion: 1.0"
+                },
+                {
+                    "title": "Příklad pole",
+                    "json": "[ \"Java\", \"Python\", \"Go\" ]",
+                    "yaml": "- Java\n- Python\n- Go"
+                }
+            ],
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Je to zdarma?",
+                "a1": "Ano, náš převodník JSON na YAML je 100% zdarma.",
+                "q2": "Je to bezpečné?",
+                "a2": "Ano, veškeré zpracování probíhá lokálně ve vašem prohlížeči.",
+                "q3": "Podporuje pole?",
+                "a3": "Ano, zvládá složité struktury JSON včetně polí a vnořených objektů.",
+                "q4": "Je YAML lepší než JSON?",
+                "a4": "YAML je pro lidi často snadněji čitelný a zapisovatelný, zatímco JSON je obecně lepší pro strojové zpracování.",
+                "q5": "Mohu to použít offline?",
+                "a5": "Ano, po načtení nástroj funguje offline, protože používá lokální JavaScript."
+            },
+            "tips_title": "Profesionální tipy",
+            "tips_list": {
+                "1": "Před převodem se ujistěte, že je váš JSON platný.",
+                "2": "Pomocí tlačítka „Příklad“ se podívejte, jak převod funguje.",
+                "3": "YAML rozlišuje malá a velká písmena, stejně jako JSON.",
+                "4": "Zkontrolujte odsazení ve výsledném YAML.",
+                "5": "Pro nový začátek snadno vymažte všechna data."
+            }
+        },
+        "editor": {
+            "btn_convert": "Převést",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat YAML",
+            "btn_example": "Příklad",
+            "label_input": "JSON vstup",
+            "ph_input": "Zde vložte svá JSON data...",
+            "label_output": "YAML výstup",
+            "ph_output": "Zde se zobrazí převedený YAML..."
+        },
+        "js": {
+            "error_empty": "Zadejte prosím nějaký text JSON",
+            "success_convert": "JSON byl úspěšně převeden na YAML!",
+            "error_convert": "Chyba při převodu JSON: ",
+            "error_no_copy": "Žádný YAML ke kopírování. Nejdříve prosím převeďte JSON.",
+            "success_copy": "YAML byl zkopírován do schránky!"
+        }
+    },
+    "jwt-decoder": {
+        "meta": {
+            "title": "Dekodér JWT online – bezplatný ladicí program webových tokenů JSON",
+            "description": "Dekodujte a prozkoumejte JSON Web Tokens (JWT) – zobrazte hlavičku, payload a podpis!",
+            "h1": "Dekodér JWT",
+            "subtitle": "Dekodujte a prozkoumejte JSON Web Tokens (JWT) – zobrazte hlavičku, payload a podpis!"
+        },
+        "editor": {
+            "label_input": "Zadejte JWT token",
+            "ph_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+            "btn_decode": "Dekodovat JWT",
+            "btn_clear": "Vymazat",
+            "btn_example": "Příklad",
+            "label_payload": "Payload (Tvrzení)",
+            "label_signature": "Podpis",
+            "note_signature": "⚠️ Poznámka: Ověření podpisu vyžaduje tajný klíč"
+        },
+        "content": {
+            "hero_title": "Bezplatný JWT dekodér online",
+            "hero_subtitle": "Dekodujte a prozkoumejte JSON Web Tokens okamžitě",
+            "p1": "Náš bezplatný nástroj JWT dekodér vám umožňuje dekódovat a prozkoumat JSON Web Tokens (JWT) a zobrazit jejich součásti: hlavičku (header), payload a podpis (signature). Ideální pro ladění problémů s autentizací, pochopení struktury tokenů a validaci JWT tvrzení (claims).",
+            "what_title": "🔍 Co je JWT?",
+            "what_desc": "JSON Web Token (JWT) je kompaktní, URL-bezpečný prostředek pro reprezentaci tvrzení mezi dvěma stranami. JWT se skládají ze tří částí: Hlavička (algoritmus a typ tokenu), Payload (data/tvrzení) a Podpis (ověření), oddělených tečkami.",
+            "features_title": "✨ Funkce",
+            "features": {
+                "instant": {
+                    "title": "Okamžité dekódování",
+                    "desc": "Dekódování JWT během milisekund"
+                },
+                "structured": {
+                    "title": "Strukturované zobrazení",
+                    "desc": "Zobrazte hlavičku, payload a podpis samostatně"
+                },
+                "privacy": {
+                    "title": "Soukromí na prvním místě",
+                    "desc": "Veškeré dekódování probíhá ve vašem prohlížeči"
+                }
+            },
+            "uses_title": "🎯 Běžné příklady použití",
+            "uses": {
+                "debug": {
+                    "title": "🐛 Ladění",
+                    "desc": "Ladění problémů s autentizací kontrolou obsahu JWT"
+                },
+                "validate": {
+                    "title": "✅ Validace",
+                    "desc": "Ověřování JWT tvrzení a časů expirace"
+                },
+                "learn": {
+                    "title": "📚 Učení",
+                    "desc": "Pochopení struktury a součástí JWT"
+                },
+                "dev": {
+                    "title": "🛠️ Vývoj",
+                    "desc": "Testování generování a analýzy JWT ve vašich aplikacích"
+                }
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Je bezpečné zde dekódovat JWT?",
+                "a1": "Ano! Veškeré dekódování probíhá ve vašem prohlížeči. Váš JWT nikdy neopustí vaše zařízení. Nikdy však s nikým nesdílejte JWT veřejně, protože mohou obsahovat citlivé informace.",
+                "q2": "Může tento nástroj ověřit podpisy JWT?",
+                "a2": "Tento nástroj dekóduje a zobrazuje součásti JWT, ale neověřuje podpisy, protože to vyžaduje tajný klíč, který by neměl být nikdy sdílen.",
+                "q3": "Co jsou JWT tvrzení (claims)?",
+                "a3": "Tvrzení jsou prohlášení o entitě (obvykle o uživateli) a další data. Mezi běžná tvrzení patří „sub“ (předmět), „exp“ (expirace) a „iat“ (vydáno v)."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím JWT token",
+            "error_invalid_format": "Neplatný formát JWT. JWT by měl mít 3 části oddělené tečkami.",
+            "success_decode": "✓ JWT byl úspěšně dekódován",
+            "error_decode": "✗ Chyba při dekódování JWT: "
+        }
+    },
+    "markdown-to-html-converter": {
+        "meta": {
+            "title": "Markdown to HTML Converter – bezplatný online analyzátor",
+            "description": "Převeďte Markdown na HTML okamžitě",
+            "h1": "Převaděč Markdown do HTML",
+            "subtitle": "Převeďte Markdown na HTML okamžitě"
+        },
+        "editor": {
+            "btn_convert": "Převést",
+            "btn_copy": "Kopírovat HTML",
+            "btn_download": "Stáhnout",
+            "btn_clear": "Vymazat",
+            "btn_example": "Příklad",
+            "label_input": "Markdown vstup",
+            "ph_input": "# Zde zadejte svůj Markdown...",
+            "label_output": "HTML výstup",
+            "ph_output": "Zde se zobrazí HTML výstup...",
+            "label_preview": "Živý náhled",
+            "ph_preview": "Zde se zobrazí náhled..."
+        },
+        "content": {
+            "features": {
+                "instant": {
+                    "title": "Okamžitý převod",
+                    "desc": "Převádějte Markdown na HTML během milisekund"
+                },
+                "preview": {
+                    "title": "Živý náhled",
+                    "desc": "Sledujte vykreslování svého HTML v reálném čase"
+                },
+                "export": {
+                    "title": "Kopírování a stahování",
+                    "desc": "Snadno kopírujte HTML nebo jej stáhněte jako soubor"
+                },
+                "free": {
+                    "title": "100% Zdarma",
+                    "desc": "Žádná registrace, žádné limity, zcela zdarma"
+                },
+                "privacy": {
+                    "title": "Soukromí na prvním místě",
+                    "desc": "Veškerý převod probíhá ve vašem prohlížeči"
+                },
+                "mobile": {
+                    "title": "Vhodné pro mobilní zařízení",
+                    "desc": "Funguje perfektně na všech zařízeních"
+                }
+            },
+            "hero_title": "🚀 Bezplatný převodník Markdown na HTML",
+            "hero_subtitle": "Transformujte své dokumenty Markdown na čisté, sémantické HTML okamžitě. Ideální pro vývojáře, spisovatele a tvůrce obsahu.",
+            "what_title": "✨ Co je převod Markdown na HTML?",
+            "p1": "Markdown je lehký značkovací jazyk, který vám umožňuje psát formátovaný text pomocí syntaxe prostého textu. Převod Markdown na HTML transformuje vaše jednoduché, čitelné dokumenty Markdown na správně strukturovaný kód HTML, který lze použít na webových stránkách, blozích, dokumentačních webech a ve webových aplikacích.",
+            "what_desc": "Náš bezplatný převodník Markdown na HTML využívá výkonnou knihovnu Parsedown k zajištění přesného výstupu HTML splňujícího standardy. Ať už píšete dokumentaci, příspěvky na blog, soubory README nebo technický obsah, náš nástroj činí proces převodu okamžitým a snadným.",
+            "features_title": "💡 Klíčové funkce",
+            "uses_title": "🎯 Běžné příklady použití",
+            "uses": {
+                "docs": {
+                    "title": "📚 Dokumentace",
+                    "desc": "Převádějte soubory README a dokumentaci do HTML"
+                },
+                "blog": {
+                    "title": "✍️ Příspěvky na blog",
+                    "desc": "Pište v Markdownu, publikujte v HTML"
+                },
+                "github": {
+                    "title": "💻 GitHub projekty",
+                    "desc": "Transformujte soubory README.md do HTML"
+                },
+                "email": {
+                    "title": "📧 E-mailové šablony",
+                    "desc": "Vytvářejte obsah e-mailů v Markdownu"
+                }
+            },
+            "pro_tip": {
+                "title": "💡 Profesionální tip",
+                "desc": "Pro dosažení nejlepších výsledků používejte standardní syntaxi Markdown podle definice CommonMark. Náš převodník podporuje většinu variant Markdownu, včetně GitHub Flavored Markdown (GFM). Pokud pracujete s komplexními dokumenty, otestujte nejdříve malé sekce, abyste zajistili správný převod."
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Je tento nástroj zdarma?",
+                "a1": "Ano! Náš převodník Markdown na HTML je 100% zdarma, bez skrytých nákladů a bez limitů použití.",
+                "q2": "Je můj obsah soukromý?",
+                "a2": "Absolutně! Veškerý převod probíhá přímo ve vašem prohlížeči pomocí JavaScriptu. Váš obsah nikdy neopustí vaše zařízení.",
+                "q3": "Jaká syntaxe je podporována?",
+                "a3": "Náš převodník podporuje standardní syntaxi Markdown včetně nadpisů, tučného písma, kurzívy, seznamů, odkazů, obrázků, bloků kódu, tabulek a dalších (kompatibilní s GFM)."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím nějaký text Markdown",
+            "error_general": "Během převodu došlo k chybě",
+            "error_no_copy": "Žádné HTML ke kopírování. Nejdříve prosím převeďte Markdown.",
+            "success_copy": "HTML bylo zkopírováno do schránky!",
+            "error_no_download": "Žádné HTML ke stažení. Nejdříve prosím převeďte Markdown.",
+            "example": "# Vítejte v Markdownu\n\n## Toto je podnadpis\n\nToto je odstavec s **tučným textem** a *kurzívou*.\n\n### Funkce\n\n- Snadné psaní\n- Snadné čtení\n- Převádí se do HTML\n\n### Příklad kódu\n\n```javascript\nfunction hello() {\n    console.log(\"Ahoj světe!\");\n}\n```\n\n> Toto je citace\n\n[Navštivte náš web](https://example.com)"
+        }
+    },
+    "md5-generator": {
+        "meta": {
+            "title": "MD5 Hash Generator – bezplatný online bezpečnostní nástroj",
+            "description": "Generujte MD5 haše z libovolného textu okamžitě",
+            "h1": "Generátor hash MD5",
+            "subtitle": "Generujte MD5 haše z libovolného textu okamžitě"
+        },
+        "editor": {
+            "label_input": "Zadejte text",
+            "ph_input": "Zadejte text pro hašování...",
+            "btn_generate": "Generovat MD5 haš",
+            "label_result": "MD5 haš",
+            "btn_copy": "Kopírovat"
+        },
+        "content": {
+            "hero_title": "MD5 generátor haše",
+            "hero_subtitle": "Generujte MD5 haše z libovolného textu okamžitě",
+            "p1": "Generujte MD5 haše z libovolného textu, hesla nebo datového řetězce okamžitě pomocí našeho bezplatného online generátoru MD5 hašů. MD5 (Message-Digest Algorithm 5) je široce používaná kryptografická hašovací funkce, která produkuje 128bitovou (32místnou hexadecimální) hodnotu haše. Ideální pro ověřování integrity dat, generování kontrolních součtů a pochopení hašovacích funkcí. Veškeré zpracování probíhá ve vašem prohlížeči pro zajištění naprostého soukromí.",
+            "what_title": "🔐 Co je MD5?",
+            "what_desc": "MD5 je kryptografická hašovací funkce, která přijímá vstup libovolné délky a produkuje fixní 128bitovou hodnotu haše, obvykle reprezentovanou jako 32místné hexadecimální číslo. Stejný vstup vždy produkuje stejný haš, ale i sebemenší změna na vstupu vytvoří zcela odlišný haš.",
+            "features_title": "✅ Výhody MD5",
+            "features": {
+                "fast": "<strong>Rychlé zpracování:</strong> Extrémně rychlé generování haše",
+                "fixed": "<strong>Fixní délka:</strong> Vždy produkuje 128bitový výstup",
+                "deterministic": "<strong>Deterministické:</strong> Stejný vstup = stejný haš",
+                "support": "<strong>Široká podpora:</strong> Dostupné ve všech programovacích jazycích"
+            },
+            "uses_title": "📊 Běžné příklady použití",
+            "uses": {
+                "verify": "<strong>Ověřování souborů:</strong> Kontrola integrity souborů",
+                "checksum": "<strong>Kontrolní součty:</strong> Ověřování stažených souborů",
+                "cache": "<strong>Klíče mezipaměti:</strong> Generování unikátních identifikátorů",
+                "integrity": "<strong>Integrita dat:</strong> Detekce změn"
+            },
+            "warning_title": "⚠️ Bezpečnostní varování",
+            "warning_desc": "<strong>NEPOUŽÍVEJTE MD5 pro hašování hesel nebo aplikace kritické z hlediska bezpečnosti!</strong> MD5 je kryptograficky prolomený a zranitelný vůči kolizním útokům. Pro hašování hesel používejte moderní algoritmy jako bcrypt, Argon2 nebo PBKDF2.",
+            "compare_title": "🔄 MD5 vs. ostatní hašovací funkce",
+            "compare": {
+                "md5": {
+                    "title": "MD5",
+                    "desc1": "128bitový výstup",
+                    "desc2": "Rychlý, ale nebezpečný pro kryptografii"
+                },
+                "sha1": {
+                    "title": "SHA-1",
+                    "desc1": "160bitový výstup",
+                    "desc2": "Také zastaralý pro bezpečnostní použití"
+                },
+                "sha256": {
+                    "title": "SHA-256",
+                    "desc1": "256bitový výstup",
+                    "desc2": "Bezpečný a dnes široce používaný"
+                }
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Je MD5 bezpečný pro hesla?",
+                "a1": "Ne! MD5 je kryptograficky prolomený a nikdy by neměl být používán pro hašování hesel. Místo toho použijte bcrypt, Argon2 nebo PBKDF2.",
+                "q2": "Mohu zvrátit MD5 haš?",
+                "a2": "Ne, MD5 je jednosměrná funkce – nemůžete zvrátit haš a získat původní vstup. Útočníci však mohou použít duhové tabulky (rainbow tables) k nalezení vstupů.",
+                "q3": "Jsou moje data odesílána na server?",
+                "a3": "Ne! Veškeré generování MD5 hašů probíhá zcela ve vašem prohlížeči pomocí JavaScriptu. Vaše data nikdy neopustí vaše zařízení."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím nějaký text",
+            "btn_copied": "Zkopírováno!"
+        }
+    },
+    "sql-to-json-converter": {
+        "meta": {
+            "title": "SQL to JSON Converter – bezplatný online databázový nástroj",
+            "description": "Okamžitě transformujte příkazy SQL INSERT do polí JSON pomocí našeho bezplatného online nástroje. Rychlý, přesný a bezpečný.",
+            "h1": "Převaděč SQL na JSON",
+            "subtitle": "Snadno převádějte SQL data na objekty JSON a naopak"
+        },
+        "editor": {
+            "btn_encode": "Režim JSON na SQL",
+            "btn_decode": "Režim SQL na JSON",
+            "label_table": "Název tabulky",
+            "ph_table": "Zadejte název tabulky (např. users)",
+            "label_input_json": "JSON vstup",
+            "ph_input_json": "Zde vložte své pole JSON...",
+            "label_output_sql": "SQL výstup",
+            "ph_output_sql": "Zde se zobrazí vygenerované SQL...",
+            "label_input_sql": "SQL vstup",
+            "label_output_json": "JSON výstup",
+            "btn_convert_sql": "Generovat SQL",
+            "btn_convert_json": "Generovat JSON",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat výstup"
+        },
+        "content": {
+            "hero_title": "Převodník SQL na JSON",
+            "hero_subtitle": "Obousměrný převod pro moderní vývojáře",
+            "p1": "Moderní aplikace prosperují na formátu JSON, ale databáze stále mluví jazykem SQL. Náš obousměrný převodník tuto mezeru bez námahy překlenuje. Ať už potřebujete převést exporty z databáze do JSON pro své API, nebo JSON data do SQL skriptů pro naplnění databáze, tento nástroj poskytuje rychlé, bezpečné a přesné řešení.",
+            "integration_title": "Bezproblémová integrace",
+            "integration_desc": "Snadno přenášejte data mezi vaší relační databází a vaší webovou aplikací. Náš parser zpracovává standardní příkazy SQL INSERT a převádí je do strukturovaných objektů JSON, přičemž zachovává datové typy a hodnoty.",
+            "features_title": "Klíčové funkce",
+            "features": {
+                "instant": {
+                    "title": "Okamžité výsledky",
+                    "desc": "Převody probíhají v reálném čase při kliknutí."
+                },
+                "bidirectional": {
+                    "title": "Duální režim",
+                    "desc": "Přepínejte mezi režimy SQL na JSON a JSON na SQL."
+                },
+                "security": {
+                    "title": "Bezpečný převod",
+                    "desc": "Zpracování probíhá 100% na straně klienta pro maximální soukromí."
+                },
+                "custom": {
+                    "title": "Čisté formátování",
+                    "desc": "Výstup je profesionálně formátovaný a připravený k použití."
+                },
+                "types": {
+                    "title": "Rozpoznávání typů",
+                    "desc": "Správně zpracovává hodnoty null, čísla a řetězce."
+                },
+                "free": {
+                    "title": "Zcela zdarma",
+                    "desc": "Žádné předplatné ani limity použití."
+                }
+            },
+            "uses_title": "Běžné příklady použití",
+            "uses": {
+                "seeding": {
+                    "title": "Naplnění databáze (Seeding)",
+                    "desc": "Rychle generujte SQL skripty pro naplnění vašeho vývojového prostředí."
+                },
+                "export": {
+                    "title": "Export dat",
+                    "desc": "Převádějte výsledky SQL dotazů do JSON pro analýzu."
+                },
+                "migration": {
+                    "title": "Migrace API",
+                    "desc": "Připravte data ze starších databází pro použití v moderních REST API."
+                },
+                "testing": {
+                    "title": "Testovací data (Mock Data)",
+                    "desc": "Vytvářejte testovací JSON data z existujících SQL tabulek."
+                },
+                "docs": {
+                    "title": "Dokumentace",
+                    "desc": "Zahrňte JSON příklady vaší databázové struktury do dokumentace."
+                },
+                "prototype": {
+                    "title": "Rychlé prototypování",
+                    "desc": "Během vývoje rychle přenášejte data mezi různými stavy."
+                }
+            },
+            "how_title": "Jak nástroj používat",
+            "how_steps": {
+                "1": {
+                    "title": "Vyberte režim",
+                    "desc": "Pomocí tlačítek si vyberte mezi převodem JSON na SQL nebo SQL na JSON."
+                },
+                "2": {
+                    "title": "Vložte data",
+                    "desc": "Vložte svůj zdrojový kód do levé oblasti editoru."
+                },
+                "3": {
+                    "title": "Nastavte název tabulky",
+                    "desc": "Pokud převádíte na SQL, zadejte název cílové databázové tabulky."
+                },
+                "4": {
+                    "title": "Generovat",
+                    "desc": "Klikněte na „Generovat“ pro okamžitou transformaci."
+                },
+                "5": {
+                    "title": "Zkopírujte výsledek",
+                    "desc": "Použijte tlačítko „Kopírovat“ pro získání výstupu."
+                }
+            },
+            "samples_title": "Příklady převodu",
+            "samples": [
+                {
+                    "title": "SQL Insert na JSON",
+                    "desc": "INSERT INTO users (name, age) VALUES ('Alice', 25); → [{\"name\": \"Alice\", \"age\": 25}]"
+                },
+                {
+                    "title": "JSON na SQL Insert",
+                    "desc": "[{\"id\": 1}] → INSERT INTO table (id) VALUES (1);"
+                }
+            ],
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Jaké SQL příkazy jsou podporovány?",
+                "a1": "Aktuálně nástroj podporuje standardní příkazy INSERT INTO s definovanými názvy sloupců.",
+                "q2": "Jsou moje data v bezpečí?",
+                "a2": "Ano, vaše data nikdy neodesíláme na náš server. Veškerá logika běží ve vašem prohlížeči.",
+                "q3": "Mohu převádět více řádků?",
+                "a3": "Ano, nástroj efektivně zpracovává víceřádkové SQL nebo velká pole JSON.",
+                "q4": "Zpracovává speciální znaky?",
+                "a4": "Ano, správně escapuje jednoduché uvozovky a zpracovává základní speciální znaky."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím nějaká data ke zpracování",
+            "placeholder_table_name": "users",
+            "error_general": "Chyba převodu: ",
+            "error_invalid_array": "Chyba: Vstup musí být pole JSON objektů.",
+            "error_empty_array": "Chyba: Pole JSON je prázdné.",
+            "success_sql": "✓ SQL bylo úspěšně vygenerováno!",
+            "error_no_statements": "Nebyly nalezeny žádné platné SQL INSERT příkazy.",
+            "success_json": "✓ JSON bylo úspěšně vygenerováno!",
+            "error_no_copy": "Žádný obsah ke kopírování.",
+            "success_copy": "✓ Výstup zkopírován do schránky!"
+        }
+    },
+    "unicode-encoder-decoder": {
+        "meta": {
+            "title": "Unicode Encoder & Decoder – bezplatný online textový nástroj",
+            "description": "Kódujte a dekódujte Unicode escape sekvence pro JavaScript a JSON pomocí našeho bezplatného nástroje.",
+            "h1": "Kodér a dekodér Unicode",
+            "subtitle": "Kódujte a dekódujte Unicode escape sekvence pro JavaScript a JSON"
+        },
+        "editor": {
+            "btn_encode": "Kódovat Unicode",
+            "btn_decode": "Dekódovat Unicode",
+            "label_input_encode": "Zadejte text ke kódování",
+            "ph_input": "Ahoj světe ä¸–ç•Œ",
+            "btn_process_encode": "Kódovat Unicode",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat",
+            "label_output_encoded": "Zakódované Unicode",
+            "ph_output": "Zpracované Unicode se zobrazí zde...",
+            "label_input_decode": "Zadejte Unicode k dekódování",
+            "label_output_decoded": "Dekódovaný text",
+            "btn_process_decode": "Dekódovat Unicode"
+        },
+        "content": {
+            "p1": "Náš bezplatný nástroj Unicode kodér a dekodér vám pomůže zakódovat text do Unicode escape sekvencí (např. \\u0041) pro bezpečné použití v JavaScriptu, JSONu a dalších programovacích kontextech, nebo je dekódovat zpět do čitelného textu. Ideální pro vývojáře, datové analytiky a kohokoli, kdo pracuje s mezinárodními znakovými sadami. 100% bezplatné zpracování na straně klienta zajišťuje soukromí vašich dat.",
+            "what_title": "Co je kódování Unicode?",
+            "what_desc": "Kódování Unicode převádí znaky na jejich odpovídající kódové body Unicode, často reprezentované jako escape sekvence jako \\uXXXX. To zajišťuje, že text obsahující speciální znaky, emodži nebo nelatinské písmo může být bezpečně reprezentován v prostředích, která obvykle podporují pouze ASCII, jako jsou soubory se zdrojovým kódem nebo data JSON.",
+            "features_title": "Funkce",
+            "features": {
+                "instant": {
+                    "title": "Okamžitý převod",
+                    "desc": "Kódujte nebo dekódujte Unicode během milisekund"
+                },
+                "bidirectional": {
+                    "title": "Obousměrný",
+                    "desc": "Kódujte do formátu Unicode nebo dekódujte zpět na originál"
+                },
+                "privacy": {
+                    "title": "Soukromí na prvním místě",
+                    "desc": "Veškeré zpracování probíhá ve vašem prohlížeči"
+                },
+                "copy": {
+                    "title": "Kopírování jedním kliknutím",
+                    "desc": "Okamžitě zkopírujte zakódovaný/dekódovaný text"
+                },
+                "free": {
+                    "title": "100% zdarma",
+                    "desc": "Žádné limity, není nutná registrace"
+                },
+                "universal": {
+                    "title": "Univerzální podpora",
+                    "desc": "Funguje se všemi znaky a písmy Unicode"
+                }
+            },
+            "uses_title": "Běžné příklady použití",
+            "uses": {
+                "programming": {
+                    "title": "Programování",
+                    "desc": "Bezpečně vkládejte speciální znaky do zdrojového kódu JavaScriptu nebo Javy"
+                },
+                "data": {
+                    "title": "Serializace dat",
+                    "desc": "Zajistěte bezpečný přenos ne-ASCII znaků v JSONu"
+                },
+                "international": {
+                    "title": "Internacionalizace",
+                    "desc": "Ladění a zobrazování textu v různých jazycích a písmech"
+                },
+                "security": {
+                    "title": "Zabezpečení",
+                    "desc": "Analyzujte zamlžený kód nebo data obsahující Unicode escape sekvence"
+                }
+            },
+            "how_to_title": "Jak nástroj používat",
+            "how_to": {
+                "step1": {
+                    "title": "Vyberte režim",
+                    "desc": "Zvolte „Kódovat Unicode“ nebo „Dekódovat Unicode“ podle své potřeby"
+                },
+                "step2": {
+                    "title": "Zadejte text",
+                    "desc": "Vložte svůj text nebo Unicode escape sekvence do vstupního pole"
+                },
+                "step3": {
+                    "title": "Zpracovat",
+                    "desc": "Klikněte na tlačítko kódovat nebo dekódovat"
+                },
+                "step4": {
+                    "title": "Zkopírujte výsledek",
+                    "desc": "Kliknutím na „Kopírovat“ zkopírujete zpracovaný text do schránky"
+                },
+                "step5": {
+                    "title": "Použijte kdekoli",
+                    "desc": "Vložte výsledek do svého kódu nebo aplikace"
+                }
+            },
+            "examples_title": "Příklady Unicode",
+            "examples": {
+                "simple": {
+                    "title": "Jednoduché/ASCII:",
+                    "desc": "Originál: „A“ â†’ Zakódováno: „\\u0041“"
+                },
+                "special": {
+                    "title": "Speciální znaky:",
+                    "desc": "Originál: „Â©“ â†’ Zakódováno: „\\u00A9“"
+                },
+                "emoji": {
+                    "title": "Emodži/Vícebytové:",
+                    "desc": "Originál: „ðŸŒŸ“ â†’ Zakódováno: „\\uD83C\\uDF1F“ (surrogátní páry) nebo „\\u2B50“ v závislosti na reprezentaci"
+                }
+            },
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Proč používat Unicode escape sekvence?",
+                "a1": "Umožňují vám reprezentovat jakýkoli znak pomocí pouze ASCII znaků, což zajišťuje kompatibilitu napříč různými systémy, kódováními a přenosy souborů, které by nemusely správně zpracovat surové Unicode.",
+                "q2": "Jaký formát se používá?",
+                "a2": "Tento nástroj obvykle používá styl JavaScript/JSON ve formátu \\uXXXX pro znaky Basic Multilingual Plane.",
+                "q3": "Je to jiné než kódování URL?",
+                "a3": "Ano. Kódování URL používá %XX hexadecimální hodnoty hlavně pro URL. Unicode escapování používá \\uXXXX a používá se v řetězcích v programovacích jazycích jako JavaScript, Java a Python.",
+                "q4": "Jsou moje data v bezpečí?",
+                "a4": "Ano! Veškeré kódování a dekódování probíhá zcela ve vašem prohlížeči pomocí JavaScriptu. Váš text nikdy neopustí vaše zařízení."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím text ke zpracování",
+            "success_encode": "✓ Unicode bylo úspěšně zakódováno",
+            "success_decode": "✓ Unicode bylo úspěšně dekódováno",
+            "error_process": "✗ Chyba při zpracování Unicode: ",
+            "error_no_copy": "Žádný výstup ke kopírování",
+            "success_copy": "✓ Zkopírováno do schránky"
+        }
+    },
+    "url-encoder-decoder": {
+        "meta": {
+            "title": "URL Encoder & Decoder – bezplatný online nástroj pro procento",
+            "description": "Kódujte a dekódujte URL pro bezpečný webový přenos pomocí našeho bezplatného online nástroje.",
+            "h1": "Kodér a dekodér URL",
+            "subtitle": "Kódujte a dekódujte URL pro bezpečný webový přenos"
+        },
+        "editor": {
+            "btn_encode": "Kódovat URL",
+            "btn_decode": "Dekódovat URL",
+            "label_input_encode": "Zadejte URL ke kódování",
+            "ph_input": "https://example.com/search?name=Jan Novák&age=30",
+            "btn_process_encode": "Kódovat URL",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat",
+            "label_output_encoded": "Zakódovaná URL",
+            "ph_output": "Zde se zobrazí zpracovaná URL...",
+            "label_input_decode": "Zadejte URL k dekódování",
+            "label_output_decoded": "Dekódovaná URL",
+            "btn_process_decode": "Dekódovat URL"
+        },
+        "content": {
+            "p1": "Náš bezplatný nástroj URL kodér a dekodér vám pomůže zakódovat speciální znaky v URL pro bezpečný přenos po internetu, nebo dekódovat zakódované URL adresy zpět do jejich původního formátu. Ideální pro vývojáře, SEO profesionály a kohokoli, kdo pracuje s webovými URL adresami. 100% zdarma, zpracování na straně klienta zajišťuje soukromí vašich dat.",
+            "what_title": "🔐 Co je kódování URL?",
+            "what_desc": "Kódování URL (také nazývané percent-encoding) převádí speciální znaky v URL adresách do formátu, který lze přenášet po internetu. Mezery se stávají %20, speciální znaky jako & se stávají %26 a tak dále. To zajišťuje, že URL adresy fungují správně ve všech prohlížečích a systémech.",
+            "features_title": "✨ Funkce",
+            "features": {
+                "instant": {
+                    "title": "Okamžitý převod",
+                    "desc": "Kódujte nebo dekódujte URL během milisekund"
+                },
+                "bidirectional": {
+                    "title": "Obousměrný",
+                    "desc": "Kódujte do formátu URL nebo dekódujte zpět do originálu"
+                },
+                "privacy": {
+                    "title": "Soukromí na prvním místě",
+                    "desc": "Veškeré zpracování probíhá ve vašem prohlížeči"
+                },
+                "copy": {
+                    "title": "Kopírování jedním kliknutím",
+                    "desc": "Okamžitě zkopírujte zakódované/dekódované URL adresy"
+                },
+                "free": {
+                    "title": "100% Zdarma",
+                    "desc": "Žádné limity, registrace není vyžadována"
+                },
+                "universal": {
+                    "title": "Univerzální podpora",
+                    "desc": "Funguje se všemi formáty URL a znaky"
+                }
+            },
+            "uses_title": "🎯 Běžné příklady použití",
+            "uses": {
+                "query": {
+                    "title": "Parametry dotazu",
+                    "desc": "Kódujte speciální znaky v řetězcích dotazů URL pro volání API a webové požadavky"
+                },
+                "analytics": {
+                    "title": "Sledování analytiky",
+                    "desc": "Kódujte parametry UTM a sledovací URL adresy pro marketingové kampaně"
+                },
+                "auth": {
+                    "title": "Autentizace",
+                    "desc": "Kódujte přihlašovací údaje a tokeny v OAuth a autentizaci API"
+                },
+                "i18n": {
+                    "title": "Internacionalizace",
+                    "desc": "Kódujte znaky mimo ASCII v URL adresách pro globální kompatibilitu"
+                },
+                "seo": {
+                    "title": "SEO a přesměrování",
+                    "desc": "Vytvářejte správně zakódované URL adresy pro přesměrování a kanonické odkazy"
+                },
+                "email": {
+                    "title": "E-mailové odkazy",
+                    "desc": "Kódujte odkazy mailto s předmětem a obsahem zprávy"
+                }
+            },
+            "how_to_title": "💡 Jak používat",
+            "how_to": {
+                "step1": {
+                    "title": "Vyberte režim",
+                    "desc": "Zvolte „Kódovat URL“ nebo „Dekódovat URL“ podle své potřeby"
+                },
+                "step2": {
+                    "title": "Zadejte URL",
+                    "desc": "Vložte svou URL nebo text do vstupního pole"
+                },
+                "step3": {
+                    "title": "Zpracovat",
+                    "desc": "Klikněte na tlačítko „Kódovat URL“ nebo „Dekódovat URL“"
+                },
+                "step4": {
+                    "title": "Zkopírujte výsledek",
+                    "desc": "Klikněte na „Kopírovat“ pro zkopírování zpracované URL adresy do schránky"
+                },
+                "step5": {
+                    "title": "Použijte kdekoli",
+                    "desc": "Vložte zakódovanou/dekódovanou URL adresu do své aplikace"
+                }
+            },
+            "examples_title": "📊 Příklady kódování URL",
+            "examples": {
+                "space": {
+                    "title": "Znak mezery:",
+                    "desc": "Originál: „Hello World“ → Zakódováno: „Hello%20World“"
+                },
+                "special": {
+                    "title": "Speciální znaky:",
+                    "desc": "Originál: „name=John&age=30“ → Zakódováno: „name%3DJohn%26age%3D30“"
+                },
+                "full": {
+                    "title": "Celá URL:",
+                    "desc": "Originál: „https://example.com/search?q=hello world“ → Zakódováno: „https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world“"
+                }
+            },
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Kdy bych měl kódovat URL?",
+                "a1": "Kódujte URL adresy, když je předáváte jako parametry dotazu, ukládáte je do databází nebo když obsahují speciální znaky jako mezery, &, =, ? nebo znaky mimo ASCII.",
+                "q2": "Které znaky vyžadují kódování?",
+                "a2": "Vyhrazené znaky jako : / ? # [ ] @ ! $ & ' ( ) * + , ; = a nebezpečné znaky jako mezery, <, >, \", {, }, |, \\, ^, `, a znaky mimo ASCII musí být zakódovány.",
+                "q3": "Je kódování URL stejné jako Base64?",
+                "a3": "No. Kódování URL převádí konkrétní znaky na formát %XX, zatímco Base64 kóduje celá data do jiné znakové sady. Slouží k různým účelům.",
+                "q4": "Mohu kódovat celé URL adresy?",
+                "a4": "Ano, ale typicky kódujete pouze část s řetězcem dotazu. Kódování celé URL včetně protokolu (https://) je méně obvyklé a může způsobit problémy.",
+                "q5": "Jsou moje data v bezpečí?",
+                "a5": "Ano! Veškeré kódování a dekódování probíhá zcela ve vašem prohlížeči pomocí JavaScriptu. Vaše URL adresy nikdy neopustí vaše zařízení ani nejsou odesílány na žádný server."
+            }
+        },
+        "js": {
+            "error_empty": "Zadejte prosím URL ke zpracování",
+            "success_encode": "✓ URL byla úspěšně zakódována",
+            "success_decode": "✓ URL byla úspěšně dekódována",
+            "error_process": "✗ Chyba při zpracování URL: ",
+            "error_no_copy": "Žádný výstup ke kopírování",
+            "success_copy": "✓ Zkopírováno do schránky"
+        }
+    },
+    "uuid-generator": {
+        "meta": {
+            "title": "Bezplatný generátor UUID – nástroj GUID online verze 4",
+            "description": "Generujte unikátní UUID (verze 4) okamžitě. Bezplatný, bezpečný a rychlý nástroj pro identifikaci dat v databázích a aplikacích.",
+            "h1": "Generátor UUID",
+            "subtitle": "Vytvářejte unikátní identifikátory vteřině."
+        },
+        "editor": {
+            "label_quantity": "Množství",
+            "label_version": "Verze UUID",
+            "opt_v4": "Verze 4 (Náhodné)",
+            "btn_generate": "Generovat UUID",
+            "btn_copy": "Kopírovat vše",
+            "label_output": "Vygenerované identifikátory"
+        },
+        "content": {
+            "about_title": "O UUID (Verze 4)",
+            "about_desc": "UUID (Universally Unique Identifier) je 128bitové číslo používané k identifikaci informací v počítačových systémech. UUID verze 4 jsou generována pomocí náhodných nebo pseudo-náhodných čísel. Pravděpodobnost duplicity je prakticky nulová, což z nich dělá ideální volbu pro databázové klíče, názvy souborů a identifikátory relací.",
+            "features_title": "✅ Proč používat náš generátor?",
+            "feature1_title": "Okamžité generování",
+            "feature1_desc": "Vytvořte až stovky unikátních ID jediným kliknutím bez nutnosti instalovat software.",
+            "feature2_title": "Maximální unikátnost",
+            "feature2_desc": "Implementace podle standardu RFC 4122 zaručuje, že každý vygenerovaný kód je prakticky jedinečný na světě.",
+            "feature3_title": "Soukromí na prvním místě",
+            "feature3_desc": "Lokalizované generování přímo ve vašem prohlížeči – žádná generovaná data neopouštějí váš počítač.",
+            "faq_title": "❓ Často kladené otázky",
+            "faq1_q": "Co přesně je UUID?",
+            "faq1_a": "UUID je zkratka pro Universally Unique Identifier. Je to standardizovaný 128bitový formát, který umožňuje vytvářet identifikátory bez nutnosti centrální správy, přičemž riziko kolize je zanedbatelné.",
+            "faq2_q": "K čemu jsou UUID dobrá?",
+            "faq2_a": "Běžně se používají jako primární klíče v databázích (namísto postupných čísel), pro identifikaci objektů v distribuovaných systémech nebo jako součást URL adres.",
+            "faq3_q": "Je UUID to samé co GUID?",
+            "faq3_a": "V podstatě ano. GUID (Globally Unique Identifier) je termín používaný společností Microsoft pro jejich implementaci standardu UUID."
+        },
+        "js": {
+            "success_generated": "Úspěšně vygenerováno :count UUID!",
+            "success_copy": "Zkopírováno do schránky!"
+        }
+    },
+    "xml-formatter": {
+        "meta": {
+            "title": "XML Formatter online – bezplatný nástroj XML Prettifier",
+            "description": "Profesionální nástroj pro formátování XML dat. Zkrášlete nepřehledný kód nebo minifikujte XML pro produkční použití. Zdarma, bezpečně a okamžitě.",
+            "h1": "Formát XML",
+            "subtitle": "Zkrášlete, vyčistěte a optimalizujte svá XML data během vteřiny."
+        },
+        "editor": {
+            "label_input": "Vložit XML kód",
+            "ph_input": "<root><child>zde vložte své xml kód...</child></root>",
+            "btn_format": "Formátovat / Zkrášlit",
+            "btn_minify": "Minifikovat XML",
+            "btn_copy": "Kopírovat výsledek"
+        },
+        "content": {
+            "main_title": "Dokonale strukturovaná XML data",
+            "main_description": "Práce se surovými XML daty může být náročná, pokud nejsou správně formátovaná. Náš XML formátovač vám umožní vzít nepřehledný, jednořádkový kód a proměnit jej v krásně strukturovaný dokument se správným odsazením. Nástroj je také vybaven funkcí minifikace, která odstraní přebytečné mezery pro snížení velikosti souborů při přnosu dat.",
+            "features_title": "✨ Co náš XML nástroj umí?",
+            "feature1_title": "Chytré zkrášlení",
+            "feature1_desc": "Automaticky přidá správné odsazení a zalomení řádků pro maximální čitelnost vašeho XML.",
+            "feature2_title": "Efektivní minifikace",
+            "feature2_desc": "Odstraňte všechna nepotřebná bílá místa pro optimalizaci přenosu dat a úsporu místa.",
+            "feature3_title": "Validace syntaxe",
+            "feature3_desc": "Nástroj vás upozorní, pokud je vložené XML poškozené nebo obsahuje syntaktické chyby.",
+            "faq_title": "❓ Často kladené otázky",
+            "faq1_q": "Kdy bych měl XML minifikovat?",
+            "faq1_a": "Minifikace je ideální pro produkční prostředí, kde chcete minimalizovat množství přenášených dat. Pro vývojáře a ladění je naopak lepší použít formátování (zkrášlení).",
+            "faq2_q": "Ukládáte můj XML kód?",
+            "faq2_a": "Nikoliv. Veškeré zpracování probíhá lokálně ve vašem prohlížeči. Vaše citlivá XML data (např. konfigurace nebo exporty) nikdy nepouštějí vaše zařízení.",
+            "faq3_q": "Podporuje nástroj i XML s atributy?",
+            "faq3_a": "Ano, náš formátovač si poradí s komplexními XML strukturami včetně atributů, jmenných prostorů a komentářů."
+        },
+        "js": {
+            "success_format": "XML bylo úspěšně zformátováno!",
+            "error_invalid": "Neplatná syntaxe XML. Zkontrolujte prosím svůj kód.",
+            "success_minify": "XML bylo úspěšně minifikováno!",
+            "success_copy": "Výsledek byl zkopírován do schránky!"
+        }
+    },
+    "xml-to-csv": {
+        "meta": {
+            "title": "Převaděč XML na CSV – bezplatný online extraktor dat",
+            "description": "Bezplatný online nástroj pro převod XML na CSV. Rychlý, bezpečný a snadno použitelný.",
+            "h1": "Převaděč XML do CSV",
+            "subtitle": "Nejlepší převodník XML na CSV pro vývojáře a IT profesionály"
+        },
+        "editor": {
+            "btn_convert": "Převést na CSV",
+            "btn_clear": "Vymazat",
+            "btn_copy": "Kopírovat",
+            "btn_example": "Příklad",
+            "label_input": "Zadejte XML",
+            "ph_input": "<data><row><name>Jan</name><age>30</age></row></data>",
+            "label_output": "CSV výstup",
+            "ph_output": "Zde se zobrazí převedené CSV..."
+        },
+        "content": {
+            "p1": "Náš bezplatný převodník XML na CSV transformuje strukturovaná XML data do formátu hodnot oddělených čárkou. Ideální pro import XML dat do Excelu, Google Tabulek, databází a nástrojů na analýzu dat. Převádějte složité XML struktury do jednoduchého tabulkového formátu CSV během několika sekund.",
+            "what_title": "📊 Co je převod XML na CSV?",
+            "what_desc": "Převod XML na CSV transformuje strukturovaná data ve formátu eXtensible Markup Language na formát hodnot oddělených čárkou. Zatímco XML je skvělé pro komplexní datové struktury a API, CSV je jednodušší a univerzálně podporované tabulkovými aplikacemi, což jej činí ideálním pro analýzu dat, reporting a operace importu/exportu.",
+            "features_title": "✨ Funkce",
+            "features": {
+                "fast": {
+                    "title": "Bleskově rychlý",
+                    "desc": "Převádějte XML na CSV okamžitě s optimalizovaným parsováním"
+                },
+                "secure": {
+                    "title": "100% Bezpečný",
+                    "desc": "Veškeré zpracování probíhá lokálně – vaše data zůstávají soukromá"
+                },
+                "copy": {
+                    "title": "Rychlé kopírování",
+                    "desc": "Zkopírujte CSV výstup do schránky jedním kliknutím"
+                },
+                "smart": {
+                    "title": "Chytré parsování",
+                    "desc": "Automaticky extrahuje data z elementů řádků XML"
+                },
+                "free": {
+                    "title": "Zcela zdarma",
+                    "desc": "Žádné limity, žádná registrace, navždy zdarma"
+                },
+                "excel": {
+                    "title": "Připraveno pro Excel",
+                    "desc": "Výstup funguje perfektně v Excelu a Google Tabulkách"
+                }
+            },
+            "uses_title": "🎯 Běžné příklady použití",
+            "uses": {
+                "analysis": {
+                    "title": "Analýza dat",
+                    "desc": "Převádějte XML reporty a exporty dat do CSV pro analýzu v Excelu, Google Tabulkách nebo BI nástrojích."
+                },
+                "migration": {
+                    "title": "Migrace systému",
+                    "desc": "Transformujte XML data ze starších systémů do CSV pro import do moderních databází a aplikací."
+                },
+                "reporting": {
+                    "title": "Reporting",
+                    "desc": "Převádějte XML odpovědi z API do CSV pro vytváření reportů a přehledů."
+                },
+                "db": {
+                    "title": "Import do databáze",
+                    "desc": "Transformujte XML exporty do CSV pro hromadný import do SQL databází."
+                },
+                "email": {
+                    "title": "E-mailové seznamy",
+                    "desc": "Převádějte XML data kontaktů do CSV pro e-mailové marketingové platformy."
+                },
+                "cleaning": {
+                    "title": "Čištění dat",
+                    "desc": "Transformujte XML na CSV pro snazší čištění a manipulaci s daty v tabulkových procesorech."
+                }
+            },
+            "how_to_title": "💡 Jak převést XML na CSV",
+            "how_to": {
+                "step1": {
+                    "title": "Vložte svá XML data",
+                    "desc": "Zkopírujte XML data ze svého zdroje a vložte je do levého vstupního pole."
+                },
+                "step2": {
+                    "title": "Klikněte na Převést",
+                    "desc": "Stiskněte „Převést na CSV“ pro transformaci vašeho XML do formátu CSV."
+                },
+                "step3": {
+                    "title": "Zkopírujte a použijte",
+                    "desc": "CSV výstup se zobrazí napravo. Klikněte na „Kopírovat“ pro vložení do Excelu nebo libovolné aplikace."
+                }
+            },
+            "example_title": "📊 Příklad převodu",
+            "faq_title": "❓ Často kladené otázky",
+            "faq": {
+                "q1": "Je tento převodník zdarma?",
+                "a1": "Ano, náš převodník XML na CSV je zcela zdarma k použití.",
+                "q2": "Jsou moje data v bezpečí?",
+                "a2": "Ano, veškeré zpracování probíhá ve vašem prohlížeči. Vaše data nejsou nikdy odesílána na naše servery.",
+                "q3": "Podporuje velké XML soubory?",
+                "a3": "Ano, zvládne i velké XML soubory, i když velmi velké soubory mohou chvíli trvat.",
+                "q4": "Jak jsou zpracovávány atributy?",
+                "a4": "V současné době se nástroj zaměřuje na obsah značek. Atributy mohou být zahrnuty v budoucích aktualizacích."
+            },
+            "best_practices_title": "💡 Nejlepší postupy",
+            "best_practices": [
+                {
+                    "title": "Správně formátované XML",
+                    "desc": "Ujistěte se, že vaše XML je správně formátované a pro nejlepší výsledky obsahuje opakující se elementy <row>."
+                },
+                {
+                    "title": "Strana prohlížeče",
+                    "desc": "Vzhledem k tomu, že běží ve vašem prohlížeči, vaše data zůstávají soukromá a bezpečná."
+                },
+                {
+                    "title": "Zálohujte data",
+                    "desc": "Před převodem si vždy ponechte zálohu svých původních XML dat."
+                }
+            ]
+        },
+        "js": {
+            "error_empty": "Zadejte prosím XML data",
+            "error_no_row": "V XML nebyly nalezeny žádné elementy <row>",
+            "success_convert": "✓ XML bylo úspěšně převedeno na CSV",
+            "error_process": "✗ Chyba: ",
+            "error_no_copy": "Žádný výstup ke kopírování",
+            "success_copy": "✓ Zkopírováno do schránky"
+        }
+    },
+    "xml-to-json": {
+        "meta": {
+            "title": "XML to JSON Converter – bezplatný online analyzátor",
+            "description": "Bezplatný online nástroj pro převod XML na JSON. Rychlý, bezpečný a snadno použitelný.",
+            "subtitle": "Nejlepší převodník XML na JSON pro vývojáře a IT profesionály",
+            "h1": "Převaděč XML na JSON"
+        },
+        "editor": {
+            "btn_convert": "Převést na JSON",
+            "btn_copy": "Kopírovat JSON",
+            "btn_download": "Stáhnout",
+            "btn_example": "Načíst příklad",
+            "btn_clear": "Vymazat",
+            "label_input": "XML vstup",
+            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Zde vložte své XML...</item>\n</root>",
+            "label_output": "JSON výstup",
+            "ph_output": "Zde se zobrazí převedený JSON..."
+        },
+        "content": {
+            "h2": "Bezplatný online převodník XML na JSON",
+            "p1": "Okamžitě transformujte XML data do formátu JSON pomocí našeho výkonného a bezplatného online převodníku XML na JSON. Ideální pro vývojáře, datové analytiky a kohokoli, kdo pracuje s integracemi API, migrací dat nebo moderními webovými aplikacemi.",
+            "p2": "XML (eXtensible Markup Language) je po desetiletí standardem pro výměnu dat, ale moderní aplikace stále častěji preferují JSON (JavaScript Object Notation) pro jeho jednoduchost a nativní podporu JavaScriptu. Náš převodník tuto mezeru překlenuje a umožňuje vám plynule transformovat XML dokumenty do čistého a čitelného formátu JSON.",
+            "p3": "Ať už migrujete starší systémy, integrujete RESTful API nebo prostě potřebujete převést konfigurační soubory, náš nástroj vše zvládne s přesností a rychlostí. Není nutná žádná instalace ani registrace – stačí vložit své XML a získat okamžité výsledky.",
+            "features_title": "Výkonné funkce",
+            "features": {
+                "fast": {
+                    "title": "Bleskově rychlý",
+                    "desc": "Okamžitý převod se zpracováním v reálném čase. Žádné čekání, žádná zpoždění."
+                },
+                "secure": {
+                    "title": "100% Bezpečný",
+                    "desc": "Veškerý převod probíhá ve vašem prohlížeči. Vaše data nikdy neopustí vaše zařízení."
+                },
+                "attributes": {
+                    "title": "Zpracování atributů",
+                    "desc": "Zachovává atributy XML a správně je převádí do struktury JSON."
+                },
+                "nested": {
+                    "title": "Vnořená struktura",
+                    "desc": "Během převodu zachovává složité hierarchické datové struktury."
+                },
+                "pretty": {
+                    "title": "Úhledné formátování",
+                    "desc": "Čistý, odsazený JSON výstup, který je snadno čitelný a srozumitelný."
+                },
+                "validation": {
+                    "title": "Validace chyb",
+                    "desc": "Detekuje a hlásí neplatnou syntaxi XML s užitečnými chybovými zprávami."
+                }
+            },
+            "uses_title": "Běžné příklady použití",
+            "uses": {
+                "api": {
+                    "title": "Integrace API",
+                    "desc": "Převádějte XML odpovědi z API do formátu JSON pro moderní webové aplikace a RESTful služby."
+                },
+                "migration": {
+                    "title": "Migrace dat",
+                    "desc": "Transformujte XML databáze a exporty do JSON pro NoSQL systémy jako MongoDB."
+                },
+                "config": {
+                    "title": "Konfigurační soubory",
+                    "desc": "Převádějte XML konfigurační soubory do JSON pro moderní aplikace a sestavovací nástroje."
+                },
+                "soap": {
+                    "title": "SOAP na REST",
+                    "desc": "Transformujte XML odpovědi SOAP na JSON pro RESTful služby."
+                },
+                "rss": {
+                    "title": "RSS kanály",
+                    "desc": "Převádějte RSS a Atom kanály (formát XML) do JSON pro parsování v JS aplikacích."
+                },
+                "analysis": {
+                    "title": "Analýza dat",
+                    "desc": "Převádějte XML exporty dat do JSON pro snazší analýzu pomocí knihoven JavaScriptu."
+                }
+            },
+            "how_to_title": "Jak funguje převod XML na JSON",
+            "how_to_desc": "Náš převodník XML na JSON využívá pokročilé parsovací algoritmy k přesné transformaci dokumentů XML do formátu JSON.",
+            "steps": [
+                {
+                    "title": "Vložte své XML",
+                    "desc": "Zkopírujte a vložte svůj XML kód do vstupního pole výše."
+                },
+                {
+                    "title": "Klikněte na Převést",
+                    "desc": "Stiskněte tlačítko „Převést na JSON“ pro zahájení transformace."
+                },
+                {
+                    "title": "Zkopírujte a použijte",
+                    "desc": "Zkontrolujte krásně formátované výsledky JSON a použijte tlačítko kopírovat pro snadný export."
+                }
+            ],
+            "example_title": "Příklad převodu",
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Je tento převodník zdarma?",
+                "a1": "Ano, náš převodník XML na JSON je 100% zdarma bez skrytých nákladů nebo nutnosti registrace.",
+                "q2": "Jsou moje data v bezpečí?",
+                "a2": "Absolutně. Veškeré zpracování probíhá lokálně v prohlížeči, což znamená, že vaše data nikdy neopustí vaše zařízení.",
+                "q3": "Podporuje vnořené struktury?",
+                "a3": "Ano, správně zpracovává složité vnořené elementy XML a zachovává jejich hierarchické vztahy.",
+                "q4": "Jak jsou zpracovávány atributy?",
+                "a4": "XML atributy jsou převedeny na vlastnosti JSON, pro přehlednost obvykle s předponou podtržítka."
+            },
+            "tips_title": "Tipy a nejlepší postupy",
+            "tips": [
+                {
+                    "title": "Validujte své XML",
+                    "desc": "Před převodem se ujistěte, že je vaše XML správně formátované, abyste předešli chybám při zpracování."
+                },
+                {
+                    "title": "Používejte Pretty Printing",
+                    "desc": "Náš nástroj automaticky formátuje JSON výstup pro maximální čitelnost."
+                },
+                {
+                    "title": "Soukromí v prohlížeči",
+                    "desc": "Vzhledem k tomu, že běží na straně klienta, můžete jej po načtení stránky používat i offline."
+                }
+            ]
+        },
+        "js": {
+            "error_empty": "Zadejte prosím nějaká XML data k převodu.",
+            "error_syntax": "\\n\\nZkontrolujte prosím syntaxi vašeho XML.",
+            "error_process": "Chyba při převodu XML: ",
+            "error_no_copy": "Žádný JSON ke kopírování. Nejdříve prosím převeďte XML.",
+            "success_copy": "Zkopírováno!",
+            "error_no_download": "Žádný JSON ke stažení. Nejdříve prosím převeďte XML."
+        }
+    },
+    "yaml-to-json": {
+        "meta": {
+            "title": "YAML to JSON Converter – bezplatný online datový nástroj",
+            "description": "Okamžitě převádějte konfigurační soubory YAML do formátu JSON pomocí našeho bezplatného online převodníku YAML na JSON. Ideální pro vývojáře pracující s konfiguračními soubory.",
+            "h1": "Převaděč YAML na JSON",
+            "subtitle": "Okamžitě převádějte konfigurační soubory YAML do formátu JSON"
+        },
+        "editor": {
+            "btn_convert": "Převést",
+            "btn_copy": "Kopírovat JSON",
+            "btn_download": "Stáhnout",
+            "btn_example": "Příklad",
+            "btn_clear": "Vymazat",
+            "label_input": "YAML vstup",
+            "ph_input": "Zde vložte svá YAML data...",
+            "label_output": "JSON výstup",
+            "ph_output": "Zde se zobrazí převedený JSON..."
+        },
+        "content": {
+            "h2": "O převodníku YAML na JSON",
+            "p1": "Okamžitě převádějte konfigurační soubory YAML do formátu JSON pomocí našeho bezplatného online převodníku YAML na JSON. Ideální pro vývojáře pracující s konfiguračními soubory, CI/CD procesy a transformací dat.",
+            "features_title": "Klíčové funkce",
+            "features": {
+                "syntax": {
+                    "title": "Validace syntaxe",
+                    "desc": "Detekuje syntaktické chyby v YAML"
+                },
+                "nested": {
+                    "title": "Vnořená struktura",
+                    "desc": "Zachovává složité hierarchie"
+                },
+                "array": {
+                    "title": "Podpora polí",
+                    "desc": "Zpracovává seznamy a sekvence YAML"
+                },
+                "pretty": {
+                    "title": "Úhledné formátování",
+                    "desc": "Čistý, čitelný JSON výstup"
+                },
+                "instant": {
+                    "title": "Okamžitý převod",
+                    "desc": "Transformace v reálném čase"
+                },
+                "privacy": {
+                    "title": "Soukromí na prvním místě",
+                    "desc": "Veškeré zpracování v prohlížeči"
+                }
+            },
+            "uses_title": "Běžné příklady použití",
+            "uses": {
+                "config": {
+                    "title": "Konfigurační soubory",
+                    "desc": "Převádějte konfigurační soubory YAML do JSON pro aplikace."
+                },
+                "pipeline": {
+                    "title": "CI/CD procesy",
+                    "desc": "Transformujte konfigurace pipeline z YAML do formátu JSON."
+                },
+                "k8s": {
+                    "title": "Kubernetes",
+                    "desc": "Převádějte manifesty Kubernetes z YAML do JSON."
+                },
+                "docker": {
+                    "title": "Docker Compose",
+                    "desc": "Transformujte soubory Docker Compose z YAML do JSON."
+                }
+            },
+            "how_to_title": "Jak používat převodník YAML na JSON",
+            "how_to_steps": [
+                {
+                    "title": "Vložte YAML",
+                    "desc": "Zkopírujte a vložte svůj YAML kód do oblasti vstupu."
+                },
+                {
+                    "title": "Automatický převod",
+                    "desc": "Nástroj převádí YAML na JSON v reálném čase během psaní."
+                },
+                {
+                    "title": "Kopírovat nebo Stáhnout",
+                    "desc": "Zkopírujte výsledný JSON nebo jej stáhněte jako soubor .json."
+                }
+            ],
+            "faq_title": "Často kladené otázky",
+            "faq": {
+                "q1": "Je to zdarma?",
+                "a1": "Ano, náš převodník YAML na JSON je 100% zdarma.",
+                "q2": "Jsou moje data v bezpečí?",
+                "a2": "Ano, veškerý převod probíhá ve vašem prohlížeči. Vaše data neukládáme."
+            }
+        },
+        "js": {
+            "error_process": "Chyba při převodu YAML: ",
+            "error_no_copy": "Žádný JSON ke kopírování. Nejdříve prosím převeďte YAML.",
+            "success_copy": "JSON byl zkopírován do schránky!",
+            "error_no_download": "Žádný JSON ke stažení. Nejdříve prosím převeďte YAML."
+        }
+    }
+}

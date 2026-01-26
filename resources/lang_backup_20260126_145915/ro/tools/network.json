@@ -1,0 +1,733 @@
+{
+    "dns-lookup": {
+        "meta": {
+            "title": "Instrument de căutare DNS - Verificator de înregistrări DNS online gratuit",
+            "description": "Unealtă gratuită de căutare DNS pentru a verifica înregistrările DNS ale oricărui domeniu. Vizualizează instantaneu înregistrările A, AAAA, MX, NS, TXT, CNAME. Esențial pentru depanarea e-mailului.",
+            "h1": "Instrumentul de căutare DNS",
+            "subtitle": "Interoghează înregistrările DNS pentru nameservere, MX, A, CNAME și TXT instantaneu"
+        },
+        "form": {
+            "domain_label": "Nume Domeniu",
+            "domain_placeholder": "exemplu.ro",
+            "button": "Căutare DNS"
+        },
+        "results": {
+            "title": "Rezultate DNS pentru"
+        },
+        "content": {
+            "what_is_title": "Ce este Căutarea DNS?",
+            "what_is_desc": "Căutarea DNS este o unealtă care interoghează serverele Domain Name System pentru a recupera înregistrările DNS ale unui domeniu. Aceste înregistrări conțin informații cruciale despre configurarea domeniului, inclusiv serverele de mail (MX), nameserverele (NS), adresele IP (A/AAAA) și înregistrările text (TXT) folosite pentru verificare și securitate.",
+            "why_use_title": "De ce să folosești Căutarea DNS?",
+            "why_use_desc": "Verificarea DNS este esențială pentru diagnosticarea problemelor de livrare a e-mailurilor, verificarea configurării domeniului, validarea înregistrărilor SPF și DKIM și înțelegerea modului în care un domeniu este configurat. Este utilă pentru administratori de sistem, developeri și profesioniști IT.",
+            "record_types_title": "Tipuri de Înregistrări DNS",
+            "a_record": "<strong>Înregistrare A:</strong> Asociază domeniul cu o adresă IPv4",
+            "aaaa_record": "<strong>Înregistrare AAAA:</strong> Asociază domeniul cu o adresă IPv6",
+            "mx_record": "<strong>Înregistrare MX:</strong> Informații despre serverele de e-mail",
+            "ns_record": "<strong>Înregistrare NS:</strong> Informații despre serverele de nume (Nameservers)",
+            "txt_record": "<strong>Înregistrare TXT:</strong> Înregistrări text pentru verificare și securitate",
+            "cname_record": "<strong>Înregistrare CNAME:</strong> Alias pentru numele canonic"
+        },
+        "faq": {
+            "title": "Întrebări Frecvente DNS",
+            "q1": "Cât timp durează propagarea DNS?",
+            "a1": "Propagarea DNS poate dura de la câteva minute până la 48 de ore, deși majoritatea schimbărilor sunt vizibile în câteva ore.",
+            "q2": "Ce este un TTL în DNS?",
+            "a2": "TTL (Time To Live) este o setare care indică serverelor DNS cât timp trebuie să păstreze în cache înregistrarea respectivă înainte de a interoga din nou sursa.",
+            "q3": "De ce nu văd noile mele înregistrări?",
+            "a3": "Este posibil ca vechile înregistrări să fie încă în cache-ul browserului sau al ISP-ului tău. Încearcă să golești cache-ul DNS sau să folosești această unealtă care face interogări direct.",
+            "q4": "Ce este înregistrarea MX?",
+            "a4": "MX (Mail Exchanger) specifică serverul responsabil pentru primirea e-mailurilor pe domeniul tău.",
+            "q5": "Este acest instrument sigur?",
+            "a5": "Da, instrumentul face doar interogări publice asupra înregistrărilor DNS, fără a modifica nimic și fără a colecta date private."
+        },
+        "js": {
+            "looking_up": "Se caută înregistrările DNS...",
+            "records_label": "Înregistrări",
+            "success": "Înregistrări DNS recuperate cu succes",
+            "error": "Nu s-au putut recupera înregistrările DNS pentru acest domeniu",
+            "lookup_dns": "Căutare DNS"
+        }
+    },
+    "domain-to-ip": {
+        "meta": {
+            "title": "Convertor domeniu în IP - Instrument DNS online gratuit",
+            "description": "Transformă orice nume de domeniu în adresa sa IP corespunzătoare. Unealtă esențială pentru diagnosticarea rețelei și configurarea serverelor.",
+            "h1": "Convertor domeniu în IP",
+            "subtitle": "Rezoluționează numele de domenii în adrese IP cu detalii DNS complete"
+        },
+        "form": {
+            "domain_label": "Introdu Numele Domeniului",
+            "domain_placeholder": "exemplu.ro",
+            "domain_hint": "Introdu domeniul fără http:// sau https://",
+            "button": "Căutare Adresă IP"
+        },
+        "results": {
+            "title": "Rezultat Conversie",
+            "domain_label": "Domeniu:",
+            "ip_label": "Adresă IP:"
+        },
+        "content": {
+            "main_title": "Convertor Domeniu în IP",
+            "main_subtitle": "Transformă instantaneu orice domeniu în adresa sa IP",
+            "intro": "Unealta noastră gratuită transformă rapid orice nume de domeniu în adresa IP corespunzătoare folosind lookup-uri DNS în timp real. Este esențială pentru administratori de rețea, developeri și profesioniști în securitate care au nevoie să identifice serverul din spatele unui domeniu.",
+            "feature1_title": "Căutare Instantanee",
+            "feature1_desc": "Obține adresa IP imediat, fără nicio întârziere.",
+            "feature2_title": "Rezultate Precise",
+            "feature2_desc": "Interogări DNS în timp real pentru cele mai noi adrese IP.",
+            "feature3_title": "100% Gratuit",
+            "feature3_desc": "Căutări nelimitate, fără a fi nevoie de înregistrare.",
+            "what_is_title": "🌐 Ce este un Lookup Domeniu în IP?",
+            "what_is_desc": "Lookup-ul de la domeniu la IP este procesul de a converti un nume de domeniu citibil de oameni (ca exemplu.ro) în adresa sa numerică IP (ca 93.184.216.34). Această conversie are loc prin serverele DNS, care funcționează ca o carte de telefon a internetului.",
+            "use_cases_title": "🎯 Cazuri de Utilizare Comune",
+            "uc1_title": "Configurare Server",
+            "uc1_desc": "Configurează firewall-uri și setări de server folosind adrese IP exacte.",
+            "uc2_title": "Analiză de Securitate",
+            "uc2_desc": "Verifică locația serverelor și identifică furnizorii de găzduire.",
+            "uc3_title": "Diagnosticare",
+            "uc3_desc": "Identifică problemele DNS și verifică dacă domeniul indică serverul corect.",
+            "uc4_title": "Monitorizare Rețea",
+            "uc4_desc": "Urmărește schimbările de server și monitorizează infrastructura.",
+            "uc5_title": "Geolocație",
+            "uc5_desc": "Determină locația geografică a serverului pe baza adresei IP.",
+            "uc6_title": "Integrare API",
+            "uc6_desc": "Foloseşte adresele IP pentru conexiuni API directe când DNS-ul este lent.",
+            "pro_tips_title": "💡 Sfaturi Pro: Utilizarea Lookup-ului Domeniu în IP",
+            "tip1": "✅ Folosește adresa IP pentru conexiuni directe când DNS-ul are probleme de propagare.",
+            "tip2": "✅ Verifică configurațiile CDN prin verificarea rezoluţiilor din locaţii diferite.",
+            "tip3": "✅ Pune IP-urile serverelor în whitelist-ul firewall-ului pentru acces securizat.",
+            "tip4": "✅ Compară adresele IP înainte și după schimbările de DNS.",
+            "tip5": "✅ Identifică găzduirea partajată verificând dacă mai multe domenii au același IP."
+        },
+        "faq": {
+            "title": "Întrebări Frecvente IP",
+            "q1": "Un domeniu poate avea mai multe adrese IP?",
+            "a1": "Da, site-urile mari folosesc adesea mai multe adrese IP pentru echilibrarea încărcării (load balancing) și livrarea de conținut (CDN).",
+            "q2": "Ce este o adresă IP statică vs dinamică?",
+            "a2": "O adresă statică rămâne constantă, în timp ce una dinamică se poate schimba periodic, fiind atribuită de ISP dintr-un bazin de adrese disponibile.",
+            "q3": "De ce se schimbă adresa IP a unui domeniu?",
+            "a3": "IP-ul se poate schimba dacă proprietarul mută site-ul pe un alt server sau dacă furnizorul de găzduire face modificări în infrastructură.",
+            "q4": "Instrumentul arată și IP-ul meu?",
+            "a4": "Acest instrument caută IP-ul domeniului introdus. Pentru a vedea propriul IP, folosește unealta 'Care este IP-ul meu?'.",
+            "q5": "Adresa IP identifică locația exactă?",
+            "a5": "IP-ul indică de obicei orașul și regiunea furnizorului de internet, dar nu adresa poștală exactă."
+        },
+        "js": {
+            "looking_up": "Se caută adresa IP...",
+            "error_failed": "Nu s-a putut rezoluționa domeniul"
+        }
+    },
+    "internet-speed-test": {
+        "meta": {
+            "title": "Test de viteză la internet - Verificator de conexiune online gratuit",
+            "description": "Testează viteza internetului tău gratuit. Verifică viteza de download, upload și ping-ul instantaneu. Rezultate precise și rapide.",
+            "h1": "Test de viteză pe internet",
+            "subtitle": "Măsoară calitatea și viteza conexiunii tale la internet acum"
+        },
+        "editor": {
+            "btn_start": "Începe Testul",
+            "status_init": "Se inițializează testul...",
+            "label_download": "Viteză Download",
+            "label_upload": "Viteză Upload",
+            "label_ping": "Ping",
+            "label_quality": "Calitate Conexiune",
+            "btn_retry": "Testează din nou",
+            "status_ping": "Se testează ping-ul...",
+            "status_download": "Se testează viteza de download...",
+            "status_upload": "Se testează viteza de upload...",
+            "quality_val_excellent": "Excelentă",
+            "quality_val_very_good": "Foarte Bună",
+            "quality_val_good": "Bună",
+            "quality_val_fair": "Acceptabilă",
+            "quality_val_poor": "Slabă"
+        },
+        "content": {
+            "p1": "Testează viteza conexiunii tale la internet cu instrumentul nostru gratuit și precis. Măsoară download-ul, upload-ul și latența (ping) în câteva secunde. Ideal pentru diagnosticarea conexiunilor lente sau verificarea dacă primești viteza promisă de furnizor.",
+            "metrics_title": "Înțelegerea Metricilor de Viteză",
+            "req_title": "Cerințe pentru un Test Precis",
+            "req_list": [
+                "Închide toate celelalte aplicații și tab-uri de browser",
+                "Conectează-te prin cablu Ethernet pentru rezultate maxime",
+                "Oprește temporar serviciile VPN sau proxy",
+                "Asigură-te că nu există descărcări în curs de desfășurare",
+                "Rulează testul de mai multe ori în momente diferite ale zilei"
+            ],
+            "why_title": "De ce să îți testezi viteza?",
+            "why_list": [
+                "Verifică dacă primești viteza pentru care plătești",
+                "Depanarea problemelor de conexiune lentă",
+                "Compararea planurilor ISP înainte de schimbare",
+                "Optimizarea rețelei tale de acasă",
+                "Documentarea vitezei pentru tichete de suport la furnizor",
+                "Testarea performanței Wi-Fi vs. Ethernet"
+            ],
+            "factors_title": "Factori care îți afectează viteza",
+            "improve_title": "Cum să îți îmbunătățești viteza",
+            "improve_list": [
+                "Folosește cablu Ethernet în loc de Wi-Fi",
+                "Plasează routerul întră-o locație centrală",
+                "Actualizează routerul la un model mai nou",
+                "Închide aplicațiile care consumă multă lățime de bandă",
+                "Actualizează firmware-ul routerului regulat",
+                "Verifică dacă există interferențe de la alte aparate electronice"
+            ],
+            "tips_title": "Sfaturi Pro pentru Rezultate Reale",
+            "tips_list": [
+                "Testează la diferite ore pentru a vedea variațiile",
+                "Rulează teste de pe dispozitive diferite",
+                "Compară viteza Wi-Fi în camere diferite ale casei"
+            ],
+            "faq_title": "Întrebări Frecvente Viteză",
+            "metrics": {
+                "download": {
+                    "title": "Viteză Download",
+                    "desc": "Cât de repede călătoresc datele de pe internet către dispozitivul tău. Esențial pentru streaming și navigare."
+                },
+                "upload": {
+                    "title": "Viteză Upload",
+                    "desc": "Cât de repede trimiți date către internet. Important pentru apeluri video și încărcarea documentelor."
+                },
+                "ping": {
+                    "title": "Ping (Latență)",
+                    "desc": "Timpul de răspuns al conexiunii tale. Cu cât e mai mic, cu atât e mai bine. Crucial pentru gaming."
+                }
+            },
+            "factors": {
+                "congestion": {
+                    "title": "Congestie Rețea",
+                    "desc": "Orele de vârf pot încetini conexiunea când mai mulți utilizatori partajează banda."
+                },
+                "wifi": {
+                    "title": "Semnal Wi-Fi",
+                    "desc": "Distanța față de router și obstacolele cum sunt pereții afectează viteza wireless."
+                },
+                "device": {
+                    "title": "Performanță Dispozitiv",
+                    "desc": "Dispozitivele vechi pot avea plăci de rețea limitate care nu ating viteze mari."
+                },
+                "router": {
+                    "title": "Calitate Router",
+                    "desc": "Routerele depășite s-ar putea să nu suporte standardele moderne de viteză."
+                }
+            },
+            "faq": {
+                "q1": "Ce înseamnă o viteză bună de internet?",
+                "a1": "Pentru navigare: 25+ Mbps. Pentru streaming 4K și jocuri: 50+ Mbps. Pentru familii și utilizare intensă: 100+ Mbps.",
+                "q2": "De ce este viteza mea mai mică decât cea din contract?",
+                "a2": "Furnizorii promovează viteze 'până la'. Viteza reală depinde de infrastructură, congestie și calitatea routerului tău.",
+                "q3": "Care este diferența dintre Mbps și MBps?",
+                "a3": "Mbps (megabiți) se folosește pentru viteză, în timp ce MBps (megabaiți) pentru mărimea fișierelor. 1 MBps = 8 Mbps.",
+                "q4": "Cât de precis este acest test?",
+                "a4": "Testul nostru măsoară transferul real de date. Pentru precizie maximă, folosește un cablu Ethernet și închide alte programe.",
+                "q5": "Wi-Fi sau Ethernet?",
+                "a5": "Ethernet este întotdeauna mai rapid și mai stabil. Wi-Fi e comod, dar viteza scade cu distanța."
+            }
+        }
+    },
+    "ip-lookup": {
+        "meta": {
+            "title": "Instrumentul de căutare IP - Verificator online gratuit de geolocalizare IP",
+            "description": "Unealtă gratuită de căutare IP pentru a găsi informații detaliate despre orice adresă IP. Vizualizează locația, ISP-ul, hostname-ul și multe altele.",
+            "h1": "Instrumentul de căutare IP",
+            "subtitle": "Obține informații detaliate despre orice adresă IP, inclusiv locația și ISP-ul"
+        },
+        "form": {
+            "ip_label": "Adresă IP",
+            "ip_placeholder": "8.8.8.8",
+            "button": "Căutare Adresă IP"
+        },
+        "results": {
+            "title": "Detalii pentru IP-ul",
+            "ip_address": "Adresă IP",
+            "type": "Tip",
+            "hostname": "Hostname",
+            "isp": "Furnizor (ISP)",
+            "country": "Țară",
+            "region": "Regiune",
+            "city": "Oraș",
+            "timezone": "Fus Orar"
+        },
+        "content": {
+            "what_is_title": "Ce este Căutarea IP?",
+            "what_is_desc": "Căutarea IP este un instrument care oferă informații detaliate despre orice adresă IP. Acesta dezvăluie locația geografică, furnizorul de servicii internet (ISP), numele de gazdă (hostname) și alte detalii tehnice asociate. Aceste informații sunt prețioase pentru administratori de rețea, specialiști în securitate și oricine dorește să înțeleagă de unde provine traficul web.",
+            "why_use_title": "De ce să folosești Căutarea IP?",
+            "why_use_desc": "Instrumentele de căutare IP sunt esențiale pentru diverse scopuri, inclusiv analiza securității, prevenirea fraudei, localizarea conținutului și depanarea rețelei. Proprietarii de site-uri folosesc căutarea IP pentru a înțelege demografia vizitatorilor lor, în timp ce echipele de securitate o folosesc pentru a identifica potențiale amenințări.",
+            "features_title": "Caracteristici Cheie",
+            "feature1_title": "🌍 Date de Geolocație",
+            "feature1_desc": "Țară, regiune, oraș și coordonate aproximative",
+            "feature2_title": "🏢 Informații ISP",
+            "feature2_desc": "Detalii despre Furnizorul de Servicii Internet",
+            "feature3_title": "🔗 Rezoluție Hostname",
+            "feature3_desc": "Numele de domeniu asociat cu adresa IP",
+            "feature4_title": "⚡ Rezultate Instantanee",
+            "feature4_desc": "Căutare rapidă și precisă în baze de date globale"
+        },
+        "faq": {
+            "title": "Întrebări Frecvente IP Lookup",
+            "q1": "Cât de precisă este geolocația IP?",
+            "a1": "Geolocația IP este precisă la nivel de oraș în aproximativ 80-90% din cazuri, dar nu poate indica niciodată o adresă stradală exactă pentru utilizatorii casnici.",
+            "q2": "Pot afla cine este persoana care folosește IP-ul?",
+            "a2": "Nu. Instrumentele publice de lookup arată doar furnizorul de internet și locația generală, nu și identitatea personală a utilizatorului.",
+            "q3": "De ce IP-ul meu arată un oraș diferit?",
+            "a3": "Multe adrese IP sunt înregistrate la sediul central al ISP-ului sau în noduri de rețea regionale, care pot fi la mulți kilometri distanță de locul tău real.",
+            "q4": "Poate un VPN să ascundă locația mea?",
+            "a4": "Da. Când folosești un VPN, acest instrument va afișa adresa IP și locația serverului VPN, nu pe cea reală.",
+            "q5": "Cum îmi pot schimba adresa IP?",
+            "a5": "Poți încerca să repornești routerul sau să contactezi ISP-ul tău pentru o nouă alocare dinamică."
+        },
+        "js": {
+            "looking_up": "Se caută informațiile IP...",
+            "success": "Informații IP recuperate",
+            "error": "Eroare la căutarea adresei IP"
+        }
+    },
+    "ping-test": {
+        "meta": {
+            "title": "Instrumentul de testare Ping Online - Verificator gratuit de latență a rețelei",
+            "description": "Unealtă gratuită de testare ping pentru a verifica latența rețelei, pierderea de pachete și accesibilitatea serverului.",
+            "h1": "Instrument de testare Ping",
+            "subtitle": "Măsoară timpul de răspuns al serverului și stabilitatea conexiunii"
+        },
+        "form": {
+            "host_label": "Gazdă sau Adresă IP",
+            "host_placeholder": "google.com sau 8.8.8.8",
+            "button": "Ping Gazdă"
+        },
+        "results": {
+            "title": "Rezultate Ping pentru"
+        },
+        "content": {
+            "what_is_title": "Ce este un Test Ping?",
+            "what_is_desc": "Ping este un instrument de diagnosticare a rețelei care testează dacă o gazdă (host) este accesibilă pe o rețea IP. Acesta măsoară timpul dus-întors (round-trip time) pentru mesajele trimise de la sursă la destinație și înapoi. Funcționează prin trimiterea unor pachete ICMP Echo Request și așteptarea unui răspuns Echo Reply.",
+            "why_use_title": "De ce să folosești Testul Ping?",
+            "why_use_desc": "Testul ping este esențial pentru monitorizarea performanței. Administratorii îl folosesc pentru a verifica dacă un server este online, pentru a detecta pierderile de pachete care indică congestie sau probleme hardware și pentru a măsura latența. Jucătorii online folosesc ping-ul pentru a verifica întârzierea față de servere înainte de a se conecta.",
+            "metrics_title": "Înțelegerea Metricilor Ping",
+            "metric1": "<strong>Pachete Trimise/Primite:</strong> Numărul de cereri și răspunsuri reușite",
+            "metric2": "<strong>Pierdere Pachete:</strong> Procentul de pachete care nu au primit răspuns",
+            "metric3": "<strong>Timp Minim:</strong> Cea mai rapidă reacție înregistrată",
+            "metric4": "<strong>Timp Mediu:</strong> Latența medie pe durata testului",
+            "metric5": "<strong>Timp Maxim:</strong> Cel mai lent răspuns înregistrat",
+            "metric6": "<strong>TTL (Time To Live):</strong> Numărul de noduri prin care a trecut pachetul",
+            "interpreting_title": "Interpretarea Rezultatelor",
+            "interpreting_desc": "Un ping bun este sub 50ms pentru conexiuni locale și sub 100ms pentru cele internaționale. Valorile între 100-200ms sunt acceptabile pentru majoritatea aplicațiilor, dar pot cauza 'lag' în jocuri sau conferințe video. Peste 200ms indică probleme de rețea. Pierderea de pachete peste 1% sugerează defecțiuni care trebuie investigate."
+        },
+        "faq": {
+            "title": "Întrebări Frecvente Ping",
+            "q1": "De ce am ping-ul mare în jocuri?",
+            "a1": "Ping-ul mare poate fi cauzat de distanța față de server, congestia rețelei tale, descărcări active în fundal sau probleme la furnizorul tău de internet.",
+            "q2": "Ce înseamnă pierderea de pachete (packet loss)?",
+            "a2": "Înseamnă că fragmente de date trimise nu ajung la destinație, ceea ce duce la întreruperi audio/video sau deconectări.",
+            "q3": "Ping-ul depinde de viteza de internet?",
+            "a3": "Nu direct. Poți avea viteză mare de download dar latență (ping) mare dacă traseul datelor este ineficient.",
+            "q4": "De ce unele servere nu răspund la ping?",
+            "a4": "Din motive de securitate, multe servere și firewall-uri sunt configurate să ignore pachetele ICMP (ping) pentru a preveni atacurile.",
+            "q5": "Care este diferența dintre ping și latență?",
+            "a5": "Ping-ul este instrumentul sau acțiunea de a măsura, în timp ce latența este timpul efectiv măsurat în milisecunde."
+        },
+        "js": {
+            "pinging": "Se trimit pachete ping...",
+            "success": "Test completat cu succes",
+            "error": "Gazda nu a răspuns sau adresa este invalidă",
+            "ping_host": "Ping Gazdă"
+        }
+    },
+    "port-checker": {
+        "meta": {
+            "title": "Port Checker Tool - Scaner de porturi deschise online gratuit",
+            "description": "Verifică dacă porturile TCP/UDP sunt deschise, închise sau filtrate. Instrument esențial pentru securitatea rețelei și configurări server.",
+            "h1": "Instrumentul de verificare a portului",
+            "subtitle": "Verifică accesibilitatea porturilor pe orice server instantaneu"
+        },
+        "form": {
+            "host_label": "Gazdă sau Adresă IP",
+            "host_placeholder": "exemplu.ro sau 8.8.8.8",
+            "port_label": "Număr Port",
+            "port_placeholder": "80",
+            "button": "Verifică Port"
+        },
+        "results": {
+            "title": "Status Port pentru"
+        },
+        "content": {
+            "what_is_title": "Ce este un Port Checker?",
+            "what_is_desc": "Un Port Checker este un instrument de diagnosticare care determină dacă un port specific TCP sau UDP pe un server este deschis (acceptă conexiuni), închis (respinge conexiuni) sau filtrat (blocat de un firewall). Porturile sunt puncte finale virtuale, numerele de port (1-65535) fiind folosite pentru diferite servicii.",
+            "why_check_title": "De ce să verifici porturile?",
+            "why_check_desc": "Verificarea porturilor ajută administratorii să confirme că serviciile (web, mail, baze de date) sunt accesibile extern. Specialiștii în securitate scanează porturile pentru a identifica vulnerabilități, asigurându-se că doar porturile necesare sunt deschise.",
+            "common_ports_title": "Porturi Comune",
+            "port1": "<strong>Port 80:</strong> HTTP (trafic web necriptat)",
+            "port2": "<strong>Port 443:</strong> HTTPS (trafic web securizat)",
+            "port3": "<strong>Port 22:</strong> SSH (acces securizat la consolă)",
+            "port4": "<strong>Port 21:</strong> FTP (transfer de fișiere)",
+            "port5": "<strong>Port 25:</strong> SMTP (trimitere e-mail)",
+            "port6": "<strong>Port 3306:</strong> MySQL (bazat de date)",
+            "port7": "<strong>Port 3389:</strong> RDP (Desktop la distanță)",
+            "security_title": "Implicații de Securitate",
+            "security_desc": "Porturile deschise sunt porți de intrare pentru potențiali atacatori. Cea mai bună practică este să menții deschise doar porturile strict necesare. Folosește acest instrument pentru a audita periodic propria infrastructură."
+        },
+        "faq": {
+            "title": "Întrebări Frecvente Porturi",
+            "q1": "Ce înseamnă port deschis (Open)?",
+            "a1": "Înseamnă că o aplicație ascultă activ pe acel port și este gata să accepte conexiuni din exterior.",
+            "q2": "Ce înseamnă port filtrat (Filtered)?",
+            "a2": "Înseamnă că un firewall sau un router blochează accesul, iar instrumentul nu poate determina dacă portul este deschis sau închis.",
+            "q3": "Cum deschid un port?",
+            "a3": "Procesul se numește 'Port Forwarding' și se face din setările routerului sau ale firewall-ului de pe server.",
+            "q4": "Este periculos să am porturi deschise?",
+            "a4": "Depinde de serviciul care rulează pe acel port. Un port deschis pentru un serviciu neactualizat poate fi o breșă de securitate.",
+            "q5": "Pot scana orice IP?",
+            "a5": "Poți verifica orice IP, dar reține că scanarea porturilor pe sisteme pe care nu le deții poate fi interpretată ca o activitate ostilă."
+        },
+        "js": {
+            "checking": "Se verifică statusul portului...",
+            "success": "Verificare finalizată",
+            "error": "Nu s-a putut contacta gazda",
+            "check_port": "Verifică Port"
+        }
+    },
+    "reverse-dns-lookup": {
+        "meta": {
+            "title": "Căutare inversă DNS - Instrumentul online gratuit de IP la domeniu",
+            "description": "Unealtă gratuită de Reverse DNS Lookup pentru a găsi numele de domeniu asociat cu o adresă IP. Verifică înregistrările PTR rapid și precis.",
+            "h1": "Căutare inversă DNS",
+            "subtitle": "Identifică hostname-ul din spatele oricărei adrese IP prin interogări rDNS"
+        },
+        "form": {
+            "ip_label": "Adresă IP",
+            "ip_placeholder": "8.8.8.8",
+            "button": "Căutare DNS Inversă",
+            "button_loading": "Se caută..."
+        },
+        "results": {
+            "title": "Rezultat Reverse DNS pentru"
+        },
+        "content": {
+            "what_is_title": "Ce este Reverse DNS Lookup?",
+            "what_is_desc": "Reverse DNS Lookup (rDNS) este procesul de interogare a sistemului de nume de domeniu (DNS) pentru a determina numele de domeniu asociat cu o adresă IP. Spre deosebire de DNS-ul obișnuit care traduce un domeniu într-un IP, rDNS face invers.",
+            "why_use_title": "Importanța Reverse DNS",
+            "why_use_desc": "rDNS este crucial pentru securitate și filtrarea e-mailurilor. Multe servere de mail refuză mesaje de la IP-uri care nu au o înregistrare rDNS validă, considerându-le potențiale surse de spam.",
+            "ptr_records_title": "Înțelegerea Înregistrărilor PTR",
+            "ptr_record1": "<strong>Înregistrare PTR:</strong> Un 'Pointer Record' este tipul de înregistrare DNS folosit pentru căutarea inversă.",
+            "ptr_record2": "<strong>Mapare:</strong> Aceasta mapează adresa IP înapoi către un nume de gazdă (hostname).",
+            "ptr_record3": "<strong>Verificare:</strong> Crucială pentru livrabilitatea e-mailurilor și verificarea identității serverului.",
+            "ptr_record4": "<strong>IP-la-Gazdă:</strong> Esențial pentru identificarea adevăratului proprietar al unui IP.",
+            "ptr_record5": "<strong>Prevenire Spam:</strong> Mail serverele folosesc PTR pentru validarea expeditorului.",
+            "ptr_record6": "<strong>Log-uri Rețea:</strong> Ajută la transformarea IP-urilor din jurnale în nume lizibile.",
+            "use_cases_title": "Cazuri Comune de Utilizare",
+            "use_cases_desc": "Verificarea originii traficului web, diagnosticarea rutării în rețea, validarea configurației mail serverelor și audituri de securitate cibernetică."
+        },
+        "faq": {
+            "title": "Întrebări Frecvente rDNS",
+            "q1": "Ce este o înregistrare PTR?",
+            "a1": "O înregistrare PTR (Pointer) este un tip de înregistrare DNS care mapează o adresă IP la un nume de gazdă. Este componenta centrală a unei căutări DNS inverse.",
+            "q2": "De ce este important rDNS pentru e-mail?",
+            "a2": "Mulți furnizori de e-mail folosesc rDNS pentru a verifica legitimitatea serverului expeditor. Fără o înregistrare validă, e-mailurile pot fi marcate ca spam.",
+            "q3": "Poate orice IP să aibă o înregistrare rDNS?",
+            "a3": "Da, dar proprietarul IP-ului (de obicei furnizorul de hosting sau ISP-ul) trebuie să configureze înregistrarea PTR în setările lor DNS."
+        }
+    },
+    "traceroute": {
+        "meta": {
+            "title": "Traceroute Online - Instrument gratuit de analiză a rețelei",
+            "description": "Verifică traseul parcurs de pachete prin internet de la serverul nostru la orice IP sau domeniu. Analizează latența și nodurile de rețea.",
+            "h1": "Traceroute",
+            "subtitle": "Identifică locația problemelor de rețea prin vizualizarea fiecărui hop"
+        },
+        "form": {
+            "host_label": "Gazdă sau Adresă IP",
+            "host_placeholder": "google.com sau 8.8.8.8",
+            "button": "Execută Traceroute",
+            "button_loading": "Se urmărește..."
+        },
+        "results": {
+            "title": "Rezultate Traceroute pentru"
+        },
+        "content": {
+            "what_is_title": "Ce este Traceroute?",
+            "what_is_desc": "Traceroute este un instrument de diagnosticare a rețelei care afișează drumul parcurs de date și timpul necesar pentru ca acestea să ajungă la fiecare nod intermediar (router).",
+            "why_use_title": "De ce să folosești Traceroute?",
+            "why_use_desc": "Este esențial pentru depanarea conexiunii. Dacă un site este inaccesibil, Traceroute îți arată unde anume pe internet se 'pierd' datele tale.",
+            "hops_title": "Înțelegerea Hop-urilor",
+            "hop1": "<strong>Hop:</strong> Fiecare router prin care trece pachetul.",
+            "hop2": "<strong>TTL:</strong> Time-to-Live, mecanismul care face traceroute posibil.",
+            "hop3": "<strong>Latență:</strong> Timpul exprimat în ms pentru fiecare cercetare.",
+            "hop4": "<strong>Timeout:</strong> Noduri care nu răspund din motive de securitate.",
+            "hop5": "<strong>Backbone:</strong> Interconexiuni majore între rețele globale.",
+            "hop6": "<strong>Destinație:</strong> Ultimul punct al traseului datelor tale.",
+            "issues_title": "Probleme Comune Detectate",
+            "issues_desc": "Congestia rețelei la un anumit nod, bucle de rutare sau firewall-uri care blochează traficul ICMP."
+        },
+        "faq": {
+            "title": "Întrebări Frecvente Traceroute",
+            "q1": "De ce apar steluțe (*) în rezultate?",
+            "a1": "Steluțele indică faptul că routerul respectiv nu a răspuns la cerere, de obicei fiind configurat să ignore pachetele de tip ping/traceroute pentru securitate.",
+            "q2": "Câte hop-uri sunt normale?",
+            "a2": "Pentru conexiuni internaționale, între 10 și 20 de hop-uri sunt ceva obișnuit. Peste 30 pot indica probleme de rutare.",
+            "q3": "Este Traceroute sigur de folosit?",
+            "a3": "Da, este o metodă standard și sigură de diagnosticare a rețelei folosită de toți administratorii de sistem."
+        }
+    },
+    "user-agent-parser": {
+        "meta": {
+            "title": "User Agent Parser - Instrumentul de detaliu al browserului online gratuit",
+            "description": "Decodează orice șir User Agent pentru a identifica browser-ul, sistemul de operare și tipul de dispozitiv. Instrument gratuit pentru dezvoltatori.",
+            "h1": "Analizator agent utilizator",
+            "subtitle": "Află informații detaliate despre orice browser și dispozitiv"
+        },
+        "editor": {
+            "label_input": "Șir User Agent",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Analizează",
+            "btn_use_my_ua": "Foloseşte User Agent-ul meu",
+            "label_browser": "Browser",
+            "label_os": "Sistem de Operare",
+            "label_device": "Dispozitiv",
+            "label_raw": "Informații brute motor"
+        },
+        "content": {
+            "p1": "Instrumentul nostru gratuit de analiză User Agent decodează instantaneu șirurile UA pentru a identifica browser-ul, sistemul de operare, tipul de dispozitiv și versiunea motorului de randare. Util pentru dezvoltatori în depanarea problemelor specifice browserelor.",
+            "features_title": "Caracteristici",
+            "features": {
+                "instant": {
+                    "title": "Analiză Instantanee",
+                    "desc": "Decodează șirurile user agent în milisecunde."
+                },
+                "detailed": {
+                    "title": "Informații Detaliate",
+                    "desc": "Extrage Browser, OS, Dispozitiv și Motor."
+                },
+                "auto": {
+                    "title": "Auto-Detecție",
+                    "desc": "Un singur click pentru a analiza propriul tău user agent."
+                },
+                "free": {
+                    "title": "100% Gratuit",
+                    "desc": "Utilizări nelimitate, fără costuri ascunse."
+                }
+            },
+            "uses_title": "Cazuri Comune de Utilizare",
+            "uses": {
+                "debugging": {
+                    "title": "Depanare",
+                    "desc": "Identificarea versiunilor de browser pentru rezolvarea bug-urilor."
+                },
+                "analytics": {
+                    "title": "Analitice",
+                    "desc": "Înțelegerea dispozitivelor folosite de utilizatorii tăi."
+                },
+                "dev": {
+                    "title": "Dezvoltare",
+                    "desc": "Verificarea șirurilor UA în timpul procesului de testare."
+                },
+                "security": {
+                    "title": "Securitate",
+                    "desc": "Analizarea șirurilor UA suspecte din log-uri."
+                }
+            },
+            "how_to_title": "Cum se folosește",
+            "how_to": {
+                "step1": {
+                    "title": "Introdu Șirul",
+                    "desc": "Lipește un User Agent sau apasă pe \"Foloseşte User Agent-ul meu\"."
+                },
+                "step2": {
+                    "title": "Analizează",
+                    "desc": "Apasă pe butonul de analiză pentru a decoda șirul."
+                },
+                "step3": {
+                    "title": "Vezi Rezultatele",
+                    "desc": "Vezi detaliile structurate pentru Browser, OS și Dispozitiv."
+                }
+            },
+            "faq_title": "Întrebări Frecvente",
+            "faq": {
+                "q1": "Ce este un User Agent?",
+                "a1": "Un User Agent este un șir text trimis de browser către site-uri pentru a identifica browser-ul, versiunea, OS-ul și tipul de dispozitiv.",
+                "q2": "Este această analiză precisă?",
+                "a2": "Ar trebui să fie foarte precisă pentru majoritatea browserelor comune, deși aceste șiruri pot fi uneori modificate artificial.",
+                "q3": "Datele mele sunt private?",
+                "a3": "Da, analiza se face local în browserul tău. Nu stocăm datele tale despre user agent."
+            }
+        }
+    },
+    "what-is-my-ip": {
+        "meta": {
+            "title": "Care este adresa mea IP? - Verificator IP online gratuit",
+            "description": "Află-ți adresa IP publică instantaneu. Verifică IPv4/IPv6, furnizorul (ISP), locația și detaliile conexiunii. Instrument gratuit și rapid.",
+            "h1": "Care este adresa mea IP?",
+            "subtitle": "Descoperă instantaneu adresa ta IP publică și detalii despre conexiune"
+        },
+        "ui": {
+            "loading": "Se detectează adresa IP...",
+            "your_ip_title": "Adresa ta IP Publică",
+            "copy_button": "Copiază Adresa",
+            "timezone": "Fus Orar"
+        },
+        "results": {
+            "location": "Locație",
+            "isp": "Furnizor (ISP)",
+            "country": "Țară"
+        },
+        "content": {
+            "main_title": "Care este IP-ul meu - Instrument de Căutare IP",
+            "main_desc": "Află adresa ta IP publică instantaneu cu instrumentul nostru gratuit. Descoperă dacă ești pe IPv4 sau IPv6, locația ta geografică aproximativă, ISP-ul, fusul orar și alte detalii tehnice. Util pentru configurări de rețea, securitate, acces de la distanță și verificarea VPN-ului.",
+            "what_is_title": "Ce este o adresă IP?",
+            "what_is_desc": "O adresă IP (Internet Protocol) este un identificator numeric unic atribuit fiecărui dispozitiv conectat la o rețea de calculatoare. Este ca o adresă poștală digitală, permițând site-urilor și serviciilor să comunice cu tine și să îți identifice locația aproximativă.",
+            "ipv4_vs_ipv6_title": "Adrese IPv4 vs IPv6",
+            "ipv4_title": "Adresa IPv4",
+            "ipv4_format": "<strong>Format:</strong> 192.168.1.1 (patru numere între 0-255 separate prin puncte)",
+            "ipv4_total": "<strong>Total Adrese:</strong> ~4.3 miliarde",
+            "ipv4_desc": "Cel mai comun format la nivel mondial, dar numărul de adrese disponibile este aproape epuizat.",
+            "ipv6_title": "Adresa IPv6",
+            "ipv6_format": "<strong>Format:</strong> 2001:0db8:85a3::8a2e:0370:7334 (hexazecimal)",
+            "ipv6_total": "<strong>Total Adrese:</strong> Practic nelimitate (340 undecilioane)",
+            "ipv6_desc": "Formatul nou care permite conectarea unui număr infinit de dispozitive.",
+            "why_check_title": "De ce să-ți verifici IP-ul?",
+            "why_check_desc": "Cunoașterea adresei IP este utilă pentru depanare, verificarea conexiunilor VPN (pentru a vedea dacă locația ta este mascată) și pentru a înțelege ce informații văd site-urile despre tine.",
+            "public_vs_private_title": "Adrese IP Publice vs Private",
+            "public_ip_title": "🌐 Adresă IP Publică",
+            "public_ip_desc": "Adresa ta unică pe întreg internetul, vizibilă pentru toate site-urile.",
+            "public_ip_example": "<strong>Exemplu:</strong> 203.0.113.45",
+            "public_ip_note": "Distribuită de ISP-ul tău pentru comunicarea externă.",
+            "private_ip_title": "🏠 Adresă IP Privată",
+            "private_ip_desc": "Adresa dispozitivului tău în cadrul rețelei tale locale (acasă/birou).",
+            "private_ip_example": "<strong>Exemplu:</strong> 192.168.1.100",
+            "private_ip_note": "Invizibilă de pe internet, folosită doar pentru comunicarea internă.",
+            "security_title": "Securitatea și Confidențialitatea IP",
+            "security_desc1": "Adresa ta IP dezvăluie locația aproximativă (oraș/regiune) și ISP-ul. Deși nu expune identitatea ta personală direct, poate fi folosită pentru urmărire și analize demografice de către site-urile pe care le vizitezi.",
+            "security_desc2": "<strong>Protecție:</strong> Folosește un VPN pentru a-ți masca IP-ul real. VPN-ul trimite traficul prin serverele sale, afișând IP-ul lor în loc de al tău. Instrumentul nostru îți arată exact ce vede internetul despre tine.",
+            "dynamic_vs_static_title": "Adrese IP Dinamice vs Statice",
+            "dynamic_ip": "<strong>IP Dinamic:</strong> Se schimbă periodic (zilnic sau la repornirea routerului). Este standardul pentru majoritatea utilizatorilor casnici.",
+            "static_ip": "<strong>IP Static:</strong> Rămâne constant. Este necesar pentru servere, hosting de site-uri sau acces la distanță securizat.",
+            "privacy_tips_title": "Sfaturi pentru Confidențialitate",
+            "privacy_tip1": "• Nu distribui adresa IP public pe forumuri sau rețele sociale",
+            "privacy_tip2": "• Folosește un VPN pe rețele WiFi publice",
+            "privacy_tip3": "• Activează firewall-ul routerului pentru a bloca accesul neautorizat",
+            "privacy_tip4": "• Verifică periodic IP-ul pentru a depista eventuale deconectări ale VPN-ului",
+            "privacy_tip5": "• Fii conștient că site-urile loghează IP-ul tău din motive de securitate"
+        },
+        "faq": {
+            "title": "Întrebări Frecvente Adresă IP",
+            "q1": "IP-ul meu arată locația mea exactă?",
+            "a1": "Nu, adresa IP arată de obicei locația furnizorului tău de internet sau un nod de rețea regional, oferind doar o estimare la nivel de oraș.",
+            "q2": "De ce IP-ul meu se schimbă la fiecare repornire?",
+            "a2": "Majoritatea utilizatorilor casnici au un IP dinamic oferit de ISP pentru a gestiona mai eficient stocul limitat de adrese IPv4.",
+            "q3": "Un VPN chiar îmi ascunde IP-ul?",
+            "a3": "Da. Un VPN bun înlocuiește IP-ul tău real cu cel al serverului VPN, astfel încât site-urile să vadă doar locația serverului respectiv."
+        }
+    },
+    "what-is-my-isp": {
+        "meta": {
+            "title": "Ce este ISP-ul meu? - Verificator de furnizori online gratuit",
+            "description": "Află cine este furnizorul tău de servicii internet (ISP) instantaneu. Verifică numele organizației, ASN și detaliile rețelei gratuit.",
+            "h1": "Ce este ISP-ul meu?",
+            "subtitle": "Identifică-ți furnizorul de internet și detaliile conexiunii"
+        },
+        "content": {
+            "loading": "Se încarcă informațiile ISP...",
+            "your_isp_title": "Furnizorul tău de Internet",
+            "network_label": "Rețea",
+            "location_label": "Locație",
+            "main_title": "Care este ISP-ul meu - Instrument de Căutare Furnizor",
+            "main_desc": "Identifică instantaneu furnizorul tău de servicii internet (ISP), organizația, detaliile de rețea și informațiile de conexiune. Instrumentul nostru gratuit dezvăluie numele ISP, numărul ASN, adresa IP și infrastructura de rețea. Perfect pentru verificarea VPN-ului și depanarea rețelei.",
+            "info_title": "Ce informații poți găsi?",
+            "info1": "<strong>Nume ISP:</strong> Compania care îți oferă conexiunea la internet",
+            "info2": "<strong>Organizație:</strong> Entitatea care gestionează conexiunea ta de rețea",
+            "info3": "<strong>ASN:</strong> Identificator unic de rețea pentru rutare și peering",
+            "info4": "<strong>Locație:</strong> Orașul, regiunea și țara asociate cu conexiunea ta",
+            "info5": "<strong>Detalii Rețea:</strong> Gamă de IP-uri și infrastructura de date a rețelei",
+            "why_use_title": "De ce să folosești acest instrument?",
+            "why_use1": "Verfică dacă ești conectat prin furnizorul corect",
+            "why_use2": "Depanează problemele de performanță ale rețelei",
+            "why_use3": "Verifică dacă VPN-ul sau proxy-ul tău funcționează corect",
+            "why_use4": "Identifică rețeaua pentru scopuri de securitate",
+            "why_use5": "Verifică specificațiile infrastructurii ISP-ului",
+            "why_use6": "Cercetează rutele de rețea și relațiile de peering",
+            "why_use7": "Confirmă conexiunea pentru linii de afaceri dedicate",
+            "why_use8": "Detectează accesul neautorizat la rețea",
+            "asn_title": "Înțelegerea ASN (Autonomous System Number)",
+            "asn_desc": "Un ASN este un identificator unic la nivel global pentru o rețea sau un grup de rețele sub un singur control administrativ. ISPs și marile organizații au propriul ASN, folosit în rutarea BGP pentru a determina fluxul de trafic între rețele.",
+            "use_cases_title": "Cazuri de Utilizare",
+            "use_case1_title": "🔧 Depanare Rețea",
+            "use_case1_desc": "Identifică problemele de rutare și diagnostichează conexiunea",
+            "use_case2_title": "🔒 Verificare VPN",
+            "use_case2_desc": "Confirmă că ISP-ul se schimbă atunci când ești conectat la VPN",
+            "use_case3_title": "🛡️ Audituri de Securitate",
+            "use_case3_desc": "Verifică autenticitatea conexiunii și detectează intrușii",
+            "use_case4_title": "💼 Verificare Business",
+            "use_case4_desc": "Confirmă calitatea liniilor de internet enterprise",
+            "isp_types_title": "Tipuri de ISP",
+            "isp_type1": "<strong>DSL ISPs:</strong> Internet prin linii telefonice (ADSL, VDSL)",
+            "isp_type2": "<strong>Cable ISPs:</strong> Internet prin infrastructură de cablu coaxial",
+            "isp_type3": "<strong>Fiber Optic ISPs:</strong> Conexiuni ultra-rapide prin fibră optică",
+            "isp_type4": "<strong>Wireless/Mobile ISPs:</strong> Conexiuni 4G/5G sau prin radio",
+            "isp_type5": "<strong>Satellite ISPs:</strong> Internet prin satelit pentru zone izolate",
+            "isp_type6": "<strong>Business ISPs:</strong> Linii dedicate cu garanții de disponibilitate (SLA)",
+            "privacy_note_title": "Notă de Confidențialitate",
+            "privacy_note_desc": "ISP-ul tău poate vedea în mare parte traficul tău necriptat. Folosește un VPN pentru a cripta datele și a preveni monitorizarea din partea furnizorului. Instrumentul nostru arată doar datele publice vizibile oricărui site vizitat."
+        },
+        "results": {
+            "ip_address": "Adresă IP",
+            "asn": "ASN"
+        },
+        "faq": {
+            "title": "Întrebări Frecvente ISP",
+            "q1": "De ce ISP-ul meu este diferit de numele companiei la care plătesc?",
+            "a1": "Uneori companiile mici închiriază infrastructura de la furnizori mari, astfel încât organizația detectată poate fi operatorul principal de rețea.",
+            "q2": "Ce este un ASN?",
+            "a2": "ASN-ul este un număr care identifică rețeaua ta la nivel global. Este esențial pentru funcționarea rutării pe întregul internet.",
+            "q3": "Poate ISP-ul să știe unde locuiesc?",
+            "a3": "Da, ISP-ul tău are adresa ta instalată fizic, dar instrumentele online văd doar locația generală a nodului de rețea."
+        },
+        "js": {
+            "error_loading": "Eroare la încărcarea informațiilor ISP"
+        }
+    },
+    "whois-lookup": {
+        "meta": {
+            "title": "Instrument de căutare WHOIS - Verificator online gratuit de informații despre domeniul",
+            "description": "Unealtă gratuită WHOIS pentru a verifica detaliile de înregistrare ale unui domeniu. Vezi registratorul, data expirării și statusul domeniului.",
+            "h1": "Instrumentul de căutare WHOIS",
+            "subtitle": "Interoghează baza de date WHOIS pentru detalii despre proprietatea domeniului"
+        },
+        "form": {
+            "domain_label": "Nume Domeniu",
+            "domain_placeholder": "exemplu.ro",
+            "button": "Căutare WHOIS",
+            "button_loading": "Se caută..."
+        },
+        "content": {
+            "form_hint": "Introdu domeniul fără http:// sau https://",
+            "what_is_title": "Ce este WHOIS Lookup?",
+            "what_is_desc": "WHOIS este un protocol care oferă informații despre înregistrările numelor de domeniu. Acesta dezvăluie detalii despre cine deține un domeniu, când a fost înregistrat, când expiră și pe ce servere DNS rulează.",
+            "why_use_title": "De ce să folosești WHOIS?",
+            "why_use_desc": "Este esențial pentru verificarea proprietății, verificarea disponibilității unui domeniu, investigarea site-urilor suspecte sau monitorizarea datelor de expirare ale propriilor domenii.",
+            "key_info_title": "Informații Cheie Oferite",
+            "key_info1": "<strong>Proprietar:</strong> Detaliile de contact ale deținătorului (pot fi ascunse prin protecția confidențialității)",
+            "key_info2": "<strong>Date Înregistrare:</strong> Când a fost creat domeniul și când a fost actualizat ultima dată",
+            "key_info3": "<strong>Data Expirării:</strong> Data la care înregistrarea domeniului încetează",
+            "key_info4": "<strong>Registrator:</strong> Compania care gestionează înregistrarea domeniului",
+            "key_info5": "<strong>Servere Nume (NS):</strong> Serverele DNS care găzduiesc configurația domeniului",
+            "key_info6": "<strong>Status Domeniu:</strong> Codurile de status și blocajele aplicate domeniului",
+            "how_to_title": "Cum se folosește",
+            "how_to1": "Introdu numele domeniului pe care vrei să-l verifici",
+            "how_to2": "Apasă butonul \"Căutare WHOIS\"",
+            "how_to3": "Analizează informațiile detaliate de înregistrare",
+            "how_to4": "Folosește datele pentru cercetările sau verificările tale",
+            "privacy_title": "Confidențialitatea și WHOIS",
+            "privacy_desc": "Mulți registratori oferă acum servicii de protecție a confidențialității WHOIS care maschează datele personale. De asemenea, reglementările GDPR au dus la redactarea multor informații personale pentru domeniile europene, lăsând vizibile doar datele tehnice esențiale."
+        },
+        "results": {
+            "title": "Rezultate WHOIS pentru"
+        },
+        "faq": {
+            "title": "Întrebări Frecvente WHOIS",
+            "q1": "De ce nu pot vedea numele proprietarului?",
+            "a1": "Cel mai probabil, proprietarul folosește un serviciu de 'WHOIS Privacy' sau datele sunt ascunse conform reglementărilor GDPR.",
+            "q2": "Cât de des se actualizează datele WHOIS?",
+            "a2": "De obicei, datele sunt actualizate în timp real sau cu o întârziere de câteva ore după o modificare la registrator.",
+            "q3": "Pot cumpăra un domeniu dacă îi aflu detaliile prin WHOIS?",
+            "a3": "Dacă domeniul este marcat ca 'Registered', nu-l poți cumpăra direct, dar poți contacta proprietarul dacă datele sunt publice pentru a-i face o ofertă.",
+            "q4": "Ce înseamnă statusul 'clientTransferProhibited'?",
+            "a4": "Este un blocaj de securitate aplicat de registrator pentru a preveni transferul neautorizat al domeniului către altă companie."
+        }
+    }
+}

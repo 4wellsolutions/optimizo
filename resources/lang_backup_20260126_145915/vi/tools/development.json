@@ -1,0 +1,2582 @@
+{
+    "base64-encoder-decoder": {
+        "meta": {
+            "title": "Bộ mã hóa & giải mã Base64 - Công cụ dành cho nhà phát triển trực tuyến miễn phí",
+            "description": "Mã hó và giải mã dữ liệu Bse64 ngy lập tức với công cụ trực tuyến miễn phí củ chúng tôi",
+            "h1": "Bộ mã hóa và giải mã Base64",
+            "subtitle": "Mã hó và giải mã dữ liệu Bse64 ngy lập tức"
+        },
+        "editor": {
+            "tab_encode": "Mã hó sng Bse64",
+            "tab_decode": "Giải mã từ Bse64",
+            "label_encode": "Nhập Văn Bản Cần Mã Hó",
+            "ph_encode": "Nhập văn bản củ bạn tại đây..",
+            "desc_encode": "Nhập văn bản bất kỳ để chuyển đổi sng định dạng Bse64",
+            "btn_encode": "Mã hó sng Bse64",
+            "label_decode": "Nhập Bse64 Cần Giải Mã",
+            "ph_decode": "Nhập chuỗi đã mã hó Bse64..",
+            "desc_decode": "Nhập văn bản đã mã hó Bse64 để giải mã lại thành văn bản thuần túy",
+            "btn_decode": "Giải mã từ Bse64",
+            "result_title": "Kết quả",
+            "btn_copy": "So Chép Kết Quả"
+        },
+        "content": {
+            "what_title": "Mã Hó Bse64 Là Gì?",
+            "what_desc": "Bse64 là một sơ đồ mã hó binry--text biểu diễn dữ liệu nhị phân dưới dạng chuỗi SCII. Nó thường được sử dụng để mã hó dữ liệu cần được lưu trữ hoặc truyền qu các phương tiện được thiết kế để xử lý văn bản. Công cụ mã hó và giải mã Bse64 miễn phí củ chúng tôi cho phép các nhà phát triển, nhà phân tích dữ liệu và chuyên gi IT nhnh chóng chuyển đổi văn bản sng Bse64 hoặc giải mã chuỗi Bse64 trở lại văn bản có thể đọc được. Hoàn hảo cho phát triển PI, truyền dữ liệu, tệp đính kèm emil, nhúng hình ảnh vào HTML/CSS và xử lý dữ liệu nhị phân trong JSON.",
+            "features": {
+                "secure": {
+                    "title": "Mã Hó n àn",
+                    "desc": "Tất cả quá trình xử lý diễn r trong trình duyệt củ bạn - dữ liệu củ bạn không bo giờ rời khỏi máy tính"
+                },
+                "instant": {
+                    "title": "Chuyển Đổi Tức Thì",
+                    "desc": "Mã hó hoặc giải mã dữ liệu Bse64 trong vài mili giây với quá trình xử lý phí máy khách"
+                },
+                "easy": {
+                    "title": "Dễ Sử Dụng",
+                    "desc": "Gio diện tb đơn giản để mã hó và giải mã với tính năng so chép bằng một cú nhấp chuột"
+                }
+            },
+            "how_to": {
+                "title": "Cách Sử Dụng Bộ Mã Hó/Giải Mã Bse64",
+                "encode": {
+                    "title": "Mã Hó Văn Bản",
+                    "step1": "Nhấp vào tb \"Mã hó sng Bse64\"",
+                    "step2": "Dán hoặc nhập văn bản củ bạn vào vùng nhập liệu",
+                    "step3": "Nhấp vào nút \"Mã hó sng Bse64\"",
+                    "step4": "So chép kết quả đã mã hó Bse64"
+                },
+                "decode": {
+                    "title": "Giải Mã Bse64",
+                    "step1": "Nhấp vào tb \"Giải mã từ Bse64\"",
+                    "step2": "Dán chuỗi Bse64 củ bạn vào vùng nhập liệu",
+                    "step3": "Nhấp vào nút \"Giải mã từ Bse64\"",
+                    "step4": "So chép kết quả văn bản thuần túy đã giải mã"
+                }
+            },
+            "uses": {
+                "title": "Các Trường Hợp Sử Dụng Bse64 Phổ Biến",
+                "api": {
+                    "title": "Xác Thực PI",
+                    "desc": "Mã hó thông tin đăng nhập cho Xác thực cơ bản (Bsic untiction) trong các tiêu đề HTTP và yêu cầu PI."
+                },
+                "data_uri": {
+                    "title": "dữ liệu URI",
+                    "desc": "Nhúng hình ảnh, phông chữ và tệp trực tiếp vào HTML, CSS hoặc JSON bằng cách sử dụng dữ liệu URI Bse64."
+                },
+                "email": {
+                    "title": "Tệp Đính Kèm Emil",
+                    "desc": "Mã hó các tệp đính kèm nhị phân trong thông điệp emil MIME để truyền tải n àn."
+                },
+                "storage": {
+                    "title": "Lưu Trữ Dữ Liệu",
+                    "desc": "Lưu trữ dữ liệu nhị phân ở các định dạng văn bản như JSON, XML hoặc cơ sở dữ liệu."
+                }
+            },
+            "bottom": {
+                "h1": "Công Cụ Mã Hó & Giải Mã Bse64",
+                "subtitle": "Mã hó và giải mã dữ liệu Bse64 ngy lập tức",
+                "desc": "Bse64 là một sơ đồ mã hó binry--text chuyển đổi dữ liệu nhị phân sng định dạng văn bản SCII. Công cụ Mã hó & Giải Mã Bse64 miễn phí củ chúng tôi giúp các nhà phát triển, quản trị viên hệ thống và chuyên gi IT mã hó văn bản sng Bse64 hoặc giải mã Bse64 trở lại văn bản có thể đọc được ngy lập tức. Hoàn hảo cho xác thực PI, dữ liệu URI, tệp đính kèm emil và truyền dữ liệu n àn. Tất cả quá trình xử lý diễn r trong trình duyệt củ bạn để đảm bảo quyền riêng tư hoàn àn.",
+                "works_title": "🔄 Bse64 Hoạt Động Như Thế Nào",
+                "works_encoding": "Chuyển đổi dữ liệu nhị phân thành văn bản SCII bằng 64 ký tự",
+                "works_encoding_sub": "-Z, -z, 0-9, +, / (và = để đệm)",
+                "works_decoding": "Chuyển đổi văn bản Bse64 trở lại dữ liệu nhị phân bn đầu",
+                "works_decoding_sub": "Đảo ngược quá trình mã hó một cách hoàn hảo",
+                "cases_title": "✅ Các Trường Hợp Sử Dụng Phổ Biến",
+                "case_api": "Xác Thực PI",
+                "case_api_desc": "Mã hó thông tin đăng nhập cho Bsic uth trong các tiêu đề HTTP",
+                "case_uri": "dữ liệu URI",
+                "case_uri_desc": "Nhúng hình ảnh và tệp trực tiếp vào HTML/CSS",
+                "case_email": "Tệp Đính Kèm Emil",
+                "case_email_desc": "Mã hó các tệp nhị phân để truyền qu emil",
+                "case_url": "Thm Số URL",
+                "case_url_desc": "Truyền dữ liệu nhị phân một cách n àn trong các URL",
+                "case_storage": "Lưu Trữ Dữ Liệu",
+                "case_storage_desc": "Lưu trữ dữ liệu nhị phân trong các cơ sở dữ liệu chỉ chứ văn bản",
+                "case_web": "Phát Triển Web",
+                "case_web_desc": "Mã hó JSON, XML và các tệp cấu hình",
+                "best_practices_title": "💡 Các Thực Hành Tốt Nhất Cho Bse64",
+                "best_practices_list": [
+                    "Bse64 tăng kích thước dữ liệu lên khoảng 33%",
+                    "Không phù hợp để mã hó bảo mật - hãy sử dụng các thuật án mã hó thích hợp",
+                    "Hoàn hảo để mã hó dữ liệu nhị phân trong các hệ thống chỉ chứ văn bản",
+                    "Luôn xác thực dữ liệu đã giải mã trước khi sử dụng",
+                    "Sử dụng Bse64 n àn cho URL (thy thế +/= bằng -_)"
+                ]
+            },
+            "faq": {
+                "title": "❓ Các Câu Hỏi Thường Gặp",
+                "q1": "Mã hó Bse64 có n àn không?",
+                "a1": "Không! Bse64 KHÔNG phải là mã hó bảo mật - nó chỉ đơn giản là mã hó để biểu diễn dữ liệu. Bất kỳ i cũng có thể giải mã dữ liệu Bse64 ngy lập tức. Đừng bo giờ sử dụng một bạn Bse64 vì mục đích bảo mật. Để mã hó, hãy sử dụng các thuật án mật mã thực thụ như ES, RS hoặc TLS/SSL.",
+                "q2": "Tại so Bse64 lại làm tăng kích thước tệp?",
+                "a2": "Mã hó Bse64 làm tăng kích thước dữ liệu lên khoảng 33% vì nó biểu diễn 3 byte dữ liệu nhị phân bằng 4 ký tự SCII. Phần dư thừ này là sự đánh đổi để giúp dữ liệu nhị phân n àn cho các hệ thống chỉ chứ văn bản.",
+                "q3": "Bse64 được dùng để làm gì?",
+                "a3": "Bse64 được sử dụng để mã hó dữ liệu nhị phân (hình ảnh, tệp, thông tin đăng nhập) thành văn bản SCII để truyền qu các hệ thống chỉ chứ văn bản như emil, URL, JSON, XML và các tiêu đề HTTP. Nó rất thiết yếu cho xác thực PI, dữ liệu URI và tệp đính kèm emil.",
+                "q4": "Dữ liệu củ tôi có được gửi đến máy chủ không?",
+                "a4": "Không! Tất cả quá trình mã hó và giải mã Bse64 diễn r hoàn àn trong trình duyệt củ bạn bằng JvScript. Dữ liệu củ bạn không bo giờ rời khỏi thiết bị và không được lưu trữ, truyền tải hoặc ghi lại ở bất cứ đâu. Sự riêng tư củ bạn được bảo vệ hoàn àn.",
+                "q5": "Tôi có thể mã hó hình ảnh sng Bse64 không?",
+                "a5": "Có! Mặc dù công cụ củ chúng tôi mã hó văn bản, bạn có thể mã hó hình ảnh bằng các công cụ chuyên dụng. Hình ảnh đã mã hó Bse64 có thể được nhúng trực tiếp vào HTML/CSS bằng cách sử dụng dữ liệu URI (dữ liệu:hình ảnh/png;bse64,..). Điều này hữu ích để các hình ảnh nhỏ nhưng sẽ làm tăng kích thước trng."
+            }
+        },
+        "js": {
+            "error_empty_encode": "Vui lòng nhập văn bản để mã hó",
+            "error_encoding": "Lỗi khi mã hó văn bản:",
+            "error_empty_decode": "Vui lòng nhập chuỗi Bse64 để giải mã",
+            "error_invalid": "Chuỗi Bse64 không hợp lệ. Vui lòng kiểm tr lại đầu vào.",
+            "copied": "Đã so chép!"
+        }
+    },
+    "code-formatter": {
+        "meta": {
+            "title": "Trình định dạng mã trực tuyến miễn phí - Làm sạch mã nguồn của bạn",
+            "description": "Làm đẹp và định dạng mã củ bạn ngy lập tức - hỗ trợ HTML, CSS, JvScript, JSON, XML, SQL, PHP",
+            "h1": "Trình định dạng mã",
+            "subtitle": "Làm đẹp và định dạng mã củ bạn ngy lập tức"
+        },
+        "editor": {
+            "label_language": "Ngôn ngữ",
+            "languages": {
+                "html": "HTML",
+                "css": "CSS",
+                "js": "JvScript",
+                "json": "JSON",
+                "xml": "XML",
+                "sql": "SQL",
+                "php": "PHP"
+            },
+            "label_indent": "Thụt lề",
+            "indents": {
+                "2": "2 Spces",
+                "4": "4 Spces",
+                "tab": "Tb"
+            },
+            "btn_format": "Định Dạng Mã",
+            "label_input": "Mã Đầu Vào",
+            "btn_clear": "Xó",
+            "ph_input": "// Dán mã củ bạn vào đây..",
+            "label_output": "Mã Đã Định Dạng",
+            "btn_copy": "So chép",
+            "ph_output": "// Mã đã định dạng sẽ xuất hiện ở đây.."
+        },
+        "content": {
+            "hero_title": "Bộ Định Dạng Mã Trực Tuyến Miễn Phí",
+            "p1": "Làm sạch các đoạn mã lộn xộn và cải thiện khả năng đọc với trình định dạng mã trực tuyến miễn phí củ chúng tôi. Cho dù bạn có đoạn mã đã bị thu nhỏ (minified) cần làm đẹp hy chỉ muốn chuẩn hó thụt lề, công cụ củ chúng tôi sẽ xử lý tất cả ngy lập tức trong trình duyệt củ bạn.",
+            "features": {
+                "multi": {
+                    "title": "hỗ trợ Đ Ngôn Ngữ",
+                    "desc": "hỗ trợ các ngôn ngữ lập trình chính bo gồm HTML, CSS, JS, JSON, và nhiều ngôn ngữ khác"
+                },
+                "indent": {
+                    "title": "Tùy Chỉnh Thụt Lề",
+                    "desc": "Chọn giữ 2 dấu cách, 4 dấu cách hoặc tb o phong cách ư thích củ bạn"
+                },
+                "instant": {
+                    "title": "Làm Đẹp Tức Thì",
+                    "desc": "Định dạng mã ngy lập tức mà không cần tải lại trng"
+                },
+                "privacy": {
+                    "title": "Tập Trung Vào Quyền Riêng Tư",
+                    "desc": "Quá trình xử lý mã diễn r trong trình duyệt củ bạn - không có dữ liệu nào được lưu trữ"
+                }
+            },
+            "langs_title": "💻 Ngôn Ngữ Được hỗ trợ",
+            "langs": {
+                "web": {
+                    "title": "Công Nghệ Web",
+                    "desc": "HTML5, CSS3, JvScript (ES6+)"
+                },
+                "dữ liệu": {
+                    "title": "Định Dạng Dữ Liệu",
+                    "desc": "JSON, XML"
+                },
+                "backend": {
+                    "title": "Bckend",
+                    "desc": "PHP, SQL"
+                },
+                "data": {
+                    "title": "Dt Fhoặcmts",
+                    "desc": "JSON, XML"
+                }
+            },
+            "why_title": "🤔 Tại So Nên Định Dạng Mã?",
+            "why": {
+                "read": {
+                    "title": "Khả năng đọc",
+                    "desc": "Mã được thụt lề đúng cách sẽ dễ đọc, dễ hiểu và dễ bảo trì hơn."
+                },
+                "debug": {
+                    "title": "Gỡ lỗi (Debugging)",
+                    "desc": "Tìm lỗi nhnh hơn trong các đoạn mã có cấu trúc tốt so với các chuỗi đã bị thu nhỏ."
+                },
+                "collab": {
+                    "title": "Cộng tác",
+                    "desc": "Phong cách mã hó tiêu chuẩn giúp các nhóm làm việc cùng nhu hiệu quả hơn."
+                }
+            },
+            "faq_title": "❓ Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Mã củ tôi có n àn không?",
+                "a1": "Có! Tất cả việc định dạng mã được thực hiện bằng JvScript trực tiếp trong trình duyệt củ bạn. Mã củ bạn không bo giờ được gửi đến máy chủ củ chúng tôi.",
+                "q2": "Tôi có thể định dạng mã đã bị thu nhỏ không?",
+                "a2": "Chắc chắn rồi! Trình làm đẹp củ chúng tôi hoàn hảo để giải nén (un-minify) mã nhằm làm cho nó có thể đọc lại được.",
+                "q3": "Nó có sử được lỗi cú pháp không?",
+                "a3": "Trình định dạng tập trung vào bố cục và thụt lề. Mặc dù nó có thể xử lý một số vấn đề cấu trúc cơ bản, nhưng nó không sử được các lỗi cú pháp.",
+                "q4": "Có giới hạn nào về kích thước mã không?",
+                "a4": "Vì quá trình xử lý được thực hiện trên thiết bị củ bạn, giới hạn phụ thuộc vào bộ nhớ trình duyệt củ bạn. Nó có thể dễ dàng xử lý các tệp có hàng nghìn dòng."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng dán một số mã để định dạng",
+            "success_format": "✓ Mã đã được định dạng thành công!",
+            "error_format": "Lỗi khi định dạng mã:",
+            "no_copy": "Không có mã để so chép",
+            "success_copy": "✓ Đã so chép vào khy nhớ tạm!"
+        }
+    },
+    "cron-job-generator": {
+        "meta": {
+            "title": "Cron Job Generator - Công cụ Crontab trực tuyến miễn phí",
+            "description": "Tạo lịch chạy cron dễ dàng với bộ tạo trực qun củ chúng tôi - không cần phải ghi nhớ cú pháp cron",
+            "h1": "Trình tạo công việc định kỳ",
+            "subtitle": "Tạo lịch chạy cron dễ dàng với bộ tạo trực qun củ chúng tôi"
+        },
+        "editor": {
+            "common_settings": "Cài Đặt Thường Gùng",
+            "choose": "-- Chọn --",
+            "options": {
+                "every_minute": "Mỗi phút (* * * * *)",
+                "every_5_minutes": "Mỗi 5 phút (*/5 * * * *)",
+                "every_15_minutes": "Mỗi 15 phút (*/15 * * * *)",
+                "every_30_minutes": "Mỗi 30 phút (*/30 * * * *)",
+                "every_hour": "Mỗi giờ (0 * * * *)",
+                "every_day_midnight": "Mỗi ngày vào lúc nử đêm (0 0 * * *)",
+                "every_week": "Mỗi tuần (0 0 * * 0)",
+                "every_month": "Mỗi tháng (0 0 1 * *)"
+            },
+            "minute": "Phút",
+            "every_minute": "Mỗi phút (*)",
+            "hour": "Giờ",
+            "every_hour": "Mỗi giờ (*)",
+            "day": "Ngày",
+            "every_day": "Mỗi ngày (*)",
+            "month": "Tháng",
+            "every_month": "Mỗi tháng (*)",
+            "weekday": "Ngày trong tuần",
+            "every_weekday": "Mỗi ngày trong tuần (*)",
+            "command": "Lệnh Cần Chạy",
+            "ph_command": "/usr/bin/php /pth//script.php",
+            "generated_cron": "Biểu Thức Cron Được Tạo",
+            "btn_copy": "So Chép Cron",
+            "btn_clear": "Đặt lại"
+        },
+        "content": {
+            "hero_title": "Bộ Tạo Cron Job",
+            "p1": "Thiết lập các cron job có thể gây nhầm lẫn với những dấu so và con số khó hiểu. Trình Tạo Cron Job trực tuyến miễn phí củ chúng tôi cho phép bạn xây dựng các lịch trình cron hoàn hảo một cách trực qun. Cho dù bạn cần chạy một tập lệnh mỗi 5 phút, vào lúc nử đêm, hy vào các ngày cụ thể trong tháng, công cụ củ chúng tôi sẽ tạo r cú pháp chính xác cho bạn ngy lập tức.",
+            "features": {
+                "visual": {
+                    "title": "Trình Chỉnh Sử Trực Qun",
+                    "desc": "Chọn phút, giờ, ngày và tháng bằng gio diện đơn giản"
+                },
+                "readable": {
+                    "title": "Dễ Đọc Cho Con Người",
+                    "desc": "Chuyển đổi biểu thức cron thành các mô tả bằng ngôn ngữ dễ hiểu"
+                }
+            },
+            "syntax_title": "📚 Hiểu Về Cú Pháp Cron",
+            "syntax_intro": "Một biểu thức cron bo gồm 5 trường cách nhu bởi dấu cách:",
+            "syntax_fields": {
+                "min": "Phút (0-59)",
+                "hour": "Giờ (0-23)",
+                "day": "Ngày trong tháng (1-31)",
+                "month": "Tháng (1-12)",
+                "week": "Ngày trong tuần (0-6, Chủ Nhật=0)"
+            },
+            "faq_title": "❓ Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Cron job là gì?",
+                "a1": "Cron job là bộ lập lịch công việc dự trên thời gin trong các hệ điều hành tương tự Unix. Người dùng có thể lập lịch các công việc (lệnh hoặc tập lệnh) để chạy định kỳ tại các thời điểm, ngày tháng hoặc khoảng thời gin cố định.",
+                "q2": "Làm thế nào để cài đặt một cron job?",
+                "a2": "Thông thường bạn sử dụng lệnh `crontb -e` trong cử sổ lệnh (terminl) để chỉnh sử tệp cron củ bạn. Su đó dán dòng dữ liệu đã được tạo vào cuối tệp.",
+                "q4": "Dấu so (*) có nghĩ là gì?",
+                "a4": "Dấu so có nghĩ là \"mọi\" hoặc \"mỗi\". Ví dụ, một dấu so trong trường phút có nghĩ là \"mỗi phút\"."
+            }
+        },
+        "js": {
+            "success_copy": "✓ Biểu thức cron đã được so chép vào khy nhớ tạm!",
+            "no_copy": "Không có biểu thức cron nào để so chép"
+        }
+    },
+    "css-minifier": {
+        "meta": {
+            "title": "Công cụ khai thác & làm đẹp CSS - Công cụ CSS trực tuyến miễn phí",
+            "description": "Tối ưu hó các tệp CSS để tải trng nhnh hơn - thu nhỏ và làm đẹp CSS ngy lập tức",
+            "h1": "Công cụ giảm thiểu & làm đẹp CSS",
+            "subtitle": "Tối ưu hó các tệp CSS để tải trng nhnh hơn"
+        },
+        "editor": {
+            "label_input": "CSS Đầu Vào",
+            "ph_input": "Dán mã CSS củ bạn vào đây..",
+            "btn_minify": "Thu Nhỏ CSS",
+            "btn_beautify": "Làm Đẹp CSS",
+            "btn_clear": "Xó",
+            "btn_copy": "So chép",
+            "label_output": "CSS Đầu R",
+            "ph_output": "CSS đã xử lý sẽ xuất hiện ở đây..",
+            "stats": {
+                "original": "Kích Thước Gốc",
+                "minified": "Kích Thước Su Thu Nhỏ",
+                "saved": "Tiết kiệm",
+                "compression": "Tỷ lệ nén"
+            }
+        },
+        "content": {
+            "hero_title": "Bộ Thu Nhỏ & Làm Đẹp CSS Miễn Phí",
+            "hero_subtitle": "Tối ưu hó các tệp CSS để tải trng nhnh hơn và hiệu suất tốt hơn",
+            "p1": "Trình Thu Nhỏ CSS miễn phí củ chúng tôi nén các tệp CSS bằng cách xó các khoảng trắng, nhận xét và các ký tự không cần thiết, giúp giảm đáng kể kích thước tệp và cải thiện thời gin tải trng web. Hoàn hảo cho các nhà phát triển web, nhà thiết kế và bất kỳ i muốn tối ưu hó hiệu suất trng web. Ngoài r còn bo gồm một trình làm đẹp CSS để định dạng và sắp xếp lại các bảng kiểu (stylesheets) củ bạn nhằm dễ đọc hơn. Miễn phí 100%, quá trình xử lý diễn r hoàn àn ở phí máy khách đảm bảo mã củ bạn luôn riêng tư.",
+            "what_title": "🎨 Thu Nhỏ CSS Là Gì?",
+            "what_desc": "Thu nhỏ CSS là quá trình loại bỏ các ký tự không cần thiết khỏi mã CSS mà không thy đổi chức năng củ nó. Điều này bo gồm các khoảng trắng, ngắt dòng, nhận xét và các đoạn mã thừ. Tệp CSS đã thu nhỏ sẽ nhẹ hơn, tải nhnh hơn và cải thiện hiệu suất trng web. Đây là một kỹ thuật tối ưu hó thiết yếu cho các trng web đng hoạt động.",
+            "features_title": "✨ Tính Năng",
+            "features": {
+                "minify": {
+                    "title": "Thu Nhỏ CSS",
+                    "desc": "Nén CSS bằng cách loại bỏ các khoảng trắng và nhận xét"
+                },
+                "beautify": {
+                    "title": "Làm Đẹp CSS",
+                    "desc": "Định dạng CSS với thụt lề và khoảng cách thích hợp"
+                },
+                "stats": {
+                    "title": "Thống Kê Nén",
+                    "desc": "Xem mức giảm kích thước tệp và tỷ lệ nén"
+                },
+                "instant": {
+                    "title": "Xử Lý Tức Thì",
+                    "desc": "Thu nhỏ hoặc làm đẹp CSS trong vài mili giây"
+                },
+                "privacy": {
+                    "title": "Quyền Riêng Tư Là Trên Hết",
+                    "desc": "Tất cả quá trình xử lý diễn r trong trình duyệt củ bạn"
+                },
+                "copy": {
+                    "title": "So Chép Bằng Một Cú Nhấp Chuột",
+                    "desc": "So chép CSS đã thu nhỏ vào khy nhớ tạm ngy lập tức"
+                }
+            },
+            "benefits_title": "🎯 Lợi Ích củ Việc Thu Nhỏ CSS",
+            "benefits": {
+                "speed": {
+                    "title": "⚡ Tải Trng Nhnh Hơn",
+                    "desc": "Tệp CSS nhỏ hơn giúp tải xuống nhnh hơn, cải thiện thời gin tải trng và trải nghiệm người dùng"
+                },
+                "bandwidth": {
+                    "title": "💰 Giảm Băng Thông",
+                    "desc": "Sử dụng ít băng thông hơn giúp tiết kiệm chi phí lưu trữ và dữ liệu di động cho người dùng"
+                },
+                "seo": {
+                    "title": "📈 SEO Tốt Hơn",
+                    "desc": "Các trng web nhnh hơn sẽ có thứ hạng tốt hơn trên công cụ tìm kiếm, cải thiện khả năng hiển thị"
+                },
+                "performance": {
+                    "title": "🎯 Hiệu Suất Được Cải Thiện",
+                    "desc": "CSS được tối ưu hó giúp giảm thời gin trình duyệt phân tích cú pháp và độ trễ hiển thị"
+                },
+                "mobile": {
+                    "title": "📱 Tối Ưu Hó Di Động",
+                    "desc": "Qun trọng đối với người dùng di động với băng thông hạn chế và kết nối chậm hơn"
+                },
+                "production": {
+                    "title": "🔧 Sẵn Sàng Cho Production",
+                    "desc": "Sử dụng CSS đã thu nhỏ là thực hành tiêu chuẩn cho việc triển khi trng web thực tế"
+                }
+            },
+            "how_title": "📚 Cách Sử Dụng",
+            "how_steps": {
+                "1": "<strong>Chọn Hành Động:</strong> Nhấp vào \"Thu Nhỏ CSS\" để nén hoặc \"Làm Đẹp CSS\" để định dạng",
+                "2": "<strong>Xem Kết Quả:</strong> Xem CSS đã xử lý trong trường đầu r cùng với các thông kê nén",
+                "3": "<strong>So Chép:</strong> Nhấp vào \"So chép\" để chép CSS đã thu nhỏ vào khy nhớ tạm củ bạn",
+                "4": "<strong>Sử Dụng Thực Tế:</strong> Thy thế tệp CSS gốc củ bạn bằng phiên bản đã thu nhỏ",
+                "5": "Tải xuống hoặc copy minified CSS và use it in your production website reduce tệp size và improve lod times."
+            },
+            "best_practices_title": "💡 Thực Hành Tốt Nhất",
+            "best_practices_list": {
+                "1": "<strong>Thu nhỏ cho production:</strong> Chỉ sử dụng CSS đã thu nhỏ trong các môi trường vận hành thực tế",
+                "2": "<strong>Gộp các tệp:</strong> Kết hợp nhiều tệp CSS trước khi thu nhỏ để đạt hiệu quả nén tốt hơn",
+                "3": "<strong>Kiểm tr kỹ lưỡng:</strong> Luôn kiểm tr CSS đã thu nhỏ để đảm bảo không có chức năng nào bị hỏng",
+                "4": "<strong>Sử dụng công cụ build:</strong> Tích hợp việc thu nhỏ vào quy trình CI/CD để tự động hó",
+                "5": "Giữ phiên bản không nén để phát triển và gỡ lỗi."
+            },
+            "faq_title": "❓ Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Việc thu nhỏ CSS giúp giảm kích thước tệp bo nhiêu?",
+                "a1": "Thông thường là từ 20-40%, tùy thuộc vào cấu trúc CSS củ bạn. Các tệp có nhiều nhận xét và khoảng trắng sẽ tiết kiệm được nhiều hơn. Khi kết hợp với nén gzip, bạn có thể đạt tổng mức giảm 70-80%.",
+                "q2": "Việc thu nhỏ có làm hỏng CSS củ tôi không?",
+                "a2": "Không! Thu nhỏ chỉ loại bỏ các ký tự không cần thiết trong khi vẫn giữ nguyên chức năng. Tuy nhiên, hãy luôn kiểm tr CSS su khi thu nhỏ để đảm bảo mọi thứ vẫn hoạt động như mong đợi.",
+                "q3": "Tôi có nên thu nhỏ CSS khi đng phát triển không?",
+                "a3": "Không nên. Hãy giữ CSS dễ đọc trong quá trình phát triển để dễ gỡ lỗi hơn. Chỉ thu nhỏ khi triển khi thực tế. Sử dụng CSS đã được làm đẹp trong quá trình phát triển và kiểm tr.",
+                "q4": "Tôi có thể đảo ngược quá trình thu nhỏ không?",
+                "a4": "Được chứ! Sử dụng tính năng \"Làm Đẹp CSS\" củ chúng tôi để định dạng lại CSS đã thu nhỏ thành định dạng dễ đọc. Tuy nhiên, các nhận xét (comments) sẽ bị xó vĩnh viễn trong quá trình thu nhỏ.",
+                "q5": "Dữ liệu CSS củ tôi có n àn không?",
+                "a5": "Chắc chắn rồi! Tất cả quá trình xử lý diễn r hoàn àn trong trình duyệt củ bạn. Mã CSS củ bạn không bo giờ rời khỏi thiết bị và không được gửi đến bất kỳ máy chủ nào."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập mã CSS để xử lý",
+            "success_minify": "✓ CSS đã được thu nhỏ thành công",
+            "success_beautify": "✓ CSS đã được làm đẹp thành công",
+            "error_process": "✗ Lỗi khi xử lý CSS:",
+            "no_copy": "Không có CSS để so chép",
+            "success_copy": "✓ CSS đã được so chép vào khy nhớ tạm"
+        }
+    },
+    "curl-command-builder": {
+        "meta": {
+            "title": "Trình tạo lệnh CURL miễn phí - Công cụ yêu cầu API trực tuyến",
+            "description": "Build CURL commvàs esily với our vlàul builder - crete HTTP requests vớiout memhoặcizing syntx",
+            "h1": "Trình tạo lệnh CURL",
+            "subtitle": "Build CURL commvàs esily với our vlàul builder"
+        },
+        "editor": {
+            "method_label": "Method",
+            "url_label": "URL",
+            "headers_tab": "Heders",
+            "body_tab": "Request Body",
+            "key_ph": "Key (e.g. uthhoặciztion)",
+            "value_ph": "Vlue (e.g. Berer ken)",
+            "add_header": "+ Thêm Heder",
+            "raw_data_label": "Rw dữ liệu (JSON/Text)",
+            "generated_label": "Generted Commvà",
+            "btn_copy": "So chép Commvà"
+        },
+        "js": {
+            "success_copy": "Commvà copied!"
+        }
+    },
+    "html-encoder-decoder": {
+        "meta": {
+            "title": "Bộ mã hóa & giải mã HTML - Công cụ thực thể trực tuyến miễn phí",
+            "description": "Encode và decode HTML entities prevent XSS ttcks với our miễn phí trực tuyến công cụ",
+            "h1": "Bộ mã hóa và giải mã HTML",
+            "subtitle": "Encode và decode HTML entities prevent XSS ttcks"
+        },
+        "editor": {
+            "mode_encode": "Encode HTML",
+            "mode_decode": "Decode HTML",
+            "label_input_encode": "Nhập HTML Encode",
+            "ph_input_encode": "<div>Hello & Welcome</div>",
+            "btn_encode": "Encode HTML",
+            "btn_clear": "Xó",
+            "btn_copy": "So chép",
+            "label_output_encode": "Encoded HTML",
+            "ph_output": "Processed HTML sẽ pper tại đây..",
+            "label_input_decode": "Nhập HTML Decode",
+            "label_output_decode": "Decoded HTML",
+            "btn_decode": "Decode HTML"
+        },
+        "content": {
+            "hero_title": "miễn phí HTML Encoder & Decoder",
+            "hero_subtitle": "Encode và decode HTML entities prevent XSS ttcks",
+            "p1": "Our miễn phí HTML Encoder & Decoder công cụ helps you encode specil chrcters in HTML fhoặc sfe dlàply on web pges, hoặc decode encoded HTML bck its hoặciginl fhoặcmt. Perfect fhoặc developers, security Chuyên nghiệps, và nyone whoặcking với rw HTML.",
+            "what_title": "ðŸ”— là gì HTML Encoding?",
+            "what_desc": "HTML encoding converts chrcters tht hve specil mening in HTML (like <, >, &, \") thành ir choặcresponding HTML entities (like &lt;, &gt;, &mp;, &quot;). Thlà prevents browser từ interpreting m s HTML tgs, which là crucil fhoặc preventing Cross-Site Scripting (XSS) ttcks.",
+            "features_title": "âœ¨ Fetures",
+            "features": {
+                "fast": {
+                    "title": "Chuyển Đổi Tức Thì",
+                    "desc": "Encode hoặc decode HTML in milllàeconds"
+                },
+                "bidirectional": {
+                    "title": "Hi Chiều",
+                    "desc": "Encode specil chrcters hoặc decode entities bck text"
+                },
+                "privacy": {
+                    "title": "Quyền Riêng Tư Là Trên Hết",
+                    "desc": "Tất cả quá trình xử lý diễn r trong trình duyệt củ bạn"
+                },
+                "copy": {
+                    "title": "So Chép Bằng Một Cú Nhấp Chuột",
+                    "desc": "So chép processed HTML clipbord instntly"
+                },
+                "free": {
+                    "title": "100% miễn phí",
+                    "desc": "No limits, no reglàtrtion required"
+                },
+                "safe": {
+                    "title": "Security Focused",
+                    "desc": "Helps prevent XSS vulnerbilities"
+                }
+            },
+            "uses_title": "ðŸŽ¯ Các trường hợp sử dụng phổ biến",
+            "uses": {
+                "security": {
+                    "title": "ðŸ”’ Security",
+                    "desc": "Snitize user đầu vào prevent XSS ttcks by encoding specil chrcters."
+                },
+                "display": {
+                    "title": "ðŸ’» Code Dlàply",
+                    "desc": "Dlàply rw HTML code on webpge vớiout it being rendered by browser."
+                },
+                "dữ liệu": {
+                    "title": "ðŸ“Š dữ liệu sthoặcge",
+                    "desc": "Sthoặce content sfely in dtbses vớiout whoặcrying bout HTML prsing làsues."
+                },
+                "email": {
+                    "title": "ðŸ“§ Emil Templtes",
+                    "desc": "Ensure specil chrcters render choặcrectly in HTML emils."
+                },
+                "data": {
+                    "title": "ðŸ“Š Dt Sthoặcge",
+                    "desc": "Sthoặce content sfely in dtbses vớiout whoặcrying bout HTML prsing làsues."
+                }
+            },
+            "how_title": "ðŸ“š Cách Sử dụng",
+            "how_steps": {
+                "1": "Dán your HTML hoặc text in đầu vào field",
+                "2": "Nhấp process butn convert",
+                "3": "So chép result clipbord",
+                "4": "So chép encoded/decoded result và use it in your HTML, XML, hoặc web pplictions."
+            },
+            "examples_title": "ðŸ’¡ HTML Encoding Ví dụs",
+            "examples": {
+                "1": {
+                    "title": "Quotes:",
+                    "code": "\"Hello\" â†’ &quot;Hello&quot;"
+                },
+                "2": {
+                    "title": "mpersvà:",
+                    "code": "m & Jerry â†’ m &mp; Jerry"
+                },
+                "3": {
+                    "title": "Mã hó ký tự đặc biệt",
+                    "code": "&lt;script&gt;lert(\"XSS\")&lt;/script&gt; → &mp;lt;script&mp;gt;lert(&mp;quot;XSS&mp;quot;)&mp;lt;/script&mp;gt;"
+                }
+            },
+            "faq_title": "â“ Frequently sked Questions",
+            "faq": {
+                "q1": "Tại so do I need encode HTML?",
+                "a1": "Encoding là essentil fhoặc security prevent browser từ executing mlicious scripts (XSS) và dlàply code snippets choặcrectly.",
+                "q2": "Which chrcters re encoded?",
+                "a2": "Essentil chrcters like <, >, &, \", và ' re lwys encoded. Extended SCII chrcters my lso be encoded.",
+                "q3": "là it reversible?",
+                "a3": "Có, decoding reverses process exctly, resthoặcing hoặciginl text."
+            }
+        },
+        "js": {
+            "error_empty": "Plese enter HTML process",
+            "success_encode": "âœ“ HTML encoded successfully",
+            "success_decode": "âœ“ HTML decoded successfully",
+            "error_process": "âœ— Errhoặc processing HTML:",
+            "error_no_copy": "Không có đầu r để so chép",
+            "success_copy": "✓ Đ đã so chép vào khy nhớ tạm"
+        }
+    },
+    "html-minifier": {
+        "meta": {
+            "title": "Công cụ tối ưu hóa & làm đẹp HTML - Công cụ trực tuyến miễn phí",
+            "description": "Compress hoặc fhoặcmt HTML code instntly - minify fhoặc production hoặc beutify fhoặc development",
+            "h1": "Công cụ khai thác và làm đẹp HTML",
+            "subtitle": "Compress hoặc fhoặcmt HTML code instntly"
+        },
+        "editor": {
+            "label_input": "HTML Đầu vào",
+            "ph_input": "Dán your HTML code tại đây..",
+            "btn_minify": "Minify HTML",
+            "btn_beautify": "Beutify HTML",
+            "btn_clear": "Xó",
+            "btn_copy": "So chép đầu r",
+            "label_output": "HTML Đầu R"
+        },
+        "content": {
+            "about_title": "là gì n HTML Minifier?",
+            "about_desc": "n HTML Minifier là công cụ tht compresses HTML code by removing unnecessry chrcters like whitespce, comments, và line breks vớiout chnging functionlity. Minified HTML tệps re significntly smller, leding fster pge lod times và improved website perfhoặcmnce. Our miễn phí trực tuyến HTML minifier lso includes beutify feture fhoặcmt HTML với proper indenttion fhoặc better redbility during development.",
+            "why_title": "Tại so Minify HTML?",
+            "why_desc": "Minifying HTML là imphoặctnt fhoặc web perfhoặcmnce optimiztion. Smller HTML tệps men fster downlods, reduced bvàwidth usge, và improved pge lod times. Thlà là especilly beneficil fhoặc lrge websites với lots of HTML content. Minified HTML reduces server lod và improves user experience.",
+            "features_title": "Key Fetures",
+            "features_list": {
+                "minify": "<strong>Minify HTML:</strong> Xó bỏ whitespce và comments reduce tệp size",
+                "beautify": "<strong>Beutify HTML:</strong> Fhoặcmt HTML với proper indenttion",
+                "instant": "<strong>Instnt Kết quảs:</strong> Process HTML in rel-time",
+                "copy": "<strong>So chép Kết quả:</strong> Esily copy minified HTML",
+                "secure": "<strong>n àn & Riêng Tư:</strong> Tất cả quá trình xử lý diễn r trong trình duyệt",
+                "free": "<strong>Sử Dụng Miễn Phí:</strong> Không cần đăng ký"
+            },
+            "how_title": "Cách Sử dụng",
+            "how_steps": {
+                "1": "Nhấp \"Minify HTML\" compress code",
+                "2": "Nhấp \"Beutify HTML\" fhoặcmt với indenttion",
+                "3": "So chép đầu r bằng nút \"So Chép Đầu R\"",
+                "4": "Sử dụng minified HTML in your production environment reduce bvàwidth và improve pge lod speed."
+            },
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "là thlà HTML minifier miễn phí?",
+                "a1": "Có, completely miễn phí với no limittions hoặc reglàtrtion required.",
+                "q2": "là my HTML code sthoặced?",
+                "a2": "Không, ll Quá trình xử lý diễn r trong trình duyệt củ bạn. Your code là never sent our servers.",
+                "q3": "How much smller sẽ my HTML be?",
+                "a3": "Typiclly 10-30% smller depending on fhoặcmtting và comments in hoặciginl code.",
+                "q4": "Cn I unminify HTML?",
+                "a4": "Có, use \"Beutify HTML\" butn fhoặcmt minified HTML với proper indenttion.",
+                "q5": "Does minifying ffect HTML functionlity?",
+                "a5": "Không, minifiction only removes unnecessry chrcters. The HTML whoặcks exctly sme."
+            }
+        },
+        "js": {
+            "error_empty": "Plese enter HTML code",
+            "success_minify": "✓ HTML minified successfully!",
+            "success_beautify": "✓ HTML beutified successfully!",
+            "error_no_copy": "Không có đầu r để so chép",
+            "success_copy": "✓ Đã so chép vào khy nhớ tạm!"
+        }
+    },
+    "html-to-markdown-converter": {
+        "meta": {
+            "title": "Chuyển đổi HTML sang Markdown - Trình phân tích cú pháp trực tuyến miễn phí",
+            "description": "Chuyển đổi HTML clen Mrkdown fhoặcmt instntly với our miễn phí trực tuyến công cụ",
+            "h1": "Công cụ chuyển đổi HTML sang Markdown",
+            "subtitle": "Chuyển đổi HTML clen Mrkdown fhoặcmt instntly"
+        },
+        "editor": {
+            "btn_convert": "Chuyển đổi",
+            "btn_copy": "So chép Mrkdown",
+            "btn_download": "Tải xuống",
+            "btn_example": "Ví dụ",
+            "btn_clear": "Xó",
+            "label_input": "HTML Đầu vào",
+            "ph_input": "Dán your HTML code tại đây..",
+            "label_output": "Mrkdown Kết quả",
+            "ph_output": "Chuyển đổied Mrkdown sẽ pper tại đây.."
+        },
+        "content": {
+            "about_title": "🔄 bout HTML Mrkdown Chuyển đổier",
+            "about_p1": "Chuyển đổi HTML code clen, redble Mrkdown fhoặcmt instntly với our miễn phí trực tuyến HTML Mrkdown converter. Perfect fhoặc developers, technicl writers, và content crethoặcs who need trnsfhoặcm HTML content thành Mrkdown fhoặc documenttion, REDME tệps, hoặc content mngement systems.",
+            "features_title": "✨ Key Fetures",
+            "features_list": {
+                "1": "✅ <strong>Preserve Fhoặcmtting:</strong> Mintins hedings, llàts, links, và emphslà",
+                "2": "✅ <strong>Clen Kết quả:</strong> Genertes redble, well-fhoặcmtted Mrkdown",
+                "3": "✅ <strong>No Instlltion:</strong> Whoặcks directly in your browser",
+                "4": "✅ <strong>miễn phí Fhoặcever:</strong> 100% miễn phí với no limittions",
+                "5": "✅ <strong>Privcy First:</strong> ll conversion hppens loclly in your browser",
+                "6": "Bảo àn khối mã và làm nổi bật cú pháp cho tài liệu kỹ thuật."
+            },
+            "uses_title": "🎯 Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "docs": {
+                    "title": "📚 Tài Liệu",
+                    "desc": "Chuyển đổi HTML documenttion Mrkdown fhoặc GitHub wiklà, REDME tệps, và technicl docs."
+                },
+                "migration": {
+                    "title": "✍️ Content Migrtion",
+                    "desc": "Migrte content từ HTML-bsed CMSs Mrkdown-bsed pltfhoặcms like Jekyll hoặc Hugo."
+                },
+                "email": {
+                    "title": "💻 Emil Mrkdown",
+                    "desc": "Chuyển đổi HTML emils Mrkdown fhoặcmt fhoặc esier editing và version control."
+                },
+                "blog": {
+                    "title": "📍 Blog Posts",
+                    "desc": "Trnsfhoặcm HTML blog posts Mrkdown fhoặc sttic site generthoặcs và hiện đại CMSs."
+                }
+            },
+            "elements_title": "🛠️ Supphoặcted HTML Elements",
+            "elements": {
+                "text": {
+                    "title": "Text Fhoặcmtting",
+                    "list": [
+                        "Hedings (H1-H6)",
+                        "Prgrphs",
+                        "Bold & Strong",
+                        "Itlic & Emphslà",
+                        "Code & Prefhoặcmtted",
+                        "Blockquotes"
+                    ]
+                },
+                "lists": {
+                    "title": "Llàts & Links",
+                    "list": [
+                        "Unhoặcdered Llàts",
+                        "Ordered Llàts",
+                        "Nested Llàts",
+                        "Hyperlinks",
+                        "Hình ảnhs",
+                        "Line Breks"
+                    ]
+                },
+                "advanced": {
+                    "title": "Nâng co",
+                    "list": [
+                        "Tbles",
+                        "Hhoặcizontl Rules",
+                        "Inline Code",
+                        "Code Blocks",
+                        "Strikethrough",
+                        "Tsk Llàts"
+                    ]
+                }
+            },
+            "faq_title": "❓ Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "là thlà HTML Mrkdown converter miễn phí?",
+                "a1": "Có! Our HTML Mrkdown converter là 100% miễn phí với no limittions, reglàtrtion, hoặc hidden costs.",
+                "q2": "Does it whoặck offline?",
+                "a2": "Có, ll conversion hppens in your browser using JvScript, so your dữ liệu never leves your device.",
+                "q3": "Wht HTML elements re supphoặcted?",
+                "a3": "We supphoặct ll common HTML elements including hedings, prgrphs, llàts, links, hình ảnhs, tbles, code blocks, và mhoặce.",
+                "q4": "Cn I convert lrge HTML tệps?",
+                "a4": "Có, re re no size limittions. However, very lrge tệps my tke moment process depending on your browser perfhoặcmnce."
+            }
+        },
+        "js": {
+            "error_empty": "Plese enter some HTML code convert.",
+            "error_convert": "Errhoặc converting HTML:",
+            "error_no_copy": "No Mrkdown copy. Plese convert HTML first.",
+            "success_copy": "Mrkdown copied clipbord!",
+            "error_no_download": "No Mrkdown downlod. Plese convert HTML first."
+        }
+    },
+    "html-viewer": {
+        "meta": {
+            "title": "Trình xem HTML trực tuyến - Trình xem trước mã thời gian thực miễn phí",
+            "description": "Preview HTML code in rel-time với our miễn phí trực tuyến HTML viewer",
+            "h1": "Trình xem HTML",
+            "subtitle": "Preview HTML code in rel-time"
+        },
+        "editor": {
+            "label_input": "HTML Code",
+            "ph_input": "Nhập your HTML code tại đây..",
+            "btn_clear": "Xó",
+            "btn_load_sample": "Tải Mẫu",
+            "label_preview": "Xem Trước Trực Tiếp",
+            "btn_fullscreen": "Fullscreen",
+            "btn_exit_fullscreen": "Exit Fullscreen"
+        },
+        "content": {
+            "about_title": "là gì n HTML Viewer?",
+            "about_desc": "n HTML Viewer là powerful trực tuyến công cụ tht llows you preview và vlàulize HTML code in rel-time. Wher you're web developer testing code snippets, student lerning HTML, hoặc designer reviewing mrkup, our HTML viewer provides instnt vlàul feedbck fhoặc your HTML code. Simply pste your HTML code thành edithoặc, và see rendered kết quả immeditely in live preview pne.",
+            "why_title": "Tại so Sử dụng Our HTML Viewer?",
+            "why_desc": "Our miễn phí HTML viewer offers severl dvntges fhoặc developers và designers. First, it provides instnt vlàul feedbck vớiout needing crete tệps hoặc set up development environment. Second, it's completely browser-bsed, mening you cn use it nywtại đây vớiout instlling softwre. Third, it's perfect fhoặc quick testing, debugging, và lerning HTML. The side-by-side view lets you see your code và its kết quả simultneously, mking it esier understvà how HTML elements render.",
+            "features_title": "Key Fetures",
+            "features_list": {
+                "preview": "<strong>Rel-Time Preview:</strong> See your HTML rendered instntly s you type",
+                "layout": "<strong>Side-by-Side View:</strong> Code edithoặc và preview pne dlàplyed ger",
+                "syntax": "<strong>Syntx Highlighting:</strong> Esy--red code với colhoặc-coded syntx",
+                "sample": "<strong>Smple Code:</strong> Lod exmple HTML get strted quickly",
+                "no_install": "<strong>No Instlltion Required:</strong> Whoặcks directly in your browser",
+                "free": "<strong>miễn phí Sử dụng:</strong> No reglàtrtion hoặc pyment required",
+                "secure": "<strong>Secure:</strong> ll processing hppens in your browser"
+            },
+            "how_title": "Cách Sử dụng HTML Viewer",
+            "how_steps": {
+                "1": "The preview sẽ updte umticlly in right pne",
+                "2": "Sử dụng \"Lod Smple\" butn see exmple HTML code",
+                "3": "Nhấp \"Cler\" strt fresh với blnk edithoặc",
+                "4": "Test different HTML elements và see how y render",
+                "5": "nlyze rendered kết quả và DOM structure debug lyout làsues hoặc verify HTML rendering."
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses_desc": "HTML viewers re essentil công cụs fhoặc vrious phát triển web tsks. Developers use m quickly test HTML snippets befhoặce integrting m thành lrger projects. Students lerning HTML cn experiment với different tgs và ttributes understvà ir effects. Emil mrketers use HTML viewers preview emil templtes befhoặce sending. Content crethoặcs cn vlàulize how ir HTML content sẽ pper on websites. Designers cn review mrkup structure và ensure proper rendering of HTML elements.",
+            "basics_title": "Hiểu về HTML cơ bản",
+            "basics_desc": "HTML (HyperText Mrkup Lnguge) là chuẩnd mrkup lnguge fhoặc creting web pges. It conslàts of elements represented by tgs, which tell browsers how dlàply content. Common HTML elements include hedings (&lt;h1&gt; &lt;h6&gt;], prgrphs (&lt;p&gt;], links (&lt;&gt;], hình ảnhs (&lt;img&gt;], và divlàions (&lt;div&gt;). Hiểu về se bsic elements là crucil fhoặc phát triển web, và our HTML viewer helps you vlàulize how y whoặck ger crete web pges.",
+            "tips_title": "Thực hành tốt nhất fhoặc HTML",
+            "tips_desc": "Khi nào writing HTML, follow Thực hành tốt nhất ensure clen, mintinble code. lwys use semntic HTML elements tht describe ir content (like &lt;heder&gt;, &lt;nv&gt;, &lt;rticle&gt;). Properly nest elements và close ll tgs. Sử dụng lowercse fhoặc tg nmes và ttribute nmes. Thêm lt ttributes hình ảnhs fhoặc ccessibility. Vlidte your HTML ctch errhoặcs erly. Keep your code hoặcgnized với proper indenttion. These prctices led better SEO, ccessibility, và mintinbility.",
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "là thlà HTML viewer miễn phí use?",
+                "a1": "Có, our HTML viewer là completely miễn phí use. Ttại đây re no hidden fees, reglàtrtion requirements, hoặc usge limits.",
+                "q2": "Does HTML viewer supphoặct CSS và JvScript?",
+                "a2": "The HTML viewer primrily focuses on HTML mrkup. While inline CSS styles sẽ render, externl CSS và JvScript re svàboxed fhoặc security.",
+                "q3": "là my HTML code sthoặced hoặc sved?",
+                "a3": "Không, ll HTML processing hppens entirely in your browser. Your code là never sent our servers hoặc sthoặced nywtại đây.",
+                "q4": "Cn I use thlà công cụ fhoặc lerning HTML?",
+                "a4": "Chắc chắn rồi! Our HTML viewer là perfect fhoặc lerning HTML. You cn experiment với different tgs, ttributes, và structures see how y render.",
+                "q5": "Wht's difference between n HTML viewer và code edithoặc?",
+                "a5": "n HTML viewer focuses on previewing và vlàulizing HTML code in rel-time, while code edithoặc provides dvnced fetures (syntx highlighting, debugging) và là better fhoặc full-scle development."
+            }
+        }
+    },
+    "js-minifier": {
+        "meta": {
+            "title": "Công cụ khai thác JS - Trình nén JavaScript trực tuyến miễn phí",
+            "description": "Compress và optimize your JvScript code fhoặc fster pge lods",
+            "h1": "Công cụ khai thác JavaScript",
+            "subtitle": "Compress và optimize your JvScript code"
+        },
+        "editor": {
+            "label_input": "JvScript Đầu vào",
+            "ph_input": "Dán your JvScript code tại đây..",
+            "btn_minify": "Minify JS",
+            "btn_beautify": "Beutify JS",
+            "btn_clear": "Xó",
+            "btn_copy": "So chép đầu r",
+            "label_output": "JvScript Kết quả"
+        },
+        "content": {
+            "about_title": "Trình Thu Nhỏ JvScript Là Gì?",
+            "about_desc": "Trình Thu Nhỏ JvScript là một công cụ nén mã JvScript bằng cách loại bỏ các ký tự không cần thiết như khoảng trắng, nhận xét và ngắt dòng mà không thy đổi chức năng. Các tệp JvScript đã thu nhỏ sẽ nhẹ hơn đáng kể, giúp tải trng nhnh hơn và cải thiện hiệu suất trng web. Trình thu nhỏ JS trực tuyến miễn phí củ chúng tôi còn bo gồm tính năng làm đẹp để định dạng JvScript với thụt lề phù hợp nhằm dễ đọc hơn trong quá trình phát triển.",
+            "why_title": "Tại So Nên Thu Nhỏ JvScript?",
+            "why_desc": "Thu nhỏ JvScript là điều cần thiết để tối ưu hó hiệu suất web. Các tệp JS nhỏ hơn giúp tải xuống nhnh hơn, giảm sử dụng băng thông và cải thiện thời gin tải trng. Điều này đặc biệt qun trọng đối với người dùng di động và người dùng có kết nối internet chậm. JvScript đã thu nhỏ giúp giảm tải cho máy chủ và cải thiện trải nghiệm người dùng. Đối với các trng web vận hành thực tế (production), thu nhỏ là một thực hành tốt nhất tiêu chuẩn có thể cải thiện đáng kể điểm số Choặce Web Vitls.",
+            "features_title": "Key Fetures",
+            "features_list": {
+                "minify": "<strong>Thu Nhỏ JvScript:</strong> Loại bỏ khoảng trắng và nhận xét để giảm kích thước tệp",
+                "beautify": "<strong>Làm Đẹp JvScript:</strong> Định dạng JS với thụt lề phù hợp",
+                "instant": "<strong>Kết Quả Tức Thì:</strong> Xử lý JvScript trong thời gin thực",
+                "copy": "<strong>So Chép Đầu R:</strong> Dễ dàng so chép JvScript đã thu nhỏ",
+                "secure": "<strong>n àn & Riêng Tư:</strong> Tất cả quá trình xử lý diễn r trong trình duyệt",
+                "free": "<strong>Sử Dụng Miễn Phí:</strong> Không cần đăng ký"
+            },
+            "how_title": "Cách Sử dụng",
+            "how_steps": [
+                "Dán mã JvScript củ bạn vào trường đầu vào",
+                "Nhấp vào \"Thu Nhỏ JS\" để nén mã",
+                "Nhấp vào \"Làm Đẹp JS\" để định dạng với thụt lề",
+                "So chép đầu r bằng nút \"So Chép Đầu R\""
+            ],
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Trình thu nhỏ JvScript này có miễn phí không?",
+                "a1": "Có, completely miễn phí với no limittions hoặc reglàtrtion required.",
+                "q2": "Mã JvScript củ tôi có được lưu trữ không?",
+                "a2": "Không, ll Quá trình xử lý diễn r trong trình duyệt củ bạn. Your code là never sent our servers.",
+                "q3": "Mã JS củ tôi sẽ nhỏ đi bo nhiêu?",
+                "a3": "Thông thường là nhỏ hơn 30-50% tùy thuộc vào định dạng và nhận xét trong mã gốc.",
+                "q4": "Tôi có thể giải nén (unminify) JvScript không?",
+                "a4": "Có, hãy sử dụng nút \"Làm Đẹp JS\" để định dạng JvScript đã thu nhỏ với thụt lề phù hợp.",
+                "q5": "Việc thu nhỏ có ảnh hưởng đến chức năng JvScript không?",
+                "a5": "Không, việc thu nhỏ chỉ loại bỏ các ký tự không cần thiết. JvScript vẫn hoạt động y hệt như cũ."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập mã JvScript",
+            "success_minify": "✓ JvScript minified successfully!",
+            "success_beautify": "✓ JvScript beutified successfully!",
+            "error_no_copy": "Không có đầu r để so chép",
+            "success_copy": "✓ Đã so chép vào khy nhớ tạm!"
+        }
+    },
+    "json-formatter": {
+        "meta": {
+            "title": "Trình định dạng JSON trực tuyến - Công cụ cải tiến JSON miễn phí",
+            "description": "Định dạng, xác thực và thu nhỏ dữ liệu JSON củ bạn với công cụ trực tuyến miễn phí củ chúng tôi",
+            "h1": "Trình định dạng JSON",
+            "subtitle": "Định dạng, xác thực và thu nhỏ dữ liệu JSON củ bạn"
+        },
+        "editor": {
+            "title": "Định dạng Dữ liệu JSON củ Bạn",
+            "label_input": "Nhập Dữ liệu JSON",
+            "ph_input": "{\"nme\": \"John Doe\", \"ge\": 30, \"city\": \"New Yhoặck\"}",
+            "help_text": "Dán dữ liệu JSON củ bạn để định dạng, làm đẹp hoặc thu nhỏ",
+            "btn_format": "Định dạng & Làm đẹp",
+            "btn_minify": "Thu nhỏ JSON",
+            "label_results": "JSON Đã Định Dạng",
+            "btn_copy": "So chép JSON"
+        },
+        "content": {
+            "why_title": "Tại So Nên Sử Dụng Bộ Định Dạng JSON củ Chúng Tôi?",
+            "why_desc": "JSON (JvScript Object Nottion) là định dạng tro đổi dữ liệu phổ biến nhất được sử dụng trong phát triển web, PI và các tệp cấu hình. Trình định dạng JSON trực tuyến miễn phí củ chúng tôi giúp các nhà phát triển, nhà phân tích dữ liệu và chuyên gi IT nhnh chóng định dạng, làm đẹp, xác thực và thu nhỏ dữ liệu JSON. Cho dù bạn đng gỡ lỗi phản hồi PI, dọn dẹp các tệp cấu hình hy chuẩn bị JSON cho môi trường vận hành, công cụ củ chúng tôi cung cấp kết quả ngy lập tức với tính năng làm nổi bật cú pháp và phát hiện lỗi. Hoàn hảo cho các nhà phát triển làm việc với REST PI, cơ sở dữ liệu NoSQL và các ứng dụng web hiện đại.",
+            "features": {
+                "instant": {
+                    "title": "Định Dạng Tức Thì",
+                    "desc": "Định dạng và làm đẹp dữ liệu JSON trong vài mili giây với thụt lề và làm nổi bật cú pháp phù hợp"
+                },
+                "error": {
+                    "title": "Phát Hiện Lỗi",
+                    "desc": "Tự động phát hiện và làm nổi bật các lỗi cú pháp JSON với các thông báo lỗi hữu ích"
+                },
+                "privacy": {
+                    "title": "Riêng Tư 100%",
+                    "desc": "ll processing hppens in your browser - your JSON dữ liệu never leves your computer"
+                }
+            },
+            "how_title": "Cách Định Dạng JSON Qu 3 Bước Đơn Giản",
+            "how_steps": {
+                "1": {
+                    "title": "Chọn Hành Động",
+                    "desc": "Nhấp vào \"Định dạng & Làm đẹp\" để định dạng hoặc \"Thu nhỏ\" để nén JSON củ bạn"
+                },
+                "2": {
+                    "title": "So Chép Kết Quả",
+                    "desc": "Nhấp vào nút so chép để chép JSON đã định dạng vào khy nhớ tạm củ bạn"
+                },
+                "3": {
+                    "title": "Fhoặcmt hoặc Minify",
+                    "desc": "Chọn beutify (fhoặcmt với indenttion) hoặc minify (compress single line) your JSON dt bsed on your needs."
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Định Dạng JSON Phổ Biến",
+            "uses": {
+                "api": {
+                    "title": "Gỡ Lỗi Phản Hồi PI",
+                    "desc": "Định dạng các phản hồi PI lộn xộn để dễ dàng đọc và gỡ lỗi dữ liệu JSON từ REST PI, GrphQL và các dịch vụ web."
+                },
+                "config": {
+                    "title": "Tệp Cấu Hình",
+                    "desc": "Dọn dẹp và xác thực các tệp cấu hình JSON cho ứng dụng, pckge.json, tsconfig.json, và nhiều thứ khác."
+                },
+                "db": {
+                    "title": "Dữ Liệu Cơ Sở Dữ Liệu",
+                    "desc": "Định dạng dữ liệu JSON từ các cơ sở dữ liệu NoSQL như MongoDB, CouchDB và Firebse để dễ đọc hơn."
+                },
+                "export": {
+                    "title": "Xuất/Nhập Dữ Liệu",
+                    "desc": "Chuẩn bị dữ liệu JSON để xuất hoặc xác thực dữ liệu JSON đã nhập để đảm bảo cấu trúc và cú pháp đúng đắn."
+                }
+            },
+            "tips_title": "Thực Hành Tốt Nhất & Mẹo Cho JSON",
+            "tips": {
+                "validate": {
+                    "title": "✓ Luôn Xác Thực JSON",
+                    "desc": "Sử dụng trình xác thực JSON để phát hiện lỗi cú pháp trước khi triển khi thực tế. JSON không hợp lệ có thể làm hỏng ứng dụng củ bạn."
+                },
+                "indent": {
+                    "title": "✓ Sử Dụng Thụt Lề Phù Hợp",
+                    "desc": "Định dạng JSON với thụt lề 2 hoặc 4 dấu Cách dễ đọc hơn trong quá trình phát triển và gỡ lỗi."
+                },
+                "minify": {
+                    "title": "✓ Thu Nhỏ Cho Production",
+                    "desc": "Thu nhỏ dữ liệu JSON trước khi triển khi thực tế để giảm kích thước tệp và cải thiện thời gin tải."
+                },
+                "naming": {
+                    "title": "✓ Sử Dụng Cách Đặt Tên Nhất Quán",
+                    "desc": "Tuân o quy ước đặt tên cmelCse hoặc snke_cse một cách nhất quán trong suốt cấu trúc JSON củ bạn."
+                }
+            },
+            "faq_title": "❓ Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "là my JSON dữ liệu sfe?",
+                "a1": "Có, bsolutely. Our JSON fhoặcmtter runs entirely in your web browser using JvScript. Your dữ liệu là never sent our servers hoặc sthoặced nywtại đây.",
+                "q2": "Tại so việc thu nhỏ JSON lại qun trọng?",
+                "a2": "Thu nhỏ giúp loại bỏ các khoảng trắng và ngắt dòng không cần thiết, làm giảm đáng kể kích thước tệp. Điều này rất qun trọng để cải thiện hiệu suất PI và giảm sử dụng băng thông trong môi trường vận hành thực tế.",
+                "q3": "Tôi có thể xác thực JSON chư hoàn chỉnh không?",
+                "a3": "Công cụ yêu cầu cấu trúc JSON hợp lệ để định dạng hoặc thu nhỏ. Tuy nhiên, nó cung cấp các thông báo lỗi chi tiết để giúp bạn tìm và khắc phục sự cố trong dữ liệu JSON củ bạn.",
+                "q4": "Nó có hỗ trợ các tệp JSON lớn không?",
+                "a4": "Có, công cụ được tối ưu hó để xử lý các tập dữ liệu JSON lớn một cách hiệu quả, mặc dù các tệp cực lớn có thể phụ thuộc vào giới hạn bộ nhớ củ trình duyệt củ bạn."
+            }
+        },
+        "js": {
+            "error_empty_format": "Vui lòng nhập dữ liệu JSON để định dạng",
+            "error_invalid": "JSON không hợp lệ:",
+            "error_empty_minify": "Vui lòng nhập dữ liệu JSON để thu nhỏ",
+            "success_copy": "Đã so chép!",
+            "error_copy": "Không thể so chép. Vui lòng so chép thủ công."
+        }
+    },
+    "json-parser": {
+        "meta": {
+            "title": "Trình phân tích cú pháp & Trình xác thực JSON - Kiểm tra cú pháp trực tuyến miễn phí",
+            "description": "Phân tích, xác thực và hiển thị cấu trúc JSON",
+            "h1": "Trình phân tích cú pháp và trình xác thực JSON",
+            "subtitle": "Phân tích, xác thực và hiển thị cấu trúc JSON"
+        },
+        "editor": {
+            "label_input": "JSON Đầu Vào",
+            "ph_input": "{\"nme\": \"John Doe\", \"ge\": 30, \"làctive\": true}",
+            "btn_parse": "Phân Tích JSON",
+            "btn_beautify": "Làm đẹp",
+            "btn_minify": "Thu nhỏ",
+            "btn_clear": "Xó",
+            "btn_load": "Tải Mẫu",
+            "title_tree": "Chế Độ Xem Cây JSON"
+        },
+        "content": {
+            "hero_title": "Bộ Phân Tích & Xác Thực JSON Miễn Phí",
+            "hero_subtitle": "Phân tích, xác thực, làm đẹp và thu nhỏ dữ liệu JSON ngy lập tức",
+            "p1": "Trình Phân Tích JSON miễn phí củ chúng tôi là một công cụ trực tuyến mạnh mẽ dành cho các nhà phát triển, nhà phân tích dữ liệu và bất kỳ i làm việc với dữ liệu JSON. Phân tích, xác thực, làm đẹp và thu nhỏ JSON ngy lập tức với gio diện sạch sẽ, trực qun. Hoàn hảo để gỡ lỗi PI, định dạng tệp cấu hình hoặc xác thực cấu trúc JSON. Miễn phí 100%, quá trình xử lý phí máy khách đảm bảo dữ liệu củ bạn luôn riêng tư và n àn.",
+            "what_title": "📋 JSON Là Gì?",
+            "what_desc": "JSON (JvScript Object Nottion) là một định dạng tro đổi dữ liệu nhẹ, dễ đọc viết đối với con người và dễ phân tích tạo lập đối với máy móc. Đây là định dạng phổ biến nhất cho PI, tệp cấu hình và lưu trữ dữ liệu. JSON sử dụng các cặp khó-giá trị (key-vlue) và hỗ trợ các chuỗi, con số, giá trị logic (boolen), mảng và các đối tượng lồng nhu.",
+            "features_title": "✨ Tính Năng",
+            "features": {
+                "validate": {
+                    "title": "Xác Thực JSON",
+                    "desc": "Xác thực cú pháp và cấu trúc JSON ngy lập tức"
+                },
+                "beautify": {
+                    "title": "Làm Đẹp JSON",
+                    "desc": "Định dạng JSON với thụt lề và khoảng cách phù hợp"
+                },
+                "minify": {
+                    "title": "Thu nhỏ JSON",
+                    "desc": "Nén JSON bằng cách loại bỏ các khoảng trắng"
+                },
+                "tree": {
+                    "title": "Chế Độ Xem Cây",
+                    "desc": "Hiển thị cấu trúc JSON dưới dạng cây"
+                },
+                "privacy": {
+                    "title": "Quyền Riêng Tư Là Trên Hết",
+                    "desc": "Tất cả quá trình xử lý diễn r trong trình duyệt củ bạn"
+                },
+                "instant": {
+                    "title": "Kết Quả Tức Thì",
+                    "desc": "Phân tích và định dạng JSON trong vài mili giây"
+                }
+            },
+            "uses_title": "🎯 Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "api": {
+                    "title": "🔌 Phát Triển PI",
+                    "desc": "Kiểm tr và gỡ lỗi phản hồi PI, xác thực dữ liệu yêu cầu và định dạng dữ liệu JSON"
+                },
+                "config": {
+                    "title": "⚙️ Tệp Cấu Hình",
+                    "desc": "Định dạng và xác thực các tệp cấu hình cho ứng dụng, cơ sở dữ liệu và dịch vụ"
+                },
+                "analysis": {
+                    "title": "📊 Phân Tích Dữ Liệu",
+                    "desc": "Phân tích và hiển thị dữ liệu JSON từ các cơ sở dữ liệu, nhật ký và công cụ phân tích"
+                },
+                "debug": {
+                    "title": "🐛 Gỡ Lỗi",
+                    "desc": "Nhận diện lỗi cú pháp, xác thực cấu trúc và khắc phục các sự cố JSON"
+                },
+                "docs": {
+                    "title": "📝 Tài Liệu",
+                    "desc": "Tạo các ví dụ JSON dễ đọc cho tài liệu PI và hướng dẫn kỹ thuật"
+                },
+                "migration": {
+                    "title": "🔄 Di Cư Dữ Liệu",
+                    "desc": "Chuyển đổi và xác thực JSON trong quá trình nhập và xuất dữ liệu"
+                }
+            },
+            "how_title": "📚 Cách Sử Dụng",
+            "how_steps": [
+                "<strong>Dán JSON:</strong> So chép và dán dữ liệu JSON củ bạn vào trường đầu vào",
+                "<strong>Phân tích:</strong> Nhấp vào \"Phân Tích JSON\" để xác thực và hiển thị cấu trúc",
+                "<strong>Làm đẹp:</strong> Nhấp vào \"Làm đẹp\" để định dạng với thụt lề phù hợp",
+                "<strong>Thu nhỏ:</strong> Nhấp vào \"Thu nhỏ\" để nén và loại bỏ khoảng trắng",
+                "<strong>Xem Dạng Cây:</strong> Xem cấu trúc phân cấp ở định dạng dạng cây"
+            ],
+            "tips_title": "💡 Thực Hành Tốt Nhất Cho JSON",
+            "tips_list": [
+                "<strong>Sử dụng dấu ngoặc kép:</strong> JSON yêu cầu dấu ngoặc kép cho các chuỗi, không dùng dấu ngoặc đơn",
+                "<strong>Không để dấu phẩy ở cuối:</strong> Loại bỏ dấu phẩy su mục cuối cùng trong các đối tượng và mảng",
+                "<strong>Định dạng dữ liệu đúng:</strong> Sử dụng số không có ngoặc, logic là true/flse, null chi giá trị trống",
+                "<strong>Xác thực thường xuyên:</strong> Luôn xác thực JSON trước khi triển khi hoặc sử dụng thực tế",
+                "<strong>Làm đẹp để dễ đọc:</strong> Định dạng JSON để dễ gỡ lỗi và bảo trì hơn"
+            ],
+            "faq_title": "❓ Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Sự khác biệt giữ làm đẹp và thu nhỏ là gì?",
+                "a1": "Làm đẹp thêm thụt lề và ngắt dòng để làm cho JSON dễ đọc đối với con người. Thu nhỏ loại bỏ tất cả các khoảng trắng để giảm kích thước tệp, lý tưởng cho các môi trường vận hành thực tế.",
+                "q2": "là my JSON dữ liệu secure?",
+                "a2": "Có! ll JSON prsing và fhoặcmtting hppens entirely in your browser. Your dữ liệu never leves your device và là not sent ny server.",
+                "q3": "Cn I prse lrge JSON tệps?",
+                "a3": "Có, our prser cn hvàle lrge JSON tệps. However, very lrge tệps (>10MB) my tke longer process depending on your device's perfhoặcmnce.",
+                "q4": "Trình phân tích phát hiện những loại lỗi nào?",
+                "a4": "Trình phân tích phát hiện các lỗi cú pháp như thiếu dấu ngoặc kép, thừ dấu phẩy ở cuối, ký tự không hợp lệ, ngoặc chư đóng và si kiểu dữ liệu. Các thông báo lỗi sẽ chỉ r vị trí chính xác củ sự cố.",
+                "q5": "Cn I use thlà fhoặc PI testing?",
+                "a5": "Chắc chắn rồi! Thlà công cụ là perfect fhoặc testing PI responses, vlidting request pylods, và fhoặcmtting JSON dữ liệu từ PI clls."
+            }
+        },
+        "js": {
+            "error_empty_parse": "Vui lòng nhập dữ liệu JSON để phân tích",
+            "success_valid": "✓ JSON Hợp lệ! Đã phân tích thành công",
+            "error_invalid": "✗ JSON Không hợp lệ:",
+            "error_empty_beautify": "Vui lòng nhập dữ liệu JSON để làm đẹp",
+            "success_beautify": "✓ JSON đã được làm đẹp thành công",
+            "error_beautify": "Không thể làm đẹp JSON không hợp lệ:",
+            "error_empty_minify": "Vui lòng nhập dữ liệu JSON để thu nhỏ",
+            "success_minify": "✓ JSON đã được thu nhỏ thành công",
+            "error_minify": "✗ Không thể thu nhỏ JSON không hợp lệ:",
+            "success_load": "Đã tải JSON mẫu"
+        }
+    },
+    "json-to-csv-converter": {
+        "meta": {
+            "title": "Trình chuyển đổi JSON sang CSV - Công cụ dữ liệu trực tuyến miễn phí",
+            "description": "Chuyển đổi dữ liệu JSON sng định dạng CSV hoặc Excel ngy lập tức với công cụ trực tuyến miễn phí củ chúng tôi. Nhnh chóng, n àn và dễ sử dụng.",
+            "h1": "Trình chuyển đổi JSON sang CSV",
+            "subtitle": "Chuyển đổi các mảng và đối tượng JSON sng định dạng CSV một cách dễ dàng"
+        },
+        "editor": {
+            "label_delimiter": "Chọn Dấu Phân Cách",
+            "opt_comma": "Dấu phẩy (,)",
+            "opt_semicolon": "Dấu chấm phẩy (;)",
+            "opt_tab": "Tb",
+            "opt_pipe": "Dấu đứng (|)",
+            "btn_convert": "Chuyển Đổi sng CSV",
+            "btn_copy": "So Chép CSV",
+            "btn_download": "Tải Về CSV",
+            "btn_example": "Tải Mẫu",
+            "btn_clear": "Xó",
+            "label_input": "JSON Đầu Vào",
+            "ph_input": "Dán your JSON dữ liệu tại đây..",
+            "label_output": "CSV Đầu R",
+            "ph_output": "CSV đã chuyển đổi sẽ xuất hiện ở đây.."
+        },
+        "content": {
+            "hero_title": "Bộ Chuyển Đổi JSON sng CSV Miễn Phí",
+            "p1": "Trình chuyển đổi JSON sng CSV miễn phí củ chúng tôi là một công cụ mạnh mẽ được thiết kế cho các nhà phát triển, nhà phân tích dữ liệu và chuyên gi IT. Dễ dàng biến đổi dữ liệu JSON có cấu trúc thành các tệp CSV (Comm Seprted Vlues) hoặc TSV sạch sẽ, được định dạng tốt. Cho dù bạn đng chuẩn bị dữ liệu cho Excel, Google Sheets hy nhập vào cơ sở dữ liệu, công cụ củ chúng tôi đảm bảo tính chính xác và tốc độ với 100% quá trình xử lý phí máy khách.",
+            "features_title": "Key Fetures",
+            "features_list": {
+                "fast": "<strong>Chuyển Đổi Tức Thì:</strong> Có kết quả trong vài mili giây",
+                "secure": "<strong>Riêng Tư & n àn:</strong> Tất cả dữ liệu nằm lại trong trình duyệt củ bạn",
+                "format": "<strong>Làm Phẳng Thông Minh:</strong> Xử lý chính xác các đối tượng JSON lồng nhu",
+                "custom": "<strong>Dấu Phân Cách Tùy Chỉnh:</strong> Chọn giữ dấu phẩy, dấu chấm phẩy hoặc tb",
+                "export": "<strong>Xuất Dễ Dàng:</strong> So chép vào khy nhớ tạm hoặc tải xuống dưới dạng .csv",
+                "free": "<strong>Miễn Phí 100%:</strong> Không giới hạn, không cần đăng ký"
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "api": {
+                    "title": "PI dữ liệu nlyslà",
+                    "desc": "Chuyển đổi các phản hồi JSON từ REST PI sng định dạng CSV để dễ dàng phân tích trong các phần mềm bảng tính."
+                },
+                "db": {
+                    "title": "Di Cư Cơ Sở Dữ Liệu",
+                    "desc": "Chuẩn bị dữ liệu JSON để nhập vào các cơ sở dữ liệu qun hệ như MySQL hoặc PostgreSQL."
+                },
+                "analysis": {
+                    "title": "Trực Qun Hó Dữ Liệu",
+                    "desc": "Biến đổi các tập dữ liệu JSON phức tạp thành cấu trúc phẳng phù hợp cho các công cụ trực qun hó."
+                },
+                "report": {
+                    "title": "Báo Cáo Nhnh",
+                    "desc": "Tạo các báo cáo CSV dễ đọc từ các tệp nhật ký JSON có cấu trúc hoặc dữ liệu ứng dụng."
+                }
+            },
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Nó có hỗ trợ JSON lồng nhu không?",
+                "a1": "Có, công cụ củ chúng tôi tự động làm phẳng các đối tượng lồng nhu để chúng xuất hiện dưới dạng các cột có nhãn rõ ràng trong tệp CSV củ bạn.",
+                "q2": "Dữ liệu củ tôi có được tải lên không?",
+                "a2": "Không, tất cả quá trình xử lý diễn r cục bộ trong trình duyệt web củ bạn. Dữ liệu củ bạn không bo giờ được gửi đến máy chủ củ chúng tôi.",
+                "q3": "Tôi có thể chuyển đổi sng TSV không?",
+                "a3": "Được chứ, chỉ cần chọn tùy chọn dấu phân cách \"Tb\" trước khi chuyển đổi.",
+                "q4": "kích thước tệp tối đ là bo nhiêu?",
+                "a4": "Công cụ có thể xử lý các tệp JSON lớn, mặc dù hiệu suất phụ thuộc vào bộ nhớ thiết bị củ bạn."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập dữ liệu JSON để chuyển đổi",
+            "error_convert": "Lỗi khi chuyển đổi JSON:",
+            "error_no_copy": "Không có nội dung để so chép. Vui lòng chuyển đổi JSON trước.",
+            "success_copy": "✓ CSV đã được so chép vào khy nhớ tạm!",
+            "error_no_download": "Không có nội dung để tải về. Vui lòng chuyển đổi JSON trước."
+        }
+    },
+    "json-to-sql-converter": {
+        "meta": {
+            "title": "Trình chuyển đổi JSON sang SQL - Công cụ di chuyển trực tuyến miễn phí",
+            "description": "Biến đổi dữ liệu JSON thành các câu lệnh SQL INSERT ngy lập tức. Hoàn hảo cho việc tạo dữ liệu mẫu (seeding) và di cư dữ liệu.",
+            "h1": "Trình chuyển đổi JSON sang SQL",
+            "subtitle": "Chuyển đổi các mảng và đối tượng JSON thành các tập lệnh SQL hợp lệ"
+        },
+        "editor": {
+            "label_tablename": "Tên Bảng",
+            "ph_tablename": "Nhập tên bảng (vd: users)",
+            "btn_convert": "Tạo SQL",
+            "btn_clear": "Xó",
+            "btn_copy": "So Chép SQL",
+            "btn_example": "Tải Mẫu",
+            "label_input": "JSON Đầu Vào",
+            "ph_input": "Dán your JSON rry tại đây..",
+            "label_output": "SQL Kết quả",
+            "ph_output": "Các câu lệnh SQL INSERT được tạo sẽ xuất hiện ở đây.."
+        },
+        "content": {
+            "hero_title": "Chuyển Đổi JSON sng SQL Không Tốn Sức",
+            "hero_subtitle": "Cách nhnh nhất để tạo tập lệnh seeding cơ sở dữ liệu",
+            "p1": "Việc chuyển đổi dữ liệu JSON sng các câu lệnh SQL INSERT không nên là một công việc thủ công. Trình chuyển đổi JSON sng SQL củ chúng tôi xử lý phần nặng nhọc bằng cách tự động khớp các khó JSON củ bạn với các cột trong cơ sở dữ liệu và xử lý giá trị (escpe) để chèn n àn. Đây là một công cụ thiết yếu cho các nhà phát triển làm việc với di cư dữ liệu, kiểm thử hoặc khởi tạo cơ sở dữ liệu.",
+            "what_title": "Khi Nào Nên Sử Dụng Công Cụ Này?",
+            "what_desc": "Nếu bạn có một tập hợp dữ liệu ở định dạng JSON—như bản xuất từ cơ sở dữ liệu NoSQL hoặc phản hồi PI—và bạn cần chèn nó vào một cơ sở dữ liệu qun hệ như MySQL, PostgreSQL hoặc SQL Server, công cụ này là dành cho bạn. Nó định dạng mỗi đối tượng thành một câu lệnh SQL sạch sẽ.",
+            "features_title": "Key Fetures",
+            "features": {
+                "fast": {
+                    "title": "Tạo Ngy Lập Tức",
+                    "desc": "Tạo hàng trăm dòng SQL chỉ trong chớp mắt."
+                },
+                "private": {
+                    "title": "Cm Kết Quyền Riêng Tư",
+                    "desc": "Tất cả quá trình xử lý là cục bộ. Dữ liệu nhạy cảm củ bạn nằm lại trong trình duyệt."
+                },
+                "copy": {
+                    "title": "Xuất Với Một Cú Nhấp",
+                    "desc": "So chép àn bộ tập lệnh hoặc tải xuống cho quá trình di cư củ bạn."
+                },
+                "smart": {
+                    "title": "Xử Lý Ký Tự Thông Minh",
+                    "desc": "Tự động xử lý dấu ngoặc và các ký tự đặc biệt trong chuỗi."
+                },
+                "free": {
+                    "title": "100% miễn phí",
+                    "desc": "No limits, no reglàtrtion, no hssle."
+                },
+                "db": {
+                    "title": "Thân Thiện Với Nhiều Loại DB",
+                    "desc": "Tạo SQL tiêu chuẩn tương thích với hầu hết các hệ quản trị cơ sở dữ liệu."
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Chuyên Nghiệp",
+            "uses": {
+                "migration": {
+                    "title": "Di Cư Dữ Liệu",
+                    "desc": "Dễ dàng di chuyển dữ liệu từ các hệ thống dự trên JSON sng cơ sở dữ liệu SQL."
+                },
+                "import": {
+                    "title": "Nhập Dữ Liệu Hàng Loạt",
+                    "desc": "Tải một lượng lớn dữ liệu kiểm thử hoặc dữ liệu thực tế một cách nhnh chóng."
+                },
+                "api": {
+                    "title": "Từ PI Vào Cơ Sở Dữ Liệu",
+                    "desc": "Chuyển đổi kết quả từ PI bên thứ b trực tiếp thành các lệnh chèn SQL."
+                },
+                "test": {
+                    "title": "Tạo Dữ Liệu Mẫu Kiểm Thử",
+                    "desc": "Tạo các tập lệnh SQL để đổ dữ liệu cho môi trường phát triển."
+                },
+                "backup": {
+                    "title": "Khôi Phục Bản So Lưu",
+                    "desc": "Biến các tệp so lưu JSON trở lại thành các tập lệnh SQL hoạt động được."
+                },
+                "dev": {
+                    "title": "Tạo Mẫu Nhnh",
+                    "desc": "Nhnh chóng đổ dữ liệu vào các bảng cơ sở dữ liệu mới trong quá trình phát triển."
+                }
+            },
+            "how_title": "Cách Sử dụng",
+            "how_steps": [
+                "Nhập <strong>Tên Bảng</strong> cơ sở dữ liệu mục tiêu",
+                "Dán <strong>JSON</strong> củ bạn (phải là một mảng hoặc đối tượng)",
+                "Nhấp vào <strong>Tạo SQL</strong> để tạo tập lệnh",
+                "<strong>So chép</strong> kết quả SQL vào khy nhớ tạm củ bạn"
+            ],
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Yêu cầu định dạng JSON như thế nào?",
+                "a1": "Công cụ hoạt động tốt nhất với một mảng các đối tượng, trong đó mỗi đối tượng đại diện cho một hàng trong cơ sở dữ liệu.",
+                "q2": "Nó có xử lý các đối tượng lồng nhu không?",
+                "a2": "It currently mps p-level keys. Nested objects re usully stringified hoặc skipped depending on your DB needs.",
+                "q3": "Có giới hạn về số hàng không?",
+                "a3": "Không có giới hạn cứng, mặc dù hiệu suất trình duyệt củ bạn có thể thy đổi với hàng nghìn hàng."
+            },
+            "tips_title": "Mẹo Chuyên Nghiệp",
+            "tips_list": [
+                "Đảm bảo các khó JSON củ bạn khớp chính xác với tên các cột SQL.",
+                "Luôn xác minh SQL được tạo trước khi chạy nó trên cơ sở dữ liệu thực tế.",
+                "Sử dụng nút \"Mẫu\" để xem cấu trúc JSON được mong đợi."
+            ]
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập dữ liệu JSON và tên bảng",
+            "success_convert": "✓ SQL đã được tạo thành công!",
+            "error_convert": "Lỗi khi tạo SQL:",
+            "error_no_copy": "Không có SQL để so chép. Vui lòng chuyển đổi JSON trước.",
+            "success_copy": "✓ SQL đã được so chép vào khy nhớ tạm!"
+        }
+    },
+    "json-to-xml-converter": {
+        "meta": {
+            "title": "Trình chuyển đổi JSON sang XML - Trình dịch dữ liệu trực tuyến miễn phí",
+            "description": "Chuyển đổi dữ liệu JSON sng định dạng XML có cấu trúc ngy lập tức với công cụ trực tuyến miễn phí củ chúng tôi. Nhnh chóng, n àn và dễ sử dụng.",
+            "h1": "Trình chuyển đổi JSON sang XML",
+            "subtitle": "Biến đổi các đối tượng và mảng JSON thành các tài liệu XML hợp lệ"
+        },
+        "editor": {
+            "btn_convert": "Chuyển Đổi sng XML",
+            "btn_clear": "Xó",
+            "btn_copy": "So Chép XML",
+            "btn_example": "Tải Mẫu",
+            "label_input": "JSON Đầu Vào",
+            "ph_input": "Dán your JSON dữ liệu tại đây..",
+            "label_output": "XML Kết quả",
+            "ph_output": "Chuyển đổied XML sẽ pper tại đây.."
+        },
+        "content": {
+            "hero_title": "Bộ Chuyển Đổi JSON sng XML Miễn Phí",
+            "hero_subtitle": "Cách nhnh nhất để biến đổi JSON thành XML",
+            "p1": "Trình chuyển đổi JSON sng XML miễn phí củ chúng tôi là một công cụ mạnh mẽ được thiết kế cho các nhà phát triển và chuyên gi IT. Nó cho phép bạn biến đổi dữ liệu JSON sng định dạng XML có cấu trúc ngy lập tức. Cho dù bạn đng làm việc với các hệ thống cũ, tích hợp donh nghiệp hy các PI dự trên XML cụ thể, công cụ củ chúng tôi đảm bảo tính chính xác và quyền riêng tư với 100% quá trình xử lý phí máy khách.",
+            "what_title": "Chuyển Đổi JSON sng XML Là Gì?",
+            "what_desc": "Chuyển đổi JSON sng XML là quá trình dịch dữ liệu có cấu trúc trong JSON sng XML, một ngôn ngữ đánh dấu thường được sử dụng trong các hệ thống donh nghiệp, dịch vụ SOP và các tệp cấu hình. Công cụ củ chúng tôi giúp lấp đầy khoảng cách này, làm cho việc biến đổi dữ liệu trở nên liền mạch.",
+            "features_title": "Key Fetures",
+            "features": {
+                "instant": {
+                    "title": "Chuyển Đổi Tức Thì",
+                    "desc": "Nhận kết quả XML củ bạn trong vài mili giây."
+                },
+                "privacy": {
+                    "title": "Cm Kết Quyền Riêng Tư",
+                    "desc": "ll dữ liệu stys in your browser; nothing là uploded."
+                },
+                "copy": {
+                    "title": "Esy Exphoặct",
+                    "desc": "So chép clipbord hoặc use kết quả directly."
+                },
+                "format": {
+                    "title": "Clen XML",
+                    "desc": "Tạo mã XML được định dạng tốt và dễ đọc."
+                },
+                "free": {
+                    "title": "100% miễn phí",
+                    "desc": "No reglàtrtion, no limits, no cost."
+                },
+                "offline": {
+                    "title": "Khả Năng Hoạt Động Ngoại Tuyến",
+                    "desc": "Hoạt động không cần internet su khi trng đã tải xong."
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "migration": {
+                    "title": "Di Cư Hệ Thống",
+                    "desc": "Biến đổi dữ liệu JSON để nhập vào các hệ thống cũ dự trên XML."
+                },
+                "integration": {
+                    "title": "Tích Hợp PI",
+                    "desc": "Chuẩn bị dữ liệu cho các SOP PI hoặc REST PI yêu cầu đầu vào XML."
+                },
+                "config": {
+                    "title": "Biến Đổi Cấu Hình",
+                    "desc": "Chuyển đổi các tệp cấu hình JSON sng định dạng XML."
+                },
+                "enterprise": {
+                    "title": "Dịch Vụ Donh Nghiệp",
+                    "desc": "Chuẩn hó dữ liệu cho các tuyến dịch vụ donh nghiệp (service buses) và phần mềm trung gin."
+                },
+                "docs": {
+                    "title": "Tài Liệu Kỹ Thuật",
+                    "desc": "Tạo các đoạn mã XML cho các hướng dẫn kỹ thuật hoặc đặc tả."
+                },
+                "export": {
+                    "title": "Xuất Dữ Liệu",
+                    "desc": "Dễ dàng xuất dữ liệu có cấu trúc sng định dạng XML để báo cáo."
+                }
+            },
+            "how_title": "Cách Sử dụng",
+            "how_steps": {
+                "1": {
+                    "title": "Dán JSON",
+                    "desc": "Dán mã JSON củ bạn vào trường 'JSON Đầu Vào'."
+                },
+                "2": {
+                    "title": "Chuyển đổi",
+                    "desc": "Nhấp vào 'Chuyển đổi sng XML' để tạo đầu r."
+                },
+                "3": {
+                    "title": "Xuất Kết Quả",
+                    "desc": "So chép XML đã tạo và sử dụng nó trong dự án củ bạn."
+                }
+            },
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Nó có hỗ trợ JSON lồng nhu không?",
+                "a1": "Có, nó xử lý các đối tượng và mảng lồng nhu phức tạp bằng cách tạo các thẻ XML phân cấp.",
+                "q2": "Dữ liệu củ tôi có n àn không?",
+                "a2": "bsolutely. Processing là done entirely in your browser using JvScript.",
+                "q3": "Cn I lod n exmple?",
+                "a3": "Có, click 'Lod Ví dụ' see demonstrtion of conversion.",
+                "q4": "là re size limit?",
+                "a4": "Perfhoặcmnce depends on your browser's memhoặcy, but it hvàles most tệps esily.",
+                "q5": "Does it use ny externl Plà?",
+                "a5": "Không, it là self-contined công cụ tht runs ntively on your device.",
+                "q6": "XML có được định dạng không?",
+                "a6": "Có, đầu r được 'làm đẹp' với thụt lề phù hợp để dễ đọc."
+            },
+            "tips_title": "Mẹo Chuyên Nghiệp",
+            "tips_list": {
+                "1": "Vlidte your JSON befhoặce converting void syntx errhoặcs.",
+                "2": "Sử dụng 'Cler' butn fhoặc fresh strt when converting multiple tệps.",
+                "3": "Kiểm tr các thẻ XML để đảm bảo chúng khớp với sơ đồ (schem) mục tiêu mong đợi củ bạn.",
+                "4": "Sử dụng 'Lod Ví dụ' if you're unsure bout đầu vào fhoặcmt.",
+                "5": "Bookmrk thlà pge fhoặc quick ccess your development công cụs."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập dữ liệu JSON để chuyển đổi",
+            "success_convert": "✓ JSON đã được chuyển đổi sng XML thành công!",
+            "error_convert": "Lỗi khi chuyển đổi JSON:",
+            "error_no_copy": "Không có nội dung để so chép. Vui lòng chuyển đổi JSON trước.",
+            "success_copy": "✓ XML đã được so chép vào khy nhớ tạm!"
+        }
+    },
+    "json-to-yaml-converter": {
+        "meta": {
+            "title": "Trình chuyển đổi JSON sang YAML - Công cụ đối tượng trực tuyến miễn phí",
+            "description": "Chuyển đổi JSON sng định dạng YML ngy lập tức với bộ chuyển đổi JSON sng YML trực tuyến miễn phí củ chúng tôi. Nhnh chóng, n àn và dễ sử dụng.",
+            "h1": "Trình chuyển đổi JSON sang YAML",
+            "subtitle": "Bộ chuyển đổi JSON sng YML tốt nhất cho các nhà phát triển và chuyên gi IT"
+        },
+        "content": {
+            "hero_title": "Bộ Chuyển Đổi JSON sng YML",
+            "hero_subtitle": "Chuyển đổi JSON sng định dạng YML ngy lập tức và chính xác",
+            "p1": "Our miễn phí JSON YML converter llows you trnsfhoặcm JSON dữ liệu thành YML fhoặcmt instntly. Perfect fhoặc developers, DevOps engineers, và nyone whoặcking với Tệp cấu hình hoặc dữ liệu seriliztion.",
+            "what_title": "là gì JSON YML Chuyển đổier?",
+            "what_desc": "JSON (JvScript Object Nottion) và YML (YML in't Mrkup Lnguge) re both populr dữ liệu seriliztion fhoặcmts. YML là often preferred fhoặc Tệp cấu hình due its humn-redble syntx. Our công cụ helps you bridge gp between se fhoặcmts quickly.",
+            "features_title": "Key Fetures",
+            "features": {
+                "fast": {
+                    "title": "Chuyển Đổi Nhnh",
+                    "desc": "Chuyển đổi JSON sng YML trong vài mili giây"
+                },
+                "secure": {
+                    "title": "Secure & Privte",
+                    "desc": "Processing hppens entirely in your browser"
+                },
+                "copy": {
+                    "title": "So Chép Bằng Một Cú Nhấp Chuột",
+                    "desc": "So chép converted YML instntly"
+                },
+                "format": {
+                    "title": "Định Dạng Sạch Sẽ",
+                    "desc": "Tạo r đầu r YML với thụt lề tốt"
+                },
+                "free": {
+                    "title": "100% miễn phí",
+                    "desc": "No reglàtrtion hoặc pyment required"
+                },
+                "offline": {
+                    "title": "phí máy khách",
+                    "desc": "Hoạt động mà không cần gửi dữ liệu đến máy chủ"
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "docker": {
+                    "title": "Docker",
+                    "desc": "Chuyển đổi các cấu hình continer JSON sng Docker Compose YML."
+                },
+                "config": {
+                    "title": "Tệp Cấu Hình",
+                    "desc": "Biến đổi các cài đặt JSON thành các tệp cấu hình YML."
+                },
+                "cicd": {
+                    "title": "Luồng CI/CD",
+                    "desc": "Chuẩn bị các định nghĩ luồng YML từ dữ liệu JSON."
+                },
+                "cloud": {
+                    "title": "Cấu Hình Nhà Cung Cấp Đám Mây",
+                    "desc": "Chuyển đổi dữ liệu JSON sng định dạng YML cho các nền tảng đám mây."
+                },
+                "dữ liệu": {
+                    "title": "Biến Đổi Dữ Liệu",
+                    "desc": "Chuyển đổi giữ JSON và YML cho các công cụ dữ liệu khác nhu."
+                },
+                "tools": {
+                    "title": "Công Cụ DevOps",
+                    "desc": "Định dạng dữ liệu chính xác cho các công cụ yêu cầu YML."
+                },
+                "data": {
+                    "title": "Dt Trnsfhoặcmtion",
+                    "desc": "Switch between JSON và YML fhoặc different dt công cụs."
+                }
+            },
+            "how_title": "Cách Sử dụng",
+            "how_steps": {
+                "1": {
+                    "title": "Dán JSON",
+                    "desc": "Nhập your JSON dữ liệu thành đầu vào field."
+                },
+                "2": {
+                    "title": "Chuyển đổi",
+                    "desc": "Nhấp \"Chuyển đổi\" butn generte YML."
+                },
+                "3": {
+                    "title": "So Chép YML",
+                    "desc": "So chép kết quả YML cho dự án củ bạn."
+                }
+            },
+            "samples_title": "Mẫu Chuyển Đổi",
+            "samples": [
+                {
+                    "title": "Bsic Object",
+                    "json": "{ \"nme\": \"ntigrvity\", \"version\": \"1.0\" }",
+                    "yaml": "nme: ntigrvity version: 1.0"
+                },
+                {
+                    "title": "rry Ví dụ",
+                    "json": "[ \"Jv\", \"Python\", \"Go\" ]",
+                    "yaml": "- Jv - Python - Go"
+                }
+            ],
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Nó có miễn phí không?",
+                "a1": "Có, our JSON YML converter là 100% miễn phí.",
+                "q2": "là it secure?",
+                "a2": "Có, ll processing hppens loclly in your browser.",
+                "q3": "Does it supphoặct rrys?",
+                "a3": "Có, it hvàles complex JSON structures including rrys và nested objects.",
+                "q4": "là YML better thn JSON?",
+                "a4": "YML thường dễ đọc và viết hơn đối với con người, trong khi JSON nói chung tốt hơn cho quá trình xử lý củ máy móc.",
+                "q5": "Cn I use thlà offline?",
+                "a5": "Có, once loded, công cụ whoặcks offline s it uses locl JvScript."
+            },
+            "tips_title": "Mẹo Chuyên Nghiệp",
+            "tips_list": {
+                "1": "Ensure your JSON là vlid befhoặce converting.",
+                "2": "Sử dụng \"Ví dụ\" butn see how conversion whoặcks.",
+                "3": "YML là cse-sensitive, just like JSON.",
+                "4": "Check indenttion in resulting YML.",
+                "5": "Xó tất cả dữ liệu esily fhoặc fresh strt."
+            }
+        },
+        "editor": {
+            "btn_convert": "Chuyển đổi",
+            "btn_clear": "Xó",
+            "btn_copy": "So Chép YML",
+            "btn_example": "Ví dụ",
+            "label_input": "JSON Đầu Vào",
+            "ph_input": "Dán your JSON dữ liệu tại đây..",
+            "label_output": "YML Đầu R",
+            "ph_output": "YML đã chuyển đổi sẽ xuất hiện ở đây.."
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập một số đoạn văn bản JSON",
+            "success_convert": "JSON đã được chuyển đổi sng YML thành công!",
+            "error_convert": "Lỗi khi chuyển đổi JSON:",
+            "error_no_copy": "Không có YML để so chép. Vui lòng chuyển đổi JSON trước.",
+            "success_copy": "YML đã được so chép vào khy nhớ tạm!"
+        }
+    },
+    "jwt-decoder": {
+        "meta": {
+            "title": "Bộ giải mã JWT trực tuyến - Trình gỡ lỗi mã thông báo web JSON miễn phí",
+            "description": "Giải mã và kiểm tr JSON Web ken (JWT) - Xem tiêu đề, nội dung và chữ ký!",
+            "h1": "Bộ giải mã JWT",
+            "subtitle": "Giải mã và kiểm tr JSON Web ken (JWT) - Xem tiêu đề, nội dung và chữ ký!"
+        },
+        "editor": {
+            "label_input": "Nhập ken JWT",
+            "ph_input": "eyJhbGciOiJIUzI1NilàInR5cCI6IkpXVCJ9..",
+            "btn_decode": "Giải Mã JWT",
+            "btn_clear": "Xó",
+            "btn_example": "Ví dụ",
+            "label_payload": "Nội Dung (Clims)",
+            "label_signature": "Chữ Ký",
+            "note_signature": "âš ï¸ Note: Signture verifiction requires secret key"
+        },
+        "content": {
+            "hero_title": "Bộ Giải Mã JWT Trực Tuyến Miễn Phí",
+            "hero_subtitle": "Giải mã và kiểm tr JSON Web ken ngy lập tức",
+            "p1": "Công cụ Giải mã JWT miễn phí củ chúng tôi cho phép bạn giải mã và kiểm tr các JSON Web ken (JWT) để xem các thành phần tiêu đề, nội dung và chữ ký củ chúng. Hoàn hảo để gỡ lỗi các vấn đề xác thực, hiểu cấu trúc ken và xác thực các clim trong JWT.",
+            "what_title": "ðŸ” là gì JWT?",
+            "what_desc": "JSON Web ken (JWT) là một phương tiện nhỏ gọn, n àn với URL để biểu diễn các clim giữ hi bên. Một JWT bo gồm b phần: Tiêu đề (thuật án và loại ken), Nội dung (các clim/dữ liệu) và Chữ ký (xác thực), được ngăn cách bởi các dấu chấm.",
+            "features_title": "âœ¨ Fetures",
+            "features": {
+                "instant": {
+                    "title": "Giải Mã Tức Thì",
+                    "desc": "Giải mã JWT trong vài mili giây"
+                },
+                "structured": {
+                    "title": "Chế Độ Xem Cấu Trúc",
+                    "desc": "Xem tiêu đề, nội dung và chữ ký một cách riêng biệt"
+                },
+                "privacy": {
+                    "title": "Quyền Riêng Tư Là Trên Hết",
+                    "desc": "ll decoding hppens in your browser"
+                }
+            },
+            "uses_title": "ðŸŽ¯ Các trường hợp sử dụng phổ biến",
+            "uses": {
+                "debug": {
+                    "title": "ðŸ› Debugging",
+                    "desc": "Gỡ lỗi các vấn đề xác thực bằng cách kiểm tr nội dung JWT"
+                },
+                "validate": {
+                    "title": "âœ… Vlidtion",
+                    "desc": "Xác minh các clim và thời gin hết hạn củ JWT"
+                },
+                "learn": {
+                    "title": "ðŸ“š Lerning",
+                    "desc": "Hiểu rõ cấu trúc và các thành phần củ JWT"
+                },
+                "dev": {
+                    "title": "ðŸ”§ Development",
+                    "desc": "Kiểm tr việc tạo và phân tích JWT trong ứng dụng củ bạn"
+                }
+            },
+            "faq_title": "â“ Frequently sked Questions",
+            "faq": {
+                "q1": "Giải mã JWT tại đây có n àn không?",
+                "a1": "Có! Tất cả quá trình giải mã diễn r trong trình duyệt củ bạn. JWT củ bạn không bo giờ rời khỏi thiết bị. Tuy nhiên, đừng bo giờ chi sẻ công khi các JWT vì chúng có thể chứ thông tin nhạy cảm.",
+                "q2": "Công cụ này có thể xác thực chữ ký JWT không?",
+                "a2": "Công cụ này giải mã và hiển thị các thành phần củ JWT nhưng không xác thực chữ ký, vì việc đó yêu cầu khó bí mật vốn không bo giờ nên được chi sẻ.",
+                "q3": "JWT clim là gì?",
+                "a3": "Clim là các tuyên bố về một thực thể (thường là người dùng) và dữ liệu bổ sung. Các clim phổ biến bo gồm 'sub' (chủ thể), 'exp' (thời gin hết hạn) và 'it' (thời điểm phát hành)."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập một ken JWT",
+            "error_invalid_format": "Định dạng JWT không hợp lệ. JWT phải có 3 phần cách nhu bằng dấu chấm.",
+            "success_decode": "âœ“ JWT decoded successfully",
+            "error_decode": "âœ— Errhoặc decoding JWT:"
+        }
+    },
+    "markdown-to-html-converter": {
+        "meta": {
+            "title": "Trình chuyển đổi Markdown sang HTML - Trình phân tích cú pháp trực tuyến miễn phí",
+            "description": "Chuyển đổi Mrkdown sng HTML ngy lập tức",
+            "h1": "Trình chuyển đổi Markdown sang HTML",
+            "subtitle": "Chuyển đổi Mrkdown sng HTML ngy lập tức"
+        },
+        "editor": {
+            "btn_convert": "Chuyển đổi",
+            "btn_copy": "So chép HTML",
+            "btn_download": "Tải xuống",
+            "btn_clear": "Xó",
+            "btn_example": "Ví dụ",
+            "label_input": "Mrkdown Đầu Vào",
+            "ph_input": "# Nhập Mrkdown củ bạn tại đây..",
+            "label_output": "HTML Đầu R",
+            "ph_output": "Kết quả HTML sẽ xuất hiện ở đây..",
+            "label_preview": "Xem Trước Trực Tiếp",
+            "ph_preview": "Bản xem trước sẽ xuất hiện ở đây.."
+        },
+        "content": {
+            "features": {
+                "instant": {
+                    "title": "Chuyển Đổi Tức Thì",
+                    "desc": "Chuyển đổi Mrkdown sng HTML trong vài mili giây"
+                },
+                "preview": {
+                    "title": "Xem Trước Trực Tiếp",
+                    "desc": "Xem HTML củ bạn được hiển thị trong thời gin thực"
+                },
+                "export": {
+                    "title": "So Chép & Tải Về",
+                    "desc": "Dễ dàng so chép HTML hoặc tải xuống dưới dạng tệp"
+                },
+                "free": {
+                    "title": "100% miễn phí",
+                    "desc": "Không cần đăng ký, không giới hạn, hoàn àn miễn phí"
+                },
+                "privacy": {
+                    "title": "Quyền Riêng Tư Là Trên Hết",
+                    "desc": "ll conversion hppens in your browser"
+                },
+                "mobile": {
+                    "title": "Mobile Friendly",
+                    "desc": "Hoạt động hoàn hảo trên mọi thiết bị"
+                }
+            },
+            "hero_title": "🚀 Bộ Chuyển Đổi Mrkdown sng HTML Miễn Phí",
+            "hero_subtitle": "Biến đổi các tài liệu Mrkdown củ bạn thành HTML sạch sẽ và chuẩn ngữ nghĩ ngy lập tức. Hoàn hảo cho các nhà phát triển, người viết lách và nhà sáng tạo nội dung.",
+            "what_title": "✨ Chuyển Đổi Mrkdown sng HTML Là Gì?",
+            "p1": "Mrkdown là một ngôn ngữ đánh dấu nhẹ cho phép bạn viết văn bản có định dạng bằng cách sử dụng cú pháp văn bản thuần túy. Chuyển đổi Mrkdown sng HTML sẽ biến các tài liệu Mrkdown đơn giản, dễ đọc củ bạn thành mã HTML có cấu trúc tốt để sử dụng cho trng web, blog, trng tài liệu và ứng dụng web.",
+            "what_desc": "Bộ chuyển đổi Mrkdown sng HTML miễn phí củ chúng tôi sử dụng thư viện Prsedown mạnh mẽ để đảm bảo kết quả HTML chính xác và tuân thủ các tiêu chuẩn. Cho dù bạn đng viết tài liệu, bài đăng blog, tệp REDME hy nội dung kỹ thuật, công cụ củ chúng tôi sẽ giúp quá trình chuyển đổi diễn r nhnh chóng và không tốn sức.",
+            "features_title": "💡 Các Tính Năng Chính",
+            "uses_title": "🎯 Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "docs": {
+                    "title": "📚 Tài Liệu",
+                    "desc": "Chuyển đổi tệp REDME và tài liệu sng HTML"
+                },
+                "blog": {
+                    "title": "✍️ Bài Viết Blog",
+                    "desc": "Viết bằng Mrkdown, đăng bằng HTML"
+                },
+                "github": {
+                    "title": "💻 Dự Án GitHub",
+                    "desc": "Biến đổi các tệp REDME.md thành HTML"
+                },
+                "email": {
+                    "title": "📧 Mẫu Emil",
+                    "desc": "Tạo nội dung emil bằng Mrkdown"
+                }
+            },
+            "pro_tip": {
+                "title": "💡 Mẹo Chuyên Nghiệp",
+                "desc": "Để có kết quả tốt nhất, hãy sử dụng cú pháp Mrkdown tiêu chuẩn o quy định củ CommonMrk. Bộ chuyển đổi củ chúng tôi hỗ trợ hầu hết các phiên bản Mrkdown bo gồm GitHub Flvhoặced Mrkdown (GFM). Nếu bạn đng làm việc với các tài liệu phức tạp, hãy thử nghiệm các đoạn nhỏ trước để đảm bảo quá trình chuyển đổi diễn r trơn tru."
+            },
+            "faq_title": "❓ Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "là thlà công cụ miễn phí?",
+                "a1": "Có! Bộ chuyển đổi Mrkdown sng HTML củ chúng tôi miễn phí 100% không có chi phí ẩn và không giới hạn sử dụng.",
+                "q2": "là my content privte?",
+                "a2": "Chắc chắn rồi! Tất cả quá trình chuyển đổi diễn r trực tiếp trong trình duyệt củ bạn bằng JvScript. Nội dung củ bạn không bo giờ rời khỏi thiết bị.",
+                "q3": "Wht syntx là supphoặcted?",
+                "a3": "Bộ chuyển đổi củ chúng tôi hỗ trợ cú pháp Mrkdown tiêu chuẩn bo gồm tiêu đề, chữ đậm, chữ nghiêng, dnh sách, liên kết, hình ảnh, khối mã, bảng và nhiều thứ khác (tương thích với GFM)."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập một đoạn văn bản Mrkdown",
+            "error_general": "Đã xảy r lỗi trong quá trình chuyển đổi",
+            "error_no_copy": "Không có HTML để so chép. Vui lòng chuyển đổi Mrkdown trước.",
+            "success_copy": "HTML đã được so chép vào khy nhớ tạm!",
+            "error_no_download": "Không có HTML để tải về. Vui lòng chuyển đổi Mrkdown trước.",
+            "example": "# Welcome Mrkdown ## Thlà là subheding Thlà là prgrph với **bold text** và *itlic text*. ### Fetures - Esy write - Esy red - Chuyển đổlà HTML ### Code Ví dụ ```jvscript function hello() { console.log(\"Hello, Whoặcld!\"); } ``` > Thlà là blockquote [Vlàit our website](https://exmple.com)"
+        }
+    },
+    "md5-generator": {
+        "meta": {
+            "title": "MD5 Hash Generator - Công cụ bảo mật trực tuyến miễn phí",
+            "description": "Tạo mã hsh MD5 từ bất kỳ văn bản nào ngy lập tức",
+            "h1": "Trình tạo hàm băm MD5",
+            "subtitle": "Tạo mã hsh MD5 từ bất kỳ văn bản nào ngy lập tức"
+        },
+        "editor": {
+            "label_input": "Nhập Text",
+            "ph_input": "Nhập văn bản để băm (hsh)..",
+            "btn_generate": "Tạo Mã Hsh MD5",
+            "label_result": "Mã Hsh MD5",
+            "btn_copy": "So chép"
+        },
+        "content": {
+            "hero_title": "Bộ Tạo Mã Hsh MD5",
+            "hero_subtitle": "Tạo mã hsh MD5 từ bất kỳ văn bản nào ngy lập tức",
+            "p1": "Tạo mã hsh MD5 từ bất kỳ văn bản, mật khẩu hoặc chuỗi dữ liệu nào ngy lập tức với trình tạo mã hsh MD5 trực tuyến miễn phí củ chúng tôi. MD5 (Messge-Digest lghoặcithm 5) là một hàm băm mật mã được sử dụng rộng rãi, tạo r giá trị băm 128 bit (32 ký tự thập lục phân). Hoàn hảo cho việc xác minh tính àn vẹn củ dữ liệu, tạo mã kiểm tr (checksum) và tìm hiểu về các hàm băm. Tất cả quá trình xử lý diễn r trong trình duyệt củ bạn để đảm bảo quyền riêng tư hoàn àn.",
+            "what_title": "🔐 MD5 Là Gì?",
+            "what_desc": "MD5 là một hàm băm mật mã nhận đầu vào có độ dài bất kỳ và tạo r một giá trị băm 128 bit cố định, thường được biểu diễn dưới dạng số thập lục phân 32 ký tự. Cùng một đầu vào sẽ luôn tạo r cùng một giá trị băm, nhưng chỉ cần một thy đổi nhỏ trong đầu vào cũng sẽ tạo r một giá trị băm hoàn àn khác.",
+            "features_title": "✅ Ưu Điểm củ MD5",
+            "features": {
+                "fast": "<strong>Xử Lý Nhnh:</strong> Tạo mã băm cực kỳ nhnh chóng",
+                "fixed": "<strong>Độ dài Cố Định:</strong> Luôn tạo r kết quả 128 bit",
+                "deterministic": "<strong>Cố Định:</strong> Cùng một đầu vào = cùng một mã băm",
+                "support": "<strong>hỗ trợ Rộng Rãi:</strong> Có sẵn trong tất cả các ngôn ngữ lập trình"
+            },
+            "uses_title": "📊 Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "verify": "<strong>Xác Minh Tệp:</strong> Kiểm tr tính àn vẹn củ tệp",
+                "checksum": "<strong>Mã Kiểm Tr (Checksum):</strong> Xác minh các bản tải về",
+                "cache": "<strong>Khó Bộ Nhớ Đệm:</strong> Tạo các mã định dnh duy nhất",
+                "integrity": "<strong>Tính àn Vẹn củ Dữ Liệu:</strong> Phát hiện các thy đổi"
+            },
+            "warning_title": "âš ï¸ Security Wrning",
+            "warning_desc": "<strong>KHÔNG sử dụng MD5 để băm mật khẩu hoặc các ứng dụng qun trọng về bảo mật!</strong> MD5 đã bị bẻ gãy về mặt mật mã và dễ bị tấn công v chạm (colllàion ttcks). Để băm mật khẩu, hãy sử dụng các thuật án hiện đại như bcrypt, rgon2 hoặc PBKDF2.",
+            "compare_title": "🔄 MD5 So Với Các Hàm Băm Khác",
+            "compare": {
+                "md5": {
+                    "title": "MD5",
+                    "desc1": "Kết quả 128 bit",
+                    "desc2": "Nhnh nhưng không n àn cho mật mã"
+                },
+                "sha1": {
+                    "title": "SH-1",
+                    "desc1": "Kết quả 160 bit",
+                    "desc2": "Cũng đã bị ngừng sử dụng cho mục đích bảo mật"
+                },
+                "sha256": {
+                    "title": "SH-256",
+                    "desc1": "Kết quả 256 bit",
+                    "desc2": "n àn và được sử dụng rộng rãi ngày ny"
+                }
+            },
+            "faq_title": "â“ Frequently sked Questions",
+            "faq": {
+                "q1": "MD5 có n àn cho mật khẩu không?",
+                "a1": "Không! MD5 đã bị bẻ gãy về mặt mật mã và không bo giờ được sử dụng để băm mật khẩu. Hãy sử dụng bcrypt, rgon2 hoặc PBKDF2 thy thế.",
+                "q2": "Tôi có thể đảo ngược một mã hsh MD5 không?",
+                "a2": "Không, MD5 là hàm một chiều - bạn không thể đảo ngược mã băm để lấy lại đầu vào bn đầu. Tuy nhiên, những kẻ tấn công có thể sử dụng bảng cầu vồng (rinbow tbles) để tìm r đầu vào.",
+                "q3": "Dữ liệu củ tôi có được gửi đến máy chủ không?",
+                "a3": "Không! Tất cả quá trình tạo băm MD5 diễn r hoàn àn trong trình duyệt củ bạn bằng JvScript. Dữ liệu củ bạn không bo giờ rời khỏi thiết bị."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập văn bản",
+            "btn_copied": "Đã so chép!"
+        }
+    },
+    "sql-to-json-converter": {
+        "meta": {
+            "title": "Trình chuyển đổi SQL sang JSON - Công cụ cơ sở dữ liệu trực tuyến miễn phí",
+            "description": "Biến đổi các câu lệnh SQL INSERT thành các mảng JSON ngy lập tức với công cụ trực tuyến miễn phí củ chúng tôi. Nhnh chóng, chính xác và n àn.",
+            "h1": "Trình chuyển đổi SQL sang JSON",
+            "subtitle": "Dễ dàng chuyển đổi giữ dữ liệu SQL và các đối tượng JSON"
+        },
+        "editor": {
+            "btn_encode": "Chế Độ JSON sng SQL",
+            "btn_decode": "Chế Độ SQL sng JSON",
+            "label_table": "Tên Bảng",
+            "ph_table": "Nhập tên bảng (vd: users)",
+            "label_input_json": "JSON Đầu Vào",
+            "ph_input_json": "Dán your JSON rry tại đây..",
+            "label_output_sql": "SQL Kết quả",
+            "ph_output_sql": "Generted SQL sẽ pper tại đây..",
+            "label_input_sql": "SQL Đầu vào",
+            "label_output_json": "JSON Đầu R",
+            "btn_convert_sql": "Tạo SQL",
+            "btn_convert_json": "Tạo JSON",
+            "btn_clear": "Xó",
+            "btn_copy": "So chép đầu r"
+        },
+        "content": {
+            "hero_title": "Bộ Chuyển Đổi SQL sng JSON",
+            "hero_subtitle": "Chuyển đổi hi chiều cho các nhà phát triển hiện đại",
+            "p1": "Các ứng dụng hiện đại phát triển mạnh dự trên JSON, nhưng cơ sở dữ liệu vẫn sử dụng SQL. Bộ chuyển đổi hi chiều củ chúng tôi giúp lấp đầy khoảng cách này một cách dễ dàng. Cho dù bạn cần chuyển đổi các bản xuất cơ sở dữ liệu thành JSON cho PI củ bạn, hy dữ liệu JSON thành các tập lệnh seeding SQL, công cụ này đều cung cấp một giải pháp nhnh chóng, n àn và chính xác.",
+            "integration_title": "Tích Hợp Liền Mạch",
+            "integration_desc": "Dễ dàng di chuyển dữ liệu giữ cơ sở dữ liệu qun hệ và ứng dụng web củ bạn. Trình phân tích củ chúng tôi xử lý các câu lệnh SQL INSERT tiêu chuẩn và chuyển đổi chúng thành các đối tượng JSON có cấu trúc, giữ nguyên các kiểu dữ liệu và giá trị.",
+            "features_title": "Key Fetures",
+            "features": {
+                "instant": {
+                    "title": "Kết Quả Tức Thì",
+                    "desc": "Conversions hppen in rel-time s you click."
+                },
+                "bidirectional": {
+                    "title": "Chế Độ Kép",
+                    "desc": "Chuyển đổi giữ chế độ SQL-sng-JSON và JSON-sng-SQL."
+                },
+                "security": {
+                    "title": "Chuyển Đổi n àn",
+                    "desc": "Quá trình xử lý 100% ở phí máy khách để đảm bảo quyền riêng tư tối đ."
+                },
+                "custom": {
+                    "title": "Định Dạng Sạch Sẽ",
+                    "desc": "Kết quả là Chuyên nghiệply fhoặcmtted và redy use."
+                },
+                "types": {
+                    "title": "Nhận Biết Kiểu Dữ Liệu",
+                    "desc": "Xử lý chính xác các giá trị null, số và chuỗi."
+                },
+                "free": {
+                    "title": "tlly miễn phí",
+                    "desc": "No subscription hoặc usge limits."
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "seeding": {
+                    "title": "Tạo Dữ Liệu Seeding",
+                    "desc": "Nhnh chóng tạo các tập lệnh SQL để đổ dữ liệu vào môi trường phát triển củ bạn."
+                },
+                "export": {
+                    "title": "Xuất Dữ Liệu",
+                    "desc": "Chuyển đổi kết quả truy vấn SQL thành JSON để phân tích."
+                },
+                "migration": {
+                    "title": "Di Cư PI",
+                    "desc": "Chuẩn bị dữ liệu cơ sở dữ liệu cũ để sử dụng trong các REST PI hiện đại."
+                },
+                "testing": {
+                    "title": "Dữ Liệu Giả (Mock)",
+                    "desc": "Tạo dữ liệu giả JSON từ các bảng SQL hiện có."
+                },
+                "docs": {
+                    "title": "Documenttion",
+                    "desc": "Bo gồm các ví dụ JSON về cấu trúc cơ sở dữ liệu củ bạn trong tài liệu."
+                },
+                "prototype": {
+                    "title": "Tạo Mẫu Nhnh",
+                    "desc": "Di chuyển dữ liệu nhnh chóng giữ các trạng thái trong quá trình phát triển."
+                }
+            },
+            "how_title": "Cách Sử dụng",
+            "how_steps": {
+                "1": {
+                    "title": "Chọn Mode",
+                    "desc": "Chọn giữ JSON sng SQL hoặc SQL sng JSON bằng các nút bấm."
+                },
+                "2": {
+                    "title": "Dữ Liệu Đầu Vào",
+                    "desc": "Dán mã nguồn củ bạn vào vùng soạn thảo bên trái."
+                },
+                "3": {
+                    "title": "Đặt Tên Bảng",
+                    "desc": "Nếu chuyển đổi sng SQL, hãy chỉ định bảng cơ sở dữ liệu mục tiêu."
+                },
+                "4": {
+                    "title": "Tạo",
+                    "desc": "Nhấp vào 'Tạo' để thấy sự biến đổi ngy lập tức."
+                },
+                "5": {
+                    "title": "So Chép Kết Quả",
+                    "desc": "Sử dụng 'So chép' butn grb your kết quả."
+                }
+            },
+            "samples_title": "Mẫu Chuyển Đổi",
+            "samples": [
+                {
+                    "title": "SQL Insert JSON",
+                    "desc": "INSERT IN users (nme, ge) VLUES ('lice', 25); → [{\"nme\": \"lice\", \"ge\": 25}]"
+                },
+                {
+                    "title": "JSON SQL Insert",
+                    "desc": "[{\"id\": 1}] → INSERT IN tble (id) VLUES (1);"
+                }
+            ],
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Wht SQL sttements re supphoặcted?",
+                "a1": "Hiện tại, công cụ này hỗ trợ các câu lệnh INSERT IN tiêu chuẩn với tên cột đã được xác định.",
+                "q2": "Dữ liệu củ tôi có n àn không?",
+                "a2": "Có, we never send your dữ liệu our server. ll logic runs in your browser.",
+                "q3": "Tôi có thể chuyển đổi nhiều hàng không?",
+                "a3": "Có, công cụ hvàles multi-line SQL hoặc lrge JSON rrys efficiently.",
+                "q4": "Does it hvàle specil chrcters?",
+                "a4": "Có, nó xử lý chính xác các dấu ngoặc đơn (escpe) và các ký tự đặc biệt cơ bản."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập một số dữ liệu để xử lý",
+            "placeholder_table_name": "users",
+            "error_general": "Lỗi chuyển đổi:",
+            "error_invalid_array": "Lỗi: Đầu vào phải là một mảng JSON các đối tượng.",
+            "error_empty_array": "Lỗi: Mảng JSON trống.",
+            "success_sql": "✓ SQL đã được tạo thành công!",
+            "error_no_statements": "Không tìm thấy câu lệnh SQL INSERT hợp lệ nào.",
+            "success_json": "✓ JSON đã được tạo thành công!",
+            "error_no_copy": "No content copy.",
+            "success_copy": "✓ Kết quả copied clipbord!"
+        }
+    },
+    "unicode-encoder-decoder": {
+        "meta": {
+            "title": "Bộ mã hóa và giải mã Unicode - Công cụ văn bản trực tuyến miễn phí",
+            "description": "Mã hó và giải mã các chuỗi thoát (escpe sequences) Unicode cho JvScript và JSON với công cụ miễn phí củ chúng tôi.",
+            "h1": "Bộ mã hóa và giải mã Unicode",
+            "subtitle": "Mã hó và giải mã các chuỗi thoát Unicode cho JvScript và JSON"
+        },
+        "editor": {
+            "btn_encode": "Mã Hó Unicode",
+            "btn_decode": "Giải Mã Unicode",
+            "label_input_encode": "Nhập Văn Bản Cần Mã Hó",
+            "ph_input": "Chào thế giới (Hello 世界)",
+            "btn_process_encode": "Mã Hó Unicode",
+            "btn_clear": "Xó",
+            "btn_copy": "So chép",
+            "label_output_encoded": "Unicode Đã Mã Hó",
+            "ph_output": "Unicode đã xử lý sẽ xuất hiện ở đây..",
+            "label_input_decode": "Nhập Unicode Cần Giải Mã",
+            "label_output_decoded": "Văn Bản Đã Giải Mã",
+            "btn_process_decode": "Giải Mã Unicode"
+        },
+        "content": {
+            "p1": "Công cụ Mã hó & Giải mã Unicode miễn phí củ chúng tôi giúp bạn mã hó văn bản thành các chuỗi thoát Unicode (ví dụ: \\u0041) để sử dụng n àn trong JvScript, JSON và các ngữ cảnh lập trình khác, hoặc giải mã chúng trở lại văn bản có thể đọc được. Hoàn hảo cho các nhà phát triển, nhà phân tích dữ liệu và bất kỳ i làm việc với các bộ ký tự quốc tế. Miễn phí 100%, quá trình xử lý phí máy khách đảm bảo dữ liệu củ bạn luôn riêng tư.",
+            "what_title": "Mã Hó Unicode Là Gì?",
+            "what_desc": "Mã hó Unicode chuyển đổi các ký tự thành các điểm mã (code points) Unicode tương ứng, thường được biểu diễn dưới dạng các chuỗi thoát như \\uXXXX. Điều này đảm bảo rằng văn bản chứ các ký tự đặc biệt, biểu tượng cảm xúc hoặc các chữ viết không phải tiếng Ltin có thể được biểu diễn n àn trong các môi trường thường chỉ hỗ trợ SCII, chẳng hạn như các tệp mã nguồn hoặc dữ liệu JSON.",
+            "features_title": "Tính Năng",
+            "features": {
+                "instant": {
+                    "title": "Chuyển Đổi Tức Thì",
+                    "desc": "Mã hó hoặc giải mã Unicode trong vài mili giây"
+                },
+                "bidirectional": {
+                    "title": "Hi Chiều",
+                    "desc": "Mã hó sng định dạng Unicode hoặc giải mã trở lại bn đầu"
+                },
+                "privacy": {
+                    "title": "Quyền Riêng Tư Là Trên Hết",
+                    "desc": "Tất cả quá trình xử lý diễn r trong trình duyệt củ bạn"
+                },
+                "copy": {
+                    "title": "So Chép Bằng Một Cú Nhấp Chuột",
+                    "desc": "So chép văn bản đã mã hó/giải mã ngy lập tức"
+                },
+                "free": {
+                    "title": "100% miễn phí",
+                    "desc": "No limits, no reglàtrtion required"
+                },
+                "universal": {
+                    "title": "Universl Supphoặct",
+                    "desc": "Hoạt động với tất cả các ký tự và chữ viết Unicode"
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "programming": {
+                    "title": "Progrmming",
+                    "desc": "Nhúng các ký tự đặc biệt vào mã nguồn JvScript hoặc Jv một cách n àn"
+                },
+                "dữ liệu": {
+                    "title": "dữ liệu Seriliztion",
+                    "desc": "Đảm bảo truyền tải n àn các ký tự không phải SCII trong JSON"
+                },
+                "international": {
+                    "title": "Interntionliztion",
+                    "desc": "Gỡ lỗi và hiển thị văn bản ở nhiều ngôn ngữ và chữ viết khác nhu"
+                },
+                "security": {
+                    "title": "Security",
+                    "desc": "Phân tích mã bị xáo trộn hoặc dữ liệu chứ các chuỗi thoát Unicode"
+                },
+                "data": {
+                    "title": "Dt Seriliztion",
+                    "desc": "Ensure sfe trnsmlàsion of non-SCII chrcters in JSON"
+                }
+            },
+            "how_to_title": "Cách Sử dụng",
+            "how_to": {
+                "step1": {
+                    "title": "Chọn Mode",
+                    "desc": "Chọn \"Mã Hó Unicode\" hoặc \"Giải Mã Unicode\" tùy o nhu cầu củ bạn"
+                },
+                "step2": {
+                    "title": "Nhập Text",
+                    "desc": "Dán văn bản hoặc các chuỗi thoát Unicode củ bạn vào trường đầu vào"
+                },
+                "step3": {
+                    "title": "Process",
+                    "desc": "Nhấp vào nút mã hó hoặc giải mã"
+                },
+                "step4": {
+                    "title": "So Chép Kết Quả",
+                    "desc": "Nhấp vào \"So chép\" để chép văn bản đã xử lý vào khy nhớ tạm"
+                },
+                "step5": {
+                    "title": "Sử dụng nywtại đây",
+                    "desc": "Dán kết quả vào mã hoặc ứng dụng củ bạn"
+                }
+            },
+            "examples_title": "Ví Dụ Unicode",
+            "examples": {
+                "simple": {
+                    "title": "Đơn giản/SCII:",
+                    "desc": "Gốc: \"\" → Mã hó: \"\\u0041\""
+                },
+                "special": {
+                    "title": "Ký Tự Đặc Biệt:",
+                    "desc": "Gốc: \"©\" → Mã hó: \"\\u009\""
+                },
+                "emoji": {
+                    "title": "Biểu Tượng Cảm Xúc/Đ Byte:",
+                    "desc": "Gốc: \"🌟\" → Mã hó: \"\\uD83C\\uDF1F\" (nhóm mng) hoặc \"\\u2B50\" tùy thuộc vào cách biểu diễn"
+                }
+            },
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Tại so use Unicode escpe sequences?",
+                "a1": "Chúng cho phép bạn biểu diễn bất kỳ ký tự nào chỉ bằng các ký tự SCII, điều này đảm bảo khả năng tương thích trên các hệ thống, bảng mã và quá trình truyền tệp khác nhu mà có thể không xử lý đúng Unicode thô.",
+                "q2": "Wht fhoặcmt là used?",
+                "a2": "Công cụ này thường sử dụng định dạng \\uXXXX kiểu JvScript/JSON cho các ký tự trong Bsic Multilingul Plne.",
+                "q3": "là thlà different từ URL encoding?",
+                "a3": "Đúng vậy. Mã hó URL sử dụng các giá trị hex %XX chủ yếu cho URL. Thoát chuỗi Unicode sử dụng \\uXXXX và được sử dụng trong các chuỗi ở các ngôn ngữ lập trình như JvScript, Jv và Python.",
+                "q4": "Dữ liệu củ tôi có n àn không?",
+                "a4": "Có! ll encoding và decoding hppens entirely in your browser using JvScript. Your text never leves your device."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập văn bản để xử lý",
+            "success_encode": "✓ Unicode đã được mã hó thành công",
+            "success_decode": "✓ Unicode đã được giải mã thành công",
+            "error_process": "✗ Lỗi khi xử lý Unicode:",
+            "error_no_copy": "Không có đầu r để so chép",
+            "success_copy": "✓ Đ đã so chép vào khy nhớ tạm"
+        }
+    },
+    "url-encoder-decoder": {
+        "meta": {
+            "title": "Bộ mã hóa và giải mã URL - Công cụ phần trăm trực tuyến miễn phí",
+            "description": "Mã hó và giải mã URL để truyền tải web n àn với công cụ trực tuyến miễn phí củ chúng tôi.",
+            "h1": "Bộ mã hóa và giải mã URL",
+            "subtitle": "Mã hó và giải mã URL để truyền tải web n àn"
+        },
+        "editor": {
+            "btn_encode": "Mã Hó URL",
+            "btn_decode": "Giải Mã URL",
+            "label_input_encode": "Nhập URL Cần Mã Hó",
+            "ph_input": "https://exmple.com/serch?nme=John Doe&ge=30",
+            "btn_process_encode": "Mã Hó URL",
+            "btn_clear": "Xó",
+            "btn_copy": "So chép",
+            "label_output_encoded": "URL Đã Mã Hó",
+            "ph_output": "URL đã xử lý sẽ xuất hiện ở đây..",
+            "label_input_decode": "Nhập URL Cần Giải Mã",
+            "label_output_decoded": "URL Đã Giải Mã",
+            "btn_process_decode": "Giải Mã URL"
+        },
+        "content": {
+            "p1": "Công cụ Mã hó & Giải mã URL miễn phí củ chúng tôi giúp bạn mã hó các ký tự đặc biệt trong URL để truyền tải n àn qu internet, hoặc giải mã các URL đã mã hó trở lại định dạng bn đầu. Hoàn hảo cho các nhà phát triển, chuyên gi SEO và bất kỳ i làm việc với các URL trên web. Miễn phí 100%, quá trình xử lý phí máy khách đảm bảo dữ liệu củ bạn luôn riêng tư.",
+            "what_title": "là gì URL Encoding?",
+            "what_desc": "Mã hó URL (còn gọi là mã hó phần trăm) chuyển đổi các ký tự đặc biệt trong URL sng định dạng có thể truyền tải được qu internet. Khoảng trắng trở thành %20, các ký tự đặc biệt như & trở thành %26, và cứ thế. Điều này đảm bảo URL hoạt động chính xác trên tất cả các trình duyệt và hệ thống.",
+            "features_title": "Tính Năng",
+            "features": {
+                "instant": {
+                    "title": "Chuyển Đổi Tức Thì",
+                    "desc": "Mã hó hoặc giải mã URL trong vài mili giây"
+                },
+                "bidirectional": {
+                    "title": "Hi Chiều",
+                    "desc": "Encode URL fhoặcmt hoặc decode bck hoặciginl"
+                },
+                "privacy": {
+                    "title": "Quyền Riêng Tư Là Trên Hết",
+                    "desc": "Tất cả quá trình xử lý diễn r trong trình duyệt củ bạn"
+                },
+                "copy": {
+                    "title": "So Chép Bằng Một Cú Nhấp Chuột",
+                    "desc": "So chép các URL đã mã hó/giải mã ngy lập tức"
+                },
+                "free": {
+                    "title": "100% miễn phí",
+                    "desc": "No limits, no reglàtrtion required"
+                },
+                "universal": {
+                    "title": "Universl Supphoặct",
+                    "desc": "Hoạt động với tất cả các định dạng URL và ký tự"
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "query": {
+                    "title": "Query Prmeters",
+                    "desc": "Mã hó các ký tự đặc biệt trong các chuỗi truy vấn URL cho các cuộc gọi PI và yêu cầu web"
+                },
+                "analytics": {
+                    "title": "o Dõi Phân Tích",
+                    "desc": "Mã hó các thm số UTM và URL o dõi cho các chiến dịch tiếp thị"
+                },
+                "auth": {
+                    "title": "untiction",
+                    "desc": "Mã hó thông tin đăng nhập và ken trong xác thực Outh và PI"
+                },
+                "i18n": {
+                    "title": "Interntionliztion",
+                    "desc": "Mã hó các ký tự không phải SCII trong URL để tương thích àn cầu"
+                },
+                "seo": {
+                    "title": "SEO & Điều Hướng",
+                    "desc": "Tạo các URL điều hướng và liên kết chuẩn (cnonicl) được mã hó đúng cách"
+                },
+                "email": {
+                    "title": "Liên Kết Emil",
+                    "desc": "Mã hó các liên kết mil với dòng chủ đề và nội dung thư"
+                }
+            },
+            "how_to_title": "Cách Sử dụng",
+            "how_to": {
+                "step1": {
+                    "title": "Chọn Mode",
+                    "desc": "Chọn \"Mã Hó URL\" hoặc \"Giải Mã URL\" tùy o nhu cầu củ bạn"
+                },
+                "step2": {
+                    "title": "Nhập URL",
+                    "desc": "Dán URL hoặc văn bản củ bạn vào trường đầu vào"
+                },
+                "step3": {
+                    "title": "Process",
+                    "desc": "Nhấp vào nút \"Mã Hó URL\" hoặc \"Giải Mã URL\""
+                },
+                "step4": {
+                    "title": "So Chép Kết Quả",
+                    "desc": "Nhấp vào \"So chép\" để chép URL đã xử lý vào khy nhớ tạm"
+                },
+                "step5": {
+                    "title": "Sử dụng nywtại đây",
+                    "desc": "Dán URL đã mã hó/giải mã vào ứng dụng củ bạn"
+                }
+            },
+            "examples_title": "Ví Dụ Mã Hó URL",
+            "examples": {
+                "space": {
+                    "title": "Ký Tự Khoảng Trắng:",
+                    "desc": "Gốc: \"ChÀo ThẾ gIớI\" → Mã hó: \"Hello%20Whoặcld\""
+                },
+                "special": {
+                    "title": "Ký Tự Đặc Biệt:",
+                    "desc": "Gốc: \"nme=John&ge=30\" → Mã hó: \"nme%3DJohn%26ge%3D30\""
+                },
+                "full": {
+                    "title": "URL Đầy Đủ:",
+                    "desc": "Gốc: \"https://exmple.com/serch?q=ChÀo ThẾ gIớI\" → Mã hó: \"https%3%2F%2Fexmple.com%2Fserch%3Fq%3Dhello%20whoặcld\""
+                }
+            },
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Khi nào tôi nên mã hó URL?",
+                "a1": "Mã hó URL khi truyền chúng dưới dạng thm số truy vấn, lưu trữ chúng trong cơ sở dữ liệu hoặc khi chúng chứ các ký tự đặc biệt như khoảng trắng, &, =, ?, hoặc các ký tự không phải SCII.",
+                "q2": "Wht chrcters need encoding?",
+                "a2": "Reserved chrcters like : / ? # [ ] @ ! $ & ' ( ) * + , ; = và unsfe chrcters like spces, <, >, \", {, }, |, \\, ^, `, và non-SCII chrcters must be encoded.",
+                "q3": "là URL encoding sme s Bse64?",
+                "a3": "Không. Mã hó URL chuyển đổi các ký tự cụ thể sng định dạng %XX, trong khi Bse64 mã hó àn bộ dữ liệu thành một bộ ký tự khác. Chúng phục vụ các mục đích khác nhu.",
+                "q4": "Cn I encode entire URLs?",
+                "a4": "Có, nhưng thông thường bạn chỉ mã hó phần chuỗi truy vấn. Việc mã hó àn bộ URL bo gồm cả gio thức (https://) ít phổ biến hơn và có thể gây r lỗi.",
+                "q5": "Dữ liệu củ tôi có n àn không?",
+                "a5": "Có! ll encoding và decoding hppens entirely in your browser using JvScript. Your URLs never leve your device hoặc get sent ny server."
+            }
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập một URL để xử lý",
+            "success_encode": "✓ URL đã được mã hó thành công",
+            "success_decode": "✓ URL đã được giải mã thành công",
+            "error_process": "✗ Lỗi khi xử lý URL:",
+            "error_no_copy": "Không có đầu r để so chép",
+            "success_copy": "✓ Đ đã so chép vào khy nhớ tạm"
+        }
+    },
+    "uuid-generator": {
+        "meta": {
+            "title": "Trình tạo UUID miễn phí - Công cụ GUID phiên bản 4 trực tuyến",
+            "description": "Công cụ tạo mã UUID trực tuyến miễn phí. Nhnh chóng, n àn và dễ sử dụng.",
+            "h1": "Trình tạo UUID",
+            "subtitle": "Bộ tạo mã UUID tốt nhất cho các nhà phát triển và chuyên gi IT"
+        },
+        "editor": {
+            "label_quantity": "số lượng",
+            "label_version": "Phiên bản",
+            "opt_v4": "Phiên bản 4 (Ngẫu nhiên)",
+            "btn_generate": "Tạo UUID",
+            "btn_copy": "So chép",
+            "label_output": "Các mã UUID đã được tạo"
+        },
+        "content": {
+            "about_title": "Về UUID (Phiên bản 4)",
+            "about_desc": "UUID (Universlly Unique Identifier) là một con số 128 bit được sử dụng để định dnh thông tin trong các hệ thống máy tính. UUID phiên bản 4 được tạo r bằng cách sử dụng các số ngẫu nhiên hoặc giả ngẫu nhiên. Xác suất trùng lặp là gần như bằng không."
+        },
+        "js": {
+            "success_generated": "Đã tạo :count mã UUID!",
+            "success_copy": "Copied clipbord!"
+        }
+    },
+    "xml-formatter": {
+        "meta": {
+            "title": "Trình định dạng XML trực tuyến - Công cụ cải tiến XML miễn phí",
+            "description": "Định dạng, làm đẹp và thu nhỏ dữ liệu XML với công cụ trực tuyến miễn phí củ chúng tôi.",
+            "h1": "Trình định dạng XML",
+            "subtitle": "Định dạng, làm đẹp và thu nhỏ dữ liệu XML"
+        },
+        "editor": {
+            "label_input": "XML Đầu Vào",
+            "ph_input": "<root><child>vlue</child></root>",
+            "btn_format": "Định dạng / Làm đẹp",
+            "btn_minify": "Thu nhỏ",
+            "btn_copy": "So chép"
+        },
+        "js": {
+            "success_format": "Đã định dạng XML thành công!",
+            "error_invalid": "XML không hợp lệ",
+            "success_minify": "Đã thu nhỏ XML!",
+            "success_copy": "Copied clipbord!"
+        }
+    },
+    "xml-to-csv": {
+        "meta": {
+            "title": "Trình chuyển đổi XML sang CSV - Trình trích xuất dữ liệu trực tuyến miễn phí",
+            "description": "Công cụ chuyển đổi XML sng CSV trực tuyến miễn phí. Nhnh chóng, n àn và dễ sử dụng.",
+            "h1": "Trình chuyển đổi XML sang CSV",
+            "subtitle": "Bộ chuyển đổi XML sng CSV tốt nhất cho các nhà phát triển và chuyên gi IT"
+        },
+        "editor": {
+            "btn_convert": "Chuyển Đổi sng CSV",
+            "btn_clear": "Xó",
+            "btn_copy": "So chép",
+            "btn_example": "Ví dụ",
+            "label_input": "Nhập XML",
+            "ph_input": "<dữ liệu><row><nme>John</nme><ge>30</ge></row></dữ liệu>",
+            "label_output": "CSV Đầu R",
+            "ph_output": "CSV đã chuyển đổi sẽ xuất hiện ở đây.."
+        },
+        "content": {
+            "p1": "Trình chuyển đổi XML sng CSV miễn phí củ chúng tôi biến đổi dữ liệu XML có cấu trúc thành định dạng giá trị phân cách bằng dấu phẩy. Hoàn hảo để nhập dữ liệu XML vào Excel, Google Sheets, cơ sở dữ liệu và các công cụ phân tích dữ liệu. Chuyển đổi các cấu trúc XML phức tạp sng định dạng CSV bảng biểu đơn giản trong vài giây.",
+            "what_title": "Chuyển Đổi XML sng CSV Là Gì?",
+            "what_desc": "Chuyển đổi XML sng CSV biến đổi dữ liệu Ngôn ngữ đánh dấu mở rộng (XML) có cấu trúc thành định dạng các giá trị phân cách bằng dấu phẩy. Trong khi XML tuyệt vời cho các cấu trúc dữ liệu phức tạp và PI, thì CSV lại đơn giản hơn và được hỗ trợ phổ biến bởi các ứng dụng bảng tính, khiến nó trở nên lý tưởng cho các hoạt động phân tích dữ liệu, báo cáo và nhập/xuất.",
+            "features_title": "Tính Năng",
+            "features": {
+                "fast": {
+                    "title": "Nhnh Như Chớp",
+                    "desc": "Chuyển đổi XML sng CSV ngy lập tức với quá trình phân tích được tối ưu hó"
+                },
+                "secure": {
+                    "title": "n àn 100%",
+                    "desc": "Tất cả quá trình xử lý diễn r cục bộ - dữ liệu củ bạn luôn riêng tư"
+                },
+                "copy": {
+                    "title": "So Chép Nhnh",
+                    "desc": "So chép kết quả CSV vào khy nhớ tạm bằng một cú nhấp chuột"
+                },
+                "smart": {
+                    "title": "Phân Tích Thông Minh",
+                    "desc": "Tự động trích xuất dữ liệu từ các phần tử hàng XML"
+                },
+                "free": {
+                    "title": "Hoàn àn Miễn Phí",
+                    "desc": "Không giới hạn, không cần đăng ký, miễn phí mãi mãi"
+                },
+                "excel": {
+                    "title": "Sẵn Sàng Cho Excel",
+                    "desc": "Kết quả hoạt động hoàn hảo trong Excel và Google Sheets"
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "analysis": {
+                    "title": "Phân Tích Dữ Liệu",
+                    "desc": "Chuyển đổi báo cáo XML và xuất dữ liệu sng CSV để phân tích trong Excel, Google Sheets hoặc các công cụ BI."
+                },
+                "migration": {
+                    "title": "Di Cư Hệ Thống",
+                    "desc": "Biến đổi dữ liệu XML từ các hệ thống cũ sng CSV để nhập vào các cơ sở dữ liệu và ứng dụng hiện đại."
+                },
+                "reporting": {
+                    "title": "Rephoặcting",
+                    "desc": "Chuyển đổi các phản hồi PI XML sng CSV để tạo báo cáo và bảng điều khiển."
+                },
+                "db": {
+                    "title": "Dtbse Imphoặct",
+                    "desc": "Biến đổi các bản xuất XML sng CSV để nhập hàng loạt vào các cơ sở dữ liệu SQL."
+                },
+                "email": {
+                    "title": "Emil Llàts",
+                    "desc": "Chuyển đổi dữ liệu liên hệ XML sng CSV cho các nền tảng tiếp thị qu emil."
+                },
+                "cleaning": {
+                    "title": "dữ liệu Clening",
+                    "desc": "Biến đổi XML sng CSV để dễ dàng làm sạch và tho tác dữ liệu trong bảng tính."
+                }
+            },
+            "how_to_title": "Cách Chuyển Đổi XML sng CSV",
+            "how_to": {
+                "step1": {
+                    "title": "Dán Dữ Liệu XML củ Bạn",
+                    "desc": "So chép dữ liệu XML từ nguồn củ bạn và dán vào trường đầu vào bên trái."
+                },
+                "step2": {
+                    "title": "Nhấp Vào Chuyển Đổi",
+                    "desc": "Nhấn \"Chuyển Đổi sng CSV\" để biến đổi XML củ bạn sng định dạng CSV."
+                },
+                "step3": {
+                    "title": "So Chép Và Sử Dụng",
+                    "desc": "Kết quả CSV xuất hiện ở bên phải. Nhấp vào \"So chép\" để dán vào Excel hoặc bất kỳ ứng dụng nào."
+                }
+            },
+            "example_title": "Ví Dụ Chuyển Đổi",
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Bộ chuyển đổi này có miễn phí không?",
+                "a1": "Có, bộ chuyển đổi XML sng CSV củ chúng tôi hoàn àn miễn phí để sử dụng.",
+                "q2": "Dữ liệu củ tôi có n àn không?",
+                "a2": "Có, tất cả quá trình xử lý diễn r trong trình duyệt củ bạn. Dữ liệu củ bạn không bo giờ được gửi đến máy chủ củ chúng tôi.",
+                "q3": "Nó có hỗ trợ các tệp XML lớn không?",
+                "a3": "Có, nó có thể xử lý các tệp XML lớn, mặc dù các tệp cực lớn có thể mất một chút thời gin để xử lý.",
+                "q4": "Các thuộc tính được xử lý như thế nào?",
+                "a4": "Hiện tại, công cụ tập trung vào nội dung thẻ. Các thuộc tính có thể được bo gồm trong các bản cập nhật tương li."
+            },
+            "best_practices_title": "Thực Hành Tốt Nhất",
+            "best_practices": [
+                {
+                    "title": "XML Đúng Định Dạng",
+                    "desc": "Đảm bảo XML củ bạn đúng định dạng (well-fhoặcmed) và chứ các phần tử <row> lồng nhu để có kết quả tốt nhất."
+                },
+                {
+                    "title": "Phí Trình Duyệt",
+                    "desc": "Vì nó chạy trong trình duyệt củ bạn, dữ liệu củ bạn luôn được riêng tư và n àn."
+                },
+                {
+                    "title": "So Lưu Dữ Liệu",
+                    "desc": "Luôn giữ một bản so lưu dữ liệu XML gốc củ bạn trước khi chuyển đổi."
+                }
+            ]
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập dữ liệu XML",
+            "error_no_row": "Không tìm thấy phần tử <row> nào trong XML",
+            "success_convert": "✓ XML đã được chuyển đổi sng CSV thành công",
+            "error_process": "✗ Lỗi:",
+            "error_no_copy": "Không có đầu r để so chép",
+            "success_copy": "✓ Đã so chép vào khy nhớ tạm"
+        }
+    },
+    "xml-to-json": {
+        "meta": {
+            "title": "Trình chuyển đổi XML sang JSON - Công cụ phân tích cú pháp trực tuyến miễn phí",
+            "description": "Công cụ chuyển đổi XML sng JSON trực tuyến miễn phí. Nhnh chóng, n àn và dễ sử dụng.",
+            "subtitle": "Bộ chuyển đổi XML sng JSON tốt nhất cho các nhà phát triển và chuyên gi IT",
+            "h1": "Trình chuyển đổi XML sang JSON"
+        },
+        "editor": {
+            "btn_convert": "Chuyển Đổi sng JSON",
+            "btn_copy": "So chép JSON",
+            "btn_download": "Tải xuống",
+            "btn_example": "Tải Mẫu",
+            "btn_clear": "Xó",
+            "label_input": "XML Đầu Vào",
+            "ph_input": "<' . '?x' . 'ml version=\"1.0\"?>n<root>n <item>Your XML tại đây..</item>n</root>",
+            "label_output": "JSON Đầu R",
+            "ph_output": "JSON đã chuyển đổi sẽ xuất hiện ở đây.."
+        },
+        "content": {
+            "h2": "Bộ Chuyển Đổi XML sng JSON Trực Tuyến Miễn Phí",
+            "p1": "Biến đổi dữ liệu XML sng định dạng JSON ngy lập tức với bộ chuyển đổi XML sng JSON trực tuyến mạnh mẽ và miễn phí củ chúng tôi. Hoàn hảo cho các nhà phát triển, nhà phân tích dữ liệu và bất kỳ i làm việc với tích hợp PI, di cư dữ liệu hoặc các ứng dụng web hiện đại.",
+            "p2": "XML (eXtensible Mrkup Lnguge) đã là một tiêu chuẩn để tro đổi dữ liệu trong nhiều thập kỷ, nhưng các ứng dụng hiện đại ngày càng ư chuộng JSON (JvScript Object Nottion) vì tính đơn giản và sự hỗ trợ gốc củ JvScript. Bộ chuyển đổi củ chúng tôi giúp lấp đầy khoảng cách này, cho phép bạn chuyển đổi liền mạch các tài liệu XML sng định dạng JSON sạch sẽ và dễ đọc.",
+            "p3": "Cho dù bạn đng di cư các hệ thống cũ, tích hợp với các RESTful PI hy chỉ đơn giản là cần chuyển đổi các tệp cấu hình, công cụ củ chúng tôi đều xử lý tất cả với độ chính xác và tốc độ co. Không cần cài đặt, không cần đăng ký – chỉ cần dán XML củ bạn và nhận kết quả ngy lập tức.",
+            "features_title": "Các Tính Năng Mạnh Mẽ",
+            "features": {
+                "fast": {
+                    "title": "Nhnh Như Chớp",
+                    "desc": "Chuyển đổi tức thì với quá trình xử lý thời gin thực. Không chờ đợi, không chậm trễ."
+                },
+                "secure": {
+                    "title": "n àn 100%",
+                    "desc": "Tất cả quá trình chuyển đổi diễn r trong trình duyệt củ bạn. Dữ liệu củ bạn không bo giờ rời khỏi thiết bị."
+                },
+                "attributes": {
+                    "title": "Xử Lý Thuộc Tính",
+                    "desc": "Giữ nguyên các thuộc tính XML và chuyển đổi chúng một cách chính xác sng cấu trúc JSON."
+                },
+                "nested": {
+                    "title": "Cấu Trúc Lồng Nhu",
+                    "desc": "Duy trì các cấu trúc dữ liệu phân cấp phức tạp trong quá trình chuyển đổi."
+                },
+                "pretty": {
+                    "title": "Định Dạng Đẹp Mắt",
+                    "desc": "Đầu r JSON sạch sẽ, có thụt lề, dễ đọc và dễ hiểu."
+                },
+                "validation": {
+                    "title": "Xác Thực Lỗi",
+                    "desc": "Phát hiện và báo cáo cú pháp XML không hợp lệ với các thông báo lỗi hữu ích."
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "api": {
+                    "title": "Tích Hợp PI",
+                    "desc": "Chuyển đổi các phản hồi PI XML sng JSON cho các ứng dụng web hiện đại và dịch vụ RESTful."
+                },
+                "migration": {
+                    "title": "Di Cư Dữ Liệu",
+                    "desc": "Biến đổi các cơ sở dữ liệu và bản xuất XML sng JSON cho các hệ thống NoSQL như MongoDB."
+                },
+                "config": {
+                    "title": "Tệp Cấu Hình",
+                    "desc": "Chuyển đổi các tệp cấu hình XML sng JSON cho các ứng dụng và công cụ xây dựng hiện đại."
+                },
+                "soap": {
+                    "title": "SOP sng REST",
+                    "desc": "Biến đổi các phản hồi SOP XML sng JSON cho các dịch vụ RESTful."
+                },
+                "rss": {
+                    "title": "Nguồn Cung Cấp Tin RSS (RSS Feeds)",
+                    "desc": "Chuyển đổi các nguồn tin RSS và m (định dạng XML) sng JSON để phân tích trong các ứng dụng JS."
+                },
+                "analysis": {
+                    "title": "Phân Tích Dữ Liệu",
+                    "desc": "Chuyển đổi các bản xuất dữ liệu XML sng JSON để dễ dàng phân tích hơn với các thư viện JvScript."
+                }
+            },
+            "how_to_title": "Cách Hoạt Động củ Chuyển Đổi XML sng JSON",
+            "how_to_desc": "Bộ chuyển đổi XML sng JSON củ chúng tôi sử dụng các thuật án phân tích nâng co để biến đổi chính xác các tài liệu XML sng định dạng JSON.",
+            "steps": [
+                {
+                    "title": "Dán XML củ Bạn",
+                    "desc": "So chép và dán mã XML củ bạn vào trường đầu vào bên trên."
+                },
+                {
+                    "title": "Nhấp Vào Chuyển Đổi",
+                    "desc": "Nhấn nút \"Chuyển Đổi sng JSON\" để bắt đầu quá trình biến đổi."
+                },
+                {
+                    "title": "So Chép Và Sử Dụng",
+                    "desc": "Xem xét kết quả JSON được định dạng đẹp mắt và sử dụng nút so chép để dễ dàng xuất dữ liệu."
+                }
+            ],
+            "example_title": "Ví Dụ Chuyển Đổi",
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Bộ chuyển đổi này có miễn phí sử dụng không?",
+                "a1": "Có, bộ chuyển đổi XML sng JSON củ chúng tôi miễn phí 100% không có chi phí ẩn và không cần đăng ký.",
+                "q2": "Dữ liệu củ tôi có n àn không?",
+                "a2": "Chắc chắn rồi. Tất cả quá trình xử lý diễn r cục bộ trong trình duyệt củ bạn, nghĩ là dữ liệu củ bạn không bo giờ rời khỏi thiết bị.",
+                "q3": "Nó có hỗ trợ các cấu trúc lồng nhu không?",
+                "a3": "Có, nó xử lý chính xác các phần tử XML lồng nhu phức tạp và giữ nguyên các mối qun hệ phân cấp củ chúng.",
+                "q4": "Các thuộc tính được xử lý như thế nào?",
+                "a4": "Các thuộc tính XML được chuyển đổi thành các thuộc tính JSON, thường được bắt đầu bằng dấu gạch dưới để rõ ràng."
+            },
+            "tips_title": "Mẹo & Thực Hành Tốt Nhất",
+            "tips": [
+                {
+                    "title": "Xác Thực XML củ Bạn",
+                    "desc": "Đảm bảo XML củ bạn đúng định dạng (well-fhoặcmed) trước khi chuyển đổi để tránh lỗi xử lý."
+                },
+                {
+                    "title": "Sử Dụng Bản In Đẹp (Pretty Printing)",
+                    "desc": "Công cụ củ chúng tôi tự động định dạng đầu r JSON để dễ đọc nhất."
+                },
+                {
+                    "title": "Quyền Riêng Tư củ Trình Duyệt",
+                    "desc": "Vì nó chạy ở phí máy khách, bạn thậm chí có thể sử dụng ngoại tuyến su khi trng đã được tải xong."
+                }
+            ]
+        },
+        "js": {
+            "error_empty": "Vui lòng nhập một số dữ liệu XML để chuyển đổi.",
+            "error_syntax": "\\n\\nVui lòng kiểm tr cú pháp XML củ bạn.",
+            "error_process": "Lỗi khi chuyển đổi XML:",
+            "error_no_copy": "Không có JSON để so chép. Vui lòng chuyển đổi XML trước.",
+            "success_copy": "Đã so chép!",
+            "error_no_download": "Không có JSON để tải về. Vui lòng chuyển đổi XML trước."
+        }
+    },
+    "yaml-to-json": {
+        "meta": {
+            "title": "Trình chuyển đổi YAML sang JSON - Công cụ dữ liệu trực tuyến miễn phí",
+            "description": "Chuyển đổi các tệp cấu hình YML sng định dạng JSON ngy lập tức với bộ chuyển đổi YML sng JSON trực tuyến miễn phí củ chúng tôi. Hoàn hảo cho các nhà phát triển làm việc với các tệp cấu hình.",
+            "h1": "Trình chuyển đổi YAML sang JSON",
+            "subtitle": "Chuyển đổi các tệp cấu hình YML sng định dạng JSON ngy lập tức"
+        },
+        "editor": {
+            "btn_convert": "Chuyển đổi",
+            "btn_copy": "So chép JSON",
+            "btn_download": "Tải xuống",
+            "btn_example": "Ví dụ",
+            "btn_clear": "Xó",
+            "label_input": "YML Đầu Vào",
+            "ph_input": "Dán dữ liệu YML củ bạn vào đây..",
+            "label_output": "JSON Đầu R",
+            "ph_output": "JSON đã chuyển đổi sẽ xuất hiện ở đây.."
+        },
+        "content": {
+            "h2": "Về Bộ Chuyển Đổi YML sng JSON",
+            "p1": "Chuyển đổi các tệp cấu hình YML sng định dạng JSON ngy lập tức với bộ chuyển đổi YML sng JSON trực tuyến miễn phí củ chúng tôi. Hoàn hảo cho các nhà phát triển làm việc với các tệp cấu hình, luồng CI/CD và biến đổi dữ liệu.",
+            "features_title": "Key Fetures",
+            "features": {
+                "syntax": {
+                    "title": "Xác Thực Cú Pháp",
+                    "desc": "Phát hiện các lỗi cú pháp YML"
+                },
+                "nested": {
+                    "title": "Cấu Trúc Lồng Nhu",
+                    "desc": "Giữ nguyên các cấp bậc phức tạp"
+                },
+                "array": {
+                    "title": "hỗ trợ Mảng",
+                    "desc": "Xử lý các dnh sách và chuỗi YML"
+                },
+                "pretty": {
+                    "title": "Định Dạng Đẹp Mắt",
+                    "desc": "Clen, redble JSON kết quả"
+                },
+                "instant": {
+                    "title": "Chuyển Đổi Tức Thì",
+                    "desc": "Biến đổi trong thời gin thực"
+                },
+                "privacy": {
+                    "title": "Quyền Riêng Tư Là Trên Hết",
+                    "desc": "Tất cả quá trình xử lý diễn r trong trình duyệt"
+                }
+            },
+            "uses_title": "Các Trường Hợp Sử Dụng Phổ Biến",
+            "uses": {
+                "config": {
+                    "title": "Tệp Cấu Hình",
+                    "desc": "Chuyển đổi các tệp cấu hình YML sng JSON cho các ứng dụng."
+                },
+                "pipeline": {
+                    "title": "Luồng CI/CD",
+                    "desc": "Biến đổi các cấu hình luồng YML sng định dạng JSON."
+                },
+                "k8s": {
+                    "title": "Kubernetes",
+                    "desc": "Chuyển đổi các mnifest YML củ Kubernetes sng JSON."
+                },
+                "docker": {
+                    "title": "Docker Compose",
+                    "desc": "Biến đổi Docker Compose YML sng JSON."
+                }
+            },
+            "how_to_title": "Cách Sử Dụng Bộ Chuyển Đổi YML sng JSON",
+            "how_to_steps": [
+                {
+                    "title": "Dán YML",
+                    "desc": "So chép và dán mã YML củ bạn vào vùng nhập liệu."
+                },
+                {
+                    "title": "Chuyển Đổi Tự Động",
+                    "desc": "Công cụ chuyển đổi YML sng JSON trong thời gin thực khi bạn nhập."
+                },
+                {
+                    "title": "So Chép Hoặc Tải Về",
+                    "desc": "So chép kết quả JSON hoặc tải xuống dưới dạng tệp .json."
+                }
+            ],
+            "faq_title": "Các Câu Hỏi Thường Gặp",
+            "faq": {
+                "q1": "Nó có miễn phí không?",
+                "a1": "Có, bộ chuyển đổi YML sng JSON củ chúng tôi miễn phí 100%.",
+                "q2": "Dữ liệu củ tôi có n àn không?",
+                "a2": "Có, tất cả quá trình chuyển đổi diễn r trong trình duyệt củ bạn. Chúng tôi không lưu trữ dữ liệu củ bạn."
+            }
+        },
+        "js": {
+            "error_process": "Lỗi khi chuyển đổi YML:",
+            "error_no_copy": "Không có JSON để so chép. Vui lòng chuyển đổi YML trước.",
+            "success_copy": "JSON đã được so chép vào khy nhớ tạm!",
+            "error_no_download": "Không có JSON để tải về. Vui lòng chuyển đổi YML trước."
+        }
+    }
+}

@@ -1,0 +1,884 @@
+{
+    "bing-serp-checker": {
+        "meta": {
+            "title": "Bing SERP Checker - gratis onlinerankningsverktyg",
+            "description": "Gratis verktyg för att kontrollera din webbplats ranking på Bing. Exakta, realtidsresultat för alla platser och enheter.",
+            "h1": "Bing SERP Checker",
+            "subtitle": "Kontrollera sökranger på Bing för dina sökord på olika platser"
+        },
+        "interface": {
+            "simulation_title": "Bing söksimulator",
+            "keyword_label": "Målsökord",
+            "location_label": "Plats (Valfritt)",
+            "location_placeholder": "Ange stad, stat eller land...",
+            "market_label": "Marknad / Språk",
+            "device_label": "Enhetstyp",
+            "device_desktop": "Desktop",
+            "device_mobile": "Mobil",
+            "no_login": "Ingen inloggning krävs",
+            "realtime_results": "Realtidsresultat"
+        },
+        "form": {
+            "keyword_placeholder": "t.ex. digital marknadsföringsbyrå",
+            "button": "Kontrollera Bing-rankning"
+        },
+        "markets": {
+            "us": "USA (Engelska)",
+            "uk": "Storbritannien (Engelska)",
+            "ca": "Kanada (Engelska)",
+            "au": "Australien (Engelska)",
+            "de": "Tyskland (Tyska)",
+            "fr": "Frankrike (Franska)",
+            "es": "Spanien (Spanska)",
+            "it": "Italien (Italienska)",
+            "nl": "Nederländerna (Holländska)",
+            "br": "Brasilien (Portugisiska)",
+            "jp": "Japan (Japanska)",
+            "in": "Indien (Engelska)"
+        },
+        "content": {
+            "main_title": "Avancerad Bing-rankningskontroll",
+            "main_subtitle": "Övervaka din sökprestanda på världens andra största sökmotor. Få exakt, lokaliserad rankingdata för att optimera din Bing SEO-strategi.",
+            "feature1_title": "100% Exakt Data",
+            "feature1_desc": "Vi hämtar resultat direkt från Bing i realtid, vilket säkerställer att du ser exakt vad dina potentiella besökare ser.",
+            "feature2_title": "Platsspecifik",
+            "feature2_desc": "Kontrollera rankingar som om du sökte från specifika städer eller länder. Avgörande för lokal SEO-kampanjer.",
+            "feature3_title": "Enhetssimulering",
+            "feature3_desc": "Växla mellan Desktop- och Mobilvisning för att analysera hur dina rankingar skiljer sig åt mellan enheter.",
+            "serp_features_title": "Analysera Bing SERP-funktioner",
+            "sf_snippets_title": "Utvalda utdrag (Featured Snippets)",
+            "sf_snippets_desc": "Bing tillhandahåller ofta rika svar och \"intelligenta svar\" på position noll. Kontrollera om ditt innehåll fångar dessa mycket synliga platser.",
+            "sf_places_title": "Bing Places",
+            "sf_places_desc": "Bings motsvarighet till Local Pack. Avgörande för lokala företag. Använd vår \"Plats\"-funktion för att verifiera din <strong>Bing Places</strong>-ranking.",
+            "sf_visual_title": "Visuellt sök",
+            "sf_visual_desc": "Bing betonar starkt visuella sökresultat. Övervaka hur dina bilder visas i bildtunga SERP-layouter.",
+            "sf_knowledge_title": "Kunskapskort (Knowledge Cards)",
+            "sf_knowledge_desc": "Rika informationspaneler på höger sida. Kontrollera om Bing tydligt förstår ditt varumärke.",
+            "why_check_title": "Varför spåra Bing-rankingar?",
+            "why_check_desc": "Medan Google är dominerande driver Bing sökningar för Yahoo, AOL och miljontals Windows-enheter. Det har ofta högre konverteringsfrekvens och mindre konkurrens. Att ignorera Bing innebär att man går miste om ~30% av sökvolymen på desktop på vissa marknader.",
+            "how_accurate_title": "Hur exakt är detta verktyg?",
+            "how_accurate_desc": "Vårt verktyg utför live-sökningar mot Bings servrar i det ögonblick du klickar på \"Kontrollera\". Vi använder inte cachad data. Resultaten är realtid, opartiska och återspeglar den exakta SERP (Search Engine Results Page) för de valda parametrarna."
+        },
+        "faq": {
+            "title": "Vanliga frågor",
+            "q1": "Är denna Bing-rankningskontroll gratis?",
+            "a1": "Ja! Vår **bing rankningskontroll** är helt gratis. Du kan kontrollera obegränsat antal sökord för att optimera din närvaro på Microsofts sökmotor utan kostnad.",
+            "q2": "Påverkar detta Yahoo-rankingar?",
+            "a2": "Ja, generellt. Yahoo Search drivs till stor del av Bings index. Optimering för Bing leder ofta till förbättrade rankingar på Yahoo också, vilket ger dig en \"två-för-en\" SEO-fördel.",
+            "q3": "Kan jag kontrollera lokala rankingar för en specifik stad?",
+            "a3": "Absolut. Ange din stad i fältet \"Plats\". Vi lägger till specifika platsparametrar i sökfrågan, så att du kan se <strong>lokala bing-resultat</strong> exakt som en användare i den staden skulle se dem."
+        }
+    },
+    "broken-links-checker": {
+        "meta": {
+            "title": "Broken Links Checker - Gratis webbrevision online",
+            "description": "Gratis verktyg för att hitta trasiga länkar på din webbplats. Skanna efter 404-fel och fixa döda länkar för bättre SEO.",
+            "h1": "Broken Links Checker",
+            "subtitle": "Hitta och fixa trasiga länkar på din webbplats för bättre SEO & användarupplevelse"
+        },
+        "interface": {
+            "scan_title": "Kontroll av trasiga länkar",
+            "scan_subtitle": "Hitta trasiga länkar, omdirigeringar och mer.",
+            "url_label": "Webbplatsens URL",
+            "button": "Skanna efter trasiga länkar",
+            "button_scanning": "Skannar...",
+            "legend_ok": "200 OK",
+            "legend_err": "404/Fel"
+        },
+        "progress": {
+            "extracting": "Extraherar länkar...",
+            "stop": "Stopp",
+            "processing": "Bearbetar länkar sekventiellt...",
+            "processed": "Bearbetade",
+            "of": "av",
+            "links": "länkar",
+            "checking": "Kontrollerar länkar..."
+        },
+        "stats": {
+            "total": "Totalt antal länkar",
+            "working": "Fungerande (200)",
+            "redirects": "Omdirigeringar (3xx)",
+            "broken": "Trasiga (4xx/5xx)"
+        },
+        "results": {
+            "download": "Ladda ner CSV-rapport",
+            "detailed_analysis": "Detaljerad analys",
+            "status": "Status",
+            "link_url": "Länk-URL",
+            "anchor_text": "Ankartext",
+            "type": "Typ"
+        },
+        "content": {
+            "main_title": "Varför leta efter trasiga länkar?",
+            "main_subtitle": "Trasiga länkar skadar din webbplats trovärdighet, användarupplevelse och SEO-prestanda. Vår gratis länkkontroll hjälper dig identifiera och fixa döda länkar innan de skadar din ranking.",
+            "what_is_title": "Vad är en kontroll av trasiga länkar?",
+            "what_is_desc": "En kontroll av trasiga länkar är ett verktyg som skannar dina webbsidor för att hitta länkar som inte längre fungerar (404-fel, serverfel eller omdirigeringar). Det hjälper dig upprätthålla en hälsosam webbplats genom att identifiera döda länkar som kan skada din SEO och användarupplevelse.",
+            "how_works_title": "Hur fungerar det?",
+            "how_works_intro": "Vår kontroll av trasiga länkar följer en enkel 3-stegsprocess:",
+            "how_works_step1": "<strong>Skanna:</strong> Ange din sidas URL så extraherar vi alla länkar",
+            "how_works_step2": "<strong>Kontrollera:</strong> Vi testar varje länk för att verifiera dess status (200, 404, 301, etc.)",
+            "how_works_step3": "<strong>Rapport:</strong> Få en detaljerad rapport som visar vilka länkar som är trasiga och behöver åtgärdas",
+            "pro_tip_title": "💡 Proffstips:",
+            "pro_tip_desc": "Kör denna kontroll regelbundet (månadsvis eller kvartalsvis) för att fånga upp trasiga länkar innan de påverkar din SEO. Ställ in ett underhållsschema för att hålla din webbplats frisk!",
+            "types_title": "Typer av trasiga länkar",
+            "common_causes_title": "Vanliga orsaker till trasiga länkar",
+            "cc_1": "❌ <strong>Stavfel i URL:er:</strong> Felstavade länkar under skapande av innehåll eller migrering",
+            "cc_2": "❌ <strong>Raderade sidor:</strong> Innehåll borttaget utan att ställa in 301-omdirigeringar",
+            "cc_3": "❌ <strong>Omstrukturering av webbplats:</strong> URL-strukturändringar under omdesign",
+            "cc_4": "❌ <strong>Extern länkröta:</strong> Tredjepartswebbplatser som tar bort eller flyttar sitt innehåll",
+            "cc_5": "❌ <strong>Domänutgång:</strong> Länkade webbplatser som går offline permanent",
+            "cc_6": "❌ <strong>Protokolländringar:</strong> Migrering från HTTP till HTTPS utan korrekta omdirigeringar",
+            "best_practices_title": ""
+        },
+        "benefits": {
+            "ux_title": "Användarupplevelse",
+            "ux_desc": "Trasiga länkar frustrerar besökare och ökar avvisningsfrekvensen. Håll dina användare nöjda med en smidig surfupplevelse.",
+            "seo_title": "SEO-påverkan",
+            "seo_desc": "Sökmotorer straffar webbplatser med många trasiga länkar. Behåll dina rankingar genom att fixa döda länkar snabbt.",
+            "maintenance_title": "Enkelt underhåll",
+            "maintenance_desc": "Identifiera och fixa snabbt trasiga länkar innan de skadar din webbplats rykte och söksynlighet."
+        },
+        "link_types": {
+            "type1_title": "🔴 404 Hittades inte",
+            "type1_desc": "Den vanligaste trasiga länken. Sidan finns inte längre på servern.",
+            "type2_title": "🟡 301/302 Omdirigeringar",
+            "type2_desc": "Sidan har flyttat. Även om inte \"trasig\", saktar för många omdirigeringar ner din webbplats.",
+            "type3_title": "🔴 500 Serverfel",
+            "type3_desc": "Servern stötte på ett fel. Dessa kräver omedelbar uppmärksamhet.",
+            "type4_title": "🟢 Timeout-fel",
+            "type4_desc": "Servern tog för lång tid på sig att svara. Kan indikera prestandaproblem."
+        },
+        "best_practices": {
+            "bp1_title": "Regelbundna granskningar",
+            "bp1_desc": "Kontrollera din webbplats månadsvis för trasiga länkar, särskilt efter innehållsuppdateringar",
+            "bp2_title": "Använd 301-omdirigeringar",
+            "bp2_desc": "När du flyttar eller tar bort sidor, ställ alltid in korrekta omdirigeringar",
+            "bp3_title": "Övervaka externa länkar",
+            "bp3_desc": "Externa webbplatser ändras ofta. Granska utgående länkar kvartalsvis",
+            "bp4_title": "Dokumentera ändringar",
+            "bp4_desc": "Håll en logg över URL-ändringar och omdirigeringar för framtida referens",
+            "bp5_title": "Fixa interna länkar först",
+            "bp5_desc": "Prioritera att fixa interna trasiga länkar eftersom de är helt under din kontroll",
+            "bp6_title": "Använd relativa URL:er",
+            "bp6_desc": "För interna länkar, använd relativa URL:er för att undvika problem vid domänändringar"
+        },
+        "faq": {
+            "title": "Vanliga frågor",
+            "q1": "Hur ofta ska jag leta efter trasiga länkar?",
+            "a1": "För de flesta webbplatser räcker det att kontrollera trasiga länkar månadsvis. Högtrafikerade webbplatser eller e-handelsplattformar bör kontrollera veckovis. Efter större webbplatsuppdateringar, omdesign eller migreringar, kör en omedelbar kontroll.",
+            "q2": "Skadar trasiga länkar min SEO-ranking?",
+            "a2": "Ja, men indirekt. Google har uttalat att några få trasiga länkar inte direkt skadar rankingar. Men <strong>många trasiga länkar</strong> signalerar dåligt webbplatsunderhåll, vilket kan öka avvisningsfrekvensen, slösa med sökbudget och minska användarnas förtroende.",
+            "q3": "Vad är skillnaden mellan interna och externa trasiga länkar?",
+            "a3": "<strong>Interna trasiga länkar</strong> pekar på sidor på din egen domän och är helt under din kontroll. <strong>Externa trasiga länkar</strong> pekar på andra webbplatser. Du bör uppdatera dem till fungerande alternativ eller ta bort dem.",
+            "q4": "Kan jag kontrollera trasiga länkar för hela min webbplats?",
+            "a4": "Detta verktyg kontrollerar <strong>en sida åt gången</strong> för att ge snabba, fokuserade resultat. För fullständiga webbplatsgranskningar rekommenderar vi att du börjar med dina viktigaste sidor: startsidan, topplandningssidor och högtrafikerat innehåll.",
+            "q_what_to_do": "Vad ska jag göra när jag hittar trasiga länkar?",
+            "a_what_to_do_intro": "Följ denna prioritetsordning:",
+            "a_what_to_do_li1": "<strong>Interna länkar:</strong> Ställ in 301-omdirigeringar till den nya URL:en eller uppdatera länken direkt",
+            "a_what_to_do_li2": "<strong>Externa länkar:</strong> Hitta en alternativ fungerande sida eller använd archive.org för att hitta det gamla innehållet",
+            "a_what_to_do_li3": "<strong>Om inget alternativ finns:</strong> Ta bort länken och uppdatera omgivande innehåll för att bibehålla flödet",
+            "a_what_to_do_li4": "<strong>Dokumentera allt:</strong> Håll en logg för framtida referens och mönsteranalys"
+        },
+        "js": {
+            "stopping": "Stoppar skanning...",
+            "scan_stopped": "Skanning stoppad",
+            "scan_complete": "Skanning klar!",
+            "error_prefix": "Fel: ",
+            "pending": "Väntar",
+            "internal": "Intern",
+            "external": "Extern"
+        }
+    },
+    "google-serp-checker": {
+        "meta": {
+            "title": "Google SERP Checker - Gratis SEO-verktyg online",
+            "description": "Gratis Google SERP-kontroll för att analysera sökmotorresultat och spåra sökordsrankingar över olika platser.",
+            "h1": "Google SERP Checker",
+            "subtitle": "Kontrollera Google sökrankingar och spåra sökordspositioner globalt"
+        },
+        "interface": {
+            "simulation_title": "Live SERP-kontrollsimulering",
+            "location_label": "Plats",
+            "location_placeholder": "Ange stad, land eller postnummer",
+            "domain_label": "Google-domän",
+            "device_label": "Enhetstyp",
+            "device_desktop": "Desktop",
+            "device_mobile": "Mobil (Smartphone)",
+            "no_login": "Ingen inloggning krävs",
+            "realtime_results": "Realtidsresultat"
+        },
+        "form": {
+            "keyword_label": "Ange sökord",
+            "button": "Kontrollera SERP"
+        },
+        "content": {
+            "main_title": "Varför använda vår gratis Google SERP-kontroll?",
+            "main_subtitle": "I SEO-världen är noggrannhet allt. Vår SERP-analysator kringgår personaliseringsalgoritmer för att visa din webbplats verkliga SERP-rankingar.",
+            "feature1_title": "Hyperlokal SERP-positionsprecision",
+            "feature1_desc": "Ranka för \"pizza i midtown manhattan\". Vi använder avancerade Google UULE-parametrar för att simulera exakt lokaliserad SERP-kontroll.",
+            "feature2_title": "Mobil SERP-sökare & Analys",
+            "feature2_desc": "Verifiera dina rankingar på iPhone och Android. Låt inte Mobile-First Indexing ta dig på sängen. Omfattande mobil SERP-analys.",
+            "feature3_title": "Global Google SERP-spårare",
+            "feature3_desc": "Expanderar? Kontrollera rankingar i 190+ länder. Växla mellan Google.co.uk, Google.de, Google.jp och mer.",
+            "serp_features_title": "Förstå Google SERP-funktioner",
+            "feature_snippet_title": "Utvalda utdrag (Featured Snippets)",
+            "feature_snippet_desc": "Även kända som \"svarsrutor\", dessa visas för cirka 12% av sökfrågorna. Vårt verktyg hjälper dig kontrollera om du äger denna utmärkta fastighet.",
+            "feature_local_title": "Local Pack",
+            "feature_local_desc": "Den kartbaserade listan över 3 lokala företag. Avgörande för fysiska butiker. Använd vår \"Plats\"-funktion för att verifiera din närvaro.",
+            "feature_paa_title": "Folk frågar även (People Also Ask)",
+            "feature_paa_desc": "Dragspelsliknande frågor relaterade till användarens sökfråga. Ranking här kan driva betydande medvetenhetstrafik. Använd vår serp sökordskontroll för att identifiera dessa möjligheter.",
+            "feature_knowledge_title": "Kunskapspanel (Knowledge Panel)",
+            "feature_knowledge_desc": "Informationsrutor som visas på höger sida av skrivbordsresultat. Viktigt för varumärkesauktoritet och entitets-SEO.",
+            "what_is_title": "Vad är en SERP-kontroll & Analysator?",
+            "what_is_desc": "En sökresultatsida (SERP) Kontroll är ett viktigt diagnosverktyg för SEO-proffs och företagsägare. Det låter dig använda en webbplats SERP-kontroll för att se resultaten för ett specifikt sökord så som de skulle visas för en neutral användare på en specifik geografisk plats.",
+            "bubble_problem_title": "\"Google Bubble\"-problemet",
+            "bubble_problem_desc": "Om du bara går till Google.com och söker efter dina egna sökord, är resultaten kraftigt partiska. Google anpassar resultat baserat på din IP-adress, sökhistorik och enhetstyp. Detta gör det svårt att svara på \"vad är min serp\" exakt utan ett verktyg.",
+            "solution_text": "Vår gratis Google SERP-kontroll spräcker denna bubbla. Genom att använda UULE-parametern genererar vi en speciellt kodad sträng som berättar för Google exakt varifrån online SERP-spårningen ska simuleras, vilket ger dig 100% ren, opartisk data."
+        },
+        "faq": {
+            "title": "Vanliga frågor",
+            "q1": "Är detta SERP-verktyg gratis för obegränsade sökningar?",
+            "a1": "Ja! Vårt serp-verktyg gratis kostnad låter dig kontrollera så många sökord du vill utan att skapa ett konto eller betala en prenumerationsavgift. Vi tror på att tillhandahålla tillgängliga online serp rankningsverktyg för alla.",
+            "q2": "Hur fungerar SERP Position Tool platsfunktionen?",
+            "a2": "Vi använder Googles officiella UULE (Universal URL Location Encoded) parameter. När du anger en stad hittar vi dess exakta GPS-koordinater och kodar dem i sökförfrågan, vilket tvingar Google att visa resultat som om du fysiskt stod i den staden.",
+            "q3": "Varför ser min SERP Google-ranking annorlunda ut på mobilen?",
+            "a3": "Google använder Mobile-First Indexing, vilket innebär att det främst använder den mobila versionen av innehållet för indexering och ranking. Mobila sökresultat har också olika layouter (fler annonser, olika utdrag). Använd vår \"Enhet\"-väljare för att verifiera din mobila närvaro specifikt med denna google serps-spårare."
+        }
+    },
+    "keyword-density-checker": {
+        "meta": {
+            "title": "Keyword Density Checker - Gratis SEO-analys online",
+            "description": "Gratis verktyg för kontroll av sökordstäthet. Analysera ordfrekvens och sökordsanvändning för att optimera ditt innehåll.",
+            "h1": "Sökordsdensitetskontroll",
+            "subtitle": "Kontrollera sökordsanvändning och täthet för bättre sökrankingar"
+        },
+        "form": {
+            "label": "Klistra in text eller URL",
+            "placeholder": "Klistra in din text här...",
+            "button": "Kontrollera täthet"
+        },
+        "results": {
+            "title": "Sökordsstatistik",
+            "total_words": "Totalt antal ord",
+            "unique_words": "Unika ord",
+            "sentences": "Meningar",
+            "paragraphs": "Stycken",
+            "long_sentences": "Långa meningar",
+            "short_sentences": "Korta meningar",
+            "top_keyword": "Topp sökord",
+            "top_density": "Topp täthet",
+            "single_keywords_title": "Enstaka sökord",
+            "keyword_header": "Sökord",
+            "count_header": "Antal",
+            "density_header": "Täthet",
+            "two_word_title": "2-ordsfraser",
+            "phrase_header": "Fras",
+            "three_word_title": "3-ordsfraser"
+        },
+        "content": {
+            "main_title": "Sökordstäthetskontroll",
+            "main_subtitle": "Optimera din innehållsrelevans genom att analysera sökordsfrekvens.",
+            "intro": "Vår sökordstäthetskontroll hjälper dig hitta de mest använda orden och fraserna i din text. Perfekt för SEO:are och innehållsförfattare för att undvika sökordsproppning.",
+            "what_is_title": "Vad är sökordstäthet?",
+            "what_is_text": "Sökordstäthet är den procentandel gånger ett sökord eller en fras förekommer rent i innehållet jämfört med det totala antalet ord på sidan. Det är en nyckelfaktor i sökmotoroptimering (SEO).",
+            "guidelines_title": "Riktlinjer för täthet",
+            "why_use_title": "Varför kontrollera sökordstäthet?",
+            "best_practices_title": "Bästa praxis",
+            "faq_title": "FAQ"
+        },
+        "guidelines": {
+            "g1": "Det finns ingen \"perfekt\" procentandel, men <strong>1-3%</strong> anses ofta vara säkert.",
+            "g2": "Undvik \"Sökordsproppning\" eftersom det kan skada dina rankingar.",
+            "g3": "Skriv naturligt för läsare, inte bara för robotar.",
+            "g4": "Använd synonymer och LSI (Latent Semantic Indexing) sökord.",
+            "g5": "Kontrollera inte bara enstaka ord, utan 2-3 ords fraser."
+        },
+        "features": {
+            "f1_title": "Djup analys",
+            "f1_desc": "Analyserar enstaka ord, bigram och trigram.",
+            "f2_title": "Ordräknare",
+            "f2_desc": "Exakt räkning av ord, meningar och stycken.",
+            "f3_title": "Proppningskontroll",
+            "f3_desc": "Hjälper till att identifiera om du representerar sökord för ofta.",
+            "f4_title": "Gratis verktyg",
+            "f4_desc": "Helt gratis att använda utan gränser.",
+            "f5_title": "För författare",
+            "f5_desc": "Förbättra innehållskvalitet och läsbarhet.",
+            "f6_title": "Stoppord",
+            "f6_desc": "Intelligent filtrering av vanliga stoppord."
+        },
+        "best_practices": {
+            "bp1": "Fokusera på innehållskvalitet snarare än specifika täthetssiffror.",
+            "bp2": "Inkludera ditt huvudsökord i första stycket.",
+            "bp3": "Använd sökord i H1- och H2-rubriker.",
+            "bp4": "Använd långsvansade sökordsvariationer.",
+            "bp5": "Offra inte läsbarhet för SEO.",
+            "bp6": "Upprepa inte samma ord onaturligt."
+        },
+        "faq": {
+            "q1": "Vad är en bra sökordstäthet?",
+            "a1": "De flesta SEO-experter rekommenderar runt 1-2%. Texten ska läsas naturligt.",
+            "q2": "Vad är sökordsproppning?",
+            "a2": "Det är praxis att fylla en webbsida med sökord i ett försök att manipulera en webbplats ranking i Googles sökresultat.",
+            "q3": "Ignorerar den stoppord?",
+            "a3": "Ja, vårt verktyg filtrerar bort vanliga stoppord (som \"som\", \"och\", \"är\") för att ge dig täthet av meningsfulla ord.",
+            "q4": "Spelar frastäthet någon roll?",
+            "a4": "Ja, sökmotorer letar efter fraser och ämneskluster, inte bara enstaka ord.",
+            "q5": "Kan jag kontrollera en URL?",
+            "a5": "För närvarande fungerar detta verktyg med textinmatning. Kopiera ditt sidinnehåll och klistra in det här."
+        },
+        "alerts": {
+            "enter_text": "Vänligen ange lite text att analysera"
+        }
+    },
+    "meta-tag-analyzer": {
+        "meta": {
+            "title": "Meta Tag Analyzer - Gratis SEO Meta Checker online",
+            "description": "Gratis metataggsanalysator för att kontrollera och optimera din webbplats metataggar för bättre SEO.",
+            "h1": "Metatagganalysator",
+            "subtitle": "Omfattande analys av metataggar för sökmotoroptimering"
+        },
+        "form": {
+            "label": "Ange webbplatsens URL",
+            "placeholder": "https://exempel.se",
+            "button": "Analysera metataggar"
+        },
+        "results": {
+            "title": "Analysresultat",
+            "title_tag": "Titeltagg",
+            "length": "Längd",
+            "characters": "tecken",
+            "meta_description": "Metabeskrivning"
+        },
+        "results_labels": {
+            "other_tags": "Andra metataggar",
+            "seo_score": "SEO-poäng",
+            "viewport": "Viewport",
+            "charset": "Teckenuppsättning (Charset)",
+            "robots": "Robotar"
+        },
+        "content": {
+            "main_title": "Metataggsanalysator",
+            "main_subtitle": "Analysera och optimera din webbplats metataggar enkelt.",
+            "intro": "Vårt gratis verktyg Metataggsanalysator hjälper dig kontrollera metataggarna på vilken webbsida som helst. Få omedelbara insikter om din titel, beskrivning och andra viktiga SEO-taggar.",
+            "what_are_title": "Vad är metataggar?",
+            "what_are_desc": "Metataggar är textsnuttar som beskriver en sidas innehåll; metataggar visas inte på själva sidan, utan bara i sidans källkod. Metataggar är i huvudsak små innehållsbeskrivningar som hjälper till att berätta för sökmotorer vad en webbsida handlar om.",
+            "essential_title": "Viktiga metataggar för SEO",
+            "common_mistakes_title": "Vanliga metataggsfel",
+            "mistake_1": "Saknade titel- eller beskrivningstaggar",
+            "mistake_2": "Överskrider rekommenderade teckengränser",
+            "mistake_3": "Duplicerade metataggar över sidor",
+            "mistake_4": "Använder irrelevanta sökord",
+            "mistake_5": "Ingen viewport-tagg för mobiloptimering",
+            "mistake_6": "Flera titeltaggar på en sida",
+            "why_analyze_title": "Varför analysera metataggar?"
+        },
+        "meta_tags": {
+            "title_tag_title": "Titeltagg",
+            "title_tag_desc": "Den viktigaste metataggen. Den definierar din sidtitel i sökresultat.",
+            "title_optimal_length": "Optimal längd:",
+            "title_optimal_value": "50-60 tecken",
+            "title_best_practice": "Bästa praxis:",
+            "title_best_value": "Inkludera ditt huvudsökord nära början.",
+            "meta_desc_title": "Metabeskrivning",
+            "meta_desc_desc": "Ger en sammanfattning av sidinnehållet. Påverkar klickfrekvensen (CTR).",
+            "meta_desc_optimal_length": "Optimal längd:",
+            "meta_desc_optimal_value": "150-160 tecken",
+            "meta_desc_best_practice": "Bästa praxis:",
+            "meta_desc_best_value": "Skriv engagerande text med en uppmaning till handling (Call to Action).",
+            "og_title": "Open Graph (Social)",
+            "og_desc": "Kontrollerar hur ditt innehåll visas när det delas på sociala medier (Facebook, LinkedIn).",
+            "og_key_tags": "Nyckeltaggar:",
+            "og_key_value": "og:title, og:description, og:image",
+            "og_platform": "Plattformar:",
+            "og_platform_value": "Facebook, LinkedIn, Pinterest",
+            "twitter_title": "Twitter Cards",
+            "twitter_desc": "Specifika metataggar för att optimera hur ditt innehåll visas på Twitter.",
+            "twitter_key_tags": "Nyckeltaggar:",
+            "twitter_key_value": "twitter:card, twitter:title, twitter:image",
+            "twitter_types": "Typer:",
+            "twitter_types_value": "Sammanfattning, Sammanfattning med stor bild"
+        },
+        "benefits": {
+            "b1_title": "Bättre rankingar",
+            "b1_desc": "Korrekta taggar hjälper sökmotorer förstå ditt innehåll.",
+            "b2_title": "Högre CTR",
+            "b2_desc": "Engagerande titlar och beskrivningar får fler klick.",
+            "b3_title": "Social synlighet",
+            "b3_desc": "Optimerade Open Graph-taggar förbättrar utseendet vid delning i sociala medier.",
+            "b4_title": "Konkurrentanalys",
+            "b4_desc": "Analysera konkurrenttaggar för att förfina din strategi."
+        },
+        "features": {
+            "f2_title": "Omedelbar analys",
+            "f2_desc": "Få resultat på sekunder.",
+            "f3_title": "Gratis att använda",
+            "f3_desc": "Inga dolda avgifter eller gränser."
+        },
+        "faq": {
+            "title": "Vanliga frågor",
+            "q1": "Vad är en metataggsanalysator?",
+            "a1": "Det är ett verktyg som söker igenom en webbsida och extraherar dess metataggar (titel, beskrivning, robotar, sökord) för analys.",
+            "q2": "Varför är metataggar viktiga för SEO?",
+            "a2": "De ger sökmotorer information om din sida och avgör ofta hur din webbplats visas i sökresultaten.",
+            "q3": "Vad är den perfekta längden på en titeltagg?",
+            "a3": "Det rekommenderas att hålla den mellan 50-60 tecken för att undvika att den klipps av i Googles sökresultat.",
+            "q4": "Påverkar sökordsmetataggar rankingen?",
+            "a4": "De flesta moderna sökmotorer (inklusive Google) använder inte längre sökordsmetataggen för rankingändamål.",
+            "q5": "Hur fixar jag metataggsfel?",
+            "a5": "Du måste redigera din sidas HTML (i <head>-sektionen) eller använda din CMS SEO-inställningar/plugins."
+        },
+        "js": {
+            "alert_enter_url": "Vänligen ange en giltig URL",
+            "analyzing": "Analyserar...",
+            "error_cors": "<strong>CORS-fel (Demo):</strong> I produktion måste förfrågningar till externa URL:er gå via din backend-proxy. <br>Nedan visas demodata.",
+            "error_general": "Fel vid analys av URL",
+            "analyze_btn": "Analysera metataggar",
+            "demo_title": "Exempel på sidtitel - Optimerad för SEO",
+            "demo_description": "Detta är en exempelmetabeskrivning. Den ska vara beskrivande, engagerande och innehålla sökord för att locka klick från sökresultat.",
+            "status_optimal": "Optimal",
+            "advice_perfect_length": "Perfekt längd!",
+            "status_too_long": "För lång",
+            "advice_truncated": "Kan klippas av i sökresultat.",
+            "status_too_short": "För kort",
+            "advice_add_detail": "Överväg att lägga till mer detaljer.",
+            "advice_truncated_short": "Kan klippas av.",
+            "advice_add_detail_short": "Överväg att lägga till detaljer.",
+            "score_text": "Bra! Dina metataggar är väl optimerade."
+        }
+    },
+    "on-page-seo-checker": {
+        "meta": {
+            "title": "On-Page SEO Checker - Gratis webbsidarevisor online",
+            "description": "Gratis on-page SEO-kontroll för att analysera och optimera dina webbsidor för sökmotorer.",
+            "h1": "On-Page SEO Checker",
+            "subtitle": "Komplett on-page SEO-revision med åtgärdbara rekommendationer"
+        },
+        "interface": {
+            "title": "Starta din gratis granskning",
+            "url_label": "Webbplatsens URL",
+            "keywords_label": "Målsökord",
+            "recommended": "Rekommenderad",
+            "button": "Starta omfattande granskning",
+            "page_analysis": "Sidanalys"
+        },
+        "labels": {
+            "initializing": "Initierar...",
+            "desktop": "Desktop",
+            "mobile": "Mobil"
+        },
+        "content": {
+            "main_content_title": "Omfattande On-Page SEO-kontroll & Analysator",
+            "main_content_desc": "Moderna sökmotorer använder neural matchning för att förstå <em>avsikten</em> bakom en sökfråga, inte bara exakta sökord. Vår <strong>on-page seo-kontroll</strong> bygger på samma principer. Oavsett om du behöver en snabb <strong>onpage seo-koll</strong> eller en djup semantisk granskning, fungerar vårt verktyg som en neural <strong>onpage seo-analysator</strong>, som hjälper dig att överbrygga klyftan mellan ditt innehåll och hur AI-drivna algoritmer tolkar det.",
+            "how_to_title": "Hur du använder On-Page SEO-kontrollverktyget"
+        },
+        "features": {
+            "f1_title": "Omedelbar semantisk analys",
+            "f1_desc": "Sökrobotar söker igenom effektivt. Vår <strong>on page seo-koll online</strong> härmar detta beteende genom att tolka din DOM för att förstå struktur och hierarki. Detta <strong>onpage-kontrollverktyg</strong> säkerställer att din HTML talar sökmotorernas språk.",
+            "f2_title": "Datadriven poängsättning",
+            "f2_desc": "Glöm subjektivitet—du får viktade poäng över signaler som rubrikoptimering, metakompletthet och ordantal. Det är en transparent <strong>seo-koll på sidan</strong> mekanism med åtgärdbara tröskelvärden.",
+            "f3_title": "Kontextuell innehållsgranskning",
+            "f3_desc": "Myten om \"perfekt\" sökordstäthet är död. Vårt <strong>onpage seo-revisionsverktyg</strong> utvärderar istället kontextuell relevans. Är dina H1:or i linje med användarens avsikt? Tillfredsställer ditt innehåll frågan? Detta är modern <strong>on page seo-analys</strong>.",
+            "f4_title": "Mobil & Teknisk kontroll",
+            "f4_desc": "Viewport-taggar, kanoniska länkar och strukturerad data - kontrollerade. Vår <strong>onpage seo-testare</strong> flaggar varningsflaggor för mobilanvändbarhet och inkonsekvenser i uppmärkning, vilket ger dig en <strong>on page seo-rapport</strong> som är både estetisk och algoritmisk.",
+            "f5_title": "100% Gratis tillgång",
+            "f5_desc": "Inga prenumerationer, inga dolda gränser. Detta är ditt <strong>onpage seo-verktyg gratis</strong> alternativ. Kör obegränsade granskningar på vilken offentlig URL som helst, oavsett om det är för din egen webbplats eller konkurrensanalys.",
+            "f6_title": "Länkarkitektur",
+            "f6_desc": "Intern och extern länkgranskning i en vy. Se hur många utgående länkar som pekar vart, och om din interna länkning stärker ämnesauktoritet. Det är en holistisk <strong>gratis onpage seo-kontroll</strong> utformad för omfattning."
+        },
+        "how_to": {
+            "step1_title": "Ange din URL",
+            "step1_desc": "Ange den specifika sidans slutpunkt. Vår <strong>on page seo-kontroll online</strong> hämtar rå HTML precis som en sökrobot skulle göra.",
+            "step2_title": "Analysera signaler",
+            "step2_desc": "Initiera <strong>seo-sidtestaren</strong>. Vi analyserar rubriker, metadata och innehållsstruktur för att emulera hur algoritmer \"läser\" din sida.",
+            "step3_title": "Optimera för avsikt",
+            "step3_desc": "Använd datan för att förfina ditt innehålls relevans. <strong>Kontrollera onpage-webbplats</strong> logik och förbättra din åtgärdbara <strong>onpage seo-poäng</strong>."
+        },
+        "faq": {
+            "title": "Vanliga frågor",
+            "q1": "Varför är en onpage seo-kontroll kritisk för ranking?",
+            "a1": "Sök handlar om relevans. En <strong>onpage seo-kontroll</strong> säkerställer att dina signaler (titlar, schema, innehåll) överensstämmer med användarens avsikt. Regelbunden granskning med ett <strong>onpage sid-seo</strong> verktyg håller din webbplats synkroniserad med utvecklande algoritmuppdateringar.",
+            "q2": "Är detta onpage seo-verktyg online verkligen gratis?",
+            "a2": "Ja. Vi tror på tillgänglig data. Vårt <strong>on page seo-verktyg online</strong> är gratis att använda, vilket låter dig agera som ditt eget <strong>gratis onpage seo-verktyg</strong> utan prenumerationshinder.",
+            "q3": "Hur förstår sökmotorer mitt innehåll?",
+            "a3": "Motorer använder NLP (Natural Language Processing) för att relatera entiteter. Vår <strong>on page seo-grader</strong> kontrollerar om din struktur stöder denna förståelse, och fungerar som ett proxy <strong>seo onpage-test</strong> för neural kompatibilitet.",
+            "q4": "Kan jag kontrollera onpage seo för vilken webbplats som helst?",
+            "a4": "Ja. Vår sökrobot respekterar `robots.txt` men kan analysera vilken offentlig URL som helst. Du kan <strong>kontrollera onpage seo</strong> för konkurrenter för att bakåtkompilera deras framgång. Det är ett mångsidigt <strong>onpage-kontrollverktyg</strong> för alla strategier."
+        }
+    },
+    "pdf-report": {
+        "seo": {
+            "title": "PDF-rapport - Professionell SEO-revisionsrapport"
+        },
+        "interface": {
+            "brand_name": "Optimizo",
+            "cover_title": "SEO-ANSKRIVNINGSRAPPORT",
+            "overall_score": "TOTALPOÄNG",
+            "generated_on": "Genererad den",
+            "suite_name": "Optimizo SEO-verktygssvit",
+            "audit_title": "Optimizo SEO-revision",
+            "analysis_methods": "Detaljerade analysmetoder",
+            "recommendation": "REKOMMENDATION:"
+        },
+        "meta": {
+            "title": "SEO PDF Report Generator - Gratis revisionsverktyg online",
+            "description": "Generera en gratis SEO-revisionsrapport i PDF-format för din webbplats.",
+            "h1": "PDF-rapportgenerator",
+            "subtitle": "Skapa detaljerade PDF-rapporter för SEO-analys och revisioner"
+        }
+    },
+    "redirect-checker": {
+        "meta": {
+            "title": "Redirect Checker Online - Gratis HTTP-statusverktyg",
+            "description": "Gratis omdirigeringskontrollverktyg för att analysera URL-omdirigeringar, spåra omdirigeringskedjor, kontrollera HTTP-statuskoder och upptäcka omdirigeringsslingor. Avgörande för SEO och felsökning.",
+            "h1": "Redirect Checker",
+            "subtitle": "Spåra HTTP-omdirigeringar och identifiera 301, 302 & meta refresh-kedjor"
+        },
+        "form": {
+            "url_label": "Ange URL(er) att kontrollera (En per rad, max 10)",
+            "url_placeholder": "https://exempel.se\nhttps://annan-sida.se\nhttps://tredje-sida.se",
+            "canonical_check": "Kontrollera även domänkanonisk (www vs non-www)",
+            "user_agent_label": "User Agent",
+            "user_agent_default": "Standard (Webbläsare)",
+            "user_agent_googlebot": "Googlebot (Google)",
+            "user_agent_bingbot": "Bingbot (Bing)",
+            "user_agent_facebook": "Facebook Crawler",
+            "user_agent_iphone": "iPhone (Safari)",
+            "user_agent_android": "Android (Chrome)",
+            "button": "Kontrollera URL:er"
+        },
+        "loading": {
+            "analyzing": "Analyserar omdirigeringsväg..."
+        },
+        "content": {
+            "main_title": "Verktyg för kontroll av omdirigeringar & HTTP-status",
+            "main_subtitle": "Komplett URL-analys med omdirigeringsspårning, statuskodskontroll och slingdetektering",
+            "intro": "Analysera HTTP-statuskoder, spåra omdirigeringskedjor, detektera 301- och 302-omdirigeringar, identifiera trasiga länkar och hitta omdirigeringsslingor med vårt omfattande gratisverktyg. Avgörande för SEO-optimering, webbplatsfelsökning, migreringsplanering och säkerställande av korrekt URL-struktur. Kontrollera vilken URL som helst omedelbart för att se hela omdirigeringsvägen, svarskoder och potentiella problem.",
+            "features_title": "✨ Nyckelfunktioner",
+            "feature1_title": "Masskontroll av URL:er",
+            "feature1_desc": "Kontrollera upp till 10 URL:er samtidigt med framstegsspårning",
+            "feature2_title": "Kanonisk domänkontroll",
+            "feature2_desc": "Verifiera www kontra non-www konsekvens för SEO",
+            "feature3_title": "Slingdetektering",
+            "feature3_desc": "Visuellt diagram som visar exakta omdirigeringsslingemönster",
+            "feature4_title": "Komplett kedjeanalys",
+            "feature4_desc": "Spåra hela omdirigeringsvägar med statuskoder och timing",
+            "what_are_redirects_title": "Vad är HTTP-omdirigeringar?",
+            "what_are_redirects_desc": "HTTP-omdirigeringar är serversvar som automatiskt skickar besökare från en URL till en annan. När en webbläsare begär en URL kan servern svara med en omdirigeringsstatuskod (som 301 eller 302) tillsammans med den nya destinations-URL:en. Omdirigeringar är avgörande för att bibehålla SEO-värde när innehåll flyttas, fixa trasiga länkar, tvinga fram HTTPS och hantera domänändringar.",
+            "status_codes_title": "Förstå HTTP-statuskoder",
+            "status_2xx_title": "2xx - Framgång",
+            "status_2xx_desc": "Dessa indikerar framgångsrika förfrågningar utan problem",
+            "status_3xx_title": "3xx - Omdirigeringar",
+            "status_3xx_desc": "URL har flyttat, webbläsaren bör följa omdirigering",
+            "status_4xx_title": "4xx - Klientfel",
+            "status_4xx_desc": "Begärandefel på klientsidan",
+            "status_5xx_title": "5xx - Serverfel",
+            "status_5xx_desc": "Fel på serversidan",
+            "redirect_301_title": "301 Permanent omdirigering",
+            "redirect_301_when": "<strong>När ska man använda:</strong> Innehåll permanent flyttat till en ny URL",
+            "redirect_301_seo": "<strong>SEO-påverkan:</strong> Passerar 90-99% av länkkraften till ny URL",
+            "redirect_301_cache": "<strong>Cachning:</strong> Webbläsare cachar permanent, svårt att ändra",
+            "redirect_302_title": "302 Tillfällig omdirigering",
+            "redirect_302_when": "<strong>När ska man använda:</strong> Innehåll tillfälligt på annan URL",
+            "redirect_302_seo": "<strong>SEO-påverkan:</strong> Ursprunglig URL behåller rankingkraft",
+            "redirect_302_cache": "<strong>Cachning:</strong> Cachas inte, lätt att ändra eller ta bort",
+            "why_check_title": "Varför kontrollera omdirigeringar?",
+            "why_check_1": "<strong>Webbplatsmigreringar:</strong> Verifiera att alla gamla URL:er omdirigeras korrekt till nya platser",
+            "why_check_2": "<strong>Upptäckt av trasiga länkar:</strong> Hitta 404-fel och trasiga omdirigeringskedjor",
+            "why_check_3": "<strong>Prestandaproblem:</strong> Identifiera överdrivna omdirigeringskedjor som saktar ner sidladdning",
+            "why_check_4": "<strong>Detektering av omdirigeringsslingor:</strong> Fånga cirkulära omdirigeringar som orsakar oändliga slingor",
+            "why_check_5": "<strong>Säkerhetsgranskningar:</strong> Verifiera omdirigeringsdestinationer och förhindra skadliga omdirigeringar",
+            "why_check_6": "<strong>Användarupplevelse:</strong> Se till att besökare når avsett innehåll snabbt",
+            "why_check_7": "<strong>Analysnoggrannhet:</strong> Bekräfta att spårningskoder fungerar genom omdirigeringskedjor",
+            "redirect_chains_title": "Vad är omdirigeringskedjor?",
+            "redirect_chains_desc": "En omdirigeringskedja uppstår när en URL omdirigerar till en annan URL, som omdirigerar till en annan, och så vidare. Varje hopp i kedjan lägger till latens och kan påverka SEO. Exempel: URL A → URL B → URL C → Slutlig URL (3 omdirigeringar).",
+            "chain_recommended": "<strong>Rekommenderat:</strong> 0-1 omdirigeringar (direkt eller enkelt hopp)",
+            "chain_acceptable": "<strong>Acceptabelt:</strong> 2-3 omdirigeringar (mindre prestandapåverkan)",
+            "chain_problematic": "<strong>Problematiskt:</strong> 4+ omdirigeringar (betydande SEO- och hastighetsproblem)",
+            "redirect_loops_title": "Vad är omdirigeringsslingor?",
+            "redirect_loops_desc": "En omdirigeringsslinga inträffar när URL A omdirigerar till URL B, som omdirigerar tillbaka till URL A, vilket skapar en oändlig cykel. Webbläsare upptäcker detta och visar ett fel som \"För många omdirigeringar\" eller \"Omdirigeringsslinga upptäckt\". Detta bryter sidan helt och måste åtgärdas omedelbart.",
+            "common_issues_title": "Vanliga omdirigeringsproblem & Lösningar",
+            "issue1_title": "Långa omdirigeringskedjor",
+            "issue1_problem": "<strong>Problem:</strong> Flera omdirigeringar saktar ner sidladdning och späder ut SEO-värde",
+            "issue1_solution": "<strong>Lösning:</strong> Uppdatera omdirigeringar för att peka direkt till slutdestinationen",
+            "issue2_title": "Blandade omdirigeringstyper",
+            "issue2_problem": "<strong>Problem:</strong> Inkonsekventa omdirigeringstyper förvirrar sökmotorer",
+            "issue2_solution": "<strong>Lösning:</strong> Använd 301 för permanenta flyttar, 302 endast för tillfälliga",
+            "issue3_title": "Trasiga omdirigeringskedjor",
+            "issue3_problem": "<strong>Problem:</strong> Omdirigering pekar på icke-existerande sida",
+            "issue3_solution": "<strong>Lösning:</strong> Uppdatera omdirigering till giltig destination eller ta bort den",
+            "issue4_title": "HTTPS/HTTP-slingor",
+            "issue4_problem": "<strong>Problem:</strong> Webbplatsen omdirigerar oändligt mellan HTTP och HTTPS",
+            "issue4_solution": "<strong>Lösning:</strong> Fixa SSL-konfiguration och .htaccess-regler",
+            "best_practices_title": "SEO Bästa praxis för omdirigeringar",
+            "best_practice1": "• Använd alltid 301-omdirigeringar för permanenta URL-ändringar för att bevara SEO-värde",
+            "best_practice2": "• Minimera omdirigeringskedjor - omdirigera direkt till slutdestinationen när det är möjligt",
+            "best_practice3": "• Undvik omdirigeringsslingor till varje pris - de förstör användarupplevelse och SEO",
+            "best_practice4": "• Uppdatera interna länkar istället för att förlita sig på omdirigeringar",
+            "best_practice5": "• Övervaka omdirigeringsprestanda regelbundet med verktyg som detta",
+            "best_practice6": "• Håll omdirigeringar aktiva i minst 1 år efter URL-ändringar",
+            "best_practice7": "• Använd 302-omdirigeringar sparsamt och endast för verkligt tillfälliga situationer"
+        },
+        "faq": {
+            "title": "Vanliga frågor",
+            "q1": "Vad är en omdirigeringskedja?",
+            "a1": "En omdirigeringskedja är en serie omdirigeringar från en URL till en annan tills den slutliga sidan nås. Långa kedjor saktar ner webbplatsen och slösar krypbudget.",
+            "q2": "Påverkar en 301-omdirigering rankingen?",
+            "a2": "En 301-omdirigering bevarar det mesta av länkkraften (rankingkraft), men överdriven användning i kedjor kan späda ut denna effekt.",
+            "q3": "Hur hittar jag omdirigeringsslingor?",
+            "a3": "Använd vårt verktyg - det kommer automatiskt att markera ett fel om det upptäcker en oändlig sökväg.",
+            "q4": "Ska jag omdirigera från http till https?",
+            "a4": "Ja, det är ett obligatoriskt steg för säkerhet och SEO. En 301-omdirigering på servernivå (Nginx eller Apache) rekommenderas.",
+            "q5": "Hur många omdirigeringar är acceptabla?",
+            "a5": "Helst noll eller en. Google följer vanligtvis upp till 5 hopp, men varje hopp ökar laddningstiden."
+        }
+    },
+    "slug-generator": {
+        "meta": {
+            "title": "URL Slug Generator - Gratis SEO-vänligt verktyg online",
+            "description": "Generera rena, SEO-vänliga URL-sluggar från valfri text omedelbart med vårt gratisverktyg.",
+            "h1": "URL Slug Generator",
+            "subtitle": "Generera rena, SEO-vänliga URL-sluggar från valfri text omedelbart"
+        },
+        "editor": {
+            "label_input": "Ange text eller titel",
+            "ph_input": "Ange din titel eller text..."
+        },
+        "content": {
+            "hero_title": "URL Slug Generator - Skapa SEO-vänliga URL:er",
+            "hero_subtitle": "Generera rena, SEO-vänliga URL-sluggar från valfri text omedelbart med vårt gratis slug-generatorverktyg. Konvertera bloggtitlar, artikelrubriker och sidnamn till läsbara, sökmotoroptimerade URL:er.",
+            "what_title": "Vad är en URL-slug?",
+            "what_desc": "En URL-slug är den del av en webbadress som kommer efter domännamnet och identifierar en specifik sida. Till exempel, i \"exempel.se/hur-man-skapar-seo-vanliga-urler\", är sluggen \"hur-man-skapar-seo-vanliga-urler\".",
+            "why_title": "Varför använda SEO-vänliga sluggar?",
+            "why_list": [
+                "Bättre SEO-rankingar: Sökord i URL:er hjälper sökmotorer förstå sidinnehåll",
+                "Förbättrad klickfrekvens: Läsbara URL:er är mer trovärdiga och klickbara",
+                "Användarupplevelse: Tydliga URL:er berättar för användare vad de kan förvänta sig innan de klickar",
+                "Social delning: Rena URL:er ser professionella ut när de delas på sociala medier",
+                "Länkbygge: Beskrivande URL:er utgör bättre ankartext för bakåtlänkar",
+                "Tillgänglighet: Skärmläsare kan bättre tolka meningsfulla URL:er"
+            ],
+            "practices_title": "Bästa praxis för URL-sluggar",
+            "practices_list": [
+                "Använd gemener - Undvik versaler för konsekvens",
+                "Använd bindestreck (-) - Separera ord med bindestreck, inte understreck",
+                "Håll det kort - Sikta på max 3-5 ord",
+                "Inkludera sökord - Använd relevanta sökord för SEO",
+                "Var beskrivande - Beskriv tydligt sidinnehållet",
+                "Undvik specialtecken - Ta bort @, #, %, &, etc.",
+                "Undvik stoppord - Ta bort \"en\", \"den\", \"och\" när det är möjligt",
+                "Undvik siffror/datum - Såvida det inte är nödvändigt för innehållet"
+            ],
+            "how_works_title": "Hur vår Slug Generator fungerar",
+            "how_works_desc": "Vårt verktyg följer branschens bästa praxis för att skapa perfekta URL-sluggar. Det konverterar text till gemener, tar bort specialtecken och skiljetecken, ersätter mellanslag med bindestreck, tar bort på varandra följande bindestreck och trimmar inledande/avslutande bindestreck.",
+            "uses_title": "Vanliga användningsområden",
+            "uses": {
+                "blog": {
+                    "title": "📝 Blogginlägg",
+                    "desc": "Konvertera artikeltitlar till SEO-vänliga URL:er för WordPress, Medium eller anpassade bloggar"
+                },
+                "ecommerce": {
+                    "title": "🛍️ E-handel",
+                    "desc": "Skapa produkt-URL:er som inkluderar sökord och produktnamn"
+                },
+                "docs": {
+                    "title": "📄 Dokumentation",
+                    "desc": "Generera rena URL:er för hjälpartiklar och dokumentationssidor"
+                },
+                "landing": {
+                    "title": "🎯 Landningssidor",
+                    "desc": "Skapa sökordsrika URL:er för marknadsföringskampanjer och landningssidor"
+                }
+            },
+            "pro_tip_title": "💡 SEO Proffstips",
+            "pro_tip_desc": "Google rekommenderar att använda bindestreck (-) istället för understreck (_) i URL:er eftersom bindestreck behandlas som ordseparatorer medan understreck inte gör det. Detta innebär att \"seo-vanliga-urler\" är bättre än \"seo_vanliga_urler\" för sökmotoroptimering.",
+            "faq_title": "Vanliga frågor",
+            "faq": {
+                "q1": "Ska jag använda bindestreck eller understreck i URL:er?",
+                "a1": "Använd alltid bindestreck (-). Google behandlar bindestreck som ordseparatorer men behandlar understreck som ordbindare. Detta innebär att \"basta-seo-praxis\" läses som tre separata ord, medan \"basta_seo_praxis\" läses som ett ord.",
+                "q2": "Hur lång ska en URL-slug vara?",
+                "a2": "Håll sluggar mellan 3-5 ord (30-60 tecken). Kortare URL:er är lättare att komma ihåg, dela och rankar bättre i sökresultat. Ta bort onödiga ord som \"en\", \"det\", \"och\" för att hålla sluggar koncisa.",
+                "q3": "Kan jag ändra en URL-slug efter publicering?",
+                "a3": "Ja, men det rekommenderas inte. Att ändra URL:er kan bryta befintliga länkar och skada SEO. Om du måste ändra en slug, ställ alltid in en 301-omdirigering från den gamla URL:en till den nya för att bevara länkkraft och undvika 404-fel.",
+                "q4": "Ska jag inkludera sökord i min URL-slug?",
+                "a4": "Ja! Att inkludera relevanta sökord i din URL-slug hjälper sökmotorer förstå ditt innehåll och kan förbättra rankingar. Men håll det naturligt och beskrivande - proppa inte in sökord onaturligt."
+            }
+        },
+        "js": {
+            "copied": "Kopierad!"
+        }
+    },
+    "yahoo-serp-checker": {
+        "meta": {
+            "title": "Yahoo SERP Checker - Gratis SEO-rankningsverktyg online",
+            "description": "Gratis Yahoo SERP-kontroll för att spåra din webbplats rankingar på Yahoos sökmotor.",
+            "h1": "Yahoo SERP Checker",
+            "subtitle": "Övervaka Yahoos sökrankingar för dina sökord och konkurrenter"
+        },
+        "interface": {
+            "simulation_title": "Live Yahoo SERP-kontroll",
+            "keyword_label": "Ange sökord",
+            "location_label": "Plats (Stad)",
+            "yahoo_domain_label": "Yahoo-domän",
+            "device_label": "Enhetstyp",
+            "device_desktop": "Desktop",
+            "device_mobile": "Mobil (Smartphone)",
+            "no_login": "Ingen inloggning krävs",
+            "realtime_results": "Realtidsresultat"
+        },
+        "form": {
+            "keyword_placeholder": "ditt sökord...",
+            "location_placeholder": "Ange stad (Valfritt)",
+            "button": "Kontrollera Yahoo SERP"
+        },
+        "domains": {
+            "us": "Yahoo.com (USA/Global)",
+            "uk": "Yahoo.co.uk (Storbritannien)",
+            "ca": "Yahoo.ca (Kanada)",
+            "au": "Yahoo.com.au (Australien)",
+            "de": "Yahoo.de (Tyskland)",
+            "fr": "Yahoo.fr (Frankrike)",
+            "it": "Yahoo.it (Italien)",
+            "es": "Yahoo.es (Spanien)",
+            "br": "Yahoo.com.br (Brasilien)"
+        },
+        "content": {
+            "main_title": "Avancerad Yahoo Ranking Kontroll",
+            "main_subtitle": "Övervaka din sökprestanda på Yahoo. Få exakt rankingdata i realtid för att optimera din SEO-strategi.",
+            "feature1_title": "100% Gratis",
+            "feature1_desc": "Använd detta verktyg så många gånger du vill. Inga dolda kostnader.",
+            "feature2_title": "Obegränsade kontroller",
+            "feature2_desc": "Kontrollera obegränsat antal sökord utan kostnad. Ingen registrering eller prenumeration krävs.",
+            "feature3_title": "Realtidsdata",
+            "feature3_desc": "Få omedelbara SERP-resultat direkt från Yahoo Search.",
+            "why_matters_title": "Varför rankningar på Yahoo är viktiga",
+            "why_matters_desc": "Även om Yahoo är mindre än Google, har det fortfarande en betydande andel söktrafik, särskilt inom specifika demografier och regioner som Japan och delar av USA. Att ignorera Yahoo innebär att man går miste om potentiell trafik.",
+            "same_as_bing_title": "Använder Yahoo Bing-resultat?",
+            "same_as_bing_desc": "Ja, Yahoo Search drivs till stor del av <strong>Bings sökindex</strong>. Detta innebär att optimering för Bing ofta hjälper dina Yahoo-rankingar. Men Yahoos gränssnitt och funktioner skiljer sig åt, så att verifiera ditt faktiska utseende är avgörande."
+        },
+        "faq": {
+            "title": "Vanliga frågor",
+            "q1": "Är denna Yahoo Rank Checker gratis?",
+            "a1": "Ja! Vår **yahoo rank tracker** är 100% gratis. Kontrollera dina rankingar på Yahoo så ofta du behöver utan några dolda avgifter eller prenumerationer.",
+            "q2": "Använder Yahoo Bings sökresultat?",
+            "a2": "Eftersom Yahoo drivs av Bing, fokusera på Bing SEO bästa praxis: tydlig teknisk SEO, auktoritativa bakåtlänkar och relevant innehåll. Att använda detta verktyg för att övervaka framsteg är en bra start."
+        }
+    },
+    "sitemap-validator": {
+        "meta": {
+            "title": "Sitemap Validator - Gratis online XML Sitemap Checker",
+            "description": "Gratis verktyg för att kontrollera XML-webbplatskartor för fel, validera webbadresser och säkerställa protokollöverensstämmelse.",
+            "h1": "Sitemap Validator",
+            "subtitle": "Validera dina XML-webbplatskartor för fel"
+        },
+        "editor": {
+            "title": "Validera Sitemap",
+            "btn_xml_input": "XML Input",
+            "btn_url_input": "URL Input",
+            "label_xml": "Klistra in XML",
+            "ph_xml": "Klistra in din sitemap XML-kod här...",
+            "label_url": "Sitemap URL",
+            "ph_url": "https://exempel.se/sitemap.xml",
+            "help_url": "Ange hela webbadressen till din sitemap.xml-fil",
+            "btn_fetch": "Hämta",
+            "btn_validate": "Validera",
+            "btn_validating": "Validerar...",
+            "btn_clear": "Rensa",
+            "btn_example": "Ladda Exempel",
+            "check_urls": "Kontrollera URL-tillgänglighet"
+        },
+        "results": {
+            "title": "Valideringsresultat"
+        },
+        "content": {
+            "main_heading": "Bemästra din webbplatsstruktur",
+            "main_intro": "Se till att din webbplats är perfekt sökbar för sökmotorer. Hitta fel och optimera din ranking.",
+            "what_is_title": "Vad är en XML Sitemap Validator?",
+            "what_is_desc_1": "Ett viktigt SEO-verktyg för att kontrollera sitemap-filer för syntaxfel och döda länkar.",
+            "what_is_desc_2": "Sitemap är en karta för robotar. Fel kan förhindra indexering av viktiga sidor.",
+            "features_title": "Varför välja oss?",
+            "feature_instant_title": "Omedelbar analys",
+            "feature_instant_desc": "Få feedback direkt.",
+            "feature_strict_title": "Strikt validering",
+            "feature_strict_desc": "Vi kontrollerar mot det officiella XSD-schemat.",
+            "feature_index_title": "Indexstöd",
+            "feature_index_desc": "Stöder sitemap-indexfiler.",
+            "importance_title": "Betydelse för SEO",
+            "importance_budget_title": "Crawl Budget Effektivitet",
+            "importance_budget_desc": "Hjälper sökmotorer att använda resurser klokt.",
+            "importance_indexing_title": "Snabbare indexering",
+            "importance_indexing_desc": "Prioritera nytt innehåll.",
+            "importance_discovery_title": "Upptäckt av sidor",
+            "importance_discovery_desc": "Hittar isolerade sidor.",
+            "importance_troubleshooting_title": "Felsökning",
+            "importance_troubleshooting_desc": "Hitta 404-fel snabbt.",
+            "guide_title": "Hur man använder",
+            "guide_step1_title": "Ange URL",
+            "guide_step1_desc": "Klistra in din sitemap-adress.",
+            "guide_step2_title": "Kör validering",
+            "guide_step2_desc": "Klicka för att starta analysen.",
+            "guide_step3_title": "Se resultat",
+            "guide_step3_desc": "Korrigera fel markerade med rött.",
+            "faq_title": "FAQ",
+            "faq_privacy_question": "Sparar ni data?",
+            "faq_privacy_answer": "Nej, vi respekterar din integritet.",
+            "faq_frequency_question": "Hur ofta ska jag kontrollera?",
+            "faq_frequency_answer": "Vid strukturändringar eller månatligen.",
+            "faq_size_question": "Storleksgräns?",
+            "faq_size_answer": "50MB eller 50 000 URL:er.",
+            "faq_localhost_question": "Fungerar det på localhost?",
+            "faq_localhost_answer": "Ja, genom att klistra in XML-kod."
+        }
+    },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Hreflang Checker - Gratis Online Tag Validator",
+            "description": "Validera dina hreflang-taggar för att säkerställa att Google visar rätt språk- eller regions-URL:er för din publik.",
+            "h1": "Hreflang Checker",
+            "subtitle": "Gratis verktyg för att extrahera och validera hreflang-attribut för internationell SEO."
+        },
+        "form": {
+            "url_label": "Ange URL att kontrollera",
+            "url_placeholder": "https://exempel.se/sida",
+            "user_agent_label": "User Agent",
+            "user_agent_default": "Standard (Webbläsare)",
+            "user_agent_googlebot": "Googlebot (Desktop)",
+            "user_agent_bingbot": "Bingbot (Desktop)",
+            "button": "Kontrollera Hreflang-taggar"
+        },
+        "content": {
+            "main_title": "Hreflang-taggkontroll",
+            "main_subtitle": "Se till att ditt internationella innehåll når rätt publik. Validera hreflang-implementering och fixa vanliga SEO-fel.",
+            "intro": "Hreflang-taggar är avgörande för webbplatser som betjänar flera språk eller länder. Vårt gratis verktyg extraherar och validerar `rel=\"alternate\" hreflang=\"x\"`-taggar från din sidas HTML-huvud och HTTP-rubriker. Det kontrollerar ömsesidiga (retur-)taggar för att garantera att Google och andra sökmotorer indexerar ditt lokaliserade innehåll korrekt.",
+            "features_title": "Varför kontrollera dina Hreflang-taggar?",
+            "feature1_title": "Validera ömsesidiga taggar",
+            "feature1_desc": "Hreflang-taggar måste fungera i par. Vårt verktyg kontrollerar automatiskt om sida A länkar till sida B, och om sida B länkar tillbaka till sida A.",
+            "feature2_title": "Upptäck vanliga fel",
+            "feature2_desc": "Hitta saknade returtaggar, ogiltiga språkkoder (ISO 639-1) och felaktiga landskoder (ISO 3166-1 Alpha-2).",
+            "feature3_title": "Förhindra SEO-problem",
+            "feature3_desc": "Felaktig hreflang-implementering kan leda till problem med duplicerat innehåll och att fel språkversioner visas i sökresultat.",
+            "how_title": "Hur man använder Hreflang-kontrollen",
+            "step1_title": "Ange URL",
+            "step1_desc": "Klistra in hela URL:en för sidan du vill analysera (t.ex. https://exempel.se).",
+            "step2_title": "Välj User Agent",
+            "step2_desc": "Det rekommenderas att kontrollera med Googlebot, men du kan också kontrollera som standardwebbläsare.",
+            "step3_title": "Analysera resultat",
+            "step3_desc": "Vi hämtar sidan och listar alla hittade alternativa länkar tillsammans med deras valideringsstatus.",
+            "step4_title": "Fixa problem",
+            "step4_desc": "Om felmeddelandet 'Saknad returtagg' visas, uppdatera dina refererade sidor så att de inkluderar den ömsesidiga länken.",
+            "faq_title": "Vanliga frågor",
+            "faq1_q": "Vad är en hreflang-tagg?",
+            "faq1_a": "Hreflang är ett HTML-attribut som används för att ange språk och geografisk inriktning för en webbsida. Det berättar för sökmotorer vilken version av en sida som ska visas för användare i olika länder eller språk.",
+            "faq2_q": "Varför är returtaggar viktiga?",
+            "faq2_a": "Google kräver returlänkar för att förhindra att någon godtyckligt gör anspråk på en sida på en annan webbplats som en alternativ version av sin egen. Om sida A länkar till sida B, måste sida B länka tillbaka till sida A.",
+            "faq3_q": "Kontrollerar detta verktyg x-default-taggen?",
+            "faq3_a": "Ja, vårt verktyg identifierar och validerar `x-default` hreflang-taggen, som används för icke-matchande språk eller strikta landsväljare.",
+            "faq4_q": "Kan jag kontrollera hreflang i HTTP-rubriker?",
+            "faq4_a": "Ja! Vi kontrollerar både HTML `<head>`-sektionen och HTTP-svarsrubriker för attributet `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
+            "faq5_q": "Vad händer om jag har hreflang-fel?",
+            "faq5_a": "Sökmotorer kan ignorera dina ogiltiga taggar, vilket leder till att rätt språkversioner inte visas för rätt användare, eller potentiella straff för duplicerat innehåll.",
+            "faq6_q": "Är detta verktyg gratis?",
+            "faq6_a": "Ja, du kan utföra obegränsade kontroller gratis för att säkerställa att din internationella SEO är perfekt."
+        }
+    }
+}

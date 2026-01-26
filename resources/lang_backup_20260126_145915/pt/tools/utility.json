@@ -1,0 +1,332 @@
+{
+    "password-generator": {
+        "meta": {
+            "title": "Gerador de senha segura - ferramenta de segurança online gratuita",
+            "description": "Gere senhas fortes, seguras e aleatórias instantaneamente com configurações personalizáveis de comprimento e caracteres.",
+            "h1": "Gerador de senha segura",
+            "subtitle": "Gere senhas fortes e aleatórias instantaneamente"
+        },
+        "editor": {
+            "title": "Gere Sua Senha Segura Agora",
+            "length_label": "Comprimento da Senha:",
+            "chars": "caracteres",
+            "strength": {
+                "weak": "8 (Fraca)",
+                "good": "16 (Boa)",
+                "strong": "32 (Forte)",
+                "very_strong": "64 (Muito Forte)"
+            },
+            "include_label": "Incluir Tipos de Caracteres:",
+            "option_uppercase": "Letras Maiúsculas (A-Z)",
+            "option_uppercase_desc": "Adiciona letras maiúsculas para complexidade",
+            "option_lowercase": "Letras Minúsculas (a-z)",
+            "option_lowercase_desc": "Essencial para a força da senha",
+            "option_numbers": "Números (0-9)",
+            "option_numbers_desc": "Aumenta a entropia da senha",
+            "option_symbols": "Símbolos Especiais (!@#$%)",
+            "option_symbols_desc": "Proteção máxima de segurança",
+            "btn_generate": "Gerar Senha Forte",
+            "result_title": "Sua Senha Gerada",
+            "strength_score": "Pontuação de Segurança:",
+            "btn_copy_text": "Copiar Senha",
+            "btn_copy_final": "Copiar para Área de Transferência",
+            "btn_regenerate": "Regerar"
+        },
+        "content": {
+            "faq_hero_title": "Por que usar nosso Gerador de Senhas Seguras?",
+            "faq": {
+                "q1": "Quão seguras são as senhas geradas por esta ferramenta?",
+                "a1": "Nosso gerador de senhas usa geração de números aleatórios criptograficamente seguros para criar senhas. As senhas são geradas inteiramente no seu navegador usando o método crypto.getRandomValues() do JavaScript, garantindo aleatoriedade real e segurança máxima. Nós nunca armazenamos, transmitimos ou registramos quaisquer senhas geradas.",
+                "q2": "Qual é o comprimento de senha ideal?",
+                "a2": "Recomendamos um mínimo de 16 caracteres para uma segurança forte. Senhas mais longas (24-32 caracteres) oferecem uma proteção ainda melhor contra ataques de força bruta. Nosso gerador suporta até 64 caracteres para segurança máxima.",
+                "q3": "Devo incluir caracteres especiais na minha senha?",
+                "a3": "Sim, com certeza! A inclusão de caracteres especiais (!@#$%^&*) aumenta significativamente a complexidade e a entropia da senha. Uma senha com letras maiúsculas, minúsculas, números e símbolos é exponencialmente mais difícil de decifrar do que uma apenas com letras e números.",
+                "q4": "Como me lembro de senhas complexas?",
+                "a4": "Não tente memorizá-las! Use um gerenciador de senhas respeitável como LastPass, 1Password, Bitwarden ou Dashlane para armazenar todas as suas senhas com segurança. Os gerenciadores de senhas criptografam suas senhas e exigem apenas que você se lembre de uma senha mestra.",
+                "q5": "É seguro usar um gerador de senhas online?",
+                "a5": "Sim, nosso gerador de senhas é completamente seguro porque toda a geração de senhas acontece localmente no seu navegador. As senhas nunca são enviadas para nossos servidores ou armazenadas em qualquer lugar.",
+                "q6": "Com que frequência devo alterar minhas senhas?",
+                "a6": "Para contas críticas (e-mail, bancos, trabalho), altere as senhas a cada 3-6 meses. Se você suspeitar de uma violação ou receber um alerta de segurança, altere sua senha imediatamente."
+            },
+            "seo": {
+                "title": "Entendendo a Segurança e Criptografia de Senhas",
+                "p1": "A segurança de senhas é a base da segurança online. Uma senha forte atua como a primeira linha de defesa contra o acesso não autorizado às suas informações pessoais, dados financeiros e identidade digital.",
+                "p2": "A força de uma senha é medida por sua entropia - a quantidade de aleatoriedade e imprevisibilidade. Uma senha de 16 caracteres com todos os tipos de caracteres tem uma entropia significativamente maior do que uma senha simples de 8 caracteres.",
+                "p3": "Nossa ferramenta gratuita de geração de senhas foi projetada para todos - desde indivíduos que protegem contas pessoais até empresas que garantem o acesso dos funcionários. Gere senhas ilimitadas, totalmente gratuitas, sem necessidade de registro."
+            }
+        },
+        "js": {
+            "generating": "Gerando Senha Segura...",
+            "strength": {
+                "very_strong": "✓ Muito Forte - Excelente segurança de senha!",
+                "strong": "✓ Forte - Boa segurança de senha.",
+                "medium": "⚠ Médio - Considere torná-la mais forte.",
+                "weak": "⚠ Fraca - Por favor, gere uma senha mais forte."
+            },
+            "error_generating": "Erro ao gerar a senha. Por favor, tente novamente",
+            "copied": "Copiado!",
+            "error_copy": "Falha ao copiar a senha. Por favor, copie manualmente."
+        }
+    },
+    "qr-code-generator": {
+        "meta": {
+            "title": "Gerador de código QR - Criador de QR personalizado on-line gratuito",
+            "description": "Crie QR codes personalizados instantaneamente para URLs, texto, WiFi e muito mais. Baixe imagens PNG de alta qualidade.",
+            "h1": "Gerador de código QR",
+            "subtitle": "Crie QR codes personalizados instantaneamente para qualquer finalidade"
+        },
+        "editor": {
+            "title": "Gerar QR Code",
+            "label_text": "Inserir Texto ou URL",
+            "ph_text": "Insira o texto, URL ou qualquer dado que você deseja codificar...",
+            "label_size": "Tamanho do QR Code",
+            "opt_small": "Pequeno (128x128)",
+            "opt_medium": "Médio (256x256)",
+            "opt_large": "Grande (512x512)",
+            "opt_xl": "Muito Grande (1024x1024)",
+            "btn_generate": "Gerar QR Code",
+            "btn_download": "Baixar QR Code",
+            "preview_title": "Visualização",
+            "preview_placeholder": "Seu QR code aparecerá aqui"
+        },
+        "content": {
+            "hero_title": "Gerador de QR Code Gratuito",
+            "hero_subtitle": "Crie QR codes personalizados instantaneamente para qualquer finalidade",
+            "p1": "Nosso Gerador de QR Code gratuito cria QR codes de alta qualidade instantaneamente. Perfeito para empresas, profissionais de marketing, organizadores de eventos e qualquer pessoa que precise compartilhar informações rapidamente. Gere QR codes para URLs, texto, informações de contato, credenciais de WiFi e muito mais. Baixe em vários tamanhos e use em qualquer lugar - totalmente gratuito, sem necessidade de registro.",
+            "faq": {
+                "q1": "Os QR codes são permanentes?",
+                "a1": "Sim! Os QR codes são estáticos e permanentes. Uma vez gerados, eles sempre funcionarão contanto que os dados codificados (como um URL) permaneçam válidos.",
+                "q2": "Os QR codes são permanentes?",
+                "a2": "Sim! Os QR codes são estáticos e permanentes. Uma vez gerados, eles sempre funcionarão contanto que os dados codificados (como um URL) permaneçam válidos.",
+                "q3": "Qual tamanho devo usar para impressão?",
+                "a3": "Para cartões de visita, use pelo menos 256px. Para cartazes e banners, use 512px ou 1024px. Quanto maior o tamanho da impressão, maior deve ser o QR code para facilitar o escaneamento.",
+                "q4": "Posso rastrear escaneamentos de QR code?",
+                "a4": "Nossa ferramenta gera QR codes estáticos sem rastreamento. Para rastrear escaneamentos, use um encurtador de URL com análise antes de gerar o QR code, ou use um serviço de QR code dinâmico.",
+                "q5": "Existe um limite para a quantidade de dados que posso codificar?",
+                "a5": "Os QR codes podem armazenar até 4.296 caracteres alfanuméricos, mas para melhores resultados de escaneamento, mantenha os dados concisos. URLs com menos de 100 caracteres funcionam melhor.",
+                "q6": "Os QR codes expiram?",
+                "a6": "Não, os próprios QR codes nunca expiram. No entanto, se o QR code apontar para uma URL que for excluída ou alterada, o QR code não funcionará mais."
+            },
+            "features_title": "Recursos",
+            "features": {
+                "instant": {
+                    "title": "Geração Instantânea",
+                    "desc": "Crie QR codes em segundos com visualização em tempo real"
+                },
+                "sizes": {
+                    "title": "Vários Tamanhos",
+                    "desc": "Escolha de 128px a 1024px para qualquer caso de uso"
+                },
+                "download": {
+                    "title": "Download Fácil",
+                    "desc": "Baixe como imagem PNG com um clique"
+                },
+                "privacy": {
+                    "title": "Privacidade em Primeiro Lugar",
+                    "desc": "Todo o processamento acontece no seu navegador"
+                },
+                "free": {
+                    "title": "100% Gratuito",
+                    "desc": "Sem limites, sem marcas d'água, sem necessidade de registro"
+                },
+                "compatibility": {
+                    "title": "Compatibilidade Universal",
+                    "desc": "Funciona com todos os leitores de QR code"
+                }
+            },
+            "uses_title": "🎯 Casos de Uso Comuns",
+            "uses": {
+                "urls": {
+                    "title": "🔗 URLs de Sites",
+                    "desc": "Direcione os usuários para o seu site, página de destino ou loja online instantaneamente"
+                },
+                "contact": {
+                    "title": "👤 Informações de Contato",
+                    "desc": "Compartilhe vCards com detalhes de e-mail, telefone e endereço"
+                },
+                "social": {
+                    "title": "👍 Redes Sociais",
+                    "desc": "Link para seus perfis sociais, canal do YouTube ou Instagram"
+                },
+                "tickets": {
+                    "title": "🎟️ Ingressos para Eventos",
+                    "desc": "Gere ingressos escaneáveis para eventos e conferências"
+                },
+                "product": {
+                    "title": "📦 Informações do Produto",
+                    "desc": "Adicione QR codes aos produtos para manuais, especificações ou autenticidade"
+                },
+                "payment": {
+                    "title": "💳 Links de Pagamento",
+                    "desc": "Permita pagamentos rápidos via PayPal, Venmo ou carteiras de criptomoedas"
+                }
+            },
+            "how_title": "📚 Como Usar",
+            "how_steps": {
+                "1": {
+                    "title": "Insira seus dados:",
+                    "desc": "Digite ou cole o texto, URL ou informação que você deseja codificar"
+                },
+                "2": {
+                    "title": "Escolha o tamanho:",
+                    "desc": "Selecione o tamanho do QR code com base em onde você o usará"
+                },
+                "3": {
+                    "title": "Gerar:",
+                    "desc": "Clique em \"Gerar QR Code\" para criar seu QR code instantaneamente"
+                },
+                "4": {
+                    "title": "Baixar:",
+                    "desc": "Clique em \"Baixar QR Code\" para salvar a imagem PNG"
+                },
+                "5": {
+                    "title": "Use em qualquer lugar:",
+                    "desc": "Imprima, compartilhe digitalmente ou adicione a materiais de marketing"
+                }
+            },
+            "best_practices_title": "💡 Melhores Práticas",
+            "best_practices": {
+                "test": {
+                    "title": "Teste antes de imprimir:",
+                    "desc": "Sempre escaneie seu QR code para verificar se ele funciona corretamente"
+                },
+                "size": {
+                    "title": "Use o tamanho apropriado:",
+                    "desc": "QR codes maiores são mais fáceis de escanear à distância"
+                },
+                "contrast": {
+                    "title": "Garante o contraste:",
+                    "desc": "Imprima em fundos brancos ou claros para obter o melhor escaneamento"
+                },
+                "context": {
+                    "title": "Adicione contexto:",
+                    "desc": "Inclua uma chamada para ação como \"Escaneie para visitar o site\""
+                },
+                "short": {
+                    "title": "Mantenha as URLs curtas:",
+                    "desc": "URLs mais curtas criam QR codes mais simples e fáceis de escanear"
+                }
+            },
+            "faq_title": "Perguntas Frequentes"
+        },
+        "js": {
+            "error_empty": "Por favor, insira o texto ou URL para gerar o QR code",
+            "error_generating": "Erro ao gerar o QR code.",
+            "error_no_code": "Por favor, gere um QR code primeiro",
+            "error_image_not_found": "Imagem do QR code não encontrada"
+        }
+    },
+    "random-number-generator": {
+        "meta": {
+            "title": "Gerador de Números Aleatórios - Ferramenta Matemática Online Gratuita",
+            "description": "Gere números inteiros verdadeiramente aleatórios dentro de uma faixa especificada. Útil para jogos, loterias e sorteios.",
+            "h1": "Gerador de números aleatórios",
+            "subtitle": "Gere números inteiros verdadeiramente aleatórios dentro de uma faixa especificada"
+        },
+        "editor": {
+            "label_min": "Valor Mínimo",
+            "label_max": "Valor Máximo",
+            "label_count": "Quantidade",
+            "btn_generate": "Gerar Números",
+            "label_result": "Resultado"
+        },
+        "js": {
+            "error_invalid": "Por favor, insira números válidos",
+            "error_min_max": "O mínimo não pode ser maior que o máximo"
+        }
+    },
+    "username-checker": {
+        "meta": {
+            "title": "Verificador de disponibilidade de nome de usuário - pesquisa online gratuita",
+            "description": "Verifique a disponibilidade de nomes de usuário nas principais plataformas sociais instantaneamente.",
+            "h1": "Verificador de disponibilidade de nome de usuário",
+            "subtitle": "Verifique a disponibilidade de nomes de usuário em todas as principais plataformas sociais"
+        },
+        "editor": {
+            "title_enter": "Inserir Nome de Usuário",
+            "label_username": "Nome de Usuário",
+            "ph_username": "joaosilva",
+            "help_username": "Insira o nome de usuário sem o símbolo @",
+            "btn_check": "Verificar Disponibilidade",
+            "title_results": "Resultados de Disponibilidade",
+            "btn_checking": "Verificando...",
+            "status_available": "Disponível",
+            "status_taken": "Ocupado",
+            "link_view": "Ver Perfil →"
+        },
+        "content": {
+            "p1": "Verifique a disponibilidade de nomes de usuário em todas as principais plataformas de mídia social instantaneamente com o nosso verificador de nome de usuário gratuito. Encontre o handle perfeito para sua marca no Twitter, Instagram, GitHub, TikTok, Facebook, LinkedIn, YouTube, Reddit e muito mais. Garanta sua identidade de marca reivindicando o mesmo nome de usuário em todas as plataformas antes que outra pessoa o faça. Perfeito para branding pessoal, contas empresariais e marketing de influenciadores.",
+            "platforms_title": "Plataformas Suportadas",
+            "platforms": {
+                "social": {
+                    "title": "Mídias Sociais",
+                    "list": [
+                        "Twitter (X): Verifique a disponibilidade de @usuario",
+                        "Instagram: Encontre o seu handle perfeito",
+                        "TikTok: Garanta o seu @usuario",
+                        "Facebook: Verifique o URL do perfil"
+                    ]
+                },
+                "professional": {
+                    "title": "Profissional",
+                    "list": [
+                        "LinkedIn: Perfil profissional",
+                        "GitHub: Nome de usuário do desenvolvedor",
+                        "Medium: Perfil de escritor",
+                        "YouTube: Handle do canal"
+                    ]
+                }
+            },
+            "best_practices_title": "Melhores Práticas para Nomes de Usuário",
+            "best_practices": {
+                "short": {
+                    "title": "Mantenha-o Curto",
+                    "desc": "Busque entre 6 e 15 caracteres para facilitar a memorização e a digitação"
+                },
+                "spell": {
+                    "title": "Fácil de Soletrar",
+                    "desc": "Evite grafias complexas, números e caracteres especiais"
+                },
+                "brand": {
+                    "title": "Consistência da Marca",
+                    "desc": "Use o mesmo nome de usuário em todas as plataformas para facilitar o reconhecimento"
+                },
+                "trends": {
+                    "title": "Evite Tendências",
+                    "desc": "Não use palavras da moda que possam se tornar obsoletas"
+                },
+                "seo": {
+                    "title": "Amigável para SEO",
+                    "desc": "Inclua palavras-chave relevantes para melhor descoberta"
+                },
+                "fast": {
+                    "title": "Aja Rápido",
+                    "desc": "Reivindique seu nome de usuário rapidamente antes que ele seja ocupado"
+                }
+            },
+            "tips_title": "Dicas Pro para Escolher um Nome de Usuário",
+            "tips_list": {
+                "items": [
+                    "Verifique a disponibilidade em todas as plataformas antes de finalizar",
+                    "Considere a expansão futura dos negócios ao escolher",
+                    "Torne-o pronunciável para o marketing boca a boca",
+                    "Evite usar sublinhados ou números, se possível",
+                    "Garanta um nome de domínio que corresponda ao seu nome de usuário"
+                ]
+            },
+            "faq_title": "Perguntas Frequentes",
+            "faq": {
+                "q1": "Quantas plataformas posso verificar de uma só vez?",
+                "a1": "Nosso verificador de nome de usuário suporta mais de 10 plataformas principais, incluindo Twitter, Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium e Pinterest. Verifique todas as plataformas simultaneamente com uma única pesquisa.",
+                "q2": "E se o nome de usuário desejado já estiver ocupado?",
+                "a2": "Tente variações como adicionar sua localização, setor ou uma palavra relevante. Você também pode usar sublinhados, pontos ou abreviações. Nossa ferramenta ajuda você a testar rapidamente várias variações.",
+                "q3": "Devo usar o mesmo nome de usuário em todos os lugares?",
+                "a3": "Sim! Usar o mesmo nome de usuário em todas as plataformas fortalece a identidade da sua marca, torna você mais fácil de ser encontrado e ajuda no reconhecimento e marketing multiplataforma.",
+                "q4": "Posso reservar um nome de usuário sem criar uma conta?",
+                "a4": "Não, você deve criar uma conta em cada plataforma para reivindicar um nome de usuário. Nossa ferramenta apenas verifica a disponibilidade - você precisará se inscrever em cada plataforma para garantir seu nome de usuário.",
+                "q5": "Com que frequência devo verificar a disponibilidade do nome de usuário?",
+                "a5": "A disponibilidade de nomes de usuário muda constantemente. Se você encontrar um nome de usuário disponível que goste, reivindique-o imediatamente em todas as plataformas. Nomes de usuário populares podem ser ocupados em horas ou até minutos."
+            }
+        }
+    }
+}

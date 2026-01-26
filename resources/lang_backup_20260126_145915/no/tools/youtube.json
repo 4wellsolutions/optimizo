@@ -1,0 +1,465 @@
+{
+    "youtube-channel-data-extractor": {
+        "meta": {
+            "title": "YouTube Channel Data Extractor - Gratis nettverktøy",
+            "description": "Ekstraher komplette YouTube-kanaldata inkludert antall abonnenter, videoer, visninger og mer. Gratis verktøy for markedsførere og skapere.",
+            "h1": "YouTube Channel Data Extractor",
+            "subtitle": "Ekstraher komplette YouTube-kanalstatistikker og info. Gratis verktøy for detaljert analyse."
+        },
+        "form": {
+            "title": "Ekstraher kanaldata",
+            "url_label": "YouTube-kanal-URL",
+            "url_placeholder": "https://www.youtube.com/@kanalnavn eller https://www.youtube.com/c/kanalnavn",
+            "url_help": "Lim inn en hvilken som helst YouTube-kanal-URL for å ekstrahere data",
+            "submit": "Ekstraher kanaldata"
+        },
+        "results": {
+            "success_title": "Kanaldata ble ekstrahert vellykket!"
+        },
+        "content": {
+            "main_title": "YouTube-kanaldataekstraktor",
+            "main_subtitle": "Ekstraher komplette kanalstatistikker og informasjon umiddelbart",
+            "description": "Vår gratis YouTube-kanaldataekstraktor hjelper deg med å analysere enhver YouTube-kanal ved å hente ut omfattende statistikk og informasjon. Få antall abonnenter, totale videoer, visningstall, kanalbeskrivelser, startdatoer og mer – alt uten behov for en YouTube API-nøkkel. Perfekt for konkurrentanalyse, influenser-research, markedsføringskampanjer og planlegging av innholdsstrategi.",
+            "feature_complete_stats_title": "Komplett statistikk",
+            "feature_complete_stats_description": "Få abonnenter, visninger, antall videoer og alle kanalmetrikker",
+            "feature_instant_results_title": "Umiddelbare resultater",
+            "feature_instant_results_description": "Ekstraher kanaldata umiddelbart uten forsinkelser",
+            "feature_free_title": "100 % gratis",
+            "feature_free_description": "Ingen API-nøkler, ingen registrering, helt gratis for alltid",
+            "extractable_data_title": "Ekstraherbare kanaldata",
+            "use_cases_title": "Vanlige brukseksempler"
+        },
+        "stats": {
+            "title": " Kanalstatistikk",
+            "subscriber_count": "Antall abonnenter",
+            "subscriber_count_desc": "Totalt antall abonnenter",
+            "video_count": "Antall videoer",
+            "video_count_desc": "Antall publiserte videoer",
+            "total_views": "Totalt antall visninger",
+            "total_views_desc": "Totale visninger over tid",
+            "join_date": "Startdato",
+            "join_date_desc": "Når kanalen ble opprettet"
+        },
+        "info": {
+            "title": "ℹ Kanalinformasjon",
+            "channel_name": "Kanalnavn",
+            "channel_name_desc": "Offisielt kanalnavn",
+            "channel_handle": "Kanal-handle",
+            "channel_handle_desc": "@brukernavn-format",
+            "description": "Beskrivelse",
+            "description_desc": "Full kanalbeskrivelse",
+            "channel_id": "Kanal-ID",
+            "channel_id_desc": "Unik identifikator"
+        },
+        "use_cases": {
+            "case1": "Konkurrentanalyse",
+            "case1_desc": "Undersøk konkurrentenes kanaler for å forstå deres vekst og strategi",
+            "case2": "Influenser-research",
+            "case2_desc": "Evaluer influensere for samarbeids- og sponsormuligheter",
+            "case3": "Markedsundersøkelser",
+            "case3_desc": "Analyser kanalytelse innen din nisje eller bransje",
+            "case4": "Evaluering av partnerskap",
+            "case4_desc": "Vurder potensielle partnere basert på deres kanalmetrikker",
+            "case5": "Vekstsporing",
+            "case5_desc": "Overvåk kanalvekst over tid for benchmarking",
+            "case6": "Innholdsstrategi",
+            "case6_desc": "Studer vellykkede kanaler for å informere din egen innholdsstrategi"
+        },
+        "pro_tips": {
+            "title": " Proff-tips for kanalanalyse",
+            "tip1": "Sammenlign flere kanaler i din nisje for å identifisere vekstmønstre",
+            "tip2": "Spor kanalmetrikker over tid for å oppdage trender og muligheter",
+            "tip3": "Bruk abonnent-til-visning-forholdet for å måle engasjement",
+            "tip4": "Analyser kanalbeskrivelser for innsikt i søkeord og SEO",
+            "tip5": "Sjekk startdatoer for å forstå kanalens modenhet og vekstrate"
+        },
+        "faq": {
+            "title": " Ofte stilte spørsmål",
+            "q1": "Trenger jeg en YouTube API-nøkkel?",
+            "a1": "Nei! Verktøyet vårt fungerer uten API-nøkler. Bare lim inn kanal-URL-en og få umiddelbare resultater.",
+            "q2": "Hvilke kanaldata kan jeg hente ut?",
+            "a2": "Du kan hente ut antall abonnenter, totale videoer, totale visninger, kanalnavn, beskrivelse, kanal-ID, tilpasset URL, land og startdato.",
+            "q3": "Er dette verktøyet gratis å bruke?",
+            "a3": "Ja, helt gratis! Hent ut data fra ubegrenset antall kanaler uten restriksjoner eller skjulte gebyrer.",
+            "q4": "Kan jeg bruke dette til konkurrentanalyse?",
+            "a4": "Absolutt! Dette verktøyet er perfekt for å analysere konkurrentenes kanaler og forstå deres vellykkede strategier.",
+            "q5": "Er det en grense for hvor mange kanaler jeg kan analysere?",
+            "a5": "Ingen grenser! Hent ut data fra så mange YouTube-kanaler du vil, helt gratis."
+        },
+        "js": {
+            "error_enter_url": "Vennligst skriv inn en YouTube-kanal-URL",
+            "error_valid_url": "Vennligst skriv inn en gyldig YouTube-kanal-URL",
+            "extracting": "Ekstraherer data...",
+            "error_failed": "Kunne ikke hente ut kanaldata. Vennligst prøv igjen.",
+            "copy": "Kopier",
+            "copied": "Kopiert!"
+        }
+    },
+    "youtube-channel-id-finder": {
+        "meta": {
+            "title": "YouTube Channel ID Finder - Gratis nettverktøy",
+            "description": "Finn den unike ID-en til enhver YouTube-kanal umiddelbart. Enkelt verktøy for utviklere og markedsførere. Ingen API-nøkkel kreves.",
+            "h1": "YouTube Channel ID Finder",
+            "subtitle": "Finn hvilken som helst YouTube-kanal-ID umiddelbart. Essensielt for API-integrasjon og analyse."
+        },
+        "form": {
+            "title": "Finn YouTube-kanal-ID",
+            "url_label": "YouTube-kanal-URL eller brukernavn",
+            "url_placeholder": "https://www.youtube.com/@kanalnavn eller https://www.youtube.com/c/kanalnavn",
+            "url_help": "Skriv inn URL-en til YouTube-kanalen eller @brukernavnet for å finne dens ID",
+            "find_button": "Finn kanal-ID"
+        },
+        "js": {
+            "success_title": "Kanal-ID funnet!",
+            "channel_id": "Kanal-ID",
+            "copy": "Kopier",
+            "error_enter_url": "Vennligst skriv inn en YouTube-kanal-URL",
+            "error_valid_url": "Vennligst skriv inn en gyldig YouTube-kanal-URL",
+            "finding": "Finner ID...",
+            "error_failed": "Kunne ikke hente kanal-ID. Vennligst prøv igjen.",
+            "channel_name": "Kanalnavn",
+            "channel_url": "Kanal-URL",
+            "copied": "Kopiert!"
+        },
+        "content": {
+            "main_title": "Finn YouTube-kanal-ID umiddelbart",
+            "main_subtitle": "Få enhver kanals unike ID for API-integrasjon, analyse og utvikling",
+            "main_description": "Vår gratis YouTube-kanal-ID-finner hjelper utviklere og markedsførere med å raskt finne den unike ID-en for enhver YouTube-kanal. Enten du trenger den for API-integrasjon eller analyseverktøy, får du nøyaktige kanal-ID-er umiddelbart.",
+            "feature_instant_desc": "Få kanal-ID-er umiddelbart uten forsinkelser",
+            "feature_formats": "Alle URL-formater",
+            "feature_formats_desc": "Fungerer med @handle, /c/, /channel/ og /user/",
+            "feature_copy": "Enkel kopiering",
+            "feature_copy_desc": "Ett-klikks kopiering til utklippstavlen",
+            "api_dev_title": "🔧 API og utvikling",
+            "api_dev_1": "Påkrevd for integrasjon med YouTube Data API v3",
+            "api_dev_2": "Essensielt for å bygge YouTube-analyseverktøy",
+            "marketing_title": "📊 Markedsføring og analyse",
+            "marketing_1": "Spor konkurrentenes kanalytelse"
+        },
+        "faq": {
+            "title": "❓ Ofte stilte spørsmål",
+            "q1": "Hva er en YouTube-kanal-ID?",
+            "a1": "En YouTube-kanal-ID er en unik identifikator på 24 tegn som starter med \"UC\". Den er permanent og endres ikke selv om kanalnavnet endres.",
+            "q2": "Hvorfor trenger jeg kanal-ID-en i stedet for bare kanalnavnet?",
+            "a2": "YouTube API krever kanal-ID-er for de fleste operasjoner for å sikre nøyaktighet.",
+            "q4": "Er dette verktøyet gratis å bruke?",
+            "a4": "Absolutt! Vår kanal-ID-finner er helt gratis uten begrensninger.",
+            "q6": "Hvilke URL-formater støtter dette verktøyet?",
+            "a6": "Vi støtter alle formater: @handle, /c/, /channel/ og /user/."
+        }
+    },
+    "youtube-earnings-calculator": {
+        "meta": {
+            "title": "YouTube-inntektskalkulator – gratis online inntektsverktøy",
+            "description": "Beregn YouTube-inntekter basert på visninger og CPM. Få umiddelbare estimater for daglig, månedlig og årlig inntekt.",
+            "h1": "YouTube inntektskalkulator",
+            "subtitle": "Beregn YouTube-inntekt basert på visninger og CPM. Få daglige, månedlige og årlige estimater."
+        },
+        "how_to_use": {
+            "title": "Beregn YouTube-inntekter"
+        },
+        "form": {
+            "daily_views_label": "Daglige videovisninger",
+            "daily_views_help": "Skriv inn dine gjennomsnittlige daglige visninger",
+            "cpm_label": "Estimert CPM ($)",
+            "cpm_help": "Gjennomsnittlig CPM varierer fra $0,25 til $4,00",
+            "calculate_button": "Beregn inntekt",
+            "estimated_earnings": "Estimerte inntekter",
+            "daily": "Daglig",
+            "monthly": "Månedlig",
+            "yearly": "Årlig",
+            "note": "Merk: Dette er estimater. Faktiske inntekter varierer basert på nisje og publikum."
+        },
+        "content": {
+            "main_title": "Beregn ditt inntektspotensial",
+            "main_description": "Vår gratis YouTube-inntektskalkulator hjelper innholdsskapere med å estimere potensielle inntekter basert på daglige visninger og CPM.",
+            "understanding_title": "💰 Forstå YouTube-inntekter",
+            "how_pays_title": "📊 Slik betaler YouTube",
+            "how_pays_1": "CPM (Cost Per Mille): Inntekt per 1000 visninger",
+            "how_pays_3": "Inntektsdeling: YouTube beholder 45 %, skapere får 55 %",
+            "cpm_niche_title": "🎯 CPM etter nisje",
+            "cpm_finance": "Finans/Business: $4 - $12",
+            "cpm_tech": "Teknologi/Programvare: $2 - $8",
+            "factors_title": "📈 Faktorer som påvirker inntekten",
+            "factor_location": "Publikums plassering",
+            "factor_niche": "Innholdsnisje",
+            "tips_title": "💡 Proff-tips: Maksimering av inntekter"
+        },
+        "faq": {
+            "title": "❓ Ofte stilte spørsmål",
+            "q1": "Hvor mye betaler YouTube per 1000 visninger?",
+            "a1": "YouTube betaler gjennomsnittlig mellom $0,25 og $4,00 per 1000 visninger, avhengig av nisje og publikum.",
+            "q2": "Hva er CPM og hvordan fungerer det?",
+            "a2": "CPM (Cost Per Mille) er beløpet annonsører betaler per 1000 annonsevisninger."
+        }
+    },
+    "youtube-handle-checker": {
+        "meta": {
+            "title": "YouTube Handle Checker – gratis tilgjengelighetsverktøy på nett",
+            "description": "Sjekk om ditt ønskede YouTube-handle er ledig. Gratis verktøy for å finne det perfekte @handle for din kanal.",
+            "h1": "YouTube Handle Checker",
+            "subtitle": "Sjekk tilgjengelighet for YouTube @handle umiddelbart."
+        },
+        "form": {
+            "title": "Sjekk tilgjengelighet for handle",
+            "handle_label": "Ønsket handle",
+            "handle_placeholder": "dithandle",
+            "handle_help": "Skriv inn handle uten @-symbolet",
+            "check_button": "Sjekk tilgjengelighet"
+        },
+        "js": {
+            "try_alternatives": "Prøv disse alternativene:",
+            "error_enter_handle": "Vennligst skriv inn et handle",
+            "error_invalid_handle": "Ugyldig format på handle",
+            "checking": "Sjekker...",
+            "error_failed": "Kunne ikke sjekke handle",
+            "available_title": "✅ Tilgjengelig!",
+            "available_message": "Dette navnet er ledig",
+            "taken_title": "❌ Tatt",
+            "taken_message": "Dette navnet er allerede tatt"
+        },
+        "content": {
+            "main_title": "Sjekk tilgjengelighet for handle",
+            "main_subtitle": "Finn det perfekte @handle for din YouTube-kanal",
+            "description": "Sjekk om ditt ønskede YouTube-handle er ledig og sikre din merkevareidentitet.",
+            "tips_title": "💡 Proff-tips: Velge det perfekte handle",
+            "faq_title": "❓ Ofte stilte spørsmål"
+        }
+    },
+    "youtube-monetization-checker": {
+        "meta": {
+            "title": "YouTube Monetization Checker – Gratis nettverktøy",
+            "description": "Sjekk om en YouTube-kanal er monetisert. Gratis verktøy for å verifisere kvalifisering for monetisering.",
+            "h1": "YouTubes inntektskontroll",
+            "subtitle": "Sjekk om en YouTube-kanal er monetisert. Verifiser kvalifisering umiddelbart."
+        },
+        "form": {
+            "url_label": "YouTube-kanal-URL eller handle",
+            "url_placeholder": "https://www.youtube.com/@kanalnavn eller @kanalnavn",
+            "url_help": "Skriv inn kanal-URL, handle (@brukernavn) eller kanal-ID",
+            "check_button": "Sjekk monetisering",
+            "checking": "Sjekker..."
+        },
+        "results": {
+            "monetization_status": "Status for monetisering",
+            "estimated_status": "Estimert status",
+            "note_title": "Merk:",
+            "note_text": "Dette verktøyet estimerer status basert på offentlige data."
+        },
+        "content": {
+            "requirements_title": " Krav for YouTube Partnerprogram (2024)",
+            "req1_title": " 1000 abonnenter",
+            "req2_title": " 4000 seertimer",
+            "revenue_title": " Inntektskilder fra YouTube-monetisering",
+            "revenue1_title": "Annonseinntekter",
+            "revenue2_title": "Kanalmedlemskap",
+            "faq_title": " Ofte stilte spørsmål",
+            "faq_q1": "Er dette verktøyet 100 % nøyaktig?",
+            "faq_a1": "Verktøyet gir et estimat med høy konformitet basert på offentlig tilgjengelige data."
+        },
+        "js": {
+            "error_failed": "Kunne ikke sjekke status for monetisering",
+            "subscribers_text": "abonnenter",
+            "likely_monetized": " Sannsynligvis monetisert",
+            "not_monetized": " Ikke monetisert"
+        }
+    },
+    "youtube-tag-generator": {
+        "meta": {
+            "title": "YouTube Tag Generator - Gratis online SEO-videoverktøy",
+            "description": "Generer optimaliserte YouTube-tagger umiddelbart for å forbedre video-SEO.",
+            "h1": "YouTube Tag Generator",
+            "subtitle": "Generer SEO-optimaliserte tagger for YouTube-videoer."
+        },
+        "form": {
+            "title": "Generer YouTube-tagger",
+            "keyword_label": "Hovedsøkeord eller tema",
+            "keyword_placeholder": "f.eks. matoppskrifter, spill-tutorial, teknologianmeldelse...",
+            "keyword_help": "Skriv inn videoens hovedtema for å generere relevante tagger"
+        },
+        "results": {
+            "title": "Genererte tagger"
+        },
+        "content": {
+            "feature1_title": "SEO-optimalisert",
+            "feature2_title": "Umiddelbare resultater",
+            "feature3_title": "Enkel kopiering",
+            "tips_title": "💡 Proff-tips: Maksimering av tag-effekt",
+            "faq_title": "❓ Ofte stilte spørsmål"
+        },
+        "js": {
+            "generate_button": "Generer tagger",
+            "copy_all": "Kopier alle",
+            "copied": "Kopiert!"
+        }
+    },
+    "youtube-thumbnail-downloader": {
+        "meta": {
+            "title": "YouTube Thumbnail Downloader - Gratis nettverktøy",
+            "description": "Last ned miniatyrbilder fra YouTube i HD, 4K og 1080p. Gratis online-verktøy.",
+            "h1": "YouTube-miniatyrnedlasting",
+            "subtitle": "Last ned YouTube-miniatyrbilder i alle oppløsninger. Gratis og raskt."
+        },
+        "form": {
+            "title": "Last ned YouTube-miniatyrbilde",
+            "url_label": "YouTube-video-URL",
+            "url_help": "Lim inn en hvilken som helst YouTube-video-URL",
+            "submit": "Hent bilde"
+        },
+        "results": {
+            "preview_title": "Forhåndsvisning",
+            "resolutions_title": "Tilgjengelige oppløsninger"
+        },
+        "content": {
+            "main_title": "YouTube-miniatyrbilde-nedlaster",
+            "description": "Last ned miniatyrbilder fra enhver YouTube-video enkelt.",
+            "feature_all_resolutions_title": "Alle oppløsninger",
+            "feature_instant_download_title": "Umiddelbar nedlasting",
+            "feature_free_title": "100 % gratis",
+            "resolutions_section_title": "Tilgjengelige oppløsninger",
+            "use_cases_section_title": "Vanlige brukseksempler",
+            "pro_tip_title": "Proff-tips: Effektive miniatyrbilder",
+            "faq_section_title": "Ofte stilte spørsmål"
+        },
+        "how_to_use": {
+            "title": "Slik laster du ned miniatyrbilder"
+        },
+        "extra_use_cases": {
+            "title": "Populære bruksområder"
+        }
+    },
+    "youtube-video-data-extractor": {
+        "meta": {
+            "title": "YouTube Video Data Extractor - Gratis online metaverktøy",
+            "description": "Hent ut komplette videodata som tittel, beskrivelse, tagger, visninger og likes. Gratis verktøy.",
+            "h1": "YouTube Video Data Extractor",
+            "subtitle": "Hent ut tittel, beskrivelse, tagger, visninger og likes."
+        },
+        "form": {
+            "title": "Hent ut YouTube-videodata",
+            "url_label": "YouTube-video-URL",
+            "url_help": "Lim inn en hvilken som helst YouTube-video-URL",
+            "submit": "Hent ut data"
+        },
+        "results": {
+            "success_title": "Videodata ble hentet ut vellykket!"
+        },
+        "content": {
+            "main_title": "Komplett uthenting av videodata",
+            "description": "Vår gratis YouTube-videodataekstraktor er det ultimate verktøyet for innholdsskapere og markedsførere.",
+            "feature_complete_data_title": "Fullstendig datauthenting",
+            "feature_easy_copy_title": "Enkel kopiering",
+            "use_cases_title": "Vanlige brukseksempler",
+            "pro_tips_title": "Proff-tips: Konkurrentanalyse",
+            "faq_title": "Ofte stilte spørsmål"
+        },
+        "js": {
+            "error_enter_url": "Vennligst skriv inn en YouTube-URL",
+            "error_valid_url": "Vennligst skriv inn en gyldig YouTube-URL",
+            "extracting": "Henter data...",
+            "error_failed": "Kunne ikke hente ut videodata.",
+            "video_thumbnail": "Video-miniatyrbilde",
+            "video_title": "Videotittel",
+            "channel_name": "Kanalnavn",
+            "views": "Visninger",
+            "likes": "Likes",
+            "publish_date": "Publiseringsdato",
+            "duration": "Varighet",
+            "video_id": "Video-ID",
+            "description": "Beskrivelse",
+            "tags": "Tagger",
+            "copy": "Kopier",
+            "copied": "Kopiert!"
+        }
+    },
+    "youtube-video-tags-extractor": {
+        "meta": {
+            "title": "YouTube Video Tags Extractor - Gratis online verktøy",
+            "description": "Hent ut tagger fra enhver YouTube-video umiddelbart. Analyser konkurrentenes SEO-strategi.",
+            "h1": "YouTube Video Tags Extractor",
+            "subtitle": "Hent ut tagger fra enhver YouTube-video. Analyser SEO-strategier umiddelbart."
+        },
+        "form": {
+            "title": "Hent ut videotagger",
+            "url_label": "YouTube-video-URL",
+            "url_placeholder": "https://www.youtube.com/watch?v=...",
+            "url_help": "Lim inn en YouTube-video-URL for å se alle tagger",
+            "extract_button": "Hent ut tagger"
+        },
+        "results": {
+            "title": "Hentede tagger",
+            "copy_all": "Kopier alle",
+            "comma_separated": "Kommaseparert format:"
+        },
+        "content": {
+            "feature1_title": "Fullstendig tag-liste",
+            "feature2_title": "Ett-klikks kopiering",
+            "feature3_title": "Umiddelbare resultater",
+            "tips_title": "💡 Proff-tips: Bruke uthentede tagger effektivt",
+            "faq_title": "❓ Ofte stilte spørsmål"
+        },
+        "js": {
+            "error_enter_url": "Vennligst skriv inn en YouTube-video-URL",
+            "error_valid_url": "Vennligst skriv inn en gyldig YouTube-URL",
+            "error_failed": "Kunne ikke hente ut tagger. Vennligst prøv igjen.",
+            "extracting": "Henter ut...",
+            "extract_button": "Hent ut tagger",
+            "copied": "Kopiert!"
+        }
+    },
+    "text-to-speech": {
+        "meta": {
+            "title": "Tekst til tale-konvertering - Gratis online AI-lyd",
+            "description": "Convert text into natural-sounding speech instantly. Best free text to speech tool with premium neural voices. Unlimited characters, mp3 download.",
+            "h1": "Tekst til tale-konvertering",
+            "subtitle": "Turn any text into lifelike audio with realistic AI voices instantly."
+        },
+        "form": {
+            "label_text": "Enter Text",
+            "placeholder_text": "Type or paste your text here (max 5000 characters)...",
+            "label_voice": "Select AI Voice",
+            "btn_generate": "Generate Audio",
+            "max_chars": "Max 5000 characters",
+            "chars_counter": "characters"
+        },
+        "content": {
+            "hero_title": "Turn Text into Human-Like Speech",
+            "hero_subtitle": "Instantly convert articles, scripts, and documents into natural-sounding audio. Perfect for creators, students, and accessibility.",
+            "features_title": "Advanced Text to Speech Features",
+            "feature1_title": "Natural AI Voices",
+            "feature1_desc": "Experience a wide range of premium neural voices that sound incredibly human and engaging.",
+            "feature2_title": "Multiple Languages",
+            "feature2_desc": "Support for global languages including English, Spanish, French, German, Japanese, and more.",
+            "feature3_title": "Unlimited & Free",
+            "feature3_desc": "Generate unlimited audio files without hidden fees or subscription requirements.",
+            "how_title": "How to Convert Text to Audio",
+            "step1_title": "Input Text",
+            "step1_desc": "Paste your text into the box. We support up to 5000 characters per conversion.",
+            "step2_title": "Select Voice",
+            "step2_desc": "Choose from our diverse library of male and female voices across different accents.",
+            "step3_title": "Download MP3",
+            "step3_desc": "Generate your audio in seconds and download the high-quality MP3 file immediately.",
+            "article_title": "The Power of Text to Speech Technology",
+            "article_body": "<p><strong>Text to Speech (TTS)</strong> technology has revolutionized how we consume digital content. By bridging the gap between written text and auditory communication, TTS makes information more accessible and engaging for everyone.</p><h3>Who Needs Text to Speech?</h3><p>Whether you're a <strong>content creator</strong> looking to add voiceovers to your videos, a <strong>student</strong> wanting to listen to your study notes, or someone with <strong>visual impairments</strong> needing screen reading assistance, our free tool provides a seamless solution.</p><h3>Key Benefits</h3><ul><li><strong>Accessibility:</strong> Make your content accessible to those with reading difficulties or visual impairments.</li><li><strong>Productivity:</strong> Multitask by listening to articles, reports, or emails while commuting or exercising.</li><li><strong>Learning:</strong> Improve language pronunciation and listening comprehension with native-sounding AI voices.</li><li><strong>Content Creation:</strong> Create professional voiceovers for YouTube videos, podcasts, and presentations without expensive recording gear.</li></ul><h3>Why Choose Our Tool?</h3><p>Our converter uses advanced neural network models to understand context and intonation, ensuring the output sounds fluid and natural, not robotic. With one-click MP3 downloads, you can take your audio anywhere.</p>",
+            "faq_title": "Frequently Asked Questions",
+            "faq1_q": "Is this text to speech tool completely free?",
+            "faq1_a": "Yes! Our tool is 100% free to use. You can generate audio as many times as you like.",
+            "faq2_q": "Can I use the audio for commercial projects?",
+            "faq2_a": "Yes, the generated audio is copyright-free and safe for use in commercial videos, podcasts, and other media.",
+            "faq3_q": "What is the character limit?",
+            "faq3_a": "You can process up to 5000 characters per request. For longer texts, simply generate in multiple batches.",
+            "faq4_q": "Do I need to install any software?",
+            "faq4_a": "No, this is a cloud-based tool. It works directly in your browser on any device, including mobile phones and tablets."
+        },
+        "js": {
+            "validating": "Generating Audio...",
+            "success": "Audio Generated Successfully!",
+            "error_generic": "An error occurred while generating the audio."
+        },
+        "results": {
+            "title": "Your Audio is Ready",
+            "btn_download": "Download Audio",
+            "btn_new": "Generate New Audio"
+        }
+    }
+}

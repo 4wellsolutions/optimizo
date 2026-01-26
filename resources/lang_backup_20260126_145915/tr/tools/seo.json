@@ -1,0 +1,948 @@
+{
+    "bing-serp-checker": {
+        "meta": {
+            "title": "Bing SERP Denetleyicisi - Ücretsiz Çevrimiçi Sıralama Aracı",
+            "description": "Web sitenizin Bing arama motorundaki sıralamasını kontrol etmek için ücretsiz araç. Herhangi bir konum ve cihaz için doğru, gerçek zamanlı sonuçlar.",
+            "h1": "Bing SERP Denetleyicisi",
+            "subtitle": "Anahtar kelimeleriniz için farklı konumlarda Bing arama sıralamalarını kontrol edin"
+        },
+        "interface": {
+            "simulation_title": "Bing Arama Simülatörü",
+            "keyword_label": "Hedef Anahtar Kelime",
+            "location_label": "Konum (İsteğe Bağlı)",
+            "location_placeholder": "Şehir, eyalet veya ülke girin...",
+            "market_label": "Pazar / Dil",
+            "device_label": "Cihaz Türü",
+            "device_desktop": "Masaüstü",
+            "device_mobile": "Mobil",
+            "no_login": "Giriş Gerekmez",
+            "realtime_results": "Gerçek Zamanlı Sonuçlar"
+        },
+        "form": {
+            "keyword_placeholder": "örn. dijital pazarlama ajansı",
+            "button": "Bing Sıralamalarını Kontrol Et"
+        },
+        "markets": {
+            "us": "Amerika Birleşik Devletleri (İngilizce)",
+            "uk": "Birleşik Krallık (İngilizce)",
+            "ca": "Kanada (İngilizce)",
+            "au": "Avustralya (İngilizce)",
+            "de": "Almanya (Almanca)",
+            "fr": "Fransa (Fransızca)",
+            "es": "İspanya (İspanyolca)",
+            "it": "İtalya (İtalyanca)",
+            "nl": "Hollanda (Felemenkçe)",
+            "br": "Brezilya (Portekizce)",
+            "jp": "Japonya (Japonca)",
+            "in": "Hindistan (İngilizce)"
+        },
+        "content": {
+            "main_title": "Gelişmiş Bing Sıra Bulucu",
+            "main_subtitle": "Dünyanın en büyük ikinci arama motorundaki arama performansınızı izleyin. Bing SEO stratejinizi optimize etmek için doğru, yerelleştirilmiş sıralama verileri alın.",
+            "feature1_title": "%100 Doğru Veri",
+            "feature1_desc": "Sonuçları doğrudan Bing'den gerçek zamanlı olarak çekiyoruz; böylece potansiyel ziyaretçilerinizin ne gördüğünü tam olarak görebilirsiniz.",
+            "feature2_title": "Konuma Özel",
+            "feature2_desc": "Belirli şehirlerden veya ülkelerden arama yapıyormuş gibi sıralamaları kontrol edin. Yerel SEO kampanyaları için hayati önem taşır.",
+            "feature3_title": "Cihaz Simülasyonu",
+            "feature3_desc": "Cihazlar arasında sıralamalarınızın nasıl değiştiğini analiz etmek için Masaüstü ve Mobil görünümleri arasında geçiş yapın.",
+            "serp_features_title": "Bing SERP Özelliklerini Analiz Edin",
+            "sf_snippets_title": "Öne Çıkan Snippet'lar",
+            "sf_snippets_desc": "Bing genellikle sıfırıncı konumda zengin yanıtlar ve \"akıllı yanıtlar\" sunar. İçeriğinizin bu yüksek görünürlükteki noktaları yakalayıp yakalamadığını kontrol edin.",
+            "sf_places_title": "Bing Places",
+            "sf_places_desc": "Google'daki Yerel Paketin Bing karşılığıdır. Yerel işletmeler için çok önemlidir. <strong>Bing Places</strong> sıralamanızı doğrulamak için \"Konum\" özelliğimizi kullanın.",
+            "sf_visual_title": "Görsel Arama",
+            "sf_visual_desc": "Bing, görsel arama sonuçlarına büyük önem verir. Görsellerinizin görsele dayalı SERP düzenlerinde nasıl göründüğünü izleyin.",
+            "sf_knowledge_title": "Bilgi Kartları",
+            "sf_knowledge_desc": "Sağ taraftaki zengin bilgi panelleri. Bing'in marka varlığınızı açıkça anlayıp anlamadığını kontrol edin.",
+            "why_check_title": "Neden Bing Sıralamaları Takip Edilmeli?",
+            "why_check_desc": "Google baskın olsa da Bing; Yahoo, AOL ve milyonlarca Windows cihazı için aramayı destekler. Genellikle daha yüksek dönüşüm oranlarına ve daha az rekabete sahiptir. Bing'i görmezden gelmek, bazı pazarlardaki masaüstü arama hacminin yaklaşık %30'unu kaçırmak anlamına gelir.",
+            "how_accurate_title": "Bu Araç Ne Kadar Doğru?",
+            "how_accurate_desc": "Aracımız, \"Kontrol Et\" butonuna tıkladığınız anda Bing sunucularına canlı sorgular gönderir. Önbelleğe alınmış verileri kullanmayız. Sonuçlar gerçek zamanlıdır, tarafsızdır ve seçilen parametreler için tam SERP'i (Arama Motoru Sonuç Sayfası) yansıtır."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Bu Bing Sıra Bulucu ücretsiz mi?",
+            "a1": "Evet! **Bing sıra bulucumuz** tamamen ücretsizdir. Microsoft'un arama motorundaki varlığınızı hiçbir ücret ödemeden optimize etmek için sınırsız anahtar kelime kontrol edebilirsiniz.",
+            "q2": "Bu, Yahoo sıralamalarını etkiler mi?",
+            "a2": "Evet, genellikle. Yahoo Arama büyük ölçüde Bing'in indeksi tarafından desteklenmektedir. Bing için optimizasyon yapmak genellikle Yahoo'da da iyileşmiş sıralamalara yol açar ve size \"bir taşla iki kuş\" SEO avantajı sağlar.",
+            "q3": "Belirli bir şehir için yerel sıralamaları kontrol edebilir miyim?",
+            "a3": "Kesinlikle. \"Konum\" alanına şehrinizi girin. Arama sorgusuna belirli konum parametreleri ekleyerek <strong>yerel bing sonuçlarını</strong> tam olarak o şehirdeki bir kullanıcının göreceği şekilde görmenizi sağlıyoruz."
+        }
+    },
+    "broken-links-checker": {
+        "meta": {
+            "title": "Kırık Bağlantılar Denetleyicisi - Ücretsiz Çevrimiçi Web Sitesi Denetimi",
+            "description": "Web sitenizi ölü bağlantılar, 404 hataları için taramak ve daha iyi SEO için bozuk URL'leri düzeltmek amacıyla ücretsiz kırık bağlantı kontrol aracı.",
+            "h1": "Kırık Bağlantılar Denetleyicisi",
+            "subtitle": "Daha iyi SEO ve kullanıcı deneyimi için web sitenizdeki kırık bağlantıları bulun ve düzeltin"
+        },
+        "interface": {
+            "scan_title": "Kırık Bağlantı Kontrolü",
+            "scan_subtitle": "Kırık bağlantıları, yönlendirmeleri ve daha fazlasını bulun.",
+            "url_label": "Web Sitesi URL'si",
+            "button": "Kırık Bağlantıları Tara",
+            "button_scanning": "Taranıyor...",
+            "legend_ok": "200 Başarılı",
+            "legend_err": "404/Hata"
+        },
+        "progress": {
+            "extracting": "Bağlantılar Çıkarılıyor...",
+            "stop": "Durdur",
+            "processing": "Bağlantılar sırayla işleniyor...",
+            "processed": "İşlendi",
+            "of": "/",
+            "links": "bağlantı",
+            "checking": "Bağlantılar Kontrol Ediliyor..."
+        },
+        "stats": {
+            "total": "Toplam Bağlantı",
+            "working": "Çalışan (200)",
+            "redirects": "Yönlendirmeler (3xx)",
+            "broken": "Kırık (4xx/5xx)"
+        },
+        "results": {
+            "download": "CSV Raporunu İndir",
+            "detailed_analysis": "Detaylı Analiz",
+            "status": "Durum",
+            "link_url": "Bağlantı URL'si",
+            "anchor_text": "Çapa Metni (Anchor Text)",
+            "type": "Tür"
+        },
+        "content": {
+            "main_title": "Neden Kırık Bağlantıları Kontrol Etmelisiniz?",
+            "main_subtitle": "Kırık bağlantılar web sitenizin güvenilirliğine, kullanıcı deneyimine ve SEO performansına zarar verir. Ücretsiz kırık bağlantı kontrol aracımız, ölü bağlantıları sıralamanıza zarar vermeden önce belirlemenize ve düzeltmenize yardımcı olur.",
+            "what_is_title": "Kırık Bağlantı Kontrolü Nedir?",
+            "what_is_desc": "Kırık bağlantı kontrolü, web sayfalarınızı tarayarak artık çalışmayan bağlantıları (404 hataları, sunucu hataları veya yönlendirmeler) bulan bir araçtır. SEO'nuza ve kullanıcı deneyiminize zarar verebilecek ölü bağlantıları belirleyerek sağlıklı bir web sitesi sürdürmenize yardımcı olur.",
+            "how_works_title": "Nasıl Çalışır?",
+            "how_works_intro": "Kırık bağlantı kontrol aracımız 3 basit adımlı bir süreci izler:",
+            "how_works_step1": "<strong>Tarama:</strong> Sayfa URL'nizi girin, biz tüm bağlantıları çıkaralım",
+            "how_works_step2": "<strong>Kontrol:</strong> Her bağlantının durumunu doğrulamak için test edelim (200, 404, 301 vb.)",
+            "how_works_step3": "<strong>Rapor:</strong> Hangi bağlantıların bozuk olduğunu ve düzeltilmesi gerektiğini gösteren detaylı bir rapor alın",
+            "pro_tip_title": "💡 Profesyonel İpucu:",
+            "pro_tip_desc": "SEO'nuzu etkilemeden önce kırık bağlantıları yakalamak için bu aracı düzenli olarak (aylık veya üç aylık) çalıştırın. Web sitenizi sağlıklı tutmak için bir bakım planı oluşturun!",
+            "types_title": "Kırık Bağlantı Türleri",
+            "common_causes_title": "Kırık Bağlantıların Yaygın Nedenleri",
+            "cc_1": "❌ <strong>URL'lerdeki Yazım Hataları:</strong> İçerik oluşturma veya taşıma sırasında yanlış yazılan bağlantılar",
+            "cc_2": "❌ <strong>Silinen sayfalar:</strong> 301 yönlendirmesi ayarlanmadan kaldırılan içerikler",
+            "cc_3": "❌ <strong>Web sitesi yeniden yapılandırması:</strong> Yeniden tasarım sırasında değişen URL yapıları",
+            "cc_4": "❌ <strong>Dış bağlantı çürümesi:</strong> Üçüncü taraf web sitelerinin içeriklerini kaldırması veya taşıması",
+            "cc_5": "❌ <strong>Alan adının süresinin dolması:</strong> Bağlantı verilen web sitelerinin kalıcı olarak çevrimdışı olması",
+            "cc_6": "❌ <strong>Protokol değişiklikleri:</strong> Uygun yönlendirmeler olmadan yapılan HTTP'den HTTPS'ye geçişler",
+            "best_practices_title": "En İyi Uygulamalar"
+        },
+        "benefits": {
+            "ux_title": "Kullanıcı Deneyimi",
+            "ux_desc": "Kırık bağlantılar ziyaretçileri hüsrana uğratır ve hemen çıkma oranlarını artırır. Sorunsuz bir gezinme deneyimiyle kullanıcılarınızı mutlu edin.",
+            "seo_title": "SEO Etkisi",
+            "seo_desc": "Arama motorları çok sayıda bozuk bağlantı içeren siteleri cezalandırır. Ölü bağlantıları derhal düzelterek sıralamanızı koruyun.",
+            "maintenance_title": "Kolay Bakım",
+            "maintenance_desc": "Sitenizin itibarına ve arama görünürlüğüne zarar vermeden önce bozuk bağlantıları hızla belirleyin ve düzeltin."
+        },
+        "link_types": {
+            "type1_title": "🔴 404 Bulunamadı",
+            "type1_desc": "En yaygın kırık bağlantı türüdür. Sayfa artık sunucuda mevcut değildir.",
+            "type2_title": "🟡 301/302 Yönlendirmeleri",
+            "type2_desc": "Sayfa taşındı. \"Kırık\" olmasa da, çok fazla yönlendirme sitenizi yavaşlatır.",
+            "type3_title": "🔴 500 Sunucu Hataları",
+            "type3_desc": "Sunucu bir hatayla karşılaştı. Bunlar acil müdahale gerektirir.",
+            "type4_title": "🟢 Zaman Aşımı Hataları",
+            "type4_desc": "Sunucunun yanıt vermesi çok uzun sürdü. Performans sorunlarına işaret edebilir."
+        },
+        "best_practices": {
+            "bp1_title": "Düzenli Denetimler",
+            "bp1_desc": "Özellikle içerik güncellemelerinden sonra sitenizi her ay kırık bağlantılar için kontrol edin",
+            "bp2_title": "301 Yönlendirmelerini Kullanın",
+            "bp2_desc": "Sayfaları taşırken veya silerken her zaman uygun yönlendirmeleri ayarlayın",
+            "bp3_title": "Dış Bağlantıları İzleyin",
+            "bp3_desc": "Dış siteler sık sık değişir. Üç ayda bir giden bağlantıları inceleyin",
+            "bp4_title": "Değişiklikleri Belgeleyin",
+            "bp4_desc": "Gelecekte başvurmak üzere URL değişikliklerinin ve yönlendirmelerin günlüğünü tutun",
+            "bp5_title": "Önce İç Bağlantıları Düzeltin",
+            "bp5_desc": "Tamamen sizin kontrolünüzde olduğu için önce dahili kırık bağlantıları düzeltmeye öncelik verin",
+            "bp6_title": "Göreceli URL'ler Kullanın",
+            "bp6_desc": "Alan adı değişiklikleri sırasında sorun yaşamamak için dahili bağlantılarda göreceli (relative) URL'ler kullanın"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Kırık bağlantıları ne sıklıkla kontrol etmeliyim?",
+            "a1": "Çoğu web sitesi için kırık bağlantıları aylık olarak kontrol etmek yeterlidir. Yüksek trafikli siteler veya e-ticaret platformları haftalık olarak kontrol etmelidir. Büyük web sitesi güncellemeleri, yeniden tasarımlar veya taşımalardan sonra hemen bir kontrol yapın.",
+            "q2": "Kırık bağlantılar SEO sıralamama zarar verir mi?",
+            "a2": "Evet, ancak dolaylı olarak. Google, birkaç bozuk bağlantının sıralamaya doğrudan zarar vermeyeceğini belirtmiştir. Ancak **çok sayıda bozuk bağlantı**, zayıf site bakımına işaret eder; bu da hemen çıkma oranlarını artırabilir, tarama bütçesini boşa harcayabilir ve kullanıcı güvenini azaltabilir.",
+            "q3": "Dahili ve harici bozuk bağlantılar arasındaki fark nedir?",
+            "a3": "<strong>Dahili bozuk bağlantılar</strong> kendi alan adınızdaki sayfalara işaret eder ve tamamen sizin kontrolünüzdedir. <strong>Harici bozuk bağlantılar</strong> diğer web sitelerine işaret eder. Bunları çalışan alternatiflerle güncellemeli veya kaldırmalısınız.",
+            "q4": "Tüm web sitem için kırık bağlantıları kontrol edebilir miyim?",
+            "a4": "Bu araç, hızlı ve odaklanmış sonuçlar sağlamak için <strong>her seferinde bir sayfayı</strong> kontrol eder. Tam site denetimleri için en önemli sayfalarınızdan başlamanızı öneririz: ana sayfa, en iyi açılış sayfaları ve yüksek trafikli içerikler.",
+            "p_what_to_do": "Kırık bağlantılar bulduğumda ne yapmalıyım?",
+            "a_what_to_do_intro": "Şu öncelik sırasını izleyin:",
+            "a_what_to_do_li1": "<strong>Dahili bağlantılar:</strong> Yeni URL'ye 301 yönlendirmesi ayarlayın veya bağlantıyı doğrudan güncelleyin",
+            "a_what_to_do_li2": "<strong>Harici bağlantılar:</strong> Çalışan alternatif bir sayfa bulun veya eski içeriği bulmak için archive.org'u kullanın",
+            "a_what_to_do_li3": "<strong>Alternatif yoksa:</strong> Bağlantıyı kaldırın ve akışı korumak için çevredeki içeriği güncelleyin",
+            "a_what_to_do_li4": "<strong>Her şeyi belgeleyin:</strong> Gelecekte başvurmak ve kalıp analizi yapmak için bir günlük tutun",
+            "q_what_to_do": "What should I do when I find broken links?"
+        },
+        "js": {
+            "stopping": "Tarama durduruluyor...",
+            "scan_stopped": "Tarama Durduruldu",
+            "scan_complete": "Tarama Tamamlandı!",
+            "error_prefix": "Hata: ",
+            "pending": "Beklemede",
+            "internal": "Dahili",
+            "external": "Harici"
+        }
+    },
+    "google-serp-checker": {
+        "meta": {
+            "title": "Google SERP Denetleyicisi - Ücretsiz Çevrimiçi SEO Aracı",
+            "description": "Arama motoru sonuçlarını analiz etmek ve farklı konumlardaki anahtar kelime sıralamalarını takip etmek için ücretsiz Google SERP kontrol aracı.",
+            "h1": "Google SERP Denetleyicisi",
+            "subtitle": "Google arama sıralamalarını kontrol edin ve anahtar kelime konumlarını küresel olarak takip edin"
+        },
+        "interface": {
+            "simulation_title": "Canlı SERP Kontrol Simülasyonu",
+            "location_label": "Konum",
+            "location_placeholder": "Şehir, ülke veya posta kodu girin",
+            "domain_label": "Google Alan Adı",
+            "device_label": "Cihaz Türü",
+            "device_desktop": "Masaüstü",
+            "device_mobile": "Mobil (Akıllı Telefon)",
+            "no_login": "Giriş Gerekmez",
+            "realtime_results": "Gerçek Zamanlı Sonuçlar"
+        },
+        "form": {
+            "keyword_label": "Anahtar Kelime Girin",
+            "button": "SERP Kontrol Et"
+        },
+        "content": {
+            "main_title": "Neden Ücretsiz Google SERP Kontrol Aracımızı Kullanmalısınız?",
+            "main_subtitle": "SEO dünyasında doğruluk her şeydir. SERP analizörümüz, web sitenizin gerçek SERP sıralamalarını size göstermek için kişiselleştirme algoritmalarını atlar.",
+            "feature1_title": "Hiper-Yerel SERP Konumu Doğruluğu",
+            "feature1_desc": "\"Kadıköy pizza\" için sıralama alın. Kesin yerelleştirilmiş SERP kontrolünü simüle etmek için gelişmiş Google UULE parametrelerini kullanıyoruz.",
+            "feature2_title": "Mobil SERP Bulucu ve Analizi",
+            "feature3_title": "Küresel Google SERP Takibi",
+            "feature3_desc": "Büyüyor musunuz? 190'dan fazla ülkede sıralamaları kontrol edin. Google.co.uk, Google.de, Google.com.tr, Google.co.jp ve daha fazlası arasında geçiş yapın.",
+            "serp_features_title": "Google SERP Özelliklerini Anlamak",
+            "feature_snippet_title": "Öne Çıkan Snippet'lar (Featured Snippets)",
+            "feature_snippet_desc": "\"Yanıt kutuları\" olarak da bilinir, arama sorgularının yaklaşık %12'sinde görünürler. Aracımız, bu değerli alana sahip olup olmadığınızı kontrol etmenize yardımcı olur.",
+            "feature_local_title": "Yerel Paket (Local Pack)",
+            "feature_local_desc": "3 yerel işletmenin harita tabanlı listesi. Fiziksel mağazalar için çok önemlidir. Varlığınızı doğrulamak için \"Konum\" özelliğimizi kullanın.",
+            "feature_paa_title": "Kullanıcılar Bunları da Sordu (People Also Ask)",
+            "feature_paa_desc": "Kullanıcının sorgusuyla ilgili akordiyon tarzı sorular. Burada sıralanmak ciddi bir farkındalık trafiği sağlayabilir. Bu fırsatları belirlemek için SERP anahtar kelime kontrol aracımızı kullanın.",
+            "feature_knowledge_title": "Bilgi Paneli (Knowledge Panel)",
+            "feature_knowledge_desc": "Masaüstü sonuçlarının sağ tarafında görünen bilgi kutuları. Marka otoritesi ve varlık (entity) SEO'su için gereklidir.",
+            "what_is_title": "SERP Kontrol ve Analiz Aracı Nedir?",
+            "what_is_desc": "Bir Arama Motoru Sonuç Sayfası (SERP) Kontrolü, SEO profesyonelleri ve işletme sahipleri için temel bir tanı aracıdır. Belirli bir anahtar kelimenin, belirli bir coğrafi konumdaki tarafsız bir kullanıcıya nasıl görüneceğini görmenizi sağlar.",
+            "bubble_problem_title": "\"Google Balonu\" Sorunu",
+            "bubble_problem_desc": "Sadece Google.com'a gidip kendi anahtar kelimelerinizi ararsanız, sonuçlar büyük ölçüde yanlıdır. Google; IP adresinize, arama geçmişinize ve cihaz türünüze göre sonuçları özelleştirir. Bu, bir araç olmadan sıralamanızı doğru bir şekilde belirlemeyi zorlaştırır.",
+            "solution_text": "Ücretsiz Google SERP Kontrol Aracımız bu balonu patlatır. UULE parametresini kullanarak, Google'a çevrimiçi SERP takibinin tam olarak nerede simüle edileceğini söyleyen özel kodlanmış bir dize oluştururuz ve size %100 temiz, tarafsız veriler sunarız.",
+            "feature2_desc": "iPhone ve Android'deki sıralamalarınızı doğrulayın. Mobil Öncelikli İndeksleme'nin (Mobile-First Indexing) sizi hazırlıksız yakalamasına izin vermeyin. Kapsamlı mobil SERP analizi."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Bu SERP Aracı sınırsız arama için ücretsiz mi?",
+            "a1": "Evet! Ücretsiz SERP aracımız, hesap oluşturmadan veya abonelik ücreti ödemeden dilediğiniz kadar anahtar kelimeyi kontrol etmenize olanak tanır. Herkes için erişilebilir çevrimiçi SERP sıra kontrol araçları sağlamaya inanıyoruz.",
+            "q2": "SERP Konum Aracı konum özelliği nasıl çalışır?",
+            "a2": "Google'ın resmi UULE (Universal URL Location Encoded) parametresini kullanıyoruz. Bir şehir girdiğinizde, onun kesin GPS koordinatlarını buluruz ve bunları arama isteğine kodlarız, böylece Google'ı sonuçları sanki fiziksel olarak o şehirdeymişsiniz gibi göstermeye zorlarız.",
+            "q3": "Google Sıralamam neden Mobil cihazda farklı görünüyor?",
+            "a3": "Google, Mobil Öncelikli İndeksleme kullanır; yani indeksleme ve sıralama için ağırlıklı olarak içeriğin mobil versiyonunu kullanır. Mobil arama sonuçları ayrıca farklı düzenlere (daha fazla reklam, farklı snippet'lar) sahiptir. Bu Google SERP takipçisi ile mobil varlığınızı özellikle doğrulamak için \"Cihaz\" seçicimizi kullanın."
+        }
+    },
+    "keyword-density-checker": {
+        "meta": {
+            "title": "Anahtar Kelime Yoğunluğu Denetleyicisi - Ücretsiz Çevrimiçi SEO Analizi",
+            "description": "Ücretsiz anahtar kelime yoğunluğu kontrol aracı. İçeriğinizi optimize etmek için kelime sıklığını ve anahtar kelime kullanımını analiz edin.",
+            "h1": "Anahtar Kelime Yoğunluğu Denetleyicisi",
+            "subtitle": "Daha iyi arama sıralamaları için anahtar kelime kullanımını ve yoğunluğunu kontrol edin"
+        },
+        "form": {
+            "label": "Metni veya URL'yi Yapıştırın",
+            "placeholder": "Metninizi buraya yapıştırın...",
+            "button": "Yoğunluğu Kontrol Et"
+        },
+        "results": {
+            "title": "Anahtar Kelime İstatistikleri",
+            "total_words": "Toplam Kelime",
+            "unique_words": "Benzersiz Kelime",
+            "sentences": "Cümleler",
+            "paragraphs": "Paragraflar",
+            "long_sentences": "Uzun Cümleler",
+            "short_sentences": "Kısa Cümleler",
+            "top_keyword": "En Çok Geçen Kelime",
+            "top_density": "En Yüksek Yoğunluk",
+            "single_keywords_title": "Tekli Anahtar Kelimeler",
+            "keyword_header": "Anahtar Kelime",
+            "count_header": "Sayı",
+            "density_header": "Yoğunluk",
+            "two_word_title": "2 Kelimelik Öbekler",
+            "phrase_header": "Kelime Öbeği",
+            "three_word_title": "3 Kelimelik Öbekler"
+        },
+        "content": {
+            "main_title": "Anahtar Kelime Yoğunluğu Kontrolü",
+            "main_subtitle": "Kelime sıklığını analiz ederek içeriğinizin alaka düzeyini optimize edin.",
+            "intro": "Anahtar Kelime Yoğunluğu Kontrol aracımız, metninizde en sık kullanılan kelimeleri ve ifadeleri bulmanıza yardımcı olur. SEO uzmanları ve içerik yazarları için anahtar kelime doldurmadan (stuffing) kaçınmak adına mükemmeldir.",
+            "what_is_title": "Anahtar Kelime Yoğunluğu Nedir?",
+            "what_is_text": "Anahtar kelime yoğunluğu, bir anahtar kelimenin veya kelime öbeğinin, sayfadaki toplam kelime sayısına kıyasla metin içinde geçme yüzdesidir. Arama Motoru Optimizasyonu (SEO) için kilit bir faktördür.",
+            "guidelines_title": "Yoğunluk Rehberi",
+            "why_use_title": "Neden Anahtar Kelime Yoğunluğunu Kontrol Etmelisiniz?",
+            "best_practices_title": "En İyi Uygulamalar",
+            "faq_title": "Sıkça Sorulan Sorular"
+        },
+        "guidelines": {
+            "g1": "\"Mükemmel\" bir yüzde yoktur, ancak <strong>%1-3</strong> arası genellikle güvenli kabul edilir.",
+            "g2": "Sıralamalarınıza zarar verebileceği için \"Anahtar Kelime Doldurma\"dan (Keyword Stuffing) kaçının.",
+            "g3": "Sadece botlar için değil, okuyucular için doğal bir dille yazın.",
+            "g4": "Eş anlamlı kelimeler ve LSI (Latent Semantic Indexing) anahtar kelimeleri kullanın.",
+            "g5": "Sadece tek kelimeleri değil, 2-3 kelimelik öbekleri de kontrol edin."
+        },
+        "features": {
+            "f1_title": "Derin Analiz",
+            "f1_desc": "Tekli kelimeleri, ikili ve üçlü kelime öbeklerini analiz eder.",
+            "f2_title": "Kelime Sayacı",
+            "f2_desc": "Kelime, cümle ve paragraf sayısının doğru dökümü.",
+            "f3_title": "Gereksiz Tekrar Kontrolü",
+            "f3_desc": "Anahtar kelimeleri çok sık kullanıp kullanmadığınızı belirlemenize yardımcı olur.",
+            "f4_title": "Ücretsiz Araç",
+            "f4_desc": "Herhangi bir sınırlama olmaksızın kullanımı tamamen ücretsizdir.",
+            "f5_title": "Yazarlar İçin",
+            "f5_desc": "İçerik kalitesini ve okunabilirliğini artırın.",
+            "f6_title": "Durdurma Kelimeleri (Stop Words)",
+            "f6_desc": "Yaygın durdurma kelimelerini akıllıca filtreler."
+        },
+        "best_practices": {
+            "bp1": "Belirli yoğunluk rakamlarından ziyade içerik kalitesine odaklanın.",
+            "bp2": "Ana anahtar kelimenizi ilk paragrafa dahil edin.",
+            "bp3": "Anahtar kelimeleri H1 ve H2 başlıklarında kullanın.",
+            "bp4": "Uzun kuyruklu (long-tail) anahtar kelime varyasyonları kullanın.",
+            "bp5": "SEO için okunabilirlikten ödün vermeyin.",
+            "bp6": "Aynı kelimeyi doğal olmayan bir şekilde tekrarlamayın."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "İyi bir anahtar kelime yoğunluğu nedir?",
+            "a1": "Çoğu SEO uzmanı %1-2 civarını önerir. Metin doğal bir şekilde okunmalıdır.",
+            "q2": "Anahtar kelime doldurma (keyword stuffing) nedir?",
+            "a2": "Bir web sayfasını, bir sitenin Google arama sonuçlarındaki sıralamasını manipüle etmek amacıyla anahtar kelimelerle doldurma uygulamasıdır.",
+            "q3": "Durdurma kelimelerini (stop words) görmezden gelir mi?",
+            "a3": "Evet, aracımız anlamlı kelimelerin yoğunluğunu vermek için yaygın durdurma kelimelerini (örn. \"bir\", \"ve\", \"bu\") filtreler.",
+            "q4": "Öbek yoğunluğu önemli mi?",
+            "a4": "Evet, arama motorları sadece tek tek kelimelere değil, kelime öbeklerine ve konu kümelerine de bakar.",
+            "q5": "Bir URL kontrol edebilir miyim?",
+            "a5": "Şu anda bu araç metin girişiyle çalışır. Sayfa içeriğinizi kopyalayıp buraya yapıştırın."
+        },
+        "alerts": {
+            "enter_text": "Lütfen analiz edilecek bir metin girin"
+        }
+    },
+    "meta-tag-analyzer": {
+        "meta": {
+            "title": "Meta Tag Analizörü - Ücretsiz Çevrimiçi SEO Meta Denetleyicisi",
+            "description": "Web sitenizin meta etiketlerini kontrol etmek ve daha iyi SEO için optimize etmek amacıyla ücretsiz meta etiket analiz aracı.",
+            "h1": "Meta Etiket Analizörü",
+            "subtitle": "Arama motoru optimizasyonu için meta etiketlerinin kapsamlı analizi"
+        },
+        "form": {
+            "label": "Web Sitesi URL'sini Girin",
+            "placeholder": "https://orneksite.com",
+            "button": "Meta Etiketleri Analiz Et"
+        },
+        "results": {
+            "title": "Analiz Sonuçları",
+            "title_tag": "Başlık Etiketi (Title Tag)",
+            "length": "Uzunluk",
+            "characters": "karakter",
+            "meta_description": "Meta Açıklama (Meta Description)"
+        },
+        "results_labels": {
+            "other_tags": "Diğer Meta Etiketler",
+            "seo_score": "SEO Puanı",
+            "viewport": "Görünüm Alanı (Viewport)",
+            "charset": "Karakter Kümesi (Charset)",
+            "robots": "Bot Talimatları (Robots)"
+        },
+        "content": {
+            "main_title": "Meta Etiket Analiz Aracı",
+            "main_subtitle": "Web sitenizin meta etiketlerini kolayca analiz edin ve optimize edin.",
+            "intro": "Ücretsiz Meta Etiket Analiz aracımız, herhangi bir web sayfasının meta etiketlerini kontrol etmenize yardımcı olur. Başlık, Açıklama ve diğer önemli SEO etiketleriniz hakkında anında bilgi edinin.",
+            "what_are_title": "Meta Etiket nedir?",
+            "what_are_desc": "Meta etiketler, bir sayfanın içeriğini tanımlayan metin parçacıklarıdır; meta etiketler sayfanın kendisinde görünmez, yalnızca sayfanın kaynak kodunda görünür. Meta etiketler, temel olarak arama motorlarına bir web sayfasının ne hakkında olduğunu söylemeye yardımcı olan içerik tanımlayıcılarıdır.",
+            "essential_title": "SEO İçin Temel Meta Etiketleri",
+            "common_mistakes_title": "Yaygın Meta Etiket Hataları",
+            "mistake_1": "Başlık (Title) veya Açıklama (Description) etiketlerinin eksik olması",
+            "mistake_2": "Önerilen karakter sınırlarının aşılması",
+            "mistake_3": "Sayfalar arasında yinelenen meta etiketler",
+            "mistake_4": "Alakasız anahtar kelimelerin kullanılması",
+            "mistake_5": "Mobil optimizasyon için viewport etiketinin olmaması",
+            "mistake_6": "Bir sayfada birden fazla Başlık (Title) etiketi bulunması",
+            "why_analyze_title": "Neden Meta Etiketleri Analiz Etmelisiniz?"
+        },
+        "meta_tags": {
+            "title_tag_title": "Başlık Etiketi (Title Tag)",
+            "title_tag_desc": "En önemli meta etikettir. Arama sonuçlarında sayfa başlığınızı tanımlar.",
+            "title_optimal_length": "Optimal Uzunluk:",
+            "title_optimal_value": "50-60 karakter",
+            "title_best_practice": "En İyi Uygulama:",
+            "title_best_value": "Ana anahtar kelimenizi başlangıca yakın bir yere ekleyin.",
+            "meta_desc_title": "Meta Açıklama (Meta Description)",
+            "meta_desc_desc": "Sayfa içeriğinin özetini sunar. Tıklanma Oranını (CTR) etkiler.",
+            "meta_desc_optimal_length": "Optimal Uzunluk:",
+            "meta_desc_optimal_value": "150-160 karakter",
+            "meta_desc_best_practice": "En İyi Uygulama:",
+            "meta_desc_best_value": "Eylem odaklı (call to action) ilgi çekici bir metin yazın.",
+            "og_title": "Open Graph (Sosyal Medya)",
+            "og_desc": "İçeriğinizin sosyal medyada (Facebook, LinkedIn) paylaşıldığında nasıl görüneceğini kontrol eder.",
+            "og_key_tags": "Temel Etiketler:",
+            "og_key_value": "og:title, og:description, og:image",
+            "og_platform": "Platformlar:",
+            "og_platform_value": "Facebook, LinkedIn, Pinterest",
+            "twitter_title": "Twitter Kartları",
+            "twitter_desc": "İçeriğinizin Twitter'da nasıl görüneceğini optimize etmek için özel meta etiketler.",
+            "twitter_key_tags": "Temel Etiketler:",
+            "twitter_key_value": "twitter:card, twitter:title, twitter:image",
+            "twitter_types": "Türler:",
+            "twitter_types_value": "Özet, Büyük Görselli Özet"
+        },
+        "benefits": {
+            "b1_title": "Daha İyi Sıralamalar",
+            "b1_desc": "Doğru etiketler, arama motorlarının içeriğinizi anlamasına yardımcı olur.",
+            "b2_title": "Yüksek Tıklanma Oranı (CTR)",
+            "b2_desc": "Etkileyici başlıklar ve açıklamalar daha fazla tıklama alır.",
+            "b3_title": "Sosyal Görünürlük",
+            "b3_desc": "Optimize edilmiş Open Graph etiketleri, sosyal paylaşımların görünümünü iyileştirir.",
+            "b4_title": "Rakip Analizi",
+            "b4_desc": "Stratejinizi geliştirmek için rakip etiketlerini analiz edin."
+        },
+        "features": {
+            "f2_title": "Anında Analiz",
+            "f2_desc": "Sonuçları saniyeler içinde alın.",
+            "f3_title": "Ücretsiz Kullanım",
+            "f3_desc": "Gizli ücret veya sınırlama yoktur."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Meta Etiket Analiz Aracı nedir?",
+            "a1": "Bir web sayfasını tarayan ve analiz için meta etiketlerini (başlık, açıklama, robotlar, anahtar kelimeler) çıkaran bir araçtır.",
+            "q2": "Meta etiketleri SEO için neden önemlidir?",
+            "a2": "Arama motorlarına sayfanız hakkında bilgi sağlarlar ve genellikle sitenizin arama sonuçlarında nasıl görüneceğini belirlerler.",
+            "q3": "Mükemmel Başlık (Title) etiketi uzunluğu nedir?",
+            "a3": "Google arama sonuçlarında kesilmemesi için 50-60 karakter arasında tutulması önerilir.",
+            "q4": "Anahtar kelime meta etiketleri sıralamayı etkiler mi?",
+            "a4": "Modern arama motorlarının çoğu (Google dahil) artık sıralama amacıyla anahtar kelime (keywords) meta etiketini kullanmamaktadır.",
+            "q5": "Meta etiket hatalarını nasıl düzeltirim?",
+            "a5": "Sayfa HTML'nizi (<head> bölümünde) düzenlemeniz veya CMS SEO ayarlarınızı/eklentilerinizi kullanmanız gerekir."
+        },
+        "js": {
+            "alert_enter_url": "Lütfen geçerli bir URL girin",
+            "analyzing": "Analiz ediliyor...",
+            "error_cors": "<strong>CORS Hatası (Demo):</strong> Üretim ortamında, harici URL'lere yönelik istekler arka uç proxy'niz üzerinden geçmelidir. <br>Aşağıda demo verileri gösterilmektedir.",
+            "error_general": "URL analiz edilirken hata oluştu",
+            "analyze_btn": "Meta Etiketleri Analiz Et",
+            "demo_title": "Örnek Sayfa Başlığı - SEO İçin Optimize Edilmiş",
+            "demo_description": "Bu bir örnek meta açıklamadır. Arama sonuçlarından tıklama çekmek için açıklayıcı, ilgi çekici olmalı ve anahtar kelimeler içermelidir.",
+            "status_optimal": "Optimal",
+            "advice_perfect_length": "Mükemmel uzunluk!",
+            "status_too_long": "Çok Uzun",
+            "advice_truncated": "Arama sonuçlarında kesilebilir.",
+            "status_too_short": "Çok Kısa",
+            "advice_add_detail": "Daha fazla detay eklemeyi düşünün.",
+            "advice_truncated_short": "Kesilebilir.",
+            "advice_add_detail_short": "Detay eklemeyi düşünün.",
+            "score_text": "Harika! Meta etiketleriniz iyi optimize edilmiş."
+        }
+    },
+    "on-page-seo-checker": {
+        "meta": {
+            "title": "Sayfa İçi SEO Denetleyicisi - Ücretsiz Çevrimiçi Web Sitesi Denetçisi",
+            "description": "Web sayfalarınızı arama motorları için analiz etmek ve optimize etmek amacıyla ücretsiz sayfa içi SEO kontrol aracı.",
+            "h1": "Sayfa İçi SEO Denetleyicisi",
+            "subtitle": "Uygulanabilir öneriler içeren tam sayfa içi SEO denetimi"
+        },
+        "interface": {
+            "title": "Ücretsiz Denetiminizi Başlatın",
+            "url_label": "Web Sitesi URL'si",
+            "keywords_label": "Hedef Anahtar Kelime(ler)",
+            "recommended": "Önerilen",
+            "button": "Kapsamlı Denetimi Başlat",
+            "page_analysis": "Sayfa Analizi"
+        },
+        "labels": {
+            "initializing": "Başlatılıyor...",
+            "desktop": "Masaüstü",
+            "mobile": "Mobil"
+        },
+        "content": {
+            "main_content_title": "Kapsamlı Sayfa İçi SEO Kontrol ve Analiz Aracı",
+            "main_content_desc": "Modern arama motorları, yalnızca tam anahtar kelimeleri değil, bir sorgunun arkasındaki <em>niyeti</em> anlamak için nöral eşleştirmeyi kullanır. <strong>Sayfa içi SEO kontrol</strong> aracımız bu prensipler üzerine kurulmuştur. İster hızlı bir <strong>sayfa içi SEO kontrolüne</strong> ister derin bir semantik denetime ihtiyacınız olsun, aracımız bir nöral <strong>sayfa içi SEO analizörü</strong> gibi çalışarak içeriğiniz ile yapay zeka destekli algoritmaların onu yorumlama biçimi arasındaki boşluğu doldurmanıza yardımcı olur.",
+            "how_to_title": "Sayfa İçi SEO Kontrol Aracı Nasıl Kullanılır?"
+        },
+        "features": {
+            "f1_title": "Anında Semantik Analiz",
+            "f1_desc": "Arama örümcekleri verimli bir şekilde tarama yapar. <strong>Çevrimiçi sayfa içi SEO kontrol</strong> aracımız bu davranışı taklit ederek yapıyı ve hiyerarşiyi anlamak için DOM'unuzu ayrıştırır. Bu <strong>sayfa içi kontrol aracı</strong>, HTML'nizin arama motorlarının dilini konuşmasını sağlar.",
+            "f2_title": "Veriye Dayalı Puanlama",
+            "f2_desc": "Öznelliği unutun; başlık optimizasyonu, meta tamlığı ve kelime sayısı oranları gibi sinyaller üzerinden ağırlıklı puanlar alırsınız. Bu, uygulanabilir eşik değerlerine sahip şeffaf bir <strong>sayfa içi SEO kontrol</strong> mekanizmasıdır.",
+            "f3_title": "Bağlamsal İçerik İncelemesi",
+            "f3_desc": "Mükemmel anahtar kelime yoğunluğu miti artık geçerli değil. <strong>Sayfa içi SEO denetim aracımız</strong> bunun yerine bağlamsal alakayı değerlendirir. H1'leriniz kullanıcı niyetiyle uyumlu mu? İçeriğiniz sorguyu karşılıyor mu? Modern <strong>sayfa içi SEO analizi</strong> budur.",
+            "f4_title": "Mobil ve Teknik Kontrol",
+            "f4_desc": "Viewport etiketleri, kanonik (canonical) bağlantılar ve yapılandırılmış veri snippet'ları—hepsi kontrol edilir. <strong>Sayfa içi SEO test aracımız</strong>, mobil kullanılabilirlik sorunlarını ve işaretleme tutarsızlıklarını işaretleyerek size hem estetik hem de algoritmik bir <strong>sayfa içi SEO raporu</strong> sunar.",
+            "f5_title": "%100 Ücretsiz Erişim",
+            "f5_desc": "Abonelik yok, gizli sınır yok. Bu sizin <strong>ücretsiz sayfa içi SEO aracınızdır</strong>. İster kendi siteniz için ister rakip araştırması için herhangi bir genel URL üzerinde sınırsız denetim çalıştırın.",
+            "f6_title": "Bağlantı Mimarisi",
+            "f6_desc": "Dahili ve harici bağlantı denetimi tek bir görünümde. Kaç giden bağlantının nereye işaret ettiğini ve dahili bağlantılarınızın konusal otoriteyi güçlendirip güçlendirmediğini görün. Kapsamlılık için tasarlanmış bütünsel bir <strong>ücretsiz sayfa içi SEO kontrol aracıdır</strong>."
+        },
+        "how_to": {
+            "step1_title": "URL'nizi Girin",
+            "step1_desc": "İlgili sayfanın bağlantısını girin. <strong>Çevrimiçi sayfa içi SEO kontrol</strong> aracımız, tıpkı bir arama botu gibi ham HTML'yi çeker.",
+            "step2_title": "Sinyalleri Analiz Edin",
+            "step2_desc": "<strong>SEO sayfa test aracını</strong> başlatın. Algoritmaların sayfanızı nasıl \"okuduğunu\" taklit etmek için başlıkları, meta verileri ve içerik yapısını analiz ediyoruz.",
+            "step3_title": "Niyete Göre Optimize Edin",
+            "step3_desc": "İçeriğinizin alaka düzeyini artırmak için verileri kullanın. <strong>Web sitesi sayfa içi kontrol</strong> mantığını inceleyin ve uygulanabilir <strong>sayfa içi SEO puanınızı</strong> iyileştirin."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Sayfa içi SEO kontrolü sıralama için neden kritiktir?",
+            "a1": "Arama tamamen alaka düzeyiyle ilgilidir. Bir <strong>sayfa içi SEO kontrolü</strong>, sinyallerinizin (başlıklar, şema, içerik) kullanıcı niyetiyle uyumlu olmasını sağlar. Bir <strong>sayfa içi site SEO</strong> aracıyla düzenli denetim yapmak, sitenizi gelişen algoritma güncellemeleriyle uyumlu tutar.",
+            "q2": "Bu çevrimiçi sayfa içi SEO aracı gerçekten ücretsiz mi?",
+            "a2": "Evet. Erişilebilir veriye inanıyoruz. <strong>Çevrimiçi sayfa içi SEO aracımız</strong> ücretsizdir ve abonelik engelleri olmadan kendi <strong>ücretsiz sayfa içi SEO aracınız</strong> olarak kullanmanıza olanak tanır.",
+            "q3": "Arama motorları içeriğimi nasıl anlıyor?",
+            "a3": "Motorlar varlıkları ilişkilendirmek için NLP (Doğal Dil İşleme) kullanır. <strong>Sayfa içi SEO puanlayıcımız</strong>, yapınızın bu anlayışı destekleyip desteklemediğini kontrol ederek nöral uyumluluk için bir proxy <strong>SEO sayfa içi testi</strong> işlevi görür.",
+            "q4": "Herhangi bir web sitesi için sayfa içi SEO kontrol edebilir miyim?",
+            "a4": "Evet. Tarayıcımız `robots.txt` dosyasına saygı duyar ancak herhangi bir genel URL'yi analiz edebilir. Başarılarını tersine mühendislikle anlamak için rakiplerin <strong>sayfa içi SEO'sunu kontrol</strong> edebilirsiniz. Her türlü strateji için çok yönlü bir <strong>sayfa içi kontrol aracıdır</strong>."
+        }
+    },
+    "pdf-report": {
+        "seo": {
+            "title": "PDF Raporu - Profesyonel SEO Denetim Raporu"
+        },
+        "interface": {
+            "brand_name": "Optimizo",
+            "cover_title": "SEO DENETİM RAPORU",
+            "overall_score": "GENEL PUAN",
+            "generated_on": "Oluşturulma tarihi",
+            "suite_name": "Optimizo SEO Araçları Paketi",
+            "audit_title": "Optimizo SEO Denetimi",
+            "analysis_methods": "Detaylı Analiz Yöntemleri",
+            "recommendation": "ÖNERİ:"
+        },
+        "meta": {
+            "title": "SEO PDF Rapor Oluşturucu - Ücretsiz Çevrimiçi Denetim Aracı",
+            "description": "Web siteniz için PDF formatında ücretsiz bir SEO denetim raporu oluşturun.",
+            "h1": "PDF Rapor Oluşturucu",
+            "subtitle": "SEO analizi ve denetimleri için detaylı PDF raporları oluşturun"
+        }
+    },
+    "redirect-checker": {
+        "meta": {
+            "title": "Çevrimiçi Yönlendirme Denetleyicisi - Ücretsiz HTTP Durum Aracı",
+            "description": "URL yönlendirmelerini analiz etmek, yönlendirme zincirlerini izlemek, HTTP durum kodlarını kontrol etmek ve yönlendirme döngülerini tespit etmek için ücretsiz araç. SEO ve hata ayıklama için temel araç.",
+            "h1": "Yönlendirme Denetleyicisi",
+            "subtitle": "HTTP yönlendirmelerini takip edin ve 301, 302 ve meta yenileme zincirlerini belirleyin"
+        },
+        "form": {
+            "url_label": "Kontrol Edilecek URL('leri) Girin (Her satıra bir tane, en fazla 10)",
+            "url_placeholder": "https://orneksite.com\nhttps://diger-site.com\nhttps://ucuncu-site.com",
+            "canonical_check": "Alan adı kanonikliğini de kontrol et (www ve non-www karşılaştırması)",
+            "user_agent_label": "Kullanıcı Aracısı (User Agent)",
+            "user_agent_default": "Varsayılan (Tarayıcı)",
+            "user_agent_googlebot": "Googlebot (Google)",
+            "user_agent_bingbot": "Bingbot (Bing)",
+            "user_agent_facebook": "Facebook Tarayıcısı",
+            "user_agent_iphone": "iPhone (Safari)",
+            "user_agent_android": "Android (Chrome)",
+            "button": "URL'leri Kontrol Et"
+        },
+        "loading": {
+            "analyzing": "Yönlendirme yolu analiz ediliyor..."
+        },
+        "content": {
+            "main_title": "Yönlendirme ve HTTP Durum Kontrol Aracı",
+            "main_subtitle": "Yönlendirme izleme, durum kodu kontrolü ve döngü tespiti ile eksiksiz URL analizi",
+            "intro": "Kapsamlı ücretsiz aracımızla HTTP durum kodlarını analiz edin, yönlendirme zincirlerini izleyin, 301 ve 302 yönlendirmelerini tespit edin, kırık bağlantıları bulun ve yönlendirme döngülerini belirleyin. SEO optimizasyonu, web sitesi hata ayıklama, taşıma planlaması ve uygun URL yapısını sağlamak için temel bir araçtır. Tam yönlendirme yolunu, yanıt kodlarını ve olası sorunları görmek için herhangi bir URL'yi anında kontrol edin.",
+            "features_title": "✨ Temel Özellikler",
+            "feature1_title": "Toplu URL Kontrolü",
+            "feature1_desc": "İlerleme takibi ile aynı anda 10 adede kadar URL'yi kontrol edin",
+            "feature2_title": "Kanonik Alan Adı Kontrolü",
+            "feature2_desc": "SEO için www ve non-www tutarlılığını doğrulayın",
+            "feature3_title": "Döngü Tespiti",
+            "feature3_desc": "Kesin yönlendirme döngüsü modellerini gösteren görsel diyagram",
+            "feature4_title": "Eksiksiz Zincir Analizi",
+            "feature4_desc": "Durum kodları ve zamanlama ile tam yönlendirme yollarını izleyin",
+            "what_are_redirects_title": "HTTP Yönlendirmeleri Nedir?",
+            "what_are_redirects_desc": "HTTP yönlendirmeleri, ziyaretçileri otomatik olarak bir URL'den diğerine gönderen sunucu yanıtlarıdır. Bir tarayıcı bir URL talep ettiğinde, sunucu yeni hedef URL ile birlikte bir yönlendirme durum kodu (301 veya 302 gibi) ile yanıt verebilir. Yönlendirmeler; içeriği taşırken, kırık bağlantıları düzeltirken, HTTPS zorunluluğu getirirken ve alan adı değişikliklerini yönetirken SEO değerini korumak için gereklidir.",
+            "status_codes_title": "HTTP Durum Kodlarını Anlamak",
+            "status_2xx_title": "2xx - Başarılı",
+            "status_2xx_desc": "Bunlar, sorunsuz ve başarılı istekleri belirtir",
+            "status_3xx_title": "3xx - Yönlendirmeler",
+            "status_3xx_desc": "URL taşındı, tarayıcı yönlendirmeyi izlemeli",
+            "status_4xx_title": "4xx - İstemci Hataları",
+            "status_4xx_desc": "İstemci tarafındaki istek hatası",
+            "status_5xx_title": "5xx - Sunucu Hataları",
+            "status_5xx_desc": "Sunucu tarafındaki hatalar",
+            "redirect_301_title": "301 Kalıcı Yönlendirme",
+            "redirect_301_when": "<strong>Ne zaman kullanılır:</strong> İçerik kalıcı olarak yeni bir URL'ye taşındığında",
+            "redirect_301_seo": "<strong>SEO Etkisi:</strong> Bağlantı değerinin %90-99'unu yeni URL'ye aktarır",
+            "redirect_301_cache": "<strong>Önbelleğe Alma:</strong> Tarayıcılar kalıcı olarak önbelleğe alır, değiştirilmesi dordur",
+            "redirect_302_title": "302 Geçici Yönlendirme",
+            "redirect_302_when": "<strong>Ne zaman kullanılır:</strong> İçerik geçici olarak farklı bir URL'de olduğunda",
+            "redirect_302_seo": "<strong>SEO Etkisi:</strong> Orijinal URL sıralama gücünü korur",
+            "redirect_302_cache": "<strong>Önbelleğe Alma:</strong> Önbelleğe alınmaz, değiştirilmesi veya kaldırılması kolaydır",
+            "why_check_title": "Neden Yönlendirmeleri Kontrol Etmelisiniz?",
+            "why_check_1": "<strong>Site Taşımaları:</strong> Tüm eski URL'lerin yeni konumlara düzgün şekilde yönlendirildiğini doğrulayın",
+            "why_check_2": "<strong>Kırık Bağlantı Tespiti:</strong> 404 hatalarını ve kırık yönlendirme zincirlerini bulun",
+            "why_check_3": "<strong>Performans Sorunları:</strong> Sayfa yüklemesini yavaşlatan aşırı yönlendirme zincirlerini belirleyin",
+            "why_check_4": "<strong>Yönlendirme Döngüsü Tespiti:</strong> Sonsuz döngülere neden olan dairesel yönlendirmeleri yakalayın",
+            "why_check_5": "<strong>Güvenlik Denetimleri:</strong> Yönlendirme hedeflerini doğrulayın ve kötü niyetli yönlendirmeleri önleyin",
+            "why_check_6": "<strong>Kullanıcı Deneyimi:</strong> Ziyaretçilerin amaçlanan içeriğe hızla ulaşmasını sağlayın",
+            "why_check_7": "<strong>Analiz Doğruluğu:</strong> İzleme kodlarının yönlendirme zincirleri boyunca çalıştığını onaylayın",
+            "redirect_chains_title": "Yönlendirme Zincirleri Nedir?",
+            "redirect_chains_desc": "Bir yönlendirme zinciri, bir URL başka bir URL'ye, o da bir başkasına yönlendirildiğinde oluşur. Zincirdeki her adım gecikme ekler ve SEO'yu etkileyebilir. Örnek: URL A → URL B → URL C → Final URL (3 yönlendirme).",
+            "chain_recommended": "<strong>Önerilen:</strong> 0-1 yönlendirme (doğrudan veya tek adım)",
+            "chain_acceptable": "<strong>Kabul Edilebilir:</strong> 2-3 yönlendirme (küçük performans etkisi)",
+            "chain_problematic": "<strong>Sorunlu:</strong> 4+ yönlendirme (önemli SEO ve hız sorunları)",
+            "redirect_loops_title": "Yönlendirme Döngüleri Nedir?",
+            "redirect_loops_desc": "Bir yönlendirme döngüsü, URL A'nın URL B'ye ve URL B'nin tekrar URL A'ya yönlendirilmesiyle bir sonsuz döngü oluşmasıdır. Tarayıcılar bunu algılar ve \"Çok fazla yönlendirme\" veya \"Yönlendirme döngüsü algılandı\" gibi bir hata gösterir. Bu durum sayfayı tamamen bozar ve derhal düzeltilmelidir.",
+            "common_issues_title": "Yaygın Yönlendirme Sorunları ve Çözümleri",
+            "issue1_title": "Uzun Yönlendirme Zincirleri",
+            "issue1_problem": "<strong>Sorun:</strong> Birden fazla yönlendirme sayfa yüklemesini yavaşlatır ve SEO değerini zayıflatır",
+            "issue1_solution": "<strong>Çözüm:</strong> Yönlendirmeleri doğrudan nihai hedefe işaret edecek şekilde güncelleyin",
+            "issue2_title": "Karma Yönlendirme Türleri",
+            "issue2_problem": "<strong>Sorun:</strong> Tutarsız yönlendirme türleri arama motorlarının kafasını karıştırır",
+            "issue2_solution": "<strong>Çözüm:</strong> Kalıcı taşımalar için 301, yalnızca geçici durumlar için 302 kullanın",
+            "issue3_title": "Kırık Yönlendirme Zincirleri",
+            "issue3_problem": "<strong>Sorun:</strong> Yönlendirme mevcut olmayan bir sayfaya işaret ediyor",
+            "issue3_solution": "<strong>Çözüm:</strong> Yönlendirmeyi geçerli bir hedefe güncelleyin veya kaldırın",
+            "issue4_title": "HTTPS/HTTP Döngüleri",
+            "issue4_problem": "<strong>Sorun:</strong> Site HTTP ve HTTPS arasında sonsuz bir şekilde yönlendirme yapıyor",
+            "issue4_solution": "<strong>Çözüm:</strong> SSL yapılandırmasını ve .htaccess kurallarını düzeltin",
+            "best_practices_title": "Yönlendirmeler İçin SEO En İyi Uygulamaları",
+            "best_practice1": "• SEO değerini korumak için kalıcı URL değişikliklerinde her zaman 301 yönlendirmesi kullanın",
+            "best_practice2": "• Yönlendirme zincirlerini en aza indirin - mümkünse doğrudan nihai hedefe yönlendirin",
+            "best_practice3": "• Yönlendirme döngülerinden ne pahasına olursa olsun kaçının - kullanıcı deneyimini ve SEO'yu bozarlar",
+            "best_practice4": "• Yönlendirmelere güvenmek yerine dahili bağlantıları güncelleyin",
+            "best_practice5": "• Bunun gibi araçlarla yönlendirme performansını düzenli olarak izleyin",
+            "best_practice6": "• URL değişikliklerinden sonra yönlendirmeleri en az 1 yıl aktif tutun",
+            "best_practice7": "• 302 yönlendirmelerini idareli ve yalnızca gerçekten geçici durumlar için kullanın"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Yönlendirme zinciri nedir?",
+            "a1": "Bir yönlendirme zinciri, nihai sayfaya ulaşılana kadar bir URL'den diğerine yapılan bir dizi yönlendirmedir. Uzun zincirler siteyi yavaşlatır ve tarama bütçesini boşa harcar.",
+            "q2": "301 yönlendirmesi sıralamayı etkiler mi?",
+            "a2": "Bir 301 yönlendirmesi, bağlantı değerinin (sıralama gücü) çoğunu korur, ancak zincirlerde aşırı kullanım bu etkiyi zayıflatabilir.",
+            "q3": "Yönlendirme döngülerini nasıl bulurum?",
+            "a3": "Aracımızı kullanın; sonsuz bir yol tespit ederse otomatik olarak bir hatayı vurgulayacaktır.",
+            "q4": "HTTP'den HTTPS'ye yönlendirme yapmalı mıyım?",
+            "a4": "Evet, güvenlik ve SEO için zorunlu bir adımdır. Sunucu düzeyinde (Nginx veya Apache) bir 301 yönlendirmesi önerilir.",
+            "q5": "Kaç yönlendirme kabul edilebilir?",
+            "a5": "İdeal olarak sıfır veya bir. Google genellikle 5 adıma kadar takip eder, ancak her adım yükleme süresini artırır."
+        }
+    },
+    "slug-generator": {
+        "meta": {
+            "title": "URL Slug Generator - Ücretsiz Çevrimiçi SEO Dostu Araç",
+            "description": "Metninizi SEO dostu, temiz URL slug'larına dönüştürmek için ücretsiz araç. Birçok dilde aksanlı karakterleri destekler.",
+            "h1": "URL Slug Oluşturucu",
+            "subtitle": "Metninizi saniyeler içinde temiz, SEO dostu bir URL slug'ına dönüştürün"
+        },
+        "form": {
+            "label": "Metninizi Girin",
+            "placeholder": "Sıralama kazanacak harika bir blog yazısı başlığı...",
+            "separator_label": "Ayırıcı",
+            "separator_dash": "Tire (-)",
+            "separator_underscore": "Alt Tire (_)",
+            "button": "Slug Oluştur"
+        },
+        "results": {
+            "title": "Oluşturulan Slug",
+            "copy": "Kopyala",
+            "copied": "Kopyalandı!"
+        },
+        "content": {
+            "main_title": "Ücretsiz SEO URL Slug Oluşturucu",
+            "main_subtitle": "Metni saniyeler içinde temiz, okunabilir ve arama motoru dostu slug'lara dönüştürün",
+            "intro": "Ücretsiz çevrimiçi aracımızla web siteniz için mükemmel URL'ler oluşturun. Slug oluşturucumuz metninizdeki özel karakterleri, boşlukları ve sembolleri kaldırarak hem kullanıcılar hem de arama motorları için optimize edilmiş temiz URL'ler oluşturur. Wordpress, özel siteler ve daha fazlası için idealdir.",
+            "features_title": "🚀 Neden Bizim Slug Aracımızı Seçmelisiniz?",
+            "f1_title": "Anında Dönüşüm",
+            "f1_desc": "Yazarken slug'ınızın gerçek zamanlı olarak oluştuğunu görün. Beklemek yok.",
+            "f2_title": "Aksan Desteği",
+            "f2_desc": "Ç, Ş, Ğ gibi Türkçe karakterleri ve diğer aksanlı harfleri otomatik olarak İngilizce karşılıklarına dönüştürür.",
+            "f3_title": "Özelleştirilebilir Ayırıcı",
+            "f3_desc": "SEO tercihinize göre tire (-) veya alt tire (_) arasında seçim yapın.",
+            "f4_title": "Karakter Temizliği",
+            "f4_desc": "URL'leri bozan sembolleri, noktalama işaretlerini ve durdurma kelimelerini (isteğe bağlı) temizler.",
+            "what_is_slug_title": "URL Slug Nedir?",
+            "what_is_slug_desc": "Slug, URL'nin son bölümüdür ve bir sayfanın içeriğini tanımlar. Örneğin, `https://site.com/seo-nedir` URL'sinde `seo-nedir` slug kısmıdır. İyi bir slug kısa, açıklayıcıdır ve yalnızca küçük harf, rakam ve ayırıcı içerir.",
+            "importance_title": "URL Slug'ları SEO İçin Neden Önemlidir?",
+            "importance_1": "<strong>Sıralama Faktörü:</strong> Arama motorları bir sayfanın ne hakkında olduğunu anlamak için URL'yi kullanır",
+            "importance_2": "<strong>Okunabilirlik:</strong> Temiz URL'ler kullanıcılara nereye tıkladıklarını açıkça gösterir",
+            "importance_3": "<strong>CTR (Tıklama Oranı):</strong> Anlamlı URL'ler arama sonuçlarında daha sık tıklanır",
+            "importance_4": "<strong>Sosyal Paylaşım:</strong> Kısa ve temiz URL'ler paylaşıldığında daha profesyonel görünür",
+            "importance_5": "<strong>Geleceğe Hazırlık:</strong> Tarih veya gereksiz kodlar içermeyen kalıcı bağlantılar daha uzun süre güncel kalır",
+            "best_practices_title": "Mükemmel Slug Oluşturma İpuçları",
+            "bp1": "• <strong>Kısa Tutun:</strong> 3-5 kelime idealdir. Çok uzun URL'ler kesilebilir.",
+            "bp2": "• <strong>Durdurma Kelimelerini Atın:</strong> \"ve\", \"mi\", \"bir\" gibi kelimeleri çıkararak önemli olana odaklanın.",
+            "bp3": "• <strong>Küçük Harf Kullanın:</strong> Sunucu hatalarını önlemek için her zaman küçük harf tercih edin.",
+            "bp4": "• <strong>Tire Kullanın:</strong> Google, tireleri (-) kelime ayırıcı olarak önerir.",
+            "bp5": "• <strong>Tarihlerden Kaçının:</strong> İçeriğiniz her zaman güncel kalsın diye URL'ye tarih eklemeyin.",
+            "hero_title": "URL Slug Generator - Create SEO-Friendly URLs",
+            "hero_subtitle": "Generate clean, SEO-friendly URL slugs from any text instantly with our free slug generator tool. Convert blog titles, article headings, and page names into readable, search-engine-optimized URLs.",
+            "what_title": "What is a URL Slug?",
+            "what_desc": "A URL slug is the part of a web address that comes after the domain name and identifies a specific page. For example, in \"example.com/how-to-create-seo-friendly-urls\", the slug is \"how-to-create-seo-friendly-urls\".",
+            "why_title": "Why Use SEO-Friendly Slugs?",
+            "why_list": [
+                "Better SEO Rankings: Keywords in URLs help search engines understand page content",
+                "Improved Click-Through Rates: Readable URLs are more trustworthy and clickable",
+                "User Experience: Clear URLs tell users what to expect before clicking",
+                "Social Sharing: Clean URLs look professional when shared on social media",
+                "Link Building: Descriptive URLs make better anchor text for backlinks",
+                "Accessibility: Screen readers can better interpret meaningful URLs"
+            ],
+            "practices_title": "URL Slug Best Practices",
+            "practices_list": [
+                "Use lowercase letters - Avoid capitalization for consistency",
+                "Use hyphens (-) - Separate words with hyphens, not underscores",
+                "Keep it short - Aim for 3-5 words maximum",
+                "Include keywords - Use relevant keywords for SEO",
+                "Be descriptive - Clearly describe the page content",
+                "Avoid special characters - Remove @, #, %, &, etc.",
+                "Avoid stop words - Remove \"a\", \"the\", \"and\" when possible",
+                "Avoid numbers/dates - Unless essential for content"
+            ],
+            "how_works_title": "How Our Slug Generator Works",
+            "how_works_desc": "Our tool follows industry best practices to create perfect URL slugs. It converts text to lowercase, removes special characters and punctuation, replaces spaces with hyphens, removes consecutive hyphens, and trims leading/trailing hyphens.",
+            "uses_title": "Yaygın Kullanım Durumları",
+            "uses": {
+                "blog": {
+                    "title": "ðŸ“ Blog Posts",
+                    "desc": "Convert article titles to SEO-friendly URLs for WordPress, Medium, or custom blogs"
+                },
+                "ecommerce": {
+                    "title": "ðŸ›ï¸ E-commerce",
+                    "desc": "Create product URLs that include keywords and product names"
+                },
+                "docs": {
+                    "title": "ðŸ“„ Documentation",
+                    "desc": "Generate clean URLs for help articles and documentation pages"
+                },
+                "landing": {
+                    "title": "ðŸŽ¯ Landing Pages",
+                    "desc": "Create keyword-rich URLs for marketing campaigns and landing pages"
+                }
+            },
+            "pro_tip_title": "ðŸ’¡ SEO Pro Tip",
+            "pro_tip_desc": "Google recommends using hyphens (-) instead of underscores (_) in URLs because hyphens are treated as word separators while underscores are not. This means \"seo-friendly-urls\" is better than \"seo_friendly_urls\" for search engine optimization.",
+            "faq_title": "Sıkça Sorulan Sorular",
+            "faq": {
+                "q1": "Should I use hyphens or underscores in URLs?",
+                "a1": "Always use hyphens (-). Google treats hyphens as word separators but treats underscores as word connectors. This means \"best-seo-practices\" is read as three separate words, while \"best_seo_practices\" is read as one word.",
+                "q2": "How long should a URL slug be?",
+                "a2": "Keep slugs between 3-5 words (30-60 characters). Shorter URLs are easier to remember, share, and rank better in search results. Remove unnecessary words like \"a\", \"the\", \"and\" to keep slugs concise.",
+                "q3": "Can I change a URL slug after publishing?",
+                "a3": "Yes, but it's not recommended. Changing URLs can break existing links and hurt SEO. If you must change a slug, always set up a 301 redirect from the old URL to the new one to preserve link equity and avoid 404 errors.",
+                "q4": "Should I include keywords in my URL slug?",
+                "a4": "Yes! Including relevant keywords in your URL slug helps search engines understand your content and can improve rankings. However, keep it natural and descriptive - don't stuff keywords unnaturally."
+            }
+        },
+        "editor": {
+            "label_input": "Enter Text or Title",
+            "ph_input": "Enter your title or text..."
+        },
+        "js": {
+            "copied": "Kopyalandı!"
+        }
+    },
+    "yahoo-serp-checker": {
+        "meta": {
+            "title": "Yahoo SERP Checker - Ücretsiz Çevrimiçi SEO Sıralama Aracı",
+            "description": "Web sitenizin Yahoo'daki sıralamasını kontrol etmek için ücretsiz araç. Farklı bölgeler için doğru ve gerçek zamanlı sonuçlar.",
+            "h1": "Yahoo SERP Denetleyicisi",
+            "subtitle": "Anahtar kelimeleriniz için farklı konumlarda Yahoo arama sıralamalarını kontrol edin"
+        },
+        "interface": {
+            "simulation_title": "Yahoo Arama Simülatörü",
+            "keyword_label": "Hedef Anahtar Kelime",
+            "location_label": "Konum (İsteğe Bağlı)",
+            "location_placeholder": "Şehir, eyalet veya ülke girin...",
+            "market_label": "Bölge / Dil",
+            "device_label": "Cihaz Türü",
+            "device_desktop": "Masaüstü",
+            "device_mobile": "Mobil",
+            "no_login": "Giriş Gerekmez",
+            "realtime_results": "Gerçek Zamanlı Sonuçlar",
+            "yahoo_domain_label": "Yahoo Domain"
+        },
+        "form": {
+            "keyword_placeholder": "örn. en iyi kahve makineleri",
+            "button": "Yahoo Sıralamalarını Kontrol Et",
+            "location_placeholder": "Enter city (Optional)"
+        },
+        "markets": {
+            "us": "Amerika Birleşik Devletleri (İngilizce)",
+            "uk": "Birleşik Krallık (İngilizce)",
+            "ca": "Kanada (İngilizce)",
+            "au": "Avustralya (İngilizce)",
+            "de": "Almanya (Almanca)",
+            "fr": "Fransa (Fransızca)",
+            "es": "İspanya (İspanyolca)",
+            "it": "İtalya (İtalyanca)",
+            "nl": "Hollanda (Felemenkçe)",
+            "br": "Brezilya (Portekizce)",
+            "jp": "Japonya (Japonca)",
+            "in": "Hindistan (İngilizce)"
+        },
+        "content": {
+            "main_title": "Ücretsiz Yahoo Sıra Bulucu",
+            "main_subtitle": "Hala milyonlarca kişi tarafından kullanılan Yahoo'daki arama görünürlüğünüzü ölçün ve optimize edin.",
+            "feature1_title": "Canlı Veri Analizi",
+            "feature1_desc": "Önbelleğe alınmış verilerle uğraşmayın. Doğrudan Yahoo sunucularından anlık sonuçlar alın.",
+            "feature2_title": "Bölgesel Odak",
+            "feature2_desc": "Farklı ülkelerdeki kullanıcıların web sitenizi Yahoo SERP'lerinde nasıl gördüğünü test edin.",
+            "feature3_title": "Cihazlara Göre Filtrele",
+            "feature3_desc": "Sıralamalarınızın mobil ve masaüstü kullanıcılara göre nasıl değiştiğini görün.",
+            "yahoo_seo_title": "Neden Yahoo Sıralamaları Önemlidir?",
+            "yahoo_seo_desc1": "Yahoo, pazar payı olarak Google'ın gerisinde olsa da, hala önemli bir kullanıcı kitlesine (özellikle finans ve haber odaklı kullanıcılara) sahiptir. Yahoo sonuçları genellikle Bing tarafından desteklendiği için, burada iyi sıralanmak Bing stratejinizin de çalıştığını gösterir.",
+            "yahoo_seo_desc2": "Yahoo SEO'su, teknik doğruluk, sayfa hızı ve kaliteli geri bağlantılar (backlink) gibi temel unsurlara dayanır. Yahoo SERP kontrol aracımızı kullanarak bu çabalarınızın sonuçlarını takip edebilirsiniz.",
+            "how_it_works_title": "Yahoo SERP Kontrolü Nasıl Çalışır?",
+            "how_it_works_desc": "Anahtar kelimenizi ve konumunuzu girdiğinizde, aracımız seçtiğiniz bölgeye özel bir Yahoo arama isteği oluşturur. Ardından ilk 100 sonuç içinden web sitenizi bulur ve tam pozisyonunuzu, yanındaki diğer rakip sonuçlarla birlikte gösterir.",
+            "why_matters_title": "Why Yahoo Rankings Matter",
+            "why_matters_desc": "While smaller than Google, Yahoo still commands a significant share of search traffic, particularly in specific demographics and regions like Japan and parts of the US. Ignoring Yahoo means leaving potential traffic on the table.",
+            "same_as_bing_title": "Does Yahoo use Bing Results?",
+            "same_as_bing_desc": "Yes, Yahoo Search is largely powered by <strong>Bing's search index</strong>. This means optimizing for Bing often helps your Yahoo rankings. However, Yahoo's interface and features differ, so verifying your actual appearance is crucial."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Yahoo ve Bing sıralamaları aynı mıdır?",
+            "a1": "Genellikle çok yakındır çünkü Yahoo Arama, Bing'in indeksi ve algoritmaları tarafından desteklenmektedir. Ancak bölgesel ayarlar ve Yahoo'nun kendi SERP özellikleri nedeniyle küçük farklılıklar olabilir.",
+            "q2": "Yahoo'da daha üst sıralara nasıl çıkarım?",
+            "a2": "Güçlü başlık etiketleri, kaliteli içerik ve hızlı bir web sitesi Yahoo (ve Bing) için anahtardır. Ayrıca sosyal medya sinyalleri bu platformlarda Google'a göre biraz daha etkili olabilir.",
+            "q3": "Bu araç kaç sonucu kontrol ediyor?",
+            "a3": "Aracımız Yahoo'nun en güncel SERP listesinden genellikle ilk 50 ila 100 sonucu tarar ve web sitenizin bu sonuçlar içindeki tam yerini belirler."
+        },
+        "domains": {
+            "us": "Yahoo.com (ABD/Küresel)",
+            "uk": "Yahoo.co.uk (Birleşik Krallık)",
+            "ca": "Yahoo.ca (Kanada)",
+            "au": "Yahoo.com.au (Avustralya)",
+            "de": "Yahoo.de (Almanya)",
+            "fr": "Yahoo.fr (Fransa)",
+            "it": "Yahoo.it (İtalya)",
+            "es": "Yahoo.es (İspanya)",
+            "br": "Yahoo.com.br (Brezilya)"
+        }
+    },
+    "sitemap-validator": {
+        "meta": {
+            "title": "Site Haritası Doğrulayıcı - Ücretsiz Çevrimiçi XML Site Haritası Denetleyicisi",
+            "description": "XML site haritalarını hatalara karşı kontrol etmek, URL'leri doğrulamak ve protokol uyumluluğunu sağlamak için ücretsiz araç.",
+            "h1": "Site Haritası Doğrulayıcı",
+            "subtitle": "XML site haritalarınızı doğrulayın"
+        },
+        "editor": {
+            "title": "Site Haritasını Doğrula",
+            "btn_xml_input": "XML Girişi",
+            "btn_url_input": "URL Girişi",
+            "label_xml": "XML Yapıştır",
+            "ph_xml": "Sitemap XML kodunuzu buraya yapıştırın...",
+            "label_url": "Sitemap URL'si",
+            "ph_url": "https://ornek.com/sitemap.xml",
+            "help_url": "sitemap.xml dosyanızın tam URL'sini girin",
+            "btn_fetch": "Getir",
+            "btn_validate": "Doğrula",
+            "btn_validating": "Doğrulanıyor...",
+            "btn_clear": "Temizle",
+            "btn_example": "Örnek Yükle",
+            "check_urls": "URL Erişilebilirliğini Kontrol Et"
+        },
+        "results": {
+            "title": "Doğrulama Sonuçları"
+        },
+        "content": {
+            "main_heading": "Site Yapınıza Hakim Olun",
+            "main_intro": "Web sitenizin arama motorları tarafından mükemmel bir şekilde taranabilir olduğundan emin olun.",
+            "what_is_title": "XML Sitemap Doğrulayıcı Nedir?",
+            "what_is_desc_1": "Sitemap dosyanızdaki sözdizimi hatalarını ve kırık linkleri kontrol eden bir SEO aracıdır.",
+            "what_is_desc_2": "Site haritanız botlar için bir yol haritasıdır. Hatalar indekslemeyi engelleyebilir.",
+            "features_title": "Neden Biz?",
+            "feature_instant_title": "Anlık Analiz",
+            "feature_instant_desc": "Hızlı geri bildirim alın.",
+            "feature_strict_title": "Sıkı Doğrulama",
+            "feature_strict_desc": "Resmi şemalara göre kontrol edilir.",
+            "feature_index_title": "Dizin Desteği",
+            "feature_index_desc": "Sitemap dizin dosyalarını destekler.",
+            "importance_title": "SEO İçin Önemi",
+            "importance_budget_title": "Tarama Bütçesi",
+            "importance_budget_desc": "Bot kaynaklarını verimli kullanın.",
+            "importance_indexing_title": "Hızlı İndeksleme",
+            "importance_indexing_desc": "Yeni içeriklerin keşfedilmesini hızlandırır.",
+            "importance_discovery_title": "Derin Sayfalar",
+            "importance_discovery_desc": "Yetim sayfaların bulunmasını sağlar.",
+            "importance_troubleshooting_title": "Sorun Giderme",
+            "importance_troubleshooting_desc": "Hataları erkenden tespit edin.",
+            "guide_title": "Nasıl Kullanılır",
+            "guide_step1_title": "URL Girin",
+            "guide_step1_desc": "Sitemap adresinizi yapıştırın.",
+            "guide_step2_title": "Doğrulayın",
+            "guide_step2_desc": "Butona tıklayarak analizi başlatın.",
+            "guide_step3_title": "Sonuçlar",
+            "guide_step3_desc": "Hataları inceleyin ve düzeltin.",
+            "faq_title": "SSS",
+            "faq_privacy_question": "Verileri kaydediyor musunuz?",
+            "faq_privacy_answer": "Hayır, gizliliğe önem veriyoruz.",
+            "faq_frequency_question": "Ne sıklıkla kontrol etmeliyim?",
+            "faq_frequency_answer": "Her yapısal değişiklikte veya ayda bir.",
+            "faq_size_question": "Boyut sınırı?",
+            "faq_size_answer": "50MB veya 50.000 URL.",
+            "faq_localhost_question": "Localhost çalışır mı?",
+            "faq_localhost_answer": "Evet, XML yapıştırarak."
+        }
+    },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Hreflang Checker - Ücretsiz Çevrimiçi Etiket Doğrulayıcı",
+            "description": "Google'ın hedef kitleniz ve diliniz için doğru URL'yi sunduğundan emin olmak için hreflang etiketlerinizi kontrol edin.",
+            "h1": "Hreflang Denetleyicisi",
+            "subtitle": "Uluslararası SEO için ücretsiz hreflang etiketi çıkarma ve doğrulama aracı"
+        },
+        "form": {
+            "url_label": "Kontrol Edilecek URL'yi Girin",
+            "url_placeholder": "https://example.com/page",
+            "user_agent_label": "Kullanıcı Aracısı (User Agent)",
+            "user_agent_default": "Varsayılan (Tarayıcı)",
+            "user_agent_googlebot": "Googlebot (Masaüstü)",
+            "user_agent_bingbot": "Bingbot (Masaüstü)",
+            "button": "Hreflang Etiketlerini Kontrol Et"
+        },
+        "content": {
+            "main_title": "Hreflang Etiket Kontrolü",
+            "main_subtitle": "Uluslararası içeriğinizin doğru kitleye ulaştığından emin olun. Hreflang uygulamasını doğrulayın ve yaygın SEO hatalarını düzeltin.",
+            "intro": "Hreflang etiketleri, birden fazla dilde veya ülkede hizmet veren web siteleri için çok önemlidir. Ücretsiz aracımız, HTML başlığından ve HTTP başlıklarından `rel=\"alternate\" hreflang=\"x\"` etiketlerini çıkarır ve doğrular. Yerelleştirilmiş içeriğin Google ve diğer arama motorlarında doğru şekilde dizine eklenmesini sağlamak için karşılıklı (return) etiketleri kontrol eder.",
+            "features_title": "Neden Hreflang Etiketlerini Kontrol Etmelisiniz?",
+            "feature1_title": "Karşılıklı Etiket Doğrulaması",
+            "feature1_desc": "Hreflang etiketleri çiftler halinde çalışmalıdır. Aracımız, A Sayfasının B Sayfasına bağlantı verdiğini ve B Sayfasının tekrar A Sayfasına bağlantı verip vermediğini otomatik olarak kontrol eder.",
+            "feature2_title": "Yaygın Hataları Tespit Etme",
+            "feature2_desc": "Eksik dönüş etiketlerini, geçersiz dil kodlarını (ISO 639-1) ve yanlış ülke kodlarını (ISO 3166-1 Alpha-2).",
+            "feature3_title": "SEO Sorunlarını Önleme",
+            "feature3_desc": "Yanlış hreflang uygulaması, yinelenen içerik sorunlarına ve arama sonuçlarında yanlış dil sürümünün gösterilmesine neden olabilir.",
+            "how_title": "Hreflang Kontrol Aracı Nasıl Kullanılır",
+            "step1_title": "URL Girin",
+            "step1_desc": "Analiz etmek istediğiniz sayfanın tam URL'sini yapıştırın (ör. https://example.com).",
+            "step2_title": "Kullanıcı Aracısını Seçin",
+            "step2_desc": "Googlebot ile kontrol etmeniz önerilir, ancak standart bir tarayıcı olarak da kontrol edebilirsiniz.",
+            "step3_title": "Sonuçları Analiz Edin",
+            "step3_desc": "Sayfayı getiririz ve bulunan tüm alternatif bağlantıların ve doğrulama durumlarının bir listesini gösteririz.",
+            "step4_title": "Sorunları Düzeltin",
+            "step4_desc": "'Dönüş Etiketi Yok' (Missing Return Tag) hatası görürseniz, referans verilen sayfayı karşılıklı bir bağlantı içerecek şekilde güncelleyin.",
+            "faq_title": "Sıkça Sorulan Sorular",
+            "faq1_q": "Hreflang etiketi nedir?",
+            "faq1_a": "Hreflang, bir web sayfasının dilini ve coğrafi hedefini belirtmek için kullanılan bir HTML niteliğidir. Arama motorlarına, kullanıcıların diline veya bölgesine göre sayfanın hangi sürümünün gösterileceğini söyler.",
+            "faq2_q": "Dönüş etiketleri (return tags) neden önemlidir?",
+            "faq2_a": "Google, başka bir sitenin sayfasını keyfi olarak kendi alternatif sürümü olarak iddia etmesini önlemek için dönüş bağlantıları gerektirir. A Sayfası B Sayfasına bağlantı veriyorsa, B Sayfası da A Sayfasına bağlantı vermelidir.",
+            "faq3_q": "Bu araç x-default etiketini kontrol ediyor mu?",
+            "faq3_a": "Evet, aracımız başka hiçbir dil eşleşmediğinde veya ana dil seçim sayfası için kullanılan `x-default` etiketini tanımlar ve doğrular.",
+            "faq4_q": "HTTP başlıklarındaki hreflang kontrol edilebilir mi?",
+            "faq4_a": "Evet! Hem HTML `<head>` bölümünü hem de HTTP yanıt başlıklarındaki `Link: <url>; rel=\"alternate\"; hreflang=\"code\"` niteliklerini kontrol ediyoruz.",
+            "faq5_q": "Hreflang hataları varsa ne olur?",
+            "faq5_a": "Arama motorları geçersiz etiketleri yok sayabilir, bu da kullanıcılara yanlış dil sürümünün gösterilmesine veya yinelenen içerik cezalarına yol açabilir.",
+            "faq6_q": "Bu araç ücretsiz mi?",
+            "faq6_a": "Evet, mükemmel uluslararası SEO sağlamak için sınırsız sayıda kontrol yapabilirsiniz."
+        }
+    }
+}

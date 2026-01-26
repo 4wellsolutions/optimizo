@@ -1,0 +1,332 @@
+{
+    "password-generator": {
+        "meta": {
+            "title": "Generator bezpiecznych haseł — bezpłatne narzędzie zapewniające bezpieczeństwo w Internecie",
+            "description": "Generuj silne, bezpieczne i losowe hasła natychmiastowo z możliwością dostosowania długości i rodzajów znaków.",
+            "h1": "Generator bezpiecznych haseł",
+            "subtitle": "Generuj silne i losowe hasła w kilka sekund"
+        },
+        "editor": {
+            "title": "Wygeneruj swoje bezpieczne hasło teraz",
+            "length_label": "Długość hasła:",
+            "chars": "znaków",
+            "strength": {
+                "weak": "8 (Słabe)",
+                "good": "16 (Dobre)",
+                "strong": "32 (Silne)",
+                "very_strong": "64 (Bardzo silne)"
+            },
+            "include_label": "Rodzaje znaków:",
+            "option_uppercase": "Wielkie litery (A-Z)",
+            "option_uppercase_desc": "Dodaje wielkie litery dla większej złożoności",
+            "option_lowercase": "Małe litery (a-z)",
+            "option_lowercase_desc": "Podstawowy element silnego hasła",
+            "option_numbers": "Cyfry (0-9)",
+            "option_numbers_desc": "Zwiększa entropię hasła",
+            "option_symbols": "Symbole specjalne (!@#$%)",
+            "option_symbols_desc": "Maksymalna ochrona bezpieczeństwa",
+            "btn_generate": "Generuj silne hasło",
+            "result_title": "Twoje wygenerowane hasło",
+            "strength_score": "Wynik bezpieczeństwa:",
+            "btn_copy_text": "Kopiuj hasło",
+            "btn_copy_final": "Kopiuj do schowka",
+            "btn_regenerate": "Generuj ponownie"
+        },
+        "content": {
+            "faq_hero_title": "Dlaczego warto korzystać z naszego generatora haseł?",
+            "faq": {
+                "q1": "Jak bezpieczne są hasła generowane przez to narzędzie?",
+                "a1": "Nasz generator haseł wykorzystuje kryptograficznie bezpieczne generowanie liczb losowych. Hasła są tworzone w całości w Twojej przeglądarce przy użyciu metody crypto.getRandomValues(), co gwarantuje prawdziwą losowość i maksymalne bezpieczeństwo. Nigdy nie przechowujemy, nie przesyłamy ani nie zapisujemy wygenerowanych haseł.",
+                "q2": "Jaka jest idealna długość hasła?",
+                "a2": "Dla zapewnienia wysokiego poziomu bezpieczeństwa zalecamy minimum 16 znaków. Dłuższe hasła (24-32 znaki) zapewniają jeszcze lepszą ochronę przed atakami typu brute-force. Nasz generator obsługuje do 64 znaków.",
+                "q3": "Czy powinienem używać znaków specjalnych w haśle?",
+                "a3": "Tak, zdecydowanie! Dodanie znaków specjalnych (!@#$%^&*) znacząco zwiększa złożoność i entropię hasła. Hasło zawierające wielkie i małe litery, cyfry oraz symbole jest wykładniczo trudniejsze do złamania niż takie, które składa się tylko z liter i cyfr.",
+                "q4": "Jak zapamiętać skomplikowane hasła?",
+                "a4": "Nie próbuj ich zapamiętywać! Użyj sprawdzonego menedżera haseł, takiego jak LastPass, 1Password, Bitwarden lub Dashlane. Menedżery haseł szyfrują Twoje dane i wymagają zapamiętania tylko jednego głównego hasła.",
+                "q5": "Czy korzystanie z generatora haseł online jest bezpieczne?",
+                "a5": "Tak, nasz generator jest całkowicie bezpieczny, ponieważ cały proces odbywa się lokalnie w Twojej przeglądarce. Hasła nigdy nie są wysyłane na nasze serwery.",
+                "q6": "Jak często powinienem zmieniać hasła?",
+                "a6": "W przypadku kluczowych kont (e-mail, bankowość, praca), zmieniaj hasła co 3-6 miesięcy. Jeśli podejrzewasz wyciek danych lub otrzymasz alert bezpieczeństwa, zmień hasło natychmiast."
+            },
+            "seo": {
+                "title": "Zrozumienie bezpieczeństwa haseł i szyfrowania",
+                "p1": "Bezpieczeństwo haseł to fundament ochrony w internecie. Silne hasło stanowi pierwszą linię obrony przed nieautoryzowanym dostępem do Twoich danych osobowych, finansowych i cyfrowej tożsamości.",
+                "p2": "Siłę hasła mierzy się jego entropią – stopniem losowości i nieprzewidywalności. 16-znakowe hasło zawierające wszystkie typy znaków ma znacznie wyższą entropię niż proste hasło 8-znakowe.",
+                "p3": "Nasz darmowy generator haseł jest przeznaczony dla każdego – od osób prywatnych chroniących swoje konta, po firmy dbające o bezpieczeństwo pracowników. Generuj nieograniczoną liczbę haseł całkowicie za darmo i bez rejestracji."
+            }
+        },
+        "js": {
+            "generating": "Generowanie bezpiecznego hasła...",
+            "strength": {
+                "very_strong": "✓ Bardzo silne - doskonałe bezpieczeństwo!",
+                "strong": "✓ Silne - dobre bezpieczeństwo.",
+                "medium": "⚠ Średnie - rozważ wzmocnienie hasła.",
+                "weak": "⚠ Słabe - proszę wygenerować silniejsze hasło."
+            },
+            "error_generating": "Błąd podczas generowania hasła. Spróbuj ponownie",
+            "copied": "Skopiowano!",
+            "error_copy": "Nie udało się skopiować hasła. Proszę skopiuj ręcznie."
+        }
+    },
+    "qr-code-generator": {
+        "meta": {
+            "title": "Generator kodów QR - darmowy internetowy kreator kodów QR",
+            "description": "Twórz niestandardowe kody QR dla adresów URL, tekstu, WiFi i nie tylko. Pobieraj wysokiej jakości obrazy PNG.",
+            "h1": "Generator kodów QR",
+            "subtitle": "Błyskawicznie twórz kody QR do dowolnego celu"
+        },
+        "editor": {
+            "title": "Generuj kod QR",
+            "label_text": "Wprowadź tekst lub adres URL",
+            "ph_text": "Wpisz tekst, adres URL lub dowolne dane, które chcesz zakodować...",
+            "label_size": "Rozmiar kodu QR",
+            "opt_small": "Mały (128x128)",
+            "opt_medium": "Średni (256x256)",
+            "opt_large": "Duży (512x512)",
+            "opt_xl": "Bardzo duży (1024x1024)",
+            "btn_generate": "Generuj kod QR",
+            "btn_download": "Pobierz kod QR",
+            "preview_title": "Podgląd",
+            "preview_placeholder": "Twój kod QR pojawi się tutaj"
+        },
+        "content": {
+            "hero_title": "Darmowy generator kodów QR",
+            "hero_subtitle": "Twórz niestandardowe kody QR błyskawicznie do dowolnego celu",
+            "p1": "Nasz darmowy generator kodów QR tworzy obrazy wysokiej jakości w kilka sekund. Idealny dla firm, marketerów, organizatorów wydarzeń i każdego, kto potrzebuje szybko udostępniać informacje. Generuj kody QR dla adresów URL, tekstów, danych kontaktowych, haseł WiFi i nie tylko. Pobieraj w różnych rozmiarach i używaj wszędzie – całkowicie za darmo i bez rejestracji.",
+            "faq": {
+                "q1": "Czy kody QR są trwałe?",
+                "a1": "Tak! Kody QR są statyczne i trwałe. Po wygenerowaniu będą zawsze działać, dopóki zakodowane dane (np. adres URL) pozostają aktywne.",
+                "q2": "Czy kody QR wygasają?",
+                "a2": "Nie, same kody QR nigdy nie wygasają. Jeśli jednak kod QR prowadzi do adresu URL, który zostanie usunięty lub zmieniony, kod przestanie spełniać swoją funkcję.",
+                "q3": "Jaki rozmiar wybrać do druku?",
+                "a3": "Na wizytówkach używaj co najmniej 256px. Na plakatach i banerach wybierz 512px lub 1024px. Im większy format druku, tym większy powinien być kod QR dla ułatwienia skanowania.",
+                "q4": "Czy mogę śledzić skanowania kodów QR?",
+                "a4": "Nasze narzędzie generuje statyczne kody QR bez opcji śledzenia. Aby monitorować skanowania, użyj skracacza linków z analityką przed wygenerowaniem kodu QR.",
+                "q5": "Czy istnieje limit ilości zakodowanych danych?",
+                "a5": "Kody QR mogą pomieścić do 4296 znaków alfanumerycznych, ale dla najlepszych wyników skanowania warto zachować zwięzłość. Linki poniżej 100 znaków działają najlepiej.",
+                "q6": "Czy wygenerowany kod QR będzie działał na wszystkich telefonach?",
+                "a6": "Tak, nasze kody QR są zgodne ze standardami ISO i działają ze wszystkimi nowoczesnymi smartfonami oraz aplikacjami do skanowania."
+            },
+            "features_title": "Funkcje",
+            "features": {
+                "instant": {
+                    "title": "Natychmiastowe generowanie",
+                    "desc": "Twórz kody QR w kilka sekund z podglądem w czasie rzeczywistym"
+                },
+                "sizes": {
+                    "title": "Wiele rozmiarów",
+                    "desc": "Wybieraj od 128px do 1024px dla dowolnego zastosowania"
+                },
+                "download": {
+                    "title": "Łatwe pobieranie",
+                    "desc": "Pobieraj jako obraz PNG jednym kliknięciem"
+                },
+                "privacy": {
+                    "title": "Prywatność przede wszystkim",
+                    "desc": "Całe przetwarzanie odbywa się w Twojej przeglądarce"
+                },
+                "free": {
+                    "title": "100% Za darmo",
+                    "desc": "Bez limitów, bez znaków wodnych, bez rejestracji"
+                },
+                "compatibility": {
+                    "title": "Uniwersalna zgodność",
+                    "desc": "Działa ze wszystkimi skanerami kodów QR"
+                }
+            },
+            "uses_title": "🎯 Typowe zastosowania",
+            "uses": {
+                "urls": {
+                    "title": "🔗 Adresy URL witryn",
+                    "desc": "Kieruj użytkowników bezpośrednio na swoją stronę, landing page lub do sklepu"
+                },
+                "contact": {
+                    "title": "👤 Dane kontaktowe",
+                    "desc": "Udostępniaj wizytówki vCard z e-mailem, telefonem i adresem"
+                },
+                "social": {
+                    "title": "👍 Media społecznościowe",
+                    "desc": "Linkuj do swoich profili społecznościowych, kanału YouTube czy Instagrama"
+                },
+                "tickets": {
+                    "title": "🎟️ Bilety na wydarzenia",
+                    "desc": "Generuj skanowalne bilety na wydarzenia i konferencje"
+                },
+                "product": {
+                    "title": "📦 Informacje o produkcie",
+                    "desc": "Dodawaj kody QR do produktów dla instrukcji, specyfikacji czy autentyczności"
+                },
+                "payment": {
+                    "title": "💳 Linki do płatności",
+                    "desc": "Umożliwiaj szybkie płatności przez PayPal, Venmo czy portfele krypto"
+                }
+            },
+            "how_title": "📚 Jak korzystać",
+            "how_steps": {
+                "1": {
+                    "title": "Wprowadź dane:",
+                    "desc": "Wpisz lub wklej tekst, adres URL lub informacje, które chcesz zakodować"
+                },
+                "2": {
+                    "title": "Wybierz rozmiar:",
+                    "desc": "Wybierz wymiary kodu QR zależnie od miejsca, w którym go użyjesz"
+                },
+                "3": {
+                    "title": "Generuj:",
+                    "desc": "Kliknij „Generuj kod QR”, aby natychmiast utworzyć obraz"
+                },
+                "4": {
+                    "title": "Pobierz:",
+                    "desc": "Kliknij „Pobierz kod QR”, aby zapisać obraz PNG"
+                },
+                "5": {
+                    "title": "Używaj wszędzie:",
+                    "desc": "Drukuj, udostępniaj cyfrowo lub dodawaj do materiałów marketingowych"
+                }
+            },
+            "best_practices_title": "💡 Najlepsze praktyki",
+            "best_practices": {
+                "test": {
+                    "title": "Testuj przed drukiem:",
+                    "desc": "Zawsze zeskanuj swój kod QR, aby upewnić się, że działa poprawnie"
+                },
+                "size": {
+                    "title": "Używaj odpowiedniego rozmiaru:",
+                    "desc": "Większe kody QR są łatwiejsze do zeskanowania z większej odległości"
+                },
+                "contrast": {
+                    "title": "Zadbaj o kontrast:",
+                    "desc": "Drukuj na białym lub jasnym tle dla najlepszego skanowania"
+                },
+                "context": {
+                    "title": "Dodaj kontekst:",
+                    "desc": "Dołącz wezwanie do działania, np. „Zeskanuj, aby odwiedzić stronę”"
+                },
+                "short": {
+                    "title": "Krótkie adresy URL:",
+                    "desc": "Krótsze linki tworzą prostsze i łatwiejsze do zeskanowania kody QR"
+                }
+            },
+            "faq_title": "Najczęściej zadawane pytania"
+        },
+        "js": {
+            "error_empty": "Proszę wprowadzić tekst lub adres URL, aby wygenerować kod QR",
+            "error_generating": "Błąd podczas generowania kodu QR.",
+            "error_no_code": "Proszę najpierw wygenerować kod QR",
+            "error_image_not_found": "Nie znaleziono obrazu kodu QR"
+        }
+    },
+    "random-number-generator": {
+        "meta": {
+            "title": "Generator liczb losowych — bezpłatne narzędzie matematyczne online",
+            "description": "Generuj prawdziwie losowe liczby całkowite w określonym zakresie. Przydatne do gier, loterii i konkursów.",
+            "h1": "Generator liczb losowych",
+            "subtitle": "Generuj losowe liczby całkowite w wybranym zakresie"
+        },
+        "editor": {
+            "label_min": "Wartość min",
+            "label_max": "Wartość max",
+            "label_count": "Ilość liczb",
+            "btn_generate": "Generuj liczby",
+            "label_result": "Wynik"
+        },
+        "js": {
+            "error_invalid": "Proszę wprowadzić poprawne liczby",
+            "error_min_max": "Wartość minimalna nie może być większa od maksymalnej"
+        }
+    },
+    "username-checker": {
+        "meta": {
+            "title": "Narzędzie do sprawdzania dostępności nazwy użytkownika — bezpłatne wyszukiwanie w Internecie",
+            "description": "Błyskawicznie sprawdzaj dostępność nazwy użytkownika w głównych serwisach społecznościowych.",
+            "h1": "Sprawdzanie dostępności nazwy użytkownika",
+            "subtitle": "Sprawdzaj dostępność nicku na wszystkich najpopularniejszych platformach"
+        },
+        "editor": {
+            "title_enter": "Wprowadź nazwę użytkownika",
+            "label_username": "Nazwa użytkownika",
+            "ph_username": "jankowalski",
+            "help_username": "Wpisz nazwę bez symbolu @",
+            "btn_check": "Sprawdź dostępność",
+            "title_results": "Wyniki dostępności",
+            "btn_checking": "Sprawdzanie...",
+            "status_available": "Dostępna",
+            "status_taken": "Zajęta",
+            "link_view": "Zobacz profil →"
+        },
+        "content": {
+            "p1": "Sprawdzaj dostępność nazwy użytkownika na wszystkich najważniejszych platformach społecznościowych błyskawicznie dzięki naszemu darmowemu narzędziu. Znajdź idealny nick dla swojej marki w serwisach takich jak Twitter (X), Instagram, GitHub, TikTok, Facebook, LinkedIn, YouTube, Reddit i wielu innych. Zadbaj o spójność swojej tożsamości cyfrowej, rezerwując tę samą nazwę użytkownika na wszystkich platformach. Idealne dla budowania marki osobistej, kont firmowych i marketingu influencerskiego.",
+            "platforms_title": "Obsługiwane platformy",
+            "platforms": {
+                "social": {
+                    "title": "Media społecznościowe",
+                    "list": [
+                        "Twitter (X): Sprawdź dostępność @nazwy",
+                        "Instagram: Znajdź swój idealny nick",
+                        "TikTok: Zarezerwuj swoją @nazwę",
+                        "Facebook: Sprawdź adres URL profilu"
+                    ]
+                },
+                "professional": {
+                    "title": "Platformy profesjonalne",
+                    "list": [
+                        "LinkedIn: Profil zawodowy",
+                        "GitHub: Nazwa użytkownika dla programisty",
+                        "Medium: Profil autora",
+                        "YouTube: Nazwa kanału"
+                    ]
+                }
+            },
+            "best_practices_title": "Zasady wyboru nazwy użytkownika",
+            "best_practices": {
+                "short": {
+                    "title": "Zachowaj zwięzłość",
+                    "desc": "Celuj w 6-15 znaków, aby nazwa była łatwa do zapamiętania i wpisania"
+                },
+                "spell": {
+                    "title": "Łatwa pisownia",
+                    "desc": "Unikaj skomplikowanej pisowni, nadmiaru cyfr i znaków specjalnych"
+                },
+                "brand": {
+                    "title": "Spójność marki",
+                    "desc": "Używaj tej samej nazwy na wszystkich platformach dla lepszej rozpoznawalności"
+                },
+                "trends": {
+                    "title": "Unikaj trendów",
+                    "desc": "Nie używaj modnych słów, które mogą stać się przestarzałe za kilka miesięcy"
+                },
+                "seo": {
+                    "title": "Przyjazne dla SEO",
+                    "desc": "Dołącz istotne słowa kluczowe, aby ułatwić odnalezienie Twojego profilu"
+                },
+                "fast": {
+                    "title": "Działaj szybko",
+                    "desc": "Zarezerwuj nazwę natychmiast, gdy tylko znajdziesz dostępną opcję"
+                }
+            },
+            "tips_title": "Wskazówki przy wyborze nicku",
+            "tips_list": {
+                "items": [
+                    "Sprawdź dostępność na wszystkich platformach przed podjęciem decyzji",
+                    "Bierz pod uwagę przyszły rozwój swojej działalności",
+                    "Upewnij się, że nazwa brzmi dobrze przy wypowiadaniu na głos",
+                    "W miarę możliwości unikaj podkreślników i rzędów cyfr",
+                    "Sprawdź, czy domena internetowa o tej samej nazwie jest wolna"
+                ]
+            },
+            "faq_title": "Najczęściej zadawane pytania",
+            "faq": {
+                "q1": "Ile platform mogę sprawdzić jednocześnie?",
+                "a1": "Nasz skaner obsługuje ponad 10 najważniejszych platform, w tym Twitter (X), Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium i Pinterest. Wszystkie sprawdzane są za jednym kliknięciem.",
+                "q2": "Co jeśli wybrana nazwa jest już zajęta?",
+                "a2": "Spróbuj dodać swoją lokalizację, branżę lub inne pasujące słowo. Możesz również użyć kropek lub małych skrótów. Nasze narzędzie pozwala szybko przetestować wiele wariantów.",
+                "q3": "Czy powinienem używać tej samej nazwy wszędzie?",
+                "a3": "Tak! Posiadanie tej samej nazwy użytkownika wzmacnia Twoją markę, ułatwia obserwatorom znalezienie Cię w innych serwisach i pomaga w działaniach marketingowych.",
+                "q4": "Czy mogę zarezerwować nazwę bez tworzenia konta?",
+                "a4": "Nie, musisz stworzyć konto na każdej platformie, aby zająć daną nazwę. Nasze narzędzie jedynie informuje o dostępności – proces rejestracji leży po Twojej stronie.",
+                "q5": "Jak często zmienia się dostępność nazw?",
+                "a5": "Dostępność zmienia się nieustannie. Popularne lub krótkie nazwy mogą zostać zajęte w ciągu kilku minut, więc warto rezerwować je od razu po znalezieniu wolnej opcji."
+            }
+        }
+    }
+}

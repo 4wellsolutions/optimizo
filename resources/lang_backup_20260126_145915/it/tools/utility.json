@@ -1,0 +1,332 @@
+{
+    "password-generator": {
+        "meta": {
+            "title": "Generatore di password sicure: strumento di sicurezza online gratuito",
+            "description": "Genera password forti, sicure e casuali istantaneamente con impostazioni personalizzabili per lunghezza e caratteri.",
+            "h1": "Generatore di password sicure",
+            "subtitle": "Genera password forti e casuali istantaneamente"
+        },
+        "editor": {
+            "title": "Genera la tua password sicura ora",
+            "length_label": "Lunghezza password:",
+            "chars": "caratteri",
+            "strength": {
+                "weak": "8 (Debole)",
+                "good": "16 (Buona)",
+                "strong": "32 (Forte)",
+                "very_strong": "64 (Molto Forte)"
+            },
+            "include_label": "Includi tipi di caratteri:",
+            "option_uppercase": "Lettere Maiuscole (A-Z)",
+            "option_uppercase_desc": "Aggiunge lettere maiuscole per complessità",
+            "option_lowercase": "Lettere Minuscole (a-z)",
+            "option_lowercase_desc": "Essenziale per la forza della password",
+            "option_numbers": "Numeri (0-9)",
+            "option_numbers_desc": "Aumenta l'entropia della password",
+            "option_symbols": "Simboli Speciali (!@#$%)",
+            "option_symbols_desc": "Massima protezione di sicurezza",
+            "btn_generate": "Genera Password Forte",
+            "result_title": "La tua password generata",
+            "strength_score": "Punteggio di sicurezza:",
+            "btn_copy_text": "Copia Password",
+            "btn_copy_final": "Copia negli appunti",
+            "btn_regenerate": "Rigenera"
+        },
+        "content": {
+            "faq_hero_title": "Perché utilizzare il nostro generatore di password sicure?",
+            "faq": {
+                "q1": "Quanto sono sicure le password generate da questo strumento?",
+                "a1": "Il nostro generatore di password utilizza la generazione di numeri casuali crittograficamente sicuri per creare le password. Le password sono generate interamente nel tuo browser utilizzando il metodo crypto.getRandomValues() di JavaScript, garantendo una vera casualità e la massima sicurezza. Non memorizziamo, trasmettiamo né registriamo mai le password generate.",
+                "q2": "Qual è la lunghezza ideale della password?",
+                "a2": "Raccomandiamo un minimo di 16 caratteri per una forte sicurezza. Password più lunghe (24-32 caratteri) offrono una protezione ancora migliore contro gli attacchi di brute-force. Il nostro generatore supporta fino a 64 caratteri per la massima sicurezza.",
+                "q3": "Dovrei includere caratteri speciali nella mia password?",
+                "a3": "Sì, assolutamente! L'inclusione di caratteri speciali (!@#$%^&*) aumenta significativamente la complessità e l'entropia della password. Una password con maiuscole, minuscole, numeri e simboli è esponenzialmente più difficile da decifrare rispetto a una con solo lettere e numeri.",
+                "q4": "Come faccio a ricordare password complesse?",
+                "a4": "Non cercare di memorizzarle! Usa un gestore di password affidabile come LastPass, 1Password, Bitwarden o Dashlane per memorizzare in modo sicuro tutte le tue password. I gestori di password crittografano le tue password e ti richiedono di ricordare solo una master password.",
+                "q5": "È sicuro usare un generatore di password online?",
+                "a5": "Sì, il nostro generatore di password è completamente sicuro perché tutta la generazione della password avviene localmente nel tuo browser. Le password non vengono mai inviate ai nostri server né memorizzate altrove.",
+                "q6": "Quanto spesso dovrei cambiare le mie password?",
+                "a6": "Per account critici (email, banca, lavoro), cambia le password ogni 3-6 mesi. Se sospetti una violazione o ricevi un avviso di sicurezza, cambia immediatamente la tua password."
+            },
+            "seo": {
+                "title": "Comprendere la sicurezza delle password e la crittografia",
+                "p1": "La sicurezza della password è alla base della sicurezza online. Una password forte funge da prima linea di difesa contro l'accesso non autorizzato alle tue informazioni personali, ai dati finanziari e all'identità digitale.",
+                "p2": "La forza di una password è misurata dalla sua entropia: la quantità di casualità e imprevedibilità. Una password di 16 caratteri con tutti i tipi di caratteri ha un'entropia significativamente più alta rispetto a una semplice password di 8 caratteri.",
+                "p3": "Il nostro strumento gratuito per la generazione di password è progettato per tutti: dai singoli che proteggono i propri account personali alle aziende che mettono in sicurezza l'accesso dei dipendenti. Genera password illimitate, completamente gratuite, senza registrazione richiesta."
+            }
+        },
+        "js": {
+            "generating": "Generazione della password sicura...",
+            "strength": {
+                "very_strong": "✓ Molto Forte - Eccellente sicurezza della password!",
+                "strong": "✓ Forte - Buona sicurezza della password.",
+                "medium": "⚠ Media - Considera di renderla più forte.",
+                "weak": "⚠ Debole - Per favore genera una password più forte."
+            },
+            "error_generating": "Errore durante la generazione della password. Per favore riprova",
+            "copied": "Copiato!",
+            "error_copy": "Impossibile copiare la password. Per favore copia manualmente."
+        }
+    },
+    "qr-code-generator": {
+        "meta": {
+            "title": "Generatore di codici QR: creatore di QR personalizzati online gratuito",
+            "description": "Crea codici QR personalizzati istantaneamente per URL, testo, WiFi e altro. Scarica immagini PNG di alta qualità.",
+            "h1": "Generatore di codici QR",
+            "subtitle": "Crea istantaneamente codici QR personalizzati per qualsiasi scopo"
+        },
+        "editor": {
+            "title": "Genera Codice QR",
+            "label_text": "Inserisci Testo o URL",
+            "ph_text": "Inserisci testo, URL o qualsiasi dato che desideri codificare...",
+            "label_size": "Dimensione del Codice QR",
+            "opt_small": "Piccola (128x128)",
+            "opt_medium": "Media (256x256)",
+            "opt_large": "Grande (512x512)",
+            "opt_xl": "Extra Grande (1024x1024)",
+            "btn_generate": "Genera Codice QR",
+            "btn_download": "Scarica Codice QR",
+            "preview_title": "Anteprima",
+            "preview_placeholder": "Il tuo codice QR apparirà qui"
+        },
+        "content": {
+            "hero_title": "Generatore di Codici QR Gratis",
+            "hero_subtitle": "Crea istantaneamente codici QR personalizzati per qualsiasi scopo",
+            "p1": "Il nostro generatore di codici QR gratuito crea istantaneamente codici QR di alta qualità. Perfetto per aziende, esperti di marketing, organizzatori di eventi e chiunque abbia bisogno di condividere informazioni rapidamente. Genera codici QR per URL, testo, informazioni di contatto, credenziali WiFi e altro ancora. Scarica in più dimensioni e usa ovunque: completamente gratuito, nessuna registrazione richiesta.",
+            "faq": {
+                "q1": "I codici QR sono permanenti?",
+                "a1": "Sì! I codici QR sono statici e permanenti. Una volta generati, funzioneranno sempre finché i dati codificati (come un URL) rimangono validi.",
+                "q2": "I codici QR sono permanenti?",
+                "a2": "Sì! I codici QR sono statici e permanenti. Una volta generati, funzioneranno sempre finché i dati codificati (come un URL) rimangono validi.",
+                "q3": "Quale dimensione dovrei usare per la stampa?",
+                "a3": "Per i biglietti da visita, usa almeno 256px. Per poster e banner, usa 512px o 1024px. Maggiore è la dimensione di stampa, più grande dovrebbe essere il codice QR per una facile scansione.",
+                "q4": "Posso tracciare le scansioni dei codici QR?",
+                "a4": "Il nostro strumento genera codici QR statici senza tracciamento. Per tracciare le scansioni, utilizza un abbreviatore di URL con analisi prima di generare il codice QR o utilizza un servizio di codici QR dinamici.",
+                "q5": "C'è un limite alla quantità di dati che posso codificare?",
+                "a5": "I codici QR possono memorizzare fino a 4.296 caratteri alfanumerici, ma per i migliori risultati di scansione, mantieni i dati concisi. Gli URL con meno di 100 caratteri funzionano meglio.",
+                "q6": "I codici QR scadono?",
+                "a6": "No, i codici QR stessi non scadono mai. Tuttavia, se il codice QR si collega a un URL che viene eliminato o modificato, il codice QR non funzionerà più."
+            },
+            "features_title": "Caratteristiche",
+            "features": {
+                "instant": {
+                    "title": "Generazione Istantanea",
+                    "desc": "Crea codici QR in pochi secondi con anteprima in tempo reale"
+                },
+                "sizes": {
+                    "title": "Molteplici Dimensioni",
+                    "desc": "Scegli da 128px a 1024px per ogni caso d'uso"
+                },
+                "download": {
+                    "title": "Download Facile",
+                    "desc": "Scarica come immagine PNG con un clic"
+                },
+                "privacy": {
+                    "title": "Privacy Prima di Tutto",
+                    "desc": "Tutta l'elaborazione avviene nel tuo browser"
+                },
+                "free": {
+                    "title": "100% Gratis",
+                    "desc": "Nessun limite, nessuna filigrana, nessuna registrazione"
+                },
+                "compatibility": {
+                    "title": "Compatibilità Universale",
+                    "desc": "Funziona con tutti gli scanner di codici QR"
+                }
+            },
+            "uses_title": "🎯 Casi d'Uso Comuni",
+            "uses": {
+                "urls": {
+                    "title": "🔗 URL del Sito Web",
+                    "desc": "Dirigi istantaneamente gli utenti al tuo sito web, alla tua landing page o al tuo negozio online"
+                },
+                "contact": {
+                    "title": "👤 Informazioni di Contatto",
+                    "desc": "Condividi vCard con email, telefono e dettagli dell'indirizzo"
+                },
+                "social": {
+                    "title": "👍 Social Media",
+                    "desc": "Link ai tuoi profili social, al canale YouTube o a Instagram"
+                },
+                "tickets": {
+                    "title": "🎟️ Biglietti per Eventi",
+                    "desc": "Genera biglietti scansionabili per eventi e conferenze"
+                },
+                "product": {
+                    "title": "📦 Informazioni sul Prodotto",
+                    "desc": "Aggiungi codici QR ai prodotti per manuali, specifiche o autenticità"
+                },
+                "payment": {
+                    "title": "💳 Link di Pagamento",
+                    "desc": "Abilita pagamenti rapidi tramite PayPal, Venmo o portafogli crypto"
+                }
+            },
+            "how_title": "📚 Come Usare",
+            "how_steps": {
+                "1": {
+                    "title": "Inserisci i tuoi dati:",
+                    "desc": "Digita o incolla il testo, l'URL o l'informazione che desideri codificare"
+                },
+                "2": {
+                    "title": "Scegli la dimensione:",
+                    "desc": "Seleziona la dimensione del codice QR in base a dove lo utilizzerai"
+                },
+                "3": {
+                    "title": "Genera:",
+                    "desc": "Fai clic su \"Genera Codice QR\" per creare istantaneamente il tuo codice QR"
+                },
+                "4": {
+                    "title": "Scarica:",
+                    "desc": "Fai clic su \"Scarica Codice QR\" per salvare l'immagine PNG"
+                },
+                "5": {
+                    "title": "Usa ovunque:",
+                    "desc": "Stampa, condividi digitalmente o aggiungi ai materiali di marketing"
+                }
+            },
+            "best_practices_title": "💡 Migliori Pratiche",
+            "best_practices": {
+                "test": {
+                    "title": "Testare prima della stampa:",
+                    "desc": "Scansiona sempre il tuo codice QR per verificare che funzioni correttamente"
+                },
+                "size": {
+                    "title": "Usa la dimensione appropriata:",
+                    "desc": "I codici QR più grandi sono più facili da scansionare a distanza"
+                },
+                "contrast": {
+                    "title": "Garantisci il contrasto:",
+                    "desc": "Stampa su sfondi bianchi o chiari per la migliore scansione"
+                },
+                "context": {
+                    "title": "Aggiungi contesto:",
+                    "desc": "Includi una chiamata all'azione come \"Scansiona per visitare il sito web\""
+                },
+                "short": {
+                    "title": "Mantieni gli URL brevi:",
+                    "desc": "Gli URL più brevi creano codici QR più semplici e facili da scansionare"
+                }
+            },
+            "faq_title": "Domande Frequenti"
+        },
+        "js": {
+            "error_empty": "Inserisci il testo o l'URL per generare il codice QR",
+            "error_generating": "Errore durante la generazione del codice QR.",
+            "error_no_code": "Per favore genera prima un codice QR",
+            "error_image_not_found": "Immagine del codice QR non trovata"
+        }
+    },
+    "random-number-generator": {
+        "meta": {
+            "title": "Generatore di numeri casuali: strumento matematico online gratuito",
+            "description": "Genera numeri interi veramente casuali all'interno dell'intervallo specificato. Utile per giochi, lotterie e omaggi.",
+            "h1": "Generatore di numeri casuali",
+            "subtitle": "Genera numeri interi veramente casuali all'interno dell'intervallo specificato"
+        },
+        "editor": {
+            "label_min": "Valore Minimo",
+            "label_max": "Valore Massimo",
+            "label_count": "Quantità",
+            "btn_generate": "Genera Numeri",
+            "label_result": "Risultato"
+        },
+        "js": {
+            "error_invalid": "Per favore inserisci numeri validi",
+            "error_min_max": "Il Minimo non può essere maggiore del Massimo"
+        }
+    },
+    "username-checker": {
+        "meta": {
+            "title": "Verifica disponibilità nome utente: ricerca online gratuita",
+            "description": "Controlla istantaneamente la disponibilità del nome utente sulle principali piattaforme social.",
+            "h1": "Controllo disponibilità nome utente",
+            "subtitle": "Controlla la disponibilità del nome utente su tutte le principali piattaforme social"
+        },
+        "editor": {
+            "title_enter": "Inserisci Nome Utente",
+            "label_username": "Nome Utente",
+            "ph_username": "mario-rossi",
+            "help_username": "Inserisci il nome utente senza il simbolo @",
+            "btn_check": "Verifica Disponibilità",
+            "title_results": "Risultati Disponibilità",
+            "btn_checking": "Verifica in corso...",
+            "status_available": "Disponibile",
+            "status_taken": "Occupato",
+            "link_view": "Visualizza Profilo →"
+        },
+        "content": {
+            "p1": "Controlla istantaneamente la disponibilità del nome utente su tutte le principali piattaforme di social media con il nostro verificatore gratuito di nomi utente. Trova il handle perfetto per il tuo brand su Twitter, Instagram, GitHub, TikTok, Facebook, LinkedIn, YouTube, Reddit e altro ancora. Assicura l'identità del tuo brand reclamando lo stesso nome utente su tutte le piattaforme prima che qualcun altro lo faccia. Perfetto per il branding personale, gli account aziendali e l'influencer marketing.",
+            "platforms_title": "Piattaforme Supportate",
+            "platforms": {
+                "social": {
+                    "title": "Social Media",
+                    "list": [
+                        "Twitter (X): Verifica la disponibilità di @username",
+                        "Instagram: Trova il tuo handle perfetto",
+                        "TikTok: Metti in sicurezza il tuo @username",
+                        "Facebook: Controlla l'URL del profilo"
+                    ]
+                },
+                "professional": {
+                    "title": "Professionale",
+                    "list": [
+                        "LinkedIn: Profilo professionale",
+                        "GitHub: Nome utente sviluppatore",
+                        "Medium: Profilo scrittore",
+                        "YouTube: Handle del canale"
+                    ]
+                }
+            },
+            "best_practices_title": "Migliori Pratiche per il Nome Utente",
+            "best_practices": {
+                "short": {
+                    "title": "Mantienilo Breve",
+                    "desc": "Punta a 6-15 caratteri per facilità di memorizzazione e digitazione"
+                },
+                "spell": {
+                    "title": "Facile da Scrivere",
+                    "desc": "Evita ortografie complesse, numeri e caratteri speciali"
+                },
+                "brand": {
+                    "title": "Coerenza del Brand",
+                    "desc": "Usa lo stesso nome utente su tutte le piattaforme per il riconoscimento"
+                },
+                "trends": {
+                    "title": "Evita le Tendenze",
+                    "desc": "Non usare parole di tendenza che potrebbero diventare obsolete"
+                },
+                "seo": {
+                    "title": "Ottimizzato SEO",
+                    "desc": "Includi parole chiave pertinenti per una migliore rilevabilità"
+                },
+                "fast": {
+                    "title": "Agisci In Fretta",
+                    "desc": "Reclama velocemente il tuo nome utente prima che venga preso"
+                }
+            },
+            "tips_title": "Consigli Professionali per Scegliere un Nome Utente",
+            "tips_list": {
+                "items": [
+                    "Verifica la disponibilità su tutte le piattaforme prima di finalizzare",
+                    "Considera la futura espansione del business quando scegli",
+                    "Rendilo pronunciabile per il marketing passaparola",
+                    "Evita di usare trattini bassi o numeri se possibile",
+                    "Assicura un nome di dominio corrispondente al tuo nome utente"
+                ]
+            },
+            "faq_title": "Domande Frequenti",
+            "faq": {
+                "q1": "Quante piattaforme posso controllare contemporaneamente?",
+                "a1": "Il nostro verificatore di nomi utente supporta oltre 10 piattaforme principali tra cui Twitter, Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium e Pinterest. Controlla tutte le piattaforme simultaneamente con una sola ricerca.",
+                "q2": "Cosa succede se il nome utente desiderato è occupato?",
+                "a2": "Prova variazioni come l'aggiunta della tua posizione, del settore o di una parola pertinente. Puoi anche usare trattini bassi, punti o abbreviazioni. Il nostro strumento ti aiuta a testare rapidamente più variazioni.",
+                "q3": "Dovrei usare lo stesso nome utente ovunque?",
+                "a3": "Sì! L'utilizzo dello stesso nome utente su tutte le piattaforme rafforza l'identità del tuo brand, ti rende più facile da trovare e aiuta con il riconoscimento e il marketing cross-piattaforma.",
+                "q4": "Posso riservare un nome utente senza creare un account?",
+                "a4": "No, devi creare un account su ogni piattaforma per reclamare un nome utente. Il nostro strumento controlla solo la disponibilità: dovrai registrarti su ogni piattaforma per assicurarti il nome utente.",
+                "q5": "Quanto spesso dovrei controllare la disponibilità del nome utente?",
+                "a5": "La disponibilità del nome utente cambia costantemente. Se trovi un nome utente disponibile che ti piace, reclamalo immediatamente su tutte le piattaforme. I nomi utente popolari possono essere presi nel giro di ore o addirittura minuti."
+            }
+        }
+    }
+}

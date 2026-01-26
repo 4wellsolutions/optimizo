@@ -1,0 +1,367 @@
+{
+    "base64-to-image-converter": {
+        "meta": {
+            "title": "Pura Base64 kuvaksi - ilmainen online-dekooderi",
+            "description": "Muunna Base64-koodatut merkkijonot takaisin kuviksi (PNG, JPG, GIF). Ilmainen online-dekooderi.",
+            "h1": "Pura Base64 kuvaksi",
+            "subtitle": "Muunna Base64-koodatut merkkijonot takaisin kuviksi (PNG, JPG, GIF) välittömästi"
+        },
+        "input": {
+            "title": "Liitä Base64-merkkijono",
+            "desc": "Liitä koodisi alapuolelle visualisoidaksesi kuvan",
+            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
+            "btn_decode": "Pura kuva"
+        },
+        "result": {
+            "image_alt": "Purettu kuva",
+            "success": "Kuva purettu onnistuneesti",
+            "btn_download": "Lataa kuva",
+            "btn_clear": "Tyhjennä"
+        },
+        "content": {
+            "title": "Pura Base64 kuvaksi",
+            "p1": "Löytyikö pitkä rimsu satunnaisia merkkejä, joka alkaa <code>data:image/...</code>? Se on todennäköisesti Base64-koodattu kuva.",
+            "p2": "Meidän <strong>Base64-kuva-dekooderimme</strong> muuntaa tekstin takaisin näkyväksi kuvaksi (PNG, JPG, GIF jne.), jonka voit ladata koneellesi.",
+            "features": {
+                "preview": {
+                    "title": "Välitön esikatselu",
+                    "desc": "Näet kuvan heti. Jäsennämme binääritiedon ja näytämme sen ruudullasi."
+                },
+                "auto": {
+                    "title": "Automaattinen tunnistus",
+                    "desc": "Tunnistamme tiedostomuodon (PNG, JPEG, GIF) automaattisesti koodin alusta."
+                },
+                "download": {
+                    "title": "Lataa tiedosto",
+                    "desc": "Tallenna purettu tulos oikeana kuvatiedostona yhdellä klikkauksella."
+                }
+            },
+            "how_to": {
+                "title": "Miten purkaminen tapahtuu?",
+                "list": [
+                    "Liitä Base64-koodi tekstikenttään.",
+                    "Yritämme lukea koodin välittömästi.",
+                    "Jos koodi on kelvollinen, kuva ilmestyy vasemmalle.",
+                    "Klikkaa \"Lataa kuva\" tallentaaksesi sen."
+                ]
+            },
+            "use_cases": {
+                "title": "Yleisimmät käyttötapaukset",
+                "list": [
+                    "Debuggaus: Tarkista, mitä kuvadataa API-vastauksissa liikkuu.",
+                    "Palautus: Poimi kuvia CSS- tai HTML-tiedostoista.",
+                    "Varmistus: Varmista, ettei Base64-merkkijono ole korruptoitunut."
+                ]
+            }
+        },
+        "js": {
+            "input_required": "Ole hyvä ja liitä Base64-koodi ensin.",
+            "invalid_error": "Kelvoton Base64-koodi tai tukematon kuvamuoto."
+        }
+    },
+    "heic-to-jpg-converter": {
+        "meta": {
+            "title": "HEIC to JPG Converter - ilmainen online iPhone Photo Tool",
+            "description": "Muunna HEIC- ja HEIF-kuvat iPhonesta standardiin JPG-muotoon. Ilmainen ja turvallinen selaimeen pohjautuva muunnin.",
+            "h1": "HEIC-JPG-muunnin",
+            "subtitle": "Muunna HEIC/HEIF-kuvat iPhonesta standardiin JPG-muotoon välittömästi"
+        },
+        "input": {
+            "title": "Lataa HEIC-tiedosto",
+            "desc": "Raahaa ja pudota .heic tai .heif tiedosto tähän",
+            "drop_title": "Pudota HEIC-tiedosto tähän",
+            "drop_desc": "Tukee HEIC/HEIF (Max 20 Mt)"
+        },
+        "loading": {
+            "title": "Käsitellään HEIC-tiedostoa...",
+            "desc": "Suurempien tiedostojen käsittely voi kestää hetken."
+        },
+        "result": {
+            "image_alt": "Esikatselu",
+            "converted_to": "Muunnettu muotoon:",
+            "btn_download": "Lataa JPG-kuva"
+        },
+        "content": {
+            "title": "Muunna HEIC JPG-muotoon välittömästi",
+            "p1": "Applen HEIC-muoto säästää tilaa iPhonessa, mutta sen avaaminen Windowsilla tai Androidilla voi olla vaikeaa. Meidän muuntimemme ratkaisee tämän ongelman.",
+            "p2": "Käytämme selaimesi suorituskykyä kuvien muuntamiseen paikallisesti, joten kuviasi ei ladata pilveen. Tämä on <strong>turvallisin tapa</strong> muuntaa omia kuviasi.",
+            "features": {
+                "private": {
+                    "title": "100 % yksityinen",
+                    "desc": "Kuvasi pysyvät laitteellasi. Käytämme selainpohjaista logiikkaa."
+                },
+                "compatibility": {
+                    "title": "Laaja yhteensopivuus",
+                    "desc": "Muunna HEIC-tiedostot kaikista iOS-versioista standardeiksi JPG-kuviksi."
+                },
+                "fast": {
+                    "title": "Nopea ja ilmainen",
+                    "desc": "Ei ohjelmistoasennuksia. Raahaa, pudota ja muunna sekunneissa."
+                }
+            },
+            "how_to": {
+                "title": "Miten muuntaa HEIC JPG-muotoon?",
+                "list": [
+                    "Raahaa .heic-tiedosto latausalueelle.",
+                    "Työkalu muuntaa tiedoston automaattisesti selaimessa.",
+                    "Näet esikatselun muunnetusta kuvasta heti.",
+                    "Klikkaa latauspainiketta tallentaaksesi kuvan."
+                ]
+            }
+        },
+        "js": {
+            "error": "Virhe HEIC-tiedoston muuntamisessa: "
+        }
+    },
+    "ico-converter": {
+        "meta": {
+            "title": "ICO Converter & Favicon Generator - Ilmainen verkossa",
+            "description": "Muunna kuvat ICO-muotoon verkkosivujen faviconeja varten. Tukee useita kokoja (16x16, 32x32 jne.).",
+            "h1": "ICO-muunnin ja favicon-generaattori",
+            "subtitle": "Muunna kuvat ICO-muotoon faviconeja varten mukautetuilla koilla"
+        },
+        "input": {
+            "title": "Lataa muunnettava kuva",
+            "desc": "Raahaa ja pudota PNG/JPG-tiedosto",
+            "drop_title": "Pudota tiedosto tähän",
+            "drop_desc": "Nopea muunnos .ico-muotoon"
+        },
+        "editor": {
+            "original": "Alkuperäinen",
+            "image_alt": "Esikatselu",
+            "favicon": "Favicon",
+            "size_label": "Kuvakkeen koko",
+            "output_format": "Tulostusmuoto:",
+            "btn_download": "Lataa Favicon (.ico)"
+        },
+        "content": {
+            "title": "Ilmainen ICO-muunnin",
+            "p1": "Rakennatko verkkosivua? Tarvitset faviconin - sen pienen ikonin, joka näkyy selaimen välilehdissä.",
+            "p2": "Meidän <strong>ICO-muuntimemme</strong> muuttaa PNG- tai JPG-kuvat .ico-tiedostoiksi.",
+            "features": {
+                "sizes": {
+                    "title": "Standardikoot",
+                    "desc": "Valitse kooksi 16x16, 32x32, 48x48 tai 64x64 pikseliä."
+                },
+                "resize": {
+                    "title": "Automaattinen koon muutos",
+                    "desc": "Lataa suuri logo, ja me skaalaamme sen sopivaksi pieneen ikoniin."
+                }
+            }
+        },
+        "js": {
+            "invalid_image": "Ole hyvä ja lataa kelvollinen kuva"
+        }
+    },
+    "image-compressor": {
+        "meta": {
+            "title": "Image Compressor Online - Ilmainen kuvan koon pienennys",
+            "description": "Pakkaa kuvat verkossa ilmaiseksi. Pienennä JPG-, PNG- ja WebP-tiedostojen kokoa laadun säilyttäen.",
+            "h1": "Kuvan kompressori",
+            "subtitle": "Pienennä kuvien tiedostokokoa menettämättä laatua"
+        },
+        "editor": {
+            "label_upload": "Lataa kuva",
+            "drop_title": "Pudota kuva tähän tai klikkaa selataksesi",
+            "drop_subtitle": "Raahaa kuva tai valitse tiedosto laitteeltasi",
+            "supports": "Tukee JPG, PNG, WebP -muotoja",
+            "label_quality": "Pakkauslaatu:",
+            "title_original": "Alkuperäinen",
+            "label_size": "Koko:",
+            "title_compressed": "Pakattu kuva",
+            "label_saved": "Säästö:",
+            "btn_download": "Lataa pakattu kuva"
+        },
+        "content": {
+            "p1": "Pakkaa kuvasi verkossa ilmaisella työkalullamme. Pienennä JPG-, PNG- ja WebP-tiedostojen kokoa jopa 90 % säilyttäen erinomaisen visuaalisen laadun. Optimoi kuvat verkkosivuille ja someen.",
+            "why_title": "Miksi pakata kuvia?",
+            "why_list": [
+                "Nopeat latausajat parantavat käyttökokemusta ja hakukonenäkyvyyttä (SEO)",
+                "Vähennä kaistanleveyden käyttöä ja säästä tilaa",
+                "Optimoi kuvat hitaammille mobiiliyhteyksille",
+                "Täytä sähköpostiliitteiden kokorajoitukset"
+            ],
+            "quality_title": "Tietoa pakkauslaadusta",
+            "quality_list": [
+                "100 % - Ei pakkausta, suurin tiedostokoko",
+                "80-90 % - Suositeltu: minimi ero laadussa, suuri säästö koossa",
+                "60-80 % - Hyvä laatu, pakkaus alkaa näkyä lähellä",
+                "10-40 % - Matala laatu, pienin tiedostokoko"
+            ],
+            "faq": {
+                "q1": "Heikkeneekö laatu pakkauksessa?",
+                "a1": "Kyllä, mutta hyvin vähän. 80-90 % tasolla ero on paljaalla silmällä huomaamaton.",
+                "q4": "Ladataanko kuvani palvelimelle?",
+                "a4": "Ei! Pakkaus tapahtuu selaimesi JavaScriptillä. Tiedostosi eivät poistu laitteeltasi."
+            }
+        }
+    },
+    "image-converter": {
+        "meta": {
+            "title": "Image Converter Online - Ilmainen Format Switcher",
+            "description": "Muunna kuvia eri muotojen välillä (PNG, JPG, WEBP) helposti ja ilmaiseksi. Turvallinen, ei latauksia palvelimelle.",
+            "h1": "Image Converter",
+            "subtitle": "Muunna kuvia eri muotojen välillä (PNG, JPG, WEBP) helposti"
+        },
+        "input": {
+            "title": "Lataa kuvasi",
+            "desc": "Raahaa ja pudota tai klikkaa valitaksesi kuvan",
+            "drop_title": "Pudota kuvasi tähän",
+            "drop_desc": "Tukee PNG, JPG, WEBP (Max 10 Mt)"
+        },
+        "editor": {
+            "image_alt": "Esikatselu",
+            "target_format": "Kohdemuoto",
+            "quality": "Laatu (JPG/WEBP)",
+            "btn_convert": "Muunna ja lataa"
+        },
+        "content": {
+            "title": "Lopullinen ilmainen online-kuvanmuunnin",
+            "p1": "Tarvitsetko WEBP-muotoa suorituskykyyn tai PNG-muotoa läpinäkyvyyteen? Meidän <strong>kuvanmuuntimemme</strong> on kattava ratkaisu.",
+            "features": {
+                "secure": {
+                    "title": "Turvallinen ja yksityinen",
+                    "desc": "Tiedostosi eivät poistu laitteeltasi. Käsittely tapahtuu selaimessa."
+                }
+            },
+            "faq": {
+                "q1": "Onko tämä työkalu ilmainen?",
+                "a1": "Kyllä, täysin ilmainen ilman rajoituksia.",
+                "q3": "Ladataanko kuviani mihinkään?",
+                "a3": "Ei. Muunnos tapahtuu suoraan selaimessasi."
+            }
+        }
+    },
+    "image-to-base64-converter": {
+        "meta": {
+            "title": "Image to Base64 Converter - ilmainen online-merkkijonotyökalu",
+            "description": "Muunna kuvat Base64-koodatuiksi merkkijonoiksi HTML- tai CSS-upotusta varten. Tukee PNG, JPG, GIF.",
+            "h1": "Muunna kuva Base64-merkkijonoksi",
+            "subtitle": "Muunna kuvat Base64-koodatuiksi merkkijonoiksi HTML- tai CSS-tiedostoihin"
+        },
+        "input": {
+            "title": "Lataa kuva",
+            "desc": "Raahaa ja pudota kuvatiedostosi tähän",
+            "drop_title": "Pudota kuva tähän",
+            "drop_desc": "Tukee kaikkia kuvamuotoja"
+        },
+        "editor": {
+            "image_alt": "Esikatselu",
+            "label_string": "Base64-koodi",
+            "btn_copy": "Kopioi leikepöydälle",
+            "char_count": "Merkkimäärä",
+            "mime_type": "MIME-tyyppi"
+        },
+        "js": {
+            "copied": "Kopioitu!"
+        }
+    },
+    "jpg-to-png-converter": {
+        "meta": {
+            "title": "JPG to PNG Converter - ilmainen online läpinäkyvä työkalu",
+            "description": "Muunna JPG-kuvat PNG-muotoon välittömästi. 100 % ilmainen ja turvallinen selaimeen pohjautuva muunnos.",
+            "h1": "JPG-PNG-muunnin",
+            "subtitle": "Muunna JPG-kuvat PNG-muotoon välittömästi ilmaiseksi"
+        },
+        "editor": {
+            "btn_convert": "Muunna PNG-muotoon ja lataa"
+        }
+    },
+    "jpg-to-webp-converter": {
+        "meta": {
+            "title": "JPG to WebP Converter - ilmainen online-optimointityökalu",
+            "description": "Muunna JPG-kuvat moderniin WebP-muotoon paremman pakkauksen ja nopeuden saavuttamiseksi.",
+            "h1": "JPG to WebP Converter",
+            "subtitle": "Muunna JPG-kuvat moderniin WebP-muotoon"
+        },
+        "editor": {
+            "btn_convert": "Muunna WebP-muotoon ja lataa"
+        }
+    },
+    "png-to-jpg-converter": {
+        "meta": {
+            "title": "PNG to JPG Converter - ilmainen online-kuvatyökalu",
+            "description": "Muunna PNG-kuvat JPG-muotoon pienempää tiedostokokoa varten. Ilmainen online-työkalu.",
+            "h1": "PNG-JPG-muunnin",
+            "subtitle": "Muunna PNG-kuvat JPG-muotoon välittömästi"
+        },
+        "editor": {
+            "note_text": "Läpinäkyvät taustat muuttuvat valkoisiksi.",
+            "btn_convert": "Muunna JPG-muotoon ja lataa"
+        }
+    },
+    "png-to-webp-converter": {
+        "meta": {
+            "title": "PNG to WebP Converter - ilmainen verkkotyökalu",
+            "description": "Muunna PNG-kuvat WebP-muotoon säilyttäen läpinäkyvyyden. Nopeuta verkkosivusi latautumista.",
+            "h1": "PNG to WebP Converter",
+            "subtitle": "Muunna PNG-kuvat WebP-muotoon pienentääksesi kokoa"
+        },
+        "editor": {
+            "btn_convert": "Muunna WebP-muotoon ja lataa"
+        }
+    },
+    "svg-to-jpg-converter": {
+        "meta": {
+            "title": "SVG to JPG Converter - ilmainen online-vektorityökalu",
+            "description": "Muunna SVG-vektoritiedostot JPG-kuviksi verkossa. Täyttää taustan automaattisesti valkoisella.",
+            "h1": "SVG-JPG-muunnin",
+            "subtitle": "Muunna SVG-vektoritiedostot JPG-kuviksi helposti"
+        },
+        "editor": {
+            "scale_label": "Resoluution kerroin (Skaalaus)",
+            "btn_convert": "Muunna JPG-muotoon ja lataa"
+        }
+    },
+    "svg-to-png-converter": {
+        "meta": {
+            "title": "SVG to PNG Converter - ilmainen online-rasterityökalu",
+            "description": "Muunna SVG-kuvat korkealaatuisiksi PNG-tiedostoiksi. Säilytä läpinäkyvyys ja skaalaa suuremmaksi.",
+            "h1": "SVG-PNG-muunnin",
+            "subtitle": "Muunna SVG-vektoritiedostot PNG-kuviksi välittömästi"
+        },
+        "editor": {
+            "checkerboard": "Ruutukuvio ilmaisee läpinäkyvyyttä",
+            "btn_convert": "Muunna PNG-muotoon ja lataa"
+        }
+    },
+    "webp-to-jpg-converter": {
+        "meta": {
+            "title": "WebP to JPG Converter - ilmainen online-kuvatyökalu",
+            "description": "Muunna WebP-kuvat standardiin JPG-muotoon. Ilmainen, nopea ja turvallinen muunnin.",
+            "h1": "WebP-JPG-muunnin",
+            "subtitle": "Muunna WebP-kuvat standardiin JPG-muotoon"
+        },
+        "input": {
+            "title": "Lataa WebP-kuva",
+            "drop_title": "Pudota WebP-tiedosto tähän"
+        },
+        "editor": {
+            "note_text": "Läpinäkyvät taustat muuttuvat valkoisiksi.",
+            "btn_convert": "Muunna JPG-muotoon ja lataa"
+        },
+        "content": {
+            "title": "WebP:stä JPG:ksi: Ratkaisu yhteensopivuuteen",
+            "p1": "WebP on nopeampi netissä, mutta sen avaaminen muilla laitteilla tai sovelluksilla voi olla hankalaa.",
+            "features": {
+                "universal": {
+                    "title": "Yleinen tuki",
+                    "desc": "JPG toimii kaikkialla: Wordissa, Powerpointissa ja somessa."
+                },
+                "smart": {
+                    "title": "Älykkäät taustat",
+                    "desc": "Tunnistaa läpinäkyvyyden ja täyttää sen valkoisella värillä."
+                }
+            },
+            "faq": {
+                "q1": "Mitä tapahtuu läpinäkyvyydelle?",
+                "a1": "Koska JPG ei tue läpinäkyvyyttä, työkalu korvaa sen valkoisella. Se sopii hyvin logoihin.",
+                "q2": "Onko se turvallista?",
+                "a2": "Kyllä. Muunnos tapahtuu 100 % laitteellasi."
+            }
+        },
+        "js": {
+            "invalid_image": "Ole hyvä ja lataa kelvollinen WebP-kuva"
+        }
+    }
+}

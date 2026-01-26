@@ -1,0 +1,735 @@
+{
+    "dns-lookup": {
+        "meta": {
+            "title": "DNS Arama Aracı - Ücretsiz Çevrimiçi DNS Kayıt Denetleyicisi",
+            "description": "Herhangi bir alan adı için DNS kayıtlarını kontrol etmek için ücretsiz DNS sorgulama aracı. A, AAAA, MX, NS, TXT, CNAME kayıtlarını anında görüntüleyin. E-posta ve alan adı yapılandırma sorunlarını gidermek için vazgeçilmezdir.",
+            "h1": "DNS Arama Aracı",
+            "subtitle": "Ad sunucularını, MX, A, CNAME ve TXT kayıtlarını anında bulmak için DNS kayıtlarını sorgulayın"
+        },
+        "form": {
+            "domain_label": "Alan Adı",
+            "domain_placeholder": "orneksite.com",
+            "button": "DNS Sorgula"
+        },
+        "results": {
+            "title": "Sorgu Sonuçları"
+        },
+        "content": {
+            "what_is_title": "DNS Sorgulama Nedir?",
+            "what_is_desc": "DNS Sorgulama, bir alan adının DNS kayıtlarını almak için Alan Adı Sistemi sunucularını sorgulayan bir araçtır. DNS kayıtları, bir alan adının nasıl yapılandırıldığına dair önemli bilgiler içerir; bunlar arasında posta sunucuları (MX kayıtları), ad sunucuları (NS kayıtları), IP adresleri (A/AAAA kayıtları) ve doğrulama ile güvenlik için kullanılan metin kayıtları (TXT kayıtları) bulunur.",
+            "why_use_title": "Neden DNS Sorgulama Kullanılmalı?",
+            "why_use_desc": "DNS sorgulama; e-posta teslimat sorunlarını gidermek, alan adı yapılandırmasını doğrulamak, ad sunucusu ayarlarını kontrol etmek, SPF ve DKIM kayıtlarını onaylamak ve bir alan adının nasıl kurulduğunu anlamak için gereklidir. Sistem yöneticileri, web geliştiricileri ve BT profesyonelleri tarafından günlük olarak kullanılır.",
+            "record_types_title": "DNS Kayıt Türleri",
+            "a_record": "<strong>A Kaydı:</strong> Alan adını IPv4 adresine eşler",
+            "aaaa_record": "<strong>AAAA Kaydı:</strong> Alan adını IPv6 adresine eşler",
+            "mx_record": "<strong>MX Kaydı:</strong> Posta sunucusu bilgileri",
+            "ns_record": "<strong>NS Kaydı:</strong> Ad sunucusu bilgileri",
+            "txt_record": "<strong>TXT Kaydı:</strong> Doğrulama için metin kayıtları",
+            "cname_record": "<strong>CNAME Kaydı:</strong> Kurallı ad takma adı"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "DNS kayıtlarının güncellenmesi ne kadar sürer?",
+            "a1": "DNS yayılımı genellikle birkaç saat sürer ancak kayıtların dünya genelinde tamamen güncellenmesi 48 saati bulabilir.",
+            "q2": "MX kaydı nedir?",
+            "a2": "MX (Mail Exchanger) kaydı, alan adınız için e-postaları hangi posta sunucusunun kabul edeceğini belirten bir DNS kaydıdır.",
+            "q3": "SPF kaydı neden önemlidir?",
+            "a3": "SPF kaydı, alan adınız adına hangi posta sunucularının e-posta göndermeye yetkili olduğunu belirterek e-posta sahteciliğini önlemeye yardımcı olur.",
+            "q4": "TTL nedir?",
+            "a4": "TTL (Time To Live), bir DNS kaydının sunucular tarafından ne kadar süreyle önbelleğe alınacağını belirten değerdir.",
+            "q5": "Zerrin Kayıt (A Record) ve CNAME arasındaki fark nedir?",
+            "a5": "A kaydı bir alan adını doğrudan bir IP adresine yönlendirirken, CNAME kaydı bir alan adını başka bir alan adına (takma ad) yönlendirir."
+        },
+        "js": {
+            "looking_up": "Sorgulanıyor...",
+            "records_label": "Kayıtlar",
+            "success": "Başarılı!",
+            "error": "Hata oluştu",
+            "lookup_dns": "DNS Sorgula"
+        }
+    },
+    "domain-to-ip": {
+        "meta": {
+            "title": "Etki Alanından IP'ye Dönüştürücü - Ücretsiz Çevrimiçi DNS Aracı",
+            "description": "Ücretsiz alan adından IP'ye sorgulama aracı. Herhangi bir alan adını anında IP adresine dönüştürün. Ağ sorunlarını giderme, sunucu yapılandırması ve DNS doğrulaması için gereklidir.",
+            "h1": "Etki Alanından IP'ye Dönüştürücü",
+            "subtitle": "Detaylı DNS bilgileriyle alan adlarını IP adreslerine çözün"
+        },
+        "form": {
+            "domain_label": "Alan Adını Girin",
+            "domain_placeholder": "orneksite.com",
+            "domain_hint": "Alan adını http:// veya https:// olmadan girin",
+            "button": "IP Adresini Sorgula"
+        },
+        "results": {
+            "title": "Sorgulama Sonucu",
+            "domain_label": "Alan Adı",
+            "ip_label": "IP Adresi"
+        },
+        "content": {
+            "main_title": "Alan Adından IP'ye Dönüştürücü",
+            "main_subtitle": "Herhangi bir alan adını anında IP adresine dönüştürün",
+            "intro": "Ücretsiz Alan Adından IP'ye aracımız, DNS sorgulaması kullanarak herhangi bir alan adını saniyeler içinde karşılık gelen IP adresine dönüştürür. Ağ yöneticileri, web geliştiricileri, güvenlik uzmanları ve bir alan adının arkasındaki sunucuyu tanımlaması gereken herkes için gereklidir. Sorun giderme, sunucu doğrulaması ve ağ yapılandırması için doğru IP adreslerini alın.",
+            "feature1_title": "Anında Sorgulama",
+            "feature1_desc": "Gecikme olmadan anında IP adreslerini alın.",
+            "feature2_title": "Doğru Sonuçlar",
+            "feature2_desc": "Mevcut IP adresleri için gerçek zamanlı DNS sorguları.",
+            "feature3_title": "100% Ücretsiz",
+            "feature3_desc": "Kayıt gerektirmeyen sınırsız sorgulama.",
+            "what_is_title": "🌐 Alan Adından IP'ye Sorgulama Nedir?",
+            "what_is_desc": "Alan adından IP'ye sorgulama, insan tarafından okunabilen bir alan adını (orneksite.com gibi) sayısal bir IP adresine (93.184.216.34 gibi) dönüştürme işlemidir. Bu dönüşüm, internetin telefon rehberi gibi çalışan DNS (Alan Adı Sistemi) sunucuları aracılığıyla gerçekleşir. Her web sitesinin bir IP adresi vardır, ancak alan adları onları hatırlamayı ve erişmeyi kolaylaştırır.",
+            "use_cases_title": "🎯 Yaygın Kullanım Durumları",
+            "uc1_title": "Sunucu Yapılandırması",
+            "uc1_desc": "Güvenlik duvarlarını, beyaz listeleri ve sunucu ayarlarını IP adresleriyle yapılandırın.",
+            "uc2_title": "Güvenlik Analizi",
+            "uc2_desc": "Sunucu konumlarını doğrulayın ve barındırma sağlayıcılarını tanımlayın.",
+            "uc3_title": "Sorun Giderme",
+            "uc3_desc": "DNS sorunlarını teşhis edin ve alan adı yapılandırmalarını doğrulayın.",
+            "uc4_title": "Ağ İzleme",
+            "uc4_desc": "Sunucu değişikliklerini izleyin ve altyapıyı takip edin.",
+            "uc5_title": "Coğrafi Konum Belirleme",
+            "uc5_desc": "IP adresinden sunucunun coğrafi konumunu belirleyin.",
+            "uc6_title": "API Entegrasyonu",
+            "uc6_desc": "Doğrudan API bağlantıları için IP adreslerini kullanın.",
+            "pro_tips_title": "💡 Profesyonel İpuçları",
+            "tip1": "✅ DNS yavaş olduğunda doğrudan sunucu bağlantıları için IP adreslerini kullanın.",
+            "tip2": "✅ Birden fazla çözünürlük kontrolü yaparak CDN yapılandırmalarını doğrulayın.",
+            "tip3": "✅ Güvenli erişim için sunucu IP'lerini güvenlik duvarlarında beyaz listeye ekleyin.",
+            "tip4": "✅ DNS değişikliklerinden önce ve sonra IP adreslerini karşılaştırın.",
+            "tip5": "✅ Birden fazla alan adının aynı IP'yi paylaşıp paylaşmadığını kontrol ederek paylaşımlı barındırmayı tanımlayın."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Bir alan adının birden fazla IP'si olabilir mi?",
+            "a1": "Evet, büyük web siteleri genellikle yük dengeleme ve performansa yönelik olarak birden fazla IP adresi kullanır.",
+            "q2": "Dinamik IP nedir?",
+            "a2": "Dinamik IP, internete her bağlandığınızda veya periyodik olarak değişen, servis sağlayıcınız tarafından atanan IP adresidir.",
+            "q3": "IP adresimden ev adresim bulunabilir mi?",
+            "a3": "IP adresiniz genel konumunuzu (şehir/bölge) gösterebilir ancak tam ev adresiniz servis sağlayıcınız tarafından gizli tutulur.",
+            "q4": "IPv4 ve IPv6 arasındaki fark nedir?",
+            "a4": "IPv4 32-bit (örn. 1.2.3.4), IPv6 ise daha geniş bir adres alanı sunan 128-bit (örn. 2001:0db8...) bir yapıya sahiptir.",
+            "q5": "Sunucu taşındığında IP adresi değişir mi?",
+            "a5": "Genellikle evet. Web sitenizi farklı bir sunucuya veya sağlayıcıya taşıdığınızda yeni bir IP adresi atanır."
+        },
+        "js": {
+            "looking_up": "Sorgulanıyor...",
+            "error_failed": "Sorgulama başarısız oldu."
+        }
+    },
+    "internet-speed-test": {
+        "meta": {
+            "title": "İnternet Hız Testi - Ücretsiz Çevrimiçi Bağlantı Denetleyicisi",
+            "description": "İnternet hızınızı ücretsiz olarak test edin. İndirme hızını, yükleme hızını ve ping süresini anında kontrol edin.",
+            "h1": "İnternet Hız Testi",
+            "subtitle": "İnternet bağlantı hızınızı anında test edin"
+        },
+        "editor": {
+            "btn_start": "Testi Başlat",
+            "status_init": "Test başlatılıyor...",
+            "label_download": "İndirme Hızı",
+            "label_upload": "Yükleme Hızı",
+            "label_ping": "Ping",
+            "label_quality": "Bağlantı Kalitesi",
+            "btn_retry": "Tekrar Test Et",
+            "status_ping": "Ping test ediliyor...",
+            "status_download": "İndirme hızı test ediliyor...",
+            "status_upload": "Yükleme hızı test ediliyor...",
+            "quality_val_excellent": "Mükemmel",
+            "quality_val_very_good": "Çok İyi",
+            "quality_val_good": "İyi",
+            "quality_val_fair": "Orta",
+            "quality_val_poor": "Zayıf"
+        },
+        "content": {
+            "p1": "Ücretsiz ve doğru hız testi aracımızla internet bağlantı hızınızı test edin. İndirme hızınızı, yükleme hızınızı ve ping gecikmesini saniyeler içinde ölçün. Yavaş bağlantıları gidermek, ISP hızlarını doğrulamak veya ödediğiniz hızı alıp almadığınızı kontrol etmek için mükemmeldir.",
+            "metrics_title": "Hız Testi Metriklerini Anlamak",
+            "req_title": "Doğru Test İçin Gereksinimler",
+            "req_list": [
+                "Diğer tüm uygulamaları ve tarayıcı sekmelerini kapatın",
+                "En doğru sonuçlar için Ethernet kablosuyla bağlanın",
+                "VPN veya proxy hizmetlerini geçici olarak devre dışı bırakın",
+                "Hiçbir indirme veya yüklemenin çalışmadığından emin olun",
+                "Günün farklı saatlerinde birden fazla kez test edin"
+            ],
+            "why_title": "Neden İnternet Hızınızı Test Etmelisiniz?",
+            "why_list": [
+                "Ödediğiniz hızı aldığınızı doğrulayın",
+                "Yavaş bağlantı sorunlarını teşhis edin",
+                "Değiştirmeden önce farklı ISP planlarını karşılaştırın",
+                "Ağ kurulumunuzu optimize edin",
+                "İSS destek talepleri için hızı belgeleyin",
+                "Wi-Fi ile Ethernet performansını karşılaştırın"
+            ],
+            "factors_title": "Hızınızı Etkileyen Faktörler",
+            "improve_title": "Hızınızı Nasıl Artırırsınız?",
+            "improve_list": [
+                "Mümkün olduğunda Wi-Fi yerine Ethernet kablosu kullanın",
+                "Yönlendiriciyi duvarlardan uzak, merkezi bir konuma yerleştirin",
+                "Hız seviyenizi destekleyen modern bir yönlendiriciye yükseltin",
+                "Bant genişliğini yoğun kullanan uygulamaları kapatın",
+                "Yönlendirici donanım yazılımını (firmware) düzenli olarak güncelleyin",
+                "İnternet planınızı yükseltmeyi düşünün",
+                "Yönlendiricide Hizmet Kalitesi (QoS) ayarlarını kullanın"
+            ],
+            "tips_title": "Doğru Sonuçlar İçin Profesyonel İpuçları",
+            "tips_list": [
+                "Değişimleri görmek için günün farklı saatlerinde test edin",
+                "Birden fazla test yapın ve sonuçların ortalamasını alın",
+                "Cihaz sorunlarını dışlamak için farklı cihazlarda test edin",
+                "Evinizdeki farklı konumlardaki Wi-Fi hızlarını karşılaştırın"
+            ],
+            "faq_title": "Sıkça Sorulan Sorular",
+            "metrics": {
+                "download": {
+                    "title": "İndirme Hızı",
+                    "desc": "Verilerin internetten cihazınıza ne kadar hızlı ulaştığıdır. Akış, gezinme ve dosya indirme için önemlidir."
+                },
+                "upload": {
+                    "title": "Yükleme Hızı",
+                    "desc": "Verilerin cihazınızdan internete ne kadar hızlı gittiğidir. Görüntülü görüşmeler, dosya yükleme ve canlı yayın için önemlidir."
+                },
+                "ping": {
+                    "title": "Ping (Gecikme)",
+                    "desc": "Bağlantınızın tepki süresidir. Daha düşük olması daha iyidir. Oyun ve gerçek zamanlı uygulamalar için önemlidir."
+                }
+            },
+            "factors": {
+                "congestion": {
+                    "title": "Ağ Yoğunluğu",
+                    "desc": "Yoğun kullanım saatleri, daha fazla kullanıcı bant genişliğini paylaştığı için bağlantınızı yavaşlatabilir."
+                },
+                "wifi": {
+                    "title": "Wi-Fi Sinyali",
+                    "desc": "Yönlendiriciden uzaklık, duvarlar ve diğer cihazlardan gelen parazitler kablosuz hızı etkiler."
+                },
+                "device": {
+                    "title": "Cihaz Performansı",
+                    "desc": "Eski cihazlar veya çok sayıda program çalıştıranlar tam hıza ulaşamayabilir."
+                },
+                "router": {
+                    "title": "Yönlendirici Kalitesi",
+                    "desc": "Eski yönlendiriciler internet hızı kapasitenizi tam olarak desteklemeyebilir."
+                }
+            },
+            "faq": {
+                "q1": "İyi bir internet hızı nedir?",
+                "a1": "Genel gezinme ve akış için: 25+ Mbps. 4K akış ve oyun için: 50+ Mbps. Çok sayıda kullanıcı ve yoğun kullanım için: 100+ Mbps. Uzaktan çalışma ve kalabalık evler için: 200+ Mbps.",
+                "q2": "Hızım neden vaat edilenden daha düşük?",
+                "a2": "İSS'ler \"-e kadar\" hızların reklamını yapar. Gerçek hızlar ağ yoğunluğuna, Wi-Fi kalitesine, yönlendiriciye olan uzaklığa ve cihaz yeteneklerine bağlıdır. En doğru sonuçlar için Ethernet ile test edin.",
+                "q3": "Mbps ve MBps arasındaki fark nedir?",
+                "a3": "Mbps (megabit/saniye) internet hızı için kullanılır. MBps (megabayt/saniye) dosya boyutları için kullanılır. 1 MBps = 8 Mbps. 100 Mbps bağlantı yaklaşık 12.5 MBps ile indirir.",
+                "q4": "Bu hız testi ne kadar doğru?",
+                "a4": "Hız testimiz gerçek veri transferini ölçerek doğru sonuçlar sağlar. En iyi doğruluk için diğer uygulamaları kapatın, Ethernet kullanın ve birden fazla test yapın.",
+                "q5": "Wi-Fi ile mi yoksa Ethernet ile mi test etmeliyim?",
+                "a5": "Gerçek internet hızınızı ölçmek için Ethernet ile test edin. Kablosuz sorunlarını teşhis etmek için Wi-Fi ile test edin. Her ikisini karşılaştırmak sorunun internetinizde mi yoksa Wi-Fi'nizde mi olduğunu belirlemeye yardımcı olur."
+            }
+        }
+    },
+    "ip-lookup": {
+        "meta": {
+            "title": "IP Arama Aracı - Ücretsiz Çevrimiçi IP Coğrafi Konum Denetleyicisi",
+            "description": "Herhangi bir IP adresi hakkında ayrıntılı bilgi bulmak için ücretsiz IP sorgulama aracı. Konum, İSS, ana bilgisayar adı ve daha fazlasını görüntüleyin. Güvenlik analizi ve ağ sorunlarını gidermek için gereklidir.",
+            "h1": "IP Arama Aracı",
+            "subtitle": "Konum ve İSS dahil herhangi bir IP adresi hakkında ayrıntılı bilgi alın"
+        },
+        "form": {
+            "ip_label": "IP Adresi",
+            "ip_placeholder": "8.8.8.8",
+            "button": "IP Adresini Sorgula"
+        },
+        "results": {
+            "title": "IP Bilgileri",
+            "ip_address": "IP Adresi",
+            "type": "Tür",
+            "hostname": "Ana Bilgisayar Adı",
+            "isp": "İSS (İnternet Servis Sağlayıcı)",
+            "country": "Ülke",
+            "region": "Bölge",
+            "city": "Şehir",
+            "timezone": "Saat Dilimi"
+        },
+        "content": {
+            "what_is_title": "IP Sorgulama Nedir?",
+            "what_is_desc": "IP Sorgulama, herhangi bir IP adresi hakkında ayrıntılı bilgi sağlayan bir araçtır. Bir IP adresiyle ilişkili coğrafi konumu, İnternet Servis Sağlayıcısını (İSS), ana bilgisayar adını ve diğer teknik detayları ortaya çıkarır. Bu bilgiler ağ yöneticileri, güvenlik uzmanları, web sitesi sahipleri ve internet trafiğinin nereden kaynaklandığını anlamak isteyen herkes için değerlidir.",
+            "why_use_title": "Neden IP Sorgulama Kullanılmalı?",
+            "why_use_desc": "IP Sorgulama araçları; güvenlik analizi, dolandırıcılığı önleme, içerik yerelleştirme, ağ sorunlarını giderme ve uyumluluk doğrulaması dahil olmak üzere çeşitli amaçlar için gereklidir. Web sitesi sahipleri ziyaretçi demografisini anlamak için IP sorgulamayı kullanırken, güvenlik ekipleri potansiyel tehditleri tanımlamak ve kötü niyetli trafiği engellemek için kullanır. Ayrıca VPN bağlantılarını doğrulamak ve kendi internet izinizi anlamak için de yararlıdır.",
+            "features_title": "Temel Özellikler",
+            "feature1_title": "🌍 Coğrafi Konum Verileri",
+            "feature1_desc": "Ülke, bölge, şehir ve koordinatlar",
+            "feature2_title": "🏢 İSS Bilgileri",
+            "feature2_desc": "İnternet Servis Sağlayıcı detayları",
+            "feature3_title": "🔗 Ana Bilgisayar Adı Çözümleme",
+            "feature3_desc": "IP ile ilişkili alan adı",
+            "feature4_title": "⚡ Anında Sonuçlar",
+            "feature4_desc": "Hızlı ve doğru sorgulama"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "IP sorgulama ne kadar doğrudur?",
+            "a1": "Coğrafi konum verileri genellikle ülke ve şehir düzeyinde %95-99 oranında doğrudur ancak tam ev adresini belirlemez.",
+            "q2": "Bir IP adresinden tam adres bulunur mu?",
+            "a2": "Hayır, IP sorgulama sadece genel konumu (şehir/bölge) gösterir. Kesin adres bilgisi sadece İSS'lerde bulunur ve yasal süreçler gerektirir.",
+            "q3": "IP adresim neden sorguladığımda farklı bir şehri gösteriyor?",
+            "a3": "İSS'nizin merkezi veya internete çıkış yaptığınız ana sunucu farklı bir şehirde olabilir, bu da konumun kaymasına neden olur.",
+            "q4": "VPN kullanırken IP sorgulama neyi gösterir?",
+            "a4": "VPN kullanıyorsanız, araç kendi gerçek IP'niz yerine VPN sunucusunun IP adresini ve konumunu gösterecektir.",
+            "q5": "Kendi IP adresimi nasıl öğrenebilirim?",
+            "a5": "Sitemizdeki 'IP Adresim Nedir' aracını kullanarak kendi genel IP adresinizi anında görebilirsiniz."
+        },
+        "js": {
+            "looking_up": "Sorgulanıyor...",
+            "success": "Sorgulama başarılı!",
+            "error": "Bilgi alınamadı."
+        }
+    },
+    "ping-test": {
+        "meta": {
+            "title": "Çevrimiçi Ping Test Aracı - Ücretsiz Ağ Gecikme Denetleyicisi",
+            "description": "Ağ gecikmesini, paket kaybını ve sunucu erişilebilirliğini kontrol etmek için ücretsiz ping test aracı. Herhangi bir ana bilgisayara veya IP adresine olan bağlantıyı anında test edin.",
+            "h1": "Ping Testi Aracı",
+            "subtitle": "Sunucu yanıt süresini ve ağ bağlantısını anında test edin"
+        },
+        "form": {
+            "host_label": "Ana Bilgisayar veya IP Adresi",
+            "host_placeholder": "google.com veya 8.8.8.8",
+            "button": "Ping Gönder"
+        },
+        "results": {
+            "title": "Ping Sonuçları"
+        },
+        "content": {
+            "what_is_title": "Ping Testi Nedir?",
+            "what_is_desc": "Ping, bir İnternet Protokolü (IP) ağındaki bir ana bilgisayarın erişilebilirliğini test eden bir ağ tanılama aracıdır. Kaynaktan bir hedef bilgisayara gönderilen ve geri gelen mesajların gidiş-dönüş süresini ölçer. Ping, hedef ana bilgisayara İnternet Kontrol Mesajı Protokolü (ICMP) Yankı İsteği (Echo Request) paketleri göndererek ve bir Yankı Yanıtı (Echo Reply) bekleyerek çalışır. Araç, denizaltı tespitinde kullanılan sonar ping sesine benzer şekilde bir sinyal gönderip bir yanıt beklediği için bu şekilde adlandırılmıştır.",
+            "why_use_title": "Neden Ping Testi Kullanılmalı?",
+            "why_use_desc": "Ping testi, ağ sorunlarını giderme ve performans izleme için gereklidir. Sistem yöneticileri ağ bağlantısını doğrulamak, bağlantı sorunlarını teşhis etmek ve ağ gecikmesini ölçmek için ping kullanır. Bir sunucunun çevrimiçi ve yanıt verip vermediğini belirlemeye, ağ yoğunluğunu veya donanım sorunlarını gösterebilecek paket kaybını tespit etmeye ve ağ bağlantılarının kalitesini ölçmeye yardımcı olur. Oyuncular çevrimiçi oyunlara katılmadan önce sunucu gecikmesini kontrol etmek için ping kullanırken, web sitesi sahipleri optimum kullanıcı deneyimi sağlamak için sunucularının yanıt verme durumunu izler.",
+            "metrics_title": "Ping Metriklerini Anlamak",
+            "metric1": "<strong>Gönderilen/Alınan Paketler:</strong> Ping isteklerinin ve başarılı yanıtların sayısı",
+            "metric2": "<strong>Packet Loss:</strong> Yanıt alınamayan paketlerin yüzdesi",
+            "metric3": "<strong>Minimum Süre:</strong> Kaydedilen en hızlı gidiş-dönüş süresi",
+            "metric4": "<strong>Ortalama Süre:</strong> Tüm pingler arasındaki ortalama gecikme",
+            "metric5": "<strong>Maksimum Süre:</strong> Kaydedilen en yavaş gidiş-dönüş süresi",
+            "metric6": "<strong>TTL (Yaşam Süresi):</strong> Paketin geçerliliğini yitirmeden önceki ağ atlama sayısı",
+            "interpreting_title": "Sonuçları Yorumlama",
+            "interpreting_desc": "İyi ping süreleri genellikle yerel bağlantılar için 50 ms'nin, uluslararası bağlantılar için 100 ms'nin altındadır. 100-200 ms arası süreler çoğu uygulama için kabul edilebilirdir ancak oyun veya video konferans gibi gerçek zamanlı uygulamalarda belirgin gecikmeye neden olabilir. 200 ms'nin üzerindeki her değer potansiyel ağ sorunlarına işaret eder. %1'in üzerindeki paket kaybı, araştırılması gereken ağ problemlerini gösterir. Tutarlı ping süreleri kararlı bağlantıları, değişken süreler ise ağ yoğunluğunu veya yönlendirme sorunlarını gösterir."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "İyi bir ping süresi ne olmalıdır?",
+            "a1": "Çevrimiçi oyunlar için 20-50 ms mükemmeldir. Genel kullanım için 100 ms altı iyidir. 150 ms ve üzeri bağlantıda gecikmeye neden olabilir.",
+            "q2": "Paket kaybı (Packet Loss) nedir?",
+            "a2": "Gönderilen verinin hedefe ulaşamaması veya geri dönememesidir. Cızırtılı sesler, takılan videolar veya oyunlarda kopmalara neden olur.",
+            "q3": "Neden bazı sitelere ping atamıyorum?",
+            "a3": "Bazı sunucular veya web siteleri güvenlik nedeniyle (DDoS saldırılerini önlemek için) ping isteklerini (ICMP) engeller.",
+            "q4": "Ping süresini nasıl düşürebilirim?",
+            "a4": "Ethernet kablosu kullanın, arka plandaki indirmeleri durdurun ve size coğrafi olarak daha yakın olan sunucuları tercih edin.",
+            "q5": "Ping ve Jitter arasındaki fark nedir?",
+            "a5": "Ping gecikme süresini ölçerken, Jitter bu gecikme süresindeki dalgalanmayı (istikrarsızlığı) ifade eder."
+        },
+        "js": {
+            "pinging": "Ping gönderiliyor...",
+            "success": "Bağlantı başarılı!",
+            "error": "Yanıt alınamadı.",
+            "ping_host": "Ping Gönder"
+        }
+    },
+    "port-checker": {
+        "meta": {
+            "title": "Bağlantı Noktası Denetleyici Aracı - Ücretsiz Çevrimiçi Açık Bağlantı Noktası Tarayıcı",
+            "description": "Bağlantı noktalarının açık, kapalı veya filtrelenmiş olup olmadığını test etmek için ücretsiz port kontrol aracı. Ağ sorunlarını giderme ve güvenlik denetimi için TCP/UDP portlarını anında kontrol edin.",
+            "h1": "Bağlantı Noktası Denetleyici Aracı",
+            "subtitle": "Bağlantı sorunlarını gidermek için herhangi bir sunucudaki portların açık olup olmadığını kontrol edin"
+        },
+        "form": {
+            "host_label": "Ana Bilgisayar veya IP Adresi",
+            "host_placeholder": "orneksite.com veya 8.8.8.8",
+            "port_label": "Port Numarası",
+            "port_placeholder": "80",
+            "button": "Portu Kontrol Et"
+        },
+        "results": {
+            "title": "Port Durumu"
+        },
+        "content": {
+            "what_is_title": "Port Kontrol Aracı Nedir?",
+            "what_is_desc": "Port Kontrol Aracı, bir sunucu veya cihazdaki belirli bir TCP veya UDP portunun açık (bağlantı kabul ediyor), kapalı (bağlantı reddediyor) veya filtrelenmiş (bir güvenlik duvarı tarafından engellenmiş) olup olmadığını belirleyen bir ağ tanılama aracıdır. Portlar, her bir port numarasının (1-65535) potansiyel olarak farklı hizmetleri barındırdığı ağ iletişimi için sanal uç noktalardır. Yaygın portlar arasında HTTP web trafiği için 80, HTTPS için 443, SSH için 22 ve e-posta için 25 bulunur. Port durumunu kontrol etmek; ağ yapılandırması, güvenlik denetimi ve bağlantı sorunlarını gidermek için gereklidir.",
+            "why_check_title": "Neden Portlar Kontrol Edilmeli?",
+            "why_check_desc": "Port kontrolü, ağ yönetimi ve güvenliğinde birden fazla kritik amaca hizmet eder. Sistem yöneticileri yapılandırma değişikliklerinden sonra hizmetlerin amaçlanan portlar üzerinden erişilebilir olduğunu doğrular. Güvenlik uzmanları potansiyel güvenlik açıklarını belirlemek ve gereksiz portların kapalı olduğundan emin olmak için açık portları tarar. Geliştiriciler uygulamalarının yapılandırılan portları düzgün bir şekilde dinleyip dinlemediğini test eder. Ağ sorunlarını giderenler hizmetlerin neden erişilebilir olmadığını teşhis etmek için port kontrolünü kullanır; sorunun hizmetin kendisinde mi, güvenlik duvarı kurallarında mı yoksa ağ yönlendirmesinde mi olduğunu belirler.",
+            "common_ports_title": "Yaygın Portlar",
+            "port1": "<strong>Port 80:</strong> HTTP (web trafiği)",
+            "port2": "<strong>Port 443:</strong> HTTPS (güvenli web trafiği)",
+            "port3": "<strong>Port 22:</strong> SSH (güvenli kabuk erişimi)",
+            "port4": "<strong>Port 21:</strong> FTP (dosya aktarımı)",
+            "port5": "<strong>Port 25:</strong> SMTP (e-posta gönderimi)",
+            "port6": "<strong>Port 3306:</strong> MySQL veritabanı",
+            "port7": "<strong>Port 3389:</strong> RDP (Uzak Masaüstü)",
+            "security_title": "Güvenlik Etkileri",
+            "security_desc": "Açık portlar saldırganlar için potansiyel giriş noktalarını temsil eder. En iyi güvenlik uygulaması, sadece gerekli portları açık tutmayı ve diğer tüm portları kapatmayı veya filtrelemeyi gerektirir. Kendi sunucularınızı düzenli olarak taramak, istismar edilebilecek istenmeyen açık portları belirlemeye yardımcı olur. Ancak başkalarının sistemlerini izin almadan taramak yasal olmayabilir ve düşmanca bir faaliyet olarak kabul edilir. Sahibi olmadığınız sistemlerde port taraması yapmadan önce her zaman yetkiniz olduğundan emin olun."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Bir portun 'filtrelenmiş' (filtered) olması ne anlama gelir?",
+            "a1": "Sorgunun hedefe ulaştığını ancak bir güvenlik duvarı tarafından engellendiğini ve sistemin bir yanıt vermediğini gösterir.",
+            "q2": "Port 80 ve 443 neden her zaman açık olmalıdır?",
+            "a2": "Port 80 (HTTP) ve 443 (HTTPS), web sitelerinin internet üzerinden ziyaretçilere hizmet verebilmesi için gerekli olan standart portlardır.",
+            "q3": "Neden 'Açık' portlar tehlikeli olabilir?",
+            "a3": "Eğer o portu dinleyen uygulamada bir güvenlik açığı varsa, saldırganlar bu açık kapıyı kullanarak sisteme sızabilirler.",
+            "q4": "TCP ve UDP portları arasındaki fark nedir?",
+            "a4": "TCP bağlantı odaklı ve güvenlidir; UDP ise daha hızlıdır ancak veri ulaşım garantisi vermez (akış ve oyunlar gibi).",
+            "q5": "Yerel ağdaki bir portu dışarıdan kontrol edebilir miyim?",
+            "a5": "Yönlendiricinizde (router) 'Port Yönlendirme' (Port Forwarding) yapmadıysanız, yerel cihazlarınızın portları dış dünyadan kapalı görünecektir."
+        },
+        "js": {
+            "checking": "Kontrol ediliyor...",
+            "success": "Port AÇIK!",
+            "error": "Port KAPALI veya filtrelenmiş.",
+            "check_port": "Portu Kontrol Et"
+        }
+    },
+    "reverse-dns-lookup": {
+        "meta": {
+            "title": "Ters DNS Araması - Etki Alanına Ücretsiz Çevrimiçi IP Aracı",
+            "description": "Ücretsiz çevrimiçi ters DNS sorgulama aracı. Herhangi bir IP adresiyle ilişkili ana bilgisayar adını anında bulun. Hızlı, güvenli ve kullanımı kolay.",
+            "h1": "Ters DNS Araması",
+            "subtitle": "Bir IP adresiyle ilişkili alan adını veya ana bilgisayar adını anında bulun"
+        },
+        "form": {
+            "ip_label": "IP Adresini Girin",
+            "ip_placeholder": "örn. 8.8.8.8",
+            "button": "Ters DNS Sorgula",
+            "button_loading": "Sorgulanıyor..."
+        },
+        "results": {
+            "title": "Ters DNS Sonuçları"
+        },
+        "content": {
+            "what_is_title": "Ters DNS Sorgulama Nedir?",
+            "what_is_desc": "Ters DNS sorgulama (rDNS), bir IP adresiyle ilişkili alan adını veya ana bilgisayar adını belirleme işlemidir. Bir alan adını IP adresine dönüştüren standart DNS sorgulamasının (ileri sorgulama) aksine, rDNS tam tersini yapar. Genellikle bir sunucunun kimliğini doğrulamak veya ağ sorunlarını gidermek için kullanılır.",
+            "why_use_title": "Neden Ters DNS Sorgulama Kullanılmalı?",
+            "why_use_desc": "Ters DNS, güvenlik ve doğrulama amaçları için yaygın olarak kullanılır. Gelen trafiğin kaynağını tanımlamaya, e-posta gönderenleri doğrulamaya (spam'i önlemek için) ve ağ bağlantı sorunlarını gidermeye yardımcı olur. Birçok posta sunucusu, gelen e-postaları kabul etmek için geçerli rDNS kayıtları gerektirir.",
+            "ptr_records_title": "PTR Kayıtlarını Anlamak",
+            "ptr_record1": "<strong>PTR Kaydı:</strong> Bir İşaretçi Kaydı (PTR), ters DNS sorgulamaları için kullanılan DNS kaydı türüdür.",
+            "ptr_record2": "<strong>Eşleme:</strong> Bir IP adresini tekrar bir ana bilgisayar adına eşler.",
+            "ptr_record3": "<strong>Doğrulama:</strong> E-posta teslim edilebilirliği ve güvenlik doğrulaması için kritik öneme sahiptir.",
+            "ptr_record4": "<strong>IP'den Host'a:</strong> Bir IP adresinin gerçek sahibini tanımlamak için gereklidir.",
+            "ptr_record5": "<strong>Spam Önleme:</strong> Posta sunucuları tarafından gönderen orijinalliğini doğrulamak için kullanılır.",
+            "ptr_record6": "<strong>Ağ Günlükleri:</strong> Ana bilgisayar adlarını göstererek ağ günlüklerini insan tarafından okunabilir hale getirmeye yardımcı olur.",
+            "use_cases_title": "Yaygın Kullanım Durumları",
+            "use_cases_desc": "Yaygın kullanım durumları arasında web trafiğinin kaynağını doğrulamak, ağ gecikmesini veya yönlendirme sorunlarını teşhis etmek, e-posta sunucu yapılandırmalarını onaylamak ve potansiyel olarak kötü amaçlı IP adreslerini tanımlayarak siber güvenlik denetimlerini geliştirmek yer alır."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "PTR kaydı nedir?",
+            "a1": "Bir PTR (İşaretçi) kaydı, bir IP adresini bir ana bilgisayar adına eşleyen bir DNS kaydı türüdür. Ters DNS sorgulamasının temel bileşenidir.",
+            "q2": "Ters DNS e-posta için neden önemlidir?",
+            "a2": "Birçok e-posta sağlayıcısı, gönderen sunucunun meşru olduğunu doğrulamak için ters DNS kullanır. Bir sunucunun IP adresinin eşleşen bir rDNS kaydı yoksa, e-postaları spam olarak işaretlenebilir.",
+            "q3": "Herhangi bir IP adresinin ters DNS kaydı olabilir mi?",
+            "a3": "Evet, ancak IP adresinin sahibi (genellikle İSS veya barındırma sağlayıcısı) DNS ayarlarında PTR kaydını yapılandırmalıdır."
+        }
+    },
+    "traceroute": {
+        "meta": {
+            "title": "Traceroute Online - Ücretsiz Ağ Analiz Aracı",
+            "description": "Ücretsiz çevrimiçi traceroute aracı. Hızlı, güvenli ve kullanımı kolay.",
+            "h1": "Traceroute",
+            "subtitle": "Geliştiriciler ve BT profesyonelleri için en iyi traceroute aracı"
+        },
+        "form": {
+            "host_label": "Ana Bilgisayar veya IP Adresi",
+            "host_placeholder": "google.com veya 8.8.8.8",
+            "button": "İzleme Başlat",
+            "button_loading": "İzleniyor..."
+        },
+        "results": {
+            "title": "İzleme Sonuçları"
+        },
+        "content": {
+            "what_is_title": "Traceroute Nedir?",
+            "what_is_desc": "Traceroute, verilerin bir bilgisayardan bir sunucuya giderken internet üzerinden izlediği yolu gösteren bir ağ tanılama aracıdır. Veri paketlerinin geçtiği her bir yönlendiriciyi (hop) ve her duraktaki gecikme süresini listeler.",
+            "why_use_title": "Neden Traceroute Kullanılmalı?",
+            "why_use_desc": "Ağ gecikmelerinin nerede oluştuğunu belirlemek, yönlendirme sorunlarını teşhis etmek ve ağın fiziksel yapısını anlamak için kullanılır.",
+            "hops_title": "Atlamaları (Hops) Anlamak",
+            "hop1": "Her 'atlama', yol üzerindeki bir yönlendiriciyi temsil eder.",
+            "hop2": "Süreler, paketin o noktaya gidip gelmesi için geçen milisaniyeyi gösterir.",
+            "hop3": "Yıldız işaretleri (*), o durağın yanıt vermediğini (zaman aşımı) gösterir.",
+            "hop4": "Atlama sayısı ne kadar azsa, bağlantı genellikle o kadar hızlıdır.",
+            "hop5": "Atlamalar arasındaki büyük süre farkları, bir ağ tıkanıklığına işaret eder.",
+            "hop6": "İzlemenin bittiği durak, hedef sunucudur.",
+            "issues_title": "Sık Karşılaşılan Sorunlar",
+            "issues_desc": "Zaman aşımları genellikle güvenlik duvarlarının ICMP paketlerini engellemesi nedeniyle oluşur ve her zaman bir ağ sorunu anlamına gelmez."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "Traceroute ve Ping arasındaki fark nedir?",
+            "a1": "Ping sadece hedefe ulaşılıp ulaşılamadığını ve toplam süreyi ölçer; Traceroute ise yol üzerindeki her bir durağı tek tek gösterir.",
+            "q2": "Neden bazı atlamalarda yıldız (*) görünüyor?",
+            "a2": "Bu, o durağın güvenlik nedeniyle ping/traceroute isteklerine yanıt vermediği anlamına gelir. Yol kapalı değil, sadece o durak gizlidir.",
+            "q3": "Atlama sayısının fazla olması kötü müdür?",
+            "a3": "Genellikle evet, çünkü her atlama potansiyel bir gecikme noktasıdır; ancak önemli olan toplam gidiş-dönüş süresidir."
+        }
+    },
+    "user-agent-parser": {
+        "meta": {
+            "title": "Kullanıcı Aracısı Ayrıştırıcı - Ücretsiz Çevrimiçi Tarayıcı Ayrıntı Aracı",
+            "description": "Ücretsiz aracımızla User Agent dizesinden tarayıcıyı, işletim sistemini ve cihazı tanımlayın.",
+            "h1": "Kullanıcı Aracısı Ayrıştırıcısı",
+            "subtitle": "User Agent dizesinden tarayıcı, işletim sistemi ve cihazı tanımlayın"
+        },
+        "editor": {
+            "label_input": "User Agent Dizesi",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Çözümle",
+            "btn_use_my_ua": "Benim User Agent'ımı Kullan",
+            "label_browser": "Tarayıcı",
+            "label_os": "İşletim Sistemi",
+            "label_device": "Cihaz",
+            "label_raw": "Ham Motor Bilgisi"
+        },
+        "content": {
+            "p1": "Ücretsiz User Agent Çözümleyicimiz; tarayıcıyı, işletim sistemini, cihaz tipini ve motor sürümünü tanımlamak için user agent dizelerini anında çözer. Tarayıcıya özgü sorunları gidermek veya trafik kaynaklarını analiz etmek isteyen geliştiriciler için yararlıdır.",
+            "features_title": "Özellikler",
+            "features": {
+                "instant": {
+                    "title": "Anında Çözümleme",
+                    "desc": "User agent'ları milisaniyeler içinde çözün"
+                },
+                "detailed": {
+                    "title": "Detaylı Bilgi",
+                    "desc": "Tarayıcı, İşletim Sistemi, Cihaz ve Motoru ayrıştırır"
+                },
+                "auto": {
+                    "title": "Otomatik Algılama",
+                    "desc": "Kendi güncel user agent'ınızı tek tıklamayla çözümleyin"
+                },
+                "free": {
+                    "title": "100% Ücretsiz",
+                    "desc": "Sınırsız kullanım, maliyet yok"
+                }
+            },
+            "uses_title": "Yaygın Kullanım Durumları",
+            "uses": {
+                "debugging": {
+                    "title": "Hata Ayıklama",
+                    "desc": "Sorun giderme için detaylı tarayıcı sürümlerini tanımlayın"
+                },
+                "analytics": {
+                    "title": "Analitik",
+                    "desc": "Kullanıcılarınızın hangi cihazları ve işletim sistemlerini kullandığını anlayın"
+                },
+                "dev": {
+                    "title": "Geliştirme",
+                    "desc": "Test sırasında user agent dizelerini doğrulayın"
+                },
+                "security": {
+                    "title": "Güvenlik",
+                    "desc": "Günlüklerdeki şüpheli user agent dizelerini analiz edin"
+                }
+            },
+            "how_to_title": "Nasıl Kullanılır?",
+            "how_to": {
+                "step1": {
+                    "title": "Dizeyi Girin",
+                    "desc": "Bir User Agent dizesi yapıştırın veya 'Benim User Agent'ımı Kullan'a tıklayın"
+                },
+                "step2": {
+                    "title": "Çözümle",
+                    "desc": "Dizeyi çözmek için 'Çözümle'ye tıklayın"
+                },
+                "step3": {
+                    "title": "Sonuçları Görüntüle",
+                    "desc": "Tarayıcı, İşletim Sistemi ve Cihaz için parçalanmış ayrıntıları görün"
+                }
+            },
+            "faq_title": "Sıkça Sorulan Sorular",
+            "faq": {
+                "q1": "User Agent nedir?",
+                "a1": "User Agent (Kullanıcı Aracısı), web tarayıcınız tarafından ziyaret ettiğiniz her web sitesine gönderilen, tarayıcıyı, sürümü, işletim sistemini ve cihaz tipini tanımlayan bir metin dizisidir.",
+                "q2": "Bu çözümleyici ne kadar doğru?",
+                "a2": "Yaygın ve gerçek dünya user agent'larını tanımlamak için standart kalıp eşleştirme kullanır. Ancak, user agent dizeleri değiştirilebilir veya yanıltılabilir.",
+                "q3": "Verilerim gizli mi?",
+                "a3": "Evet, çözümleme işlemi yerel olarak tarayıcınızda gerçekleşir. User agent verilerinizi saklamıyoruz."
+            }
+        }
+    },
+    "what-is-my-ip": {
+        "meta": {
+            "title": "IP Adresim nedir? - Ücretsiz Çevrimiçi IP Denetleyicisi",
+            "description": "Genel IP adresinizi anında öğrenin. IPv4/IPv6 adresinizi, İSS'nizi, konumunuzu ve bağlantı ayrıntılarınızı ücretsiz kontrol edin. Ağ sorunlarını gidermek için gereklidir.",
+            "h1": "IP Adresim nedir?",
+            "subtitle": "Detaylı İSS bilgileriyle genel IP adresinizi anında keşfedin"
+        },
+        "ui": {
+            "loading": "IP bilgileri yükleniyor...",
+            "your_ip_title": "Senin IP Adresin",
+            "copy_button": "Kopyala",
+            "timezone": "Saat Dilimi"
+        },
+        "results": {
+            "location": "Konum",
+            "isp": "İSS",
+            "country": "Ülke"
+        },
+        "content": {
+            "main_title": "IP Adresim Nedir - Ücretsiz IP Sorgulama Aracı",
+            "main_desc": "Ücretsiz IP sorgulama aracımızla genel IP adresinizi anında bulun. IPv4 veya IPv6 adresinizi, kesin coğrafi konumunuzu (şehir, bölge, ülke), İSS bilgilerinizi, saat diliminizi ve tam ağ ayrıntılarınızı keşfedin. Ağ yapılandırması, güvenlik testi, uzaktan erişim kurulumu, VPN doğrulaması ve internet bağlantı izinizi anlamak için gereklidir.",
+            "what_is_title": "IP Adresim Nedir?",
+            "what_is_desc": "IP adresiniz, internete bağlandığında cihazınıza atanan benzersiz bir sayısal tanımlayıcıdır. Web sitelerinin ve hizmetlerin cihazınızla iletişim kurmasını ve yaklaşık konumunuzu tanımlamasını sağlar.",
+            "ipv4_vs_ipv6_title": "IPv4 ve IPv6 Adresleri",
+            "ipv4_title": "IPv4 Adresi",
+            "ipv4_format": "<strong>Format:</strong> 192.168.1.1 (noktalarla ayrılmış 0-255 arası dört sayı)",
+            "ipv4_total": "<strong>Toplam Adres:</strong> ~4.3 milyar adres",
+            "ipv4_desc": "Dünya çapında en yaygın format, ancak internetin büyümesi nedeniyle kullanılabilir adresleri tükeniyor.",
+            "ipv6_title": "IPv6 Adresi",
+            "ipv6_format": "<strong>Format:</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>Toplam Adres:</strong> 340 undesilyon adres",
+            "ipv6_desc": "Neredeyse sınırsız adrese sahip yeni format, yavaş yavaş IPv4'ün yerini alıyor.",
+            "why_check_title": "Neden IP'nizi Kontrol Etmelisiniz?",
+            "why_check_desc": "IP adresinizi bilmek; ağ sorunlarını gidermek, VPN bağlantılarını doğrulamak, konumunuzun gizlenip gizlenmediğini kontrol etmek ve web sitelerinin sizin hakkınızda hangi bilgileri görebildiğini anlamak için yararlıdır.",
+            "public_vs_private_title": "Genel ve Özel IP Adresleri",
+            "public_ip_title": "🌐 Genel IP Adresi",
+            "public_ip_desc": "İnternetteki benzersiz adresiniz, ziyaret ettiğiniz tüm web siteleri ve hizmetler tarafından görülür.",
+            "public_ip_example": "<strong>Örnek:</strong> 203.0.113.45",
+            "public_ip_note": "İSS'niz tarafından atanır ve tüm internet iletişimi için kullanılır.",
+            "private_ip_title": "🏠 Özel IP Adresi",
+            "private_ip_desc": "Cihazınızın yerel ağınızdaki adresi, internette görülmez.",
+            "private_ip_example": "<strong>Örnek:</strong> 192.168.1.100",
+            "private_ip_note": "Ev veya ofis ağınızdaki iletişim için kullanılır.",
+            "security_title": "IP Adresi Güvenliği ve Gizliliği",
+            "security_desc1": "IP adresiniz yaklaşık konumunuzu (şehir/bölge), İSS'nizi ortaya çıkarır ve çevrimiçi etkinliğinizi web siteleri arasında takip etmek için kullanılabilir. Tam ev adresinizi veya kişisel kimliğinizi doğrudan ifşa etmese de, takip için diğer verilerle birleştirilebilir. Web siteleri IP'nizi analitik, reklam hedefleme ve coğrafi kısıtlamalar için kullanır.",
+            "security_desc2": "<strong>Gizlilik Koruması:</strong> Gerçek IP adresinizi maskelemek ve gizliliği artırmak için bir VPN (Sanal Özel Ağ) kullanın. VPN'ler trafiğinizi kendi sunucuları üzerinden yönlendirerek sizin yerinize VPN'in IP'sini gösterir. Aracımız, web sitelerinin bağlantınız hakkında tam olarak hangi bilgileri görebildiğini gösterir.",
+            "dynamic_vs_static_title": "Dinamik ve Statik IP Adresleri",
+            "dynamic_ip": "<strong>Dinamik IP:</strong> Periyodik olarak değişir (günlük, haftalık veya yönlendiricinizi yeniden başlattığınızda). Çoğu ev kullanıcısı, İSS'leri tarafından otomatik olarak atanan dinamik IP'lere sahiptir. Ev bağlantıları için daha ucuz ve daha yaygındır.",
+            "static_ip": "<strong>Statik IP:</strong> Hiç değişmez ve sabit kalır. Genellikle iş bağlantıları, web sunucuları, e-posta sunucuları ve uzaktan erişim için kullanılır. Daha maliyetlidir ancak hizmet barındırma için gereklidir.",
+            "privacy_tips_title": "Gizlilik ve Güvenlik İpuçları",
+            "privacy_tip1": "• IP adresinizi asla forumlarda veya sosyal medyada herkese açık paylaşmayın",
+            "privacy_tip2": "• Herkese açık Wi-Fi ağlarına bağlanırken bir VPN kullanın",
+            "privacy_tip3": "• Yetkisiz erişimi engellemek için yönlendiricinizin güvenlik duvarını etkinleştirin",
+            "privacy_tip4": "• Yetkisiz VPN bağlantı kesilmelerini tespit etmek için IP'nizi düzenli olarak kontrol edin",
+            "privacy_tip5": "• Web sitelerinin güvenlik ve analitik için IP'nizi günlüğe kaydettiğini unutmayın"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "IP adresimi bir başkasıyla paylaşırsam ne olur?",
+            "a1": "Kötü niyetli kişiler yaklaşık konumunuzu bulabilir veya internet bağlantınıza yönelik saldırılar (DDoS gibi) düzenleyebilir. Güvenmediğiniz kişilerle paylaşmamalısınız.",
+            "q2": "Bir web sitesi IP adresimden kim olduğumu bulabilir mi?",
+            "a2": "Doğrudan isminizi veya ev adresinizi bulamazlar, ancak yaklaşık konumunuzu ve internet sağlayıcınızı bilebilirler.",
+            "q3": "Modemi kapatıp açınca IP adresim değişir mi?",
+            "a3": "Eğer dinamik bir IP'niz varsa (çoğu ev kullanıcısı öyledir), modemi kapatıp birkaç dakika bekledikten sonra açtığınızda genellikle yeni bir IP alırsınız."
+        }
+    },
+    "what-is-my-isp": {
+        "meta": {
+            "title": "ISP'm nedir? - Ücretsiz Çevrimiçi Sağlayıcı Denetleyicisi",
+            "description": "İnternet Servis Sağlayıcınızı (İSS) anında öğrenin. İSS adını, organizasyonu, ASN'yi ve IP adresi bilgilerini ücretsiz kontrol edin.",
+            "h1": "ISP'm nedir?",
+            "subtitle": "Bağlantı ayrıntılarıyla İnternet Servis Sağlayıcınızı tanımlayın"
+        },
+        "content": {
+            "loading": "İSS bilgileri yükleniyor...",
+            "your_isp_title": "İnternet Servis Sağlayıcınız",
+            "network_label": "Ağ",
+            "location_label": "Konum",
+            "main_title": "İSS'm Nedir - İnternet Servis Sağlayıcı Sorgulama Aracı",
+            "main_desc": "İnternet Servis Sağlayıcınızı (İSS), organizasyon adınızı, ağ ayrıntılarınızı ve bağlantı bilgilerinizi anında tanımlayın. Ücretsiz İSS sorgulama aracımız İSS adınızı, ASN'nizi (Özerk Sistem Numarası), IP adresinizi, konumunuzu ve ağ altyapınızı ortaya çıkarır. VPN bağlantılarını doğrulamak, ağ sorunlarını gidermek, iş internet hatlarını onaylamak ve ağ yönlendirmenizi anlamak için mükemmeldir.",
+            "info_title": "Hangi Bilgileri Bulabilirsiniz?",
+            "info1": "<strong>İSS Adı:</strong> İnternet bağlantınızı sağlayan şirket",
+            "info2": "<strong>Organizasyon:</strong> Ağ bağlantınızı yöneten organizasyon veya kuruluş",
+            "info3": "<strong>ASN:</strong> Yönlendirme ve eşleme için benzersiz ağ tanımlayıcısı",
+            "info4": "<strong>Konum:</strong> Bağlantınızla ilişkili şehir, bölge ve ülke",
+            "info5": "<strong>Ağ Detayları:</strong> IP aralığı, alt ağ bilgileri ve ağ altyapısı verileri",
+            "why_use_title": "Neden Bu Aracı Kullanmalısınız?",
+            "why_use1": "Doğru internet sağlayıcısı üzerinden bağlı olduğunuzu doğrulayın",
+            "why_use2": "Ağ bağlantısı ve performans sorunlarını giderin",
+            "why_use3": "VPN veya proxy hizmetini doğru kullanıp kullanmadığınızı kontrol edin",
+            "why_use4": "Güvenlik ve gizlilik amaçları için ağınızı tanımlayın",
+            "why_use5": "İnternet servis sağlayıcısının hizmet kapsamı ve altyapı iddialarını doğrulayın",
+            "why_use6": "Ağ yönlendirme ve eşleme ilişkilerini araştırın",
+            "why_use7": "İş internet bağlantılarını ve özel hatları onaylayın",
+            "why_use8": "Yetkisiz ağ erişimini veya bağlantı ele geçirmeyi tespit edin",
+            "asn_title": "ASN'yi (Özerk Sistem Numarası) Anlamak",
+            "asn_desc": "Bir Özerk Sistem Numarası (ASN), tek bir idari kontrol altındaki bir ağ veya ağ grubu için atanan küresel olarak benzersiz bir tanımlayıcıdır. İSS'ler, büyük kuruluşlar ve içerik dağıtım ağlarının her birinin kendi ASN'si vardır. Bu numara, internet trafiğinin farklı ağlar arasında nasıl aktığını belirlemek için BGP (Sınır Geçit Protokolü) yönlendirmesinde kullanılır. ASN'nizi bilmek ağ sağlayıcınızı tanımlamaya ve yönlendirme yollarını anlamaya yardımcı olur.",
+            "use_cases_title": "Yaygın Kullanım Durumları",
+            "use_case1_title": "🔧 Ağ Sorunlarını Giderme",
+            "use_case1_desc": "İSS kaynaklı sorunları tanımlayın, yönlendirme yollarını doğrulayın ve bağlantı problemlerini teşhis edin",
+            "use_case2_title": "🔒 VPN Doğrulaması",
+            "use_case2_desc": "Bağlandığınızda İSS'nin değişip değişmediğini kontrol ederek VPN'inizin çalışıp çalışmadığını onaylayın",
+            "use_case3_title": "🛡️ Güvenlik Denetimleri",
+            "use_case3_desc": "Bağlantı orijinalliğini doğrulayın ve yetkisiz ağ erişimini tespit edin",
+            "use_case4_title": "💼 İş Doğrulaması",
+            "use_case4_desc": "Özel iş hatlarını ve kurumsal internet bağlantılarını onaylayın",
+            "isp_types_title": "İSS Türleri",
+            "isp_type1": "<strong>DSL İSS'ler:</strong> Telefon hatları üzerinden internet (ADSL, VDSL)",
+            "isp_type2": "<strong>Kablo İSS'ler:</strong> Koaksiyel kablo altyapısı üzerinden yüksek hızlı internet",
+            "isp_type3": "<strong>Fiber Optik İSS'ler:</strong> Fiber optik kablolar kullanarak ultra hızlı bağlantılar",
+            "isp_type4": "<strong>Kablosuz/Mobil İSS'ler:</strong> 4G/5G hücresel internet bağlantıları",
+            "isp_type5": "<strong>Uydu İSS'ler:</strong> Uzak bölgeler için uydu üzerinden internet",
+            "isp_type6": "<strong>İş İSS'leri:</strong> SLA (Hizmet Seviyesi Anlaşması) garantili kurumsal bağlantılar",
+            "privacy_note_title": "Gizlilik Notu",
+            "privacy_note_desc": "İSS'niz, şifrelenmemiş tüm internet trafiğini ve ziyaret ettiğiniz web sitelerini görebilir (ancak HTTPS içeriğini göremez). Bağlantı verilerini, göz atma geçmişini ve DNS sorgularını günlüğe kaydedebilirler. Trafiğinizi şifrelemek ve İSS izlemesini önlemek için bir VPN kullanın. Aracımız sadece web sitelerinin zaten görebildiği halka açık bilgileri görüntüler."
+        },
+        "results": {
+            "ip_address": "IP Adresi",
+            "asn": "ASN"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "İSS'm internet hızımı sınırlayabilir mi?",
+            "a1": "Evet, bazı İSS'ler belirli saatlerde veya yüksek veri kullanımı olan uygulamalarda (torrent, oyun vb.) bant genişliğini daraltabilir.",
+            "q2": "İSS ismim neden mobil operatörümü gösteriyor?",
+            "a2": "Eğer telefonunuzun kişisel erişim noktasını (hotspot) kullanıyorsanız veya mobil veri ile bağlıysanız, İSS olarak mobil sağlayıcınız görünür.",
+            "q3": "İSS'mi değiştirmek IP adresimi değiştirir mi?",
+            "a3": "Evet, her internet servis sağlayıcısı kendi IP havuzuna sahiptir, bu nedenle sağlayıcı değişikliği yeni bir IP adresi demektir."
+        },
+        "js": {
+            "error_loading": "İSS bilgileri yüklenirken hata oluştu."
+        }
+    },
+    "whois-lookup": {
+        "meta": {
+            "title": "WHOIS Arama Aracı - Ücretsiz Çevrimiçi Alan Adı Bilgisi Denetleyicisi",
+            "description": "Alan adı kayıt detaylarını kontrol etmek için ücretsiz WHOIS sorgulama aracı. Kayıt kuruluşunu, ad sunucularını, son kullanma tarihini ve alan adı durumunu anında görüntüleyin.",
+            "h1": "WHOIS Arama Aracı",
+            "subtitle": "Alan adı tescil ve sahiplik detayları için WHOIS veritabanını sorgulayın"
+        },
+        "form": {
+            "domain_label": "Alan Adı",
+            "domain_placeholder": "orneksite.com",
+            "button": "WHOIS Sorgula",
+            "button_loading": "Sorgulanıyor..."
+        },
+        "content": {
+            "form_hint": "Alan adını http:// veya https:// olmadan girin",
+            "what_is_title": "WHOIS Sorgulama Nedir?",
+            "what_is_desc": "WHOIS, alan adı tescilleri hakkında bilgi sağlayan bir protokoldür. Alan adı sahipliği, tescil tarihleri, son kullanma tarihleri, ad sunucuları ve kayıt kuruluşu bilgileri hakkındaki ayrıntıları ortaya çıkarır.",
+            "why_use_title": "Neden WHOIS Sorgulama Kullanılmalı?",
+            "why_use_desc": "WHOIS sorgulama; alan adı sahipliğini doğrulamak, alan adı müsaitliğini kontrol etmek, şüpheli web sitelerini araştırmak, alan adı son kullanma tarihlerini izlemek ve rakiplerin alan adlarını araştırmak için gereklidir.",
+            "key_info_title": "Sağlanan Temel Bilgiler",
+            "key_info1": "<strong>Kayıt Sahibi Bilgileri:</strong> Alan adı sahibi ayrıntıları (gizlilik korumalı olabilir)",
+            "key_info2": "<strong>Tescil Tarihleri:</strong> Alan adının ne zaman tescil edildiği ve en son ne zaman güncellendiği",
+            "key_info3": "<strong>Son Kullanma Tarihi:</strong> Alan adı tescilinin ne zaman sona ereceği",
+            "key_info4": "<strong>Kayıt Kuruluşu (Registrar):</strong> Alan adı tescilini yöneten şirket",
+            "key_info5": "<strong>Ad Sunucuları (Name Servers):</strong> Alan adına barındırma sağlayan DNS sunucuları",
+            "key_info6": "<strong>Alan Adı Durumu:</strong> Mevcut durum kodları ve kilitler",
+            "how_to_title": "Nasıl Kullanılır?",
+            "how_to1": "Sorgulamak istediğiniz alan adını girin",
+            "how_to2": "\"WHOIS Sorgula\" butonuna tıklayın",
+            "how_to3": "Kapsamlı tescil bilgilerini inceleyin",
+            "how_to4": "Verileri araştırmanız veya doğrulama ihtiyaçlarınız için kullanın",
+            "privacy_title": "Gizlilik ve WHOIS",
+            "privacy_desc": "Birçok alan adı kayıt kuruluşu, kişisel bilgileri genel WHOIS veritabanlarından gizleyen WHOIS gizlilik koruma hizmetleri sunmaktadır. Bu, alan adı sahiplerini spam, kimlik hırsızlığı ve istenmeyen taleplerden korurken, alan adı operasyonu için gerekli temel teknik bilgilerin korunmasını sağlar. GDPR düzenlemeleri de WHOIS verilerinin erişilebilirliğini etkilemiş ve birçok Avrupa kayıt kuruluşunun gizlilik yasalarına uymak için kişisel bilgileri gizlemesine neden olmuştur."
+        },
+        "results": {
+            "title": "WHOIS Sonuçları"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular",
+            "q1": "WHOIS gizliliği nedir?",
+            "a1": "Alan adı sahibinin iletişim bilgilerinin (isim, e-posta, telefon vb.) genel aramada görünmemesi için bu bilgilerin kayıt kuruluşu tarafından maskelenmesidir.",
+            "q2": "Bir alan adının ne zaman boşa düşeceğini nasıl öğrenebilirim?",
+            "a2": "WHOIS sorgusundaki 'Son Kullanma Tarihi' (Expiry Date) kısmına bakarak öğrenebilirsiniz. Ancak boşa düşmesi genellikle bu tarihten sonraki bir bekleme süresinden sonra olur.",
+            "q3": "WHOIS verileri ne kadar günceldir?",
+            "a3": "Veriler genellikle tescil veya güncelleme yapıldıktan kısa süre sonra WHOIS veritabanlarına yansır, ancak tam senkronizasyon bazen birkaç saat sürebilir.",
+            "q4": "How often is WHOIS data updated?",
+            "a4": "WHOIS data is updated in real-time when domain registration information changes. However, different WHOIS servers may cache data for varying periods. Recent changes might take a few hours to propagate across all WHOIS databases globally."
+        }
+    }
+}

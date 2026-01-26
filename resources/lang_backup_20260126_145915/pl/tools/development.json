@@ -1,0 +1,2566 @@
+{
+    "base64-encoder-decoder": {
+        "meta": {
+            "title": "Koder i dekoder Base64 — bezpłatne narzędzie programistyczne online",
+            "description": "Koduj i dekoduj dane Base64 natychmiastowo za pomocą naszego darmowego narzędzia online",
+            "h1": "Koder i dekoder Base64",
+            "subtitle": "Koduj i dekoduj dane Base64 natychmiastowo"
+        },
+        "editor": {
+            "tab_encode": "Zakoduj do Base64",
+            "tab_decode": "Dekoduj z Base64",
+            "label_encode": "Wprowadź tekst do zakodowania",
+            "ph_encode": "Wpisz swój tekst tutaj...",
+            "desc_encode": "Wprowadź dowolny tekst, aby przekonwertować go na format Base64",
+            "btn_encode": "Zakoduj do Base64",
+            "label_decode": "Wprowadź Base64 do dekodowania",
+            "ph_decode": "Wprowadź ciąg zakodowany w Base64...",
+            "desc_decode": "Wprowadź tekst zakodowany w Base64, aby odkodować go z powrotem do zwykłego tekstu",
+            "btn_decode": "Dekoduj z Base64",
+            "result_title": "Wynik",
+            "btn_copy": "Kopiuj wynik"
+        },
+        "content": {
+            "what_title": "Co to jest kodowanie Base64?",
+            "what_desc": "Base64 to schemat kodowania binarnego na tekst, który reprezentuje dane binarne w formacie ciągu ASCII. Jest powszechnie używany do kodowania danych, które muszą być przechowywane lub przesyłane przez media przeznaczone do obsługi tekstu. Nasze darmowe narzędzie do kodowania i dekodowania Base64 pozwala programistom, analitykom danych i specjalistom IT szybko konwertować tekst na Base64 lub dekodować ciągi Base64 z powrotem na czytelny tekst. Idealne do tworzenia API, transmisji danych, załączników e-mail, osadzania obrazów w HTML/CSS i obsługi danych binarnych w JSON.",
+            "features": {
+                "secure": {
+                    "title": "Bezpieczne kodowanie",
+                    "desc": "Całe przetwarzanie odbywa się w przeglądarce - Twoje dane nigdy nie opuszczają komputera"
+                },
+                "instant": {
+                    "title": "Natychmiastowa konwersja",
+                    "desc": "Koduj lub dekoduj dane Base64 w milisekundach dzięki przetwarzaniu po stronie klienta"
+                },
+                "easy": {
+                    "title": "Łatwy w użyciu",
+                    "desc": "Prosty interfejs z zakładkami do kodowania i dekodowania z kopiowaniem jednym kliknięciem"
+                }
+            },
+            "how_to": {
+                "title": "Jak używać Enkodera/Dekodera Base64",
+                "encode": {
+                    "title": "Kodowanie tekstu",
+                    "step1": "Kliknij zakładkę \"Zakoduj do Base64\"",
+                    "step2": "Wklej lub wpisz swój tekst w polu wejściowym",
+                    "step3": "Kliknij przycisk \"Zakoduj do Base64\"",
+                    "step4": "Skopiuj wynik zakodowany w Base64"
+                },
+                "decode": {
+                    "title": "Dekodowanie Base64",
+                    "step1": "Kliknij zakładkę \"Dekoduj z Base64\"",
+                    "step2": "Wklej ciąg Base64 w polu wejściowym",
+                    "step3": "Kliknij przycisk \"Dekoduj z Base64\"",
+                    "step4": "Skopiuj odkodowany wynik tekstowy"
+                }
+            },
+            "uses": {
+                "title": "Typowe przypadki użycia Base64",
+                "api": {
+                    "title": "Uwierzytelnianie API",
+                    "desc": "Koduj poświadczenia dla podstawowego uwierzytelniania w nagłówkach HTTP i żądaniach API."
+                },
+                "data_uri": {
+                    "title": "URI danych",
+                    "desc": "Osadzaj obrazy, czcionki i pliki bezpośrednio w HTML, CSS lub JSON używając URI danych Base64."
+                },
+                "email": {
+                    "title": "Załączniki e-mail",
+                    "desc": "Koduj załączniki binarne w wiadomościach e-mail MIME dla bezpiecznej transmisji."
+                },
+                "storage": {
+                    "title": "Przechowywanie danych",
+                    "desc": "Przechowuj dane binarne w formatach tekstowych, takich jak JSON, XML lub bazy danych."
+                }
+            },
+            "bottom": {
+                "h1": "Enkoder i dekoder Base64",
+                "subtitle": "Koduj i dekoduj dane Base64 natychmiastowo",
+                "desc": "Base64 to schemat kodowania binarnego na tekst, który konwertuje dane binarne na format tekstowy ASCII. Nasz darmowy Enkoder i Dekoder Base64 pomaga programistom, administratorom systemów i specjalistom IT kodować tekst na Base64 lub dekodować Base64 z powrotem na czytelny tekst natychmiastowo. Idealne do uwierzytelniania API, URI danych, załączników e-mail i bezpiecznej transmisji danych. Całe przetwarzanie odbywa się w przeglądarce dla pełnej prywatności.",
+                "works_title": "🔄 Jak działa Base64",
+                "works_encoding": "Konwertuje dane binarne na tekst ASCII używając 64 znaków",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (oraz = jako wypełnienie)",
+                "works_decoding": "Konwertuje tekst Base64 z powrotem na oryginalne dane binarne",
+                "works_decoding_sub": "Odfwraca proces kodowania idealnie",
+                "cases_title": "✅ Typowe przypadki użycia",
+                "case_api": "Uwierzytelnianie API",
+                "case_api_desc": "Koduj poświadczenia dla Basic Auth w nagłówkach HTTP",
+                "case_uri": "URI danych",
+                "case_uri_desc": "Osadzaj obrazy i pliki bezpośrednio w HTML/CSS",
+                "case_email": "Załączniki e-mail",
+                "case_email_desc": "Koduj pliki binarne do transmisji e-mail",
+                "case_url": "Parametry URL",
+                "case_url_desc": "Bezpiecznie przekazuj dane binarne w adresach URL",
+                "case_storage": "Przechowywanie danych",
+                "case_storage_desc": "Przechowuj dane binarne w bazach tekstowych",
+                "case_web": "Tworzenie stron www",
+                "case_web_desc": "Koduj pliki JSON, XML i konfiguracyjne",
+                "best_practices_title": "💡 Dobre praktyki Base64",
+                "best_practices_list": [
+                    "Base64 zwiększa rozmiar danych o około 33%",
+                    "Nie nadaje się do szyfrowania - używaj odpowiednich algorytmów szyfrowania",
+                    "Idealne do kodowania danych binarnych w systemach tekstowych",
+                    "Zawsze waliduj odkodowane dane przed ich użyciem",
+                    "Używaj URL-safe Base64 dla adresów URL (zamienia +/= na -_)"
+                ]
+            },
+            "faq": {
+                "title": "❓ Często zadawane pytania",
+                "q1": "Czy kodowanie Base64 jest bezpieczne?",
+                "a1": "Nie! Base64 NIE jest szyfrowaniem - to po prostu kodowanie. Każdy może natychmiast odkodować dane Base64. Nigdy nie używaj samego Base64 do celów bezpieczeństwa. Do szyfrowania używaj odpowiednich algorytmów kryptograficznych, takich jak AES, RSA lub TLS/SSL.",
+                "q2": "Dlaczego Base64 zwiększa rozmiar pliku?",
+                "a2": "Kodowanie Base64 zwiększa rozmiar danych o około 33%, ponieważ reprezentuje 3 bajty danych binarnych za pomocą 4 znaków ASCII. Ten narzut jest kompromisem za zapewnienie bezpieczeństwa danych binarnych w systemach tekstowych.",
+                "q3": "Do czego służy Base64?",
+                "a3": "Base64 służy do kodowania danych binarnych (obrazów, plików, poświadczeń) na tekst ASCII w celu transmisji przez systemy tekstowe, takie jak e-mail, adresy URL, JSON, XML i nagłówki HTTP. Jest niezbędny do uwierzytelniania API, URI danych i załączników e-mail.",
+                "q4": "Czy moje dane są wysyłane na serwer?",
+                "a4": "Nie! Całe kodowanie i dekodowanie Base64 odbywa się całkowicie w twojej przeglądarce przy użyciu JavaScript. Twoje dane nigdy nie opuszczają urządzenia i nie są nigdzie przechowywane, przesyłane ani logowane. Twoja prywatność jest całkowicie chroniona.",
+                "q5": "Czy mogę kodować obrazy do Base64?",
+                "a5": "Tak! Chociaż nasze narzędzie koduje tekst, możesz kodować obrazy za pomocą specjalistycznych narzędzi. Obrazy zakodowane w Base64 mogą być osadzane bezpośrednio w HTML/CSS przy użyciu URI danych (data:image/png;base64,...). Jest to przydatne w przypadku małych obrazów, ale zwiększa rozmiar strony."
+            }
+        },
+        "js": {
+            "error_empty_encode": "Wprowadź tekst do zakodowania",
+            "error_encoding": "Błąd kodowania tekstu: ",
+            "error_empty_decode": "Wprowadź ciąg Base64 do zdekodowania",
+            "error_invalid": "Nieprawidłowy ciąg Base64. Sprawdź wprowadzone dane.",
+            "copied": "Skopiowano!"
+        }
+    },
+    "code-formatter": {
+        "meta": {
+            "title": "Darmowy program do formatowania kodu online — wyczyść swój kod źródłowy",
+            "description": "Upiększaj i formatuj swój kod natychmiastowo - obsługuje HTML, CSS, JavaScript, JSON, XML, SQL, PHP",
+            "h1": "Formater kodu",
+            "subtitle": "Upiększaj i formatuj swój kod natychmiastowo"
+        },
+        "editor": {
+            "label_language": "Język",
+            "languages": {
+                "html": "HTML",
+                "css": "CSS",
+                "js": "JavaScript",
+                "json": "JSON",
+                "xml": "XML",
+                "sql": "SQL",
+                "php": "PHP"
+            },
+            "label_indent": "Wcięcie",
+            "indents": {
+                "2": "",
+                "4": "",
+                "tab": "Tab"
+            },
+            "btn_format": "Formatuj kod",
+            "label_input": "Kod wejściowy",
+            "btn_clear": "Wyczyść",
+            "ph_input": "// Wklej swój kod tutaj...",
+            "label_output": "Sformatowany kod",
+            "btn_copy": "Kopiuj",
+            "ph_output": "// Sformatowany kod pojawi się tutaj..."
+        },
+        "content": {
+            "hero_title": "Darmowy formatowacz kodu online",
+            "p1": "Uporządkuj niechlujny kod i popraw czytelność dzięki naszemu darmowemu formatowaczowi kodu online. Niezależnie od tego, czy masz zminimalizowany kod, który wymaga upiększenia, czy po prostu chcesz ujednolicić wcięcia, nasze narzędzie poradzi sobie ze wszystkim natychmiast w Twojej przeglądarce.",
+            "features": {
+                "multi": {
+                    "title": "Obsługa wielu języków",
+                    "desc": "Obsługuje główne języki programowania, w tym HTML, CSS, JS, JSON i inne"
+                },
+                "indent": {
+                    "title": "Niestandardowe wcięcia",
+                    "desc": "Wybierz między 2 spacjami, 4 spacjami lub tabulatorami dla swojego preferowanego stylu"
+                },
+                "instant": {
+                    "title": "Natychmiastowe upiększanie",
+                    "desc": "Formatuj kod natychmiastowo bez przeładowywania strony"
+                },
+                "privacy": {
+                    "title": "Prywatność",
+                    "desc": "Przetwarzanie kodu odbywa się w przeglądarce - żadne dane nie są przechowywane"
+                }
+            },
+            "langs_title": "💻 Obsługiwane języki",
+            "langs": {
+                "web": {
+                    "title": "Technologie webowe",
+                    "desc": "HTML5, CSS3, JavaScript (ES6+)"
+                },
+                "data": {
+                    "title": "Formaty danych",
+                    "desc": "JSON, XML"
+                },
+                "backend": {
+                    "title": "Backend",
+                    "desc": "PHP, SQL"
+                }
+            },
+            "why_title": "🤔 Dlaczego formatować kod?",
+            "why": {
+                "read": {
+                    "title": "Czytelność",
+                    "desc": "Odpowiednio wcięty kod jest łatwiejszy do czytania, zrozumienia i utrzymania."
+                },
+                "debug": {
+                    "title": "Debugowanie",
+                    "desc": "Szybciej znajduj błędy w dobrze zorganizowanym kodzie w porównaniu do zminimalizowanych ciągów."
+                },
+                "collab": {
+                    "title": "Współpraca",
+                    "desc": "Standardowy styl kodu pomaga zespołom pracować razem bardziej efektywnie."
+                }
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Czy mój kod jest bezpieczny?",
+                "a1": "Tak! Całe formatowanie kodu odbywa się za pomocą JavaScript bezpośrednio w Twojej przeglądarce. Twój kod nigdy nie jest wysyłany na nasze serwery.",
+                "q2": "Czy mogę formatować zminimalizowany kod?",
+                "a2": "Oczywiście! Nasz beautifier jest idealny do odwracania minimalizacji kodu, aby znów stał się czytelny.",
+                "q3": "Czy to naprawia błędy składni?",
+                "a3": "Formatowacz skupia się na układzie i wcięciach. Chociaż może poradzić sobie z niektórymi podstawowymi problemami strukturalnymi, nie naprawia błędów składni.",
+                "q4": "Czy jest limit wielkości kodu?",
+                "a4": "Ponieważ przetwarzanie odbywa się na Twoim urządzeniu, limit zależy od pamięci Twojej przeglądarki. Z łatwością poradzi sobie z plikami zawierającymi tysiące linii."
+            }
+        },
+        "js": {
+            "error_empty": "Wklej kod do sformatowania",
+            "success_format": "✓ Kod sformatowany pomyślnie!",
+            "error_format": "Błąd formatowania kodu: ",
+            "no_copy": "Brak kodu do skopiowania",
+            "success_copy": "✓ Skopiowano do schowka!"
+        }
+    },
+    "cron-job-generator": {
+        "meta": {
+            "title": "Generator zadań Cron - bezpłatne narzędzie online Crontab",
+            "description": "Twórz harmonogramy cron z łatwością dzięki naszemu wizualnemu generatorowi - bez konieczności zapamiętywania składni cron",
+            "h1": "Generator zadań Cron",
+            "subtitle": "Twórz harmonogramy cron z łatwością dzięki naszemu wizualnemu generatorowi"
+        },
+        "editor": {
+            "common_settings": "Typowe ustawienia",
+            "choose": "-- Wybierz --",
+            "options": {
+                "every_minute": "Co minutę (* * * * *)",
+                "every_5_minutes": "Co 5 minut (*/5 * * * *)",
+                "every_15_minutes": "Co 15 minut (*/15 * * * *)",
+                "every_30_minutes": "Co 30 minut (*/30 * * * *)",
+                "every_hour": "Co godzinę (0 * * * *)",
+                "every_day_midnight": "Codziennie o północy (0 0 * * *)",
+                "every_week": "Co tydzień (0 0 * * 0)",
+                "every_month": "Co miesiąc (0 0 1 * *)"
+            },
+            "minute": "Minuta",
+            "every_minute": "Co minutę (*)",
+            "hour": "Godzina",
+            "every_hour": "Co godzinę (*)",
+            "day": "Dzień",
+            "every_day": "Codziennie (*)",
+            "month": "Miesiąc",
+            "every_month": "Co miesiąc (*)",
+            "weekday": "Dzień tygodnia",
+            "every_weekday": "W każdy dzień tygodnia (*)",
+            "command": "Komenda do uruchomienia",
+            "ph_command": "/usr/bin/php /sciezka/do/skryptu.php",
+            "generated_cron": "Wygenerowane wyrażenie Cron",
+            "btn_copy": "Kopiuj Cron",
+            "btn_clear": "Reset"
+        },
+        "content": {
+            "hero_title": "Generator zadań Cron",
+            "p1": "Konfigurowanie zadań cron może być mylące z powodu tajemniczych gwiazdek i liczb. Nasz darmowy generator zadań Cron online pozwala wizualnie tworzyć idealne harmonogramy cron. Niezależnie od tego, czy musisz uruchamiać skrypt co 5 minut, o północy, czy w określone dni miesiąca, nasze narzędzie natychmiast generuje dla Ciebie poprawną składnię.",
+            "features": {
+                "visual": {
+                    "title": "Edytor wizualny",
+                    "desc": "Wybieraj minuty, godziny, dni i miesiące za pomocą prostego interfejsu"
+                },
+                "readable": {
+                    "title": "Czytelny dla człowieka",
+                    "desc": "Konwertuje wyrażenia cron na proste opisy"
+                }
+            },
+            "syntax_title": "📚 Zrozumienie składni Cron",
+            "syntax_intro": "Wyrażenie cron składa się z 5 pól oddzielonych spacjami:",
+            "syntax_fields": {
+                "min": "Minuta (0-59)",
+                "hour": "Godzina (0-23)",
+                "day": "Dzień miesiąca (1-31)",
+                "month": "Miesiąc (1-12)",
+                "week": "Dzień tygodnia (0-6, Niedziela=0)"
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Co to jest zadanie cron?",
+                "a1": "Zadanie cron to harmonogram zadań oparty na czasie w systemach operacyjnych typu Unix. Użytkownicy mogą planować zadania (komendy lub skrypty) do cyklicznego uruchamiania w ustalonych porach, datach lub interwałach.",
+                "q2": "Jak zainstalować zadanie cron?",
+                "a2": "Zazwyczaj używasz komendy `crontab -e` w terminalu, aby edytować plik cron. Następnie wklej wygenerowaną linię na dole pliku.",
+                "q4": "Co oznacza gwiazdka (*)?",
+                "a4": "Gwiazdka oznacza \"każdy\". Na przykład gwiazdka w polu minuty oznacza \"każdą minutę\"."
+            }
+        },
+        "js": {
+            "success_copy": "✓ Wyrażenie cron skopiowane do schowka!",
+            "no_copy": "Brak wyrażenia cron do skopiowania"
+        }
+    },
+    "css-minifier": {
+        "meta": {
+            "title": "Miniyfikator i upiększacz CSS — bezpłatne narzędzie CSS online",
+            "description": "Optymalizuj pliki CSS dla szybszego ładowania strony - minimalizuj i upiększaj CSS natychmiastowo",
+            "h1": "Minimalizator i upiększacz CSS",
+            "subtitle": "Optymalizuj pliki CSS dla szybszego ładowania strony"
+        },
+        "editor": {
+            "label_input": "Wejście CSS",
+            "ph_input": "Wklej swój kod CSS tutaj...",
+            "btn_minify": "Minimalizuj CSS",
+            "btn_beautify": "Upiększ CSS",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj",
+            "label_output": "Wyjście CSS",
+            "ph_output": "Przetworzony CSS pojawi się tutaj...",
+            "stats": {
+                "original": "Oryginalny rozmiar",
+                "minified": "Zminimalizowany rozmiar",
+                "saved": "Zaoszczędzono",
+                "compression": "Kompresja"
+            }
+        },
+        "content": {
+            "hero_title": "Darmowy minifikator i upiększacz CSS",
+            "hero_subtitle": "Optymalizuj pliki CSS dla szybszego ładowania strony i lepszej wydajności",
+            "p1": "Nasz darmowy minifikator CSS kompresuje pliki CSS, usuwając białe znaki, komentarze i zbędne znaki, znacznie zmniejszając rozmiar pliku i poprawiając czas ładowania strony. Idealne dla twórców stron internetowych, projektantów i każdego, kto optymalizuje wydajność witryny. Zawiera również upiększacz CSS do formatowania i organizowania arkuszy stylów w celu zwiększenia czytelności. 100% darmowe przetwarzanie po stronie klienta zapewnia prywatność Twojego kodu.",
+            "what_title": "🎨 Co to jest minifikacja CSS?",
+            "what_desc": "Minifikacja CSS to proces usuwania zbędnych znaków z kodu CSS bez zmiany jego funkcjonalności. Obejmuje to białe znaki, podziały linii, komentarze i zbędny kod. Zminimalizowane pliki CSS są mniejsze, ładują się szybciej i poprawiają wydajność witryny. Jest to niezbędna technika optymalizacji dla witryn produkcyjnych.",
+            "features_title": "✨ Funkcje",
+            "features": {
+                "minify": {
+                    "title": "Minifikacja CSS",
+                    "desc": "Kompresuj CSS, usuwając białe znaki i komentarze"
+                },
+                "beautify": {
+                    "title": "Upiększanie CSS",
+                    "desc": "Formatuj CSS z odpowiednimi wcięciami i odstępami"
+                },
+                "stats": {
+                    "title": "Statystyki kompresji",
+                    "desc": "Zobacz redukcję rozmiaru pliku i współczynnik kompresji"
+                },
+                "instant": {
+                    "title": "Natychmiastowe przetwarzanie",
+                    "desc": "Minimalizuj lub upiększaj CSS w milisekundach"
+                },
+                "privacy": {
+                    "title": "Przede wszystkim prywatność",
+                    "desc": "Całe przetwarzanie odbywa się w przeglądarce"
+                },
+                "copy": {
+                    "title": "Kopiowanie jednym kliknięciem",
+                    "desc": "Kopiuj zminimalizowany CSS do schowka natychmiastowo"
+                }
+            },
+            "benefits_title": "🎯 Korzyści z minifikacji CSS",
+            "benefits": {
+                "speed": {
+                    "title": "⚡ Szybsze ładowanie stron",
+                    "desc": "Mniejsze pliki CSS pobierają się szybciej, poprawiając czas ładowania strony i wrażenia użytkownika"
+                },
+                "bandwidth": {
+                    "title": "💰 Zmniejszony transfer",
+                    "desc": "Mniejsze zużycie transferu oszczędza koszty hostingu i dane mobilne użytkowników"
+                },
+                "seo": {
+                    "title": "📈 Lepsze SEO",
+                    "desc": "Szybsze strony zajmują wyższe pozycje w wyszukiwarkach, poprawiając widoczność"
+                },
+                "performance": {
+                    "title": "🎯 Poprawiona wydajność",
+                    "desc": "Zoptymalizowany CSS skraca czas parsowania przeglądarki i opóźnienia renderowania"
+                },
+                "mobile": {
+                    "title": "📱 Optymalizacja mobilna",
+                    "desc": "Kluczowe dla użytkowników mobilnych z ograniczonym transferem i wolniejszym połączeniem"
+                },
+                "production": {
+                    "title": "🔧 Gotowe do produkcji",
+                    "desc": "Zminimalizowany CSS to standardowa praktyka we wdrożeniach produkcyjnych"
+                }
+            },
+            "how_title": "📚 Jak używać",
+            "how_steps": {
+                "1": "<strong>Wybierz akcję:</strong> Kliknij \"Minimalizuj CSS\", aby skompresować lub \"Upiększ CSS\", aby sformatować",
+                "2": "<strong>Zobacz wyniki:</strong> Zobacz przetworzony CSS w polu wyjściowym ze statystykami kompresji",
+                "3": "<strong>Kopiuj:</strong> Kliknij \"Kopiuj\", aby skopiować zminimalizowany CSS do schowka",
+                "4": "<strong>Użyj w produkcji:</strong> Zastąp swój oryginalny plik CSS wersją zminimalizowaną",
+                "5": ""
+            },
+            "best_practices_title": "💡 Dobre praktyki",
+            "best_practices_list": {
+                "1": "<strong>Minimalizacja dla produkcji:</strong> Używaj zminimalizowanego CSS tylko w środowiskach produkcyjnych",
+                "2": "<strong>Łącz pliki:</strong> Połącz wiele plików CSS przed minifikacją dla lepszej kompresji",
+                "3": "<strong>Testuj dokładnie:</strong> Zawsze testuj zminimalizowany CSS, aby upewnić się, że żadna funkcjonalność nie została uszkodzona",
+                "4": "<strong>Używaj narzędzi budowania:</strong> Zintegruj minifikację z procesem budowania dla automatyzacji",
+                "5": ""
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "O ile minifikacja CSS może zmniejszyć rozmiar pliku?",
+                "a1": "Zazwyczaj o 20-40% w zależności od struktury CSS. Pliki z dużą ilością komentarzy i białych znaków odnotowują większe oszczędności. W połączeniu z kompresją gzip można osiągnąć 70-80% całkowitej redukcji.",
+                "q2": "Czy minifikacja zepsuje mój CSS?",
+                "a2": "Nie! Minifikacja usuwa tylko zbędne znaki, zachowując funkcjonalność. Jednak zawsze testuj swój zminimalizowany CSS, aby upewnić się, że wszystko działa zgodnie z oczekiwaniami.",
+                "q3": "Czy powinienem minimalizować CSS podczas tworzenia?",
+                "a3": "Nie. Zachowaj CSS czytelnym podczas tworzenia dla łatwiejszego debugowania. Minimalizuj tylko dla wdrożeń produkcyjnych. Używaj upiększonego CSS podczas tworzenia i testowania.",
+                "q4": "Czy mogę odwrócić minifikację?",
+                "a4": "Tak! Użyj naszej funkcji \"Upiększ CSS\", aby sformatować zminimalizowany CSS z powrotem na czytelny format. Jednak komentarze są trwale usuwane podczas minifikacji.",
+                "q5": "Czy moje dane CSS są bezpieczne?",
+                "a5": "Absolutnie! Całe przetwarzanie odbywa się całkowicie w twojej przeglądarce. Twój kod CSS nigdy nie opuszcza urządzenia i nie jest wysyłany na żaden serwer."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź kod CSS do przetworzenia",
+            "success_minify": "✓ CSS zminimalizowany pomyślnie",
+            "success_beautify": "✓ CSS upiększony pomyślnie",
+            "error_process": "✗ Błąd przetwarzania CSS: ",
+            "no_copy": "Brak CSS do skopiowania",
+            "success_copy": "✓ CSS skopiowany do schowka"
+        }
+    },
+    "curl-command-builder": {
+        "meta": {
+            "title": "Darmowy kreator poleceń CURL - narzędzie żądania API online",
+            "description": "Buduj polecenia cURL z łatwością dzięki naszemu wizualnemu kreatorowi - twórz żądania HTTP bez zapamiętywania składni",
+            "h1": "Konstruktor poleceń CURL",
+            "subtitle": "Buduj polecenia cURL z łatwością dzięki naszemu wizualnemu kreatorowi"
+        },
+        "editor": {
+            "method_label": "Metoda",
+            "url_label": "URL",
+            "headers_tab": "Nagłówki",
+            "body_tab": "Treść żądania",
+            "key_ph": "Klucz (np. Authorization)",
+            "value_ph": "Wartość (np. Bearer token)",
+            "add_header": "+ Dodaj nagłówek",
+            "raw_data_label": "Surowe dane (JSON/Tekst)",
+            "generated_label": "Wygenerowane polecenie",
+            "btn_copy": "Kopiuj polecenie"
+        },
+        "js": {
+            "success_copy": "Polecenie skopiowane!"
+        }
+    },
+    "html-encoder-decoder": {
+        "meta": {
+            "title": "Koder i dekoder HTML — bezpłatne narzędzie online do tworzenia obiektów",
+            "description": "Koduj i dekoduj encje HTML, aby zapobiec atakom XSS za pomocą naszego darmowego narzędzia online",
+            "h1": "Koder i dekoder HTML",
+            "subtitle": "Koduj i dekoduj encje HTML, aby zapobiec atakom XSS"
+        },
+        "editor": {
+            "mode_encode": "Koduj HTML",
+            "mode_decode": "Dekoduj HTML",
+            "label_input_encode": "Wprowadź HTML do zakodowania",
+            "ph_input_encode": "<div>Cześć & Witaj</div>",
+            "btn_encode": "Zakoduj HTML",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj",
+            "label_output_encode": "Zakodowany HTML",
+            "ph_output": "Przetworzony HTML pojawi się tutaj...",
+            "label_input_decode": "Wprowadź HTML do zdekodowania",
+            "label_output_decode": "Zdekodowany HTML",
+            "btn_decode": "Dekoduj HTML"
+        },
+        "content": {
+            "hero_title": "Darmowy Enkoder i Dekoder HTML",
+            "hero_subtitle": "Koduj i dekoduj encje HTML, aby zapobiec atakom XSS",
+            "p1": "Nasze darmowe narzędzie Enkoder i Dekoder HTML pomaga kodować znaki specjalne w HTML w celu bezpiecznego wyświetlania na stronach internetowych lub dekodować zakodowany HTML z powrotem do jego oryginalnego formatu. Idealne dla programistów, specjalistów ds. bezpieczeństwa i każdego, kto pracuje z surowym kodem HTML.",
+            "what_title": "🔗 Co to jest kodowanie HTML?",
+            "what_desc": "Kodowanie HTML konwertuje znaki, które mają specjalne znaczenie w HTML (takie jak <, >, &, \") na odpowiadające im encje HTML (takie jak &lt;, &gt;, &amp;, &quot;). Zapobiega to interpretowaniu ich przez przeglądarkę jako tagów HTML, co jest kluczowe dla zapobiegania atakom Cross-Site Scripting (XSS).",
+            "features_title": "✨ Funkcje",
+            "features": {
+                "fast": {
+                    "title": "Natychmiastowa konwersja",
+                    "desc": "Koduj lub dekoduj HTML w milisekundach"
+                },
+                "bidirectional": {
+                    "title": "Dwukierunkowość",
+                    "desc": "Koduj znaki specjalne lub dekoduj encje z powrotem na tekst"
+                },
+                "privacy": {
+                    "title": "Prywatność",
+                    "desc": "Całe przetwarzanie odbywa się w przeglądarce"
+                },
+                "copy": {
+                    "title": "Kopiowanie jednym kliknięciem",
+                    "desc": "Kopiuj przetworzony HTML do schowka natychmiastowo"
+                },
+                "free": {
+                    "title": "100% Darmowe",
+                    "desc": "Bez limitów, bez konieczności rejestracji"
+                },
+                "safe": {
+                    "title": "Skupione na bezpieczeństwie",
+                    "desc": "Pomaga zapobiegać podatnościom XSS"
+                }
+            },
+            "uses_title": "🎯 Typowe przypadki użycia",
+            "uses": {
+                "security": {
+                    "title": "🔒 Bezpieczeństwo",
+                    "desc": "Sanityzuj dane wejściowe użytkownika, aby zapobiec atakom XSS, kodując znaki specjalne."
+                },
+                "display": {
+                    "title": "💻 Wyświetlanie kodu",
+                    "desc": "Wyświetlaj surowy kod HTML na stronie internetowej bez renderowania go przez przeglądarkę."
+                },
+                "data": {
+                    "title": "📊 Przechowywanie danych",
+                    "desc": "Przechowuj treści bezpiecznie w bazach danych, nie martwiąc się o problemy z parsowaniem HTML."
+                },
+                "email": {
+                    "title": "📧 Szablony e-mail",
+                    "desc": "Upewnij się, że znaki specjalne renderują się poprawnie w wiadomościach e-mail HTML."
+                }
+            },
+            "how_title": "📚 Jak używać",
+            "how_steps": {
+                "1": "Wklej swój HTML lub tekst w polu wejściowym",
+                "2": "Kliknij przycisk przetwarzania, aby przekonwertować",
+                "3": "Skopiuj wynik do schowka",
+                "4": ""
+            },
+            "examples_title": "💡 Przykłady kodowania HTML",
+            "examples": {
+                "1": {
+                    "title": "Cudzysłów:",
+                    "code": "\"Cześć\" → &quot;Cześć&quot;"
+                },
+                "2": {
+                    "title": "Ampersand:",
+                    "code": "Tom & Jerry → Tom &amp; Jerry"
+                },
+                "3": {
+                    "title": "",
+                    "code": ""
+                }
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Dlaczego muszę kodować HTML?",
+                "a1": "Kodowanie jest niezbędne dla bezpieczeństwa, aby zapobiec wykonywaniu przez przeglądarkę złośliwych skryptów (XSS) i poprawnie wyświetlać fragmenty kodu.",
+                "q2": "Jakie znaki są kodowane?",
+                "a2": "Istotne znaki, takie jak <, >, &, \" i ' są zawsze kodowane. Rozszerzone znaki ASCII mogą być również kodowane.",
+                "q3": "Czy jest to odwracalne?",
+                "a3": "Tak, dekodowanie odwraca proces dokładnie, przywracając oryginalny tekst."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź HTML do przetworzenia",
+            "success_encode": "✓ HTML zakodowany pomyślnie",
+            "success_decode": "✓ HTML zdekodowany pomyślnie",
+            "error_process": "✗ Błąd przetwarzania HTML: ",
+            "error_no_copy": "Brak danych wyjściowych do skopiowania",
+            "success_copy": "✓ Skopiowano do schowka"
+        }
+    },
+    "html-minifier": {
+        "meta": {
+            "title": "Minimalizator i upiększacz HTML — bezpłatne narzędzie online",
+            "description": "Kompresuj lub formatuj kod HTML natychmiastowo - minimalizuj dla produkcji lub upiększaj dla rozwoju",
+            "h1": "Minimalizator i upiększacz HTML",
+            "subtitle": "Kompresuj lub formatuj kod HTML natychmiastowo"
+        },
+        "editor": {
+            "label_input": "Wejście HTML",
+            "ph_input": "Wklej swój kod HTML tutaj...",
+            "btn_minify": "Minimalizuj HTML",
+            "btn_beautify": "Upiększ HTML",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj wyjście",
+            "label_output": "Wyjście HTML"
+        },
+        "content": {
+            "about_title": "Co to jest minifikator HTML?",
+            "about_desc": "Minifikator HTML to narzędzie, które kompresuje kod HTML, usuwając zbędne znaki, takie jak białe znaki, komentarze i podziały linii bez zmiany funkcjonalności. Zminimalizowane pliki HTML są znacznie mniejsze, co prowadzi do szybszego ładowania strony i lepszej wydajności witryny. Nasz darmowy minifikator HTML online zawiera również funkcję upiększania, która formatuje HTML z odpowiednimi wcięciami dla lepszej czytelności podczas tworzenia.",
+            "why_title": "Dlaczego minimalizować HTML?",
+            "why_desc": "Minimalizowanie HTML jest ważne dla optymalizacji wydajności sieci. Mniejsze pliki HTML oznaczają szybsze pobieranie, mniejsze zużycie transferu i lepszy czas ładowania strony. Jest to szczególnie korzystne dla dużych stron internetowych z dużą ilością treści HTML. Zminimalizowany HTML zmniejsza obciążenie serwera i poprawia wrażenia użytkownika.",
+            "features_title": "Kluczowe cechy",
+            "features_list": {
+                "minify": "<strong>Minimalizuj HTML:</strong> Usuń białe znaki i komentarze, aby zmniejszyć rozmiar pliku",
+                "beautify": "<strong>Upiększ HTML:</strong> Formatuj HTML z odpowiednimi wcięciami",
+                "instant": "<strong>Natychmiastowe wyniki:</strong> Przetwarzaj HTML w czasie rzeczywistym",
+                "copy": "<strong>Kopiuj wyjście:</strong> Łatwo kopiuj zminimalizowany HTML",
+                "secure": "<strong>Bezpieczny i prywatny:</strong> Całe przetwarzanie w przeglądarce",
+                "free": "<strong>Darmowy w użyciu:</strong> Rejestracja nie jest wymagana"
+            },
+            "how_title": "Jak używać",
+            "how_steps": {
+                "1": "Kliknij \"Minimalizuj HTML\", aby skompresować kod",
+                "2": "Kliknij \"Upiększ HTML\", aby sformatować z wcięciami",
+                "3": "Skopiuj wynik za pomocą przycisku \"Kopiuj wyjście\"",
+                "4": ""
+            },
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy ten minifikator HTML jest darmowy?",
+                "a1": "Tak, całkowicie darmowy bez ograniczeń ani konieczności rejestracji.",
+                "q2": "Czy mój kod HTML jest przechowywany?",
+                "a2": "Nie, całe przetwarzanie odbywa się w Twojej przeglądarce. Twój kod nigdy nie jest wysyłany na nasze serwery.",
+                "q3": "O ile mniejszy będzie mój HTML?",
+                "a3": "Zazwyczaj 10-30% mniejszy w zależności od formatowania i komentarzy w oryginalnym kodzie.",
+                "q4": "Czy mogę odwrócić minifikację HTML?",
+                "a4": "Tak, użyj przycisku \"Upiększ HTML\", aby sformatować zminimalizowany HTML z odpowiednimi wcięciami.",
+                "q5": "Czy minifikacja wpływa na funkcjonalność HTML?",
+                "a5": "Nie, minifikacja usuwa tylko zbędne znaki. HTML działa dokładnie tak samo."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź kod HTML",
+            "success_minify": "✓ HTML zminimalizowany pomyślnie!",
+            "success_beautify": "✓ HTML upiększony pomyślnie!",
+            "error_no_copy": "Brak danych wyjściowych do skopiowania",
+            "success_copy": "✓ Skopiowano do schowka!"
+        }
+    },
+    "html-to-markdown-converter": {
+        "meta": {
+            "title": "Konwerter HTML na Markdown — darmowy parser online",
+            "description": "Konwertuj HTML na czysty format Markdown natychmiastowo za pomocą naszego darmowego narzędzia online",
+            "h1": "Konwerter HTML na Markdown",
+            "subtitle": "Konwertuj HTML na czysty format Markdown natychmiastowo"
+        },
+        "editor": {
+            "btn_convert": "Konwertuj",
+            "btn_copy": "Kopiuj Markdown",
+            "btn_download": "Pobierz",
+            "btn_example": "Przykład",
+            "btn_clear": "Wyczyść",
+            "label_input": "Wejście HTML",
+            "ph_input": "Wklej swój kod HTML tutaj...",
+            "label_output": "Wyjście Markdown",
+            "ph_output": "Skonwertowany Markdown pojawi się tutaj..."
+        },
+        "content": {
+            "about_title": "🔄 O Konwerterze HTML na Markdown",
+            "about_p1": "Konwertuj kod HTML na czysty, czytelny format Markdown natychmiastowo za pomocą naszego darmowego konwertera online HTML na Markdown. Idealny dla programistów, pisarzy technicznych i twórców treści, którzy muszą przekształcić treść HTML w Markdown dla dokumentacji, plików README lub systemów zarządzania treścią.",
+            "features_title": "✨ Kluczowe cechy",
+            "features_list": {
+                "1": "✅ <strong>Zachowaj formatowanie:</strong> Zachowuje nagłówki, listy, linki i wyróżnienia",
+                "2": "✅ <strong>Czyste wyjście:</strong> Generuje czytelny, dobrze sformatowany Markdown",
+                "3": "✅ <strong>Brak instalacji:</strong> Działa bezpośrednio w przeglądarce",
+                "4": "✅ <strong>Darmowy na zawsze:</strong> 100% darmowy bez ograniczeń",
+                "5": "✅ <strong>Przede wszystkim prywatność:</strong> Cała konwersja odbywa się lokalnie w przeglądarce",
+                "6": ""
+            },
+            "uses_title": "🎯 Typowe przypadki użycia",
+            "uses": {
+                "docs": {
+                    "title": "📚 Dokumentacja",
+                    "desc": "Konwertuj dokumentację HTML na Markdown dla wiki GitHub, plików README i dokumentacji technicznej."
+                },
+                "migration": {
+                    "title": "✍️ Migracja treści",
+                    "desc": "Migruj treści z CMS opartych na HTML na platformy oparte na Markdown, takie jak Jekyll lub Hugo."
+                },
+                "email": {
+                    "title": "💻 E-mail do Markdown",
+                    "desc": "Konwertuj e-maile HTML na format Markdown dla łatwiejszej edycji i kontroli wersji."
+                },
+                "blog": {
+                    "title": "📍 Wpisy na blogu",
+                    "desc": "Przekształć wpisy na blogu HTML w Markdown dla generatorów stron statycznych i nowoczesnych CMS."
+                }
+            },
+            "elements_title": "🛠️ Obsługiwane elementy HTML",
+            "elements": {
+                "text": {
+                    "title": "Formatowanie tekstu",
+                    "list": [
+                        "Nagłówki (H1-H6)",
+                        "Akapity",
+                        "Pogrubienie i silne",
+                        "Kursywa i nacisk",
+                        "Kod i preformatowane",
+                        "Cytaty blokowe"
+                    ]
+                },
+                "lists": {
+                    "title": "Listy i linki",
+                    "list": [
+                        "Listy nieuporządkowane",
+                        "Listy uporządkowane",
+                        "Listy zagnieżdżone",
+                        "Hiperłącza",
+                        "Obrazy",
+                        "Podziały linii"
+                    ]
+                },
+                "advanced": {
+                    "title": "Zaawansowane",
+                    "list": [
+                        "Tabele",
+                        "Poziome linie",
+                        "Kod w linii",
+                        "Bloki kodu",
+                        "Przekreślenie",
+                        "Listy zadań"
+                    ]
+                }
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Czy ten konwerter HTML na Markdown jest darmowy?",
+                "a1": "Tak! Nasz konwerter HTML na Markdown jest w 100% darmowy bez ograniczeń, rejestracji ani ukrytych kosztów.",
+                "q2": "Czy działa offline?",
+                "a2": "Tak, cała konwersja odbywa się w przeglądarce przy użyciu JavaScript, więc Twoje dane nigdy nie opuszczają urządzenia.",
+                "q3": "Jakie elementy HTML są obsługiwane?",
+                "a3": "Obsługujemy wszystkie typowe elementy HTML, w tym nagłówki, akapity, listy, linki, obrazy, tabele, bloki kodu i inne.",
+                "q4": "Czy mogę konwertować duże pliki HTML?",
+                "a4": "Tak, nie ma ograniczeń wielkości. Jednak bardzo duże pliki mogą chwilę potrwać w zależności od wydajności przeglądarki."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź kod HTML do konwersji.",
+            "error_convert": "Błąd konwersji HTML: ",
+            "error_no_copy": "Brak Markdown do skopiowania. Najpierw przekonwertuj HTML.",
+            "success_copy": "Markdown skopiowany do schowka!",
+            "error_no_download": "Brak Markdown do pobrania. Najpierw przekonwertuj HTML."
+        }
+    },
+    "html-viewer": {
+        "meta": {
+            "title": "Przeglądarka HTML online — bezpłatna przeglądarka kodu w czasie rzeczywistym",
+            "description": "Podglądaj kod HTML w czasie rzeczywistym dzięki naszej darmowej przeglądarce HTML online",
+            "h1": "Przeglądarka HTML",
+            "subtitle": "Podglądaj kod HTML w czasie rzeczywistym"
+        },
+        "editor": {
+            "label_input": "Kod HTML",
+            "ph_input": "Wprowadź swój kod HTML tutaj...",
+            "btn_clear": "Wyczyść",
+            "btn_load_sample": "Załaduj przykład",
+            "label_preview": "Podgląd na żywo",
+            "btn_fullscreen": "Pełny ekran",
+            "btn_exit_fullscreen": "Wyjdź z pełnego ekranu"
+        },
+        "content": {
+            "about_title": "Co to jest przeglądarka HTML?",
+            "about_desc": "Przeglądarka HTML to potężne narzędzie online, które pozwala podglądać i wizualizować kod HTML w czasie rzeczywistym. Niezależnie od tego, czy jesteś programistą testującym fragmenty kodu, studentem uczącym się HTML, czy projektantem przeglądającym znaczniki, nasza przeglądarka HTML zapewnia natychmiastową wizualną informację zwrotną dla Twojego kodu HTML. Po prostu wklej swój kod HTML do edytora i natychmiast zobacz wyrenderowany wynik w panelu podglądu na żywo.",
+            "why_title": "Dlaczego warto używać naszej przeglądarki HTML?",
+            "why_desc": "Nasza darmowa przeglądarka HTML oferuje kilka zalet dla programistów i projektantów. Po pierwsze, zapewnia natychmiastową wizualną informację zwrotną bez konieczności tworzenia plików czy konfigurowania środowiska programistycznego. Po drugie, działa całkowicie w przeglądarce, co oznacza, że możesz z niej korzystać wszędzie bez instalowania oprogramowania. Po trzecie, jest idealna do szybkiego testowania, debugowania i nauki HTML. Widok obok siebie pozwala widzieć kod i jego wynik jednocześnie, co ułatwia zrozumienie, jak renderują się elementy HTML.",
+            "features_title": "Kluczowe cechy",
+            "features_list": {
+                "preview": "<strong>Podgląd w czasie rzeczywistym:</strong> Zobacz swój HTML wyrenderowany natychmiast podczas pisania",
+                "layout": "<strong>Widok obok siebie:</strong> Edytor kodu i panel podglądu wyświetlane razem",
+                "syntax": "<strong>Podświetlanie składni:</strong> Łatwy do czytania kod z kolorowaną składnią",
+                "sample": "<strong>Przykładowy kod:</strong> Załaduj przykładowy HTML, aby szybko zacząć",
+                "no_install": "<strong>Brak konieczności instalacji:</strong> Działa bezpośrednio w przeglądarce",
+                "free": "<strong>Darmowy w użyciu:</strong> Rejestracja ani płatność nie są wymagane",
+                "secure": "<strong>Bezpieczny:</strong> Całe przetwarzanie odbywa się w przeglądarce"
+            },
+            "how_title": "Jak używać przeglądarki HTML",
+            "how_steps": {
+                "1": "Podgląd zaktualizuje się automatycznie w prawym panelu",
+                "2": "Użyj przycisku \"Załaduj przykład\", aby zobaczyć przykładowy kod HTML",
+                "3": "Kliknij \"Wyczyść\", aby zacząć od nowa z pustym edytorem",
+                "4": "Testuj różne elementy HTML i zobacz, jak się renderują",
+                "5": ""
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses_desc": "Przeglądarki HTML są niezbędnymi narzędziami do różnych zadań związanych z tworzeniem stron internetowych. Programiści używają ich do szybkiego testowania fragmentów HTML przed zintegrowaniem ich z większymi projektami. Studenci uczący się HTML mogą eksperymentować z różnymi tagami i atrybutami, aby zrozumieć ich działanie. Marketingowcy e-mail używają przeglądarek HTML do podglądu szablonów e-mail przed wysłaniem. Twórcy treści mogą wizualizować, jak ich treść HTML będzie wyglądać na stronach internetowych. Projektanci mogą przeglądać strukturę znaczników i upewnić się, że elementy HTML są poprawnie renderowane.",
+            "basics_title": "Zrozumienie podstaw HTML",
+            "basics_desc": "HTML (HyperText Markup Language) to standardowy język znaczników do tworzenia stron internetowych. Składa się z elementów reprezentowanych przez tagi, które mówią przeglądarkom, jak wyświetlać treść. Typowe elementy HTML obejmują nagłówki (&lt;h1&gt; do &lt;h6&gt;), akapity (&lt;p&gt;), linki (&lt;a&gt;), obrazy (&lt;img&gt;) i podziały (&lt;div&gt;). Zrozumienie tych podstawowych elementów jest kluczowe dla tworzenia stron internetowych, a nasza przeglądarka HTML pomaga wizualizować, jak współpracują one przy tworzeniu stron internetowych.",
+            "tips_title": "Najlepsze praktyki dla HTML",
+            "tips_desc": "Podczas pisania HTML postępuj zgodnie z najlepszymi praktykami, aby zapewnić czysty i łatwy w utrzymaniu kod. Zawsze używaj semantycznych elementów HTML, które opisują ich zawartość (takich jak &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;). Poprawnie zagnieżdżaj elementy i zamykaj wszystkie tagi. Używaj małych liter dla nazw tagów i atrybutów. Dodawaj atrybuty alt do obrazów dla dostępności. Waliduj swój HTML, aby wcześnie wychwycić błędy. Utrzymuj kod zorganizowany z odpowiednimi wcięciami. Praktyki te prowadzą do lepszego SEO, dostępności i łatwości konserwacji.",
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy ta przeglądarka HTML jest darmowa?",
+                "a1": "Tak, nasza przeglądarka HTML jest całkowicie darmowa. Nie ma ukrytych opłat, wymagań rejestracyjnych ani limitów użytkowania.",
+                "q2": "Czy przeglądarka HTML obsługuje CSS i JavaScript?",
+                "a2": "Przeglądarka HTML skupia się głównie na znacznikach HTML. Chociaż style CSS inline będą renderowane, zewnętrzne CSS i JavaScript są piaskownicowane dla bezpieczeństwa.",
+                "q3": "Czy mój kod HTML jest przechowywany lub zapisywany?",
+                "a3": "Nie, całe przetwarzanie HTML odbywa się całkowicie w Twojej przeglądarce. Twój kod nigdy nie jest wysyłany na nasze serwery ani nigdzie przechowywany.",
+                "q4": "Czy mogę używać tego narzędzia do nauki HTML?",
+                "a4": "Oczywiście! Nasza przeglądarka HTML jest idealna do nauki HTML. Możesz eksperymentować z różnymi tagami, atrybutami i strukturami, aby zobaczyć, jak się renderują.",
+                "q5": "Jaka jest różnica między przeglądarką HTML a edytorem kodu?",
+                "a5": "Przeglądarka HTML skupia się na podglądzie i wizualizacji kodu HTML w czasie rzeczywistym, podczas gdy edytor kodu zapewnia zaawansowane funkcje (podświetlanie składni, debugowanie) i jest lepszy do pełnego rozwoju."
+            }
+        }
+    },
+    "js-minifier": {
+        "meta": {
+            "title": "JS Minifier - darmowy internetowy kompresor JavaScript",
+            "description": "Kompresuj i optymalizuj swój kod JavaScript dla szybszego ładowania stron",
+            "h1": "Minifikator JavaScriptu",
+            "subtitle": "Kompresuj i optymalizuj swój kod JavaScript"
+        },
+        "editor": {
+            "label_input": "Wejście JavaScript",
+            "ph_input": "Wklej swój kod JavaScript tutaj...",
+            "btn_minify": "Minimalizuj JS",
+            "btn_beautify": "Upiększ JS",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj wyjście",
+            "label_output": "Wyjście JavaScript"
+        },
+        "content": {
+            "about_title": "Co to jest minifikator JavaScript?",
+            "about_desc": "Minifikator JavaScript to narzędzie, które kompresuje kod JavaScript, usuwając zbędne znaki, takie jak białe znaki, komentarze i podziały linii bez zmiany funkcjonalności. Zminimalizowane pliki JavaScript są znacznie mniejsze, co prowadzi do szybszego ładowania strony i lepszej wydajności witryny. Nasz darmowy minifikator JS online zawiera również funkcję upiększania, która formatuje JavaScript z odpowiednimi wcięciami dla lepszej czytelności podczas tworzenia.",
+            "why_title": "Dlaczego minimalizować JavaScript?",
+            "why_desc": "Minimalizowanie JavaScript jest niezbędne dla optymalizacji wydajności sieci. Mniejsze pliki JS oznaczają szybsze pobieranie, mniejsze zużycie transferu i lepszy czas ładowania strony. Jest to szczególnie ważne dla użytkowników mobilnych i użytkowników z wolniejszymi połączeniami internetowymi. Zminimalizowany JavaScript zmniejsza obciążenie serwera i poprawia wrażenia użytkownika. W przypadku witryn produkcyjnych minifikacja jest standardową najlepszą praktyką, która może znacząco poprawić wyniki Core Web Vitals.",
+            "features_title": "Kluczowe cechy",
+            "features_list": {
+                "minify": "<strong>Minimalizuj JavaScript:</strong> Usuń białe znaki i komentarze, aby zmniejszyć rozmiar pliku",
+                "beautify": "<strong>Upiększ JavaScript:</strong> Formatuj JS z odpowiednimi wcięciami",
+                "instant": "<strong>Natychmiastowe wyniki:</strong> Przetwarzaj JavaScript w czasie rzeczywistym",
+                "copy": "<strong>Kopiuj wyjście:</strong> Łatwo kopiuj zminimalizowany JavaScript",
+                "secure": "<strong>Bezpieczny i prywatny:</strong> Całe przetwarzanie w przeglądarce",
+                "free": "<strong>Darmowy w użyciu:</strong> Rejestracja nie jest wymagana"
+            },
+            "how_title": "Jak używać",
+            "how_steps": [
+                "Wklej swój kod JavaScript do pola wejściowego",
+                "Kliknij \"Minimalizuj JS\", aby skompresować kod",
+                "Kliknij \"Upiększ JS\", aby sformatować z wcięciami",
+                "Skopiuj wynik za pomocą przycisku \"Kopiuj wyjście\""
+            ],
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy ten minifikator JavaScript jest darmowy?",
+                "a1": "Tak, całkowicie darmowy bez ograniczeń ani konieczności rejestracji.",
+                "q2": "Czy mój kod JavaScript jest przechowywany?",
+                "a2": "Nie, całe przetwarzanie odbywa się w Twojej przeglądarce. Twój kod nigdy nie jest wysyłany na nasze serwery.",
+                "q3": "O ile mniejszy będzie mój JS?",
+                "a3": "Zazwyczaj 30-50% mniejszy w zależności od formatowania i komentarzy w oryginalnym kodzie.",
+                "q4": "Czy mogę odwrócić minifikację JavaScript?",
+                "a4": "Tak, użyj przycisku \"Upiększ JS\", aby sformatować zminimalizowany JavaScript z odpowiednimi wcięciami.",
+                "q5": "Czy minifikacja wpływa na funkcjonalność JavaScript?",
+                "a5": "Nie, minifikacja usuwa tylko zbędne znaki. JavaScript działa dokładnie tak samo."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź kod JavaScript",
+            "success_minify": "✓ JavaScript zminimalizowany pomyślnie!",
+            "success_beautify": "✓ JavaScript upiększony pomyślnie!",
+            "error_no_copy": "Brak danych wyjściowych do skopiowania",
+            "success_copy": "✓ Skopiowano do schowka!"
+        }
+    },
+    "json-formatter": {
+        "meta": {
+            "title": "JSON Formatter Online — bezpłatne narzędzie do porządkowania JSON",
+            "description": "Formatuj, waliduj i minimalizuj swoje dane JSON za pomocą naszego darmowego narzędzia online",
+            "h1": "Formater JSON",
+            "subtitle": "Formatuj, waliduj i minimalizuj swoje dane JSON"
+        },
+        "editor": {
+            "title": "Sformatuj swoje dane JSON",
+            "label_input": "Wprowadź dane JSON",
+            "ph_input": "{\"imie\": \"Jan Kowalski\", \"wiek\": 30, \"miasto\": \"Warszawa\"}",
+            "help_text": "Wklej swoje dane JSON, aby je sformatować, upiększyć lub zminimalizować",
+            "btn_format": "Formatuj i upiększ",
+            "btn_minify": "Minimalizuj JSON",
+            "label_results": "Sformatowany JSON",
+            "btn_copy": "Kopiuj JSON"
+        },
+        "content": {
+            "why_title": "Dlaczego warto używać naszego Formatera JSON?",
+            "why_desc": "JSON (JavaScript Object Notation) to najpopularniejszy format wymiany danych używany w tworzeniu stron internetowych, interfejsach API i plikach konfiguracyjnych. Nasz darmowy formater JSON online pomaga programistom, analitykom danych i specjalistom IT szybko formatować, upiększać, walidować i minimalizować dane JSON. Niezależnie od tego, czy debugujesz odpowiedzi API, czyścisz pliki konfiguracyjne, czy przygotowujesz JSON do produkcji, nasze narzędzie zapewnia natychmiastowe wyniki z podświetlaniem składni i wykrywaniem błędów. Idealny dla programistów pracujących z interfejsami API REST, bazami danych NoSQL i nowoczesnymi aplikacjami internetowymi.",
+            "features": {
+                "instant": {
+                    "title": "Natychmiastowe formatowanie",
+                    "desc": "Formatuj i upiększaj dane JSON w milisekundach z odpowiednimi wcięciami i podświetlaniem składni"
+                },
+                "error": {
+                    "title": "Wykrywanie błędów",
+                    "desc": "Automatycznie wykrywaj i podkreślaj błędy składni JSON z pomocnymi komunikatami o błędach"
+                },
+                "privacy": {
+                    "title": "100% Prywatności",
+                    "desc": "Całe przetwarzanie odbywa się w Twojej przeglądarce - Twoje dane JSON nigdy nie opuszczają komputera"
+                }
+            },
+            "how_title": "Jak formatować JSON w 3 prostych krokach",
+            "how_steps": {
+                "1": {
+                    "title": "Wybierz akcję",
+                    "desc": "Kliknij \"Formatuj i upiększ\", aby sformatować lub \"Minimalizuj\", aby skompresować swój JSON"
+                },
+                "2": {
+                    "title": "Skopiuj wynik",
+                    "desc": "Kliknij przycisk kopiowania, aby skopiować sformatowany JSON do schowka"
+                },
+                "3": {
+                    "title": "",
+                    "desc": ""
+                }
+            },
+            "uses_title": "Typowe przypadki użycia formatowania JSON",
+            "uses": {
+                "api": {
+                    "title": "Debugowanie odpowiedzi API",
+                    "desc": "Formatuj nieuporządkowane odpowiedzi API, aby łatwo czytać i debugować dane JSON z interfejsów API REST, GraphQL i usług internetowych."
+                },
+                "config": {
+                    "title": "Pliki konfiguracyjne",
+                    "desc": "Porządkuj i waliduj pliki konfiguracyjne JSON dla aplikacji, package.json, tsconfig.json i innych."
+                },
+                "db": {
+                    "title": "Dane bazy danych",
+                    "desc": "Formatuj dane JSON z baz danych NoSQL, takich jak MongoDB, CouchDB i Firebase, dla lepszej czytelności."
+                },
+                "export": {
+                    "title": "Eksport/Import danych",
+                    "desc": "Przygotuj dane JSON do eksportu lub waliduj importowane dane JSON, aby zapewnić prawidłową strukturę i składnię."
+                }
+            },
+            "tips_title": "Najlepsze praktyki i wskazówki JSON",
+            "tips": {
+                "validate": {
+                    "title": "✓ Zawsze waliduj JSON",
+                    "desc": "Używaj walidatora JSON, aby wychwycić błędy składni przed wdrożeniem do produkcji. Nieprawidłowy JSON może zepsuć Twoją aplikację."
+                },
+                "indent": {
+                    "title": "✓ Używaj odpowiednich wcięć",
+                    "desc": "Formatuj JSON z wcięciem 2 lub 4 spacji dla lepszej czytelności podczas tworzenia i debugowania."
+                },
+                "minify": {
+                    "title": "✓ Minimalizuj dla produkcji",
+                    "desc": "Minimalizuj dane JSON przed wdrożeniem do produkcji, aby zmniejszyć rozmiar pliku i poprawić czas ładowania."
+                },
+                "naming": {
+                    "title": "✓ Używaj spójnego nazewnictwa",
+                    "desc": "Konsekwentnie stosuj konwencje nazewnictwa camelCase lub snake_case w całej strukturze JSON."
+                }
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Czy moje dane JSON są bezpieczne?",
+                "a1": "Tak, absolutnie. Nasz formater JSON działa całkowicie w Twojej przeglądarce internetowej przy użyciu JavaScript. Twoje dane nigdy nie są wysyłane na nasze serwery ani nigdzie przechowywane.",
+                "q2": "Dlaczego minimalizacja JSON jest ważna?",
+                "a2": "Minimalizacja usuwa zbędne białe znaki i podziały linii, znacznie zmniejszając rozmiar pliku. Jest to kluczowe dla poprawy wydajności API i zmniejszenia zużycia transferu w środowiskach produkcyjnych.",
+                "q3": "Czy mogę walidować niekompletny JSON?",
+                "a3": "Narzędzie wymaga poprawnej struktury JSON do formatowania lub minimalizacji. Zapewnia jednak szczegółowe komunikaty o błędach, które pomagają zlokalizować i naprawić problemy w danych JSON.",
+                "q4": "Czy obsługuje duże pliki JSON?",
+                "a4": "Tak, narzędzie jest zoptymalizowane do wydajnej obsługi dużych zbiorów danych JSON, chociaż ekstremalnie duże pliki mogą zależeć od limitów pamięci przeglądarki."
+            }
+        },
+        "js": {
+            "error_empty_format": "Wprowadź dane JSON do sformatowania",
+            "error_invalid": "Nieprawidłowy JSON: ",
+            "error_empty_minify": "Wprowadź dane JSON do minimalizacji",
+            "success_copy": "Skopiowano!",
+            "error_copy": "Nie udało się skopiować. Proszę skopiować ręcznie."
+        }
+    },
+    "json-parser": {
+        "meta": {
+            "title": "Parser i walidator JSON — bezpłatne sprawdzanie składni online",
+            "description": "Parsuj, waliduj i wizualizuj strukturę JSON",
+            "h1": "Parser i walidator JSON",
+            "subtitle": "Parsuj, waliduj i wizualizuj strukturę JSON"
+        },
+        "editor": {
+            "label_input": "Wejście JSON",
+            "ph_input": "{\"imie\": \"Jan Kowalski\", \"wiek\": 30, \"aktywny\": true}",
+            "btn_parse": "Parsuj JSON",
+            "btn_beautify": "Upiększ",
+            "btn_minify": "Minimalizuj",
+            "btn_clear": "Wyczyść",
+            "btn_load": "Załaduj przykład",
+            "title_tree": "Widok drzewa JSON"
+        },
+        "content": {
+            "hero_title": "Darmowy Parser i Walidator JSON",
+            "hero_subtitle": "Parsuj, waliduj, upiększaj i minimalizuj dane JSON natychmiastowo",
+            "p1": "Nasz darmowy Parser JSON to potężne narzędzie online dla programistów, analityków danych i każdego, kto pracuje z danymi JSON. Błyskawicznie parsuj, waliduj, upiększaj i minimalizuj JSON za pomocą przejrzystego, intuicyjnego interfejsu. Idealny do debugowania API, formatowania plików konfiguracyjnych lub walidacji struktury JSON. Przetwarzanie po stronie klienta zapewnia, że Twoje dane pozostają prywatne i bezpieczne.",
+            "what_title": "📋 Co to jest JSON?",
+            "what_desc": "JSON (JavaScript Object Notation) to lekki format wymiany danych, łatwy do czytania i pisania dla ludzi oraz łatwy do parsowania i generowania dla maszyn. Jest to najpopularniejszy format dla interfejsów API, plików konfiguracyjnych i przechowywania danych. JSON używa par klucz-wartość i obsługuje ciągi znaków, liczby, wartości logiczne, tablice i zagnieżdżone obiekty.",
+            "features_title": "✨ Funkcje",
+            "features": {
+                "validate": {
+                    "title": "Walidacja JSON",
+                    "desc": "Natychmiast waliduj składnię i strukturę JSON"
+                },
+                "beautify": {
+                    "title": "Upiększ JSON",
+                    "desc": "Formatuj JSON z odpowiednimi wcięciami i odstępami"
+                },
+                "minify": {
+                    "title": "Minimalizuj JSON",
+                    "desc": "Kompresuj JSON usuwając białe znaki"
+                },
+                "tree": {
+                    "title": "Widok drzewa",
+                    "desc": "Wizualizuj strukturę JSON w formacie drzewa"
+                },
+                "privacy": {
+                    "title": "Prywatność przede wszystkim",
+                    "desc": "Całe przetwarzanie odbywa się w Twojej przeglądarce"
+                },
+                "instant": {
+                    "title": "Natychmiastowe wyniki",
+                    "desc": "Parsuj i formatuj JSON w milisekundach"
+                }
+            },
+            "uses_title": "🎯 Typowe przypadki użycia",
+            "uses": {
+                "api": {
+                    "title": "🔌 Rozwój API",
+                    "desc": "Testuj i debuguj odpowiedzi API, waliduj ładunki żądań i formatuj dane JSON"
+                },
+                "config": {
+                    "title": "⚙️ Pliki konfiguracyjne",
+                    "desc": "Formatuj i waliduj pliki konfiguracyjne dla aplikacji, baz danych i usług"
+                },
+                "analysis": {
+                    "title": "📊 Analiza danych",
+                    "desc": "Parsuj i wizualizuj dane JSON z baz danych, logów i narzędzi analitycznych"
+                },
+                "debug": {
+                    "title": "🐛 Debugowanie",
+                    "desc": "Identyfikuj błędy składni, waliduj strukturę i rozwiązuj problemy z JSON"
+                },
+                "docs": {
+                    "title": "📝 Dokumentacja",
+                    "desc": "Twórz czytelne przykłady JSON dla dokumentacji API i przewodników technicznych"
+                },
+                "migration": {
+                    "title": "🔄 Migracja danych",
+                    "desc": "Przekształcaj i waliduj JSON podczas importu i eksportu danych"
+                }
+            },
+            "how_title": "📚 Jak używać",
+            "how_steps": [
+                "<strong>Wklej JSON:</strong> Skopiuj i wklej swoje dane JSON do pola wejściowego",
+                "<strong>Parsuj:</strong> Kliknij \"Parsuj JSON\", aby zwalidować i wizualizować strukturę",
+                "<strong>Upiększ:</strong> Kliknij \"Upiększ\", aby sformatować z odpowiednimi wcięciami",
+                "<strong>Minimalizuj:</strong> Kliknij \"Minimalizuj\", aby skompresować i usunąć białe znaki",
+                "<strong>Widok drzewa:</strong> Zobacz strukturę hierarchiczną w widoku drzewa"
+            ],
+            "tips_title": "💡 Najlepsze praktyki JSON",
+            "tips_list": [
+                "<strong>Używaj podwójnych cudzysłowów:</strong> JSON wymaga podwójnych cudzysłowów dla ciągów znaków, nie pojedynczych",
+                "<strong>Bez przecinków końcowych:</strong> Usuń przecinki po ostatnim elemencie w obiektach i tablicach",
+                "<strong>Właściwe typy danych:</strong> Używaj liczb bez cudzysłowów, wartości logicznych jako true/false, null dla pustych wartości",
+                "<strong>Waliduj regularnie:</strong> Zawsze waliduj JSON przed wdrożeniem lub użyciem produkcyjnym",
+                "<strong>Upiększ dla czytelności:</strong> Formatuj JSON dla łatwiejszego debugowania i konserwacji"
+            ],
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Jaka jest różnica między upiększaniem a minimalizacją?",
+                "a1": "Upiększanie dodaje wcięcia i podziały linii, aby uczynić JSON czytelnym dla człowieka. Minimalizacja usuwa wszystkie białe znaki, aby zmniejszyć rozmiar pliku, co czyni go idealnym dla środowisk produkcyjnych.",
+                "q2": "Czy moje dane JSON są bezpieczne?",
+                "a2": "Tak! Całe parsowanie i formatowanie JSON odbywa się całkowicie w Twojej przeglądarce. Twoje dane nigdy nie opuszczają urządzenia i nie są wysyłane na żaden serwer.",
+                "q3": "Czy mogę parsować duże pliki JSON?",
+                "a3": "Tak, nasz parser obsługuje duże pliki JSON. Jednak bardzo duże pliki (>10MB) mogą zająć więcej czasu na przetworzenie w zależności od wydajności Twojego urządzenia.",
+                "q4": "Jakie błędy wykrywa parser?",
+                "a4": "Parser wykrywa błędy składni, takie jak brakujące cudzysłowy, przecinki końcowe, nieprawidłowe znaki, niezamknięte nawiasy i nieprawidłowe typy danych. Komunikaty o błędach pokazują dokładną lokalizację problemu.",
+                "q5": "Czy mogę używać tego do testowania API?",
+                "a5": "Oczywiście! To narzędzie jest idealne do testowania odpowiedzi API, walidacji ładunków żądań i formatowania danych JSON z wywołań API."
+            }
+        },
+        "js": {
+            "error_empty_parse": "Wprowadź dane JSON do sparsowania",
+            "success_valid": "✓ Prawidłowy JSON! Sparsowano pomyślnie",
+            "error_invalid": "✗ Nieprawidłowy JSON: ",
+            "error_empty_beautify": "Wprowadź dane JSON do upiększenia",
+            "success_beautify": "✓ JSON upiększony pomyślnie",
+            "error_beautify": "✗ Nie można upiększyć nieprawidłowego JSON: ",
+            "error_empty_minify": "Wprowadź dane JSON do minimalizacji",
+            "success_minify": "✓ JSON zminimalizowany pomyślnie",
+            "error_minify": "✗ Nie można zminimalizować nieprawidłowego JSON: ",
+            "success_load": "Załadowano przykładowy JSON"
+        }
+    },
+    "json-to-csv-converter": {
+        "meta": {
+            "title": "Konwerter JSON na CSV — bezpłatne narzędzie do przesyłania danych online",
+            "description": "Konwertuj dane JSON na format CSV lub Excel natychmiastowo za pomocą naszego darmowego narzędzia online. Szybki, bezpieczny i łatwy w użyciu.",
+            "h1": "Konwerter JSON na CSV",
+            "subtitle": "Łatwo konwertuj tablice i obiekty JSON na format CSV"
+        },
+        "editor": {
+            "label_delimiter": "Wybierz separator",
+            "opt_comma": "Przecinek (,)",
+            "opt_semicolon": "Średnik (;)",
+            "opt_tab": "Tabulator",
+            "opt_pipe": "Pionowa kreska (|)",
+            "btn_convert": "Konwertuj na CSV",
+            "btn_copy": "Kopiuj CSV",
+            "btn_download": "Pobierz CSV",
+            "btn_example": "Załaduj przykład",
+            "btn_clear": "Wyczyść",
+            "label_input": "Wejście JSON",
+            "ph_input": "Wklej swoje dane JSON tutaj...",
+            "label_output": "Wyjście CSV",
+            "ph_output": "Skonwertowany CSV pojawi się tutaj..."
+        },
+        "content": {
+            "hero_title": "Darmowy Konwerter JSON na CSV",
+            "p1": "Nasz darmowy konwerter JSON na CSV to potężne narzędzie zaprojektowane dla programistów, analityków danych i specjalistów IT. Z łatwością przekształcaj ustrukturyzowane dane JSON w czyste, sformatowane pliki CSV (wartości rozdzielane przecinkami) lub TSV. Niezależnie od tego, czy przygotowujesz dane do importu do Excela, Arkuszy Google lub bazy danych, nasze narzędzie zapewnia dokładność i szybkość przy 100% przetwarzaniu po stronie klienta.",
+            "features_title": "Kluczowe cechy",
+            "features_list": {
+                "fast": "<strong>Natychmiastowa konwersja:</strong> Wyniki w milisekundach",
+                "secure": "<strong>Prywatny i bezpieczny:</strong> Wszystkie dane pozostają w Twojej przeglądarce",
+                "format": "<strong>Inteligentne spłaszczanie:</strong> Poprawnie obsługuje zagnieżdżone obiekty JSON",
+                "custom": "<strong>Niestandardowe separatory:</strong> Wybierz pomiędzy przecinkiem, średnikiem lub tabulatorem",
+                "export": "<strong>Łatwy eksport:</strong> Skopiuj do schowka lub pobierz jako .csv",
+                "free": "<strong>100% Darmowe:</strong> Bez limitów, bez konieczności rejestracji"
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "api": {
+                    "title": "Analiza danych API",
+                    "desc": "Konwertuj odpowiedzi JSON z interfejsów API REST na format CSV dla łatwiejszej analizy w arkuszach kalkulacyjnych."
+                },
+                "db": {
+                    "title": "Migracja bazy danych",
+                    "desc": "Przygotuj dane JSON do importu do relacyjnych baz danych takich jak MySQL lub PostgreSQL."
+                },
+                "analysis": {
+                    "title": "Wizualizacja danych",
+                    "desc": "Przekształć złożone zbiory danych JSON w płaską strukturę odpowiednią dla narzędzi do wizualizacji."
+                },
+                "report": {
+                    "title": "Szybkie raportowanie",
+                    "desc": "Generuj czytelne raporty CSV ze ustrukturyzowanych plików logów JSON lub danych aplikacji."
+                }
+            },
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy obsługuje zagnieżdżony JSON?",
+                "a1": "Tak, nasze narzędzie automatycznie spłaszcza zagnieżdżone obiekty, aby pojawiły się jako wyraźnie oznaczone kolumny w pliku CSV.",
+                "q2": "Czy moje dane są przesyłane?",
+                "a2": "Nie, całe przetwarzanie odbywa się lokalnie w przeglądarce internetowej. Twoje dane nigdy nie są wysyłane na nasze serwery.",
+                "q3": "Czy mogę konwertować na TSV?",
+                "a3": "Tak, po prostu wybierz opcję \"Tabulator\" jako separator przed konwersją.",
+                "q4": "Jaki jest maksymalny rozmiar pliku?",
+                "a4": "Narzędzie może obsługiwać duże pliki JSON, chociaż wydajność zależy od pamięci Twojego urządzenia."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź dane JSON do konwersji",
+            "error_convert": "Błąd konwersji JSON: ",
+            "error_no_copy": "Brak zawartości do skopiowania. Najpierw przekonwertuj JSON.",
+            "success_copy": "✓ CSV skopiowany do schowka!",
+            "error_no_download": "Brak zawartości do pobrania. Najpierw przekonwertuj JSON."
+        }
+    },
+    "json-to-sql-converter": {
+        "meta": {
+            "title": "Konwerter JSON na SQL — bezpłatne narzędzie do migracji online",
+            "description": "Przekształcaj dane JSON w polecenia INSERT SQL natychmiastowo. Idealny do seedowania baz danych i migracji danych.",
+            "h1": "Konwerter JSON na SQL",
+            "subtitle": "Konwertuj tablice i obiekty JSON na poprawne skrypty SQL"
+        },
+        "editor": {
+            "label_tablename": "Nazwa tabeli",
+            "ph_tablename": "Wprowadź nazwę tabeli (np. uzytkownicy)",
+            "btn_convert": "Generuj SQL",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj SQL",
+            "btn_example": "Załaduj przykład",
+            "label_input": "Wejście JSON",
+            "ph_input": "Wklej swoją tablicę JSON tutaj...",
+            "label_output": "Wyjście SQL",
+            "ph_output": "Wygenerowane polecenia INSERT SQL pojawią się tutaj..."
+        },
+        "content": {
+            "hero_title": "Bezwysiłkowa konwersja JSON na SQL",
+            "hero_subtitle": "Najszybszy sposób na generowanie skryptów seedujących bazę danych",
+            "p1": "Konwersja danych JSON na polecenia INSERT SQL nie powinna być ręcznym zadaniem. Nasz konwerter JSON na SQL zajmuje się ciężką pracą, automatycznie mapując klucze JSON na kolumny bazy danych i eskapując wartości dla bezpiecznego wstawiania. Jest to niezbędne narzędzie dla programistów pracujących nad migracjami danych, testowaniem lub inicjalizacją bazy danych.",
+            "what_title": "Kiedy używać tego narzędzia?",
+            "what_desc": "Jeśli masz zbiór danych w formacie JSON — taki jak eksport z bazy danych NoSQL lub odpowiedź API — i musisz wstawić go do relacyjnej bazy danych, takiej jak MySQL, PostgreSQL lub SQL Server, to narzędzie jest dla Ciebie. Formatuje każdy obiekt w czyste polecenie SQL.",
+            "features_title": "Kluczowe cechy",
+            "features": {
+                "fast": {
+                    "title": "Natychmiastowe generowanie",
+                    "desc": "Generuj setki linii SQL w mgnieniu oka."
+                },
+                "private": {
+                    "title": "Gwarancja prywatności",
+                    "desc": "Całe przetwarzanie jest lokalne. Twoje wrażliwe dane pozostają w przeglądarce."
+                },
+                "copy": {
+                    "title": "Eksport jednym kliknięciem",
+                    "desc": "Skopiuj cały skrypt lub pobierz go dla swoich migracji."
+                },
+                "smart": {
+                    "title": "Inteligentne eskapowanie",
+                    "desc": "Automatycznie obsługuje cudzysłowy i znaki specjalne w stringach."
+                },
+                "free": {
+                    "title": "100% Darmowe",
+                    "desc": "Bez limitów, bez rejestracji, bez kłopotów."
+                },
+                "db": {
+                    "title": "Przyjazny dla wielu baz danych",
+                    "desc": "Generuje standardowy SQL kompatybilny z większością systemów baz danych."
+                }
+            },
+            "uses_title": "Profesjonalne przypadki użycia",
+            "uses": {
+                "migration": {
+                    "title": "Migracja danych",
+                    "desc": "Łatwo przenoś dane z systemów opartych na JSON do baz danych SQL."
+                },
+                "import": {
+                    "title": "Import masowy",
+                    "desc": "Ładuj duże ilości danych testowych lub produkcyjnych szybko."
+                },
+                "api": {
+                    "title": "API do bazy danych",
+                    "desc": "Konwertuj wyniki API stron trzecich bezpośrednio na wstawienia SQL."
+                },
+                "test": {
+                    "title": "Seedowanie danych testowych",
+                    "desc": "Twórz skrypty SQL do wypełniania środowisk deweloperskich."
+                },
+                "backup": {
+                    "title": "Przywracanie kopii zapasowych",
+                    "desc": "Zamieniaj kopie zapasowe JSON z powrotem na funkcjonalne skrypty SQL."
+                },
+                "dev": {
+                    "title": "Szybkie prototypowanie",
+                    "desc": "Szybko wypełniaj nowe tabele bazy danych podczas tworzenia."
+                }
+            },
+            "how_title": "Jak używać",
+            "how_steps": [
+                "Wprowadź docelową <strong>Nazwę tabeli</strong> bazy danych",
+                "Wklej swój <strong>JSON</strong> (musi być tablicą lub obiektem)",
+                "Kliknij <strong>Generuj SQL</strong>, aby utworzyć skrypt",
+                "<strong>Skopiuj</strong> wyjście SQL do schowka"
+            ],
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Jaki format JSON jest wymagany?",
+                "a1": "Narzędzie działa najlepiej z tablicą obiektów, gdzie każdy obiekt reprezentuje wiersz bazy danych.",
+                "q2": "Czy obsługuje zagnieżdżone obiekty?",
+                "a2": "Obecnie mapuje klucze najwyższego poziomu. Zagnieżdżone obiekty są zazwyczaj zamieniane na stringi lub pomijane w zależności od potrzeb bazy danych.",
+                "q3": "Czy jest limit wierszy?",
+                "a3": "Nie ma sztywnego limitu, chociaż wydajność przeglądarki może się różnić przy tysiącach wierszy."
+            },
+            "tips_title": "Wskazówki dla profesjonalistów",
+            "tips_list": [
+                "Upewnij się, że klucze JSON dokładnie odpowiadają nazwom kolumn SQL.",
+                "Zawsze weryfikuj wygenerowany SQL przed uruchomieniem go na bazie produkcyjnej.",
+                "Użyj przycisku \"Przykład\", aby zobaczyć oczekiwaną strukturę JSON."
+            ]
+        },
+        "js": {
+            "error_empty": "Wprowadź dane JSON i nazwę tabeli",
+            "success_convert": "✓ SQL wygenerowany pomyślnie!",
+            "error_convert": "Błąd generowania SQL: ",
+            "error_no_copy": "Brak SQL do skopiowania. Najpierw przekonwertuj JSON.",
+            "success_copy": "✓ SQL skopiowany do schowka!"
+        }
+    },
+    "json-to-xml-converter": {
+        "meta": {
+            "title": "Konwerter JSON na XML - darmowy tłumacz danych online",
+            "description": "Konwertuj dane JSON na ustrukturyzowany format XML natychmiastowo za pomocą naszego darmowego narzędzia online. Szybki, bezpieczny i łatwy w użyciu.",
+            "h1": "Konwerter JSON na XML",
+            "subtitle": "Przekształcaj obiekty i tablice JSON w poprawne dokumenty XML"
+        },
+        "editor": {
+            "btn_convert": "Konwertuj na XML",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj XML",
+            "btn_example": "Załaduj przykład",
+            "label_input": "Wejście JSON",
+            "ph_input": "Wklej swoje dane JSON tutaj...",
+            "label_output": "Wyjście XML",
+            "ph_output": "Skonwertowany XML pojawi się tutaj..."
+        },
+        "content": {
+            "hero_title": "Darmowy Konwerter JSON na XML",
+            "hero_subtitle": "Najszybszy sposób na przekształcenie JSON w XML",
+            "p1": "Nasz darmowy konwerter JSON na XML to potężne narzędzie zaprojektowane dla programistów i specjalistów IT. Pozwala natychmiastowo przekształcić dane w formacie JavaScript Object Notation (JSON) na ustrukturyzowany Extensible Markup Language (XML). Niezależnie od tego, czy pracujesz ze starszymi systemami, integracjami korporacyjnymi, czy API opartymi na XML, nasze narzędzie zapewnia dokładność i prywatność dzięki 100% przetwarzaniu po stronie klienta.",
+            "what_title": "Co to jest konwersja JSON na XML?",
+            "what_desc": "Konwersja JSON na XML to proces tłumaczenia danych ustrukturyzowanych w JSON — lekkim formacie popularnym w nowoczesnych aplikacjach internetowych — na XML, język znaczników często używany w systemach korporacyjnych, usługach SOAP i plikach konfiguracyjnych. Nasze narzędzie wypełnia tę lukę, czyniąc transformację danych bezproblemową.",
+            "features_title": "Kluczowe cechy",
+            "features": {
+                "instant": {
+                    "title": "Natychmiastowa konwersja",
+                    "desc": "Otrzymaj swoje wyniki XML w milisekundach."
+                },
+                "privacy": {
+                    "title": "Gwarancja prywatności",
+                    "desc": "Wszystkie dane pozostają w Twojej przeglądarce; nic nie jest przesyłane."
+                },
+                "copy": {
+                    "title": "Łatwy eksport",
+                    "desc": "Skopiuj do schowka lub użyj wyjścia bezpośrednio."
+                },
+                "format": {
+                    "title": "Czysty XML",
+                    "desc": "Generuje dobrze sformatowany i czytelny kod XML."
+                },
+                "free": {
+                    "title": "100% Darmowe",
+                    "desc": "Bez rejestracji, bez limitów, bez kosztów."
+                },
+                "offline": {
+                    "title": "Możliwość pracy offline",
+                    "desc": "Działa bez internetu po załadowaniu strony."
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "migration": {
+                    "title": "Migracja systemów",
+                    "desc": "Przekształcaj dane JSON do importu w starszych systemach opartych na XML."
+                },
+                "integration": {
+                    "title": "Integracja API",
+                    "desc": "Przygotuj dane dla API SOAP lub REST API, które wymagają wejścia XML."
+                },
+                "config": {
+                    "title": "Transformacja konfiguracji",
+                    "desc": "Konwertuj pliki konfiguracyjne JSON na format XML."
+                },
+                "enterprise": {
+                    "title": "Usługi korporacyjne",
+                    "desc": "Standaryzuj dane dla korporacyjnych szyn usługowych i oprogramowania pośredniczącego."
+                },
+                "docs": {
+                    "title": "Dokumentacja techniczna",
+                    "desc": "Generuj fragmenty XML dla przewodników technicznych lub specyfikacji."
+                },
+                "export": {
+                    "title": "Eksport danych",
+                    "desc": "Z łatwością eksportuj ustrukturyzowane dane do formatu XML w celu raportowania."
+                }
+            },
+            "how_title": "Jak używać",
+            "how_steps": {
+                "1": {
+                    "title": "Wklej JSON",
+                    "desc": "Wklej swój kod JSON do pola 'Wejście JSON'."
+                },
+                "2": {
+                    "title": "Konwertuj",
+                    "desc": "Kliknij 'Konwertuj na XML', aby wygenerować wynik."
+                },
+                "3": {
+                    "title": "Eksportuj wyniki",
+                    "desc": "Skopiuj wygenerowany XML i użyj go w swoim projekcie."
+                }
+            },
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy obsługuje zagnieżdżony JSON?",
+                "a1": "Tak, obsługuje złożone zagnieżdżone obiekty i tablice, tworząc hierarchiczne tagi XML.",
+                "q2": "Czy moje dane są bezpieczne?",
+                "a2": "Absolutnie. Przetwarzanie odbywa się całkowicie w Twojej przeglądarce przy użyciu JavaScript.",
+                "q3": "Czy mogę załadować przykład?",
+                "a3": "Tak, kliknij 'Załaduj przykład', aby zobaczyć demonstrację konwersji.",
+                "q4": "Czy jest limit rozmiaru?",
+                "a4": "Wydajność zależy od pamięci Twojej przeglądarki, ale narzędzie radzi sobie z większością plików bez problemu.",
+                "q5": "Czy używa zewnętrznych API?",
+                "a5": "Nie, jest to samodzielne narzędzie, które działa natywnie na Twoim urządzeniu.",
+                "q6": "Czy XML jest sformatowany?",
+                "a6": "Tak, wyjście jest 'upiększone' z odpowiednimi wcięciami dla czytelności."
+            },
+            "tips_title": "Wskazówki dla profesjonalistów",
+            "tips_list": {
+                "1": "Zwaliduj swój JSON przed konwersją, aby uniknąć błędów składni.",
+                "2": "Użyj przycisku 'Wyczyść' dla świeżego startu przy konwersji wielu plików.",
+                "3": "Sprawdź tagi XML, aby upewnić się, że pasują do oczekiwanego schematu docelowego.",
+                "4": "Użyj 'Załaduj przykład', jeśli nie jesteś pewien formatu wejściowego.",
+                "5": "Dodaj tę stronę do zakładek, aby mieć szybki dostęp do swoich narzędzi deweloperskich."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź dane JSON do konwersji",
+            "success_convert": "✓ JSON przekonwertowany na XML pomyślnie!",
+            "error_convert": "Błąd konwersji JSON: ",
+            "error_no_copy": "Brak zawartości do skopiowania. Najpierw przekonwertuj JSON.",
+            "success_copy": "✓ XML skopiowany do schowka!"
+        }
+    },
+    "json-to-yaml-converter": {
+        "meta": {
+            "title": "Konwerter JSON na YAML — bezpłatne narzędzie online do obsługi obiektów",
+            "description": "Konwertuj format JSON na YAML natychmiastowo za pomocą naszego darmowego konwertera online JSON na YAML. Szybki, bezpieczny i łatwy w użyciu.",
+            "h1": "Konwerter JSON na YAML",
+            "subtitle": "Najlepszy konwerter JSON na YAML dla programistów i specjalistów IT"
+        },
+        "content": {
+            "hero_title": "Konwerter JSON na YAML",
+            "hero_subtitle": "Konwertuj format JSON na YAML natychmiastowo i dokładnie",
+            "p1": "Nasz darmowy konwerter JSON na YAML pozwala natychmiastowo przekształcić dane JSON na format YAML. Idealny dla programistów, inżynierów DevOps i każdego, kto pracuje z plikami konfiguracyjnymi lub serializacją danych.",
+            "what_title": "Co to jest konwerter JSON na YAML?",
+            "what_desc": "JSON (JavaScript Object Notation) i YAML (YAML Ain't Markup Language) to popularne formaty serializacji danych. YAML jest często preferowany w plikach konfiguracyjnych ze względu na czytelną dla człowieka składnię. Nasze narzędzie pomaga szybko wypełnić lukę między tymi formatami.",
+            "features_title": "Kluczowe cechy",
+            "features": {
+                "fast": {
+                    "title": "Szybka konwersja",
+                    "desc": "Konwertuj JSON na YAML w milisekundach"
+                },
+                "secure": {
+                    "title": "Bezpieczny i prywatny",
+                    "desc": "Przetwarzanie odbywa się całkowicie w Twojej przeglądarce"
+                },
+                "copy": {
+                    "title": "Kopiowanie jednym kliknięciem",
+                    "desc": "Skopiuj skonwertowany YAML natychmiastowo"
+                },
+                "format": {
+                    "title": "Czyste formatowanie",
+                    "desc": "Generuje dobrze wcięte wyjście YAML"
+                },
+                "free": {
+                    "title": "100% Darmowe",
+                    "desc": "Rejestracja ani płatność nie są wymagane"
+                },
+                "offline": {
+                    "title": "Po stronie klienta",
+                    "desc": "Działa bez wysyłania danych na serwer"
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "docker": {
+                    "title": "Docker",
+                    "desc": "Konwertuj konfiguracje kontenerów JSON na Docker Compose YAML."
+                },
+                "config": {
+                    "title": "Pliki konfiguracyjne",
+                    "desc": "Przekształcaj ustawienia JSON na pliki konfiguracyjne YAML."
+                },
+                "cicd": {
+                    "title": "Potoki CI/CD",
+                    "desc": "Przygotuj definicje potoków YAML z danych JSON."
+                },
+                "cloud": {
+                    "title": "Konfiguracje dostawców chmury",
+                    "desc": "Konwertuj dane JSON na format YAML dla platform chmurowych."
+                },
+                "data": {
+                    "title": "Transformacja danych",
+                    "desc": "Przełączaj się między JSON a YAML dla różnych narzędzi danych."
+                },
+                "tools": {
+                    "title": "Narzędzia DevOps",
+                    "desc": "Formatuj dane poprawnie dla narzędzi oczekujących YAML."
+                }
+            },
+            "how_title": "Jak używać",
+            "how_steps": {
+                "1": {
+                    "title": "Wklej JSON",
+                    "desc": "Wprowadź swoje dane JSON do pola wejściowego."
+                },
+                "2": {
+                    "title": "Konwertuj",
+                    "desc": "Kliknij przycisk \"Konwertuj\", aby wygenerować YAML."
+                },
+                "3": {
+                    "title": "Skopiuj YAML",
+                    "desc": "Skopiuj wynikowy YAML dla swojego projektu."
+                }
+            },
+            "samples_title": "Przykłady konwersji",
+            "samples": [
+                {
+                    "title": "Podstawowy obiekt",
+                    "json": "{ \"name\": \"Antigravity\", \"version\": \"1.0\" }",
+                    "yaml": "name: Antigravity\nversion: 1.0"
+                },
+                {
+                    "title": "Przykład tablicy",
+                    "json": "[ \"Java\", \"Python\", \"Go\" ]",
+                    "yaml": "- Java\n- Python\n- Go"
+                }
+            ],
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy to jest darmowe?",
+                "a1": "Tak, nasz konwerter JSON na YAML jest w 100% darmowy.",
+                "q2": "Czy to jest bezpieczne?",
+                "a2": "Tak, całe przetwarzanie odbywa się lokalnie w Twojej przeglądarce.",
+                "q3": "Czy obsługuje tablice?",
+                "a3": "Tak, obsługuje złożone struktury JSON, w tym tablice i zagnieżdżone obiekty.",
+                "q4": "Czy YAML jest lepszy niż JSON?",
+                "a4": "YAML jest często łatwiejszy do czytania i pisania dla ludzi, podczas gdy JSON jest ogólnie lepszy do przetwarzania maszynowego.",
+                "q5": "Czy mogę używać tego offline?",
+                "a5": "Tak, po załadowaniu narzędzie działa offline, ponieważ używa lokalnego JavaScript."
+            },
+            "tips_title": "Wskazówki dla profesjonalistów",
+            "tips_list": {
+                "1": "Upewnij się, że Twój JSON jest poprawny przed konwersją.",
+                "2": "Użyj przycisku \"Przykład\", aby zobaczyć, jak działa konwersja.",
+                "3": "YAML jest wrażliwy na wielkość liter, tak jak JSON.",
+                "4": "Sprawdź wcięcia w wynikowym YAML.",
+                "5": "Wyczyść wszystkie dane łatwo, aby zacząć od nowa."
+            }
+        },
+        "editor": {
+            "btn_convert": "Konwertuj",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj",
+            "btn_example": "Załaduj przykład",
+            "label_input": "Wejście JSON",
+            "ph_input": "Wklej swój JSON tutaj...",
+            "label_output": "Wyjście YAML",
+            "ph_output": "YAML pojawi się tutaj..."
+        },
+        "js": {
+            "error_empty": "Wprowadź JSON do konwersji",
+            "success_convert": "✓ JSON przekonwertowany na YAML pomyślnie!",
+            "error_convert": "Nieprawidłowy JSON: ",
+            "error_no_copy": "Brak YAML do skopiowania",
+            "success_copy": "✓ Skopiowano do schowka!"
+        }
+    },
+    "jwt-decoder": {
+        "meta": {
+            "title": "Dekoder JWT online — bezpłatny debuger tokenów sieciowych JSON",
+            "description": "Dekoduj i sprawdzaj tokeny JSON Web Tokens (JWT) - Zobacz nagłówek, ładunek i podpis!",
+            "h1": "Dekoder JWT",
+            "subtitle": "Dekoduj i sprawdzaj tokeny JSON Web Tokens (JWT) - Zobacz nagłówek, ładunek i podpis!"
+        },
+        "editor": {
+            "label_input": "Wprowadź token JWT",
+            "ph_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+            "btn_decode": "Dekoduj JWT",
+            "btn_clear": "Wyczyść",
+            "btn_example": "Przykład",
+            "label_payload": "Ładunek (Roszczenia)",
+            "label_signature": "Podpis",
+            "note_signature": "⚠️ Uwaga: Weryfikacja podpisu wymaga tajnego klucza"
+        },
+        "content": {
+            "hero_title": "Darmowy Dekoder JWT Online",
+            "hero_subtitle": "Dekoduj i sprawdzaj tokeny JSON Web Tokens natychmiastowo",
+            "p1": "Nasze darmowe narzędzie Dekoder JWT pozwala dekodować i sprawdzać tokeny JSON Web Tokens (JWT), aby zobaczyć ich komponenty: nagłówek, ładunek i podpis. Idealne do debugowania problemów z uwierzytelnianiem, zrozumienia struktury tokenów i walidacji roszczeń JWT.",
+            "what_title": "🔎 Co to jest JWT?",
+            "what_desc": "JSON Web Token (JWT) to kompaktowy, bezpieczny dla adresów URL sposób reprezentowania roszczeń między dwiema stronami. JWT składają się z trzech części: Nagłówka (algorytm i typ tokena), Ładunku (roszczenia/dane) i Podpisu (weryfikacja), oddzielonych kropkami.",
+            "features_title": "✨ Funkcje",
+            "features": {
+                "instant": {
+                    "title": "Natychmiastowe dekodowanie",
+                    "desc": "Dekoduj JWT w milisekundach"
+                },
+                "structured": {
+                    "title": "Ustrukturyzowany widok",
+                    "desc": "Zobacz nagłówek, ładunek i podpis osobno"
+                },
+                "privacy": {
+                    "title": "Prywatność przede wszystkim",
+                    "desc": "Całe dekodowanie odbywa się w Twojej przeglądarce"
+                }
+            },
+            "uses_title": "🎯 Typowe przypadki użycia",
+            "uses": {
+                "debug": {
+                    "title": "🐛 Debugowanie",
+                    "desc": "Debuguj problemy z uwierzytelnianiem poprzez inspekcję zawartości JWT"
+                },
+                "validate": {
+                    "title": "✅ Walidacja",
+                    "desc": "Weryfikuj roszczenia JWT i czasy wygaśnięcia"
+                },
+                "learn": {
+                    "title": "📚 Nauka",
+                    "desc": "Zrozum strukturę i komponenty JWT"
+                },
+                "dev": {
+                    "title": "🔧 Rozwój",
+                    "desc": "Testuj generowanie i parsowanie JWT w swoich aplikacjach"
+                }
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Czy bezpiecznie jest dekodować tutaj JWT?",
+                "a1": "Tak! Całe dekodowanie odbywa się w Twojej przeglądarce. Twój JWT nigdy nie opuszcza urządzenia. Jednak nigdy nie udostępniaj publicznie JWT, ponieważ mogą zawierać wrażliwe informacje.",
+                "q2": "Czy to narzędzie może zweryfikować podpisy JWT?",
+                "a2": "To narzędzie dekoduje i wyświetla komponenty JWT, ale nie weryfikuje podpisów, ponieważ wymaga to tajnego klucza, który nigdy nie powinien być udostępniany.",
+                "q3": "Czym są roszczenia JWT?",
+                "a3": "Roszczenia to oświadczenia o podmiocie (zazwyczaj użytkowniku) i dodatkowe dane. Typowe roszczenia to 'sub' (podmiot), 'exp' (wygaśnięcie) i 'iat' (wydany)."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź token JWT",
+            "error_invalid_format": "Nieprawidłowy format JWT. JWT powinien składać się z 3 części oddzielonych kropkami.",
+            "success_decode": "✓ JWT zdekodowany pomyślnie",
+            "error_decode": "✗ Błąd dekodowania JWT: "
+        }
+    },
+    "markdown-to-html-converter": {
+        "meta": {
+            "title": "Konwerter Markdown na HTML — darmowy analizator składni online",
+            "description": "Konwertuj Markdown na HTML natychmiastowo",
+            "h1": "Konwerter Markdown na HTML",
+            "subtitle": "Konwertuj Markdown na HTML natychmiastowo"
+        },
+        "editor": {
+            "btn_convert": "Konwertuj",
+            "btn_copy": "Kopiuj HTML",
+            "btn_download": "Pobierz",
+            "btn_clear": "Wyczyść",
+            "btn_example": "Przykład",
+            "label_input": "Wejście Markdown",
+            "ph_input": "# Wprowadź swój Markdown tutaj...",
+            "label_output": "Wyjście HTML",
+            "ph_output": "Wyjście HTML pojawi się tutaj...",
+            "label_preview": "Podgląd na żywo",
+            "ph_preview": "Podgląd pojawi się tutaj..."
+        },
+        "content": {
+            "features": {
+                "instant": {
+                    "title": "Natychmiastowa konwersja",
+                    "desc": "Konwertuj Markdown na HTML w milisekundach"
+                },
+                "preview": {
+                    "title": "Podgląd na żywo",
+                    "desc": "Zobacz swój HTML wyrenderowany w czasie rzeczywistym"
+                },
+                "export": {
+                    "title": "Kopiuj i Pobierz",
+                    "desc": "Łatwo kopiuj HTML lub pobierz jako plik"
+                },
+                "free": {
+                    "title": "100% Darmowe",
+                    "desc": "Bez rejestracji, bez limitów, całkowicie darmowe"
+                },
+                "privacy": {
+                    "title": "Prywatność przede wszystkim",
+                    "desc": "Cała konwersja odbywa się w Twojej przeglądarce"
+                },
+                "mobile": {
+                    "title": "Przyjazny dla urządzeń mobilnych",
+                    "desc": "Działa idealnie na wszystkich urządzeniach"
+                }
+            },
+            "hero_title": "🚀 Darmowy Konwerter Markdown na HTML",
+            "hero_subtitle": "Przekształcaj swoje dokumenty Markdown w czysty, semantyczny HTML natychmiastowo. Idealne dla programistów, pisarzy i twórców treści.",
+            "what_title": "✨ Co to jest konwersja Markdown na HTML?",
+            "p1": "Markdown to lekki język znaczników, który pozwala pisać sformatowany tekst przy użyciu składni zwykłego tekstu. Konwersja Markdown na HTML przekształca proste, czytelne dokumenty Markdown w poprawnie ustrukturyzowany kod HTML, który może być używany na stronach internetowych, blogach, w dokumentacji i aplikacjach internetowych.",
+            "what_desc": "Nasz darmowy konwerter Markdown na HTML wykorzystuje potężną bibliotekę Parsedown, aby zapewnić dokładne, zgodne ze standardami wyjście HTML. Niezależnie od tego, czy piszesz dokumentację, posty na blogu, pliki README czy treści techniczne, nasze narzędzie sprawia, że proces konwersji jest natychmiastowy i bezwysiłkowy.",
+            "features_title": "💡 Kluczowe cechy",
+            "uses_title": "🎯 Typowe przypadki użycia",
+            "uses": {
+                "docs": {
+                    "title": "📚 Dokumentacja",
+                    "desc": "Konwertuj pliki README i dokumenty na HTML"
+                },
+                "blog": {
+                    "title": "✍️ Posty na blogu",
+                    "desc": "Pisz w Markdown, publikuj w HTML"
+                },
+                "github": {
+                    "title": "💻 Projekty GitHub",
+                    "desc": "Przekształcaj pliki README.md w HTML"
+                },
+                "email": {
+                    "title": "📧 Szablony e-mail",
+                    "desc": "Twórz treści e-mail w Markdown"
+                }
+            },
+            "pro_tip": {
+                "title": "💡 Wskazówka dla profesjonalistów",
+                "desc": "Aby uzyskać najlepsze wyniki, używaj standardowej składni Markdown zdefiniowanej przez CommonMark. Nasz konwerter obsługuje większość odmian Markdown, w tym GitHub Flavored Markdown (GFM). Jeśli pracujesz ze złożonymi dokumentami, przetestuj najpierw małe sekcje, aby zapewnić poprawną konwersję."
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Czy to narzędzie jest darmowe?",
+                "a1": "Tak! Nasz konwerter Markdown na HTML jest w 100% darmowy bez ukrytych kosztów i limitów użytkowania.",
+                "q2": "Czy moja treść jest prywatna?",
+                "a2": "Absolutnie! Cała konwersja odbywa się bezpośrednio w Twojej przeglądarce przy użyciu JavaScript. Twoja treść nigdy nie opuszcza urządzenia.",
+                "q3": "Jaka składnia jest obsługiwana?",
+                "a3": "Nasz konwerter obsługuje standardową składnię Markdown, w tym nagłówki, pogrubienie, kursywę, listy, linki, obrazy, bloki kodu, tabele i więcej (zgodne z GFM)."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź tekst Markdown",
+            "error_general": "Wystąpił błąd podczas konwersji",
+            "error_no_copy": "Brak HTML do skopiowania. Najpierw przekonwertuj Markdown.",
+            "success_copy": "HTML skopiowany do schowka!",
+            "error_no_download": "Brak HTML do pobrania. Najpierw przekonwertuj Markdown.",
+            "example": "# Witaj w Markdown\n\n## To jest podnagłówek\n\nTo jest akapit z **pogrubionym tekstem** i *kursywą*.\n\n### Funkcje\n\n- Łatwy do pisania\n- Łatwy do czytania\n- Konwertuje na HTML\n\n### Przykład kodu\n\n```javascript\nfunction czesc() {\n    console.log(\"Witaj, Świecie!\");\n}\n```\n\n> To jest cytat blokowy\n\n[Odwiedź naszą stronę](https://example.com)"
+        }
+    },
+    "md5-generator": {
+        "meta": {
+            "title": "Generator skrótu MD5 - bezpłatne narzędzie bezpieczeństwa online",
+            "description": "Generuj skróty MD5 z dowolnego tekstu natychmiastowo",
+            "h1": "Generator skrótu MD5",
+            "subtitle": "Generuj skróty MD5 z dowolnego tekstu natychmiastowo"
+        },
+        "editor": {
+            "label_input": "Wprowadź tekst",
+            "ph_input": "Wprowadź tekst do zahaszowania...",
+            "btn_generate": "Generuj skrót MD5",
+            "label_result": "Skrót MD5",
+            "btn_copy": "Kopiuj"
+        },
+        "content": {
+            "hero_title": "Generator skrótów MD5",
+            "hero_subtitle": "Generuj skróty MD5 z dowolnego tekstu natychmiastowo",
+            "p1": "Generuj skróty MD5 z dowolnego tekstu, hasła lub ciągu danych natychmiastowo za pomocą naszego darmowego generatora skrótów MD5 online. MD5 (Message-Digest Algorithm 5) to powszechnie używana kryptograficzna funkcja skrótu, która tworzy 128-bitową (32-znakową szesnastkową) wartość skrótu. Idealny do weryfikacji integralności danych, generowania sum kontrolnych i zrozumienia funkcji skrótu. Całe przetwarzanie odbywa się w Twojej przeglądarce, zapewniając pełną prywatność.",
+            "what_title": "🔓 Co to jest MD5?",
+            "what_desc": "MD5 to kryptograficzna funkcja skrótu, która przyjmuje dane wejściowe dowolnej długości i tworzy stałą 128-bitową wartość skrótu, zazwyczaj reprezentowaną jako 32-znakowa liczba szesnastkowa. To samo wejście zawsze daje ten sam skrót, ale nawet niewielka zmiana w wejściu tworzy zupełnie inny skrót.",
+            "features_title": "✅ Zalety MD5",
+            "features": {
+                "fast": "<strong>Szybkie przetwarzanie:</strong> Niezwykle szybkie generowanie skrótów",
+                "fixed": "<strong>Stała długość:</strong> Zawsze generuje 128-bitowe wyjście",
+                "deterministic": "<strong>Deterministyczny:</strong> To samo wejście = ten sam skrót",
+                "support": "<strong>Szerokie wsparcie:</strong> Dostępny we wszystkich językach programowania"
+            },
+            "uses_title": "📊 Typowe przypadki użycia",
+            "uses": {
+                "verify": "<strong>Weryfikacja plików:</strong> Sprawdź integralność plików",
+                "checksum": "<strong>Sumy kontrolne:</strong> Weryfikuj pobierane pliki",
+                "cache": "<strong>Klucze pamięci podręcznej:</strong> Generuj unikalne identyfikatory",
+                "integrity": "<strong>Integralność danych:</strong> Wykrywaj zmiany"
+            },
+            "warning_title": "⚠️ Ostrzeżenie bezpieczeństwa",
+            "warning_desc": "<strong>NIE używaj MD5 do haszowania haseł lub zastosowań krytycznych dla bezpieczeństwa!</strong> MD5 jest kryptograficznie złamany i podatny na ataki kolizyjne. Do haszowania haseł używaj nowoczesnych algorytmów, takich jak bcrypt, Argon2 lub PBKDF2.",
+            "compare_title": "🔄 MD5 kontra inne funkcje skrótu",
+            "compare": {
+                "md5": {
+                    "title": "MD5",
+                    "desc1": "128-bitowe wyjście",
+                    "desc2": "Szybkie, ale niebezpieczne dla kryptografii"
+                },
+                "sha1": {
+                    "title": "SHA-1",
+                    "desc1": "160-bitowe wyjście",
+                    "desc2": "Również przestarzałe dla zastosowań bezpieczeństwa"
+                },
+                "sha256": {
+                    "title": "SHA-256",
+                    "desc1": "256-bitowe wyjście",
+                    "desc2": "Bezpieczne i szeroko stosowane dzisiaj"
+                }
+            },
+            "faq_title": "❓ Często zadawane pytania",
+            "faq": {
+                "q1": "Czy MD5 jest bezpieczne dla haseł?",
+                "a1": "Nie! MD5 jest kryptograficznie złamane i nigdy nie powinno być używane do haszowania haseł. Użyj zamiast tego bcrypt, Argon2 lub PBKDF2.",
+                "q2": "Czy mogę odwrócić skrót MD5?",
+                "a2": "Nie, MD5 to funkcja jednokierunkowa - nie można odwrócić skrótu, aby uzyskać oryginalne wejście. Jednak atakujący mogą używać tablic tęczowych, aby znaleźć wejścia.",
+                "q3": "Czy moje dane są wysyłane na serwer?",
+                "a3": "Nie! Całe generowanie skrótu MD5 odbywa się całkowicie w Twojej przeglądarce przy użyciu JavaScript. Twoje dane nigdy nie opuszczają urządzenia."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź tekst",
+            "btn_copied": "Skopiowano!"
+        }
+    },
+    "sql-to-json-converter": {
+        "meta": {
+            "title": "Konwerter SQL na JSON — bezpłatne narzędzie do obsługi baz danych online",
+            "description": "Przekształcaj polecenia INSERT SQL na tablice JSON natychmiastowo za pomocą naszego darmowego narzędzia online. Szybki, dokładny i bezpieczny.",
+            "h1": "Konwerter SQL na JSON",
+            "subtitle": "Łatwo konwertuj między danymi SQL a obiektami JSON"
+        },
+        "editor": {
+            "btn_encode": "Tryb JSON na SQL",
+            "btn_decode": "Tryb SQL na JSON",
+            "label_table": "Nazwa tabeli",
+            "ph_table": "Wprowadź nazwę tabeli (np. users)",
+            "label_input_json": "Wejście JSON",
+            "ph_input_json": "Wklej swoją tablicę JSON tutaj...",
+            "label_output_sql": "Wyjście SQL",
+            "ph_output_sql": "Wygenerowane SQL pojawi się tutaj...",
+            "label_input_sql": "Wejście SQL",
+            "label_output_json": "Wyjście JSON",
+            "btn_convert_sql": "Generuj SQL",
+            "btn_convert_json": "Generuj JSON",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj wynik"
+        },
+        "content": {
+            "hero_title": "Konwerter SQL na JSON",
+            "hero_subtitle": "Dwukierunkowa konwersja dla nowoczesnych programistów",
+            "p1": "Nowoczesne aplikacje opierają się na JSON, ale bazy danych wciąż mówią w SQL. Nasz dwukierunkowy konwerter wypełnia tę lukę bez wysiłku. Niezależnie od tego, czy chcesz zamienić eksporty bazy danych na JSON dla swojego API, czy dane JSON na skrypty seedujące SQL, to narzędzie zapewnia szybkie, bezpieczne i dokładne rozwiązanie.",
+            "integration_title": "Bezproblemowa integracja",
+            "integration_desc": "Łatwo przenoś dane między relacyjną bazą danych a aplikacją internetową. Nasz parser obsługuje standardowe polecenia INSERT SQL i konwertuje je na ustrukturyzowane obiekty JSON, zachowując typy danych i wartości.",
+            "features_title": "Kluczowe cechy",
+            "features": {
+                "instant": {
+                    "title": "Natychmiastowe wyniki",
+                    "desc": "Konwersje odbywają się w czasie rzeczywistym po kliknięciu."
+                },
+                "bidirectional": {
+                    "title": "Tryb podwójny",
+                    "desc": "Przełączaj się między trybami SQL-na-JSON i JSON-na-SQL."
+                },
+                "security": {
+                    "title": "Bezpieczna konwersja",
+                    "desc": "Przetwarzanie jest w 100% po stronie klienta dla maksymalnej prywatności."
+                },
+                "custom": {
+                    "title": "Czyste formatowanie",
+                    "desc": "Wyjście jest profesjonalnie sformatowane i gotowe do użycia."
+                },
+                "types": {
+                    "title": "Świadomość typów",
+                    "desc": "Poprawnie obsługuje wartości null, liczby i ciągi znaków."
+                },
+                "free": {
+                    "title": "Całkowicie darmowe",
+                    "desc": "Brak subskrypcji lub limitów użytkowania."
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "seeding": {
+                    "title": "Seedowanie bazy danych",
+                    "desc": "Szybko generuj skrypty SQL do wypełniania środowiska deweloperskiego."
+                },
+                "export": {
+                    "title": "Eksport danych",
+                    "desc": "Konwertuj wyniki zapytań SQL na JSON do analizy."
+                },
+                "migration": {
+                    "title": "Migracja API",
+                    "desc": "Przygotuj dane starszej bazy danych do użycia w nowoczesnych API REST."
+                },
+                "testing": {
+                    "title": "Dane testowe",
+                    "desc": "Twórz dane testowe JSON z istniejących tabel SQL."
+                },
+                "docs": {
+                    "title": "Dokumentacja",
+                    "desc": "Dołącz przykłady JSON struktury bazy danych w dokumentacji."
+                },
+                "prototype": {
+                    "title": "Szybkie prototypowanie",
+                    "desc": "Szybko przenoś dane między stanami podczas rozwoju."
+                }
+            },
+            "how_title": "Jak używać",
+            "how_steps": {
+                "1": {
+                    "title": "Wybierz tryb",
+                    "desc": "Wybierz między JSON na SQL lub SQL na JSON za pomocą przycisków."
+                },
+                "2": {
+                    "title": "Wprowadź dane",
+                    "desc": "Wklej swój kod źródłowy do lewego obszaru edytora."
+                },
+                "3": {
+                    "title": "Ustaw nazwę tabeli",
+                    "desc": "Jeśli konwertujesz na SQL, określ docelową tabelę bazy danych."
+                },
+                "4": {
+                    "title": "Generuj",
+                    "desc": "Kliknij 'Generuj', aby natychmiast zobaczyć transformację."
+                },
+                "5": {
+                    "title": "Skopiuj wynik",
+                    "desc": "Użyj przycisku 'Kopiuj', aby pobrać wynik."
+                }
+            },
+            "samples_title": "Przykłady konwersji",
+            "samples": [
+                {
+                    "title": "Wstawienia SQL na JSON",
+                    "desc": "INSERT INTO users (name, age) VALUES ('Alice', 25); → [{\"name\": \"Alice\", \"age\": 25}]"
+                },
+                {
+                    "title": "Wstawienie JSON na SQL",
+                    "desc": "[{\"id\": 1}] → INSERT INTO table (id) VALUES (1);"
+                }
+            ],
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Jakie polecenia SQL są obsługiwane?",
+                "a1": "Obecnie narzędzie obsługuje standardowe polecenia INSERT INTO ze zdefiniowanymi nazwami kolumn.",
+                "q2": "Czy moje dane są bezpieczne?",
+                "a2": "Tak, nigdy nie wysyłamy Twoich danych na nasz serwer. Cała logika działa w Twojej przeglądarce.",
+                "q3": "Czy mogę konwertować wiele wierszy?",
+                "a3": "Tak, narzędzie wydajnie obsługuje wielowierszowe SQL lub duże tablice JSON.",
+                "q4": "Czy obsługuje znaki specjalne?",
+                "a4": "Tak, poprawnie eskapuje pojedyncze cudzysłowy i obsługuje podstawowe znaki specjalne."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź dane do przetworzenia",
+            "placeholder_table_name": "users",
+            "error_general": "Błąd konwersji: ",
+            "error_invalid_array": "Błąd: Dane wejściowe muszą być tablicą obiektów JSON.",
+            "error_empty_array": "Błąd: Tablica JSON jest pusta.",
+            "success_sql": "✓ SQL wygenerowany pomyślnie!",
+            "error_no_statements": "Nie znaleziono prawidłowych poleceń INSERT SQL.",
+            "success_json": "✓ JSON wygenerowany pomyślnie!",
+            "error_no_copy": "Brak zawartości do skopiowania.",
+            "success_copy": "✓ Wynik skopiowany do schowka!"
+        }
+    },
+    "unicode-encoder-decoder": {
+        "meta": {
+            "title": "Koder i dekoder Unicode — bezpłatne narzędzie tekstowe online",
+            "description": "Koduj i dekoduj sekwencje ucieczki Unicode dla JavaScript i JSON za pomocą naszego darmowego narzędzia.",
+            "h1": "Koder i dekoder Unicode",
+            "subtitle": "Koduj i dekoduj sekwencje ucieczki Unicode dla JavaScript i JSON"
+        },
+        "editor": {
+            "btn_encode": "Koduj Unicode",
+            "btn_decode": "Dekoduj Unicode",
+            "label_input_encode": "Wprowadź tekst do zakodowania",
+            "ph_input": "Witaj Świecie",
+            "btn_process_encode": "Koduj Unicode",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj",
+            "label_output_encoded": "Zakodowany Unicode",
+            "ph_output": "Przetworzony Unicode pojawi się tutaj...",
+            "label_input_decode": "Wprowadź Unicode do zdekodowania",
+            "label_output_decoded": "Zdekodowany Tekst",
+            "btn_process_decode": "Dekoduj Unicode"
+        },
+        "content": {
+            "p1": "Nasze darmowe narzędzie Koder i Dekoder Unicode pomaga kodować tekst na sekwencje ucieczki Unicode (np. \\u0041) dla bezpiecznego użycia w JavaScript, JSON i innych kontekstach programistycznych, lub dekodować je z powrotem na czytelny tekst. Idealne dla programistów, analityków danych i każdego, kto zajmuje się międzynarodowymi zestawami znaków. 100% darmowe przetwarzanie po stronie klienta zapewnia prywatność Twoich danych.",
+            "what_title": "Co to jest kodowanie Unicode?",
+            "what_desc": "Kodowanie Unicode konwertuje znaki na ich odpowiadające punkty kodowe Unicode, często reprezentowane jako sekwencje ucieczki, takie jak \\uXXXX. Zapewnia to, że tekst zawierający znaki specjalne, emoji lub skrypty nie łacińskie może być bezpiecznie reprezentowany w środowiskach, które zazwyczaj obsługują tylko ASCII, takich jak pliki kodu źródłowego lub dane JSON.",
+            "features_title": "Funkcje",
+            "features": {
+                "instant": {
+                    "title": "Natychmiastowa konwersja",
+                    "desc": "Koduj lub dekoduj Unicode w milisekundach"
+                },
+                "bidirectional": {
+                    "title": "Dwukierunkowy",
+                    "desc": "Koduj do formatu Unicode lub dekoduj z powrotem do oryginału"
+                },
+                "privacy": {
+                    "title": "Prywatność przede wszystkim",
+                    "desc": "Całe przetwarzanie odbywa się w Twojej przeglądarce"
+                },
+                "copy": {
+                    "title": "Kopiowanie jednym kliknięciem",
+                    "desc": "Natychmiastowo kopiuj zakodowany/zdekodowany tekst"
+                },
+                "free": {
+                    "title": "100% Darmowe",
+                    "desc": "Bez limitów, rejestracja nie jest wymagana"
+                },
+                "universal": {
+                    "title": "Uniwersalne wsparcie",
+                    "desc": "Działa ze wszystkimi znakami Unicode i skryptami"
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "programming": {
+                    "title": "Programowanie",
+                    "desc": "Bezpieczne osadzanie znaków specjalnych w kodzie źródłowym JavaScript lub Java"
+                },
+                "data": {
+                    "title": "Serializacja danych",
+                    "desc": "Zapewnienie bezpiecznej transmisji znaków spoza ASCII w JSON"
+                },
+                "international": {
+                    "title": "Internacjonalizacja",
+                    "desc": "Debuguj i wyświetlaj tekst w różnych językach i skryptach"
+                },
+                "security": {
+                    "title": "Bezpieczeństwo",
+                    "desc": "Analizuj zaciemniony kod lub dane zawierające ucieczki Unicode"
+                }
+            },
+            "how_to_title": "Jak używać",
+            "how_to": {
+                "step1": {
+                    "title": "Wybierz tryb",
+                    "desc": "Wybierz \"Koduj Unicode\" lub \"Dekoduj Unicode\" w zależności od potrzeb"
+                },
+                "step2": {
+                    "title": "Wprowadź tekst",
+                    "desc": "Wklej swój tekst lub ucieczki Unicode w pole wejściowe"
+                },
+                "step3": {
+                    "title": "Przetwórz",
+                    "desc": "Kliknij przycisk kodowania lub dekodowania"
+                },
+                "step4": {
+                    "title": "Skopiuj wynik",
+                    "desc": "Kliknij \"Kopiuj\", aby skopiować przetworzony tekst do schowka"
+                },
+                "step5": {
+                    "title": "Użyj gdziekolwiek",
+                    "desc": "Wklej wynik do swojego kodu lub aplikacji"
+                }
+            },
+            "examples_title": "Przykłady Unicode",
+            "examples": {
+                "simple": {
+                    "title": "Proste/ASCII:",
+                    "desc": "Oryginał: \"A\" → Zakodowane: \"\\u0041\""
+                },
+                "special": {
+                    "title": "Znaki specjalne:",
+                    "desc": "Oryginał: \"©\" → Zakodowane: \"\\u00A9\""
+                },
+                "emoji": {
+                    "title": "Emoji/Wielobajtowe:",
+                    "desc": "Oryginał: \"🌟\" → Zakodowane: \"\\uD83C\\uDF1F\" (pary zastępcze) lub \"\\u2B50\" w zależności od reprezentacji"
+                }
+            },
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Dlaczego używać sekwencji ucieczki Unicode?",
+                "a1": "Pozwalają one reprezentować dowolny znak przy użyciu tylko znaków ASCII, co zapewnia kompatybilność w różnych systemach, kodowaniach i transferach plików, które mogą nie obsługiwać surowego Unicode poprawnie.",
+                "q2": "Jaki format jest używany?",
+                "a2": "To narzędzie zazwyczaj używa stylu JavaScript/JSON \\uXXXX dla znaków z Podstawowej Płaszczyzny Wielojęzycznej.",
+                "q3": "Czy to różni się od kodowania URL?",
+                "a3": "Tak. Kodowanie URL używa wartości szesnastkowych %XX głównie dla adresów URL. Ucieczki Unicode używają \\uXXXX i są stosowane w ciągach znaków w językach programowania takich jak JavaScript, Java i Python.",
+                "q4": "Czy moje dane są bezpieczne?",
+                "a4": "Tak! Całe kodowanie i dekodowanie odbywa się całkowicie w Twojej przeglądarce przy użyciu JavaScript. Twój tekst nigdy nie opuszcza urządzenia."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź tekst do przetworzenia",
+            "success_encode": "✓ Unicode zakodowany pomyślnie",
+            "success_decode": "✓ Unicode zdekodowany pomyślnie",
+            "error_process": "✗ Błąd przetwarzania Unicode: ",
+            "error_no_copy": "Brak wyjścia do skopiowania",
+            "success_copy": "✓ Skopiowano do schowka"
+        }
+    },
+    "url-encoder-decoder": {
+        "meta": {
+            "title": "Koder i dekoder adresów URL — bezpłatne narzędzie procentowe online",
+            "description": "Koduj i dekoduj adresy URL dla bezpiecznej transmisji internetowej za pomocą naszego darmowego narzędzia online.",
+            "h1": "Koder i dekoder URL",
+            "subtitle": "Koduj i dekoduj adresy URL dla bezpiecznej transmisji internetowej"
+        },
+        "editor": {
+            "btn_encode": "Koduj URL",
+            "btn_decode": "Dekoduj URL",
+            "label_input_encode": "Wprowadź URL do zakodowania",
+            "ph_input": "https://example.com/search?name=Jan Kowalski&age=30",
+            "btn_process_encode": "Koduj URL",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj",
+            "label_output_encoded": "Zakodowany URL",
+            "ph_output": "Przetworzony URL pojawi się tutaj...",
+            "label_input_decode": "Wprowadź URL do zdekodowania",
+            "label_output_decoded": "Zdekodowany URL",
+            "btn_process_decode": "Dekoduj URL"
+        },
+        "content": {
+            "p1": "Nasze darmowe narzędzie Koder i Dekoder URL pomaga kodować znaki specjalne w adresach URL dla bezpiecznej transmisji przez Internet lub dekodować zakodowane adresy URL z powrotem do ich oryginalnego formatu. Idealne dla programistów, specjalistów SEO i każdego, kto pracuje z adresami internetowymi. 100% darmowe przetwarzanie po stronie klienta zapewnia prywatność Twoich danych.",
+            "what_title": "Co to jest kodowanie URL?",
+            "what_desc": "Kodowanie URL (zwane również kodowaniem procentowym) konwertuje znaki specjalne w adresach URL na format, który może być przesyłany przez Internet. Spacje stają się %20, znaki specjalne jak & stają się %26 i tak dalej. Zapewnia to, że adresy URL działają poprawnie we wszystkich przeglądarkach i systemach.",
+            "features_title": "Funkcje",
+            "features": {
+                "instant": {
+                    "title": "Natychmiastowa konwersja",
+                    "desc": "Koduj lub dekoduj adresy URL w milisekundach"
+                },
+                "bidirectional": {
+                    "title": "Dwukierunkowy",
+                    "desc": "Koduj do formatu URL lub dekoduj z powrotem do oryginału"
+                },
+                "privacy": {
+                    "title": "Prywatność przede wszystkim",
+                    "desc": "Całe przetwarzanie odbywa się w Twojej przeglądarce"
+                },
+                "copy": {
+                    "title": "Kopiowanie jednym kliknięciem",
+                    "desc": "Natychmiastowo kopiuj zakodowane/zdekodowane adresy URL"
+                },
+                "free": {
+                    "title": "100% Darmowe",
+                    "desc": "Bez limitów, rejestracja nie jest wymagana"
+                },
+                "universal": {
+                    "title": "Uniwersalne wsparcie",
+                    "desc": "Działa ze wszystkimi formatami URL i znakami"
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "query": {
+                    "title": "Parametry zapytania",
+                    "desc": "Koduj znaki specjalne w ciągach zapytań URL dla wywołań API i żądań internetowych"
+                },
+                "analytics": {
+                    "title": "Śledzenie analityki",
+                    "desc": "Koduj parametry UTM i adresy URL śledzenia dla kampanii marketingowych"
+                },
+                "auth": {
+                    "title": "Uwierzytelnianie",
+                    "desc": "Koduj poświadczenia i tokeny w uwierzytelnianiu OAuth i API"
+                },
+                "i18n": {
+                    "title": "Internacjonalizacja",
+                    "desc": "Koduj znaki spoza ASCII w adresach URL dla globalnej kompatybilności"
+                },
+                "seo": {
+                    "title": "SEO i Przekierowania",
+                    "desc": "Twórz poprawnie zakodowane adresy URL przekierowań i linki kanoniczne"
+                },
+                "email": {
+                    "title": "Linki e-mail",
+                    "desc": "Koduj linki mailto z tematami i treścią"
+                }
+            },
+            "how_to_title": "Jak używać",
+            "how_to": {
+                "step1": {
+                    "title": "Wybierz tryb",
+                    "desc": "Wybierz \"Koduj URL\" lub \"Dekoduj URL\" w zależności od potrzeb"
+                },
+                "step2": {
+                    "title": "Wprowadź URL",
+                    "desc": "Wklej swój URL lub tekst w pole wejściowe"
+                },
+                "step3": {
+                    "title": "Przetwórz",
+                    "desc": "Kliknij przycisk \"Koduj URL\" lub \"Dekoduj URL\""
+                },
+                "step4": {
+                    "title": "Skopiuj wynik",
+                    "desc": "Kliknij \"Kopiuj\", aby skopiować przetworzony URL do schowka"
+                },
+                "step5": {
+                    "title": "Użyj gdziekolwiek",
+                    "desc": "Wklej zakodowany/zdekodowany URL w swojej aplikacji"
+                }
+            },
+            "examples_title": "Przykłady kodowania URL",
+            "examples": {
+                "space": {
+                    "title": "Znak spacji:",
+                    "desc": "Oryginał: \"Hello World\" → Zakodowane: \"Hello%20World\""
+                },
+                "special": {
+                    "title": "Znaki specjalne:",
+                    "desc": "Oryginał: \"name=John&age=30\" → Zakodowane: \"name%3DJohn%26age%3D30\""
+                },
+                "full": {
+                    "title": "Pełny URL:",
+                    "desc": "Oryginał: \"https://example.com/search?q=hello world\" → Zakodowane: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
+                }
+            },
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Kiedy powinienem kodować adresy URL?",
+                "a1": "Koduj adresy URL, gdy przekazujesz je jako parametry zapytania, przechowujesz w bazach danych lub gdy zawierają znaki specjalne, takie jak spacje, &, =, ? lub znaki spoza ASCII.",
+                "q2": "Jakie znaki wymagają kodowania?",
+                "a2": "Znaki zarezerwowane to : / ? # [ ] @ ! $ & ' ( ) * + , ; = a znaki niebezpieczne to spacje, <, >, \", {, }, |, \\, ^, ` i znaki spoza ASCII muszą być kodowane.",
+                "q3": "Czy kodowanie URL to to samo co Base64?",
+                "a3": "Nie. Kodowanie URL konwertuje określone znaki na format %XX, podczas gdy Base64 koduje całe dane na inny zestaw znaków. Służą one różnym celom.",
+                "q4": "Czy mogę kodować całe adresy URL?",
+                "a4": "Tak, ale zazwyczaj koduje się tylko część ciągu zapytania. Kodowanie całego adresu URL, w tym protokołu (https://), jest mniej powszechne i może powodować problemy.",
+                "q5": "Czy moje dane są bezpieczne?",
+                "a5": "Tak! Całe kodowanie i dekodowanie odbywa się całkowicie w Twojej przeglądarce przy użyciu JavaScript. Twoje adresy URL nigdy nie opuszczają urządzenia ani nie są wysyłane na żaden serwer."
+            }
+        },
+        "js": {
+            "error_empty": "Wprowadź URL do przetworzenia",
+            "success_encode": "✓ URL zakodowany pomyślnie",
+            "success_decode": "✓ URL zdekodowany pomyślnie",
+            "error_process": "✗ Błąd przetwarzania URL: ",
+            "error_no_copy": "Brak wyjścia do skopiowania",
+            "success_copy": "✓ Skopiowano do schowka"
+        }
+    },
+    "uuid-generator": {
+        "meta": {
+            "title": "Bezpłatny generator UUID – narzędzie GUID w wersji online 4",
+            "description": "Darmowe narzędzie online do generowania UUID. Szybkie, bezpieczne i łatwe w użyciu.",
+            "h1": "Generator UUID",
+            "subtitle": "Najlepszy generator UUID dla programistów i specjalistów IT"
+        },
+        "editor": {
+            "label_quantity": "Ilość",
+            "label_version": "Wersja",
+            "opt_v4": "Wersja 4 (Losowa)",
+            "btn_generate": "Generuj UUID",
+            "btn_copy": "Kopiuj",
+            "label_output": "Wygenerowane UUID"
+        },
+        "content": {
+            "about_title": "O UUID (Wersja 4)",
+            "about_desc": "UUID (Universally Unique Identifier) to 128-bitowa liczba używana do identyfikacji informacji w systemach komputerowych. UUID wersji 4 są generowane przy użyciu liczb losowych lub pseudolosowych. Prawdopodobieństwo duplikacji jest praktycznie zerowe."
+        },
+        "js": {
+            "success_generated": "Wygenerowano :count UUID!",
+            "success_copy": "Skopiowano do schowka!"
+        }
+    },
+    "xml-formatter": {
+        "meta": {
+            "title": "Narzędzie do formatowania XML online — bezpłatne narzędzie do precyzowania XML",
+            "description": "Formatuj, upiększaj i minimalizuj dane XML za pomocą naszego darmowego narzędzia online.",
+            "h1": "Formater XML",
+            "subtitle": "Formatuj, upiększaj i minimalizuj dane XML"
+        },
+        "editor": {
+            "label_input": "Wejście XML",
+            "ph_input": "<root><child>wartość</child></root>",
+            "btn_format": "Formatuj / Upiększ",
+            "btn_minify": "Minimalizuj",
+            "btn_copy": "Kopiuj"
+        },
+        "js": {
+            "success_format": "XML sformatowany pomyślnie!",
+            "error_invalid": "Nieprawidłowy XML",
+            "success_minify": "XML zminimalizowany!",
+            "success_copy": "Skopiowano do schowka!"
+        }
+    },
+    "xml-to-csv": {
+        "meta": {
+            "title": "Konwerter XML na CSV - darmowy ekstraktor danych online",
+            "description": "Darmowe narzędzie online do konwersji XML na CSV. Szybkie, bezpieczne i łatwe w użyciu.",
+            "h1": "Konwerter XML na CSV",
+            "subtitle": "Najlepszy konwerter XML na CSV dla programistów i specjalistów IT"
+        },
+        "editor": {
+            "btn_convert": "Konwertuj na CSV",
+            "btn_clear": "Wyczyść",
+            "btn_copy": "Kopiuj",
+            "btn_example": "Przykład",
+            "label_input": "Wprowadź XML",
+            "ph_input": "<data><row><name>Jan</name><age>30</age></row></data>",
+            "label_output": "Wyjście CSV",
+            "ph_output": "Skonwertowany CSV pojawi się tutaj..."
+        },
+        "content": {
+            "p1": "Nasz darmowy konwerter XML na CSV przekształca ustrukturyzowane dane XML w format wartości rozdzielanych przecinkami. Idealny do importowania danych XML do programu Excel, Arkuszy Google, baz danych i narzędzi analizy danych. Konwertuj złożone struktury XML na prosty, tabelaryczny format CSV w kilka sekund.",
+            "what_title": "Co to jest konwersja XML na CSV?",
+            "what_desc": "Konwersja XML na CSV przekształca ustrukturyzowane dane eXtensible Markup Language w format wartości rozdzielanych przecinkami. Podczas gdy XML jest świetny dla złożonych struktur danych i interfejsów API, CSV jest prostszy i powszechnie obsługiwany przez aplikacje arkuszy kalkulacyjnych, co czyni go idealnym do analizy danych, raportowania i operacji importu/eksportu.",
+            "features_title": "Funkcje",
+            "features": {
+                "fast": {
+                    "title": "Błyskawicznie szybki",
+                    "desc": "Konwertuj XML na CSV natychmiastowo dzięki zoptymalizowanemu parsowaniu"
+                },
+                "secure": {
+                    "title": "100% Bezpieczny",
+                    "desc": "Całe przetwarzanie odbywa się lokalnie - Twoje dane pozostają prywatne"
+                },
+                "copy": {
+                    "title": "Szybkie kopiowanie",
+                    "desc": "Kopiuj wyjście CSV do schowka jednym kliknięciem"
+                },
+                "smart": {
+                    "title": "Inteligentne parsowanie",
+                    "desc": "Automatycznie wyodrębnia dane z elementów wierszy XML"
+                },
+                "free": {
+                    "title": "Całkowicie darmowe",
+                    "desc": "Bez limitów, rejestracja nie jest wymagana"
+                },
+                "excel": {
+                    "title": "Gotowy dla Excela",
+                    "desc": "Wyjście działa idealnie w Excelu i Arkuszach Google"
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "analysis": {
+                    "title": "Analiza danych",
+                    "desc": "Konwertuj raporty XML i eksporty danych na CSV do analizy w Excelu, Arkuszach Google lub narzędziach BI."
+                },
+                "migration": {
+                    "title": "Migracja systemu",
+                    "desc": "Przekształcaj dane XML ze starszych systemów na CSV w celu importu do nowoczesnych baz danych i aplikacji."
+                },
+                "reporting": {
+                    "title": "Raportowanie",
+                    "desc": "Konwertuj odpowiedzi API XML na CSV do tworzenia raportów i pulpitów nawigacyjnych."
+                },
+                "db": {
+                    "title": "Import bazy danych",
+                    "desc": "Przekształcaj eksporty XML na CSV do masowego importu do baz danych SQL."
+                },
+                "email": {
+                    "title": "Listy e-mail",
+                    "desc": "Konwertuj dane kontaktowe XML na CSV dla platform marketingu e-mailowego."
+                },
+                "cleaning": {
+                    "title": "Czyszczenie danych",
+                    "desc": "Przekształcaj XML na CSV dla łatwiejszego czyszczenia i manipulacji danymi w arkuszach kalkulacyjnych."
+                }
+            },
+            "how_to_title": "Jak konwertować XML na CSV",
+            "how_to": {
+                "step1": {
+                    "title": "Wklej swoje dane XML",
+                    "desc": "Skopiuj dane XML ze źródła i wklej je do lewego pola wejściowego."
+                },
+                "step2": {
+                    "title": "Kliknij Konwertuj",
+                    "desc": "Naciśnij \"Konwertuj na CSV\", aby przekształcić swój XML na format CSV."
+                },
+                "step3": {
+                    "title": "Skopiuj i użyj",
+                    "desc": "Wyjście CSV pojawia się po prawej stronie. Kliknij \"Kopiuj\", aby wkleić je do programu Excel lub dowolnej aplikacji."
+                }
+            },
+            "example_title": "Przykład konwersji",
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy ten konwerter jest darmowy?",
+                "a1": "Tak, nasz konwerter XML na CSV jest całkowicie darmowy do użytku.",
+                "q2": "Czy moje dane są bezpieczne?",
+                "a2": "Tak, całe przetwarzanie odbywa się w Twojej przeglądarce. Twoje dane nigdy nie są wysyłane na nasze serwery.",
+                "q3": "Czy obsługuje duże pliki XML?",
+                "a3": "Tak, obsługuje duże pliki XML, chociaż bardzo duże pliki mogą wymagać chwili na przetworzenie.",
+                "q4": "Jak obsługiwane są atrybuty?",
+                "a4": "Obecnie narzędzie skupia się na zawartości znaczników. Atrybuty mogą być uwzględnione w przyszłych aktualizacjach."
+            },
+            "best_practices_title": "Najlepsze praktyki",
+            "best_practices": [
+                {
+                    "title": "Dobrze sformułowany XML",
+                    "desc": "Upewnij się, że Twój XML jest dobrze sformułowany i zawiera powtarzające się elementy <row> dla najlepszych wyników."
+                },
+                {
+                    "title": "Strona przeglądarki",
+                    "desc": "Ponieważ działa w Twojej przeglądarce, Twoje dane pozostają prywatne i bezpieczne."
+                },
+                {
+                    "title": "Kopia zapasowa danych",
+                    "desc": "Zawsze zachowuj kopię zapasową oryginalnych danych XML przed konwersją."
+                }
+            ]
+        },
+        "js": {
+            "error_empty": "Wprowadź dane XML",
+            "error_no_row": "Nie znaleziono elementów <row> w XML",
+            "success_convert": "✓ XML przekonwertowany na CSV pomyślnie",
+            "error_process": "✗ Błąd: ",
+            "error_no_copy": "Brak wyjścia do skopiowania",
+            "success_copy": "✓ Skopiowano do schowka"
+        }
+    },
+    "xml-to-json": {
+        "meta": {
+            "title": "Konwerter XML na JSON — bezpłatne narzędzie do analizowania składni online",
+            "description": "Darmowe narzędzie online do konwersji XML na JSON. Szybkie, bezpieczne i łatwe w użyciu.",
+            "subtitle": "Najlepszy konwerter XML na JSON dla programistów i specjalistów IT",
+            "h1": "Konwerter XML na JSON"
+        },
+        "editor": {
+            "btn_convert": "Konwertuj na JSON",
+            "btn_copy": "Kopiuj JSON",
+            "btn_download": "Pobierz",
+            "btn_example": "Załaduj przykład",
+            "btn_clear": "Wyczyść",
+            "label_input": "Wejście XML",
+            "ph_input": "<' . '?x' . 'ml version=\"1.0\"?>n<root>n  <item>Twoje XML tutaj...</item>n</root>",
+            "label_output": "Wyjście JSON",
+            "ph_output": "Skonwertowany JSON pojawi się tutaj..."
+        },
+        "content": {
+            "h2": "Darmowy konwerter XML na JSON online",
+            "p1": "Przekształć dane XML w format JSON natychmiastowo za pomocą naszego potężnego, darmowego konwertera XML na JSON online. Idealny dla programistów, analityków danych i każdego, kto pracuje z integracjami API, migracją danych lub nowoczesnymi aplikacjami internetowymi.",
+            "p2": "XML (eXtensible Markup Language) jest standardem wymiany danych od dziesięcioleci, ale nowoczesne aplikacje coraz częściej preferują JSON (JavaScript Object Notation) ze względu na jego prostotę i natywne wsparcie JavaScript. Nasz konwerter wypełnia tę lukę, pozwalając na płynne przekształcanie dokumentów XML w czysty, czytelny format JSON.",
+            "p3": "Niezależnie od tego, czy migrujesz starsze systemy, integrujesz się z interfejsami API RESTful, czy po prostu musisz przekonwertować pliki konfiguracyjne, nasze narzędzie radzi sobie ze wszystkim z precyzją i szybkością. Nie wymaga instalacji ani rejestracji – po prostu wklej swój XML i uzyskaj natychmiastowe wyniki.",
+            "features_title": "Potężne funkcje",
+            "features": {
+                "fast": {
+                    "title": "Błyskawicznie szybki",
+                    "desc": "Natychmiastowa konwersja z przetwarzaniem w czasie rzeczywistym. Bez czekania, bez opóźnień."
+                },
+                "secure": {
+                    "title": "100% Bezpieczny",
+                    "desc": "Cała konwersja odbywa się w Twojej przeglądarce. Twoje dane nigdy nie opuszczają urządzenia."
+                },
+                "attributes": {
+                    "title": "Obsługa atrybutów",
+                    "desc": "Zachowuje atrybuty XML i konwertuje je poprawnie na strukturę JSON."
+                },
+                "nested": {
+                    "title": "Zagnieżdżona struktura",
+                    "desc": "Utrzymuje złożone hierarchiczne struktury danych podczas konwersji."
+                },
+                "pretty": {
+                    "title": "Ładne formatowanie",
+                    "desc": "Czyste, wcięte wyjście JSON, które jest łatwe do odczytania i zrozumienia."
+                },
+                "validation": {
+                    "title": "Walidacja błędów",
+                    "desc": "Wykrywa i zgłasza nieprawidłową składnię XML z pomocnymi komunikatami o błędach."
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "api": {
+                    "title": "Integracja API",
+                    "desc": "Konwertuj odpowiedzi API XML na JSON dla nowoczesnych aplikacji internetowych i usług RESTful."
+                },
+                "migration": {
+                    "title": "Migracja danych",
+                    "desc": "Przekształcaj bazy danych XML i eksporty na JSON dla systemów NoSQL takich jak MongoDB."
+                },
+                "config": {
+                    "title": "Pliki konfiguracyjne",
+                    "desc": "Konwertuj pliki konfiguracyjne XML na JSON dla nowoczesnych aplikacji i narzędzi do budowania."
+                },
+                "soap": {
+                    "title": "SOAP na REST",
+                    "desc": "Przekształcaj odpowiedzi XML SOAP na JSON dla usług RESTful."
+                },
+                "rss": {
+                    "title": "Kanały RSS",
+                    "desc": "Konwertuj kanały RSS i Atom (format XML) na JSON do parsowania w aplikacjach JS."
+                },
+                "analysis": {
+                    "title": "Analiza danych",
+                    "desc": "Konwertuj eksporty danych XML na JSON dla łatwiejszej analizy za pomocą bibliotek JavaScript."
+                }
+            },
+            "how_to_title": "Jak działa konwersja XML na JSON",
+            "how_to_desc": "Nasz konwerter XML na JSON wykorzystuje zaawansowane algorytmy parsowania, aby dokładnie przekształcić dokumenty XML w format JSON.",
+            "steps": [
+                {
+                    "title": "Wklej swój XML",
+                    "desc": "Skopiuj i wklej swój kod XML w pole wejściowe powyżej."
+                },
+                {
+                    "title": "Kliknij Konwertuj",
+                    "desc": "Naciśnij przycisk \"Konwertuj na JSON\", aby rozpocząć transformację."
+                },
+                {
+                    "title": "Skopiuj i użyj",
+                    "desc": "Przejrzyj pięknie sformatowane wyniki JSON i użyj przycisku kopiowania, aby łatwo wyeksportować."
+                }
+            ],
+            "example_title": "Przykład konwersji",
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy ten konwerter jest darmowy w użyciu?",
+                "a1": "Tak, nasz konwerter XML na JSON jest w 100% darmowy bez ukrytych kosztów ani wymaganej rejestracji.",
+                "q2": "Czy moje dane są bezpieczne?",
+                "a2": "Absolutnie. Całe przetwarzanie odbywa się lokalnie w Twojej przeglądarce, co oznacza, że Twoje dane nigdy nie opuszczają urządzenia.",
+                "q3": "Czy obsługuje zagnieżdżone struktury?",
+                "a3": "Tak, poprawnie obsługuje złożone zagnieżdżone elementy XML i zachowuje ich zależności hierarchiczne.",
+                "q4": "Jak obsługiwane są atrybuty?",
+                "a4": "Atrybuty XML są konwertowane na właściwości JSON, zazwyczaj poprzedzone podkreśleniem dla przejrzystości."
+            },
+            "tips_title": "Wskazówki i najlepsze praktyki",
+            "tips": [
+                {
+                    "title": "Sprawdź poprawność XML",
+                    "desc": "Upewnij się, że Twój XML jest poprawnie sformułowany przed konwersją, aby uniknąć błędów przetwarzania."
+                },
+                {
+                    "title": "Użyj ładnego drukowania",
+                    "desc": "Nasze narzędzie automatycznie formatuje wyjście JSON dla maksymalnej czytelności."
+                },
+                {
+                    "title": "Prywatność przeglądarki",
+                    "desc": "Ponieważ działa po stronie klienta, możesz go używać nawet offline po załadowaniu strony."
+                }
+            ]
+        },
+        "js": {
+            "error_empty": "Wprowadź dane XML do konwersji.",
+            "error_syntax": "\\n\\nSprawdź składnię XML.",
+            "error_process": "Błąd konwersji XML: ",
+            "error_no_copy": "Brak JSON do skopiowania. Proszę najpierw przekonwertować XML.",
+            "success_copy": "Skopiowano!",
+            "error_no_download": "Brak JSON do pobrania. Proszę najpierw przekonwertować XML."
+        }
+    },
+    "yaml-to-json": {
+        "meta": {
+            "title": "Konwerter YAML na JSON — bezpłatne narzędzie do obsługi danych online",
+            "description": "Konwertuj pliki konfiguracyjne YAML na format JSON natychmiastowo za pomocą naszego darmowego konwertera YAML na JSON online. Idealne dla programistów pracujących z plikami konfiguracyjnymi.",
+            "h1": "Konwerter YAML na JSON",
+            "subtitle": "Konwertuj pliki konfiguracyjne YAML na format JSON natychmiastowo"
+        },
+        "editor": {
+            "btn_convert": "Konwertuj",
+            "btn_copy": "Kopiuj JSON",
+            "btn_download": "Pobierz",
+            "btn_example": "Przykład",
+            "btn_clear": "Wyczyść",
+            "label_input": "Wejście YAML",
+            "ph_input": "Wklej swoje dane YAML tutaj...",
+            "label_output": "Wyjście JSON",
+            "ph_output": "Skonwertowany JSON pojawi się tutaj..."
+        },
+        "content": {
+            "h2": "O konwerterze YAML na JSON",
+            "p1": "Konwertuj pliki konfiguracyjne YAML na format JSON natychmiastowo za pomocą naszego darmowego konwertera YAML na JSON online. Idealne dla programistów pracujących z plikami konfiguracyjnymi, potokami CI/CD i transformacją danych.",
+            "features_title": "Kluczowe funkcje",
+            "features": {
+                "syntax": {
+                    "title": "Walidacja składni",
+                    "desc": "Wykrywa błędy składni YAML"
+                },
+                "nested": {
+                    "title": "Zagnieżdżona struktura",
+                    "desc": "Zachowuje złożone hierarchie"
+                },
+                "array": {
+                    "title": "Wsparcie dla tablic",
+                    "desc": "Obsługuje listy i sekwencje YAML"
+                },
+                "pretty": {
+                    "title": "Ładne formatowanie",
+                    "desc": "Czyste, czytelne wyjście JSON"
+                },
+                "instant": {
+                    "title": "Natychmiastowa konwersja",
+                    "desc": "Transformacja w czasie rzeczywistym"
+                },
+                "privacy": {
+                    "title": "Prywatność przede wszystkim",
+                    "desc": "Całe przetwarzanie w przeglądarce"
+                }
+            },
+            "uses_title": "Typowe przypadki użycia",
+            "uses": {
+                "config": {
+                    "title": "Pliki konfiguracyjne",
+                    "desc": "Konwertuj pliki konfiguracyjne YAML na JSON dla aplikacji."
+                },
+                "pipeline": {
+                    "title": "Potoki CI/CD",
+                    "desc": "Przekształcaj konfiguracje potoków YAML na format JSON."
+                },
+                "k8s": {
+                    "title": "Kubernetes",
+                    "desc": "Konwertuj manifesty YAML Kubernetes na JSON."
+                },
+                "docker": {
+                    "title": "Docker Compose",
+                    "desc": "Przekształcaj YAML Docker Compose na JSON."
+                }
+            },
+            "how_to_title": "Jak używać konwertera YAML na JSON",
+            "how_to_steps": [
+                {
+                    "title": "Wklej YAML",
+                    "desc": "Skopiuj i wklej swój kod YAML w obszar wejściowy."
+                },
+                {
+                    "title": "Automatyczna konwersja",
+                    "desc": "Narzędzie konwertuje YAML na JSON w czasie rzeczywistym, gdy piszesz."
+                },
+                {
+                    "title": "Skopiuj lub pobierz",
+                    "desc": "Skopiuj wynikowy JSON lub pobierz go jako plik .json."
+                }
+            ],
+            "faq_title": "Często zadawane pytania",
+            "faq": {
+                "q1": "Czy to jest darmowe?",
+                "a1": "Tak, nasz konwerter YAML na JSON jest w 100% darmowy.",
+                "q2": "Czy moje dane są bezpieczne?",
+                "a2": "Tak, cała konwersja odbywa się w Twojej przeglądarce. Nie przechowujemy Twoich danych."
+            }
+        },
+        "js": {
+            "error_process": "Błąd konwersji YAML: ",
+            "error_no_copy": "Brak JSON do skopiowania. Proszę najpierw przekonwertować YAML.",
+            "success_copy": "JSON skopiowany do schowka!",
+            "error_no_download": "Brak JSON do pobrania. Proszę najpierw przekonwertować YAML."
+        }
+    }
+}

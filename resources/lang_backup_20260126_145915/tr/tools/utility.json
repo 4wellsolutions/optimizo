@@ -1,0 +1,332 @@
+{
+    "password-generator": {
+        "meta": {
+            "title": "Güvenli Şifre Oluşturucu - Ücretsiz Çevrimiçi Güvenlik Aracı",
+            "description": "Özelleştirilebilir uzunluk ve karakter ayarlarıyla anında güçlü, güvenli ve rastgele şifreler oluşturun.",
+            "h1": "Güvenli Şifre Oluşturucu",
+            "subtitle": "Anında güçlü ve rastgele şifreler oluşturun"
+        },
+        "editor": {
+            "title": "Güvenli Şifrenizi Şimdi Oluşturun",
+            "length_label": "Şifre Uzunluğu:",
+            "chars": "karakter",
+            "strength": {
+                "weak": "8 (Zayıf)",
+                "good": "16 (İyi)",
+                "strong": "32 (Güçlü)",
+                "very_strong": "64 (Çok Güçlü)"
+            },
+            "include_label": "Karakter Türlerini Dahil Et:",
+            "option_uppercase": "Büyük Harfler (A-Z)",
+            "option_uppercase_desc": "Karmaşıklık için büyük harfler ekler",
+            "option_lowercase": "Küçük Harfler (a-z)",
+            "option_lowercase_desc": "Şifre gücü için gereklidir",
+            "option_numbers": "Rakamlar (0-9)",
+            "option_numbers_desc": "Şifre entropisini artırır",
+            "option_symbols": "Özel Semboller (!@#$%)",
+            "option_symbols_desc": "Maksimum güvenlik koruması",
+            "btn_generate": "Güçlü Şifre Oluştur",
+            "result_title": "Oluşturulan Şifreniz",
+            "strength_score": "Güvenlik Puanı:",
+            "btn_copy_text": "Şifreyi Kopyala",
+            "btn_copy_final": "Panoya Kopyala",
+            "btn_regenerate": "Yeniden Oluştur"
+        },
+        "content": {
+            "faq_hero_title": "Neden Güvenli Şifre Oluşturucumuzu Kullanmalısınız?",
+            "faq": {
+                "q1": "Bu araç tarafından oluşturulan şifreler ne kadar güvenli?",
+                "a1": "Şifre oluşturucumuz, şifre oluşturmak için kriptografik olarak güvenli rastgele sayı üretimi kullanır. Şifreler, JavaScript'in crypto.getRandomValues() yöntemi kullanılarak tamamen tarayıcınızda oluşturulur ve gerçek rastgelelik ile maksimum güvenlik sağlanır. Oluşturulan hiçbir şifreyi asla saklamayız, iletmeyiz veya kaydetmeyiz.",
+                "q2": "İdeal şifre uzunluğu nedir?",
+                "a2": "Güçlü bir güvenlik için en az 16 karakter öneriyoruz. Daha uzun şifreler (24-32 karakter), kaba kuvvet (brute-force) saldırılarına karşı daha iyi koruma sağlar. Oluşturucumuz maksimum güvenlik için 64 karaktere kadar destekler.",
+                "q3": "Şifreme özel karakterler eklemeli miyim?",
+                "a3": "Evet, kesinlikle! Özel karakterlerin (!@#$%^&*) dahil edilmesi şifre karmaşıklığını ve entropisini önemli ölçüde artırır. Büyük harf, küçük harf, rakam ve sembol içeren bir şifreyi kırmak, sadece harf ve rakam içeren bir şifreye göre kat kat daha zordur.",
+                "q4": "Karmaşık şifreleri nasıl hatırlarım?",
+                "a4": "Onları ezberlemeye çalışmayın! Tüm şifrelerinizi güvenli bir şekilde saklamak için LastPass, 1Password, Bitwarden veya Dashlane gibi saygın bir şifre yöneticisi kullanın. Şifre yöneticileri şifrelerinizi şifreler ve sadece bir ana şifreyi hatırlamanızı gerektirir.",
+                "q5": "Çevrimiçi bir şifre oluşturucu kullanmak güvenli mi?",
+                "a5": "Evet, şifre oluşturucumuz tamamen güvenlidir çünkü tüm şifre oluşturma işlemi tarayıcınızda yerel olarak gerçekleşir. Şifreler asla sunucularımıza gönderilmez veya hiçbir yerde saklanmaz.",
+                "q6": "Şifrelerimi ne sıklıkla değiştirmeliyim?",
+                "a6": "Kritik hesaplar (e-posta, bankacılık, iş) için şifrelerinizi her 3-6 ayda bir değiştirin. Bir ihlalden şüpheleniyorsanız veya bir güvenlik uyarısı alırsanız, şifrenizi derhal değiştirin."
+            },
+            "seo": {
+                "title": "Şifre Güvenliğini ve Şifrelemeyi Anlamak",
+                "p1": "Şifre güvenliği, çevrimiçi güvenliğin temelidir. Güçlü bir şifre, kişisel bilgilerinize, finansal verilerinize ve dijital kimliğinize yetkisiz erişime karşı ilk savunma hattı görevi görür.",
+                "p2": "Bir şifrenin gücü entropisiyle - rastgelelik ve öngörülemezlik miktarı - ölçülür. Tüm karakter türlerine sahip 16 karakterlik bir şifre, basit bir 8 karakterlik şifreden önemli ölçüde daha yüksek entropiye sahiptir.",
+                "p3": "Ücretsiz şifre oluşturucu aracımız, kişisel hesaplarını koruyan bireylerden çalışan erişimini güvence altına alan işletmelere kadar herkes için tasarlanmıştır. Kayıt gerekmeden, tamamen ücretsiz, sınırsız şifre oluşturun."
+            }
+        },
+        "js": {
+            "generating": "Güvenli Şifre Oluşturuluyor...",
+            "strength": {
+                "very_strong": "✓ Çok Güçlü - Mükemmel şifre güvenliği!",
+                "strong": "✓ Güçlü - İyi şifre güvenliği.",
+                "medium": "⚠ Orta - Daha güçlü yapmayı düşünün.",
+                "weak": "⚠ Zayıf - Lütfen daha güçlü bir şifre oluşturun."
+            },
+            "error_generating": "Şifre oluşturulurken hata oluştu. Lütfen tekrar deneyin",
+            "copied": "Kopyalandı!",
+            "error_copy": "Şifre kopyalanamadı. Lütfen manuel olarak kopyalayın."
+        }
+    },
+    "qr-code-generator": {
+        "meta": {
+            "title": "QR Code Generator - Ücretsiz Çevrimiçi Özel QR Oluşturucu",
+            "description": "URL'ler, metinler, WiFi ve daha fazlası için anında özel QR kodları oluşturun. Yüksek kaliteli PNG görüntüleri indirin.",
+            "h1": "QR Kod Oluşturucu",
+            "subtitle": "Herhangi bir amaç için anında özel QR kodları oluşturun"
+        },
+        "editor": {
+            "title": "QR Kod Oluştur",
+            "label_text": "Metin veya URL Girin",
+            "ph_text": "Kodlamak istediğiniz metni, URL'yi veya herhangi bir veriyi girin...",
+            "label_size": "QR Kod Boyutu",
+            "opt_small": "Küçük (128x128)",
+            "opt_medium": "Orta (256x256)",
+            "opt_large": "Büyük (512x512)",
+            "opt_xl": "Çok Büyük (1024x1024)",
+            "btn_generate": "QR Kod Oluştur",
+            "btn_download": "QR Kodu İndir",
+            "preview_title": "Önizleme",
+            "preview_placeholder": "QR kodunuz burada görünecek"
+        },
+        "content": {
+            "hero_title": "Ücretsiz QR Kod Oluşturucu",
+            "hero_subtitle": "Herhangi bir amaç için anında özel QR kodları oluşturun",
+            "p1": "Ücretsiz QR Kod Oluşturucumuz anında yüksek kaliteli QR kodları oluşturur. İşletmeler, pazarlamacılar, etkinlik organizatörleri ve bilgiyi hızlı bir şekilde paylaşması gereken herkes için mükemmeldir. URL'ler, metinler, iletişim bilgileri, WiFi kimlik bilgileri ve daha fazlası için QR kodları oluşturun. Birden fazla boyutta indirin ve her yerde kullanın - tamamen ücretsiz, kayıt gerekmez.",
+            "faq": {
+                "q1": "QR kodları kalıcı mıdır?",
+                "a1": "Evet! QR kodları statik ve kalıcıdır. Oluşturulduktan sonra, kodlanan veriler (bir URL gibi) geçerli kaldığı sürece her zaman çalışacaktır.",
+                "q2": "QR kodları güvenli midir?",
+                "a2": "Evet, QR kodlarımız tamamen güvenlidir. Kişisel verilerinizi toplamayız ve oluşturulan tüm QR kodları doğrudan tarayıcınızda işlenir.",
+                "q3": "Baskı için hangi boyutu kullanmalıyım?",
+                "a3": "Kartvizitler için en az 256 piksel kullanın. Posterler ve pankartlar için 512 piksel veya 1024 piksel kullanın. Baskı boyutu ne kadar büyükse kolay tarama için QR kodu da o kadar büyük olmalıdır.",
+                "q4": "QR kod taramalarını takip edebilir miyim?",
+                "a4": "Aracımız takip özelliği olmayan statik QR kodları oluşturur. Taramaları takip etmek için QR kodunu oluşturmadan önce analiz özelliğine sahip bir URL kısaltıcı kullanın veya dinamik bir QR kod hizmeti kullanın.",
+                "q5": "Kodlayabileceğim veri miktarında bir sınır var mı?",
+                "a5": "QR kodları 4.296 alfanümerik karaktere kadar veri saklayabilir, ancak en iyi tarama sonuçları için verileri kısa tutun. 100 karakterin altındaki URL'ler en iyi sonucu verir.",
+                "q6": "QR kodlarının süresi dolar mı?",
+                "a6": "Hayır, QR kodlarının kendi süreleri asla dolmaz. Ancak QR kodu silinen veya değiştirilen bir URL'ye bağlantı veriyorsa, QR kodu artık çalışmayacaktır."
+            },
+            "features_title": "Özellikler",
+            "features": {
+                "instant": {
+                    "title": "Anında Oluşturma",
+                    "desc": "Gerçek zamanlı önizleme ile saniyeler içinde QR kodları oluşturun"
+                },
+                "sizes": {
+                    "title": "Birden Fazla Boyut",
+                    "desc": "Her türlü kullanım durumu için 128 pikselden 1024 piksele kadar seçim yapın"
+                },
+                "download": {
+                    "title": "Kolay İndirme",
+                    "desc": "Tek tıkla PNG görüntüsü olarak indirin"
+                },
+                "privacy": {
+                    "title": "Önce Gizlilik",
+                    "desc": "Tüm işlemler tarayıcınızda gerçekleşir"
+                },
+                "free": {
+                    "title": "100% Ücretsiz",
+                    "desc": "Sınır yok, filigran yok, kayıt yok"
+                },
+                "compatibility": {
+                    "title": "Evrensel Uyumluluk",
+                    "desc": "Tüm QR kod tarayıcılarla çalışır"
+                }
+            },
+            "uses_title": "🎯 Yaygın Kullanım Durumları",
+            "uses": {
+                "urls": {
+                    "title": "🔗 Web Sitesi URL'leri",
+                    "desc": "Kullanıcıları web sitenize, açılış sayfanıza veya çevrimiçi mağazanıza anında yönlendirin"
+                },
+                "contact": {
+                    "title": "👤 İletişim Bilgileri",
+                    "desc": "E-posta, telefon ve adres ayrıntılarını içeren vCard'ları paylaşın"
+                },
+                "social": {
+                    "title": "👍 Sosyal Medya",
+                    "desc": "Sosyal profillerinize, YouTube kanalınıza veya Instagram hesabınıza bağlantı verin"
+                },
+                "tickets": {
+                    "title": "🎟️ Etkinlik Biletleri",
+                    "desc": "Etkinlikler ve konferanslar için taranabilir biletler oluşturun"
+                },
+                "product": {
+                    "title": "📦 Ürün Bilgileri",
+                    "desc": "Kılavuzlar, teknik özellikler veya orijinallik kontrolü için ürünlere QR kodları ekleyin"
+                },
+                "payment": {
+                    "title": "💳 Ödeme Bağlantıları",
+                    "desc": "PayPal veya kripto cüzdanları üzerinden hızlı ödemeleri etkinleştirin"
+                }
+            },
+            "how_title": "📚 Nasıl Kullanılır",
+            "how_steps": {
+                "1": {
+                    "title": "Verilerinizi girin:",
+                    "desc": "Kodlamak istediğiniz metni, URL'yi veya bilgiyi yazın veya yapıştırın"
+                },
+                "2": {
+                    "title": "Boyut seçin:",
+                    "desc": "QR kodunu nerede kullanacağınıza bağlı olarak boyutunu seçin"
+                },
+                "3": {
+                    "title": "Oluşturun:",
+                    "desc": "QR kodunuzu anında oluşturmak için \"QR Kod Oluştur\"a tıklayın"
+                },
+                "4": {
+                    "title": "İndirin:",
+                    "desc": "PNG görüntüsünü kaydetmek için \"QR Kodu İndir\"e tıklayın"
+                },
+                "5": {
+                    "title": "Her yerde kullanın:",
+                    "desc": "Yazdırın, dijital olarak paylaşın veya pazarlama materyallerine ekleyin"
+                }
+            },
+            "best_practices_title": "💡 En İyi Uygulamalar",
+            "best_practices": {
+                "test": {
+                    "title": "Yazdırmadan önce test edin:",
+                    "desc": "Doğru çalıştığını doğrulamak için her zaman QR kodunuzu tarayın"
+                },
+                "size": {
+                    "title": "Uygun boyutu kullanın:",
+                    "desc": "Daha büyük QR kodlarını uzaktan taramak daha kolaydır"
+                },
+                "contrast": {
+                    "title": "Kontrast sağlayın:",
+                    "desc": "En iyi tarama için beyaz veya açık renkli arka planlara yazdırın"
+                },
+                "context": {
+                    "title": "Bağlam ekleyin:",
+                    "desc": "\"Web sitesini ziyaret etmek için tara\" gibi bir eylem çağrısı ekleyin"
+                },
+                "short": {
+                    "title": "URL'leri kısa tutun:",
+                    "desc": "Daha kısa URL'ler daha basit ve daha taranabilir QR kodları oluşturur"
+                }
+            },
+            "faq_title": "Sıkça Sorulan Sorular"
+        },
+        "js": {
+            "error_empty": "Lütfen QR kodu oluşturmak için metin veya URL girin",
+            "error_generating": "QR kodu oluşturulurken hata oluştu.",
+            "error_no_code": "Lütfen önce bir QR kodu oluşturun",
+            "error_image_not_found": "QR kodu görüntüsü bulunamadı"
+        }
+    },
+    "random-number-generator": {
+        "meta": {
+            "title": "Rastgele Sayı Üreteci - Ücretsiz Çevrimiçi Matematik Aracı",
+            "description": "Belirlediğiniz aralıkta gerçek rastgele tam sayılar oluşturun. Oyunlar, çekilişler ve hediyeler için kullanışlıdır.",
+            "h1": "Rastgele Sayı Üreteci",
+            "subtitle": "Belirlediğiniz aralıkta gerçek rastgele tam sayılar oluşturun"
+        },
+        "editor": {
+            "label_min": "Min Değer",
+            "label_max": "Maks Değer",
+            "label_count": "Adet",
+            "btn_generate": "Sayıları Oluştur",
+            "label_result": "Sonuç"
+        },
+        "js": {
+            "error_invalid": "Lütfen geçerli sayılar girin",
+            "error_min_max": "Min değer Maks değerden büyük olamaz"
+        }
+    },
+    "username-checker": {
+        "meta": {
+            "title": "Kullanıcı Adı Kullanılabilirliği Denetleyicisi - Ücretsiz Çevrimiçi Arama",
+            "description": "Büyük sosyal platformlarda kullanıcı adının müsaitliğini anında kontrol edin.",
+            "h1": "Kullanıcı Adı Kullanılabilirliği Denetleyicisi",
+            "subtitle": "Tüm büyük sosyal platformlarda kullanıcı adı müsaitliğini kontrol edin"
+        },
+        "editor": {
+            "title_enter": "Kullanıcı Adı Girin",
+            "label_username": "Kullanıcı Adı",
+            "ph_username": "johndoe",
+            "help_username": "@ sembolü olmadan kullanıcı adını girin",
+            "btn_check": "Müsaitliği Kontrol Et",
+            "title_results": "Müsaitlik Sonuçları",
+            "btn_checking": "Kontrol Ediliyor...",
+            "status_available": "Müsait",
+            "status_taken": "Alınmış",
+            "link_view": "Profili Görüntüle →"
+        },
+        "content": {
+            "p1": "Ücretsiz kullanıcı adı kontrol aracımızla tüm büyük sosyal medya platformlarında kullanıcı adı müsaitliğini anında kontrol edin. Twitter, Instagram, GitHub, TikTok, Facebook, LinkedIn, YouTube, Reddit ve daha fazlasında markanız için mükemmel kullanıcı adını bulun. Başkası almadan önce tüm platformlarda aynı kullanıcı adını alarak marka kimliğinizi koruyun. Kişisel markalaşma, işletme hesapları ve influencer pazarlaması için mükemmeldir.",
+            "platforms_title": "Desteklenen Platformlar",
+            "platforms": {
+                "social": {
+                    "title": "Sosyal Medya",
+                    "list": [
+                        "Twitter (X): @kullanıcıadı müsaitliğini kontrol edin",
+                        "Instagram: Mükemmel kullanıcı adınızı bulun",
+                        "TikTok: @kullanıcıadınızı garantiye alın",
+                        "Facebook: Profil URL'sini kontrol edin"
+                    ]
+                },
+                "professional": {
+                    "title": "Profesyonel",
+                    "list": [
+                        "LinkedIn: Profesyonel profil",
+                        "GitHub: Geliştirici kullanıcı adı",
+                        "Medium: Yazar profili",
+                        "YouTube: Kanal ismi"
+                    ]
+                }
+            },
+            "best_practices_title": "Kullanıcı Adı En İyi Uygulamaları",
+            "best_practices": {
+                "short": {
+                    "title": "Kısa Tutun",
+                    "desc": "Kolay hatırlanabilirlik ve yazım için 6-15 karakter hedefleyin"
+                },
+                "spell": {
+                    "title": "Kolay Yazılabilir",
+                    "desc": "Karmaşık yazımlardan, rakamlardan ve özel karakterlerden kaçının"
+                },
+                "brand": {
+                    "title": "Marka Uyumu",
+                    "desc": "Tanınabilirlik için tüm platformlarda aynı kullanıcı adını kullanın"
+                },
+                "trends": {
+                    "title": "Trendlerden Kaçının",
+                    "desc": "Gelecekte geçerliliğini yitirebilecek moda kelimeler kullanmayın"
+                },
+                "seo": {
+                    "title": "SEO Dostu",
+                    "desc": "Daha iyi keşfedilebilirlik için ilgili anahtar kelimeleri dahil edin"
+                },
+                "fast": {
+                    "title": "Hızlı Hareket Edin",
+                    "desc": "Başkası almadan önce kullanıcı adınızı hızlıca alın"
+                }
+            },
+            "tips_title": "Kullanıcı Adı Seçimi İçin İpuçları",
+            "tips_list": {
+                "items": [
+                    "Karar vermeden önce tüm platformlarda müsaitliği kontrol edin",
+                    "Seçerken gelecekteki iş büyümesini göz önünde bulundurun",
+                    "Ağızdan ağıza pazarlama için telaffuz edilebilir yapın",
+                    "Mümkünse alt çizgi veya rakam kullanmaktan kaçının",
+                    "Kullanıcı adınızla eşleşen alan adını güvenceye alın"
+                ]
+            },
+            "faq_title": "Sıkça Sorulan Sorular",
+            "faq": {
+                "q1": "Aynı anda kaç platformu kontrol edebilirim?",
+                "a1": "Kullanıcı adı kontrol aracımız Twitter, Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium ve Pinterest dahil 10'dan fazla büyük platformu destekler. Tek bir arama ile tüm platformları aynı anda kontrol edin.",
+                "q2": "İstediğim kullanıcı adı alınmışsa ne yapmalıyım?",
+                "a2": "Konumunuzu, sektörünüzü veya ilgili bir kelimeyi eklemek gibi varyasyonlar deneyin. Alt çizgi, nokta veya kısaltmalar da kullanabilirsiniz. Aracımız birden fazla varyasyonu hızlıca test etmenize yardımcı olur.",
+                "q3": "Her yerde aynı kullanıcı adını kullanmalı mıyım?",
+                "a3": "Evet! Tüm platformlarda aynı kullanıcı adını kullanmak marka kimliğinizi güçlendirir, bulunmanızı kolaylaştırır ve platformlar arası tanınabilirliğe ve pazarlamaya yardımcı olur.",
+                "q4": "Hesap oluşturmadan bir kullanıcı adını rezerve edebilir miyim?",
+                "a4": "No, you must create an account on each platform to claim a username. Our tool only checks availability - you'll need to sign up on each platform to secure your username.",
+                "q5": "Kullanıcı adı müsaitliğini ne sıklıkla kontrol etmeliyim?",
+                "a5": "Kullanıcı adı müsaitliği sürekli değişir. Beğendiğiniz müsait bir kullanıcı adı bulursanız, tüm platformlarda hemen alın. Popüler kullanıcı adları saatler içinde, hatta dakikalar içinde alınabilir."
+            }
+        }
+    }
+}

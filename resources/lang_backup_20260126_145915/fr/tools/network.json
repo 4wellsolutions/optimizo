@@ -1,0 +1,735 @@
+{
+    "dns-lookup": {
+        "meta": {
+            "title": "Outil de recherche DNS - Vérificateur d'enregistrement DNS en ligne gratuit",
+            "description": "Outil de recherche DNS gratuit pour vérifier les enregistrements DNS de n'importe quel domaine. Visualisez instantanément les enregistrements A, AAAA, MX, NS, TXT, CNAME. Essentiel pour le dépannage de la configuration des e-mails et des domaines.",
+            "h1": "Outil de recherche DNS",
+            "subtitle": "Interrogez les enregistrements DNS pour trouver instantanément les serveurs de noms, les enregistrements MX, A, CNAME et TXT"
+        },
+        "form": {
+            "domain_label": "Nom de domaine",
+            "domain_placeholder": "exemple.com",
+            "button": "Recherche DNS"
+        },
+        "results": {
+            "title": "Résultats DNS pour"
+        },
+        "content": {
+            "what_is_title": "Qu'est-ce qu'une recherche DNS ?",
+            "what_is_desc": "La recherche DNS est un outil qui interroge les serveurs du système de noms de domaine pour récupérer les enregistrements DNS d'un domaine. Les enregistrements DNS contiennent des informations importantes sur la configuration d'un domaine, notamment les serveurs de messagerie (enregistrements MX), les serveurs de noms (enregistrements NS), les adresses IP (enregistrements A/AAAA) et les enregistrements texte (enregistrements TXT) utilisés pour la vérification et la sécurité.",
+            "why_use_title": "Pourquoi utiliser la recherche DNS ?",
+            "why_use_desc": "La recherche DNS est essentielle pour dépanner les problèmes de distribution d'e-mails, vérifier la configuration d'un domaine, contrôler les paramètres des serveurs de noms, valider les enregistrements SPF et DKIM, et comprendre comment un domaine est configuré. Elle est utilisée quotidiennement par les administrateurs système, les développeurs web et les professionnels de l'informatique.",
+            "record_types_title": "Types d'enregistrements DNS",
+            "a_record": "<strong>Enregistrement A :</strong> Associe un domaine à une adresse IPv4",
+            "aaaa_record": "<strong>Enregistrement AAAA :</strong> Associe un domaine à une adresse IPv6",
+            "mx_record": "<strong>Enregistrement MX :</strong> Informations sur le serveur de messagerie",
+            "ns_record": "<strong>Enregistrement NS :</strong> Informations sur le serveur de noms",
+            "txt_record": "<strong>Enregistrement TXT :</strong> Enregistrements texte pour la vérification",
+            "cname_record": "<strong>Enregistrement CNAME :</strong> Alias de nom canonique"
+        },
+        "faq": {
+            "title": "Foire aux questions sur le DNS",
+            "q1": "Combien de temps prend la propagation DNS ?",
+            "a1": "La propagation DNS peut prendre de quelques minutes à 48 heures, bien qu'elle soit souvent beaucoup plus rapide de nos jours.",
+            "q2": "Qu'est-ce que le TTL dans les enregistrements DNS ?",
+            "a2": "Le TTL (Time To Live) est un paramètre qui indique aux serveurs DNS combien de temps mettre en cache un enregistrement avant d'en demander un nouveau.",
+            "q3": "Pourquoi mes changements DNS ne sont-ils pas visibles ?",
+            "a3": "Cela est généralement dû à la mise en cache DNS sur votre ordinateur, votre routeur ou votre fournisseur d'accès à Internet.",
+            "q4": "Quelle est la différence entre un enregistrement A et CNAME ?",
+            "a4": "Un enregistrement A pointe vers une adresse IP, tandis qu'un CNAME pointe vers un autre nom de domaine.",
+            "q5": "À quoi servent les enregistrements MX ?",
+            "a5": "Les enregistrements MX (Mail Exchanger) indiquent aux serveurs de messagerie où envoyer les e-mails destinés à votre domaine."
+        },
+        "js": {
+            "looking_up": "Recherche en cours...",
+            "records_label": "Enregistrements",
+            "success": "Récupération des enregistrements réussie",
+            "error": "Échec de la récupération des enregistrements DNS",
+            "lookup_dns": "Recherche DNS"
+        }
+    },
+    "domain-to-ip": {
+        "meta": {
+            "title": "Convertisseur de domaine en IP - Outil DNS en ligne gratuit",
+            "description": "Outil gratuit de recherche de domaine en IP. Convertissez instantanément n'importe quel nom de domaine en son adresse IP. Essentiel pour le dépannage réseau et la vérification DNS.",
+            "h1": "Convertisseur de domaine en IP",
+            "subtitle": "Résolvez les noms de domaine en adresses IP avec des informations DNS détaillées"
+        },
+        "form": {
+            "domain_label": "Entrez le nom de domaine",
+            "domain_placeholder": "exemple.com",
+            "domain_hint": "Entrez le domaine sans http:// ou https://",
+            "button": "Rechercher l'adresse IP"
+        },
+        "results": {
+            "title": "Résultats pour",
+            "domain_label": "Domaine",
+            "ip_label": "Adresse IP"
+        },
+        "content": {
+            "main_title": "Convertisseur Domaine en IP",
+            "main_subtitle": "Convertissez instantanément n'importe quel nom de domaine en son adresse IP",
+            "intro": "Notre outil gratuit de domaine en IP convertit instantanément n'importe quel nom de domaine en son adresse IP correspondante via une recherche DNS. Essentiel pour les administrateurs réseau, les développeurs web, les professionnels de la sécurité et toute personne ayant besoin d'identifier le serveur derrière un domaine. Obtenez des adresses IP précises pour le dépannage, la vérification de serveur et la configuration réseau.",
+            "feature1_title": "Recherche instantanée",
+            "feature1_desc": "Obtenez des adresses IP immédiatement sans délai",
+            "feature2_title": "Résultats précis",
+            "feature2_desc": "Requêtes DNS en temps réel pour des adresses IP actuelles",
+            "feature3_title": "100 % gratuit",
+            "feature3_desc": "Recherches illimitées sans inscription requise",
+            "what_is_title": "🌐 Qu'est-ce qu'une recherche Domaine en IP ?",
+            "what_is_desc": "La recherche Domaine en IP est le processus de conversion d'un nom de domaine lisible par l'homme (comme exemple.com) en son adresse IP numérique correspondante (comme 93.184.216.34). Cette conversion se fait via les serveurs DNS (Domain Name System), qui agissent comme l'annuaire de l'internet. Chaque site web possède une adresse IP, mais les noms de domaine les rendent plus faciles à mémoriser et à accéder.",
+            "use_cases_title": "🎯 Cas d'utilisation courants",
+            "uc1_title": "Configuration de serveur",
+            "uc1_desc": "Configurez des pare-feu, des listes blanches et des paramètres de serveur avec des adresses IP",
+            "uc2_title": "Analyse de sécurité",
+            "uc2_desc": "Vérifiez l'emplacement des serveurs et identifiez les hébergeurs",
+            "uc3_title": "Dépannage",
+            "uc3_desc": "Diagnostiquez les problèmes DNS et vérifiez les configurations de domaine",
+            "uc4_title": "Surveillance réseau",
+            "uc4_desc": "Suivez les changements de serveur et surveillez l'infrastructure",
+            "uc5_title": "Géolocalisation",
+            "uc5_desc": "Déterminez l'emplacement géographique du serveur à partir de l'adresse IP",
+            "uc6_title": "Intégration d'API",
+            "uc6_desc": "Utilisez les adresses IP pour des connexions API directes",
+            "pro_tips_title": "💡 Conseils de pro : Utilisation de la recherche Domaine en IP",
+            "tip1": "✅ Utilisez des adresses IP pour des connexions directes au serveur quand le DNS est lent",
+            "tip2": "✅ Vérifiez les configurations de CDN en contrôlant plusieurs résolutions de domaine",
+            "tip3": "✅ Autorisez les IP des serveurs dans les pare-feu pour un accès sécurisé",
+            "tip4": "✅ Comparez les adresses IP avant et après les changements DNS",
+            "tip5": "✅ Identifiez l'hébergement partagé en vérifiant si plusieurs domaines partagent les mêmes IP"
+        },
+        "faq": {
+            "title": "FAQ sur le domaine et l'IP",
+            "q1": "Un domaine peut-il avoir plusieurs adresses IP ?",
+            "a1": "Oui, de nombreux grands sites web utilisent plusieurs adresses IP pour l'équilibrage de charge et la redondance.",
+            "q2": "L'adresse IP d'un domaine change-t-elle ?",
+            "a2": "Elle peut changer si le propriétaire du site déplace le site vers un nouveau serveur ou fournisseur d'hébergement.",
+            "q3": "Quelle est la différence entre IPv4 et IPv6 ?",
+            "a3": "L'IPv4 utilise des adresses de 32 bits (comme 1.2.3.4), tandis que l'IPv6 utilise des adresses de 128 bits pour permettre un plus grand nombre d'adresses.",
+            "q4": "Comment puis-je trouver qui possède une adresse IP ?",
+            "a4": "Vous pouvez utiliser un outil de recherche WHOIS pour voir à quelle organisation une adresse IP est assignée.",
+            "q5": "Le DNS affecte-t-il la vitesse du site web ?",
+            "a5": "Oui, une résolution DNS rapide permet à votre navigateur de trouver le serveur du site web plus rapidement, améliorant ainsi les temps de chargement initiaux."
+        },
+        "js": {
+            "looking_up": "Recherche en cours...",
+            "error_failed": "Échec de la recherche de l'adresse IP"
+        }
+    },
+    "internet-speed-test": {
+        "meta": {
+            "title": "Test de vitesse Internet - Vérificateur de connexion en ligne gratuit",
+            "description": "Testez votre vitesse internet gratuitement. Vérifiez instantanément votre vitesse de téléchargement, d'envoi et votre ping.",
+            "h1": "Test de vitesse Internet",
+            "subtitle": "Testez instantanément la vitesse de votre connexion internet"
+        },
+        "editor": {
+            "btn_start": "Démarrer le test",
+            "status_init": "Initialisation du test...",
+            "label_download": "Vitesse de téléchargement",
+            "label_upload": "Vitesse d'envoi",
+            "label_ping": "Ping",
+            "label_quality": "Qualité de la connexion",
+            "btn_retry": "Tester à nouveau",
+            "status_ping": "Test du ping...",
+            "status_download": "Test de la vitesse de téléchargement...",
+            "status_upload": "Test de la vitesse d'envoi...",
+            "quality_val_excellent": "Excellente",
+            "quality_val_very_good": "Très bonne",
+            "quality_val_good": "Bonne",
+            "quality_val_fair": "Passable",
+            "quality_val_poor": "Médiocre"
+        },
+        "content": {
+            "p1": "Testez la vitesse de votre connexion internet avec notre outil de test de vitesse gratuit et précis. Mesurez votre vitesse de téléchargement (download), d'envoi (upload) et votre latence (ping) en quelques secondes. Parfait pour dépanner les connexions lentes, vérifier les vitesses de votre FAI ou s'assurer que vous obtenez ce pour quoi vous payez.",
+            "metrics_title": "Comprendre les mesures du test de vitesse",
+            "req_title": "Conditions pour un test précis",
+            "req_list": [
+                "Fermez toutes les autres applications et onglets du navigateur",
+                "Connectez-vous via un câble Ethernet pour des résultats plus précis",
+                "Désactivez temporairement les services VPN ou proxy",
+                "Assurez-vous qu'aucun téléchargement ou envoi n'est en cours",
+                "Testez plusieurs fois à différents moments de la journée"
+            ],
+            "why_title": "Pourquoi tester votre vitesse internet ?",
+            "why_list": [
+                "Vérifiez que vous obtenez la vitesse pour laquelle vous payez",
+                "Dépannez les problèmes de connexion lente",
+                "Comparez différents forfaits de FAI avant de changer",
+                "Optimisez la configuration de votre réseau",
+                "Documentez la vitesse pour les tickets de support de votre FAI",
+                "Testez les performances Wi-Fi par rapport à l'Ethernet"
+            ],
+            "factors_title": "Facteurs affectant votre vitesse",
+            "improve_title": "Comment améliorer votre vitesse",
+            "improve_list": [
+                "Utilisez un câble Ethernet au lieu du Wi-Fi quand c'est possible",
+                "Placez le routeur dans un endroit central loin des murs",
+                "Passez à un routeur moderne supportant votre niveau de vitesse",
+                "Fermez les applications gourmandes en bande passante",
+                "Mettez à jour régulièrement le micrologiciel (firmware) du routeur",
+                "Envisagez de passer à un forfait internet supérieur",
+                "Utilisez les paramètres de Qualité de Service (QoS) sur le routeur"
+            ],
+            "tips_title": "Conseils de pro pour des résultats précis",
+            "tips_list": [
+                "Testez à différents moments de la journée pour voir les variations",
+                "Effectuez plusieurs tests et faites la moyenne des résultats",
+                "Testez sur différents appareils pour exclure les problèmes liés à l'appareil",
+                "Comparez les vitesses Wi-Fi à différents endroits de votre domicile"
+            ],
+            "faq_title": "Foire aux questions",
+            "metrics": {
+                "download": {
+                    "title": "Vitesse de téléchargement",
+                    "desc": "La vitesse à laquelle les données voyagent d'internet vers votre appareil. Important pour le streaming, la navigation et le téléchargement de fichiers."
+                },
+                "upload": {
+                    "title": "Vitesse d'envoi",
+                    "desc": "La vitesse à laquelle les données voyagent de votre appareil vers internet. Important pour les appels vidéo, l'envoi de fichiers et le streaming en direct."
+                },
+                "ping": {
+                    "title": "Ping (Latence)",
+                    "desc": "Le temps de réponse de votre connexion. Plus il est bas, mieux c'est. Important pour les jeux et les applications en temps réel."
+                }
+            },
+            "factors": {
+                "congestion": {
+                    "title": "Congestion du réseau",
+                    "desc": "Les heures de pointe peuvent ralentir votre connexion car plus d'utilisateurs partagent la bande passante."
+                },
+                "wifi": {
+                    "title": "Signal Wi-Fi",
+                    "desc": "La distance par rapport au routeur, les murs et les interférences d'autres appareils affectent les vitesses sans fil."
+                },
+                "device": {
+                    "title": "Performance de l'appareil",
+                    "desc": "Les appareils plus anciens ou ceux exécutant de nombreux programmes peuvent ne pas atteindre les vitesses maximales."
+                },
+                "router": {
+                    "title": "Qualité du routeur",
+                    "desc": "Les routeurs obsolètes peuvent ne pas supporter toutes les capacités de votre vitesse internet."
+                }
+            },
+            "faq": {
+                "q1": "Quelle est une bonne vitesse internet ?",
+                "a1": "Pour la navigation générale et le streaming : 25+ Mbps. Pour le streaming 4K et les jeux : 50+ Mbps. Pour plusieurs utilisateurs et une utilisation intensive : 100+ Mbps. Pour le télétravail et les grandes familles : 200+ Mbps.",
+                "q2": "Pourquoi ma vitesse est-elle plus lente que celle annoncée ?",
+                "a2": "Les FAI annoncent des vitesses \"jusqu'à\". Les vitesses réelles dépendent de la congestion du réseau, de la qualité du Wi-Fi, de la distance par rapport au routeur et des capacités de l'appareil. Testez avec Ethernet pour plus de précision.",
+                "q3": "Quelle est la différence entre Mbps et Mo/s ?",
+                "a3": "Le Mbps (mégabits par seconde) est utilisé pour les vitesses internet. Le Mo/s (mégaoctets par seconde) est utilisé pour la taille des fichiers. 1 Mo/s = 8 Mbps. Une connexion de 100 Mbps télécharge à environ 12,5 Mo/s.",
+                "q4": "Quelle est la précision de ce test de vitesse ?",
+                "a4": "Notre test de vitesse fournit des résultats précis en mesurant le transfert de données réel. Pour une meilleure précision, fermez les autres applications, utilisez l'Ethernet et effectuez plusieurs tests.",
+                "q5": "Dois-je tester en Wi-Fi ou en Ethernet ?",
+                "a5": "Testez avec Ethernet pour mesurer votre vitesse internet réelle. Testez avec le Wi-Fi pour diagnostiquer les problèmes sans fil. Comparer les deux aide à identifier si les problèmes viennent de votre internet ou du Wi-Fi."
+            }
+        }
+    },
+    "ip-lookup": {
+        "meta": {
+            "title": "Outil de recherche IP - Vérificateur de géolocalisation IP en ligne gratuit",
+            "description": "Outil de recherche IP gratuit pour trouver des informations détaillées sur n'importe quelle adresse IP. Visualisez l'emplacement, le FAI, le nom d'hôte et plus encore. Essentiel pour l'analyse de sécurité et le dépannage réseau.",
+            "h1": "Outil de recherche IP",
+            "subtitle": "Obtenez des informations détaillées sur n'importe quelle adresse IP, y compris l'emplacement et le FAI"
+        },
+        "form": {
+            "ip_label": "Adresse IP",
+            "ip_placeholder": "8.8.8.8",
+            "button": "Rechercher l'adresse IP"
+        },
+        "results": {
+            "title": "Informations sur l'IP",
+            "ip_address": "Adresse IP",
+            "type": "Type",
+            "hostname": "Nom d'hôte",
+            "isp": "FAI/Organisation",
+            "country": "Pays",
+            "region": "Région",
+            "city": "Ville",
+            "timezone": "Fuseau horaire"
+        },
+        "content": {
+            "what_is_title": "Qu'est-ce qu'une recherche IP ?",
+            "what_is_desc": "La recherche IP est un outil qui fournit des informations détaillées sur n'importe quelle adresse IP. Elle révèle l'emplacement géographique, le fournisseur d'accès à internet (FAI), le nom d'hôte et d'autres détails techniques associés à une adresse IP. Ces informations sont précieuses pour les administrateurs réseau, les professionnels de la sécurité, les propriétaires de sites web et toute personne intéressée par la provenance du trafic internet.",
+            "why_use_title": "Pourquoi utiliser la recherche IP ?",
+            "why_use_desc": "Les outils de recherche IP sont essentiels pour divers objectifs, notamment l'analyse de sécurité, la prévention de la fraude, la localisation du contenu, le dépannage réseau et la vérification de la conformité. Les propriétaires de sites web utilisent la recherche IP pour comprendre la démographie de leurs visiteurs, tandis que les équipes de sécurité l'utilisent pour identifier les menaces potentielles et bloquer le trafic malveillant. C'est également utile pour vérifier les connexions VPN et comprendre votre propre empreinte internet.",
+            "features_title": "Caractéristiques principales",
+            "feature1_title": "🌍 Données de géolocalisation",
+            "feature1_desc": "Pays, région, ville et coordonnées",
+            "feature2_title": "🏢 Informations sur le FAI",
+            "feature2_desc": "Détails du fournisseur d'accès à internet",
+            "feature3_title": "🔗 Résolution du nom d'hôte",
+            "feature3_desc": "Nom de domaine associé à l'IP",
+            "feature4_title": "⚡ Résultats instantanés",
+            "feature4_desc": "Recherche rapide et précise"
+        },
+        "faq": {
+            "title": "FAQ sur la recherche IP",
+            "q1": "Quelle est la précision de la géolocalisation IP ?",
+            "a1": "La géolocalisation IP est généralement précise au niveau de la ville, mais peut parfois varier en fonction du FAI et de l'utilisation de VPN.",
+            "q2": "Puis-je trouver l'adresse exacte d'une personne ?",
+            "a2": "Non, pour des raisons de confidentialité, la recherche IP ne fournit que l'emplacement général (ville/région) et non une adresse postale précise.",
+            "q3": "Les adresses IP sont-elles permanentes ?",
+            "a3": "La plupart des utilisateurs domestiques ont des adresses IP dynamiques qui changent périodiquement, tandis que les serveurs utilisent souvent des IP statiques.",
+            "q4": "Comment cacher mon adresse IP ?",
+            "a4": "Vous pouvez utiliser un VPN ou un proxy pour masquer votre véritable adresse IP et en afficher une autre.",
+            "q5": "Une adresse IP peut-elle révéler mon identité ?",
+            "a5": "Seul votre FAI peut associer une adresse IP à une identité personnelle, généralement uniquement sur demande légale."
+        },
+        "js": {
+            "looking_up": "Recherche en cours...",
+            "success": "Informations IP récupérées avec succès",
+            "error": "Échec de la récupération des informations IP"
+        }
+    },
+    "ping-test": {
+        "meta": {
+            "title": "Outil de test Ping en ligne - Vérificateur de latence réseau gratuit",
+            "description": "Outil de test de ping gratuit pour vérifier la latence réseau, la perte de paquets et l'accessibilité du serveur. Testez instantanément la connectivité vers n'importe quel hôte ou adresse IP.",
+            "h1": "Outil de test de ping",
+            "subtitle": "Testez le temps de réponse du serveur et la connectivité réseau depuis plusieurs emplacements"
+        },
+        "form": {
+            "host_label": "Hôte ou adresse IP",
+            "host_placeholder": "google.com ou 8.8.8.8",
+            "button": "Pinger l'hôte"
+        },
+        "results": {
+            "title": "Résultats du Ping"
+        },
+        "content": {
+            "what_is_title": "Qu'est-ce qu'un test de Ping ?",
+            "what_is_desc": "Le Ping est un outil de diagnostic réseau qui teste l'accessibilité d'un hôte sur un réseau IP (Internet Protocol). Il mesure le temps d'aller-retour pour les messages envoyés de la source à un ordinateur de destination et inversement. Le Ping fonctionne en envoyant des paquets ICMP (Internet Control Message Protocol) d'écho à l'hôte cible et en attendant une réponse d'écho. L'outil porte le nom du son de ping du sonar utilisé dans la détection sous-marine, car il envoie de la même manière un signal et écoute une réponse.",
+            "why_use_title": "Pourquoi utiliser le test de Ping ?",
+            "why_use_desc": "Le test de ping est essentiel pour le dépannage réseau et la surveillance des performances. Les administrateurs système utilisent le ping pour vérifier la connectivité réseau, diagnostiquer les problèmes de connexion et mesurer la latence du réseau. Il aide à identifier si un serveur est en ligne et réactif, à détecter la perte de paquets qui pourrait indiquer une congestion du réseau ou des problèmes matériels, et à mesurer la qualité des connexions réseau. Les joueurs utilisent le ping pour vérifier la latence du serveur avant de rejoindre des jeux en ligne, tandis que les propriétaires de sites web surveillent la réactivité de leur serveur pour garantir une expérience utilisateur optimale.",
+            "metrics_title": "Comprendre les mesures de Ping",
+            "metric1": "<strong>Paquets envoyés/reçus :</strong> Nombre de demandes de ping et de réponses réussies",
+            "metric2": "<strong>Perte de paquets :</strong> Pourcentage de paquets n'ayant pas reçu de réponse",
+            "metric3": "<strong>Temps minimum :</strong> Temps d'aller-retour le plus rapide enregistré",
+            "metric4": "<strong>Temps moyen :</strong> Latence moyenne sur tous les pings",
+            "metric5": "<strong>Temps maximum :</strong> Temps d'aller-retour le plus lent enregistré",
+            "metric6": "<strong>TTL (Time To Live) :</strong> Nombre de sauts réseau avant l'expiration du paquet",
+            "interpreting_title": "Interprétation des résultats",
+            "interpreting_desc": "Les bons temps de ping sont généralement inférieurs à 50 ms pour les connexions locales et inférieurs à 100 ms pour les connexions internationales. Les temps entre 100 et 200 ms sont acceptables pour la plupart des applications, mais peuvent causer un décalage notable dans les applications en temps réel comme les jeux ou la visioconférence. Tout ce qui dépasse 200 ms indique des problèmes de réseau potentiels. Une perte de paquets supérieure à 1 % suggère des problèmes de réseau nécessitant une investigation. Des temps de ping constants indiquent des connexions stables, tandis que des temps très variables suggèrent une congestion du réseau ou des problèmes de routage."
+        },
+        "faq": {
+            "title": "FAQ sur le Ping",
+            "q1": "Qu'est-ce qu'un bon ping pour le jeu ?",
+            "a1": "Pour le jeu en ligne, un ping inférieur à 20 ms est excellent, 20-50 ms est très bon et 50-100 ms est jouable. Au-dessus de 150 ms, vous commencerez à ressentir du lag.",
+            "q2": "La perte de paquets est-elle toujours mauvaise ?",
+            "a2": "Oui, même une petite perte de paquets (1-2 %) peut perturber les appels vidéo et les jeux. Cela indique généralement un problème de congestion ou de matériel sur le trajet.",
+            "q3": "Pourquoi mon ping est-il élevé le soir ?",
+            "a3": "Cela est souvent dû à la congestion du réseau (heures de pointe) lorsque de nombreuses personnes utilisent internet simultanément dans votre zone.",
+            "q4": "Est-ce que le Wi-Fi augmente le ping ?",
+            "a4": "Oui, le Wi-Fi ajoute généralement un peu de latence par rapport à une connexion Ethernet filaire en raison du traitement des signaux radio.",
+            "q5": "À quoi sert le TTL ?",
+            "a5": "Le TTL empêche les paquets de circuler indéfiniment sur internet s'il y a une boucle de routage en limitant le nombre de sauts qu'ils peuvent faire."
+        },
+        "js": {
+            "pinging": "Ping en cours...",
+            "success": "Test de ping terminé",
+            "error": "Échec du ping vers l'hôte",
+            "ping_host": "Pinger l'hôte"
+        }
+    },
+    "port-checker": {
+        "meta": {
+            "title": "Outil de vérification de port - Scanner de port ouvert en ligne gratuit",
+            "description": "Outil gratuit de vérification de port pour tester si les ports sont ouverts, fermés ou filtrés. Vérifiez instantanément les ports TCP/UDP pour le dépannage réseau et l'audit de sécurité.",
+            "h1": "Outil de vérification des ports",
+            "subtitle": "Vérifiez si les ports sont ouverts sur n'importe quel serveur pour dépanner la connectivité"
+        },
+        "form": {
+            "host_label": "Hôte ou adresse IP",
+            "host_placeholder": "exemple.com ou 8.8.8.8",
+            "port_label": "Numéro de port",
+            "port_placeholder": "80",
+            "button": "Vérifier le port"
+        },
+        "results": {
+            "title": "Résultat de la vérification du port"
+        },
+        "content": {
+            "what_is_title": "Qu'est-ce qu'un vérificateur de port ?",
+            "what_is_desc": "Un vérificateur de port est un outil de diagnostic réseau qui détermine si un port TCP ou UDP spécifique sur un serveur ou un appareil est ouvert (acceptant les connexions), fermé (rejetant les connexions) ou filtré (bloqué par un pare-feu). Les ports sont des points de terminaison virtuels pour la communication réseau, chaque numéro de port (1-65535) pouvant héberger des services différents. Les ports courants incluent le 80 pour le trafic web HTTP, le 443 pour le HTTPS, le 22 pour le SSH et le 25 pour les e-mails. La vérification de l'état des ports est essentielle pour la configuration du réseau, l'audit de sécurité et le dépannage des problèmes de connectivité.",
+            "why_check_title": "Pourquoi vérifier les ports ?",
+            "why_check_desc": "La vérification des ports sert plusieurs objectifs critiques dans la gestion et la sécurité du réseau. Les administrateurs système vérifient que les services sont accessibles sur leurs ports prévus après des changements de configuration. Les professionnels de la sécurité scannent les ports ouverts pour identifier les vulnérabilités potentielles et s'assurer que les ports inutiles sont fermés. Les développeurs testent si leurs applications écoutent correctement sur les ports configurés. Les dépanneurs réseau utilisent la vérification des ports pour diagnostiquer pourquoi les services ne sont pas accessibles, déterminant si le problème vient du service lui-même, des règles de pare-feu ou du routage réseau.",
+            "common_ports_title": "Ports courants",
+            "port1": "<strong>Port 80 :</strong> HTTP (trafic web)",
+            "port2": "<strong>Port 443 :</strong> HTTPS (trafic web sécurisé)",
+            "port3": "<strong>Port 22 :</strong> SSH (accès shell sécurisé)",
+            "port4": "<strong>Port 21 :</strong> FTP (transfert de fichiers)",
+            "port5": "<strong>Port 25 :</strong> SMTP (envoi d'e-mails)",
+            "port6": "<strong>Port 3306 :</strong> Base de données MySQL",
+            "port7": "<strong>Port 3389 :</strong> RDP (Remote Desktop)",
+            "security_title": "Implications pour la sécurité",
+            "security_desc": "Les ports ouverts représentent des points d'entrée potentiels pour les attaquants. La meilleure pratique de sécurité consiste à ne garder ouverts que les ports nécessaires et à fermer ou filtrer tous les autres. Scanner régulièrement vos propres serveurs aide à identifier les ports ouverts involontairement qui pourraient être exploités. Cependant, scanner les ports des systèmes d'autrui sans permission peut être illégal et est considéré comme une activité hostile. Assurez-vous toujours d'avoir l'autorisation nécessaire avant de scanner les ports sur des systèmes qui ne vous appartiennent pas."
+        },
+        "faq": {
+            "title": "FAQ sur les ports",
+            "q1": "Quelle est la différence entre un port ouvert et fermé ?",
+            "a1": "Un port ouvert signifie qu'une application écoute et accepte les connexions. Un port fermé signifie qu'aucune application n'écoute sur ce port.",
+            "q2": "Que signifie un port 'filtré' ?",
+            "a2": "Un port filtré signifie qu'un pare-feu bloque la requête et qu'il est impossible de déterminer s'il est ouvert ou fermé.",
+            "q3": "Est-il sûr d'avoir des ports ouverts ?",
+            "a3": "Seuls les ports nécessaires aux services publics (comme 80/443 pour un serveur web) devraient être ouverts. Les autres sont des risques de sécurité.",
+            "q4": "Comment ouvrir un port sur mon routeur ?",
+            "a4": "Cela se fait généralement via le 'Port Forwarding' dans les paramètres de votre routeur pour diriger le trafic vers un appareil spécifique.",
+            "q5": "Qu'est-ce qu'un scan de ports ?",
+            "a5": "C'est le processus consistant à vérifier systématiquement plusieurs ports sur un hôte pour voir lesquels sont ouverts."
+        },
+        "js": {
+            "checking": "Vérification en cours...",
+            "success": "Vérification du port terminée",
+            "error": "Échec de la vérification du port",
+            "check_port": "Vérifier le port"
+        }
+    },
+    "reverse-dns-lookup": {
+        "meta": {
+            "title": "Recherche DNS inversée - Outil IP vers domaine en ligne gratuit",
+            "description": "Outil de recherche DNS inversée en ligne gratuit. Trouvez instantanément le nom d'hôte associé à n'importe quelle adresse IP. Rapide, sécurisé et facile à utiliser.",
+            "h1": "Recherche DNS inversée",
+            "subtitle": "Trouvez instantanément le nom de domaine ou le nom d'hôte associé à une adresse IP"
+        },
+        "form": {
+            "ip_label": "Entrez l'adresse IP",
+            "ip_placeholder": "ex: 8.8.8.8",
+            "button": "Recherche DNS inversée",
+            "button_loading": "Recherche en cours..."
+        },
+        "results": {
+            "title": "Résultats de la recherche DNS inversée"
+        },
+        "content": {
+            "what_is_title": "Qu'est-ce qu'une recherche DNS inversée ?",
+            "what_is_desc": "La recherche DNS inversée (rDNS) est le processus consistant à déterminer le nom de domaine ou le nom d'hôte associé à une adresse IP. Contrairement à une recherche DNS standard qui convertit un nom de domaine en une adresse IP (recherche directe), la rDNS fait le contraire. Elle est souvent utilisée pour vérifier l'identité d'un serveur ou pour dépanner des problèmes de réseau.",
+            "why_use_title": "Pourquoi utiliser la recherche DNS inversée ?",
+            "why_use_desc": "Le DNS inversé est largement utilisé à des fins de sécurité et de vérification. Il aide à identifier la source du trafic entrant, à vérifier les expéditeurs d'e-mails (pour prévenir le spam) et à dépanner les problèmes de connectivité réseau. De nombreux serveurs de messagerie exigent des enregistrements rDNS valides pour accepter les e-mails entrants.",
+            "ptr_records_title": "Comprendre les enregistrements PTR",
+            "ptr_record1": "<strong>Enregistrement PTR :</strong> Un enregistrement pointeur (PTR) est le type d'enregistrement DNS utilisé pour les recherches DNS inversées.",
+            "ptr_record2": "<strong>Correspondance :</strong> Il associe une adresse IP à un nom d'hôte.",
+            "ptr_record3": "<strong>Vérification :</strong> Crucial pour la délivrabilité des e-mails et la vérification de la sécurité.",
+            "ptr_record4": "<strong>IP vers Hôte :</strong> Essentiel pour identifier le véritable propriétaire d'une adresse IP.",
+            "ptr_record5": "<strong>Prévention du spam :</strong> Utilisé par les serveurs de messagerie pour valider l'authenticité de l'expéditeur.",
+            "ptr_record6": "<strong>Journaux réseau :</strong> Utile pour rendre les journaux réseau lisibles par l'homme en affichant les noms d'hôte.",
+            "use_cases_title": "Cas d'utilisation courants",
+            "use_cases_desc": "Les cas d'utilisation courants incluent la vérification de l'origine du trafic web, le diagnostic de la latence réseau ou des problèmes de routage, la validation des configurations de serveurs de messagerie et l'amélioration des audits de cybersécurité en identifiant les adresses IP potentiellement malveillantes."
+        },
+        "faq": {
+            "title": "Foire aux questions",
+            "q1": "Qu'est-ce qu'un enregistrement PTR ?",
+            "a1": "Un enregistrement PTR (Pointer) est un type d'enregistrement DNS qui associe une adresse IP à un nom d'hôte. C'est le composant principal d'une recherche DNS inversée.",
+            "q2": "Pourquoi le DNS inversé est-il important pour les e-mails ?",
+            "a2": "De nombreux fournisseurs de messagerie utilisent le DNS inversé pour vérifier que le serveur d'envoi est légitime. Si l'adresse IP d'un serveur n'a pas d'enregistrement rDNS correspondant, ses e-mails peuvent être marqués comme spam.",
+            "q3": "N'importe quelle adresse IP peut-elle avoir un enregistrement DNS inversé ?",
+            "a3": "Oui, mais le propriétaire de l'adresse IP (généralement le FAI ou l'hébergeur) doit configurer l'enregistrement PTR dans ses paramètres DNS."
+        }
+    },
+    "traceroute": {
+        "meta": {
+            "title": "Traceroute Online - Outil d'analyse de réseau gratuit",
+            "description": "Outil de traceroute en ligne gratuit. Rapide, sécurisé et facile à utiliser.",
+            "h1": "Traceroute",
+            "subtitle": "Le meilleur traceroute pour les développeurs et les professionnels de l'informatique"
+        },
+        "form": {
+            "host_label": "Hôte ou adresse IP",
+            "host_placeholder": "ex: google.com",
+            "button": "Tracer l'itinéraire",
+            "button_loading": "Traçage en cours..."
+        },
+        "results": {
+            "title": "Résultats du traceroute"
+        },
+        "content": {
+            "what_is_title": "Qu'est-ce que le Traceroute ?",
+            "what_is_desc": "Traceroute est un outil de diagnostic réseau utilisé pour suivre le chemin emprunté par un paquet de données depuis votre ordinateur jusqu'à une destination spécifique. Il affiche chaque \"saut\" (hop) ou routeur par lequel le paquet passe, ainsi que le temps de réponse pour chaque saut. C'est un outil essentiel pour identifier où les ralentissements ou les pannes se produisent sur internet.",
+            "why_use_title": "Pourquoi utiliser le Traceroute ?",
+            "why_use_desc": "Le traceroute aide à visualiser le parcours des données à travers internet. Si vous n'arrivez pas à accéder à un site web, le traceroute peut vous dire si le problème est proche de vous, chez votre fournisseur d'accès ou plus loin sur le réseau mondial. Il est utilisé par les techniciens réseau pour diagnostiquer les problèmes de routage et de performance.",
+            "hops_title": "Comprendre les étapes (Sauts)",
+            "hop1": "Chaque ligne représente un saut vers un nouveau routeur.",
+            "hop2": "L'adresse IP de chaque routeur est affichée.",
+            "hop3": "Les temps de réponse sont indiqués en millisecondes (ms).",
+            "hop4": "Des astérisques (*) indiquent qu'un routeur n'a pas répondu à temps.",
+            "hop5": "Plus le nombre de sauts est élevé, plus le chemin est long.",
+            "hop6": "Les variations brusques de temps de réponse signalent des goulots d'étranglement.",
+            "issues_title": "Problèmes courants",
+            "issues_desc": "Parfois, certains routeurs bloquent les requêtes de traceroute pour des raisons de sécurité, ce qui affiche des délais expirés (Timeouts). Cela ne signifie pas nécessairement que le réseau est en panne, mais simplement que le routeur refuse de renvoyer l'information."
+        },
+        "faq": {
+            "title": "Foire aux questions",
+            "q1": "Quelle est la différence entre Ping et Traceroute ?",
+            "a1": "Le Ping vérifie simplement si un hôte est accessible. Le Traceroute montre l'itinéraire complet pour y parvenir.",
+            "q2": "Pourquoi certains sauts affichent-ils des étoiles (*) ?",
+            "a2": "Les étoiles signifient que le routeur à cette étape n'a pas répondu à la requête. Cela arrive souvent car certains routeurs sont configurés pour ignorer ces paquets par sécurité.",
+            "q3": "Combien de sauts sont normaux ?",
+            "a3": "En moyenne, un trajet sur internet prend entre 10 et 20 sauts. Au-delà de 30 sauts, on considère généralement que la destination est inaccessible ou qu'il y a une boucle."
+        }
+    },
+    "user-agent-parser": {
+        "meta": {
+            "title": "User Agent Parser - Outil de détail de navigateur en ligne gratuit",
+            "description": "Identifiez le navigateur, le système d'exploitation et l'appareil à partir d'une chaîne User Agent avec notre outil gratuit.",
+            "h1": "Analyseur d'agent utilisateur",
+            "subtitle": "Identifiez le navigateur, l'OS et l'appareil à partir d'une chaîne User Agent"
+        },
+        "editor": {
+            "label_input": "Chaîne de User Agent",
+            "ph_input": "Mozilla/5.0...",
+            "btn_parse": "Analyser",
+            "btn_use_my_ua": "Utiliser mon User Agent",
+            "label_browser": "Navigateur",
+            "label_os": "Système d'exploitation",
+            "label_device": "Appareil",
+            "label_raw": "Infos brutes du moteur"
+        },
+        "content": {
+            "p1": "Notre analyseur de User Agent gratuit décode instantanément les chaînes de user agent pour identifier le navigateur, le système d'exploitation, le type d'appareil et la version du moteur. Utile pour les développeurs déboguant des problèmes spécifiques à un navigateur ou analysant les sources de trafic.",
+            "features_title": "Caractéristiques",
+            "features": {
+                "instant": {
+                    "title": "Analyse instantanée",
+                    "desc": "Décodez les user agents en millisecondes"
+                },
+                "detailed": {
+                    "title": "Infos détaillées",
+                    "desc": "Extrait le navigateur, l'OS, l'appareil et le moteur"
+                },
+                "auto": {
+                    "title": "Détection auto",
+                    "desc": "Un clic pour analyser votre propre user agent actuel"
+                },
+                "free": {
+                    "title": "100 % gratuit",
+                    "desc": "Utilisations illimitées, sans frais"
+                }
+            },
+            "uses_title": "Cas d'utilisation courants",
+            "uses": {
+                "debugging": {
+                    "title": "Débogage",
+                    "desc": "Identifiez les versions détaillées du navigateur pour le dépannage"
+                },
+                "analytics": {
+                    "title": "Analyses",
+                    "desc": "Comprenez quels appareils et OS vos utilisateurs utilisent"
+                },
+                "dev": {
+                    "title": "Développement",
+                    "desc": "Vérifiez les chaînes de user agent pendant les tests"
+                },
+                "security": {
+                    "title": "Sécurité",
+                    "desc": "Analysez les chaînes de user agent suspectes dans les journaux"
+                }
+            },
+            "how_to_title": "Comment utiliser",
+            "how_to": {
+                "step1": {
+                    "title": "Entrez la chaîne",
+                    "desc": "Collez une chaîne de User Agent ou cliquez sur \"Utiliser mon User Agent\""
+                },
+                "step2": {
+                    "title": "Analyser",
+                    "desc": "Cliquez sur \"Analyser\" pour décoder la chaîne"
+                },
+                "step3": {
+                    "title": "Voir les résultats",
+                    "desc": "Consultez les détails décomposés pour le navigateur, l'OS et l'appareil"
+                }
+            },
+            "faq_title": "Foire aux questions",
+            "faq": {
+                "q1": "Qu'est-ce qu'un User Agent ?",
+                "a1": "Un User Agent est une chaîne de texte envoyée par votre navigateur web à chaque site que vous visitez, identifiant le navigateur, sa version, le système d'exploitation et le type d'appareil.",
+                "q2": "Cet analyseur est-il précis ?",
+                "a2": "Il utilise des modèles de reconnaissance standard pour identifier les user agents courants. Cependant, les chaînes de user agent peuvent être usurpées ou modifiées.",
+                "q3": "Mes données sont-elles privées ?",
+                "a3": "Oui, l'analyse se fait localement dans votre navigateur. Nous ne stockons pas vos données de user agent."
+            }
+        }
+    },
+    "what-is-my-ip": {
+        "meta": {
+            "title": "Quelle est mon adresse IP ? - Vérificateur IP en ligne gratuit",
+            "description": "Découvrez instantanément votre adresse IP publique. Vérifiez gratuitement votre adresse IPv4/IPv6, votre FAI, votre emplacement et les détails de votre connexion.",
+            "h1": "Quelle est mon adresse IP ?",
+            "subtitle": "Découvrez instantanément votre adresse IP publique avec des informations détaillées sur le FAI"
+        },
+        "ui": {
+            "loading": "Chargement des informations IP...",
+            "your_ip_title": "Votre adresse IP publique",
+            "copy_button": "Copier l'IP",
+            "timezone": "Fuseau horaire"
+        },
+        "results": {
+            "location": "Emplacement",
+            "isp": "Fournisseur d'accès (FAI)",
+            "country": "Pays"
+        },
+        "content": {
+            "main_title": "Quelle est mon adresse IP - Outil gratuit de recherche d'IP",
+            "main_desc": "Trouvez instantanément votre adresse IP publique avec notre outil gratuit. Découvrez votre adresse IPv4 ou IPv6, votre emplacement géographique précis (ville, région, pays), les informations sur votre FAI, votre fuseau horaire et les détails complets de votre réseau. Essentiel pour la configuration réseau, les tests de sécurité, la configuration d'accès à distance, la vérification du VPN et la compréhension de votre empreinte de connexion internet.",
+            "what_is_title": "Qu'est-ce que mon adresse IP ?",
+            "what_is_desc": "Votre adresse IP est un identifiant numérique unique attribué à votre appareil lorsqu'il se connecte à internet. Elle permet aux sites web et aux services de communiquer avec votre appareil et d'identifier votre emplacement approximatif.",
+            "ipv4_vs_ipv6_title": "Adresses IPv4 vs IPv6",
+            "ipv4_title": "Adresse IPv4",
+            "ipv4_format": "<strong>Format :</strong> 192.168.1.1 (quatre nombres de 0 à 255 séparés par des points)",
+            "ipv4_total": "<strong>Total d'adresses :</strong> ~4,3 milliards d'adresses",
+            "ipv4_desc": "Format le plus courant dans le monde, mais à court d'adresses disponibles en raison de la croissance d'internet.",
+            "ipv6_title": "Adresse IPv6",
+            "ipv6_format": "<strong>Format :</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>Total d'adresses :</strong> 340 sextillions d'adresses",
+            "ipv6_desc": "Nouveau format avec des adresses virtuellement illimitées, remplaçant progressivement l'IPv4.",
+            "why_check_title": "Pourquoi vérifier votre IP ?",
+            "why_check_desc": "Connaître votre adresse IP est utile pour dépanner des problèmes réseau, vérifier les connexions VPN, s'assurer que votre emplacement est masqué et comprendre quelles informations les sites web peuvent voir sur vous.",
+            "public_vs_private_title": "Adresses IP publiques vs privées",
+            "public_ip_title": "🌐 Adresse IP publique",
+            "public_ip_desc": "Votre adresse unique sur internet, visible par tous les sites web et services que vous visitez.",
+            "public_ip_example": "<strong>Exemple :</strong> 203.0.113.45",
+            "public_ip_note": "Attribuée par votre FAI et utilisée pour toute communication sur internet.",
+            "private_ip_title": "🏠 Adresse IP privée",
+            "private_ip_desc": "L'adresse de votre appareil sur votre réseau local, non visible sur internet.",
+            "private_ip_example": "<strong>Exemple :</strong> 192.168.1.100",
+            "private_ip_note": "Utilisée pour la communication au sein de votre réseau domestique ou de bureau.",
+            "security_title": "Sécurité et confidentialité de l'adresse IP",
+            "security_desc1": "Votre adresse IP révèle votre emplacement approximatif (ville/région), votre FAI et peut être utilisée pour suivre votre activité en ligne sur différents sites. Bien qu'elle n'expose pas directement votre adresse postale exacte ou votre identité personnelle, elle peut être combinée avec d'autres données pour le pistage. Les sites web utilisent votre IP pour les analyses, le ciblage publicitaire et les restrictions géographiques.",
+            "security_desc2": "<strong>Protection de la vie privée :</strong> Utilisez un VPN (réseau privé virtuel) pour masquer votre véritable adresse IP et renforcer votre confidentialité. Les VPN acheminent votre trafic via leurs serveurs, affichant l'IP du VPN à la place de la vôtre. Notre outil montre exactement quelles informations les sites web peuvent voir sur votre connexion.",
+            "dynamic_vs_static_title": "Adresses IP dynamiques vs statiques",
+            "dynamic_ip": "<strong>IP dynamique :</strong> Change périodiquement (quotidiennement, hebdomadairement ou lorsque vous redémarrez votre routeur). La plupart des utilisateurs à domicile ont des IP dynamiques attribuées automatiquement par leur FAI. C'est moins cher et plus courant pour les connexions résidentielles.",
+            "static_ip": "<strong>IP statique :</strong> Ne change jamais et reste constante. Typiquement utilisée pour les connexions d'entreprise, les serveurs web, les serveurs de messagerie et l'accès à distance. Elle coûte plus cher mais est essentielle pour l'hébergement de services.",
+            "privacy_tips_title": "Conseils de confidentialité et de sécurité",
+            "privacy_tip1": "• Ne partagez jamais votre adresse IP publiquement sur des forums ou les réseaux sociaux.",
+            "privacy_tip2": "• Utilisez un VPN lors de la connexion à des réseaux Wi-Fi publics.",
+            "privacy_tip3": "• Activez le pare-feu de votre routeur pour bloquer les accès non autorisés.",
+            "privacy_tip4": "• Vérifiez régulièrement votre IP pour détecter des déconnexions de VPN non autorisées.",
+            "privacy_tip5": "• Soyez conscient que les sites web enregistrent votre IP pour la sécurité et les analyses."
+        },
+        "faq": {
+            "title": "FAQ sur mon IP",
+            "q1": "Mon adresse IP change-t-elle ?",
+            "a1": "La plupart des adresses IP résidentielles sont dynamiques et changent périodiquement. Les adresses IP statiques restent les mêmes mais sont généralement réservées aux entreprises.",
+            "q2": "Un VPN cache-t-il vraiment mon IP ?",
+            "a2": "Oui, un VPN remplace votre adresse IP réelle par l'une des siennes, ce qui fait apparaître votre trafic comme provenant d'un autre emplacement.",
+            "q3": "Quelqu'un peut-il trouver ma maison avec mon IP ?",
+            "a3": "Non, une recherche IP publique ne montre généralement que votre ville ou région générale, pas votre adresse exacte."
+        }
+    },
+    "what-is-my-isp": {
+        "meta": {
+            "title": "Qu'est-ce que mon FAI ? - Vérificateur de fournisseur en ligne gratuit",
+            "description": "Découvrez instantanément votre fournisseur d'accès à internet (FAI). Vérifiez gratuitement le nom du FAI, l'organisation, l'ASN et les informations sur l'adresse IP.",
+            "h1": "Qu'est-ce que mon FAI ?",
+            "subtitle": "Identifiez votre fournisseur d'accès à internet avec les détails de connexion"
+        },
+        "content": {
+            "loading": "Chargement des informations sur le FAI...",
+            "your_isp_title": "Votre fournisseur d'accès à internet",
+            "network_label": "Réseau",
+            "location_label": "Emplacement",
+            "main_title": "Quel est mon FAI - Outil de recherche de fournisseur d'accès à internet",
+            "main_desc": "Identifiez instantanément votre fournisseur d'accès à internet (FAI), le nom de l'organisation, les détails du réseau et les informations de connexion. Notre outil gratuit de recherche de FAI révèle le nom de votre FAI, l'ASN (Autonomous System Number), l'adresse IP, l'emplacement et l'infrastructure réseau. Parfait pour vérifier les connexions VPN, dépanner les problèmes réseau, confirmer les lignes internet professionnelles et comprendre votre routage réseau.",
+            "info_title": "Quelles informations pouvez-vous trouver ?",
+            "info1": "<strong>Nom du FAI :</strong> La société fournissant votre connexion internet",
+            "info2": "<strong>Organisation :</strong> L'organisation ou l'entité gérant votre connexion réseau",
+            "info3": "<strong>ASN :</strong> Identifiant réseau unique pour le routage et l'appairage",
+            "info4": "<strong>Emplacement :</strong> Ville, région et pays associés à votre connexion",
+            "info5": "<strong>Détails du réseau :</strong> Plage IP, informations sur le sous-réseau et données d'infrastructure réseau",
+            "why_use_title": "Pourquoi utiliser cet outil ?",
+            "why_use1": "Vérifier que vous êtes connecté via le bon fournisseur internet",
+            "why_use2": "Dépanner les problèmes de connectivité et de performance réseau",
+            "why_use3": "Vérifier si vous utilisez correctement un service VPN ou proxy",
+            "why_use4": "Identifier votre réseau à des fins de sécurité et de confidentialité",
+            "why_use5": "Vérifier les affirmations du FAI concernant la couverture et l'infrastructure",
+            "why_use6": "Rechercher le routage réseau et les relations d'appairage (peering)",
+            "why_use7": "Confirmer les connexions internet professionnelles et les lignes dédiées",
+            "why_use8": "Détecter un accès réseau non autorisé ou un détournement de connexion",
+            "asn_title": "Comprendre l'ASN (Autonomous System Number)",
+            "asn_desc": "Un numéro de système autonome (ASN) est un identifiant unique au monde attribué à un réseau ou à un groupe de réseaux sous un contrôle administratif unique. Les FAI, les grandes organisations et les réseaux de diffusion de contenu possèdent chacun leur propre ASN. Ce numéro est utilisé dans le routage BGP (Border Gateway Protocol) pour déterminer comment le trafic internet circule entre les différents réseaux. Connaître votre ASN aide à identifier votre fournisseur de réseau et à comprendre les chemins de routage.",
+            "use_cases_title": "Cas d'utilisation courants",
+            "use_case1_title": "🔧 Dépannage réseau",
+            "use_case1_desc": "Identifiez les problèmes liés au FAI, vérifiez les chemins de routage et diagnostiquez les problèmes de connexion",
+            "use_case2_title": "🔒 Vérification du VPN",
+            "use_case2_desc": "Confirmez que votre VPN fonctionne en vérifiant si le FAI change lors de la connexion",
+            "use_case3_title": "🛡️ Audits de sécurité",
+            "use_case3_desc": "Vérifiez l'authenticité de la connexion et détectez les accès réseau non autorisés",
+            "use_case4_title": "💼 Vérification professionnelle",
+            "use_case4_desc": "Confirmez les lignes professionnelles dédiées et les connexions internet d'entreprise",
+            "isp_types_title": "Types de FAI",
+            "isp_type1": "<strong>FAI DSL :</strong> Internet par lignes téléphoniques (ADSL, VDSL)",
+            "isp_type2": "<strong>FAI Câble :</strong> Internet haut débit via infrastructure de câble coaxial",
+            "isp_type3": "<strong>FAI Fibre Optique :</strong> Connexions ultra-rapides utilisant des câbles à fibre optique",
+            "isp_type4": "<strong>FAI Sans fil/Mobile :</strong> Connexions internet cellulaires 4G/5G",
+            "isp_type5": "<strong>FAI Satellite :</strong> Internet par satellite pour les zones reculées",
+            "isp_type6": "<strong>FAI Professionnels :</strong> Connexions dédiées de niveau entreprise avec engagements de service (SLA)",
+            "privacy_note_title": "Note sur la confidentialité",
+            "privacy_note_desc": "Votre FAI peut voir tout le trafic internet non crypté et les sites web que vous visitez (mais pas le contenu HTTPS). Ils peuvent enregistrer les données de connexion, l'historique de navigation et les requêtes DNS. Utilisez un VPN pour crypter votre trafic et empêcher la surveillance par le FAI. Notre outil n'affiche que les informations accessibles au public que les sites web peuvent déjà voir."
+        },
+        "results": {
+            "ip_address": "Adresse IP",
+            "asn": "ASN"
+        },
+        "faq": {
+            "title": "FAQ sur le FAI",
+            "q1": "Qui est mon fournisseur d'accès à internet ?",
+            "a1": "Votre FAI est l'entreprise à laquelle vous payez votre abonnement internet (ex: Orange, Free, Bouygues, SFR). Cet outil affiche son nom technique.",
+            "q2": "Qu'est-ce qu'un ASN ?",
+            "a2": "L'ASN est un numéro unique identifiant le réseau de votre FAI sur le plan mondial pour le routage des données.",
+            "q3": "Les sites web voient-ils mon FAI ?",
+            "a3": "Oui, chaque site que vous visitez peut identifier votre FAI grâce à votre adresse IP."
+        },
+        "js": {
+            "error_loading": "Échec du chargement des informations sur le FAI"
+        }
+    },
+    "whois-lookup": {
+        "meta": {
+            "title": "Outil de recherche WHOIS - Vérificateur d'informations de domaine en ligne gratuit",
+            "description": "Outil de recherche WHOIS gratuit pour vérifier les détails de l'enregistrement d'un domaine. Consultez instantanément le registraire, les serveurs de noms, la date d'expiration et le statut du domaine.",
+            "h1": "Outil de recherche WHOIS",
+            "subtitle": "Interrogez la base de données WHOIS pour obtenir les détails de l'enregistrement et de la propriété d'un domaine"
+        },
+        "form": {
+            "domain_label": "Nom de domaine",
+            "domain_placeholder": "exemple.com",
+            "button": "Recherche WHOIS",
+            "button_loading": "Recherche en cours..."
+        },
+        "content": {
+            "form_hint": "Entrez le domaine sans http:// ou https://",
+            "what_is_title": "Qu'est-ce que la recherche WHOIS ?",
+            "what_is_desc": "WHOIS est un protocole qui fournit des informations sur les enregistrements de noms de domaine. Il révèle des détails sur la propriété du domaine, les dates d'enregistrement, les dates d'expiration, les serveurs de noms et les informations sur le registraire.",
+            "why_use_title": "Pourquoi utiliser la recherche WHOIS ?",
+            "why_use_desc": "La recherche WHOIS est essentielle pour vérifier la propriété d'un domaine, vérifier sa disponibilité, enquêter sur des sites web suspects, surveiller les dates d'expiration des domaines et faire des recherches sur les domaines des concurrents.",
+            "key_info_title": "Informations clés fournies",
+            "key_info1": "<strong>Informations sur le titulaire :</strong> Détails sur le propriétaire du domaine (peuvent être protégés par la confidentialité)",
+            "key_info2": "<strong>Dates d'enregistrement :</strong> Quand le domaine a été enregistré et mis à jour pour la dernière fois",
+            "key_info3": "<strong>Date d'expiration :</strong> Quand l'enregistrement du domaine expire",
+            "key_info4": "<strong>Registraire :</strong> Société gérant l'enregistrement du domaine",
+            "key_info5": "<strong>Serveurs de noms :</strong> Serveurs DNS hébergeant le domaine",
+            "key_info6": "<strong>Statut du domaine :</strong> Codes de statut actuels et verrouillages",
+            "how_to_title": "Comment utiliser",
+            "how_to1": "Entrez le nom de domaine que vous souhaitez rechercher",
+            "how_to2": "Cliquez sur le bouton \"Recherche WHOIS\"",
+            "how_to3": "Passez en revue les informations complètes sur l'enregistrement",
+            "how_to4": "Utilisez les données pour vos besoins de recherche ou de vérification",
+            "privacy_title": "Confidentialité et WHOIS",
+            "privacy_desc": "De nombreux registraires de domaines proposent désormais des services de protection de la confidentialité WHOIS qui masquent les informations personnelles des bases de données WHOIS publiques. Cela protège les propriétaires de domaines contre le spam, le vol d'identité et les sollicitations indésirables tout en conservant les informations techniques essentielles nécessaires au fonctionnement du domaine. Les réglementations RGPD ont également eu un impact sur la disponibilité des données WHOIS, de nombreux registraires européens masquant les informations personnelles pour se conformer aux lois sur la protection de la vie privée."
+        },
+        "results": {
+            "title": "Résultats WHOIS"
+        },
+        "faq": {
+            "title": "Foire aux questions",
+            "q1": "Pourquoi certaines informations WHOIS sont-elles masquées ?",
+            "a1": "En raison du RGPD et des services de protection de la vie privée, de nombreux registraires cachent les coordonnées personnelles du propriétaire du domaine.",
+            "q2": "La recherche WHOIS est-elle gratuite ?",
+            "a2": "Oui, notre outil fournit un accès gratuit aux données WHOIS publiques pour n'importe quel domaine.",
+            "q3": "À quelle fréquence les données WHOIS sont-elles mises à jour ?",
+            "a3": "Les données sont généralement mises à jour en temps réel dès qu'un changement est effectué chez le registraire.",
+            "q4": "Puis-je trouver le propriétaire d'un domaine .fr ?",
+            "a4": "L'AFNIC (pour les .fr) applique des règles strictes de confidentialité, mais vous pouvez souvent contacter le propriétaire via un formulaire anonyme sur leur site."
+        }
+    }
+}

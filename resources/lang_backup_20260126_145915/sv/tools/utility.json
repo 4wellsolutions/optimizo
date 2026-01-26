@@ -1,0 +1,332 @@
+{
+    "password-generator": {
+        "meta": {
+            "title": "Secure Password Generator - Gratis säkerhetsverktyg online",
+            "description": "Generera starka, säkra och slumpmässiga lösenord direkt med anpassningsbara längd- och teckeninställningar.",
+            "h1": "Säker lösenordsgenerator",
+            "subtitle": "Generera starka, slumpmässiga lösenord direkt"
+        },
+        "editor": {
+            "title": "Generera ditt säkra lösenord nu",
+            "length_label": "Lösenordslängd:",
+            "chars": "tecken",
+            "strength": {
+                "weak": "8 (Svagt)",
+                "good": "16 (Bra)",
+                "strong": "32 (Starkt)",
+                "very_strong": "64 (Mycket starkt)"
+            },
+            "include_label": "Inkludera teckentyper:",
+            "option_uppercase": "Versaler (A-Z)",
+            "option_uppercase_desc": "Lägger till stora bokstäver för komplexitet",
+            "option_lowercase": "Gemener (a-z)",
+            "option_lowercase_desc": "Avgörande för lösenordsstyrka",
+            "option_numbers": "Siffror (0-9)",
+            "option_numbers_desc": "Ökar lösenordsentropi",
+            "option_symbols": "Symboler (!@#$%)",
+            "option_symbols_desc": "Maximalt säkerhetsskydd",
+            "btn_generate": "Generera starkt lösenord",
+            "result_title": "Ditt genererade lösenord",
+            "strength_score": "Säkerhetspoäng:",
+            "btn_copy_text": "Kopiera lösenord",
+            "btn_copy_final": "Kopiera till urklipp",
+            "btn_regenerate": "Generera nytt"
+        },
+        "content": {
+            "faq_hero_title": "Varför använda vår säkra lösenordsgenerator?",
+            "faq": {
+                "q1": "Hur säkra är lösenorden som genereras av detta verktyg?",
+                "a1": "Vår lösenordsgenerator använder kryptografiskt säker slumptalsgenerering för att skapa lösenord. Lösenorden genereras helt i din webbläsare med JavaScripts crypto.getRandomValues()-metod, vilket säkerställer verklig slumpmässighet och maximal säkerhet. Vi lagrar, överför eller loggar aldrig några genererade lösenord.",
+                "q2": "Vad är den idealiska lösenordslängden?",
+                "a2": "Vi rekommenderar minst 16 tecken för stark säkerhet. Längre lösenord (24-32 tecken) ger ännu bättre skydd mot brute-force-attacker. Vår generator stöder upp till 64 tecken för maximal säkerhet.",
+                "q3": "Bör jag inkludera specialtecken i mitt lösenord?",
+                "a3": "Ja, absolut! Att inkludera specialtecken (!@#$%^&*) ökar avsevärt lösenordets komplexitet och entropi. Ett lösenord med versaler, gemener, siffror och symboler är exponentiellt svårare att knäcka än ett med bara bokstäver och siffror.",
+                "q4": "Hur kommer jag ihåg komplexa lösenord?",
+                "a4": "Försök inte memorera dem! Använd en ansedd lösenordshanterare som LastPass, 1Password, Bitwarden eller Dashlane för att säkert lagra alla dina lösenord. Lösenordshanterare krypterar dina lösenord och kräver bara att du kommer ihåg ett huvudlösenord.",
+                "q5": "Är det säkert att använda en online-lösenordsgenerator?",
+                "a5": "Ja, vår lösenordsgenerator är helt säker eftersom all lösenordsgenerering sker lokalt i din webbläsare. Lösenorden skickas aldrig till våra servrar eller lagras någonstans.",
+                "q6": "Hur ofta ska jag byta mina lösenord?",
+                "a6": "För kritiska konton (e-post, bank, arbete), byt lösenord var 3-6 månad. Om du misstänker ett intrång eller får en säkerhetsvarning, byt lösenord omedelbart."
+            },
+            "seo": {
+                "title": "Förstå lösenordssäkerhet & kryptering",
+                "p1": "Lösenordssäkerhet är grunden för onlinesäkerhet. Ett starkt lösenord fungerar som den första försvarslinjen mot obehörig åtkomst till din personliga information, finansiella data och digitala identitet.",
+                "p2": "Styrkan hos ett lösenord mäts genom dess entropi - mängden slumpmässighet och oförutsägbarhet. Ett lösenord på 16 tecken med alla teckentyper har betydligt högre entropi än ett enkelt lösenord på 8 tecken.",
+                "p3": "Vårt gratis verktyg för lösenordsgenerering är utformat för alla - från individer som skyddar personliga konton till företag som säkrar anställdas åtkomst. Generera obegränsat med lösenord, helt gratis, utan registrering."
+            }
+        },
+        "js": {
+            "generating": "Genererar säkert lösenord...",
+            "strength": {
+                "very_strong": "✓ Mycket starkt - Utmärkt lösenordssäkerhet!",
+                "strong": "✓ Starkt - Bra lösenordssäkerhet.",
+                "medium": "⚠ Medium - Överväg att göra det starkare.",
+                "weak": "⚠ Svagt - Vänligen generera ett starkare lösenord."
+            },
+            "error_generating": "Fel vid generering av lösenord. Försök igen",
+            "copied": "Kopierat!",
+            "error_copy": "Misslyckades med att kopiera lösenord. Vänligen kopiera manuellt."
+        }
+    },
+    "qr-code-generator": {
+        "meta": {
+            "title": "QR Code Generator - Gratis Online Custom QR Creator",
+            "description": "Skapa anpassade QR-koder direkt för webbadresser, text, WiFi och mer. Ladda ner högkvalitativa PNG-bilder.",
+            "h1": "QR-kodgenerator",
+            "subtitle": "Skapa anpassade QR-koder direkt för alla ändamål"
+        },
+        "editor": {
+            "title": "Generera QR-kod",
+            "label_text": "Ange text eller URL",
+            "ph_text": "Ange text, URL eller data du vill koda...",
+            "label_size": "QR-kodstorlek",
+            "opt_small": "Liten (128x128)",
+            "opt_medium": "Medium (256x256)",
+            "opt_large": "Stor (512x512)",
+            "opt_xl": "Extra stor (1024x1024)",
+            "btn_generate": "Generera QR-kod",
+            "btn_download": "Ladda ner QR-kod",
+            "preview_title": "Förhandsgranskning",
+            "preview_placeholder": "Din QR-kod visas här"
+        },
+        "content": {
+            "hero_title": "Gratis QR-kodgenerator",
+            "hero_subtitle": "Skapa anpassade QR-koder direkt för alla ändamål",
+            "p1": "Vår gratis QR-kodgenerator skapar högkvalitativa QR-koder omedelbart. Perfekt för företag, marknadsförare, evenemangsarrangörer och alla som behöver dela information snabbt. Generera QR-koder för webbadresser, text, kontaktinformation, WiFi-uppgifter och mer. Ladda ner i flera storlekar och använd var som helst - helt gratis, ingen registrering krävs.",
+            "faq": {
+                "q1": "Är QR-koderna permanenta?",
+                "a1": "Ja! QR-koder är statiska och permanenta. När de väl har genererats kommer de alltid att fungera så länge den kodade datan (som en URL) förblir giltig.",
+                "q2": "Är QR-koderna permanenta?",
+                "a2": "Ja! QR-koder är statiska och permanenta. När de väl har genererats kommer de alltid att fungera så länge den kodade datan (som en URL) förblir giltig.",
+                "q3": "Vilken storlek ska jag använda för utskrift?",
+                "a3": "För visitkort, använd minst 256px. För affischer och banners, använd 512px eller 1024px. Ju större utskriftsstorlek, desto större bör QR-koden vara för enkel skanning.",
+                "q4": "Kan jag spåra scanningar av QR-koder?",
+                "a4": "Vårt verktyg genererar statiska QR-koder utan spårning. För att spåra skanningar, använd en URL-förkortare med analys innan du genererar QR-koden, eller använd en dynamisk QR-kodtjänst.",
+                "q5": "Finns det en gräns för hur mycket data jag kan koda?",
+                "a5": "QR-koder kan lagra upp till 4 296 alfanumeriska tecken, men för bästa skanningsresultat, håll datan kortfattad. Webbadresser under 100 tecken fungerar bäst.",
+                "q6": "Går QR-koder ut?",
+                "a6": "Nej, QR-koder själva går aldrig ut. Men om QR-koden länkar till en URL som tas bort eller ändras, kommer QR-koden inte längre att fungera."
+            },
+            "features_title": "Funktioner",
+            "features": {
+                "instant": {
+                    "title": "Omedelbar generering",
+                    "desc": "Skapa QR-koder på sekunder med realtidsförhandsgranskning"
+                },
+                "sizes": {
+                    "title": "Flera storlekar",
+                    "desc": "Välj från 128px till 1024px för alla användningsområden"
+                },
+                "download": {
+                    "title": "Enkel nedladdning",
+                    "desc": "Ladda ner som PNG-bild med ett klick"
+                },
+                "privacy": {
+                    "title": "Integritet först",
+                    "desc": "All behandling sker i din webbläsare"
+                },
+                "free": {
+                    "title": "100% Gratis",
+                    "desc": "Inga gränser, inga vattenstämplar, ingen registrering"
+                },
+                "compatibility": {
+                    "title": "Universell kompatibilitet",
+                    "desc": "Fungerar med alla QR-kodskannrar"
+                }
+            },
+            "uses_title": "🎯 Vanliga användningsfall",
+            "uses": {
+                "urls": {
+                    "title": "🔗 Webbplats-URL:er",
+                    "desc": "Led användare till din webbplats, landningssida eller onlinebutik direkt"
+                },
+                "contact": {
+                    "title": "👤 Kontaktinformation",
+                    "desc": "Dela vCards med e-post, telefon och adressuppgifter"
+                },
+                "social": {
+                    "title": "👍 Sociala medier",
+                    "desc": "Länka till dina sociala profiler, YouTube-kanal eller Instagram"
+                },
+                "tickets": {
+                    "title": "🎟️ Evenemangsbiljetter",
+                    "desc": "Generera skanningsbara biljetter för evenemang och konferenser"
+                },
+                "product": {
+                    "title": "📦 Produktinformation",
+                    "desc": "Lägg till QR-koder på produkter för manualer, specifikationer eller äkthet"
+                },
+                "payment": {
+                    "title": "💳 Betalningslänkar",
+                    "desc": "Aktivera snabba betalningar via PayPal, Venmo eller kryptoplånböcker"
+                }
+            },
+            "how_title": "📚 Hur man använder",
+            "how_steps": {
+                "1": {
+                    "title": "Ange din data:",
+                    "desc": "Skriv eller klistra in texten, URL:en eller informationen du vill koda"
+                },
+                "2": {
+                    "title": "Välj storlek:",
+                    "desc": "Välj QR-kodstorleken baserat på var du ska använda den"
+                },
+                "3": {
+                    "title": "Generera:",
+                    "desc": "Klicka på \"Generera QR-kod\" för att skapa din QR-kod direkt"
+                },
+                "4": {
+                    "title": "Ladda ner:",
+                    "desc": "Klicka på \"Ladda ner QR-kod\" för att spara PNG-bilden"
+                },
+                "5": {
+                    "title": "Använd var som helst:",
+                    "desc": "Skriv ut, dela digitalt eller lägg till i marknadsföringsmaterial"
+                }
+            },
+            "best_practices_title": "💡 Bästa praxis",
+            "best_practices": {
+                "test": {
+                    "title": "Testa före utskrift:",
+                    "desc": "Skanna alltid din QR-kod för att verifiera att den fungerar korrekt"
+                },
+                "size": {
+                    "title": "Använd lämplig storlek:",
+                    "desc": "Större QR-koder är lättare att skanna på avstånd"
+                },
+                "contrast": {
+                    "title": "Säkerställ kontrast:",
+                    "desc": "Skriv ut på vita eller ljusa bakgrunder för bästa skanning"
+                },
+                "context": {
+                    "title": "Lägg till sammanhang:",
+                    "desc": "Inkludera en uppmaning som \"Skanna för att besöka webbplats\""
+                },
+                "short": {
+                    "title": "Håll URL:er korta:",
+                    "desc": "Kortare webbadresser skapar enklare, mer skanningsbara QR-koder"
+                }
+            },
+            "faq_title": "Vanliga frågor"
+        },
+        "js": {
+            "error_empty": "Vänligen ange text eller URL för att generera QR-kod",
+            "error_generating": "Fel vid generering av QR-kod.",
+            "error_no_code": "Vänligen generera en QR-kod först",
+            "error_image_not_found": "QR-kodbild hittades inte"
+        }
+    },
+    "random-number-generator": {
+        "meta": {
+            "title": "Random Number Generator - Gratis matematikverktyg online",
+            "description": "Generera äkta slumpmässiga heltal inom ditt angivna intervall. Användbart för spel, lotterier och utlottningar.",
+            "h1": "Slumptalsgenerator",
+            "subtitle": "Generera äkta slumpmässiga heltal inom ditt angivna intervall"
+        },
+        "editor": {
+            "label_min": "Minsta värde",
+            "label_max": "Högsta värde",
+            "label_count": "Antal",
+            "btn_generate": "Generera nummer",
+            "label_result": "Resultat"
+        },
+        "js": {
+            "error_invalid": "Vänligen ange giltiga nummer",
+            "error_min_max": "Minsta värde kan inte vara större än högsta värde"
+        }
+    },
+    "username-checker": {
+        "meta": {
+            "title": "Användarnamn Tillgänglighetskontroll - Gratis onlinesökning",
+            "description": "Kontrollera användarnamnets tillgänglighet på alla större sociala plattformar direkt.",
+            "h1": "Användarnamn Tillgänglighetskontroll",
+            "subtitle": "Kontrollera användarnamnets tillgänglighet på alla större sociala plattformar"
+        },
+        "editor": {
+            "title": "Ange användarnamn",
+            "label_username": "Användarnamn",
+            "ph_username": "johndoe",
+            "help_username": "Ange användarnamn utan @-symbol",
+            "btn_check": "Kontrollera tillgänglighet",
+            "title_results": "Tillgänglighetsresultat",
+            "btn_checking": "Kontrollerar...",
+            "status_available": "Tillgängligt",
+            "status_taken": "Upptaget",
+            "link_view": "Visa profil →"
+        },
+        "content": {
+            "p1": "Kontrollera användarnamnets tillgänglighet på alla större sociala medieplattformar direkt med vår gratis användarnamnskontroll. Hitta det perfekta handtaget för ditt varumärke på Twitter, Instagram, GitHub, TikTok, Facebook, LinkedIn, YouTube, Reddit och mer. Säkra din varumärkesidentitet genom att göra anspråk på samma användarnamn på alla plattformar innan någon annan gör det. Perfekt för personligt varumärke, företagskonton och influencermarknadsföring.",
+            "platforms_title": "Plattformar som stöds",
+            "platforms": {
+                "social": {
+                    "title": "Sociala medier",
+                    "list": [
+                        "Twitter (X): Kontrollera @användarnamn tillgänglighet",
+                        "Instagram: Hitta ditt perfekta handtag",
+                        "TikTok: Säkra ditt @användarnamn",
+                        "Facebook: Kontrollera profil-URL"
+                    ]
+                },
+                "professional": {
+                    "title": "Professionell",
+                    "list": [
+                        "LinkedIn: Professionell profil",
+                        "GitHub: Användarnamn för utvecklare",
+                        "Medium: Skribentprofil",
+                        "YouTube: Kanalhandtag"
+                    ]
+                }
+            },
+            "best_practices_title": "Bästa praxis för användarnamn",
+            "best_practices": {
+                "short": {
+                    "title": "Håll det kort",
+                    "desc": "Sikta på 6-15 tecken för enkel memorering och skrivning"
+                },
+                "spell": {
+                    "title": "Lätt att stava",
+                    "desc": "Undvik komplicerade stavningar, siffror och specialtecken"
+                },
+                "brand": {
+                    "title": "Konsekvent varumärke",
+                    "desc": "Använd samma användarnamn på alla plattformar för igenkänning"
+                },
+                "trends": {
+                    "title": "Undvik trender",
+                    "desc": "Använd inte trendiga ord som kan bli föråldrade"
+                },
+                "seo": {
+                    "title": "SEO-vänlig",
+                    "desc": "Inkludera relevanta nyckelord för bättre upptäckbarhet"
+                },
+                "fast": {
+                    "title": "Agera snabbt",
+                    "desc": "Gör anspråk på ditt användarnamn snabbt innan det blir taget"
+                }
+            },
+            "tips_title": "Proffstips för att välja ett användarnamn",
+            "tips_list": {
+                "items": [
+                    "Kontrollera tillgänglighet på alla plattformar innan du bestämmer dig",
+                    "Överväg framtida affärsexpansion när du väljer",
+                    "Gör det uttalbart för word-of-mouth-marknadsföring",
+                    "Undvik att använda understreck eller siffror om möjligt",
+                    "Säkra domännamn som matchar ditt användarnamn"
+                ]
+            },
+            "faq_title": "Vanliga frågor",
+            "faq": {
+                "q1": "Hur många plattformar kan jag kontrollera samtidigt?",
+                "a1": "Vår användarnamnskontroll stöder 10+ större plattformar inklusive Twitter, Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium och Pinterest. Kontrollera alla plattformar samtidigt med en sökning.",
+                "q2": "Vad händer om mitt önskade användarnamn är upptaget?",
+                "a2": "Prova varianter som att lägga till din plats, bransch eller ett relevant ord. Du kan också använda understreck, punkter eller förkortningar. Vårt verktyg hjälper dig att snabbt testa flera varianter.",
+                "q3": "Bör jag använda samma användarnamn överallt?",
+                "a3": "Ja! Att använda samma användarnamn på alla plattformar stärker din varumärkesidentitet, gör dig lättare att hitta och hjälper till med igenkänning och marknadsföring över plattformar.",
+                "q4": "Kan jag reservera ett användarnamn utan att skapa ett konto?",
+                "a4": "Nej, du måste skapa ett konto på varje plattform för att göra anspråk på ett användarnamn. Vårt verktyg kontrollerar bara tillgänglighet - du måste registrera dig på varje plattform för att säkra ditt användarnamn.",
+                "q5": "Hur ofta bör jag kontrollera tillgänglighet för användarnamn?",
+                "a5": "Tillgängligheten för användarnamn ändras ständigt. Om du hittar ett ledigt användarnamn du gillar, gör anspråk på det omedelbart på alla plattformar. Populära användarnamn kan tas inom timmar eller till och med minuter."
+            }
+        }
+    }
+}

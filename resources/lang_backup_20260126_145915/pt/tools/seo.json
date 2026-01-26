@@ -1,0 +1,884 @@
+{
+    "bing-serp-checker": {
+        "meta": {
+            "title": "Bing SERP Checker - Ferramenta de classificação online gratuita",
+            "description": "Ferramenta gratuita para verificar os rankings do seu site no mecanismo de busca Bing. Resultados precisos em tempo real para qualquer local e dispositivo.",
+            "h1": "Verificador SERP do Bing",
+            "subtitle": "Verifique os rankings de busca do Bing para suas palavras-chave em diferentes locais"
+        },
+        "interface": {
+            "simulation_title": "Simulador de Busca do Bing",
+            "keyword_label": "Palavra-chave Alvo",
+            "location_label": "Localização (Opcional)",
+            "location_placeholder": "Digite cidade, estado ou país...",
+            "market_label": "Mercado / Idioma",
+            "device_label": "Tipo de Dispositivo",
+            "device_desktop": "Desktop",
+            "device_mobile": "Celular",
+            "no_login": "Sem necessidade de login",
+            "realtime_results": "Resultados em Tempo Real"
+        },
+        "form": {
+            "keyword_placeholder": "ex: agência de marketing digital",
+            "button": "Verificar Rankings no Bing"
+        },
+        "markets": {
+            "us": "Estados Unidos (Inglês)",
+            "uk": "Reino Unido (Inglês)",
+            "ca": "Canadá (Inglês)",
+            "au": "Austrália (Inglês)",
+            "de": "Alemanha (Alemão)",
+            "fr": "França (Francês)",
+            "es": "Espanha (Espanhol)",
+            "it": "Itália (Italiano)",
+            "nl": "Países Baixos (Holandês)",
+            "br": "Brasil (Português)",
+            "jp": "Japão (Japonês)",
+            "in": "Índia (Inglês)"
+        },
+        "content": {
+            "main_title": "Verificador de Rank Avançado do Bing",
+            "main_subtitle": "Monitore seu desempenho de busca no segundo maior mecanismo de busca do mundo. Obtenha dados de ranking precisos e localizados para otimizar sua estratégia de SEO no Bing.",
+            "feature1_title": "Dados 100% Precisos",
+            "feature1_desc": "Buscamos resultados diretamente do Bing em tempo real, garantindo que você veja exatamente o que seus visitantes em potencial veem.",
+            "feature2_title": "Específico para Localização",
+            "feature2_desc": "Verifique os rankings como se estivesse pesquisando de cidades ou países específicos. Vital para campanhas de SEO local.",
+            "feature3_title": "Simulação de Dispositivo",
+            "feature3_desc": "Alterne entre visualizações Desktop e Mobile para analisar como seus rankings diferem entre dispositivos.",
+            "serp_features_title": "Analise os Recursos de SERP do Bing",
+            "sf_snippets_title": "Trechos em Destaque (Featured Snippets)",
+            "sf_snippets_desc": "O Bing frequentemente fornece respostas ricas e \"respostas inteligentes\" na posição zero. Verifique se seu conteúdo está capturando esses locais de alta visibilidade.",
+            "sf_places_title": "Bing Places",
+            "sf_places_desc": "O equivalente do Bing ao Local Pack. Crucial para empresas locais. Use nosso recurso de \"Localização\" para verificar seu ranking no <strong>Bing Places</strong>.",
+            "sf_visual_title": "Busca Visual",
+            "sf_visual_desc": "O Bing enfatiza fortemente os resultados de busca visual. Monitore como suas imagens aparecem em layouts de SERP com muitas imagens.",
+            "sf_knowledge_title": "Cartões de Conhecimento",
+            "sf_knowledge_desc": "Painéis de informações ricas no lado direito. Verifique se o Bing entende claramente a entidade da sua marca.",
+            "why_check_title": "Por que rastrear rankings no Bing?",
+            "why_check_desc": "Embora o Google seja dominante, o Bing alimenta a busca do Yahoo, AOL e milhões de dispositivos Windows. Frequentemente tem taxas de conversão mais altas e menos competição. Ignorar o Bing significa perder cerca de 30% do volume de busca em desktop em alguns mercados.",
+            "how_accurate_title": "Quão precisa é esta ferramenta?",
+            "how_accurate_desc": "Nossa ferramenta realiza consultas ao vivo nos servidores do Bing no momento em que você clica em \"Verificar\". Não usamos dados em cache. Os resultados são em tempo real, imparciais e refletem a SERP (Página de Resultados do Mecanismo de Busca) exata para os parâmetros selecionados."
+        },
+        "faq": {
+            "title": "Perguntas Frequentes",
+            "q1": "Este Verificador de Rank do Bing é gratuito?",
+            "a1": "Sim! Nosso **verificador de rank do bing** é completamente gratuito. Você pode verificar palavras-chave ilimitadas para otimizar sua presença no mecanismo de busca da Microsoft sem qualquer custo.",
+            "q2": "Isso afeta os rankings do Yahoo?",
+            "a2": "Sim, geralmente. A busca do Yahoo é amplamente alimentada pelo índice do Bing. Otimizar para o Bing frequentemente leva a melhores rankings no Yahoo também, oferecendo um benefício de SEO \"dois por um\".",
+            "q3": "Posso verificar rankings locais para uma cidade específica?",
+            "a3": "Absolutamente. Digite sua cidade no campo \"Localização\". Anexamos parâmetros de localização específicos à consulta de busca, permitindo que você veja os <strong>resultados locais do bing</strong> exatamente como um usuário naquela cidade veria."
+        }
+    },
+    "broken-links-checker": {
+        "meta": {
+            "title": "Verificador de links quebrados - auditoria de site online gratuita",
+            "description": "Verificador de links quebrados gratuito para escanear seu site em busca de links mortos, erros 404 e corrigir URLs quebradas para um melhor SEO.",
+            "h1": "Verificador de links quebrados",
+            "subtitle": "Encontre e corrija links quebrados no seu site para melhor SEO e experiência do usuário"
+        },
+        "interface": {
+            "scan_title": "Verificador de Links Quebrados",
+            "scan_subtitle": "Encontre links quebrados, redirecionamentos e muito mais.",
+            "url_label": "URL do Site",
+            "button": "Escanear Links Quebrados",
+            "button_scanning": "Escaneando...",
+            "legend_ok": "200 OK",
+            "legend_err": "404/Erro"
+        },
+        "progress": {
+            "extracting": "Extraindo Links...",
+            "stop": "Parar",
+            "processing": "Processando links sequencialmente...",
+            "processed": "Processado",
+            "of": "de",
+            "links": "links",
+            "checking": "Verificando Links..."
+        },
+        "stats": {
+            "total": "Total de Links",
+            "working": "Funcionando (200)",
+            "redirects": "Redirecionamentos (3xx)",
+            "broken": "Quebrados (4xx/5xx)"
+        },
+        "results": {
+            "download": "Baixar Relatório CSV",
+            "detailed_analysis": "Análise Detalhada",
+            "status": "Status",
+            "link_url": "URL do Link",
+            "anchor_text": "Texto Âncora",
+            "type": "Tipo"
+        },
+        "content": {
+            "main_title": "Por que verificar links quebrados?",
+            "main_subtitle": "Links quebrados prejudicam a credibilidade, a experiência do usuário e o desempenho de SEO do seu site. Nosso verificador de links quebrados gratuito ajuda você a identificar e corrigir links mortos antes que eles prejudiquem seus rankings.",
+            "what_is_title": "O que é um Verificador de Links Quebrados?",
+            "what_is_desc": "Um verificador de links quebrados é uma ferramenta que escaneia suas páginas da web para encontrar links que não funcionam mais (erros 404, erros de servidor ou redirecionamentos). Ele ajuda você a manter um site saudável, identificando links mortos que podem prejudicar seu SEO e a experiência do usuário.",
+            "how_works_title": "Como funciona?",
+            "how_works_intro": "Nosso verificador de links quebrados segue um processo simples de 3 etapas:",
+            "how_works_step1": "<strong>Escanear:</strong> Insira a URL da sua página e extrairemos todos os links",
+            "how_works_step2": "<strong>Verificar:</strong> Testamos cada link para verificar seu status (200, 404, 301, etc.)",
+            "how_works_step3": "<strong>Relatório:</strong> Obtenha un relatório detalhado mostrando quais links estão quebrados e precisam de correção",
+            "pro_tip_title": "💡 Dica Pro:",
+            "pro_tip_desc": "Execute este verificador regularmente (mensal ou trimestralmente) para detectar links quebrados antes que eles afetem seu SEO. Configure um cronograma de manutenção para manter seu site saudável!",
+            "types_title": "Tipos de Links Quebrados",
+            "common_causes_title": "Causas Comuns de Links Quebrados",
+            "cc_1": "❌ <strong>Erros de digitação em URLs:</strong> Links digitados incorretamente durante a criação de conteúdo ou migração",
+            "cc_2": "❌ <strong>Páginas deletadas:</strong> Conteúdo removido sem configurar redirecionamentos 301",
+            "cc_3": "❌ <strong>Reestruturação do site:</strong> Mudanças na estrutura de URL durante redesenhos",
+            "cc_4": "❌ <strong>Links externos expirados:</strong> Sites de terceiros removendo ou movendo seu conteúdo",
+            "cc_5": "❌ <strong>Expiração de domínio:</strong> Sites vinculados ficando offline permanentemente",
+            "cc_6": "❌ <strong>Mudanças de protocolo:</strong> Migrações de HTTP para HTTPS sem redirecionamentos adequados",
+            "best_practices_title": "Boas Práticas"
+        },
+        "benefits": {
+            "ux_title": "Experiência do Usuário",
+            "ux_desc": "Links quebrados frustram os visitantes e aumentam as taxas de rejeição. Mantenha seus usuários felizes com uma experiência de navegação suave.",
+            "seo_title": "Impacto no SEO",
+            "seo_desc": "Os mecanismos de busca penalizam sites com muitos links quebrados. Mantenha seus rankings corrigindo links mortos prontamente.",
+            "maintenance_title": "Manutenção Fácil",
+            "maintenance_desc": "Identifique e corrija rapidamente links quebrados antes que eles prejudiquem a reputação do seu site e a visibilidade na busca."
+        },
+        "link_types": {
+            "type1_title": "🔴 404 Não Encontrado",
+            "type1_desc": "O link quebrado mais comum. A página não existe mais no servidor.",
+            "type2_title": "🟡 Redirecionamentos 301/302",
+            "type2_desc": "A página mudou-se. Embora não esteja \"quebrada\", muitos redirecionamentos atrasam seu site.",
+            "type3_title": "🔴 Erros de Servidor 500",
+            "type3_desc": "O servidor encontrou um erro. Estes precisam de atenção imediata.",
+            "type4_title": "🟢 Erros de Tempo de Espera (Timeout)",
+            "type4_desc": "O servidor demorou muito para responder. Pode indicar problemas de desempenho."
+        },
+        "best_practices": {
+            "bp1_title": "Auditorias Regulares",
+            "bp1_desc": "Verifique seu site mensalmente em busca de links quebrados, especialmente após atualizações de conteúdo",
+            "bp2_title": "Use Redirecionamentos 301",
+            "bp2_desc": "Ao mover ou excluir páginas, sempre configure redirecionamentos adequados",
+            "bp3_title": "Monitore Links Externos",
+            "bp3_desc": "Sites externos mudam frequentemente. Revise os links de saída trimestralmente",
+            "bp4_title": "Documente Mudanças",
+            "bp4_desc": "Mantenha um log de mudanças de URL e redirecionamentos para referência futura",
+            "bp5_title": "Corrija Links Internos Primeiro",
+            "bp5_desc": "Priorize a correção de links internos quebrados, pois eles estão totalmente sob seu controle",
+            "bp6_title": "Use URLs Relativas",
+            "bp6_desc": "Para links internos, use URLs relativas para evitar problemas durante mudanças de domínio"
+        },
+        "faq": {
+            "title": "Perguntas Frequentes",
+            "q1": "Com que frequência devo verificar links quebrados?",
+            "a1": "Para a maioria dos sites, verificar links quebrados mensalmente é suficiente. Sites de alto tráfego ou plataformas de e-commerce devem verificar semanalmente. Após grandes atualizações, redesenhos ou migrações, execute uma verificação imediata.",
+            "q2": "Links quebrados prejudicam meus rankings de SEO?",
+            "a2": "Sim, mas indiretamente. O Google afirmou que alguns links quebrados não prejudicarão diretamente os rankings. No entanto, <strong>muitos links quebrados</strong> sinalizam má manutenção do site, o que pode aumentar as taxas de rejeição, desperdiçar orçamento de rastreamento e reduzir a confiança do usuário.",
+            "q3": "Qual a diferença entre links quebrados internos e externos?",
+            "a3": "<strong>Links quebrados internos</strong> apontam para páginas no seu próprio domínio e estão totalmente sob seu controle. <strong>Links quebrados externos</strong> apontam para outros sites. Você deve atualizá-los para alternativas funcionais ou removê-los.",
+            "q4": "Posso verificar links quebrados em todo o meu site?",
+            "a4": "Esta ferramenta verifica <strong>uma página por vez</strong> para fornecer resultados rápidos e focados. Para auditorias de site completo, recomendamos começar pelas suas páginas mais importantes: página inicial, principais landing pages e conteúdo de alto tráfego.",
+            "q_what_to_do": "O que devo fazer quando encontrar links quebrados?",
+            "a_what_to_do_intro": "Siga esta ordem de prioridade:",
+            "a_what_to_do_li1": "<strong>Links internos:</strong> Configure redirecionamentos 301 para a nova URL ou atualize o link diretamente",
+            "a_what_to_do_li2": "<strong>Links externos:</strong> Encontre uma página alternativa funcionando ou use o archive.org para encontrar o conteúdo antigo",
+            "a_what_to_do_li3": "<strong>Se não houver alternativa:</strong> Remova o link e atualize o conteúdo ao redor para manter o fluxo",
+            "a_what_to_do_li4": "<strong>Documente tudo:</strong> Mantenha um log para referência futura e análise de padrões"
+        },
+        "js": {
+            "stopping": "Parando escaneamento...",
+            "scan_stopped": "Escaneamento Parado",
+            "scan_complete": "Escaneamento Concluído!",
+            "error_prefix": "Erro: ",
+            "pending": "Pendente",
+            "internal": "Interno",
+            "external": "Externo"
+        }
+    },
+    "google-serp-checker": {
+        "meta": {
+            "title": "Verificador SERP do Google - ferramenta SEO online gratuita",
+            "description": "Verificador de SERP do Google gratuito para analisar resultados de mecanismos de busca e rastrear rankings de palavras-chave em diferentes locais.",
+            "h1": "Verificador SERP do Google",
+            "subtitle": "Verifique os rankings de busca do Google e rastreie posições de palavras-chave globalmente"
+        },
+        "interface": {
+            "simulation_title": "Simulação de Verificação de SERP ao Vivo",
+            "location_label": "Localização",
+            "location_placeholder": "Digite cidade, país ou CEP",
+            "domain_label": "Domínio do Google",
+            "device_label": "Tipo de Dispositivo",
+            "device_desktop": "Desktop",
+            "device_mobile": "Celular (Smartphone)",
+            "no_login": "Sem necessidade de login",
+            "realtime_results": "Resultados em Tempo Real"
+        },
+        "form": {
+            "keyword_label": "Digite a Palavra-chave",
+            "button": "Verificar SERP"
+        },
+        "content": {
+            "main_title": "Por que usar nosso Verificador de SERP do Google Gratuito?",
+            "main_subtitle": "No mundo do SEO, precisão é tudo. Nosso analisador de SERP ignora algoritmos de personalização para mostrar os verdadeiros rankings de SERP do seu site.",
+            "feature1_title": "Precisão de Posição de SERP Hiper-Local",
+            "feature1_desc": "Ranqueie para \"pizza no centro de São Paulo\". Usamos parâmetros avançados UULE do Google para simular verificações de SERP localizadas precisas.",
+            "feature2_title": "Localizador e Análise de SERP Mobile",
+            "feature2_desc": "Verifique seus rankings em iPhone e Android. Não deixe a Indexação Mobile-First te pegar desprevenido. Análise abrangente de SERP mobile.",
+            "feature3_title": "Rastreador Global de SERP do Google",
+            "feature3_desc": "Expandindo? Verifique rankings em mais de 190 países. Alterne entre Google.co.uk, Google.de, Google.jp e mais.",
+            "serp_features_title": "Entendendo os Recursos de SERP do Google",
+            "feature_snippet_title": "Trechos em Destaque (Featured Snippets)",
+            "feature_snippet_desc": "Também conhecidos como \"caixas de resposta\", aparecem em cerca de 12% das consultas de busca. Nossa ferramenta ajuda você a verificar se possui esse espaço privilegiado.",
+            "feature_local_title": "Local Pack",
+            "feature_local_desc": "A lista baseada em mapa de 3 empresas locais. Crucial para lojas físicas. Use nosso recurso de \"Localização\" para verificar sua presença.",
+            "feature_paa_title": "As Pessoas Também Perguntam (People Also Ask)",
+            "feature_paa_desc": "Perguntas em estilo acordeão relacionadas à consulta do usuário. Ranquear aqui pode gerar um tráfego de conscientização significativo. Use nosso verificador de palavras-chave de serp para identificar essas oportunidades.",
+            "feature_knowledge_title": "Painel de Conhecimento (Knowledge Panel)",
+            "feature_knowledge_desc": "Caixas de informações que aparecem no lado direito dos resultados de desktop. Essenciais para autoridade de marca e SEO de entidade.",
+            "what_is_title": "O que é um Verificador e Analisador de SERP?",
+            "what_is_desc": "Um Verificador de Página de Resultados de Mecanismo de Busca (SERP) é uma ferramenta de diagnóstico essencial para profissionais de SEO e proprietários de empresas. Ele permite que você use um verificador de SERP de site para visualizar os resultados de uma palavra-chave específica como eles apareceriam para um usuário neutro em uma localização geográfica específica.",
+            "bubble_problem_title": "O Problema da \"Bolha do Google\"",
+            "bubble_problem_desc": "Se você simplesmente for ao Google.com e pesquisar suas próprias palavras-chave, os resultados serão fortemente enviesados. O Google personaliza os resultados com base no seu Endereço IP, Histórico de Busca e Tipo de Dispositivo. Isso torna difícil responder \"qual é o meu serp\" com precisão sem uma ferramenta.",
+            "solution_text": "Nosso Verificador de SERP do Google Gratuito estoura essa bolha. Ao usar o parâmetro UULE, geramos uma string especialmente codificada que diz ao Google exatamente de onde simular o rastreamento de SERP online, oferecendo dados 100% limpos e imparciais."
+        },
+        "faq": {
+            "title": "Perguntas Frequentes",
+            "q1": "Esta ferramenta de SERP é gratuita para buscas ilimitadas?",
+            "a1": "Sim! Nossa ferramenta de serp gratuita permite que você verifique quantas palavras-chave desejar sem criar uma conta ou pagar uma taxa de assinatura. Acreditamos em fornecer ferramentas de verificação de rank de serp online acessíveis para todos.",
+            "q2": "Como funciona o recurso de localização da Ferramenta de Posição de SERP?",
+            "a2": "Usamos o parâmetro oficial UULE (Universal URL Location Encoded) do Google. Quando você insere uma cidade, encontramos suas coordenadas GPS precisas e as codificamos na solicitação de busca, forçando o Google a mostrar resultados como se você estivesse fisicamente naquela cidade.",
+            "q3": "Por que meu Ranking do Google na SERP parece diferente no Celular?",
+            "a3": "O Google usa a Indexação Mobile-First, o que significa que ele usa predominantemente a versão mobile do conteúdo para indexação e ranking. Os resultados de busca mobile também têm layouts diferentes (mais anúncios, snippets diferentes). Use nosso seletor de \"Dispositivo\" para verificar sua presença mobile especificamente com este rastreador de serps do google."
+        }
+    },
+    "keyword-density-checker": {
+        "meta": {
+            "title": "Verificador de densidade de palavras-chave - análise de SEO online gratuita",
+            "description": "Ferramenta gratuita de verificador de densidade de palavras-chave. Analise a frequência de palavras e o uso de palavras-chave para otimizar seu conteúdo.",
+            "h1": "Verificador de densidade de palavras-chave",
+            "subtitle": "Verifique o uso e a densidade de palavras-chave para melhores rankings de busca"
+        },
+        "form": {
+            "label": "Cole o Texto ou URL",
+            "placeholder": "Cole seu texto aqui...",
+            "button": "Verificar Densidade"
+        },
+        "results": {
+            "title": "Estatísticas de Palavras-chave",
+            "total_words": "Total de Palavras",
+            "unique_words": "Palavras Únicas",
+            "sentences": "Sentenças",
+            "paragraphs": "Parágrafos",
+            "long_sentences": "Sentenças Longas",
+            "short_sentences": "Sentenças Curtas",
+            "top_keyword": "Palavra-chave Principal",
+            "top_density": "Densidade Máxima",
+            "single_keywords_title": "Palavras-chave Únicas",
+            "keyword_header": "Palavra-chave",
+            "count_header": "Contagem",
+            "density_header": "Densidade",
+            "two_word_title": "Frases de 2 Palavras",
+            "phrase_header": "Frase",
+            "three_word_title": "Frases de 3 Palavras"
+        },
+        "content": {
+            "main_title": "Verificador de Densidade de Palavras-chave",
+            "main_subtitle": "Otimize a relevância do seu conteúdo analisando a frequência das palavras-chave.",
+            "intro": "Nosso Verificador de Densidade de Palavras-chave ajuda você a encontrar as palavras e frases usadas com mais frequência em seu texto. Perfeito para SEOs e redatores de conteúdo para evitar o uso excessivo de palavras-chave (keyword stuffing).",
+            "what_is_title": "O que é Densidade de Palavras-chave?",
+            "what_is_text": "A densidade de palavras-chave é a porcentagem de vezes que uma palavra-chave ou frase aparece puramente no conteúdo em comparação com o número total de palavras na página. É um fator chave na Otimização para Mecanismos de Busca (SEO).",
+            "guidelines_title": "Diretrizes de Densidade",
+            "why_use_title": "Por que verificar a densidade de palavras-chave?",
+            "best_practices_title": "Boas Práticas",
+            "faq_title": "FAQ"
+        },
+        "guidelines": {
+            "g1": "Não existe uma porcentagem \"perfeita\", mas <strong>1-3%</strong> é geralmente considerado seguro.",
+            "g2": "Evite o \"Keyword Stuffing\", pois isso pode prejudicar seus rankings.",
+            "g3": "Escreva naturalmente para os leitores, não apenas para bots.",
+            "g4": "Use sinônimos e palavras-chave LSI (Latent Semantic Indexing).",
+            "g5": "Verifique não apenas palavras únicas, mas frases de 2 a 3 palavras."
+        },
+        "features": {
+            "f1_title": "Análise Profunda",
+            "f1_desc": "Analisa palavras únicas, bigramas e trigramas.",
+            "f2_title": "Contador de Palavras",
+            "f2_desc": "Contagem precisa de palavras, sentenças e parágrafos.",
+            "f3_title": "Verificação de \"Stuffing\"",
+            "f3_desc": "Ajuda a identificar se você representa palavras-chave com frequência excessiva.",
+            "f4_title": "Ferramenta Gratuita",
+            "f4_desc": "Completamente gratuito para usar, sem limites.",
+            "f5_title": "Para Redatores",
+            "f5_desc": "Melhore a qualidade e a legibilidade do conteúdo.",
+            "f6_title": "Palavras de Parada (Stop Words)",
+            "f6_desc": "Filtragem inteligente de palavras de parada comuns."
+        },
+        "best_practices": {
+            "bp1": "Foque na qualidade do conteúdo em vez de números específicos de densidade.",
+            "bp2": "Inclua sua palavra-chave principal no primeiro parágrafo.",
+            "bp3": "Use palavras-chave nos cabeçalhos H1 e H2.",
+            "bp4": "Use variações de palavras-chave de cauda longa (long-tail).",
+            "bp5": "Não sacrifique a legibilidade pelo SEO.",
+            "bp6": "Não repita a mesma palavra de forma não natural."
+        },
+        "faq": {
+            "q1": "O que é uma boa densidade de palavras-chave?",
+            "a1": "A maioria dos especialistas em SEO recomenda cerca de 1-2%. O texto deve ser lido naturalmente.",
+            "q2": "O que é keyword stuffing?",
+            "a2": "É a prática de carregar uma página da web com palavras-chave na tentativa de manipular o ranking de um site nos resultados de busca do Google.",
+            "q3": "Ele ignora as palavras de parada?",
+            "a3": "Sim, nossa ferramenta filtra palavras de parada comuns (como \"o\", \"e\", \"é\") para oferecer a densidade de palavras significativas.",
+            "q4": "A densidade de frases importa?",
+            "a4": "Sim, os mecanismos de busca procuram por frases e tópicos relacionados, não apenas palavras únicas.",
+            "q5": "Posso verificar uma URL?",
+            "a5": "Atualmente, esta ferramenta funciona com entrada de texto. Copie o conteúdo da sua página e cole aqui."
+        },
+        "alerts": {
+            "enter_text": "Por favor, insira algum texto para analisar"
+        }
+    },
+    "meta-tag-analyzer": {
+        "meta": {
+            "title": "Analisador de Meta Tag - Verificador de Meta SEO Online Gratuito",
+            "description": "Analisador de meta tags gratuito para verificar e otimizar as meta tags do seu site para um melhor SEO.",
+            "h1": "Analisador de metatags",
+            "subtitle": "Análise abrangente de meta tags para otimização de mecanismos de busca"
+        },
+        "form": {
+            "label": "Digite a URL do Site",
+            "placeholder": "https://exemplo.com",
+            "button": "Analisar Meta Tags"
+        },
+        "results": {
+            "title": "Resultados da Análise",
+            "title_tag": "Tag de Título",
+            "length": "Comprimento",
+            "characters": "caracteres",
+            "meta_description": "Meta Descrição"
+        },
+        "results_labels": {
+            "other_tags": "Outras Meta Tags",
+            "seo_score": "Pontuação de SEO",
+            "viewport": "Viewport",
+            "charset": "Charset",
+            "robots": "Robots"
+        },
+        "content": {
+            "main_title": "Analisador de Meta Tags",
+            "main_subtitle": "Analise e otimize as meta tags do seu site com facilidade.",
+            "intro": "Nossa ferramenta gratuita de Analisador de Meta Tags ajuda você a verificar as meta tags de qualquer página da web. Obtenha insights instantâneos sobre seu Título, Descrição e outras tags de SEO importantes.",
+            "what_are_title": "O que são Meta Tags?",
+            "what_are_desc": "Meta tags são trechos de texto que descrevem o conteúdo de uma página; as meta tags não aparecem na própria página, mas apenas no código-fonte da página. Meta tags são essencialmente pequenos descritores de conteúdo que ajudam a dizer aos mecanismos de busca do que se trata uma página da web.",
+            "essential_title": "Meta Tags Essenciais para SEO",
+            "common_mistakes_title": "Erros Comuns de Meta Tags",
+            "mistake_1": "Tags de Título ou Descrição ausentes",
+            "mistake_2": "Exceder os limites de caracteres recomendados",
+            "mistake_3": "Meta tags duplicadas em várias páginas",
+            "mistake_4": "Usar palavras-chave irrelevantes",
+            "mistake_5": "Sem tag viewport para otimização mobile",
+            "mistake_6": "Múltiplas tags de Título em uma única página",
+            "why_analyze_title": "Por que analisar meta tags?"
+        },
+        "meta_tags": {
+            "title_tag_title": "Tag de Título",
+            "title_tag_desc": "A meta tag mais importante. Ela define o título da sua página nos resultados de busca.",
+            "title_optimal_length": "Comprimento Ideal:",
+            "title_optimal_value": "50-60 caracteres",
+            "title_best_practice": "Boa Prática:",
+            "title_best_value": "Inclua sua palavra-chave principal perto do início.",
+            "meta_desc_title": "Meta Descrição",
+            "meta_desc_desc": "Fornece um resumo do conteúdo da página. Afeta a Taxa de Cliques (CTR).",
+            "meta_desc_optimal_length": "Comprimento Ideal:",
+            "meta_desc_optimal_value": "150-160 caracteres",
+            "meta_desc_best_practice": "Boa Prática:",
+            "meta_desc_best_value": "Escreva um texto atraente com uma chamada para ação (call to action).",
+            "og_title": "Open Graph (Social)",
+            "og_desc": "Controla como seu conteúdo aparece quando compartilhado em redes sociais (Facebook, LinkedIn).",
+            "og_key_tags": "Principais Tags:",
+            "og_key_value": "og:title, og:description, og:image",
+            "og_platform": "Plataformas:",
+            "og_platform_value": "Facebook, LinkedIn, Pinterest",
+            "twitter_title": "Twitter Cards",
+            "twitter_desc": "Meta tags específicas para otimizar como seu conteúdo aparece no Twitter.",
+            "twitter_key_tags": "Principais Tags:",
+            "twitter_key_value": "twitter:card, twitter:title, twitter:image",
+            "twitter_types": "Tipos:",
+            "twitter_types_value": "Summary, Summary with Large Image"
+        },
+        "benefits": {
+            "b1_title": "Melhores Rankings",
+            "b1_desc": "Tags adequadas ajudam os mecanismos de busca ao entender seu conteúdo.",
+            "b2_title": "CTR Mais Alto",
+            "b2_desc": "Títulos e descrições atraentes recebem mais cliques.",
+            "b3_title": "Visibilidade Social",
+            "b3_desc": "Tags Open Graph otimizadas melhoram a aparência de compartilhamento social.",
+            "b4_title": "Análise de Concorrentes",
+            "b4_desc": "Analise as tags da concorrência para refinar sua estratégia."
+        },
+        "features": {
+            "f2_title": "Análise Instantânea",
+            "f2_desc": "Obtenha resultados em segundos.",
+            "f3_title": "Gratuito para Usar",
+            "f3_desc": "Sem taxas ocultas ou limites."
+        },
+        "faq": {
+            "title": "Perguntas Frequentes",
+            "q1": "O que é um Analisador de Meta Tags?",
+            "a1": "É uma ferramenta que rastreia uma página da web e extrai suas meta tags (título, descrição, robots, palavras-chave) para análise.",
+            "q2": "Por que as meta tags são importantes para o SEO?",
+            "a2": "Elas fornecem aos mecanismos de busca informações sobre sua página e frequentemente determinam como seu site aparece nos resultados de busca.",
+            "q3": "Qual é o comprimento perfeito da tag de Título?",
+            "a3": "Recomenda-se mantê-lo entre 50 e 60 caracteres para evitar que seja cortado nos resultados de busca do Google.",
+            "q4": "As meta tags de palavras-chave afetam o ranking?",
+            "a4": "A maioria dos mecanismos de busca modernos (incluindo o Google) não usa mais a meta tag de palavras-chave para fins de ranking.",
+            "q5": "Como corrijo erros de meta tags?",
+            "a5": "Você precisa editar o HTML da sua página (na seção <head>) ou usar as configurações/plugins de SEO do seu CMS."
+        },
+        "js": {
+            "alert_enter_url": "Por favor, insira uma URL válida",
+            "analyzing": "Analisando...",
+            "error_cors": "<strong>Erro de CORS (Demonstração):</strong> Em produção, as solicitações para URLs externas devem passar pelo seu proxy de backend. <br>Abaixo são mostrados dados de demonstração.",
+            "error_general": "Erro ao analisar a URL",
+            "analyze_btn": "Analisar Meta Tags",
+            "demo_title": "Título de Exemplo da Página - Otimizado para SEO",
+            "demo_description": "Este é um exemplo de meta descrição. Ela deve ser descritiva, atraente e conter palavras-chave para atrair cliques dos resultados de busca.",
+            "status_optimal": "Ideal",
+            "advice_perfect_length": "Comprimento perfeito!",
+            "status_too_long": "Muito Longo",
+            "advice_truncated": "Pode ser cortado nos resultados de busca.",
+            "status_too_short": "Muito Curto",
+            "advice_add_detail": "Considere adicionar mais detalhes.",
+            "advice_truncated_short": "Pode ser cortado.",
+            "advice_add_detail_short": "Considere adicionar detalhes.",
+            "score_text": "Bom! Suas meta tags estão bem otimizadas."
+        }
+    },
+    "on-page-seo-checker": {
+        "meta": {
+            "title": "Verificador de SEO na página - Auditor de site online gratuito",
+            "description": "Verificador de SEO on-page gratuito para analisar e otimizar suas páginas da web para mecanismos de busca.",
+            "h1": "Verificador de SEO na página",
+            "subtitle": "Auditoria de SEO on-page completa com recomendações práticas"
+        },
+        "interface": {
+            "title": "Inicie sua Auditoria Gratuita",
+            "url_label": "URL do Site",
+            "keywords_label": "Palavras-chave Alvo",
+            "recommended": "Recomendado",
+            "button": "Iniciar Auditoria Abrangente",
+            "page_analysis": "Análise da Página"
+        },
+        "labels": {
+            "initializing": "Inicializando...",
+            "desktop": "Desktop",
+            "mobile": "Mobile"
+        },
+        "content": {
+            "main_content_title": "Verificador e Analisador de SEO On-Page Abrangente",
+            "main_content_desc": "Os mecanismos de busca modernos usam correspondência neural para entender a <em>intenção</em> por trás de uma consulta, não apenas palavras-chave exatas. Nosso <strong>verificador de seo on-page</strong> foi construído sobre esses mesmos princípios. Quer você precise de uma <strong>verificação de seo on-page</strong> rápida ou de uma auditoria semântica profunda, nossa ferramenta atua como um <strong>analisador de seo on-page</strong> neural, ajudando você a preencher a lacuna entre seu conteúdo e como os algoritmos baseados em IA o interpretam.",
+            "how_to_title": "Como Usar a Ferramenta Verificador de SEO On-Page"
+        },
+        "features": {
+            "f1_title": "Análise Semântica Instantânea",
+            "f1_desc": "Os robôs de busca rastejam de forma eficiente. Nossa <strong>verificação de seo on-page online</strong> imita esse comportamento, analisando seu DOM para entender a estrutura e a hierarquia. Esta <strong>ferramenta de verificação on-page</strong> garante que seu HTML fale a linguagem dos mecanismos de busca.",
+            "f2_title": "Pontuação Baseada em Dados",
+            "f2_desc": "Esqueça a subjetividade — você recebe pontuações ponderadas através de sinais como otimização de cabeçalho, completude de meta e proporções de contagem de palavras. É um mecanismo transparente de <strong>verificação de seo na página</strong> com limites acionáveis.",
+            "f3_title": "Revisão de Conteúdo Contextual",
+            "f3_desc": "O mito da densidade de palavras-chave \"perfeita\" morreu. Nossa <strong>ferramenta de auditoria de seo on-page</strong> avalia a relevância contextual em vez disso. Seus H1s estão alinhados com a intenção do usuário? Seu conteúdo satisfaz a consulta? Isso é a <strong>análise de seo on-page</strong> moderna.",
+            "f4_title": "Verificação Técnica e Mobile",
+            "f4_desc": "Tags de viewport, links canônicos e trechos de dados estruturados — verificados. Nosso <strong>testador de seo on-page</strong> sinaliza alertas de usabilidade mobile e inconsistências de marcação, oferecendo um <strong>relatório de seo on-page</strong> que é tanto estético quanto algorítmico.",
+            "f5_title": "Acesso 100% Gratuito",
+            "f5_desc": "Sem assinaturas, sem limites ocultos. Esta é sua opção de <strong>ferramenta de seo on-page gratuita</strong>. Execute auditorias ilimitadas em qualquer URL pública, seja para seu próprio site ou pesquisa competitiva.",
+            "f6_title": "Arquitetura de Links",
+            "f6_desc": "Auditoria de links internos e externos em uma única visualização. Veja quantos links externos apontam para onde, e se seu link interno fortalece a autoridade temática. É um <strong>verificador de seo on-page gratuito</strong> holístico projetado para ser abrangente."
+        },
+        "how_to": {
+            "step1_title": "Insira sua URL",
+            "step1_desc": "Forneça o endpoint específico da página. Nosso <strong>verificador de seo on-page online</strong> busca o HTML bruto assim como um bot de busca faria.",
+            "step2_title": "Analise os Sinais",
+            "step2_desc": "Inicie o <strong>testador de página seo</strong>. Analisamos cabeçalhos, metadados e estrutura de conteúdo para emular como os algoritmos \"leem\" sua página.",
+            "step3_title": "Otimize para a Intenção",
+            "step3_desc": "Use os dados para refinar a relevância do seu conteúdo. Verifique a lógica do <strong>site on-page</strong> e melhore sua <strong>pontuação de seo on-page</strong> acionável."
+        },
+        "faq": {
+            "title": "Perguntas Frequentes",
+            "q1": "Por que uma revisão de seo on-page é crítica para o ranking?",
+            "a1": "A busca é sobre relevância. Uma <strong>revisão de seo on-page</strong> garante que seus sinais (títulos, schema, conteúdo) estejam alinhados com a intenção do usuário. Auditorias regulares com uma ferramenta de <strong>seo on-page do site</strong> mantêm seu site sincronizado com as atualizações evolutivas do algoritmo.",
+            "q2": "Esta ferramenta de seo on-page online é realmente gratuita?",
+            "a2": "Sim. Acreditamos em dados acessíveis. Nossa <strong>ferramenta de seo on-page online</strong> é gratuita para usar, permitindo que você atue como sua própria <strong>ferramenta de seo on-page gratuita</strong> sem barreiras de assinatura.",
+            "q3": "Como os mecanismos de busca entendem meu conteúdo?",
+            "a3": "Os motores usam PLN (Processamento de Linguagem Natural) para relacionar entidades. Nosso <strong>classificador de seo on-page</strong> verifica se sua estrutura suporta esse entendimento, agindo como um <strong>teste de seo on-page</strong> substituto para compatibilidade neural.",
+            "q4": "Posso verificar o seo on-page de qualquer site?",
+            "a4": "Sim. Nosso rastreador respeita o `robots.txt`, mas pode analisar qualquer URL pública. Você pode <strong>verificar o seo on-page</strong> de concorrentes para fazer engenharia reversa do sucesso deles. É uma <strong>ferramenta de verificação on-page</strong> versátil para qualquer estratégia."
+        }
+    },
+    "pdf-report": {
+        "seo": {
+            "title": "Relatório em PDF - Relatório de Auditoria de SEO Profissional"
+        },
+        "interface": {
+            "brand_name": "Optimizo",
+            "cover_title": "RELATÓRIO DE AUDITORIA DE SEO",
+            "overall_score": "PONTUAÇÃO GERAL",
+            "generated_on": "Gerado em",
+            "suite_name": "Conjunto de Ferramentas de SEO Optimizo",
+            "audit_title": "Auditoria de SEO Optimizo",
+            "analysis_methods": "Métodos de Análise Detalhados",
+            "recommendation": "RECOMENDAÇÃO:"
+        },
+        "meta": {
+            "title": "Gerador de relatórios SEO PDF - ferramenta de auditoria online gratuita",
+            "description": "Gere um relatório de auditoria de SEO gratuito em formato PDF para o seu site.",
+            "h1": "Gerador de relatórios PDF",
+            "subtitle": "Crie relatórios em PDF detalhados para análises e auditorias de SEO"
+        }
+    },
+    "redirect-checker": {
+        "meta": {
+            "title": "Verificador de redirecionamento online - ferramenta gratuita de status HTTP",
+            "description": "Ferramenta gratuita de verificação de redirecionamento para analisar redirecionamentos de URL, rastrear cadeias de redirecionamento, verificar códigos de status HTTP e detectar loops de redirecionamento. Essencial para SEO e depuração.",
+            "h1": "Verificador de redirecionamento",
+            "subtitle": "Rastreie redirecionamentos HTTP e identifique cadeias 301, 302 e meta refresh"
+        },
+        "form": {
+            "url_label": "Insira as URL(s) para verificar (Uma por linha, máximo 10)",
+            "url_placeholder": "https://exemplo.com\nhttps://outro-site.com\nhttps://terceiro-site.com",
+            "canonical_check": "Também verificar canônico do domínio (www vs sem www)",
+            "user_agent_label": "User Agent",
+            "user_agent_default": "Padrão (Navegador)",
+            "user_agent_googlebot": "Googlebot (Google)",
+            "user_agent_bingbot": "Bingbot (Bing)",
+            "user_agent_facebook": "Rastreador do Facebook",
+            "user_agent_iphone": "iPhone (Safari)",
+            "user_agent_android": "Android (Chrome)",
+            "button": "Verificar URLs"
+        },
+        "loading": {
+            "analyzing": "Analisando caminho de redirecionamento..."
+        },
+        "content": {
+            "main_title": "Ferramenta de Verificação de Redirecionamento e Status HTTP",
+            "main_subtitle": "Análise completa de URL com rastreamento de redirecionamento, verificação de código de status e detecção de loop",
+            "intro": "Analise códigos de status HTTP, rastreie cadeias de redirecionamento, detecte redirecionamentos 301 e 302, identifique links quebrados e encontre loops de redirecionamento com nossa ferramenta gratuita abrangente. Essencial para otimização de SEO, depuração de sites, planejamento de migração e garantia de uma estrutura de URL adequada. Verifique qualquer URL instantaneamente para ver o caminho completo do redirecionamento, códigos de resposta e problemas potenciais.",
+            "features_title": "✨ Principais Recursos",
+            "feature1_title": "Verificação de URL em Lote",
+            "feature1_desc": "Verifique até 10 URLs simultaneamente com rastreamento de progresso",
+            "feature2_title": "Verificação de Domínio Canônico",
+            "feature2_desc": "Verifique a consistência www vs sem www para SEO",
+            "feature3_title": "Detecção de Loop",
+            "feature3_desc": "Diagrama visual mostrando padrões exatos de loop de redirecionamento",
+            "feature4_title": "Análise Completa de Cadeia",
+            "feature4_desc": "Rastreie caminhos de redirecionamento completos com códigos de status e tempo",
+            "what_are_redirects_title": "O que são Redirecionamentos HTTP?",
+            "what_are_redirects_desc": "Os redirecionamentos HTTP são respostas do servidor que enviam automaticamente os visitantes de uma URL para outra. Quando um navegador solicita uma URL, o servidor pode responder com um código de status de redirecionamento (como 301 ou 302) junto com a nova URL de destino. Os redirecionamentos são essenciais para manter o valor do SEO ao mover conteúdo, corrigir links quebrados, impor HTTPS e gerenciar alterações de domínio.",
+            "status_codes_title": "Entendendo os Códigos de Status HTTP",
+            "status_2xx_title": "2xx - Sucesso",
+            "status_2xx_desc": "Estes indicam solicitações bem-sucedidas sem problemas",
+            "status_3xx_title": "3xx - Redirecionamentos",
+            "status_3xx_desc": "A URL foi movida, o navegador deve seguir o redirecionamento",
+            "status_4xx_title": "4xx - Erros do Cliente",
+            "status_4xx_desc": "Erro de solicitação no lado do cliente",
+            "status_5xx_title": "5xx - Erros do Servidor",
+            "status_5xx_desc": "Erros no lado do servidor",
+            "redirect_301_title": "Redirecionamento Permanente 301",
+            "redirect_301_when": "<strong>Quando usar:</strong> Conteúdo movido permanentemente para uma nova URL",
+            "redirect_301_seo": "<strong>Impacto no SEO:</strong> Passa 90-99% do valor do link (link equity) para a nova URL",
+            "redirect_301_cache": "<strong>Cache:</strong> Os navegadores armazenam em cache permanentemente, difícil de mudar",
+            "redirect_302_title": "Redirecionamento Temporário 302",
+            "redirect_302_when": "<strong>Quando usar:</strong> Conteúdo temporariamente em uma URL diferente",
+            "redirect_302_seo": "<strong>Impacto no SEO:</strong> A URL original mantém o poder de ranking",
+            "redirect_302_cache": "<strong>Cache:</strong> Não é armazenado em cache, fácil de alterar ou remover",
+            "why_check_title": "Por que Verificar Redirecionamentos?",
+            "why_check_1": "<strong>Migrações de Site:</strong> Verifique se todas as URLs antigas redirecionam corretamente para os novos locais",
+            "why_check_2": "<strong>Detecção de Link Quebrado:</strong> Encontre erros 404 e cadeias de redirecionamento quebradas",
+            "why_check_3": "<strong>Problemas de Desempenho:</strong> Identifique cadeias de redirecionamento excessivas que retardam o carregamento da página",
+            "why_check_4": "<strong>Detecção de Loop de Redirecionamento:</strong> Capture redirecionamentos circulares que causam loops infinitos",
+            "why_check_5": "<strong>Auditorias de Segurança:</strong> Verifique os destinos de redirecionamento e evite redirecionamentos maliciosos",
+            "why_check_6": "<strong>Experiência do Usuário:</strong> Garanta que os visitantes cheguem ao conteúdo pretendido rapidamente",
+            "why_check_7": "<strong>Precisão do Analytics:</strong> Confirme se os códigos de rastreamento funcionam através das cadeias de redirecionamento",
+            "redirect_chains_title": "O que são Cadeias de Redirecionamento?",
+            "redirect_chains_desc": "Uma cadeia de redirecionamento ocorre quando uma URL redirecioniona para outra URL, que redireciona para outra, e assim por diante. Cada salto na cadeia adiciona latência e pode impactar o SEO. Exemplo: URL A → URL B → URL C → URL Final (3 redirecionamentos).",
+            "chain_recommended": "<strong>Recomendado:</strong> 0-1 redirecionamentos (direto ou salto único)",
+            "chain_acceptable": "<strong>Aceitável:</strong> 2-3 redirecionamentos (pequeno impacto no desempenho)",
+            "chain_problematic": "<strong>Problemático:</strong> 4+ redirecionamentos (problemas significativos de SEO e velocidade)",
+            "redirect_loops_title": "O que são Loops de Redirecionamento?",
+            "redirect_loops_desc": "Um loop de redirecionamento acontece quando a URL A redireciona para a URL B, que redireciona de volta para a URL A, criando um ciclo infinito. Os navegadores detectam isso e mostram um erro como \"Muitos redirecionamentos\" ou \"Loop de redirecionamento detectado\". Isso quebra completamente a página e deve ser corrigido imediatamente.",
+            "common_issues_title": "Problemas de Redirecionamento Comuns e Soluções",
+            "issue1_title": "Cadeias de Redirecionamento Longas",
+            "issue1_problem": "<strong>Problema:</strong> Múltiplos redirecionamentos atrasam o carregamento da página e diluem o valor do SEO",
+            "issue1_solution": "<strong>Solução:</strong> Atualize os redirecionamentos para apontarem diretamente para o destino final",
+            "issue2_title": "Tipos de Redirecionamento Mistos",
+            "issue2_problem": "<strong>Problema:</strong> Tipos de redirecionamento inconsistentes confundem os mecanismos de busca",
+            "issue2_solution": "<strong>Solução:</strong> Use 301 para mudanças permanentes, 302 apenas para temporárias",
+            "issue3_title": "Cadeias de Redirecionamento Quebradas",
+            "issue3_problem": "<strong>Problema:</strong> O redirecionamento aponta para uma página inexistente",
+            "issue3_solution": "<strong>Solução:</strong> Atualize o redirecionamento para um destino válido ou remova-o",
+            "issue4_title": "Loops HTTPS/HTTP",
+            "issue4_problem": "<strong>Problema:</strong> O site redireciona entre HTTP e HTTPS infinitamente",
+            "issue4_solution": "<strong>Solução:</strong> Corrija a configuração SSL e as regras do .htaccess",
+            "best_practices_title": "Melhores Práticas de SEO para Redirecionamentos",
+            "best_practice1": "• Use sempre redirecionamentos 301 para alterações permanentes de URL para preservar o valor do SEO",
+            "best_practice2": "• Minimize as cadeias de redirecionamento - redirecione diretamente para o destino final quando possível",
+            "best_practice3": "• Evite loops de redirecionamento a todo custo - eles quebram a experiência do usuário e o SEO",
+            "best_practice4": "• Atualize os links internos em vez de depender de redirecionamentos",
+            "best_practice5": "• Monitore o desempenho do redirecionamento regularmente com ferramentas como esta",
+            "best_practice6": "• Mantenha os redirecionamentos ativos por pelo menos 1 ano após as alterações de URL",
+            "best_practice7": "• Use redirecionamentos 302 com moderação e apenas para situações verdadeiramente temporárias"
+        },
+        "faq": {
+            "title": "Perguntas Frequentes",
+            "q1": "O que é uma cadeia de redirecionamento?",
+            "a1": "Uma cadeia de redirecionamento é uma série de redirecionamentos de uma URL para outra até que a página final seja alcançada. Cadeias longas tornam o site mais lento e desperdiçam o orçamento de rasteamento (crawl budget).",
+            "q2": "Um redirecionamento 301 afeta o ranking?",
+            "a2": "Um redirecionamento 301 preserva a maior parte do valor do link (poder de ranking), mas o uso excessivo em cadeias pode diluir esse efeito.",
+            "q3": "Como encontro loops de redirecionamento?",
+            "a3": "Use nossa ferramenta - ela destacará automaticamente um erro se detectar um caminho infinito.",
+            "q4": "Devo redirecionar de http para https?",
+            "a4": "Sim, é um passo obrigatório para segurança e SEO. Recomenda-se um redirecionamento 301 ao nível do servidor (Nginx ou Apache).",
+            "q5": "Quantos redirecionamentos são aceitáveis?",
+            "a5": "Idealmente, zero ou um. O Google geralmente segue até 5 saltos, mas cada salto aumenta o tempo de carregamento."
+        }
+    },
+    "slug-generator": {
+        "meta": {
+            "title": "URL Slug Generator - ferramenta online gratuita e amigável para SEO",
+            "description": "Gere slugs de URL limpos e amigáveis para SEO a partir de qualquer texto instantaneamente com nossa ferramenta gratuita.",
+            "h1": "Gerador de slugs de URL",
+            "subtitle": "Gere slugs de URL limpos e amigáveis para SEO a partir de qualquer texto instantaneamente"
+        },
+        "editor": {
+            "label_input": "Digite o Texto ou Título",
+            "ph_input": "Digite seu título ou texto..."
+        },
+        "content": {
+            "hero_title": "Gerador de Slug de URL - Crie URLs Amigáveis para SEO",
+            "hero_subtitle": "Gere slugs de URL limpos e amigáveis para SEO a partir de qualquer texto instantaneamente com nossa ferramenta gratuita de gerador de slugs. Converta títulos de blogs, cabeçalhos de artigos e nomes de páginas em URLs legíveis e otimizadas para mecanismos de busca.",
+            "what_title": "O que é um Slug de URL?",
+            "what_desc": "Um slug de URL é a parte de um endereço da web que vem depois do nome de domínio e identifica uma página específica. Por exemplo, em \"exemplo.com/como-criar-urls-amigaveis-para-seo\", o slug é \"como-criar-urls-amigaveis-para-seo\".",
+            "why_title": "Por que Usar Slugs Amigáveis para SEO?",
+            "why_list": [
+                "Melhores Rankings de SEO: Palavras-chave em URLs ajudam os mecanismos de busca a entender o conteúdo da página",
+                "Melhores Taxas de Cliques: URLs legíveis são mais confiáveis e clicáveis",
+                "Experiência do Usuário: URLs claras dizem aos usuários o que esperar antes de clicar",
+                "Compartilhamento Social: URLs limpas parecem profissionais quando compartilhadas em redes sociais",
+                "Link Building: URLs descritivas criam melhores textos âncora para backlinks",
+                "Acessibilidade: Leitores de tela podem interpretar melhor URLs significativas"
+            ],
+            "practices_title": "Boas Práticas de Slug de URL",
+            "practices_list": [
+                "Use letras minúsculas - Evite maiúsculas para consistência",
+                "Use hifens (-) - Separe palavras com hifens, não sublinhados",
+                "Mantenha curto - Tente no máximo 3-5 palavras",
+                "Inclua palavras-chave - Use palavras-chave relevantes para SEO",
+                "Seja descritivo - Descreva claramente o conteúdo da página",
+                "Evite caracteres especiais - Remova @, #, %, &, etc.",
+                "Evite palavras de parada (stop words) - Remova \"o\", \"e\", \"a\" quando possível",
+                "Evite números/dates - A menos que seja essencial para o conteúdo"
+            ],
+            "how_works_title": "Como Funciona Nosso Gerador de Slug",
+            "how_works_desc": "Nossa ferramenta segue as melhores práticas da indústria para criar slugs de URL perfeitos. Ela converte o texto para minúsculas, remove caracteres especiais e pontuação, substitui espaços por hifens, remove hifens consecutivos e apara hifens iniciais/finais.",
+            "uses_title": "Casos de Uso Comuns",
+            "uses": {
+                "blog": {
+                    "title": "📝 Postagens de Blog",
+                    "desc": "Converta títulos de artigos em URLs amigáveis para SEO para WordPress, Medium ou blogs personalizados"
+                },
+                "ecommerce": {
+                    "title": "🛒 E-commerce",
+                    "desc": "Crie URLs de produtos que incluam palavras-chave e nomes de produtos"
+                },
+                "docs": {
+                    "title": "📄 Documentação",
+                    "desc": "Gere URLs limpas para artigos de ajuda e páginas de documentação"
+                },
+                "landing": {
+                    "title": "🎯 Landing Pages",
+                    "desc": "Crie URLs ricas em palavras-chave para campanhas de marketing e landing pages"
+                }
+            },
+            "pro_tip_title": "💡 Dica Profissional de SEO",
+            "pro_tip_desc": "O Google recomenda o uso de hifens (-) em vez de sublinhados (_) em URLs porque hifens são tratados como separadores de palavras, enquanto sublinhados não são. Isso significa que \"seo-amigavel-urls\" é melhor que \"seo_amigavel_urls\" para otimização de mecanismos de busca.",
+            "faq_title": "Perguntas Frequentes",
+            "faq": {
+                "q1": "Devo usar hifens ou sublinhados em URLs?",
+                "a1": "Use sempre hifens (-). O Google trata hifens como separadores de palavras, mas trata sublinhados como conectores de palavras. Isso significa que \"melhores-praticas-seo\" é lido como três palavras separadas, enquanto \"melhores_praticas_seo\" é lido como uma única palavra.",
+                "q2": "Qual deve ser o comprimento de um slug de URL?",
+                "a2": "Mantenha os slugs entre 3-5 palavras (30-60 caracteres). URLs curtas são mais fáceis de lembrar, compartilhar e ranqueiam melhor nos resultados de busca. Remova palavras desnecessárias como \"o\", \"e\", \"a\" para manter os slugs concisos.",
+                "q3": "Posso alterar um slug de URL após a publicação?",
+                "a3": "Sim, mas não é recomendado. Alterar URLs pode quebrar links existentes e prejudicar o SEO. Se você precisar alterar um slug, sempre configure um redirecionamento 301 da URL antiga para a nova para preservar o valor do link (equity) e evitar erros 404.",
+                "q4": "Devo incluir palavras-chave no meu slug de URL?",
+                "a4": "Sim! Incluir palavras-chave relevantes no seu slug de URL ajuda os mecanismos de busca a entender seu conteúdo e pode melhorar os rankings. No entanto, mantenha de forma natural e descritiva - não force o uso de palavras-chave de forma não natural."
+            }
+        },
+        "js": {
+            "copied": "Copiado!"
+        }
+    },
+    "yahoo-serp-checker": {
+        "meta": {
+            "title": "Yahoo SERP Checker - Ferramenta online gratuita de classificação de SEO",
+            "description": "Verificador gratuito de SERP do Yahoo para rastrear os rankings do seu site no mecanismo de busca Yahoo.",
+            "h1": "Verificador SERP do Yahoo",
+            "subtitle": "Monitore os rankings de busca do Yahoo para suas palavras-chave e concorrentes"
+        },
+        "interface": {
+            "simulation_title": "Verificação de SERP do Yahoo ao Vivo",
+            "keyword_label": "Digite a Palavra-chave",
+            "location_label": "Localização (Cidade)",
+            "yahoo_domain_label": "Domínio do Yahoo",
+            "device_label": "Tipo de Dispositivo",
+            "device_desktop": "Desktop",
+            "device_mobile": "Celular (Smartphone)",
+            "no_login": "Sem necessidade de login",
+            "realtime_results": "Resultados em Tempo Real"
+        },
+        "form": {
+            "keyword_placeholder": "sua palavra-chave...",
+            "location_placeholder": "Digite a cidade (Opcional)",
+            "button": "Verificar SERP do Yahoo"
+        },
+        "domains": {
+            "us": "Yahoo.com (EUA/Global)",
+            "uk": "Yahoo.co.uk (Reino Unido)",
+            "ca": "Yahoo.ca (Canadá)",
+            "au": "Yahoo.com.au (Austrália)",
+            "de": "Yahoo.de (Alemanha)",
+            "fr": "Yahoo.fr (França)",
+            "it": "Yahoo.it (Itália)",
+            "es": "Yahoo.es (Espanha)",
+            "br": "Yahoo.com.br (Brasil)"
+        },
+        "content": {
+            "main_title": "Verificador de Ranking do Yahoo Avançado",
+            "main_subtitle": "Monitore seu desempenho de busca no Yahoo. Obtenha dados de ranking precisos e em tempo real para otimizar sua estratégia de SEO.",
+            "feature1_title": "100% Gratuito",
+            "feature1_desc": "Use esta ferramenta quantas vezes quiser. Sem custos ocultos.",
+            "feature2_title": "Verificações Ilimitadas",
+            "feature2_desc": "Verifique palavras-chave ilimitadas sem qualquer custo. Sem necessidade de registro ou assinatura.",
+            "feature3_title": "Dados em Tempo Real",
+            "feature3_desc": "Obtenha resultados de SERP instantâneos e em tempo real diretamente da Busca do Yahoo.",
+            "why_matters_title": "Por que os Rankings do Yahoo Importam",
+            "why_matters_desc": "Embora menor que o Google, o Yahoo ainda detém uma parcela significativa do tráfego de busca, particularmente em dados demográficos e regiões específicas como o Japão e partes dos EUA. Ignorar o Yahoo significa deixar tráfego potencial na mesa.",
+            "same_as_bing_title": "O Yahoo usa os resultados do Bing?",
+            "same_as_bing_desc": "Sim, a busca do Yahoo é em grande parte alimentada pelo <strong>índice de busca do Bing</strong>. Isso significa que otimizar para o Bing muitas vezes ajuda nos seus rankings do Yahoo. No entanto, a interface e os recursos do Yahoo diferem, portanto, verificar sua aparência real é crucial."
+        },
+        "faq": {
+            "title": "Perguntas Frequentes",
+            "q1": "Este Verificador de Ranking do Yahoo é gratuito?",
+            "a1": "Sim! Nosso **rastreador de ranking do yahoo** é 100% gratuito. Verifique seus rankings no Yahoo com a frequência que precisar, sem taxas ocultas ou assinaturas.",
+            "q2": "O Yahoo usa os resultados de busca do Bing?",
+            "a2": "Como o Yahoo é alimentado pelo Bing, foque nas melhores práticas de SEO do Bing: SEO técnico claro, backlinks autoritativos e conteúdo relevante. Usar esta ferramenta para monitorar o progresso é um ótimo começo."
+        }
+    },
+    "sitemap-validator": {
+        "meta": {
+            "title": "Validador de Sitemap - Verificador de Sitemap XML online gratuito",
+            "description": "Validador gratuito para verificar erros em sitemaps XML e validar URLs.",
+            "h1": "Validador de mapa de site",
+            "subtitle": "Valide seus sitemaps XML para erros e conformidade"
+        },
+        "editor": {
+            "title": "Validar Sitemap",
+            "btn_xml_input": "Entrada XML",
+            "btn_url_input": "Entrada URL",
+            "label_xml": "Colar XML",
+            "ph_xml": "Cole seu código XML aqui...",
+            "label_url": "URL do Sitemap",
+            "ph_url": "https://exemplo.com.br/sitemap.xml",
+            "help_url": "Digite a URL completa do arquivo sitemap.xml",
+            "btn_fetch": "Buscar",
+            "btn_validate": "Validar Sitemap",
+            "btn_validating": "Validando...",
+            "btn_clear": "Limpar",
+            "btn_example": "Carregar Exemplo",
+            "check_urls": "Verificar Acessibilidade"
+        },
+        "results": {
+            "title": "Resultados da Validação"
+        },
+        "content": {
+            "main_heading": "Domine a Estrutura do Seu Site",
+            "main_intro": "Garanta que seu site seja perfeitamente rastreável. Detecte erros e otimize rankings.",
+            "what_is_title": "O que é um Validador de Sitemap?",
+            "what_is_desc_1": "Uma ferramenta essencial que verifica erros de sintaxe e conformidade do protocolo.",
+            "what_is_desc_2": "Pense no sitemap como um mapa. Se houver erros, o Googlebot pode não encontrar suas páginas.",
+            "features_title": "Por que nos escolher?",
+            "feature_instant_title": "Análise Instantânea",
+            "feature_instant_desc": "Feedback imediato via URL ou XML direto.",
+            "feature_strict_title": "Validação Rigorosa",
+            "feature_strict_desc": "Verificamos contra o esquema oficial XSD.",
+            "feature_index_title": "Suporte a Índice",
+            "feature_index_desc": "Validamos arquivos de índice e sitemaps filhos.",
+            "importance_title": "Importância para SEO",
+            "importance_budget_title": "Orçamento de Rastreamento",
+            "importance_budget_desc": "Ajuda search engines a gastar o budget de forma inteligente.",
+            "importance_indexing_title": "Indexação Rápida",
+            "importance_indexing_desc": "Prioriza conteúdo novo e atualizado.",
+            "importance_discovery_title": "Descoberta de Páginas",
+            "importance_discovery_desc": "Encontra páginas órfãs.",
+            "importance_troubleshooting_title": "Solução de Problemas",
+            "importance_troubleshooting_desc": "Encontra erros 404 rapidamente.",
+            "guide_title": "Como Validar",
+            "guide_step1_title": "Insira a URL",
+            "guide_step1_desc": "Cole a URL do seu sitemap.",
+            "guide_step2_title": "Execute a Validação",
+            "guide_step2_desc": "Clique no botão para analisar.",
+            "guide_step3_title": "Revise os Resultados",
+            "guide_step3_desc": "Verde é bom, vermelho indica erros.",
+            "faq_title": "Perguntas Frequentes",
+            "faq_privacy_question": "Salva meus dados?",
+            "faq_privacy_answer": "Não, respeitamos sua privacidade.",
+            "faq_frequency_question": "Frequência de validação?",
+            "faq_frequency_answer": "Mensalmente ou após grandes mudanças.",
+            "faq_size_question": "Limite de tamanho?",
+            "faq_size_answer": "50MB ou 50.000 URLs.",
+            "faq_localhost_question": "Funciona em localhost?",
+            "faq_localhost_answer": "Sim, usando a aba de entrada XML."
+        }
+    },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Verificador Hreflang - Validador de tags online gratuito",
+            "description": "Valide suas tags hreflang para garantir que o Google mostre as URLs corretas de idioma ou região para seu público.",
+            "h1": "Verificador Hreflang",
+            "subtitle": "Ferramenta gratuita para extrair e validar atributos hreflang para SEO internacional."
+        },
+        "form": {
+            "url_label": "Insira URL para verificar",
+            "url_placeholder": "https://exemplo.com.br/pagina",
+            "user_agent_label": "User Agent",
+            "user_agent_default": "Padrão (Navegador)",
+            "user_agent_googlebot": "Googlebot (Desktop)",
+            "user_agent_bingbot": "Bingbot (Desktop)",
+            "button": "Verificar Tags Hreflang"
+        },
+        "content": {
+            "main_title": "Verificador de Tags Hreflang",
+            "main_subtitle": "Garanta que seu conteúdo internacional chegue ao público certo. Valide a implementação de hreflang e corrija erros comuns de SEO.",
+            "intro": "Tags Hreflang são essenciais para sites que atendem a vários idiomas ou países. Nossa ferramenta gratuita extrai e valida as tags `rel=\"alternate\" hreflang=\"x\"` do cabeçalho HTML da sua página e cabeçalhos HTTP. Verifica tags recíprocas (de retorno) para garantir que o Google e outros mecanismos de busca indexem corretamente seu conteúdo localizado.",
+            "features_title": "Por que verificar suas tags Hreflang?",
+            "feature1_title": "Validar tags recíprocas",
+            "feature1_desc": "Tags Hreflang devem funcionar em pares. Nossa ferramenta verifica automaticamente se a página A linka para a página B, e se a página B linka de volta para a página A.",
+            "feature2_title": "Detectar erros comuns",
+            "feature2_desc": "Encontre tags de retorno ausentes, códigos de idioma inválidos (ISO 639-1) e códigos de país incorretos (ISO 3166-1 Alpha-2).",
+            "feature3_title": "Prevenir problemas de SEO",
+            "feature3_desc": "A implementação incorreta de hreflang pode levar a problemas de conteúdo duplicado e à exibição de páginas de idioma errado nos resultados de busca.",
+            "how_title": "Como usar o verificador Hreflang",
+            "step1_title": "Insira URL",
+            "step1_desc": "Cole a URL completa da página que deseja analisar (ex. https://exemplo.com.br).",
+            "step2_title": "Selecione User Agent",
+            "step2_desc": "Recomenda-se verificar com Googlebot, mas você também pode verificar como navegador padrão.",
+            "step3_title": "Analise resultados",
+            "step3_desc": "Buscaremos a página e listaremos todos os links alternativos encontrados junto com seu status de verificação.",
+            "step4_title": "Corrija problemas",
+            "step4_desc": "Se aparecerem erros de 'Tag de retorno ausente', atualize suas páginas referenciadas para incluir o link recíproco.",
+            "faq_title": "Perguntas Frequentes",
+            "faq1_q": "O que é uma tag hreflang?",
+            "faq1_a": "Hreflang é um atributo HTML usado para especificar o idioma e a segmentação geográfica de uma página da web. Ele diz aos mecanismos de busca qual versão de uma página mostrar aos usuários em diferentes países ou idiomas.",
+            "faq2_q": "Por que as tags de retorno são importantes?",
+            "faq2_a": "O Google exige links de retorno para evitar que alguém reivindique arbitrariamente uma página em outro site como uma versão alternativa da sua. Se a página A linka para a página B, a página B deve linkar de volta para a página A.",
+            "faq3_q": "Esta ferramenta verifica a tag x-default?",
+            "faq3_a": "Sim, nossa ferramenta identifica e valida a tag hreflang `x-default`, usada para idiomas não correspondentes ou seletores de país estritos.",
+            "faq4_q": "Posso verificar hreflang em cabeçalhos HTTP?",
+            "faq4_a": "Sim! Verificamos tanto a seção HTML `<head>` quanto os cabeçalhos de resposta HTTP para atributos `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
+            "faq5_q": "O que acontece se eu tiver erros de hreflang?",
+            "faq5_a": "Os mecanismos de busca podem ignorar suas tags inválidas, levando a versões de idioma corretas não sendo mostradas aos usuários certos, ou possíveis penalidades por conteúdo duplicado.",
+            "faq6_q": "Esta ferramenta é gratuita?",
+            "faq6_a": "Sim, você pode realizar verificações ilimitadas gratuitamente para garantir que seu SEO internacional esteja perfeito."
+        }
+    }
+}

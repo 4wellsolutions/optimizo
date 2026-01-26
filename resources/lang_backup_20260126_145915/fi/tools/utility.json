@@ -1,0 +1,332 @@
+{
+    "password-generator": {
+        "meta": {
+            "title": "Secure Password Generator – ilmainen online-turvatyökalu",
+            "description": "Luo vahvoja, turvallisia ja satunnaisperusteisia salasanoja välittömästi mukautettavilla pituus- ja merkkivalinnoilla.",
+            "h1": "Suojattu salasanageneraattori",
+            "subtitle": "Luo vahvoja, satunnaisia salasanoja välittömästi"
+        },
+        "editor": {
+            "title": "Luo turvallinen salasanasi nyt",
+            "length_label": "Salasanan pituus:",
+            "chars": "merkkiä",
+            "strength": {
+                "weak": "8 (Heikko)",
+                "good": "16 (Hyvä)",
+                "strong": "32 (Vahva)",
+                "very_strong": "64 (Erittäin vahva)"
+            },
+            "include_label": "Sisällytä merkkityypit:",
+            "option_uppercase": "Isot kirjaimet (A-Z)",
+            "option_uppercase_desc": "Lisää suuria kirjaimia monimutkaisuuden lisäämiseksi",
+            "option_lowercase": "Pienet kirjaimet (a-z)",
+            "option_lowercase_desc": "Välttämätön salasanan vahvuudelle",
+            "option_numbers": "Numerot (0-9)",
+            "option_numbers_desc": "Lisää salasanan entropiaa",
+            "option_symbols": "Erikoismerkit (!@#$%)",
+            "option_symbols_desc": "Maksimaalinen suojaus",
+            "btn_generate": "Luo vahva salasana",
+            "result_title": "Luotu salasanasi",
+            "strength_score": "Turvallisuuspisteet:",
+            "btn_copy_text": "Kopioi salasana",
+            "btn_copy_final": "Kopioi leikepöydälle",
+            "btn_regenerate": "Luo uudelleen"
+        },
+        "content": {
+            "faq_hero_title": "Miksi käyttää turvallista salasanageneraattoriamme?",
+            "faq": {
+                "q1": "Kuinka turvallisia tämän työkalun luomat salasanat ovat?",
+                "a1": "Salasanageneraattorimme käyttää kryptografisesti turvallista satunnaislukugenerointia. Salasanat luodaan kokonaan selaimessasi JavaScriptin crypto.getRandomValues() -metodilla, mikä takaa todellisen satunnaisuuden ja maksimaalisen turvallisuuden. Emme koskaan tallenna, lähetä tai lokita luotuja salasanoja.",
+                "q2": "Mikä on ihanteellinen salasanan pituus?",
+                "a2": "Suosittelemme vähintään 16 merkkiä vahvan turvallisuuden saavuttamiseksi. Pidemmät salasanat (24-32 merkkiä) tarjoavat vielä paremman suojan raa'an voiman hyökkäyksiä vastaan. Generaattorimme tukee jopa 64 merkkiä.",
+                "q3": "Pitäisikö salasanaan sisällyttää erikoismerkkejä?",
+                "a3": "Kyllä, ehdottomasti! Erikoismerkkien (!@#$%^&*) sisällyttäminen lisää merkittävästi salasanan monimutkaisuutta. Salasana, jossa on isoja ja pieniä kirjaimia, numeroita ja symboleja, on eksponentiaalisesti vaikeampi murtaa kuin pelkkiä kirjaimia ja numeroita sisältävä salasana.",
+                "q4": "Miten muistan monimutkaiset salasanat?",
+                "a4": "Älä yritä opetella niitä ulkoa! Käytä luotettavaa salasananhallintaohjelmaa, kuten LastPass, 1Password, Bitwarden tai Dashlane, säilyttääksesi kaikki salasanasi turvallisesti. Salasananhallintaohjelmat salaavat salasanasi ja vaativat sinulta vain yhden pääsalasanan muistamista.",
+                "q5": "Onko online-salasanageneraattorin käyttö turvallista?",
+                "a5": "Kyllä, meidän salasanageneraattorimme on täysin turvallinen, koska kaikki salasanojen generointi tapahtuu paikallisesti selaimessasi. Salasanoja ei koskaan lähetetä palvelimillemme tai tallenneta mihinkään.",
+                "q6": "Kuinka usein salasanoja pitäisi vaihtaa?",
+                "a6": "Kriittisille tileille (sähköposti, pankki, työ) vaihda salasanat 3-6 kuukauden välein. Jos epäilet tietomurtoa tai saat turvallisuusvaroituksen, vaihda salasanasi välittömästi."
+            },
+            "seo": {
+                "title": "Tietoa salasanaturvallisuudesta ja salauksesta",
+                "p1": "Salasanaturvallisuus on verkkoturvallisuuden perusta. Vahva salasana toimii ensimmäisenä puolustuslinjana henkilötietojesi, taloudellisten tietojesi ja digitaalisen identiteettisi luvatonta käyttöä vastaan.",
+                "p2": "Salasanan vahvuutta mitataan sen entropialla - satunnaisuuden ja ennalta-arvaamattomuuden määrällä. 16 merkkiä pitkällä salasanalla, jossa on kaikkia merkkityyppejä, on huomattavasti korkeampi entropia kuin yksinkertaisella 8 merkin salasanalla.",
+                "p3": "Ilmainen salasanageneraattorityökalumme on suunniteltu kaikille - yksittäisistä henkilöistä, jotka suojaavat henkilökohtaisia tilejään, yrityksiin, jotka turvaavat työntekijöidensä pääsyä. Luo rajattomasti salasanoja täysin ilmaiseksi, ilman rekisteröitymistä."
+            }
+        },
+        "js": {
+            "generating": "Luodaan turvallista salasanaa...",
+            "strength": {
+                "very_strong": "✓ Erittäin vahva - Erinomainen salasanaturvallisuus!",
+                "strong": "✓ Vahva - Hyvä salasanaturvallisuus.",
+                "medium": "⚠ Keskivahva - Harkitse vahvempaa salasanaa.",
+                "weak": "⚠ Heikko - Ole hyvä ja luo vahvempi salasana."
+            },
+            "error_generating": "Virhe salasanan luonnissa. Yritä uudelleen",
+            "copied": "Kopioitu!",
+            "error_copy": "Salasanan kopiointi epäonnistui. Kopioi manuaalisesti."
+        }
+    },
+    "qr-code-generator": {
+        "meta": {
+            "title": "QR Code Generator - ilmainen online-mukautettu QR-luonnin",
+            "description": "Luo mukautettuja QR-koodeja välittömästi URL-osoitteille, tekstille, WiFi-yhteydelle ja muulle. Lataa korkealaatuisia PNG-kuvia.",
+            "h1": "QR-koodin generaattori",
+            "subtitle": "Luo mukautettuja QR-koodeja välittömästi mihin tahansa tarkoitukseen"
+        },
+        "editor": {
+            "title": "Luo QR-koodi",
+            "label_text": "Syötä teksti tai URL",
+            "ph_text": "Syötä teksti, URL tai mikä tahansa koodattava tieto...",
+            "label_size": "QR-koodin koko",
+            "opt_small": "Pieni (128x128)",
+            "opt_medium": "Keskikoko (256x256)",
+            "opt_large": "Suuri (512x512)",
+            "opt_xl": "Erittäin suuri (1024x1024)",
+            "btn_generate": "Luo QR-koodi",
+            "btn_download": "Lataa QR-koodi",
+            "preview_title": "Esikatselu",
+            "preview_placeholder": "QR-koodisi ilmestyy tähän"
+        },
+        "content": {
+            "hero_title": "Ilmainen QR-koodigeneraattori",
+            "hero_subtitle": "Luo mukautettuja QR-koodeja välittömästi mihin tahansa tarkoitukseen",
+            "p1": "Ilmainen QR-koodigeneraattorimme luo korkealaatuisia QR-koodeja välittömästi. Täydellinen yrityksille, markkinoijille, tapahtumajärjestäjille ja kaikille, jotka tarvitsevat tiedon nopeaa jakamista. Luo QR-koodeja URL-osoitteille, tekstille, yhteystiedoille, WiFi-tunnuksille ja muulle. Lataa useissa eri kooissa ja käytä missä tahansa - täysin ilmaiseksi, ilman rekisteröitymistä.",
+            "faq": {
+                "q1": "Ovatko QR-koodit pysyviä?",
+                "a1": "Kyllä! QR-koodit ovat staattisia ja pysyviä. Luomisen jälkeen ne toimivat aina, kunhan koodattu tieto (kuten URL) pysyy voimassa.",
+                "q2": "Ovatko QR-koodit pysyviä?",
+                "a2": "Kyllä! QR-koodit ovat staattisia ja pysyviä. Luomisen jälkeen ne toimivat aina, kunhan koodattu tieto (kuten URL) pysyy voimassa.",
+                "q3": "Mitä kokoa pitäisi käyttää tulostamiseen?",
+                "a3": "Käyntikorteissa käytä vähintään 256px. Julisteissa ja banderolleissa käytä 512px tai 1024px. Mitä suurempi tulostuskoko, sitä suurempi QR-koodin tulisi olla helpon skannauksen varmistamiseksi.",
+                "q4": "Voinko seurata QR-koodin skannauksia?",
+                "a4": "Työkalumme luo staattisia QR-koodeja ilman seurantaa. Jos haluat seurata skannauksia, käytä URL-lyhennyspalvelua analytiikalla ennen QR-koodin luomista tai käytä dynaamista QR-koodipalvelua.",
+                "q5": "Onko koodattavan tiedon määrälle rajoitusta?",
+                "a5": "QR-koodit voivat tallentaa jopa 4 296 aakkosnumeerista merkkiä, mutta parhaan skannaustuloksen saavuttamiseksi pidä tiedot lyhyinä. Alle 100 merkin URL-osoitteet toimivat parhaiten.",
+                "q6": "Vanhenevatko QR-koodit?",
+                "a6": "Ei, itse QR-koodit eivät vanhene koskaan. Jos QR-koodi kuitenkin linkittää URL-osoitteeseen, joka poistetaan tai muutetaan, QR-koodi ei enää toimi."
+            },
+            "features_title": "Ominaisuudet",
+            "features": {
+                "instant": {
+                    "title": "Välitön luominen",
+                    "desc": "Luo QR-koodeja sekunneissa reaaliaikaisella esikatselulla"
+                },
+                "sizes": {
+                    "title": "Useita kokoja",
+                    "desc": "Valitse väliltä 128px - 1024px mihin tahansa käyttötarkoitukseen"
+                },
+                "download": {
+                    "title": "Helppo lataus",
+                    "desc": "Lataa PNG-kuvana yhdellä klikkauksella"
+                },
+                "privacy": {
+                    "title": "Yksityisyys ensin",
+                    "desc": "Kaikki käsittely tapahtuu selaimessasi"
+                },
+                "free": {
+                    "title": "100 % ilmainen",
+                    "desc": "Ei rajoituksia, ei vesileimoja, ei rekisteröitymistä"
+                },
+                "compatibility": {
+                    "title": "Universaali yhteensopivuus",
+                    "desc": "Toimii kaikkien QR-koodinlukijoiden kanssa"
+                }
+            },
+            "uses_title": "🎯 Yleisimmät käyttötapaukset",
+            "uses": {
+                "urls": {
+                    "title": "🔗 Verkkosivujen URL-osoitteet",
+                    "desc": "Ohjaa käyttäjät verkkosivustollesi, laskeutumissivullesi tai verkkokauppaasi välittömästi"
+                },
+                "contact": {
+                    "title": "👤 Yhteystiedot",
+                    "desc": "Jaa vCard-kortteja, joissa on sähköposti-, puhelin- ja osoitetiedot"
+                },
+                "social": {
+                    "title": "👍 Sosiaalinen media",
+                    "desc": "Linkitä sosiaalisen median profiileihisi, YouTube-kanavallesi tai Instagramiin"
+                },
+                "tickets": {
+                    "title": "🎟️ Tapahtumaliput",
+                    "desc": "Luo skannattavia lippuja tapahtumiin ja konferensseihin"
+                },
+                "product": {
+                    "title": "📦 Tuotetiedot",
+                    "desc": "Lisää QR-koodeja tuotteisiin käyttöoppaita, teknisiä tietoja tai aitousvarmistusta varten"
+                },
+                "payment": {
+                    "title": "💳 Maksulinkit",
+                    "desc": "Mahdollista nopeat maksut PayPalin, Venmon tai kryptolompakoiden kautta"
+                }
+            },
+            "how_title": "📚 Käyttöohjeet",
+            "how_steps": {
+                "1": {
+                    "title": "Syötä tietosi:",
+                    "desc": "Kirjoita tai liitä teksti, URL tai tiedot, jotka haluat koodata"
+                },
+                "2": {
+                    "title": "Valitse koko:",
+                    "desc": "Valitse QR-koodin koko sen mukaan, missä käytät sitä"
+                },
+                "3": {
+                    "title": "Luo:",
+                    "desc": "Klikkaa \"Luo QR-koodi\" luodaksesi QR-koodin välittömästi"
+                },
+                "4": {
+                    "title": "Lataa:",
+                    "desc": "Klikkaa \"Lataa QR-koodi\" tallentaaksesi PNG-kuvan"
+                },
+                "5": {
+                    "title": "Käytä missä tahansa:",
+                    "desc": "Tulosta, jaa digitaalisesti tai lisää markkinointimateriaaleihin"
+                }
+            },
+            "best_practices_title": "💡 Parhaat käytännöt",
+            "best_practices": {
+                "test": {
+                    "title": "Testaa ennen tulostamista:",
+                    "desc": "Skannaa QR-koodisi aina varmistaaksesi, että se toimii oikein"
+                },
+                "size": {
+                    "title": "Käytä sopivaa kokoa:",
+                    "desc": "Suuremmat QR-koodit on helpompi skannata etäältä"
+                },
+                "contrast": {
+                    "title": "Varmista kontrasti:",
+                    "desc": "Tulosta valkoiselle tai vaalealle taustalle parhaan skannattavuuden varmistamiseksi"
+                },
+                "context": {
+                    "title": "Lisää konteksti:",
+                    "desc": "Sisällytä kutsu toimintaan, kuten \"Skannaa vieraillaksesi verkkosivustolla\""
+                },
+                "short": {
+                    "title": "Pidä URL-osoitteet lyhyinä:",
+                    "desc": "Lyhyemmät URL-osoitteet luovat yksinkertaisempia ja helpommin skannattavia koodia"
+                }
+            },
+            "faq_title": "Usein kysytyt kysymykset"
+        },
+        "js": {
+            "error_empty": "Syötä teksti tai URL QR-koodin luomiseksi",
+            "error_generating": "Virhe QR-koodin luonnissa.",
+            "error_no_code": "Ole hyvä ja luo QR-koodi ensin",
+            "error_image_not_found": "QR-koodikuvaa ei löytynyt"
+        }
+    },
+    "random-number-generator": {
+        "meta": {
+            "title": "Satunnaislukugeneraattori - ilmainen online-matematiikan työkalu",
+            "description": "Luo todellisia satunnaisia kokonaislukuja määrittämälläsi välillä. Hyödyllinen peleihin, arvontoihin ja kilpailuihin.",
+            "h1": "Satunnaislukugeneraattori",
+            "subtitle": "Luo todellisia satunnaisia kokonaislukuja määrittämälläsi välillä"
+        },
+        "editor": {
+            "label_min": "Pienin arvo",
+            "label_max": "Suurin arvo",
+            "label_count": "Määrä",
+            "btn_generate": "Luo numerot",
+            "label_result": "Tulos"
+        },
+        "js": {
+            "error_invalid": "Syötä kelvolliset numerot",
+            "error_min_max": "Minimi ei voi olla suurempi kuin Maksimi"
+        }
+    },
+    "username-checker": {
+        "meta": {
+            "title": "Käyttäjänimen saatavuustarkistus - ilmainen online-haku",
+            "description": "Tarkista käyttäjänimen saatavuus suurimmilla sosiaalisen median alustoilla välittömästi.",
+            "h1": "Käyttäjänimen saatavuustarkistus",
+            "subtitle": "Tarkista käyttäjänimen saatavuus kaikilla merkittävillä sosiaalisilla alustoilla"
+        },
+        "editor": {
+            "title_enter": "Syötä käyttäjänimi",
+            "label_username": "Käyttäjänimi",
+            "ph_username": "matti_meikalainen",
+            "help_username": "Syötä käyttäjänimi ilman @-merkkiä",
+            "btn_check": "Tarkista saatavuus",
+            "title_results": "Saatavuustulokset",
+            "btn_checking": "Tarkistetaan...",
+            "status_available": "Vapaa",
+            "status_taken": "Varattu",
+            "link_view": "Näytä profiili →"
+        },
+        "content": {
+            "p1": "Tarkista käyttäjänimen saatavuus kaikilla merkittävillä sosiaalisen median alustoilla välittömästi ilmaisella käyttäjänimitarkistimellamme. Löydä täydellinen nimi brändillesi Twitterissä, Instagramissa, GitHubissa, TikTokissa, Facebookissa, LinkedInissä, YouTubessa, Redditissä ja muualla. Turvaa brändisi identiteetti varaamalla sama käyttäjänimi kaikilla alustoilla ennen kuin joku muu ehtii. Täydellinen henkilöbrändäykseen, yritystileille ja vaikuttajamarkkinointiin.",
+            "platforms_title": "Tuetut alustat",
+            "platforms": {
+                "social": {
+                    "title": "Sosiaalinen media",
+                    "list": [
+                        "Twitter (X): Tarkista @kayttajanimi saatavuus",
+                        "Instagram: Löydä täydellinen nimesi",
+                        "TikTok: Varaa @kayttajanimen",
+                        "Facebook: Tarkista profiilin URL"
+                    ]
+                },
+                "professional": {
+                    "title": "Ammatillinen",
+                    "list": [
+                        "LinkedIn: Ammatillinen profiili",
+                        "GitHub: Kehittäjän käyttäjänimi",
+                        "Medium: Kirjoittajaprofiili",
+                        "YouTube: Kanavan nimi"
+                    ]
+                }
+            },
+            "best_practices_title": "Käyttäjänimien parhaat käytännöt",
+            "best_practices": {
+                "short": {
+                    "title": "Pidä se lyhyenä",
+                    "desc": "Tähtää 6-15 merkkiin helpon muistettavuuden ja kirjoitettavuuden varmistamiseksi"
+                },
+                "spell": {
+                    "title": "Helppo kirjoittaa",
+                    "desc": "Vältä monimutkaisia kirjoitusasuja, numeroita ja erikoismerkkejä"
+                },
+                "brand": {
+                    "title": "Brändin yhtenäisyys",
+                    "desc": "Käytä samaa käyttäjänimeä kaikilla alustoilla tunnistettavuuden vuoksi"
+                },
+                "trends": {
+                    "title": "Vältä trendejä",
+                    "desc": "Älä käytä trendisanoja, jotka saattavat vanhentua"
+                },
+                "seo": {
+                    "title": "SEO-ystävällinen",
+                    "desc": "Sisällytä asiaankuuluvia avainsanoja paremman löydettävyyden varmistamiseksi"
+                },
+                "fast": {
+                    "title": "Toimi nopeasti",
+                    "desc": "Varaa käyttäjänimesi nopeasti ennen kuin se viedään"
+                }
+            },
+            "tips_title": "Ammattilaisten vinkit käyttäjänimen valintaan",
+            "tips_list": {
+                "items": [
+                    "Tarkista saatavuus kaikilla alustoilla ennen lopullista päätöstä",
+                    "Huomioi tulevaisuuden liiketoiminnan laajentuminen valinnassa",
+                    "Tee siitä helposti lausuttava suullista markkinointia varten",
+                    "Vältä alaviivojen tai numeroiden käyttöä jos mahdollista",
+                    "Hanki käyttäjänimeäsi vastaava verkkotunnus (domain)"
+                ]
+            },
+            "faq_title": "Usein kysytyt kysymykset",
+            "faq": {
+                "q1": "Kuinka monta alustaa voin tarkistaa kerralla?",
+                "a1": "Käyttäjänimitarkistimemme tukee yli 10 merkittävää alustaa, mukaan lukien Twitter, Instagram, TikTok, Facebook, LinkedIn, GitHub, YouTube, Reddit, Medium ja Pinterest. Tarkista kaikki alustat samanaikaisesti yhdellä haulla.",
+                "q2": "Mitä jos haluamani käyttäjänimi on varattu?",
+                "a2": "Kokeile muunnelmia lisäämällä sijaintisi, toimialasi tai asiaankuuluva sana. Voit myös käyttää alaviivoja, pisteitä tai lyhenteitä. Työkalumme auttaa sinua testaamaan useita muunnelmia nopeasti.",
+                "q3": "Pitäisikö minun käyttää samaa käyttäjänimeä kaikkialla?",
+                "a3": "Kyllä! Saman käyttäjänimen käyttö kaikilla alustoilla vahvistaa brändi-identiteettiäsi, tekee sinusta helpommin löydettävän ja auttaa ristiinmarkkinoinnissa.",
+                "q4": "Voinko varata käyttäjänimen luomatta tiliä?",
+                "a4": "Ei, sinun on luotava tili jokaiselle alustalle varataksesi käyttäjänimen. Työkalumme vain tarkistaa saatavuuden - sinun on rekisteröidyttävä kullekin alustalle itse.",
+                "q5": "Kuinka usein käyttäjänimien saatavuus pitäisi tarkistaa?",
+                "a5": "Käyttäjänimien saatavuus muuttuu jatkuvasti. Jos löydät vapaan nimen, josta pidät, varaa se välittömästi kaikilla alustoilla. Suositut nimet voidaan viedä tunneissa tai jopa minuuteissa."
+            }
+        }
+    }
+}

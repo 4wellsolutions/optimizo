@@ -1,0 +1,850 @@
+{
+    "base64-to-image-converter": {
+        "meta": {
+            "title": "Decode Base64 to Image - Gratis online dekoder",
+            "description": "Konverter Base64 encoded strings back to images (PNG, JPG, GIF). Gratis online decoder and visualizer.",
+            "h1": "Afkod Base64 til billede",
+            "subtitle": "Konverter Base64 encoded strings back to images (PNG, JPG, GIF) instantly"
+        },
+        "input": {
+            "title": "Indsæt Base64 String",
+            "desc": "Indsæt your code below to visualize the image",
+            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
+            "btn_decode": "Decode Billede"
+        },
+        "result": {
+            "image_alt": "Decoded Billede",
+            "success": "Billede Decoded Succesfully",
+            "btn_download": "Download Billede",
+            "btn_clear": "Ryd Pattern"
+        },
+        "content": {
+            "title": "Decode Base64 to Billede",
+            "p1": "Found a long string of tilfældig tegn starting with <code>data:image/...</code> and don't know what it is? It's likely a Base64-encoded image.",
+            "p2": "Vores <strong>Base64 to Billede Decoder</strong> converts that text string back into a visible image file (PNG, JPG, GIF, etc.) that you can view and download to your computer.",
+            "features": {
+                "preview": {
+                    "title": "Øjeblikkelig Forhåndsvisning",
+                    "desc": "See the image immediately. We parse the binary data and render it on your screen."
+                },
+                "auto": {
+                    "title": "Auto-Detection",
+                    "desc": "We automatically detect the file format (PNG, JPEG, GIF) from the header of the Base64 string."
+                },
+                "download": {
+                    "title": "Download Fil",
+                    "desc": "Gem the decoded result as a real image file to your hard drive with one click."
+                }
+            },
+            "how_to": {
+                "title": "Hvordan Decode?",
+                "list": [
+                    "Indsæt your Base64 string into the textarea.",
+                    "We instantly attempt to read the string.",
+                    "If valid, the image appears on the left.",
+                    "Klik \"Download Billede\" to save it."
+                ]
+            },
+            "use_cases": {
+                "title": "Almindelig Brug Cases",
+                "list": [
+                    "Debugging: Tjeking what image data is being sent in API responses or stored in databases.",
+                    "Recovery: Extracting images embedded in CSS files or HTML templates.",
+                    "Verification: Ensuring a Base64 string is not corrupted."
+                ]
+            }
+        },
+        "js": {
+            "input_required": "Please paste a Base64 string first.",
+            "invalid_error": "Invalid Base64 string or unsupported image format."
+        }
+    },
+    "heic-to-jpg-converter": {
+        "meta": {
+            "title": "HEIC til JPG Converter - Gratis online iPhone-fotoværktøj",
+            "desc": "",
+            "description": "Konverter High Efficiency Billede Fil (HEIC/HEIF) photos from iPhone to standard JPG format. Gratis, private, client-side converter.",
+            "h1": "HEIC til JPG konverter",
+            "subtitle": "Konverter High Efficiency Billede Fil (HEIC/HEIF) photos from iPhone to standard JPG format"
+        },
+        "input": {
+            "title": "Upload HEIC Fil",
+            "desc": "Drag & drop your .heic or .heif file here",
+            "drop_title": "Drop HEIC file here",
+            "drop_desc": "Supports HEIC/HEIF (Max 20MB)"
+        },
+        "loading": {
+            "title": "Behandler HEIC file...",
+            "desc": "Larger files may take a few seconds."
+        },
+        "result": {
+            "image_alt": "Forhåndsvisning",
+            "converted_to": "Konvertered to:",
+            "btn_download": "Download JPG Billede"
+        },
+        "content": {
+            "title": "Konverter HEIC to JPG Instantly",
+            "p1": "Apple's High Efficiency Billede Format (HEIC) is great for saving space on your iPhone, but it can be a nightmare to open on Windows, Android, or older software. Vores <strong>HEIC to JPG Konverter</strong> solves this problem instantly.",
+            "p2": "We use avanceret local processing capabilities to konverter your photos without ever uploading them to a cloud server. Dette is the <strong>safest way</strong> to konverter personal photos.",
+            "features": {
+                "private": {
+                    "title": "100% Private",
+                    "desc": "Din personal photos stay on your device. We use client-side logic for zero-risk conversion."
+                },
+                "compatibility": {
+                    "title": "Broad Compatibility",
+                    "desc": "Konverter HEIC and HEIF files from any iOS version (iPhone/iPad) to universally accepted JPGs."
+                },
+                "hurtig": {
+                    "title": "Hurtig & Gratis",
+                    "desc": "Ingen software installation needed. Just drag, drop, and konverter in seconds."
+                }
+            },
+            "how_to": {
+                "title": "Hvordan Konverter HEIC to JPG?",
+                "list": [
+                    "Drag your .heic or .heif file into the upload zone.",
+                    "Den værktøj will automatically read and konverter the file using avanceret browser libraries.",
+                    "See a preview of your converted JPG image immediately.",
+                    "Klik the \"Download JPG Billede\" button to save it to your computer."
+                ]
+            },
+            "details": {
+                "title": "Technical Details",
+                "p1": "HEIC (High Efficiency Billede Container) uses modern compression methods to keep file sizes small. However, Windows and Android often struggle to open them.",
+                "p2": "Vores værktøj decodes the HEIC data and re-encodes it as a standardized JPEG image with 90% quality retention, ensuring your photos look great while being accessible everywhere."
+            },
+            "faq": {
+                "title": "Almindelige Spørgsmål",
+                "q1": "Can I konverter iPhone Live Photos?",
+                "a1": "You can konverter the still image part of the Live Photo if you transfer the .HEIC file to your computer first.",
+                "q2": "Is quality lost during conversion?",
+                "a2": "We use a high-quality setting (0.9 out of 1.0) to ensure minimal visual difference. JPG is a lossy format, but the difference is usually negligible to the human eye."
+            }
+        },
+        "js": {
+            "error": "Fejl converting HEIC file: "
+        }
+    },
+    "ico-converter": {
+        "meta": {
+            "title": "ICO Converter & Favicon Generator - Gratis online",
+            "desc": "",
+            "description": "Konverter images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Gratis online favicon generator.",
+            "h1": "ICO Converter & Favicon Generator",
+            "subtitle": "Konverter images to ICO format for website favicons with custom sizing"
+        },
+        "input": {
+            "title": "Upload Billede to Konverter",
+            "desc": "Drag & drop your PNG/JPG file",
+            "drop_title": "Drop image file here",
+            "drop_desc": "Hurtig conversion to .ico"
+        },
+        "editor": {
+            "original": "Original",
+            "image_alt": "Forhåndsvisning",
+            "favicon": "Favicon",
+            "size_label": "Icon Størrelse",
+            "output_format": "Output Format:",
+            "btn_download": "Download Favicon (.ico)"
+        },
+        "content": {
+            "title": "Gratis ICO Konverter & Favicon Generator",
+            "p1": "Creating a website? You need a favicon - that little icon that appears in browser tabs.",
+            "p2": "Vores <strong>ICO Konverter</strong> transforms any PNG or JPG image into a standard Microsoft `.ico` file. We support all common favicon sizes to ensure your brand looks sharp on every device.",
+            "features": {
+                "sizes": {
+                    "title": "Standard Størrelses",
+                    "desc": "Vælg from 16x16, 32x32, 48x48, 64x64, or 128x128 pixels. Eller select all!"
+                },
+                "resize": {
+                    "title": "Auto-Resizing",
+                    "desc": "Upload a large logo, and we'll automatically downscale it smoothly to fit the tiny icon format."
+                },
+                "multi": {
+                    "title": "Multi-Icon Support",
+                    "desc": "Modern .ico files can contain multiple sizes in one file. We handle that for you."
+                }
+            },
+            "how_to": {
+                "title": "Steps to Opret Favicon",
+                "list": [
+                    "Brug a square image (PNG/JPG) for best results.",
+                    "16x16 (Browser tabs), 32x32 (Taskbar), 48x48 (Desktop).",
+                    "See how it looks instantly.",
+                    "Get your `favicon.ico` file."
+                ]
+            },
+            "why": {
+                "title": "Hvorfor .ICO format?",
+                "p1": "While modern browsers support PNG favicons, the `.ico` format is still the standard for maximum compatibility across all operating systems and legacy browsers (like Internet Explorer)."
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid image"
+        }
+    },
+    "image-compressor": {
+        "meta": {
+            "title": "Billedkompressor online - Gratis billedstørrelsesreduktion",
+            "description": "Compress images online for free. Reduce JPG, PNG, and WebP file sizes while maintaining quality.",
+            "h1": "Billedkompressor",
+            "subtitle": "Reduce image file sizes without losing quality"
+        },
+        "editor": {
+            "label_upload": "Upload Billede",
+            "drop_title": "Drop your image here or click to browse",
+            "drop_subtitle": "Drag and drop your image or click to select from your device",
+            "supports": "Supports JPG, PNG, WebP formats",
+            "label_quality": "Compression Kvalitet:",
+            "title_original": "Original Billede",
+            "label_size": "Størrelse:",
+            "title_compressed": "Compressed Billede",
+            "label_saved": "Saved:",
+            "btn_download": "Download Compressed Billede"
+        },
+        "content": {
+            "p1": "Compress your images online for gratis with our powerful image compression tool. Reduce JPG, PNG, and WebP file sizes by up to 90% while maintaining excellent visual quality. Perfect for optimizing images for websites, social media, email attachments, and faster page loading times.",
+            "why_title": "Hvorfor Compress Billedes?",
+            "why_list": [
+                "Faster website loading times improve user experience and SEO",
+                "Reduce bandwidth usage and hosting costs",
+                "Optimize images for mobile devices and slow connections",
+                "Meet file size limits for email attachments and uploads",
+                "Improve Core Web Vitals and Google PageSpeed scores",
+                "Gem storage space on your device or server"
+            ],
+            "formats_title": "Understøttet Billede Formats",
+            "quality_title": "Understanding Compression Kvalitet",
+            "quality_list": [
+                "100% - Ingen compression, original quality (largest file size)",
+                "80-90% - High quality, minimal visible difference (recommended for most uses)",
+                "60-80% - Good quality, noticeable compression at high zoom",
+                "40-60% - Medium quality, visible artifacts but acceptable for web",
+                "10-40% - Low quality, significant quality loss (smallest file size)"
+            ],
+            "how_title": "How Billede Compression Works",
+            "how_desc": "Vores værktøj uses avanceret compression algorithms to reduce file size while preserving image quality. Til JPG images, we use lossy compression that removes imperceptible details. Til PNG, we optimize the color palette and use efficient encoding. Alle compression happens in your browser - your images never leave your device.",
+            "best_title": "Bedste Praksis for Billede Compression",
+            "best_list": [
+                "Start with high-quality original images for best results",
+                "Brug 80-90% quality for web images - perfect balance of size and quality",
+                "Compress images before uploading to websites or social media",
+                "Brug JPG for photos, PNG for graphics with transparency",
+                "Consider WebP format for modern browsers (smaller files)",
+                "Always preview compressed images before downloading",
+                "Keep original files as backup before compression"
+            ],
+            "privacy_title": "100% Private & Sikker",
+            "privacy_desc": "Alle image compression happens entirely in your browser using JavaScript. Din images are never uploaded to our servers, ensuring complete privacy and security. Din files never leave your device.",
+            "faq_title": "Ofte Stillede Spørgsmål",
+            "formats": {
+                "jpg": {
+                    "title": "JPG/JPEG",
+                    "desc": "Best for photographs and complex images with many colors. Lossy compression."
+                },
+                "png": {
+                    "title": "PNG",
+                    "desc": "Best for graphics, logos, and images with transparency. Lossless or lossy compression."
+                },
+                "webp": {
+                    "title": "WebP",
+                    "desc": "Modern format with superior compression. Smaller files than JPG/PNG with same quality."
+                }
+            },
+            "faq": {
+                "q1": "Will compressing images reduce quality?",
+                "a1": "Ja, but minimally. Ved 80-90% quality, the difference is imperceptible to the human eye. You can adjust the quality slider to find the perfect balance between file size and visual quality.",
+                "q2": "What's the difference between lossy and lossless compression?",
+                "a2": "Lossy compression (JPG) removes some image data to achieve smaller files, while lossless compression (PNG) reduces file size without losing any data. Lossy gives better compression but slight quality loss.",
+                "q3": "How much can I reduce image file size?",
+                "a3": "Typically 50-90% reduction depending on the original image and quality settings. Photos often compress more than graphics. WebP format provides the best compression.",
+                "q4": "Are my images uploaded to your server?",
+                "a4": "Ingen! Alle compression happens in your browser using JavaScript. Din images never leave your device, ensuring complete privacy and security.",
+                "q5": "What image formats are supported?",
+                "a5": "We support JPG/JPEG, PNG, and WebP formats. Disse cover 99% of web images. Den værktøj automatically detects the format and applies optimal compression."
+            }
+        }
+    },
+    "image-converter": {
+        "meta": {
+            "title": "Image Converter Online - Gratis Format Switcher",
+            "desc": "",
+            "description": "Konverter images between multiple formats (PNG, JPG, WEBP) easily and for free. Sikker, client-side conversion requiring no uploads.",
+            "h1": "Billedkonvertering",
+            "subtitle": "Konverter images between multiple formats (PNG, JPG, WEBP) easily and for free"
+        },
+        "input": {
+            "title": "Upload Din Billede",
+            "desc": "Drag & drop or click to select an image",
+            "drop_title": "Drop your image here",
+            "drop_desc": "Supports PNG, JPG, WEBP (Max 10MB)"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "target_format": "Target Format",
+            "quality": "Kvalitet (JPG/WEBP)",
+            "btn_convert": "Konverter & Download"
+        },
+        "content": {
+            "title": "Den Ultimate Gratis Online Billede Konverter",
+            "p1": "I today's digital landscape, working with images requires versatility. Whether you're a web developer needing WEBP for performance, a designer needing PNG for transparency, or a photographer needing universal JPG compatibility, our <strong>Billede Konverter</strong> is the all-in-one solution.",
+            "p2": "Forget about installing heavy software or uploading your private photos to unknown servers. Vores værktøj runs entirely in your browser, ensuring <strong>100% privacy and lightning-fast speeds</strong>.",
+            "features": {
+                "sikker": {
+                    "title": "Sikker & Private",
+                    "desc": "Din files never leave your device. Alle processing happens locally in your browser."
+                },
+                "øjeblikkelig": {
+                    "title": "Øjeblikkelig Conversion",
+                    "desc": "Ingen queuing or waiting. Powered by modern WebAssembly technology for speed."
+                },
+                "bulk": {
+                    "title": "Bulk Behandler",
+                    "desc": "Konverter unlimited images one by one without any usage restrictions or costs."
+                }
+            },
+            "how_to": {
+                "title": "Hvordan Konverter Billedes?",
+                "list": [
+                    "Drag your image file into the blue box or click to select from your device.",
+                    "Vælg your desired output format (PNG, JPG, or WEBP) from the dropdown.",
+                    "If choosing JPG or WEBP, use the slider to balance file size and quality.",
+                    "Klik the \"Konverter & Download\" button to save your formatted image instantly."
+                ]
+            },
+            "features_list": {
+                "title": "Key Funktioner",
+                "list": [
+                    "Cross-Format Support: Effortlessly switch between PNG, JPG, and WEBP.",
+                    "Transparency Control: PNG conversions preserve transparency, while JPG fills it with a white background.",
+                    "Responsive: Works perfectly on Desktops, Tablets, and Mobile phones.",
+                    "Ingen Limits: Ingen file size limits and no daily conversion caps."
+                ]
+            },
+            "faq": {
+                "title": "Ofte Stillede Spørgsmål",
+                "q1": "Is this værktøj free?",
+                "a1": "Ja, absolutely. We don't charge anything, and there are no hidden premium features.",
+                "q2": "Does it support transparency?",
+                "a2": "Ja! If you konverter to PNG or WEBP, transparency is preserved. Til JPG, transparent areas become white.",
+                "q3": "Are my images uploaded?",
+                "a3": "Ingen. Alle conversion logic runs in your own browser using JavaScript and Canvas APIs. We count privacy as our top feature.",
+                "q4": "Hvad er the best format?",
+                "a4": "Brug <strong>JPG</strong> for photos, <strong>PNG</strong> for graphics with sharp edges/transparency, and <strong>WEBP</strong> for web performance."
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid image file"
+        }
+    },
+    "image-to-base64-converter": {
+        "meta": {
+            "title": "Image to Base64 Converter - Gratis online strengværktøj",
+            "desc": "",
+            "description": "Konverter images to Base64 encoded strings for embedding in HTML or CSS. Gratis online værktøj supporting PNG, JPG, GIF.",
+            "h1": "Konverter billede til Base64-streng",
+            "subtitle": "Konverter images to Base64 encoded strings for embedding in HTML or CSS"
+        },
+        "input": {
+            "title": "Upload Billede",
+            "desc": "Drag & drop your image file here",
+            "drop_title": "Drop image file here",
+            "drop_desc": "Supports Alle Billede Formats"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "label_string": "Base64 String",
+            "btn_copy": "Kopier to Udklipsholder",
+            "char_count": "Character Count",
+            "mime_type": "MIME Type"
+        },
+        "content": {
+            "title": "Konverter Billede to Base64 String",
+            "p1": "Developers and web designers often need to embed images directly into HTML or CSS files to reduce HTTP requests.",
+            "p2": "Vores <strong>Billede to Base64 Konverter</strong> encodes your image file into a long string of tegn that represents the binary data. You can paste this string straight into your code.",
+            "features": {
+                "clipboard": {
+                    "title": "Udklipsholder Ready",
+                    "desc": "One-click copy. We format the output for HTML (`&lt;img src=\"...\"&gt;`) or CSS (`background: url(...)`)."
+                },
+                "requests": {
+                    "title": "Reduce Requests",
+                    "desc": "Embedding small icons and logos as Base64 eliminates the network overhead of fetching external image files."
+                },
+                "formats": {
+                    "title": "Enhver Format",
+                    "desc": "Works with PNG, JPG, GIF, WEBP, SVG, and even ICO files."
+                }
+            },
+            "how_to": {
+                "title": "Hvordan use?",
+                "list": [
+                    "Vælg your image file.",
+                    "Den værktøj immediately converts the file to a Data URI.",
+                    "Klik \"Kopier to Udklipsholder\" to grab the code.",
+                    "Insert it into your `src` attribute or CSS file."
+                ]
+            },
+            "use_cases": {
+                "title": "Hvornår to use Base64?",
+                "list": [
+                    "Small Billedes: Best for icons, spinners, and small logos (under 10KB).",
+                    "Single-Fil Apps: Hvornår you need to bundle everything into one HTML file (e.g., email templates).",
+                    "Offline Access: Ensures images load even without a network connection if the HTML is saved locally."
+                ]
+            }
+        },
+        "js": {
+            "copied": "Kopieret!"
+        }
+    },
+    "jpg-to-png-converter": {
+        "meta": {
+            "title": "JPG til PNG Converter - Gratis online gennemsigtigt værktøj",
+            "desc": "",
+            "description": "Konverter JPG images to PNG format instantly. 100% free, sikker client-side conversion, no file size limits.",
+            "h1": "JPG til PNG Konverter",
+            "subtitle": "Konverter JPG images to PNG format instantly with 100% gratis conversion"
+        },
+        "input": {
+            "title": "Upload JPG Billede",
+            "desc": "Drag & drop your JPG/JPEG file here",
+            "drop_title": "Drop JPG file here",
+            "drop_desc": "Supports JPG, JPEG (Max 10MB)"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "output_format": "Output Format:",
+            "format_short": "PNG",
+            "btn_convert": "Konverter to PNG & Download"
+        },
+        "content": {
+            "title": "Konverter JPG to PNG Instantly",
+            "p1": "JPG is the world's most popular image format, but it often lacks the versatility needed for modern web design. Af converting to PNG, you gain access to lossless compression and transparency support.",
+            "p2": "Vores <strong>JPG to PNG Konverter</strong> is designed for speed and privacy, handling everything directly in your browser without uploading your sensitive photos to any server.",
+            "features": {
+                "lossless": {
+                    "title": "Lossless Kvalitet",
+                    "desc": "Stop image degradation. PNG uses lossless compression to keep every pixel perfect during edits."
+                },
+                "private": {
+                    "title": "100% Private",
+                    "desc": "Fils are processed locally on your device. We never see, store, or upload your images."
+                },
+                "transparency": {
+                    "title": "Transparency Ready",
+                    "desc": "Konverter to the preferred format for logos, icons, and graphics that require transparent backgrounds."
+                }
+            },
+            "how_to": {
+                "title": "Hvordan Konverter JPG to PNG",
+                "list": [
+                    "Drag and drop your JPG file into the designated area.",
+                    "Den værktøj immediately reads the file ready for conversion.",
+                    "See exactly how your image looks before saving.",
+                    "Klik \"Konverter & Download\" to save your new PNG instantly."
+                ]
+            },
+            "faq": {
+                "title": "Ofte Stillede Spørgsmål",
+                "q1": "Is the quality better?",
+                "a1": "Konvertering to PNG stops <em>future</em> quality loss. It's best for images you plan to edit further or need to keep sharp.",
+                "q2": "Are there file limits?",
+                "a2": "Since we process files in your browser, the limit is determined by your device's memory, usually allowing files up to 50MB easily."
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid JPG image",
+            "converted_name": "converted-image"
+        }
+    },
+    "jpg-to-webp-converter": {
+        "meta": {
+            "title": "JPG til WebP Converter - Gratis online optimeringsværktøj",
+            "desc": "",
+            "description": "Konverter JPG images to the modern WebP format for superior compression and web performance. Gratis online tool.",
+            "h1": "JPG til WebP Konverter",
+            "subtitle": "Konverter JPG images to the modern WebP format for superior compression"
+        },
+        "input": {
+            "title": "Upload JPG Billede",
+            "desc": "Drag & drop your JPG file here",
+            "drop_title": "Drop JPG file here",
+            "drop_desc": "Supports JPG, JPEG (Max 10MB)"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "output_format": "Output Format:",
+            "format_short": "WEBP",
+            "quality": "Compression Kvalitet",
+            "btn_convert": "Konverter to WEBP & Download"
+        },
+        "content": {
+            "title": "Konverter JPG to WebP for Better Performance",
+            "p1": "WebP is a modern image format that provides superior lossless and lossy compression for images on the web. Af converting JPG to WebP, developers and webmasters can opret smaller, richer images that make the web faster.",
+            "p2": "Vores <strong>JPG to WebP Konverter</strong> helps you optimize your images instantly in the browser, reducing file size by up to 30% compared to JPEG without standard quality loss.",
+            "features": {
+                "faster": {
+                    "title": "Faster Indlæser",
+                    "desc": "WebP images are significantly smaller than JPGs, helping your website load faster and improving SEO scores."
+                },
+                "quality": {
+                    "title": "High Kvalitet",
+                    "desc": "Maintain visual fidelity while reducing file weight. Perfect for photographs and complex web graphics."
+                },
+                "sikker": {
+                    "title": "Sikker Behandler",
+                    "desc": "Alle conversions happen locally. Din sensitive images never leave your computer."
+                }
+            },
+            "how_to": {
+                "title": "Hvordan Konverter JPG to WebP",
+                "list": [
+                    "Vælg or drag & drop your JPG image.",
+                    "Brug the quality slider to balance size vs quality.",
+                    "See the result in real-time.",
+                    "Gem your optimized WebP image."
+                ]
+            },
+            "faq": {
+                "title": "Ofte Stillede Spørgsmål",
+                "q1": "Do all browsers support WebP?",
+                "a1": "Ja, all modern browsers (Chrome, Firefox, Safari, Edge) fully support WebP images.",
+                "q2": "Is WebP better for SEO?",
+                "a2": "Absolutely. Google prefers WebP because it loads faster, improving your Core Web Vitals score."
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid JPG image",
+            "converted_name": "converted-image"
+        }
+    },
+    "png-to-jpg-converter": {
+        "meta": {
+            "title": "PNG til JPG Converter - Gratis online billedværktøj",
+            "desc": "",
+            "description": "Konverter PNG images to JPG format for smaller file sizes. Gratis online converter.",
+            "h1": "PNG til JPG konverter",
+            "subtitle": "Konverter PNG images to JPG format for smaller file sizes instantly"
+        },
+        "input": {
+            "title": "Upload PNG Billede",
+            "desc": "Drag & drop your PNG file here",
+            "drop_title": "Drop PNG file here",
+            "drop_desc": "Supports PNG (Max 10MB)"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "note": "Note:",
+            "note_text": "Transparent backgrounds will be converted to white.",
+            "output_format": "Output Format:",
+            "btn_convert": "Konverter to JPG & Download"
+        },
+        "content": {
+            "title": "Compress PNG to JPG Instantly",
+            "p1": "PNG files are great for quality, but they can be massive. If you're uploading photos to a website or sending them via email, JPG is often the better choice.",
+            "p2": "Vores <strong>PNG to JPG Konverter</strong> drastically reduces file size by using JPEG compression. We automatically handle transparent backgrounds by filling them with white, ensuring your images look perfect.",
+            "features": {
+                "size": {
+                    "title": "Drastic Størrelse Reduction",
+                    "desc": "Reduce file sizes by up to 80% with minimal loss in visual quality."
+                },
+                "sikker": {
+                    "title": "Sikker & Private",
+                    "desc": "Local browser processing means your photos are never uploaded to the cloud."
+                },
+                "smart": {
+                    "title": "Smart Conversion",
+                    "desc": "Intelligent background handling converts transparency to a clean white matte."
+                }
+            },
+            "how_to": {
+                "title": "Steps to Konverter",
+                "list": [
+                    "Vælg a PNG image from your device.",
+                    "Den værktøj instantly processes the image.",
+                    "Tjek the preview (transparent areas will now be white).",
+                    "Download your optimized JPG file."
+                ]
+            },
+            "why": {
+                "title": "Hvornår to use JPG?",
+                "list": [
+                    "Photographs: JPG is designed for complex, real-world images.",
+                    "Web Uploads: Many forms only accept .jpg or .jpeg.",
+                    "Saving Space: If you have thousands of images, JPG saves GBs of storage."
+                ]
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid PNG image"
+        }
+    },
+    "png-to-webp-converter": {
+        "meta": {
+            "title": "PNG til WebP Converter - Gratis online webværktøj",
+            "desc": "",
+            "description": "Konverter PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.",
+            "h1": "PNG til WebP Converter",
+            "subtitle": "Konverter PNG images to WebP to reduce file size while maintaining transparency"
+        },
+        "input": {
+            "title": "Upload PNG Billede",
+            "desc": "Drag & drop your PNG file here",
+            "drop_title": "Drop PNG file here",
+            "drop_desc": "Supports PNG (Max 10MB)"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "output_format": "Output Format:",
+            "quality": "Compression Kvalitet",
+            "btn_convert": "Konverter to WEBP & Download"
+        },
+        "content": {
+            "title": "Optimize Billedes with PNG to WebP",
+            "p1": "Want faster website load times? Konvertering your PNGs to WebP is the #1 recommendation from Google PageSpeed Insights.",
+            "p2": "Vores værktøj compresses your PNG images into the modern WebP format, reducing file size by up to <strong>30-50%</strong> while keeping the background transparent and the quality sharp.",
+            "features": {
+                "smaller": {
+                    "title": "Significantly Smaller",
+                    "desc": "WebP offers superior compression. Gem bandwidth and storage space instantly."
+                },
+                "transparency": {
+                    "title": "Transparency Kept",
+                    "desc": "Unlike converting to JPG, switching from PNG to WebP preserves your alpha channel (background transparency)."
+                },
+                "adjustable": {
+                    "title": "Adjustable Kvalitet",
+                    "desc": "You control the balance. Vælg 90% for high quality or 70% for maximum savings."
+                }
+            },
+            "how_to": {
+                "title": "Hvordan Konverter?",
+                "list": [
+                    "Drag and drop your file.",
+                    "Brug the slider. We recommend 80-90% for a good balance.",
+                    "Klik the \"Konverter\" button.",
+                    "Din lighter .webp file is ready."
+                ]
+            },
+            "why": {
+                "title": "Hvorfor WebP?",
+                "p1": "WebP is a modern image format developed by Google.",
+                "list": [
+                    "SEO Boost: Faster sites rank better on Google.",
+                    "Mobile Friendly: Uses less data for mobile visitors.",
+                    "Support: Understøttet by Chrome, Firefox, Safari, Edge, and all modern browsers."
+                ]
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid PNG image"
+        }
+    },
+    "svg-to-jpg-converter": {
+        "meta": {
+            "title": "SVG til JPG Converter - Gratis online vektorværktøj",
+            "desc": "",
+            "description": "Konverter SVG vector files to JPG images online. Auto-fills transparent backgrounds with white for perfect JPG output.",
+            "h1": "SVG til JPG konverter",
+            "subtitle": "Konverter SVG vector files to JPG images online with auto-fill backgrounds"
+        },
+        "input": {
+            "title": "Upload SVG Fil",
+            "desc": "Drag & drop your SVG file here",
+            "drop_title": "Drop SVG file here",
+            "drop_desc": "Supports SVG, SVGZ (Max 10MB)"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "note": "Note:",
+            "note_text": "Transparent backgrounds will be filled with white color.",
+            "output_format": "Output Format:",
+            "scale_label": "Opløsning Multiplier (Scale)",
+            "scale_1": "1x (Original Størrelse)",
+            "scale_2": "2x (High Res)",
+            "scale_4": "4x (Ultra Res)",
+            "btn_convert": "Konverter to JPG & Download"
+        },
+        "content": {
+            "title": "Konverter SVG to JPG Format",
+            "p1": "Need to use a logo in a document or on a website that doesn't accept vector files? Vores <strong>SVG to JPG Konverter</strong> is the answer.",
+            "p2": "It creates a solid, high-compatibility image file from your vector source. We automatically handle transparency by adding a clean white background, ensuring your graphic looks professionel on any medium.",
+            "features": {
+                "compatibility": {
+                    "title": "Maksimum Compatibility",
+                    "desc": "JPG is opened by literally every digital device and software created in the last 30 years."
+                },
+                "resolution": {
+                    "title": "4x High Opløsning",
+                    "desc": "Scale up your SVG before saving to ensure your JPG is sharp, not blurry."
+                },
+                "sikker": {
+                    "title": "Sikker Client-Side",
+                    "desc": "Behandler happens in your browser. We never see your files."
+                }
+            },
+            "how_to": {
+                "title": "Let Instructions",
+                "list": [
+                    "Klik \"Upload\" or drag your file to the center box.",
+                    "Vælg a scaling factor (e.g., 2x or 4x) for higher quality results.",
+                    "Observe the image. Note that transparent backgrounds are now white.",
+                    "Klik \"Konverter to JPG & Download\"."
+                ]
+            },
+            "why": {
+                "title": "Hvorfor choose JPG over PNG for Vectors?",
+                "p1": "While PNG supports transparency, JPG generates smaller file sizes for complex, colorful images.",
+                "list": [
+                    "Smaller Fils: Better for emails and attachments.",
+                    "Ingen Transparency Issues: Nogle viewers render transparency as black. JPG forces a white background, ensuring your logo is legible."
+                ]
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid SVG image"
+        }
+    },
+    "svg-to-png-converter": {
+        "meta": {
+            "title": "SVG til PNG Converter - Gratis online rasterværktøj",
+            "desc": "",
+            "description": "Konverter Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don't support vector files.",
+            "h1": "SVG til PNG konverter",
+            "subtitle": "Konverter Scalable Vector Graphics (SVG) to PNG images instantly"
+        },
+        "input": {
+            "title": "Upload SVG Fil",
+            "desc": "Drag & drop your SVG file here",
+            "drop_title": "Drop SVG file here",
+            "drop_desc": "Supports SVG, SVGZ (Max 10MB)"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "checkerboard": "Tjekerboard background indicates transparency",
+            "output_format": "Output Format:",
+            "scale_label": "Opløsning Multiplier (Scale)",
+            "scale_1": "1x (Original Størrelse)",
+            "scale_2": "2x (High Res)",
+            "scale_4": "4x (Ultra Res)",
+            "btn_convert": "Konverter to PNG & Download"
+        },
+        "content": {
+            "title": "Rasterize SVG to PNG High-Res",
+            "p1": "Scalable Vector Graphics (SVG) are perfect for the web, but impossible to use on social media, in Word documents, or as email attachments.",
+            "p2": "Vores <strong>SVG to PNG Konverter</strong> allows you to turn your vector logo or icon into a high-quality, transparent PNG image. Med our unique <strong>scaling feature</strong>, you can produce ultra-high-resolution images without any pixelation.",
+            "features": {
+                "transparency": {
+                    "title": "Transparency Preserved",
+                    "desc": "Unlike JPG, PNG keeps the background transparent. Perfect for logos and overlays."
+                },
+                "scaling": {
+                    "title": "Up to 4x Scaling",
+                    "desc": "Eksporter at 4x the original size. Get crisp edges even for large print formats."
+                },
+                "browser": {
+                    "title": "Browser-Based",
+                    "desc": "Hurtig and secure. Ingen files are uploaded to any server."
+                }
+            },
+            "how_to": {
+                "title": "Hvordan Konverter SVG to PNG?",
+                "list": [
+                    "Drop your `.svg` file into the upload area.",
+                    "Vælg `1x`, `2x`, or `4x` from the dropdown. Higher is better for quality.",
+                    "Tjek the preview image on the left. Den checkerboard indicates transparency.",
+                    "Hit the button to generer and download your PNG."
+                ]
+            },
+            "why": {
+                "title": "Hvorfor Konverter Vectors?",
+                "p1": "Vectors are mathematical formulas, while PNGs are grids of pixels. You need pixels for:",
+                "list": [
+                    "Profil pictures (Twitter/LinkedIn often reject SVG).",
+                    "Embedding in emails (SVG support is poor).",
+                    "Using in video editors or simpel graphic tools (Canva, Paint)."
+                ]
+            },
+            "faq": {
+                "title": "",
+                "q1": "",
+                "a1": "",
+                "q2": "",
+                "a2": ""
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid SVG image"
+        }
+    },
+    "webp-to-jpg-converter": {
+        "meta": {
+            "title": "WebP til JPG Converter - Gratis online billedværktøj",
+            "desc": "",
+            "description": "Konverter WebP images to standard JPG format for broad compatibility. Gratis, fast, and sikker converter.",
+            "h1": "WebP til JPG konverter",
+            "subtitle": "Konverter WebP images to standard JPG format for broad compatibility"
+        },
+        "input": {
+            "title": "Upload WEBP Billede",
+            "desc": "Drag & drop your WEBP file here",
+            "drop_title": "Drop WEBP file here",
+            "drop_desc": "Supports WEBP (Max 10MB)"
+        },
+        "editor": {
+            "image_alt": "Forhåndsvisning",
+            "note": "Note:",
+            "note_text": "Transparent backgrounds (common in WEBP) will be verified to white.",
+            "output_format": "Output Format:",
+            "btn_convert": "Konverter to JPG & Download"
+        },
+        "content": {
+            "title": "WebP to JPG: Den Compatibility Fixer",
+            "p1": "WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older image viewers, or upload it to platforms that only accept JPG.",
+            "p2": "Vores <strong>WebP to JPG Konverter</strong> bridges this gap. It takes your highly optimized WebP images and transforms them into the universally compatible JPEG format in milliseconds.",
+            "features": {
+                "universal": {
+                    "title": "Universal Support",
+                    "desc": "JPG works everywhere: Word docs, PowerPoint, legacy software, and every social media platform."
+                },
+                "sikker": {
+                    "title": "Sikker Behandler",
+                    "desc": "We don't see your files. Den conversion is performed locally by your web browser."
+                },
+                "smart": {
+                    "title": "Smart Backgrounds",
+                    "desc": "Automatically detects transparent pixels in WebP and fills them with a clean white background."
+                }
+            },
+            "how_to": {
+                "title": "Step-by-Step Guide",
+                "list": [
+                    "Klik the box or drag your WebP image onto the page.",
+                    "Den værktøj will display a preview of your image.",
+                    "Klik the \"Konverter to JPG\" button. Den system handles transparency and compression automatically.",
+                    "Din new .jpg file will download instantly."
+                ]
+            },
+            "why": {
+                "title": "Hvorfor Konverter WebP?",
+                "list": [
+                    "Editing: Many desktop editors typically don't support WebP out of the box.",
+                    "Email: Outlook and other email clients might not render WebP inline images correctly.",
+                    "Printing: Udskriv shops often require standard JPG or TIFF files."
+                ]
+            },
+            "faq": {
+                "title": "FAQ",
+                "q1": "What happens to transparent backgrounds?",
+                "a1": "Since JPG doesn't support transparency, our værktøj replaces transparent areas with white. Dette is perfect for product photos and logos.",
+                "q2": "Is it safe?",
+                "a2": "Ja. Unlike other converters that upload your file to a server, this værktøj runs 100% on your device. Din data remains private."
+            }
+        },
+        "js": {
+            "invalid_image": "Please upload a valid WEBP image"
+        }
+    }
+}
