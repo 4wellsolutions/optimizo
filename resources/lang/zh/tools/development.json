@@ -7,92 +7,123 @@
             "subtitle": "瞬间对您的数据进行 Base64 编码或解码"
         },
         "editor": {
-            "label_input": "输入数据",
-            "ph_input": "在此粘贴或输入内容...",
+            "tab_encode": "编码为 Base64",
+            "tab_decode": "从 Base64 解码",
+            "label_encode": "输入要编码的文本",
+            "ph_encode": "在此输入您的文字...",
+            "desc_encode": "输入任意文本将其转换为 Base64 格式",
             "btn_encode": "编码",
+            "label_decode": "输入Base64进行解码",
+            "ph_decode": "输入 Base64 编码的字符串...",
+            "desc_decode": "输入 Base64 编码文本以将其解码回纯文本",
             "btn_decode": "解码",
-            "btn_clear": "清空",
-            "label_output": "结果",
-            "ph_output": "处理后的结果将显示在此处...",
+            "result_title": "结果",
             "btn_copy": "复制结果"
         },
         "content": {
-            "hero_title": "免费在线 Base64 编码解码器",
-            "hero_subtitle": "最快速、最安全的方式来处理您的 Base64 数据",
-            "p1": "我们的免费 Base64 编码解码器是一款功能强大的在线工具，专为开发人员、IT 专业人员和数据分析师打造。它可以轻松地在纯文本或二进制数据与 Base64 格式之间转换。无论您是为了安全传输而处理 URL、对二进制文件进行编码，还是调试编码后的字符串，我们的工具都能在您的浏览器中直接处理，确保速度和 100% 的隐私。",
             "what_title": "什么是 Base64 编码？",
             "what_desc": "Base64 是一种将二进制数据转换为 64 个字符的 ASCII 字符串格式的编码方案。它常用于在支持文本的环境（如 HTML、CSS 和 JSON）中嵌入数据。Base64 常被用来处理图像、Cookie 以及在不需要对数据进行压缩的情况下确保数据能够安全通过网络传输。",
-            "features_title": "功能特性",
             "features": {
-                "fast": {
-                    "title": "即时转换",
-                    "desc": "在几毫秒内即可获得编码或解码结果"
-                },
                 "secure": {
                     "title": "隐私至上",
                     "desc": "所有数据处理均在您的浏览器本地完成，没有任何数据被上传"
                 },
-                "copy": {
-                    "title": "一键复制",
-                    "desc": "即时将转换后的结果复制到剪贴板"
+                "instant": {
+                    "title": "即时转换",
+                    "desc": "通过客户端处理在几毫秒内对 Base64 数据进行编码或解码"
                 },
-                "universal": {
-                    "title": "全球支持",
-                    "desc": "支持所有字符集，包括多字节 Unicode 编码"
-                },
-                "free": {
-                    "title": "100% 免费",
-                    "desc": "无限制，无需注册，没有任何隐藏费用"
-                },
-                "responsive": {
-                    "title": "完全自适应",
-                    "desc": "在任何设备上（无论是手机、平板还是电脑）都能完美运行"
+                "easy": {
+                    "title": "便于使用",
+                    "desc": "简单的选项卡式界面，用于编码和解码，一键复制"
                 }
             },
-            "uses_title": "常见使用场景",
+            "how_to": {
+                "title": "如何使用 Base64 编码器/解码器",
+                "encode": {
+                    "title": "编码文本",
+                    "step1": "单击“编码为 Base64”选项卡",
+                    "step2": "在输入区域粘贴或键入文本",
+                    "step3": "单击“编码为 Base64”按钮",
+                    "step4": "复制Base64编码结果"
+                },
+                "decode": {
+                    "title": "解码Base64",
+                    "step1": "单击“从 Base64 解码”选项卡",
+                    "step2": "将 Base64 字符串粘贴到输入区域",
+                    "step3": "单击“从 Base64 解码”按钮",
+                    "step4": "复制解码后的纯文本结果"
+                }
+            },
             "uses": {
-                "images": {
-                    "title": "Data URI 中的图像",
-                    "desc": "将图像转换为 Base64，以便直接在 HTML 或 CSS 中引用，从而减少 HTTP 请求。"
+                "title": "常见 Base64 用例",
+                "api": {
+                    "title": "API认证",
+                    "desc": "在 HTTP 标头和 API 请求中对基本身份验证的凭据进行编码。"
                 },
-                "url": {
-                    "title": "URL 编码",
-                    "desc": "对复杂的 URL 参数进行 Base64 编码，以确保它们在网络传输中不被破坏。"
+                "data_uri": {
+                    "title": "数据 URI",
+                    "desc": "使用 Base64 数据 URI 将图像、字体和文件直接嵌入 HTML、CSS 或 JSON。"
                 },
-                "binary": {
-                    "title": "二进制数据传输",
-                    "desc": "在只支持基于文本传输的协议（如电子邮件或 JSON）中传输二进制文件。"
+                "email": {
+                    "title": "电子邮件附件",
+                    "desc": "对 MIME 电子邮件中的二进制附件进行编码以实现安全传输。"
                 },
-                "debugging": {
-                    "title": "开发调试",
-                    "desc": "在 Web 应用程序开发中快速解码来自 API 或令牌的 Base64 字符串。"
+                "storage": {
+                    "title": "数据存储",
+                    "desc": "以基于文本的格式（例如 JSON、XML 或数据库）存储二进制数据。"
                 }
             },
-            "how_title": "如何使用 Base64 编解码器",
-            "how_steps": {
-                "1": {
-                    "title": "粘贴输入内容",
-                    "desc": "在“输入数据”框中输入或粘贴您的文本。"
-                },
-                "2": {
-                    "title": "选择操作",
-                    "desc": "点击“编码”将文本转换为 Base64，或点击“解码”将其转回。"
-                },
-                "3": {
-                    "title": "获取结果",
-                    "desc": "点击“复制结果”按钮即可在您的项目中使用处理后的内容。"
-                }
+            "bottom": {
+                "h1": "Base64 编码器和解码器",
+                "subtitle": "即时编码和解码 Base64 数据",
+                "desc": "Base64 是一种二进制到文本的编码方案，可将二进制数据转换为 ASCII 文本格式。我们的免费 Base64 编码器和解码器可帮助开发人员、系统管理员和 IT 专业人员将文本编码为 Base64 或立即将 Base64 解码回可读文本。非常适合 API 身份验证、数据 URI、电子邮件附件和安全数据传输。所有处理都在您的浏览器中进行，以确保完全隐私。",
+                "works_title": "🔄 Base64 的工作原理",
+                "works_encoding": "使用 64 个字符将二进制数据转换为 ASCII 文本",
+                "works_encoding_sub": "A-Z、a-z、0-9、+、/（和 = 用于填充）",
+                "works_decoding": "将 Base64 文本转换回原始二进制数据",
+                "works_decoding_sub": "完美逆转编码过程",
+                "cases_title": "✅ 常见用例",
+                "case_api": "API认证",
+                "case_api_desc": "在 HTTP 标头中对基本身份验证的凭据进行编码",
+                "case_uri": "数据 URI",
+                "case_uri_desc": "直接在 HTML/CSS 中嵌入图像和文件",
+                "case_email": "电子邮件附件",
+                "case_email_desc": "对二进制文件进行编码以用于电子邮件传输",
+                "case_url": "网址参数",
+                "case_url_desc": "在 URL 中安全地传递二进制数据",
+                "case_storage": "数据存储",
+                "case_storage_desc": "将二进制数据存储在纯文本数据库中",
+                "case_web": "网页开发",
+                "case_web_desc": "对 JSON、XML 和配置文件进行编码",
+                "best_practices_title": "💡 Base64 最佳实践",
+                "best_practices_list": [
+                    "Base64 使数据大小增加约 33%",
+                    "不适合加密 - 使用适当的加密算法",
+                    "非常适合在纯文本系统中编码二进制数据",
+                    "在使用解码数据之前始终验证它",
+                    "对 URL 使用 URL 安全 Base64（将 +/= 替换为 -_）"
+                ]
             },
-            "faq_title": "常见问题解答",
             "faq": {
+                "title": "❓ 常见问题",
                 "q1": "它支持哪些字符？",
-                "a1": "我们的工具支持所有标准字符、特殊符号以及多语言 Unicode 字符串。"
+                "a1": "我们的工具支持所有标准字符、特殊符号以及多语言 Unicode 字符串。",
+                "q2": "为什么 Base64 会增加文件大小？",
+                "a2": "Base64 编码使数据大小增加约 33%，因为它使用 4 个 ASCII 字符表示 3 个字节的二进制数据。此开销是为了确保二进制数据对于纯文本系统安全而做出的权衡。",
+                "q3": "Base64 有何用途？",
+                "a3": "Base64 用于将二进制数据（图像、文件、凭证）编码为 ASCII 文本，以便通过电子邮件、URL、JSON、XML 和 HTTP 标头等纯文本系统进行传输。它对于 API 身份验证、数据 URI 和电子邮件附件至关重要。",
+                "q4": "我的数据会发送到服务器吗？",
+                "a4": "不！所有 Base64 编码和解码完全在您的浏览器中使用 JavaScript 进行。您的数据永远不会离开您的设备，也不会在任何地方存储、传输或记录。您的隐私受到完全保护。",
+                "q5": "我可以将图像编码为 Base64 吗？",
+                "a5": "是的！虽然我们的工具对文本进行编码，但您可以使用专门的工具对图像进行编码。 Base64 编码的图像可以使用数据 URI (data:image/png;base64,...) 直接嵌入 HTML/CSS 中。这对于小图像很有用，但会增加页面大小。"
             }
         },
         "js": {
-            "error_empty": "请先提供一些输入内容",
-            "error_decode": "无效的 Base64 字符串，无法解码",
-            "success_copy": "已复制到剪贴板！"
+            "error_empty_encode": "请输入要编码的文字",
+            "error_encoding": "编码文本时出错：",
+            "error_empty_decode": "请输入Base64字符串进行解码",
+            "error_invalid": "Base64 字符串无效。请检查您的输入。",
+            "copied": "复制了！"
         }
     },
     "code-formatter": {
@@ -104,57 +135,80 @@
         },
         "editor": {
             "label_language": "选择语言",
-            "opt_html": "HTML",
-            "opt_css": "CSS",
-            "opt_js": "JavaScript",
-            "opt_json": "JSON",
-            "btn_beautify": "美化代码",
-            "btn_clear": "清空",
-            "btn_copy": "复制代码",
+            "languages": {
+                "html": "超文本标记语言",
+                "css": "CSS",
+                "js": "JavaScript",
+                "json": "JSON",
+                "xml": "XML",
+                "sql": "SQL",
+                "php": "PHP"
+            },
+            "label_indent": "缩进",
+            "indents": {
+                "2": "2 个空格",
+                "4": "4 个空格",
+                "tab": "选项卡"
+            },
+            "btn_format": "格式代码",
             "label_input": "输入代码",
+            "btn_clear": "清空",
             "ph_input": "在此粘贴您的原始代码...",
             "label_output": "格式化后的代码",
+            "btn_copy": "复制代码",
             "ph_output": "整理后的代码将显示在此处..."
         },
         "content": {
             "hero_title": "专业代码美化与格式化工具",
-            "hero_subtitle": "一键让您的代码整洁、易读且符合标准",
             "p1": "杂乱且未缩进的代码是开发人员的梦魇。我们的免费在线代码格式化工具支持多种编程语言，包括 HTML、CSS 和 JavaScript。无论您是从缩小版文件（minified file）中提取代码，还是在完成漫长的编程马拉松后想要整理一下，我们的工具都能即时应用专业的缩进和间距，使您的逻辑清晰明了。",
-            "features_title": "主要功能",
-            "features_list": {
-                "multi": "<strong>多语言支持：</strong> 格式化 HTML、CSS、JS 和 JSON",
-                "instant": "<strong>即时美化：</strong> 极速处理大型代码片段",
-                "smart": "<strong>智能缩进：</strong> 自动检测嵌套并应用理想间距",
-                "free": "<strong>完全免费：</strong> 无限制，无需下载任何软件",
-                "secure": "<strong>安全私密：</strong> 您的代码永远不会离开您的浏览器",
-                "copy": "<strong>一键导出：</strong> 即时复制并粘贴回您的编辑器"
-            },
-            "uses_title": "为什么代码格式化如此重要？",
-            "uses": {
-                "readability": {
-                    "title": "提升可读性",
-                    "desc": "整洁、格式化良好的代码能让您和其他开发人员在进行代码审查时更轻松地理解系统逻辑。"
+            "features": {
+                "multi": {
+                    "title": "多语言支持",
+                    "desc": "支持主要编程语言，包括 HTML、CSS、JS、JSON 等"
                 },
-                "debugging": {
-                    "title": "更快的调试过程",
-                    "desc": "当缩进正确且括号对齐时，排查语法错误和逻辑缺陷会变得简单得多。"
+                "indent": {
+                    "title": "自定义缩进",
+                    "desc": "根据您喜欢的样式选择 2 个空格、4 个空格或制表符"
                 },
-                "collaboration": {
-                    "title": "团队协作",
-                    "desc": "在团队内保持一致的代码规范，通过标准的间距和格式降低沟通成本。"
+                "instant": {
+                    "title": "即时美化",
+                    "desc": "立即格式化代码，无需重新加载页面"
                 },
-                "learning": {
-                    "title": "学习利器",
-                    "desc": "初学者可以通过格式化他人的代码来观察嵌套结构和属性排布，从而快速掌握语法规则。"
+                "privacy": {
+                    "title": "注重隐私",
+                    "desc": "代码处理发生在您的浏览器中 - 不存储任何数据"
                 }
             },
-            "how_title": "如何格式化代码",
-            "how_steps": [
-                "从下拉菜单中<strong>选择语言</strong>",
-                "<strong>粘贴代码</strong>到左侧编辑器中",
-                "点击<strong>美化代码</strong>按钮",
-                "从右侧编辑器中<strong>复制</strong>完美格式化的代码"
-            ],
+            "langs_title": "💻 支持的语言",
+            "langs": {
+                "web": {
+                    "title": "网络技术",
+                    "desc": "HTML5、CSS3、JavaScript (ES6+)"
+                },
+                "data": {
+                    "title": "数据格式",
+                    "desc": "JSON、XML"
+                },
+                "backend": {
+                    "title": "后端",
+                    "desc": "PHP、SQL"
+                }
+            },
+            "why_title": "🤔 为什么要格式化代码？",
+            "why": {
+                "read": {
+                    "title": "可读性",
+                    "desc": "正确缩进的代码更容易阅读、理解和维护。"
+                },
+                "debug": {
+                    "title": "调试",
+                    "desc": "与缩小的字符串相比，在结构良好的代码中可以更快地查找错误。"
+                },
+                "collab": {
+                    "title": "合作",
+                    "desc": "标准代码风格有助于团队更有效地合作。"
+                }
+            },
             "faq_title": "常见问题解答",
             "faq": {
                 "q1": "它会修改我的代码逻辑吗？",
@@ -162,13 +216,16 @@
                 "q2": "是否有文件大小限制？",
                 "a2": "我们的分析器经过高度优化，可以处理绝大多数实际开发中遇到的代码块。对于超大规模的文件，速度可能取决于您设备的性能。",
                 "q3": "我的代码是私密的吗？",
-                "a3": "是的。所有的美化过程都在您的本地浏览器中使用 JavaScript 完成。我们从不上传或存储您的任何源代码。"
+                "a3": "是的。所有的美化过程都在您的本地浏览器中使用 JavaScript 完成。我们从不上传或存储您的任何源代码。",
+                "q4": "代码大小有限制吗？",
+                "a4": "由于处理是在您的设备上完成的，因此限制取决于浏览器的内存。它可以轻松处理数千行的文件。"
             }
         },
         "js": {
             "error_empty": "请先粘贴一些代码",
-            "success_beautify": "✓ 代码美化成功！",
-            "error_no_copy": "没有可复制的输出结果",
+            "success_format": "✓ 代码格式化成功！",
+            "error_format": "格式化代码错误：",
+            "no_copy": "没有可复制的代码",
             "success_copy": "✓ 已复制到剪贴板！"
         }
     },
@@ -180,68 +237,69 @@
             "subtitle": "轻松创建、解析和生成 Cron 任务定时方案"
         },
         "editor": {
-            "tab_general": "常用设置",
-            "tab_minute": "分钟",
-            "tab_hour": "小时",
-            "tab_day": "日期",
-            "tab_month": "月份",
-            "tab_weekday": "星期",
-            "label_command": "要运行的命令",
+            "common_settings": "通用设置",
+            "choose": "-  选择  -",
+            "options": {
+                "every_minute": "每分钟 (* * * * *)",
+                "every_5_minutes": "每 5 分钟 (*/5 * * * *)",
+                "every_15_minutes": "每 15 分钟一次 (*/15 * * * *)",
+                "every_30_minutes": "每 30 分钟 (*/30 * * * *)",
+                "every_hour": "每小时 (0 * * * *)",
+                "every_day_midnight": "每天午夜 (0 0 * * *)",
+                "every_week": "每周 (0 0 * * 0)",
+                "every_month": "每个月 (0 0 1 * *)"
+            },
+            "minute": "分钟",
+            "every_minute": "每分钟 (*)",
+            "hour": "小时",
+            "every_hour": "每小时 (*)",
+            "day": "天",
+            "every_day": "每天 （*）",
+            "month": "月",
+            "every_month": "每个月 (*)",
+            "weekday": "工作日",
+            "every_weekday": "每个工作日 (*)",
+            "command": "运行命令",
             "ph_command": "例如：php artisan schedule:run",
-            "label_expression": "生成的表达式",
+            "generated_cron": "生成的 Cron 表达式",
             "btn_copy": "复制 Cron 任务",
             "btn_clear": "重置"
         },
         "content": {
             "hero_title": "直观的 Cron Job 生成器",
-            "hero_subtitle": "告别复杂的 Cron 语法 - 以自然语言创建任务计划",
             "p1": "Cron 表达式对于管理和开发人员来说往往难以理解。我们的免费在线 Cron Job 生成器通过提供直观的界面，简化了自动化 Linux 任务的过程。无论您需要每小时、每天还是在特定的星期几运行脚本，我们的工具都能即时生成正确的表达式，并附带人类可读的解析。",
-            "features_title": "主要功能",
-            "features_list": {
-                "simple": "<strong>可视化界面：</strong> 无需特殊知识即可构建复杂的时间计划",
-                "readable": "<strong>即时解析：</strong> 一边构建表达式，一边看到它的含义（人类可读文字）",
-                "export": "<strong>直接命令生成：</strong> 自动将 Cron 计划与您的命令合并",
-                "secure": "<strong>100% 隐私：</strong> 所有逻辑均在浏览器中运行，无需任何服务器通讯",
-                "versatile": "<strong>覆盖全面：</strong> 支持分钟、小时、日期、月和星期等全方位精度设置"
-            },
-            "uses_title": "常见的 Cron 任务使用场景",
-            "uses": {
-                "backups": {
-                    "title": "自动备份",
-                    "desc": "设置在凌晨 3 点自动运行数据库和文件备份，以确保数据安全。"
+            "features": {
+                "visual": {
+                    "title": "可视化编辑器",
+                    "desc": "使用简单的界面选择分钟、小时、天和月"
                 },
-                "maintenance": {
-                    "title": "系统维护",
-                    "desc": "安排定期清理临时文件夹、截断日志或刷新服务器缓存的任务。"
-                },
-                "reminders": {
-                    "title": "电子邮件与提醒",
-                    "desc": "在设定的时间通过计划任务发送每日汇总、简报报告或客户到期通知。"
-                },
-                "analysis": {
-                    "title": "数据采集",
-                    "desc": "定时触发爬虫脚本或 API 数据拉取，以保持仪表盘的信息为最新。"
+                "readable": {
+                    "title": "人类可读",
+                    "desc": "将 cron 表达式转换为简单的英语描述"
                 }
             },
-            "how_title": "如何生成您的 Cron 任务",
-            "how_steps": [
-                "在对应的标签页（分钟、小时等）中<strong>选择频率</strong>",
-                "在输入框中输入您想要在 Linux 终端中执的<strong>命令</strong>",
-                "在底部查看生成的 <strong>Cron 表达式</strong>",
-                "<strong>复制</strong>该行并将其粘贴到服务器的 crontab 文件中"
-            ],
+            "syntax_title": "📚 理解 Cron 语法",
+            "syntax_intro": "一个 cron 表达式由 5 个以空格分隔的字段组成：",
+            "syntax_fields": {
+                "min": "分钟（0-59）",
+                "hour": "小时（0-23）",
+                "day": "每月的某一天 (1-31)",
+                "month": "月份（1-12）",
+                "week": "星期几（0-6，星期日=0）"
+            },
             "faq_title": "常见问题解答",
             "faq": {
                 "q1": "什么是 Cron Job？",
                 "a1": "Cron Job 是类 Unix 系统中的定时任务调度程序，允许用户在指定的时间、日期或间隔自动运行命令或脚本。",
                 "q2": "如何将定时任务添加到我的服务器？",
                 "a2": "在您的 Linux 终端运行 `crontab -e` 命，然后将我们生成的这一行粘贴到文件底部并保存。",
-                "q3": "这个生成器支持所有的操作系统吗？",
-                "a3": "它生成的是标准的 Cron 语法，兼容大多数 Linux 发行版（如 Ubuntu、CentOS）、macOS。对于 Windows 用户，它可用于 WSL（Windows Subsystem for Linux）。"
+                "q4": "星号 (*) 是什么意思？",
+                "a4": "星号的意思是“每一个”。例如，分钟字段中的星号表示“每分钟”。"
             }
         },
         "js": {
-            "success_copy": "✓ Cron 任务已复制到剪贴板！"
+            "success_copy": "✓ Cron 任务已复制到剪贴板！",
+            "no_copy": "没有要复制的 cron 表达式"
         }
     },
     "css-minifier": {
@@ -259,49 +317,90 @@
             "btn_clear": "清空内容",
             "btn_copy": "复制结果",
             "label_output": "CSS 输出",
-            "ph_output": "处理后的 CSS 将显示在此处..."
+            "ph_output": "处理后的 CSS 将显示在此处...",
+            "stats": {
+                "original": "原始尺寸",
+                "minified": "缩小尺寸",
+                "saved": "已保存",
+                "compression": "压缩"
+            }
         },
         "content": {
             "hero_title": "轻量级 CSS 优化器",
             "hero_subtitle": "减小文件体积，提升 Core Web Vitals 性能指标",
             "p1": "CSS 是现代网页不可或缺的一部分，但在生产环境中，过大的样式文件会拖慢加载速度。我们的免费在线 CSS 压缩工具通过移除不必要的空格、换行符和注释，能让您的文件体积减少高达 30%。如果您是在维护他人压缩过的旧代码，我们的“美化”功能还能将其重新格式化为清晰易读的结构。",
+            "what_title": "🎨 什么是 CSS 缩小？",
+            "what_desc": "CSS 缩小是从 CSS 代码中删除不必要的字符而不改变其功能的过程。这包括空格、换行符、注释和冗余代码。缩小的 CSS 文件更小，加载速度更快，并提高网站性能。这是生产网站的一项重要优化技术。",
             "features_title": "主要功能",
-            "features_list": {
-                "minify": "<strong>高级压缩：</strong> 极致压缩 CSS，同时保持样式完全一致",
-                "beautify": "<strong>样式美化：</strong> 为混乱的代码片段自动添加缩进和换行",
-                "instant": "<strong>即时生效：</strong> 在您的浏览器内极其迅速地处理代码",
-                "secure": "<strong>隐私保护：</strong> 处理逻辑 100% 在客户端运行，我们从不上传您的数据",
-                "universal": "<strong>多版本兼容：</strong> 完美支持 CSS3、变量和嵌套选择器",
-                "free": "<strong>永远免费：</strong> 没有额度限制，无需付费订阅"
-            },
-            "why_title": "为什么要压缩 CSS？",
-            "why_desc": "在 Web 性能领域，每一字节都至关重要。较小的 CSS 文件意味着更快的下载、更快的页面渲染以及更好的 SEO 排名。通过移除人类阅读所需要的空格，浏览器解析样式的速度也会更快。这对于移动端用户和网络带宽受限的用户来说尤为重要。这是从性能分（Performance Score）中提分的关键一步。",
-            "uses_title": "常见使用场景",
-            "uses": {
-                "speed": {
-                    "title": "页面提速",
-                    "desc": "在将代码部署到生产环境前进行压缩，以提升网站的整体响应速度。"
+            "features": {
+                "minify": {
+                    "title": "CSS 缩小",
+                    "desc": "通过删除空格和注释来压缩 CSS"
                 },
-                "cleanup": {
-                    "title": "旧代码整理",
-                    "desc": "使用美化功能将混乱的单行样式表转换为标准的多行格式，方便后续开发人员维护。"
+                "beautify": {
+                    "title": "CSS美化",
+                    "desc": "使用适当的缩进和间距设置 CSS 格式"
+                },
+                "stats": {
+                    "title": "压缩统计",
+                    "desc": "查看文件大小减少和压缩率"
+                },
+                "instant": {
+                    "title": "即时处理",
+                    "desc": "在几毫秒内缩小或美化 CSS"
+                },
+                "privacy": {
+                    "title": "隐私第一",
+                    "desc": "所有处理都发生在您的浏览器中"
+                },
+                "copy": {
+                    "title": "一键复制",
+                    "desc": "立即将缩小的 CSS 复制到剪贴板"
+                }
+            },
+            "benefits_title": "🎯 CSS 缩小的好处",
+            "benefits": {
+                "speed": {
+                    "title": "⚡ 更快的页面加载",
+                    "desc": "较小的 CSS 文件下载速度更快，从而改善页面加载时间和用户体验"
                 },
                 "bandwidth": {
-                    "title": "节省带宽",
-                    "desc": "对于超大规模的 Web 应用程序，压缩样式表能显著降低每月的数据传输成本。"
+                    "title": "💰 减少带宽",
+                    "desc": "较低的带宽使用量可以为用户节省托管成本和移动数据"
                 },
-                "debugging": {
-                    "title": "样式调试",
-                    "desc": "快速查看复杂的 CSS 层叠结构，通过自动化后的缩进更精准地定位选择器冲突。"
+                "seo": {
+                    "title": "📈 更好的搜索引擎优化",
+                    "desc": "更快的网站在搜索引擎中排名更好，提高可见性"
+                },
+                "performance": {
+                    "title": "🎯 改进的性能",
+                    "desc": "优化的 CSS 减少了浏览器解析时间和渲染延迟"
+                },
+                "mobile": {
+                    "title": "📱 移动优化",
+                    "desc": "对于带宽有限且连接速度较慢的移动用户至关重要"
+                },
+                "production": {
+                    "title": "🔧 生产就绪",
+                    "desc": "缩小 CSS 是生产部署的标准实践"
                 }
             },
             "how_title": "如何优化您的 CSS",
-            "how_steps": [
-                "<strong>粘贴</strong>您的 CSS 源代码到输入区域中",
-                "点击<strong>压缩</strong>以优化体积，或点击<strong>美化</strong>以进行格式化",
-                "即时在下方查看<strong>处理后的代码</strong>",
-                "点击<strong>复制结果</strong>将其应用到您的项目中"
-            ],
+            "how_steps": {
+                "1": "<strong>选择操作</strong>：点击“缩小 CSS”进行压缩或“美化 CSS”进行格式化",
+                "2": "<strong>查看结果</strong>：在输出字段中查看已处理的 CSS 以及压缩统计信息",
+                "3": "<strong>复制：</strong>单击“复制”将缩小的 CSS 复制到剪贴板",
+                "4": "<strong>在生产中使用</strong>：用缩小版本替换原始 CSS 文件",
+                "5": "下载或复制缩小的 CSS 并在您的生产网站中使用它，以减小文件大小并缩短加载时间。"
+            },
+            "best_practices_title": "💡最佳实践",
+            "best_practices_list": {
+                "1": "<strong>缩小生产环境</strong>：仅在生产环境中使用缩小的 CSS",
+                "2": "<strong>合并文件</strong>：在缩小之前合并多个 CSS 文件以获得更好的压缩效果",
+                "3": "<strong>彻底测试</strong>：始终测试缩小的 CSS 以确保没有功能被破坏",
+                "4": "<strong>使用构建工具：</strong>将缩小集成到构建过程中以实现自动化",
+                "5": "保留未缩小的版本以用于开发和调试目的。"
+            },
             "faq_title": "常见问题解答",
             "faq": {
                 "q1": "压缩会破坏我的样式吗？",
@@ -309,14 +408,19 @@
                 "q2": "支持现代 CSS 特性吗？",
                 "a2": "是的。该工具支持最新的 CSS3 标准，包括复杂的关键帧动画、Flexbox、Grid 布局以及自定义属性（CSS 变量）。",
                 "q3": "我可以在美化后再次压缩吗？",
-                "a3": "当然可以。您可以根据需要随时在“压缩”和“美化”状态之间切换。我们的工具旨在为您提供最大的开发灵活性。"
+                "a3": "当然可以。您可以根据需要随时在“压缩”和“美化”状态之间切换。我们的工具旨在为您提供最大的开发灵活性。",
+                "q4": "我可以反转缩小吗？",
+                "a4": "是的！使用我们的“美化 CSS”功能将缩小的 CSS 格式化回可读格式。但是，注释在缩小过程中将被永久删除。",
+                "q5": "我的 CSS 数据安全吗？",
+                "a5": "绝对地！所有处理完全在您的浏览器中进行。您的 CSS 代码永远不会离开您的设备，也不会发送到任何服务器。"
             }
         },
         "js": {
             "error_empty": "请先粘贴一些 CSS 代码",
             "success_minify": "✓ CSS 压缩成功！",
             "success_beautify": "✓ CSS 美化成功！",
-            "error_no_copy": "没有可复制的结果",
+            "error_process": "✗ 处理 CSS 时出错：",
+            "no_copy": "无需复制 CSS",
             "success_copy": "✓ 已复制到剪贴板！"
         }
     },
@@ -328,66 +432,16 @@
             "subtitle": "可视化构建、调试并生成专业的 cURL 命令"
         },
         "editor": {
-            "label_url": "请求 URL",
-            "ph_url": "https://api.example.com/v1/resource",
-            "label_method": "HTTP 方法",
-            "label_headers": "请求头 (Headers)",
-            "btn_add_header": "添加 Header",
-            "label_body": "请求体 (Body)",
-            "ph_body": "在此输入您的请求数据（JSON, Form data 等）",
-            "label_output": "生成的 cURL 命令",
-            "btn_copy": "复制 cURL",
-            "btn_clear": "清空"
-        },
-        "content": {
-            "hero_title": "专业的 cURL 构建工具",
-            "hero_subtitle": "简化 API 测试与调试流程 - 无需记忆复杂的命令行开关",
-            "p1": "无论您是开发人员还是 QA 工程师，手动编写带有多个请求头和鉴权信息的 cURL 命令都非常繁琐且容易出错。我们的免费在线 cURL 生成器为您提供了一个清晰的可视化面板，让您可以轻松构建 GET、POST、PUT 和 DELETE 请求。即时生成符合语法的命令，直接粘贴到终端中即可运行。",
-            "features_title": "主要功能",
-            "features_list": {
-                "methods": "<strong>全方法支持：</strong> 轻松处理 GET, POST, PUT, DELETE, PATCH 等常见 HTTP 请求",
-                "headers": "<strong>自定义 Headers：</strong> 简单的一键点击即可添加鉴权、内容类型或自定义标识",
-                "payload": "<strong>请求体构建：</strong> 支持发送 JSON 数据、表单数据或原始文本载荷",
-                "instant": "<strong>实时生成：</strong> 在您输入参数的同时，下方的 cURL 命令也会即时同步更新",
-                "secure": "<strong>隐私保障：</strong> 所有处理逻辑都在您的浏览器端完成，我们从不采集您的 API 地址或令牌",
-                "free": "<strong>100% 免费：</strong> 专业级工具，无任何收费项目或使用额度限制"
-            },
-            "uses_title": "为什么使用 cURL 生成器？",
-            "uses": {
-                "api": {
-                    "title": "API 开发与调试",
-                    "desc": "在编写后端逻辑时，快速生成测试命令来验证端点的响应是否符合预期。"
-                },
-                "docs": {
-                    "title": "编写技术文档",
-                    "desc": "为您的 API 文档自动生成标准化的 cURL 示例，方便其他开发人员集成。"
-                },
-                "integration": {
-                    "title": "第三方服务集成",
-                    "desc": "在对接 Stripe、Twilio 或 AWS 等服务时，精准构建包含所需 Secret 密钥的 cURL 代码片段。"
-                },
-                "troubleshooting": {
-                    "title": "故障排查",
-                    "desc": "在多层架构中排查问题时，可以通过纯命令行的请求排除浏览器缓存或插件的干扰。"
-                }
-            },
-            "how_title": "如何构建 cURL 命令",
-            "how_steps": [
-                "在顶部输入框中输入目标 <strong>URL 地址</strong>",
-                "从下拉菜单中<strong>选择 HTTP 方法</strong>（如 POST）",
-                "点击“添加 Header”来输入<strong>请求头信息</strong>（如 Authorization）",
-                "如果需要，在请求体框中粘贴您的 <strong>JSON 数据</strong>",
-                "实时<strong>复制</strong>底部生成的 cURL 代码并运行"
-            ],
-            "faq_title": "常见问题解答",
-            "faq": {
-                "q1": "什么是 cURL？",
-                "a1": "cURL 是一个强大的命令行工具，用于利用多种协议（如 HTTP、HTTPS、FTP 等）进行数据传输，常被开发者用来测试网站接口。",
-                "q2": "我生成的命令安全吗？",
-                "a2": "是的。该工具仅在客户端运行。只要您不把包含敏感 Token 的命令发给他人，它就非常安全。",
-                "q3": "支持发送文件吗？",
-                "a3": "该工具专注于构建文本类的请求。对于复杂的多部分（Multipart）文件上传命令，目前的界面做了简化处理，以便更高效地处理 API 交互数据。"
-            }
+            "method_label": "方法",
+            "url_label": "网址",
+            "headers_tab": "标头",
+            "body_tab": "请求正文",
+            "key_ph": "密钥（例如授权）",
+            "value_ph": "价值（例如不记名代币）",
+            "add_header": "+ 添加标题",
+            "raw_data_label": "原始数据（JSON/文本）",
+            "generated_label": "生成的命令",
+            "btn_copy": "复制 cURL"
         },
         "js": {
             "success_copy": "✓ cURL 命令已复制到剪贴板！"
@@ -401,56 +455,93 @@
             "subtitle": "瞬间安全地转换 HTML 实体与代码"
         },
         "editor": {
-            "label_input": "输入内容",
-            "ph_input": "例如：<div>Hello World & \"Nice\"</div>",
+            "mode_encode": "编码 HTML",
+            "mode_decode": "解码 HTML",
+            "label_input_encode": "输入 HTML 进行编码",
+            "ph_input_encode": "<div>您好，欢迎</div>",
             "btn_encode": "编码为实体",
-            "btn_decode": "解码为源代码",
             "btn_clear": "清空内容",
             "btn_copy": "复制结果",
-            "label_output": "处理结果",
-            "ph_output": "转换后的内容将显示在此处..."
+            "label_output_encode": "编码 HTML",
+            "ph_output": "转换后的内容将显示在此处...",
+            "label_input_decode": "输入 HTML 进行解码",
+            "label_output_decode": "解码后的 HTML",
+            "btn_decode": "解码为源代码"
         },
         "content": {
             "hero_title": "专业的 HTML 实体处理工具",
             "hero_subtitle": "防止 XSS 攻击，确保您的代码在任何浏览器中都能正确显示",
             "p1": "在网页开发中，有些字符（如 <、>、& 和 \"）具有特殊的含义，如果直接放在 HTML 中可能会导致显示错误甚至安全漏洞。我们的免费在线 HTML 编码器能帮您将这些字符转换为实体（如 &lt; 和 &gt;）。反之，我们的解码器也能帮您将复杂的实体代码还原成易读的文本，是前端开发中不可或缺的安全工具。",
+            "what_title": "ðŸ”— 什么是 HTML 编码？",
+            "what_desc": "HTML 编码将 HTML 中具有特殊含义的字符（如 <、>、&、\"）转换为相应的 HTML 实体（如 &lt;、>、&amp;、&quot;）。这可以防止浏览器将它们解释为 HTML 标签，这对于防止跨站脚本 (XSS) 攻击至关重要。",
             "features_title": "主要功能",
-            "features_list": {
-                "secure": "<strong>安全性：</strong> 轻松编码敏感字符以防止跨站脚本（XSS）攻击",
-                "accurate": "<strong>高准确性：</strong> 完美匹配所有标准 W3C HTML5 命名实体",
-                "instant": "<strong>即时响应：</strong> 所有的编码和解码过程均在毫秒内完成",
-                "privacy": "<strong>隐私优先：</strong> 您的数据只在本地浏览器处理，我们绝不存储您的私密代码",
-                "multilingual": "<strong>支持国际化：</strong> 能够处理各种语言的特殊符号和表情符号实体",
-                "free": "<strong>永远免费：</strong> 无需账号，无任何使用限制"
+            "features": {
+                "fast": {
+                    "title": "即时转换",
+                    "desc": "在几毫秒内编码或解码 HTML"
+                },
+                "bidirectional": {
+                    "title": "双向",
+                    "desc": "对特殊字符进行编码或将实体解码回文本"
+                },
+                "privacy": {
+                    "title": "隐私第一",
+                    "desc": "所有处理都发生在您的浏览器中"
+                },
+                "copy": {
+                    "title": "一键复制",
+                    "desc": "立即将处理后的 HTML 复制到剪贴板"
+                },
+                "free": {
+                    "title": "100% 免费",
+                    "desc": "无限制，无需注册"
+                },
+                "safe": {
+                    "title": "注重安全",
+                    "desc": "帮助防止 XSS 漏洞"
+                }
             },
-            "why_title": "为什么要进行 HTML 编码？",
-            "why_desc": "如果您尝试在网页中直接显示包含 HTML 标签的代码（例如展示教程），浏览器会尝试运行那些标签而不是显示它们。通过编码，您可以告诉浏览器“将此显示为文本”。此外，在处理用户评论或表单输入时，强制进行 HTML 实体编码是防御非法代码注入的第一道防线。它是提升网站健壮性和安全性的关键实践。",
             "uses_title": "常见使用场景",
             "uses": {
-                "display": {
-                    "title": "在网页中显示代码",
-                    "desc": "为博客或技术文档编码 HTML 片段，以避免浏览器渲染这些演示代码。"
-                },
                 "security": {
                     "title": "防御安全威胁",
                     "desc": "通过实体编码过滤动态生成的 HTML 内容，预防潜在的脚本注入风险。"
                 },
-                "cleaning": {
-                    "title": "数据清洗",
-                    "desc": "将数据抓取或数据库中带实体符号的文本还原为干净的可阅读文本。"
+                "display": {
+                    "title": "在网页中显示代码",
+                    "desc": "为博客或技术文档编码 HTML 片段，以避免浏览器渲染这些演示代码。"
                 },
-                "compatibility": {
-                    "title": "浏览器兼容性",
-                    "desc": "确保某些旧版系统无法识别的特殊符号能通过通用的 HTML 实体形式正确渲染。"
+                "data": {
+                    "title": "ð“Š 数据存储",
+                    "desc": "将内容安全地存储在数据库中，无需担心 HTML 解析问题。"
+                },
+                "email": {
+                    "title": "ð“§ 电子邮件模板",
+                    "desc": "确保特殊字符在 HTML 电子邮件中正确呈现。"
                 }
             },
             "how_title": "如何进行编码或解码",
-            "how_steps": [
-                "在顶部编辑器中<strong>粘贴</strong>您的文本或 HTML 源码",
-                "点击<strong>“编码”</strong>以转换为实体，或点击<strong>“解码”</strong>还原代码",
-                "即时在下方查看转换后的<strong>结果</strong>",
-                "点击<strong>按钮</strong>复制到剪贴板，随后应用到您的项目中"
-            ],
+            "how_steps": {
+                "1": "将 HTML 或文本粘贴到输入字段中",
+                "2": "单击处理按钮进行转换",
+                "3": "将结果复制到剪贴板",
+                "4": "复制编码/解码结果并在 HTML、XML 或 Web 应用程序中使用它。"
+            },
+            "examples_title": "HTML 编码示例",
+            "examples": {
+                "1": {
+                    "title": "引号：",
+                    "code": "“你好”→“你好”"
+                },
+                "2": {
+                    "title": "与符号：",
+                    "code": "汤姆和杰瑞 → 汤姆和杰瑞杰瑞"
+                },
+                "3": {
+                    "title": "对特殊字符进行编码",
+                    "code": "&lt;脚本&gt;警报(“XSS”)&lt;/脚本&gt; → <script>alert(&quot;XSS&quot;)&amp;lt;/script>;"
+                }
+            },
             "faq_title": "常见问题解答",
             "faq": {
                 "q1": "什么是 HTML 实体？",
@@ -465,6 +556,7 @@
             "error_empty": "请先粘贴一些内容",
             "success_encode": "✓ 已成功编码为 HTML 实体！",
             "success_decode": "✓ 已成功解码为源代码！",
+            "error_process": "✔ 处理 HTML 时出错：",
             "error_no_copy": "没有可复制的结果",
             "success_copy": "✓ 已复制到剪贴板！"
         }
@@ -483,50 +575,29 @@
             "btn_beautify": "美化 HTML",
             "btn_clear": "清空内容",
             "btn_copy": "复制结果",
-            "label_output": "处理结果",
-            "ph_output": "整理后的 HTML 将显示在此处..."
+            "label_output": "处理结果"
         },
         "content": {
-            "hero_title": "极速 HTML 优化器",
-            "hero_subtitle": "移除冗余代码，提升加载速度并改善搜索引擎优化 (SEO)",
-            "p1": "网页的加载速度直接影响留存率。我们的免费在线 HTML 压缩工具可以通过移除不必要的空格、缩进和注释，显著减少 HTML 文件的字节数。这不仅能降低服务器带宽成本，还能通过更快的页面渲染提升用户体验。同样地，如果您需要阅读被打乱的生产环境代码，我们的“美化”功能能让其重新变得整洁且易于理解。",
+            "about_title": "什么是 HTML 压缩器？",
+            "about_desc": "HTML Minifier 是一种在不改变功能的情况下通过删除不必要的字符（如空格、注释和换行符）来压缩 HTML 代码的工具。缩小后的 HTML 文件明显更小，从而加快了页面加载时间并提高了网站性能。我们的免费在线 HTML 缩小器还包括美化功能，可以使用适当的缩进格式化 HTML，以便在开发过程中提高可读性。",
+            "why_title": "为什么要优化 HTML？",
+            "why_desc": "在移动互联网时代，用户的每一毫秒加载时间都至关重要。虽然几十个字节的节省看起来微不足道，但在日均访问量巨大的网站上，压缩带来的带宽节省和首屏渲染时间（LCP）的提升是非常可观的。压缩 HTML 是网站正式发布前的标准优化流程。同时，美化的 HTML 则是在开发阶段提升团队协作效率和 Debug 速度的重要利器。",
             "features_title": "主要功能",
             "features_list": {
                 "minify": "<strong>高级压缩：</strong> 在保证结构完整的前提下，最大程度移除空格和注释",
                 "beautify": "<strong>结构美化：</strong> 自动应用专业的标签嵌套缩进，让源码清晰可读",
                 "instant": "<strong>毫秒级处理：</strong> 在您的设备上本地运行，没有任何延迟",
+                "copy": "<strong>复制输出：</strong>轻松复制缩小的 HTML",
                 "secure": "<strong>私密安全：</strong> 所有的处理逻辑都在客户端执行，我们不采集您的任何代码",
-                "compat": "<strong>HTML5 兼容：</strong> 完美支持最新的 HTML5 标准、SVG 标签以及内联样式",
                 "free": "<strong>100% 免费：</strong> 无阶梯收费，无字数限制，永远免费使用"
             },
-            "why_title": "为什么要优化 HTML？",
-            "why_desc": "在移动互联网时代，用户的每一毫秒加载时间都至关重要。虽然几十个字节的节省看起来微不足道，但在日均访问量巨大的网站上，压缩带来的带宽节省和首屏渲染时间（LCP）的提升是非常可观的。压缩 HTML 是网站正式发布前的标准优化流程。同时，美化的 HTML 则是在开发阶段提升团队协作效率和 Debug 速度的重要利器。",
-            "uses_title": "常见使用场景",
-            "uses": {
-                "deployment": {
-                    "title": "生产环境部署",
-                    "desc": "在代码上线前进行一键压缩，从而减小整体静态资源包的大小。"
-                },
-                "readability": {
-                    "title": "源码调试与阅读",
-                    "desc": "将从浏览器“查看源文件”获得的单行压缩代码格式化为分行结构，以便分析其 DOM 层级。"
-                },
-                "email": {
-                    "title": "电子邮件模板",
-                    "desc": "压缩 HTML 邮件代码，以防触碰到某些邮件客户端服务商的字符限制，提高投递成功率。"
-                },
-                "bandwidth": {
-                    "title": "带宽成本降低",
-                    "desc": "对于超高并发的应用，压缩每一个页面响应能显著降低数据传输的运营开支。"
-                }
-            },
             "how_title": "如何美化或压缩您的代码",
-            "how_steps": [
-                "<strong>粘贴</strong>您的 HTML 源码到顶部输入框中",
-                "点击<strong>“压缩 HTML”</strong>减小体积，或点击<strong>“美化 HTML”</strong>添加缩进",
-                "即时在下方查看<strong>处理后的代码</strong>",
-                "点击<strong>复制按钮</strong>，然后将其应用到您的页面中"
-            ],
+            "how_steps": {
+                "1": "点击“Minify HTML”来压缩代码",
+                "2": "单击“美化 HTML”以设置缩进格式",
+                "3": "使用“复制输出”按钮复制输出",
+                "4": "在生产环境中使用缩小的 HTML 可以减少带宽并提高页面加载速度。"
+            },
             "faq_title": "常见问题解答",
             "faq": {
                 "q1": "压缩会删除我的 JavaScript 吗？",
@@ -534,7 +605,11 @@
                 "q2": "支持美化损坏的 HTML 吗？",
                 "a2": "我们的美化器能尽力纠正轻微的缩进问题，但如果 HTML 标签本身未闭合或有严重语法错误，请在格式化前先进行基本检查。",
                 "q3": "我可以恢复被压缩的注释吗？",
-                "a3": "不行。压缩的本质是永久移除这些冗余字符。如果您希望保留注释，请在操作前保留一份源码备份。"
+                "a3": "不行。压缩的本质是永久移除这些冗余字符。如果您希望保留注释，请在操作前保留一份源码备份。",
+                "q4": "我可以取消 HTML 缩小吗？",
+                "a4": "是的，使用“美化 HTML”按钮来设置具有适当缩进的缩小 HTML 格式。",
+                "q5": "缩小会影响 HTML 功能吗？",
+                "a5": "不，缩小只会删除不必要的字符。 HTML 的工作方式完全相同。"
             }
         },
         "js": {
@@ -553,93 +628,101 @@
             "subtitle": "即时将 HTML 转换为 Markdown 格式"
         },
         "editor": {
+            "btn_convert": "转换为 Markdown",
+            "btn_copy": "复制内容",
+            "btn_download": "下载",
+            "btn_example": "例子",
+            "btn_clear": "清空内容",
             "label_input": "HTML 输入",
             "ph_input": "在此粘贴您的 HTML...",
-            "btn_convert": "转换为 Markdown",
-            "btn_clear": "清空内容",
-            "btn_copy": "复制内容",
             "label_output": "Markdown 输出",
             "ph_output": "转换后的 Markdown 将显示在此处..."
         },
         "content": {
-            "hero_title": "免费 HTML 转 Markdown 转换器",
-            "hero_subtitle": "即时准确地将 HTML 转换为 Markdown 格式",
-            "p1": "我们的免费 HTML 转 Markdown 转换器是一个强大的工具，专为开发人员、内容创作者和 IT 专业人士打造。它可以轻松地将复杂的 HTML 代码转换为干净、结构化的 Markdown。无论您是在迁移博文内容、整理网页抓取数据，还是准备技术文档，我们的工具都能在您的浏览器中直接处理，确保速度和隐私。",
-            "what_title": "📋 什么是 HTML 转 Markdown 转换？",
-            "what_desc": "将 HTML（超文本标记语言）转换为 Markdown 是将富文本网页内容转变为轻量级、易读的纯文本格式的过程。Markdown 广泛用于文档、GitHub 以及现代内容管理系统 (CMS)，因为它具有简单的语法和良好的跨平台兼容性。",
+            "about_title": "🔄 关于 HTML 到 Markdown 转换器",
+            "about_p1": "使用我们免费的在线 HTML 到 Markdown 转换器，立即将 HTML 代码转换为干净、可读的 Markdown 格式。非常适合需要将 HTML 内容转换为 Markdown 以用于文档、自述文件或内容管理系统的开发人员、技术作家和内容创建者。",
             "features_title": "✨ 功能特性",
-            "features": {
-                "fast": {
-                    "title": "即时转换",
-                    "desc": "在几毫秒内获得转换结果"
-                },
-                "secure": {
-                    "title": "隐私至上",
-                    "desc": "所有数据处理均在您的浏览器本地完成"
-                },
-                "accurate_rendering": {
-                    "title": "准确渲染",
-                    "desc": "正确处理标签、链接、列表和格式"
-                },
-                "bidirectional": {
-                    "title": "轻量级",
-                    "desc": "删除无用的 HTML 标签，只保留内容"
-                },
-                "copy": {
-                    "title": "一键导出",
-                    "desc": "即时将 Markdown 结果复制到剪贴板"
-                },
-                "free": {
-                    "title": "100% 免费",
-                    "desc": "无限制，无需注册"
-                }
+            "features_list": {
+                "1": "✅ <strong>保留格式</strong>：保留标题、列表、链接和强调",
+                "2": "✅ <strong>干净的输出：</strong>生成可读的、格式良好的 Markdown",
+                "3": "✅ <strong>无需安装</strong>：直接在浏览器中运行",
+                "4": "✅ <strong>永久免费</strong>：100% 免费，没有任何限制",
+                "5": "✅ <strong>隐私第一</strong>：所有转换均在您的浏览器本地进行",
+                "6": "保留技术文档的代码块和语法突出显示。"
             },
             "uses_title": "🎯 常见使用场景",
             "uses": {
+                "docs": {
+                    "title": "📚 文档",
+                    "desc": "将 GitHub wiki、README 文件和技术文档的 HTML 文档转换为 Markdown。"
+                },
+                "migration": {
+                    "title": "✍️ 内容迁移",
+                    "desc": "将内容从基于 HTML 的 CMS 迁移到基于 Markdown 的平台（例如 Jekyll 或 Hugo）。"
+                },
+                "email": {
+                    "title": "💻 发送电子邮件至 Markdown",
+                    "desc": "将 HTML 电子邮件转换为 Markdown 格式，以便于编辑和版本控制。"
+                },
                 "blog": {
                     "title": "📝 博主",
                     "desc": "将旧博文内容从 HTML 迁移到支持 Markdown 的现代平台。"
-                },
-                "developer": {
-                    "title": "👨‍💻 开发人员",
-                    "desc": "快速将网页片段转换为代码文档或 GitHub README。"
-                },
-                "content": {
-                    "title": "✍️ 内容编辑",
-                    "desc": "从网页上抓取内容并将其转换为 Markdown，以便于编辑和发布。"
-                },
-                "documentation": {
-                    "title": "📖 技术文档",
-                    "desc": "对复杂的 HTML 结构化数据进行格式降级，使其成为简洁的文档。"
                 }
             },
-            "how_title": "📚 如何使用",
-            "how_steps": {
-                "1": {
-                    "title": "粘贴 HTML",
-                    "desc": "在“HTML 输入”框中粘贴您的 HTML 代码。"
+            "elements_title": "🛠️ 支持的 HTML 元素",
+            "elements": {
+                "text": {
+                    "title": "文本格式",
+                    "list": [
+                        "标题 (H1-H6)",
+                        "段落",
+                        "大胆而坚强",
+                        "斜体和强调",
+                        "代码和预格式化",
+                        "块引用"
+                    ]
                 },
-                "2": {
-                    "title": "转换",
-                    "desc": "点击“转换为 Markdown”按钮生成结果。"
+                "lists": {
+                    "title": "列表和链接",
+                    "list": [
+                        "无序列表",
+                        "有序列表",
+                        "嵌套列表",
+                        "超链接",
+                        "图片",
+                        "换行符"
+                    ]
                 },
-                "3": {
-                    "title": "复制结果",
-                    "desc": "点击复制按钮，即可在您的项目中使用 Markdown。"
+                "advanced": {
+                    "title": "先进的",
+                    "list": [
+                        "表格",
+                        "水平规则",
+                        "内联代码",
+                        "代码块",
+                        "删除线",
+                        "任务列表"
+                    ]
                 }
             },
             "faq_title": "❓ 常见问题解答",
             "faq": {
                 "q1": "它支持哪些标签？",
-                "a1": "它支持所有标准 HTML5 标签，包括标题、列表、表格、链接、图片和强调标签。"
+                "a1": "它支持所有标准 HTML5 标签，包括标题、列表、表格、链接、图片和强调标签。",
+                "q2": "可以离线使用吗？",
+                "a2": "是的，所有转换都使用 JavaScript 在您的浏览器中进行，因此您的数据永远不会离开您的设备。",
+                "q3": "支持哪些 HTML 元素？",
+                "a3": "我们支持所有常见的 HTML 元素，包括标题、段落、列表、链接、图像、表格、代码块等。",
+                "q4": "我可以转换大型 HTML 文件吗？",
+                "a4": "是的，没有大小限制。但是，处理非常大的文件可能需要一些时间，具体取决于您的浏览器性能。"
             }
         },
         "js": {
             "error_empty": "请输入要转换的 HTML",
-            "success_convert": "✓ 转换成功",
             "error_convert": "✗ 转换 HTML 时出错：",
-            "no_copy": "没有可复制的 Markdown",
-            "success_copy": "✓ Markdown 已复制到剪贴板"
+            "error_no_copy": "无需复制 Markdown。请先转换 HTML。",
+            "success_copy": "✓ Markdown 已复制到剪贴板",
+            "error_no_download": "无需下载 Markdown。请先转换 HTML。"
         }
     },
     "html-viewer": {
@@ -652,56 +735,54 @@
         "editor": {
             "label_input": "HTML 代码",
             "ph_input": "在此粘贴您的 HTML 代码...",
-            "btn_preview": "渲染预览",
             "btn_clear": "清空内容",
-            "btn_copy": "复制代码",
-            "label_preview": "实时预览"
+            "btn_load_sample": "加载样品",
+            "label_preview": "实时预览",
+            "btn_fullscreen": "全屏",
+            "btn_exit_fullscreen": "退出全屏"
         },
         "content": {
-            "hero_title": "免费在线 HTML 查看器",
-            "hero_subtitle": "在您的浏览器中即时渲染和查看 HTML 代码",
-            "p1": "我们的免费 HTML 查看器是一款功能强大的在线工具，专为开发人员、学习者和设计师打造。它允许您即时预览 HTML 代码，并在干净、隔离的环境中查看其渲染后的样子。无论您是在测试一个小片段、学习 HTML，还是快速查看网页内容，我们的工具都能在您的浏览器中直接提供实时反馈，确保隐私和速度。",
+            "about_title": "什么是 HTML 查看器？",
+            "about_desc": "HTML 查看器是一个功能强大的在线工具，可让您实时预览和可视化 HTML 代码。无论您是测试代码片段的 Web 开发人员、学习 HTML 的学生，还是审阅标记的设计师，我们的 HTML 查看器都可以为您的 HTML 代码提供即时视觉反馈。只需将 HTML 代码粘贴到编辑器中，即可立即在实时预览窗格中查看渲染的输出。",
+            "why_title": "为什么使用我们的 HTML 查看器？",
+            "why_desc": "我们的免费 HTML 查看器为开发人员和设计人员提供了多种优势。首先，它提供即时视觉反馈，无需创建文件或设置开发环境。其次，它完全基于浏览器，这意味着您可以在任何地方使用它而无需安装软件。第三，它非常适合快速测试、调试和学习 HTML。并排视图可让您同时查看代码及其输出，从而更容易理解 HTML 元素的呈现方式。",
             "features_title": "✨ 功能特性",
-            "features": {
-                "instant": {
-                    "title": "即时渲染",
-                    "desc": "键入或粘贴后立即查看您的代码渲染后的样子"
-                },
-                "security": {
-                    "title": "安全预览",
-                    "desc": "代码在隔离的环境中渲染，保护您的系统"
-                },
-                "privacy": {
-                    "title": "隐私至上",
-                    "desc": "您的代码永远不会离开您的设备；全部在本地处理"
-                }
+            "features_list": {
+                "preview": "<strong>实时预览</strong>：在您键入内容时立即查看呈现的 HTML",
+                "layout": "<strong>并排视图</strong>：代码编辑器和预览窗格一起显示",
+                "syntax": "<strong>语法突出显示</strong>：具有颜色编码语法的易于阅读的代码",
+                "sample": "<strong>示例代码</strong>：加载示例 HTML 以快速开始",
+                "no_install": "<strong>无需安装：</strong>直接在浏览器中运行",
+                "free": "<strong>免费使用：</strong>无需注册或付款",
+                "secure": "<strong>安全：</strong>所有处理都在您的浏览器中进行"
+            },
+            "how_title": "如何使用 HTML 查看器",
+            "how_steps": {
+                "1": "预览将在右侧窗格中自动更新",
+                "2": "使用“加载示例”按钮查看示例 HTML 代码",
+                "3": "单击“清除”以空白编辑器重新开始",
+                "4": "测试不同的 HTML 元素并查看它们如何呈现",
+                "5": "分析渲染的输出和 DOM 结构以调试布局问题或验证 HTML 渲染。"
             },
             "uses_title": "🎯 常见使用场景",
-            "uses": {
-                "learning": {
-                    "title": "📔 学习 HTML",
-                    "desc": "通过实时查看每行代码的运行效果来练习 HTML 技能。"
-                },
-                "quick_preview": {
-                    "title": "👁️ 快速预览",
-                    "desc": "无需创建文件或打开本地浏览器预览，直接测试 HTML 片段。"
-                },
-                "debugging": {
-                    "title": "🐛 调试 HTML",
-                    "desc": "通过将复杂的 HTML 粘贴到隔离的环境中来识别布局和样式问题。"
-                }
-            },
+            "uses_desc": "HTML 查看器是各种 Web 开发任务的必备工具。开发人员使用它们快速测试 HTML 片段，然后将其集成到更大的项目中。学习 HTML 的学生可以尝试不同的标签和属性来了解它们的效果。电子邮件营销人员在发送前使用 HTML 查看器预览电子邮件模板。内容创建者可以直观地看到他们的 HTML 内容在网站上的显示方式。设计人员可以检查标记结构并确保 HTML 元素的正确呈现。",
+            "basics_title": "了解 HTML 基础知识",
+            "basics_desc": "HTML（超文本标记语言）是用于创建网页的标准标记语言。它由标签表示的元素组成，标签告诉浏览器如何显示内容。常见的 HTML 元素包括标题（<h1> 到 <h6>]、段落（<p>]、链接（<a>]、图像（<img>] 和分区））。了解这些基本元素对于 Web 开发至关重要，我们的 HTML 查看器可帮助您直观地了解它们如何协同工作来创建网页。",
+            "tips_title": "HTML 的最佳实践",
+            "tips_desc": "编写 HTML 时，请遵循最佳实践以确保代码干净、可维护。始终使用描述其内容的语义 HTML 元素（例如 <header>、<nav>、<article>）。正确嵌套元素并关闭所有标签。标签名称和属性名称使用小写。为图像添加 alt 属性以实现可访问性。验证您的 HTML 以尽早发现错误。通过适当的缩进保持代码井井有条。这些实践可以带来更好的 SEO、可访问性和可维护性。",
             "faq_title": "❓ 常见问题解答",
             "faq": {
                 "q1": "我可以在这里测试 CSS 吗？",
-                "a1": "可以！您可以在 HTML 代码中使用内联样式或 <style> 标签来测试 CSS 效果。"
+                "a1": "可以！您可以在 HTML 代码中使用内联样式或 <style> 标签来测试 CSS 效果。",
+                "q2": "HTML 查看器支持 CSS 和 JavaScript 吗？",
+                "a2": "HTML 查看器主要关注 HTML 标记。虽然内联 CSS 样式将呈现，但外部 CSS 和 JavaScript 会被沙箱化以确保安全。",
+                "q3": "我的 HTML 代码是否被存储或保存？",
+                "a3": "不，所有 HTML 处理完全在您的浏览器中进行。您的代码永远不会发送到我们的服务器或存储在任何地方。",
+                "q4": "我可以使用这个工具来学习 HTML 吗？",
+                "a4": "绝对地！我们的 HTML 查看器非常适合学习 HTML。您可以尝试不同的标签、属性和结构，看看它们如何呈现。",
+                "q5": "HTML 查看器和代码编辑器有什么区别？",
+                "a5": "HTML 查看器专注于实时预览和可视化 HTML 代码，而代码编辑器提供高级功能（语法突出显示、调试），更适合全面开发。"
             }
-        },
-        "js": {
-            "error_empty": "请先粘贴一些 HTML 代码",
-            "success_render": "✓ HTML 已渲染",
-            "error_render": "✗ 渲染 HTML 时出错",
-            "success_copy": "✓ 代码已复制到剪贴板"
         }
     },
     "js-minifier": {
@@ -808,8 +889,8 @@
                     "desc": "点击复制按钮，将处理后的 JSON 复制到剪贴板"
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "格式化或缩小",
+                    "desc": "根据您的需要选择美化（带缩进的格式）或缩小（压缩为单行）您的 JSON 数据。"
                 }
             },
             "uses_title": "常见 JSON 格式化使用场景",
@@ -998,78 +1079,50 @@
             "subtitle": "将您的 JSON 数据转换为干净、结构化的 CSV 格式"
         },
         "editor": {
+            "label_delimiter": "选择分隔符",
+            "opt_comma": "逗号 (,)",
+            "opt_semicolon": "分号 (;)",
+            "opt_tab": "选项卡",
+            "opt_pipe": "管道 (|)",
             "btn_convert": "转换为 CSV",
-            "btn_clear": "清空",
             "btn_copy": "复制 CSV",
+            "btn_download": "下载 CSV 文件",
             "btn_example": "加载示例",
+            "btn_clear": "清空",
             "label_input": "JSON 输入",
             "ph_input": "[{\"name\": \"张三\", \"age\": 30}, {\"name\": \"李四\", \"age\": 25}]",
             "label_output": "CSV 输出",
             "ph_output": "转换后的 CSV 将显示在此处..."
         },
         "content": {
+            "hero_title": "免费 JSON 到 CSV 转换器",
             "p1": "我们的免费 JSON 转 CSV 转换器是一款功能强大的在线工具，专为开发人员、数据分析师和 IT 专业人员打造。它可以轻松地将复杂的 JSON 数组和对象转换为简单、分栏式的 CSV 格式。无论您是为了进行数据分析、Excel 导入还是系统迁移而处理数据，我们的工具都能在您的浏览器中直接处理，确保速度和 100% 的隐私。",
-            "what_title": "什么是 JSON 转 CSV 转换？",
-            "what_desc": "将 JSON（JavaScript 对象符号）转换为 CSV（逗号分隔值）是将分层、嵌套的数据结构扁平化为表格格式的过程。这种转换对于将来自 API 或数据库的数据导入到电子表格、机器学习模型或需要行/列输入的各种各种数据处理工具中至关重要。",
             "features_title": "主要功能",
-            "features": {
-                "fast": {
-                    "title": "极速转换",
-                    "desc": "在几毫秒内即可获得 CSV 结果"
-                },
-                "secure": {
-                    "title": "隐私至上",
-                    "desc": "所有数据处理均在您的浏览器本地完成，数据绝不上传"
-                },
-                "flat": {
-                    "title": "扁平化处理",
-                    "desc": "即使是嵌套的 JSON 对象也能智能转换为扁平的 CSV 结构"
-                },
-                "copy": {
-                    "title": "一键复制",
-                    "desc": "即时将 CSV 结果复制到剪贴板以便使用"
-                },
-                "free": {
-                    "title": "100% 免费",
-                    "desc": "无限制，无需注册，永久免费"
-                },
-                "universal": {
-                    "title": "多平台兼容",
-                    "desc": "生成的 CSV 可在 Excel、Google 表格和数据库中完美运行"
-                }
+            "features_list": {
+                "fast": "<strong>即时转换：</strong>结果以毫秒为单位",
+                "secure": "<strong>私密且安全：</strong>所有数据都保留在您的浏览器中",
+                "format": "<strong>智能扁平化：</strong>正确处理嵌套的 JSON 对象",
+                "custom": "<strong>自定义分隔符</strong>：在逗号、分号或制表符之间进行选择",
+                "export": "<strong>轻松导出</strong>：复制到剪贴板或下载为 .csv",
+                "free": "<strong>100% 免费：</strong>没有限制，无需注册"
             },
             "uses_title": "常见使用场景",
             "uses": {
+                "api": {
+                    "title": "API数据分析",
+                    "desc": "将 REST API 的 JSON 响应转换为 CSV 格式，以便在电子表格软件中更轻松地进行分析。"
+                },
+                "db": {
+                    "title": "数据库迁移",
+                    "desc": "准备 JSON 数据以导入关系数据库（例如 MySQL 或 PostgreSQL）。"
+                },
                 "analysis": {
                     "title": "数据分析",
                     "desc": "将 API 响应转换为 CSV，以便在 Excel 或 Google 表格中进行深入的数据过滤和透视。"
                 },
-                "migration": {
-                    "title": "系统迁移",
-                    "desc": "将旧系统的 JSON 数据导出为 CSV，以便导入到新的数据库或 CMS 系统。"
-                },
-                "reporting": {
-                    "title": "报表制作",
-                    "desc": "从 JSON 结构化的日志或应用数据中快速生成可读的表格报表。"
-                },
-                "import": {
-                    "title": "批量导入",
-                    "desc": "准备可被各类 ERP、CRM 系统直接识别的 CSV 导入模板。"
-                }
-            },
-            "how_title": "如何将 JSON 转换为 CSV",
-            "how_steps": {
-                "1": {
-                    "title": "粘贴 JSON 数据",
-                    "desc": "将您的 JSON（单个对象或数组）粘贴到左侧输入框。"
-                },
-                "2": {
-                    "title": "执行转换",
-                    "desc": "点击“转换为 CSV”按钮进行即时处理。"
-                },
-                "3": {
-                    "title": "获取并使用",
-                    "desc": "点击“复制 CSV”按钮，即可在 Excel 或其他应用中粘贴使用。"
+                "report": {
+                    "title": "快速报告",
+                    "desc": "从结构化 JSON 日志文件或应用程序数据生成可读的 CSV 报告。"
                 }
             },
             "faq_title": "常见问题解答",
@@ -1079,16 +1132,17 @@
                 "q2": "我可以用它处理多大的文件？",
                 "a2": "由于处理是在您的浏览器本地执行，这取决于您设备的性能。大多数几十 MB 以内的普通数据量都能流畅处理。",
                 "q3": "支持哪些 JSON 格式？",
-                "a3": "它支持标准的 JSON 对象数组，这是转换为 CSV 的最理想格式。"
+                "a3": "它支持标准的 JSON 对象数组，这是转换为 CSV 的最理想格式。",
+                "q4": "最大文件大小是多少？",
+                "a4": "该工具可以处理大型 JSON 文件，但性能取决于设备的内存。"
             }
         },
         "js": {
             "error_empty": "请先输入 JSON 数据",
-            "error_invalid": "无效的 JSON 数据，请检查语法",
-            "success_convert": "✓ 转换成功！",
-            "error_process": "✗ 转换过程中出错：",
+            "error_convert": "转换 JSON 时出错：",
             "error_no_copy": "没有可复制的输出结果",
-            "success_copy": "✓ 已复制到剪贴板！"
+            "success_copy": "✓ 已复制到剪贴板！",
+            "error_no_download": "没有内容可供下载。请先转换 JSON。"
         }
     },
     "json-to-sql-converter": {
@@ -1099,8 +1153,8 @@
             "subtitle": "瞬间将 JSON 数组转换为 SQL 插入脚本"
         },
         "editor": {
-            "label_table": "表名",
-            "ph_table": "例如：users",
+            "label_tablename": "表名",
+            "ph_tablename": "输入表名称（例如用户）",
             "btn_convert": "生成 SQL",
             "btn_clear": "清空内容",
             "btn_copy": "复制 SQL",
@@ -1114,34 +1168,60 @@
             "hero_title": "智能 JSON 转 SQL 生成器",
             "hero_subtitle": "极速从 JSON 数据中提取模式并构建数据库插入脚本",
             "p1": "手动编写数百个 SQL INSERT 命令既耗时又容易出错。我们的免费在线 JSON 转 SQL 转换器可以自动化这一过程。通过上传或粘贴 JSON 数组，您可以立即获得针对 MySQL、PostgreSQL、SQL Server 或 SQLite 优化的结构化 SQL 脚本。整个过程在您的浏览器中离线运行，确保敏感业务数据永不外泄。",
+            "what_title": "何时使用此工具？",
+            "what_desc": "如果您有 JSON 格式的数据集合（例如从 NoSQL 数据库导出或 API 响应），并且需要将其插入到 MySQL、PostgreSQL 或 SQL Server 等关系数据库中，那么此工具非常适合您。它将每个对象格式化为干净的 SQL 语句。",
             "features_title": "主要功能",
-            "features_list": {
-                "schema": "<strong>模式识别：</strong> 自动从 JSON 键名提取数据库列名",
-                "custom": "<strong>自定义表名：</strong> 自由定义目标 SQL 表的名称",
-                "batch": "<strong>批量生成：</strong> 一次处理包含成千上万条记录的 JSON 数组",
-                "secure": "<strong>隐私保护：</strong> 所有的脚本生成都在客户端完成，安全无虞",
-                "format": "<strong>标准语法：</strong> 生成符合各主流 SQL 语法的 INSERT INTO 语句",
-                "free": "<strong>完全免费：</strong> 无阶梯限额，适合开发者日常使用"
+            "features": {
+                "fast": {
+                    "title": "即时生成",
+                    "desc": "眨眼间生成数百条 SQL 行。"
+                },
+                "private": {
+                    "title": "隐私保证",
+                    "desc": "所有处理都是本地的。您的敏感数据保留在您的浏览器中。"
+                },
+                "copy": {
+                    "title": "一键导出",
+                    "desc": "复制整个脚本或下载它以进行迁移。"
+                },
+                "smart": {
+                    "title": "智能逃脱",
+                    "desc": "自动处理字符串中的引号和特殊字符。"
+                },
+                "free": {
+                    "title": "100% 免费",
+                    "desc": "没有限制，无需注册，没有麻烦。"
+                },
+                "db": {
+                    "title": "跨数据库友好",
+                    "desc": "生成与大多数数据库系统兼容的标准 SQL。"
+                }
             },
-            "why_title": "为什么将 JSON 转换为 SQL？",
-            "why_desc": "在现代 Web 开发中，数据常以 JSON 格式在 API 间流传。但当您需要进行长期洞察、归档或复杂查询时，将其存入关系型数据库是最佳选择。该工具能帮您将 JSON 格式的导出文件快速导入到 SQL 数据库中，用于系统迁移、数据备份恢复或是搭建测试环境。它极大地缩短了数据准备周期。",
             "uses_title": "常见使用场景",
             "uses": {
                 "migration": {
                     "title": "数据库迁移",
                     "desc": "将来自 NoSQL（如 MongoDB）的 JSON 导出文件快速转换为关系型数据库所需的 SQL 格式。"
                 },
-                "seeding": {
-                    "title": "数据库填充",
-                    "desc": "利用 JSON 模拟数据快速生成 SQL 脚本，为您的本地开发环境填充初始测试数据。"
+                "import": {
+                    "title": "批量导入",
+                    "desc": "快速加载大量测试或生产数据。"
                 },
-                "rest": {
-                    "title": "API 响应入库",
-                    "desc": "将从第三方 API 获取的 JSON 响应直接转为 SQL 语句，保存到您的生产或分析数据库中。"
+                "api": {
+                    "title": "数据库API",
+                    "desc": "将第三方 API 结果直接转换为 SQL 插入。"
+                },
+                "test": {
+                    "title": "测试数据播种",
+                    "desc": "创建用于填充开发环境的 SQL 脚本。"
                 },
                 "backup": {
                     "title": "数据恢复",
                     "desc": "将以 JSON 格式备份的临时数据片段，在灾难恢复时转回数据库可执行的 SQL 操作。"
+                },
+                "dev": {
+                    "title": "快速原型制作",
+                    "desc": "在开发过程中快速填充新的数据库表。"
                 }
             },
             "how_title": "如何生成 SQL 脚本",
@@ -1159,12 +1239,18 @@
                 "a2": "为了保证 SQL 结构的原子性，目前工具优先处理简单的 JSON 对象数组。对于高度嵌套的属性，建议先进行数据扁平化处理。",
                 "q3": "会有性能或隐私风险吗？",
                 "a3": "完全没有。由于脚本在您的浏览器内存中生成，数据不经过服务器，隐私极高，且生成速度非常快。"
-            }
+            },
+            "tips_title": "专业提示",
+            "tips_list": [
+                "确保您的 JSON 键与您的 SQL 列名称完全匹配。",
+                "在生产数据库上运行生成的 SQL 之前，请务必验证它。",
+                "使用“示例”按钮查看预期的 JSON 结构。"
+            ]
         },
         "js": {
             "error_empty": "请先粘贴 JSON 数据",
-            "error_invalid": "无效的 JSON。建议输入一个对象数组。",
             "success_convert": "✓ SQL 已成功生成！",
+            "error_convert": "生成 SQL 时出错：",
             "error_no_copy": "没有可复制的输出结果",
             "success_copy": "✓ 已复制到剪贴板！"
         }
@@ -1187,41 +1273,108 @@
             "ph_output": "转换后的 XML 将显示在此处..."
         },
         "content": {
+            "hero_title": "免费 JSON 到 XML 转换器",
+            "hero_subtitle": "将 JSON 转换为 XML 的最快方法",
             "p1": "许多旧系统和 SOAP API 仍然需要 XML 格式，而现代开发则几乎全面拥抱 JSON。我们的免费在线 JSON 转 XML 转换器通过在几毫秒内精确映射键、嵌套和属性，完美地解决了这一不匹配问题。无需编写复杂的脚本，只需在浏览器中直接转换您的数据片段，同时享受本地处理带来的隐私保障。",
+            "what_title": "什么是 JSON 到 XML 转换？",
+            "what_desc": "JSON 到 XML 转换是将 JSON（现代 Web 应用程序中流行的轻量级格式）结构化的数据转换为 XML（企业系统、SOAP 服务和配置文件中常用的标记语言）的过程。我们的工具弥补了这一差距，使数据转换无缝。",
             "features_title": "主要功能",
             "features": {
                 "instant": {
                     "title": "即时转换",
                     "desc": "实时生成符合语法、格式规整的 XML"
                 },
-                "nesting": {
-                    "title": "保留层级",
-                    "desc": "智能处理深度嵌套的 JSON 结构并将其映射为 XML 标签"
-                },
                 "privacy": {
                     "title": "隐私至上",
                     "desc": "所有代码均在您的本地环境处理，绝对隐私"
                 },
-                "formatting": {
-                    "title": "美化输出",
-                    "desc": "生成的 XML 具有合理的缩进，清晰易读"
+                "copy": {
+                    "title": "轻松导出",
+                    "desc": "复制到剪贴板或直接使用输出。"
+                },
+                "format": {
+                    "title": "干净的 XML",
+                    "desc": "生成格式良好且可读的 XML 代码。"
                 },
                 "free": {
                     "title": "100% 免费",
                     "desc": "无限制，免注册即可使用专业级工具"
+                },
+                "offline": {
+                    "title": "离线能力",
+                    "desc": "页面加载后无需互联网即可工作。"
                 }
             },
-            "how_to": {
-                "step1": "在输入框中粘贴您的 <strong>JSON 代码</strong>",
-                "step2": "点击<strong>“转换为 XML”</strong>按钮执行转换",
-                "step3": "<strong>复制</strong>结果并在您的应用中使用"
+            "uses_title": "常见用例",
+            "uses": {
+                "migration": {
+                    "title": "系统迁移",
+                    "desc": "转换 JSON 数据以导入到基于 XML 的旧系统中。"
+                },
+                "integration": {
+                    "title": "API集成",
+                    "desc": "为需要 XML 输入的 SOAP API 或 REST API 准备数据。"
+                },
+                "config": {
+                    "title": "配置转换",
+                    "desc": "将 JSON 配置文件转换为 XML 格式。"
+                },
+                "enterprise": {
+                    "title": "企业服务",
+                    "desc": "标准化企业服务总线和中间件的数据。"
+                },
+                "docs": {
+                    "title": "技术文档",
+                    "desc": "生成技术指南或规范的 XML 片段。"
+                },
+                "export": {
+                    "title": "数据导出",
+                    "desc": "轻松将结构化数据导出为 XML 格式以进行报告。"
+                }
+            },
+            "how_title": "如何使用",
+            "how_steps": {
+                "1": {
+                    "title": "粘贴 JSON",
+                    "desc": "将 JSON 代码粘贴到“JSON 输入”字段中。"
+                },
+                "2": {
+                    "title": "转变",
+                    "desc": "单击“转换为 XML”以生成输出。"
+                },
+                "3": {
+                    "title": "导出结果",
+                    "desc": "复制生成的 XML 并在您的项目中使用它。"
+                }
+            },
+            "faq_title": "常见问题解答",
+            "faq": {
+                "q1": "它支持嵌套 JSON 吗？",
+                "a1": "是的，它通过创建分层 XML 标签来处理复杂的嵌套对象和数组。",
+                "q2": "我的数据安全吗？",
+                "a2": "绝对地。处理完全在您的浏览器中使用 JavaScript 完成。",
+                "q3": "我可以加载一个例子吗？",
+                "a3": "是的，单击“加载示例”即可查看转换演示。",
+                "q4": "有尺寸限制吗？",
+                "a4": "性能取决于浏览器的内存，但它可以轻松处理大多数文件。",
+                "q5": "它使用任何外部 API 吗？",
+                "a5": "不，它是一个独立的工具，可以在您的设备上本机运行。",
+                "q6": "XML 是否已格式化？",
+                "a6": "是的，输出是“漂亮打印”的，并具有适当的缩进以提高可读性。"
+            },
+            "tips_title": "专业提示",
+            "tips_list": {
+                "1": "在转换之前验证您的 JSON 以避免语法错误。",
+                "2": "转换多个文件时，使用“清除”按钮重新开始。",
+                "3": "检查 XML 标记以确保它们与您预期的目标架构匹配。",
+                "4": "如果您不确定输入格式，请使用“加载示例”。",
+                "5": "将此页面添加为书签以便快速访问您的开发工具。"
             }
         },
         "js": {
             "error_empty": "请先输入 JSON 数据",
-            "error_invalid": "无效的 JSON，请检查语法",
             "success_convert": "✓ 转换成功！",
-            "error_process": "✗ 转换出错：",
+            "error_convert": "转换 JSON 时出错：",
             "error_no_copy": "没有可复制的 XML",
             "success_copy": "✓ 已复制到剪贴板！"
         }
@@ -1232,15 +1385,6 @@
             "description": "将 JSON 数据转换为 YAML 格式 - 快速、安全且易于使用",
             "h1": "JSON 到 YAML 转换器",
             "subtitle": "只需点击一下，即可将您的 JSON 转换为 YAML"
-        },
-        "editor": {
-            "label_input": "JSON 输入",
-            "ph_input": "在此粘贴您的 JSON...",
-            "btn_convert": "转换为 YAML",
-            "btn_clear": "清空内容",
-            "btn_copy": "复制内容",
-            "label_output": "YAML 输出",
-            "ph_output": "转换后的 YAML 将显示在此处..."
         },
         "content": {
             "hero_title": "免费 JSON 转 YAML 转换器",
@@ -1258,40 +1402,48 @@
                     "title": "隐私至上",
                     "desc": "所有数据处理均在您的浏览器本地完成"
                 },
-                "indentation": {
-                    "title": "智能缩进",
-                    "desc": "自动保持正确的层次结构和格式"
-                },
-                "array": {
-                    "title": "数组支持",
-                    "desc": "完美转换复杂的 JSON 数组和列表"
-                },
                 "copy": {
                     "title": "一键导出",
                     "desc": "即时将 YAML 结果复制到剪贴板以便使用"
                 },
+                "format": {
+                    "title": "干净的格式",
+                    "desc": "生成良好缩进的 YAML 输出"
+                },
                 "free": {
                     "title": "100% 免费",
                     "desc": "无限制，无需注册"
+                },
+                "offline": {
+                    "title": "客户端",
+                    "desc": "无需向服务器发送数据即可工作"
                 }
             },
             "uses_title": "🎯 常见使用场景",
             "uses": {
-                "devops": {
-                    "title": "🚀 DevOps 工程师",
-                    "desc": "将 JSON 格式的配置转换为 Kubernetes、Docker 或 CI/CD 流程所需的 YAML。"
+                "docker": {
+                    "title": "码头工人",
+                    "desc": "将 JSON 容器配置转换为 Docker Compose YAML。"
                 },
-                "developer": {
-                    "title": "👨‍💻 开发人员",
-                    "desc": "为应用程序和微服务创建更具可读性的配置文件。"
+                "config": {
+                    "title": "配置文件",
+                    "desc": "将 JSON 设置转换为 YAML 配置文件。"
                 },
-                "kubernetes": {
-                    "title": "☸️ Kubernetes",
-                    "desc": "将 API 产生的 JSON 有效载荷转换为 K8s 资源清单（Manifests）。"
+                "cicd": {
+                    "title": "CI/CD 管道",
+                    "desc": "从 JSON 数据准备 YAML 管道定义。"
                 },
-                "automation": {
-                    "title": "🤖 自动化任务",
-                    "desc": "为 Ansible、SaltStack 或其他基于 YAML 的自动化框架准备输入数据。"
+                "cloud": {
+                    "title": "云提供商配置",
+                    "desc": "将 JSON 数据转换为 YAML 格式以供云平台使用。"
+                },
+                "data": {
+                    "title": "数据转换",
+                    "desc": "针对不同的数据工具在 JSON 和 YAML 之间切换。"
+                },
+                "tools": {
+                    "title": "开发运营工具",
+                    "desc": "为需要 YAML 的工具正确格式化数据。"
                 }
             },
             "how_title": "📚 如何使用",
@@ -1309,17 +1461,56 @@
                     "desc": "点击复制按钮，即可在您的项目中使用处理后的内容。"
                 }
             },
+            "samples_title": "转换样本",
+            "samples": [
+                {
+                    "title": "基本对象",
+                    "json": "{ \"name\": \"反重力\", \"version\": \"1.0\" }",
+                    "yaml": "名称：反重力\n版本：1.0"
+                },
+                {
+                    "title": "数组示例",
+                    "json": "[“Java”、“Python”、“Go”]",
+                    "yaml": "- 爪哇\n- 蟒蛇\n- 去"
+                }
+            ],
             "faq_title": "❓ 常见问题解答",
             "faq": {
                 "q1": "它支持大的 JSON 文件吗？",
-                "a1": "是的，它可以在您的浏览器中高效处理大多数大型配置文件的转换场景。"
+                "a1": "是的，它可以在您的浏览器中高效处理大多数大型配置文件的转换场景。",
+                "q2": "安全吗？",
+                "a2": "是的，所有处理都在您的浏览器本地进行。",
+                "q3": "支持数组吗？",
+                "a3": "是的，它可以处理复杂的 JSON 结构，包括数组和嵌套对象。",
+                "q4": "YAML 比 JSON 更好吗？",
+                "a4": "YAML 通常更易于人类阅读和编写，而 JSON 通常更适合机器处理。",
+                "q5": "我可以离线使用吗？",
+                "a5": "是的，一旦加载，该工具就可以离线工作，因为它使用本地 JavaScript。"
+            },
+            "tips_title": "专业提示",
+            "tips_list": {
+                "1": "转换前确保您的 JSON 有效。",
+                "2": "使用“示例”按钮查看转换的工作原理。",
+                "3": "YAML 区分大小写，就像 JSON 一样。",
+                "4": "检查生成的 YAML 中的缩进。",
+                "5": "轻松清除所有数据，重新开始。"
             }
+        },
+        "editor": {
+            "btn_convert": "转换为 YAML",
+            "btn_clear": "清空内容",
+            "btn_copy": "复制内容",
+            "btn_example": "例子",
+            "label_input": "JSON 输入",
+            "ph_input": "在此粘贴您的 JSON...",
+            "label_output": "YAML 输出",
+            "ph_output": "转换后的 YAML 将显示在此处..."
         },
         "js": {
             "error_empty": "请先提供一些 JSON 输入内容",
             "success_convert": "✓ 转换成功！",
             "error_convert": "✗ 转换 JSON 时出错：",
-            "no_copy": "没有可复制的 YAML 内容",
+            "error_no_copy": "无需复制 YAML。请先转换 JSON。",
             "success_copy": "✓ 已复制到剪贴板！"
         }
     },
@@ -1333,52 +1524,53 @@
         "editor": {
             "label_input": "输入经过编码的 JWT",
             "ph_input": "在此粘贴您的 JWT 令牌 (xxxxx.yyyyy.zzzzz)",
+            "btn_decode": "解码智威汤逊",
             "btn_clear": "清空",
-            "btn_copy": "复制数据",
-            "label_header": "Header (头部)",
+            "btn_example": "例子",
             "label_payload": "Payload (数据载荷)",
             "label_signature": "Signature (签名)",
-            "info_signature": "签名已包含在令牌中"
+            "note_signature": "◈ 注意：签名验证需要秘钥"
         },
         "content": {
             "hero_title": "专业的 JWT 调试工具",
             "hero_subtitle": "即时解析 JWT 信息 - 安全查阅令牌中的声明与元数据",
             "p1": "JSON Web Tokens (JWT) 常用于现代 Web 应用的身份验证。我们的免费在线 JWT 解码器允许您在不泄露私钥的情况下，查看任何 JWT 令牌内部包含的信息。只需粘贴经过编码的令牌，即可瞬间查看其算法标识、过期时间（exp）、签发机构（iss）以及自定义数据载荷。它是开发人员调试身份验证流程和验证令牌有效性的利器。",
+            "what_title": "ðŸ” 什么是 JWT？",
+            "what_desc": "JSON Web Token (JWT) 是一种紧凑、URL 安全的方式，用于表示两方之间的声明。 JWT 由三部分组成：Header（算法和令牌类型]、Payload（声明/数据）和 Signature（验证），用点分隔。",
             "features_title": "主要功能",
-            "features_list": {
-                "fast": "<strong>即时解码：</strong> 所有的 Base64Url 解码过程都在您粘贴的同时瞬间完成",
-                "color": "<strong>彩色语法高亮：</strong> 为 Header 和 Payload 提供区分明显的颜色标注，提升阅读体验",
-                "universal": "<strong>支持广泛：</strong> 兼容所有基于标准 JWT 规范生成的令牌，无论是什么语言编写",
-                "secure": "<strong>绝对隐私：</strong> 所有的解码工作都在您的浏览器本地执行，您的 Token 不会被发送到任何服务器",
-                "validation": "<strong>自动格式化：</strong> 自动美化解码后的 JSON 结构，方便进行逻辑查阅",
-                "free": "<strong>100% 免费：</strong> 专业级调试工具，无需注册或订阅"
+            "features": {
+                "instant": {
+                    "title": "即时解码",
+                    "desc": "在几毫秒内解码 JWT"
+                },
+                "structured": {
+                    "title": "结构化视图",
+                    "desc": "分别查看标头、有效负载和签名"
+                },
+                "privacy": {
+                    "title": "隐私第一",
+                    "desc": "所有解码都在您的浏览器中进行"
+                }
             },
             "uses_title": "为什么使用 JWT 解码器？",
             "uses": {
-                "debugging": {
-                    "title": "调试身份验证",
-                    "desc": "在排查“未授权”错误时，快速检查令牌是否已过期或其 Payload 中是否缺少必要的权限声明。"
+                "debug": {
+                    "title": "调试",
+                    "desc": "通过检查 JWT 内容来调试身份验证问题"
                 },
-                "validation": {
-                    "title": "验证声明 (Claims)",
-                    "desc": "确认后端服务器签发的用户信息（如用户 ID、角色）与您的预期完全一致。"
+                "validate": {
+                    "title": "○…验证",
+                    "desc": "验证 JWT 声明和过期时间"
                 },
-                "security": {
-                    "title": "安全审计",
-                    "desc": "检查您的令牌中是否意外包含了敏感的私密信息，从而及时优化安全策略。"
+                "learn": {
+                    "title": "学习",
+                    "desc": "了解 JWT 结构和组件"
                 },
-                "learning": {
-                    "title": "理解 JWT 结构",
-                    "desc": "通过可视化拆解“头部、负载、签名”三部分，帮助初学者快速掌握 JWT 的运作原理。"
+                "dev": {
+                    "title": "§发展",
+                    "desc": "在您的应用程序中测试 JWT 生成和解析"
                 }
             },
-            "how_title": "如何解码您的 JWT",
-            "how_steps": [
-                "<strong>复制</strong>您从 API 或应用中获取的完整加密 JWT 字符串",
-                "<strong>粘贴</strong>到顶部的紫色边框输入框中",
-                "即时在下方查看分解后的 <strong>Header</strong> 和 <strong>Payload</strong>",
-                "点击<strong>“复制数据”</strong>将解码后的 JSON 信息提取到剪贴板"
-            ],
             "faq_title": "常见问题解答",
             "faq": {
                 "q1": "它会验证签名吗？",
@@ -1391,97 +1583,9 @@
         },
         "js": {
             "error_empty": "请先粘贴一个 JWT 令牌",
-            "error_invalid": "无效的 JWT 格式（应为三段式结构）",
+            "error_invalid_format": "JWT 格式无效。 JWT 应该由点分隔的 3 个部分组成。",
             "success_decode": "✓ JWT 解码成功！",
-            "error_no_copy": "没有可复制的结果",
-            "success_copy": "✓ 内容已复制到剪贴板！"
-        }
-    },
-    "sqlite-to-mysql": {
-        "meta": {
-            "title": "免费 SQLite 转 MySQL 转换器 - 在线转换工具",
-            "description": "即时将您的 SQLite 数据库转储文件转换为 MySQL 兼容的 SQL 格式。快速、安全且易于使用。",
-            "h1": "SQLite 转 MySQL 转换器",
-            "subtitle": "瞬间将 SQLite 转储文件转换为 MySQL 兼容格式"
-        },
-        "editor": {
-            "label_input": "SQLite 输入 (SQL 转储)",
-            "ph_input": "在此粘贴您的 SQLite .sql 转储内容...",
-            "btn_convert": "转换为 MySQL",
-            "btn_clear": "清空",
-            "btn_copy": "复制结果",
-            "label_output": "MySQL 输出",
-            "ph_output": "MySQL 兼容的 SQL 将显示在此处..."
-        },
-        "content": {
-            "hero_title": "SQLite 到 MySQL 迁移工具",
-            "hero_subtitle": "简化数据库迁移流程 - 自动处理语法差异",
-            "p1": "将数据库从 SQLite 迁移到 MySQL 可能由于语法差异（如自增键、引号处理和数据类型）而变得复杂。我们的免费在线 SQLite 转 MySQL 转换器通过自动转换这些差异，简化了这一过程。只需粘贴您的 SQLite 转储文件，即可即时获得准备好导入到 MySQL 数据库的脚本。所有操作都在本地完成，确保您的数据安全。"
-        },
-        "js": {
-            "error_empty": "请先粘贴 SQLite 转储内容",
-            "success_convert": "✓ 转换成功！",
-            "error_no_copy": "没有可复制的结果",
-            "success_copy": "✓ 已复制到剪贴板！"
-        }
-    },
-    "sql-formatter": {
-        "meta": {
-            "title": "免费 SQL 格式化工具 - 在线美化 SQL",
-            "description": "使用我们免费的在线 SQL 格式化工具，美化并整理您的 SQL 查询语句。支持多种 SQL 方言。",
-            "h1": "SQL 格式化工具",
-            "subtitle": "只需点击一下，即可美化并缩进您的 SQL 代码"
-        },
-        "editor": {
-            "label_input": "SQL 输入",
-            "ph_input": "SELECT * FROM users WHERE id=1;",
-            "btn_format": "格式化 SQL",
-            "btn_clear": "清空",
-            "btn_copy": "复制 SQL",
-            "label_output": "格式化后的 SQL",
-            "ph_output": "美化后的 SQL 将显示在此处..."
-        },
-        "content": {
-            "hero_title": "专业 SQL 美化工具",
-            "hero_subtitle": "让复杂的查询语句变得清晰易读",
-            "p1": "深层嵌套且缺乏缩进的 SQL 查询不仅难以阅读，更难以调试。我们的免费在线 SQL 格式化工具为您的代码带来专业的清晰度。它不仅能自动处理关键字大写，还能应用智能缩进。支持 MySQL、PostgreSQL、SQL Server 等多种语法。整个过程在您的浏览器中完成，确保您的查询逻辑绝对私密。"
-        },
-        "js": {
-            "error_empty": "请先粘贴 SQL 查询",
-            "success_format": "✓ SQL 格式化成功！",
-            "error_no_copy": "没有可复制的结果",
-            "success_copy": "✓ 已复制到剪贴板！"
-        }
-    },
-    "sql-to-csv-converter": {
-        "meta": {
-            "title": "SQL 转 CSV 转换器 - 免费在线工具",
-            "description": "即时将 SQL INSERT 语句转换为 CSV 格式。快速、准确且安全。",
-            "h1": "SQL 转 CSV 转换器",
-            "subtitle": "轻松将 SQL 数据库数据转换为表格 CSV 格式"
-        },
-        "editor": {
-            "btn_convert": "转换为 CSV",
-            "btn_clear": "清空",
-            "btn_copy": "复制 CSV",
-            "btn_example": "加载示例",
-            "label_input": "SQL 输入 (INSERT 语句)",
-            "ph_input": "INSERT INTO users (name, age) VALUES ('张三', 30);",
-            "label_output": "CSV 输出",
-            "ph_output": "转换后的 CSV 将显示在此处..."
-        },
-        "content": {
-            "hero_title": "SQL 到 CSV 提取工具",
-            "hero_subtitle": "快速将数据库转储转化为可分析的表格数据",
-            "p1": "需要将数据库导出内容导入到 Excel 或 Google 表格中吗？我们的免费在线 SQL 转 CSV 转换器能瞬间解析标准的 SQL INSERT 语句，并将其转换为通用的 CSV 格式。它是数据分析师和开发人员处理数据库备份、审计或跨系统迁移数据时的理想助手。无需安装，100% 浏览器端处理，保障隐私。"
-        },
-        "js": {
-            "error_empty": "请先输入 SQL INSERT 语句",
-            "error_no_matches": "未找到有效的 INSERT 语句",
-            "success_convert": "✓ SQL 已成功转换为 CSV！",
-            "error_process": "✗ 转换出错：",
-            "error_no_copy": "没有可复制的输出结果",
-            "success_copy": "✓ 已复制到剪贴板！"
+            "error_decode": "✔ 解码 JWT 时出错："
         }
     },
     "markdown-to-html-converter": {
@@ -1492,93 +1596,91 @@
             "subtitle": "只需点击一下，即可将您的 Markdown 转换为 HTML"
         },
         "editor": {
+            "btn_convert": "转换为 HTML",
+            "btn_copy": "复制结果",
+            "btn_download": "下载",
+            "btn_clear": "清空内容",
+            "btn_example": "例子",
             "label_input": "Markdown 输入",
             "ph_input": "在此粘贴您的 Markdown...",
-            "btn_convert": "转换为 HTML",
-            "btn_clear": "清空内容",
-            "btn_copy": "复制结果",
             "label_output": "HTML 输出",
-            "ph_output": "转换后的 HTML 将显示在此处..."
+            "ph_output": "转换后的 HTML 将显示在此处...",
+            "label_preview": "实时预览",
+            "ph_preview": "预览将出现在这里..."
         },
         "content": {
-            "hero_title": "免费 Markdown 转 HTML 转换器",
-            "hero_subtitle": "即时准确地将 Markdown 文档转换为 HTML 格式",
-            "p1": "我们的免费 Markdown 转 HTML 转换器是一个强大的工具，专为开发人员、博主和内容创作者打造。它可以轻松地将 Markdown 文本转换为干净、结构化的 HTML 代码。无论您是在编写博文、准备 GitHub 文档还是创建网页内容，我们的工具都能在您的浏览器中直接处理，确保速度和 100% 的隐私。",
-            "what_title": "什么是 Markdown 转 HTML 转换？",
-            "what_desc": "将 Markdown 转换为 HTML 是将轻量级标记语言转变为用于网页显示的超文本标记语言的过程。Markdown 非常适合编写可读性强的纯文本，而 HTML 则是浏览器渲染这些内容所需的格式。这种转换对于在现代网站、博客和协作平台上展示文档至关重要。",
-            "features_title": "✨ 功能特性",
             "features": {
-                "fast": {
+                "instant": {
                     "title": "即时转换",
-                    "desc": "在几毫秒内获得 HTML 结果"
+                    "desc": "在几毫秒内将 Markdown 转换为 HTML"
                 },
-                "secure": {
-                    "title": "隐私至上",
-                    "desc": "所有数据处理均在您的浏览器本地完成"
+                "preview": {
+                    "title": "实时预览",
+                    "desc": "查看实时呈现的 HTML"
                 },
-                "accurate": {
-                    "title": "准确渲染",
-                    "desc": "正确处理标题、代码块、列表和链接"
-                },
-                "formatting": {
-                    "title": "清晰格式",
-                    "desc": "生成符合标准的、缩进良好的 HTML 代码"
-                },
-                "copy": {
-                    "title": "一键导出",
-                    "desc": "即时将 HTML 结果复制到剪贴板以便使用"
+                "export": {
+                    "title": "复制并下载",
+                    "desc": "轻松复制 HTML 或下载为文件"
                 },
                 "free": {
                     "title": "100% 免费",
                     "desc": "无限制，无需注册"
+                },
+                "privacy": {
+                    "title": "隐私第一",
+                    "desc": "所有转换都发生在您的浏览器中"
+                },
+                "mobile": {
+                    "title": "适合移动设备",
+                    "desc": "在所有设备上完美运行"
                 }
             },
+            "hero_title": "免费 Markdown 转 HTML 转换器",
+            "hero_subtitle": "即时准确地将 Markdown 文档转换为 HTML 格式",
+            "what_title": "什么是 Markdown 转 HTML 转换？",
+            "p1": "我们的免费 Markdown 转 HTML 转换器是一个强大的工具，专为开发人员、博主和内容创作者打造。它可以轻松地将 Markdown 文本转换为干净、结构化的 HTML 代码。无论您是在编写博文、准备 GitHub 文档还是创建网页内容，我们的工具都能在您的浏览器中直接处理，确保速度和 100% 的隐私。",
+            "what_desc": "将 Markdown 转换为 HTML 是将轻量级标记语言转变为用于网页显示的超文本标记语言的过程。Markdown 非常适合编写可读性强的纯文本，而 HTML 则是浏览器渲染这些内容所需的格式。这种转换对于在现代网站、博客和协作平台上展示文档至关重要。",
+            "features_title": "✨ 功能特性",
             "uses_title": "🎯 常见使用场景",
             "uses": {
-                "blogging": {
-                    "title": "📝 博主",
-                    "desc": "快速将您的 Markdown 内容转换为 HTML，以便在各类 CMS 平台上发布。"
+                "docs": {
+                    "title": "📚 文档",
+                    "desc": "将 README 文件和文档转换为 HTML"
                 },
-                "documentation": {
-                    "title": "📖 技术文档",
-                    "desc": "将 README 或技术指南转换为网页格式，供团队或客户查阅。"
+                "blog": {
+                    "title": "✍️ 博客文章",
+                    "desc": "用 Markdown 编写，用 HTML 发布"
                 },
-                "developer": {
-                    "title": "👨‍💻 开发人员",
-                    "desc": "在部署前预览 Markdown 渲染效果，或获取 HTML 源码进行前端集成。"
+                "github": {
+                    "title": "💻 GitHub 项目",
+                    "desc": "将 README.md 文件转换为 HTML"
                 },
-                "content": {
-                    "title": "✍️ 内容创作者",
-                    "desc": "在离线编辑器中编写内容，并瞬间获得用于网页上传的源代码。"
+                "email": {
+                    "title": "📧 电子邮件模板",
+                    "desc": "在 Markdown 中创建电子邮件内容"
                 }
             },
-            "how_title": "📚 如何使用",
-            "how_steps": {
-                "1": {
-                    "title": "粘贴内容",
-                    "desc": "在“Markdown 输入”框中粘贴您的 Markdown 文本。"
-                },
-                "2": {
-                    "title": "运行转换",
-                    "desc": "点击“转换为 HTML”按钮生成结果。"
-                },
-                "3": {
-                    "title": "复制结果",
-                    "desc": "点击复制按钮，即可在您的项目中使用处理后的 HTML。"
-                }
+            "pro_tip": {
+                "title": "💡 专业提示",
+                "desc": "为了获得最佳结果，请使用 CommonMark 定义的标准 Markdown 语法。我们的转换器支持大多数 Markdown 风格，包括 GitHub Flavored Markdown (GFM)。如果您正在处理复杂的文档，请先测试小部分以确保正确转换。"
             },
             "faq_title": "❓ 常见问题解答",
             "faq": {
                 "q1": "它支持 GitHub 风格的 Markdown 吗？",
-                "a1": "是的，它支持表格和任务列表等常见的扩展语法。"
+                "a1": "是的，它支持表格和任务列表等常见的扩展语法。",
+                "q2": "我的内容是私人的吗？",
+                "a2": "绝对地！所有转换均使用 JavaScript 直接在浏览器中进行。您的内容永远不会离开您的设备。",
+                "q3": "支持什么语法？",
+                "a3": "我们的转换器支持标准 Markdown 语法，包括标题、粗体、斜体、列表、链接、图像、代码块、表格等（兼容 GFM）。"
             }
         },
         "js": {
             "error_empty": "请先提供一些 Markdown 输入内容",
-            "success_convert": "✓ 转换成功！",
-            "error_convert": "✗ 转换过程出错：",
-            "no_copy": "没有可复制的 HTML 内容",
-            "success_copy": "✓ 已复制到剪贴板！"
+            "error_general": "转换过程中发生错误",
+            "error_no_copy": "无需复制 HTML。请先转换 Markdown。",
+            "success_copy": "✓ 已复制到剪贴板！",
+            "error_no_download": "无需下载 HTML。请先转换 Markdown。",
+            "example": "# 欢迎使用 Markdown\n\n## 这是一个小标题\n\n这是一个带有**粗体文本**和*斜体文本*的段落。\n\n### 特点\n\n- 易于书写\n- 易于阅读\n- 转换为 HTML\n\n### 代码示例\n\n```javascript\n函数你好（）{\n    console.log(\"你好，世界！\");\n}\n````\n\n> 这是一个块引用\n\n[访问我们的网站](https://example.com)"
         }
     },
     "md5-generator": {
@@ -1592,19 +1694,62 @@
             "label_input": "输入内容",
             "ph_input": "在此输入文本...",
             "btn_generate": "生成 MD5",
-            "btn_clear": "清空内容",
-            "btn_copy": "复制结果",
-            "label_output": "MD5 哈希值"
+            "label_result": "MD5 哈希值",
+            "btn_copy": "复制结果"
         },
         "content": {
             "hero_title": "极速 MD5 哈希生成器",
             "hero_subtitle": "最简单的方式来保护您的数据完整性",
-            "p1": "MD5（信息摘要算法 5）是一种广泛使用的哈希函数，它能产生 128 位的指纹。虽然现在它主要用于校验文件和数据的完整性，但在开发中仍然非常实用。我们的工具支持各种字符集，并在浏览器端直接生成，确保您的原始数据永远不会被上传到服务器。"
+            "p1": "MD5（信息摘要算法 5）是一种广泛使用的哈希函数，它能产生 128 位的指纹。虽然现在它主要用于校验文件和数据的完整性，但在开发中仍然非常实用。我们的工具支持各种字符集，并在浏览器端直接生成，确保您的原始数据永远不会被上传到服务器。",
+            "what_title": "MD5是什么？",
+            "what_desc": "MD5 是一种加密哈希函数，它接受任意长度的输入并生成固定的 128 位哈希值，通常表示为 32 个字符的十六进制数。相同的输入总是产生相同的哈希值，但即使输入的微小变化也会产生完全不同的哈希值。",
+            "features_title": "MD5 优点",
+            "features": {
+                "fast": "<strong>快速处理：</strong>极快的哈希生成",
+                "fixed": "<strong>固定长度：</strong>始终产生 128 位输出",
+                "deterministic": "<strong>确定性：</strong>相同的输入 = 相同的哈希值",
+                "support": "<strong>广泛支持</strong>：适用于所有编程语言"
+            },
+            "uses_title": "ð“Š 常见用例",
+            "uses": {
+                "verify": "<strong>文件验证：</strong>检查文件完整性",
+                "checksum": "<strong>校验和：</strong>验证下载",
+                "cache": "<strong>缓存键</strong>：生成唯一标识符",
+                "integrity": "<strong>数据完整性：</strong>检测更改"
+            },
+            "warning_title": "Ø 安全警告",
+            "warning_desc": "<strong>请勿将 MD5 用于密码散列或安全关键型应用程序！</strong> MD5 的加密方式已被破坏，并且容易受到冲突攻击。对于密码哈希，请使用 bcrypt、Argon2 或 PBKDF2 等现代算法。",
+            "compare_title": "MD5 与其他哈希函数对比",
+            "compare": {
+                "md5": {
+                    "title": "MD5",
+                    "desc1": "128位输出",
+                    "desc2": "加密速度快但不安全"
+                },
+                "sha1": {
+                    "title": "SHA-1",
+                    "desc1": "160位输出",
+                    "desc2": "出于安全目的也已弃用"
+                },
+                "sha256": {
+                    "title": "SHA-256",
+                    "desc1": "256位输出",
+                    "desc2": "如今安全且广泛使用"
+                }
+            },
+            "faq_title": "– 常见问题解答",
+            "faq": {
+                "q1": "MD5 对于密码来说安全吗？",
+                "a1": "不！ MD5 的密码学已被破坏，切勿用于密码散列。请改用 bcrypt、Argon2 或 PBKDF2。",
+                "q2": "我可以反转 MD5 哈希值吗？",
+                "a2": "不，MD5 是一种单向函数 - 您无法反转哈希值来获取原始输入。然而，攻击者可以使用彩虹表来查找输入。",
+                "q3": "我的数据会发送到服务器吗？",
+                "a3": "不！所有 MD5 哈希生成完全在您的浏览器中使用 JavaScript 进行。您的数据永远不会离开您的设备。"
+            }
         },
         "js": {
             "error_empty": "请先输入一些文本",
-            "success_generate": "✓ MD5 生成成功！",
-            "success_copy": "✓ 已复制到剪贴板！"
+            "btn_copied": "复制了！"
         }
     },
     "sql-to-json-converter": {
@@ -1717,11 +1862,11 @@
             "samples": [
                 {
                     "title": "SQL Insert 转 JSON",
-                    "desc": "INSERT INTO users (name, age) VALUES ('Alice', 25); → [{\"name\": \"Alice\", \"age\": 25}]"
+                    "desc": "INSERT INTO users (姓名, 年龄) VALUES ('Alice', 25); → [{“姓名”：“爱丽丝”，“年龄”：25}]"
                 },
                 {
                     "title": "JSON 转 SQL Insert",
-                    "desc": "[{\"id\": 1}] → INSERT INTO table (id) VALUES (1);"
+                    "desc": "[{\"id\": 1}] → INSERT INTO 表(id) VALUES (1);"
                 }
             ],
             "faq_title": "常见问题解答",
@@ -1738,7 +1883,7 @@
         },
         "js": {
             "error_empty": "请先输入要处理的数据",
-            "placeholder_table_name": "users",
+            "placeholder_table_name": "用户",
             "error_general": "转换出错：",
             "error_invalid_array": "错误：输入必须是 JSON 对象数组。",
             "error_empty_array": "错误：JSON 数组为空。",
@@ -2052,7 +2197,7 @@
         },
         "editor": {
             "label_input": "XML 输入",
-            "ph_input": "<root><child>value</child></root>",
+            "ph_input": "<根><子>值</子></根>",
             "btn_format": "格式化 / 美化",
             "btn_minify": "压缩",
             "btn_copy": "复制"
@@ -2380,11 +2525,11 @@
                     "desc": "将 YAML 管道配置转换为 JSON 格式。"
                 },
                 "k8s": {
-                    "title": "Kubernetes",
+                    "title": "库伯内斯",
                     "desc": "将 Kubernetes 的 YAML 资源清单转换为 JSON。"
                 },
                 "docker": {
-                    "title": "Docker Compose",
+                    "title": "Docker 组合",
                     "desc": "将 Docker Compose 的 YAML 文件转换为 JSON。"
                 }
             },

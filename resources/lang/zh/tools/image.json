@@ -9,7 +9,7 @@
         "input": {
             "title": "粘贴 Base64 字符串",
             "desc": "在下方粘贴您的代码以预览图片",
-            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
+            "placeholder": "数据：图像/png；base64，iVBORw0KGgo...",
             "btn_decode": "解码图片"
         },
         "result": {
@@ -242,11 +242,11 @@
                     "desc": "最适合照片和色彩复杂的图片。采用有损压缩方案。"
                 },
                 "png": {
-                    "title": "PNG",
+                    "title": "巴布亚新几内亚",
                     "desc": "最适合 Logo、插图和带有透明背景的图片。支持无损或有损优化。"
                 },
                 "webp": {
-                    "title": "WebP",
+                    "title": "网络P",
                     "desc": "新一代现代格式。在相同画质下，体积显著小于 JPG/PNG。"
                 }
             },
@@ -411,7 +411,7 @@
         "editor": {
             "image_alt": "预览",
             "output_format": "输出格式：",
-            "format_short": "PNG",
+            "format_short": "巴布亚新几内亚",
             "btn_convert": "转换为 PNG 并下载"
         },
         "content": {
@@ -756,6 +756,13 @@
                     "邮件正文嵌入（邮件客户端对 SVG 的支持非常糟糕）。",
                     "视频剪辑软件或简单的绘图工具（如 Canva, Paint 等无法直接编辑 SVG）。"
                 ]
+            },
+            "faq": {
+                "title": "常见问题解答",
+                "q1": "为什么将 SVG 转换为 PNG？",
+                "a1": "PNG 格式受到所有浏览器和应用程序的普遍支持，而 SVG 可能存在兼容性问题。转换为 PNG 对于电子邮件签名、社交媒体和不支持矢量图形的应用程序非常有用。",
+                "q2": "PNG 是否像 SVG 一样支持透明度？",
+                "a2": "是的！ PNG 支持透明度，非常适合具有透明背景的徽标和图形。我们的转换器在从 SVG 转换为 PNG 时保留透明度。"
             }
         },
         "js": {

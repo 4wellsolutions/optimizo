@@ -319,7 +319,7 @@
             "btn_clear": "清除",
             "btn_copy": "复制",
             "label_output": "输出 (camelCase)",
-            "ph_output": "helloWorldExample"
+            "ph_output": "helloWorld示例"
         },
         "content": {
             "hero_title": "小驼峰式命名转换器",
@@ -371,7 +371,7 @@
                     "desc": "非常适合在 RESTful 和 GraphQL API 中命名 JSON 键。"
                 },
                 "react": {
-                    "title": "React Props",
+                    "title": "反应道具",
                     "desc": "React 和 Vue 组件中命名 props 和 state 的标准。"
                 },
                 "css": {
@@ -385,18 +385,18 @@
                 "2": "它将第一个单词完全小写。",
                 "3": "它将所有后续单词的首字母大写。",
                 "4": "结果合并为不带空格的单个字符串。",
-                "5": ""
+                "5": "在代码、变量名称或 API 端点中使用转换后的驼峰式文本，以实现一致的命名约定。"
             },
             "examples_title": "示例",
             "examples": {
                 "var": "变量名称",
-                "var_val": "variableName",
+                "var_val": "变量名",
                 "func": "获取用户数据",
-                "func_val": "fetchUserData",
+                "func_val": "获取用户数据",
                 "prop": "背景颜色",
-                "prop_val": "backgroundColor",
+                "prop_val": "背景颜色",
                 "method": "点击提交时",
-                "method_val": "onSubmitClick"
+                "method_val": "点击提交"
             },
             "faq_title": "常见问题解答",
             "faq": {
@@ -445,22 +445,22 @@
                 "upper": {
                     "title": "全大写 (UPPERCASE)",
                     "desc": "将每个字符转换为其大写形式。非常适合标题和强调。",
-                    "example": "HELLO WORLD"
+                    "example": "你好世界"
                 },
                 "lower": {
                     "title": "全小写 (lowercase)",
                     "desc": "将所有字符转换为小写字母。非常适合清理输入数据。",
-                    "example": "hello world"
+                    "example": "你好世界"
                 },
                 "title": {
                     "title": "词首字母大写 (Title Case)",
                     "desc": "将每个单词的首字母大写。这是标题和书名的标准格式。",
-                    "example": "Hello World"
+                    "example": "你好世界"
                 },
                 "sentence": {
                     "title": "句首字母大写 (Sentence Case)",
                     "desc": "仅将每句的第一个字母大写。遵循标准散文规则。",
-                    "example": "Hello World."
+                    "example": "你好世界。"
                 }
             },
             "uses_title": "专业应用",
@@ -496,7 +496,7 @@
                 "2": "句首字母大写是长段落和描述中最具可读性的格式。",
                 "3": "始终使用“复制到剪贴板”按钮，以避免手动选择错误。",
                 "4": "将我们的大小写转换器与字数统计器结合使用，以实现完全的编辑控制。",
-                "5": ""
+                "5": "使用案例转换来保持整个代码库的一致性并提高代码的可读性。"
             },
             "faq_title": "常见问题解答",
             "faq": {
@@ -1314,12 +1314,12 @@
         },
         "editor": {
             "label_input": "输入文本",
-            "ph_input": "my url slug",
+            "ph_input": "我的网址段",
             "btn_convert": "转换为 kebab-case",
             "btn_clear": "清除",
             "btn_copy": "复制",
             "label_output": "输出 (kebab-case)",
-            "ph_output": "my-url-slug"
+            "ph_output": "我的 url slug"
         },
         "content": {
             "hero_title": "Kebab Case 转换器",
@@ -1406,11 +1406,11 @@
             "samples": [
                 {
                     "title": "URL 别名",
-                    "desc": "My Web Page → my-web-page"
+                    "desc": "我的网页 → 我的网页"
                 },
                 {
                     "title": "CSS 类名",
-                    "desc": "Header Navigation → header-navigation"
+                    "desc": "标题导航 → 标题导航"
                 }
             ],
             "faq_title": "常见问题解答",
@@ -1661,12 +1661,12 @@
         },
         "editor": {
             "label_input": "输入文本",
-            "ph_input": "my class name",
+            "ph_input": "我的班级名称",
             "btn_convert": "转换为大驼峰命名",
             "btn_clear": "清除",
             "btn_copy": "复制",
             "label_output": "输出 (PascalCase)",
-            "ph_output": "MyClassName"
+            "ph_output": "我的班级名称"
         },
         "content": {
             "hero_title": "大驼峰命名转换器",
@@ -1753,11 +1753,11 @@
             "samples": [
                 {
                     "title": "类名",
-                    "desc": "user profile controller → UserProfileController"
+                    "desc": "用户配置文件控制器 → UserProfileController"
                 },
                 {
                     "title": "接口",
-                    "desc": "api response type → ApiResponseType"
+                    "desc": "api 响应类型 → ApiResponseType"
                 }
             ],
             "faq_title": "常见问题解答",
@@ -2034,21 +2034,25 @@
                 {
                     "title": "复制并使用",
                     "desc": "复制格式化后的文本以便在您的文档中使用。"
+                },
+                {
+                    "title": "最终实施",
+                    "desc": "将干净的文本粘贴到目标文档或应用程序中。"
                 }
             ],
             "examples_title": "转换示例",
             "samples": [
                 {
-                    "before": "THIS IS A TEST. i am a student.",
-                    "after": "This is a test. I am a student."
+                    "before": "这是一个测试。我是一名学生。",
+                    "after": "这是一个测试。我是一名学生。"
                 },
                 {
-                    "before": "hello WORLD! HOW ARE YOU?",
-                    "after": "Hello world! How are you?"
+                    "before": "你好世界！你好吗？",
+                    "after": "你好世界！你好吗？"
                 },
                 {
-                    "before": "uNSAFe caPITalizAtion. fix it.",
-                    "after": "Unsafe capitalization. Fix it."
+                    "before": "不安全的资本化。修复它。",
+                    "after": "不安全的大写。修复它。"
                 }
             ],
             "faq_title": "常见问题解答",
@@ -2107,12 +2111,12 @@
         },
         "editor": {
             "label_input": "输入文本",
-            "ph_input": "my variable name",
+            "ph_input": "我的变量名",
             "btn_convert": "转换为 snake_case",
             "btn_clear": "清除",
             "btn_copy": "复制",
             "label_output": "输出 (snake_case)",
-            "ph_output": "my_variable_name"
+            "ph_output": "我的变量名"
         },
         "content": {
             "p1": "使用我们的免费在线转换器将您的文本转换为 snake_case 格式。Snake_case 使用小写字母并以底划线分隔单词，具有很高的可读性且对机器友好。",
@@ -2282,12 +2286,12 @@
         },
         "editor": {
             "label_input": "输入文本",
-            "ph_input": "hello world",
+            "ph_input": "你好世界",
             "btn_convert": "转换为 StUdLy CaSe",
             "btn_clear": "清除",
             "btn_copy": "复制",
             "label_output": "输出 (StUdLy CaSe)",
-            "ph_output": "HeLlO wOrLd"
+            "ph_output": "你好世界"
         },
         "content": {
             "p1": "使用我们的免费在线转换器将您的文本转换为 StUdLy CaSe 格式。Studly case 会随机交替大写和小写字母，非常适合表情包、创意简历和独特的主页用户名。",
