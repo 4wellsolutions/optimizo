@@ -48,7 +48,7 @@
             "serp_features_title": "Bing SERP 機能を分析",
             "sf_snippets_title": "強調スニペット",
             "sf_snippets_desc": "Bing はしばしば検索結果の最上部（ポジションゼロ）に「インテリジェントな回答」を提供します。あなたのコンテンツがこれらの注目度の高い場所を確保できているか確認しましょう。",
-            "sf_places_title": "Bing Places",
+            "sf_places_title": "Bing プレイス",
             "sf_places_desc": "Google ローカルパックの Bing 版です。地域ビジネスにとって非常に重要です。「地域」機能を使用して、あなたの <strong>Bing Places</strong> の順位を確認してください。",
             "sf_visual_title": "ビジュアル検索",
             "sf_visual_desc": "Bing はビジュアル検索結果を非常に重視しています。画像中心の SERP レイアウトであなたの画像がどのように表示されるか監視しましょう。",
@@ -90,7 +90,7 @@
             "stop": "停止",
             "processing": "リンクを順次処理中...",
             "processed": "処理済み",
-            "of": "/",
+            "of": "の",
             "links": "個のリンク",
             "checking": "リンクを確認中..."
         },
@@ -128,7 +128,7 @@
             "cc_4": "❌ <strong>外部リンクの劣化:</strong> リンク先の外部サイトがコンテンツを削除・移動",
             "cc_5": "❌ <strong>ドメインの失効:</strong> リンク先のウェブサイトが閉鎖",
             "cc_6": "❌ <strong>プロトコルの変更:</strong> 適切なリダイレクトなしでの HTTP から HTTPS への移行",
-            "best_practices_title": ""
+            "best_practices_title": "壊れたリンクを管理するためのベスト プラクティス"
         },
         "benefits": {
             "ux_title": "ユーザー体験 (UX)",
@@ -139,9 +139,9 @@
             "maintenance_desc": "サイトの評判や検索順位が下がる前に、問題のあるリンクを素早く特定し修正できます。"
         },
         "link_types": {
-            "type1_title": "🔴 404 Not Found",
+            "type1_title": "🔴 404 見つかりません",
             "type1_desc": "最も一般的なリンク切れ。ページがサーバー上にもはや存在しません。",
-            "type2_title": "🟡 301/302 Redirects",
+            "type2_title": "🟡 301/302 リダイレクト",
             "type2_desc": "ページが移動しました。厳密には「切れ」ではありませんが、多すぎると速度を低下させます。",
             "type3_title": "サーバーエラー",
             "type3_desc": "サーバー側でエラーが発生しています。即時の対応が必要です。",
@@ -340,7 +340,7 @@
         },
         "form": {
             "label": "ウェブサイトのURLを入力",
-            "placeholder": "https://domain.com",
+            "placeholder": "https://example.com",
             "button": "メタタグを分析"
         },
         "results": {
@@ -511,7 +511,7 @@
             "title": "PDFレポート - プロフェッショナルな SEO 監査レポート"
         },
         "interface": {
-            "brand_name": "Optimizo",
+            "brand_name": "オプティミゾ",
             "cover_title": "SEO 監査レポート",
             "overall_score": "総合スコア",
             "generated_on": "生成日",
@@ -536,15 +536,15 @@
         },
         "form": {
             "url_label": "確認する URL を入力 (1行に1つ、最大10件)",
-            "url_placeholder": "https://domain.com",
+            "url_placeholder": "https://example.com\nhttps://another-site.com\nhttps://サードサイト.com",
             "canonical_check": "ドメインのカノニカル (www の有無) も確認する",
             "user_agent_label": "ユーザーエージェント",
             "user_agent_default": "デフォルト (ブラウザ)",
-            "user_agent_googlebot": "Googlebot",
-            "user_agent_bingbot": "Bingbot",
+            "user_agent_googlebot": "グーグルボット（グーグル）",
+            "user_agent_bingbot": "ビングボット (Bing)",
             "user_agent_facebook": "Facebook クローラー",
-            "user_agent_iphone": "iPhone",
-            "user_agent_android": "Android",
+            "user_agent_iphone": "iPhone（サファリ）",
+            "user_agent_android": "アンドロイド（クローム）",
             "button": "URL を確認"
         },
         "loading": {
@@ -631,6 +631,57 @@
             "a4": "はい、セキュリティと SEO のために必須のステップです。サーバーレベル（Nginx または Apache）での 301 リダイレクトが推奨されます。",
             "q5": "リダイレクトは何回まで許容されますか？",
             "a5": "理想的には 0 回または 1 回です。Google は通常 5 ホップまで追跡しますが、ホップごとに読み込み時間が増加します。"
+        }
+    },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Hreflang Checker - 無料のオンラインタグ検証ツール",
+            "description": "hreflang タグを検証して、Google がターゲット地域や言語に適した URL を表示しているか確認します。",
+            "h1": "フレフランチェッカー",
+            "subtitle": "国際 SEO のための hreflang 属性を抽出し検証する無料ツール。"
+        },
+        "form": {
+            "url_label": "確認する URL を入力",
+            "url_placeholder": "https://example.com/fr",
+            "user_agent_label": "ユーザーエージェント",
+            "user_agent_default": "デフォルト (ブラウザ)",
+            "user_agent_googlebot": "Googlebot (デスクトップ)",
+            "user_agent_bingbot": "Bingbot (デスクトップ)",
+            "button": "Hreflang タグを確認"
+        },
+        "content": {
+            "main_title": "Hreflang タグチェッカー",
+            "main_subtitle": "国際的なコンテンツが適切なオーディエンスに届くようにしましょう。hreflang の実装を検証し、一般的な SEO エラーを修正します。",
+            "intro": "Hreflang タグは、複数の言語や国にサービスを提供するウェブサイトにとって不可欠です。当ツールの無料ツールは、ページの HTML ヘッドおよび HTTP ヘッダーから `rel=\"alternate\" hreflang=\"x\"` タグを抽出して検証します。相互（リターン）タグをチェックし、Google や他の検索エンジンがローカライズされたコンテンツを正しくインデックスすることを保証します。",
+            "features_title": "なぜ Hreflang タグを確認するのか？",
+            "feature1_title": "相互タグの検証",
+            "feature1_desc": "Hreflang タグはペアで機能する必要があります。当ツールは自動的に、ページ A がページ B にリンクし、ページ B がページ A にリンクバックしているかを確認します。",
+            "feature2_title": "一般的なエラーの検出",
+            "feature2_desc": "欠落しているリターンタグ、無効な言語コード (ISO 639-1)、間違った国コード (ISO 3166-1 Alpha-2) を見つけます。",
+            "feature3_title": "SEO 問題の防止",
+            "feature3_desc": "不適切な hreflang 実装は、重複コンテンツの問題や、検索結果での誤った言語バージョンの表示につながる可能性があります。",
+            "how_title": "Hreflang チェッカーの使い方",
+            "step1_title": "URL を入力",
+            "step1_desc": "分析したいページの完全な URL を貼り付けます（例: https://example.com）。",
+            "step2_title": "ユーザーエージェントを選択",
+            "step2_desc": "Googlebot でチェックすることをお勧めしますが、標準のブラウザとしてチェックすることも可能です。",
+            "step3_title": "結果を分析",
+            "step3_desc": "ページを取得し、見つかったすべての代替リンクとその検証ステータスを一覧表示します。",
+            "step4_title": "問題を修正",
+            "step4_desc": "'リターンタグなし' エラーが表示された場合は、参照先ページを更新して相互リンクを含めてください。",
+            "faq_title": "よくある質問",
+            "faq1_q": "Hreflang タグとは何ですか？",
+            "faq1_a": "Hreflang は、ウェブページの言語と地理的ターゲットを指定するために使用される HTML 属性です。検索エンジンに、異なる国や言語のユーザーにどのバージョンのページを表示すべきかを伝えます。",
+            "faq2_q": "なぜリターンタグが重要なのですか？",
+            "faq2_a": "Google は、誰かが勝手に他サイトのページを自分の代替バージョンとして主張するのを防ぐために、リターンリンクを要求しています。ページ A がページ B にリンクしている場合、ページ B もページ A にリンクバックする必要があります。",
+            "faq3_q": "このツールは x-default タグをチェックしますか？",
+            "faq3_a": "はい、当ツールは `x-default` hreflang タグを識別して検証します。これは、言語が一致しない場合や、厳密な国選択がない場合に使用されます。",
+            "faq4_q": "HTTP ヘッダー内の hreflang をチェックできますか？",
+            "faq4_a": "はい！HTML の `<head>` セクションと、HTTP レスポンスヘッダーの `Link: <url>; rel=\"alternate\"; hreflang=\"code\"` 属性の両方をチェックします。",
+            "faq5_q": "Hreflang エラーがあるとどうなりますか？",
+            "faq5_a": "検索エンジンが無効なタグを無視する可能性があり、その結果、正しい言語バージョンが適切なユーザーに表示されなかったり、重複コンテンツとしてペナルティを受ける可能性があります。",
+            "faq6_q": "このツールは無料ですか？",
+            "faq6_a": "はい、国際 SEO が完璧であることを確認するために、無制限に無料でチェックを実行できます。"
         }
     },
     "slug-generator": {
@@ -828,57 +879,6 @@
             "faq_size_answer": "50MBまたは50,000URLまで対応しています。",
             "faq_localhost_question": "ローカルホストで使えますか？",
             "faq_localhost_answer": "はい、XML入力タブを使用してコードを貼り付けてください。"
-        }
-    },
-    "hreflang-checker": {
-        "meta": {
-            "title": "Hreflang Checker - 無料のオンラインタグ検証ツール",
-            "description": "hreflang タグを検証して、Google がターゲット地域や言語に適した URL を表示しているか確認します。",
-            "h1": "フレフランチェッカー",
-            "subtitle": "国際 SEO のための hreflang 属性を抽出し検証する無料ツール。"
-        },
-        "form": {
-            "url_label": "確認する URL を入力",
-            "url_placeholder": "https://example.com/page",
-            "user_agent_label": "ユーザーエージェント",
-            "user_agent_default": "デフォルト (ブラウザ)",
-            "user_agent_googlebot": "Googlebot (デスクトップ)",
-            "user_agent_bingbot": "Bingbot (デスクトップ)",
-            "button": "Hreflang タグを確認"
-        },
-        "content": {
-            "main_title": "Hreflang タグチェッカー",
-            "main_subtitle": "国際的なコンテンツが適切なオーディエンスに届くようにしましょう。hreflang の実装を検証し、一般的な SEO エラーを修正します。",
-            "intro": "Hreflang タグは、複数の言語や国にサービスを提供するウェブサイトにとって不可欠です。当ツールの無料ツールは、ページの HTML ヘッドおよび HTTP ヘッダーから `rel=\"alternate\" hreflang=\"x\"` タグを抽出して検証します。相互（リターン）タグをチェックし、Google や他の検索エンジンがローカライズされたコンテンツを正しくインデックスすることを保証します。",
-            "features_title": "なぜ Hreflang タグを確認するのか？",
-            "feature1_title": "相互タグの検証",
-            "feature1_desc": "Hreflang タグはペアで機能する必要があります。当ツールは自動的に、ページ A がページ B にリンクし、ページ B がページ A にリンクバックしているかを確認します。",
-            "feature2_title": "一般的なエラーの検出",
-            "feature2_desc": "欠落しているリターンタグ、無効な言語コード (ISO 639-1)、間違った国コード (ISO 3166-1 Alpha-2) を見つけます。",
-            "feature3_title": "SEO 問題の防止",
-            "feature3_desc": "不適切な hreflang 実装は、重複コンテンツの問題や、検索結果での誤った言語バージョンの表示につながる可能性があります。",
-            "how_title": "Hreflang チェッカーの使い方",
-            "step1_title": "URL を入力",
-            "step1_desc": "分析したいページの完全な URL を貼り付けます（例: https://example.com）。",
-            "step2_title": "ユーザーエージェントを選択",
-            "step2_desc": "Googlebot でチェックすることをお勧めしますが、標準のブラウザとしてチェックすることも可能です。",
-            "step3_title": "結果を分析",
-            "step3_desc": "ページを取得し、見つかったすべての代替リンクとその検証ステータスを一覧表示します。",
-            "step4_title": "問題を修正",
-            "step4_desc": "'リターンタグなし' エラーが表示された場合は、参照先ページを更新して相互リンクを含めてください。",
-            "faq_title": "よくある質問",
-            "faq1_q": "Hreflang タグとは何ですか？",
-            "faq1_a": "Hreflang は、ウェブページの言語と地理的ターゲットを指定するために使用される HTML 属性です。検索エンジンに、異なる国や言語のユーザーにどのバージョンのページを表示すべきかを伝えます。",
-            "faq2_q": "なぜリターンタグが重要なのですか？",
-            "faq2_a": "Google は、誰かが勝手に他サイトのページを自分の代替バージョンとして主張するのを防ぐために、リターンリンクを要求しています。ページ A がページ B にリンクしている場合、ページ B もページ A にリンクバックする必要があります。",
-            "faq3_q": "このツールは x-default タグをチェックしますか？",
-            "faq3_a": "はい、当ツールは `x-default` hreflang タグを識別して検証します。これは、言語が一致しない場合や、厳密な国選択がない場合に使用されます。",
-            "faq4_q": "HTTP ヘッダー内の hreflang をチェックできますか？",
-            "faq4_a": "はい！HTML の `<head>` セクションと、HTTP レスポンスヘッダーの `Link: <url>; rel=\"alternate\"; hreflang=\"code\"` 属性の両方をチェックします。",
-            "faq5_q": "Hreflang エラーがあるとどうなりますか？",
-            "faq5_a": "検索エンジンが無効なタグを無視する可能性があり、その結果、正しい言語バージョンが適切なユーザーに表示されなかったり、重複コンテンツとしてペナルティを受ける可能性があります。",
-            "faq6_q": "このツールは無料ですか？",
-            "faq6_a": "はい、国際 SEO が完璧であることを確認するために、無制限に無料でチェックを実行できます。"
         }
     }
 }

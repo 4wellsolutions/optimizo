@@ -8,7 +8,7 @@
         },
         "form": {
             "domain_label": "ドメイン名",
-            "domain_placeholder": "domain.com",
+            "domain_placeholder": "例.com",
             "button": "DNSルックアップ"
         },
         "results": {
@@ -57,7 +57,7 @@
         },
         "form": {
             "domain_label": "ドメイン名を入力",
-            "domain_placeholder": "domain.com",
+            "domain_placeholder": "例.com",
             "domain_hint": "http://やhttps://を除いたドメインを入力してください",
             "button": "IPアドレスを検索"
         },
@@ -128,7 +128,7 @@
             "status_init": "テストを初期化中...",
             "label_download": "ダウンロード速度",
             "label_upload": "アップロード速度",
-            "label_ping": "Ping",
+            "label_ping": "ピン",
             "label_quality": "接続品質",
             "btn_retry": "再テスト",
             "status_ping": "Pingをテスト中...",
@@ -242,7 +242,7 @@
             "ip_address": "IPアドレス:",
             "type": "タイプ:",
             "hostname": "ホスト名:",
-            "isp": "ISP:",
+            "isp": "ISP",
             "country": "国:",
             "region": "地域:",
             "city": "市区町村:",
@@ -727,7 +727,9 @@
             "q2": "ドメインが「利用可能」なのにWHOISに結果が出るのは？",
             "a2": "過去の登録履歴が残っているか、またはWHOISサーバーの更新が遅れている可能性があります。",
             "q3": "自分の情報をWHOISから隠すことはできますか？",
-            "a3": "はい、ご自身のドメイン管理会社で「WHOIS情報公開代行」などのサービスを有効にすることで可能です。"
+            "a3": "はい、ご自身のドメイン管理会社で「WHOIS情報公開代行」などのサービスを有効にすることで可能です。",
+            "q4": "WHOIS データはどのくらいの頻度で更新されますか?",
+            "a4": "WHOIS データは、ドメイン登録情報が変更されるとリアルタイムで更新されます。ただし、さまざまな WHOIS サーバーがさまざまな期間にわたってデータをキャッシュする場合があります。最近の変更が世界中のすべての WHOIS データベースに反映されるまでに数時間かかる場合があります。"
         }
     }
 }

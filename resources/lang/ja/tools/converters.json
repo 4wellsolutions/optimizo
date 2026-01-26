@@ -314,12 +314,12 @@
         },
         "editor": {
             "label_input": "入力テキスト",
-            "ph_input": "hello world",
+            "ph_input": "こんにちは、世界の例",
             "btn_convert": "camelCase に変換",
             "btn_clear": "クリア",
             "btn_copy": "コピー",
             "label_output": "出力 (camelCase)",
-            "ph_output": "helloWorld"
+            "ph_output": "helloWorld の例"
         },
         "content": {
             "hero_title": "キャメルケース変換ツール",
@@ -371,7 +371,7 @@
                     "desc": "RESTful や GraphQL API の JSON キーの命名に最適です。"
                 },
                 "react": {
-                    "title": "React Props",
+                    "title": "反応プロップ",
                     "desc": "React や Vue コンポーネントの Props や State の命名の標準です。"
                 },
                 "css": {
@@ -385,30 +385,18 @@
                 "2": "最初の単語をすべて小文字にします。",
                 "3": "それ以降のすべての単語の最初の文字を大文字にします。",
                 "4": "結果をスペースなしの単一の文字列として結合します。",
-                "5": ""
+                "5": "変換されたキャメルケース テキストをコード、変数名、または API エンドポイントで使用して、一貫した命名規則を実現します。"
             },
             "examples_title": "例",
             "examples": {
-                "var": "user identity",
-                "var_val": "userIdentity",
-                "func": "get server status",
-                "func_val": "getServerStatus",
-                "prop": "active connection count",
-                "prop_val": "activeConnectionCount",
-                "method": "on click event",
-                "method_val": "onClickEvent",
-                "e1": {
-                    "before": "hello world",
-                    "after": "helloWorld"
-                },
-                "e2": {
-                    "before": "user_profile_data",
-                    "after": "userProfileData"
-                },
-                "e3": {
-                    "before": "Main-Controller",
-                    "after": "mainController"
-                }
+                "var": "変数名",
+                "var_val": "変数名",
+                "func": "ユーザーデータを取得する",
+                "func_val": "ユーザーデータの取得",
+                "prop": "背景色",
+                "prop_val": "背景色",
+                "method": "送信をクリックすると",
+                "method_val": "送信クリック時"
             },
             "faq_title": "よくある質問",
             "faq": {
@@ -429,9 +417,7 @@
             "success_convert": "✓ camelCase への変換に成功しました！",
             "error_no_copy": "コピーするものがありません。先にテキストを変換してください。",
             "success_copy": "✓ クリップボードにコピーしました！"
-        },
-        "ph_input": "hello world",
-        "ph_output": "helloWorld"
+        }
     },
     "case-converter": {
         "meta": {
@@ -459,22 +445,22 @@
                 "upper": {
                     "title": "大文字 (UPPERCASE)",
                     "desc": "すべての文字を大文字に変換します。見出しや強調に最適です。",
-                    "example": "HELLO WORLD"
+                    "example": "こんにちは世界"
                 },
                 "lower": {
                     "title": "小文字 (lowercase)",
                     "desc": "すべての文字を小文字に変換します。入力データの整理に最適です。",
-                    "example": "hello world"
+                    "example": "こんにちは世界"
                 },
                 "title": {
                     "title": "タイトル形式 (Title Case)",
                     "desc": "各単語の最初の文字を大文字にします。ヘッドラインや本のタイトルに標準的です。",
-                    "example": "Hello World"
+                    "example": "こんにちは世界"
                 },
                 "sentence": {
                     "title": "文章形式 (Sentence Case)",
                     "desc": "各文章の最初の文字のみを大文字にします。標準的な文章のルールに従います。",
-                    "example": "Hello world."
+                    "example": "こんにちは世界。"
                 }
             },
             "uses_title": "プロフェッショナルな活用シーン",
@@ -510,7 +496,7 @@
                 "2": "文章形式 (Sentence Case) は、長い段落や説明文において最も読みやすい形式です。",
                 "3": "手動選択によるミスを避けるため、常に「コピー」ボタンを使用してください。",
                 "4": "完全な編集管理のために、当ツールのケース変換ツールをワードカウンターと組み合わせて使用してください。",
-                "5": ""
+                "5": "ケース変換を使用して、コードベース全体の一貫性を維持し、コードの可読性を向上させます。"
             },
             "faq_title": "よくある質問",
             "faq": {
@@ -1116,7 +1102,7 @@
             "unit_GB": "ギガバイト (GB)",
             "unit_TB": "テラバイト (TB)",
             "unit_PB": "ペタバイト (PB)",
-            "to_label": "To"
+            "to_label": "に"
         },
         "content": {
             "feature1_title": "バイナリストレージ単位",
@@ -1163,7 +1149,7 @@
             "unit_kWh": "キロワット時 (kWh)",
             "unit_BTU": "英熱量 (BTU)",
             "unit_ftlb": "フィートポンド (ft⋅lb)",
-            "to_label": "To"
+            "to_label": "に"
         },
         "content": {
             "feature1_title": "多様なエネルギー単位",
@@ -1328,12 +1314,12 @@
         },
         "editor": {
             "label_input": "入力テキスト",
-            "ph_input": "my url slug",
+            "ph_input": "私のURLスラッグ",
             "btn_convert": "ケバブケースに変換",
             "btn_clear": "クリア",
             "btn_copy": "コピー",
             "label_output": "出力 (kebab-case)",
-            "ph_output": "my-url-slug"
+            "ph_output": "私の URL スラッグ"
         },
         "content": {
             "hero_title": "ケバブケース変換ツール",
@@ -1675,12 +1661,12 @@
         },
         "editor": {
             "label_input": "入力テキスト",
-            "ph_input": "hello world",
+            "ph_input": "私のクラス名",
             "btn_convert": "PascalCase に変換",
             "btn_clear": "クリア",
             "btn_copy": "コピー",
             "label_output": "出力 (PascalCase)",
-            "ph_output": "MyClassName"
+            "ph_output": "私のクラス名"
         },
         "content": {
             "hero_title": "パスカルケース変換ツール",
@@ -1793,8 +1779,7 @@
             "success_convert": "✓ PascalCase への変換に成功しました！",
             "error_copy": "コピーするものがありません。先にテキストを変換してください。",
             "success_copy": "✓ クリップボードにコピーしました！"
-        },
-        "ph_input": "hello world"
+        }
     },
     "power-converter": {
         "meta": {
@@ -1810,7 +1795,7 @@
             "unit_hp": "馬力 (hp)",
             "unit_ps": "仏馬力 (PS)",
             "unit_kcal_h": "kcal/h",
-            "unit_btu_h": "BTU/h",
+            "unit_btu_h": "BTU/時",
             "to_label": "変換先"
         },
         "content": {
@@ -1911,7 +1896,7 @@
                 "rgb": {
                     "title": "RGB (赤, 緑, 青)",
                     "format": "形式",
-                    "format_val": "rgb(r, g, b)",
+                    "format_val": "RGB(赤、緑、青)",
                     "range": "範囲",
                     "range_val": "各チャンネル 0-255",
                     "used_in": "主な用途",
@@ -2126,12 +2111,12 @@
         },
         "editor": {
             "label_input": "入力テキスト",
-            "ph_input": "hello world",
+            "ph_input": "私の変数名",
             "btn_convert": "snake_case に変換",
             "btn_clear": "クリア",
             "btn_copy": "コピー",
             "label_output": "出力 (snake_case)",
-            "ph_output": "hello_world"
+            "ph_output": "私の変数名"
         },
         "content": {
             "p1": "当ツールの無料オンライン変換器を使用して、テキストを snake_case 形式に変換できます。snake_case は小文字を使用し、単語間をアンダースコアで繋ぐ形式で、可読性が高くマシンフレンドリーな命名規則です。",
@@ -2246,8 +2231,7 @@
             "success_converted": "✓ snake_case への変換に成功しました！",
             "error_no_copy": "コピーするものがありません。先にテキストを変換してください。",
             "success_copy": "✓ クリップボードにコピーしました！"
-        },
-        "ph_input": "hello world"
+        }
     },
     "speed-converter": {
         "meta": {
@@ -2302,12 +2286,12 @@
         },
         "editor": {
             "label_input": "入力テキスト",
-            "ph_input": "hello world",
+            "ph_input": "こんにちは世界",
             "btn_convert": "StUdLy CaSe に変換",
             "btn_clear": "クリア",
             "btn_copy": "コピー",
             "label_output": "出力 (StUdLy CaSe)",
-            "ph_output": "HeLlO wOrLd"
+            "ph_output": "こんにちは世界"
         },
         "content": {
             "p1": "当ツールの無料オンライン変換器を使用して、テキストを StUdLy CaSe 形式に変換できます。スタッドリーケースは大文字と小文字がランダムに入れ替わる形式で、ミーム、クリエイティブな自己紹介、あるいは個性的なユーザー名の作成に最適です。",
@@ -2341,7 +2325,7 @@
             "uses_title": "主な活用シーン",
             "uses": {
                 "social": {
-                    "title": "SNS",
+                    "title": "ソーシャルメディア",
                     "desc": "Twitter、Instagram、Facebook で注目を集める投稿やコメントを作成。"
                 },
                 "msg": {
