@@ -27,6 +27,19 @@
             "txt_record": "<strong>TXT-tietue:</strong> Tekstitietueet varmentamiseen",
             "cname_record": "<strong>CNAME-tietue:</strong> Kanoninen nimi eli alias"
         },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on DNS-haku?",
+            "a1": "DNS-haku on prosessi, jossa Domain Name System -palvelimille tehdään kyselyitä verkkotunnuksen DNS-tietueiden hakemiseksi. Se kääntää ihmisen luettavissa olevat verkkotunnusten nimet IP-osoitteiksi ja tarjoaa tietoa sähköpostipalvelimista, nimipalvelimista ja muista DNS-kokoonpanoista.",
+            "q2": "Mitä erilaisia ​​DNS-tietueita ovat?",
+            "a2": "Yleisiä DNS-tietuetyyppejä ovat A (IPv4-osoite), AAAA (IPv6-osoite), MX (postipalvelin), CNAME (alias), TXT (tekstidata), NS (nimipalvelin) ja SOA (valtuutuksen alku). Jokainen tietuetyyppi palvelee tiettyä tarkoitusta verkkotunnuksen määrittelyssä.",
+            "q3": "Kuinka kauan DNS:n leviäminen kestää?",
+            "a3": "DNS:n leviäminen kestää tyypillisesti 24–48 tuntia maailmanlaajuisesti, vaikka muutoksia voi ilmetä muutamassa minuutissa joillakin palvelimilla. Aika riippuu TTL (Time To Live) -asetuksista ja siitä, kuinka nopeasti DNS-palvelimet päivittävät välimuistinsa.",
+            "q4": "Miksi DNS-hakuni epäonnistuu?",
+            "a4": "DNS-hakuvirheitä voi johtua väärästä toimialueen nimestä, DNS-palvelinongelmista, palomuuriestosta tai toimialueesta, jota ei ole määritetty oikein. Tarkista verkkotunnuksesi oikeinkirjoitus ja varmista, että DNS-tietueet on määritetty oikein.",
+            "q5": "Voinko etsiä DNS-tietueita mille tahansa verkkotunnukselle?",
+            "a5": "Kyllä, voit suorittaa DNS-hakuja mille tahansa julkisesti rekisteröidylle verkkotunnukselle. Jotkut organisaatiot voivat kuitenkin rajoittaa tiettyjä DNS-kyselyitä turvallisuussyistä."
+        },
         "js": {
             "looking_up": "Haetaan...",
             "records_label": "Tietueet",
@@ -84,6 +97,19 @@
             "tip3": "✅ Lisää palvelin-IP:t palomuuriin suojattua pääsyä varten",
             "tip4": "✅ Vertaa IP-osoitteita ennen ja jälkeen DNS-muutosten",
             "tip5": "✅ Tunnista jaettu hosting tarkistamalla, onko useilla domaineilla sama IP"
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on verkkotunnuksen IP-haku?",
+            "a1": "Domain to IP -haku muuntaa toimialueen nimen (kuten esimerkki.com) sitä vastaavaksi IP-osoitteeksi. Tämä on välttämätöntä verkkosivuston isännöintipaikan ymmärtämiseksi ja verkon vianmäärityksen kannalta.",
+            "q2": "Voiko yhdellä verkkotunnuksella olla useita IP-osoitteita?",
+            "a2": "Kyllä, verkkotunnuksilla voi olla useita IP-osoitteita kuormituksen tasaamista, redundanssia tai eri sisällön tarjoamista varten maantieteellisen sijainnin perusteella. Tämä on yleistä suurille verkkosivustoille ja CDN:ille.",
+            "q3": "Mitä eroa on IPv4:llä ja IPv6:lla?",
+            "a3": "IPv4 käyttää 32-bittisiä osoitteita (kuten 192.168.1.1) ja tukee noin 4,3 miljardia osoitetta. IPv6 käyttää 128-bittisiä osoitteita (kuten 2001:0db8:85a3::8a2e:0370:7334) ja tarjoaa käytännössä rajattomasti osoitteita tulevaa Internetin kasvua varten.",
+            "q4": "Miksi minun pitäisi löytää verkkotunnuksen IP-osoite?",
+            "a4": "Verkkotunnuksen IP-osoitteen löytäminen on hyödyllistä verkon vianmäärityksessä, palomuurien määrittämisessä, palvelimen käytön määrittämisessä, DNS-määrityksen tarkistamisessa tai isännöintipalveluntarjoajan ja palvelimen sijainnin tunnistamisessa.",
+            "q5": "Onko IP-osoite sama kuin palvelimen sijainti?",
+            "a5": "IP-osoite ilmaisee, missä palvelinta isännöidään, mutta CDN- ja pilvipalveluissa fyysinen palvelimen sijainti voi poiketa IP-paikannuksesta. Monet verkkosivustot käyttävät useita palvelimia maailmanlaajuisesti."
         },
         "js": {
             "looking_up": "Haetaan...",
@@ -237,6 +263,19 @@
             "feature4_title": "⚡ Välittömät tulokset",
             "feature4_desc": "Nopea ja tarkka haku"
         },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on IP-haku?",
+            "a1": "IP-haku (kutsutaan myös IP-paikannukseksi) on prosessi, jossa etsitään IP-osoitteen maantieteellisiä ja verkkotietoja, mukaan lukien sijainti, Internet-palveluntarjoaja, isäntänimi ja organisaatio. Se on hyödyllinen tietoturvan, analytiikan ja verkkodiagnosiikan kannalta.",
+            "q2": "Kuinka tarkka IP-paikannus on?",
+            "a2": "IP-paikannus on tyypillisesti tarkka maatasolla (95-99 %) ja kaupunkitasolla (50-75 %). Tarkkuus vaihtelee IP-tietokannan ja sen mukaan, kuinka Internet-palveluntarjoajat hallitsevat IP-lohkojaan. VPN:t ja välityspalvelimet voivat peittää todellisen sijainnin.",
+            "q3": "Voinko löytää jonkun tarkan osoitteen hänen IP-osoitteestaan?",
+            "a3": "Ei, IP-haku tarjoaa vain likimääräisen sijainnin (kaupunki/aluetaso), ei tarkkoja katuosoitteita. Vain asianmukaisen valtuutuksen omaavat Internet-palveluntarjoajat ja lainvalvontaviranomaiset voivat käyttää yksityiskohtaisia ​​tilaajatietoja.",
+            "q4": "Mitä eroa on IPv4- ja IPv6-haulla?",
+            "a4": "Sekä IPv4- että IPv6-haut tarjoavat samanlaisia ​​tietoja (sijainti, ISP jne.). IPv6 on uudempi protokolla, jossa on enemmän osoitteita. Työkalumme tukee molempia IP-versioita kattavaan verkkoanalyysiin.",
+            "q5": "Miksi IP-sijaintini näyttää eri kaupungin?",
+            "a5": "Internet-palveluntarjoajasi saattaa reitittää liikenteen alueellisten keskusten kautta tai IP-paikannustietokannassa voi olla vanhentuneita tietoja. Mobiili- ja satelliittiyhteydet näyttävät usein vähemmän tarkat sijainnit kuin kiinteät laajakaistat."
+        },
         "js": {
             "looking_up": "Haetaan...",
             "success": "Tiedot haettu",
@@ -272,6 +311,19 @@
             "metric6": "<strong>TTL (Time To Live):</strong> Verkko-hyppyjen määrä ennen paketin vanhenemista",
             "interpreting_title": "Tulosten tulkinta",
             "interpreting_desc": "Hyvä ping-aika on yleensä alle 50 ms paikallisesti ja alle 100 ms kansainvälisesti. Yli 200 ms viive kertoo mahdollisista ongelmista tai ruuhkasta."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on ping-testi?",
+            "a1": "Ping-testi lähettää datapaketteja palvelimelle ja mittaa aikaa, joka kestää vastauksen vastaanottamiseen. Sitä käytetään verkkoyhteyden tarkistamiseen, viiveen mittaamiseen ja yhteysongelmien diagnosointiin.",
+            "q2": "Mikä on hyvä ping-aika?",
+            "a2": "Yleiseen selailuun: alle 100ms on hyvä. Pelaamiseen: alle 50 ms on ihanteellinen, alle 20 ms on erinomainen. Videopuhelut: alle 150 ms hyväksytään. Pienempi ping tarkoittaa nopeampia vasteaikoja.",
+            "q3": "Miksi pingini on korkea?",
+            "a3": "Korkea ping voi johtua verkon ruuhkasta, etäisyydestä palvelimeen, huonosta WiFi-signaalista, Internet-palveluntarjoajan kuristuksesta tai liian monista laitteista verkossa. Kokeile langallista yhteyttä, sulje paljon kaistanleveyttä vaativia sovelluksia tai ota yhteyttä Internet-palveluntarjoajaan.",
+            "q4": "Mitä \"Pyyntö aikakatkaistiin\" tarkoittaa?",
+            "a4": "Pyynnön aikakatkaisu tarkoittaa, että palvelin ei vastannut odotetussa ajassa. Tämä voi osoittaa, että palvelin ei toimi, estää ping-pyynnöt (palomuuri), tai verkkoyhteydessä on ongelma.",
+            "q5": "Voinko pingata minkä tahansa verkkosivuston?",
+            "a5": "Useimmat verkkosivustot voidaan pingata, mutta jotkut palvelimet estävät ICMP-ping-pyynnöt turvallisuussyistä. Jos ping epäonnistuu, verkkosivusto saattaa silti olla käytettävissä selaimen kautta – kokeile muita työkaluja, kuten traceroute tai porttitarkistus."
         },
         "js": {
             "pinging": "Pingataan...",
@@ -313,6 +365,19 @@
             "security_title": "Tietoturvavaikutukset",
             "security_desc": "Avoimet portit ovat mahdollisia sisääntuloreittejä hyökkääjille. Paras käytäntö on pitää vain välttämättömät portit auki ja suodattaa muut."
         },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on porttitarkistus?",
+            "a1": "Porttitarkistus testaa, onko palvelimen tietty verkkoportti auki ja hyväksyykö yhteydet. Se on välttämätön palvelimien, palomuurien ja verkkopalvelujen vianmäärityksessä.",
+            "q2": "Mitkä ovat yleiset portit ja niiden käyttötarkoitukset?",
+            "a2": "Yleisiä portteja ovat: 80 (HTTP), 443 (HTTPS), 21 (FTP), 22 (SSH), 25 (SMTP-sähköposti), 3306 (MySQL), 3389 (etätyöpöytä), 8080 (HTTP vaihtoehtoinen). Jokainen palvelu käyttää tiettyjä portteja viestintään.",
+            "q3": "Miksi porttini on suljettu?",
+            "a3": "Portit voidaan sulkea palomuurisääntöjen, reitittimen asetusten, palvelun toimimattomuuden, Internet-palveluntarjoajan eston tai virheellisen portin edelleenlähetyksen vuoksi. Tarkista palomuuriasetuksesi, varmista, että palvelu on käynnissä ja tarkista portin edelleenlähetyssäännöt.",
+            "q4": "Onko porttien avaaminen turvallista?",
+            "a4": "Porttien avaaminen paljastaa palvelut Internetille, mikä voi olla turvallisuusriski, jos sitä ei ole määritetty oikein. Avaa vain tarvittavat portit, käytä vahvaa todennusta, pidä ohjelmistot ajan tasalla ja harkitse VPN:n käyttöä arkaluonteisissa palveluissa.",
+            "q5": "Mitä eroa on TCP- ja UDP-porteilla?",
+            "a5": "TCP-portit tarjoavat luotettavan, tilatun tiedonsiirron (käytetään verkkoon, sähköpostiin, tiedostojen siirtoon). UDP-portit ovat nopeampia, mutta eivät takaa toimitusta (käytetään pelaamiseen, suoratoistoon, DNS:ään). Molemmat voivat käyttää samoja porttinumeroita."
+        },
         "js": {
             "checking": "Tarkistetaan...",
             "success": "Tarkistus valmis",
@@ -347,7 +412,18 @@
             "ptr_record3": "<strong>Säihköposti:</strong> Elintärkeä sähköpostien perillemenolle.",
             "ptr_record4": "<strong>Tunnistus:</strong> Tunnistaa IP:n todellisen omistajan.",
             "ptr_record5": "<strong>Roskaposti:</strong> Auttaa roskapostin suodatuksessa.",
-            "ptr_record6": "<strong>Lokit:</strong> Tekee lokitiedoista helpommin luettavia."
+            "ptr_record6": "<strong>Lokit:</strong> Tekee lokitiedoista helpommin luettavia.",
+            "use_cases_title": "Yleiset käyttötapaukset",
+            "use_cases_desc": "Yleisiä käyttötapauksia ovat verkkoliikenteen alkuperän tarkistaminen, verkon latenssi- tai reititysongelmien diagnosointi, sähköpostipalvelimen asetusten vahvistaminen ja kyberturvallisuustarkastuksia tunnistamalla mahdollisesti haitalliset IP-osoitteet."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on PTR-tietue?",
+            "a1": "PTR-tietue (Pointer) on DNS-tietueen tyyppi, joka yhdistää IP-osoitteen isäntänimeen. Se on käänteisen DNS-haun ydinkomponentti.",
+            "q2": "Miksi käänteinen DNS on tärkeä sähköpostille?",
+            "a2": "Monet sähköpostipalveluntarjoajat käyttävät käänteistä DNS:ää varmistaakseen, että lähettävä palvelin on aito. Jos palvelimen IP-osoitteessa ei ole vastaavaa rDNS-tietuetta, sen sähköpostit voidaan merkitä roskapostiksi.",
+            "q3": "Voiko millä tahansa IP-osoitteella olla käänteinen DNS-tietue?",
+            "a3": "Kyllä, mutta IP-osoitteen omistajan (yleensä Internet-palveluntarjoajan tai isännöintipalveluntarjoajan) on määritettävä PTR-tietue DNS-asetuksissaan."
         }
     },
     "traceroute": {
@@ -368,7 +444,27 @@
         },
         "content": {
             "what_is_title": "Mikä on Traceroute?",
-            "what_is_desc": "Seuraa tiedon siirtymistä laitteeltasi kohdepalvelimelle eri verkkojen läpi. Näe jokainen välietappi ja niiden viiveet."
+            "what_is_desc": "Seuraa tiedon siirtymistä laitteeltasi kohdepalvelimelle eri verkkojen läpi. Näe jokainen välietappi ja niiden viiveet.",
+            "why_use_title": "Miksi käyttää Traceroutea?",
+            "why_use_desc": "Traceroute näyttää polun, jonka tiedot kulkevat tietokoneeltasi kohdepalvelimeen, ja näyttää jokaisen hypyn (reitittimen) matkan varrella. Se on välttämätöntä verkon hidastumisen diagnosoinnissa, reititysongelmien tunnistamisessa ja verkon topologian ymmärtämisessä.",
+            "hops_title": "Humalan ymmärtäminen",
+            "hop1": "Hop 1: Paikallinen reititin/yhdyskäytävä",
+            "hop2": "Hop 2-3: Internet-palveluntarjoajan verkko",
+            "hop3": "Hop 4-6: Alueellinen Internet-runkoverkko",
+            "hop4": "Hop 7-10: Kohteen ISP-verkko",
+            "hop5": "Hop 11+: kohdepalvelinverkko",
+            "hop6": "Jokainen hyppy lisää latenssia - vähemmän hyppyjä tarkoittaa yleensä nopeampaa yhteyttä",
+            "issues_title": "Yleisiä ongelmia",
+            "issues_desc": "Korkea latenssi tietyissä hyppyissä osoittaa ruuhkaa tai reititysongelmia. Tähdet (*) tarkoittavat, että reitittimet eivät vastaa traceroute-paketteihin (usein palomuurisääntöjen vuoksi). Pakettien katoaminen välihyppeillä ei välttämättä vaikuta lopulliseen määränpäähän, jos paketit saavuttavat sen onnistuneesti."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on traceroute?",
+            "a1": "Traceroute on verkon diagnostiikkatyökalu, joka seuraa tietopakettien polkua tietokoneeltasi kohdepalvelimelle. Se näyttää jokaisen reitittimen (hyppelyn) reitin varrella ja mittaa kussakin vaiheessa kuluvan ajan, mikä auttaa tunnistamaan verkon viiveiden tai vikojen esiintymisen.",
+            "q2": "Miksi jotkin humalat näyttävät tähtiä (*)?",
+            "a2": "Tähdet osoittavat, että reititin ei vastannut traceroute-anturiin aikakatkaisujakson aikana. Tämä johtuu usein palomuurikokoonpanoista, jotka estävät ICMP-paketit turvallisuuden vuoksi. Se ei välttämättä tarkoita ongelmaa - paketit voivat silti saavuttaa määränpäähän.",
+            "q3": "Kuinka monta humalaa on normaalia?",
+            "a3": "Tyypilliset Internet-reitit ovat 10-20 hyppyä. Paikallisverkon kohteissa voi olla 1-5 hyppyä, kun taas kansainvälisillä reiteillä voi olla 20-30 hyppyä. Enemmän hyppyjä tarkoittaa yleensä pidempiä matkoja ja mahdollisesti suurempaa latenssia, mutta tehokas reititys on tärkeämpää kuin hyppyjen määrä."
         }
     },
     "user-agent-parser": {
@@ -409,6 +505,40 @@
                     "desc": "Rajoittamaton käyttö"
                 }
             },
+            "uses_title": "Yleiset käyttötapaukset",
+            "uses": {
+                "debugging": {
+                    "title": "Virheenkorjaus",
+                    "desc": "Tunnista yksityiskohtaiset selainversiot vianmääritystä varten"
+                },
+                "analytics": {
+                    "title": "Analytics",
+                    "desc": "Selvitä, mitä laitteita ja käyttöjärjestelmiä käyttäjäsi käyttävät"
+                },
+                "dev": {
+                    "title": "Kehitys",
+                    "desc": "Tarkista käyttäjäagentin merkkijonot testauksen aikana"
+                },
+                "security": {
+                    "title": "Turvallisuus",
+                    "desc": "Analysoi epäilyttävät käyttäjäagenttimerkkijonot lokeissa"
+                }
+            },
+            "how_to_title": "Kuinka käyttää",
+            "how_to": {
+                "step1": {
+                    "title": "Anna merkkijono",
+                    "desc": "Liitä User Agent -merkkijono tai napsauta \"Käytä käyttäjäagenttiani\""
+                },
+                "step2": {
+                    "title": "Jäsentää",
+                    "desc": "Napsauta \"Jäsentä\" purkaaksesi merkkijonon"
+                },
+                "step3": {
+                    "title": "Näytä tulokset",
+                    "desc": "Katso selainta, käyttöjärjestelmää ja laitetta koskevat eritellyt tiedot"
+                }
+            },
             "faq_title": "Usein kysytyt kysymykset",
             "faq": {
                 "q1": "Mikä on User Agent?",
@@ -444,14 +574,46 @@
             "what_is_title": "Mikä on IP-osoite?",
             "what_is_desc": "IP-osoite on laitteesi yksilöllinen tunniste internetissä. Se sallii verkkosivujen kommunikoida laitteesi kanssa.",
             "ipv4_vs_ipv6_title": "IPv4 vs IPv6",
+            "ipv4_title": "IPv4-osoite",
+            "ipv4_format": "<strong>Muoto:</strong> 192.168.1.1 (neljä numeroa 0-255 erotettuna pisteillä)",
+            "ipv4_total": "<strong>Osoitteita yhteensä:</strong> ~4,3 miljardia osoitetta",
             "ipv4_desc": "Yleisin muoto, mutta osoitteet ovat loppumassa kesken maailmanlaajuisesti.",
+            "ipv6_title": "IPv6-osoite",
+            "ipv6_format": "<strong>Muoto:</strong> 2001:0db8:85a3::8a2e:0370:7334",
+            "ipv6_total": "<strong>Osoitteita yhteensä:</strong> 340 ehdotonta osoitetta",
             "ipv6_desc": "Uudempi muoto, jossa on lähes rajaton määrä osoitteita.",
+            "why_check_title": "Miksi tarkistaa IP-osoitteesi?",
+            "why_check_desc": "IP-osoitteesi tuntemisesta on hyötyä verkko-ongelmien vianmäärityksessä, VPN-yhteyksien tarkistamisessa, sijaintisi peittämisessä ja sen ymmärtämisessä, mitä tietoja verkkosivustot voivat nähdä sinusta.",
+            "public_vs_private_title": "Julkinen vs yksityinen IP-osoitteet",
+            "public_ip_title": "🌐 Julkinen IP-osoite",
+            "public_ip_desc": "Ainutlaatuinen osoitteesi Internetissä, joka näkyy kaikille vierailemillesi verkkosivustoille ja palveluille.",
+            "public_ip_example": "<strong>Esimerkki:</strong> 203.0.113.45",
+            "public_ip_note": "Internet-palveluntarjoajasi määrittämä ja käyttää kaikkeen Internet-viestintään",
+            "private_ip_title": "🏠 Yksityinen IP-osoite",
+            "private_ip_desc": "Laitteesi osoite paikallisverkossasi, ei näy Internetissä.",
+            "private_ip_example": "<strong>Esimerkki:</strong> 192.168.1.100",
+            "private_ip_note": "Käytetään viestintään kotisi tai toimistosi verkossa",
             "security_title": "IP-osoite ja yksityisyys",
             "security_desc1": "IP-osoitteesi paljastaa karkean sijaintisi ja operaattorisi. Käytä VPN-palvelua piilottaaksesi oikean osoitteesi ja lisätäksesi turvallisuutta.",
+            "security_desc2": "<strong>Yksityisyyden suojaus:</strong> Käytä VPN:ää (Virtual Private Network) piilottaaksesi todellisen IP-osoitteesi ja parantaaksesi yksityisyyttä. VPN:t reitittävät liikenteesi palvelimiensa kautta näyttäen VPN:n IP-osoitteen sinun sijaan. Työkalumme näyttää tarkalleen, mitä tietoa verkkosivustot voivat nähdä yhteydestäsi.",
+            "dynamic_vs_static_title": "Dynaamiset vs staattiset IP-osoitteet",
+            "dynamic_ip": "<strong>Dynaaminen IP:</strong> muuttuu säännöllisesti (päivittäin, viikoittain tai kun käynnistät reitittimen uudelleen). Useimmilla kotikäyttäjillä on Internet-palveluntarjoajansa automaattisesti määrittämät dynaamiset IP-osoitteet. Halvempi ja yleisempi asuinliitoksissa.",
+            "static_ip": "<strong>Staattinen IP:</strong> ei muutu koskaan ja pysyy vakiona. Käytetään tyypillisesti yritysyhteyksiin, verkkopalvelimiin, sähköpostipalvelimiin ja etäkäyttöön. Maksaa enemmän, mutta välttämätön isännöintipalveluille.",
             "privacy_tips_title": "Turvavinkkejä",
             "privacy_tip1": "• Älä jaa IP-osoitettasi julkisesti",
             "privacy_tip2": "• Käytä VPN:ää julkisissa Wi-Fi-verkoissa",
-            "privacy_tip3": "• Varmista reitittimen palomuurin toiminta"
+            "privacy_tip3": "• Varmista reitittimen palomuurin toiminta",
+            "privacy_tip4": "• Tarkista säännöllisesti IP-osoitteesi luvattoman VPN-yhteyden havaitsemiseksi",
+            "privacy_tip5": "• Huomaa, että verkkosivustot kirjaavat IP-osoitteesi tietoturvaa ja analytiikkaa varten"
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on IP-osoite?",
+            "a1": "IP (Internet Protocol) -osoite on yksilöllinen numeerinen tunniste, joka on määritetty jokaiselle Internetiin yhdistetylle laitteelle. Se on kuin tietokoneesi postiosoite, jonka avulla muut laitteet voivat lähettää ja vastaanottaa tietoja sinulta.",
+            "q2": "Miksi IP-osoitteeni muuttuu?",
+            "a2": "Useimmat kodin Internet-yhteydet käyttävät dynaamisia IP-osoitteita, jotka muuttuvat ajoittain, kun käynnistät reitittimen uudelleen tai kun Internet-palveluntarjoaja määrittää osoitteita uudelleen. Yritykset käyttävät usein staattisia IP-osoitteita, jotka eivät muutu. Mobiililaitteet saavat uudet IP-osoitteet vaihdettaessa WiFi- ja matkapuhelinverkon välillä.",
+            "q3": "Voiko joku seurata minua IP-osoitteellani?",
+            "a3": "IP-osoitteesi paljastaa likimääräisen sijaintisi (kaupunki/alueesi) ja Internet-palveluntarjoajasi, mutta ei tarkkaa katuosoitettasi tai henkilöllisyyttäsi. Vain Internet-palveluntarjoajasi ja lainvalvontaviranomaiset, joilla on asianmukainen valtuutus, voivat linkittää IP-osoitteen tiettyyn henkilöön tai kotitalouteen."
         }
     },
     "what-is-my-isp": {
@@ -478,7 +640,47 @@
             "why_use1": "Varmista, että olet yhdistetty oikean operaattorin kautta",
             "why_use2": "Selvitä yhteysongelmia ja nopeusvaihteluita",
             "why_use3": "Tarkista toimiiko VPN-palvelusi oikein",
-            "why_use4": "Tunnista verkkosi tietoturvasyistä"
+            "why_use4": "Tunnista verkkosi tietoturvasyistä",
+            "why_use5": "Tarkista Internet-palveluntarjoajan väitteet palvelun kattavuudesta ja infrastruktuurista",
+            "why_use6": "Tutki verkkoreititystä ja peering-suhteita",
+            "why_use7": "Vahvista yritysten Internet-yhteydet ja erilliset linjat",
+            "why_use8": "Tunnista luvaton verkkoyhteys tai yhteyden kaappaus",
+            "asn_title": "ASN (autonomous System Number) ymmärtäminen",
+            "asn_desc": "Autonomous System Number (ASN) on maailmanlaajuisesti yksilöllinen tunniste, joka on määritetty verkolle tai verkkojen ryhmälle yhden järjestelmänvalvojan ohjauksen alaisuudessa. Internet-palveluntarjoajilla, suurilla organisaatioilla ja sisällönjakeluverkoilla on jokaisella oma ASN. Tätä numeroa käytetään BGP (Border Gateway Protocol) -reitityksessä määrittämään, kuinka Internet-liikenne kulkee eri verkkojen välillä. ASN:n tunteminen auttaa tunnistamaan verkkopalveluntarjoajasi ja ymmärtämään reitityspolut.",
+            "use_cases_title": "Yleiset käyttötapaukset",
+            "use_case1_title": "🔧 Verkon vianmääritys",
+            "use_case1_desc": "Tunnista Internet-palveluntarjoajiin liittyvät ongelmat, tarkista reititysreitit ja diagnosoi yhteysongelmat",
+            "use_case2_title": "🔒 VPN-vahvistus",
+            "use_case2_desc": "Varmista, että VPN toimii tarkistamalla, vaihtuuko ISP yhteyden aikana",
+            "use_case3_title": "🛡️ Turvatarkastukset",
+            "use_case3_desc": "Tarkista yhteyden aitous ja havaitse luvaton verkkoyhteys",
+            "use_case4_title": "💼 Yrityksen vahvistus",
+            "use_case4_desc": "Vahvista omat liiketoimintalinjat ja yrityksen Internet-yhteydet",
+            "isp_types_title": "Internet-palveluntarjoajien tyypit",
+            "isp_type1": "<strong>DSL-palveluntarjoajat:</strong> Internet puhelinlinjojen kautta (ADSL, VDSL)",
+            "isp_type2": "<strong>Kaapeli-Internet-palveluntarjoajat:</strong> Nopea internetyhteys koaksiaalikaapeliinfrastruktuurin kautta",
+            "isp_type3": "<strong>Kuituoptiset Internet-palveluntarjoajat:</strong> Erittäin nopeat yhteydet valokuitukaapeleilla",
+            "isp_type4": "<strong>Langattomat/mobiilipalveluntarjoajat:</strong> 4G/5G-mobiiliverkkoyhteydet",
+            "isp_type5": "<strong>Satelliittipalveluntarjoajat:</strong> Internet satelliitin kautta syrjäisille alueille",
+            "isp_type6": "<strong>Yrityspalveluntarjoajat:</strong> Yritystason yhteydet palvelusopimusten kanssa",
+            "privacy_note_title": "Tietosuojahuomautus",
+            "privacy_note_desc": "Internet-palveluntarjoajasi voi nähdä kaiken salaamattoman Internet-liikenteen ja vierailemasi verkkosivustot (mutta ei HTTPS-sisältöä). He voivat kirjata yhteystietoja, selaushistoriaa ja DNS-kyselyjä. Käytä VPN:ää liikenteesi salaamiseen ja Internet-palveluntarjoajan valvonnan estämiseen. Työkalumme näyttää vain julkisesti saatavilla olevia tietoja, jotka verkkosivustot voivat jo nähdä."
+        },
+        "results": {
+            "ip_address": "IP-osoitteesi",
+            "asn": "ASN (autonominen järjestelmänumero)"
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on ISP?",
+            "a1": "ISP tarkoittaa Internet Service Provider -yritystä, joka tarjoaa Internet-yhteytesi. Esimerkkejä ovat Comcast, AT&T, Verizon tai paikalliset palveluntarjoajat. Internet-palveluntarjoajasi määrittää IP-osoitteesi ja reitittää kaiken Internet-liikenteesi.",
+            "q2": "Mikä on ASN?",
+            "a2": "ASN (Autonomous System Number) on yksilöllinen tunniste, joka on määritetty verkoille ja Internet-palveluntarjoajille Internet-reititystä varten. Se auttaa tunnistamaan, mikä organisaatio hallitsee IP-osoitteiden lohkoa. Suurilla Internet-palveluntarjoajilla on oma ASN, kun taas pienemmät palveluntarjoajat voivat jakaa sellaisen.",
+            "q3": "Voinko piilottaa ISP-tietoni?",
+            "a3": "VPN:n (Virtual Private Network) käyttö näyttää VPN-palveluntarjoajan Internet-palveluntarjoajan todellisen Internet-palveluntarjoajasi sijaan. Todellinen Internet-palveluntarjoajasi voi kuitenkin nähdä, että käytät VPN:ää. Välityspalvelimet ja Tor voivat myös peittää ISP-tietosi."
+        },
+        "js": {
+            "error_loading": "Internet-palveluntarjoajan tietojen havaitseminen epäonnistui"
         }
     },
     "whois-lookup": {
@@ -504,7 +706,30 @@
             "key_info1": "<strong>Omistajatiedot:</strong> Verkkotunnuksen haltija (voi olla piilotettu)",
             "key_info2": "<strong>Päivämäärät:</strong> Rekisteröinti ja vanhentuminen",
             "key_info3": "<strong>Rekisterinpitäjä:</strong> Yritys, joka hallinnoi rekisteröintiä",
-            "key_info4": "<strong>Nimipalvelimet:</strong> DNS-palvelimet"
+            "key_info4": "<strong>Nimipalvelimet:</strong> DNS-palvelimet",
+            "key_info5": "<strong>Nimipalvelimet:</strong> DNS-palvelimet, jotka isännöivät verkkotunnusta",
+            "key_info6": "<strong>Verkkotunnuksen tila:</strong> nykyiset tilakoodit ja lukot",
+            "how_to_title": "Kuinka käyttää",
+            "how_to1": "Anna verkkotunnuksen nimi, josta haluat etsiä",
+            "how_to2": "Napsauta \"Hae WHOIS\" -painiketta",
+            "how_to3": "Tarkista kattavat rekisteröintitiedot",
+            "how_to4": "Käytä tietoja tutkimus- tai todentamistarpeisiisi",
+            "privacy_title": "Yksityisyys ja WHOIS",
+            "privacy_desc": "Monet verkkotunnusten rekisteröijät tarjoavat nyt WHOIS-yksityisyyden suojapalveluita, jotka peittävät henkilötiedot julkisista WHOIS-tietokannoista. Tämä suojaa verkkotunnuksen omistajia roskapostilta, identiteettivarkauksilta ja ei-toivotulta tarjoukselta säilyttäen samalla verkkotunnuksen toiminnan edellyttämät olennaiset tekniset tiedot. GDPR-säännökset ovat myös vaikuttaneet WHOIS-tietojen saatavuuteen, sillä monet eurooppalaiset rekisterinpitäjät ovat poistaneet henkilötietoja noudattaakseen tietosuojalakeja."
+        },
+        "results": {
+            "title": "WHOIS-tiedot"
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on WHOIS-haku?",
+            "a1": "WHOIS on tietokantakysely, joka tarjoaa rekisteröintitietoja verkkotunnuksista ja IP-osoitteista, mukaan lukien rekisteröijän tiedot, rekisteröintipäivämäärät, vanhentumispäivät, nimipalvelimet ja rekisteröintitiedot. Se on hyödyllinen verkkotunnuksen tutkimuksessa ja todentamisessa.",
+            "q2": "Miksi WHOIS-tiedot on piilotettu?",
+            "a2": "Monet verkkotunnuksen omistajat käyttävät WHOIS-tietosuojaa (kutsutaan myös verkkotunnuksen yksityisyydeksi) piilottaakseen henkilökohtaiset yhteystietonsa julkisista WHOIS-tietokannoista. Tämä estää roskapostin, identiteettivarkauden ja ei-toivotun tarjouspyynnön ja säilyttää samalla verkkotunnuksen omistajuuden.",
+            "q3": "Onko WHOIS-haku laillinen?",
+            "a3": "Kyllä, WHOIS-haku on täysin laillinen ja tavallinen Internet-protokolla. WHOIS-tiedot ovat julkisesti saatavilla laillisiin tarkoituksiin, kuten verkkotunnuksen tutkimukseen, tavaramerkkien suojaamiseen ja verkon vianetsintään. WHOIS-tietojen käyttäminen roskapostiin tai häirintään on kuitenkin kielletty.",
+            "q4": "Kuinka usein WHOIS-tiedot päivitetään?",
+            "a4": "WHOIS-tiedot päivitetään reaaliajassa, kun verkkotunnuksen rekisteröintitiedot muuttuvat. Eri WHOIS-palvelimet voivat kuitenkin tallentaa tietoja välimuistiin eri ajanjaksoina. Viimeaikaisten muutosten leviäminen kaikissa WHOIS-tietokannassa maailmanlaajuisesti saattaa kestää muutaman tunnin."
         }
     }
 }

@@ -86,7 +86,7 @@
         },
         "editor": {
             "label_input": "Syötä Morseryhmä",
-            "ph_input": "... --- ...",
+            "ph_input": null,
             "btn_decode": "Dekoodaa Tekstiksi",
             "btn_clear": "Tyhjennä",
             "btn_copy": "Kopioi",
@@ -110,12 +110,90 @@
                 "privacy": {
                     "title": "Tietosuoja",
                     "desc": "Kaikki käsittely tapahtuu selaimessasi"
+                },
+                "bulk": {
+                    "title": "Joukkodekoodaus",
+                    "desc": "Purkaa useita sanoja kerralla"
+                },
+                "alphanum": {
+                    "title": "Kirjaimet & Numerot",
+                    "desc": "Purkaa A-Z ja 0-9"
+                },
+                "free": {
+                    "title": "100 % ilmainen",
+                    "desc": "Ei vaadi rajoituksia tai rekisteröitymistä"
                 }
+            },
+            "uses_title": "🎯 Yleiset käyttötapaukset",
+            "uses": {
+                "learn": {
+                    "title": "📚 Morsekoodin oppiminen",
+                    "desc": "Harjoittele morsekoodin purkamista parantaaksesi taitojasi"
+                },
+                "decode": {
+                    "title": "🔓 Viestien purkaminen",
+                    "desc": "Purkaa morsekoodiviestit ystäviltä tai arvoituksia"
+                },
+                "games": {
+                    "title": "🎮 Pelit ja palapelit",
+                    "desc": "Ratkaise morsekoodipulmia peleissä ja pakohuoneissa"
+                },
+                "radio": {
+                    "title": "📡 Kinkkuradio",
+                    "desc": "Dekoodaa amatööriradiolähetykset ja harjoittele CW:tä"
+                },
+                "edu": {
+                    "title": "🎓 Koulutus",
+                    "desc": "Opeta opiskelijoille viestintä- ja koodausjärjestelmiä"
+                },
+                "emergency": {
+                    "title": "🚨 Hätäsignaalit",
+                    "desc": "Dekoodaa hätäsignaalit ja hätäviestit"
+                }
+            },
+            "how_title": "📚 Kuinka käyttää",
+            "how_steps": {
+                "1": {
+                    "title": "Syötä morsekoodi:",
+                    "desc": "Kirjoita pisteet (.) ja viivat (-) välilyönnillä erotettuina"
+                },
+                "2": {
+                    "title": "Napsauta Decode:",
+                    "desc": "Paina \"Pura tekstiksi\" -painiketta"
+                },
+                "3": {
+                    "title": "Arvostelutulos:",
+                    "desc": "Tarkista dekoodatun tekstin tulos"
+                },
+                "4": {
+                    "title": "Kopioi tulos:",
+                    "desc": "Napsauta \"Kopioi\" kopioidaksesi leikepöydälle"
+                },
+                "5": {
+                    "title": "Käytä tekstiä:",
+                    "desc": "Käytä dekoodattua viestiä"
+                }
+            },
+            "examples_title": "Esimerkkejä morsekoodista",
+            "samples": [],
+            "faq_title": "❓ Usein kysytyt kysymykset",
+            "faq": {
+                "q1": "Kuinka muotoilen morsekoodin syötteen?",
+                "a1": "Erota jokainen kirjain välilyönnillä. Käytä / sanavälille. Esimerkki: \"... --- ...\" SOS:lle.",
+                "q2": "Mitä jos teen virheen?",
+                "a2": "Virheelliset morsekoodikuviot ohitetaan. Varmista, että pisteet ja viivat erotetaan välilyönnillä.",
+                "q3": "Voinko purkaa numeroita?",
+                "a3": "Kyllä! Työkalu purkaa numerot 0-9 niiden morsekoodikuvioista.",
+                "q4": "Miten erotan sanat?",
+                "a4": "Käytä vinoviivaa (/) erottaaksesi sanat morsekoodissa.",
+                "q5": "Onko tämä työkalu ilmainen?",
+                "a5": "Kyllä! Täysin ilmainen ilman rajoituksia. Kaikki käsittely tapahtuu selaimessasi tietosuojan vuoksi."
             }
         },
         "js": {
             "error_empty": "Syötä morseryhmä dekoodattavaksi",
             "success_decode": "Morseryhmä dekoodattu onnistuneesti!",
+            "error_copy": "Ei mitään kopioitavaa! Pura ensin morsekoodi.",
             "success_copy": "Kopioitu leikepöydälle!"
         }
     },
@@ -136,11 +214,98 @@
             "ph_output": "adliaaM ieH"
         },
         "content": {
-            "p1": "Käännä tekstisi välittömästi. Tämä työkalu kääntää tekstin merkki kerrallaan luoden peilikuvaversion."
+            "p1": "Käännä tekstisi välittömästi. Tämä työkalu kääntää tekstin merkki kerrallaan luoden peilikuvaversion.",
+            "features": {
+                "char": {
+                    "title": "Hahmon kääntyminen",
+                    "desc": "Kääntää tekstiä merkki merkiltä"
+                },
+                "instant": {
+                    "title": "Välittömät tulokset",
+                    "desc": "Käänteinen teksti millisekunteina"
+                },
+                "privacy": {
+                    "title": "Yksityisyys suojattu",
+                    "desc": "Kaikki käsittely tapahtuu selaimessasi"
+                },
+                "bulk": {
+                    "title": "Joukkokäsittely",
+                    "desc": "Kääntää useita rivejä kerralla"
+                },
+                "formatting": {
+                    "title": "Säilyttää muotoilun",
+                    "desc": "Säilyttää välilyönnit ja erikoismerkit"
+                },
+                "free": {
+                    "title": "100 % ilmainen",
+                    "desc": "Ei vaadi rajoituksia tai rekisteröitymistä"
+                }
+            },
+            "uses_title": "Yleiset käyttötapaukset",
+            "uses": {
+                "puzzles": {
+                    "title": "Palapelit ja pelit",
+                    "desc": "Luo sanapulmia, arvoituksia ja aivojuttuja käänteisellä tekstillä"
+                },
+                "encoding": {
+                    "title": "Yksinkertainen koodaus",
+                    "desc": "Luo peruskoodattuja viestejä hauskaa tai yksinkertaista hämärtämistä varten"
+                },
+                "palindrome": {
+                    "title": "Palindromin testaus",
+                    "desc": "Testaa, ovatko sanat tai lauseet palindromeja vertaamalla käänteiseen versioon"
+                },
+                "creative": {
+                    "title": "Luova kirjoittaminen",
+                    "desc": "Lisää taiteellista tunnelmaa runouteen ja luovaan sisältöön"
+                },
+                "social": {
+                    "title": "Sosiaalinen media",
+                    "desc": "Luo ainutlaatuisia viestejä ja kommentteja käänteisellä tekstillä"
+                },
+                "testing": {
+                    "title": "Testaus",
+                    "desc": "Testaa merkkijonojen manipulointifunktioita ohjelmoinnissa"
+                }
+            },
+            "how_to": {
+                "title": "Kuinka käyttää",
+                "step1": "Kirjoita teksti",
+                "step1_desc": "Kirjoita tai liitä teksti, jonka haluat kääntää",
+                "step2": "Napsauta Käänteinen",
+                "step2_desc": "Paina \"Käänteinen teksti\" -painiketta",
+                "step3": "Tarkista tulos",
+                "step3_desc": "Tarkista käänteinen tekstitulos",
+                "step4": "Kopioi tulos",
+                "step4_desc": "Napsauta \"Kopioi\" kopioidaksesi leikepöydälle",
+                "step5": "Käytä missä tahansa",
+                "step5_desc": "Liitä käänteinen teksti haluamaasi kohtaan"
+            },
+            "examples_title": "Käänteisiä esimerkkejä",
+            "examples": {
+                "simple": "Yksinkertainen teksti:",
+                "phrases": "Lausekkeet:",
+                "palindromes": "Palindromit:",
+                "numbers": "Numerot:"
+            },
+            "faq_title": "Usein kysytyt kysymykset",
+            "faq": {
+                "q1": "Miten tekstin kääntäminen toimii?",
+                "a1": "Työkalu muuttaa tekstisi merkkijärjestyksen päinvastaiseksi. Viimeisestä hahmosta tulee ensimmäinen, toiseksi viimeiseksi toiseksi ja niin edelleen.",
+                "q2": "Säilyttääkö se tiloja?",
+                "a2": "Kyllä! Kaikki merkit, mukaan lukien välilyönnit, välimerkit ja erikoismerkit, säilytetään ja käännetään järjestyksessä.",
+                "q3": "Voinko kääntää sen takaisin?",
+                "a3": "Kyllä! Liitä vain käännetty teksti takaisin syöttöön ja käännä se uudelleen saadaksesi alkuperäisen tekstin.",
+                "q4": "Mitä palindromit ovat?",
+                "a4": "Palindromit ovat sanoja tai lauseita, jotka lukevat samaa eteenpäin ja taaksepäin, kuten \"kilpaauto\" tai \"rouva\". Käytä tätä työkalua testataksesi niitä!",
+                "q5": "Onko tämä työkalu ilmainen?",
+                "a5": "Kyllä! Täysin ilmainen ilman rajoituksia. Kaikki käsittely tapahtuu selaimessasi yksityisyyden ja nopeuden vuoksi."
+            }
         },
         "js": {
             "error_empty": "Syötä tekstiä käännettäväksi",
             "success_reverse": "Teksti käännetty onnistuneesti!",
+            "error_no_copy": "Ei mitään kopioitavaa! Ole hyvä ja käännä tekstiä ensin.",
             "success_copy": "Kopioitu!"
         }
     },
@@ -158,11 +323,101 @@
             "btn_clear": "Tyhjennä",
             "btn_copy": "Kopioi",
             "label_output": "Morse-tulostus",
-            "ph_output": "... --- ..."
+            "ph_output": null
+        },
+        "content": {
+            "p1": "Muunna teksti morsekoodiksi välittömästi ilmaisella online-muuntimellamme. Morsekoodi käyttää pisteitä (.) ja viivoja (-) edustamaan kirjaimia ja numeroita. Täydellinen morsekoodin oppimiseen, hätäviestinnän harjoitteluun tai koodattujen viestien luomiseen.",
+            "features": {
+                "standard": {
+                    "title": "Normaali morsekoodi",
+                    "desc": "Käyttää kansainvälistä morsekoodistandardia"
+                },
+                "instant": {
+                    "title": "Välitön koodaus",
+                    "desc": "Muunna morsekoodiksi millisekunneissa"
+                },
+                "privacy": {
+                    "title": "Yksityisyys suojattu",
+                    "desc": "Kaikki käsittely tapahtuu selaimessasi"
+                },
+                "bulk": {
+                    "title": "Joukkokäsittely",
+                    "desc": "Muunna useita sanoja kerralla"
+                },
+                "alphanumeric": {
+                    "title": "Kirjaimet & Numerot",
+                    "desc": "Tukee A-Z ja 0-9"
+                },
+                "free": {
+                    "title": "100 % ilmainen",
+                    "desc": "Ei vaadi rajoituksia tai rekisteröitymistä"
+                }
+            },
+            "uses_title": "Yleiset käyttötapaukset",
+            "uses": {
+                "learning": {
+                    "title": "Morsekoodin oppiminen",
+                    "desc": "Harjoittele ja opi morsekoodia muuntamalla tuttuja sanoja ja lauseita"
+                },
+                "emergency": {
+                    "title": "Hätätilanteen käytäntö",
+                    "desc": "Opi SOS- ja muut hätäsignaalit morsekoodilla"
+                },
+                "gaming": {
+                    "title": "Pelit ja palapelit",
+                    "desc": "Luo koodattuja viestejä peleihin ja pakohuoneisiin"
+                },
+                "radio": {
+                    "title": "Kinkku Radio",
+                    "desc": "Harjoittele radioamatöörilupien myöntämistä ja viestintää"
+                },
+                "edu": {
+                    "title": "koulutus",
+                    "desc": "Opeta oppilaille viestintähistoriaa ja koodausta"
+                },
+                "secret": {
+                    "title": "Salaiset viestit",
+                    "desc": "Luo hauskoja koodattuja viestejä ystävillesi"
+                }
+            },
+            "how_to": {
+                "title": "Kuinka käyttää",
+                "step1": "Kirjoita teksti",
+                "step1_desc": "Kirjoita teksti, jonka haluat muuntaa",
+                "step2": "Napsauta Muunna",
+                "step2_desc": "Paina \"Muunna morsekoodiksi\"",
+                "step3": "Tarkista tulos",
+                "step3_desc": "Tarkista morsekoodin tulos",
+                "step4": "Kopioi tulos",
+                "step4_desc": "Napsauta \"Kopioi\" kopioidaksesi leikepöydälle",
+                "step5": "Käytä morsekoodia",
+                "step5_desc": "Jaa tai harjoittele koodatun viestin kanssa"
+            },
+            "examples_title": "Muunnosesimerkkejä",
+            "examples": {
+                "sos": "SOS-signaali:",
+                "word": "Yksinkertainen sana:",
+                "numbers": "Numerot:",
+                "phrase": "Lause:"
+            },
+            "faq_title": "Usein kysytyt kysymykset",
+            "faq": {
+                "q1": "Mikä on morsekoodi?",
+                "a1": "Morsekoodi on tapa koodata tekstiä käyttämällä pisteitä (.) ja viivoja (-) edustamaan kirjaimia ja numeroita. Se keksittiin 1830-luvulla lennätinviestintää varten.",
+                "q2": "Mitä SOS tarkoittaa morsekoodissa?",
+                "a2": "SOS on ... --- ... (kolme pistettä, kolme viivaa, kolme pistettä). Se on kansainvälinen hätämerkki.",
+                "q3": "Voinko muuntaa numeroita?",
+                "a3": "Kyllä! Työkalu tukee numeroita 0-9, joista jokaisella on oma morsekoodinsa.",
+                "q4": "Onko morsekoodi käytössä vielä nykyään?",
+                "a4": "Kyllä! Sitä käytetään edelleen ilmailussa, merenkulussa, radioamatööriradiossa ja esteettömyystyökaluna.",
+                "q5": "Onko tämä työkalu ilmainen?",
+                "a5": "Kyllä! Täysin ilmainen ilman rajoituksia. Kaikki käsittely tapahtuu selaimessasi tietosuojan vuoksi."
+            }
         },
         "js": {
             "error_empty": "Syötä tekstiä muunnettavaksi",
             "success_convert": "Muunnettu morseryhmäksi onnistuneesti!",
+            "error_no_copy": "Ei mitään kopioitavaa! Muunna ensin tekstiä.",
             "success_copy": "Kopioitu!"
         }
     },
@@ -187,6 +442,27 @@
             "short_sentences": "Lyhyitä lauseita",
             "chars_no_spaces": "Merkkiä (ilman välilyöntejä)",
             "avg_word_length": "Sanan keskipituus"
+        },
+        "content": {
+            "main_title": "Ilmainen Word Counter -työkalu",
+            "main_description": "Laske sanat, merkit, lauseet ja kappaleet välittömästi. Täydellinen kirjoittajille, opiskelijoille ja SEO-ammattilaisille.",
+            "intro": "Sanalaskurityökalumme tarjoaa reaaliaikaisia ​​tilastotietoja tekstistäsi, mukaan lukien sanamäärä, merkkimäärä, lauseiden määrä, lukuaika ja paljon muuta. Se sopii täydellisesti esseihin, artikkeleihin, sosiaalisen median viesteihin ja SEO-sisällön optimointiin.",
+            "features_title": "Ominaisuudet",
+            "feature1_title": "Reaaliaikainen laskenta",
+            "feature1_desc": "Näet sanojen ja merkkien määrän päivittyvän välittömästi kirjoittaessasi tai liittäessäsi tekstiä.",
+            "feature2_title": "Lukuajan arvio",
+            "feature2_desc": "Laske, kuinka kauan sisältösi lukeminen kestää keskimääräisen lukunopeuden perusteella.",
+            "feature3_title": "Lauseanalyysi",
+            "feature3_desc": "Tunnista pitkät ja lyhyet lauseet parantaaksesi luettavuutta ja sujuvuutta.",
+            "feature4_title": "SEO optimointi",
+            "feature4_desc": "Seuraa metakuvausten, otsikoiden ja sosiaalisen median viestien merkkirajoituksia.",
+            "faq_title": "Usein kysytyt kysymykset",
+            "faq1_q": "Kuinka tarkka sanamäärä on?",
+            "faq1_a": "Sanalaskurimme käyttää alan standardialgoritmeja laskeakseen sanat tarkasti. Se laskee sanat välilyönneillä erotettuina ja jättää huomioimatta ylimääräisen välilyönnin, mikä antaa sinulle tarkat hakutyökalut, kuten Microsoft Word ja Google Docs.",
+            "faq2_q": "Mitä pidetään \"pitkänä lauseena\"?",
+            "faq2_a": "Yli 20 sanaa sisältävä lause katsotaan yleensä pitkäksi. Pitkät lauseet voivat heikentää luettavuutta, joten työkalumme korostaa niitä auttaaksesi sinua parantamaan kirjoituksesi selkeyttä.",
+            "faq3_q": "Miten lukuaika lasketaan?",
+            "faq3_a": "Lukuaika lasketaan aikuisten keskimääräisen lukunopeuden perusteella 200-250 sanaa minuutissa. Tämä antaa sinulle arvion siitä, kuinka kauan sisältösi lukeminen kestää."
         }
     }
 }

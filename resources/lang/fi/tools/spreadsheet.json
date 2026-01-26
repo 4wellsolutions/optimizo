@@ -22,6 +22,13 @@
             "feature2_desc": "Soveliaa automaattisesti Excel-muotoilun, jotta datasi on helpommin luettavaa.",
             "feature3_title": "Välitön lataus",
             "feature3_desc": "Saat Excel-tiedostosi heti muunnoksen jälkeen käyttövalmiina."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Voinko muuntaa suuria CSV-tiedostoja Exceliksi?",
+            "a1": "Kyllä! Työkalumme käsittelee erikokoisia CSV-tiedostoja. Erittäin suurien tiedostojen (100 Mt+) muuntaminen voi kestää hieman kauemmin, mutta prosessi on optimoitu suorituskykyä varten.",
+            "q2": "Säilytetäänkö muotoilut muunnoksen aikana?",
+            "a2": "CSV-tiedostot sisältävät vain raakadataa ilman muotoilua. Excel-tiedoston tiedot on järjestetty oikein soluihin, mutta muotoilut (värit, fontit, reunukset) on käytettävä manuaalisesti Excelissä muuntamisen jälkeen."
         }
     },
     "csv-to-json": {
@@ -58,6 +65,13 @@
             "feature2_desc": "Luo puhtaat, suojatut SQL INSERT -lausekkeet, jotka ovat valmiina massasuoritukseen missä tahansa SQL-asiakasohjelmassa.",
             "feature3_title": "Yleinen SQL",
             "feature3_desc": "Luo SQL-92-yhteensopivaa koodia, joka toimii MySQL-, PostgreSQL-, SQLite- ja MariaDB-tietokannoissa."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mitä SQL-tietokantoja tuetaan?",
+            "a1": "Työkalumme luo vakiomuotoisia SQL INSERT -lauseita, jotka ovat yhteensopivia MySQL:n, PostgreSQL:n, SQL Serverin, SQLiten ja muiden tärkeiden tietokantajärjestelmien kanssa. Voit mukauttaa taulukon ja sarakkeiden nimiä tarpeen mukaan.",
+            "q2": "Miten käsittelen erikoismerkkejä CSV-tiedoissani?",
+            "a2": "Muunnin poistaa automaattisesti erikoismerkit (lainausmerkit, kenoviivat) estääkseen SQL-injektio- ja syntaksivirheet. Tietosi muunnetaan turvallisesti oikein muotoilluiksi SQL-lauseiksi."
         }
     },
     "csv-to-tsv": {
@@ -154,6 +168,10 @@
                 "2": {
                     "title": "Kopioi ja käytä",
                     "desc": "XML-tuloste ilmestyy oikealle. Klikkaa \"Kopioi\" käyttääksesi sitä sovelluksessasi."
+                },
+                "3": {
+                    "title": "Lataa XML-tiedosto",
+                    "desc": "Napsauta latauspainiketta tallentaaksesi muunnetun XML-tiedoston käyttövalmiina sovelluksissa, sovellusliittymissä tai tiedonvaihtojärjestelmissä."
                 }
             },
             "example_title": "💡 Muunnosesimerkki",
@@ -177,7 +195,8 @@
                 "1": "<strong>Puhdista datasi:</strong> Poista ylimääräiset välilyönnit ja erikoismerkit otsikoista ennen muunnosta.",
                 "2": "<strong>Testaa esimerkeillä:</strong> Käytä \"Esimerkki\"-painiketta ymmärtääksesi muunnosmuodon.",
                 "3": "<strong>Validoi XML-tuloste:</strong> Validoi aina luotu XML kohdejärjestelmäsi vaatimusten mukaisesti.",
-                "4": "<strong>Erikoismerkit:</strong> Erikoismerkit suojataan automaattisesti kelvollista XML-tulostetta varten."
+                "4": "<strong>Erikoismerkit:</strong> Erikoismerkit suojataan automaattisesti kelvollista XML-tulostetta varten.",
+                "5": "Vahvista XML-tulostuksesi käyttämällä XML-validaattoria varmistaaksesi oikean rakenteen ja yhteensopivuuden kohdejärjestelmäsi kanssa."
             }
         },
         "js": {
@@ -211,6 +230,13 @@
             "feature2_desc": "Säilyttää kaikki solujen arvot muunnettaessa pelkäksi tekstiksi.",
             "feature3_title": "Nopea käsittely",
             "feature3_desc": "Nopea muunnos ja välitön CSV-tiedostojen lataus."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Muunnetaanko kaavat CSV-muotoon?",
+            "a1": "CSV-muoto tukee vain pelkkää tekstiä. Muunnettaessa Excel CSV-muotoon kaavat korvataan niiden lasketuilla arvoilla. Jos sinun on säilytettävä kaavat, säilytä kopio alkuperäisestä Excel-tiedostosta.",
+            "q2": "Voinko muuntaa useita Excel-arkkeja kerralla?",
+            "a2": "Jokainen Excel-laskentataulukko on muutettava erikseen CSV-muotoon. Jos Excel-tiedostossasi on useita taulukoita, saat erillisen CSV-tiedoston jokaiselle taulukolle tai voit valita muunnettavan taulukon."
         }
     },
     "google-sheets-to-excel": {
@@ -236,6 +262,13 @@
             "feature2_desc": "Säilyttää muotoilut, kaavat ja tyylit mahdollisuuksien mukaan.",
             "feature3_title": "Offline-pääsy",
             "feature3_desc": "Työskentele taulukoidesi parissa ilman internetyhteyttä."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Pitääkö minun ladata ensin Google Sheetsistä?",
+            "a1": "Kyllä, sinun on ensin ladattava Google Sheetsi Excel-tiedostona (.xlsx) tai CSV-tiedostona. Siirry Google Sheetsissä kohtaan Tiedosto > Lataa > Microsoft Excel (.xlsx) saadaksesi tiedoston muunnettavaksi.",
+            "q2": "Toimivatko Google Sheetsin kaavat Excelissä?",
+            "a2": "Yleisimmät kaavat (SUM, AVERAGE, IF, VLOOKUP) ovat yhteensopivia Google Sheetsin ja Excelin välillä. Jotkut Google-kohtaiset toiminnot eivät kuitenkaan välttämättä toimi Excelissä, ja niitä on säädettävä."
         }
     },
     "tsv-to-csv-converter": {
@@ -401,6 +434,13 @@
             "feature2_desc": "XLSX tukee yli miljoonaa riviä, kun XLS-raja on 65 536.",
             "feature3_title": "Parannettu turvallisuus",
             "feature3_desc": "XLSX-muodossa on parempi suojaus ja tiedostojen palautus."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mitä eroa on XLS:n ja XLSX:n välillä?",
+            "a1": "XLS on vanhempi Excel-muoto (Excel 97-2003), jossa on 65 536 rivin raja. XLSX on moderni XML-pohjainen muoto (Excel 2007+), jossa on 1 048 576 riviä, parempi pakkaus ja parannettu suojaus. XLSX:ksi muuntamista suositellaan paremman yhteensopivuuden vuoksi.",
+            "q2": "Säilytetäänkö makrot, kun XLS muunnetaan XLSX:ksi?",
+            "a2": "Kyllä, makrot ja VBA-koodi säilyvät muunnoksen aikana. Jos tiedosto kuitenkin sisältää makroja, tallenna se .XLSM-muodossa (macro-enabled) .XLSX:n sijaan, jotta makrot pysyvät toiminnassa."
         }
     },
     "xlsx-to-xls": {
@@ -426,6 +466,13 @@
             "feature2_desc": "Säilyttää datasi muunnettaessa vanhempaan muotoon.",
             "feature3_title": "Nopea muunnos",
             "feature3_desc": "Nopea käsittely ja välitön lataus."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Miksi muuttaisin XLSX:n takaisin XLS:ksi?",
+            "a1": "Muuntaminen XLS-muotoon on hyödyllinen yhteensopivuuden kannalta vanhempien Excel-versioiden (Excel 97-2003) tai vanhojen järjestelmien kanssa, jotka eivät tue uudempaa XLSX-muotoa. XLS:llä on kuitenkin rajoituksia, kuten vähemmän rivejä ja suurempi tiedostokoko.",
+            "q2": "Menetänkö tietoja, kun muunnan XLSX:n XLS:ksi?",
+            "a2": "Jos XLSX-tiedostossasi on yli 65 536 riviä tai 256 saraketta, tiedot katkaistaan ​​XLS-muotoon muunnettaessa. Joitakin uudempia Excel-ominaisuuksia ei myöskään ehkä tueta vanhemmassa XLS-muodossa."
         }
     }
 }

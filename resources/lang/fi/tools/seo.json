@@ -22,6 +22,20 @@
             "keyword_placeholder": "esim. digimarkkinointitoimisto",
             "button": "Tarkista Bing-sijoitukset"
         },
+        "markets": {
+            "us": "Yhdysvallat (englanti)",
+            "uk": "Yhdistynyt kuningaskunta (englanti)",
+            "ca": "Kanada (englanti)",
+            "au": "Australia (englanti)",
+            "de": "Saksa (saksa)",
+            "fr": "Ranska (ranska)",
+            "es": "Espanja (espanja)",
+            "it": "Italia (italia)",
+            "nl": "Alankomaat (hollanti)",
+            "br": "Brasilia (portugali)",
+            "jp": "Japani (japani)",
+            "in": "Intia (englanti)"
+        },
         "content": {
             "main_title": "Edistyksellinen Bing-sijoitusten tarkistus",
             "main_subtitle": "Seuraa näkyvyyttäsi maailman toiseksi suurimmassa hakukoneessa. Saat tarkkaa paikallista tietoa Bing-SEO-strategiasi tueksi.",
@@ -31,13 +45,26 @@
             "feature2_desc": "Tarkista sijoitukset eri kaupungeista tai maista käsin. Elintärkeää paikalliselle SEO:lle.",
             "feature3_title": "Laitteiden simulointi",
             "feature3_desc": "Vaihda työpöytä- ja mobiilinäkymän välillä nähdäksesi, miten sijoituksesi vaihtelevat laitteittain.",
+            "serp_features_title": "Analysoi Bing SERP -ominaisuudet",
+            "sf_snippets_title": "Suositellut katkelmat",
+            "sf_snippets_desc": "Bing tarjoaa usein monipuolisia vastauksia ja \"älykkäitä vastauksia\" nollakohdassa. Tarkista, tallentaako sisältösi nämä näkyvät paikat.",
+            "sf_places_title": "Bing Places",
+            "sf_places_desc": "Bing vastaa Local Packia. Tärkeää paikallisille yrityksille. Käytä Sijainti-ominaisuuttamme vahvistaaksesi <strong>Bing Places</strong> -sijoituksesi.",
+            "sf_visual_title": "Visuaalinen haku",
+            "sf_visual_desc": "Bing korostaa voimakkaasti visuaalisia hakutuloksia. Tarkkaile, miltä kuvasi näyttävät raskaassa SERP-asettelussa.",
+            "sf_knowledge_title": "Tietokortit",
+            "sf_knowledge_desc": "Rikkaat tietopaneelit oikealla puolella. Tarkista, ymmärtääkö Bing selvästi brändisi kokonaisuuden.",
             "why_check_title": "Miksi seurata Bing-sijoituksia?",
-            "why_check_desc": "Vaikka Google on hallitseva, Bing pyörittää hakuja Yahoolla, AOL:lla ja miljoonilla Windows-laitteilla. Siellä on usein vähemmän kilpailua ja korkeammat konversioasteet."
+            "why_check_desc": "Vaikka Google on hallitseva, Bing pyörittää hakuja Yahoolla, AOL:lla ja miljoonilla Windows-laitteilla. Siellä on usein vähemmän kilpailua ja korkeammat konversioasteet.",
+            "how_accurate_title": "Kuinka tarkka tämä työkalu on?",
+            "how_accurate_desc": "Työkalumme suorittaa suoria kyselyitä Bingin palvelimille sillä hetkellä, kun napsautat \"Tarkista\". Emme käytä välimuistissa olevia tietoja. Tulokset ovat reaaliaikaisia, puolueettomia ja heijastavat valittujen parametrien tarkkaa SERP:tä (Search Engine Results Page)."
         },
         "faq": {
             "title": "Usein kysytyt kysymykset",
             "q1": "Onko tämä Bing-tarkistus ilmainen?",
             "a1": "Kyllä! Työkalumme on täysin ilmainen. Voit tarkistaa rajattomasti hakusanoja ilman kuluja.",
+            "q2": "Vaikuttaako tämä Yahoo-sijoituksiin?",
+            "a2": "Kyllä, yleisesti. Yahoo Search toimii suurelta osin Bingin hakemistolla. Bingin optimointi johtaa usein myös Yahoo-sijoitusten paranemiseen, mikä antaa sinulle \"kaksi yhdelle\" SEO-edun.",
             "q3": "Voinko tarkistaa paikallisia sijoituksia kaupunkikohtaisesti?",
             "a3": "Ehdottomasti. Syötä kaupunki \"Sijainti\"-kenttään, niin näet tulokset kyseisen kaupungin näkökulmasta."
         }
@@ -87,13 +114,79 @@
             "what_is_title": "Mikä on rikkoutuneiden linkkien tarkistaja?",
             "what_is_desc": "Työkalu, joka käy läpi sivusi ja etsii linkkejä, jotka eivät enää toimi (404-virheet tai palvelinvirheet).",
             "how_works_title": "Miten se toimii?",
+            "how_works_intro": "Rikkinäisen linkin tarkistusohjelmamme noudattaa yksinkertaista 3-vaiheista prosessia:",
             "how_works_step1": "<strong>Skannaus:</strong> Syötä URL ja me taltioimme kaikki linkit",
             "how_works_step2": "<strong>Tarkistus:</strong> Testaamme jokaisen linkin tilan",
             "how_works_step3": "<strong>Raportti:</strong> Saat listan linkeistä, jotka vaativat huomiota",
+            "pro_tip_title": "💡 Provinkki:",
+            "pro_tip_desc": "Suorita tämä tarkistus säännöllisesti (kuukausittain tai neljännesvuosittain) löytääksesi rikkinäiset linkit ennen kuin ne vaikuttavat hakukoneoptimointiisi. Tee ylläpitoaikataulu pitääksesi verkkosivustosi kunnossa!",
+            "types_title": "Rikkinäisten linkkien tyypit",
             "common_causes_title": "Yleisimmät syyt linkkien rikkoutumiseen",
             "cc_1": "❌ <strong>Kirjoitusvirheet:</strong> Väärin kirjoitettu osoite linkkiä luotaessa",
             "cc_2": "❌ <strong>Poistetut sivut:</strong> Sisältö on poistettu ilman uudelleenohjausta",
-            "cc_4": "❌ <strong>Ulkoiset sivut:</strong> Toinen sivusto on muuttanut osoitteitaan tai suljettu"
+            "cc_3": "❌ <strong>Verkkosivuston uudelleenjärjestely:</strong> URL-osoitteen rakenne muuttuu uudelleensuunnittelun aikana",
+            "cc_4": "❌ <strong>Ulkoiset sivut:</strong> Toinen sivusto on muuttanut osoitteitaan tai suljettu",
+            "cc_5": "❌ <strong>Verkkotunnuksen vanheneminen:</strong> linkitetyt verkkosivustot siirtyvät offline-tilaan pysyvästi",
+            "cc_6": "❌ <strong>Protokollamuutokset:</strong> HTTP:stä HTTPS:ään siirtyminen ilman asianmukaisia ​​uudelleenohjauksia",
+            "best_practices_title": "Parhaat käytännöt rikkinäisten linkkien hallintaan"
+        },
+        "benefits": {
+            "ux_title": "Käyttökokemus",
+            "ux_desc": "Rikkinäiset linkit turhauttavat vierailijat ja lisäävät poistumisprosenttia. Pidä käyttäjäsi tyytyväisinä sujuvalla selauskokemuksella.",
+            "seo_title": "SEO vaikutus",
+            "seo_desc": "Hakukoneet rankaisevat sivustoja, joissa on monia rikkinäisiä linkkejä. Säilytä sijoituksesi korjaamalla kuolleet linkit viipymättä.",
+            "maintenance_title": "Helppo huolto",
+            "maintenance_desc": "Tunnista ja korjaa rikkinäiset linkit nopeasti, ennen kuin ne vahingoittavat sivustosi mainetta ja haun näkyvyyttä."
+        },
+        "link_types": {
+            "type1_title": "🔴 404 Ei löydy",
+            "type1_desc": "Yleisin rikkinäinen linkki. Sivua ei enää ole palvelimella.",
+            "type2_title": "🟡 301/302 uudelleenohjaukset",
+            "type2_desc": "Sivu on siirtynyt. Vaikka liian monet uudelleenohjaukset eivät ole rikki, ne hidastavat sivustoasi.",
+            "type3_title": "🔴 500 palvelinvirhettä",
+            "type3_desc": "Palvelimessa tapahtui virhe. Nämä vaativat välitöntä huomiota.",
+            "type4_title": "🟢 Aikakatkaisuvirheet",
+            "type4_desc": "Palvelimelta kesti liian kauan vastata. Voi viitata suorituskykyongelmiin."
+        },
+        "best_practices": {
+            "bp1_title": "Säännölliset tarkastukset",
+            "bp1_desc": "Tarkista sivustosi kuukausittain rikkinäisten linkkien varalta, varsinkin sisältöpäivitysten jälkeen",
+            "bp2_title": "Käytä 301-uudelleenohjauksia",
+            "bp2_desc": "Kun siirrät tai poistat sivuja, määritä aina oikeat uudelleenohjaukset",
+            "bp3_title": "Tarkkaile ulkoisia linkkejä",
+            "bp3_desc": "Ulkoiset sivustot vaihtuvat usein. Tarkista lähtevät linkit neljännesvuosittain",
+            "bp4_title": "Asiakirjan muutokset",
+            "bp4_desc": "Pidä lokia URL-osoitteen muutoksista ja uudelleenohjauksista tulevaa tarvetta varten",
+            "bp5_title": "Korjaa ensin sisäiset linkit",
+            "bp5_desc": "Korjaa sisäiset rikkinäiset linkit etusijalle, koska ne ovat täysin hallinnassasi",
+            "bp6_title": "Käytä suhteellisia URL-osoitteita",
+            "bp6_desc": "Käytä sisäisissä linkeissä suhteellisia URL-osoitteita välttääksesi ongelmia verkkotunnuksen muutosten aikana"
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Kuinka usein minun tulee tarkistaa rikkinäisten linkkien varalta?",
+            "a1": "Useimmille verkkosivustoille riittää, että rikkinäiset linkit tarkistetaan kuukausittain. Paljon liikennettä sisältävien sivustojen tai sähköisen kaupankäynnin alustojen tulee tarkistaa viikoittain. Suorita välitön tarkistus suurten verkkosivustopäivitysten, uudelleensuunnittelun tai siirtojen jälkeen.",
+            "q2": "Vahingoittaako rikkinäiset linkit SEO-sijoituksiani?",
+            "a2": "Kyllä, mutta välillisesti. Google on todennut, että muutama rikkinäinen linkki ei suoraan vahingoita sijoitusta. <strong>Monet rikkinäiset linkit</strong> ovat kuitenkin merkki huonosta sivuston ylläpidosta, mikä voi lisätä poistumisprosenttia, tuhlata indeksointibudjettia ja heikentää käyttäjien luottamusta.",
+            "q3": "Mitä eroa on sisäisten ja ulkoisten rikkinäisten linkkien välillä?",
+            "a3": "<strong>Sisäiset rikkinäiset linkit</strong> osoittavat oman verkkotunnuksesi sivuille ja ovat täysin sinun hallinnassasi. <strong>Ulkoiset rikkinäiset linkit</strong> osoittavat muille verkkosivustoille. Sinun tulee päivittää ne toimiviksi vaihtoehdoiksi tai poistaa ne.",
+            "q4": "Voinko tarkistaa koko verkkosivustoni rikkinäiset linkit?",
+            "a4": "Tämä työkalu tarkistaa <strong>yhden sivun kerrallaan</strong> tarjotakseen nopeita ja tarkkoja tuloksia. Suosittelemme aloittamaan koko sivuston tarkastuksissa tärkeimmistä sivuistasi: etusivusta, suosituimmista aloitussivuista ja paljon liikennettä saavasta sisällöstä.",
+            "q_what_to_do": "Mitä minun pitäisi tehdä, kun löydän rikkinäisiä linkkejä?",
+            "a_what_to_do_intro": "Noudata tätä tärkeysjärjestystä:",
+            "a_what_to_do_li1": "<strong>Sisäiset linkit:</strong> määritä 301-uudelleenohjaukset uuteen URL-osoitteeseen tai päivitä linkki suoraan",
+            "a_what_to_do_li2": "<strong>Ulkoiset linkit:</strong> Etsi vaihtoehtoinen toimiva sivu tai käytä archive.org-sivustoa löytääksesi vanhan sisällön",
+            "a_what_to_do_li3": "<strong>Jos muuta vaihtoehtoa ei ole:</strong> Poista linkki ja päivitä ympäröivä sisältö virran ylläpitämiseksi",
+            "a_what_to_do_li4": "<strong>Dokomentoi kaikki:</strong> Pidä lokia myöhempää käyttöä ja kuvioanalyysiä varten"
+        },
+        "js": {
+            "stopping": "Pysäytetään skannausta...",
+            "scan_stopped": "Skannaus pysäytetty",
+            "scan_complete": "Skannaus valmis!",
+            "error_prefix": "Virhe:",
+            "pending": "Odottaa",
+            "internal": "Sisäinen",
+            "external": "Ulkoinen"
         }
     },
     "google-serp-checker": {
@@ -126,7 +219,30 @@
             "feature2_title": "Mobiili-SERP-analyysi",
             "feature2_desc": "Varmista näkyvyytesi älypuhelimilla. Mobiili-indeksointi on nykypäivän standardi.",
             "feature3_title": "Globaali seuranta",
-            "feature3_desc": "Laajennatko ulkomaille? Tarkista sijoitukset yli 190 maassa eri Google-tunnusten avulla (.co.uk, .de, .se jne.)."
+            "feature3_desc": "Laajennatko ulkomaille? Tarkista sijoitukset yli 190 maassa eri Google-tunnusten avulla (.co.uk, .de, .se jne.).",
+            "serp_features_title": "Google SERP -ominaisuuksien ymmärtäminen",
+            "feature_snippet_title": "Suositellut katkelmat",
+            "feature_snippet_desc": "Tunnetaan myös \"vastauslaatikoina\". Nämä näkyvät noin 12 %:ssa hakukyselyistä. Työkalumme auttaa sinua tarkistamaan, omistatko tämän erinomaisen kiinteistön.",
+            "feature_local_title": "Paikallinen paketti",
+            "feature_local_desc": "Karttapohjainen luettelo 3 paikallisesta yrityksestä. Tärkeä kivijalkakaupoissa. Käytä \"Sijainti\"-ominaisuuttamme vahvistaaksesi läsnäolosi.",
+            "feature_paa_title": "Ihmiset myös kysyvät",
+            "feature_paa_desc": "Harmonikkatyylisiä kysymyksiä, jotka liittyvät käyttäjän kyselyyn. Sijoitus tässä voi saada merkittävää tietoisuusliikennettä. Käytä serp-avainsanatarkistustamme näiden mahdollisuuksien tunnistamiseen.",
+            "feature_knowledge_title": "Tietopaneeli",
+            "feature_knowledge_desc": "Tietoruudut, jotka näkyvät työpöytätulosten oikealla puolella. Välttämätön brändin auktoriteetille ja kokonaisuuden hakukoneoptimoijalle.",
+            "what_is_title": "Mikä on SERP Checker & Analyzer?",
+            "what_is_desc": "Search Engine Results Page (SERP) -tarkistus on olennainen diagnostiikkatyökalu SEO-ammattilaisille ja yritysten omistajille. Sen avulla voit käyttää verkkosivuston SERP-tarkistusta tarkastelemaan tietyn avainsanan tuloksia sellaisina kuin ne näyttäisivät neutraalille käyttäjälle tietyssä maantieteellisessä paikassa.",
+            "bubble_problem_title": "\"Google Bubble\" -ongelma",
+            "bubble_problem_desc": "Jos menet vain osoitteeseen Google.com ja haet omia avainsanojasi, tulokset ovat erittäin puolueellisia. Google mukauttaa tuloksia IP-osoitteesi, hakuhistoriasi ja laitetyypin perusteella. Tämän vuoksi on vaikea vastata tarkasti \"mikä on serpini\" ilman työkalua.",
+            "solution_text": "Ilmainen Google SERP Checker -työkalumme rikkoo tämän kuplan. Käyttämällä UULE-parametria luomme erityisesti koodatun merkkijonon, joka kertoo Googlelle tarkalleen, mistä se simuloi online-SERP-seurantaa, mikä antaa sinulle 100 % puhdasta, puolueetonta dataa."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Onko tämä SERP-työkalu ilmainen rajoittamattomiin hakuihin?",
+            "a1": "Kyllä! Maksuttoman serp-työkalumme avulla voit tarkistaa niin monta avainsanaa kuin haluat ilman tilin luomista tai tilausmaksua. Uskomme kaikkien saatavilla olevien online-serp-tarkistustyökalujen tarjoamiseen.",
+            "q2": "Kuinka SERP Position Tool -paikannustoiminto toimii?",
+            "a2": "Käytämme Googlen virallista UULE-parametria (Universal URL Location Encoded). Kun kirjoitat kaupungin, löydämme sen tarkat GPS-koordinaatit ja koodaamme ne hakupyyntöön, mikä pakottaa Googlen näyttämään tuloksia ikään kuin seisot fyysisesti kyseisessä kaupungissa.",
+            "q3": "Miksi SERP-sijoitukseni Googlessa näyttää erilaiselta mobiililaitteella?",
+            "a3": "Google käyttää Mobile-First -indeksointia, mikä tarkoittaa, että se käyttää pääasiassa sisällön mobiiliversiota indeksointiin ja sijoitukseen. Mobiilihakutuloksissa on myös erilaisia ​​asetteluja (enemmän mainoksia, erilaisia ​​katkelmia). Käytä \"Laite\"-valitsinta vahvistaaksesi mobiililäsnäolosi erityisesti tällä google serps -seurannalla."
         }
     },
     "keyword-density-checker": {
@@ -150,12 +266,69 @@
             "long_sentences": "Pitkiä lauseita",
             "short_sentences": "Lyhyitä lauseita",
             "top_keyword": "Yleisin sana",
+            "top_density": "Huipputiheys",
             "single_keywords_title": "Yksittäiset sanat",
             "keyword_header": "Hakusana",
             "count_header": "Määrä",
             "density_header": "Tiheys",
             "two_word_title": "2-sanaiset ilmaukset",
+            "phrase_header": "Lause",
             "three_word_title": "3-sanaiset ilmaukset"
+        },
+        "content": {
+            "main_title": "Avainsanojen tiheyden tarkistus",
+            "main_subtitle": "Optimoi sisältösi osuvuus analysoimalla avainsanojen tiheyttä.",
+            "intro": "Avainsanojen tiheyden tarkistustyökalumme auttaa sinua löytämään tekstistäsi useimmin käytetyt sanat ja ilmaukset. Täydellinen hakukoneoptimoijille ja sisällöntuottajille avainsanojen täyttämisen välttämiseksi.",
+            "what_is_title": "Mikä on avainsanatiheys?",
+            "what_is_text": "Avainsanojen tiheys on prosenttiosuus, kuinka monta kertaa avainsana tai lause esiintyy pelkästään sisällössä verrattuna sivun sanojen kokonaismäärään. Se on avaintekijä hakukoneoptimoinnissa (SEO).",
+            "guidelines_title": "Tiheysohjeet",
+            "why_use_title": "Miksi tarkistaa avainsanatiheys?",
+            "best_practices_title": "Parhaat käytännöt",
+            "faq_title": "FAQ"
+        },
+        "guidelines": {
+            "g1": "\"Täydellistä\" prosenttiosuutta ei ole, mutta <strong>1–3 %</strong> pidetään usein turvallisena.",
+            "g2": "Vältä \"avainsanojen täyttämistä\", koska se voi vahingoittaa sijoituksiasi.",
+            "g3": "Kirjoita luonnollisesti lukijoille, ei vain boteille.",
+            "g4": "Käytä synonyymejä ja LSI (Latent Semantic Indexing) avainsanoja.",
+            "g5": "Älä tarkista yksittäisiä sanoja, vaan 2-3 sanaa."
+        },
+        "features": {
+            "f1_title": "Syvä analyysi",
+            "f1_desc": "Analysoi yksittäisiä sanoja, bigrammeja ja trigrammeja.",
+            "f2_title": "Sana laskuri",
+            "f2_desc": "Tarkka sanojen, lauseiden ja kappaleiden lukumäärä.",
+            "f3_title": "Täytteen tarkistus",
+            "f3_desc": "Auttaa tunnistamaan, käytätkö avainsanoja liian usein.",
+            "f4_title": "Ilmainen työkalu",
+            "f4_desc": "Täysin ilmainen käyttää ilman rajoituksia.",
+            "f5_title": "Kirjoittajille",
+            "f5_desc": "Paranna sisällön laatua ja luettavuutta.",
+            "f6_title": "Lopeta Sanat",
+            "f6_desc": "Älykäs yleisten lopetussanojen suodatus."
+        },
+        "best_practices": {
+            "bp1": "Keskity sisällön laatuun tiettyjen tiheyslukujen sijaan.",
+            "bp2": "Sisällytä pääavainsanasi ensimmäiseen kappaleeseen.",
+            "bp3": "Käytä avainsanoja H1- ja H2-otsikoissa.",
+            "bp4": "Käytä pitkähäntäisiä avainsanamuunnelmia.",
+            "bp5": "Älä uhraa luettavuutta SEO:lle.",
+            "bp6": "Älä toista samaa sanaa luonnottomasti."
+        },
+        "faq": {
+            "q1": "Mikä on hyvä avainsanatiheys?",
+            "a1": "Useimmat SEO-asiantuntijat suosittelevat noin 1-2%. Tekstin tulee lukea luonnollisesti.",
+            "q2": "Mitä on avainsanojen täyttäminen?",
+            "a2": "Se on käytäntö ladata verkkosivua avainsanoja, joilla yritetään manipuloida sivuston sijoitusta Googlen hakutuloksissa.",
+            "q3": "Jättääkö se huomiotta lopetussanat?",
+            "a3": "Kyllä, työkalumme suodattaa pois yleiset lopetussanat (kuten \"the\", \"ja\", \"on\") antaakseen sinulle merkityksellisten sanojen tiheyden.",
+            "q4": "Onko lauseiden tiheydellä väliä?",
+            "a4": "Kyllä, hakukoneet etsivät lauseita ja aiheryhmiä, eivät vain yksittäisiä sanoja.",
+            "q5": "Voinko tarkistaa URL-osoitteen?",
+            "a5": "Tällä hetkellä tämä työkalu toimii tekstinsyötön kanssa. Kopioi sivusi sisältö ja liitä se tähän."
+        },
+        "alerts": {
+            "enter_text": "Kirjoita tekstiä analysoitavaksi"
         }
     },
     "meta-tag-analyzer": {
@@ -184,11 +357,93 @@
             "charset": "Merkistö",
             "robots": "Robotit"
         },
+        "content": {
+            "main_title": "Meta Tag Analyzer",
+            "main_subtitle": "Analysoi ja optimoi verkkosivustosi sisällönkuvauskentät helposti.",
+            "intro": "Ilmainen Meta Tag Analyzer -työkalumme auttaa sinua tarkistamaan minkä tahansa verkkosivun sisällönkuvauskentät. Hanki välitöntä tietoa otsikostasi, kuvauksestasi ja muista tärkeistä SEO-tunnisteista.",
+            "what_are_title": "Mitä ovat sisällönkuvauskentät?",
+            "what_are_desc": "Sisällönkuvauskentät ovat tekstinpätkiä, jotka kuvaavat sivun sisältöä. sisällönkuvauskentät eivät näy itse sivulla, vaan vain sivun lähdekoodissa. Sisällönkuvauskentät ovat pohjimmiltaan pieniä sisällön kuvaajia, jotka auttavat kertomaan hakukoneille, mistä verkkosivulla on kyse.",
+            "essential_title": "Tärkeät sisällönkuvauskentät SEO:lle",
+            "common_mistakes_title": "Yleisiä sisällönkuvauskenttien virheitä",
+            "mistake_1": "Otsikko- tai kuvaustunnisteet puuttuvat",
+            "mistake_2": "Suositeltujen merkkirajoitusten ylittäminen",
+            "mistake_3": "Päällekkäiset sisällönkuvauskentät sivuilla",
+            "mistake_4": "Käytä epäolennaisia ​​avainsanoja",
+            "mistake_5": "Ei näkymätunnistetta mobiilioptimointia varten",
+            "mistake_6": "Useita otsikkotunnisteita yhdellä sivulla",
+            "why_analyze_title": "Miksi sisällönkuvauskenttiä analysoidaan?"
+        },
+        "meta_tags": {
+            "title_tag_title": "Otsikkotunniste",
+            "title_tag_desc": "Tärkein sisällönkuvauskenttä. Se määrittää sivusi otsikon hakutuloksissa.",
+            "title_optimal_length": "Optimaalinen pituus:",
+            "title_optimal_value": "50-60 merkkiä",
+            "title_best_practice": "Paras käytäntö:",
+            "title_best_value": "Sisällytä pääavainsanasi lähelle alkua.",
+            "meta_desc_title": "Meta Kuvaus",
+            "meta_desc_desc": "Tarjoaa yhteenvedon sivun sisällöstä. Vaikuttaa napsautussuhteeseen (CTR).",
+            "meta_desc_optimal_length": "Optimaalinen pituus:",
+            "meta_desc_optimal_value": "150-160 merkkiä",
+            "meta_desc_best_practice": "Paras käytäntö:",
+            "meta_desc_best_value": "Kirjoita vakuuttava kopio toimintakehotuksella.",
+            "og_title": "Avaa kaavio (sosiaalinen)",
+            "og_desc": "Hallitsee, miten sisältösi näkyy, kun se jaetaan sosiaalisessa mediassa (Facebook, LinkedIn).",
+            "og_key_tags": "Tärkeimmät tunnisteet:",
+            "og_key_value": "og:title, og:description, og:image",
+            "og_platform": "Alustat:",
+            "og_platform_value": "Facebook, LinkedIn, Pinterest",
+            "twitter_title": "Twitter-kortit",
+            "twitter_desc": "Erityiset sisällönkuvauskentät optimoivat sisältösi näkymistä Twitterissä.",
+            "twitter_key_tags": "Tärkeimmät tunnisteet:",
+            "twitter_key_value": "twitter:kortti, twitter:otsikko, twitter:kuva",
+            "twitter_types": "Tyypit:",
+            "twitter_types_value": "Yhteenveto, yhteenveto suurella kuvalla"
+        },
+        "benefits": {
+            "b1_title": "Paremmat sijoitukset",
+            "b1_desc": "Oikeat tunnisteet auttavat hakukoneita ymmärtämään sisältöäsi.",
+            "b2_title": "Korkeampi napsautussuhde",
+            "b2_desc": "Kiinnostavat otsikot ja kuvaukset saavat enemmän napsautuksia.",
+            "b3_title": "Sosiaalinen näkyvyys",
+            "b3_desc": "Optimoidut Open Graph -tunnisteet parantavat sosiaalisen jakamisen ulkonäköä.",
+            "b4_title": "Kilpailija-analyysi",
+            "b4_desc": "Tarkenna strategiaasi analysoimalla kilpailijoiden tunnisteita."
+        },
+        "features": {
+            "f2_title": "Välitön analyysi",
+            "f2_desc": "Saa tuloksia sekunneissa.",
+            "f3_title": "Vapaasti käytettävä",
+            "f3_desc": "Ei piilotettuja maksuja tai rajoja."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on sisällönkuvauskenttien analysaattori?",
+            "a1": "Se on työkalu, joka indeksoi verkkosivun ja poimii sen sisällönkuvauskentät (otsikko, kuvaus, robotit, avainsanat) analysointia varten.",
+            "q2": "Miksi sisällönkuvauskentät ovat tärkeitä SEO:lle?",
+            "a2": "Ne tarjoavat hakukoneille tietoa sivustasi ja usein määrittävät, kuinka sivustosi näkyy hakutuloksissa.",
+            "q3": "Mikä on täydellinen otsikkotunnisteen pituus?",
+            "a3": "On suositeltavaa pitää se 50–60 merkin välillä, jotta se ei katkea Googlen hakutuloksissa.",
+            "q4": "Vaikuttavatko avainsanojen sisällönkuvauskentät sijoitukseen?",
+            "a4": "Useimmat nykyaikaiset hakukoneet (mukaan lukien Google) eivät enää käytä avainsanojen sisällönkuvauskenttiä sijoitustarkoituksiin.",
+            "q5": "Miten korjaan sisällönkuvauskenttien virheet?",
+            "a5": "Sinun on muokattava sivusi HTML-koodia (<head>-osiossa) tai käytettävä CMS SEO -asetuksiasi/laajennuksia."
+        },
         "js": {
+            "alert_enter_url": "Anna kelvollinen URL-osoite",
+            "analyzing": "Analysoidaan...",
+            "error_cors": "<strong>CORS-virhe (demo):</strong> Tuotannossa ulkoisten URL-osoitteiden pyyntöjen on mentävä taustapalvelimen kautta. <br>Alla näytetään esittelytiedot.",
+            "error_general": "Virhe analysoitaessa URL-osoitetta",
+            "analyze_btn": "Analysoi sisällönkuvauskenttiä",
+            "demo_title": "Esimerkkisivun otsikko - Optimoitu hakukoneoptimointiin",
+            "demo_description": "Tämä on esimerkki metakuvauksesta. Sen tulee olla kuvaava, kiinnostava ja sisältää avainsanoja, jotka houkuttelevat napsautuksia hakutuloksista.",
             "status_optimal": "Optimaalinen",
             "advice_perfect_length": "Täydellinen pituus!",
             "status_too_long": "Liian pitkä",
+            "advice_truncated": "Saattaa olla lyhennetty hakutuloksissa.",
             "status_too_short": "Liian lyhyt",
+            "advice_add_detail": "Harkitse yksityiskohtien lisäämistä.",
+            "advice_truncated_short": "Saattaa olla katkaistu.",
+            "advice_add_detail_short": "Harkitse yksityiskohtien lisäämistä.",
             "score_text": "Hienoa! Meta-tietosi on optimoitu hyvin."
         }
     },
@@ -203,7 +458,52 @@
             "title": "Aloita ilmainen auditointi",
             "url_label": "Verkkosivun URL",
             "keywords_label": "Kohdehakusanat",
-            "button": "Aloita kattava auditointi"
+            "recommended": "Suositeltava",
+            "button": "Aloita kattava auditointi",
+            "page_analysis": "Sivun analyysi"
+        },
+        "labels": {
+            "initializing": "Alustetaan...",
+            "desktop": "Työpöytä",
+            "mobile": "mobiili"
+        },
+        "content": {
+            "main_content_title": "Kattava sivulla oleva SEO-tarkistus ja -analysaattori",
+            "main_content_desc": "Nykyaikaiset hakukoneet käyttävät hermohakua ymmärtääkseen kyselyn <em>tarkoituksen</em>, eivät vain tarkkoja avainsanoja. <strong>Sivulla oleva hakukoneoptimoinnin tarkistus</strong> perustuu samoihin periaatteisiin. Tarvitsetpa nopean <strong>sivullisen hakukoneoptimoinnin</strong> tai syvällisen semanttisen tarkastuksen, työkalumme toimii hermosoluisena <strong>sivulla olevan hakukoneoptimoinnin analysaattorina</strong>, joka auttaa kuromaan umpeen sisältösi ja tekoälyyn perustuvien algoritmien tulkinnan välisen kuilun.",
+            "how_to_title": "Sivulla olevan SEO-tarkistustyökalun käyttäminen"
+        },
+        "features": {
+            "f1_title": "Välitön semanttinen analyysi",
+            "f1_desc": "Hakuhämähäkit indeksoivat tehokkaasti. <strong>Sivun hakukoneoptimoinnin online-tarkistus</strong> jäljittelee tätä käyttäytymistä ja jäsentää DOM-ominaisuutta ymmärtääkseen rakenteen ja hierarkian. Tämä <strong>sivun tarkistustyökalu</strong> varmistaa, että HTML-koodisi puhuu hakukoneiden kieltä.",
+            "f2_title": "Tietoihin perustuva pisteytys",
+            "f2_desc": "Unohda subjektiivisuus – saat painotettuja pisteitä eri signaaleista, kuten otsikon optimoinnista, metan täydellisyydestä ja sanamääräsuhteista. Se on läpinäkyvä <strong>seo-tarkistus sivulla</strong> -mekanismi, jossa on toimivia kynnysarvoja.",
+            "f3_title": "Asiayhteyteen perustuva sisällön tarkistus",
+            "f3_desc": "\"Täydellinen\" avainsanatiheyden myytti on kuollut. <strong>Sivulla oleva hakukoneoptimointityökalumme</strong> arvioi sen sijaan asiayhteyteen liittyvän osuvuuden. Ovatko H1:si linjassa käyttäjän aikomusten kanssa? Täyttääkö sisältösi kyselyn? Tämä on moderni <strong>sivun hakukoneanalyysi</strong>.",
+            "f4_title": "Matkapuhelin ja tekninen tarkastus",
+            "f4_desc": "Viewport-tagit, ensisijaiset linkit ja strukturoidut datakatkelmat – tarkistettu. <strong>Sivun hakukoneoptimointityökalumme</strong> ilmoittaa mobiilikäytettävyyden punaisista lipuista ja merkintöjen epäjohdonmukaisuuksista, jolloin saat <strong>sivulla olevan hakukoneoptimoinnin raportin</strong>, joka on sekä esteettinen että algoritminen.",
+            "f5_title": "100 % vapaa pääsy",
+            "f5_desc": "Ei tilauksia, ei piilotettuja rajoja. Tämä on <strong>sivulla oleva hakutyökalu ilmainen</strong> -vaihtoehto. Suorita rajattomasti tarkastuksia missä tahansa julkisessa URL-osoitteessa, olipa kyseessä sitten oma sivustosi tai kilpailullinen tutkimus.",
+            "f6_title": "Linkin arkkitehtuuri",
+            "f6_desc": "Sisäinen ja ulkoinen linkkitarkastus yhdessä näkymässä. Katso kuinka moni lähtevä linkki osoittaa minne ja vahvistaako sisäinen linkityksesi ajankohtaista auktoriteettia. Se on kokonaisvaltainen <strong>ilmainen sivun SEO-tarkistus</strong>, joka on suunniteltu kattavasti."
+        },
+        "how_to": {
+            "step1_title": "Anna URL-osoite",
+            "step1_desc": "Anna tietty sivun päätepiste. <strong>Online-sivulla oleva SEO-tarkistus</strong> hakee raaka-HTML-koodin aivan kuten hakubotti tekisi.",
+            "step2_title": "Analysoi signaaleja",
+            "step2_desc": "Aloita <strong>seo-sivun testaaja</strong>. Analysoimme otsikot, metatiedot ja sisältörakenteen jäljitelläksemme, miten algoritmit \"lukevat\" sivusi.",
+            "step3_title": "Optimoi tarkoitukseen",
+            "step3_desc": "Käytä tietoja sisältösi osuvuuden tarkentamiseen. <strong>Tarkista sivun verkkosivuston</strong> logiikka ja paranna käyttökelpoista <strong>sivun hakutulostasi</strong>."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Miksi sivun SEO-tarkistus on kriittinen sijoituksen kannalta?",
+            "a1": "Haussa on kyse osuvuudesta. <strong>Sivulla suoritettava hakukoneoptimoinnin tarkistus</strong> varmistaa, että signaalisi (otsikot, malli, sisältö) vastaavat käyttäjän tarkoitusta. Säännöllinen tarkastus <strong>sivuston hakukoneoptimointityökalulla</strong> pitää sivustosi synkronoituna kehittyvien algoritmipäivitysten kanssa.",
+            "q2": "Onko tämä online-seo-työkalu todella ilmainen?",
+            "a2": "Kyllä. Uskomme saatavilla olevaan dataan. <strong>Online SEO -työkalumme</strong> on vapaasti käytettävissä, joten voit toimia omana <strong>ilmaisena sivun hakutyökaluna</strong> ilman tilausesteitä.",
+            "q3": "Miten hakukoneet ymmärtävät sisällöni?",
+            "a3": "Moottorit käyttävät NLP:tä (Natural Language Processing) kokonaisuuksien yhdistämiseen. <strong>On page SEO -luokitelijamme</strong> tarkistaa, tukeeko rakenne tätä ymmärrystä, ja se toimii välityspalvelimena <strong>seo onpage -testinä</strong> hermoyhteensopivuuden varmistamiseksi.",
+            "q4": "Voinko tarkistaa sivun SEO:sta minkä tahansa verkkosivuston?",
+            "a4": "Kyllä. Indeksointirobotimme kunnioittaa \"robots.txt\" -tiedostoa, mutta voi analysoida minkä tahansa julkisen URL-osoitteen. Voit <strong>tarkistaa sivulta hakukoneoptimoinnin</strong>, jotta kilpailijat voivat suunnitella menestyksensä. Se on monipuolinen <strong>sivuntarkistustyökalu</strong> mihin tahansa strategiaan."
         }
     },
     "pdf-report": {
@@ -215,11 +515,16 @@
             "cover_title": "SEO-AUDITOINTIRAPORTTI",
             "overall_score": "KOKONAISPISTEET",
             "generated_on": "Luotu päivämäärällä",
+            "suite_name": "Optimizo SEO Tools Suite",
+            "audit_title": "Optimizo SEO Audit",
+            "analysis_methods": "Yksityiskohtaiset analyysimenetelmät",
             "recommendation": "SUOSITUS:"
         },
         "meta": {
             "title": "SEO PDF-raporttien luontityökalu – ilmainen online-tarkastustyökalu",
-            "h1": "PDF-raporttien luontiohjelma"
+            "description": "Luo ilmainen SEO-tarkastusraportti PDF-muodossa verkkosivustollesi.",
+            "h1": "PDF-raporttien luontiohjelma",
+            "subtitle": "Luo yksityiskohtaisia ​​PDF-raportteja SEO-analyyseja ja -tarkastuksia varten"
         }
     },
     "redirect-checker": {
@@ -231,17 +536,152 @@
         },
         "form": {
             "url_label": "Syötä tarkistettavat URL-osoitteet (Yksi per rivi, max 10)",
+            "url_placeholder": "https://example.com\nhttps://toinen-sivusto.com\nhttps://third-site.com",
+            "canonical_check": "Tarkista myös verkkotunnuksen ensisijainen (www vs. ei-www)",
+            "user_agent_label": "Käyttäjäagentti",
+            "user_agent_default": "Oletus (selain)",
+            "user_agent_googlebot": "Googlebot (Google)",
+            "user_agent_bingbot": "Bingbot (Bing)",
+            "user_agent_facebook": "Facebookin indeksointirobotti",
+            "user_agent_iphone": "iPhone (Safari)",
+            "user_agent_android": "Android (Chrome)",
             "button": "Tarkista osoitteet"
+        },
+        "loading": {
+            "analyzing": "Analysoidaan uudelleenohjauspolkua..."
         },
         "content": {
             "main_title": "Uudelleenohjausten ja HTTP-tilan tarkistustyökalu",
+            "main_subtitle": "Täydellinen URL-analyysi uudelleenohjauksen jäljittämisellä, tilakoodin tarkistuksella ja silmukan tunnistuksella",
+            "intro": "Analysoi HTTP-tilakoodeja, jäljitä uudelleenohjausketjuja, havaitse 301- ja 302-uudelleenohjaukset, tunnista rikkinäiset linkit ja etsi uudelleenohjaussilmukat kattavalla ilmaisella työkalullamme. Tärkeä hakukoneoptimoinnin optimoinnissa, verkkosivustojen virheenkorjauksessa, siirtymisen suunnittelussa ja oikean URL-rakenteen varmistamisessa. Tarkista kaikki URL-osoitteet välittömästi nähdäksesi täydellisen uudelleenohjauspolun, vastauskoodit ja mahdolliset ongelmat.",
             "features_title": "✨ Keskeiset ominaisuudet",
             "feature1_title": "Usean osoitteen tarkistus",
             "feature1_desc": "Tarkista jopa 10 osoitetta kerralla.",
             "feature2_title": "Kanonisuuden tarkistus",
             "feature2_desc": "Varmista www vs ei-www yhtenäisyys.",
             "feature3_title": "Silmukan tunnistus",
-            "feature3_desc": "Tunnista ikuiset uudelleenohjaussilmukat."
+            "feature3_desc": "Tunnista ikuiset uudelleenohjaussilmukat.",
+            "feature4_title": "Täydellinen ketjuanalyysi",
+            "feature4_desc": "Seuraa täydet uudelleenohjausreitit tilakoodien ja ajoituksen avulla",
+            "what_are_redirects_title": "Mitä HTTP-uudelleenohjaukset ovat?",
+            "what_are_redirects_desc": "HTTP-uudelleenohjaukset ovat palvelinvastauksia, jotka lähettävät vierailijat automaattisesti URL-osoitteesta toiseen. Kun selain pyytää URL-osoitetta, palvelin voi vastata uudelleenohjauksen tilakoodilla (kuten 301 tai 302) ja uuden kohde-URL-osoitteen. Uudelleenohjaukset ovat välttämättömiä hakukoneoptimoinnin arvon ylläpitämisessä, kun siirretään sisältöä, korjataan rikkinäisiä linkkejä, pakotetaan HTTPS ja hallinnoidaan verkkotunnuksen muutoksia.",
+            "status_codes_title": "HTTP-tilakoodien ymmärtäminen",
+            "status_2xx_title": "2xx - Menestys",
+            "status_2xx_desc": "Nämä osoittavat onnistuneita pyyntöjä ilman ongelmia",
+            "status_3xx_title": "3xx - Uudelleenohjaukset",
+            "status_3xx_desc": "URL-osoite on siirtynyt, selaimen pitäisi seurata uudelleenohjausta",
+            "status_4xx_title": "4xx - Asiakasvirheet",
+            "status_4xx_desc": "Pyydä virhe asiakkaan puolella",
+            "status_5xx_title": "5xx - Palvelinvirheet",
+            "status_5xx_desc": "Palvelinpuolen virheet",
+            "redirect_301_title": "301 Pysyvä uudelleenohjaus",
+            "redirect_301_when": "<strong>Käyttöaika:</strong> Sisältö on siirretty pysyvästi uuteen URL-osoitteeseen",
+            "redirect_301_seo": "<strong>SEO-vaikutus:</strong> Siirtää 90–99 % linkkipääomasta uuteen URL-osoitteeseen",
+            "redirect_301_cache": "<strong>Välimuisti:</strong> Selaimet tallentavat välimuistiin pysyvästi, vaikea muuttaa",
+            "redirect_302_title": "302 Väliaikainen uudelleenohjaus",
+            "redirect_302_when": "<strong>Käyttöaika:</strong> Sisältö tilapäisesti eri URL-osoitteessa",
+            "redirect_302_seo": "<strong>Hakukoneoptimoinnin vaikutus:</strong> Alkuperäinen URL-osoite säilyttää sijoitusvoimansa",
+            "redirect_302_cache": "<strong>Välimuisti:</strong> Ei välimuistissa, helppo muuttaa tai poistaa",
+            "why_check_title": "Miksi tarkistaa uudelleenohjaukset?",
+            "why_check_1": "<strong>Sivuston siirrot:</strong> Varmista, että kaikki vanhat URL-osoitteet ohjaavat oikein uusiin paikkoihin",
+            "why_check_2": "<strong>Katkeutuneen linkin tunnistus:</strong> Etsi 404-virheet ja katkenneet uudelleenohjausketjut",
+            "why_check_3": "<strong>Suorituskykyongelmat:</strong> Tunnista liialliset uudelleenohjausketjut, jotka hidastavat sivun lataamista",
+            "why_check_4": "<strong>Uudelleenohjaussilmukan tunnistus:</strong> Ota kiinni pyöreät uudelleenohjaukset, jotka aiheuttavat loputtomia silmukoita",
+            "why_check_5": "<strong>Turvatarkistukset:</strong> Tarkista uudelleenohjauskohteet ja estä haitalliset uudelleenohjaukset",
+            "why_check_6": "<strong>Käyttäjäkokemus:</strong> Varmista, että vierailijat saavuttavat halutun sisällön nopeasti",
+            "why_check_7": "<strong>Analytiikan tarkkuus:</strong> varmista, että seurantakoodit toimivat uudelleenohjausketjujen kautta",
+            "redirect_chains_title": "Mitä uudelleenohjausketjut ovat?",
+            "redirect_chains_desc": "Uudelleenohjausketju syntyy, kun URL-osoite uudelleenohjaa toiseen URL-osoitteeseen, joka uudelleenohjaa toiseen ja niin edelleen. Jokainen hyppy ketjussa lisää viivettä ja voi vaikuttaa hakukoneoptimointiin. Esimerkki: URL A → URL B → URL C → lopullinen URL (3 uudelleenohjausta).",
+            "chain_recommended": "<strong>Suositus:</strong> 0-1 uudelleenohjaukset (suora tai yksi hyppy)",
+            "chain_acceptable": "<strong>Hyväksyttävä:</strong> 2–3 uudelleenohjausta (vähäinen tehokkuusvaikutus)",
+            "chain_problematic": "<strong>Ongelma:</strong> 4+ uudelleenohjausta (merkittäviä hakukoneoptimointi- ja nopeusongelmia)",
+            "redirect_loops_title": "Mitä uudelleenohjaussilmukat ovat?",
+            "redirect_loops_desc": "Uudelleenohjaussilmukka tapahtuu, kun URL A uudelleenohjaa URL-osoitteeseen B, joka uudelleenohjaa takaisin URL-osoitteeseen A luoden loputtoman syklin. Selaimet havaitsevat tämän ja näyttävät virheilmoituksen, kuten \"Liian monta uudelleenohjausta\" tai \"Uudelleenohjaussilmukka havaittu\". Tämä rikkoo sivun kokonaan ja se on korjattava välittömästi.",
+            "common_issues_title": "Yleiset uudelleenohjausongelmat ja ratkaisut",
+            "issue1_title": "Pitkät uudelleenohjausketjut",
+            "issue1_problem": "<strong>Ongelma:</strong> Useat uudelleenohjaukset hidastavat sivun lataamista ja heikentävät hakukoneoptimoinnin arvoa",
+            "issue1_solution": "<strong>Ratkaisu:</strong> Päivitä uudelleenohjaukset osoittamaan suoraan lopulliseen määränpäähän",
+            "issue2_title": "Sekalaiset uudelleenohjaustyypit",
+            "issue2_problem": "<strong>Ongelma:</strong> Epäjohdonmukaiset uudelleenohjaustyypit hämmentävät hakukoneita",
+            "issue2_solution": "<strong>Ratkaisu:</strong> Käytä numeroa 301 pysyviin siirtoihin, 302 vain väliaikaisiin siirtoihin",
+            "issue3_title": "Katkenneet uudelleenohjausketjut",
+            "issue3_problem": "<strong>Ongelma:</strong> Ohjaa kohdat olemattomalle sivulle",
+            "issue3_solution": "<strong>Ratkaisu:</strong> Päivitä uudelleenohjaus kelvolliseen kohteeseen tai poista se",
+            "issue4_title": "HTTPS/HTTP-silmukat",
+            "issue4_problem": "<strong>Ongelma:</strong> Sivusto uudelleenohjaa HTTP:n ja HTTPS:n välillä loputtomasti",
+            "issue4_solution": "<strong>Ratkaisu:</strong> Korjaa SSL-määritykset ja .htaccess-säännöt",
+            "best_practices_title": "SEO parhaat käytännöt uudelleenohjauksille",
+            "best_practice1": "• Käytä aina 301-uudelleenohjauksia pysyviin URL-muutoksiin SEO-arvon säilyttämiseksi",
+            "best_practice2": "• Minimoi uudelleenohjausketjut – uudelleenohjaa suoraan lopulliseen määränpäähän, kun mahdollista",
+            "best_practice3": "• Vältä uudelleenohjaussilmukoita hinnalla millä hyvänsä – ne rikkovat käyttökokemuksen ja hakukoneoptimoinnin",
+            "best_practice4": "• Päivitä sisäiset linkit sen sijaan, että luottaisit uudelleenohjauksiin",
+            "best_practice5": "• Tarkkaile uudelleenohjauksen suorituskykyä säännöllisesti tämänkaltaisilla työkaluilla",
+            "best_practice6": "• Pidä uudelleenohjaukset aktiivisina vähintään vuoden ajan URL-osoitteen muuttamisen jälkeen",
+            "best_practice7": "• Käytä 302-uudelleenohjauksia säästeliäästi ja vain todella väliaikaisissa tilanteissa"
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Mikä on uudelleenohjausketju?",
+            "a1": "Uudelleenohjausketju on sarja uudelleenohjauksia URL-osoitteesta toiseen, kunnes viimeinen sivu saavutetaan. Pitkät ketjut hidastavat sivustoa ja tuhlaavat indeksointibudjettia.",
+            "q2": "Vaikuttaako 301-uudelleenohjaus sijoitukseen?",
+            "a2": "301-uudelleenohjaus säilyttää suurimman osan linkin pääomasta (sijoitusvoimasta), mutta liiallinen käyttö ketjuissa voi laimentaa tätä vaikutusta.",
+            "q3": "Miten löydän uudelleenohjaussilmukat?",
+            "a3": "Käytä työkaluamme - se korostaa automaattisesti virheen, jos se havaitsee äärettömän polun.",
+            "q4": "Pitäisikö minun uudelleenohjata http:stä https:ään?",
+            "a4": "Kyllä, se on pakollinen vaihe turvallisuuden ja hakukoneoptimoinnin kannalta. 301-uudelleenohjausta palvelintasolla (Nginx tai Apache) suositellaan.",
+            "q5": "Kuinka monta uudelleenohjausta hyväksytään?",
+            "a5": "Ihannetapauksessa nolla tai yksi. Google seuraa yleensä jopa 5 hyppyä, mutta jokainen hyppy pidentää latausaikaa."
+        }
+    },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Hreflang Checker - ilmainen online-tunnisteen vahvistaja",
+            "description": "Validoi hreflang-tunnisteet varmistaaksesi, että Google näyttää oikeat kieli- tai alueversiot kohdeyleisöllesi.",
+            "h1": "Hreflang Checker",
+            "subtitle": "Ilmainen työkalu hreflang-määritteiden poimintaan ja validointiin kansainvälistä hakukoneoptimointia varten."
+        },
+        "form": {
+            "url_label": "Syötä tarkistettava URL",
+            "url_placeholder": "https://esimerkki.fi/sivu",
+            "user_agent_label": "Käyttäjäagentti",
+            "user_agent_default": "Oletus (Selain)",
+            "user_agent_googlebot": "Googlebot (Desktop)",
+            "user_agent_bingbot": "Bingbot (Desktop)",
+            "button": "Tarkista hreflang-tunnisteet"
+        },
+        "content": {
+            "main_title": "Hreflang-tunnisteiden tarkistaja",
+            "main_subtitle": "Varmista, että kansainvälinen sisältösi tavoittaa oikean yleisön. Validoi hreflang-toteutus ja korjaa yleiset SEO-virheet.",
+            "intro": "Hreflang-tunnisteet ovat välttämättömiä monikielisille tai useissa maissa toimiville sivustoille. Ilmainen työkalumme poimii ja validoi `rel=\"alternate\" hreflang=\"x\"` -tunnisteet sivusi HTML-otsakkeesta ja HTTP-otsakkeista. Se tarkistaa vastavuoroiset (paluu)tunnisteet taatakseen, että Google ja muut hakukoneet indeksoivat lokalisoidun sisältösi oikein.",
+            "features_title": "Miksi tarkistaa hreflang-tunnisteet?",
+            "feature1_title": "Validoi vastavuoroiset tunnisteet",
+            "feature1_desc": "Hreflang-tunnisteiden on toimittava pareittain. Työkalumme tarkistaa automaattisesti, linkittääkö sivu A sivuun B, ja linkittääkö sivu B takaisin sivuun A.",
+            "feature2_title": "Havaitse yleiset virheet",
+            "feature2_desc": "Löydä puuttuvat paluutunnisteet, virheelliset kielikoodit (ISO 639-1) ja väärät maakoodit (ISO 3166-1 Alpha-2).",
+            "feature3_title": "Ehkäise SEO-ongelmat",
+            "feature3_desc": "Virheellinen hreflang-toteutus voi johtaa tuplasisältöongelmiin ja vääränkielisten sivujen näkymiseen hakutuloksissa.",
+            "how_title": "Miten käyttää Hreflang-tarkistajaa",
+            "step1_title": "Syötä URL",
+            "step1_desc": "Liitä analysoitavan sivun koko URL (esim. https://esimerkki.fi).",
+            "step2_title": "Valitse User Agent",
+            "step2_desc": "Suosittelemme tarkistusta Googlebotilla, mutta voit tarkistaa myös tavallisella selaimella.",
+            "step3_title": "Analysoi tulokset",
+            "step3_desc": "Haemme sivun ja listaamme kaikki löydetyt vaihtoehtoiset linkit sekä niiden validointitilan.",
+            "step4_title": "Korjaa ongelmat",
+            "step4_desc": "Jos näet virheen 'Puuttuva paluutunniste', päivitä viitatut sivut sisältämään vastavuoroinen linkki.",
+            "faq_title": "Usein kysytyt kysymykset",
+            "faq1_q": "Mikä on hreflang-tunniste?",
+            "faq1_a": "Hreflang on HTML-määrite, jolla määritetään verkkosivun kieli ja maantieteellinen kohdennus. Se kertoo hakukoneille, mitä versiota sivusta tulisi näyttää käyttäjille eri maissa tai kielialueilla.",
+            "faq2_q": "Miksi paluutunnisteet ovat tärkeitä?",
+            "faq2_a": "Google vaatii paluulinkit estääkseen ketään mielivaltaisesti väittämästä toisen sivuston sivua omaksi vaihtoehtoiseksi versiokseen. Jos sivu A linkittää sivuun B, sivun B on linkitettävä takaisin sivuun A.",
+            "faq3_q": "Tarkistaako tämä työkalu x-default-tunnisteen?",
+            "faq3_a": "Kyllä, työkalumme tunnistaa ja validoi `x-default` hreflang-tunnisteen, jota käytetään, kun mikään kieli tai maa ei täsmää.",
+            "faq4_q": "Voinko tarkistaa hreflangit HTTP-otsakkeista?",
+            "faq4_a": "Kyllä! Tarkistamme sekä HTML `<head>` -osion että HTTP-vastausotsakkeet `Link: <url>; rel=\"alternate\"; hreflang=\"code\"` -määritteiden varalta.",
+            "faq5_q": "Mitä tapahtuu, jos minulla on hreflang-virheitä?",
+            "faq5_a": "Hakukoneet saattavat jättää virheelliset tunnisteet huomiotta, mikä voi johtaa siihen, että oikeita kieliversioita ei näytetä oikeille käyttäjille, tai mahdollisiin rangaistuksiin tuplasisällöstä.",
+            "faq6_q": "Onko tämä työkalu ilmainen?",
+            "faq6_a": "Kyllä, voit suorittaa rajattomasti tarkistuksia ilmaiseksi varmistaaksesi täydellisen kansainvälisen hakukoneoptimoinnin."
         }
     },
     "slug-generator": {
@@ -255,6 +695,66 @@
             "label_input": "Syötä teksti tai otsikko",
             "ph_input": "Kirjoita oma otsikkosi tähän..."
         },
+        "content": {
+            "hero_title": "URL Slug Generator - Luo SEO-ystävällisiä URL-osoitteita",
+            "hero_subtitle": "Luo puhtaita, SEO-ystävällisiä URL-osoitteita mistä tahansa tekstistä välittömästi ilmaisella etanageneraattorillamme. Muunna blogien otsikot, artikkelien otsikot ja sivujen nimet luettavissa oleviksi hakukoneoptimoiduiksi URL-osoitteiksi.",
+            "what_title": "Mikä on URL Slug?",
+            "what_desc": "URL-osoite on verkko-osoitteen osa, joka tulee verkkotunnuksen nimen jälkeen ja identifioi tietyn sivun. Esimerkiksi osoitteessa \"example.com/how-to-create-seo-friendly-urls\" etana on \"how-to-create-seo-friendly-urls\".",
+            "why_title": "Miksi käyttää SEO-ystävällisiä etanoita?",
+            "why_list": [
+                "Paremmat SEO-sijoitukset: URL-osoitteiden avainsanat auttavat hakukoneita ymmärtämään sivun sisältöä",
+                "Parannetut napsautussuhteet: luettavat URL-osoitteet ovat luotettavampia ja klikattavampia",
+                "Käyttökokemus: selkeät URL-osoitteet kertovat käyttäjille, mitä he odottavat ennen napsauttamista",
+                "Sosiaalinen jakaminen: Puhtaat URL-osoitteet näyttävät ammattimaisilta, kun ne jaetaan sosiaalisessa mediassa",
+                "Linkkien rakentaminen: Kuvaavat URL-osoitteet antavat paremman ankkuritekstin käänteisille linkeille",
+                "Helppokäyttöisyys: Näytönlukijat voivat tulkita paremmin merkityksellisiä URL-osoitteita"
+            ],
+            "practices_title": "URL Slugin parhaat käytännöt",
+            "practices_list": [
+                "Käytä pieniä kirjaimia – Vältä isojen kirjainten käyttöä johdonmukaisuuden vuoksi",
+                "Käytä yhdysmerkkejä (-) - Erota sanat yhdysmerkillä, älä alaviivoja",
+                "Pidä se lyhyt - Pyri enintään 3-5 sanaan",
+                "Sisällytä avainsanoja – Käytä hakukoneoptimointiin osuvia avainsanoja",
+                "Ole kuvaava – Kuvaile sivun sisältöä selkeästi",
+                "Vältä erikoismerkkejä - Poista @, #, %, & jne.",
+                "Vältä lopetussanoja - Poista \"a\", \"the\", \"and\" jos mahdollista",
+                "Vältä numeroita/päivämääriä – ellei se ole sisällön kannalta välttämätöntä"
+            ],
+            "how_works_title": "Kuinka etanageneraattorimme toimii",
+            "how_works_desc": "Työkalumme noudattaa alan parhaita käytäntöjä luodakseen täydellisiä URL-osoitteita. Se muuntaa tekstin pieniksi kirjaimiksi, poistaa erikoismerkit ja välimerkit, korvaa välilyönnit yhdysmerkillä, poistaa peräkkäiset yhdysmerkit ja leikkaa alku- ja loppuviivat.",
+            "uses_title": "Yleiset käyttötapaukset",
+            "uses": {
+                "blog": {
+                    "title": "ðŸ“ Blogiviestit",
+                    "desc": "Muunna artikkelien otsikot SEO-ystävällisiksi URL-osoitteiksi WordPress-, Medium- tai mukautettuja blogeja varten"
+                },
+                "ecommerce": {
+                    "title": "ðŸ›ï¸ Verkkokauppa",
+                    "desc": "Luo tuotteiden URL-osoitteita, jotka sisältävät avainsanoja ja tuotteiden nimiä"
+                },
+                "docs": {
+                    "title": "ðŸ“„ Dokumentaatio",
+                    "desc": "Luo puhtaita URL-osoitteita ohjeartikkeleille ja dokumentaatiosivuille"
+                },
+                "landing": {
+                    "title": "🎯 Aloitussivut",
+                    "desc": "Luo avainsanoja sisältäviä URL-osoitteita markkinointikampanjoita ja aloitussivuja varten"
+                }
+            },
+            "pro_tip_title": "💡 SEO Pro -vinkki",
+            "pro_tip_desc": "Google suosittelee yhdysviivojen (-) käyttöä alaviivojen (_) sijasta URL-osoitteissa, koska yhdysviivoja käsitellään sanaerottimena, mutta alaviivoja ei. Tämä tarkoittaa, että \"seo-friendly-urls\" on parempi kuin \"seo_friendly_urls\" hakukoneoptimoinnissa.",
+            "faq_title": "Usein kysytyt kysymykset",
+            "faq": {
+                "q1": "Pitäisikö URL-osoitteissa käyttää väliviivoja tai alaviivoja?",
+                "a1": "Käytä aina väliviivoja (-). Google käsittelee tavuviivoja sanaerottimina, mutta alaviivoja sanaliittiminä. Tämä tarkoittaa, että \"best-seo-practices\" luetaan kolmena erillisenä sanana, kun taas \"best_seo_practices\" luetaan yhtenä sanana.",
+                "q2": "Kuinka pitkä URL-slugin tulisi olla?",
+                "a2": "Säilytä 3–5 sanaa (30–60 merkkiä). Lyhyemmät URL-osoitteet on helpompi muistaa, jakaa ja sijoittua paremmin hakutuloksissa. Poista tarpeettomat sanat, kuten \"a\", \"the\", \"ja\", jotta etanat pysyvät tiiviinä.",
+                "q3": "Voinko muuttaa URL-osoitetta julkaisun jälkeen?",
+                "a3": "Kyllä, mutta se ei ole suositeltavaa. URL-osoitteiden muuttaminen voi rikkoa olemassa olevia linkkejä ja vahingoittaa hakukoneoptimointia. Jos sinun on vaihdettava etana, määritä aina 301-uudelleenohjaus vanhasta URL-osoitteesta uuteen linkin tasapuolisuuden säilyttämiseksi ja 404-virheiden välttämiseksi.",
+                "q4": "Pitäisikö minun sisällyttää avainsanoja URL-osoitteeseen?",
+                "a4": "Kyllä! Osuvien avainsanojen sisällyttäminen URL-osoitteisiin auttaa hakukoneita ymmärtämään sisältöäsi ja voi parantaa sijoitusta. Pidä se kuitenkin luonnollisena ja kuvaavana – älä täytä avainsanoja luonnottomalla tavalla."
+            }
+        },
         "js": {
             "copied": "Kopioitu!"
         }
@@ -265,6 +765,54 @@
             "description": "Ilmainen Yahoo SERP-tarkistus verkkosivustosi sijoitusten seurantaan Yahoo-hakukoneessa.",
             "h1": "Yahoo SERP Checker",
             "subtitle": "Seuraa Yahoo-sijoituksiasi omien hakusanojesi ja kilpailijoiden osalta"
+        },
+        "interface": {
+            "simulation_title": "Live Yahoo SERP -tarkistus",
+            "keyword_label": "Kirjoita avainsana",
+            "location_label": "Sijainti (kaupunki)",
+            "yahoo_domain_label": "Yahoo Domain",
+            "device_label": "Laitteen tyyppi",
+            "device_desktop": "Työpöytä",
+            "device_mobile": "Matkapuhelin (älypuhelin)",
+            "no_login": "Ei sisäänkirjautumista",
+            "realtime_results": "Reaaliaikaiset tulokset"
+        },
+        "form": {
+            "keyword_placeholder": "avainsanasi...",
+            "location_placeholder": "Anna kaupunki (valinnainen)",
+            "button": "Tarkista Yahoo SERP"
+        },
+        "domains": {
+            "us": "Yahoo.com (USA/maailmanlaajuinen)",
+            "uk": "Yahoo.co.uk (Iso-Britannia)",
+            "ca": "Yahoo.ca (Kanada)",
+            "au": "Yahoo.com.au (Australia)",
+            "de": "Yahoo.de (Saksa)",
+            "fr": "Yahoo.fr (Ranska)",
+            "it": "Yahoo.it (Italia)",
+            "es": "Yahoo.es (Espanja)",
+            "br": "Yahoo.com.br (Brasilia)"
+        },
+        "content": {
+            "main_title": "Edistynyt Yahoo Rank Checker",
+            "main_subtitle": "Tarkkaile hakutehokkuuttasi Yahoossa. Hanki tarkkoja, reaaliaikaisia ​​sijoitustietoja SEO-strategiasi optimoimiseksi.",
+            "feature1_title": "100 % ilmainen",
+            "feature1_desc": "Käytä tätä työkalua niin monta kertaa kuin haluat. Ei piilokuluja.",
+            "feature2_title": "Rajoittamaton määrä tarkastuksia",
+            "feature2_desc": "Tarkista rajattomasti avainsanoja ilman kuluja. Ei vaadi rekisteröitymistä tai tilausta.",
+            "feature3_title": "Reaaliaikainen data",
+            "feature3_desc": "Hanki välittömiä, reaaliaikaisia ​​SERP-tuloksia suoraan Yahoo Searchista.",
+            "why_matters_title": "Miksi Yahoo-sijoituksella on merkitystä",
+            "why_matters_desc": "Vaikka Yahoo on pienempi kuin Google, se hallitsee edelleen merkittävän osan hakuliikenteestä erityisesti tietyillä väestöryhmillä ja alueilla, kuten Japanissa ja osissa Yhdysvaltoja. Yahoon huomiotta jättäminen tarkoittaa, että potentiaalinen liikenne jätetään pöydälle.",
+            "same_as_bing_title": "Käyttääkö Yahoo Bing Resultsia?",
+            "same_as_bing_desc": "Kyllä, Yahoo Search perustuu suurelta osin <strong>Bingin hakuhakemistoon</strong>. Tämä tarkoittaa, että optimointi Bingille auttaa usein Yahoo-sijoituksiasi. Yahoon käyttöliittymä ja ominaisuudet vaihtelevat kuitenkin, joten todellisen ulkonäön tarkistaminen on ratkaisevan tärkeää."
+        },
+        "faq": {
+            "title": "Usein kysytyt kysymykset",
+            "q1": "Onko tämä Yahoo Rank Checker ilmainen?",
+            "a1": "Kyllä! Meidän **yahoo rank tracker** on 100% ilmainen. Tarkista sijoituksesi Yahoossa niin usein kuin tarvitset ilman piilomaksuja tai tilauksia.",
+            "q2": "Käyttääkö Yahoo Bingin hakutuloksia?",
+            "a2": "Koska Yahoo toimii Bingin avulla, keskity Bingin hakukoneoptimoinnin parhaisiin käytäntöihin: selkeä tekninen hakukoneoptimointi, arvovaltaiset käänteiset linkit ja asiaankuuluva sisältö. Tämän työkalun käyttäminen edistymisen seurantaan on loistava alku."
         }
     },
     "sitemap-validator": {
@@ -331,57 +879,6 @@
             "faq_size_answer": "50MB tai 50 000 URL-osoitetta.",
             "faq_localhost_question": "Toimiiko localhostissa?",
             "faq_localhost_answer": "Kyllä, liittämällä XML-koodin."
-        }
-    },
-    "hreflang-checker": {
-        "meta": {
-            "title": "Hreflang Checker - ilmainen online-tunnisteen vahvistaja",
-            "description": "Validoi hreflang-tunnisteet varmistaaksesi, että Google näyttää oikeat kieli- tai alueversiot kohdeyleisöllesi.",
-            "h1": "Hreflang Checker",
-            "subtitle": "Ilmainen työkalu hreflang-määritteiden poimintaan ja validointiin kansainvälistä hakukoneoptimointia varten."
-        },
-        "form": {
-            "url_label": "Syötä tarkistettava URL",
-            "url_placeholder": "https://esimerkki.fi/sivu",
-            "user_agent_label": "User Agent",
-            "user_agent_default": "Oletus (Selain)",
-            "user_agent_googlebot": "Googlebot (Desktop)",
-            "user_agent_bingbot": "Bingbot (Desktop)",
-            "button": "Tarkista hreflang-tunnisteet"
-        },
-        "content": {
-            "main_title": "Hreflang-tunnisteiden tarkistaja",
-            "main_subtitle": "Varmista, että kansainvälinen sisältösi tavoittaa oikean yleisön. Validoi hreflang-toteutus ja korjaa yleiset SEO-virheet.",
-            "intro": "Hreflang-tunnisteet ovat välttämättömiä monikielisille tai useissa maissa toimiville sivustoille. Ilmainen työkalumme poimii ja validoi `rel=\"alternate\" hreflang=\"x\"` -tunnisteet sivusi HTML-otsakkeesta ja HTTP-otsakkeista. Se tarkistaa vastavuoroiset (paluu)tunnisteet taatakseen, että Google ja muut hakukoneet indeksoivat lokalisoidun sisältösi oikein.",
-            "features_title": "Miksi tarkistaa hreflang-tunnisteet?",
-            "feature1_title": "Validoi vastavuoroiset tunnisteet",
-            "feature1_desc": "Hreflang-tunnisteiden on toimittava pareittain. Työkalumme tarkistaa automaattisesti, linkittääkö sivu A sivuun B, ja linkittääkö sivu B takaisin sivuun A.",
-            "feature2_title": "Havaitse yleiset virheet",
-            "feature2_desc": "Löydä puuttuvat paluutunnisteet, virheelliset kielikoodit (ISO 639-1) ja väärät maakoodit (ISO 3166-1 Alpha-2).",
-            "feature3_title": "Ehkäise SEO-ongelmat",
-            "feature3_desc": "Virheellinen hreflang-toteutus voi johtaa tuplasisältöongelmiin ja vääränkielisten sivujen näkymiseen hakutuloksissa.",
-            "how_title": "Miten käyttää Hreflang-tarkistajaa",
-            "step1_title": "Syötä URL",
-            "step1_desc": "Liitä analysoitavan sivun koko URL (esim. https://esimerkki.fi).",
-            "step2_title": "Valitse User Agent",
-            "step2_desc": "Suosittelemme tarkistusta Googlebotilla, mutta voit tarkistaa myös tavallisella selaimella.",
-            "step3_title": "Analysoi tulokset",
-            "step3_desc": "Haemme sivun ja listaamme kaikki löydetyt vaihtoehtoiset linkit sekä niiden validointitilan.",
-            "step4_title": "Korjaa ongelmat",
-            "step4_desc": "Jos näet virheen 'Puuttuva paluutunniste', päivitä viitatut sivut sisältämään vastavuoroinen linkki.",
-            "faq_title": "Usein kysytyt kysymykset",
-            "faq1_q": "Mikä on hreflang-tunniste?",
-            "faq1_a": "Hreflang on HTML-määrite, jolla määritetään verkkosivun kieli ja maantieteellinen kohdennus. Se kertoo hakukoneille, mitä versiota sivusta tulisi näyttää käyttäjille eri maissa tai kielialueilla.",
-            "faq2_q": "Miksi paluutunnisteet ovat tärkeitä?",
-            "faq2_a": "Google vaatii paluulinkit estääkseen ketään mielivaltaisesti väittämästä toisen sivuston sivua omaksi vaihtoehtoiseksi versiokseen. Jos sivu A linkittää sivuun B, sivun B on linkitettävä takaisin sivuun A.",
-            "faq3_q": "Tarkistaako tämä työkalu x-default-tunnisteen?",
-            "faq3_a": "Kyllä, työkalumme tunnistaa ja validoi `x-default` hreflang-tunnisteen, jota käytetään, kun mikään kieli tai maa ei täsmää.",
-            "faq4_q": "Voinko tarkistaa hreflangit HTTP-otsakkeista?",
-            "faq4_a": "Kyllä! Tarkistamme sekä HTML `<head>` -osion että HTTP-vastausotsakkeet `Link: <url>; rel=\"alternate\"; hreflang=\"code\"` -määritteiden varalta.",
-            "faq5_q": "Mitä tapahtuu, jos minulla on hreflang-virheitä?",
-            "faq5_a": "Hakukoneet saattavat jättää virheelliset tunnisteet huomiotta, mikä voi johtaa siihen, että oikeita kieliversioita ei näytetä oikeille käyttäjille, tai mahdollisiin rangaistuksiin tuplasisällöstä.",
-            "faq6_q": "Onko tämä työkalu ilmainen?",
-            "faq6_a": "Kyllä, voit suorittaa rajattomasti tarkistuksia ilmaiseksi varmistaaksesi täydellisen kansainvälisen hakukoneoptimoinnin."
         }
     }
 }

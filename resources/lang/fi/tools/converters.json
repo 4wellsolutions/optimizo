@@ -375,7 +375,7 @@
                     "desc": "Standardi propsien ja tilojen nimeämiseen React- ja Vue-komponenteissa."
                 },
                 "css": {
-                    "title": "Inline CSS",
+                    "title": "Sisäänrakennettu CSS",
                     "desc": "Käytetään CSS-ominaisuuksien nimeämiseen JavaScriptissä (esim. backgroundColor)."
                 }
             },
@@ -385,7 +385,7 @@
                 "2": "Se muuttaa ensimmäisen sanan kokonaan pieniksi kirjaimiksi.",
                 "3": "Se muuttaa kaikkien seuraavien sanojen ensimmäisen kirjaimen isoksi.",
                 "4": "Tulos yhdistetään yhdeksi merkkijonoksi ilman välilyöntejä.",
-                "5": ""
+                "5": "Käytä muunnettua camelCase-tekstiä koodissasi, muuttujien nimissä tai API-päätepisteissä johdonmukaisten nimeämiskäytäntöjen saamiseksi."
             },
             "examples_title": "Esimerkkejä",
             "examples": {
@@ -496,7 +496,7 @@
                 "2": "Lausemuoto on luettavin muoto pitkille kappaleille ja kuvauksille.",
                 "3": "Käytä aina \"Kopioi leikepöydälle\" -painiketta välttääksesi manuaaliset valintavirheet.",
                 "4": "Yhdistä kirjainmuuntimemme sanalaskuriin täydellistä tekstin hallintaa varten.",
-                "5": ""
+                "5": "Käytä tapausten muuntamista ylläpitääksesi johdonmukaisuutta koodikannassasi ja parantaaksesi koodin luettavuutta."
             },
             "faq_title": "Usein kysytyt kysymykset",
             "faq": {
@@ -798,17 +798,25 @@
                     "title": "Suuri nopeus",
                     "desc": "Saat tulokset välittömästi optimoidulla muunnosmoottorillamme."
                 },
-                "accurate": {
-                    "title": "100 % tarkkuus",
-                    "desc": "Matemaattisesti tarkat muunnokset ilman pyöristysvirheitä."
+                "bi": {
+                    "title": "Kaksisuuntainen tuki",
+                    "desc": "Vaihda reittiä helposti järjestelmien välillä."
                 },
-                "privacy": {
-                    "title": "Täysi yksityisyys",
-                    "desc": "Paikallinen JavaScript-käsittely tarkoittaa, että tietosi eivät koskaan poistu selaimestasi."
+                "secure": {
+                    "title": "Turvallinen ja yksityinen",
+                    "desc": "Antamasi tiedot eivät koskaan poistu selaimeltasi täydellisen tietosuojan vuoksi."
                 },
-                "design": {
-                    "title": "Moderni UI",
-                    "desc": "Puhdas, häiriötön käyttöliittymä, joka on rakennettu nopeutta varten."
+                "copy": {
+                    "title": "Leikepöydän integrointi",
+                    "desc": "Kopioi yhdellä napsautuksella muunnetusta tuloksesta."
+                },
+                "free": {
+                    "title": "100 % ilmainen",
+                    "desc": "Täysi pääsy kaikkiin työkaluihin ilman piilokuluja tai rajoja."
+                },
+                "universal": {
+                    "title": "Laiteystävällinen",
+                    "desc": "Optimoitu mobiili-, tabletti- ja pöytätietokoneiden katseluun."
                 }
             },
             "uses": {
@@ -816,30 +824,66 @@
                     "title": "Verkkosuunnittelu",
                     "desc": "Määritä RGB-arvot heksakoodeina CSS-tyylitiedostoihin."
                 },
-                "dev": {
-                    "title": "Ohjelmistokehitys",
-                    "desc": "Käytä heksadesimaaleja muistiosoitteissa, väreissä ja vakiomäärittelyissä."
+                "color": {
+                    "title": "Graafinen suunnittelu",
+                    "desc": "Säilytä värien tarkkuus eri digitaalisissa suunnitteluympäristöissä."
                 },
-                "low": {
-                    "title": "Alhaisen tason koodaus",
-                    "desc": "Lue ja kirjoita tavukoodia ja muistivedoksia helpommin."
+                "memory": {
+                    "title": "Muistin analyysi",
+                    "desc": "Ymmärrä muistiosoitteet ja osoitinarvot ohjelmiston virheenkorjauksessa."
                 },
-                "security": {
-                    "title": "Kyberturvallisuus",
-                    "desc": "Analysoi hashes-arvoja ja salattuja tiedostoja heksadesimaalimuodossa."
+                "unicode": {
+                    "title": "Merkkien koodaus",
+                    "desc": "Työskentely Unicode-pisteiden ja merkkikoodien kanssa."
+                },
+                "network": {
+                    "title": "Verkkoprotokollat",
+                    "desc": "Analysoi pakettien otsikot ja laitteiston MAC-osoitteet."
+                },
+                "debugging": {
+                    "title": "Matalan tason virheenkorjaus",
+                    "desc": "Käännä raakadata, kun tarkastat konekoodia ja binaaritiedostoja."
                 }
             },
             "steps": {
-                "1": "Valitse haluamasi muunnostila.",
-                "2": "Syötä numerosi joko kymmenjärjestelmässä tai heksadesimaalina.",
-                "3": "Katso tuloksen päivittyvän välittömästi lähdekenttään.",
-                "4": "Käytä kopiointipainiketta siirtääksesi tuloksen leikepöydälle."
+                "1": {
+                    "title": "Aseta suunta",
+                    "desc": "Valitse desimaalista heksaan tai heksadesimaalitilasta."
+                },
+                "2": {
+                    "title": "Syöttötiedot",
+                    "desc": "Kirjoita syöttöruutuun numero, jonka haluat kääntää."
+                },
+                "3": {
+                    "title": "Muuntaa",
+                    "desc": "Paina muunnospainiketta saadaksesi tuloksen."
+                },
+                "4": {
+                    "title": "Vahvista",
+                    "desc": "Tarkista tulosten tarkkuus."
+                },
+                "5": {
+                    "title": "Kopioi tulos",
+                    "desc": "Napsauta \"Kopioi tulos\" -painiketta käyttääksesi projekteissasi."
+                }
             },
             "examples": {
-                "gray": "Puhdas valkoinen (RGB 255) → #FFFFFF",
-                "black": "Puhdas musta (RGB 0) → #000000",
-                "base": "Kymmenjärjestelmä 16 → Heksa 10",
-                "byte": "Kymmenjärjestelmä 255 → Heksa FF"
+                "small": {
+                    "title": "Pikatarkastus",
+                    "desc": "Desimaali: 15 → Hex: F"
+                },
+                "large": {
+                    "title": "Tavun arvo",
+                    "desc": "Desimaali: 128 → Hex: 80"
+                },
+                "color": {
+                    "title": "Suurin tavu",
+                    "desc": "Desimaali: 255 → Hex: FF"
+                },
+                "max": {
+                    "title": "Suuri arvo",
+                    "desc": "Desimaali: 1024 → Hex: 400"
+                }
             },
             "faq": {
                 "q1": "Miksi heksadesimaalissa käytetään kirjaimia?",
@@ -849,7 +893,9 @@
                 "q3": "Voinko muuntaa negatiivisia lukuja?",
                 "a3": "Tämä työkalu käsittelee tällä hetkellä positiivisia kokonaislukuja. Negatiivisten lukujen esitys vaatii yleensä täydennysjärjestelmän merkintää.",
                 "q4": "Onko heksadesimaali sama kuin binaari?",
-                "a4": "Ei, mutta ne liittyvät läheisesti toisiinsa. Yksi heksanumero vastaa tasan neljää binaarinumeroa (bittiä)."
+                "a4": "Ei, mutta ne liittyvät läheisesti toisiinsa. Yksi heksanumero vastaa tasan neljää binaarinumeroa (bittiä).",
+                "q5": "Miksi CSS käyttää heksadesimaalikoodeja?",
+                "a5": "Hex-koodit ovat ytimekäs tapa edustaa 24-bittistä värisyvyyttä (8 bittiä kukin punaiselle, vihreälle ja siniselle) käyttämällä vain 6 merkkiä."
             }
         }
     },
@@ -865,50 +911,136 @@
             "to_decimal": "Kymmenjärjestelmään",
             "label_decimal": "Syötä desimaaliluku",
             "ph_decimal": "Esim. 10, 50, 100...",
+            "label_result_octal": "Tulos oktaalina",
+            "ph_output": "Tulos näkyy täällä...",
             "btn_convert_octal": "Muunna oktaaliksi",
             "btn_clear": "Tyhjennä",
             "btn_copy": "Kopioi",
             "label_octal": "Syötä oktaaliluku",
-            "ph_octal": "Esim. 12, 62, 144...",
-            "label_result_octal": "Tulos oktaalina",
             "label_result_decimal": "Tulos desimaalina",
             "btn_convert_decimal": "Muunna desimaaliksi",
             "error_empty": "Syötä luku muunnettavaksi",
             "error_invalid_decimal": "Virheellinen desimaaliluku",
+            "success_octal": "✓ Muunnettu oktaaliksi onnistuneesti!",
             "error_invalid_octal": "Virheellinen oktaaliluku (vain 0-7)",
+            "success_decimal": "✓ Muutettu desimaaliksi onnistuneesti!",
+            "error_general": "Tapahtui virhe:",
+            "error_no_copy": "Ei mitään kopioitavaa! Muunna ensin numero.",
             "success_copy": "✓ Kopioitu leikepöydälle!"
         },
         "content": {
             "p1": "Kymmenjärjestelmä-oktaalimuuntimemme on suunniteltu tarjoamaan nopea tapa siirtyä arjessa käytettävän kanta-10-järjestelmän ja tietotekniikassa tutun kanta-8-järjestelmän välillä. Oktaalijärjestelmä on erityisen hyödyllinen järjestelmissä, joissa bitit on jaettu kolmen ryhmiin.",
+            "format_title": "Oktaalin merkitys",
+            "format_desc": "Tietojenkäsittelyn alkuaikoina oktaali oli suosittu, koska 3 bittiä voitiin esittää täydellisesti yhdellä oktaalinumerolla. Nykyään se on tunnetuimmin nähtävissä \"chmod\"-komennossa Linux- ja macOS-järjestelmissä, jossa kolme oktaalinumeroa määrittelevät luku-, kirjoitus- ja suoritusoikeudet omistajille, ryhmille ja muille.",
+            "features_title": "Työkalun ominaisuudet",
+            "uses_title": "Käytännön sovellukset",
+            "steps_title": "Vaiheittainen opas",
+            "examples_title": "Yleisiä esimerkkejä",
+            "faq_title": "FAQ",
             "features": {
-                "instant": {
-                    "title": "Välitön muunnos",
-                    "desc": "Laske tulos heti syötön tai napin painalluksen jälkeen."
+                "fast": {
+                    "title": "Nopea muunnos",
+                    "desc": "Laitteistotason nopeus lähes välittömiin tuloksiin."
                 },
-                "client": {
-                    "title": "Turvallinen",
-                    "desc": "Kaikki laskenta tapahtuu suoraan selaimessasi."
+                "bi": {
+                    "title": "Kaksisuuntainen",
+                    "desc": "Vaihda saumattomasti joulukuusta lokakuuhun ja lokakuusta joulukuuhun."
                 },
-                "accurate": {
-                    "title": "Tarkka",
-                    "desc": "Matemaattisesti varmennettu muunnos kaikille kokonaisluvuille."
+                "secure": {
+                    "title": "Yksityisyys taattu",
+                    "desc": "Laskelmat tapahtuvat selaimessasi; mitään tietoja ei lähetetä palvelimillemme."
+                },
+                "copy": {
+                    "title": "Tulos kopioidaan",
+                    "desc": "Kopioi muunnetut arvot yhdellä napsautuksella."
+                },
+                "free": {
+                    "title": "Nolla kustannuksia",
+                    "desc": "Ilmainen pääsy kaikkiin muunnosominaisuuksiin ikuisesti."
+                },
+                "universal": {
+                    "title": "Universal Access",
+                    "desc": "Toimii sujuvasti kaikilla laitteilla ja nykyaikaisilla verkkoselaimilla."
+                }
+            },
+            "uses": {
+                "linux": {
+                    "title": "Linuxin käyttöoikeudet",
+                    "desc": "Laske chmod-komennon numeeriset käyttöoikeusarvot (esim. 755)."
+                },
+                "computing": {
+                    "title": "Tietojenkäsittelytiede",
+                    "desc": "Opi kuinka paikkanumerojärjestelmät toimivat kanta-2, 10 ja 16 ulkopuolella."
+                },
+                "permission": {
+                    "title": "Kulunvalvonta",
+                    "desc": "Hallitse suojausasetuksia järjestelmissä, jotka käyttävät oktaaliesitystä."
+                },
+                "legacy": {
+                    "title": "Vanhat järjestelmät",
+                    "desc": "Käsittele ja analysoi tietoja vanhemmista laitteistoarkkitehtuureista ja keskuskoneista."
+                },
+                "aviation": {
+                    "title": "Ilmailun transponderit",
+                    "desc": "Ymmärrä lentokoneiden käyttämät squawk-koodit, jotka ovat oktaaleja."
+                },
+                "education": {
+                    "title": "Matematiikan koulutus",
+                    "desc": "Tutustu 8-kantaisen matematiikan ja notaatioiden ominaisuuksiin."
+                }
+            },
+            "steps": {
+                "1": {
+                    "title": "Valitse Tila",
+                    "desc": "Valitse muunnossuuntasi (Base-10 Base-8 tai päinvastoin)."
+                },
+                "2": {
+                    "title": "Anna tiedot",
+                    "desc": "Kirjoita numeerinen arvo vastaavaan syöttökenttään."
+                },
+                "3": {
+                    "title": "Käsitellä",
+                    "desc": "Paina muunnospainiketta käynnistääksesi välittömän laskutoimituksen."
+                },
+                "4": {
+                    "title": "Tarkista lähtö",
+                    "desc": "Etsi tulos tulostelaatikosta."
+                },
+                "5": {
+                    "title": "Kopioida",
+                    "desc": "Kopioi tulos nopeasti käytettäväksi koodissasi tai asiakirjoissasi."
+                }
+            },
+            "examples": {
+                "small": {
+                    "title": "Yksinumeroinen",
+                    "desc": "Desimaali: 7 → oktaali: 7"
+                },
+                "large": {
+                    "title": "Kaksinkertainen oktaali",
+                    "desc": "Desimaali: 64 → oktaali: 100"
+                },
+                "rights": {
+                    "title": "Luvan arvo",
+                    "desc": "Desimaali: 493 → Oktaali: 755"
+                },
+                "max": {
+                    "title": "Siirtyminen",
+                    "desc": "Desimaali: 1024 → oktaali: 2000"
                 }
             },
             "faq": {
-                "title": "Tietoa oktaalimuunnoksista",
                 "q1": "Mikä on oktaalijärjestelmä?",
                 "a1": "Se on lukujärjestelmä, jonka kantaluku on 8. Se käyttää numeroita 0–7.",
                 "q2": "Miten muunnan 10 oktaaliksi?",
                 "a2": "Luku 10 kymmenjärjestelmässä on 12 oktaalijärjestelmässä, koska se on 1*8 + 2.",
                 "q3": "Onko tämä työkalu ilmainen?",
-                "a3": "Kyllä, se on täysin ilmainen ja rajoittamaton online-työkalu."
+                "a3": "Kyllä, se on täysin ilmainen ja rajoittamaton online-työkalu.",
+                "q4": "Toimiiko tämä älypuhelimissa?",
+                "a4": "Täysin! Työkalu on täysin reagoiva ja toimii erinomaisesti kaikilla mobiililaitteilla.",
+                "q5": "Ovatko syöttämäni tietoni turvassa?",
+                "a5": "Kyllä. Koska muunnoslogiikka toimii kokonaan paikallisella tietokoneellasi JavaScriptin kautta, tietojasi ei koskaan ladata pilveen."
             }
-        },
-        "js": {
-            "error_empty": "Syötä luku",
-            "success_convert": "✓ Muunnettu onnistuneesti!",
-            "error_no_copy": "Ei kopioitavaa!",
-            "success_copy": "✓ Kopioitu!"
         }
     },
     "density-converter": {
@@ -924,7 +1056,6 @@
             "unit_g_cm3": "Gramma per kuutiosenttimetri (g/cm³)",
             "unit_lb_ft3": "Pauna per kuutiojalka (lb/ft³)",
             "unit_lb_in3": "Pauna per kuutiotuuma (lb/in³)",
-            "unit_oz_ft3": "Unssi per kuutiojalka (oz/ft³)",
             "to_label": "Mihin"
         },
         "content": {
@@ -942,6 +1073,8 @@
             "usage_2": "<strong>Rakentaminen:</strong> Materiaalien painon arviointi tilavuuden perusteella",
             "usage_3": "<strong>Fysiikka:</strong> Laskelmat nesteiden ja kiinteiden aineiden ominaisuuksista",
             "usage_4": "<strong>Logistiikka:</strong> Tavaran tiheyden laskeminen rahtikustannuksia varten",
+            "usage_5": "<strong>Geologia:</strong> Kiven ja mineraalien tiheyden mittaukset",
+            "usage_6": "<strong>Fysiikka:</strong> Kelluvuuden ja nestemekaniikan laskelmat",
             "faq_title": "Usein kysytyt kysymykset",
             "faq_q1": "Mikä on veden tiheys?",
             "faq_a1": "Huoneenlämpöisen veden tiheys on noin 1 000 kg/m³ tai 1 g/cm³.",
@@ -962,12 +1095,13 @@
         },
         "form": {
             "from_label": "Mistä",
+            "unit_bit": "Bitti (b)",
             "unit_byte": "Tavu (B)",
-            "unit_kb": "Kilotavu (KT)",
-            "unit_mb": "Megatavu (MT)",
-            "unit_gb": "Gigatavu (GT)",
-            "unit_tb": "Teratavu (TT)",
-            "unit_pb": "Petatavu (PT)",
+            "unit_KB": "Kilotavu (KB)",
+            "unit_MB": "megatavu (MB)",
+            "unit_GB": "Gigatavu (GB)",
+            "unit_TB": "Teratavu (TB)",
+            "unit_PB": "Petatavu (PB)",
             "to_label": "Mihin"
         },
         "content": {
@@ -1007,13 +1141,14 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_j": "Joulea (J)",
-            "unit_kj": "Kilojoulea (kJ)",
+            "unit_J": "joule (J)",
+            "unit_kJ": "Kilojoule (kJ)",
             "unit_cal": "Kaloria (cal)",
             "unit_kcal": "Kilokaloria (kcal)",
-            "unit_kwh": "Kilowattituntia (kWh)",
-            "unit_btu": "British Thermal Unit (BTU)",
-            "unit_ev": "Elektronivolttia (eV)",
+            "unit_Wh": "Wattitunti (Wh)",
+            "unit_kWh": "Kilowattitunti (kWh)",
+            "unit_BTU": "British Thermal Unit (BTU)",
+            "unit_ftlb": "Jalka punta (ft⋅lb)",
             "to_label": "Mihin"
         },
         "content": {
@@ -1053,11 +1188,11 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_n": "Newton (N)",
-            "unit_kn": "Kilonewton (kN)",
-            "unit_dyn": "Dyne (dyn)",
-            "unit_kgf": "Kilogramma-voima (kgf)",
+            "unit_N": "Newton (N)",
+            "unit_kN": "Kilonewton (kN)",
             "unit_lbf": "Pauna-voima (lbf)",
+            "unit_kgf": "Kilogramma-voima (kgf)",
+            "unit_dyn": "Dyne (dyn)",
             "to_label": "Mihin"
         },
         "content": {
@@ -1097,20 +1232,15 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_hz": "Hertsi (Hz)",
-            "unit_khz": "Kilohertsi (kHz)",
-            "unit_mhz": "Megahertsi (MHz)",
-            "unit_ghz": "Gigahertsi (GHz)",
-            "unit_rad_s": "Radiaania sekunnissa (rad/s)",
+            "unit_Hz": "hertsi (Hz)",
+            "unit_kHz": "Kilohertsi (kHz)",
+            "unit_MHz": "Megahertsi (MHz)",
+            "unit_GHz": "Gigahertsi (GHz)",
+            "unit_THz": "Terahertsi (THz)",
+            "unit_rpm": "Rev. per minuutti (RPM)",
             "to_label": "Mihin"
         },
         "content": {
-            "feature1_title": "Taajuusalueet",
-            "feature1_desc": "Kattaa koko kirjon matalista hertseistä aina korkeisiin gigahertseihin.",
-            "feature2_title": "Teknologia ja radio",
-            "feature2_desc": "Täydellinen työkalu prosessorien nopeuden, verkon ja radiotaajuuksien analysointiin.",
-            "feature3_title": "Signaalinkäsittely",
-            "feature3_desc": "Sisältää myös kulmanopeuden (rad/s) muunnokset edistyneeseen käyttöön.",
             "main_title": "Taajuuden muuntamisen ymmärtäminen",
             "description_p1": "Taajuus ilmaisee, kuinka monta kertaa jokin säännöllinen tapahtuma toistuu tietyssä ajassa. Yleisin yksikkö on hertsi (Hz), joka tarkoittaa yhtä kertaa sekunnissa (1/s). Tietotekniikassa ja viestinnässä käytetään yleisesti etuliitteitä kuten kilo- (tuhat), mega- (miljoona) ja giga- (miljardi).",
             "description_p2": "Esimerkiksi tietokoneen prosessori voi toimia 3,4 GHz taajuudella, kun taas ihmisen kuuloalue ulottuu noin 20 Hz:stä 20 000 Hz:iin. Radiokanavien taajuudet ilmoitetaan usein MHz:nä. Näiden skaalojen ymmärtäminen on välttämätöntä modernissa elektroniikassa ja fysiikassa.",
@@ -1141,10 +1271,10 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_l_100km": "Litraa per 100 kilometriä (l/100km)",
-            "unit_km_l": "Kilometriä per litra (km/l)",
             "unit_mpg_us": "Mailia per gallona (MPG US)",
             "unit_mpg_uk": "Mailia per gallona (MPG UK)",
+            "unit_km_l": "Kilometriä per litra (km/l)",
+            "unit_l_100km": "Litraa per 100 kilometriä (l/100km)",
             "to_label": "Mihin"
         },
         "content": {
@@ -1197,17 +1327,17 @@
             "p1": "Muunna tekstisi kebab-case-muotoon ilmaisella verkkomuuntimellamme. kebab-case (tunnetaan myös nimillä spinal-case tai param-case) on nimeämiskäytäntö, jossa kaikki kirjaimet ovat pieniä ja sanat erotetaan yhdysmerkeillä (-). Se on standardi URL-slugien ja usein myös CSS-luokkanimien nimeämisessä.",
             "features_title": "Ominaisuudet",
             "features": {
-                "seo": {
-                    "title": "SEO-ystävällinen",
-                    "desc": "Luo puhtaita ja luettavia URL-osoitteita, jotka hakukoneet tunnistavat helposti."
+                "url": {
+                    "title": "Puhtaat URL-osoitteet",
+                    "desc": "Hakukoneet suosivat yhdysmerkkejä URL-osoitteisiin."
                 },
                 "instant": {
                     "title": "Välitön muunnos",
                     "desc": "Saat lopputuloksen heti muunnosnapin painamisen jälkeen."
                 },
-                "client": {
-                    "title": "Yksityisyys edellä",
-                    "desc": "Käsittely tapahtuu selaimessasi – tietoja ei lähetetä ulkoisille palvelimille."
+                "privacy": {
+                    "title": "Yksityisyys suojattu",
+                    "desc": "Tekstisi ei koskaan poistu laitteestasi."
                 },
                 "bulk": {
                     "title": "Massakäsittely",
@@ -1224,50 +1354,65 @@
             },
             "uses_title": "Milloin käyttää kebab-case-muotoa",
             "uses": {
-                "urls": {
-                    "title": "URL-osoitteet",
-                    "desc": "Standardi tapa nimetä verkkosivujen osoitteet (esim. /meidan-palvelut)."
-                },
-                "files": {
-                    "title": "Tiedostonimet",
-                    "desc": "Paras tapa nimetä kuvat ja tiedostot verkkoon (esim. tuote-kuva-1.jpg)."
+                "url": {
+                    "title": "URL Slugs",
+                    "desc": "Luettavien, hakuystävällisten URL-osoitteiden luominen blogikirjoituksille ja tuotteille."
                 },
                 "css": {
                     "title": "CSS-luokat",
                     "desc": "Yleisin tapa nimetä luokkia ja id-tunnuksia tyylitiedostoissa (esim. .paa-valikko)."
                 },
-                "git": {
-                    "title": "Git-branchit",
-                    "desc": "Suositeltu tapa nimetä haaroja Git-hallinnassa (esim. feature-uusi-kirjautuminen)."
+                "file": {
+                    "title": "Tiedoston nimeäminen",
+                    "desc": "Standardi eri alustojen yhteensopiville tiedostonimille."
                 },
-                "config": {
-                    "title": "Konfiguraatiot",
-                    "desc": "Käytetään monissa asetus- ja YAML-tiedostoissa (esim. server-port)."
+                "html": {
+                    "title": "HTML-tunnukset",
+                    "desc": "Kuvaavien, yksilöllisten tunnusten antaminen elementeillesi."
                 },
-                "folders": {
-                    "title": "Kansiorakenteet",
-                    "desc": "Auttaa pitämään projektien kansiorakenteet siisteinä ja johdonmukaisina."
+                "pkg": {
+                    "title": "Pakettien nimet",
+                    "desc": "Yleinen npm:ssä ja muissa nykyaikaisissa paketinhallintaohjelmissa."
+                },
+                "domain": {
+                    "title": "Verkkotunnukset",
+                    "desc": "Monisanaisten verkkotunnusten rekisteröintien muotoilu."
                 }
             },
             "how_title": "Näin työkalumme toimii",
-            "how_steps": {
-                "1": "Muunnin skannaa tekstin ja etsii sanarajat.",
-                "2": "Kaikki kirjaimet muutetaan pieniksi aakkosiksi.",
-                "3": "Erikoismerkit ja välilyönnit korvataan yhdellä yhdysmerkillä (-).",
-                "4": "Peräkkäiset yhdysmerkit siistitään yhdeksi merkiksi.",
-                "5": ""
-            },
-            "examples_title": "Esimerkkejä",
-            "examples": {
-                "title": "Sivun otsikko",
-                "title_val": "sivun-otsikko",
-                "file": "Uusi tuote kuva",
-                "file_val": "uusi-tuote-kuva",
-                "slug": "Palvelumme ja tuotteemme",
-                "slug_val": "palvelumme-ja-tuotteemme",
-                "mixed": "Tiedosto_Nimi 2024",
-                "mixed_val": "tiedosto-nimi-2024"
-            },
+            "how_to_steps": [
+                {
+                    "title": "Insert Text",
+                    "desc": "Enter your phrase or URL fragment."
+                },
+                {
+                    "title": "Automatic Format",
+                    "desc": "The tool turns everything to lowercase."
+                },
+                {
+                    "title": "Hyphenation",
+                    "desc": "It replaces all non-alphanumeric characters with hyphens."
+                },
+                {
+                    "title": "Cleanup",
+                    "desc": "It handles multiple spaces or hyphens gracefully."
+                },
+                {
+                    "title": "Ready to Use",
+                    "desc": "The kebab-case text is outputted."
+                }
+            ],
+            "samples_title": "Esimerkkejä",
+            "samples": [
+                {
+                    "title": "URL Slug",
+                    "desc": "My Web Page → my-web-page"
+                },
+                {
+                    "title": "CSS Class",
+                    "desc": "Header Navigation → header-navigation"
+                }
+            ],
             "faq_title": "Usein kysytyt kysymykset",
             "faq": {
                 "q1": "Mikä on kebab-case?",
@@ -1285,7 +1430,7 @@
         "js": {
             "error_empty": "Syötä tekstiä muunnettavaksi",
             "success_convert": "✓ Muunnettu kebab-caseksi onnistuneesti!",
-            "error_no_copy": "Ei mitään kopioitavaa! Muunna tekstiä ensin.",
+            "error_copy": "Ei mitään kopioitavaa! Muunna ensin tekstiä.",
             "success_copy": "✓ Kopioitu leikepöydälle!"
         }
     },
@@ -1326,16 +1471,13 @@
             "usage_3": "<strong>Urheilu:</strong> Juoksumatkojen muuntaminen mailien ja kilometrien välillä",
             "usage_4": "<strong>Rakentaminen:</strong> Mittapiirustusten muuntaminen jaloista metreiksi",
             "usage_5": "<strong>Navigointi:</strong> Merimailien tai mailien muuntaminen kilometreiksi",
-            "usage_6": "<strong>Pituuden mittaus:</strong> Oman pituuden muuntaminen jaloiksi ja tuumiksi",
             "faq_title": "Usein kysytyt kysymykset",
             "faq_q1": "Kuinka monta senttimetriä on tuumassa?",
             "faq_a1": "Yksi tuuma on tarkalleen 2,54 senttimetriä. Tämä on kansainvälisesti sovittu vakiomitta.",
             "faq_q2": "Kuinka monta jalkaa on metrissä?",
             "faq_a2": "Yksi metri on noin 3,281 jalkaa. Tarkemmin sanoen, 1 jalka on 0,3048 metriä.",
             "faq_q3": "Mitä eroa on maililla ja merimaililla?",
-            "faq_a3": "Maamaili (statute mile) on 1 609,34 metriä, kun taas merimaili (nautical mile) on 1 852 metriä.",
-            "faq_q4": "Mikä on jaardi suomeksi?",
-            "faq_a4": "Jaardi (yard) on 0,9144 metriä. Sitä käytetään usein esimerkiksi kankaiden mittaamiseen tai urheilukentillä maissa, jotka käyttävät brittiläistä järjestelmää."
+            "faq_a3": "Maamaili (statute mile) on 1 609,34 metriä, kun taas merimaili (nautical mile) on 1 852 metriä."
         }
     },
     "molar-mass-converter": {
@@ -1345,83 +1487,39 @@
             "h1": "Molaarimassamuunnin",
             "subtitle": "Laske molekyylipaino ja molaarinen massa kemiallisille kaavoille."
         },
-        "editor": {
-            "label_input": "Syötä kemiallinen kaava",
-            "ph_input": "Esim. H2O, C6H12O6, NaCl...",
-            "btn_convert": "Laske massa",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "label_output": "Molaarinen massa (g/mol)",
-            "ph_output": "Tulos ilmestyy tähän..."
+        "form": {
+            "from_label": "From",
+            "unit_g_mol": "gramma per mooli (g/mol)",
+            "unit_kg_mol": "Kilogrammaa per mooli (kg/mol)",
+            "unit_lb_mol": "Pauna per mooli (lb/mol)",
+            "to_label": "Vastaanottaja"
         },
         "content": {
-            "hero_title": "Molaarinen massa",
-            "hero_subtitle": "Tärkeä työkalu kemiallisiin laskelmiin ja stoikiometriaan.",
-            "p1": "Molaarisen massan laskurimme avulla voit määrittää minkä tahansa kemiallisen elementin tai yhdisteen painon grammoina moolia kohti (g/mol). Se on välttämätön työkalu laboratorioissa, tutkimuksessa ja kemian opiskelussa, kun halutaan muuntaa aineen massa moolimääräksi.",
-            "features_title": "Ominaisuudet",
-            "features": {
-                "accurate": {
-                    "title": "Suuri tarkkuus",
-                    "desc": "Käyttää uusimpia atomipainoja jaksollisesta järjestelmästä."
-                },
-                "instant": {
-                    "title": "Välitön analyysi",
-                    "desc": "Tunnistaa ja laskee monimutkaisetkin kaavat sekunneissa."
-                },
-                "smart": {
-                    "title": "Älykäs parseri",
-                    "desc": "Käsittelee sulkeet ja useat atomiryhmät oikein (esim. Ba(OH)2)."
-                },
-                "free": {
-                    "title": "Täysin ilmainen",
-                    "desc": "Ammattitasoinen työkalu kaikkien käytettäväksi ilman maksuja."
-                }
-            },
-            "uses_title": "Miksi se on tärkeä?",
-            "uses": {
-                "lab": {
-                    "title": "Laboratoriotyö",
-                    "desc": "Reagenssien punnitseminen tarkkoja kokeita varten."
-                },
-                "stoichiometry": {
-                    "title": "Stoikiometria",
-                    "desc": "Kemiallisten reaktioiden saantojen ja ainemäärien laskeminen."
-                },
-                "analysis": {
-                    "title": "Datan analysointi",
-                    "desc": "Yhdisteiden pitoisuuksien määrittäminen näytteistä."
-                },
-                "study": {
-                    "title": "Kemian opiskelu",
-                    "desc": "Kotitehtävien ja laboratorioraporttien tarkistaminen."
-                }
-            },
-            "how_title": "Miten se toimii",
-            "how_steps": {
-                "1": "Hae kunkin alkuaineen atomimassa jaksollisesta järjestelmästä.",
-                "2": "Kerro atomimassa kaavassa olevalla atomien määrällä.",
-                "3": "Laske kaikkien kaavan osien massat yhteen.",
-                "4": "Tulos ilmaistaan yksikössä grammaa per mooli (g/mol).",
-                "5": ""
-            },
+            "feature1_title": "Moolimassayksiköt",
+            "feature1_desc": "Muunna välillä g/mol, kg/mol, lb/mol kemian laskelmia varten.",
+            "feature2_title": "Kemia & Tiede",
+            "feature2_desc": "Välttämätön stoikiometriassa, molekyylilaskelmissa ja laboratoriotyössä.",
+            "feature3_title": "Molekyylipaino",
+            "feature3_desc": "Tarkat muunnokset kemiallisten yhdisteiden massalaskelmille.",
+            "main_title": "Molaarimassan muuntamisen ymmärtäminen",
+            "description_p1": "Moolimassa on aineen yhden moolin massa, joka ilmaistaan ​​tyypillisesti grammoina moolia kohden (g/mol). Se on kemian peruskäsite, joka vastaa molekyylin kaikkien atomien atomimassojen summaa. Esimerkiksi veden (H2O) moolimassa on noin 18 g/mol (2×1 + 16). Moolimassan ymmärtäminen on välttämätöntä stoikiometriaa, liuoksen valmistusta ja kemiallisia laskelmia varten.",
+            "description_p2": "Vakioyksikkö on g/mol, vaikka suurempiin määriin käytetään kg/mol (1 kg/mol = 1000 g/mol). Imperial järjestelmät käyttävät toisinaan lb/mol, jossa 1 lb/mol ≈ 453,59 g/mol. Hiili-12:n määritetään olevan täsmälleen 12 g/mol, mikä toimii atomimassayksiköiden vertailukohtana. Nämä muunnokset ovat tärkeitä laboratoriotyössä, farmaseuttisissa laskelmissa ja teollisuuskemiassa.",
+            "usage_examples_title": "Esimerkkejä yleisestä käytöstä",
+            "usage_1": "<strong>Stökiometria:</strong> Reagenssi- ja tuotemäärien laskeminen",
+            "usage_2": "<strong>Liuoksen valmistelu:</strong> Molaariliuosten valmistus laboratoriossa",
+            "usage_3": "<strong>Kemiallinen analyysi:</strong> yhdisteen koostumuksen määrittäminen",
+            "usage_4": "<strong>Lääkkeet:</strong> Lääkkeen annostus- ja formulaatiolaskelmat",
+            "usage_5": "<strong>Teollinen kemia:</strong> Laajamittainen tuotantolaskelmat",
+            "usage_6": "<strong>Akateeminen tutkimus:</strong> Molekyylipainon määritykset",
             "faq_title": "Kysymyksiä molaarisesta massasta",
-            "faq": {
-                "q1": "Mitä molaarinen massa tarkoittaa?",
-                "a1": "Se on yhden moolin (noin 6,022*10^23 hiukkasta) aineen massa grammoina.",
-                "q2": "Tukeeko työkalu isoja ja pieniä kirjaimia?",
-                "a2": "Kyllä, kemialliset merkit on kirjoitettava tarkasti (esim. Co eli Koboltti vs CO eli Hiilimonoksidi).",
-                "q3": "Voinko käyttää sulkeita?",
-                "a3": "Kyllä, voit käyttää sulkeita monimutkaisissa yhdisteissä kuten (NH4)2SO4.",
-                "q4": "Mikä on moolimassa?",
-                "a4": "Moolimassa on toinen termi molaariselle massalle."
-            }
-        },
-        "js": {
-            "error_empty": "Syötä kemiallinen kaava",
-            "success_convert": "✓ Laskettu onnistuneesti!",
-            "error_invalid": "Virheellinen kemiallinen kaava!",
-            "error_no_copy": "Ei mitään kopioitavaa!",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
+            "faq_q1": "Kuinka lasken moolimassan?",
+            "faq_a1": "Lisää molekyylin kaikkien atomien atomimassat. H20:lle: (2 x 1,008) + 16,00 = 18,016 g/mol. Käytä jaksollista taulukkoa atomimassoille.",
+            "faq_q2": "Mitä eroa on moolimassalla ja molekyylipainolla?",
+            "faq_a2": "Ne ovat numeerisesti samanarvoisia, mutta käsitteellisesti erilaisia. Moolimassalla on yksiköitä (g/mol), kun taas molekyylipaino on mittaton. Käytännössä termejä käytetään usein vaihtokelpoisina.",
+            "faq_q3": "Kuinka voin muuntaa g/mol arvoiksi kg/mol?",
+            "faq_a3": "Jaa 1000:lla. Esimerkiksi 180 g/mol ÷ 1000 = 0,18 kg/mol. Tämä on hyödyllistä laajamittaisissa teollisissa laskelmissa.",
+            "faq_q4": "Miksi Avogadron luku on tärkeä moolimassalle?",
+            "faq_a4": "Avogadron luku (6,022 × 10²³) määrittelee myyrän. Molekyylimassa grammoina on numeerisesti yhtä suuri kuin yhden molekyylin massa atomimassayksiköissä yhdistäen atomi- ja makroskooppisen asteikon."
         }
     },
     "number-base-converter": {
@@ -1432,56 +1530,126 @@
             "subtitle": "Siirry vaivattomasti lukujärjestelmästä toiseen."
         },
         "editor": {
+            "label_from": "Basesta",
+            "bases": {
+                "2": "Desimaali (kantaluku 10)",
+                "8": "Octal",
+                "10": "Desimaali",
+                "16": "Heksadesimaali",
+                "generic": "Pohja: pohja"
+            },
+            "label_to": "Tukikohtaan",
+            "btn_swap": "Vaihda pohjat",
+            "presets": "Pika-esiasetukset:",
+            "preset_labels": {
+                "bin_dec": "Binääri → joulukuu",
+                "dec_hex": "Joulu → Hex",
+                "hex_bin": "Hex → Binaari",
+                "dec_oct": "Joulu → lokakuu"
+            },
             "label_input": "Syötä luku",
             "ph_input": "Kirjoita luku tähän...",
-            "from_base": "Lähdekanta",
-            "to_base": "Kohdekanta",
-            "btn_convert": "Muunna",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
             "label_output": "Tulos",
             "ph_output": "Muunnettu luku ilmestyy tähän...",
-            "error_invalid": "Virheellinen luku valitussa kannassa"
+            "btn_convert": "Muunna",
+            "btn_clear": "Tyhjennä",
+            "btn_copy": "Kopioi"
         },
         "content": {
+            "hero_title": "Universal Number Base Converter",
+            "hero_subtitle": "Muuta arvot välittömästi minkä tahansa numeerisen kantaluvun välillä 2:sta 36:een.",
             "p1": "Yleinen lukujärjestelmämuunttimemme on tehokas työkalu, joka poistaa rajoitukset lukujen väliltä. Voit muuntaa minkä tahansa luvun mihin tahansa kantaan välillä 2 (binaari) ja 36. Tämä on välttämätöntä vianetsinnässä, tietojen koodauksessa ja matemaattisessa tutkimuksessa.",
+            "what_title": "Mitä ovat lukukannat?",
+            "what_desc": "Numerokanta (tunnetaan myös kantalukuna) edustaa yksilöllisten numeroiden määrää, mukaan lukien nolla, joita numeerinen järjestelmä käyttää arvojen esittämiseen. Esimerkiksi desimaalijärjestelmässä (kantaluku 10), jota käytämme päivittäin, on kymmenen yksilöllistä numeroa (0-9). Tietokoneet viihtyvät binäärijärjestelmässä (kanta 2), kun taas kehittäjät käyttävät usein oktaalia (kanta 8) ja heksadesimaalia (kanta 16) kompaktimpaan tietojen esittämiseen. Yli 10 kantaluvut käyttävät aakkosten kirjaimia edustamaan arvoja; esimerkiksi emäksessä 16 A on 10 ja F on 15.",
+            "features_title": "Työkalun ensisijaiset ominaisuudet",
             "features": {
-                "flex": {
-                    "title": "Täysi joustavuus",
-                    "desc": "Valitse mikä tahansa kanta 2 ja 36 välillä."
-                },
                 "instant": {
                     "title": "Reaaliaikainen",
                     "desc": "Näe tulokset heti kun muutat kantaa tai syötettä."
                 },
-                "client": {
-                    "title": "Turvallinen",
-                    "desc": "Kaikki prosessointi tapahtuu turvallisesti omalla laitteellasi."
+                "universal": {
+                    "title": "Omni-Base-tuki",
+                    "desc": "Täysi vapaus valita mikä tahansa lähde ja kohdekanta välillä 2–36."
+                },
+                "presets": {
+                    "title": "Älykkäät esiasetukset",
+                    "desc": "Yhden napsautuksen pikanäppäimet yleisimmille alan standardimuunnoksille."
+                },
+                "swap": {
+                    "title": "Välitön vaihto",
+                    "desc": "Käännä nopeasti From- ja To-tukiasemaasi erillisellä painikkeella."
+                },
+                "privacy": {
+                    "title": "Turvallinen tietojenkäsittely",
+                    "desc": "Numeroitasi ei koskaan lähetetä palvelimelle; kaikki logiikka toimii paikallisesti selaimessasi."
+                },
+                "free": {
+                    "title": "Ilmainen kaikille",
+                    "desc": "Ei rekisteröintiä, ei rajoituksia eikä piilotettuja tilausmaksuja."
                 }
             },
+            "uses_title": "Ammattimaiset sovellukset",
             "uses": {
-                "title": "Mihin sitä käytetään?",
                 "programming": {
                     "title": "Ohjelmointi",
                     "desc": "Muunna lukuja järjestelmiin, joita tietokoneet ymmärtävät paremmin."
                 },
-                "cryptography": {
-                    "title": "Kryptografia",
-                    "desc": "Tiedon esittäminen eri muodoissa turvallisuuden vuoksi."
-                },
                 "education": {
                     "title": "Matematiikka",
                     "desc": "Opi ja opeta erilaisten lukujärjestelmien logiikkaa."
+                },
+                "crypto": {
+                    "title": "Luova kryptografia",
+                    "desc": "Kokeile ei-standardipohjaisia ​​yksinkertaisia ​​koodauksia ja palapelien luomista."
+                },
+                "web": {
+                    "title": "Advanced Web Dev",
+                    "desc": "Analysoi ja muunna URL-tunnisteita tai ainutlaatuisia avaimia, jotka käyttävät korkeampaa kantaa, kuten base-36."
                 }
             },
+            "how_title": "Käyttöopas",
+            "how_steps": {
+                "1": {
+                    "title": "Valitse tukikohtaan",
+                    "desc": "Valitse tuloksesi kohdepohja."
+                },
+                "2": {
+                    "title": "Anna arvo",
+                    "desc": "Syötä numeromerkkijonot käyttämällä lähdepohjasi sallittuja merkkejä."
+                },
+                "3": {
+                    "title": "Suorittaa",
+                    "desc": "Napsauta \"Muunna numero\" käsitelläksesi muunnos."
+                },
+                "4": {
+                    "title": "Kaappaa tulos",
+                    "desc": "Kopioi tuloksena oleva arvo käytettäväksi ulkoisissa sovelluksissasi."
+                },
+                "5": {
+                    "title": "Kopioi tulos:",
+                    "desc": "Napsauta \"Kopioi\" kopioidaksesi muunnetun numeron"
+                }
+            },
+            "faq_title": "Usein kysytyt kysymykset",
             "faq": {
                 "q1": "Mitä tarkoittaa kanta (base)?",
                 "a1": "Kanta on yksilöllisten numeroiden ja kirjainten määrä, joilla lukuja esitetään (esim. kanta-10 eli kymmenjärjestelmä).",
                 "q2": "Miksi kanta 36 on suurin?",
                 "a2": "Koska kanta 36 käyttää kymmentä numeroa (0-9) ja 26 englanninkielistä aakkosta (A-Z).",
                 "q3": "Voiko merkistökoko (Case) vaikuttaa?",
-                "a3": "Kannan 10 yläpuolella käytetään kirjaimia, joita pidetään yleensä case-insensitiveinä ellei toisin mainita."
+                "a3": "Kannan 10 yläpuolella käytetään kirjaimia, joita pidetään yleensä case-insensitiveinä ellei toisin mainita.",
+                "q4": "Ovatko tietoni turvassa?",
+                "a4": "Täysin! Kaikki konversiot tapahtuvat kokonaan selaimessasi JavaScriptin avulla. Numerosi eivät koskaan poistu laitteestasi tai lähetetä niitä millekään palvelimelle."
             }
+        },
+        "js": {
+            "error_empty": "Anna muutettava numero.",
+            "error_invalid": "Virheellinen syöttö perus:base. Vain merkit :chars ovat sallittuja.",
+            "error_format": "Virheellinen numeromuoto havaittu.",
+            "success_convert": "✓ Muunnettu perustasta :pohjalta :toksi onnistuneesti!",
+            "error_general": "Tapahtui odottamaton virhe:",
+            "error_copy": "Ei mitään kopioitavaa! Suorita ensin muunnos.",
+            "success_copy": "✓ Kopioitu leikepöydälle!"
         }
     },
     "pascal-case-converter": {
@@ -1506,21 +1674,21 @@
             "p1": "Muunna tekstisi PascalCase-muotoon ilmaisella verkkomuuntimellamme. PascalCase (tunnetaan myös nimellä UpperCamelCase) on nimeämiskäytäntö, jossa jokaisen sanan ensimmäinen kirjain on iso, mukaan lukien ensimmäinen sana. Se on standardi luokkien nimeämisessä lähes kaikissa moderneissa ohjelmointikielissä.",
             "features_title": "Ominaisuudet",
             "features": {
-                "standard": {
-                    "title": "Ohjelmointistandardi",
-                    "desc": "Noudattaa PascalCase-sääntöjä, joita käytetään C#:ssa, Javassa ja React-komponenteissa."
+                "oop": {
+                    "title": "OO-ystävällinen",
+                    "desc": "Luodut nimet ovat 100 % C#-, Java- ja Python-luokan nimeämissääntöjen mukaisia."
                 },
                 "instant": {
                     "title": "Välitön tulos",
                     "desc": "Saat nimeämiskäytännön mukaisen tekstin heti."
                 },
-                "client": {
-                    "title": "Turvallinen",
-                    "desc": "Tiedot pysyvät selaimessasi – koodisi on vain sinun nähtävissäsi."
+                "privacy": {
+                    "title": "Yksityisyys ensin",
+                    "desc": "Kaikki käsittely tapahtuu paikallisesti selaimessasi"
                 },
-                "bulk": {
-                    "title": "Massamuunnos",
-                    "desc": "Sopii suurten tekstilohkojen tai listojen muuntamiseen yhdellä kertaa."
+                "batch": {
+                    "title": "Erämuunnos",
+                    "desc": "Muunna useita luokan nimiä kerralla."
                 },
                 "smart": {
                     "title": "Älykäs erotin",
@@ -1533,50 +1701,65 @@
             },
             "uses_title": "Milloin käyttää PascalCasea",
             "uses": {
-                "classes": {
-                    "title": "Luokkien nimeäminen",
-                    "desc": "Standardi tapa nimetä luokat (esim. class KayttajaHallinta)."
+                "class": {
+                    "title": "🏗️ Luokkien nimet",
+                    "desc": "Luo oikein muotoiltuja luokkanimiä Javalle, C#:lle, C++:lle ja muille OOP-kielille"
                 },
                 "react": {
                     "title": "React-komponentit",
                     "desc": "React-komponentit on nimettävä PascalCasella (esim. <KirjautumisLomake />)."
                 },
-                "interfaces": {
-                    "title": "Rajapinnat (Interfaces)",
-                    "desc": "Käytetään TypeScriptissä ja C#:ssa rajapintojen nimeämiseen."
+                "ts": {
+                    "title": "📘 TypeScript-tyypit",
+                    "desc": "Muotoile käyttöliittymä ja kirjoita nimet TypeScript-projekteissa"
                 },
-                "types": {
-                    "title": "Tyypit",
-                    "desc": "Selkeä tapa nimetä mukautetut tyypit ja enumit."
+                "css": {
+                    "title": "CSS-moduulit",
+                    "desc": "Luo komponenttiluokkanimiä CSS-in-JS- ja CSS-moduuleille."
                 },
-                "csharp": {
-                    "title": "C# / .NET",
-                    "desc": "Lähes kaikki nimeäminen .NET-ekosysteemissä noudattaa PascalCasea."
+                "api": {
+                    "title": "API-mallit",
+                    "desc": "Muotoile tietomallin ja entiteettien nimet taustakehityksessä."
                 },
-                "modeling": {
-                    "title": "Tietomallinnus",
-                    "desc": "Hyvä tapa nimetä entiteetit ja tietokantataulukoiden vastikkeet koodissa."
+                "pkg": {
+                    "title": "Pakettien nimet",
+                    "desc": "Luo nimiavaruus ja pakettien nimet käytäntöjen mukaisesti."
                 }
             },
             "how_title": "Toimintaperiaate",
             "how_steps": {
-                "1": "Työkalu analysoi tekstin ja tunnistaa yksittäiset sanat.",
-                "2": "Jokaisen sanan ensimmäinen kirjain muutetaan isoksi aakkoseksi.",
-                "3": "Sanojen väliset välilyönnit ja erikoismerkit poistetaan.",
-                "4": "Sanat yhdistetään yhdeksi kiinteäksi merkkijonoksi.",
-                "5": ""
+                "1": {
+                    "title": "Napsauta Muunna",
+                    "desc": "Paina \"Muunna PascalCase-muotoon\"."
+                },
+                "2": {
+                    "title": "Tarkista tulos",
+                    "desc": "Tarkista PascalCasen tulos."
+                },
+                "3": {
+                    "title": "Kopioi tulos",
+                    "desc": "Napsauta \"Kopioi\" -painiketta."
+                },
+                "4": {
+                    "title": "Käytä koodissa",
+                    "desc": "Liitä projektiisi."
+                },
+                "5": {
+                    "title": "Käytä koodissa:",
+                    "desc": "Liitä projektiisi"
+                }
             },
             "examples_title": "Esimerkkejä",
-            "examples": {
-                "user": "profiilin hallinta",
-                "user_val": "ProfiilinHallinta",
-                "comp": "valikon painike komponentti",
-                "comp_val": "ValikonPainikeKomponentti",
-                "api": "hae_kaikki_tuotteet",
-                "api_val": "HaeKaikkiTuotteet",
-                "db": "kayttajan-asetukset",
-                "db_val": "KayttajanAsetukset"
-            },
+            "samples": [
+                {
+                    "title": "Class Name",
+                    "desc": "user profile controller → UserProfileController"
+                },
+                {
+                    "title": "Interface",
+                    "desc": "api response type → ApiResponseType"
+                }
+            ],
             "faq_title": "Usein kysytyt kysymykset",
             "faq": {
                 "q1": "Mikä on PascalCase?",
@@ -1594,7 +1777,7 @@
         "js": {
             "error_empty": "Syötä tekstiä muunnettavaksi",
             "success_convert": "✓ Muunnettu PascalCaseksi onnistuneesti!",
-            "error_no_copy": "Ei mitään kopioitavaa! Muunna tekstiä ensin.",
+            "error_copy": "Ei mitään kopioitavaa! Muunna ensin tekstiä.",
             "success_copy": "✓ Kopioitu leikepöydälle!"
         }
     },
@@ -1607,12 +1790,12 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_w": "Watti (W)",
-            "unit_kw": "Kilowatti (kW)",
-            "unit_hp_m": "Hevosvoima (metrinen, hv)",
-            "unit_hp_e": "Hevosvoima (sähköinen, hp)",
+            "unit_W": "watti (W)",
+            "unit_kW": "Kilowatti (kW)",
+            "unit_hp": "Hevosvoimat (hv)",
+            "unit_ps": "Metrinen hevosvoimat (PS)",
+            "unit_kcal_h": "kcal/h",
             "unit_btu_h": "BTU tunnissa (BTU/h)",
-            "unit_dbm": "Desibeli-milliwatti (dBm)",
             "to_label": "Mihin"
         },
         "content": {
@@ -1652,12 +1835,12 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_pa": "Pascal (Pa)",
-            "unit_kpa": "Kilopascal (kPa)",
+            "unit_Pa": "Pascal (Pa)",
+            "unit_kPa": "Kilopascal (kPa)",
             "unit_bar": "Baari (bar)",
             "unit_psi": "Paunaa neliötuumaa kohti (psi)",
             "unit_atm": "Ilmakehä (atm)",
-            "unit_torr": "Torr (mmHg)",
+            "unit_mmHg": "Elohopeamillimetri (mmHg)",
             "to_label": "Mihin"
         },
         "content": {
@@ -1696,63 +1879,96 @@
             "subtitle": "Luo täydelliset värikoodit CSS-tyylitiedostoihisi."
         },
         "editor": {
-            "label_r": "Punainen (R)",
-            "label_g": "Vihreä (G)",
-            "label_b": "Sininen (B)",
+            "rgb_to_hex": "RGB - HEX",
+            "label_red": "Punainen (0-255)",
+            "label_green": "Vihreä (0-255)",
+            "label_blue": "Sininen (0-255)",
             "label_hex": "Heksakoodi",
+            "hex_to_rgb": "HEX - RGB",
+            "label_hex_input": "HEX väri",
             "ph_hex": "#000000",
-            "btn_convert_hex": "Heksaksi",
-            "btn_convert_rgb": "RGB-muotoon",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "preview_text": "Värin esikatselu",
-            "error_invalid_rgb": "Käytä arvoja 0-255",
-            "error_invalid_hex": "Virheellinen heksakoodi"
+            "label_rgb_output": "RGB väri"
         },
         "content": {
-            "hero_title": "RGB & Heksadesimaali",
-            "hero_subtitle": "Värien hallinta digitaalisessa maailmassa.",
             "p1": "RGB-heksamuuntimemme on välttämätön apuväline jokaiselle graafiselle suunnittelijalle ja web-kehittäjälle. RGB (Red, Green, Blue) perustuu valon lisäämiseen, kun taas heksadesimaalikoodi on tapa ilmaista nämä samat arvot tiiviissä muodossa CSS- ja HTML-koodissa.",
-            "features": {
-                "preview": {
-                    "title": "Välitön esikatselu",
-                    "desc": "Näe valitsemasi väri heti esikatseluruudussa."
+            "formats_title": "Värimuotojen ymmärtäminen",
+            "formats": {
+                "rgb": {
+                    "title": "RGB (punainen, vihreä, sininen)",
+                    "format": "Muoto",
+                    "format_val": "rgb (punainen, vihreä, sininen)",
+                    "range": "Alue",
+                    "range_val": "0-255 kullekin kanavalle",
+                    "used_in": "Yleisesti käytössä",
+                    "used_in_val": "Digitaaliset näytöt, näytöt, TV"
                 },
-                "easy": {
-                    "title": "Helppokäyttöinen",
-                    "desc": "Liikuta säätimiä tai syötä arvot suoraan kenttiin."
-                },
-                "accurate": {
-                    "title": "Tarkka",
-                    "desc": "Varmistaa, että värit näyttävät samalta koodissasi kuin suunnitelmassasi."
+                "hex": {
+                    "title": "HEX (heksadesimaali)",
+                    "format": "Muoto",
+                    "format_val": "#RRGBBB",
+                    "range": "Alue",
+                    "range_val": "00-FF jokaiselle kanavalle (heksa)",
+                    "used_in": "Yleisesti käytössä",
+                    "used_in_val": "Verkkosuunnittelu, CSS, HTML"
                 }
             },
+            "why_title": "Miksi muuntaa RGB:n ja HEX:n välillä?",
+            "why_list": [
+                {
+                    "title": "Web Standards",
+                    "desc": "HEX is the most used format in CSS for defining website colors."
+                },
+                {
+                    "title": "Universal Matching",
+                    "desc": "Ensure consistent colors across different design tools and platforms."
+                },
+                {
+                    "title": "Ease of Use",
+                    "desc": "Quickly get HEX codes from RGB values for efficient styling."
+                }
+            ],
+            "how_work_title": "Miten värin muuntaminen toimii",
+            "how_work_t1": "RGB - HEX",
+            "how_work_p1": "Jokainen värikanava (R, G, B) muunnetaan 0-255 desimaalista 00-FF heksadesimaaliarvoksi.",
+            "how_work_t2": "HEX - RGB",
+            "how_work_p2": "Heksamerkkijono jaetaan pareiksi ja jokainen pari muunnetaan takaisin 0-255 desimaaliarvoon.",
+            "uses_title": "Yleiset käyttötapaukset",
             "uses": {
                 "web": {
                     "title": "Web-kehitys",
                     "desc": "Määritä elementtien värit tyylitiedostoissa helposti."
                 },
-                "graphics": {
-                    "title": "Grafiikka",
-                    "desc": "Muunna Photoshop- tai Canva-värit koodatuksi muodoksi."
+                "graphic": {
+                    "title": "Graafinen suunnittelu",
+                    "desc": "Yhdistä värit Adobe Photoshopin (RGB) ja verkkosuunnittelutyökalujen (HEX) välillä"
                 },
-                "branding": {
-                    "title": "Brändäys",
-                    "desc": "Pidä yrityksen värit johdonmukaisina kaikilla alustoilla."
+                "brand": {
+                    "title": "Tuotemerkkiohjeet",
+                    "desc": "Asiakirjojen merkkivärit molemmissa muodoissa tulostukseen (RGB) ja verkkoon (HEX)"
                 }
             },
+            "practices_title": "Värimuotojen parhaat käytännöt",
+            "practices_list": [
+                "Käytä HEX-muotoa pienikokoisille CSS-tiedostoille.",
+                "Käytä RGB:tä (erityisesti RGBA:ta), kun tarvitset peittävyyttä/läpinäkyvyyttä.",
+                "Pysy yhdessä projektissa yhteen muotoon johdonmukaisuuden vuoksi."
+            ],
+            "pro_tip_title": "💡 Provinkki",
+            "pro_tip_desc": "HEX-lyhenne: Värit, kuten #FF0000, voidaan lyhentää arvoon #F00, kun jokainen numeropari on identtinen.",
+            "faq_title": "Usein kysytyt kysymykset",
             "faq": {
                 "q1": "Mitä # etuliite tarkoittaa heksakoodissa?",
                 "a1": "Se on standardi merkki, joka kertoo selaimelle ja ohjelmistolle, että seuraavat merkit ovat heksadesimaalivärikoodi.",
                 "q2": "Montako väriä RGB tukee?",
                 "a2": "Se tukee yli 16,7 miljoonaa eri väriyhdistelmää (256^3).",
                 "q3": "Voiko heksakoodi olla 3-merkkinen?",
-                "a3": "Kyllä, esim. #F00 on lyhennys koodille #FF0000 (punainen)."
+                "a3": "Kyllä, esim. #F00 on lyhennys koodille #FF0000 (punainen).",
+                "q4": "Ovatko 3- ja 6-numeroiset HEX-koodit samat?",
+                "a4": "3-numeroiset HEX-koodit ovat lyhennettyjä 6-numeroisia koodeja, joissa jokainen numero kaksinkertaistetaan."
             }
         },
         "js": {
-            "error_empty": "Valitse tai syötä väri",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
+            "invalid_hex": "Virheellinen HEX"
         }
     },
     "sentence-case-converter": {
@@ -1772,31 +1988,94 @@
             "ph_output": "Tulos ilmestyy tähän..."
         },
         "content": {
-            "hero_title": "Lausemuoto (Sentence Case)",
-            "hero_subtitle": "Automaattinen työkalu oikeinkirjoituksen parantamiseen.",
             "p1": "Lausemuoto-muunnin on täydellinen työkalu pitkien tekstien puhdistamiseen. Se varmistaa, että jokainen lause alkaa isolla kirjaimella pisteen jälkeen, mutta jättää muun tekstin yleensä pieniksi kirjaimiksi (paitsi erisnimet). Tämä tekee tekstistäsi ammattimaisen näköistä ja helpommin luettavaa.",
+            "features_title": "Lisäominaisuudet",
             "features": {
-                "auto": {
-                    "title": "Älykäs tunnistus",
-                    "desc": "Tunnistaa lauseiden loppumerkit (. ? !) ja aloittaa seuraavan sanan isolla."
+                "auto_cap": {
+                    "title": "Automaattinen isot kirjaimet",
+                    "desc": "Tunnistaa älykkäästi lauseen rajat ja kirjoittaa jokaisen lauseen ensimmäisen kirjaimen isolla kirjaimella."
                 },
-                "fast": {
-                    "title": "Välitön",
-                    "desc": "Korjaa tuhansia sanoja sekunnissa."
+                "instant": {
+                    "title": "Välitön muotoilu",
+                    "desc": "Laitteistokiihdytetty käsittely, joka tuottaa tuloksia kirjoittaessasi tai napsauttamalla."
                 },
-                "client": {
-                    "title": "Yksityinen",
-                    "desc": "Tekstisi ei poistu selaimestasi; käsittely on täysin paikallista."
+                "privacy": {
+                    "title": "Yksityisyys suojattu",
+                    "desc": "Kaikki käsittely tapahtuu selaimessasi – tekstisi ei koskaan poistu laitteestasi."
+                },
+                "bulk": {
+                    "title": "Joukkokäsittely",
+                    "desc": "Käsittele tehokkaasti suuria kappaleita tai useita sivuja tekstiä sekunneissa."
+                },
+                "clean": {
+                    "title": "Ammattimainen Puhdistus",
+                    "desc": "Poistaa epäjohdonmukaiset isot kirjaimet saadakseen kiillotetun, yhtenäisen ulkonäön."
+                },
+                "free": {
+                    "title": "Aina Ilmainen",
+                    "desc": "Ei rekisteröintiä tai piilokuluja – käytä sitä niin paljon kuin tarvitset."
                 }
             },
+            "uses_title": "Yleiset käyttötapaukset",
+            "how_to_title": "Kuinka käyttää muuntajaa",
+            "how_to_steps": [
+                {
+                    "title": "Paste Your Text",
+                    "desc": "Enter or paste the text you want to format into the input area."
+                },
+                {
+                    "title": "Execute Conversion",
+                    "desc": "Click the \"Convert to Sentence Case\" button to process your text."
+                },
+                {
+                    "title": "Verify Output",
+                    "desc": "Review the result in the output box to ensure it meets your expectations."
+                },
+                {
+                    "title": "Copy to Clipboard",
+                    "desc": "Use the Copy button to quickly save your formatted text."
+                },
+                {
+                    "title": "Final Implementation",
+                    "desc": "Paste the clean text into your destination document or application."
+                }
+            ],
+            "examples_title": "Muotoiluesimerkkejä",
+            "samples": [
+                {
+                    "before": "THIS IS A TEST. i am a student.",
+                    "after": "This is a test. I am a student."
+                },
+                {
+                    "before": "hello WORLD! HOW ARE YOU?",
+                    "after": "Hello world! How are you?"
+                },
+                {
+                    "before": "uNSAFe caPITalizAtion. fix it.",
+                    "after": "Unsafe capitalization. Fix it."
+                }
+            ],
+            "faq_title": "Usein kysytyt kysymykset",
             "uses": {
-                "notes": {
-                    "title": "Muistiinpanot",
-                    "desc": "Siisti nopeasti tehdyt muistiinpanot luettavaan muotoon."
+                "email": {
+                    "title": "Sähköpostin laatiminen",
+                    "desc": "Varmista, että ammattimaisissa sähköpostiviesteissäsi on täydelliset isot kirjaimet ennen kuin painat Lähetä."
+                },
+                "document": {
+                    "title": "Muodollinen dokumentaatio",
+                    "desc": "Muotoile tekniset raportit tai käsikirjat nopeasti vakiomuotoisten ohjeiden mukaisiksi."
+                },
+                "content": {
+                    "title": "Blogin sisältö",
+                    "desc": "Standardoi luonnosteksti useista lähteistä yhtenäisen lukijakokemuksen takaamiseksi."
                 },
                 "social": {
                     "title": "Sosiaalinen media",
                     "desc": "Korjaa huolimattomasti kirjoitetut päivitykset ennen julkaisua."
+                },
+                "academic": {
+                    "title": "Akateeminen kirjoittaminen",
+                    "desc": "Korjaa isot kirjaimet esseissä ja tutkimuspapereissa automaattisesti."
                 },
                 "business": {
                     "title": "Sähköpostit",
@@ -1809,11 +2088,17 @@
                 "q2": "Poistaako se kaikki isot kirjaimet?",
                 "a2": "Kyllä, se yleensä muuttaa kaiken muun pieneksi ja jättää vain lauseiden alut isoiksi.",
                 "q3": "Tukeeko se suomen kieltä?",
-                "a3": "Kyllä, se toimii erinomaisesti kaikilla latinalaisia aakkosia käyttävillä kielillä."
+                "a3": "Kyllä, se toimii erinomaisesti kaikilla latinalaisia aakkosia käyttävillä kielillä.",
+                "q4": "Missä voin käyttää tätä työkalua?",
+                "a4": "Se toimii missä tahansa tekstissä – verkkosivuston sisällöstä ja sähköposteista juridisiin asiakirjoihin ja koodikommentteihin.",
+                "q5": "Ovatko tietoni turvassa?",
+                "a5": "Täysin. Kaikki käsittely tapahtuu paikallisesti selaimessasi JavaScriptin kautta, joten raakatekstiäsi ei koskaan lähetetä millekään palvelimelle."
             }
         },
         "js": {
             "error_empty": "Syötä tekstiä korjattavaksi",
+            "success_converted": "✓ Käännetty lausekokoon onnistuneesti!",
+            "error_no_copy": "Ei mitään kopioitavaa! Muunna ensin tekstiä.",
             "success_copy": "✓ Kopioitu!"
         }
     },
@@ -1834,22 +2119,20 @@
             "ph_output": "hei_maailma_esimerkki"
         },
         "content": {
-            "hero_title": "snake_case-muunnin",
-            "hero_subtitle": "Lopullinen työkalu tietokantataulujen ja back-end-koodin nimeämiseen.",
             "p1": "Muunna tekstisi snake_case-muotoon ilmaisella verkkomuuntimellamme. snake_case on nimeämiskäytäntö, jossa sanat kirjoitetaan pienillä kirjaimilla ja ne erotetaan alaviivalla (_). Se on standardi Python-ohjelmoinnissa ja tietokantojen sarakkeiden nimeämisessä.",
             "features_title": "Ominaisuudet",
             "features": {
-                "db": {
-                    "title": "Tietokantayhteensopiva",
-                    "desc": "Luo puhtaita nimiä SQL-tauluille ja sarakkeille ilman ongelmia."
+                "python": {
+                    "title": "Python-standardi",
+                    "desc": "Luo muuttujien nimiä, jotka noudattavat PEP 8 -tyyliohjeita."
                 },
                 "instant": {
                     "title": "Heti valmis",
                     "desc": "Muuntaa tekstin välittömästi napin painalluksesta."
                 },
-                "client": {
-                    "title": "Turvallinen",
-                    "desc": "Kaikki tekstin käsittely tapahtuu selaimessasi – koodisi pysyy omana tietonasi."
+                "privacy": {
+                    "title": "Yksityisyys suojattu",
+                    "desc": "Kaikki käsittely tapahtuu selaimessasi."
                 },
                 "bulk": {
                     "title": "Useita kerralla",
@@ -1870,45 +2153,64 @@
                     "title": "Python-koodaus",
                     "desc": "Virallinen suositus muuttujien ja funktioiden nimeämiseen (PEP 8)."
                 },
-                "sql": {
-                    "title": "SQL-tietokannat",
-                    "desc": "Yleisin tapa nimetä taulukot ja kentät (esim. kayttaja_tiedot)."
+                "db": {
+                    "title": "Tietokannan sarakkeet",
+                    "desc": "Standardi sarakkeiden nimille (esim. Created_at, user_id)."
                 },
                 "config": {
                     "title": "Asetustiedostot",
                     "desc": "Käytetään usein .env- ja asetustiedostoissa selkeyden vuoksi."
                 },
-                "json": {
-                    "title": "API & JSON",
-                    "desc": "Monet back-end-rajapinnat noudattavat snake_case-tyyliä vastausviesteissään."
+                "ruby": {
+                    "title": "Ruby kehitys",
+                    "desc": "Noudata muuttujien ja menetelmien Rubyn nimeämiskäytäntöjä."
                 },
-                "constants": {
-                    "title": "Vakiot (CONSTANT_CASE)",
-                    "desc": "Muunnelma snake_casesta (isot kirjaimet), jota käytetään vakioille."
+                "data": {
+                    "title": "📊 Tietotiede",
+                    "desc": "Muotoile sarakkeiden nimet pandas DataFrames- ja CSV-tiedostoissa"
                 },
-                "filenames": {
-                    "title": "Tiedostonimet",
-                    "desc": "Selkeä tapa nimetä kooditiedostot (esim. utils_helper.py)."
+                "api": {
+                    "title": "🔧 API-parametrit",
+                    "desc": "Luo johdonmukaiset parametrien nimet REST-sovellusliittymille"
                 }
             },
-            "how_title": "Näin se toimii",
-            "how_steps": {
-                "1": "Työkalu analysoi syötetyn tekstin ja tunnistaa sanarajat.",
-                "2": "Kaikki isot kirjaimet muutetaan pieniksi aakkosiksi.",
-                "3": "Välilyönnit, viivat ja erikoismerkit korvataan alaviivalla (_).",
-                "4": "Peräkkäiset alaviivat siistitään yhdeksi merkiksi.",
-                "5": ""
-            },
+            "how_to_title": "Kuinka käyttää",
+            "how_to_steps": [
+                {
+                    "title": "Paste Text",
+                    "desc": "Paste your text in the input box."
+                },
+                {
+                    "title": "Convert",
+                    "desc": "The converter replaces spaces and hyphens with underscores."
+                },
+                {
+                    "title": "Lowercase",
+                    "desc": "It converts all characters to lowercase."
+                },
+                {
+                    "title": "Cleanup",
+                    "desc": "Consecutive underscores are reduced to one."
+                },
+                {
+                    "title": "Result",
+                    "desc": "The snake_case result is ready to use."
+                }
+            ],
             "examples_title": "Esimerkkejä",
             "examples": {
-                "raw": "Käyttäjän Proﬁilitiedot",
-                "raw_val": "kayttajan_profiilitiedot",
-                "code": "hae kaikki tuotteet",
-                "code_val": "hae_kaikki_tuotteet",
-                "file": "Uusi-Tiedosto-Nimi",
-                "file_val": "uusi_tiedosto_nimi",
-                "db": "luontipäivämäärä sarake",
-                "db_val": "luontipaivamaara_sarake"
+                "var": {
+                    "title": "Muuttujien nimet:"
+                },
+                "func": {
+                    "title": "Toimintojen nimet:"
+                },
+                "db": {
+                    "title": "Tietokannan sarakkeet:"
+                },
+                "config": {
+                    "title": "Asetusnäppäimet:"
+                }
             },
             "faq_title": "Usein kysytyt kysymykset",
             "faq": {
@@ -1926,7 +2228,7 @@
         },
         "js": {
             "error_empty": "Syötä tekstiä muunnettavaksi",
-            "success_convert": "✓ Muunnettu snake_caseksi onnistuneesti!",
+            "success_converted": "✓ Muutettu snake_case-muotoon onnistuneesti!",
             "error_no_copy": "Ei mitään kopioitavaa! Muunna tekstiä ensin.",
             "success_copy": "✓ Kopioitu leikepöydälle!"
         }
@@ -1940,11 +2242,11 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_km_h": "Kilometriä tunnissa (km/h)",
-            "unit_mi_h": "Mailia tunnissa (mph)",
-            "unit_m_s": "Metriä sekunnissa (m/s)",
-            "unit_kn": "Solmua (kn)",
-            "unit_ft_s": "Jalkaa sekunnissa (ft/s)",
+            "unit_kph": "Kilometrejä tunnissa (km/h)",
+            "unit_mph": "Mailia tunnissa (mph)",
+            "unit_mps": "Metriä sekunnissa (m/s)",
+            "unit_knot": "solmut (kn)",
+            "unit_mach": "Mach (vakioilmapiiri)",
             "to_label": "Mihin"
         },
         "content": {
@@ -1992,30 +2294,28 @@
             "ph_output": "HeiMaailmaEsimerkki"
         },
         "content": {
-            "hero_title": "Studly Case -muunnin",
-            "hero_subtitle": "Lopullinen työkalu muun muassa PHP:n ja Laravelin luokkien nimeämiseen.",
             "p1": "Muunna tekstisi Studly Case -muotoon ilmaisella verkkomuuntimellamme. Studly Case (tunnetaan myös nimillä PascalCase tai UpperCamelCase) on nimeämiskäytäntö, jossa jokainen sana alkaa isolla kirjaimella ilman välilyöntejä. Se on standardi monissa ohjelmointikehyksissä, erityisesti PHP:n Laravel-kehyksessä.",
             "features_title": "Ominaisuudet",
             "features": {
-                "standard": {
-                    "title": "Kehitysyhteensopiva",
-                    "desc": "Noudattaa standardeja nimeämiskäytäntöjä, joita käytetään nykyaikaisessa ohjelmistokehityksessä."
+                "styling": {
+                    "title": "Luova tyyli",
+                    "desc": "Luo ainutlaatuinen, silmiinpistävä tekstimuotoilu"
                 },
                 "instant": {
                     "title": "Heti valmis",
                     "desc": "Saat lopputuloksen välittömästi tekstin syöttämisen jälkeen."
                 },
-                "client": {
-                    "title": "Yksityisyys",
-                    "desc": "Kaikki tekstin käsittely tapahtuu selaimessasi – koodisi pysyy turvassa."
+                "privacy": {
+                    "title": "Yksityisyys suojattu",
+                    "desc": "Kaikki käsittely tapahtuu selaimessasi"
                 },
                 "bulk": {
                     "title": "Massamuunnos",
                     "desc": "Muunna helposti suuria määriä tekstiä yhdellä kertaa."
                 },
-                "smart": {
-                    "title": "Älykäs käsittely",
-                    "desc": "Tunnistaa sanarajat automaattisesti välilyönneistä, viivoista ja alaviivoista."
+                "random": {
+                    "title": "Satunnaisesti vuorotellen",
+                    "desc": "Käyttää älykästä algoritmia tasapainoisen mutta arvaamattoman isojen kirjainten luomiseen."
                 },
                 "free": {
                     "title": "Täysin ilmainen",
@@ -2024,49 +2324,50 @@
             },
             "uses_title": "Milloin käyttää Studly Casea",
             "uses": {
-                "laravel": {
-                    "title": "Laravel-kehitys",
-                    "desc": "Standardi tapa nimetä Controllerit, Moduulit ja Modelit Laravelissa."
+                "social": {
+                    "title": "Sosiaalinen media",
+                    "desc": "Luo huomiota herättäviä viestejä ja kommentteja Twitterissä, Instagramissa ja Facebookissa"
                 },
-                "interfaces": {
-                    "title": "Rajapinnat (Interfaces)",
-                    "desc": "Käytetään monissa kielissä määrittelemään rajapintojen nimet."
+                "msg": {
+                    "title": "Viestit",
+                    "desc": "Lisää leikkisää muotoilua Discordiin, Slackiin ja tekstiviesteihin"
                 },
-                "namespaces": {
-                    "title": "Nimiavaruudet (Namespaces)",
-                    "desc": "Käytetään PHP:ssä ja C#:ssa loogisten ryhmien nimeämiseen."
+                "gaming": {
+                    "title": "Pelaaminen",
+                    "desc": "Luo ainutlaatuisia käyttäjänimiä ja pelin sisäisiä viestejä"
                 },
-                "components": {
-                    "title": "UI-komponentit",
-                    "desc": "Standardi nimeämiskäytäntö Vue- ja React-komponenteille."
+                "creative": {
+                    "title": "Luova sisältö",
+                    "desc": "Lisää tyyliä blogikirjoituksiin ja luovaan kirjoittamiseen"
                 },
-                "types": {
-                    "title": "Tietotyypit",
-                    "desc": "Selkeä tapa nimetä mukautetut tyypit ja oliot."
+                "memes": {
+                    "title": "Meemit",
+                    "desc": "Muotoile meemiteksti ja sarkastiset kommentit"
                 },
-                "modeling": {
-                    "title": "Arkkitehtuuri",
-                    "desc": "Luotettava tapa ylläpitää koodin luettavuutta suurissa projekteissa."
+                "fun": {
+                    "title": "Hauskoja projekteja",
+                    "desc": "Lisää persoonallisuutta henkilökohtaisiin projekteihin ja luovaan työhön"
                 }
             },
-            "how_title": "Miten se toimii",
-            "how_steps": {
-                "1": "Työkalu pilkkoo tekstin sanoiksi erottimien perusteella.",
-                "2": "Jokaisen sanan ensimmäinen kirjain muutetaan isoksi.",
-                "3": "Vakioerottimet (kuten välit ja alaviivat) poistetaan.",
-                "4": "Sanat liitetään yhteen muodostaen yhtenäisen koodinimen.",
-                "5": ""
+            "how_to": {
+                "title": "Kuinka käyttää",
+                "step1": "Kirjoita teksti",
+                "step1_desc": "Kirjoita teksti, jonka haluat muuntaa",
+                "step2": "Napsauta Muunna",
+                "step2_desc": "Paina \"Muunna StUdLy CaSe\"",
+                "step3": "Tarkista tulos",
+                "step3_desc": "Tarkista studly-tapauksen tulos",
+                "step4": "Kopioi tulos",
+                "step4_desc": "Napsauta \"Kopioi\" -painiketta",
+                "step5": "Käytä missä tahansa",
+                "step5_desc": "Liitä sosiaalisessa mediassa tai viesteihin"
             },
             "examples_title": "Esimerkkejä",
             "examples": {
-                "user": "profiilin muokkaus",
-                "user_val": "ProfiilinMuokkaus",
-                "func": "hae_kayttajan_tiedot",
-                "func_val": "HaeKayttajanTiedot",
-                "comp": "valikon painike",
-                "comp_val": "ValikonPainike",
-                "db": "kayttaja-asetukset",
-                "db_val": "KayttajaAsetukset"
+                "social": "Sosiaalinen media:",
+                "msg": "Viestit:",
+                "creative": "Luova teksti:",
+                "fun": "Hauska muotoilu:"
             },
             "faq_title": "Usein kysytyt kysymykset",
             "faq": {
@@ -2098,9 +2399,9 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_celsius": "Celsius (°C)",
-            "unit_fahrenheit": "Fahrenheit (°F)",
-            "unit_kelvin": "Kelvin (K)",
+            "unit_c": "Celsius (°C)",
+            "unit_f": "Fahrenheit (°F)",
+            "unit_k": "Kelvin (K)",
             "to_label": "Mihin"
         },
         "content": {
@@ -2120,6 +2421,7 @@
             "usage_4": "<strong>Tekniikka:</strong> Laitteiden lämpötilavaatimusten tarkistaminen",
             "usage_5": "<strong>Terveys:</strong> Ruumiinlämmön muuntaminen eri asteikkojen välillä",
             "usage_6": "<strong>Ilmasto:</strong> Historiallisten lämpötilatietojen analysointi",
+            "formula_title": "Nopeat muunnoskaavat",
             "faq_title": "Usein kysytyt kysymykset",
             "faq_q1": "Miten muunnan celsiuksen fahrenheitiksi?",
             "faq_a1": "Kerro celsius-arvo luvulla 1,8 (tai 9/5) ja lisää tulokseen 32. Esimerkiksi 20 °C × 1,8 + 32 = 68 °F.",
@@ -2139,32 +2441,38 @@
             "subtitle": "Muunna merkkijonot nolliksi ja ykkösiksi välittömästi."
         },
         "editor": {
+            "btn_convert": "Muunna binaariksi",
+            "btn_copy": "Kopioi leikepöydälle",
+            "btn_download": "Lataa",
+            "btn_example": "Esimerkki",
+            "btn_clear": "Tyhjennä",
             "label_input": "Syötä teksti",
             "ph_input": "Kirjoita tai liitä tekstisi tähän...",
-            "btn_convert": "Muunna binaariksi",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi leikepöydälle",
             "label_output": "Binaaritulos",
-            "ph_output": "Binaarikoodi ilmestyy tähän (erotettu välilyönneillä)...",
-            "btn_to_text": "Muunna takaisin tekstiksi"
+            "ph_output": "Binaarikoodi ilmestyy tähän (erotettu välilyönneillä)..."
         },
         "content": {
-            "hero_title": "Tekstistä binaarikoodiksi",
-            "hero_subtitle": "Tiedonsiirron ja digitaalisen maailman perusta.",
             "p1": "Tekstistä binaariksi -muuntimemme on monipuolinen työkalu, jonka avulla voit helposti nähdä minkä tahansa tekstin digitaalisen esitysmuodon. Olitpa sitten opiskelija, koodaaja tai utelias harrastaja, tämä kääntäjä tarjoaa tarkan ja nopean tavan kommunikoida nollilla ja ykkösillä.",
-            "features_title": "Tärkeimmät ominaisuudet",
             "features": {
+                "accurate": {
+                    "title": "Tarkka muunnos",
+                    "desc": "Tarkka tekstin käännös binäärimuotoon"
+                },
                 "instant": {
                     "title": "Välitön käännös",
                     "desc": "Muunna molempiin suuntiin reaaliajassa ilman viivettä."
                 },
-                "format": {
-                    "title": "Selkeä muotoilu",
-                    "desc": "Tulos on jaettu tavuihin välilyönneillä luettavuuden parantamiseksi."
+                "download": {
+                    "title": "Lataa tuki",
+                    "desc": "Lataa binäärituloste tekstitiedostona"
                 },
-                "security": {
-                    "title": "Yksityisyys",
-                    "desc": "Tietosi käsitellään vain selaimessasi – emme tallenna viestejäsi."
+                "copy": {
+                    "title": "Kopioi leikepöydälle",
+                    "desc": "Kopio yhdellä napsautuksella helppoa jakamista varten"
+                },
+                "utf8": {
+                    "title": "UTF-8 tuki",
+                    "desc": "Tukee kaikkia UTF-8-merkkejä"
                 },
                 "free": {
                     "title": "100 % ilmainen",
@@ -2177,37 +2485,33 @@
                     "title": "Tietotekniikan opetus",
                     "desc": "Ymmärrä, kuinka tietokoneet oikeasti 'lukevat' tietoa."
                 },
-                "secret": {
-                    "title": "Salaiset viestit",
-                    "desc": "Hauska tapa lähettää koodattuja viestejä ystäville."
+                "prog": {
+                    "title": "Ohjelmointi",
+                    "desc": "Ymmärrä merkkikoodaus ja binääritietojen esittäminen."
                 },
-                "dev": {
-                    "title": "Kehitystyö",
-                    "desc": "Hyödyllinen vianetsinnässä ja bittitason operaatioiden tarkistamisessa."
+                "enc": {
+                    "title": "Koodaus",
+                    "desc": "Muunna viestit binäärimuotoon koodausharjoituksia varten."
                 },
-                "design": {
-                    "title": "Digitaalinen taide",
-                    "desc": "Käytä binaarikuoseja graafisessa suunnittelussa ja kooditeemoissa."
+                "learn": {
+                    "title": "Oppiminen",
+                    "desc": "Tutki binäärilukujärjestelmää ja ASCII-koodausta."
                 }
             },
-            "how_title": "Toimintaohjeet",
-            "how_steps": {
-                "1": "Kirjoita tekstisi yläkenttään.",
-                "2": "Kääntäjä muuttaa jokaisen merkin vastaavaksi 8-bittiseksi tavuksi.",
-                "3": "Voit myös liittää binaarikoodia ja kääntää sen takaisin lukeaksesi viestin.",
-                "4": "Kopioi lopputulos ja käytä sitä projektissasi.",
-                "5": ""
+            "works": {
+                "title": "Kuinka binäärinen koodaus toimii",
+                "desc": "Jokainen merkki muunnetaan ASCII- tai Unicode-arvokseen ja esitetään sitten 8-bittisenä binaarilukuna. Esimerkiksi kirjaimella \"A\" on ASCII-arvo 65, joka on 01000001 binäärimuodossa."
             },
-            "examples_title": "Esimerkkejä",
-            "examples": {
-                "text": "Teksti 'ABC'",
-                "text_val": "01000001 01000010 01000101",
-                "hello": "Sana 'Hei'",
-                "hello_val": "01001000 01100101 01101001",
-                "number": "Luku '123'",
-                "number_val": "00110001 00110010 00110011",
-                "char": "Merkki '!'",
-                "char_val": "00100001"
+            "how_to": {
+                "title": "Kuinka käyttää teksti-binaarimuunninta",
+                "step1": "Syötä teksti",
+                "step1_desc": "Kirjoita tai liitä teksti vasemmalle syöttöalueelle.",
+                "step2": "Muuntaa",
+                "step2_desc": "Työkalu muuttaa välittömästi jokaisen merkin sen 8-bittiseksi binäärisekvenssiksi.",
+                "step3": "Tulos",
+                "step3_desc": "Katso tulosruudussa olevaa binaarimerkkiä välilyönneillä erotettuna luettavuuden vuoksi.",
+                "step4": "Viedä",
+                "step4_desc": "Kopioi binäärikoodi leikepöydällesi tai lataa se tekstitiedostona."
             },
             "faq_title": "Usein kysytyt kysymykset",
             "faq": {
@@ -2216,18 +2520,17 @@
                 "q2": "Tukeeko työkalu ääkkösiä?",
                 "a2": "Kyllä, työkalu tukee täysin suomalaisia merkkejä (ä, ö, å) ja muita erikoismerkkejä.",
                 "q3": "Onko tulos aina jaettu 8 bitin ryhmiin?",
-                "a3": "Kyllä, jokainen merkki vastaa yhtä 8 bitin ryhmää, mikä on standardi tiedon esitysmuoto.",
-                "q4": "Miksi binaarikoodi on niin pitkää?",
-                "a4": "Koska jokainen yksittäinen merkki vaatii kahdeksan numeroa (0 tai 1) esittämiseen, teksti muuttuu nopeasti pitkäksi numeroliitokseksi."
+                "a3": "Kyllä, jokainen merkki vastaa yhtä 8 bitin ryhmää, mikä on standardi tiedon esitysmuoto."
             }
         },
         "js": {
             "error_empty": "Syötä tekstiä tai binaaria muunnettavaksi",
-            "success_binary": "✓ Muunnettu binaariksi onnistuneesti!",
-            "success_text": "✓ Muunnettu tekstiksi onnistuneesti!",
-            "error_invalid": "Virheellinen binaarikoodi havaittu!",
+            "success_convert": "✓ Teksti muutettu binäärimuotoon onnistuneesti",
+            "error_convert": "Virhe tekstin muuntamisessa:",
             "error_no_copy": "Ei mitään kopioitavaa!",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
+            "success_copy": "✓ Kopioitu leikepöydälle!",
+            "error_no_download": "Ei ladattavaa binaarilähtöä",
+            "success_download": "✓ Lataus aloitettu"
         }
     },
     "torque-converter": {
@@ -2239,10 +2542,10 @@
         },
         "form": {
             "from_label": "Mistä",
-            "unit_nm": "Newtonmetri (Nm)",
-            "unit_lb_ft": "Paunajalka (lb-ft)",
-            "unit_lb_in": "Paunatuuma (lb-in)",
-            "unit_kg_m": "Kilogrammametri (kg-m)",
+            "unit_Nm": "Newtonmetri (N·m)",
+            "unit_lbfft": "Pound-force jalka (lbf·ft)",
+            "unit_lbfin": "Pound-force tuumaa (lbf·in)",
+            "unit_kgfm": "Kilogramma-voimamittari (kgf·m)",
             "to_label": "Mihin"
         },
         "content": {
@@ -2285,12 +2588,12 @@
             "optgroup_metric": "Metrijärjestelmä",
             "unit_ml": "Millilitra (ml)",
             "unit_l": "Litra (l)",
-            "unit_m3": "Kuutiometri (m³)",
-            "optgroup_imperial": "Brittiläinen järjestelmä",
-            "unit_fl_oz": "Nesteunssi (fl oz)",
-            "unit_pt": "Pintti (pt)",
-            "unit_qt": "Neljännesgallona (qt)",
+            "optgroup_us": "Yhdysvaltain tapana",
             "unit_gal": "Gallona (gal)",
+            "unit_qt": "Neljännesgallona (qt)",
+            "unit_pt": "Pintti (pt)",
+            "unit_cup": "Kuppi",
+            "unit_fl_oz": "Nesteunssi (fl oz)",
             "to_label": "Mihin"
         },
         "content": {
@@ -2338,7 +2641,7 @@
             "optgroup_imperial": "Brittiläinen järjestelmä",
             "unit_oz": "Unssi (oz)",
             "unit_lb": "Pauna (lb)",
-            "unit_st": "Stone (st)",
+            "unit_st": "Kivi (st)",
             "to_label": "Mihin"
         },
         "content": {
@@ -2367,841 +2670,6 @@
             "faq_a3": "Yksi stone (st) on tarkalleen 14 paunaa, mikä on noin 6,35 kilogrammaa.",
             "faq_q4": "Mitä eroa on massalla ja painolla?",
             "faq_a4": "Massa on aineen määrä ja pysyy samana kaikkialla. Paino on voima, jolla painovoima vetää massaa puoleensa; se voi vaihdella esimerkiksi kuussa verrattuna maahan."
-        }
-    },
-    "hex-binary-converter": {
-        "meta": {
-            "title": "Heksadesimaali-binaarimuunnin | Base-16:sta base-2:een muunnos",
-            "description": "Muunna heksadesimaali binaariksi ja binaari heksaksi heti. Ilmainen verkkotyökalu vianetsintään, koodaukseen ja tietojen analysointiin.",
-            "h1": "Heksadesimaali ↔ Binaari-muunnin",
-            "subtitle": "Lopullinen työkalu nopeaan ja tarkkaan datan muuntamiseen."
-        },
-        "editor": {
-            "to_binary": "Binaariksi",
-            "to_hex": "Heksadesimaaliksi",
-            "label_hex": "Heksadesimaaliluku",
-            "ph_hex": "Syötä heksadesimaaliluku (esim. FF)...",
-            "label_result_binary": "Binaarilähtö",
-            "ph_output": "Tulos ilmestyy tähän...",
-            "btn_convert_binary": "Muunna binaariksi",
-            "btn_clear": "Tyhjennä kaikki",
-            "btn_copy": "Kopioi tulos",
-            "label_binary": "Binaariluku",
-            "label_result_hex": "Heksadesimaalilähtö",
-            "btn_convert_hex": "Muunna heksaksi",
-            "error_empty": "Syötä arvo muunnettavaksi",
-            "error_invalid_hex": "Virheellinen heksadesimaaliluku. Käytä numeroita 0-9 ja kirjaimia A-F.",
-            "success_binary": "✓ Muunnettu binaariksi onnistuneesti!",
-            "error_invalid_binary": "Virheellinen binaariluku. Käytä vain numeroita 0 ja 1.",
-            "success_hex": "✓ Muunnettu heksadesimaaliksi onnistuneesti!",
-            "error_general": "Tapahtui virhe: ",
-            "error_no_copy": "Ei mitään kopioitavaa! Muunna arvo ensin.",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        },
-        "content": {
-            "p1": "Heksadesimaali-binaarimuuntimemme on välttämätön työkalu jokaiselle, joka työskentelee alhaisen tason tietojenkäsittelyn parissa. Binaari (kanta-2) on tietokoneiden kieli, mutta heksadesimaali (kanta-16) on se, miten ihmiset usein lukevat sitä. Yksi heksanumero vastaa tarkalleen neljää binaaribittiä (nibble), mikä tekee näistä kahdesta järjestyksestä täydellisen parin datan visualisointiin ja manipulointiin.",
-            "format_title": "Miksi käyttää heksadesimaalia binaarin sijaan?",
-            "format_desc": "Pitkien nolla- ja ykkössarjojen lukeminen on virhealtista ja hidasta. Heksadesimaali tiivistää tiedon: esimerkiksi 8-bittinen binaarijonon 11111111 on vain FF heksana. Tämä järjestelmä on standardi värikoodeille (kuten CSS:ssä), muistiosoitteille ja verkkoanalytiikalle.",
-            "features_title": "Miksi valita muuntimemme?",
-            "uses_title": "Käyttötapaukset",
-            "steps_title": "Näin se toimii",
-            "examples_title": "Klassisia esimerkkejä",
-            "faq_title": "Usein kysytyt kysymykset",
-            "features": {
-                "fast": {
-                    "title": "Välitön nopeus",
-                    "desc": "Matemaattiset funktiot suoritetaan heti, kun painat nappia."
-                },
-                "client": {
-                    "title": "Turvallinen käsittely",
-                    "desc": "Kaikki tapahtuu selaimessasi. Emme näe koodiasi, emmekä tallenna sitä."
-                },
-                "bi": {
-                    "title": "Kaksisuuntainen",
-                    "desc": "Muunna molempiin suuntiin helposti samalla helpolla käyttöliittymällä."
-                },
-                "free": {
-                    "title": "Aina ilmainen",
-                    "desc": "Ei rekisteröitymistä, ei rajoituksia, ei mainoksia keskeyttämässä työtäsi."
-                }
-            },
-            "uses": {
-                "colors": {
-                    "title": "Värikoodit",
-                    "desc": "Muunna verkkosuunnittelun heksavärit binaarimuotoon vianetsintää varten."
-                },
-                "asm": {
-                    "title": "Assembly-koodaus",
-                    "desc": "Käännä ohjeet ja muistiosoitteet suoraan binäärimuotoon."
-                },
-                "net": {
-                    "title": "Verkkoanalyysi",
-                    "desc": "Lue pakettiotsikoita ja MAC-osoitteita niiden raakamuodossa."
-                },
-                "edu": {
-                    "title": "Oppiminen",
-                    "desc": "Ymmärrä neljän bitin ryhmittely (nibble) käytännön esimerkkien avulla."
-                }
-            },
-            "steps": {
-                "1": "Valitse muunnostila.",
-                "2": "Liitä tai kirjoita merkit tekstikenttään.",
-                "3": "Paina muunnospainiketta.",
-                "4": "Kopioi tulos projektiasi varten."
-            },
-            "examples": {
-                "nibble": "Yksi heksanumero F → 1111",
-                "byte": "Täysi tavu FF → 1111 1111",
-                "zero": "Nolla 00 → 0000 0000",
-                "mix": "Heksa A5 → 1010 0101"
-            },
-            "faq": {
-                "q1": "Onko heksadesimaali nopeampi kuin binaari?",
-                "a1": "Nibble on neljä bittiä, mikä on tasan puolet tavusta (byte) ja vastaa yhtä heksanumeroa.",
-                "q2": "Mitä nibble tarkoittaa?",
-                "q3": "Tukeeko tämä suuria tiedostoja?",
-                "a3": "Tämä työkalu on tarkoitettu merkkijonomuunnoksiin; erittäin pitkät jonot onnistuvat ilman ongelmia.",
-                "q4": "Mitä jos heksakoodini sisältää kirjaimia?",
-                "a4": "Se on normaalia! Heksadesimaali käyttää kirjaimia A-F edustamaan lukuja 10–15."
-            }
-        }
-    },
-    "hex-decimal-converter": {
-        "meta": {
-            "title": "Heksadesimaali-kymmenjärjestelmämuunnin | Base-16:sta base-10:een muunnos",
-            "description": "Laske heksadesimaalien kymmenjärjestelmän arvo heti. Nopea ja tarkka online-muunnin luvuille 0-9 ja A-F.",
-            "h1": "Heksadesimaali ↔ Kymmenjärjestelmä",
-            "subtitle": "Silta tietokonekoodin ja inhimillisen matematiikan välillä."
-        },
-        "editor": {
-            "to_decimal": "Kymmenjärjestelmään",
-            "to_hex": "Heksadesimaaliksi",
-            "label_hex": "Heksadesimaaliluku",
-            "ph_hex": "Syötä heksadesimaali (esim. 1A2B)...",
-            "label_result_decimal": "Kymmenjärjestelmän lähtö",
-            "ph_output": "Tulos ilmestyy tähän...",
-            "btn_convert_decimal": "Muunna kymmenjärjestelmään",
-            "btn_clear": "Tyhjennä kaikki",
-            "btn_copy": "Kopioi tulos",
-            "label_decimal": "Kymmenjärjestelmän luku",
-            "label_result_hex": "Heksadesimaalilähtö",
-            "btn_convert_hex": "Muunna heksaksi",
-            "error_empty": "Syötä arvo muunnettavaksi",
-            "error_invalid_hex": "Virheellinen heksadesimaaliluku. Käytä numeroita 0-9 ja kirjaimia A-F.",
-            "success_decimal": "✓ Muunnettu kymmenjärjestelmään onnistuneesti!",
-            "error_invalid_decimal": "Virheellinen kymmenjärjestelmän luku. Käytä numeroita 0-9.",
-            "success_hex": "✓ Muunnettu heksadesimaaliksi onnistuneesti!",
-            "error_general": "Tapahtui virhe: ",
-            "error_no_copy": "Ei mitään kopioitavaa! Muunna arvo ensin.",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        },
-        "content": {
-            "p1": "Heksadesimaali-kymmenjärjestelmämuuntimemme on suunniteltu tarjoamaan nopein reitti teknisen koodin ja tavallisten lukujen välillä. Heksadesimaali on oletusarvoinen tapa ilmaista binääritiedon tiivistettyä muotoa, mutta usein meidän on tiedettävä luvun todellinen matemaattinen arvo kymmenjärjestelmässä.",
-            "format_title": "Miten muunnos lasketaan?",
-            "format_desc": "Heksadesimaaliluvun jokainen paikka on luvun 16 potenssi. Esimerkiksi heksaluku '1F' tarkoittaa: (1 * 16^1) + (15 * 16^0), mikä tekee kymmenjärjestelmässä 31. Työkalumme tekee tämän monimutkaisen laskutoimituksen puolestasi sekunnin murto-osassa.",
-            "features_title": "Työkalun parhaat puolet",
-            "uses_title": "Käyttötapaukset",
-            "steps_title": "Pika-aloitusopas",
-            "examples_title": "Hyödyllisiä esimerkkejä",
-            "faq_title": "Matemaattiset kysymykset",
-            "features": {
-                "fast": {
-                    "title": "Huippunopeus",
-                    "desc": "Ei latausaikoja, tulokset näkyvät heti."
-                },
-                "zero": {
-                    "title": "Nolltoleranssi virheille",
-                    "desc": "Käytämme tarkkoja natiiveja matemaattisia funktioita muunnoissa."
-                },
-                "secure": {
-                    "title": "Täysin anonyymi",
-                    "desc": "Mitään syöttämääsi tietoa ei lähetetä selaimen ulkopuolelle."
-                },
-                "ui": {
-                    "title": "Intuitiivinen käyttö",
-                    "desc": "Selkeät painikkeet ja kentät tekevät käytöstä vaivatonta kaikille."
-                }
-            },
-            "uses": {
-                "color": {
-                    "title": "Värien analysointi",
-                    "desc": "Selvitä RGB-arvot heksadesimaalivärikoodeista."
-                },
-                "storage": {
-                    "title": "Tallennustila",
-                    "desc": "Laske muistikapasiteetit ja muistiosoitteet helpommin."
-                },
-                "security": {
-                    "title": "Turvallisuus",
-                    "desc": "Analysoi avaimia ja varmenteita niiden raakamuodossa."
-                },
-                "logic": {
-                    "title": "Logiikkasuunnittelu",
-                    "desc": "Varmista bittioperaatioiden tulokset inhimillisessä muodossa."
-                }
-            },
-            "steps": {
-                "1": "Varmista, että olet valinnut oikean muunnosmoodin.",
-                "2": "Syötä numerosi syötekenttään.",
-                "3": "Erikoisalueemme laskee tuloksen automaattisesti.",
-                "4": "Kopioi tulos klikkaamalla Kopioi-nappia."
-            },
-            "examples": {
-                "ff": "Heksa FF → Desimaali 255",
-                "100": "Heksa 100 → Desimaali 256",
-                "abc": "Heksa ABC → Desimaali 2748",
-                "dec": "Desimaali 1000 → Heksa 3E8"
-            },
-            "faq": {
-                "q1": "Onko heksadesimaali aina pitempi kuin desimaali?",
-                "a1": "Voit muuntaa massiivisia lukuja, kiitos nykyaikaisen JavaScript-tuen.",
-                "q2": "Mikä on suurin luku, jonka voin muuntaa?",
-                "q3": "Mitä 'base-16' tarkoittaa?",
-                "a3": "Se tarkoittaa järjestelmää, jossa on 16 eri numerovaihtoehtoa ennen kuin siirrytään seuraavaan kymmenykseen.",
-                "q4": "Toimiiko tämä ilman internetiä?",
-                "a4": "Kyllä, kun sivu on kerran ladattu, voit jatkaa käyttöä ilman yhteyttä."
-            }
-        }
-    },
-    "iupac-nomenclature-converter": {
-        "meta": {
-            "title": "IUPAC-nimeämismuunnin | Kemiallisten nimien ja kaavojen muunnin",
-            "description": "Muunna helposti kemiallisia nimiä IUPAC-standardin mukaiseksi ja päinvastoin. Ammattimainen työkalu kemisteille ja opiskelijoille.",
-            "h1": "IUPAC-nimeämismuunnin",
-            "subtitle": "Käännä kemialliset rakenteet standardoiduiksi nimiksi välittömästi."
-        },
-        "editor": {
-            "label_input": "Syötä kemiallinen nimi tai kaava",
-            "ph_input": "Esim. 2-metyylipropaani tai C4H10...",
-            "btn_convert": "Muunna / Analysoi",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "label_output": "IUPAC-tulos / Analyysi",
-            "ph_output": "Standardisoitu nimi tai rakenneanalyysi ilmestyy tähän..."
-        },
-        "content": {
-            "hero_title": "IUPAC-nimistö",
-            "hero_subtitle": "Maailmanlaajuinen standardi kemiallisten yhdisteiden tarkkaan nimeämiseen.",
-            "p1": "IUPAC-nimeämismuuntimemme auttaa sinua navigoimaan orgaanisen ja epäorgaanisen kemian monimutkaisessa maailmassa. IUPAC (International Union of Pure and Applied Chemistry) on kehittänyt säännöt, joiden avulla jokainen kemiallinen yhdiste voidaan nimetä yksiselitteisesti sen rakenteen perusteella.",
-            "features_title": "Keskeiset ominaisuudet",
-            "features": {
-                "standard": {
-                    "title": "Virallinen standardi",
-                    "desc": "Noudattaa viimeisimpiä IUPAC-suosituksia yhdisteiden nimeämisessä."
-                },
-                "instant": {
-                    "title": "Nopea analyysi",
-                    "desc": "Tekoälyavusteinen tunnistus yleisille orgaanisille rakenteille ja ryhmille."
-                },
-                "education": {
-                    "title": "Oppimistyökalu",
-                    "desc": "Auttaa opiskelijoita ymmärtämään etuliitteiden, päätteiden ja numerointisääntöjen logiikkaa."
-                },
-                "safety": {
-                    "title": "Virheiden ehkäisy",
-                    "desc": "Vähentää epäselvyyksiä kemikaalien tunnistamisessa laboratorioympäristössä."
-                }
-            },
-            "uses_title": "Käyttökohteet",
-            "uses": {
-                "lab": {
-                    "title": "Laboratoriotyö",
-                    "desc": "Varmista oikeat nimet etiketöintiin ja raportointiin."
-                },
-                "study": {
-                    "title": "Opiskelu",
-                    "desc": "Tarkista kotitehtävät ja harjoittele nimeämissääntöjä."
-                },
-                "research": {
-                    "title": "Tutkimus",
-                    "desc": "Löydä standardinimiä julkaisuja ja patentteja varten."
-                },
-                "industry": {
-                    "title": "Teollisuus",
-                    "desc": "Standardisoi kemikaaliluettelot globaalin kaupan vaatimusten mukaisesti."
-                }
-            },
-            "how_title": "Miten IUPAC-nimeäminen toimii",
-            "how_steps": {
-                "1": "Tunnista pisin hiiliketju (pääketju).",
-                "2": "Numeroi ketju niin, että sivuryhmät saavat mahdollisimman pienet numerot.",
-                "3": "Nimeä sivuryhmät ja määritä niiden paikat.",
-                "4": "Yhdistä osat aakkosjärjestyksessä yhdeksi nimeksi.",
-                "5": ""
-            },
-            "faq_title": "Kysymyksiä ja vastauksia",
-            "faq": {
-                "q1": "Mikä on IUPAC?",
-                "a1": "IUPAC on kansainvälinen järjestö, joka asettaa standardit kemian nimeämiselle, symboleille ja mittauksille.",
-                "q2": "Miksi nimeäminen on tärkeää?",
-                "a2": "Ilman yhtenäistä standardia sama yhdiste voisi saada satoja eri nimiä, mikä aiheuttaisi vaaratilanteita ja sekaannuksia.",
-                "q3": "Tukeeko työkalu monimutkaisia rakenteita?",
-                "a3": "Kyllä, se tunnistaa useimmat yleiset funktionaaliset ryhmät kuteen alkoholit, ketonit ja hapot.",
-                "q4": "Onko käytössä suomenkielinen termistö?",
-                "a4": "Työkalu noudattaa kansainvälisiä sääntöjä, mutta termit on sovitettu suomalaiseen kemian sanastoon."
-            }
-        },
-        "js": {
-            "error_empty": "Syötä nimi tai kaava analysoitavaksi",
-            "success_convert": "✓ Analyysi suoritettu onnistuneesti!",
-            "error_no_copy": "Ei mitään kopioitavaa!",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        }
-    },
-    "morse-code-converter": {
-        "meta": {
-            "title": "Morseaakkosmuunnin | Tekstistä morseksi ja morse tekstiksi",
-            "description": "Muunna teksti morse-aakkosiksi ja päinvastoin heti. Ilmainen online-työkalu koodaukseen, dekoodaukseen ja morseaakkosten oppimiseen.",
-            "h1": "Morseaakkosmuunnin",
-            "subtitle": "Käännä vaivattomasti tekstin ja morse-aakkosten välillä."
-        },
-        "editor": {
-            "to_morse": "Morseksi",
-            "to_text": "Tekstiksi",
-            "label_text": "Syötä teksti",
-            "ph_text": "Kirjoita tekstisi tähän (esim. HEI)...",
-            "btn_convert_morse": "Muunna morseksi",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "label_morse": "Syötä morse-koodi",
-            "ph_morse": "Syötä pisteet ja viivat (esim. .... . ..)...",
-            "label_output_morse": "Morse-tulos",
-            "label_output_text": "Tekstitulos",
-            "btn_convert_text": "Muunna tekstiksi"
-        },
-        "content": {
-            "title": "Morseaakkosmuunnin: Tekstistä morseksi ja takaisin",
-            "subtitle": "Lopullinen työkalu klassiseen viestintään ja koodien purkamiseen.",
-            "p1": "Morseaakkosmuuntimemme on monipuolinen työkalu, joka herättää henkiin yhden vanhimmista sähköisen viestinnän muodoista. Olitpa sitten harrastaja, opiskelija tai tarvitset vain dekoodata morse-viestin, työkalumme tarjoaa välitöntä ja tarkkaa muunnosta suoraan selaimessasi. Se tukee kansainvälisiä morseaakkosia, mukaan lukien numerot ja yleiset välimerkit.",
-            "what_title": "Mitä ovat morseaakkoset?",
-            "what_desc": "Morseaakkoset ovat menetelmä, jolla merkit esitetään sarjana pisteitä (lyhyt signaali) ja viivoja (pitkä signaali). Samuel Morse ja Alfred Vail kehittivät ne 1830-luvulla lennätinkäyttöön. Jokainen kirjain ja numero on saanut oman uniikin merkkiyhdistelmän. Vaikka digitaalinen viestintä on korvannut morsen arkikäytössä, se on edelleen tärkeä taito radioamatööreille ja hätäviestinnässä.",
-            "features": {
-                "instant": {
-                    "title": "Välitön käännös",
-                    "desc": "Muunna tekstisi morseksi tai morse tekstiksi yhdellä klikkauksella."
-                },
-                "standard": {
-                    "title": "Kansainvälinen standardi",
-                    "desc": "Käyttää virallisia kansainvälisiä morseaakkosia parhaan yhteensopivuuden takaamiseksi."
-                },
-                "privacy": {
-                    "title": "Tietoturva",
-                    "desc": "Kaikki prosessit tapahtuvat paikallisesti selaimessasi; viestejäsi ei koskaan lähetetä palvelimillemme."
-                }
-            },
-            "uses": {
-                "title": "Yleiset käyttötapaukset",
-                "education": {
-                    "title": "Koulutus ja harrastukset",
-                    "desc": "Opi morseaakkoset interaktiivisesti muuntamalla omia viestejäsi."
-                },
-                "scouts": {
-                    "title": "Partio ja ulkoilu",
-                    "desc": "Hyödyllinen työkalu partiolaisille ja ulkoilun harrastajille viestinnän harjoitteluun."
-                },
-                "ham": {
-                    "title": "Radioamatöörit",
-                    "desc": "Nopea apu viestien tarkistamiseen kokeneille ja aloittelevillekin amatööreille."
-                },
-                "curiosity": {
-                    "title": "Uteliaisuus",
-                    "desc": "Katso miltä nimesi tai salainen viestisi näyttää pisteinä ja viivoina."
-                }
-            },
-            "examples": {
-                "title": "Morse-klassikot",
-                "sos": "SOS (Hätämerkki)",
-                "sos_val": "... --- ...",
-                "hello": "HEI",
-                "hello_val": ".... . ..",
-                "love": "RAKKAUS",
-                "love_val": ".-. .- -.- -.- .- ..- ...",
-                "numbers": "Numerot 1-3",
-                "numbers_val": ".---- ..--- ...--"
-            },
-            "faq": {
-                "title": "Usein kysytyt kysymykset",
-                "q1": "Onko morseaakkosmuunnin ilmainen?",
-                "a1": "Kyllä, se on täysin ilmainen ja käytettävissä ilman rekisteröitymistä.",
-                "q2": "Miten välilyönnit merkitään morsessa?",
-                "a2": "Perinteisesti sanojen väliin jätetään pitempi tauko. Työkalussamme käytämme usein vinoviivaa (/) tai lisävälilyöntiä selkeyden vuoksi.",
-                "q3": "Tukeeko se ääkkösiä (ä, ö)?",
-                "a3": "Kyllä, työkalumme on ohjelmoitu tunnistamaan suomalaiset erikoismerkit niiden vastaavilla morse-koodeilla.",
-                "q4": "Mitä SOS tarkoittaa?",
-                "a4": "Se on kansainvälinen hätämerkki, joka valittiin, koska se on helppo tunnistaa ja lähettää morseaakkosilla."
-            }
-        },
-        "js": {
-            "error_empty": "Syötä tietoja muunnettavaksi",
-            "success_morse": "✓ Muunnettu morseksi onnistuneesti!",
-            "success_text": "✓ Muunnettu tekstiksi onnistuneesti!",
-            "error_invalid_morse": "Tuntematon morse-merkki havaittu: ",
-            "error_general": "Virhe muunnoksen aikana: ",
-            "error_no_output": "Ei mitään kopioitavaa! Muunna jotain ensin.",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        }
-    },
-    "number-to-word-converter": {
-        "meta": {
-            "title": "Numerot sanoiksi -muunnin | Muunna numerot tekstiksi",
-            "description": "Muunna numerot tekstiksi heti. Täydellinen shekkien kirjoittamiseen, laskuihin ja oikean kirjoitusasun tarkistamiseen.",
-            "h1": "Numerot sanoiksi -muunnin",
-            "subtitle": "Muunna sekunneissa massiiviset numerot selkokielelle."
-        },
-        "editor": {
-            "label_input": "Syötä numero",
-            "ph_input": "Esim. 1234.56...",
-            "btn_convert": "Muunna sanoiksi",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "label_output": "Tulos sanoina",
-            "ph_output": "Numeron kirjoitusasu ilmestyy tähän..."
-        },
-        "content": {
-            "hero_title": "Numerot sanoiksi",
-            "hero_subtitle": "Poista epävarmuus numeroiden kirjoittamisessa.",
-            "p1": "Numerot sanoiksi -muuntimemme on hyödyllinen työkalu, joka muuttaa luvut välittömästi niiden kirjalliseen muotoon. Tämä on erityisen tärkeää virallisissa asiakirjoissa, kuten sopimuksissa, shekeissä ja laskuissa, joissa lukujen selkeys on ratkaisevaa.",
-            "features_title": "Ominaisuudet",
-            "features": {
-                "accurate": {
-                    "title": "Tarkka kielioppi",
-                    "desc": "Noudattaa oikeita kielellisiä sääntöjä lukujen kirjoittamisessa."
-                },
-                "large": {
-                    "title": "Suuret luvut",
-                    "desc": "Käsittelee helposti miljoonat, miljardit ja jopa biljoonat."
-                },
-                "decimal": {
-                    "title": "Desimaalituki",
-                    "desc": "Muuntaa myös desimaaliosat tarkasti tekstiksi."
-                },
-                "fast": {
-                    "title": "Välitön tulos",
-                    "desc": "Saat kirjoitetun muodon heti syötettyäsi numeron."
-                }
-            },
-            "uses_title": "Käyttökohteet",
-            "uses": {
-                "finance": {
-                    "title": "Rahoitus",
-                    "desc": "Shekkien ja muiden arvopaperien summien kirjoittaminen."
-                },
-                "legal": {
-                    "title": "Oikeudelliset asiakirjat",
-                    "desc": "Varmista, että sopimusten summat on kirjattu selkeästi myös tekstinä."
-                },
-                "education": {
-                    "title": "Opetus",
-                    "desc": "Auttaa lapsia ja kielenopiskelijoita oppimaan numeroiden kirjoittamista."
-                },
-                "billing": {
-                    "title": "Laskutus",
-                    "desc": "Lisää ammattimaisuutta laskuihin ilmoittamalla summa myös kirjallisesti."
-                }
-            },
-            "how_title": "Näin se toimii",
-            "how_steps": {
-                "1": "Syötä numero kenttään (voit käyttää pisteitä tai pilkkuja).",
-                "2": "Valitse muunnosasetukset tarvittaessa.",
-                "3": "Paina muunnospainiketta.",
-                "4": "Tulos kopioidaan automaattisesti tai voit kopioida sen manuaalisesti.",
-                "5": ""
-            },
-            "faq_title": "Kysymyksiä",
-            "faq": {
-                "q1": "Miten suuria lukuja työkalu tukee?",
-                "a1": "Työkalu tukee lukuja aina kymmeniin numeroihin asti täydellä tarkkuudella.",
-                "q2": "Tukeeko se eri kieliä?",
-                "a2": "Tällä sivulla keskitymme suomenkieliseen kirjoitusasuun.",
-                "q3": "Miten se käsittelee valuutat?",
-                "a3": "Voit lisätä valuutan nimen (kuten 'euroa') tuloksen perään tarvittaessa.",
-                "q4": "Onko tulos kieliopillisesti oikein?",
-                "a4": "Kyllä, työkalu noudattaa yleisiä sääntöjä luvun osien yhdistämisessä."
-            }
-        },
-        "js": {
-            "error_empty": "Syötä numero",
-            "success_convert": "✓ Muunnettu onnistuneesti!",
-            "error_no_copy": "Ei mitään kopioitavaa!",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        }
-    },
-    "octal-converter": {
-        "meta": {
-            "title": "Oktaalimuunnin | Muunna oktaaliluvut (kanta-8)",
-            "description": "Muunna oktaaliluvut desimaaleiksi, binaareiksi ja heksoiksi nopeasti. Ilmainen kanta-8-muunnin koodaajille ja opiskelijoille.",
-            "h1": "Oktaalimuunnin",
-            "subtitle": "Muunna luvut kanta-8-järjestelmän välillä välittömästi."
-        },
-        "editor": {
-            "to_decimal": "Desimaaliksi",
-            "to_binary": "Binaariksi",
-            "to_hex": "Heksaksi",
-            "label_octal": "Syötä oktaaliluku",
-            "ph_octal": "Esim. 17, 77, 123...",
-            "btn_convert": "Muunna",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "label_output": "Tulos",
-            "ph_output": "Muunnettu luku ilmestyy tähän..."
-        },
-        "content": {
-            "hero_title": "Oktaalijärjestelmä",
-            "hero_subtitle": "Tehokas kanta-8-lukujärjestelmän hallinta.",
-            "p1": "Oktaalimuuntimemme avulla voit käsitellä kanta-8-lukuja helposti. Oktaali on lukujärjestelmä, joka käyttää kahdeksaa eri numeroa (0-7). Vaikka se ei ole enää yhtä yleinen kuin heksadesimaali, sillä on edelleen tärkeä rooli tietyissä nimenomaan UNIX-pohjaisissa järjestelmissä ja tiedoston käyttöoikeuksien hallinnassa.",
-            "features_title": "Miksi käyttää tätä työkalua?",
-            "features": {
-                "multi": {
-                    "title": "Monipuoliset muunnot",
-                    "desc": "Muunna oktaalista kaikkiin yleisiin kantoihin (desimaali, binääri, heksa)."
-                },
-                "instant": {
-                    "title": "Salamannopea",
-                    "desc": "Ei odottelua – tulokset näkyvät heti syötön jälkeen."
-                },
-                "clean": {
-                    "title": "Selkeä UI",
-                    "desc": "Suunniteltu käyttäjäystävälliseksi ilman turhaa hienostelua."
-                }
-            },
-            "uses_title": "Oktaalijärjestelmän käyttö",
-            "uses": {
-                "unix": {
-                    "title": "UNIX-oikeudet",
-                    "desc": "Tiedostojen 'chmod'-oikeudet ilmaistaan usein kolmella oktaalimerkillä."
-                },
-                "legacy": {
-                    "title": "Vanhat järjestelmät",
-                    "desc": "Monet varhaiset suurtietokoneet käyttivät oktaalina ilmaistua 36-bittistä sanaa."
-                },
-                "coding": {
-                    "title": "Ohjelmointi",
-                    "desc": "Tietyt kielet sallivat oktaalien käytön merkkijonojen pakenemis- tai vakiomäärittelyissä."
-                }
-            },
-            "faq_title": "Tietoa oktaaleista",
-            "faq": {
-                "q1": "Mitä numeroita oktaalissa käytetään?",
-                "a1": "Vain numeroita 0, 1, 2, 3, 4, 5, 6 ja 7. Kahdeksan (8) ja yhdeksän (9) eivät kuulu tähän järjestelmään.",
-                "q2": "Mistä nimitys oktaali tulee?",
-                "a2": "Se on johdettu latinan sanasta 'octo', joka tarkoittaa kahdeksaa.",
-                "q3": "Onko se sama kuin heksadesimaali?",
-                "a3": "Ei. Heksadesimaali perustuu lukuun 16, oktaali lukuun 8.",
-                "q4": "Sopiiko tämä opiskeluun?",
-                "a4": "Kyllä! Se on loistava tapa tarkistaa tehtävät, kun opit eri lukujärjestelmiä."
-            }
-        },
-        "js": {
-            "error_empty": "Syötä oktaaliluku",
-            "success_convert": "✓ Muunnettu onnistuneesti!",
-            "error_no_copy": "Ei mitään kopioitavaa!",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        }
-    },
-    "roman-numeral-converter": {
-        "meta": {
-            "title": "Roomalaisten numeroiden muunnin | Roomalaiset - Desimaalit",
-            "description": "Muunna roomalaiset numerot arabialaisiksi numeroiksi ja päinvastoin heti. Ilmainen online-muunnin historian opiskeluun ja koodaukseen.",
-            "h1": "Roomalaisten numeroiden muunnin",
-            "subtitle": "Silta antiikin numeroiden ja modernin matematiikan välillä."
-        },
-        "editor": {
-            "to_arabic": "Arabialaisiksi (123)",
-            "to_roman": "Roomalaisiksi (IVX)",
-            "label_roman": "Syötä roomalainen numero",
-            "ph_roman": "Esim. XIV, MMXXIV...",
-            "btn_convert_arabic": "Muunna arabialaisiksi",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "label_arabic": "Syötä arabialainen numero",
-            "ph_arabic": "Esim. 14, 2024...",
-            "label_output_roman": "Tulos roomalaisena",
-            "label_output_arabic": "Tulos arabialaisena",
-            "btn_convert_roman": "Muunna roomalaisiksi"
-        },
-        "content": {
-            "title": "Roomalaisten numeroiden muunnin: Menneisyydestä nykyhetkeen",
-            "subtitle": "Ymmärrä ja käytä klassista nimeämisjärjestelmää vaivatta.",
-            "p1": "Roomalaisten numeroiden muuntimemme on täydellinen työkalu kaikille, jotka kohtaavat näitä historiallisia merkkejä. Roomalaiset numerot ovat edelleen käytössä kelloissa, kirjojen esipuheissa, elokuvien tekijänoikeusvuosissa ja monissa virallisissa yhteyksissä. Työkalumme avulla voit muuntaa minkä tahansa numeron kumpaan suuntaan tahansa sekunneissa.",
-            "what_title": "Miten roomalaiset numerot toimivat?",
-            "what_desc": "Roomalainen numerointijärjestelmä perustuu seitsemään perussymboliin: I (1), V (5), X (10), L (50), C (100), D (500) ja M (1000). Toisin kuin moderni järjestelmämme, se on luonteeltaan additiivinen (lukuja lasketaan yhteen) ja vähentävä (pienempi luku ennen isompaa tarkoittaa vähennystä, esim. IV = 4).",
-            "features": {
-                "instant": {
-                    "title": "Välitön käännös",
-                    "desc": "Muunna vuosiluvut ja numerot heti syötön jälkeen."
-                },
-                "accurate": {
-                    "title": "Virheetön validointi",
-                    "desc": "Tunnistaa virheelliset roomalaiset yhdistelmät ja korjaa ne."
-                },
-                "privacy": {
-                    "title": "Yksityisyys",
-                    "desc": "Käsittely tapahtuu omassa selaimessasi ilman palvelinyhteyttä."
-                }
-            },
-            "uses": {
-                "title": "Miksi niitä käytetään vielä?",
-                "history": {
-                    "title": "Historia ja taide",
-                    "desc": "Patsaiden, monumenttien ja historiallisen kirjallisuuden vuosiluvut."
-                },
-                "movies": {
-                    "title": "Elokuvat ja TV",
-                    "desc": "Tekijänoikeusvuodet ja jatko-osat (esim. Rocky IV)."
-                },
-                "clocks": {
-                    "title": "Kellot",
-                    "desc": "Perinteinen tyyli seinä- ja rannekelloissa."
-                },
-                "law": {
-                    "title": "Lait ja säädökset",
-                    "desc": "Lakipykälien ja lukujen jaottelu virallisissa papereissa."
-                }
-            },
-            "examples": {
-                "title": "Tärkeimmät luvut",
-                "year": "Vuosi 2024",
-                "year_val": "MMXXIV",
-                "half": "Luku 50",
-                "half_val": "L",
-                "century": "Luku 100",
-                "century_val": "C",
-                "nine": "Luku 9",
-                "nine_val": "IX"
-            },
-            "faq": {
-                "title": "Usein kysytyt kysymykset",
-                "q1": "Onko numeroa nolla olemassa roomalaisissa numeroissa?",
-                "a1": "Ei. Roomalaisessa järjestelmässä ei ollut symbolia tai käsitettä nollalle.",
-                "q2": "Miten kirjoitan luvun 4?",
-                "a2": "Nykyään se kirjoitetaan yleensä IV (5-1), vaikka historiallisesti on käytetty myös muotoa IIII.",
-                "q3": "Mikä on suurin luku jonka voi kirjoittaa?",
-                "a3": "Perinteisellä menetelmällä 3 999 (MMMCMXCIX), mutta erityismerkinnöillä (viiva päällä) voidaan mennä miljooniin.",
-                "q4": "Mikä on IV suomeksi?",
-                "a4": "Se vastaa lukua neljä (4)."
-            }
-        },
-        "js": {
-            "error_empty": "Syötä numero muunnettavaksi",
-            "success_arabic": "✓ Muunnettu arabialaisiksi onnistuneesti!",
-            "success_roman": "✓ Muunnettu roomalaisiksi onnistuneesti!",
-            "error_invalid_roman": "Virheellinen roomalainen numero havaittu",
-            "error_invalid_arabic": "Syötä positiivinen luku väliltä 1-3999",
-            "error_general": "Virhe muunnoksen aikana: ",
-            "error_no_output": "Ei mitään kopioitavaa! Muunna jotain ensin.",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        }
-    },
-    "train-case-converter": {
-        "meta": {
-            "title": "Ilmainen Train-Case-muunnin - Muunna teksti Train-Case-muotoon",
-            "description": "Muunna teksti Train-Case-muotoon HTTP-otsikoita ja nimeämistä varten ilmaisella verkkotyökalullamme.",
-            "h1": "Train-Case-muunnin",
-            "subtitle": "Muunna teksti Train-Case-muotoon HTTP-otsikoita varten"
-        },
-        "editor": {
-            "label_input": "Syötä teksti",
-            "ph_input": "hei maailma esimerkki",
-            "btn_convert": "Muunna Train-Caseksi",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "label_output": "Tulos (Train-Case)",
-            "ph_output": "Hei-Maailma-Esimerkki"
-        },
-        "content": {
-            "hero_title": "Train-Case-muunnin",
-            "hero_subtitle": "Lopullinen työkalu HTTP-headerien ja tiedostonimien ammattimaiseen nimeämiseen.",
-            "p1": "Muunna tekstisi Train-Case-muotoon ilmaisella verkkomuuntimellamme. Train-Case on nimeämiskäytäntö, jossa sanat kirjoitetaan isolla alkukirjaimella ja ne erotetaan yhdysmerkillä (-). Se on standardi tapa nimetä HTTP-headerit (esim. Content-Type).",
-            "features_title": "Ominaisuudet",
-            "features": {
-                "standard": {
-                    "title": "Standardinmukainen",
-                    "desc": "Noudattaa vakiintuneita nimeämistapoja HTTP-viestinnässä ja koodauksessa."
-                },
-                "instant": {
-                    "title": "Heti valmis",
-                    "desc": "Saat lopputuloksen välittömästi napin painalluksesta."
-                },
-                "client": {
-                    "title": "Yksityinen",
-                    "desc": "Tiedot eivät poistu selaimestasi – käsittely on 100 % paikallista."
-                },
-                "bulk": {
-                    "title": "Useita kerralla",
-                    "desc": "Voit syöttää useita rivejä ja muuntaa ne kaikki kerralla."
-                },
-                "smart": {
-                    "title": "Älykäs käsittely",
-                    "desc": "Huolehtii automaattisesti oikeista alkukirjaimista ja viivojen sijoittelusta."
-                },
-                "free": {
-                    "title": "Maksuton",
-                    "desc": "Tehokas koodaustyökalu kaikille kehittäjille."
-                }
-            },
-            "uses_title": "Milloin käyttää Train-Casea",
-            "uses": {
-                "headers": {
-                    "title": "HTTP-headerit",
-                    "desc": "Virallinen tapa nimetä otsikkotiedot (esim. X-Request-ID)."
-                },
-                "files": {
-                    "title": "Tiedostonimet",
-                    "desc": "Siisti ja ammattimainen tapa nimetä dokumentteja (esim. Raportti-Vuosi-2024.pdf)."
-                },
-                "config": {
-                    "title": "Konfiguraatiot",
-                    "desc": "Käytetään joissakin järjestelmissä asetusten selkeyttämiseen."
-                },
-                "titles": {
-                    "title": "Otsikot",
-                    "desc": "Sopii koodin sisällä oleviin luettaviin otsikoihin."
-                },
-                "formatting": {
-                    "title": "Tekstin muotoilu",
-                    "desc": "Auttaa vakioimaan tekstin ulkoasua koodiprojekteissa."
-                },
-                "api": {
-                    "title": "API-rajapinnat",
-                    "desc": "Hyödyllinen joissakin rajapinnoissa, joissa vaaditaan eksplisiittistä muotoilua."
-                }
-            },
-            "how_title": "Miten se toimii",
-            "how_steps": {
-                "1": "Työkalu analysoi tekstin ja etsii sanat.",
-                "2": "Jokaisen sanan ensimmäinen kirjain muutetaan isoksi aakkoseksi.",
-                "3": "Sanat yhdistetään yhdysmerkillä (-) toisiinsa.",
-                "4": "Loput merkit muutetaan pieniksi kirjaimiksi.",
-                "5": ""
-            },
-            "examples_title": "Esimerkkejä",
-            "examples": {
-                "header": "content type",
-                "header_val": "Content-Type",
-                "auth": "x authentication token",
-                "auth_val": "X-Authentication-Token",
-                "file": "uusi_raportti_tiedosto",
-                "file_val": "Uusi-Raportti-Tiedosto",
-                "mixed": "Tiedoston Nimi 2024",
-                "mixed_val": "Tiedoston-Nimi-2024"
-            },
-            "faq_title": "Usein kysytyt kysymykset",
-            "faq": {
-                "q1": "Mikä on Train-Case?",
-                "a1": "Se on nimeämistyyli, jossa sanat alkavat isolla ja ne on yhdistetty viivoilla.",
-                "q2": "Miten se eroaa kebab-casesta?",
-                "a2": "Kebab-case on kokonaan pienillä kirjaimilla (teksti-nimi), Train-Case isolla alkukirjaimella (Teksti-Nimi).",
-                "q3": "Miksi se on tärkeä HTTP-headereissa?",
-                "a3": "HTTP-standardi (RFC) suosittelee tätä muotoa headereiden nimille luettavuuden vuoksi.",
-                "q4": "Sopiiko se muuttujien nimeämiseen?",
-                "a4": "Harvoin. Useimmat kielet eivät salli yhdysmerkkiä muuttujien nimissä.",
-                "q5": "Voiko siinä olla ääkkösiä?",
-                "a5": "Paremman yhteensopivuuden vuoksi on suositeltavaa käyttää ASCII-merkkejä (a, o)."
-            }
-        },
-        "js": {
-            "error_empty": "Syötä tekstiä muunnettavaksi",
-            "success_convert": "✓ Muunnettu Train-Caseksi onnistuneesti!",
-            "error_no_copy": "Ei mitään kopioitavaa! Muunna tekstiä ensin.",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        }
-    },
-    "ascii-to-binary": {
-        "meta": {
-            "title": "ASCII–binaarimuunnin | Tekstistä kanta-2:een muunnos",
-            "description": "Muunna ASCII-teksti binaarikoodiksi heti. Ilmainen verkkotyökalu koodaukseen, dekoodaukseen ja tietojen esittämiseen.",
-            "h1": "ASCII ↔ Binaari-muunnin",
-            "subtitle": "Muunna teksti ja binaarikoodi vaivattomasti projektiasi varten."
-        },
-        "editor": {
-            "to_binary": "Binaariksi",
-            "to_ascii": "ASCIIksi",
-            "label_ascii": "Syötä ASCII-teksti",
-            "ph_ascii": "Syötä tekstiä (esim. Hei)...",
-            "label_result_binary": "Binaarilähtö",
-            "ph_output": "Tulos ilmestyy tähän...",
-            "btn_convert_binary": "Muunna binaariksi",
-            "btn_clear": "Tyhjennä",
-            "btn_copy": "Kopioi",
-            "label_binary": "Syötä binaarikoodi",
-            "ph_binary": "Syötä binaari (esim. 01001000)...",
-            "label_result_ascii": "ASCII-lähtö",
-            "btn_convert_ascii": "Muunna ASCIIksi",
-            "error_empty": "Syötä arvo muunnettavaksi",
-            "error_invalid_binary": "Virheellinen binaari. Käytä vain numeroita 0 ja 1.",
-            "success_binary": "✓ Muunnettu binaariksi onnistuneesti!",
-            "success_ascii": "✓ Muunnettu ASCIIksi onnistuneesti!",
-            "error_general": "Tapahtui virhe: ",
-            "error_no_copy": "Ei mitään kopioitavaa! Muunna arvo ensin.",
-            "success_copy": "✓ Kopioitu leikepöydälle!"
-        },
-        "content": {
-            "p1": "ASCII-binaarimuuntimemme on suunniteltu tarjoamaan yksinkertainen tapa nähdä, miten teksti esitetään tietokoneen peruskielellä. ASCII (American Standard Code for Information Interchange) on standardi, joka määrittää numerokoodit jokaiselle merkille. Binaari taas on se muoto, jota transistoria sisältävä laitteisto todellisuudessa ymmärtää.",
-            "format_title": "Datan syvällinen ymmärtäminen",
-            "format_desc": "Jokainen ASCII-merkki vastaa 8-bittistä tavua (byte) binäärijärjestelmässä. Esimerkiksi ison kirjaimen 'A' ASCII-arvo on 65, joka on binaarina 01000001. Tämä työkalu auttaa sinua automatisoimaan nämä muunnokset suurille tekstimäärille.",
-            "features_title": "Työkalun parhaat puolet",
-            "uses_title": "Käyttökohteet",
-            "steps_title": "Näin käytät muunninta",
-            "examples_title": "Hyödyllisiä esimerkkejä",
-            "faq_title": "Usein kysytyt kysymykset",
-            "features": {
-                "fast": {
-                    "title": "Salamannopea",
-                    "desc": "Muunnokset tapahtuvat millisekunneissa ilman viivettä."
-                },
-                "client": {
-                    "title": "Paikallinen tietoturva",
-                    "desc": "Tietojasi ei lähetetä palvelimillemme; kaikki tapahtuu selaimessasi."
-                },
-                "bi": {
-                    "title": "Kaksisuuntainen",
-                    "desc": "Vaihda ASCII- ja binaari-tilojen välillä helposti yhdellä napilla."
-                },
-                "free": {
-                    "title": "Aina ilmainen",
-                    "desc": "Ei maksumuureja tai tilausvaatimuksia ammattilaistason työkaluun."
-                }
-            },
-            "uses": {
-                "edu": {
-                    "title": "Oppiminen",
-                    "desc": "Loistava työkalu tietotekniikan perusteiden opiskeluun."
-                },
-                "debugging": {
-                    "title": "Vianetsintä",
-                    "desc": "Analysoi raakadataa tai tiedostoformaatteja merkkitasolla."
-                },
-                "hobby": {
-                    "title": "Harrastukset",
-                    "desc": "Luo salaisia viestejä tai taidetta binaarimuodossa."
-                },
-                "automation": {
-                    "title": "Automaatio",
-                    "desc": "Varmista skriptien ja koodin oikea datan käsittely."
-                }
-            },
-            "steps": {
-                "1": "Valitse haluamasi muunnostyyppi (tekstistä binaariksi tai päinvastoin).",
-                "2": "Kirjoita tai liitä sisältö syötekenttään.",
-                "3": "Paina vastaavaa muunnospainiketta.",
-                "4": "Kopioi ja käytä lopullista tulosta."
-            },
-            "examples": {
-                "basic": "Teksti 'Hi' → Binaari: 01001000 01101001",
-                "number": "Merkki '1' → Binaari: 00110001",
-                "space": "Välilyönti → Binaari: 00100000",
-                "complex": "Binaari '01000001' → Teksti: 'A'"
-            },
-            "faq": {
-                "q1": "Mitä ASCII tarkoittaa?",
-                "a1": "ASCII on merkistökoodaus standardi, joka edustaa tekstiä tietokoneissa ja muissa viestintälaitteissa.",
-                "q2": "Miten monta bittiä yksi merkki vie?",
-                "a2": "Standardi ASCII-merkki vie 7 bittiä, mutta useimmat modernit järjestelmät käyttävät 8-bittistä laajennettua versiota (1 tavu).",
-                "q3": "Voiko tämä muuntaa hymiöitä?",
-                "a3": "ASCII tukee vain perusmerkkejä. Hymiöt vaativat yleensä monimutkaisemman UTF-8-muuntimen.",
-                "q4": "Voinko muuntaa kokonaisia kirjoja?",
-                "a4": "Kyllä, työkalu pystyy käsittelemään suuria tekstimääriä erittäin tehokkaasti."
-            }
         }
     }
 }
