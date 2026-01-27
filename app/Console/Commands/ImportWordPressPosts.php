@@ -24,10 +24,10 @@ class ImportWordPressPosts extends Command
             $dbName = $this->ask('Enter WordPress database name');
         }
 
-        $host = $this->option('mobileki_wp933');
-        $user = $this->option('mobileki_wp933');
-        $pass = $this->option('2Oon#q2qi=pJbKAE');
-        $prefix = $this->option('wpl0');
+        $host = 'localhost';
+        $user = 'mobileki_wp933';
+        $pass = '2Oon#q2qi=pJbKAE';
+        $prefix = 'wpl0_';
 
         // Configure temporary connection
         Config::set('database.connections.wordpress', [
