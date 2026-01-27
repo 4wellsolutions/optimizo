@@ -146,8 +146,8 @@
             },
             "label_indent": "Indrag",
             "indents": {
-                "2": "",
-                "4": "",
+                "2": "2 mellanslag",
+                "4": "4 mellanslag",
                 "tab": "Tabb"
             },
             "btn_format": "Formatera kod",
@@ -391,7 +391,7 @@
                 "2": "<strong>Se resultat:</strong> Se den bearbetade CSS:en i utdatafältet med komprimeringsstatistik",
                 "3": "<strong>Kopiera:</strong> Klicka på \"Kopiera\" för att kopiera den minifierade CSS:en till ditt urklipp",
                 "4": "<strong>Använd i produktion:</strong> Ersätt din ursprungliga CSS-fil med den minifierade versionen",
-                "5": ""
+                "5": "Ladda ner eller kopiera den förminskade CSS och använd den på din produktionswebbplats för att minska filstorleken och förbättra laddningstiderna."
             },
             "best_practices_title": "💡 Bästa praxis",
             "best_practices_list": {
@@ -399,7 +399,7 @@
                 "2": "<strong>Kombinera filer:</strong> Slå samman flera CSS-filer innan minifiering för bättre komprimering",
                 "3": "<strong>Testa noggrant:</strong> Testa alltid minifierad CSS för att säkerställa att ingen funktionalitet är bruten",
                 "4": "<strong>Använd byggverktyg:</strong> Integrera minifiering i din byggprocess för automatisering",
-                "5": ""
+                "5": "Behåll en ominifierad version för utvecklings- och felsökningssyften."
             },
             "faq_title": "❓ Vanliga frågor",
             "faq": {
@@ -434,8 +434,8 @@
         "editor": {
             "method_label": "Metod",
             "url_label": "Webbadress",
-            "headers_tab": "Headers",
-            "body_tab": "Request Body",
+            "headers_tab": "Rubriker",
+            "body_tab": "Begäran kropp",
             "key_ph": "Nyckel (t.ex. Authorization)",
             "value_ph": "Värde (t.ex. Bearer token)",
             "add_header": "+ Lägg till header",
@@ -525,7 +525,7 @@
                 "1": "Klistra in din HTML eller text i inmatningsfältet",
                 "2": "Klicka på bearbeta-knappen för att konvertera",
                 "3": "Kopiera resultatet till urklipp",
-                "4": ""
+                "4": "Kopiera det kodade/avkodade resultatet och använd det i dina HTML-, XML- eller webbapplikationer."
             },
             "examples_title": "ðŸ’¡ Exempel på HTML-kodning",
             "examples": {
@@ -538,8 +538,8 @@
                     "code": "Tom & Jerry â†’ Tom &amp; Jerry"
                 },
                 "3": {
-                    "title": "",
-                    "code": ""
+                    "title": "Kodning av specialtecken",
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
                 }
             },
             "faq_title": "â “ Vanliga frågor",
@@ -596,7 +596,7 @@
                 "1": "Klicka på \"Minifiera HTML\" för att komprimera koden",
                 "2": "Klicka på \"Försköna HTML\" för att formatera med indrag",
                 "3": "Kopiera resultatet med knappen \"Kopiera utdata\"",
-                "4": ""
+                "4": "Använd den förminskade HTML-koden i din produktionsmiljö för att minska bandbredden och förbättra sidladdningshastigheten."
             },
             "faq_title": "Vanliga frågor",
             "faq": {
@@ -648,7 +648,7 @@
                 "3": "✅ <strong>Ingen installation:</strong> Fungerar direkt i din webbläsare",
                 "4": "✅ <strong>Gratis för alltid:</strong> 100% gratis utan begränsningar",
                 "5": "✅ <strong>Integritet först:</strong> All konvertering sker lokalt i din webbläsare",
-                "6": ""
+                "6": "Bevarar kodblock och syntaxmarkering för teknisk dokumentation."
             },
             "uses_title": "🎯 Vanliga användningsområden",
             "uses": {
@@ -762,7 +762,7 @@
                 "2": "Använd knappen \"Ladda exempel\" för att se exempel på HTML-kod",
                 "3": "Klicka på \"Rensa\" för att börja om med en tom redigerare",
                 "4": "Testa olika HTML-element och se hur de renderas",
-                "5": ""
+                "5": "Analysera den renderade utdata och DOM-strukturen för att felsöka layoutproblem eller verifiera HTML-rendering."
             },
             "uses_title": "Vanliga användningsområden",
             "uses_desc": "HTML-visare är viktiga verktyg för olika webbutvecklingsuppgifter. Utvecklare använder dem för att snabbt testa HTML-avsnitt innan de integreras i större projekt. Studenter som lär sig HTML kan experimentera med olika taggar och attribut för att förstå deras effekter. E-postmarknadsförare använder HTML-visare för att förhandsgranska e-postmallar innan de skickas. Innehållsskapare kan visualisera hur deras HTML-innehåll kommer att se ut på webbplatser. Designers kan granska markup-struktur och säkerställa korrekt rendering av HTML-element.",
@@ -889,8 +889,8 @@
                     "desc": "Klicka på kopieringsknappen för att kopiera den formaterade JSON-koden till ditt urklipp"
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "Formatera eller förminska",
+                    "desc": "Välj att försköna (formatera med indrag) eller förminska (komprimera till en rad) dina JSON-data baserat på dina behov."
                 }
             },
             "uses_title": "Vanliga användningsområden för JSON-formatering",
@@ -1422,7 +1422,7 @@
             "uses_title": "Vanliga användningsområden",
             "uses": {
                 "docker": {
-                    "title": "Docker",
+                    "title": "Hamnarbetare",
                     "desc": "Konvertera JSON-containerkonfigurationer till Docker Compose YAML."
                 },
                 "config": {
@@ -1883,7 +1883,7 @@
         },
         "js": {
             "error_empty": "Vänligen ange lite data att bearbeta",
-            "placeholder_table_name": "users",
+            "placeholder_table_name": "användare",
             "error_general": "Konverteringsfel: ",
             "error_invalid_array": "Fel: Inmatning måste vara en JSON-array av objekt.",
             "error_empty_array": "Fel: JSON-arrayen är tom.",
@@ -1999,7 +1999,7 @@
                     "desc": "Original: \"©\" → Kodad: \"\\u00A9\""
                 },
                 "emoji": {
-                    "title": "Emojis/Multi-byte:",
+                    "title": "Emojis/multibyte:",
                     "desc": "Original: \"🌟\" → Kodad: \"\\uD83C\\uDF1F\" (surrogatpar) eller \"\\u2B50\" beroende på representation"
                 }
             },
@@ -2197,7 +2197,7 @@
         },
         "editor": {
             "label_input": "XML-inmatning",
-            "ph_input": "<root><child>value</child></root>",
+            "ph_input": "<root><child>värde</child></root>",
             "btn_format": "Formatera / Försköna",
             "btn_minify": "Minifiera",
             "btn_copy": "Kopiera"

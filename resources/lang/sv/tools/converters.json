@@ -56,7 +56,7 @@
             "unit_sq_m": "Kvadratmeter (m²)",
             "unit_sq_km": "Kvadratkilometer (km²)",
             "unit_ha": "Hektar (ha)",
-            "optgroup_imperial": "Imperial",
+            "optgroup_imperial": "Kejserlig",
             "unit_sq_ft": "Kvadratfot (ft²)",
             "unit_sq_yd": "Kvadratyard (yd²)",
             "unit_acre": "Acre (ac)",
@@ -371,7 +371,7 @@
                     "desc": "Perfekt för namngivning av JSON-nycklar i RESTful- och GraphQL-API:er."
                 },
                 "react": {
-                    "title": "React Props",
+                    "title": "Reagera Props",
                     "desc": "Standard för namngivning av props och states i React- och Vue-komponenter."
                 },
                 "css": {
@@ -385,7 +385,7 @@
                 "2": "Den gör om det första ordet till enbart gemener.",
                 "3": "Den inleder alla efterföljande ord med versaler.",
                 "4": "Resultatet kombineras till en enda sträng utan mellanslag.",
-                "5": ""
+                "5": "Använd den konverterade camelCase-texten i din kod, variabelnamn eller API-slutpunkter för konsekventa namnkonventioner."
             },
             "examples_title": "Exempel",
             "examples": {
@@ -496,7 +496,7 @@
                 "2": "Meningsläge är det mest läsbara formatet för långa stycken och beskrivningar.",
                 "3": "Använd alltid knappen \"Kopiera till urklipp\" för att undvika manuella markeringsfel.",
                 "4": "Kombinera vår Skiftlägeskonverterare med en ordräknare för fullständig redigeringskontroll.",
-                "5": ""
+                "5": "Använd case-konvertering för att upprätthålla konsekvens i din kodbas och förbättra kodläsbarheten."
             },
             "faq_title": "Vanliga frågor",
             "faq": {
@@ -532,9 +532,9 @@
             "unit_tsp": "Tesked (US Tsp)",
             "unit_ml": "Milliliter (ml)",
             "unit_fl_oz": "Flytande uns (fl oz)",
-            "unit_pt": "Pint (US)",
-            "unit_qt": "Quart (US)",
-            "unit_gal": "Gallon (US)",
+            "unit_pt": "Pint (USA)",
+            "unit_qt": "Quart (USA)",
+            "unit_gal": "Gallon (USA)",
             "to_label": "Till"
         },
         "content": {
@@ -733,7 +733,7 @@
                     "desc": "Decimal: 128 → Binär: 10000000"
                 },
                 "power": {
-                    "title": "Full Byte",
+                    "title": "Full byte",
                     "desc": "Decimal: 255 → Binär: 11111111"
                 },
                 "reverse": {
@@ -1095,8 +1095,8 @@
         },
         "form": {
             "from_label": "Från",
-            "unit_b": "Bit (b)",
-            "unit_B": "Byte (B)",
+            "unit_bit": "Bit (b)",
+            "unit_byte": "Byte (B)",
             "unit_KB": "Kilobyte (KB)",
             "unit_MB": "Megabyte (MB)",
             "unit_GB": "Gigabyte (GB)",
@@ -1271,8 +1271,8 @@
         },
         "form": {
             "from_label": "Från",
-            "unit_mpg_us": "MPG (US)",
-            "unit_mpg_uk": "MPG (UK)",
+            "unit_mpg_us": "MPG (USA)",
+            "unit_mpg_uk": "MPG (Storbritannien)",
             "unit_km_l": "Kilometer/Liter (km/L)",
             "unit_l_100km": "Liter/100km",
             "to_label": "Till"
@@ -1417,7 +1417,7 @@
             "faq": {
                 "q1": "Varför kallas det kebab-case?",
                 "a1": "Eftersom orden är \"uppträdda\" tillsammans med ett bindestreck, vilket ser ut som köttbitar på en kebab.",
-                "q2": "Kebab vs Snake Case?",
+                "q2": "Kebab vs ormfodral?",
                 "a2": "Kebab använder bindestreck (-), snake använder understreck (_). URL:er älskar krabber; databaser älskar ormar.",
                 "q3": "Är det SEO-vänligt?",
                 "a3": "Ja, Google och andra sökmotorer rekommenderar att använda bindestreck snarare än understreck i URL:er.",
@@ -1451,7 +1451,7 @@
             "optgroup_imperial": "Brittisk/Amerikansk",
             "unit_in": "Tum (in)",
             "unit_ft": "Fot (ft)",
-            "unit_yd": "Yard (yd)",
+            "unit_yd": "Gård (yd)",
             "unit_mi": "Engelsk mil (mi)",
             "to_label": "Till"
         },
@@ -1895,7 +1895,7 @@
             "formats": {
                 "rgb": {
                     "title": "RGB (Röd, Grön, Blå)",
-                    "format": "Format",
+                    "format": "Formatera",
                     "format_val": "rgb(röd, grön, blå)",
                     "range": "Intervall",
                     "range_val": "0-255 för varje kanal",
@@ -1903,8 +1903,8 @@
                     "used_in_val": "Digitala skärmar, monitorer, TV"
                 },
                 "hex": {
-                    "title": "HEX (Hexadecimal)",
-                    "format": "Format",
+                    "title": "HEX (hexadecimal)",
+                    "format": "Formatera",
                     "format_val": "#RRGGBB",
                     "range": "Intervall",
                     "range_val": "00-FF för varje kanal (hex)",
@@ -2237,8 +2237,8 @@
         "meta": {
             "title": "Speed ​​Converter Online - Gratis MPH till KPH Tool",
             "description": "Konvertera hastighetsenheter direkt. Miles per hour till kilometer i timmen, meter per sekund och knop.",
-            "subtitle": "Konvertera MPH, KPH, knop, m/s & Mach-tal direkt",
-            "h1": "Hastighetsomvandlare"
+            "h1": "Hastighetsomvandlare",
+            "subtitle": "Konvertera MPH, KPH, knop, m/s & Mach-tal direkt"
         },
         "form": {
             "from_label": "Från",
@@ -2333,7 +2333,7 @@
                     "desc": "Lägg till lekfull formatering i Discord, Slack och textmeddelanden"
                 },
                 "gaming": {
-                    "title": "Gaming",
+                    "title": "Spelande",
                     "desc": "Skapa unika användarnamn och meddelanden i spel"
                 },
                 "creative": {
@@ -2641,7 +2641,7 @@
             "optgroup_imperial": "Imperisk",
             "unit_oz": "Uns (oz)",
             "unit_lb": "Pund (lb)",
-            "unit_st": "Stone (st)",
+            "unit_st": "Sten (st)",
             "to_label": "Till"
         },
         "content": {

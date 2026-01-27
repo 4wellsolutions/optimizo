@@ -12,7 +12,7 @@
             "button": "Sök DNS"
         },
         "results": {
-            "title": ""
+            "title": "DNS-poster"
         },
         "content": {
             "what_is_title": "Vad är DNS-uppslagning?",
@@ -28,24 +28,24 @@
             "cname_record": "<strong>CNAME-post:</strong> Alias för kanoniskt namn"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är DNS-sökning?",
+            "a1": "DNS-uppslagning är processen att fråga Domain Name System-servrar för att hämta DNS-poster för en domän. Den översätter mänskligt läsbara domännamn till IP-adresser och ger information om e-postservrar, namnservrar och andra DNS-konfigurationer.",
+            "q2": "Vilka är de olika typerna av DNS-poster?",
+            "a2": "Vanliga DNS-posttyper inkluderar A (IPv4-adress), AAAA (IPv6-adress), MX (e-postserver), CNAME (alias), TXT (textdata), NS (namnserver) och SOA (start av auktoritet). Varje posttyp tjänar ett specifikt syfte i domänkonfigurationen.",
+            "q3": "Hur lång tid tar DNS-spridning?",
+            "a3": "DNS-spridning tar vanligtvis 24-48 timmar globalt, även om ändringar kan visas inom några minuter på vissa servrar. Tiden beror på TTL-inställningar (Time To Live) och hur snabbt DNS-servrar uppdaterar sin cache.",
+            "q4": "Varför misslyckas min DNS-sökning?",
+            "a4": "DNS-sökningsfel kan uppstå på grund av felaktigt domännamn, DNS-serverproblem, brandväggsblockering eller att domänen inte är korrekt konfigurerad. Kontrollera din domänstavning och se till att dina DNS-poster är korrekt inställda.",
+            "q5": "Kan jag slå upp DNS-poster för vilken domän som helst?",
+            "a5": "Ja, du kan utföra DNS-sökningar för alla offentligt registrerade domäner. Vissa organisationer kan dock begränsa vissa DNS-frågor av säkerhetsskäl."
         },
         "js": {
-            "looking_up": "",
-            "records_label": "",
-            "success": "",
-            "error": "",
-            "lookup_dns": ""
+            "looking_up": "Söker upp DNS-poster...",
+            "records_label": "DNS-poster",
+            "success": "DNS-sökningen slutfördes",
+            "error": "Det gick inte att söka efter DNS-poster",
+            "lookup_dns": "Slå upp DNS"
         }
     },
     "domain-to-ip": {
@@ -62,9 +62,9 @@
             "button": "Sök IP-adress"
         },
         "results": {
-            "title": "",
-            "domain_label": "",
-            "ip_label": ""
+            "title": "IP-adressresultat",
+            "domain_label": "Domän",
+            "ip_label": "IP-adress"
         },
         "content": {
             "main_title": "Domän till IP-omvandlare",
@@ -99,21 +99,21 @@
             "tip5": "✅ Identifiera delad hosting genom att kontrollera om flera domäner delar IP"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är en domän till IP-sökning?",
+            "a1": "Domän till IP-sökning konverterar ett domännamn (som exempel.com) till dess motsvarande IP-adress. Detta är viktigt för att förstå var en webbplats är värd och för nätverksfelsökning.",
+            "q2": "Kan en domän ha flera IP-adresser?",
+            "a2": "Ja, domäner kan ha flera IP-adresser för belastningsbalansering, redundans eller visning av olika innehåll baserat på geografisk plats. Detta är vanligt för stora webbplatser och CDN:er.",
+            "q3": "Vad är skillnaden mellan IPv4 och IPv6?",
+            "a3": "IPv4 använder 32-bitars adresser (som 192.168.1.1) och stöder cirka 4,3 miljarder adresser. IPv6 använder 128-bitars adresser (som 2001:0db8:85a3::8a2e:0370:7334) och tillhandahåller praktiskt taget obegränsade adresser för framtida internettillväxt.",
+            "q4": "Varför skulle jag behöva hitta en domäns IP-adress?",
+            "a4": "Att hitta en domäns IP-adress är användbart för nätverksfelsökning, konfigurering av brandväggar, konfigurering av serveråtkomst, verifiering av DNS-konfiguration eller identifiering av värdleverantör och serverplats.",
+            "q5": "Är IP-adressen samma som serverplatsen?",
+            "a5": "IP-adressen anger var servern är värd, men med CDN och molnvärd kan den fysiska serverplatsen skilja sig från IP-geolokaliseringen. Många webbplatser använder flera servrar över hela världen."
         },
         "js": {
-            "looking_up": "",
-            "error_failed": ""
+            "looking_up": "Söker upp IP-adressen...",
+            "error_failed": "Det gick inte att lösa domänen till IP-adress"
         }
     },
     "internet-speed-test": {
@@ -238,15 +238,15 @@
             "button": "Sök IP-adress"
         },
         "results": {
-            "title": "",
-            "ip_address": "",
-            "type": "",
-            "hostname": "",
-            "isp": "",
-            "country": "",
-            "region": "",
-            "city": "",
-            "timezone": ""
+            "title": "Resultat för IP-sökning",
+            "ip_address": "IP-adress",
+            "type": "Typ",
+            "hostname": "Värdnamn",
+            "isp": "ISP",
+            "country": "Land",
+            "region": "Område",
+            "city": "Stad",
+            "timezone": "Tidszon"
         },
         "content": {
             "what_is_title": "Vad är IP-uppslagning?",
@@ -264,22 +264,22 @@
             "feature4_desc": "Snabb och exakt uppslagning"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är IP-sökning?",
+            "a1": "IP-sökning (även kallad IP-geolokalisering) är processen att hitta geografisk information och nätverksinformation om en IP-adress, inklusive plats, ISP, värdnamn och organisation. Det är användbart för säkerhet, analys och nätverksdiagnostik.",
+            "q2": "Hur exakt är IP-geolokalisering?",
+            "a2": "IP-geolokalisering är vanligtvis korrekt på landsnivå (95-99 %) och stadsnivå (50-75 %). Noggrannheten varierar beroende på IP-databasen och hur ISP:er hanterar sina IP-block. VPN och proxyservrar kan maskera den verkliga platsen.",
+            "q3": "Kan jag hitta någons exakta adress från deras IP?",
+            "a3": "Nej, IP-sökning ger bara ungefärlig plats (stads-/regionnivå), inte exakta gatuadresser. Endast internetleverantörer och brottsbekämpande myndigheter med rätt auktorisation kan få tillgång till detaljerad abonnentinformation.",
+            "q4": "Vad är skillnaden mellan IPv4 och IPv6 lookup?",
+            "a4": "Både IPv4- och IPv6-uppslagningar ger liknande information (plats, ISP, etc.). IPv6 är det nyare protokollet med fler adresser. Vårt verktyg stöder båda IP-versionerna för omfattande nätverksanalys.",
+            "q5": "Varför visar min IP-plats en annan stad?",
+            "a5": "Din internetleverantör kan dirigera trafik genom regionala nav, eller så kan IP-geolokaliseringsdatabasen ha föråldrad information. Mobil- och satellitanslutningar visar ofta mindre exakta positioner än fast bredband."
         },
         "js": {
-            "looking_up": "",
-            "success": "",
-            "error": ""
+            "looking_up": "Söker upp IP-information...",
+            "success": "IP-sökning slutförd",
+            "error": "Det gick inte att söka efter IP-adress"
         }
     },
     "ping-test": {
@@ -295,7 +295,7 @@
             "button": "Ping Värd"
         },
         "results": {
-            "title": ""
+            "title": "Pingresultat"
         },
         "content": {
             "what_is_title": "Vad är Ping-test?",
@@ -313,23 +313,23 @@
             "interpreting_desc": "Bra ping-tider är vanligtvis under 50ms för lokala anslutningar och under 100ms för internationella anslutningar. Tider mellan 100-200ms är acceptabla för de flesta applikationer men kan orsaka märkbar fördröjning i realtidsapplikationer som spel eller videokonferenser. Allt över 200ms indikerar potentiella nätverksproblem. Paketförlust över 1% tyder på nätverksproblem som behöver utredas. Konsekventa ping-tider indikerar stabila anslutningar, medan mycket varierande tider tyder på nätverksöverbelastning eller routingproblem."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är ett pingtest?",
+            "a1": "Ett pingtest skickar datapaket till en server och mäter tiden det tar att få ett svar. Den används för att kontrollera nätverksanslutning, mäta latens och diagnostisera anslutningsproblem.",
+            "q2": "Vad är en bra pingtid?",
+            "a2": "För allmän surfning: under 100ms är bra. För spel: under 50ms är perfekt, under 20ms är utmärkt. För videosamtal: under 150 ms är acceptabelt. Lägre ping betyder snabbare svarstider.",
+            "q3": "Varför är min ping hög?",
+            "a3": "Hög ping kan orsakas av överbelastning i nätverket, avstånd till server, dålig WiFi-signal, ISP-strypning eller för många enheter i ditt nätverk. Prova att använda trådbunden anslutning, stänga bandbreddstunga applikationer eller kontakta din internetleverantör.",
+            "q4": "Vad betyder \"Tidsgränsen för begäran togs\"?",
+            "a4": "Timeout för begäran betyder att servern inte svarade inom den förväntade tiden. Detta kan indikera att servern är nere, blockerar ping-förfrågningar (brandvägg), eller att det finns ett problem med nätverksanslutning.",
+            "q5": "Kan jag pinga vilken webbplats som helst?",
+            "a5": "De flesta webbplatser kan pingas, men vissa servrar blockerar ICMP-ping-förfrågningar av säkerhetsskäl. Om ping misslyckas kan webbplatsen fortfarande vara tillgänglig via webbläsaren - försök använda andra verktyg som traceroute eller port checker."
         },
         "js": {
-            "pinging": "",
-            "success": "",
-            "error": "",
-            "ping_host": ""
+            "pinging": "Pingar värd...",
+            "success": "Ping slutfördes",
+            "error": "Ping misslyckades",
+            "ping_host": "Ping värd"
         }
     },
     "port-checker": {
@@ -347,7 +347,7 @@
             "button": "Kontrollera Port"
         },
         "results": {
-            "title": ""
+            "title": "Portstatus"
         },
         "content": {
             "what_is_title": "Vad är Portkontroll?",
@@ -366,23 +366,23 @@
             "security_desc": "Öppna portar utgör potentiella ingångar för angripare. Bästa säkerhetspraxis förespråkar att endast hålla nödvändiga portar öppna och stänga eller filtrera alla andra. Att regelbundet skanna dina egna servrar hjälper till att identifiera oavsiktligt öppna portar som kan utnyttjas. Att skanna andras system utan tillstånd kan dock vara olagligt och betraktas som fientlig aktivitet. Se alltid till att du har behörighet innan du skannar portar på system du inte äger."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är en port checker?",
+            "a1": "En portcheckare testar om en specifik nätverksport på en server är öppen och accepterar anslutningar. Det är viktigt för felsökning av servrar, brandväggar och nätverkstjänster.",
+            "q2": "Vilka är vanliga portar och deras användningsområden?",
+            "a2": "Vanliga portar inkluderar: 80 (HTTP), 443 (HTTPS), 21 (FTP), 22 (SSH), 25 (SMTP-e-post), 3306 (MySQL), 3389 (Fjärrskrivbord), 8080 (HTTP-alternativ). Varje tjänst använder specifika portar för kommunikation.",
+            "q3": "Varför är min hamn stängd?",
+            "a3": "Portar kan stängas på grund av brandväggsregler, routerkonfiguration, tjänst som inte körs, ISP-blockering eller felaktig portvidarebefordran. Kontrollera dina brandväggsinställningar, se till att tjänsten körs och verifiera regler för portvidarebefordran.",
+            "q4": "Är det säkert att öppna portar?",
+            "a4": "Att öppna portar exponerar tjänster för internet, vilket kan utgöra en säkerhetsrisk om de inte är korrekt konfigurerade. Öppna bara nödvändiga portar, använd stark autentisering, håll programvaran uppdaterad och överväg att använda VPN för känsliga tjänster.",
+            "q5": "Vad är skillnaden mellan TCP- och UDP-portar?",
+            "a5": "TCP-portar ger tillförlitlig, beställd dataleverans (används för webb, e-post, filöverföring). UDP-portar är snabbare men garanterar inte leverans (används för spel, streaming, DNS). Båda kan använda samma portnummer."
         },
         "js": {
-            "checking": "",
-            "success": "",
-            "error": "",
-            "check_port": ""
+            "checking": "Kontrollerar portstatus...",
+            "success": "Hamnkontroll avslutad",
+            "error": "Portkontroll misslyckades",
+            "check_port": "Kontrollera port"
         }
     },
     "reverse-dns-lookup": {
@@ -434,37 +434,37 @@
             "subtitle": "Den bästa traceroute för utvecklare och IT-proffs"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "Värd eller IP-adress",
+            "host_placeholder": "Ange domän eller IP-adress",
+            "button": "Starta Traceroute",
+            "button_loading": "Spårar rutt..."
         },
         "results": {
-            "title": ""
+            "title": "Traceroute-resultat"
         },
         "content": {
             "what_is_title": "Vad är Traceroute?",
             "what_is_desc": "Detta är ett gratis onlineverktyg för traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
+            "why_use_title": "Varför använda Traceroute?",
+            "why_use_desc": "Traceroute visar sökvägsdata från din dator till en destinationsserver, och visar varje hopp (router) längs vägen. Det är viktigt för att diagnostisera nätverksavbrott, identifiera routingproblem och förstå nätverkstopologi.",
+            "hops_title": "Förstå humle",
+            "hop1": "Hopp 1: Din lokala router/gateway",
+            "hop2": "Hopp 2-3: Din internetleverantörs nätverk",
+            "hop3": "Hopp 4-6: Regional internet ryggrad",
+            "hop4": "Hopp 7-10: Destinations-ISP-nätverk",
+            "hop5": "Hop 11+: Destinationsservernätverk",
+            "hop6": "Varje hopp lägger till latens - färre hopp betyder generellt snabbare anslutning",
+            "issues_title": "Vanliga frågor",
+            "issues_desc": "Hög latens vid specifika hopp indikerar överbelastning eller routingproblem. Asterisker (*) betyder att routrar inte svarar på traceroute-paket (ofta på grund av brandväggsregler). Paketförlust vid mellanhopp kanske inte påverkar slutdestinationen om paket når den framgångsrikt."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är traceroute?",
+            "a1": "Traceroute är ett nätverksdiagnostikverktyg som spårar sökvägen för datapaketen från din dator till en destinationsserver. Den visar varje router (hopp) längs rutten och mäter tiden det tar vid varje steg, vilket hjälper till att identifiera var nätverksförseningar eller fel uppstår.",
+            "q2": "Varför visar vissa humle asterisker (*)?",
+            "a2": "Asterisker indikerar att en router inte svarade på traceroute-sonden inom timeoutperioden. Detta beror ofta på brandväggskonfigurationer som blockerar ICMP-paket för säkerhets skull. Det betyder inte nödvändigtvis att det finns ett problem - paketen kan fortfarande nå destinationen.",
+            "q3": "Hur många humle är normalt?",
+            "a3": "Typiska internetrutter har 10-20 hopp. Lokala nätverksdestinationer kan ha 1-5 hopp, medan internationella rutter kan ha 20-30 hopp. Fler hopp betyder i allmänhet längre avstånd och potentiellt högre latens, men effektiv routing är viktigare än antalet hopp."
         }
     },
     "user-agent-parser": {
@@ -608,12 +608,12 @@
         },
         "faq": {
             "title": "Vanliga frågor",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "q1": "Vad är en IP-adress?",
+            "a1": "En IP-adress (Internet Protocol) är en unik numerisk identifierare som tilldelas varje enhet som är ansluten till internet. Det är som en postadress för din dator, vilket gör att andra enheter kan skicka och ta emot data från dig.",
+            "q2": "Varför ändras min IP-adress?",
+            "a2": "De flesta hemanslutningar till internet använder dynamiska IP-adresser som ändras med jämna mellanrum när du startar om din router eller när din internetleverantör tilldelar adresser. Företag använder ofta statiska IP-adresser som inte ändras. Mobila enheter får nya IP-adresser när de växlar mellan WiFi och mobilnätverk.",
+            "q3": "Kan någon spåra mig med min IP-adress?",
+            "a3": "Din IP-adress avslöjar din ungefärliga plats (stad/region) och internetleverantör, men inte din exakta gatuadress eller personliga identitet. Endast din internetleverantör och brottsbekämpande myndigheter med rätt auktorisation kan länka en IP-adress till en specifik person eller hushåll."
         }
     },
     "what-is-my-isp": {
@@ -667,20 +667,20 @@
             "privacy_note_desc": "Din internetleverantör kan se all okrypterad internettrafik och webbplatserna du besöker (men inte HTTPS-innehåll). De kan logga anslutningsdata, webbhistorik och DNS-frågor. Använd en VPN för att kryptera din trafik och förhindra ISP-övervakning. Vårt verktyg visar endast offentligt tillgänglig information som webbplatser redan kan se."
         },
         "results": {
-            "ip_address": "",
-            "asn": ""
+            "ip_address": "Din IP-adress",
+            "asn": "ASN (Autonomous System Number)"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är en ISP?",
+            "a1": "ISP står för Internet Service Provider - företaget som tillhandahåller din internetuppkoppling. Exempel inkluderar Comcast, AT&T, Verizon eller lokala leverantörer. Din internetleverantör tilldelar din IP-adress och dirigerar all din internettrafik.",
+            "q2": "Vad är ett ASN?",
+            "a2": "ASN (Autonomous System Number) är en unik identifierare som tilldelas nätverk och ISP:er för internetrouting. Det hjälper till att identifiera vilken organisation som kontrollerar ett block av IP-adresser. Stora internetleverantörer har ett eget ASN, medan mindre leverantörer kan dela ett.",
+            "q3": "Kan jag dölja min ISP-information?",
+            "a3": "Om du använder ett VPN (Virtual Private Network) visas VPN-leverantörens ISP istället för din faktiska ISP. Din riktiga internetleverantör kan dock fortfarande se att du använder ett VPN. Proxies och Tor kan också maskera din ISP-information."
         },
         "js": {
-            "error_loading": ""
+            "error_loading": "Det gick inte att upptäcka ISP-information"
         }
     },
     "whois-lookup": {
@@ -718,18 +718,18 @@
             "privacy_desc": "Många domänregistratorer erbjuder nu WHOIS-integritetsskyddstjänster som maskerar personlig information från offentliga WHOIS-databaser. Detta skyddar domänägare från skräppost, identitetsstöld och oönskad uppvaktning samtidigt som den nödvändiga tekniska information som behövs för domän drift bibehålls. GDPR-förordningar har också påverkat tillgängligheten av WHOIS-data, då många europeiska registratorer redigerar personlig information för att följa integritetslagar."
         },
         "results": {
-            "title": ""
+            "title": "WHOIS-information"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är WHOIS-sökning?",
+            "a1": "WHOIS är en databasfråga som tillhandahåller registreringsinformation om domännamn och IP-adresser, inklusive registrantdetaljer, registreringsdatum, utgångsdatum, namnservrar och registrarinformation. Det är användbart för domänforskning och verifiering.",
+            "q2": "Varför är WHOIS-information dold?",
+            "a2": "Många domänägare använder WHOIS-integritetsskydd (även kallat domänintegritet) för att dölja sin personliga kontaktinformation från offentliga WHOIS-databaser. Detta förhindrar spam, identitetsstöld och oönskad uppmaning samtidigt som domänägandet bibehålls.",
+            "q3": "Är WHOIS-sökning lagligt?",
+            "a3": "Ja, WHOIS-sökning är helt laglig och är ett standard internetprotokoll. WHOIS-data är allmänt tillgänglig för legitima ändamål som domänforskning, varumärkesskydd och nätverksfelsökning. Det är dock förbjudet att använda WHOIS-data för spam eller trakasserier.",
+            "q4": "Hur ofta uppdateras WHOIS-data?",
+            "a4": "WHOIS-data uppdateras i realtid när domänregistreringsinformationen ändras. Däremot kan olika WHOIS-servrar cachelagra data under olika perioder. De senaste ändringarna kan ta några timmar innan de sprids över alla WHOIS-databaser globalt."
         }
     }
 }

@@ -24,11 +24,11 @@
             "feature3_desc": "Få din Excel-fil direkt efter konvertering, redo att användas."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Vanliga frågor",
+            "q1": "Kan jag konvertera stora CSV-filer till Excel?",
+            "a1": "Ja! Vårt verktyg hanterar CSV-filer av olika storlekar. För mycket stora filer (100MB+) kan konverteringen ta lite längre tid, men processen är optimerad för prestanda.",
+            "q2": "Kommer formateringen att bevaras under konverteringen?",
+            "a2": "CSV-filer innehåller bara rådata utan formatering. Excel-filen kommer att ha data ordentligt organiserade i celler, men du måste tillämpa formatering (färger, teckensnitt, ramar) manuellt i Excel efter konvertering."
         }
     },
     "csv-to-json": {
@@ -67,11 +67,11 @@
             "feature3_desc": "Genererar SQL-92-kompatibel kod som fungerar på MySQL, PostgreSQL, SQLite och MariaDB."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Vanliga frågor",
+            "q1": "Vilka SQL-databaser stöds?",
+            "a1": "Vårt verktyg genererar standard SQL INSERT-satser som är kompatibla med MySQL, PostgreSQL, SQL Server, SQLite och andra stora databassystem. Du kan anpassa tabellnamnet och kolumnnamnen efter behov.",
+            "q2": "Hur hanterar jag specialtecken i min CSV-data?",
+            "a2": "Omvandlaren undkommer automatiskt specialtecken (citattecken, omvänt snedstreck) för att förhindra SQL-injektion och syntaxfel. Dina data kommer säkert att konverteras till korrekt formaterade SQL-satser."
         }
     },
     "csv-to-tsv": {
@@ -170,8 +170,8 @@
                     "desc": "XML-utdatan visas till höger. Klicka på \"Kopiera\" för att använda den i din applikation."
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "Ladda ner XML-fil",
+                    "desc": "Klicka på nedladdningsknappen för att spara din konverterade XML-fil, redo att användas i applikationer, API:er eller datautbytessystem."
                 }
             },
             "example_title": "💡 Konverteringsexempel",
@@ -196,7 +196,7 @@
                 "2": "<strong>Testa med exempel:</strong> Använd \"Exempel\"-knappen för att förstå konverteringsformatet.",
                 "3": "<strong>Validera XML-utdata:</strong> Validera alltid den genererade XML-koden mot ditt målsystems krav.",
                 "4": "<strong>Hantera specialtecken:</strong> Specialtecken escapas automatiskt för giltig XML-utdata.",
-                "5": ""
+                "5": "Validera din XML-utdata med en XML-validator för att säkerställa korrekt struktur och kompatibilitet med ditt målsystem."
             }
         },
         "js": {
@@ -232,11 +232,11 @@
             "feature3_desc": "Snabb konvertering med omedelbar nedladdning av CSV-filer."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Vanliga frågor",
+            "q1": "Kommer formler att konverteras till CSV?",
+            "a1": "CSV-format stöder endast vanliga textvärden. När du konverterar Excel till CSV kommer formler att ersättas med deras beräknade värden. Om du behöver bevara formler, behåll en kopia av den ursprungliga Excel-filen.",
+            "q2": "Kan jag konvertera flera Excel-ark samtidigt?",
+            "a2": "Varje Excel-kalkylblad måste konverteras separat till CSV. Om din Excel-fil har flera ark får du en separat CSV-fil för varje ark, eller så kan du välja vilket ark som ska konverteras."
         }
     },
     "google-sheets-to-excel": {
@@ -264,11 +264,11 @@
             "feature3_desc": "Arbeta med dina kalkylblad utan internetuppkoppling."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Vanliga frågor",
+            "q1": "Måste jag ladda ner från Google Sheets först?",
+            "a1": "Ja, du måste först ladda ner ditt Google-ark som en Excel-fil (.xlsx) eller CSV. I Google Sheets, gå till Arkiv > Ladda ner > Microsoft Excel (.xlsx) för att hämta filen för konvertering.",
+            "q2": "Fungerar formler för Google Kalkylark i Excel?",
+            "a2": "De vanligaste formlerna (SUMMA, AVERAGE, IF, VLOOKUP) är kompatibla mellan Google Kalkylark och Excel. Vissa Google-specifika funktioner kanske inte fungerar i Excel och kommer att behöva justeras."
         }
     },
     "tsv-to-csv-converter": {
@@ -436,11 +436,11 @@
             "feature3_desc": "XLSX-formatet har bättre säkerhet och korruptionsåterställning."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Vanliga frågor",
+            "q1": "Vad är skillnaden mellan XLS och XLSX?",
+            "a1": "XLS är det äldre Excel-formatet (Excel 97-2003) med en gräns på 65 536 rader. XLSX är det moderna XML-baserade formatet (Excel 2007+) med 1 048 576 rader, bättre komprimering och förbättrad säkerhet. Konvertering till XLSX rekommenderas för bättre kompatibilitet.",
+            "q2": "Kommer makron att bevaras vid konvertering av XLS till XLSX?",
+            "a2": "Ja, makron och VBA-kod bevaras under konverteringen. Men om din fil innehåller makron, spara den som .XLSM (makroaktiverad) istället för .XLSX för att säkerställa att makron förblir funktionella."
         }
     },
     "xlsx-to-xls": {
@@ -468,11 +468,11 @@
             "feature3_desc": "Snabb behandling med omedelbar nedladdning."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": ""
+            "title": "Vanliga frågor",
+            "q1": "Varför skulle jag konvertera XLSX tillbaka till XLS?",
+            "a1": "Konvertering till XLS-format är användbart för kompatibilitet med äldre Excel-versioner (Excel 97-2003) eller äldre system som inte stöder det nyare XLSX-formatet. XLS har dock begränsningar som färre rader och större filstorlekar.",
+            "q2": "Kommer jag att förlora data när jag konverterar XLSX till XLS?",
+            "a2": "Om din XLSX-fil har fler än 65 536 rader eller 256 kolumner, kommer data att trunkeras vid konvertering till XLS-format. Dessutom kanske vissa nyare Excel-funktioner inte stöds i det äldre XLS-formatet."
         }
     }
 }

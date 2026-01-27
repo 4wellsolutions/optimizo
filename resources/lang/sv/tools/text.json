@@ -86,7 +86,7 @@
         },
         "editor": {
             "label_input": "Skriv in morsekod",
-            "ph_input": "... --- ...",
+            "ph_input": null,
             "btn_decode": "Avkoda till text",
             "btn_clear": "Rensa",
             "btn_copy": "Kopiera",
@@ -110,12 +110,90 @@
                 "privacy": {
                     "title": "Integritetsskydd",
                     "desc": "All bearbetning sker i din webbläsare"
+                },
+                "bulk": {
+                    "title": "Bulk avkodning",
+                    "desc": "Avkoda flera ord samtidigt"
+                },
+                "alphanum": {
+                    "title": "Bokstäver och siffror",
+                    "desc": "Avkodar A-Z och 0-9"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Inga gränser eller registrering krävs"
                 }
+            },
+            "uses_title": "🎯 Vanliga användningsfall",
+            "uses": {
+                "learn": {
+                    "title": "📚 Lär dig morsekod",
+                    "desc": "Öva på att avkoda morsekod för att förbättra dina färdigheter"
+                },
+                "decode": {
+                    "title": "🔓 Avkoda meddelanden",
+                    "desc": "Avkoda morsekodmeddelanden från vänner eller pussel"
+                },
+                "games": {
+                    "title": "🎮 Spel och pussel",
+                    "desc": "Lös morsekoder i spel och utrymningsrum"
+                },
+                "radio": {
+                    "title": "📡 Skinka Radio",
+                    "desc": "Avkoda amatörradiosändningar och öva på CW"
+                },
+                "edu": {
+                    "title": "🎓 Utbildning",
+                    "desc": "Lär eleverna om kommunikation och kodningssystem"
+                },
+                "emergency": {
+                    "title": "🚨 Nödsignaler",
+                    "desc": "Avkoda nödsignaler och nödkommunikation"
+                }
+            },
+            "how_title": "📚 Hur man använder",
+            "how_steps": {
+                "1": {
+                    "title": "Ange morsekod:",
+                    "desc": "Skriv punkter (.) och bindestreck (-) åtskilda av mellanslag"
+                },
+                "2": {
+                    "title": "Klicka på Avkoda:",
+                    "desc": "Tryck på knappen \"Avkoda till text\"."
+                },
+                "3": {
+                    "title": "Recensionsutgång:",
+                    "desc": "Kontrollera resultatet av den avkodade texten"
+                },
+                "4": {
+                    "title": "Kopiera resultat:",
+                    "desc": "Klicka på \"Kopiera\" för att kopiera till urklipp"
+                },
+                "5": {
+                    "title": "Använd text:",
+                    "desc": "Använd det avkodade meddelandet"
+                }
+            },
+            "examples_title": "Morsekod exempel",
+            "samples": [],
+            "faq_title": "❓ Vanliga frågor",
+            "faq": {
+                "q1": "Hur formaterar jag morsekodinmatning?",
+                "a1": "Separera varje bokstav med ett mellanslag. Använd / för ordmellanrum. Exempel: \"... --- ...\" för SOS.",
+                "q2": "Vad händer om jag gör ett misstag?",
+                "a2": "Ogiltiga morsekodmönster hoppas över. Se till att prickar och streck är åtskilda av mellanslag.",
+                "q3": "Kan jag avkoda siffror?",
+                "a3": "Ja! Verktyget avkodar siffrorna 0-9 från deras morsekodmönster.",
+                "q4": "Hur skiljer jag ord?",
+                "a4": "Använd ett snedstreck (/) för att skilja ord i morsekod.",
+                "q5": "Är detta verktyg gratis?",
+                "a5": "Ja! Helt gratis utan gränser. All bearbetning sker i din webbläsare för sekretess."
             }
         },
         "js": {
             "error_empty": "Vänligen skriv in morsekod för att avkoda",
             "success_decode": "Morsekoden avkodades framgångsrikt!",
+            "error_copy": "Inget att kopiera! Vänligen avkoda lite morsekod först.",
             "success_copy": "Kopierat till urklipp!"
         }
     },
@@ -136,11 +214,98 @@
             "ph_output": "nedräv jeH"
         },
         "content": {
-            "p1": "Vänd din text på ett ögonblick. Detta verktyg vänder texten tecken för tecken och skapar en spegelvänd version."
+            "p1": "Vänd din text på ett ögonblick. Detta verktyg vänder texten tecken för tecken och skapar en spegelvänd version.",
+            "features": {
+                "char": {
+                    "title": "Teckenvändning",
+                    "desc": "Vänder om text tecken för tecken"
+                },
+                "instant": {
+                    "title": "Omedelbara resultat",
+                    "desc": "Omvänd text i millisekunder"
+                },
+                "privacy": {
+                    "title": "Integritetsskyddad",
+                    "desc": "All bearbetning sker i din webbläsare"
+                },
+                "bulk": {
+                    "title": "Bulkbearbetning",
+                    "desc": "Vänd flera linjer samtidigt"
+                },
+                "formatting": {
+                    "title": "Behåller formateringen",
+                    "desc": "Behåller mellanslag och specialtecken"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Inga gränser eller registrering krävs"
+                }
+            },
+            "uses_title": "Vanliga användningsfall",
+            "uses": {
+                "puzzles": {
+                    "title": "Pussel och spel",
+                    "desc": "Skapa ordpussel, gåtor och idéer med omvänd text"
+                },
+                "encoding": {
+                    "title": "Enkel kodning",
+                    "desc": "Skapa grundläggande kodade meddelanden för skojs skull eller enkel förvirring"
+                },
+                "palindrome": {
+                    "title": "Palindromtestning",
+                    "desc": "Testa om ord eller fraser är palindromer genom att jämföra med omvänd version"
+                },
+                "creative": {
+                    "title": "Kreativt skrivande",
+                    "desc": "Lägg till konstnärlig stil till poesi och kreativt innehåll"
+                },
+                "social": {
+                    "title": "Sociala medier",
+                    "desc": "Skapa unika inlägg och kommentarer med omvänd text"
+                },
+                "testing": {
+                    "title": "Testning",
+                    "desc": "Testa strängmanipuleringsfunktioner i programmering"
+                }
+            },
+            "how_to": {
+                "title": "Hur man använder",
+                "step1": "Skriv in text",
+                "step1_desc": "Skriv eller klistra in texten du vill vända",
+                "step2": "Klicka på Omvänd",
+                "step2_desc": "Tryck på knappen \"Omvänd text\".",
+                "step3": "Granska utdata",
+                "step3_desc": "Kontrollera det omvända textresultatet",
+                "step4": "Kopiera resultat",
+                "step4_desc": "Klicka på \"Kopiera\" för att kopiera till urklipp",
+                "step5": "Använd var som helst",
+                "step5_desc": "Klistra in den omvända texten där det behövs"
+            },
+            "examples_title": "Omvändningsexempel",
+            "examples": {
+                "simple": "Enkel text:",
+                "phrases": "Fraser:",
+                "palindromes": "Palindromer:",
+                "numbers": "Tal:"
+            },
+            "faq_title": "Vanliga frågor",
+            "faq": {
+                "q1": "Hur fungerar textreversering?",
+                "a1": "Verktyget ändrar ordningen på tecken i din text. Den sista karaktären blir första, näst sista blir andra, och så vidare.",
+                "q2": "Bevarar det utrymmen?",
+                "a2": "Ja! Alla tecken inklusive mellanslag, skiljetecken och specialtecken bevaras och vänds i ordning.",
+                "q3": "Kan jag vända tillbaka det?",
+                "a3": "Ja! Klistra helt enkelt in den omvända texten tillbaka i inmatningen och vänd tillbaka den igen för att få den ursprungliga texten.",
+                "q4": "Vad är palindromer?",
+                "a4": "Palindromer är ord eller fraser som läser likadant framåt och bakåt, som \"racebil\" eller \"fru\". Använd det här verktyget för att testa dem!",
+                "q5": "Är detta verktyg gratis?",
+                "a5": "Ja! Helt gratis utan gränser. All bearbetning sker i din webbläsare för integritet och snabbhet."
+            }
         },
         "js": {
             "error_empty": "Vänligen skriv in text att vända",
             "success_reverse": "Texten vändes framgångsrikt!",
+            "error_no_copy": "Inget att kopiera! Vänligen vänd lite text först.",
             "success_copy": "Kopierat!"
         }
     },
@@ -158,11 +323,101 @@
             "btn_clear": "Rensa",
             "btn_copy": "Kopiera",
             "label_output": "Morsekod",
-            "ph_output": "... --- ..."
+            "ph_output": null
+        },
+        "content": {
+            "p1": "Konvertera text till morsekod direkt med vår gratis onlinekonverterare. Morsekod använder punkter (.) och bindestreck (-) för att representera bokstäver och siffror. Perfekt för att lära sig morsekod, övning i nödkommunikation eller skapa kodade meddelanden.",
+            "features": {
+                "standard": {
+                    "title": "Standard morsekod",
+                    "desc": "Använder internationell morsekodstandard"
+                },
+                "instant": {
+                    "title": "Omedelbar kodning",
+                    "desc": "Konvertera till morsekod i millisekunder"
+                },
+                "privacy": {
+                    "title": "Integritetsskyddad",
+                    "desc": "All bearbetning sker i din webbläsare"
+                },
+                "bulk": {
+                    "title": "Bulkbearbetning",
+                    "desc": "Konvertera flera ord samtidigt"
+                },
+                "alphanumeric": {
+                    "title": "Bokstäver och siffror",
+                    "desc": "Stöder A-Z och 0-9"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Inga gränser eller registrering krävs"
+                }
+            },
+            "uses_title": "Vanliga användningsfall",
+            "uses": {
+                "learning": {
+                    "title": "Lär dig morsekod",
+                    "desc": "Öva och lär dig morsekod genom att konvertera bekanta ord och fraser"
+                },
+                "emergency": {
+                    "title": "Akutövning",
+                    "desc": "Lär dig SOS och andra nödsignaler i morsekod"
+                },
+                "gaming": {
+                    "title": "Spel och pussel",
+                    "desc": "Skapa kodade meddelanden för spel och utrymningsrum"
+                },
+                "radio": {
+                    "title": "Skinka radio",
+                    "desc": "Öva för amatörradiolicensiering och kommunikation"
+                },
+                "edu": {
+                    "title": "Utbildning",
+                    "desc": "Lär eleverna om kommunikationshistoria och kodning"
+                },
+                "secret": {
+                    "title": "Hemliga meddelanden",
+                    "desc": "Skapa roliga kodade meddelanden för vänner"
+                }
+            },
+            "how_to": {
+                "title": "Hur man använder",
+                "step1": "Skriv in text",
+                "step1_desc": "Skriv texten du vill konvertera",
+                "step2": "Klicka på Konvertera",
+                "step2_desc": "Tryck på \"Konvertera till morsekod\"",
+                "step3": "Granska utdata",
+                "step3_desc": "Kontrollera morsekodresultatet",
+                "step4": "Kopiera resultat",
+                "step4_desc": "Klicka på \"Kopiera\" för att kopiera till urklipp",
+                "step5": "Använd morsekod",
+                "step5_desc": "Dela eller öva med det kodade meddelandet"
+            },
+            "examples_title": "Konverteringsexempel",
+            "examples": {
+                "sos": "SOS-signal:",
+                "word": "Enkelt ord:",
+                "numbers": "Tal:",
+                "phrase": "Fras:"
+            },
+            "faq_title": "Vanliga frågor",
+            "faq": {
+                "q1": "Vad är morsekod?",
+                "a1": "Morsekod är en metod för att koda text med hjälp av punkter (.) och bindestreck (-) för att representera bokstäver och siffror. Den uppfanns på 1830-talet för telegrafkommunikation.",
+                "q2": "Vad betyder SOS i morsekod?",
+                "a2": "SOS är ... --- ... (tre punkter, tre streck, tre punkter). Det är den internationella nödsignalen.",
+                "q3": "Kan jag konvertera siffror?",
+                "a3": "Ja! Verktyget stöder nummer 0-9, var och en med sitt eget morsekodmönster.",
+                "q4": "Används morsekod fortfarande idag?",
+                "a4": "Ja! Det används fortfarande inom flyg, maritim kommunikation, amatörradio och som ett tillgänglighetsverktyg.",
+                "q5": "Är detta verktyg gratis?",
+                "a5": "Ja! Helt gratis utan gränser. All bearbetning sker i din webbläsare för sekretess."
+            }
         },
         "js": {
             "error_empty": "Vänligen skriv in text att konvertera",
             "success_convert": "Konverterades till morsekod framgångsrikt!",
+            "error_no_copy": "Inget att kopiera! Vänligen konvertera lite text först.",
             "success_copy": "Kopierat!"
         }
     },
@@ -187,6 +442,27 @@
             "short_sentences": "Korta meningar",
             "chars_no_spaces": "Tecken (utan mellanslag)",
             "avg_word_length": "Gj.snittlig ordlängd"
+        },
+        "content": {
+            "main_title": "Gratis verktyg för ordräknare",
+            "main_description": "Räkna ord, tecken, meningar och stycken direkt. Perfekt för författare, studenter och SEO-proffs.",
+            "intro": "Vårt ordräknareverktyg ger realtidsstatistik om din text inklusive ordräkning, teckenantal, meningsantal, läsningstid och mer. Det är perfekt för uppsatser, artiklar, inlägg på sociala medier och SEO-innehållsoptimering.",
+            "features_title": "Drag",
+            "feature1_title": "Realtidsräkning",
+            "feature1_desc": "Se antalet ord och tecken uppdateras direkt när du skriver eller klistrar in text.",
+            "feature2_title": "Uppskattning av lästid",
+            "feature2_desc": "Beräkna hur lång tid det tar att läsa ditt innehåll baserat på genomsnittlig läshastighet.",
+            "feature3_title": "Meningsanalys",
+            "feature3_desc": "Identifiera långa och korta meningar för att förbättra läsbarheten och flödet.",
+            "feature4_title": "SEO optimering",
+            "feature4_desc": "Spåra teckenbegränsningar för metabeskrivningar, titlar och inlägg på sociala medier.",
+            "faq_title": "Vanliga frågor",
+            "faq1_q": "Hur exakt är ordräkningen?",
+            "faq1_a": "Vår ordräknare använder industristandardalgoritmer för att räkna ord korrekt. Den räknar ord separerade med mellanslag och ignorerar extra blanksteg, vilket ger dig exakta resultat som matchar verktyg som Microsoft Word och Google Docs.",
+            "faq2_q": "Vad anses vara en \"lång mening\"?",
+            "faq2_a": "En mening med mer än 20 ord anses vanligtvis vara lång. Långa meningar kan minska läsbarheten, så vårt verktyg lyfter fram dem för att hjälpa dig att förbättra din skrivtydlighet.",
+            "faq3_q": "Hur beräknas lästiden?",
+            "faq3_a": "Lästiden beräknas utifrån en genomsnittlig läshastighet på 200-250 ord per minut för vuxna. Detta ger dig en uppskattning av hur lång tid det tar att läsa ditt innehåll."
         }
     }
 }

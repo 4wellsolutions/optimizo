@@ -13,7 +13,7 @@
             "location_placeholder": "Ange stad, stat eller land...",
             "market_label": "Marknad / Språk",
             "device_label": "Enhetstyp",
-            "device_desktop": "Desktop",
+            "device_desktop": "Skrivbord",
             "device_mobile": "Mobil",
             "no_login": "Ingen inloggning krävs",
             "realtime_results": "Realtidsresultat"
@@ -48,7 +48,7 @@
             "serp_features_title": "Analysera Bing SERP-funktioner",
             "sf_snippets_title": "Utvalda utdrag (Featured Snippets)",
             "sf_snippets_desc": "Bing tillhandahåller ofta rika svar och \"intelligenta svar\" på position noll. Kontrollera om ditt innehåll fångar dessa mycket synliga platser.",
-            "sf_places_title": "Bing Places",
+            "sf_places_title": "Bing platser",
             "sf_places_desc": "Bings motsvarighet till Local Pack. Avgörande för lokala företag. Använd vår \"Plats\"-funktion för att verifiera din <strong>Bing Places</strong>-ranking.",
             "sf_visual_title": "Visuellt sök",
             "sf_visual_desc": "Bing betonar starkt visuella sökresultat. Övervaka hur dina bilder visas i bildtunga SERP-layouter.",
@@ -82,7 +82,7 @@
             "url_label": "Webbplatsens URL",
             "button": "Skanna efter trasiga länkar",
             "button_scanning": "Skannar...",
-            "legend_ok": "200 OK",
+            "legend_ok": "200 okej",
             "legend_err": "404/Fel"
         },
         "progress": {
@@ -128,7 +128,7 @@
             "cc_4": "❌ <strong>Extern länkröta:</strong> Tredjepartswebbplatser som tar bort eller flyttar sitt innehåll",
             "cc_5": "❌ <strong>Domänutgång:</strong> Länkade webbplatser som går offline permanent",
             "cc_6": "❌ <strong>Protokolländringar:</strong> Migrering från HTTP till HTTPS utan korrekta omdirigeringar",
-            "best_practices_title": ""
+            "best_practices_title": "Bästa metoder för att hantera trasiga länkar"
         },
         "benefits": {
             "ux_title": "Användarupplevelse",
@@ -202,7 +202,7 @@
             "location_placeholder": "Ange stad, land eller postnummer",
             "domain_label": "Google-domän",
             "device_label": "Enhetstyp",
-            "device_desktop": "Desktop",
+            "device_desktop": "Skrivbord",
             "device_mobile": "Mobil (Smartphone)",
             "no_login": "Ingen inloggning krävs",
             "realtime_results": "Realtidsresultat"
@@ -223,7 +223,7 @@
             "serp_features_title": "Förstå Google SERP-funktioner",
             "feature_snippet_title": "Utvalda utdrag (Featured Snippets)",
             "feature_snippet_desc": "Även kända som \"svarsrutor\", dessa visas för cirka 12% av sökfrågorna. Vårt verktyg hjälper dig kontrollera om du äger denna utmärkta fastighet.",
-            "feature_local_title": "Local Pack",
+            "feature_local_title": "Lokalt paket",
             "feature_local_desc": "Den kartbaserade listan över 3 lokala företag. Avgörande för fysiska butiker. Använd vår \"Plats\"-funktion för att verifiera din närvaro.",
             "feature_paa_title": "Folk frågar även (People Also Ask)",
             "feature_paa_desc": "Dragspelsliknande frågor relaterade till användarens sökfråga. Ranking här kan driva betydande medvetenhetstrafik. Använd vår serp sökordskontroll för att identifiera dessa möjligheter.",
@@ -386,16 +386,16 @@
             "meta_desc_optimal_value": "150-160 tecken",
             "meta_desc_best_practice": "Bästa praxis:",
             "meta_desc_best_value": "Skriv engagerande text med en uppmaning till handling (Call to Action).",
-            "og_title": "Open Graph (Social)",
+            "og_title": "Öppna graf (socialt)",
             "og_desc": "Kontrollerar hur ditt innehåll visas när det delas på sociala medier (Facebook, LinkedIn).",
             "og_key_tags": "Nyckeltaggar:",
-            "og_key_value": "og:title, og:description, og:image",
+            "og_key_value": "og:titel, og:beskrivning, og:bild",
             "og_platform": "Plattformar:",
             "og_platform_value": "Facebook, LinkedIn, Pinterest",
-            "twitter_title": "Twitter Cards",
+            "twitter_title": "Twitter-kort",
             "twitter_desc": "Specifika metataggar för att optimera hur ditt innehåll visas på Twitter.",
             "twitter_key_tags": "Nyckeltaggar:",
-            "twitter_key_value": "twitter:card, twitter:title, twitter:image",
+            "twitter_key_value": "twitter:kort, twitter:titel, twitter:bild",
             "twitter_types": "Typer:",
             "twitter_types_value": "Sammanfattning, Sammanfattning med stor bild"
         },
@@ -464,7 +464,7 @@
         },
         "labels": {
             "initializing": "Initierar...",
-            "desktop": "Desktop",
+            "desktop": "Skrivbord",
             "mobile": "Mobil"
         },
         "content": {
@@ -538,7 +538,7 @@
             "url_label": "Ange URL(er) att kontrollera (En per rad, max 10)",
             "url_placeholder": "https://exempel.se\nhttps://annan-sida.se\nhttps://tredje-sida.se",
             "canonical_check": "Kontrollera även domänkanonisk (www vs non-www)",
-            "user_agent_label": "User Agent",
+            "user_agent_label": "Användaragent",
             "user_agent_default": "Standard (Webbläsare)",
             "user_agent_googlebot": "Googlebot (Google)",
             "user_agent_bingbot": "Bingbot (Bing)",
@@ -633,6 +633,57 @@
             "a5": "Helst noll eller en. Google följer vanligtvis upp till 5 hopp, men varje hopp ökar laddningstiden."
         }
     },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Hreflang Checker - Gratis Online Tag Validator",
+            "description": "Validera dina hreflang-taggar för att säkerställa att Google visar rätt språk- eller regions-URL:er för din publik.",
+            "h1": "Hreflang Checker",
+            "subtitle": "Gratis verktyg för att extrahera och validera hreflang-attribut för internationell SEO."
+        },
+        "form": {
+            "url_label": "Ange URL att kontrollera",
+            "url_placeholder": "https://exempel.se/sida",
+            "user_agent_label": "Användaragent",
+            "user_agent_default": "Standard (Webbläsare)",
+            "user_agent_googlebot": "Googlebot (Desktop)",
+            "user_agent_bingbot": "Bingbot (Desktop)",
+            "button": "Kontrollera Hreflang-taggar"
+        },
+        "content": {
+            "main_title": "Hreflang-taggkontroll",
+            "main_subtitle": "Se till att ditt internationella innehåll når rätt publik. Validera hreflang-implementering och fixa vanliga SEO-fel.",
+            "intro": "Hreflang-taggar är avgörande för webbplatser som betjänar flera språk eller länder. Vårt gratis verktyg extraherar och validerar `rel=\"alternate\" hreflang=\"x\"`-taggar från din sidas HTML-huvud och HTTP-rubriker. Det kontrollerar ömsesidiga (retur-)taggar för att garantera att Google och andra sökmotorer indexerar ditt lokaliserade innehåll korrekt.",
+            "features_title": "Varför kontrollera dina Hreflang-taggar?",
+            "feature1_title": "Validera ömsesidiga taggar",
+            "feature1_desc": "Hreflang-taggar måste fungera i par. Vårt verktyg kontrollerar automatiskt om sida A länkar till sida B, och om sida B länkar tillbaka till sida A.",
+            "feature2_title": "Upptäck vanliga fel",
+            "feature2_desc": "Hitta saknade returtaggar, ogiltiga språkkoder (ISO 639-1) och felaktiga landskoder (ISO 3166-1 Alpha-2).",
+            "feature3_title": "Förhindra SEO-problem",
+            "feature3_desc": "Felaktig hreflang-implementering kan leda till problem med duplicerat innehåll och att fel språkversioner visas i sökresultat.",
+            "how_title": "Hur man använder Hreflang-kontrollen",
+            "step1_title": "Ange URL",
+            "step1_desc": "Klistra in hela URL:en för sidan du vill analysera (t.ex. https://exempel.se).",
+            "step2_title": "Välj User Agent",
+            "step2_desc": "Det rekommenderas att kontrollera med Googlebot, men du kan också kontrollera som standardwebbläsare.",
+            "step3_title": "Analysera resultat",
+            "step3_desc": "Vi hämtar sidan och listar alla hittade alternativa länkar tillsammans med deras valideringsstatus.",
+            "step4_title": "Fixa problem",
+            "step4_desc": "Om felmeddelandet 'Saknad returtagg' visas, uppdatera dina refererade sidor så att de inkluderar den ömsesidiga länken.",
+            "faq_title": "Vanliga frågor",
+            "faq1_q": "Vad är en hreflang-tagg?",
+            "faq1_a": "Hreflang är ett HTML-attribut som används för att ange språk och geografisk inriktning för en webbsida. Det berättar för sökmotorer vilken version av en sida som ska visas för användare i olika länder eller språk.",
+            "faq2_q": "Varför är returtaggar viktiga?",
+            "faq2_a": "Google kräver returlänkar för att förhindra att någon godtyckligt gör anspråk på en sida på en annan webbplats som en alternativ version av sin egen. Om sida A länkar till sida B, måste sida B länka tillbaka till sida A.",
+            "faq3_q": "Kontrollerar detta verktyg x-default-taggen?",
+            "faq3_a": "Ja, vårt verktyg identifierar och validerar `x-default` hreflang-taggen, som används för icke-matchande språk eller strikta landsväljare.",
+            "faq4_q": "Kan jag kontrollera hreflang i HTTP-rubriker?",
+            "faq4_a": "Ja! Vi kontrollerar både HTML `<head>`-sektionen och HTTP-svarsrubriker för attributet `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
+            "faq5_q": "Vad händer om jag har hreflang-fel?",
+            "faq5_a": "Sökmotorer kan ignorera dina ogiltiga taggar, vilket leder till att rätt språkversioner inte visas för rätt användare, eller potentiella straff för duplicerat innehåll.",
+            "faq6_q": "Är detta verktyg gratis?",
+            "faq6_a": "Ja, du kan utföra obegränsade kontroller gratis för att säkerställa att din internationella SEO är perfekt."
+        }
+    },
     "slug-generator": {
         "meta": {
             "title": "URL Slug Generator - Gratis SEO-vänligt verktyg online",
@@ -721,7 +772,7 @@
             "location_label": "Plats (Stad)",
             "yahoo_domain_label": "Yahoo-domän",
             "device_label": "Enhetstyp",
-            "device_desktop": "Desktop",
+            "device_desktop": "Skrivbord",
             "device_mobile": "Mobil (Smartphone)",
             "no_login": "Ingen inloggning krävs",
             "realtime_results": "Realtidsresultat"
@@ -773,11 +824,11 @@
         },
         "editor": {
             "title": "Validera Sitemap",
-            "btn_xml_input": "XML Input",
-            "btn_url_input": "URL Input",
+            "btn_xml_input": "XML-inmatning",
+            "btn_url_input": "URL-inmatning",
             "label_xml": "Klistra in XML",
             "ph_xml": "Klistra in din sitemap XML-kod här...",
-            "label_url": "Sitemap URL",
+            "label_url": "Webbplatskartans URL",
             "ph_url": "https://exempel.se/sitemap.xml",
             "help_url": "Ange hela webbadressen till din sitemap.xml-fil",
             "btn_fetch": "Hämta",
@@ -828,57 +879,6 @@
             "faq_size_answer": "50MB eller 50 000 URL:er.",
             "faq_localhost_question": "Fungerar det på localhost?",
             "faq_localhost_answer": "Ja, genom att klistra in XML-kod."
-        }
-    },
-    "hreflang-checker": {
-        "meta": {
-            "title": "Hreflang Checker - Gratis Online Tag Validator",
-            "description": "Validera dina hreflang-taggar för att säkerställa att Google visar rätt språk- eller regions-URL:er för din publik.",
-            "h1": "Hreflang Checker",
-            "subtitle": "Gratis verktyg för att extrahera och validera hreflang-attribut för internationell SEO."
-        },
-        "form": {
-            "url_label": "Ange URL att kontrollera",
-            "url_placeholder": "https://exempel.se/sida",
-            "user_agent_label": "User Agent",
-            "user_agent_default": "Standard (Webbläsare)",
-            "user_agent_googlebot": "Googlebot (Desktop)",
-            "user_agent_bingbot": "Bingbot (Desktop)",
-            "button": "Kontrollera Hreflang-taggar"
-        },
-        "content": {
-            "main_title": "Hreflang-taggkontroll",
-            "main_subtitle": "Se till att ditt internationella innehåll når rätt publik. Validera hreflang-implementering och fixa vanliga SEO-fel.",
-            "intro": "Hreflang-taggar är avgörande för webbplatser som betjänar flera språk eller länder. Vårt gratis verktyg extraherar och validerar `rel=\"alternate\" hreflang=\"x\"`-taggar från din sidas HTML-huvud och HTTP-rubriker. Det kontrollerar ömsesidiga (retur-)taggar för att garantera att Google och andra sökmotorer indexerar ditt lokaliserade innehåll korrekt.",
-            "features_title": "Varför kontrollera dina Hreflang-taggar?",
-            "feature1_title": "Validera ömsesidiga taggar",
-            "feature1_desc": "Hreflang-taggar måste fungera i par. Vårt verktyg kontrollerar automatiskt om sida A länkar till sida B, och om sida B länkar tillbaka till sida A.",
-            "feature2_title": "Upptäck vanliga fel",
-            "feature2_desc": "Hitta saknade returtaggar, ogiltiga språkkoder (ISO 639-1) och felaktiga landskoder (ISO 3166-1 Alpha-2).",
-            "feature3_title": "Förhindra SEO-problem",
-            "feature3_desc": "Felaktig hreflang-implementering kan leda till problem med duplicerat innehåll och att fel språkversioner visas i sökresultat.",
-            "how_title": "Hur man använder Hreflang-kontrollen",
-            "step1_title": "Ange URL",
-            "step1_desc": "Klistra in hela URL:en för sidan du vill analysera (t.ex. https://exempel.se).",
-            "step2_title": "Välj User Agent",
-            "step2_desc": "Det rekommenderas att kontrollera med Googlebot, men du kan också kontrollera som standardwebbläsare.",
-            "step3_title": "Analysera resultat",
-            "step3_desc": "Vi hämtar sidan och listar alla hittade alternativa länkar tillsammans med deras valideringsstatus.",
-            "step4_title": "Fixa problem",
-            "step4_desc": "Om felmeddelandet 'Saknad returtagg' visas, uppdatera dina refererade sidor så att de inkluderar den ömsesidiga länken.",
-            "faq_title": "Vanliga frågor",
-            "faq1_q": "Vad är en hreflang-tagg?",
-            "faq1_a": "Hreflang är ett HTML-attribut som används för att ange språk och geografisk inriktning för en webbsida. Det berättar för sökmotorer vilken version av en sida som ska visas för användare i olika länder eller språk.",
-            "faq2_q": "Varför är returtaggar viktiga?",
-            "faq2_a": "Google kräver returlänkar för att förhindra att någon godtyckligt gör anspråk på en sida på en annan webbplats som en alternativ version av sin egen. Om sida A länkar till sida B, måste sida B länka tillbaka till sida A.",
-            "faq3_q": "Kontrollerar detta verktyg x-default-taggen?",
-            "faq3_a": "Ja, vårt verktyg identifierar och validerar `x-default` hreflang-taggen, som används för icke-matchande språk eller strikta landsväljare.",
-            "faq4_q": "Kan jag kontrollera hreflang i HTTP-rubriker?",
-            "faq4_a": "Ja! Vi kontrollerar både HTML `<head>`-sektionen och HTTP-svarsrubriker för attributet `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
-            "faq5_q": "Vad händer om jag har hreflang-fel?",
-            "faq5_a": "Sökmotorer kan ignorera dina ogiltiga taggar, vilket leder till att rätt språkversioner inte visas för rätt användare, eller potentiella straff för duplicerat innehåll.",
-            "faq6_q": "Är detta verktyg gratis?",
-            "faq6_a": "Ja, du kan utföra obegränsade kontroller gratis för att säkerställa att din internationella SEO är perfekt."
         }
     }
 }
