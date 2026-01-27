@@ -82,6 +82,17 @@ class SitemapController extends Controller
             $xml .= '  </url>' . "\n";
         }
 
+        // Blog pages
+        $posts = \App\Models\Post::published()->get();
+        foreach ($posts as $post) {
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . url($urlPrefix . '/blog/' . $post->slug) . '</loc>' . "\n";
+            $xml .= '    <changefreq>daily</changefreq>' . "\n";
+            $xml .= '    <priority>0.7</priority>' . "\n";
+            $xml .= '    ' . $this->addAlternateLinks('/blog/' . $post->slug) . "\n";
+            $xml .= '  </url>' . "\n";
+        }
+
         $xml .= '</urlset>';
 
         return response($xml, 200)->header('Content-Type', 'application/xml');

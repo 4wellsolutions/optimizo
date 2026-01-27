@@ -9,9 +9,14 @@
             <h5 class="mb-1 text-dark font-weight-bold">Edit Post</h5>
             <small class="text-muted">Updating: <span class="font-weight-bold text-dark">{{ $post->title }}</span></small>
         </div>
-        <a href="{{ route('admin.posts.index') }}" class="btn btn-outline-secondary btn-sm">
-            Cancel
-        </a>
+        <div class="d-flex align-items-center">
+            <a href="{{ route('blog.preview', $post->slug) }}" class="btn btn-outline-info btn-sm mr-2" target="_blank">
+                <i class="fas fa-eye mr-1"></i> Preview
+            </a>
+            <a href="{{ route('admin.posts.index') }}" class="btn btn-outline-secondary btn-sm">
+                Cancel
+            </a>
+        </div>
     </div>
 
     <form id="postForm">
