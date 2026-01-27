@@ -55,7 +55,8 @@
     <div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-transparent border-0 shadow-none relative">
-                <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close">
+                <button type="button" class="btn-close-custom" data-dismiss="modal" data-bs-dismiss="modal"
+                    aria-label="Close">
                     <i class="fas fa-times"></i>
                 </button>
                 <div class="modal-body p-0 text-center">
@@ -125,9 +126,9 @@
             Swal.fire({
                 title: 'Edit Media',
                 html: `
-                            <input id="alt_text" class="form-control mb-2" placeholder="Alt Text" value="${altText || ''}">
-                            <textarea id="caption" class="form-control" placeholder="Caption">${caption || ''}</textarea>
-                        `,
+                                <input id="alt_text" class="form-control mb-2" placeholder="Alt Text" value="${altText || ''}">
+                                <textarea id="caption" class="form-control" placeholder="Caption">${caption || ''}</textarea>
+                            `,
                 showCancelButton: true,
                 confirmButtonText: 'Save',
                 preConfirm: () => {
