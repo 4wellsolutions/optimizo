@@ -62,6 +62,11 @@ class BlogController extends Controller
             $data['status'] = 'draft';
         }
 
+        // Default author if not provided (fallback to first user)
+        if (empty($data['author_id'])) {
+            $data['author_id'] = $request->user()?->id ?? \App\Models\User::first()?->id ?? 1;
+        }
+
         if ($data['status'] === 'published' && empty($data['published_at'])) {
             $data['published_at'] = now();
         }
