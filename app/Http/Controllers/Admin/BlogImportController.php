@@ -152,25 +152,19 @@ class BlogImportController extends Controller
         }
     }
 
-    private function resolveUrl($baseUrl, $relativeUrl)
-    {
-        if (parse_url($relativeUrl, PHP_URL_SCHEME) != '')
-            return $relativeUrl;
-
-        // Simple resolution (can be improved)
-        return rtrim($baseUrl, '/') . '/' . ltrim($relativeUrl, '/');
-    }
-
     private function downloadAndSaveImage($url)
     {
         try {
-            $contents = Http::get($url)->body();
-            if (!$contents)
+            $response = Http::get($url);
+            if (!$response->successful()) {
                 return null;
+            }
+            $contents = $response->body();
 
             $name = basename(parse_url($url, PHP_URL_PATH));
-            if (empty($name))
+            if (empty($name)) {
                 $name = uniqid() . '.jpg';
+            }
 
             // Ensure extension
             $ext = pathinfo($name, PATHINFO_EXTENSION);
@@ -178,31 +172,86 @@ class BlogImportController extends Controller
                 $name .= '.jpg';
             }
 
-            $filename = 'imported/' . uniqid() . '_' . $name;
+            // Use the new public/images/Y/m/d structure
+            $now = now();
+            $directory = 'images/' . $now->format('Y/m/d');
+            $filename = uniqid() . '_' . $name;
+            $path = $directory . '/' . $filename;
 
-            // Save to public disk
-            // Assuming 'public' disk is configured to link to valid public URL
-            $path = Storage::disk('public')->put($filename, $contents);
+            // Ensure directory exists in public disk
+            if (!Storage::disk('public_folder')->exists($directory)) {
+                Storage::disk('public_folder')->makeDirectory($directory);
+            }
 
-            if (!$path)
-                return null;
+            // Save to public disk (public_folder points to public_path())
+            Storage::disk('public_folder')->put($path, $contents);
 
             // Create Media Record
             $media = Media::create([
                 'user_id' => auth()->id() ?? 1,
                 'original_name' => $name,
                 'filename' => $filename,
-                'mime_type' => 'image/' . (pathinfo($name, PATHINFO_EXTENSION) ?: 'jpeg'),
+                'mime_type' => 'image/' . ($ext ?: 'jpeg'),
                 'size' => strlen($contents),
-                'path' => $filename,
-                'url' => Storage::url($filename)
+                'path' => $path,
+                'url' => asset($path)
             ]);
 
             return $media;
 
         } catch (\Exception $e) {
-            // Log error but continue
+            \Log::error('Import image download failed: ' . $e->getMessage());
             return null;
+        }
+    }
+
+    public function importXml(Request $request)
+    {
+        $request->validate([
+            'xml_file' => 'required|file|mimes:xml,txt'
+        ]);
+
+        $file = $request->file('xml_file');
+        $xmlContent = file_get_contents($file->getRealPath());
+
+        try {
+            $xml = simplexml_load_string($xmlContent, 'SimpleXMLElement', LIBXML_NOCDATA);
+            $namespaces = $xml->getNamespaces(true);
+
+            $count = 0;
+            foreach ($xml->channel->item as $item) {
+                $wp = $item->children($namespaces['wp']);
+                $content = $item->children($namespaces['content']);
+
+                // Only import posts
+                if ((string) $wp->post_type !== 'post') {
+                    continue;
+                }
+
+                $title = (string) $item->title;
+                $slug = (string) $wp->post_name ?: Str::slug($title);
+                $postContent = (string) $content->encoded;
+                $status = (string) $wp->status === 'publish' ? 'published' : 'draft';
+                $publishedAt = (string) $wp->post_date !== '0000-00-00 00:00:00' ? (string) $wp->post_date : now();
+
+                // Create Post
+                $post = Post::create([
+                    'title' => $title,
+                    'slug' => $slug . '-' . uniqid(),
+                    'content' => $postContent,
+                    'status' => $status,
+                    'published_at' => $publishedAt,
+                    'author_id' => auth()->id() ?? 1,
+                    'meta_title' => $title,
+                ]);
+
+                $count++;
+            }
+
+            return back()->with('success', "Successfully imported {$count} posts. Please note: image downloading for XML is currently in progress.");
+
+        } catch (\Exception $e) {
+            return back()->with('error', 'XML Import failed: ' . $e->getMessage());
         }
     }
 }
