@@ -34,7 +34,7 @@
                             <div class="h-8 w-px bg-gray-100 hidden sm:block"></div>
                             <div class="flex flex-wrap gap-2">
                                 @foreach($post->categories as $cat)
-                                    <a href="{{ localeRoute('blog.category', $cat->slug) }}"
+                                    <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
                                         class="px-3 py-1 bg-gray-50 text-gray-600 rounded-full text-xs font-bold hover:bg-indigo-50 hover:text-indigo-600 transition-colors">
                                         {{ $cat->name }}
                                     </a>
@@ -57,7 +57,7 @@
                                     <span
                                         class="text-sm font-bold text-gray-500 mr-2 uppercase tracking-wider self-center">{{ __('Tags:') }}</span>
                                     @foreach($post->tags as $tag)
-                                        <a href="{{ localeRoute('blog.tag', $tag->slug) }}"
+                                        <a href="{{ localeRoute('blog.tag', ['slug' => $tag->slug]) }}"
                                             class="px-3 py-1 bg-gray-100 text-gray-500 rounded-lg text-sm hover:bg-gray-200 transition-colors">
                                             #{{ $tag->name }}
                                         </a>
@@ -81,7 +81,7 @@
                     </h3>
                     <div class="space-y-2">
                         @foreach($categories as $cat)
-                            <a href="{{ localeRoute('blog.category', $cat->slug) }}"
+                            <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
                                 class="flex items-center justify-between group">
                                 <span
                                     class="text-gray-600 group-hover:text-indigo-600 transition-colors font-medium">{{ $cat->name }}</span>
@@ -102,7 +102,7 @@
                     </h3>
                     <div class="space-y-6">
                         @foreach($recentPosts as $recent)
-                            <a href="{{ localeRoute('blog.show', $recent->slug) }}" class="group block">
+                            <a href="{{ localeRoute('blog.show', ['slug' => $recent->slug]) }}" class="group block">
                                 <div class="text-xs text-gray-400 mb-1">{{ $recent->published_at->format('M d, Y') }}</div>
                                 <h4 class="font-bold text-gray-900 group-hover:text-indigo-600 transition-colors leading-snug">
                                     {{ $recent->title }}

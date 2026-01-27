@@ -24,7 +24,8 @@
                 <article
                     class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col group">
                     {{-- Featured Image Placeholder or actual --}}
-                    <a href="{{ localeRoute('blog.show', $post->slug) }}" class="relative aspect-video overflow-hidden">
+                    <a href="{{ localeRoute('blog.show', ['slug' => $post->slug]) }}"
+                        class="relative aspect-video overflow-hidden">
                         @if($post->featured_image)
                             <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -44,7 +45,7 @@
                     <div class="p-6 flex-grow flex flex-col">
                         <div class="flex items-center gap-2 mb-4">
                             @foreach($post->categories as $cat)
-                                <a href="{{ localeRoute('blog.category', $cat->slug) }}"
+                                <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
                                     class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-xs font-bold hover:bg-indigo-100 transition-colors">
                                     {{ $cat->name }}
                                 </a>
@@ -53,7 +54,7 @@
                         </div>
 
                         <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">
-                            <a href="{{ localeRoute('blog.show', $post->slug) }}">{{ $post->title }}</a>
+                            <a href="{{ localeRoute('blog.show', ['slug' => $post->slug]) }}">{{ $post->title }}</a>
                         </h2>
 
                         <p class="text-gray-600 line-clamp-3 mb-6 flex-grow">
@@ -68,7 +69,7 @@
                                 </div>
                                 <span class="text-sm font-medium text-gray-700">{{ $post->author->name }}</span>
                             </div>
-                            <a href="{{ localeRoute('blog.show', $post->slug) }}"
+                            <a href="{{ localeRoute('blog.show', ['slug' => $post->slug]) }}"
                                 class="ml-auto text-indigo-600 font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                                 {{ __('Read More') }}
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
