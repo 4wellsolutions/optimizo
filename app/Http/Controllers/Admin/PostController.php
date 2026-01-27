@@ -11,13 +11,35 @@ use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::with(['author', 'categories', 'tags'])
-            ->latest()
-            ->get();
+        $query = Post::with(['author', 'categories', 'tags'])->latest();
 
-        return view('admin.posts.index', compact('posts'));
+        // Apply Search Filter
+        if ($request->filled('search')) {
+            $search = $request->search;
+            $query->where(function ($q) use ($search) {
+                $q->where('title', 'like', "%{$search}%")
+                    ->orWhere('content', 'like', "%{$search}%");
+            });
+        }
+
+        // Apply Status Filter
+        if ($request->filled('status')) {
+            $query->where('status', $request->status);
+        }
+
+        // Apply Category Filter
+        if ($request->filled('category_id')) {
+            $query->whereHas('categories', function ($q) use ($request) {
+                $q->where('blog_categories.id', $request->category_id);
+            });
+        }
+
+        $posts = $query->paginate(20)->withQueryString();
+        $categories = Category::all();
+
+        return view('admin.posts.index', compact('posts', 'categories'));
     }
 
     public function create()
