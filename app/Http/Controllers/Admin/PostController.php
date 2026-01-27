@@ -15,7 +15,7 @@ class PostController extends Controller
     {
         $posts = Post::with(['author', 'categories', 'tags'])
             ->latest()
-            ->paginate(20);
+            ->get();
 
         return view('admin.posts.index', compact('posts'));
     }

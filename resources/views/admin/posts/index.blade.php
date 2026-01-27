@@ -63,11 +63,6 @@
                 </tbody>
             </table>
         </div>
-        <div class="card-footer clearfix">
-            <div class="float-right pagination-sm">
-                {{ $posts->links() }}
-            </div>
-        </div>
     </div>
 @endsection
 
