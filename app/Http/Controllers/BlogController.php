@@ -28,6 +28,7 @@ class BlogController extends Controller
 
         $recentPosts = Post::published()
             ->where('id', '!=', $post->id)
+            ->orderBy('published_at', 'desc')
             ->limit(5)
             ->get();
 
