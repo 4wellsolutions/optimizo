@@ -8,19 +8,19 @@
     {{-- Schema.org JSON-LD --}}
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
+            "@@context": "https://schema.org",
+            "@@type": "BlogPosting",
             "headline": "{{ addslashes($post->title) }}",
             "image": "{{ $post->featured_image_url }}",
             "author": {
-                "@type": "Person",
+                "@@type": "Person",
                 "name": "{{ addslashes($post->author->name) }}"
             },
             "publisher": {
-                "@type": "Organization",
+                "@@type": "Organization",
                 "name": "{{ addslashes(config('app.name')) }}",
                 "logo": {
-                    "@type": "ImageObject",
+                    "@@type": "ImageObject",
                     "url": "{{ asset('logo.png') }}"
                 }
             },
@@ -28,31 +28,31 @@
             "dateModified": "{{ $post->updated_at->toIso8601String() }}",
             "description": "{{ addslashes($post->meta_description ?: Str::limit(strip_tags($post->content), 160)) }}",
             "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "{{ url()->current() }}"
+                "@@type": "WebPage",
+                "@@id": "{{ url()->current() }}"
             }
         }
         </script>
 
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
+            "@@context": "https://schema.org",
+            "@@type": "BreadcrumbList",
             "itemListElement": [
                 {
-                    "@type": "ListItem",
+                    "@@type": "ListItem",
                     "position": 1,
                     "name": "Home",
                     "item": "{{ localeRoute('home') }}"
                 },
                 {
-                    "@type": "ListItem",
+                    "@@type": "ListItem",
                     "position": 2,
                     "name": "Blog",
                     "item": "{{ localeRoute('blog.index') }}"
                 },
                 {
-                    "@type": "ListItem",
+                    "@@type": "ListItem",
                     "position": 3,
                     "name": "{{ addslashes($post->title) }}",
                     "item": "{{ url()->current() }}"
@@ -285,61 +285,61 @@
 
     <style>
         .blog-content {
-            @apply text-gray-800 leading-[1.85] font-medium tracking-tight;
+            @@apply text-gray-800 leading-[1.85] font-medium tracking-tight;
         }
 
         .blog-content h2 {
-            @apply text-3xl md:text-5xl font-black text-gray-950 mt-20 mb-10 tracking-tighter leading-[1.1];
+            @@apply text-3xl md:text-5xl font-black text-gray-950 mt-20 mb-10 tracking-tighter leading-[1.1];
         }
 
         .blog-content h3 {
-            @apply text-2xl md:text-4xl font-black text-gray-900 mt-16 mb-8 tracking-tighter leading-[1.1];
+            @@apply text-2xl md:text-4xl font-black text-gray-900 mt-16 mb-8 tracking-tighter leading-[1.1];
         }
 
         .blog-content p {
-            @apply mb-10 text-xl md:text-2xl opacity-[0.85];
+            @@apply mb-10 text-xl md:text-2xl opacity-[0.85];
         }
 
         .blog-content ul,
         .blog-content ol {
-            @apply mb-12 ml-6 md:ml-12 space-y-6 text-xl;
+            @@apply mb-12 ml-6 md:ml-12 space-y-6 text-xl;
         }
 
         .blog-content ul {
-            @apply list-disc marker:text-indigo-600;
+            @@apply list-disc marker:text-indigo-600;
         }
 
         .blog-content ol {
-            @apply list-decimal marker:text-indigo-600 marker:font-black;
+            @@apply list-decimal marker:text-indigo-600 marker:font-black;
         }
 
         .blog-content li {
-            @apply pl-6;
+            @@apply pl-6;
         }
 
         .blog-content img {
-            @apply rounded-[3rem] shadow-[0_40px_80px_rgba(0, 0, 0, 0.15)] my-20 w-full hover:scale-[1.02] transition-transform duration-700 cursor-zoom-in;
+            @@apply rounded-[3rem] shadow-[0_40px_80px_rgba(0, 0, 0, 0.15)] my-20 w-full hover:scale-[1.02] transition-transform duration-700 cursor-zoom-in;
         }
 
         .blog-content blockquote {
-            @apply relative py-12 px-10 md:px-20 my-20 text-3xl md:text-4xl font-black text-gray-950 border-none bg-indigo-50/50 rounded-[4rem] italic;
+            @@apply relative py-12 px-10 md:px-20 my-20 text-3xl md:text-4xl font-black text-gray-950 border-none bg-indigo-50/50 rounded-[4rem] italic;
         }
 
         .blog-content blockquote::before {
             content: '“';
-            @apply absolute -top-8 left-10 text-[10rem] text-indigo-600/20 font-serif leading-none;
+            @@apply absolute -top-8 left-10 text-[10rem] text-indigo-600/20 font-serif leading-none;
         }
 
         .blog-content pre {
-            @apply bg-gray-950 text-indigo-200 p-10 md:p-14 rounded-[3.5rem] overflow-x-auto my-20 shadow-2xl selection:bg-indigo-900 selection:text-white border border-white/10;
+            @@apply bg-gray-950 text-indigo-200 p-10 md:p-14 rounded-[3.5rem] overflow-x-auto my-20 shadow-2xl selection:bg-indigo-900 selection:text-white border border-white/10;
         }
 
         .blog-content a {
-            @apply text-indigo-600 font-extrabold underline decoration-[4px] decoration-indigo-200 underline-offset-8 hover:decoration-indigo-500 transition-all;
+            @@apply text-indigo-600 font-extrabold underline decoration-[4px] decoration-indigo-200 underline-offset-8 hover:decoration-indigo-500 transition-all;
         }
 
         /* Animations */
-        @keyframes slow-zoom {
+        @@keyframes slow-zoom {
             0% {
                 transform: scale(1.05);
             }
@@ -354,8 +354,31 @@
         }
     </style>
 
-    <script>     document.addEventListener('scroll', () => {         const h = document.documentElement,             b = document.body,             st = 'scrollTop',             sh = 'scrollHeight';         const progress = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;         const progressBar = document.getElementById('readingProgress');         if (progressBar) progressBar.style.width = progress + '%';     });
-         // Add reveal animations to headings     const observer = new IntersectionObserver((entries) => {         entries.forEach(entry => {             if (entry.isIntersecting) {                 entry.target.style.opacity = '1';                 entry.target.style.transform = 'translateY(0)';             }         });     }, { threshold: 0.1 });
-         document.querySelectorAll('.blog-content h2, .blog-content h3').forEach(el => {         el.style.opacity = '0';         el.style.transform = 'translateY(30px)';         el.style.transition = 'all 1s cubic-bezier(0.22, 1, 0.36, 1)';         observer.observe(el);     });
+    <script>
+        document.addEventListener('scroll', () => {
+            const h = document.documentElement,
+                b = document.body,
+                st = 'scrollTop',
+                sh = 'scrollHeight';
+            const progress = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+            const progressBar = document.getElementById('readingProgress');
+            if (progressBar) progressBar.style.width = progress + '%';
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.blog-content h2, .blog-content h3').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 1s cubic-bezier(0.22, 1, 0.36, 1)';
+            observer.observe(el);
+        });
     </script>
 @endsection

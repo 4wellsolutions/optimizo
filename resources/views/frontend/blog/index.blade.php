@@ -5,40 +5,40 @@
 @push('scripts')
     {{-- Schema.org JSON-LD --}}
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "{{ localeRoute('home') }}"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Blog",
-                    "item": "{{ localeRoute('blog.index') }}"
-                }
-                @if(isset($category))
-                    ,{
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "{{ addslashes($category->name) }}",
-                        "item": "{{ url()->current() }}"
-                    }
-                @elseif(isset($tag))
-                    ,{
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "#{{ addslashes($tag->name) }}",
-                        "item": "{{ url()->current() }}"
-                    }
-                @endif
-            ]
-        }
-        </script>
+    {
+        "@@context": "https://schema.org",
+        "@@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "{{ localeRoute('home') }}"
+            },
+            {
+                "@@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "{{ localeRoute('blog.index') }}"
+            }
+            @if(isset($category))
+            ,{
+                "@@type": "ListItem",
+                "position": 3,
+                "name": "{{ addslashes($category->name) }}",
+                "item": "{{ url()->current() }}"
+            }
+            @elseif(isset($tag))
+            ,{
+                "@@type": "ListItem",
+                "position": 3,
+                "name": "#{{ addslashes($tag->name) }}",
+                "item": "{{ url()->current() }}"
+            }
+            @endif
+        ]
+    }
+    </script>
 @endpush
 
 @section('content')
@@ -62,7 +62,6 @@
             @forelse($posts as $post)
                 <article
                     class="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 border border-gray-100/50 flex flex-col group h-full">
-                    {{-- Featured Image Placeholder or actual --}}
                     <a href="{{ localeRoute('blog.show', ['slug' => $post->slug]) }}"
                         class="relative aspect-video overflow-hidden">
                         @if($post->featured_image_url)
