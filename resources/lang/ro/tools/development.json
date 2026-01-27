@@ -391,7 +391,7 @@
                 "2": "<strong>Vezi Rezultatele:</strong> Consultă CSS-ul procesat în câmpul de rezultat, alături de statistici",
                 "3": "<strong>Copiază:</strong> Fă clic pe \"Copiază\" pentru a transfera CSS-ul în clipboard",
                 "4": "<strong>Folosește în Producție:</strong> Înlocuiește fișierul original cu versiunea minificată",
-                "5": ""
+                "5": "Descărcați sau copiați CSS-ul minimizat și utilizați-l pe site-ul dvs. de producție pentru a reduce dimensiunea fișierului și pentru a îmbunătăți timpul de încărcare."
             },
             "best_practices_title": "💡 Cele mai bune practici",
             "best_practices_list": {
@@ -399,7 +399,7 @@
                 "2": "<strong>Combină fișierele:</strong> Unește mai multe fișiere CSS înainte de minificare",
                 "3": "<strong>Testează amănunțit:</strong> Testează întotdeauna CSS-ul minificat pentru a te asigura că totul funcționează",
                 "4": "<strong>Folosește instrumente de build:</strong> Integrează minificarea în procesul tău de automatizare",
-                "5": ""
+                "5": "Păstrați o versiune neminificată pentru dezvoltare și depanare."
             },
             "faq_title": "❓ Întrebări Frecvente",
             "faq": {
@@ -525,7 +525,7 @@
                 "1": "Lipește HTML-ul sau textul în câmpul de introducere",
                 "2": "Fă clic pe butonul de procesare pentru a converti",
                 "3": "Copiază rezultatul în clipboard",
-                "4": ""
+                "4": "Copiați rezultatul codificat/decodificat și utilizați-l în aplicațiile dvs. HTML, XML sau web."
             },
             "examples_title": "💡 Exemple de Codificare HTML",
             "examples": {
@@ -538,8 +538,8 @@
                     "code": "Tom & Jerry → Tom &amp; Jerry"
                 },
                 "3": {
-                    "title": "",
-                    "code": ""
+                    "title": "Codificarea caracterelor speciale",
+                    "code": "&lt;script&gt;alertă(„XSS”)&lt;/script&gt; → &amp;lt;script&amp;gt;alerta(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
                 }
             },
             "faq_title": "❓ Întrebări Frecvente",
@@ -596,7 +596,7 @@
                 "1": "Fă clic pe \"Minifică HTML\" pentru a comprima codul",
                 "2": "Fă clic pe \"Înfrumusețează HTML\" pentru a formata cu indentare",
                 "3": "Copiază rezultatul folosind butonul \"Copiază Rezultatul\"",
-                "4": ""
+                "4": "Utilizați codul HTML minimizat în mediul dvs. de producție pentru a reduce lățimea de bandă și pentru a îmbunătăți viteza de încărcare a paginii."
             },
             "faq_title": "Întrebări Frecvente",
             "faq": {
@@ -648,7 +648,7 @@
                 "3": "✅ <strong>Fără Instalare:</strong> Funcționează direct în browserul tău",
                 "4": "✅ <strong>Gratuit pentru totdeauna:</strong> 100% gratuit, fără limitări",
                 "5": "✅ <strong>Confidențialitate:</strong> Toată conversia are loc local în browserul tău",
-                "6": ""
+                "6": "Păstrează blocurile de cod și evidențierea sintaxelor pentru documentația tehnică."
             },
             "uses_title": "🎯 Cazuri Comune de Utilizare",
             "uses": {
@@ -676,8 +676,8 @@
                     "list": [
                         "Titluri (H1-H6)",
                         "Paragrafe",
-                        "Bold & Strong",
-                        "Italic & Emphasis",
+                        "Îndrăzneț și puternic",
+                        "Italică și accent",
                         "Cod & Preformatat",
                         "Citate (Blockquotes)"
                     ]
@@ -762,7 +762,7 @@
                 "2": "Folosește butonul \"Încarcă Exemplu\" pentru a vedea un cod HTML demonstrativ",
                 "3": "Apasă \"Șterge\" pentru a începe de la zero cu un editor gol",
                 "4": "Testează diferite elemente HTML și vezi cum se randează",
-                "5": ""
+                "5": "Analizați rezultatul redat și structura DOM pentru a depana problemele de aspect sau pentru a verifica redarea HTML."
             },
             "uses_title": "Cazuri Comune de Utilizare",
             "uses_desc": "Vizualizatoarele HTML sunt elemente esențiale pentru diverse sarcini de dezvoltare web. Dezvoltatorii le folosesc pentru a testa rapid fragmentele înainte de a le integra în proiecte. Studenții pot experimenta cu diferite etichete și atribute pentru a le înțelege efectele. Marketerii prin e-mail folosesc vizualizatoarele pentru a previzualiza șabloanele înainte de trimitere. Creatorii de conținut pot vizualiza cum va apărea conținutul lor pe site-uri.",
@@ -889,8 +889,8 @@
                     "desc": "Fă clic pe butonul de copiere pentru a copia JSON-ul formatat în clipboard"
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "Formatați sau Reduceți",
+                    "desc": "Alegeți să înfrumusețați (formatați cu indentare) sau să micșorați (comprimați pe o singură linie) datele dvs. JSON în funcție de nevoile dvs."
                 }
             },
             "uses_title": "Cazuri comune de utilizare a formatării JSON",
@@ -1083,7 +1083,7 @@
             "opt_comma": "Virgulă (,)",
             "opt_semicolon": "Punct și virgulă (;)",
             "opt_tab": "Tab",
-            "opt_pipe": "Pipe (|)",
+            "opt_pipe": "țeavă (|)",
             "btn_convert": "Convertește în CSV",
             "btn_copy": "Copiază CSV",
             "btn_download": "Descarcă CSV",
@@ -1264,10 +1264,9 @@
         },
         "editor": {
             "btn_convert": "Convertește în XML",
-            "btn_copy": "Copiază XML",
-            "btn_download": "Descarcă XML",
-            "btn_example": "Încarcă Exemplu",
             "btn_clear": "Șterge",
+            "btn_copy": "Copiază XML",
+            "btn_example": "Încarcă Exemplu",
             "label_input": "Introducere JSON",
             "ph_input": "Lipește datele tale JSON aici...",
             "label_output": "Rezultat XML",
@@ -1277,46 +1276,77 @@
             "hero_title": "Conversie Rapidă JSON în XML",
             "hero_subtitle": "Instrument gratuit de transformare a datelor pe partea clientului",
             "p1": "Convertorul nostru online JSON în XML permite dezvoltatorilor și analiștilor de date să transforme rapid obiectele și tablourile JSON în fișiere XML bine structurate. Acest instrument este ideal pentru integrarea sistemelor, lucrul cu API-uri legacy sau pregătirea datelor pentru aplicații care necesită formatul XML. Cu procesare 100% în browser, datele tale sunt întotdeauna private și securizate.",
+            "what_title": "Ce este conversia JSON în XML?",
+            "what_desc": "Conversia JSON în XML este procesul de traducere a datelor structurate în JSON — un format ușor popular în aplicațiile web moderne — în XML, un limbaj de marcare folosit adesea în sistemele de întreprindere, serviciile SOAP și fișierele de configurare. Instrumentul nostru compensează acest decalaj, făcând transformarea datelor fără întreruperi.",
             "features_title": "Caracteristici Principale",
             "features": {
-                "fast": {
-                    "title": "Conversie Instantanee",
-                    "desc": "Obține rezultatul XML în milisecunde după ce apeși convertire."
+                "instant": {
+                    "title": "Conversie instantanee",
+                    "desc": "Obțineți rezultatele XML în milisecunde."
                 },
-                "secure": {
-                    "title": "Privat și Sigur",
-                    "desc": "Nu trimitem datele tale pe niciun server. Totul rămâne în browserul tău."
+                "privacy": {
+                    "title": "Confidențialitate garantată",
+                    "desc": "Toate datele rămân în browser; nu se incarca nimic."
                 },
-                "tree": {
-                    "title": "Structură Ierarhică",
-                    "desc": "Convertește corect obiectele imbricate în elemente și atribute XML."
+                "copy": {
+                    "title": "Export ușor",
+                    "desc": "Copiați în clipboard sau utilizați direct rezultatul."
                 },
-                "export": {
-                    "title": "Export Ușor",
-                    "desc": "Descarcă XML-ul ca fișier .xml sau copiază-l direct în clipboard."
+                "format": {
+                    "title": "XML curat",
+                    "desc": "Generează cod XML bine formatat și lizibil."
+                },
+                "free": {
+                    "title": "100% gratuit",
+                    "desc": "Fără înregistrare, fără limite, fără costuri."
+                },
+                "offline": {
+                    "title": "Capacitate offline",
+                    "desc": "Funcționează fără internet odată ce pagina este încărcată."
                 }
             },
             "uses_title": "Când să convertești JSON în XML?",
             "uses": {
-                "api": {
+                "migration": {
+                    "title": "Migrarea sistemului",
+                    "desc": "Transformați datele JSON pentru import în sisteme vechi bazate pe XML."
+                },
+                "integration": {
                     "title": "Integrare API",
-                    "desc": "Mută datele de la API-uri REST moderne bazate pe JSON la sisteme legacy care acceptă doar XML."
+                    "desc": "Pregătiți date pentru API-urile SOAP sau API-urile REST care necesită intrare XML."
                 },
                 "config": {
                     "title": "Fișiere de Configurare",
                     "desc": "Transformă setările de configurare JSON în formate XML necesare pentru diverse programe software."
                 },
-                "data": {
-                    "title": "Schimb de Date",
-                    "desc": "Facilitează transferul de date între diferite platforme și aplicații cu cerințe de format variate."
+                "enterprise": {
+                    "title": "Servicii pentru întreprinderi",
+                    "desc": "Standardizați datele pentru magistralele de servicii corporative și middleware."
+                },
+                "docs": {
+                    "title": "Documentatie Tehnica",
+                    "desc": "Generați fragmente XML pentru ghiduri sau specificații tehnice."
+                },
+                "export": {
+                    "title": "Export de date",
+                    "desc": "Exportați cu ușurință date structurate în format XML pentru raportare."
                 }
             },
             "how_title": "📚 Cum să folosești",
-            "how_steps": [
-                "Lipește <strong>JSON</strong>-ul tău în câmpul de intrare",
-                "Fă clic pe <strong>Convertește în XML</strong> pentru a genera rezultatul",
-                "<strong>Copiază</strong> sau <strong>descarcă</strong> XML-ul pentru proiectul tău"
-            ],
+            "how_steps": {
+                "1": {
+                    "title": "Lipiți JSON",
+                    "desc": "Lipiți codul dvs. JSON în câmpul „Intrare JSON”."
+                },
+                "2": {
+                    "title": "Convertit",
+                    "desc": "Faceți clic pe „Convertire în XML” pentru a genera rezultatul."
+                },
+                "3": {
+                    "title": "Export rezultate",
+                    "desc": "Copiați XML-ul generat și utilizați-l în proiectul dvs."
+                }
+            },
             "faq_title": "❓ Întrebări Frecvente",
             "faq": {
                 "q1": "Cum sunt gestionate tablourile JSON?",
@@ -1324,14 +1354,29 @@
                 "q2": "Este necesară înregistrarea?",
                 "a2": "Nu, instrumentul nostru este complet gratuit și poate fi folosit fără înregistrare.",
                 "q3": "Poate procesa JSON complex?",
-                "a3": "Da, convertorul gestionează obiecte profund imbricate și structuri de date complexe."
+                "a3": "Da, convertorul gestionează obiecte profund imbricate și structuri de date complexe.",
+                "q4": "Există o limită de dimensiune?",
+                "a4": "Performanța depinde de memoria browserului dvs., dar gestionează cu ușurință majoritatea fișierelor.",
+                "q5": "Folosește API-uri externe?",
+                "a5": "Nu, este un instrument autonom care rulează nativ pe dispozitivul dvs.",
+                "q6": "XML-ul este formatat?",
+                "a6": "Da, rezultatul este „destul de imprimat” cu indentare adecvată pentru lizibilitate."
+            },
+            "tips_title": "Sfaturi profesionale",
+            "tips_list": {
+                "1": "Validați-vă JSON înainte de conversie pentru a evita erorile de sintaxă.",
+                "2": "Utilizați butonul „Șterge” pentru un nou început atunci când convertiți mai multe fișiere.",
+                "3": "Verificați etichetele XML pentru a vă asigura că se potrivesc cu schema țintă așteptată.",
+                "4": "Folosiți „Exemplu de încărcare” dacă nu sunteți sigur de formatul de intrare.",
+                "5": "Marcați această pagină pentru acces rapid la instrumentele dvs. de dezvoltare."
             }
         },
         "js": {
             "error_empty": "Te rugăm să introduci date JSON pentru a converti",
+            "success_convert": "✓ JSON a fost convertit în XML cu succes!",
             "error_convert": "Eroare la convertirea JSON în XML: ",
-            "success_copy": "✓ XML copiat în clipboard!",
-            "success_download": "Se descarcă fișierul XML..."
+            "error_no_copy": "Nu există conținut de copiat. Vă rugăm să convertiți mai întâi JSON.",
+            "success_copy": "✓ XML copiat în clipboard!"
         }
     },
     "json-to-yaml-converter": {
@@ -1377,7 +1422,7 @@
             "uses_title": "Cazuri Comune de Utilizare",
             "uses": {
                 "docker": {
-                    "title": "Docker",
+                    "title": "Docher",
                     "desc": "Transformă configurațiile de containere JSON în YAML pentru Docker Compose."
                 },
                 "config": {

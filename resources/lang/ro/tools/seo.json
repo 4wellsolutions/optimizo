@@ -103,7 +103,7 @@
         "results": {
             "download": "Descarcă Raport CSV",
             "detailed_analysis": "Analiză Detaliată",
-            "status": "Status",
+            "status": "Stare",
             "link_url": "URL Link",
             "anchor_text": "Text Anchor",
             "type": "Tip"
@@ -118,7 +118,7 @@
             "how_works_step1": "<strong>Scanare:</strong> Introdu URL-ul paginii și vom extrage toate link-urile.",
             "how_works_step2": "<strong>Verificare:</strong> Testăm fiecare link pentru a-i verifica statusul (200, 404, 301, etc.).",
             "how_works_step3": "<strong>Raportare:</strong> Obține un raport detaliat cu link-urile care trebuie reparate.",
-            "pro_tip_title": "💡 Pro Tip:",
+            "pro_tip_title": "💡 Sfat profesionist:",
             "pro_tip_desc": "Rulează această verificare regulat (lunar sau trimestrial) pentru a prinde link-urile moarte înainte ca ele să-ți afecteze clasamentul.",
             "types_title": "Tipuri de Link-uri Inactive",
             "common_causes_title": "Cauze Comune ale Link-urilor Inactive",
@@ -128,7 +128,7 @@
             "cc_4": "❌ <strong>Link Rot extern:</strong> Site-urile terțe elimină sau mută conținutul lor.",
             "cc_5": "❌ <strong>Expirarea domeniului:</strong> Site-urile către care trimiți link-uri dispar definitiv.",
             "cc_6": "❌ <strong>Schimbări de protocol:</strong> Migrări HTTP la HTTPS fără redirecționări adecvate.",
-            "best_practices_title": ""
+            "best_practices_title": "Cele mai bune practici pentru gestionarea link-urilor întrerupte"
         },
         "benefits": {
             "ux_title": "Experiența Utilizatorului",
@@ -139,7 +139,7 @@
             "maintenance_desc": "Identifică și repară rapid problemele înainte ca acestea să afecteze reputația și vizibilitatea site-ului."
         },
         "link_types": {
-            "type1_title": "🔴 404 Not Found",
+            "type1_title": "🔴 404 Nu a fost găsit",
             "type1_desc": "Cea mai comună eroare. Pagina nu mai există pe server.",
             "type2_title": "🟡 301/302 Redirecționări",
             "type2_desc": "Pagina s-a mutat. Deși nu este 'defectă', prea multe redirecționări încetinesc site-ul.",
@@ -353,9 +353,9 @@
         "results_labels": {
             "other_tags": "Alte Tag-uri Meta",
             "seo_score": "Scor SEO",
-            "viewport": "Viewport",
-            "charset": "Charset",
-            "robots": "Robots"
+            "viewport": "Vizualizarea",
+            "charset": "Set de caractere",
+            "robots": "Roboți"
         },
         "content": {
             "main_title": "Analizor Meta Tag-uri",
@@ -386,18 +386,18 @@
             "meta_desc_optimal_value": "150-160 caractere",
             "meta_desc_best_practice": "Cea mai bună practică:",
             "meta_desc_best_value": "Scrie un text convingător cu un îndemn la acțiune (CTA).",
-            "og_title": "Open Graph (Social)",
+            "og_title": "Grafic deschis (social)",
             "og_desc": "Controlează cum apare conținutul tău când este partajat pe rețelele sociale (Facebook, LinkedIn).",
             "og_key_tags": "Tag-uri Cheie:",
-            "og_key_value": "og:title, og:description, og:image",
+            "og_key_value": "og:titlu, og:descriere, og:imagine",
             "og_platform": "Platforme:",
             "og_platform_value": "Facebook, LinkedIn, Pinterest",
-            "twitter_title": "Twitter Cards",
+            "twitter_title": "Carduri Twitter",
             "twitter_desc": "Tag-uri specifice pentru optimizarea modului în care apare conținutul tău pe Twitter.",
             "twitter_key_tags": "Tag-uri Cheie:",
-            "twitter_key_value": "twitter:card, twitter:title, twitter:image",
+            "twitter_key_value": "twitter:card, twitter:titlu, twitter:imagine",
             "twitter_types": "Tipuri:",
-            "twitter_types_value": "Summary, Summary with Large Image"
+            "twitter_types_value": "Rezumat, Rezumat cu imagine mare"
         },
         "benefits": {
             "b1_title": "Clasament Mai Bun",
@@ -507,12 +507,6 @@
         }
     },
     "pdf-report": {
-        "meta": {
-            "title": "SEO PDF Report Generator - Instrument de audit online gratuit",
-            "description": "Generează rapoarte SEO PDF profesionale pentru site-ul tău. Analiză detaliată și recomandări acționabile oricând.",
-            "h1": "Generator de rapoarte PDF",
-            "subtitle": "Generează rapoarte SEO detaliate în format PDF pentru clienții tăi"
-        },
         "seo": {
             "title": "Raport PDF - Audit SEO Profesional"
         },
@@ -525,6 +519,12 @@
             "audit_title": "Audit SEO Optimizo",
             "analysis_methods": "Metode de Analiză Detaliate",
             "recommendation": "RECOMANDARE:"
+        },
+        "meta": {
+            "title": "SEO PDF Report Generator - Instrument de audit online gratuit",
+            "description": "Generează rapoarte SEO PDF profesionale pentru site-ul tău. Analiză detaliată și recomandări acționabile oricând.",
+            "h1": "Generator de rapoarte PDF",
+            "subtitle": "Generează rapoarte SEO detaliate în format PDF pentru clienții tăi"
         }
     },
     "redirect-checker": {
@@ -538,7 +538,7 @@
             "url_label": "Introdu URL-urile de Verificat (unul pe rând, max 10)",
             "url_placeholder": "https://example.com\nhttps://alt-site.com",
             "canonical_check": "Verifică și canonicitatea domeniului (www vs non-www)",
-            "user_agent_label": "User Agent",
+            "user_agent_label": "Agent utilizator",
             "user_agent_default": "Implicit (Browser)",
             "user_agent_googlebot": "Googlebot (Google)",
             "user_agent_bingbot": "Bingbot (Bing)",
@@ -631,6 +631,57 @@
             "a4": "Da, este un pas obligatoriu pentru securitate și SEO. Se recomandă o redirecționare 301 la nivel de server.",
             "q5": "Câte redirecționări sunt acceptabile?",
             "a5": "Ideal ar fi zero sau una. Google urmărește de obicei până la 5 hopuri, dar fiecare hop crește timpul de încărcare."
+        }
+    },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Hreflang Checker - Validator de etichete online gratuit",
+            "description": "Validează etichetele hreflang pentru a te asigura că Google afișează URL-urile corecte de limbă sau regiune publicului tău.",
+            "h1": "Hreflang Checker",
+            "subtitle": "Instrument gratuit pentru extragerea și validarea atributelor hreflang pentru SEO internațional."
+        },
+        "form": {
+            "url_label": "Introdu URL pentru verificare",
+            "url_placeholder": "https://exemplu.ro/pagina",
+            "user_agent_label": "Agent utilizator",
+            "user_agent_default": "Implicit (Browser)",
+            "user_agent_googlebot": "Googlebot (Desktop)",
+            "user_agent_bingbot": "Bingbot (Desktop)",
+            "button": "Verifică Etichete Hreflang"
+        },
+        "content": {
+            "main_title": "Verificator Etichete Hreflang",
+            "main_subtitle": "Asigură-te că conținutul tău internațional ajunge la publicul potrivit. Validează implementarea hreflang și corectează erorile comune SEO.",
+            "intro": "Etichetele Hreflang sunt esențiale pentru site-urile care servesc mai multe limbi sau țări. Instrumentul nostru gratuit extrage și validează etichetele `rel=\"alternate\" hreflang=\"x\"` din antetul HTML al paginii tale și antetele HTTP. Verifică etichetele reciproce (de retur) pentru a garanta că Google și alte motoare de căutare indexează corect conținutul tău localizat.",
+            "features_title": "De ce să verifici etichetele Hreflang?",
+            "feature1_title": "Validare etichete reciproce",
+            "feature1_desc": "Etichetele Hreflang trebuie să funcționeze în perechi. Instrumentul nostru verifică automat dacă pagina A trimite către pagina B, și dacă pagina B trimite înapoi către pagina A.",
+            "feature2_title": "Detectare erori comune",
+            "feature2_desc": "Găsește etichete de retur lipsă, coduri de limbă invalide (ISO 639-1) și coduri de țară incorecte (ISO 3166-1 Alpha-2).",
+            "feature3_title": "Prevenire probleme SEO",
+            "feature3_desc": "Implementarea incorectă a hreflang poate duce la probleme de conținut duplicat și la afișarea paginilor în limba greșită în rezultatele căutării.",
+            "how_title": "Cum să folosești verificatorul Hreflang",
+            "step1_title": "Introdu URL",
+            "step1_desc": "Lipește URL-ul complet al paginii pe care dorești să o analizezi (ex. https://exemplu.ro).",
+            "step2_title": "Selectează User Agent",
+            "step2_desc": "Se recomandă verificarea cu Googlebot, dar poți verifica și ca browser standard.",
+            "step3_title": "Analizează rezultatele",
+            "step3_desc": "Vom prelua pagina și vom lista toate link-urile alternative găsite împreună cu statusul lor de validare.",
+            "step4_title": "Corectează problemele",
+            "step4_desc": "Dacă apar erori 'Etichetă de retur lipsă', actualizează paginile referențiate pentru a include link-ul reciproc.",
+            "faq_title": "Întrebări Frecvente",
+            "faq1_q": "Ce este o etichetă hreflang?",
+            "faq1_a": "Hreflang este un atribut HTML folosit pentru a specifica limba și țintirea geografică a unei pagini web. Îi spune motoarelor de căutare ce versiune a unei pagini să arate utilizatorilor din diferite țări sau limbi.",
+            "faq2_q": "De ce sunt importante etichetele de retur?",
+            "faq2_a": "Google necesită link-uri de retur pentru a preveni ca cineva să revendice arbitrar o pagină de pe un alt site ca fiind o versiune alternativă a propriei pagini. Dacă pagina A trimite la pagina B, pagina B trebuie să trimită înapoi la pagina A.",
+            "faq3_q": "Verifică acest instrument eticheta x-default?",
+            "faq3_a": "Da, instrumentul nostru identifică și validează eticheta hreflang `x-default`, folosită pentru limbi nepotrivite sau selectoare de țară stricte.",
+            "faq4_q": "Pot verifica hreflang în antetele HTTP?",
+            "faq4_a": "Da! Verificăm atât secțiunea HTML `<head>` cât și antetele de răspuns HTTP pentru atribute `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
+            "faq5_q": "Ce se întâmplă dacă am erori hreflang?",
+            "faq5_a": "Motoarele de căutare pot ignora etichetele invalide, ceea ce duce la neafișarea versiunilor lingvistice corecte utilizatorilor potriviți sau posibile penalizări pentru conținut duplicat.",
+            "faq6_q": "Este acest instrument gratuit?",
+            "faq6_a": "Da, poți efectua verificări nelimitate gratuit pentru a te asigura că SEO-ul tău internațional este perfect."
         }
     },
     "slug-generator": {
@@ -828,57 +879,6 @@
             "faq_size_answer": "50MB sau 50.000 URL-uri.",
             "faq_localhost_question": "Funcționează pe localhost?",
             "faq_localhost_answer": "Da, prin lipirea codului XML."
-        }
-    },
-    "hreflang-checker": {
-        "meta": {
-            "title": "Hreflang Checker - Validator de etichete online gratuit",
-            "description": "Validează etichetele hreflang pentru a te asigura că Google afișează URL-urile corecte de limbă sau regiune publicului tău.",
-            "h1": "Hreflang Checker",
-            "subtitle": "Instrument gratuit pentru extragerea și validarea atributelor hreflang pentru SEO internațional."
-        },
-        "form": {
-            "url_label": "Introdu URL pentru verificare",
-            "url_placeholder": "https://exemplu.ro/pagina",
-            "user_agent_label": "User Agent",
-            "user_agent_default": "Implicit (Browser)",
-            "user_agent_googlebot": "Googlebot (Desktop)",
-            "user_agent_bingbot": "Bingbot (Desktop)",
-            "button": "Verifică Etichete Hreflang"
-        },
-        "content": {
-            "main_title": "Verificator Etichete Hreflang",
-            "main_subtitle": "Asigură-te că conținutul tău internațional ajunge la publicul potrivit. Validează implementarea hreflang și corectează erorile comune SEO.",
-            "intro": "Etichetele Hreflang sunt esențiale pentru site-urile care servesc mai multe limbi sau țări. Instrumentul nostru gratuit extrage și validează etichetele `rel=\"alternate\" hreflang=\"x\"` din antetul HTML al paginii tale și antetele HTTP. Verifică etichetele reciproce (de retur) pentru a garanta că Google și alte motoare de căutare indexează corect conținutul tău localizat.",
-            "features_title": "De ce să verifici etichetele Hreflang?",
-            "feature1_title": "Validare etichete reciproce",
-            "feature1_desc": "Etichetele Hreflang trebuie să funcționeze în perechi. Instrumentul nostru verifică automat dacă pagina A trimite către pagina B, și dacă pagina B trimite înapoi către pagina A.",
-            "feature2_title": "Detectare erori comune",
-            "feature2_desc": "Găsește etichete de retur lipsă, coduri de limbă invalide (ISO 639-1) și coduri de țară incorecte (ISO 3166-1 Alpha-2).",
-            "feature3_title": "Prevenire probleme SEO",
-            "feature3_desc": "Implementarea incorectă a hreflang poate duce la probleme de conținut duplicat și la afișarea paginilor în limba greșită în rezultatele căutării.",
-            "how_title": "Cum să folosești verificatorul Hreflang",
-            "step1_title": "Introdu URL",
-            "step1_desc": "Lipește URL-ul complet al paginii pe care dorești să o analizezi (ex. https://exemplu.ro).",
-            "step2_title": "Selectează User Agent",
-            "step2_desc": "Se recomandă verificarea cu Googlebot, dar poți verifica și ca browser standard.",
-            "step3_title": "Analizează rezultatele",
-            "step3_desc": "Vom prelua pagina și vom lista toate link-urile alternative găsite împreună cu statusul lor de validare.",
-            "step4_title": "Corectează problemele",
-            "step4_desc": "Dacă apar erori 'Etichetă de retur lipsă', actualizează paginile referențiate pentru a include link-ul reciproc.",
-            "faq_title": "Întrebări Frecvente",
-            "faq1_q": "Ce este o etichetă hreflang?",
-            "faq1_a": "Hreflang este un atribut HTML folosit pentru a specifica limba și țintirea geografică a unei pagini web. Îi spune motoarelor de căutare ce versiune a unei pagini să arate utilizatorilor din diferite țări sau limbi.",
-            "faq2_q": "De ce sunt importante etichetele de retur?",
-            "faq2_a": "Google necesită link-uri de retur pentru a preveni ca cineva să revendice arbitrar o pagină de pe un alt site ca fiind o versiune alternativă a propriei pagini. Dacă pagina A trimite la pagina B, pagina B trebuie să trimită înapoi la pagina A.",
-            "faq3_q": "Verifică acest instrument eticheta x-default?",
-            "faq3_a": "Da, instrumentul nostru identifică și validează eticheta hreflang `x-default`, folosită pentru limbi nepotrivite sau selectoare de țară stricte.",
-            "faq4_q": "Pot verifica hreflang în antetele HTTP?",
-            "faq4_a": "Da! Verificăm atât secțiunea HTML `<head>` cât și antetele de răspuns HTTP pentru atribute `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
-            "faq5_q": "Ce se întâmplă dacă am erori hreflang?",
-            "faq5_a": "Motoarele de căutare pot ignora etichetele invalide, ceea ce duce la neafișarea versiunilor lingvistice corecte utilizatorilor potriviți sau posibile penalizări pentru conținut duplicat.",
-            "faq6_q": "Este acest instrument gratuit?",
-            "faq6_a": "Da, poți efectua verificări nelimitate gratuit pentru a te asigura că SEO-ul tău internațional este perfect."
         }
     }
 }

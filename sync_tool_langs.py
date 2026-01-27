@@ -4,14 +4,21 @@ from deep_translator import GoogleTranslator
 
 def sync_dict(en_dict, target_dict, translator, path=""):
     updated = {}
+    # Ensure target_dict is actually a dict
+    if not isinstance(target_dict, dict):
+        target_dict = {}
     for key, en_value in en_dict.items():
         current_path = f"{path}.{key}" if path else key
         
         if isinstance(en_value, dict):
             sub_target = target_dict.get(key, {})
+            # If sub_target is not a dict, reset it
+            if not isinstance(sub_target, dict):
+                sub_target = {}
             updated[key] = sync_dict(en_value, sub_target, translator, current_path)
         elif isinstance(en_value, list):
             sub_target = target_dict.get(key, [])
+
             updated_list = []
             for i, item in enumerate(en_value):
                 try:

@@ -9,7 +9,7 @@
         "input": {
             "title": "Lipește Șirul Base64",
             "desc": "Lipește codul mai jos pentru a vizualiza imaginea",
-            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
+            "placeholder": "date:image/png;base64,iVBORw0KGgo...",
             "btn_decode": "Decodifică Imaginea"
         },
         "result": {
@@ -230,7 +230,8 @@
                 "Comprimă imaginile înainte de a le urca pe site-uri sociale",
                 "Folosește JPG pentru poze și PNG pentru grafică cu transparență",
                 "Consideră formatul WebP pentru browsere moderne",
-                "Previzualizează întotdeauna imaginea înainte de descărcare"
+                "Previzualizează întotdeauna imaginea înainte de descărcare",
+                "Păstrați fișierele originale ca rezervă înainte de comprimare"
             ],
             "privacy_title": "100% Privat și Sigur",
             "privacy_desc": "Toată compresia are loc direct în browser folosind JavaScript. Imaginile tale nu sunt trimise la serverele noastre, asigurând confidențialitate totală.",
@@ -755,6 +756,13 @@
                     "Încorporarea în email-uri (suportul SVG este slab în clienții de mail).",
                     "Folosirea în editoare video sau unelte grafice simple (Canva, Paint)."
                 ]
+            },
+            "faq": {
+                "title": "Întrebări frecvente",
+                "q1": "De ce să convertiți SVG în PNG?",
+                "a1": "Formatul PNG este acceptat universal în toate browserele și aplicațiile, în timp ce SVG poate avea probleme de compatibilitate. Convertirea în PNG este utilă pentru semnăturile de e-mail, rețelele sociale și aplicațiile care nu acceptă grafică vectorială.",
+                "q2": "PNG suportă transparența ca SVG?",
+                "a2": "Da! PNG acceptă transparența, ceea ce îl face perfect pentru logo-uri și elemente grafice cu fundal transparent. Convertorul nostru păstrează transparența la conversia din SVG în PNG."
             }
         },
         "js": {
