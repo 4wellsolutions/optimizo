@@ -102,6 +102,7 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="{{ localeRoute('home') }}" class="nav-link">{{ __('navigation.home') }}</a>
+                    <a href="{{ localeRoute('blog.index') }}" class="nav-link">{{ __('navigation.blog') }}</a>
 
                     <!-- Categories Dropdown -->
                     <div x-data="{ open: false }" @click.away="open = false" class="relative">
@@ -213,6 +214,7 @@
 
             <div class="px-4 py-3 space-y-1">
                 <a href="{{ localeRoute('home') }}" class="block nav-link">{{ __('navigation.home') }}</a>
+                <a href="{{ localeRoute('blog.index') }}" class="block nav-link">{{ __('navigation.blog') }}</a>
 
                 <!-- Categories Section -->
                 <div class="pt-2 pb-1" x-data="{ open: false }">
