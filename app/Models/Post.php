@@ -76,6 +76,28 @@ class Post extends Model
         return Str::limit(strip_tags($this->content), 200);
     }
 
+    public function getFeaturedImageUrlAttribute()
+    {
+        if (!$this->featured_image) {
+            return null;
+        }
+
+        if (Str::startsWith($this->featured_image, ['http://', 'https://'])) {
+            return $this->featured_image;
+        }
+
+        if (Str::startsWith($this->featured_image, 'images/')) {
+            return asset($this->featured_image);
+        }
+
+        // For legacy paths that might already start with /storage/
+        if (Str::startsWith($this->featured_image, ['/storage/', 'storage/'])) {
+            return asset(ltrim($this->featured_image, '/'));
+        }
+
+        return asset('storage/' . $this->featured_image);
+    }
+
     // Auto-generate slug from title
     protected static function boot()
     {

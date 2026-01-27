@@ -23,7 +23,7 @@
                 @foreach($media as $item)
                     <div class="col-md-2 col-sm-4 col-6 mb-3 media-item" data-id="{{ $item->id }}">
                         <div class="card">
-                            <img src="{{ asset('storage/' . $item->path) }}" class="card-img-top" alt="{{ $item->alt_text }}"
+                            <img src="{{ $item->url }}" class="card-img-top" alt="{{ $item->alt_text }}"
                                 style="height: 150px; object-fit: cover;">
                             <div class="card-body p-2">
                                 <p class="card-text small text-truncate">{{ $item->original_name }}</p>
@@ -33,8 +33,7 @@
                                         class="btn btn-info btn-sm">
                                         <i class="fas fa-edit"></i>
                                     </button>
-                                    <button onclick="copyUrl('{{ asset('storage/' . $item->path) }}')"
-                                        class="btn btn-success btn-sm">
+                                    <button onclick="copyUrl('{{ $item->url }}')" class="btn btn-success btn-sm">
                                         <i class="fas fa-copy"></i>
                                     </button>
                                     <button onclick="deleteMedia({{ $item->id }})" class="btn btn-danger btn-sm">
@@ -78,9 +77,9 @@
             Swal.fire({
                 title: 'Edit Media',
                 html: `
-                <input id="alt_text" class="form-control mb-2" placeholder="Alt Text" value="${altText || ''}">
-                <textarea id="caption" class="form-control" placeholder="Caption">${caption || ''}</textarea>
-            `,
+                    <input id="alt_text" class="form-control mb-2" placeholder="Alt Text" value="${altText || ''}">
+                    <textarea id="caption" class="form-control" placeholder="Caption">${caption || ''}</textarea>
+                `,
                 showCancelButton: true,
                 confirmButtonText: 'Save',
                 preConfirm: () => {

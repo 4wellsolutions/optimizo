@@ -26,8 +26,8 @@
                     {{-- Featured Image Placeholder or actual --}}
                     <a href="{{ localeRoute('blog.show', ['slug' => $post->slug]) }}"
                         class="relative aspect-video overflow-hidden">
-                        @if($post->featured_image)
-                            <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
+                        @if($post->featured_image_url)
+                            <img src="{{ $post->featured_image_url }}" alt="{{ $post->title }}"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         @else
                             <div

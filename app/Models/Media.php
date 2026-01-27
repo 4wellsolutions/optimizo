@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Str;
 
 class Media extends Model
 {
@@ -18,6 +19,26 @@ class Media extends Model
         'caption',
         'user_id'
     ];
+
+    protected $appends = ['url'];
+
+    public function getUrlAttribute($value)
+    {
+        if ($value && Str::startsWith($value, ['http://', 'https://', '/'])) {
+            return $value;
+        }
+
+        if (Str::startsWith($this->path, 'images/')) {
+            return asset($this->path);
+        }
+
+        // For legacy paths that might already start with /storage/ or storage/
+        if (Str::startsWith($this->path, ['/storage/', 'storage/'])) {
+            return asset(ltrim($this->path, '/'));
+        }
+
+        return asset('storage/' . $this->path);
+    }
 
     public function user(): BelongsTo
     {

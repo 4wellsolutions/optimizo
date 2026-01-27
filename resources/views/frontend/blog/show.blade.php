@@ -14,8 +14,8 @@
 
     {{-- Cinematic Full-Bleed Hero --}}
     <section class="relative h-[45vh] md:h-[55vh] min-h-[400px] w-full overflow-hidden mb-[-8vh] md:mb-[-12vh]">
-        @if($post->featured_image)
-            <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
+        @if($post->featured_image_url)
+            <img src="{{ $post->featured_image_url }}" alt="{{ $post->title }}"
                 class="absolute inset-0 w-full h-full object-cover scale-105 animate-slow-zoom">
         @else
             <div class="absolute inset-0 bg-gradient-to-tr from-gray-900 via-indigo-950 to-purple-900"></div>
