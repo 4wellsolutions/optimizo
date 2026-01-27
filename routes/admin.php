@@ -69,10 +69,6 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::resource('media', App\Http\Controllers\Admin\MediaController::class);
     Route::post('media/upload', [App\Http\Controllers\Admin\MediaController::class, 'upload'])->name('media.upload');
 
-    // Blog Import
-    Route::get('import', [App\Http\Controllers\Admin\BlogImportController::class, 'index'])->name('import.index');
-    Route::post('import', [App\Http\Controllers\Admin\BlogImportController::class, 'process'])->name('import.process');
-    Route::post('import/xml', [App\Http\Controllers\Admin\BlogImportController::class, 'importXml'])->name('import.xml');
 
     // YouTube Tools
     Route::prefix('youtube')->name('youtube.')->group(function () {
