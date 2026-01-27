@@ -6,9 +6,9 @@
 
 @section('content')
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        <div class="flex flex-col md:flex-row gap-8 lg:gap-12">
             {{-- Main Content --}}
-            <div class="lg:col-span-8">
+            <div class="w-full md:w-2/3 lg:w-[70%]">
                 <article
                     class="bg-white rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-sm border border-gray-100">
                     {{-- Header Image --}}
@@ -44,7 +44,7 @@
                         </div>
 
                         <h1
-                            class="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-8 leading-tight tracking-tight">
+                            class="text-2xl md:text-3xl lg:text-4xl font-black text-gray-900 mb-8 leading-tight tracking-tight">
                             {{ $post->title }}
                         </h1>
 
@@ -73,7 +73,7 @@
             </div>
 
             {{-- Sidebar --}}
-            <aside class="lg:col-span-4 space-y-8 lg:space-y-10">
+            <aside class="w-full md:w-1/3 lg:w-[30%] space-y-8 lg:space-y-10">
                 {{-- Categories Widget --}}
                 <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-sm border border-gray-100">
                     <h3 class="text-xl font-black text-gray-900 mb-6 flex items-center gap-2">
