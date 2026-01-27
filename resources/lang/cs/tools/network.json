@@ -423,11 +423,7 @@
             "q2": "Proč je reverzní DNS důležité pro e-mail?",
             "a2": "Mnoho poskytovatelů e-mailu používá rDNS k ověření, zda je odesílající server legitimní. Pokud IP serveru nemá odpovídající rDNS záznam, mohou být e-maily označeny jako spam.",
             "q3": "Může mít každá IP adresa reverzní DNS záznam?",
-            "a3": "Ano, ale majitel IP adresy (obvykle ISP nebo poskytovatel hostingu) musí PTR záznam ve svém DNS nastavení nakonfigurovat.",
-            "q4": "Jak zjistím svou reverzní DNS?",
-            "a4": "Stačí zadat svou veřejnou IP adresu do našeho nástroje a ten vám okamžitě zobrazí přidružený záznam hostitele.",
-            "q5": "Znamená chybějící rDNS problém?",
-            "a5": "U běžných uživatelů nikoliv. U serverů, které odesílají e-maily nebo vyžadují vysokou úroveň důvěryhodnosti, je to však kritický nedostatek."
+            "a3": "Ano, ale majitel IP adresy (obvykle ISP nebo poskytovatel hostingu) musí PTR záznam ve svém DNS nastavení nakonfigurovat."
         }
     },
     "traceroute": {
@@ -468,11 +464,7 @@
             "q2": "Jak číst výsledky traceroute?",
             "a2": "Sledujte časy v milisekundách (ms). Pokud v určitém bodě čas prudce vzroste, pravděpodobně jste našli místo síťového přetížení.",
             "q3": "Je online traceroute stejný jako v příkazovém řádku?",
-            "a3": "Princip je stejný, ale online nástroj spouští dotaz z našeho serveru, nikoliv z vašeho počítače, což je užitečné pro testování konektivity z jiného uzlu sítě.",
-            "q4": "Jaký je maximální počet skoků?",
-            "a4": "Většina nástrojů traceroute standardně používá limit 30 skoků, což v drtivé většině případů stačí pro dosažení jakéhokoli bodu na internetu.",
-            "q5": "Co je to latence v kontextu traceroute?",
-            "a5": "Latence je čas, který paket potřebuje k cestě do uzlu a zpět. Čím nižší je latence na každém skoku, tím je síťová cesta rychlejší."
+            "a3": "Princip je stejný, ale online nástroj spouští dotaz z našeho serveru, nikoliv z vašeho počítače, což je užitečné pro testování konektivity z jiného uzlu sítě."
         }
     },
     "user-agent-parser": {
@@ -554,11 +546,7 @@
                 "q2": "Je tento parser přesný?",
                 "a2": "Využívá standardní vzory pro identifikaci běžných user agentů. Je však důležité vědět, že user agent strings lze podvrhnout (spoofing).",
                 "q3": "Jsou moje data v bezpečí?",
-                "a3": "Ano, analýza probíhá lokálně ve vašem prohlížeči. Žádná data o vašem user agentovi neukládáme.",
-                "q4": "Proč je User Agent tak dlouhý a složitý?",
-                "a4": "Historicky prohlížeče přidávaly jména svých konkurentů do svých řetězců, aby zajistily kompatibilitu se staršími weby, což vedlo k dnešní složité struktuře.",
-                "q5": "Změní se můj User Agent, když aktualizuji prohlížeč?",
-                "a5": "Ano, každá aktualizace prohlížeče obvykle mění číslo verze v řetězci User Agent."
+                "a3": "Ano, analýza probíhá lokálně ve vašem prohlížeči. Žádná data o vašem user agentovi neukládáme."
             }
         }
     },
@@ -625,11 +613,7 @@
             "q2": "Jak změním svou IP adresu?",
             "a2": "Svou veřejnou IP můžete změnit pomocí VPN, proxy serveru, nebo někdy pouhým restartem routeru.",
             "q3": "Proč moje IP ukazuje jinou zemi?",
-            "a3": "To se děje, pokud používáte VPN, proxy, nebo pokud váš poskytovatel (ISP) používá bránu v jiné zemi.",
-            "q4": "Vidí mě weby v Inkognito módu?",
-            "a4": "Ano, Inkognito mód pouze neukládá historii ve vašem prohlížeči, ale vaše IP adresa je pro weby stále viditelná.",
-            "q5": "Je moje IP adresa nebezpečná?",
-            "a5": "IP adresa sama o sobě není nebezpečná, je to nezbytná součást fungování internetu. Je však dobré ji zbytečně nesdělovat."
+            "a3": "To se děje, pokud používáte VPN, proxy, nebo pokud váš poskytovatel (ISP) používá bránu v jiné zemi."
         }
     },
     "what-is-my-isp": {
@@ -693,11 +677,7 @@
             "q2": "Změní se můj ISP, když použiji VPN?",
             "a2": "Fyzicky ne, ale pro weby se bude zdát, že váš ISP je společnost, která provozuje server VPN.",
             "q3": "Co je to ASN?",
-            "a3": "ASN je unikátní číslo vaší sítě na globálním internetu. Pomáhá routerům vědět, kam poslat vaše data.",
-            "q4": "Můžu mít více poskytovatelů najednou?",
-            "a4": "Ano, některé firmy nebo nároční uživatelé používají dvě linky od různých ISP pro zálohu (failover).",
-            "q5": "Je moje ISP informace veřejná?",
-            "a5": "Ano, každý web, který navštívíte, může zjistit vašeho poskytovatele podle vaší veřejné IP adresy."
+            "a3": "ASN je unikátní číslo vaší sítě na globálním internetu. Pomáhá routerům vědět, kam poslat vaše data."
         },
         "js": {
             "error_loading": "Chyba při načítání informací o ISP"
@@ -749,9 +729,7 @@
             "q3": "Můžu koupit doménu prostřednictvím WHOIS?",
             "a3": "WHOIS vám ukáže, kdo doménu vlastní. Pokud je na prodej, můžete zkusit kontaktovat vlastníka nebo registrátora.",
             "q4": "Jak často se databáze WHOIS aktualizuje?",
-            "a4": "Většinou se změny projeví během několika hodin po aktualizaci u registrátora.",
-            "q5": "Je vyhledávání WHOIS zdarma?",
-            "a5": "Ano, dotazy do veřejných WHOIS databází jsou prostřednictvím našeho nástroje zcela zdarma."
+            "a4": "Většinou se změny projeví během několika hodin po aktualizaci u registrátora."
         }
     }
 }

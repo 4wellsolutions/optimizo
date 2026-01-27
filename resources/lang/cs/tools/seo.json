@@ -48,7 +48,7 @@
             "serp_features_title": "Analýza funkcí Bing SERP",
             "sf_snippets_title": "Doporučené úryvky (Featured Snippets)",
             "sf_snippets_desc": "Bing často poskytuje bohaté odpovědi a „inteligentní odpovědi“ na pozici nula. Zkontrolujte, zda váš obsah tyto pozice získává.",
-            "sf_places_title": "Bing Places",
+            "sf_places_title": "Místa Bing",
             "sf_places_desc": "Ekvivalent Google Local Pack u Bingu. Zásadní pro lokální firmy. Použijte funkci „Lokalita“ k ověření své pozice v <strong>Bing Places</strong>.",
             "sf_visual_title": "Vizuální vyhledávání",
             "sf_visual_desc": "Bing klade velký důraz na vizuální výsledky. Sledujte, jak se vaše obrázky objevují v rozhraních plných grafiky.",
@@ -82,7 +82,7 @@
             "url_label": "URL adresa webu",
             "button": "Skenovat nefunkční odkazy",
             "button_scanning": "Skenuji...",
-            "legend_ok": "200 OK",
+            "legend_ok": "200 v pořádku",
             "legend_err": "404/Chyba"
         },
         "progress": {
@@ -242,11 +242,7 @@
             "q2": "Jak funguje funkce výběru lokality?",
             "a2": "Využíváme oficiální parametr Google UULE. Když zadáte město, najdeme jeho přesné souřadnice a zakódujeme je do požadavku na vyhledávání.",
             "q3": "Proč vypadá moje pozice na mobilu jinak?",
-            "a3": "Google používá Mobile-First indexaci a výsledky na mobilu mají jiné rozvržení (více reklam, jiné úryvky). Použijte náš přepínač zařízení pro kontrolu mobilní verze.",
-            "q4": "Co znamená zkratka SERP?",
-            "a4": "SERP znamená Search Engine Results Page, tedy stránka s výsledky zobrazená vyhledávačem po zadání dotazu.",
-            "q5": "Můžu kontrolovat pozice pro jiné země než ČR?",
-            "a5": "Ano, náš nástroj podporuje globální vyhledávání. Stačí v nastavení vybrat odpovídající doménu Google a lokalitu."
+            "a3": "Google používá Mobile-First indexaci a výsledky na mobilu mají jiné rozvržení (více reklam, jiné úryvky). Použijte náš přepínač zařízení pro kontrolu mobilní verze."
         }
     },
     "keyword-density-checker": {
@@ -357,9 +353,9 @@
         "results_labels": {
             "other_tags": "Ostatní meta značky",
             "seo_score": "SEO Skóre",
-            "viewport": "Viewport",
+            "viewport": "Výřez",
             "charset": "Znaková sada (Charset)",
-            "robots": "Robots"
+            "robots": "Roboti"
         },
         "content": {
             "main_title": "Analyzátor meta tagů",
@@ -396,12 +392,12 @@
             "og_key_value": "og:title, og:description, og:image",
             "og_platform": "Platformy:",
             "og_platform_value": "Facebook, LinkedIn, Pinterest",
-            "twitter_title": "Twitter Cards",
+            "twitter_title": "Twitter karty",
             "twitter_desc": "Specifické meta značky pro optimalizaci zobrazení obsahu na Twitteru/X.",
             "twitter_key_tags": "Klíčové značky:",
-            "twitter_key_value": "twitter:card, twitter:title, twitter:image",
+            "twitter_key_value": "twitter:karta, twitter:titul, twitter:obrázek",
             "twitter_types": "Typy:",
-            "twitter_types_value": "Summary, Summary with Large Image"
+            "twitter_types_value": "Shrnutí, shrnutí s velkým obrázkem"
         },
         "benefits": {
             "b1_title": "Lepší pozice",
@@ -546,7 +542,7 @@
             "user_agent_default": "Výchozí (Prohlížeč)",
             "user_agent_googlebot": "Googlebot (Google)",
             "user_agent_bingbot": "Bingbot (Bing)",
-            "user_agent_facebook": "Facebook Crawler",
+            "user_agent_facebook": "Prohledávač Facebooku",
             "user_agent_iphone": "iPhone (Safari)",
             "user_agent_android": "Android (Chrome)",
             "button": "Zkontrolovat URL"
@@ -637,6 +633,57 @@
             "a5": "Ideálně nula nebo jedno. Google obvykle sleduje až 5 skoků, ale každý další zvyšuje dobu načítání."
         }
     },
+    "hreflang-checker": {
+        "meta": {
+            "title": "Hreflang Checker – bezplatný online validátor značek",
+            "description": "Ověřte své hreflang štítky a zajistěte, že Google zobrazuje správné jazykové nebo regionální URL vašemu publiku.",
+            "h1": "Hreflang Checker",
+            "subtitle": "Bezplatný nástroj pro extrakci a validaci atributů hreflang pro mezinárodní SEO."
+        },
+        "form": {
+            "url_label": "Zadejte URL ke kontrole",
+            "url_placeholder": "https://priklad.cz/stranka",
+            "user_agent_label": "User Agent",
+            "user_agent_default": "Výchozí (Prohlížeč)",
+            "user_agent_googlebot": "Googlebot (Desktop)",
+            "user_agent_bingbot": "Bingbot (Desktop)",
+            "button": "Zkontrolovat hreflang štítky"
+        },
+        "content": {
+            "main_title": "Kontrola hreflang štítků",
+            "main_subtitle": "Zajistěte, aby se váš mezinárodní obsah dostal ke správnému publiku. Ověřte implementaci hreflang a opravte běžné SEO chyby.",
+            "intro": "Hreflang štítky jsou nezbytné pro webové stránky obsluhující více jazyků nebo zemí. Náš bezplatný nástroj extrahuje a validuje štítky `rel=\"alternate\" hreflang=\"x\"` z HTML hlavičky vaší stránky a HTTP hlaviček. Kontroluje reciproční (zpětné) štítky, aby zaručil, že Google a další vyhledávače správně indexují váš lokalizovaný obsah.",
+            "features_title": "Proč kontrolovat hreflang štítky?",
+            "feature1_title": "Validace recipročních štítků",
+            "feature1_desc": "Hreflang štítky musí fungovat v párech. Náš nástroj automaticky kontroluje, zda stránka A odkazuje na stránku B, a zda stránka B odkazuje zpět na stránku A.",
+            "feature2_title": "Detekce běžných chyb",
+            "feature2_desc": "Najděte chybějící zpětné štítky, neplatné kódy jazyků (ISO 639-1) a nesprávné kódy zemí (ISO 3166-1 Alpha-2).",
+            "feature3_title": "Prevence SEO problémů",
+            "feature3_desc": "Nesprávná implementace hreflang může vést k problémům s duplicitním obsahem a zobrazování stránek v nesprávném jazyce ve výsledcích vyhledávání.",
+            "how_title": "Jak používat kontrolu Hreflang",
+            "step1_title": "Zadejte URL",
+            "step1_desc": "Vložte celou URL adresu stránky, kterou chcete analyzovat (např. https://priklad.cz).",
+            "step2_title": "Vyberte User Agent",
+            "step2_desc": "Doporučuje se kontrolovat pomocí Googlebota, ale můžete kontrolovat i jako standardní prohlížeč.",
+            "step3_title": "Analyzujte výsledky",
+            "step3_desc": "Stáhneme stránku a vypíšeme všechny nalezené alternativní odkazy spolu s jejich validačním stavem.",
+            "step4_title": "Opravte problémy",
+            "step4_desc": "Pokud se objeví chyba 'Chybějící zpětný štítek', aktualizujte odkazované stránky tak, aby obsahovaly reciproční odkaz.",
+            "faq_title": "Často kladené otázky",
+            "faq1_q": "Co je to hreflang štítek?",
+            "faq1_a": "Hreflang je HTML atribut používaný k určení jazyka a geografického cílení webové stránky. Říká vyhledávačům, kterou verzi stránky zobrazit uživatelům v různých zemích nebo jazycích.",
+            "faq2_q": "Proč jsou zpětné štítky důležité?",
+            "faq2_a": "Google vyžaduje zpětné odkazy, aby zabránil tomu, že si někdo svévolně nárokuje stránku na jiném webu jako alternativní verzi své vlastní. Pokud stránka A odkazuje na stránku B, musí stránka B odkazovat zpět na stránku A.",
+            "faq3_q": "Kontroluje tento nástroj x-default štítek?",
+            "faq3_a": "Ano, náš nástroj identifikuje a validuje `x-default` hreflang štítek, který se používá pro neshodující se jazyky nebo striktní voliče země.",
+            "faq4_q": "Mohu kontrolovat hreflang v HTTP hlavičkách?",
+            "faq4_a": "Ano! Kontrolujeme jak sekci HTML `<head>`, tak hlavičky odpovědi HTTP na atributy `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
+            "faq5_q": "Co se stane, když mám chyby v hreflang?",
+            "faq5_a": "Vyhledávače mohou ignorovat vaše neplatné štítky, což vede k nezobrazování správných jazykových verzí správným uživatelům nebo k potenciálním penalizacím za duplicitní obsah.",
+            "faq6_q": "Je tento nástroj zdarma?",
+            "faq6_a": "Ano, můžete provádět neomezené kontroly zdarma, abyste zajistili, že vaše mezinárodní SEO je perfektní."
+        }
+    },
     "slug-generator": {
         "meta": {
             "title": "URL Slug Generator – bezplatný online SEO Friendly nástroj",
@@ -690,7 +737,7 @@
                     "desc": "Generování čistých adres pro návody a nápovědy."
                 },
                 "landing": {
-                    "title": "🎯 Landing Pages",
+                    "title": "🎯 Vstupní stránky",
                     "desc": "Vytváření úderných URL pro marketingové kampaně."
                 }
             },
@@ -832,57 +879,6 @@
             "faq_size_answer": "50MB nebo 50 000 URL.",
             "faq_localhost_question": "Funguje na localhost?",
             "faq_localhost_answer": "Ano, vložením XML kódu."
-        }
-    },
-    "hreflang-checker": {
-        "meta": {
-            "title": "Hreflang Checker – bezplatný online validátor značek",
-            "description": "Ověřte své hreflang štítky a zajistěte, že Google zobrazuje správné jazykové nebo regionální URL vašemu publiku.",
-            "h1": "Hreflang Checker",
-            "subtitle": "Bezplatný nástroj pro extrakci a validaci atributů hreflang pro mezinárodní SEO."
-        },
-        "form": {
-            "url_label": "Zadejte URL ke kontrole",
-            "url_placeholder": "https://priklad.cz/stranka",
-            "user_agent_label": "User Agent",
-            "user_agent_default": "Výchozí (Prohlížeč)",
-            "user_agent_googlebot": "Googlebot (Desktop)",
-            "user_agent_bingbot": "Bingbot (Desktop)",
-            "button": "Zkontrolovat hreflang štítky"
-        },
-        "content": {
-            "main_title": "Kontrola hreflang štítků",
-            "main_subtitle": "Zajistěte, aby se váš mezinárodní obsah dostal ke správnému publiku. Ověřte implementaci hreflang a opravte běžné SEO chyby.",
-            "intro": "Hreflang štítky jsou nezbytné pro webové stránky obsluhující více jazyků nebo zemí. Náš bezplatný nástroj extrahuje a validuje štítky `rel=\"alternate\" hreflang=\"x\"` z HTML hlavičky vaší stránky a HTTP hlaviček. Kontroluje reciproční (zpětné) štítky, aby zaručil, že Google a další vyhledávače správně indexují váš lokalizovaný obsah.",
-            "features_title": "Proč kontrolovat hreflang štítky?",
-            "feature1_title": "Validace recipročních štítků",
-            "feature1_desc": "Hreflang štítky musí fungovat v párech. Náš nástroj automaticky kontroluje, zda stránka A odkazuje na stránku B, a zda stránka B odkazuje zpět na stránku A.",
-            "feature2_title": "Detekce běžných chyb",
-            "feature2_desc": "Najděte chybějící zpětné štítky, neplatné kódy jazyků (ISO 639-1) a nesprávné kódy zemí (ISO 3166-1 Alpha-2).",
-            "feature3_title": "Prevence SEO problémů",
-            "feature3_desc": "Nesprávná implementace hreflang může vést k problémům s duplicitním obsahem a zobrazování stránek v nesprávném jazyce ve výsledcích vyhledávání.",
-            "how_title": "Jak používat kontrolu Hreflang",
-            "step1_title": "Zadejte URL",
-            "step1_desc": "Vložte celou URL adresu stránky, kterou chcete analyzovat (např. https://priklad.cz).",
-            "step2_title": "Vyberte User Agent",
-            "step2_desc": "Doporučuje se kontrolovat pomocí Googlebota, ale můžete kontrolovat i jako standardní prohlížeč.",
-            "step3_title": "Analyzujte výsledky",
-            "step3_desc": "Stáhneme stránku a vypíšeme všechny nalezené alternativní odkazy spolu s jejich validačním stavem.",
-            "step4_title": "Opravte problémy",
-            "step4_desc": "Pokud se objeví chyba 'Chybějící zpětný štítek', aktualizujte odkazované stránky tak, aby obsahovaly reciproční odkaz.",
-            "faq_title": "Často kladené otázky",
-            "faq1_q": "Co je to hreflang štítek?",
-            "faq1_a": "Hreflang je HTML atribut používaný k určení jazyka a geografického cílení webové stránky. Říká vyhledávačům, kterou verzi stránky zobrazit uživatelům v různých zemích nebo jazycích.",
-            "faq2_q": "Proč jsou zpětné štítky důležité?",
-            "faq2_a": "Google vyžaduje zpětné odkazy, aby zabránil tomu, že si někdo svévolně nárokuje stránku na jiném webu jako alternativní verzi své vlastní. Pokud stránka A odkazuje na stránku B, musí stránka B odkazovat zpět na stránku A.",
-            "faq3_q": "Kontroluje tento nástroj x-default štítek?",
-            "faq3_a": "Ano, náš nástroj identifikuje a validuje `x-default` hreflang štítek, který se používá pro neshodující se jazyky nebo striktní voliče země.",
-            "faq4_q": "Mohu kontrolovat hreflang v HTTP hlavičkách?",
-            "faq4_a": "Ano! Kontrolujeme jak sekci HTML `<head>`, tak hlavičky odpovědi HTTP na atributy `Link: <url>; rel=\"alternate\"; hreflang=\"code\"`.",
-            "faq5_q": "Co se stane, když mám chyby v hreflang?",
-            "faq5_a": "Vyhledávače mohou ignorovat vaše neplatné štítky, což vede k nezobrazování správných jazykových verzí správným uživatelům nebo k potenciálním penalizacím za duplicitní obsah.",
-            "faq6_q": "Je tento nástroj zdarma?",
-            "faq6_a": "Ano, můžete provádět neomezené kontroly zdarma, abyste zajistili, že vaše mezinárodní SEO je perfektní."
         }
     }
 }

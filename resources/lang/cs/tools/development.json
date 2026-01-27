@@ -391,7 +391,7 @@
                 "2": "<strong>Zobrazte výsledky:</strong> Prohlédněte si zpracované CSS ve výstupním poli se statistikami komprese.",
                 "3": "<strong>Kopírujte:</strong> Klikněte na „Kopírovat“ pro vložení minifikovaného CSS do schránky.",
                 "4": "<strong>Použijte v produkci:</strong> Nahraďte svůj původní soubor CSS minifikovanou verzí.",
-                "5": ""
+                "5": "Stáhněte si nebo zkopírujte zmenšený styl CSS a použijte jej na svém produkčním webu ke snížení velikosti souboru a zkrácení doby načítání."
             },
             "best_practices_title": "💡 Nejlepší postupy",
             "best_practices_list": {
@@ -399,7 +399,7 @@
                 "2": "<strong>Spojujte soubory:</strong> Před minifikací spojte více souborů CSS pro lepší kompresi.",
                 "3": "<strong>Důkladně testujte:</strong> Vždy otestujte minifikované CSS, abyste zajistili, že funkčnost zůstala zachována.",
                 "4": "<strong>Používejte nástroje pro sestavení:</strong> Integrujte minifikaci do svého procesu sestavení pro automatizaci.",
-                "5": ""
+                "5": "Ponechejte si neminifikovanou verzi pro účely vývoje a ladění."
             },
             "faq_title": "❓ Často kladené otázky",
             "faq": {
@@ -442,24 +442,6 @@
             "raw_data_label": "Surová data (JSON, XML nebo Text)",
             "generated_label": "Vygenerovaný cURL příkaz",
             "btn_copy": "Kopírovat příkaz"
-        },
-        "content": {
-            "main_title": "Zjednodušte si práci s cURL",
-            "main_description": "Nástroj cURL command builder je navržen tak, aby ušetřil čas vývojářům a testerům při sestavování komplexních HTTP požadavků. Namísto ručního vypisování parametrů v terminálu můžete vše nastavit v přehledném webovém rozhraní. Náš generátor automaticky formátuje příkaz podle standardů, včetně správného escapování uvozovek a nastavení hlaviček, což eliminuje časté syntaktické chyby.",
-            "features_title": "🚀 Hlavní výhody",
-            "feature1_title": "Vizuální konfigurace",
-            "feature1_desc": "Nastavte metodu, URL a hlavičky pomocí jednoduchých formulářů namísto složitých parametrů příkazové řádky.",
-            "feature2_title": "Podpora všech metod",
-            "feature2_desc": "Generujte příkazy pro GET, POST, PUT, DELETE, PATCH a další standardní HTTP metody.",
-            "feature3_title": "Správa hlaviček",
-            "feature3_desc": "Snadno přidávejte autentizační tokeny, typy obsahu a další uživatelské hlavičky.",
-            "faq_title": "❓ Často kladené otázky",
-            "faq1_q": "Co je to cURL?",
-            "faq1_a": "cURL je výkonný nástroj příkazové řádky pro přenos dat pomocí různých protokolů, nejčastěji pro HTTP a HTTPS. Je to standard pro testování API a automatizaci webových požadavků.",
-            "faq2_q": "Je příkaz bezpečný pro použití v terminálu?",
-            "faq2_a": "Ano, vygenerovaný příkaz je připraven k okamžitému vložení do vašeho terminálu (Bash, Zsh, CMD). Dbejte však na to, abyste veřejně nesdíleli příkazy obsahující citlivé údaje jako hesla nebo API klíče.",
-            "faq3_q": "Podporuje generátor JSON data?",
-            "faq3_a": "Samozřejmě. V záložce 'Tělo' můžete vložit surová JSON data, která generátor automaticky zabalí do správného formátu pro odeslání v rámci cURL příkazu."
         },
         "js": {
             "success_copy": "Příkaz byl zkopírován do schránky!"
@@ -543,7 +525,7 @@
                 "1": "Vložte své HTML nebo text do vstupního pole",
                 "2": "Klikněte na tlačítko zpracování pro převod",
                 "3": "Zkopírujte výsledek do schránky",
-                "4": ""
+                "4": "Zkopírujte zakódovaný/dekódovaný výsledek a použijte jej ve svých HTML, XML nebo webových aplikacích."
             },
             "examples_title": "💡 Příklady kódování HTML",
             "examples": {
@@ -552,12 +534,12 @@
                     "code": "\"Ahoj\" → &quot;Ahoj&quot;"
                 },
                 "2": {
-                    "title": "Ampersand:",
+                    "title": "ampersand:",
                     "code": "Tom & Jerry → Tom &amp; Jerry"
                 },
                 "3": {
-                    "title": "",
-                    "code": ""
+                    "title": "Kódování speciálních znaků",
+                    "code": "&lt;script&gt;upozornění(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;upozornění(&amp;quot;XSS&amp;quot;)&amp;lt;/script&gt;"
                 }
             },
             "faq_title": "❓ Často kladené otázky",
@@ -614,7 +596,7 @@
                 "1": "Klikněte na „Minifikovat HTML“ pro komprimaci kódu",
                 "2": "Klikněte na „Zkrášlit HTML“ pro formátování s odsazením",
                 "3": "Zkopírujte výstup pomocí tlačítka „Kopírovat výstup“",
-                "4": ""
+                "4": "Použijte miniifikovaný HTML ve svém produkčním prostředí ke snížení šířky pásma a zvýšení rychlosti načítání stránky."
             },
             "faq_title": "Často kladené otázky",
             "faq": {
@@ -666,7 +648,7 @@
                 "3": "✅ <strong>Žádná instalace:</strong> Funguje přímo ve vašem prohlížeči",
                 "4": "✅ <strong>Navždy zdarma:</strong> 100% zdarma bez omezení",
                 "5": "✅ <strong>Soukromí na prvním místě:</strong> Veškerý převod probíhá lokálně ve vašem prohlížeči",
-                "6": ""
+                "6": "Zachová bloky kódu a zvýraznění syntaxe pro technickou dokumentaci."
             },
             "uses_title": "🎯 Běžné příklady použití",
             "uses": {
@@ -780,7 +762,7 @@
                 "2": "Pomocí tlačítka „Načíst ukázku“ zobrazíte ukázkový HTML kód",
                 "3": "Kliknutím na „Vymazat“ začnete znovu s prázdným editorem",
                 "4": "Testujte různé HTML prvky a sledujte, jak se vykreslují",
-                "5": ""
+                "5": "Analyzujte vykreslený výstup a strukturu DOM, abyste odladili problémy s rozvržením nebo ověřili vykreslování HTML."
             },
             "uses_title": "Běžné příklady použití",
             "uses_desc": "HTML prohlížeče jsou nezbytnými nástroji pro různé úkoly vývoje webu. Vývojáři je používají k rychlému testování úryvků HTML před jejich integrací do větších projektů. Studenti učící se HTML mohou experimentovat s různými značkami a atributy, aby pochopili jejich účinky. Emailoví marketéři používají HTML prohlížeče k náhledu emailových šablon před odesláním. Tvůrci obsahu si mohou vizualizovat, jak se jejich HTML obsah objeví na webových stránkách. Designéři mohou kontrolovat strukturu markupu a zajistit správné vykreslování HTML prvků.",
@@ -907,8 +889,8 @@
                     "desc": "Kliknutím na tlačítko kopírování zkopírujte formátovaný JSON do schránky."
                 },
                 "3": {
-                    "title": "",
-                    "desc": ""
+                    "title": "Formátovat nebo Minifikovat",
+                    "desc": "Vyberte si, zda chcete svá data JSON zkrášlit (formát s odsazením) nebo minifikovat (komprimovat na jeden řádek) podle svých potřeb."
                 }
             },
             "uses_title": "Běžné příklady použití formátování JSON",
@@ -1440,7 +1422,7 @@
             "uses_title": "Běžné příklady použití",
             "uses": {
                 "docker": {
-                    "title": "Docker",
+                    "title": "Přístavní dělník",
                     "desc": "Převádějte konfigurace kontejnerů JSON na Docker Compose YAML."
                 },
                 "config": {
@@ -1901,7 +1883,7 @@
         },
         "js": {
             "error_empty": "Zadejte prosím nějaká data ke zpracování",
-            "placeholder_table_name": "users",
+            "placeholder_table_name": "uživatelů",
             "error_general": "Chyba převodu: ",
             "error_invalid_array": "Chyba: Vstup musí být pole JSON objektů.",
             "error_empty_array": "Chyba: Pole JSON je prázdné.",
@@ -2199,21 +2181,7 @@
         },
         "content": {
             "about_title": "O UUID (Verze 4)",
-            "about_desc": "UUID (Universally Unique Identifier) je 128bitové číslo používané k identifikaci informací v počítačových systémech. UUID verze 4 jsou generována pomocí náhodných nebo pseudo-náhodných čísel. Pravděpodobnost duplicity je prakticky nulová, což z nich dělá ideální volbu pro databázové klíče, názvy souborů a identifikátory relací.",
-            "features_title": "✅ Proč používat náš generátor?",
-            "feature1_title": "Okamžité generování",
-            "feature1_desc": "Vytvořte až stovky unikátních ID jediným kliknutím bez nutnosti instalovat software.",
-            "feature2_title": "Maximální unikátnost",
-            "feature2_desc": "Implementace podle standardu RFC 4122 zaručuje, že každý vygenerovaný kód je prakticky jedinečný na světě.",
-            "feature3_title": "Soukromí na prvním místě",
-            "feature3_desc": "Lokalizované generování přímo ve vašem prohlížeči – žádná generovaná data neopouštějí váš počítač.",
-            "faq_title": "❓ Často kladené otázky",
-            "faq1_q": "Co přesně je UUID?",
-            "faq1_a": "UUID je zkratka pro Universally Unique Identifier. Je to standardizovaný 128bitový formát, který umožňuje vytvářet identifikátory bez nutnosti centrální správy, přičemž riziko kolize je zanedbatelné.",
-            "faq2_q": "K čemu jsou UUID dobrá?",
-            "faq2_a": "Běžně se používají jako primární klíče v databázích (namísto postupných čísel), pro identifikaci objektů v distribuovaných systémech nebo jako součást URL adres.",
-            "faq3_q": "Je UUID to samé co GUID?",
-            "faq3_a": "V podstatě ano. GUID (Globally Unique Identifier) je termín používaný společností Microsoft pro jejich implementaci standardu UUID."
+            "about_desc": "UUID (Universally Unique Identifier) je 128bitové číslo používané k identifikaci informací v počítačových systémech. UUID verze 4 jsou generována pomocí náhodných nebo pseudo-náhodných čísel. Pravděpodobnost duplicity je prakticky nulová, což z nich dělá ideální volbu pro databázové klíče, názvy souborů a identifikátory relací."
         },
         "js": {
             "success_generated": "Úspěšně vygenerováno :count UUID!",
@@ -2233,24 +2201,6 @@
             "btn_format": "Formátovat / Zkrášlit",
             "btn_minify": "Minifikovat XML",
             "btn_copy": "Kopírovat výsledek"
-        },
-        "content": {
-            "main_title": "Dokonale strukturovaná XML data",
-            "main_description": "Práce se surovými XML daty může být náročná, pokud nejsou správně formátovaná. Náš XML formátovač vám umožní vzít nepřehledný, jednořádkový kód a proměnit jej v krásně strukturovaný dokument se správným odsazením. Nástroj je také vybaven funkcí minifikace, která odstraní přebytečné mezery pro snížení velikosti souborů při přnosu dat.",
-            "features_title": "✨ Co náš XML nástroj umí?",
-            "feature1_title": "Chytré zkrášlení",
-            "feature1_desc": "Automaticky přidá správné odsazení a zalomení řádků pro maximální čitelnost vašeho XML.",
-            "feature2_title": "Efektivní minifikace",
-            "feature2_desc": "Odstraňte všechna nepotřebná bílá místa pro optimalizaci přenosu dat a úsporu místa.",
-            "feature3_title": "Validace syntaxe",
-            "feature3_desc": "Nástroj vás upozorní, pokud je vložené XML poškozené nebo obsahuje syntaktické chyby.",
-            "faq_title": "❓ Často kladené otázky",
-            "faq1_q": "Kdy bych měl XML minifikovat?",
-            "faq1_a": "Minifikace je ideální pro produkční prostředí, kde chcete minimalizovat množství přenášených dat. Pro vývojáře a ladění je naopak lepší použít formátování (zkrášlení).",
-            "faq2_q": "Ukládáte můj XML kód?",
-            "faq2_a": "Nikoliv. Veškeré zpracování probíhá lokálně ve vašem prohlížeči. Vaše citlivá XML data (např. konfigurace nebo exporty) nikdy nepouštějí vaše zařízení.",
-            "faq3_q": "Podporuje nástroj i XML s atributy?",
-            "faq3_a": "Ano, náš formátovač si poradí s komplexními XML strukturami včetně atributů, jmenných prostorů a komentářů."
         },
         "js": {
             "success_format": "XML bylo úspěšně zformátováno!",
@@ -2318,7 +2268,7 @@
                     "desc": "Transformujte XML data ze starších systémů do CSV pro import do moderních databází a aplikací."
                 },
                 "reporting": {
-                    "title": "Reporting",
+                    "title": "Hlášení",
                     "desc": "Převádějte XML odpovědi z API do CSV pro vytváření reportů a přehledů."
                 },
                 "db": {
