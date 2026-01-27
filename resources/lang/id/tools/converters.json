@@ -59,7 +59,7 @@
             "optgroup_imperial": "Imperial",
             "unit_sq_ft": "Kaki Persegi (ft²)",
             "unit_sq_yd": "Yard Persegi (yd²)",
-            "unit_acre": "Acre (ac)",
+            "unit_acre": "hektar (ac)",
             "unit_sq_mi": "Mil Persegi (mi²)",
             "to_label": "Ke"
         },
@@ -318,7 +318,7 @@
             "btn_convert": "Konversi ke camelCase",
             "btn_clear": "Hapus",
             "btn_copy": "Salin",
-            "label_output": "Output (camelCase)",
+            "label_output": "Keluaran (CamelCase)",
             "ph_output": "contohHelloWorld"
         },
         "content": {
@@ -371,7 +371,7 @@
                     "desc": "Sangat cocok untuk penamaan kunci JSON dalam API RESTful dan GraphQL."
                 },
                 "react": {
-                    "title": "React Props",
+                    "title": "Alat Peraga Reaksi",
                     "desc": "Standar untuk penamaan props dan state dalam komponen React dan Vue."
                 },
                 "css": {
@@ -385,7 +385,7 @@
                 "2": "Mengubah kata pertama menjadi huruf kecil sepenuhnya.",
                 "3": "Mengubah huruf pertama dari semua kata berikutnya menjadi huruf besar.",
                 "4": "Hasilnya digabungkan menjadi satu string tunggal tanpa spasi.",
-                "5": ""
+                "5": "Gunakan teks camelCase yang dikonversi dalam kode, nama variabel, atau titik akhir API Anda untuk konvensi penamaan yang konsisten."
             },
             "examples_title": "Contoh",
             "examples": {
@@ -496,7 +496,7 @@
                 "2": "Huruf Kalimat adalah format yang paling mudah dibaca untuk paragraf dan deskripsi yang panjang.",
                 "3": "Selalu gunakan tombol \"Salin ke Papan Klip\" untuk menghindari kesalahan pemilihan manual.",
                 "4": "Gabungkan Konverter Case kami dengan penghitung kata untuk kontrol pengeditan yang lengkap.",
-                "5": ""
+                "5": "Gunakan konversi kasus untuk menjaga konsistensi di seluruh basis kode Anda dan meningkatkan keterbacaan kode."
             },
             "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
@@ -527,13 +527,13 @@
         },
         "form": {
             "from_label": "Dari",
-            "unit_cup": "Cup (US)",
+            "unit_cup": "Piala (AS)",
             "unit_tbsp": "Sendok makan (US)",
             "unit_tsp": "Sendok teh (US)",
             "unit_ml": "Mililiter (ml)",
             "unit_fl_oz": "Ons Cair (fl oz)",
-            "unit_pt": "Pint (US)",
-            "unit_qt": "Quart (US)",
+            "unit_pt": "Pint (AS)",
+            "unit_qt": "Kuartal (AS)",
             "unit_gal": "Galon (US)",
             "to_label": "Ke"
         },
@@ -863,38 +863,26 @@
                     "desc": "Gunakan fungsi salin untuk mentransfer hasil ke editor kode Anda."
                 },
                 "5": {
-                    "title": "Copy Result",
-                    "desc": "Click the \"Copy Result\" button for use in your projects."
+                    "title": "Salin Hasil",
+                    "desc": "Klik tombol \"Salin Hasil\" untuk digunakan dalam proyek Anda."
                 }
             },
             "examples": {
-                "byte": {
-                    "title": "Batas Byte",
-                    "desc": "Desimal: 127 → Heksadesimal: 7F"
+                "small": {
+                    "title": "Pemeriksaan Cepat",
+                    "desc": "Desimal: 15 → Hex: F"
                 },
-                "full": {
-                    "title": "Satu Byte Penuh",
-                    "desc": "Desimal: 255 → Heksadesimal: FF"
-                },
-                "word": {
-                    "title": "Pengalamatan Word",
-                    "desc": "Desimal: 1024 → Heksadesimal: 0x400"
+                "large": {
+                    "title": "Nilai Byte",
+                    "desc": "Desimal: 128 → Heksa: 80"
                 },
                 "color": {
                     "title": "Warna CSS",
                     "desc": "Desimal: 200 → Heksadesimal: C8"
                 },
-                "small": {
-                    "title": "Quick Check",
-                    "desc": "Decimal: 15 → Hex: F"
-                },
-                "large": {
-                    "title": "Byte Value",
-                    "desc": "Decimal: 128 → Hex: 80"
-                },
                 "max": {
-                    "title": "Large Value",
-                    "desc": "Decimal: 1024 → Hex: 400"
+                    "title": "Nilai Besar",
+                    "desc": "Desimal: 1024 → Heksa: 400"
                 }
             },
             "faq": {
@@ -992,21 +980,13 @@
                     "title": "Sistem Lama (Legacy)",
                     "desc": "Pertahankan dan debug sistem komputer antik yang sangat bergantung pada data oktal."
                 },
-                "web": {
-                    "title": "Pengembangan Web",
-                    "desc": "Gunakan escape sequence oktal dalam JavaScript dan bahasa pemrograman lainnya."
-                },
-                "math": {
-                    "title": "Eksplorasi Matematika",
-                    "desc": "Eksplorasi basis angka yang berbeda untuk penelitian matematika dasar."
-                },
                 "aviation": {
-                    "title": "Aviation Transponders",
-                    "desc": "Understand the squawk codes used by aircraft, which are octal values."
+                    "title": "Transponder Penerbangan",
+                    "desc": "Pahami kode squawk yang digunakan pesawat terbang, yaitu nilai oktal."
                 },
                 "education": {
-                    "title": "Mathematics Education",
-                    "desc": "Explore the properties of base-8 mathematics and notation."
+                    "title": "Pendidikan Matematika",
+                    "desc": "Jelajahi sifat-sifat matematika dan notasi basis-8."
                 }
             },
             "steps": {
@@ -1027,8 +1007,8 @@
                     "desc": "Salin hasil akhir untuk digunakan dalam dokumen atau kode Anda."
                 },
                 "5": {
-                    "title": "Copy",
-                    "desc": "Quickly copy the result for use in your code or documents."
+                    "title": "Menyalin",
+                    "desc": "Salin hasilnya dengan cepat untuk digunakan dalam kode atau dokumen Anda."
                 }
             },
             "examples": {
@@ -1036,25 +1016,17 @@
                     "title": "Nilai Kecil",
                     "desc": "Desimal: 8 → Oktal: 10"
                 },
-                "chmod": {
-                    "title": "Izin Umum",
-                    "desc": "Desimal: 493 → Oktal: 755"
+                "large": {
+                    "title": "Oktal Ganda",
+                    "desc": "Desimal: 64 → Oktal: 100"
                 },
-                "legacy": {
-                    "title": "Sistem Lama",
-                    "desc": "Desimal: 1024 → Oktal: 2000"
+                "rights": {
+                    "title": "Nilai Izin",
+                    "desc": "Desimal: 493 → Oktal: 755"
                 },
                 "max": {
                     "title": "Tiga Digit",
                     "desc": "Desimal: 511 → Oktal: 777"
-                },
-                "large": {
-                    "title": "Double Octal",
-                    "desc": "Decimal: 64 → Octal: 100"
-                },
-                "rights": {
-                    "title": "Permission Value",
-                    "desc": "Decimal: 493 → Octal: 755"
                 }
             },
             "faq": {
@@ -1082,13 +1054,8 @@
             "from_label": "Dari",
             "unit_kg_m3": "Kilogram per meter kubik (kg/m³)",
             "unit_g_cm3": "Gram per sentimeter kubik (g/cm³)",
-            "unit_mg_cm3": "Miligram per sentimeter kubik (mg/cm³)",
             "unit_lb_ft3": "Pon per kaki kubik (lb/ft³)",
             "unit_lb_in3": "Pon per inci kubik (lb/in³)",
-            "unit_oz_ft3": "Ons per kaki kubik (oz/ft³)",
-            "unit_oz_in3": "Ons per inci kubik (oz/in³)",
-            "unit_st_ft3": "Stone per kaki kubik (st/ft³)",
-            "unit_ton_m3": "Ton per meter kubik (t/m³)",
             "to_label": "Ke"
         },
         "content": {
@@ -1108,25 +1075,15 @@
             "usage_4": "<strong>Konstruksi:</strong> Menghitung berat material bangunan per unit volume",
             "usage_5": "<strong>Logistik & Pengiriman:</strong> Memperkirakan berat kargo berdasarkan volume kontainer",
             "usage_6": "<strong>Eksplorasi Geologi:</strong> Menganalisis kepadatan mineral dan sampel tanah",
-            "faq": {
-                "faq_q1": "Berapa densitas air dalam satuan yang berbeda?",
-                "faq_a1": "Air murni memiliki densitas sekitar 1.000 kg/m³, yang sama dengan 1 g/cm³, 62,4 lb/ft³, atau 8,34 lb/gal pada suhu kamar.",
-                "faq_q2": "Bagaimana cara mengonversi g/cm³ ke kg/m³?",
-                "faq_a2": "Untuk mengonversi dari gram per sentimeter kubik (g/cm³) ke kilogram per meter kubik (kg/m³), Anda cukup mengalikannya dengan 1.000.",
-                "faq_q3": "Mengapa konversi densitas penting dalam pelayaran?",
-                "faq_a3": "Perusahaan pelayaran menggunakan densitas untuk menghitung berat volumetrik kargo, yang menentukan biaya pengiriman dan memastikan distribusi beban yang aman di kapal atau pesawat.",
-                "faq_q4": "Apa perbedaan antara massa jenis dan berat jenis?",
-                "faq_a4": "Massa jenis (densitas) adalah massa per unit volume (kg/m³), sedangkan berat jenis adalah rasio densitas suatu zat terhadap densitas air (tanpa satuan)."
-            },
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "What is the density of water in different units?",
-            "faq_a1": "Water density is 1000 kg/m³, 1 g/cm³, or 62.4 lb/ft³ at 4°C. This makes water a convenient reference for comparing other materials.",
-            "faq_q2": "How do I convert g/cm³ to kg/m³?",
-            "faq_a2": "Multiply by 1000. Example: 7.85 g/cm³ (steel) = 7850 kg/m³. The conversion is straightforward because 1 g/cm³ = 1000 kg/m³.",
-            "faq_q3": "Why is density important in material selection?",
-            "faq_a3": "Density affects weight, strength-to-weight ratio, buoyancy, and cost. Light materials like aluminum (2.7 g/cm³) are preferred for aerospace, while dense materials like lead (11.3 g/cm³) are used for radiation shielding.",
-            "faq_q4": "How does temperature affect density?",
-            "faq_a4": "Most materials expand when heated, decreasing density. Water is unusual - it's densest at 4°C and becomes less dense when frozen (ice floats). Always note the temperature when measuring density."
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Berapa massa jenis air dalam satuan yang berbeda?",
+            "faq_a1": "Massa jenis air adalah 1000 kg/m³, 1 g/cm³, atau 62,4 lb/ft³ pada 4°C. Hal ini menjadikan air sebagai referensi yang tepat untuk membandingkan bahan lain.",
+            "faq_q2": "Bagaimana cara mengubah g/cm³ ke kg/m³?",
+            "faq_a2": "Kalikan dengan 1000. Contoh: 7,85 g/cm³ (baja) = 7850 kg/m³. Konversinya mudah karena 1 g/cm³ = 1000 kg/m³.",
+            "faq_q3": "Mengapa kepadatan penting dalam pemilihan material?",
+            "faq_a3": "Kepadatan mempengaruhi berat, rasio kekuatan terhadap berat, daya apung, dan biaya. Bahan ringan seperti aluminium (2,7 g/cm³) lebih disukai untuk ruang angkasa, sedangkan bahan padat seperti timbal (11,3 g/cm³) digunakan untuk pelindung radiasi.",
+            "faq_q4": "Bagaimana suhu mempengaruhi kepadatan?",
+            "faq_a4": "Sebagian besar bahan memuai ketika dipanaskan, sehingga kepadatannya berkurang. Air merupakan hal yang tidak biasa - kepadatannya paling tinggi pada suhu 4°C dan menjadi kurang padat ketika dibekukan (es mengapung). Selalu catat suhu saat mengukur massa jenis."
         }
     },
     "digital-storage-converter": {
@@ -1138,16 +1095,14 @@
         },
         "form": {
             "from_label": "Dari",
-            "unit_b": "Bit (b)",
-            "unit_B": "Byte (B)",
+            "unit_bit": "Sedikit (b)",
+            "unit_byte": "Byte (B)",
             "unit_KB": "Kilobyte (KB)",
-            "unit_MB": "Megabyte (MB)",
-            "unit_GB": "Gigabyte (GB)",
-            "unit_TB": "Terabyte (TB)",
-            "unit_PB": "Petabyte (PB)",
-            "to_label": "Ke",
-            "unit_bit": "Bit (b)",
-            "unit_byte": "Byte (B)"
+            "unit_MB": "Megabita (MB)",
+            "unit_GB": "Gigabita (GB)",
+            "unit_TB": "Terabit (TB)",
+            "unit_PB": "Petabita (PB)",
+            "to_label": "Ke"
         },
         "content": {
             "feature1_title": "Unit Penyimpanan Biner",
@@ -1192,8 +1147,8 @@
             "unit_kcal": "Kilokalori (kcal/Cal)",
             "unit_Wh": "Watt-jam (Wh)",
             "unit_kWh": "Kilowatt-jam (kWh)",
-            "unit_BTU": "British Thermal Unit (BTU)",
-            "unit_ftlb": "Foot-pound (ft⋅lb)",
+            "unit_BTU": "Unit Termal Inggris (BTU)",
+            "unit_ftlb": "Kaki-pon (ft⋅lb)",
             "to_label": "Ke"
         },
         "content": {
@@ -1235,8 +1190,8 @@
             "from_label": "Dari",
             "unit_N": "Newton (N)",
             "unit_kN": "Kilonewton (kN)",
-            "unit_lbf": "Pound-force (lbf)",
-            "unit_kgf": "Kilogram-force (kgf)",
+            "unit_lbf": "Kekuatan Pound (lbf)",
+            "unit_kgf": "Kilogram-gaya (kgf)",
             "unit_dyn": "Dyne (dyn)",
             "to_label": "Ke"
         },
@@ -1310,121 +1265,121 @@
     "fuel-consumption-converter": {
         "meta": {
             "title": "Konverter Konsumsi Bahan Bakar - MPG Online ke L/100km",
-            "description": "Convert fuel consumption units instantly. Miles per Gallon (MPG) to L/100km and Kilometers per Liter.",
+            "description": "Konversikan satuan konsumsi bahan bakar secara instan. Mil per Galon (MPG) hingga L/100km dan Kilometer per Liter.",
             "h1": "Konverter Konsumsi Bahan Bakar",
-            "subtitle": "Convert MPG, km/L & L/100km for fuel efficiency"
+            "subtitle": "Konversi MPG, km/L & L/100km untuk efisiensi bahan bakar"
         },
         "form": {
-            "from_label": "From",
-            "unit_mpg_us": "MPG (US)",
-            "unit_mpg_uk": "MPG (UK)",
-            "unit_km_l": "Kilometers/Liter (km/L)",
-            "unit_l_100km": "Liters/100km",
-            "to_label": "To"
+            "from_label": "Dari",
+            "unit_mpg_us": "MPG (AS)",
+            "unit_mpg_uk": "MPG (Inggris)",
+            "unit_km_l": "Kilometer/Liter (km/L)",
+            "unit_l_100km": "Liter/100km",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Fuel Economy Units",
-            "feature1_desc": "Convert between MPG, L/100km, km/L, and imperial/US gallons.",
-            "feature2_title": "Automotive & Travel",
-            "feature2_desc": "Perfect for comparing vehicle efficiency and calculating trip fuel costs.",
-            "feature3_title": "Inverse Relationship",
-            "feature3_desc": "Handles efficiency (MPG) vs consumption (L/100km) conversions accurately.",
-            "main_title": "Understanding Fuel Consumption Conversion",
-            "description_p1": "Fuel consumption measures how efficiently a vehicle uses fuel. Different regions use different standards: MPG (miles per gallon) in the US and UK, L/100km (liters per 100 kilometers) in Europe and most other countries, and km/L in some Asian markets. These units measure opposite concepts: MPG shows efficiency (higher is better), while L/100km shows consumption (lower is better).",
-            "description_p2": "US and UK gallons differ: 1 US gallon = 3.785 liters, while 1 UK (imperial) gallon = 4.546 liters. This means a car rated at 30 MPG (US) equals about 36 MPG (UK). To convert MPG to L/100km, use the formula: 235.21 ÷ MPG (US) = L/100km. Understanding these conversions is essential for comparing vehicle specifications internationally and calculating fuel costs.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Vehicle Shopping:</strong> Comparing fuel economy between US and European cars",
-            "usage_2": "<strong>Trip Planning:</strong> Calculating fuel costs for road trips",
-            "usage_3": "<strong>Fleet Management:</strong> Tracking vehicle efficiency across regions",
-            "usage_4": "<strong>Environmental Impact:</strong> Assessing carbon footprint from fuel use",
-            "usage_5": "<strong>Budget Planning:</strong> Estimating monthly fuel expenses",
-            "usage_6": "<strong>International Relocation:</strong> Understanding local fuel economy standards",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How do I convert MPG to L/100km?",
-            "faq_a1": "Divide 235.21 by MPG (US). For example, 30 MPG → 235.21 ÷ 30 = 7.84 L/100km. Note: higher MPG means lower L/100km (inverse relationship).",
-            "faq_q2": "What's the difference between US and UK MPG?",
-            "faq_a2": "UK (imperial) gallons are 20% larger than US gallons. A car rated at 30 MPG (US) equals about 36 MPG (UK). Always check which gallon type is used!",
-            "faq_q3": "Which is better: higher MPG or lower L/100km?",
-            "faq_a3": "Both indicate better fuel efficiency! Higher MPG means more miles per gallon (good), while lower L/100km means less fuel per distance (also good). They're inversely related.",
-            "faq_q4": "Why does Europe use L/100km instead of MPG?",
-            "faq_a4": "L/100km directly shows fuel consumption for a standard distance, making it easier to calculate fuel costs. It's also metric-based, aligning with European measurement standards."
+            "feature1_title": "Unit Penghematan Bahan Bakar",
+            "feature1_desc": "Konversi antara MPG, L/100km, km/L, dan imperial/galon AS.",
+            "feature2_title": "Otomotif & Perjalanan",
+            "feature2_desc": "Sempurna untuk membandingkan efisiensi kendaraan dan menghitung biaya bahan bakar perjalanan.",
+            "feature3_title": "Hubungan Terbalik",
+            "feature3_desc": "Menangani konversi efisiensi (MPG) vs konsumsi (L/100km) secara akurat.",
+            "main_title": "Memahami Konversi Konsumsi Bahan Bakar",
+            "description_p1": "Konsumsi bahan bakar mengukur seberapa efisien kendaraan menggunakan bahan bakar. Tiap wilayah menggunakan standar yang berbeda: MPG (mil per galon) di AS dan Inggris, L/100km (liter per 100 kilometer) di Eropa dan sebagian besar negara lainnya, dan km/L di beberapa pasar Asia. Satuan ini mengukur konsep yang berlawanan: MPG menunjukkan efisiensi (semakin tinggi semakin baik), sedangkan L/100km menunjukkan konsumsi (semakin rendah semakin baik).",
+            "description_p2": "Galon AS dan Inggris berbeda: 1 galon AS = 3,785 liter, sedangkan 1 galon Inggris (imperial) = 4,546 liter. Ini berarti mobil dengan rating 30 MPG (AS) sama dengan 36 MPG (Inggris). Untuk mengkonversi MPG ke L/100km, gunakan rumus: 235,21 ÷ MPG (US) = L/100km. Memahami konversi ini penting untuk membandingkan spesifikasi kendaraan secara internasional dan menghitung biaya bahan bakar.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Belanja Kendaraan:</strong> Membandingkan penghematan bahan bakar antara mobil AS dan Eropa",
+            "usage_2": "<strong>Perencanaan Perjalanan:</strong> Menghitung biaya bahan bakar untuk perjalanan darat",
+            "usage_3": "<strong>Manajemen Armada:</strong> Melacak efisiensi kendaraan di seluruh wilayah",
+            "usage_4": "<strong>Dampak Lingkungan:</strong> Menilai jejak karbon dari penggunaan bahan bakar",
+            "usage_5": "<strong>Perencanaan Anggaran:</strong> Memperkirakan pengeluaran bahan bakar bulanan",
+            "usage_6": "<strong>Relokasi Internasional:</strong> Memahami standar penghematan bahan bakar lokal",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Bagaimana cara mengubah MPG ke L/100km?",
+            "faq_a1": "Bagilah 235,21 dengan MPG (AS). Misalnya, 30 MPG → 235,21 30 = 7,84 L/100km. Catatan: MPG yang lebih tinggi berarti L/100km yang lebih rendah (hubungan terbalik).",
+            "faq_q2": "Apa perbedaan antara MPG AS dan Inggris?",
+            "faq_a2": "Galon Inggris (imperial) 20% lebih besar dari galon AS. Sebuah mobil dengan nilai 30 MPG (AS) sama dengan sekitar 36 MPG (Inggris). Selalu periksa jenis galon mana yang digunakan!",
+            "faq_q3": "Mana yang lebih baik: MPG lebih tinggi atau L/100km lebih rendah?",
+            "faq_a3": "Keduanya menunjukkan efisiensi bahan bakar yang lebih baik! MPG yang lebih tinggi berarti lebih banyak mil per galon (baik), sedangkan L/100km yang lebih rendah berarti lebih sedikit bahan bakar per jarak (juga bagus). Mereka berbanding terbalik.",
+            "faq_q4": "Mengapa Eropa menggunakan L/100km dan bukan MPG?",
+            "faq_a4": "L/100km secara langsung menunjukkan konsumsi bahan bakar untuk jarak standar, sehingga memudahkan penghitungan biaya bahan bakar. Ini juga berbasis metrik, selaras dengan standar pengukuran Eropa."
         }
     },
     "kebab-case-converter": {
         "meta": {
             "title": "Konverter Kasus Kebab Gratis - Alat String URL Online",
-            "description": "Convert text to kebab-case for URLs and CSS classes with our free online tool",
+            "description": "Konversikan teks menjadi kebab-case untuk URL dan kelas CSS dengan alat online gratis kami",
             "h1": "Konverter Kasus Kebab",
-            "subtitle": "Convert text to kebab-case for URLs and CSS"
+            "subtitle": "Ubah teks menjadi kebab-case untuk URL dan CSS"
         },
         "editor": {
-            "label_input": "Input Text",
-            "ph_input": "my url slug",
-            "btn_convert": "Convert to kebab-case",
-            "btn_clear": "Clear",
-            "btn_copy": "Copy",
-            "label_output": "Output (kebab-case)",
-            "ph_output": "my-url-slug"
+            "label_input": "Masukkan Teks",
+            "ph_input": "siput url saya",
+            "btn_convert": "Ubah menjadi wadah kebab",
+            "btn_clear": "Jernih",
+            "btn_copy": "Menyalin",
+            "label_output": "Keluaran (kotak kebab)",
+            "ph_output": "url-siput saya"
         },
         "content": {
-            "hero_title": "Kebab Case Converter",
-            "hero_subtitle": "The preferred format for clean URLs and CSS selectors.",
-            "p1": "Transform your text into kebab-case format with our free online converter. Kebab-case uses lowercase letters with hyphens separating words, mimicking a \"kebab\" on a skewer.",
-            "features_title": "Features",
+            "hero_title": "Konverter Kasus Kebab",
+            "hero_subtitle": "Format pilihan untuk URL bersih dan pemilih CSS.",
+            "p1": "Ubah teks Anda menjadi format wadah kebab dengan konverter online gratis kami. Huruf kebab menggunakan huruf kecil dengan tanda hubung yang memisahkan kata, menirukan \"kebab\" pada tusuk sate.",
+            "features_title": "Fitur",
             "features": {
                 "url": {
-                    "title": "Clean URLs",
-                    "desc": "Hyphens are preferred by search engines for URL slugs."
+                    "title": "Bersihkan URL",
+                    "desc": "Tanda hubung lebih disukai oleh mesin pencari untuk siput URL."
                 },
                 "instant": {
-                    "title": "Fast Results",
-                    "desc": "Instant conversion as you type or click."
+                    "title": "Hasil Cepat",
+                    "desc": "Konversi instan saat Anda mengetik atau mengklik."
                 },
                 "privacy": {
-                    "title": "Privacy Protected",
-                    "desc": "Your text never leaves your device."
+                    "title": "Privasi Dilindungi",
+                    "desc": "Teks Anda tidak pernah keluar dari perangkat Anda."
                 },
                 "bulk": {
-                    "title": "Bulk Conversion",
-                    "desc": "Convert multiple lines or slugs at once."
+                    "title": "Konversi Massal",
+                    "desc": "Konversikan beberapa baris atau slug sekaligus."
                 },
                 "smart": {
-                    "title": "Smart Cleansing",
-                    "desc": "Automatically handles spaces and special characters."
+                    "title": "Pembersihan Cerdas",
+                    "desc": "Secara otomatis menangani spasi dan karakter khusus."
                 },
                 "free": {
-                    "title": "100% Free",
-                    "desc": "No registration or hidden costs."
+                    "title": "100% Gratis",
+                    "desc": "Tidak ada pendaftaran atau biaya tersembunyi."
                 }
             },
-            "uses_title": "Common Use Cases",
+            "uses_title": "Kasus Penggunaan Umum",
             "uses": {
                 "url": {
-                    "title": "URL Slugs",
-                    "desc": "Creating readable, search-friendly URLs for blog posts and products."
+                    "title": "Siput URL",
+                    "desc": "Membuat URL yang mudah dibaca dan ramah pencarian untuk postingan blog dan produk."
                 },
                 "css": {
-                    "title": "CSS Class Names",
-                    "desc": "Naming styles like .primary-button or .main-nav-container."
+                    "title": "Nama Kelas CSS",
+                    "desc": "Gaya penamaan seperti .primary-button atau .main-nav-container."
                 },
                 "file": {
-                    "title": "File Naming",
-                    "desc": "Standard for cross-platform compatible file names."
+                    "title": "Penamaan File",
+                    "desc": "Standar untuk nama file yang kompatibel lintas platform."
                 },
                 "html": {
-                    "title": "HTML IDs",
-                    "desc": "Giving descriptive, unique IDs to your elements."
+                    "title": "ID HTML",
+                    "desc": "Memberikan ID deskriptif dan unik ke elemen Anda."
                 },
                 "pkg": {
-                    "title": "Package Names",
-                    "desc": "Common in npm and other modern package managers."
+                    "title": "Nama Paket",
+                    "desc": "Umum di npm dan pengelola paket modern lainnya."
                 },
                 "domain": {
-                    "title": "Domain Names",
-                    "desc": "Formatting multi-word domain registrations."
+                    "title": "Nama Domain",
+                    "desc": "Memformat pendaftaran domain multi-kata."
                 }
             },
-            "how_title": "How to Convert",
+            "how_title": "Bagaimana Mengonversi",
             "how_to_steps": [
                 {
                     "title": "Insert Text",
@@ -1447,7 +1402,7 @@
                     "desc": "The kebab-case text is outputted."
                 }
             ],
-            "samples_title": "Examples",
+            "samples_title": "Contoh",
             "samples": [
                 {
                     "title": "URL Slug",
@@ -1458,343 +1413,343 @@
                     "desc": "Header Navigation → header-navigation"
                 }
             ],
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "Why is it called kebab-case?",
-                "a1": "Because the words are \"skewered\" together with a hyphen, looking like pieces of meat on a kebab.",
-                "q2": "Kebab vs Snake Case?",
-                "a2": "Kebab uses hyphens (-), snake uses underscores (_). URLs love kebabs; databases love snakes.",
-                "q3": "Is it SEO friendly?",
-                "a3": "Yes, Google and other search engines recommend using hyphens rather than underscores in URLs.",
-                "q4": "Does it handle special characters?",
-                "a4": "Yes, it replaces all symbols and punctuation with single hyphens for safety.",
-                "q5": "Is it free?",
-                "a5": "Completely free with no limits on usage."
+                "q1": "Mengapa disebut wadah kebab?",
+                "a1": "Pasalnya, kata-katanya \"ditusuk\" dengan tanda hubung, tampak seperti potongan daging di kebab.",
+                "q2": "Kasus Kebab vs Ular?",
+                "a2": "Kebab menggunakan tanda hubung (-), ular menggunakan garis bawah (_). URL menyukai kebab; database menyukai ular.",
+                "q3": "Apakah itu ramah SEO?",
+                "a3": "Ya, Google dan mesin pencari lainnya menyarankan penggunaan tanda hubung daripada garis bawah pada URL.",
+                "q4": "Apakah itu menangani karakter khusus?",
+                "a4": "Ya, ini menggantikan semua simbol dan tanda baca dengan tanda hubung tunggal demi keamanan.",
+                "q5": "Apakah ini gratis?",
+                "a5": "Sepenuhnya gratis tanpa batasan penggunaan."
             }
         },
         "js": {
-            "error_empty": "Please enter some text to convert",
-            "success_convert": "✓ Converted to kebab-case successfully!",
-            "error_copy": "Nothing to copy! Please convert some text first.",
-            "success_copy": "✓ Copied to clipboard!"
+            "error_empty": "Silakan masukkan beberapa teks untuk dikonversi",
+            "success_convert": "✓ Berhasil diubah menjadi wadah kebab!",
+            "error_copy": "Tidak ada yang perlu ditiru! Harap konversikan beberapa teks terlebih dahulu.",
+            "success_copy": "✓ Disalin ke papan klip!"
         }
     },
     "length-converter": {
         "meta": {
             "title": "Pengonversi Satuan Panjang - Alat Pengukuran Online Gratis",
-            "description": "Convert length measurements instantly. Supports metric and imperial units like meters, feet, inches, kilometers, and miles.",
+            "description": "Konversi pengukuran panjang secara instan. Mendukung satuan metrik dan imperial seperti meter, kaki, inci, kilometer, dan mil.",
             "h1": "Konverter Panjang",
-            "subtitle": "Convert meters, feet, inches, km & miles with high precision"
+            "subtitle": "Konversi meter, kaki, inci, km & mil dengan presisi tinggi"
         },
         "form": {
-            "from_label": "From",
-            "optgroup_metric": "Metric",
-            "unit_mm": "Millimeter (mm)",
-            "unit_cm": "Centimeter (cm)",
-            "unit_m": "Meter (m)",
+            "from_label": "Dari",
+            "optgroup_metric": "Metrik",
+            "unit_mm": "Milimeter (mm)",
+            "unit_cm": "Sentimeter (cm)",
+            "unit_m": "meteran (m)",
             "unit_km": "Kilometer (km)",
             "optgroup_imperial": "Imperial",
-            "unit_in": "Inch (in)",
-            "unit_ft": "Foot (ft)",
-            "unit_yd": "Yard (yd)",
-            "unit_mi": "Mile (mi)",
-            "to_label": "To"
+            "unit_in": "Inci (dalam)",
+            "unit_ft": "Kaki (kaki)",
+            "unit_yd": "Halaman (yd)",
+            "unit_mi": "Mil (mil)",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Instant Conversion",
-            "feature1_desc": "Get results immediately as you type. No waiting, no page reloads.",
-            "feature2_title": "High Precision",
-            "feature2_desc": "Calculates up to 10 decimal places for scientific accuracy.",
-            "feature3_title": "Metric & Imperial",
-            "feature3_desc": "Supports all common units from Millimeters to Miles.",
-            "main_title": "Understanding Length Conversion",
-            "description_p1": "Length measures the distance between two points. The two most common systems are the Metric system (meters, centimeters, kilometers) used globally, and the Imperial/US Customary system (inches, feet, yards, miles) used primarily in the United States and UK.",
-            "description_p2": "The base unit of length in the International System of Units (SI) is the meter. One meter is defined as the distance light travels in a vacuum in 1/299,792,458 of a second. Conversions between systems are based on the definition that 1 inch is exactly 25.4 millimeters.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Construction:</strong> Converting blueprints from metric to imperial",
-            "usage_2": "<strong>Travel:</strong> Understanding distances in kilometers vs miles",
-            "usage_3": "<strong>Science:</strong> Laboratory measurements in millimeters and microns",
-            "usage_4": "<strong>Sports:</strong> converting track distances (100m dash, 40 yard dash)",
-            "usage_5": "<strong>Height:</strong> Converting centimeters to feet and inches",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How many feet are in a mile?",
-            "faq_a1": "There are 5,280 feet in one mile. This odd number comes from the historical definition involving Roman paces and furlongs.",
-            "faq_q2": "How do I convert inches to centimeters?",
-            "faq_a2": "Multiply the inch value by 2.54. For example, 10 inches × 2.54 = 25.4 cm.",
-            "faq_q3": "What is the difference between a yard and a meter?",
-            "faq_a3": "A meter is slightly longer than a yard. 1 meter ≈ 1.094 yards, or 1 yard = 0.9144 meters. In sports like track & field, this difference is significant."
+            "feature1_title": "Konversi Instan",
+            "feature1_desc": "Dapatkan hasil segera saat Anda mengetik. Tidak perlu menunggu, tidak ada halaman yang dimuat ulang.",
+            "feature2_title": "Presisi Tinggi",
+            "feature2_desc": "Menghitung hingga 10 tempat desimal untuk akurasi ilmiah.",
+            "feature3_title": "Metrik & Imperial",
+            "feature3_desc": "Mendukung semua satuan umum dari Milimeter hingga Miles.",
+            "main_title": "Memahami Konversi Panjang",
+            "description_p1": "Panjang mengukur jarak antara dua titik. Dua sistem yang paling umum adalah sistem Metrik (meter, sentimeter, kilometer) yang digunakan secara global, dan sistem Imperial/Adat AS (inci, kaki, yard, mil) yang digunakan terutama di Amerika Serikat dan Inggris.",
+            "description_p2": "Satuan dasar panjang dalam Sistem Satuan Internasional (SI) adalah meter. Satu meter didefinisikan sebagai jarak yang ditempuh cahaya dalam ruang hampa dalam 1/299.792.458 detik. Konversi antar sistem didasarkan pada definisi bahwa 1 inci sama dengan 25,4 milimeter.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Konstruksi:</strong> Mengubah cetak biru dari metrik ke imperial",
+            "usage_2": "<strong>Perjalanan:</strong> Memahami jarak dalam kilometer vs mil",
+            "usage_3": "<strong>Sains:</strong> Pengukuran laboratorium dalam milimeter dan mikron",
+            "usage_4": "<strong>Olahraga:</strong> mengonversi jarak lintasan (lari 100m, lari 40 yard)",
+            "usage_5": "<strong>Tinggi:</strong> Mengonversi sentimeter menjadi kaki dan inci",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Berapa kaki dalam satu mil?",
+            "faq_a1": "Ada 5.280 kaki dalam satu mil. Angka ganjil ini berasal dari definisi sejarah yang melibatkan langkah dan jarak Romawi.",
+            "faq_q2": "Bagaimana cara mengubah inci ke sentimeter?",
+            "faq_a2": "Kalikan nilai inci dengan 2,54. Misalnya, 10 inci × 2,54 = 25,4 cm.",
+            "faq_q3": "Apa perbedaan antara yard dan meter?",
+            "faq_a3": "Satu meter sedikit lebih panjang dari satu yard. 1 meter ≈ 1,094 yard, atau 1 yard = 0,9144 meter. Dalam olahraga seperti atletik, perbedaan ini signifikan."
         }
     },
     "molar-mass-converter": {
         "meta": {
             "title": "Pengonversi Massa Molar Gratis - Alat Kimia Online",
-            "description": "Convert molar mass units instantly. Grams per mole to Kilograms per mole.",
+            "description": "Ubah satuan massa molar secara instan. Gram per mol ke Kilogram per mol.",
             "h1": "Konverter Massa Molar",
-            "subtitle": "Convert g/mol, kg/mol & lb/mol for chemistry calculations"
+            "subtitle": "Konversi g/mol, kg/mol & lb/mol untuk perhitungan kimia"
         },
         "form": {
-            "from_label": "From",
-            "unit_g_mol": "Gram per mole (g/mol)",
-            "unit_kg_mol": "Kilogram per mole (kg/mol)",
-            "unit_lb_mol": "Pound per mole (lb/mol)",
-            "to_label": "To"
+            "from_label": "Dari",
+            "unit_g_mol": "Gram per mol (g/mol)",
+            "unit_kg_mol": "Kilogram per mol (kg/mol)",
+            "unit_lb_mol": "Pound per mol (lb/mol)",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Molar Mass Units",
-            "feature1_desc": "Convert between g/mol, kg/mol, lb/mol for chemistry calculations.",
-            "feature2_title": "Chemistry & Science",
-            "feature2_desc": "Essential for stoichiometry, molecular calculations, and lab work.",
-            "feature3_title": "Molecular Weight",
-            "feature3_desc": "Accurate conversions for chemical compound mass calculations.",
-            "main_title": "Understanding Molar Mass Conversion",
-            "description_p1": "Molar mass is the mass of one mole of a substance, typically expressed in grams per mole (g/mol). It's a fundamental concept in chemistry, equal to the sum of atomic masses of all atoms in a molecule. For example, water (H₂O) has a molar mass of approximately 18 g/mol (2×1 + 16). Understanding molar mass is essential for stoichiometry, solution preparation, and chemical calculations.",
-            "description_p2": "The standard unit is g/mol, though kg/mol is used for larger quantities (1 kg/mol = 1000 g/mol). Imperial systems occasionally use lb/mol, where 1 lb/mol ≈ 453.59 g/mol. Carbon-12 is defined to have exactly 12 g/mol, serving as the reference for atomic mass units. These conversions are crucial for laboratory work, pharmaceutical calculations, and industrial chemistry.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Stoichiometry:</strong> Calculating reactant and product quantities",
-            "usage_2": "<strong>Solution Preparation:</strong> Making molar solutions in the lab",
-            "usage_3": "<strong>Chemical Analysis:</strong> Determining compound composition",
-            "usage_4": "<strong>Pharmaceuticals:</strong> Drug dosage and formulation calculations",
-            "usage_5": "<strong>Industrial Chemistry:</strong> Large-scale production calculations",
-            "usage_6": "<strong>Academic Research:</strong> Molecular weight determinations",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How do I calculate molar mass?",
-            "faq_a1": "Add the atomic masses of all atoms in the molecule. For H₂O: (2 × 1.008) + 16.00 = 18.016 g/mol. Use the periodic table for atomic masses.",
-            "faq_q2": "What's the difference between molar mass and molecular weight?",
-            "faq_a2": "They're numerically equal but conceptually different. Molar mass has units (g/mol), while molecular weight is dimensionless. In practice, the terms are often used interchangeably.",
-            "faq_q3": "How do I convert g/mol to kg/mol?",
-            "faq_a3": "Divide by 1000. For example, 180 g/mol ÷ 1000 = 0.18 kg/mol. This is useful for large-scale industrial calculations.",
-            "faq_q4": "Why is Avogadro's number important for molar mass?",
-            "faq_a4": "Avogadro's number (6.022 × 10²³) defines a mole. The molar mass in grams numerically equals the mass of one molecule in atomic mass units, connecting atomic and macroscopic scales."
+            "feature1_title": "Satuan Massa Molar",
+            "feature1_desc": "Konversi antara g/mol, kg/mol, lb/mol untuk perhitungan kimia.",
+            "feature2_title": "Kimia & Sains",
+            "feature2_desc": "Penting untuk stoikiometri, perhitungan molekuler, dan pekerjaan laboratorium.",
+            "feature3_title": "Berat Molekul",
+            "feature3_desc": "Konversi akurat untuk perhitungan massa senyawa kimia.",
+            "main_title": "Memahami Konversi Massa Molar",
+            "description_p1": "Massa molar adalah massa satu mol suatu zat, biasanya dinyatakan dalam gram per mol (g/mol). Ini adalah konsep dasar dalam kimia, sama dengan jumlah massa atom seluruh atom dalam suatu molekul. Misalnya, air (H₂O) memiliki massa molar kira-kira 18 g/mol (2×1 + 16). Memahami massa molar sangat penting untuk stoikiometri, persiapan larutan, dan perhitungan kimia.",
+            "description_p2": "Satuan standarnya adalah g/mol, meskipun kg/mol digunakan untuk jumlah yang lebih besar (1 kg/mol = 1000 g/mol). Sistem imperial terkadang menggunakan lb/mol, dimana 1 lb/mol ≈ 453,59 g/mol. Karbon-12 didefinisikan memiliki tepat 12 g/mol, yang berfungsi sebagai acuan untuk satuan massa atom. Konversi ini sangat penting untuk pekerjaan laboratorium, perhitungan farmasi, dan kimia industri.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Stoikiometri:</strong> Menghitung jumlah reaktan dan produk",
+            "usage_2": "<strong>Persiapan Larutan:</strong> Membuat larutan molar di laboratorium",
+            "usage_3": "<strong>Analisis Kimia:</strong> Menentukan komposisi senyawa",
+            "usage_4": "<strong>Farmasi:</strong> Perhitungan dosis dan formulasi obat",
+            "usage_5": "<strong>Kimia Industri:</strong> Perhitungan produksi skala besar",
+            "usage_6": "<strong>Penelitian Akademis:</strong> Penentuan berat molekul",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Bagaimana cara menghitung massa molar?",
+            "faq_a1": "Tambahkan massa atom semua atom dalam molekul. Untuk H₂O: (2 × 1,008) + 16,00 = 18,016 g/mol. Gunakan tabel periodik untuk massa atom.",
+            "faq_q2": "Apa perbedaan antara massa molar dan berat molekul?",
+            "faq_a2": "Secara numerik keduanya sama tetapi secara konseptual berbeda. Massa molar memiliki satuan (g/mol), sedangkan berat molekul tidak berdimensi. Dalam praktiknya, istilah-istilah tersebut sering digunakan secara bergantian.",
+            "faq_q3": "Bagaimana cara mengubah g/mol menjadi kg/mol?",
+            "faq_a3": "Bagilah dengan 1000. Misalnya, 180 g/mol 1000 = 0,18 kg/mol. Hal ini berguna untuk perhitungan industri skala besar.",
+            "faq_q4": "Mengapa bilangan Avogadro penting untuk massa molar?",
+            "faq_a4": "Bilangan Avogadro (6,022 × 10²³) mendefinisikan mol. Massa molar dalam gram secara numerik sama dengan massa satu molekul dalam satuan massa atom, yang menghubungkan skala atom dan makroskopis."
         }
     },
     "number-base-converter": {
         "meta": {
             "title": "Konverter Basis Angka Universal - Alat Online Gratis",
-            "description": "Convert any number between any base from 2 to 36. Truly versatile online tool for programmers, math students, and data scientists.",
+            "description": "Konversikan angka apa pun antara basis apa pun dari 2 hingga 36. Alat online yang benar-benar serbaguna untuk pemrogram, pelajar matematika, dan ilmuwan data.",
             "h1": "Konverter Basis Angka",
-            "subtitle": "The most flexible numeric transformation tool on the web."
+            "subtitle": "Alat transformasi numerik paling fleksibel di web."
         },
         "editor": {
-            "label_from": "From Base",
+            "label_from": "Dari Pangkalan",
             "bases": {
-                "2": "Decimal (Base 10)",
-                "8": "",
-                "10": "",
-                "16": "",
-                "generic": "Base :base"
+                "2": "Desimal (Basis 10)",
+                "8": "Oktal",
+                "10": "Desimal",
+                "16": "Heksadesimal",
+                "generic": "Basis: basis"
             },
-            "label_to": "To Base",
-            "btn_swap": "Swap Bases",
-            "presets": "Quick Presets:",
+            "label_to": "Ke Pangkalan",
+            "btn_swap": "Tukar Basis",
+            "presets": "Preset Cepat:",
             "preset_labels": {
-                "bin_dec": "Binary → Dec",
-                "dec_hex": "Dec → Hex",
-                "hex_bin": "Hex → Binary",
-                "dec_oct": "Dec → Octal"
+                "bin_dec": "Biner → Des",
+                "dec_hex": "Desember → Hex",
+                "hex_bin": "Hex → Biner",
+                "dec_oct": "Des → Oktal"
             },
-            "label_input": "Input Number",
-            "ph_input": "Enter your number here...",
-            "label_output": "Resulting Value",
-            "ph_output": "Converted result will appear here...",
-            "btn_convert": "Convert Number",
-            "btn_clear": "Clear All",
-            "btn_copy": "Copy Result"
+            "label_input": "Nomor Masukan",
+            "ph_input": "Masukkan nomor Anda di sini...",
+            "label_output": "Nilai yang Dihasilkan",
+            "ph_output": "Hasil yang dikonversi akan muncul di sini...",
+            "btn_convert": "Konversi Nomor",
+            "btn_clear": "Hapus Semua",
+            "btn_copy": "Salin Hasil"
         },
         "content": {
-            "hero_title": "Universal Number Base Converter",
-            "hero_subtitle": "Instantly transform values between any numeric base from 2 to 36.",
-            "p1": "Our Universal Number Base Converter is a powerful, all-in-one utility designed for maximum flexibility. While most tools limit you to common bases like binary, decimal, or hex, our converter empowers you to work with any base from 2 to 36. This includes duodecimal (base 12), vigesimal (base 20), and even base 36 (digits 0-9 and letters A-Z). It is an essential companion for programmers working with custom encodings, students exploring number theory, and engineers designing unique data structures.",
-            "what_title": "What are Number Bases?",
-            "what_desc": "A number base (also known as a radix) represents the number of unique digits, including zero, that a numeric system uses to represent values. For instance, the decimal system (base 10) we use daily has ten unique digits (0-9). Computers thrive on the binary system (base 2), while developers frequently use octal (base 8) and hexadecimal (base 16) for more compact data representation. Bases higher than 10 use letters of the alphabet to represent values; for example, in base 16, A represents 10 and F represents 15.",
-            "features_title": "Primary Tool Features",
+            "hero_title": "Konverter Basis Angka Universal",
+            "hero_subtitle": "Ubah nilai secara instan antara basis numerik apa pun dari 2 hingga 36.",
+            "p1": "Konverter Basis Angka Universal kami adalah utilitas lengkap dan canggih yang dirancang untuk fleksibilitas maksimum. Meskipun sebagian besar alat membatasi Anda pada basis umum seperti biner, desimal, atau heksa, konverter kami memberdayakan Anda untuk bekerja dengan basis apa pun dari 2 hingga 36. Ini termasuk duodesimal (basis 12), vigesimal (basis 20), dan bahkan basis 36 (digit 0-9 dan huruf A-Z). Ini adalah pendamping penting bagi pemrogram yang bekerja dengan pengkodean khusus, pelajar yang mempelajari teori bilangan, dan insinyur yang merancang struktur data unik.",
+            "what_title": "Apa itu Basis Angka?",
+            "what_desc": "Basis bilangan (juga dikenal sebagai radix) mewakili jumlah digit unik, termasuk nol, yang digunakan sistem numerik untuk mewakili nilai. Misalnya, sistem desimal (basis 10) yang kita gunakan sehari-hari memiliki sepuluh digit unik (0-9). Komputer berkembang dengan sistem biner (basis 2), sementara pengembang sering menggunakan oktal (basis 8) dan heksadesimal (basis 16) untuk representasi data yang lebih ringkas. Basis yang lebih tinggi dari 10 menggunakan huruf alfabet untuk mewakili nilai; misalnya, pada basis 16, A mewakili 10 dan F mewakili 15.",
+            "features_title": "Fitur Alat Utama",
             "features": {
                 "instant": {
-                    "title": "Near-Zero Latency",
-                    "desc": "Algorithms optimized for speed, delivering results as you type or click."
+                    "title": "Latensi Mendekati Nol",
+                    "desc": "Algoritme dioptimalkan untuk kecepatan, memberikan hasil saat Anda mengetik atau mengklik."
                 },
                 "universal": {
-                    "title": "Omni-Base Support",
-                    "desc": "Full freedom to choose any source and target base between 2 and 36."
+                    "title": "Dukungan Omni-Base",
+                    "desc": "Kebebasan penuh untuk memilih sumber dan basis target antara 2 dan 36."
                 },
                 "presets": {
-                    "title": "Smart Presets",
-                    "desc": "One-click shortcuts for the most common industry-standard conversions."
+                    "title": "Preset Cerdas",
+                    "desc": "Pintasan sekali klik untuk konversi standar industri yang paling umum."
                 },
                 "swap": {
-                    "title": "Instant Swap",
-                    "desc": "Quickly reverse your From and To bases with a dedicated button."
+                    "title": "Pertukaran Instan",
+                    "desc": "Balikkan basis Dari dan Ke Anda dengan cepat menggunakan tombol khusus."
                 },
                 "privacy": {
-                    "title": "Secure Computing",
-                    "desc": "Your numbers are never sent to a server; all logic runs locally in your browser."
+                    "title": "Komputasi Aman",
+                    "desc": "Nomor Anda tidak pernah dikirim ke server; semua logika berjalan secara lokal di browser Anda."
                 },
                 "free": {
-                    "title": "Free for All",
-                    "desc": "No registration, no limits, and no hidden subscription fees."
+                    "title": "Gratis untuk Semua",
+                    "desc": "Tanpa registrasi, tanpa batasan, dan tanpa biaya berlangganan tersembunyi."
                 }
             },
-            "uses_title": "Professional Applications",
+            "uses_title": "Aplikasi Profesional",
             "uses": {
                 "programming": {
-                    "title": "Full-Stack Programming",
-                    "desc": "Work with custom bases for unique ID generators, data compression, and obscured identifiers."
+                    "title": "Pemrograman Tumpukan Penuh",
+                    "desc": "Bekerja dengan basis khusus untuk generator ID unik, kompresi data, dan pengidentifikasi yang dikaburkan."
                 },
                 "education": {
-                    "title": "Computer Science Education",
-                    "desc": "Visualize how numbers transition between different positional systems for academic study."
+                    "title": "Pendidikan Ilmu Komputer",
+                    "desc": "Visualisasikan bagaimana angka bertransisi antara sistem posisi yang berbeda untuk studi akademis."
                 },
                 "crypto": {
-                    "title": "Creative Cryptography",
-                    "desc": "Experiment with non-standard bases for simple encoding and puzzle creation."
+                    "title": "Kriptografi Kreatif",
+                    "desc": "Bereksperimenlah dengan basis non-standar untuk pengkodean sederhana dan pembuatan teka-teki."
                 },
                 "web": {
-                    "title": "Advanced Web Dev",
-                    "desc": "Analyze and convert URL identifiers or unique keys that utilize higher bases like base-36."
+                    "title": "Pengembangan Web Tingkat Lanjut",
+                    "desc": "Analisis dan konversi pengidentifikasi URL atau kunci unik yang menggunakan basis yang lebih tinggi seperti basis-36."
                 }
             },
-            "how_title": "User Operations Guide",
+            "how_title": "Panduan Pengoperasian Pengguna",
             "how_steps": {
                 "1": {
-                    "title": "Select To Base",
-                    "desc": "Choose the target base for your conversion."
+                    "title": "Pilih Ke Basis",
+                    "desc": "Pilih basis target untuk konversi Anda."
                 },
                 "2": {
-                    "title": "Enter Value",
-                    "desc": "Input the number strings using the allowed characters for your source base."
+                    "title": "Masukkan Nilai",
+                    "desc": "Masukkan string nomor menggunakan karakter yang diizinkan untuk basis sumber Anda."
                 },
                 "3": {
-                    "title": "Execute",
-                    "desc": "Click \"Convert Number\" to process the transformation."
+                    "title": "Menjalankan",
+                    "desc": "Klik \"Konversi Nomor\" untuk memproses transformasi."
                 },
                 "4": {
-                    "title": "Capture Result",
-                    "desc": "Copy the resulting value for use in your external applications."
+                    "title": "Hasil Tangkapan",
+                    "desc": "Salin nilai yang dihasilkan untuk digunakan dalam aplikasi eksternal Anda."
                 },
                 "5": {
-                    "title": "Copy Result:",
-                    "desc": "Click \"Copy\" to copy the converted number"
+                    "title": "Salin Hasil:",
+                    "desc": "Klik \"Salin\" untuk menyalin nomor yang dikonversi"
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "What is the highest base supported?",
-                "a1": "This converter supports all bases from 2 to 36. Base 36 uses digits 0-9 and letters A-Z, providing 36 unique symbols.",
-                "q2": "How do bases higher than 10 work?",
-                "a2": "Bases higher than 10 use letters A-Z to represent values 10-35. For example, in hexadecimal (base 16), A=10, B=11, C=12, D=13, E=14, F=15.",
-                "q3": "Can I convert negative numbers?",
-                "a3": "Yes, the converter handles negative numbers. The negative sign is preserved during conversion.",
-                "q4": "Is my data secure?",
-                "a4": "Absolutely! All conversions happen entirely in your browser using JavaScript. Your numbers never leave your device or get sent to any server."
+                "q1": "Apa basis tertinggi yang didukung?",
+                "a1": "Konverter ini mendukung semua basis dari 2 hingga 36. Basis 36 menggunakan angka 0-9 dan huruf A-Z, menyediakan 36 simbol unik.",
+                "q2": "Bagaimana cara kerja basa yang lebih tinggi dari 10?",
+                "a2": "Basis yang lebih tinggi dari 10 menggunakan huruf A-Z untuk mewakili nilai 10-35. Misalnya dalam heksadesimal (basis 16), A=10, B=11, C=12, D=13, E=14, F=15.",
+                "q3": "Bisakah saya mengonversi bilangan negatif?",
+                "a3": "Ya, konverter menangani angka negatif. Tanda negatif dipertahankan selama konversi.",
+                "q4": "Apakah data saya aman?",
+                "a4": "Sangat! Semua konversi terjadi sepenuhnya di browser Anda menggunakan JavaScript. Nomor Anda tidak pernah meninggalkan perangkat Anda atau dikirim ke server mana pun."
             }
         },
         "js": {
-            "error_empty": "Please enter a number to convert.",
-            "error_invalid": "Invalid input for base :base. Only characters :chars are allowed.",
-            "error_format": "Invalid number format detected.",
-            "success_convert": "✓ Converted from base :from to base :to successfully!",
-            "error_general": "An unexpected error occurred: ",
-            "error_copy": "Nothing to copy! Please perform a conversion first.",
-            "success_copy": "✓ Copied to clipboard!"
+            "error_empty": "Silakan masukkan nomor yang akan dikonversi.",
+            "error_invalid": "Masukan untuk basis :base tidak valid. Hanya karakter :chars yang diperbolehkan.",
+            "error_format": "Format nomor tidak valid terdeteksi.",
+            "success_convert": "✓ Dikonversi dari basis :dari ke basis :hingga berhasil!",
+            "error_general": "Terjadi kesalahan tak terduga:",
+            "error_copy": "Tidak ada yang perlu ditiru! Silakan lakukan konversi terlebih dahulu.",
+            "success_copy": "✓ Disalin ke papan klip!"
         }
     },
     "pascal-case-converter": {
         "meta": {
             "title": "Pengonversi Kasus Pascal Online - Alat Pengkodean Gratis",
-            "description": "Convert text to PascalCase for class names and types with our free online tool",
+            "description": "Konversikan teks ke PascalCase untuk nama dan tipe kelas dengan alat online gratis kami",
             "h1": "Konverter Kasus Pascal",
-            "subtitle": "Convert text to PascalCase for class names and types"
+            "subtitle": "Konversikan teks ke PascalCase untuk nama dan tipe kelas"
         },
         "editor": {
-            "label_input": "Input Text",
-            "ph_input": "my class name",
-            "btn_convert": "Convert to PascalCase",
-            "btn_clear": "Clear",
-            "btn_copy": "Copy",
-            "label_output": "Output (PascalCase)",
-            "ph_output": "MyClassName"
+            "label_input": "Masukkan Teks",
+            "ph_input": "nama kelasku",
+            "btn_convert": "Konversikan ke PascalCase",
+            "btn_clear": "Jernih",
+            "btn_copy": "Menyalin",
+            "label_output": "Keluaran (PascalCase)",
+            "ph_output": "NamaKelas Saya"
         },
         "content": {
-            "hero_title": "Pascal Case Converter",
-            "hero_subtitle": "Perfect for naming classes, types, and components.",
-            "p1": "Transform your text into PascalCase format with our free online converter. PascalCase capitalizes the first letter of every word with no spaces or special characters, making it the standard for Object-Oriented Programming.",
-            "features_title": "Features",
+            "hero_title": "Konverter Kasus Pascal",
+            "hero_subtitle": "Sempurna untuk memberi nama kelas, tipe, dan komponen.",
+            "p1": "Ubah teks Anda menjadi format PascalCase dengan konverter online gratis kami. PascalCase menggunakan huruf besar pada huruf pertama setiap kata tanpa spasi atau karakter khusus, menjadikannya standar untuk Pemrograman Berorientasi Objek.",
+            "features_title": "Fitur",
             "features": {
                 "oop": {
-                    "title": "OO-Friendly",
-                    "desc": "Generated names are 100% compliant with C#, Java, and Python class naming rules."
+                    "title": "Ramah OO",
+                    "desc": "Nama yang dihasilkan 100% mematuhi aturan penamaan kelas C#, Java, dan Python."
                 },
                 "instant": {
-                    "title": "Lightning Fast",
-                    "desc": "Get results instantly as you click the button."
+                    "title": "Secepat Kilat",
+                    "desc": "Dapatkan hasil secara instan saat Anda mengklik tombol."
                 },
                 "privacy": {
-                    "title": "Privacy First",
-                    "desc": "All processing happens locally in your browser"
+                    "title": "Privasi Pertama",
+                    "desc": "Semua pemrosesan terjadi secara lokal di browser Anda"
                 },
                 "batch": {
-                    "title": "Batch Conversion",
-                    "desc": "Convert multiple class names at once."
+                    "title": "Konversi Batch",
+                    "desc": "Konversi beberapa nama kelas sekaligus."
                 },
                 "smart": {
-                    "title": "Smart Formatting",
-                    "desc": "Removes spaces and capitalizes each word automatically."
+                    "title": "Pemformatan Cerdas",
+                    "desc": "Menghapus spasi dan menggunakan huruf besar pada setiap kata secara otomatis."
                 },
                 "free": {
-                    "title": "100% Free",
-                    "desc": "No registration or limits."
+                    "title": "100% Gratis",
+                    "desc": "Tidak ada registrasi atau batasan."
                 }
             },
-            "uses_title": "When to Use Pascal Case",
+            "uses_title": "Kapan Menggunakan Kasus Pascal",
             "uses": {
                 "class": {
-                    "title": "🏗️ Class Names",
-                    "desc": "Create properly formatted class names for Java, C#, C++, and other OOP languages"
+                    "title": "🏗️ Nama Kelas",
+                    "desc": "Buat nama kelas yang diformat dengan benar untuk Java, C#, C++, dan bahasa OOP lainnya"
                 },
                 "react": {
-                    "title": "React Components",
-                    "desc": "Required for naming functional and class components in React."
+                    "title": "Komponen Reaksi",
+                    "desc": "Diperlukan untuk memberi nama komponen fungsional dan kelas di React."
                 },
                 "ts": {
-                    "title": "📘 TypeScript Types",
-                    "desc": "Format interface and type names in TypeScript projects"
+                    "title": "📘 Jenis Skrip Ketik",
+                    "desc": "Format antarmuka dan ketik nama dalam proyek TypeScript"
                 },
                 "css": {
-                    "title": "CSS Modules",
-                    "desc": "Create component class names for CSS-in-JS and CSS modules."
+                    "title": "Modul CSS",
+                    "desc": "Buat nama kelas komponen untuk modul CSS-in-JS dan CSS."
                 },
                 "api": {
-                    "title": "API Models",
-                    "desc": "Format data model and entity names in backend development."
+                    "title": "Model API",
+                    "desc": "Format model data dan nama entitas dalam pengembangan backend."
                 },
                 "pkg": {
-                    "title": "Package Names",
-                    "desc": "Create namespace and package names following conventions."
+                    "title": "Nama Paket",
+                    "desc": "Buat namespace dan nama paket mengikuti konvensi."
                 }
             },
-            "how_title": "How to Convert",
+            "how_title": "Bagaimana Mengonversi",
             "how_steps": {
                 "1": {
-                    "title": "Click Convert",
-                    "desc": "Press \"Convert to PascalCase\"."
+                    "title": "Klik Konversi",
+                    "desc": "Tekan \"Konversi ke PascalCase\"."
                 },
                 "2": {
-                    "title": "Review Output",
-                    "desc": "Check the PascalCase result."
+                    "title": "Tinjau Keluaran",
+                    "desc": "Periksa hasil PascalCase."
                 },
                 "3": {
-                    "title": "Copy Result",
-                    "desc": "Click \"Copy\" button."
+                    "title": "Salin Hasil",
+                    "desc": "Klik tombol \"Salin\"."
                 },
                 "4": {
-                    "title": "Use in Code",
-                    "desc": "Paste into your project."
+                    "title": "Gunakan dalam Kode",
+                    "desc": "Tempel ke proyek Anda."
                 },
                 "5": {
-                    "title": "Use in Code:",
-                    "desc": "Paste into your project"
+                    "title": "Gunakan dalam Kode:",
+                    "desc": "Tempel ke proyek Anda"
                 }
             },
-            "examples_title": "Examples",
+            "examples_title": "Contoh",
             "samples": [
                 {
                     "title": "Class Name",
@@ -1805,159 +1760,159 @@
                     "desc": "api response type → ApiResponseType"
                 }
             ],
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "What is PascalCase?",
-                "a1": "PascalCase is a naming convention where every word starts with a capital letter and there are no spaces or special characters. Example: MyClassName",
+                "q1": "Apa itu PascalCase?",
+                "a1": "PascalCase adalah konvensi penamaan di mana setiap kata dimulai dengan huruf kapital dan tidak ada spasi atau karakter khusus. Contoh: NamaKelas Saya",
                 "q2": "PascalCase vs camelCase?",
-                "a2": "PascalCase starts with a capital (MyTitle), camelCase starts with a lowercase (myTitle).",
-                "q3": "Why is it called PascalCase?",
-                "a3": "It was popularized by the developers of the Pascal programming language.",
-                "q4": "Does this work with numbers?",
-                "a4": "Yes! The tool handles numbers correctly, preserving them while capitalizing the letters appropriately (e.g., \"user 2 profile\" becomes \"User2Profile\").",
-                "q5": "Is this tool free?",
-                "a5": "Yes! Completely free with no limits. All processing happens in your browser for maximum privacy and speed."
+                "a2": "PascalCase dimulai dengan huruf kapital (MyTitle), camelCase dimulai dengan huruf kecil (myTitle).",
+                "q3": "Mengapa disebut PascalCase?",
+                "a3": "Itu dipopulerkan oleh para pengembang bahasa pemrograman Pascal.",
+                "q4": "Apakah ini berfungsi dengan angka?",
+                "a4": "Ya! Alat ini menangani angka dengan benar, mempertahankannya sambil menggunakan huruf besar dengan tepat (misalnya, \"profil pengguna 2\" menjadi \"Profil Pengguna2\").",
+                "q5": "Apakah alat ini gratis?",
+                "a5": "Ya! Sepenuhnya gratis tanpa batas. Semua pemrosesan terjadi di browser Anda untuk privasi dan kecepatan maksimum."
             }
         },
         "js": {
-            "error_empty": "Please enter some text to convert",
-            "success_convert": "✓ Converted to PascalCase successfully!",
-            "error_copy": "Nothing to copy! Please convert some text first.",
-            "success_copy": "✓ Copied to clipboard!"
+            "error_empty": "Silakan masukkan beberapa teks untuk dikonversi",
+            "success_convert": "✓ Berhasil dikonversi ke PascalCase!",
+            "error_copy": "Tidak ada yang perlu ditiru! Harap konversikan beberapa teks terlebih dahulu.",
+            "success_copy": "✓ Disalin ke papan klip!"
         }
     },
     "power-converter": {
         "meta": {
             "title": "Pengonversi Satuan Daya - Watt Gratis ke HP Online",
-            "description": "Convert power units instantly. Watts to Horsepower, Kilowatts to BTU/h, and more.",
+            "description": "Konversikan unit daya secara instan. Watt ke Horsepower, Kilowatt ke BTU/jam, dan banyak lagi.",
             "h1": "Konverter Daya",
-            "subtitle": "Convert watts, kilowatts, horsepower & BTU/h instantly"
+            "subtitle": "Konversi watt, kilowatt, tenaga kuda & BTU/jam secara instan"
         },
         "form": {
-            "from_label": "From",
-            "unit_W": "Watt (W)",
+            "from_label": "Dari",
+            "unit_W": "watt (W)",
             "unit_kW": "Kilowatt (kW)",
-            "unit_hp": "Horsepower (hp)",
-            "unit_ps": "Metric Horsepower (PS)",
-            "unit_kcal_h": "kcal/h",
-            "unit_btu_h": "BTU/h",
-            "to_label": "To"
+            "unit_hp": "Tenaga kuda (hp)",
+            "unit_ps": "Tenaga Kuda Metrik (PS)",
+            "unit_kcal_h": "kkal/jam",
+            "unit_btu_h": "BTU/jam",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Power Units",
-            "feature1_desc": "Convert between watts, kilowatts, horsepower, and BTU/h.",
-            "feature2_title": "Engines & Motors",
-            "feature2_desc": "Perfect for automotive, electrical, and mechanical power calculations.",
-            "feature3_title": "Scientific Accuracy",
-            "feature3_desc": "Precise conversions for engineering and energy applications.",
-            "main_title": "Understanding Power Conversion",
-            "description_p1": "Power measures the rate of energy transfer or work done per unit time. The SI unit is the watt (W), defined as one joule per second. Different industries use different units: watts/kilowatts in electrical systems, horsepower in automotive, and metric horsepower (PS/CV) in European vehicle specifications.",
-            "description_p2": "One mechanical horsepower equals approximately 745.7 watts, while one metric horsepower (PS, Pferdestärke) equals about 735.5 watts. Kilowatts are commonly used for electric motors and power plants (1 kW = 1,000 W). Understanding these conversions is essential for comparing engine specifications, electrical appliances, and industrial machinery.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Automotive:</strong> Comparing engine power across different markets",
-            "usage_2": "<strong>Appliances:</strong> Understanding electrical consumption in watts",
-            "usage_3": "<strong>Solar Energy:</strong> Panel output and system capacity",
-            "usage_4": "<strong>Renewable Energy:</strong> Solar panel and wind turbine output",
-            "usage_5": "<strong>HVAC:</strong> Air conditioner and heater power consumption",
-            "usage_6": "<strong>Engineering:</strong> Power calculations for mechanical systems",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How do I convert horsepower to kilowatts?",
-            "faq_a1": "Multiply horsepower by 0.7457. For example, 100 HP × 0.7457 = 74.57 kW. This is useful for comparing US and European vehicle specifications.",
-            "faq_q2": "What's the difference between HP and PS?",
-            "faq_a2": "HP (horsepower) is the imperial unit (745.7 W), while PS (Pferdestärke) is the metric horsepower (735.5 W). PS is slightly smaller, so 100 PS ≈ 98.6 HP.",
-            "faq_q3": "How many watts are in a kilowatt?",
-            "faq_a3": "There are exactly 1,000 watts in 1 kilowatt. \"Kilo\" is the metric prefix for thousand, making the conversion straightforward.",
-            "faq_q4": "Why is horsepower still used instead of watts?",
-            "faq_a4": "Horsepower has historical significance in automotive markets, especially in the US. It's more relatable for consumers familiar with older vehicle specifications, though watts/kW are standard in modern engineering."
+            "feature1_title": "Unit Daya",
+            "feature1_desc": "Konversi antara watt, kilowatt, tenaga kuda, dan BTU/jam.",
+            "feature2_title": "Mesin & Motor",
+            "feature2_desc": "Sempurna untuk perhitungan daya otomotif, listrik, dan mekanik.",
+            "feature3_title": "Akurasi Ilmiah",
+            "feature3_desc": "Konversi yang tepat untuk aplikasi teknik dan energi.",
+            "main_title": "Memahami Konversi Daya",
+            "description_p1": "Daya mengukur laju perpindahan energi atau kerja yang dilakukan per satuan waktu. Satuan SI adalah watt (W), yang didefinisikan sebagai satu joule per detik. Industri yang berbeda menggunakan satuan yang berbeda: watt/kilowatt dalam sistem kelistrikan, tenaga kuda dalam otomotif, dan tenaga kuda metrik (PS/CV) dalam spesifikasi kendaraan Eropa.",
+            "description_p2": "Satu tenaga kuda mekanis sama dengan sekitar 745,7 watt, sedangkan satu tenaga kuda metrik (PS, Pferdestärke) sama dengan sekitar 735,5 watt. Kilowatt umumnya digunakan untuk motor listrik dan pembangkit listrik (1 kW = 1.000 W). Memahami konversi ini penting untuk membandingkan spesifikasi mesin, peralatan listrik, dan mesin industri.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Otomotif:</strong> Membandingkan tenaga mesin di berbagai pasar",
+            "usage_2": "<strong>Peralatan:</strong> Memahami konsumsi listrik dalam watt",
+            "usage_3": "<strong>Energi Surya:</strong> Output panel dan kapasitas sistem",
+            "usage_4": "<strong>Energi Terbarukan:</strong> Output panel surya dan turbin angin",
+            "usage_5": "<strong>HVAC:</strong> Konsumsi daya AC dan pemanas",
+            "usage_6": "<strong>Teknik:</strong> Perhitungan daya untuk sistem mekanis",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Bagaimana cara mengubah tenaga kuda menjadi kilowatt?",
+            "faq_a1": "Kalikan tenaga kuda dengan 0,7457. Misalnya, 100 HP × 0,7457 = 74,57 kW. Ini berguna untuk membandingkan spesifikasi kendaraan AS dan Eropa.",
+            "faq_q2": "Apa bedanya HP dan PS?",
+            "faq_a2": "HP (tenaga kuda) adalah satuan imperial (745,7 W), sedangkan PS (Pferdestärke) adalah satuan tenaga kuda metrik (735,5 W). PSnya sedikit lebih kecil, jadi 100 PS ≈ 98,6 HP.",
+            "faq_q3": "Berapa watt dalam satu kilowatt?",
+            "faq_a3": "Tepatnya ada 1.000 watt dalam 1 kilowatt. \"Kilo\" adalah awalan metrik untuk seribu, sehingga konversi menjadi mudah.",
+            "faq_q4": "Mengapa tenaga kuda masih digunakan dibandingkan watt?",
+            "faq_a4": "Horsepower memiliki makna sejarah di pasar otomotif, khususnya di Amerika. Ini lebih cocok bagi konsumen yang akrab dengan spesifikasi kendaraan lama, meskipun watt/kW adalah standar dalam teknik modern."
         }
     },
     "pressure-converter": {
         "meta": {
             "title": "Konverter Tekanan Online - Alat PSI ke Bar Gratis",
-            "description": "Convert pressure units instantly. Pascal to Bar, PSI to Atmospheres, and mmHg conversions.",
+            "description": "Ubah satuan tekanan secara instan. Konversi Pascal ke Bar, PSI ke Atmosfer, dan mmHg.",
             "h1": "Konverter Tekanan",
-            "subtitle": "Convert PSI, bar, pascal, atm & mmHg for various applications"
+            "subtitle": "Konversi PSI, bar, pascal, atm & mmHg untuk berbagai aplikasi"
         },
         "form": {
-            "from_label": "From",
+            "from_label": "Dari",
             "unit_Pa": "Pascal (Pa)",
             "unit_kPa": "Kilopascal (kPa)",
-            "unit_bar": "Bar",
-            "unit_psi": "PSI (lb/in²)",
-            "unit_atm": "Atmosphere (atm)",
-            "unit_mmHg": "Millimeter of Mercury (mmHg)",
-            "to_label": "To"
+            "unit_bar": "Batang",
+            "unit_psi": "PSI (lb/dalam²)",
+            "unit_atm": "Suasana (atm)",
+            "unit_mmHg": "Milimeter Merkuri (mmHg)",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Pressure Units",
-            "feature1_desc": "Convert between PSI, bar, pascal, atmosphere, and more pressure units.",
-            "feature2_title": "Automotive & Weather",
-            "feature2_desc": "Perfect for tire pressure, weather forecasting, and industrial applications.",
-            "feature3_title": "Scientific Precision",
-            "feature3_desc": "Accurate conversions for engineering, diving, and scientific research.",
-            "main_title": "Understanding Pressure Conversion",
-            "description_p1": "Pressure measures force per unit area, expressed in various units across different fields. The SI unit is the pascal (Pa), defined as one newton per square meter. Common units include bar, PSI (pounds per square inch), atmosphere (atm), and millimeters of mercury (mmHg). One bar equals 100,000 pascals, while standard atmospheric pressure is 101,325 Pa or 1 atm.",
-            "description_p2": "Tire pressure is typically measured in PSI (US) or bar (Europe): 30 PSI equals approximately 2.07 bar. Weather reports use hectopascals (hPa) or mill ibars (mb), where 1 hPa = 1 mb = 100 Pa. Understanding pressure conversions is essential for automotive specifications, weather forecasting, diving calculations, and industrial applications.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Automotive:</strong> Tire pressure specifications (PSI vs bar)",
-            "usage_2": "<strong>Weather:</strong> Atmospheric pressure in meteorology (hPa, mb)",
-            "usage_3": "<strong>Diving:</strong> Underwater pressure calculations in atmospheres",
-            "usage_4": "<strong>Engineering:</strong> Hydraulic system pressure ratings",
-            "usage_5": "<strong>Aviation:</strong> Cabin pressure and altitude measurements",
-            "usage_6": "<strong>Industrial:</strong> Compressed air and gas pressure systems",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How do I convert PSI to bar?",
-            "faq_a1": "Divide PSI by 14.504. For example, 30 PSI ÷ 14.504 ≈ 2.07 bar. This is useful for tire pressure conversions between US and European specifications.",
-            "faq_q2": "What is atmospheric pressure?",
-            "faq_a2": "Standard atmospheric pressure at sea level is 1 atmosphere (atm), equal to 101,325 pascals, 1.01325 bar, or 14.7 PSI. It decreases with altitude.",
-            "faq_q3": "Why is tire pressure measured in PSI or bar?",
-            "faq_a3": "PSI (pounds per square inch) is traditional in the US, while bar is standard in Europe. Both are convenient scales for typical tire pressures (30-35 PSI or 2-2.4 bar).",
-            "faq_q4": "What's the difference between gauge and absolute pressure?",
-            "faq_a4": "Gauge pressure measures relative to atmospheric pressure, while absolute pressure includes atmospheric pressure. A tire gauge showing 30 PSI is measuring gauge pressure; absolute would be ~44.7 PSI."
+            "feature1_title": "Satuan Tekanan",
+            "feature1_desc": "Konversi antara PSI, bar, pascal, atmosfer, dan satuan tekanan lainnya.",
+            "feature2_title": "Otomotif & Cuaca",
+            "feature2_desc": "Sempurna untuk tekanan ban, prakiraan cuaca, dan aplikasi industri.",
+            "feature3_title": "Presisi Ilmiah",
+            "feature3_desc": "Konversi akurat untuk teknik, penyelaman, dan penelitian ilmiah.",
+            "main_title": "Memahami Konversi Tekanan",
+            "description_p1": "Tekanan mengukur gaya per satuan luas, dinyatakan dalam berbagai satuan di berbagai bidang. Satuan SI adalah pascal (Pa), yang didefinisikan sebagai satu newton per meter persegi. Satuan umum meliputi bar, PSI (pound per square inch), atmosfer (atm), dan milimeter air raksa (mmHg). Satu bar sama dengan 100.000 pascal, sedangkan tekanan atmosfer standar adalah 101.325 Pa atau 1 atm.",
+            "description_p2": "Tekanan ban biasanya diukur dalam PSI (AS) atau bar (Eropa): 30 PSI sama dengan sekitar 2,07 bar. Laporan cuaca menggunakan hektopascal (hPa) atau mill ibars (mb), dimana 1 hPa = 1 mb = 100 Pa. Memahami konversi tekanan sangat penting untuk spesifikasi otomotif, prakiraan cuaca, perhitungan penyelaman, dan aplikasi industri.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Otomotif:</strong> Spesifikasi tekanan ban (PSI vs bar)",
+            "usage_2": "<strong>Cuaca:</strong> Tekanan atmosfer dalam meteorologi (hPa, mb)",
+            "usage_3": "<strong>Menyelam:</strong> Perhitungan tekanan bawah air di atmosfer",
+            "usage_4": "<strong>Teknik:</strong> Peringkat tekanan sistem hidrolik",
+            "usage_5": "<strong>Penerbangan:</strong> Pengukuran tekanan dan ketinggian kabin",
+            "usage_6": "<strong>Industri:</strong> Sistem tekanan udara dan gas terkompresi",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Bagaimana cara mengubah PSI menjadi bar?",
+            "faq_a1": "Bagilah PSI dengan 14,504. Misalnya, 30 PSI 14,504 ≈ 2,07 bar. Ini berguna untuk konversi tekanan ban antara spesifikasi AS dan Eropa.",
+            "faq_q2": "Berapa tekanan atmosfer?",
+            "faq_a2": "Standar tekanan atmosfer di permukaan laut adalah 1 atmosfer (atm), sama dengan 101,325 pascal, 1,01325 bar, atau 14,7 PSI. Ini berkurang seiring ketinggian.",
+            "faq_q3": "Mengapa tekanan ban diukur dalam PSI atau bar?",
+            "faq_a3": "PSI (pound per square inch) merupakan standar di AS, sedangkan bar adalah standar di Eropa. Keduanya merupakan skala yang sesuai untuk tekanan ban pada umumnya (30-35 PSI atau 2-2,4 bar).",
+            "faq_q4": "Apa perbedaan antara pengukur dan tekanan absolut?",
+            "faq_a4": "Tekanan pengukur mengukur relatif terhadap tekanan atmosfer, sedangkan tekanan absolut mencakup tekanan atmosfer. Pengukur ban yang menunjukkan 30 PSI sedang mengukur tekanan pengukur; absolut akan menjadi ~44,7 PSI."
         }
     },
     "rgb-hex-converter": {
         "meta": {
             "title": "Konverter Warna RGB ke HEX - Alat Desain Online Gratis",
-            "description": "Convert colors between RGB and HEX formats instantly with our free online color converter tool.",
+            "description": "Konversikan warna antara format RGB dan HEX secara instan dengan alat pengonversi warna online gratis kami.",
             "h1": "Konverter Warna RGB ke HEX",
-            "subtitle": "Convert colors between RGB and HEX formats instantly"
+            "subtitle": "Konversi warna antara format RGB dan HEX secara instan"
         },
         "editor": {
-            "rgb_to_hex": "RGB to HEX",
-            "label_red": "Red (0-255)",
-            "label_green": "Green (0-255)",
-            "label_blue": "Blue (0-255)",
-            "label_hex": "HEX Color",
-            "hex_to_rgb": "HEX to RGB",
-            "label_hex_input": "HEX Color",
+            "rgb_to_hex": "RGB ke HEX",
+            "label_red": "Merah (0-255)",
+            "label_green": "Hijau (0-255)",
+            "label_blue": "Biru (0-255)",
+            "label_hex": "Warna HEX",
+            "hex_to_rgb": "HEX ke RGB",
+            "label_hex_input": "Warna HEX",
             "ph_hex": "#FF0000",
-            "label_rgb_output": "RGB Color"
+            "label_rgb_output": "Warna RGB"
         },
         "content": {
-            "p1": "Convert colors between RGB and HEX formats instantly with our free online color converter tool. Perfect for web designers, developers, graphic artists, and anyone working with digital colors.",
-            "formats_title": "Understanding Color Formats",
+            "p1": "Konversikan warna antara format RGB dan HEX secara instan dengan alat pengonversi warna online gratis kami. Sempurna untuk desainer web, pengembang, seniman grafis, dan siapa saja yang bekerja dengan warna digital.",
+            "formats_title": "Memahami Format Warna",
             "formats": {
                 "rgb": {
-                    "title": "RGB (Red, Green, Blue)",
+                    "title": "RGB (Merah, Hijau, Biru)",
                     "format": "Format",
-                    "format_val": "rgb(red, green, blue)",
-                    "range": "Range",
-                    "range_val": "0-255 for each channel",
-                    "used_in": "Commonly Used In",
-                    "used_in_val": "Digital screens, monitors, TV"
+                    "format_val": "rgb (merah, hijau, biru)",
+                    "range": "Jangkauan",
+                    "range_val": "0-255 untuk setiap saluran",
+                    "used_in": "Biasa Digunakan Di",
+                    "used_in_val": "Layar digital, monitor, TV"
                 },
                 "hex": {
-                    "title": "HEX (Hexadecimal)",
+                    "title": "HEX (Heksadesimal)",
                     "format": "Format",
                     "format_val": "#RRGGBB",
-                    "range": "Range",
-                    "range_val": "00-FF for each channel (hex)",
-                    "used_in": "Commonly Used In",
-                    "used_in_val": "Web design, CSS, HTML"
+                    "range": "Jangkauan",
+                    "range_val": "00-FF untuk setiap saluran (hex)",
+                    "used_in": "Biasa Digunakan Di",
+                    "used_in_val": "Desain web, CSS, HTML"
                 }
             },
-            "why_title": "Why Convert Between RGB and HEX?",
+            "why_title": "Mengapa Mengonversi Antara RGB dan HEX?",
             "why_list": [
                 {
                     "title": "Web Standards",
@@ -1972,97 +1927,97 @@
                     "desc": "Quickly get HEX codes from RGB values for efficient styling."
                 }
             ],
-            "how_work_title": "How Color Conversion Works",
-            "how_work_t1": "RGB to HEX",
-            "how_work_p1": "Each color channel (R, G, B) is converted from a 0-255 decimal to a 00-FF hexadecimal value.",
-            "how_work_t2": "HEX to RGB",
-            "how_work_p2": "The hex string is split into pairs and each pair is converted back to a 0-255 decimal value.",
-            "uses_title": "Common Use Cases",
+            "how_work_title": "Cara Kerja Konversi Warna",
+            "how_work_t1": "RGB ke HEX",
+            "how_work_p1": "Setiap saluran warna (R, G, B) dikonversi dari nilai desimal 0-255 ke nilai heksadesimal 00-FF.",
+            "how_work_t2": "HEX ke RGB",
+            "how_work_p2": "String hex dibagi menjadi pasangan-pasangan dan setiap pasangan dikonversi kembali ke nilai desimal 0-255.",
+            "uses_title": "Kasus Penggunaan Umum",
             "uses": {
                 "web": {
-                    "title": "Web Development",
-                    "desc": "Convert design mockup colors (RGB) to CSS-ready HEX codes for websites"
+                    "title": "Pengembangan Web",
+                    "desc": "Ubah warna mockup desain (RGB) menjadi kode HEX yang siap CSS untuk situs web"
                 },
                 "graphic": {
-                    "title": "Graphic Design",
-                    "desc": "Match colors between Adobe Photoshop (RGB) and web design tools (HEX)"
+                    "title": "Desain Grafis",
+                    "desc": "Mencocokkan warna antara Adobe Photoshop (RGB) dan alat desain web (HEX)"
                 },
                 "brand": {
-                    "title": "Brand Guidelines",
-                    "desc": "Document brand colors in both formats for print (RGB) and web (HEX)"
+                    "title": "Pedoman Merek",
+                    "desc": "Dokumentasikan warna merek dalam format cetak (RGB) dan web (HEX)"
                 }
             },
-            "practices_title": "Color Format Best Practices",
+            "practices_title": "Praktik Terbaik Format Warna",
             "practices_list": [
-                "Use HEX for compact CSS file sizes.",
-                "Use RGB (specifically RGBA) when you need opacity/transparency.",
-                "Stick to one format within a single project for consistency."
+                "Gunakan HEX untuk ukuran file CSS yang ringkas.",
+                "Gunakan RGB (khususnya RGBA) ketika Anda membutuhkan opacity/transparansi.",
+                "Tetap berpegang pada satu format dalam satu proyek untuk konsistensi."
             ],
-            "pro_tip_title": "💡 Pro Tip",
-            "pro_tip_desc": "HEX shorthand: Colors like #FF0000 can be shortened to #F00 when each pair of digits is identical.",
-            "faq_title": "Frequently Asked Questions",
+            "pro_tip_title": "💡 Kiat Profesional",
+            "pro_tip_desc": "Singkatan HEX: Warna seperti #FF0000 dapat disingkat menjadi #F00 jika setiap pasangan digitnya identik.",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "What's the difference between RGB and HEX?",
-                "a1": "RGB uses decimal numbers (0-255) for each color channel, while HEX uses hexadecimal (00-FF).",
-                "q2": "Can I use RGB in CSS?",
-                "a2": "Yes! CSS supports both rgb(255, 0, 0) and #FF0000.",
-                "q3": "What does the # symbol mean in HEX codes?",
-                "a3": "The # symbol indicates that the following characters are a hexadecimal color code.",
-                "q4": "Are 3-digit and 6-digit HEX codes the same?",
-                "a4": "3-digit HEX codes are shorthand for 6-digit codes where each digit is doubled."
+                "q1": "Apa perbedaan antara RGB dan HEX?",
+                "a1": "RGB menggunakan angka desimal (0-255) untuk setiap saluran warna, sedangkan HEX menggunakan angka heksadesimal (00-FF).",
+                "q2": "Bisakah saya menggunakan RGB di CSS?",
+                "a2": "Ya! CSS mendukung rgb(255, 0, 0) dan #FF0000.",
+                "q3": "Apa arti simbol # dalam kode HEX?",
+                "a3": "Simbol # menunjukkan bahwa karakter berikut adalah kode warna heksadesimal.",
+                "q4": "Apakah kode HEX 3 digit dan 6 digit sama?",
+                "a4": "Kode HEX 3 digit adalah singkatan dari kode 6 digit yang setiap digitnya digandakan."
             }
         },
         "js": {
-            "invalid_hex": "Invalid HEX"
+            "invalid_hex": "HEX tidak valid"
         }
     },
     "sentence-case-converter": {
         "meta": {
             "title": "Pengonversi Kasus Kalimat Online - Pemformat Teks Gratis",
-            "description": "Instantly convert your text to proper sentence case. Automatically capitalizes the first letter of each sentence. Free, fast, and secure.",
+            "description": "Konversikan teks Anda secara instan ke bentuk kalimat yang tepat. Secara otomatis menggunakan huruf besar pada huruf pertama setiap kalimat. Gratis, cepat, dan aman.",
             "h1": "Pengonversi Kasus Kalimat",
-            "subtitle": "Professional text formatting with automatic capitalization."
+            "subtitle": "Pemformatan teks profesional dengan kapitalisasi otomatis."
         },
         "editor": {
-            "label_input": "Input Text",
-            "ph_input": "enter your text here. this tool will capitalize the first letter of each sentence. try it now!",
-            "btn_convert": "Convert to Sentence Case",
-            "btn_clear": "Clear All",
-            "btn_copy": "Copy Result",
-            "label_output": "Output (Sentence Case)",
-            "ph_output": "Your formatted text will appear here..."
+            "label_input": "Masukkan Teks",
+            "ph_input": "masukkan teks Anda di sini. alat ini akan menggunakan huruf besar pada huruf pertama setiap kalimat. coba sekarang!",
+            "btn_convert": "Konversikan ke Kasus Kalimat",
+            "btn_clear": "Hapus Semua",
+            "btn_copy": "Salin Hasil",
+            "label_output": "Keluaran (Kasus Kalimat)",
+            "ph_output": "Teks yang Anda format akan muncul di sini..."
         },
         "content": {
-            "p1": "Transform your text into proper sentence case format with our free online sentence case converter. This tool automatically capitalizes the first letter of each sentence while converting the rest to lowercase, ensuring your text follows standard grammatical rules. It is perfect for cleaning up technical documentation, emails, and any long-form writing where capitalization consistency is key.",
-            "features_title": "Advanced Features",
+            "p1": "Ubah teks Anda menjadi format kasus kalimat yang tepat dengan konverter kasus kalimat online gratis kami. Alat ini secara otomatis menggunakan huruf besar pada huruf pertama setiap kalimat sambil mengubah sisanya menjadi huruf kecil, memastikan teks Anda mengikuti aturan tata bahasa standar. Ini sempurna untuk membersihkan dokumentasi teknis, email, dan tulisan panjang apa pun yang mengutamakan konsistensi penggunaan huruf besar.",
+            "features_title": "Fitur Lanjutan",
             "features": {
                 "auto_cap": {
-                    "title": "Auto Capitalization",
-                    "desc": "Intelligently detects sentence boundaries and capitalizes the first letter of each sentence."
+                    "title": "Kapitalisasi Otomatis",
+                    "desc": "Secara cerdas mendeteksi batasan kalimat dan menggunakan huruf besar pada huruf pertama setiap kalimat."
                 },
                 "instant": {
-                    "title": "Instant Formatting",
-                    "desc": "Hardware-accelerated processing that delivers results as you type or click."
+                    "title": "Pemformatan Instan",
+                    "desc": "Pemrosesan yang dipercepat perangkat keras yang memberikan hasil saat Anda mengetik atau mengklik."
                 },
                 "privacy": {
-                    "title": "Privacy Protected",
-                    "desc": "All processing happens in your browser—your text never leaves your device."
+                    "title": "Privasi Dilindungi",
+                    "desc": "Semua pemrosesan terjadi di browser Anda—teks Anda tidak pernah keluar dari perangkat Anda."
                 },
                 "bulk": {
-                    "title": "Bulk Processing",
-                    "desc": "Efficiently handle large paragraphs or multiple pages of text in seconds."
+                    "title": "Pemrosesan Massal",
+                    "desc": "Tangani paragraf besar atau beberapa halaman teks secara efisien dalam hitungan detik."
                 },
                 "clean": {
-                    "title": "Professional Clean",
-                    "desc": "Removes inconsistent capitalization for a polished, uniform appearance."
+                    "title": "Bersih Profesional",
+                    "desc": "Menghapus kapitalisasi yang tidak konsisten untuk tampilan yang halus dan seragam."
                 },
                 "free": {
-                    "title": "Always Free",
-                    "desc": "No registration or hidden costs—use it as much as you need."
+                    "title": "Selalu Gratis",
+                    "desc": "Tanpa registrasi atau biaya tersembunyi—gunakanlah sebanyak yang Anda perlukan."
                 }
             },
-            "uses_title": "Common Use Cases",
-            "how_to_title": "How to Use the Converter",
+            "uses_title": "Kasus Penggunaan Umum",
+            "how_to_title": "Cara Menggunakan Konverter",
             "how_to_steps": [
                 {
                     "title": "Paste Your Text",
@@ -2085,7 +2040,7 @@
                     "desc": "Paste the clean text into your destination document or application."
                 }
             ],
-            "examples_title": "Formatting Examples",
+            "examples_title": "Contoh Pemformatan",
             "samples": [
                 {
                     "before": "THIS IS A TEST. i am a student.",
@@ -2100,126 +2055,126 @@
                     "after": "Unsafe capitalization. Fix it."
                 }
             ],
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "uses": {
                 "email": {
-                    "title": "Email Drafting",
-                    "desc": "Ensure your professional emails have perfect capitalization before hitting send."
+                    "title": "Penyusunan Email",
+                    "desc": "Pastikan email profesional Anda memiliki huruf besar yang sempurna sebelum menekan tombol kirim."
                 },
                 "document": {
-                    "title": "Formal Documentation",
-                    "desc": "Quickly format technical reports or manuals to meet standard style guides."
+                    "title": "Dokumentasi Formal",
+                    "desc": "Format laporan atau manual teknis dengan cepat untuk memenuhi panduan gaya standar."
                 },
                 "content": {
-                    "title": "Blog Content",
-                    "desc": "Standardize draft text from multiple sources for a consistent reader experience."
+                    "title": "Konten Blog",
+                    "desc": "Standarisasi draf teks dari berbagai sumber untuk pengalaman pembaca yang konsisten."
                 },
                 "social": {
-                    "title": "Social Media Posts",
-                    "desc": "Maintain a professional online presence with clean, readable posts."
+                    "title": "Postingan Media Sosial",
+                    "desc": "Pertahankan kehadiran online yang profesional dengan postingan yang bersih dan mudah dibaca."
                 },
                 "academic": {
-                    "title": "Academic Writing",
-                    "desc": "Correct capitalization errors in essays and research papers automatically."
+                    "title": "Penulisan Akademik",
+                    "desc": "Memperbaiki kesalahan kapitalisasi dalam esai dan makalah penelitian secara otomatis."
                 },
                 "business": {
-                    "title": "Business Reports",
-                    "desc": "Deliver high-quality internal and external reports with consistent styling."
+                    "title": "Laporan Bisnis",
+                    "desc": "Memberikan laporan internal dan eksternal berkualitas tinggi dengan gaya yang konsisten."
                 }
             },
             "faq": {
-                "q1": "What exactly is \"sentence case\"?",
-                "a1": "Sentence case is a capitalization style where only the first letter of the first word in a sentence is capitalized, along with proper nouns.",
-                "q2": "Does this tool capitalize the word \"I\"?",
-                "a2": "Yes, our intelligent logic recognizes \"i\" as a pronoun and capitalizes it appropriately throughout your text.",
-                "q3": "Is there a limit to how much text I can convert?",
-                "a3": "No, you can process thousands of words at once effortlessly.",
-                "q4": "Where can I use this tool?",
-                "a4": "It works on any text—from website content and emails to legal documents and code comments.",
-                "q5": "Is my data secure?",
-                "a5": "Absolutely. All processing occurs locally in your browser via JavaScript, so your raw text is never transmitted to any server."
+                "q1": "Apa sebenarnya \"kasus kalimat\" itu?",
+                "a1": "Kasus kalimat adalah gaya kapitalisasi di mana hanya huruf pertama dari kata pertama dalam sebuah kalimat yang menggunakan huruf kapital, bersama dengan kata benda yang tepat.",
+                "q2": "Apakah alat ini menggunakan huruf besar pada kata \"Saya\"?",
+                "a2": "Ya, logika cerdas kami mengenali \"i\" sebagai kata ganti dan menggunakan huruf besar dengan tepat di seluruh teks Anda.",
+                "q3": "Apakah ada batasan berapa banyak teks yang dapat saya konversi?",
+                "a3": "Tidak, Anda dapat memproses ribuan kata sekaligus dengan mudah.",
+                "q4": "Di mana saya bisa menggunakan alat ini?",
+                "a4": "Ini berfungsi pada teks apa pun—mulai dari konten situs web dan email hingga dokumen hukum dan komentar kode.",
+                "q5": "Apakah data saya aman?",
+                "a5": "Sangat. Semua pemrosesan terjadi secara lokal di browser Anda melalui JavaScript, sehingga teks mentah Anda tidak pernah dikirimkan ke server mana pun."
             }
         },
         "js": {
-            "error_empty": "Please enter some text to convert.",
-            "success_converted": "✓ Converted to sentence case successfully!",
-            "error_no_copy": "Nothing to copy! Please convert some text first.",
-            "success_copy": "✓ Copied to clipboard!"
+            "error_empty": "Silakan masukkan beberapa teks untuk dikonversi.",
+            "success_converted": "✓ Berhasil diubah menjadi kasus kalimat!",
+            "error_no_copy": "Tidak ada yang perlu ditiru! Harap konversikan beberapa teks terlebih dahulu.",
+            "success_copy": "✓ Disalin ke papan klip!"
         }
     },
     "snake-case-converter": {
         "meta": {
             "title": "Konverter Kasus Ular Gratis - Alat String Online",
-            "description": "Convert text to snake_case format for Python variables and databases instantly.",
+            "description": "Konversikan teks ke format Snake_case untuk variabel dan database Python secara instan.",
             "h1": "Konverter Kasus Ular",
-            "subtitle": "Convert text to snake_case for Python and databases"
+            "subtitle": "Konversikan teks menjadi Snake_case untuk Python dan database"
         },
         "editor": {
-            "label_input": "Input Text",
-            "ph_input": "my variable name",
-            "btn_convert": "Convert to snake_case",
-            "btn_clear": "Clear",
-            "btn_copy": "Copy",
-            "label_output": "Output (snake_case)",
-            "ph_output": "my_variable_name"
+            "label_input": "Masukkan Teks",
+            "ph_input": "nama variabel saya",
+            "btn_convert": "Konversikan ke kasus_ular",
+            "btn_clear": "Jernih",
+            "btn_copy": "Menyalin",
+            "label_output": "Keluaran (kotak_ular)",
+            "ph_output": "nama_variabel_saya"
         },
         "content": {
-            "p1": "Transform your text into snake_case format with our free online converter. Snake_case uses lowercase letters with underscores separating words, which is highly readable and machine-friendly.",
-            "features_title": "Features",
+            "p1": "Ubah teks Anda menjadi format Snake_case dengan konverter online gratis kami. Snake_case menggunakan huruf kecil dengan garis bawah yang memisahkan kata, sehingga sangat mudah dibaca dan ramah mesin.",
+            "features_title": "Fitur",
             "features": {
                 "python": {
-                    "title": "Python Standard",
-                    "desc": "Generates variable names that follow PEP 8 style guidelines."
+                    "title": "Standar Python",
+                    "desc": "Menghasilkan nama variabel yang mengikuti pedoman gaya PEP 8."
                 },
                 "instant": {
-                    "title": "Instant Conversion",
-                    "desc": "Convert to snake_case in milliseconds."
+                    "title": "Konversi Instan",
+                    "desc": "Konversikan ke Snake_case dalam milidetik."
                 },
                 "privacy": {
-                    "title": "Privacy Protected",
-                    "desc": "All processing happens in your browser."
+                    "title": "Privasi Dilindungi",
+                    "desc": "Semua pemrosesan terjadi di browser Anda."
                 },
                 "bulk": {
-                    "title": "Bulk Processing",
-                    "desc": "Convert multiple names at once."
+                    "title": "Pemrosesan Massal",
+                    "desc": "Konversikan beberapa nama sekaligus."
                 },
                 "smart": {
-                    "title": "Smart Formatting",
-                    "desc": "Automatically handles spaces and special characters."
+                    "title": "Pemformatan Cerdas",
+                    "desc": "Secara otomatis menangani spasi dan karakter khusus."
                 },
                 "free": {
-                    "title": "100% Free",
-                    "desc": "No limits or registration required."
+                    "title": "100% Gratis",
+                    "desc": "Tidak diperlukan batasan atau registrasi."
                 }
             },
-            "uses_title": "When to Use Snake Case",
+            "uses_title": "Kapan Menggunakan Kasus Ular",
             "uses": {
                 "python": {
-                    "title": "Python Variables",
-                    "desc": "The primary naming convention for variables and functions in these languages."
+                    "title": "Variabel Python",
+                    "desc": "Konvensi penamaan utama untuk variabel dan fungsi dalam bahasa-bahasa ini."
                 },
                 "db": {
-                    "title": "Database Columns",
-                    "desc": "Standard for column names (e.g., created_at, user_id)."
+                    "title": "Kolom Basis Data",
+                    "desc": "Standar untuk nama kolom (misalnya, create_at, user_id)."
                 },
                 "config": {
-                    "title": "Configuration Files",
-                    "desc": "Commonly used in large-scale configuration and environment variables."
+                    "title": "File Konfigurasi",
+                    "desc": "Biasa digunakan dalam konfigurasi skala besar dan variabel lingkungan."
                 },
                 "ruby": {
-                    "title": "Ruby Development",
-                    "desc": "Follow Ruby naming conventions for variables and methods."
+                    "title": "Pengembangan Ruby",
+                    "desc": "Ikuti konvensi penamaan Ruby untuk variabel dan metode."
                 },
                 "data": {
-                    "title": "📊 Data Science",
-                    "desc": "Format column names in pandas DataFrames and CSV files"
+                    "title": "📊 Ilmu Data",
+                    "desc": "Format nama kolom dalam file Pandas DataFrames dan CSV"
                 },
                 "api": {
-                    "title": "🔧 API Parameters",
-                    "desc": "Create consistent parameter names for REST APIs"
+                    "title": "🔧 Parameter API",
+                    "desc": "Buat nama parameter yang konsisten untuk REST API"
                 }
             },
-            "how_to_title": "How to Use",
+            "how_to_title": "Cara Menggunakan",
             "how_to_steps": [
                 {
                     "title": "Paste Text",
@@ -2242,479 +2197,479 @@
                     "desc": "The snake_case result is ready to use."
                 }
             ],
-            "examples_title": "Conversion Examples",
+            "examples_title": "Contoh Konversi",
             "examples": {
                 "var": {
-                    "title": "Variable Names:"
+                    "title": "Nama Variabel:"
                 },
                 "func": {
-                    "title": "Function Names:"
+                    "title": "Nama Fungsi:"
                 },
                 "db": {
-                    "title": "Database Columns:"
+                    "title": "Kolom Basis Data:"
                 },
                 "config": {
-                    "title": "Config Keys:"
+                    "title": "Kunci Konfigurasi:"
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "What is snake_case?",
-                "a1": "Snake_case is a naming convention where words are lowercase and separated by underscores. Example: my_variable_name",
-                "q2": "When should I use snake_case?",
-                "a2": "Use snake_case for Python variables and functions, database column names, configuration keys, and Ruby method names. It's the standard in Python (PEP 8).",
-                "q3": "How is snake_case different from kebab-case?",
-                "a3": "Snake_case uses underscores (my_variable), while kebab-case uses hyphens (my-variable). Use snake_case for code, kebab-case for URLs and CSS.",
-                "q4": "Does this handle numbers?",
-                "a4": "Yes! The tool correctly handles numbers, preserving them while converting text (e.g., \"user 2 profile\" becomes \"user_2_profile\").",
-                "q5": "Is this tool free?",
-                "a5": "Yes! Completely free with no limits. All processing happens in your browser for privacy and speed."
+                "q1": "Apa itu kasus_ular?",
+                "a1": "Snake_case adalah konvensi penamaan di mana kata-katanya menggunakan huruf kecil dan dipisahkan dengan garis bawah. Contoh: nama_variabel_saya",
+                "q2": "Kapan saya harus menggunakan ular_case?",
+                "a2": "Gunakan Snake_case untuk variabel dan fungsi Python, nama kolom database, kunci konfigurasi, dan nama metode Ruby. Ini standar dalam Python (PEP 8).",
+                "q3": "Apa perbedaan Snake_case dengan Kebab Case?",
+                "a3": "Snake_case menggunakan garis bawah (my_variable), sedangkan kebab-case menggunakan tanda hubung (my-variable). Gunakan Snake_case untuk kode, kebab-case untuk URL dan CSS.",
+                "q4": "Apakah ini menangani angka?",
+                "a4": "Ya! Alat ini menangani angka dengan benar, mempertahankannya sambil mengonversi teks (misalnya, \"profil pengguna 2\" menjadi \"profil_pengguna_2\").",
+                "q5": "Apakah alat ini gratis?",
+                "a5": "Ya! Sepenuhnya gratis tanpa batas. Semua pemrosesan terjadi di browser Anda untuk privasi dan kecepatan."
             }
         },
         "js": {
-            "error_empty": "Please enter some text to convert",
-            "success_converted": "✓ Converted to snake_case successfully!",
-            "error_no_copy": "Nothing to copy! Please convert some text first.",
-            "success_copy": "✓ Copied to clipboard!"
+            "error_empty": "Silakan masukkan beberapa teks untuk dikonversi",
+            "success_converted": "✓ Berhasil diubah menjadi Snake_case!",
+            "error_no_copy": "Tidak ada yang perlu ditiru! Harap konversikan beberapa teks terlebih dahulu.",
+            "success_copy": "✓ Disalin ke papan klip!"
         }
     },
     "speed-converter": {
         "meta": {
             "title": "Pengonversi Kecepatan Online - Alat MPH ke KPH Gratis",
-            "description": "Convert speed units instantly. Miles per hour to Kilometers per hour, Meters per second, and Knots.",
+            "description": "Konversi satuan kecepatan secara instan. Mil per jam ke Kilometer per jam, Meter per detik, dan Knot.",
             "h1": "Konverter Kecepatan",
-            "subtitle": "Convert MPH, KPH, knots, m/s & Mach numbers instantly"
+            "subtitle": "Konversikan angka MPH, KPH, knot, m/s & Mach secara instan"
         },
         "form": {
-            "from_label": "From",
-            "unit_kph": "Kilometers per Hour (km/h)",
-            "unit_mph": "Miles per Hour (mph)",
-            "unit_mps": "Meters per Second (m/s)",
-            "unit_knot": "Knots (kn)",
-            "unit_mach": "Mach (Standard Atmosphere)",
-            "to_label": "To"
+            "from_label": "Dari",
+            "unit_kph": "Kilometer per Jam (km/h)",
+            "unit_mph": "Mil per Jam (mph)",
+            "unit_mps": "Meter per Detik (m/s)",
+            "unit_knot": "Simpul (kn)",
+            "unit_mach": "Mach (Suasana Standar)",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Multiple Speed Units",
-            "feature1_desc": "Convert between MPH, KPH, knots, meters/second, and even Mach numbers.",
-            "feature2_title": "Travel & Navigation",
-            "feature2_desc": "Perfect for international travel, maritime navigation, and aviation calculations.",
-            "feature3_title": "Real-Time Results",
-            "feature3_desc": "Instant speed conversions for driving, flying, sailing, and running.",
-            "main_title": "Understanding Speed Conversion",
-            "description_p1": "Speed measures how fast an object moves or the rate of change of position over time. Different regions and contexts use different units: miles per hour (MPH) in the US for road speeds, kilometers per hour (KPH) in most other countries, meters per second (m/s) in physics, and knots in maritime and aviation.",
-            "description_p2": "One knot equals one nautical mile per hour, approximately 1.852 KPH or 1.151 MPH. The metric system uses m/s for scientific work (1 m/s = 3.6 KPH). Understanding speed conversions is essential when traveling internationally, studying physics, or working with vehicle specifications across different markets.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Driving:</strong> Converting speed limits when traveling between US and Europe",
-            "usage_2": "<strong>Aviation:</strong> Understanding aircraft speeds in knots and Mach",
-            "usage_3": "<strong>Maritime:</strong> Ship navigation using knots",
-            "usage_4": "<strong>Athletics:</strong> Running pace conversions (min/km to min/mile)",
-            "usage_5": "<strong>Physics:</strong> Velocity calculations in m/s",
-            "usage_6": "<strong>Weather:</strong> Wind speed measurements",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How do I convert KPH to MPH?",
-            "faq_a1": "Divide the KPH value by 1.609. For example, 100 KPH ÷ 1.609 ≈ 62 MPH. Our converter does this instantly!",
-            "faq_q2": "What is a knot in speed?",
-            "faq_a2": "A knot is one nautical mile per hour. It equals 1.852 KPH or about 1.15 MPH. It's the standard speed unit in maritime and aviation.",
-            "faq_q3": "How fast is Mach 1?",
-            "faq_a3": "Mach 1 is the speed of sound, approximately 343 m/s (1,235 KPH or 767 MPH) at sea level. The exact value varies with temperature and altitude.",
-            "faq_q4": "Why do ships use knots instead of MPH?",
-            "faq_a4": "Knots relate directly to nautical miles, which align with latitude/longitude coordinates (1 minute of latitude = 1 nautical mile), making navigation calculations easier."
+            "feature1_title": "Beberapa Unit Kecepatan",
+            "feature1_desc": "Konversi antara angka MPH, KPH, knot, meter/detik, dan bahkan Mach.",
+            "feature2_title": "Perjalanan & Navigasi",
+            "feature2_desc": "Sempurna untuk perjalanan internasional, navigasi maritim, dan perhitungan penerbangan.",
+            "feature3_title": "Hasil Waktu Nyata",
+            "feature3_desc": "Konversi kecepatan instan untuk mengemudi, terbang, berlayar, dan berlari.",
+            "main_title": "Memahami Konversi Kecepatan",
+            "description_p1": "Kecepatan mengukur seberapa cepat suatu benda bergerak atau laju perubahan posisi seiring waktu. Wilayah dan konteks yang berbeda menggunakan satuan yang berbeda: mil per jam (MPH) di AS untuk kecepatan jalan raya, kilometer per jam (KPH) di sebagian besar negara lain, meter per detik (m/s) dalam fisika, dan knot dalam maritim dan penerbangan.",
+            "description_p2": "Satu knot sama dengan satu mil laut per jam, kira-kira 1.852 KPH atau 1.151 MPH. Sistem metrik menggunakan m/s untuk karya ilmiah (1 m/s = 3,6 KPH). Memahami konversi kecepatan sangat penting saat bepergian ke luar negeri, mempelajari fisika, atau bekerja dengan spesifikasi kendaraan di pasar yang berbeda.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Mengemudi:</strong> Mengubah batas kecepatan saat bepergian antara AS dan Eropa",
+            "usage_2": "<strong>Penerbangan:</strong> Memahami kecepatan pesawat dalam knot dan Mach",
+            "usage_3": "<strong>Maritim:</strong> Navigasi kapal menggunakan simpul",
+            "usage_4": "<strong>Atletik:</strong> Konversi kecepatan lari (min/km ke min/mil)",
+            "usage_5": "<strong>Fisika:</strong> Perhitungan kecepatan dalam m/s",
+            "usage_6": "<strong>Cuaca:</strong> Pengukuran kecepatan angin",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Bagaimana cara mengubah KPH ke MPH?",
+            "faq_a1": "Bagilah nilai KPH dengan 1,609. Misalnya 100 KPH 1,609 ≈ 62 MPH. Konverter kami melakukan ini secara instan!",
+            "faq_q2": "Berapa kecepatan simpul?",
+            "faq_a2": "Simpul adalah satu mil laut per jam. Sama dengan 1,852 KPH atau sekitar 1,15 MPH. Ini adalah satuan kecepatan standar dalam maritim dan penerbangan.",
+            "faq_q3": "Seberapa cepat Mach 1?",
+            "faq_a3": "Mach 1 adalah kecepatan suara, kira-kira 343 m/s (1.235 KPH atau 767 MPH) di permukaan laut. Nilai pastinya bervariasi menurut suhu dan ketinggian.",
+            "faq_q4": "Mengapa kapal menggunakan knot, bukan MPH?",
+            "faq_a4": "Simpul berhubungan langsung dengan mil laut, yang sejajar dengan koordinat lintang/bujur (1 menit lintang = 1 mil laut), sehingga memudahkan penghitungan navigasi."
         }
     },
     "studly-case-converter": {
         "meta": {
             "title": "Pengonversi Kasus Studly Gratis - Pembuat Teks Online",
-            "description": "Convert text to StUdLy CaSe for creative formatting with our free online tool",
+            "description": "Konversikan teks ke StUdLy CaSe untuk pemformatan kreatif dengan alat online gratis kami",
             "h1": "Konverter Kasus Studly",
-            "subtitle": "Convert text to StUdLy CaSe for creative formatting"
+            "subtitle": "Konversikan teks ke StUdLy CaSe untuk pemformatan kreatif"
         },
         "editor": {
-            "label_input": "Input Text",
-            "ph_input": "hello world",
-            "btn_convert": "Convert to StUdLy CaSe",
-            "btn_clear": "Clear",
-            "btn_copy": "Copy",
-            "label_output": "Output (StUdLy CaSe)",
-            "ph_output": "HeLlO wOrLd"
+            "label_input": "Masukkan Teks",
+            "ph_input": "halo dunia",
+            "btn_convert": "Konversikan ke Kasus StUdLy",
+            "btn_clear": "Jernih",
+            "btn_copy": "Menyalin",
+            "label_output": "Keluaran (Kasus Studi)",
+            "ph_output": "Halo dunia"
         },
         "content": {
-            "p1": "Transform your text into StUdLy CaSe format with our free online converter. Studly case randomly alternates between uppercase and lowercase letters, making it perfect for memes, creative bios, and unique usernames.",
-            "features_title": "Features",
+            "p1": "Ubah teks Anda menjadi format StUdLy CaSe dengan konverter online gratis kami. Studi kasus secara acak berganti-ganti antara huruf besar dan kecil, menjadikannya sempurna untuk meme, bios kreatif, dan nama pengguna unik.",
+            "features_title": "Fitur",
             "features": {
                 "styling": {
-                    "title": "Creative Styling",
-                    "desc": "Create unique, eye-catching text formatting"
+                    "title": "Gaya Kreatif",
+                    "desc": "Buat pemformatan teks yang unik dan menarik"
                 },
                 "instant": {
-                    "title": "Instant Results",
-                    "desc": "Convert to studly case in milliseconds"
+                    "title": "Hasil Instan",
+                    "desc": "Konversikan ke kasus studi dalam milidetik"
                 },
                 "privacy": {
-                    "title": "Privacy Protected",
-                    "desc": "All processing happens in your browser"
+                    "title": "Privasi Dilindungi",
+                    "desc": "Semua pemrosesan terjadi di browser Anda"
                 },
                 "bulk": {
-                    "title": "Bulk Processing",
-                    "desc": "Convert multiple lines at once"
+                    "title": "Pemrosesan Massal",
+                    "desc": "Konversi beberapa baris sekaligus"
                 },
                 "random": {
-                    "title": "Randomly Alternating",
-                    "desc": "Uses a smart algorithm to create balanced but unpredictable capitalization."
+                    "title": "Bergantian Secara Acak",
+                    "desc": "Menggunakan algoritme cerdas untuk menciptakan kapitalisasi yang seimbang namun tidak dapat diprediksi."
                 },
                 "free": {
-                    "title": "100% Free",
-                    "desc": "No limits or registration required"
+                    "title": "100% Gratis",
+                    "desc": "Tidak diperlukan batasan atau registrasi"
                 }
             },
-            "uses_title": "Common Use Cases",
+            "uses_title": "Kasus Penggunaan Umum",
             "uses": {
                 "social": {
-                    "title": "Social Media",
-                    "desc": "Create attention-grabbing posts and comments on Twitter, Instagram, and Facebook"
+                    "title": "Media Sosial",
+                    "desc": "Buat postingan dan komentar yang menarik perhatian di Twitter, Instagram, dan Facebook"
                 },
                 "msg": {
-                    "title": "Messaging",
-                    "desc": "Add playful formatting to Discord, Slack, and text messages"
+                    "title": "Pesan",
+                    "desc": "Tambahkan pemformatan lucu ke Discord, Slack, dan pesan teks"
                 },
                 "gaming": {
-                    "title": "Gaming",
-                    "desc": "Create unique usernames and in-game messages"
+                    "title": "Permainan",
+                    "desc": "Buat nama pengguna unik dan pesan dalam game"
                 },
                 "creative": {
-                    "title": "Creative Content",
-                    "desc": "Add stylistic flair to blog posts and creative writing"
+                    "title": "Konten Kreatif",
+                    "desc": "Tambahkan bakat gaya pada postingan blog dan penulisan kreatif"
                 },
                 "memes": {
-                    "title": "Memes",
-                    "desc": "Format meme text and sarcastic comments"
+                    "title": "meme",
+                    "desc": "Format teks meme dan komentar sarkastik"
                 },
                 "fun": {
-                    "title": "Fun Projects",
-                    "desc": "Add personality to personal projects and creative work"
+                    "title": "Proyek Menyenangkan",
+                    "desc": "Tambahkan kepribadian pada proyek pribadi dan karya kreatif"
                 }
             },
             "how_to": {
-                "title": "How to Use",
-                "step1": "Enter Text",
-                "step1_desc": "Type the text you want to convert",
-                "step2": "Click Convert",
-                "step2_desc": "Press \"Convert to StUdLy CaSe\"",
-                "step3": "Review Output",
-                "step3_desc": "Check the studly case result",
-                "step4": "Copy Result",
-                "step4_desc": "Click \"Copy\" button",
-                "step5": "Use Anywhere",
-                "step5_desc": "Paste into social media or messages"
+                "title": "Cara Menggunakan",
+                "step1": "Masukkan Teks",
+                "step1_desc": "Ketikkan teks yang ingin Anda konversi",
+                "step2": "Klik Konversi",
+                "step2_desc": "Tekan \"Konversi ke Kasus StUdLy\"",
+                "step3": "Tinjau Keluaran",
+                "step3_desc": "Periksa hasil studi kasus",
+                "step4": "Salin Hasil",
+                "step4_desc": "Klik tombol \"Salin\".",
+                "step5": "Gunakan Di Mana Saja",
+                "step5_desc": "Tempel ke media sosial atau pesan"
             },
-            "examples_title": "Conversion Examples",
+            "examples_title": "Contoh Konversi",
             "examples": {
-                "social": "Social Media:",
-                "msg": "Messages:",
-                "creative": "Creative Text:",
-                "fun": "Fun Formatting:"
+                "social": "Media Sosial:",
+                "msg": "Pesan:",
+                "creative": "Teks Kreatif:",
+                "fun": "Pemformatan yang Menyenangkan:"
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "What is studly case?",
-                "a1": "Studly case randomly alternates between uppercase and lowercase letters, creating a playful text style. Example: StUdLy CaSe",
-                "q2": "Is the pattern random each time?",
-                "a2": "Yes! Each conversion creates a new random pattern, so you can convert the same text multiple times for different results.",
-                "q3": "Where can I use studly case?",
-                "a3": "Use it for social media posts, messaging apps, gaming usernames, memes, and anywhere you want to add creative flair to your text.",
-                "q4": "Does it work with numbers?",
-                "a4": "Yes! Numbers are preserved as-is while letters are randomly capitalized.",
-                "q5": "Is this tool free?",
-                "a5": "Yes! Completely free with no limits. All processing happens in your browser for privacy."
+                "q1": "Apa itu kasus studi?",
+                "a1": "Studi kasus secara acak bergantian antara huruf besar dan kecil, menciptakan gaya teks yang menyenangkan. Contoh: Kasus StUdLy",
+                "q2": "Apakah polanya acak setiap saat?",
+                "a2": "Ya! Setiap konversi menciptakan pola acak baru, sehingga Anda dapat mengonversi teks yang sama beberapa kali untuk hasil berbeda.",
+                "q3": "Di mana saya bisa menggunakan case studi?",
+                "a3": "Gunakan untuk postingan media sosial, aplikasi perpesanan, nama pengguna game, meme, dan di mana pun Anda ingin menambahkan sentuhan kreatif pada teks Anda.",
+                "q4": "Apakah ini berfungsi dengan angka?",
+                "a4": "Ya! Angka dipertahankan apa adanya sementara huruf menggunakan huruf kapital secara acak.",
+                "q5": "Apakah alat ini gratis?",
+                "a5": "Ya! Sepenuhnya gratis tanpa batas. Semua pemrosesan terjadi di browser Anda untuk privasi."
             }
         },
         "js": {
-            "error_empty": "Please enter some text to convert",
-            "success_convert": "✓ Converted to StUdLy CaSe successfully!",
-            "error_no_copy": "Nothing to copy! Please convert some text first.",
-            "success_copy": "✓ Copied to clipboard!"
+            "error_empty": "Silakan masukkan beberapa teks untuk dikonversi",
+            "success_convert": "✓ Berhasil dikonversi ke StUdLy CaSe!",
+            "error_no_copy": "Tidak ada yang perlu ditiru! Harap konversikan beberapa teks terlebih dahulu.",
+            "success_copy": "✓ Disalin ke papan klip!"
         }
     },
     "temperature-converter": {
         "meta": {
             "title": "Pengonversi Suhu - Celcius Gratis ke Fahrenheit",
-            "description": "Convert temperature readings between Celsius, Fahrenheit, and Kelvin scales instantly.",
+            "description": "Ubah pembacaan suhu antara skala Celsius, Fahrenheit, dan Kelvin secara instan.",
             "h1": "Pengonversi Suhu",
-            "subtitle": "Convert Celsius, Fahrenheit & Kelvin with accurate formulas"
+            "subtitle": "Konversi Celcius, Fahrenheit & Kelvin dengan rumus akurat"
         },
         "form": {
-            "from_label": "From",
-            "unit_c": "Celsius (°C)",
+            "from_label": "Dari",
+            "unit_c": "Celcius (°C)",
             "unit_f": "Fahrenheit (°F)",
             "unit_k": "Kelvin (K)",
-            "to_label": "To"
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Three Major Scales",
-            "feature1_desc": "Convert between Celsius, Fahrenheit, and Kelvin with precision for any application.",
-            "feature2_title": "Accurate Formulas",
-            "feature2_desc": "Uses standard conversion formulas for weather, cooking, science, and engineering.",
-            "feature3_title": "Real-Time Conversion",
-            "feature3_desc": "Instant bidirectional conversion as you type in any temperature field.",
-            "main_title": "Understanding Temperature Conversion",
-            "description_p1": "Temperature measures the degree of hotness or coldness of an object or environment. Three main scales are used worldwide: <strong>Celsius (°C)</strong> is the metric standard used globally, <strong>Fahrenheit (°F)</strong> is primarily used in the United States, and <strong>Kelvin (K)</strong> is the absolute thermodynamic scale used in scientific research.",
-            "description_p2": "The Celsius scale is based on water's freezing (0°C) and boiling points (100°C) at standard atmospheric pressure. Fahrenheit sets water's freezing point at 32°F and boiling at 212°F. Kelvin starts at absolute zero (-273.15°C), the theoretical point where all molecular motion stops, making it ideal for scientific calculations.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Weather Forecasts:</strong> Converting between °C and °F for international travel",
-            "usage_2": "<strong>Cooking & Baking:</strong> Oven temperature conversions for recipes",
-            "usage_3": "<strong>Medical Applications:</strong> Body temperature readings in different scales",
-            "usage_4": "<strong>Scientific Research:</strong> Using Kelvin for thermodynamic calculations",
-            "usage_5": "<strong>HVAC Systems:</strong> Setting thermostats in different regions",
-            "usage_6": "<strong>Industrial Processes:</strong> Monitoring manufacturing temperatures",
-            "formula_title": "Quick Conversion Formulas",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "What is the easiest way to convert Celsius to Fahrenheit?",
-            "faq_a1": "Multiply the Celsius temperature by 9/5 (or 1.8), then add 32. For example: 20°C × 1.8 + 32 = 68°F. Our converter does this instantly for you!",
-            "faq_q2": "Why does the US use Fahrenheit instead of Celsius?",
-            "faq_a2": "The Fahrenheit scale was established before Celsius and became deeply embedded in American culture and infrastructure. While most countries adopted the metric system (including Celsius), the US retained Fahrenheit for everyday temperature measurements.",
-            "faq_q3": "What is absolute zero in different scales?",
-            "faq_a3": "Absolute zero is 0 Kelvin, -273.15°C, or -459.67°F. This is the theoretical lowest possible temperature where molecular motion ceases completely.",
-            "faq_q4": "When should I use Kelvin instead of Celsius?",
-            "faq_a4": "Kelvin is preferred in scientific contexts, especially in physics and chemistry, because it's an absolute scale with no negative values. It's essential for gas law calculations, thermodynamics, and astronomical measurements."
+            "feature1_title": "Tiga Skala Besar",
+            "feature1_desc": "Konversi antara Celsius, Fahrenheit, dan Kelvin dengan presisi untuk aplikasi apa pun.",
+            "feature2_title": "Rumus Akurat",
+            "feature2_desc": "Menggunakan rumus konversi standar untuk cuaca, memasak, sains, dan teknik.",
+            "feature3_title": "Konversi Waktu Nyata",
+            "feature3_desc": "Konversi dua arah instan saat Anda mengetik di bidang suhu apa pun.",
+            "main_title": "Memahami Konversi Suhu",
+            "description_p1": "Suhu mengukur derajat panas atau dinginnya suatu benda atau lingkungan. Tiga skala utama yang digunakan di seluruh dunia: <strong>Celcius (°C)</strong> adalah standar metrik yang digunakan secara global, <strong>Fahrenheit (°F)</strong> terutama digunakan di Amerika Serikat, dan <strong>Kelvin (K)</strong> adalah skala termodinamika absolut yang digunakan dalam penelitian ilmiah.",
+            "description_p2": "Skala Celcius didasarkan pada titik beku air (0°C) dan titik didih (100°C) pada tekanan atmosfer standar. Fahrenheit menetapkan titik beku air pada 32°F dan mendidih pada 212°F. Kelvin dimulai dari nol mutlak (-273,15°C), titik teoretis di mana semua gerakan molekul berhenti, sehingga ideal untuk perhitungan ilmiah.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Prakiraan Cuaca:</strong> Mengonversi antara °C dan °F untuk perjalanan internasional",
+            "usage_2": "<strong>Memasak & Memanggang:</strong> Konversi suhu oven untuk resep",
+            "usage_3": "<strong>Aplikasi Medis:</strong> Pembacaan suhu tubuh dalam skala berbeda",
+            "usage_4": "<strong>Penelitian Ilmiah:</strong> Menggunakan Kelvin untuk perhitungan termodinamika",
+            "usage_5": "<strong>Sistem HVAC:</strong> Menyetel termostat di berbagai wilayah",
+            "usage_6": "<strong>Proses Industri:</strong> Memantau suhu produksi",
+            "formula_title": "Rumus Konversi Cepat",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Apa cara termudah untuk mengubah Celcius ke Fahrenheit?",
+            "faq_a1": "Kalikan suhu Celcius dengan 9/5 (atau 1,8), lalu tambahkan 32. Contoh: 20°C × 1,8 + 32 = 68°F. Konverter kami melakukan ini secara instan untuk Anda!",
+            "faq_q2": "Mengapa Amerika menggunakan Fahrenheit dan bukan Celcius?",
+            "faq_a2": "Skala Fahrenheit telah ditetapkan sebelum Celsius dan telah tertanam kuat dalam budaya dan infrastruktur Amerika. Meskipun sebagian besar negara mengadopsi sistem metrik (termasuk Celcius), AS tetap menggunakan Fahrenheit untuk pengukuran suhu sehari-hari.",
+            "faq_q3": "Berapakah nol mutlak pada skala yang berbeda?",
+            "faq_a3": "Nol mutlak adalah 0 Kelvin, -273,15°C, atau -459,67°F. Ini adalah suhu teoritis terendah yang mungkin terjadi ketika gerakan molekul berhenti sepenuhnya.",
+            "faq_q4": "Kapan sebaiknya saya menggunakan Kelvin, bukan Celcius?",
+            "faq_a4": "Kelvin lebih disukai dalam konteks ilmiah, khususnya dalam fisika dan kimia, karena merupakan skala absolut tanpa nilai negatif. Ini penting untuk perhitungan hukum gas, termodinamika, dan pengukuran astronomi."
         }
     },
     "text-to-binary": {
         "meta": {
             "title": "Konverter Teks ke Biner - Encoder Online Gratis",
-            "description": "Text to Binary - Fast, free and reliable online tool.",
+            "description": "Teks ke Biner - Alat online yang cepat, gratis, dan andal.",
             "h1": "Teks ke Biner",
-            "subtitle": "Professional Text to Binary tool"
+            "subtitle": "Alat Teks ke Biner Profesional"
         },
         "editor": {
-            "btn_convert": "Convert to Binary",
-            "btn_copy": "Copy",
-            "btn_download": "Download",
-            "btn_example": "Example",
-            "btn_clear": "Clear",
-            "label_input": "Text Input",
-            "ph_input": "Enter text to convert to binary...",
-            "label_output": "Binary Output",
-            "ph_output": "Binary output will appear here..."
+            "btn_convert": "Konversikan ke Biner",
+            "btn_copy": "Menyalin",
+            "btn_download": "Unduh",
+            "btn_example": "Contoh",
+            "btn_clear": "Jernih",
+            "label_input": "Masukan Teks",
+            "ph_input": "Masukkan teks untuk dikonversi ke biner...",
+            "label_output": "Keluaran Biner",
+            "ph_output": "Output biner akan muncul di sini..."
         },
         "content": {
-            "p1": "Translate any text to binary code with our free online converter. Understand how computers store data by converting your text into a sequence of 0s and 1s. Perfect for learning about binary encoding, creating binary messages, or debugging.",
+            "p1": "Terjemahkan teks apa pun ke kode biner dengan konverter online gratis kami. Pahami cara komputer menyimpan data dengan mengonversi teks Anda menjadi urutan 0 dan 1. Sempurna untuk mempelajari tentang pengkodean biner, membuat pesan biner, atau debugging.",
             "features": {
                 "accurate": {
-                    "title": "Accurate Conversion",
-                    "desc": "Precise text to binary translation"
+                    "title": "Konversi Akurat",
+                    "desc": "Terjemahan teks ke biner yang tepat"
                 },
                 "instant": {
-                    "title": "Instant Results",
-                    "desc": "Convert text to binary in real-time"
+                    "title": "Hasil Instan",
+                    "desc": "Ubah teks menjadi biner secara real-time"
                 },
                 "download": {
-                    "title": "Download Support",
-                    "desc": "Download binary output as a text file"
+                    "title": "Unduh Dukungan",
+                    "desc": "Unduh keluaran biner sebagai file teks"
                 },
                 "copy": {
-                    "title": "Copy to Clipboard",
-                    "desc": "One-click copy for easy sharing"
+                    "title": "Salin ke Papan Klip",
+                    "desc": "Salinan sekali klik agar mudah dibagikan"
                 },
                 "utf8": {
-                    "title": "UTF-8 Support",
-                    "desc": "Supports all UTF-8 characters"
+                    "title": "Dukungan UTF-8",
+                    "desc": "Mendukung semua karakter UTF-8"
                 },
                 "free": {
-                    "title": "100% Free",
-                    "desc": "No hidden costs or limits"
+                    "title": "100% Gratis",
+                    "desc": "Tidak ada biaya atau batasan tersembunyi"
                 }
             },
-            "uses_title": "Common Use Cases",
+            "uses_title": "Kasus Penggunaan Umum",
             "uses": {
                 "edu": {
-                    "title": "Education",
-                    "desc": "Learn how computers represent text in binary format."
+                    "title": "Pendidikan",
+                    "desc": "Pelajari bagaimana komputer merepresentasikan teks dalam format biner."
                 },
                 "prog": {
-                    "title": "Programming",
-                    "desc": "Understand character encoding and binary data representation."
+                    "title": "Pemrograman",
+                    "desc": "Memahami pengkodean karakter dan representasi data biner."
                 },
                 "enc": {
-                    "title": "Encoding",
-                    "desc": "Convert messages to binary for encoding exercises."
+                    "title": "Pengkodean",
+                    "desc": "Ubah pesan menjadi biner untuk latihan pengkodean."
                 },
                 "learn": {
-                    "title": "Learning",
-                    "desc": "Study binary number system and ASCII encoding."
+                    "title": "Sedang belajar",
+                    "desc": "Pelajari sistem bilangan biner dan pengkodean ASCII."
                 }
             },
             "works": {
-                "title": "How Binary Encoding Works",
-                "desc": "Each character is converted to its ASCII or Unicode value, then represented as an 8-bit binary number. For example, the letter \"A\" has ASCII value 65, which is 01000001 in binary."
+                "title": "Cara Kerja Pengkodean Biner",
+                "desc": "Setiap karakter diubah menjadi nilai ASCII atau Unicode, kemudian direpresentasikan sebagai bilangan biner 8-bit. Misalnya huruf \"A\" memiliki nilai ASCII 65, yaitu 01000001 dalam biner."
             },
             "how_to": {
-                "title": "How to Use Text to Binary Converter",
-                "step1": "Input Text",
-                "step1_desc": "Type or paste your text into the left input area.",
-                "step2": "Convert",
-                "step2_desc": "The tool instantly translates each character into its 8-bit binary sequence.",
-                "step3": "Result",
-                "step3_desc": "View the binary string in the output box, separated by spaces for readability.",
-                "step4": "Export",
-                "step4_desc": "Copy the binary code to your clipboard or download it as a text file."
+                "title": "Cara Menggunakan Konverter Teks ke Biner",
+                "step1": "Masukkan Teks",
+                "step1_desc": "Ketik atau tempel teks Anda ke area masukan kiri.",
+                "step2": "Mengubah",
+                "step2_desc": "Alat ini secara instan menerjemahkan setiap karakter ke dalam urutan biner 8-bitnya.",
+                "step3": "Hasil",
+                "step3_desc": "Lihat string biner di kotak keluaran, dipisahkan dengan spasi agar mudah dibaca.",
+                "step4": "Ekspor",
+                "step4_desc": "Salin kode biner ke clipboard Anda atau unduh sebagai file teks."
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "What encoding is used?",
-                "a1": "This tool uses standard UTF-8 encoding, converting each character to its corresponding 8-bit binary representation.",
-                "q2": "Can I convert back to text?",
-                "a2": "Yes! You can use our Binary to Text converter to reverse the process.",
-                "q3": "Is the conversion accurate?",
-                "a3": "Yes, the conversion is mathematically precise based on ASCII and Unicode standards."
+                "q1": "Pengkodean apa yang digunakan?",
+                "a1": "Alat ini menggunakan pengkodean UTF-8 standar, mengubah setiap karakter menjadi representasi biner 8-bit yang sesuai.",
+                "q2": "Bisakah saya mengonversi kembali ke teks?",
+                "a2": "Ya! Anda dapat menggunakan konverter Biner ke Teks kami untuk membalikkan proses.",
+                "q3": "Apakah konversinya akurat?",
+                "a3": "Ya, konversinya tepat secara matematis berdasarkan standar ASCII dan Unicode."
             }
         },
         "js": {
-            "error_empty": "Please enter some text",
-            "success_convert": "✓ Text converted to binary successfully",
-            "error_convert": "Error converting text: ",
-            "error_no_copy": "No binary output to copy",
-            "success_copy": "✓ Copied to clipboard",
-            "error_no_download": "No binary output to download",
-            "success_download": "✓ Download started"
+            "error_empty": "Silakan masukkan beberapa teks",
+            "success_convert": "✓ Teks berhasil dikonversi ke biner",
+            "error_convert": "Kesalahan mengonversi teks:",
+            "error_no_copy": "Tidak ada keluaran biner untuk disalin",
+            "success_copy": "✓ Disalin ke papan klip",
+            "error_no_download": "Tidak ada keluaran biner untuk diunduh",
+            "success_download": "✓ Pengunduhan dimulai"
         }
     },
     "torque-converter": {
         "meta": {
             "title": "Pengonversi Satuan Torsi - Nm ke Ft-Lb Online Gratis",
-            "description": "Convert torque units instantly. Newton-meters to Foot-pounds, Inch-pounds, and Kilogram-force meters.",
+            "description": "Konversikan satuan torsi secara instan. Newton-meter ke Kaki-pound, Inci-pound, dan Kilogram-force meter.",
             "h1": "Konverter Torsi",
-            "subtitle": "Convert Nm, lb-ft & kg-m for mechanical torque values"
+            "subtitle": "Konversi Nm, lb-ft & kg-m untuk nilai torsi mekanis"
         },
         "form": {
-            "from_label": "From",
+            "from_label": "Dari",
             "unit_Nm": "Newton-meter (N·m)",
-            "unit_lbfft": "Pound-force foot (lbf·ft)",
-            "unit_lbfin": "Pound-force inch (lbf·in)",
-            "unit_kgfm": "Kilogram-force meter (kgf·m)",
-            "to_label": "To"
+            "unit_lbfft": "Kaki gaya pound (lbf·ft)",
+            "unit_lbfin": "Pound-force inci (lbf·in)",
+            "unit_kgfm": "Meteran gaya kilogram (kgf·m)",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Torque Units",
-            "feature1_desc": "Convert between N·m, lb-ft, kgf·m, and other torque measurements.",
-            "feature2_title": "Automotive & Engineering",
-            "feature2_desc": "Perfect for engine specs, bolt tightening, and mechanical design.",
-            "feature3_title": "Rotational Force",
-            "feature3_desc": "Accurate conversions for rotational force measurements.",
-            "main_title": "Understanding Torque Conversion",
-            "description_p1": "Torque measures rotational force—the tendency of a force to rotate an object around an axis. It's calculated as force multiplied by distance from the pivot point. The SI unit is the newton-meter (N·m), while pound-feet (lb-ft) is common in the US, especially for automotive applications like engine torque and bolt tightening specifications.",
-            "description_p2": "One pound-foot equals approximately 1.356 newton-meters. Kilogram-force meters (kgf·m) are used in some engineering contexts, where 1 kgf·m equals 9.807 N·m. Understanding torque conversions is essential for automotive work, mechanical engineering, and any application involving rotational forces like motors, engines, and fasteners.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Automotive:</strong> Engine torque specifications and comparisons",
-            "usage_2": "<strong>Mechanical Repair:</strong> Bolt tightening torque requirements",
-            "usage_3": "<strong>Engineering:</strong> Motor and gearbox torque ratings",
-            "usage_4": "<strong>Tool Selection:</strong> Choosing the right torque wrench",
-            "usage_5": "<strong>Performance Tuning:</strong> Comparing vehicle power curves",
-            "usage_6": "<strong>Industrial Equipment:</strong> Machinery torque specifications",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How do I convert lb-ft to N·m?",
-            "faq_a1": "Multiply lb-ft by 1.356. For example, 100 lb-ft × 1.356 = 135.6 N·m. This is useful for converting US automotive specs to metric.",
-            "faq_q2": "What's the difference between torque and power?",
-            "faq_a2": "Torque is rotational force (N·m), while power is the rate of doing work (watts). Power = Torque × Angular Velocity. High torque at low RPM provides strong acceleration.",
-            "faq_q3": "Why is torque important for engines?",
-            "faq_a3": "Torque determines an engine's pulling power and acceleration capability. Higher torque means better low-end power for towing and acceleration from a standstill.",
-            "faq_q4": "What torque wrench setting should I use?",
-            "faq_a4": "Always follow manufacturer specifications for bolt tightening. Over-tightening can strip threads or break bolts, while under-tightening can cause loosening and failure. Use this converter to match your wrench units."
+            "feature1_title": "Satuan Torsi",
+            "feature1_desc": "Konversi antara N·m, lb-ft, kgf·m, dan pengukuran torsi lainnya.",
+            "feature2_title": "Teknik Otomotif",
+            "feature2_desc": "Sempurna untuk spesifikasi mesin, pengencangan baut, dan desain mekanis.",
+            "feature3_title": "Kekuatan Rotasi",
+            "feature3_desc": "Konversi akurat untuk pengukuran gaya rotasi.",
+            "main_title": "Memahami Konversi Torsi",
+            "description_p1": "Torsi mengukur gaya rotasi—kecenderungan suatu gaya untuk memutar suatu benda pada suatu sumbu. Ini dihitung sebagai gaya dikalikan dengan jarak dari titik pivot. Satuan SI adalah newton-meter (N·m), sedangkan pound-feet (lb-ft) umum digunakan di AS, terutama untuk aplikasi otomotif seperti spesifikasi torsi mesin dan pengencangan baut.",
+            "description_p2": "Satu pon-kaki sama dengan sekitar 1,356 newton-meter. Kilogram-force meter (kgf·m) digunakan dalam beberapa konteks teknik, dimana 1 kgf·m sama dengan 9,807 N·m. Memahami konversi torsi sangat penting untuk pekerjaan otomotif, teknik mesin, dan aplikasi apa pun yang melibatkan gaya rotasi seperti motor, mesin, dan pengencang.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Otomotif:</strong> Spesifikasi dan perbandingan torsi mesin",
+            "usage_2": "<strong>Perbaikan Mekanis:</strong> Persyaratan torsi pengencangan baut",
+            "usage_3": "<strong>Teknik:</strong> Peringkat torsi motor dan girboks",
+            "usage_4": "<strong>Pemilihan Alat:</strong> Memilih kunci momen yang tepat",
+            "usage_5": "<strong>Penyetelan Performa:</strong> Membandingkan kurva tenaga kendaraan",
+            "usage_6": "<strong>Peralatan Industri:</strong> Spesifikasi torsi mesin",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Bagaimana cara mengubah lb-ft ke N·m?",
+            "faq_a1": "Kalikan lb-ft dengan 1,356. Misalnya, 100 lb-ft × 1,356 = 135,6 N·m. Ini berguna untuk mengubah spesifikasi otomotif AS menjadi metrik.",
+            "faq_q2": "Apa perbedaan antara torsi dan tenaga?",
+            "faq_a2": "Torsi adalah gaya rotasi (N·m), sedangkan daya adalah laju kerja (watt). Daya = Torsi × Kecepatan Sudut. Torsi tinggi pada RPM rendah memberikan akselerasi yang kuat.",
+            "faq_q3": "Mengapa torsi penting bagi mesin?",
+            "faq_a3": "Torsi menentukan daya tarik dan kemampuan akselerasi mesin. Torsi yang lebih tinggi berarti tenaga low-end yang lebih baik untuk penarik dan akselerasi dari posisi diam.",
+            "faq_q4": "Pengaturan kunci torsi apa yang harus saya gunakan?",
+            "faq_a4": "Selalu ikuti spesifikasi pabrikan untuk pengencangan baut. Pengencangan yang berlebihan dapat menyebabkan ulir terlepas atau baut patah, sedangkan pengencangan yang kurang dapat menyebabkan kendor dan rusak. Gunakan konverter ini untuk mencocokkan unit kunci pas Anda."
         }
     },
     "volume-converter": {
         "meta": {
             "title": "Pengonversi Volume Online - Liter ke Galon Gratis",
-            "description": "Convert liquid volume units instantly. Support for Liters, Gallons, Cups, Pints, Milliliters, and Fluid Ounces.",
+            "description": "Konversi satuan volume cairan secara instan. Dukungan untuk Liter, Galon, Cangkir, Pint, Mililiter, dan Ons Cairan.",
             "h1": "Konverter Volume",
-            "subtitle": "Convert liters, gallons, cups, ml & cubic meters"
+            "subtitle": "Konversi liter, galon, gelas, ml & meter kubik"
         },
         "form": {
-            "from_label": "From",
-            "optgroup_metric": "Metric",
-            "unit_ml": "Milliliter (ml)",
+            "from_label": "Dari",
+            "optgroup_metric": "Metrik",
+            "unit_ml": "Mililiter (ml)",
             "unit_l": "Liter (l)",
-            "optgroup_us": "US Customary",
-            "unit_gal": "Gallon (gal)",
-            "unit_qt": "Quart (qt)",
+            "optgroup_us": "Adat AS",
+            "unit_gal": "Galon (gal)",
+            "unit_qt": "Kuartal (qt)",
             "unit_pt": "Pint (pt)",
-            "unit_cup": "Cup",
-            "unit_fl_oz": "Fluid Ounce (fl oz)",
-            "to_label": "To"
+            "unit_cup": "Cangkir",
+            "unit_fl_oz": "Ons Cairan (fl oz)",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Liquid & Dry Volume",
-            "feature1_desc": "Convert between metric liters and imperial gallons, quarts, pints, and cups.",
-            "feature2_title": "Cooking & Science",
-            "feature2_desc": "Perfect for recipes, chemistry labs, fuel calculations, and beverage measurements.",
-            "feature3_title": "Instant Calculations",
-            "feature3_desc": "Real-time conversion with high precision for all your volume needs.",
-            "main_title": "Understanding Volume Conversion",
-            "description_p1": "Volume measures the three-dimensional space occupied by a liquid or substance. Different regions use different volume units: liters and milliliters in metric systems, and gallons, quarts, pints, cups, and fluid ounces in imperial systems. Understanding volume conversions is essential for cooking, chemistry, fuel economy calculations, and beverage measurements.",
-            "description_p2": "A US gallon contains 3.785 liters, while an imperial (UK) gallon contains 4.546 liters. One liter equals 1,000 milliliters or approximately 33.814 US fluid ounces. For cooking, one US cup equals about 236.6 mL. These conversions are crucial when following international recipes, calculating fuel consumption, or working in scientific laboratories.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Cooking & Baking:</strong> Converting recipe measurements between cups and milliliters",
-            "usage_2": "<strong>Beverages:</strong> Understanding drink sizes in different countries",
-            "usage_3": "<strong>Fuel Economy:</strong> Calculating gas consumption in liters vs gallons",
-            "usage_4": "<strong>Chemistry Labs:</strong> Precise liquid measurements for experiments",
-            "usage_5": "<strong>Aquariums:</strong> Calculating tank capacity and water changes",
-            "usage_6": "<strong>Medicine:</strong> Dosage calculations in mL or fluid ounces",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How many liters are in a gallon?",
-            "faq_a1": "A US gallon contains approximately 3.785 liters. An imperial gallon (used in the UK) contains about 4.546 liters. Always specify which gallon you're referring to!",
-            "faq_q2": "How do I convert cups to milliliters?",
-            "faq_a2": "One US cup equals approximately 236.6 milliliters. For cooking, many people round this to 240 mL for convenience. Our converter provides the precise value.",
-            "faq_q3": "What's the difference between fluid ounces and ounces?",
-            "faq_a3": "Fluid ounces (fl oz) measure volume, while ounces (oz) measure weight. They're only equivalent for water at specific temperatures. Always use fluid ounces for liquid measurements.",
-            "faq_q4": "How many cups are in a quart?",
-            "faq_a4": "There are exactly 4 cups in 1 US quart. This makes it easy to scale recipes: 1 quart = 4 cups = 2 pints = 32 fluid ounces."
+            "feature1_title": "Volume Cair & Kering",
+            "feature1_desc": "Konversi antara metrik liter dan galon imperial, liter, pint, dan cangkir.",
+            "feature2_title": "Memasak & Sains",
+            "feature2_desc": "Sempurna untuk resep, laboratorium kimia, perhitungan bahan bakar, dan pengukuran minuman.",
+            "feature3_title": "Perhitungan Instan",
+            "feature3_desc": "Konversi waktu nyata dengan presisi tinggi untuk semua kebutuhan volume Anda.",
+            "main_title": "Memahami Konversi Volume",
+            "description_p1": "Volume mengukur ruang tiga dimensi yang ditempati oleh cairan atau zat. Daerah yang berbeda menggunakan satuan volume yang berbeda: liter dan mililiter dalam sistem metrik, dan galon, liter, pint, cangkir, dan ons cairan dalam sistem imperial. Memahami konversi volume sangat penting untuk memasak, kimia, penghitungan penghematan bahan bakar, dan pengukuran minuman.",
+            "description_p2": "Satu galon AS berisi 3.785 liter, sedangkan satu galon imperial (Inggris) berisi 4.546 liter. Satu liter sama dengan 1,000 mililiter atau sekitar 33.814 ons cairan AS. Untuk memasak, satu cangkir AS sama dengan 236,6 mL. Konversi ini sangat penting ketika mengikuti resep internasional, menghitung konsumsi bahan bakar, atau bekerja di laboratorium ilmiah.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Memasak & Memanggang:</strong> Mengonversi ukuran resep antara cangkir dan mililiter",
+            "usage_2": "<strong>Minuman:</strong> Memahami ukuran minuman di berbagai negara",
+            "usage_3": "<strong>Penghematan Bahan Bakar:</strong> Menghitung konsumsi bahan bakar dalam liter vs galon",
+            "usage_4": "<strong>Laboratorium Kimia:</strong> Pengukuran cairan yang tepat untuk eksperimen",
+            "usage_5": "<strong>Akuarium:</strong> Menghitung kapasitas tangki dan penggantian air",
+            "usage_6": "<strong>Kedokteran:</strong> Perhitungan dosis dalam mL atau ons cairan",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Berapa liter dalam satu galon?",
+            "faq_a1": "Satu galon AS berisi sekitar 3,785 liter. Satu galon imperial (digunakan di Inggris) berisi sekitar 4.546 liter. Selalu tentukan galon mana yang Anda maksud!",
+            "faq_q2": "Bagaimana cara mengubah cangkir menjadi mililiter?",
+            "faq_a2": "Satu cangkir AS sama dengan sekitar 236,6 mililiter. Untuk memasak, banyak orang membulatkannya menjadi 240 mL demi kenyamanan. Konverter kami memberikan nilai yang tepat.",
+            "faq_q3": "Apa perbedaan antara ons cairan dan ons?",
+            "faq_a3": "Ons cairan (fl oz) mengukur volume, sedangkan ons (oz) mengukur berat. Mereka hanya setara dengan air pada suhu tertentu. Selalu gunakan ons cairan untuk mengukur cairan.",
+            "faq_q4": "Berapa cangkir dalam satu liter?",
+            "faq_a4": "Tepatnya ada 4 cangkir dalam 1 liter AS. Hal ini memudahkan penskalaan resep: 1 liter = 4 cangkir = 2 liter = 32 ons cairan."
         }
     },
     "weight-converter": {
         "meta": {
             "title": "Pengonversi Berat Online - Alat kg ke lbs gratis",
-            "description": "Convert weight and mass units instantly. Supports Kilograms, Grams, Pounds, Ounces, Metric Tons, and Milligrams.",
+            "description": "Konversi satuan berat dan massa secara instan. Mendukung Kilogram, Gram, Pound, Ons, Metrik Ton, dan Miligram.",
             "h1": "Konverter Berat",
-            "subtitle": "Convert kg, pounds, ounces, grams & stones accurately"
+            "subtitle": "Konversi kg, pon, ons, gram & batu secara akurat"
         },
         "form": {
-            "from_label": "From",
-            "optgroup_metric": "Metric",
-            "unit_mg": "Milligram (mg)",
+            "from_label": "Dari",
+            "optgroup_metric": "Metrik",
+            "unit_mg": "Miligram (mg)",
             "unit_g": "Gram (g)",
             "unit_kg": "Kilogram (kg)",
-            "unit_t": "Metric Ton (t)",
+            "unit_t": "Metrik Ton (t)",
             "optgroup_imperial": "Imperial",
-            "unit_oz": "Ounce (oz)",
-            "unit_lb": "Pound (lb)",
-            "unit_st": "Stone (st)",
-            "to_label": "To"
+            "unit_oz": "Ons (oz)",
+            "unit_lb": "pon (pon)",
+            "unit_st": "Batu (st)",
+            "to_label": "Ke"
         },
         "content": {
-            "feature1_title": "Mass & Weight Units",
-            "feature1_desc": "Convert between mass (kg, g) and weight (lb, oz) units seamlessly for any application.",
-            "feature2_title": "Scientific Accuracy",
-            "feature2_desc": "Perfect for cooking, science projects, shipping calculations, and health tracking.",
-            "feature3_title": "Instant Results",
-            "feature3_desc": "Type in any field to get immediate conversions without page reloads.",
-            "main_title": "Understanding Weight and Mass Conversion",
-            "description_p1": "Weight and mass are often used interchangeably in everyday language, though technically mass is the amount of matter in an object, while weight is the force exerted by gravity on that mass. For practical purposes, weight conversion tools help convert between metric units (grams, kilograms) and imperial units (ounces, pounds, stones). Understanding these conversions is essential for cooking, health tracking, shipping, and scientific work.",
-            "description_p2": "The metric system uses grams (g) and kilograms (kg), where 1 kg = 1,000 g. Imperial systems use ounces (oz) and pounds (lb), where 1 lb = 16 oz. One kilogram equals approximately 2.20462 pounds. The stone (st), equal to 14 pounds, is still commonly used in the UK for body weight. Metric tons (tonnes) equal 1,000 kg and are used for large-scale measurements.",
-            "usage_examples_title": "Common Usage Examples",
-            "usage_1": "<strong>Cooking & Baking:</strong> Converting grams of flour to ounces for recipes",
-            "usage_2": "<strong>Health & Fitness:</strong> Tracking body weight in kilograms vs pounds",
-            "usage_3": "<strong>Shipping & Logistics:</strong> Calculating freight costs based on metric tons",
-            "usage_4": "<strong>Jewelry & Precious Metals:</strong> Measuring gold in grams or troy ounces",
-            "usage_5": "<strong>Science & Lab Work:</strong> Precise milligram measurements for experiments",
-            "usage_6": "<strong>International Trade:</strong> Converting product weights between metric and imperial",
-            "faq_title": "Frequently Asked Questions",
-            "faq_q1": "How do I convert kilograms to pounds?",
-            "faq_a1": "Multiply kilograms by 2.20462. For example, 70 kg × 2.20462 = 154.32 lbs. Our converter handles this calculation instantly with precision.",
-            "faq_q2": "How do I convert pounds to kilograms?",
-            "faq_a2": "To convert pounds to kilograms, divide the pound value by approximately 2.20462. For example, 150 lbs ÷ 2.20462 = 68.04 kg. Our converter does this instantly!",
-            "faq_q3": "What is a metric ton?",
-            "faq_a3": "A metric ton (or tonne) is equal to 1,000 kilograms or approximately 2,204.6 pounds. It is slightly larger than a US short ton (2,000 lbs) and is commonly used in international shipping.",
-            "faq_q4": "Why is the stone unit still used?",
-            "faq_a4": "The stone (14 pounds) is still commonly used in the UK and Ireland for measuring body weight. While not part of the metric system, it remains popular for personal weight measurements in these regions."
+            "feature1_title": "Satuan Massa & Berat",
+            "feature1_desc": "Konversi antara satuan massa (kg, g) dan berat (lb, oz) dengan lancar untuk aplikasi apa pun.",
+            "feature2_title": "Akurasi Ilmiah",
+            "feature2_desc": "Sempurna untuk memasak, proyek sains, perhitungan pengiriman, dan pelacakan kesehatan.",
+            "feature3_title": "Hasil Instan",
+            "feature3_desc": "Ketik bidang apa pun untuk mendapatkan konversi langsung tanpa memuat ulang halaman.",
+            "main_title": "Memahami Konversi Berat dan Massa",
+            "description_p1": "Berat dan massa sering kali digunakan secara bergantian dalam bahasa sehari-hari, meskipun secara teknis massa adalah jumlah materi dalam suatu benda, sedangkan berat adalah gaya yang diberikan oleh gravitasi pada massa tersebut. Untuk tujuan praktis, alat konversi berat membantu mengkonversi antara satuan metrik (gram, kilogram) dan satuan imperial (ons, pon, batu). Memahami konversi ini penting untuk memasak, pelacakan kesehatan, pengiriman, dan karya ilmiah.",
+            "description_p2": "Sistem metrik menggunakan gram (g) dan kilogram (kg), dimana 1 kg = 1.000 g. Sistem imperial menggunakan ons (oz) dan pound (lb), dimana 1 lb = 16 oz. Satu kilogram sama dengan sekitar 2,20462 pon. Batu (st), sama dengan 14 pon, masih umum digunakan di Inggris untuk mengukur berat badan. Metrik ton (ton) sama dengan 1.000 kg dan digunakan untuk pengukuran skala besar.",
+            "usage_examples_title": "Contoh Penggunaan Umum",
+            "usage_1": "<strong>Memasak & Memanggang:</strong> Mengubah gram tepung menjadi ons untuk resep",
+            "usage_2": "<strong>Kesehatan & Kebugaran:</strong> Melacak berat badan dalam kilogram vs pon",
+            "usage_3": "<strong>Pengiriman & Logistik:</strong> Menghitung biaya pengiriman berdasarkan metrik ton",
+            "usage_4": "<strong>Perhiasan & Logam Mulia:</strong> Mengukur emas dalam gram atau troy ons",
+            "usage_5": "<strong>Ilmu Pengetahuan & Pekerjaan Lab:</strong> Pengukuran miligram yang tepat untuk eksperimen",
+            "usage_6": "<strong>Perdagangan Internasional:</strong> Mengonversi bobot produk antara metrik dan imperial",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
+            "faq_q1": "Bagaimana cara mengubah kilogram menjadi pound?",
+            "faq_a1": "Kalikan kilogram dengan 2,20462. Misalnya, 70 kg × 2,20462 = 154,32 pon. Konverter kami menangani penghitungan ini secara instan dan presisi.",
+            "faq_q2": "Bagaimana cara mengubah pound menjadi kilogram?",
+            "faq_a2": "Untuk mengonversi pound ke kilogram, bagilah nilai pound dengan kira-kira 2,20462. Misalnya, 150 pon 2,20462 = 68,04 kg. Konverter kami melakukan ini secara instan!",
+            "faq_q3": "Apa itu metrik ton?",
+            "faq_a3": "Satu metrik ton (atau ton) sama dengan 1,000 kilogram atau sekitar 2,204.6 pon. Ini sedikit lebih besar dari US short ton (2.000 lbs) dan biasanya digunakan dalam pelayaran internasional.",
+            "faq_q4": "Mengapa satuan batu masih digunakan?",
+            "faq_a4": "Batu seberat 14 pon ini masih umum digunakan di Inggris dan Irlandia untuk mengukur berat badan. Meskipun bukan bagian dari sistem metrik, sistem ini tetap populer untuk pengukuran berat badan pribadi di wilayah ini."
         }
     }
 }

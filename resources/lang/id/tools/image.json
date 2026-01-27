@@ -2,838 +2,838 @@
     "base64-to-image-converter": {
         "meta": {
             "title": "Decode Base64 ke Gambar - Decoder Online Gratis",
-            "description": "Convert Base64 encoded strings back to images (PNG, JPG, GIF). Free online decoder and visualizer.",
+            "description": "Konversikan string yang dikodekan Base64 kembali ke gambar (PNG, JPG, GIF). Dekoder dan visualisator online gratis.",
             "h1": "Dekode Base64 ke Gambar",
-            "subtitle": "Convert Base64 encoded strings back to images (PNG, JPG, GIF) instantly"
+            "subtitle": "Konversikan string yang dikodekan Base64 kembali ke gambar (PNG, JPG, GIF) secara instan"
         },
         "input": {
-            "title": "Paste Base64 String",
-            "desc": "Paste your code below to visualize the image",
-            "placeholder": "data:image/png;base64,iVBORw0KGgo...",
-            "btn_decode": "Decode Image"
+            "title": "Tempel String Base64",
+            "desc": "Tempelkan kode Anda di bawah ini untuk memvisualisasikan gambar",
+            "placeholder": "data:gambar/png;base64,iVBORw0KGgo...",
+            "btn_decode": "Dekode Gambar"
         },
         "result": {
-            "image_alt": "Decoded Image",
-            "success": "Image Decoded Successfully",
-            "btn_download": "Download Image",
-            "btn_clear": "Clear Pattern"
+            "image_alt": "Gambar yang Didekodekan",
+            "success": "Gambar Berhasil Didekodekan",
+            "btn_download": "Unduh Gambar",
+            "btn_clear": "Pola Jelas"
         },
         "content": {
-            "title": "Decode Base64 to Image",
-            "p1": "Found a long string of random characters starting with <code>data:image/...</code> and don't know what it is? It's likely a Base64-encoded image.",
-            "p2": "Our <strong>Base64 to Image Decoder</strong> converts that text string back into a visible image file (PNG, JPG, GIF, etc.) that you can view and download to your computer.",
+            "title": "Dekode Base64 ke Gambar",
+            "p1": "Menemukan rangkaian panjang karakter acak yang dimulai dengan <code>data:image/...</code> dan tidak tahu apa itu? Kemungkinan itu adalah gambar yang dikodekan Base64.",
+            "p2": "<strong>Base64 ke Decoder Gambar</strong> kami mengonversi string teks tersebut kembali menjadi file gambar yang terlihat (PNG, JPG, GIF, dll.) yang dapat Anda lihat dan unduh ke komputer Anda.",
             "features": {
                 "preview": {
-                    "title": "Instant Preview",
-                    "desc": "See the image immediately. We parse the binary data and render it on your screen."
+                    "title": "Pratinjau Instan",
+                    "desc": "Lihat langsung gambarnya. Kami mengurai data biner dan menampilkannya di layar Anda."
                 },
                 "auto": {
-                    "title": "Auto-Detection",
-                    "desc": "We automatically detect the file format (PNG, JPEG, GIF) from the header of the Base64 string."
+                    "title": "Deteksi Otomatis",
+                    "desc": "Kami secara otomatis mendeteksi format file (PNG, JPEG, GIF) dari header string Base64."
                 },
                 "download": {
-                    "title": "Download File",
-                    "desc": "Save the decoded result as a real image file to your hard drive with one click."
+                    "title": "Unduh Berkas",
+                    "desc": "Simpan hasil dekode sebagai file gambar asli ke hard drive Anda dengan satu klik."
                 }
             },
             "how_to": {
-                "title": "How to Decode?",
+                "title": "Bagaimana cara memecahkan kodenya?",
                 "list": [
-                    "Paste your Base64 string into the textarea.",
-                    "We instantly attempt to read the string.",
-                    "If valid, the image appears on the left.",
-                    "Click \"Download Image\" to save it."
+                    "Rekatkan string Base64 Anda ke dalam area teks.",
+                    "Kami langsung mencoba membaca string tersebut.",
+                    "Jika valid, gambar muncul di sebelah kiri.",
+                    "Klik \"Unduh Gambar\" untuk menyimpannya."
                 ]
             },
             "use_cases": {
-                "title": "Common Use Cases",
+                "title": "Kasus Penggunaan Umum",
                 "list": [
-                    "Debugging: Checking what image data is being sent in API responses or stored in databases.",
-                    "Recovery: Extracting images embedded in CSS files or HTML templates.",
-                    "Verification: Ensuring a Base64 string is not corrupted."
+                    "Debugging: Memeriksa data gambar apa yang dikirim dalam respons API atau disimpan dalam database.",
+                    "Pemulihan: Mengekstraksi gambar yang tertanam dalam file CSS atau template HTML.",
+                    "Verifikasi: Memastikan string Base64 tidak rusak."
                 ]
             }
         },
         "js": {
-            "input_required": "Please paste a Base64 string first.",
-            "invalid_error": "Invalid Base64 string or unsupported image format."
+            "input_required": "Silakan tempel string Base64 terlebih dahulu.",
+            "invalid_error": "String Base64 tidak valid atau format gambar tidak didukung."
         }
     },
     "heic-to-jpg-converter": {
         "meta": {
             "title": "Konverter HEIC ke JPG - Alat Foto iPhone Online Gratis",
-            "description": "Convert High Efficiency Image File (HEIC/HEIF) photos from iPhone to standard JPG format. Free, private, client-side converter.",
+            "description": "Konversikan foto File Gambar Efisiensi Tinggi (HEIC/HEIF) dari iPhone ke format JPG standar. Konverter sisi klien gratis, pribadi.",
             "h1": "Konverter HEIC ke JPG",
-            "subtitle": "Convert High Efficiency Image File (HEIC/HEIF) photos from iPhone to standard JPG format"
+            "subtitle": "Konversikan foto File Gambar Efisiensi Tinggi (HEIC/HEIF) dari iPhone ke format JPG standar"
         },
         "input": {
-            "title": "Upload HEIC File",
-            "desc": "Drag & drop your .heic or .heif file here",
-            "drop_title": "Drop HEIC file here",
-            "drop_desc": "Supports HEIC/HEIF (Max 20MB)"
+            "title": "Unggah File HEIC",
+            "desc": "Seret & letakkan file .heic atau .heif Anda di sini",
+            "drop_title": "Letakkan file HEIC di sini",
+            "drop_desc": "Mendukung HEIC/HEIF (Maks 20MB)"
         },
         "loading": {
-            "title": "Processing HEIC file...",
-            "desc": "Larger files may take a few seconds."
+            "title": "Memproses file HEIC...",
+            "desc": "File yang lebih besar mungkin memerlukan waktu beberapa detik."
         },
         "result": {
-            "image_alt": "Preview",
-            "converted_to": "Converted to:",
-            "btn_download": "Download JPG Image"
+            "image_alt": "Pratinjau",
+            "converted_to": "Dikonversi menjadi:",
+            "btn_download": "Unduh Gambar JPG"
         },
         "content": {
-            "title": "Convert HEIC to JPG Instantly",
-            "p1": "Apple's High Efficiency Image Format (HEIC) is great for saving space on your iPhone, but it can be a nightmare to open on Windows, Android, or older software. Our <strong>HEIC to JPG Converter</strong> solves this problem instantly.",
-            "p2": "We use advanced local processing capabilities to convert your photos without ever uploading them to a cloud server. This is the <strong>safest way</strong> to convert personal photos.",
+            "title": "Konversi HEIC ke JPG Secara Instan",
+            "p1": "Format Gambar Efisiensi Tinggi (HEIC) Apple sangat bagus untuk menghemat ruang di iPhone Anda, tetapi membukanya di Windows, Android, atau perangkat lunak lama bisa menjadi mimpi buruk. <strong>Konverter HEIC ke JPG</strong> kami memecahkan masalah ini secara instan.",
+            "p2": "Kami menggunakan kemampuan pemrosesan lokal tingkat lanjut untuk mengonversi foto Anda tanpa harus mengunggahnya ke server cloud. Ini adalah <strong>cara teraman</strong> untuk mengonversi foto pribadi.",
             "features": {
                 "private": {
-                    "title": "100% Private",
-                    "desc": "Your personal photos stay on your device. We use client-side logic for zero-risk conversion."
+                    "title": "100% Pribadi",
+                    "desc": "Foto pribadi Anda tetap ada di perangkat Anda. Kami menggunakan logika sisi klien untuk konversi tanpa risiko."
                 },
                 "compatibility": {
-                    "title": "Broad Compatibility",
-                    "desc": "Convert HEIC and HEIF files from any iOS version (iPhone/iPad) to universally accepted JPGs."
+                    "title": "Kompatibilitas Luas",
+                    "desc": "Konversikan file HEIC dan HEIF dari versi iOS apa pun (iPhone/iPad) ke JPG yang diterima secara universal."
                 },
                 "fast": {
-                    "title": "Fast & Free",
-                    "desc": "No software installation needed. Just drag, drop, and convert in seconds."
+                    "title": "Cepat & Gratis",
+                    "desc": "Tidak diperlukan instalasi perangkat lunak. Cukup seret, lepas, dan konversi dalam hitungan detik."
                 }
             },
             "how_to": {
-                "title": "How to Convert HEIC to JPG?",
+                "title": "Bagaimana Mengonversi HEIC ke JPG?",
                 "list": [
-                    "Drag your .heic or .heif file into the upload zone.",
-                    "The tool will automatically read and convert the file using advanced browser libraries.",
-                    "See a preview of your converted JPG image immediately.",
-                    "Click the \"Download JPG Image\" button to save it to your computer."
+                    "Seret file .heic atau .heif Anda ke zona unggah.",
+                    "Alat ini akan secara otomatis membaca dan mengonversi file menggunakan perpustakaan browser tingkat lanjut.",
+                    "Lihat pratinjau gambar JPG Anda yang dikonversi segera.",
+                    "Klik tombol \"Unduh Gambar JPG\" untuk menyimpannya ke komputer Anda."
                 ]
             },
             "details": {
-                "title": "Technical Details",
-                "p1": "HEIC (High Efficiency Image Container) uses modern compression methods to keep file sizes small. However, Windows and Android often struggle to open them.",
-                "p2": "Our tool decodes the HEIC data and re-encodes it as a standardized JPEG image with 90% quality retention, ensuring your photos look great while being accessible everywhere."
+                "title": "Detail Teknis",
+                "p1": "HEIC (High Efficiency Image Container) menggunakan metode kompresi modern untuk menjaga ukuran file tetap kecil. Namun, Windows dan Android sering kesulitan membukanya.",
+                "p2": "Alat kami menerjemahkan data HEIC dan mengkodekannya ulang sebagai gambar JPEG standar dengan retensi kualitas 90%, memastikan foto Anda tampak bagus dan dapat diakses di mana saja."
             },
             "faq": {
-                "title": "Common Questions",
-                "q1": "Can I convert iPhone Live Photos?",
-                "a1": "You can convert the still image part of the Live Photo if you transfer the .HEIC file to your computer first.",
-                "q2": "Is quality lost during conversion?",
-                "a2": "We use a high-quality setting (0.9 out of 1.0) to ensure minimal visual difference. JPG is a lossy format, but the difference is usually negligible to the human eye."
+                "title": "Pertanyaan Umum",
+                "q1": "Bisakah saya mengonversi iPhone Live Photos?",
+                "a1": "Anda dapat mengonversi bagian gambar diam dari Live Photo jika Anda mentransfer file .HEIC ke komputer Anda terlebih dahulu.",
+                "q2": "Apakah kualitas hilang selama konversi?",
+                "a2": "Kami menggunakan pengaturan kualitas tinggi (0,9 dari 1,0) untuk memastikan perbedaan visual yang minimal. JPG adalah format lossy, namun perbedaannya biasanya dapat diabaikan oleh mata manusia."
             }
         },
         "js": {
-            "error": "Error converting HEIC file: "
+            "error": "Kesalahan saat mengonversi file HEIC:"
         }
     },
     "ico-converter": {
         "meta": {
             "title": "Konverter ICO & Generator Favicon - Online Gratis",
-            "description": "Convert images to ICO format for website favicons. Supports custom sizing (32x32, 64x64). Free online favicon generator.",
+            "description": "Konversikan gambar ke format ICO untuk favicon situs web. Mendukung ukuran khusus (32x32, 64x64). Generator favicon online gratis.",
             "h1": "Konverter ICO & Generator Favicon",
-            "subtitle": "Convert images to ICO format for website favicons with custom sizing"
+            "subtitle": "Konversikan gambar ke format ICO untuk favicon situs web dengan ukuran khusus"
         },
         "input": {
-            "title": "Upload Image to Convert",
-            "desc": "Drag & drop your PNG/JPG file",
-            "drop_title": "Drop image file here",
-            "drop_desc": "Fast conversion to .ico"
+            "title": "Unggah Gambar untuk Dikonversi",
+            "desc": "Seret & lepas file PNG/JPG Anda",
+            "drop_title": "Letakkan file gambar di sini",
+            "drop_desc": "Konversi cepat ke .ico"
         },
         "editor": {
-            "original": "Original",
-            "image_alt": "Preview",
-            "favicon": "Favicon",
-            "size_label": "Icon Size",
-            "output_format": "Output Format:",
-            "btn_download": "Download Favicon (.ico)"
+            "original": "Asli",
+            "image_alt": "Pratinjau",
+            "favicon": "favicon",
+            "size_label": "Ukuran Ikon",
+            "output_format": "Format Keluaran:",
+            "btn_download": "Unduh Favicon (.ico)"
         },
         "content": {
-            "title": "Free ICO Converter & Favicon Generator",
-            "p1": "Creating a website? You need a favicon - that little icon that appears in browser tabs.",
-            "p2": "Our <strong>ICO Converter</strong> transforms any PNG or JPG image into a standard Microsoft `.ico` file. We support all common favicon sizes to ensure your brand looks sharp on every device.",
+            "title": "Konverter ICO & Generator Favicon Gratis",
+            "p1": "Membuat situs web? Anda memerlukan favicon - ikon kecil yang muncul di tab browser.",
+            "p2": "<strong>ICO Converter</strong> kami mengubah gambar PNG atau JPG apa pun menjadi file `.ico` standar Microsoft. Kami mendukung semua ukuran favicon umum untuk memastikan merek Anda terlihat tajam di setiap perangkat.",
             "features": {
                 "sizes": {
-                    "title": "Standard Sizes",
-                    "desc": "Choose from 16x16, 32x32, 48x48, 64x64, or 128x128 pixels. Or select all!"
+                    "title": "Ukuran Standar",
+                    "desc": "Pilih dari 16x16, 32x32, 48x48, 64x64, atau 128x128 piksel. Atau pilih semua!"
                 },
                 "resize": {
-                    "title": "Auto-Resizing",
-                    "desc": "Upload a large logo, and we'll automatically downscale it smoothly to fit the tiny icon format."
+                    "title": "Mengubah Ukuran Otomatis",
+                    "desc": "Unggah logo besar, dan kami akan secara otomatis memperkecilnya agar sesuai dengan format ikon kecil."
                 },
                 "multi": {
-                    "title": "Multi-Icon Support",
-                    "desc": "Modern .ico files can contain multiple sizes in one file. We handle that for you."
+                    "title": "Dukungan Multi-Ikon",
+                    "desc": "File .ico modern dapat berisi berbagai ukuran dalam satu file. Kami menanganinya untuk Anda."
                 }
             },
             "how_to": {
-                "title": "Steps to Create Favicon",
+                "title": "Langkah-langkah Membuat Favicon",
                 "list": [
-                    "Use a square image (PNG/JPG) for best results.",
-                    "16x16 (Browser tabs), 32x32 (Taskbar), 48x48 (Desktop).",
-                    "See how it looks instantly.",
-                    "Get your `favicon.ico` file."
+                    "Gunakan gambar persegi (PNG/JPG) untuk hasil terbaik.",
+                    "16x16 (Tab browser), 32x32 (Bilah Tugas), 48x48 (Desktop).",
+                    "Lihat tampilannya secara instan.",
+                    "Dapatkan file `favicon.ico` Anda."
                 ]
             },
             "why": {
-                "title": "Why .ICO format?",
-                "p1": "While modern browsers support PNG favicons, the `.ico` format is still the standard for maximum compatibility across all operating systems and legacy browsers (like Internet Explorer)."
+                "title": "Mengapa format .ICO?",
+                "p1": "Meskipun browser modern mendukung favicon PNG, format `.ico` masih menjadi standar untuk kompatibilitas maksimum di semua sistem operasi dan browser lama (seperti Internet Explorer)."
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid image"
+            "invalid_image": "Harap unggah gambar yang valid"
         }
     },
     "image-compressor": {
         "meta": {
             "title": "Kompresor Gambar Online - Pengurang Ukuran Gambar Gratis",
-            "description": "Compress images online for free. Reduce JPG, PNG, and WebP file sizes while maintaining quality.",
+            "description": "Kompres gambar online secara gratis. Kurangi ukuran file JPG, PNG, dan WebP dengan tetap menjaga kualitas.",
             "h1": "Kompresor Gambar",
-            "subtitle": "Reduce image file sizes without losing quality"
+            "subtitle": "Kurangi ukuran file gambar tanpa kehilangan kualitas"
         },
         "editor": {
-            "label_upload": "Upload Image",
-            "drop_title": "Drop your image here or click to browse",
-            "drop_subtitle": "Drag and drop your image or click to select from your device",
-            "supports": "Supports JPG, PNG, WebP formats",
-            "label_quality": "Compression Quality:",
-            "title_original": "Original Image",
-            "label_size": "Size:",
-            "title_compressed": "Compressed Image",
-            "label_saved": "Saved:",
-            "btn_download": "Download Compressed Image"
+            "label_upload": "Unggah Gambar",
+            "drop_title": "Letakkan gambar Anda di sini atau klik untuk menelusuri",
+            "drop_subtitle": "Seret dan lepas gambar Anda atau klik untuk memilih dari perangkat Anda",
+            "supports": "Mendukung format JPG, PNG, WebP",
+            "label_quality": "Kualitas Kompresi:",
+            "title_original": "Gambar Asli",
+            "label_size": "Ukuran:",
+            "title_compressed": "Gambar Terkompresi",
+            "label_saved": "Disimpan:",
+            "btn_download": "Unduh Gambar Terkompresi"
         },
         "content": {
-            "p1": "Compress your images online for free with our powerful image compression tool. Reduce JPG, PNG, and WebP file sizes by up to 90% while maintaining excellent visual quality. Perfect for optimizing images for websites, social media, email attachments, and faster page loading times.",
-            "why_title": "Why Compress Images?",
+            "p1": "Kompres gambar Anda secara online secara gratis dengan alat kompresi gambar kami yang canggih. Kurangi ukuran file JPG, PNG, dan WebP hingga 90% dengan tetap mempertahankan kualitas visual yang prima. Sempurna untuk mengoptimalkan gambar untuk situs web, media sosial, lampiran email, dan waktu pemuatan halaman lebih cepat.",
+            "why_title": "Mengapa Mengompresi Gambar?",
             "why_list": [
-                "Faster website loading times improve user experience and SEO",
-                "Reduce bandwidth usage and hosting costs",
-                "Optimize images for mobile devices and slow connections",
-                "Meet file size limits for email attachments and uploads",
-                "Improve Core Web Vitals and Google PageSpeed scores",
-                "Save storage space on your device or server"
+                "Waktu pemuatan situs web yang lebih cepat meningkatkan pengalaman pengguna dan SEO",
+                "Mengurangi penggunaan bandwidth dan biaya hosting",
+                "Optimalkan gambar untuk perangkat seluler dan koneksi lambat",
+                "Penuhi batas ukuran file untuk lampiran dan unggahan email",
+                "Tingkatkan skor Core Web Vitals dan Google PageSpeed",
+                "Menghemat ruang penyimpanan di perangkat atau server Anda"
             ],
-            "formats_title": "Supported Image Formats",
-            "quality_title": "Understanding Compression Quality",
+            "formats_title": "Format Gambar yang Didukung",
+            "quality_title": "Memahami Kualitas Kompresi",
             "quality_list": [
-                "100% - No compression, original quality (largest file size)",
-                "80-90% - High quality, minimal visible difference (recommended for most uses)",
-                "60-80% - Good quality, noticeable compression at high zoom",
-                "40-60% - Medium quality, visible artifacts but acceptable for web",
-                "10-40% - Low quality, significant quality loss (smallest file size)"
+                "100% - Tanpa kompresi, kualitas asli (ukuran file terbesar)",
+                "80-90% - Kualitas tinggi, perbedaan minimal yang terlihat (disarankan untuk sebagian besar penggunaan)",
+                "60-80% - Kualitas bagus, kompresi nyata pada zoom tinggi",
+                "40-60% - Kualitas sedang, artefak terlihat tetapi dapat diterima untuk web",
+                "10-40% - Kualitas rendah, penurunan kualitas signifikan (ukuran file terkecil)"
             ],
-            "how_title": "How Image Compression Works",
-            "how_desc": "Our tool uses advanced compression algorithms to reduce file size while preserving image quality. For JPG images, we use lossy compression that removes imperceptible details. For PNG, we optimize the color palette and use efficient encoding. All compression happens in your browser - your images never leave your device.",
-            "best_title": "Best Practices for Image Compression",
+            "how_title": "Cara Kerja Kompresi Gambar",
+            "how_desc": "Alat kami menggunakan algoritme kompresi tingkat lanjut untuk mengurangi ukuran file sekaligus menjaga kualitas gambar. Untuk gambar JPG, kami menggunakan kompresi lossy yang menghilangkan detail yang tidak terlihat. Untuk PNG, kami mengoptimalkan palet warna dan menggunakan pengkodean yang efisien. Semua kompresi terjadi di browser Anda - gambar Anda tidak pernah keluar dari perangkat Anda.",
+            "best_title": "Praktik Terbaik untuk Kompresi Gambar",
             "best_list": [
-                "Start with high-quality original images for best results",
-                "Use 80-90% quality for web images - perfect balance of size and quality",
-                "Compress images before uploading to websites or social media",
-                "Use JPG for photos, PNG for graphics with transparency",
-                "Consider WebP format for modern browsers (smaller files)",
-                "Always preview compressed images before downloading",
-                "Keep original files as backup before compression"
+                "Mulailah dengan gambar asli berkualitas tinggi untuk hasil terbaik",
+                "Gunakan kualitas 80-90% untuk gambar web - keseimbangan sempurna antara ukuran dan kualitas",
+                "Kompres gambar sebelum diunggah ke situs web atau media sosial",
+                "Gunakan JPG untuk foto, PNG untuk grafik dengan transparansi",
+                "Pertimbangkan format WebP untuk browser modern (file lebih kecil)",
+                "Selalu pratinjau gambar terkompresi sebelum mengunduh",
+                "Simpan file asli sebagai cadangan sebelum kompresi"
             ],
-            "privacy_title": "100% Private & Secure",
-            "privacy_desc": "All image compression happens entirely in your browser using JavaScript. Your images are never uploaded to our servers, ensuring complete privacy and security. Your files never leave your device.",
-            "faq_title": "Frequently Asked Questions",
+            "privacy_title": "100% Pribadi & Aman",
+            "privacy_desc": "Semua kompresi gambar terjadi sepenuhnya di browser Anda menggunakan JavaScript. Gambar Anda tidak pernah diunggah ke server kami, memastikan privasi dan keamanan lengkap. File Anda tidak pernah meninggalkan perangkat Anda.",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "formats": {
                 "jpg": {
                     "title": "JPG/JPEG",
-                    "desc": "Best for photographs and complex images with many colors. Lossy compression."
+                    "desc": "Terbaik untuk foto dan gambar kompleks dengan banyak warna. Kompresi yang merugikan."
                 },
                 "png": {
                     "title": "PNG",
-                    "desc": "Best for graphics, logos, and images with transparency. Lossless or lossy compression."
+                    "desc": "Terbaik untuk grafik, logo, dan gambar dengan transparansi. Kompresi lossless atau lossy."
                 },
                 "webp": {
                     "title": "WebP",
-                    "desc": "Modern format with superior compression. Smaller files than JPG/PNG with same quality."
+                    "desc": "Format modern dengan kompresi superior. File lebih kecil dari JPG/PNG dengan kualitas yang sama."
                 }
             },
             "faq": {
-                "q1": "Will compressing images reduce quality?",
-                "a1": "Yes, but minimally. At 80-90% quality, the difference is imperceptible to the human eye. You can adjust the quality slider to find the perfect balance between file size and visual quality.",
-                "q2": "What's the difference between lossy and lossless compression?",
-                "a2": "Lossy compression (JPG) removes some image data to achieve smaller files, while lossless compression (PNG) reduces file size without losing any data. Lossy gives better compression but slight quality loss.",
-                "q3": "How much can I reduce image file size?",
-                "a3": "Typically 50-90% reduction depending on the original image and quality settings. Photos often compress more than graphics. WebP format provides the best compression.",
-                "q4": "Are my images uploaded to your server?",
-                "a4": "No! All compression happens in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.",
-                "q5": "What image formats are supported?",
-                "a5": "We support JPG/JPEG, PNG, and WebP formats. These cover 99% of web images. The tool automatically detects the format and applies optimal compression."
+                "q1": "Apakah mengompresi gambar akan mengurangi kualitas?",
+                "a1": "Ya, tapi minimal. Pada kualitas 80-90%, perbedaannya tidak terlihat oleh mata manusia. Anda dapat menyesuaikan penggeser kualitas untuk menemukan keseimbangan sempurna antara ukuran file dan kualitas visual.",
+                "q2": "Apa perbedaan antara kompresi lossy dan lossless?",
+                "a2": "Kompresi lossy (JPG) menghapus beberapa data gambar untuk menghasilkan file yang lebih kecil, sementara kompresi lossless (PNG) mengurangi ukuran file tanpa kehilangan data apa pun. Lossy memberikan kompresi yang lebih baik tetapi sedikit penurunan kualitas.",
+                "q3": "Berapa banyak saya bisa mengurangi ukuran file gambar?",
+                "a3": "Biasanya pengurangan 50-90% tergantung pada gambar asli dan pengaturan kualitas. Foto sering kali lebih memampatkan daripada grafik. Format WebP memberikan kompresi terbaik.",
+                "q4": "Apakah gambar saya diunggah ke server Anda?",
+                "a4": "TIDAK! Semua kompresi terjadi di browser Anda menggunakan JavaScript. Gambar Anda tidak pernah meninggalkan perangkat Anda, memastikan privasi dan keamanan sepenuhnya.",
+                "q5": "Format gambar apa yang didukung?",
+                "a5": "Kami mendukung format JPG/JPEG, PNG, dan WebP. Ini mencakup 99% gambar web. Alat ini secara otomatis mendeteksi format dan menerapkan kompresi optimal."
             }
         }
     },
     "image-converter": {
         "meta": {
             "title": "Pengonversi Gambar Online - Pengalih Format Gratis",
-            "description": "Convert images between multiple formats (PNG, JPG, WEBP) easily and for free. Secure, client-side conversion requiring no uploads.",
+            "description": "Konversi gambar antara berbagai format (PNG, JPG, WEBP) dengan mudah dan gratis. Konversi sisi klien yang aman tidak memerlukan unggahan.",
             "h1": "Pengonversi Gambar",
-            "subtitle": "Convert images between multiple formats (PNG, JPG, WEBP) easily and for free"
+            "subtitle": "Konversi gambar antara berbagai format (PNG, JPG, WEBP) dengan mudah dan gratis"
         },
         "input": {
-            "title": "Upload Your Image",
-            "desc": "Drag & drop or click to select an image",
-            "drop_title": "Drop your image here",
-            "drop_desc": "Supports PNG, JPG, WEBP (Max 10MB)"
+            "title": "Unggah Gambar Anda",
+            "desc": "Seret & lepas atau klik untuk memilih gambar",
+            "drop_title": "Jatuhkan gambar Anda di sini",
+            "drop_desc": "Mendukung PNG, JPG, WEBP (Maks 10MB)"
         },
         "editor": {
-            "image_alt": "Preview",
-            "target_format": "Target Format",
-            "quality": "Quality (JPG/WEBP)",
-            "btn_convert": "Convert & Download"
+            "image_alt": "Pratinjau",
+            "target_format": "Format Sasaran",
+            "quality": "Kualitas (JPG/WEBP)",
+            "btn_convert": "Konversi & Unduh"
         },
         "content": {
-            "title": "The Ultimate Free Online Image Converter",
-            "p1": "In today's digital landscape, working with images requires versatility. Whether you're a web developer needing WEBP for performance, a designer needing PNG for transparency, or a photographer needing universal JPG compatibility, our <strong>Image Converter</strong> is the all-in-one solution.",
-            "p2": "Forget about installing heavy software or uploading your private photos to unknown servers. Our tool runs entirely in your browser, ensuring <strong>100% privacy and lightning-fast speeds</strong>.",
+            "title": "Pengonversi Gambar Online Gratis Terbaik",
+            "p1": "Dalam lanskap digital saat ini, bekerja dengan gambar memerlukan keserbagunaan. Baik Anda seorang pengembang web yang membutuhkan WEBP untuk kinerja, seorang desainer yang membutuhkan PNG untuk transparansi, atau seorang fotografer yang membutuhkan kompatibilitas JPG universal, <strong>Pengonversi Gambar</strong> kami adalah solusi lengkap.",
+            "p2": "Lupakan menginstal perangkat lunak berat atau mengunggah foto pribadi Anda ke server yang tidak dikenal. Alat kami berjalan sepenuhnya di browser Anda, memastikan <strong>privasi 100% dan kecepatan secepat kilat</strong>.",
             "features": {
                 "secure": {
-                    "title": "Secure & Private",
-                    "desc": "Your files never leave your device. All processing happens locally in your browser."
+                    "title": "Aman & Pribadi",
+                    "desc": "File Anda tidak pernah meninggalkan perangkat Anda. Semua pemrosesan terjadi secara lokal di browser Anda."
                 },
                 "instant": {
-                    "title": "Instant Conversion",
-                    "desc": "No queuing or waiting. Powered by modern WebAssembly technology for speed."
+                    "title": "Konversi Instan",
+                    "desc": "Tidak ada antrian atau menunggu. Didukung oleh teknologi WebAssembly modern untuk kecepatan."
                 },
                 "bulk": {
-                    "title": "Bulk Processing",
-                    "desc": "Convert unlimited images one by one without any usage restrictions or costs."
+                    "title": "Pemrosesan Massal",
+                    "desc": "Konversikan gambar tanpa batas satu per satu tanpa batasan penggunaan atau biaya apa pun."
                 }
             },
             "how_to": {
-                "title": "How to Convert Images?",
+                "title": "Bagaimana Mengonversi Gambar?",
                 "list": [
-                    "Drag your image file into the blue box or click to select from your device.",
-                    "Select your desired output format (PNG, JPG, or WEBP) from the dropdown.",
-                    "If choosing JPG or WEBP, use the slider to balance file size and quality.",
-                    "Click the \"Convert & Download\" button to save your formatted image instantly."
+                    "Seret file gambar Anda ke dalam kotak biru atau klik untuk memilih dari perangkat Anda.",
+                    "Pilih format keluaran yang Anda inginkan (PNG, JPG, atau WEBP) dari dropdown.",
+                    "Jika memilih JPG atau WEBP, gunakan penggeser untuk menyeimbangkan ukuran dan kualitas file.",
+                    "Klik tombol \"Konversi & Unduh\" untuk langsung menyimpan gambar yang telah diformat."
                 ]
             },
             "features_list": {
-                "title": "Key Features",
+                "title": "Fitur Utama",
                 "list": [
-                    "Cross-Format Support: Effortlessly switch between PNG, JPG, and WEBP.",
-                    "Transparency Control: PNG conversions preserve transparency, while JPG fills it with a white background.",
-                    "Responsive: Works perfectly on Desktops, Tablets, and Mobile phones.",
-                    "No Limits: No file size limits and no daily conversion caps."
+                    "Dukungan Lintas Format: Beralih dengan mudah antara PNG, JPG, dan WEBP.",
+                    "Kontrol Transparansi: Konversi PNG menjaga transparansi, sedangkan JPG mengisinya dengan latar belakang putih.",
+                    "Responsif: Berfungsi sempurna di Desktop, Tablet, dan Ponsel.",
+                    "Tanpa Batas: Tidak ada batasan ukuran file dan tidak ada batasan konversi harian."
                 ]
             },
             "faq": {
-                "title": "Frequently Asked Questions",
-                "q1": "Is this tool free?",
-                "a1": "Yes, absolutely. We don't charge anything, and there are no hidden premium features.",
-                "q2": "Does it support transparency?",
-                "a2": "Yes! If you convert to PNG or WEBP, transparency is preserved. For JPG, transparent areas become white.",
-                "q3": "Are my images uploaded?",
-                "a3": "No. All conversion logic runs in your own browser using JavaScript and Canvas APIs. We count privacy as our top feature.",
-                "q4": "What is the best format?",
-                "a4": "Use <strong>JPG</strong> for photos, <strong>PNG</strong> for graphics with sharp edges/transparency, and <strong>WEBP</strong> for web performance."
+                "title": "Pertanyaan yang Sering Diajukan",
+                "q1": "Apakah alat ini gratis?",
+                "a1": "Ya, tentu saja. Kami tidak mengenakan biaya apa pun, dan tidak ada fitur premium tersembunyi.",
+                "q2": "Apakah ini mendukung transparansi?",
+                "a2": "Ya! Jika Anda mengonversi ke PNG atau WEBP, transparansi tetap terjaga. Untuk JPG, area transparan menjadi putih.",
+                "q3": "Apakah gambar saya diunggah?",
+                "a3": "Tidak. Semua logika konversi berjalan di browser Anda sendiri menggunakan JavaScript dan Canvas API. Kami menganggap privasi sebagai fitur utama kami.",
+                "q4": "Apa format terbaik?",
+                "a4": "Gunakan <strong>JPG</strong> untuk foto, <strong>PNG</strong> untuk grafik dengan tepi tajam/transparansi, dan <strong>WEBP</strong> untuk kinerja web."
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid image file"
+            "invalid_image": "Harap unggah file gambar yang valid"
         }
     },
     "image-to-base64-converter": {
         "meta": {
             "title": "Konverter Gambar ke Base64 - Alat String Online Gratis",
-            "description": "Convert images to Base64 encoded strings for embedding in HTML or CSS. Free online tool supporting PNG, JPG, GIF.",
+            "description": "Konversikan gambar ke string yang dikodekan Base64 untuk disematkan dalam HTML atau CSS. Alat online gratis yang mendukung PNG, JPG, GIF.",
             "h1": "Konversi Gambar ke String Base64",
-            "subtitle": "Convert images to Base64 encoded strings for embedding in HTML or CSS"
+            "subtitle": "Konversikan gambar ke string yang dikodekan Base64 untuk disematkan dalam HTML atau CSS"
         },
         "input": {
-            "title": "Upload Image",
-            "desc": "Drag & drop your image file here",
-            "drop_title": "Drop image file here",
-            "drop_desc": "Supports All Image Formats"
+            "title": "Unggah Gambar",
+            "desc": "Seret & letakkan file gambar Anda di sini",
+            "drop_title": "Letakkan file gambar di sini",
+            "drop_desc": "Mendukung Semua Format Gambar"
         },
         "editor": {
-            "image_alt": "Preview",
-            "label_string": "Base64 String",
-            "btn_copy": "Copy to Clipboard",
-            "char_count": "Character Count",
-            "mime_type": "MIME Type"
+            "image_alt": "Pratinjau",
+            "label_string": "Tali Base64",
+            "btn_copy": "Salin ke Papan Klip",
+            "char_count": "Jumlah Karakter",
+            "mime_type": "Tipe MIME"
         },
         "content": {
-            "title": "Convert Image to Base64 String",
-            "p1": "Developers and web designers often need to embed images directly into HTML or CSS files to reduce HTTP requests.",
-            "p2": "Our <strong>Image to Base64 Converter</strong> encodes your image file into a long string of characters that represents the binary data. You can paste this string straight into your code.",
+            "title": "Konversi Gambar ke String Base64",
+            "p1": "Pengembang dan perancang web sering kali perlu menyematkan gambar langsung ke file HTML atau CSS untuk mengurangi permintaan HTTP.",
+            "p2": "<strong>Konverter Gambar ke Base64</strong> kami mengkodekan file gambar Anda menjadi serangkaian karakter panjang yang mewakili data biner. Anda dapat menempelkan string ini langsung ke kode Anda.",
             "features": {
                 "clipboard": {
-                    "title": "Clipboard Ready",
-                    "desc": "One-click copy. We format the output for HTML (`&lt;img src=\"...\"&gt;`) or CSS (`background: url(...)`)."
+                    "title": "Papan Klip Siap",
+                    "desc": "Salinan sekali klik. Kami memformat output untuk HTML (`&lt;img src=\"...\"&gt;`) atau CSS (`background: url(...)`)."
                 },
                 "requests": {
-                    "title": "Reduce Requests",
-                    "desc": "Embedding small icons and logos as Base64 eliminates the network overhead of fetching external image files."
+                    "title": "Kurangi Permintaan",
+                    "desc": "Menyematkan ikon dan logo kecil sebagai Base64 menghilangkan overhead jaringan dalam mengambil file gambar eksternal."
                 },
                 "formats": {
-                    "title": "Any Format",
-                    "desc": "Works with PNG, JPG, GIF, WEBP, SVG, and even ICO files."
+                    "title": "Format Apa Pun",
+                    "desc": "Bekerja dengan file PNG, JPG, GIF, WEBP, SVG, dan bahkan ICO."
                 }
             },
             "how_to": {
-                "title": "How to use?",
+                "title": "Bagaimana cara menggunakannya?",
                 "list": [
-                    "Select your image file.",
-                    "The tool immediately converts the file to a Data URI.",
-                    "Click \"Copy to Clipboard\" to grab the code.",
-                    "Insert it into your `src` attribute or CSS file."
+                    "Pilih file gambar Anda.",
+                    "Alat ini segera mengonversi file menjadi URI Data.",
+                    "Klik \"Salin ke Papan Klip\" untuk mengambil kodenya.",
+                    "Masukkan ke dalam atribut `src` atau file CSS Anda."
                 ]
             },
             "use_cases": {
-                "title": "When to use Base64?",
+                "title": "Kapan menggunakan Base64?",
                 "list": [
-                    "Small Images: Best for icons, spinners, and small logos (under 10KB).",
-                    "Single-File Apps: When you need to bundle everything into one HTML file (e.g., email templates).",
-                    "Offline Access: Ensures images load even without a network connection if the HTML is saved locally."
+                    "Gambar Kecil: Terbaik untuk ikon, spinner, dan logo kecil (di bawah 10KB).",
+                    "Aplikasi File Tunggal: Saat Anda perlu menggabungkan semuanya ke dalam satu file HTML (misalnya, template email).",
+                    "Akses Offline: Memastikan gambar dimuat bahkan tanpa koneksi jaringan jika HTML disimpan secara lokal."
                 ]
             }
         },
         "js": {
-            "copied": "Copied!"
+            "copied": "Disalin!"
         }
     },
     "jpg-to-png-converter": {
         "meta": {
             "title": "Konverter JPG ke PNG - Alat Transparan Online Gratis",
-            "description": "Convert JPG images to PNG format instantly. 100% free, secure client-side conversion, no file size limits.",
+            "description": "Konversikan gambar JPG ke format PNG secara instan. 100% gratis, konversi sisi klien aman, tanpa batasan ukuran file.",
             "h1": "Konverter JPG ke PNG",
-            "subtitle": "Convert JPG images to PNG format instantly with 100% free conversion"
+            "subtitle": "Konversikan gambar JPG ke format PNG secara instan dengan konversi gratis 100%."
         },
         "input": {
-            "title": "Upload JPG Image",
-            "desc": "Drag & drop your JPG/JPEG file here",
-            "drop_title": "Drop JPG file here",
-            "drop_desc": "Supports JPG, JPEG (Max 10MB)"
+            "title": "Unggah Gambar JPG",
+            "desc": "Seret & letakkan file JPG/JPEG Anda di sini",
+            "drop_title": "Letakkan file JPG di sini",
+            "drop_desc": "Mendukung JPG, JPEG (Maks 10MB)"
         },
         "editor": {
-            "image_alt": "Preview",
-            "output_format": "Output Format:",
+            "image_alt": "Pratinjau",
+            "output_format": "Format Keluaran:",
             "format_short": "PNG",
-            "btn_convert": "Convert to PNG & Download"
+            "btn_convert": "Konversikan ke PNG & Unduh"
         },
         "content": {
-            "title": "Convert JPG to PNG Instantly",
-            "p1": "JPG is the world's most popular image format, but it often lacks the versatility needed for modern web design. By converting to PNG, you gain access to lossless compression and transparency support.",
-            "p2": "Our <strong>JPG to PNG Converter</strong> is designed for speed and privacy, handling everything directly in your browser without uploading your sensitive photos to any server.",
+            "title": "Konversi JPG ke PNG secara instan",
+            "p1": "JPG adalah format gambar paling populer di dunia, namun sering kali kurang memiliki keserbagunaan yang diperlukan untuk desain web modern. Dengan mengonversi ke PNG, Anda mendapatkan akses ke dukungan kompresi dan transparansi lossless.",
+            "p2": "<strong>Konverter JPG ke PNG</strong> kami dirancang untuk kecepatan dan privasi, menangani semuanya langsung di browser Anda tanpa mengunggah foto sensitif Anda ke server mana pun.",
             "features": {
                 "lossless": {
-                    "title": "Lossless Quality",
-                    "desc": "Stop image degradation. PNG uses lossless compression to keep every pixel perfect during edits."
+                    "title": "Kualitas Tanpa Rugi",
+                    "desc": "Hentikan degradasi gambar. PNG menggunakan kompresi lossless untuk menjaga setiap piksel tetap sempurna selama pengeditan."
                 },
                 "private": {
-                    "title": "100% Private",
-                    "desc": "Files are processed locally on your device. We never see, store, or upload your images."
+                    "title": "100% Pribadi",
+                    "desc": "File diproses secara lokal di perangkat Anda. Kami tidak pernah melihat, menyimpan, atau mengunggah gambar Anda."
                 },
                 "transparency": {
-                    "title": "Transparency Ready",
-                    "desc": "Convert to the preferred format for logos, icons, and graphics that require transparent backgrounds."
+                    "title": "Transparansi Siap",
+                    "desc": "Konversikan ke format pilihan untuk logo, ikon, dan grafik yang memerlukan latar belakang transparan."
                 }
             },
             "how_to": {
-                "title": "How to Convert JPG to PNG",
+                "title": "Cara Mengonversi JPG ke PNG",
                 "list": [
-                    "Drag and drop your JPG file into the designated area.",
-                    "The tool immediately reads the file ready for conversion.",
-                    "See exactly how your image looks before saving.",
-                    "Click \"Convert & Download\" to save your new PNG instantly."
+                    "Seret dan letakkan file JPG Anda ke area yang ditentukan.",
+                    "Alat ini segera membaca file yang siap untuk dikonversi.",
+                    "Lihat secara persis tampilan gambar Anda sebelum disimpan.",
+                    "Klik \"Konversi & Unduh\" untuk menyimpan PNG baru Anda secara instan."
                 ]
             },
             "faq": {
-                "title": "Frequently Asked Questions",
-                "q1": "Is the quality better?",
-                "a1": "Converting to PNG stops <em>future</em> quality loss. It's best for images you plan to edit further or need to keep sharp.",
-                "q2": "Are there file limits?",
-                "a2": "Since we process files in your browser, the limit is determined by your device's memory, usually allowing files up to 50MB easily."
+                "title": "Pertanyaan yang Sering Diajukan",
+                "q1": "Apakah kualitasnya lebih baik?",
+                "a1": "Mengonversi ke PNG menghentikan penurunan kualitas <em>di masa depan</em>. Ini yang terbaik untuk gambar yang ingin Anda edit lebih lanjut atau ingin tetap tajam.",
+                "q2": "Apakah ada batasan file?",
+                "a2": "Karena kami memproses file di browser Anda, batasnya ditentukan oleh memori perangkat Anda, biasanya memungkinkan file hingga 50MB dengan mudah."
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid JPG image",
-            "converted_name": "converted-image"
+            "invalid_image": "Harap unggah gambar JPG yang valid",
+            "converted_name": "gambar yang dikonversi"
         }
     },
     "jpg-to-webp-converter": {
         "meta": {
             "title": "Konverter JPG ke WebP - Alat Pengoptimalan Online Gratis",
-            "description": "Convert JPG images to the modern WebP format for superior compression and web performance. Free online tool.",
+            "description": "Konversikan gambar JPG ke format WebP modern untuk kompresi dan kinerja web yang unggul. Alat daring gratis.",
             "h1": "Konverter JPG ke WebP",
-            "subtitle": "Convert JPG images to the modern WebP format for superior compression"
+            "subtitle": "Konversikan gambar JPG ke format WebP modern untuk kompresi superior"
         },
         "input": {
-            "title": "Upload JPG Image",
-            "desc": "Drag & drop your JPG file here",
-            "drop_title": "Drop JPG file here",
-            "drop_desc": "Supports JPG, JPEG (Max 10MB)"
+            "title": "Unggah Gambar JPG",
+            "desc": "Seret & letakkan file JPG Anda di sini",
+            "drop_title": "Letakkan file JPG di sini",
+            "drop_desc": "Mendukung JPG, JPEG (Maks 10MB)"
         },
         "editor": {
-            "image_alt": "Preview",
-            "output_format": "Output Format:",
+            "image_alt": "Pratinjau",
+            "output_format": "Format Keluaran:",
             "format_short": "WEBP",
-            "quality": "Compression Quality",
-            "btn_convert": "Convert to WEBP & Download"
+            "quality": "Kualitas Kompresi",
+            "btn_convert": "Konversikan ke WEBP & Unduh"
         },
         "content": {
-            "title": "Convert JPG to WebP for Better Performance",
-            "p1": "WebP is a modern image format that provides superior lossless and lossy compression for images on the web. By converting JPG to WebP, developers and webmasters can create smaller, richer images that make the web faster.",
-            "p2": "Our <strong>JPG to WebP Converter</strong> helps you optimize your images instantly in the browser, reducing file size by up to 30% compared to JPEG without standard quality loss.",
+            "title": "Konversikan JPG ke WebP untuk Performa Lebih Baik",
+            "p1": "WebP adalah format gambar modern yang memberikan kompresi lossless dan lossy yang unggul untuk gambar di web. Dengan mengonversi JPG ke WebP, pengembang dan webmaster dapat membuat gambar yang lebih kecil dan lebih kaya sehingga web menjadi lebih cepat.",
+            "p2": "<strong>Konverter JPG ke WebP</strong> kami membantu Anda mengoptimalkan gambar secara instan di browser, mengurangi ukuran file hingga 30% dibandingkan dengan JPEG tanpa kehilangan kualitas standar.",
             "features": {
                 "faster": {
-                    "title": "Faster Loading",
-                    "desc": "WebP images are significantly smaller than JPGs, helping your website load faster and improving SEO scores."
+                    "title": "Pemuatan Lebih Cepat",
+                    "desc": "Gambar WebP jauh lebih kecil daripada JPG, membantu situs web Anda memuat lebih cepat dan meningkatkan skor SEO."
                 },
                 "quality": {
-                    "title": "High Quality",
-                    "desc": "Maintain visual fidelity while reducing file weight. Perfect for photographs and complex web graphics."
+                    "title": "Kualitas Tinggi",
+                    "desc": "Pertahankan fidelitas visual sekaligus mengurangi bobot file. Sempurna untuk foto dan grafik web yang kompleks."
                 },
                 "secure": {
-                    "title": "Secure Processing",
-                    "desc": "All conversions happen locally. Your sensitive images never leave your computer."
+                    "title": "Pemrosesan Aman",
+                    "desc": "Semua konversi terjadi secara lokal. Gambar sensitif Anda tidak pernah meninggalkan komputer Anda."
                 }
             },
             "how_to": {
-                "title": "How to Convert JPG to WebP",
+                "title": "Cara Mengonversi JPG ke WebP",
                 "list": [
-                    "Select or drag & drop your JPG image.",
-                    "Use the quality slider to balance size vs quality.",
-                    "See the result in real-time.",
-                    "Save your optimized WebP image."
+                    "Pilih atau seret & lepas gambar JPG Anda.",
+                    "Gunakan penggeser kualitas untuk menyeimbangkan ukuran vs kualitas.",
+                    "Lihat hasilnya secara real-time.",
+                    "Simpan gambar WebP Anda yang dioptimalkan."
                 ]
             },
             "faq": {
-                "title": "Frequently Asked Questions",
-                "q1": "Do all browsers support WebP?",
-                "a1": "Yes, all modern browsers (Chrome, Firefox, Safari, Edge) fully support WebP images.",
-                "q2": "Is WebP better for SEO?",
-                "a2": "Absolutely. Google prefers WebP because it loads faster, improving your Core Web Vitals score."
+                "title": "Pertanyaan yang Sering Diajukan",
+                "q1": "Apakah semua browser mendukung WebP?",
+                "a1": "Ya, semua browser modern (Chrome, Firefox, Safari, Edge) sepenuhnya mendukung gambar WebP.",
+                "q2": "Apakah WebP lebih baik untuk SEO?",
+                "a2": "Sangat. Google lebih memilih WebP karena memuat lebih cepat, sehingga meningkatkan skor Data Web Inti Anda."
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid JPG image",
-            "converted_name": "converted-image"
+            "invalid_image": "Harap unggah gambar JPG yang valid",
+            "converted_name": "gambar yang dikonversi"
         }
     },
     "png-to-jpg-converter": {
         "meta": {
             "title": "Konverter PNG ke JPG - Alat Gambar Online Gratis",
-            "description": "Convert PNG images to JPG format for smaller file sizes. Free online converter.",
+            "description": "Konversikan gambar PNG ke format JPG untuk ukuran file lebih kecil. Konverter online gratis.",
             "h1": "Konverter PNG ke JPG",
-            "subtitle": "Convert PNG images to JPG format for smaller file sizes instantly"
+            "subtitle": "Konversikan gambar PNG ke format JPG untuk ukuran file lebih kecil secara instan"
         },
         "input": {
-            "title": "Upload PNG Image",
-            "desc": "Drag & drop your PNG file here",
-            "drop_title": "Drop PNG file here",
-            "drop_desc": "Supports PNG (Max 10MB)"
+            "title": "Unggah Gambar PNG",
+            "desc": "Seret & letakkan file PNG Anda di sini",
+            "drop_title": "Letakkan file PNG di sini",
+            "drop_desc": "Mendukung PNG (Maks 10MB)"
         },
         "editor": {
-            "image_alt": "Preview",
-            "note": "Note:",
-            "note_text": "Transparent backgrounds will be converted to white.",
-            "output_format": "Output Format:",
-            "btn_convert": "Convert to JPG & Download"
+            "image_alt": "Pratinjau",
+            "note": "Catatan:",
+            "note_text": "Latar belakang transparan akan diubah menjadi putih.",
+            "output_format": "Format Keluaran:",
+            "btn_convert": "Konversikan ke JPG & Unduh"
         },
         "content": {
-            "title": "Compress PNG to JPG Instantly",
-            "p1": "PNG files are great for quality, but they can be massive. If you're uploading photos to a website or sending them via email, JPG is often the better choice.",
-            "p2": "Our <strong>PNG to JPG Converter</strong> drastically reduces file size by using JPEG compression. We automatically handle transparent backgrounds by filling them with white, ensuring your images look perfect.",
+            "title": "Kompres PNG ke JPG Secara Instan",
+            "p1": "File PNG bagus dalam hal kualitas, tetapi ukurannya bisa sangat besar. Jika Anda mengunggah foto ke situs web atau mengirimkannya melalui email, JPG seringkali merupakan pilihan yang lebih baik.",
+            "p2": "<strong>Pengonversi PNG ke JPG</strong> kami secara drastis mengurangi ukuran file dengan menggunakan kompresi JPEG. Kami secara otomatis menangani latar belakang transparan dengan mengisinya dengan warna putih, memastikan gambar Anda terlihat sempurna.",
             "features": {
                 "size": {
-                    "title": "Drastic Size Reduction",
-                    "desc": "Reduce file sizes by up to 80% with minimal loss in visual quality."
+                    "title": "Pengurangan Ukuran Secara Drastis",
+                    "desc": "Kurangi ukuran file hingga 80% dengan penurunan kualitas visual yang minimal."
                 },
                 "secure": {
-                    "title": "Secure & Private",
-                    "desc": "Local browser processing means your photos are never uploaded to the cloud."
+                    "title": "Aman & Pribadi",
+                    "desc": "Pemrosesan browser lokal berarti foto Anda tidak pernah diunggah ke cloud."
                 },
                 "smart": {
-                    "title": "Smart Conversion",
-                    "desc": "Intelligent background handling converts transparency to a clean white matte."
+                    "title": "Konversi Cerdas",
+                    "desc": "Penanganan latar belakang yang cerdas mengubah transparansi menjadi matte putih bersih."
                 }
             },
             "how_to": {
-                "title": "Steps to Convert",
+                "title": "Langkah-langkah untuk Mengonversi",
                 "list": [
-                    "Select a PNG image from your device.",
-                    "The tool instantly processes the image.",
-                    "Check the preview (transparent areas will now be white).",
-                    "Download your optimized JPG file."
+                    "Pilih gambar PNG dari perangkat Anda.",
+                    "Alat ini langsung memproses gambar.",
+                    "Periksa pratinjau (area transparan sekarang akan menjadi putih).",
+                    "Unduh file JPG Anda yang dioptimalkan."
                 ]
             },
             "why": {
-                "title": "When to use JPG?",
+                "title": "Kapan menggunakan JPG?",
                 "list": [
-                    "Photographs: JPG is designed for complex, real-world images.",
-                    "Web Uploads: Many forms only accept .jpg or .jpeg.",
-                    "Saving Space: If you have thousands of images, JPG saves GBs of storage."
+                    "Foto: JPG dirancang untuk gambar dunia nyata yang kompleks.",
+                    "Unggahan Web: Banyak formulir yang hanya menerima .jpg atau .jpeg.",
+                    "Menghemat Ruang: Jika Anda memiliki ribuan gambar, JPG menghemat penyimpanan sebesar GB."
                 ]
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid PNG image"
+            "invalid_image": "Harap unggah gambar PNG yang valid"
         }
     },
     "png-to-webp-converter": {
         "meta": {
             "title": "Konverter PNG ke WebP - Alat Web Online Gratis",
-            "description": "Convert PNG images to WebP to reduce file size while maintaining transparency. Enhance your website loading speed.",
+            "description": "Konversikan gambar PNG ke WebP untuk mengurangi ukuran file dengan tetap menjaga transparansi. Tingkatkan kecepatan memuat situs web Anda.",
             "h1": "Konverter PNG ke WebP",
-            "subtitle": "Convert PNG images to WebP to reduce file size while maintaining transparency"
+            "subtitle": "Konversikan gambar PNG ke WebP untuk mengurangi ukuran file dengan tetap menjaga transparansi"
         },
         "input": {
-            "title": "Upload PNG Image",
-            "desc": "Drag & drop your PNG file here",
-            "drop_title": "Drop PNG file here",
-            "drop_desc": "Supports PNG (Max 10MB)"
+            "title": "Unggah Gambar PNG",
+            "desc": "Seret & letakkan file PNG Anda di sini",
+            "drop_title": "Letakkan file PNG di sini",
+            "drop_desc": "Mendukung PNG (Maks 10MB)"
         },
         "editor": {
-            "image_alt": "Preview",
-            "output_format": "Output Format:",
-            "quality": "Compression Quality",
-            "btn_convert": "Convert to WEBP & Download"
+            "image_alt": "Pratinjau",
+            "output_format": "Format Keluaran:",
+            "quality": "Kualitas Kompresi",
+            "btn_convert": "Konversikan ke WEBP & Unduh"
         },
         "content": {
-            "title": "Optimize Images with PNG to WebP",
-            "p1": "Want faster website load times? Converting your PNGs to WebP is the #1 recommendation from Google PageSpeed Insights.",
-            "p2": "Our tool compresses your PNG images into the modern WebP format, reducing file size by up to <strong>30-50%</strong> while keeping the background transparent and the quality sharp.",
+            "title": "Optimalkan Gambar dengan PNG ke WebP",
+            "p1": "Ingin waktu muat situs web lebih cepat? Mengonversi PNG Anda ke WebP adalah rekomendasi #1 dari Google PageSpeed ​​Insights.",
+            "p2": "Alat kami memampatkan gambar PNG Anda ke dalam format WebP modern, mengurangi ukuran file hingga <strong>30-50%</strong> sekaligus menjaga latar belakang tetap transparan dan kualitasnya tetap tajam.",
             "features": {
                 "smaller": {
-                    "title": "Significantly Smaller",
-                    "desc": "WebP offers superior compression. Save bandwidth and storage space instantly."
+                    "title": "Jauh Lebih Kecil",
+                    "desc": "WebP menawarkan kompresi yang unggul. Menghemat bandwidth dan ruang penyimpanan secara instan."
                 },
                 "transparency": {
-                    "title": "Transparency Kept",
-                    "desc": "Unlike converting to JPG, switching from PNG to WebP preserves your alpha channel (background transparency)."
+                    "title": "Transparansi Terjaga",
+                    "desc": "Tidak seperti mengonversi ke JPG, beralih dari PNG ke WebP mempertahankan saluran alfa Anda (transparansi latar belakang)."
                 },
                 "adjustable": {
-                    "title": "Adjustable Quality",
-                    "desc": "You control the balance. Choose 90% for high quality or 70% for maximum savings."
+                    "title": "Kualitas yang Dapat Disesuaikan",
+                    "desc": "Anda mengontrol keseimbangan. Pilih 90% untuk kualitas tinggi atau 70% untuk penghematan maksimal."
                 }
             },
             "how_to": {
-                "title": "How to Convert?",
+                "title": "Bagaimana Mengonversi?",
                 "list": [
-                    "Drag and drop your file.",
-                    "Use the slider. We recommend 80-90% for a good balance.",
-                    "Click the \"Convert\" button.",
-                    "Your lighter .webp file is ready."
+                    "Seret dan lepas file Anda.",
+                    "Gunakan penggeser. Kami merekomendasikan 80-90% untuk keseimbangan yang baik.",
+                    "Klik tombol \"Konversi\".",
+                    "File .webp ringan Anda sudah siap."
                 ]
             },
             "why": {
-                "title": "Why WebP?",
-                "p1": "WebP is a modern image format developed by Google.",
+                "title": "Mengapa WebP?",
+                "p1": "WebP adalah format gambar modern yang dikembangkan oleh Google.",
                 "list": [
-                    "SEO Boost: Faster sites rank better on Google.",
-                    "Mobile Friendly: Uses less data for mobile visitors.",
-                    "Support: Supported by Chrome, Firefox, Safari, Edge, and all modern browsers."
+                    "Peningkatan SEO: Situs yang lebih cepat mendapat peringkat lebih baik di Google.",
+                    "Ramah Seluler: Menggunakan lebih sedikit data untuk pengunjung seluler.",
+                    "Dukungan: Didukung oleh Chrome, Firefox, Safari, Edge, dan semua browser modern."
                 ]
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid PNG image"
+            "invalid_image": "Harap unggah gambar PNG yang valid"
         }
     },
     "svg-to-jpg-converter": {
         "meta": {
             "title": "Konverter SVG ke JPG - Alat Vektor Online Gratis",
-            "description": "Convert SVG vector files to JPG images online. Auto-fills transparent backgrounds with white for perfect JPG output.",
+            "description": "Konversikan file vektor SVG ke gambar JPG secara online. Mengisi otomatis latar belakang transparan dengan warna putih untuk hasil JPG yang sempurna.",
             "h1": "Konverter SVG ke JPG",
-            "subtitle": "Convert SVG vector files to JPG images online with auto-fill backgrounds"
+            "subtitle": "Konversikan file vektor SVG ke gambar JPG online dengan latar belakang pengisian otomatis"
         },
         "input": {
-            "title": "Upload SVG File",
-            "desc": "Drag & drop your SVG file here",
-            "drop_title": "Drop SVG file here",
-            "drop_desc": "Supports SVG, SVGZ (Max 10MB)"
+            "title": "Unggah Berkas SVG",
+            "desc": "Seret & letakkan file SVG Anda di sini",
+            "drop_title": "Letakkan file SVG di sini",
+            "drop_desc": "Mendukung SVG, SVGZ (Maks 10MB)"
         },
         "editor": {
-            "image_alt": "Preview",
-            "note": "Note:",
-            "note_text": "Transparent backgrounds will be filled with white color.",
-            "output_format": "Output Format:",
-            "scale_label": "Resolution Multiplier (Scale)",
-            "scale_1": "1x (Original Size)",
-            "scale_2": "2x (High Res)",
-            "scale_4": "4x (Ultra Res)",
-            "btn_convert": "Convert to JPG & Download"
+            "image_alt": "Pratinjau",
+            "note": "Catatan:",
+            "note_text": "Latar belakang transparan akan diisi dengan warna putih.",
+            "output_format": "Format Keluaran:",
+            "scale_label": "Pengganda Resolusi (Skala)",
+            "scale_1": "1x (Ukuran Asli)",
+            "scale_2": "2x (Resolusi Tinggi)",
+            "scale_4": "4x (Ultra Resolusi)",
+            "btn_convert": "Konversikan ke JPG & Unduh"
         },
         "content": {
-            "title": "Convert SVG to JPG Format",
-            "p1": "Need to use a logo in a document or on a website that doesn't accept vector files? Our <strong>SVG to JPG Converter</strong> is the answer.",
-            "p2": "It creates a solid, high-compatibility image file from your vector source. We automatically handle transparency by adding a clean white background, ensuring your graphic looks professional on any medium.",
+            "title": "Konversi Format SVG ke JPG",
+            "p1": "Perlu menggunakan logo di dokumen atau di situs web yang tidak menerima file vektor? <strong>Konverter SVG ke JPG</strong> kami adalah jawabannya.",
+            "p2": "Ini menciptakan file gambar yang solid dan memiliki kompatibilitas tinggi dari sumber vektor Anda. Kami secara otomatis menangani transparansi dengan menambahkan latar belakang putih bersih, memastikan grafis Anda terlihat profesional di media apa pun.",
             "features": {
                 "compatibility": {
-                    "title": "Maximum Compatibility",
-                    "desc": "JPG is opened by literally every digital device and software created in the last 30 years."
+                    "title": "Kompatibilitas Maksimum",
+                    "desc": "JPG dibuka oleh setiap perangkat digital dan perangkat lunak yang dibuat dalam 30 tahun terakhir."
                 },
                 "resolution": {
-                    "title": "4x High Resolution",
-                    "desc": "Scale up your SVG before saving to ensure your JPG is sharp, not blurry."
+                    "title": "4x Resolusi Tinggi",
+                    "desc": "Tingkatkan skala SVG Anda sebelum menyimpan untuk memastikan JPG Anda tajam, tidak buram."
                 },
                 "secure": {
-                    "title": "Secure Client-Side",
-                    "desc": "Processing happens in your browser. We never see your files."
+                    "title": "Amankan Sisi Klien",
+                    "desc": "Pemrosesan terjadi di browser Anda. Kami tidak pernah melihat file Anda."
                 }
             },
             "how_to": {
-                "title": "Easy Instructions",
+                "title": "Instruksi Mudah",
                 "list": [
-                    "Click \"Upload\" or drag your file to the center box.",
-                    "Choose a scaling factor (e.g., 2x or 4x) for higher quality results.",
-                    "Observe the image. Note that transparent backgrounds are now white.",
-                    "Click \"Convert to JPG & Download\"."
+                    "Klik \"Unggah\" atau seret file Anda ke kotak tengah.",
+                    "Pilih faktor skala (misalnya, 2x atau 4x) untuk hasil dengan kualitas lebih tinggi.",
+                    "Amati gambarnya. Perhatikan bahwa latar belakang transparan sekarang berwarna putih.",
+                    "Klik \"Konversi ke JPG & Unduh\"."
                 ]
             },
             "why": {
-                "title": "Why choose JPG over PNG for Vectors?",
-                "p1": "While PNG supports transparency, JPG generates smaller file sizes for complex, colorful images.",
+                "title": "Mengapa memilih JPG daripada PNG untuk Vektor?",
+                "p1": "Meskipun PNG mendukung transparansi, JPG menghasilkan ukuran file yang lebih kecil untuk gambar yang kompleks dan berwarna.",
                 "list": [
-                    "Smaller Files: Better for emails and attachments.",
-                    "No Transparency Issues: Some viewers render transparency as black. JPG forces a white background, ensuring your logo is legible."
+                    "File Lebih Kecil: Lebih baik untuk email dan lampiran.",
+                    "Tidak Ada Masalah Transparansi: Beberapa pemirsa menganggap transparansi sebagai warna hitam. JPG memaksakan latar belakang putih, memastikan logo Anda dapat dibaca."
                 ]
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid SVG image"
+            "invalid_image": "Harap unggah gambar SVG yang valid"
         }
     },
     "svg-to-png-converter": {
         "meta": {
             "title": "Konverter SVG ke PNG - Alat Raster Online Gratis",
-            "description": "Convert Scalable Vector Graphics (SVG) to PNG images instantly. Perfect for ensuring compatibility with applications that don't support vector files.",
+            "description": "Konversikan Scalable Vector Graphics (SVG) ke gambar PNG secara instan. Sempurna untuk memastikan kompatibilitas dengan aplikasi yang tidak mendukung file vektor.",
             "h1": "Konverter SVG ke PNG",
-            "subtitle": "Convert Scalable Vector Graphics (SVG) to PNG images instantly"
+            "subtitle": "Konversikan Scalable Vector Graphics (SVG) ke gambar PNG secara instan"
         },
         "input": {
-            "title": "Upload SVG File",
-            "desc": "Drag & drop your SVG file here",
-            "drop_title": "Drop SVG file here",
-            "drop_desc": "Supports SVG, SVGZ (Max 10MB)"
+            "title": "Unggah Berkas SVG",
+            "desc": "Seret & letakkan file SVG Anda di sini",
+            "drop_title": "Letakkan file SVG di sini",
+            "drop_desc": "Mendukung SVG, SVGZ (Maks 10MB)"
         },
         "editor": {
-            "image_alt": "Preview",
-            "checkerboard": "Checkerboard background indicates transparency",
-            "output_format": "Output Format:",
-            "scale_label": "Resolution Multiplier (Scale)",
-            "scale_1": "1x (Original Size)",
-            "scale_2": "2x (High Res)",
-            "scale_4": "4x (Ultra Res)",
-            "btn_convert": "Convert to PNG & Download"
+            "image_alt": "Pratinjau",
+            "checkerboard": "Latar belakang kotak-kotak menunjukkan transparansi",
+            "output_format": "Format Keluaran:",
+            "scale_label": "Pengganda Resolusi (Skala)",
+            "scale_1": "1x (Ukuran Asli)",
+            "scale_2": "2x (Resolusi Tinggi)",
+            "scale_4": "4x (Ultra Resolusi)",
+            "btn_convert": "Konversikan ke PNG & Unduh"
         },
         "content": {
-            "title": "Rasterize SVG to PNG High-Res",
-            "p1": "Scalable Vector Graphics (SVG) are perfect for the web, but impossible to use on social media, in Word documents, or as email attachments.",
-            "p2": "Our <strong>SVG to PNG Converter</strong> allows you to turn your vector logo or icon into a high-quality, transparent PNG image. With our unique <strong>scaling feature</strong>, you can produce ultra-high-resolution images without any pixelation.",
+            "title": "Rasterisasi SVG ke PNG Resolusi Tinggi",
+            "p1": "Scalable Vector Graphics (SVG) sempurna untuk web, namun tidak mungkin digunakan di media sosial, dokumen Word, atau sebagai lampiran email.",
+            "p2": "<strong>Konverter SVG ke PNG</strong> kami memungkinkan Anda mengubah logo atau ikon vektor menjadi gambar PNG transparan berkualitas tinggi. Dengan <strong>fitur penskalaan</strong> unik kami, Anda dapat menghasilkan gambar beresolusi sangat tinggi tanpa pikselasi apa pun.",
             "features": {
                 "transparency": {
-                    "title": "Transparency Preserved",
-                    "desc": "Unlike JPG, PNG keeps the background transparent. Perfect for logos and overlays."
+                    "title": "Transparansi Terpelihara",
+                    "desc": "Berbeda dengan JPG, PNG menjaga latar belakang tetap transparan. Sempurna untuk logo dan overlay."
                 },
                 "scaling": {
-                    "title": "Up to 4x Scaling",
-                    "desc": "Export at 4x the original size. Get crisp edges even for large print formats."
+                    "title": "Penskalaan hingga 4x",
+                    "desc": "Ekspor dengan ukuran 4x ukuran aslinya. Dapatkan tepian yang tajam bahkan untuk format pencetakan besar."
                 },
                 "browser": {
-                    "title": "Browser-Based",
-                    "desc": "Fast and secure. No files are uploaded to any server."
+                    "title": "Berbasis Browser",
+                    "desc": "Cepat dan aman. Tidak ada file yang diunggah ke server mana pun."
                 }
             },
             "how_to": {
-                "title": "How to Convert SVG to PNG?",
+                "title": "Bagaimana Mengonversi SVG ke PNG?",
                 "list": [
-                    "Drop your `.svg` file into the upload area.",
-                    "Select `1x`, `2x`, or `4x` from the dropdown. Higher is better for quality.",
-                    "Check the preview image on the left. The checkerboard indicates transparency.",
-                    "Hit the button to generate and download your PNG."
+                    "Letakkan file `.svg` Anda ke area unggah.",
+                    "Pilih `1x`, `2x`, atau `4x` dari dropdown. Lebih tinggi lebih baik untuk kualitas.",
+                    "Periksa gambar pratinjau di sebelah kiri. Papan catur menunjukkan transparansi.",
+                    "Tekan tombol untuk membuat dan mengunduh PNG Anda."
                 ]
             },
             "why": {
-                "title": "Why Convert Vectors?",
-                "p1": "Vectors are mathematical formulas, while PNGs are grids of pixels. You need pixels for:",
+                "title": "Mengapa Mengonversi Vektor?",
+                "p1": "Vektor adalah rumus matematika, sedangkan PNG adalah kisi-kisi piksel. Anda memerlukan piksel untuk:",
                 "list": [
-                    "Profile pictures (Twitter/LinkedIn often reject SVG).",
-                    "Embedding in emails (SVG support is poor).",
-                    "Using in video editors or simple graphic tools (Canva, Paint)."
+                    "Gambar profil (Twitter/LinkedIn sering menolak SVG).",
+                    "Menyematkan dalam email (dukungan SVG buruk).",
+                    "Menggunakan editor video atau alat grafis sederhana (Canva, Paint)."
                 ]
             },
             "faq": {
-                "title": "",
-                "q1": "",
-                "a1": "",
-                "q2": "",
-                "a2": ""
+                "title": "Pertanyaan yang Sering Diajukan",
+                "q1": "Mengapa mengonversi SVG ke PNG?",
+                "a1": "Format PNG didukung secara universal di semua browser dan aplikasi, sementara SVG mungkin memiliki masalah kompatibilitas. Mengonversi ke PNG berguna untuk tanda tangan email, media sosial, dan aplikasi yang tidak mendukung grafik vektor.",
+                "q2": "Apakah PNG mendukung transparansi seperti SVG?",
+                "a2": "Ya! PNG mendukung transparansi, sehingga cocok untuk logo dan grafik dengan latar belakang transparan. Konverter kami menjaga transparansi saat mengkonversi dari SVG ke PNG."
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid SVG image"
+            "invalid_image": "Harap unggah gambar SVG yang valid"
         }
     },
     "webp-to-jpg-converter": {
         "meta": {
             "title": "Konverter WebP ke JPG - Alat Gambar Online Gratis",
-            "description": "Convert WebP images to standard JPG format for broad compatibility. Free, fast, and secure converter.",
+            "description": "Konversikan gambar WebP ke format JPG standar untuk kompatibilitas luas. Konverter gratis, cepat, dan aman.",
             "h1": "Konverter WebP ke JPG",
-            "subtitle": "Convert WebP images to standard JPG format for broad compatibility"
+            "subtitle": "Konversikan gambar WebP ke format JPG standar untuk kompatibilitas luas"
         },
         "input": {
-            "title": "Upload WEBP Image",
-            "desc": "Drag & drop your WEBP file here",
-            "drop_title": "Drop WEBP file here",
-            "drop_desc": "Supports WEBP (Max 10MB)"
+            "title": "Unggah Gambar WEBP",
+            "desc": "Seret & letakkan file WEBP Anda di sini",
+            "drop_title": "Letakkan file WEBP di sini",
+            "drop_desc": "Mendukung WEBP (Maks 10MB)"
         },
         "editor": {
-            "image_alt": "Preview",
-            "note": "Note:",
-            "note_text": "Transparent backgrounds (common in WEBP) will be verified to white.",
-            "output_format": "Output Format:",
-            "btn_convert": "Convert to JPG & Download"
+            "image_alt": "Pratinjau",
+            "note": "Catatan:",
+            "note_text": "Latar belakang transparan (umum di WEBP) akan diverifikasi menjadi putih.",
+            "output_format": "Format Keluaran:",
+            "btn_convert": "Konversikan ke JPG & Unduh"
         },
         "content": {
-            "title": "WebP to JPG: The Compatibility Fixer",
-            "p1": "WebP is fantastic for website speed, but it's a pain when you try to open it in Photoshop, older image viewers, or upload it to platforms that only accept JPG.",
-            "p2": "Our <strong>WebP to JPG Converter</strong> bridges this gap. It takes your highly optimized WebP images and transforms them into the universally compatible JPEG format in milliseconds.",
+            "title": "WebP ke JPG: Pemecah Kompatibilitas",
+            "p1": "WebP luar biasa untuk kecepatan situs web, tetapi menyusahkan saat Anda mencoba membukanya di Photoshop, penampil gambar lama, atau mengunggahnya ke platform yang hanya menerima JPG.",
+            "p2": "<strong>Konverter WebP ke JPG</strong> kami menjembatani kesenjangan ini. Dibutuhkan gambar WebP Anda yang sangat optimal dan mengubahnya menjadi format JPEG yang kompatibel secara universal dalam milidetik.",
             "features": {
                 "universal": {
-                    "title": "Universal Support",
-                    "desc": "JPG works everywhere: Word docs, PowerPoint, legacy software, and every social media platform."
+                    "title": "Dukungan Universal",
+                    "desc": "JPG dapat digunakan di mana saja: dokumen Word, PowerPoint, perangkat lunak lama, dan semua platform media sosial."
                 },
                 "secure": {
-                    "title": "Secure Processing",
-                    "desc": "We don't see your files. The conversion is performed locally by your web browser."
+                    "title": "Pemrosesan Aman",
+                    "desc": "Kami tidak melihat file Anda. Konversi dilakukan secara lokal oleh browser web Anda."
                 },
                 "smart": {
-                    "title": "Smart Backgrounds",
-                    "desc": "Automatically detects transparent pixels in WebP and fills them with a clean white background."
+                    "title": "Latar Belakang Cerdas",
+                    "desc": "Secara otomatis mendeteksi piksel transparan di WebP dan mengisinya dengan latar belakang putih bersih."
                 }
             },
             "how_to": {
-                "title": "Step-by-Step Guide",
+                "title": "Panduan Langkah demi Langkah",
                 "list": [
-                    "Click the box or drag your WebP image onto the page.",
-                    "The tool will display a preview of your image.",
-                    "Click the \"Convert to JPG\" button. The system handles transparency and compression automatically.",
-                    "Your new .jpg file will download instantly."
+                    "Klik kotak atau seret gambar WebP Anda ke halaman.",
+                    "Alat ini akan menampilkan pratinjau gambar Anda.",
+                    "Klik tombol \"Konversi ke JPG\". Sistem menangani transparansi dan kompresi secara otomatis.",
+                    "File .jpg baru Anda akan langsung diunduh."
                 ]
             },
             "why": {
-                "title": "Why Convert WebP?",
+                "title": "Mengapa Mengonversi WebP?",
                 "list": [
-                    "Editing: Many desktop editors typically don't support WebP out of the box.",
-                    "Email: Outlook and other email clients might not render WebP inline images correctly.",
-                    "Printing: Print shops often require standard JPG or TIFF files."
+                    "Pengeditan: Banyak editor desktop biasanya tidak mendukung WebP.",
+                    "Email: Outlook dan klien email lainnya mungkin tidak merender gambar sebaris WebP dengan benar.",
+                    "Percetakan: Toko percetakan sering kali memerlukan file JPG atau TIFF standar."
                 ]
             },
             "faq": {
-                "title": "FAQ",
-                "q1": "What happens to transparent backgrounds?",
-                "a1": "Since JPG doesn't support transparency, our tool replaces transparent areas with white. This is perfect for product photos and logos.",
-                "q2": "Is it safe?",
-                "a2": "Yes. Unlike other converters that upload your file to a server, this tool runs 100% on your device. Your data remains private."
+                "title": "Pertanyaan Umum",
+                "q1": "Apa yang terjadi pada latar belakang transparan?",
+                "a1": "Karena JPG tidak mendukung transparansi, alat kami mengganti area transparan dengan warna putih. Ini sempurna untuk foto dan logo produk.",
+                "q2": "Apakah aman?",
+                "a2": "Ya. Tidak seperti konverter lain yang mengunggah file Anda ke server, alat ini berjalan 100% di perangkat Anda. Data Anda tetap pribadi."
             }
         },
         "js": {
-            "invalid_image": "Please upload a valid WEBP image"
+            "invalid_image": "Harap unggah gambar WEBP yang valid"
         }
     }
 }

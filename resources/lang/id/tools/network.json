@@ -2,734 +2,734 @@
     "dns-lookup": {
         "meta": {
             "title": "Alat Pencarian DNS - Pemeriksa Catatan DNS Online Gratis",
-            "description": "Free DNS lookup tool to check DNS records for any domain. View A, AAAA, MX, NS, TXT, CNAME records instantly. Essential for troubleshooting email and domain configuration.",
+            "description": "Alat pencarian DNS gratis untuk memeriksa catatan DNS untuk domain apa pun. Lihat data A, AAAA, MX, NS, TXT, CNAME secara instan. Penting untuk memecahkan masalah konfigurasi email dan domain.",
             "h1": "Alat Pencarian DNS",
-            "subtitle": "Query DNS records to find nameservers, MX, A, CNAME & TXT records instantly"
+            "subtitle": "Kueri data DNS untuk menemukan data server nama, MX, A, CNAME & TXT secara instan"
         },
         "form": {
-            "domain_label": "Domain Name",
-            "domain_placeholder": "example.com",
-            "button": "Lookup DNS"
+            "domain_label": "Nama Domain",
+            "domain_placeholder": "contoh.com",
+            "button": "Cari DNS"
         },
         "results": {
-            "title": ""
+            "title": "Catatan DNS"
         },
         "content": {
-            "what_is_title": "What is DNS Lookup?",
-            "what_is_desc": "DNS Lookup is a tool that queries Domain Name System servers to retrieve DNS records for a domain. DNS records contain important information about how a domain is configured, including mail servers (MX records), nameservers (NS records), IP addresses (A/AAAA records), and text records (TXT records) used for verification and security.",
-            "why_use_title": "Why Use DNS Lookup?",
-            "why_use_desc": "DNS Lookup is essential for troubleshooting email delivery issues, verifying domain configuration, checking nameserver settings, validating SPF and DKIM records, and understanding how a domain is set up. It's used by system administrators, web developers, and IT professionals daily.",
-            "record_types_title": "DNS Record Types",
-            "a_record": "<strong>A Record:</strong> Maps domain to IPv4 address",
-            "aaaa_record": "<strong>AAAA Record:</strong> Maps domain to IPv6 address",
-            "mx_record": "<strong>MX Record:</strong> Mail server information",
-            "ns_record": "<strong>NS Record:</strong> Nameserver information",
-            "txt_record": "<strong>TXT Record:</strong> Text records for verification",
-            "cname_record": "<strong>CNAME Record:</strong> Canonical name alias"
+            "what_is_title": "Apa itu Pencarian DNS?",
+            "what_is_desc": "Pencarian DNS adalah alat yang menanyakan server Sistem Nama Domain untuk mengambil catatan DNS untuk suatu domain. Catatan DNS berisi informasi penting tentang cara domain dikonfigurasi, termasuk server email (catatan MX), server nama (catatan NS), alamat IP (catatan A/AAAA), dan catatan teks (catatan TXT) yang digunakan untuk verifikasi dan keamanan.",
+            "why_use_title": "Mengapa Menggunakan Pencarian DNS?",
+            "why_use_desc": "Pencarian DNS sangat penting untuk memecahkan masalah pengiriman email, memverifikasi konfigurasi domain, memeriksa pengaturan server nama, memvalidasi data SPF dan DKIM, dan memahami cara penyiapan domain. Ini digunakan oleh administrator sistem, pengembang web, dan profesional TI setiap hari.",
+            "record_types_title": "Jenis Catatan DNS",
+            "a_record": "<strong>Catatan:</strong> Memetakan domain ke alamat IPv4",
+            "aaaa_record": "<strong>Catatan AAAA:</strong> Memetakan domain ke alamat IPv6",
+            "mx_record": "<strong>Catatan MX:</strong> Informasi server email",
+            "ns_record": "<strong>Catatan NS:</strong> Informasi server nama",
+            "txt_record": "<strong>Catatan TXT:</strong> Catatan teks untuk verifikasi",
+            "cname_record": "<strong>Catatan CNAME:</strong> Nama alias kanonis"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu pencarian DNS?",
+            "a1": "Pencarian DNS adalah proses menanyakan server Sistem Nama Domain untuk mengambil catatan DNS untuk suatu domain. Ini menerjemahkan nama domain yang dapat dibaca manusia menjadi alamat IP dan memberikan informasi tentang server email, server nama, dan konfigurasi DNS lainnya.",
+            "q2": "Apa saja jenis data DNS yang berbeda?",
+            "a2": "Jenis catatan DNS yang umum mencakup A (alamat IPv4), AAAA (alamat IPv6), MX (server email), CNAME (alias), TXT (data teks), NS (server nama), dan SOA (otoritas awal). Setiap jenis catatan memiliki tujuan tertentu dalam konfigurasi domain.",
+            "q3": "Berapa lama waktu yang dibutuhkan untuk propagasi DNS?",
+            "a3": "Propagasi DNS biasanya memerlukan waktu 24-48 jam secara global, meskipun perubahan dapat muncul dalam beberapa menit di beberapa server. Waktunya bergantung pada pengaturan TTL (Time To Live) dan seberapa cepat server DNS menyegarkan cache-nya.",
+            "q4": "Mengapa pencarian DNS saya gagal?",
+            "a4": "Kegagalan pencarian DNS dapat terjadi karena nama domain yang salah, masalah server DNS, pemblokiran firewall, atau domain tidak dikonfigurasi dengan benar. Periksa ejaan domain Anda dan pastikan data DNS Anda disiapkan dengan benar.",
+            "q5": "Bisakah saya mencari data DNS untuk domain apa pun?",
+            "a5": "Ya, Anda dapat melakukan pencarian DNS untuk domain mana pun yang terdaftar secara publik. Namun, beberapa organisasi mungkin membatasi permintaan DNS tertentu untuk alasan keamanan."
         },
         "js": {
-            "looking_up": "",
-            "records_label": "",
-            "success": "",
-            "error": "",
-            "lookup_dns": ""
+            "looking_up": "Mencari catatan DNS...",
+            "records_label": "Catatan DNS",
+            "success": "Pencarian DNS berhasil diselesaikan",
+            "error": "Gagal mencari data DNS",
+            "lookup_dns": "Cari DNS"
         }
     },
     "domain-to-ip": {
         "meta": {
             "title": "Konverter Domain ke IP - Alat DNS Online Gratis",
-            "description": "Free domain to IP lookup tool. Instantly convert any domain name to its IP address. Essential for network troubleshooting, server configuration, and DNS verification.",
+            "description": "Alat pencarian domain ke IP gratis. Konversikan nama domain apa pun secara instan ke alamat IP-nya. Penting untuk pemecahan masalah jaringan, konfigurasi server, dan verifikasi DNS.",
             "h1": "Konverter Domain ke IP",
-            "subtitle": "Resolve domain names to IP addresses with detailed DNS information"
+            "subtitle": "Selesaikan nama domain menjadi alamat IP dengan informasi DNS terperinci"
         },
         "form": {
-            "domain_label": "Enter Domain Name",
-            "domain_placeholder": "example.com",
-            "domain_hint": "Enter domain without http:// or https://",
-            "button": "Lookup IP Address"
+            "domain_label": "Masukkan Nama Domain",
+            "domain_placeholder": "contoh.com",
+            "domain_hint": "Masukkan domain tanpa http:// atau https://",
+            "button": "Alamat IP Pencarian"
         },
         "results": {
-            "title": "",
-            "domain_label": "",
-            "ip_label": ""
+            "title": "Hasil Alamat IP",
+            "domain_label": "Domain",
+            "ip_label": "Alamat IP"
         },
         "content": {
-            "main_title": "Domain to IP Converter",
-            "main_subtitle": "Convert any domain name to its IP address instantly",
-            "intro": "Our free Domain to IP tool instantly converts any domain name to its corresponding IP address using DNS lookup. Essential for network administrators, web developers, security professionals, and anyone needing to identify the server behind a domain. Get accurate IP addresses for troubleshooting, server verification, and network configuration.",
-            "feature1_title": "Instant Lookup",
-            "feature1_desc": "Get IP addresses immediately without delays",
-            "feature2_title": "Accurate Results",
-            "feature2_desc": "Real-time DNS queries for current IP addresses",
-            "feature3_title": "100% Free",
-            "feature3_desc": "Unlimited lookups with no registration required",
-            "what_is_title": "🌐 What is Domain to IP Lookup?",
-            "what_is_desc": "Domain to IP lookup is the process of converting a human-readable domain name (like example.com) into its corresponding numerical IP address (like 93.184.216.34). This conversion happens through DNS (Domain Name System) servers, which act as the internet's phone book. Every website has an IP address, but domain names make them easier to remember and access.",
-            "use_cases_title": "🎯 Common Use Cases",
-            "uc1_title": "Server Configuration",
-            "uc1_desc": "Configure firewalls, whitelists, and server settings with IP addresses",
-            "uc2_title": "Security Analysis",
-            "uc2_desc": "Verify server locations and identify hosting providers",
-            "uc3_title": "Troubleshooting",
-            "uc3_desc": "Diagnose DNS issues and verify domain configurations",
-            "uc4_title": "Network Monitoring",
-            "uc4_desc": "Track server changes and monitor infrastructure",
-            "uc5_title": "Geolocation",
-            "uc5_desc": "Determine server geographic location from IP address",
-            "uc6_title": "API Integration",
-            "uc6_desc": "Use IP addresses for direct API connections",
-            "pro_tips_title": "💡 Pro Tips: Using Domain to IP Lookup",
-            "tip1": "✅ Use IP addresses for direct server connections when DNS is slow",
-            "tip2": "✅ Verify CDN configurations by checking multiple domain resolutions",
-            "tip3": "✅ Whitelist server IPs in firewalls for secure access",
-            "tip4": "✅ Compare IP addresses before and after DNS changes",
-            "tip5": "✅ Identify shared hosting by checking if multiple domains share IPs"
+            "main_title": "Konverter Domain ke IP",
+            "main_subtitle": "Ubah nama domain apa pun menjadi alamat IP secara instan",
+            "intro": "Alat Domain ke IP gratis kami secara instan mengonversi nama domain apa pun ke alamat IP yang sesuai menggunakan pencarian DNS. Penting bagi administrator jaringan, pengembang web, profesional keamanan, dan siapa pun yang perlu mengidentifikasi server di belakang domain. Dapatkan alamat IP yang akurat untuk pemecahan masalah, verifikasi server, dan konfigurasi jaringan.",
+            "feature1_title": "Pencarian Instan",
+            "feature1_desc": "Dapatkan alamat IP segera tanpa penundaan",
+            "feature2_title": "Hasil Akurat",
+            "feature2_desc": "Kueri DNS waktu nyata untuk alamat IP saat ini",
+            "feature3_title": "100% Gratis",
+            "feature3_desc": "Pencarian tanpa batas tanpa perlu registrasi",
+            "what_is_title": "🌐 Apa itu Pencarian Domain ke IP?",
+            "what_is_desc": "Pencarian domain ke IP adalah proses mengubah nama domain yang dapat dibaca manusia (seperti example.com) menjadi alamat IP numerik yang sesuai (seperti 93.184.216.34). Konversi ini terjadi melalui server DNS (Domain Name System), yang bertindak sebagai buku telepon internet. Setiap situs web memiliki alamat IP, namun nama domain membuatnya lebih mudah diingat dan diakses.",
+            "use_cases_title": "🎯 Kasus Penggunaan Umum",
+            "uc1_title": "Konfigurasi Server",
+            "uc1_desc": "Konfigurasikan firewall, daftar putih, dan pengaturan server dengan alamat IP",
+            "uc2_title": "Analisis Keamanan",
+            "uc2_desc": "Verifikasi lokasi server dan identifikasi penyedia hosting",
+            "uc3_title": "Pemecahan masalah",
+            "uc3_desc": "Diagnosis masalah DNS dan verifikasi konfigurasi domain",
+            "uc4_title": "Pemantauan Jaringan",
+            "uc4_desc": "Lacak perubahan server dan pantau infrastruktur",
+            "uc5_title": "Geolokasi",
+            "uc5_desc": "Tentukan lokasi geografis server dari alamat IP",
+            "uc6_title": "Integrasi API",
+            "uc6_desc": "Gunakan alamat IP untuk koneksi API langsung",
+            "pro_tips_title": "💡 Tips Pro: Menggunakan Pencarian Domain ke IP",
+            "tip1": "✅ Gunakan alamat IP untuk koneksi server langsung saat DNS lambat",
+            "tip2": "✅ Verifikasi konfigurasi CDN dengan memeriksa beberapa resolusi domain",
+            "tip3": "✅ Daftar putih IP server di firewall untuk akses aman",
+            "tip4": "✅ Bandingkan alamat IP sebelum dan sesudah perubahan DNS",
+            "tip5": "✅ Identifikasi hosting bersama dengan memeriksa apakah beberapa domain berbagi IP"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa yang dimaksud dengan pencarian domain ke IP?",
+            "a1": "Pencarian domain ke IP mengubah nama domain (seperti example.com) menjadi alamat IP yang sesuai. Hal ini penting untuk memahami di mana situs web dihosting dan untuk pemecahan masalah jaringan.",
+            "q2": "Bisakah satu domain memiliki beberapa alamat IP?",
+            "a2": "Ya, domain dapat memiliki beberapa alamat IP untuk penyeimbangan beban, redundansi, atau menyajikan konten berbeda berdasarkan lokasi geografis. Hal ini umum terjadi pada situs web dan CDN besar.",
+            "q3": "Apa perbedaan antara IPv4 dan IPv6?",
+            "a3": "IPv4 menggunakan alamat 32-bit (seperti 192.168.1.1) dan mendukung sekitar 4,3 miliar alamat. IPv6 menggunakan alamat 128-bit (seperti 2001:0db8:85a3::8a2e:0370:7334) dan menyediakan alamat yang hampir tidak terbatas untuk pertumbuhan internet di masa depan.",
+            "q4": "Mengapa saya perlu mencari alamat IP domain?",
+            "a4": "Menemukan alamat IP domain berguna untuk memecahkan masalah jaringan, mengonfigurasi firewall, menyiapkan akses server, memverifikasi konfigurasi DNS, atau mengidentifikasi penyedia hosting dan lokasi server.",
+            "q5": "Apakah alamat IP sama dengan lokasi server?",
+            "a5": "Alamat IP menunjukkan di mana server dihosting, namun dengan CDN dan cloud hosting, lokasi server fisik mungkin berbeda dari geolokasi IP. Banyak situs web menggunakan banyak server di seluruh dunia."
         },
         "js": {
-            "looking_up": "",
-            "error_failed": ""
+            "looking_up": "Mencari alamat IP...",
+            "error_failed": "Gagal menyelesaikan domain ke alamat IP"
         }
     },
     "internet-speed-test": {
         "meta": {
             "title": "Tes Kecepatan Internet - Pemeriksa Koneksi Online Gratis",
-            "description": "Test your internet speed for free. Check download speed, upload speed, and ping instantly.",
+            "description": "Uji kecepatan internet Anda secara gratis. Periksa kecepatan unduh, kecepatan unggah, dan ping secara instan.",
             "h1": "Tes Kecepatan Internet",
-            "subtitle": "Test your internet connection speed instantly"
+            "subtitle": "Uji kecepatan koneksi internet Anda secara instan"
         },
         "editor": {
-            "btn_start": "Start Speed Test",
-            "status_init": "Initializing test...",
-            "label_download": "Download Speed",
-            "label_upload": "Upload Speed",
+            "btn_start": "Mulai Tes Kecepatan",
+            "status_init": "Menginisialisasi pengujian...",
+            "label_download": "Kecepatan Unduh",
+            "label_upload": "Kecepatan Unggah",
             "label_ping": "Ping",
-            "label_quality": "Connection Quality",
-            "btn_retry": "Test Again",
-            "status_ping": "Testing ping...",
-            "status_download": "Testing download speed...",
-            "status_upload": "Testing upload speed...",
-            "quality_val_excellent": "Excellent",
-            "quality_val_very_good": "Very Good",
-            "quality_val_good": "Good",
-            "quality_val_fair": "Fair",
-            "quality_val_poor": "Poor"
+            "label_quality": "Kualitas Koneksi",
+            "btn_retry": "Uji Lagi",
+            "status_ping": "Menguji ping...",
+            "status_download": "Menguji kecepatan unduh...",
+            "status_upload": "Menguji kecepatan unggah...",
+            "quality_val_excellent": "Bagus sekali",
+            "quality_val_very_good": "Sangat bagus",
+            "quality_val_good": "Bagus",
+            "quality_val_fair": "Adil",
+            "quality_val_poor": "Miskin"
         },
         "content": {
-            "p1": "Test your internet connection speed with our free, accurate speed test tool. Measure your download speed, upload speed, and ping latency in seconds. Perfect for troubleshooting slow connections, verifying ISP speeds, or checking if you're getting what you pay for.",
-            "metrics_title": "Understanding Speed Test Metrics",
-            "req_title": "Requirements for Accurate Testing",
+            "p1": "Uji kecepatan koneksi internet Anda dengan alat uji kecepatan gratis dan akurat kami. Ukur kecepatan unduh, kecepatan unggah, dan latensi ping Anda dalam hitungan detik. Sempurna untuk memecahkan masalah koneksi yang lambat, memverifikasi kecepatan ISP, atau memeriksa apakah Anda mendapatkan apa yang Anda bayar.",
+            "metrics_title": "Memahami Metrik Tes Kecepatan",
+            "req_title": "Persyaratan untuk Pengujian yang Akurat",
             "req_list": [
-                "Close all other applications and browser tabs",
-                "Connect via Ethernet cable for most accurate results",
-                "Disable VPN or proxy services temporarily",
-                "Ensure no downloads or uploads are running",
-                "Test multiple times at different times of day"
+                "Tutup semua aplikasi dan tab browser lainnya",
+                "Terhubung melalui kabel Ethernet untuk hasil paling akurat",
+                "Nonaktifkan layanan VPN atau proxy untuk sementara",
+                "Pastikan tidak ada unduhan atau unggahan yang berjalan",
+                "Uji beberapa kali pada waktu yang berbeda dalam sehari"
             ],
-            "why_title": "Why Test Your Internet Speed?",
+            "why_title": "Mengapa Menguji Kecepatan Internet Anda?",
             "why_list": [
-                "Verify you're getting the speed you're paying for",
-                "Troubleshoot slow connection issues",
-                "Compare different ISP plans before switching",
-                "Optimize your network setup",
-                "Document speed for ISP support tickets",
-                "Test Wi-Fi vs Ethernet performance"
+                "Pastikan Anda mendapatkan kecepatan yang Anda bayar",
+                "Memecahkan masalah koneksi yang lambat",
+                "Bandingkan paket ISP yang berbeda sebelum beralih",
+                "Optimalkan pengaturan jaringan Anda",
+                "Kecepatan dokumen untuk tiket dukungan ISP",
+                "Uji kinerja Wi-Fi vs Ethernet"
             ],
-            "factors_title": "Factors Affecting Your Speed",
-            "improve_title": "How to Improve Your Speed",
+            "factors_title": "Faktor yang Mempengaruhi Kecepatan Anda",
+            "improve_title": "Cara Meningkatkan Kecepatan Anda",
             "improve_list": [
-                "Use Ethernet cable instead of Wi-Fi when possible",
-                "Place router in central location away from walls",
-                "Upgrade to a modern router that supports your speed tier",
-                "Close bandwidth-heavy applications",
-                "Update router firmware regularly",
-                "Consider upgrading your internet plan",
-                "Use Quality of Service (QoS) settings on router"
+                "Gunakan kabel Ethernet alih-alih Wi-Fi jika memungkinkan",
+                "Tempatkan router di lokasi pusat, jauh dari dinding",
+                "Tingkatkan ke router modern yang mendukung tingkat kecepatan Anda",
+                "Tutup aplikasi yang membutuhkan banyak bandwidth",
+                "Perbarui firmware router secara teratur",
+                "Pertimbangkan untuk meningkatkan paket internet Anda",
+                "Gunakan pengaturan Quality of Service (QoS) pada router"
             ],
-            "tips_title": "Pro Tips for Accurate Results",
+            "tips_title": "Kiat Pro untuk Hasil yang Akurat",
             "tips_list": [
-                "Test at different times of day to see variations",
-                "Run multiple tests and average the results",
-                "Test on different devices to rule out device issues",
-                "Compare Wi-Fi speeds at different locations in your home"
+                "Uji pada waktu yang berbeda dalam sehari untuk melihat variasi",
+                "Jalankan beberapa tes dan ratakan hasilnya",
+                "Uji pada perangkat yang berbeda untuk mengesampingkan masalah perangkat",
+                "Bandingkan kecepatan Wi-Fi di berbagai lokasi di rumah Anda"
             ],
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "metrics": {
                 "download": {
-                    "title": "Download Speed",
-                    "desc": "How fast data travels from the internet to your device. Important for streaming, browsing, and downloading files."
+                    "title": "Kecepatan Unduh",
+                    "desc": "Seberapa cepat data berpindah dari internet ke perangkat Anda. Penting untuk streaming, browsing, dan mengunduh file."
                 },
                 "upload": {
-                    "title": "Upload Speed",
-                    "desc": "How fast data travels from your device to the internet. Important for video calls, uploading files, and live streaming."
+                    "title": "Kecepatan Unggah",
+                    "desc": "Seberapa cepat data berpindah dari perangkat Anda ke internet. Penting untuk panggilan video, mengunggah file, dan streaming langsung."
                 },
                 "ping": {
-                    "title": "Ping (Latency)",
-                    "desc": "Response time of your connection. Lower is better. Important for gaming and real-time applications."
+                    "title": "Ping (Latensi)",
+                    "desc": "Waktu respons koneksi Anda. Lebih rendah lebih baik. Penting untuk game dan aplikasi real-time."
                 }
             },
             "factors": {
                 "congestion": {
-                    "title": "Network Congestion",
-                    "desc": "Peak usage times can slow down your connection as more users share bandwidth."
+                    "title": "Kemacetan Jaringan",
+                    "desc": "Waktu penggunaan puncak dapat memperlambat koneksi Anda karena semakin banyak pengguna yang berbagi bandwidth."
                 },
                 "wifi": {
-                    "title": "Wi-Fi Signal",
-                    "desc": "Distance from router, walls, and interference from other devices affect wireless speeds."
+                    "title": "Sinyal Wi-Fi",
+                    "desc": "Jarak dari router, dinding, dan gangguan dari perangkat lain memengaruhi kecepatan nirkabel."
                 },
                 "device": {
-                    "title": "Device Performance",
-                    "desc": "Older devices or those running many programs may not achieve full speeds."
+                    "title": "Kinerja Perangkat",
+                    "desc": "Perangkat lama atau yang menjalankan banyak program mungkin tidak mencapai kecepatan penuh."
                 },
                 "router": {
-                    "title": "Router Quality",
-                    "desc": "Outdated routers may not support your full internet speed capabilities."
+                    "title": "Kualitas Perute",
+                    "desc": "Router yang ketinggalan jaman mungkin tidak mendukung kemampuan kecepatan internet Anda secara penuh."
                 }
             },
             "faq": {
-                "q1": "What is a good internet speed?",
-                "a1": "For general browsing and streaming: 25+ Mbps. For 4K streaming and gaming: 50+ Mbps. For multiple users and heavy usage: 100+ Mbps. For remote work and large households: 200+ Mbps.",
-                "q2": "Why is my speed slower than advertised?",
-                "a2": "ISPs advertise \"up to\" speeds. Actual speeds depend on network congestion, Wi-Fi quality, distance from router, and device capabilities. Test with Ethernet for most accurate results.",
-                "q3": "What's the difference between Mbps and MBps?",
-                "a3": "Mbps (megabits per second) is used for internet speeds. MBps (megabytes per second) is used for file sizes. 1 MBps = 8 Mbps. A 100 Mbps connection downloads at about 12.5 MBps.",
-                "q4": "How accurate is this speed test?",
-                "a4": "Our speed test provides accurate results by measuring real data transfer. For best accuracy, close other applications, use Ethernet, and run multiple tests.",
-                "q5": "Should I test with Wi-Fi or Ethernet?",
-                "a5": "Test with Ethernet to measure your true internet speed. Test with Wi-Fi to diagnose wireless issues. Comparing both helps identify if problems are with your internet or Wi-Fi."
+                "q1": "Berapa kecepatan internet yang bagus?",
+                "a1": "Untuk penelusuran dan streaming umum: 25+ Mbps. Untuk streaming dan bermain game 4K: 50+ Mbps. Untuk banyak pengguna dan penggunaan berat: 100+ Mbps. Untuk pekerjaan jarak jauh dan rumah tangga besar: 200+ Mbps.",
+                "q2": "Mengapa kecepatan saya lebih lambat dari yang diiklankan?",
+                "a2": "ISP mengiklankan kecepatan \"hingga\". Kecepatan sebenarnya bergantung pada kemacetan jaringan, kualitas Wi-Fi, jarak dari router, dan kemampuan perangkat. Uji dengan Ethernet untuk hasil paling akurat.",
+                "q3": "Apa perbedaan antara Mbps dan MBps?",
+                "a3": "Mbps (megabit per detik) digunakan untuk kecepatan internet. MBps (megabyte per detik) digunakan untuk ukuran file. 1MBps = 8Mbps. Koneksi 100 Mbps mengunduh sekitar 12,5 MBps.",
+                "q4": "Seberapa akurat tes kecepatan ini?",
+                "a4": "Tes kecepatan kami memberikan hasil yang akurat dengan mengukur transfer data nyata. Untuk akurasi terbaik, tutup aplikasi lain, gunakan Ethernet, dan jalankan beberapa pengujian.",
+                "q5": "Haruskah saya mengujinya dengan Wi-Fi atau Ethernet?",
+                "a5": "Uji dengan Ethernet untuk mengukur kecepatan internet Anda yang sebenarnya. Uji dengan Wi-Fi untuk mendiagnosis masalah nirkabel. Membandingkan keduanya membantu mengidentifikasi apakah ada masalah dengan internet atau Wi-Fi Anda."
             }
         }
     },
     "ip-lookup": {
         "meta": {
             "title": "Alat Pencarian IP - Pemeriksa Geolokasi IP Online Gratis",
-            "description": "Free IP lookup tool to find detailed information about any IP address. View location, ISP, hostname, and more. Essential for security analysis and network troubleshooting.",
+            "description": "Alat pencarian IP gratis untuk menemukan informasi terperinci tentang alamat IP apa pun. Lihat lokasi, ISP, nama host, dan lainnya. Penting untuk analisis keamanan dan pemecahan masalah jaringan.",
             "h1": "Alat Pencarian IP",
-            "subtitle": "Get detailed information about any IP address including location & ISP"
+            "subtitle": "Dapatkan informasi terperinci tentang alamat IP apa pun termasuk lokasi & ISP"
         },
         "form": {
-            "ip_label": "IP Address",
+            "ip_label": "Alamat IP",
             "ip_placeholder": "8.8.8.8",
-            "button": "Lookup IP Address"
+            "button": "Alamat IP Pencarian"
         },
         "results": {
-            "title": "",
-            "ip_address": "",
-            "type": "",
-            "hostname": "",
-            "isp": "",
-            "country": "",
-            "region": "",
-            "city": "",
-            "timezone": ""
+            "title": "Hasil Pencarian IP",
+            "ip_address": "Alamat IP",
+            "type": "Jenis",
+            "hostname": "Nama host",
+            "isp": "ISP",
+            "country": "Negara",
+            "region": "Wilayah",
+            "city": "Kota",
+            "timezone": "Zona waktu"
         },
         "content": {
-            "what_is_title": "What is IP Lookup?",
-            "what_is_desc": "IP Lookup is a tool that provides detailed information about any IP address. It reveals the geographical location, Internet Service Provider (ISP), hostname, and other technical details associated with an IP address. This information is valuable for network administrators, security professionals, website owners, and anyone interested in understanding where internet traffic originates from.",
-            "why_use_title": "Why Use IP Lookup?",
-            "why_use_desc": "IP Lookup tools are essential for various purposes including security analysis, fraud prevention, content localization, network troubleshooting, and compliance verification. Website owners use IP lookup to understand their visitor demographics, while security teams use it to identify potential threats and block malicious traffic. It's also useful for verifying VPN connections and understanding your own internet footprint.",
-            "features_title": "Key Features",
-            "feature1_title": "🌍 Geolocation Data",
-            "feature1_desc": "Country, region, city, and coordinates",
-            "feature2_title": "🏢 ISP Information",
-            "feature2_desc": "Internet Service Provider details",
-            "feature3_title": "🔗 Hostname Resolution",
-            "feature3_desc": "Domain name associated with IP",
-            "feature4_title": "⚡ Instant Results",
-            "feature4_desc": "Fast and accurate lookup"
+            "what_is_title": "Apa itu Pencarian IP?",
+            "what_is_desc": "Pencarian IP adalah alat yang memberikan informasi terperinci tentang alamat IP apa pun. Ini mengungkapkan lokasi geografis, Penyedia Layanan Internet (ISP), nama host, dan rincian teknis lainnya yang terkait dengan alamat IP. Informasi ini berharga bagi administrator jaringan, profesional keamanan, pemilik situs web, dan siapa pun yang tertarik untuk memahami dari mana lalu lintas internet berasal.",
+            "why_use_title": "Mengapa Menggunakan Pencarian IP?",
+            "why_use_desc": "Alat Pencarian IP sangat penting untuk berbagai tujuan termasuk analisis keamanan, pencegahan penipuan, pelokalan konten, pemecahan masalah jaringan, dan verifikasi kepatuhan. Pemilik situs web menggunakan pencarian IP untuk memahami demografi pengunjung mereka, sementara tim keamanan menggunakannya untuk mengidentifikasi potensi ancaman dan memblokir lalu lintas berbahaya. Ini juga berguna untuk memverifikasi koneksi VPN dan memahami jejak internet Anda sendiri.",
+            "features_title": "Fitur Utama",
+            "feature1_title": "🌍 Data Geolokasi",
+            "feature1_desc": "Negara, wilayah, kota, dan koordinat",
+            "feature2_title": "🏢 Informasi ISP",
+            "feature2_desc": "Detail Penyedia Layanan Internet",
+            "feature3_title": "🔗 Resolusi Nama Host",
+            "feature3_desc": "Nama domain terkait dengan IP",
+            "feature4_title": "⚡ Hasil Instan",
+            "feature4_desc": "Pencarian cepat dan akurat"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu pencarian IP?",
+            "a1": "Pencarian IP (juga disebut geolokasi IP) adalah proses menemukan informasi geografis dan jaringan tentang alamat IP, termasuk lokasi, ISP, nama host, dan organisasi. Ini berguna untuk keamanan, analitik, dan diagnostik jaringan.",
+            "q2": "Seberapa akurat geolokasi IP?",
+            "a2": "Geolokasi IP biasanya akurat pada tingkat negara (95-99%) dan tingkat kota (50-75%). Akurasi bervariasi berdasarkan database IP dan cara ISP mengelola blok IP mereka. VPN dan proxy dapat menutupi lokasi sebenarnya.",
+            "q3": "Bisakah saya menemukan alamat persis seseorang dari IP mereka?",
+            "a3": "Tidak, pencarian IP hanya memberikan perkiraan lokasi (tingkat kota/wilayah), bukan alamat jalan yang sebenarnya. Hanya ISP dan penegak hukum dengan otorisasi yang tepat yang dapat mengakses informasi pelanggan secara rinci.",
+            "q4": "Apa perbedaan antara pencarian IPv4 dan IPv6?",
+            "a4": "Pencarian IPv4 dan IPv6 memberikan informasi serupa (lokasi, ISP, dll.). IPv6 adalah protokol baru dengan lebih banyak alamat. Alat kami mendukung kedua versi IP untuk analisis jaringan yang komprehensif.",
+            "q5": "Mengapa lokasi IP saya menunjukkan kota yang berbeda?",
+            "a5": "ISP Anda mungkin merutekan lalu lintas melalui hub regional, atau database geolokasi IP mungkin memiliki informasi yang sudah ketinggalan zaman. Koneksi seluler dan satelit sering kali menunjukkan lokasi yang kurang akurat dibandingkan broadband tetap."
         },
         "js": {
-            "looking_up": "",
-            "success": "",
-            "error": ""
+            "looking_up": "Mencari informasi IP...",
+            "success": "Pencarian IP selesai",
+            "error": "Gagal mencari alamat IP"
         }
     },
     "ping-test": {
         "meta": {
             "title": "Alat Uji Ping Online - Pemeriksa Latensi Jaringan Gratis",
-            "description": "Free ping test tool to check network latency, packet loss, and server reachability. Test connectivity to any host or IP address instantly. Essential for network troubleshooting.",
+            "description": "Alat uji ping gratis untuk memeriksa latensi jaringan, kehilangan paket, dan jangkauan server. Uji konektivitas ke host atau alamat IP mana pun secara instan. Penting untuk pemecahan masalah jaringan.",
             "h1": "Alat Tes Ping",
-            "subtitle": "Test server response time and network connectivity from multiple locations"
+            "subtitle": "Uji waktu respons server dan konektivitas jaringan dari berbagai lokasi"
         },
         "form": {
-            "host_label": "Host or IP Address",
-            "host_placeholder": "google.com or 8.8.8.8",
-            "button": "Ping Host"
+            "host_label": "Host atau Alamat IP",
+            "host_placeholder": "google.com atau 8.8.8.8",
+            "button": "Tuan Rumah Ping"
         },
         "results": {
-            "title": ""
+            "title": "Hasil Ping"
         },
         "content": {
-            "what_is_title": "What is Ping Test?",
-            "what_is_desc": "Ping is a network diagnostic tool that tests the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the source to a destination computer and back. Ping operates by sending Internet Control Message Protocol (ICMP) Echo Request packets to the target host and waiting for an Echo Reply. The tool is named after the sonar ping sound used in submarine detection, as it similarly sends out a signal and listens for a response.",
-            "why_use_title": "Why Use Ping Test?",
-            "why_use_desc": "Ping testing is essential for network troubleshooting and performance monitoring. System administrators use ping to verify network connectivity, diagnose connection issues, and measure network latency. It helps identify whether a server is online and responsive, detect packet loss that might indicate network congestion or hardware problems, and measure the quality of network connections. Gamers use ping to check server latency before joining online games, while website owners monitor their server's responsiveness to ensure optimal user experience.",
-            "metrics_title": "Understanding Ping Metrics",
-            "metric1": "<strong>Packets Sent/Received:</strong> Number of ping requests and successful responses",
-            "metric2": "<strong>Packet Loss:</strong> Percentage of packets that didn't receive a response",
-            "metric3": "<strong>Minimum Time:</strong> Fastest round-trip time recorded",
-            "metric4": "<strong>Average Time:</strong> Mean latency across all pings",
-            "metric5": "<strong>Maximum Time:</strong> Slowest round-trip time recorded",
-            "metric6": "<strong>TTL (Time To Live):</strong> Number of network hops before packet expires",
-            "interpreting_title": "Interpreting Results",
-            "interpreting_desc": "Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
+            "what_is_title": "Apa itu Tes Ping?",
+            "what_is_desc": "Ping adalah alat diagnostik jaringan yang menguji jangkauan host pada jaringan Internet Protocol (IP). Ini mengukur waktu pulang pergi untuk pesan yang dikirim dari sumber ke komputer tujuan dan sebaliknya. Ping beroperasi dengan mengirimkan paket Permintaan Gema Internet Control Message Protocol (ICMP) ke host target dan menunggu Balasan Gema. Nama alat ini diambil dari suara ping sonar yang digunakan dalam deteksi kapal selam, karena alat ini juga mengirimkan sinyal dan mendengarkan respons.",
+            "why_use_title": "Mengapa Menggunakan Tes Ping?",
+            "why_use_desc": "Pengujian ping sangat penting untuk pemecahan masalah jaringan dan pemantauan kinerja. Administrator sistem menggunakan ping untuk memverifikasi konektivitas jaringan, mendiagnosis masalah koneksi, dan mengukur latensi jaringan. Ini membantu mengidentifikasi apakah server online dan responsif, mendeteksi kehilangan paket yang mungkin mengindikasikan kemacetan jaringan atau masalah perangkat keras, dan mengukur kualitas koneksi jaringan. Gamer menggunakan ping untuk memeriksa latensi server sebelum bergabung dengan game online, sementara pemilik situs web memantau respons server mereka untuk memastikan pengalaman pengguna yang optimal.",
+            "metrics_title": "Memahami Metrik Ping",
+            "metric1": "<strong>Paket Terkirim/Diterima:</strong> Jumlah permintaan ping dan respons yang berhasil",
+            "metric2": "<strong>Paket Hilang:</strong> Persentase paket yang tidak menerima respons",
+            "metric3": "<strong>Waktu Minimum:</strong> Waktu pulang pergi tercepat yang pernah tercatat",
+            "metric4": "<strong>Waktu Rata-Rata:</strong> Rata-rata latensi di semua ping",
+            "metric5": "<strong>Waktu Maksimum:</strong> Waktu pulang pergi paling lambat yang tercatat",
+            "metric6": "<strong>TTL (Time To Live):</strong> Jumlah lompatan jaringan sebelum paket berakhir",
+            "interpreting_title": "Menafsirkan Hasil",
+            "interpreting_desc": "Waktu ping yang baik biasanya di bawah 50 ms untuk koneksi lokal dan di bawah 100 ms untuk koneksi internasional. Waktu antara 100-200 ms dapat diterima untuk sebagian besar aplikasi, namun dapat menyebabkan kelambatan nyata dalam aplikasi real-time seperti game atau konferensi video. Apa pun di atas 200 ms menunjukkan potensi masalah jaringan. Kehilangan paket di atas 1% menunjukkan adanya masalah jaringan yang perlu diselidiki. Waktu ping yang konsisten menunjukkan koneksi yang stabil, sementara waktu yang sangat bervariasi menunjukkan kemacetan jaringan atau masalah perutean."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu tes ping?",
+            "a1": "Tes ping mengirimkan paket data ke server dan mengukur waktu yang diperlukan untuk menerima respons. Ini digunakan untuk memeriksa konektivitas jaringan, mengukur latensi, dan mendiagnosis masalah koneksi.",
+            "q2": "Berapa waktu ping yang bagus?",
+            "a2": "Untuk penelusuran umum: di bawah 100 ms sudah bagus. Untuk bermain game: di bawah 50 md sangat ideal, di bawah 20 md sangat bagus. Untuk panggilan video: di bawah 150 ms dapat diterima. Ping yang lebih rendah berarti waktu respons yang lebih cepat.",
+            "q3": "Mengapa ping saya tinggi?",
+            "a3": "Ping yang tinggi dapat disebabkan oleh kemacetan jaringan, jarak ke server, sinyal WiFi yang buruk, pembatasan ISP, atau terlalu banyak perangkat di jaringan Anda. Coba gunakan koneksi kabel, tutup aplikasi yang membutuhkan banyak bandwidth, atau hubungi ISP Anda.",
+            "q4": "Apa yang dimaksud dengan \"Waktu permintaan habis\"?",
+            "a4": "Batas waktu permintaan habis berarti server tidak merespons dalam waktu yang diharapkan. Hal ini dapat mengindikasikan server sedang down, memblokir permintaan ping (firewall), atau ada masalah konektivitas jaringan.",
+            "q5": "Bisakah saya melakukan ping ke situs web mana pun?",
+            "a5": "Sebagian besar situs web dapat di-ping, tetapi beberapa server memblokir permintaan ping ICMP karena alasan keamanan. Jika ping gagal, situs web mungkin masih dapat diakses melalui browser - coba gunakan alat lain seperti traceroute atau pemeriksa port."
         },
         "js": {
-            "pinging": "",
-            "success": "",
-            "error": "",
-            "ping_host": ""
+            "pinging": "Melakukan ping ke tuan rumah...",
+            "success": "Ping berhasil diselesaikan",
+            "error": "Ping gagal",
+            "ping_host": "Tuan Rumah Ping"
         }
     },
     "port-checker": {
         "meta": {
             "title": "Alat Pemeriksa Port - Pemindai Port Terbuka Online Gratis",
-            "description": "Free port checker tool to test if ports are open, closed, or filtered. Check TCP/UDP ports instantly for network troubleshooting and security auditing.",
+            "description": "Alat pemeriksa port gratis untuk menguji apakah port terbuka, tertutup, atau difilter. Periksa port TCP/UDP secara instan untuk pemecahan masalah jaringan dan audit keamanan.",
             "h1": "Alat Pemeriksa Port",
-            "subtitle": "Check if ports are open on any server for troubleshooting connectivity"
+            "subtitle": "Periksa apakah port terbuka di server mana pun untuk memecahkan masalah konektivitas"
         },
         "form": {
-            "host_label": "Host or IP Address",
-            "host_placeholder": "example.com or 8.8.8.8",
-            "port_label": "Port Number",
+            "host_label": "Host atau Alamat IP",
+            "host_placeholder": "contoh.com atau 8.8.8.8",
+            "port_label": "Nomor Pelabuhan",
             "port_placeholder": "80",
-            "button": "Check Port"
+            "button": "Periksa Pelabuhan"
         },
         "results": {
-            "title": ""
+            "title": "Status Pelabuhan"
         },
         "content": {
-            "what_is_title": "What is Port Checker?",
-            "what_is_desc": "A Port Checker is a network diagnostic tool that determines whether a specific TCP or UDP port on a server or device is open (accepting connections), closed (rejecting connections), or filtered (blocked by a firewall). Ports are virtual endpoints for network communication, with each port number (1-65535) potentially hosting different services. Common ports include 80 for HTTP web traffic, 443 for HTTPS, 22 for SSH, and 25 for email. Checking port status is essential for network configuration, security auditing, and troubleshooting connectivity issues.",
-            "why_check_title": "Why Check Ports?",
-            "why_check_desc": "Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren't accessible, determining if the issue is with the service itself, firewall rules, or network routing.",
-            "common_ports_title": "Common Ports",
-            "port1": "<strong>Port 80:</strong> HTTP (web traffic)",
-            "port2": "<strong>Port 443:</strong> HTTPS (secure web traffic)",
-            "port3": "<strong>Port 22:</strong> SSH (secure shell access)",
-            "port4": "<strong>Port 21:</strong> FTP (file transfer)",
-            "port5": "<strong>Port 25:</strong> SMTP (email sending)",
-            "port6": "<strong>Port 3306:</strong> MySQL database",
-            "port7": "<strong>Port 3389:</strong> RDP (Remote Desktop)",
-            "security_title": "Security Implications",
-            "security_desc": "Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
+            "what_is_title": "Apa itu Pemeriksa Port?",
+            "what_is_desc": "Port Checker adalah alat diagnostik jaringan yang menentukan apakah port TCP atau UDP tertentu di server atau perangkat terbuka (menerima koneksi), tertutup (menolak koneksi), atau difilter (diblokir oleh firewall). Port adalah titik akhir virtual untuk komunikasi jaringan, dengan setiap nomor port (1-65535) berpotensi menampung layanan yang berbeda. Port umum mencakup 80 untuk lalu lintas web HTTP, 443 untuk HTTPS, 22 untuk SSH, dan 25 untuk email. Memeriksa status port sangat penting untuk konfigurasi jaringan, audit keamanan, dan pemecahan masalah konektivitas.",
+            "why_check_title": "Mengapa Memeriksa Port?",
+            "why_check_desc": "Pemeriksaan port memiliki berbagai tujuan penting dalam manajemen dan keamanan jaringan. Administrator sistem memverifikasi bahwa layanan dapat diakses pada port yang dituju setelah perubahan konfigurasi. Profesional keamanan memindai port terbuka untuk mengidentifikasi potensi kerentanan dan memastikan port yang tidak perlu ditutup. Pengembang menguji apakah aplikasi mereka mendengarkan dengan benar pada port yang dikonfigurasi. Pemecah masalah jaringan menggunakan pemeriksaan port untuk mendiagnosis mengapa layanan tidak dapat diakses, menentukan apakah masalahnya ada pada layanan itu sendiri, aturan firewall, atau perutean jaringan.",
+            "common_ports_title": "Pelabuhan Umum",
+            "port1": "<strong>Port 80:</strong> HTTP (lalu lintas web)",
+            "port2": "<strong>Port 443:</strong> HTTPS (lalu lintas web aman)",
+            "port3": "<strong>Port 22:</strong> SSH (akses shell aman)",
+            "port4": "<strong>Port 21:</strong> FTP (transfer file)",
+            "port5": "<strong>Port 25:</strong> SMTP (pengiriman email)",
+            "port6": "<strong>Port 3306:</strong> Basis data MySQL",
+            "port7": "<strong>Port 3389:</strong> RDP (Desktop Jarak Jauh)",
+            "security_title": "Implikasi Keamanan",
+            "security_desc": "Port terbuka mewakili titik masuk potensial bagi penyerang. Praktik keamanan terbaik mengharuskan hanya menjaga port yang diperlukan tetap terbuka dan menutup atau memfilter port lainnya. Memindai server Anda sendiri secara teratur membantu mengidentifikasi port terbuka yang tidak diinginkan yang dapat dieksploitasi. Namun, pemindaian port pada sistem orang lain tanpa izin mungkin ilegal dan dianggap sebagai aktivitas yang tidak bersahabat. Selalu pastikan Anda memiliki otorisasi sebelum memindai port pada sistem yang bukan milik Anda."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": "",
-            "q5": "",
-            "a5": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu pemeriksa port?",
+            "a1": "Pemeriksa port menguji apakah port jaringan tertentu di server terbuka dan menerima koneksi. Ini penting untuk memecahkan masalah server, firewall, dan layanan jaringan.",
+            "q2": "Apa port umum dan kegunaannya?",
+            "a2": "Port yang umum meliputi: 80 (HTTP), 443 (HTTPS), 21 (FTP), 22 (SSH), 25 (SMTP email), 3306 (MySQL), 3389 (Remote Desktop), 8080 (Alternatif HTTP). Setiap layanan menggunakan port tertentu untuk komunikasi.",
+            "q3": "Mengapa port saya ditutup?",
+            "a3": "Port dapat ditutup karena aturan firewall, konfigurasi router, layanan tidak berjalan, pemblokiran ISP, atau penerusan port yang salah. Periksa pengaturan firewall Anda, pastikan layanan berjalan, dan verifikasi aturan penerusan port.",
+            "q4": "Apakah aman untuk membuka port?",
+            "a4": "Membuka port akan memaparkan layanan ke internet, yang dapat menjadi risiko keamanan jika tidak dikonfigurasi dengan benar. Hanya buka port yang diperlukan, gunakan autentikasi yang kuat, selalu perbarui perangkat lunak, dan pertimbangkan untuk menggunakan VPN untuk layanan sensitif.",
+            "q5": "Apa perbedaan antara port TCP dan UDP?",
+            "a5": "Port TCP menyediakan pengiriman data yang andal dan teratur (digunakan untuk web, email, transfer file). Port UDP lebih cepat tetapi tidak menjamin pengiriman (digunakan untuk bermain game, streaming, DNS). Keduanya dapat menggunakan nomor port yang sama."
         },
         "js": {
-            "checking": "",
-            "success": "",
-            "error": "",
-            "check_port": ""
+            "checking": "Memeriksa status port...",
+            "success": "Pemeriksaan port selesai",
+            "error": "Pemeriksaan port gagal",
+            "check_port": "Periksa Pelabuhan"
         }
     },
     "reverse-dns-lookup": {
         "meta": {
             "title": "Pencarian DNS Terbalik - Alat IP ke Domain Online Gratis",
-            "description": "Free online reverse DNS lookup tool. Find the hostname associated with any IP address instantly. Fast, secure, and easy to use.",
+            "description": "Alat pencarian DNS terbalik online gratis. Temukan nama host yang terkait dengan alamat IP apa pun secara instan. Cepat, aman, dan mudah digunakan.",
             "h1": "Membalikkan Pencarian DNS",
-            "subtitle": "Find the domain name or hostname associated with an IP address instantly"
+            "subtitle": "Temukan nama domain atau nama host yang terkait dengan alamat IP secara instan"
         },
         "form": {
-            "ip_label": "Enter IP Address",
-            "ip_placeholder": "e.g., 8.8.8.8",
-            "button": "Lookup Reverse DNS",
-            "button_loading": "Looking up..."
+            "ip_label": "Masukkan Alamat IP",
+            "ip_placeholder": "misalnya, 8.8.8.8",
+            "button": "Pencarian DNS Terbalik",
+            "button_loading": "Melihat ke atas..."
         },
         "results": {
-            "title": "Reverse DNS Results"
+            "title": "Membalikkan Hasil DNS"
         },
         "content": {
-            "what_is_title": "What is Reverse DNS Lookup?",
-            "what_is_desc": "Reverse DNS lookup (rDNS) is the process of determining the domain name or hostname associated with an IP address. Unlike a standard DNS lookup that converts a domain name to an IP address (forward lookup), rDNS does the opposite. It's often used to verify the identity of a server or to troubleshoot network issues.",
-            "why_use_title": "Why Use Reverse DNS Lookup?",
-            "why_use_desc": "Reverse DNS is widely used for security and verification purposes. It helps identify the source of incoming traffic, verify email senders (to prevent spam), and troubleshoot network connectivity issues. Many mail servers require valid rDNS records to accept incoming emails.",
-            "ptr_records_title": "Understanding PTR Records",
-            "ptr_record1": "<strong>PTR Record:</strong> A Pointer Record (PTR) is the type of DNS record used for reverse DNS lookups.",
-            "ptr_record2": "<strong>Mapping:</strong> It maps an IP address back to a hostname.",
-            "ptr_record3": "<strong>Verification:</strong> Crucial for email deliverability and security verification.",
-            "ptr_record4": "<strong>IP-to-Host:</strong> Essential for identifying the true owner of an IP address.",
-            "ptr_record5": "<strong>Spam Prevention:</strong> Used by mail servers to validate sender authenticity.",
-            "ptr_record6": "<strong>Network Logs:</strong> Helpful for making network logs human-readable by showing hostnames.",
-            "use_cases_title": "Common Use Cases",
-            "use_cases_desc": "Common use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
+            "what_is_title": "Apa itu Pencarian DNS Terbalik?",
+            "what_is_desc": "Reverse DNS lookup (rDNS) adalah proses menentukan nama domain atau nama host yang terkait dengan alamat IP. Berbeda dengan pencarian DNS standar yang mengubah nama domain menjadi alamat IP (pencarian maju), rDNS melakukan yang sebaliknya. Ini sering digunakan untuk memverifikasi identitas server atau untuk memecahkan masalah jaringan.",
+            "why_use_title": "Mengapa Menggunakan Pencarian DNS Terbalik?",
+            "why_use_desc": "Reverse DNS banyak digunakan untuk tujuan keamanan dan verifikasi. Ini membantu mengidentifikasi sumber lalu lintas masuk, memverifikasi pengirim email (untuk mencegah spam), dan memecahkan masalah konektivitas jaringan. Banyak server email memerlukan catatan rDNS yang valid untuk menerima email masuk.",
+            "ptr_records_title": "Memahami Catatan PTR",
+            "ptr_record1": "<strong>Catatan PTR:</strong> Catatan Penunjuk (PTR) adalah jenis catatan DNS yang digunakan untuk pencarian DNS terbalik.",
+            "ptr_record2": "<strong>Pemetaan:</strong> Ini memetakan alamat IP kembali ke nama host.",
+            "ptr_record3": "<strong>Verifikasi:</strong> Penting untuk kemampuan pengiriman email dan verifikasi keamanan.",
+            "ptr_record4": "<strong>IP-to-Host:</strong> Penting untuk mengidentifikasi pemilik sebenarnya dari sebuah alamat IP.",
+            "ptr_record5": "<strong>Pencegahan Spam:</strong> Digunakan oleh server email untuk memvalidasi keaslian pengirim.",
+            "ptr_record6": "<strong>Log Jaringan:</strong> Bermanfaat untuk membuat log jaringan dapat dibaca manusia dengan menampilkan nama host.",
+            "use_cases_title": "Kasus Penggunaan Umum",
+            "use_cases_desc": "Kasus penggunaan umum termasuk memverifikasi asal lalu lintas web, mendiagnosis latensi jaringan atau masalah perutean, memvalidasi konfigurasi server email, dan meningkatkan audit keamanan siber dengan mengidentifikasi alamat IP yang berpotensi berbahaya."
         },
         "faq": {
-            "title": "Frequently Asked Questions",
-            "q1": "What is a PTR record?",
-            "a1": "A PTR (Pointer) record is a type of DNS record that maps an IP address to a hostname. It is the core component of a reverse DNS lookup.",
-            "q2": "Why is reverse DNS important for email?",
-            "a2": "Many email providers use reverse DNS to verify that the sending server is legitimate. If a server's IP address doesn't have a matching rDNS record, its emails may be flagged as spam.",
-            "q3": "Can any IP address have a reverse DNS record?",
-            "a3": "Yes, but the owner of the IP address (typically the ISP or hosting provider) must configure the PTR record in their DNS settings."
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu catatan PTR?",
+            "a1": "Catatan PTR (Penunjuk) adalah jenis catatan DNS yang memetakan alamat IP ke nama host. Ini adalah komponen inti dari pencarian DNS terbalik.",
+            "q2": "Mengapa DNS terbalik penting untuk email?",
+            "a2": "Banyak penyedia email menggunakan DNS terbalik untuk memverifikasi bahwa server pengirimnya sah. Jika alamat IP server tidak memiliki data rDNS yang cocok, emailnya mungkin ditandai sebagai spam.",
+            "q3": "Bisakah alamat IP mana pun memiliki catatan DNS terbalik?",
+            "a3": "Ya, tapi pemilik alamat IP (biasanya ISP atau penyedia hosting) harus mengonfigurasi data PTR di pengaturan DNS mereka."
         }
     },
     "traceroute": {
         "meta": {
             "title": "Traceroute Online - Alat Analisis Jaringan Gratis",
-            "description": "Free online traceroute tool. Fast, secure and easy to use.",
+            "description": "Alat traceroute online gratis. Cepat, aman dan mudah digunakan.",
             "h1": "Traceroute",
-            "subtitle": "The best traceroute for developers and IT professionals"
+            "subtitle": "Traceroute terbaik untuk pengembang dan profesional TI"
         },
         "form": {
-            "host_label": "",
-            "host_placeholder": "",
-            "button": "",
-            "button_loading": ""
+            "host_label": "Host atau Alamat IP",
+            "host_placeholder": "Masukkan domain atau alamat IP",
+            "button": "Mulai Traceroute",
+            "button_loading": "Menelusuri rute..."
         },
         "results": {
-            "title": ""
+            "title": "Hasil Traceroute"
         },
         "content": {
-            "what_is_title": "What is Traceroute?",
-            "what_is_desc": "This is a free online tool to traceroute.",
-            "why_use_title": "",
-            "why_use_desc": "",
-            "hops_title": "",
-            "hop1": "",
-            "hop2": "",
-            "hop3": "",
-            "hop4": "",
-            "hop5": "",
-            "hop6": "",
-            "issues_title": "",
-            "issues_desc": ""
+            "what_is_title": "Apa itu Traceroute?",
+            "what_is_desc": "Ini adalah alat online gratis untuk melacak rute.",
+            "why_use_title": "Mengapa Menggunakan Traceroute?",
+            "why_use_desc": "Traceroute menunjukkan jalur yang diambil data dari komputer Anda ke server tujuan, menampilkan setiap hop (router) di sepanjang jalan. Ini penting untuk mendiagnosis perlambatan jaringan, mengidentifikasi masalah perutean, dan memahami topologi jaringan.",
+            "hops_title": "Memahami Hop",
+            "hop1": "Hop 1: Router/gateway lokal Anda",
+            "hop2": "Hop 2-3: Jaringan ISP Anda",
+            "hop3": "Hop 4-6: Tulang punggung internet regional",
+            "hop4": "Hop 7-10: Jaringan ISP tujuan",
+            "hop5": "Hop 11+: Jaringan server tujuan",
+            "hop6": "Setiap hop menambah latensi - lebih sedikit hop biasanya berarti koneksi lebih cepat",
+            "issues_title": "Masalah Umum",
+            "issues_desc": "Latensi tinggi pada hop tertentu menunjukkan masalah kemacetan atau perutean. Tanda bintang (*) berarti router tidak merespons paket traceroute (seringkali karena aturan firewall). Kehilangan paket pada hop perantara mungkin tidak mempengaruhi tujuan akhir jika paket berhasil mencapainya."
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu traceroute?",
+            "a1": "Traceroute adalah alat diagnostik jaringan yang melacak jalur yang diambil paket data dari komputer Anda ke server tujuan. Ini menunjukkan setiap router (hop) di sepanjang rute dan mengukur waktu yang dibutuhkan pada setiap langkah, membantu mengidentifikasi di mana terjadi penundaan atau kegagalan jaringan.",
+            "q2": "Mengapa beberapa hop menunjukkan tanda bintang (*)?",
+            "a2": "Tanda bintang menunjukkan bahwa router tidak merespons probe traceroute dalam periode waktu habis. Hal ini sering kali disebabkan oleh konfigurasi firewall yang memblokir paket ICMP demi keamanan. Ini tidak berarti ada masalah - paket mungkin masih sampai di tujuan.",
+            "q3": "Berapa banyak lompatan yang normal?",
+            "a3": "Rute internet pada umumnya memiliki 10-20 lompatan. Tujuan jaringan lokal mungkin memiliki 1-5 hop, sedangkan rute internasional dapat memiliki 20-30 hop. Semakin banyak lompatan umumnya berarti jarak yang lebih jauh dan potensi latensi yang lebih tinggi, namun perutean yang efisien lebih penting daripada jumlah lompatan."
         }
     },
     "user-agent-parser": {
         "meta": {
             "title": "Parser Agen Pengguna - Alat Detail Browser Online Gratis",
-            "description": "Identify browser, OS, and device from User Agent string with our free tool.",
+            "description": "Identifikasi browser, OS, dan perangkat dari string Agen Pengguna dengan alat gratis kami.",
             "h1": "Parser Agen Pengguna",
-            "subtitle": "Identify browser, OS, and device from User Agent string"
+            "subtitle": "Identifikasi browser, OS, dan perangkat dari string Agen Pengguna"
         },
         "editor": {
-            "label_input": "User Agent String",
+            "label_input": "String Agen Pengguna",
             "ph_input": "Mozilla/5.0...",
-            "btn_parse": "Parse",
-            "btn_use_my_ua": "Use My User Agent",
-            "label_browser": "Browser",
-            "label_os": "Operating System",
-            "label_device": "Device",
-            "label_raw": "Raw Engine info"
+            "btn_parse": "Mengurai",
+            "btn_use_my_ua": "Gunakan Agen Pengguna Saya",
+            "label_browser": "Peramban",
+            "label_os": "Sistem Operasi",
+            "label_device": "Perangkat",
+            "label_raw": "Info Mesin Mentah"
         },
         "content": {
-            "p1": "Our free User Agent Parser instantly decodes user agent strings to identify the browser, operating system, device type, and engine version. Useful for developers debugging browser-specific issues or analyzing traffic sources.",
-            "features_title": "Features",
+            "p1": "Parser Agen Pengguna gratis kami secara instan menerjemahkan string agen pengguna untuk mengidentifikasi browser, sistem operasi, jenis perangkat, dan versi mesin. Berguna bagi pengembang yang men-debug masalah khusus browser atau menganalisis sumber lalu lintas.",
+            "features_title": "Fitur",
             "features": {
                 "instant": {
-                    "title": "Instant Parsing",
-                    "desc": "Decode user agents in milliseconds"
+                    "title": "Penguraian Instan",
+                    "desc": "Dekode agen pengguna dalam milidetik"
                 },
                 "detailed": {
-                    "title": "Detailed Info",
-                    "desc": "Extracts Browser, OS, Device, and Engine"
+                    "title": "Info Lengkap",
+                    "desc": "Ekstrak Browser, OS, Perangkat, dan Mesin"
                 },
                 "auto": {
-                    "title": "Auto-Detect",
-                    "desc": "One-click to parse your own current user agent"
+                    "title": "Deteksi Otomatis",
+                    "desc": "Sekali klik untuk mengurai agen pengguna Anda saat ini"
                 },
                 "free": {
-                    "title": "100% Free",
-                    "desc": "Unlimited uses, no cost"
+                    "title": "100% Gratis",
+                    "desc": "Penggunaan tanpa batas, tanpa biaya"
                 }
             },
-            "uses_title": "Common Use Cases",
+            "uses_title": "Kasus Penggunaan Umum",
             "uses": {
                 "debugging": {
-                    "title": "Debugging",
-                    "desc": "Identify detailed browser versions for troubleshooting"
+                    "title": "Men-debug",
+                    "desc": "Identifikasi versi browser terperinci untuk pemecahan masalah"
                 },
                 "analytics": {
-                    "title": "Analytics",
-                    "desc": "Understand what devices and OSs your users are using"
+                    "title": "Analisis",
+                    "desc": "Pahami perangkat dan OS apa yang digunakan pengguna Anda"
                 },
                 "dev": {
-                    "title": "Development",
-                    "desc": "Verify user agent strings during testing"
+                    "title": "Perkembangan",
+                    "desc": "Verifikasi string agen pengguna selama pengujian"
                 },
                 "security": {
-                    "title": "Security",
-                    "desc": "Analyze suspicious user agent strings in logs"
+                    "title": "Keamanan",
+                    "desc": "Analisis string agen pengguna yang mencurigakan di log"
                 }
             },
-            "how_to_title": "How to Use",
+            "how_to_title": "Cara Menggunakan",
             "how_to": {
                 "step1": {
-                    "title": "Enter String",
-                    "desc": "Paste a User Agent string or click \"Use My User Agent\""
+                    "title": "Masukkan String",
+                    "desc": "Tempelkan string Agen Pengguna atau klik \"Gunakan Agen Pengguna Saya\""
                 },
                 "step2": {
-                    "title": "Parse",
-                    "desc": "Click \"Parse\" to decode the string"
+                    "title": "Mengurai",
+                    "desc": "Klik \"Parse\" untuk memecahkan kode string"
                 },
                 "step3": {
-                    "title": "View Results",
-                    "desc": "See the broken-down details for Browser, OS, and Device"
+                    "title": "Lihat Hasil",
+                    "desc": "Lihat rincian rincian untuk Browser, OS, dan Perangkat"
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "What is a User Agent?",
-                "a1": "A User Agent is a string of text sent by your web browser to every website you visit, identifying the browser, version, operating system, and device type.",
-                "q2": "Is this parser accurate?",
-                "a2": "It uses standard pattern matching to identify common real-world user agents. However, user agent strings can be spoofed or modified.",
-                "q3": "Is my data private?",
-                "a3": "Yes, parsing happens locally in your browser. We do not store your user agent data."
+                "q1": "Apa itu Agen Pengguna?",
+                "a1": "Agen Pengguna adalah serangkaian teks yang dikirim oleh browser web Anda ke setiap situs web yang Anda kunjungi, mengidentifikasi browser, versi, sistem operasi, dan jenis perangkat.",
+                "q2": "Apakah pengurai ini akurat?",
+                "a2": "Ini menggunakan pencocokan pola standar untuk mengidentifikasi agen pengguna umum di dunia nyata. Namun, string agen pengguna dapat dipalsukan atau dimodifikasi.",
+                "q3": "Apakah data saya bersifat pribadi?",
+                "a3": "Ya, penguraian terjadi secara lokal di browser Anda. Kami tidak menyimpan data agen pengguna Anda."
             }
         }
     },
     "what-is-my-ip": {
         "meta": {
             "title": "Apa Alamat IP Saya? - Pemeriksa IP Online Gratis",
-            "description": "Find out your public IP address instantly. Check your IPv4/IPv6 address, ISP, location, and connection details for free. Essential for network troubleshooting.",
+            "description": "Temukan alamat IP publik Anda secara instan. Periksa alamat IPv4/IPv6, ISP, lokasi, dan detail koneksi Anda secara gratis. Penting untuk pemecahan masalah jaringan.",
             "h1": "Apa Alamat IP Saya?",
-            "subtitle": "Instantly discover your public IP address with detailed ISP information"
+            "subtitle": "Temukan alamat IP publik Anda secara instan dengan informasi ISP terperinci"
         },
         "ui": {
-            "loading": "",
-            "your_ip_title": "",
-            "copy_button": "",
-            "timezone": ""
+            "loading": "Mendeteksi alamat IP Anda...",
+            "your_ip_title": "Alamat IP Anda",
+            "copy_button": "Salin IP",
+            "timezone": "Zona waktu"
         },
         "results": {
-            "location": "",
-            "isp": "",
-            "country": ""
+            "location": "Lokasi",
+            "isp": "Penyedia Layanan Internet",
+            "country": "Negara"
         },
         "content": {
-            "main_title": "What Is My IP Address - Free IP Lookup Tool",
-            "main_desc": "Find your public IP address instantly with our free IP lookup tool. Discover your IPv4 or IPv6 address, precise geographic location (city, region, country), ISP information, timezone, and complete network details. Essential for network configuration, security testing, remote access setup, VPN verification, and understanding your internet connection footprint.",
-            "what_is_title": "What is My IP Address?",
-            "what_is_desc": "Your IP address is a unique numerical identifier assigned to your device when it connects to the internet. It allows websites and services to communicate with your device and identify your approximate location.",
-            "ipv4_vs_ipv6_title": "IPv4 vs IPv6 Addresses",
-            "ipv4_title": "IPv4 Address",
-            "ipv4_format": "<strong>Format:</strong> 192.168.1.1 (four numbers 0-255 separated by dots)",
-            "ipv4_total": "<strong>Total Addresses:</strong> ~4.3 billion addresses",
-            "ipv4_desc": "Most common format worldwide, but running out of available addresses due to internet growth",
-            "ipv6_title": "IPv6 Address",
+            "main_title": "Apa Alamat IP Saya - Alat Pencarian IP Gratis",
+            "main_desc": "Temukan alamat IP publik Anda secara instan dengan alat pencarian IP gratis kami. Temukan alamat IPv4 atau IPv6 Anda, lokasi geografis yang tepat (kota, wilayah, negara), informasi ISP, zona waktu, dan detail jaringan lengkap. Penting untuk konfigurasi jaringan, pengujian keamanan, pengaturan akses jarak jauh, verifikasi VPN, dan memahami jejak koneksi internet Anda.",
+            "what_is_title": "Apa Alamat IP Saya?",
+            "what_is_desc": "Alamat IP Anda adalah pengidentifikasi numerik unik yang ditetapkan ke perangkat Anda saat terhubung ke internet. Ini memungkinkan situs web dan layanan untuk berkomunikasi dengan perangkat Anda dan mengidentifikasi perkiraan lokasi Anda.",
+            "ipv4_vs_ipv6_title": "Alamat IPv4 vs IPv6",
+            "ipv4_title": "Alamat IPv4",
+            "ipv4_format": "<strong>Format:</strong> 192.168.1.1 (empat angka 0-255 dipisahkan titik)",
+            "ipv4_total": "<strong>Total Alamat:</strong> ~4,3 miliar alamat",
+            "ipv4_desc": "Format paling umum di seluruh dunia, tetapi kehabisan alamat yang tersedia karena pertumbuhan internet",
+            "ipv6_title": "Alamat IPv6",
             "ipv6_format": "<strong>Format:</strong> 2001:0db8:85a3::8a2e:0370:7334",
-            "ipv6_total": "<strong>Total Addresses:</strong> 340 undecillion addresses",
-            "ipv6_desc": "Newer format with virtually unlimited addresses, gradually replacing IPv4",
-            "why_check_title": "Why Check Your IP?",
-            "why_check_desc": "Knowing your IP address is useful for troubleshooting network issues, verifying VPN connections, checking if your location is being masked, and understanding what information websites can see about you.",
-            "public_vs_private_title": "Public vs Private IP Addresses",
-            "public_ip_title": "🌐 Public IP Address",
-            "public_ip_desc": "Your unique address on the internet, visible to all websites and services you visit.",
-            "public_ip_example": "<strong>Example:</strong> 203.0.113.45",
-            "public_ip_note": "Assigned by your ISP and used for all internet communication",
-            "private_ip_title": "🏠 Private IP Address",
-            "private_ip_desc": "Your device's address on your local network, not visible on the internet.",
-            "private_ip_example": "<strong>Example:</strong> 192.168.1.100",
-            "private_ip_note": "Used for communication within your home or office network",
-            "security_title": "IP Address Security & Privacy",
-            "security_desc1": "Your IP address reveals your approximate location (city/region), ISP, and can be used to track your online activity across websites. While it doesn't expose your exact home address or personal identity directly, it can be combined with other data for tracking. Websites use your IP for analytics, ad targeting, and geographic restrictions.",
-            "security_desc2": "<strong>Privacy Protection:</strong> Use a VPN (Virtual Private Network) to mask your real IP address and enhance privacy. VPNs route your traffic through their servers, showing the VPN's IP instead of yours. Our tool shows exactly what information websites can see about your connection.",
-            "dynamic_vs_static_title": "Dynamic vs Static IP Addresses",
-            "dynamic_ip": "<strong>Dynamic IP:</strong> Changes periodically (daily, weekly, or when you restart your router). Most home users have dynamic IPs assigned automatically by their ISP. Cheaper and more common for residential connections.",
-            "static_ip": "<strong>Static IP:</strong> Never changes and remains constant. Typically used for business connections, web servers, email servers, and remote access. Costs more but essential for hosting services.",
-            "privacy_tips_title": "Privacy & Security Tips",
-            "privacy_tip1": "• Never share your IP address publicly on forums or social media",
-            "privacy_tip2": "• Use a VPN when connecting to public WiFi networks",
-            "privacy_tip3": "• Enable your router's firewall to block unauthorized access",
-            "privacy_tip4": "• Regularly check your IP to detect unauthorized VPN disconnections",
-            "privacy_tip5": "• Be aware that websites log your IP for security and analytics"
+            "ipv6_total": "<strong>Total Alamat:</strong> 340 undecillion alamat",
+            "ipv6_desc": "Format yang lebih baru dengan alamat yang hampir tidak terbatas, secara bertahap menggantikan IPv4",
+            "why_check_title": "Mengapa Memeriksa IP Anda?",
+            "why_check_desc": "Mengetahui alamat IP Anda berguna untuk memecahkan masalah jaringan, memverifikasi koneksi VPN, memeriksa apakah lokasi Anda disamarkan, dan memahami informasi apa yang dapat dilihat situs web tentang Anda.",
+            "public_vs_private_title": "Alamat IP Publik vs Pribadi",
+            "public_ip_title": "🌐 Alamat IP Publik",
+            "public_ip_desc": "Alamat unik Anda di internet, terlihat oleh semua situs web dan layanan yang Anda kunjungi.",
+            "public_ip_example": "<strong>Contoh:</strong> 203.0.113.45",
+            "public_ip_note": "Ditugaskan oleh ISP Anda dan digunakan untuk semua komunikasi internet",
+            "private_ip_title": "🏠 Alamat IP Pribadi",
+            "private_ip_desc": "Alamat perangkat Anda di jaringan lokal Anda, tidak terlihat di internet.",
+            "private_ip_example": "<strong>Contoh:</strong> 192.168.1.100",
+            "private_ip_note": "Digunakan untuk komunikasi dalam jaringan rumah atau kantor Anda",
+            "security_title": "Keamanan & Privasi Alamat IP",
+            "security_desc1": "Alamat IP Anda mengungkapkan perkiraan lokasi Anda (kota/wilayah), ISP, dan dapat digunakan untuk melacak aktivitas online Anda di seluruh situs web. Meskipun tidak mengungkapkan alamat rumah atau identitas pribadi Anda secara langsung, data tersebut dapat digabungkan dengan data lain untuk pelacakan. Situs web menggunakan IP Anda untuk analisis, penargetan iklan, dan pembatasan geografis.",
+            "security_desc2": "<strong>Perlindungan Privasi:</strong> Gunakan VPN (Virtual Private Network) untuk menutupi alamat IP asli Anda dan meningkatkan privasi. VPN merutekan lalu lintas Anda melalui server mereka, menampilkan IP VPN, bukan milik Anda. Alat kami menunjukkan dengan tepat informasi apa yang dapat dilihat situs web tentang koneksi Anda.",
+            "dynamic_vs_static_title": "Alamat IP Dinamis vs Statis",
+            "dynamic_ip": "<strong>IP Dinamis:</strong> Berubah secara berkala (harian, mingguan, atau saat Anda memulai ulang router). Sebagian besar pengguna rumahan memiliki IP dinamis yang ditetapkan secara otomatis oleh ISP mereka. Lebih murah dan lebih umum untuk sambungan perumahan.",
+            "static_ip": "<strong>IP Statis:</strong> Tidak pernah berubah dan tetap konstan. Biasanya digunakan untuk koneksi bisnis, server web, server email, dan akses jarak jauh. Biayanya lebih mahal tetapi penting untuk layanan hosting.",
+            "privacy_tips_title": "Kiat Privasi & Keamanan",
+            "privacy_tip1": "• Jangan pernah membagikan alamat IP Anda secara publik di forum atau media sosial",
+            "privacy_tip2": "• Gunakan VPN saat menyambung ke jaringan WiFi publik",
+            "privacy_tip3": "• Aktifkan firewall router Anda untuk memblokir akses tidak sah",
+            "privacy_tip4": "• Periksa IP Anda secara berkala untuk mendeteksi pemutusan koneksi VPN yang tidak sah",
+            "privacy_tip5": "• Sadarilah bahwa situs web mencatat IP Anda untuk keamanan dan analisis"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu alamat IP?",
+            "a1": "Alamat IP (Protokol Internet) adalah pengidentifikasi numerik unik yang ditetapkan untuk setiap perangkat yang terhubung ke internet. Ini seperti alamat pos untuk komputer Anda, yang memungkinkan perangkat lain mengirim dan menerima data dari Anda.",
+            "q2": "Mengapa alamat IP saya berubah?",
+            "a2": "Sebagian besar koneksi internet rumah menggunakan alamat IP dinamis yang berubah secara berkala saat Anda memulai ulang router atau saat ISP Anda menetapkan ulang alamat. Bisnis sering kali menggunakan alamat IP statis yang tidak berubah. Perangkat seluler mendapatkan IP baru saat beralih antara WiFi dan jaringan seluler.",
+            "q3": "Bisakah seseorang melacak saya dengan alamat IP saya?",
+            "a3": "Alamat IP Anda mengungkapkan perkiraan lokasi Anda (kota/wilayah) dan ISP, namun bukan alamat jalan atau identitas pribadi Anda yang sebenarnya. Hanya ISP Anda dan penegak hukum dengan otorisasi yang tepat yang dapat menghubungkan alamat IP ke orang atau rumah tangga tertentu."
         }
     },
     "what-is-my-isp": {
         "meta": {
             "title": "Apa ISP Saya? - Pemeriksa Penyedia Online Gratis",
-            "description": "Find out your Internet Service Provider (ISP) instantly. Check ISP name, organization, ASN, and IP address information for free.",
+            "description": "Cari tahu Penyedia Layanan Internet (ISP) Anda secara instan. Periksa informasi nama ISP, organisasi, ASN, dan alamat IP secara gratis.",
             "h1": "Apa ISP Saya?",
-            "subtitle": "Identify your Internet Service Provider with connection details"
+            "subtitle": "Identifikasi Penyedia Layanan Internet Anda dengan detail koneksi"
         },
         "content": {
-            "loading": "Loading ISP information...",
-            "your_isp_title": "Your Internet Service Provider",
-            "network_label": "Network",
-            "location_label": "Location",
-            "main_title": "What Is My ISP - Internet Service Provider Lookup Tool",
-            "main_desc": "Instantly identify your Internet Service Provider (ISP), organization name, network details, and connection information. Our free ISP lookup tool reveals your ISP name, ASN (Autonomous System Number), IP address, location, and network infrastructure. Perfect for verifying VPN connections, troubleshooting network issues, confirming business internet lines, and understanding your network routing.",
-            "info_title": "What Information Can You Find?",
-            "info1": "<strong>ISP Name:</strong> The company providing your internet connection",
-            "info2": "<strong>Organization:</strong> The organization or entity managing your network connection",
-            "info3": "<strong>ASN:</strong> Unique network identifier for routing and peering",
-            "info4": "<strong>Location:</strong> City, region, and country associated with your connection",
-            "info5": "<strong>Network Details:</strong> IP range, subnet information, and network infrastructure data",
-            "why_use_title": "Why Use This Tool?",
-            "why_use1": "Verify you're connected through the correct internet provider",
-            "why_use2": "Troubleshoot network connectivity and performance issues",
-            "why_use3": "Check if you're using a VPN or proxy service correctly",
-            "why_use4": "Identify your network for security and privacy purposes",
-            "why_use5": "Verify ISP claims about service coverage and infrastructure",
-            "why_use6": "Research network routing and peering relationships",
-            "why_use7": "Confirm business internet connections and dedicated lines",
-            "why_use8": "Detect unauthorized network access or connection hijacking",
-            "asn_title": "Understanding ASN (Autonomous System Number)",
-            "asn_desc": "An Autonomous System Number (ASN) is a globally unique identifier assigned to a network or group of networks under a single administrative control. ISPs, large organizations, and content delivery networks each have their own ASN. This number is used in BGP (Border Gateway Protocol) routing to determine how internet traffic flows between different networks. Knowing your ASN helps identify your network provider and understand routing paths.",
-            "use_cases_title": "Common Use Cases",
-            "use_case1_title": "🔧 Network Troubleshooting",
-            "use_case1_desc": "Identify ISP-related issues, verify routing paths, and diagnose connection problems",
-            "use_case2_title": "🔒 VPN Verification",
-            "use_case2_desc": "Confirm your VPN is working by checking if ISP changes when connected",
-            "use_case3_title": "🛡️ Security Audits",
-            "use_case3_desc": "Verify connection authenticity and detect unauthorized network access",
-            "use_case4_title": "💼 Business Verification",
-            "use_case4_desc": "Confirm dedicated business lines and enterprise internet connections",
-            "isp_types_title": "Types of ISPs",
-            "isp_type1": "<strong>DSL ISPs:</strong> Internet over telephone lines (ADSL, VDSL)",
-            "isp_type2": "<strong>Cable ISPs:</strong> High-speed internet via coaxial cable infrastructure",
-            "isp_type3": "<strong>Fiber Optic ISPs:</strong> Ultra-fast connections using fiber optic cables",
-            "isp_type4": "<strong>Wireless/Mobile ISPs:</strong> 4G/5G cellular internet connections",
-            "isp_type5": "<strong>Satellite ISPs:</strong> Internet via satellite for remote areas",
-            "isp_type6": "<strong>Business ISPs:</strong> Dedicated enterprise-grade connections with SLAs",
-            "privacy_note_title": "Privacy Note",
-            "privacy_note_desc": "Your ISP can see all unencrypted internet traffic and the websites you visit (but not HTTPS content). They may log connection data, browsing history, and DNS queries. Use a VPN to encrypt your traffic and prevent ISP monitoring. Our tool only displays publicly available information that websites can already see."
+            "loading": "Memuat informasi ISP...",
+            "your_isp_title": "Penyedia Layanan Internet Anda",
+            "network_label": "Jaringan",
+            "location_label": "Lokasi",
+            "main_title": "Apa ISP Saya - Alat Pencarian Penyedia Layanan Internet",
+            "main_desc": "Identifikasi Penyedia Layanan Internet (ISP) Anda secara instan, nama organisasi, detail jaringan, dan informasi koneksi. Alat pencarian ISP gratis kami mengungkapkan nama ISP Anda, ASN (Nomor Sistem Otonom), alamat IP, lokasi, dan infrastruktur jaringan. Sempurna untuk memverifikasi koneksi VPN, memecahkan masalah jaringan, mengonfirmasi jalur internet bisnis, dan memahami perutean jaringan Anda.",
+            "info_title": "Informasi Apa yang Dapat Anda Temukan?",
+            "info1": "<strong>Nama ISP:</strong> Perusahaan yang menyediakan koneksi internet Anda",
+            "info2": "<strong>Organisasi:</strong> Organisasi atau entitas yang mengelola koneksi jaringan Anda",
+            "info3": "<strong>ASN:</strong> Pengenal jaringan unik untuk perutean dan peering",
+            "info4": "<strong>Lokasi:</strong> Kota, wilayah, dan negara yang terkait dengan koneksi Anda",
+            "info5": "<strong>Detail Jaringan:</strong> Rentang IP, informasi subnet, dan data infrastruktur jaringan",
+            "why_use_title": "Mengapa Menggunakan Alat Ini?",
+            "why_use1": "Pastikan Anda terhubung melalui penyedia internet yang benar",
+            "why_use2": "Memecahkan masalah konektivitas jaringan dan masalah kinerja",
+            "why_use3": "Periksa apakah Anda menggunakan VPN atau layanan proxy dengan benar",
+            "why_use4": "Identifikasi jaringan Anda untuk tujuan keamanan dan privasi",
+            "why_use5": "Verifikasi klaim ISP tentang cakupan layanan dan infrastruktur",
+            "why_use6": "Teliti perutean jaringan dan hubungan peering",
+            "why_use7": "Konfirmasikan koneksi internet bisnis dan jalur khusus",
+            "why_use8": "Mendeteksi akses jaringan yang tidak sah atau pembajakan koneksi",
+            "asn_title": "Pengertian ASN (Nomor Sistem Otonom)",
+            "asn_desc": "Autonomous System Number (ASN) adalah pengidentifikasi unik global yang ditetapkan ke jaringan atau sekelompok jaringan di bawah kendali administratif tunggal. ISP, organisasi besar, dan jaringan pengiriman konten masing-masing memiliki ASNnya sendiri. Nomor ini digunakan dalam perutean BGP (Border Gateway Protocol) untuk menentukan bagaimana lalu lintas internet mengalir antar jaringan yang berbeda. Mengetahui ASN Anda membantu mengidentifikasi penyedia jaringan Anda dan memahami jalur perutean.",
+            "use_cases_title": "Kasus Penggunaan Umum",
+            "use_case1_title": "🔧 Pemecahan Masalah Jaringan",
+            "use_case1_desc": "Identifikasi masalah terkait ISP, verifikasi jalur perutean, dan diagnosis masalah koneksi",
+            "use_case2_title": "🔒 Verifikasi VPN",
+            "use_case2_desc": "Konfirmasikan VPN Anda berfungsi dengan memeriksa apakah ISP berubah saat terhubung",
+            "use_case3_title": "🛡️ Audit Keamanan",
+            "use_case3_desc": "Verifikasi keaslian koneksi dan deteksi akses jaringan yang tidak sah",
+            "use_case4_title": "💼 Verifikasi Bisnis",
+            "use_case4_desc": "Konfirmasikan lini bisnis khusus dan koneksi internet perusahaan",
+            "isp_types_title": "Jenis ISP",
+            "isp_type1": "<strong>ISP DSL:</strong> Internet melalui saluran telepon (ADSL, VDSL)",
+            "isp_type2": "<strong>ISP kabel:</strong> Internet berkecepatan tinggi melalui infrastruktur kabel koaksial",
+            "isp_type3": "<strong>ISP Serat Optik:</strong> Koneksi ultra cepat menggunakan kabel serat optik",
+            "isp_type4": "<strong>ISP Nirkabel/Seluler:</strong> Koneksi internet seluler 4G/5G",
+            "isp_type5": "<strong>ISP satelit:</strong> Internet melalui satelit untuk daerah terpencil",
+            "isp_type6": "<strong>ISP Bisnis:</strong> Koneksi khusus tingkat perusahaan dengan SLA",
+            "privacy_note_title": "Catatan Privasi",
+            "privacy_note_desc": "ISP Anda dapat melihat semua lalu lintas internet yang tidak terenkripsi dan situs web yang Anda kunjungi (tetapi tidak melihat konten HTTPS). Mereka mungkin mencatat data koneksi, riwayat penelusuran, dan permintaan DNS. Gunakan VPN untuk mengenkripsi lalu lintas Anda dan mencegah pemantauan ISP. Alat kami hanya menampilkan informasi yang tersedia untuk umum yang sudah dapat dilihat oleh situs web."
         },
         "results": {
-            "ip_address": "",
-            "asn": ""
+            "ip_address": "Alamat IP Anda",
+            "asn": "ASN (Nomor Sistem Otonom)"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu ISP?",
+            "a1": "ISP adalah singkatan dari Internet Service Provider - perusahaan yang menyediakan koneksi internet Anda. Contohnya termasuk Comcast, AT&T, Verizon, atau penyedia lokal. ISP Anda memberikan alamat IP Anda dan merutekan semua lalu lintas internet Anda.",
+            "q2": "Apa itu ASN?",
+            "a2": "ASN (Autonomous System Number) adalah pengidentifikasi unik yang ditetapkan ke jaringan dan ISP untuk perutean internet. Ini membantu mengidentifikasi organisasi mana yang mengontrol blok alamat IP. ISP besar memiliki ASN sendiri, sementara penyedia yang lebih kecil mungkin berbagi ASN.",
+            "q3": "Bisakah saya menyembunyikan informasi ISP saya?",
+            "a3": "Menggunakan VPN (Virtual Private Network) akan menampilkan ISP penyedia VPN, bukan ISP Anda yang sebenarnya. Namun, ISP asli Anda masih dapat melihat bahwa Anda menggunakan VPN. Proxy dan Tor juga dapat menutupi informasi ISP Anda."
         },
         "js": {
-            "error_loading": ""
+            "error_loading": "Gagal mendeteksi informasi ISP"
         }
     },
     "whois-lookup": {
         "meta": {
             "title": "Alat Pencarian WHOIS - Pemeriksa Info Domain Online Gratis",
-            "description": "Free WHOIS lookup tool to check domain registration details. View registrar, nameservers, expiration date, and domain status instantly.",
+            "description": "Alat pencarian WHOIS gratis untuk memeriksa detail pendaftaran domain. Lihat registrar, server nama, tanggal kedaluwarsa, dan status domain secara instan.",
             "h1": "Alat Pencarian WHOIS",
-            "subtitle": "Query WHOIS database for domain registration & ownership details"
+            "subtitle": "Kueri database WHOIS untuk pendaftaran domain & detail kepemilikan"
         },
         "form": {
-            "domain_label": "Domain Name",
-            "domain_placeholder": "example.com",
-            "button": "Lookup WHOIS",
-            "button_loading": "Looking up..."
+            "domain_label": "Nama Domain",
+            "domain_placeholder": "contoh.com",
+            "button": "Cari WHOIS",
+            "button_loading": "Melihat ke atas..."
         },
         "content": {
-            "form_hint": "Enter domain without http:// or https://",
-            "what_is_title": "What is WHOIS Lookup?",
-            "what_is_desc": "WHOIS is a protocol that provides information about domain name registrations. It reveals details about domain ownership, registration dates, expiration dates, nameservers, and registrar information.",
-            "why_use_title": "Why Use WHOIS Lookup?",
-            "why_use_desc": "WHOIS lookup is essential for verifying domain ownership, checking domain availability, investigating suspicious websites, monitoring domain expiration dates, and researching competitors' domains.",
-            "key_info_title": "Key Information Provided",
-            "key_info1": "<strong>Registrant Information:</strong> Domain owner details (may be privacy protected)",
-            "key_info2": "<strong>Registration Dates:</strong> When domain was registered and last updated",
-            "key_info3": "<strong>Expiration Date:</strong> When domain registration expires",
-            "key_info4": "<strong>Registrar:</strong> Company managing the domain registration",
-            "key_info5": "<strong>Name Servers:</strong> DNS servers hosting the domain",
-            "key_info6": "<strong>Domain Status:</strong> Current status codes and locks",
-            "how_to_title": "How to Use",
-            "how_to1": "Enter the domain name you want to lookup",
-            "how_to2": "Click \"Lookup WHOIS\" button",
-            "how_to3": "Review comprehensive registration information",
-            "how_to4": "Use the data for your research or verification needs",
-            "privacy_title": "Privacy and WHOIS",
-            "privacy_desc": "Many domain registrars now offer WHOIS privacy protection services that mask personal information from public WHOIS databases. This protects domain owners from spam, identity theft, and unwanted solicitation while still maintaining the essential technical information needed for domain operation. GDPR regulations have also impacted WHOIS data availability, with many European registrars redacting personal information to comply with privacy laws."
+            "form_hint": "Masukkan domain tanpa http:// atau https://",
+            "what_is_title": "Apa itu Pencarian WHOIS?",
+            "what_is_desc": "WHOIS adalah protokol yang menyediakan informasi tentang pendaftaran nama domain. Ini mengungkapkan rincian tentang kepemilikan domain, tanggal pendaftaran, tanggal kedaluwarsa, server nama, dan informasi registrar.",
+            "why_use_title": "Mengapa Menggunakan Pencarian WHOIS?",
+            "why_use_desc": "Pencarian WHOIS penting untuk memverifikasi kepemilikan domain, memeriksa ketersediaan domain, menyelidiki situs web yang mencurigakan, memantau tanggal kedaluwarsa domain, dan meneliti domain pesaing.",
+            "key_info_title": "Informasi Penting Disediakan",
+            "key_info1": "<strong>Informasi Pendaftar:</strong> Detail pemilik domain (mungkin dilindungi privasi)",
+            "key_info2": "<strong>Tanggal Pendaftaran:</strong> Kapan domain didaftarkan dan terakhir diperbarui",
+            "key_info3": "<strong>Tanggal Kedaluwarsa:</strong> Saat pendaftaran domain berakhir",
+            "key_info4": "<strong>Registrar:</strong> Perusahaan yang mengelola pendaftaran domain",
+            "key_info5": "<strong>Server Nama:</strong> Server DNS yang menghosting domain",
+            "key_info6": "<strong>Status Domain:</strong> Kode dan kunci status saat ini",
+            "how_to_title": "Cara Menggunakan",
+            "how_to1": "Masukkan nama domain yang ingin Anda cari",
+            "how_to2": "Klik tombol \"Cari WHOIS\".",
+            "how_to3": "Tinjau informasi pendaftaran yang komprehensif",
+            "how_to4": "Gunakan data tersebut untuk kebutuhan penelitian atau verifikasi Anda",
+            "privacy_title": "Privasi dan WHOIS",
+            "privacy_desc": "Banyak pendaftar domain kini menawarkan layanan perlindungan privasi WHOIS yang menyembunyikan informasi pribadi dari database WHOIS publik. Hal ini melindungi pemilik domain dari spam, pencurian identitas, dan permintaan yang tidak diinginkan sambil tetap menjaga informasi teknis penting yang diperlukan untuk pengoperasian domain. Peraturan GDPR juga berdampak pada ketersediaan data WHOIS, dengan banyak pendaftar di Eropa yang menyunting informasi pribadi untuk mematuhi undang-undang privasi."
         },
         "results": {
-            "title": ""
+            "title": "Informasi WHOIS"
         },
         "faq": {
-            "title": "",
-            "q1": "",
-            "a1": "",
-            "q2": "",
-            "a2": "",
-            "q3": "",
-            "a3": "",
-            "q4": "",
-            "a4": ""
+            "title": "Pertanyaan yang Sering Diajukan",
+            "q1": "Apa itu pencarian WHOIS?",
+            "a1": "WHOIS adalah kueri basis data yang menyediakan informasi pendaftaran tentang nama domain dan alamat IP, termasuk detail pendaftar, tanggal pendaftaran, tanggal kedaluwarsa, server nama, dan informasi registrar. Ini berguna untuk penelitian dan verifikasi domain.",
+            "q2": "Mengapa informasi WHOIS disembunyikan?",
+            "a2": "Banyak pemilik domain menggunakan perlindungan privasi WHOIS (juga disebut privasi domain) untuk menyembunyikan informasi kontak pribadi mereka dari database WHOIS publik. Hal ini mencegah spam, pencurian identitas, dan permintaan yang tidak diinginkan sambil mempertahankan kepemilikan domain.",
+            "q3": "Apakah pencarian WHOIS legal?",
+            "a3": "Ya, pencarian WHOIS sepenuhnya legal dan merupakan protokol internet standar. Data WHOIS tersedia untuk umum untuk tujuan yang sah seperti penelitian domain, perlindungan merek dagang, dan pemecahan masalah jaringan. Namun, dilarang menggunakan data WHOIS untuk spam atau pelecehan.",
+            "q4": "Seberapa sering data WHOIS diperbarui?",
+            "a4": "Data WHOIS diperbarui secara real-time ketika informasi pendaftaran domain berubah. Namun, server WHOIS yang berbeda mungkin menyimpan data dalam cache untuk periode yang berbeda-beda. Perubahan terkini mungkin memerlukan waktu beberapa jam untuk diterapkan ke seluruh database WHOIS secara global."
         }
     }
 }
