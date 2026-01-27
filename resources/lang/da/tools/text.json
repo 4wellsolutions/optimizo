@@ -86,7 +86,7 @@
         },
         "editor": {
             "label_input": "Indtast morsekode",
-            "ph_input": "... --- ...",
+            "ph_input": null,
             "btn_decode": "Afkod til tekst",
             "btn_clear": "Ryd",
             "btn_copy": "Kopier",
@@ -103,19 +103,97 @@
                     "title": "Standard afkodning",
                     "desc": "Bruger den internationale morsekodestandard"
                 },
-                "øjeblikkelig": {
-                    "title": "Øjeblikkelig konvertering",
-                    "desc": "Konverterer morse til tekst på millisekunder"
+                "instant": {
+                    "title": "Øjeblikkelig afkodning",
+                    "desc": "Konverter Morse til tekst i millisekunder"
                 },
                 "privacy": {
                     "title": "Privatliv",
                     "desc": "Al behandling sker i din browser"
+                },
+                "bulk": {
+                    "title": "Bulk afkodning",
+                    "desc": "Afkode flere ord på én gang"
+                },
+                "alphanum": {
+                    "title": "Bogstaver og tal",
+                    "desc": "Afkoder A-Z og 0-9"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen begrænsninger eller registrering påkrævet"
                 }
+            },
+            "uses_title": "🎯 Almindelige tilfælde",
+            "uses": {
+                "learn": {
+                    "title": "📚 Lær morsekode",
+                    "desc": "Øv dig i at afkode morsekode for at forbedre dine færdigheder"
+                },
+                "decode": {
+                    "title": "🔓 Afkodning af beskeder",
+                    "desc": "Afkode morse-beskeder fra venner eller gåder"
+                },
+                "games": {
+                    "title": "🎮 Spil og puslespil",
+                    "desc": "Løs morse-gåder i spil og flugtrum"
+                },
+                "radio": {
+                    "title": "📡 Skinkeradio",
+                    "desc": "Afkod amatørradiotransmissioner og øv CW"
+                },
+                "edu": {
+                    "title": "🎓 Uddannelse",
+                    "desc": "Lær eleverne om kommunikations- og kodningssystemer"
+                },
+                "emergency": {
+                    "title": "🚨 Nødsignaler",
+                    "desc": "Afkode nødsignaler og nødkommunikation"
+                }
+            },
+            "how_title": "📚 Sådan bruges",
+            "how_steps": {
+                "1": {
+                    "title": "Indtast morsekode:",
+                    "desc": "Indtast prikker (.) og bindestreger (-) adskilt af mellemrum"
+                },
+                "2": {
+                    "title": "Klik på Afkod:",
+                    "desc": "Tryk på knappen \"Afkod til tekst\"."
+                },
+                "3": {
+                    "title": "Gennemgang af output:",
+                    "desc": "Tjek det afkodede tekstresultat"
+                },
+                "4": {
+                    "title": "Kopiér resultat:",
+                    "desc": "Klik på \"Kopier\" for at kopiere til udklipsholder"
+                },
+                "5": {
+                    "title": "Brug tekst:",
+                    "desc": "Brug den afkodede besked"
+                }
+            },
+            "examples_title": "Morsekodeeksempler",
+            "samples": [],
+            "faq_title": "❓ Ofte stillede spørgsmål",
+            "faq": {
+                "q1": "Hvordan formaterer jeg morsekodeinput?",
+                "a1": "Adskil hvert bogstav med et mellemrum. Brug / til ordmellemrum. Eksempel: \"... --- ...\" for SOS.",
+                "q2": "Hvad hvis jeg laver en fejl?",
+                "a2": "Ugyldige morsekodemønstre vil blive sprunget over. Sørg for, at prikker og bindestreger er adskilt af mellemrum.",
+                "q3": "Kan jeg afkode tal?",
+                "a3": "Ja! Værktøjet afkoder tallene 0-9 fra deres morsekodemønstre.",
+                "q4": "Hvordan adskiller jeg ord?",
+                "a4": "Brug en skråstreg (/) for at adskille ord i morsekode.",
+                "q5": "Er dette værktøj gratis?",
+                "a5": "Ja! Helt gratis uden grænser. Al behandling foregår i din browser af hensyn til privatlivets fred."
             }
         },
         "js": {
             "error_empty": "Indtast venligst morsekode for at afkode",
             "success_decode": "Morsekoden blev afkodet!",
+            "error_copy": "Intet at kopiere! Afkod venligst noget morsekode først.",
             "success_copy": "Kopieret til udklipsholder!"
         }
     },
@@ -136,11 +214,98 @@
             "ph_output": "nedrev jeH"
         },
         "content": {
-            "p1": "Vend din tekst på et øjeblik. Dette værktøj vender teksten tegn for tegn og skaber en spejlvendt version."
+            "p1": "Vend din tekst på et øjeblik. Dette værktøj vender teksten tegn for tegn og skaber en spejlvendt version.",
+            "features": {
+                "char": {
+                    "title": "Karaktervending",
+                    "desc": "Vender tekst tegn for tegn"
+                },
+                "instant": {
+                    "title": "Øjeblikkelige resultater",
+                    "desc": "Vend tekst i millisekunder"
+                },
+                "privacy": {
+                    "title": "Beskyttet privatliv",
+                    "desc": "Al behandling foregår i din browser"
+                },
+                "bulk": {
+                    "title": "Bulk behandling",
+                    "desc": "Vend flere linjer på én gang"
+                },
+                "formatting": {
+                    "title": "Bevarer formatering",
+                    "desc": "Bevarer mellemrum og specialtegn"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen begrænsninger eller registrering påkrævet"
+                }
+            },
+            "uses_title": "Almindelige anvendelsestilfælde",
+            "uses": {
+                "puzzles": {
+                    "title": "Gåder og spil",
+                    "desc": "Lav ordgåder, gåder og hjernevridere med omvendt tekst"
+                },
+                "encoding": {
+                    "title": "Simpel kodning",
+                    "desc": "Opret grundlæggende kodede beskeder for sjov eller simpel sløring"
+                },
+                "palindrome": {
+                    "title": "Palindrom test",
+                    "desc": "Test om ord eller sætninger er palindromer ved at sammenligne med omvendt version"
+                },
+                "creative": {
+                    "title": "Kreativ skrivning",
+                    "desc": "Tilføj kunstnerisk flair til poesi og kreativt indhold"
+                },
+                "social": {
+                    "title": "Sociale medier",
+                    "desc": "Opret unikke indlæg og kommentarer med omvendt tekst"
+                },
+                "testing": {
+                    "title": "Afprøvning",
+                    "desc": "Test strengmanipulationsfunktioner i programmering"
+                }
+            },
+            "how_to": {
+                "title": "Sådan bruges",
+                "step1": "Indtast tekst",
+                "step1_desc": "Indtast eller indsæt den tekst, du vil vende tilbage",
+                "step2": "Klik på Reverse",
+                "step2_desc": "Tryk på knappen \"Vend tekst\".",
+                "step3": "Gennemgå output",
+                "step3_desc": "Tjek det omvendte tekstresultat",
+                "step4": "Kopiér resultat",
+                "step4_desc": "Klik på \"Kopier\" for at kopiere til udklipsholder",
+                "step5": "Brug hvor som helst",
+                "step5_desc": "Indsæt den omvendte tekst, hvor det er nødvendigt"
+            },
+            "examples_title": "Eksempler på tilbageførsel",
+            "examples": {
+                "simple": "Simpel tekst:",
+                "phrases": "Sætninger:",
+                "palindromes": "Palindromer:",
+                "numbers": "Tal:"
+            },
+            "faq_title": "Ofte stillede spørgsmål",
+            "faq": {
+                "q1": "Hvordan fungerer tekstvending?",
+                "a1": "Værktøjet vender om rækkefølgen af ​​tegn i din tekst. Den sidste karakter bliver først, næstsidst bliver anden, og så videre.",
+                "q2": "Bevarer det rum?",
+                "a2": "Ja! Alle tegn inklusive mellemrum, tegnsætning og specialtegn bevares og vendes i rækkefølge.",
+                "q3": "Kan jeg vende det tilbage?",
+                "a3": "Ja! Indsæt blot den omvendte tekst tilbage i inputtet og vend den igen for at få den originale tekst.",
+                "q4": "Hvad er palindromer?",
+                "a4": "Palindromer er ord eller sætninger, der læser det samme frem og tilbage, som \"racerbil\" eller \"frue\". Brug dette værktøj til at teste dem!",
+                "q5": "Er dette værktøj gratis?",
+                "a5": "Ja! Helt gratis uden grænser. Al behandling foregår i din browser af hensyn til privatlivets fred og hastighed."
+            }
         },
         "js": {
             "error_empty": "Indtast venligst tekst der skal vendes",
             "success_reverse": "Teksten blev vendt!",
+            "error_no_copy": "Intet at kopiere! Venligst vend noget tekst først.",
             "success_copy": "Kopieret!"
         }
     },
@@ -158,11 +323,101 @@
             "btn_clear": "Ryd",
             "btn_copy": "Kopier",
             "label_output": "Morsekode",
-            "ph_output": "... --- ..."
+            "ph_output": null
+        },
+        "content": {
+            "p1": "Konverter tekst til morse med det samme med vores gratis online konverter. Morsekode bruger prikker (.) og bindestreger (-) til at repræsentere bogstaver og tal. Perfekt til at lære morsekode, praksis i nødkommunikation eller oprette kodede beskeder.",
+            "features": {
+                "standard": {
+                    "title": "Standard morsekode",
+                    "desc": "Bruger international morsekodestandard"
+                },
+                "instant": {
+                    "title": "Øjeblikkelig kodning",
+                    "desc": "Konverter til morsekode i millisekunder"
+                },
+                "privacy": {
+                    "title": "Beskyttet privatliv",
+                    "desc": "Al behandling foregår i din browser"
+                },
+                "bulk": {
+                    "title": "Bulk behandling",
+                    "desc": "Konverter flere ord på én gang"
+                },
+                "alphanumeric": {
+                    "title": "Bogstaver og tal",
+                    "desc": "Understøtter A-Z og 0-9"
+                },
+                "free": {
+                    "title": "100 % gratis",
+                    "desc": "Ingen begrænsninger eller registrering påkrævet"
+                }
+            },
+            "uses_title": "Almindelige anvendelsestilfælde",
+            "uses": {
+                "learning": {
+                    "title": "At lære morsekode",
+                    "desc": "Øv og lær morsekode ved at konvertere velkendte ord og sætninger"
+                },
+                "emergency": {
+                    "title": "Akut praksis",
+                    "desc": "Lær SOS og andre nødsignaler i morsekode"
+                },
+                "gaming": {
+                    "title": "Spil og puslespil",
+                    "desc": "Opret kodede beskeder til spil og flugtrum"
+                },
+                "radio": {
+                    "title": "Skinke Radio",
+                    "desc": "Praksis for amatørradiolicenser og kommunikation"
+                },
+                "edu": {
+                    "title": "Undervisning",
+                    "desc": "Lær eleverne om kommunikationshistorie og kodning"
+                },
+                "secret": {
+                    "title": "Hemmelige beskeder",
+                    "desc": "Opret sjove kodede beskeder til venner"
+                }
+            },
+            "how_to": {
+                "title": "Sådan bruges",
+                "step1": "Indtast tekst",
+                "step1_desc": "Indtast den tekst, du vil konvertere",
+                "step2": "Klik på Konverter",
+                "step2_desc": "Tryk på \"Konverter til morsekode\"",
+                "step3": "Gennemgå output",
+                "step3_desc": "Tjek morsekoderesultatet",
+                "step4": "Kopiér resultat",
+                "step4_desc": "Klik på \"Kopier\" for at kopiere til udklipsholder",
+                "step5": "Brug morsekode",
+                "step5_desc": "Del eller øv dig med den kodede besked"
+            },
+            "examples_title": "Konverteringseksempler",
+            "examples": {
+                "sos": "SOS-signal:",
+                "word": "Simpelt ord:",
+                "numbers": "Tal:",
+                "phrase": "Udtryk:"
+            },
+            "faq_title": "Ofte stillede spørgsmål",
+            "faq": {
+                "q1": "Hvad er morsekode?",
+                "a1": "Morsekode er en metode til at kode tekst ved hjælp af prikker (.) og bindestreger (-) til at repræsentere bogstaver og tal. Det blev opfundet i 1830'erne til telegrafkommunikation.",
+                "q2": "Hvad betyder SOS i morsekode?",
+                "a2": "SOS er ... --- ... (tre prikker, tre streger, tre prikker). Det er det internationale nødsignal.",
+                "q3": "Kan jeg konvertere tal?",
+                "a3": "Ja! Værktøjet understøtter tallene 0-9, hver med sit eget morsekodemønster.",
+                "q4": "Bruges morsekode stadig i dag?",
+                "a4": "Ja! Det bruges stadig i luftfart, maritim kommunikation, amatørradio og som et tilgængelighedsværktøj.",
+                "q5": "Er dette værktøj gratis?",
+                "a5": "Ja! Helt gratis uden grænser. Al behandling foregår i din browser af hensyn til privatlivets fred."
+            }
         },
         "js": {
             "error_empty": "Indtast venligst tekst der skal konverteres",
             "success_convert": "Konverteret til morsekode!",
+            "error_no_copy": "Intet at kopiere! Venligst konverter noget tekst først.",
             "success_copy": "Kopieret!"
         }
     },
@@ -187,6 +442,27 @@
             "short_sentences": "Korte sætninger",
             "chars_no_spaces": "Tegn (uden mellemrum)",
             "avg_word_length": "Gns. ordlængde"
+        },
+        "content": {
+            "main_title": "Gratis ord tæller værktøj",
+            "main_description": "Tæl ord, tegn, sætninger og afsnit med det samme. Perfekt til forfattere, studerende og SEO-professionelle.",
+            "intro": "Vores ordtællerværktøj giver statistik i realtid om din tekst, herunder ordantal, tegnantal, sætningsantal, læsetid og mere. Det er perfekt til essays, artikler, indlæg på sociale medier og SEO-indholdsoptimering.",
+            "features_title": "Funktioner",
+            "feature1_title": "Realtidstælling",
+            "feature1_desc": "Se ord- og tegnantal opdateres øjeblikkeligt, mens du skriver eller indsætter tekst.",
+            "feature2_title": "Estimat for læsetid",
+            "feature2_desc": "Beregn, hvor lang tid det tager at læse dit indhold baseret på gennemsnitlig læsehastighed.",
+            "feature3_title": "Sætningsanalyse",
+            "feature3_desc": "Identificer lange og korte sætninger for at forbedre læsbarheden og flowet.",
+            "feature4_title": "SEO optimering",
+            "feature4_desc": "Spor tegnbegrænsninger for metabeskrivelser, titler og opslag på sociale medier.",
+            "faq_title": "Ofte stillede spørgsmål",
+            "faq1_q": "Hvor nøjagtigt er ordtællingen?",
+            "faq1_a": "Vores ordtæller bruger industristandardalgoritmer til at tælle ord nøjagtigt. Den tæller ord adskilt af mellemrum og ignorerer ekstra mellemrum, hvilket giver dig præcise resultater, der matcher værktøjer som Microsoft Word og Google Docs.",
+            "faq2_q": "Hvad betragtes som en \"lang sætning\"?",
+            "faq2_a": "En sætning med mere end 20 ord betragtes typisk som lang. Lange sætninger kan reducere læsbarheden, så vores værktøj fremhæver dem for at hjælpe dig med at forbedre din skriveklarhed.",
+            "faq3_q": "Hvordan beregnes læsetiden?",
+            "faq3_a": "Læsetiden er beregnet ud fra en gennemsnitlig læsehastighed på 200-250 ord i minuttet for voksne. Dette giver dig et skøn over, hvor lang tid det tager at læse dit indhold."
         }
     }
 }

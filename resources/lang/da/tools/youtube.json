@@ -54,7 +54,7 @@
         "use_cases": {
             "case1": "Konkurrentanalyse",
             "case1_desc": "Analyser konkurrerende kanaler for at forstå deres vækst og strategier",
-            "case2": "Influencer Research",
+            "case2": "Influencerforskning",
             "case2_desc": "Evaluer influencere mhp. samarbejder og sponsormuligheder",
             "case3": "Markedsundersøgelse",
             "case3_desc": "Analyser kanalers ydeevne inden for din niche eller branche",
@@ -91,7 +91,7 @@
             "error_valid_url": "Indtast venligst en gyldig YouTube-kanal URL",
             "extracting": "Udtrakker data...",
             "error_failed": "Kunne ikke hente kanaldata. Prøv venligst igen.",
-            "kopier": "Kopier",
+            "copy": "Kopi",
             "copied": "Kopieret!"
         }
     },
@@ -112,7 +112,7 @@
         "js": {
             "success_title": "Kanal-ID fundet!",
             "channel_id": "Kanal-ID",
-            "kopier": "Kopier",
+            "copy": "Kopi",
             "error_enter_url": "Indtast venligst en YouTube-kanal URL",
             "error_valid_url": "Indtast venligst en gyldig YouTube-kanal URL",
             "finding": "Finder ID...",
@@ -142,7 +142,7 @@
             "marketing_4": "Analyser kanalers væksttendenser"
         },
         "features": {
-            "øjeblikkelig": "Øjeblikkelige resultater"
+            "instant": "Øjeblikkelige resultater"
         },
         "use_cases": {
             "title": "Vigtige anvendelsestilfælde",
@@ -150,7 +150,7 @@
             "case1_desc": "Brug kanal-ID'er i YouTube Data API-kald til dine applikationer",
             "case2": "Analyseværktøjer",
             "case2_desc": "Byg brugerdefinerede analysedashboards og sporingssystemer",
-            "case3": "Influencer Marketing",
+            "case3": "Influencer marketing",
             "case3_desc": "Administrer og følg influencer-partnerskaber effektivt",
             "case4": "RSS-feeds",
             "case4_desc": "Opret RSS-feeds til kanaluploads ved hjælp af kanal-ID",
@@ -239,7 +239,7 @@
             "tip5": "Diversificer indtægterne med kanalmedlemskaber, Super Chat og hylde med merchandise"
         },
         "features": {
-            "øjeblikkelig": "Øjeblikkelig beregning",
+            "instant": "Øjeblikkelige beregninger",
             "instant_desc": "Få dine daglige, månedlige og årlige prognoser med det samme",
             "realistic_ranges": "Realistiske intervaller",
             "realistic_ranges_desc": "Se mindste- og maksimale estimater baseret på CPM-variationer",
@@ -350,7 +350,7 @@
             "req3_desc": "En aktiv AdSense-konto knyttet til din kanal",
             "req3_note": "Nødvendigt for at modtage udbetalinger af din indtjening",
             "req4_title": " Overholdelse af regler",
-            "req4_description": "Ingen aktive advarsler om overtrædelse af retningslinjer for fællesskabet",
+            "req4_desc": "Ingen aktive markeringer, overtrædelser eller politikadvarsler",
             "req4_note": "Fuld respekt for retningslinjerne for fællesskabet",
             "revenue_title": " Indtægtskilder på YouTube",
             "revenue1_title": "Annonceindtægter",
@@ -363,6 +363,10 @@
             "revenue4_desc": "En del af abonnementsgebyret fra Premium-brugere",
             "revenue5_title": "Hylde med merchandise",
             "revenue5_desc": "Sælg officielle varer direkte på din kanal",
+            "revenue6_title": "YouTube Premium-omsætning",
+            "revenue6_desc": "Tjen en andel af abonnementsgebyrerne, når YouTube Premium-medlemmer ser dit indhold. Dette giver en stabil indkomst uafhængig af annoncer.",
+            "notice_title": "Vigtig meddelelse",
+            "notice_text": "Kvalificering til indtægtsgenerering kræver 1.000 abonnenter og 4.000 visningstimer inden for de seneste 12 måneder. Den faktiske indtjening varierer baseret på CPM, målgruppeplacering, indholdskategori og annoncørbehov. Dette værktøj giver kun skøn.",
             "faq_title": " Ofte stillede spørgsmål",
             "faq_q1": "Er dette værktøj 100% pålideligt?",
             "faq_a1": "Vi giver et estimat baseret på offentlige data. YouTube Studio er den officielle kilde.",
@@ -465,7 +469,7 @@
             "resolution_hd_title": "HD (Højeste opløsning)",
             "resolution_label": "Opløsning",
             "resolution_hd_description": "Bedst mulige kvalitet – ideel til professionelle designs",
-            "resolution_sd_title": "SD (Standard)",
+            "resolution_sd_title": "SD (standard)",
             "resolution_sd_description": "Standard skarphed – god balance til web",
             "resolution_hq_title": "HQ (Høj kvalitet)",
             "resolution_hq_description": "Ender sig godt til blogs og sociale medier",
@@ -512,6 +516,19 @@
             "step3_description": "Tryk på knappen for at generere forhåndsvisningen.",
             "step4_title": "Gem:",
             "step4_description": "Vælg den ønskede størrelse og gem billedet."
+        },
+        "extra_use_cases": {
+            "title": "Populære anvendelsesmuligheder for YouTube-miniaturebilleder",
+            "content_creation_title": "Indholdsoprettelse:",
+            "content_creation_desc": "Analyser konkurrentens thumbnails for inspiration og trends",
+            "presentations_title": "Præsentationer:",
+            "presentations_desc": "Brug videominiaturebilleder i PowerPoint eller Google Slides",
+            "social_media_title": "Sociale medier:",
+            "social_media_desc": "Del videoforhåndsvisninger på Twitter, Facebook eller Instagram",
+            "design_reference_title": "Design reference:",
+            "design_reference_desc": "Brug thumbnails som designinspiration til dit eget indhold",
+            "archiving_title": "Arkivering:",
+            "archiving_desc": "Gem mindeværdige videominiaturer til personlige samlinger"
         }
     },
     "youtube-video-data-extractor": {
@@ -553,7 +570,7 @@
             "data_performance_title": " Performancemetrikker",
             "data_view_count": "Visninger",
             "data_view_count_desc": "Kumulativt samlet antal visninger",
-            "data_likes": "Likes",
+            "data_likes": "Synes godt om",
             "data_likes_desc": "Antal modtagne likes",
             "data_publish_date": "Udgivelsesdato",
             "data_publish_date_desc": "Datoen hvor videoen blev uploadet",
@@ -594,41 +611,41 @@
             "pro_tip_5": "Bemærk de bedste tidspunkter for upload",
             "faq_title": "Ofte stillede spørgsmål",
             "faq_q1": "Skal jeg bruge en API-nøgle?",
-            "a1": "Nej, værktøjet bruger direkte offentlige data.",
+            "faq_a1": "Ingen! Vores værktøj udtrækker offentligt tilgængelige videodata uden at kræve API-nøgler, registrering eller godkendelse. Indsæt blot videoens URL og få øjeblikkelige resultater.",
             "faq_q2": "Hvilken type data leveres?",
-            "a2": "Titel, beskrivelse, tags, visninger, likes, kategori, varighed osv.",
+            "faq_a2": "Du kan udtrække omfattende data, herunder videotitel, beskrivelse, tags, antal visninger, likes, kanalnavn, udgivelsesdato, kategori, varighed, miniaturebillede og mere. Alle data vises i et letlæseligt format med kopiknapper.",
             "faq_q3": "Er det nyttigt til at følge konkurrenter?",
-            "a3": "Helt sikkert ja, det hjælper enormt med at forstå deres SEO-strategi.",
+            "faq_a3": "Absolut! Dette værktøj er perfekt til konkurrenceanalyse. Udtræk data fra konkurrentvideoer for at forstå deres SEO-strategi, indholdstilgang og hvad der gør deres videoer succesfulde.",
             "faq_q4": "Er der nogen grænser?",
-            "a4": "Nei, ubegrænset brug og gratis for alle.",
+            "faq_a4": "Ingen grænser! Du kan udtrække data fra så mange YouTube-videoer, som du har brug for, helt gratis. Der er ingen daglige grænser, ingen registrering nødvendig og ingen skjulte gebyrer.",
             "faq_q5": "Kan jeg kopiere data nemt?",
-            "a5": "Ja, der er en kopier-knap for hvert element i resultaterne.",
-            "js": {
-                "error_enter_url": "Indtast venligst YouTube URL",
-                "error_valid_url": "Indtast venligst en gyldig YouTube URL",
-                "extracting": "Udtrakker...",
-                "error_failed": "Udtrakning mislykkedes. Prøv venligst igen.",
-                "video_thumbnail": "Videoforhåndsvisning",
-                "video_title": "Videotitel",
-                "channel_name": "Kanalnavn",
-                "views": "visninger",
-                "likes": "likes",
-                "publish_date": "Udgivet d.",
-                "duration": "Varighed",
-                "video_id": "Video-ID",
-                "description": "Beskrivelse",
-                "tags": "Tags",
-                "kopier": "Kopier",
-                "copied": "Kopieret!"
-            }
+            "faq_a5": "Ja! Vi tilbyder kopieringsknapper med et enkelt klik til titel, beskrivelse og tags. Du kan nemt kopiere ethvert datafelt og bruge det til din egen indholdsoprettelse, research eller analyseformål."
+        },
+        "js": {
+            "error_enter_url": "Indtast venligst en YouTube-URL",
+            "error_valid_url": "Indtast venligst en gyldig YouTube-URL",
+            "extracting": "Udtrækker data...",
+            "error_failed": "Kunne ikke udtrække videodata. Prøv venligst igen.",
+            "video_thumbnail": "Video miniaturebillede",
+            "video_title": "Video titel",
+            "channel_name": "Kanalnavn",
+            "views": "Visninger",
+            "likes": "Synes godt om",
+            "publish_date": "Udgivelsesdato",
+            "duration": "Varighed",
+            "video_id": "Video-id",
+            "description": "Beskrivelse",
+            "tags": "Tags",
+            "copy": "Kopi",
+            "copied": "Kopieret!"
         }
     },
     "youtube-video-tags-extractor": {
         "meta": {
             "title": "YouTube Video Tags Extractor - Gratis onlineværktøj",
+            "description": "Udtræk tags fra enhver YouTube video med det samme. Analyser dine konkurrenters SEO-strategi helt gratis.",
             "h1": "YouTube Video Tags Extractor",
-            "subtitle": "Identificer skjulte tags fra enhver YouTube video til SEO-analyse.",
-            "description": "Udtræk tags fra enhver YouTube video med det samme. Analyser dine konkurrenters SEO-strategi helt gratis."
+            "subtitle": "Identificer skjulte tags fra enhver YouTube video til SEO-analyse."
         },
         "form": {
             "title": "Udtræk videotags",
@@ -679,56 +696,85 @@
     "text-to-speech": {
         "meta": {
             "title": "Tekst til tale-konvertering - Gratis online AI-lyd",
-            "description": "Convert text into natural-sounding speech instantly. Best free text to speech tool with premium neural voices. Unlimited characters, mp3 download.",
+            "description": "Konverter tekst til naturligt klingende tale med det samme. Bedste gratis tekst til tale-værktøj med premium neurale stemmer. Ubegrænset tegn, mp3 download.",
             "h1": "Tekst til tale konverter",
-            "subtitle": "Turn any text into lifelike audio with realistic AI voices instantly."
+            "subtitle": "Forvandl enhver tekst til naturtro lyd med realistiske AI-stemmer øjeblikkeligt."
         },
         "form": {
-            "label_text": "Enter Text",
-            "placeholder_text": "Type or paste your text here (max 5000 characters)...",
-            "label_voice": "Select AI Voice",
-            "btn_generate": "Generate Audio",
-            "max_chars": "Max 5000 characters",
-            "chars_counter": "characters"
+            "label_text": "Indtast tekst",
+            "placeholder_text": "Indtast eller indsæt din tekst her (max 5000 tegn)...",
+            "label_voice": "Vælg AI Voice",
+            "btn_generate": "Generer lyd",
+            "max_chars": "Max 5000 tegn",
+            "chars_counter": "tegn"
         },
         "content": {
-            "hero_title": "Turn Text into Human-Like Speech",
-            "hero_subtitle": "Instantly convert articles, scripts, and documents into natural-sounding audio. Perfect for creators, students, and accessibility.",
-            "features_title": "Advanced Text to Speech Features",
-            "feature1_title": "Natural AI Voices",
-            "feature1_desc": "Experience a wide range of premium neural voices that sound incredibly human and engaging.",
-            "feature2_title": "Multiple Languages",
-            "feature2_desc": "Support for global languages including English, Spanish, French, German, Japanese, and more.",
-            "feature3_title": "Unlimited & Free",
-            "feature3_desc": "Generate unlimited audio files without hidden fees or subscription requirements.",
-            "how_title": "How to Convert Text to Audio",
-            "step1_title": "Input Text",
-            "step1_desc": "Paste your text into the box. We support up to 5000 characters per conversion.",
-            "step2_title": "Select Voice",
-            "step2_desc": "Choose from our diverse library of male and female voices across different accents.",
+            "hero_title": "Gør tekst til menneskelignende tale",
+            "hero_subtitle": "Konverter øjeblikkeligt artikler, scripts og dokumenter til naturligt lydende lyd. Perfekt til skabere, studerende og tilgængelighed.",
+            "features_title": "Avancerede tekst til tale-funktioner",
+            "feature1_title": "Naturlige AI-stemmer",
+            "feature1_desc": "Oplev en bred vifte af premium neurale stemmer, der lyder utroligt menneskelige og engagerende.",
+            "feature2_title": "Flere sprog",
+            "feature2_desc": "Understøttelse af globale sprog inklusive engelsk, spansk, fransk, tysk, japansk og mere.",
+            "feature3_title": "Ubegrænset og gratis",
+            "feature3_desc": "Generer ubegrænset lydfiler uden skjulte gebyrer eller abonnementskrav.",
+            "how_title": "Sådan konverteres tekst til lyd",
+            "step1_title": "Indtast tekst",
+            "step1_desc": "Indsæt din tekst i boksen. Vi understøtter op til 5000 tegn pr. konvertering.",
+            "step2_title": "Vælg Stemme",
+            "step2_desc": "Vælg fra vores mangfoldige bibliotek af mandlige og kvindelige stemmer på tværs af forskellige accenter.",
             "step3_title": "Download MP3",
-            "step3_desc": "Generate your audio in seconds and download the high-quality MP3 file immediately.",
-            "article_title": "The Power of Text to Speech Technology",
-            "article_body": "<p><strong>Text to Speech (TTS)</strong> technology has revolutionized how we consume digital content. By bridging the gap between written text and auditory communication, TTS makes information more accessible and engaging for everyone.</p><h3>Who Needs Text to Speech?</h3><p>Whether you're a <strong>content creator</strong> looking to add voiceovers to your videos, a <strong>student</strong> wanting to listen to your study notes, or someone with <strong>visual impairments</strong> needing screen reading assistance, our free tool provides a seamless solution.</p><h3>Key Benefits</h3><ul><li><strong>Accessibility:</strong> Make your content accessible to those with reading difficulties or visual impairments.</li><li><strong>Productivity:</strong> Multitask by listening to articles, reports, or emails while commuting or exercising.</li><li><strong>Learning:</strong> Improve language pronunciation and listening comprehension with native-sounding AI voices.</li><li><strong>Content Creation:</strong> Create professional voiceovers for YouTube videos, podcasts, and presentations without expensive recording gear.</li></ul><h3>Why Choose Our Tool?</h3><p>Our converter uses advanced neural network models to understand context and intonation, ensuring the output sounds fluid and natural, not robotic. With one-click MP3 downloads, you can take your audio anywhere.</p>",
-            "faq_title": "Frequently Asked Questions",
-            "faq1_q": "Is this text to speech tool completely free?",
-            "faq1_a": "Yes! Our tool is 100% free to use. You can generate audio as many times as you like.",
-            "faq2_q": "Can I use the audio for commercial projects?",
-            "faq2_a": "Yes, the generated audio is copyright-free and safe for use in commercial videos, podcasts, and other media.",
-            "faq3_q": "What is the character limit?",
-            "faq3_a": "You can process up to 5000 characters per request. For longer texts, simply generate in multiple batches.",
-            "faq4_q": "Do I need to install any software?",
-            "faq4_a": "No, this is a cloud-based tool. It works directly in your browser on any device, including mobile phones and tablets."
+            "step3_desc": "Generer din lyd på få sekunder, og download højkvalitets MP3-filen med det samme.",
+            "step4_title": "Lyt og anmeld",
+            "step4_desc": "Afspil den genererede lyd direkte i browseren for at kontrollere kvaliteten før download.",
+            "step5_title": "Del eller brug",
+            "step5_desc": "Brug den downloadede MP3 i dine videoer, podcasts, præsentationer eller tilgængelighedsprojekter.",
+            "article_title": "Kraften ved tekst til tale-teknologi",
+            "article_body": "<p><strong>Tekst til tale (TTS)</strong>-teknologi har revolutioneret, hvordan vi forbruger digitalt indhold. Ved at bygge bro mellem skrevet tekst og auditiv kommunikation gør TTS information mere tilgængelig og engagerende for alle.</p><h3>Hvem har brug for tekst til tale?</h3><p>Uanset om du er en <strong>indholdsskaber</strong>, der ønsker at tilføje voiceovers til dine videoer, en <strong>studerende</strong>, der ønsker at lytte til dine <strong>-undervisningsnoter, eller en person, der har brug for gratis læsning af skærmbilleder, eller en person, der har brug for gratis læsning på skærmen. værktøj giver en problemfri løsning.</p><h3>Nøglefordele</h3><ul><li><strong>Tilgængelighed:</strong> Gør dit indhold tilgængeligt for personer med læsevanskeligheder eller synshandicap.</li><li><strong>Produktivitet:</strong> Multitask ved at lytte til artikler, rapporter eller e-mails, mens du pendler eller træner:</strong></strong></strong>. udtale og lytteforståelse med indfødte lydende AI-stemmer.</li><li><strong>Oprettelse af indhold:</strong> Skab professionelle voiceovers til YouTube-videoer, podcasts og præsentationer uden dyrt optageudstyr.</li></ul><h3>Hvorfor vælge vores værktøj?</h3><p>Vores konverter bruger det avancerede neurale netværk og lydoutput til at forstå neurale sammenhænge og lydoutput. naturligt, ikke robot. Med MP3-downloads med ét klik kan du tage din lyd med overalt.</p>",
+            "faq_title": "Ofte stillede spørgsmål",
+            "faq1_q": "Er dette tekst-til-tale-værktøj helt gratis?",
+            "faq1_a": "Ja! Vores værktøj er 100 % gratis at bruge. Du kan generere lyd så mange gange du vil.",
+            "faq2_q": "Kan jeg bruge lyden til kommercielle projekter?",
+            "faq2_a": "Ja, den genererede lyd er ophavsretsfri og sikker til brug i kommercielle videoer, podcasts og andre medier.",
+            "faq3_q": "Hvad er tegngrænsen?",
+            "faq3_a": "Du kan behandle op til 5000 tegn pr. anmodning. For længere tekster skal du blot generere i flere batches.",
+            "faq4_q": "Skal jeg installere noget software?",
+            "faq4_a": "Nej, dette er et cloud-baseret værktøj. Det fungerer direkte i din browser på enhver enhed, inklusive mobiltelefoner og tablets.",
+            "faq5_q": "Hvilke sprog understøttes?",
+            "faq5_a": "Vi understøtter flere globale sprog, herunder engelsk (USA, UK, AU), spansk, fransk, tysk, japansk, kinesisk, koreansk, portugisisk, italiensk, russisk og hindi.",
+            "faq6_q": "Hvor naturlige lyder stemmerne?",
+            "faq6_a": "Vi bruger avanceret neural tekst-til-tale-teknologi, som producerer stemmer, der næsten ikke kan skelnes fra menneskelig tale, med korrekt intonation og rytme.",
+            "faq7_q": "Er der en daglig grænse?",
+            "faq7_a": "Vi håndhæver ikke en streng daglig grænse for antallet af filer, du kan generere, hvilket gør det perfekt til masseoprettelse af indhold.",
+            "faq8_q": "Kan jeg justere hastigheden eller tonehøjden?",
+            "faq8_a": "I øjeblikket genererer værktøjet tale med en standardiseret, naturlig samtalehastighed, der er optimeret til klarhed. Avancerede kontroller kan blive tilføjet i fremtidige opdateringer.",
+            "faq9_q": "Er mine tekstdata private?",
+            "faq9_a": "Ja. Din tekst sendes sikkert til behandlingsmotoren og gemmes ikke på vores servere, efter at lyden er genereret.",
+            "faq10_q": "Hvilket format er lyden?",
+            "faq10_a": "Lyden leveres i MP3-format, som er universelt kompatibelt med alle videoredigerere, musikafspillere og enheder."
+        },
+        "use_cases": {
+            "title": "Almindelige anvendelsestilfælde",
+            "case1": "Video Voiceovers",
+            "case1_desc": "Opret professionelle voiceovers til YouTube-, TikTok- og Instagram-indhold.",
+            "case2": "E-læring",
+            "case2_desc": "Konverter undervisningsmateriale til lyd for bedre elevernes engagement.",
+            "case3": "Podcasts",
+            "case3_desc": "Gør blogindlæg og artikler om til podcast-afsnit med det samme.",
+            "case4": "Tilgængelighed",
+            "case4_desc": "Gør skriftligt indhold tilgængeligt for synshandicappede publikummer.",
+            "case5": "Præsentationer",
+            "case5_desc": "Tilføj fortælling til dine PowerPoint- eller Google Slides-præsentationer."
         },
         "js": {
-            "validating": "Generating Audio...",
-            "success": "Audio Generated Successfully!",
-            "error_generic": "An error occurred while generating the audio."
+            "validating": "Genererer lyd...",
+            "success": "Lyd genereret med succes!",
+            "error_generic": "Der opstod en fejl under generering af lyden."
         },
         "results": {
-            "title": "Your Audio is Ready",
-            "btn_download": "Download Audio",
-            "btn_new": "Generate New Audio"
+            "title": "Din lyd er klar",
+            "btn_download": "Download lyd",
+            "btn_new": "Generer ny lyd"
         }
     }
 }
