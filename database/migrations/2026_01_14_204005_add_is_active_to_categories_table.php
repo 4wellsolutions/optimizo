@@ -10,9 +10,11 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::table('categories', function (Blueprint $table) {
-            $table->boolean('is_active')->default(true)->after('text_color');
-        });
+        if (!Schema::hasColumn('categories', 'is_active')) {
+            Schema::table('categories', function (Blueprint $table) {
+                $table->boolean('is_active')->default(true)->after('text_color');
+            });
+        }
     }
 
     /**
@@ -20,8 +22,10 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::table('categories', function (Blueprint $table) {
-            $table->dropColumn('is_active');
-        });
+        if (Schema::hasColumn('categories', 'is_active')) {
+            Schema::table('categories', function (Blueprint $table) {
+                $table->dropColumn('is_active');
+            });
+        }
     }
 };
