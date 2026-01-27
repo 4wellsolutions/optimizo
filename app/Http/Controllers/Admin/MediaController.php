@@ -29,7 +29,17 @@ class MediaController extends Controller
 
         $file = $request->file('file');
         $filename = time() . '_' . $file->getClientOriginalName();
-        $path = $file->storeAs('media', $filename, 'public');
+
+        // WordPress style path: year/month/day
+        $datePath = date('Y/m/d');
+        $directory = public_path('images/' . $datePath);
+
+        if (!file_exists($directory)) {
+            mkdir($directory, 0755, true);
+        }
+
+        $file->move($directory, $filename);
+        $path = 'images/' . $datePath . '/' . $filename;
 
         $media = Media::create([
             'filename' => $filename,
@@ -37,7 +47,7 @@ class MediaController extends Controller
             'mime_type' => $file->getMimeType(),
             'size' => $file->getSize(),
             'path' => $path,
-            'url' => Storage::url($path),
+            'url' => asset($path),
             'user_id' => auth()->id(),
         ]);
 
@@ -50,7 +60,12 @@ class MediaController extends Controller
 
     public function destroy(Media $media)
     {
-        Storage::disk('public')->delete($media->path);
+        $fullPath = public_path($media->path);
+
+        if (file_exists($fullPath)) {
+            unlink($fullPath);
+        }
+
         $media->delete();
 
         return response()->json([
