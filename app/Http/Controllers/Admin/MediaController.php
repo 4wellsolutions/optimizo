@@ -38,14 +38,18 @@ class MediaController extends Controller
             mkdir($directory, 0755, true);
         }
 
+        $mimeType = $file->getMimeType();
+        $size = $file->getSize();
+        $originalName = $file->getClientOriginalName();
+
         $file->move($directory, $filename);
         $path = 'images/' . $datePath . '/' . $filename;
 
         $media = Media::create([
             'filename' => $filename,
-            'original_name' => $file->getClientOriginalName(),
-            'mime_type' => $file->getMimeType(),
-            'size' => $file->getSize(),
+            'original_name' => $originalName,
+            'mime_type' => $mimeType,
+            'size' => $size,
             'path' => $path,
             'url' => asset($path),
             'user_id' => auth()->id(),
