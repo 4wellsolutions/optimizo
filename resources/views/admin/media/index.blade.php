@@ -125,9 +125,9 @@
             Swal.fire({
                 title: 'Edit Media',
                 html: `
-                        <input id="alt_text" class="form-control mb-2" placeholder="Alt Text" value="${altText || ''}">
-                        <textarea id="caption" class="form-control" placeholder="Caption">${caption || ''}</textarea>
-                    `,
+                            <input id="alt_text" class="form-control mb-2" placeholder="Alt Text" value="${altText || ''}">
+                            <textarea id="caption" class="form-control" placeholder="Caption">${caption || ''}</textarea>
+                        `,
                 showCancelButton: true,
                 confirmButtonText: 'Save',
                 preConfirm: () => {
@@ -169,6 +169,11 @@
                     }
                 });
             });
+        }
+
+        function viewFullImage(url) {
+            $('#modalPreviewImage').attr('src', url);
+            $('#imagePreviewModal').modal('show');
         }
     </script>
 @endpush
