@@ -3,6 +3,45 @@
 @section('title', isset($category) ? $category->name . ' - ' . config('app.name') : (isset($tag) ? '#' . $tag->name . ' - ' . config('app.name') : __('Blog - ' . config('app.name'))))
 
 @section('content')
+    {{-- Schema.org JSON-LD --}}
+    @push('scripts')
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "{{ localeRoute('home') }}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "{{ localeRoute('blog.index') }}"
+                }
+                @if(isset($category))
+                ,{
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "{{ $category->name }}",
+                    "item": "{{ url()->current() }}"
+                }
+                @elseif(isset($tag))
+                ,{
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "#{{ $tag->name }}",
+                    "item": "{{ url()->current() }}"
+                }
+                @endif
+            ]
+        }
+        </script>
+    @endpush
+
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
