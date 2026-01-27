@@ -27,7 +27,7 @@ class ImportWordPressPosts extends Command
         $host = $this->option('dmobileki_wp933');
         $user = $this->option('mobileki_wp933');
         $pass = $this->option('2Oon#q2qi=pJbKAE');
-        $prefix = $this->option('prefix');
+        $prefix = $this->option('wpl0');
 
         // Configure temporary connection
         Config::set('database.connections.wordpress', [
