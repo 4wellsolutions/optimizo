@@ -48,6 +48,9 @@
                             </td>
                             <td>{{ $post->created_at->format('M d, Y') }}</td>
                             <td>
+                                <a href="{{ route('blog.show', $post->slug) }}" class="btn btn-sm btn-success" target="_blank">
+                                    <i class="fas fa-eye"></i>
+                                </a>
                                 <a href="{{ route('admin.posts.edit', $post) }}" class="btn btn-sm btn-info">
                                     <i class="fas fa-edit"></i>
                                 </a>
@@ -60,8 +63,10 @@
                 </tbody>
             </table>
         </div>
-        <div class="card-footer">
-            {{ $posts->links() }}
+        <div class="card-footer clearfix">
+            <div class="float-right pagination-sm">
+                {{ $posts->links() }}
+            </div>
         </div>
     </div>
 @endsection
