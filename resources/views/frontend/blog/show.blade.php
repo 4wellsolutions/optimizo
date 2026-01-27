@@ -13,32 +13,31 @@
     </div>
 
     {{-- Cinematic Full-Bleed Hero --}}
-    <section class="relative h-[65vh] md:h-[85vh] min-h-[500px] w-full overflow-hidden mb-[-10vh] md:mb-[-15vh]">
+    <section class="relative h-[45vh] md:h-[55vh] min-h-[400px] w-full overflow-hidden mb-[-8vh] md:mb-[-12vh]">
         @if($post->featured_image)
             <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
                 class="absolute inset-0 w-full h-full object-cover scale-105 animate-slow-zoom">
         @else
             <div class="absolute inset-0 bg-gradient-to-tr from-gray-900 via-indigo-950 to-purple-900"></div>
         @endif
-
+        
         {{-- Deep Gradient Overlays for Immersion --}}
-        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/70"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent"></div>
 
-        <div class="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-end pb-32 md:pb-52">
-            <div class="max-w-4xl space-y-6 md:space-y-8">
-                <nav class="flex items-center gap-3 text-white/80 text-sm font-black uppercase tracking-[0.2em]">
+        <div class="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-end pb-24 md:pb-40">
+            <div class="max-w-4xl space-y-4 md:space-y-6">
+                <nav class="flex items-center gap-3 text-white/80 text-xs font-black uppercase tracking-[0.2em]">
                     <a href="{{ localeRoute('home') }}" class="hover:text-white transition-colors">Home</a>
                     <span class="w-1 h-1 rounded-full bg-indigo-500"></span>
                     <a href="{{ localeRoute('blog.index') }}" class="hover:text-white transition-colors">Blog</a>
                 </nav>
 
-                <h1
-                    class="text-4xl md:text-6xl lg:text-8xl font-black text-white leading-[1.05] tracking-tight drop-shadow-2xl">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight drop-shadow-2xl">
                     {{ $post->title }}
                 </h1>
 
-                <div class="flex flex-wrap items-center gap-6 text-white pt-4">
+                <div class="flex flex-wrap items-center gap-6 text-white pt-2">
                     <div class="flex items-center gap-4">
                         <div
                             class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-2xl font-black shadow-2xl">
