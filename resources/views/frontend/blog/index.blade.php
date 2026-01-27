@@ -22,16 +22,16 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @forelse($posts as $post)
                 <article
-                    class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col group">
+                    class="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 border border-gray-100/50 flex flex-col group h-full">
                     {{-- Featured Image Placeholder or actual --}}
                     <a href="{{ localeRoute('blog.show', ['slug' => $post->slug]) }}"
                         class="relative aspect-video overflow-hidden">
                         @if($post->featured_image)
                             <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         @else
                             <div
-                                class="w-full h-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center p-8">
+                                class="w-full h-full bg-gradient-to-br from-indigo-600 to-purple-700 flex items-center justify-center p-8 group-hover:scale-110 transition-transform duration-700">
                                 <svg class="w-16 h-16 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
@@ -39,38 +39,42 @@
                                 </svg>
                             </div>
                         @endif
-                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
+                        <div class="absolute top-4 left-4 flex gap-2">
+                            @foreach($post->categories->take(1) as $cat)
+                                <span
+                                    class="px-3 py-1 bg-white/90 backdrop-blur-sm text-indigo-600 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-sm">
+                                    {{ $cat->name }}
+                                </span>
+                            @endforeach
+                        </div>
                     </a>
 
-                    <div class="p-6 flex-grow flex flex-col">
+                    <div class="p-8 flex-grow flex flex-col">
                         <div class="flex items-center gap-2 mb-4">
-                            @foreach($post->categories as $cat)
-                                <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
-                                    class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-xs font-bold hover:bg-indigo-100 transition-colors">
-                                    {{ $cat->name }}
-                                </a>
-                            @endforeach
-                            <span class="text-xs text-gray-400 ml-auto">{{ $post->published_at->format('M d, Y') }}</span>
+                            <span
+                                class="text-[10px] font-black text-gray-400 uppercase tracking-widest">{{ $post->published_at->format('M d, Y') }}</span>
                         </div>
 
-                        <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">
+                        <h2
+                            class="text-2xl font-black text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors leading-tight tracking-tight">
                             <a href="{{ localeRoute('blog.show', ['slug' => $post->slug]) }}">{{ $post->title }}</a>
                         </h2>
 
-                        <p class="text-gray-600 line-clamp-3 mb-6 flex-grow">
+                        <p class="text-gray-600 line-clamp-3 mb-8 flex-grow leading-relaxed font-medium">
                             {{ $post->excerpt }}
                         </p>
 
                         <div class="flex items-center pt-6 border-t border-gray-50 mt-auto">
                             <div class="flex items-center">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 mr-2 text-xs font-bold">
+                                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white text-xs font-black mr-3 shadow-lg shadow-indigo-100">
                                     {{ strtoupper(substr($post->author->name, 0, 1)) }}
                                 </div>
-                                <span class="text-sm font-medium text-gray-700">{{ $post->author->name }}</span>
+                                <span class="text-sm font-bold text-gray-700 tracking-tight">{{ $post->author->name }}</span>
                             </div>
                             <a href="{{ localeRoute('blog.show', ['slug' => $post->slug]) }}"
-                                class="ml-auto text-indigo-600 font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                                class="ml-auto text-indigo-600 font-extrabold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                                 {{ __('Read More') }}
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
