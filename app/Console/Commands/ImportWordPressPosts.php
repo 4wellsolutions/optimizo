@@ -24,9 +24,9 @@ class ImportWordPressPosts extends Command
             $dbName = $this->ask('Enter WordPress database name');
         }
 
-        $host = $this->option('db-host');
-        $user = $this->option('db-user');
-        $pass = $this->option('db-pass');
+        $host = $this->option('dmobileki_wp933');
+        $user = $this->option('mobileki_wp933');
+        $pass = $this->option('2Oon#q2qi=pJbKAE');
         $prefix = $this->option('prefix');
 
         // Configure temporary connection
