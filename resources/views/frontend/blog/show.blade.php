@@ -75,22 +75,21 @@
             </div>
 
             {{-- Sidebar --}}
-            <aside class="w-full lg:w-[32%] space-y-10">
+            <aside class="w-full lg:w-1/3 space-y-8 lg:space-y-10">
                 {{-- Categories Widget --}}
-                <div
-                    class="bg-white rounded-[2.5rem] p-8 lg:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50">
-                    <h3 class="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
-                        <span class="w-2.5 h-10 bg-indigo-600 rounded-full shadow-lg shadow-indigo-100"></span>
+                <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-black text-gray-900 mb-6 flex items-center gap-2">
+                        <span class="w-2 h-8 bg-indigo-600 rounded-full"></span>
                         {{ __('Categories') }}
                     </h3>
-                    <div class="space-y-4">
+                    <div class="space-y-3">
                         @foreach($categories as $cat)
                             <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
-                                class="flex items-center justify-between group p-3 -mx-3 rounded-2xl hover:bg-gray-50 transition-all duration-300">
+                                class="flex items-center justify-between group">
                                 <span
-                                    class="text-gray-600 group-hover:text-indigo-600 transition-colors font-bold text-lg tracking-tight">{{ $cat->name }}</span>
+                                    class="text-gray-600 group-hover:text-indigo-600 transition-colors font-medium">{{ $cat->name }}</span>
                                 <span
-                                    class="px-3 py-1 bg-gray-50 text-gray-400 group-hover:bg-indigo-100 group-hover:text-indigo-600 rounded-xl text-xs font-black transition-all">
+                                    class="px-2 py-1 bg-gray-50 text-gray-400 group-hover:bg-indigo-50 group-hover:text-indigo-600 rounded-lg text-xs font-bold transition-all">
                                     {{ $cat->posts_count }}
                                 </span>
                             </a>
@@ -99,19 +98,16 @@
                 </div>
 
                 {{-- Recent Posts Widget --}}
-                <div
-                    class="bg-white rounded-[2.5rem] p-8 lg:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50">
-                    <h3 class="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
-                        <span class="w-2.5 h-10 bg-purple-600 rounded-full shadow-lg shadow-purple-100"></span>
+                <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-black text-gray-900 mb-6 flex items-center gap-2">
+                        <span class="w-2 h-8 bg-purple-600 rounded-full"></span>
                         {{ __('Recent Posts') }}
                     </h3>
-                    <div class="space-y-8">
+                    <div class="space-y-6">
                         @foreach($recentPosts as $recent)
                             <a href="{{ localeRoute('blog.show', ['slug' => $recent->slug]) }}" class="group block">
-                                <div class="text-[10px] font-black text-indigo-500 uppercase tracking-widest mb-2">
-                                    {{ $recent->published_at->format('M d, Y') }}</div>
-                                <h4
-                                    class="font-bold text-gray-900 group-hover:text-indigo-600 transition-all duration-300 leading-snug text-lg tracking-tight">
+                                <div class="text-xs text-gray-400 mb-1">{{ $recent->published_at->format('M d, Y') }}</div>
+                                <h4 class="font-bold text-gray-900 group-hover:text-indigo-600 transition-colors leading-snug">
                                     {{ $recent->title }}
                                 </h4>
                             </a>
@@ -124,15 +120,15 @@
 
     <style>
         .blog-content h2 {
-            @apply text-3xl md:text-4xl font-black text-gray-900 mt-16 mb-8 tracking-tight;
+            @apply text-3xl md:text-5xl font-black text-gray-900 mt-16 mb-8 tracking-tight;
         }
 
         .blog-content h3 {
-            @apply text-2xl md:text-3xl font-black text-gray-900 mt-12 mb-6 tracking-tight;
+            @apply text-2xl md:text-4xl font-black text-gray-900 mt-12 mb-6 tracking-tight;
         }
 
         .blog-content p {
-            @apply mb-8 leading-[1.8] text-gray-700/90;
+            @apply mb-8 leading-[1.8] text-gray-700/90 text-xl;
         }
 
         .blog-content ul,
