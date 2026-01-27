@@ -4,65 +4,65 @@
 @section('meta_description', $post->meta_description)
 @section('meta_keywords', $post->meta_keywords)
 
-@section('content')
+@push('scripts')
     {{-- Schema.org JSON-LD --}}
-    @push('scripts')
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "BlogPosting",
-                "headline": "{{ $post->title }}",
-                "image": "{{ $post->featured_image_url }}",
-                "author": {
-                    "@type": "Person",
-                    "name": "{{ $post->author->name }}"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "{{ config('app.name') }}",
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": "{{ asset('logo.png') }}"
-                    }
-                },
-                "datePublished": "{{ $post->published_at->toIso8601String() }}",
-                "dateModified": "{{ $post->updated_at->toIso8601String() }}",
-                "description": "{{ $post->meta_description ?: Str::limit(strip_tags($post->content), 160) }}",
-                "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": "{{ url()->current() }}"
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "{{ addslashes($post->title) }}",
+            "image": "{{ $post->featured_image_url }}",
+            "author": {
+                "@type": "Person",
+                "name": "{{ addslashes($post->author->name) }}"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "{{ addslashes(config('app.name')) }}",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ asset('logo.png') }}"
                 }
+            },
+            "datePublished": "{{ $post->published_at->toIso8601String() }}",
+            "dateModified": "{{ $post->updated_at->toIso8601String() }}",
+            "description": "{{ addslashes($post->meta_description ?: Str::limit(strip_tags($post->content), 160)) }}",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{{ url()->current() }}"
             }
-            </script>
+        }
+        </script>
 
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "{{ localeRoute('home') }}"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Blog",
-                        "item": "{{ localeRoute('blog.index') }}"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "{{ $post->title }}",
-                        "item": "{{ url()->current() }}"
-                    }
-                ]
-            }
-            </script>
-    @endpush
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "{{ localeRoute('home') }}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "{{ localeRoute('blog.index') }}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "{{ addslashes($post->title) }}",
+                    "item": "{{ url()->current() }}"
+                }
+            ]
+        }
+        </script>
+@endpush
 
+@section('content')
     {{-- Reading Progress Bar --}}
     <div class="fixed top-[64px] left-0 w-full h-1.5 z-[100] pointer-events-none">
         <div id="readingProgress"
@@ -206,7 +206,8 @@
                                     class="text-indigo-400 text-xs font-black uppercase tracking-[0.3em] mb-3 block">Expert
                                     Reviewer</span>
                                 <h3 class="text-3xl font-black text-white mb-4">Masterfully written by
-                                    {{ $post->author->name }}</h3>
+                                    {{ $post->author->name }}
+                                </h3>
                                 <p class="text-gray-400 leading-relaxed text-lg max-w-xl">Deep-diving into tech trends and
                                     architectural paradigms. Bringing you over 15 years of industry insights concentrated
                                     into every single word you read.</p>
@@ -353,32 +354,8 @@
         }
     </style>
 
-    <script>
-        document.addEventListener('scroll', () => {
-            const h = document.documentElement,
-                b = document.body,
-                st = 'scrollTop',
-                sh = 'scrollHeight';
-            const progress = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-            const progressBar = document.getElementById('readingProgress');
-            if (progressBar) progressBar.style.width = progress + '%';
-        });
-
-        // Add reveal animations to headings
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.blog-content h2, .blog-content h3').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 1s cubic-bezier(0.22, 1, 0.36, 1)';
-            observer.observe(el);
-        });
+    <script>     document.addEventListener('scroll', () => {         const h = document.documentElement,             b = document.body,             st = 'scrollTop',             sh = 'scrollHeight';         const progress = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;         const progressBar = document.getElementById('readingProgress');         if (progressBar) progressBar.style.width = progress + '%';     });
+         // Add reveal animations to headings     const observer = new IntersectionObserver((entries) => {         entries.forEach(entry => {             if (entry.isIntersecting) {                 entry.target.style.opacity = '1';                 entry.target.style.transform = 'translateY(0)';             }         });     }, { threshold: 0.1 });
+         document.querySelectorAll('.blog-content h2, .blog-content h3').forEach(el => {         el.style.opacity = '0';         el.style.transform = 'translateY(30px)';         el.style.transition = 'all 1s cubic-bezier(0.22, 1, 0.36, 1)';         observer.observe(el);     });
     </script>
 @endsection

@@ -2,10 +2,9 @@
 
 @section('title', isset($category) ? $category->name . ' - ' . config('app.name') : (isset($tag) ? '#' . $tag->name . ' - ' . config('app.name') : __('Blog - ' . config('app.name'))))
 
-@section('content')
+@push('scripts')
     {{-- Schema.org JSON-LD --}}
-    @push('scripts')
-        <script type="application/ld+json">
+    <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -23,25 +22,26 @@
                     "item": "{{ localeRoute('blog.index') }}"
                 }
                 @if(isset($category))
-                ,{
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "{{ $category->name }}",
-                    "item": "{{ url()->current() }}"
-                }
+                    ,{
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "{{ addslashes($category->name) }}",
+                        "item": "{{ url()->current() }}"
+                    }
                 @elseif(isset($tag))
-                ,{
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "#{{ $tag->name }}",
-                    "item": "{{ url()->current() }}"
-                }
+                    ,{
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "#{{ addslashes($tag->name) }}",
+                        "item": "{{ url()->current() }}"
+                    }
                 @endif
             ]
         }
         </script>
-    @endpush
+@endpush
 
+@section('content')
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
