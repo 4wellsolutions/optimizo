@@ -33,77 +33,77 @@
     },
     "csv-to-json": {
         "meta": {
-            "title": "CSV to JSON Converter – bezplatný online datový nástroj",
+            "title": "Převodník CSV do JSON – bezplatný online datový nástroj",
             "description": "Rychle převeďte soubory CSV do formátu JSON. Bezplatný online nástroj pro vývojáře k transformaci tabulkových dat na strukturované objekty.",
             "h1": "CSV na JSON",
             "subtitle": "Profesionální nástroj pro transformaci CSV na JSON"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Vybrat oddělovač",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Čárka (,)",
+                "semicolon": "Středník (;)",
+                "tab": "Tabulátor",
+                "pipe": "Svislá čára (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to JSON",
-            "btn_copy": "Copy JSON",
-            "btn_download": "Download JSON",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "JSON Output",
-            "ph_output": "Converted JSON will appear here..."
+            "header_checkbox": "První řádek je záhlaví",
+            "btn_convert": "Převést na JSON",
+            "btn_copy": "Kopírovat JSON",
+            "btn_download": "Stáhnout JSON",
+            "btn_example": "Načíst příklad",
+            "btn_clear": "Vymazat vše",
+            "label_input": "Vstup CSV",
+            "ph_input": "Sem vložte data CSV...",
+            "label_output": "Výstup JSON",
+            "ph_output": "Převedený JSON se zobrazí zde..."
         },
         "content": {
-            "about_title": "About CSV to JSON Converter",
-            "about_p1": "Our free CSV to JSON converter transforms comma-separated values (CSV) into structured JSON format instantly. JSON is the standard data format for modern web applications and APIs, making this tool essential for developers and data analysts.",
-            "features_title": "Key Features",
+            "about_title": "O převodníku CSV do JSON",
+            "about_p1": "Náš bezplatný převodník CSV na JSON okamžitě transformuje hodnoty oddělené čárkami (CSV) do strukturovaného formátu JSON. JSON je standardní datový formát pro moderní webové aplikace a API, díky čemuž je tento nástroj nezbytný pro vývojáře a datové analytiky.",
+            "features_title": "Klíčové vlastnosti",
             "features_list": {
-                "1": "Instant conversion with smart delimiter detection",
-                "2": "Proper handling of nested headers and CSV quotes",
-                "3": "100% Secure - processing happens in your browser",
-                "4": "Beautifully formatted JSON output",
-                "5": "Support for custom delimiters (comma, semicolon, tab, pipe)",
-                "6": "One-click copy and JSON file download"
+                "1": "Okamžitý převod s inteligentní detekcí oddělovačů",
+                "2": "Správné zpracování vnořených hlaviček a uvozovek CSV",
+                "3": "100% bezpečné – zpracování probíhá ve vašem prohlížeči",
+                "4": "Krásně formátovaný výstup JSON",
+                "5": "Podpora pro vlastní oddělovače (čárka, středník, tabulátor, svislá čára)",
+                "6": "Kopírování a stahování souborů JSON jedním kliknutím"
             },
-            "uses_title": "Modern Use Cases",
+            "uses_title": "Moderní případy použití",
             "uses": {
                 "migration": {
-                    "title": "Data Migration",
-                    "desc": "Easily migrate data from legacy spreadsheets to modern NoSQL databases."
+                    "title": "Migrace dat",
+                    "desc": "Snadno migrujte data ze starších tabulek do moderních NoSQL databází."
                 },
                 "api": {
-                    "title": "API Testing",
-                    "desc": "Generate JSON request payloads from CSV test data objects."
+                    "title": "Testování API",
+                    "desc": "Generujte JSON požadavky z testovacích dat CSV."
                 },
                 "db": {
-                    "title": "Database Seeders",
-                    "desc": "Convert CSV datasets into JSON for database seeders and migrations."
+                    "title": "Databázové seedery",
+                    "desc": "Převeďte sady dat CSV do formátu JSON pro databázové seedery a migrace."
                 },
                 "analysis": {
-                    "title": "Data Analysis",
-                    "desc": "Transform raw CSV exports into structured JSON for analysis."
+                    "title": "Analýza dat",
+                    "desc": "Transformujte nezpracované exporty CSV do strukturovaného JSON pro analýzu."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Často kladené otázky",
             "faq": {
-                "q1": "Is my CSV data kept private?",
-                "a1": "Yes, all processing is done locally in your browser. Your data is never uploaded to our servers.",
-                "q2": "Does it support large files?",
-                "a2": "The converter handles large files efficiently, limited only by your browser's memory.",
-                "q3": "Can I convert JSON back to CSV?",
-                "a3": "Yes! Use our 'JSON to CSV' tool in the Development section for reverse conversion."
+                "q1": "Jsou moje data CSV soukromá?",
+                "a1": "Ano, veškeré zpracování probíhá lokálně ve vašem prohlížeči. Vaše data se nikdy nahrávají na naše servery.",
+                "q2": "Podporuje nástroj velké soubory?",
+                "a2": "Převodník efektivně zvládá velké soubory, omezen pouze pamětí vašeho prohlížeče.",
+                "q3": "Mohu převést JSON zpět na CSV?",
+                "a3": "Ano! Použijte náš nástroj 'JSON na CSV' v sekci Vývoj pro zpětnou konverzi."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No JSON to copy. Please convert CSV first.",
-            "success_copy": "JSON copied to clipboard!",
-            "error_no_download": "No JSON to download. Please convert CSV first."
+            "error_empty": "Zadejte prosím data CSV k převodu",
+            "error_convert": "Chyba při převodu CSV: ",
+            "error_no_copy": "Žádný JSON ke kopírování. Nejdříve prosím převeďte CSV.",
+            "success_copy": "JSON zkopírován do schránky!",
+            "error_no_download": "Žádný JSON ke stažení. Nejdříve prosím převeďte CSV."
         }
     },
     "csv-to-sql": {
@@ -143,77 +143,136 @@
     },
     "csv-to-tsv": {
         "meta": {
-            "title": "CSV to TSV Converter – bezplatný online nástroj pro textová data",
-            "description": "Snadno převeďte data z formátu CSV do TSV (Tab-Separated Values). Bezplatný nástroj pro transformaci oddělovačů dat.",
-            "h1": "CSV na TSV",
-            "subtitle": "Rychlý a spolehlivý nástroj pro transformaci CSV na TSV"
+            "title": "Převodník CSV do TSV – bezplatný online nástroj",
+            "description": "Rychle a spolehlivě převeďte CSV na TSV. Bezplatný online nástroj pro transformaci dat oddělených čárkami na data oddělená tabulátory.",
+            "h1": "Převaděč CSV na TSV",
+            "subtitle": "Transformujte CSV data do formátu TSV pro snadnou kompatibilitu"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Vybrat oddělovač",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Čárka (,)",
+                "semicolon": "Středník (;)",
+                "tab": "Tabulátor",
+                "pipe": "Svislá čára (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to TSV",
-            "btn_copy": "Copy TSV",
-            "btn_download": "Download TSV",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "TSV Output",
-            "ph_output": "Converted TSV will appear here..."
+            "header_checkbox": "První řádek je záhlaví",
+            "btn_convert": "Převést do TSV",
+            "btn_copy": "Kopírovat TSV",
+            "btn_download": "Stáhnout TSV",
+            "btn_example": "Načíst příklad",
+            "btn_clear": "Vymazat vše",
+            "label_input": "Vstup CSV",
+            "ph_input": "Sem vložte data CSV...",
+            "label_output": "Výstup TSV",
+            "ph_output": "Převedené TSV se zobrazí zde..."
         },
         "content": {
-            "about_title": "About CSV to TSV Converter",
-            "about_p1": "Our free CSV to TSV converter transforms standard comma-separated values into tab-separated values. TSV files are commonly used in data science, bioinformatics, and legacy database systems that prefer tabs over commas.",
-            "features_title": "Key Features",
-            "features_list": {
-                "1": "High-speed conversion to TSV format",
-                "2": "Smart detection of CSV delimiters",
-                "3": "Privacy protected client-side processing",
-                "4": "Handling of multi-line CSV values",
-                "5": "One-click copy to clipboard",
-                "6": "Support for all standard CSV formats"
-            },
-            "uses_title": "Common Use Cases",
-            "uses": {
-                "migration": {
-                    "title": "Data Science",
-                    "desc": "Prepare datasets for R or Python tools that frequently use TSV."
+            "hero_title": "Převodník CSV do TSV",
+            "hero_subtitle": "Převádějte hodnoty oddělené čárkami na formát oddělený tabulátory okamžitě. Ideální pro datovou vědu a importy do databází.",
+            "p1": "Náš bezplatný převodník CSV na TSV je výkonný nástroj navržený k transformaci standardních hodnot oddělených čárkami na hodnoty oddělené tabulátory. Bez ohledu na to, zda pracujete s velkými datovými sadami pro výzkum nebo připravujete soubory pro konkrétní databázové systémy, tento nástroj poskytuje rychlé a spolehlivé řešení.",
+            "what_title": "Co je převod CSV na TSV?",
+            "what_desc": "CSV (Comma-Separated Values) a TSV (Tab-Separated Values) jsou oba formáty prostého textu pro tabulková data. Zatímco CSV je běžnější, TSV je často preferován v datové vědě a bioinformatice, protože se vyhýbá problémům s čárkami uvnitř textových polí a poskytuje čistší oddělení pro komplexní data.",
+            "features_title": "Klíčové vlastnosti",
+            "features": {
+                "fast": {
+                    "title": "Okamžitý převod",
+                    "desc": "Převeďte tisíce řádků během milisekund s naším optimalizovaným jádrem."
                 },
-                "api": {
-                    "title": "Database Loading",
-                    "desc": "Load data into systems that require tab-separated formats for fast import."
+                "private": {
+                    "title": "100% bezpečné",
+                    "desc": "Veškeré zpracování probíhá ve vašem prohlížeči. Vaše data nikdy neopustí vaše zařízení."
+                },
+                "copy": {
+                    "title": "Kopírování jedním kliknutím",
+                    "desc": "Rychle zkopírujte převedená data TSV do schránky pro použití v jiných aplikacích."
+                },
+                "smart": {
+                    "title": "Chytré zpracování",
+                    "desc": "Správně zpracovává víceřádková pole a speciální znaky v rámci vašich dat CSV."
+                },
+                "free": {
+                    "title": "Vždy zdarma",
+                    "desc": "Není vyžadována žádná registrace ani předplatné. Používejte jej tak často, jak potřebujete."
                 },
                 "db": {
-                    "title": "Bioinformatics",
-                    "desc": "Format genomics data which is predominantly stored in TSV formats."
-                },
-                "analysis": {
-                    "title": "Excel Compatibility",
-                    "desc": "Copy-paste structured data directly into Excel without delimiter issues."
+                    "title": "Připraveno pro databáze",
+                    "desc": "Generujte čistý výstup TSV kompatibilní s hlavními nástroji pro import do databází."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "uses_title": "Běžné případy použití",
+            "uses": {
+                "db": {
+                    "title": "Načítání do databáze",
+                    "desc": "Mnoho databázových systémů jako PostgreSQL a MySQL podporuje rychlé importy TSV."
+                },
+                "process": {
+                    "title": "Zpracování dat",
+                    "desc": "Integrujte s Pythonem, R nebo Excelem pro další analýzu vašich datových sad."
+                },
+                "legacy": {
+                    "title": "Starší systémy",
+                    "desc": "Připravte data pro starší systémy, které striktně vyžadují formáty oddělené tabulátory."
+                },
+                "analysis": {
+                    "title": "Vědecká analýza",
+                    "desc": "TSV je standardní formát pro mnoho vědeckých a genomických datových platforem."
+                },
+                "standard": {
+                    "title": "Standardizace formátu",
+                    "desc": "Převeďte různé styly CSV do standardního formátu TSV pro zajištění konzistence."
+                },
+                "export": {
+                    "title": "Export tabulek",
+                    "desc": "Snadno přenášejte data z Google Sheets nebo Excelu do specializovaného softwaru."
+                }
+            },
+            "how_title": "Jak převést CSV na TSV",
+            "how_steps": {
+                "1": {
+                    "title": "Vložte data CSV",
+                    "desc": "Vložte svůj text oddělený čárkami do výše uvedeného vstupního pole."
+                },
+                "2": {
+                    "title": "Klikněte na Převést",
+                    "desc": "Stisknutím tlačítka 'Převést na TSV' zahájíte proces transformace."
+                },
+                "3": {
+                    "title": "Zkopírujte výsledek",
+                    "desc": "Zkopírujte vygenerované hodnoty oddělené tabulátory nebo je stáhněte jako soubor."
+                }
+            },
+            "example_title": "Příklad převodu",
+            "example_input": "Vstup CSV:",
+            "example_output": "Výsledek TSV:",
+            "faq_title": "Často kladené otázky",
             "faq": {
-                "q1": "Where is my data processed?",
-                "a1": "All conversion happens in your browser's memory, ensuring maximum privacy.",
-                "q2": "What are the advantages of TSV?",
-                "a2": "TSV is less prone to errors when your data contains commas (like names or addresses).",
-                "q3": "Can I convert TSV back to CSV?",
-                "a3": "Yes, our 'TSV to CSV' tool handles the reverse process instantly."
+                "q1": "Existuje limit počtu řádků?",
+                "a1": "Neexistuje žádný pevný limit. Náš nástroj dokáže efektivně zpracovat velké datové sady v rámci paměti vašeho prohlížeče.",
+                "q2": "Jsou mé soubory ukládány?",
+                "a2": "Ne. Vaše data neukládáme ani je nevidíme. Vše zůstává ve vašem počítači.",
+                "q3": "Mohu použít jiné oddělovače?",
+                "a3": "Ano, náš nástroj automaticky detekuje různé oddělovače, aby zajistil hladký převod.",
+                "q4": "Je to kompatibilní s Excelem?",
+                "a4": "Naprosto! Data TSV lze vložit přímo do listů Excelu s dokonalým zarovnáním sloupců.",
+                "q5": "Podporuje to UTF-8?",
+                "a5": "Ano, převodník plně podporuje UTF-8 a další kódování speciálních znaků."
+            },
+            "tips_title": "🎓 Nejlepší postupy",
+            "tips_list": {
+                "1": "<strong>Konzistence dat:</strong> Pro dosažení nejlepších výsledků se ujistěte, že vaše CSV má konzistentní oddělovače a správně uvozované hodnoty.",
+                "2": "<strong>Záhlaví:</strong> Zkontrolujte, zda první řádek obsahuje záhlaví, abyste udrželi svá data přehledná a strukturovaná v TSV.",
+                "3": "<strong>Tlačítko Kopírovat:</strong> Použijte tlačítko kopírovat, abyste při ručním výběru náhodou nevynechali řádky nebo znaky.",
+                "4": "<strong>Validace:</strong> Před importem do citlivých databázových systémů nebo analytických nástrojů vždy ověřte strukturu a integritu svých dat.",
+                "5": "<strong>Opačný převod:</strong> Pokud potřebujete provést opačný převod, vyzkoušejte náš nástroj 'TSV na CSV' v sekci 'Vývojářské nástroje'."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No TSV to copy. Please convert CSV first.",
-            "success_copy": "TSV copied to clipboard!",
-            "error_no_download": "No TSV to download. Please convert CSV first."
+            "error_empty": "Zadejte prosím data CSV k převodu",
+            "error_convert": "Chyba při převodu CSV: ",
+            "error_no_copy": "Žádné TSV ke kopírování. Nejdříve prosím převeďte CSV.",
+            "success_copy": "TSV zkopírováno do schránky!",
+            "error_no_download": "Žádné TSV ke stažení. Nejdříve prosím převeďte CSV."
         }
     },
     "csv-to-xml-converter": {

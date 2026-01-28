@@ -33,77 +33,77 @@
     },
     "csv-to-json": {
         "meta": {
-            "title": "CSV till JSON Converter - Gratis onlinedataverktyg",
-            "description": "CSV till JSON - Snabbt, gratis och pålitligt onlineverktyg.",
+            "title": "CSV till JSON-konverterare - Gratis onlineverktyg för data",
+            "description": "Konvertera CSV-data till JSON-format direkt. Snabb, gratis och pålitlig onlinetjänst för att förvandla tabelldata till strukturerade JSON-objekt.",
             "h1": "CSV till JSON",
-            "subtitle": "Professionellt CSV till JSON-verktyg"
+            "subtitle": "Professionellt verktyg för att konvertera CSV till JSON"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Välj avgränsare",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Kommatecken (,)",
+                "semicolon": "Semikolon (;)",
+                "tab": "Tabb",
+                "pipe": "Vertikalt streck (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to JSON",
-            "btn_copy": "Copy JSON",
-            "btn_download": "Download JSON",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "JSON Output",
-            "ph_output": "Converted JSON will appear here..."
+            "header_checkbox": "Första raden är rubrik",
+            "btn_convert": "Konvertera till JSON",
+            "btn_copy": "Kopiera JSON",
+            "btn_download": "Ladda ner JSON",
+            "btn_example": "Ladda exempel",
+            "btn_clear": "Rensa allt",
+            "label_input": "CSV-indata",
+            "ph_input": "Ange dina CSV-data här...",
+            "label_output": "JSON-utdata",
+            "ph_output": "Konverterad JSON visas här..."
         },
         "content": {
-            "about_title": "About CSV to JSON Converter",
-            "about_p1": "Our free CSV to JSON converter transforms comma-separated values (CSV) into structured JSON format instantly. JSON is the standard data format for modern web applications and APIs, making this tool essential for developers and data analysts.",
-            "features_title": "Key Features",
+            "about_title": "Om CSV till JSON-konverteraren",
+            "about_p1": "Vår kostnadsfria CSV till JSON-konverterare omvandlar kommaseparerade värden (CSV) till strukturerat JSON-format omedelbart. JSON är standardformatet för data i moderna webbapplikationer och API:er, vilket gör detta verktyg oumbärligt för utvecklare och dataanalytiker.",
+            "features_title": "Huvudfunktioner",
             "features_list": {
-                "1": "Instant conversion with smart delimiter detection",
-                "2": "Proper handling of nested headers and CSV quotes",
-                "3": "100% Secure - processing happens in your browser",
-                "4": "Beautifully formatted JSON output",
-                "5": "Support for custom delimiters (comma, semicolon, tab, pipe)",
-                "6": "One-click copy and JSON file download"
+                "1": "Omedelbar konvertering med smart detektering av avgränsare",
+                "2": "Korrekt hantering av nästlade rubriker och CSV-citattecken",
+                "3": "100 % säker – bearbetning sker lokalt i din webbläsare",
+                "4": "Vackert formaterad JSON-utdata",
+                "5": "Stöd för anpassade avgränsare (kommatecken, semikolon, tabb, vertikalt streck)",
+                "6": "Kopiera och ladda ner JSON-fil med ett klick"
             },
-            "uses_title": "Modern Use Cases",
+            "uses_title": "Moderna användningsområden",
             "uses": {
                 "migration": {
-                    "title": "Data Migration",
-                    "desc": "Easily migrate data from legacy spreadsheets to modern NoSQL databases."
+                    "title": "Datamigration",
+                    "desc": "Migrera enkelt data från äldre kalkylblad till moderna NoSQL-databaser."
                 },
                 "api": {
-                    "title": "API Testing",
-                    "desc": "Generate JSON request payloads from CSV test data objects."
+                    "title": "API-testning",
+                    "desc": "Generera JSON-nyttolaster för anrop från CSV-testdata."
                 },
                 "db": {
-                    "title": "Database Seeders",
-                    "desc": "Convert CSV datasets into JSON for database seeders and migrations."
+                    "title": "Databas-seeders",
+                    "desc": "Konvertera CSV-dataset till JSON för databas-seeders och migrationer."
                 },
                 "analysis": {
-                    "title": "Data Analysis",
-                    "desc": "Transform raw CSV exports into structured JSON for analysis."
+                    "title": "Dataanalys",
+                    "desc": "Omvandla rå CSV-export till strukturerad JSON för analys."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Vanliga frågor",
             "faq": {
-                "q1": "Is my CSV data kept private?",
-                "a1": "Yes, all processing is done locally in your browser. Your data is never uploaded to our servers.",
-                "q2": "Does it support large files?",
-                "a2": "The converter handles large files efficiently, limited only by your browser's memory.",
-                "q3": "Can I convert JSON back to CSV?",
-                "a3": "Yes! Use our 'JSON to CSV' tool in the Development section for reverse conversion."
+                "q1": "Hålls mina CSV-data privata?",
+                "a1": "Ja, all bearbetning sker lokalt i din webbläsare. Dina data laddas aldrig upp till våra servrar.",
+                "q2": "Stöder den stora filer?",
+                "a2": "Konverteraren hanterar stora filer effektivt, endast begränsat av din webbläsares minne.",
+                "q3": "Kan jag konvertera JSON tillbaka till CSV?",
+                "a3": "Ja! Använd vårt verktyg 'JSON till CSV' i sektionen Utveckling för omvänd konvertering."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No JSON to copy. Please convert CSV first.",
-            "success_copy": "JSON copied to clipboard!",
-            "error_no_download": "No JSON to download. Please convert CSV first."
+            "error_empty": "Vänligen ange CSV-data att konvertera",
+            "error_convert": "Fel vid konvertering av CSV: ",
+            "error_no_copy": "Ingen JSON att kopiera. Konvertera CSV först.",
+            "success_copy": "JSON kopierad till urklipp!",
+            "error_no_download": "Ingen JSON att ladda ner. Konvertera CSV först."
         }
     },
     "csv-to-sql": {
@@ -143,77 +143,136 @@
     },
     "csv-to-tsv": {
         "meta": {
-            "title": "CSV till TSV Converter - Gratis textdataverktyg online",
-            "description": "CSV till TSV - Snabbt, gratis och pålitligt onlineverktyg.",
+            "title": "CSV till TSV-konverterare - Gratis online tabellverktyg",
+            "description": "Konvertera kommaseparerade värden till tabbseparerat format omedelbart med vårt gratisverktyg. Perfekt för datavetenskap och databasimporter.",
             "h1": "CSV till TSV",
-            "subtitle": "Professionellt CSV till TSV-verktyg"
+            "subtitle": "Konvertera CSV till TSV för datavetenskap och databasimport"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Välj avgränsare",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Kommatecken (,)",
+                "semicolon": "Semikolon (;)",
+                "tab": "Tabb",
+                "pipe": "Vertikalt streck (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to TSV",
-            "btn_copy": "Copy TSV",
-            "btn_download": "Download TSV",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "TSV Output",
-            "ph_output": "Converted TSV will appear here..."
+            "header_checkbox": "Första raden är rubrik",
+            "btn_convert": "Konvertera till TSV",
+            "btn_copy": "Kopiera TSV",
+            "btn_download": "Ladda ner TSV",
+            "btn_example": "Ladda exempel",
+            "btn_clear": "Rensa allt",
+            "label_input": "CSV-indata",
+            "ph_input": "Ange dina CSV-data här...",
+            "label_output": "TSV-utdata",
+            "ph_output": "Konverterad TSV visas här..."
         },
         "content": {
-            "about_title": "About CSV to TSV Converter",
-            "about_p1": "Our free CSV to TSV converter transforms standard comma-separated values into tab-separated values. TSV files are commonly used in data science, bioinformatics, and legacy database systems that prefer tabs over commas.",
-            "features_title": "Key Features",
-            "features_list": {
-                "1": "High-speed conversion to TSV format",
-                "2": "Smart detection of CSV delimiters",
-                "3": "Privacy protected client-side processing",
-                "4": "Handling of multi-line CSV values",
-                "5": "One-click copy to clipboard",
-                "6": "Support for all standard CSV formats"
-            },
-            "uses_title": "Common Use Cases",
-            "uses": {
-                "migration": {
-                    "title": "Data Science",
-                    "desc": "Prepare datasets for R or Python tools that frequently use TSV."
+            "hero_title": "CSV till TSV-konverterare",
+            "hero_subtitle": "Konvertera kommaseparerade värden till tabbseparerat format direkt. Perfekt för datavetenskap och databasimporter.",
+            "p1": "Vår kostnadsfria CSV till TSV-konverterare är ett kraftfullt verktyg designat för att omvandla standardmässiga kommaseparerade värden till tabbseparerade värden. Oavsett om du arbetar med stora datamängder för forskning eller förbereder filer för specifika databassystem, erbjuder detta verktyg en snabb och pålitlig lösning.",
+            "what_title": "Vad är CSV till TSV-konvertering?",
+            "what_desc": "CSV (Comma-Separated Values) och TSV (Tab-Separated Values) är båda textformat för tabelldata. Medan CSV är vanligare, föredras TSV ofta inom datavetenskap och bioinformatik eftersom det undviker problem med kommatecken i textfält, vilket ger en renare separation för komplexa data.",
+            "features_title": "Huvudfunktioner",
+            "features": {
+                "fast": {
+                    "title": "Omedelbar konvertering",
+                    "desc": "Konvertera tusentals rader på millisekunder med vår optimerade motor."
                 },
-                "api": {
-                    "title": "Database Loading",
-                    "desc": "Load data into systems that require tab-separated formats for fast import."
+                "private": {
+                    "title": "100 % säker",
+                    "desc": "All bearbetning sker i din webbläsare. Dina data lämnar aldrig din enhet."
+                },
+                "copy": {
+                    "title": "Kopiera med ett klick",
+                    "desc": "Kopiera snabbt dina konverterade TSV-data till urklipp för användning i andra appar."
+                },
+                "smart": {
+                    "title": "Smart hantering",
+                    "desc": "Hanterar korrekt fält med flera rader och specialtecken i dina CSV-data."
+                },
+                "free": {
+                    "title": "Alltid gratis",
+                    "desc": "Ingen registrering eller prenumeration krävs. Använd det så mycket du behöver."
                 },
                 "db": {
-                    "title": "Bioinformatics",
-                    "desc": "Format genomics data which is predominantly stored in TSV formats."
-                },
-                "analysis": {
-                    "title": "Excel Compatibility",
-                    "desc": "Copy-paste structured data directly into Excel without delimiter issues."
+                    "title": "Förberedd för databaser",
+                    "desc": "Generera ren TSV-utdata som är kompatibel med stora verktyg för databasimport."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "uses_title": "Vanliga användningsområden",
+            "uses": {
+                "db": {
+                    "title": "Databasladdning",
+                    "desc": "Många databassystem som PostgreSQL och MySQL stöder snabb TSV-import."
+                },
+                "process": {
+                    "title": "Databehandling",
+                    "desc": "Integrera med Python, R eller Excel för vidare analys av dina datamängder."
+                },
+                "legacy": {
+                    "title": "Äldre system",
+                    "desc": "Förbered data för äldre system som strikt kräver tabbavgränsade format."
+                },
+                "analysis": {
+                    "title": "Vetenskaplig analys",
+                    "desc": "TSV är standardformatet för många vetenskapliga och genomiska dataplattformar."
+                },
+                "standard": {
+                    "title": "Formatstandardisering",
+                    "desc": "Konvertera olika CSV-stilar till ett standardiserat TSV-format för konsekvens."
+                },
+                "export": {
+                    "title": "Kalkylbladsexport",
+                    "desc": "Flytta enkelt data från Google Sheets eller Excel till specialiserad programvara."
+                }
+            },
+            "how_title": "Hur man konverterar CSV till TSV",
+            "how_steps": {
+                "1": {
+                    "title": "Klistra in CSV-data",
+                    "desc": "Klistra in din kommaseparerade text i inmatningsfältet ovan."
+                },
+                "2": {
+                    "title": "Klicka på Konvertera",
+                    "desc": "Tryck på knappen 'Konvertera till TSV' för att starta omvandlingsprocessen."
+                },
+                "3": {
+                    "title": "Kopiera resultatet",
+                    "desc": "Kopiera de genererade tabbseparerade värdena eller ladda ner dem som en fil."
+                }
+            },
+            "example_title": "Exempel på konvertering",
+            "example_input": "CSV-indata:",
+            "example_output": "TSV-resultat:",
+            "faq_title": "Vanliga frågor",
             "faq": {
-                "q1": "Where is my data processed?",
-                "a1": "All conversion happens in your browser's memory, ensuring maximum privacy.",
-                "q2": "What are the advantages of TSV?",
-                "a2": "TSV is less prone to errors when your data contains commas (like names or addresses).",
-                "q3": "Can I convert TSV back to CSV?",
-                "a3": "Yes, our 'TSV to CSV' tool handles the reverse process instantly."
+                "q1": "Finns det en radgräns?",
+                "a1": "Det finns ingen fast gräns. Vårt verktyg kan hantera stora datamängder effektivt inom din webbläsares minne.",
+                "q2": "Lagras mina filer?",
+                "a2": "Nej. Vi lagrar inte eller ens ser dina data. Allt stannar på din dator.",
+                "q3": "Kan jag använda andra avgränsare?",
+                "a3": "Ja, vårt verktyg upptäcker automatiskt olika avgränsare för att säkerställa en smidig konvertering.",
+                "q4": "Är det kompatibelt med Excel?",
+                "a4": "Absolut! TSV-data kan klistras in direkt i Excel-ark med perfekt kolumnjustering.",
+                "q5": "Stöder det UTF-8?",
+                "a5": "Ja, konverteraren stöder fullt ut UTF-8 och andra specialteckenkodningar."
+            },
+            "tips_title": "Bästa praxis",
+            "tips_list": {
+                "1": "Se till att din CSV har konsekventa avgränsare för bästa resultat.",
+                "2": "Kontrollera om första raden innehåller rubriker för att hålla dina data organiserade.",
+                "3": "Använd kopieringsknappen för att undvika att missa rader av misstag vid manuell markering.",
+                "4": "Verifiera din datastruktur innan du importerar den till känsliga databassystem.",
+                "5": "Prova vårt verktyg 'TSV till CSV' om du behöver utföra den omvända konverteringen."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No TSV to copy. Please convert CSV first.",
-            "success_copy": "TSV copied to clipboard!",
-            "error_no_download": "No TSV to download. Please convert CSV first."
+            "error_empty": "Ange CSV-data att konvertera",
+            "error_convert": "Fel vid konvertering av CSV: ",
+            "error_no_copy": "Ingen TSV att kopiera. Konvertera CSV först.",
+            "success_copy": "TSV kopierad till urklipp!",
+            "error_no_download": "Ingen TSV att ladda ner. Konvertera CSV först."
         }
     },
     "csv-to-xml-converter": {

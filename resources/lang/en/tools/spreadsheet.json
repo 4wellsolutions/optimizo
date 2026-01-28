@@ -168,44 +168,103 @@
             "ph_output": "Converted TSV will appear here..."
         },
         "content": {
-            "about_title": "About CSV to TSV Converter",
-            "about_p1": "Our free CSV to TSV converter transforms standard comma-separated values into tab-separated values. TSV files are commonly used in data science, bioinformatics, and legacy database systems that prefer tabs over commas.",
+            "hero_title": "CSV to TSV Converter",
+            "hero_subtitle": "Convert comma-separated values to tab-separated format instantly. Perfect for data science and database imports.",
+            "p1": "Our free CSV to TSV converter is a powerful tool designed to transform standard comma-separated values into tab-separated values. Whether you are working with large datasets for research or preparing files for specific database systems, this tool provides a fast and reliable solution.",
+            "what_title": "What is CSV to TSV Conversion?",
+            "what_desc": "CSV (Comma-Separated Values) and TSV (Tab-Separated Values) are both plain-text formats for tabular data. While CSV is more common, TSV is often preferred in data science and bioinformatics because it avoids issues with commas inside text fields, providing a cleaner separation for complex data.",
             "features_title": "Key Features",
-            "features_list": {
-                "1": "High-speed conversion to TSV format",
-                "2": "Smart detection of CSV delimiters",
-                "3": "Privacy protected client-side processing",
-                "4": "Handling of multi-line CSV values",
-                "5": "One-click copy to clipboard",
-                "6": "Support for all standard CSV formats"
+            "features": {
+                "fast": {
+                    "title": "Instant Conversion",
+                    "desc": "Convert thousands of rows in milliseconds with our optimized engine."
+                },
+                "private": {
+                    "title": "100% Secure",
+                    "desc": "All processing happens in your browser. Your data never leaves your device."
+                },
+                "copy": {
+                    "title": "One-Click Copy",
+                    "desc": "Quickly copy your converted TSV data to the clipboard for use in other apps."
+                },
+                "smart": {
+                    "title": "Smart Handling",
+                    "desc": "Correctly handles multi-line fields and special characters within your CSV data."
+                },
+                "free": {
+                    "title": "Always Free",
+                    "desc": "No registration or subscription required. Use it as much as you need."
+                },
+                "db": {
+                    "title": "Database Ready",
+                    "desc": "Generate clean TSV output compatible with major database import tools."
+                }
             },
             "uses_title": "Common Use Cases",
             "uses": {
-                "migration": {
-                    "title": "Data Science",
-                    "desc": "Prepare datasets for R or Python tools that frequently use TSV."
-                },
-                "api": {
-                    "title": "Database Loading",
-                    "desc": "Load data into systems that require tab-separated formats for fast import."
-                },
                 "db": {
-                    "title": "Bioinformatics",
-                    "desc": "Format genomics data which is predominantly stored in TSV formats."
+                    "title": "Database Loading",
+                    "desc": "Many database systems like PostgreSQL and MySQL support fast TSV imports."
+                },
+                "process": {
+                    "title": "Data Processing",
+                    "desc": "Integrate with Python, R, or Excel for further analysis of your datasets."
+                },
+                "legacy": {
+                    "title": "Legacy Systems",
+                    "desc": "Prepare data for older systems that strictly require tab-delimited formats."
                 },
                 "analysis": {
-                    "title": "Excel Compatibility",
-                    "desc": "Copy-paste structured data directly into Excel without delimiter issues."
+                    "title": "Scientific Analysis",
+                    "desc": "TSV is the standard format for many scientific and genomic data platforms."
+                },
+                "standard": {
+                    "title": "Format Standardization",
+                    "desc": "Convert various CSV styles into a standard TSV format for consistency."
+                },
+                "export": {
+                    "title": "Spreadsheet Export",
+                    "desc": "Easily move data from Google Sheets or Excel to specialized software."
                 }
             },
+            "how_title": "How to Convert CSV to TSV",
+            "how_steps": {
+                "1": {
+                    "title": "Paste CSV Data",
+                    "desc": "Paste your comma-separated text into the input field above."
+                },
+                "2": {
+                    "title": "Click Convert",
+                    "desc": "Press the 'Convert to TSV' button to start the transformation process."
+                },
+                "3": {
+                    "title": "Copy Result",
+                    "desc": "Copy the generated tab-separated values or download them as a file."
+                }
+            },
+            "example_title": "Conversion Example",
+            "example_input": "CSV Input:",
+            "example_output": "TSV Result:",
             "faq_title": "Frequently Asked Questions",
             "faq": {
-                "q1": "Where is my data processed?",
-                "a1": "All conversion happens in your browser's memory, ensuring maximum privacy.",
-                "q2": "What are the advantages of TSV?",
-                "a2": "TSV is less prone to errors when your data contains commas (like names or addresses).",
-                "q3": "Can I convert TSV back to CSV?",
-                "a3": "Yes, our 'TSV to CSV' tool handles the reverse process instantly."
+                "q1": "Is there a row limit?",
+                "a1": "There is no hard limit. Our tool can handle large datasets efficiently within your browser's memory.",
+                "q2": "Are my files stored?",
+                "a2": "No. We do not store or even see your data. Everything stays on your computer.",
+                "q3": "Can I use other delimiters?",
+                "a3": "Yes, our tool detects various separators automatically to ensure a smooth conversion.",
+                "q4": "Is it compatible with Excel?",
+                "a4": "Absolutely! TSV data can be pasted directly into Excel sheets with perfect column alignment.",
+                "q5": "Does it support UTF-8?",
+                "a5": "Yes, the converter fully supports UTF-8 and other special character encodings."
+            },
+            "tips_title": "Best Practices",
+            "tips_list": {
+                "1": "Ensure your CSV has consistent separators for the best results.",
+                "2": "Check if your first row contains headers to keep your data organized.",
+                "3": "Use the copy button to avoid accidentally missing rows when selecting manually.",
+                "4": "Verify your data structure before importing it into sensitive database systems.",
+                "5": "Try our 'TSV to CSV' tool if you need to perform the reverse conversion."
             }
         },
         "js": {

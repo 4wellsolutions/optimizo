@@ -34,88 +34,88 @@
     "csv-to-json": {
         "meta": {
             "title": "Konverter CSV ke JSON - Alat Data Online Gratis",
-            "description": "CSV ke JSON - Alat online yang cepat, gratis, dan andal.",
+            "description": "Konversi data CSV ke format JSON secara instan. Alat online yang cepat, gratis, dan andal untuk mengubah data tabular menjadi objek JSON terstruktur.",
             "h1": "CSV ke JSON",
-            "subtitle": "Alat CSV ke JSON profesional"
+            "subtitle": "Alat profesional untuk mengonversi CSV ke JSON"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Pilih Pemisah",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
+                "comma": "Koma (,)",
+                "semicolon": "Titik Koma (;)",
                 "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "pipe": "Pipa (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to JSON",
-            "btn_copy": "Copy JSON",
-            "btn_download": "Download JSON",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "JSON Output",
-            "ph_output": "Converted JSON will appear here..."
+            "header_checkbox": "Baris pertama adalah header",
+            "btn_convert": "Konversi ke JSON",
+            "btn_copy": "Salin JSON",
+            "btn_download": "Unduh JSON",
+            "btn_example": "Muat Contoh",
+            "btn_clear": "Hapus Semua",
+            "label_input": "Input CSV",
+            "ph_input": "Masukkan data CSV Anda di sini...",
+            "label_output": "Output JSON",
+            "ph_output": "Hasil konversi JSON akan muncul di sini..."
         },
         "content": {
-            "about_title": "About CSV to JSON Converter",
-            "about_p1": "Our free CSV to JSON converter transforms comma-separated values (CSV) into structured JSON format instantly. JSON is the standard data format for modern web applications and APIs, making this tool essential for developers and data analysts.",
-            "features_title": "Key Features",
+            "about_title": "Tentang Konverter CSV ke JSON",
+            "about_p1": "Konverter CSV ke JSON gratis kami mengubah nilai yang dipisahkan koma (CSV) menjadi format JSON terstruktur secara instan. JSON adalah format data standar untuk aplikasi web dan API modern, menjadikan alat ini sangat penting bagi pengembang dan analis data.",
+            "features_title": "Fitur Utama",
             "features_list": {
-                "1": "Instant conversion with smart delimiter detection",
-                "2": "Proper handling of nested headers and CSV quotes",
-                "3": "100% Secure - processing happens in your browser",
-                "4": "Beautifully formatted JSON output",
-                "5": "Support for custom delimiters (comma, semicolon, tab, pipe)",
-                "6": "One-click copy and JSON file download"
+                "1": "Konversi instan dengan deteksi pemisah cerdas",
+                "2": "Penanganan header bertingkat dan tanda kutip CSV yang benar",
+                "3": "100% Aman - pemrosesan terjadi di browser Anda",
+                "4": "Output JSON yang diformat dengan indah",
+                "5": "Dukungan untuk pemisah khusus (koma, titik koma, tab, pipa)",
+                "6": "Salin dan unduh file JSON dengan satu klik"
             },
-            "uses_title": "Modern Use Cases",
+            "uses_title": "Kasus Penggunaan Modern",
             "uses": {
                 "migration": {
-                    "title": "Data Migration",
-                    "desc": "Easily migrate data from legacy spreadsheets to modern NoSQL databases."
+                    "title": "Migrasi Data",
+                    "desc": "Migrasikan data dengan mudah dari spreadsheet lama ke database NoSQL modern."
                 },
                 "api": {
-                    "title": "API Testing",
-                    "desc": "Generate JSON request payloads from CSV test data objects."
+                    "title": "Pengujian API",
+                    "desc": "Hasilkan payload permintaan JSON dari data uji CSV."
                 },
                 "db": {
-                    "title": "Database Seeders",
-                    "desc": "Convert CSV datasets into JSON for database seeders and migrations."
+                    "title": "Seed Database",
+                    "desc": "Ubah dataset CSV menjadi JSON untuk seed database dan migrasi."
                 },
                 "analysis": {
-                    "title": "Data Analysis",
-                    "desc": "Transform raw CSV exports into structured JSON for analysis."
+                    "title": "Analisis Data",
+                    "desc": "Ubah ekspor CSV mentah menjadi JSON terstruktur untuk analisis."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "Is my CSV data kept private?",
-                "a1": "Yes, all processing is done locally in your browser. Your data is never uploaded to our servers.",
-                "q2": "Does it support large files?",
-                "a2": "The converter handles large files efficiently, limited only by your browser's memory.",
-                "q3": "Can I convert JSON back to CSV?",
-                "a3": "Yes! Use our 'JSON to CSV' tool in the Development section for reverse conversion."
+                "q1": "Apakah data CSV saya tetap pribadi?",
+                "a1": "Ya, semua pemrosesan dilakukan secara lokal di browser Anda. Data Anda tidak pernah diunggah ke server kami.",
+                "q2": "Apakah mendukung file besar?",
+                "a2": "Konverter menangani file besar secara efisien, hanya dibatasi oleh memori browser Anda.",
+                "q3": "Dapatkah saya mengonversi JSON kembali ke CSV?",
+                "a3": "Ya! Gunakan alat 'JSON ke CSV' kami di bagian Pengembangan untuk konversi sebaliknya."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No JSON to copy. Please convert CSV first.",
-            "success_copy": "JSON copied to clipboard!",
-            "error_no_download": "No JSON to download. Please convert CSV first."
+            "error_empty": "Silakan masukkan data CSV untuk dikonversi",
+            "error_convert": "Kesalahan saat mengonversi CSV: ",
+            "error_no_copy": "Tidak ada JSON untuk disalin. Silakan konversi CSV terlebih dahulu.",
+            "success_copy": "JSON disalin ke papan klip!",
+            "error_no_download": "Tidak ada JSON untuk diunduh. Silakan konversi CSV terlebih dahulu."
         }
     },
     "csv-to-sql": {
         "meta": {
             "title": "Konverter CSV ke SQL - Alat Database Online Gratis",
-            "description": "Konversikan file CSV ke pernyataan SQL INSERT secara instan. Alat online gratis untuk menghasilkan CREATE TABLE dan kueri INSERT massal untuk MySQL, PostgreSQL, SQLite.",
+            "description": "Konversikan file CSV ke pernyataan SQL INSERT secara instan. Alat online gratis untuk menghasilkan perintah CREATE TABLE dan kueri INSERT massal untuk MySQL, PostgreSQL, SQLite.",
             "h1": "Konverter CSV ke SQL",
             "subtitle": "Konversikan file CSV ke pernyataan SQL INSERT untuk impor database secara instan"
         },
         "form": {
             "title": "Konversi CSV ke SQL INSERT",
-            "subtitle": "Unggah CSV untuk menghasilkan pernyataan SQL Buat Tabel dan Sisipkan",
+            "subtitle": "Unggah CSV untuk menghasilkan pernyataan SQL CREATE TABLE dan INSERT",
             "upload_label": "Klik untuk mengunggah atau seret dan lepas",
             "upload_help": "File CSV (.csv)",
             "table_name_label": "Nama Tabel (Opsional)",
@@ -129,121 +129,180 @@
             "feature1_title": "Skema Otomatis",
             "feature1_desc": "Secara otomatis mendeteksi nama kolom dari baris header pertama Anda dan menghasilkan skema CREATE TABLE.",
             "feature2_title": "Penyisipan Massal",
-            "feature2_desc": "Menghasilkan pernyataan SQL INSERT yang bersih dan lolos, siap untuk eksekusi massal di klien SQL mana pun.",
+            "feature2_desc": "Menghasilkan pernyataan SQL INSERT yang bersih dan aman, siap untuk eksekusi massal di klien SQL mana pun.",
             "feature3_title": "SQL Universal",
-            "feature3_desc": "Menghasilkan kode yang sesuai dengan SQL-92 yang berfungsi di MySQL, PostgreSQL, SQLite, dan MariaDB."
+            "feature3_desc": "Menghasilkan kode yang sesuai dengan standar SQL-92 yang berfungsi di MySQL, PostgreSQL, SQLite, dan MariaDB."
         },
         "faq": {
             "title": "Pertanyaan yang Sering Diajukan",
-            "q1": "Database SQL apa yang didukung?",
+            "q1": "Database SQL apa saja yang didukung?",
             "a1": "Alat kami menghasilkan pernyataan SQL INSERT standar yang kompatibel dengan MySQL, PostgreSQL, SQL Server, SQLite, dan sistem database utama lainnya. Anda dapat menyesuaikan nama tabel dan nama kolom sesuai kebutuhan.",
             "q2": "Bagaimana cara menangani karakter khusus dalam data CSV saya?",
-            "a2": "Konverter secara otomatis mengeluarkan karakter khusus (tanda kutip, garis miring terbalik) untuk mencegah injeksi SQL dan kesalahan sintaksis. Data Anda akan dikonversi dengan aman ke pernyataan SQL yang diformat dengan benar."
+            "a2": "Konverter secara otomatis memberikan karakter escape pada karakter khusus (tanda kutip, garis miring terbalik) untuk mencegah injeksi SQL dan kesalahan sintaksis. Data Anda akan dikonversi dengan aman ke pernyataan SQL yang diformat dengan benar."
         }
     },
     "csv-to-tsv": {
         "meta": {
-            "title": "Konverter CSV ke TSV - Alat Data Teks Online Gratis",
-            "description": "CSV ke TSV - Alat online yang cepat, gratis, dan andal.",
+            "title": "Konverter CSV ke TSV - Online Gratis",
+            "description": "Ubah CSV ke TSV cepat.",
             "h1": "CSV ke TSV",
-            "subtitle": "Alat CSV ke TSV profesional"
+            "subtitle": "Alat data profesional"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Pilih pemisah",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Koma (,)",
+                "semicolon": "Titik koma (;)",
+                "tab": "Tabulasi",
+                "pipe": "Pipa (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to TSV",
-            "btn_copy": "Copy TSV",
-            "btn_download": "Download TSV",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "TSV Output",
-            "ph_output": "Converted TSV will appear here..."
+            "header_checkbox": "Baris pertama adalah header",
+            "btn_convert": "Konversi ke TSV",
+            "btn_copy": "Salin TSV",
+            "btn_download": "Unduh TSV",
+            "btn_example": "Muat Contoh",
+            "btn_clear": "Hapus Semua",
+            "label_input": "Input CSV",
+            "ph_input": "Masukkan data CSV Anda di sini...",
+            "label_output": "Output TSV",
+            "ph_output": "Hasil konversi TSV akan muncul di sini..."
         },
         "content": {
-            "about_title": "About CSV to TSV Converter",
-            "about_p1": "Our free CSV to TSV converter transforms standard comma-separated values into tab-separated values. TSV files are commonly used in data science, bioinformatics, and legacy database systems that prefer tabs over commas.",
-            "features_title": "Key Features",
-            "features_list": {
-                "1": "High-speed conversion to TSV format",
-                "2": "Smart detection of CSV delimiters",
-                "3": "Privacy protected client-side processing",
-                "4": "Handling of multi-line CSV values",
-                "5": "One-click copy to clipboard",
-                "6": "Support for all standard CSV formats"
-            },
-            "uses_title": "Common Use Cases",
-            "uses": {
-                "migration": {
-                    "title": "Data Science",
-                    "desc": "Prepare datasets for R or Python tools that frequently use TSV."
+            "hero_title": "Konverter CSV ke TSV",
+            "hero_subtitle": "Ubah nilai yang dipisahkan koma ke format yang dipisahkan tab secara instan. Sempurna untuk sains data dan impor database.",
+            "p1": "Konverter CSV ke TSV gratis kami adalah alat yang ampuh yang dirancang untuk mengubah nilai standar yang dipisahkan koma menjadi nilai yang dipisahkan tab. Baik Anda bekerja dengan kumpulan data besar untuk penelitian atau menyiapkan file untuk sistem database tertentu, alat ini memberikan solusi yang cepat dan andal.",
+            "what_title": "Apa itu Konversi CSV ke TSV?",
+            "what_desc": "CSV (Comma-Separated Values) dan TSV (Tab-Separated Values) keduanya adalah format teks sederhana untuk data tabular. Meskipun CSV lebih umum, TSV sering kali lebih disukai dalam sains data dan bioinformatika karena menghindari masalah dengan koma di dalam bidang teks, memberikan pemisahan yang lebih bersih untuk data yang kompleks.",
+            "features_title": "Fitur Utama",
+            "features": {
+                "fast": {
+                    "title": "Konversi Instan",
+                    "desc": "Konversi ribuan baris dalam milidetik dengan mesin kami yang dioptimalkan."
                 },
-                "api": {
-                    "title": "Database Loading",
-                    "desc": "Load data into systems that require tab-separated formats for fast import."
+                "private": {
+                    "title": "100% Aman",
+                    "desc": "Semua pemrosesan terjadi di browser Anda. Data Anda tidak pernah keluar dari perangkat Anda."
+                },
+                "copy": {
+                    "title": "Salin Sekali Klik",
+                    "desc": "Salin data TSV hasil konversi ke clipboard dengan cepat untuk digunakan di aplikasi lain."
+                },
+                "smart": {
+                    "title": "Penanganan Cerdas",
+                    "desc": "Menangani bidang multiline dan karakter khusus dalam data CSV Anda dengan benar."
+                },
+                "free": {
+                    "title": "Selalu Gratis",
+                    "desc": "Tidak perlu registrasi atau berlangganan. Gunakan sesering yang Anda butuhkan."
                 },
                 "db": {
-                    "title": "Bioinformatics",
-                    "desc": "Format genomics data which is predominantly stored in TSV formats."
-                },
-                "analysis": {
-                    "title": "Excel Compatibility",
-                    "desc": "Copy-paste structured data directly into Excel without delimiter issues."
+                    "title": "Siap untuk Database",
+                    "desc": "Menghasilkan output TSV bersih yang kompatibel dengan alat impor database utama."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "uses_title": "Kasus Penggunaan Umum",
+            "uses": {
+                "db": {
+                    "title": "Pemuatan Database",
+                    "desc": "Banyak sistem database seperti PostgreSQL dan MySQL mendukung impor TSV yang cepat."
+                },
+                "process": {
+                    "title": "Pemrosesan Data",
+                    "desc": "Integrasikan dengan Python, R, atau Excel untuk analisis lebih lanjut dari kumpulan data Anda."
+                },
+                "legacy": {
+                    "title": "Sistem Lama",
+                    "desc": "Siapkan data untuk sistem lama yang sangat membutuhkan format yang dipisahkan tab."
+                },
+                "analysis": {
+                    "title": "Analisis Ilmiah",
+                    "desc": "TSV adalah format standar untuk banyak platform data ilmiah dan genomik."
+                },
+                "standard": {
+                    "title": "Standardisasi Format",
+                    "desc": "Ubah berbagai gaya CSV menjadi format TSV standar untuk konsistensi."
+                },
+                "export": {
+                    "title": "Ekspor Spreadsheet",
+                    "desc": "Pindahkan data dengan mudah dari Google Sheets atau Excel ke perangkat lunak khusus."
+                }
+            },
+            "how_title": "Cara Mengonversi CSV ke TSV",
+            "how_steps": {
+                "1": {
+                    "title": "Tempel Data CSV",
+                    "desc": "Tempelkan teks yang dipisahkan koma ke dalam bidang input di atas."
+                },
+                "2": {
+                    "title": "Klik Konversi",
+                    "desc": "Tekan tombol 'Konversi ke TSV' untuk memulai proses transformasi."
+                },
+                "3": {
+                    "title": "Salin Hasilnya",
+                    "desc": "Salin nilai yang dipisahkan tab yang dihasilkan atau unduh sebagai file."
+                }
+            },
+            "example_title": "Contoh Konversi",
+            "example_input": "Input CSV:",
+            "example_output": "Hasil TSV:",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
-                "q1": "Where is my data processed?",
-                "a1": "All conversion happens in your browser's memory, ensuring maximum privacy.",
-                "q2": "What are the advantages of TSV?",
-                "a2": "TSV is less prone to errors when your data contains commas (like names or addresses).",
-                "q3": "Can I convert TSV back to CSV?",
-                "a3": "Yes, our 'TSV to CSV' tool handles the reverse process instantly."
+                "q1": "Apakah ada batasan baris?",
+                "a1": "Tidak ada batasan tetap. Alat kami dapat menangani kumpulan data besar secara efisien di dalam memori browser Anda.",
+                "q2": "Apakah file saya disimpan?",
+                "a2": "Tidak. Kami tidak menyimpan atau bahkan melihat data Anda. Semuanya tetap di komputer Anda.",
+                "q3": "Dapatkah saya menggunakan pemisah lain?",
+                "a3": "Ya, alat kami secara otomatis mendeteksi berbagai pemisah untuk memastikan konversi yang lancar.",
+                "q4": "Apakah kompetibel dengan Excel?",
+                "a4": "Tentu saja! Data TSV dapat ditempelkan langsung ke lembar Excel dengan perataan kolom yang sempurna.",
+                "q5": "Apakah mendukung UTF-8?",
+                "a5": "Ya, konverter sepenuhnya mendukung UTF-8 dan pengkodean karakter khusus lainnya."
+            },
+            "tips_title": "Praktik Terbaik",
+            "tips_list": {
+                "1": "Pastikan CSV Anda memiliki pemisah yang konsisten untuk hasil terbaik.",
+                "2": "Periksa apakah baris pertama berisi header untuk menjaga data Anda tetap teratur.",
+                "3": "Gunakan tombol salin untuk menghindari baris yang terlewat secara tidak sengaja selama pemilihan manual.",
+                "4": "Verifikasi struktur data sebelum mengimpor ke sistem database yang sensitif.",
+                "5": "Coba alat 'TSV ke CSV' kami jika Anda perlu melakukan konversi sebaliknya."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No TSV to copy. Please convert CSV first.",
-            "success_copy": "TSV copied to clipboard!",
-            "error_no_download": "No TSV to download. Please convert CSV first."
+            "error_empty": "Silakan masukkan data CSV untuk dikonversi",
+            "error_convert": "Kesalahan saat mengonversi CSV: ",
+            "error_no_copy": "Tidak ada TSV untuk disalin. Silakan konversi CSV terlebih dahulu.",
+            "success_copy": "TSV disalin ke papan klip!",
+            "error_no_download": "Tidak ada TSV untuk diunduh. Silakan konversi CSV terlebih dahulu."
         }
     },
     "csv-to-xml-converter": {
         "meta": {
-            "title": "Konverter CSV ke XML - Pengurai Data Online Gratis",
-            "description": "Ubah data spreadsheet CSV menjadi format XML terstruktur dengan alat online gratis kami",
+            "title": "Konverter CSV ke XML - Parser Data Online Gratis",
+            "description": "Ubah data spreadsheet CSV menjadi format XML terstruktur dengan alat online gratis kami. Sempurna untuk integrasi sistem dan pertukaran data.",
             "h1": "Konverter CSV ke XML",
             "subtitle": "Ubah data spreadsheet CSV menjadi format XML terstruktur"
         },
         "editor": {
-            "btn_convert": "Konversikan ke XML",
-            "btn_clear": "Jernih",
-            "btn_copy": "Menyalin",
+            "btn_convert": "Konversi ke XML",
+            "btn_clear": "Hapus",
+            "btn_copy": "Salin",
             "btn_example": "Contoh",
-            "label_input": "Masukkan CSV",
-            "ph_input": "nama, umur, kota\nJohn,30,New York\nJane, 25, London",
-            "label_output": "Keluaran XML",
+            "label_input": "Input CSV",
+            "ph_input": "nama,umur,kota\nBudi,30,Jakarta\nSanti,25,Bandung",
+            "label_output": "Output XML",
             "ph_output": "XML yang dikonversi akan muncul di sini..."
         },
         "content": {
-            "hero_title": "Konverter CSV ke XML gratis",
+            "hero_title": "Konverter CSV ke XML Gratis",
             "hero_subtitle": "Ubah data spreadsheet CSV menjadi format XML terstruktur",
             "p1": "Konverter CSV ke XML gratis kami mengubah data nilai yang dipisahkan koma (CSV) menjadi format XML yang terstruktur dengan baik. Sempurna untuk migrasi data, integrasi sistem, pengembangan API, dan mengubah data spreadsheet menjadi XML untuk aplikasi perusahaan, layanan web, dan sistem lama.",
-            "what_title": "🔍 Apa itu Konversi CSV ke XML?",
-            "what_desc": "Konversi CSV ke XML mengubah data tabel dari format nilai yang dipisahkan koma menjadi eXtensible Markup Language. Meskipun CSV sederhana dan banyak digunakan untuk spreadsheet dan ekspor data, XML menyediakan struktur yang lebih baik, dukungan metadata, dan dibutuhkan oleh banyak sistem perusahaan, API SOAP, dan standar pertukaran data.",
-            "features_title": "✨ Fitur",
+            "what_title": "Apa itu Konversi CSV ke XML?",
+            "what_desc": "Konversi CSV ke XML mengubah data tabel dari format nilai yang dipisahkan koma menjadi eXtensible Markup Language (XML). Meskipun CSV sederhana dan banyak digunakan untuk spreadsheet dan ekspor data, XML menyediakan struktur yang lebih baik, dukungan metadata, dan dibutuhkan oleh banyak sistem perusahaan, API SOAP, dan standar pertukaran data.",
+            "features_title": "Fitur",
             "features": {
                 "fast": {
                     "title": "Konversi Instan",
-                    "desc": "Konversi CSV ke XML dalam milidetik dengan penguraian cerdas"
+                    "desc": "Konversi CSV ke XML dalam milidetik dengan parsing cerdas"
                 },
                 "secure": {
                     "title": "Aman & Pribadi",
@@ -255,49 +314,49 @@
                 },
                 "smart": {
                     "title": "Pemformatan Cerdas",
-                    "desc": "XML terstruktur dengan benar dengan lekukan yang benar"
+                    "desc": "XML terstruktur dengan benar dengan indentasi yang tepat"
                 },
                 "free": {
                     "title": "100% Gratis",
                     "desc": "Tanpa registrasi, tanpa batasan, sepenuhnya gratis selamanya"
                 },
                 "header": {
-                    "title": "Deteksi Tajuk",
+                    "title": "Deteksi Header",
                     "desc": "Secara otomatis menggunakan baris pertama sebagai nama elemen XML"
                 }
             },
-            "uses_title": "🎯 Kasus Penggunaan Umum",
+            "uses_title": "Kasus Penggunaan Umum",
             "uses": {
                 "migration": {
-                    "title": "🔄 Migrasi Data",
+                    "title": "Migrasi Data",
                     "desc": "Konversikan ekspor CSV dari Excel, Google Spreadsheet, atau database ke XML untuk diimpor ke sistem perusahaan."
                 },
                 "api": {
-                    "title": "🔌 Integrasi API",
+                    "title": "Integrasi API",
                     "desc": "Ubah data CSV menjadi format XML untuk layanan web SOAP dan API berbasis XML."
                 },
                 "bi": {
-                    "title": "📊 Intelijen Bisnis",
+                    "title": "Intelijen Bisnis",
                     "desc": "Konversikan laporan CSV ke XML untuk alat BI, gudang data, dan platform analitik."
                 },
                 "enterprise": {
-                    "title": "🏢 Sistem Perusahaan",
+                    "title": "Sistem Perusahaan",
                     "desc": "Ubah data CSV menjadi XML untuk ERP, CRM, dan aplikasi perusahaan lama."
                 },
                 "doc": {
-                    "title": "📄 Pemrosesan Dokumen",
-                    "desc": "Konversikan data CSV ke XML untuk pembuatan dokumen dan mesin templat."
+                    "title": "Pemrosesan Dokumen",
+                    "desc": "Konversikan data CSV ke XML untuk pembuatan dokumen dan mesin template."
                 },
                 "db": {
-                    "title": "🗄️ Ekspor Basis Data",
+                    "title": "Ekspor Database",
                     "desc": "Ubah ekspor CSV database menjadi XML untuk pertukaran dan pengarsipan data."
                 }
             },
-            "how_title": "📝 Cara Mengonversi CSV ke XML",
+            "how_title": "Cara Mengonversi CSV ke XML",
             "how_steps": {
                 "1": {
                     "title": "Klik Konversi",
-                    "desc": "Tekan \"Konversikan ke XML\" untuk mengubah CSV Anda menjadi format XML terstruktur."
+                    "desc": "Tekan \"Konversi ke XML\" untuk mengubah CSV Anda menjadi format XML terstruktur."
                 },
                 "2": {
                     "title": "Salin dan Gunakan",
@@ -308,13 +367,13 @@
                     "desc": "Klik tombol unduh untuk menyimpan file XML Anda yang telah dikonversi, siap digunakan dalam aplikasi, API, atau sistem pertukaran data."
                 }
             },
-            "example_title": "💡 Contoh Konversi",
-            "example_input": "Masukan CSV:",
-            "example_output": "Keluaran XML:",
-            "faq_title": "❓ Pertanyaan yang Sering Diajukan",
+            "example_title": "Contoh Konversi",
+            "example_input": "Input CSV:",
+            "example_output": "Output XML:",
+            "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
                 "q1": "Bagaimana cara konverter menangani header CSV?",
-                "a1": "Baris pertama CSV lingkungan Anda secara otomatis digunakan sebagai nama elemen XML. Pastikan CSV Anda memiliki header deskriptif untuk hasil terbaik.",
+                "a1": "Baris pertama dari CSV Anda secara otomatis digunakan sebagai nama elemen XML. Pastikan CSV Anda memiliki header deskriptif untuk hasil terbaik.",
                 "q2": "Apakah data saya aman?",
                 "a2": "Ya! Semua konversi terjadi di browser Anda menggunakan JavaScript. Data CSV Anda tidak pernah meninggalkan perangkat Anda atau dikirim ke server mana pun.",
                 "q3": "Bisakah saya mengonversi file CSV berukuran besar?",
@@ -322,22 +381,22 @@
                 "q4": "Bagaimana jika CSV saya memiliki koma pada datanya?",
                 "a4": "Untuk data CSV dengan koma, pastikan nilai dikutip dengan benar. Konverter kami menangani pemformatan CSV standar termasuk kolom yang dikutip.",
                 "q5": "Bisakah saya menggunakan ini untuk data Excel?",
-                "a5": "Sangat! Ekspor data Excel Anda sebagai CSV, lalu gunakan alat ini untuk mengonversinya ke format XML."
+                "a5": "Tentu saja! Ekspor data Excel Anda sebagai CSV, lalu gunakan alat ini untuk mengonversinya ke format XML."
             },
-            "tips_title": "🎓 Praktik Terbaik",
+            "tips_title": "Praktik Terbaik",
             "tips_list": {
-                "1": "<strong>Bersihkan data Anda:<\/strong> Hapus spasi ekstra dan karakter khusus dari header sebelum konversi.",
-                "2": "<strong>Uji dengan contoh:<\/strong> Gunakan tombol \"Contoh\" untuk memahami format konversi.",
-                "3": "<strong>Validasi keluaran XML:<\/strong> Selalu validasi XML yang dihasilkan terhadap persyaratan sistem target Anda.",
-                "4": "<strong>Menangani karakter khusus:<\/strong> Karakter khusus secara otomatis di-escape untuk keluaran XML yang valid.",
-                "5": "Validasi keluaran XML Anda menggunakan validator XML untuk memastikan struktur dan kompatibilitas yang tepat dengan sistem target Anda."
+                "1": "<strong>Bersihkan data Anda:</strong> Hapus spasi ekstra dan karakter khusus dari header sebelum konversi.",
+                "2": "<strong>Uji dengan contoh:</strong> Gunakan tombol \"Contoh\" untuk memahami format konversi.",
+                "3": "<strong>Validasi output XML:</strong> Selalu validasi XML yang dihasilkan terhadap persyaratan sistem target Anda.",
+                "4": "<strong>Menangani karakter khusus:</strong> Karakter khusus secara otomatis di-escape untuk output XML yang valid.",
+                "5": "Validasi output XML Anda menggunakan validator XML untuk memastikan struktur dan kompatibilitas yang tepat dengan sistem target Anda."
             }
         },
         "js": {
             "error_empty": "Silakan masukkan data CSV",
             "success_convert": "✓ CSV berhasil dikonversi ke XML",
             "error_general": "✕ Kesalahan:",
-            "error_no_copy": "Tidak ada keluaran untuk disalin",
+            "error_no_copy": "Tidak ada output untuk disalin",
             "success_copy": "✓ Disalin ke papan klip"
         }
     },
@@ -414,12 +473,12 @@
         },
         "editor": {
             "btn_convert": "Konversikan ke CSV",
-            "btn_clear": "Jernih",
-            "btn_copy": "Menyalin",
+            "btn_clear": "Hapus",
+            "btn_copy": "Salin",
             "btn_example": "Contoh",
             "label_input": "Masukkan Data TSV",
-            "ph_input": "nama usia kota\nYohanes 30 New York",
-            "label_output": "Keluaran CSV",
+            "ph_input": "nama\tusia\tkota\nBudi\t30\tJakarta",
+            "label_output": "Output CSV",
             "ph_output": "CSV yang dikonversi akan muncul di sini..."
         },
         "content": {
@@ -456,12 +515,12 @@
             "uses_title": "Kasus Penggunaan Umum",
             "uses": {
                 "spreadsheet": {
-                    "title": "Impor Lembar Bentang",
+                    "title": "Impor Spreadsheet",
                     "desc": "Konversikan file TSV ke CSV agar mudah diimpor ke Excel, Google Spreadsheet, dan aplikasi spreadsheet lainnya."
                 },
                 "database": {
-                    "title": "Ekspor Basis Data",
-                    "desc": "Ubah ekspor basis data TSV ke format CSV untuk analisis dan pelaporan data."
+                    "title": "Ekspor Database",
+                    "desc": "Ubah ekspor database TSV ke format CSV untuk analisis dan pelaporan data."
                 },
                 "analysis": {
                     "title": "Analisis Data",
@@ -476,7 +535,7 @@
                     "desc": "Ubah laporan TSV menjadi CSV agar lebih mudah dibagikan dan kompatibel."
                 },
                 "processing": {
-                    "title": "Pengolahan data",
+                    "title": "Pengolahan Data",
                     "desc": "Konversikan TSV ke CSV untuk pembersihan data, transformasi, dan pipeline ETL."
                 }
             },
@@ -497,8 +556,8 @@
             },
             "examples_title": "Contoh Konversi",
             "examples": {
-                "input": "Masukan TSV:",
-                "output": "Keluaran CSV:"
+                "input": "Input TSV:",
+                "output": "Output CSV:"
             },
             "faq_title": "Pertanyaan yang Sering Diajukan",
             "faq": {
@@ -509,7 +568,7 @@
                 "q3": "Bisakah saya mengonversi file TSV berukuran besar?",
                 "a3": "Ya, Anda dapat mengonversi file TSV dengan ukuran berapa pun. File yang sangat besar mungkin memerlukan waktu beberapa detik untuk diproses.",
                 "q4": "Apakah CSV akan berfungsi di Excel?",
-                "a4": "Sangat! CSV yang dihasilkan berfungsi sempurna di Excel, Google Spreadsheet, dan semua aplikasi spreadsheet.",
+                "a4": "Tentu saja! CSV yang dihasilkan berfungsi sempurna di Excel, Google Spreadsheet, dan semua aplikasi spreadsheet.",
                 "q5": "Bagaimana karakter khusus ditangani?",
                 "a5": "Nilai yang mengandung koma secara otomatis dikutip dalam keluaran CSV untuk menjaga integritas data."
             },
@@ -567,7 +626,7 @@
             "feature2_title": "Lebih Banyak Baris",
             "feature2_desc": "XLSX mendukung 1 juta+ baris vs batas XLS 65.536 baris.",
             "feature3_title": "Keamanan yang Ditingkatkan",
-            "feature3_desc": "Format XLSX memiliki keamanan dan pemulihan korupsi yang lebih baik."
+            "feature3_desc": "Format XLSX memiliki keamanan dan pemulihan kerusakan yang lebih baik."
         },
         "faq": {
             "title": "Pertanyaan yang Sering Diajukan",

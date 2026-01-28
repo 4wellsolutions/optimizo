@@ -33,77 +33,77 @@
     },
     "csv-to-json": {
         "meta": {
-            "title": "Convertitore da CSV a JSON: strumento di dati online gratuito",
-            "description": "Convertitore da CSV a JSON - Strumento online veloce, gratuito e affidabile.",
+            "title": "Convertitore da CSV a JSON gratuito online",
+            "description": "Converti file CSV in JSON in modo rapido e gratuito. Strumento online affidabile per gli sviluppatori per trasformare dati tabulari in oggetti JSON strutturati.",
             "h1": "CSV in JSON",
-            "subtitle": "Strumento professionale da CSV a JSON"
+            "subtitle": "Strumento professionale per la trasformazione da CSV a JSON"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Seleziona delimitatore",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Virgola (,)",
+                "semicolon": "Punto e virgola (;)",
+                "tab": "Tabulazione",
+                "pipe": "Barra (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to JSON",
-            "btn_copy": "Copy JSON",
-            "btn_download": "Download JSON",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "JSON Output",
-            "ph_output": "Converted JSON will appear here..."
+            "header_checkbox": "La prima riga è l'intestazione",
+            "btn_convert": "Converti in JSON",
+            "btn_copy": "Copia JSON",
+            "btn_download": "Scarica JSON",
+            "btn_example": "Carica esempio",
+            "btn_clear": "Pulisci tutto",
+            "label_input": "Input CSV",
+            "ph_input": "Inserisci qui i tuoi dati CSV...",
+            "label_output": "Output JSON",
+            "ph_output": "Il codice JSON convertito apparirà qui..."
         },
         "content": {
-            "about_title": "About CSV to JSON Converter",
-            "about_p1": "Our free CSV to JSON converter transforms comma-separated values (CSV) into structured JSON format instantly. JSON is the standard data format for modern web applications and APIs, making this tool essential for developers and data analysts.",
-            "features_title": "Key Features",
+            "about_title": "Informazioni sul convertitore da CSV a JSON",
+            "about_p1": "Il nostro convertitore gratuito da CSV a JSON trasforma istantaneamente i valori separati da virgola (CSV) in un formato JSON strutturato. JSON è il formato dati standard per le moderne applicazioni web e API, rendendo questo strumento essenziale per sviluppatori e analisti di dati.",
+            "features_title": "Caratteristiche principali",
             "features_list": {
-                "1": "Instant conversion with smart delimiter detection",
-                "2": "Proper handling of nested headers and CSV quotes",
-                "3": "100% Secure - processing happens in your browser",
-                "4": "Beautifully formatted JSON output",
-                "5": "Support for custom delimiters (comma, semicolon, tab, pipe)",
-                "6": "One-click copy and JSON file download"
+                "1": "Conversione istantanea con rilevamento intelligente del delimitatore",
+                "2": "Gestione corretta di intestazioni annidate e virgolette CSV",
+                "3": "Sicuro al 100% - l'elaborazione avviene nel tuo browser",
+                "4": "Output JSON formattato magnificamente",
+                "5": "Supporto per delimitatori personalizzati (virgola, punto e virgola, tab, pipe)",
+                "6": "Copia e download del file JSON con un clic"
             },
-            "uses_title": "Modern Use Cases",
+            "uses_title": "Casi d'uso moderni",
             "uses": {
                 "migration": {
-                    "title": "Data Migration",
-                    "desc": "Easily migrate data from legacy spreadsheets to modern NoSQL databases."
+                    "title": "Migrazione dati",
+                    "desc": "Migra facilmente i dati dai fogli di calcolo legacy ai moderni database NoSQL."
                 },
                 "api": {
-                    "title": "API Testing",
-                    "desc": "Generate JSON request payloads from CSV test data objects."
+                    "title": "Test delle API",
+                    "desc": "Genera payload di richiesta JSON da oggetti dati di test CSV."
                 },
                 "db": {
-                    "title": "Database Seeders",
-                    "desc": "Convert CSV datasets into JSON for database seeders and migrations."
+                    "title": "Seeder di database",
+                    "desc": "Converti set di dati CSV in JSON per seeder e migrazioni di database."
                 },
                 "analysis": {
-                    "title": "Data Analysis",
-                    "desc": "Transform raw CSV exports into structured JSON for analysis."
+                    "title": "Analisi dei dati",
+                    "desc": "Trasforma le esportazioni CSV grezze in JSON strutturato per l'analisi."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Domande frequenti",
             "faq": {
-                "q1": "Is my CSV data kept private?",
-                "a1": "Yes, all processing is done locally in your browser. Your data is never uploaded to our servers.",
-                "q2": "Does it support large files?",
-                "a2": "The converter handles large files efficiently, limited only by your browser's memory.",
-                "q3": "Can I convert JSON back to CSV?",
-                "a3": "Yes! Use our 'JSON to CSV' tool in the Development section for reverse conversion."
+                "q1": "I miei dati CSV sono privati?",
+                "a1": "Sì, tutta l'elaborazione viene eseguita localmente nel tuo browser. I tuoi dati non vengono mai caricati sui nostri server.",
+                "q2": "Supporta file di grandi dimensioni?",
+                "a2": "Il convertitore gestisce i file di grandi dimensioni in modo efficiente, limitato solo dalla memoria del browser.",
+                "q3": "Posso convertire JSON nuovamente in CSV?",
+                "a3": "Sì! Usa il nostro strumento 'JSON a CSV' nella sezione Sviluppo per la conversione inversa."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No JSON to copy. Please convert CSV first.",
-            "success_copy": "JSON copied to clipboard!",
-            "error_no_download": "No JSON to download. Please convert CSV first."
+            "error_empty": "Inserisci i dati CSV da convertire",
+            "error_convert": "Errore durante la conversione del CSV: ",
+            "error_no_copy": "Nessun JSON da copiare. Converti prima il CSV.",
+            "success_copy": "JSON copiato negli appunti!",
+            "error_no_download": "Nessun JSON da scaricare. Converti prima il CSV."
         }
     },
     "csv-to-sql": {
@@ -143,77 +143,136 @@
     },
     "csv-to-tsv": {
         "meta": {
-            "title": "Convertitore da CSV a TSV: strumento online gratuito per i dati di testo",
-            "description": "Convertitore da CSV a TSV - Strumento online veloce, gratuito e affidabile.",
+            "title": "Convertitore CSV in TSV - Gratuito",
+            "description": "Trasforma CSV in TSV.",
             "h1": "CSV in TSV",
-            "subtitle": "Strumento professionale da CSV a TSV"
+            "subtitle": "Conversione dati"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Seleziona delimitatore",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Virgola (,)",
+                "semicolon": "Punto e virgola (;)",
+                "tab": "Tabulazione",
+                "pipe": "Barra verticale (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to TSV",
-            "btn_copy": "Copy TSV",
-            "btn_download": "Download TSV",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "TSV Output",
-            "ph_output": "Converted TSV will appear here..."
+            "header_checkbox": "La prima riga è l'intestazione",
+            "btn_convert": "Converti in TSV",
+            "btn_copy": "Copia TSV",
+            "btn_download": "Scarica TSV",
+            "btn_example": "Carica esempio",
+            "btn_clear": "Pulisci tutto",
+            "label_input": "Input CSV",
+            "ph_input": "Inserisci i tuoi dati CSV qui...",
+            "label_output": "Output TSV",
+            "ph_output": "Il TSV convertito apparirà qui..."
         },
         "content": {
-            "about_title": "About CSV to TSV Converter",
-            "about_p1": "Our free CSV to TSV converter transforms standard comma-separated values into tab-separated values. TSV files are commonly used in data science, bioinformatics, and legacy database systems that prefer tabs over commas.",
-            "features_title": "Key Features",
-            "features_list": {
-                "1": "High-speed conversion to TSV format",
-                "2": "Smart detection of CSV delimiters",
-                "3": "Privacy protected client-side processing",
-                "4": "Handling of multi-line CSV values",
-                "5": "One-click copy to clipboard",
-                "6": "Support for all standard CSV formats"
-            },
-            "uses_title": "Common Use Cases",
-            "uses": {
-                "migration": {
-                    "title": "Data Science",
-                    "desc": "Prepare datasets for R or Python tools that frequently use TSV."
+            "hero_title": "Convertitore CSV in TSV",
+            "hero_subtitle": "Converti istantaneamente valori separati da virgole in formato separato da tabulazioni. Perfetto per data science e importazioni di database.",
+            "p1": "Il nostro convertitore gratuito da CSV a TSV è un potente strumento progettato per trasformare i valori standard separati da virgole in valori separati da tabulazioni. Che tu stia lavorando con grandi set di dati per la ricerca o preparando file per specifici sistemi di database, questo strumento fornisce una soluzione rapida e affidabile.",
+            "what_title": "Cos'è la conversione da CSV a TSV?",
+            "what_desc": "CSV (Comma-Separated Values) e TSV (Tab-Separated Values) sono entrambi formati di testo semplice per dati tabulari. Mentre il CSV è più comune, il TSV è spesso preferito nella data science e nella bioinformatica perché evita problemi con le virgole all'interno dei campi di testo, fornendo una separazione più netta per dati complessi.",
+            "features_title": "Caratteristiche principali",
+            "features": {
+                "fast": {
+                    "title": "Conversione istantanea",
+                    "desc": "Converti migliaia di righe in millisecondi con il nostro motore ottimizzato."
                 },
-                "api": {
-                    "title": "Database Loading",
-                    "desc": "Load data into systems that require tab-separated formats for fast import."
+                "private": {
+                    "title": "Sicuro al 100%",
+                    "desc": "Tutta l'elaborazione avviene nel tuo browser. I tuoi dati non lasciano mai il tuo dispositivo."
+                },
+                "copy": {
+                    "title": "Copia con un clic",
+                    "desc": "Copia rapidamente i dati TSV convertiti negli appunti per utilizzarli in altre app."
+                },
+                "smart": {
+                    "title": "Gestione intelligente",
+                    "desc": "Gestisce correttamente i campi multilinea e i caratteri speciali all'interno dei dati CSV."
+                },
+                "free": {
+                    "title": "Sempre gratuito",
+                    "desc": "Nessuna registrazione o abbonamento richiesto. Usalo tutte le volte che ne hai i bisogno."
                 },
                 "db": {
-                    "title": "Bioinformatics",
-                    "desc": "Format genomics data which is predominantly stored in TSV formats."
-                },
-                "analysis": {
-                    "title": "Excel Compatibility",
-                    "desc": "Copy-paste structured data directly into Excel without delimiter issues."
+                    "title": "Pronto per il database",
+                    "desc": "Genera un output TSV pulito compatibile con i principali strumenti di importazione di database."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "uses_title": "Casi d'uso comuni",
+            "uses": {
+                "db": {
+                    "title": "Caricamento database",
+                    "desc": "Molti sistemi di database come PostgreSQL e MySQL supportano importazioni TSV rapide."
+                },
+                "process": {
+                    "title": "Elaborazione dati",
+                    "desc": "Integralo con Python, R o Excel per un'ulteriore analisi dei tuoi set di dati."
+                },
+                "legacy": {
+                    "title": "Sistemi legacy",
+                    "desc": "Prepara i dati per i sistemi più vecchi che richiedono rigorosamente formati separati da tabulazioni."
+                },
+                "analysis": {
+                    "title": "Analisi scientifica",
+                    "desc": "TSV è il formato standard per molte piattaforme di dati scientifici e genomici."
+                },
+                "standard": {
+                    "title": "Standardizzazione del formato",
+                    "desc": "Converti vari stili CSV in un formato TSV standard per coerenza."
+                },
+                "export": {
+                    "title": "Esportazione fogli di calcolo",
+                    "desc": "Sposta facilmente i dati da Google Sheets o Excel a software specializzati."
+                }
+            },
+            "how_title": "Come convertire CSV in TSV",
+            "how_steps": {
+                "1": {
+                    "title": "Incolla i dati CSV",
+                    "desc": "Incolla il testo separato da virgole nel campo di input sopra."
+                },
+                "2": {
+                    "title": "Fai clic su Converti",
+                    "desc": "Premi il pulsante 'Converti in TSV' per avviare il processo di trasformazione."
+                },
+                "3": {
+                    "title": "Copia il risultato",
+                    "desc": "Copia i valori generati separati da tabulazioni o scaricali come file."
+                }
+            },
+            "example_title": "Esempio di conversione",
+            "example_input": "Input CSV:",
+            "example_output": "Risultato TSV:",
+            "faq_title": "Domande frequenti",
             "faq": {
-                "q1": "Where is my data processed?",
-                "a1": "All conversion happens in your browser's memory, ensuring maximum privacy.",
-                "q2": "What are the advantages of TSV?",
-                "a2": "TSV is less prone to errors when your data contains commas (like names or addresses).",
-                "q3": "Can I convert TSV back to CSV?",
-                "a3": "Yes, our 'TSV to CSV' tool handles the reverse process instantly."
+                "q1": "C'è un limite di righe?",
+                "a1": "Non c'è un limite fisso. Il nostro strumento può gestire in modo efficiente set di dati di grandi dimensioni all'interno della memoria del browser.",
+                "q2": "I miei file vengono memorizzati?",
+                "a2": "No. Non memorizziamo né vediamo i tuoi dati. Tutto rimane sul tuo computer.",
+                "q3": "Posso usare altri delimitatori?",
+                "a3": "Sì, il nostro strumento rileva automaticamente vari delimitatori per garantire una conversione fluida.",
+                "q4": "È compatibile con Excel?",
+                "a4": "Assolutamente! I dati TSV possono essere incollati direttamente nei fogli Excel con un perfetto allineamento delle colonne.",
+                "q5": "Supporta UTF-8?",
+                "a5": "Sì, il convertitore supporta pienamente l'UTF-8 e altre codifiche di caratteri speciali."
+            },
+            "tips_title": "Migliori pratiche",
+            "tips_list": {
+                "1": "Assicurati che il tuo CSV abbia delimitatori coerenti per i migliori risultati.",
+                "2": "Controlla se la prima riga contiene intestazioni per mantenere i tuoi dati organizzati.",
+                "3": "Usa il pulsante copia per evitare di perdere accidentalmente righe durante la selezione manuale.",
+                "4": "Verifica la struttura dei dati prima di importarli in sistemi di database sensibili.",
+                "5": "Prova il nostro strumento 'TSV a CSV' se hai bisogno di eseguire la conversione inversa."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No TSV to copy. Please convert CSV first.",
-            "success_copy": "TSV copied to clipboard!",
-            "error_no_download": "No TSV to download. Please convert CSV first."
+            "error_empty": "Inserisci i dati CSV da convertire",
+            "error_convert": "Errore durante la conversione del CSV: ",
+            "error_no_copy": "Nessun TSV da copiare. Converti prima il CSV.",
+            "success_copy": "TSV copiato negli appunti!",
+            "error_no_download": "Nessun TSV da scaricare. Converti prima il CSV."
         }
     },
     "csv-to-xml-converter": {

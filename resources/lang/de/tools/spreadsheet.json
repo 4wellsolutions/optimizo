@@ -143,10 +143,10 @@
     },
     "csv-to-tsv": {
         "meta": {
-            "title": "CSV-zu-TSV-Konverter – kostenloses Online-Textdaten-Tool",
-            "description": "CSV zu TSV - Schnelles, kostenloses und zuverlässiges Online-Tool.",
+            "title": "CSV zu TSV Konverter - Kostenlos",
+            "description": "Konvertieren Sie CSV zu TSV online.",
             "h1": "CSV zu TSV",
-            "subtitle": "Professionelles CSV zu TSV Tool"
+            "subtitle": "Profi-Tool für Daten"
         },
         "editor": {
             "label_delimiter": "Trennzeichen auswählen",
@@ -157,7 +157,7 @@
                 "pipe": "Pipe (|)"
             },
             "header_checkbox": "Erste Zeile ist Kopfzeile",
-            "btn_convert": "In TSV konvertieren",
+            "btn_convert": "In TSV umwandeln",
             "btn_copy": "TSV kopieren",
             "btn_download": "TSV herunterladen",
             "btn_example": "Beispiel laden",
@@ -165,55 +165,114 @@
             "label_input": "CSV-Eingabe",
             "ph_input": "Geben Sie hier Ihre CSV-Daten ein...",
             "label_output": "TSV-Ausgabe",
-            "ph_output": "Konvertiertes TSV wird hier angezeigt..."
+            "ph_output": "Umgewandeltes TSV wird hier angezeigt..."
         },
         "content": {
-            "about_title": "Über den CSV-zu-TSV-Konverter",
-            "about_p1": "Wandeln Sie Standard-CSV in tabulatorgetrennte TSV-Dateien um.",
+            "hero_title": "CSV zu TSV Konverter",
+            "hero_subtitle": "Konvertieren Sie kommagetrennte Werte sofort in ein tabulatorgetrenntes Format. Perfekt für Data Science und Datenbankimporte.",
+            "p1": "Unser kostenloser CSV zu TSV Konverter ist ein leistungsstarkes Tool, das entwickelt wurde, um Standard-CSV-Werte in tabulatorgetrennte Werte umzuwandeln. Egal, ob Sie mit großen Datensätzen für die Forschung arbeiten oder Dateien für spezielle Datenbanksysteme vorbereiten, dieses Tool bietet eine schnelle und zuverlässige Lösung.",
+            "what_title": "Was ist eine CSV zu TSV Konvertierung?",
+            "what_desc": "CSV (Comma-Separated Values) und TSV (Tab-Separated Values) sind beides Textformate für tabellarische Daten. Während CSV gebräuchlicher ist, wird TSV in der Datenwissenschaft und Bioinformatik oft bevorzugt, da es Probleme mit Kommas innerhalb von Textfeldern vermeidet und so eine sauberere Trennung für komplexe Daten bietet.",
             "features_title": "Hauptmerkmale",
-            "features_list": {
-                "1": "Hochgeschwindigkeitskonvertierung",
-                "2": "Intelligente Erkennung",
-                "3": "Sicherer Datenschutz",
-                "4": "Mehrzeilige Werte",
-                "5": "Kopieren mit einem Klick",
-                "6": "Unterstützt alle Formate"
-            },
-            "uses_title": "Anwendungsfälle",
-            "uses": {
-                "migration": {
-                    "title": "Data Science",
-                    "desc": "Daten für R oder Python vorbereiten."
+            "features": {
+                "fast": {
+                    "title": "Sofortige Konvertierung",
+                    "desc": "Konvertieren Sie tausende Zeilen in Millisekunden mit unserer optimierten Engine."
                 },
-                "api": {
-                    "title": "Datenbank-Import",
-                    "desc": "Schneller Import via Tabulator."
+                "private": {
+                    "title": "100% Sicher",
+                    "desc": "Die gesamte Verarbeitung erfolgt in Ihrem Browser. Ihre Daten verlassen nie Ihr Gerät."
+                },
+                "copy": {
+                    "title": "Ein-Klick-Kopie",
+                    "desc": "Kopieren Sie Ihre konvertierten TSV-Daten schnell in die Zwischenablage für die Verwendung in anderen Apps."
+                },
+                "smart": {
+                    "title": "Intelligente Handhabung",
+                    "desc": "Verarbeitet mehrzeilige Felder und Sonderzeichen innerhalb Ihrer CSV-Daten korrekt."
+                },
+                "free": {
+                    "title": "Immer kostenlos",
+                    "desc": "Keine Registrierung oder Abonnement erforderlich. Nutzen Sie es so oft Sie möchten."
                 },
                 "db": {
-                    "title": "Bioinformatik",
-                    "desc": "Genomikdaten formatieren."
-                },
-                "analysis": {
-                    "title": "Excel",
-                    "desc": "Daten direkt in Excel einfügen."
+                    "title": "Datenbankbereit",
+                    "desc": "Erzeugen Sie eine saubere TSV-Ausgabe, die mit gängigen Datenbank-Import-Tools kompatibel ist."
                 }
             },
+            "uses_title": "Häufige Anwendungsfälle",
+            "uses": {
+                "db": {
+                    "title": "Datenbank-Laden",
+                    "desc": "Viele Datenbanksysteme wie PostgreSQL und MySQL unterstützen schnelle TSV-Importe."
+                },
+                "process": {
+                    "title": "Datenverarbeitung",
+                    "desc": "Integrieren Sie Python, R oder Excel für die weitere Analyse Ihrer Datensätze."
+                },
+                "legacy": {
+                    "title": "Altsysteme",
+                    "desc": "Bereiten Sie Daten für ältere Systeme vor, die strikt tabulatorgetrennte Formate erfordern."
+                },
+                "analysis": {
+                    "title": "Wissenschaftliche Analyse",
+                    "desc": "TSV ist das Standardformat für viele wissenschaftliche und genomische Datenplattformen."
+                },
+                "standard": {
+                    "title": "Format-Standardisierung",
+                    "desc": "Konvertieren Sie verschiedene CSV-Stile in ein standardisiertes TSV-Format für Konsistenz."
+                },
+                "export": {
+                    "title": "Tabellenkalkulations-Export",
+                    "desc": "Verschieben Sie Daten einfach von Google Sheets oder Excel in spezialisierte Software."
+                }
+            },
+            "how_title": "Wie man CSV in TSV konvertiert",
+            "how_steps": {
+                "1": {
+                    "title": "CSV-Daten einfügen",
+                    "desc": "Fügen Sie Ihren kommagetrennten Text in das obige Eingabefeld ein."
+                },
+                "2": {
+                    "title": "Auf Konvertieren klicken",
+                    "desc": "Drücken Sie die Schaltfläche 'In TSV umwandeln', um den Transformationsprozess zu starten."
+                },
+                "3": {
+                    "title": "Ergebnis kopieren",
+                    "desc": "Kopieren Sie die generierten tabulatorgetrennten Werte oder laden Sie sie als Datei herunter."
+                }
+            },
+            "example_title": "Konvertierungsbeispiel",
+            "example_input": "CSV-Eingabe:",
+            "example_output": "TSV-Ergebnis:",
             "faq_title": "Häufig gestellte Fragen",
             "faq": {
-                "q1": "Wo werden Daten verarbeitet?",
-                "a1": "In Ihrem Browser-Speicher.",
-                "q2": "Vorteile von TSV?",
-                "a2": "Weniger Fehler bei kommahaltigen Daten.",
-                "q3": "Umgekehrt möglich?",
-                "a3": "Ja, mit 'TSV zu CSV'."
+                "q1": "Gibt es ein Zeilenlimit?",
+                "a1": "Es gibt kein festes Limit. Unser Tool kann große Datensätze effizient im Speicher Ihres Browsers verarbeiten.",
+                "q2": "Werden meine Dateien gespeichert?",
+                "a2": "Nein. Wir speichern Ihre Daten nicht und sehen sie nicht einmal. Alles bleibt auf Ihrem Computer.",
+                "q3": "Kann ich andere Trennzeichen verwenden?",
+                "a3": "Ja, unser Tool erkennt automatisch verschiedene Trennzeichen, um eine reibungslose Konvertierung zu gewährleisten.",
+                "q4": "Ist es mit Excel kompatibel?",
+                "a4": "Absolut! TSV-Daten können direkt in Excel-Tabellen mit perfekter Spaltenausrichtung eingefügt werden.",
+                "q5": "Unterstützt es UTF-8?",
+                "a5": "Ja, der Konverter unterstützt UTF-8 und andere Sonderzeichenkodierungen vollständig."
+            },
+            "tips_title": "Best Practices",
+            "tips_list": {
+                "1": "Stellen Sie sicher, dass Ihre CSV konsistente Trennzeichen für beste Ergebnisse hat.",
+                "2": "Prüfen Sie, ob die erste Zeile Kopfzeilen enthält, um Ihre Daten organisiert zu halten.",
+                "3": "Nutzen Sie die Kopiertaste, um versehentliches Auslassen von Zeilen bei manueller Auswahl zu vermeiden.",
+                "4": "Überprüfen Sie Ihre Datenstruktur, bevor Sie sie in sensible Datenbanksysteme importieren.",
+                "5": "Probieren Sie unser 'TSV zu CSV'-Tool aus, wenn Sie die umgekehrte Konvertierung benötigen."
             }
         },
         "js": {
-            "error_empty": "Bitte CSV-Daten eingeben",
-            "error_convert": "Fehler bei Konvertierung: ",
-            "error_no_copy": "Nichts zu kopieren.",
-            "success_copy": "In Zwischenablage kopiert!",
-            "error_no_download": "Nichts zum Herunterladen."
+            "error_empty": "Bitte geben Sie CSV-Daten zum Konvertieren ein",
+            "error_convert": "Fehler beim Konvertieren der CSV: ",
+            "error_no_copy": "Kein TSV zum Kopieren vorhanden. Bitte konvertieren Sie zuerst die CSV.",
+            "success_copy": "TSV in die Zwischenablage kopiert!",
+            "error_no_download": "Kein TSV zum Herunterladen vorhanden. Bitte konvertieren Sie zuerst die CSV."
         }
     },
     "csv-to-xml-converter": {
@@ -326,10 +385,10 @@
             },
             "tips_title": "🎓 Best Practices",
             "tips_list": {
-                "1": "<strong>Bereinigen Sie Ihre Daten:</strong> Entfernen Sie vor der Konvertierung zusätzliche Leerzeichen und Sonderzeichen aus den Headern.",
-                "2": "<strong>Mit Beispielen testen:</strong> Verwenden Sie die Schaltfläche „Beispiel“, um das Konvertierungsformat zu verstehen.",
-                "3": "<strong>XML-Ausgabe validieren:</strong> Validieren Sie das generierte XML immer gegen die Anforderungen Ihres Zielsystems.",
-                "4": "<strong>Sonderzeichen behandeln:</strong> Sonderzeichen werden automatisch maskiert, um eine gültige XML-Ausgabe zu gewährleisten.",
+                "1": "<strong>Bereinigen Sie Ihre Daten:<\/strong> Entfernen Sie vor der Konvertierung zusätzliche Leerzeichen und Sonderzeichen aus den Headern.",
+                "2": "<strong>Mit Beispielen testen:<\/strong> Verwenden Sie die Schaltfläche „Beispiel“, um das Konvertierungsformat zu verstehen.",
+                "3": "<strong>XML-Ausgabe validieren:<\/strong> Validieren Sie das generierte XML immer gegen die Anforderungen Ihres Zielsystems.",
+                "4": "<strong>Sonderzeichen behandeln:<\/strong> Sonderzeichen werden automatisch maskiert, um eine gültige XML-Ausgabe zu gewährleisten.",
                 "5": "Validieren Sie Ihre XML-Ausgabe mit einem XML-Validator, um die ordnungsgemäße Struktur und Kompatibilität mit Ihrem Zielsystem sicherzustellen."
             }
         },

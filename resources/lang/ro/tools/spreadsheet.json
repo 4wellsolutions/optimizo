@@ -34,76 +34,76 @@
     "csv-to-json": {
         "meta": {
             "title": "Convertor CSV în JSON - Instrument de date online gratuit",
-            "description": "Convertește CSV în JSON online. Instrument rapid, gratuit și fiabil pentru dezvoltatori și analiști de date.",
+            "description": "Convertește datele CSV în format JSON instantaneu. Instrument rapid, gratuit și fiabil pentru transformarea datelor tabelare în obiecte JSON structurate.",
             "h1": "CSV în JSON",
-            "subtitle": "Transformă datele tabelare în obiecte JSON structurate"
+            "subtitle": "Instrument profesional pentru conversia CSV în JSON"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Selectați delimitatorul",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Virgulă (,)",
+                "semicolon": "Punct și virgulă (;)",
+                "tab": "Tabulator",
+                "pipe": "Bară verticală (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to JSON",
-            "btn_copy": "Copy JSON",
-            "btn_download": "Download JSON",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "JSON Output",
-            "ph_output": "Converted JSON will appear here..."
+            "header_checkbox": "Primul rând este antet",
+            "btn_convert": "Convertește în JSON",
+            "btn_copy": "Copiază JSON",
+            "btn_download": "Descarcă JSON",
+            "btn_example": "Încarcă exemplu",
+            "btn_clear": "Șterge tot",
+            "label_input": "Intrare CSV",
+            "ph_input": "Introduceți datele CSV aici...",
+            "label_output": "Ieșire JSON",
+            "ph_output": "JSON-ul convertit va apărea aici..."
         },
         "content": {
-            "about_title": "About CSV to JSON Converter",
-            "about_p1": "Our free CSV to JSON converter transforms comma-separated values (CSV) into structured JSON format instantly. JSON is the standard data format for modern web applications and APIs, making this tool essential for developers and data analysts.",
-            "features_title": "Key Features",
+            "about_title": "Despre convertorul CSV în JSON",
+            "about_p1": "Convertorul nostru gratuit CSV în JSON transformă valorile separate prin virgulă (CSV) în format JSON structurat instantaneu. JSON este formatul de date standard pentru aplicațiile web și API-urile moderne, ceea ce face din acest instrument unul esențial pentru dezvoltatori și analiștii de date.",
+            "features_title": "Caracteristici cheie",
             "features_list": {
-                "1": "Instant conversion with smart delimiter detection",
-                "2": "Proper handling of nested headers and CSV quotes",
-                "3": "100% Secure - processing happens in your browser",
-                "4": "Beautifully formatted JSON output",
-                "5": "Support for custom delimiters (comma, semicolon, tab, pipe)",
-                "6": "One-click copy and JSON file download"
+                "1": "Conversie instantanee cu detectare inteligentă a delimitatorului",
+                "2": "Gestionarea corectă a antetelor imbricate și a ghilimelelor CSV",
+                "3": "100% sigur – procesarea are loc local în browserul tău",
+                "4": "Ieșire JSON formatată frumos",
+                "5": "Suport pentru delimitatori personalizați (virgulă, punct și virgulă, tabulator, bară verticală)",
+                "6": "Copiere și descărcare fișier JSON cu un singur clic"
             },
-            "uses_title": "Modern Use Cases",
+            "uses_title": "Cazuri de utilizare moderne",
             "uses": {
                 "migration": {
-                    "title": "Data Migration",
-                    "desc": "Easily migrate data from legacy spreadsheets to modern NoSQL databases."
+                    "title": "Migrare date",
+                    "desc": "Migrați cu ușurință datele din foile de calcul vechi către baze de date NoSQL moderne."
                 },
                 "api": {
-                    "title": "API Testing",
-                    "desc": "Generate JSON request payloads from CSV test data objects."
+                    "title": "Testare API",
+                    "desc": "Generați sarcini utile de tip cerere JSON din date de test CSV."
                 },
                 "db": {
-                    "title": "Database Seeders",
-                    "desc": "Convert CSV datasets into JSON for database seeders and migrations."
+                    "title": "Seeders bază de date",
+                    "desc": "Convertiți seturile de date CSV în JSON pentru seeders și migrări de baze de date."
                 },
                 "analysis": {
-                    "title": "Data Analysis",
-                    "desc": "Transform raw CSV exports into structured JSON for analysis."
+                    "title": "Analiză date",
+                    "desc": "Transformați exporturile brute CSV în JSON structurat pentru analiză."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "faq_title": "Întrebări frecvente",
             "faq": {
-                "q1": "Is my CSV data kept private?",
-                "a1": "Yes, all processing is done locally in your browser. Your data is never uploaded to our servers.",
-                "q2": "Does it support large files?",
-                "a2": "The converter handles large files efficiently, limited only by your browser's memory.",
-                "q3": "Can I convert JSON back to CSV?",
-                "a3": "Yes! Use our 'JSON to CSV' tool in the Development section for reverse conversion."
+                "q1": "Datele mele CSV sunt păstrate private?",
+                "a1": "Da, toată procesarea se face local în browserul tău. Datele tale nu sunt niciodată încărcate pe serverele noastre.",
+                "q2": "Suportă fișiere mari?",
+                "a2": "Convertorul gestionează eficient fișierele mari, limitat doar de memoria browserului tău.",
+                "q3": "Pot converti JSON înapoi în CSV?",
+                "a3": "Da! Folosiți instrumentul nostru 'JSON în CSV' din secțiunea Dezvoltare pentru conversie inversă."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No JSON to copy. Please convert CSV first.",
-            "success_copy": "JSON copied to clipboard!",
-            "error_no_download": "No JSON to download. Please convert CSV first."
+            "error_empty": "Vă rugăm să introduceți date CSV de convertit",
+            "error_convert": "Eroare la conversia CSV: ",
+            "error_no_copy": "Nu există JSON de copiat. Vă rugăm să convertiți mai întâi CSV.",
+            "success_copy": "JSON copiat în clipboard!",
+            "error_no_download": "Nu există JSON de descărcat. Vă rugăm să convertiți mai întâi CSV."
         }
     },
     "csv-to-sql": {
@@ -143,77 +143,136 @@
     },
     "csv-to-tsv": {
         "meta": {
-            "title": "Convertor CSV în TSV - Instrument de date text online gratuit",
-            "description": "Convertește CSV în TSV (Tab-Separated Values) online. Rapid, gratuit și fiabil pentru procesarea datelor.",
+            "title": "Convertor CSV în TSV - Gratuit",
+            "description": "Convertiți date în TSV.",
             "h1": "CSV în TSV",
-            "subtitle": "Transformă fișierele separate prin virgulă în valori separate prin tab"
+            "subtitle": "Expert Date"
         },
         "editor": {
-            "label_delimiter": "Select Delimiter",
+            "label_delimiter": "Selectați delimitatorul",
             "delimiters": {
-                "comma": "Comma (,)",
-                "semicolon": "Semicolon (;)",
-                "tab": "Tab",
-                "pipe": "Pipe (|)"
+                "comma": "Virgulă (,)",
+                "semicolon": "Punct și virgulă (;)",
+                "tab": "Tabulator",
+                "pipe": "Bară verticală (|)"
             },
-            "header_checkbox": "First row is header",
-            "btn_convert": "Convert to TSV",
-            "btn_copy": "Copy TSV",
-            "btn_download": "Download TSV",
-            "btn_example": "Load Example",
-            "btn_clear": "Clear All",
-            "label_input": "CSV Input",
-            "ph_input": "Enter your CSV data here...",
-            "label_output": "TSV Output",
-            "ph_output": "Converted TSV will appear here..."
+            "header_checkbox": "Primul rând este antet",
+            "btn_convert": "Convertește în TSV",
+            "btn_copy": "Copiază TSV",
+            "btn_download": "Descarcă TSV",
+            "btn_example": "Încarcă exemplu",
+            "btn_clear": "Șterge tot",
+            "label_input": "Intrare CSV",
+            "ph_input": "Introduceți datele CSV aici...",
+            "label_output": "Ieșire TSV",
+            "ph_output": "TSV-ul convertit va apărea aici..."
         },
         "content": {
-            "about_title": "About CSV to TSV Converter",
-            "about_p1": "Our free CSV to TSV converter transforms standard comma-separated values into tab-separated values. TSV files are commonly used in data science, bioinformatics, and legacy database systems that prefer tabs over commas.",
-            "features_title": "Key Features",
-            "features_list": {
-                "1": "High-speed conversion to TSV format",
-                "2": "Smart detection of CSV delimiters",
-                "3": "Privacy protected client-side processing",
-                "4": "Handling of multi-line CSV values",
-                "5": "One-click copy to clipboard",
-                "6": "Support for all standard CSV formats"
-            },
-            "uses_title": "Common Use Cases",
-            "uses": {
-                "migration": {
-                    "title": "Data Science",
-                    "desc": "Prepare datasets for R or Python tools that frequently use TSV."
+            "hero_title": "Convertor CSV în TSV",
+            "hero_subtitle": "Convertiți instantaneu valorile separate prin virgulă în format separat prin tabulator. Perfect pentru știința datelor și importuri în baze de date.",
+            "p1": "Convertorul nostru gratuit CSV în TSV este un instrument puternic conceput pentru a transforma valorile standard separate prin virgulă în valori separate prin tabulator. Indiferent dacă lucrați cu seturi mari de date pentru cercetare sau pregătiți fișiere pentru sisteme specifice de baze de date, acest instrument oferă o soluție rapidă și fiabilă.",
+            "what_title": "Ce este conversia CSV în TSV?",
+            "what_desc": "CSV (Comma-Separated Values) și TSV (Tab-Separated Values) sunt ambele formate de text simplu pentru date tabelare. În timp ce CSV este mai comun, TSV este adesea preferat în știința datelor și bioinformatică deoarece evită problemele cu virgulele din interiorul câmpurilor de text, oferind o separare mai curată pentru datele complexe.",
+            "features_title": "Caracteristici cheie",
+            "features": {
+                "fast": {
+                    "title": "Conversie instantanee",
+                    "desc": "Convertiți mii de rânduri în milisecunde cu motorul nostru optimizat."
                 },
-                "api": {
-                    "title": "Database Loading",
-                    "desc": "Load data into systems that require tab-separated formats for fast import."
+                "private": {
+                    "title": "100% sigur",
+                    "desc": "Toată procesarea are loc în browserul dvs. Datele dvs. nu părăsesc niciodată dispozitivul."
+                },
+                "copy": {
+                    "title": "Copiere cu un singur clic",
+                    "desc": "Copiați rapid datele TSV convertite în clipboard pentru a le utiliza în alte aplicații."
+                },
+                "smart": {
+                    "title": "Gestionare inteligentă",
+                    "desc": "Gestionează corect câmpurile pe mai multe rânduri și caracterele speciale din datele CSV."
+                },
+                "free": {
+                    "title": "Întotdeauna gratuit",
+                    "desc": "Nu este necesară înregistrarea sau abonamentul. Utilizați-l ori de câte ori aveți nevoie."
                 },
                 "db": {
-                    "title": "Bioinformatics",
-                    "desc": "Format genomics data which is predominantly stored in TSV formats."
-                },
-                "analysis": {
-                    "title": "Excel Compatibility",
-                    "desc": "Copy-paste structured data directly into Excel without delimiter issues."
+                    "title": "Pregătit pentru baze de date",
+                    "desc": "Generați o ieșire TSV curată, compatibilă cu principalele instrumente de import în baze de date."
                 }
             },
-            "faq_title": "Frequently Asked Questions",
+            "uses_title": "Cazuri de utilizare comune",
+            "uses": {
+                "db": {
+                    "title": "Încărcare în baze de date",
+                    "desc": "Multe sisteme de baze de date precum PostgreSQL și MySQL acceptă importuri rapide TSV."
+                },
+                "process": {
+                    "title": "Procesarea datelor",
+                    "desc": "Integrați cu Python, R sau Excel pentru analiza ulterioară a seturilor dvs. de date."
+                },
+                "legacy": {
+                    "title": "Sisteme vechi",
+                    "desc": "Pregătiți datele pentru sistemele vechi care necesită strict formate separate prin tabulator."
+                },
+                "analysis": {
+                    "title": "Analiză științifică",
+                    "desc": "TSV este formatul standard pentru multe platforme de date științifice și genomice."
+                },
+                "standard": {
+                    "title": "Standardizarea formatului",
+                    "desc": "Convertiți diverse stiluri CSV într-un format TSV standard pentru coerență."
+                },
+                "export": {
+                    "title": "Export din foi de calcul",
+                    "desc": "Mutați cu ușurință datele din Google Sheets sau Excel în software specializat."
+                }
+            },
+            "how_title": "Cum să convertiți CSV în TSV",
+            "how_steps": {
+                "1": {
+                    "title": "Lipiți datele CSV",
+                    "desc": "Lipiți textul separat prin virgulă în câmpul de introducere de mai sus."
+                },
+                "2": {
+                    "title": "Faceți clic pe Convertește",
+                    "desc": "Apăsați butonul 'Convertește în TSV' pentru a începe procesul de transformare."
+                },
+                "3": {
+                    "title": "Copiați rezultatul",
+                    "desc": "Copiați valorile generate separate prin tabulator sau descărcați-le ca fișier."
+                }
+            },
+            "example_title": "Exemplu de conversie",
+            "example_input": "Intrare CSV:",
+            "example_output": "Rezultat TSV:",
+            "faq_title": "Întrebări frecvente",
             "faq": {
-                "q1": "Where is my data processed?",
-                "a1": "All conversion happens in your browser's memory, ensuring maximum privacy.",
-                "q2": "What are the advantages of TSV?",
-                "a2": "TSV is less prone to errors when your data contains commas (like names or addresses).",
-                "q3": "Can I convert TSV back to CSV?",
-                "a3": "Yes, our 'TSV to CSV' tool handles the reverse process instantly."
+                "q1": "Există o limită de rânduri?",
+                "a1": "Nu există o limită fixă. Instrumentul nostru poate gestiona eficient seturi mari de date în memoria browserului dvs.",
+                "q2": "Fișierele mele sunt stocate?",
+                "a2": "Nu. Nu stocăm și nici măcar nu vedem datele dvs. Totul rămâne pe computerul dvs.",
+                "q3": "Pot folosi alți delimitatori?",
+                "a3": "Da, instrumentul nostru detectează automat diverși delimitatori pentru a asigura o conversie lină.",
+                "q4": "Este compatibil cu Excel?",
+                "a4": "Absolut! Datele TSV pot fi lipite direct în foile Excel cu o aliniere perfectă a coloanelor.",
+                "q5": "Suportă UTF-8?",
+                "a5": "Da, convertorul suportă pe deplin UTF-8 și alte codificări de caractere speciale."
+            },
+            "tips_title": "Cele mai bune practici",
+            "tips_list": {
+                "1": "Asigurați-vă că fișierul CSV are delimitatori consecvenți pentru cele mai bune rezultate.",
+                "2": "Verificați dacă primul rând conține antete pentru a vă menține datele organizate.",
+                "3": "Utilizați butonul de copiere pentru a evita omiterea accidentală a rândurilor la selectarea manuală.",
+                "4": "Verificați structura datelor înainte de a le importa în sisteme sensibile de baze de date.",
+                "5": "Încercați instrumentul nostru 'TSV în CSV' dacă trebuie să efectuați conversia inversă."
             }
         },
         "js": {
-            "error_empty": "Please enter CSV data to convert",
-            "error_convert": "Error converting CSV: ",
-            "error_no_copy": "No TSV to copy. Please convert CSV first.",
-            "success_copy": "TSV copied to clipboard!",
-            "error_no_download": "No TSV to download. Please convert CSV first."
+            "error_empty": "Vă rugăm să introduceți date CSV pentru a le converti",
+            "error_convert": "Eroare la convertirea CSV: ",
+            "error_no_copy": "Nu există TSV de copiat. Vă rugăm să convertiți mai întâi CSV.",
+            "success_copy": "TSV copiat în clipboard!",
+            "error_no_download": "Nu există TSV de descărcat. Vă rugăm să convertiți mai întâi CSV."
         }
     },
     "csv-to-xml-converter": {
