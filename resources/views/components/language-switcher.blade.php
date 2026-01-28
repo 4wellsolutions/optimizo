@@ -67,6 +67,11 @@
                     }
 
                     // Build new URL with locale prefix (except for 'en')
+                    // If we are in blog, always redirect to blog index because blogs are language based
+                    if (!empty($segments) && $segments[0] === 'blog') {
+                        $segments = ['blog'];
+                    }
+
                     if ($language->code !== 'en') {
                         $newPath = '/' . $language->code . '/' . implode('/', $segments);
                     } else {

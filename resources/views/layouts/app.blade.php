@@ -23,19 +23,21 @@
         $enUrl = $baseUrl . ($pathWithoutLocale ? '/' . $pathWithoutLocale : '');
     @endphp
 
-    @foreach ($availableLanguages as $lang)
-        @php
-            $langUrl = $baseUrl;
-            if ($lang->code !== 'en') {
-                $langUrl .= '/' . $lang->code;
-            }
-            if ($pathWithoutLocale) {
-                $langUrl .= '/' . $pathWithoutLocale;
-            }
-        @endphp
-        <link rel="alternate" hreflang="{{ $lang->code }}" href="{{ $langUrl }}" />
-    @endforeach
-    <link rel="alternate" hreflang="x-default" href="{{ $enUrl }}" />
+    @if (!request()->routeIs('blog.*'))
+        @foreach ($availableLanguages as $lang)
+            @php
+                $langUrl = $baseUrl;
+                if ($lang->code !== 'en') {
+                    $langUrl .= '/' . $lang->code;
+                }
+                if ($pathWithoutLocale) {
+                    $langUrl .= '/' . $pathWithoutLocale;
+                }
+            @endphp
+            <link rel="alternate" hreflang="{{ $lang->code }}" href="{{ $langUrl }}" />
+        @endforeach
+        <link rel="alternate" hreflang="x-default" href="{{ $enUrl }}" />
+    @endif
 
     {{-- Canonical URL --}}
     <link rel="canonical" href="{{ url()->current() }}" />
