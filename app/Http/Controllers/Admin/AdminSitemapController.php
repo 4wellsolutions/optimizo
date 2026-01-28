@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Language;
+use App\Models\Post;
+use App\Models\BlogCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -47,12 +49,15 @@ class AdminSitemapController extends Controller
             $path = public_path($filename);
 
             $urlCount = 0;
-            $blogCount = 0;
             if (File::exists($path)) {
                 $xmlContent = File::get($path);
                 $urlCount = substr_count($xmlContent, '<loc>');
-                $blogCount = substr_count($xmlContent, '/blog/');
             }
+
+            // Count blog URLs from database for this language
+            $blogPostsCount = Post::published()->language($language->code)->count();
+            $blogCatsCount = BlogCategory::language($language->code)->count();
+            $blogCount = $blogPostsCount + $blogCatsCount + 1; // +1 for blog index page
 
             $sitemaps[] = [
                 'name' => ucfirst($language->name) . ' Sitemap',
