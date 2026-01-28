@@ -5,40 +5,40 @@
 @push('scripts')
     {{-- Schema.org JSON-LD --}}
     <script type="application/ld+json">
-    {
-        "@@context": "https://schema.org",
-        "@@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "{{ localeRoute('home') }}"
-            },
-            {
-                "@@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "{{ localeRoute('blog.index') }}"
-            }
-            @if(isset($category))
-            ,{
-                "@@type": "ListItem",
-                "position": 3,
-                "name": "{{ addslashes($category->name) }}",
-                "item": "{{ url()->current() }}"
-            }
-            @elseif(isset($tag))
-            ,{
-                "@@type": "ListItem",
-                "position": 3,
-                "name": "#{{ addslashes($tag->name) }}",
-                "item": "{{ url()->current() }}"
-            }
-            @endif
-        ]
-    }
-    </script>
+        {
+            "@@context": "https://schema.org",
+            "@@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "{{ localeRoute('home') }}"
+                },
+                {
+                    "@@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "{{ localeRoute('blog.index') }}"
+                }
+                @if(isset($category))
+                    ,{
+                        "@@type": "ListItem",
+                        "position": 3,
+                        "name": "{{ addslashes($category->name) }}",
+                        "item": "{{ url()->current() }}"
+                    }
+                @elseif(isset($tag))
+                    ,{
+                        "@@type": "ListItem",
+                        "position": 3,
+                        "name": "#{{ addslashes($tag->name) }}",
+                        "item": "{{ url()->current() }}"
+                    }
+                @endif
+            ]
+        }
+        </script>
 @endpush
 
 @section('content')
@@ -136,8 +136,8 @@
             @endforelse
         </div>
 
-        <div class="mt-12">
-            {{ $posts->links() }}
+        <div class="mt-16 mb-8 flex justify-center">
+            {{ $posts->links('partials.pagination') }}
         </div>
     </div>
 @endsection
