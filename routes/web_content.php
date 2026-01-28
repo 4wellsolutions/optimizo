@@ -431,8 +431,10 @@ Route::prefix('tools')->group(function () use ($n) {
     Route::post('xml-to-json', [XmlToJsonController::class, 'process'])->name($n('development.xml-to-json.convert'));
     Route::get('yaml-to-json', [YamlToJsonController::class, 'index'])->name($n('development.yaml-to-json'));
     Route::post('yaml-to-json', [YamlToJsonController::class, 'process'])->name($n('development.yaml-to-json.convert'));
+    Route::get('sql-to-json', function () {
+        return redirect()->route('development.sql-to-json-converter', [], 301);
+    });
     Route::get('sql-to-json-converter', [SqlToJsonConverterController::class, 'index'])->name($n('development.sql-to-json-converter'));
-    Route::post('sql-to-json-converter', [SqlToJsonConverterController::class, 'process'])->name($n('development.sql-to-json-converter.generate'));
 });
 
 // Converters Tools
