@@ -7,59 +7,59 @@
 @push('scripts')
     {{-- Schema.org JSON-LD --}}
     <script type="application/ld+json">
-            {
-                "@@context": "https://schema.org",
-                "@@type": "BlogPosting",
-                "headline": "{{ addslashes($post->title) }}",
-                "image": "{{ $post->featured_image_url }}",
-                "author": {
-                    "@@type": "Person",
-                    "name": "{{ addslashes($post->author->name) }}"
-                },
-                "publisher": {
-                    "@@type": "Organization",
-                    "name": "{{ addslashes(config('app.name')) }}",
-                    "logo": {
-                        "@@type": "ImageObject",
-                        "url": "{{ asset('logo.png') }}"
+                {
+                    "@@context": "https://schema.org",
+                    "@@type": "BlogPosting",
+                    "headline": "{{ addslashes($post->title) }}",
+                    "image": "{{ $post->featured_image_url }}",
+                    "author": {
+                        "@@type": "Person",
+                        "name": "{{ addslashes($post->author->name) }}"
+                    },
+                    "publisher": {
+                        "@@type": "Organization",
+                        "name": "{{ addslashes(config('app.name')) }}",
+                        "logo": {
+                            "@@type": "ImageObject",
+                            "url": "{{ asset('logo.png') }}"
+                        }
+                    },
+                    "datePublished": "{{ $post->published_at->toIso8601String() }}",
+                    "dateModified": "{{ $post->updated_at->toIso8601String() }}",
+                    "description": "{{ addslashes($post->meta_description ?: Str::limit(strip_tags($post->content), 160)) }}",
+                    "mainEntityOfPage": {
+                        "@@type": "WebPage",
+                        "@@id": "{{ url()->current() }}"
                     }
-                },
-                "datePublished": "{{ $post->published_at->toIso8601String() }}",
-                "dateModified": "{{ $post->updated_at->toIso8601String() }}",
-                "description": "{{ addslashes($post->meta_description ?: Str::limit(strip_tags($post->content), 160)) }}",
-                "mainEntityOfPage": {
-                    "@@type": "WebPage",
-                    "@@id": "{{ url()->current() }}"
                 }
-            }
-            </script>
+                </script>
 
     <script type="application/ld+json">
-            {
-                "@@context": "https://schema.org",
-                "@@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "{{ localeRoute('home') }}"
-                    },
-                    {
-                        "@@type": "ListItem",
-                        "position": 2,
-                        "name": "Blog",
-                        "item": "{{ localeRoute('blog.index') }}"
-                    },
-                    {
-                        "@@type": "ListItem",
-                        "position": 3,
-                        "name": "{{ addslashes($post->title) }}",
-                        "item": "{{ url()->current() }}"
-                    }
-                ]
-            }
-            </script>
+                {
+                    "@@context": "https://schema.org",
+                    "@@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "{{ localeRoute('home') }}"
+                        },
+                        {
+                            "@@type": "ListItem",
+                            "position": 2,
+                            "name": "Blog",
+                            "item": "{{ localeRoute('blog.index') }}"
+                        },
+                        {
+                            "@@type": "ListItem",
+                            "position": 3,
+                            "name": "{{ addslashes($post->title) }}",
+                            "item": "{{ url()->current() }}"
+                        }
+                    ]
+                }
+                </script>
 @endpush
 
 @section('content')
@@ -86,9 +86,10 @@
         <div class="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-end pb-24 md:pb-40">
             <div class="max-w-4xl space-y-4 md:space-y-6">
                 <nav class="flex items-center gap-3 text-white/80 text-xs font-black uppercase tracking-[0.2em]">
-                    <a href="{{ localeRoute('home') }}" class="hover:text-white transition-colors">Home</a>
+                    <a href="{{ localeRoute('home') }}" class="hover:text-white transition-colors">{{ __('Home') }}</a>
                     <span class="w-1 h-1 rounded-full bg-indigo-500"></span>
-                    <a href="{{ localeRoute('blog.index') }}" class="hover:text-white transition-colors">Blog</a>
+                    <a href="{{ localeRoute('blog.index') }}"
+                        class="hover:text-white transition-colors">{{ __('Blog') }}</a>
                 </nav>
 
                 <h1
@@ -103,14 +104,15 @@
                             {{ strtoupper(substr($post->author->name, 0, 1)) }}
                         </div>
                         <div>
-                            <p class="text-white/60 text-xs font-black uppercase tracking-widest leading-none mb-1">Written
-                                by</p>
+                            <p class="text-white/60 text-xs font-black uppercase tracking-widest leading-none mb-1">
+                                {{ __('Written by') }}</p>
                             <p class="text-white font-black text-lg">{{ $post->author->name }}</p>
                         </div>
                     </div>
                     <div class="hidden sm:block h-10 w-px bg-white/20"></div>
                     <div>
-                        <p class="text-white/60 text-xs font-black uppercase tracking-widest leading-none mb-1">Published
+                        <p class="text-white/60 text-xs font-black uppercase tracking-widest leading-none mb-1">
+                            {{ __('Published') }}
                         </p>
                         <p class="text-white font-black text-lg">{{ $post->published_at->format('M d, Y') }}</p>
                     </div>
@@ -143,7 +145,8 @@
                         {!! $post->content !!}
                     </article>
 
-                    <span class="text-xs font-black text-gray-400 uppercase tracking-widest">Share this story</span>
+                    <span
+                        class="text-xs font-black text-gray-400 uppercase tracking-widest">{{ __('Share this story') }}</span>
                     <div class="flex gap-2">
                         <button
                             class="w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm">
@@ -186,14 +189,14 @@
                     </div>
                 </div>
                 <div class="text-center md:text-left flex-grow">
-                    <span class="text-indigo-400 text-xs font-black uppercase tracking-[0.3em] mb-3 block">Expert
-                        Reviewer</span>
-                    <h3 class="text-3xl font-black text-white mb-4">Masterfully written by
-                        {{ $post->author->name }}
+                    <span
+                        class="text-indigo-400 text-xs font-black uppercase tracking-[0.3em] mb-3 block">{{ __('Expert Reviewer') }}</span>
+                    <h3 class="text-3xl font-black text-white mb-4">
+                        {{ __('Masterfully written by :name', ['name' => $post->author->name]) }}
                     </h3>
-                    <p class="text-gray-400 leading-relaxed text-lg max-w-xl">Deep-diving into tech trends and
-                        architectural paradigms. Bringing you over 15 years of industry insights concentrated
-                        into every single word you read.</p>
+                    <p class="text-gray-400 leading-relaxed text-lg max-w-xl">
+                        {{ __('Deep-diving into tech trends and architectural paradigms. Bringing you over 15 years of industry insights concentrated into every single word you read.') }}
+                    </p>
                 </div>
             </div>
         </footer>
@@ -212,7 +215,7 @@
                 <div class="relative bg-white/80 backdrop-blur-3xl rounded-[3rem] p-10 border border-white/50 shadow-xl">
                     <h3 class="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
                         <span class="w-2.5 h-10 bg-indigo-600 rounded-full shadow-lg shadow-indigo-200"></span>
-                        Categories
+                        {{ __('Categories') }}
                     </h3>
                     <div class="space-y-4">
                         @foreach($categories as $cat)
@@ -238,7 +241,7 @@
                 <div class="relative bg-white/60 backdrop-blur-2xl rounded-[3rem] p-10 border border-white/50 shadow-xl">
                     <h3 class="text-2xl font-black text-gray-900 mb-10 flex items-center gap-3">
                         <span class="w-2.5 h-10 bg-purple-600 rounded-full shadow-lg shadow-purple-200"></span>
-                        Hot Stories
+                        {{ __('Hot Stories') }}
                     </h3>
                     <div class="space-y-12">
                         @foreach($recentPosts as $recent)

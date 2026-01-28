@@ -5,33 +5,33 @@
 @push('scripts')
     {{-- Schema.org JSON-LD --}}
     <script type="application/ld+json">
-            {
-                "@@context": "https://schema.org",
-                "@@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "{{ localeRoute('home') }}"
-                    },
-                    {
-                        "@@type": "ListItem",
-                        "position": 2,
-                        "name": "Blog",
-                        "item": "{{ localeRoute('blog.index') }}"
-                    }
-                    @if(isset($category))
-                        ,{
+                {
+                    "@@context": "https://schema.org",
+                    "@@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
                             "@@type": "ListItem",
-                            "position": 3,
-                            "name": "{{ addslashes($category->name) }}",
-                            "item": "{{ url()->current() }}"
+                            "position": 1,
+                            "name": "{{ __('Home') }}",
+                            "item": "{{ localeRoute('home') }}"
+                        },
+                        {
+                            "@@type": "ListItem",
+                            "position": 2,
+                            "name": "{{ __('Blog') }}",
+                            "item": "{{ localeRoute('blog.index') }}"
                         }
-                    @endif
-                ]
-            }
-            </script>
+                        @if(isset($category))
+                            ,{
+                                "@@type": "ListItem",
+                                "position": 3,
+                                "name": "{{ addslashes($category->name) }}",
+                                "item": "{{ url()->current() }}"
+                            }
+                        @endif
+                    ]
+                }
+                </script>
 @endpush
 
 @section('content')
