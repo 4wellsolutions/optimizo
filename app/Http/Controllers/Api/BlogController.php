@@ -15,7 +15,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $posts = Post::with(['categories', 'tags', 'author'])
+        $posts = Post::with(['categories', 'author'])
             ->latest()
             ->paginate(10);
 
@@ -41,8 +41,7 @@ class BlogController extends Controller
             'author_id' => 'nullable|exists:users,id',
             'categories' => 'nullable|array',
             'categories.*' => 'exists:blog_categories,id',
-            'tags' => 'nullable|array',
-            'tags.*' => 'exists:tags,id',
+            'language_code' => 'required|string|max:10',
         ]);
 
         if ($validator->fails()) {
@@ -77,14 +76,10 @@ class BlogController extends Controller
             $post->categories()->sync($data['categories']);
         }
 
-        if (!empty($data['tags'])) {
-            $post->tags()->sync($data['tags']);
-        }
-
         return response()->json([
             'success' => true,
             'message' => 'Blog post created successfully.',
-            'data' => $post->load(['categories', 'tags'])
+            'data' => $post->load(['categories'])
         ], 201);
     }
 
@@ -93,11 +88,11 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        $post = Post::with(['categories', 'tags', 'author'])->find($id);
+        $post = Post::with(['categories', 'author'])->find($id);
 
         if (!$post) {
             // Try to find by slug if ID not found
-            $post = Post::with(['categories', 'tags', 'author'])->where('slug', $id)->first();
+            $post = Post::with(['categories', 'author'])->where('slug', $id)->first();
         }
 
         if (!$post) {
@@ -138,8 +133,7 @@ class BlogController extends Controller
             'author_id' => 'nullable|exists:users,id',
             'categories' => 'nullable|array',
             'categories.*' => 'exists:blog_categories,id',
-            'tags' => 'nullable|array',
-            'tags.*' => 'exists:tags,id',
+            'language_code' => 'sometimes|required|string|max:10',
         ]);
 
         if ($validator->fails()) {
@@ -165,14 +159,10 @@ class BlogController extends Controller
             $post->categories()->sync($data['categories']);
         }
 
-        if (isset($data['tags'])) {
-            $post->tags()->sync($data['tags']);
-        }
-
         return response()->json([
             'success' => true,
             'message' => 'Blog post updated successfully.',
-            'data' => $post->load(['categories', 'tags'])
+            'data' => $post->load(['categories'])
         ]);
     }
 
@@ -191,7 +181,6 @@ class BlogController extends Controller
         }
 
         $post->categories()->detach();
-        $post->tags()->detach();
         $post->delete();
 
         return response()->json([

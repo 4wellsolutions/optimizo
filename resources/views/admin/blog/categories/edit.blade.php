@@ -24,9 +24,16 @@
                         <div class="form-group">
                             <label for="slug">Slug</label>
                             <input type="text" name="slug" id="slug" value="{{ $category->slug }}" class="form-control">
+                        </div>                        <div class="form-group">
+                            <label for="language_code">Language</label>
+                            <select name="language_code" id="language_code" class="form-control" required>
+                                @foreach($languages as $lang)
+                                    <option value="{{ $lang->code }}" {{ $category->language_code == $lang->code ? 'selected' : '' }}>
+                                        {{ $lang->name }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
-
-
 
                         <div class="form-group">
                             <label for="parent_id">Parent Category</label>

@@ -12,24 +12,35 @@
                 </a>
             </div>
         </div>
-        
+
         <!-- Filter Bar -->
         <div class="card-body border-bottom">
             <form action="{{ route('admin.posts.index') }}" method="GET" class="row">
-                <div class="col-md-4">
-                    <input type="text" name="search" class="form-control" placeholder="Search by title or content..." value="{{ request('search') }}">
+                <div class="col-md-3">
+                    <input type="text" name="search" class="form-control" placeholder="Search..."
+                        value="{{ request('search') }}">
+                </div>
+                <div class="col-md-2">
+                    <select name="language" class="form-control">
+                        <option value="">All Languages</option>
+                        @foreach($languages as $lang)
+                            <option value="{{ $lang->code }}" {{ request('language') == $lang->code ? 'selected' : '' }}>
+                                {{ $lang->name }}
+                            </option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="col-md-3">
                     <select name="category_id" class="form-control">
                         <option value="">All Categories</option>
                         @foreach($categories as $category)
                             <option value="{{ $category->id }}" {{ request('category_id') == $category->id ? 'selected' : '' }}>
-                                {{ $category->name }}
+                                {{ $category->name }} ({{ $category->language_code }})
                             </option>
                         @endforeach
                     </select>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <select name="status" class="form-control">
                         <option value="">All Statuses</option>
                         <option value="published" {{ request('status') == 'published' ? 'selected' : '' }}>Published</option>
@@ -41,8 +52,9 @@
                     <button type="submit" class="btn btn-default btn-block">
                         <i class="fas fa-filter"></i> Filter
                     </button>
-                    @if(request()->anyFilled(['search', 'category_id', 'status']))
-                        <a href="{{ route('admin.posts.index') }}" class="btn btn-link btn-sm btn-block text-muted">Clear All</a>
+                    @if(request()->anyFilled(['search', 'category_id', 'status', 'language']))
+                        <a href="{{ route('admin.posts.index') }}" class="btn btn-link btn-sm btn-block text-muted">Clear
+                            All</a>
                     @endif
                 </div>
             </form>
@@ -54,6 +66,7 @@
                     <tr>
                         <th style="width: 40%">Title</th>
                         <th>Author</th>
+                        <th>Lang</th>
                         <th>Categories</th>
                         <th>Status</th>
                         <th>Date</th>
@@ -68,6 +81,7 @@
                                 <small class="text-muted">{{ Str::limit(strip_tags($post->content), 80) }}</small>
                             </td>
                             <td>{{ $post->author->name }}</td>
+                            <td><span class="badge badge-light border text-uppercase">{{ $post->language_code }}</span></td>
                             <td>
                                 @foreach($post->categories as $category)
                                     <span class="badge badge-info">{{ $category->name }}</span>
@@ -84,13 +98,16 @@
                             </td>
                             <td>{{ $post->created_at->format('M d, Y') }}</td>
                             <td class="text-right">
-                                <a href="{{ route('blog.show', $post->slug) }}" class="btn btn-sm btn-outline-success" target="_blank" title="View">
+                                <a href="{{ route('blog.show', $post->slug) }}" class="btn btn-sm btn-outline-success"
+                                    target="_blank" title="View">
                                     <i class="fas fa-eye"></i>
                                 </a>
-                                <a href="{{ route('admin.posts.edit', $post) }}" class="btn btn-sm btn-outline-info" title="Edit">
+                                <a href="{{ route('admin.posts.edit', $post) }}" class="btn btn-sm btn-outline-info"
+                                    title="Edit">
                                     <i class="fas fa-edit"></i>
                                 </a>
-                                <button onclick="deletePost({{ $post->id }})" class="btn btn-sm btn-outline-danger" title="Delete">
+                                <button onclick="deletePost({{ $post->id }})" class="btn btn-sm btn-outline-danger"
+                                    title="Delete">
                                     <i class="fas fa-trash"></i>
                                 </button>
                             </td>
@@ -103,13 +120,13 @@
                 </tbody>
             </table>
         </div>
-        
+
         @if($posts->hasPages())
-        <div class="card-footer clearfix">
-            <div class="float-right">
-                {{ $posts->links() }}
+            <div class="card-footer clearfix">
+                <div class="float-right">
+                    {{ $posts->links() }}
+                </div>
             </div>
-        </div>
         @endif
     </div>
 @endsection

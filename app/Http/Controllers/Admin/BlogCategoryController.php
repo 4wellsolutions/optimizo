@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\BlogCategory;
+use App\Models\Language;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -12,19 +13,28 @@ class BlogCategoryController extends Controller
     /**
      * Display a listing of the categories.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $categories = BlogCategory::with('parent')
+        $query = BlogCategory::with('parent')
             ->withCount('posts')
-            ->latest()
-            ->paginate(20);
+            ->latest();
+
+        if ($request->filled('language')) {
+            $query->language($request->language);
+        }
+
+        $categories = $query->paginate(20)->withQueryString();
 
         // Fetch potential parents for the dropdown (only top-level)
-        $parents = BlogCategory::whereNull('parent_id')
-            ->orderBy('name')
-            ->get();
+        $pQuery = BlogCategory::whereNull('parent_id');
+        if ($request->filled('language')) {
+            $pQuery->language($request->language);
+        }
+        $parents = $pQuery->orderBy('name')->get();
 
-        return view('admin.blog.categories.index', compact('categories', 'parents'));
+        $languages = Language::active()->get();
+
+        return view('admin.blog.categories.index', compact('categories', 'parents', 'languages'));
     }
 
     /**
@@ -37,6 +47,7 @@ class BlogCategoryController extends Controller
             'slug' => 'nullable|string|max:255|unique:blog_categories,slug',
             'description' => 'nullable|string',
             'parent_id' => 'nullable|exists:blog_categories,id',
+            'language_code' => 'required|string|max:10',
         ]);
 
         if (empty($validated['slug'])) {
@@ -68,10 +79,13 @@ class BlogCategoryController extends Controller
     {
         $parents = BlogCategory::whereNull('parent_id')
             ->where('id', '!=', $category->id)
+            ->where('language_code', $category->language_code)
             ->orderBy('name')
             ->get();
 
-        return view('admin.blog.categories.edit', compact('category', 'parents'));
+        $languages = Language::active()->get();
+
+        return view('admin.blog.categories.edit', compact('category', 'parents', 'languages'));
     }
 
     /**
@@ -84,6 +98,7 @@ class BlogCategoryController extends Controller
             'slug' => 'nullable|string|max:255|unique:blog_categories,slug,' . $category->id,
             'description' => 'nullable|string',
             'parent_id' => 'nullable|exists:blog_categories,id',
+            'language_code' => 'required|string|max:10',
         ]);
 
         if (empty($validated['slug'])) {

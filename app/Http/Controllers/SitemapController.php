@@ -82,17 +82,15 @@ class SitemapController extends Controller
             $xml .= '  </url>' . "\n";
         }
 
-        // Blog pages (English only)
-        if ($locale === 'en') {
-            $posts = \App\Models\Post::published()->get();
-            foreach ($posts as $post) {
-                $xml .= '  <url>' . "\n";
-                $xml .= '    <loc>' . url($urlPrefix . '/blog/' . $post->slug) . '</loc>' . "\n";
-                $xml .= '    <changefreq>daily</changefreq>' . "\n";
-                $xml .= '    <priority>0.7</priority>' . "\n";
-                $xml .= '    ' . $this->addAlternateLinks('/blog/' . $post->slug) . "\n";
-                $xml .= '  </url>' . "\n";
-            }
+        // Blog pages
+        $posts = \App\Models\Post::published()->language($locale)->get();
+        foreach ($posts as $post) {
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . url($urlPrefix . '/blog/' . $post->slug) . '</loc>' . "\n";
+            $xml .= '    <changefreq>daily</changefreq>' . "\n";
+            $xml .= '    <priority>0.7</priority>' . "\n";
+            $xml .= '    ' . $this->addAlternateLinks('/blog/' . $post->slug) . "\n";
+            $xml .= '  </url>' . "\n";
         }
 
         $xml .= '</urlset>';
@@ -109,10 +107,6 @@ class SitemapController extends Controller
         $links = '';
 
         foreach ($languages as $language) {
-            // Skip alternate links for blog paths as they are English only
-            if (str_starts_with($path, '/blog')) {
-                continue;
-            }
 
             $urlPrefix = $language->code === 'en' ? '' : "/{$language->code}";
             $links .= '<xhtml:link rel="alternate" hreflang="' . $language->code . '" href="' . url($urlPrefix . $path) . '" />' . "\n      ";

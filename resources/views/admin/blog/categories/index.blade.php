@@ -3,7 +3,7 @@
 @section('page-title', ucfirst($type) . ' Categories')
 
 @section('content')
-    <div class="row">
+    <div class="row" x-data="categoryManager()">
         <!-- Quick Create Form -->
         <div class="col-md-4">
             <div class="card card-primary card-outline shadow-sm">
@@ -12,7 +12,7 @@
                 </div>
                 <form action="{{ route('admin.blog.categories.store') }}" method="POST">
                     @csrf
-                    
+
                     <div class="card-body">
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -26,13 +26,25 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="language_code">Language</label>
+                            <select name="language_code" id="language_code" class="form-control" x-model="language"
+                                @change="onLanguageChange()" required>
+                                @foreach($languages as $lang)
+                                    <option value="{{ $lang->code }}">{{ $lang->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
                             <label for="parent_id">Parent Category <span class="text-muted">(Optional)</span></label>
                             <select name="parent_id" id="parent_id" class="form-control">
                                 <option value="">None (Top Level)</option>
-                                @foreach($parents as $parent)
-                                    <option value="{{ $parent->id }}">{{ $parent->name }}</option>
-                                @endforeach
+                                <template x-for="p in filteredParents" :key="p.id">
+                                    <option :value="p.id" x-text="p.name"></option>
+                                </template>
                             </select>
+                            <small class="text-muted" x-show="filteredParents.length === 0">No parent categories for this
+                                language.</small>
                         </div>
 
                         <div class="form-group">
@@ -55,10 +67,18 @@
             <div class="card shadow-sm">
                 <div class="card-header border-0">
                     <h3 class="card-title font-weight-bold">All {{ ucfirst($type) }} Categories</h3>
-                    <div class="card-tools">
-                        <form action="{{ route('admin.blog.categories.index') }}" method="GET">
-                            <div class="input-group input-group-sm" style="width: 250px;">
-                                <input type="text" name="search" class="form-control float-right" placeholder="Search"
+                    <div class="card-tools d-flex">
+                        <form action="{{ route('admin.blog.categories.index') }}" method="GET" class="d-flex mr-2">
+                            <select name="language" class="form-control form-control-sm mr-1" onchange="this.form.submit()">
+                                <option value="">All Languages</option>
+                                @foreach($languages as $lang)
+                                    <option value="{{ $lang->code }}" {{ request('language') == $lang->code ? 'selected' : '' }}>
+                                        {{ $lang->name }}
+                                    </option>
+                                @endforeach
+                            </select>
+                            <div class="input-group input-group-sm" style="width: 200px;">
+                                <input type="text" name="search" class="form-control" placeholder="Search"
                                     value="{{ request('search') }}">
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
@@ -72,6 +92,7 @@
                         <thead>
                             <tr>
                                 <th>Name</th>
+                                <th>Lang</th>
                                 <th>Parent</th>
                                 <th>Slug</th>
                                 <th>Count</th>
@@ -84,6 +105,9 @@
                                     <td>
                                         <span class="font-weight-bold text-primary">{{ $category->name }}</span>
                                         <div class="small text-muted">{{ Str::limit($category->description, 30) }}</div>
+                                    </td>
+                                    <td><span
+                                            class="badge badge-light border text-uppercase">{{ $category->language_code }}</span>
                                     </td>
                                     <td>
                                         @if($category->parent)
@@ -134,6 +158,20 @@
     </div>
 
     <script>
+        function categoryManager() {
+            return {
+                language: 'en',
+                allParents: @json($parents),
+                filteredParents: [],
+                init() {
+                    this.onLanguageChange();
+                },
+                onLanguageChange() {
+                    this.filteredParents = this.allParents.filter(p => p.language_code === this.language);
+                }
+            }
+        }
+
         // Auto-slug
         document.getElementById('name').addEventListener('input', function () {
             let slug = this.value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');

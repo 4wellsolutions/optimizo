@@ -1,44 +1,37 @@
 @extends('layouts.app')
 
-@section('title', isset($category) ? $category->name . ' - ' . config('app.name') : (isset($tag) ? '#' . $tag->name . ' - ' . config('app.name') : __('Blog - ' . config('app.name'))))
+@section('title', isset($category) ? $category->name . ' - ' . config('app.name') : __('Blog - ' . config('app.name')))
 
 @push('scripts')
     {{-- Schema.org JSON-LD --}}
     <script type="application/ld+json">
-        {
-            "@@context": "https://schema.org",
-            "@@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "{{ localeRoute('home') }}"
-                },
-                {
-                    "@@type": "ListItem",
-                    "position": 2,
-                    "name": "Blog",
-                    "item": "{{ localeRoute('blog.index') }}"
-                }
-                @if(isset($category))
-                    ,{
+            {
+                "@@context": "https://schema.org",
+                "@@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
                         "@@type": "ListItem",
-                        "position": 3,
-                        "name": "{{ addslashes($category->name) }}",
-                        "item": "{{ url()->current() }}"
-                    }
-                @elseif(isset($tag))
-                    ,{
+                        "position": 1,
+                        "name": "Home",
+                        "item": "{{ localeRoute('home') }}"
+                    },
+                    {
                         "@@type": "ListItem",
-                        "position": 3,
-                        "name": "#{{ addslashes($tag->name) }}",
-                        "item": "{{ url()->current() }}"
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "{{ localeRoute('blog.index') }}"
                     }
-                @endif
-            ]
-        }
-        </script>
+                    @if(isset($category))
+                        ,{
+                            "@@type": "ListItem",
+                            "position": 3,
+                            "name": "{{ addslashes($category->name) }}",
+                            "item": "{{ url()->current() }}"
+                        }
+                    @endif
+                ]
+            }
+            </script>
 @endpush
 
 @section('content')
@@ -47,8 +40,6 @@
             <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
                 @if(isset($category))
                     {{ __('Category: :name', ['name' => $category->name]) }}
-                @elseif(isset($tag))
-                    {{ __('Tag: #:name', ['name' => $tag->name]) }}
                 @else
                     {{ __('Our Blog') }}
                 @endif

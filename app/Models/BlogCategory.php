@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class BlogCategory extends Model
 {
-    protected $fillable = ['name', 'slug', 'description', 'parent_id'];
+    protected $fillable = ['name', 'slug', 'description', 'parent_id', 'language_code'];
 
     public function posts(): BelongsToMany
     {
@@ -24,5 +24,10 @@ class BlogCategory extends Model
     public function children(): HasMany
     {
         return $this->hasMany(BlogCategory::class, 'parent_id');
+    }
+
+    public function scopeLanguage($query, $locale = null)
+    {
+        return $query->where('language_code', $locale ?: app()->getLocale());
     }
 }

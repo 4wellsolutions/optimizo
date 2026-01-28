@@ -88,6 +88,23 @@
                 <!-- RIGHT COLUMN (Sidebar) -->
                 <div class="col-lg-4">
 
+                    <!-- Language Selection -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted">
+                            Language
+                        </div>
+                        <div class="card-body">
+                            <select name="language_code" x-model="language" @change="onLanguageChange()"
+                                class="form-control custom-select">
+                                @foreach($languages as $lang)
+                                    <option value="{{ $lang->code }}">{{ $lang->name }}</option>
+                                @endforeach
+                            </select>
+                            <small class="text-muted mt-2 d-block">Categories will filter based on this
+                                language.</small>
+                        </div>
+                    </div>
+
                     <!-- Publish Card -->
                     <div class="card shadow-sm mb-4">
                         <div class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted">
@@ -153,32 +170,28 @@
 
                     <!-- Categories -->
                     <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted">
+                        <div
+                            class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted d-flex justify-content-between">
                             Categories
+                            <button type="button" @click="addNewCategory()" class="btn btn-xs btn-link p-0">Add New</button>
                         </div>
                         <div class="card-body">
                             <div class="overflow-auto mb-3" style="max-height: 200px;">
-                                @foreach($categories as $category)
+                                <template x-for="cat in filteredCategories" :key="cat.id">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" name="categories[]" value="{{ $category->id }}"
-                                            class="custom-control-input" id="cat_{{ $category->id }}">
-                                        <label class="custom-control-label"
-                                            for="cat_{{ $category->id }}">{{ $category->name }}</label>
+                                        <input type="checkbox" name="categories[]" :value="cat.id" :id="'cat_' + cat.id"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" :for="'cat_' + cat.id"
+                                            x-text="cat.name"></label>
                                     </div>
-                                @endforeach
+                                </template>
+                                <div x-show="filteredCategories.length === 0" class="text-xs text-muted py-2">
+                                    No categories for this language.
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tags -->
-                    <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-white font-weight-bold text-uppercase text-xs text-muted">
-                            Tags
-                        </div>
-                        <div class="card-body">
-                            <select id="tags" name="tags[]" multiple class="form-control"></select>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -209,12 +222,37 @@
         function postEditor() {
             return {
                 featuredImage: '',
+                language: 'en',
+                allCategories: @json($categories),
+                filteredCategories: [],
+                init() {
+                    this.onLanguageChange();
+                },
+                onLanguageChange() {
+                    this.filteredCategories = this.allCategories.filter(c => c.language_code === this.language);
+                },
                 handleFeaturedImage(media) {
                     this.featuredImage = media.url;
                 },
                 saveDraft() {
                     // Quick Draft Logic
                     alert('Draft logic placeholder');
+                },
+                addNewCategory() {
+                    let name = prompt("New Category Name:");
+                    if (!name) return;
+                    let self = this;
+                    $.post('{{ route("admin.blog.categories.store") }}', {
+                        name: name,
+                        language_code: self.language,
+                        _token: '{{ csrf_token() }}'
+                    }).done(function (res) {
+                        if (res.success) {
+                            self.allCategories.push(res.category);
+                            self.onLanguageChange();
+                            window.toast('Category added!');
+                        }
+                    });
                 }
             }
         }
@@ -246,26 +284,7 @@
             convert_urls: false,
         });
 
-        // Initialize TomSelect
-        new TomSelect('#tags', {
-            maxItems: 20,
-            valueField: 'id',
-            labelField: 'name',
-            searchField: 'name',
-            create: function (input) {
-                return new Promise(function (resolve, reject) {
-                    $.post('{{ route("admin.tags.store") }}', { name: input, _token: '{{ csrf_token() }}' })
-                        .done(function (res) { resolve({ id: res.tag.id, name: res.tag.name }); })
-                        .fail(function () { resolve(false); });
-                });
-            },
-            load: function (query, callback) {
-                var url = '{{ route("admin.tags.list") }}';
-                fetch(url).then(response => response.json()).then(json => {
-                    callback(json);
-                }).catch(() => { callback(); });
-            }
-        });
+        // TomSelect handled in Alpine init
 
         $('#title').on('input', function () {
             let slug = $(this).val().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');

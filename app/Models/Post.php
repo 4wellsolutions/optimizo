@@ -26,7 +26,8 @@ class Post extends Model
         'twitter_image',
         'status',
         'published_at',
-        'author_id'
+        'author_id',
+        'language_code'
     ];
 
     protected $casts = [
@@ -44,10 +45,6 @@ class Post extends Model
         return $this->belongsToMany(BlogCategory::class, 'blog_category_post', 'post_id', 'blog_category_id');
     }
 
-    public function tags(): BelongsToMany
-    {
-        return $this->belongsToMany(Tag::class);
-    }
 
     // Scopes
     public function scopePublished($query)
@@ -65,6 +62,11 @@ class Post extends Model
     {
         return $query->where('status', 'scheduled')
             ->where('published_at', '>', now());
+    }
+
+    public function scopeLanguage($query, $locale = null)
+    {
+        return $query->where('language_code', $locale ?: app()->getLocale());
     }
 
     // Accessors & Mutators
