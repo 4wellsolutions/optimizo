@@ -24,14 +24,14 @@
     @endphp
 
     @foreach ($availableLanguages as $lang)
-
-        $langUrl = $baseUrl;
-        if ($lang->code !== 'en') {
-        $langUrl .= '/' . $lang->code;
-        }
-        if ($pathWithoutLocale) {
-        $langUrl .= '/' . $pathWithoutLocale;
-        }
+        @php
+            $langUrl = $baseUrl;
+            if ($lang->code !== 'en') {
+                $langUrl .= '/' . $lang->code;
+            }
+            if ($pathWithoutLocale) {
+                $langUrl .= '/' . $pathWithoutLocale;
+            }
         @endphp
         <link rel="alternate" hreflang="{{ $lang->code }}" href="{{ $langUrl }}" />
     @endforeach
