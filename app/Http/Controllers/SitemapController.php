@@ -82,6 +82,25 @@ class SitemapController extends Controller
             $xml .= '  </url>' . "\n";
         }
 
+        // Blog Index
+        $xml .= '  <url>' . "\n";
+        $xml .= '    <loc>' . url($urlPrefix . '/blog') . '</loc>' . "\n";
+        $xml .= '    <changefreq>daily</changefreq>' . "\n";
+        $xml .= '    <priority>0.9</priority>' . "\n";
+        $xml .= '    ' . $this->addAlternateLinks('/blog') . "\n";
+        $xml .= '  </url>' . "\n";
+
+        // Blog Categories
+        $blogCategories = \App\Models\BlogCategory::language($locale)->get();
+        foreach ($blogCategories as $blogCategory) {
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . url($urlPrefix . '/blog/category/' . $blogCategory->slug) . '</loc>' . "\n";
+            $xml .= '    <changefreq>weekly</changefreq>' . "\n";
+            $xml .= '    <priority>0.8</priority>' . "\n";
+            $xml .= '    ' . $this->addAlternateLinks('/blog/category/' . $blogCategory->slug) . "\n";
+            $xml .= '  </url>' . "\n";
+        }
+
         // Blog pages
         $posts = \App\Models\Post::published()->language($locale)->get();
         foreach ($posts as $post) {

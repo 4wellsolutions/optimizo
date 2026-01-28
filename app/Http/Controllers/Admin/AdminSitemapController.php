@@ -47,9 +47,11 @@ class AdminSitemapController extends Controller
             $path = public_path($filename);
 
             $urlCount = 0;
+            $blogCount = 0;
             if (File::exists($path)) {
                 $xmlContent = File::get($path);
                 $urlCount = substr_count($xmlContent, '<loc>');
+                $blogCount = substr_count($xmlContent, '/blog/');
             }
 
             $sitemaps[] = [
@@ -58,6 +60,7 @@ class AdminSitemapController extends Controller
                 'type' => 'language',
                 'language' => $language->code,
                 'count' => $urlCount,
+                'blog_count' => $blogCount,
                 'exists' => File::exists($path),
                 'lastmod' => File::exists($path) ? date('Y-m-d H:i:s', File::lastModified($path)) : null,
             ];

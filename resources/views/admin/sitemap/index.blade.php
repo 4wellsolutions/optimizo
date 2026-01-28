@@ -82,6 +82,7 @@
                                         <th width="10%">Language</th>
                                         <th width="10%">Type</th>
                                         <th width="10%">URLs</th>
+                                        <th width="10%">Blog URLs</th>
                                         <th width="10%">Status</th>
                                         <th width="20%">Last Modified</th>
                                         <th width="10%">Actions</th>
@@ -121,6 +122,17 @@
                                                     </span>
                                                 @else
                                                     <span class="badge badge-secondary badge-pill">0</span>
+                                                @endif
+                                            </td>
+                                            <td class="text-center">
+                                                @if(isset($sitemap['blog_count']) && $sitemap['blog_count'] > 0)
+                                                    <span class="badge badge-info badge-pill">
+                                                        {{ number_format($sitemap['blog_count']) }} URLs
+                                                    </span>
+                                                @elseif($sitemap['type'] === 'language')
+                                                    <span class="badge badge-light badge-pill">0</span>
+                                                @else
+                                                    <span class="text-muted">-</span>
                                                 @endif
                                             </td>
                                             <td class="text-center">
