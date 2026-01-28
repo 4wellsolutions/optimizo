@@ -115,10 +115,10 @@
         <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/5 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-[120px] pointer-events-none"></div>
 
-        <div class="flex flex-col lg:flex-row gap-8 lg:gap-16">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
 
             {{-- Main Column: Right Side --}}
-            <main class="w-full lg:w-[68%] xl:w-[70%] space-y-12">
+            <main class="w-full lg:w-[63%] xl:w-[65%] space-y-12">
                 
                 {{-- Premium Author Signature at Top --}}
                 <div class="bg-gradient-to-br from-gray-950 via-gray-900 to-indigo-950 rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 relative overflow-hidden group shadow-2xl">
@@ -189,52 +189,71 @@
             </main>
 
             {{-- Sidebar Column: Right Side --}}
-            <aside class="w-full lg:w-[32%] xl:w-[30%] space-y-10">
-                <div class="sticky top-28 space-y-10">
+            <aside class="w-full lg:w-[37%] xl:w-[35%]">
+                <div class="sticky top-28 space-y-12">
                     
-                    {{-- Categories Glass-Card --}}
-                    <div class="relative group">
-                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[2.5rem] blur-2xl opacity-5 group-hover:opacity-10 transition-opacity"></div>
-                        <div class="relative bg-white/60 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.02)]">
-                            <h3 class="text-lg font-black text-gray-900 mb-6 flex items-center gap-3">
-                                <span class="w-1.5 h-6 bg-indigo-600 rounded-full shadow-lg shadow-indigo-200"></span>
+                    {{-- Categories: Reconstructed --}}
+                    <div class="relative overflow-hidden bg-white/70 backdrop-blur-2xl rounded-[3rem] border border-white/50 shadow-[0_30px_100px_rgba(0,0,0,0.04)]">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+                        <div class="p-10">
+                            <h3 class="text-2xl font-black text-gray-950 mb-10 flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-indigo-600 shadow-xl shadow-indigo-200 flex items-center justify-center text-white">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                                </div>
                                 {{ __('Categories') }}
                             </h3>
-                            <div class="space-y-1">
+                            
+                            <div class="grid gap-3">
                                 @foreach($categories as $cat)
                                     <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
-                                        class="flex items-center justify-between group/link p-3 rounded-2xl hover:bg-indigo-600 transition-all duration-300">
-                                        <span class="text-gray-700 group-hover/link:text-white transition-colors font-bold text-sm">{{ $cat->name }}</span>
-                                        <span class="px-3 py-1 bg-gray-50/50 text-gray-400 group-hover/link:bg-white/20 group-hover/link:text-white rounded-lg text-[9px] font-black transition-all">
-                                            {{ $cat->posts_count }}
-                                        </span>
+                                        class="group flex items-center justify-between p-5 rounded-[2rem] bg-gray-50/50 hover:bg-indigo-600 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-200">
+                                        <div class="flex items-center gap-4">
+                                            <div class="w-2.5 h-2.5 rounded-full bg-indigo-400 group-hover:bg-white transition-colors"></div>
+                                            <span class="text-gray-900 group-hover:text-white font-black text-lg tracking-tight transition-colors">{{ $cat->name }}</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-black text-gray-400 group-hover:text-indigo-100 transition-colors uppercase tracking-widest">{{ $cat->posts_count }}</span>
+                                            <svg class="w-4 h-4 text-gray-300 group-hover:text-white transition-all transform -rotate-45 group-hover:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                                        </div>
                                     </a>
                                 @endforeach
                             </div>
                         </div>
                     </div>
 
-                    {{-- Recent Posts Stack --}}
-                    <div class="relative group">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-[2.5rem] blur-2xl opacity-5 group-hover:opacity-10 transition-opacity"></div>
-                        <div class="relative bg-white/60 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.02)]">
-                            <h3 class="text-lg font-black text-gray-900 mb-8 flex items-center gap-3">
-                                <span class="w-1.5 h-6 bg-purple-600 rounded-full shadow-lg shadow-purple-200"></span>
+                    {{-- Hot Stories: Reconstructed --}}
+                    <div class="relative overflow-hidden bg-gray-950 rounded-[3rem] shadow-2xl">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-[100px]"></div>
+                        <div class="p-10 relative">
+                            <h3 class="text-2xl font-black text-white mb-12 flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-600 shadow-xl shadow-purple-500/20 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.5-7 3 3 3.5 1.3 5 3 2 2 2 2 2 5a7.978 7.978 0 01-1.343 4.657z"/></svg>
+                                </div>
                                 {{ __('Hot Stories') }}
                             </h3>
-                            <div class="space-y-8">
+
+                            <div class="space-y-10">
                                 @foreach($recentPosts as $recent)
-                                    <a href="{{ localeRoute('blog.show', ['slug' => $recent->slug]) }}"
-                                        class="group/post block relative">
-                                        <div class="text-[9px] font-black text-indigo-500 uppercase tracking-widest mb-2">
-                                            {{ $recent->published_at->format('M d, Y') }}
+                                    <a href="{{ localeRoute('blog.show', ['slug' => $recent->slug]) }}" class="group block">
+                                        <div class="flex gap-2 items-center mb-3">
+                                            <span class="text-[9px] font-black text-indigo-400 uppercase tracking-[0.3em] font-mono">{{ $recent->published_at->format('M d, Y') }}</span>
+                                            <div class="flex-grow h-px bg-white/10 group-hover:bg-white/30 transition-colors"></div>
                                         </div>
-                                        <h4 class="font-bold text-gray-900 group-hover/post:text-indigo-600 transition-all duration-300 leading-snug text-sm tracking-tight">
+                                        <h4 class="text-lg md:text-xl font-black text-gray-200 group-hover:text-white leading-tight transition-colors tracking-tight">
                                             {{ $recent->title }}
                                         </h4>
-                                        <div class="w-full h-px bg-gray-100/50 mt-4 group-hover/post:bg-indigo-100 transition-colors"></div>
+                                        <p class="mt-4 text-sm text-gray-500 group-hover:text-gray-400 transition-colors line-clamp-2 leading-relaxed">
+                                            {{ Str::limit(strip_tags($recent->content), 80) }}
+                                        </p>
                                     </a>
                                 @endforeach
+                            </div>
+                            
+                            <div class="mt-12">
+                                <a href="{{ localeRoute('blog.index') }}" class="flex items-center justify-center p-5 rounded-2xl border border-white/10 text-white font-black hover:bg-white hover:text-black transition-all group">
+                                    {{ __('Explore All Stories') }}
+                                    <svg class="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                                </a>
                             </div>
                         </div>
                     </div>
