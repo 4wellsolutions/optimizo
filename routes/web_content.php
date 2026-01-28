@@ -183,11 +183,13 @@ Route::get('terms-of-use', [App\Http\Controllers\PageController::class, 'terms']
 Route::get('sponsors', [App\Http\Controllers\PageController::class, 'sponsors'])->name($n('sponsors'));
 
 // Blog Routes
-Route::get('blog', [BlogController::class, 'index'])->name($n('blog.index'));
-Route::get('blog/{slug}', [BlogController::class, 'show'])->name($n('blog.show'));
-Route::get('blog/preview/{slug}', [BlogController::class, 'preview'])->name($n('blog.preview'));
-Route::get('blog/category/{slug}', [BlogController::class, 'category'])->name($n('blog.category'));
-Route::get('blog/tag/{slug}', [BlogController::class, 'tag'])->name($n('blog.tag'));
+if ($prefix === '') {
+    Route::get('blog', [BlogController::class, 'index'])->name($n('blog.index'));
+    Route::get('blog/{slug}', [BlogController::class, 'show'])->name($n('blog.show'));
+    Route::get('blog/preview/{slug}', [BlogController::class, 'preview'])->name($n('blog.preview'));
+    Route::get('blog/category/{slug}', [BlogController::class, 'category'])->name($n('blog.category'));
+    Route::get('blog/tag/{slug}', [BlogController::class, 'tag'])->name($n('blog.tag'));
+}
 
 // Sitemap Routes
 Route::get('sitemap.xml', [App\Http\Controllers\SitemapController::class, 'index'])->name($n('sitemap.index'));

@@ -19,8 +19,8 @@ if (!function_exists('localeRoute')) {
         $locale = $locale ?? app()->getLocale();
         $fallbackLocale = config('app.fallback_locale', 'en');
 
-        // For default locale (en), generate route without locale prefix
-        if ($locale === $fallbackLocale) {
+        // For default locale (en) or blog routes, generate route without locale prefix
+        if ($locale === $fallbackLocale || str_starts_with($name, 'blog.')) {
             return route($name, $parameters);
         }
 

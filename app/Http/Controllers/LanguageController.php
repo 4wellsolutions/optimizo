@@ -49,8 +49,8 @@ class LanguageController extends Controller
             array_shift($segments);
         }
 
-        // Add new locale prefix (except for default language 'en')
-        if ($newLocale !== 'en') {
+        // Add new locale prefix (except for default language 'en' or blog paths)
+        if ($newLocale !== 'en' && (!isset($segments[0]) || $segments[0] !== 'blog')) {
             array_unshift($segments, $newLocale);
         }
 
