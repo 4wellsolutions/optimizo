@@ -42,7 +42,89 @@
             "features_title": "Características clave",
             "uses_title": "Casos de uso comunes",
             "how_title": "Cómo usar",
-            "faq_title": "Preguntas frecuentes"
+            "faq_title": "Preguntas frecuentes",
+            "features": {
+                "visual": {
+                    "title": "Visual Comparison",
+                    "desc": "Clearly see differences with color-coded highlighting for added and removed lines."
+                },
+                "instant": {
+                    "title": "Instant Results",
+                    "desc": "Get immediate diff results as soon as you click compare, no waiting required."
+                },
+                "privacy": {
+                    "title": "Privacy Protected",
+                    "desc": "All processing happens in your browser. Your files and text are never sent to our servers."
+                },
+                "unlimited": {
+                    "title": "No Limits",
+                    "desc": "Compare text of any length without page reloads or character restrictions."
+                },
+                "accurate": {
+                    "title": "Line-by-Line Accuracy",
+                    "desc": "Uses advanced algorithms to detect even the smallest changes between two versions."
+                },
+                "free": {
+                    "title": "100% Free",
+                    "desc": "High-quality file comparison tool available at no cost, with no registration needed."
+                }
+            },
+            "uses": {
+                "code": {
+                    "title": "Code Review",
+                    "desc": "Compare code snippets to find bugs, review changes, or understand implementation differences."
+                },
+                "document": {
+                    "title": "Document Revisions",
+                    "desc": "Track changes between two versions of a document, contract, or article easily."
+                },
+                "config": {
+                    "title": "Configuration Files",
+                    "desc": "Spot differences in JSON, YAML, or .env files that might be causing system errors."
+                },
+                "merge": {
+                    "title": "Manual Merging",
+                    "desc": "Review and merge changes from two different sources without complicated Git tools."
+                },
+                "backup": {
+                    "title": "Backup Verification",
+                    "desc": "Ensure your backups are identical or identify what has changed since the last save."
+                },
+                "translation": {
+                    "title": "Translation Check",
+                    "desc": "Compare original and translated text blocks to ensure structure and length consistency."
+                }
+            },
+            "how_steps": {
+                "1": {
+                    "title": "Paste Original Text",
+                    "desc": "Enter your base text or code into the 'Original Text' field on the left."
+                },
+                "2": {
+                    "title": "Paste Modified Text",
+                    "desc": "Enter the version you want to compare it against into the 'Modified Text' field on the right."
+                },
+                "3": {
+                    "title": "Click Compare",
+                    "desc": "Press the 'Compare Files' button to start the analysis process."
+                },
+                "4": {
+                    "title": "Review Differences",
+                    "desc": "See the results below. Green lines are added, red lines are removed, and gray lines are unchanged."
+                }
+            },
+            "faq": {
+                "q1": "Is my text data secure?",
+                "a1": "Absolutely. This tool runs entirely client-side using JavaScript. No data is ever transmitted to our servers or stored anywhere.",
+                "q2": "What formats does it support?",
+                "a2": "You can compare any plain text content, including source code (PHP, JS, Python), configuration files, and standard text documents.",
+                "q3": "Can it compare Word or PDF files?",
+                "a3": "Currently, you need to copy the text from those files and paste it here. We are working on direct file upload support.",
+                "q4": "Does it detect moved lines?",
+                "a4": "The current version focuses on additions and deletions. Moved lines will show as a deletion in one place and an addition in another.",
+                "q5": "Is there a size limit?",
+                "a5": "The only limit is your browser's memory. Most standard documents and code files will compare almost instantly."
+            }
         },
         "js": {
             "error_empty": "Por favor, ingrese ambos textos para comparar."
@@ -259,6 +341,18 @@
                 "free": {
                     "title": "100% gratis",
                     "desc": "Uso ilimitado sin necesidad de registro"
+                },
+                "char": {
+                    "title": "Character Reversal",
+                    "desc": "Reverses text character by character"
+                },
+                "bulk": {
+                    "title": "Bulk Processing",
+                    "desc": "Reverse multiple lines at once"
+                },
+                "formatting": {
+                    "title": "Preserves Formatting",
+                    "desc": "Maintains spaces and special characters"
                 }
             },
             "uses_title": "🎯 Casos de uso comunes",
@@ -286,6 +380,18 @@
                 "edu": {
                     "title": "🎓 Educación",
                     "desc": "Demuestre conceptos literarios y lingüísticos en clase"
+                },
+                "encoding": {
+                    "title": "Simple Encoding",
+                    "desc": "Create basic encoded messages for fun or simple obfuscation"
+                },
+                "palindrome": {
+                    "title": "Palindrome Testing",
+                    "desc": "Test if words or phrases are palindromes by comparing with reversed version"
+                },
+                "testing": {
+                    "title": "Testing",
+                    "desc": "Test string manipulation functions in programming"
                 }
             },
             "how_title": "📚 Cómo usar",
@@ -330,13 +436,34 @@
                 "a4": "Sí, invierte todos los caracteres, incluidos símbolos, números y emojis, manteniendo su integridad.",
                 "q5": "¿Ustedes cobran por este servicio?",
                 "a5": "No, esta herramienta es y siempre será 100% gratuita para que todos la usen."
+            },
+            "how_to": {
+                "title": "How to Use",
+                "step1": "Enter Text",
+                "step1_desc": "Type or paste the text you want to reverse",
+                "step2": "Click Reverse",
+                "step2_desc": "Press \"Reverse Text\" button",
+                "step3": "Review Output",
+                "step3_desc": "Check the reversed text result",
+                "step4": "Copy Result",
+                "step4_desc": "Click \"Copy\" to copy to clipboard",
+                "step5": "Use Anywhere",
+                "step5_desc": "Paste the reversed text wherever needed"
+            },
+            "examples_title": "Reversal Examples",
+            "examples": {
+                "simple": "Simple Text:",
+                "phrases": "Phrases:",
+                "palindromes": "Palindromes:",
+                "numbers": "Numbers:"
             }
         },
         "js": {
             "error_empty": "Por favor, ingrese algún texto para invertir",
             "success_reverse": "¡Texto invertido con éxito!",
             "error_copy": "¡Nada que copiar! Primero invierta algún texto.",
-            "success_copy": "¡Copiado al portapapeles!"
+            "success_copy": "¡Copiado al portapapeles!",
+            "error_no_copy": "Nothing to copy! Please reverse some text first."
         }
     },
     "text-to-morse-converter": {

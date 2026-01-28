@@ -176,6 +176,13 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a href="{{ route('admin.languages.checker') }}"
+                                    class="nav-link {{ request()->routeIs('admin.languages.checker') ? 'active' : '' }}">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Translation Checker</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="{{ route('admin.redirects.index') }}"
                                     class="nav-link {{ request()->routeIs('admin.redirects.*') ? 'active' : '' }}">
                                     <i class="far fa-circle nav-icon"></i>
