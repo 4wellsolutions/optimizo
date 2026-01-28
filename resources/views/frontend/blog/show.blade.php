@@ -7,59 +7,59 @@
 @push('scripts')
     {{-- Schema.org JSON-LD --}}
     <script type="application/ld+json">
-                {
-                    "@@context": "https://schema.org",
-                    "@@type": "BlogPosting",
-                    "headline": "{{ addslashes($post->title) }}",
-                    "image": "{{ $post->featured_image_url }}",
-                    "author": {
-                        "@@type": "Person",
-                        "name": "{{ addslashes($post->author->name) }}"
-                    },
-                    "publisher": {
-                        "@@type": "Organization",
-                        "name": "{{ addslashes(config('app.name')) }}",
-                        "logo": {
-                            "@@type": "ImageObject",
-                            "url": "{{ asset('logo.png') }}"
+                    {
+                        "@@context": "https://schema.org",
+                        "@@type": "BlogPosting",
+                        "headline": "{{ addslashes($post->title) }}",
+                        "image": "{{ $post->featured_image_url }}",
+                        "author": {
+                            "@@type": "Person",
+                            "name": "{{ addslashes($post->author->name) }}"
+                        },
+                        "publisher": {
+                            "@@type": "Organization",
+                            "name": "{{ addslashes(config('app.name')) }}",
+                            "logo": {
+                                "@@type": "ImageObject",
+                                "url": "{{ asset('logo.png') }}"
+                            }
+                        },
+                        "datePublished": "{{ $post->published_at->toIso8601String() }}",
+                        "dateModified": "{{ $post->updated_at->toIso8601String() }}",
+                        "description": "{{ addslashes($post->meta_description ?: Str::limit(strip_tags($post->content), 160)) }}",
+                        "mainEntityOfPage": {
+                            "@@type": "WebPage",
+                            "@@id": "{{ url()->current() }}"
                         }
-                    },
-                    "datePublished": "{{ $post->published_at->toIso8601String() }}",
-                    "dateModified": "{{ $post->updated_at->toIso8601String() }}",
-                    "description": "{{ addslashes($post->meta_description ?: Str::limit(strip_tags($post->content), 160)) }}",
-                    "mainEntityOfPage": {
-                        "@@type": "WebPage",
-                        "@@id": "{{ url()->current() }}"
                     }
-                }
-                </script>
+                    </script>
 
     <script type="application/ld+json">
-                {
-                    "@@context": "https://schema.org",
-                    "@@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "{{ localeRoute('home') }}"
-                        },
-                        {
-                            "@@type": "ListItem",
-                            "position": 2,
-                            "name": "Blog",
-                            "item": "{{ localeRoute('blog.index') }}"
-                        },
-                        {
-                            "@@type": "ListItem",
-                            "position": 3,
-                            "name": "{{ addslashes($post->title) }}",
-                            "item": "{{ url()->current() }}"
-                        }
-                    ]
-                }
-                </script>
+                    {
+                        "@@context": "https://schema.org",
+                        "@@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "{{ localeRoute('home') }}"
+                            },
+                            {
+                                "@@type": "ListItem",
+                                "position": 2,
+                                "name": "Blog",
+                                "item": "{{ localeRoute('blog.index') }}"
+                            },
+                            {
+                                "@@type": "ListItem",
+                                "position": 3,
+                                "name": "{{ addslashes($post->title) }}",
+                                "item": "{{ url()->current() }}"
+                            }
+                        ]
+                    }
+                    </script>
 @endpush
 
 @section('content')
@@ -105,7 +105,8 @@
                         </div>
                         <div>
                             <p class="text-white/60 text-xs font-black uppercase tracking-widest leading-none mb-1">
-                                {{ __('Written by') }}</p>
+                                {{ __('Written by') }}
+                            </p>
                             <p class="text-white font-black text-lg">{{ $post->author->name }}</p>
                         </div>
                     </div>
@@ -123,147 +124,154 @@
 
     {{-- Layered Content Section --}}
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+        {{-- Premium Author Signature at Top --}}
+        <div class="mb-12 md:mb-16">
+            <div
+                class="p-8 md:p-12 bg-gradient-to-br from-gray-950 via-gray-900 to-indigo-950 rounded-[2.5rem] md:rounded-[3.5rem] relative overflow-hidden group shadow-2xl">
+                <div
+                    class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')] opacity-20">
+                </div>
+                <div
+                    class="absolute -right-20 -top-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-[100px] group-hover:bg-indigo-500/20 transition-all duration-700">
+                </div>
+
+                <div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="relative flex-shrink-0">
+                        <div
+                            class="w-28 h-28 md:w-36 md:h-36 rounded-[2rem] bg-gradient-to-tr from-indigo-500 to-purple-600 p-1 shadow-2xl rotate-3 group-hover:rotate-6 transition-transform duration-500">
+                            <div
+                                class="w-full h-full bg-gray-950 rounded-[1.8rem] flex items-center justify-center text-4xl font-black text-white">
+                                {{ strtoupper(substr($post->author->name, 0, 1)) }}
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -bottom-2 -right-2 w-10 h-10 bg-green-500 border-4 border-gray-950 rounded-full">
+                        </div>
+                    </div>
+                    <div class="text-center md:text-left flex-grow">
+                        <span
+                            class="text-indigo-400 text-xs font-black uppercase tracking-[0.3em] mb-2 block">{{ __('Expert Reviewer') }}</span>
+                        <h3 class="text-2xl md:text-3xl font-black text-white mb-3">
+                            {{ __('Masterfully written by :name', ['name' => $post->author->name]) }}
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed text-base md:text-lg max-w-2xl">
+                            {{ __('Deep-diving into tech trends and architectural paradigms. Bringing you over 15 years of industry insights concentrated into every single word you read.') }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+
+            {{-- Sidebar Column: Left Side --}}
+            <aside class="w-full lg:w-[32%] xl:w-[30%] space-y-8 order-2 lg:order-1">
+                <div class="sticky top-28 space-y-8">
+                    {{-- Categories Glow-Card --}}
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[2.5rem] blur-2xl opacity-10 group-hover:opacity-20 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-white/80 backdrop-blur-3xl rounded-[2.5rem] p-8 border border-white/50 shadow-xl">
+                            <h3 class="text-xl font-black text-gray-900 mb-6 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-indigo-600 rounded-full shadow-lg shadow-indigo-200"></span>
+                                {{ __('Categories') }}
+                            </h3>
+                            <div class="space-y-2">
+                                @foreach($categories as $cat)
+                                    <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
+                                        class="flex items-center justify-between group/link p-3 -mx-2 rounded-2xl hover:bg-indigo-600 hover:-translate-y-0.5 transition-all duration-300">
+                                        <span
+                                            class="text-gray-700 group-hover/link:text-white transition-colors font-bold text-base">{{ $cat->name }}</span>
+                                        <span
+                                            class="px-3 py-1 bg-gray-50 text-gray-400 group-hover/link:bg-white/20 group-hover/link:text-white rounded-lg text-[10px] font-black transition-all">
+                                            {{ $cat->posts_count }}
+                                        </span>
+                                    </a>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- Recent Posts Stack --}}
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-[2.5rem] blur-2xl opacity-5 group-hover:opacity-15 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-white/60 backdrop-blur-2xl rounded-[2.5rem] p-8 border border-white/50 shadow-xl">
+                            <h3 class="text-xl font-black text-gray-900 mb-8 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-purple-600 rounded-full shadow-lg shadow-purple-200"></span>
+                                {{ __('Hot Stories') }}
+                            </h3>
+                            <div class="space-y-8">
+                                @foreach($recentPosts as $recent)
+                                    <a href="{{ localeRoute('blog.show', ['slug' => $recent->slug]) }}"
+                                        class="group/post block relative">
+                                        <div class="text-[9px] font-black text-indigo-500 uppercase tracking-widest mb-2">
+                                            {{ $recent->published_at->format('M d, Y') }}
+                                        </div>
+                                        <h4
+                                            class="font-bold text-gray-900 group-hover/post:text-indigo-600 transition-all duration-300 leading-snug text-base tracking-tight">
+                                            {{ $recent->title }}
+                                        </h4>
+                                        <div
+                                            class="w-full h-px bg-gray-100 mt-4 group-hover/post:bg-indigo-100 transition-colors">
+                                        </div>
+                                    </a>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
 
             {{-- Main Column: The Article --}}
-            <main class="w-full lg:w-[65%] xl:w-[68%]">
+            <main class="w-full lg:w-[68%] xl:w-[70%] order-1 lg:order-2">
                 <div
-                    class="bg-white rounded-[2.5rem] md:rounded-[4rem] p-8 md:p-14 lg:p-20 shadow-[0_40px_100px_rgba(0,0,0,0.08)] border border-gray-100">
+                    class="bg-white rounded-[2.5rem] md:rounded-[3.5rem] p-8 md:p-12 lg:p-16 shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-gray-100">
 
                     {{-- Categories --}}
-                    <div class="flex flex-wrap gap-2 mb-12">
+                    <div class="flex flex-wrap gap-2 mb-10">
                         @foreach($post->categories as $cat)
                             <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
-                                class="px-6 py-2.5 bg-indigo-600 text-white rounded-2xl text-xs font-black uppercase tracking-[0.15em] shadow-xl shadow-indigo-100 ring-4 ring-indigo-50 hover:ring-indigo-100 transition-all">
+                                class="px-5 py-2 bg-indigo-600 text-white rounded-xl text-[10px] font-black uppercase tracking-wider shadow-lg shadow-indigo-100 ring-2 ring-indigo-50 hover:ring-indigo-100 transition-all">
                                 {{ $cat->name }}
                             </a>
                         @endforeach
                     </div>
 
                     {{-- Dynamic Reading Content --}}
-                    <article class="prose prose-xl prose-indigo max-w-none blog-content selection:bg-indigo-100">
+                    <article
+                        class="prose prose-lg md:prose-xl prose-indigo max-w-none blog-content selection:bg-indigo-100">
                         {!! $post->content !!}
                     </article>
 
-                    <span
-                        class="text-xs font-black text-gray-400 uppercase tracking-widest">{{ __('Share this story') }}</span>
-                    <div class="flex gap-2">
-                        <button
-                            class="w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
-                        </button>
-                        <button
-                            class="w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-black hover:text-white transition-all shadow-sm">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25h6.91l4.715 6.238L18.244 2.25z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-        </div>
-
-        {{-- Premium Author Signature --}}
-        <footer
-            class="mt-20 p-10 md:p-14 bg-gradient-to-br from-gray-950 via-gray-900 to-indigo-950 rounded-[2.5rem] md:rounded-[3.5rem] relative overflow-hidden group">
-            <div
-                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')] opacity-20">
-            </div>
-            <div
-                class="absolute -right-20 -top-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-[100px] group-hover:bg-indigo-500/20 transition-all duration-700">
-            </div>
-
-            <div class="relative flex flex-col md:flex-row items-center gap-10">
-                <div class="relative flex-shrink-0">
-                    <div
-                        class="w-32 h-32 md:w-40 md:h-40 rounded-[2.5rem] bg-gradient-to-tr from-indigo-500 to-purple-600 p-1.5 shadow-2xl rotate-3 group-hover:rotate-6 transition-transform duration-500">
-                        <div
-                            class="w-full h-full bg-gray-950 rounded-[2.2rem] flex items-center justify-center text-5xl font-black text-white">
-                            {{ strtoupper(substr($post->author->name, 0, 1)) }}
+                    <div class="mt-16 pt-8 border-t border-gray-100">
+                        <span
+                            class="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] block mb-4">{{ __('Share this story') }}</span>
+                        <div class="flex gap-3">
+                            <button
+                                class="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-black hover:text-white transition-all shadow-sm">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25h6.91l4.715 6.238L18.244 2.25z" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
-                    <div class="absolute -bottom-2 -right-2 w-12 h-12 bg-green-500 border-8 border-gray-950 rounded-full">
-                    </div>
                 </div>
-                <div class="text-center md:text-left flex-grow">
-                    <span
-                        class="text-indigo-400 text-xs font-black uppercase tracking-[0.3em] mb-3 block">{{ __('Expert Reviewer') }}</span>
-                    <h3 class="text-3xl font-black text-white mb-4">
-                        {{ __('Masterfully written by :name', ['name' => $post->author->name]) }}
-                    </h3>
-                    <p class="text-gray-400 leading-relaxed text-lg max-w-xl">
-                        {{ __('Deep-diving into tech trends and architectural paradigms. Bringing you over 15 years of industry insights concentrated into every single word you read.') }}
-                    </p>
-                </div>
-            </div>
-        </footer>
-    </div>
-    </main>
-
-    {{-- Sidebar Column: Glow-Glass Elements --}}
-    <aside class="w-full lg:w-[35%] xl:w-[32%] space-y-12">
-
-        {{-- Categories Glow-Card --}}
-        <div class="sticky top-28 space-y-12">
-            <div class="relative group">
-                <div
-                    class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[3rem] blur-2xl opacity-10 group-hover:opacity-20 transition-opacity">
-                </div>
-                <div class="relative bg-white/80 backdrop-blur-3xl rounded-[3rem] p-10 border border-white/50 shadow-xl">
-                    <h3 class="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
-                        <span class="w-2.5 h-10 bg-indigo-600 rounded-full shadow-lg shadow-indigo-200"></span>
-                        {{ __('Categories') }}
-                    </h3>
-                    <div class="space-y-4">
-                        @foreach($categories as $cat)
-                            <a href="{{ localeRoute('blog.category', ['slug' => $cat->slug]) }}"
-                                class="flex items-center justify-between group/link p-4 -mx-4 rounded-3xl hover:bg-indigo-600 hover:-translate-y-1 transition-all duration-300">
-                                <span
-                                    class="text-gray-700 group-hover/link:text-white transition-colors font-black text-lg">{{ $cat->name }}</span>
-                                <span
-                                    class="px-4 py-1.5 bg-gray-50 text-gray-400 group-hover/link:bg-white/20 group-hover/link:text-white rounded-xl text-xs font-black transition-all">
-                                    {{ $cat->posts_count }}
-                                </span>
-                            </a>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-
-            {{-- Recent Posts Stack --}}
-            <div class="relative group">
-                <div
-                    class="absolute inset-0 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-[3rem] blur-2xl opacity-5 group-hover:opacity-15 transition-opacity">
-                </div>
-                <div class="relative bg-white/60 backdrop-blur-2xl rounded-[3rem] p-10 border border-white/50 shadow-xl">
-                    <h3 class="text-2xl font-black text-gray-900 mb-10 flex items-center gap-3">
-                        <span class="w-2.5 h-10 bg-purple-600 rounded-full shadow-lg shadow-purple-200"></span>
-                        {{ __('Hot Stories') }}
-                    </h3>
-                    <div class="space-y-12">
-                        @foreach($recentPosts as $recent)
-                            <a href="{{ localeRoute('blog.show', ['slug' => $recent->slug]) }}"
-                                class="group/post block relative">
-                                <div class="text-[10px] font-black text-indigo-500 uppercase tracking-[0.25em] mb-3">
-                                    {{ $recent->published_at->format('M d, Y') }}
-                                </div>
-                                <h4
-                                    class="font-black text-gray-900 group-hover/post:text-indigo-600 transition-all duration-300 leading-snug text-xl tracking-tight">
-                                    {{ $recent->title }}
-                                </h4>
-                                <div class="w-full h-px bg-gray-100 mt-6 group-hover/post:bg-indigo-100 transition-colors">
-                                </div>
-                            </a>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
+            </main>
         </div>
-    </aside>
-    </div>
     </div>
 
     <style>
