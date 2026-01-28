@@ -22,7 +22,7 @@
         },
         "content": {
             "what_title": "What is Base64 Encoding?",
-            "what_desc": "Base64 is a binary-to-text encoding scheme that represents binary data in an ASCII string format. It's commonly used to encode data that needs to be stored or transferred over media designed to handle text. Our free Base64 encoder and decoder tool allows developers, data analysts, and IT professionals to quickly convert text to Base64 or decode Base64 strings back to readable text. Perfect for API development, data transmission, email attachments, embedding images in HTML/CSS, and handling binary data in JSON.",
+            "what_desc": "Base64 is a binary-to-text encoding scheme that represents binary data in an ASCII string format. It's commonly used to encode data that needs to be stored or transferred over media designed to handle text. Our free Base64 encoder and decoder tool allows developers, data analysts, and IT professionals to quickly convert text to Base64 or decode Base64 strings back to readable text. Perfect for API development, data transmission, email attachments, embedding images in HTML\/CSS, and handling binary data in JSON.",
             "features": {
                 "secure": {
                     "title": "Secure Encoding",
@@ -38,7 +38,7 @@
                 }
             },
             "how_to": {
-                "title": "How to Use Base64 Encoder/Decoder",
+                "title": "How to Use Base64 Encoder\/Decoder",
                 "encode": {
                     "title": "Encoding Text",
                     "step1": "Click the \"Encode to Base64\" tab",
@@ -79,14 +79,14 @@
                 "desc": "Base64 is a binary-to-text encoding scheme that converts binary data into ASCII text format. Our free Base64 Encoder & Decoder helps developers, system administrators, and IT professionals encode text to Base64 or decode Base64 back to readable text instantly. Perfect for API authentication, data URIs, email attachments, and secure data transmission. All processing happens in your browser for complete privacy.",
                 "works_title": "🔄 How Base64 Works",
                 "works_encoding": "Converts binary data to ASCII text using 64 characters",
-                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (and = for padding)",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, \/ (and = for padding)",
                 "works_decoding": "Converts Base64 text back to original binary data",
                 "works_decoding_sub": "Reverses the encoding process perfectly",
                 "cases_title": "✅ Common Use Cases",
                 "case_api": "API Authentication",
                 "case_api_desc": "Encode credentials for Basic Auth in HTTP headers",
                 "case_uri": "Data URIs",
-                "case_uri_desc": "Embed images and files directly in HTML/CSS",
+                "case_uri_desc": "Embed images and files directly in HTML\/CSS",
                 "case_email": "Email Attachments",
                 "case_email_desc": "Encode binary files for email transmission",
                 "case_url": "URL Parameters",
@@ -101,13 +101,13 @@
                     "Not suitable for encryption - use proper encryption algorithms",
                     "Perfect for encoding binary data in text-only systems",
                     "Always validate decoded data before using it",
-                    "Use URL-safe Base64 for URLs (replaces +/= with -_)"
+                    "Use URL-safe Base64 for URLs (replaces +\/= with -_)"
                 ]
             },
             "faq": {
                 "title": "❓ Frequently Asked Questions",
                 "q1": "Is Base64 encoding secure?",
-                "a1": "No! Base64 is NOT encryption - it's simply encoding. Anyone can decode Base64 data instantly. Never use Base64 alone for security. For encryption, use proper cryptographic algorithms like AES, RSA, or TLS/SSL.",
+                "a1": "No! Base64 is NOT encryption - it's simply encoding. Anyone can decode Base64 data instantly. Never use Base64 alone for security. For encryption, use proper cryptographic algorithms like AES, RSA, or TLS\/SSL.",
                 "q2": "Why does Base64 increase file size?",
                 "a2": "Base64 encoding increases data size by approximately 33% because it represents 3 bytes of binary data using 4 ASCII characters. This overhead is the trade-off for making binary data safe for text-only systems.",
                 "q3": "What is Base64 used for?",
@@ -115,7 +115,7 @@
                 "q4": "Is my data sent to a server?",
                 "a4": "No! All Base64 encoding and decoding happens entirely in your browser using JavaScript. Your data never leaves your device and is not stored, transmitted, or logged anywhere. Your privacy is completely protected.",
                 "q5": "Can I encode images to Base64?",
-                "a5": "Yes! While our tool encodes text, you can encode images using specialized tools. Base64-encoded images can be embedded directly in HTML/CSS using data URIs (data:image/png;base64,...). This is useful for small images but increases page size."
+                "a5": "Yes! While our tool encodes text, you can encode images using specialized tools. Base64-encoded images can be embedded directly in HTML\/CSS using data URIs (data:image\/png;base64,...). This is useful for small images but increases page size."
             }
         },
         "js": {
@@ -153,10 +153,10 @@
             "btn_format": "Format Code",
             "label_input": "Input Code",
             "btn_clear": "Clear",
-            "ph_input": "// Paste your code here...",
+            "ph_input": "\/\/ Paste your code here...",
             "label_output": "Formatted Code",
             "btn_copy": "Copy",
-            "ph_output": "// Formatted code will appear here..."
+            "ph_output": "\/\/ Formatted code will appear here..."
         },
         "content": {
             "hero_title": "Free Online Code Formatter",
@@ -241,9 +241,9 @@
             "choose": "-- Choose --",
             "options": {
                 "every_minute": "Every Minute (* * * * *)",
-                "every_5_minutes": "Every 5 Minutes (*/5 * * * *)",
-                "every_15_minutes": "Every 15 Minutes (*/15 * * * *)",
-                "every_30_minutes": "Every 30 Minutes (*/30 * * * *)",
+                "every_5_minutes": "Every 5 Minutes (*\/5 * * * *)",
+                "every_15_minutes": "Every 15 Minutes (*\/15 * * * *)",
+                "every_30_minutes": "Every 30 Minutes (*\/30 * * * *)",
                 "every_hour": "Every Hour (0 * * * *)",
                 "every_day_midnight": "Every Day at Midnight (0 0 * * *)",
                 "every_week": "Every Week (0 0 * * 0)",
@@ -260,7 +260,7 @@
             "weekday": "Weekday",
             "every_weekday": "Every Weekday (*)",
             "command": "Command to Run",
-            "ph_command": "/usr/bin/php /path/to/script.php",
+            "ph_command": "\/usr\/bin\/php \/path\/to\/script.php",
             "generated_cron": "Generated Cron Expression",
             "btn_copy": "Copy Cron",
             "btn_clear": "Reset"
@@ -387,18 +387,18 @@
             },
             "how_title": "📚 How to Use",
             "how_steps": {
-                "1": "<strong>Choose Action:</strong> Click \"Minify CSS\" to compress or \"Beautify CSS\" to format",
-                "2": "<strong>View Results:</strong> See the processed CSS in the output field with compression stats",
-                "3": "<strong>Copy:</strong> Click \"Copy\" to copy the minified CSS to your clipboard",
-                "4": "<strong>Use in Production:</strong> Replace your original CSS file with the minified version",
+                "1": "<strong>Choose Action:<\/strong> Click \"Minify CSS\" to compress or \"Beautify CSS\" to format",
+                "2": "<strong>View Results:<\/strong> See the processed CSS in the output field with compression stats",
+                "3": "<strong>Copy:<\/strong> Click \"Copy\" to copy the minified CSS to your clipboard",
+                "4": "<strong>Use in Production:<\/strong> Replace your original CSS file with the minified version",
                 "5": "Download or copy the minified CSS and use it in your production website to reduce file size and improve load times."
             },
             "best_practices_title": "💡 Best Practices",
             "best_practices_list": {
-                "1": "<strong>Minify for production:</strong> Only use minified CSS in production environments",
-                "2": "<strong>Combine files:</strong> Merge multiple CSS files before minifying for better compression",
-                "3": "<strong>Test thoroughly:</strong> Always test minified CSS to ensure no functionality is broken",
-                "4": "<strong>Use build tools:</strong> Integrate minification into your build process for automation",
+                "1": "<strong>Minify for production:<\/strong> Only use minified CSS in production environments",
+                "2": "<strong>Combine files:<\/strong> Merge multiple CSS files before minifying for better compression",
+                "3": "<strong>Test thoroughly:<\/strong> Always test minified CSS to ensure no functionality is broken",
+                "4": "<strong>Use build tools:<\/strong> Integrate minification into your build process for automation",
                 "5": "Keep an unminified version for development and debugging purposes."
             },
             "faq_title": "❓ Frequently Asked Questions",
@@ -439,7 +439,7 @@
             "key_ph": "Key (e.g. Authorization)",
             "value_ph": "Value (e.g. Bearer token)",
             "add_header": "+ Add Header",
-            "raw_data_label": "Raw Data (JSON/Text)",
+            "raw_data_label": "Raw Data (JSON\/Text)",
             "generated_label": "Generated Command",
             "btn_copy": "Copy Command"
         },
@@ -458,7 +458,7 @@
             "mode_encode": "Encode HTML",
             "mode_decode": "Decode HTML",
             "label_input_encode": "Enter HTML to Encode",
-            "ph_input_encode": "<div>Hello & Welcome</div>",
+            "ph_input_encode": "<div>Hello & Welcome<\/div>",
             "btn_encode": "Encode HTML",
             "btn_clear": "Clear",
             "btn_copy": "Copy",
@@ -525,7 +525,7 @@
                 "1": "Paste your HTML or text in the input field",
                 "2": "Click the process button to convert",
                 "3": "Copy the result to clipboard",
-                "4": "Copy the encoded/decoded result and use it in your HTML, XML, or web applications."
+                "4": "Copy the encoded\/decoded result and use it in your HTML, XML, or web applications."
             },
             "examples_title": "💡 HTML Encoding Examples",
             "examples": {
@@ -539,7 +539,7 @@
                 },
                 "3": {
                     "title": "Encoding Special Characters",
-                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;\/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;\/script&amp;gt;"
                 }
             },
             "faq_title": "â“ Frequently Asked Questions",
@@ -584,12 +584,12 @@
             "why_desc": "Minifying HTML is important for web performance optimization. Smaller HTML files mean faster downloads, reduced bandwidth usage, and improved page load times. This is especially beneficial for large websites with lots of HTML content. Minified HTML reduces server load and improves user experience.",
             "features_title": "Key Features",
             "features_list": {
-                "minify": "<strong>Minify HTML:</strong> Remove whitespace and comments to reduce file size",
-                "beautify": "<strong>Beautify HTML:</strong> Format HTML with proper indentation",
-                "instant": "<strong>Instant Results:</strong> Process HTML in real-time",
-                "copy": "<strong>Copy Output:</strong> Easily copy minified HTML",
-                "secure": "<strong>Secure & Private:</strong> All processing in browser",
-                "free": "<strong>Free to Use:</strong> No registration required"
+                "minify": "<strong>Minify HTML:<\/strong> Remove whitespace and comments to reduce file size",
+                "beautify": "<strong>Beautify HTML:<\/strong> Format HTML with proper indentation",
+                "instant": "<strong>Instant Results:<\/strong> Process HTML in real-time",
+                "copy": "<strong>Copy Output:<\/strong> Easily copy minified HTML",
+                "secure": "<strong>Secure & Private:<\/strong> All processing in browser",
+                "free": "<strong>Free to Use:<\/strong> No registration required"
             },
             "how_title": "How to Use",
             "how_steps": {
@@ -643,11 +643,11 @@
             "about_p1": "Convert HTML code to clean, readable Markdown format instantly with our free online HTML to Markdown converter. Perfect for developers, technical writers, and content creators who need to transform HTML content into Markdown for documentation, README files, or content management systems.",
             "features_title": "✨ Key Features",
             "features_list": {
-                "1": "✅ <strong>Preserve Formatting:</strong> Maintains headings, lists, links, and emphasis",
-                "2": "✅ <strong>Clean Output:</strong> Generates readable, well-formatted Markdown",
-                "3": "✅ <strong>No Installation:</strong> Works directly in your browser",
-                "4": "✅ <strong>Free Forever:</strong> 100% free with no limitations",
-                "5": "✅ <strong>Privacy First:</strong> All conversion happens locally in your browser",
+                "1": "✅ <strong>Preserve Formatting:<\/strong> Maintains headings, lists, links, and emphasis",
+                "2": "✅ <strong>Clean Output:<\/strong> Generates readable, well-formatted Markdown",
+                "3": "✅ <strong>No Installation:<\/strong> Works directly in your browser",
+                "4": "✅ <strong>Free Forever:<\/strong> 100% free with no limitations",
+                "5": "✅ <strong>Privacy First:<\/strong> All conversion happens locally in your browser",
                 "6": "Preserves code blocks and syntax highlighting for technical documentation."
             },
             "uses_title": "🎯 Common Use Cases",
@@ -748,13 +748,13 @@
             "why_desc": "Our free HTML viewer offers several advantages for developers and designers. First, it provides instant visual feedback without needing to create files or set up a development environment. Second, it's completely browser-based, meaning you can use it anywhere without installing software. Third, it's perfect for quick testing, debugging, and learning HTML. The side-by-side view lets you see your code and its output simultaneously, making it easier to understand how HTML elements render.",
             "features_title": "Key Features",
             "features_list": {
-                "preview": "<strong>Real-Time Preview:</strong> See your HTML rendered instantly as you type",
-                "layout": "<strong>Side-by-Side View:</strong> Code editor and preview pane displayed together",
-                "syntax": "<strong>Syntax Highlighting:</strong> Easy-to-read code with color-coded syntax",
-                "sample": "<strong>Sample Code:</strong> Load example HTML to get started quickly",
-                "no_install": "<strong>No Installation Required:</strong> Works directly in your browser",
-                "free": "<strong>Free to Use:</strong> No registration or payment required",
-                "secure": "<strong>Secure:</strong> All processing happens in your browser"
+                "preview": "<strong>Real-Time Preview:<\/strong> See your HTML rendered instantly as you type",
+                "layout": "<strong>Side-by-Side View:<\/strong> Code editor and preview pane displayed together",
+                "syntax": "<strong>Syntax Highlighting:<\/strong> Easy-to-read code with color-coded syntax",
+                "sample": "<strong>Sample Code:<\/strong> Load example HTML to get started quickly",
+                "no_install": "<strong>No Installation Required:<\/strong> Works directly in your browser",
+                "free": "<strong>Free to Use:<\/strong> No registration or payment required",
+                "secure": "<strong>Secure:<\/strong> All processing happens in your browser"
             },
             "how_title": "How to Use the HTML Viewer",
             "how_steps": {
@@ -808,12 +808,12 @@
             "why_desc": "Minifying JavaScript is essential for web performance optimization. Smaller JS files mean faster downloads, reduced bandwidth usage, and improved page load times. This is especially important for mobile users and users with slower internet connections. Minified JavaScript reduces server load and improves user experience. For production websites, minification is a standard best practice that can significantly improve Core Web Vitals scores.",
             "features_title": "Key Features",
             "features_list": {
-                "minify": "<strong>Minify JavaScript:</strong> Remove whitespace and comments to reduce file size",
-                "beautify": "<strong>Beautify JavaScript:</strong> Format JS with proper indentation",
-                "instant": "<strong>Instant Results:</strong> Process JavaScript in real-time",
-                "copy": "<strong>Copy Output:</strong> Easily copy minified JavaScript",
-                "secure": "<strong>Secure & Private:</strong> All processing in browser",
-                "free": "<strong>Free to Use:</strong> No registration required"
+                "minify": "<strong>Minify JavaScript:<\/strong> Remove whitespace and comments to reduce file size",
+                "beautify": "<strong>Beautify JavaScript:<\/strong> Format JS with proper indentation",
+                "instant": "<strong>Instant Results:<\/strong> Process JavaScript in real-time",
+                "copy": "<strong>Copy Output:<\/strong> Easily copy minified JavaScript",
+                "secure": "<strong>Secure & Private:<\/strong> All processing in browser",
+                "free": "<strong>Free to Use:<\/strong> No registration required"
             },
             "how_title": "How to Use",
             "how_steps": [
@@ -908,7 +908,7 @@
                     "desc": "Format JSON data from NoSQL databases like MongoDB, CouchDB, and Firebase for better readability."
                 },
                 "export": {
-                    "title": "Data Export/Import",
+                    "title": "Data Export\/Import",
                     "desc": "Prepare JSON data for export or validate imported JSON data to ensure proper structure and syntax."
                 }
             },
@@ -1030,19 +1030,19 @@
             },
             "how_title": "📚 How to Use",
             "how_steps": [
-                "<strong>Paste JSON:</strong> Copy and paste your JSON data into the input field",
-                "<strong>Parse:</strong> Click \"Parse JSON\" to validate and visualize the structure",
-                "<strong>Beautify:</strong> Click \"Beautify\" to format with proper indentation",
-                "<strong>Minify:</strong> Click \"Minify\" to compress and remove whitespace",
-                "<strong>View Tree:</strong> See the hierarchical structure in tree view format"
+                "<strong>Paste JSON:<\/strong> Copy and paste your JSON data into the input field",
+                "<strong>Parse:<\/strong> Click \"Parse JSON\" to validate and visualize the structure",
+                "<strong>Beautify:<\/strong> Click \"Beautify\" to format with proper indentation",
+                "<strong>Minify:<\/strong> Click \"Minify\" to compress and remove whitespace",
+                "<strong>View Tree:<\/strong> See the hierarchical structure in tree view format"
             ],
             "tips_title": "💡 JSON Best Practices",
             "tips_list": [
-                "<strong>Use double quotes:</strong> JSON requires double quotes for strings, not single quotes",
-                "<strong>No trailing commas:</strong> Remove commas after the last item in objects and arrays",
-                "<strong>Proper data types:</strong> Use numbers without quotes, booleans as true/false, null for empty values",
-                "<strong>Validate regularly:</strong> Always validate JSON before deployment or production use",
-                "<strong>Beautify for readability:</strong> Format JSON for easier debugging and maintenance"
+                "<strong>Use double quotes:<\/strong> JSON requires double quotes for strings, not single quotes",
+                "<strong>No trailing commas:<\/strong> Remove commas after the last item in objects and arrays",
+                "<strong>Proper data types:<\/strong> Use numbers without quotes, booleans as true\/false, null for empty values",
+                "<strong>Validate regularly:<\/strong> Always validate JSON before deployment or production use",
+                "<strong>Beautify for readability:<\/strong> Format JSON for easier debugging and maintenance"
             ],
             "faq_title": "❓ Frequently Asked Questions",
             "faq": {
@@ -1099,12 +1099,12 @@
             "p1": "Our free JSON to CSV converter is a powerful tool designed for developers, data analysts, and IT professionals. Easily transform structured JSON data into clean, formatted CSV (Comma Separated Values) or TSV files. Whether you're preparing data for Excel, Google Sheets, or database imports, our tool ensures accuracy and speed with 100% client-side processing.",
             "features_title": "Key Features",
             "features_list": {
-                "fast": "<strong>Instant Conversion:</strong> Results in milliseconds",
-                "secure": "<strong>Private & Secure:</strong> All data stays in your browser",
-                "format": "<strong>Smart Flattening:</strong> Correctly handles nested JSON objects",
-                "custom": "<strong>Custom Delimiters:</strong> Choose between comma, semicolon, or tabs",
-                "export": "<strong>Easy Export:</strong> Copy to clipboard or download as .csv",
-                "free": "<strong>100% Free:</strong> No limits, no registration required"
+                "fast": "<strong>Instant Conversion:<\/strong> Results in milliseconds",
+                "secure": "<strong>Private & Secure:<\/strong> All data stays in your browser",
+                "format": "<strong>Smart Flattening:<\/strong> Correctly handles nested JSON objects",
+                "custom": "<strong>Custom Delimiters:<\/strong> Choose between comma, semicolon, or tabs",
+                "export": "<strong>Easy Export:<\/strong> Copy to clipboard or download as .csv",
+                "free": "<strong>100% Free:<\/strong> No limits, no registration required"
             },
             "uses_title": "Common Use Cases",
             "uses": {
@@ -1226,10 +1226,10 @@
             },
             "how_title": "How to Use",
             "how_steps": [
-                "Enter the target database <strong>Table Name</strong>",
-                "Paste your <strong>JSON</strong> (must be an array or object)",
-                "Click <strong>Generate SQL</strong> to create the script",
-                "<strong>Copy</strong> the SQL output to your clipboard"
+                "Enter the target database <strong>Table Name<\/strong>",
+                "Paste your <strong>JSON<\/strong> (must be an array or object)",
+                "Click <strong>Generate SQL<\/strong> to create the script",
+                "<strong>Copy<\/strong> the SQL output to your clipboard"
             ],
             "faq_title": "Frequently Asked Questions",
             "faq": {
@@ -1430,7 +1430,7 @@
                     "desc": "Transform JSON settings to YAML configuration files."
                 },
                 "cicd": {
-                    "title": "CI/CD Pipelines",
+                    "title": "CI\/CD Pipelines",
                     "desc": "Prepare YAML pipeline definitions from JSON data."
                 },
                 "cloud": {
@@ -1536,7 +1536,7 @@
             "hero_subtitle": "Decode and inspect JSON Web Tokens instantly",
             "p1": "Our free JWT Decoder tool allows you to decode and inspect JSON Web Tokens (JWT) to view their header, payload, and signature components. Perfect for debugging authentication issues, understanding token structure, and validating JWT claims.",
             "what_title": "ðŸ” What is JWT?",
-            "what_desc": "JSON Web Token (JWT) is a compact, URL-safe means of representing claims between two parties. JWTs consist of three parts: Header (algorithm and token type], Payload (claims/data], and Signature (verification], separated by dots.",
+            "what_desc": "JSON Web Token (JWT) is a compact, URL-safe means of representing claims between two parties. JWTs consist of three parts: Header (algorithm and token type], Payload (claims\/data], and Signature (verification], separated by dots.",
             "features_title": "âœ¨ Features",
             "features": {
                 "instant": {
@@ -1680,7 +1680,7 @@
             "error_no_copy": "No HTML to copy. Please convert Markdown first.",
             "success_copy": "HTML copied to clipboard!",
             "error_no_download": "No HTML to download. Please convert Markdown first.",
-            "example": "# Welcome to Markdown\n\n## This is a subheading\n\nThis is a paragraph with **bold text** and *italic text*.\n\n### Features\n\n- Easy to write\n- Easy to read\n- Converts to HTML\n\n### Code Example\n\n```javascript\nfunction hello() {\n    console.log(\"Hello, World!\");\n}\n```\n\n> This is a blockquote\n\n[Visit our website](https://example.com)"
+            "example": "# Welcome to Markdown\n\n## This is a subheading\n\nThis is a paragraph with **bold text** and *italic text*.\n\n### Features\n\n- Easy to write\n- Easy to read\n- Converts to HTML\n\n### Code Example\n\n```javascript\nfunction hello() {\n    console.log(\"Hello, World!\");\n}\n```\n\n> This is a blockquote\n\n[Visit our website](https:\/\/example.com)"
         }
     },
     "md5-generator": {
@@ -1705,20 +1705,20 @@
             "what_desc": "MD5 is a cryptographic hash function that takes an input of any length and produces a fixed 128-bit hash value, typically represented as a 32-character hexadecimal number. The same input always produces the same hash, but even a tiny change in input creates a completely different hash.",
             "features_title": "âœ… MD5 Advantages",
             "features": {
-                "fast": "<strong>Fast Processing:</strong> Extremely quick hash generation",
-                "fixed": "<strong>Fixed Length:</strong> Always produces 128-bit output",
-                "deterministic": "<strong>Deterministic:</strong> Same input = same hash",
-                "support": "<strong>Wide Support:</strong> Available in all programming languages"
+                "fast": "<strong>Fast Processing:<\/strong> Extremely quick hash generation",
+                "fixed": "<strong>Fixed Length:<\/strong> Always produces 128-bit output",
+                "deterministic": "<strong>Deterministic:<\/strong> Same input = same hash",
+                "support": "<strong>Wide Support:<\/strong> Available in all programming languages"
             },
             "uses_title": "📊 Common Use Cases",
             "uses": {
-                "verify": "<strong>File Verification:</strong> Check file integrity",
-                "checksum": "<strong>Checksums:</strong> Verify downloads",
-                "cache": "<strong>Cache Keys:</strong> Generate unique identifiers",
-                "integrity": "<strong>Data Integrity:</strong> Detect changes"
+                "verify": "<strong>File Verification:<\/strong> Check file integrity",
+                "checksum": "<strong>Checksums:<\/strong> Verify downloads",
+                "cache": "<strong>Cache Keys:<\/strong> Generate unique identifiers",
+                "integrity": "<strong>Data Integrity:<\/strong> Detect changes"
             },
             "warning_title": "âš ï¸ Security Warning",
-            "warning_desc": "<strong>DO NOT use MD5 for password hashing or security-critical applications!</strong> MD5 is cryptographically broken and vulnerable to collision attacks. For password hashing, use modern algorithms like bcrypt, Argon2, or PBKDF2.",
+            "warning_desc": "<strong>DO NOT use MD5 for password hashing or security-critical applications!<\/strong> MD5 is cryptographically broken and vulnerable to collision attacks. For password hashing, use modern algorithms like bcrypt, Argon2, or PBKDF2.",
             "compare_title": "ðŸ”„ MD5 vs Other Hash Functions",
             "compare": {
                 "md5": {
@@ -1935,7 +1935,7 @@
                 },
                 "copy": {
                     "title": "One-Click Copy",
-                    "desc": "Copy encoded/decoded text instantly"
+                    "desc": "Copy encoded\/decoded text instantly"
                 },
                 "free": {
                     "title": "100% Free",
@@ -1991,7 +1991,7 @@
             "examples_title": "Unicode Examples",
             "examples": {
                 "simple": {
-                    "title": "Simple/ASCII:",
+                    "title": "Simple\/ASCII:",
                     "desc": "Original: \"A\" â†’ Encoded: \"\\u0041\""
                 },
                 "special": {
@@ -1999,7 +1999,7 @@
                     "desc": "Original: \"Â©\" â†’ Encoded: \"\\u00A9\""
                 },
                 "emoji": {
-                    "title": "Emojis/Multi-byte:",
+                    "title": "Emojis\/Multi-byte:",
                     "desc": "Original: \"ðŸŒŸ\" â†’ Encoded: \"\\uD83C\\uDF1F\" (surrogate pairs) or \"\\u2B50\" depending on representation"
                 }
             },
@@ -2008,7 +2008,7 @@
                 "q1": "Why use Unicode escape sequences?",
                 "a1": "They allow you to represent any character using only ASCII characters, which ensures compatibility across different systems, encodings, and file transfers that might not handle raw Unicode correctly.",
                 "q2": "What format is used?",
-                "a2": "This tool typically uses the JavaScript/JSON style \\uXXXX format for Basic Multilingual Plane characters.",
+                "a2": "This tool typically uses the JavaScript\/JSON style \\uXXXX format for Basic Multilingual Plane characters.",
                 "q3": "Is this different from URL encoding?",
                 "a3": "Yes. URL encoding uses %XX hex values mainly for URLs. Unicode escaping uses \\uXXXX and is used in strings in programming languages like JavaScript, Java, and Python.",
                 "q4": "Is my data secure?",
@@ -2035,7 +2035,7 @@
             "btn_encode": "Encode URL",
             "btn_decode": "Decode URL",
             "label_input_encode": "Enter URL to Encode",
-            "ph_input": "https://example.com/search?name=John Doe&age=30",
+            "ph_input": "https:\/\/example.com\/search?name=John Doe&age=30",
             "btn_process_encode": "Encode URL",
             "btn_clear": "Clear",
             "btn_copy": "Copy",
@@ -2065,7 +2065,7 @@
                 },
                 "copy": {
                     "title": "One-Click Copy",
-                    "desc": "Copy encoded/decoded URLs instantly"
+                    "desc": "Copy encoded\/decoded URLs instantly"
                 },
                 "free": {
                     "title": "100% Free",
@@ -2123,7 +2123,7 @@
                 },
                 "step5": {
                     "title": "Use Anywhere",
-                    "desc": "Paste the encoded/decoded URL in your application"
+                    "desc": "Paste the encoded\/decoded URL in your application"
                 }
             },
             "examples_title": "URL Encoding Examples",
@@ -2138,7 +2138,7 @@
                 },
                 "full": {
                     "title": "Full URL:",
-                    "desc": "Original: \"https://example.com/search?q=hello world\" â†’ Encoded: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
+                    "desc": "Original: \"https:\/\/example.com\/search?q=hello world\" â†’ Encoded: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
                 }
             },
             "faq_title": "Frequently Asked Questions",
@@ -2146,11 +2146,11 @@
                 "q1": "When should I encode URLs?",
                 "a1": "Encode URLs when passing them as query parameters, storing them in databases, or when they contain special characters like spaces, &, =, ?, or non-ASCII characters.",
                 "q2": "What characters need encoding?",
-                "a2": "Reserved characters like : / ? # [ ] @ ! $ & ' ( ) * + , ; = and unsafe characters like spaces, <, >, \", {, }, |, \\, ^, `, and non-ASCII characters must be encoded.",
+                "a2": "Reserved characters like : \/ ? # [ ] @ ! $ & ' ( ) * + , ; = and unsafe characters like spaces, <, >, \", {, }, |, \\, ^, `, and non-ASCII characters must be encoded.",
                 "q3": "Is URL encoding the same as Base64?",
                 "a3": "No. URL encoding converts specific characters to %XX format, while Base64 encodes entire data into a different character set. They serve different purposes.",
                 "q4": "Can I encode entire URLs?",
-                "a4": "Yes, but typically you only encode the query string portion. Encoding the entire URL including protocol (https://) is less common and may cause issues.",
+                "a4": "Yes, but typically you only encode the query string portion. Encoding the entire URL including protocol (https:\/\/) is less common and may cause issues.",
                 "q5": "Is my data secure?",
                 "a5": "Yes! All encoding and decoding happens entirely in your browser using JavaScript. Your URLs never leave your device or get sent to any server."
             }
@@ -2197,8 +2197,8 @@
         },
         "editor": {
             "label_input": "XML Input",
-            "ph_input": "<root><child>value</child></root>",
-            "btn_format": "Format / Beautify",
+            "ph_input": "<root><child>value<\/child><\/root>",
+            "btn_format": "Format \/ Beautify",
             "btn_minify": "Minify",
             "btn_copy": "Copy"
         },
@@ -2222,14 +2222,14 @@
             "btn_copy": "Copy",
             "btn_example": "Example",
             "label_input": "Enter XML",
-            "ph_input": "<data><row><name>John</name><age>30</age></row></data>",
+            "ph_input": "<data><row><name>John<\/name><age>30<\/age><\/row><\/data>",
             "label_output": "CSV Output",
             "ph_output": "Converted CSV will appear here..."
         },
         "content": {
             "p1": "Our free XML to CSV converter transforms structured XML data into comma-separated values format. Perfect for importing XML data into Excel, Google Sheets, databases, and data analysis tools. Convert complex XML structures into simple, tabular CSV format in seconds.",
             "what_title": "What is XML to CSV Conversion?",
-            "what_desc": "XML to CSV conversion transforms structured eXtensible Markup Language data into comma-separated values format. While XML is great for complex data structures and APIs, CSV is simpler and universally supported by spreadsheet applications, making it ideal for data analysis, reporting, and import/export operations.",
+            "what_desc": "XML to CSV conversion transforms structured eXtensible Markup Language data into comma-separated values format. While XML is great for complex data structures and APIs, CSV is simpler and universally supported by spreadsheet applications, making it ideal for data analysis, reporting, and import\/export operations.",
             "features_title": "Features",
             "features": {
                 "fast": {
@@ -2350,7 +2350,7 @@
             "btn_example": "Load Example",
             "btn_clear": "Clear",
             "label_input": "XML Input",
-            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Your XML here...</item>\n</root>",
+            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Your XML here...<\/item>\n<\/root>",
             "label_output": "JSON Output",
             "ph_output": "Converted JSON will appear here..."
         },
@@ -2486,7 +2486,7 @@
         },
         "content": {
             "h2": "About YAML to JSON Converter",
-            "p1": "Convert YAML configuration files to JSON format instantly with our free online YAML to JSON converter. Perfect for developers working with configuration files, CI/CD pipelines, and data transformation.",
+            "p1": "Convert YAML configuration files to JSON format instantly with our free online YAML to JSON converter. Perfect for developers working with configuration files, CI\/CD pipelines, and data transformation.",
             "features_title": "Key Features",
             "features": {
                 "syntax": {
@@ -2521,7 +2521,7 @@
                     "desc": "Convert YAML configuration files to JSON for applications."
                 },
                 "pipeline": {
-                    "title": "CI/CD Pipelines",
+                    "title": "CI\/CD Pipelines",
                     "desc": "Transform YAML pipeline configs to JSON format."
                 },
                 "k8s": {

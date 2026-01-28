@@ -40,9 +40,6 @@
             "hero_subtitle": "Etsi muutokset kahden tekstiversion välillä",
             "p1": "Tällä työkalulla voit nopeasti verrata kahta tekstilohkoa tai tiedostoa. Erot, poistot ja lisäykset korostetaan helppoa analyysia varten.",
             "features_title": "Ominaisuudet",
-            "uses_title": "Käyttökohteet",
-            "how_title": "Käyttöohjeet",
-            "faq_title": "Usein Kysytyt Kysymykset",
             "features": {
                 "visual": {
                     "title": "Visuaalinen vertailu",
@@ -69,6 +66,7 @@
                     "desc": "Korkealaatuinen tiedostojen vertailutyökalu saatavilla maksutta ilman rekisteröitymistä."
                 }
             },
+            "uses_title": "Käyttökohteet",
             "uses": {
                 "code": {
                     "title": "Koodin katselmointi",
@@ -95,6 +93,7 @@
                     "desc": "Vertaa alkuperäisiä ja käännettyjä tekstilohkoja varmistaaksesi rakenteen ja pituuden johdonmukaisuuden."
                 }
             },
+            "how_title": "Käyttöohjeet",
             "how_steps": {
                 "1": {
                     "title": "Liitä alkuperäinen teksti",
@@ -113,6 +112,7 @@
                     "desc": "Katso tulokset alta. Vihreät rivit on lisätty, punaiset rivit on poistettu ja harmaat rivit ovat muuttumattomia."
                 }
             },
+            "faq_title": "Usein Kysytyt Kysymykset",
             "faq": {
                 "q1": "Onko tekstidatani suojattu?",
                 "a1": "Ehdottomasti. Tämä työkalu toimii täysin asiakaspuolella JavaScriptin avulla. Tietoja ei koskaan lähetetä palvelimillemme tai tallenneta minnekään.",
@@ -168,7 +168,7 @@
         },
         "editor": {
             "label_input": "Syötä Morseryhmä",
-            "ph_input": null,
+            "ph_input": "... --- ...",
             "btn_decode": "Dekoodaa Tekstiksi",
             "btn_clear": "Tyhjennä",
             "btn_copy": "Kopioi",
@@ -257,17 +257,16 @@
                 }
             },
             "examples_title": "Esimerkkejä morsekoodista",
-            "samples": [],
             "faq_title": "❓ Usein kysytyt kysymykset",
             "faq": {
                 "q1": "Kuinka muotoilen morsekoodin syötteen?",
-                "a1": "Erota jokainen kirjain välilyönnillä. Käytä / sanavälille. Esimerkki: \"... --- ...\" SOS:lle.",
+                "a1": "Erota jokainen kirjain välilyönnillä. Käytä \/ sanavälille. Esimerkki: \"... --- ...\" SOS:lle.",
                 "q2": "Mitä jos teen virheen?",
                 "a2": "Virheelliset morsekoodikuviot ohitetaan. Varmista, että pisteet ja viivat erotetaan välilyönnillä.",
                 "q3": "Voinko purkaa numeroita?",
                 "a3": "Kyllä! Työkalu purkaa numerot 0-9 niiden morsekoodikuvioista.",
                 "q4": "Miten erotan sanat?",
-                "a4": "Käytä vinoviivaa (/) erottaaksesi sanat morsekoodissa.",
+                "a4": "Käytä vinoviivaa (\/) erottaaksesi sanat morsekoodissa.",
                 "q5": "Onko tämä työkalu ilmainen?",
                 "a5": "Kyllä! Täysin ilmainen ilman rajoituksia. Kaikki käsittely tapahtuu selaimessasi tietosuojan vuoksi."
             }
@@ -405,7 +404,7 @@
             "btn_clear": "Tyhjennä",
             "btn_copy": "Kopioi",
             "label_output": "Morse-tulostus",
-            "ph_output": null
+            "ph_output": "... --- ..."
         },
         "content": {
             "p1": "Muunna teksti morsekoodiksi välittömästi ilmaisella online-muuntimellamme. Morsekoodi käyttää pisteitä (.) ja viivoja (-) edustamaan kirjaimia ja numeroita. Täydellinen morsekoodin oppimiseen, hätäviestinnän harjoitteluun tai koodattujen viestien luomiseen.",

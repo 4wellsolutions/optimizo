@@ -40,9 +40,6 @@
             "hero_subtitle": "Find ændringer mellem to tekstversioner",
             "p1": "Dette værktøj lader dig hurtigt sammenligne to tekstblokke eller filer. Forskelle, sletninger og tilføjelser er fremhævet for nem analyse.",
             "features_title": "Funktioner",
-            "uses_title": "Anvendelsesmuligheder",
-            "how_title": "Sådan bruger du det",
-            "faq_title": "Ofte stillede spørgsmål",
             "features": {
                 "visual": {
                     "title": "Visuel sammenligning",
@@ -69,6 +66,7 @@
                     "desc": "Højkvalitets filsammenligningsværktøj tilgængeligt gratis, uden behov for registrering."
                 }
             },
+            "uses_title": "Anvendelsesmuligheder",
             "uses": {
                 "code": {
                     "title": "Kodegennemgang",
@@ -95,6 +93,7 @@
                     "desc": "Sammenlign originale og oversatte tekstblokke for at sikre struktur og længde konsistens."
                 }
             },
+            "how_title": "Sådan bruger du det",
             "how_steps": {
                 "1": {
                     "title": "Indsæt original tekst",
@@ -113,6 +112,7 @@
                     "desc": "Se resultaterne nedenfor. Grønne linjer er tilføjet, røde linjer er fjernet."
                 }
             },
+            "faq_title": "Ofte stillede spørgsmål",
             "faq": {
                 "q1": "Er mine tekstdata sikre?",
                 "a1": "Absolut. Dette værktøj kører helt i din browser ved hjælp af JavaScript. Ingen data sendes til vores servere.",
@@ -168,7 +168,7 @@
         },
         "editor": {
             "label_input": "Indtast morsekode",
-            "ph_input": null,
+            "ph_input": "... --- ...",
             "btn_decode": "Afkod til tekst",
             "btn_clear": "Ryd",
             "btn_copy": "Kopier",
@@ -257,17 +257,16 @@
                 }
             },
             "examples_title": "Morsekodeeksempler",
-            "samples": [],
             "faq_title": "❓ Ofte stillede spørgsmål",
             "faq": {
                 "q1": "Hvordan formaterer jeg morsekodeinput?",
-                "a1": "Adskil hvert bogstav med et mellemrum. Brug / til ordmellemrum. Eksempel: \"... --- ...\" for SOS.",
+                "a1": "Adskil hvert bogstav med et mellemrum. Brug \/ til ordmellemrum. Eksempel: \"... --- ...\" for SOS.",
                 "q2": "Hvad hvis jeg laver en fejl?",
                 "a2": "Ugyldige morsekodemønstre vil blive sprunget over. Sørg for, at prikker og bindestreger er adskilt af mellemrum.",
                 "q3": "Kan jeg afkode tal?",
                 "a3": "Ja! Værktøjet afkoder tallene 0-9 fra deres morsekodemønstre.",
                 "q4": "Hvordan adskiller jeg ord?",
-                "a4": "Brug en skråstreg (/) for at adskille ord i morsekode.",
+                "a4": "Brug en skråstreg (\/) for at adskille ord i morsekode.",
                 "q5": "Er dette værktøj gratis?",
                 "a5": "Ja! Helt gratis uden grænser. Al behandling foregår i din browser af hensyn til privatlivets fred."
             }
@@ -405,7 +404,7 @@
             "btn_clear": "Ryd",
             "btn_copy": "Kopier",
             "label_output": "Morsekode",
-            "ph_output": null
+            "ph_output": "... --- ..."
         },
         "content": {
             "p1": "Konverter tekst til morse med det samme med vores gratis online konverter. Morsekode bruger prikker (.) og bindestreger (-) til at repræsentere bogstaver og tal. Perfekt til at lære morsekode, praksis i nødkommunikation eller oprette kodede beskeder.",

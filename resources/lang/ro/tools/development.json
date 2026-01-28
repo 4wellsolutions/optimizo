@@ -38,7 +38,7 @@
                 }
             },
             "how_to": {
-                "title": "Cum să folosești Encoder/Decoder Base64",
+                "title": "Cum să folosești Encoder\/Decoder Base64",
                 "encode": {
                     "title": "Codificare Text",
                     "step1": "Fă clic pe fila \"Codifică în Base64\"",
@@ -79,14 +79,14 @@
                 "desc": "Base64 este o schemă de codificare de la binar la text care convertește datele binare în format de text ASCII. Instrumentul nostru gratuit ajută dezvoltatorii, administratorii de sistem și profesioniștii IT să convertească textul în Base64 sau să îl decodifice înapoi instantaneu. Perfect pentru autentificare API, URI-uri de date, atașamente de e-mail și transmitere securizată a datelor. Toată procesarea are loc în browser pentru confidențialitate totală.",
                 "works_title": "🔄 Cum funcționează Base64",
                 "works_encoding": "Convertește datele binare în text ASCII folosind 64 de caractere",
-                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (și = pentru padding)",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, \/ (și = pentru padding)",
                 "works_decoding": "Convertește textul Base64 înapoi în datele binare originale",
                 "works_decoding_sub": "Inversează procesul de codificare perfect",
                 "cases_title": "✅ Cazuri Comune de Utilizare",
                 "case_api": "Autentificare API",
                 "case_api_desc": "Codifică acreditările pentru Basic Auth în antetele HTTP",
                 "case_uri": "URI de Date",
-                "case_uri_desc": "Incorporează imagini și fișiere direct în HTML/CSS",
+                "case_uri_desc": "Incorporează imagini și fișiere direct în HTML\/CSS",
                 "case_email": "Atașamente E-mail",
                 "case_email_desc": "Codifică fișiere binare pentru transmiterea prin e-mail",
                 "case_url": "Parametri URL",
@@ -101,13 +101,13 @@
                     "Nu este potrivit pentru criptare - folosește algoritmi de criptare adecvați",
                     "Perfect pentru codificarea datelor binare în sisteme care acceptă doar text",
                     "Validează întotdeauna datele decodificate înainte de a le utiliza",
-                    "Folosește Base64 sigur pentru URL pentru URL-uri (înlocuiește +/= cu -_)"
+                    "Folosește Base64 sigur pentru URL pentru URL-uri (înlocuiește +\/= cu -_)"
                 ]
             },
             "faq": {
                 "title": "❓ Întrebări Frecvente",
                 "q1": "Este sigură codificarea Base64?",
-                "a1": "Nu! Base64 NU este criptare - este simplă codificare. Oricine poate decodifica datele Base64 instantaneu. Nu folosi niciodată Base64 singur pentru securitate. Pentru criptare, folosește algoritmi criptografici adecvați, cum ar fi AES, RSA sau TLS/SSL.",
+                "a1": "Nu! Base64 NU este criptare - este simplă codificare. Oricine poate decodifica datele Base64 instantaneu. Nu folosi niciodată Base64 singur pentru securitate. Pentru criptare, folosește algoritmi criptografici adecvați, cum ar fi AES, RSA sau TLS\/SSL.",
                 "q2": "De ce crește Base64 dimensiunea fișierului?",
                 "a2": "Codificarea Base64 mărește dimensiunea datelor cu aproximativ 33% deoarece reprezintă 3 octeți de date binare folosind 4 caractere ASCII. Această supraîncărcare este prețul plătit pentru a face datele binare sigure pentru sistemele care acceptă doar text.",
                 "q3": "La ce este folosit Base64?",
@@ -115,7 +115,7 @@
                 "q4": "Sunt datele mele trimise la un server?",
                 "a4": "Nu! Toată codificarea și decodificarea Base64 are loc în întregime în browser-ul tău folosind JavaScript. Datele tale nu părăsesc niciodată dispozitivul tău și nu sunt stocate, transmise sau jurnalizate nicăieri. Confidențialitatea ta este complet protejată.",
                 "q5": "Pot codifica imagini în Base64?",
-                "a5": "Da! Deși instrumentul nostru codifică text, poți codifica imagini folosind instrumente specializate. Imaginile codificate Base64 pot fi incorporate direct în HTML/CSS folosind URI-uri de date. Acest lucru este util pentru imagini mici, dar crește dimensiunea paginii."
+                "a5": "Da! Deși instrumentul nostru codifică text, poți codifica imagini folosind instrumente specializate. Imaginile codificate Base64 pot fi incorporate direct în HTML\/CSS folosind URI-uri de date. Acest lucru este util pentru imagini mici, dar crește dimensiunea paginii."
             }
         },
         "js": {
@@ -153,10 +153,10 @@
             "btn_format": "Formatează Codul",
             "label_input": "Introdu Codul",
             "btn_clear": "Șterge",
-            "ph_input": "// Lipește codul aici...",
+            "ph_input": "\/\/ Lipește codul aici...",
             "label_output": "Cod Formatat",
             "btn_copy": "Copiază",
-            "ph_output": "// Codul formatat va apărea aici..."
+            "ph_output": "\/\/ Codul formatat va apărea aici..."
         },
         "content": {
             "hero_title": "Formator de Cod Online Gratuit",
@@ -241,9 +241,9 @@
             "choose": "-- Alege --",
             "options": {
                 "every_minute": "În fiecare minut (* * * * *)",
-                "every_5_minutes": "La fiecare 5 minute (*/5 * * * *)",
-                "every_15_minutes": "La fiecare 15 minute (*/15 * * * *)",
-                "every_30_minutes": "La fiecare 30 minute (*/30 * * * *)",
+                "every_5_minutes": "La fiecare 5 minute (*\/5 * * * *)",
+                "every_15_minutes": "La fiecare 15 minute (*\/15 * * * *)",
+                "every_30_minutes": "La fiecare 30 minute (*\/30 * * * *)",
                 "every_hour": "În fiecare oră (0 * * * *)",
                 "every_day_midnight": "În fiecare zi la miezul nopții (0 0 * * *)",
                 "every_week": "În fiecare săptămână (0 0 * * 0)",
@@ -260,7 +260,7 @@
             "weekday": "Ziua săptămânii",
             "every_weekday": "În fiecare zi a săptămânii (*)",
             "command": "Comandă de rula",
-            "ph_command": "/usr/bin/php /cale/catre/script.php",
+            "ph_command": "\/usr\/bin\/php \/cale\/catre\/script.php",
             "generated_cron": "Expresie Cron Generată",
             "btn_copy": "Copiază Cron",
             "btn_clear": "Resetează"
@@ -387,18 +387,18 @@
             },
             "how_title": "📚 Cum se folosește",
             "how_steps": {
-                "1": "<strong>Alege Acțiunea:</strong> Fă clic pe \"Minifică CSS\" pentru a comprima sau pe \"Înfrumusețează CSS\" pentru a formata",
-                "2": "<strong>Vezi Rezultatele:</strong> Consultă CSS-ul procesat în câmpul de rezultat, alături de statistici",
-                "3": "<strong>Copiază:</strong> Fă clic pe \"Copiază\" pentru a transfera CSS-ul în clipboard",
-                "4": "<strong>Folosește în Producție:</strong> Înlocuiește fișierul original cu versiunea minificată",
+                "1": "<strong>Alege Acțiunea:<\/strong> Fă clic pe \"Minifică CSS\" pentru a comprima sau pe \"Înfrumusețează CSS\" pentru a formata",
+                "2": "<strong>Vezi Rezultatele:<\/strong> Consultă CSS-ul procesat în câmpul de rezultat, alături de statistici",
+                "3": "<strong>Copiază:<\/strong> Fă clic pe \"Copiază\" pentru a transfera CSS-ul în clipboard",
+                "4": "<strong>Folosește în Producție:<\/strong> Înlocuiește fișierul original cu versiunea minificată",
                 "5": "Descărcați sau copiați CSS-ul minimizat și utilizați-l pe site-ul dvs. de producție pentru a reduce dimensiunea fișierului și pentru a îmbunătăți timpul de încărcare."
             },
             "best_practices_title": "💡 Cele mai bune practici",
             "best_practices_list": {
-                "1": "<strong>Minifică pentru producție:</strong> Folosește CSS minificat doar în mediile de producție",
-                "2": "<strong>Combină fișierele:</strong> Unește mai multe fișiere CSS înainte de minificare",
-                "3": "<strong>Testează amănunțit:</strong> Testează întotdeauna CSS-ul minificat pentru a te asigura că totul funcționează",
-                "4": "<strong>Folosește instrumente de build:</strong> Integrează minificarea în procesul tău de automatizare",
+                "1": "<strong>Minifică pentru producție:<\/strong> Folosește CSS minificat doar în mediile de producție",
+                "2": "<strong>Combină fișierele:<\/strong> Unește mai multe fișiere CSS înainte de minificare",
+                "3": "<strong>Testează amănunțit:<\/strong> Testează întotdeauna CSS-ul minificat pentru a te asigura că totul funcționează",
+                "4": "<strong>Folosește instrumente de build:<\/strong> Integrează minificarea în procesul tău de automatizare",
                 "5": "Păstrați o versiune neminificată pentru dezvoltare și depanare."
             },
             "faq_title": "❓ Întrebări Frecvente",
@@ -439,7 +439,7 @@
             "key_ph": "Cheie (ex. Authorization)",
             "value_ph": "Valoare (ex. Bearer token)",
             "add_header": "+ Adaugă Antet",
-            "raw_data_label": "Date Brute (JSON/Text)",
+            "raw_data_label": "Date Brute (JSON\/Text)",
             "generated_label": "Comandă Generată",
             "btn_copy": "Copiază Comanda"
         },
@@ -458,7 +458,7 @@
             "mode_encode": "Codifică HTML",
             "mode_decode": "Decodifică HTML",
             "label_input_encode": "Introdu HTML pentru Codificare",
-            "ph_input_encode": "<div>Salut & Bine ai venit</div>",
+            "ph_input_encode": "<div>Salut & Bine ai venit<\/div>",
             "btn_encode": "Codifică HTML",
             "btn_clear": "Șterge",
             "btn_copy": "Copiază",
@@ -525,7 +525,7 @@
                 "1": "Lipește HTML-ul sau textul în câmpul de introducere",
                 "2": "Fă clic pe butonul de procesare pentru a converti",
                 "3": "Copiază rezultatul în clipboard",
-                "4": "Copiați rezultatul codificat/decodificat și utilizați-l în aplicațiile dvs. HTML, XML sau web."
+                "4": "Copiați rezultatul codificat\/decodificat și utilizați-l în aplicațiile dvs. HTML, XML sau web."
             },
             "examples_title": "💡 Exemple de Codificare HTML",
             "examples": {
@@ -539,7 +539,7 @@
                 },
                 "3": {
                     "title": "Codificarea caracterelor speciale",
-                    "code": "&lt;script&gt;alertă(„XSS”)&lt;/script&gt; → &amp;lt;script&amp;gt;alerta(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
+                    "code": "&lt;script&gt;alertă(„XSS”)&lt;\/script&gt; → &amp;lt;script&amp;gt;alerta(&amp;quot;XSS&amp;quot;)&amp;lt;\/script&amp;gt;"
                 }
             },
             "faq_title": "❓ Întrebări Frecvente",
@@ -584,12 +584,12 @@
             "why_desc": "Minificarea HTML este importantă pentru optimizarea performanței web. Fișierele mai mici înseamnă descărcări mai rapide, consum redus de lățime de bandă și timpi de încărcare îmbunătățiți. Acest lucru este benefic în special pentru site-urile mari cu mult conținut HTML. HTML-ul minificat reduce sarcina serverului și îmbunătățește experiența utilizatorului.",
             "features_title": "Caracteristici Cheie",
             "features_list": {
-                "minify": "<strong>Minifică HTML:</strong> Elimină spațiile și comentariile pentru a reduce dimensiunea fișierului",
-                "beautify": "<strong>Înfrumusețează HTML:</strong> Formatează HTML-ul cu indentare corectă",
-                "instant": "<strong>Rezultate Instantanee:</strong> Procesează HTML-ul în timp real",
-                "copy": "<strong>Copiază Rezultatul:</strong> Copiază ușor HTML-ul minificat",
-                "secure": "<strong>Sigur și Privat:</strong> Toată procesarea are loc în browser",
-                "free": "<strong>Gratuit de utilizat:</strong> Nu este necesară înregistrarea"
+                "minify": "<strong>Minifică HTML:<\/strong> Elimină spațiile și comentariile pentru a reduce dimensiunea fișierului",
+                "beautify": "<strong>Înfrumusețează HTML:<\/strong> Formatează HTML-ul cu indentare corectă",
+                "instant": "<strong>Rezultate Instantanee:<\/strong> Procesează HTML-ul în timp real",
+                "copy": "<strong>Copiază Rezultatul:<\/strong> Copiază ușor HTML-ul minificat",
+                "secure": "<strong>Sigur și Privat:<\/strong> Toată procesarea are loc în browser",
+                "free": "<strong>Gratuit de utilizat:<\/strong> Nu este necesară înregistrarea"
             },
             "how_title": "Cum se folosește",
             "how_steps": {
@@ -643,11 +643,11 @@
             "about_p1": "Convertește codul HTML în format Markdown curat și lizibil instantaneu cu convertorul nostru online gratuit. Perfect pentru dezvoltatori, scriitori tehnici și creatori de conținut care trebuie să transforme conținutul HTML în Markdown pentru documentație, fișiere README sau sisteme de gestionare a conținutului.",
             "features_title": "✨ Caracteristici Cheie",
             "features_list": {
-                "1": "✅ <strong>Păstrează Formatarea:</strong> Menține titlurile, listele, linkurile și accentele",
-                "2": "✅ <strong>Rezultat Curat:</strong> Generează Markdown lizibil și bine formatat",
-                "3": "✅ <strong>Fără Instalare:</strong> Funcționează direct în browserul tău",
-                "4": "✅ <strong>Gratuit pentru totdeauna:</strong> 100% gratuit, fără limitări",
-                "5": "✅ <strong>Confidențialitate:</strong> Toată conversia are loc local în browserul tău",
+                "1": "✅ <strong>Păstrează Formatarea:<\/strong> Menține titlurile, listele, linkurile și accentele",
+                "2": "✅ <strong>Rezultat Curat:<\/strong> Generează Markdown lizibil și bine formatat",
+                "3": "✅ <strong>Fără Instalare:<\/strong> Funcționează direct în browserul tău",
+                "4": "✅ <strong>Gratuit pentru totdeauna:<\/strong> 100% gratuit, fără limitări",
+                "5": "✅ <strong>Confidențialitate:<\/strong> Toată conversia are loc local în browserul tău",
                 "6": "Păstrează blocurile de cod și evidențierea sintaxelor pentru documentația tehnică."
             },
             "uses_title": "🎯 Cazuri Comune de Utilizare",
@@ -748,13 +748,13 @@
             "why_desc": "Vizualizatorul nostru gratuit oferă mai multe avantaje. În primul rând, oferă feedback visual instantaneu fără a fi nevoie să creezi fișiere sau să configurezi un mediu de dezvoltare. În al doilea rând, este complet bazat pe browser, ceea ce înseamnă că îl poți folosi oriunde. În al treilea rând, este perfect pentru testare rapidă, depanare și învățare. Vizualizarea alăturată îți permite să vezi codul și rezultatul simultan.",
             "features_title": "Caracteristici Cheie",
             "features_list": {
-                "preview": "<strong>Previzualizare în Timp Real:</strong> Vezi HTML-ul randat instantaneu pe măsură ce tastezi",
-                "layout": "<strong>Vizualizare Alăturată:</strong> Editorul de cod și panoul de previzualizare afișate împreună",
-                "syntax": "<strong>Evidențiere Sintaxă:</strong> Cod ușor de citit cu sintaxă colorată",
-                "sample": "<strong>Cod Exemplu:</strong> Încarcă un exemplu de HTML pentru a începe rapid",
-                "no_install": "<strong>Fără Instalare:</strong> Funcționează direct în browserul tău",
-                "free": "<strong>Gratuit:</strong> Nu este necesară înregistrarea sau plata",
-                "secure": "<strong>Sigur:</strong> Toată procesarea are loc în browser-ul tău"
+                "preview": "<strong>Previzualizare în Timp Real:<\/strong> Vezi HTML-ul randat instantaneu pe măsură ce tastezi",
+                "layout": "<strong>Vizualizare Alăturată:<\/strong> Editorul de cod și panoul de previzualizare afișate împreună",
+                "syntax": "<strong>Evidențiere Sintaxă:<\/strong> Cod ușor de citit cu sintaxă colorată",
+                "sample": "<strong>Cod Exemplu:<\/strong> Încarcă un exemplu de HTML pentru a începe rapid",
+                "no_install": "<strong>Fără Instalare:<\/strong> Funcționează direct în browserul tău",
+                "free": "<strong>Gratuit:<\/strong> Nu este necesară înregistrarea sau plata",
+                "secure": "<strong>Sigur:<\/strong> Toată procesarea are loc în browser-ul tău"
             },
             "how_title": "Cum să folosești Vizualizatorul HTML",
             "how_steps": {
@@ -808,12 +808,12 @@
             "why_desc": "Minificarea JavaScript-ului este esențială pentru optimizarea performanței web. Fișierele JS mai mici înseamnă descărcări mai rapide, consum redus de lățime de bandă și timpi de încărcare îmbunătățiți. Acest lucru este deosebit de important pentru utilizatorii de dispozitive mobile și pentru cei cu conexiuni de internet mai lente. JavaScript-ul minificat reduce sarcina serverului și îmbunătățește experiența utilizatorului. Pentru site-urile de producție, minificarea este o practică standard care poate îmbunătăți semnificativ scorurile Core Web Vitals.",
             "features_title": "Caracteristici Cheie",
             "features_list": {
-                "minify": "<strong>Minifică JavaScript:</strong> Elimină spațiile și comentariile pentru a reduce dimensiunea",
-                "beautify": "<strong>Înfrumusețează JavaScript:</strong> Formatează JS cu indentare corectă",
-                "instant": "<strong>Rezultate Instantanee:</strong> Procesează JavaScript-ul în timp real",
-                "copy": "<strong>Copiază Rezultatul:</strong> Copiază ușor JavaScript-ul minificat",
-                "secure": "<strong>Sigur și Privat:</strong> Toată procesarea are loc în browser",
-                "free": "<strong>Gratuit de utilizat:</strong> Nu este necesară înregistrarea"
+                "minify": "<strong>Minifică JavaScript:<\/strong> Elimină spațiile și comentariile pentru a reduce dimensiunea",
+                "beautify": "<strong>Înfrumusețează JavaScript:<\/strong> Formatează JS cu indentare corectă",
+                "instant": "<strong>Rezultate Instantanee:<\/strong> Procesează JavaScript-ul în timp real",
+                "copy": "<strong>Copiază Rezultatul:<\/strong> Copiază ușor JavaScript-ul minificat",
+                "secure": "<strong>Sigur și Privat:<\/strong> Toată procesarea are loc în browser",
+                "free": "<strong>Gratuit de utilizat:<\/strong> Nu este necesară înregistrarea"
             },
             "how_title": "Cum se folosește",
             "how_steps": [
@@ -908,7 +908,7 @@
                     "desc": "Formatează datele JSON din baze de date NoSQL precum MongoDB, CouchDB și Firebase pentru o mai bună lizibilitate."
                 },
                 "export": {
-                    "title": "Export/Import Date",
+                    "title": "Export\/Import Date",
                     "desc": "Pregătește datele JSON pentru export sau validează datele JSON importate pentru a asigura structura și sintaxa corectă."
                 }
             },
@@ -1030,19 +1030,19 @@
             },
             "how_title": "📚 Cum să folosești",
             "how_steps": [
-                "<strong>Lipește JSON:</strong> Copiază și lipește datele JSON în câmpul de intrare",
-                "<strong>Analizează:</strong> Fă clic pe \"Validează JSON\" pentru a valida și vizualiza structura",
-                "<strong>Înfrumusețează:</strong> Fă clic pe \"Înfrumusețează\" pentru a forma cu indentarea corectă",
-                "<strong>Minifică:</strong> Fă clic pe \"Minifică\" pentru a comprima și elimina spațiile albe",
-                "<strong>Vizualizare Arbore:</strong> Vezi structura ierarhică în format de vizualizare arbore"
+                "<strong>Lipește JSON:<\/strong> Copiază și lipește datele JSON în câmpul de intrare",
+                "<strong>Analizează:<\/strong> Fă clic pe \"Validează JSON\" pentru a valida și vizualiza structura",
+                "<strong>Înfrumusețează:<\/strong> Fă clic pe \"Înfrumusețează\" pentru a forma cu indentarea corectă",
+                "<strong>Minifică:<\/strong> Fă clic pe \"Minifică\" pentru a comprima și elimina spațiile albe",
+                "<strong>Vizualizare Arbore:<\/strong> Vezi structura ierarhică în format de vizualizare arbore"
             ],
             "tips_title": "💡 Cele Mai Bune Practici JSON",
             "tips_list": [
-                "<strong>Folosește ghilimele duble:</strong> JSON necesită ghilimele duble pentru șiruri, nu ghilimele simple",
-                "<strong>Fără virgule la sfârșit:</strong> Elimină virgulele după ultimul element din obiecte și tablouri",
-                "<strong>Tipuri de date corecte:</strong> Folosește numere fără ghilimele, valori booleene ca true/false, null pentru valori goale",
-                "<strong>Validează regulat:</strong> Validează întotdeauna JSON-ul înainte de implementare sau utilizare în producție",
-                "<strong>Înfrumusețează pentru lizibilitate:</strong> Formatează JSON pentru o depanare și întreținere mai ușoară"
+                "<strong>Folosește ghilimele duble:<\/strong> JSON necesită ghilimele duble pentru șiruri, nu ghilimele simple",
+                "<strong>Fără virgule la sfârșit:<\/strong> Elimină virgulele după ultimul element din obiecte și tablouri",
+                "<strong>Tipuri de date corecte:<\/strong> Folosește numere fără ghilimele, valori booleene ca true\/false, null pentru valori goale",
+                "<strong>Validează regulat:<\/strong> Validează întotdeauna JSON-ul înainte de implementare sau utilizare în producție",
+                "<strong>Înfrumusețează pentru lizibilitate:<\/strong> Formatează JSON pentru o depanare și întreținere mai ușoară"
             ],
             "faq_title": "❓ Întrebări Frecvente",
             "faq": {
@@ -1099,12 +1099,12 @@
             "p1": "Convertorul nostru gratuit JSON în CSV este un instrument puternic conceput pentru dezvoltatori, analiști de date și profesioniști IT. Transformă ușor datele JSON structurate în fișiere CSV (Comma Separated Values) sau TSV curate și formatate. Indiferent dacă pregătești date pentru Excel, Google Sheets sau importuri în baze de date, instrumentul nostru asigură acuratețe și viteză cu procesare 100% pe partea clientului.",
             "features_title": "Caracteristici Cheie",
             "features_list": {
-                "fast": "<strong>Conversie Instantanee:</strong> Rezultate în milisecunde",
-                "secure": "<strong>Privat și Securizat:</strong> Toate datele rămân în browserul tău",
-                "format": "<strong>Aplatizare Inteligentă:</strong> Gestionează corect obiectele JSON imbricate",
-                "custom": "<strong>Delimitatori Personalizați:</strong> Alege între virgulă, punct și virgulă sau taburi",
-                "export": "<strong>Export Ușor:</strong> Copiază în clipboard sau descarcă ca .csv",
-                "free": "<strong>100% Gratuit:</strong> Fără limite, fără înregistrare necesară"
+                "fast": "<strong>Conversie Instantanee:<\/strong> Rezultate în milisecunde",
+                "secure": "<strong>Privat și Securizat:<\/strong> Toate datele rămân în browserul tău",
+                "format": "<strong>Aplatizare Inteligentă:<\/strong> Gestionează corect obiectele JSON imbricate",
+                "custom": "<strong>Delimitatori Personalizați:<\/strong> Alege între virgulă, punct și virgulă sau taburi",
+                "export": "<strong>Export Ușor:<\/strong> Copiază în clipboard sau descarcă ca .csv",
+                "free": "<strong>100% Gratuit:<\/strong> Fără limite, fără înregistrare necesară"
             },
             "uses_title": "Cazuri Comune de Utilizare",
             "uses": {
@@ -1226,10 +1226,10 @@
             },
             "how_title": "📚 Cum să folosești",
             "how_steps": [
-                "Introdu <strong>Numele Tabelului</strong> bazei de date țintă",
-                "Lipește <strong>JSON</strong>-ul tău (trebuie să fie un tablou sau un obiect)",
-                "Fă clic pe <strong>Generează SQL</strong> pentru a crea scriptul",
-                "<strong>Copiază</strong> rezultatul SQL în clipboard"
+                "Introdu <strong>Numele Tabelului<\/strong> bazei de date țintă",
+                "Lipește <strong>JSON<\/strong>-ul tău (trebuie să fie un tablou sau un obiect)",
+                "Fă clic pe <strong>Generează SQL<\/strong> pentru a crea scriptul",
+                "<strong>Copiază<\/strong> rezultatul SQL în clipboard"
             ],
             "faq_title": "❓ Întrebări Frecvente",
             "faq": {
@@ -1430,7 +1430,7 @@
                     "desc": "Transformă setările JSON în fișiere de configurare YAML."
                 },
                 "cicd": {
-                    "title": "Fluxuri CI/CD",
+                    "title": "Fluxuri CI\/CD",
                     "desc": "Pregătește definiții de pipeline YAML din date JSON."
                 },
                 "cloud": {
@@ -1536,7 +1536,7 @@
             "hero_subtitle": "Decodifică și inspectează JSON Web Tokens instantaneu",
             "p1": "Instrumentul nostru gratuit Decodor JWT îți permite să decodifici și să inspectezi JSON Web Tokens (JWT) pentru a vizualiza componentele lor: header, payload și semnătură. Perfect pentru depanarea problemelor de autentificare, înțelegerea structurii token-urilor și validarea claim-urilor JWT. Procesarea are loc local, asigurând confidențialitatea datelor tale.",
             "what_title": "🔍 Ce este JWT?",
-            "what_desc": "JSON Web Token (JWT) este un mijloc compact și sigur pentru URL de reprezentare a claim-urilor între două părți. JWT-urile constau în trei părți: Header (algoritm și tip token), Payload (date/claim-uri) și Semnătură (verificare), separate prin puncte.",
+            "what_desc": "JSON Web Token (JWT) este un mijloc compact și sigur pentru URL de reprezentare a claim-urilor între două părți. JWT-urile constau în trei părți: Header (algoritm și tip token), Payload (date\/claim-uri) și Semnătură (verificare), separate prin puncte.",
             "features_title": "✨ Caracteristici",
             "features": {
                 "instant": {
@@ -1680,7 +1680,7 @@
             "error_no_copy": "Nu există HTML de copiat. Te rugăm să convertești Markdown mai întâi.",
             "success_copy": "✓ HTML copiat în clipboard!",
             "error_no_download": "Nu există HTML de descărcat. Te rugăm să convertești Markdown mai întâi.",
-            "example": "# Bine ai venit la Markdown\n\n## Acesta este un subtitlu\n\nAcesta este un paragraf cu **text îngroșat** și *text cursiv*.\n\n### Caracteristici\n\n- Ușor de scris\n- Ușor de citit\n- Se convertește în HTML\n\n### Exemplu de Cod\n\n```javascript\nfunction salut() {\n    console.log(\"Salut, lume!\");\n}\n```\n\n> Acesta este un citat\n\n[Vizitează site-ul nostru](https://example.com)"
+            "example": "# Bine ai venit la Markdown\n\n## Acesta este un subtitlu\n\nAcesta este un paragraf cu **text îngroșat** și *text cursiv*.\n\n### Caracteristici\n\n- Ușor de scris\n- Ușor de citit\n- Se convertește în HTML\n\n### Exemplu de Cod\n\n```javascript\nfunction salut() {\n    console.log(\"Salut, lume!\");\n}\n```\n\n> Acesta este un citat\n\n[Vizitează site-ul nostru](https:\/\/example.com)"
         }
     },
     "md5-generator": {
@@ -1705,20 +1705,20 @@
             "what_desc": "MD5 este o funcție de hash criptografică care preia o intrare de orice lungime și produce o valoare fixă de 128 biți, reprezentată de obicei ca un număr hexazecimal de 32 de caractere. Aceeași intrare produce întotdeauna același hash, dar chiar și o schimbare minoră în intrare creează un hash complet diferit.",
             "features_title": "✅ Avantajele MD5",
             "features": {
-                "fast": "<strong>Procesare Rapidă:</strong> Generare extrem de rapidă a hash-ului",
-                "fixed": "<strong>Lungime Fixă:</strong> Produce întotdeauna un rezultat de 128 biți",
-                "deterministic": "<strong>Deterministic:</strong> Aceeași intrare = același hash",
-                "support": "<strong>Suport Larg:</strong> Disponibil în toate limbajele de programare"
+                "fast": "<strong>Procesare Rapidă:<\/strong> Generare extrem de rapidă a hash-ului",
+                "fixed": "<strong>Lungime Fixă:<\/strong> Produce întotdeauna un rezultat de 128 biți",
+                "deterministic": "<strong>Deterministic:<\/strong> Aceeași intrare = același hash",
+                "support": "<strong>Suport Larg:<\/strong> Disponibil în toate limbajele de programare"
             },
             "uses_title": "📊 Cazuri Comune de Utilizare",
             "uses": {
-                "verify": "<strong>Verificarea Fișierelor:</strong> Verifică integritatea fișierelor",
-                "checksum": "<strong>Checksum-uri:</strong> Verifică descărcările",
-                "cache": "<strong>Chei de Cache:</strong> Generează identificatori unici",
-                "integrity": "<strong>Integritatea Datelor:</strong> Detectează modificările"
+                "verify": "<strong>Verificarea Fișierelor:<\/strong> Verifică integritatea fișierelor",
+                "checksum": "<strong>Checksum-uri:<\/strong> Verifică descărcările",
+                "cache": "<strong>Chei de Cache:<\/strong> Generează identificatori unici",
+                "integrity": "<strong>Integritatea Datelor:<\/strong> Detectează modificările"
             },
             "warning_title": "⚠️ Avertisment de Securitate",
-            "warning_desc": "<strong>NU folosi MD5 pentru hashing-ul parolelor sau aplicații critice de securitate!</strong> MD5 este considerat nesigur din punct de vedere criptografic. Pentru parole, folosește algoritmi moderni precum bcrypt, Argon2 sau PBKDF2.",
+            "warning_desc": "<strong>NU folosi MD5 pentru hashing-ul parolelor sau aplicații critice de securitate!<\/strong> MD5 este considerat nesigur din punct de vedere criptografic. Pentru parole, folosește algoritmi moderni precum bcrypt, Argon2 sau PBKDF2.",
             "compare_title": "🔄 MD5 vs Alte Funcții de Hash",
             "compare": {
                 "md5": {
@@ -1991,7 +1991,7 @@
             "examples_title": "💡 Exemple Unicode",
             "examples": {
                 "simple": {
-                    "title": "Simplu/ASCII:",
+                    "title": "Simplu\/ASCII:",
                     "desc": "Original: \"A\" → Codificat: \"\\u0041\""
                 },
                 "special": {
@@ -2008,7 +2008,7 @@
                 "q1": "De ce să folosesc secvențe de escape Unicode?",
                 "a1": "Acestea îți permit să reprezinți orice caracter folosind doar caractere ASCII, asigurând compatibilitatea pe diverse sisteme și transferuri de fișiere.",
                 "q2": "Ce format este utilizat?",
-                "a2": "Acest instrument folosește stilul JavaScript/JSON \\uXXXX pentru caracterele de bază.",
+                "a2": "Acest instrument folosește stilul JavaScript\/JSON \\uXXXX pentru caracterele de bază.",
                 "q3": "Este diferit de codificarea URL?",
                 "a3": "Da. Codificarea URL folosește valori hex %XX. Escaparea Unicode folosește \\uXXXX și este utilizată în codul sursă.",
                 "q4": "Sunt datele mele în siguranță?",
@@ -2035,7 +2035,7 @@
             "btn_encode": "Codifică URL",
             "btn_decode": "Decodifică URL",
             "label_input_encode": "Introdu URL-ul pentru codificare",
-            "ph_input": "https://example.com/cautare?nume=Ion Popescu&varsta=30",
+            "ph_input": "https:\/\/example.com\/cautare?nume=Ion Popescu&varsta=30",
             "btn_process_encode": "Codifică URL",
             "btn_clear": "Șterge",
             "btn_copy": "Copiază",
@@ -2123,7 +2123,7 @@
                 },
                 "step5": {
                     "title": "Utilizează Oriunde",
-                    "desc": "Lipește URL-ul codificat/decodificat în aplicația ta"
+                    "desc": "Lipește URL-ul codificat\/decodificat în aplicația ta"
                 }
             },
             "examples_title": "💡 Exemple de Codificare URL",
@@ -2138,7 +2138,7 @@
                 },
                 "full": {
                     "title": "URL Complet:",
-                    "desc": "Original: \"https://example.com/search?q=salut lume\" → Codificat: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dsalut%20lume\""
+                    "desc": "Original: \"https:\/\/example.com\/search?q=salut lume\" → Codificat: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dsalut%20lume\""
                 }
             },
             "faq_title": "❓ Întrebări Frecvente",
@@ -2146,11 +2146,11 @@
                 "q1": "Când ar trebui să codific URL-urile?",
                 "a1": "Codifică URL-urile atunci când le trimiți ca parametri de interogare, le stochezi în baze de date sau conțin caractere speciale.",
                 "q2": "Ce caractere necesită codificare?",
-                "a2": "Caracterele rezervate precum : / ? # [ ] @ ! $ & ' ( ) * + , ; = și caracterele nesigure precum spațiile și non-ASCII.",
+                "a2": "Caracterele rezervate precum : \/ ? # [ ] @ ! $ & ' ( ) * + , ; = și caracterele nesigure precum spațiile și non-ASCII.",
                 "q3": "Este codificarea URL la fel ca Base64?",
                 "a3": "Nu. Codificarea URL transformă caractere specifice în format %XX, în timp ce Base64 codifică datele într-un set diferit de caractere.",
                 "q4": "Pot codifica URL-uri întregi?",
-                "a4": "Da, dar de obicei codifici doar partea de parametri. Codificarea întregului URL (inclusiv https://) este mai puțin comună.",
+                "a4": "Da, dar de obicei codifici doar partea de parametri. Codificarea întregului URL (inclusiv https:\/\/) este mai puțin comună.",
                 "q5": "Sunt datele mele în siguranță?",
                 "a5": "Da! Toată codificarea și decodificarea au loc în browserul tău folosind JavaScript."
             }
@@ -2197,8 +2197,8 @@
         },
         "editor": {
             "label_input": "Intrare XML",
-            "ph_input": "<root><copil>valoare</copil></root>",
-            "btn_format": "Formatează / Înfrumusețează",
+            "ph_input": "<root><copil>valoare<\/copil><\/root>",
+            "btn_format": "Formatează \/ Înfrumusețează",
             "btn_minify": "Minifică",
             "btn_copy": "Copiază"
         },
@@ -2222,7 +2222,7 @@
             "btn_copy": "Copiază",
             "btn_example": "Încarcă Exemplu",
             "label_input": "Introdu XML",
-            "ph_input": "<data><row><nume>Ion</nume><varsta>30</varsta></row></data>",
+            "ph_input": "<data><row><nume>Ion<\/nume><varsta>30<\/varsta><\/row><\/data>",
             "label_output": "Rezultat CSV",
             "ph_output": "Codul CSV convertit va apărea aici..."
         },
@@ -2350,7 +2350,7 @@
             "btn_example": "Încarcă Exemplu",
             "btn_clear": "Șterge",
             "label_input": "Intrare XML",
-            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Lipește XML-ul tău aici...</item>\n</root>",
+            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Lipește XML-ul tău aici...<\/item>\n<\/root>",
             "label_output": "Ieșire JSON",
             "ph_output": "Codul JSON convertit va apărea aici..."
         },
@@ -2486,7 +2486,7 @@
         },
         "content": {
             "h2": "Despre Convertorul YAML în JSON",
-            "p1": "Convertește fișierele de configurare YAML în format JSON instantaneu cu convertorul nostru online gratuit. Perfect pentru dezvoltatori, conducte CI/CD și transformarea datelor.",
+            "p1": "Convertește fișierele de configurare YAML în format JSON instantaneu cu convertorul nostru online gratuit. Perfect pentru dezvoltatori, conducte CI\/CD și transformarea datelor.",
             "features_title": "✨ Caracteristici Principale",
             "features": {
                 "syntax": {
@@ -2521,7 +2521,7 @@
                     "desc": "Convertește fișierele de configurare YAML în JSON pentru aplicații."
                 },
                 "pipeline": {
-                    "title": "Conducte CI/CD",
+                    "title": "Conducte CI\/CD",
                     "desc": "Transformă configurațiile de conducte YAML în format JSON."
                 },
                 "k8s": {

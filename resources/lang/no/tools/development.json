@@ -22,7 +22,7 @@
         },
         "content": {
             "what_title": "Hva er Base64-koding?",
-            "what_desc": "Base64 er et binært-til-tekst-kodingsskjema som representerer binære data i et ASCII-strengformat. Det brukes ofte til å kode data som må lagres eller overføres over medier designet for å håndtere tekst. Vårt gratis Base64-koder- og dekoderverktøy lar utviklere, dataanalytikere og IT-fagfolk raskt konvertere tekst til Base64 eller dekode Base64-strenger tilbake til lesbar tekst. Perfekt for API-utvikling, dataoverføring, e-postvedlegg, innebygging av bilder i HTML/CSS og håndtering av binære data i JSON.",
+            "what_desc": "Base64 er et binært-til-tekst-kodingsskjema som representerer binære data i et ASCII-strengformat. Det brukes ofte til å kode data som må lagres eller overføres over medier designet for å håndtere tekst. Vårt gratis Base64-koder- og dekoderverktøy lar utviklere, dataanalytikere og IT-fagfolk raskt konvertere tekst til Base64 eller dekode Base64-strenger tilbake til lesbar tekst. Perfekt for API-utvikling, dataoverføring, e-postvedlegg, innebygging av bilder i HTML\/CSS og håndtering av binære data i JSON.",
             "features": {
                 "secure": {
                     "title": "Sikker koding",
@@ -38,7 +38,7 @@
                 }
             },
             "how_to": {
-                "title": "Slik bruker du Base64-koder/dekoder",
+                "title": "Slik bruker du Base64-koder\/dekoder",
                 "encode": {
                     "title": "Koding av tekst",
                     "step1": "Klikk på \"Encode to Base64\"-fanen",
@@ -79,14 +79,14 @@
                 "desc": "Base64 er et binært-til-tekst-kodingsskjema som konverterer binære data til ASCII-tekstformat. Vår gratis Base64 Encoder & Decoder hjelper utviklere, systemadministratorer og IT-fagfolk med å kode tekst til Base64 eller dekode Base64 tilbake til lesbar tekst umiddelbart. Perfekt for API-autentisering, data-URIer, e-postvedlegg og sikker dataoverføring. All behandling skjer i nettleseren din for fullstendig personvern.",
                 "works_title": "🔄 Hvordan Base64 fungerer",
                 "works_encoding": "Konverterer binære data til ASCII-tekst med 64 tegn",
-                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (og = for utfylling)",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, \/ (og = for utfylling)",
                 "works_decoding": "Konverterer Base64-tekst tilbake til originale binære data",
                 "works_decoding_sub": "Reverserer kodingsprosessen perfekt",
                 "cases_title": "✅ Vanlige brukstilfeller",
                 "case_api": "API-autentisering",
                 "case_api_desc": "Kod inn legitimasjon for Basic Auth i HTTP-hoder",
                 "case_uri": "Data-URIer",
-                "case_uri_desc": "Legg inn bilder og filer direkte i HTML/CSS",
+                "case_uri_desc": "Legg inn bilder og filer direkte i HTML\/CSS",
                 "case_email": "E-postvedlegg",
                 "case_email_desc": "Kode binære filer for e-postoverføring",
                 "case_url": "URL-parametere",
@@ -101,13 +101,13 @@
                     "Ikke egnet for kryptering - bruk riktige krypteringsalgoritmer",
                     "Perfekt for koding av binære data i kun tekstsystemer",
                     "Valider alltid dekodede data før du bruker dem",
-                    "Bruk URL-sikker Base64 for URL-er (erstatter +/= med -_)"
+                    "Bruk URL-sikker Base64 for URL-er (erstatter +\/= med -_)"
                 ]
             },
             "faq": {
                 "title": "❓ Ofte stilte spørsmål",
                 "q1": "Er Base64-koding sikker?",
-                "a1": "Ingen! Base64 er IKKE kryptering - det er ganske enkelt koding. Alle kan dekode Base64-data umiddelbart. Bruk aldri Base64 alene for sikkerhets skyld. For kryptering, bruk riktige kryptografiske algoritmer som AES, RSA eller TLS/SSL.",
+                "a1": "Ingen! Base64 er IKKE kryptering - det er ganske enkelt koding. Alle kan dekode Base64-data umiddelbart. Bruk aldri Base64 alene for sikkerhets skyld. For kryptering, bruk riktige kryptografiske algoritmer som AES, RSA eller TLS\/SSL.",
                 "q2": "Hvorfor øker Base64 filstørrelsen?",
                 "a2": "Base64-koding øker datastørrelsen med omtrent 33 % fordi den representerer 3 byte med binære data ved bruk av 4 ASCII-tegn. Denne overheaden er avveiningen for å gjøre binære data trygge for kun tekstsystemer.",
                 "q3": "Hva brukes Base64 til?",
@@ -115,7 +115,7 @@
                 "q4": "Sendes dataene mine til en server?",
                 "a4": "Ingen! All Base64-koding og dekoding skjer utelukkende i nettleseren din ved å bruke JavaScript. Dataene dine forlater aldri enheten din og blir ikke lagret, overført eller logget noe sted. Personvernet ditt er fullstendig beskyttet.",
                 "q5": "Kan jeg kode bilder til Base64?",
-                "a5": "Ja! Mens verktøyet vårt koder tekst, kan du kode bilder ved hjelp av spesialiserte verktøy. Base64-kodede bilder kan bygges inn direkte i HTML/CSS ved hjelp av data-URIer (data:image/png;base64,...). Dette er nyttig for små bilder, men øker sidestørrelsen."
+                "a5": "Ja! Mens verktøyet vårt koder tekst, kan du kode bilder ved hjelp av spesialiserte verktøy. Base64-kodede bilder kan bygges inn direkte i HTML\/CSS ved hjelp av data-URIer (data:image\/png;base64,...). Dette er nyttig for små bilder, men øker sidestørrelsen."
             }
         },
         "js": {
@@ -153,10 +153,10 @@
             "btn_format": "Formater kode",
             "label_input": "Inndatakode",
             "btn_clear": "Tøm",
-            "ph_input": "// Lim inn koden din her...",
+            "ph_input": "\/\/ Lim inn koden din her...",
             "label_output": "Formatert kode",
             "btn_copy": "Kopier",
-            "ph_output": "// Formatert kode vil vises her..."
+            "ph_output": "\/\/ Formatert kode vil vises her..."
         },
         "content": {
             "hero_title": "Gratis online kodeformater",
@@ -241,9 +241,9 @@
             "choose": "-- Velg --",
             "options": {
                 "every_minute": "Hvert minutt (* * * * *)",
-                "every_5_minutes": "Hvert 5. minutt (*/5 * * * *)",
-                "every_15_minutes": "Hvert 15. minutt (*/15 * * * *)",
-                "every_30_minutes": "Hvert 30. minutt (*/30 * * * *)",
+                "every_5_minutes": "Hvert 5. minutt (*\/5 * * * *)",
+                "every_15_minutes": "Hvert 15. minutt (*\/15 * * * *)",
+                "every_30_minutes": "Hvert 30. minutt (*\/30 * * * *)",
                 "every_hour": "Hver time (0 * * * *)",
                 "every_day_midnight": "Hver dag ved midnatt (0 0 * * *)",
                 "every_week": "Hver uke (0 0 * * 0)",
@@ -260,7 +260,7 @@
             "weekday": "Ukedag",
             "every_weekday": "Every Weekday (*)",
             "command": "Kommando som skal kjøres",
-            "ph_command": "/usr/bin/php /path/to/script.php",
+            "ph_command": "\/usr\/bin\/php \/path\/to\/script.php",
             "generated_cron": "Generert Cron-uttrykk",
             "btn_copy": "Kopier Cron",
             "btn_clear": "Nullstill"
@@ -387,18 +387,18 @@
             },
             "how_title": "📚 Slik bruker du",
             "how_steps": {
-                "1": "<strong>Velg handling:</strong> Klikk på \"Minify CSS\" for å komprimere eller \"Beautify CSS\" for å formatere",
-                "2": "<strong>Se resultater:</strong> Se den behandlede CSS-en i utdatafeltet med komprimeringsstatistikk",
-                "3": "<strong>Kopier:</strong> Klikk \"Kopier\" for å kopiere den forminskede CSS-en til utklippstavlen",
-                "4": "<strong>Bruk i produksjon:</strong> Erstatt den originale CSS-filen med den forminskede versjonen",
+                "1": "<strong>Velg handling:<\/strong> Klikk på \"Minify CSS\" for å komprimere eller \"Beautify CSS\" for å formatere",
+                "2": "<strong>Se resultater:<\/strong> Se den behandlede CSS-en i utdatafeltet med komprimeringsstatistikk",
+                "3": "<strong>Kopier:<\/strong> Klikk \"Kopier\" for å kopiere den forminskede CSS-en til utklippstavlen",
+                "4": "<strong>Bruk i produksjon:<\/strong> Erstatt den originale CSS-filen med den forminskede versjonen",
                 "5": "Last ned eller kopier den forminskede CSS-en og bruk den på produksjonsnettstedet ditt for å redusere filstørrelsen og forbedre lastetidene."
             },
             "best_practices_title": "💡 Beste praksis",
             "best_practices_list": {
-                "1": "<strong>Forminsk for produksjon:</strong> Bruk kun minifisert CSS i produksjonsmiljøer",
-                "2": "<strong>Kombiner filer:</strong> Slå sammen flere CSS-filer før du forminsker for bedre komprimering",
-                "3": "<strong>Test grundig:</strong> Test alltid minifisert CSS for å sikre at ingen funksjonalitet er ødelagt",
-                "4": "<strong>Bruk byggeverktøy:</strong> Integrer minifisering i byggeprosessen for automatisering",
+                "1": "<strong>Forminsk for produksjon:<\/strong> Bruk kun minifisert CSS i produksjonsmiljøer",
+                "2": "<strong>Kombiner filer:<\/strong> Slå sammen flere CSS-filer før du forminsker for bedre komprimering",
+                "3": "<strong>Test grundig:<\/strong> Test alltid minifisert CSS for å sikre at ingen funksjonalitet er ødelagt",
+                "4": "<strong>Bruk byggeverktøy:<\/strong> Integrer minifisering i byggeprosessen for automatisering",
                 "5": "Behold en unminifisert versjon for utviklings- og feilsøkingsformål."
             },
             "faq_title": "❓ Ofte stilte spørsmål",
@@ -439,7 +439,7 @@
             "key_ph": "Nøkkel (f.eks. autorisasjon)",
             "value_ph": "Verdi (f.eks. bærertoken)",
             "add_header": "+ Legg til header",
-            "raw_data_label": "Rådata (JSON/tekst)",
+            "raw_data_label": "Rådata (JSON\/tekst)",
             "generated_label": "Generert kommando",
             "btn_copy": "Kopier kommando"
         },
@@ -458,7 +458,7 @@
             "mode_encode": "Kod HTML",
             "mode_decode": "Dekod HTML",
             "label_input_encode": "Skriv inn HTML for å kode",
-            "ph_input_encode": "<div>Hei og velkommen</div>",
+            "ph_input_encode": "<div>Hei og velkommen<\/div>",
             "btn_encode": "Kod HTML",
             "btn_clear": "Tøm",
             "btn_copy": "Kopier",
@@ -525,7 +525,7 @@
                 "1": "Lim inn HTML eller tekst i inndatafeltet",
                 "2": "Klikk på prosessknappen for å konvertere",
                 "3": "Kopier resultatet til utklippstavlen",
-                "4": "Kopier det kodede/dekodede resultatet og bruk det i HTML-, XML- eller nettapplikasjonene dine."
+                "4": "Kopier det kodede\/dekodede resultatet og bruk det i HTML-, XML- eller nettapplikasjonene dine."
             },
             "examples_title": "💡 HTML-kodingseksempler",
             "examples": {
@@ -539,7 +539,7 @@
                 },
                 "3": {
                     "title": "Koding av spesialtegn",
-                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;\/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;\/script&amp;gt;"
                 }
             },
             "faq_title": "â“ Vanlige spørsmål",
@@ -584,12 +584,12 @@
             "why_desc": "Å forminske HTML er viktig for optimalisering av nettytelse. Mindre HTML-filer betyr raskere nedlastinger, redusert båndbreddebruk og forbedret sideinnlastingstid. Dette er spesielt gunstig for store nettsteder med mye HTML-innhold. Minifisert HTML reduserer serverbelastningen og forbedrer brukeropplevelsen.",
             "features_title": "Nøkkelfunksjoner",
             "features_list": {
-                "minify": "<strong>Forminsk HTML:</strong> Fjern mellomrom og kommentarer for å redusere filstørrelsen",
-                "beautify": "<strong>Forskjønn HTML:</strong> Formater HTML med riktig innrykk",
-                "instant": "<strong>Øyeblikkelige resultater:</strong> Behandle HTML i sanntid",
-                "copy": "<strong>Kopiering:</strong> Kopier enkelt forminsket HTML",
-                "secure": "<strong>Sikker og privat:</strong> All behandling i nettleseren",
-                "free": "<strong>Gratis å bruke:</strong> Ingen registrering nødvendig"
+                "minify": "<strong>Forminsk HTML:<\/strong> Fjern mellomrom og kommentarer for å redusere filstørrelsen",
+                "beautify": "<strong>Forskjønn HTML:<\/strong> Formater HTML med riktig innrykk",
+                "instant": "<strong>Øyeblikkelige resultater:<\/strong> Behandle HTML i sanntid",
+                "copy": "<strong>Kopiering:<\/strong> Kopier enkelt forminsket HTML",
+                "secure": "<strong>Sikker og privat:<\/strong> All behandling i nettleseren",
+                "free": "<strong>Gratis å bruke:<\/strong> Ingen registrering nødvendig"
             },
             "how_title": "Hvordan bruke",
             "how_steps": {
@@ -643,11 +643,11 @@
             "about_p1": "Konverter HTML-kode til rent, lesbart Markdown-format umiddelbart med vår gratis online HTML til Markdown-konverterer. Perfekt for utviklere, tekniske skribenter og innholdsskapere som trenger å transformere HTML-innhold til Markdown for dokumentasjon, README-filer eller innholdsstyringssystemer.",
             "features_title": "✨ Nøkkelfunksjoner",
             "features_list": {
-                "1": "✅ <strong>Bevar formatering:</strong> Opprettholder overskrifter, lister, koblinger og vektlegging",
-                "2": "✅ <strong>Ren utgang:</strong> Genererer lesbar, godt formatert Markdown",
-                "3": "✅ <strong>Ingen installasjon:</strong> Fungerer direkte i nettleseren din",
-                "4": "✅ <strong>Gratis for alltid:</strong> 100 % gratis uten begrensninger",
-                "5": "✅ <strong>Personvern først:</strong> All konvertering skjer lokalt i nettleseren din",
+                "1": "✅ <strong>Bevar formatering:<\/strong> Opprettholder overskrifter, lister, koblinger og vektlegging",
+                "2": "✅ <strong>Ren utgang:<\/strong> Genererer lesbar, godt formatert Markdown",
+                "3": "✅ <strong>Ingen installasjon:<\/strong> Fungerer direkte i nettleseren din",
+                "4": "✅ <strong>Gratis for alltid:<\/strong> 100 % gratis uten begrensninger",
+                "5": "✅ <strong>Personvern først:<\/strong> All konvertering skjer lokalt i nettleseren din",
                 "6": "Bevarer kodeblokker og syntaksutheving for teknisk dokumentasjon."
             },
             "uses_title": "🎯 Vanlige brukstilfeller",
@@ -748,13 +748,13 @@
             "why_desc": "Vår gratis HTML-viewer tilbyr flere fordeler for utviklere og designere. For det første gir den umiddelbar visuell tilbakemelding uten å måtte lage filer eller sette opp et utviklingsmiljø. For det andre er den fullstendig nettleserbasert, noe som betyr at du kan bruke den hvor som helst uten å installere programvare. For det tredje er den perfekt for rask testing, feilsøking og læring av HTML. Side-ved-side-visningen lar deg se koden og dens utdata samtidig, noe som gjør det lettere å forstå hvordan HTML-elementer gjengis.",
             "features_title": "Nøkkelfunksjoner",
             "features_list": {
-                "preview": "<strong>Forhåndsvisning i sanntid:</strong> Se HTML-koden din gjengis umiddelbart mens du skriver",
-                "layout": "<strong>Side-til-side-visning:</strong> Koderedigering og forhåndsvisningsrute vises sammen",
-                "syntax": "<strong>Syntaksutheving:</strong> Lett å lese kode med fargekodet syntaks",
-                "sample": "<strong>Eksempelkode:</strong> Last inn eksempel-HTML for å komme raskt i gang",
-                "no_install": "<strong>Ingen installasjon kreves:</strong> Fungerer direkte i nettleseren din",
-                "free": "<strong>Gratis å bruke:</strong> Ingen registrering eller betaling kreves",
-                "secure": "<strong>Sikker:</strong> All behandling skjer i nettleseren din"
+                "preview": "<strong>Forhåndsvisning i sanntid:<\/strong> Se HTML-koden din gjengis umiddelbart mens du skriver",
+                "layout": "<strong>Side-til-side-visning:<\/strong> Koderedigering og forhåndsvisningsrute vises sammen",
+                "syntax": "<strong>Syntaksutheving:<\/strong> Lett å lese kode med fargekodet syntaks",
+                "sample": "<strong>Eksempelkode:<\/strong> Last inn eksempel-HTML for å komme raskt i gang",
+                "no_install": "<strong>Ingen installasjon kreves:<\/strong> Fungerer direkte i nettleseren din",
+                "free": "<strong>Gratis å bruke:<\/strong> Ingen registrering eller betaling kreves",
+                "secure": "<strong>Sikker:<\/strong> All behandling skjer i nettleseren din"
             },
             "how_title": "Hvordan bruke HTML Viewer",
             "how_steps": {
@@ -808,12 +808,12 @@
             "why_desc": "Å forminske JavaScript er avgjørende for optimalisering av nettytelse. Mindre JS-filer betyr raskere nedlastinger, redusert båndbreddebruk og forbedret sideinnlastingstid. Dette er spesielt viktig for mobilbrukere og brukere med tregere internettforbindelser. Forminsket JavaScript reduserer serverbelastningen og forbedrer brukeropplevelsen. For produksjonsnettsteder er minifisering en standard beste fremgangsmåte som kan forbedre Core Web Vitals-poengsummen betydelig.",
             "features_title": "Nøkkelfunksjoner",
             "features_list": {
-                "minify": "<strong>Forminsk JavaScript:</strong> Fjern mellomrom og kommentarer for å redusere filstørrelsen",
-                "beautify": "<strong>Forskjønn JavaScript:</strong> Formater JS med riktig innrykk",
-                "instant": "<strong>Øyeblikkelige resultater:</strong> Behandle JavaScript i sanntid",
-                "copy": "<strong>Kopiering:</strong> Kopier enkelt forminsket JavaScript",
-                "secure": "<strong>Sikker og privat:</strong> All behandling i nettleseren",
-                "free": "<strong>Gratis å bruke:</strong> Ingen registrering nødvendig"
+                "minify": "<strong>Forminsk JavaScript:<\/strong> Fjern mellomrom og kommentarer for å redusere filstørrelsen",
+                "beautify": "<strong>Forskjønn JavaScript:<\/strong> Formater JS med riktig innrykk",
+                "instant": "<strong>Øyeblikkelige resultater:<\/strong> Behandle JavaScript i sanntid",
+                "copy": "<strong>Kopiering:<\/strong> Kopier enkelt forminsket JavaScript",
+                "secure": "<strong>Sikker og privat:<\/strong> All behandling i nettleseren",
+                "free": "<strong>Gratis å bruke:<\/strong> Ingen registrering nødvendig"
             },
             "how_title": "Hvordan bruke",
             "how_steps": [
@@ -908,7 +908,7 @@
                     "desc": "Formater JSON-data fra NoSQL-databaser som MongoDB, CouchDB og Firebase for bedre lesbarhet."
                 },
                 "export": {
-                    "title": "Dataeksport/import",
+                    "title": "Dataeksport\/import",
                     "desc": "Klargjør JSON-data for eksport eller valider importerte JSON-data for å sikre riktig struktur og syntaks."
                 }
             },
@@ -1030,19 +1030,19 @@
             },
             "how_title": "📚 Slik bruker du",
             "how_steps": [
-                "<strong>Lim inn JSON:</strong> Kopier og lim inn JSON-dataene dine i inndatafeltet",
-                "<strong>Parse:</strong> Klikk \"Parse JSON\" for å validere og visualisere strukturen",
-                "<strong>Forskjønn:</strong> Klikk \"Forskjønn\" for å formatere med riktig innrykk",
-                "<strong>Forminsk:</strong> Klikk \"Forminsk\" for å komprimere og fjerne mellomrom",
-                "<strong>Vis tre:</strong> Se den hierarkiske strukturen i trevisningsformat"
+                "<strong>Lim inn JSON:<\/strong> Kopier og lim inn JSON-dataene dine i inndatafeltet",
+                "<strong>Parse:<\/strong> Klikk \"Parse JSON\" for å validere og visualisere strukturen",
+                "<strong>Forskjønn:<\/strong> Klikk \"Forskjønn\" for å formatere med riktig innrykk",
+                "<strong>Forminsk:<\/strong> Klikk \"Forminsk\" for å komprimere og fjerne mellomrom",
+                "<strong>Vis tre:<\/strong> Se den hierarkiske strukturen i trevisningsformat"
             ],
             "tips_title": "💡 JSON beste fremgangsmåter",
             "tips_list": [
-                "<strong>Bruk doble anførselstegn:</strong> JSON krever doble anførselstegn for strenger, ikke enkle anførselstegn",
-                "<strong>Ingen etterfølgende kommaer:</strong> Fjern kommaer etter det siste elementet i objekter og matriser",
-                "<strong>Riktige datatyper:</strong> Bruk tall uten anførselstegn, booleaner som sant/usant, null for tomme verdier",
-                "<strong>Valider regelmessig:</strong> Valider alltid JSON før distribusjon eller produksjonsbruk",
-                "<strong>Forskjønne for lesbarhet:</strong> Formater JSON for enklere feilsøking og vedlikehold"
+                "<strong>Bruk doble anførselstegn:<\/strong> JSON krever doble anførselstegn for strenger, ikke enkle anførselstegn",
+                "<strong>Ingen etterfølgende kommaer:<\/strong> Fjern kommaer etter det siste elementet i objekter og matriser",
+                "<strong>Riktige datatyper:<\/strong> Bruk tall uten anførselstegn, booleaner som sant\/usant, null for tomme verdier",
+                "<strong>Valider regelmessig:<\/strong> Valider alltid JSON før distribusjon eller produksjonsbruk",
+                "<strong>Forskjønne for lesbarhet:<\/strong> Formater JSON for enklere feilsøking og vedlikehold"
             ],
             "faq_title": "❓ Ofte stilte spørsmål",
             "faq": {
@@ -1099,12 +1099,12 @@
             "p1": "Vår gratis JSON til CSV-konverterer er et kraftig verktøy designet for utviklere, dataanalytikere og IT-fagfolk. Transformer enkelt strukturerte JSON-data til rene, formaterte CSV- (Comma Separated Values) eller TSV-filer. Enten du forbereder data for Excel, Google Sheets eller databaseimport, sikrer verktøyet vårt nøyaktighet og hastighet med 100 % behandling på klientsiden.",
             "features_title": "Nøkkelfunksjoner",
             "features_list": {
-                "fast": "<strong>Øyeblikkelig konvertering:</strong> Resultater i millisekunder",
-                "secure": "<strong>Privat og sikkert:</strong> Alle data forblir i nettleseren din",
-                "format": "<strong>Smart flattening:</strong> Håndterer nestede JSON-objekter på riktig måte",
-                "custom": "<strong>Egendefinerte skilletegn:</strong> Velg mellom komma, semikolon eller tabulatorer",
-                "export": "<strong>Enkel eksport:</strong> Kopier til utklippstavlen eller last ned som .csv",
-                "free": "<strong>100 % gratis:</strong> Ingen grenser, ingen registrering nødvendig"
+                "fast": "<strong>Øyeblikkelig konvertering:<\/strong> Resultater i millisekunder",
+                "secure": "<strong>Privat og sikkert:<\/strong> Alle data forblir i nettleseren din",
+                "format": "<strong>Smart flattening:<\/strong> Håndterer nestede JSON-objekter på riktig måte",
+                "custom": "<strong>Egendefinerte skilletegn:<\/strong> Velg mellom komma, semikolon eller tabulatorer",
+                "export": "<strong>Enkel eksport:<\/strong> Kopier til utklippstavlen eller last ned som .csv",
+                "free": "<strong>100 % gratis:<\/strong> Ingen grenser, ingen registrering nødvendig"
             },
             "uses_title": "Vanlige brukstilfeller",
             "uses": {
@@ -1226,10 +1226,10 @@
             },
             "how_title": "Hvordan bruke",
             "how_steps": [
-                "Angi måldatabasen <strong>Tabellnavn</strong>",
-                "Lim inn <strong>JSON</strong> (må være en matrise eller et objekt)",
-                "Klikk <strong>Generer SQL</strong> for å lage skriptet",
-                "<strong>Kopier</strong> SQL-utdataene til utklippstavlen"
+                "Angi måldatabasen <strong>Tabellnavn<\/strong>",
+                "Lim inn <strong>JSON<\/strong> (må være en matrise eller et objekt)",
+                "Klikk <strong>Generer SQL<\/strong> for å lage skriptet",
+                "<strong>Kopier<\/strong> SQL-utdataene til utklippstavlen"
             ],
             "faq_title": "Ofte stilte spørsmål",
             "faq": {
@@ -1430,7 +1430,7 @@
                     "desc": "Transformer JSON-innstillinger til YAML-konfigurasjonsfiler."
                 },
                 "cicd": {
-                    "title": "CI/CD rørledninger",
+                    "title": "CI\/CD rørledninger",
                     "desc": "Forbered YAML-rørledningsdefinisjoner fra JSON-data."
                 },
                 "cloud": {
@@ -1536,7 +1536,7 @@
             "hero_subtitle": "Dekode og inspiser JSON Web Tokens umiddelbart",
             "p1": "Vårt gratis JWT-dekoderverktøy lar deg dekode og inspisere JSON Web Tokens (JWT) for å se overskriften, nyttelasten og signaturkomponentene deres. Perfekt for å feilsøke autentiseringsproblemer, forstå tokenstruktur og validere JWT-påstander.",
             "what_title": "ðŸ” Hva er JWT?",
-            "what_desc": "JSON Web Token (JWT) er en kompakt, URL-sikker måte å representere krav mellom to parter. JWT-er består av tre deler: Header (algoritme og tokentype), nyttelast (krav/data) og signatur (verifisering), atskilt med prikker.",
+            "what_desc": "JSON Web Token (JWT) er en kompakt, URL-sikker måte å representere krav mellom to parter. JWT-er består av tre deler: Header (algoritme og tokentype), nyttelast (krav\/data) og signatur (verifisering), atskilt med prikker.",
             "features_title": "âœ¨ Funksjoner",
             "features": {
                 "instant": {
@@ -1680,7 +1680,7 @@
             "error_no_copy": "Ingen HTML å kopiere. Vennligst konverter Markdown først.",
             "success_copy": "HTML kopiert til utklippstavlen!",
             "error_no_download": "Ingen HTML å laste ned. Vennligst konverter Markdown først.",
-            "example": "# Velkommen til Markdown\n\n## Dette er en underoverskrift\n\nDette er et avsnitt med **fet tekst** og *kursiv tekst*.\n\n### Funksjoner\n\n– Lett å skrive\n- Lett å lese\n- Konverterer til HTML\n\n### Kodeeksempel\n\n```javascript\nfunksjon hei() {\n    console.log(\"Hei, verden!\");\n}\n```\n\n> Dette er et blokksitat\n\n[Besøk nettstedet vårt](https://example.com)"
+            "example": "# Velkommen til Markdown\n\n## Dette er en underoverskrift\n\nDette er et avsnitt med **fet tekst** og *kursiv tekst*.\n\n### Funksjoner\n\n– Lett å skrive\n- Lett å lese\n- Konverterer til HTML\n\n### Kodeeksempel\n\n```javascript\nfunksjon hei() {\n    console.log(\"Hei, verden!\");\n}\n```\n\n> Dette er et blokksitat\n\n[Besøk nettstedet vårt](https:\/\/example.com)"
         }
     },
     "md5-generator": {
@@ -1705,20 +1705,20 @@
             "what_desc": "MD5 er en kryptografisk hash-funksjon som tar inn en hvilken som helst lengde og produserer en fast 128-bits hash-verdi, typisk representert som et 32-tegns heksadesimalt tall. Den samme inngangen produserer alltid samme hash, men selv en liten endring i input skaper en helt annen hash.",
             "features_title": "âœ... MD5 Fordeler",
             "features": {
-                "fast": "<strong>Rask behandling:</strong> Ekstremt rask hashgenerering",
-                "fixed": "<strong>Fast lengde:</strong> Gir alltid 128-bits utdata",
-                "deterministic": "<strong>Deterministisk:</strong> Samme inndata = samme hash",
-                "support": "<strong>Bred støtte:</strong> Tilgjengelig på alle programmeringsspråk"
+                "fast": "<strong>Rask behandling:<\/strong> Ekstremt rask hashgenerering",
+                "fixed": "<strong>Fast lengde:<\/strong> Gir alltid 128-bits utdata",
+                "deterministic": "<strong>Deterministisk:<\/strong> Samme inndata = samme hash",
+                "support": "<strong>Bred støtte:<\/strong> Tilgjengelig på alle programmeringsspråk"
             },
             "uses_title": "📊 Vanlige brukstilfeller",
             "uses": {
-                "verify": "<strong>Filbekreftelse:</strong> Sjekk filens integritet",
-                "checksum": "<strong>Sjekksummer:</strong> Bekreft nedlastinger",
-                "cache": "<strong>Buffernøkler:</strong> Generer unike identifikatorer",
-                "integrity": "<strong>Dataintegritet:</strong> Oppdag endringer"
+                "verify": "<strong>Filbekreftelse:<\/strong> Sjekk filens integritet",
+                "checksum": "<strong>Sjekksummer:<\/strong> Bekreft nedlastinger",
+                "cache": "<strong>Buffernøkler:<\/strong> Generer unike identifikatorer",
+                "integrity": "<strong>Dataintegritet:<\/strong> Oppdag endringer"
             },
             "warning_title": "âš ï¸ Sikkerhetsadvarsel",
-            "warning_desc": "<strong>IKKE bruk MD5 til passordhashing eller sikkerhetskritiske applikasjoner!</strong> MD5 er kryptografisk ødelagt og sårbar for kollisjonsangrep. For passordhashing, bruk moderne algoritmer som bcrypt, Argon2 eller PBKDF2.",
+            "warning_desc": "<strong>IKKE bruk MD5 til passordhashing eller sikkerhetskritiske applikasjoner!<\/strong> MD5 er kryptografisk ødelagt og sårbar for kollisjonsangrep. For passordhashing, bruk moderne algoritmer som bcrypt, Argon2 eller PBKDF2.",
             "compare_title": "ðŸ”„ MD5 vs andre hasjfunksjoner",
             "compare": {
                 "md5": {
@@ -1935,7 +1935,7 @@
                 },
                 "copy": {
                     "title": "Ett-klikks Kopier",
-                    "desc": "Kopier kodet/dekodet tekst umiddelbart"
+                    "desc": "Kopier kodet\/dekodet tekst umiddelbart"
                 },
                 "free": {
                     "title": "100 % gratis",
@@ -1991,7 +1991,7 @@
             "examples_title": "Unicode-eksempler",
             "examples": {
                 "simple": {
-                    "title": "Enkel/ASCII:",
+                    "title": "Enkel\/ASCII:",
                     "desc": "Original: \"A\" â†’ Kodet: \"\\u0041\""
                 },
                 "special": {
@@ -1999,7 +1999,7 @@
                     "desc": "Original: «Â©» â†’ Kodet: «\\u00A9»"
                 },
                 "emoji": {
-                    "title": "Emojis/Multi-byte:",
+                    "title": "Emojis\/Multi-byte:",
                     "desc": "Original: \"ðŸŒŸ\" â†’ Kodet: \"\\uD83C\\uDF1F\" (surrogatpar) eller \"\\u2B50\" avhengig av representasjon"
                 }
             },
@@ -2008,7 +2008,7 @@
                 "q1": "Hvorfor bruke Unicode-escape-sekvenser?",
                 "a1": "De lar deg representere et hvilket som helst tegn med kun ASCII-tegn, noe som sikrer kompatibilitet på tvers av forskjellige systemer, kodinger og filoverføringer som kanskje ikke håndterer rå Unicode riktig.",
                 "q2": "Hvilket format brukes?",
-                "a2": "Dette verktøyet bruker vanligvis JavaScript/JSON-stilen \\uXXXX-format for Basic Multilingual Plane-tegn.",
+                "a2": "Dette verktøyet bruker vanligvis JavaScript\/JSON-stilen \\uXXXX-format for Basic Multilingual Plane-tegn.",
                 "q3": "Er dette forskjellig fra URL-koding?",
                 "a3": "Ja. URL-koding bruker %XX hex-verdier hovedsakelig for URL-er. Unicode-escape bruker \\uXXXX og brukes i strenger i programmeringsspråk som JavaScript, Java og Python.",
                 "q4": "Er dataene mine sikre?",
@@ -2035,7 +2035,7 @@
             "btn_encode": "Kod URL",
             "btn_decode": "Dekod URL",
             "label_input_encode": "Skriv inn URL for å kode",
-            "ph_input": "https://example.com/search?name=John Doe&age=30",
+            "ph_input": "https:\/\/example.com\/search?name=John Doe&age=30",
             "btn_process_encode": "Kode URL",
             "btn_clear": "Klar",
             "btn_copy": "Kopier",
@@ -2065,7 +2065,7 @@
                 },
                 "copy": {
                     "title": "Ett-klikks Kopier",
-                    "desc": "Kopier kodede/dekodede URL-er umiddelbart"
+                    "desc": "Kopier kodede\/dekodede URL-er umiddelbart"
                 },
                 "free": {
                     "title": "100 % gratis",
@@ -2123,7 +2123,7 @@
                 },
                 "step5": {
                     "title": "Bruk hvor som helst",
-                    "desc": "Lim inn den kodede/dekodede URL-adressen i applikasjonen"
+                    "desc": "Lim inn den kodede\/dekodede URL-adressen i applikasjonen"
                 }
             },
             "examples_title": "Eksempler på URL-koding",
@@ -2138,7 +2138,7 @@
                 },
                 "full": {
                     "title": "Full URL:",
-                    "desc": "Original: \"https://example.com/search?q=hello world\" â†’ Kodet: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
+                    "desc": "Original: \"https:\/\/example.com\/search?q=hello world\" â†’ Kodet: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
                 }
             },
             "faq_title": "Ofte stilte spørsmål",
@@ -2146,11 +2146,11 @@
                 "q1": "Når bør jeg kode nettadresser?",
                 "a1": "Kode URL-er når du sender dem som søkeparametere, lagrer dem i databaser, eller når de inneholder spesialtegn som mellomrom, &, =, ? eller ikke-ASCII-tegn.",
                 "q2": "Hvilke tegn trenger koding?",
-                "a2": "Reserverte tegn som : / ? # [ ] @ ! $ & ' ( ) * + , ; = og usikre tegn som mellomrom, <, >, \", {, }, |, \\, ^, ` og ikke-ASCII-tegn må kodes.",
+                "a2": "Reserverte tegn som : \/ ? # [ ] @ ! $ & ' ( ) * + , ; = og usikre tegn som mellomrom, <, >, \", {, }, |, \\, ^, ` og ikke-ASCII-tegn må kodes.",
                 "q3": "Er URL-koding det samme som Base64?",
                 "a3": "Nei. URL-koding konverterer spesifikke tegn til %XX-format, mens Base64 koder hele data til et annet tegnsett. De tjener forskjellige formål.",
                 "q4": "Kan jeg kode hele nettadresser?",
-                "a4": "Ja, men vanligvis koder du bare søkestrengdelen. Koding av hele nettadressen inkludert protokoll (https://) er mindre vanlig og kan forårsake problemer.",
+                "a4": "Ja, men vanligvis koder du bare søkestrengdelen. Koding av hele nettadressen inkludert protokoll (https:\/\/) er mindre vanlig og kan forårsake problemer.",
                 "q5": "Er dataene mine sikre?",
                 "a5": "Ja! All koding og dekoding skjer utelukkende i nettleseren din ved bruk av JavaScript. URL-ene dine forlater aldri enheten eller blir sendt til noen server."
             }
@@ -2197,8 +2197,8 @@
         },
         "editor": {
             "label_input": "XML-inndata",
-            "ph_input": "<root><child>verdi</child></root>",
-            "btn_format": "Formater / Beautify",
+            "ph_input": "<root><child>verdi<\/child><\/root>",
+            "btn_format": "Formater \/ Beautify",
             "btn_minify": "Minifiser",
             "btn_copy": "Kopier"
         },
@@ -2222,14 +2222,14 @@
             "btn_copy": "Kopier",
             "btn_example": "Eksempel",
             "label_input": "Skriv inn XML",
-            "ph_input": "<data><row><name>John</name><age>30</age></row></data>",
+            "ph_input": "<data><row><name>John<\/name><age>30<\/age><\/row><\/data>",
             "label_output": "CSV-utgang",
             "ph_output": "Konvertert CSV vises her..."
         },
         "content": {
             "p1": "Vår gratis XML til CSV-konvertering transformerer strukturerte XML-data til kommadelte verdier. Perfekt for å importere XML-data til Excel, Google Sheets, databaser og dataanalyseverktøy. Konverter komplekse XML-strukturer til enkle, tabellformede CSV-format på sekunder.",
             "what_title": "Hva er XML til CSV-konvertering?",
-            "what_desc": "XML til CSV-konvertering transformerer strukturerte eXtensible Markup Language-data til kommadelte verdier. Mens XML er flott for komplekse datastrukturer og APIer, er CSV enklere og universelt støttet av regnearkapplikasjoner, noe som gjør den ideell for dataanalyse, rapportering og import/eksportoperasjoner.",
+            "what_desc": "XML til CSV-konvertering transformerer strukturerte eXtensible Markup Language-data til kommadelte verdier. Mens XML er flott for komplekse datastrukturer og APIer, er CSV enklere og universelt støttet av regnearkapplikasjoner, noe som gjør den ideell for dataanalyse, rapportering og import\/eksportoperasjoner.",
             "features_title": "Funksjoner",
             "features": {
                 "fast": {
@@ -2350,7 +2350,7 @@
             "btn_example": "Last eksempel",
             "btn_clear": "Klar",
             "label_input": "XML-inndata",
-            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Din XML her...</item>\n</root>",
+            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>Din XML her...<\/item>\n<\/root>",
             "label_output": "JSON-utgang",
             "ph_output": "Konvertert JSON vises her..."
         },
@@ -2486,7 +2486,7 @@
         },
         "content": {
             "h2": "Om YAML til JSON Converter",
-            "p1": "Konverter YAML-konfigurasjonsfiler til JSON-format umiddelbart med vår gratis online YAML til JSON-konverterer. Perfekt for utviklere som jobber med konfigurasjonsfiler, CI/CD-pipelines og datatransformasjon.",
+            "p1": "Konverter YAML-konfigurasjonsfiler til JSON-format umiddelbart med vår gratis online YAML til JSON-konverterer. Perfekt for utviklere som jobber med konfigurasjonsfiler, CI\/CD-pipelines og datatransformasjon.",
             "features_title": "Nøkkelfunksjoner",
             "features": {
                 "syntax": {
@@ -2521,7 +2521,7 @@
                     "desc": "Konverter YAML-konfigurasjonsfiler til JSON for applikasjoner."
                 },
                 "pipeline": {
-                    "title": "CI/CD rørledninger",
+                    "title": "CI\/CD rørledninger",
                     "desc": "Transformer YAML-pipeline-konfigurasjoner til JSON-format."
                 },
                 "k8s": {

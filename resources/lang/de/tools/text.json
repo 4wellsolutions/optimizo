@@ -13,7 +13,7 @@
             "label_output": "Bereinigter Text",
             "btn_remove": "Duplikate entfernen",
             "btn_copy": "Ergebnis kopieren",
-            "label_sensitive": "Groß-/Kleinschreibung beachten"
+            "label_sensitive": "Groß-\/Kleinschreibung beachten"
         },
         "js": {
             "removed_msg": ":count duplizierte Zeilen entfernt",
@@ -40,9 +40,6 @@
             "hero_subtitle": "Änderungen zwischen zwei Textversionen finden",
             "p1": "Mit diesem Tool können Sie zwei Textblöcke oder Dateien schnell vergleichen. Unterschiede, Löschungen und Ergänzungen werden zur einfachen Analyse hervorgehoben.",
             "features_title": "Funktionen",
-            "uses_title": "Anwendungsfälle",
-            "how_title": "Anleitung",
-            "faq_title": "Häufig gestellte Fragen",
             "features": {
                 "visual": {
                     "title": "Visueller Vergleich",
@@ -69,6 +66,7 @@
                     "desc": "Hochwertiges Dateivergleichstool kostenlos verfügbar, ohne Registrierung erforderlich."
                 }
             },
+            "uses_title": "Anwendungsfälle",
             "uses": {
                 "code": {
                     "title": "Code-Review",
@@ -95,6 +93,7 @@
                     "desc": "Vergleichen Sie Original- und übersetzte Textblöcke, um Struktur- und Längenkonsistenz sicherzustellen."
                 }
             },
+            "how_title": "Anleitung",
             "how_steps": {
                 "1": {
                     "title": "Originaltext einfügen",
@@ -113,6 +112,7 @@
                     "desc": "Sehen Sie die Ergebnisse unten. Grüne Zeilen sind hinzugefügt, rote Zeilen sind entfernt."
                 }
             },
+            "faq_title": "Häufig gestellte Fragen",
             "faq": {
                 "q1": "Sind meine Textdaten sicher?",
                 "a1": "Absolut. Dieses Tool läuft vollständig clientseitig mit JavaScript. Es werden keine Daten an unsere Server übertragen oder irgendwo gespeichert.",
@@ -256,27 +256,26 @@
                     "desc": "Nutzen Sie die entschlüsselte Nachricht"
                 }
             },
+            "examples_title": "Konvertierungsbeispiele",
             "faq_title": "❓ Häufig gestellte Fragen",
             "faq": {
                 "q1": "Wie formatiere ich die Eingabe?",
-                "a1": "Trennen Sie Buchstaben mit einem Leerzeichen und Wörter mit einem Schrägstrich (/). Beispiel: ... --- ... für SOS.",
+                "a1": "Trennen Sie Buchstaben mit einem Leerzeichen und Wörter mit einem Schrägstrich (\/). Beispiel: ... --- ... für SOS.",
                 "q2": "Was passiert bei Fehlern?",
                 "a2": "Ungültige Zeichen werden ignoriert. Achten Sie auf korrekte Abstände.",
                 "q3": "Werden Zahlen unterstützt?",
                 "a3": "Ja, das Tool erkennt Zahlen von 0 bis 9.",
                 "q4": "Wie trenne ich Wörter?",
-                "a4": "Nutzen Sie einen Schrägstrich (/) oder extra Leerzeichen für Wortabstände.",
+                "a4": "Nutzen Sie einen Schrägstrich (\/) oder extra Leerzeichen für Wortabstände.",
                 "q5": "Ist das Tool kostenlos?",
                 "a5": "Ja, komplett kostenlos und ohne Einschränkungen nutzbar."
-            },
-            "examples_title": "Konvertierungsbeispiele",
-            "samples": []
+            }
         },
         "js": {
             "error_empty": "Bitte geben Sie Morsezeichen zum Dekodieren ein",
             "success_decode": "Erfolgreich dekodiert!",
-            "success_copy": "Kopiert!",
-            "error_copy": "Fehler beim Kopieren des Textes"
+            "error_copy": "Fehler beim Kopieren des Textes",
+            "success_copy": "Kopiert!"
         }
     },
     "text-reverser": {
@@ -387,8 +386,8 @@
         "js": {
             "error_empty": "Bitte geben Sie Text zum Umkehren ein",
             "success_reverse": "Text umgekehrt!",
-            "success_copy": "Kopiert!",
-            "error_no_copy": "Kein Text zum Kopieren!"
+            "error_no_copy": "Kein Text zum Kopieren!",
+            "success_copy": "Kopiert!"
         }
     },
     "text-to-morse-converter": {
@@ -499,8 +498,8 @@
         "js": {
             "error_empty": "Bitte geben Sie Text zum Umwandeln ein",
             "success_convert": "Erfolgreich umgewandelt!",
-            "success_copy": "Kopiert!",
-            "error_no_copy": "Kein Morsecode zum Kopieren!"
+            "error_no_copy": "Kein Morsecode zum Kopieren!",
+            "success_copy": "Kopiert!"
         }
     },
     "word-counter": {
@@ -546,8 +545,5 @@
             "faq3_q": "Werden meine Texte gespeichert?",
             "faq3_a": "Nein, alle Daten bleiben auf Ihrem Gerät."
         }
-    },
-    "morse-to-text-converter.js.error_copy": "Fehler beim Kopieren des Textes",
-    "text-reverser.js.error_no_copy": "Kein Text zum Kopieren!",
-    "text-to-morse-converter.js.error_no_copy": "Kein Morsecode zum Kopieren!"
+    }
 }

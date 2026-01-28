@@ -22,7 +22,7 @@
         },
         "content": {
             "what_title": "Co to jest kodowanie Base64?",
-            "what_desc": "Base64 to schemat kodowania binarnego na tekst, który reprezentuje dane binarne w formacie ciągu ASCII. Jest powszechnie używany do kodowania danych, które muszą być przechowywane lub przesyłane przez media przeznaczone do obsługi tekstu. Nasze darmowe narzędzie do kodowania i dekodowania Base64 pozwala programistom, analitykom danych i specjalistom IT szybko konwertować tekst na Base64 lub dekodować ciągi Base64 z powrotem na czytelny tekst. Idealne do tworzenia API, transmisji danych, załączników e-mail, osadzania obrazów w HTML/CSS i obsługi danych binarnych w JSON.",
+            "what_desc": "Base64 to schemat kodowania binarnego na tekst, który reprezentuje dane binarne w formacie ciągu ASCII. Jest powszechnie używany do kodowania danych, które muszą być przechowywane lub przesyłane przez media przeznaczone do obsługi tekstu. Nasze darmowe narzędzie do kodowania i dekodowania Base64 pozwala programistom, analitykom danych i specjalistom IT szybko konwertować tekst na Base64 lub dekodować ciągi Base64 z powrotem na czytelny tekst. Idealne do tworzenia API, transmisji danych, załączników e-mail, osadzania obrazów w HTML\/CSS i obsługi danych binarnych w JSON.",
             "features": {
                 "secure": {
                     "title": "Bezpieczne kodowanie",
@@ -38,7 +38,7 @@
                 }
             },
             "how_to": {
-                "title": "Jak używać Enkodera/Dekodera Base64",
+                "title": "Jak używać Enkodera\/Dekodera Base64",
                 "encode": {
                     "title": "Kodowanie tekstu",
                     "step1": "Kliknij zakładkę \"Zakoduj do Base64\"",
@@ -79,14 +79,14 @@
                 "desc": "Base64 to schemat kodowania binarnego na tekst, który konwertuje dane binarne na format tekstowy ASCII. Nasz darmowy Enkoder i Dekoder Base64 pomaga programistom, administratorom systemów i specjalistom IT kodować tekst na Base64 lub dekodować Base64 z powrotem na czytelny tekst natychmiastowo. Idealne do uwierzytelniania API, URI danych, załączników e-mail i bezpiecznej transmisji danych. Całe przetwarzanie odbywa się w przeglądarce dla pełnej prywatności.",
                 "works_title": "🔄 Jak działa Base64",
                 "works_encoding": "Konwertuje dane binarne na tekst ASCII używając 64 znaków",
-                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (oraz = jako wypełnienie)",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, \/ (oraz = jako wypełnienie)",
                 "works_decoding": "Konwertuje tekst Base64 z powrotem na oryginalne dane binarne",
                 "works_decoding_sub": "Odfwraca proces kodowania idealnie",
                 "cases_title": "✅ Typowe przypadki użycia",
                 "case_api": "Uwierzytelnianie API",
                 "case_api_desc": "Koduj poświadczenia dla Basic Auth w nagłówkach HTTP",
                 "case_uri": "URI danych",
-                "case_uri_desc": "Osadzaj obrazy i pliki bezpośrednio w HTML/CSS",
+                "case_uri_desc": "Osadzaj obrazy i pliki bezpośrednio w HTML\/CSS",
                 "case_email": "Załączniki e-mail",
                 "case_email_desc": "Koduj pliki binarne do transmisji e-mail",
                 "case_url": "Parametry URL",
@@ -101,13 +101,13 @@
                     "Nie nadaje się do szyfrowania - używaj odpowiednich algorytmów szyfrowania",
                     "Idealne do kodowania danych binarnych w systemach tekstowych",
                     "Zawsze waliduj odkodowane dane przed ich użyciem",
-                    "Używaj URL-safe Base64 dla adresów URL (zamienia +/= na -_)"
+                    "Używaj URL-safe Base64 dla adresów URL (zamienia +\/= na -_)"
                 ]
             },
             "faq": {
                 "title": "❓ Często zadawane pytania",
                 "q1": "Czy kodowanie Base64 jest bezpieczne?",
-                "a1": "Nie! Base64 NIE jest szyfrowaniem - to po prostu kodowanie. Każdy może natychmiast odkodować dane Base64. Nigdy nie używaj samego Base64 do celów bezpieczeństwa. Do szyfrowania używaj odpowiednich algorytmów kryptograficznych, takich jak AES, RSA lub TLS/SSL.",
+                "a1": "Nie! Base64 NIE jest szyfrowaniem - to po prostu kodowanie. Każdy może natychmiast odkodować dane Base64. Nigdy nie używaj samego Base64 do celów bezpieczeństwa. Do szyfrowania używaj odpowiednich algorytmów kryptograficznych, takich jak AES, RSA lub TLS\/SSL.",
                 "q2": "Dlaczego Base64 zwiększa rozmiar pliku?",
                 "a2": "Kodowanie Base64 zwiększa rozmiar danych o około 33%, ponieważ reprezentuje 3 bajty danych binarnych za pomocą 4 znaków ASCII. Ten narzut jest kompromisem za zapewnienie bezpieczeństwa danych binarnych w systemach tekstowych.",
                 "q3": "Do czego służy Base64?",
@@ -115,7 +115,7 @@
                 "q4": "Czy moje dane są wysyłane na serwer?",
                 "a4": "Nie! Całe kodowanie i dekodowanie Base64 odbywa się całkowicie w twojej przeglądarce przy użyciu JavaScript. Twoje dane nigdy nie opuszczają urządzenia i nie są nigdzie przechowywane, przesyłane ani logowane. Twoja prywatność jest całkowicie chroniona.",
                 "q5": "Czy mogę kodować obrazy do Base64?",
-                "a5": "Tak! Chociaż nasze narzędzie koduje tekst, możesz kodować obrazy za pomocą specjalistycznych narzędzi. Obrazy zakodowane w Base64 mogą być osadzane bezpośrednio w HTML/CSS przy użyciu URI danych (data:image/png;base64,...). Jest to przydatne w przypadku małych obrazów, ale zwiększa rozmiar strony."
+                "a5": "Tak! Chociaż nasze narzędzie koduje tekst, możesz kodować obrazy za pomocą specjalistycznych narzędzi. Obrazy zakodowane w Base64 mogą być osadzane bezpośrednio w HTML\/CSS przy użyciu URI danych (data:image\/png;base64,...). Jest to przydatne w przypadku małych obrazów, ale zwiększa rozmiar strony."
             }
         },
         "js": {
@@ -153,10 +153,10 @@
             "btn_format": "Formatuj kod",
             "label_input": "Kod wejściowy",
             "btn_clear": "Wyczyść",
-            "ph_input": "// Wklej swój kod tutaj...",
+            "ph_input": "\/\/ Wklej swój kod tutaj...",
             "label_output": "Sformatowany kod",
             "btn_copy": "Kopiuj",
-            "ph_output": "// Sformatowany kod pojawi się tutaj..."
+            "ph_output": "\/\/ Sformatowany kod pojawi się tutaj..."
         },
         "content": {
             "hero_title": "Darmowy formatowacz kodu online",
@@ -241,9 +241,9 @@
             "choose": "-- Wybierz --",
             "options": {
                 "every_minute": "Co minutę (* * * * *)",
-                "every_5_minutes": "Co 5 minut (*/5 * * * *)",
-                "every_15_minutes": "Co 15 minut (*/15 * * * *)",
-                "every_30_minutes": "Co 30 minut (*/30 * * * *)",
+                "every_5_minutes": "Co 5 minut (*\/5 * * * *)",
+                "every_15_minutes": "Co 15 minut (*\/15 * * * *)",
+                "every_30_minutes": "Co 30 minut (*\/30 * * * *)",
                 "every_hour": "Co godzinę (0 * * * *)",
                 "every_day_midnight": "Codziennie o północy (0 0 * * *)",
                 "every_week": "Co tydzień (0 0 * * 0)",
@@ -260,7 +260,7 @@
             "weekday": "Dzień tygodnia",
             "every_weekday": "W każdy dzień tygodnia (*)",
             "command": "Komenda do uruchomienia",
-            "ph_command": "/usr/bin/php /sciezka/do/skryptu.php",
+            "ph_command": "\/usr\/bin\/php \/sciezka\/do\/skryptu.php",
             "generated_cron": "Wygenerowane wyrażenie Cron",
             "btn_copy": "Kopiuj Cron",
             "btn_clear": "Nastawić"
@@ -387,18 +387,18 @@
             },
             "how_title": "📚 Jak używać",
             "how_steps": {
-                "1": "<strong>Wybierz akcję:</strong> Kliknij \"Minimalizuj CSS\", aby skompresować lub \"Upiększ CSS\", aby sformatować",
-                "2": "<strong>Zobacz wyniki:</strong> Zobacz przetworzony CSS w polu wyjściowym ze statystykami kompresji",
-                "3": "<strong>Kopiuj:</strong> Kliknij \"Kopiuj\", aby skopiować zminimalizowany CSS do schowka",
-                "4": "<strong>Użyj w produkcji:</strong> Zastąp swój oryginalny plik CSS wersją zminimalizowaną",
+                "1": "<strong>Wybierz akcję:<\/strong> Kliknij \"Minimalizuj CSS\", aby skompresować lub \"Upiększ CSS\", aby sformatować",
+                "2": "<strong>Zobacz wyniki:<\/strong> Zobacz przetworzony CSS w polu wyjściowym ze statystykami kompresji",
+                "3": "<strong>Kopiuj:<\/strong> Kliknij \"Kopiuj\", aby skopiować zminimalizowany CSS do schowka",
+                "4": "<strong>Użyj w produkcji:<\/strong> Zastąp swój oryginalny plik CSS wersją zminimalizowaną",
                 "5": "Pobierz lub skopiuj zminimalizowany CSS i użyj go w swojej produkcyjnej witrynie internetowej, aby zmniejszyć rozmiar pliku i skrócić czas ładowania."
             },
             "best_practices_title": "💡 Dobre praktyki",
             "best_practices_list": {
-                "1": "<strong>Minimalizacja dla produkcji:</strong> Używaj zminimalizowanego CSS tylko w środowiskach produkcyjnych",
-                "2": "<strong>Łącz pliki:</strong> Połącz wiele plików CSS przed minifikacją dla lepszej kompresji",
-                "3": "<strong>Testuj dokładnie:</strong> Zawsze testuj zminimalizowany CSS, aby upewnić się, że żadna funkcjonalność nie została uszkodzona",
-                "4": "<strong>Używaj narzędzi budowania:</strong> Zintegruj minifikację z procesem budowania dla automatyzacji",
+                "1": "<strong>Minimalizacja dla produkcji:<\/strong> Używaj zminimalizowanego CSS tylko w środowiskach produkcyjnych",
+                "2": "<strong>Łącz pliki:<\/strong> Połącz wiele plików CSS przed minifikacją dla lepszej kompresji",
+                "3": "<strong>Testuj dokładnie:<\/strong> Zawsze testuj zminimalizowany CSS, aby upewnić się, że żadna funkcjonalność nie została uszkodzona",
+                "4": "<strong>Używaj narzędzi budowania:<\/strong> Zintegruj minifikację z procesem budowania dla automatyzacji",
                 "5": "Zachowaj niezminifikowaną wersję do celów programistycznych i debugowania."
             },
             "faq_title": "❓ Często zadawane pytania",
@@ -439,7 +439,7 @@
             "key_ph": "Klucz (np. Authorization)",
             "value_ph": "Wartość (np. Bearer token)",
             "add_header": "+ Dodaj nagłówek",
-            "raw_data_label": "Surowe dane (JSON/Tekst)",
+            "raw_data_label": "Surowe dane (JSON\/Tekst)",
             "generated_label": "Wygenerowane polecenie",
             "btn_copy": "Kopiuj polecenie"
         },
@@ -458,7 +458,7 @@
             "mode_encode": "Koduj HTML",
             "mode_decode": "Dekoduj HTML",
             "label_input_encode": "Wprowadź HTML do zakodowania",
-            "ph_input_encode": "<div>Cześć & Witaj</div>",
+            "ph_input_encode": "<div>Cześć & Witaj<\/div>",
             "btn_encode": "Zakoduj HTML",
             "btn_clear": "Wyczyść",
             "btn_copy": "Kopiuj",
@@ -525,7 +525,7 @@
                 "1": "Wklej swój HTML lub tekst w polu wejściowym",
                 "2": "Kliknij przycisk przetwarzania, aby przekonwertować",
                 "3": "Skopiuj wynik do schowka",
-                "4": "Skopiuj zakodowany/dekodowany wynik i użyj go w swoich aplikacjach HTML, XML lub internetowych."
+                "4": "Skopiuj zakodowany\/dekodowany wynik i użyj go w swoich aplikacjach HTML, XML lub internetowych."
             },
             "examples_title": "💡 Przykłady kodowania HTML",
             "examples": {
@@ -539,7 +539,7 @@
                 },
                 "3": {
                     "title": "Kodowanie znaków specjalnych",
-                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&gt;"
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;\/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;\/script&gt;"
                 }
             },
             "faq_title": "❓ Często zadawane pytania",
@@ -584,12 +584,12 @@
             "why_desc": "Minimalizowanie HTML jest ważne dla optymalizacji wydajności sieci. Mniejsze pliki HTML oznaczają szybsze pobieranie, mniejsze zużycie transferu i lepszy czas ładowania strony. Jest to szczególnie korzystne dla dużych stron internetowych z dużą ilością treści HTML. Zminimalizowany HTML zmniejsza obciążenie serwera i poprawia wrażenia użytkownika.",
             "features_title": "Kluczowe cechy",
             "features_list": {
-                "minify": "<strong>Minimalizuj HTML:</strong> Usuń białe znaki i komentarze, aby zmniejszyć rozmiar pliku",
-                "beautify": "<strong>Upiększ HTML:</strong> Formatuj HTML z odpowiednimi wcięciami",
-                "instant": "<strong>Natychmiastowe wyniki:</strong> Przetwarzaj HTML w czasie rzeczywistym",
-                "copy": "<strong>Kopiuj wyjście:</strong> Łatwo kopiuj zminimalizowany HTML",
-                "secure": "<strong>Bezpieczny i prywatny:</strong> Całe przetwarzanie w przeglądarce",
-                "free": "<strong>Darmowy w użyciu:</strong> Rejestracja nie jest wymagana"
+                "minify": "<strong>Minimalizuj HTML:<\/strong> Usuń białe znaki i komentarze, aby zmniejszyć rozmiar pliku",
+                "beautify": "<strong>Upiększ HTML:<\/strong> Formatuj HTML z odpowiednimi wcięciami",
+                "instant": "<strong>Natychmiastowe wyniki:<\/strong> Przetwarzaj HTML w czasie rzeczywistym",
+                "copy": "<strong>Kopiuj wyjście:<\/strong> Łatwo kopiuj zminimalizowany HTML",
+                "secure": "<strong>Bezpieczny i prywatny:<\/strong> Całe przetwarzanie w przeglądarce",
+                "free": "<strong>Darmowy w użyciu:<\/strong> Rejestracja nie jest wymagana"
             },
             "how_title": "Jak używać",
             "how_steps": {
@@ -643,11 +643,11 @@
             "about_p1": "Konwertuj kod HTML na czysty, czytelny format Markdown natychmiastowo za pomocą naszego darmowego konwertera online HTML na Markdown. Idealny dla programistów, pisarzy technicznych i twórców treści, którzy muszą przekształcić treść HTML w Markdown dla dokumentacji, plików README lub systemów zarządzania treścią.",
             "features_title": "✨ Kluczowe cechy",
             "features_list": {
-                "1": "✅ <strong>Zachowaj formatowanie:</strong> Zachowuje nagłówki, listy, linki i wyróżnienia",
-                "2": "✅ <strong>Czyste wyjście:</strong> Generuje czytelny, dobrze sformatowany Markdown",
-                "3": "✅ <strong>Brak instalacji:</strong> Działa bezpośrednio w przeglądarce",
-                "4": "✅ <strong>Darmowy na zawsze:</strong> 100% darmowy bez ograniczeń",
-                "5": "✅ <strong>Przede wszystkim prywatność:</strong> Cała konwersja odbywa się lokalnie w przeglądarce",
+                "1": "✅ <strong>Zachowaj formatowanie:<\/strong> Zachowuje nagłówki, listy, linki i wyróżnienia",
+                "2": "✅ <strong>Czyste wyjście:<\/strong> Generuje czytelny, dobrze sformatowany Markdown",
+                "3": "✅ <strong>Brak instalacji:<\/strong> Działa bezpośrednio w przeglądarce",
+                "4": "✅ <strong>Darmowy na zawsze:<\/strong> 100% darmowy bez ograniczeń",
+                "5": "✅ <strong>Przede wszystkim prywatność:<\/strong> Cała konwersja odbywa się lokalnie w przeglądarce",
                 "6": "Zachowuje bloki kodu i podświetlanie składni na potrzeby dokumentacji technicznej."
             },
             "uses_title": "🎯 Typowe przypadki użycia",
@@ -748,13 +748,13 @@
             "why_desc": "Nasza darmowa przeglądarka HTML oferuje kilka zalet dla programistów i projektantów. Po pierwsze, zapewnia natychmiastową wizualną informację zwrotną bez konieczności tworzenia plików czy konfigurowania środowiska programistycznego. Po drugie, działa całkowicie w przeglądarce, co oznacza, że możesz z niej korzystać wszędzie bez instalowania oprogramowania. Po trzecie, jest idealna do szybkiego testowania, debugowania i nauki HTML. Widok obok siebie pozwala widzieć kod i jego wynik jednocześnie, co ułatwia zrozumienie, jak renderują się elementy HTML.",
             "features_title": "Kluczowe cechy",
             "features_list": {
-                "preview": "<strong>Podgląd w czasie rzeczywistym:</strong> Zobacz swój HTML wyrenderowany natychmiast podczas pisania",
-                "layout": "<strong>Widok obok siebie:</strong> Edytor kodu i panel podglądu wyświetlane razem",
-                "syntax": "<strong>Podświetlanie składni:</strong> Łatwy do czytania kod z kolorowaną składnią",
-                "sample": "<strong>Przykładowy kod:</strong> Załaduj przykładowy HTML, aby szybko zacząć",
-                "no_install": "<strong>Brak konieczności instalacji:</strong> Działa bezpośrednio w przeglądarce",
-                "free": "<strong>Darmowy w użyciu:</strong> Rejestracja ani płatność nie są wymagane",
-                "secure": "<strong>Bezpieczny:</strong> Całe przetwarzanie odbywa się w przeglądarce"
+                "preview": "<strong>Podgląd w czasie rzeczywistym:<\/strong> Zobacz swój HTML wyrenderowany natychmiast podczas pisania",
+                "layout": "<strong>Widok obok siebie:<\/strong> Edytor kodu i panel podglądu wyświetlane razem",
+                "syntax": "<strong>Podświetlanie składni:<\/strong> Łatwy do czytania kod z kolorowaną składnią",
+                "sample": "<strong>Przykładowy kod:<\/strong> Załaduj przykładowy HTML, aby szybko zacząć",
+                "no_install": "<strong>Brak konieczności instalacji:<\/strong> Działa bezpośrednio w przeglądarce",
+                "free": "<strong>Darmowy w użyciu:<\/strong> Rejestracja ani płatność nie są wymagane",
+                "secure": "<strong>Bezpieczny:<\/strong> Całe przetwarzanie odbywa się w przeglądarce"
             },
             "how_title": "Jak używać przeglądarki HTML",
             "how_steps": {
@@ -808,12 +808,12 @@
             "why_desc": "Minimalizowanie JavaScript jest niezbędne dla optymalizacji wydajności sieci. Mniejsze pliki JS oznaczają szybsze pobieranie, mniejsze zużycie transferu i lepszy czas ładowania strony. Jest to szczególnie ważne dla użytkowników mobilnych i użytkowników z wolniejszymi połączeniami internetowymi. Zminimalizowany JavaScript zmniejsza obciążenie serwera i poprawia wrażenia użytkownika. W przypadku witryn produkcyjnych minifikacja jest standardową najlepszą praktyką, która może znacząco poprawić wyniki Core Web Vitals.",
             "features_title": "Kluczowe cechy",
             "features_list": {
-                "minify": "<strong>Minimalizuj JavaScript:</strong> Usuń białe znaki i komentarze, aby zmniejszyć rozmiar pliku",
-                "beautify": "<strong>Upiększ JavaScript:</strong> Formatuj JS z odpowiednimi wcięciami",
-                "instant": "<strong>Natychmiastowe wyniki:</strong> Przetwarzaj JavaScript w czasie rzeczywistym",
-                "copy": "<strong>Kopiuj wyjście:</strong> Łatwo kopiuj zminimalizowany JavaScript",
-                "secure": "<strong>Bezpieczny i prywatny:</strong> Całe przetwarzanie w przeglądarce",
-                "free": "<strong>Darmowy w użyciu:</strong> Rejestracja nie jest wymagana"
+                "minify": "<strong>Minimalizuj JavaScript:<\/strong> Usuń białe znaki i komentarze, aby zmniejszyć rozmiar pliku",
+                "beautify": "<strong>Upiększ JavaScript:<\/strong> Formatuj JS z odpowiednimi wcięciami",
+                "instant": "<strong>Natychmiastowe wyniki:<\/strong> Przetwarzaj JavaScript w czasie rzeczywistym",
+                "copy": "<strong>Kopiuj wyjście:<\/strong> Łatwo kopiuj zminimalizowany JavaScript",
+                "secure": "<strong>Bezpieczny i prywatny:<\/strong> Całe przetwarzanie w przeglądarce",
+                "free": "<strong>Darmowy w użyciu:<\/strong> Rejestracja nie jest wymagana"
             },
             "how_title": "Jak używać",
             "how_steps": [
@@ -908,7 +908,7 @@
                     "desc": "Formatuj dane JSON z baz danych NoSQL, takich jak MongoDB, CouchDB i Firebase, dla lepszej czytelności."
                 },
                 "export": {
-                    "title": "Eksport/Import danych",
+                    "title": "Eksport\/Import danych",
                     "desc": "Przygotuj dane JSON do eksportu lub waliduj importowane dane JSON, aby zapewnić prawidłową strukturę i składnię."
                 }
             },
@@ -1030,19 +1030,19 @@
             },
             "how_title": "📚 Jak używać",
             "how_steps": [
-                "<strong>Wklej JSON:</strong> Skopiuj i wklej swoje dane JSON do pola wejściowego",
-                "<strong>Parsuj:</strong> Kliknij \"Parsuj JSON\", aby zwalidować i wizualizować strukturę",
-                "<strong>Upiększ:</strong> Kliknij \"Upiększ\", aby sformatować z odpowiednimi wcięciami",
-                "<strong>Minimalizuj:</strong> Kliknij \"Minimalizuj\", aby skompresować i usunąć białe znaki",
-                "<strong>Widok drzewa:</strong> Zobacz strukturę hierarchiczną w widoku drzewa"
+                "<strong>Wklej JSON:<\/strong> Skopiuj i wklej swoje dane JSON do pola wejściowego",
+                "<strong>Parsuj:<\/strong> Kliknij \"Parsuj JSON\", aby zwalidować i wizualizować strukturę",
+                "<strong>Upiększ:<\/strong> Kliknij \"Upiększ\", aby sformatować z odpowiednimi wcięciami",
+                "<strong>Minimalizuj:<\/strong> Kliknij \"Minimalizuj\", aby skompresować i usunąć białe znaki",
+                "<strong>Widok drzewa:<\/strong> Zobacz strukturę hierarchiczną w widoku drzewa"
             ],
             "tips_title": "💡 Najlepsze praktyki JSON",
             "tips_list": [
-                "<strong>Używaj podwójnych cudzysłowów:</strong> JSON wymaga podwójnych cudzysłowów dla ciągów znaków, nie pojedynczych",
-                "<strong>Bez przecinków końcowych:</strong> Usuń przecinki po ostatnim elemencie w obiektach i tablicach",
-                "<strong>Właściwe typy danych:</strong> Używaj liczb bez cudzysłowów, wartości logicznych jako true/false, null dla pustych wartości",
-                "<strong>Waliduj regularnie:</strong> Zawsze waliduj JSON przed wdrożeniem lub użyciem produkcyjnym",
-                "<strong>Upiększ dla czytelności:</strong> Formatuj JSON dla łatwiejszego debugowania i konserwacji"
+                "<strong>Używaj podwójnych cudzysłowów:<\/strong> JSON wymaga podwójnych cudzysłowów dla ciągów znaków, nie pojedynczych",
+                "<strong>Bez przecinków końcowych:<\/strong> Usuń przecinki po ostatnim elemencie w obiektach i tablicach",
+                "<strong>Właściwe typy danych:<\/strong> Używaj liczb bez cudzysłowów, wartości logicznych jako true\/false, null dla pustych wartości",
+                "<strong>Waliduj regularnie:<\/strong> Zawsze waliduj JSON przed wdrożeniem lub użyciem produkcyjnym",
+                "<strong>Upiększ dla czytelności:<\/strong> Formatuj JSON dla łatwiejszego debugowania i konserwacji"
             ],
             "faq_title": "❓ Często zadawane pytania",
             "faq": {
@@ -1099,12 +1099,12 @@
             "p1": "Nasz darmowy konwerter JSON na CSV to potężne narzędzie zaprojektowane dla programistów, analityków danych i specjalistów IT. Z łatwością przekształcaj ustrukturyzowane dane JSON w czyste, sformatowane pliki CSV (wartości rozdzielane przecinkami) lub TSV. Niezależnie od tego, czy przygotowujesz dane do importu do Excela, Arkuszy Google lub bazy danych, nasze narzędzie zapewnia dokładność i szybkość przy 100% przetwarzaniu po stronie klienta.",
             "features_title": "Kluczowe cechy",
             "features_list": {
-                "fast": "<strong>Natychmiastowa konwersja:</strong> Wyniki w milisekundach",
-                "secure": "<strong>Prywatny i bezpieczny:</strong> Wszystkie dane pozostają w Twojej przeglądarce",
-                "format": "<strong>Inteligentne spłaszczanie:</strong> Poprawnie obsługuje zagnieżdżone obiekty JSON",
-                "custom": "<strong>Niestandardowe separatory:</strong> Wybierz pomiędzy przecinkiem, średnikiem lub tabulatorem",
-                "export": "<strong>Łatwy eksport:</strong> Skopiuj do schowka lub pobierz jako .csv",
-                "free": "<strong>100% Darmowe:</strong> Bez limitów, bez konieczności rejestracji"
+                "fast": "<strong>Natychmiastowa konwersja:<\/strong> Wyniki w milisekundach",
+                "secure": "<strong>Prywatny i bezpieczny:<\/strong> Wszystkie dane pozostają w Twojej przeglądarce",
+                "format": "<strong>Inteligentne spłaszczanie:<\/strong> Poprawnie obsługuje zagnieżdżone obiekty JSON",
+                "custom": "<strong>Niestandardowe separatory:<\/strong> Wybierz pomiędzy przecinkiem, średnikiem lub tabulatorem",
+                "export": "<strong>Łatwy eksport:<\/strong> Skopiuj do schowka lub pobierz jako .csv",
+                "free": "<strong>100% Darmowe:<\/strong> Bez limitów, bez konieczności rejestracji"
             },
             "uses_title": "Typowe przypadki użycia",
             "uses": {
@@ -1226,10 +1226,10 @@
             },
             "how_title": "Jak używać",
             "how_steps": [
-                "Wprowadź docelową <strong>Nazwę tabeli</strong> bazy danych",
-                "Wklej swój <strong>JSON</strong> (musi być tablicą lub obiektem)",
-                "Kliknij <strong>Generuj SQL</strong>, aby utworzyć skrypt",
-                "<strong>Skopiuj</strong> wyjście SQL do schowka"
+                "Wprowadź docelową <strong>Nazwę tabeli<\/strong> bazy danych",
+                "Wklej swój <strong>JSON<\/strong> (musi być tablicą lub obiektem)",
+                "Kliknij <strong>Generuj SQL<\/strong>, aby utworzyć skrypt",
+                "<strong>Skopiuj<\/strong> wyjście SQL do schowka"
             ],
             "faq_title": "Często zadawane pytania",
             "faq": {
@@ -1430,7 +1430,7 @@
                     "desc": "Przekształcaj ustawienia JSON na pliki konfiguracyjne YAML."
                 },
                 "cicd": {
-                    "title": "Potoki CI/CD",
+                    "title": "Potoki CI\/CD",
                     "desc": "Przygotuj definicje potoków YAML z danych JSON."
                 },
                 "cloud": {
@@ -1536,7 +1536,7 @@
             "hero_subtitle": "Dekoduj i sprawdzaj tokeny JSON Web Tokens natychmiastowo",
             "p1": "Nasze darmowe narzędzie Dekoder JWT pozwala dekodować i sprawdzać tokeny JSON Web Tokens (JWT), aby zobaczyć ich komponenty: nagłówek, ładunek i podpis. Idealne do debugowania problemów z uwierzytelnianiem, zrozumienia struktury tokenów i walidacji roszczeń JWT.",
             "what_title": "🔎 Co to jest JWT?",
-            "what_desc": "JSON Web Token (JWT) to kompaktowy, bezpieczny dla adresów URL sposób reprezentowania roszczeń między dwiema stronami. JWT składają się z trzech części: Nagłówka (algorytm i typ tokena), Ładunku (roszczenia/dane) i Podpisu (weryfikacja), oddzielonych kropkami.",
+            "what_desc": "JSON Web Token (JWT) to kompaktowy, bezpieczny dla adresów URL sposób reprezentowania roszczeń między dwiema stronami. JWT składają się z trzech części: Nagłówka (algorytm i typ tokena), Ładunku (roszczenia\/dane) i Podpisu (weryfikacja), oddzielonych kropkami.",
             "features_title": "✨ Funkcje",
             "features": {
                 "instant": {
@@ -1680,7 +1680,7 @@
             "error_no_copy": "Brak HTML do skopiowania. Najpierw przekonwertuj Markdown.",
             "success_copy": "HTML skopiowany do schowka!",
             "error_no_download": "Brak HTML do pobrania. Najpierw przekonwertuj Markdown.",
-            "example": "# Witaj w Markdown\n\n## To jest podnagłówek\n\nTo jest akapit z **pogrubionym tekstem** i *kursywą*.\n\n### Funkcje\n\n- Łatwy do pisania\n- Łatwy do czytania\n- Konwertuje na HTML\n\n### Przykład kodu\n\n```javascript\nfunction czesc() {\n    console.log(\"Witaj, Świecie!\");\n}\n```\n\n> To jest cytat blokowy\n\n[Odwiedź naszą stronę](https://example.com)"
+            "example": "# Witaj w Markdown\n\n## To jest podnagłówek\n\nTo jest akapit z **pogrubionym tekstem** i *kursywą*.\n\n### Funkcje\n\n- Łatwy do pisania\n- Łatwy do czytania\n- Konwertuje na HTML\n\n### Przykład kodu\n\n```javascript\nfunction czesc() {\n    console.log(\"Witaj, Świecie!\");\n}\n```\n\n> To jest cytat blokowy\n\n[Odwiedź naszą stronę](https:\/\/example.com)"
         }
     },
     "md5-generator": {
@@ -1705,20 +1705,20 @@
             "what_desc": "MD5 to kryptograficzna funkcja skrótu, która przyjmuje dane wejściowe dowolnej długości i tworzy stałą 128-bitową wartość skrótu, zazwyczaj reprezentowaną jako 32-znakowa liczba szesnastkowa. To samo wejście zawsze daje ten sam skrót, ale nawet niewielka zmiana w wejściu tworzy zupełnie inny skrót.",
             "features_title": "✅ Zalety MD5",
             "features": {
-                "fast": "<strong>Szybkie przetwarzanie:</strong> Niezwykle szybkie generowanie skrótów",
-                "fixed": "<strong>Stała długość:</strong> Zawsze generuje 128-bitowe wyjście",
-                "deterministic": "<strong>Deterministyczny:</strong> To samo wejście = ten sam skrót",
-                "support": "<strong>Szerokie wsparcie:</strong> Dostępny we wszystkich językach programowania"
+                "fast": "<strong>Szybkie przetwarzanie:<\/strong> Niezwykle szybkie generowanie skrótów",
+                "fixed": "<strong>Stała długość:<\/strong> Zawsze generuje 128-bitowe wyjście",
+                "deterministic": "<strong>Deterministyczny:<\/strong> To samo wejście = ten sam skrót",
+                "support": "<strong>Szerokie wsparcie:<\/strong> Dostępny we wszystkich językach programowania"
             },
             "uses_title": "📊 Typowe przypadki użycia",
             "uses": {
-                "verify": "<strong>Weryfikacja plików:</strong> Sprawdź integralność plików",
-                "checksum": "<strong>Sumy kontrolne:</strong> Weryfikuj pobierane pliki",
-                "cache": "<strong>Klucze pamięci podręcznej:</strong> Generuj unikalne identyfikatory",
-                "integrity": "<strong>Integralność danych:</strong> Wykrywaj zmiany"
+                "verify": "<strong>Weryfikacja plików:<\/strong> Sprawdź integralność plików",
+                "checksum": "<strong>Sumy kontrolne:<\/strong> Weryfikuj pobierane pliki",
+                "cache": "<strong>Klucze pamięci podręcznej:<\/strong> Generuj unikalne identyfikatory",
+                "integrity": "<strong>Integralność danych:<\/strong> Wykrywaj zmiany"
             },
             "warning_title": "⚠️ Ostrzeżenie bezpieczeństwa",
-            "warning_desc": "<strong>NIE używaj MD5 do haszowania haseł lub zastosowań krytycznych dla bezpieczeństwa!</strong> MD5 jest kryptograficznie złamany i podatny na ataki kolizyjne. Do haszowania haseł używaj nowoczesnych algorytmów, takich jak bcrypt, Argon2 lub PBKDF2.",
+            "warning_desc": "<strong>NIE używaj MD5 do haszowania haseł lub zastosowań krytycznych dla bezpieczeństwa!<\/strong> MD5 jest kryptograficznie złamany i podatny na ataki kolizyjne. Do haszowania haseł używaj nowoczesnych algorytmów, takich jak bcrypt, Argon2 lub PBKDF2.",
             "compare_title": "🔄 MD5 kontra inne funkcje skrótu",
             "compare": {
                 "md5": {
@@ -1935,7 +1935,7 @@
                 },
                 "copy": {
                     "title": "Kopiowanie jednym kliknięciem",
-                    "desc": "Natychmiastowo kopiuj zakodowany/zdekodowany tekst"
+                    "desc": "Natychmiastowo kopiuj zakodowany\/zdekodowany tekst"
                 },
                 "free": {
                     "title": "100% Darmowe",
@@ -1991,7 +1991,7 @@
             "examples_title": "Przykłady Unicode",
             "examples": {
                 "simple": {
-                    "title": "Proste/ASCII:",
+                    "title": "Proste\/ASCII:",
                     "desc": "Oryginał: \"A\" → Zakodowane: \"\\u0041\""
                 },
                 "special": {
@@ -1999,7 +1999,7 @@
                     "desc": "Oryginał: \"©\" → Zakodowane: \"\\u00A9\""
                 },
                 "emoji": {
-                    "title": "Emoji/Wielobajtowe:",
+                    "title": "Emoji\/Wielobajtowe:",
                     "desc": "Oryginał: \"🌟\" → Zakodowane: \"\\uD83C\\uDF1F\" (pary zastępcze) lub \"\\u2B50\" w zależności od reprezentacji"
                 }
             },
@@ -2008,7 +2008,7 @@
                 "q1": "Dlaczego używać sekwencji ucieczki Unicode?",
                 "a1": "Pozwalają one reprezentować dowolny znak przy użyciu tylko znaków ASCII, co zapewnia kompatybilność w różnych systemach, kodowaniach i transferach plików, które mogą nie obsługiwać surowego Unicode poprawnie.",
                 "q2": "Jaki format jest używany?",
-                "a2": "To narzędzie zazwyczaj używa stylu JavaScript/JSON \\uXXXX dla znaków z Podstawowej Płaszczyzny Wielojęzycznej.",
+                "a2": "To narzędzie zazwyczaj używa stylu JavaScript\/JSON \\uXXXX dla znaków z Podstawowej Płaszczyzny Wielojęzycznej.",
                 "q3": "Czy to różni się od kodowania URL?",
                 "a3": "Tak. Kodowanie URL używa wartości szesnastkowych %XX głównie dla adresów URL. Ucieczki Unicode używają \\uXXXX i są stosowane w ciągach znaków w językach programowania takich jak JavaScript, Java i Python.",
                 "q4": "Czy moje dane są bezpieczne?",
@@ -2035,7 +2035,7 @@
             "btn_encode": "Koduj URL",
             "btn_decode": "Dekoduj URL",
             "label_input_encode": "Wprowadź URL do zakodowania",
-            "ph_input": "https://example.com/search?name=Jan Kowalski&age=30",
+            "ph_input": "https:\/\/example.com\/search?name=Jan Kowalski&age=30",
             "btn_process_encode": "Koduj URL",
             "btn_clear": "Wyczyść",
             "btn_copy": "Kopiuj",
@@ -2065,7 +2065,7 @@
                 },
                 "copy": {
                     "title": "Kopiowanie jednym kliknięciem",
-                    "desc": "Natychmiastowo kopiuj zakodowane/zdekodowane adresy URL"
+                    "desc": "Natychmiastowo kopiuj zakodowane\/zdekodowane adresy URL"
                 },
                 "free": {
                     "title": "100% Darmowe",
@@ -2123,7 +2123,7 @@
                 },
                 "step5": {
                     "title": "Użyj gdziekolwiek",
-                    "desc": "Wklej zakodowany/zdekodowany URL w swojej aplikacji"
+                    "desc": "Wklej zakodowany\/zdekodowany URL w swojej aplikacji"
                 }
             },
             "examples_title": "Przykłady kodowania URL",
@@ -2138,7 +2138,7 @@
                 },
                 "full": {
                     "title": "Pełny URL:",
-                    "desc": "Oryginał: \"https://example.com/search?q=hello world\" → Zakodowane: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
+                    "desc": "Oryginał: \"https:\/\/example.com\/search?q=hello world\" → Zakodowane: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
                 }
             },
             "faq_title": "Często zadawane pytania",
@@ -2146,11 +2146,11 @@
                 "q1": "Kiedy powinienem kodować adresy URL?",
                 "a1": "Koduj adresy URL, gdy przekazujesz je jako parametry zapytania, przechowujesz w bazach danych lub gdy zawierają znaki specjalne, takie jak spacje, &, =, ? lub znaki spoza ASCII.",
                 "q2": "Jakie znaki wymagają kodowania?",
-                "a2": "Znaki zarezerwowane to : / ? # [ ] @ ! $ & ' ( ) * + , ; = a znaki niebezpieczne to spacje, <, >, \", {, }, |, \\, ^, ` i znaki spoza ASCII muszą być kodowane.",
+                "a2": "Znaki zarezerwowane to : \/ ? # [ ] @ ! $ & ' ( ) * + , ; = a znaki niebezpieczne to spacje, <, >, \", {, }, |, \\, ^, ` i znaki spoza ASCII muszą być kodowane.",
                 "q3": "Czy kodowanie URL to to samo co Base64?",
                 "a3": "Nie. Kodowanie URL konwertuje określone znaki na format %XX, podczas gdy Base64 koduje całe dane na inny zestaw znaków. Służą one różnym celom.",
                 "q4": "Czy mogę kodować całe adresy URL?",
-                "a4": "Tak, ale zazwyczaj koduje się tylko część ciągu zapytania. Kodowanie całego adresu URL, w tym protokołu (https://), jest mniej powszechne i może powodować problemy.",
+                "a4": "Tak, ale zazwyczaj koduje się tylko część ciągu zapytania. Kodowanie całego adresu URL, w tym protokołu (https:\/\/), jest mniej powszechne i może powodować problemy.",
                 "q5": "Czy moje dane są bezpieczne?",
                 "a5": "Tak! Całe kodowanie i dekodowanie odbywa się całkowicie w Twojej przeglądarce przy użyciu JavaScript. Twoje adresy URL nigdy nie opuszczają urządzenia ani nie są wysyłane na żaden serwer."
             }
@@ -2197,8 +2197,8 @@
         },
         "editor": {
             "label_input": "Wejście XML",
-            "ph_input": "<root><child>wartość</child></root>",
-            "btn_format": "Formatuj / Upiększ",
+            "ph_input": "<root><child>wartość<\/child><\/root>",
+            "btn_format": "Formatuj \/ Upiększ",
             "btn_minify": "Minimalizuj",
             "btn_copy": "Kopiuj"
         },
@@ -2222,14 +2222,14 @@
             "btn_copy": "Kopiuj",
             "btn_example": "Przykład",
             "label_input": "Wprowadź XML",
-            "ph_input": "<data><row><name>Jan</name><age>30</age></row></data>",
+            "ph_input": "<data><row><name>Jan<\/name><age>30<\/age><\/row><\/data>",
             "label_output": "Wyjście CSV",
             "ph_output": "Skonwertowany CSV pojawi się tutaj..."
         },
         "content": {
             "p1": "Nasz darmowy konwerter XML na CSV przekształca ustrukturyzowane dane XML w format wartości rozdzielanych przecinkami. Idealny do importowania danych XML do programu Excel, Arkuszy Google, baz danych i narzędzi analizy danych. Konwertuj złożone struktury XML na prosty, tabelaryczny format CSV w kilka sekund.",
             "what_title": "Co to jest konwersja XML na CSV?",
-            "what_desc": "Konwersja XML na CSV przekształca ustrukturyzowane dane eXtensible Markup Language w format wartości rozdzielanych przecinkami. Podczas gdy XML jest świetny dla złożonych struktur danych i interfejsów API, CSV jest prostszy i powszechnie obsługiwany przez aplikacje arkuszy kalkulacyjnych, co czyni go idealnym do analizy danych, raportowania i operacji importu/eksportu.",
+            "what_desc": "Konwersja XML na CSV przekształca ustrukturyzowane dane eXtensible Markup Language w format wartości rozdzielanych przecinkami. Podczas gdy XML jest świetny dla złożonych struktur danych i interfejsów API, CSV jest prostszy i powszechnie obsługiwany przez aplikacje arkuszy kalkulacyjnych, co czyni go idealnym do analizy danych, raportowania i operacji importu\/eksportu.",
             "features_title": "Funkcje",
             "features": {
                 "fast": {
@@ -2350,7 +2350,7 @@
             "btn_example": "Załaduj przykład",
             "btn_clear": "Wyczyść",
             "label_input": "Wejście XML",
-            "ph_input": "<' . '?x' . 'ml version=\"1.0\"?>n<root>n  <item>Twoje XML tutaj...</item>n</root>",
+            "ph_input": "<' . '?x' . 'ml version=\"1.0\"?>n<root>n  <item>Twoje XML tutaj...<\/item>n<\/root>",
             "label_output": "Wyjście JSON",
             "ph_output": "Skonwertowany JSON pojawi się tutaj..."
         },
@@ -2486,7 +2486,7 @@
         },
         "content": {
             "h2": "O konwerterze YAML na JSON",
-            "p1": "Konwertuj pliki konfiguracyjne YAML na format JSON natychmiastowo za pomocą naszego darmowego konwertera YAML na JSON online. Idealne dla programistów pracujących z plikami konfiguracyjnymi, potokami CI/CD i transformacją danych.",
+            "p1": "Konwertuj pliki konfiguracyjne YAML na format JSON natychmiastowo za pomocą naszego darmowego konwertera YAML na JSON online. Idealne dla programistów pracujących z plikami konfiguracyjnymi, potokami CI\/CD i transformacją danych.",
             "features_title": "Kluczowe funkcje",
             "features": {
                 "syntax": {
@@ -2521,7 +2521,7 @@
                     "desc": "Konwertuj pliki konfiguracyjne YAML na JSON dla aplikacji."
                 },
                 "pipeline": {
-                    "title": "Potoki CI/CD",
+                    "title": "Potoki CI\/CD",
                     "desc": "Przekształcaj konfiguracje potoków YAML na format JSON."
                 },
                 "k8s": {

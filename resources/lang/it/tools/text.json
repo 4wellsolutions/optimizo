@@ -40,9 +40,6 @@
             "hero_subtitle": "Trova i cambiamenti tra due versioni di un testo",
             "p1": "Questo strumento ti permette di confrontare rapidamente due blocchi di testo o file. Le differenze, le cancellazioni e le aggiunte sono evidenziate per una facile analisi.",
             "features_title": "Caratteristiche",
-            "uses_title": "Casi d'uso",
-            "how_title": "Come si usa",
-            "faq_title": "Domande frequenti",
             "features": {
                 "visual": {
                     "title": "Confronto Visivo",
@@ -69,6 +66,7 @@
                     "desc": "Strumento di confronto file di alta qualità disponibile senza costi, senza registrazione richiesta."
                 }
             },
+            "uses_title": "Casi d'uso",
             "uses": {
                 "code": {
                     "title": "Revisione del Codice",
@@ -95,6 +93,7 @@
                     "desc": "Confronta blocchi di testo originali e tradotti per garantire la coerenza della struttura e della lunghezza."
                 }
             },
+            "how_title": "Come si usa",
             "how_steps": {
                 "1": {
                     "title": "Incolla Testo Originale",
@@ -113,6 +112,7 @@
                     "desc": "Vedi i risultati qui sotto. Le righe verdi sono aggiunte, quelle rosse sono rimosse."
                 }
             },
+            "faq_title": "Domande frequenti",
             "faq": {
                 "q1": "I miei dati testuali sono al sicuro?",
                 "a1": "Assolutamente. Questo strumento gira interamente lato client tramite JavaScript. Nessun dato viene trasmesso ai nostri server.",
@@ -206,52 +206,8 @@
                     "desc": "Nessun limite o registrazione richiesta"
                 }
             },
-            "faq": {
-                "q1": "Come formattare l'input Morse?",
-                "a1": "Separa ogni lettera con uno spazio. Usa / per gli spazi tra le parole.",
-                "q2": "E se faccio un errore?",
-                "a2": "I pattern Morse non validi verranno saltati.",
-                "q3": "Posso decodificare i numeri?",
-                "a3": "Sì! Lo strumento decodifica i numeri da 0 a 9.",
-                "q4": "Come separo le parole?",
-                "a4": "Usa una barra (/) per separare le parole in codice Morse.",
-                "q5": "Questo strumento è gratuito?",
-                "a5": "Sì! Completamente gratuito e senza limiti."
-            },
-            "how_title": "Come Decodificare il Morse",
-            "examples_title": "Esempi di Codice Morse",
-            "faq_title": "Domande Frequenti sul Morse",
-            "how_steps": {
-                "1": {
-                    "title": "Inserisci il Codice",
-                    "desc": "Scrivi o incolla il codice Morse."
-                },
-                "5": {
-                    "title": "Copia",
-                    "desc": "Salva il testo tradotto."
-                },
-                "2": {
-                    "title": "Click Decode:",
-                    "desc": "Press \"Decode to Text\" button"
-                },
-                "3": {
-                    "title": "Review Output:",
-                    "desc": "Check the decoded text Risultato"
-                },
-                "4": {
-                    "title": "Copia Risultato:",
-                    "desc": "Click \"Copia\" to Copia to clipboard"
-                }
-            },
+            "uses_title": "🎯 Common Use Cases",
             "uses": {
-                "edu": {
-                    "title": "Istruzione",
-                    "desc": "Teach students about communication and encoding systems"
-                },
-                "radio": {
-                    "title": "Radioamatori",
-                    "desc": "Decode amateur radio transmissions and practice CW"
-                },
                 "learn": {
                     "title": "📚 Learning Morse Code",
                     "desc": "Practice decoding Morse code to improve your skills"
@@ -264,20 +220,62 @@
                     "title": "🎮 Gaming & Puzzles",
                     "desc": "Solve Morse code puzzles in games and escape rooms"
                 },
+                "radio": {
+                    "title": "Radioamatori",
+                    "desc": "Decode amateur radio transmissions and practice CW"
+                },
+                "edu": {
+                    "title": "Istruzione",
+                    "desc": "Teach students about communication and encoding systems"
+                },
                 "emergency": {
                     "title": "🚨 Emergency Signals",
                     "desc": "Decode distress signals and emergency communications"
                 }
             },
-            "uses_title": "🎯 Common Use Cases",
-            "samples": []
+            "how_title": "Come Decodificare il Morse",
+            "how_steps": {
+                "1": {
+                    "title": "Inserisci il Codice",
+                    "desc": "Scrivi o incolla il codice Morse."
+                },
+                "2": {
+                    "title": "Click Decode:",
+                    "desc": "Press \"Decode to Text\" button"
+                },
+                "3": {
+                    "title": "Review Output:",
+                    "desc": "Check the decoded text Risultato"
+                },
+                "4": {
+                    "title": "Copia Risultato:",
+                    "desc": "Click \"Copia\" to Copia to clipboard"
+                },
+                "5": {
+                    "title": "Copia",
+                    "desc": "Salva il testo tradotto."
+                }
+            },
+            "examples_title": "Esempi di Codice Morse",
+            "faq_title": "Domande Frequenti sul Morse",
+            "faq": {
+                "q1": "Come formattare l'input Morse?",
+                "a1": "Separa ogni lettera con uno spazio. Usa \/ per gli spazi tra le parole.",
+                "q2": "E se faccio un errore?",
+                "a2": "I pattern Morse non validi verranno saltati.",
+                "q3": "Posso decodificare i numeri?",
+                "a3": "Sì! Lo strumento decodifica i numeri da 0 a 9.",
+                "q4": "Come separo le parole?",
+                "a4": "Usa una barra (\/) per separare le parole in codice Morse.",
+                "q5": "Questo strumento è gratuito?",
+                "a5": "Sì! Completamente gratuito e senza limiti."
+            }
         },
         "js": {
             "error_empty": "Inserisci il codice Morse da decodificare",
             "success_decode": "Decodifica completata !",
-            "success_copy": "Copiato negli appunti!",
-            "error_no_copy": "Niente da copiare! Decodifica prima del codice Morse.",
-            "error_copy": "Nothing to copy! Please decode some Morse code first."
+            "error_copy": "Nothing to copy! Please decode some Morse code first.",
+            "success_copy": "Copiato negli appunti!"
         }
     },
     "text-reverser": {
@@ -353,12 +351,6 @@
             },
             "how_to": {
                 "title": "Come si usa",
-                "list": [
-                    "Inserisci o incolla il tuo testo nell'area di input.",
-                    "Scegli se invertire tutto o riga per riga.",
-                    "Clicca sul pulsante Inverti.",
-                    "Copia il risultato invertito."
-                ],
                 "step1": "Inserisci Testo",
                 "step1_desc": "Digita o incolla il tuo testo",
                 "step2": "Clicca Inverti",
@@ -394,8 +386,8 @@
         "js": {
             "error_empty": "Inserisci del testo da invertire",
             "success_reverse": "Testo invertito con successo!",
-            "success_copy": "Copiato!",
-            "error_no_copy": "Niente da copiare!"
+            "error_no_copy": "Niente da copiare!",
+            "success_copy": "Copiato!"
         }
     },
     "text-to-morse-converter": {
@@ -414,13 +406,8 @@
             "label_output": "Output Codice Morse",
             "ph_output": "... --- ..."
         },
-        "js": {
-            "error_empty": "Inserisci del testo da convertire",
-            "success_convert": "Convertito in Morse con successo!",
-            "success_copy": "Copiato!",
-            "error_no_copy": "Niente da copiare! Converti prima del testo."
-        },
         "content": {
+            "p1": "Converti istantaneamente testo in codice Morse con il nostro strumento gratuito. Inserisci lettere e numeri per ottenere la codifica internazionale in punti e linee.",
             "features": {
                 "standard": {
                     "title": "Codice Morse Standard",
@@ -447,6 +434,7 @@
                     "desc": "Nessun limite o registrazione richiesta"
                 }
             },
+            "uses_title": "Casi d'Uso Comuni",
             "uses": {
                 "learning": {
                     "title": "Imparare il Codice Morse",
@@ -493,6 +481,7 @@
                 "numbers": "Numeri:",
                 "phrase": "Frase:"
             },
+            "faq_title": "FAQ sul Codice Morse",
             "faq": {
                 "q1": "Cos'è il codice Morse?",
                 "a1": "Il codice Morse è un metodo di codifica del testo che utilizza punti (.) e linee (-) per rappresentare lettere e numeri.",
@@ -504,10 +493,13 @@
                 "a4": "Sì! È ancora utilizzato in aviazione, comunicazioni marittime, radioamatori e come strumento di accessibilità.",
                 "q5": "Questo strumento è gratuito?",
                 "a5": "Sì! Completamente gratuito e senza limiti."
-            },
-            "p1": "Converti istantaneamente testo in codice Morse con il nostro strumento gratuito. Inserisci lettere e numeri per ottenere la codifica internazionale in punti e linee.",
-            "uses_title": "Casi d'Uso Comuni",
-            "faq_title": "FAQ sul Codice Morse"
+            }
+        },
+        "js": {
+            "error_empty": "Inserisci del testo da convertire",
+            "success_convert": "Convertito in Morse con successo!",
+            "error_no_copy": "Niente da copiare! Converti prima del testo.",
+            "success_copy": "Copiato!"
         }
     },
     "word-counter": {

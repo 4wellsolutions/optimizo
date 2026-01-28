@@ -40,9 +40,6 @@
             "hero_subtitle": "Finn forskjeller mellom to tekster på sekunder.",
             "p1": "Dette verktøyet lar deg raskt se hva som er endret mellom to versjoner av en tekst eller kodebit.",
             "features_title": "Funksjoner",
-            "uses_title": "Vanlige brukstilfeller",
-            "how_title": "Hvordan bruke",
-            "faq_title": "Ofte stilte spørsmål",
             "features": {
                 "visual": {
                     "title": "Visuell sammenligning",
@@ -69,6 +66,7 @@
                     "desc": "Veksøy for sammenligning av filer av høy kvalitet tilgjengelig gratis, uten registrering."
                 }
             },
+            "uses_title": "Vanlige brukstilfeller",
             "uses": {
                 "code": {
                     "title": "Kodegjennomgang",
@@ -95,6 +93,7 @@
                     "desc": "Sammenlign originale og oversatte tekstblokker for å sikre struktur og lengde konsistens."
                 }
             },
+            "how_title": "Hvordan bruke",
             "how_steps": {
                 "1": {
                     "title": "Lim inn originaltekst",
@@ -113,6 +112,7 @@
                     "desc": "Se resultatene nedenfor. Grønne linjer er lagt til, røde linjer er fjernet."
                 }
             },
+            "faq_title": "Ofte stilte spørsmål",
             "faq": {
                 "q1": "Er tekstdataene mine trygge?",
                 "a1": "Absolutt. Dette verktøyet kjører helt i nettleseren ved hjelp av JavaScript. Ingen data blir sendt til våre servere.",
@@ -168,7 +168,7 @@
         },
         "editor": {
             "label_input": "Inndata (morsesignaler)",
-            "ph_input": null,
+            "ph_input": "... --- ...",
             "btn_decode": "Dekoder til tekst",
             "btn_clear": "Tøm",
             "btn_copy": "Kopier",
@@ -257,17 +257,16 @@
                 }
             },
             "examples_title": "Morsekodeeksempler",
-            "samples": [],
             "faq_title": "❓ Ofte stilte spørsmål",
             "faq": {
                 "q1": "Hvordan formaterer jeg morsekodeinndata?",
-                "a1": "Skill hver bokstav med et mellomrom. Bruk / for ordmellomrom. Eksempel: \"... --- ...\" for SOS.",
+                "a1": "Skill hver bokstav med et mellomrom. Bruk \/ for ordmellomrom. Eksempel: \"... --- ...\" for SOS.",
                 "q2": "Hva om jeg gjør en feil?",
                 "a2": "Ugyldige morsekodemønstre vil bli hoppet over. Sørg for at prikker og streker er atskilt med mellomrom.",
                 "q3": "Kan jeg dekode tall?",
                 "a3": "Ja! Verktøyet dekoder tallene 0-9 fra deres morsekodemønstre.",
                 "q4": "Hvordan skiller jeg ord?",
-                "a4": "Bruk en skråstrek (/) for å skille ord i morsekode.",
+                "a4": "Bruk en skråstrek (\/) for å skille ord i morsekode.",
                 "q5": "Er dette verktøyet gratis?",
                 "a5": "Ja! Helt gratis uten grenser. All behandling skjer i nettleseren din av hensyn til personvernet."
             }
@@ -405,7 +404,7 @@
             "btn_clear": "Tøm",
             "btn_copy": "Kopier",
             "label_output": "Morsesignaler (utdata)",
-            "ph_output": null
+            "ph_output": "... --- ..."
         },
         "content": {
             "p1": "Konverter tekst til morsesignaler umiddelbart. Morse bruker prikker (.) og streker (-) for å representere bokstaver og tall.",

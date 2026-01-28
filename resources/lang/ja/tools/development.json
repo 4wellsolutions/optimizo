@@ -22,7 +22,7 @@
         },
         "content": {
             "what_title": "Base64 エンコードとは？",
-            "what_desc": "Base64 は、バイナリデータを ASCII 文字列形式で表現するエンコード方式です。主に、テキストのみを扱うように設計された媒体を通じてデータを保存・転送するために使用されます。当ツールの無料 Base64 エンコーダー & デコーダーを使用すると、開発者やデータアナリストは素早くテキストを Base64 に変換したり、Base64 文字列を読み取り可能なテキストに戻したりできます。API 開発、データ転送、メールの添付ファイル、HTML/CSS への画像埋め込み、JSON 内のバイナリデータ処理に最適です。",
+            "what_desc": "Base64 は、バイナリデータを ASCII 文字列形式で表現するエンコード方式です。主に、テキストのみを扱うように設計された媒体を通じてデータを保存・転送するために使用されます。当ツールの無料 Base64 エンコーダー & デコーダーを使用すると、開発者やデータアナリストは素早くテキストを Base64 に変換したり、Base64 文字列を読み取り可能なテキストに戻したりできます。API 開発、データ転送、メールの添付ファイル、HTML\/CSS への画像埋め込み、JSON 内のバイナリデータ処理に最適です。",
             "features": {
                 "secure": {
                     "title": "安全な処理",
@@ -38,7 +38,7 @@
                 }
             },
             "how_to": {
-                "title": "Base64 エンコーダー/デコーダーの使い方",
+                "title": "Base64 エンコーダー\/デコーダーの使い方",
                 "encode": {
                     "title": "テキストをエンコードする",
                     "step1": "「Base64 へエンコード」タブをクリックします",
@@ -79,14 +79,14 @@
                 "desc": "Base64 は、バイナリデータを ASCII テキスト形式に変換する方式です。当ツールの無料 Base64 エンコーダー & デコーダーは、開発者やシステム管理者がテキストを Base64 に、あるいはその逆に即座に変換するのを助けます。API 認証、データ URI、メール添付、安全なデータ転送に最適です。プライバシー保護のため、すべての処理はブラウザ内で行われます。",
                 "works_title": "🔄 Base64 の仕組み",
                 "works_encoding": "64種類の文字を使用して、バイナリデータを ASCII テキストに変換します",
-                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (およびパディング用の =)",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, \/ (およびパディング用の =)",
                 "works_decoding": "Base64 テキストを元のバイナリデータに戻します",
                 "works_decoding_sub": "エンコードプロセスを完璧に逆転させます",
                 "cases_title": "✅ 一般的な使用例",
                 "case_api": "API 認証",
                 "case_api_desc": "HTTP ヘッダーの Basic 認証用資格情報のエンコード",
                 "case_uri": "データ URI",
-                "case_uri_desc": "HTML/CSS への画像やファイルの直接埋め込み",
+                "case_uri_desc": "HTML\/CSS への画像やファイルの直接埋め込み",
                 "case_email": "メール添付",
                 "case_email_desc": "メール転送のためのバイナリファイルエンコード",
                 "case_url": "URL パラメータ",
@@ -101,13 +101,13 @@
                     "暗号化ではないため、セキュリティには適切なアルゴリズムを使用してください",
                     "テキスト専用システムでバイナリデータを扱うのに最適です",
                     "デコードしたデータは使用前に必ず検証してください",
-                    "URL 用には URL-safe Base64 (+/= を -_ に置換) を使用してください"
+                    "URL 用には URL-safe Base64 (+\/= を -_ に置換) を使用してください"
                 ]
             },
             "faq": {
                 "title": "❓ よくある質問",
                 "q1": "Base64 エンコードは安全ですか？",
-                "a1": "いいえ！Base64 は「暗号化」ではなく、単なる「エンコード（変換）」です。誰でも即座にデコードできます。機密情報の保護には Base64 だけでなく、AES、RSA、TLS/SSL などの適切な暗号化アルゴリズムを使用してください。",
+                "a1": "いいえ！Base64 は「暗号化」ではなく、単なる「エンコード（変換）」です。誰でも即座にデコードできます。機密情報の保護には Base64 だけでなく、AES、RSA、TLS\/SSL などの適切な暗号化アルゴリズムを使用してください。",
                 "q2": "なぜ Base64 にするとファイルサイズが大きくなるのですか？",
                 "a2": "3バイトのバイナリデータを4つの ASCII 文字で表現するため、データサイズは約33%増加します。これはバイナリデータをテキスト専用システムで安全に扱うためのトレードオフです。",
                 "q3": "Base64 は何に使われますか？",
@@ -115,7 +115,7 @@
                 "q4": "データはサーバーに送信されますか？",
                 "a4": "いいえ！すべての処理は JavaScript を使用してブラウザ上で完結します。データがデバイスの外に出ることや、保存・ログ記録されることはありません。プライバシーは完全に守られます。",
                 "q5": "画像を Base64 に変換できますか？",
-                "a5": "はい！当ツールはテキスト用ですが、専用ツールで画像を変換できます。Base64 化された画像は data URI (data:image/png;base64,...) として HTML/CSS に直接埋め込めます。小さな画像には便利ですが、多用するとページサイズが大きくなります。"
+                "a5": "はい！当ツールはテキスト用ですが、専用ツールで画像を変換できます。Base64 化された画像は data URI (data:image\/png;base64,...) として HTML\/CSS に直接埋め込めます。小さな画像には便利ですが、多用するとページサイズが大きくなります。"
             }
         },
         "js": {
@@ -153,10 +153,10 @@
             "btn_format": "コードを整形",
             "label_input": "入力コード",
             "btn_clear": "クリア",
-            "ph_input": "// ここにコードを貼り付けてください...",
+            "ph_input": "\/\/ ここにコードを貼り付けてください...",
             "label_output": "整形後のコード",
             "btn_copy": "コピー",
-            "ph_output": "// 整形されたコードがここに表示されます..."
+            "ph_output": "\/\/ 整形されたコードがここに表示されます..."
         },
         "content": {
             "hero_title": "無料オンラインコード整形ツール",
@@ -241,9 +241,9 @@
             "choose": "-- 選択してください --",
             "options": {
                 "every_minute": "毎分 (* * * * *)",
-                "every_5_minutes": "5分ごと (*/5 * * * *)",
-                "every_15_minutes": "15分ごと (*/15 * * * *)",
-                "every_30_minutes": "30分ごと (*/30 * * * *)",
+                "every_5_minutes": "5分ごと (*\/5 * * * *)",
+                "every_15_minutes": "15分ごと (*\/15 * * * *)",
+                "every_30_minutes": "30分ごと (*\/30 * * * *)",
                 "every_hour": "毎時 (0 * * * *)",
                 "every_day_midnight": "毎日深夜0時 (0 0 * * *)",
                 "every_week": "毎週 (0 0 * * 0)",
@@ -260,7 +260,7 @@
             "weekday": "曜日",
             "every_weekday": "毎曜日 (*)",
             "command": "実行するコマンド",
-            "ph_command": "/usr/bin/php /path/to/script.php",
+            "ph_command": "\/usr\/bin\/php \/path\/to\/script.php",
             "generated_cron": "生成された Cron 式",
             "btn_copy": "Cron をコピー",
             "btn_clear": "リセット"
@@ -387,18 +387,18 @@
             },
             "how_title": "📚 使い方",
             "how_steps": {
-                "1": "<strong>アクションを選択:</strong> 圧縮する場合は「CSS を圧縮」、整形する場合は「CSS を整形」をクリックします。",
-                "2": "<strong>結果を確認:</strong> 出力フィールドに処理後のコードと統計情報が表示されます。",
-                "3": "<strong>コピー:</strong> 「コピー」をクリックしてクリップボードに保存します。",
-                "4": "<strong>本番環境で使用:</strong> 元のソースファイルを圧縮版で置き換えます。",
+                "1": "<strong>アクションを選択:<\/strong> 圧縮する場合は「CSS を圧縮」、整形する場合は「CSS を整形」をクリックします。",
+                "2": "<strong>結果を確認:<\/strong> 出力フィールドに処理後のコードと統計情報が表示されます。",
+                "3": "<strong>コピー:<\/strong> 「コピー」をクリックしてクリップボードに保存します。",
+                "4": "<strong>本番環境で使用:<\/strong> 元のソースファイルを圧縮版で置き換えます。",
                 "5": "縮小された CSS をダウンロードまたはコピーし、運用 Web サイトで使用すると、ファイル サイズが削減され、読み込み時間が短縮されます。"
             },
             "best_practices_title": "💡 ベストプラクティス",
             "best_practices_list": {
-                "1": "<strong>本番用は圧縮:</strong> 開発環境では読みやすさを優先し、本番環境でのみ圧縮版を使用してください。",
-                "2": "<strong>ファイルの結合:</strong> 圧縮前に複数の CSS ファイルを1つにまとめると、より効果的です。",
-                "3": "<strong>テストの実施:</strong> 圧縮後にサイトのデザインが崩れていないか必ず確認してください。",
-                "4": "<strong>自動化の検討:</strong> ビルドツールなどのプロセスに圧縮を組み込むと効率的です。",
+                "1": "<strong>本番用は圧縮:<\/strong> 開発環境では読みやすさを優先し、本番環境でのみ圧縮版を使用してください。",
+                "2": "<strong>ファイルの結合:<\/strong> 圧縮前に複数の CSS ファイルを1つにまとめると、より効果的です。",
+                "3": "<strong>テストの実施:<\/strong> 圧縮後にサイトのデザインが崩れていないか必ず確認してください。",
+                "4": "<strong>自動化の検討:<\/strong> ビルドツールなどのプロセスに圧縮を組み込むと効率的です。",
                 "5": "開発とデバッグの目的で、縮小されていないバージョンを保持してください。"
             },
             "faq_title": "❓ よくある質問",
@@ -439,7 +439,7 @@
             "key_ph": "キー (例: Authorization)",
             "value_ph": "値 (例: Bearer token)",
             "add_header": "+ ヘッダーを追加",
-            "raw_data_label": "生のデータ (JSON/テキスト)",
+            "raw_data_label": "生のデータ (JSON\/テキスト)",
             "generated_label": "生成されたコマンド",
             "btn_copy": "コマンドをコピー"
         },
@@ -458,7 +458,7 @@
             "mode_encode": "HTML エンコード",
             "mode_decode": "HTML デコード",
             "label_input_encode": "エンコードする HTML を入力",
-            "ph_input_encode": "<div>こんにちは & ようこそ</div>",
+            "ph_input_encode": "<div>こんにちは & ようこそ<\/div>",
             "btn_encode": "HTML をエンコード",
             "btn_clear": "クリア",
             "btn_copy": "コピー",
@@ -525,7 +525,7 @@
                 "1": "入力フィールドに HTML またはテキストを貼り付けます",
                 "2": "変換ボタン（エンコードまたはデコード）をクリックします",
                 "3": "結果をクリップボードにコピーします",
-                "4": "エンコード/デコードされた結果をコピーして、HTML、XML、または Web アプリケーションで使用します。"
+                "4": "エンコード\/デコードされた結果をコピーして、HTML、XML、または Web アプリケーションで使用します。"
             },
             "examples_title": "💡 HTML エンコードの例",
             "examples": {
@@ -539,7 +539,7 @@
                 },
                 "3": {
                     "title": "特殊文字のエンコード",
-                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quo;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;\/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quo;XSS&amp;quot;)&amp;lt;\/script&amp;gt;"
                 }
             },
             "faq_title": "❓ よくある質問",
@@ -584,12 +584,12 @@
             "why_desc": "HTML の圧縮は、ウェブパフォーマンスの最適化において重要です。HTML ファイルが小さくなると、ダウンロードが速くなり、帯域幅の節約、そしてページ読み込み時間の短縮に繋がります。これは、大量の HTML コンテンツを持つ大規模なウェブサイトで特に効果的です。圧縮された HTML はサーバーの負荷を軽減し、ユーザー体験を向上させます。",
             "features_title": "主な機能",
             "features_list": {
-                "minify": "<strong>HTML 圧縮:</strong> 空白やコメントを削除してファイルサイズを削減",
-                "beautify": "<strong>HTML 整形:</strong> 適切なインデントで HTML を整形",
-                "instant": "<strong>即時処理:</strong> リアルタイムで HTML を処理",
-                "copy": "<strong>出力をコピー:</strong> 圧縮された HTML を簡単にコピー",
-                "secure": "<strong>安全・プライベート:</strong> すべての処理はブラウザ内で完結",
-                "free": "<strong>無料で利用可能:</strong> 登録不要"
+                "minify": "<strong>HTML 圧縮:<\/strong> 空白やコメントを削除してファイルサイズを削減",
+                "beautify": "<strong>HTML 整形:<\/strong> 適切なインデントで HTML を整形",
+                "instant": "<strong>即時処理:<\/strong> リアルタイムで HTML を処理",
+                "copy": "<strong>出力をコピー:<\/strong> 圧縮された HTML を簡単にコピー",
+                "secure": "<strong>安全・プライベート:<\/strong> すべての処理はブラウザ内で完結",
+                "free": "<strong>無料で利用可能:<\/strong> 登録不要"
             },
             "how_title": "使い方",
             "how_steps": {
@@ -643,11 +643,11 @@
             "about_p1": "当ツールの無料オンライン HTML Markdown 変換ツールを使用すると、HTML コードをクリーンで読みやすい Markdown 形式に即座に変換できます。ドキュメント、README ファイル、コンテンツ管理システム（CMS）用に HTML コンテンツを Markdown に変換する必要がある開発者、テクニカルライター、コンテンツクリエイターに最適です。",
             "features_title": "✨ 主な機能",
             "features_list": {
-                "1": "✅ <strong>書式の保持:</strong> 見出し、リスト、リンク、強調などを維持します",
-                "2": "✅ <strong>クリーンな出力:</strong> 読みやすく、適切にフォーマットされた Markdown を生成します",
-                "3": "✅ <strong>インストール不要:</strong> ブラウザ上で直接動作します",
-                "4": "✅ <strong>完全無料:</strong> 制限なしで永久に無料です",
-                "5": "✅ <strong>プライバシー重視:</strong> すべての変換はブラウザ内でローカルに行われます",
+                "1": "✅ <strong>書式の保持:<\/strong> 見出し、リスト、リンク、強調などを維持します",
+                "2": "✅ <strong>クリーンな出力:<\/strong> 読みやすく、適切にフォーマットされた Markdown を生成します",
+                "3": "✅ <strong>インストール不要:<\/strong> ブラウザ上で直接動作します",
+                "4": "✅ <strong>完全無料:<\/strong> 制限なしで永久に無料です",
+                "5": "✅ <strong>プライバシー重視:<\/strong> すべての変換はブラウザ内でローカルに行われます",
                 "6": "技術文書のコード ブロックと構文の強調表示を保持します。"
             },
             "uses_title": "🎯 主な活用シーン",
@@ -748,13 +748,13 @@
             "why_desc": "当ツールの無料 HTML ビューアは、開発者やデザイナーにとって多くの利点があります。まず、ファイルを作成したり開発環境を構築したりすることなく、即座に視覚的なフィードバックを得られます。次に、完全にブラウザベースであるため、ソフトウェアをインストールすることなくどこでも使用できます。さらに、クイックテスト、デバッグ、HTML 学習に最適です。コードと出力を同時に確認できる構成により、HTML 要素がどのようにレンダリングされるかをより深く理解できます。",
             "features_title": "主な機能",
             "features_list": {
-                "preview": "<strong>リアルタイムプレビュー:</strong> 入力と同時に HTML レンダリング結果を即座に表示",
-                "layout": "<strong>分割ビュー:</strong> コードエディタとプレビューパネルを並べて表示",
-                "syntax": "<strong>構文ハイライト:</strong> 色分けされた読みやすいコード表示",
-                "sample": "<strong>サンプルコード:</strong> 例題となる HTML を読み込んで素早く開始",
-                "no_install": "<strong>インストール不要:</strong> ブラウザ上で直接動作",
-                "free": "<strong>無料で利用可能:</strong> 登録や支払いは一切不要",
-                "secure": "<strong>安全:</strong> すべての処理はブラウザ内で行われます"
+                "preview": "<strong>リアルタイムプレビュー:<\/strong> 入力と同時に HTML レンダリング結果を即座に表示",
+                "layout": "<strong>分割ビュー:<\/strong> コードエディタとプレビューパネルを並べて表示",
+                "syntax": "<strong>構文ハイライト:<\/strong> 色分けされた読みやすいコード表示",
+                "sample": "<strong>サンプルコード:<\/strong> 例題となる HTML を読み込んで素早く開始",
+                "no_install": "<strong>インストール不要:<\/strong> ブラウザ上で直接動作",
+                "free": "<strong>無料で利用可能:<\/strong> 登録や支払いは一切不要",
+                "secure": "<strong>安全:<\/strong> すべての処理はブラウザ内で行われます"
             },
             "how_title": "HTML ビューアの使い方",
             "how_steps": {
@@ -808,12 +808,12 @@
             "why_desc": "JavaScript の圧縮は、ウェブパフォーマンスの最適化において不可欠です。JS ファイルが小さくなると、ダウンロードが速くなり、帯域幅の節約、そしてページ読み込み時間の短縮に繋がります。これは、モバイルユーザーや通信環境が遅いユーザーにとって特に重要です。圧縮された JavaScript はサーバーの負荷を軽減し、ユーザー体験を向上させます。本番環境のサイトにおいて、圧縮は Core Web Vitals スコアを改善するための標準的なベストプラクティスです。",
             "features_title": "主な機能",
             "features_list": {
-                "minify": "<strong>JS 圧縮:</strong> 空白やコメントを削除してファイルサイズを削減",
-                "beautify": "<strong>JS 整形:</strong> 適切なインデントで JS を整形",
-                "instant": "<strong>即時処理:</strong> リアルタイムで JavaScript を処理",
-                "copy": "<strong>出力をコピー:</strong> 圧縮済み JS を簡単にコピー",
-                "secure": "<strong>安全・プライベート:</strong> すべての処理はブラウザ内で完結",
-                "free": "<strong>無料で利用可能:</strong> 登録不要"
+                "minify": "<strong>JS 圧縮:<\/strong> 空白やコメントを削除してファイルサイズを削減",
+                "beautify": "<strong>JS 整形:<\/strong> 適切なインデントで JS を整形",
+                "instant": "<strong>即時処理:<\/strong> リアルタイムで JavaScript を処理",
+                "copy": "<strong>出力をコピー:<\/strong> 圧縮済み JS を簡単にコピー",
+                "secure": "<strong>安全・プライベート:<\/strong> すべての処理はブラウザ内で完結",
+                "free": "<strong>無料で利用可能:<\/strong> 登録不要"
             },
             "how_title": "使い方",
             "how_steps": [
@@ -908,7 +908,7 @@
                     "desc": "MongoDB、CouchDB、Firebase などの NoSQL データベースの JSON データを読みやすく整形します。"
                 },
                 "export": {
-                    "title": "データのエクスポート/インポート",
+                    "title": "データのエクスポート\/インポート",
                     "desc": "JSON データの出力準備や、インポートデータの構造・構文が正しいか検証します。"
                 }
             },
@@ -1030,19 +1030,19 @@
             },
             "how_title": "📚 使い方",
             "how_steps": [
-                "<strong>JSON を貼り付け:</strong> 入力フィールドに JSON データをコピー＆ペーストします",
-                "<strong>解析:</strong> 「JSON を解析」をクリックして構造を検証し、視覚化します",
-                "<strong>整形:</strong> 「整形 (Beautify)」をクリックして適切なインデントを適用します",
-                "<strong>圧縮:</strong> 「圧縮 (Minify)」をクリックして空白を削除し、軽量化します",
-                "<strong>ツリー表示:</strong> ツリービュー形式で階層構造を確認します"
+                "<strong>JSON を貼り付け:<\/strong> 入力フィールドに JSON データをコピー＆ペーストします",
+                "<strong>解析:<\/strong> 「JSON を解析」をクリックして構造を検証し、視覚化します",
+                "<strong>整形:<\/strong> 「整形 (Beautify)」をクリックして適切なインデントを適用します",
+                "<strong>圧縮:<\/strong> 「圧縮 (Minify)」をクリックして空白を削除し、軽量化します",
+                "<strong>ツリー表示:<\/strong> ツリービュー形式で階層構造を確認します"
             ],
             "tips_title": "💡 JSON のベストプラクティス",
             "tips_list": [
-                "<strong>ダブルクォートを使用:</strong> JSON では文字列にシングルクォートではなくダブルクォートが必要です",
-                "<strong>末尾のカンマに注意:</strong> オブジェクトや配列の最後の項目の後のカンマを削除してください",
-                "<strong>適切なデータ型:</strong> 数値は引用符なし、真偽値は true/false、空の値には null を使用します",
-                "<strong>定期的な検証:</strong> 本番環境へのデプロイ前に必ず JSON を検証してください",
-                "<strong>可読性のための整形:</strong> デバッグやメンテナンスを容易にするために JSON を整形しましょう"
+                "<strong>ダブルクォートを使用:<\/strong> JSON では文字列にシングルクォートではなくダブルクォートが必要です",
+                "<strong>末尾のカンマに注意:<\/strong> オブジェクトや配列の最後の項目の後のカンマを削除してください",
+                "<strong>適切なデータ型:<\/strong> 数値は引用符なし、真偽値は true\/false、空の値には null を使用します",
+                "<strong>定期的な検証:<\/strong> 本番環境へのデプロイ前に必ず JSON を検証してください",
+                "<strong>可読性のための整形:<\/strong> デバッグやメンテナンスを容易にするために JSON を整形しましょう"
             ],
             "faq_title": "❓ よくある質問",
             "faq": {
@@ -1099,12 +1099,12 @@
             "p1": "当ツールの無料 JSON CSV 変換ツールは、開発者、データアナリスト、IT 専門家向けに設計された強力なツールです。構造化された JSON データを、クリーンで整形された CSV（カンマ区切り）または TSV ファイルへ簡単に変換できます。Excel、Google スプレッドシート、またはデータベースへのインポート準備など、当ツールは 100% クライアントサイドでの処理により、正確さとスピードを保証します。",
             "features_title": "主な機能",
             "features_list": {
-                "fast": "<strong>即時変換:</strong> ミリ秒単位で結果を表示",
-                "secure": "<strong>プライバシー保護:</strong> すべてのデータはブラウザ内に留まります",
-                "format": "<strong>スマート・フラット化:</strong> 入れ子になった JSON オブジェクトを正しく処理",
-                "custom": "<strong>カスタム区切り文字:</strong> カンマ、セミコロン、タブから選択可能",
-                "export": "<strong>簡単な書き出し:</strong> クリップボードへのコピーや .csv ファイルのダウンロードが可能",
-                "free": "<strong>100% 無料:</strong> 制限なし、登録不要"
+                "fast": "<strong>即時変換:<\/strong> ミリ秒単位で結果を表示",
+                "secure": "<strong>プライバシー保護:<\/strong> すべてのデータはブラウザ内に留まります",
+                "format": "<strong>スマート・フラット化:<\/strong> 入れ子になった JSON オブジェクトを正しく処理",
+                "custom": "<strong>カスタム区切り文字:<\/strong> カンマ、セミコロン、タブから選択可能",
+                "export": "<strong>簡単な書き出し:<\/strong> クリップボードへのコピーや .csv ファイルのダウンロードが可能",
+                "free": "<strong>100% 無料:<\/strong> 制限なし、登録不要"
             },
             "uses_title": "主な活用シーン",
             "uses": {
@@ -1226,10 +1226,10 @@
             },
             "how_title": "使い方",
             "how_steps": [
-                "対象となるデータベースの <strong>テーブル名</strong> を入力します",
-                "<strong>JSON</strong> を貼り付けます（配列またはオブジェクトである必要があります）",
-                "<strong>SQL を生成</strong> をクリックしてスクリプトを作成します",
-                "SQL 出力をクリップボードに <strong>コピー</strong> します"
+                "対象となるデータベースの <strong>テーブル名<\/strong> を入力します",
+                "<strong>JSON<\/strong> を貼り付けます（配列またはオブジェクトである必要があります）",
+                "<strong>SQL を生成<\/strong> をクリックしてスクリプトを作成します",
+                "SQL 出力をクリップボードに <strong>コピー<\/strong> します"
             ],
             "faq_title": "よくある質問",
             "faq": {
@@ -1430,7 +1430,7 @@
                     "desc": "JSON 設定を YAML 設定ファイルに変換します。"
                 },
                 "cicd": {
-                    "title": "CI/CD パイプライン",
+                    "title": "CI\/CD パイプライン",
                     "desc": "JSON データから YAML のパイプライン定義を準備します。"
                 },
                 "cloud": {
@@ -1536,7 +1536,7 @@
             "hero_subtitle": "JSON Web Token を即座にデコードして検査",
             "p1": "当ツールの無料 JWT デコーダを使用すると、JSON Web Token (JWT) をデコードして、ヘッダー、ペイロード、署名のコンポーネントを確認できます。認証問題のデバッグ、トークン構造の理解、JWT クレームの検証に最適です。",
             "what_title": "🔍 JWT とは？",
-            "what_desc": "JSON Web Token (JWT) は、2者間でクレームを表現するためのコンパクトで URL セーフな手段です。JWT は、ドットで区切られた3つのパート、ヘッダー（アルゴリズムとトークンタイプ）、ペイロード（データ/クレーム）、署名（検証用）で構成されています。",
+            "what_desc": "JSON Web Token (JWT) は、2者間でクレームを表現するためのコンパクトで URL セーフな手段です。JWT は、ドットで区切られた3つのパート、ヘッダー（アルゴリズムとトークンタイプ）、ペイロード（データ\/クレーム）、署名（検証用）で構成されています。",
             "features_title": "✨ 主な機能",
             "features": {
                 "instant": {
@@ -1680,7 +1680,7 @@
             "error_no_copy": "コピーする HTML がありません。先に Markdown を変換してください。",
             "success_copy": "HTML をクリップボードにコピーしました！",
             "error_no_download": "ダウンロードする HTML がありません。先に Markdown を変換してください。",
-            "example": "# Markdown へようこそ\n\n## これは副見出しです\n\nこれは、**太字テキスト** や *斜体テキスト* を含むパラグラフです。\n\n### 機能\n\n- 書きやすい\n- 読みやすい\n- HTML に変換可能\n\n### コード例\n\n```javascript\nfunction hello() {\n    console.log(\"こんにちは、世界！\");\n}\n```\n\n> これはブロッククォートです\n\n[ウェブサイトを訪問](https://example.com)"
+            "example": "# Markdown へようこそ\n\n## これは副見出しです\n\nこれは、**太字テキスト** や *斜体テキスト* を含むパラグラフです。\n\n### 機能\n\n- 書きやすい\n- 読みやすい\n- HTML に変換可能\n\n### コード例\n\n```javascript\nfunction hello() {\n    console.log(\"こんにちは、世界！\");\n}\n```\n\n> これはブロッククォートです\n\n[ウェブサイトを訪問](https:\/\/example.com)"
         }
     },
     "md5-generator": {
@@ -1705,20 +1705,20 @@
             "what_desc": "MD5 は、任意の長さの入力を受け取り、固定の 128 ビット ハッシュ（通常は 32 文字の 16 進数として表現される）を生成する暗号化ハッシュ関数です。同じ入力は常に同じハッシュを生成しますが、入力がわずかでも変われば、まったく異なるハッシュが作成されます。",
             "features_title": "✅ MD5 の利点",
             "features": {
-                "fast": "<strong>高速処理:</strong> 極めて迅速なハッシュ生成",
-                "fixed": "<strong>固定長:</strong> 常に 128 ビットの出力を生成",
-                "deterministic": "<strong>決定論的:</strong> 同じ入力 = 同じハッシュ",
-                "support": "<strong>幅広いサポート:</strong> すべてのプログラミング言語で利用可能"
+                "fast": "<strong>高速処理:<\/strong> 極めて迅速なハッシュ生成",
+                "fixed": "<strong>固定長:<\/strong> 常に 128 ビットの出力を生成",
+                "deterministic": "<strong>決定論的:<\/strong> 同じ入力 = 同じハッシュ",
+                "support": "<strong>幅広いサポート:<\/strong> すべてのプログラミング言語で利用可能"
             },
             "uses_title": "📊 主な活用シーン",
             "uses": {
-                "verify": "<strong>ファイル検証:</strong> ファイルの整合性をチェック",
-                "checksum": "<strong>チェックサム:</strong> ダウンロードファイルの検証",
-                "cache": "<strong>キャッシュキー:</strong> 一意の識別子を生成",
-                "integrity": "<strong>データ整合性:</strong> 変更を検出"
+                "verify": "<strong>ファイル検証:<\/strong> ファイルの整合性をチェック",
+                "checksum": "<strong>チェックサム:<\/strong> ダウンロードファイルの検証",
+                "cache": "<strong>キャッシュキー:<\/strong> 一意の識別子を生成",
+                "integrity": "<strong>データ整合性:<\/strong> 変更を検出"
             },
             "warning_title": "⚠️ セキュリティに関する警告",
-            "warning_desc": "<strong>パスワードのハッシュ化やセキュリティ上重要なアプリケーションには MD5 を使用しないでください！</strong> MD5 は暗号学的に脆弱であり、衝突攻撃に対して脆弱であることが分かっています。パスワードのハッシュ化には、bcrypt、Argon2、PBKDF2 などの現代的なアルゴリズムを使用してください。",
+            "warning_desc": "<strong>パスワードのハッシュ化やセキュリティ上重要なアプリケーションには MD5 を使用しないでください！<\/strong> MD5 は暗号学的に脆弱であり、衝突攻撃に対して脆弱であることが分かっています。パスワードのハッシュ化には、bcrypt、Argon2、PBKDF2 などの現代的なアルゴリズムを使用してください。",
             "compare_title": "🔄 MD5 と他のハッシュ関数の比較",
             "compare": {
                 "md5": {
@@ -1991,7 +1991,7 @@
             "examples_title": "Unicode の例",
             "examples": {
                 "simple": {
-                    "title": "シンプル/ASCII:",
+                    "title": "シンプル\/ASCII:",
                     "desc": "原文: \"A\" → エンコード後: \"\\u0041\""
                 },
                 "special": {
@@ -1999,7 +1999,7 @@
                     "desc": "原文: \"©\" → エンコード後: \"\\u00A9\""
                 },
                 "emoji": {
-                    "title": "絵文字/マルチバイト:",
+                    "title": "絵文字\/マルチバイト:",
                     "desc": "原文: \"🌟\" → エンコード後: \"\\uD83C\\uDF1F\" (サロゲートペア) または表現により \"\\u2B50\""
                 }
             },
@@ -2008,7 +2008,7 @@
                 "q1": "なぜ Unicode エスケープシーケンスを使うのですか？",
                 "a1": "ASCII 文字のみを使用してあらゆる文字を表現できるため、生の Unicode を正しく扱えない可能性のある異なるシステム、エンコーディング、ファイル転送間でも互換性を確保できます。",
                 "q2": "どのような形式が使用されますか？",
-                "a2": "このツールは通常、基本多言語面の文字に対して JavaScript/JSON スタイルの \\uXXXX 形式を使用します。",
+                "a2": "このツールは通常、基本多言語面の文字に対して JavaScript\/JSON スタイルの \\uXXXX 形式を使用します。",
                 "q3": "URL エンコーディングとは違いますか？",
                 "a3": "はい。URL エンコーディングは主に URL 用に %XX の 16 進数値を使用します。Unicode エスケープは \\uXXXX を使用し、JavaScript、Java、Python などのプログラミング言語の文字列で使用されます。",
                 "q4": "データは安全ですか？",
@@ -2035,7 +2035,7 @@
             "btn_encode": "URL をエンコード",
             "btn_decode": "URL をデコード",
             "label_input_encode": "エンコードする URL を入力",
-            "ph_input": "https://example.com/search?name=田中太郎&age=30",
+            "ph_input": "https:\/\/example.com\/search?name=田中太郎&age=30",
             "btn_process_encode": "URL をエンコード",
             "btn_clear": "クリア",
             "btn_copy": "コピー",
@@ -2138,7 +2138,7 @@
                 },
                 "full": {
                     "title": "フル URL:",
-                    "desc": "原文: \"https://example.com/search?q=hello world\" → エンコード後: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
+                    "desc": "原文: \"https:\/\/example.com\/search?q=hello world\" → エンコード後: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
                 }
             },
             "faq_title": "よくある質問",
@@ -2146,11 +2146,11 @@
                 "q1": "いつ URL をエンコードすべきですか？",
                 "a1": "URL をクエリパラメータとして渡すとき、データベースに保存するとき、またはスペース、&、=、?、非 ASCII 文字などの特殊文字が含まれているときにエンコードしてください。",
                 "q2": "どの文字をエンコードする必要がありますか？",
-                "a2": "予約文字（: / ? # [ ] @ ! $ & ' ( ) * + , ; =）や、安全でない文字（スペース、<、>、\"、{、}、|、\\、^、`）、および非 ASCII 文字はエンコードする必要があります。",
+                "a2": "予約文字（: \/ ? # [ ] @ ! $ & ' ( ) * + , ; =）や、安全でない文字（スペース、<、>、\"、{、}、|、\\、^、`）、および非 ASCII 文字はエンコードする必要があります。",
                 "q3": "URL エンコーディングは Base64 と同じですか？",
                 "a3": "いいえ。URL エンコーディングは特定の文字を %XX 形式に変換しますが、Base64 はデータ全体を別の文字セットに変換します。これらは目的が異なります。",
                 "q4": "URL 全体をエンコードできますか？",
-                "a4": "はい、可能ですが、通常はクエリ文字列の部分のみをエンコードします。プロトコル（https://）を含む URL 全体をエンコードすることは一般的ではなく、問題が発生する可能性があります。",
+                "a4": "はい、可能ですが、通常はクエリ文字列の部分のみをエンコードします。プロトコル（https:\/\/）を含む URL 全体をエンコードすることは一般的ではなく、問題が発生する可能性があります。",
                 "q5": "データは安全ですか？",
                 "a5": "はい！エンコードとデコードはすべて JavaScript を使用してお使いのブラウザ内で行われます。URL がデバイスの外に出たり、サーバーに送信されることはありません。"
             }
@@ -2197,8 +2197,8 @@
         },
         "editor": {
             "label_input": "XML 入力",
-            "ph_input": "<ルート><​​子>値</子></ルート>",
-            "btn_format": "整形 / 美化",
+            "ph_input": "<ルート><​​子>値<\/子><\/ルート>",
+            "btn_format": "整形 \/ 美化",
             "btn_minify": "縮小 (Minify)",
             "btn_copy": "コピー"
         },
@@ -2222,14 +2222,14 @@
             "btn_copy": "コピー",
             "btn_example": "例を表示",
             "label_input": "XML を入力",
-            "ph_input": "<data><row><name>ジョン</name><年齢>30</age></row></data>",
+            "ph_input": "<data><row><name>ジョン<\/name><年齢>30<\/age><\/row><\/data>",
             "label_output": "CSV 出力",
             "ph_output": "変換された CSV がここに表示されます..."
         },
         "content": {
             "p1": "当ツールの無料 XML CSV 変換ツールは、構造化された XML データをカンマ区切り値 (CSV) 形式に変換します。Excel、Google スプレッドシート、データベース、データ分析ツールへの XML データのインポートに最適です。複雑な XML 構造を、シンプルで表形式の CSV 形式に数秒で変換できます。",
             "what_title": "XML から CSV への変換とは？",
-            "what_desc": "XML から CSV への変換は、構造化された eXtensible Markup Language データをカンマ区切り値形式に変換することです。XML は複雑なデータ構造や API に適していますが、CSV はよりシンプルでスプレッドシートアプリケーションで汎用的にサポートされているため、データ分析、レポート作成、インポート/エクスポート作業に理想的です。",
+            "what_desc": "XML から CSV への変換は、構造化された eXtensible Markup Language データをカンマ区切り値形式に変換することです。XML は複雑なデータ構造や API に適していますが、CSV はよりシンプルでスプレッドシートアプリケーションで汎用的にサポートされているため、データ分析、レポート作成、インポート\/エクスポート作業に理想的です。",
             "features_title": "主な機能",
             "features": {
                 "fast": {
@@ -2350,7 +2350,7 @@
             "btn_example": "例を読み込む",
             "btn_clear": "クリア",
             "label_input": "XML 入力",
-            "ph_input": "<' . '?x' . 'ml version=\"1.0\"?>\n<root>\n  <item>ここに XML を入力...</item>\n</root>",
+            "ph_input": "<' . '?x' . 'ml version=\"1.0\"?>\n<root>\n  <item>ここに XML を入力...<\/item>\n<\/root>",
             "label_output": "JSON 出力",
             "ph_output": "変換された JSON がここに表示されます..."
         },
@@ -2486,7 +2486,7 @@
         },
         "content": {
             "h2": "YAML JSON 変換ツールについて",
-            "p1": "無料のオンライン YAML JSON 変換ツールを使用して、YAML 設定ファイルを即座に JSON 形式に変換できます。設定ファイル、CI/CD パイプライン、データ変換を行う開発者に最適です。",
+            "p1": "無料のオンライン YAML JSON 変換ツールを使用して、YAML 設定ファイルを即座に JSON 形式に変換できます。設定ファイル、CI\/CD パイプライン、データ変換を行う開発者に最適です。",
             "features_title": "主な機能",
             "features": {
                 "syntax": {
@@ -2521,7 +2521,7 @@
                     "desc": "アプリケーション用に YAML 設定ファイルを JSON に変換します。"
                 },
                 "pipeline": {
-                    "title": "CI/CD パイプライン",
+                    "title": "CI\/CD パイプライン",
                     "desc": "YAML パイプライン設定を JSON 形式に変換します。"
                 },
                 "k8s": {

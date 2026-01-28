@@ -16,16 +16,16 @@
         },
         "content": {
             "what_is_title": "¿Qué es la búsqueda DNS?",
-            "what_is_desc": "La búsqueda DNS es una herramienta que consulta los servidores del Sistema de Nombres de Dominio para recuperar los registros DNS de un dominio. Los registros DNS contienen información importante sobre cómo está configurado un dominio, incluyendo servidores de correo (registros MX), servidores de nombres (registros NS), direcciones IP (registros A/AAAA) y registros de texto (registros TXT) utilizados para verificación y seguridad.",
+            "what_is_desc": "La búsqueda DNS es una herramienta que consulta los servidores del Sistema de Nombres de Dominio para recuperar los registros DNS de un dominio. Los registros DNS contienen información importante sobre cómo está configurado un dominio, incluyendo servidores de correo (registros MX), servidores de nombres (registros NS), direcciones IP (registros A\/AAAA) y registros de texto (registros TXT) utilizados para verificación y seguridad.",
             "why_use_title": "¿Por qué usar la búsqueda DNS?",
             "why_use_desc": "La búsqueda DNS es esencial para solucionar problemas de entrega de correo electrónico, verificar la configuración del dominio, comprobar los ajustes del servidor de nombres, validar registros SPF y DKIM, y comprender cómo está configurado un dominio. Es utilizado diariamente por administradores de sistemas, desarrolladores web y profesionales de TI.",
             "record_types_title": "Tipos de registros DNS",
-            "a_record": "<strong>Registro A:</strong> Asocia el dominio a una dirección IPv4",
-            "aaaa_record": "<strong>Registro AAAA:</strong> Asocia el dominio a una dirección IPv6",
-            "mx_record": "<strong>Registro MX:</strong> Información del servidor de correo",
-            "ns_record": "<strong>Registro NS:</strong> Información del servidor de nombres",
-            "txt_record": "<strong>Registro TXT:</strong> Registros de texto para verificación",
-            "cname_record": "<strong>Registro CNAME:</strong> Alias de nombre canónico"
+            "a_record": "<strong>Registro A:<\/strong> Asocia el dominio a una dirección IPv4",
+            "aaaa_record": "<strong>Registro AAAA:<\/strong> Asocia el dominio a una dirección IPv6",
+            "mx_record": "<strong>Registro MX:<\/strong> Información del servidor de correo",
+            "ns_record": "<strong>Registro NS:<\/strong> Información del servidor de nombres",
+            "txt_record": "<strong>Registro TXT:<\/strong> Registros de texto para verificación",
+            "cname_record": "<strong>Registro CNAME:<\/strong> Alias de nombre canónico"
         },
         "faq": {
             "title": "Preguntas frecuentes sobre búsqueda DNS",
@@ -58,7 +58,7 @@
         "form": {
             "domain_label": "Ingrese nombre de dominio",
             "domain_placeholder": "ejemplo.com",
-            "domain_hint": "Ingrese el dominio sin http:// o https://",
+            "domain_hint": "Ingrese el dominio sin http:\/\/ o https:\/\/",
             "button": "Encontrar dirección IP"
         },
         "results": {
@@ -279,8 +279,7 @@
         "js": {
             "looking_up": "Buscando...",
             "success": "¡Éxito!",
-            "error": "Ocurrió un error al buscar la información de la IP.",
-            "find_ip_info": "Buscar info de IP"
+            "error": "Ocurrió un error al buscar la información de la IP."
         }
     },
     "ping-test": {
@@ -303,19 +302,15 @@
             "what_is_desc": "Ping es una utilidad de administración de red informática utilizada para probar la capacidad de alcance de un host en una red de Protocolo de Internet (IP). Funciona enviando paquetes de solicitud de eco del Protocolo de Mensajes de Control de Internet (ICMP) al host de destino и esperando una respuesta de eco de ICMP. El tiempo que tardan los paquetes en viajar desde el origen al destino и de regreso se mide и se conoce como latencia o tiempo de ida и vuelta (RTT).",
             "why_use_title": "¿Por qué usar nuestra prueba de Ping?",
             "why_use_desc": "Nuestra herramienta de prueba de ping en línea le permite verificar el estado и la latencia de cualquier servidor o sitio web desde múltiples ubicaciones globales. Es invaluable para diagnosticar problemas de red, verificar el tiempo de actividad del servidor, probar el rendimiento de los juegos и asegurarse de que su sitio web sea accesible para los usuarios en todo el mundo. La baja latencia es crucial para aplicaciones en tiempo real como juegos en línea, transmisión de video и VoIP.",
+            "metrics_title": "Understanding Ping Metrics",
+            "metric1": "<strong>Packets Sent\/Received:<\/strong> Number of ping requests and successful responses",
+            "metric2": "<strong>Packet Loss:<\/strong> Percentage of packets that didn't receive a response",
+            "metric3": "<strong>Minimum Time:<\/strong> Fastest round-trip time recorded",
+            "metric4": "<strong>Average Time:<\/strong> Mean latency across all pings",
+            "metric5": "<strong>Maximum Time:<\/strong> Slowest round-trip time recorded",
+            "metric6": "<strong>TTL (Time To Live):<\/strong> Number of network hops before packet expires",
             "interpreting_title": "Interpretación de los resultados",
-            "min_max_avg": "<strong>Min/Max/Avg:</strong> Los tiempos de respuesta más bajos, más altos и promedio medidos durante la prueba.",
-            "packet_loss": "<strong>Pérdida de paquetes:</strong> El porcentaje de paquetes que no regresaron, indicando inestabilidad en la red.",
-            "latency_levels": "<strong>Niveles de latencia:</strong> Debajo de 50ms es excelente, 50-150ms es promedio, y más de 150ms puede causar retrasos notables.",
-            "benefits_title": "Beneficios de los pings regulares",
-            "feature1_title": "🌐 Accesibilidad global",
-            "feature1_desc": "Asegúrese de que su servidor responda a las solicitudes internacionales.",
-            "feature2_title": "🎮 Optimización de juegos",
-            "feature2_desc": "Verifique su latencia a los servidores de juegos antes de jugar.",
-            "feature3_title": "🛡️ Diagnóstico de red",
-            "feature3_desc": "Identifique rápidamente si un servidor está caído o simplemente lento.",
-            "feature4_title": "⏱️ Monitoreo de tiempo real",
-            "feature4_desc": "Obtenga retroalimentación instantánea sobre la estabilidad de su conexión."
+            "interpreting_desc": "Good ping times are typically under 50ms for local connections and under 100ms for international connections. Times between 100-200ms are acceptable for most applications but may cause noticeable lag in real-time applications like gaming or video conferencing. Anything above 200ms indicates potential network issues. Packet loss above 1% suggests network problems that need investigation. Consistent ping times indicate stable connections, while highly variable times suggest network congestion or routing issues."
         },
         "faq": {
             "title": "Preguntas frecuentes sobre Ping",
@@ -334,7 +329,7 @@
             "pinging": "Haciendo ping...",
             "success": "¡Éxito!",
             "error": "Ocurrió un error al hacer ping al host.",
-            "run_ping": "Ejecutar Ping"
+            "ping_host": "Ping Host"
         }
     },
     "port-checker": {
@@ -345,40 +340,30 @@
             "subtitle": "Compruebe si los puertos de red están abiertos и accesibles desde Internet"
         },
         "form": {
-            "ip_label": "Dirección IP o dominio",
-            "ip_placeholder": "Su IP se detecta automáticamente",
+            "host_label": "Host or IP Address",
+            "host_placeholder": "example.com or 8.8.8.8",
             "port_label": "Número de puerto",
             "port_placeholder": "ej. 80, 443, 21",
             "button": "Comprobar puerto"
         },
         "results": {
-            "title": "Resultados de la comprobación del puerto",
-            "status_label": "Estado del puerto",
-            "open_label": "ABIERTO",
-            "closed_label": "CERRADO",
-            "port_label": "Puerto"
+            "title": "Resultados de la comprobación del puerto"
         },
         "content": {
             "what_is_title": "¿Qué es el Verificador de Puertos?",
             "what_is_desc": "Un Verificador de Puertos es una herramienta utilizada para identificar si un puerto específico en una dirección IP o servidor está abierto и aceptando conexiones desde Internet. Los puertos son puntos finales de comunicación virtuales utilizados por diferentes servicios y aplicaciones para enviar и recibir datos. Esta herramienta es esencial para verificar si el reenvío de puertos está configurado correctamente и si los servicios de su servidor son accesibles externamente.",
-            "why_use_title": "¿Por qué usar nuestra comprobación de puertos?",
-            "why_use_desc": "Nuestra herramienta gratuita de verificación de puertos en línea ayuda a los administradores de red и desarrolladores a confirmar que sus servicios (como servidores web, bases de datos o servidores de juegos) se están comunicando correctamente a través de la red. También es útil para auditar la seguridad de su red para asegurarse de que no haya puertos abiertos innecesarios que puedan ser vulnerables a ataques o accesos no autorizados.",
+            "why_check_title": "Why Check Ports?",
+            "why_check_desc": "Port checking serves multiple critical purposes in network management and security. System administrators verify that services are accessible on their intended ports after configuration changes. Security professionals scan for open ports to identify potential vulnerabilities and ensure unnecessary ports are closed. Developers test whether their applications are properly listening on configured ports. Network troubleshooters use port checking to diagnose why services aren't accessible, determining if the issue is with the service itself, firewall rules, or network routing.",
             "common_ports_title": "Puertos comunes y sus servicios",
-            "port80": "<strong>Puerto 80:</strong> Tráfico HTTP (Web)",
-            "port443": "<strong>Puerto 443:</strong> Tráfico HTTPS (Web segura)",
-            "port21": "<strong>Puerto 21:</strong> FTP (Transferencia de archivos)",
-            "port22": "<strong>Puerto 22:</strong> SSH (Acceso remoto seguro)",
-            "port3306": "<strong>Puerto 3306:</strong> Base de datos MySQL",
-            "port25": "<strong>Puerto 25:</strong> SMTP (Envío de correo)",
-            "use_cases_title": "Casos de uso frecuentes",
-            "feature1_title": "🏠 Reenvío de puertos",
-            "feature1_desc": "Confirme que las reglas de su router estén configuradas correctamente.",
-            "feature2_title": "🛡️ Auditoría de Firewall",
-            "feature2_desc": "Verifique si su firewall está bloqueando el tráfico deseado.",
-            "feature3_title": "🚀 Configuración de servidor",
-            "feature3_desc": "Asegúrese de que su nuevo servidor web o de juegos esté listo.",
-            "feature4_title": "🕵️ Escaneo de seguridad",
-            "feature4_desc": "Identifique puertos abiertos que deberían estar cerrados."
+            "port1": "<strong>Port 80:<\/strong> HTTP (web traffic)",
+            "port2": "<strong>Port 443:<\/strong> HTTPS (secure web traffic)",
+            "port3": "<strong>Port 22:<\/strong> SSH (secure shell access)",
+            "port4": "<strong>Port 21:<\/strong> FTP (file transfer)",
+            "port5": "<strong>Port 25:<\/strong> SMTP (email sending)",
+            "port6": "<strong>Port 3306:<\/strong> MySQL database",
+            "port7": "<strong>Port 3389:<\/strong> RDP (Remote Desktop)",
+            "security_title": "Security Implications",
+            "security_desc": "Open ports represent potential entry points for attackers. Best security practice dictates keeping only necessary ports open and closing or filtering all others. Regularly scanning your own servers helps identify unintended open ports that could be exploited. However, port scanning others' systems without permission may be illegal and is considered hostile activity. Always ensure you have authorization before scanning ports on systems you don't own."
         },
         "faq": {
             "title": "Preguntas frecuentes sobre Verificador de Puertos",
@@ -410,13 +395,11 @@
         "form": {
             "ip_label": "Dirección IP",
             "ip_placeholder": "ej. 8.8.8.8",
-            "button": "Buscar DNS inversa"
+            "button": "Buscar DNS inversa",
+            "button_loading": "Looking up..."
         },
         "results": {
-            "title": "Resultados de búsqueda inversa",
-            "ip_label": "Dirección IP",
-            "domain_label": "Nombre de dominio / PTR",
-            "error_label": "No se encontró registro PTR"
+            "title": "Resultados de búsqueda inversa"
         },
         "content": {
             "what_is_title": "¿Qué es la búsqueda DNS inversa?",
@@ -424,16 +407,14 @@
             "why_use_title": "¿Por qué usar la búsqueda inversa?",
             "why_use_desc": "La rDNS se utiliza ampliamente para la verificación de servidores de correo para prevenir el spam, el análisis de seguridad de red и la resolución de problemas de conectividad. Muchos servidores de correo electrónico están configurados para rechazar correos electrónicos de direcciones IP que no tienen un registro DNS inverso válido, por lo que es crucial para la entrega de correo electrónico. También ayuda a identificar el origen del tráfico web en los logs del servidor.",
             "ptr_records_title": "Acerca de los registros PTR",
-            "ptr_desc": "Un registro PTR (puntero) se utiliza para asignar una dirección de red (como una IP) a un nombre de dominio. Se almacena en la zona 'reverse lookup' и es fundamental para que la resolución inversa funcione correctamente.",
-            "benefits_title": "Beneficios clave",
-            "f1_title": "🛡️ Verificación de seguridad",
-            "f1_desc": "Valide la identidad de los servidores de red.",
-            "f2_title": "📧 Entrega de correo",
-            "f2_desc": "Asegúrese de que sus registros PTR sean correctos para evitar filtros de spam.",
-            "f3_title": "🔍 Auditoría de logs",
-            "f3_desc": "Convierta direcciones IP en nombres de host legibles en sus reportes.",
-            "f4_title": "🕸️ Diagnóstico de red",
-            "f4_desc": "Identifique rápidamente la infraestructura detrás de una IP."
+            "ptr_record1": "<strong>PTR Record:<\/strong> A Pointer Record (PTR) is the type of DNS record used for reverse DNS lookups.",
+            "ptr_record2": "<strong>Mapping:<\/strong> It maps an IP address back to a hostname.",
+            "ptr_record3": "<strong>Verification:<\/strong> Crucial for email deliverability and security verification.",
+            "ptr_record4": "<strong>IP-to-Host:<\/strong> Essential for identifying the true owner of an IP address.",
+            "ptr_record5": "<strong>Spam Prevention:<\/strong> Used by mail servers to validate sender authenticity.",
+            "ptr_record6": "<strong>Network Logs:<\/strong> Helpful for making network logs human-readable by showing hostnames.",
+            "use_cases_title": "Common Use Cases",
+            "use_cases_desc": "Common use cases include verifying the origin of web traffic, diagnosing network latency or routing problems, validating email server configurations, and enhancing cybersecurity audits by identifying potentially malicious IP addresses."
         },
         "faq": {
             "title": "Preguntas frecuentes sobre rDNS",
@@ -442,17 +423,7 @@
             "q2": "¿Por qué es importante para el correo electrónico?",
             "a2": "Muchos filtros antispam verifican si la IP del remitente tiene un registro PTR que coincida con el dominio del correo.",
             "q3": "¿Quién gestiona mi registro DNS inverso?",
-            "a3": "Normalmente, el propietario del bloque de direcciones IP (su ISP o proveedor de hosting) gestiona la zona de búsqueda inversa.",
-            "q4": "¿Cuánto tarda en actualizarse un registro PTR?",
-            "a4": "Al igual que otros registros DNS, los cambios en los registros PTR pueden tardar de 24 a 48 horas en propagarse globalmente.",
-            "q5": "¿Todas las direcciones IP tienen DNS inverso?",
-            "a5": "No, solo las direcciones IP configuradas con un registro PTR por su administrador de red tendrán una resolución rDNS exitosa."
-        },
-        "js": {
-            "looking_up": "Buscando...",
-            "success": "¡Éxito!",
-            "error": "Ocurrió un error al realizar la búsqueda inversa.",
-            "run_rdns": "Buscar rDNS"
+            "a3": "Normalmente, el propietario del bloque de direcciones IP (su ISP o proveedor de hosting) gestiona la zona de búsqueda inversa."
         }
     },
     "traceroute": {
@@ -469,11 +440,7 @@
             "button_loading": "Rastreando..."
         },
         "results": {
-            "title": "Resultados de Traceroute",
-            "hop_label": "Salto",
-            "host_label": "Host / IP",
-            "time_label": "Tiempo (ms)",
-            "no_results": "No se encontraron datos de ruta."
+            "title": "Resultados de Traceroute"
         },
         "content": {
             "what_is_title": "¿Qué es Traceroute?",
@@ -481,14 +448,14 @@
             "why_use_title": "¿Por qué usar Traceroute?",
             "why_use_desc": "Traceroute es fundamental para identificar dónde se ralentiza la conexión o dónde se pierden los paquetes. Si un sitio web carga lento o es inaccesible, Traceroute le dirá exactamente en qué punto de la red está el problema, ya sea en su red local, el ISP o los nodos troncales de Internet.",
             "hops_title": "Entendiendo los 'Saltos'",
-            "hop1": "<strong>Número de salto:</strong> El orden secuencial del enrutador en la ruta.",
-            "hop2": "<strong>Dirección IP:</strong> El identificador único del equipo en ese punto.",
-            "hop3": "<strong>Nombre de host:</strong> El nombre legible del servidor (si está disponible).",
-            "hop4": "<strong>Tiempo de respuesta:</strong> La latencia en milisegundos para ese tramo.",
-            "hop5": "<strong>Asteriscos (*):</strong> Significan que el nodo no respondió dentro del tiempo límite.",
-            "hop6": "<strong>Cerrar sesión:</strong> El destino final alcanzado por los paquetes.",
-            "interpreting_title": "Interpretación de resultados",
-            "interpreting_desc": "Un incremento repentino en los tiempos de respuesta entre dos saltos indica congestión o problemas en ese segmento de la red. Si el rastreo se detiene abruptamente con asteriscos continuos, es probable que haya un firewall bloqueando el paso o una falla total en el siguiente nodo de la ruta."
+            "hop1": "<strong>Número de salto:<\/strong> El orden secuencial del enrutador en la ruta.",
+            "hop2": "<strong>Dirección IP:<\/strong> El identificador único del equipo en ese punto.",
+            "hop3": "<strong>Nombre de host:<\/strong> El nombre legible del servidor (si está disponible).",
+            "hop4": "<strong>Tiempo de respuesta:<\/strong> La latencia en milisegundos para ese tramo.",
+            "hop5": "<strong>Asteriscos (*):<\/strong> Significan que el nodo no respondió dentro del tiempo límite.",
+            "hop6": "<strong>Cerrar sesión:<\/strong> El destino final alcanzado por los paquetes.",
+            "issues_title": "Common Issues",
+            "issues_desc": "High latency at specific hops indicates congestion or routing problems. Asterisks (*) mean routers aren't responding to traceroute packets (often due to firewall rules). Packet loss at intermediate hops may not affect final destination if packets reach it successfully."
         },
         "faq": {
             "title": "Preguntas frecuentes sobre Traceroute",
@@ -497,11 +464,7 @@
             "q2": "¿Por qué veo asteriscos (*) en los resultados?",
             "a2": "Los asteriscos aparecen cuando un enrutador no responde a las solicitudes ICMP o tiene un firewall configurado para ignorarlas.",
             "q3": "¿Cuántos saltos son normales?",
-            "a3": "Normalmente, un rastreo web tiene entre 10 и 20 saltos. Depende de la distancia física и la complejidad del enrutamiento del ISP.",
-            "q4": "¿Qué significa una latencia alta en un solo salto?",
-            "a4": "Si la latencia sube en un salto и se mantiene alta en los siguientes, ese nodo está congestionado. Si baja en el siguiente, es solo el enrutador priorizando el tráfico.",
-            "q5": "¿Es seguro realizar un traceroute?",
-            "a5": "Sí, es una herramienta estándar de diagnóstico que no causa daños a la red ni a los servidores de destino."
+            "a3": "Normalmente, un rastreo web tiene entre 10 и 20 saltos. Depende de la distancia física и la complejidad del enrutamiento del ISP."
         }
     },
     "user-agent-parser": {
@@ -590,7 +553,7 @@
     "what-is-my-ip": {
         "meta": {
             "title": "¿Cuál es mi dirección IP? - Verificar mi ubicación de IP gratis",
-            "description": "Descubra su dirección IP pública al instante. Verifique su IPv4/IPv6, ISP, ubicación и detalles de conexión de forma gratuita.",
+            "description": "Descubra su dirección IP pública al instante. Verifique su IPv4\/IPv6, ISP, ubicación и detalles de conexión de forma gratuita.",
             "h1": "¿Cuál es mi dirección IP?",
             "subtitle": "Descubra instantáneamente su dirección IP pública con información detallada del ISP"
         },
@@ -612,30 +575,30 @@
             "what_is_desc": "Su dirección IP es un identificador numérico único asignado a su dispositivo cuando se conecta a una red. Sirve como una 'dirección postal digital' que permite que los dispositivos se comuniquen entre sí a través de Internet o de una red local.",
             "ipv4_vs_ipv6_title": "Direcciones IPv4 vs IPv6",
             "ipv4_title": "Dirección IPv4",
-            "ipv4_format": "<strong>Formato:</strong> 192.168.1.1 (cuatro números separados por puntos).",
-            "ipv4_total": "<strong>Total:</strong> ~4.3 mil millones de direcciones únicas.",
+            "ipv4_format": "<strong>Formato:<\/strong> 192.168.1.1 (cuatro números separados por puntos).",
+            "ipv4_total": "<strong>Total:<\/strong> ~4.3 mil millones de direcciones únicas.",
             "ipv4_desc": "El estándar tradicional que todavía utiliza la mayor parte de Internet actualmente.",
             "ipv6_title": "Dirección IPv6",
-            "ipv6_format": "<strong>Formato:</strong> 2001:0db8:85a3:0000:0000:8a2e:0370:7334.",
-            "ipv6_total": "<strong>Total:</strong> 340 undecillones de direcciones (prácticamente infinitas).",
+            "ipv6_format": "<strong>Formato:<\/strong> 2001:0db8:85a3:0000:0000:8a2e:0370:7334.",
+            "ipv6_total": "<strong>Total:<\/strong> 340 undecillones de direcciones (prácticamente infinitas).",
             "ipv6_desc": "El nuevo estándar diseñado para reemplazar a IPv4 debido al agotamiento de direcciones.",
             "why_check_title": "¿Por qué verificar su IP?",
             "why_check_desc": "Verificar su IP es útil para solucionar problemas de conexión, asegurarse de que su VPN esté ocultando su ubicación real, configurar cortafuegos o permitir el acceso remoto a su equipo de forma segura.",
             "public_vs_private_title": "IP pública frente a IP privada",
             "public_ip_title": "🌐 IP Pública",
             "public_ip_desc": "La dirección asignada por su ISP que es visible para todo Internet.",
-            "public_ip_example": "<strong>Ejemplo:</strong> 203.0.113.45",
+            "public_ip_example": "<strong>Ejemplo:<\/strong> 203.0.113.45",
             "public_ip_note": "Utilizada para navegar por la web и recibir datos de servidores externos.",
             "private_ip_title": "🏠 IP Privada",
             "private_ip_desc": "La dirección asignada por su router dentro de su red doméstica o de oficina.",
-            "private_ip_example": "<strong>Ejemplo:</strong> 192.168.1.10",
+            "private_ip_example": "<strong>Ejemplo:<\/strong> 192.168.1.10",
             "private_ip_note": "Solo es visible para otros dispositivos conectados a la misma red local.",
             "security_title": "Seguridad y privacidad de la IP",
             "security_desc1": "Su dirección IP puede revelar su ubicación geográfica aproximada и el nombre de su proveedor de Internet. Aunque no revela su nombre o dirección exacta, los sitios web la utilizan para rastrear su actividad и aplicar restricciones regionales.",
-            "security_desc2": "<strong>Consejo de privacidad:</strong> Si desea ocultar su dirección IP real и mejorar su anonimato en línea, utilice una VPN (Red Privada Virtual). Esto enmascarará su IP original con la del servidor VPN.",
+            "security_desc2": "<strong>Consejo de privacidad:<\/strong> Si desea ocultar su dirección IP real и mejorar su anonimato en línea, utilice una VPN (Red Privada Virtual). Esto enmascarará su IP original con la del servidor VPN.",
             "dynamic_vs_static_title": "Direcciones IP dinámicas vs estáticas",
-            "dynamic_ip": "<strong>IP Dinámica:</strong> Cambia cada vez que reinicia su router o después de un tiempo. Es la más común en hogares.",
-            "static_ip": "<strong>IP Estática:</strong> Nunca cambia. Se utiliza principalmente en servidores web, VPNs empresariales и juegos en línea.",
+            "dynamic_ip": "<strong>IP Dinámica:<\/strong> Cambia cada vez que reinicia su router o después de un tiempo. Es la más común en hogares.",
+            "static_ip": "<strong>IP Estática:<\/strong> Nunca cambia. Se utiliza principalmente en servidores web, VPNs empresariales и juegos en línea.",
             "privacy_tips_title": "Consejos de privacidad",
             "privacy_tip1": "• No comparta su dirección IP pública innecesariamente.",
             "privacy_tip2": "• Use navegadores que respeten la privacidad o extensiones que bloqueen rastreadores.",
@@ -668,11 +631,11 @@
             "main_title": "¿Cuál es mi ISP? - Herramienta gratuita de identificación de proveedor",
             "main_desc": "Identifique al instante su Proveedor de Servicios de Internet (ISP), el nombre de su organización, detalles de la red и su información de conexión. Nuestra herramienta gratuita de búsqueda de ISP revela su número de ASN (Sistema Autónomo), dirección IP, ubicación geográfica и los datos de infraestructura de su red. Es ideal para verificar si su VPN está funcionando correctamente o para solucionar problemas técnicos con su conexión.",
             "info_title": "¿Qué información puede encontrar?",
-            "info1": "<strong>Nombre del ISP:</strong> La empresa que le factura и le proporciona conexión.",
-            "info2": "<strong>Organización:</strong> La entidad técnica que gestiona su salida a Internet.",
-            "info3": "<strong>ASN:</strong> El identificador de red oficial para el enrutamiento global.",
-            "info4": "<strong>Ubicación:</strong> La ciudad и el país desde donde se registra su conexión.",
-            "info5": "<strong>Detalles de red:</strong> Información técnica sobre el rango de su dirección IP.",
+            "info1": "<strong>Nombre del ISP:<\/strong> La empresa que le factura и le proporciona conexión.",
+            "info2": "<strong>Organización:<\/strong> La entidad técnica que gestiona su salida a Internet.",
+            "info3": "<strong>ASN:<\/strong> El identificador de red oficial para el enrutamiento global.",
+            "info4": "<strong>Ubicación:<\/strong> La ciudad и el país desde donde se registra su conexión.",
+            "info5": "<strong>Detalles de red:<\/strong> Información técnica sobre el rango de su dirección IP.",
             "why_use_title": "¿Por qué usar esta herramienta?",
             "why_use1": "Verifique que está navegando con el proveedor correcto.",
             "why_use2": "Asegúrese de que su VPN o Proxy esté enmascarando a su ISP real.",
@@ -694,12 +657,12 @@
             "use_case4_title": "💼 Redes corporativas",
             "use_case4_desc": "Confirme que su conexión empresarial esté utilizando la infraestructura correcta.",
             "isp_types_title": "Tipos comunes de ISP",
-            "isp_type1": "<strong>DSL/ADSL:</strong> Internet a través de líneas telefónicas de cobre.",
-            "isp_type2": "<strong>Cable:</strong> Internet de alta velocidad mediante cable coaxial.",
-            "isp_type3": "<strong>Fibra óptica:</strong> La tecnología más rápida disponible actualmente.",
-            "isp_type4": "<strong>Móvil (4G/5G):</strong> Internet a través de antenas de telefonía celular.",
-            "isp_type5": "<strong>Satelital:</strong> Ideal para zonas rurales sin infraestructura terrestre.",
-            "isp_type6": "<strong>Dedicada:</strong> Enlaces de fibra directos и exclusivos para empresas.",
+            "isp_type1": "<strong>DSL\/ADSL:<\/strong> Internet a través de líneas telefónicas de cobre.",
+            "isp_type2": "<strong>Cable:<\/strong> Internet de alta velocidad mediante cable coaxial.",
+            "isp_type3": "<strong>Fibra óptica:<\/strong> La tecnología más rápida disponible actualmente.",
+            "isp_type4": "<strong>Móvil (4G\/5G):<\/strong> Internet a través de antenas de telefonía celular.",
+            "isp_type5": "<strong>Satelital:<\/strong> Ideal para zonas rurales sin infraestructura terrestre.",
+            "isp_type6": "<strong>Dedicada:<\/strong> Enlaces de fibra directos и exclusivos para empresas.",
             "privacy_note_title": "Aviso de privacidad",
             "privacy_note_desc": "Su ISP tiene la capacidad técnica de ver su actividad no cifrada. Use HTTPS и una VPN para proteger su privacidad. Esta herramienta solo muestra los datos públicos que su navegador ya comparte con cualquier sitio web que visite."
         },
@@ -734,18 +697,18 @@
             "button_loading": "Buscando..."
         },
         "content": {
-            "form_hint": "Ingrese el dominio sin http:// o https://",
+            "form_hint": "Ingrese el dominio sin http:\/\/ o https:\/\/",
             "what_is_title": "¿Qué es la búsqueda WHOIS?",
             "what_is_desc": "WHOIS es un protocolo estándar utilizado para consultar bases de datos que almacenan los nombres de los usuarios registrados de un nombre de dominio. Proporciona información técnica и de contacto esencial sobre el dominio, como el registrador, la fecha de creación, la fecha de expiración и los servidores de nombres (DNS) asociados.",
             "why_use_title": "¿Por qué usar nuestra búsqueda WHOIS?",
             "why_use_desc": "Nuestra herramienta gratuita le permite verificar rápidamente si un dominio está disponible para su compra o quién es el propietario actual. Es fundamental para profesionales del SEO, desarrolladores и expertos en seguridad legal que necesitan investigar la legitimidad de un sitio web o contactar al administrador del dominio por razones técnicas o comerciales.",
             "key_info_title": "Información clave proporcionada",
-            "key_info1": "<strong>Datos del registrante:</strong> Información sobre el propietario (si no está oculta por privacidad).",
-            "key_info2": "<strong>Fechas de registro:</strong> Cuándo se registró por primera vez и cuándo se actualizó.",
-            "key_info3": "<strong>Fecha de vencimiento:</strong> El día que el dominio volverá a estar libre si no se renueva.",
-            "key_info4": "<strong>Registrador:</strong> La empresa donde se compró el dominio (ej. GoDaddy, Namecheap).",
-            "key_info5": "<strong>Servidores de nombres:</strong> Indica dónde está alojado el DNS del dominio.",
-            "key_info6": "<strong>Estado del dominio:</strong> Muestra si el dominio está bloqueado o en periodo de redención.",
+            "key_info1": "<strong>Datos del registrante:<\/strong> Información sobre el propietario (si no está oculta por privacidad).",
+            "key_info2": "<strong>Fechas de registro:<\/strong> Cuándo se registró por primera vez и cuándo se actualizó.",
+            "key_info3": "<strong>Fecha de vencimiento:<\/strong> El día que el dominio volverá a estar libre si no se renueva.",
+            "key_info4": "<strong>Registrador:<\/strong> La empresa donde se compró el dominio (ej. GoDaddy, Namecheap).",
+            "key_info5": "<strong>Servidores de nombres:<\/strong> Indica dónde está alojado el DNS del dominio.",
+            "key_info6": "<strong>Estado del dominio:<\/strong> Muestra si el dominio está bloqueado o en periodo de redención.",
             "how_to_title": "Cómo usar la herramienta",
             "how_to1": "Escriba el nombre del dominio que desea investigar.",
             "how_to2": "Haga clic en el botón 'Buscar WHOIS'.",

@@ -40,9 +40,6 @@
             "hero_subtitle": "Hitta ändringar mellan två textversioner",
             "p1": "Detta verktyg låter dig snabbt jämföra två textblock eller filer. Skillnader, borttagningar och tillägg markeras för enkel analys.",
             "features_title": "Funktioner",
-            "uses_title": "Användningsområden",
-            "how_title": "Hur man använder det",
-            "faq_title": "Vanliga frågor",
             "features": {
                 "visual": {
                     "title": "Visuell jämförelse",
@@ -69,6 +66,7 @@
                     "desc": "Högkvalitativt verktyg för filjämförelse tillgängligt utan kostnad, utan registrering."
                 }
             },
+            "uses_title": "Användningsområden",
             "uses": {
                 "code": {
                     "title": "Kodgranskning",
@@ -95,6 +93,7 @@
                     "desc": "Jämför original och översatta textblock för att säkerställa konsistens i struktur och längd."
                 }
             },
+            "how_title": "Hur man använder det",
             "how_steps": {
                 "1": {
                     "title": "Klistra in originaltext",
@@ -113,6 +112,7 @@
                     "desc": "Se resultaten nedan. Gröna rader har lagts till, röda rader har tagits bort."
                 }
             },
+            "faq_title": "Vanliga frågor",
             "faq": {
                 "q1": "Är mina textdata säkra?",
                 "a1": "Absolut. Det här verktyget körs helt i webbläsaren med JavaScript. Inga data skickas till våra servrar.",
@@ -168,7 +168,7 @@
         },
         "editor": {
             "label_input": "Skriv in morsekod",
-            "ph_input": null,
+            "ph_input": "... --- ...",
             "btn_decode": "Avkoda till text",
             "btn_clear": "Rensa",
             "btn_copy": "Kopiera",
@@ -257,17 +257,16 @@
                 }
             },
             "examples_title": "Morsekod exempel",
-            "samples": [],
             "faq_title": "❓ Vanliga frågor",
             "faq": {
                 "q1": "Hur formaterar jag morsekodinmatning?",
-                "a1": "Separera varje bokstav med ett mellanslag. Använd / för ordmellanrum. Exempel: \"... --- ...\" för SOS.",
+                "a1": "Separera varje bokstav med ett mellanslag. Använd \/ för ordmellanrum. Exempel: \"... --- ...\" för SOS.",
                 "q2": "Vad händer om jag gör ett misstag?",
                 "a2": "Ogiltiga morsekodmönster hoppas över. Se till att prickar och streck är åtskilda av mellanslag.",
                 "q3": "Kan jag avkoda siffror?",
                 "a3": "Ja! Verktyget avkodar siffrorna 0-9 från deras morsekodmönster.",
                 "q4": "Hur skiljer jag ord?",
-                "a4": "Använd ett snedstreck (/) för att skilja ord i morsekod.",
+                "a4": "Använd ett snedstreck (\/) för att skilja ord i morsekod.",
                 "q5": "Är detta verktyg gratis?",
                 "a5": "Ja! Helt gratis utan gränser. All bearbetning sker i din webbläsare för sekretess."
             }
@@ -405,7 +404,7 @@
             "btn_clear": "Rensa",
             "btn_copy": "Kopiera",
             "label_output": "Morsekod",
-            "ph_output": null
+            "ph_output": "... --- ..."
         },
         "content": {
             "p1": "Konvertera text till morsekod direkt med vår gratis onlinekonverterare. Morsekod använder punkter (.) och bindestreck (-) för att representera bokstäver och siffror. Perfekt för att lära sig morsekod, övning i nödkommunikation eller skapa kodade meddelanden.",

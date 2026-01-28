@@ -40,9 +40,6 @@
             "hero_subtitle": "Vind de verschillen tussen twee tekstversies",
             "p1": "Met deze tool kun je snel twee tekstblokken of bestanden vergelijken. Verschillen, verwijderingen en toevoegingen worden gemarkeerd voor eenvoudige analyse.",
             "features_title": "Kenmerken",
-            "uses_title": "Gebruikssituaties",
-            "how_title": "Hoe te Gebruiken",
-            "faq_title": "Veelgestelde Vragen",
             "features": {
                 "visual": {
                     "title": "Visuele Vergelijking",
@@ -69,6 +66,7 @@
                     "desc": "Hoogwaardige tool voor bestandsvergelijking gratis beschikbaar, zonder registratie."
                 }
             },
+            "uses_title": "Gebruikssituaties",
             "uses": {
                 "code": {
                     "title": "Code Review",
@@ -95,6 +93,7 @@
                     "desc": "Vergelijk originele en vertaalde tekstblokken om structuur- en lengteconsistentie te waarborgen."
                 }
             },
+            "how_title": "Hoe te Gebruiken",
             "how_steps": {
                 "1": {
                     "title": "Plak Originele Tekst",
@@ -113,6 +112,7 @@
                     "desc": "Bekijk de resultaten hieronder. Groene regels zijn toegevoegd, rode regels zijn verwijderd."
                 }
             },
+            "faq_title": "Veelgestelde Vragen",
             "faq": {
                 "q1": "Zijn mijn tekstgegevens veilig?",
                 "a1": "Absoluut. Deze tool draait volledig aan de client-side met JavaScript. Er worden geen gegevens naar onze servers verzonden.",
@@ -168,7 +168,7 @@
         },
         "editor": {
             "label_input": "Morsecode Invoeren",
-            "ph_input": null,
+            "ph_input": "... --- ...",
             "btn_decode": "Decoderen naar Tekst",
             "btn_clear": "Wissen",
             "btn_copy": "Kopiëren",
@@ -257,17 +257,16 @@
                 }
             },
             "examples_title": "Voorbeelden van morsecodes",
-            "samples": [],
             "faq_title": "❓ Veelgestelde Vragen",
             "faq": {
                 "q1": "Hoe moet ik de morsecode invoeren?",
-                "a1": "Scheid elke letter met een spatie. Gebruik een schuine streep (/) voor spaties tussen woorden. Voorbeeld: \"... --- ...\" voor SOS.",
+                "a1": "Scheid elke letter met een spatie. Gebruik een schuine streep (\/) voor spaties tussen woorden. Voorbeeld: \"... --- ...\" voor SOS.",
                 "q2": "Wat als ik een fout maak?",
                 "a2": "Ongeldige morse-patronen worden overgeslagen. Zorg dat punten en streepjes goed gescheiden zijn door spaties.",
                 "q3": "Kan ik ook cijfers decoderen?",
                 "a3": "Ja! De tool decodeert de cijfers 0-9 vanuit hun morsecode-patronen.",
                 "q4": "Hoe scheid ik woorden?",
-                "a4": "Gebruik een forward slash (/) om woorden te scheiden in morsecode.",
+                "a4": "Gebruik een forward slash (\/) om woorden te scheiden in morsecode.",
                 "q5": "Is deze tool gratis?",
                 "a5": "Ja! Volledig gratis en zonder limieten. Alle verwerking gebeurt privé in je browser."
             }
@@ -405,7 +404,7 @@
             "btn_clear": "Wissen",
             "btn_copy": "Kopiëren",
             "label_output": "Morsecode Uitvoer",
-            "ph_output": null
+            "ph_output": "... --- ..."
         },
         "content": {
             "p1": "Converteer tekst direct naar morsecode met onze gratis online converter. Morsecode gebruikt punten (.) en streepjes (-) om letters en cijfers weer te geven. Perfect voor het leren van morsecode, het oefenen van noodcommunicatie of het maken van gecodeerde berichten.",

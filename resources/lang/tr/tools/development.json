@@ -22,7 +22,7 @@
         },
         "content": {
             "what_title": "Base64 Kodlama Nedir?",
-            "what_desc": "Base64, ikili verileri ASCII dize formatında temsil eden bir ikiliden metne kodlama şemasıdır. Genellikle metin işlemek üzere tasarlanmış ortamlar üzerinden depolanması veya aktarılması gereken verileri kodlamak için kullanılır. Ücretsiz Base64 kodlayıcı ve kod çözücü aracımız; geliştiricilerin, veri analistlerinin ve BT profesyonellerinin metni hızla Base64'e dönüştürmesine veya Base64 dizelerini tekrar okunabilir metne dönüştürmesine olanak tanır. API geliştirme, veri iletimi, e-posta ekleri, HTML/CSS içine görüntü gömme ve JSON'da ikili veri işleme için mükemmeldir.",
+            "what_desc": "Base64, ikili verileri ASCII dize formatında temsil eden bir ikiliden metne kodlama şemasıdır. Genellikle metin işlemek üzere tasarlanmış ortamlar üzerinden depolanması veya aktarılması gereken verileri kodlamak için kullanılır. Ücretsiz Base64 kodlayıcı ve kod çözücü aracımız; geliştiricilerin, veri analistlerinin ve BT profesyonellerinin metni hızla Base64'e dönüştürmesine veya Base64 dizelerini tekrar okunabilir metne dönüştürmesine olanak tanır. API geliştirme, veri iletimi, e-posta ekleri, HTML\/CSS içine görüntü gömme ve JSON'da ikili veri işleme için mükemmeldir.",
             "features": {
                 "secure": {
                     "title": "Güvenli Kodlama",
@@ -38,7 +38,7 @@
                 }
             },
             "how_to": {
-                "title": "Base64 Kodlayıcı/Kod Çözücü Nasıl Kullanılır?",
+                "title": "Base64 Kodlayıcı\/Kod Çözücü Nasıl Kullanılır?",
                 "encode": {
                     "title": "Metni Kodlama",
                     "step1": "\"Base64'e Kodla\" sekmesine tıklayın",
@@ -79,14 +79,14 @@
                 "desc": "Base64, ikili verileri ASCII metin formatına dönüştüren bir ikiliden metne kodlama şemasıdır. Ücretsiz Base64 Kodlayıcı ve Kod Çözücümüz; geliştiricilerin, sistem yöneticilerinin ve BT profesyonellerinin metni Base64'e kodlamasına veya Base64'ü anında okunabilir metne geri döndürmesine yardımcı olur. API kimlik doğrulaması, veri URI'leri, e-posta ekleri ve güvenli veri iletimi için mükemmeldir. Tüm işlemler tam gizlilik için tarayıcınızda gerçekleşir.",
                 "works_title": "🔄 Base64 Nasıl Çalışır?",
                 "works_encoding": "64 karakter kullanarak ikili verileri ASCII metnine dönüştürür",
-                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (ve dolgu için =)",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, \/ (ve dolgu için =)",
                 "works_decoding": "Base64 metnini orijinal ikili verilere geri dönüştürür",
                 "works_decoding_sub": "Kodlama işlemini mükemmel bir şekilde tersine çevirir",
                 "cases_title": "✅ Yaygın Kullanım Durumları",
                 "case_api": "API Kimlik Doğrulama",
                 "case_api_desc": "HTTP başlıklarında Basic Auth için kimlik bilgilerini kodlayın",
                 "case_uri": "Veri URI'leri",
-                "case_uri_desc": "Görüntüleri ve dosyaları doğrudan HTML/CSS içine gömün",
+                "case_uri_desc": "Görüntüleri ve dosyaları doğrudan HTML\/CSS içine gömün",
                 "case_email": "E-posta Ekleri",
                 "case_email_desc": "E-posta iletimi için ikili dosyaları kodlayın",
                 "case_url": "URL Parametreleri",
@@ -101,13 +101,13 @@
                     "Şifreleme için uygun değildir - gerçek şifreleme algoritmaları kullanın",
                     "İkili verileri yalnızca metin kabul eden sistemlerde kodlamak için mükemmeldir",
                     "Kullanmadan önce çözülen veriyi her zaman doğrulayın",
-                    "URL'ler için URL-güvenli Base64 kullanın (+/= karakterlerini -_ ile değiştirir)"
+                    "URL'ler için URL-güvenli Base64 kullanın (+\/= karakterlerini -_ ile değiştirir)"
                 ]
             },
             "faq": {
                 "title": "❓ Sıkça Sorulan Sorular",
                 "q1": "Base64 kodlama güvenli midir?",
-                "a1": "Hayır! Base64 şifreleme DEĞİLDİR; sadece bir kodlamadır (encoding). Herkes Base64 verilerini anında çözebilir. Güvenlik için asla tek başına Base64 kullanmayın. Şifreleme için AES, RSA veya TLS/SSL gibi gerçek kriptografik algoritmalar kullanın.",
+                "a1": "Hayır! Base64 şifreleme DEĞİLDİR; sadece bir kodlamadır (encoding). Herkes Base64 verilerini anında çözebilir. Güvenlik için asla tek başına Base64 kullanmayın. Şifreleme için AES, RSA veya TLS\/SSL gibi gerçek kriptografik algoritmalar kullanın.",
                 "q2": "Base64 neden dosya boyutunu artırır?",
                 "a2": "Base64 kodlama, 3 baytlık ikili veriyi 4 ASCII karakteri kullanarak temsil ettiği için veri boyutunu yaklaşık %33 artırır. Bu ek yük, ikili veriyi yalnızca metin kabul eden sistemler için güvenli hale getirmenin bir bedelidir.",
                 "q3": "Base64 ne için kullanılır?",
@@ -115,7 +115,7 @@
                 "q4": "Verilerim bir sunucuya gönderiliyor mu?",
                 "a4": "Hayır! Tüm Base64 kodlama ve kod çözme işlemleri JavaScript kullanılarak tamamen tarayıcınızda gerçekleşir. Verileriniz asla cihazınızdan ayrılmaz ve hiçbir yerde saklanmaz, iletilmez veya kaydedilmez. Gizliliğiniz tamamen korunur.",
                 "q5": "Görüntüleri Base64'e kodlayabilir miyim?",
-                "a5": "Evet! Aracımız metin kodlasa da, özel araçlar kullanarak görüntüleri de kodlayabilirsiniz. Base64 kodlu görüntüler, veri URI'leri (data:image/png;base64,...) kullanılarak doğrudan HTML/CSS içine gömülebilir. Bu, küçük görüntüler için yararlıdır ancak sayfa boyutunu artırır."
+                "a5": "Evet! Aracımız metin kodlasa da, özel araçlar kullanarak görüntüleri de kodlayabilirsiniz. Base64 kodlu görüntüler, veri URI'leri (data:image\/png;base64,...) kullanılarak doğrudan HTML\/CSS içine gömülebilir. Bu, küçük görüntüler için yararlıdır ancak sayfa boyutunu artırır."
             }
         },
         "js": {
@@ -153,10 +153,10 @@
             "btn_format": "Kodu Formatla",
             "label_input": "Giriş Kodu",
             "btn_clear": "Temizle",
-            "ph_input": "// Kodunuzu buraya yapıştırın...",
+            "ph_input": "\/\/ Kodunuzu buraya yapıştırın...",
             "label_output": "Formatlanmış Kod",
             "btn_copy": "Kopyala",
-            "ph_output": "// Formatlanmış kod burada görünecek..."
+            "ph_output": "\/\/ Formatlanmış kod burada görünecek..."
         },
         "content": {
             "hero_title": "Ücretsiz Çevrimiçi Kod Formatlayıcı",
@@ -241,9 +241,9 @@
             "choose": "-- Seçin --",
             "options": {
                 "every_minute": "Her Dakika (* * * * *)",
-                "every_5_minutes": "Her 5 Dakikada Bir (*/5 * * * *)",
-                "every_15_minutes": "Her 15 Dakikada Bir (*/15 * * * *)",
-                "every_30_minutes": "Her 30 Dakikada Bir (*/30 * * * *)",
+                "every_5_minutes": "Her 5 Dakikada Bir (*\/5 * * * *)",
+                "every_15_minutes": "Her 15 Dakikada Bir (*\/15 * * * *)",
+                "every_30_minutes": "Her 30 Dakikada Bir (*\/30 * * * *)",
                 "every_hour": "Her Saat (0 * * * *)",
                 "every_day_midnight": "Her Gün Gece Yarısı (0 0 * * *)",
                 "every_week": "Her Hafta (0 0 * * 0)",
@@ -260,7 +260,7 @@
             "weekday": "Haftanın Günü",
             "every_weekday": "Her Gün (*)",
             "command": "Çalıştırılacak Komut",
-            "ph_command": "/usr/bin/php /path/to/script.php",
+            "ph_command": "\/usr\/bin\/php \/path\/to\/script.php",
             "generated_cron": "Oluşturulan Cron İfadesi",
             "btn_copy": "Cron'u Kopyala",
             "btn_clear": "Sıfırla"
@@ -387,18 +387,18 @@
             },
             "how_title": "📚 Nasıl Kullanılır",
             "how_steps": {
-                "1": "<strong>Eylem Seçin:</strong> Küçültmek için \"CSS'yi Sıkıştır\"a veya formatlamak için \"CSS'yi Güzelleştir\"e tıklayın",
-                "2": "<strong>Sonuçları Görün:</strong> İşlenmiş CSS'yi çıkış alanında sıkıştırma istatistikleriyle birlikte görün",
-                "3": "<strong>Kopyalayın:</strong> Sıkıştırılmış CSS'yi panonuza kopyalamak için \"Kopyala\"ya tıklayın",
-                "4": "<strong>Canlıda Kullanın:</strong> Orijinal CSS dosyanızı sıkıştırılmış sürümle değiştirin",
+                "1": "<strong>Eylem Seçin:<\/strong> Küçültmek için \"CSS'yi Sıkıştır\"a veya formatlamak için \"CSS'yi Güzelleştir\"e tıklayın",
+                "2": "<strong>Sonuçları Görün:<\/strong> İşlenmiş CSS'yi çıkış alanında sıkıştırma istatistikleriyle birlikte görün",
+                "3": "<strong>Kopyalayın:<\/strong> Sıkıştırılmış CSS'yi panonuza kopyalamak için \"Kopyala\"ya tıklayın",
+                "4": "<strong>Canlıda Kullanın:<\/strong> Orijinal CSS dosyanızı sıkıştırılmış sürümle değiştirin",
                 "5": "İndir or Kopyala the minified CSS and Kullanın it in your production website to reduce file size and improve load times."
             },
             "best_practices_title": "💡 En İyi Uygulamalar",
             "best_practices_list": {
-                "1": "<strong>Canlı için sıkıştırın:</strong> Sıkıştırılmış CSS'yi yalnızca canlı (production) ortamlarda kullanın",
-                "2": "<strong>Dosyaları birleştirin:</strong> Daha iyi sıkıştırma için sıkıştırmadan önce birden fazla CSS dosyasını birleştirin",
-                "3": "<strong>İyice test edin:</strong> Hiçbir özelliğin bozulmadığından emin olmak için sıkıştırılmış CSS'yi her zaman test edin",
-                "4": "<strong>Derleme araçları kullanın:</strong> Otomasyon için sıkıştırmayı derleme sürecinize entegre edin",
+                "1": "<strong>Canlı için sıkıştırın:<\/strong> Sıkıştırılmış CSS'yi yalnızca canlı (production) ortamlarda kullanın",
+                "2": "<strong>Dosyaları birleştirin:<\/strong> Daha iyi sıkıştırma için sıkıştırmadan önce birden fazla CSS dosyasını birleştirin",
+                "3": "<strong>İyice test edin:<\/strong> Hiçbir özelliğin bozulmadığından emin olmak için sıkıştırılmış CSS'yi her zaman test edin",
+                "4": "<strong>Derleme araçları kullanın:<\/strong> Otomasyon için sıkıştırmayı derleme sürecinize entegre edin",
                 "5": "Keep an unminified version for development and debugging purposes."
             },
             "faq_title": "❓ Sıkça Sorulan Sorular",
@@ -439,7 +439,7 @@
             "key_ph": "Anahtar (örn. Authorization)",
             "value_ph": "Değer (örn. Bearer token)",
             "add_header": "+ Üstbilgi Ekle",
-            "raw_data_label": "Ham Veri (JSON/Metin)",
+            "raw_data_label": "Ham Veri (JSON\/Metin)",
             "generated_label": "Oluşturulan Komut",
             "btn_copy": "Komutu Kopyala"
         },
@@ -458,7 +458,7 @@
             "mode_encode": "HTML Kodla",
             "mode_decode": "HTML Çöz",
             "label_input_encode": "Kodlanacak HTML'i Girin",
-            "ph_input_encode": "<div>Merhaba ve Hoş Geldiniz</div>",
+            "ph_input_encode": "<div>Merhaba ve Hoş Geldiniz<\/div>",
             "btn_encode": "HTML Kodla",
             "btn_clear": "Temizle",
             "btn_copy": "Kopyala",
@@ -525,7 +525,7 @@
                 "1": "HTML'nizi veya metninizi giriş alanına yapıştırın",
                 "2": "Dönüştürmek için işlem düğmesine tıklayın",
                 "3": "Sonucu panoya kopyalayın",
-                "4": "Kopyala the encoded/decoded Sonuç and Kullanın it in your HTML, XML, or web applications."
+                "4": "Kopyala the encoded\/decoded Sonuç and Kullanın it in your HTML, XML, or web applications."
             },
             "examples_title": "💡 HTML Kodlama Örnekleri",
             "examples": {
@@ -539,7 +539,7 @@
                 },
                 "3": {
                     "title": "Encoding Special Characters",
-                    "code": "&lt;script&gt;alert(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
+                    "code": "&lt;script&gt;alert(\"XSS\")&lt;\/script&gt; → &amp;lt;script&amp;gt;alert(&amp;quot;XSS&amp;quot;)&amp;lt;\/script&amp;gt;"
                 }
             },
             "faq_title": "❓ Sıkça Sorulan Sorular",
@@ -584,12 +584,12 @@
             "why_desc": "HTML'nin sıkıştırılması web performansı optimizasyonu için önemlidir. Daha küçük HTML dosyaları daha hızlı indirme, azaltılmış bant genişliği kullanımı ve iyileştirilmiş sayfa yükleme süreleri anlamına gelir. Bu, özellikle çok fazla HTML içeriğine sahip büyük web siteleri için faydalıdır. Sıkıştırılmış HTML sunucu yükünü azaltır ve kullanıcı deneyimini iyileştirir.",
             "features_title": "Ana Özellikler",
             "features_list": {
-                "minify": "<strong>HTML'yi Sıkıştır:</strong> Dosya boyutunu azaltmak için boşlukları ve yorumları kaldırın",
-                "beautify": "<strong>HTML'yi Güzelleştir:</strong> HTML'yi düzgün girinti ile formatlayın",
-                "instant": "<strong>Anında Sonuçlar:</strong> HTML'yi gerçek zamanlı olarak işleyin",
-                "copy": "<strong>Çıktıyı Kopyala:</strong> Sıkıştırılmış HTML'yi kolayca kopyalayın",
-                "secure": "<strong>Güvenli ve Gizli:</strong> Tüm işlemler tarayıcıda yapılır",
-                "free": "<strong>Kullanımı Ücretsiz:</strong> Kayıt gerekmez"
+                "minify": "<strong>HTML'yi Sıkıştır:<\/strong> Dosya boyutunu azaltmak için boşlukları ve yorumları kaldırın",
+                "beautify": "<strong>HTML'yi Güzelleştir:<\/strong> HTML'yi düzgün girinti ile formatlayın",
+                "instant": "<strong>Anında Sonuçlar:<\/strong> HTML'yi gerçek zamanlı olarak işleyin",
+                "copy": "<strong>Çıktıyı Kopyala:<\/strong> Sıkıştırılmış HTML'yi kolayca kopyalayın",
+                "secure": "<strong>Güvenli ve Gizli:<\/strong> Tüm işlemler tarayıcıda yapılır",
+                "free": "<strong>Kullanımı Ücretsiz:<\/strong> Kayıt gerekmez"
             },
             "how_title": "Nasıl Kullanılır",
             "how_steps": {
@@ -643,11 +643,11 @@
             "about_p1": "Ücretsiz çevrimiçi HTML - Markdown dönüştürücümüzle HTML kodunu anında temiz ve okunabilir Markdown formatına dönüştürün. Dokümantasyon, README dosyaları veya içerik yönetim sistemleri için HTML içeriğini Markdown'a dönüştürmesi gereken geliştiriciler, teknik yazarlar ve içerik oluşturucular için mükemmeldir.",
             "features_title": "✨ Ana Özellikler",
             "features_list": {
-                "1": "✅ <strong>Formatı Koru:</strong> Başlıkları, listeleri, bağlantıları ve vurguları korur",
-                "2": "✅ <strong>Temiz Çıktı:</strong> Okunabilir, iyi formatlanmış Markdown oluşturur",
-                "3": "✅ <strong>Kurulum Gerektirmez:</strong> Doğrudan tarayıcınızda çalışır",
-                "4": "✅ <strong>Sonsuza Kadar Ücretsiz:</strong> Sınırlama olmaksızın %100 ücretsiz",
-                "5": "✅ <strong>Önce Gizlilik:</strong> Tüm dönüştürme işlemleri tarayıcınızda yerel olarak gerçekleşir",
+                "1": "✅ <strong>Formatı Koru:<\/strong> Başlıkları, listeleri, bağlantıları ve vurguları korur",
+                "2": "✅ <strong>Temiz Çıktı:<\/strong> Okunabilir, iyi formatlanmış Markdown oluşturur",
+                "3": "✅ <strong>Kurulum Gerektirmez:<\/strong> Doğrudan tarayıcınızda çalışır",
+                "4": "✅ <strong>Sonsuza Kadar Ücretsiz:<\/strong> Sınırlama olmaksızın %100 ücretsiz",
+                "5": "✅ <strong>Önce Gizlilik:<\/strong> Tüm dönüştürme işlemleri tarayıcınızda yerel olarak gerçekleşir",
                 "6": "Preserves code blocks and syntax highlighting for technical documentation."
             },
             "uses_title": "🎯 Yaygın Kullanım Durumları",
@@ -748,13 +748,13 @@
             "why_desc": "Ücretsiz HTML izleyicimiz geliştiriciler ve tasarımcılar için çeşitli avantajlar sunar. İlk olarak, dosya oluşturmaya veya bir geliştirme ortamı kurmaya gerek kalmadan anında görsel geri bildirim sağlar. İkincisi, tamamen tarayıcı tabanlıdır; yani yazılım yüklemeden her yerde kullanabilirsiniz. Üçüncüsü, hızlı test, hata ayıklama ve HTML öğrenme için mükemmeldir. Yan yana görünüm, kodunuzu ve çıktısını aynı anda görmenizi sağlayarak HTML öğelerinin nasıl işlendiğini anlamanızı kolaylaştırır.",
             "features_title": "Ana Özellikler",
             "features_list": {
-                "preview": "<strong>Gerçek Zamanlı Önizleme:</strong> Siz yazarken HTML'nizin anında işlendiğini görün",
-                "layout": "<strong>Yan Yana Görünüm:</strong> Kod düzenleyici ve önizleme paneli birlikte görüntülenir",
-                "syntax": "<strong>Sözdizimi Vurgulama:</strong> Renk kodlu sözdizimi ile okunması kolay kod",
-                "sample": "<strong>Örnek Kod:</strong> Hızla başlamak için örnek HTML yükleyin",
-                "no_install": "<strong>Kurulum Gerektirmez:</strong> Doğrudan tarayıcınızda çalışır",
-                "free": "<strong>Kullanımı Ücretsiz:</strong> Kayıt veya ödeme gerekmez",
-                "secure": "<strong>Güvenli:</strong> Tüm işlemler tarayıcınızda gerçekleşir"
+                "preview": "<strong>Gerçek Zamanlı Önizleme:<\/strong> Siz yazarken HTML'nizin anında işlendiğini görün",
+                "layout": "<strong>Yan Yana Görünüm:<\/strong> Kod düzenleyici ve önizleme paneli birlikte görüntülenir",
+                "syntax": "<strong>Sözdizimi Vurgulama:<\/strong> Renk kodlu sözdizimi ile okunması kolay kod",
+                "sample": "<strong>Örnek Kod:<\/strong> Hızla başlamak için örnek HTML yükleyin",
+                "no_install": "<strong>Kurulum Gerektirmez:<\/strong> Doğrudan tarayıcınızda çalışır",
+                "free": "<strong>Kullanımı Ücretsiz:<\/strong> Kayıt veya ödeme gerekmez",
+                "secure": "<strong>Güvenli:<\/strong> Tüm işlemler tarayıcınızda gerçekleşir"
             },
             "how_title": "HTML İzleyici Nasıl Kullanılır?",
             "how_steps": {
@@ -799,34 +799,29 @@
             "btn_beautify": "JS'yi Güzelleştir",
             "btn_clear": "Temizle",
             "btn_copy": "Kopyala",
-            "label_output": "JavaScript Çıktısı",
-            "ph_output": "İşlenmiş JS burada görünecek...",
-            "stats": {
-                "original": "Orijinal Boyut",
-                "minified": "Sıkıştırılmış Boyut",
-                "saved": "Tasarruf",
-                "compression": "Sıkıştırma Oranı"
-            }
+            "label_output": "JavaScript Çıktısı"
         },
         "content": {
-            "hero_title": "JavaScript Sıkıştırıcı",
-            "hero_subtitle": "Web performansı için JavaScript kodunuzu optimize edin",
-            "p1": "JavaScript Sıkıştırıcımız, web uygulamanızın performansını artırmak için JS dosyalarınızın boyutunu küçültür. Boşlukları, yorumları temizleyerek ve kod yapısını optimize ederek daha hızlı yükleme süreleri sağlar.",
+            "about_title": "What is a JavaScript Minifier?",
+            "about_desc": "A JavaScript Minifier is a tool that compresses JavaScript code by removing unnecessary characters like whitespace, comments, and line breaks without changing functionality. Minified JavaScript files are significantly smaller, leading to faster page load times and improved website performance. Our free online JS minifier also includes a beautify feature to format JavaScript with proper indentation for better readability during development.",
+            "why_title": "Why Minify JavaScript?",
+            "why_desc": "Minifying JavaScript is essential for web performance optimization. Smaller JS files mean faster downloads, reduced bandwidth usage, and improved page load times. This is especially important for mobile users and users with slower internet connections. Minified JavaScript reduces server load and improves user experience. For production websites, minification is a standard best practice that can significantly improve Core Web Vitals scores.",
             "features_title": "Özellikler",
-            "features": {
-                "minify": {
-                    "title": "Hızlı Sıkıştırma",
-                    "desc": "JS dosyalarınızı milisaniyeler içinde optimize edin."
-                },
-                "beautify": {
-                    "title": "Kod Güzelleştirme",
-                    "desc": "Sıkıştırılmış kodları tekrar okunabilir hale getirin."
-                },
-                "privacy": {
-                    "title": "Gizlilik",
-                    "desc": "Kodunuz hiçbir sunucuya gönderilmez, her şey tarayıcıda biter."
-                }
+            "features_list": {
+                "minify": "<strong>Minify JavaScript:<\/strong> Remove whitespace and comments to reduce file size",
+                "beautify": "<strong>Beautify JavaScript:<\/strong> Format JS with proper indentation",
+                "instant": "<strong>Instant Results:<\/strong> Process JavaScript in real-time",
+                "copy": "<strong>Copy Output:<\/strong> Easily copy minified JavaScript",
+                "secure": "<strong>Secure & Private:<\/strong> All processing in browser",
+                "free": "<strong>Free to Use:<\/strong> No registration required"
             },
+            "how_title": "How to Use",
+            "how_steps": [
+                "Paste your JavaScript code into the input field",
+                "Click \"Minify JS\" to compress the code",
+                "Click \"Beautify JS\" to format with indentation",
+                "Copy the output using \"Copy Output\" button"
+            ],
             "faq_title": "Sıkça Sorulan Sorular",
             "faq": {
                 "q1": "JS sıkıştırma güvenli mi?",
@@ -839,33 +834,14 @@
                 "a4": "Yes, use the \"Beautify JS\" button to format minified JavaScript with proper indentation.",
                 "q5": "Does minifying affect JavaScript functionality?",
                 "a5": "No, minification only removes unnecessary characters. The JavaScript works exactly the same."
-            },
-            "about_title": "What is a JavaScript Minifier?",
-            "about_desc": "A JavaScript Minifier is a tool that compresses JavaScript code by removing unnecessary characters like whitespace, comments, and line breaks without changing functionality. Minified JavaScript files are significantly smaller, leading to faster page load times and improved website performance. Our free online JS minifier also includes a beautify feature to format JavaScript with proper indentation for better readability during development.",
-            "why_title": "Why Minify JavaScript?",
-            "why_desc": "Minifying JavaScript is essential for web performance optimization. Smaller JS files mean faster downloads, reduced bandwidth usage, and improved page load times. This is especially important for mobile users and users with slower internet connections. Minified JavaScript reduces server load and improves user experience. For production websites, minification is a standard best practice that can significantly improve Core Web Vitals scores.",
-            "features_list": {
-                "minify": "<strong>Minify JavaScript:</strong> Remove whitespace and comments to reduce file size",
-                "beautify": "<strong>Beautify JavaScript:</strong> Format JS with proper indentation",
-                "instant": "<strong>Instant Results:</strong> Process JavaScript in real-time",
-                "copy": "<strong>Copy Output:</strong> Easily copy minified JavaScript",
-                "secure": "<strong>Secure & Private:</strong> All processing in browser",
-                "free": "<strong>Free to Use:</strong> No registration required"
-            },
-            "how_title": "How to Use",
-            "how_steps": [
-                "Paste your JavaScript code into the input field",
-                "Click \"Minify JS\" to compress the code",
-                "Click \"Beautify JS\" to format with indentation",
-                "Copy the output using \"Copy Output\" button"
-            ]
+            }
         },
         "js": {
             "error_empty": "Lütfen kod girin",
             "success_minify": "✓ Başarıyla sıkıştırıldı",
-            "success_copy": "✓ Kopyalandı",
             "success_beautify": "✓ JavaScript beautified successfully!",
-            "error_no_copy": "No output to copy"
+            "error_no_copy": "No output to copy",
+            "success_copy": "✓ Kopyalandı"
         }
     },
     "json-formatter": {
@@ -932,7 +908,7 @@
                     "desc": "MongoDB, CouchDB ve Firebase gibi NoSQL veritabanlarından gelen JSON verilerini daha iyi okunabilirlik için formatlayın."
                 },
                 "export": {
-                    "title": "Veri Dışa/İçe Aktarımı",
+                    "title": "Veri Dışa\/İçe Aktarımı",
                     "desc": "JSON verilerini dışa aktarmaya hazırlayın veya içe aktarılan JSON verilerini uygun yapı ve sözdizimi için doğrulayın."
                 }
             },
@@ -1054,19 +1030,19 @@
             },
             "how_title": "📚 Nasıl Kullanılır",
             "how_steps": [
-                "<strong>JSON'ı Yapıştırın:</strong> JSON verilerinizi kopyalayıp giriş alanına yapıştırın",
-                "<strong>Ayrıştırın:</strong> Yapıyı doğrulamak ve görselleştirmek için \"JSON'ı Ayrıştır\"a tıklayın",
-                "<strong>Güzelleştirin:</strong> Uygun girinti ile formatlamak için \"Güzelleştir\"e tıklayın",
-                "<strong>Sıkıştırın:</strong> Boşlukları kaldırmak ve sıkıştırmak için \"Sıkıştır\"a tıklayın",
-                "<strong>Ağaç Görünümünü İnceleyin:</strong> Hiyerarşik yapıyı ağaç görünümü formatında görün"
+                "<strong>JSON'ı Yapıştırın:<\/strong> JSON verilerinizi kopyalayıp giriş alanına yapıştırın",
+                "<strong>Ayrıştırın:<\/strong> Yapıyı doğrulamak ve görselleştirmek için \"JSON'ı Ayrıştır\"a tıklayın",
+                "<strong>Güzelleştirin:<\/strong> Uygun girinti ile formatlamak için \"Güzelleştir\"e tıklayın",
+                "<strong>Sıkıştırın:<\/strong> Boşlukları kaldırmak ve sıkıştırmak için \"Sıkıştır\"a tıklayın",
+                "<strong>Ağaç Görünümünü İnceleyin:<\/strong> Hiyerarşik yapıyı ağaç görünümü formatında görün"
             ],
             "tips_title": "💡 JSON En İyi Uygulamaları",
             "tips_list": [
-                "<strong>Çift tırnak kullanın:</strong> JSON, dizeler için tek tırnak değil, çift tırnak gerektirir",
-                "<strong>Sonda virgül bırakmayın:</strong> Nesnelerin ve dizilerin son öğesinden sonraki virgülleri kaldırın",
-                "<strong>Uygun veri türleri:</strong> Sayıları tırnaksız, boole değerlerini true/false olarak ve boş değerler için null kullanın",
-                "<strong>Düzenli olarak doğrulayın:</strong> Yayınlamadan veya canlıda kullanmadan önce JSON'ı her zaman doğrulayın",
-                "<strong>Okunabilirlik için güzelleştirin:</strong> Daha kolay hata ayıklama ve bakım için JSON'ı formatlayın"
+                "<strong>Çift tırnak kullanın:<\/strong> JSON, dizeler için tek tırnak değil, çift tırnak gerektirir",
+                "<strong>Sonda virgül bırakmayın:<\/strong> Nesnelerin ve dizilerin son öğesinden sonraki virgülleri kaldırın",
+                "<strong>Uygun veri türleri:<\/strong> Sayıları tırnaksız, boole değerlerini true\/false olarak ve boş değerler için null kullanın",
+                "<strong>Düzenli olarak doğrulayın:<\/strong> Yayınlamadan veya canlıda kullanmadan önce JSON'ı her zaman doğrulayın",
+                "<strong>Okunabilirlik için güzelleştirin:<\/strong> Daha kolay hata ayıklama ve bakım için JSON'ı formatlayın"
             ],
             "faq_title": "❓ Sıkça Sorulan Sorular",
             "faq": {
@@ -1123,12 +1099,12 @@
             "p1": "Ücretsiz JSON - CSV dönüştürücümüz; geliştiriciler, veri analistleri ve BT profesyonelleri için tasarlanmış güçlü bir araçtır. Yapılandırılmış JSON verilerini kolayca temiz, formatlanmış CSV (Virgülle Ayrılmış Değerler) veya TSV dosyalarına dönüştürün. Verilerinizi Excel, Google E-Tablolar veya veritabanı içe aktarımları için hazırlıyor olun; aracımız %100 istemci tarafı işleme ile doğruluk ve hız sağlar.",
             "features_title": "Ana Özellikler",
             "features_list": {
-                "fast": "<strong>Anında Dönüşüm:</strong> Milisaniyeler içinde sonuç alın",
-                "secure": "<strong>Gizli ve Güvenli:</strong> Tüm veriler tarayıcınızda kalır",
-                "format": "<strong>Akıllı Düzleştirme:</strong> İç içe geçmiş JSON nesnelerini doğru şekilde işler",
-                "custom": "<strong>Özel Sınırlayıcılar:</strong> Virgül, noktalı virgül veya sekmeler arasında seçim yapın",
-                "export": "<strong>Kolay Dışa Aktarma:</strong> Panoya kopyalayın veya .csv olarak indirin",
-                "free": "<strong>%100 Ücretsiz:</strong> Sınır yok, kayıt gerekmez"
+                "fast": "<strong>Anında Dönüşüm:<\/strong> Milisaniyeler içinde sonuç alın",
+                "secure": "<strong>Gizli ve Güvenli:<\/strong> Tüm veriler tarayıcınızda kalır",
+                "format": "<strong>Akıllı Düzleştirme:<\/strong> İç içe geçmiş JSON nesnelerini doğru şekilde işler",
+                "custom": "<strong>Özel Sınırlayıcılar:<\/strong> Virgül, noktalı virgül veya sekmeler arasında seçim yapın",
+                "export": "<strong>Kolay Dışa Aktarma:<\/strong> Panoya kopyalayın veya .csv olarak indirin",
+                "free": "<strong>%100 Ücretsiz:<\/strong> Sınır yok, kayıt gerekmez"
             },
             "uses_title": "Yaygın Kullanım Durumları",
             "uses": {
@@ -1250,10 +1226,10 @@
             },
             "how_title": "Nasıl Kullanılır",
             "how_steps": [
-                "Hedef veritabanı <strong>Tablo Adını</strong> girin",
-                "<strong>JSON</strong> verinizi yapıştırın (bir dizi veya nesne olmalıdır)",
-                "Betiği oluşturmak için <strong>SQL Oluştur</strong> düğmesine tıklayın",
-                "SQL çıktısını panonuza <strong>Kopyalayın</strong>"
+                "Hedef veritabanı <strong>Tablo Adını<\/strong> girin",
+                "<strong>JSON<\/strong> verinizi yapıştırın (bir dizi veya nesne olmalıdır)",
+                "Betiği oluşturmak için <strong>SQL Oluştur<\/strong> düğmesine tıklayın",
+                "SQL çıktısını panonuza <strong>Kopyalayın<\/strong>"
             ],
             "faq_title": "Sıkça Sorulan Sorular",
             "faq": {
@@ -1454,7 +1430,7 @@
                     "desc": "JSON ayarlarını YAML yapılandırma dosyalarına çevirin."
                 },
                 "cicd": {
-                    "title": "CI/CD İş Akışları",
+                    "title": "CI\/CD İş Akışları",
                     "desc": "JSON verilerinden YAML hat tanımları hazırlayın."
                 },
                 "cloud": {
@@ -1515,7 +1491,7 @@
             "tips_list": {
                 "1": "Dönüştürmeden önce JSON'ınızın geçerli olduğundan emin olun.",
                 "2": "Dönüşümün nasıl çalıştığını görmek için \"Örnek\" düğmesini kullanın.",
-                "3": "YAML da JSON gibi büyük/küçük harfe duyarlıdır.",
+                "3": "YAML da JSON gibi büyük\/küçük harfe duyarlıdır.",
                 "4": "Oluşan YAML'da girintileri kontrol edin.",
                 "5": "Yeni bir başlangıç için tüm verileri kolayca temizleyin."
             }
@@ -1551,7 +1527,7 @@
             "btn_decode": "JWT Çöz",
             "btn_clear": "Temizle",
             "btn_example": "Örnek",
-            "label_payload": "Yük (Payload/Claims)",
+            "label_payload": "Yük (Payload\/Claims)",
             "label_signature": "İmza",
             "note_signature": "⚠️ Not: İmza doğrulaması gizli anahtar (secret key) gerektirir"
         },
@@ -1560,7 +1536,7 @@
             "hero_subtitle": "JSON Web Token'larını anında çözün ve inceleyin",
             "p1": "Ücretsiz JWT Kod Çözücü aracımız; üstbilgi (header), yük (payload) ve imza bileşenlerini görmek için JSON Web Token'larını (JWT) çözmenize ve incelemenize olanak tanır. Kimlik doğrulama sorunlarını ayıklamak, belirteç yapısını anlamak ve JWT taleplerini doğrulamak için mükemmeldir.",
             "what_title": "🔍 JWT Nedir?",
-            "what_desc": "JSON Web Token (JWT), iki taraf arasında iddiaları/talepleri (claims) temsil etmek için kullanılan kompakt, URL-güvenli bir yöntemdir. JWT'ler, noktalarla ayrılmış üç bölümden oluşur: Üstbilgi (header - algoritma ve belirteç türü), Yük (payload - veriler/iddialar) ve İmza (signature - doğrulama).",
+            "what_desc": "JSON Web Token (JWT), iki taraf arasında iddiaları\/talepleri (claims) temsil etmek için kullanılan kompakt, URL-güvenli bir yöntemdir. JWT'ler, noktalarla ayrılmış üç bölümden oluşur: Üstbilgi (header - algoritma ve belirteç türü), Yük (payload - veriler\/iddialar) ve İmza (signature - doğrulama).",
             "features_title": "✨ Özellikler",
             "features": {
                 "instant": {
@@ -1704,7 +1680,7 @@
             "error_no_copy": "Kopyalanacak HTML yok. Lütfen önce Markdown'u dönüştürün.",
             "success_copy": "HTML panoya kopyalandı!",
             "error_no_download": "İndirilecek HTML yok. Lütfen önce Markdown'u dönüştürün.",
-            "example": "# Markdown'a Hoş Geldiniz\n\n## Bu bir alt başlıktır\n\nBu, **kalın metin** ve *italik metin* içeren bir paragraftır.\n\n### Özellikler\n\n- Yazması kolay\n- Okuması kolay\n- HTML'e dönüşür\n\n### Kod Örneği\n\n```javascript\nfunction merhaba() {\n    console.log(\"Merhaba, Dünya!\");\n}\n```\n\n> Bu bir blok alıntıdır (blockquote)\n\n[Web sitemizi ziyaret edin](https://example.com)"
+            "example": "# Markdown'a Hoş Geldiniz\n\n## Bu bir alt başlıktır\n\nBu, **kalın metin** ve *italik metin* içeren bir paragraftır.\n\n### Özellikler\n\n- Yazması kolay\n- Okuması kolay\n- HTML'e dönüşür\n\n### Kod Örneği\n\n```javascript\nfunction merhaba() {\n    console.log(\"Merhaba, Dünya!\");\n}\n```\n\n> Bu bir blok alıntıdır (blockquote)\n\n[Web sitemizi ziyaret edin](https:\/\/example.com)"
         }
     },
     "md5-generator": {
@@ -1729,20 +1705,20 @@
             "what_desc": "MD5, herhangi bir uzunluktaki girdiyi alan ve genellikle 32 karakterlik bir onaltılık sayı olarak temsil edilen sabit bir 128 bitlik hash değeri üreten bir kriptografik hash fonksiyonudur. Aynı girdi her zaman aynı hash'i üretir, ancak girdideki en küçük değişiklik bile tamamen farklı bir hash oluşturur.",
             "features_title": "✅ MD5 Avantajları",
             "features": {
-                "fast": "<strong>Hızlı İşleme:</strong> Son derece hızlı hash oluşturma",
-                "fixed": "<strong>Sabit Uzunluk:</strong> Her zaman 128 bitlik çıktı üretir",
-                "deterministic": "<strong>Belirleyici (Deterministic):</strong> Aynı girdi = aynı hash",
-                "support": "<strong>Geniş Destek:</strong> Tüm programlama dillerinde mevcuttur"
+                "fast": "<strong>Hızlı İşleme:<\/strong> Son derece hızlı hash oluşturma",
+                "fixed": "<strong>Sabit Uzunluk:<\/strong> Her zaman 128 bitlik çıktı üretir",
+                "deterministic": "<strong>Belirleyici (Deterministic):<\/strong> Aynı girdi = aynı hash",
+                "support": "<strong>Geniş Destek:<\/strong> Tüm programlama dillerinde mevcuttur"
             },
             "uses_title": "📊 Yaygın Kullanım Durumları",
             "uses": {
-                "verify": "<strong>Dosya Doğrulama:</strong> Dosya bütünlüğünü kontrol edin",
-                "checksum": "<strong>Sağlama Toplamları:</strong> İndirmeleri doğrulayın",
-                "cache": "<strong>Önbellek Anahtarları:</strong> Benzersiz tanımlayıcılar oluşturun",
-                "integrity": "<strong>Veri Bütünlüğü:</strong> Değişiklikleri algılayın"
+                "verify": "<strong>Dosya Doğrulama:<\/strong> Dosya bütünlüğünü kontrol edin",
+                "checksum": "<strong>Sağlama Toplamları:<\/strong> İndirmeleri doğrulayın",
+                "cache": "<strong>Önbellek Anahtarları:<\/strong> Benzersiz tanımlayıcılar oluşturun",
+                "integrity": "<strong>Veri Bütünlüğü:<\/strong> Değişiklikleri algılayın"
             },
             "warning_title": "⚠️ Güvenlik Uyarısı",
-            "warning_desc": "<strong>MD5'i şifre hashleme veya güvenliğin kritik olduğu uygulamalar için KULLANMAYIN!</strong> MD5 kriptografik olarak kırılmıştır ve çakışma (collision) saldırılarına karşı savunmasızdır. Şifre hashleme için bcrypt, Argon2 veya PBKDF2 gibi modern algoritmalar kullanın.",
+            "warning_desc": "<strong>MD5'i şifre hashleme veya güvenliğin kritik olduğu uygulamalar için KULLANMAYIN!<\/strong> MD5 kriptografik olarak kırılmıştır ve çakışma (collision) saldırılarına karşı savunmasızdır. Şifre hashleme için bcrypt, Argon2 veya PBKDF2 gibi modern algoritmalar kullanın.",
             "compare_title": "🔄 MD5 ve Diğer Hash Fonksiyonları Karşılaştırması",
             "compare": {
                 "md5": {
@@ -1959,7 +1935,7 @@
                 },
                 "copy": {
                     "title": "Tek Tıkla Kopyalama",
-                    "desc": "Kodlanmış/çözülmüş metni anında kopyalayın"
+                    "desc": "Kodlanmış\/çözülmüş metni anında kopyalayın"
                 },
                 "free": {
                     "title": "%100 Ücretsiz",
@@ -2015,7 +1991,7 @@
             "examples_title": "Unicode Örnekleri",
             "examples": {
                 "simple": {
-                    "title": "Basit/ASCII:",
+                    "title": "Basit\/ASCII:",
                     "desc": "Orijinal: \"A\" → Kodlanmış: \"\\u0041\""
                 },
                 "special": {
@@ -2023,7 +1999,7 @@
                     "desc": "Orijinal: \"©\" → Kodlanmış: \"\\u00A9\""
                 },
                 "emoji": {
-                    "title": "Emojiler/Çoklu Bayt:",
+                    "title": "Emojiler\/Çoklu Bayt:",
                     "desc": "Orijinal: \"🌟\" → Kodlanmış: \"\\uD83C\\uDF1F\" veya temsile bağlı olarak \"\\u2B50\""
                 }
             },
@@ -2032,7 +2008,7 @@
                 "q1": "Neden Unicode kaçış dizileri kullanılır?",
                 "a1": "Herhangi bir karakteri yalnızca ASCII karakterleri kullanarak temsil etmenize olanak tanırlar; bu da ham Unicode'u doğru işlemeyebilecek farklı sistemler, kodlamalar ve dosya aktarımları arasında uyumluluk sağlar.",
                 "q2": "Hangi format kullanılır?",
-                "a2": "Bu araç tipik olarak Temel Çok Dilli Düzlem (Basic Multilingual Plane) karakterleri için JavaScript/JSON stili \\uXXXX formatını kullanır.",
+                "a2": "Bu araç tipik olarak Temel Çok Dilli Düzlem (Basic Multilingual Plane) karakterleri için JavaScript\/JSON stili \\uXXXX formatını kullanır.",
                 "q3": "URL kodlamasından (URL encoding) different mıdır?",
                 "a3": "Evet. URL kodlaması temel olarak URL'ler için %XX onaltılık değerlerini kullanır. Unicode kaçışları ise \\uXXXX kullanır ve JavaScript, Java ve Python gibi programlama dillerindeki dizelerde kullanılır.",
                 "q4": "Verilerim güvende mi?",
@@ -2059,7 +2035,7 @@
             "btn_encode": "URL Kodla",
             "btn_decode": "URL Çöz",
             "label_input_encode": "Kodlanacak URL'yi Girin",
-            "ph_input": "https://example.com/search?ad=Ali Can&yas=30",
+            "ph_input": "https:\/\/example.com\/search?ad=Ali Can&yas=30",
             "btn_process_encode": "URL Kodla",
             "btn_clear": "Temizle",
             "btn_copy": "Kopyala",
@@ -2089,7 +2065,7 @@
                 },
                 "copy": {
                     "title": "Tek Tıkla Kopyalama",
-                    "desc": "Kodlanmış/çözülmüş URL'leri anında kopyalayın"
+                    "desc": "Kodlanmış\/çözülmüş URL'leri anında kopyalayın"
                 },
                 "free": {
                     "title": "%100 Ücretsiz",
@@ -2147,7 +2123,7 @@
                 },
                 "step5": {
                     "title": "İstediğiniz Yerde Kullanın",
-                    "desc": "Kodlanmış/çözülmüş URL'yi uygulamanıza yapıştırın"
+                    "desc": "Kodlanmış\/çözülmüş URL'yi uygulamanıza yapıştırın"
                 }
             },
             "examples_title": "URL Kodlama Örnekleri",
@@ -2162,7 +2138,7 @@
                 },
                 "full": {
                     "title": "Tam URL:",
-                    "desc": "Orijinal: \"https://example.com/search?q=merhaba dünya\" → Kodlanmış: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dmerhaba%20dünya\""
+                    "desc": "Orijinal: \"https:\/\/example.com\/search?q=merhaba dünya\" → Kodlanmış: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dmerhaba%20dünya\""
                 }
             },
             "faq_title": "Sıkça Sorulan Sorular",
@@ -2170,11 +2146,11 @@
                 "q1": "URL'leri ne zaman kodlamalıyım?",
                 "a1": "URL'leri sorgu parametresi olarak geçirirken, veritabanlarında saklarken or when they contain special characters like spaces, &, =, ?, or non-ASCII characters.",
                 "q2": "Hangi karakterlerin kodlanması gerekir?",
-                "a2": ": / ? # [ ] @ ! $ & ' ( ) * + , ; = gibi ayrılmış (reserved) karakterler ve boşluklar, <, >, \", {, }, |, \\, ^, `, gibi güvenli olmayan karakterler ve ASCII dışı karakterler kodlanmalıdır.",
+                "a2": ": \/ ? # [ ] @ ! $ & ' ( ) * + , ; = gibi ayrılmış (reserved) karakterler ve boşluklar, <, >, \", {, }, |, \\, ^, `, gibi güvenli olmayan karakterler ve ASCII dışı karakterler kodlanmalıdır.",
                 "q3": "URL kodlama Base64 ile aynı mıdır?",
                 "a3": "Hayır. URL kodlama belirli karakterleri %XX formatına dönüştürürken, Base64 tüm veriyi farklı bir karakter setine kodlar. Farklı amaçlara hizmet ederler.",
                 "q4": "Tüm URL'yi kodlayabilir miyim?",
-                "a4": "Evet, ancak genellikle yalnızca sorgu dizesi (query string) bölümünü kodlarsınız. Protokol (https://) dahil tüm URL'yi kodlamak daha az yaygındır ve sorunlara neden olabilir.",
+                "a4": "Evet, ancak genellikle yalnızca sorgu dizesi (query string) bölümünü kodlarsınız. Protokol (https:\/\/) dahil tüm URL'yi kodlamak daha az yaygındır ve sorunlara neden olabilir.",
                 "q5": "Verilerim güvende mi?",
                 "a5": "Evet! Tüm kodlama ve kod çözme işlemleri JavaScript kullanılarak tamamen tarayıcınızda gerçekleşir. URL'leriniz asla cihazınızdan ayrılmaz veya herhangi bir sunucuya gönderilmez."
             }
@@ -2221,8 +2197,8 @@
         },
         "editor": {
             "label_input": "XML Girişi",
-            "ph_input": "<root><child>değer</child></root>",
-            "btn_format": "Formatla / Güzelleştir",
+            "ph_input": "<root><child>değer<\/child><\/root>",
+            "btn_format": "Formatla \/ Güzelleştir",
             "btn_minify": "Sıkıştır",
             "btn_copy": "Kopyala"
         },
@@ -2246,14 +2222,14 @@
             "btn_copy": "Kopyala",
             "btn_example": "Örnek",
             "label_input": "XML Girin",
-            "ph_input": "<data><row><ad>Can</ad><yas>30</yas></row></data>",
+            "ph_input": "<data><row><ad>Can<\/ad><yas>30<\/yas><\/row><\/data>",
             "label_output": "CSV Çıktısı",
             "ph_output": "Dönüştürülmüş CSV burada görünecek..."
         },
         "content": {
             "p1": "Ücretsiz XML - CSV dönüştürücümüz; yapılandırılmış XML verilerini virgülle ayrılmış değerler (CSV) formatına dönüştürür. XML verilerini Excel, Google E-Tablolar, veritabanları ve veri analizi araçlarına aktarmak için mükemmeldir. Karmaşık XML yapılarını saniyeler içinde basit, tablo halindeki CSV formatına dönüştürün.",
             "what_title": "XML - CSV Dönüşümü Nedir?",
-            "what_desc": "XML - CSV dönüşümü; yapılandırılmış eXtensible Markup Language (Genişletilebilir İşaretleme Dili) verilerini virgülle ayrılmış değerler formatına dönüştürür. XML karmaşık veri yapıları ve API'ler için harika olsa da, CSV daha basittir ve hesap tablosu uygulamaları tarafından evrensel olarak desteklenir; bu da onu veri analizi, raporlama ve içe/dışa aktarma işlemleri için ideal kılar.",
+            "what_desc": "XML - CSV dönüşümü; yapılandırılmış eXtensible Markup Language (Genişletilebilir İşaretleme Dili) verilerini virgülle ayrılmış değerler formatına dönüştürür. XML karmaşık veri yapıları ve API'ler için harika olsa da, CSV daha basittir ve hesap tablosu uygulamaları tarafından evrensel olarak desteklenir; bu da onu veri analizi, raporlama ve içe\/dışa aktarma işlemleri için ideal kılar.",
             "features_title": "Özellikler",
             "features": {
                 "fast": {
@@ -2353,12 +2329,11 @@
         },
         "js": {
             "error_empty": "Lütfen XML verisini girin",
-            "success_convert": "✓ XML başarıyla CSV'ye dönüştürüldü",
-            "error_invalid": "✗ Geçersiz XML formatı",
-            "error_no_copy": "Kopyalanacak içerik yok",
-            "success_copy": "✓ Panoya kopyalandı",
             "error_no_row": "No <row> elements found in XML",
-            "error_process": "✗ Error: "
+            "success_convert": "✓ XML başarıyla CSV'ye dönüştürüldü",
+            "error_process": "✗ Error: ",
+            "error_no_copy": "Kopyalanacak içerik yok",
+            "success_copy": "✓ Panoya kopyalandı"
         }
     },
     "xml-to-json": {
@@ -2375,7 +2350,7 @@
             "btn_example": "Örnek Yükle",
             "btn_clear": "Temizle",
             "label_input": "XML Girişi",
-            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>XML'iniz buraya...</item>\n</root>",
+            "ph_input": "<?xml version=\"1.0\"?>\n<root>\n  <item>XML'iniz buraya...<\/item>\n<\/root>",
             "label_output": "JSON Çıktısı",
             "ph_output": "Dönüştürülmüş JSON burada görünecek..."
         },
@@ -2511,7 +2486,7 @@
         },
         "content": {
             "h2": "YAML - JSON Dönüştürücü Hakkında",
-            "p1": "Ücretsiz çevrimiçi YAML - JSON dönüştürücümüzle YAML yapılandırma dosyalarını anında JSON formatına dönüştürün. Yapılandırma dosyaları, CI/CD boru hatları (pipelines) ve veri dönüşümü ile çalışan geliştiriciler için mükemmeldir.",
+            "p1": "Ücretsiz çevrimiçi YAML - JSON dönüştürücümüzle YAML yapılandırma dosyalarını anında JSON formatına dönüştürün. Yapılandırma dosyaları, CI\/CD boru hatları (pipelines) ve veri dönüşümü ile çalışan geliştiriciler için mükemmeldir.",
             "features_title": "Ana Özellikler",
             "features": {
                 "syntax": {
@@ -2546,7 +2521,7 @@
                     "desc": "Uygulamalar için YAML yapılandırma dosyalarını JSON'a dönüştürün."
                 },
                 "pipeline": {
-                    "title": "CI/CD Boru Hatları",
+                    "title": "CI\/CD Boru Hatları",
                     "desc": "YAML boru hattı yapılandırmalarını JSON formatına dönüştürün."
                 },
                 "k8s": {

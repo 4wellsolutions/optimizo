@@ -40,9 +40,6 @@
             "hero_subtitle": "Trouvez les changements entre deux versions d'un texte",
             "p1": "Cet outil vous permet de comparer rapidement deux blocs de texte ou fichiers. Les différences, suppressions et ajouts sont mis en évidence pour une analyse facile.",
             "features_title": "Caractéristiques",
-            "uses_title": "Applications courantes",
-            "how_title": "Comment utiliser",
-            "faq_title": "Questions fréquentes",
             "features": {
                 "visual": {
                     "title": "Comparaison visuelle",
@@ -69,6 +66,7 @@
                     "desc": "Outil de comparaison de fichiers de haute qualité disponible gratuitement, sans inscription requise."
                 }
             },
+            "uses_title": "Applications courantes",
             "uses": {
                 "code": {
                     "title": "Revue de code",
@@ -95,6 +93,7 @@
                     "desc": "Comparez les blocs de texte originaux et traduits pour garantir la cohérence de la structure et de la longueur."
                 }
             },
+            "how_title": "Comment utiliser",
             "how_steps": {
                 "1": {
                     "title": "Coller le texte original",
@@ -113,6 +112,7 @@
                     "desc": "Consultez les résultats ci-dessous. Les lignes vertes sont les ajouts, les rouges les suppressions."
                 }
             },
+            "faq_title": "Questions fréquentes",
             "faq": {
                 "q1": "Mes données textuelles sont-elles sécurisées ?",
                 "a1": "Absolument. Cet outil s'exécute entièrement côté client via JavaScript. Aucune donnée n'est transmise à nos serveurs.",
@@ -256,6 +256,7 @@
                     "desc": "Utilisez votre message décodé"
                 }
             },
+            "examples_title": "Exemples de conversion",
             "faq_title": "❓ Questions Fréquentes",
             "faq": {
                 "q1": "Format d'entrée ?",
@@ -265,12 +266,10 @@
                 "q3": "Nombres ?",
                 "a3": "Oui, supporte 0-9.",
                 "q4": "Séparer les mots ?",
-                "a4": "Utilisez / pour les espaces.",
+                "a4": "Utilisez \/ pour les espaces.",
                 "q5": "Gratuit ?",
                 "a5": "Oui !"
-            },
-            "examples_title": "Exemples de conversion",
-            "samples": []
+            }
         },
         "js": {
             "error_empty": "Veuillez entrer du code Morse",
@@ -387,8 +386,8 @@
         "js": {
             "error_empty": "Veuillez entrer du texte",
             "success_reverse": "Texte inversé avec succès !",
-            "success_copy": "Copié !",
-            "error_no_copy": "Rien à copier !"
+            "error_no_copy": "Rien à copier !",
+            "success_copy": "Copié !"
         }
     },
     "text-to-morse-converter": {
@@ -426,17 +425,13 @@
                     "title": "Encodage en masse",
                     "desc": "Encodez plusieurs mots"
                 },
-                "alphanum": {
+                "alphanumeric": {
                     "title": "Lettres & Chiffres",
                     "desc": "Encode A-Z et 0-9"
                 },
                 "free": {
                     "title": "Gratuit",
                     "desc": "Sans limites"
-                },
-                "alphanumeric": {
-                    "title": "Lettres & Chiffres",
-                    "desc": "Encode A-Z et 0-9"
                 }
             },
             "uses_title": "Cas d'utilisation courants",
@@ -466,27 +461,6 @@
                     "desc": "Messages cachés"
                 }
             },
-            "faq": {
-                "q1": "C'est quoi le morse ?",
-                "a1": "Un code utilisant des points et traits.",
-                "q2": "SOS ?",
-                "a2": "Trois points, trois traits, trois points.",
-                "q3": "Nombres ?",
-                "a3": "Oui, 0-9 supportés.",
-                "q4": "Utilisé aujourd'hui ?",
-                "a4": "Oui, radio amateur et urgences.",
-                "q5": "Gratuit ?",
-                "a5": "Oui !"
-            },
-            "examples": {
-                "sos": "SOS :",
-                "word": "Mot :",
-                "numbers": "Nombres :",
-                "phrase": "Phrase :"
-            },
-            "examples_title": "Exemples de conversion",
-            "faq_title": "Questions Fréquentes",
-            "features_title": "Fonctionnalités",
             "how_to": {
                 "title": "Comment utiliser",
                 "step1": "Entrer le texte",
@@ -499,13 +473,33 @@
                 "step4_desc": "Copiez dans le presse-papiers",
                 "step5": "Utiliser",
                 "step5_desc": "Partagez le message codé"
+            },
+            "examples_title": "Exemples de conversion",
+            "examples": {
+                "sos": "SOS :",
+                "word": "Mot :",
+                "numbers": "Nombres :",
+                "phrase": "Phrase :"
+            },
+            "faq_title": "Questions Fréquentes",
+            "faq": {
+                "q1": "C'est quoi le morse ?",
+                "a1": "Un code utilisant des points et traits.",
+                "q2": "SOS ?",
+                "a2": "Trois points, trois traits, trois points.",
+                "q3": "Nombres ?",
+                "a3": "Oui, 0-9 supportés.",
+                "q4": "Utilisé aujourd'hui ?",
+                "a4": "Oui, radio amateur et urgences.",
+                "q5": "Gratuit ?",
+                "a5": "Oui !"
             }
         },
         "js": {
             "error_empty": "Entrez du texte",
             "success_convert": "Conversion réussie !",
-            "success_copy": "Copié !",
-            "error_no_copy": "Rien à copier !"
+            "error_no_copy": "Rien à copier !",
+            "success_copy": "Copié !"
         }
     },
     "word-counter": {

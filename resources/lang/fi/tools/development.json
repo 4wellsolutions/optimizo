@@ -22,7 +22,7 @@
         },
         "content": {
             "what_title": "Mikä on Base64-koodaus?",
-            "what_desc": "Base64 on binääristä tekstiksi -koodausmalli, joka edustaa binaaridataa ASCII-merkkijonomuodossa. Sitä käytetään yleisesti koodaamaan dataa, joka on tallennettava tai siirrettävä tekstin käsittelyyn tarkoitetun median kautta. Ilmaisen Base64-enkooderi- ja dekooderityökalumme avulla kehittäjät, data-analyytikot ja IT-ammattilaiset voivat muuntaa tekstin nopeasti Base64-muotoon tai purkaa Base64-merkkijonot takaisin luettavaksi tekstiksi. Täydellinen API-kehitykseen, tiedonsiirtoon, sähköpostin liitteisiin, kuvien upottamiseen HTML/CSS:ään ja binaaritietojen käsittelyyn JSONissa.",
+            "what_desc": "Base64 on binääristä tekstiksi -koodausmalli, joka edustaa binaaridataa ASCII-merkkijonomuodossa. Sitä käytetään yleisesti koodaamaan dataa, joka on tallennettava tai siirrettävä tekstin käsittelyyn tarkoitetun median kautta. Ilmaisen Base64-enkooderi- ja dekooderityökalumme avulla kehittäjät, data-analyytikot ja IT-ammattilaiset voivat muuntaa tekstin nopeasti Base64-muotoon tai purkaa Base64-merkkijonot takaisin luettavaksi tekstiksi. Täydellinen API-kehitykseen, tiedonsiirtoon, sähköpostin liitteisiin, kuvien upottamiseen HTML\/CSS:ään ja binaaritietojen käsittelyyn JSONissa.",
             "features": {
                 "secure": {
                     "title": "Turvallinen koodaus",
@@ -38,7 +38,7 @@
                 }
             },
             "how_to": {
-                "title": "Base64 Enkooderin/Dekooderin käyttäminen",
+                "title": "Base64 Enkooderin\/Dekooderin käyttäminen",
                 "encode": {
                     "title": "Tekstin koodaus",
                     "step1": "Napsauta \"Encode to Base64\" -välilehteä",
@@ -79,14 +79,14 @@
                 "desc": "Base64 on binääristä tekstiksi -koodausmenetelmä, joka muuntaa binääritiedot ASCII-tekstimuotoon. Ilmainen Base64 Encoder & Decoder auttaa kehittäjiä, järjestelmänvalvojia ja IT-ammattilaisia ​​koodaamaan tekstiä Base64:ään tai purkaa Base64:n takaisin luettavaksi tekstiksi välittömästi. Täydellinen API-todennukseen, data-URI:ihin, sähköpostin liitteisiin ja suojattuun tiedonsiirtoon. Kaikki käsittely tapahtuu selaimessasi täydellisen yksityisyyden takaamiseksi.",
                 "works_title": "🔄 Kuinka Base64 toimii",
                 "works_encoding": "Muuntaa binääritiedot ASCII-tekstiksi käyttäen 64 merkkiä",
-                "works_encoding_sub": "A-Z, a-z, 0-9, +, / (ja = täyte)",
+                "works_encoding_sub": "A-Z, a-z, 0-9, +, \/ (ja = täyte)",
                 "works_decoding": "Muuntaa Base64-tekstin takaisin alkuperäisiksi binääritiedoiksi",
                 "works_decoding_sub": "Kääntää koodausprosessin täydellisesti",
                 "cases_title": "✅ Yleiset käyttötapaukset",
                 "case_api": "API-todennus",
                 "case_api_desc": "Koodaa Basic Auth -tunnistetiedot HTTP-otsikoissa",
                 "case_uri": "Tietojen URI:t",
-                "case_uri_desc": "Upota kuvat ja tiedostot suoraan HTML/CSS:ään",
+                "case_uri_desc": "Upota kuvat ja tiedostot suoraan HTML\/CSS:ään",
                 "case_email": "Sähköpostin liitteet",
                 "case_email_desc": "Koodaa binääritiedostoja sähköpostin lähettämistä varten",
                 "case_url": "URL-parametrit",
@@ -101,13 +101,13 @@
                     "Ei sovellu salaukseen - käytä asianmukaisia ​​salausalgoritmeja",
                     "Täydellinen binääritietojen koodaamiseen vain tekstijärjestelmissä",
                     "Tarkista dekoodatut tiedot aina ennen niiden käyttöä",
-                    "Käytä URL-osoitteelle turvallista Base64:ää (korvaa +/= merkinnällä -_)"
+                    "Käytä URL-osoitteelle turvallista Base64:ää (korvaa +\/= merkinnällä -_)"
                 ]
             },
             "faq": {
                 "title": "❓ Usein kysytyt kysymykset",
                 "q1": "Onko Base64-koodaus turvallinen?",
-                "a1": "Ei! Base64 EI ole salaus - se on vain koodaus. Kuka tahansa voi purkaa Base64-tiedot välittömästi. Älä koskaan käytä Base64:ää yksin turvallisuuden vuoksi. Käytä salaukseen asianmukaisia ​​salausalgoritmeja, kuten AES, RSA tai TLS/SSL.",
+                "a1": "Ei! Base64 EI ole salaus - se on vain koodaus. Kuka tahansa voi purkaa Base64-tiedot välittömästi. Älä koskaan käytä Base64:ää yksin turvallisuuden vuoksi. Käytä salaukseen asianmukaisia ​​salausalgoritmeja, kuten AES, RSA tai TLS\/SSL.",
                 "q2": "Miksi Base64 lisää tiedostokokoa?",
                 "a2": "Base64-koodaus lisää tiedon kokoa noin 33 %, koska se edustaa 3 tavua binaaridataa käyttämällä 4 ASCII-merkkiä. Tämä lisäkustannus on kompromissi binääritietojen turvaamiseksi vain tekstijärjestelmille.",
                 "q3": "Mihin Base64:ää käytetään?",
@@ -115,7 +115,7 @@
                 "q4": "Lähetetäänkö tietoni palvelimelle?",
                 "a4": "Ei! Kaikki Base64-koodaus ja dekoodaus tapahtuu kokonaan selaimessasi JavaScriptin avulla. Tietosi eivät koskaan poistu laitteestasi, eikä niitä tallenneta, siirretä tai kirjata mihinkään. Yksityisyytesi on täysin suojattu.",
                 "q5": "Voinko koodata kuvia Base64:ään?",
-                "a5": "Kyllä! Vaikka työkalumme koodaa tekstiä, voit koodata kuvia käyttämällä erikoistyökaluja. Base64-koodatut kuvat voidaan upottaa suoraan HTML/CSS:ään käyttämällä data-URI:ita (data:image/png;base64,...). Tämä on hyödyllistä pienille kuville, mutta lisää sivun kokoa."
+                "a5": "Kyllä! Vaikka työkalumme koodaa tekstiä, voit koodata kuvia käyttämällä erikoistyökaluja. Base64-koodatut kuvat voidaan upottaa suoraan HTML\/CSS:ään käyttämällä data-URI:ita (data:image\/png;base64,...). Tämä on hyödyllistä pienille kuville, mutta lisää sivun kokoa."
             }
         },
         "js": {
@@ -153,10 +153,10 @@
             "btn_format": "Muotoile koodi",
             "label_input": "Syötä koodi",
             "btn_clear": "Tyhjennä",
-            "ph_input": "// Liitä koodisi tähän...",
+            "ph_input": "\/\/ Liitä koodisi tähän...",
             "label_output": "Muotoiltu koodi",
             "btn_copy": "Kopioi",
-            "ph_output": "// Muotoiltu koodi tulee näkyviin tähän..."
+            "ph_output": "\/\/ Muotoiltu koodi tulee näkyviin tähän..."
         },
         "content": {
             "hero_title": "Ilmainen Online Code Formatter",
@@ -241,9 +241,9 @@
             "choose": "-- Valitse --",
             "options": {
                 "every_minute": "Joka minuutti (* * * * *)",
-                "every_5_minutes": "5 minuutin välein (*/5 * * * *)",
-                "every_15_minutes": "15 minuutin välein (*/15 * * * *)",
-                "every_30_minutes": "30 minuutin välein (*/30 * * * *)",
+                "every_5_minutes": "5 minuutin välein (*\/5 * * * *)",
+                "every_15_minutes": "15 minuutin välein (*\/15 * * * *)",
+                "every_30_minutes": "30 minuutin välein (*\/30 * * * *)",
                 "every_hour": "Joka tunti (0 * * * *)",
                 "every_day_midnight": "Joka päivä keskiyöllä (0 0 * * *)",
                 "every_week": "Joka viikko (0 0 * * 0)",
@@ -260,7 +260,7 @@
             "weekday": "Viikonpäivä",
             "every_weekday": "Joka arkipäivä (*)",
             "command": "Suoritettava komento",
-            "ph_command": "/usr/bin/php /path/to/script.php",
+            "ph_command": "\/usr\/bin\/php \/path\/to\/script.php",
             "generated_cron": "Generoitu cron-lauseke",
             "btn_copy": "Kopioi cron",
             "btn_clear": "Nollaa"
@@ -387,18 +387,18 @@
             },
             "how_title": "📚 Kuinka käyttää",
             "how_steps": {
-                "1": "<strong>Valitse toiminto:</strong> Pakkaa napsauttamalla Pienennä CSS tai muokkaa CSS:ää kaunistamalla.",
-                "2": "<strong>Näytä tulokset:</strong> Katso prosessoitu CSS tuloskentässä pakkaustilastoilla",
-                "3": "<strong>Kopioi:</strong> Kopioi pienennetty CSS leikepöydällesi napsauttamalla Kopioi",
-                "4": "<strong>Käytä tuotannossa:</strong> Korvaa alkuperäinen CSS-tiedostosi pienennetyllä versiolla",
+                "1": "<strong>Valitse toiminto:<\/strong> Pakkaa napsauttamalla Pienennä CSS tai muokkaa CSS:ää kaunistamalla.",
+                "2": "<strong>Näytä tulokset:<\/strong> Katso prosessoitu CSS tuloskentässä pakkaustilastoilla",
+                "3": "<strong>Kopioi:<\/strong> Kopioi pienennetty CSS leikepöydällesi napsauttamalla Kopioi",
+                "4": "<strong>Käytä tuotannossa:<\/strong> Korvaa alkuperäinen CSS-tiedostosi pienennetyllä versiolla",
                 "5": "Lataa tai kopioi minimoitu CSS ja käytä sitä tuotantosivustollasi tiedoston koon pienentämiseksi ja latausaikojen parantamiseksi."
             },
             "best_practices_title": "💡 Parhaat käytännöt",
             "best_practices_list": {
-                "1": "<strong>Pienennä tuotantoa varten:</strong> käytä minimoitua CSS:ää vain tuotantoympäristöissä",
-                "2": "<strong>Tiedostojen yhdistäminen:</strong> Yhdistä useita CSS-tiedostoja ennen pienentämistä parantaaksesi pakkausta",
-                "3": "<strong>Testaa perusteellisesti:</strong> Testaa aina minimoitu CSS varmistaaksesi, ettei toimintoja ole rikki",
-                "4": "<strong>Käytä rakennustyökaluja:</strong> Integroi minimointi rakennusprosessiisi automatisoidaksesi",
+                "1": "<strong>Pienennä tuotantoa varten:<\/strong> käytä minimoitua CSS:ää vain tuotantoympäristöissä",
+                "2": "<strong>Tiedostojen yhdistäminen:<\/strong> Yhdistä useita CSS-tiedostoja ennen pienentämistä parantaaksesi pakkausta",
+                "3": "<strong>Testaa perusteellisesti:<\/strong> Testaa aina minimoitu CSS varmistaaksesi, ettei toimintoja ole rikki",
+                "4": "<strong>Käytä rakennustyökaluja:<\/strong> Integroi minimointi rakennusprosessiisi automatisoidaksesi",
                 "5": "Säilytä muokkaamaton versio kehitys- ja virheenkorjaustarkoituksiin."
             },
             "faq_title": "❓ Usein kysytyt kysymykset",
@@ -439,7 +439,7 @@
             "key_ph": "Avain (esim. valtuutus)",
             "value_ph": "Arvo (esim. siirtotunnus)",
             "add_header": "+ Lisää otsake",
-            "raw_data_label": "Raakadata (JSON/teksti)",
+            "raw_data_label": "Raakadata (JSON\/teksti)",
             "generated_label": "Generoitu komento",
             "btn_copy": "Kopioi komento"
         },
@@ -458,7 +458,7 @@
             "mode_encode": "Koodaa HTML",
             "mode_decode": "Pura HTML",
             "label_input_encode": "Kirjoita HTML koodataksesi",
-            "ph_input_encode": "<div>Hei ja tervetuloa</div>",
+            "ph_input_encode": "<div>Hei ja tervetuloa<\/div>",
             "btn_encode": "Koodaa HTML",
             "btn_clear": "Tyhjennä",
             "btn_copy": "Kopioi",
@@ -525,7 +525,7 @@
                 "1": "Liitä HTML-koodisi tai tekstisi syöttökenttään",
                 "2": "Napsauta prosessipainiketta muuntaaksesi",
                 "3": "Kopioi tulos leikepöydälle",
-                "4": "Kopioi koodattu/dekoodattu tulos ja käytä sitä HTML-, XML- tai verkkosovelluksissasi."
+                "4": "Kopioi koodattu\/dekoodattu tulos ja käytä sitä HTML-, XML- tai verkkosovelluksissasi."
             },
             "examples_title": "💡 Esimerkkejä HTML-koodauksesta",
             "examples": {
@@ -539,7 +539,7 @@
                 },
                 "3": {
                     "title": "Erikoismerkkien koodaus",
-                    "code": "&lt;script&gt;hälytys(\"XSS\")&lt;/script&gt; → &amp;lt;script&amp;gt;hälytys(&amp;quot;XSS&amp;quot;)&amp;lt;/script&amp;gt;"
+                    "code": "&lt;script&gt;hälytys(\"XSS\")&lt;\/script&gt; → &amp;lt;script&amp;gt;hälytys(&amp;quot;XSS&amp;quot;)&amp;lt;\/script&amp;gt;"
                 }
             },
             "faq_title": "â“ Usein kysytyt kysymykset",
@@ -584,12 +584,12 @@
             "why_desc": "HTML:n pienentäminen on tärkeää verkon suorituskyvyn optimoinnin kannalta. Pienemmät HTML-tiedostot tarkoittavat nopeampia latauksia, pienempää kaistanleveyden käyttöä ja parempia sivujen latausaikoja. Tämä on erityisen hyödyllistä suurille verkkosivustoille, joissa on paljon HTML-sisältöä. Minified HTML vähentää palvelimen kuormitusta ja parantaa käyttökokemusta.",
             "features_title": "Tärkeimmät ominaisuudet",
             "features_list": {
-                "minify": "<strong>Pienennä HTML:ää:</strong> pienennä tiedostokokoa poistamalla välilyönnit ja kommentit",
-                "beautify": "<strong>Paranna HTML:ää:</strong> Muotoile HTML oikealla sisennyksellä",
-                "instant": "<strong>Pikatulokset:</strong> Käsittele HTML-koodia reaaliajassa",
-                "copy": "<strong>Kopioi tulos:</strong> kopioi pienennetty HTML-koodi helposti",
-                "secure": "<strong>Suojattu ja yksityinen:</strong> Kaikki käsittely selaimessa",
-                "free": "<strong>Ilmainen käyttö:</strong> Ei vaadi rekisteröitymistä"
+                "minify": "<strong>Pienennä HTML:ää:<\/strong> pienennä tiedostokokoa poistamalla välilyönnit ja kommentit",
+                "beautify": "<strong>Paranna HTML:ää:<\/strong> Muotoile HTML oikealla sisennyksellä",
+                "instant": "<strong>Pikatulokset:<\/strong> Käsittele HTML-koodia reaaliajassa",
+                "copy": "<strong>Kopioi tulos:<\/strong> kopioi pienennetty HTML-koodi helposti",
+                "secure": "<strong>Suojattu ja yksityinen:<\/strong> Kaikki käsittely selaimessa",
+                "free": "<strong>Ilmainen käyttö:<\/strong> Ei vaadi rekisteröitymistä"
             },
             "how_title": "Kuinka käyttää",
             "how_steps": {
@@ -643,11 +643,11 @@
             "about_p1": "Muunna HTML-koodi puhtaaseen, luettavaan Markdown-muotoon välittömästi ilmaisella online-HTML-markdown-muuntimellamme. Täydellinen kehittäjille, teknisille kirjoittajille ja sisällöntuottajille, joiden on muutettava HTML-sisältö Markdowniksi dokumentaatiota, README-tiedostoja tai sisällönhallintajärjestelmiä varten.",
             "features_title": "✨ Tärkeimmät ominaisuudet",
             "features_list": {
-                "1": "✅ <strong>Säilytä muotoilu:</strong> ylläpitää otsikot, luettelot, linkit ja painotukset",
-                "2": "✅ <strong>Puhdas tulos:</strong> Luo luettavan, hyvin muotoillun merkinnän",
-                "3": "✅ <strong>Ei asennusta:</strong> toimii suoraan selaimessasi",
-                "4": "✅ <strong>Ilmainen ikuisesti:</strong> 100 % ilmainen ilman rajoituksia",
-                "5": "✅ <strong>Tietosuoja ensin:</strong> Kaikki muuntaminen tapahtuu paikallisesti selaimessasi",
+                "1": "✅ <strong>Säilytä muotoilu:<\/strong> ylläpitää otsikot, luettelot, linkit ja painotukset",
+                "2": "✅ <strong>Puhdas tulos:<\/strong> Luo luettavan, hyvin muotoillun merkinnän",
+                "3": "✅ <strong>Ei asennusta:<\/strong> toimii suoraan selaimessasi",
+                "4": "✅ <strong>Ilmainen ikuisesti:<\/strong> 100 % ilmainen ilman rajoituksia",
+                "5": "✅ <strong>Tietosuoja ensin:<\/strong> Kaikki muuntaminen tapahtuu paikallisesti selaimessasi",
                 "6": "Säilyttää koodilohkot ja syntaksin korostukset teknistä dokumentaatiota varten."
             },
             "uses_title": "🎯 Yleiset käyttötapaukset",
@@ -748,13 +748,13 @@
             "why_desc": "Ilmainen HTML-katseluohjelmamme tarjoaa useita etuja kehittäjille ja suunnittelijoille. Ensinnäkin se tarjoaa välitöntä visuaalista palautetta ilman, että sinun tarvitsee luoda tiedostoja tai perustaa kehitysympäristöä. Toiseksi se on täysin selainpohjainen, joten voit käyttää sitä missä tahansa ilman ohjelmiston asentamista. Kolmanneksi se on täydellinen nopeaan testaukseen, virheenkorjaukseen ja HTML:n oppimiseen. Vierekkäinen näkymä antaa sinun nähdä koodisi ja sen tulosteen samanaikaisesti, mikä helpottaa HTML-elementtien hahmontamisen ymmärtämistä.",
             "features_title": "Tärkeimmät ominaisuudet",
             "features_list": {
-                "preview": "<strong>Reaaliaikainen esikatselu:</strong> Näet HTML-koodisi hahmonnettuna välittömästi kirjoittaessasi",
-                "layout": "<strong>Side-by-Side View:</strong> Koodieditori ja esikatseluruutu näytetään yhdessä",
-                "syntax": "<strong>Syntaksin korostus:</strong> helposti luettava koodi värikoodatulla syntaksilla",
-                "sample": "<strong>Esimerkkikoodi:</strong> Aloita nopeasti lataamalla esimerkki-HTML-koodi",
-                "no_install": "<strong>Ei vaadi asennusta:</strong> toimii suoraan selaimessasi",
-                "free": "<strong>Ilmainen käyttö:</strong> Ei vaadi rekisteröitymistä tai maksua",
-                "secure": "<strong>Suojattu:</strong> Kaikki käsittely tapahtuu selaimessasi"
+                "preview": "<strong>Reaaliaikainen esikatselu:<\/strong> Näet HTML-koodisi hahmonnettuna välittömästi kirjoittaessasi",
+                "layout": "<strong>Side-by-Side View:<\/strong> Koodieditori ja esikatseluruutu näytetään yhdessä",
+                "syntax": "<strong>Syntaksin korostus:<\/strong> helposti luettava koodi värikoodatulla syntaksilla",
+                "sample": "<strong>Esimerkkikoodi:<\/strong> Aloita nopeasti lataamalla esimerkki-HTML-koodi",
+                "no_install": "<strong>Ei vaadi asennusta:<\/strong> toimii suoraan selaimessasi",
+                "free": "<strong>Ilmainen käyttö:<\/strong> Ei vaadi rekisteröitymistä tai maksua",
+                "secure": "<strong>Suojattu:<\/strong> Kaikki käsittely tapahtuu selaimessasi"
             },
             "how_title": "Kuinka käyttää HTML Vieweria",
             "how_steps": {
@@ -808,12 +808,12 @@
             "why_desc": "JavaScriptin vähentäminen on välttämätöntä verkon suorituskyvyn optimoimiseksi. Pienemmät JS-tiedostot tarkoittavat nopeampia latauksia, pienempää kaistanleveyden käyttöä ja parempia sivujen latausaikoja. Tämä on erityisen tärkeää mobiilikäyttäjille ja käyttäjille, joilla on hitaammat internetyhteydet. Pienempi JavaScript vähentää palvelimen kuormitusta ja parantaa käyttökokemusta. Tuotantosivustoilla pienentäminen on paras paras käytäntö, joka voi parantaa merkittävästi Core Web Vitals -pisteitä.",
             "features_title": "Tärkeimmät ominaisuudet",
             "features_list": {
-                "minify": "<strong>Pienennä JavaScriptiä:</strong> pienennä tiedostokokoa poistamalla välilyönnit ja kommentit",
-                "beautify": "<strong>Paranna JavaScriptiä:</strong> Muotoile JS oikealla sisennyksellä",
-                "instant": "<strong>Pikatulokset:</strong> käsittele JavaScriptiä reaaliajassa",
-                "copy": "<strong>Kopioi tulos:</strong> kopioi pienennetty JavaScript helposti",
-                "secure": "<strong>Suojattu ja yksityinen:</strong> Kaikki käsittely selaimessa",
-                "free": "<strong>Ilmainen käyttö:</strong> Ei vaadi rekisteröitymistä"
+                "minify": "<strong>Pienennä JavaScriptiä:<\/strong> pienennä tiedostokokoa poistamalla välilyönnit ja kommentit",
+                "beautify": "<strong>Paranna JavaScriptiä:<\/strong> Muotoile JS oikealla sisennyksellä",
+                "instant": "<strong>Pikatulokset:<\/strong> käsittele JavaScriptiä reaaliajassa",
+                "copy": "<strong>Kopioi tulos:<\/strong> kopioi pienennetty JavaScript helposti",
+                "secure": "<strong>Suojattu ja yksityinen:<\/strong> Kaikki käsittely selaimessa",
+                "free": "<strong>Ilmainen käyttö:<\/strong> Ei vaadi rekisteröitymistä"
             },
             "how_title": "Kuinka käyttää",
             "how_steps": [
@@ -908,7 +908,7 @@
                     "desc": "Muotoile JSON-tiedot NoSQL-tietokannoista, kuten MongoDB, CouchDB ja Firebase, parantaaksesi luettavuutta."
                 },
                 "export": {
-                    "title": "Tietojen vienti/tuonti",
+                    "title": "Tietojen vienti\/tuonti",
                     "desc": "Valmistele JSON-tiedot vientiä varten tai vahvista tuodut JSON-tiedot oikean rakenteen ja syntaksin varmistamiseksi."
                 }
             },
@@ -1030,19 +1030,19 @@
             },
             "how_title": "📚 Kuinka käyttää",
             "how_steps": [
-                "<strong>Liitä JSON:</strong> Kopioi ja liitä JSON-tietosi syöttökenttään",
-                "<strong>Jäsentäminen:</strong> Vahvista ja visualisoi rakenne napsauttamalla Jäsentä JSON",
-                "<strong>Kaunistele:</strong> Muotoile oikealla sisennyksellä valitsemalla Kaunista",
-                "<strong>Pienennä:</strong> Pakkaa ja poista välilyönnit napsauttamalla Pienennä",
-                "<strong>Näytä puu:</strong> katso hierarkkinen rakenne puunäkymämuodossa"
+                "<strong>Liitä JSON:<\/strong> Kopioi ja liitä JSON-tietosi syöttökenttään",
+                "<strong>Jäsentäminen:<\/strong> Vahvista ja visualisoi rakenne napsauttamalla Jäsentä JSON",
+                "<strong>Kaunistele:<\/strong> Muotoile oikealla sisennyksellä valitsemalla Kaunista",
+                "<strong>Pienennä:<\/strong> Pakkaa ja poista välilyönnit napsauttamalla Pienennä",
+                "<strong>Näytä puu:<\/strong> katso hierarkkinen rakenne puunäkymämuodossa"
             ],
             "tips_title": "💡 JSONin parhaat käytännöt",
             "tips_list": [
-                "<strong>Käytä lainausmerkkejä:</strong> JSON vaatii lainausmerkkejä merkkijonoista, ei lainausmerkkejä",
-                "<strong>Ei perässä olevia pilkkuja:</strong> Poista pilkut objektien ja taulukoiden viimeisen kohteen jälkeen",
-                "<strong>Oikeat tietotyypit:</strong> Käytä numeroita ilman lainausmerkkejä, loogisia arvoja tosi/epätosi, tyhjä arvo",
-                "<strong>Tarkista säännöllisesti:</strong> Tarkista aina JSON ennen käyttöönottoa tai tuotantokäyttöä",
-                "<strong>Paranna luettavuutta varten:</strong> Muotoile JSON helpottaaksesi virheenkorjausta ja ylläpitoa"
+                "<strong>Käytä lainausmerkkejä:<\/strong> JSON vaatii lainausmerkkejä merkkijonoista, ei lainausmerkkejä",
+                "<strong>Ei perässä olevia pilkkuja:<\/strong> Poista pilkut objektien ja taulukoiden viimeisen kohteen jälkeen",
+                "<strong>Oikeat tietotyypit:<\/strong> Käytä numeroita ilman lainausmerkkejä, loogisia arvoja tosi\/epätosi, tyhjä arvo",
+                "<strong>Tarkista säännöllisesti:<\/strong> Tarkista aina JSON ennen käyttöönottoa tai tuotantokäyttöä",
+                "<strong>Paranna luettavuutta varten:<\/strong> Muotoile JSON helpottaaksesi virheenkorjausta ja ylläpitoa"
             ],
             "faq_title": "❓ Usein kysytyt kysymykset",
             "faq": {
@@ -1099,12 +1099,12 @@
             "p1": "Ilmainen JSON-CSV-muuntimemme on tehokas työkalu, joka on suunniteltu kehittäjille, data-analyytikoille ja IT-ammattilaisille. Muunna jäsennellyt JSON-tiedot helposti puhtaiksi, muotoilluiksi CSV- (Comma Separated Values)- tai TSV-tiedostoiksi. Valmisteletpa tietoja Exceliä, Google Sheetsia tai tietokannan tuontia varten, työkalumme varmistaa tarkkuuden ja nopeuden 100 % asiakaspuolen käsittelyllä.",
             "features_title": "Tärkeimmät ominaisuudet",
             "features_list": {
-                "fast": "<strong>Pikatulos:</strong> tulokset millisekunteina",
-                "secure": "<strong>Yksityinen ja suojattu:</strong> Kaikki tiedot pysyvät selaimessasi",
-                "format": "<strong>Älykäs tasoitus:</strong> Käsittelee sisäkkäisiä JSON-objekteja oikein",
-                "custom": "<strong>Muokatut erottimet:</strong> valitse pilkku, puolipiste tai sarkaimet",
-                "export": "<strong>Helppo vienti:</strong> Kopioi leikepöydälle tai lataa .csv-muodossa",
-                "free": "<strong>100 % ilmainen:</strong> Ei rajoituksia, ei vaadi rekisteröitymistä"
+                "fast": "<strong>Pikatulos:<\/strong> tulokset millisekunteina",
+                "secure": "<strong>Yksityinen ja suojattu:<\/strong> Kaikki tiedot pysyvät selaimessasi",
+                "format": "<strong>Älykäs tasoitus:<\/strong> Käsittelee sisäkkäisiä JSON-objekteja oikein",
+                "custom": "<strong>Muokatut erottimet:<\/strong> valitse pilkku, puolipiste tai sarkaimet",
+                "export": "<strong>Helppo vienti:<\/strong> Kopioi leikepöydälle tai lataa .csv-muodossa",
+                "free": "<strong>100 % ilmainen:<\/strong> Ei rajoituksia, ei vaadi rekisteröitymistä"
             },
             "uses_title": "Yleiset käyttötapaukset",
             "uses": {
@@ -1226,10 +1226,10 @@
             },
             "how_title": "Kuinka käyttää",
             "how_steps": [
-                "Anna kohdetietokanta <strong>taulukon nimi</strong>",
-                "Liitä <strong>JSON</strong> (on oltava jono tai objekti)",
-                "Luo komentosarja napsauttamalla <strong>Luo SQL</strong>",
-                "<strong>Kopioi</strong> SQL-tuloste leikepöydällesi"
+                "Anna kohdetietokanta <strong>taulukon nimi<\/strong>",
+                "Liitä <strong>JSON<\/strong> (on oltava jono tai objekti)",
+                "Luo komentosarja napsauttamalla <strong>Luo SQL<\/strong>",
+                "<strong>Kopioi<\/strong> SQL-tuloste leikepöydällesi"
             ],
             "faq_title": "Usein kysytyt kysymykset",
             "faq": {
@@ -1430,7 +1430,7 @@
                     "desc": "Muuta JSON-asetukset YAML-määritystiedostoiksi."
                 },
                 "cicd": {
-                    "title": "CI/CD-putkistot",
+                    "title": "CI\/CD-putkistot",
                     "desc": "Valmistele YAML-putkien määritykset JSON-tiedoista."
                 },
                 "cloud": {
@@ -1536,7 +1536,7 @@
             "hero_subtitle": "Pura ja tarkasta JSON-verkkotunnukset välittömästi",
             "p1": "Ilmaisen JWT-dekooderityökalumme avulla voit purkaa ja tarkastaa JSON Web Tokeneita (JWT) nähdäksesi niiden otsikon, hyötykuorman ja allekirjoituskomponentit. Täydellinen todennusongelmien virheenkorjaukseen, tunnuksen rakenteen ymmärtämiseen ja JWT-vaatimusten vahvistamiseen.",
             "what_title": "ðŸ” Mikä on JWT?",
-            "what_desc": "JSON Web Token (JWT) on kompakti, URL-osoiteturvallinen tapa edustaa vaatimuksia kahden osapuolen välillä. JWT:t koostuvat kolmesta osasta: otsikko (algoritmi ja tunnuksen tyyppi], hyötykuorma (vaatimukset/tiedot) ja allekirjoitus (vahvistus) pisteillä erotettuna.",
+            "what_desc": "JSON Web Token (JWT) on kompakti, URL-osoiteturvallinen tapa edustaa vaatimuksia kahden osapuolen välillä. JWT:t koostuvat kolmesta osasta: otsikko (algoritmi ja tunnuksen tyyppi], hyötykuorma (vaatimukset\/tiedot) ja allekirjoitus (vahvistus) pisteillä erotettuna.",
             "features_title": "âœ¨ Ominaisuudet",
             "features": {
                 "instant": {
@@ -1680,7 +1680,7 @@
             "error_no_copy": "Ei kopioitavaa HTML-koodia. Muunna Markdown ensin.",
             "success_copy": "HTML kopioitu leikepöydälle!",
             "error_no_download": "Ei ladattavaa HTML-koodia. Muunna Markdown ensin.",
-            "example": "# Tervetuloa Markdowniin\n\n## Tämä on alaotsikko\n\nTämä on kappale, jossa on **lihavoitu teksti** ja *kursivoitu teksti*.\n\n### Ominaisuudet\n\n- Helppo kirjoittaa\n- Helppo lukea\n- Muuntaa HTML-muotoon\n\n### Koodiesimerkki\n\n``` javascript\nfunction hello() {\n    console.log(\"Hei, maailma!\");\n}\n```\n\n> Tämä on lohkolainaus\n\n[Käy verkkosivustollamme](https://example.com)"
+            "example": "# Tervetuloa Markdowniin\n\n## Tämä on alaotsikko\n\nTämä on kappale, jossa on **lihavoitu teksti** ja *kursivoitu teksti*.\n\n### Ominaisuudet\n\n- Helppo kirjoittaa\n- Helppo lukea\n- Muuntaa HTML-muotoon\n\n### Koodiesimerkki\n\n``` javascript\nfunction hello() {\n    console.log(\"Hei, maailma!\");\n}\n```\n\n> Tämä on lohkolainaus\n\n[Käy verkkosivustollamme](https:\/\/example.com)"
         }
     },
     "md5-generator": {
@@ -1705,20 +1705,20 @@
             "what_desc": "MD5 on kryptografinen hajautusfunktio, joka ottaa minkä tahansa pituisen syötteen ja tuottaa kiinteän 128-bittisen hash-arvon, joka esitetään tyypillisesti 32-merkkisenä heksadesimaalilukuna. Sama syöte tuottaa aina saman tiivisteen, mutta pienikin muutos syötteessä luo täysin erilaisen tiivisteen.",
             "features_title": "âœ… MD5 edut",
             "features": {
-                "fast": "<strong>Nopea käsittely:</strong> Erittäin nopea hajautus",
-                "fixed": "<strong>Kiinteä pituus:</strong> tuottaa aina 128-bittisen tulosteen",
-                "deterministic": "<strong>Deterministinen:</strong> Sama syöttö = sama hash",
-                "support": "<strong>Laaja tuki:</strong> Saatavilla kaikilla ohjelmointikielillä"
+                "fast": "<strong>Nopea käsittely:<\/strong> Erittäin nopea hajautus",
+                "fixed": "<strong>Kiinteä pituus:<\/strong> tuottaa aina 128-bittisen tulosteen",
+                "deterministic": "<strong>Deterministinen:<\/strong> Sama syöttö = sama hash",
+                "support": "<strong>Laaja tuki:<\/strong> Saatavilla kaikilla ohjelmointikielillä"
             },
             "uses_title": "📊 Yleiset käyttötapaukset",
             "uses": {
-                "verify": "<strong>Tiedoston vahvistus:</strong> Tarkista tiedoston eheys",
-                "checksum": "<strong>Tarkistussummat:</strong> Vahvista lataukset",
-                "cache": "<strong>Välimuistiavaimet:</strong> Luo yksilöllisiä tunnisteita",
-                "integrity": "<strong>Tietojen eheys:</strong> Tunnista muutokset"
+                "verify": "<strong>Tiedoston vahvistus:<\/strong> Tarkista tiedoston eheys",
+                "checksum": "<strong>Tarkistussummat:<\/strong> Vahvista lataukset",
+                "cache": "<strong>Välimuistiavaimet:<\/strong> Luo yksilöllisiä tunnisteita",
+                "integrity": "<strong>Tietojen eheys:<\/strong> Tunnista muutokset"
             },
             "warning_title": "âš ï¸ Turvallisuusvaroitus",
-            "warning_desc": "<strong>ÄLÄ käytä MD5:tä salasanojen hajauttamiseen tai tietoturvakriittisiin sovelluksiin!</strong> MD5 on kryptografisesti rikki ja altis törmäyshyökkäyksille. Käytä salasanan hajauttamiseen nykyaikaisia ​​algoritmeja, kuten bcrypt, Argon2 tai PBKDF2.",
+            "warning_desc": "<strong>ÄLÄ käytä MD5:tä salasanojen hajauttamiseen tai tietoturvakriittisiin sovelluksiin!<\/strong> MD5 on kryptografisesti rikki ja altis törmäyshyökkäyksille. Käytä salasanan hajauttamiseen nykyaikaisia ​​algoritmeja, kuten bcrypt, Argon2 tai PBKDF2.",
             "compare_title": "ðŸ”„ MD5 vs. muut hajautustoiminnot",
             "compare": {
                 "md5": {
@@ -1935,7 +1935,7 @@
                 },
                 "copy": {
                     "title": "Kopioi yhdellä napsautuksella",
-                    "desc": "Kopioi koodattu/dekoodattu teksti välittömästi"
+                    "desc": "Kopioi koodattu\/dekoodattu teksti välittömästi"
                 },
                 "free": {
                     "title": "100 % ilmainen",
@@ -1991,7 +1991,7 @@
             "examples_title": "Unicode-esimerkkejä",
             "examples": {
                 "simple": {
-                    "title": "Yksinkertainen/ASCII:",
+                    "title": "Yksinkertainen\/ASCII:",
                     "desc": "Alkuperäinen: \"A\" â†' Koodattu: \"\\u0041\""
                 },
                 "special": {
@@ -1999,7 +1999,7 @@
                     "desc": "Alkuperäinen: \"Â©\" â†' Koodattu: \"\\u00A9\""
                 },
                 "emoji": {
-                    "title": "Emojit/Monitavuinen:",
+                    "title": "Emojit\/Monitavuinen:",
                     "desc": "Alkuperäinen: \"ðŸŒŸ\" â†' Koodattu: \"\\uD83C\\uDF1F\" (korvausparit) tai \"\\u2B50\" esityksestä riippuen"
                 }
             },
@@ -2008,7 +2008,7 @@
                 "q1": "Miksi käyttää Unicode-pakojaksoja?",
                 "a1": "Niiden avulla voit esittää minkä tahansa merkin käyttämällä vain ASCII-merkkejä, mikä varmistaa yhteensopivuuden eri järjestelmien, koodausten ja tiedostojen välillä, jotka eivät ehkä käsittele Unicodea oikein.",
                 "q2": "Mitä formaattia käytetään?",
-                "a2": "Tämä työkalu käyttää tavallisesti JavaScript/JSON-tyyliä \\uXXXX muotoa monikielisten perusmerkkien luomiseen.",
+                "a2": "Tämä työkalu käyttää tavallisesti JavaScript\/JSON-tyyliä \\uXXXX muotoa monikielisten perusmerkkien luomiseen.",
                 "q3": "Eroaako tämä URL-koodauksesta?",
                 "a3": "Kyllä. URL-koodaus käyttää %XX heksadesimaaliarvoa pääasiassa URL-osoitteissa. Unicode-koodin poisto käyttää koodia \\uXXXX, ja sitä käytetään merkkijonoissa ohjelmointikielissä, kuten JavaScript, Java ja Python.",
                 "q4": "Ovatko tietoni turvassa?",
@@ -2035,7 +2035,7 @@
             "btn_encode": "Koodaa URL",
             "btn_decode": "Pura URL",
             "label_input_encode": "Kirjoita URL-osoite koodattavaksi",
-            "ph_input": "https://example.com/search?name=John Doe&age=30",
+            "ph_input": "https:\/\/example.com\/search?name=John Doe&age=30",
             "btn_process_encode": "Koodaa URL",
             "btn_clear": "Selkeä",
             "btn_copy": "Kopioida",
@@ -2065,7 +2065,7 @@
                 },
                 "copy": {
                     "title": "Kopioi yhdellä napsautuksella",
-                    "desc": "Kopioi koodatut/dekoodatut URL-osoitteet välittömästi"
+                    "desc": "Kopioi koodatut\/dekoodatut URL-osoitteet välittömästi"
                 },
                 "free": {
                     "title": "100 % ilmainen",
@@ -2123,7 +2123,7 @@
                 },
                 "step5": {
                     "title": "Käytä missä tahansa",
-                    "desc": "Liitä koodattu/dekoodattu URL-osoite sovellukseesi"
+                    "desc": "Liitä koodattu\/dekoodattu URL-osoite sovellukseesi"
                 }
             },
             "examples_title": "URL-koodausesimerkkejä",
@@ -2138,7 +2138,7 @@
                 },
                 "full": {
                     "title": "Koko URL-osoite:",
-                    "desc": "Alkuperäinen: \"https://example.com/search?q=hello world\" â†' Koodattu: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
+                    "desc": "Alkuperäinen: \"https:\/\/example.com\/search?q=hello world\" â†' Koodattu: \"https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dhello%20world\""
                 }
             },
             "faq_title": "Usein kysytyt kysymykset",
@@ -2146,11 +2146,11 @@
                 "q1": "Milloin URL-osoitteet pitäisi koodata?",
                 "a1": "Koodaa URL-osoitteet, kun välität ne kyselyparametreina, tallennat ne tietokantoihin tai kun ne sisältävät erikoismerkkejä, kuten välilyöntejä, &, =, ? tai muita kuin ASCII-merkkejä.",
                 "q2": "Mitkä merkit tarvitsevat koodauksen?",
-                "a2": "Varatut merkit kuten : / ? # [ ] @ ! $ & ' ( ) * + , ; = ja vaaralliset merkit, kuten välilyönnit, <, >, \", {, }, |, \\, ^, ` ja muut kuin ASCII-merkit on koodattava.",
+                "a2": "Varatut merkit kuten : \/ ? # [ ] @ ! $ & ' ( ) * + , ; = ja vaaralliset merkit, kuten välilyönnit, <, >, \", {, }, |, \\, ^, ` ja muut kuin ASCII-merkit on koodattava.",
                 "q3": "Onko URL-koodaus sama kuin Base64?",
                 "a3": "Ei. URL-koodaus muuntaa tietyt merkit %XX-muotoon, kun taas Base64 koodaa koko tiedot eri merkistöiksi. Ne palvelevat erilaisia ​​tarkoituksia.",
                 "q4": "Voinko koodata kokonaisia ​​URL-osoitteita?",
-                "a4": "Kyllä, mutta yleensä koodaat vain kyselyn merkkijono-osan. Koko URL-osoitteen koodaus protokolla (https://) mukaan lukien on harvinaisempaa ja voi aiheuttaa ongelmia.",
+                "a4": "Kyllä, mutta yleensä koodaat vain kyselyn merkkijono-osan. Koko URL-osoitteen koodaus protokolla (https:\/\/) mukaan lukien on harvinaisempaa ja voi aiheuttaa ongelmia.",
                 "q5": "Ovatko tietoni turvassa?",
                 "a5": "Kyllä! Kaikki koodaus ja koodauksen purku tapahtuu kokonaan selaimessasi JavaScriptin avulla. URL-osoitteesi eivät koskaan poistu laitteestasi tai lähetetä niitä millekään palvelimelle."
             }
@@ -2197,8 +2197,8 @@
         },
         "editor": {
             "label_input": "XML-syöttö",
-            "ph_input": "<root><child>arvo</child></root>",
-            "btn_format": "Muotoile / Kaunista",
+            "ph_input": "<root><child>arvo<\/child><\/root>",
+            "btn_format": "Muotoile \/ Kaunista",
             "btn_minify": "Minimoi",
             "btn_copy": "Kopioida"
         },
@@ -2222,14 +2222,14 @@
             "btn_copy": "Kopioida",
             "btn_example": "Esimerkki",
             "label_input": "Syötä XML",
-            "ph_input": "<data><row><name>Johannes</name><age>30</age></row></data>",
+            "ph_input": "<data><row><name>Johannes<\/name><age>30<\/age><\/row><\/data>",
             "label_output": "CSV-lähtö",
             "ph_output": "Muunnettu CSV näkyy tässä..."
         },
         "content": {
             "p1": "Ilmainen XML-CSV-muuntimemme muuntaa jäsennellyt XML-tiedot pilkuilla eroteltujen arvojen muotoon. Täydellinen XML-tietojen tuomiseen Exceliin, Google Sheetsiin, tietokantoihin ja tietojen analysointityökaluihin. Muunna monimutkaiset XML-rakenteet yksinkertaiseen, taulukkomuotoiseen CSV-muotoon sekunneissa.",
             "what_title": "Mikä on XML-muunnos CSV-muotoon?",
-            "what_desc": "XML-CSV-muunnos muuttaa strukturoidun laajennettavan merkintäkielen tiedot pilkuilla eroteltujen arvojen muotoon. Vaikka XML sopii erinomaisesti monimutkaisille tietorakenteille ja API:ille, CSV on yksinkertaisempi ja taulukkolaskentasovellusten tuettu yleisesti, joten se on ihanteellinen tietojen analysointiin, raportointiin ja tuonti-/vientitoimintoihin.",
+            "what_desc": "XML-CSV-muunnos muuttaa strukturoidun laajennettavan merkintäkielen tiedot pilkuilla eroteltujen arvojen muotoon. Vaikka XML sopii erinomaisesti monimutkaisille tietorakenteille ja API:ille, CSV on yksinkertaisempi ja taulukkolaskentasovellusten tuettu yleisesti, joten se on ihanteellinen tietojen analysointiin, raportointiin ja tuonti-\/vientitoimintoihin.",
             "features_title": "Ominaisuudet",
             "features": {
                 "fast": {
@@ -2350,7 +2350,7 @@
             "btn_example": "Lataa esimerkki",
             "btn_clear": "Selkeä",
             "label_input": "XML-syöttö",
-            "ph_input": "<?xml version=\"1.0\"?>\n<juuri>\n  <item>XML-tiedostosi täällä...</item>\n</root>",
+            "ph_input": "<?xml version=\"1.0\"?>\n<juuri>\n  <item>XML-tiedostosi täällä...<\/item>\n<\/root>",
             "label_output": "JSON-lähtö",
             "ph_output": "Muunnettu JSON näkyy tässä..."
         },
@@ -2486,7 +2486,7 @@
         },
         "content": {
             "h2": "Tietoja YAML-JSON-muuntimesta",
-            "p1": "Muunna YAML-määritystiedostot välittömästi JSON-muotoon ilmaisella online-YAML-JSON-muuntimellamme. Täydellinen kehittäjille, jotka työskentelevät määritystiedostojen, CI/CD-putkien ja tietojen muuntamisen parissa.",
+            "p1": "Muunna YAML-määritystiedostot välittömästi JSON-muotoon ilmaisella online-YAML-JSON-muuntimellamme. Täydellinen kehittäjille, jotka työskentelevät määritystiedostojen, CI\/CD-putkien ja tietojen muuntamisen parissa.",
             "features_title": "Tärkeimmät ominaisuudet",
             "features": {
                 "syntax": {
@@ -2521,7 +2521,7 @@
                     "desc": "Muunna YAML-määritystiedostot JSON-muotoon sovelluksille."
                 },
                 "pipeline": {
-                    "title": "CI/CD-putkistot",
+                    "title": "CI\/CD-putkistot",
                     "desc": "Muunna YAML-putkien konfiguraatiot JSON-muotoon."
                 },
                 "k8s": {
