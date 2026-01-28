@@ -231,3 +231,66 @@ if (!function_exists('__t')) {
         return __tool($slug, $targetKey);
     }
 }
+
+if (!function_exists('__page')) {
+    function __page($page, $key, $default = null)
+    {
+        static $pageTranslations = [];
+        $locale = app()->getLocale();
+        $cacheKey = "$locale.pages";
+
+        if (!isset($pageTranslations[$cacheKey])) {
+            $jsonPath = base_path("resources/lang/$locale/pages.json");
+            if (file_exists($jsonPath)) {
+                $pageTranslations[$cacheKey] = json_decode(file_get_contents($jsonPath), true) ?: [];
+            } else {
+                $pageTranslations[$cacheKey] = [];
+            }
+        }
+
+        $data = $pageTranslations[$cacheKey][$page] ?? null;
+
+        if ($data !== null) {
+            $keys = explode('.', $key);
+            foreach ($keys as $k) {
+                if (is_array($data) && isset($data[$k])) {
+                    $data = $data[$k];
+                } else {
+                    $data = null;
+                    break;
+                }
+            }
+        }
+
+        if ($data === null) {
+            if ($locale !== 'en') {
+                $enCacheKey = "en.pages";
+                if (!isset($pageTranslations[$enCacheKey])) {
+                    $enJsonPath = base_path("resources/lang/en/pages.json");
+                    $pageTranslations[$enCacheKey] = file_exists($enJsonPath) ? json_decode(file_get_contents($enJsonPath), true) : [];
+                }
+
+                $enData = $pageTranslations[$enCacheKey][$page] ?? null;
+                if ($enData !== null) {
+                    $keys = explode('.', $key);
+                    foreach ($keys as $k) {
+                        if (is_array($enData) && isset($enData[$k])) {
+                            $enData = $enData[$k];
+                        } else {
+                            $enData = null;
+                            break;
+                        }
+                    }
+                }
+
+                if ($enData !== null) {
+                    return $enData;
+                }
+            }
+
+            return $default ?? "pages.$page.$key";
+        }
+
+        return $data;
+    }
+}
