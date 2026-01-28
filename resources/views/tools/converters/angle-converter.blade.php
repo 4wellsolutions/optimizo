@@ -83,7 +83,8 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">
-                        {{ __tool('angle-converter', 'content.feature1_title') }}</h3>
+                        {{ __tool('angle-converter', 'content.feature1_title') }}
+                    </h3>
                     <p class="text-gray-600">{{ __tool('angle-converter', 'content.feature1_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -94,7 +95,8 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">
-                        {{ __tool('angle-converter', 'content.feature2_title') }}</h3>
+                        {{ __tool('angle-converter', 'content.feature2_title') }}
+                    </h3>
                     <p class="text-gray-600">{{ __tool('angle-converter', 'content.feature2_desc') }}</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -105,7 +107,8 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">
-                        {{ __tool('angle-converter', 'content.feature3_title') }}</h3>
+                        {{ __tool('angle-converter', 'content.feature3_title') }}
+                    </h3>
                     <p class="text-gray-600">{{ __tool('angle-converter', 'content.feature3_desc') }}</p>
                 </div>
             </div>
@@ -116,7 +119,8 @@
                     <p>{{ __tool('angle-converter', 'content.description_p1') }}</p>
                     <p class="mt-4">{{ __tool('angle-converter', 'content.description_p2') }}</p>
 
-                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">{{ __tool('angle-converter', 'content.usage_examples_title') }}</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+                        {{ __tool('angle-converter', 'content.usage_examples_title') }}</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <ul class="list-disc list-inside space-y-2">
                             <li>{!! __tool('angle-converter', 'content.usage_1') !!}</li>
@@ -167,78 +171,81 @@
         </div>
 @endsection
 
-@push('scripts')
-    <script>
-        // Conversion rates relative to Degree (deg)
-        const rates = {
-            'deg': 1,
-            'rad': 57.295779513, // 1 rad = 180/pi deg
-            'grad': 0.9,
-            'min': 0.016666667,
-            'sec': 0.000277778
-        };
+    @push('scripts')
+        <script>
+            // Conversion rates relative to Degree (deg)
+            const rates = {
+                'deg': 1,
+                'rad': 57.295779513, // 1 rad = 180/pi deg
+                'grad': 0.9,
+                'min': 0.016666667,
+                'sec': 0.000277778
+            };
 
-        const names = {
-            'deg': 'Degrees', 'rad': 'Radians', 'grad': 'Gradians',
-            'min': 'Arcminutes', 'sec': 'Arcseconds'
-        };
+            const names = {
+                'deg': '{!! __tool('angle-converter', 'form.unit_degree') !!}',
+                'rad': '{!! __tool('angle-converter', 'form.unit_radian') !!}',
+                'grad': '{!! __tool('angle-converter', 'form.unit_gradian') !!}',
+                'min': '{!! __tool('angle-converter', 'form.unit_arcminute') !!}',
+                'sec': '{!! __tool('angle-converter', 'form.unit_arcsecond') !!}'
+            };
 
-        function convert(source) {
-            const fromUnit = document.getElementById('fromUnit').value;
-            const toUnit = document.getElementById('toUnit').value;
-            const fromInput = document.getElementById('fromValue');
-            const toInput = document.getElementById('toValue');
+            function convert(source) {
+                const fromUnit = document.getElementById('fromUnit').value;
+                const toUnit = document.getElementById('toUnit').value;
+                const fromInput = document.getElementById('fromValue');
+                const toInput = document.getElementById('toValue');
 
-            let value;
-            if (source === 'from') {
-                value = parseFloat(fromInput.value);
-                if (isNaN(value)) {
-                    toInput.value = '';
-                    updateFormula(null);
-                    return;
+                let value;
+                if (source === 'from') {
+                    value = parseFloat(fromInput.value);
+                    if (isNaN(value)) {
+                        toInput.value = '';
+                        updateFormula(null);
+                        return;
+                    }
+
+                    const baseValue = value * rates[fromUnit];
+                    const result = baseValue / rates[toUnit];
+                    toInput.value = parseFloat(result.toPrecision(12)) / 1;
+                } else {
+                    value = parseFloat(toInput.value);
+                    if (isNaN(value)) {
+                        fromInput.value = '';
+                        updateFormula(null);
+                        return;
+                    }
+
+                    const baseValue = value * rates[toUnit];
+                    const result = baseValue / rates[fromUnit];
+                    fromInput.value = parseFloat(result.toPrecision(12)) / 1;
                 }
 
-                const baseValue = value * rates[fromUnit];
-                const result = baseValue / rates[toUnit];
-                toInput.value = parseFloat(result.toPrecision(12)) / 1;
-            } else {
-                value = parseFloat(toInput.value);
-                if (isNaN(value)) {
-                    fromInput.value = '';
-                    updateFormula(null);
+                updateFormula(fromUnit, toUnit);
+            }
+
+            function swapUnits() {
+                const fromSelect = document.getElementById('fromUnit');
+                const toSelect = document.getElementById('toUnit');
+                const temp = fromSelect.value;
+
+                fromSelect.value = toSelect.value;
+                toSelect.value = temp;
+                convert('from');
+            }
+
+            function updateFormula(from, to) {
+                const display = document.getElementById('formulaDisplay');
+                if (!from) {
+                    display.innerText = '';
                     return;
                 }
-
-                const baseValue = value * rates[toUnit];
-                const result = baseValue / rates[fromUnit];
-                fromInput.value = parseFloat(result.toPrecision(12)) / 1;
+                const factor = rates[from] / rates[to];
+                const cleanFactor = parseFloat(factor.toPrecision(8)) / 1;
+                display.innerHTML = `1 ${names[from]} = ${cleanFactor} ${names[to]}`;
             }
 
-            updateFormula(fromUnit, toUnit);
-        }
-
-        function swapUnits() {
-            const fromSelect = document.getElementById('fromUnit');
-            const toSelect = document.getElementById('toUnit');
-            const temp = fromSelect.value;
-
-            fromSelect.value = toSelect.value;
-            toSelect.value = temp;
-            convert('from');
-        }
-
-        function updateFormula(from, to) {
-            const display = document.getElementById('formulaDisplay');
-            if (!from) {
-                display.innerText = '';
-                return;
-            }
-            const factor = rates[from] / rates[to];
-            const cleanFactor = parseFloat(factor.toPrecision(8)) / 1;
-            display.innerHTML = `1 ${names[from]} = ${cleanFactor} ${names[to]}`;
-        }
-
-        // Initialize
-        window.addEventListener('load', () => convert('from'));
-    </script>
-@endpush
+            // Initialize
+            window.addEventListener('load', () => convert('from'));
+        </script>
+    @endpush
